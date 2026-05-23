@@ -1,10 +1,12 @@
 'use client';
 import { useState, useEffect, useCallback } from 'react';
-import { ChevronLeft, ChevronRight, Sparkles, RefreshCw, Trash2 } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Sparkles, RefreshCw, Trash2, Printer } from 'lucide-react';
+import { format } from 'date-fns';
+import { de } from 'date-fns/locale';
 import { getWeekId, getWeekDays, nextWeek, prevWeek, formatDate } from '@/lib/utils';
 import { getTheme } from '@/lib/themes';
 import { DayColumn } from './DayColumn';
-import type { WeekPlan, Recipe, WeatherCache, DayConstraint, AppSettings } from '@/types';
+import type { WeekPlan, Recipe, WeatherCache, DayConstraint, AppSettings, MealSlot } from '@/types';
 
 interface WeekPlannerProps {
   recipes: Recipe[];
@@ -72,9 +74,132 @@ export function WeekPlanner({ recipes, settings, constraints }: WeekPlannerProps
     }
   };
 
+  const handlePrintPDF = async () => {
+    const { default: jsPDF }    = await import('jspdf');
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const autoTable             = ((await import('jspdf-autotable')) as any).default;
+
+    const doc = new jsPDF({ orientation: 'landscape', format: 'a4', unit: 'mm' });
+
+    const showLunch     = settings.defaultView === 'lunchAndDinner'       || settings.defaultView === 'breakfastLunchDinner';
+    const showBreakfast = settings.defaultView === 'breakfastLunchDinner';
+
+    const DAY_SHORT = ['MO', 'DI', 'MI', 'DO', 'FR', 'SA', 'SO'];
+
+    // ── Hilfsfunktion: Slot → Zelltext ──────────────────────────────────────
+    const slotText = (slot: MealSlot | null | undefined): string => {
+      if (!slot)              return '';
+      if (slot.isLeftovers)   return 'Reste essen';
+      if (!slot.recipeId)     return '';
+      const r = recipes.find(x => x.id === slot.recipeId);
+      if (!r)                 return '';
+      return `${r.name}\n(${r.timeMinutes} min)`;
+    };
+
+    // ── Kopfzeile ────────────────────────────────────────────────────────────
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(15);
+    doc.setTextColor(30);
+    doc.text('MahlZeit – Wochenplan', 14, 14);
+
+    const dateFrom = weekDays[0] ? format(weekDays[0], 'd. MMM',      { locale: de }) : '';
+    const dateTo   = weekDays[6] ? format(weekDays[6], 'd. MMM yyyy', { locale: de }) : '';
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(9);
+    doc.setTextColor(100);
+    doc.text(`KW ${kwNum}  ·  ${dateFrom} – ${dateTo}`, 14, 21);
+
+    // ── Spalten-Header ───────────────────────────────────────────────────────
+    const head = [[
+      { content: '', styles: { fillColor: [80, 130, 97] as [number, number, number] } },
+      ...weekDays.map((d, i) => ({
+        content: `${DAY_SHORT[i]}\n${format(d, 'd. MMM', { locale: de })}`,
+        styles:  { fillColor: [80, 130, 97] as [number, number, number], halign: 'center' as const },
+      })),
+    ]];
+
+    // ── Zeilen ───────────────────────────────────────────────────────────────
+    const body: string[][] = [];
+
+    if (showBreakfast) {
+      body.push([
+        'Frühstück',
+        ...weekDays.map((_, i) => slotText(weekPlan?.days?.[i + 1]?.breakfast)),
+      ]);
+    }
+    if (showLunch) {
+      body.push([
+        'Mittagessen',
+        ...weekDays.map((_, i) => slotText(weekPlan?.days?.[i + 1]?.lunch)),
+      ]);
+    }
+    body.push([
+      'Abendessen',
+      ...weekDays.map((_, i) => slotText(weekPlan?.days?.[i + 1]?.dinner)),
+    ]);
+
+    // ── Tabelle ──────────────────────────────────────────────────────────────
+    // A4 landscape usable width: 297 - 14*2 = 269mm
+    const usable    = 269;
+    const labelCol  = 22;
+    const dayColW   = (usable - labelCol) / 7;   // ≈ 35.3mm
+
+    autoTable(doc, {
+      startY:  27,
+      head,
+      body,
+      theme:   'grid',
+      margin:  { left: 14, right: 14 },
+      columnStyles: {
+        0: { cellWidth: labelCol, fontStyle: 'bold', fillColor: [240, 246, 241], textColor: [50, 90, 60] },
+        1: { cellWidth: dayColW },
+        2: { cellWidth: dayColW },
+        3: { cellWidth: dayColW },
+        4: { cellWidth: dayColW },
+        5: { cellWidth: dayColW },
+        6: { cellWidth: dayColW },
+        7: { cellWidth: dayColW },
+      },
+      headStyles: {
+        fillColor:  [80, 130, 97],
+        textColor:  255,
+        fontStyle:  'bold',
+        fontSize:   9,
+        halign:     'center',
+        cellPadding: { top: 4, bottom: 4, left: 3, right: 3 },
+      },
+      bodyStyles: {
+        fontSize:    9,
+        cellPadding: { top: 5, bottom: 5, left: 4, right: 4 },
+        valign:      'top',
+        textColor:   [40, 40, 40],
+      },
+      alternateRowStyles: {
+        fillColor: [248, 252, 249],
+      },
+      styles: {
+        overflow:   'linebreak',
+        lineColor:  [210, 225, 215],
+        lineWidth:  0.3,
+      },
+    });
+
+    // ── Fussnote ─────────────────────────────────────────────────────────────
+    const pageH = doc.internal.pageSize.getHeight();
+    doc.setFontSize(7);
+    doc.setTextColor(160);
+    doc.text(
+      `Erstellt am ${format(new Date(), 'd. MMM yyyy, HH:mm', { locale: de })} · MahlZeitPlaner`,
+      14,
+      pageH - 6
+    );
+
+    doc.save(`wochenplan-kw${kwNum}.pdf`);
+  };
+
   const handleUpdateSlot = async (
     dayIndex: number,
-    mealType: 'lunch' | 'dinner' | 'showLunch',
+    mealType: 'breakfast' | 'lunch' | 'dinner' | 'showLunch',
     slot: unknown
   ) => {
     const res = await fetch('/api/weekplan', {
@@ -131,6 +256,15 @@ export function WeekPlanner({ recipes, settings, constraints }: WeekPlannerProps
         </div>
 
         <div className="flex items-center gap-2">
+          <button
+            onClick={handlePrintPDF}
+            className="w-9 h-9 flex items-center justify-center rounded-full border transition-colors hover:bg-gray-50"
+            style={{ borderColor: theme.borderColor, color: theme.weekNavText }}
+            title="Als PDF drucken (A4 Querformat)"
+          >
+            <Printer size={15} />
+          </button>
+
           <button
             onClick={handleClearWeek}
             disabled={isClearing}

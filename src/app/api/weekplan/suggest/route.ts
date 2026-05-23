@@ -8,11 +8,13 @@ export async function POST(request: Request) {
   try {
     const { weekId, dayIndex, mealType } = await request.json();
 
-    const [recipes, constraints, weatherCache] = await Promise.all([
+    const [allRecipes, constraints, weatherCache] = await Promise.all([
       getRecipes(),
       getConstraints(),
       getWeatherCache(),
     ]);
+    // Archivierte Rezepte nie vorschlagen
+    const recipes = allRecipes.filter((r) => !r.archived);
 
     const season = getCurrentSeason();
     const weatherTypes: Record<number, WeatherType> = {};

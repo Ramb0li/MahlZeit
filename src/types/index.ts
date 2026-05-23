@@ -34,7 +34,11 @@ export interface Recipe {
   source: string;
   basePortions: number;
   description: string;
-  imageUrl?: string;
+  // Für spätere Detailansicht
+  steps?: string[];        // Nummerierte Zubereitungsschritte
+  tips?: string;           // Tipps & Varianten
+  imageUrl?: string | null; // Rezeptbild-URL (lokal oder extern)
+  archived?: boolean;       // Archiviert – nicht vorschlagen, nicht im Picker zeigen
 }
 
 export interface MealSlot {
@@ -46,9 +50,10 @@ export interface MealSlot {
 }
 
 export interface DayPlan {
+  breakfast?: MealSlot;
   lunch?: MealSlot;
   dinner: MealSlot;
-  showLunch: boolean;
+  showLunch: boolean; // kept for backwards-compat; display is now driven by AppSettings.defaultView
 }
 
 export interface WeekPlan {
@@ -82,7 +87,7 @@ export interface PromotionSettings {
 export interface AppSettings {
   household: HouseholdSettings;
   weather: WeatherSettings;
-  defaultView: 'dinnerOnly' | 'lunchAndDinner';
+  defaultView: 'dinnerOnly' | 'lunchAndDinner' | 'breakfastLunchDinner';
   theme?: import('@/lib/themes').ThemeId;
   promotions: PromotionSettings;
 }

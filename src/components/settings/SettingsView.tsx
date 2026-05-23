@@ -6,10 +6,10 @@ import type { ThemeId } from '@/lib/themes';
 import type { AppSettings, DayConstraint, Child } from '@/types';
 
 const DAY_LABELS = ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'];
+// 'leftovers' entfernt — "Reste essen" ist jetzt direkt im Menü-Picker wählbar
 const CONSTRAINT_LABELS = {
   maxTime: 'Max. Zeit',
   mealprep: 'Mealprep',
-  leftovers: 'Reste essen',
   custom: 'Anpassen',
 };
 
@@ -146,6 +146,40 @@ export function SettingsView({ initialSettings, initialConstraints, onSettingsCh
           })}
         </div>
         <p className="text-xs text-gray-400 mt-3">Wird nach dem Speichern sofort angewendet.</p>
+      </section>
+
+      {/* Mahlzeiten-Anzeige */}
+      <section className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+        <h2 className="text-base font-semibold text-gray-900 mb-1">Mahlzeiten im Wochenplan</h2>
+        <p className="text-xs text-gray-400 mb-4">Welche Mahlzeiten sollen im Wochenplaner angezeigt werden?</p>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          {(
+            [
+              { value: 'dinnerOnly',           emoji: '🍽',  label: 'Nur Abendessen',                    sub: 'Klassisch' },
+              { value: 'lunchAndDinner',        emoji: '🥗',  label: 'Mittag + Abendessen',               sub: 'Empfohlen' },
+              { value: 'breakfastLunchDinner',  emoji: '☕',  label: 'Frühstück + Mittag + Abend',        sub: 'Alles' },
+            ] as const
+          ).map(({ value, emoji, label, sub }) => {
+            const isActive = (settings.defaultView ?? 'dinnerOnly') === value;
+            return (
+              <button
+                key={value}
+                onClick={() => setSettings((s) => ({ ...s, defaultView: value }))}
+                className={`flex items-center gap-3 p-4 rounded-2xl border-2 text-left transition-all ${
+                  isActive
+                    ? 'border-gray-900 bg-gray-50 shadow-sm'
+                    : 'border-gray-100 hover:border-gray-300'
+                }`}
+              >
+                <span className="text-2xl">{emoji}</span>
+                <div>
+                  <p className="text-sm font-semibold text-gray-900 leading-tight">{label}</p>
+                  <p className="text-[11px] text-gray-400 mt-0.5">{sub}</p>
+                </div>
+              </button>
+            );
+          })}
+        </div>
       </section>
 
       <section className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">

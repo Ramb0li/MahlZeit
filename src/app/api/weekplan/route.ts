@@ -40,9 +40,10 @@ export async function PUT(request: Request) {
       plan.days[day] = { dinner: { recipeId: null }, showLunch: false };
     }
 
-    if (mealType === 'dinner')        plan.days[day].dinner   = slot;
-    else if (mealType === 'lunch')    plan.days[day].lunch    = slot;
-    else if (mealType === 'showLunch') plan.days[day].showLunch = slot;
+    if (mealType === 'dinner')          plan.days[day].dinner    = slot;
+    else if (mealType === 'lunch')      plan.days[day].lunch     = slot;
+    else if (mealType === 'breakfast')  plan.days[day].breakfast = slot;
+    else if (mealType === 'showLunch')  plan.days[day].showLunch = slot;
 
     await saveWeekPlan(plan);
     return NextResponse.json(plan);

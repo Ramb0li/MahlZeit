@@ -1,6 +1,6 @@
 'use client';
 import { useState, useMemo } from 'react';
-import { Search } from 'lucide-react';
+import { Search, UtensilsCrossed } from 'lucide-react';
 import { Modal } from '@/components/ui/Modal';
 import type { Recipe, Category, TimeLabel } from '@/types';
 
@@ -9,9 +9,11 @@ const CATEGORIES: Category[] = [
   'Sonstige', 'Asiatisch', 'Ofen', 'Suppen', 'Salat/Bowl',
 ];
 
+export const LEFTOVERS_ID = '__leftovers__';
+
 interface RecipePickerModalProps {
   recipes: Recipe[];
-  mealType: 'lunch' | 'dinner';
+  mealType: 'breakfast' | 'lunch' | 'dinner';
   onSelect: (recipeId: string) => void;
   onClose: () => void;
 }
@@ -21,8 +23,14 @@ export function RecipePickerModal({ recipes, mealType, onSelect, onClose }: Reci
   const [filterCategory, setFilterCategory] = useState<Category | 'Alle'>('Alle');
   const [filterTime, setFilterTime] = useState<TimeLabel | 'Alle'>('Alle');
 
+  const title =
+    mealType === 'breakfast' ? 'Frühstück wählen' :
+    mealType === 'lunch'     ? 'Mittagessen wählen' :
+    'Abendessen wählen';
+
   const filtered = useMemo(() => {
     return recipes.filter((r) => {
+      if (r.archived) return false;
       if (mealType === 'lunch' && !r.isSuitableForLunch) return false;
       if (filterCategory !== 'Alle' && r.category !== filterCategory) return false;
       if (filterTime !== 'Alle' && r.timeLabel !== filterTime) return false;
@@ -32,12 +40,7 @@ export function RecipePickerModal({ recipes, mealType, onSelect, onClose }: Reci
   }, [recipes, search, filterCategory, filterTime, mealType]);
 
   return (
-    <Modal
-      open
-      onClose={onClose}
-      title={mealType === 'lunch' ? 'Mittagessen wählen' : 'Abendessen wählen'}
-      size="lg"
-    >
+    <Modal open onClose={onClose} title={title} size="lg">
       <div className="space-y-4">
         <div className="relative">
           <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
@@ -83,6 +86,20 @@ export function RecipePickerModal({ recipes, mealType, onSelect, onClose }: Reci
         </div>
 
         <div className="grid grid-cols-1 gap-2 max-h-80 overflow-y-auto">
+          {/* Reste essen — immer als erste Option */}
+          <button
+            onClick={() => onSelect(LEFTOVERS_ID)}
+            className="flex items-center gap-3 p-3 rounded-xl border border-dashed border-amber-300 hover:border-amber-500 hover:bg-amber-50 text-left transition-all group"
+          >
+            <div className="w-8 h-8 flex items-center justify-center rounded-lg bg-amber-100 shrink-0">
+              <UtensilsCrossed size={16} className="text-amber-600" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="text-sm font-semibold text-amber-800 group-hover:text-amber-900">Reste essen</p>
+              <p className="text-xs text-amber-600">Vorhandene Reste aufbrauchen</p>
+            </div>
+          </button>
+
           {filtered.length === 0 && (
             <p className="text-center text-gray-400 py-8 text-sm">Keine Rezepte gefunden</p>
           )}
