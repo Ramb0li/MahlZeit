@@ -277,20 +277,20 @@ function MealSlotCard({
     return (
       <div
         className="group relative rounded-xl p-2.5 min-h-[80px]"
-        style={{ backgroundColor: '#FEF3C7', boxShadow: '0 1px 3px rgba(0,0,0,0.08)' }}
+        style={{ backgroundColor: '#f5ece0', boxShadow: '0 1px 3px rgba(44,36,32,0.08)', border: '1px solid #e0d8ce' }}
       >
-        <p className="text-[10px] font-bold uppercase tracking-wide mb-1 text-amber-600">
+        <p className="text-[10px] font-bold uppercase tracking-wide mb-1" style={{ color: '#c49a6c' }}>
           {label}
         </p>
         <div className="flex items-center gap-2 mt-1">
-          <UtensilsCrossed size={14} className="text-amber-500 shrink-0" />
-          <p className="text-xs font-semibold text-amber-800">Reste essen</p>
+          <UtensilsCrossed size={14} style={{ color: '#b5614a' }} className="shrink-0" />
+          <p className="text-xs font-semibold" style={{ color: '#5a4e48' }}>Reste essen</p>
         </div>
 
         {/* Beilage */}
         {hasSide ? (
-          <div className="mt-2 pt-1.5 border-t border-amber-200 flex items-center gap-1">
-            <p className="text-[10px] text-amber-600 line-clamp-1 flex-1">+ {sideName}</p>
+          <div className="mt-2 pt-1.5 flex items-center gap-1" style={{ borderTop: '1px solid #e0d8ce' }}>
+            <p className="text-[10px] line-clamp-1 flex-1" style={{ color: '#9c8c84' }}>+ {sideName}</p>
             <button onClick={onClearSide} className="shrink-0 p-0.5 rounded hover:bg-red-50 text-amber-300 hover:text-red-400 transition-colors">
               <X size={9} />
             </button>
@@ -298,7 +298,10 @@ function MealSlotCard({
         ) : (
           <button
             onClick={onPickSide}
-            className="absolute bottom-1.5 right-1.5 opacity-0 group-hover:opacity-100 w-5 h-5 flex items-center justify-center rounded-full bg-amber-200/60 hover:bg-amber-400 hover:text-white text-amber-500 transition-all"
+            className="absolute bottom-1.5 right-1.5 opacity-0 group-hover:opacity-100 w-5 h-5 flex items-center justify-center rounded-full transition-all"
+            style={{ backgroundColor: 'rgba(196,154,108,0.25)', color: '#c49a6c' }}
+            onMouseEnter={e => { (e.currentTarget as HTMLElement).style.backgroundColor = '#b5614a'; (e.currentTarget as HTMLElement).style.color = '#fff'; }}
+            onMouseLeave={e => { (e.currentTarget as HTMLElement).style.backgroundColor = 'rgba(196,154,108,0.25)'; (e.currentTarget as HTMLElement).style.color = '#c49a6c'; }}
             title="Beilage / Dessert hinzufügen"
           >
             <Plus size={9} />
@@ -351,7 +354,10 @@ function MealSlotCard({
         ) : (
           <button
             onClick={onPickSide}
-            className="absolute bottom-1.5 right-1.5 opacity-0 group-hover:opacity-100 w-5 h-5 flex items-center justify-center rounded-full bg-black/5 hover:bg-brand-green hover:text-white text-gray-400 transition-all"
+            className="absolute bottom-1.5 right-1.5 opacity-0 group-hover:opacity-100 w-5 h-5 flex items-center justify-center rounded-full transition-all"
+            style={{ backgroundColor: 'rgba(44,36,32,0.07)', color: '#9c8c84' }}
+            onMouseEnter={e => { (e.currentTarget as HTMLElement).style.backgroundColor = '#b5614a'; (e.currentTarget as HTMLElement).style.color = '#fff'; }}
+            onMouseLeave={e => { (e.currentTarget as HTMLElement).style.backgroundColor = 'rgba(44,36,32,0.07)'; (e.currentTarget as HTMLElement).style.color = '#9c8c84'; }}
             title="Beilage / Dessert hinzufügen"
           >
             <Plus size={9} />

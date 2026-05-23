@@ -2,8 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ── Nadia Damaso design tokens ───────────────────────────────────────────── */
 :root {
-  --font-inter: 'Inter', system-ui, sans-serif;
+  --bg:        #f7f4ee;
+  --bg2:       #fff9f3;
+  --surface:   #efe9df;
+  --surface2:  #e8dfd3;
+  --accent:    #b5614a;
+  --accent-lt: #f2e5e0;
+  --accent-md: #d4a090;
+  --warm2:     #c49a6c;
+  --warm2-lt:  #f5ece0;
+  --text:      #2c2420;
+  --text2:     #5a4e48;
+  --muted:     #9c8c84;
+  --border:    #e0d8ce;
+  --border2:   #d0c8be;
 }
 
 @layer base {
@@ -12,7 +26,10 @@
   }
 
   body {
-    @apply bg-white text-gray-900;
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
   }
 
   * {
@@ -27,5 +44,10 @@
   }
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
+  }
+  /* Fraunces serif utility — used for brand name & headings */
+  .font-fraunces {
+    font-family: 'Fraunces', serif;
+    font-optical-sizing: auto;
   }
 }

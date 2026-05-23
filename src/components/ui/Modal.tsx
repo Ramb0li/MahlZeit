@@ -32,14 +32,31 @@ export function Modal({ open, onClose, title, children, size = 'md' }: ModalProp
   return (
     <div
       ref={backdropRef}
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4"
+      className="fixed inset-0 z-50 flex items-center justify-center p-4"
+      style={{ backgroundColor: 'rgba(44,36,32,0.45)', backdropFilter: 'blur(4px)' }}
       onClick={(e) => { if (e.target === backdropRef.current) onClose(); }}
     >
-      <div className={cn('bg-white rounded-2xl shadow-xl w-full flex flex-col max-h-[90vh]', sizeClass)}>
-        <div className="flex items-center justify-between px-6 py-4 border-b border-gray-100">
-          <h2 className="text-lg font-semibold text-gray-900">{title}</h2>
-          <button onClick={onClose} className="p-1 rounded-lg hover:bg-gray-100 transition-colors">
-            <X size={20} />
+      <div
+        className={cn('rounded-2xl shadow-xl w-full flex flex-col max-h-[90vh]', sizeClass)}
+        style={{
+          backgroundColor: '#fff9f3',
+          border: '1px solid #e0d8ce',
+          boxShadow: '0 24px 64px rgba(44,36,32,0.14)',
+        }}
+      >
+        <div
+          className="flex items-center justify-between px-6 py-4"
+          style={{ borderBottom: '1px solid #e0d8ce' }}
+        >
+          <h2 className="text-lg font-semibold" style={{ color: '#2c2420' }}>{title}</h2>
+          <button
+            onClick={onClose}
+            className="p-1.5 rounded-lg transition-colors"
+            style={{ color: '#9c8c84' }}
+            onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#efe9df')}
+            onMouseLeave={e => (e.currentTarget.style.backgroundColor = 'transparent')}
+          >
+            <X size={18} />
           </button>
         </div>
         <div className="overflow-y-auto flex-1 px-6 py-4">{children}</div>

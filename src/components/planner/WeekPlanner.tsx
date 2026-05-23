@@ -122,10 +122,10 @@ export function WeekPlanner({ recipes, settings, constraints }: WeekPlannerProps
 
     // ── Spalten-Header ───────────────────────────────────────────────────────
     const head = [[
-      { content: '', styles: { fillColor: [80, 130, 97] as [number, number, number] } },
+      { content: '', styles: { fillColor: [181, 97, 74] as [number, number, number] } },
       ...weekDays.map((d, i) => ({
         content: `${DAY_SHORT[i]}\n${format(d, 'd. MMM', { locale: de })}`,
-        styles:  { fillColor: [80, 130, 97] as [number, number, number], halign: 'center' as const },
+        styles:  { fillColor: [181, 97, 74] as [number, number, number], halign: 'center' as const },
       })),
     ]];
 
@@ -164,7 +164,7 @@ export function WeekPlanner({ recipes, settings, constraints }: WeekPlannerProps
       theme:   'grid',
       margin:  { left: 14, right: 14 },
       columnStyles: {
-        0: { cellWidth: labelCol, fontStyle: 'bold', fillColor: [240, 246, 241], textColor: [50, 90, 60] },
+        0: { cellWidth: labelCol, fontStyle: 'bold', fillColor: [242, 229, 224], textColor: [90, 78, 72] },
         1: { cellWidth: dayColW },
         2: { cellWidth: dayColW },
         3: { cellWidth: dayColW },
@@ -174,7 +174,7 @@ export function WeekPlanner({ recipes, settings, constraints }: WeekPlannerProps
         7: { cellWidth: dayColW },
       },
       headStyles: {
-        fillColor:  [80, 130, 97],
+        fillColor:  [181, 97, 74],
         textColor:  255,
         fontStyle:  'bold',
         fontSize:   9,
@@ -188,11 +188,11 @@ export function WeekPlanner({ recipes, settings, constraints }: WeekPlannerProps
         textColor:   [40, 40, 40],
       },
       alternateRowStyles: {
-        fillColor: [248, 252, 249],
+        fillColor: [247, 244, 238],
       },
       styles: {
         overflow:   'linebreak',
-        lineColor:  [210, 225, 215],
+        lineColor:  [224, 216, 206],
         lineWidth:  0.3,
       },
     });
@@ -271,7 +271,9 @@ export function WeekPlanner({ recipes, settings, constraints }: WeekPlannerProps
         <div className="flex items-center gap-2">
           <button
             onClick={handlePrintPDF}
-            className="w-9 h-9 flex items-center justify-center rounded-full border transition-colors hover:bg-gray-50"
+            className="w-9 h-9 flex items-center justify-center rounded-full border transition-colors"
+            onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#f7f4ee')}
+            onMouseLeave={e => (e.currentTarget.style.backgroundColor = 'transparent')}
             style={{ borderColor: theme.borderColor, color: theme.weekNavText }}
             title="Als PDF drucken (A4 Querformat)"
           >

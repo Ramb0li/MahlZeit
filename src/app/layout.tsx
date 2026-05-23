@@ -12,9 +12,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="de">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-        <meta name="theme-color" content="#4CAF50" />
+        <meta name="theme-color" content="#b5614a" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,900;1,9..144,700&family=DM+Sans:wght@300;400;500;600&display=swap"
+          rel="stylesheet"
+        />
       </head>
-      <body className="min-h-screen bg-white">
+      <body className="min-h-screen" style={{ backgroundColor: 'var(--bg)' }}>
         {children}
       </body>
     </html>

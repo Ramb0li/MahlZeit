@@ -37,25 +37,34 @@ export function AppShell({ recipes: initialRecipes, settings: initialSettings, c
       style={{ backgroundColor: theme.pageBg, color: theme.pageText }}
     >
       <header
-        className="sticky top-0 z-40 border-b shadow-sm"
+        className="sticky top-0 z-40 border-b"
         style={{
-          backgroundColor: theme.headerBg + 'F5',
-          backdropFilter: 'blur(12px)',
+          backgroundColor: theme.headerBg + 'EC',
+          backdropFilter: 'blur(14px)',
+          WebkitBackdropFilter: 'blur(14px)',
           borderColor: theme.borderColor,
+          height: '56px',
         }}
       >
-        <div className="flex items-center justify-between px-5 py-3">
-          {/* Brand */}
+        <div className="flex items-center justify-between px-5 h-full">
+          {/* Brand — Fraunces, "Zeit" in terracotta */}
           <div className="flex items-center gap-2.5">
             <div
-              className="w-8 h-8 rounded-xl flex items-center justify-center shadow-sm"
-              style={{ backgroundColor: theme.todayAccent }}
+              className="w-8 h-8 rounded-xl flex items-center justify-center"
+              style={{ backgroundColor: theme.todayAccent + '22', border: `1px solid ${theme.borderColor}` }}
             >
               <span className="text-base leading-none">🍽</span>
             </div>
             <div className="flex flex-col leading-tight">
-              <span className="font-black text-base tracking-tight" style={{ color: theme.pageText }}>MahlZeit</span>
-              <span className="text-[10px] font-bold uppercase tracking-widest -mt-0.5" style={{ color: theme.pageSubtext }}>Planer</span>
+              <span
+                className="font-fraunces font-black text-[17px] tracking-tight leading-none"
+                style={{ color: theme.pageText }}
+              >
+                Mahl<span style={{ color: '#b5614a' }}>Zeit</span>
+              </span>
+              <span className="text-[10px] font-semibold uppercase tracking-widest mt-0.5" style={{ color: theme.pageSubtext }}>
+                Planer
+              </span>
             </div>
           </div>
 
@@ -70,7 +79,7 @@ export function AppShell({ recipes: initialRecipes, settings: initialSettings, c
                 onClick={() => setActiveTab(id)}
                 className="flex items-center gap-2 px-4 py-1.5 rounded-xl text-sm font-semibold transition-all"
                 style={activeTab === id
-                  ? { backgroundColor: theme.navActiveBg, color: theme.navActiveText, boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }
+                  ? { backgroundColor: theme.navActiveBg, color: theme.navActiveText }
                   : { color: theme.navInactiveText }}
               >
                 <Icon size={15} />
@@ -105,8 +114,12 @@ export function AppShell({ recipes: initialRecipes, settings: initialSettings, c
 
       {/* Mobile bottom nav */}
       <nav
-        className="sm:hidden sticky bottom-0 border-t shadow-lg"
-        style={{ backgroundColor: theme.headerBg, borderColor: theme.borderColor }}
+        className="sm:hidden sticky bottom-0 border-t"
+        style={{
+          backgroundColor: theme.headerBg,
+          borderColor: theme.borderColor,
+          boxShadow: '0 -1px 12px rgba(44,36,32,0.08)',
+        }}
       >
         <div className="flex">
           {TABS.map(({ id, label, icon: Icon }) => (

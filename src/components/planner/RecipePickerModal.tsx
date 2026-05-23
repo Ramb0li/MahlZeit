@@ -13,18 +13,23 @@ export const LEFTOVERS_ID = '__leftovers__';
 
 // Which diet types are compatible with a given preference
 function compatibleDiets(pref: DietType | 'alle' | undefined): DietType[] | null {
-  if (!pref || pref === 'alle') return null; // kein Filter
+  if (!pref || pref === 'alle') return null;
   if (pref === 'vegan')        return ['vegan'];
   if (pref === 'vegetarisch')  return ['vegan', 'vegetarisch'];
   if (pref === 'pescetarisch') return ['vegan', 'vegetarisch', 'pescetarisch'];
   return null;
 }
 
-const DIET_BADGE: Record<DietType, { label: string; cls: string }> = {
-  vegan:        { label: '🌿',  cls: 'bg-emerald-100 text-emerald-700' },
-  vegetarisch:  { label: '🥗',  cls: 'bg-green-100 text-green-700' },
-  pescetarisch: { label: '🐟',  cls: 'bg-sky-100 text-sky-700' },
+const DIET_BADGE: Record<DietType, { label: string; bg: string; color: string }> = {
+  vegan:        { label: '🌿', bg: '#f5ece0', color: '#c49a6c' },
+  vegetarisch:  { label: '🥗', bg: '#f2e5e0', color: '#b5614a' },
+  pescetarisch: { label: '🐟', bg: '#e8dfd3', color: '#5a4e48' },
 };
+
+// Chip style helpers
+const chipActive   = { backgroundColor: '#b5614a', color: '#fff' };
+const chipInactive = { backgroundColor: '#efe9df', color: '#5a4e48', border: '1.5px solid #e0d8ce' };
+const chipDarkActive = { backgroundColor: '#2c2420', color: '#fff' };
 
 interface RecipePickerModalProps {
   recipes: Recipe[];
@@ -61,52 +66,57 @@ export function RecipePickerModal({ recipes, mealType, dietPreference, onSelect,
   return (
     <Modal open onClose={onClose} title={title} size="lg">
       <div className="space-y-4">
+        {/* Search */}
         <div className="relative">
-          <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
+          <Search size={15} className="absolute left-3 top-1/2 -translate-y-1/2" style={{ color: '#9c8c84' }} />
           <input
             type="text"
             placeholder="Rezept suchen…"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full pl-9 pr-4 py-2 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-green/30 focus:border-brand-green"
+            className="w-full pl-9 pr-4 py-2 rounded-xl text-sm focus:outline-none"
+            style={{
+              border: '1px solid #e0d8ce',
+              backgroundColor: '#f7f4ee',
+              color: '#2c2420',
+            }}
           />
         </div>
 
+        {/* Category chips */}
         <div className="flex flex-wrap gap-1.5">
           {(['Alle', ...CATEGORIES] as const).map((cat) => (
             <button
               key={cat}
               onClick={() => setFilterCategory(cat)}
-              className={`px-2.5 py-1 rounded-full text-xs font-medium transition-colors ${
-                filterCategory === cat
-                  ? 'bg-brand-green text-white'
-                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-              }`}
+              className="px-2.5 py-1 rounded-full text-xs font-semibold transition-all"
+              style={filterCategory === cat ? chipActive : chipInactive}
             >
               {cat}
             </button>
           ))}
         </div>
 
+        {/* Time chips */}
         <div className="flex gap-1.5">
           {(['Alle', 'schnell', 'mittel', 'aufwändig'] as const).map((t) => (
             <button
               key={t}
               onClick={() => setFilterTime(t)}
-              className={`px-2.5 py-1 rounded-full text-xs font-medium transition-colors ${
-                filterTime === t
-                  ? 'bg-gray-700 text-white'
-                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-              }`}
+              className="px-2.5 py-1 rounded-full text-xs font-semibold transition-all"
+              style={filterTime === t ? chipDarkActive : chipInactive}
             >
               {t}
             </button>
           ))}
         </div>
 
-        {/* Diät-Hinweis, wenn ein Filter aktiv ist */}
+        {/* Diet filter banner */}
         {allowedDiets && (
-          <div className="flex items-center gap-2 px-3 py-2 bg-emerald-50 border border-emerald-200 rounded-xl text-xs text-emerald-700">
+          <div
+            className="flex items-center gap-2 px-3 py-2 rounded-xl text-xs"
+            style={{ backgroundColor: '#f2e5e0', border: '1px solid #d4a090', color: '#b5614a' }}
+          >
             <span>🌿</span>
             <span>
               Gefiltert nach Ernährungsweise: <strong>
@@ -118,51 +128,81 @@ export function RecipePickerModal({ recipes, mealType, dietPreference, onSelect,
           </div>
         )}
 
+        {/* Recipe list */}
         <div className="grid grid-cols-1 gap-2 max-h-80 overflow-y-auto">
-          {/* Reste essen — immer als erste Option */}
+          {/* Reste essen — always first */}
           <button
             onClick={() => onSelect(LEFTOVERS_ID)}
-            className="flex items-center gap-3 p-3 rounded-xl border border-dashed border-amber-300 hover:border-amber-500 hover:bg-amber-50 text-left transition-all group"
+            className="flex items-center gap-3 p-3 rounded-xl text-left transition-all group"
+            style={{ border: '1.5px dashed #d4a090' }}
+            onMouseEnter={e => { (e.currentTarget as HTMLElement).style.backgroundColor = '#f5ece0'; (e.currentTarget as HTMLElement).style.borderColor = '#b5614a'; }}
+            onMouseLeave={e => { (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent'; (e.currentTarget as HTMLElement).style.borderColor = '#d4a090'; }}
           >
-            <div className="w-8 h-8 flex items-center justify-center rounded-lg bg-amber-100 shrink-0">
-              <UtensilsCrossed size={16} className="text-amber-600" />
+            <div
+              className="w-8 h-8 flex items-center justify-center rounded-lg shrink-0"
+              style={{ backgroundColor: '#f5ece0' }}
+            >
+              <UtensilsCrossed size={16} style={{ color: '#c49a6c' }} />
             </div>
             <div className="flex-1 min-w-0">
-              <p className="text-sm font-semibold text-amber-800 group-hover:text-amber-900">Reste essen</p>
-              <p className="text-xs text-amber-600">Vorhandene Reste aufbrauchen</p>
+              <p className="text-sm font-semibold" style={{ color: '#5a4e48' }}>Reste essen</p>
+              <p className="text-xs" style={{ color: '#9c8c84' }}>Vorhandene Reste aufbrauchen</p>
             </div>
           </button>
 
           {filtered.length === 0 && (
-            <p className="text-center text-gray-400 py-8 text-sm">Keine Rezepte gefunden</p>
+            <p className="text-center py-8 text-sm" style={{ color: '#9c8c84' }}>Keine Rezepte gefunden</p>
           )}
+
           {filtered.map((recipe) => (
             <button
               key={recipe.id}
               onClick={() => onSelect(recipe.id)}
-              className="flex items-center gap-3 p-3 rounded-xl border border-gray-100 hover:border-brand-green hover:bg-brand-green-50 text-left transition-all group"
+              className="flex items-center gap-3 p-3 rounded-xl text-left transition-all"
+              style={{ border: '1px solid #e0d8ce', backgroundColor: '#fff9f3' }}
+              onMouseEnter={e => {
+                (e.currentTarget as HTMLElement).style.borderColor = '#b5614a';
+                (e.currentTarget as HTMLElement).style.backgroundColor = '#f2e5e0';
+              }}
+              onMouseLeave={e => {
+                (e.currentTarget as HTMLElement).style.borderColor = '#e0d8ce';
+                (e.currentTarget as HTMLElement).style.backgroundColor = '#fff9f3';
+              }}
             >
               <div className="flex-1 min-w-0">
-                <p className="text-sm font-medium text-gray-800 group-hover:text-brand-green-dark truncate">
+                <p className="text-sm font-medium truncate" style={{ color: '#2c2420' }}>
                   {recipe.name}
                 </p>
-                <p className="text-xs text-gray-500 mt-0.5">{recipe.category}</p>
+                <p className="text-xs mt-0.5" style={{ color: '#9c8c84' }}>{recipe.category}</p>
               </div>
               <div className="flex items-center gap-1.5 shrink-0">
                 {recipe.dietType && DIET_BADGE[recipe.dietType] && (
-                  <span className={`text-xs px-1.5 py-0.5 rounded-full font-medium ${DIET_BADGE[recipe.dietType].cls}`}>
+                  <span
+                    className="text-xs px-1.5 py-0.5 rounded-full font-medium"
+                    style={{ backgroundColor: DIET_BADGE[recipe.dietType].bg, color: DIET_BADGE[recipe.dietType].color }}
+                  >
                     {DIET_BADGE[recipe.dietType].label}
                   </span>
                 )}
-                <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${
-                  recipe.timeLabel === 'schnell' ? 'bg-green-100 text-green-700' :
-                  recipe.timeLabel === 'mittel' ? 'bg-yellow-100 text-yellow-700' :
-                  'bg-red-100 text-red-700'
-                }`}>
+                <span
+                  className="text-xs px-2 py-0.5 rounded-full font-medium"
+                  style={
+                    recipe.timeLabel === 'schnell'
+                      ? { backgroundColor: '#e8f5e9', color: '#2e7d32' }
+                      : recipe.timeLabel === 'mittel'
+                      ? { backgroundColor: '#fff3e0', color: '#e65100' }
+                      : { backgroundColor: '#fce4ec', color: '#c62828' }
+                  }
+                >
                   {recipe.timeMinutes}min
                 </span>
                 {recipe.isMealprep && (
-                  <span className="text-xs px-2 py-0.5 rounded-full bg-teal-100 text-teal-700 font-medium">MP</span>
+                  <span
+                    className="text-xs px-2 py-0.5 rounded-full font-medium"
+                    style={{ backgroundColor: '#f5ece0', color: '#c49a6c' }}
+                  >
+                    MP
+                  </span>
                 )}
               </div>
             </button>
