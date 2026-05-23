@@ -188,11 +188,10 @@ export function SettingsView({ initialSettings, initialConstraints, onSettingsCh
         <p className="text-xs text-gray-400 mb-4">
           Filtert Rezeptvorschläge und den Menü-Picker — z.B. &quot;Vegetarisch&quot; blendet Fisch- und Fleischgerichte aus.
         </p>
-        <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           {(
             [
-              { value: 'alle',         emoji: '🍽',  label: 'Alle',          sub: 'Kein Filter' },
-              { value: 'omnivor',      emoji: '🍖',  label: 'Omnivor',       sub: 'Alles erlaubt' },
+              { value: 'alle',         emoji: '🍽',  label: 'Alle Rezepte',  sub: 'Kein Filter' },
               { value: 'pescetarisch', emoji: '🐟',  label: 'Pescetarisch',  sub: 'Kein Fleisch' },
               { value: 'vegetarisch',  emoji: '🥗',  label: 'Vegetarisch',   sub: 'Kein Fleisch/Fisch' },
               { value: 'vegan',        emoji: '🌿',  label: 'Vegan',         sub: 'Nur pflanzlich' },

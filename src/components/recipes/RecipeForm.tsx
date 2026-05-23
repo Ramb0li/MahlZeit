@@ -139,7 +139,6 @@ export function RecipeForm({ recipe, onSave, onCancel }: RecipeFormProps) {
               { value: 'vegan',        label: '🌿 Vegan',         cls: 'bg-emerald-500 border-emerald-500' },
               { value: 'vegetarisch',  label: '🥗 Vegetarisch',   cls: 'bg-green-500 border-green-500' },
               { value: 'pescetarisch', label: '🐟 Pescetarisch',  cls: 'bg-sky-500 border-sky-500' },
-              { value: 'omnivor',      label: '🍖 Omnivor',       cls: 'bg-orange-500 border-orange-500' },
             ] as { value: DietType; label: string; cls: string }[]).map(({ value, label, cls }) => (
               <button
                 key={value}

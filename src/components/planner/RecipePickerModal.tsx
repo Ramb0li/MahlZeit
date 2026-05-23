@@ -13,7 +13,7 @@ export const LEFTOVERS_ID = '__leftovers__';
 
 // Which diet types are compatible with a given preference
 function compatibleDiets(pref: DietType | 'alle' | undefined): DietType[] | null {
-  if (!pref || pref === 'alle' || pref === 'omnivor') return null; // kein Filter
+  if (!pref || pref === 'alle') return null; // kein Filter
   if (pref === 'vegan')        return ['vegan'];
   if (pref === 'vegetarisch')  return ['vegan', 'vegetarisch'];
   if (pref === 'pescetarisch') return ['vegan', 'vegetarisch', 'pescetarisch'];
@@ -24,7 +24,6 @@ const DIET_BADGE: Record<DietType, { label: string; cls: string }> = {
   vegan:        { label: '🌿',  cls: 'bg-emerald-100 text-emerald-700' },
   vegetarisch:  { label: '🥗',  cls: 'bg-green-100 text-green-700' },
   pescetarisch: { label: '🐟',  cls: 'bg-sky-100 text-sky-700' },
-  omnivor:      { label: '🍖',  cls: 'bg-orange-100 text-orange-700' },
 };
 
 interface RecipePickerModalProps {

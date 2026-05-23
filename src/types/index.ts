@@ -1,7 +1,7 @@
 export type WeatherType = 'warm' | 'kalt' | 'neutral';
 export type Season = 'Frühling' | 'Sommer' | 'Herbst' | 'Winter' | 'ganzjährig';
 export type TimeLabel = 'schnell' | 'mittel' | 'aufwändig';
-export type DietType = 'vegan' | 'vegetarisch' | 'pescetarisch' | 'omnivor';
+export type DietType = 'vegan' | 'vegetarisch' | 'pescetarisch';
 export type Category =
   | 'Eier'
   | 'Reis'

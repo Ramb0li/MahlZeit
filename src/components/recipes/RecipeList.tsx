@@ -6,18 +6,16 @@ import { Modal } from '@/components/ui/Modal';
 import type { Recipe, Category, TimeLabel, DietType } from '@/types';
 
 const DIET_OPTIONS: { value: DietType | 'Alle'; label: string }[] = [
-  { value: 'Alle',         label: 'Alle' },
-  { value: 'vegan',        label: '🌿 Vegan' },
-  { value: 'vegetarisch',  label: '🥗 Vegetarisch' },
+  { value: 'Alle',         label: 'Alle Rezepte' },
   { value: 'pescetarisch', label: '🐟 Pescetarisch' },
-  { value: 'omnivor',      label: '🍖 Omnivor' },
+  { value: 'vegetarisch',  label: '🥗 Vegetarisch' },
+  { value: 'vegan',        label: '🌿 Vegan' },
 ];
 
 const DIET_BADGE: Record<DietType, { label: string; cls: string }> = {
   vegan:        { label: '🌿 Vegan',         cls: 'bg-emerald-100 text-emerald-700' },
   vegetarisch:  { label: '🥗 Vegetarisch',   cls: 'bg-green-100 text-green-700' },
   pescetarisch: { label: '🐟 Pescetarisch',  cls: 'bg-sky-100 text-sky-700' },
-  omnivor:      { label: '🍖 Omnivor',       cls: 'bg-orange-100 text-orange-700' },
 };
 
 const CATEGORIES: Category[] = [

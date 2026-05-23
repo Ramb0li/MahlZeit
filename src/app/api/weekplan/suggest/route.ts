@@ -18,7 +18,7 @@ export async function POST(request: Request) {
     // Archivierte Rezepte nie vorschlagen; Diät-Filter anwenden
     const dietPref = settings.dietPreference;
     const allowedDiets: DietType[] | null =
-      !dietPref || dietPref === 'alle' || dietPref === 'omnivor' ? null :
+      !dietPref || dietPref === 'alle' ? null :
       dietPref === 'vegan'        ? ['vegan'] :
       dietPref === 'vegetarisch'  ? ['vegan', 'vegetarisch'] :
       dietPref === 'pescetarisch' ? ['vegan', 'vegetarisch', 'pescetarisch'] :
