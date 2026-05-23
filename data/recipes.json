@@ -39,7 +39,12 @@
     "isSuitableForLunch": true,
     "source": "eigenes Rezept",
     "basePortions": 4,
-    "description": "Klassisches Rührei, schnell und einfach."
+    "description": "Klassisches Rührei, schnell und einfach.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "archived": false,
+    "dietType": "vegetarisch"
   },
   {
     "id": "ei-02",
@@ -106,7 +111,11 @@
     "isSuitableForLunch": false,
     "source": "eigenes Rezept",
     "basePortions": 4,
-    "description": "Herzhafter Klassiker für kalte Abende."
+    "description": "Herzhafter Klassiker für kalte Abende.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegetarisch"
   },
   {
     "id": "ei-03",
@@ -160,7 +169,11 @@
     "isSuitableForLunch": true,
     "source": "eigenes Rezept",
     "basePortions": 4,
-    "description": "Schweizer Rösti trifft auf Avocado."
+    "description": "Schweizer Rösti trifft auf Avocado.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegetarisch"
   },
   {
     "id": "ei-04",
@@ -214,7 +227,11 @@
     "isSuitableForLunch": true,
     "source": "eigenes Rezept",
     "basePortions": 4,
-    "description": "Schnelle Omelette mit buntem Gemüse."
+    "description": "Schnelle Omelette mit buntem Gemüse.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegetarisch"
   },
   {
     "id": "ei-05",
@@ -269,7 +286,11 @@
     "isSuitableForLunch": false,
     "source": "eigenes Rezept",
     "basePortions": 4,
-    "description": "Cremige Pilzsauce über fluffiger Omelette."
+    "description": "Cremige Pilzsauce über fluffiger Omelette.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegetarisch"
   },
   {
     "id": "ei-06",
@@ -324,7 +345,11 @@
     "isSuitableForLunch": false,
     "source": "eigenes Rezept",
     "basePortions": 4,
-    "description": "Deftige Senfsauce mit Eiern und feinem Blumenkohlpüree."
+    "description": "Deftige Senfsauce mit Eiern und feinem Blumenkohlpüree.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegetarisch"
   },
   {
     "id": "ei-07",
@@ -379,55 +404,167 @@
     "isSuitableForLunch": false,
     "source": "eigenes Rezept",
     "basePortions": 4,
-    "description": "Cremige Polenta mit Gemüse und Eiern."
+    "description": "Cremige Polenta mit Gemüse und Eiern.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegetarisch"
   },
   {
-    "id": "rei-01",
-    "name": "Lauchrisotto",
-    "category": "Reis",
-    "timeMinutes": 40,
+    "id": "fvt-03",
+    "name": "Vollkornnudeln mit Linsen-Bolognese (Familientisch)",
+    "category": "Pasta",
+    "timeMinutes": 45,
     "timeLabel": "mittel",
     "ingredients": [
       {
-        "name": "Risottoreis",
-        "amount": 320,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Lauch",
-        "amount": 2,
-        "unit": "Stangen",
-        "perPortions": 4
-      },
-      {
-        "name": "Weisswein",
+        "name": "Berglinsen",
         "amount": 100,
-        "unit": "ml",
-        "perPortions": 4
-      },
-      {
-        "name": "Gemüsebrühe",
-        "amount": 1200,
-        "unit": "ml",
-        "perPortions": 4
-      },
-      {
-        "name": "Parmesan",
-        "amount": 60,
         "unit": "g",
         "perPortions": 4
       },
       {
-        "name": "Butter",
-        "amount": 40,
-        "unit": "g",
+        "name": "Karotten",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Sellerie",
+        "amount": 1,
+        "unit": "Stange",
         "perPortions": 4
       },
       {
         "name": "Zwiebel",
         "amount": 1,
         "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 1,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomatenmark",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Passierte Tomaten",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Oregano",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Balsamico-Essig",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Vollkornnudeln",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "Herbst",
+      "Winter",
+      "Frühling"
+    ],
+    "weatherType": "kalt",
+    "isMealprep": true,
+    "isSuitableForLunch": true,
+    "source": "Familientisch voraus! (LittleFant)",
+    "basePortions": 4,
+    "description": "Vollwertige Variante mit Berglinsen – extra Balsamico für Tiefe. Sauce gut einfrierbar.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegan"
+  },
+  {
+    "id": "fvt-04",
+    "name": "Vollkornpasta mit Blumenkohl-Bohnen-Cashew-Sauce",
+    "category": "Pasta",
+    "timeMinutes": 35,
+    "timeLabel": "mittel",
+    "ingredients": [
+      {
+        "name": "Cashewkerne",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Weisse Bohnen (gekocht)",
+        "amount": 240,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Blumenkohl",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 1,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kreuzkümmel",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Sojadrink (ungesüsst)",
+        "amount": 150,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Hefeflocken",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Thymian",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Vollkornnudeln",
+        "amount": 400,
+        "unit": "g",
         "perPortions": 4
       }
     ],
@@ -438,109 +575,123 @@
     ],
     "weatherType": "kalt",
     "isMealprep": false,
-    "isSuitableForLunch": false,
-    "source": "eigenes Rezept",
+    "isSuitableForLunch": true,
+    "source": "Familientisch voraus! (LittleFant)",
     "basePortions": 4,
-    "description": "Cremiges Lauchrisotto – Komfort food pur."
+    "description": "Cremige vegane Cashew-Sauce mit Blumenkohl und weissen Bohnen – geröstete Röschen als Topping.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegan"
   },
   {
-    "id": "rei-02",
-    "name": "Risotto mit Ofengemüse",
-    "category": "Reis",
-    "timeMinutes": 60,
+    "id": "fvt-06",
+    "name": "Brokkoli-Gnocchi",
+    "category": "Pasta",
+    "timeMinutes": 55,
     "timeLabel": "aufwändig",
     "ingredients": [
       {
-        "name": "Risottoreis",
-        "amount": 320,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Gemischtes Gemüse",
+        "name": "Kartoffeln (festkochend)",
         "amount": 600,
         "unit": "g",
         "perPortions": 4
       },
       {
-        "name": "Gemüsebrühe",
-        "amount": 1200,
-        "unit": "ml",
+        "name": "Brokkoli",
+        "amount": 200,
+        "unit": "g",
         "perPortions": 4
       },
       {
-        "name": "Parmesan",
+        "name": "Hartweizengrieß",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Kichererbsenmehl",
         "amount": 60,
         "unit": "g",
         "perPortions": 4
       },
       {
-        "name": "Olivenöl",
-        "amount": 4,
-        "unit": "EL",
+        "name": "Muskatnuss",
+        "amount": 1,
+        "unit": "Prise",
         "perPortions": 4
       },
       {
-        "name": "Zwiebel",
-        "amount": 1,
-        "unit": "Stk",
+        "name": "Passierte Tomaten",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 2,
+        "unit": "EL",
         "perPortions": 4
       }
     ],
     "season": [
       "ganzjährig"
     ],
-    "weatherType": "kalt",
-    "isMealprep": true,
+    "weatherType": "neutral",
+    "isMealprep": false,
     "isSuitableForLunch": false,
-    "source": "eigenes Rezept",
+    "source": "Familientisch voraus! (LittleFant)",
     "basePortions": 4,
-    "description": "Risotto mit karamellisiertem Ofengemüse."
+    "description": "Selbstgemachte Gnocchi mit Brokkoli und Kichererbsenmehl – nährstoffreicher als klassische Variante.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegan"
   },
   {
-    "id": "rei-03",
-    "name": "Linsen-Gemüse-Curry mit Reis",
-    "category": "Reis",
-    "timeMinutes": 35,
+    "id": "fvt-09",
+    "name": "Kein-Käse-Käse-Spätzle (vegan)",
+    "category": "Pasta",
+    "timeMinutes": 50,
     "timeLabel": "mittel",
     "ingredients": [
       {
-        "name": "Rote Linsen",
-        "amount": 200,
+        "name": "Weizenmehl (Type 630)",
+        "amount": 160,
         "unit": "g",
         "perPortions": 4
       },
       {
-        "name": "Basmatireis",
-        "amount": 280,
+        "name": "Hartweizengrieß",
+        "amount": 60,
         "unit": "g",
         "perPortions": 4
       },
       {
-        "name": "Kokosmilch",
-        "amount": 400,
+        "name": "Kichererbsenmehl",
+        "amount": 80,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Kurkuma",
+        "amount": 1,
+        "unit": "Msp",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Sojadrink (ungesüsst)",
+        "amount": 250,
         "unit": "ml",
         "perPortions": 4
       },
       {
-        "name": "Currypaste (rot)",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Karotten",
-        "amount": 2,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Zucchini",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
         "name": "Zwiebel",
         "amount": 1,
         "unit": "Stk",
@@ -548,190 +699,126 @@
       },
       {
         "name": "Knoblauch",
-        "amount": 2,
-        "unit": "Zehen",
-        "perPortions": 4
-      }
-    ],
-    "season": [
-      "ganzjährig"
-    ],
-    "weatherType": "neutral",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
-    "source": "eigenes Rezept",
-    "basePortions": 4,
-    "description": "Würziges Curry – perfekt für Mealprep."
-  },
-  {
-    "id": "rei-04",
-    "name": "Bowl mit Reis, Bohnen, Avocado & Tahini",
-    "category": "Reis",
-    "timeMinutes": 20,
-    "timeLabel": "schnell",
-    "ingredients": [
-      {
-        "name": "Basmatireis",
-        "amount": 280,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Schwarze Bohnen (Dose)",
-        "amount": 400,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Avocado",
-        "amount": 2,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Tahini",
-        "amount": 4,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Zitronensaft",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Salat",
         "amount": 1,
-        "unit": "Kopf",
-        "perPortions": 4
-      }
-    ],
-    "season": [
-      "Frühling",
-      "Sommer"
-    ],
-    "weatherType": "warm",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
-    "source": "eigenes Rezept",
-    "basePortions": 4,
-    "description": "Leichte Bowl für warme Tage."
-  },
-  {
-    "id": "rei-05",
-    "name": "Mexikanischer Reissalat",
-    "category": "Reis",
-    "timeMinutes": 20,
-    "timeLabel": "schnell",
-    "ingredients": [
-      {
-        "name": "Langkornreis",
-        "amount": 280,
-        "unit": "g",
+        "unit": "Zehe",
         "perPortions": 4
       },
       {
-        "name": "Mais (Dose)",
+        "name": "Rapsöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Naturtofu",
         "amount": 200,
         "unit": "g",
         "perPortions": 4
       },
       {
-        "name": "Schwarze Bohnen (Dose)",
-        "amount": 400,
+        "name": "Cashewmus",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Hefeflocken",
+        "amount": 15,
         "unit": "g",
         "perPortions": 4
       },
       {
-        "name": "Paprika",
-        "amount": 2,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Koriander",
+        "name": "Paprikapulver (edelsüss)",
         "amount": 0.5,
-        "unit": "Bund",
-        "perPortions": 4
-      },
-      {
-        "name": "Limettensaft",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Olivenöl",
-        "amount": 3,
-        "unit": "EL",
-        "perPortions": 4
-      }
-    ],
-    "season": [
-      "Frühling",
-      "Sommer"
-    ],
-    "weatherType": "warm",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
-    "source": "eigenes Rezept",
-    "basePortions": 4,
-    "description": "Bunter Reissalat mit mexikanischen Aromen."
-  },
-  {
-    "id": "rei-06",
-    "name": "Linsen-Reis",
-    "category": "Reis",
-    "timeMinutes": 30,
-    "timeLabel": "mittel",
-    "ingredients": [
-      {
-        "name": "Linsen (grün)",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Basmati- oder Langkornreis",
-        "amount": 280,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Zwiebel",
-        "amount": 2,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Knoblauch",
-        "amount": 2,
-        "unit": "Zehen",
-        "perPortions": 4
-      },
-      {
-        "name": "Kreuzkümmel",
-        "amount": 1,
         "unit": "TL",
         "perPortions": 4
+      }
+    ],
+    "season": [
+      "Herbst",
+      "Winter"
+    ],
+    "weatherType": "kalt",
+    "isMealprep": false,
+    "isSuitableForLunch": false,
+    "source": "Familientisch voraus! (LittleFant)",
+    "basePortions": 4,
+    "description": "Selbstgemachte Kichererbsen-Spätzle mit cremiger Tofu-Cashew-Sauce – ganz ohne Käse, aber \"cheesy\".",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegan"
+  },
+  {
+    "id": "fvt-12",
+    "name": "Nudeln mit Basilikum-Bohnen-Pesto",
+    "category": "Pasta",
+    "timeMinutes": 20,
+    "timeLabel": "schnell",
+    "ingredients": [
+      {
+        "name": "Basilikum",
+        "amount": 30,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Weisse Bohnen (gekocht)",
+        "amount": 120,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Pinienkerne",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Cashews",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Hefeflocken",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 1,
+        "unit": "Zehe",
+        "perPortions": 4
       },
       {
         "name": "Olivenöl",
-        "amount": 3,
-        "unit": "EL",
+        "amount": 100,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Hartweizennudeln",
+        "amount": 400,
+        "unit": "g",
         "perPortions": 4
       }
     ],
     "season": [
-      "ganzjährig"
+      "Frühling",
+      "Sommer"
     ],
-    "weatherType": "neutral",
-    "isMealprep": true,
+    "weatherType": "warm",
+    "isMealprep": false,
     "isSuitableForLunch": true,
-    "source": "eigenes Rezept",
+    "source": "Familientisch voraus! (LittleFant)",
     "basePortions": 4,
-    "description": "Einfaches, sättigendes Linsen-Reis-Gericht."
+    "description": "Schnelles veganes Pesto aus Basilikum, weissen Bohnen und Cashews – nährstoffreicher als klassisches Pesto.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegan"
   },
   {
     "id": "pas-01",
@@ -798,7 +885,11 @@
     "isSuitableForLunch": true,
     "source": "eigenes Rezept",
     "basePortions": 4,
-    "description": "Vegane Bolognese aus Linsen und Gemüse."
+    "description": "Vegane Bolognese aus Linsen und Gemüse.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegan"
   },
   {
     "id": "pas-02",
@@ -853,7 +944,11 @@
     "isSuitableForLunch": true,
     "source": "eigenes Rezept",
     "basePortions": 4,
-    "description": "Klassische Lasagne vegetarisch."
+    "description": "Klassische Lasagne vegetarisch.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegetarisch"
   },
   {
     "id": "pas-03",
@@ -908,7 +1003,11 @@
     "isSuitableForLunch": true,
     "source": "eigenes Rezept",
     "basePortions": 4,
-    "description": "Cremige Spinat-Ricotta Lasagne."
+    "description": "Cremige Spinat-Ricotta Lasagne.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegetarisch"
   },
   {
     "id": "pas-04",
@@ -957,7 +1056,11 @@
     "isSuitableForLunch": true,
     "source": "eigenes Rezept",
     "basePortions": 4,
-    "description": "Schnell, lecker, mit frischem Basilikum-Pesto."
+    "description": "Schnell, lecker, mit frischem Basilikum-Pesto.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegetarisch"
   },
   {
     "id": "pas-05",
@@ -1005,7 +1108,11 @@
     "isSuitableForLunch": true,
     "source": "eigenes Rezept",
     "basePortions": 4,
-    "description": "Klassische Tomatensauce – simpel und gut."
+    "description": "Klassische Tomatensauce – simpel und gut.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegan"
   },
   {
     "id": "pas-06",
@@ -1060,7 +1167,11 @@
     "isSuitableForLunch": false,
     "source": "eigenes Rezept",
     "basePortions": 4,
-    "description": "Cremige Pilzrahmsauce mit Pasta."
+    "description": "Cremige Pilzrahmsauce mit Pasta.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegetarisch"
   },
   {
     "id": "pas-07",
@@ -1115,7 +1226,11 @@
     "isSuitableForLunch": false,
     "source": "eigenes Rezept",
     "basePortions": 4,
-    "description": "Schweizer Klassiker vom Berg."
+    "description": "Schweizer Klassiker vom Berg.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegetarisch"
   },
   {
     "id": "pas-08",
@@ -1163,7 +1278,11 @@
     "isSuitableForLunch": true,
     "source": "eigenes Rezept",
     "basePortions": 4,
-    "description": "Einfacher Nudelauflauf mit Tomatensauce."
+    "description": "Einfacher Nudelauflauf mit Tomatensauce.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegetarisch"
   },
   {
     "id": "pas-09",
@@ -1219,7 +1338,11 @@
     "isSuitableForLunch": true,
     "source": "eigenes Rezept",
     "basePortions": 4,
-    "description": "Herzhafter Nudelauflauf mit Gemüse."
+    "description": "Herzhafter Nudelauflauf mit Gemüse.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegetarisch"
   },
   {
     "id": "pas-10",
@@ -1274,7 +1397,11 @@
     "isSuitableForLunch": true,
     "source": "eigenes Rezept",
     "basePortions": 4,
-    "description": "Herbstliche Pasta mit cremiger Kürbissauce."
+    "description": "Herbstliche Pasta mit cremiger Kürbissauce.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegetarisch"
   },
   {
     "id": "pas-11",
@@ -1323,7 +1450,11 @@
     "isSuitableForLunch": true,
     "source": "eigenes Rezept",
     "basePortions": 4,
-    "description": "Schweizer Spätzli aus dem Ofen."
+    "description": "Schweizer Spätzli aus dem Ofen.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegetarisch"
   },
   {
     "id": "pas-12",
@@ -1371,7 +1502,495 @@
     "isSuitableForLunch": false,
     "source": "eigenes Rezept",
     "basePortions": 4,
-    "description": "Herbstliche Spätzli-Variante."
+    "description": "Herbstliche Spätzli-Variante.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegetarisch"
+  },
+  {
+    "id": "fvt-10",
+    "name": "Spinat-Linsen-Daal mit Vollkornreis",
+    "category": "Reis",
+    "timeMinutes": 50,
+    "timeLabel": "mittel",
+    "ingredients": [
+      {
+        "name": "Berglinsen",
+        "amount": 150,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Rote Linsen",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Vollkornreis",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Ingwer (frisch)",
+        "amount": 20,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Kokosöl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomatenmark",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Garam Masala",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kreuzkümmel (gemahlen)",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Koriander (gemahlen)",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kurkuma",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kokosmilch",
+        "amount": 400,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Baby-Spinat",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "Herbst",
+      "Winter",
+      "Frühling"
+    ],
+    "weatherType": "kalt",
+    "isMealprep": true,
+    "isSuitableForLunch": true,
+    "source": "Familientisch voraus! (LittleFant)",
+    "basePortions": 4,
+    "description": "Wärmendes Linsen-Daal mit Spinat und Kokosmilch – aromatisch und für die ganze Familie.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegan"
+  },
+  {
+    "id": "rei-01",
+    "name": "Lauchrisotto",
+    "category": "Reis",
+    "timeMinutes": 40,
+    "timeLabel": "mittel",
+    "ingredients": [
+      {
+        "name": "Risottoreis",
+        "amount": 320,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Lauch",
+        "amount": 2,
+        "unit": "Stangen",
+        "perPortions": 4
+      },
+      {
+        "name": "Weisswein",
+        "amount": 100,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 1200,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Parmesan",
+        "amount": 60,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Butter",
+        "amount": 40,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "Herbst",
+      "Winter",
+      "Frühling"
+    ],
+    "weatherType": "kalt",
+    "isMealprep": false,
+    "isSuitableForLunch": false,
+    "source": "eigenes Rezept",
+    "basePortions": 4,
+    "description": "Cremiges Lauchrisotto – Komfort food pur.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegetarisch"
+  },
+  {
+    "id": "rei-02",
+    "name": "Risotto mit Ofengemüse",
+    "category": "Reis",
+    "timeMinutes": 60,
+    "timeLabel": "aufwändig",
+    "ingredients": [
+      {
+        "name": "Risottoreis",
+        "amount": 320,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemischtes Gemüse",
+        "amount": 600,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 1200,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Parmesan",
+        "amount": 60,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "kalt",
+    "isMealprep": true,
+    "isSuitableForLunch": false,
+    "source": "eigenes Rezept",
+    "basePortions": 4,
+    "description": "Risotto mit karamellisiertem Ofengemüse.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegetarisch"
+  },
+  {
+    "id": "rei-03",
+    "name": "Linsen-Gemüse-Curry mit Reis",
+    "category": "Reis",
+    "timeMinutes": 35,
+    "timeLabel": "mittel",
+    "ingredients": [
+      {
+        "name": "Rote Linsen",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Basmatireis",
+        "amount": 280,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Kokosmilch",
+        "amount": 400,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Currypaste (rot)",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Karotten",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Zucchini",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "neutral",
+    "isMealprep": true,
+    "isSuitableForLunch": true,
+    "source": "eigenes Rezept",
+    "basePortions": 4,
+    "description": "Würziges Curry – perfekt für Mealprep.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegan"
+  },
+  {
+    "id": "rei-04",
+    "name": "Bowl mit Reis, Bohnen, Avocado & Tahini",
+    "category": "Reis",
+    "timeMinutes": 20,
+    "timeLabel": "schnell",
+    "ingredients": [
+      {
+        "name": "Basmatireis",
+        "amount": 280,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Schwarze Bohnen (Dose)",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Avocado",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Tahini",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salat",
+        "amount": 1,
+        "unit": "Kopf",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "Frühling",
+      "Sommer"
+    ],
+    "weatherType": "warm",
+    "isMealprep": true,
+    "isSuitableForLunch": true,
+    "source": "eigenes Rezept",
+    "basePortions": 4,
+    "description": "Leichte Bowl für warme Tage.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegan"
+  },
+  {
+    "id": "rei-05",
+    "name": "Mexikanischer Reissalat",
+    "category": "Reis",
+    "timeMinutes": 20,
+    "timeLabel": "schnell",
+    "ingredients": [
+      {
+        "name": "Langkornreis",
+        "amount": 280,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Mais (Dose)",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Schwarze Bohnen (Dose)",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Paprika",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Koriander",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Limettensaft",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "Frühling",
+      "Sommer"
+    ],
+    "weatherType": "warm",
+    "isMealprep": true,
+    "isSuitableForLunch": true,
+    "source": "eigenes Rezept",
+    "basePortions": 4,
+    "description": "Bunter Reissalat mit mexikanischen Aromen.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegan"
+  },
+  {
+    "id": "rei-06",
+    "name": "Linsen-Reis",
+    "category": "Reis",
+    "timeMinutes": 30,
+    "timeLabel": "mittel",
+    "ingredients": [
+      {
+        "name": "Linsen (grün)",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Basmati- oder Langkornreis",
+        "amount": 280,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Kreuzkümmel",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "neutral",
+    "isMealprep": true,
+    "isSuitableForLunch": true,
+    "source": "eigenes Rezept",
+    "basePortions": 4,
+    "description": "Einfaches, sättigendes Linsen-Reis-Gericht.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegan"
   },
   {
     "id": "ein-01",
@@ -1444,7 +2063,11 @@
     "isSuitableForLunch": true,
     "source": "eigenes Rezept",
     "basePortions": 4,
-    "description": "Veganes Chili – würzig und sättigend."
+    "description": "Veganes Chili – würzig und sättigend.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegetarisch"
   },
   {
     "id": "ein-02",
@@ -1498,7 +2121,11 @@
     "isSuitableForLunch": false,
     "source": "eigenes Rezept",
     "basePortions": 4,
-    "description": "Risotto-Variante mit Urdinkelkernen."
+    "description": "Risotto-Variante mit Urdinkelkernen.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegetarisch"
   },
   {
     "id": "ein-03",
@@ -1552,7 +2179,11 @@
     "isSuitableForLunch": false,
     "source": "eigenes Rezept",
     "basePortions": 4,
-    "description": "Herzhaftes Kernotto mit mediterranen Aromen."
+    "description": "Herzhaftes Kernotto mit mediterranen Aromen.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegetarisch"
   },
   {
     "id": "ein-04",
@@ -1601,7 +2232,11 @@
     "isSuitableForLunch": true,
     "source": "eigenes Rezept",
     "basePortions": 4,
-    "description": "Deftige Kombination mit Räuchertofu."
+    "description": "Deftige Kombination mit Räuchertofu.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegan"
   },
   {
     "id": "ein-05",
@@ -1656,1161 +2291,11 @@
     "isSuitableForLunch": false,
     "source": "eigenes Rezept",
     "basePortions": 4,
-    "description": "Wärmender Auflauf mit Sauerkraut."
-  },
-  {
-    "id": "fis-01",
-    "name": "Fisch, Salzkartoffeln und Spinat",
-    "category": "Fisch",
-    "timeMinutes": 30,
-    "timeLabel": "mittel",
-    "ingredients": [
-      {
-        "name": "Fischfilets (z.B. Lachs)",
-        "amount": 600,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Kartoffeln",
-        "amount": 600,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Spinat (TK)",
-        "amount": 400,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Butter",
-        "amount": 30,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Zitrone",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 4
-      }
-    ],
-    "season": [
-      "ganzjährig"
-    ],
-    "weatherType": "neutral",
-    "isMealprep": false,
-    "isSuitableForLunch": false,
-    "source": "eigenes Rezept",
-    "basePortions": 4,
-    "description": "Leichtes Fischgericht mit Beilagen."
-  },
-  {
-    "id": "son-01",
-    "name": "Fajitas",
-    "category": "Sonstige",
-    "timeMinutes": 25,
-    "timeLabel": "mittel",
-    "ingredients": [
-      {
-        "name": "Weizentortillas",
-        "amount": 8,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Paprika",
-        "amount": 3,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Zwiebel",
-        "amount": 2,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Sauerrahm",
-        "amount": 150,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Guacamole",
-        "amount": 150,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Salsa",
-        "amount": 150,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Fajita-Gewürz",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 4
-      }
-    ],
-    "season": [
-      "ganzjährig"
-    ],
-    "weatherType": "neutral",
-    "isMealprep": false,
-    "isSuitableForLunch": false,
-    "source": "eigenes Rezept",
-    "basePortions": 4,
-    "description": "Buntes Fajita-Fest für die Familie."
-  },
-  {
-    "id": "son-02",
-    "name": "Tacos mit Linsen & Baumnüsse",
-    "category": "Sonstige",
-    "timeMinutes": 25,
-    "timeLabel": "mittel",
-    "ingredients": [
-      {
-        "name": "Taco-Shells",
-        "amount": 8,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Rote Linsen",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Baumnüsse",
-        "amount": 80,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Passierte Tomaten",
-        "amount": 300,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Gewürzmischung",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Salat",
-        "amount": 0.5,
-        "unit": "Kopf",
-        "perPortions": 4
-      }
-    ],
-    "season": [
-      "ganzjährig"
-    ],
-    "weatherType": "neutral",
-    "isMealprep": false,
-    "isSuitableForLunch": false,
-    "source": "eigenes Rezept",
-    "basePortions": 4,
-    "description": "Vegane Tacos mit knackigen Baumnüssen."
-  },
-  {
-    "id": "son-03",
-    "name": "Pitabrot mit Falafel, Tzatziki und Gemüse",
-    "category": "Sonstige",
-    "timeMinutes": 20,
-    "timeLabel": "schnell",
-    "ingredients": [
-      {
-        "name": "Pitabrot",
-        "amount": 4,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Falafel (fertig)",
-        "amount": 20,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Tzatziki",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Salat",
-        "amount": 0.5,
-        "unit": "Kopf",
-        "perPortions": 4
-      },
-      {
-        "name": "Tomaten",
-        "amount": 2,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Gurke",
-        "amount": 0.5,
-        "unit": "Stk",
-        "perPortions": 4
-      }
-    ],
-    "season": [
-      "Frühling",
-      "Sommer"
-    ],
-    "weatherType": "warm",
-    "isMealprep": false,
-    "isSuitableForLunch": true,
-    "source": "eigenes Rezept",
-    "basePortions": 4,
-    "description": "Frisches Streetfood zu Hause."
-  },
-  {
-    "id": "asi-01",
-    "name": "Pad Thai",
-    "category": "Asiatisch",
-    "timeMinutes": 25,
-    "timeLabel": "mittel",
-    "ingredients": [
-      {
-        "name": "Reisnudeln",
-        "amount": 300,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Tofu (fest)",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Eier",
-        "amount": 3,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Erdnüsse",
-        "amount": 80,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Pad Thai Sauce",
-        "amount": 4,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Frühlingszwiebeln",
-        "amount": 4,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Limette",
-        "amount": 2,
-        "unit": "Stk",
-        "perPortions": 4
-      }
-    ],
-    "season": [
-      "Frühling",
-      "Sommer"
-    ],
-    "weatherType": "warm",
-    "isMealprep": false,
-    "isSuitableForLunch": true,
-    "source": "eigenes Rezept",
-    "basePortions": 4,
-    "description": "Klassisches Thai-Nudelgericht."
-  },
-  {
-    "id": "asi-02",
-    "name": "Ayurvedisches Kitchari",
-    "category": "Asiatisch",
-    "timeMinutes": 40,
-    "timeLabel": "mittel",
-    "ingredients": [
-      {
-        "name": "Rote Linsen",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Basmati-Reis",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Ghee oder Butter",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Ingwer (frisch)",
-        "amount": 20,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Kurkuma",
-        "amount": 1,
-        "unit": "TL",
-        "perPortions": 4
-      },
-      {
-        "name": "Koriandersamen",
-        "amount": 1,
-        "unit": "TL",
-        "perPortions": 4
-      },
-      {
-        "name": "Kreuzkümmel",
-        "amount": 1,
-        "unit": "TL",
-        "perPortions": 4
-      }
-    ],
-    "season": [
-      "ganzjährig"
-    ],
-    "weatherType": "neutral",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
-    "source": "eigenes Rezept",
-    "basePortions": 4,
-    "description": "Ayurvedischer Klassiker – reinigend und nahrhaft."
-  },
-  {
-    "id": "ofe-01",
-    "name": "Ofengemüse mit Feta und Tahini-Quinoa",
-    "category": "Ofen",
-    "timeMinutes": 50,
-    "timeLabel": "mittel",
-    "ingredients": [
-      {
-        "name": "Gemischtes Gemüse",
-        "amount": 800,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Feta",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Quinoa",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Tahini",
-        "amount": 3,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Zitronensaft",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Olivenöl",
-        "amount": 4,
-        "unit": "EL",
-        "perPortions": 4
-      }
-    ],
-    "season": [
-      "ganzjährig"
-    ],
-    "weatherType": "neutral",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
-    "source": "eigenes Rezept",
-    "basePortions": 4,
-    "description": "Buntes Ofengemüse mit Tahini-Quinoa und Feta."
-  },
-  {
-    "id": "sup-01",
-    "name": "Kürbissuppe mit Kartoffel, Ingwer und Curry",
-    "category": "Suppen",
-    "timeMinutes": 35,
-    "timeLabel": "mittel",
-    "ingredients": [
-      {
-        "name": "Butternusskürbis",
-        "amount": 800,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Kartoffeln",
-        "amount": 300,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Ingwer (frisch)",
-        "amount": 30,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Currypulver",
-        "amount": 2,
-        "unit": "TL",
-        "perPortions": 4
-      },
-      {
-        "name": "Gemüsebrühe",
-        "amount": 1000,
-        "unit": "ml",
-        "perPortions": 4
-      },
-      {
-        "name": "Kokosmilch",
-        "amount": 200,
-        "unit": "ml",
-        "perPortions": 4
-      }
-    ],
-    "season": [
-      "Herbst",
-      "Winter"
-    ],
-    "weatherType": "kalt",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
-    "source": "eigenes Rezept",
-    "basePortions": 4,
-    "description": "Wärmende Kürbissuppe mit exotischem Kick."
-  },
-  {
-    "id": "sup-02",
-    "name": "Minestrone",
-    "category": "Suppen",
-    "timeMinutes": 45,
-    "timeLabel": "mittel",
-    "ingredients": [
-      {
-        "name": "Gemischtes Gemüse",
-        "amount": 600,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Tomatenwürfel (Dose)",
-        "amount": 400,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Pasta (klein)",
-        "amount": 150,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Weisse Bohnen (Dose)",
-        "amount": 400,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Gemüsebrühe",
-        "amount": 1000,
-        "unit": "ml",
-        "perPortions": 4
-      },
-      {
-        "name": "Parmesan",
-        "amount": 40,
-        "unit": "g",
-        "perPortions": 4
-      }
-    ],
-    "season": [
-      "Herbst",
-      "Winter",
-      "Frühling"
-    ],
-    "weatherType": "kalt",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
-    "source": "Menüliste",
-    "basePortions": 4,
-    "description": "Italienische Gemüsesuppe mit Pasta und Bohnen."
-  },
-  {
-    "id": "sup-03",
-    "name": "Gerstensuppe",
-    "category": "Suppen",
-    "timeMinutes": 60,
-    "timeLabel": "aufwändig",
-    "ingredients": [
-      {
-        "name": "Rollgerste",
-        "amount": 150,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Karotten",
-        "amount": 3,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Sellerie",
-        "amount": 2,
-        "unit": "Stangen",
-        "perPortions": 4
-      },
-      {
-        "name": "Lauch",
-        "amount": 1,
-        "unit": "Stange",
-        "perPortions": 4
-      },
-      {
-        "name": "Gemüsebrühe",
-        "amount": 1500,
-        "unit": "ml",
-        "perPortions": 4
-      },
-      {
-        "name": "Peterli",
-        "amount": 0.5,
-        "unit": "Bund",
-        "perPortions": 4
-      }
-    ],
-    "season": [
-      "Herbst",
-      "Winter"
-    ],
-    "weatherType": "kalt",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
-    "source": "eigenes Rezept",
-    "basePortions": 4,
-    "description": "Sättigende Suppe mit Rollgerste."
-  },
-  {
-    "id": "sup-04",
-    "name": "Gelberbsensuppe",
-    "category": "Suppen",
-    "timeMinutes": 50,
-    "timeLabel": "mittel",
-    "ingredients": [
-      {
-        "name": "Gelbe Erbsen (getrocknet)",
-        "amount": 300,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Karotten",
-        "amount": 2,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Zwiebel",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Gemüsebrühe",
-        "amount": 1500,
-        "unit": "ml",
-        "perPortions": 4
-      },
-      {
-        "name": "Majoran",
-        "amount": 1,
-        "unit": "TL",
-        "perPortions": 4
-      }
-    ],
-    "season": [
-      "Herbst",
-      "Winter"
-    ],
-    "weatherType": "kalt",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
-    "source": "eigenes Rezept",
-    "basePortions": 4,
-    "description": "Deftige Erbsensuppe nach Grossmutterart."
-  },
-  {
-    "id": "sup-05",
-    "name": "Süsskartoffelsuppe",
-    "category": "Suppen",
-    "timeMinutes": 35,
-    "timeLabel": "mittel",
-    "ingredients": [
-      {
-        "name": "Süsskartoffeln",
-        "amount": 800,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Ingwer (frisch)",
-        "amount": 20,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Kokosmilch",
-        "amount": 200,
-        "unit": "ml",
-        "perPortions": 4
-      },
-      {
-        "name": "Gemüsebrühe",
-        "amount": 800,
-        "unit": "ml",
-        "perPortions": 4
-      },
-      {
-        "name": "Koriander",
-        "amount": 0.5,
-        "unit": "Bund",
-        "perPortions": 4
-      }
-    ],
-    "season": [
-      "Herbst",
-      "Winter"
-    ],
-    "weatherType": "kalt",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
-    "source": "eigenes Rezept",
-    "basePortions": 4,
-    "description": "Samtweiche Suppe mit exotischer Note."
-  },
-  {
-    "id": "sal-01",
-    "name": "Quinoa Bowl",
-    "category": "Salat/Bowl",
-    "timeMinutes": 25,
-    "timeLabel": "mittel",
-    "ingredients": [
-      {
-        "name": "Quinoa",
-        "amount": 240,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Kichererbsen (Dose)",
-        "amount": 400,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Gemischtes Gemüse",
-        "amount": 400,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Tahini",
-        "amount": 4,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Zitronensaft",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 4
-      }
-    ],
-    "season": [
-      "Frühling",
-      "Sommer"
-    ],
-    "weatherType": "warm",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
-    "source": "eigenes Rezept",
-    "basePortions": 4,
-    "description": "Proteinreiche Bowl für warme Tage."
-  },
-  {
-    "id": "sal-02",
-    "name": "Rucola Birnen Fetasalat",
-    "category": "Salat/Bowl",
-    "timeMinutes": 15,
-    "timeLabel": "schnell",
-    "ingredients": [
-      {
-        "name": "Rucola",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Birnen",
-        "amount": 2,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Feta",
-        "amount": 150,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Walnüsse",
-        "amount": 60,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Balsamico",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Olivenöl",
-        "amount": 3,
-        "unit": "EL",
-        "perPortions": 4
-      }
-    ],
-    "season": [
-      "Herbst",
-      "Frühling",
-      "Sommer"
-    ],
-    "weatherType": "warm",
-    "isMealprep": false,
-    "isSuitableForLunch": true,
-    "source": "eigenes Rezept",
-    "basePortions": 4,
-    "description": "Eleganter Salat mit Birne und Feta."
-  },
-  {
-    "id": "sal-03",
-    "name": "Taboulé",
-    "category": "Salat/Bowl",
-    "timeMinutes": 20,
-    "timeLabel": "schnell",
-    "ingredients": [
-      {
-        "name": "Bulgur",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Petersilie",
-        "amount": 1,
-        "unit": "Bund",
-        "perPortions": 4
-      },
-      {
-        "name": "Minze",
-        "amount": 0.5,
-        "unit": "Bund",
-        "perPortions": 4
-      },
-      {
-        "name": "Tomaten",
-        "amount": 3,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Gurke",
-        "amount": 0.5,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Zitronensaft",
-        "amount": 3,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Olivenöl",
-        "amount": 4,
-        "unit": "EL",
-        "perPortions": 4
-      }
-    ],
-    "season": [
-      "Frühling",
-      "Sommer"
-    ],
-    "weatherType": "warm",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
-    "source": "eigenes Rezept",
-    "basePortions": 4,
-    "description": "Frischer Levante-Salat."
-  },
-  {
-    "id": "sal-04",
-    "name": "Kichererbsensalat",
-    "category": "Salat/Bowl",
-    "timeMinutes": 15,
-    "timeLabel": "schnell",
-    "ingredients": [
-      {
-        "name": "Kichererbsen (Dose)",
-        "amount": 800,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Tomaten",
-        "amount": 3,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Gurke",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Rote Zwiebel",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Petersilie",
-        "amount": 0.5,
-        "unit": "Bund",
-        "perPortions": 4
-      },
-      {
-        "name": "Zitronensaft",
-        "amount": 3,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Olivenöl",
-        "amount": 3,
-        "unit": "EL",
-        "perPortions": 4
-      }
-    ],
-    "season": [
-      "Frühling",
-      "Sommer"
-    ],
-    "weatherType": "warm",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
-    "source": "eigenes Rezept",
-    "basePortions": 4,
-    "description": "Proteinreicher Salat, schnell gemacht."
-  },
-  {
-    "id": "sal-05",
-    "name": "Roter Linsensalat",
-    "category": "Salat/Bowl",
-    "timeMinutes": 20,
-    "timeLabel": "schnell",
-    "ingredients": [
-      {
-        "name": "Rote Linsen",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Paprika",
-        "amount": 2,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Tomaten",
-        "amount": 2,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Frühlingszwiebeln",
-        "amount": 4,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Zitronensaft",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Olivenöl",
-        "amount": 3,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Kreuzkümmel",
-        "amount": 1,
-        "unit": "TL",
-        "perPortions": 4
-      }
-    ],
-    "season": [
-      "Frühling",
-      "Sommer"
-    ],
-    "weatherType": "warm",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
-    "source": "eigenes Rezept",
-    "basePortions": 4,
-    "description": "Leichter Salat mit roten Linsen."
-  },
-  {
-    "id": "sal-06",
-    "name": "Kartoffelsalat",
-    "category": "Salat/Bowl",
-    "timeMinutes": 30,
-    "timeLabel": "mittel",
-    "ingredients": [
-      {
-        "name": "Festkochende Kartoffeln",
-        "amount": 800,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Mayonnaise",
-        "amount": 4,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Essiggurken",
-        "amount": 4,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Senf",
-        "amount": 1,
-        "unit": "TL",
-        "perPortions": 4
-      },
-      {
-        "name": "Schnittlauch",
-        "amount": 0.5,
-        "unit": "Bund",
-        "perPortions": 4
-      }
-    ],
-    "season": [
-      "ganzjährig"
-    ],
-    "weatherType": "neutral",
-    "isMealprep": false,
-    "isSuitableForLunch": true,
-    "source": "eigenes Rezept",
-    "basePortions": 4,
-    "description": "Klassischer Kartoffelsalat."
-  },
-  {
-    "id": "sal-07",
-    "name": "Griechischer Salat",
-    "category": "Salat/Bowl",
-    "timeMinutes": 15,
-    "timeLabel": "schnell",
-    "ingredients": [
-      {
-        "name": "Tomaten",
-        "amount": 4,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Gurke",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Feta",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Oliven",
-        "amount": 100,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Rote Zwiebel",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Oregano",
-        "amount": 1,
-        "unit": "TL",
-        "perPortions": 4
-      },
-      {
-        "name": "Olivenöl",
-        "amount": 4,
-        "unit": "EL",
-        "perPortions": 4
-      }
-    ],
-    "season": [
-      "Frühling",
-      "Sommer"
-    ],
-    "weatherType": "warm",
-    "isMealprep": false,
-    "isSuitableForLunch": true,
-    "source": "eigenes Rezept",
-    "basePortions": 4,
-    "description": "Sommerlicher Klassiker aus Griechenland."
-  },
-  {
-    "id": "rec-1779488181331-i6vew",
-    "name": "Tomaten & Mozzerella Salat",
-    "category": "Salat/Bowl",
-    "timeMinutes": 15,
-    "timeLabel": "schnell",
-    "ingredients": [],
-    "season": [
-      "Sommer"
-    ],
-    "weatherType": "warm",
-    "isMealprep": false,
-    "isSuitableForLunch": true,
-    "source": "eigenes Rezept",
-    "basePortions": 4,
-    "description": ""
-  },
-  {
-    "id": "fvt-01",
-    "name": "Süsskartoffel-Kichererbsen-Waffeln mit Joghurt-Gurken-Dip",
-    "category": "Sonstige",
-    "timeMinutes": 35,
-    "timeLabel": "mittel",
-    "ingredients": [
-      {
-        "name": "Süsskartoffel",
-        "amount": 180,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Salatgurke",
-        "amount": 0.5,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Dill",
-        "amount": 1,
-        "unit": "Zweig",
-        "perPortions": 4
-      },
-      {
-        "name": "Sojajoghurt",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Sesammus",
-        "amount": 1,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Zitronensaft",
-        "amount": 1,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Dinkelvollkornmehl",
-        "amount": 80,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Kichererbsenmehl",
-        "amount": 70,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Backpulver",
-        "amount": 1,
-        "unit": "TL",
-        "perPortions": 4
-      },
-      {
-        "name": "Sojadrink (ungesüsst)",
-        "amount": 150,
-        "unit": "ml",
-        "perPortions": 4
-      },
-      {
-        "name": "Rapsöl",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 4
-      }
-    ],
-    "season": [
-      "ganzjährig"
-    ],
-    "weatherType": "neutral",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
-    "source": "Familientisch voraus! (LittleFant)",
-    "basePortions": 4,
-    "description": "Herzhafte Waffeln mit Süsskartoffel und Kichererbsen, dazu ein frischer Joghurt-Gurken-Dip. Gefriergeeignet."
+    "description": "Wärmender Auflauf mit Sauerkraut.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegetarisch"
   },
   {
     "id": "fvt-02",
@@ -2919,323 +2404,11 @@
     "isSuitableForLunch": true,
     "source": "Familientisch voraus! (LittleFant)",
     "basePortions": 4,
-    "description": "Wärmend-herzhaftes Gulasch mit Kürbis, Kartoffeln und weissen Bohnen. Garniert mit Kräuteröl."
-  },
-  {
-    "id": "fvt-03",
-    "name": "Vollkornnudeln mit Linsen-Bolognese (Familientisch)",
-    "category": "Pasta",
-    "timeMinutes": 45,
-    "timeLabel": "mittel",
-    "ingredients": [
-      {
-        "name": "Berglinsen",
-        "amount": 100,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Karotten",
-        "amount": 2,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Sellerie",
-        "amount": 1,
-        "unit": "Stange",
-        "perPortions": 4
-      },
-      {
-        "name": "Zwiebel",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Knoblauch",
-        "amount": 1,
-        "unit": "Zehe",
-        "perPortions": 4
-      },
-      {
-        "name": "Olivenöl",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Tomatenmark",
-        "amount": 1,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Passierte Tomaten",
-        "amount": 400,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Oregano",
-        "amount": 1,
-        "unit": "TL",
-        "perPortions": 4
-      },
-      {
-        "name": "Balsamico-Essig",
-        "amount": 1,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Vollkornnudeln",
-        "amount": 400,
-        "unit": "g",
-        "perPortions": 4
-      }
-    ],
-    "season": [
-      "Herbst",
-      "Winter",
-      "Frühling"
-    ],
-    "weatherType": "kalt",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
-    "source": "Familientisch voraus! (LittleFant)",
-    "basePortions": 4,
-    "description": "Vollwertige Variante mit Berglinsen – extra Balsamico für Tiefe. Sauce gut einfrierbar."
-  },
-  {
-    "id": "fvt-04",
-    "name": "Vollkornpasta mit Blumenkohl-Bohnen-Cashew-Sauce",
-    "category": "Pasta",
-    "timeMinutes": 35,
-    "timeLabel": "mittel",
-    "ingredients": [
-      {
-        "name": "Cashewkerne",
-        "amount": 50,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Weisse Bohnen (gekocht)",
-        "amount": 240,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Blumenkohl",
-        "amount": 500,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Knoblauch",
-        "amount": 1,
-        "unit": "Zehe",
-        "perPortions": 4
-      },
-      {
-        "name": "Olivenöl",
-        "amount": 3,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Kreuzkümmel",
-        "amount": 0.5,
-        "unit": "TL",
-        "perPortions": 4
-      },
-      {
-        "name": "Sojadrink (ungesüsst)",
-        "amount": 150,
-        "unit": "ml",
-        "perPortions": 4
-      },
-      {
-        "name": "Hefeflocken",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Thymian",
-        "amount": 1,
-        "unit": "TL",
-        "perPortions": 4
-      },
-      {
-        "name": "Vollkornnudeln",
-        "amount": 400,
-        "unit": "g",
-        "perPortions": 4
-      }
-    ],
-    "season": [
-      "Herbst",
-      "Winter",
-      "Frühling"
-    ],
-    "weatherType": "kalt",
-    "isMealprep": false,
-    "isSuitableForLunch": true,
-    "source": "Familientisch voraus! (LittleFant)",
-    "basePortions": 4,
-    "description": "Cremige vegane Cashew-Sauce mit Blumenkohl und weissen Bohnen – geröstete Röschen als Topping."
-  },
-  {
-    "id": "fvt-05",
-    "name": "Kartoffelpuffer mit Bohnen und Kräuter-Dip",
-    "category": "Sonstige",
-    "timeMinutes": 40,
-    "timeLabel": "mittel",
-    "ingredients": [
-      {
-        "name": "Kartoffeln (festkochend)",
-        "amount": 700,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Süsskartoffeln",
-        "amount": 300,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Weisse Bohnen (gekocht)",
-        "amount": 240,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Zwiebel",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Dinkelvollkornmehl",
-        "amount": 30,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Sojaquark",
-        "amount": 400,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Petersilie",
-        "amount": 0.5,
-        "unit": "Bund",
-        "perPortions": 4
-      },
-      {
-        "name": "Dill",
-        "amount": 0.5,
-        "unit": "Bund",
-        "perPortions": 4
-      },
-      {
-        "name": "Zitronensaft",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Olivenöl",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Muskatnuss",
-        "amount": 1,
-        "unit": "Prise",
-        "perPortions": 4
-      },
-      {
-        "name": "Rapsöl",
-        "amount": 3,
-        "unit": "EL",
-        "perPortions": 4
-      }
-    ],
-    "season": [
-      "ganzjährig"
-    ],
-    "weatherType": "neutral",
-    "isMealprep": false,
-    "isSuitableForLunch": true,
-    "source": "Familientisch voraus! (LittleFant)",
-    "basePortions": 4,
-    "description": "Knusprige Kartoffelpuffer mit Süsskartoffel und Bohnen, dazu ein frischer Kräuter-Quark-Dip."
-  },
-  {
-    "id": "fvt-06",
-    "name": "Brokkoli-Gnocchi",
-    "category": "Pasta",
-    "timeMinutes": 55,
-    "timeLabel": "aufwändig",
-    "ingredients": [
-      {
-        "name": "Kartoffeln (festkochend)",
-        "amount": 600,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Brokkoli",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Hartweizengrieß",
-        "amount": 100,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Kichererbsenmehl",
-        "amount": 60,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Muskatnuss",
-        "amount": 1,
-        "unit": "Prise",
-        "perPortions": 4
-      },
-      {
-        "name": "Passierte Tomaten",
-        "amount": 400,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Olivenöl",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 4
-      }
-    ],
-    "season": [
-      "ganzjährig"
-    ],
-    "weatherType": "neutral",
-    "isMealprep": false,
-    "isSuitableForLunch": false,
-    "source": "Familientisch voraus! (LittleFant)",
-    "basePortions": 4,
-    "description": "Selbstgemachte Gnocchi mit Brokkoli und Kichererbsenmehl – nährstoffreicher als klassische Variante."
+    "description": "Wärmend-herzhaftes Gulasch mit Kürbis, Kartoffeln und weissen Bohnen. Garniert mit Kräuteröl.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegan"
   },
   {
     "id": "fvt-07",
@@ -3339,7 +2512,741 @@
     "isSuitableForLunch": true,
     "source": "Familientisch voraus! (LittleFant)",
     "basePortions": 4,
-    "description": "Bunte Gemüsesuppe mit Bohnen und Vollkornnudeln – ideal um neue Gemüsesorten einzuführen."
+    "description": "Bunte Gemüsesuppe mit Bohnen und Vollkornnudeln – ideal um neue Gemüsesorten einzuführen.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegan"
+  },
+  {
+    "id": "sup-01",
+    "name": "Kürbissuppe mit Kartoffel, Ingwer und Curry",
+    "category": "Suppen",
+    "timeMinutes": 35,
+    "timeLabel": "mittel",
+    "ingredients": [
+      {
+        "name": "Butternusskürbis",
+        "amount": 800,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Kartoffeln",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Ingwer (frisch)",
+        "amount": 30,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Currypulver",
+        "amount": 2,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 1000,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Kokosmilch",
+        "amount": 200,
+        "unit": "ml",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "Herbst",
+      "Winter"
+    ],
+    "weatherType": "kalt",
+    "isMealprep": true,
+    "isSuitableForLunch": true,
+    "source": "eigenes Rezept",
+    "basePortions": 4,
+    "description": "Wärmende Kürbissuppe mit exotischem Kick.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegan"
+  },
+  {
+    "id": "sup-02",
+    "name": "Minestrone",
+    "category": "Suppen",
+    "timeMinutes": 45,
+    "timeLabel": "mittel",
+    "ingredients": [
+      {
+        "name": "Gemischtes Gemüse",
+        "amount": 600,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomatenwürfel (Dose)",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Pasta (klein)",
+        "amount": 150,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Weisse Bohnen (Dose)",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 1000,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Parmesan",
+        "amount": 40,
+        "unit": "g",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "Herbst",
+      "Winter",
+      "Frühling"
+    ],
+    "weatherType": "kalt",
+    "isMealprep": true,
+    "isSuitableForLunch": true,
+    "source": "Menüliste",
+    "basePortions": 4,
+    "description": "Italienische Gemüsesuppe mit Pasta und Bohnen.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegetarisch"
+  },
+  {
+    "id": "sup-03",
+    "name": "Gerstensuppe",
+    "category": "Suppen",
+    "timeMinutes": 60,
+    "timeLabel": "aufwändig",
+    "ingredients": [
+      {
+        "name": "Rollgerste",
+        "amount": 150,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Karotten",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Sellerie",
+        "amount": 2,
+        "unit": "Stangen",
+        "perPortions": 4
+      },
+      {
+        "name": "Lauch",
+        "amount": 1,
+        "unit": "Stange",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 1500,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Peterli",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "Herbst",
+      "Winter"
+    ],
+    "weatherType": "kalt",
+    "isMealprep": true,
+    "isSuitableForLunch": true,
+    "source": "eigenes Rezept",
+    "basePortions": 4,
+    "description": "Sättigende Suppe mit Rollgerste.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegan"
+  },
+  {
+    "id": "sup-04",
+    "name": "Gelberbsensuppe",
+    "category": "Suppen",
+    "timeMinutes": 50,
+    "timeLabel": "mittel",
+    "ingredients": [
+      {
+        "name": "Gelbe Erbsen (getrocknet)",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Karotten",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 1500,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Majoran",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "Herbst",
+      "Winter"
+    ],
+    "weatherType": "kalt",
+    "isMealprep": true,
+    "isSuitableForLunch": true,
+    "source": "eigenes Rezept",
+    "basePortions": 4,
+    "description": "Deftige Erbsensuppe nach Grossmutterart.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegan"
+  },
+  {
+    "id": "sup-05",
+    "name": "Süsskartoffelsuppe",
+    "category": "Suppen",
+    "timeMinutes": 35,
+    "timeLabel": "mittel",
+    "ingredients": [
+      {
+        "name": "Süsskartoffeln",
+        "amount": 800,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Ingwer (frisch)",
+        "amount": 20,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Kokosmilch",
+        "amount": 200,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 800,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Koriander",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "Herbst",
+      "Winter"
+    ],
+    "weatherType": "kalt",
+    "isMealprep": true,
+    "isSuitableForLunch": true,
+    "source": "eigenes Rezept",
+    "basePortions": 4,
+    "description": "Samtweiche Suppe mit exotischer Note.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegan"
+  },
+  {
+    "id": "rec-1779488181331-i6vew",
+    "name": "Tomaten & Mozzerella Salat",
+    "category": "Salat/Bowl",
+    "timeMinutes": 15,
+    "timeLabel": "schnell",
+    "ingredients": [],
+    "season": [
+      "Sommer"
+    ],
+    "weatherType": "warm",
+    "isMealprep": false,
+    "isSuitableForLunch": true,
+    "source": "eigenes Rezept",
+    "basePortions": 4,
+    "description": "",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegetarisch"
+  },
+  {
+    "id": "sal-01",
+    "name": "Quinoa Bowl",
+    "category": "Salat/Bowl",
+    "timeMinutes": 25,
+    "timeLabel": "mittel",
+    "ingredients": [
+      {
+        "name": "Quinoa",
+        "amount": 240,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Kichererbsen (Dose)",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemischtes Gemüse",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Tahini",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "Frühling",
+      "Sommer"
+    ],
+    "weatherType": "warm",
+    "isMealprep": true,
+    "isSuitableForLunch": true,
+    "source": "eigenes Rezept",
+    "basePortions": 4,
+    "description": "Proteinreiche Bowl für warme Tage.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegan"
+  },
+  {
+    "id": "sal-02",
+    "name": "Rucola Birnen Fetasalat",
+    "category": "Salat/Bowl",
+    "timeMinutes": 15,
+    "timeLabel": "schnell",
+    "ingredients": [
+      {
+        "name": "Rucola",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Birnen",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Feta",
+        "amount": 150,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Walnüsse",
+        "amount": 60,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Balsamico",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "Herbst",
+      "Frühling",
+      "Sommer"
+    ],
+    "weatherType": "warm",
+    "isMealprep": false,
+    "isSuitableForLunch": true,
+    "source": "eigenes Rezept",
+    "basePortions": 4,
+    "description": "Eleganter Salat mit Birne und Feta.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegetarisch"
+  },
+  {
+    "id": "sal-03",
+    "name": "Taboulé",
+    "category": "Salat/Bowl",
+    "timeMinutes": 20,
+    "timeLabel": "schnell",
+    "ingredients": [
+      {
+        "name": "Bulgur",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Petersilie",
+        "amount": 1,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Minze",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomaten",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Gurke",
+        "amount": 0.5,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "Frühling",
+      "Sommer"
+    ],
+    "weatherType": "warm",
+    "isMealprep": true,
+    "isSuitableForLunch": true,
+    "source": "eigenes Rezept",
+    "basePortions": 4,
+    "description": "Frischer Levante-Salat.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegan"
+  },
+  {
+    "id": "sal-04",
+    "name": "Kichererbsensalat",
+    "category": "Salat/Bowl",
+    "timeMinutes": 15,
+    "timeLabel": "schnell",
+    "ingredients": [
+      {
+        "name": "Kichererbsen (Dose)",
+        "amount": 800,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomaten",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Gurke",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Rote Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Petersilie",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "Frühling",
+      "Sommer"
+    ],
+    "weatherType": "warm",
+    "isMealprep": true,
+    "isSuitableForLunch": true,
+    "source": "eigenes Rezept",
+    "basePortions": 4,
+    "description": "Proteinreicher Salat, schnell gemacht.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegan"
+  },
+  {
+    "id": "sal-05",
+    "name": "Roter Linsensalat",
+    "category": "Salat/Bowl",
+    "timeMinutes": 20,
+    "timeLabel": "schnell",
+    "ingredients": [
+      {
+        "name": "Rote Linsen",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Paprika",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomaten",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Frühlingszwiebeln",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kreuzkümmel",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "Frühling",
+      "Sommer"
+    ],
+    "weatherType": "warm",
+    "isMealprep": true,
+    "isSuitableForLunch": true,
+    "source": "eigenes Rezept",
+    "basePortions": 4,
+    "description": "Leichter Salat mit roten Linsen.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegan"
+  },
+  {
+    "id": "sal-06",
+    "name": "Kartoffelsalat",
+    "category": "Salat/Bowl",
+    "timeMinutes": 30,
+    "timeLabel": "mittel",
+    "ingredients": [
+      {
+        "name": "Festkochende Kartoffeln",
+        "amount": 800,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Mayonnaise",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Essiggurken",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Senf",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Schnittlauch",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "neutral",
+    "isMealprep": false,
+    "isSuitableForLunch": true,
+    "source": "eigenes Rezept",
+    "basePortions": 4,
+    "description": "Klassischer Kartoffelsalat.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegetarisch"
+  },
+  {
+    "id": "sal-07",
+    "name": "Griechischer Salat",
+    "category": "Salat/Bowl",
+    "timeMinutes": 15,
+    "timeLabel": "schnell",
+    "ingredients": [
+      {
+        "name": "Tomaten",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Gurke",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Feta",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Oliven",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Rote Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Oregano",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "Frühling",
+      "Sommer"
+    ],
+    "weatherType": "warm",
+    "isMealprep": false,
+    "isSuitableForLunch": true,
+    "source": "eigenes Rezept",
+    "basePortions": 4,
+    "description": "Sommerlicher Klassiker aus Griechenland.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegetarisch"
   },
   {
     "id": "fvt-08",
@@ -3442,128 +3349,158 @@
     "isSuitableForLunch": true,
     "source": "Familientisch voraus! (LittleFant)",
     "basePortions": 4,
-    "description": "Im Ofen gegarte Paprika gefüllt mit würziger Quinoa-Bohnen-Mais-Füllung. Farbig und nährstoffreich."
+    "description": "Im Ofen gegarte Paprika gefüllt mit würziger Quinoa-Bohnen-Mais-Füllung. Farbig und nährstoffreich.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegan"
   },
   {
-    "id": "fvt-09",
-    "name": "Kein-Käse-Käse-Spätzle (vegan)",
-    "category": "Pasta",
+    "id": "ofe-01",
+    "name": "Ofengemüse mit Feta und Tahini-Quinoa",
+    "category": "Ofen",
     "timeMinutes": 50,
     "timeLabel": "mittel",
     "ingredients": [
       {
-        "name": "Weizenmehl (Type 630)",
-        "amount": 160,
+        "name": "Gemischtes Gemüse",
+        "amount": 800,
         "unit": "g",
         "perPortions": 4
       },
       {
-        "name": "Hartweizengrieß",
-        "amount": 60,
+        "name": "Feta",
+        "amount": 200,
         "unit": "g",
         "perPortions": 4
       },
       {
-        "name": "Kichererbsenmehl",
-        "amount": 80,
+        "name": "Quinoa",
+        "amount": 200,
         "unit": "g",
         "perPortions": 4
       },
       {
-        "name": "Kurkuma",
-        "amount": 1,
-        "unit": "Msp",
-        "perPortions": 4
-      },
-      {
-        "name": "Olivenöl",
+        "name": "Tahini",
         "amount": 3,
         "unit": "EL",
         "perPortions": 4
       },
       {
-        "name": "Sojadrink (ungesüsst)",
-        "amount": 250,
-        "unit": "ml",
-        "perPortions": 4
-      },
-      {
-        "name": "Zwiebel",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Knoblauch",
-        "amount": 1,
-        "unit": "Zehe",
-        "perPortions": 4
-      },
-      {
-        "name": "Rapsöl",
+        "name": "Zitronensaft",
         "amount": 2,
         "unit": "EL",
         "perPortions": 4
       },
       {
-        "name": "Naturtofu",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Cashewmus",
-        "amount": 1,
+        "name": "Olivenöl",
+        "amount": 4,
         "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Hefeflocken",
-        "amount": 15,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Paprikapulver (edelsüss)",
-        "amount": 0.5,
-        "unit": "TL",
         "perPortions": 4
       }
     ],
     "season": [
-      "Herbst",
-      "Winter"
+      "ganzjährig"
     ],
-    "weatherType": "kalt",
-    "isMealprep": false,
-    "isSuitableForLunch": false,
-    "source": "Familientisch voraus! (LittleFant)",
+    "weatherType": "neutral",
+    "isMealprep": true,
+    "isSuitableForLunch": true,
+    "source": "eigenes Rezept",
     "basePortions": 4,
-    "description": "Selbstgemachte Kichererbsen-Spätzle mit cremiger Tofu-Cashew-Sauce – ganz ohne Käse, aber \"cheesy\"."
+    "description": "Buntes Ofengemüse mit Tahini-Quinoa und Feta.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegetarisch"
   },
   {
-    "id": "fvt-10",
-    "name": "Spinat-Linsen-Daal mit Vollkornreis",
-    "category": "Reis",
-    "timeMinutes": 50,
+    "id": "asi-01",
+    "name": "Pad Thai",
+    "category": "Asiatisch",
+    "timeMinutes": 25,
     "timeLabel": "mittel",
     "ingredients": [
       {
-        "name": "Berglinsen",
-        "amount": 150,
+        "name": "Reisnudeln",
+        "amount": 300,
         "unit": "g",
         "perPortions": 4
       },
       {
-        "name": "Rote Linsen",
-        "amount": 100,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Vollkornreis",
+        "name": "Tofu (fest)",
         "amount": 200,
         "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Eier",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Erdnüsse",
+        "amount": 80,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Pad Thai Sauce",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Frühlingszwiebeln",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Limette",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "Frühling",
+      "Sommer"
+    ],
+    "weatherType": "warm",
+    "isMealprep": false,
+    "isSuitableForLunch": true,
+    "source": "eigenes Rezept",
+    "basePortions": 4,
+    "description": "Klassisches Thai-Nudelgericht.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegetarisch"
+  },
+  {
+    "id": "asi-02",
+    "name": "Ayurvedisches Kitchari",
+    "category": "Asiatisch",
+    "timeMinutes": 40,
+    "timeLabel": "mittel",
+    "ingredients": [
+      {
+        "name": "Rote Linsen",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Basmati-Reis",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Ghee oder Butter",
+        "amount": 2,
+        "unit": "EL",
         "perPortions": 4
       },
       {
@@ -3573,77 +3510,271 @@
         "perPortions": 4
       },
       {
+        "name": "Kurkuma",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Koriandersamen",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kreuzkümmel",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "neutral",
+    "isMealprep": true,
+    "isSuitableForLunch": true,
+    "source": "eigenes Rezept",
+    "basePortions": 4,
+    "description": "Ayurvedischer Klassiker – reinigend und nahrhaft.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegetarisch"
+  },
+  {
+    "id": "fis-01",
+    "name": "Fisch, Salzkartoffeln und Spinat",
+    "category": "Fisch",
+    "timeMinutes": 30,
+    "timeLabel": "mittel",
+    "ingredients": [
+      {
+        "name": "Fischfilets (z.B. Lachs)",
+        "amount": 600,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Kartoffeln",
+        "amount": 600,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Spinat (TK)",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Butter",
+        "amount": 30,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitrone",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "neutral",
+    "isMealprep": false,
+    "isSuitableForLunch": false,
+    "source": "eigenes Rezept",
+    "basePortions": 4,
+    "description": "Leichtes Fischgericht mit Beilagen.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "pescetarisch"
+  },
+  {
+    "id": "fvt-01",
+    "name": "Süsskartoffel-Kichererbsen-Waffeln mit Joghurt-Gurken-Dip",
+    "category": "Sonstige",
+    "timeMinutes": 35,
+    "timeLabel": "mittel",
+    "ingredients": [
+      {
+        "name": "Süsskartoffel",
+        "amount": 180,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Salatgurke",
+        "amount": 0.5,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Dill",
+        "amount": 1,
+        "unit": "Zweig",
+        "perPortions": 4
+      },
+      {
+        "name": "Sojajoghurt",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Sesammus",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Dinkelvollkornmehl",
+        "amount": 80,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Kichererbsenmehl",
+        "amount": 70,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Backpulver",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Sojadrink (ungesüsst)",
+        "amount": 150,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Rapsöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "neutral",
+    "isMealprep": true,
+    "isSuitableForLunch": true,
+    "source": "Familientisch voraus! (LittleFant)",
+    "basePortions": 4,
+    "description": "Herzhafte Waffeln mit Süsskartoffel und Kichererbsen, dazu ein frischer Joghurt-Gurken-Dip. Gefriergeeignet.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegetarisch"
+  },
+  {
+    "id": "fvt-05",
+    "name": "Kartoffelpuffer mit Bohnen und Kräuter-Dip",
+    "category": "Sonstige",
+    "timeMinutes": 40,
+    "timeLabel": "mittel",
+    "ingredients": [
+      {
+        "name": "Kartoffeln (festkochend)",
+        "amount": 700,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Süsskartoffeln",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Weisse Bohnen (gekocht)",
+        "amount": 240,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
         "name": "Zwiebel",
         "amount": 1,
         "unit": "Stk",
         "perPortions": 4
       },
       {
-        "name": "Knoblauch",
-        "amount": 2,
-        "unit": "Zehen",
-        "perPortions": 4
-      },
-      {
-        "name": "Kokosöl",
-        "amount": 1,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Tomatenmark",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Garam Masala",
-        "amount": 1,
-        "unit": "TL",
-        "perPortions": 4
-      },
-      {
-        "name": "Kreuzkümmel (gemahlen)",
-        "amount": 1,
-        "unit": "TL",
-        "perPortions": 4
-      },
-      {
-        "name": "Koriander (gemahlen)",
-        "amount": 1,
-        "unit": "TL",
-        "perPortions": 4
-      },
-      {
-        "name": "Kurkuma",
-        "amount": 0.5,
-        "unit": "TL",
-        "perPortions": 4
-      },
-      {
-        "name": "Kokosmilch",
-        "amount": 400,
-        "unit": "ml",
-        "perPortions": 4
-      },
-      {
-        "name": "Baby-Spinat",
-        "amount": 200,
+        "name": "Dinkelvollkornmehl",
+        "amount": 30,
         "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Sojaquark",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Petersilie",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Dill",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Muskatnuss",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Rapsöl",
+        "amount": 3,
+        "unit": "EL",
         "perPortions": 4
       }
     ],
     "season": [
-      "Herbst",
-      "Winter",
-      "Frühling"
+      "ganzjährig"
     ],
-    "weatherType": "kalt",
-    "isMealprep": true,
+    "weatherType": "neutral",
+    "isMealprep": false,
     "isSuitableForLunch": true,
     "source": "Familientisch voraus! (LittleFant)",
     "basePortions": 4,
-    "description": "Wärmendes Linsen-Daal mit Spinat und Kokosmilch – aromatisch und für die ganze Familie."
+    "description": "Knusprige Kartoffelpuffer mit Süsskartoffel und Bohnen, dazu ein frischer Kräuter-Quark-Dip.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegan"
   },
   {
     "id": "fvt-11",
@@ -3721,74 +3852,11 @@
     "isSuitableForLunch": true,
     "source": "Familientisch voraus! (LittleFant)",
     "basePortions": 4,
-    "description": "Vegane Quesadillas mit Süsskartoffel-Bohnen-Füllung und selbstgemachter Guacamole."
-  },
-  {
-    "id": "fvt-12",
-    "name": "Nudeln mit Basilikum-Bohnen-Pesto",
-    "category": "Pasta",
-    "timeMinutes": 20,
-    "timeLabel": "schnell",
-    "ingredients": [
-      {
-        "name": "Basilikum",
-        "amount": 30,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Weisse Bohnen (gekocht)",
-        "amount": 120,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Pinienkerne",
-        "amount": 50,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Cashews",
-        "amount": 50,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Hefeflocken",
-        "amount": 3,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Knoblauch",
-        "amount": 1,
-        "unit": "Zehe",
-        "perPortions": 4
-      },
-      {
-        "name": "Olivenöl",
-        "amount": 100,
-        "unit": "ml",
-        "perPortions": 4
-      },
-      {
-        "name": "Hartweizennudeln",
-        "amount": 400,
-        "unit": "g",
-        "perPortions": 4
-      }
-    ],
-    "season": [
-      "Frühling",
-      "Sommer"
-    ],
-    "weatherType": "warm",
-    "isMealprep": false,
-    "isSuitableForLunch": true,
-    "source": "Familientisch voraus! (LittleFant)",
-    "basePortions": 4,
-    "description": "Schnelles veganes Pesto aus Basilikum, weissen Bohnen und Cashews – nährstoffreicher als klassisches Pesto."
+    "description": "Vegane Quesadillas mit Süsskartoffel-Bohnen-Füllung und selbstgemachter Guacamole.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegan"
   },
   {
     "id": "fvt-13",
@@ -3854,6 +3922,191 @@
     "isSuitableForLunch": true,
     "source": "Familientisch voraus! (LittleFant)",
     "basePortions": 4,
-    "description": "Knusprige vegane Nuggets aus Tofu, Kartoffeln und Blumenkohl – gefriergeeignet, Kinder-Liebling."
+    "description": "Knusprige vegane Nuggets aus Tofu, Kartoffeln und Blumenkohl – gefriergeeignet, Kinder-Liebling.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegan"
+  },
+  {
+    "id": "son-01",
+    "name": "Fajitas",
+    "category": "Sonstige",
+    "timeMinutes": 25,
+    "timeLabel": "mittel",
+    "ingredients": [
+      {
+        "name": "Weizentortillas",
+        "amount": 8,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Paprika",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Sauerrahm",
+        "amount": 150,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Guacamole",
+        "amount": 150,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Salsa",
+        "amount": 150,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Fajita-Gewürz",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "neutral",
+    "isMealprep": false,
+    "isSuitableForLunch": false,
+    "source": "eigenes Rezept",
+    "basePortions": 4,
+    "description": "Buntes Fajita-Fest für die Familie.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegetarisch"
+  },
+  {
+    "id": "son-02",
+    "name": "Tacos mit Linsen & Baumnüsse",
+    "category": "Sonstige",
+    "timeMinutes": 25,
+    "timeLabel": "mittel",
+    "ingredients": [
+      {
+        "name": "Taco-Shells",
+        "amount": 8,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Rote Linsen",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Baumnüsse",
+        "amount": 80,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Passierte Tomaten",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Gewürzmischung",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salat",
+        "amount": 0.5,
+        "unit": "Kopf",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "neutral",
+    "isMealprep": false,
+    "isSuitableForLunch": false,
+    "source": "eigenes Rezept",
+    "basePortions": 4,
+    "description": "Vegane Tacos mit knackigen Baumnüssen.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegan"
+  },
+  {
+    "id": "son-03",
+    "name": "Pitabrot mit Falafel, Tzatziki und Gemüse",
+    "category": "Sonstige",
+    "timeMinutes": 20,
+    "timeLabel": "schnell",
+    "ingredients": [
+      {
+        "name": "Pitabrot",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Falafel (fertig)",
+        "amount": 20,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Tzatziki",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Salat",
+        "amount": 0.5,
+        "unit": "Kopf",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomaten",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Gurke",
+        "amount": 0.5,
+        "unit": "Stk",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "Frühling",
+      "Sommer"
+    ],
+    "weatherType": "warm",
+    "isMealprep": false,
+    "isSuitableForLunch": true,
+    "source": "eigenes Rezept",
+    "basePortions": 4,
+    "description": "Frisches Streetfood zu Hause.",
+    "steps": [],
+    "tips": "",
+    "imageUrl": null,
+    "dietType": "vegetarisch"
   }
 ]

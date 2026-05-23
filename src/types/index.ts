@@ -1,6 +1,7 @@
 export type WeatherType = 'warm' | 'kalt' | 'neutral';
 export type Season = 'Frühling' | 'Sommer' | 'Herbst' | 'Winter' | 'ganzjährig';
 export type TimeLabel = 'schnell' | 'mittel' | 'aufwändig';
+export type DietType = 'vegan' | 'vegetarisch' | 'pescetarisch' | 'omnivor';
 export type Category =
   | 'Eier'
   | 'Reis'
@@ -39,6 +40,7 @@ export interface Recipe {
   tips?: string;           // Tipps & Varianten
   imageUrl?: string | null; // Rezeptbild-URL (lokal oder extern)
   archived?: boolean;       // Archiviert – nicht vorschlagen, nicht im Picker zeigen
+  dietType?: DietType;      // Ernährungsweise
 }
 
 export interface MealSlot {
@@ -88,6 +90,7 @@ export interface AppSettings {
   household: HouseholdSettings;
   weather: WeatherSettings;
   defaultView: 'dinnerOnly' | 'lunchAndDinner' | 'breakfastLunchDinner';
+  dietPreference?: DietType | 'alle';  // Globaler Diät-Filter für Picker & Vorschläge
   theme?: import('@/lib/themes').ThemeId;
   promotions: PromotionSettings;
 }

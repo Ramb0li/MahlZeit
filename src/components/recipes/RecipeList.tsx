@@ -3,7 +3,22 @@ import { useState, useMemo } from 'react';
 import { Plus, Search, Pencil, Trash2, Clock, Leaf, Archive, RotateCcw, ChevronDown, ChevronUp } from 'lucide-react';
 import { RecipeForm } from './RecipeForm';
 import { Modal } from '@/components/ui/Modal';
-import type { Recipe, Category, TimeLabel } from '@/types';
+import type { Recipe, Category, TimeLabel, DietType } from '@/types';
+
+const DIET_OPTIONS: { value: DietType | 'Alle'; label: string }[] = [
+  { value: 'Alle',         label: 'Alle' },
+  { value: 'vegan',        label: '🌿 Vegan' },
+  { value: 'vegetarisch',  label: '🥗 Vegetarisch' },
+  { value: 'pescetarisch', label: '🐟 Pescetarisch' },
+  { value: 'omnivor',      label: '🍖 Omnivor' },
+];
+
+const DIET_BADGE: Record<DietType, { label: string; cls: string }> = {
+  vegan:        { label: '🌿 Vegan',         cls: 'bg-emerald-100 text-emerald-700' },
+  vegetarisch:  { label: '🥗 Vegetarisch',   cls: 'bg-green-100 text-green-700' },
+  pescetarisch: { label: '🐟 Pescetarisch',  cls: 'bg-sky-100 text-sky-700' },
+  omnivor:      { label: '🍖 Omnivor',       cls: 'bg-orange-100 text-orange-700' },
+};
 
 const CATEGORIES: Category[] = [
   'Eier', 'Reis', 'Pasta', 'Eintopf/Gratin', 'Fisch',
@@ -29,6 +44,7 @@ export function RecipeList({ initialRecipes, onRecipesChange }: RecipeListProps)
   const [search, setSearch]             = useState('');
   const [filterCategory, setFilterCategory] = useState<Category | 'Alle'>('Alle');
   const [filterTime, setFilterTime]     = useState<TimeLabel | 'Alle'>('Alle');
+  const [filterDiet, setFilterDiet]     = useState<DietType | 'Alle'>('Alle');
   const [editRecipe, setEditRecipe]     = useState<Recipe | null>(null);
   const [isCreating, setIsCreating]     = useState(false);
   const [showArchive, setShowArchive]   = useState(false);
@@ -57,10 +73,11 @@ export function RecipeList({ initialRecipes, onRecipesChange }: RecipeListProps)
       if (r.archived) return false;
       if (filterCategory !== 'Alle' && r.category !== filterCategory) return false;
       if (filterTime    !== 'Alle' && r.timeLabel  !== filterTime)    return false;
+      if (filterDiet    !== 'Alle' && r.dietType   !== filterDiet)    return false;
       if (search && !r.name.toLowerCase().includes(search.toLowerCase())) return false;
       return true;
     });
-  }, [recipes, search, filterCategory, filterTime]);
+  }, [recipes, search, filterCategory, filterTime, filterDiet]);
 
   const archivedFiltered = useMemo(() => {
     return recipes.filter((r) => {
@@ -187,6 +204,22 @@ export function RecipeList({ initialRecipes, onRecipesChange }: RecipeListProps)
                 }`}
               >
                 {t}
+              </button>
+            ))}
+          </div>
+
+          <div className="flex flex-wrap gap-1.5">
+            {DIET_OPTIONS.map(({ value, label }) => (
+              <button
+                key={value}
+                onClick={() => setFilterDiet(value as DietType | 'Alle')}
+                className={`px-2.5 py-1 rounded-full text-xs font-medium transition-colors ${
+                  filterDiet === value
+                    ? 'bg-brand-green text-white'
+                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                }`}
+              >
+                {label}
               </button>
             ))}
           </div>
@@ -385,6 +418,11 @@ function RecipeCard({ recipe, categoryColors, onEdit, onArchive }: RecipeCardPro
         {recipe.isSuitableForLunch && (
           <span className="text-xs px-2 py-0.5 rounded-full bg-sky-100 text-sky-700 font-medium">
             Mittag
+          </span>
+        )}
+        {recipe.dietType && DIET_BADGE[recipe.dietType] && (
+          <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${DIET_BADGE[recipe.dietType].cls}`}>
+            {DIET_BADGE[recipe.dietType].label}
           </span>
         )}
       </div>

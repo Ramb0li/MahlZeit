@@ -2,7 +2,7 @@
 import { useState, useMemo } from 'react';
 import { Search, UtensilsCrossed } from 'lucide-react';
 import { Modal } from '@/components/ui/Modal';
-import type { Recipe, Category, TimeLabel } from '@/types';
+import type { Recipe, Category, TimeLabel, DietType } from '@/types';
 
 const CATEGORIES: Category[] = [
   'Eier', 'Reis', 'Pasta', 'Eintopf/Gratin', 'Fisch',
@@ -11,14 +11,31 @@ const CATEGORIES: Category[] = [
 
 export const LEFTOVERS_ID = '__leftovers__';
 
+// Which diet types are compatible with a given preference
+function compatibleDiets(pref: DietType | 'alle' | undefined): DietType[] | null {
+  if (!pref || pref === 'alle' || pref === 'omnivor') return null; // kein Filter
+  if (pref === 'vegan')        return ['vegan'];
+  if (pref === 'vegetarisch')  return ['vegan', 'vegetarisch'];
+  if (pref === 'pescetarisch') return ['vegan', 'vegetarisch', 'pescetarisch'];
+  return null;
+}
+
+const DIET_BADGE: Record<DietType, { label: string; cls: string }> = {
+  vegan:        { label: '🌿',  cls: 'bg-emerald-100 text-emerald-700' },
+  vegetarisch:  { label: '🥗',  cls: 'bg-green-100 text-green-700' },
+  pescetarisch: { label: '🐟',  cls: 'bg-sky-100 text-sky-700' },
+  omnivor:      { label: '🍖',  cls: 'bg-orange-100 text-orange-700' },
+};
+
 interface RecipePickerModalProps {
   recipes: Recipe[];
   mealType: 'breakfast' | 'lunch' | 'dinner';
+  dietPreference?: DietType | 'alle';
   onSelect: (recipeId: string) => void;
   onClose: () => void;
 }
 
-export function RecipePickerModal({ recipes, mealType, onSelect, onClose }: RecipePickerModalProps) {
+export function RecipePickerModal({ recipes, mealType, dietPreference, onSelect, onClose }: RecipePickerModalProps) {
   const [search, setSearch] = useState('');
   const [filterCategory, setFilterCategory] = useState<Category | 'Alle'>('Alle');
   const [filterTime, setFilterTime] = useState<TimeLabel | 'Alle'>('Alle');
@@ -28,16 +45,19 @@ export function RecipePickerModal({ recipes, mealType, onSelect, onClose }: Reci
     mealType === 'lunch'     ? 'Mittagessen wählen' :
     'Abendessen wählen';
 
+  const allowedDiets = compatibleDiets(dietPreference);
+
   const filtered = useMemo(() => {
     return recipes.filter((r) => {
       if (r.archived) return false;
       if (mealType === 'lunch' && !r.isSuitableForLunch) return false;
+      if (allowedDiets && r.dietType && !allowedDiets.includes(r.dietType)) return false;
       if (filterCategory !== 'Alle' && r.category !== filterCategory) return false;
       if (filterTime !== 'Alle' && r.timeLabel !== filterTime) return false;
       if (search && !r.name.toLowerCase().includes(search.toLowerCase())) return false;
       return true;
     });
-  }, [recipes, search, filterCategory, filterTime, mealType]);
+  }, [recipes, search, filterCategory, filterTime, mealType, allowedDiets]);
 
   return (
     <Modal open onClose={onClose} title={title} size="lg">
@@ -85,6 +105,20 @@ export function RecipePickerModal({ recipes, mealType, onSelect, onClose }: Reci
           ))}
         </div>
 
+        {/* Diät-Hinweis, wenn ein Filter aktiv ist */}
+        {allowedDiets && (
+          <div className="flex items-center gap-2 px-3 py-2 bg-emerald-50 border border-emerald-200 rounded-xl text-xs text-emerald-700">
+            <span>🌿</span>
+            <span>
+              Gefiltert nach Ernährungsweise: <strong>
+                {dietPreference === 'vegan' ? 'Vegan' :
+                 dietPreference === 'vegetarisch' ? 'Vegetarisch' :
+                 'Pescetarisch'}
+              </strong>
+            </span>
+          </div>
+        )}
+
         <div className="grid grid-cols-1 gap-2 max-h-80 overflow-y-auto">
           {/* Reste essen — immer als erste Option */}
           <button
@@ -116,6 +150,11 @@ export function RecipePickerModal({ recipes, mealType, onSelect, onClose }: Reci
                 <p className="text-xs text-gray-500 mt-0.5">{recipe.category}</p>
               </div>
               <div className="flex items-center gap-1.5 shrink-0">
+                {recipe.dietType && DIET_BADGE[recipe.dietType] && (
+                  <span className={`text-xs px-1.5 py-0.5 rounded-full font-medium ${DIET_BADGE[recipe.dietType].cls}`}>
+                    {DIET_BADGE[recipe.dietType].label}
+                  </span>
+                )}
                 <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${
                   recipe.timeLabel === 'schnell' ? 'bg-green-100 text-green-700' :
                   recipe.timeLabel === 'mittel' ? 'bg-yellow-100 text-yellow-700' :

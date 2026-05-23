@@ -174,6 +174,7 @@ export function DayColumn({
         <RecipePickerModal
           recipes={recipes}
           mealType={pickerOpen}
+          dietPreference={settings.dietPreference}
           onSelect={(recipeId) => handlePickerSelect(pickerOpen, recipeId)}
           onClose={() => setPickerOpen(null)}
         />

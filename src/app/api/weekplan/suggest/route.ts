@@ -1,20 +1,34 @@
 import { NextResponse } from 'next/server';
-import { getRecipes, getConstraints, getWeatherCache, getWeekPlan, saveWeekPlan } from '@/lib/data';
+import { getRecipes, getConstraints, getWeatherCache, getWeekPlan, saveWeekPlan, getSettings } from '@/lib/data';
 import { suggestWeek, suggestRecipe } from '@/lib/suggestions';
 import { getCurrentSeason, getWeatherTypeFromTemp } from '@/lib/utils';
-import type { WeatherType, DayPlan } from '@/types';
+import type { WeatherType, DayPlan, DietType } from '@/types';
 
 export async function POST(request: Request) {
   try {
     const { weekId, dayIndex, mealType } = await request.json();
 
-    const [allRecipes, constraints, weatherCache] = await Promise.all([
+    const [allRecipes, constraints, weatherCache, settings] = await Promise.all([
       getRecipes(),
       getConstraints(),
       getWeatherCache(),
+      getSettings(),
     ]);
-    // Archivierte Rezepte nie vorschlagen
-    const recipes = allRecipes.filter((r) => !r.archived);
+
+    // Archivierte Rezepte nie vorschlagen; Diät-Filter anwenden
+    const dietPref = settings.dietPreference;
+    const allowedDiets: DietType[] | null =
+      !dietPref || dietPref === 'alle' || dietPref === 'omnivor' ? null :
+      dietPref === 'vegan'        ? ['vegan'] :
+      dietPref === 'vegetarisch'  ? ['vegan', 'vegetarisch'] :
+      dietPref === 'pescetarisch' ? ['vegan', 'vegetarisch', 'pescetarisch'] :
+      null;
+
+    const recipes = allRecipes.filter((r) => {
+      if (r.archived) return false;
+      if (allowedDiets && r.dietType && !allowedDiets.includes(r.dietType)) return false;
+      return true;
+    });
 
     const season = getCurrentSeason();
     const weatherTypes: Record<number, WeatherType> = {};

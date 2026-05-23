@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { Plus, Trash2 } from 'lucide-react';
-import type { Recipe, Category, Season, WeatherType, TimeLabel, Ingredient } from '@/types';
+import type { Recipe, Category, Season, WeatherType, TimeLabel, Ingredient, DietType } from '@/types';
 
 const CATEGORIES: Category[] = [
   'Eier', 'Reis', 'Pasta', 'Eintopf/Gratin', 'Fisch',
@@ -26,6 +26,7 @@ export function RecipeForm({ recipe, onSave, onCancel }: RecipeFormProps) {
   const [timeMinutes, setTimeMinutes] = useState(recipe?.timeMinutes ?? 30);
   const [weatherType, setWeatherType] = useState<WeatherType>(recipe?.weatherType ?? 'neutral');
   const [seasons, setSeasons] = useState<Season[]>(recipe?.season ?? ['ganzjährig']);
+  const [dietType, setDietType] = useState<DietType>(recipe?.dietType ?? 'vegan');
   const [isMealprep, setIsMealprep] = useState(recipe?.isMealprep ?? false);
   const [isSuitableForLunch, setIsSuitableForLunch] = useState(recipe?.isSuitableForLunch ?? false);
   const [source, setSource] = useState(recipe?.source ?? 'eigenes Rezept');
@@ -78,6 +79,7 @@ export function RecipeForm({ recipe, onSave, onCancel }: RecipeFormProps) {
       source,
       basePortions,
       description,
+      dietType,
     };
     onSave(r);
   };
@@ -128,6 +130,29 @@ export function RecipeForm({ recipe, onSave, onCancel }: RecipeFormProps) {
             onChange={(e) => setTimeMinutes(Number(e.target.value))}
             className="w-full accent-brand-green"
           />
+        </div>
+
+        <div className="sm:col-span-2">
+          <label className="block text-sm font-medium text-gray-700 mb-1">Ernährungsweise</label>
+          <div className="flex gap-2">
+            {([
+              { value: 'vegan',        label: '🌿 Vegan',         cls: 'bg-emerald-500 border-emerald-500' },
+              { value: 'vegetarisch',  label: '🥗 Vegetarisch',   cls: 'bg-green-500 border-green-500' },
+              { value: 'pescetarisch', label: '🐟 Pescetarisch',  cls: 'bg-sky-500 border-sky-500' },
+              { value: 'omnivor',      label: '🍖 Omnivor',       cls: 'bg-orange-500 border-orange-500' },
+            ] as { value: DietType; label: string; cls: string }[]).map(({ value, label, cls }) => (
+              <button
+                key={value}
+                type="button"
+                onClick={() => setDietType(value)}
+                className={`flex-1 py-1.5 rounded-lg text-xs font-medium border transition-colors ${
+                  dietType === value ? `${cls} text-white` : 'border-gray-200 text-gray-600 hover:bg-gray-50'
+                }`}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
         </div>
 
         <div>

@@ -182,6 +182,44 @@ export function SettingsView({ initialSettings, initialConstraints, onSettingsCh
         </div>
       </section>
 
+      {/* Ernährungsweise */}
+      <section className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+        <h2 className="text-base font-semibold text-gray-900 mb-1">Ernährungsweise</h2>
+        <p className="text-xs text-gray-400 mb-4">
+          Filtert Rezeptvorschläge und den Menü-Picker — z.B. &quot;Vegetarisch&quot; blendet Fisch- und Fleischgerichte aus.
+        </p>
+        <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
+          {(
+            [
+              { value: 'alle',         emoji: '🍽',  label: 'Alle',          sub: 'Kein Filter' },
+              { value: 'omnivor',      emoji: '🍖',  label: 'Omnivor',       sub: 'Alles erlaubt' },
+              { value: 'pescetarisch', emoji: '🐟',  label: 'Pescetarisch',  sub: 'Kein Fleisch' },
+              { value: 'vegetarisch',  emoji: '🥗',  label: 'Vegetarisch',   sub: 'Kein Fleisch/Fisch' },
+              { value: 'vegan',        emoji: '🌿',  label: 'Vegan',         sub: 'Nur pflanzlich' },
+            ] as const
+          ).map(({ value, emoji, label, sub }) => {
+            const isActive = (settings.dietPreference ?? 'alle') === value;
+            return (
+              <button
+                key={value}
+                onClick={() => setSettings((s) => ({ ...s, dietPreference: value }))}
+                className={`flex items-center gap-3 p-4 rounded-2xl border-2 text-left transition-all ${
+                  isActive
+                    ? 'border-emerald-500 bg-emerald-50 shadow-sm'
+                    : 'border-gray-100 hover:border-gray-300'
+                }`}
+              >
+                <span className="text-2xl">{emoji}</span>
+                <div>
+                  <p className="text-sm font-semibold text-gray-900 leading-tight">{label}</p>
+                  <p className="text-[11px] text-gray-400 mt-0.5">{sub}</p>
+                </div>
+              </button>
+            );
+          })}
+        </div>
+      </section>
+
       <section className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
         <h2 className="text-base font-semibold text-gray-900 mb-4">Haushaltsgrösse</h2>
 
