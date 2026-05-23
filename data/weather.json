@@ -1,0 +1,62 @@
+{
+  "lastUpdated": "2026-05-22T22:59:38.119Z",
+  "location": "Luzern",
+  "days": [
+    {
+      "date": "2026-05-23",
+      "tempMin": 11,
+      "tempMax": 27,
+      "condition": "sunny",
+      "conditionLabel": "Sonnig",
+      "weatherType": "neutral"
+    },
+    {
+      "date": "2026-05-24",
+      "tempMin": 13,
+      "tempMax": 29,
+      "condition": "cloudy",
+      "conditionLabel": "Bewölkt",
+      "weatherType": "warm"
+    },
+    {
+      "date": "2026-05-25",
+      "tempMin": 15,
+      "tempMax": 30,
+      "condition": "cloudy",
+      "conditionLabel": "Bewölkt",
+      "weatherType": "warm"
+    },
+    {
+      "date": "2026-05-26",
+      "tempMin": 16,
+      "tempMax": 31,
+      "condition": "sunny",
+      "conditionLabel": "Sonnig",
+      "weatherType": "warm"
+    },
+    {
+      "date": "2026-05-27",
+      "tempMin": 19,
+      "tempMax": 30,
+      "condition": "partly-cloudy",
+      "conditionLabel": "Teils bewölkt",
+      "weatherType": "warm"
+    },
+    {
+      "date": "2026-05-28",
+      "tempMin": 17,
+      "tempMax": 28,
+      "condition": "cloudy",
+      "conditionLabel": "Bewölkt",
+      "weatherType": "warm"
+    },
+    {
+      "date": "2026-05-29",
+      "tempMin": 19,
+      "tempMax": 29,
+      "condition": "cloudy",
+      "conditionLabel": "Bewölkt",
+      "weatherType": "warm"
+    }
+  ]
+}

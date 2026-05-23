@@ -1,0 +1,40 @@
+[
+  {
+    "id": "c-01",
+    "dayOfWeek": 2,
+    "label": "Yoga-Abend",
+    "color": "#8B5CF6",
+    "mealType": "dinner",
+    "constraint": "maxTime",
+    "maxTimeMinutes": 20
+  },
+  {
+    "id": "c-02",
+    "dayOfWeek": 3,
+    "label": "Mealprep",
+    "color": "#10B981",
+    "mealType": "dinner",
+    "constraint": "mealprep",
+    "mealprepLunchDays": [
+      4,
+      5
+    ]
+  },
+  {
+    "id": "c-03",
+    "dayOfWeek": 4,
+    "label": "Einfach kochen",
+    "color": "#F59E0B",
+    "mealType": "dinner",
+    "constraint": "maxTime",
+    "maxTimeMinutes": 30
+  },
+  {
+    "id": "c-04",
+    "dayOfWeek": 5,
+    "label": "Reste essen",
+    "color": "#6B7280",
+    "mealType": "dinner",
+    "constraint": "leftovers"
+  }
+]

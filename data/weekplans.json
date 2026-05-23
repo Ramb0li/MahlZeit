@@ -1,0 +1,104 @@
+{
+  "2026-W21": {
+    "weekId": "2026-W21",
+    "startDate": "",
+    "days": {
+      "1": {
+        "dinner": {
+          "recipeId": "fvt-11"
+        },
+        "showLunch": false
+      },
+      "2": {
+        "dinner": {
+          "recipeId": "sal-07"
+        },
+        "showLunch": false
+      },
+      "3": {
+        "dinner": {
+          "recipeId": "sal-04"
+        },
+        "showLunch": false
+      },
+      "4": {
+        "dinner": {
+          "recipeId": "sal-05"
+        },
+        "showLunch": false,
+        "lunch": {
+          "recipeId": "sal-04"
+        }
+      },
+      "5": {
+        "dinner": {
+          "recipeId": null
+        },
+        "showLunch": false
+      },
+      "6": {
+        "dinner": {
+          "recipeId": "fvt-13"
+        },
+        "showLunch": false
+      },
+      "7": {
+        "dinner": {
+          "recipeId": null
+        },
+        "showLunch": false
+      }
+    }
+  },
+  "2026-W22": {
+    "weekId": "2026-W22",
+    "startDate": "",
+    "days": {
+      "1": {
+        "dinner": {
+          "recipeId": "sal-02"
+        },
+        "showLunch": false
+      },
+      "2": {
+        "dinner": {
+          "recipeId": "rei-05"
+        },
+        "showLunch": false
+      },
+      "3": {
+        "dinner": {
+          "recipeId": "sal-04"
+        },
+        "showLunch": false
+      },
+      "4": {
+        "dinner": {
+          "recipeId": "sal-05"
+        },
+        "showLunch": false,
+        "lunch": {
+          "recipeId": "sal-04"
+        }
+      },
+      "5": {
+        "dinner": {
+          "recipeId": null
+        },
+        "showLunch": false
+      },
+      "6": {
+        "dinner": {
+          "recipeId": "ei-03"
+        },
+        "showLunch": false
+      },
+      "7": {
+        "dinner": {
+          "recipeId": "sal-07"
+        },
+        "showLunch": false
+      }
+    }
+  }
+}
