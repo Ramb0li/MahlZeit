@@ -1,0 +1,45 @@
+{
+  "id": "ei-01",
+  "name": "Rührei",
+  "category": "Eier",
+  "timeMinutes": 15,
+  "timeLabel": "schnell",
+  "ingredients": [
+    {
+      "name": "Eier",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 20,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "ganzjährig"
+  ],
+  "weatherType": "neutral",
+  "isMealprep": false,
+  "isSuitableForLunch": true,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Klassisches Rührei, schnell und einfach.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

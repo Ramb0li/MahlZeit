@@ -1,0 +1,89 @@
+{
+  "id": "fvt-03",
+  "name": "Vollkornnudeln mit Linsen-Bolognese (Familientisch)",
+  "category": "Pasta",
+  "timeMinutes": 45,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Berglinsen",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Karotten",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Sellerie",
+      "amount": 1,
+      "unit": "Stange",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomatenmark",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Passierte Tomaten",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Oregano",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Balsamico-Essig",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Vollkornnudeln",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Herbst",
+    "Winter",
+    "Frühling"
+  ],
+  "weatherType": "kalt",
+  "isMealprep": true,
+  "isSuitableForLunch": true,
+  "source": "Familientisch voraus! (LittleFant)",
+  "basePortions": 4,
+  "description": "Vollwertige Variante mit Berglinsen – extra Balsamico für Tiefe. Sauce gut einfrierbar.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

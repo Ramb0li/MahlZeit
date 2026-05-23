@@ -1,0 +1,63 @@
+{
+  "id": "fvt-06",
+  "name": "Brokkoli-Gnocchi",
+  "category": "Pasta",
+  "timeMinutes": 55,
+  "timeLabel": "aufwändig",
+  "ingredients": [
+    {
+      "name": "Kartoffeln (festkochend)",
+      "amount": 600,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Brokkoli",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Hartweizengrieß",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Kichererbsenmehl",
+      "amount": 60,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Muskatnuss",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Passierte Tomaten",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "ganzjährig"
+  ],
+  "weatherType": "neutral",
+  "isMealprep": false,
+  "isSuitableForLunch": false,
+  "source": "Familientisch voraus! (LittleFant)",
+  "basePortions": 4,
+  "description": "Selbstgemachte Gnocchi mit Brokkoli und Kichererbsenmehl – nährstoffreicher als klassische Variante.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

@@ -1,0 +1,37 @@
+{
+  "id": "sal-08",
+  "name": "Buddha Bowl mit Süsskartoffel und Tahini",
+  "category": "Salat/Bowl",
+  "timeMinutes": 35,
+  "timeLabel": "mittel",
+  "ingredients": [
+    { "name": "Süsskartoffeln", "amount": 600, "unit": "g", "perPortions": 4 },
+    { "name": "Kichererbsen (aus der Dose)", "amount": 400, "unit": "g", "perPortions": 4 },
+    { "name": "Quinoa", "amount": 200, "unit": "g", "perPortions": 4 },
+    { "name": "Babyspinat", "amount": 100, "unit": "g", "perPortions": 4 },
+    { "name": "Avocado", "amount": 2, "unit": "Stk", "perPortions": 4 },
+    { "name": "Tahini", "amount": 4, "unit": "EL", "perPortions": 4 },
+    { "name": "Zitronensaft", "amount": 2, "unit": "EL", "perPortions": 4 },
+    { "name": "Olivenöl", "amount": 3, "unit": "EL", "perPortions": 4 },
+    { "name": "Paprikapulver (geräuchert)", "amount": 1, "unit": "TL", "perPortions": 4 },
+    { "name": "Kreuzkümmel", "amount": 1, "unit": "TL", "perPortions": 4 },
+    { "name": "Granatapfelkerne (optional)", "amount": 4, "unit": "EL", "perPortions": 4 }
+  ],
+  "season": ["ganzjährig"],
+  "weatherType": "neutral",
+  "isMealprep": true,
+  "isSuitableForLunch": true,
+  "dietType": "vegan",
+  "source": "cuiseline",
+  "basePortions": 4,
+  "description": "Sättigende Bowl mit gerösteter Süsskartoffel, knusprigen Kichererbsen und cremigem Tahini-Dressing.",
+  "steps": [
+    "Ofen auf 200 °C (Ober-/Unterhitze) vorheizen. Süsskartoffeln würfeln, Kichererbsen abgiessen und abtupfen.",
+    "Beides auf einem Blech mit Olivenöl, Paprika und Kreuzkümmel mischen. 25 Minuten rösten, bis die Kichererbsen knusprig sind.",
+    "Quinoa in der doppelten Menge Wasser mit Prise Salz aufkochen, 15 Minuten köcheln, quellen lassen.",
+    "Tahini-Dressing: Tahini, Zitronensaft, 3 EL Wasser und Prise Salz glatt rühren.",
+    "Bowls aufbauen: Quinoa, Spinat, Süsskartoffel, Kichererbsen, Avocadoscheiben. Mit Dressing beträufeln und Granatapfelkerne streuen."
+  ],
+  "tips": "Für Meal-Prep alle Komponenten separat aufbewahren und erst vor dem Essen zusammenstellen. Hält im Kühlschrank 3 Tage.",
+  "imageUrl": "https://www.instagram.com/cuiseline/"
+}

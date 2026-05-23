@@ -1,0 +1,52 @@
+{
+  "id": "pas-04",
+  "name": "Pesto Genovese",
+  "category": "Pasta",
+  "timeMinutes": 15,
+  "timeLabel": "schnell",
+  "ingredients": [
+    {
+      "name": "Pasta",
+      "amount": 320,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Pesto Genovese (Glas)",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Parmesan",
+      "amount": 40,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Pinienkerne",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Kirschtomaten",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Frühling",
+    "Sommer"
+  ],
+  "weatherType": "warm",
+  "isMealprep": false,
+  "isSuitableForLunch": true,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Schnell, lecker, mit frischem Basilikum-Pesto.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

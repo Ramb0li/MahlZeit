@@ -1,0 +1,52 @@
+{
+  "id": "sup-05",
+  "name": "Süsskartoffelsuppe",
+  "category": "Suppen",
+  "timeMinutes": 35,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Süsskartoffeln",
+      "amount": 800,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Ingwer (frisch)",
+      "amount": 20,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Kokosmilch",
+      "amount": 200,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebrühe",
+      "amount": 800,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Koriander",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Herbst",
+    "Winter"
+  ],
+  "weatherType": "kalt",
+  "isMealprep": true,
+  "isSuitableForLunch": true,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Samtweiche Suppe mit exotischer Note.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

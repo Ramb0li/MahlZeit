@@ -1,0 +1,52 @@
+{
+  "id": "sup-04",
+  "name": "Gelberbsensuppe",
+  "category": "Suppen",
+  "timeMinutes": 50,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Gelbe Erbsen (getrocknet)",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Karotten",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebrühe",
+      "amount": 1500,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Majoran",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Herbst",
+    "Winter"
+  ],
+  "weatherType": "kalt",
+  "isMealprep": true,
+  "isSuitableForLunch": true,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Deftige Erbsensuppe nach Grossmutterart.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

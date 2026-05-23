@@ -1,0 +1,64 @@
+{
+  "id": "sal-03",
+  "name": "Taboulé",
+  "category": "Salat/Bowl",
+  "timeMinutes": 20,
+  "timeLabel": "schnell",
+  "ingredients": [
+    {
+      "name": "Bulgur",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Petersilie",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Minze",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomaten",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Gurke",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Frühling",
+    "Sommer"
+  ],
+  "weatherType": "warm",
+  "isMealprep": true,
+  "isSuitableForLunch": true,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Frischer Levante-Salat.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

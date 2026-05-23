@@ -1,0 +1,58 @@
+{
+  "id": "sup-01",
+  "name": "Kürbissuppe mit Kartoffel, Ingwer und Curry",
+  "category": "Suppen",
+  "timeMinutes": 35,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Butternusskürbis",
+      "amount": 800,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Kartoffeln",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Ingwer (frisch)",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Currypulver",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebrühe",
+      "amount": 1000,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Kokosmilch",
+      "amount": 200,
+      "unit": "ml",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Herbst",
+    "Winter"
+  ],
+  "weatherType": "kalt",
+  "isMealprep": true,
+  "isSuitableForLunch": true,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Wärmende Kürbissuppe mit exotischem Kick.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

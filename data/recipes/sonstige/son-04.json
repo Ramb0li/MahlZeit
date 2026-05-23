@@ -1,0 +1,36 @@
+{
+  "id": "son-04",
+  "name": "Avocado Toast mit pochiertem Ei",
+  "category": "Sonstige",
+  "timeMinutes": 15,
+  "timeLabel": "schnell",
+  "ingredients": [
+    { "name": "Sauerteigbrot (dicke Scheiben)", "amount": 4, "unit": "Scheiben", "perPortions": 4 },
+    { "name": "Reife Avocados", "amount": 2, "unit": "Stk", "perPortions": 4 },
+    { "name": "Eier", "amount": 4, "unit": "Stk", "perPortions": 4 },
+    { "name": "Zitronensaft", "amount": 1, "unit": "EL", "perPortions": 4 },
+    { "name": "Weisser Weinessig (zum Pochieren)", "amount": 2, "unit": "EL", "perPortions": 4 },
+    { "name": "Chiliflocken", "amount": 0.5, "unit": "TL", "perPortions": 4 },
+    { "name": "Fleur de sel & schwarzer Pfeffer", "amount": 1, "unit": "Prise", "perPortions": 4 },
+    { "name": "Olivenöl", "amount": 2, "unit": "EL", "perPortions": 4 },
+    { "name": "Frische Kresse oder Rucola", "amount": 1, "unit": "Handvoll", "perPortions": 4 }
+  ],
+  "season": ["ganzjährig"],
+  "weatherType": "neutral",
+  "isMealprep": false,
+  "isSuitableForLunch": true,
+  "dietType": "vegetarisch",
+  "source": "cuiseline",
+  "basePortions": 4,
+  "description": "Der Klassiker neu gedacht — mit pochiertem Ei, Kresse und dem richtigen Sauerteigbrot. Fertig in 15 Minuten.",
+  "steps": [
+    "Brotscheiben im Toaster oder Ofen kross toasten.",
+    "Avocados halbieren, entkernen, das Fruchtfleisch mit einer Gabel grob zerdrücken. Mit Zitronensaft, Salz und Pfeffer würzen.",
+    "Für die pochierten Eier: Wasser in einem flachen Topf zum Sieden bringen (nicht kochen), Essig dazugeben.",
+    "Ei in eine kleine Tasse aufschlagen. Mit einem Löffel einen Strudel im Wasser erzeugen, Ei hineingleiten lassen. 3 Minuten pochieren.",
+    "Avocado-Creme auf das Brot streichen. Ei darauflegen.",
+    "Mit Olivenöl, Chiliflocken, Fleur de sel und Kresse fertigstellen."
+  ],
+  "tips": "Frische Eier pochieren sich am besten — das Eiweiss hält besser zusammen. Variante: statt pochiertem Ei ein Spiegelei oder Scrambled Eggs verwenden.",
+  "imageUrl": "https://www.instagram.com/cuiseline/"
+}

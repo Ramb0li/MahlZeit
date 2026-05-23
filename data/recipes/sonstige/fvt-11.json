@@ -1,0 +1,81 @@
+{
+  "id": "fvt-11",
+  "name": "Süsskartoffel-Quesadillas mit Guacamole",
+  "category": "Sonstige",
+  "timeMinutes": 25,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Süsskartoffel (gross)",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomatenmark",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Weisse Bohnen (gekocht)",
+      "amount": 240,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Mandelmus",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Hefeflocken",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Avocado",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Vollkorn-Tortillas",
+      "amount": 6,
+      "unit": "Stk",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "ganzjährig"
+  ],
+  "weatherType": "warm",
+  "isMealprep": false,
+  "isSuitableForLunch": true,
+  "source": "Familientisch voraus! (LittleFant)",
+  "basePortions": 4,
+  "description": "Vegane Quesadillas mit Süsskartoffel-Bohnen-Füllung und selbstgemachter Guacamole.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

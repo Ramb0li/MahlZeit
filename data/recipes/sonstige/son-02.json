@@ -1,0 +1,57 @@
+{
+  "id": "son-02",
+  "name": "Tacos mit Linsen & Baumnüsse",
+  "category": "Sonstige",
+  "timeMinutes": 25,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Taco-Shells",
+      "amount": 8,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Rote Linsen",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Baumnüsse",
+      "amount": 80,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Passierte Tomaten",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Gewürzmischung",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salat",
+      "amount": 0.5,
+      "unit": "Kopf",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "ganzjährig"
+  ],
+  "weatherType": "neutral",
+  "isMealprep": false,
+  "isSuitableForLunch": false,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Vegane Tacos mit knackigen Baumnüssen.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

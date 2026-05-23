@@ -1,0 +1,58 @@
+{
+  "id": "son-03",
+  "name": "Pitabrot mit Falafel, Tzatziki und Gemüse",
+  "category": "Sonstige",
+  "timeMinutes": 20,
+  "timeLabel": "schnell",
+  "ingredients": [
+    {
+      "name": "Pitabrot",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Falafel (fertig)",
+      "amount": 20,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Tzatziki",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Salat",
+      "amount": 0.5,
+      "unit": "Kopf",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomaten",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Gurke",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Frühling",
+    "Sommer"
+  ],
+  "weatherType": "warm",
+  "isMealprep": false,
+  "isSuitableForLunch": true,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Frisches Streetfood zu Hause.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

@@ -1,0 +1,59 @@
+{
+  "id": "sal-02",
+  "name": "Rucola Birnen Fetasalat",
+  "category": "Salat/Bowl",
+  "timeMinutes": 15,
+  "timeLabel": "schnell",
+  "ingredients": [
+    {
+      "name": "Rucola",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Birnen",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Feta",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Walnüsse",
+      "amount": 60,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Balsamico",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Herbst",
+    "Frühling",
+    "Sommer"
+  ],
+  "weatherType": "warm",
+  "isMealprep": false,
+  "isSuitableForLunch": true,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Eleganter Salat mit Birne und Feta.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

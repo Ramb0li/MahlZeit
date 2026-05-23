@@ -1,0 +1,58 @@
+{
+  "id": "pas-06",
+  "name": "Pilzrahmsauce",
+  "category": "Pasta",
+  "timeMinutes": 25,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Pasta",
+      "amount": 320,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Champignons",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Rahm",
+      "amount": 200,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 2,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Petersilie",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Herbst",
+    "Winter"
+  ],
+  "weatherType": "kalt",
+  "isMealprep": false,
+  "isSuitableForLunch": false,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Cremige Pilzrahmsauce mit Pasta.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

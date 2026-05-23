@@ -1,0 +1,112 @@
+{
+  "id": "fvt-02",
+  "name": "Kartoffel-Kürbis-Gulasch mit weissen Bohnen",
+  "category": "Eintopf/Gratin",
+  "timeMinutes": 50,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Kartoffeln",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Karotten",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Hokkaido-Kürbis",
+      "amount": 800,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 2,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Rapsöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomatenmark",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Balsamico-Essig (hell)",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebrühe",
+      "amount": 800,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Thymian",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Paprikapulver (edelsüss)",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Weisse Bohnen (gekocht)",
+      "amount": 240,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Petersilie",
+      "amount": 5,
+      "unit": "Stiele",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 50,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Herbst",
+    "Winter"
+  ],
+  "weatherType": "kalt",
+  "isMealprep": true,
+  "isSuitableForLunch": true,
+  "source": "Familientisch voraus! (LittleFant)",
+  "basePortions": 4,
+  "description": "Wärmend-herzhaftes Gulasch mit Kürbis, Kartoffeln und weissen Bohnen. Garniert mit Kräuteröl.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

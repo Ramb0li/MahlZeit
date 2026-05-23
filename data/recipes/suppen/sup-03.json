@@ -1,0 +1,58 @@
+{
+  "id": "sup-03",
+  "name": "Gerstensuppe",
+  "category": "Suppen",
+  "timeMinutes": 60,
+  "timeLabel": "aufwändig",
+  "ingredients": [
+    {
+      "name": "Rollgerste",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Karotten",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Sellerie",
+      "amount": 2,
+      "unit": "Stangen",
+      "perPortions": 4
+    },
+    {
+      "name": "Lauch",
+      "amount": 1,
+      "unit": "Stange",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebrühe",
+      "amount": 1500,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Peterli",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Herbst",
+    "Winter"
+  ],
+  "weatherType": "kalt",
+  "isMealprep": true,
+  "isSuitableForLunch": true,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Sättigende Suppe mit Rollgerste.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

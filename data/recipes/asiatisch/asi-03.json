@@ -1,0 +1,39 @@
+{
+  "id": "asi-03",
+  "name": "Pad Thai mit Tofu und Erdnüssen",
+  "category": "Asiatisch",
+  "timeMinutes": 30,
+  "timeLabel": "schnell",
+  "ingredients": [
+    { "name": "Reisnudeln (flach, 5mm)", "amount": 300, "unit": "g", "perPortions": 4 },
+    { "name": "Fester Tofu", "amount": 400, "unit": "g", "perPortions": 4 },
+    { "name": "Eier", "amount": 4, "unit": "Stk", "perPortions": 4 },
+    { "name": "Frühlingszwiebeln", "amount": 4, "unit": "Stk", "perPortions": 4 },
+    { "name": "Sojasprossen", "amount": 150, "unit": "g", "perPortions": 4 },
+    { "name": "Geröstete Erdnüsse", "amount": 80, "unit": "g", "perPortions": 4 },
+    { "name": "Tamarindenpaste", "amount": 3, "unit": "EL", "perPortions": 4 },
+    { "name": "Fischsauce oder Sojasosse (vegan)", "amount": 3, "unit": "EL", "perPortions": 4 },
+    { "name": "Palmzucker oder brauner Zucker", "amount": 2, "unit": "EL", "perPortions": 4 },
+    { "name": "Öl zum Braten", "amount": 3, "unit": "EL", "perPortions": 4 },
+    { "name": "Limetten", "amount": 2, "unit": "Stk", "perPortions": 4 },
+    { "name": "Frischer Koriander", "amount": 1, "unit": "Bund", "perPortions": 4 }
+  ],
+  "season": ["ganzjährig"],
+  "weatherType": "neutral",
+  "isMealprep": false,
+  "isSuitableForLunch": true,
+  "dietType": "vegetarisch",
+  "source": "cuiseline",
+  "basePortions": 4,
+  "description": "Authentisches Pad Thai mit knusprigem Tofu — süss, sauer, salzig und in 30 Minuten auf dem Tisch.",
+  "steps": [
+    "Reisnudeln nach Packungsanweisung einweichen (ca. 15 Min. in lauwarmem Wasser), dann abgiessen.",
+    "Tofu abtupfen, in Würfel schneiden. In Öl bei starker Hitze rundum knusprig braten, herausnehmen.",
+    "Pad-Thai-Sauce: Tamarindenpaste, Sojasauce und Zucker verrühren.",
+    "Frühlingszwiebeln (helle Teile) und Sojasprossen in der Pfanne kurz anbraten. Beiseite schieben, Eier einschlagen und scrambled braten.",
+    "Nudeln und Sauce in die Pfanne, alles vermengen. Tofu zugeben, kurz durchschwenken.",
+    "Mit Erdnüssen, Koriander, Limette und grünen Frühlingszwiebelringen servieren."
+  ],
+  "tips": "Für vegane Variante Eier weglassen und Sojasauce statt Fischsauce verwenden. Mise en place ist wichtig — alles vorbereiten bevor das Wokken beginnt.",
+  "imageUrl": "https://www.instagram.com/cuiseline/"
+}

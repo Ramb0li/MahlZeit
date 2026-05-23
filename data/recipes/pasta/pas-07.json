@@ -1,0 +1,58 @@
+{
+  "id": "pas-07",
+  "name": "Älpler Magronen",
+  "category": "Pasta",
+  "timeMinutes": 45,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Hörnli",
+      "amount": 320,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Kartoffeln",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Rahm",
+      "amount": 200,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Gruyère (gerieben)",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebeln (für Röstzwiebeln)",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Apfelmus",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Herbst",
+    "Winter"
+  ],
+  "weatherType": "kalt",
+  "isMealprep": false,
+  "isSuitableForLunch": false,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Schweizer Klassiker vom Berg.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

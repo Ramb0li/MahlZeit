@@ -1,0 +1,59 @@
+{
+  "id": "pas-09",
+  "name": "Hörnligratin mit Lauch, Erbsen & Broccoli",
+  "category": "Pasta",
+  "timeMinutes": 50,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Hörnli",
+      "amount": 320,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Lauch",
+      "amount": 1,
+      "unit": "Stange",
+      "perPortions": 4
+    },
+    {
+      "name": "Erbsen (TK)",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Broccoli",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Rahm",
+      "amount": 200,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Käse (gerieben)",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Herbst",
+    "Winter",
+    "Frühling"
+  ],
+  "weatherType": "kalt",
+  "isMealprep": true,
+  "isSuitableForLunch": true,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Herzhafter Nudelauflauf mit Gemüse.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

@@ -1,0 +1,39 @@
+{
+  "id": "rei-07",
+  "name": "Gemüse-Curry mit Kokosmilch und Basmatireis",
+  "category": "Reis",
+  "timeMinutes": 30,
+  "timeLabel": "schnell",
+  "ingredients": [
+    { "name": "Basmatireis", "amount": 300, "unit": "g", "perPortions": 4 },
+    { "name": "Kokosmilch", "amount": 400, "unit": "ml", "perPortions": 4 },
+    { "name": "Blumenkohl", "amount": 500, "unit": "g", "perPortions": 4 },
+    { "name": "Süsskartoffel", "amount": 400, "unit": "g", "perPortions": 4 },
+    { "name": "Kichererbsen (Dose)", "amount": 400, "unit": "g", "perPortions": 4 },
+    { "name": "Gemüsebrühe", "amount": 200, "unit": "ml", "perPortions": 4 },
+    { "name": "Currypaste (rot oder grün)", "amount": 2, "unit": "EL", "perPortions": 4 },
+    { "name": "Frischer Ingwer", "amount": 20, "unit": "g", "perPortions": 4 },
+    { "name": "Knoblauch", "amount": 3, "unit": "Zehen", "perPortions": 4 },
+    { "name": "Limette", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Kokosnussöl oder Olivenöl", "amount": 2, "unit": "EL", "perPortions": 4 },
+    { "name": "Babyspinat", "amount": 60, "unit": "g", "perPortions": 4 }
+  ],
+  "season": ["Herbst", "Winter", "ganzjährig"],
+  "weatherType": "kalt",
+  "isMealprep": true,
+  "isSuitableForLunch": true,
+  "dietType": "vegan",
+  "source": "cuiseline",
+  "basePortions": 4,
+  "description": "Reichhaltiges Gemüse-Curry, das wärmt und sättigt — perfekt fürs Meal-Prep und in 30 Minuten fertig.",
+  "steps": [
+    "Basmatireis waschen und nach Packungsanweisung garen.",
+    "Süsskartoffel und Blumenkohl in Würfel schneiden. Ingwer und Knoblauch fein reiben.",
+    "Öl in einer grossen Pfanne erhitzen. Currypaste, Ingwer und Knoblauch 1 Minute anbraten.",
+    "Gemüse hinzufügen, kurz mitrösten. Kokosmilch und Brühe angiessen, Kichererbsen dazu.",
+    "15–20 Minuten köcheln, bis das Gemüse gar ist. Spinat unterrühren, Limettensaft abschmecken.",
+    "Mit Basmatireis servieren."
+  ],
+  "tips": "Mit Koriander und einer Scheibe Limette garnieren. Am nächsten Tag schmeckt das Curry noch besser — ideal für Meal-Prep.",
+  "imageUrl": "https://www.instagram.com/cuiseline/"
+}

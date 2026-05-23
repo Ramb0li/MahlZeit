@@ -1,0 +1,63 @@
+{
+  "id": "son-01",
+  "name": "Fajitas",
+  "category": "Sonstige",
+  "timeMinutes": 25,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Weizentortillas",
+      "amount": 8,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Paprika",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Sauerrahm",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Guacamole",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Salsa",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Fajita-Gewürz",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "ganzjährig"
+  ],
+  "weatherType": "neutral",
+  "isMealprep": false,
+  "isSuitableForLunch": false,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Buntes Fajita-Fest für die Familie.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

@@ -1,0 +1,58 @@
+{
+  "id": "ei-07",
+  "name": "Polenta, Gemüse & Eier",
+  "category": "Eier",
+  "timeMinutes": 35,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Polenta",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebrühe",
+      "amount": 800,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Eier",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemischtes Gemüse",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Parmesan",
+      "amount": 40,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Herbst",
+    "Winter"
+  ],
+  "weatherType": "kalt",
+  "isMealprep": false,
+  "isSuitableForLunch": false,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Cremige Polenta mit Gemüse und Eiern.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

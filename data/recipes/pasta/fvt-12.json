@@ -1,0 +1,70 @@
+{
+  "id": "fvt-12",
+  "name": "Nudeln mit Basilikum-Bohnen-Pesto",
+  "category": "Pasta",
+  "timeMinutes": 20,
+  "timeLabel": "schnell",
+  "ingredients": [
+    {
+      "name": "Basilikum",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Weisse Bohnen (gekocht)",
+      "amount": 120,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Pinienkerne",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Cashews",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Hefeflocken",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 100,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Hartweizennudeln",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Frühling",
+    "Sommer"
+  ],
+  "weatherType": "warm",
+  "isMealprep": false,
+  "isSuitableForLunch": true,
+  "source": "Familientisch voraus! (LittleFant)",
+  "basePortions": 4,
+  "description": "Schnelles veganes Pesto aus Basilikum, weissen Bohnen und Cashews – nährstoffreicher als klassisches Pesto.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

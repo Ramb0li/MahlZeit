@@ -1,0 +1,106 @@
+{
+  "id": "fvt-08",
+  "name": "Gefüllte Paprika mit Quinoa und schwarzen Bohnen",
+  "category": "Ofen",
+  "timeMinutes": 50,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Quinoa",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 2,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Paprikapulver (edelsüss)",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kreuzkümmel",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Zimt",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Schwarze Bohnen (gekocht)",
+      "amount": 240,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zuckermais",
+      "amount": 180,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Passierte Tomaten",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Sesammus",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Hefeflocken",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Paprika (gross)",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Koriander oder Petersilie",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Sommer",
+    "Herbst"
+  ],
+  "weatherType": "neutral",
+  "isMealprep": true,
+  "isSuitableForLunch": true,
+  "source": "Familientisch voraus! (LittleFant)",
+  "basePortions": 4,
+  "description": "Im Ofen gegarte Paprika gefüllt mit würziger Quinoa-Bohnen-Mais-Füllung. Farbig und nährstoffreich.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

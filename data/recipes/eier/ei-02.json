@@ -1,0 +1,70 @@
+{
+  "id": "ei-02",
+  "name": "Rahmspinat, Salzkartoffeln, Spiegeleier",
+  "category": "Eier",
+  "timeMinutes": 35,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Spinat (tiefgekühlt)",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Rahm",
+      "amount": 100,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Kartoffeln",
+      "amount": 600,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Eier",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 2,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Muskatnuss",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Herbst",
+    "Winter"
+  ],
+  "weatherType": "kalt",
+  "isMealprep": false,
+  "isSuitableForLunch": false,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Herzhafter Klassiker für kalte Abende.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

@@ -1,0 +1,63 @@
+{
+  "id": "asi-02",
+  "name": "Ayurvedisches Kitchari",
+  "category": "Asiatisch",
+  "timeMinutes": 40,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Rote Linsen",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Basmati-Reis",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Ghee oder Butter",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Ingwer (frisch)",
+      "amount": 20,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Kurkuma",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Koriandersamen",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kreuzkümmel",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "ganzjährig"
+  ],
+  "weatherType": "neutral",
+  "isMealprep": true,
+  "isSuitableForLunch": true,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Ayurvedischer Klassiker – reinigend und nahrhaft.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

@@ -1,0 +1,76 @@
+{
+  "id": "ein-01",
+  "name": "Chili sin carne",
+  "category": "Eintopf/Gratin",
+  "timeMinutes": 40,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Rote Bohnen (Dose)",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Mais (Dose)",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Passierte Tomaten",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Paprika",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Chiliflocken",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kreuzkümmel",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 2,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Sauerrahm",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Herbst",
+    "Winter"
+  ],
+  "weatherType": "kalt",
+  "isMealprep": true,
+  "isSuitableForLunch": true,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Veganes Chili – würzig und sättigend.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

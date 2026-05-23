@@ -1,0 +1,69 @@
+{
+  "id": "rei-03",
+  "name": "Linsen-Gemüse-Curry mit Reis",
+  "category": "Reis",
+  "timeMinutes": 35,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Rote Linsen",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Basmatireis",
+      "amount": 280,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Kokosmilch",
+      "amount": 400,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Currypaste (rot)",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Karotten",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Zucchini",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 2,
+      "unit": "Zehen",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "ganzjährig"
+  ],
+  "weatherType": "neutral",
+  "isMealprep": true,
+  "isSuitableForLunch": true,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Würziges Curry – perfekt für Mealprep.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

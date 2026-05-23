@@ -1,0 +1,51 @@
+{
+  "id": "pas-12",
+  "name": "Spätzli mit Kürbissauce",
+  "category": "Pasta",
+  "timeMinutes": 40,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Spätzli (fertig)",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Butternusskürbis",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Rahm",
+      "amount": 150,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Salbei",
+      "amount": 6,
+      "unit": "Blätter",
+      "perPortions": 4
+    },
+    {
+      "name": "Parmesan",
+      "amount": 40,
+      "unit": "g",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Herbst"
+  ],
+  "weatherType": "kalt",
+  "isMealprep": false,
+  "isSuitableForLunch": false,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Herbstliche Spätzli-Variante.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

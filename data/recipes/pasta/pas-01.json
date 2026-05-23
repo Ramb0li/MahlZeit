@@ -1,0 +1,70 @@
+{
+  "id": "pas-01",
+  "name": "Linsen-Gemüse-Bolognese",
+  "category": "Pasta",
+  "timeMinutes": 40,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Spaghetti",
+      "amount": 320,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Rote Linsen",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Passierte Tomaten",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Karotten",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Sellerie",
+      "amount": 2,
+      "unit": "Stangen",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 3,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Herbst",
+    "Winter"
+  ],
+  "weatherType": "kalt",
+  "isMealprep": true,
+  "isSuitableForLunch": true,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Vegane Bolognese aus Linsen und Gemüse.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

@@ -1,0 +1,107 @@
+{
+  "id": "fvt-10",
+  "name": "Spinat-Linsen-Daal mit Vollkornreis",
+  "category": "Reis",
+  "timeMinutes": 50,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Berglinsen",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Rote Linsen",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Vollkornreis",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Ingwer (frisch)",
+      "amount": 20,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 2,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Kokosöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomatenmark",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Garam Masala",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kreuzkümmel (gemahlen)",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Koriander (gemahlen)",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kurkuma",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kokosmilch",
+      "amount": 400,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Baby-Spinat",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Herbst",
+    "Winter",
+    "Frühling"
+  ],
+  "weatherType": "kalt",
+  "isMealprep": true,
+  "isSuitableForLunch": true,
+  "source": "Familientisch voraus! (LittleFant)",
+  "basePortions": 4,
+  "description": "Wärmendes Linsen-Daal mit Spinat und Kokosmilch – aromatisch und für die ganze Familie.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

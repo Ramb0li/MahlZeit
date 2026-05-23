@@ -1,0 +1,52 @@
+{
+  "id": "ein-04",
+  "name": "Ebly mit Tomaten, Räuchertofu & Sauerkraut",
+  "category": "Eintopf/Gratin",
+  "timeMinutes": 35,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Ebly (Weichweizenkörner)",
+      "amount": 280,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Räuchertofu",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Sauerkraut",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomaten (Dose)",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Herbst",
+    "Winter"
+  ],
+  "weatherType": "kalt",
+  "isMealprep": true,
+  "isSuitableForLunch": true,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Deftige Kombination mit Räuchertofu.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

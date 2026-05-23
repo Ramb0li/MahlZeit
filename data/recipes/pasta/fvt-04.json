@@ -1,0 +1,83 @@
+{
+  "id": "fvt-04",
+  "name": "Vollkornpasta mit Blumenkohl-Bohnen-Cashew-Sauce",
+  "category": "Pasta",
+  "timeMinutes": 35,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Cashewkerne",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Weisse Bohnen (gekocht)",
+      "amount": 240,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Blumenkohl",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kreuzkümmel",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Sojadrink (ungesüsst)",
+      "amount": 150,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Hefeflocken",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Thymian",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Vollkornnudeln",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Herbst",
+    "Winter",
+    "Frühling"
+  ],
+  "weatherType": "kalt",
+  "isMealprep": false,
+  "isSuitableForLunch": true,
+  "source": "Familientisch voraus! (LittleFant)",
+  "basePortions": 4,
+  "description": "Cremige vegane Cashew-Sauce mit Blumenkohl und weissen Bohnen – geröstete Röschen als Topping.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

@@ -1,0 +1,93 @@
+{
+  "id": "fvt-05",
+  "name": "Kartoffelpuffer mit Bohnen und Kräuter-Dip",
+  "category": "Sonstige",
+  "timeMinutes": 40,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Kartoffeln (festkochend)",
+      "amount": 700,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Süsskartoffeln",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Weisse Bohnen (gekocht)",
+      "amount": 240,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Dinkelvollkornmehl",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Sojaquark",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Petersilie",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Dill",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Muskatnuss",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Rapsöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "ganzjährig"
+  ],
+  "weatherType": "neutral",
+  "isMealprep": false,
+  "isSuitableForLunch": true,
+  "source": "Familientisch voraus! (LittleFant)",
+  "basePortions": 4,
+  "description": "Knusprige Kartoffelpuffer mit Süsskartoffel und Bohnen, dazu ein frischer Kräuter-Quark-Dip.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

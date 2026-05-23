@@ -1,0 +1,58 @@
+{
+  "id": "ei-06",
+  "name": "Eier in Senfsauce mit Blumenkohlpüree",
+  "category": "Eier",
+  "timeMinutes": 35,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Eier",
+      "amount": 8,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Dijonsenf",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Rahm",
+      "amount": 200,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Blumenkohl",
+      "amount": 1,
+      "unit": "Kopf",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 40,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Milch",
+      "amount": 100,
+      "unit": "ml",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Herbst",
+    "Winter"
+  ],
+  "weatherType": "kalt",
+  "isMealprep": false,
+  "isSuitableForLunch": false,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Deftige Senfsauce mit Eiern und feinem Blumenkohlpüree.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

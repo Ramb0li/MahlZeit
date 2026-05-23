@@ -1,0 +1,58 @@
+{
+  "id": "ein-05",
+  "name": "Sauerkraut-Auflauf mit Räuchertofu und Kartoffel-Karotten-Stampf",
+  "category": "Eintopf/Gratin",
+  "timeMinutes": 60,
+  "timeLabel": "aufwändig",
+  "ingredients": [
+    {
+      "name": "Sauerkraut",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Räuchertofu",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Kartoffeln",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Karotten",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 40,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Milch",
+      "amount": 100,
+      "unit": "ml",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Herbst",
+    "Winter"
+  ],
+  "weatherType": "kalt",
+  "isMealprep": false,
+  "isSuitableForLunch": false,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Wärmender Auflauf mit Sauerkraut.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

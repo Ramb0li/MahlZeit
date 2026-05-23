@@ -1,0 +1,51 @@
+{
+  "id": "fis-01",
+  "name": "Fisch, Salzkartoffeln und Spinat",
+  "category": "Fisch",
+  "timeMinutes": 30,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Fischfilets (z.B. Lachs)",
+      "amount": 600,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Kartoffeln",
+      "amount": 600,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Spinat (TK)",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitrone",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "ganzjährig"
+  ],
+  "weatherType": "neutral",
+  "isMealprep": false,
+  "isSuitableForLunch": false,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Leichtes Fischgericht mit Beilagen.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

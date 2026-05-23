@@ -1,0 +1,87 @@
+{
+  "id": "fvt-01",
+  "name": "Süsskartoffel-Kichererbsen-Waffeln mit Joghurt-Gurken-Dip",
+  "category": "Sonstige",
+  "timeMinutes": 35,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Süsskartoffel",
+      "amount": 180,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Salatgurke",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Dill",
+      "amount": 1,
+      "unit": "Zweig",
+      "perPortions": 4
+    },
+    {
+      "name": "Sojajoghurt",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Sesammus",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Dinkelvollkornmehl",
+      "amount": 80,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Kichererbsenmehl",
+      "amount": 70,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Backpulver",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Sojadrink (ungesüsst)",
+      "amount": 150,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Rapsöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "ganzjährig"
+  ],
+  "weatherType": "neutral",
+  "isMealprep": true,
+  "isSuitableForLunch": true,
+  "source": "Familientisch voraus! (LittleFant)",
+  "basePortions": 4,
+  "description": "Herzhafte Waffeln mit Süsskartoffel und Kichererbsen, dazu ein frischer Joghurt-Gurken-Dip. Gefriergeeignet.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

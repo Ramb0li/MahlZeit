@@ -1,0 +1,69 @@
+{
+  "id": "fvt-13",
+  "name": "Räuber-Nuggets aus Tofu und Gemüse",
+  "category": "Sonstige",
+  "timeMinutes": 45,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Kartoffeln (festkochend)",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Blumenkohl",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Naturtofu",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Kichererbsenmehl",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Semmelbrösel (Paniermehl)",
+      "amount": 120,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Cashewmus",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Hefeflocken",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Rapsöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "ganzjährig"
+  ],
+  "weatherType": "neutral",
+  "isMealprep": true,
+  "isSuitableForLunch": true,
+  "source": "Familientisch voraus! (LittleFant)",
+  "basePortions": 4,
+  "description": "Knusprige vegane Nuggets aus Tofu, Kartoffeln und Blumenkohl – gefriergeeignet, Kinder-Liebling.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

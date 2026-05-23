@@ -1,0 +1,59 @@
+{
+  "id": "sup-02",
+  "name": "Minestrone",
+  "category": "Suppen",
+  "timeMinutes": 45,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Gemischtes Gemüse",
+      "amount": 600,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomatenwürfel (Dose)",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Pasta (klein)",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Weisse Bohnen (Dose)",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebrühe",
+      "amount": 1000,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Parmesan",
+      "amount": 40,
+      "unit": "g",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Herbst",
+    "Winter",
+    "Frühling"
+  ],
+  "weatherType": "kalt",
+  "isMealprep": true,
+  "isSuitableForLunch": true,
+  "source": "Menüliste",
+  "basePortions": 4,
+  "description": "Italienische Gemüsesuppe mit Pasta und Bohnen.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

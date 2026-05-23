@@ -1,0 +1,65 @@
+{
+  "id": "rei-01",
+  "name": "Lauchrisotto",
+  "category": "Reis",
+  "timeMinutes": 40,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Risottoreis",
+      "amount": 320,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Lauch",
+      "amount": 2,
+      "unit": "Stangen",
+      "perPortions": 4
+    },
+    {
+      "name": "Weisswein",
+      "amount": 100,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebrühe",
+      "amount": 1200,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Parmesan",
+      "amount": 60,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 40,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Herbst",
+    "Winter",
+    "Frühling"
+  ],
+  "weatherType": "kalt",
+  "isMealprep": false,
+  "isSuitableForLunch": false,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Cremiges Lauchrisotto – Komfort food pur.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

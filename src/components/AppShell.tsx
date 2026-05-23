@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import Link from 'next/link';
 import { CalendarDays, BookOpen, ShoppingCart, Settings } from 'lucide-react';
 import { WeekPlanner } from '@/components/planner/WeekPlanner';
 import { RecipeList } from '@/components/recipes/RecipeList';
@@ -9,6 +10,7 @@ import { getTheme } from '@/lib/themes';
 import type { Recipe, AppSettings, DayConstraint } from '@/types';
 
 type Tab = 'planner' | 'recipes' | 'shopping' | 'settings';
+export type { Tab };
 
 const TABS: { id: Tab; label: string; icon: React.ComponentType<{ size?: number | string; className?: string }> }[] = [
   { id: 'planner',  label: 'Menüplan',     icon: CalendarDays },
@@ -21,10 +23,11 @@ interface AppShellProps {
   recipes: Recipe[];
   settings: AppSettings;
   constraints: DayConstraint[];
+  initialTab?: Tab;
 }
 
-export function AppShell({ recipes: initialRecipes, settings: initialSettings, constraints: initialConstraints }: AppShellProps) {
-  const [activeTab, setActiveTab] = useState<Tab>('planner');
+export function AppShell({ recipes: initialRecipes, settings: initialSettings, constraints: initialConstraints, initialTab }: AppShellProps) {
+  const [activeTab, setActiveTab] = useState<Tab>(initialTab ?? 'planner');
   const [recipes, setRecipes] = useState<Recipe[]>(initialRecipes);
   const [settings, setSettings] = useState<AppSettings>(initialSettings);
   const [constraints, setConstraints] = useState<DayConstraint[]>(initialConstraints);
@@ -47,8 +50,8 @@ export function AppShell({ recipes: initialRecipes, settings: initialSettings, c
         }}
       >
         <div className="flex items-center justify-between px-5 h-full">
-          {/* Brand — Fraunces, "Zeit" in terracotta */}
-          <div className="flex items-center gap-2.5">
+          {/* Brand — links back to landing page */}
+          <Link href="/" className="flex items-center gap-2.5" style={{ textDecoration: 'none' }}>
             <div
               className="w-8 h-8 rounded-xl flex items-center justify-center"
               style={{ backgroundColor: theme.todayAccent + '22', border: `1px solid ${theme.borderColor}` }}
@@ -66,7 +69,7 @@ export function AppShell({ recipes: initialRecipes, settings: initialSettings, c
                 Planer
               </span>
             </div>
-          </div>
+          </Link>
 
           {/* Desktop nav */}
           <nav

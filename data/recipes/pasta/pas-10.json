@@ -1,0 +1,58 @@
+{
+  "id": "pas-10",
+  "name": "Pasta mit Kürbissauce",
+  "category": "Pasta",
+  "timeMinutes": 35,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Pasta",
+      "amount": 320,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Butternusskürbis",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Rahm",
+      "amount": 150,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Salbei",
+      "amount": 6,
+      "unit": "Blätter",
+      "perPortions": 4
+    },
+    {
+      "name": "Parmesan",
+      "amount": 40,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Muskatnuss",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Herbst",
+    "Winter"
+  ],
+  "weatherType": "kalt",
+  "isMealprep": false,
+  "isSuitableForLunch": true,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Herbstliche Pasta mit cremiger Kürbissauce.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

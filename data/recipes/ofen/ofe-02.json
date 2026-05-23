@@ -1,0 +1,37 @@
+{
+  "id": "ofe-02",
+  "name": "Pizza Bianca mit Zucchini und Ricotta",
+  "category": "Ofen",
+  "timeMinutes": 40,
+  "timeLabel": "mittel",
+  "ingredients": [
+    { "name": "Fertig-Pizzateig (rund, 400g)", "amount": 2, "unit": "Stk", "perPortions": 4 },
+    { "name": "Ricotta", "amount": 250, "unit": "g", "perPortions": 4 },
+    { "name": "Zucchini", "amount": 2, "unit": "Stk", "perPortions": 4 },
+    { "name": "Mozzarella (Kugel)", "amount": 250, "unit": "g", "perPortions": 4 },
+    { "name": "Knoblauch", "amount": 2, "unit": "Zehen", "perPortions": 4 },
+    { "name": "Olivenöl", "amount": 4, "unit": "EL", "perPortions": 4 },
+    { "name": "Zitronenschale", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Frischer Thymian", "amount": 4, "unit": "Zweige", "perPortions": 4 },
+    { "name": "Fleur de sel & Pfeffer", "amount": 1, "unit": "Prise", "perPortions": 4 },
+    { "name": "Parmesan (gerieben)", "amount": 40, "unit": "g", "perPortions": 4 }
+  ],
+  "season": ["Sommer", "Frühling"],
+  "weatherType": "warm",
+  "isMealprep": false,
+  "isSuitableForLunch": true,
+  "dietType": "vegetarisch",
+  "source": "cuiseline",
+  "basePortions": 4,
+  "description": "Weisse Pizza ohne Tomatensauce — cremiger Ricotta, frische Zucchini und Mozzarella ergeben eine sommerlich-leichte Alternative.",
+  "steps": [
+    "Ofen auf 230 °C vorheizen. Ricotta mit geriebenem Knoblauch, Zitronenschale, Salz und Pfeffer verrühren.",
+    "Zucchini mit einem Sparschäler in dünne Streifen hobeln. Mit etwas Salz ziehen lassen, dann abtupfen.",
+    "Pizzateig ausrollen, auf Backpapier legen. Ricotta-Mischung darauf verteilen (Rand lassen).",
+    "Mozzarella in Scheiben darauflegen, Zucchinistreifen wellig anordnen.",
+    "Mit Olivenöl beträufeln, Thymianblättchen darüber zupfen.",
+    "10–12 Minuten backen bis der Rand goldbraun ist. Mit Parmesan und Fleur de sel fertigstellen."
+  ],
+  "tips": "Fertigteig spart Zeit — alternativ selbst gemachten Teig 24h im Kühlschrank gehen lassen für besseren Geschmack.",
+  "imageUrl": "https://www.instagram.com/cuiseline/"
+}

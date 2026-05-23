@@ -1,0 +1,52 @@
+{
+  "id": "sal-01",
+  "name": "Quinoa Bowl",
+  "category": "Salat/Bowl",
+  "timeMinutes": 25,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Quinoa",
+      "amount": 240,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Kichererbsen (Dose)",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemischtes Gemüse",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Tahini",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Frühling",
+    "Sommer"
+  ],
+  "weatherType": "warm",
+  "isMealprep": true,
+  "isSuitableForLunch": true,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Proteinreiche Bowl für warme Tage.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

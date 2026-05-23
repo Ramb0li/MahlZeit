@@ -1,0 +1,64 @@
+{
+  "id": "rei-05",
+  "name": "Mexikanischer Reissalat",
+  "category": "Reis",
+  "timeMinutes": 20,
+  "timeLabel": "schnell",
+  "ingredients": [
+    {
+      "name": "Langkornreis",
+      "amount": 280,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Mais (Dose)",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Schwarze Bohnen (Dose)",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Paprika",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Koriander",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Limettensaft",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Frühling",
+    "Sommer"
+  ],
+  "weatherType": "warm",
+  "isMealprep": true,
+  "isSuitableForLunch": true,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Bunter Reissalat mit mexikanischen Aromen.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

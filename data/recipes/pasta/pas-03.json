@@ -1,0 +1,58 @@
+{
+  "id": "pas-03",
+  "name": "Spinat-Lasagne",
+  "category": "Pasta",
+  "timeMinutes": 70,
+  "timeLabel": "aufwändig",
+  "ingredients": [
+    {
+      "name": "Lasagneblätter",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Spinat (TK)",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Ricotta",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Béchamelsauce",
+      "amount": 400,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Mozzarella",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Muskatnuss",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Herbst",
+    "Winter"
+  ],
+  "weatherType": "kalt",
+  "isMealprep": true,
+  "isSuitableForLunch": true,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Cremige Spinat-Ricotta Lasagne.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

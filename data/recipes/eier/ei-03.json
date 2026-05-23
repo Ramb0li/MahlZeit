@@ -1,0 +1,57 @@
+{
+  "id": "ei-03",
+  "name": "Rösti, Avocado, Spiegeleier",
+  "category": "Eier",
+  "timeMinutes": 30,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Kartoffeln (mehlig)",
+      "amount": 800,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Avocado",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Eier",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 40,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "ganzjährig"
+  ],
+  "weatherType": "neutral",
+  "isMealprep": false,
+  "isSuitableForLunch": true,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Schweizer Rösti trifft auf Avocado.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

@@ -1,0 +1,52 @@
+{
+  "id": "pas-11",
+  "name": "Spätzligratin mit Tomatensauce",
+  "category": "Pasta",
+  "timeMinutes": 45,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Spätzli (fertig)",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Passierte Tomaten",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Käse (gerieben)",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Kräuter",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Herbst",
+    "Winter"
+  ],
+  "weatherType": "kalt",
+  "isMealprep": true,
+  "isSuitableForLunch": true,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Schweizer Spätzli aus dem Ofen.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

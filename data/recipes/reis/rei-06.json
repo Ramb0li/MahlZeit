@@ -1,0 +1,57 @@
+{
+  "id": "rei-06",
+  "name": "Linsen-Reis",
+  "category": "Reis",
+  "timeMinutes": 30,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Linsen (grün)",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Basmati- oder Langkornreis",
+      "amount": 280,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 2,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Kreuzkümmel",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "ganzjährig"
+  ],
+  "weatherType": "neutral",
+  "isMealprep": true,
+  "isSuitableForLunch": true,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Einfaches, sättigendes Linsen-Reis-Gericht.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

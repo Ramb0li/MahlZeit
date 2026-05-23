@@ -1,0 +1,58 @@
+{
+  "id": "pas-02",
+  "name": "Linsen-Gemüse-Lasagne",
+  "category": "Pasta",
+  "timeMinutes": 75,
+  "timeLabel": "aufwändig",
+  "ingredients": [
+    {
+      "name": "Lasagneblätter",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Rote Linsen",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Passierte Tomaten",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemischtes Gemüse",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Béchamelsauce (Fertig)",
+      "amount": 400,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Käse (gerieben)",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Herbst",
+    "Winter"
+  ],
+  "weatherType": "kalt",
+  "isMealprep": true,
+  "isSuitableForLunch": true,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Klassische Lasagne vegetarisch.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

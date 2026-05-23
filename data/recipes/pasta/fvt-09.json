@@ -1,0 +1,100 @@
+{
+  "id": "fvt-09",
+  "name": "Kein-Käse-Käse-Spätzle (vegan)",
+  "category": "Pasta",
+  "timeMinutes": 50,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Weizenmehl (Type 630)",
+      "amount": 160,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Hartweizengrieß",
+      "amount": 60,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Kichererbsenmehl",
+      "amount": 80,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Kurkuma",
+      "amount": 1,
+      "unit": "Msp",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Sojadrink (ungesüsst)",
+      "amount": 250,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Rapsöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Naturtofu",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Cashewmus",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Hefeflocken",
+      "amount": 15,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Paprikapulver (edelsüss)",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Herbst",
+    "Winter"
+  ],
+  "weatherType": "kalt",
+  "isMealprep": false,
+  "isSuitableForLunch": false,
+  "source": "Familientisch voraus! (LittleFant)",
+  "basePortions": 4,
+  "description": "Selbstgemachte Kichererbsen-Spätzle mit cremiger Tofu-Cashew-Sauce – ganz ohne Käse, aber \"cheesy\".",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}

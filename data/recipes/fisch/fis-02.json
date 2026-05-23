@@ -1,0 +1,36 @@
+{
+  "id": "fis-02",
+  "name": "Lachs auf Zitronenbutter-Spinat",
+  "category": "Fisch",
+  "timeMinutes": 20,
+  "timeLabel": "schnell",
+  "ingredients": [
+    { "name": "Lachsfilets (mit Haut)", "amount": 4, "unit": "Stk", "perPortions": 4 },
+    { "name": "Babyspinat", "amount": 300, "unit": "g", "perPortions": 4 },
+    { "name": "Butter", "amount": 60, "unit": "g", "perPortions": 4 },
+    { "name": "Zitrone (Bio)", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Knoblauch", "amount": 2, "unit": "Zehen", "perPortions": 4 },
+    { "name": "Kapern", "amount": 2, "unit": "EL", "perPortions": 4 },
+    { "name": "Frischer Dill", "amount": 0.5, "unit": "Bund", "perPortions": 4 },
+    { "name": "Olivenöl", "amount": 2, "unit": "EL", "perPortions": 4 },
+    { "name": "Salz & weisser Pfeffer", "amount": 1, "unit": "Prise", "perPortions": 4 }
+  ],
+  "season": ["ganzjährig"],
+  "weatherType": "neutral",
+  "isMealprep": false,
+  "isSuitableForLunch": true,
+  "dietType": "pescetarisch",
+  "source": "cuiseline",
+  "basePortions": 4,
+  "description": "Knuspriger Lachs mit schaumiger Zitronenbutter und Babyspinat — elegant und in 20 Minuten fertig.",
+  "steps": [
+    "Lachsfilets trocken tupfen, salzen und pfeffern. Knoblauch in feine Scheiben schneiden.",
+    "Olivenöl in einer Pfanne bei hoher Hitze erhitzen. Lachs mit der Haut nach unten einlegen.",
+    "4–5 Minuten kross braten, wenden und weitere 2 Minuten garen. Herausnehmen, warm stellen.",
+    "Butter in die Pfanne, Knoblauch und Kapern kurz anbraten. Zitronensaft und -schale dazu.",
+    "Spinat in die Zitronenbutter geben, zusammenfallen lassen, salzen.",
+    "Spinat auf Tellern verteilen, Lachs darauflegen. Mit Dill und Zitronenspalten garnieren."
+  ],
+  "tips": "Den Lachs unbedingt zimmertemperiert einlegen — kalter Fisch aus dem Kühlschrank direkt in die Pfanne gibt kein gleichmässiges Garergebnis.",
+  "imageUrl": "https://www.instagram.com/cuiseline/"
+}

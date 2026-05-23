@@ -1,0 +1,64 @@
+{
+  "id": "asi-01",
+  "name": "Pad Thai",
+  "category": "Asiatisch",
+  "timeMinutes": 25,
+  "timeLabel": "mittel",
+  "ingredients": [
+    {
+      "name": "Reisnudeln",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Tofu (fest)",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Eier",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Erdnüsse",
+      "amount": 80,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Pad Thai Sauce",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Frühlingszwiebeln",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Limette",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    }
+  ],
+  "season": [
+    "Frühling",
+    "Sommer"
+  ],
+  "weatherType": "warm",
+  "isMealprep": false,
+  "isSuitableForLunch": true,
+  "source": "eigenes Rezept",
+  "basePortions": 4,
+  "description": "Klassisches Thai-Nudelgericht.",
+  "steps": [],
+  "tips": "",
+  "imageUrl": null
+}
