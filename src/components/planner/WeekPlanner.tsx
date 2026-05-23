@@ -81,19 +81,30 @@ export function WeekPlanner({ recipes, settings, constraints }: WeekPlannerProps
 
     const doc = new jsPDF({ orientation: 'landscape', format: 'a4', unit: 'mm' });
 
-    const showLunch     = settings.defaultView === 'lunchAndDinner'       || settings.defaultView === 'breakfastLunchDinner';
-    const showBreakfast = settings.defaultView === 'breakfastLunchDinner';
+    const showBreakfast = settings.showBreakfast ?? false;
+    const showLunch     = settings.showLunch     ?? false;
+    const showDinner    = settings.showDinner    ?? true;
 
     const DAY_SHORT = ['MO', 'DI', 'MI', 'DO', 'FR', 'SA', 'SO'];
 
     // ── Hilfsfunktion: Slot → Zelltext ──────────────────────────────────────
     const slotText = (slot: MealSlot | null | undefined): string => {
-      if (!slot)              return '';
-      if (slot.isLeftovers)   return 'Reste essen';
-      if (!slot.recipeId)     return '';
-      const r = recipes.find(x => x.id === slot.recipeId);
-      if (!r)                 return '';
-      return `${r.name}\n(${r.timeMinutes} min)`;
+      if (!slot) return '';
+      let main = '';
+      if (slot.isLeftovers) {
+        main = 'Reste essen';
+      } else if (slot.recipeId) {
+        const r = recipes.find(x => x.id === slot.recipeId);
+        if (r) main = `${r.name}\n(${r.timeMinutes} min)`;
+      }
+      let side = '';
+      if (slot.sideIsLeftovers) {
+        side = '+ Reste essen';
+      } else if (slot.sideRecipeId) {
+        const r = recipes.find(x => x.id === slot.sideRecipeId);
+        if (r) side = `+ ${r.name}`;
+      }
+      return [main, side].filter(Boolean).join('\n');
     };
 
     // ── Kopfzeile ────────────────────────────────────────────────────────────
@@ -133,10 +144,12 @@ export function WeekPlanner({ recipes, settings, constraints }: WeekPlannerProps
         ...weekDays.map((_, i) => slotText(weekPlan?.days?.[i + 1]?.lunch)),
       ]);
     }
-    body.push([
-      'Abendessen',
-      ...weekDays.map((_, i) => slotText(weekPlan?.days?.[i + 1]?.dinner)),
-    ]);
+    if (showDinner) {
+      body.push([
+        'Abendessen',
+        ...weekDays.map((_, i) => slotText(weekPlan?.days?.[i + 1]?.dinner)),
+      ]);
+    }
 
     // ── Tabelle ──────────────────────────────────────────────────────────────
     // A4 landscape usable width: 297 - 14*2 = 269mm

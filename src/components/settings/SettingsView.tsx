@@ -151,30 +151,30 @@ export function SettingsView({ initialSettings, initialConstraints, onSettingsCh
       {/* Mahlzeiten-Anzeige */}
       <section className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
         <h2 className="text-base font-semibold text-gray-900 mb-1">Mahlzeiten im Wochenplan</h2>
-        <p className="text-xs text-gray-400 mb-4">Welche Mahlzeiten sollen im Wochenplaner angezeigt werden?</p>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <p className="text-xs text-gray-400 mb-4">Klicke auf eine Mahlzeit, um sie im Wochenplaner ein- oder auszublenden.</p>
+        <div className="grid grid-cols-3 gap-3">
           {(
             [
-              { value: 'dinnerOnly',           emoji: '🍽',  label: 'Nur Abendessen',                    sub: 'Klassisch' },
-              { value: 'lunchAndDinner',        emoji: '🥗',  label: 'Mittag + Abendessen',               sub: 'Empfohlen' },
-              { value: 'breakfastLunchDinner',  emoji: '☕',  label: 'Frühstück + Mittag + Abend',        sub: 'Alles' },
-            ] as const
-          ).map(({ value, emoji, label, sub }) => {
-            const isActive = (settings.defaultView ?? 'dinnerOnly') === value;
+              { key: 'showBreakfast' as const, emoji: '☕', label: 'Frühstück',   def: false },
+              { key: 'showLunch'     as const, emoji: '🥗', label: 'Mittagessen', def: false },
+              { key: 'showDinner'    as const, emoji: '🍽', label: 'Abendessen',  def: true  },
+            ]
+          ).map(({ key, emoji, label, def }) => {
+            const isActive = settings[key] ?? def;
             return (
               <button
-                key={value}
-                onClick={() => setSettings((s) => ({ ...s, defaultView: value }))}
+                key={key}
+                onClick={() => setSettings((s) => ({ ...s, [key]: !isActive }))}
                 className={`flex items-center gap-3 p-4 rounded-2xl border-2 text-left transition-all ${
                   isActive
                     ? 'border-gray-900 bg-gray-50 shadow-sm'
-                    : 'border-gray-100 hover:border-gray-300'
+                    : 'border-gray-100 opacity-50 hover:opacity-75 hover:border-gray-300'
                 }`}
               >
                 <span className="text-2xl">{emoji}</span>
                 <div>
                   <p className="text-sm font-semibold text-gray-900 leading-tight">{label}</p>
-                  <p className="text-[11px] text-gray-400 mt-0.5">{sub}</p>
+                  <p className="text-[11px] text-gray-400 mt-0.5">{isActive ? 'Aktiv' : 'Ausgeblendet'}</p>
                 </div>
               </button>
             );

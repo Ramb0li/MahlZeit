@@ -49,6 +49,8 @@ export interface MealSlot {
   portionOverride?: number;
   isLeftovers?: boolean;
   notes?: string;
+  sideRecipeId?: string | null;    // Beilage / Dessert / zweites Gericht
+  sideIsLeftovers?: boolean;
 }
 
 export interface DayPlan {
@@ -89,7 +91,9 @@ export interface PromotionSettings {
 export interface AppSettings {
   household: HouseholdSettings;
   weather: WeatherSettings;
-  defaultView: 'dinnerOnly' | 'lunchAndDinner' | 'breakfastLunchDinner';
+  showBreakfast: boolean;   // Frühstück im Wochenplaner anzeigen
+  showLunch: boolean;       // Mittagessen im Wochenplaner anzeigen
+  showDinner: boolean;      // Abendessen im Wochenplaner anzeigen
   dietPreference?: DietType | 'alle';  // Globaler Diät-Filter für Picker & Vorschläge
   theme?: import('@/lib/themes').ThemeId;
   promotions: PromotionSettings;

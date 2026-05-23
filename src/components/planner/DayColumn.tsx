@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { format } from 'date-fns';
 import { de } from 'date-fns/locale';
-import { Plus, Sparkles, Trash2, UtensilsCrossed } from 'lucide-react';
+import { Plus, Sparkles, Trash2, UtensilsCrossed, X } from 'lucide-react';
 import { formatDate } from '@/lib/utils';
 import { getTheme } from '@/lib/themes';
 import { WeatherIcon } from '@/components/ui/WeatherIcon';
@@ -26,16 +26,18 @@ interface DayColumnProps {
 export function DayColumn({
   date, dayIndex, dayPlan, recipes, constraints, weather, settings, weekId, onUpdate,
 }: DayColumnProps) {
-  const [pickerOpen, setPickerOpen] = useState<'breakfast' | 'lunch' | 'dinner' | null>(null);
-  const [suggesting, setSuggesting] = useState<'lunch' | 'dinner' | null>(null);
+  const [pickerOpen, setPickerOpen]         = useState<'breakfast' | 'lunch' | 'dinner' | null>(null);
+  const [pickerOpenSide, setPickerOpenSide] = useState<'breakfast' | 'lunch' | 'dinner' | null>(null);
+  const [suggesting, setSuggesting]         = useState<'lunch' | 'dinner' | null>(null);
 
   const theme = getTheme(settings.theme);
   const dayColor = theme.dayCards[(dayIndex - 1) % 7];
   const isToday = formatDate(date) === formatDate(new Date());
 
   // Mahlzeiten-Sichtbarkeit aus globalem Setting
-  const showLunch     = settings.defaultView === 'lunchAndDinner' || settings.defaultView === 'breakfastLunchDinner';
-  const showBreakfast = settings.defaultView === 'breakfastLunchDinner';
+  const showBreakfast = settings.showBreakfast ?? false;
+  const showLunch     = settings.showLunch     ?? false;
+  const showDinner    = settings.showDinner    ?? true;
 
   const dayShort   = format(date, 'EEE', { locale: de });
   const dayNum     = format(date, 'd');
@@ -46,6 +48,11 @@ export function DayColumn({
     return recipes.find((r) => r.id === slot.recipeId) ?? null;
   };
 
+  const getSideRecipe = (slot: MealSlot | null | undefined) => {
+    if (!slot?.sideRecipeId) return null;
+    return recipes.find((r) => r.id === slot.sideRecipeId) ?? null;
+  };
+
   const dinnerSlot    = dayPlan?.dinner    ?? null;
   const lunchSlot     = dayPlan?.lunch     ?? null;
   const breakfastSlot = dayPlan?.breakfast ?? null;
@@ -53,6 +60,10 @@ export function DayColumn({
   const dinnerRecipe    = getRecipe(dinnerSlot);
   const lunchRecipe     = getRecipe(lunchSlot);
   const breakfastRecipe = getRecipe(breakfastSlot);
+
+  const dinnerSideRecipe    = getSideRecipe(dinnerSlot);
+  const lunchSideRecipe     = getSideRecipe(lunchSlot);
+  const breakfastSideRecipe = getSideRecipe(breakfastSlot);
 
   const handleSuggest = async (mealType: 'lunch' | 'dinner') => {
     setSuggesting(mealType);
@@ -69,6 +80,7 @@ export function DayColumn({
     }
   };
 
+  // Haupt-Gericht auswählen
   const handlePickerSelect = (mealType: 'breakfast' | 'lunch' | 'dinner', recipeId: string) => {
     if (recipeId === LEFTOVERS_ID) {
       onUpdate(dayIndex, mealType, { recipeId: null, isLeftovers: true });
@@ -76,6 +88,30 @@ export function DayColumn({
       onUpdate(dayIndex, mealType, { recipeId, isLeftovers: false });
     }
     setPickerOpen(null);
+  };
+
+  // Beilage / zweites Gericht auswählen
+  const handlePickerSelectSide = (mealType: 'breakfast' | 'lunch' | 'dinner', recipeId: string) => {
+    const current =
+      mealType === 'breakfast' ? (dayPlan?.breakfast ?? { recipeId: null }) :
+      mealType === 'lunch'     ? (dayPlan?.lunch     ?? { recipeId: null }) :
+      (dayPlan?.dinner ?? { recipeId: null });
+
+    const update = recipeId === LEFTOVERS_ID
+      ? { ...current, sideRecipeId: null,     sideIsLeftovers: true  }
+      : { ...current, sideRecipeId: recipeId, sideIsLeftovers: false };
+
+    onUpdate(dayIndex, mealType, update);
+    setPickerOpenSide(null);
+  };
+
+  // Beilage entfernen
+  const handleClearSide = (mealType: 'breakfast' | 'lunch' | 'dinner') => {
+    const current =
+      mealType === 'breakfast' ? (dayPlan?.breakfast ?? { recipeId: null }) :
+      mealType === 'lunch'     ? (dayPlan?.lunch     ?? { recipeId: null }) :
+      (dayPlan?.dinner ?? { recipeId: null });
+    onUpdate(dayIndex, mealType, { ...current, sideRecipeId: null, sideIsLeftovers: false });
   };
 
   return (
@@ -131,6 +167,8 @@ export function DayColumn({
             label="Frühstück"
             recipe={breakfastRecipe}
             isLeftovers={breakfastSlot?.isLeftovers}
+            sideRecipe={breakfastSideRecipe}
+            sideIsLeftovers={breakfastSlot?.sideIsLeftovers}
             mealType="breakfast"
             suggesting={false}
             theme={theme}
@@ -138,6 +176,8 @@ export function DayColumn({
             onPick={() => setPickerOpen('breakfast')}
             onSuggest={() => {}}
             onClear={() => onUpdate(dayIndex, 'breakfast', { recipeId: null, isLeftovers: false })}
+            onPickSide={() => setPickerOpenSide('breakfast')}
+            onClearSide={() => handleClearSide('breakfast')}
           />
         )}
 
@@ -146,6 +186,8 @@ export function DayColumn({
             label="Mittag"
             recipe={lunchRecipe}
             isLeftovers={lunchSlot?.isLeftovers}
+            sideRecipe={lunchSideRecipe}
+            sideIsLeftovers={lunchSlot?.sideIsLeftovers}
             mealType="lunch"
             suggesting={suggesting === 'lunch'}
             theme={theme}
@@ -153,23 +195,32 @@ export function DayColumn({
             onPick={() => setPickerOpen('lunch')}
             onSuggest={() => handleSuggest('lunch')}
             onClear={() => onUpdate(dayIndex, 'lunch', { recipeId: null, isLeftovers: false })}
+            onPickSide={() => setPickerOpenSide('lunch')}
+            onClearSide={() => handleClearSide('lunch')}
           />
         )}
 
-        <MealSlotCard
-          label="Abendessen"
-          recipe={dinnerRecipe}
-          isLeftovers={dinnerSlot?.isLeftovers}
-          mealType="dinner"
-          suggesting={suggesting === 'dinner'}
-          theme={theme}
-          dayColor={dayColor}
-          onPick={() => setPickerOpen('dinner')}
-          onSuggest={() => handleSuggest('dinner')}
-          onClear={() => onUpdate(dayIndex, 'dinner', { recipeId: null, isLeftovers: false })}
-        />
+        {showDinner && (
+          <MealSlotCard
+            label="Abendessen"
+            recipe={dinnerRecipe}
+            isLeftovers={dinnerSlot?.isLeftovers}
+            sideRecipe={dinnerSideRecipe}
+            sideIsLeftovers={dinnerSlot?.sideIsLeftovers}
+            mealType="dinner"
+            suggesting={suggesting === 'dinner'}
+            theme={theme}
+            dayColor={dayColor}
+            onPick={() => setPickerOpen('dinner')}
+            onSuggest={() => handleSuggest('dinner')}
+            onClear={() => onUpdate(dayIndex, 'dinner', { recipeId: null, isLeftovers: false })}
+            onPickSide={() => setPickerOpenSide('dinner')}
+            onClearSide={() => handleClearSide('dinner')}
+          />
+        )}
       </div>
 
+      {/* Picker für Haupt-Gericht */}
       {pickerOpen && (
         <RecipePickerModal
           recipes={recipes}
@@ -179,14 +230,29 @@ export function DayColumn({
           onClose={() => setPickerOpen(null)}
         />
       )}
+
+      {/* Picker für Beilage / zweites Gericht */}
+      {pickerOpenSide && (
+        <RecipePickerModal
+          recipes={recipes}
+          mealType={pickerOpenSide}
+          dietPreference={settings.dietPreference}
+          onSelect={(recipeId) => handlePickerSelectSide(pickerOpenSide, recipeId)}
+          onClose={() => setPickerOpenSide(null)}
+        />
+      )}
     </div>
   );
 }
+
+// ─── MealSlotCard ────────────────────────────────────────────────────────────
 
 interface MealSlotCardProps {
   label: string;
   recipe: Recipe | null;
   isLeftovers?: boolean;
+  sideRecipe?: Recipe | null;
+  sideIsLeftovers?: boolean;
   mealType: 'breakfast' | 'lunch' | 'dinner';
   suggesting: boolean;
   theme: AppTheme;
@@ -194,10 +260,19 @@ interface MealSlotCardProps {
   onPick: () => void;
   onSuggest: () => void;
   onClear: () => void;
+  onPickSide: () => void;
+  onClearSide: () => void;
 }
 
-function MealSlotCard({ label, recipe, isLeftovers, suggesting, theme, dayColor, onPick, onSuggest, onClear, mealType }: MealSlotCardProps) {
-  // Reste-essen Zustand
+function MealSlotCard({
+  label, recipe, isLeftovers, sideRecipe, sideIsLeftovers,
+  suggesting, theme, dayColor, onPick, onSuggest, onClear,
+  onPickSide, onClearSide, mealType,
+}: MealSlotCardProps) {
+  const hasSide = !!(sideRecipe || sideIsLeftovers);
+  const sideName = sideIsLeftovers ? 'Reste essen' : sideRecipe?.name ?? '';
+
+  // ── Reste essen ──────────────────────────────────────────────────────────
   if (isLeftovers && !recipe) {
     return (
       <div
@@ -211,6 +286,25 @@ function MealSlotCard({ label, recipe, isLeftovers, suggesting, theme, dayColor,
           <UtensilsCrossed size={14} className="text-amber-500 shrink-0" />
           <p className="text-xs font-semibold text-amber-800">Reste essen</p>
         </div>
+
+        {/* Beilage */}
+        {hasSide ? (
+          <div className="mt-2 pt-1.5 border-t border-amber-200 flex items-center gap-1">
+            <p className="text-[10px] text-amber-600 line-clamp-1 flex-1">+ {sideName}</p>
+            <button onClick={onClearSide} className="shrink-0 p-0.5 rounded hover:bg-red-50 text-amber-300 hover:text-red-400 transition-colors">
+              <X size={9} />
+            </button>
+          </div>
+        ) : (
+          <button
+            onClick={onPickSide}
+            className="absolute bottom-1.5 right-1.5 opacity-0 group-hover:opacity-100 w-5 h-5 flex items-center justify-center rounded-full bg-amber-200/60 hover:bg-amber-400 hover:text-white text-amber-500 transition-all"
+            title="Beilage / Dessert hinzufügen"
+          >
+            <Plus size={9} />
+          </button>
+        )}
+
         <button
           onClick={onClear}
           className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 p-1 rounded-lg hover:bg-red-50 text-red-400 transition-all"
@@ -221,7 +315,7 @@ function MealSlotCard({ label, recipe, isLeftovers, suggesting, theme, dayColor,
     );
   }
 
-  // Rezept ausgewählt
+  // ── Rezept ausgewählt ─────────────────────────────────────────────────────
   if (recipe) {
     return (
       <div
@@ -243,6 +337,27 @@ function MealSlotCard({ label, recipe, isLeftovers, suggesting, theme, dayColor,
             {recipe.timeMinutes} min
           </span>
         </div>
+
+        {/* Beilage */}
+        {hasSide ? (
+          <div className="mt-2 pt-1.5 border-t border-black/5 flex items-center gap-1">
+            <p className="text-[10px] line-clamp-1 flex-1" style={{ color: theme.mealLabelText, opacity: 0.8 }}>
+              + {sideName}
+            </p>
+            <button onClick={onClearSide} className="shrink-0 p-0.5 rounded hover:bg-red-50 text-gray-300 hover:text-red-400 transition-colors">
+              <X size={9} />
+            </button>
+          </div>
+        ) : (
+          <button
+            onClick={onPickSide}
+            className="absolute bottom-1.5 right-1.5 opacity-0 group-hover:opacity-100 w-5 h-5 flex items-center justify-center rounded-full bg-black/5 hover:bg-brand-green hover:text-white text-gray-400 transition-all"
+            title="Beilage / Dessert hinzufügen"
+          >
+            <Plus size={9} />
+          </button>
+        )}
+
         <button
           onClick={onClear}
           className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 p-1 rounded-lg hover:bg-red-50 text-red-400 transition-all"
@@ -253,7 +368,7 @@ function MealSlotCard({ label, recipe, isLeftovers, suggesting, theme, dayColor,
     );
   }
 
-  // Leer — Auswahl anbieten
+  // ── Leer — Auswahl anbieten ───────────────────────────────────────────────
   return (
     <div
       className="rounded-xl min-h-[80px] flex flex-col"

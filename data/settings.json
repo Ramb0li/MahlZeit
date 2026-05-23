@@ -14,11 +14,14 @@
     "location": "Luzern",
     "locationId": "2659811"
   },
-  "defaultView": "dinnerOnly",
+  "showBreakfast": true,
+  "showLunch": true,
+  "showDinner": true,
   "theme": "green",
   "promotions": {
     "manualMigros": [],
     "manualCoop": [],
     "manualLidl": []
-  }
+  },
+  "dietPreference": "vegetarisch"
 }
