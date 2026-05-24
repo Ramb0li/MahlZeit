@@ -113,7 +113,24 @@ export default function LandingPage() {
         {/* Fixed nav */}
         <nav className="lp-full-hero-nav">
           <Link href="/" className="lp-nav-logo">Mahl<em>Zeit</em></Link>
-          <Link href="/auth" className="lp-nav-login">Anmelden</Link>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+            {/* ⚠️ DEV-ONLY: Direktzugang zum Planner ohne Login — vor Go-Live entfernen */}
+            <Link
+              href="/planner"
+              title="Testmodus: Planner ohne Login"
+              style={{
+                width: 34, height: 34, borderRadius: '50%',
+                backgroundColor: 'rgba(181,97,74,0.15)',
+                border: '1.5px solid rgba(181,97,74,0.4)',
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                fontSize: 16, textDecoration: 'none',
+              }}
+            >
+              🔧
+            </Link>
+            {/* /DEV-ONLY */}
+            <Link href="/auth" className="lp-nav-login">Anmelden</Link>
+          </div>
         </nav>
 
         {/* Stage */}
