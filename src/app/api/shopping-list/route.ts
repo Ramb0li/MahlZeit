@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 import { NextResponse } from 'next/server';
 import { getWeekPlan, getRecipes, getSettings, getPromotions } from '@/lib/data';
 import { calculatePortions, scaleIngredientAmount, categorizeIngredient } from '@/lib/utils';

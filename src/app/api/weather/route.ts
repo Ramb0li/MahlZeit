@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 import { NextResponse } from 'next/server';
 import { getWeatherCache, saveWeatherCache, getSettings } from '@/lib/data';
 import { getWeatherTypeFromTemp } from '@/lib/utils';

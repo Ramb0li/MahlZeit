@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 import { NextResponse } from 'next/server';
 import { getPromotions, savePromotions, getSettings, saveSettings } from '@/lib/data';
 import type { PromotionsCache, Promotion } from '@/types';
