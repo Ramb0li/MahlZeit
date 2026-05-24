@@ -338,9 +338,10 @@ interface RecipeCardProps {
 
 function RecipeCard({ recipe, categoryColors, onEdit, onArchive }: RecipeCardProps) {
   const catColor = categoryColors[recipe.category] ?? { bg: '#efe9df', color: '#5a4e48' };
+  const hasImage = !!recipe.imageUrl;
   return (
     <div
-      className="group rounded-2xl p-4 transition-all cursor-default"
+      className="group rounded-2xl p-4 transition-all cursor-default relative overflow-hidden"
       style={{
         backgroundColor: '#fff9f3',
         border: '1px solid #e0d8ce',
@@ -357,6 +358,20 @@ function RecipeCard({ recipe, categoryColors, onEdit, onArchive }: RecipeCardPro
         (e.currentTarget as HTMLElement).style.transform = 'translateY(0)';
       }}
     >
+      {/* Background food photo — subtle, text stays readable */}
+      {hasImage && (
+        <div
+          className="absolute inset-0 rounded-2xl"
+          style={{
+            backgroundImage: `url(${recipe.imageUrl})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            opacity: 0.13,
+            pointerEvents: 'none',
+          }}
+        />
+      )}
+      <div className="relative">
       <div className="flex items-start justify-between gap-2 mb-2">
         <h3 className="font-semibold text-sm leading-snug" style={{ color: '#2c2420' }}>{recipe.name}</h3>
         <div className="flex gap-1 opacity-0 group-hover:opacity-100 transition-opacity shrink-0">
@@ -425,6 +440,7 @@ function RecipeCard({ recipe, categoryColors, onEdit, onArchive }: RecipeCardPro
           {recipe.ingredients.length} Zutaten · {recipe.basePortions} Portionen
         </p>
       </div>
+      </div>{/* /relative */}
     </div>
   );
 }

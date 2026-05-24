@@ -1,6 +1,6 @@
 'use client';
-import { useState } from 'react';
-import { Plus, Trash2 } from 'lucide-react';
+import { useState, useRef } from 'react';
+import { Plus, Trash2, ImagePlus, X } from 'lucide-react';
 import type { Recipe, Category, Season, WeatherType, TimeLabel, Ingredient, DietType } from '@/types';
 
 const CATEGORIES: Category[] = [
@@ -44,6 +44,13 @@ export function RecipeForm({ recipe, onSave, onCancel }: RecipeFormProps) {
   const [source, setSource]                   = useState(recipe?.source ?? 'eigenes Rezept');
   const [basePortions, setBasePortions]       = useState(recipe?.basePortions ?? 4);
   const [description, setDescription]         = useState(recipe?.description ?? '');
+  const [imageUrl, setImageUrl]               = useState(recipe?.imageUrl ?? '');
+  const [imageZutaten, setImageZutaten]       = useState(recipe?.imageZutaten ?? '');
+  const [imageKochen, setImageKochen]         = useState(recipe?.imageKochen ?? '');
+  const imgFertigRef  = useRef<HTMLInputElement | null>(null);
+  const imgZutatenRef = useRef<HTMLInputElement | null>(null);
+  const imgKochenRef  = useRef<HTMLInputElement | null>(null);
+
   const [ingredients, setIngredients]         = useState<Ingredient[]>(
     recipe?.ingredients ?? [{ name: '', amount: 1, unit: 'Stk', perPortions: 4 }]
   );
@@ -70,6 +77,18 @@ export function RecipeForm({ recipe, onSave, onCancel }: RecipeFormProps) {
   const removeIngredient = (i: number) =>
     setIngredients((prev) => prev.filter((_, idx) => idx !== i));
 
+  // Convert local file to base64 data URL
+  const handleFileChange = (
+    e: React.ChangeEvent<HTMLInputElement>,
+    setter: (v: string) => void,
+  ) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = () => setter(reader.result as string);
+    reader.readAsDataURL(file);
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const r: Recipe = {
@@ -78,6 +97,9 @@ export function RecipeForm({ recipe, onSave, onCancel }: RecipeFormProps) {
       ingredients: ingredients.filter((ing) => ing.name.trim()),
       season: seasons.length ? seasons : ['ganzjährig'],
       weatherType, isMealprep, isSuitableForLunch, source, basePortions, description, dietType,
+      imageUrl:     imageUrl     || null,
+      imageZutaten: imageZutaten || null,
+      imageKochen:  imageKochen  || null,
     };
     onSave(r);
   };
@@ -248,6 +270,65 @@ export function RecipeForm({ recipe, onSave, onCancel }: RecipeFormProps) {
             />
             <span className="text-sm" style={{ color: '#5a4e48' }}>Für Mittagessen geeignet</span>
           </label>
+        </div>
+      </div>
+
+      {/* Bilder */}
+      <div>
+        <label style={labelStyle}>Bilder (bis zu 3)</label>
+        <div className="grid grid-cols-3 gap-3">
+          {(
+            [
+              { label: 'Fertiges Menü',  value: imageUrl,      setter: setImageUrl,      ref: imgFertigRef  },
+              { label: 'Zutaten',        value: imageZutaten,  setter: setImageZutaten,  ref: imgZutatenRef },
+              { label: 'Kochen',         value: imageKochen,   setter: setImageKochen,   ref: imgKochenRef  },
+            ] as { label: string; value: string; setter: (v: string) => void; ref: React.MutableRefObject<HTMLInputElement | null> }[]
+          ).map(({ label, value, setter, ref }) => (
+            <div key={label} className="flex flex-col gap-1.5">
+              <span style={{ fontSize: 12, color: '#9c8c84', fontWeight: 500 }}>{label}</span>
+              {/* Preview or upload button */}
+              <div
+                className="relative rounded-xl overflow-hidden flex items-center justify-center cursor-pointer transition-all"
+                style={{
+                  height: 80,
+                  border: '1.5px dashed #e0d8ce',
+                  backgroundColor: '#f7f4ee',
+                  backgroundImage: value ? `url(${value})` : undefined,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                }}
+                onClick={() => ref.current?.click()}
+              >
+                {value ? (
+                  <button
+                    type="button"
+                    className="absolute top-1 right-1 rounded-full p-0.5 transition-opacity hover:opacity-80"
+                    style={{ backgroundColor: 'rgba(44,36,32,0.6)', color: '#fff' }}
+                    onClick={(e) => { e.stopPropagation(); setter(''); if (ref.current) ref.current.value = ''; }}
+                  >
+                    <X size={12} />
+                  </button>
+                ) : (
+                  <ImagePlus size={22} style={{ color: '#c49a6c', opacity: 0.7 }} />
+                )}
+              </div>
+              <input
+                ref={ref}
+                type="file"
+                accept="image/*"
+                className="hidden"
+                onChange={(e) => handleFileChange(e, setter)}
+              />
+              {/* Optional: paste URL directly */}
+              <input
+                type="text"
+                placeholder="oder URL einfügen"
+                value={value.startsWith('data:') ? '' : value}
+                onChange={(e) => setter(e.target.value)}
+                style={{ ...inputStyle, fontSize: 11, padding: '4px 8px' }}
+              />
+            </div>
+          ))}
         </div>
       </div>
 

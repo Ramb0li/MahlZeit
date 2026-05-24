@@ -3,11 +3,11 @@ import Link from 'next/link';
 /* ─── Static data ──────────────────────────────────────────────────── */
 
 const PHOTO_CELLS = [
-  { cls: 'lp-food-hero-1',                          emoji: '🍝' },
-  { cls: 'lp-food-hero-3 lp-photo-cell-center',     emoji: '🥗' },
-  { cls: 'lp-food-hero-2',                           emoji: '🍛' },
-  { cls: 'lp-food-hero-2',                           emoji: '🥣' },
-  { cls: 'lp-food-hero-1',                           emoji: '🍲' },
+  { cls: 'lp-food-hero-1',                     image: '/images/recipes/cuiselin-taboule.jpeg',              alt: 'Taboulé'              },
+  { cls: 'lp-food-hero-3 lp-photo-cell-center', image: '/images/recipes/cuiselin-pesto-genovese.jpg',       alt: 'Pesto Genovese'       },
+  { cls: 'lp-food-hero-2',                     image: '/images/recipes/cuiselin-gurken-ananas-salat.jpeg',  alt: 'Gurken-Ananas-Salat'  },
+  { cls: 'lp-food-hero-2',                     image: '/images/recipes/cuiselin-granola.jpg',                alt: 'Granola'               },
+  { cls: 'lp-food-hero-1',                     image: '/images/recipes/cuiselin-gruener-linsensalat.jpg',   alt: 'Grüner Linsensalat'   },
 ];
 
 const MOCK_SHOPPING = [
@@ -121,12 +121,17 @@ export default function LandingPage() {
 
           {/* Food-photo collage */}
           <div className="lp-photo-grid">
-            {PHOTO_CELLS.map(({ cls, emoji }, i) => (
-              <div key={i} className={`lp-photo-cell ${cls}`}>
-                <span style={{ filter: 'drop-shadow(0 8px 24px rgba(44,36,32,0.22))' }}>
-                  {emoji}
-                </span>
-              </div>
+            {PHOTO_CELLS.map(({ cls, image, alt }, i) => (
+              <div
+                key={i}
+                className={`lp-photo-cell ${cls}`}
+                style={{
+                  backgroundImage: `url(${image})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                }}
+                aria-label={alt}
+              />
             ))}
           </div>
 
@@ -210,12 +215,18 @@ export default function LandingPage() {
 
       {/* Full-bleed banner */}
       <div className="lp-full-img">
-        <div className="lp-full-img-inner lp-food-hero-1">
-          <div className="lp-food-emoji-hero">🍝</div>
+        <div
+          className="lp-full-img-inner"
+          style={{
+            backgroundImage: 'url(/images/recipes/cuiselin-taboule.jpeg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        >
           <div className="lp-food-img-overlay">
             <div>
-              <div className="lp-food-img-title">Pasta al Limone</div>
-              <div className="lp-food-img-meta">25 min · Vegan · 480 kcal</div>
+              <div className="lp-food-img-title">Taboulé</div>
+              <div className="lp-food-img-meta">20 min · Vegan · Frischer Levante-Salat</div>
             </div>
             <div className="lp-food-img-tag">Heute Abend</div>
           </div>
@@ -309,9 +320,14 @@ export default function LandingPage() {
 
         {/* Two-col: recipes */}
         <div className="lp-two-col">
-          <div className="lp-two-col-img lp-food-hero-3">
-            <div style={{ fontSize: 80, filter: 'drop-shadow(0 8px 24px rgba(44,36,32,0.18))' }}>📖</div>
-          </div>
+          <div
+            className="lp-two-col-img"
+            style={{
+              backgroundImage: 'url(/images/recipes/cuiselin-pesto-genovese.jpg)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          />
           <div className="lp-two-col-text">
             <h3>Rezepte,<br />die <em>passen.</em></h3>
             <p>Nicht irgendwelche Rezepte — sondern solche, die zu deinen Vorlieben, der Zeit und der Saison passen.</p>

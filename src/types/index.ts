@@ -38,9 +38,11 @@ export interface Recipe {
   // Für spätere Detailansicht
   steps?: string[];        // Nummerierte Zubereitungsschritte
   tips?: string;           // Tipps & Varianten
-  imageUrl?: string | null; // Rezeptbild-URL (lokal oder extern)
-  archived?: boolean;       // Archiviert – nicht vorschlagen, nicht im Picker zeigen
-  dietType?: DietType;      // Ernährungsweise
+  imageUrl?: string | null;      // Hauptbild (Fertiges Menü) – lokal oder extern
+  imageZutaten?: string | null;  // Zutaten-Bild
+  imageKochen?: string | null;   // Kochprozess-Bild
+  archived?: boolean;            // Archiviert – nicht vorschlagen, nicht im Picker zeigen
+  dietType?: DietType;           // Ernährungsweise
 }
 
 export interface MealSlot {

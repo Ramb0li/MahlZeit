@@ -48,5 +48,6 @@
   "description": "Schnell, lecker, mit frischem Basilikum-Pesto.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": "/images/recipes/cuiselin-pesto-genovese.jpg",
+  "imageZutaten": "/images/recipes/cuiselin-pesto-genovese-zutaten.jpg"
 }
