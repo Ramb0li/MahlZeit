@@ -1,15 +1,7 @@
 {
-  "lastUpdated": "2026-05-22T22:59:38.119Z",
+  "lastUpdated": "2026-05-24T17:35:47.132Z",
   "location": "Luzern",
   "days": [
-    {
-      "date": "2026-05-23",
-      "tempMin": 11,
-      "tempMax": 27,
-      "condition": "sunny",
-      "conditionLabel": "Sonnig",
-      "weatherType": "neutral"
-    },
     {
       "date": "2026-05-24",
       "tempMin": 13,
@@ -20,7 +12,7 @@
     },
     {
       "date": "2026-05-25",
-      "tempMin": 15,
+      "tempMin": 13,
       "tempMax": 30,
       "condition": "cloudy",
       "conditionLabel": "Bewölkt",
@@ -28,34 +20,42 @@
     },
     {
       "date": "2026-05-26",
-      "tempMin": 16,
+      "tempMin": 13,
       "tempMax": 31,
-      "condition": "sunny",
-      "conditionLabel": "Sonnig",
+      "condition": "cloudy",
+      "conditionLabel": "Bewölkt",
       "weatherType": "warm"
     },
     {
       "date": "2026-05-27",
       "tempMin": 19,
-      "tempMax": 30,
-      "condition": "partly-cloudy",
-      "conditionLabel": "Teils bewölkt",
+      "tempMax": 31,
+      "condition": "cloudy",
+      "conditionLabel": "Bewölkt",
       "weatherType": "warm"
     },
     {
       "date": "2026-05-28",
-      "tempMin": 17,
+      "tempMin": 16,
       "tempMax": 28,
+      "condition": "sunny",
+      "conditionLabel": "Sonnig",
+      "weatherType": "warm"
+    },
+    {
+      "date": "2026-05-29",
+      "tempMin": 14,
+      "tempMax": 30,
       "condition": "cloudy",
       "conditionLabel": "Bewölkt",
       "weatherType": "warm"
     },
     {
-      "date": "2026-05-29",
+      "date": "2026-05-30",
       "tempMin": 19,
-      "tempMax": 29,
-      "condition": "cloudy",
-      "conditionLabel": "Bewölkt",
+      "tempMax": 31,
+      "condition": "rainy",
+      "conditionLabel": "Regenschauer",
       "weatherType": "warm"
     }
   ]

@@ -54,7 +54,7 @@ const PLANS = [
     ],
     btn: 'Jetzt gratis testen →',
     btnStyle: 'ghost',
-    href: '/planner',
+    href: '/auth?plan=trial',
   },
   {
     badge: 'Beliebteste Wahl',
@@ -74,7 +74,7 @@ const PLANS = [
     ],
     btn: 'Jetzt kaufen →',
     btnStyle: 'secondary',
-    href: '/login',
+    href: '/auth?plan=lifetime',
     featured: true,
   },
   {
@@ -95,7 +95,7 @@ const PLANS = [
     ],
     btn: 'Abo starten →',
     btnStyle: 'primary',
-    href: '/login',
+    href: '/auth?plan=abo',
   },
 ];
 
@@ -113,7 +113,7 @@ export default function LandingPage() {
         {/* Fixed nav */}
         <nav className="lp-full-hero-nav">
           <Link href="/" className="lp-nav-logo">Mahl<em>Zeit</em></Link>
-          <Link href="/login" className="lp-nav-login">Anmelden</Link>
+          <Link href="/auth" className="lp-nav-login">Anmelden</Link>
         </nav>
 
         {/* Stage */}

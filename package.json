@@ -10,15 +10,19 @@
     "recipes:build": "node scripts/build-recipes.js"
   },
   "dependencies": {
+    "@types/bcryptjs": "^2.4.6",
     "@upstash/redis": "^1.38.0",
+    "bcryptjs": "^3.0.3",
     "clsx": "^2.1.1",
     "date-fns": "^3.6.0",
+    "jose": "^6.2.3",
     "jspdf": "^2.5.1",
     "jspdf-autotable": "^3.8.2",
     "lucide-react": "^0.400.0",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
+    "stripe": "^22.1.1",
     "tailwind-merge": "^2.4.0"
   },
   "devDependencies": {

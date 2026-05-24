@@ -42,9 +42,7 @@
     "description": "Klassisches Rührei, schnell und einfach.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "archived": false,
-    "dietType": "vegetarisch"
+    "imageUrl": null
   },
   {
     "id": "ei-02",
@@ -114,8 +112,7 @@
     "description": "Herzhafter Klassiker für kalte Abende.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegetarisch"
+    "imageUrl": null
   },
   {
     "id": "ei-03",
@@ -172,8 +169,7 @@
     "description": "Schweizer Rösti trifft auf Avocado.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegetarisch"
+    "imageUrl": null
   },
   {
     "id": "ei-04",
@@ -230,8 +226,7 @@
     "description": "Schnelle Omelette mit buntem Gemüse.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegetarisch"
+    "imageUrl": null
   },
   {
     "id": "ei-05",
@@ -289,8 +284,7 @@
     "description": "Cremige Pilzsauce über fluffiger Omelette.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegetarisch"
+    "imageUrl": null
   },
   {
     "id": "ei-06",
@@ -348,8 +342,7 @@
     "description": "Deftige Senfsauce mit Eiern und feinem Blumenkohlpüree.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegetarisch"
+    "imageUrl": null
   },
   {
     "id": "ei-07",
@@ -407,8 +400,102 @@
     "description": "Cremige Polenta mit Gemüse und Eiern.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegetarisch"
+    "imageUrl": null
+  },
+  {
+    "id": "ei-08",
+    "name": "Shakshuka mit Feta",
+    "category": "Eier",
+    "timeMinutes": 25,
+    "timeLabel": "schnell",
+    "ingredients": [
+      {
+        "name": "Eier",
+        "amount": 8,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Passierte Tomaten",
+        "amount": 700,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Rote Peperoni",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 3,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Feta",
+        "amount": 150,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kreuzkümmel",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Paprikapulver (geräuchert)",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Chiliflocken",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Frischer Koriander oder Petersilie",
+        "amount": 1,
+        "unit": "Bund",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "neutral",
+    "isMealprep": false,
+    "isSuitableForLunch": true,
+    "dietType": "vegetarisch",
+    "source": "cuiseline",
+    "basePortions": 4,
+    "description": "Pochierte Eier in würziger Tomatensauce — das klassische nordafrikanische Gericht, das zum Frühstück, Mittag- oder Abendessen passt.",
+    "steps": [
+      "Zwiebel und Peperoni würfeln, Knoblauch hacken. In einer grossen Pfanne (mit Deckel) Olivenöl erhitzen.",
+      "Zwiebeln 3 Minuten dünsten, dann Peperoni und Gewürze (Kreuzkümmel, Paprika, Chili) 2 Minuten mitrösten.",
+      "Knoblauch hinzufügen, kurz anbraten. Passierte Tomaten dazugiessen, mit Salz abschmecken und 10 Minuten köcheln.",
+      "Feta in grobe Stücke bröckeln, die Hälfte in die Sauce geben.",
+      "Mit einem Löffel Mulden in die Sauce drücken, Eier hineingleiten lassen. Deckel drauf, 6–8 Minuten garen bis Eiweiss gestockt, Dotter noch weich.",
+      "Mit restlichem Feta und frischen Kräutern garnieren. Mit Brot servieren."
+    ],
+    "tips": "Dazu passt frisches Fladenbrot oder Sauerteigbrot. Für eine vegane Variante die Eier weglassen und mehr Gemüse hinzufügen.",
+    "imageUrl": "https://www.instagram.com/cuiseline/"
   },
   {
     "id": "fvt-03",
@@ -497,8 +584,7 @@
     "description": "Vollwertige Variante mit Berglinsen – extra Balsamico für Tiefe. Sauce gut einfrierbar.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegan"
+    "imageUrl": null
   },
   {
     "id": "fvt-04",
@@ -581,8 +667,7 @@
     "description": "Cremige vegane Cashew-Sauce mit Blumenkohl und weissen Bohnen – geröstete Röschen als Topping.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegan"
+    "imageUrl": null
   },
   {
     "id": "fvt-06",
@@ -645,8 +730,7 @@
     "description": "Selbstgemachte Gnocchi mit Brokkoli und Kichererbsenmehl – nährstoffreicher als klassische Variante.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegan"
+    "imageUrl": null
   },
   {
     "id": "fvt-09",
@@ -746,8 +830,7 @@
     "description": "Selbstgemachte Kichererbsen-Spätzle mit cremiger Tofu-Cashew-Sauce – ganz ohne Käse, aber \"cheesy\".",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegan"
+    "imageUrl": null
   },
   {
     "id": "fvt-12",
@@ -817,8 +900,7 @@
     "description": "Schnelles veganes Pesto aus Basilikum, weissen Bohnen und Cashews – nährstoffreicher als klassisches Pesto.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegan"
+    "imageUrl": null
   },
   {
     "id": "pas-01",
@@ -888,8 +970,7 @@
     "description": "Vegane Bolognese aus Linsen und Gemüse.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegan"
+    "imageUrl": null
   },
   {
     "id": "pas-02",
@@ -947,8 +1028,7 @@
     "description": "Klassische Lasagne vegetarisch.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegetarisch"
+    "imageUrl": null
   },
   {
     "id": "pas-03",
@@ -1006,8 +1086,7 @@
     "description": "Cremige Spinat-Ricotta Lasagne.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegetarisch"
+    "imageUrl": null
   },
   {
     "id": "pas-04",
@@ -1059,8 +1138,8 @@
     "description": "Schnell, lecker, mit frischem Basilikum-Pesto.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegetarisch"
+    "imageUrl": "/images/recipes/cuiselin-pesto-genovese.jpg",
+    "imageZutaten": "/images/recipes/cuiselin-pesto-genovese-zutaten.jpg"
   },
   {
     "id": "pas-05",
@@ -1111,8 +1190,7 @@
     "description": "Klassische Tomatensauce – simpel und gut.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegan"
+    "imageUrl": null
   },
   {
     "id": "pas-06",
@@ -1170,8 +1248,7 @@
     "description": "Cremige Pilzrahmsauce mit Pasta.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegetarisch"
+    "imageUrl": null
   },
   {
     "id": "pas-07",
@@ -1229,8 +1306,7 @@
     "description": "Schweizer Klassiker vom Berg.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegetarisch"
+    "imageUrl": null
   },
   {
     "id": "pas-08",
@@ -1281,8 +1357,7 @@
     "description": "Einfacher Nudelauflauf mit Tomatensauce.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegetarisch"
+    "imageUrl": null
   },
   {
     "id": "pas-09",
@@ -1341,8 +1416,7 @@
     "description": "Herzhafter Nudelauflauf mit Gemüse.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegetarisch"
+    "imageUrl": null
   },
   {
     "id": "pas-10",
@@ -1400,8 +1474,7 @@
     "description": "Herbstliche Pasta mit cremiger Kürbissauce.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegetarisch"
+    "imageUrl": null
   },
   {
     "id": "pas-11",
@@ -1453,8 +1526,7 @@
     "description": "Schweizer Spätzli aus dem Ofen.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegetarisch"
+    "imageUrl": null
   },
   {
     "id": "pas-12",
@@ -1505,8 +1577,85 @@
     "description": "Herbstliche Spätzli-Variante.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegetarisch"
+    "imageUrl": null
+  },
+  {
+    "id": "pas-13",
+    "name": "Pasta al Limone",
+    "category": "Pasta",
+    "timeMinutes": 25,
+    "timeLabel": "schnell",
+    "ingredients": [
+      {
+        "name": "Spaghetti oder Linguine",
+        "amount": 320,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitronen (Bio)",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl (extra vergine)",
+        "amount": 6,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Pasta-Kochwasser",
+        "amount": 120,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Frische Petersilie",
+        "amount": 1,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz & schwarzer Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Chiliflocken (optional)",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "Frühling",
+      "Sommer",
+      "ganzjährig"
+    ],
+    "weatherType": "warm",
+    "isMealprep": false,
+    "isSuitableForLunch": true,
+    "dietType": "vegan",
+    "source": "cuiseline",
+    "basePortions": 4,
+    "description": "Cremige Zitronenpasta ohne Sahne — das Geheimnis liegt im stärkehaltigen Kochwasser und guter Emulsion.",
+    "steps": [
+      "Pasta nach Packungsanweisung in gut gesalzenem Wasser kochen. Kurz vor dem Abgiessen 120 ml Kochwasser abschöpfen.",
+      "Knoblauch fein hacken. In einer grossen Pfanne das Olivenöl bei mittlerer Hitze erwärmen, Knoblauch 1 Minute dünsten (nicht bräunen).",
+      "Zitronenschale abreiben, Saft auspressen. Beides in die Pfanne geben.",
+      "Abgetropfte Pasta direkt in die Pfanne geben. Kochwasser schlückchenweise zugeben und kräftig schwenken, bis eine cremige Emulsion entsteht.",
+      "Mit Salz, Pfeffer und Chiliflocken abschmecken. Petersilie grob hacken und unterheben. Sofort servieren."
+    ],
+    "tips": "Für eine cremigere Version 2 EL vegane Butter zum Schluss unterrühren. Parmesan oder Hefeflocken machen das Gericht noch aromatischer.",
+    "imageUrl": "https://www.instagram.com/cuiseline/"
   },
   {
     "id": "fvt-10",
@@ -1613,8 +1762,7 @@
     "description": "Wärmendes Linsen-Daal mit Spinat und Kokosmilch – aromatisch und für die ganze Familie.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegan"
+    "imageUrl": null
   },
   {
     "id": "rei-01",
@@ -1679,8 +1827,7 @@
     "description": "Cremiges Lauchrisotto – Komfort food pur.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegetarisch"
+    "imageUrl": null
   },
   {
     "id": "rei-02",
@@ -1737,8 +1884,7 @@
     "description": "Risotto mit karamellisiertem Ofengemüse.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegetarisch"
+    "imageUrl": null
   },
   {
     "id": "rei-03",
@@ -1807,8 +1953,7 @@
     "description": "Würziges Curry – perfekt für Mealprep.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegan"
+    "imageUrl": null
   },
   {
     "id": "rei-04",
@@ -1866,8 +2011,7 @@
     "description": "Leichte Bowl für warme Tage.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegan"
+    "imageUrl": null
   },
   {
     "id": "rei-05",
@@ -1931,8 +2075,7 @@
     "description": "Bunter Reissalat mit mexikanischen Aromen.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegan"
+    "imageUrl": null
   },
   {
     "id": "rei-06",
@@ -1989,8 +2132,110 @@
     "description": "Einfaches, sättigendes Linsen-Reis-Gericht.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegan"
+    "imageUrl": null
+  },
+  {
+    "id": "rei-07",
+    "name": "Gemüse-Curry mit Kokosmilch und Basmatireis",
+    "category": "Reis",
+    "timeMinutes": 30,
+    "timeLabel": "schnell",
+    "ingredients": [
+      {
+        "name": "Basmatireis",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Kokosmilch",
+        "amount": 400,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Blumenkohl",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Süsskartoffel",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Kichererbsen (Dose)",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 200,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Currypaste (rot oder grün)",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Frischer Ingwer",
+        "amount": 20,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 3,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Limette",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Kokosnussöl oder Olivenöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Babyspinat",
+        "amount": 60,
+        "unit": "g",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "Herbst",
+      "Winter",
+      "ganzjährig"
+    ],
+    "weatherType": "kalt",
+    "isMealprep": true,
+    "isSuitableForLunch": true,
+    "dietType": "vegan",
+    "source": "cuiseline",
+    "basePortions": 4,
+    "description": "Reichhaltiges Gemüse-Curry, das wärmt und sättigt — perfekt fürs Meal-Prep und in 30 Minuten fertig.",
+    "steps": [
+      "Basmatireis waschen und nach Packungsanweisung garen.",
+      "Süsskartoffel und Blumenkohl in Würfel schneiden. Ingwer und Knoblauch fein reiben.",
+      "Öl in einer grossen Pfanne erhitzen. Currypaste, Ingwer und Knoblauch 1 Minute anbraten.",
+      "Gemüse hinzufügen, kurz mitrösten. Kokosmilch und Brühe angiessen, Kichererbsen dazu.",
+      "15–20 Minuten köcheln, bis das Gemüse gar ist. Spinat unterrühren, Limettensaft abschmecken.",
+      "Mit Basmatireis servieren."
+    ],
+    "tips": "Mit Koriander und einer Scheibe Limette garnieren. Am nächsten Tag schmeckt das Curry noch besser — ideal für Meal-Prep.",
+    "imageUrl": "https://www.instagram.com/cuiseline/"
   },
   {
     "id": "ein-01",
@@ -2066,8 +2311,7 @@
     "description": "Veganes Chili – würzig und sättigend.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegetarisch"
+    "imageUrl": null
   },
   {
     "id": "ein-02",
@@ -2124,8 +2368,7 @@
     "description": "Risotto-Variante mit Urdinkelkernen.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegetarisch"
+    "imageUrl": null
   },
   {
     "id": "ein-03",
@@ -2182,8 +2425,7 @@
     "description": "Herzhaftes Kernotto mit mediterranen Aromen.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegetarisch"
+    "imageUrl": null
   },
   {
     "id": "ein-04",
@@ -2235,8 +2477,7 @@
     "description": "Deftige Kombination mit Räuchertofu.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegan"
+    "imageUrl": null
   },
   {
     "id": "ein-05",
@@ -2294,8 +2535,115 @@
     "description": "Wärmender Auflauf mit Sauerkraut.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegetarisch"
+    "imageUrl": null
+  },
+  {
+    "id": "ein-06",
+    "name": "Marokkanische Tajine mit Kichererbsen und Aprikosen",
+    "category": "Eintopf/Gratin",
+    "timeMinutes": 45,
+    "timeLabel": "mittel",
+    "ingredients": [
+      {
+        "name": "Kichererbsen (Dose)",
+        "amount": 800,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Getrocknete Aprikosen",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Karotten",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebeln",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomaten (aus der Dose)",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 400,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Ras el Hanout",
+        "amount": 2,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Zimt",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Ingwer (frisch oder Pulver)",
+        "amount": 15,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Honig oder Agavensirup",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Frischer Koriander",
+        "amount": 1,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Couscous",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "Herbst",
+      "Winter"
+    ],
+    "weatherType": "kalt",
+    "isMealprep": true,
+    "isSuitableForLunch": true,
+    "dietType": "vegan",
+    "source": "cuiseline",
+    "basePortions": 4,
+    "description": "Aromatischer Eintopf mit nordafrikanischen Gewürzen — süss, würzig und unglaublich wärmend an kalten Tagen.",
+    "steps": [
+      "Zwiebeln in Halbringe schneiden, Karotten in Scheiben. In Olivenöl bei mittlerer Hitze 5 Minuten dünsten.",
+      "Gewürze (Ras el Hanout, Zimt, Ingwer) hinzufügen, 1 Minute rösten.",
+      "Dosentomaten, Brühe, Kichererbsen, Aprikosen und Honig dazugeben. Aufkochen.",
+      "35 Minuten bei kleiner Hitze köcheln, bis die Karotten weich sind und die Sauce eingedickt.",
+      "Couscous nach Packungsanweisung zubereiten (kochendes Wasser drüber, 5 min quellen).",
+      "Tajine mit Koriander bestreuen und auf Couscous servieren."
+    ],
+    "tips": "Schmeckt am nächsten Tag noch besser. Dazu passt Harissa und eine Scheibe Zitrone. Für Fleischesser: 500g Lammwürfel mit den Zwiebeln anbraten.",
+    "imageUrl": "https://www.instagram.com/cuiseline/"
   },
   {
     "id": "fvt-02",
@@ -2407,8 +2755,7 @@
     "description": "Wärmend-herzhaftes Gulasch mit Kürbis, Kartoffeln und weissen Bohnen. Garniert mit Kräuteröl.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegan"
+    "imageUrl": null
   },
   {
     "id": "fvt-07",
@@ -2515,8 +2862,7 @@
     "description": "Bunte Gemüsesuppe mit Bohnen und Vollkornnudeln – ideal um neue Gemüsesorten einzuführen.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegan"
+    "imageUrl": null
   },
   {
     "id": "sup-01",
@@ -2574,8 +2920,7 @@
     "description": "Wärmende Kürbissuppe mit exotischem Kick.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegan"
+    "imageUrl": null
   },
   {
     "id": "sup-02",
@@ -2634,8 +2979,8 @@
     "description": "Italienische Gemüsesuppe mit Pasta und Bohnen.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegetarisch"
+    "imageUrl": "/images/recipes/cuiselin-minestrone-zutaten.jpg",
+    "imageZutaten": "/images/recipes/cuiselin-minestrone-zutaten.jpg"
   },
   {
     "id": "sup-03",
@@ -2693,8 +3038,7 @@
     "description": "Sättigende Suppe mit Rollgerste.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegan"
+    "imageUrl": null
   },
   {
     "id": "sup-04",
@@ -2746,8 +3090,7 @@
     "description": "Deftige Erbsensuppe nach Grossmutterart.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegan"
+    "imageUrl": null
   },
   {
     "id": "sup-05",
@@ -2799,8 +3142,91 @@
     "description": "Samtweiche Suppe mit exotischer Note.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegan"
+    "imageUrl": null
+  },
+  {
+    "id": "sup-06",
+    "name": "Tomaten-Basilikum Cremesuppe",
+    "category": "Suppen",
+    "timeMinutes": 25,
+    "timeLabel": "schnell",
+    "ingredients": [
+      {
+        "name": "Tomaten (aus der Dose, ganz)",
+        "amount": 800,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 500,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Frisches Basilikum",
+        "amount": 1,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 3,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kokosmilch (Vollmilch)",
+        "amount": 100,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Zucker",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz & Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "Sommer",
+      "Herbst",
+      "ganzjährig"
+    ],
+    "weatherType": "warm",
+    "isMealprep": true,
+    "isSuitableForLunch": true,
+    "dietType": "vegan",
+    "source": "cuiseline",
+    "basePortions": 4,
+    "description": "Samtig glatte Tomatensuppe mit Basilikum — in 25 Minuten auf dem Tisch und besser als jede Fertigsuppe.",
+    "steps": [
+      "Zwiebel fein würfeln, Knoblauch hacken. In Olivenöl bei mittlerer Hitze 3 Minuten andünsten.",
+      "Dosentomaten, Brühe und 1 TL Zucker dazugeben. Aufkochen und 15 Minuten köcheln lassen.",
+      "Basilikum (ein paar Blätter zum Garnieren beiseitelegen) in die Suppe geben.",
+      "Mit dem Stabmixer fein pürieren. Kokosmilch einrühren, nochmals erwärmen.",
+      "Mit Salz und Pfeffer abschmecken. Mit Basilikum und einem Olivenölschuss servieren."
+    ],
+    "tips": "Mit frischen Sommertomaten aus dem Garten schmeckt die Suppe noch besser. Wer es etwas schärfer mag, gibt eine Prise Chiliflocken dazu.",
+    "imageUrl": "https://www.instagram.com/cuiseline/"
   },
   {
     "id": "rec-1779488181331-i6vew",
@@ -2820,8 +3246,7 @@
     "description": "",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegetarisch"
+    "imageUrl": null
   },
   {
     "id": "sal-01",
@@ -2873,8 +3298,7 @@
     "description": "Proteinreiche Bowl für warme Tage.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegan"
+    "imageUrl": null
   },
   {
     "id": "sal-02",
@@ -2933,8 +3357,7 @@
     "description": "Eleganter Salat mit Birne und Feta.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegetarisch"
+    "imageUrl": null
   },
   {
     "id": "sal-03",
@@ -2998,8 +3421,8 @@
     "description": "Frischer Levante-Salat.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegan"
+    "imageUrl": "/images/recipes/cuiselin-taboule.jpeg",
+    "imageZutaten": "/images/recipes/cuiselin-taboule-zutaten.jpeg"
   },
   {
     "id": "sal-04",
@@ -3063,8 +3486,7 @@
     "description": "Proteinreicher Salat, schnell gemacht.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegan"
+    "imageUrl": null
   },
   {
     "id": "sal-05",
@@ -3128,8 +3550,7 @@
     "description": "Leichter Salat mit roten Linsen.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegan"
+    "imageUrl": null
   },
   {
     "id": "sal-06",
@@ -3180,8 +3601,7 @@
     "description": "Klassischer Kartoffelsalat.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegetarisch"
+    "imageUrl": null
   },
   {
     "id": "sal-07",
@@ -3245,8 +3665,184 @@
     "description": "Sommerlicher Klassiker aus Griechenland.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegetarisch"
+    "imageUrl": null
+  },
+  {
+    "id": "sal-08",
+    "name": "Buddha Bowl mit Süsskartoffel und Tahini",
+    "category": "Salat/Bowl",
+    "timeMinutes": 35,
+    "timeLabel": "mittel",
+    "ingredients": [
+      {
+        "name": "Süsskartoffeln",
+        "amount": 600,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Kichererbsen (aus der Dose)",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Quinoa",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Babyspinat",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Avocado",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Tahini",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Paprikapulver (geräuchert)",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kreuzkümmel",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Granatapfelkerne (optional)",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "neutral",
+    "isMealprep": true,
+    "isSuitableForLunch": true,
+    "dietType": "vegan",
+    "source": "cuiseline",
+    "basePortions": 4,
+    "description": "Sättigende Bowl mit gerösteter Süsskartoffel, knusprigen Kichererbsen und cremigem Tahini-Dressing.",
+    "steps": [
+      "Ofen auf 200 °C (Ober-/Unterhitze) vorheizen. Süsskartoffeln würfeln, Kichererbsen abgiessen und abtupfen.",
+      "Beides auf einem Blech mit Olivenöl, Paprika und Kreuzkümmel mischen. 25 Minuten rösten, bis die Kichererbsen knusprig sind.",
+      "Quinoa in der doppelten Menge Wasser mit Prise Salz aufkochen, 15 Minuten köcheln, quellen lassen.",
+      "Tahini-Dressing: Tahini, Zitronensaft, 3 EL Wasser und Prise Salz glatt rühren.",
+      "Bowls aufbauen: Quinoa, Spinat, Süsskartoffel, Kichererbsen, Avocadoscheiben. Mit Dressing beträufeln und Granatapfelkerne streuen."
+    ],
+    "tips": "Für Meal-Prep alle Komponenten separat aufbewahren und erst vor dem Essen zusammenstellen. Hält im Kühlschrank 3 Tage.",
+    "imageUrl": "https://www.instagram.com/cuiseline/"
+  },
+  {
+    "id": "sal-09",
+    "name": "Griechischer Sommer-Salat",
+    "category": "Salat/Bowl",
+    "timeMinutes": 15,
+    "timeLabel": "schnell",
+    "ingredients": [
+      {
+        "name": "Tomaten (verschiedene Sorten)",
+        "amount": 600,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Gurke",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Rote Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Grüne Oliven",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Feta (Block)",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl (extra vergine)",
+        "amount": 5,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Rotweinessig",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Getrockneter Oregano",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Fleur de sel & Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "Sommer"
+    ],
+    "weatherType": "warm",
+    "isMealprep": false,
+    "isSuitableForLunch": true,
+    "dietType": "vegetarisch",
+    "source": "cuiseline",
+    "basePortions": 4,
+    "description": "Der echte griechische Salat — kein Eisberg-Salat, nur Tomaten, Gurken, Oliven und ein ganzer Block Feta. Perfekt im Sommer.",
+    "steps": [
+      "Tomaten in grobe Stücke schneiden. Gurke halbieren und in Scheiben schneiden.",
+      "Rote Zwiebel in dünne Ringe schneiden.",
+      "Alles in einer Schüssel anrichten. Oliven dazugeben.",
+      "Feta als ganzen Block obenauf legen (nicht krümeln!).",
+      "Olivenöl, Essig und Oregano darüber. Mit Fleur de sel würzen.",
+      "Kurz vor dem Servieren zum Tisch bringen und erst dann vermischen."
+    ],
+    "tips": "Der Schlüssel: beste Tomaten (reif und aromatisch), gutes Olivenöl und echter griechischer Feta aus Schafsmilch. Niemals Eisbergsalat.",
+    "imageUrl": "https://www.instagram.com/cuiseline/"
   },
   {
     "id": "fvt-08",
@@ -3352,8 +3948,7 @@
     "description": "Im Ofen gegarte Paprika gefüllt mit würziger Quinoa-Bohnen-Mais-Füllung. Farbig und nährstoffreich.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegan"
+    "imageUrl": null
   },
   {
     "id": "ofe-01",
@@ -3410,8 +4005,97 @@
     "description": "Buntes Ofengemüse mit Tahini-Quinoa und Feta.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegetarisch"
+    "imageUrl": null
+  },
+  {
+    "id": "ofe-02",
+    "name": "Pizza Bianca mit Zucchini und Ricotta",
+    "category": "Ofen",
+    "timeMinutes": 40,
+    "timeLabel": "mittel",
+    "ingredients": [
+      {
+        "name": "Fertig-Pizzateig (rund, 400g)",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Ricotta",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zucchini",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Mozzarella (Kugel)",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitronenschale",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Frischer Thymian",
+        "amount": 4,
+        "unit": "Zweige",
+        "perPortions": 4
+      },
+      {
+        "name": "Fleur de sel & Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Parmesan (gerieben)",
+        "amount": 40,
+        "unit": "g",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "Sommer",
+      "Frühling"
+    ],
+    "weatherType": "warm",
+    "isMealprep": false,
+    "isSuitableForLunch": true,
+    "dietType": "vegetarisch",
+    "source": "cuiseline",
+    "basePortions": 4,
+    "description": "Weisse Pizza ohne Tomatensauce — cremiger Ricotta, frische Zucchini und Mozzarella ergeben eine sommerlich-leichte Alternative.",
+    "steps": [
+      "Ofen auf 230 °C vorheizen. Ricotta mit geriebenem Knoblauch, Zitronenschale, Salz und Pfeffer verrühren.",
+      "Zucchini mit einem Sparschäler in dünne Streifen hobeln. Mit etwas Salz ziehen lassen, dann abtupfen.",
+      "Pizzateig ausrollen, auf Backpapier legen. Ricotta-Mischung darauf verteilen (Rand lassen).",
+      "Mozzarella in Scheiben darauflegen, Zucchinistreifen wellig anordnen.",
+      "Mit Olivenöl beträufeln, Thymianblättchen darüber zupfen.",
+      "10–12 Minuten backen bis der Rand goldbraun ist. Mit Parmesan und Fleur de sel fertigstellen."
+    ],
+    "tips": "Fertigteig spart Zeit — alternativ selbst gemachten Teig 24h im Kühlschrank gehen lassen für besseren Geschmack.",
+    "imageUrl": "https://www.instagram.com/cuiseline/"
   },
   {
     "id": "asi-01",
@@ -3475,8 +4159,7 @@
     "description": "Klassisches Thai-Nudelgericht.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegetarisch"
+    "imageUrl": null
   },
   {
     "id": "asi-02",
@@ -3539,8 +4222,108 @@
     "description": "Ayurvedischer Klassiker – reinigend und nahrhaft.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegetarisch"
+    "imageUrl": null
+  },
+  {
+    "id": "asi-03",
+    "name": "Pad Thai mit Tofu und Erdnüssen",
+    "category": "Asiatisch",
+    "timeMinutes": 30,
+    "timeLabel": "schnell",
+    "ingredients": [
+      {
+        "name": "Reisnudeln (flach, 5mm)",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Fester Tofu",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Eier",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Frühlingszwiebeln",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Sojasprossen",
+        "amount": 150,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Geröstete Erdnüsse",
+        "amount": 80,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Tamarindenpaste",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Fischsauce oder Sojasosse (vegan)",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Palmzucker oder brauner Zucker",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Öl zum Braten",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Limetten",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Frischer Koriander",
+        "amount": 1,
+        "unit": "Bund",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "neutral",
+    "isMealprep": false,
+    "isSuitableForLunch": true,
+    "dietType": "vegetarisch",
+    "source": "cuiseline",
+    "basePortions": 4,
+    "description": "Authentisches Pad Thai mit knusprigem Tofu — süss, sauer, salzig und in 30 Minuten auf dem Tisch.",
+    "steps": [
+      "Reisnudeln nach Packungsanweisung einweichen (ca. 15 Min. in lauwarmem Wasser), dann abgiessen.",
+      "Tofu abtupfen, in Würfel schneiden. In Öl bei starker Hitze rundum knusprig braten, herausnehmen.",
+      "Pad-Thai-Sauce: Tamarindenpaste, Sojasauce und Zucker verrühren.",
+      "Frühlingszwiebeln (helle Teile) und Sojasprossen in der Pfanne kurz anbraten. Beiseite schieben, Eier einschlagen und scrambled braten.",
+      "Nudeln und Sauce in die Pfanne, alles vermengen. Tofu zugeben, kurz durchschwenken.",
+      "Mit Erdnüssen, Koriander, Limette und grünen Frühlingszwiebelringen servieren."
+    ],
+    "tips": "Für vegane Variante Eier weglassen und Sojasauce statt Fischsauce verwenden. Mise en place ist wichtig — alles vorbereiten bevor das Wokken beginnt.",
+    "imageUrl": "https://www.instagram.com/cuiseline/"
   },
   {
     "id": "fis-01",
@@ -3591,8 +4374,90 @@
     "description": "Leichtes Fischgericht mit Beilagen.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "pescetarisch"
+    "imageUrl": null
+  },
+  {
+    "id": "fis-02",
+    "name": "Lachs auf Zitronenbutter-Spinat",
+    "category": "Fisch",
+    "timeMinutes": 20,
+    "timeLabel": "schnell",
+    "ingredients": [
+      {
+        "name": "Lachsfilets (mit Haut)",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Babyspinat",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Butter",
+        "amount": 60,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitrone (Bio)",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Kapern",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Frischer Dill",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz & weisser Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "neutral",
+    "isMealprep": false,
+    "isSuitableForLunch": true,
+    "dietType": "pescetarisch",
+    "source": "cuiseline",
+    "basePortions": 4,
+    "description": "Knuspriger Lachs mit schaumiger Zitronenbutter und Babyspinat — elegant und in 20 Minuten fertig.",
+    "steps": [
+      "Lachsfilets trocken tupfen, salzen und pfeffern. Knoblauch in feine Scheiben schneiden.",
+      "Olivenöl in einer Pfanne bei hoher Hitze erhitzen. Lachs mit der Haut nach unten einlegen.",
+      "4–5 Minuten kross braten, wenden und weitere 2 Minuten garen. Herausnehmen, warm stellen.",
+      "Butter in die Pfanne, Knoblauch und Kapern kurz anbraten. Zitronensaft und -schale dazu.",
+      "Spinat in die Zitronenbutter geben, zusammenfallen lassen, salzen.",
+      "Spinat auf Tellern verteilen, Lachs darauflegen. Mit Dill und Zitronenspalten garnieren."
+    ],
+    "tips": "Den Lachs unbedingt zimmertemperiert einlegen — kalter Fisch aus dem Kühlschrank direkt in die Pfanne gibt kein gleichmässiges Garergebnis.",
+    "imageUrl": "https://www.instagram.com/cuiseline/"
   },
   {
     "id": "fvt-01",
@@ -3679,8 +4544,7 @@
     "description": "Herzhafte Waffeln mit Süsskartoffel und Kichererbsen, dazu ein frischer Joghurt-Gurken-Dip. Gefriergeeignet.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegetarisch"
+    "imageUrl": null
   },
   {
     "id": "fvt-05",
@@ -3773,8 +4637,7 @@
     "description": "Knusprige Kartoffelpuffer mit Süsskartoffel und Bohnen, dazu ein frischer Kräuter-Quark-Dip.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegan"
+    "imageUrl": null
   },
   {
     "id": "fvt-11",
@@ -3855,8 +4718,7 @@
     "description": "Vegane Quesadillas mit Süsskartoffel-Bohnen-Füllung und selbstgemachter Guacamole.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegan"
+    "imageUrl": null
   },
   {
     "id": "fvt-13",
@@ -3925,8 +4787,7 @@
     "description": "Knusprige vegane Nuggets aus Tofu, Kartoffeln und Blumenkohl – gefriergeeignet, Kinder-Liebling.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegan"
+    "imageUrl": null
   },
   {
     "id": "son-01",
@@ -3989,8 +4850,7 @@
     "description": "Buntes Fajita-Fest für die Familie.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegetarisch"
+    "imageUrl": null
   },
   {
     "id": "son-02",
@@ -4047,8 +4907,7 @@
     "description": "Vegane Tacos mit knackigen Baumnüssen.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegan"
+    "imageUrl": null
   },
   {
     "id": "son-03",
@@ -4106,7 +4965,89 @@
     "description": "Frisches Streetfood zu Hause.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
-    "dietType": "vegetarisch"
+    "imageUrl": null
+  },
+  {
+    "id": "son-04",
+    "name": "Avocado Toast mit pochiertem Ei",
+    "category": "Sonstige",
+    "timeMinutes": 15,
+    "timeLabel": "schnell",
+    "ingredients": [
+      {
+        "name": "Sauerteigbrot (dicke Scheiben)",
+        "amount": 4,
+        "unit": "Scheiben",
+        "perPortions": 4
+      },
+      {
+        "name": "Reife Avocados",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Eier",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Weisser Weinessig (zum Pochieren)",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Chiliflocken",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Fleur de sel & schwarzer Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Frische Kresse oder Rucola",
+        "amount": 1,
+        "unit": "Handvoll",
+        "perPortions": 4
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "neutral",
+    "isMealprep": false,
+    "isSuitableForLunch": true,
+    "dietType": "vegetarisch",
+    "source": "cuiseline",
+    "basePortions": 4,
+    "description": "Der Klassiker neu gedacht — mit pochiertem Ei, Kresse und dem richtigen Sauerteigbrot. Fertig in 15 Minuten.",
+    "steps": [
+      "Brotscheiben im Toaster oder Ofen kross toasten.",
+      "Avocados halbieren, entkernen, das Fruchtfleisch mit einer Gabel grob zerdrücken. Mit Zitronensaft, Salz und Pfeffer würzen.",
+      "Für die pochierten Eier: Wasser in einem flachen Topf zum Sieden bringen (nicht kochen), Essig dazugeben.",
+      "Ei in eine kleine Tasse aufschlagen. Mit einem Löffel einen Strudel im Wasser erzeugen, Ei hineingleiten lassen. 3 Minuten pochieren.",
+      "Avocado-Creme auf das Brot streichen. Ei darauflegen.",
+      "Mit Olivenöl, Chiliflocken, Fleur de sel und Kresse fertigstellen."
+    ],
+    "tips": "Frische Eier pochieren sich am besten — das Eiweiss hält besser zusammen. Variante: statt pochiertem Ei ein Spiegelei oder Scrambled Eggs verwenden.",
+    "imageUrl": "https://www.instagram.com/cuiseline/"
   }
 ]
