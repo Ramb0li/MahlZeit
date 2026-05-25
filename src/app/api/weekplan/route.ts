@@ -30,13 +30,25 @@ export async function DELETE(request: Request) {
 
 export async function PUT(request: Request) {
   try {
-    const { weekId, day, mealType, slot } = await request.json();
-    if (!weekId || day === undefined || !mealType) {
-      return NextResponse.json({ error: 'Fehlende Parameter' }, { status: 400 });
-    }
+    const { weekId, day, mealType, slot, toggleConstraintId } = await request.json();
+    if (!weekId) return NextResponse.json({ error: 'weekId fehlt' }, { status: 400 });
 
     let plan = await getWeekPlan(weekId);
     if (!plan) plan = { weekId, startDate: '', days: {} };
+
+    // Toggle a constraint as disabled for this week
+    if (toggleConstraintId) {
+      const ids = plan.disabledConstraintIds ?? [];
+      plan.disabledConstraintIds = ids.includes(toggleConstraintId)
+        ? ids.filter(id => id !== toggleConstraintId)
+        : [...ids, toggleConstraintId];
+      await saveWeekPlan(plan);
+      return NextResponse.json(plan);
+    }
+
+    if (day === undefined || !mealType) {
+      return NextResponse.json({ error: 'Fehlende Parameter' }, { status: 400 });
+    }
 
     if (!plan.days[day]) {
       plan.days[day] = { dinner: { recipeId: null }, showLunch: false };

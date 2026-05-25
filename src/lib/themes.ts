@@ -1,4 +1,4 @@
-export type ThemeId = 'green' | 'warm' | 'bronze';
+export type ThemeId = 'green' | 'warm' | 'bronze' | 'sage';
 
 export interface DayCardColors {
   bg: string;
@@ -165,7 +165,47 @@ export const THEMES: Record<ThemeId, AppTheme> = {
     borderColor:    '#3d2e22',
     tagBg:          '#2c2218',
   },
+
+  // ── Salbei — sage green, fresh & healthy ─────────────────────────────────
+  sage: {
+    id: 'sage',
+    label: 'Salbei',
+    description: 'Frisch & naturgrün',
+    previewColors: ['#e8f2e8', '#c5dbc5', '#8fb88f', '#4a7a4e'],
+    isDark: false,
+    pageBg:      '#f2f6f2',
+    headerBg:    '#f2f6f2',
+    pageText:    '#1e2d1e',
+    pageSubtext: '#6b8c6b',
+    dayCards: [
+      { bg: '#e8f2e8', textPrimary: '#1e2d1e', textSecondary: '#6b8c6b' },
+      { bg: '#dceadc', textPrimary: '#1e2d1e', textSecondary: '#6b8c6b' },
+      { bg: '#e4ede4', textPrimary: '#1e2d1e', textSecondary: '#6b8c6b' },
+      { bg: '#e8f2e8', textPrimary: '#1e2d1e', textSecondary: '#6b8c6b' },
+      { bg: '#d4e6d4', textPrimary: '#1e2d1e', textSecondary: '#6b8c6b' },
+      { bg: '#dceadc', textPrimary: '#1e2d1e', textSecondary: '#6b8c6b' },
+      { bg: '#ecf4ec', textPrimary: '#1e2d1e', textSecondary: '#6b8c6b' },
+    ],
+    todayAccent:    '#4a7a4e',
+    todayRing:      '#4a7a4e',
+    mealFilledBg:   '#f4f9f4',
+    mealFilledText: '#1e2d1e',
+    mealLabelText:  '#6b9c6b',
+    mealEmptyBg:    'rgba(197,219,197,0.45)',
+    mealEmptyBorder:'#a8c8a8',
+    mealBtnBg:      '#f4f9f4',
+    mealBtnText:    '#3a6a3a',
+    navBg:          '#d8e8d8',
+    navActiveBg:    '#c5d9c5',
+    navActiveText:  '#2a4a2a',
+    navInactiveText:'#6b8c6b',
+    weekNavBg:      '#d8e8d8',
+    weekNavText:    '#6b8c6b',
+    weekNavHoverBg: '#c5d9c5',
+    borderColor:    '#c8dcc8',
+    tagBg:          '#e8f2e8',
+  },
 };
 
-export const DEFAULT_THEME: ThemeId = 'green';
+export const DEFAULT_THEME: ThemeId = 'sage';
 export const getTheme = (id?: ThemeId): AppTheme => THEMES[id ?? DEFAULT_THEME];

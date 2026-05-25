@@ -68,6 +68,7 @@ export interface WeekPlan {
   days: {
     [dayIndex: number]: DayPlan;
   };
+  disabledConstraintIds?: string[];  // constraints crossed out for this specific week
 }
 
 export interface Child {
@@ -99,6 +100,7 @@ export interface AppSettings {
   dietPreference?: DietType | 'alle';  // Globaler Diät-Filter für Picker & Vorschläge
   theme?: import('@/lib/themes').ThemeId;
   promotions: PromotionSettings;
+  weekSwitchDay?: number;   // 0=Sonntag (default), 1=Mo, ..., 6=Sa — ab diesem Tag nächste Woche anzeigen
 }
 
 export interface WeatherDay {

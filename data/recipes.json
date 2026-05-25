@@ -495,7 +495,7 @@
       "Mit restlichem Feta und frischen Kräutern garnieren. Mit Brot servieren."
     ],
     "tips": "Dazu passt frisches Fladenbrot oder Sauerteigbrot. Für eine vegane Variante die Eier weglassen und mehr Gemüse hinzufügen.",
-    "imageUrl": "https://www.instagram.com/cuiseline/"
+    "imageUrl": null
   },
   {
     "id": "fvt-03",
@@ -1655,7 +1655,7 @@
       "Mit Salz, Pfeffer und Chiliflocken abschmecken. Petersilie grob hacken und unterheben. Sofort servieren."
     ],
     "tips": "Für eine cremigere Version 2 EL vegane Butter zum Schluss unterrühren. Parmesan oder Hefeflocken machen das Gericht noch aromatischer.",
-    "imageUrl": "https://www.instagram.com/cuiseline/"
+    "imageUrl": null
   },
   {
     "id": "fvt-10",
@@ -2235,7 +2235,7 @@
       "Mit Basmatireis servieren."
     ],
     "tips": "Mit Koriander und einer Scheibe Limette garnieren. Am nächsten Tag schmeckt das Curry noch besser — ideal für Meal-Prep.",
-    "imageUrl": "https://www.instagram.com/cuiseline/"
+    "imageUrl": null
   },
   {
     "id": "ein-01",
@@ -2643,7 +2643,7 @@
       "Tajine mit Koriander bestreuen und auf Couscous servieren."
     ],
     "tips": "Schmeckt am nächsten Tag noch besser. Dazu passt Harissa und eine Scheibe Zitrone. Für Fleischesser: 500g Lammwürfel mit den Zwiebeln anbraten.",
-    "imageUrl": "https://www.instagram.com/cuiseline/"
+    "imageUrl": null
   },
   {
     "id": "fvt-02",
@@ -3226,7 +3226,7 @@
       "Mit Salz und Pfeffer abschmecken. Mit Basilikum und einem Olivenölschuss servieren."
     ],
     "tips": "Mit frischen Sommertomaten aus dem Garten schmeckt die Suppe noch besser. Wer es etwas schärfer mag, gibt eine Prise Chiliflocken dazu.",
-    "imageUrl": "https://www.instagram.com/cuiseline/"
+    "imageUrl": null
   },
   {
     "id": "rec-1779488181331-i6vew",
@@ -3759,7 +3759,7 @@
       "Bowls aufbauen: Quinoa, Spinat, Süsskartoffel, Kichererbsen, Avocadoscheiben. Mit Dressing beträufeln und Granatapfelkerne streuen."
     ],
     "tips": "Für Meal-Prep alle Komponenten separat aufbewahren und erst vor dem Essen zusammenstellen. Hält im Kühlschrank 3 Tage.",
-    "imageUrl": "https://www.instagram.com/cuiseline/"
+    "imageUrl": null
   },
   {
     "id": "sal-09",
@@ -3842,7 +3842,7 @@
       "Kurz vor dem Servieren zum Tisch bringen und erst dann vermischen."
     ],
     "tips": "Der Schlüssel: beste Tomaten (reif und aromatisch), gutes Olivenöl und echter griechischer Feta aus Schafsmilch. Niemals Eisbergsalat.",
-    "imageUrl": "https://www.instagram.com/cuiseline/"
+    "imageUrl": null
   },
   {
     "id": "fvt-08",
@@ -4095,7 +4095,7 @@
       "10–12 Minuten backen bis der Rand goldbraun ist. Mit Parmesan und Fleur de sel fertigstellen."
     ],
     "tips": "Fertigteig spart Zeit — alternativ selbst gemachten Teig 24h im Kühlschrank gehen lassen für besseren Geschmack.",
-    "imageUrl": "https://www.instagram.com/cuiseline/"
+    "imageUrl": null
   },
   {
     "id": "asi-01",
@@ -4323,7 +4323,7 @@
       "Mit Erdnüssen, Koriander, Limette und grünen Frühlingszwiebelringen servieren."
     ],
     "tips": "Für vegane Variante Eier weglassen und Sojasauce statt Fischsauce verwenden. Mise en place ist wichtig — alles vorbereiten bevor das Wokken beginnt.",
-    "imageUrl": "https://www.instagram.com/cuiseline/"
+    "imageUrl": null
   },
   {
     "id": "fis-01",
@@ -4457,7 +4457,7 @@
       "Spinat auf Tellern verteilen, Lachs darauflegen. Mit Dill und Zitronenspalten garnieren."
     ],
     "tips": "Den Lachs unbedingt zimmertemperiert einlegen — kalter Fisch aus dem Kühlschrank direkt in die Pfanne gibt kein gleichmässiges Garergebnis.",
-    "imageUrl": "https://www.instagram.com/cuiseline/"
+    "imageUrl": null
   },
   {
     "id": "fvt-01",
@@ -5048,6 +5048,6 @@
       "Mit Olivenöl, Chiliflocken, Fleur de sel und Kresse fertigstellen."
     ],
     "tips": "Frische Eier pochieren sich am besten — das Eiweiss hält besser zusammen. Variante: statt pochiertem Ei ein Spiegelei oder Scrambled Eggs verwenden.",
-    "imageUrl": "https://www.instagram.com/cuiseline/"
+    "imageUrl": null
   }
 ]

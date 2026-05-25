@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { format } from 'date-fns';
 import { de } from 'date-fns/locale';
-import { Plus, Sparkles, Trash2, UtensilsCrossed, X } from 'lucide-react';
+import { Plus, Sparkles, Trash2, UtensilsCrossed, X, Users } from 'lucide-react';
 import { formatDate } from '@/lib/utils';
 import { getTheme } from '@/lib/themes';
 import { WeatherIcon } from '@/components/ui/WeatherIcon';
@@ -17,14 +17,17 @@ interface DayColumnProps {
   dayPlan: DayPlan | null;
   recipes: Recipe[];
   constraints: DayConstraint[];
+  disabledConstraintIds: string[];
   weather: WeatherDay | null;
   settings: AppSettings;
   weekId: string;
   onUpdate: (dayIndex: number, mealType: 'breakfast' | 'lunch' | 'dinner' | 'showLunch', slot: unknown) => void;
+  onToggleConstraint: (constraintId: string) => void;
 }
 
 export function DayColumn({
-  date, dayIndex, dayPlan, recipes, constraints, weather, settings, weekId, onUpdate,
+  date, dayIndex, dayPlan, recipes, constraints, disabledConstraintIds,
+  weather, settings, weekId, onUpdate, onToggleConstraint,
 }: DayColumnProps) {
   const [pickerOpen, setPickerOpen]         = useState<'breakfast' | 'lunch' | 'dinner' | null>(null);
   const [pickerOpenSide, setPickerOpenSide] = useState<'breakfast' | 'lunch' | 'dinner' | null>(null);
@@ -34,10 +37,17 @@ export function DayColumn({
   const dayColor = theme.dayCards[(dayIndex - 1) % 7];
   const isToday = formatDate(date) === formatDate(new Date());
 
-  // Mahlzeiten-Sichtbarkeit aus globalem Setting
   const showBreakfast = settings.showBreakfast ?? false;
   const showLunch     = settings.showLunch     ?? false;
   const showDinner    = settings.showDinner    ?? true;
+
+  const totalHouseholdPortions = (() => {
+    const childP = settings.household.children.reduce((s, c) => {
+      const f = c.age < 3 ? 0.25 : c.age <= 6 ? 0.5 : c.age <= 12 ? 0.75 : 1;
+      return s + f;
+    }, 0);
+    return settings.household.adults + childP;
+  })();
 
   const dayShort   = format(date, 'EEE', { locale: de });
   const dayNum     = format(date, 'd');
@@ -80,7 +90,6 @@ export function DayColumn({
     }
   };
 
-  // Haupt-Gericht auswählen
   const handlePickerSelect = (mealType: 'breakfast' | 'lunch' | 'dinner', recipeId: string) => {
     if (recipeId === LEFTOVERS_ID) {
       onUpdate(dayIndex, mealType, { recipeId: null, isLeftovers: true });
@@ -90,7 +99,6 @@ export function DayColumn({
     setPickerOpen(null);
   };
 
-  // Beilage / zweites Gericht auswählen
   const handlePickerSelectSide = (mealType: 'breakfast' | 'lunch' | 'dinner', recipeId: string) => {
     const current =
       mealType === 'breakfast' ? (dayPlan?.breakfast ?? { recipeId: null }) :
@@ -105,13 +113,23 @@ export function DayColumn({
     setPickerOpenSide(null);
   };
 
-  // Beilage entfernen
   const handleClearSide = (mealType: 'breakfast' | 'lunch' | 'dinner') => {
     const current =
       mealType === 'breakfast' ? (dayPlan?.breakfast ?? { recipeId: null }) :
       mealType === 'lunch'     ? (dayPlan?.lunch     ?? { recipeId: null }) :
       (dayPlan?.dinner ?? { recipeId: null });
     onUpdate(dayIndex, mealType, { ...current, sideRecipeId: null, sideIsLeftovers: false });
+  };
+
+  const handlePortionChange = (mealType: 'breakfast' | 'lunch' | 'dinner', delta: number) => {
+    const current =
+      mealType === 'breakfast' ? (dayPlan?.breakfast ?? { recipeId: null }) :
+      mealType === 'lunch'     ? (dayPlan?.lunch     ?? { recipeId: null }) :
+      (dayPlan?.dinner ?? { recipeId: null });
+    const current2 = current as MealSlot;
+    const currentPortions = current2.portionOverride ?? totalHouseholdPortions;
+    const next = Math.max(1, currentPortions + delta);
+    onUpdate(dayIndex, mealType, { ...current2, portionOverride: next });
   };
 
   return (
@@ -153,10 +171,21 @@ export function DayColumn({
           )}
         </div>
 
+        {/* Constraints — clickable to cross out for this week */}
         <div className="flex flex-wrap gap-1 mt-2 min-h-[26px] content-start">
-          {constraints.map((c) => (
-            <Badge key={c.id} label={c.label} color={c.color} />
-          ))}
+          {constraints.map((c) => {
+            const disabled = disabledConstraintIds.includes(c.id);
+            return (
+              <button
+                key={c.id}
+                onClick={() => onToggleConstraint(c.id)}
+                title={disabled ? 'Wiederherstellen' : 'Für diese Woche deaktivieren'}
+                style={{ opacity: disabled ? 0.4 : 1, textDecoration: disabled ? 'line-through' : 'none' }}
+              >
+                <Badge label={c.label} color={c.color} />
+              </button>
+            );
+          })}
         </div>
       </div>
 
@@ -166,6 +195,7 @@ export function DayColumn({
           <MealSlotCard
             label="Frühstück"
             recipe={breakfastRecipe}
+            slot={breakfastSlot}
             isLeftovers={breakfastSlot?.isLeftovers}
             sideRecipe={breakfastSideRecipe}
             sideIsLeftovers={breakfastSlot?.sideIsLeftovers}
@@ -173,11 +203,13 @@ export function DayColumn({
             suggesting={false}
             theme={theme}
             dayColor={dayColor}
+            totalPortions={totalHouseholdPortions}
             onPick={() => setPickerOpen('breakfast')}
             onSuggest={() => {}}
             onClear={() => onUpdate(dayIndex, 'breakfast', { recipeId: null, isLeftovers: false })}
             onPickSide={() => setPickerOpenSide('breakfast')}
             onClearSide={() => handleClearSide('breakfast')}
+            onPortionChange={(d) => handlePortionChange('breakfast', d)}
           />
         )}
 
@@ -185,6 +217,7 @@ export function DayColumn({
           <MealSlotCard
             label="Mittag"
             recipe={lunchRecipe}
+            slot={lunchSlot}
             isLeftovers={lunchSlot?.isLeftovers}
             sideRecipe={lunchSideRecipe}
             sideIsLeftovers={lunchSlot?.sideIsLeftovers}
@@ -192,11 +225,13 @@ export function DayColumn({
             suggesting={suggesting === 'lunch'}
             theme={theme}
             dayColor={dayColor}
+            totalPortions={totalHouseholdPortions}
             onPick={() => setPickerOpen('lunch')}
             onSuggest={() => handleSuggest('lunch')}
             onClear={() => onUpdate(dayIndex, 'lunch', { recipeId: null, isLeftovers: false })}
             onPickSide={() => setPickerOpenSide('lunch')}
             onClearSide={() => handleClearSide('lunch')}
+            onPortionChange={(d) => handlePortionChange('lunch', d)}
           />
         )}
 
@@ -204,6 +239,7 @@ export function DayColumn({
           <MealSlotCard
             label="Abendessen"
             recipe={dinnerRecipe}
+            slot={dinnerSlot}
             isLeftovers={dinnerSlot?.isLeftovers}
             sideRecipe={dinnerSideRecipe}
             sideIsLeftovers={dinnerSlot?.sideIsLeftovers}
@@ -211,16 +247,17 @@ export function DayColumn({
             suggesting={suggesting === 'dinner'}
             theme={theme}
             dayColor={dayColor}
+            totalPortions={totalHouseholdPortions}
             onPick={() => setPickerOpen('dinner')}
             onSuggest={() => handleSuggest('dinner')}
             onClear={() => onUpdate(dayIndex, 'dinner', { recipeId: null, isLeftovers: false })}
             onPickSide={() => setPickerOpenSide('dinner')}
             onClearSide={() => handleClearSide('dinner')}
+            onPortionChange={(d) => handlePortionChange('dinner', d)}
           />
         )}
       </div>
 
-      {/* Picker für Haupt-Gericht */}
       {pickerOpen && (
         <RecipePickerModal
           recipes={recipes}
@@ -231,7 +268,6 @@ export function DayColumn({
         />
       )}
 
-      {/* Picker für Beilage / zweites Gericht */}
       {pickerOpenSide && (
         <RecipePickerModal
           recipes={recipes}
@@ -250,6 +286,7 @@ export function DayColumn({
 interface MealSlotCardProps {
   label: string;
   recipe: Recipe | null;
+  slot: MealSlot | null | undefined;
   isLeftovers?: boolean;
   sideRecipe?: Recipe | null;
   sideIsLeftovers?: boolean;
@@ -257,20 +294,23 @@ interface MealSlotCardProps {
   suggesting: boolean;
   theme: AppTheme;
   dayColor: AppTheme['dayCards'][number];
+  totalPortions: number;
   onPick: () => void;
   onSuggest: () => void;
   onClear: () => void;
   onPickSide: () => void;
   onClearSide: () => void;
+  onPortionChange: (delta: number) => void;
 }
 
 function MealSlotCard({
-  label, recipe, isLeftovers, sideRecipe, sideIsLeftovers,
-  suggesting, theme, dayColor, onPick, onSuggest, onClear,
-  onPickSide, onClearSide, mealType,
+  label, recipe, slot, isLeftovers, sideRecipe, sideIsLeftovers,
+  suggesting, theme, dayColor, totalPortions,
+  onPick, onSuggest, onClear, onPickSide, onClearSide, onPortionChange, mealType,
 }: MealSlotCardProps) {
   const hasSide = !!(sideRecipe || sideIsLeftovers);
   const sideName = sideIsLeftovers ? 'Reste essen' : sideRecipe?.name ?? '';
+  const currentPortions = slot?.portionOverride ?? totalPortions;
 
   // ── Reste essen ──────────────────────────────────────────────────────────
   if (isLeftovers && !recipe) {
@@ -287,7 +327,6 @@ function MealSlotCard({
           <p className="text-xs font-semibold" style={{ color: '#5a4e48' }}>Reste essen</p>
         </div>
 
-        {/* Beilage */}
         {hasSide ? (
           <div className="mt-2 pt-1.5 flex items-center gap-1" style={{ borderTop: '1px solid #e0d8ce' }}>
             <p className="text-[10px] line-clamp-1 flex-1" style={{ color: '#9c8c84' }}>+ {sideName}</p>
@@ -300,9 +339,7 @@ function MealSlotCard({
             onClick={onPickSide}
             className="absolute bottom-1.5 right-1.5 opacity-0 group-hover:opacity-100 w-5 h-5 flex items-center justify-center rounded-full transition-all"
             style={{ backgroundColor: 'rgba(196,154,108,0.25)', color: '#c49a6c' }}
-            onMouseEnter={e => { (e.currentTarget as HTMLElement).style.backgroundColor = '#b5614a'; (e.currentTarget as HTMLElement).style.color = '#fff'; }}
-            onMouseLeave={e => { (e.currentTarget as HTMLElement).style.backgroundColor = 'rgba(196,154,108,0.25)'; (e.currentTarget as HTMLElement).style.color = '#c49a6c'; }}
-            title="Beilage / Dessert hinzufügen"
+            title="Beilage hinzufügen"
           >
             <Plus size={9} />
           </button>
@@ -331,7 +368,7 @@ function MealSlotCard({
         <p className="text-xs font-semibold leading-snug line-clamp-3" style={{ color: theme.mealFilledText }}>
           {recipe.name}
         </p>
-        <div className="flex items-center gap-1 mt-2">
+        <div className="flex items-center gap-1.5 mt-2 flex-wrap">
           <span className={`text-[10px] px-1.5 py-0.5 rounded-full font-semibold ${
             recipe.timeLabel === 'schnell' ? 'bg-green-100 text-green-700' :
             recipe.timeLabel === 'mittel'  ? 'bg-amber-100 text-amber-700' :
@@ -339,9 +376,28 @@ function MealSlotCard({
           }`}>
             {recipe.timeMinutes} min
           </span>
+
+          {/* Gästeanzahl */}
+          <div className="flex items-center gap-0.5 ml-auto">
+            <Users size={9} style={{ color: theme.mealLabelText, opacity: 0.7 }} />
+            <button
+              onClick={() => onPortionChange(-0.5)}
+              className="w-4 h-4 flex items-center justify-center rounded text-[10px] font-bold transition-colors"
+              style={{ color: theme.mealLabelText, opacity: 0.7 }}
+              title="Gäste reduzieren"
+            >−</button>
+            <span className="text-[10px] font-semibold w-5 text-center" style={{ color: theme.mealFilledText }}>
+              {currentPortions % 1 === 0 ? currentPortions : currentPortions.toFixed(1)}
+            </span>
+            <button
+              onClick={() => onPortionChange(0.5)}
+              className="w-4 h-4 flex items-center justify-center rounded text-[10px] font-bold transition-colors"
+              style={{ color: theme.mealLabelText, opacity: 0.7 }}
+              title="Gäste erhöhen"
+            >+</button>
+          </div>
         </div>
 
-        {/* Beilage */}
         {hasSide ? (
           <div className="mt-2 pt-1.5 border-t border-black/5 flex items-center gap-1">
             <p className="text-[10px] line-clamp-1 flex-1" style={{ color: theme.mealLabelText, opacity: 0.8 }}>
@@ -356,9 +412,7 @@ function MealSlotCard({
             onClick={onPickSide}
             className="absolute bottom-1.5 right-1.5 opacity-0 group-hover:opacity-100 w-5 h-5 flex items-center justify-center rounded-full transition-all"
             style={{ backgroundColor: 'rgba(44,36,32,0.07)', color: '#9c8c84' }}
-            onMouseEnter={e => { (e.currentTarget as HTMLElement).style.backgroundColor = '#b5614a'; (e.currentTarget as HTMLElement).style.color = '#fff'; }}
-            onMouseLeave={e => { (e.currentTarget as HTMLElement).style.backgroundColor = 'rgba(44,36,32,0.07)'; (e.currentTarget as HTMLElement).style.color = '#9c8c84'; }}
-            title="Beilage / Dessert hinzufügen"
+            title="Beilage hinzufügen"
           >
             <Plus size={9} />
           </button>
@@ -374,7 +428,7 @@ function MealSlotCard({
     );
   }
 
-  // ── Leer — Auswahl anbieten ───────────────────────────────────────────────
+  // ── Leer ─────────────────────────────────────────────────────────────────
   return (
     <div
       className="rounded-xl min-h-[80px] flex flex-col"

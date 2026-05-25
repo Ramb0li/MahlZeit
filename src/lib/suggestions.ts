@@ -82,14 +82,25 @@ export function suggestRecipe(
   return pick?.recipe ?? null;
 }
 
+export interface SuggestWeekOptions {
+  showBreakfast?: boolean;
+  showLunch?: boolean;
+  showDinner?: boolean;
+}
+
 export function suggestWeek(
   recipes: Recipe[],
   constraints: DayConstraint[],
   weatherTypes: Record<number, WeatherType>,
-  season: Season
-): Record<number, { lunch?: string; dinner?: string }> {
-  const result: Record<number, { lunch?: string; dinner?: string }> = {};
+  season: Season,
+  opts: SuggestWeekOptions = {}
+): Record<number, { breakfast?: string; lunch?: string; dinner?: string }> {
+  const { showBreakfast = false, showLunch = false, showDinner = true } = opts;
+  const result: Record<number, { breakfast?: string; lunch?: string; dinner?: string }> = {};
   const usedIds: string[] = [];
+
+  // Recipes suitable for lunch/breakfast (quick, lunch-suitable)
+  const lunchRecipes = recipes.filter((r) => r.isSuitableForLunch);
 
   for (let day = 1; day <= 7; day++) {
     const constraint = constraints.find((c) => c.dayOfWeek === day);
@@ -100,23 +111,43 @@ export function suggestWeek(
       continue;
     }
 
-    const dinner = suggestRecipe(recipes, {
-      weatherType,
-      season,
-      constraint,
-      usedThisWeek: usedIds,
-    });
+    result[day] = {};
 
-    if (dinner) {
-      result[day] = { dinner: dinner.id };
-      usedIds.push(dinner.id);
+    if (showDinner) {
+      const dinner = suggestRecipe(recipes, {
+        weatherType, season, constraint, usedThisWeek: usedIds,
+      });
+      if (dinner) {
+        result[day].dinner = dinner.id;
+        usedIds.push(dinner.id);
+      }
     }
 
-    const mealPrepConstraint = constraints.find((c) => c.mealprepLunchDays?.includes(day));
-    if (mealPrepConstraint) {
-      const sourceDay = mealPrepConstraint.dayOfWeek;
-      if (result[sourceDay]?.dinner) {
-        result[day] = { ...result[day], lunch: result[sourceDay].dinner };
+    if (showLunch) {
+      // Check if this day gets mealprep lunch from another day
+      const mealPrepConstraint = constraints.find((c) => c.mealprepLunchDays?.includes(day));
+      if (mealPrepConstraint) {
+        const sourceDay = mealPrepConstraint.dayOfWeek;
+        if (result[sourceDay]?.dinner) {
+          result[day].lunch = result[sourceDay].dinner;
+        }
+      } else {
+        const lunch = suggestRecipe(lunchRecipes, {
+          weatherType, season, usedThisWeek: usedIds, lunchOnly: true,
+        });
+        if (lunch) {
+          result[day].lunch = lunch.id;
+          usedIds.push(lunch.id);
+        }
+      }
+    }
+
+    if (showBreakfast) {
+      const breakfast = suggestRecipe(lunchRecipes, {
+        season, usedThisWeek: usedIds, lunchOnly: true,
+      });
+      if (breakfast) {
+        result[day].breakfast = breakfast.id;
       }
     }
   }

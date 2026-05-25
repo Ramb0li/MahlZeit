@@ -59,7 +59,11 @@ export async function POST(request: Request) {
       return NextResponse.json({ recipeId: suggestion?.id ?? null, recipe: suggestion });
     }
 
-    const suggestions = suggestWeek(recipes, constraints, weatherTypes, season);
+    const suggestions = suggestWeek(recipes, constraints, weatherTypes, season, {
+      showBreakfast: settings.showBreakfast ?? false,
+      showLunch:     settings.showLunch     ?? false,
+      showDinner:    settings.showDinner    ?? true,
+    });
 
     let plan = await getWeekPlan(weekId);
     if (!plan) plan = { weekId, startDate: '', days: {} };
@@ -69,8 +73,9 @@ export async function POST(request: Request) {
       if (!plan.days[day]) {
         plan.days[day] = { dinner: { recipeId: null }, showLunch: false };
       }
-      if (meals.dinner) plan.days[day].dinner = { recipeId: meals.dinner };
-      if (meals.lunch)  plan.days[day].lunch  = { recipeId: meals.lunch };
+      if (meals.dinner)    plan.days[day].dinner    = { recipeId: meals.dinner };
+      if (meals.lunch)     plan.days[day].lunch     = { recipeId: meals.lunch };
+      if (meals.breakfast) plan.days[day].breakfast = { recipeId: meals.breakfast };
     }
 
     await saveWeekPlan(plan);

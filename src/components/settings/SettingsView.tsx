@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { Plus, Trash2, Save } from 'lucide-react';
+import { Plus, Trash2, Save, ChevronDown, ChevronUp } from 'lucide-react';
 import { THEMES } from '@/lib/themes';
 import type { ThemeId } from '@/lib/themes';
 import type { AppSettings, DayConstraint, Child } from '@/types';
@@ -12,17 +12,26 @@ const CONSTRAINT_LABELS = {
   custom: 'Anpassen',
 };
 
-const PRESET_COLORS = [
-  '#b5614a', '#c49a6c', '#5a4e48', '#2e7d32',
-  '#1565c0', '#ad1457', '#4527a0', '#00695c',
+const WEEK_SWITCH_OPTIONS = [
+  { value: 1, label: 'Montag' },
+  { value: 2, label: 'Dienstag' },
+  { value: 3, label: 'Mittwoch' },
+  { value: 4, label: 'Donnerstag' },
+  { value: 5, label: 'Freitag' },
+  { value: 6, label: 'Samstag' },
+  { value: 0, label: 'Sonntag' },
 ];
 
-// Shared style helpers
+const PRESET_COLORS = [
+  '#4a7a4e', '#b5614a', '#c49a6c', '#5a4e48',
+  '#2e7d32', '#1565c0', '#ad1457', '#00695c',
+];
+
 const sectionCard = {
   backgroundColor: '#fff9f3',
   border: '1px solid #e0d8ce',
   borderRadius: '16px',
-  padding: '24px',
+  overflow: 'hidden',
 } as const;
 
 const inputStyle = {
@@ -43,9 +52,18 @@ interface SettingsViewProps {
 }
 
 export function SettingsView({ initialSettings, initialConstraints, onSettingsChange, onConstraintsChange }: SettingsViewProps) {
-  const [settings, setSettings]     = useState<AppSettings>(initialSettings);
-  const [constraints, setConstraints] = useState<DayConstraint[]>(initialConstraints);
-  const [saved, setSaved]           = useState(false);
+  const [settings, setSettings]         = useState<AppSettings>(initialSettings);
+  const [constraints, setConstraints]   = useState<DayConstraint[]>(initialConstraints);
+  const [saved, setSaved]               = useState(false);
+  const [openSections, setOpenSections] = useState<Set<string>>(new Set(['theme', 'meals']));
+
+  const toggleSection = (id: string) =>
+    setOpenSections(prev => {
+      const arr = Array.from(prev);
+      const n = new Set(arr);
+      n.has(id) ? n.delete(id) : n.add(id);
+      return n;
+    });
 
   const portionFactor = (age: number) => {
     if (age < 3) return '0.25×';
@@ -74,8 +92,9 @@ export function SettingsView({ initialSettings, initialConstraints, onSettingsCh
     setSettings((s) => ({ ...s, household: { ...s.household, children: s.household.children.filter((c) => c.id !== id) } }));
 
   const addConstraint = () => {
-    const newC: DayConstraint = { id: `c-${Date.now()}`, dayOfWeek: 1, label: 'Neues Event', color: '#b5614a', mealType: 'dinner', constraint: 'maxTime', maxTimeMinutes: 30 };
+    const newC: DayConstraint = { id: `c-${Date.now()}`, dayOfWeek: 1, label: 'Neues Event', color: '#4a7a4e', mealType: 'dinner', constraint: 'maxTime', maxTimeMinutes: 30 };
     setConstraints((prev) => [...prev, newC]);
+    setOpenSections(prev => new Set([...Array.from(prev), 'constraints']));
   };
 
   const updateConstraint = (id: string, updates: Partial<DayConstraint>) =>
@@ -92,52 +111,75 @@ export function SettingsView({ initialSettings, initialConstraints, onSettingsCh
     setTimeout(() => setSaved(false), 2000);
   };
 
-  const h2Style = { fontSize: '15px', fontWeight: 600, color: '#2c2420', marginBottom: '4px' } as const;
-  const subStyle = { fontSize: '12px', color: '#9c8c84', marginBottom: '16px', display: 'block' } as const;
+  const h2Style = { fontSize: '15px', fontWeight: 600, color: '#2c2420' } as const;
+  const subStyle = { fontSize: '12px', color: '#9c8c84', display: 'block', marginTop: '2px' } as const;
   const labelStyle = { fontSize: '13px', fontWeight: 500, color: '#5a4e48', display: 'block', marginBottom: '4px' } as const;
 
-  return (
-    <div className="max-w-2xl space-y-8">
-
-      {/* ── Theme picker ───────────────────────────────────────────────────── */}
+  // Collapsible section wrapper
+  const Section = ({ id, title, sub, children, action }: {
+    id: string; title: string; sub?: string; children: React.ReactNode; action?: React.ReactNode
+  }) => {
+    const open = openSections.has(id);
+    return (
       <section style={sectionCard}>
-        <h2 style={h2Style}>Design-Variante</h2>
-        <span style={subStyle}>Wird nach dem Speichern sofort angewendet.</span>
-        <div className="grid grid-cols-3 gap-3">
+        <button
+          onClick={() => toggleSection(id)}
+          className="w-full flex items-center justify-between px-6 py-4 transition-colors"
+          style={{ backgroundColor: open ? 'transparent' : '#fffdf9' }}
+          onMouseEnter={e => { if (!open) (e.currentTarget as HTMLElement).style.backgroundColor = '#f7f4ee'; }}
+          onMouseLeave={e => { if (!open) (e.currentTarget as HTMLElement).style.backgroundColor = '#fffdf9'; }}
+        >
+          <div className="text-left">
+            <h2 style={h2Style}>{title}</h2>
+            {sub && <span style={subStyle}>{sub}</span>}
+          </div>
+          <div className="flex items-center gap-3">
+            {action && open && <div onClick={e => e.stopPropagation()}>{action}</div>}
+            {open ? <ChevronUp size={16} style={{ color: '#9c8c84' }} /> : <ChevronDown size={16} style={{ color: '#9c8c84' }} />}
+          </div>
+        </button>
+        {open && (
+          <div className="px-6 pb-5" style={{ borderTop: '1px solid #f0ebe3' }}>
+            <div className="mt-4">{children}</div>
+          </div>
+        )}
+      </section>
+    );
+  };
+
+  return (
+    <div className="max-w-2xl space-y-3">
+
+      {/* ── Theme picker ─────────────────────────────────────────────────── */}
+      <Section id="theme" title="Design-Variante" sub="Wird nach dem Speichern sofort angewendet.">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           {(Object.values(THEMES) as typeof THEMES[ThemeId][]).map((t) => {
-            const isActive = (settings.theme ?? 'green') === t.id;
+            const isActive = (settings.theme ?? 'sage') === t.id;
             return (
               <button
                 key={t.id}
                 onClick={() => setSettings((s) => ({ ...s, theme: t.id as ThemeId }))}
                 className="flex flex-col overflow-hidden rounded-2xl border-2 transition-all"
-                style={isActive ? { borderColor: '#b5614a', boxShadow: '0 4px 16px rgba(181,97,74,0.18)' } : { borderColor: '#e0d8ce' }}
-                onMouseEnter={e => { if (!isActive) (e.currentTarget as HTMLElement).style.borderColor = '#d4a090'; }}
-                onMouseLeave={e => { if (!isActive) (e.currentTarget as HTMLElement).style.borderColor = '#e0d8ce'; }}
+                style={isActive ? { borderColor: '#4a7a4e', boxShadow: '0 4px 16px rgba(74,122,78,0.18)' } : { borderColor: '#e0d8ce' }}
               >
-                <div className="flex h-14">
+                <div className="flex h-10">
                   {t.previewColors.map((color, i) => (
                     <div key={i} className="flex-1" style={{ backgroundColor: color }} />
                   ))}
                 </div>
-                <div
-                  className="px-3 py-2 flex flex-col items-start gap-0.5"
-                  style={{ backgroundColor: t.isDark ? '#1c1510' : '#fff9f3' }}
-                >
-                  <span className="text-sm font-bold" style={{ color: t.isDark ? '#ede5d8' : '#2c2420' }}>{t.label}</span>
-                  <span className="text-[11px]" style={{ color: t.isDark ? '#9c8c84' : '#9c8c84' }}>{t.description}</span>
+                <div className="px-2 py-1.5 flex flex-col items-start" style={{ backgroundColor: t.isDark ? '#1c1510' : '#fff9f3' }}>
+                  <span className="text-xs font-bold" style={{ color: t.isDark ? '#ede5d8' : '#2c2420' }}>{t.label}</span>
+                  <span className="text-[10px]" style={{ color: '#9c8c84' }}>{t.description}</span>
                 </div>
               </button>
             );
           })}
         </div>
-      </section>
+      </Section>
 
-      {/* ── Meal toggles ───────────────────────────────────────────────────── */}
-      <section style={sectionCard}>
-        <h2 style={h2Style}>Mahlzeiten im Wochenplan</h2>
-        <span style={subStyle}>Klicke auf eine Mahlzeit, um sie im Wochenplaner ein- oder auszublenden.</span>
-        <div className="grid grid-cols-3 gap-3">
+      {/* ── Meal toggles ─────────────────────────────────────────────────── */}
+      <Section id="meals" title="Mahlzeiten im Wochenplan" sub="Klicke auf eine Mahlzeit um sie ein- oder auszublenden.">
+        <div className="flex flex-col sm:grid sm:grid-cols-3 gap-3">
           {(
             [
               { key: 'showBreakfast' as const, emoji: '☕', label: 'Frühstück',   def: false },
@@ -152,27 +194,48 @@ export function SettingsView({ initialSettings, initialConstraints, onSettingsCh
                 onClick={() => setSettings((s) => ({ ...s, [key]: !isActive }))}
                 className="flex items-center gap-3 p-4 rounded-2xl border-2 text-left transition-all"
                 style={isActive
-                  ? { borderColor: '#b5614a', backgroundColor: '#f2e5e0' }
+                  ? { borderColor: '#4a7a4e', backgroundColor: '#e8f2e8' }
                   : { borderColor: '#e0d8ce', opacity: 0.55 }
                 }
               >
                 <span className="text-2xl">{emoji}</span>
                 <div>
-                  <p className="text-sm font-semibold leading-tight" style={{ color: isActive ? '#b5614a' : '#2c2420' }}>{label}</p>
+                  <p className="text-sm font-semibold leading-tight" style={{ color: isActive ? '#4a7a4e' : '#2c2420' }}>{label}</p>
                   <p className="text-[11px] mt-0.5" style={{ color: '#9c8c84' }}>{isActive ? 'Aktiv' : 'Ausgeblendet'}</p>
                 </div>
               </button>
             );
           })}
         </div>
-      </section>
+      </Section>
 
-      {/* ── Diet preference ────────────────────────────────────────────────── */}
-      <section style={sectionCard}>
-        <h2 style={h2Style}>Ernährungsweise</h2>
-        <span style={subStyle}>
-          Filtert Rezeptvorschläge und den Menü-Picker — z.B. &quot;Vegetarisch&quot; blendet Fisch- und Fleischgerichte aus.
-        </span>
+      {/* ── Week switch day ──────────────────────────────────────────────── */}
+      <Section id="weekswitch" title="Wochenansicht" sub="Ab welchem Wochentag soll automatisch die nächste Woche angezeigt werden?">
+        <div className="flex flex-wrap gap-2">
+          {WEEK_SWITCH_OPTIONS.map(({ value, label }) => {
+            const isActive = (settings.weekSwitchDay ?? 0) === value;
+            return (
+              <button
+                key={value}
+                onClick={() => setSettings(s => ({ ...s, weekSwitchDay: value }))}
+                className="px-4 py-2 rounded-xl text-sm font-semibold transition-all border-2"
+                style={isActive
+                  ? { borderColor: '#4a7a4e', backgroundColor: '#e8f2e8', color: '#4a7a4e' }
+                  : { borderColor: '#e0d8ce', color: '#5a4e48' }
+                }
+              >
+                {label}
+              </button>
+            );
+          })}
+        </div>
+        <p className="text-xs mt-3" style={{ color: '#9c8c84' }}>
+          Standard: Sonntag — ab Sonntag wird die nächste Woche angezeigt.
+        </p>
+      </Section>
+
+      {/* ── Diet preference ──────────────────────────────────────────────── */}
+      <Section id="diet" title="Ernährungsweise" sub="Filtert Rezeptvorschläge und den Menü-Picker.">
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           {(
             [
@@ -189,27 +252,24 @@ export function SettingsView({ initialSettings, initialConstraints, onSettingsCh
                 onClick={() => setSettings((s) => ({ ...s, dietPreference: value }))}
                 className="flex items-center gap-3 p-4 rounded-2xl border-2 text-left transition-all"
                 style={isActive
-                  ? { borderColor: '#b5614a', backgroundColor: '#f2e5e0' }
+                  ? { borderColor: '#4a7a4e', backgroundColor: '#e8f2e8' }
                   : { borderColor: '#e0d8ce' }
                 }
-                onMouseEnter={e => { if (!isActive) (e.currentTarget as HTMLElement).style.borderColor = '#d4a090'; }}
-                onMouseLeave={e => { if (!isActive) (e.currentTarget as HTMLElement).style.borderColor = '#e0d8ce'; }}
               >
                 <span className="text-2xl">{emoji}</span>
                 <div>
-                  <p className="text-sm font-semibold leading-tight" style={{ color: isActive ? '#b5614a' : '#2c2420' }}>{label}</p>
+                  <p className="text-sm font-semibold leading-tight" style={{ color: isActive ? '#4a7a4e' : '#2c2420' }}>{label}</p>
                   <p className="text-[11px] mt-0.5" style={{ color: '#9c8c84' }}>{sub}</p>
                 </div>
               </button>
             );
           })}
         </div>
-      </section>
+      </Section>
 
-      {/* ── Household ──────────────────────────────────────────────────────── */}
-      <section style={sectionCard}>
-        <h2 style={h2Style}>Haushaltsgrösse</h2>
-        <div className="space-y-4 mt-4">
+      {/* ── Household ────────────────────────────────────────────────────── */}
+      <Section id="household" title="Haushaltsgrösse" sub={`Gesamtportionen: ${totalPortions()}`}>
+        <div className="space-y-4">
           <div className="flex items-center justify-between">
             <label className="text-sm" style={{ color: '#5a4e48' }}>Erwachsene</label>
             <div className="flex items-center gap-3">
@@ -234,11 +294,7 @@ export function SettingsView({ initialSettings, initialConstraints, onSettingsCh
           <div>
             <div className="flex items-center justify-between mb-3">
               <label className="text-sm" style={{ color: '#5a4e48' }}>Kinder</label>
-              <button
-                onClick={addChild}
-                className="flex items-center gap-1 text-xs font-semibold transition-opacity hover:opacity-70"
-                style={{ color: '#b5614a' }}
-              >
+              <button onClick={addChild} className="flex items-center gap-1 text-xs font-semibold transition-opacity hover:opacity-70" style={{ color: '#4a7a4e' }}>
                 <Plus size={14} />
                 Kind hinzufügen
               </button>
@@ -271,20 +327,12 @@ export function SettingsView({ initialSettings, initialConstraints, onSettingsCh
               ))}
             </div>
           </div>
-
-          <div className="pt-2" style={{ borderTop: '1px solid #e0d8ce' }}>
-            <p className="text-sm" style={{ color: '#5a4e48' }}>
-              Gesamtportionen:{' '}
-              <span className="font-semibold" style={{ color: '#b5614a' }}>{totalPortions()}</span>
-            </p>
-          </div>
         </div>
-      </section>
+      </Section>
 
-      {/* ── Weather ────────────────────────────────────────────────────────── */}
-      <section style={sectionCard}>
-        <h2 style={h2Style}>Wetterintegration</h2>
-        <div className="mt-4">
+      {/* ── Weather ──────────────────────────────────────────────────────── */}
+      <Section id="weather" title="Wetterintegration" sub="Standort für Wetter-Kochvorschläge.">
+        <div>
           <label style={labelStyle}>Standort</label>
           <input
             type="text"
@@ -295,27 +343,30 @@ export function SettingsView({ initialSettings, initialConstraints, onSettingsCh
           />
           <p className="text-xs mt-1" style={{ color: '#9c8c84' }}>
             Wetterdaten via{' '}
-            <a href="https://open-meteo.com" target="_blank" rel="noopener" className="transition-colors hover:underline" style={{ color: '#b5614a' }}>
+            <a href="https://open-meteo.com" target="_blank" rel="noopener" className="transition-colors hover:underline" style={{ color: '#4a7a4e' }}>
               open-meteo.com
             </a>{' '}
             · Kostenlos, kein API-Key nötig.
           </p>
         </div>
-      </section>
+      </Section>
 
-      {/* ── Events & Constraints ───────────────────────────────────────────── */}
-      <section style={sectionCard}>
-        <div className="flex items-center justify-between mb-4">
-          <h2 style={{ ...h2Style, marginBottom: 0 }}>Wöchentliche Events & Constraints</h2>
+      {/* ── Events & Constraints ─────────────────────────────────────────── */}
+      <Section
+        id="constraints"
+        title="Wöchentliche Events & Constraints"
+        sub="Im Wochenplan kannst du Events für eine einzelne Woche durchstreichen."
+        action={
           <button
             onClick={addConstraint}
             className="flex items-center gap-1 text-xs font-semibold transition-opacity hover:opacity-70"
-            style={{ color: '#b5614a' }}
+            style={{ color: '#4a7a4e' }}
           >
             <Plus size={14} />
             Event hinzufügen
           </button>
-        </div>
+        }
+      >
         <div className="space-y-3">
           {constraints.map((c) => (
             <div key={c.id} className="p-4 rounded-xl space-y-3" style={{ backgroundColor: '#f7f4ee' }}>
@@ -378,13 +429,15 @@ export function SettingsView({ initialSettings, initialConstraints, onSettingsCh
               </div>
             </div>
           ))}
+          {constraints.length === 0 && (
+            <p className="text-sm text-center py-4" style={{ color: '#9c8c84' }}>Noch keine Events. Klicke auf &quot;Event hinzufügen&quot;.</p>
+          )}
         </div>
-      </section>
+      </Section>
 
-      {/* ── Aktionen (manuelle Promotionen) ───────────────────────────────── */}
-      <section style={sectionCard}>
-        <h2 style={h2Style}>Aktionen (manuelle Eingabe)</h2>
-        <div className="mt-4">
+      {/* ── Aktionen ─────────────────────────────────────────────────────── */}
+      <Section id="promotions" title="Aktionen (manuelle Eingabe)" sub="Aktuelle Aktionen bei Migros, Coop oder Lidl eintragen.">
+        <div>
           {(['migros', 'coop', 'lidl'] as const).map((store) => (
             <div key={store} className="mb-4">
               <label style={labelStyle} className="capitalize">{store}</label>
@@ -402,7 +455,7 @@ export function SettingsView({ initialSettings, initialConstraints, onSettingsCh
             </div>
           ))}
         </div>
-      </section>
+      </Section>
 
       {/* Save button */}
       <div className="flex justify-end pb-8">
@@ -410,8 +463,8 @@ export function SettingsView({ initialSettings, initialConstraints, onSettingsCh
           onClick={handleSave}
           className="flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-semibold transition-all"
           style={saved
-            ? { backgroundColor: '#f2e5e0', color: '#b5614a' }
-            : { backgroundColor: '#b5614a', color: '#fff' }
+            ? { backgroundColor: '#e8f2e8', color: '#4a7a4e' }
+            : { backgroundColor: '#4a7a4e', color: '#fff' }
           }
         >
           <Save size={16} />

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "u_1779664133369_eumkq",
+    "firstName": "Oliver",
+    "lastName": "von Kaenel",
+    "email": "info@o-v-k.ch",
+    "passwordHash": "$2b$12$dTTw65M8vuLFkqueUjdneeC6gOElx6AIHoaCy33LFQyJpu9s4MyUa",
+    "plan": "lifetime",
+    "status": "pending",
+    "registeredAt": "2026-05-24T23:08:53.369Z"
+  }
+]

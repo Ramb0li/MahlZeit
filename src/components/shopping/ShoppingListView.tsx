@@ -1,6 +1,6 @@
 'use client';
 import { useState, useEffect, useCallback, useRef } from 'react';
-import { Check, Download, RefreshCw, Tag, Plus, Trash2, RotateCcw, X } from 'lucide-react';
+import { Check, Download, RefreshCw, Tag, Plus, Trash2, RotateCcw, X, ChevronDown, ChevronUp } from 'lucide-react';
 import { getWeekId, nextWeek, formatAmount } from '@/lib/utils';
 import type { ShoppingList } from '@/types';
 
@@ -58,6 +58,7 @@ export function ShoppingListView() {
   const [custom, setCustom] = useState<CustomItem[]>(() => readLS('mz-custom', [] as CustomItem[]));
   const [showAdd, setShowAdd] = useState(false);
   const [draft, setDraft] = useState({ name: '', amount: '', unit: 'Stk', category: 'Sonstiges' });
+  const [collapsedCategories, setCollapsedCategories] = useState<Set<string>>(new Set());
   const nameInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => { localStorage.setItem(`mz-ov-${weekId}`,  JSON.stringify(overrides)); }, [overrides, weekId]);
@@ -113,37 +114,131 @@ export function ShoppingListView() {
 
   const removeCustom = (id: string) => setCustom(prev => prev.filter(c => c.id !== id));
 
+  const toggleCategory = (cat: string) =>
+    setCollapsedCategories(prev => {
+      const n = new Set(Array.from(prev));
+      n.has(cat) ? n.delete(cat) : n.add(cat);
+      return n;
+    });
+
   const exportPDF = async () => {
     const { default: jsPDF } = await import('jspdf');
-    const doc = new jsPDF();
-    doc.setFont('helvetica');
-    doc.setFontSize(18);
-    doc.text('Einkaufsliste – MahlZeitPlaner', 15, 20);
-    doc.setFontSize(10);
-    doc.setTextColor(120);
-    doc.text(`KW ${weekId.split('-W')[1]} · ${new Date().toLocaleDateString('de-CH')}`, 15, 28);
-    let y = 38;
+    const doc = new jsPDF({ format: 'a4', unit: 'mm' });
+    const pageW = 210; const pageH = 297;
+    const m = 16; const col2X = pageW / 2 + 4;
+    const colW = pageW / 2 - m - 4;
+
+    // Colours
+    const sage:    [number,number,number] = [74, 122, 78];
+    const sageLt:  [number,number,number] = [232, 242, 232];
+    const textD:   [number,number,number] = [30, 45, 30];
+    const textM:   [number,number,number] = [107, 140, 107];
+    const border:  [number,number,number] = [200, 220, 200];
+
+    // Header band
+    doc.setFillColor(...sage);
+    doc.rect(0, 0, pageW, 24, 'F');
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(14);
+    doc.setTextColor(255, 255, 255);
+    doc.text('MahlZeit — Einkaufsliste', m, 15);
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(8.5);
+    doc.setTextColor(200, 230, 200);
+    doc.text(`KW ${weekId.split('-W')[1]}  ·  ${new Date().toLocaleDateString('de-CH')}`, pageW - m, 15, { align: 'right' });
+
+    // Two-column layout
+    let yL = 32; let yR = 32;
+    let col = 0;
+
+    const getY  = () => col === 0 ? yL : yR;
+    const getX  = () => col === 0 ? m  : col2X;
+    const advY  = (h: number) => { if (col === 0) yL += h; else yR += h; };
+
+    const switchColOrPage = () => {
+      if (col === 0 && yL > yR + 20) { col = 1; return; }
+      if (col === 0) { col = 1; yR = yL; return; }
+      doc.addPage();
+      doc.setFillColor(...sage);
+      doc.rect(0, 0, pageW, 10, 'F');
+      col = 0; yL = 18; yR = 18;
+    };
+
+    const checkOverflow = () => {
+      if (getY() > pageH - 20) switchColOrPage();
+    };
+
     const ordered = buildOrderedCategories();
     for (const cat of ordered) {
       const recipeItems = (list[cat] ?? []).filter(item => !deleted.includes(`${item.name.toLowerCase()}_${item.unit}`));
       const customInCat = custom.filter(c => c.category === cat);
       if (!recipeItems.length && !customInCat.length) continue;
-      doc.setFontSize(12); doc.setTextColor(40); doc.setFont('helvetica', 'bold');
-      doc.text(cat, 15, y); y += 7;
-      doc.setFontSize(10); doc.setFont('helvetica', 'normal'); doc.setTextColor(60);
-      for (const item of recipeItems) {
-        const key = `${item.name.toLowerCase()}_${item.unit}`;
-        const amount = overrides[key] ?? item.totalAmount;
-        doc.text(`${checked.has(key) ? '☑' : '☐'}  ${formatAmount(amount, item.unit)}  ${item.name}`, 15, y);
-        y += 6; if (y > 270) { doc.addPage(); y = 20; }
+
+      checkOverflow();
+      const x = getX();
+      const y = getY();
+
+      // Category header
+      doc.setFillColor(...sageLt);
+      doc.rect(x - 2, y - 3, colW + 4, 8, 'F');
+      doc.setDrawColor(...border);
+      doc.setLineWidth(0.2);
+      doc.rect(x - 2, y - 3, colW + 4, 8, 'S');
+      doc.setFont('helvetica', 'bold');
+      doc.setFontSize(8);
+      doc.setTextColor(...textD);
+      doc.text(cat.toUpperCase(), x, y + 2);
+      advY(10);
+
+      const allItems = [
+        ...recipeItems.map(item => {
+          const key = `${item.name.toLowerCase()}_${item.unit}`;
+          const amount = overrides[key] ?? item.totalAmount;
+          return { text: `${item.name}`, qty: formatAmount(amount, item.unit), done: checked.has(key) };
+        }),
+        ...customInCat.map(c => ({
+          text: c.name,
+          qty: c.amount ? `${c.amount} ${c.unit}` : '',
+          done: c.checked,
+        })),
+      ];
+
+      for (const it of allItems) {
+        checkOverflow();
+        const ix = getX(); const iy = getY();
+        doc.setFont('helvetica', 'normal');
+        doc.setFontSize(8.5);
+        doc.setTextColor(it.done ? 160 : textD[0], it.done ? 160 : textD[1], it.done ? 160 : textD[2]);
+        // Checkbox
+        doc.setDrawColor(...border);
+        doc.setLineWidth(0.4);
+        doc.rect(ix, iy - 3.5, 4, 4, 'S');
+        if (it.done) {
+          doc.setDrawColor(...sage);
+          doc.line(ix + 0.5, iy - 1.5, ix + 1.5, iy - 0.5);
+          doc.line(ix + 1.5, iy - 0.5, ix + 3.5, iy - 3.2);
+        }
+        // Name
+        const nameLines = doc.splitTextToSize(it.text, colW - 24);
+        doc.text(nameLines, ix + 6, iy);
+        // Qty right-aligned
+        if (it.qty) {
+          doc.setFont('helvetica', 'bold');
+          doc.setFontSize(8);
+          doc.setTextColor(...textM);
+          doc.text(it.qty, ix + colW, iy, { align: 'right' });
+        }
+        advY(nameLines.length * 4.5 + 1);
       }
-      for (const c of customInCat) {
-        const label = c.amount ? `${c.amount} ${c.unit}  ${c.name}` : c.name;
-        doc.text(`${c.checked ? '☑' : '☐'}  ${label}`, 15, y);
-        y += 6; if (y > 270) { doc.addPage(); y = 20; }
-      }
-      y += 4;
+      advY(4);
     }
+
+    // Footer
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(7);
+    doc.setTextColor(...textM);
+    doc.text(`Erstellt am ${new Date().toLocaleDateString('de-CH', { day:'numeric', month:'long', year:'numeric' })} · MahlZeitPlaner`, m, pageH - 6);
+
     doc.save(`einkaufsliste-kw${weekId.split('-W')[1]}.pdf`);
   };
 
@@ -306,13 +401,29 @@ export function ShoppingListView() {
         const customInCat = custom.filter(c => c.category === category);
         if (!recipeItems.length && !customInCat.length) return null;
 
+        const isCollapsed = collapsedCategories.has(category);
+        const totalCount = recipeItems.filter(i => !deleted.includes(`${i.name.toLowerCase()}_${i.unit}`)).length + customInCat.length;
+        const checkedCount = recipeItems.filter(i => checked.has(`${i.name.toLowerCase()}_${i.unit}`)).length + customInCat.filter(c => c.checked).length;
+
         return (
           <div key={category} className="rounded-2xl overflow-hidden" style={{ backgroundColor: '#fff9f3', border: '1px solid #e0d8ce' }}>
-            {/* Category header */}
-            <div className="px-4 py-2.5" style={{ backgroundColor: '#efe9df', borderBottom: '1px solid #e0d8ce' }}>
-              <h3 className="text-sm font-semibold" style={{ color: '#5a4e48' }}>{category}</h3>
-            </div>
-            <div>
+            {/* Category header — clickable to collapse */}
+            <button
+              onClick={() => toggleCategory(category)}
+              className="w-full flex items-center justify-between px-4 py-2.5 transition-colors"
+              style={{ backgroundColor: '#efe9df', borderBottom: isCollapsed ? 'none' : '1px solid #e0d8ce' }}
+              onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#e8dfd3')}
+              onMouseLeave={e => (e.currentTarget.style.backgroundColor = '#efe9df')}
+            >
+              <div className="flex items-center gap-2">
+                <h3 className="text-sm font-semibold" style={{ color: '#5a4e48' }}>{category}</h3>
+                <span className="text-xs px-1.5 py-0.5 rounded-full font-medium" style={{ backgroundColor: '#fff9f3', color: '#9c8c84' }}>
+                  {checkedCount}/{totalCount}
+                </span>
+              </div>
+              {isCollapsed ? <ChevronDown size={14} style={{ color: '#9c8c84' }} /> : <ChevronUp size={14} style={{ color: '#9c8c84' }} />}
+            </button>
+            {!isCollapsed && <div>
 
               {/* Recipe items */}
               {recipeItems.map((item) => {
@@ -523,7 +634,7 @@ export function ShoppingListView() {
                   </button>
                 </div>
               ))}
-            </div>
+            </div>}
           </div>
         );
       })}

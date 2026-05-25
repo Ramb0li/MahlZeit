@@ -50,6 +50,19 @@ export function prevWeek(date: Date): Date {
   return subWeeks(date, 1);
 }
 
+/**
+ * Returns the week to display based on today and the configured switch day.
+ * switchDay: 0=Sunday, 1=Monday, ..., 6=Saturday (day on which we jump to next week)
+ * Default: 0 (Sunday) — show next week from Sunday onwards
+ */
+export function getInitialDisplayWeek(switchDay = 0): Date {
+  const today = new Date();
+  // Normalize: Mon=1 … Sat=6, Sun=7
+  const d = today.getDay() === 0 ? 7 : today.getDay();
+  const sw = switchDay === 0 ? 7 : switchDay;
+  return d >= sw ? nextWeek(today) : today;
+}
+
 export function getChildPortionFactor(age: number): number {
   if (age < 3) return 0.25;
   if (age <= 6) return 0.5;

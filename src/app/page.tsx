@@ -164,8 +164,8 @@ export default function LandingPage() {
           {/* Scroll hint */}
           <div className="lp-scroll-hint">Mehr entdecken</div>
 
-          {/* Bottom-right CTA — scrolls to pricing */}
-          <div className="lp-corner-cta">
+          {/* Centered CTA — scrolls to pricing */}
+          <div className="lp-corner-cta" style={{ left: '50%', transform: 'translateX(-50%)', right: 'auto', bottom: '2.5rem' }}>
             <Link href="#pricing" className="lp-corner-cta-btn">
               Bereit für deinen persönlichen Menüplaner? →
             </Link>
@@ -223,7 +223,7 @@ export default function LandingPage() {
               <div className="lp-feature-num">04</div>
               <div className="lp-feature-content">
                 <h3>Automatische Einkaufsliste</h3>
-                <p>Alle Zutaten deines Wochenplans — zusammengefasst, nach Kategorien sortiert, direkt aufs Handy. Kein Vergessen mehr, kein doppeltes Kaufen.</p>
+                <p>Alle Zutaten deines Wochenplans — zusammengefasst, nach Kategorien sortiert, direkt aufs Handy. Kein Vergessen mehr, kein doppeltes Kaufen. Die Liste kann mit allen Personen im Haushalt geteilt werden.</p>
               </div>
             </li>
           </ul>
@@ -321,7 +321,7 @@ export default function LandingPage() {
           <div className="lp-week-preview" style={{ marginTop: 32 }}>
             <div className="lp-wp-header">
               <div className="lp-wp-title">KW 21 · Mai 2025</div>
-              <Link href="/planner" className="lp-wp-action">Plan anpassen →</Link>
+              <span className="lp-wp-action" style={{ cursor: 'default', opacity: 0.5 }}>Plan anpassen →</span>
             </div>
             <div className="lp-wp-grid">
               {MOCK_WEEK.map(({ name, meal, sub, today }) => (
@@ -347,7 +347,7 @@ export default function LandingPage() {
           />
           <div className="lp-two-col-text">
             <h3>Rezepte,<br />die <em>passen.</em></h3>
-            <p>Nicht irgendwelche Rezepte — sondern solche, die zu deinen Vorlieben, der Zeit und der Saison passen.</p>
+            <p>Nicht irgendwelche Rezepte — sondern solche, die zu deinen Vorlieben, der Zeit, der Saison <em>und dem aktuellen Wetter</em> passen. Sonnig und warm? MahlZeit schlägt leichte Sommerküche vor.</p>
             <div className="lp-tag-row">
               <span className="lp-tag-pill">🌱 Vegan</span>
               <span className="lp-tag-pill warm">⏱ Unter 30 Min</span>
