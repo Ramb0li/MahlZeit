@@ -72,7 +72,12 @@ export function ShoppingListView() {
     try {
       const res  = await fetch(`/api/shopping-list?weekId=${weekId}`);
       const data = await res.json();
-      setList(data);
+      // API-Fehler-Response (z.B. { error: '...' }) → leere Liste statt Crash
+      if (!res.ok || (data && typeof data === 'object' && 'error' in data)) {
+        setList({});
+      } else {
+        setList(data);
+      }
     } finally { setLoading(false); }
   }, [weekId]);
 
