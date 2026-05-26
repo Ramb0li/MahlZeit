@@ -1,9 +1,10 @@
 export const dynamic = 'force-dynamic';
 
-import { NextResponse }                            from 'next/server';
-import bcrypt                                      from 'bcryptjs';
+import { NextResponse }                                from 'next/server';
+import bcrypt                                          from 'bcryptjs';
 import { ADMIN_EMAIL, signToken, sessionCookieHeader } from '@/lib/auth';
-import { getUserByEmail }                          from '@/lib/users';
+import { getUserByEmail, updateUser }                  from '@/lib/users';
+import { createGroup, newGroupId }                     from '@/lib/groups';
 
 export async function POST(request: Request) {
   try {
@@ -27,6 +28,19 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Dein Konto wurde deaktiviert.' }, { status: 403 });
     }
 
+    // E-Mail noch nicht bestätigt
+    if (user.status === 'pending' && user.confirmationToken) {
+      return NextResponse.json(
+        {
+          error:               'Bitte bestätige zuerst deine E-Mail. Link nochmals senden?',
+          needsConfirmation:   true,
+          email:               user.email,
+        },
+        { status: 403 }
+      );
+    }
+
+    // E-Mail bestätigt, aber Zahlung noch ausstehend (paid plans nach confirm)
     if (user.status === 'pending') {
       return NextResponse.json(
         { error: 'Zahlung noch ausstehend.', redirect: `/auth?pending=1&email=${encodeURIComponent(user.email)}` },
@@ -42,11 +56,29 @@ export async function POST(request: Request) {
       );
     }
 
+    // Auto-Migration: User ohne Gruppe bekommen beim Login automatisch eine Solo-Gruppe.
+    // (Für Bestands-User aus der Pre-Groups-Era.)
+    if (!user.groupId) {
+      const groupId = newGroupId();
+      await createGroup({
+        id:         groupId,
+        name:       'Meine Familie',
+        nameSet:    false,
+        ownerEmail: user.email,
+        createdAt:  new Date().toISOString(),
+      });
+      user.groupId   = groupId;
+      user.groupRole = 'owner';
+      await updateUser(user);
+    }
+
     const token = await signToken({
-      email:   user.email,
-      plan:    user.plan,
-      status:  user.status,
-      isAdmin: user.email === ADMIN_EMAIL,
+      email:     user.email,
+      plan:      user.plan,
+      status:    user.status,
+      isAdmin:   user.email === ADMIN_EMAIL,
+      groupId:   user.groupId,
+      groupRole: user.groupRole,
     });
 
     return new NextResponse(

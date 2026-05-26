@@ -1,8 +1,10 @@
 'use client';
 import { useState, useMemo } from 'react';
-import { Plus, Search, Pencil, Trash2, Clock, Leaf, Archive, RotateCcw, ChevronDown, ChevronUp } from 'lucide-react';
+import { Plus, Search, Link, Pencil, Trash2, Clock, Leaf, Archive, RotateCcw, ChevronDown, ChevronUp } from 'lucide-react';
 import { RecipeForm } from './RecipeForm';
+import { ImportRecipeModal } from './ImportRecipeModal';
 import { Modal } from '@/components/ui/Modal';
+import { isRecipeExcluded } from '@/lib/allergens';
 import type { Recipe, Category, TimeLabel, DietType } from '@/types';
 
 const DIET_OPTIONS: { value: DietType | 'Alle'; label: string }[] = [
@@ -30,10 +32,12 @@ const chipDarkActive = { backgroundColor: '#2c2420', color: '#fff' };
 
 interface RecipeListProps {
   initialRecipes: Recipe[];
+  allergiesAndAversions?: string[];
+  isPremium?: boolean;
   onRecipesChange?: (recipes: Recipe[]) => void;
 }
 
-export function RecipeList({ initialRecipes, onRecipesChange }: RecipeListProps) {
+export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremium = false, onRecipesChange }: RecipeListProps) {
   const [recipes, setRecipes] = useState<Recipe[]>(initialRecipes);
 
   const updateRecipes = (updater: (prev: Recipe[]) => Recipe[]) => {
@@ -52,8 +56,9 @@ export function RecipeList({ initialRecipes, onRecipesChange }: RecipeListProps)
   const [isCreating, setIsCreating]         = useState(false);
   const [showArchive, setShowArchive]       = useState(false);
 
-  const [archiveId, setArchiveId] = useState<string | null>(null);
-  const [deleteId, setDeleteId]   = useState<string | null>(null);
+  const [archiveId, setArchiveId]   = useState<string | null>(null);
+  const [deleteId, setDeleteId]     = useState<string | null>(null);
+  const [importOpen, setImportOpen] = useState(false);
 
   // Category badge colours — warm palette variants
   const categoryColors: Record<Category, { bg: string; color: string }> = {
@@ -137,8 +142,8 @@ export function RecipeList({ initialRecipes, onRecipesChange }: RecipeListProps)
   return (
     <div className="space-y-4">
 
-      {/* Search + new button */}
-      <div className="flex items-center gap-3">
+      {/* Search + action buttons */}
+      <div className="flex items-center gap-2">
         <div className="relative flex-1">
           <Search size={15} className="absolute left-3 top-1/2 -translate-y-1/2" style={{ color: '#9c8c84' }} />
           <input
@@ -151,12 +156,22 @@ export function RecipeList({ initialRecipes, onRecipesChange }: RecipeListProps)
           />
         </div>
         <button
+          onClick={() => setImportOpen(true)}
+          className="flex items-center gap-1.5 px-3 py-2.5 rounded-xl text-sm font-semibold shrink-0 transition-opacity hover:opacity-80 border"
+          style={{ borderColor: '#4a7a4e', color: '#4a7a4e', backgroundColor: '#f2f6f2' }}
+          title="Rezept von URL oder Screenshot importieren"
+        >
+          <Link size={15} />
+          <span className="hidden sm:inline">Importieren</span>
+        </button>
+        <button
           onClick={() => setIsCreating(true)}
-          className="flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold shrink-0 transition-opacity hover:opacity-80"
+          className="flex items-center gap-1.5 px-3 py-2.5 rounded-xl text-sm font-semibold shrink-0 transition-opacity hover:opacity-80"
           style={{ backgroundColor: '#b5614a', color: '#fff' }}
         >
-          <Plus size={16} />
-          Neues Rezept
+          <Plus size={15} />
+          <span className="hidden sm:inline">Neues Rezept</span>
+          <span className="sm:hidden">Neu</span>
         </button>
       </div>
 
@@ -234,6 +249,7 @@ export function RecipeList({ initialRecipes, onRecipesChange }: RecipeListProps)
               key={recipe.id}
               recipe={recipe}
               categoryColors={categoryColors}
+              isExcluded={isRecipeExcluded(recipe, allergiesAndAversions)}
               onEdit={() => setEditRecipe(recipe)}
               onArchive={() => setArchiveId(recipe.id)}
             />
@@ -266,7 +282,15 @@ export function RecipeList({ initialRecipes, onRecipesChange }: RecipeListProps)
 
       {/* Modals */}
       {(isCreating || editRecipe) && (
-        <Modal open onClose={() => { setIsCreating(false); setEditRecipe(null); }} title={isCreating ? 'Neues Rezept' : 'Rezept bearbeiten'} size="xl">
+        <Modal
+          open
+          onClose={() => { setIsCreating(false); setEditRecipe(null); }}
+          title={
+            isCreating && editRecipe ? 'Importiertes Rezept überprüfen' :
+            isCreating ? 'Neues Rezept' : 'Rezept bearbeiten'
+          }
+          size="xl"
+        >
           <RecipeForm recipe={editRecipe ?? undefined} onSave={handleSave} onCancel={() => { setIsCreating(false); setEditRecipe(null); }} />
         </Modal>
       )}
@@ -323,6 +347,19 @@ export function RecipeList({ initialRecipes, onRecipesChange }: RecipeListProps)
           </div>
         </Modal>
       )}
+
+      {/* Import modal */}
+      {importOpen && (
+        <ImportRecipeModal
+          isPremium={isPremium}
+          onClose={() => setImportOpen(false)}
+          onImported={(recipe) => {
+            setImportOpen(false);
+            setEditRecipe(recipe);
+            setIsCreating(true);
+          }}
+        />
+      )}
     </div>
   );
 }
@@ -332,11 +369,12 @@ export function RecipeList({ initialRecipes, onRecipesChange }: RecipeListProps)
 interface RecipeCardProps {
   recipe: Recipe;
   categoryColors: Record<Category, { bg: string; color: string }>;
+  isExcluded?: boolean;
   onEdit: () => void;
   onArchive: () => void;
 }
 
-function RecipeCard({ recipe, categoryColors, onEdit, onArchive }: RecipeCardProps) {
+function RecipeCard({ recipe, categoryColors, isExcluded = false, onEdit, onArchive }: RecipeCardProps) {
   const catColor = categoryColors[recipe.category] ?? { bg: '#efe9df', color: '#5a4e48' };
   const hasImage = !!recipe.imageUrl;
   return (
@@ -344,8 +382,9 @@ function RecipeCard({ recipe, categoryColors, onEdit, onArchive }: RecipeCardPro
       className="group rounded-2xl p-4 transition-all cursor-default relative overflow-hidden"
       style={{
         backgroundColor: '#fff9f3',
-        border: '1px solid #e0d8ce',
+        border: isExcluded ? '1px solid #e8c5b5' : '1px solid #e0d8ce',
         boxShadow: '0 2px 12px rgba(44,36,32,0.05)',
+        opacity: isExcluded ? 0.45 : 1,
       }}
       onMouseEnter={e => {
         (e.currentTarget as HTMLElement).style.borderColor = '#d4a090';

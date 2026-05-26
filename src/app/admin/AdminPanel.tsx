@@ -2,7 +2,9 @@
 
 import { useState }  from 'react';
 import { useRouter } from 'next/navigation';
+import Link          from 'next/link';
 import type { AppUser } from '@/lib/users';
+import type { Group }   from '@/lib/groups';
 
 type SafeUser = Omit<AppUser, 'passwordHash'>;
 
@@ -20,9 +22,13 @@ const STATUS_COLOR: Record<string, { bg: string; color: string }> = {
 
 interface Props {
   initialUsers: SafeUser[];
+  adminEmail:   string;
+  groups:       Group[];
 }
 
-export default function AdminPanel({ initialUsers }: Props) {
+export default function AdminPanel({ initialUsers, adminEmail, groups }: Props) {
+  const groupNameById = (id?: string) => id ? (groups.find(g => g.id === id)?.name ?? '—') : '—';
+  const isAdmin = (email: string) => email.toLowerCase() === adminEmail.toLowerCase();
   const [users,    setUsers]    = useState<SafeUser[]>(initialUsers);
   const [loading,  setLoading]  = useState<string | null>(null);
   const [confirm,  setConfirm]  = useState<string | null>(null);
@@ -52,9 +58,11 @@ export default function AdminPanel({ initialUsers }: Props) {
   };
 
   const exportCsv = () => {
-    const header = 'Vorname,Nachname,E-Mail,Plan,Status,Registriert,Zugang bis';
+    const header = 'Vorname,Nachname,E-Mail,Gruppe,Rolle,Plan,Status,Registriert,Zugang bis';
     const rows   = users.map((u) =>
-      [u.firstName, u.lastName, u.email, u.plan, u.status,
+      [u.firstName, u.lastName, u.email,
+       groupNameById(u.groupId), u.groupRole ?? '',
+       u.plan, u.status,
        u.registeredAt.slice(0, 10), u.accessUntil?.slice(0, 10) ?? ''].join(',')
     );
     const blob = new Blob([[header, ...rows].join('\n')], { type: 'text/csv' });
@@ -80,10 +88,17 @@ export default function AdminPanel({ initialUsers }: Props) {
               🍽 MahlZeit — Admin
             </h1>
             <p className="text-sm mt-0.5" style={{ color: '#9c8c84' }}>
-              {users.length} registrierte Nutzer
+              {users.filter(u => !isAdmin(u.email)).length} registrierte Nutzer
             </p>
           </div>
           <div className="flex gap-2">
+            <Link
+              href="/app"
+              className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold transition-opacity hover:opacity-80"
+              style={{ backgroundColor: '#e8f2e8', color: '#4a7a4e', border: '1px solid #c8d8c8', textDecoration: 'none' }}
+            >
+              🍽 Zum Menüplaner →
+            </Link>
             <button
               onClick={exportCsv}
               className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold transition-opacity hover:opacity-80"
@@ -101,14 +116,17 @@ export default function AdminPanel({ initialUsers }: Props) {
           </div>
         </div>
 
-        {/* Stats row */}
+        {/* Stats row — Admin wird in keiner Metrik mitgezählt */}
         <div className="grid grid-cols-4 gap-3 mb-6">
-          {[
-            { label: 'Aktiv',    value: users.filter((u) => u.status === 'active').length,   color: '#2e7d32', bg: '#e8f5e9' },
-            { label: 'Ausstehend', value: users.filter((u) => u.status === 'pending').length, color: '#e65100', bg: '#fff3e0' },
-            { label: 'Inaktiv', value: users.filter((u) => u.status === 'inactive').length,  color: '#c62828', bg: '#fce4ec' },
-            { label: 'Lifetime', value: users.filter((u) => u.plan === 'lifetime').length,   color: '#b5614a', bg: '#f2e5e0' },
-          ].map(({ label, value, color, bg }) => (
+          {(() => {
+            const customers = users.filter(u => !isAdmin(u.email));
+            return [
+              { label: 'Aktiv',      value: customers.filter((u) => u.status === 'active').length,   color: '#2e7d32', bg: '#e8f5e9' },
+              { label: 'Ausstehend', value: customers.filter((u) => u.status === 'pending').length,  color: '#e65100', bg: '#fff3e0' },
+              { label: 'Inaktiv',    value: customers.filter((u) => u.status === 'inactive').length, color: '#c62828', bg: '#fce4ec' },
+              { label: 'Lifetime',   value: customers.filter((u) => u.plan === 'lifetime').length,   color: '#b5614a', bg: '#f2e5e0' },
+            ];
+          })().map(({ label, value, color, bg }) => (
             <div key={label} className="rounded-2xl p-4" style={{ backgroundColor: bg }}>
               <div className="text-2xl font-black" style={{ color }}>{value}</div>
               <div className="text-xs font-semibold mt-0.5" style={{ color }}>{label}</div>
@@ -121,7 +139,7 @@ export default function AdminPanel({ initialUsers }: Props) {
           <table className="w-full text-sm">
             <thead>
               <tr style={{ backgroundColor: '#efe9df', borderBottom: '1px solid #e0d8ce' }}>
-                {['Name', 'E-Mail', 'Plan', 'Status', 'Registriert', 'Zugang bis', 'Aktionen'].map((h) => (
+                {['Name', 'E-Mail', 'Gruppe', 'Plan', 'Status', 'Registriert', 'Aktionen'].map((h) => (
                   <th key={h} className="text-left px-4 py-3 font-semibold text-xs" style={{ color: '#9c8c84' }}>{h}</th>
                 ))}
               </tr>
@@ -134,63 +152,110 @@ export default function AdminPanel({ initialUsers }: Props) {
                   </td>
                 </tr>
               )}
-              {users.map((u) => {
-                const sc = STATUS_COLOR[u.status] ?? STATUS_COLOR.inactive;
-                return (
-                  <tr key={u.email} style={{ borderBottom: '1px solid #f0ede8' }}>
-                    <td className="px-4 py-3 font-medium" style={{ color: '#2c2420' }}>
-                      {u.firstName} {u.lastName}
-                    </td>
-                    <td className="px-4 py-3" style={{ color: '#5a4e48' }}>{u.email}</td>
-                    <td className="px-4 py-3">
-                      <span className="px-2 py-0.5 rounded-full text-xs font-semibold" style={{ backgroundColor: '#f2e5e0', color: '#b5614a' }}>
-                        {PLAN_LABEL[u.plan] ?? u.plan}
-                      </span>
-                    </td>
-                    <td className="px-4 py-3">
-                      <span className="px-2 py-0.5 rounded-full text-xs font-semibold" style={sc}>
-                        {u.status === 'active' ? 'Aktiv' : u.status === 'pending' ? 'Ausstehend' : 'Inaktiv'}
-                      </span>
-                    </td>
-                    <td className="px-4 py-3 text-xs" style={{ color: '#9c8c84' }}>
-                      {u.registeredAt.slice(0, 10)}
-                    </td>
-                    <td className="px-4 py-3 text-xs" style={{ color: '#9c8c84' }}>
-                      {u.accessUntil ? u.accessUntil.slice(0, 10) : '—'}
-                    </td>
-                    <td className="px-4 py-3">
-                      <div className="flex gap-1.5">
-                        {u.status === 'active' ? (
-                          <button
-                            onClick={() => patch(u.email, 'inactive')}
-                            disabled={!!loading}
-                            className="px-2.5 py-1 rounded-lg text-xs font-semibold transition-opacity hover:opacity-70"
-                            style={{ backgroundColor: '#fce4ec', color: '#c62828' }}
-                          >
-                            {loading === u.email + 'inactive' ? '…' : 'Deaktivieren'}
-                          </button>
+              {(() => {
+                // Owners zuerst, dann ihre Members darunter, dann Users ohne Gruppe
+                const owners       = users.filter(u => u.groupRole === 'owner');
+                const members      = users.filter(u => u.groupRole === 'member');
+                const ungrouped    = users.filter(u => !u.groupRole);
+                const ownersByGroup = new Map(owners.map(o => [o.groupId, o]));
+
+                const rendered: { user: SafeUser; isMember: boolean }[] = [];
+                for (const owner of owners) {
+                  rendered.push({ user: owner, isMember: false });
+                  const groupMembers = members.filter(m => m.groupId === owner.groupId);
+                  for (const m of groupMembers) rendered.push({ user: m, isMember: true });
+                }
+                // Members ohne dazugehörigen Owner (Edge-Case)
+                const orphanMembers = members.filter(m => !ownersByGroup.has(m.groupId));
+                for (const m of orphanMembers) rendered.push({ user: m, isMember: true });
+                // User ohne groupRole (Legacy / pre-Migration)
+                for (const u of ungrouped) rendered.push({ user: u, isMember: false });
+
+                return rendered.map(({ user: u, isMember }) => {
+                  const sc    = STATUS_COLOR[u.status] ?? STATUS_COLOR.inactive;
+                  const admin = isAdmin(u.email);
+                  return (
+                    <tr key={u.email} style={{
+                      borderBottom: '1px solid #f0ede8',
+                      backgroundColor: admin ? '#f2f6f2' : isMember ? '#fbfaf5' : 'transparent',
+                    }}>
+                      <td className="px-4 py-3 font-medium" style={{ color: '#2c2420', paddingLeft: isMember ? 32 : 16 }}>
+                        <div className="flex items-center gap-2">
+                          {isMember && <span style={{ color: '#c49a6c', fontWeight: 'bold' }}>↳</span>}
+                          {u.firstName} {u.lastName}
+                          {admin && (
+                            <span
+                              className="px-1.5 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wide"
+                              style={{ backgroundColor: '#4a7a4e', color: '#fff' }}
+                              title="Administrator-Account — wird in den Statistiken nicht mitgezählt"
+                            >
+                              ★ Admin
+                            </span>
+                          )}
+                          {isMember && (
+                            <span className="px-1.5 py-0.5 rounded-md text-[10px] font-semibold" style={{ backgroundColor: '#f5ece0', color: '#c49a6c' }}>
+                              Mitglied
+                            </span>
+                          )}
+                        </div>
+                      </td>
+                      <td className="px-4 py-3" style={{ color: '#5a4e48' }}>{u.email}</td>
+                      <td className="px-4 py-3 text-xs" style={{ color: '#5a4e48' }}>
+                        {groupNameById(u.groupId)}
+                      </td>
+                      <td className="px-4 py-3">
+                        <span className="px-2 py-0.5 rounded-full text-xs font-semibold" style={{ backgroundColor: '#f2e5e0', color: '#b5614a' }}>
+                          {PLAN_LABEL[u.plan] ?? u.plan}
+                        </span>
+                      </td>
+                      <td className="px-4 py-3">
+                        <span className="px-2 py-0.5 rounded-full text-xs font-semibold" style={sc}>
+                          {u.status === 'active' ? 'Aktiv' : u.status === 'pending' ? 'Ausstehend' : 'Inaktiv'}
+                        </span>
+                      </td>
+                      <td className="px-4 py-3 text-xs" style={{ color: '#9c8c84' }}>
+                        {u.registeredAt.slice(0, 10)}
+                      </td>
+                      <td className="px-4 py-3">
+                        {admin ? (
+                          <span className="text-xs italic" style={{ color: '#9c8c84' }}>
+                            —
+                          </span>
                         ) : (
-                          <button
-                            onClick={() => patch(u.email, 'active')}
-                            disabled={!!loading}
-                            className="px-2.5 py-1 rounded-lg text-xs font-semibold transition-opacity hover:opacity-70"
-                            style={{ backgroundColor: '#e8f5e9', color: '#2e7d32' }}
-                          >
-                            {loading === u.email + 'active' ? '…' : 'Aktivieren'}
-                          </button>
+                          <div className="flex gap-1.5">
+                            {u.status === 'active' ? (
+                              <button
+                                onClick={() => patch(u.email, 'inactive')}
+                                disabled={!!loading}
+                                className="px-2.5 py-1 rounded-lg text-xs font-semibold transition-opacity hover:opacity-70"
+                                style={{ backgroundColor: '#fce4ec', color: '#c62828' }}
+                              >
+                                {loading === u.email + 'inactive' ? '…' : 'Deaktivieren'}
+                              </button>
+                            ) : (
+                              <button
+                                onClick={() => patch(u.email, 'active')}
+                                disabled={!!loading}
+                                className="px-2.5 py-1 rounded-lg text-xs font-semibold transition-opacity hover:opacity-70"
+                                style={{ backgroundColor: '#e8f5e9', color: '#2e7d32' }}
+                              >
+                                {loading === u.email + 'active' ? '…' : 'Aktivieren'}
+                              </button>
+                            )}
+                            <button
+                              onClick={() => setConfirm(u.email)}
+                              className="px-2.5 py-1 rounded-lg text-xs font-semibold transition-opacity hover:opacity-70"
+                              style={{ backgroundColor: '#f7f4ee', color: '#9c8c84', border: '1px solid #e0d8ce' }}
+                            >
+                              Löschen
+                            </button>
+                          </div>
                         )}
-                        <button
-                          onClick={() => setConfirm(u.email)}
-                          className="px-2.5 py-1 rounded-lg text-xs font-semibold transition-opacity hover:opacity-70"
-                          style={{ backgroundColor: '#f7f4ee', color: '#9c8c84', border: '1px solid #e0d8ce' }}
-                        >
-                          Löschen
-                        </button>
-                      </div>
-                    </td>
-                  </tr>
-                );
-              })}
+                      </td>
+                    </tr>
+                  );
+                });
+              })()}
             </tbody>
           </table>
         </div>

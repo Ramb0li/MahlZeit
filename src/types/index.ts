@@ -101,6 +101,7 @@ export interface AppSettings {
   theme?: import('@/lib/themes').ThemeId;
   promotions: PromotionSettings;
   weekSwitchDay?: number;   // 0=Sonntag (default), 1=Mo, ..., 6=Sa — ab diesem Tag nächste Woche anzeigen
+  allergiesAndAversions?: string[];  // Allergene & Abneigungen — Rezepte mit diesen Zutaten ausblenden
 }
 
 export interface WeatherDay {

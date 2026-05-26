@@ -1,6 +1,7 @@
 export const dynamic = 'force-dynamic';
 
 import { NextResponse } from 'next/server';
+import { getSessionWithGroup as getSession } from '@/lib/session';
 import { getRecipes, getConstraints, getWeatherCache, getWeekPlan, saveWeekPlan, getSettings } from '@/lib/data';
 import { suggestWeek, suggestRecipe } from '@/lib/suggestions';
 import { getCurrentSeason, getWeatherTypeFromTemp } from '@/lib/utils';
@@ -8,13 +9,18 @@ import type { WeatherType, DayPlan, DietType } from '@/types';
 
 export async function POST(request: Request) {
   try {
+    const session = await getSession();
+    if (!session)         return NextResponse.json({ error: 'Nicht angemeldet' }, { status: 401 });
+    if (!session.groupId) return NextResponse.json({ error: 'Keine Gruppe zugeordnet' }, { status: 403 });
+    const groupId = session.groupId;
+
     const { weekId, dayIndex, mealType } = await request.json();
 
     const [allRecipes, constraints, weatherCache, settings] = await Promise.all([
-      getRecipes(),
-      getConstraints(),
+      getRecipes(groupId),
+      getConstraints(groupId),
       getWeatherCache(),
-      getSettings(),
+      getSettings(groupId),
     ]);
 
     // Archivierte Rezepte nie vorschlagen; Diät-Filter anwenden
@@ -43,7 +49,7 @@ export async function POST(request: Request) {
     if (dayIndex !== undefined && mealType) {
       const constraint = constraints.find((c) => c.dayOfWeek === dayIndex);
       const weatherType = weatherTypes[dayIndex] ?? 'neutral';
-      const currentPlan = await getWeekPlan(weekId);
+      const currentPlan = await getWeekPlan(weekId, groupId);
       const usedIds = Object.values(currentPlan?.days ?? {}).flatMap((d) =>
         [d.dinner?.recipeId, d.lunch?.recipeId].filter(Boolean) as string[]
       );
@@ -54,18 +60,20 @@ export async function POST(request: Request) {
         constraint,
         usedThisWeek: usedIds,
         lunchOnly: mealType === 'lunch',
+        allergiesAndAversions: settings.allergiesAndAversions,
       });
 
       return NextResponse.json({ recipeId: suggestion?.id ?? null, recipe: suggestion });
     }
 
     const suggestions = suggestWeek(recipes, constraints, weatherTypes, season, {
-      showBreakfast: settings.showBreakfast ?? false,
-      showLunch:     settings.showLunch     ?? false,
-      showDinner:    settings.showDinner    ?? true,
+      showBreakfast:         settings.showBreakfast        ?? false,
+      showLunch:             settings.showLunch             ?? false,
+      showDinner:            settings.showDinner            ?? true,
+      allergiesAndAversions: settings.allergiesAndAversions,
     });
 
-    let plan = await getWeekPlan(weekId);
+    let plan = await getWeekPlan(weekId, groupId);
     if (!plan) plan = { weekId, startDate: '', days: {} };
 
     for (const [dayStr, meals] of Object.entries(suggestions)) {
@@ -78,7 +86,7 @@ export async function POST(request: Request) {
       if (meals.breakfast) plan.days[day].breakfast = { recipeId: meals.breakfast };
     }
 
-    await saveWeekPlan(plan);
+    await saveWeekPlan(plan, groupId);
     return NextResponse.json(plan);
   } catch (err) {
     console.error(err);

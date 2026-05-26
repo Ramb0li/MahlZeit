@@ -1,14 +1,24 @@
 export const dynamic = 'force-dynamic';
 
 import { NextResponse } from 'next/server';
+import { getSessionWithGroup as getSession } from '@/lib/session';
 import { getWeekPlan, saveWeekPlan } from '@/lib/data';
+
+async function requireGroup() {
+  const session = await getSession();
+  if (!session)         return { error: NextResponse.json({ error: 'Nicht angemeldet' }, { status: 401 }) };
+  if (!session.groupId) return { error: NextResponse.json({ error: 'Keine Gruppe zugeordnet' }, { status: 403 }) };
+  return { groupId: session.groupId };
+}
 
 export async function GET(request: Request) {
   try {
+    const gate = await requireGroup();
+    if ('error' in gate) return gate.error;
     const { searchParams } = new URL(request.url);
     const weekId = searchParams.get('weekId');
     if (!weekId) return NextResponse.json({ error: 'weekId fehlt' }, { status: 400 });
-    const plan = await getWeekPlan(weekId);
+    const plan = await getWeekPlan(weekId, gate.groupId);
     return NextResponse.json(plan ?? { weekId, startDate: '', days: {} });
   } catch {
     return NextResponse.json({ error: 'Fehler' }, { status: 500 });
@@ -17,11 +27,13 @@ export async function GET(request: Request) {
 
 export async function DELETE(request: Request) {
   try {
+    const gate = await requireGroup();
+    if ('error' in gate) return gate.error;
     const { searchParams } = new URL(request.url);
     const weekId = searchParams.get('weekId');
     if (!weekId) return NextResponse.json({ error: 'weekId fehlt' }, { status: 400 });
     const empty = { weekId, startDate: '', days: {} };
-    await saveWeekPlan(empty);
+    await saveWeekPlan(empty, gate.groupId);
     return NextResponse.json(empty);
   } catch {
     return NextResponse.json({ error: 'Fehler' }, { status: 500 });
@@ -30,19 +42,20 @@ export async function DELETE(request: Request) {
 
 export async function PUT(request: Request) {
   try {
+    const gate = await requireGroup();
+    if ('error' in gate) return gate.error;
     const { weekId, day, mealType, slot, toggleConstraintId } = await request.json();
     if (!weekId) return NextResponse.json({ error: 'weekId fehlt' }, { status: 400 });
 
-    let plan = await getWeekPlan(weekId);
+    let plan = await getWeekPlan(weekId, gate.groupId);
     if (!plan) plan = { weekId, startDate: '', days: {} };
 
-    // Toggle a constraint as disabled for this week
     if (toggleConstraintId) {
       const ids = plan.disabledConstraintIds ?? [];
       plan.disabledConstraintIds = ids.includes(toggleConstraintId)
         ? ids.filter(id => id !== toggleConstraintId)
         : [...ids, toggleConstraintId];
-      await saveWeekPlan(plan);
+      await saveWeekPlan(plan, gate.groupId);
       return NextResponse.json(plan);
     }
 
@@ -59,7 +72,7 @@ export async function PUT(request: Request) {
     else if (mealType === 'breakfast')  plan.days[day].breakfast = slot;
     else if (mealType === 'showLunch')  plan.days[day].showLunch = slot;
 
-    await saveWeekPlan(plan);
+    await saveWeekPlan(plan, gate.groupId);
     return NextResponse.json(plan);
   } catch {
     return NextResponse.json({ error: 'Fehler' }, { status: 500 });

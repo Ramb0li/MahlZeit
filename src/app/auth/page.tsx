@@ -70,10 +70,19 @@ function AuthInner() {
   const initialTab  = params.get('tab') === 'register' ? 'register' : 'login';
   const initialPlan = (params.get('plan') as 'trial' | 'lifetime' | 'abo') ?? 'trial';
 
+  // Query-param Banner (Confirm-Flow)
+  const confirmed    = params.get('confirmed') === '1';
+  const tokenError   = params.get('error'); // 'invalid_token' | 'expired_token'
+
   const [tab,       setTab]       = useState<'login' | 'register'>(initialTab);
   const [plan,      setPlan]      = useState<'trial' | 'lifetime' | 'abo'>(initialPlan);
   const [loading,   setLoading]   = useState(false);
   const [error,     setError]     = useState('');
+
+  // Pending confirmation state (nach Register oder nach Login mit unbestätigter E-Mail)
+  const [pendingEmail,   setPendingEmail]   = useState<string | null>(null);
+  const [resending,      setResending]      = useState(false);
+  const [resendNotice,   setResendNotice]   = useState('');
 
   // Login fields
   const [loginEmail,    setLoginEmail]    = useState('');
@@ -95,6 +104,7 @@ function AuthInner() {
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
+    setResendNotice('');
     setLoading(true);
     try {
       const res  = await fetch('/api/auth/login', {
@@ -103,7 +113,14 @@ function AuthInner() {
         body:    JSON.stringify({ email: loginEmail, password: loginPassword }),
       });
       const data = await res.json();
-      if (!res.ok) { setError(data.error ?? 'Fehler'); return; }
+      if (!res.ok) {
+        if (data.needsConfirmation && data.email) {
+          setPendingEmail(data.email);
+        }
+        setError(data.error ?? 'Fehler');
+        return;
+      }
+      setPendingEmail(null);
       router.push(data.redirect ?? '/app');
     } finally {
       setLoading(false);
@@ -114,6 +131,7 @@ function AuthInner() {
   const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
+    setResendNotice('');
     if (regPassword !== regConfirm) { setError('Passwörter stimmen nicht überein.'); return; }
     if (regPassword.length < 8)     { setError('Passwort muss mindestens 8 Zeichen haben.'); return; }
     setLoading(true);
@@ -125,10 +143,37 @@ function AuthInner() {
       });
       const data = await res.json();
       if (!res.ok) { setError(data.error ?? 'Fehler'); return; }
+      if (data.pendingConfirmation) {
+        setPendingEmail(data.email ?? regEmail);
+        setTab('login');
+        return;
+      }
       if (data.stripeUrl)  { window.location.href = data.stripeUrl; return; }
       if (data.redirect)   { router.push(data.redirect); }
     } finally {
       setLoading(false);
+    }
+  };
+
+  /* ── Resend confirmation ── */
+  const handleResend = async () => {
+    if (!pendingEmail) return;
+    setResending(true);
+    setResendNotice('');
+    try {
+      const res  = await fetch('/api/auth/resend-confirmation', {
+        method:  'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body:    JSON.stringify({ email: pendingEmail }),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        setResendNotice(data.error ?? 'Fehler beim Versand');
+      } else {
+        setResendNotice('Bestätigungs-E-Mail wurde erneut gesendet.');
+      }
+    } finally {
+      setResending(false);
     }
   };
 
@@ -161,6 +206,69 @@ function AuthInner() {
           </div>
           <div className="lp-login-logo-sub">Menüplaner</div>
         </div>
+
+        {/* Confirm-Flow Banner (Erfolg / Fehler) */}
+        {confirmed && (
+          <div
+            className="mb-4 px-4 py-3 rounded-xl text-sm flex items-start gap-2"
+            style={{ backgroundColor: '#e8f2e8', color: '#2e5a32', border: '1px solid #c8d8c8' }}
+          >
+            <span style={{ fontSize: 18 }}>✓</span>
+            <div>
+              <strong>E-Mail bestätigt!</strong>
+              <p style={{ margin: '2px 0 0', fontSize: 13, opacity: 0.85 }}>
+                Du kannst dich jetzt anmelden.
+              </p>
+            </div>
+          </div>
+        )}
+        {tokenError === 'invalid_token' && (
+          <div
+            className="mb-4 px-4 py-3 rounded-xl text-sm"
+            style={{ backgroundColor: '#fce4ec', color: '#c62828' }}
+          >
+            <strong>Ungültiger Bestätigungslink.</strong>
+            <p style={{ margin: '2px 0 0', fontSize: 13, opacity: 0.85 }}>
+              Bitte fordere unten einen neuen Link an.
+            </p>
+          </div>
+        )}
+        {tokenError === 'expired_token' && (
+          <div
+            className="mb-4 px-4 py-3 rounded-xl text-sm"
+            style={{ backgroundColor: '#fff3e0', color: '#e65100' }}
+          >
+            <strong>Link abgelaufen.</strong>
+            <p style={{ margin: '2px 0 0', fontSize: 13, opacity: 0.85 }}>
+              Der Bestätigungslink war nur 24 Stunden gültig — bitte logge dich ein und fordere einen neuen Link an.
+            </p>
+          </div>
+        )}
+
+        {/* Pending-Confirmation Hinweis (nach Register oder Login-Versuch) */}
+        {pendingEmail && (
+          <div
+            className="mb-4 px-4 py-3 rounded-xl text-sm"
+            style={{ backgroundColor: '#eef4ee', color: '#2e5a32', border: '1px solid #c8d8c8' }}
+          >
+            <strong>📧 Bitte E-Mail prüfen und bestätigen</strong>
+            <p style={{ margin: '4px 0 8px', fontSize: 13, opacity: 0.85 }}>
+              Wir haben dir einen Bestätigungslink an <strong>{pendingEmail}</strong> gesendet.
+              Klicke auf den Link in der E-Mail, um deinen Account zu aktivieren.
+            </p>
+            <button
+              onClick={handleResend}
+              disabled={resending}
+              className="text-xs font-semibold underline"
+              style={{ color: '#4a7a4e', cursor: resending ? 'not-allowed' : 'pointer', opacity: resending ? 0.6 : 1 }}
+            >
+              {resending ? 'Wird gesendet…' : 'E-Mail erneut senden'}
+            </button>
+            {resendNotice && (
+              <p style={{ margin: '6px 0 0', fontSize: 12, color: '#4a7a4e' }}>{resendNotice}</p>
+            )}
+          </div>
+        )}
 
         {/* Tabs */}
         <div

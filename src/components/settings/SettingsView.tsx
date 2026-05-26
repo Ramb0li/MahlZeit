@@ -1,9 +1,10 @@
 'use client';
-import { useState } from 'react';
-import { Plus, Trash2, Save, ChevronDown, ChevronUp } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Plus, Trash2, Save, ChevronDown, ChevronUp, Search, X, Users, Mail, Edit3 } from 'lucide-react';
 import { THEMES } from '@/lib/themes';
 import type { ThemeId } from '@/lib/themes';
 import type { AppSettings, DayConstraint, Child } from '@/types';
+import type { Group, GroupRole } from '@/lib/groups';
 
 const DAY_LABELS = ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'];
 const CONSTRAINT_LABELS = {
@@ -11,6 +12,29 @@ const CONSTRAINT_LABELS = {
   mealprep: 'Mealprep',
   custom: 'Anpassen',
 };
+
+const ALLERGENS = [
+  { id: 'gluten',       label: 'Gluten',       emoji: '🌾' },
+  { id: 'weizen',       label: 'Weizen',        emoji: '🌾' },
+  { id: 'laktose',      label: 'Laktose',       emoji: '🥛' },
+  { id: 'milch',        label: 'Milch',         emoji: '🍼' },
+  { id: 'ei',           label: 'Ei',            emoji: '🥚' },
+  { id: 'fisch',        label: 'Fisch',         emoji: '🐟' },
+  { id: 'schalentiere', label: 'Schalentiere',  emoji: '🦐' },
+  { id: 'erdnüsse',     label: 'Erdnüsse',      emoji: '🥜' },
+  { id: 'haselnüsse',   label: 'Haselnüsse',    emoji: '🌰' },
+  { id: 'walnüsse',     label: 'Walnüsse',      emoji: '🌰' },
+  { id: 'soja',         label: 'Soja',          emoji: '🫘' },
+  { id: 'sesam',        label: 'Sesam',         emoji: '🌻' },
+  { id: 'sellerie',     label: 'Sellerie',      emoji: '🥬' },
+  { id: 'senf',         label: 'Senf',          emoji: '🟡' },
+  { id: 'lupinen',      label: 'Lupinen',       emoji: '🌿' },
+  { id: 'alkohol',      label: 'Alkohol',       emoji: '🍷' },
+  { id: 'fruktose',     label: 'Fruktose',      emoji: '🍬' },
+  { id: 'sorbit',       label: 'Sorbit',        emoji: '🍬' },
+] as const;
+
+const PRESET_AVERSIONS = ['Schweinefleisch', 'Fisch', 'Ersatzprodukte', 'Koriander', 'Rosenkohl', 'Pilze'];
 
 const WEEK_SWITCH_OPTIONS = [
   { value: 1, label: 'Montag' },
@@ -44,18 +68,139 @@ const inputStyle = {
   outline: 'none',
 } as const;
 
+interface MemberSummary {
+  email:     string;
+  firstName: string;
+  lastName:  string;
+  groupRole: GroupRole;
+}
+
+interface PendingInviteSummary {
+  id:    string;
+  email: string;
+}
+
 interface SettingsViewProps {
   initialSettings: AppSettings;
   initialConstraints: DayConstraint[];
+  isPremium?: boolean;
+  group?: Group | null;
+  groupRole?: GroupRole;
   onSettingsChange?: (settings: AppSettings) => void;
   onConstraintsChange?: (constraints: DayConstraint[]) => void;
+  onGroupChange?: (group: Group) => void;
 }
 
-export function SettingsView({ initialSettings, initialConstraints, onSettingsChange, onConstraintsChange }: SettingsViewProps) {
-  const [settings, setSettings]         = useState<AppSettings>(initialSettings);
-  const [constraints, setConstraints]   = useState<DayConstraint[]>(initialConstraints);
-  const [saved, setSaved]               = useState(false);
-  const [openSections, setOpenSections] = useState<Set<string>>(new Set(['theme', 'meals']));
+export function SettingsView({
+  initialSettings,
+  initialConstraints,
+  isPremium = false,
+  group = null,
+  groupRole = 'member',
+  onSettingsChange,
+  onConstraintsChange,
+  onGroupChange,
+}: SettingsViewProps) {
+  const isOwner = groupRole === 'owner';
+  const [settings, setSettings]           = useState<AppSettings>(initialSettings);
+  const [constraints, setConstraints]     = useState<DayConstraint[]>(initialConstraints);
+  const [saved, setSaved]                 = useState(false);
+  const [openSections, setOpenSections]   = useState<Set<string>>(new Set(['theme', 'meals']));
+  const [aversionSearch, setAversionSearch] = useState('');
+
+  // Group state
+  const [groupName, setGroupName]       = useState(group?.name ?? '');
+  const [renaming, setRenaming]         = useState(false);
+  const [members, setMembers]           = useState<MemberSummary[]>([]);
+  const [pendingInvites, setPendingInvites] = useState<PendingInviteSummary[]>([]);
+  const [inviteEmail, setInviteEmail]   = useState('');
+  const [inviting, setInviting]         = useState(false);
+  const [familyNotice, setFamilyNotice] = useState<{ type: 'ok' | 'err'; text: string } | null>(null);
+
+  // Mitglieder + offene Einladungen laden, wenn Section geöffnet wird
+  useEffect(() => {
+    if (!group) return;
+    let cancelled = false;
+    (async () => {
+      try {
+        const res = await fetch('/api/groups/members');
+        if (res.ok && !cancelled) {
+          const data = await res.json();
+          setMembers(data as MemberSummary[]);
+        }
+      } catch {}
+    })();
+    return () => { cancelled = true; };
+  }, [group]);
+
+  const reloadMembers = async () => {
+    try {
+      const res = await fetch('/api/groups/members');
+      if (res.ok) setMembers(await res.json());
+    } catch {}
+  };
+
+  const handleRenameGroup = async () => {
+    if (!groupName.trim() || groupName.trim() === group?.name) return;
+    setRenaming(true);
+    setFamilyNotice(null);
+    try {
+      const res  = await fetch('/api/groups/rename', {
+        method:  'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body:    JSON.stringify({ name: groupName.trim() }),
+      });
+      const data = await res.json();
+      if (!res.ok) { setFamilyNotice({ type: 'err', text: data.error ?? 'Fehler' }); return; }
+      onGroupChange?.(data as Group);
+      setFamilyNotice({ type: 'ok', text: 'Gruppenname aktualisiert.' });
+    } finally { setRenaming(false); }
+  };
+
+  const handleInvite = async () => {
+    if (!inviteEmail.includes('@')) { setFamilyNotice({ type: 'err', text: 'Ungültige E-Mail.' }); return; }
+    setInviting(true);
+    setFamilyNotice(null);
+    try {
+      const res  = await fetch('/api/groups/invite', {
+        method:  'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body:    JSON.stringify({ email: inviteEmail.trim() }),
+      });
+      const data = await res.json();
+      if (!res.ok) { setFamilyNotice({ type: 'err', text: data.error ?? 'Fehler' }); return; }
+      setFamilyNotice({ type: 'ok', text: `Einladung an ${inviteEmail} versendet.` });
+      setPendingInvites(prev => [...prev, { id: data.invite.id, email: data.invite.email }]);
+      setInviteEmail('');
+    } finally { setInviting(false); }
+  };
+
+  const handleRemoveMember = async (email: string) => {
+    if (!confirm(`${email} wirklich aus der Gruppe entfernen?`)) return;
+    setFamilyNotice(null);
+    try {
+      const res  = await fetch('/api/groups/members', {
+        method:  'DELETE',
+        headers: { 'Content-Type': 'application/json' },
+        body:    JSON.stringify({ email }),
+      });
+      const data = await res.json();
+      if (!res.ok) { setFamilyNotice({ type: 'err', text: data.error ?? 'Fehler' }); return; }
+      await reloadMembers();
+      setFamilyNotice({ type: 'ok', text: `${email} entfernt.` });
+    } catch {}
+  };
+
+  const handleCancelInvite = async (inviteId: string) => {
+    try {
+      const res = await fetch('/api/groups/invite', {
+        method:  'DELETE',
+        headers: { 'Content-Type': 'application/json' },
+        body:    JSON.stringify({ inviteId }),
+      });
+      if (res.ok) setPendingInvites(prev => prev.filter(i => i.id !== inviteId));
+    } catch {}
+  };
 
   const toggleSection = (id: string) =>
     setOpenSections(prev => {
@@ -150,6 +295,170 @@ export function SettingsView({ initialSettings, initialConstraints, onSettingsCh
   return (
     <div className="max-w-2xl space-y-3">
 
+      {/* ── Familie & Mitglieder ─────────────────────────────────────────── */}
+      {group && (
+        <Section
+          id="family"
+          title="Familie & Mitglieder"
+          sub={isOwner
+            ? `Lade bis zu 5 Personen ein (aktuell ${members.length} Mitglied${members.length === 1 ? '' : 'er'}${pendingInvites.length ? `, ${pendingInvites.length} offene Einladung${pendingInvites.length === 1 ? '' : 'en'}` : ''}).`
+            : `Du bist Mitglied der Gruppe "${group.name}".`
+          }
+        >
+          <div className="space-y-5">
+            {/* Notice banner */}
+            {familyNotice && (
+              <div className="px-3 py-2 rounded-xl text-xs" style={familyNotice.type === 'ok'
+                ? { backgroundColor: '#e8f2e8', color: '#2e5a32', border: '1px solid #c8d8c8' }
+                : { backgroundColor: '#fce4ec', color: '#c62828' }
+              }>
+                {familyNotice.text}
+              </div>
+            )}
+
+            {/* Gruppennamen ändern (nur Owner) */}
+            {isOwner && (
+              <div>
+                <label style={labelStyle}>
+                  <Edit3 size={12} style={{ display: 'inline', marginRight: 4 }} />
+                  Familienname
+                </label>
+                <div className="flex gap-2">
+                  <input
+                    type="text"
+                    value={groupName}
+                    onChange={e => setGroupName(e.target.value)}
+                    maxLength={60}
+                    style={{ ...inputStyle, flex: 1 }}
+                    placeholder="z.B. Familie Muster"
+                  />
+                  <button
+                    onClick={handleRenameGroup}
+                    disabled={renaming || groupName.trim() === group.name}
+                    className="px-3 py-1.5 rounded-xl text-xs font-semibold disabled:opacity-40 transition-opacity hover:opacity-80"
+                    style={{ backgroundColor: '#4a7a4e', color: '#fff' }}
+                  >
+                    {renaming ? '…' : 'Speichern'}
+                  </button>
+                </div>
+              </div>
+            )}
+
+            {/* Aktuelle Mitglieder */}
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: '#9c8c84' }}>
+                Aktuelle Mitglieder ({members.length})
+              </p>
+              <div className="space-y-2">
+                {members.map(m => (
+                  <div key={m.email} className="flex items-center gap-3 px-3 py-2 rounded-xl" style={{ backgroundColor: '#f7f4ee' }}>
+                    <div className="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold" style={{ backgroundColor: m.groupRole === 'owner' ? '#4a7a4e' : '#c49a6c', color: '#fff' }}>
+                      {(m.firstName?.[0] ?? '?').toUpperCase()}
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <p className="text-sm font-semibold truncate" style={{ color: '#2c2420' }}>
+                        {m.firstName} {m.lastName}
+                      </p>
+                      <p className="text-[11px] truncate" style={{ color: '#9c8c84' }}>{m.email}</p>
+                    </div>
+                    <span className="text-[10px] px-2 py-0.5 rounded-full font-semibold" style={m.groupRole === 'owner'
+                      ? { backgroundColor: '#e8f2e8', color: '#4a7a4e' }
+                      : { backgroundColor: '#f5ece0', color: '#c49a6c' }
+                    }>
+                      {m.groupRole === 'owner' ? 'Hauptuser' : 'Mitglied'}
+                    </span>
+                    {isOwner && m.groupRole !== 'owner' && (
+                      <button
+                        onClick={() => handleRemoveMember(m.email)}
+                        className="p-1 rounded-lg transition-colors"
+                        style={{ color: '#9c8c84' }}
+                        onMouseEnter={e => { (e.currentTarget as HTMLElement).style.backgroundColor = '#fce4ec'; (e.currentTarget as HTMLElement).style.color = '#c62828'; }}
+                        onMouseLeave={e => { (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent'; (e.currentTarget as HTMLElement).style.color = '#9c8c84'; }}
+                        title="Entfernen"
+                      >
+                        <Trash2 size={13} />
+                      </button>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Pending invites */}
+            {pendingInvites.length > 0 && (
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: '#9c8c84' }}>
+                  Offene Einladungen ({pendingInvites.length})
+                </p>
+                <div className="space-y-2">
+                  {pendingInvites.map(inv => (
+                    <div key={inv.id} className="flex items-center gap-3 px-3 py-2 rounded-xl" style={{ backgroundColor: '#fff3e0' }}>
+                      <Mail size={14} style={{ color: '#e65100' }} />
+                      <p className="text-sm flex-1 truncate" style={{ color: '#5a4e48' }}>{inv.email}</p>
+                      <span className="text-[10px] px-2 py-0.5 rounded-full font-semibold" style={{ backgroundColor: '#ffe0b2', color: '#e65100' }}>
+                        Wartet
+                      </span>
+                      {isOwner && (
+                        <button
+                          onClick={() => handleCancelInvite(inv.id)}
+                          className="p-1 rounded-lg" style={{ color: '#9c8c84' }}
+                          title="Einladung zurückziehen"
+                        >
+                          <X size={13} />
+                        </button>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Invite-Form: nur Owner mit Lifetime/Abo, max 5 total */}
+            {isOwner && (
+              isPremium ? (
+                members.length + pendingInvites.length < 5 ? (
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: '#9c8c84' }}>
+                      Neue Person einladen
+                    </p>
+                    <div className="flex gap-2">
+                      <input
+                        type="email"
+                        value={inviteEmail}
+                        onChange={e => setInviteEmail(e.target.value)}
+                        onKeyDown={e => e.key === 'Enter' && handleInvite()}
+                        placeholder="email@beispiel.ch"
+                        style={{ ...inputStyle, flex: 1 }}
+                      />
+                      <button
+                        onClick={handleInvite}
+                        disabled={inviting || !inviteEmail.trim()}
+                        className="flex items-center gap-1 px-3 py-1.5 rounded-xl text-xs font-semibold disabled:opacity-40 transition-opacity hover:opacity-80"
+                        style={{ backgroundColor: '#4a7a4e', color: '#fff' }}
+                      >
+                        <Mail size={12} />
+                        {inviting ? '…' : 'Einladen'}
+                      </button>
+                    </div>
+                    <p className="text-[11px] mt-2" style={{ color: '#9c8c84' }}>
+                      Die Person bekommt einen Link per E-Mail und kann ihren Namen + ein Passwort wählen.
+                    </p>
+                  </div>
+                ) : (
+                  <p className="text-xs px-3 py-2 rounded-xl" style={{ backgroundColor: '#fff3e0', color: '#e65100' }}>
+                    Maximum von 5 Personen erreicht. Entferne ein Mitglied, um eine neue Person einzuladen.
+                  </p>
+                )
+              ) : (
+                <p className="text-xs px-3 py-2 rounded-xl" style={{ backgroundColor: '#efe9df', color: '#9c8c84' }}>
+                  🔒 Einladungen sind nur für Lifetime- und Abo-Nutzer verfügbar.
+                </p>
+              )
+            )}
+          </div>
+        </Section>
+      )}
+
       {/* ── Theme picker ─────────────────────────────────────────────────── */}
       <Section id="theme" title="Design-Variante" sub="Wird nach dem Speichern sofort angewendet.">
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
@@ -239,10 +548,10 @@ export function SettingsView({ initialSettings, initialConstraints, onSettingsCh
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           {(
             [
-              { value: 'alle',         emoji: '🍽',  label: 'Alle Rezepte',  sub: 'Kein Filter' },
+              { value: 'alle',         emoji: '🍽',  label: 'Alle',          sub: 'Kein Filter' },
               { value: 'pescetarisch', emoji: '🐟',  label: 'Pescetarisch',  sub: 'Kein Fleisch' },
               { value: 'vegetarisch',  emoji: '🥗',  label: 'Vegetarisch',   sub: 'Kein Fisch' },
-              { value: 'vegan',        emoji: '🌿',  label: 'Vegan',         sub: 'Nur pflanzlich' },
+              { value: 'vegan',        emoji: '🌿',  label: 'Vegan',         sub: 'Pflanzlich' },
             ] as const
           ).map(({ value, emoji, label, sub }) => {
             const isActive = (settings.dietPreference ?? 'alle') === value;
@@ -250,21 +559,136 @@ export function SettingsView({ initialSettings, initialConstraints, onSettingsCh
               <button
                 key={value}
                 onClick={() => setSettings((s) => ({ ...s, dietPreference: value }))}
-                className="flex items-center gap-3 p-4 rounded-2xl border-2 text-left transition-all"
+                className="flex flex-col items-center gap-1 p-3 rounded-2xl border-2 text-center transition-all"
                 style={isActive
                   ? { borderColor: '#4a7a4e', backgroundColor: '#e8f2e8' }
                   : { borderColor: '#e0d8ce' }
                 }
               >
                 <span className="text-2xl">{emoji}</span>
-                <div>
-                  <p className="text-sm font-semibold leading-tight" style={{ color: isActive ? '#4a7a4e' : '#2c2420' }}>{label}</p>
-                  <p className="text-[11px] mt-0.5" style={{ color: '#9c8c84' }}>{sub}</p>
-                </div>
+                <p className="text-xs font-semibold leading-tight" style={{ color: isActive ? '#4a7a4e' : '#2c2420' }}>{label}</p>
+                <p className="text-[10px]" style={{ color: '#9c8c84' }}>{sub}</p>
               </button>
             );
           })}
         </div>
+      </Section>
+
+      {/* ── Allergien & Abneigungen ──────────────────────────────────────── */}
+      <Section id="allergies" title="Allergien & Abneigungen" sub="Rezepte mit diesen Zutaten werden ausgegraut und nicht vorgeschlagen.">
+        {(() => {
+          const selected = settings.allergiesAndAversions ?? [];
+          const toggle = (id: string) =>
+            setSettings(s => ({
+              ...s,
+              allergiesAndAversions: selected.includes(id)
+                ? selected.filter(x => x !== id)
+                : [...selected, id],
+            }));
+
+          const customAversions = selected.filter(
+            id => !ALLERGENS.some(a => a.id === id) && !PRESET_AVERSIONS.map(p => p.toLowerCase()).includes(id)
+          );
+
+          const filteredPresets = PRESET_AVERSIONS.filter(p =>
+            aversionSearch === '' || p.toLowerCase().includes(aversionSearch.toLowerCase())
+          );
+
+          return (
+            <div className="space-y-5">
+              {/* Allergen chips */}
+              <div>
+                <p className="text-xs font-semibold mb-3" style={{ color: '#5a4e48' }}>Allergene & Intoleranzen</p>
+                <div className="flex flex-wrap gap-2">
+                  {ALLERGENS.map(({ id, label, emoji }) => {
+                    const active = selected.includes(id);
+                    return (
+                      <button
+                        key={id}
+                        onClick={() => toggle(id)}
+                        className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold border-2 transition-all"
+                        style={active
+                          ? { borderColor: '#b5614a', backgroundColor: '#fce8e3', color: '#b5614a' }
+                          : { borderColor: '#e0d8ce', backgroundColor: '#f7f4ee', color: '#5a4e48' }
+                        }
+                      >
+                        <span>{emoji}</span>
+                        {label}
+                        {active && <X size={10} />}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* Aversions */}
+              <div>
+                <p className="text-xs font-semibold mb-3" style={{ color: '#5a4e48' }}>Sonstige Abneigungen</p>
+                <div className="flex flex-wrap gap-2 mb-3">
+                  {filteredPresets.map(p => {
+                    const id = p.toLowerCase();
+                    const active = selected.includes(id);
+                    return (
+                      <button
+                        key={id}
+                        onClick={() => toggle(id)}
+                        className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold border-2 transition-all"
+                        style={active
+                          ? { borderColor: '#b5614a', backgroundColor: '#fce8e3', color: '#b5614a' }
+                          : { borderColor: '#e0d8ce', backgroundColor: '#f7f4ee', color: '#5a4e48' }
+                        }
+                      >
+                        {p}
+                        {active && <X size={10} />}
+                      </button>
+                    );
+                  })}
+                  {customAversions.map(id => (
+                    <button
+                      key={id}
+                      onClick={() => toggle(id)}
+                      className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold border-2 transition-all"
+                      style={{ borderColor: '#b5614a', backgroundColor: '#fce8e3', color: '#b5614a' }}
+                    >
+                      {id}
+                      <X size={10} />
+                    </button>
+                  ))}
+                </div>
+
+                {/* Search / add custom aversion */}
+                <div className="relative">
+                  <Search size={13} className="absolute left-3 top-1/2 -translate-y-1/2" style={{ color: '#9c8c84' }} />
+                  <input
+                    type="text"
+                    value={aversionSearch}
+                    onChange={e => setAversionSearch(e.target.value)}
+                    onKeyDown={e => {
+                      if (e.key === 'Enter' && aversionSearch.trim()) {
+                        const id = aversionSearch.trim().toLowerCase();
+                        if (!selected.includes(id)) toggle(id);
+                        setAversionSearch('');
+                      }
+                    }}
+                    placeholder="Suchen oder hinzufügen (Enter)"
+                    style={{ ...inputStyle, width: '100%', paddingLeft: '32px' }}
+                  />
+                </div>
+                {aversionSearch && filteredPresets.length === 0 && (
+                  <p className="text-xs mt-1.5" style={{ color: '#9c8c84' }}>
+                    Enter drücken um &quot;{aversionSearch}&quot; hinzuzufügen
+                  </p>
+                )}
+              </div>
+
+              {selected.length > 0 && (
+                <p className="text-xs" style={{ color: '#9c8c84' }}>
+                  {selected.length} Einschränkung{selected.length !== 1 ? 'en' : ''} aktiv — Rezepte mit diesen Zutaten werden ausgegraut.
+                </p>
+              )}
+            </div>
+          );
+        })()}
       </Section>
 
       {/* ── Household ────────────────────────────────────────────────────── */}

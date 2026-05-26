@@ -38,12 +38,13 @@ export function RecipeForm({ recipe, onSave, onCancel }: RecipeFormProps) {
   const [timeMinutes, setTimeMinutes]         = useState(recipe?.timeMinutes ?? 30);
   const [weatherType, setWeatherType]         = useState<WeatherType>(recipe?.weatherType ?? 'neutral');
   const [seasons, setSeasons]                 = useState<Season[]>(recipe?.season ?? ['ganzjährig']);
-  const [dietType, setDietType]               = useState<DietType>(recipe?.dietType ?? 'vegan');
+  const [dietType, setDietType]               = useState<DietType | 'alle'>(recipe?.dietType ?? 'alle');
   const [isMealprep, setIsMealprep]           = useState(recipe?.isMealprep ?? false);
   const [isSuitableForLunch, setIsSuitableForLunch] = useState(recipe?.isSuitableForLunch ?? false);
   const [source, setSource]                   = useState(recipe?.source ?? 'eigenes Rezept');
   const [basePortions, setBasePortions]       = useState(recipe?.basePortions ?? 4);
   const [description, setDescription]         = useState(recipe?.description ?? '');
+  const [stepsText, setStepsText]             = useState((recipe?.steps ?? []).join('\n'));
   const [imageUrl, setImageUrl]               = useState(recipe?.imageUrl ?? '');
   const [imageZutaten, setImageZutaten]       = useState(recipe?.imageZutaten ?? '');
   const [imageKochen, setImageKochen]         = useState(recipe?.imageKochen ?? '');
@@ -96,10 +97,15 @@ export function RecipeForm({ recipe, onSave, onCancel }: RecipeFormProps) {
       name, category, timeMinutes, timeLabel,
       ingredients: ingredients.filter((ing) => ing.name.trim()),
       season: seasons.length ? seasons : ['ganzjährig'],
-      weatherType, isMealprep, isSuitableForLunch, source, basePortions, description, dietType,
+      weatherType, isMealprep, isSuitableForLunch, source, basePortions, description,
+      // 'alle' bedeutet kein Diät-Filter → dietType im Recipe weglassen
+      ...(dietType !== 'alle' ? { dietType } : {}),
       imageUrl:     imageUrl     || null,
       imageZutaten: imageZutaten || null,
       imageKochen:  imageKochen  || null,
+      steps:        stepsText.split('\n').map(s => s.trim()).filter(Boolean).length
+                      ? stepsText.split('\n').map(s => s.trim()).filter(Boolean)
+                      : undefined,
     };
     onSave(r);
   };
@@ -161,17 +167,18 @@ export function RecipeForm({ recipe, onSave, onCancel }: RecipeFormProps) {
         {/* Ernährungsweise */}
         <div className="sm:col-span-2">
           <label style={labelStyle}>Ernährungsweise</label>
-          <div className="flex gap-2">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
             {([
-              { value: 'vegan',        label: '🌿 Vegan' },
-              { value: 'vegetarisch',  label: '🥗 Vegetarisch' },
+              { value: 'alle',         label: '🍽 Alle Rezepte' },
               { value: 'pescetarisch', label: '🐟 Pescetarisch' },
-            ] as { value: DietType; label: string }[]).map(({ value, label }) => (
+              { value: 'vegetarisch',  label: '🥗 Vegetarisch' },
+              { value: 'vegan',        label: '🌿 Vegan' },
+            ] as { value: DietType | 'alle'; label: string }[]).map(({ value, label }) => (
               <button
                 key={value}
                 type="button"
                 onClick={() => setDietType(value)}
-                className="flex-1 py-1.5 rounded-xl text-xs font-semibold transition-all"
+                className="py-1.5 px-2 rounded-xl text-xs font-semibold transition-all"
                 style={dietType === value ? chipActive : chipInactive}
               >
                 {label}
@@ -249,6 +256,21 @@ export function RecipeForm({ recipe, onSave, onCancel }: RecipeFormProps) {
             onChange={(e) => setDescription(e.target.value)}
             rows={2}
             style={{ ...inputStyle, resize: 'none' }}
+          />
+        </div>
+
+        {/* Zubereitungsschritte */}
+        <div className="sm:col-span-2">
+          <label style={labelStyle}>
+            Zubereitungsschritte{' '}
+            <span style={{ fontWeight: 400, color: '#9c8c84' }}>(ein Schritt pro Zeile)</span>
+          </label>
+          <textarea
+            value={stepsText}
+            onChange={(e) => setStepsText(e.target.value)}
+            rows={5}
+            placeholder={'1. Zwiebeln würfeln und in Öl andünsten.\n2. Tomaten hinzugeben und 10 min köcheln lassen.\n3. Mit Salz und Pfeffer abschmecken.'}
+            style={{ ...inputStyle, resize: 'vertical', fontFamily: 'inherit' }}
           />
         </div>
 

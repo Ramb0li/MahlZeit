@@ -1,0 +1,134 @@
+{
+  "g_1779664133369_admin": {
+    "2026-W21": {
+      "weekId": "2026-W21",
+      "startDate": "",
+      "days": {}
+    },
+    "2026-W22": {
+      "weekId": "2026-W22",
+      "startDate": "",
+      "days": {
+        "1": {
+          "dinner": {
+            "recipeId": "sal-03"
+          },
+          "showLunch": false,
+          "lunch": {
+            "recipeId": "sal-01"
+          }
+        },
+        "2": {
+          "dinner": {
+            "recipeId": "son-03"
+          },
+          "showLunch": false,
+          "lunch": {
+            "recipeId": "fvt-12"
+          }
+        },
+        "3": {
+          "dinner": {
+            "recipeId": "rei-05"
+          },
+          "showLunch": false,
+          "lunch": {
+            "recipeId": "sal-07"
+          }
+        },
+        "4": {
+          "dinner": {
+            "recipeId": "rei-04"
+          },
+          "showLunch": false,
+          "lunch": {
+            "recipeId": "rei-05"
+          }
+        },
+        "5": {
+          "dinner": {
+            "recipeId": "sup-06"
+          },
+          "showLunch": false,
+          "lunch": {
+            "recipeId": "rei-05"
+          }
+        },
+        "6": {
+          "dinner": {
+            "recipeId": "pas-04"
+          },
+          "showLunch": false,
+          "lunch": {
+            "recipeId": "sal-02"
+          }
+        },
+        "7": {
+          "dinner": {
+            "recipeId": "ofe-02"
+          },
+          "showLunch": false,
+          "lunch": {
+            "recipeId": "asi-01"
+          }
+        }
+      },
+      "disabledConstraintIds": []
+    },
+    "2026-W23": {
+      "weekId": "2026-W23",
+      "startDate": "",
+      "days": {
+        "1": {
+          "dinner": {
+            "recipeId": "sup-06",
+            "isLeftovers": false
+          },
+          "showLunch": false
+        },
+        "2": {
+          "dinner": {
+            "recipeId": "rei-04"
+          },
+          "showLunch": false
+        },
+        "3": {
+          "dinner": {
+            "recipeId": "rei-05"
+          },
+          "showLunch": false
+        },
+        "4": {
+          "dinner": {
+            "recipeId": "sal-04"
+          },
+          "showLunch": false,
+          "lunch": {
+            "recipeId": "rei-05"
+          }
+        },
+        "5": {
+          "dinner": {
+            "recipeId": "sal-03"
+          },
+          "showLunch": false,
+          "lunch": {
+            "recipeId": "rei-05"
+          }
+        },
+        "6": {
+          "dinner": {
+            "recipeId": "asi-01"
+          },
+          "showLunch": false
+        },
+        "7": {
+          "dinner": {
+            "recipeId": "sal-01"
+          },
+          "showLunch": false
+        }
+      }
+    }
+  }
+}

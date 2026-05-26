@@ -10,63 +10,71 @@
     "days": {
       "1": {
         "dinner": {
-          "recipeId": "asi-01"
-        },
-        "showLunch": false
-      },
-      "2": {
-        "dinner": {
-          "recipeId": "sal-04"
+          "recipeId": "sal-07"
         },
         "showLunch": false,
         "lunch": {
-          "recipeId": "ei-01",
-          "isLeftovers": false,
-          "sideRecipeId": null,
-          "sideIsLeftovers": false
+          "recipeId": "sal-05",
+          "portionOverride": 1
+        }
+      },
+      "2": {
+        "dinner": {
+          "recipeId": "rei-04"
+        },
+        "showLunch": false,
+        "lunch": {
+          "recipeId": "sal-03",
+          "isLeftovers": false
         }
       },
       "3": {
         "dinner": {
-          "recipeId": "sal-05"
+          "recipeId": "sal-03"
         },
         "showLunch": false,
         "lunch": {
-          "recipeId": null,
-          "isLeftovers": false
+          "recipeId": "fvt-11"
         }
       },
       "4": {
         "dinner": {
-          "recipeId": "pas-13"
+          "recipeId": "asi-01"
         },
         "showLunch": false,
         "lunch": {
-          "recipeId": "sal-05"
+          "recipeId": "sal-03"
         }
       },
       "5": {
         "dinner": {
-          "recipeId": "sal-02"
+          "recipeId": "ofe-02"
         },
         "showLunch": false,
         "lunch": {
-          "recipeId": "sal-05"
+          "recipeId": "sal-03"
         }
       },
       "6": {
         "dinner": {
-          "recipeId": "rei-05"
+          "recipeId": "pas-04"
         },
-        "showLunch": false
+        "showLunch": false,
+        "lunch": {
+          "recipeId": "pas-13"
+        }
       },
       "7": {
         "dinner": {
-          "recipeId": "sup-06"
+          "recipeId": "fvt-12"
         },
-        "showLunch": false
+        "showLunch": false,
+        "lunch": {
+          "recipeId": "sal-02"
+        }
       }
-    }
+    },
+    "disabledConstraintIds": []
   },
   "2026-W23": {
     "weekId": "2026-W23",

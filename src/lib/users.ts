@@ -19,6 +19,10 @@ export interface AppUser {
   stripeCustomerId?:    string;
   stripeSubscriptionId?: string;
   accessUntil?:         string;          // ISO date – for trial / abo
+  confirmationToken?:           string;  // Doppelt-Opt-In: Token aus crypto.randomBytes(32)
+  confirmationTokenExpiresAt?:  string;  // ISO date – Token ist 24h gültig
+  groupId?:                     string;  // Familie/Haushalt (siehe groups.ts)
+  groupRole?:                   'owner' | 'member';  // Rolle innerhalb der Gruppe
 }
 
 // ─── helpers ──────────────────────────────────────────────────────────────────
@@ -99,6 +103,11 @@ export async function updateUser(user: AppUser): Promise<void> {
     return;
   }
   await getRedis().set(K.user(user.email), user);
+}
+
+export async function getUsersByGroup(groupId: string): Promise<AppUser[]> {
+  const all = await getAllUsers();
+  return all.filter(u => u.groupId === groupId);
 }
 
 export async function deleteUser(email: string): Promise<void> {

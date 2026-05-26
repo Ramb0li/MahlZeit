@@ -8,18 +8,22 @@ import { cookies } from 'next/headers';
 
 export const TOKEN_COOKIE  = 'mz_token';
 export const COOKIE_MAX_AGE = 60 * 60 * 24 * 30; // 30 days
-export const ADMIN_EMAIL   = 'co@o-v-k.ch';
+export const ADMIN_EMAIL   = 'info@o-v-k.ch';
 
 function getSecret() {
-  const raw = process.env.JWT_SECRET ?? 'dev-fallback-secret-change-me';
+  // `||` statt `??` — leerer String (z.B. JWT_SECRET= in .env.local) muss auch den Fallback triggern,
+  // sonst crasht jose mit "Zero-length key is not supported".
+  const raw = process.env.JWT_SECRET || 'dev-fallback-secret-change-me';
   return new TextEncoder().encode(raw);
 }
 
 export interface SessionPayload {
-  email:   string;
-  plan:    'trial' | 'lifetime' | 'abo';
-  status:  'active' | 'inactive' | 'pending';
-  isAdmin: boolean;
+  email:      string;
+  plan:       'trial' | 'lifetime' | 'abo';
+  status:     'active' | 'inactive' | 'pending';
+  isAdmin:    boolean;
+  groupId?:   string;
+  groupRole?: 'owner' | 'member';
 }
 
 /** Sign a 30-day JWT — call only from API routes (Node runtime). */

@@ -6,6 +6,7 @@ import type {
   Promotion,
 } from '@/types';
 import { getCurrentSeason } from './utils';
+import { isRecipeExcluded } from './allergens';
 
 export interface SuggestionOptions {
   weatherType?: WeatherType;
@@ -15,6 +16,7 @@ export interface SuggestionOptions {
   excludeIds?: string[];
   lunchOnly?: boolean;
   usedThisWeek?: string[];
+  allergiesAndAversions?: string[];
 }
 
 function recipeScore(
@@ -61,12 +63,14 @@ export function suggestRecipe(
     p.product.toLowerCase().split(' ')[0]
   );
 
-  const available = recipes.filter(
-    (r) =>
-      !options.excludeIds?.includes(r.id) &&
-      !(options.constraint?.constraint === 'leftovers') &&
-      (options.lunchOnly ? r.isSuitableForLunch : true)
-  );
+  const excluded = options.allergiesAndAversions ?? [];
+  const available = recipes.filter((r) => {
+    if (options.excludeIds?.includes(r.id)) return false;
+    if (options.constraint?.constraint === 'leftovers') return false;
+    if (options.lunchOnly && !r.isSuitableForLunch) return false;
+    if (isRecipeExcluded(r, excluded)) return false;
+    return true;
+  });
 
   if (!available.length) return null;
 
@@ -86,6 +90,7 @@ export interface SuggestWeekOptions {
   showBreakfast?: boolean;
   showLunch?: boolean;
   showDinner?: boolean;
+  allergiesAndAversions?: string[];
 }
 
 export function suggestWeek(
@@ -95,7 +100,7 @@ export function suggestWeek(
   season: Season,
   opts: SuggestWeekOptions = {}
 ): Record<number, { breakfast?: string; lunch?: string; dinner?: string }> {
-  const { showBreakfast = false, showLunch = false, showDinner = true } = opts;
+  const { showBreakfast = false, showLunch = false, showDinner = true, allergiesAndAversions } = opts;
   const result: Record<number, { breakfast?: string; lunch?: string; dinner?: string }> = {};
   const usedIds: string[] = [];
 
@@ -115,7 +120,7 @@ export function suggestWeek(
 
     if (showDinner) {
       const dinner = suggestRecipe(recipes, {
-        weatherType, season, constraint, usedThisWeek: usedIds,
+        weatherType, season, constraint, usedThisWeek: usedIds, allergiesAndAversions,
       });
       if (dinner) {
         result[day].dinner = dinner.id;
@@ -133,7 +138,7 @@ export function suggestWeek(
         }
       } else {
         const lunch = suggestRecipe(lunchRecipes, {
-          weatherType, season, usedThisWeek: usedIds, lunchOnly: true,
+          weatherType, season, usedThisWeek: usedIds, lunchOnly: true, allergiesAndAversions,
         });
         if (lunch) {
           result[day].lunch = lunch.id;
@@ -144,7 +149,7 @@ export function suggestWeek(
 
     if (showBreakfast) {
       const breakfast = suggestRecipe(lunchRecipes, {
-        season, usedThisWeek: usedIds, lunchOnly: true,
+        season, usedThisWeek: usedIds, lunchOnly: true, allergiesAndAversions,
       });
       if (breakfast) {
         result[day].breakfast = breakfast.id;

@@ -4,6 +4,8 @@
  */
 import { getRecipes, getSettings, getConstraints } from '@/lib/data';
 import { getSession }                              from '@/lib/auth';
+import { getUserByEmail }                          from '@/lib/users';
+import { getGroupById }                            from '@/lib/groups';
 import { AppShell }                                from '@/components/AppShell';
 import { redirect }                                from 'next/navigation';
 
@@ -24,11 +26,28 @@ export default async function AppPage({ searchParams }: PageProps) {
     ? (rawTab as Tab)
     : 'planner';
 
-  const [recipes, settings, constraints] = await Promise.all([
-    getRecipes(),
-    getSettings(),
-    getConstraints(),
+  // Frische Daten aus User-Store holen — groupId kann sich nach Session-Issue ändern
+  const user    = await getUserByEmail(session.email);
+  const groupId = user?.groupId ?? session.groupId;
+
+  if (!groupId) {
+    // User hat noch keine Gruppe (z.B. alter Account vor dem Gruppen-Rollout).
+    // → Zurück zum /auth Login, damit das neue JWT mit groupId generiert wird.
+    redirect('/auth?error=no_group');
+  }
+
+  const [recipes, settings, constraints, group] = await Promise.all([
+    getRecipes(groupId),
+    getSettings(groupId),
+    getConstraints(groupId),
+    getGroupById(groupId),
   ]);
+
+  const isPremium =
+    session.status === 'active' &&
+    (session.plan === 'lifetime' || session.plan === 'abo');
+
+  const groupRole = user?.groupRole ?? session.groupRole ?? 'member';
 
   return (
     <AppShell
@@ -36,6 +55,10 @@ export default async function AppPage({ searchParams }: PageProps) {
       settings={settings}
       constraints={constraints}
       initialTab={initialTab}
+      isPremium={isPremium}
+      isAdmin={session.isAdmin}
+      group={group}
+      groupRole={groupRole}
     />
   );
 }

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "g_1779664133369_admin",
+    "name": "Familie von Kaenel",
+    "nameSet": true,
+    "ownerEmail": "info@o-v-k.ch",
+    "createdAt": "2026-05-24T23:08:53.369Z"
+  },
+  {
+    "id": "g_1779752604819_celine",
+    "name": "Meine Familie",
+    "nameSet": false,
+    "ownerEmail": "co@o-v-k.ch",
+    "createdAt": "2026-05-25T23:43:24.819Z"
+  }
+]

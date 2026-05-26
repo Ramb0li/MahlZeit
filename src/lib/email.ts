@@ -1,0 +1,234 @@
+/**
+ * E-Mail-Versand via Resend.
+ *
+ * Bei lokaler Entwicklung ohne RESEND_API_KEY wird der Bestätigungslink in die
+ * Server-Konsole geloggt — so kann man Confirm-Flow testen, ohne Email-Setup.
+ *
+ * Erforderliche Env-Vars (Produktion):
+ *  - RESEND_API_KEY     — API-Schlüssel von resend.com
+ *  - APP_URL            — z.B. https://app.mahlzeitplaner.ch
+ *  - FROM_EMAIL         — z.B. "MahlZeit <noreply@mahlzeitplaner.ch>" (Domain muss bei Resend verifiziert sein)
+ */
+
+import type { AppUser } from './users';
+
+export function getAppUrl(): string {
+  // `||` statt `??` — auch leerer String aus .env soll auf Fallback springen
+  return (
+    process.env.APP_URL ||
+    process.env.NEXT_PUBLIC_APP_URL ||
+    'http://localhost:3000'
+  );
+}
+
+function getFromEmail(): string {
+  return process.env.FROM_EMAIL || 'MahlZeit <onboarding@resend.dev>';
+}
+
+// ─── HTML + Plain-Text Templates ─────────────────────────────────────────────
+
+function htmlBody(firstName: string, confirmUrl: string): string {
+  return `<div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 600px; margin: 0 auto; background: #f2f6f2; padding: 32px 24px;">
+  <div style="background: #4a7a4e; color: #fff; padding: 20px 24px; border-radius: 16px 16px 0 0;">
+    <h1 style="margin: 0; font-size: 22px; font-weight: 800;">
+      Mahl<span style="opacity: 0.85;">Zeit</span>
+    </h1>
+    <p style="margin: 4px 0 0; font-size: 13px; opacity: 0.9;">Menüplaner für Familien</p>
+  </div>
+  <div style="background: #fff; padding: 32px 24px; border-radius: 0 0 16px 16px;">
+    <p style="font-size: 16px; color: #2c2420; margin: 0 0 16px;">
+      Hallo ${escapeHtml(firstName)},
+    </p>
+    <p style="font-size: 15px; line-height: 1.6; color: #2c2420; margin: 0 0 24px;">
+      schön, dass du dich für MahlZeit angemeldet hast — den Wochen-Menüplaner,
+      der euch Zeit, Geld und das tägliche "Was-koche-ich-heute?" abnimmt.
+    </p>
+    <p style="font-size: 15px; line-height: 1.6; color: #2c2420; margin: 0 0 24px;">
+      Bitte bestätige deine E-Mail-Adresse mit einem Klick auf den Button:
+    </p>
+    <div style="text-align: center; margin: 32px 0;">
+      <a href="${confirmUrl}"
+         style="display: inline-block; background: #4a7a4e; color: #fff;
+                padding: 14px 32px; border-radius: 12px; text-decoration: none;
+                font-weight: 600; font-size: 15px;">
+        E-Mail bestätigen →
+      </a>
+    </div>
+    <p style="font-size: 13px; color: #6b8c6f; line-height: 1.6; margin: 0 0 8px;">
+      Der Link ist 24 Stunden gültig. Falls der Button nicht funktioniert,
+      kopiere diesen Link in deinen Browser:
+    </p>
+    <p style="font-size: 12px; color: #9c8c84; word-break: break-all; margin: 0 0 24px;">
+      ${confirmUrl}
+    </p>
+    <hr style="border: none; border-top: 1px solid #e0e8e0; margin: 24px 0;" />
+    <p style="font-size: 12px; color: #9c8c84; line-height: 1.5; margin: 0;">
+      Du hast dich nicht bei MahlZeit angemeldet? Dann kannst du diese E-Mail
+      einfach ignorieren — ohne Bestätigung wird dein Account nach 24 Stunden
+      automatisch gelöscht.
+    </p>
+  </div>
+  <p style="text-align: center; font-size: 11px; color: #9c8c84; margin-top: 16px;">
+    MahlZeit · Wochenplaner für Familien · info@o-v-k.ch
+  </p>
+</div>`;
+}
+
+function textBody(firstName: string, confirmUrl: string): string {
+  return `Hallo ${firstName},
+
+schön, dass du dich für MahlZeit angemeldet hast.
+
+Bitte bestätige deine E-Mail-Adresse mit einem Klick auf den folgenden Link:
+
+${confirmUrl}
+
+Der Link ist 24 Stunden gültig.
+
+Falls du dich nicht bei MahlZeit angemeldet hast, ignoriere diese E-Mail —
+ohne Bestätigung wird der Account nach 24 Stunden automatisch gelöscht.
+
+Herzliche Grüsse
+Oliver · MahlZeit`;
+}
+
+function escapeHtml(s: string): string {
+  return s
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+// ─── Send ───────────────────────────────────────────────────────────────────
+
+// ─── Group Invite ───────────────────────────────────────────────────────────
+
+function inviteHtml(groupName: string, inviterName: string, acceptUrl: string): string {
+  return `<div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 600px; margin: 0 auto; background: #f2f6f2; padding: 32px 24px;">
+  <div style="background: #4a7a4e; color: #fff; padding: 20px 24px; border-radius: 16px 16px 0 0;">
+    <h1 style="margin: 0; font-size: 22px; font-weight: 800;">
+      Mahl<span style="opacity: 0.85;">Zeit</span>
+    </h1>
+    <p style="margin: 4px 0 0; font-size: 13px; opacity: 0.9;">Menüplaner für Familien</p>
+  </div>
+  <div style="background: #fff; padding: 32px 24px; border-radius: 0 0 16px 16px;">
+    <p style="font-size: 16px; color: #2c2420; margin: 0 0 16px;">
+      Hallo,
+    </p>
+    <p style="font-size: 15px; line-height: 1.6; color: #2c2420; margin: 0 0 24px;">
+      <strong>${escapeHtml(inviterName)}</strong> hat dich zur Gruppe
+      <strong>${escapeHtml(groupName)}</strong> auf MahlZeit eingeladen — dem
+      Wochen-Menüplaner für Familien.
+    </p>
+    <p style="font-size: 15px; line-height: 1.6; color: #2c2420; margin: 0 0 24px;">
+      Klicke auf den Button, um beizutreten. Du wirst beim ersten Login um Namen
+      und Passwort gebeten.
+    </p>
+    <div style="text-align: center; margin: 32px 0;">
+      <a href="${acceptUrl}"
+         style="display: inline-block; background: #4a7a4e; color: #fff;
+                padding: 14px 32px; border-radius: 12px; text-decoration: none;
+                font-weight: 600; font-size: 15px;">
+        Einladung annehmen →
+      </a>
+    </div>
+    <p style="font-size: 13px; color: #6b8c6f; line-height: 1.6; margin: 0 0 8px;">
+      Der Link ist 7 Tage gültig. Falls der Button nicht funktioniert,
+      kopiere diesen Link in deinen Browser:
+    </p>
+    <p style="font-size: 12px; color: #9c8c84; word-break: break-all; margin: 0 0 24px;">
+      ${acceptUrl}
+    </p>
+    <hr style="border: none; border-top: 1px solid #e0e8e0; margin: 24px 0;" />
+    <p style="font-size: 12px; color: #9c8c84; line-height: 1.5; margin: 0;">
+      Du kennst den Absender nicht? Dann ignoriere diese E-Mail einfach.
+    </p>
+  </div>
+  <p style="text-align: center; font-size: 11px; color: #9c8c84; margin-top: 16px;">
+    MahlZeit · Wochenplaner für Familien · info@o-v-k.ch
+  </p>
+</div>`;
+}
+
+function inviteText(groupName: string, inviterName: string, acceptUrl: string): string {
+  return `Hallo,
+
+${inviterName} hat dich zur Gruppe "${groupName}" auf MahlZeit eingeladen.
+
+MahlZeit ist ein Wochen-Menüplaner für Familien. Klicke auf den Link, um beizutreten:
+
+${acceptUrl}
+
+Der Link ist 7 Tage gültig.
+
+Falls du den Absender nicht kennst, ignoriere diese E-Mail einfach.
+
+Herzliche Grüsse
+Das MahlZeit-Team`;
+}
+
+export async function sendInviteEmail(
+  toEmail: string,
+  groupName: string,
+  inviterName: string,
+  token: string,
+): Promise<void> {
+  const acceptUrl = `${getAppUrl()}/auth/accept-invite?token=${encodeURIComponent(token)}`;
+  const apiKey    = process.env.RESEND_API_KEY;
+
+  if (!apiKey) {
+    console.log(
+      `\n[email] RESEND_API_KEY nicht gesetzt — Einladungs-URL:\n  ${acceptUrl}\n  (an: ${toEmail}, Gruppe: ${groupName})\n`
+    );
+    return;
+  }
+
+  const { Resend } = await import('resend');
+  const resend     = new Resend(apiKey);
+
+  const { error } = await resend.emails.send({
+    from:    getFromEmail(),
+    to:      toEmail,
+    subject: `${inviterName} hat dich zu "${groupName}" eingeladen — MahlZeit`,
+    html:    inviteHtml(groupName, inviterName, acceptUrl),
+    text:    inviteText(groupName, inviterName, acceptUrl),
+  });
+
+  if (error) {
+    console.error('[email] Invite-Versand fehlgeschlagen:', error);
+    throw new Error('E-Mail-Versand fehlgeschlagen');
+  }
+}
+
+// ─── Confirmation ───────────────────────────────────────────────────────────
+
+export async function sendConfirmationEmail(user: AppUser, token: string): Promise<void> {
+  const confirmUrl = `${getAppUrl()}/api/auth/confirm?token=${encodeURIComponent(token)}`;
+  const apiKey     = process.env.RESEND_API_KEY;
+
+  // Local dev fallback: log the URL so testing works without Resend
+  if (!apiKey) {
+    console.log(
+      `\n[email] RESEND_API_KEY nicht gesetzt — Bestätigungs-URL:\n  ${confirmUrl}\n  (User: ${user.email})\n`
+    );
+    return;
+  }
+
+  const { Resend } = await import('resend');
+  const resend     = new Resend(apiKey);
+
+  const { error } = await resend.emails.send({
+    from:    getFromEmail(),
+    to:      user.email,
+    subject: 'Willkommen bei MahlZeit — bitte bestätige deine E-Mail',
+    html:    htmlBody(user.firstName, confirmUrl),
+    text:    textBody(user.firstName, confirmUrl),
+  });
+
+  if (error) {
+    console.error('[email] Resend Fehler:', error);
+    throw new Error('E-Mail-Versand fehlgeschlagen');
+  }
+}

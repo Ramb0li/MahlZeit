@@ -1,0 +1,29 @@
+{
+  "g_1779664133369_admin": {
+    "household": {
+      "adults": 2,
+      "children": [
+        {
+          "id": "child-1",
+          "age": 2
+        }
+      ]
+    },
+    "weather": {
+      "provider": "meteoblue",
+      "apiKey": "",
+      "location": "Luzern",
+      "locationId": "2659811"
+    },
+    "showBreakfast": false,
+    "showLunch": true,
+    "showDinner": true,
+    "theme": "sage",
+    "promotions": {
+      "manualMigros": [],
+      "manualCoop": [],
+      "manualLidl": []
+    },
+    "dietPreference": "alle"
+  }
+}

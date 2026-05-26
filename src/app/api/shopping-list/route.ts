@@ -1,20 +1,25 @@
 export const dynamic = 'force-dynamic';
 
 import { NextResponse } from 'next/server';
+import { getSessionWithGroup as getSession } from '@/lib/session';
 import { getWeekPlan, getRecipes, getSettings, getPromotions } from '@/lib/data';
 import { calculatePortions, scaleIngredientAmount, categorizeIngredient } from '@/lib/utils';
 import type { ShoppingItem, ShoppingList, Promotion } from '@/types';
 
 export async function GET(request: Request) {
   try {
+    const session = await getSession();
+    if (!session)         return NextResponse.json({ error: 'Nicht angemeldet' }, { status: 401 });
+    if (!session.groupId) return NextResponse.json({ error: 'Keine Gruppe zugeordnet' }, { status: 403 });
+
     const { searchParams } = new URL(request.url);
     const weekId = searchParams.get('weekId');
     if (!weekId) return NextResponse.json({ error: 'weekId fehlt' }, { status: 400 });
 
     const [plan, recipes, settings, promoData] = await Promise.all([
-      getWeekPlan(weekId),
-      getRecipes(),
-      getSettings(),
+      getWeekPlan(weekId, session.groupId),
+      getRecipes(session.groupId),
+      getSettings(session.groupId),
       getPromotions(),
     ]);
 

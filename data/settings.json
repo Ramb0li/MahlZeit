@@ -14,10 +14,10 @@
     "location": "Luzern",
     "locationId": "2659811"
   },
-  "showBreakfast": true,
+  "showBreakfast": false,
   "showLunch": true,
   "showDinner": true,
-  "theme": "green",
+  "theme": "sage",
   "promotions": {
     "manualMigros": [],
     "manualCoop": [],

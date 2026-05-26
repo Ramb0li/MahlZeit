@@ -1,13 +1,15 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
-import { CalendarDays, BookOpen, ShoppingCart, Settings } from 'lucide-react';
+import { CalendarDays, BookOpen, ShoppingCart, Settings, Users } from 'lucide-react';
 import { WeekPlanner } from '@/components/planner/WeekPlanner';
 import { RecipeList } from '@/components/recipes/RecipeList';
 import { ShoppingListView } from '@/components/shopping/ShoppingListView';
 import { SettingsView } from '@/components/settings/SettingsView';
+import { GroupNameOnboarding } from '@/components/groups/GroupNameOnboarding';
 import { getTheme } from '@/lib/themes';
 import type { Recipe, AppSettings, DayConstraint } from '@/types';
+import type { Group, GroupRole } from '@/lib/groups';
 
 type Tab = 'planner' | 'recipes' | 'shopping' | 'settings';
 export type { Tab };
@@ -24,15 +26,30 @@ interface AppShellProps {
   settings: AppSettings;
   constraints: DayConstraint[];
   initialTab?: Tab;
+  isPremium?: boolean;
+  isAdmin?: boolean;
+  group?: Group | null;
+  groupRole?: GroupRole;
 }
 
-export function AppShell({ recipes: initialRecipes, settings: initialSettings, constraints: initialConstraints, initialTab }: AppShellProps) {
-  const [activeTab, setActiveTab] = useState<Tab>(initialTab ?? 'planner');
-  const [recipes, setRecipes] = useState<Recipe[]>(initialRecipes);
-  const [settings, setSettings] = useState<AppSettings>(initialSettings);
+export function AppShell({
+  recipes: initialRecipes,
+  settings: initialSettings,
+  constraints: initialConstraints,
+  initialTab,
+  isPremium = false,
+  isAdmin = false,
+  group: initialGroup = null,
+  groupRole = 'member',
+}: AppShellProps) {
+  const [activeTab, setActiveTab]     = useState<Tab>(initialTab ?? 'planner');
+  const [recipes, setRecipes]         = useState<Recipe[]>(initialRecipes);
+  const [settings, setSettings]       = useState<AppSettings>(initialSettings);
   const [constraints, setConstraints] = useState<DayConstraint[]>(initialConstraints);
+  const [group, setGroup]             = useState<Group | null>(initialGroup);
 
   const theme = getTheme(settings.theme);
+  const showOnboarding = group && !group.nameSet && groupRole === 'owner';
 
   return (
     <div
@@ -50,7 +67,7 @@ export function AppShell({ recipes: initialRecipes, settings: initialSettings, c
         }}
       >
         <div className="flex items-center justify-between px-5 h-full">
-          {/* Brand — links back to landing page */}
+          {/* Brand */}
           <Link href="/" className="flex items-center gap-2.5" style={{ textDecoration: 'none' }}>
             <div
               className="w-8 h-8 rounded-xl flex items-center justify-center"
@@ -71,36 +88,72 @@ export function AppShell({ recipes: initialRecipes, settings: initialSettings, c
             </div>
           </Link>
 
-          {/* Desktop nav */}
-          <nav
-            className="hidden sm:flex items-center gap-0.5 rounded-2xl p-1"
-            style={{ backgroundColor: theme.navBg }}
-          >
-            {TABS.map(({ id, label, icon: Icon }) => (
-              <button
-                key={id}
-                onClick={() => setActiveTab(id)}
-                className="flex items-center gap-2 px-4 py-1.5 rounded-xl text-sm font-semibold transition-all"
-                style={activeTab === id
-                  ? { backgroundColor: theme.navActiveBg, color: theme.navActiveText }
-                  : { color: theme.navInactiveText }}
+          <div className="hidden sm:flex items-center gap-3">
+            <nav
+              className="flex items-center gap-0.5 rounded-2xl p-1"
+              style={{ backgroundColor: theme.navBg }}
+            >
+              {TABS.map(({ id, label, icon: Icon }) => (
+                <button
+                  key={id}
+                  onClick={() => setActiveTab(id)}
+                  className="flex items-center gap-2 px-4 py-1.5 rounded-xl text-sm font-semibold transition-all"
+                  style={activeTab === id
+                    ? { backgroundColor: theme.navActiveBg, color: theme.navActiveText }
+                    : { color: theme.navInactiveText }}
+                >
+                  <Icon size={15} />
+                  {label}
+                </button>
+              ))}
+            </nav>
+            {isAdmin && (
+              <Link
+                href="/admin"
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-opacity hover:opacity-80"
+                style={{ backgroundColor: '#4a7a4e', color: '#fff', textDecoration: 'none' }}
+                title="Admin-Bereich"
               >
-                <Icon size={15} />
-                {label}
-              </button>
-            ))}
-          </nav>
+                ★ Admin
+              </Link>
+            )}
+          </div>
         </div>
       </header>
 
       <main className="flex-1 px-4 py-5 md:overflow-hidden">
+        {/* Group Banner — über jedem Tab */}
+        {group?.nameSet && (
+          <div className="mb-4 flex items-center gap-2.5 px-4 py-2.5 rounded-2xl" style={{
+            backgroundColor: theme.todayAccent + '15',
+            border: `1px solid ${theme.todayAccent}30`,
+          }}>
+            <Users size={16} style={{ color: theme.todayAccent }} />
+            <span className="text-sm font-bold" style={{ color: theme.todayAccent }}>
+              {group.name}
+            </span>
+            {groupRole === 'member' && (
+              <span className="text-[10px] px-1.5 py-0.5 rounded-full font-semibold" style={{
+                backgroundColor: theme.todayAccent + '20', color: theme.todayAccent,
+              }}>
+                Mitglied
+              </span>
+            )}
+          </div>
+        )}
+
         {activeTab === 'planner' && (
-          <div className="md:h-[calc(100vh-140px)]">
+          <div className="md:h-[calc(100vh-180px)]">
             <WeekPlanner recipes={recipes} settings={settings} constraints={constraints} />
           </div>
         )}
         {activeTab === 'recipes' && (
-          <RecipeList initialRecipes={recipes} onRecipesChange={setRecipes} />
+          <RecipeList
+            initialRecipes={recipes}
+            allergiesAndAversions={settings.allergiesAndAversions ?? []}
+            isPremium={isPremium}
+            onRecipesChange={setRecipes}
+          />
         )}
         {activeTab === 'shopping' && (
           <ShoppingListView />
@@ -109,8 +162,12 @@ export function AppShell({ recipes: initialRecipes, settings: initialSettings, c
           <SettingsView
             initialSettings={settings}
             initialConstraints={constraints}
+            isPremium={isPremium}
+            group={group}
+            groupRole={groupRole}
             onSettingsChange={setSettings}
             onConstraintsChange={setConstraints}
+            onGroupChange={setGroup}
           />
         )}
       </main>
@@ -138,6 +195,14 @@ export function AppShell({ recipes: initialRecipes, settings: initialSettings, c
           ))}
         </div>
       </nav>
+
+      {/* First-Login Onboarding Modal — blocking */}
+      {showOnboarding && group && (
+        <GroupNameOnboarding
+          currentName={group.name}
+          onSaved={(updated) => setGroup(updated)}
+        />
+      )}
     </div>
   );
 }

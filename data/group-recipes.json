@@ -1,0 +1,127 @@
+{
+  "g_1779664133369_admin": [
+    {
+      "id": "rec-1779785206041-cjxi0",
+      "name": "Kräuter-Lamm mit Rhabarber-Chutney",
+      "category": "Sonstige",
+      "timeMinutes": 45,
+      "timeLabel": "aufwändig",
+      "ingredients": [
+        {
+          "name": "Zucker",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Haselnüsse (Nocciola Piemonte IGP), gemahlenes",
+          "amount": 100,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Lammrückenfilet",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "rote Zwiebel",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Knoblauch",
+          "amount": 1,
+          "unit": "Zehe",
+          "perPortions": 4
+        },
+        {
+          "name": "Rhabarber",
+          "amount": 200,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfefferminze",
+          "amount": 1,
+          "unit": "Bund",
+          "perPortions": 4
+        },
+        {
+          "name": "glattblättrige Petersilie",
+          "amount": 2,
+          "unit": "Bund",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1.5,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Thymian",
+          "amount": 1,
+          "unit": "Bund",
+          "perPortions": 4
+        },
+        {
+          "name": "Senfkörner",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Honigsenf",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Couscous",
+          "amount": 120,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Weissweinessig",
+          "amount": 75,
+          "unit": "ml",
+          "perPortions": 4
+        },
+        {
+          "name": "Weissweinessig",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 4,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ],
+      "season": [
+        "ganzjährig"
+      ],
+      "weatherType": "neutral",
+      "isMealprep": false,
+      "isSuitableForLunch": false,
+      "source": "https://fooby.ch/de/rezepte/22732/kraeuter-lamm-mit-rhabarber-chutney",
+      "basePortions": 4,
+      "description": "Zartes Lammfleisch in einer aromatischen Kräuterkruste, serviert mit cremigem Couscous und fruchtignussigem Rhabarber-Chutney - ein elegantes Gericht für Gäste.",
+      "dietType": "vegan",
+      "imageUrl": null,
+      "imageZutaten": null,
+      "imageKochen": null,
+      "steps": [
+        "Für das Chutney Essig, Zucker und Salz aufkochen. Hitze reduzieren, fein gehackte Zwiebel, Knoblauch und Senfkörner hinzufügen und zugedeckt etwa 5 Minuten köcheln lassen. Kleingeschnittenen Rhabarber hinzufügen und weitere etwa 8 Minuten köcheln lassen, dann beiseitestellen.",
+        "Couscous mit Salz vermischen, heisses Wasser darübergießen und zugedeckt etwa 5 Minuten quellen lassen. Mit einer Gabel auflockern. Honigsenf, Essig und Öl vermengen und unter den Couscous rühren. Gehackte Nüsse und feingehackte Kräuter einarbeiten.",
+        "Frische Kräuter auf einem Teller ausbreiten. Lammfilets salzen, in den Kräutern wenden und gut andrücken. In heissem Öl in einer Pfanne von beiden Seiten je etwa 3 Minuten anbraten. Herausnehmen, zugedeckt etwa 5 Minuten ruhen lassen, dann in Scheiben schneiden und mit dem Couscous und Chutney anrichten."
+      ]
+    }
+  ]
+}
