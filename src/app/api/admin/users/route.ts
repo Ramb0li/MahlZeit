@@ -25,12 +25,23 @@ export async function PATCH(request: Request) {
   if (!(await requireAdmin())) {
     return NextResponse.json({ error: 'Nicht autorisiert' }, { status: 403 });
   }
-  const { email, status } = await request.json() as { email: string; status: 'active' | 'inactive' };
+  const body = await request.json() as {
+    email:    string;
+    status?:  'active' | 'inactive';
+    plan?:    'trial' | 'lifetime' | 'abo';
+  };
   const users = await getAllUsers();
-  const user  = users.find((u) => u.email === email);
+  const user  = users.find((u) => u.email === body.email);
   if (!user) return NextResponse.json({ error: 'Nutzer nicht gefunden' }, { status: 404 });
-  await updateUser({ ...user, status });
-  return NextResponse.json({ ok: true });
+  const updated = {
+    ...user,
+    ...(body.status ? { status: body.status } : {}),
+    ...(body.plan   ? { plan:   body.plan   } : {}),
+    // Lifetime hat keinen accessUntil — wenn auf lifetime gewechselt wird, entfernen
+    ...(body.plan === 'lifetime' ? { accessUntil: undefined } : {}),
+  };
+  await updateUser(updated);
+  return NextResponse.json({ ok: true, user: updated });
 }
 
 export async function DELETE(request: Request) {
