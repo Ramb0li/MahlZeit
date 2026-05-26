@@ -69,8 +69,11 @@ export async function POST(request: Request) {
       });
       user.groupId   = groupId;
       user.groupRole = 'owner';
-      await updateUser(user);
     }
+
+    // Jeder Login schreibt den User-Datensatz neu — heilt automatisch den
+    // Global-Index (mz:users:all) falls der nach Tabula Rasa o.Ä. inkonsistent war.
+    await updateUser(user);
 
     const token = await signToken({
       email:     user.email,

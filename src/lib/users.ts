@@ -102,7 +102,16 @@ export async function updateUser(user: AppUser): Promise<void> {
     writeUsersLocal(all);
     return;
   }
-  await getRedis().set(K.user(user.email), user);
+  const redis = getRedis();
+  // Defensiv: User immer in den Global-Index aufnehmen (idempotent).
+  // Heilt automatisch Sessions wo der Index nach Tabula Rasa o.Ä. inkonsistent ist.
+  const emails = (await redis.get<string[]>(K.userIndex)) ?? [];
+  const lowerEmail = user.email.toLowerCase();
+  const alreadyIndexed = emails.some(e => e.toLowerCase() === lowerEmail);
+  await Promise.all([
+    redis.set(K.user(user.email), user),
+    alreadyIndexed ? Promise.resolve() : redis.set(K.userIndex, [...emails, lowerEmail]),
+  ]);
 }
 
 export async function getUsersByGroup(groupId: string): Promise<AppUser[]> {
