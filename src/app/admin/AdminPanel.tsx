@@ -1,10 +1,30 @@
 'use client';
 
-import { useState }  from 'react';
-import { useRouter } from 'next/navigation';
-import Link          from 'next/link';
-import type { AppUser } from '@/lib/users';
-import type { Group }   from '@/lib/groups';
+import { useState, useMemo } from 'react';
+import { useRouter }         from 'next/navigation';
+import Link                  from 'next/link';
+import { RecipeForm }        from '@/components/recipes/RecipeForm';
+import type { AppUser }      from '@/lib/users';
+import type { Group }        from '@/lib/groups';
+import type { Recipe, Category } from '@/types';
+
+// Kategoriefarben für Badges
+const CAT_COLOR: Record<string, { bg: string; color: string }> = {
+  'Eier':           { bg: '#fff3e0', color: '#e65100' },
+  'Reis':           { bg: '#f5ece0', color: '#c49a6c' },
+  'Pasta':          { bg: '#f2e5e0', color: '#b5614a' },
+  'Eintopf/Gratin': { bg: '#fce4ec', color: '#c62828' },
+  'Fisch':          { bg: '#e3f2fd', color: '#1565c0' },
+  'Sonstige':       { bg: '#efe9df', color: '#5a4e48' },
+  'Asiatisch':      { bg: '#fce4ec', color: '#ad1457' },
+  'Ofen':           { bg: '#ede7f6', color: '#4527a0' },
+  'Suppen':         { bg: '#e0f2f1', color: '#00695c' },
+  'Salat/Bowl':     { bg: '#e8f5e9', color: '#2e7d32' },
+  'Frühstück':      { bg: '#fff8e1', color: '#f57f17' },
+  'Süsses':         { bg: '#fce4ec', color: '#880e4f' },
+  'Brot & Aufstrich': { bg: '#efebe9', color: '#4e342e' },
+  'Snacks':         { bg: '#f3e5f5', color: '#6a1b9a' },
+};
 
 type SafeUser = Omit<AppUser, 'passwordHash'>;
 
@@ -21,18 +41,90 @@ const STATUS_COLOR: Record<string, { bg: string; color: string }> = {
 };
 
 interface Props {
-  initialUsers: SafeUser[];
-  adminEmail:   string;
-  groups:       Group[];
+  initialUsers:   SafeUser[];
+  adminEmail:     string;
+  groups:         Group[];
+  initialRecipes: Recipe[];
 }
 
-export default function AdminPanel({ initialUsers, adminEmail, groups }: Props) {
+export default function AdminPanel({ initialUsers, adminEmail, groups, initialRecipes }: Props) {
   const groupNameById = (id?: string) => id ? (groups.find(g => g.id === id)?.name ?? '—') : '—';
   const isAdmin = (email: string) => email.toLowerCase() === adminEmail.toLowerCase();
   const [users,    setUsers]    = useState<SafeUser[]>(initialUsers);
   const [loading,  setLoading]  = useState<string | null>(null);
   const [confirm,  setConfirm]  = useState<string | null>(null);
   const router = useRouter();
+
+  // ── Tab-State ───────────────────────────────────────────────────────────────
+  const [activeTab, setActiveTab] = useState<'users' | 'recipes'>('users');
+
+  // ── Rezepte-State ────────────────────────────────────────────────────────────
+  const [recipes,        setRecipes]        = useState<Recipe[]>(initialRecipes);
+  const [recipeSearch,   setRecipeSearch]   = useState('');
+  const [recipeCatFilter, setRecipeCatFilter] = useState<Category | 'Alle'>('Alle');
+  const [editingRecipe,  setEditingRecipe]  = useState<Recipe | null | 'new'>(null);
+  const [recipeSaving,   setRecipeSaving]   = useState(false);
+  const [recipeNotice,   setRecipeNotice]   = useState<{ type: 'ok'|'err'; text: string } | null>(null);
+  const [deleteRecipeId, setDeleteRecipeId] = useState<string | null>(null);
+
+  const filteredRecipes = useMemo(() => recipes.filter(r => {
+    if (recipeCatFilter !== 'Alle' && r.category !== recipeCatFilter) return false;
+    if (recipeSearch && !r.name.toLowerCase().includes(recipeSearch.toLowerCase())) return false;
+    return true;
+  }), [recipes, recipeCatFilter, recipeSearch]);
+
+  const recipeCategories = useMemo(() =>
+    ['Alle', ...Array.from(new Set(recipes.map(r => r.category))).sort()] as (Category | 'Alle')[],
+  [recipes]);
+
+  const handleRecipeSave = async (recipe: Recipe) => {
+    setRecipeSaving(true);
+    setRecipeNotice(null);
+    const isNew = editingRecipe === 'new';
+    try {
+      const res = await fetch('/api/admin/recipes', {
+        method:  isNew ? 'POST' : 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body:    JSON.stringify(recipe),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        setRecipeNotice({ type: 'err', text: data.error ?? 'Fehler beim Speichern.' });
+        return;
+      }
+      if (isNew) {
+        setRecipes(prev => [...prev, recipe]);
+      } else {
+        setRecipes(prev => prev.map(r => r.id === recipe.id ? recipe : r));
+      }
+      setEditingRecipe(null);
+      setRecipeNotice({ type: 'ok', text: `"${recipe.name}" gespeichert.` });
+      setTimeout(() => setRecipeNotice(null), 3000);
+    } catch {
+      setRecipeNotice({ type: 'err', text: 'Netzwerkfehler.' });
+    } finally {
+      setRecipeSaving(false);
+    }
+  };
+
+  const handleRecipeDelete = async (id: string) => {
+    setRecipeSaving(true);
+    try {
+      const res  = await fetch('/api/admin/recipes', {
+        method:  'DELETE',
+        headers: { 'Content-Type': 'application/json' },
+        body:    JSON.stringify({ id }),
+      });
+      const data = await res.json();
+      if (!res.ok) { setRecipeNotice({ type: 'err', text: data.error ?? 'Fehler.' }); return; }
+      setRecipes(prev => prev.filter(r => r.id !== id));
+      setDeleteRecipeId(null);
+      setRecipeNotice({ type: 'ok', text: 'Rezept gelöscht.' });
+      setTimeout(() => setRecipeNotice(null), 2500);
+    } finally {
+      setRecipeSaving(false);
+    }
+  };
 
   const patch = async (email: string, status: 'active' | 'inactive') => {
     setLoading(email + status);
@@ -115,6 +207,25 @@ export default function AdminPanel({ initialUsers, adminEmail, groups }: Props) 
             </button>
           </div>
         </div>
+
+        {/* Tabs */}
+        <div className="flex gap-2 mb-5">
+          {(['users', 'recipes'] as const).map(tab => (
+            <button
+              key={tab}
+              onClick={() => setActiveTab(tab)}
+              className="px-5 py-2 rounded-xl text-sm font-semibold transition-all"
+              style={activeTab === tab
+                ? { backgroundColor: '#4a7a4e', color: '#fff' }
+                : { backgroundColor: '#efe9df', color: '#5a4e48' }
+              }
+            >
+              {tab === 'users' ? `👥 Nutzer (${users.filter(u => !isAdmin(u.email)).length})` : `📖 Rezepte (${recipes.length})`}
+            </button>
+          ))}
+        </div>
+
+        {activeTab === 'users' && <>
 
         {/* Stats row — Admin wird in keiner Metrik mitgezählt */}
         <div className="grid grid-cols-4 gap-3 mb-6">
@@ -259,6 +370,163 @@ export default function AdminPanel({ initialUsers, adminEmail, groups }: Props) 
             </tbody>
           </table>
         </div>
+
+        </> /* end users tab */}
+
+        {/* ── Rezepte-Tab ──────────────────────────────────────────────────── */}
+        {activeTab === 'recipes' && (
+          <div>
+            {/* Notice */}
+            {recipeNotice && (
+              <div className="mb-4 px-4 py-2 rounded-xl text-sm" style={recipeNotice.type === 'ok'
+                ? { backgroundColor: '#e8f5e9', color: '#2e7d32' }
+                : { backgroundColor: '#fce4ec', color: '#c62828' }
+              }>
+                {recipeNotice.text}
+              </div>
+            )}
+
+            {/* Toolbar */}
+            <div className="flex flex-wrap items-center gap-3 mb-4">
+              <input
+                type="text"
+                value={recipeSearch}
+                onChange={e => setRecipeSearch(e.target.value)}
+                placeholder="Rezept suchen…"
+                className="rounded-xl px-3 py-2 text-sm flex-1 min-w-[180px]"
+                style={{ border: '1px solid #e0d8ce', backgroundColor: '#fff9f3', color: '#2c2420', outline: 'none' }}
+              />
+              <select
+                value={recipeCatFilter}
+                onChange={e => setRecipeCatFilter(e.target.value as Category | 'Alle')}
+                className="rounded-xl px-3 py-2 text-sm"
+                style={{ border: '1px solid #e0d8ce', backgroundColor: '#fff9f3', color: '#2c2420', outline: 'none' }}
+              >
+                {recipeCategories.map(c => <option key={c} value={c}>{c}</option>)}
+              </select>
+              <button
+                onClick={() => setEditingRecipe('new')}
+                className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold"
+                style={{ backgroundColor: '#4a7a4e', color: '#fff' }}
+              >
+                + Neues Rezept
+              </button>
+            </div>
+
+            {/* Rezepte-Tabelle */}
+            <div className="rounded-2xl overflow-hidden" style={{ border: '1px solid #e0d8ce', backgroundColor: '#fff9f3' }}>
+              <table className="w-full text-sm">
+                <thead>
+                  <tr style={{ backgroundColor: '#efe9df', borderBottom: '1px solid #e0d8ce' }}>
+                    {['Rezept', 'Kategorie', 'Zeit', 'Quelle', 'Aktionen'].map(h => (
+                      <th key={h} className="text-left px-4 py-3 font-semibold text-xs" style={{ color: '#9c8c84' }}>{h}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {filteredRecipes.length === 0 && (
+                    <tr>
+                      <td colSpan={5} className="text-center py-10 text-sm" style={{ color: '#9c8c84' }}>
+                        Keine Rezepte gefunden.
+                      </td>
+                    </tr>
+                  )}
+                  {filteredRecipes.map((r, i) => {
+                    const catCol = CAT_COLOR[r.category] ?? { bg: '#efe9df', color: '#5a4e48' };
+                    return (
+                      <tr key={r.id} style={{ borderBottom: '1px solid #f0ede8', backgroundColor: i % 2 === 0 ? 'transparent' : '#fffdf9' }}>
+                        <td className="px-4 py-3">
+                          <div className="font-medium" style={{ color: '#2c2420' }}>{r.name}</div>
+                          <div className="text-[11px] mt-0.5" style={{ color: '#9c8c84' }}>{r.id}</div>
+                        </td>
+                        <td className="px-4 py-3">
+                          <span className="px-2 py-0.5 rounded-full text-xs font-semibold" style={catCol}>
+                            {r.category}
+                          </span>
+                        </td>
+                        <td className="px-4 py-3 text-xs" style={{ color: '#5a4e48' }}>
+                          {r.timeMinutes ? `${r.timeMinutes} min` : '—'}
+                        </td>
+                        <td className="px-4 py-3 text-xs max-w-[180px] truncate" style={{ color: '#9c8c84' }} title={r.source}>
+                          {r.source ?? '—'}
+                        </td>
+                        <td className="px-4 py-3">
+                          <div className="flex gap-1.5">
+                            <button
+                              onClick={() => setEditingRecipe(r)}
+                              className="px-3 py-1 rounded-lg text-xs font-semibold transition-opacity hover:opacity-70"
+                              style={{ backgroundColor: '#e8f2e8', color: '#4a7a4e' }}
+                            >
+                              Bearbeiten
+                            </button>
+                            <button
+                              onClick={() => setDeleteRecipeId(r.id)}
+                              className="px-3 py-1 rounded-lg text-xs font-semibold transition-opacity hover:opacity-70"
+                              style={{ backgroundColor: '#f7f4ee', color: '#9c8c84', border: '1px solid #e0d8ce' }}
+                            >
+                              Löschen
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        )}
+
+        {/* ── Rezept Bearbeiten / Neu — Modal ─────────────────────────────── */}
+        {editingRecipe !== null && (
+          <div className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto py-8 px-4"
+               style={{ backgroundColor: 'rgba(44,36,32,0.6)' }}>
+            <div className="w-full max-w-3xl rounded-2xl shadow-2xl" style={{ backgroundColor: '#fff9f3' }}>
+              <div className="flex items-center justify-between px-6 py-4" style={{ borderBottom: '1px solid #e0d8ce' }}>
+                <h2 className="font-semibold text-base" style={{ color: '#2c2420' }}>
+                  {editingRecipe === 'new' ? 'Neues Template-Rezept' : `Bearbeiten: ${(editingRecipe as Recipe).name}`}
+                </h2>
+                <button onClick={() => setEditingRecipe(null)} style={{ color: '#9c8c84' }} className="text-xl leading-none">✕</button>
+              </div>
+              <div className="p-6">
+                {recipeSaving && <p className="text-sm text-center mb-3" style={{ color: '#9c8c84' }}>Speichern…</p>}
+                <RecipeForm
+                  recipe={editingRecipe === 'new' ? undefined : (editingRecipe as Recipe)}
+                  onSave={handleRecipeSave}
+                  onCancel={() => setEditingRecipe(null)}
+                />
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* ── Rezept löschen — Bestätigung ────────────────────────────────── */}
+        {deleteRecipeId && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center" style={{ backgroundColor: 'rgba(44,36,32,0.5)' }}>
+            <div className="rounded-2xl p-6 w-full max-w-sm shadow-2xl" style={{ backgroundColor: '#fff9f3' }}>
+              <h3 className="font-semibold mb-2" style={{ color: '#2c2420' }}>Template-Rezept löschen?</h3>
+              <p className="text-sm mb-1" style={{ color: '#5a4e48' }}>
+                <strong>{recipes.find(r => r.id === deleteRecipeId)?.name}</strong>
+              </p>
+              <p className="text-xs mb-5" style={{ color: '#9c8c84' }}>
+                Die JSON-Datei wird gelöscht. Die Änderung wird erst nach einem Deployment für alle Nutzer wirksam.
+              </p>
+              <div className="flex gap-3 justify-end">
+                <button onClick={() => setDeleteRecipeId(null)} className="px-4 py-2 rounded-xl text-sm font-semibold" style={{ color: '#5a4e48' }}>
+                  Abbrechen
+                </button>
+                <button
+                  onClick={() => handleRecipeDelete(deleteRecipeId)}
+                  disabled={recipeSaving}
+                  className="px-4 py-2 rounded-xl text-sm font-semibold text-white"
+                  style={{ backgroundColor: '#c62828' }}
+                >
+                  {recipeSaving ? '…' : 'Löschen'}
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Delete confirm modal */}
         {confirm && (
