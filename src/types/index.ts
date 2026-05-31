@@ -12,7 +12,10 @@ export type Category =
   | 'Asiatisch'
   | 'Ofen'
   | 'Suppen'
-  | 'Salat/Bowl';
+  | 'Salat/Bowl'
+  | 'Frühstück'
+  | 'Süsses'
+  | 'Brot & Aufstrich';
 
 export interface Ingredient {
   name: string;

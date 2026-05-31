@@ -6,6 +6,7 @@ import type { Recipe, Category, Season, WeatherType, TimeLabel, Ingredient, Diet
 const CATEGORIES: Category[] = [
   'Eier', 'Reis', 'Pasta', 'Eintopf/Gratin', 'Fisch',
   'Sonstige', 'Asiatisch', 'Ofen', 'Suppen', 'Salat/Bowl',
+  'Frühstück', 'Süsses', 'Brot & Aufstrich',
 ];
 
 const SEASONS: Season[] = ['Frühling', 'Sommer', 'Herbst', 'Winter', 'ganzjährig'];

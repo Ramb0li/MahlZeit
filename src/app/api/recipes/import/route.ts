@@ -17,7 +17,7 @@ const RECIPE_TOOL = {
     properties: {
       name:               { type: 'string',  description: 'Rezeptname' },
       description:        { type: 'string',  description: 'Kurze appetitliche Beschreibung (1-2 Sätze)' },
-      category:           { type: 'string',  enum: ['Eier','Reis','Pasta','Eintopf/Gratin','Fisch','Sonstige','Asiatisch','Ofen','Suppen','Salat/Bowl'] },
+      category:           { type: 'string',  enum: ['Eier','Reis','Pasta','Eintopf/Gratin','Fisch','Sonstige','Asiatisch','Ofen','Suppen','Salat/Bowl','Frühstück','Süsses','Brot & Aufstrich'] },
       timeMinutes:        { type: 'number',  description: 'Gesamtzeit in Minuten' },
       basePortions:       { type: 'number',  description: 'Anzahl Portionen' },
       dietType:           { type: ['string','null'], enum: ['vegan','vegetarisch','pescetarisch', null] },

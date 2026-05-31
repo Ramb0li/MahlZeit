@@ -23,6 +23,7 @@ const DIET_BADGE: Record<DietType, { label: string; bg: string; color: string }>
 const CATEGORIES: Category[] = [
   'Eier', 'Reis', 'Pasta', 'Eintopf/Gratin', 'Fisch',
   'Sonstige', 'Asiatisch', 'Ofen', 'Suppen', 'Salat/Bowl',
+  'Frühstück', 'Süsses', 'Brot & Aufstrich',
 ];
 
 // Chip helpers
@@ -72,6 +73,9 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
     'Ofen':           { bg: '#ede7f6', color: '#4527a0' },
     'Suppen':         { bg: '#e0f2f1', color: '#00695c' },
     'Salat/Bowl':     { bg: '#e8f5e9', color: '#2e7d32' },
+    'Frühstück':      { bg: '#fff8e1', color: '#f57f17' },
+    'Süsses':         { bg: '#fce4ec', color: '#880e4f' },
+    'Brot & Aufstrich': { bg: '#efebe9', color: '#4e342e' },
   };
 
   // ─── filtered lists ───────────────────────────────────────────────────────
