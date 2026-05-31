@@ -1,9 +1,8 @@
 {
   "id": "sal-03",
   "name": "Taboulé",
-  "category": "Salat/Bowl",
+  "category": "Salate & Bowls",
   "timeMinutes": 20,
-  "timeLabel": "schnell",
   "ingredients": [
     {
       "name": "Bulgur",
@@ -48,18 +47,19 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "Frühling",
-    "Sommer"
-  ],
   "weatherType": "warm",
-  "isMealprep": true,
-  "isSuitableForLunch": true,
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Frischer Levante-Salat.",
   "steps": [],
   "tips": "",
   "imageUrl": "/images/recipes/cuiselin-taboule.jpeg",
-  "imageZutaten": "/images/recipes/cuiselin-taboule-zutaten.jpeg"
+  "imageZutaten": "/images/recipes/cuiselin-taboule-zutaten.jpeg",
+  "tags": [
+    "Mealprep-geeignet",
+    "Mittagsgericht",
+    "Frühling",
+    "Sommer",
+    "Orientalisch"
+  ]
 }

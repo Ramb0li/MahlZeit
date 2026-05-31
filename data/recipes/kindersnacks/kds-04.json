@@ -1,9 +1,8 @@
 {
   "id": "kds-04",
   "name": "Bunte Gemüse-Muffins",
-  "category": "Snacks",
+  "category": "Snacks & Vorspeisen",
   "timeMinutes": 55,
-  "timeLabel": "aufwendig",
   "basePortions": 12,
   "ingredients": [
     {
@@ -97,13 +96,7 @@
       "perPortions": 12
     }
   ],
-  "season": [
-    "ganzjährig"
-  ],
   "weatherType": "neutral",
-  "isMealprep": true,
-  "isSuitableForLunch": false,
-  "dietCategory": "vegan",
   "source": "LittleFant – Kindersnacks für jeden Tag",
   "description": "Herzhafte Muffins mit Linsen und buntem Gemüse – sättigend und voller Nährstoffe, perfekt für die Brotdose.",
   "steps": [
@@ -113,5 +106,9 @@
     "Ofen auf 220 °C (Umluft) vorheizen. In Muffinförmchen füllen, 5 Minuten backen. Auf 180 °C reduzieren und weitere 30 Minuten backen."
   ],
   "tips": "Saaten und Erbsen je nach Alter des Kindes vorher zerkleinern.",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Vegan",
+    "Mealprep-geeignet"
+  ]
 }

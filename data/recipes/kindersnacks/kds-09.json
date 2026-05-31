@@ -1,9 +1,8 @@
 {
   "id": "kds-09",
   "name": "Gemüsebrötchen",
-  "category": "Brot & Aufstrich",
+  "category": "Snacks & Vorspeisen",
   "timeMinutes": 85,
-  "timeLabel": "aufwendig",
   "basePortions": 8,
   "ingredients": [
     {
@@ -79,13 +78,7 @@
       "perPortions": 8
     }
   ],
-  "season": [
-    "ganzjährig"
-  ],
   "weatherType": "neutral",
-  "isMealprep": true,
-  "isSuitableForLunch": false,
-  "dietCategory": "vegan",
   "source": "LittleFant – Kindersnacks für jeden Tag",
   "description": "Bunte Brötchen mit Karotte, Paprika, Mais und versteckten Linsen – nährstoffreich und farbenfroh.",
   "steps": [
@@ -95,5 +88,9 @@
     "Mit Kurkuma-Sojadrink bepinseln. Bei 180 °C (Ober-/Unterhitze) 20–25 Minuten backen."
   ],
   "tips": "Für Kinder unter 12 Monaten Mais zerkleinern und Salz weglassen.",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Vegan",
+    "Mealprep-geeignet"
+  ]
 }

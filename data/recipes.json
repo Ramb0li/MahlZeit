@@ -2,9 +2,8 @@
   {
     "id": "ei-01",
     "name": "Rührei",
-    "category": "Eier",
+    "category": "Frühstück",
     "timeMinutes": 15,
-    "timeLabel": "schnell",
     "ingredients": [
       {
         "name": "Eier",
@@ -31,25 +30,22 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": false,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Klassisches Rührei, schnell und einfach.",
     "imageUrl": null,
     "imageZutaten": null,
-    "imageKochen": null
+    "imageKochen": null,
+    "tags": [
+      "Mittagsgericht"
+    ]
   },
   {
     "id": "ei-02",
     "name": "Rahmspinat, Salzkartoffeln, Spiegeleier",
-    "category": "Eier",
+    "category": "Vegetarische Hauptgerichte",
     "timeMinutes": 35,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Spinat (tiefgekühlt)",
@@ -100,26 +96,23 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Herbst",
-      "Winter"
-    ],
     "weatherType": "kalt",
-    "isMealprep": false,
-    "isSuitableForLunch": false,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Herzhafter Klassiker für kalte Abende.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Herbst",
+      "Winter"
+    ]
   },
   {
     "id": "ei-03",
     "name": "Rösti, Avocado, Spiegeleier",
-    "category": "Eier",
+    "category": "Frühstück",
     "timeMinutes": 30,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Kartoffeln (mehlig)",
@@ -158,25 +151,22 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": false,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Schweizer Rösti trifft auf Avocado.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mittagsgericht"
+    ]
   },
   {
     "id": "ei-04",
     "name": "Gemüse-Eieromelette",
-    "category": "Eier",
+    "category": "Vegetarische Hauptgerichte",
     "timeMinutes": 20,
-    "timeLabel": "schnell",
     "ingredients": [
       {
         "name": "Eier",
@@ -215,25 +205,22 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": false,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Schnelle Omelette mit buntem Gemüse.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mittagsgericht"
+    ]
   },
   {
     "id": "ei-05",
     "name": "Omelette mit Pilz-Kräutersauce",
-    "category": "Eier",
+    "category": "Vegetarische Hauptgerichte",
     "timeMinutes": 25,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Eier",
@@ -272,26 +259,23 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Herbst",
-      "Winter"
-    ],
     "weatherType": "kalt",
-    "isMealprep": false,
-    "isSuitableForLunch": false,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Cremige Pilzsauce über fluffiger Omelette.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Herbst",
+      "Winter"
+    ]
   },
   {
     "id": "ei-06",
     "name": "Eier in Senfsauce mit Blumenkohlpüree",
-    "category": "Eier",
+    "category": "Vegetarische Hauptgerichte",
     "timeMinutes": 35,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Eier",
@@ -330,26 +314,23 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Herbst",
-      "Winter"
-    ],
     "weatherType": "kalt",
-    "isMealprep": false,
-    "isSuitableForLunch": false,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Deftige Senfsauce mit Eiern und feinem Blumenkohlpüree.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Herbst",
+      "Winter"
+    ]
   },
   {
     "id": "ei-07",
     "name": "Polenta, Gemüse & Eier",
-    "category": "Eier",
+    "category": "Vegetarische Hauptgerichte",
     "timeMinutes": 35,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Polenta",
@@ -388,26 +369,23 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Herbst",
-      "Winter"
-    ],
     "weatherType": "kalt",
-    "isMealprep": false,
-    "isSuitableForLunch": false,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Cremige Polenta mit Gemüse und Eiern.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Herbst",
+      "Winter"
+    ]
   },
   {
     "id": "ei-08",
     "name": "Shakshuka mit Feta",
-    "category": "Eier",
+    "category": "Vegetarische Hauptgerichte",
     "timeMinutes": 25,
-    "timeLabel": "schnell",
     "ingredients": [
       {
         "name": "Eier",
@@ -476,13 +454,7 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": false,
-    "isSuitableForLunch": true,
-    "dietType": "vegetarisch",
     "source": "cuiseline",
     "basePortions": 4,
     "description": "Pochierte Eier in würziger Tomatensauce — das klassische nordafrikanische Gericht, das zum Frühstück, Mittag- oder Abendessen passt.",
@@ -495,14 +467,17 @@
       "Mit restlichem Feta und frischen Kräutern garnieren. Mit Brot servieren."
     ],
     "tips": "Dazu passt frisches Fladenbrot oder Sauerteigbrot. Für eine vegane Variante die Eier weglassen und mehr Gemüse hinzufügen.",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mittagsgericht",
+      "Vegetarisch"
+    ]
   },
   {
     "id": "fvt-03",
     "name": "Vollkornnudeln mit Linsen-Bolognese (Familientisch)",
     "category": "Pasta",
     "timeMinutes": 45,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Berglinsen",
@@ -571,27 +546,26 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Herbst",
-      "Winter",
-      "Frühling"
-    ],
     "weatherType": "kalt",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
     "source": "Familientisch voraus! (LittleFant)",
     "basePortions": 4,
     "description": "Vollwertige Variante mit Berglinsen – extra Balsamico für Tiefe. Sauce gut einfrierbar.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Herbst",
+      "Winter",
+      "Frühling"
+    ]
   },
   {
     "id": "fvt-04",
     "name": "Vollkornpasta mit Blumenkohl-Bohnen-Cashew-Sauce",
     "category": "Pasta",
     "timeMinutes": 35,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Cashewkerne",
@@ -654,27 +628,25 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Herbst",
-      "Winter",
-      "Frühling"
-    ],
     "weatherType": "kalt",
-    "isMealprep": false,
-    "isSuitableForLunch": true,
     "source": "Familientisch voraus! (LittleFant)",
     "basePortions": 4,
     "description": "Cremige vegane Cashew-Sauce mit Blumenkohl und weissen Bohnen – geröstete Röschen als Topping.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mittagsgericht",
+      "Herbst",
+      "Winter",
+      "Frühling"
+    ]
   },
   {
     "id": "fvt-06",
     "name": "Brokkoli-Gnocchi",
     "category": "Pasta",
     "timeMinutes": 55,
-    "timeLabel": "aufwändig",
     "ingredients": [
       {
         "name": "Kartoffeln (festkochend)",
@@ -719,25 +691,20 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": false,
-    "isSuitableForLunch": false,
     "source": "Familientisch voraus! (LittleFant)",
     "basePortions": 4,
     "description": "Selbstgemachte Gnocchi mit Brokkoli und Kichererbsenmehl – nährstoffreicher als klassische Variante.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": []
   },
   {
     "id": "fvt-09",
     "name": "Kein-Käse-Käse-Spätzle (vegan)",
     "category": "Pasta",
     "timeMinutes": 50,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Weizenmehl (Type 630)",
@@ -818,26 +785,24 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Herbst",
-      "Winter"
-    ],
     "weatherType": "kalt",
-    "isMealprep": false,
-    "isSuitableForLunch": false,
     "source": "Familientisch voraus! (LittleFant)",
     "basePortions": 4,
     "description": "Selbstgemachte Kichererbsen-Spätzle mit cremiger Tofu-Cashew-Sauce – ganz ohne Käse, aber \"cheesy\".",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Herbst",
+      "Winter"
+    ]
   },
   {
     "id": "fvt-12",
     "name": "Nudeln mit Basilikum-Bohnen-Pesto",
     "category": "Pasta",
     "timeMinutes": 20,
-    "timeLabel": "schnell",
     "ingredients": [
       {
         "name": "Basilikum",
@@ -888,26 +853,24 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Frühling",
-      "Sommer"
-    ],
     "weatherType": "warm",
-    "isMealprep": false,
-    "isSuitableForLunch": true,
     "source": "Familientisch voraus! (LittleFant)",
     "basePortions": 4,
     "description": "Schnelles veganes Pesto aus Basilikum, weissen Bohnen und Cashews – nährstoffreicher als klassisches Pesto.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mittagsgericht",
+      "Frühling",
+      "Sommer"
+    ]
   },
   {
     "id": "pas-01",
     "name": "Linsen-Gemüse-Bolognese",
     "category": "Pasta",
     "timeMinutes": 40,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Spaghetti",
@@ -958,26 +921,25 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Herbst",
-      "Winter"
-    ],
     "weatherType": "kalt",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Vegane Bolognese aus Linsen und Gemüse.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Herbst",
+      "Winter"
+    ]
   },
   {
     "id": "pas-02",
     "name": "Linsen-Gemüse-Lasagne",
-    "category": "Pasta",
+    "category": "Aufläufe & Gratins",
     "timeMinutes": 75,
-    "timeLabel": "aufwändig",
     "ingredients": [
       {
         "name": "Lasagneblätter",
@@ -1016,26 +978,26 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Herbst",
-      "Winter"
-    ],
     "weatherType": "kalt",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Klassische Lasagne vegetarisch.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Herbst",
+      "Winter",
+      "Ofengericht"
+    ]
   },
   {
     "id": "pas-03",
     "name": "Spinat-Lasagne",
-    "category": "Pasta",
+    "category": "Aufläufe & Gratins",
     "timeMinutes": 70,
-    "timeLabel": "aufwändig",
     "ingredients": [
       {
         "name": "Lasagneblätter",
@@ -1074,26 +1036,26 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Herbst",
-      "Winter"
-    ],
     "weatherType": "kalt",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Cremige Spinat-Ricotta Lasagne.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Herbst",
+      "Winter",
+      "Ofengericht"
+    ]
   },
   {
     "id": "pas-04",
     "name": "Pesto Genovese",
     "category": "Pasta",
     "timeMinutes": 15,
-    "timeLabel": "schnell",
     "ingredients": [
       {
         "name": "Pasta",
@@ -1126,27 +1088,25 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Frühling",
-      "Sommer"
-    ],
     "weatherType": "warm",
-    "isMealprep": false,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Schnell, lecker, mit frischem Basilikum-Pesto.",
     "steps": [],
     "tips": "",
     "imageUrl": "/images/recipes/cuiselin-pesto-genovese.jpg",
-    "imageZutaten": "/images/recipes/cuiselin-pesto-genovese-zutaten.jpg"
+    "imageZutaten": "/images/recipes/cuiselin-pesto-genovese-zutaten.jpg",
+    "tags": [
+      "Mittagsgericht",
+      "Frühling",
+      "Sommer"
+    ]
   },
   {
     "id": "pas-05",
     "name": "Napoli",
     "category": "Pasta",
     "timeMinutes": 20,
-    "timeLabel": "schnell",
     "ingredients": [
       {
         "name": "Pasta",
@@ -1179,25 +1139,22 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": false,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Klassische Tomatensauce – simpel und gut.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mittagsgericht"
+    ]
   },
   {
     "id": "pas-06",
     "name": "Pilzrahmsauce",
     "category": "Pasta",
     "timeMinutes": 25,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Pasta",
@@ -1236,26 +1193,23 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Herbst",
-      "Winter"
-    ],
     "weatherType": "kalt",
-    "isMealprep": false,
-    "isSuitableForLunch": false,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Cremige Pilzrahmsauce mit Pasta.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Herbst",
+      "Winter"
+    ]
   },
   {
     "id": "pas-07",
     "name": "Älpler Magronen",
     "category": "Pasta",
     "timeMinutes": 45,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Hörnli",
@@ -1294,26 +1248,24 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Herbst",
-      "Winter"
-    ],
     "weatherType": "kalt",
-    "isMealprep": false,
-    "isSuitableForLunch": false,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Schweizer Klassiker vom Berg.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Herbst",
+      "Winter",
+      "Schweizer"
+    ]
   },
   {
     "id": "pas-08",
     "name": "Teigwarenauflauf",
-    "category": "Pasta",
+    "category": "Aufläufe & Gratins",
     "timeMinutes": 50,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Pasta (Penne)",
@@ -1346,25 +1298,24 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "kalt",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Einfacher Nudelauflauf mit Tomatensauce.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Ofengericht"
+    ]
   },
   {
     "id": "pas-09",
     "name": "Hörnligratin mit Lauch, Erbsen & Broccoli",
-    "category": "Pasta",
+    "category": "Aufläufe & Gratins",
     "timeMinutes": 50,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Hörnli",
@@ -1403,27 +1354,27 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Herbst",
-      "Winter",
-      "Frühling"
-    ],
     "weatherType": "kalt",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Herzhafter Nudelauflauf mit Gemüse.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Herbst",
+      "Winter",
+      "Frühling",
+      "Ofengericht"
+    ]
   },
   {
     "id": "pas-10",
     "name": "Pasta mit Kürbissauce",
     "category": "Pasta",
     "timeMinutes": 35,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Pasta",
@@ -1462,26 +1413,24 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Herbst",
-      "Winter"
-    ],
     "weatherType": "kalt",
-    "isMealprep": false,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Herbstliche Pasta mit cremiger Kürbissauce.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mittagsgericht",
+      "Herbst",
+      "Winter"
+    ]
   },
   {
     "id": "pas-11",
     "name": "Spätzligratin mit Tomatensauce",
-    "category": "Pasta",
+    "category": "Aufläufe & Gratins",
     "timeMinutes": 45,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Spätzli (fertig)",
@@ -1514,26 +1463,26 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Herbst",
-      "Winter"
-    ],
     "weatherType": "kalt",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Schweizer Spätzli aus dem Ofen.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Herbst",
+      "Winter",
+      "Ofengericht"
+    ]
   },
   {
     "id": "pas-12",
     "name": "Spätzli mit Kürbissauce",
     "category": "Pasta",
     "timeMinutes": 40,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Spätzli (fertig)",
@@ -1566,25 +1515,22 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Herbst"
-    ],
     "weatherType": "kalt",
-    "isMealprep": false,
-    "isSuitableForLunch": false,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Herbstliche Spätzli-Variante.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Herbst"
+    ]
   },
   {
     "id": "pas-13",
     "name": "Pasta al Limone",
     "category": "Pasta",
     "timeMinutes": 25,
-    "timeLabel": "schnell",
     "ingredients": [
       {
         "name": "Spaghetti oder Linguine",
@@ -1635,15 +1581,7 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Frühling",
-      "Sommer",
-      "ganzjährig"
-    ],
     "weatherType": "warm",
-    "isMealprep": false,
-    "isSuitableForLunch": true,
-    "dietType": "vegan",
     "source": "cuiseline",
     "basePortions": 4,
     "description": "Cremige Zitronenpasta ohne Sahne — das Geheimnis liegt im stärkehaltigen Kochwasser und guter Emulsion.",
@@ -1655,14 +1593,19 @@
       "Mit Salz, Pfeffer und Chiliflocken abschmecken. Petersilie grob hacken und unterheben. Sofort servieren."
     ],
     "tips": "Für eine cremigere Version 2 EL vegane Butter zum Schluss unterrühren. Parmesan oder Hefeflocken machen das Gericht noch aromatischer.",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mittagsgericht",
+      "Frühling",
+      "Sommer"
+    ]
   },
   {
     "id": "fvt-10",
     "name": "Spinat-Linsen-Daal mit Vollkornreis",
-    "category": "Reis",
+    "category": "Reis & Getreide",
     "timeMinutes": 50,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Berglinsen",
@@ -1749,27 +1692,27 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Herbst",
-      "Winter",
-      "Frühling"
-    ],
     "weatherType": "kalt",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
     "source": "Familientisch voraus! (LittleFant)",
     "basePortions": 4,
     "description": "Wärmendes Linsen-Daal mit Spinat und Kokosmilch – aromatisch und für die ganze Familie.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Asiatisch",
+      "Herbst",
+      "Winter",
+      "Frühling"
+    ]
   },
   {
     "id": "rei-01",
     "name": "Lauchrisotto",
-    "category": "Reis",
+    "category": "Reis & Getreide",
     "timeMinutes": 40,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Risottoreis",
@@ -1814,27 +1757,24 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Herbst",
-      "Winter",
-      "Frühling"
-    ],
     "weatherType": "kalt",
-    "isMealprep": false,
-    "isSuitableForLunch": false,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Cremiges Lauchrisotto – Komfort food pur.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Herbst",
+      "Winter",
+      "Frühling"
+    ]
   },
   {
     "id": "rei-02",
     "name": "Risotto mit Ofengemüse",
-    "category": "Reis",
+    "category": "Reis & Getreide",
     "timeMinutes": 60,
-    "timeLabel": "aufwändig",
     "ingredients": [
       {
         "name": "Risottoreis",
@@ -1873,25 +1813,23 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "kalt",
-    "isMealprep": true,
-    "isSuitableForLunch": false,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Risotto mit karamellisiertem Ofengemüse.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mealprep-geeignet",
+      "Ofengericht"
+    ]
   },
   {
     "id": "rei-03",
     "name": "Linsen-Gemüse-Curry mit Reis",
-    "category": "Reis",
+    "category": "Suppen, Eintöpfe & Currys",
     "timeMinutes": 35,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Rote Linsen",
@@ -1942,25 +1880,24 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Würziges Curry – perfekt für Mealprep.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Asiatisch"
+    ]
   },
   {
     "id": "rei-04",
     "name": "Bowl mit Reis, Bohnen, Avocado & Tahini",
-    "category": "Reis",
+    "category": "Salate & Bowls",
     "timeMinutes": 20,
-    "timeLabel": "schnell",
     "ingredients": [
       {
         "name": "Basmatireis",
@@ -1999,26 +1936,25 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Frühling",
-      "Sommer"
-    ],
     "weatherType": "warm",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Leichte Bowl für warme Tage.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Frühling",
+      "Sommer"
+    ]
   },
   {
     "id": "rei-05",
     "name": "Mexikanischer Reissalat",
-    "category": "Reis",
+    "category": "Salate & Bowls",
     "timeMinutes": 20,
-    "timeLabel": "schnell",
     "ingredients": [
       {
         "name": "Langkornreis",
@@ -2063,26 +1999,26 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Frühling",
-      "Sommer"
-    ],
     "weatherType": "warm",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Bunter Reissalat mit mexikanischen Aromen.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Frühling",
+      "Sommer",
+      "Mexikanisch"
+    ]
   },
   {
     "id": "rei-06",
     "name": "Linsen-Reis",
-    "category": "Reis",
+    "category": "Reis & Getreide",
     "timeMinutes": 30,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Linsen (grün)",
@@ -2121,25 +2057,23 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Einfaches, sättigendes Linsen-Reis-Gericht.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht"
+    ]
   },
   {
     "id": "rei-07",
     "name": "Gemüse-Curry mit Kokosmilch und Basmatireis",
-    "category": "Reis",
+    "category": "Suppen, Eintöpfe & Currys",
     "timeMinutes": 30,
-    "timeLabel": "schnell",
     "ingredients": [
       {
         "name": "Basmatireis",
@@ -2214,15 +2148,7 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Herbst",
-      "Winter",
-      "ganzjährig"
-    ],
     "weatherType": "kalt",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
-    "dietType": "vegan",
     "source": "cuiseline",
     "basePortions": 4,
     "description": "Reichhaltiges Gemüse-Curry, das wärmt und sättigt — perfekt fürs Meal-Prep und in 30 Minuten fertig.",
@@ -2235,14 +2161,20 @@
       "Mit Basmatireis servieren."
     ],
     "tips": "Mit Koriander und einer Scheibe Limette garnieren. Am nächsten Tag schmeckt das Curry noch besser — ideal für Meal-Prep.",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Herbst",
+      "Winter"
+    ]
   },
   {
     "id": "ein-01",
     "name": "Chili sin carne",
-    "category": "Eintopf/Gratin",
+    "category": "Suppen, Eintöpfe & Currys",
     "timeMinutes": 40,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Rote Bohnen (Dose)",
@@ -2299,26 +2231,26 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Herbst",
-      "Winter"
-    ],
     "weatherType": "kalt",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Veganes Chili – würzig und sättigend.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Herbst",
+      "Winter",
+      "Mexikanisch"
+    ]
   },
   {
     "id": "ein-02",
     "name": "Urdinkelkernotto mit Kohlrabi & Lauch",
-    "category": "Eintopf/Gratin",
+    "category": "Reis & Getreide",
     "timeMinutes": 50,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Urdinkelkerne",
@@ -2357,25 +2289,20 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": false,
-    "isSuitableForLunch": false,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Risotto-Variante mit Urdinkelkernen.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": []
   },
   {
     "id": "ein-03",
     "name": "Urdinkelkernotto mit Tomate und weissen Bohnen",
-    "category": "Eintopf/Gratin",
+    "category": "Reis & Getreide",
     "timeMinutes": 50,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Urdinkelkerne",
@@ -2414,25 +2341,20 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": false,
-    "isSuitableForLunch": false,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Herzhaftes Kernotto mit mediterranen Aromen.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": []
   },
   {
     "id": "ein-04",
     "name": "Ebly mit Tomaten, Räuchertofu & Sauerkraut",
-    "category": "Eintopf/Gratin",
+    "category": "Reis & Getreide",
     "timeMinutes": 35,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Ebly (Weichweizenkörner)",
@@ -2465,26 +2387,26 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Herbst",
-      "Winter"
-    ],
     "weatherType": "kalt",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Deftige Kombination mit Räuchertofu.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Herbst",
+      "Winter"
+    ]
   },
   {
     "id": "ein-05",
     "name": "Sauerkraut-Auflauf mit Räuchertofu und Kartoffel-Karotten-Stampf",
-    "category": "Eintopf/Gratin",
+    "category": "Aufläufe & Gratins",
     "timeMinutes": 60,
-    "timeLabel": "aufwändig",
     "ingredients": [
       {
         "name": "Sauerkraut",
@@ -2523,26 +2445,25 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Herbst",
-      "Winter"
-    ],
     "weatherType": "kalt",
-    "isMealprep": false,
-    "isSuitableForLunch": false,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Wärmender Auflauf mit Sauerkraut.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Herbst",
+      "Winter",
+      "Ofengericht"
+    ]
   },
   {
     "id": "ein-06",
     "name": "Marokkanische Tajine mit Kichererbsen und Aprikosen",
-    "category": "Eintopf/Gratin",
+    "category": "Suppen, Eintöpfe & Currys",
     "timeMinutes": 45,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Kichererbsen (Dose)",
@@ -2623,14 +2544,7 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Herbst",
-      "Winter"
-    ],
     "weatherType": "kalt",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
-    "dietType": "vegan",
     "source": "cuiseline",
     "basePortions": 4,
     "description": "Aromatischer Eintopf mit nordafrikanischen Gewürzen — süss, würzig und unglaublich wärmend an kalten Tagen.",
@@ -2643,14 +2557,21 @@
       "Tajine mit Koriander bestreuen und auf Couscous servieren."
     ],
     "tips": "Schmeckt am nächsten Tag noch besser. Dazu passt Harissa und eine Scheibe Zitrone. Für Fleischesser: 500g Lammwürfel mit den Zwiebeln anbraten.",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Orientalisch",
+      "Herbst",
+      "Winter"
+    ]
   },
   {
     "id": "fvt-02",
     "name": "Kartoffel-Kürbis-Gulasch mit weissen Bohnen",
-    "category": "Eintopf/Gratin",
+    "category": "Suppen, Eintöpfe & Currys",
     "timeMinutes": 50,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Kartoffeln",
@@ -2743,26 +2664,25 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Herbst",
-      "Winter"
-    ],
     "weatherType": "kalt",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
     "source": "Familientisch voraus! (LittleFant)",
     "basePortions": 4,
     "description": "Wärmend-herzhaftes Gulasch mit Kürbis, Kartoffeln und weissen Bohnen. Garniert mit Kräuteröl.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Herbst",
+      "Winter"
+    ]
   },
   {
     "id": "fvt-07",
     "name": "Schnelle Gemüsesuppe mit Bohnen",
-    "category": "Suppen",
+    "category": "Suppen, Eintöpfe & Currys",
     "timeMinutes": 30,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Zwiebel",
@@ -2849,27 +2769,26 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Herbst",
-      "Winter",
-      "Frühling"
-    ],
     "weatherType": "kalt",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
     "source": "Familientisch voraus! (LittleFant)",
     "basePortions": 4,
     "description": "Bunte Gemüsesuppe mit Bohnen und Vollkornnudeln – ideal um neue Gemüsesorten einzuführen.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Herbst",
+      "Winter",
+      "Frühling"
+    ]
   },
   {
     "id": "sup-01",
     "name": "Kürbissuppe mit Kartoffel, Ingwer und Curry",
-    "category": "Suppen",
+    "category": "Suppen, Eintöpfe & Currys",
     "timeMinutes": 35,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Butternusskürbis",
@@ -2908,26 +2827,25 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Herbst",
-      "Winter"
-    ],
     "weatherType": "kalt",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Wärmende Kürbissuppe mit exotischem Kick.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Herbst",
+      "Winter"
+    ]
   },
   {
     "id": "sup-02",
     "name": "Minestrone",
-    "category": "Suppen",
+    "category": "Suppen, Eintöpfe & Currys",
     "timeMinutes": 45,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Gemischtes Gemüse",
@@ -2966,28 +2884,28 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Herbst",
-      "Winter",
-      "Frühling"
-    ],
     "weatherType": "kalt",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
     "source": "Menüliste",
     "basePortions": 4,
     "description": "Italienische Gemüsesuppe mit Pasta und Bohnen.",
     "steps": [],
     "tips": "",
     "imageUrl": "/images/recipes/cuiselin-minestrone-zutaten.jpg",
-    "imageZutaten": "/images/recipes/cuiselin-minestrone-zutaten.jpg"
+    "imageZutaten": "/images/recipes/cuiselin-minestrone-zutaten.jpg",
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Herbst",
+      "Winter",
+      "Frühling",
+      "Italienisch"
+    ]
   },
   {
     "id": "sup-03",
     "name": "Gerstensuppe",
-    "category": "Suppen",
+    "category": "Suppen, Eintöpfe & Currys",
     "timeMinutes": 60,
-    "timeLabel": "aufwändig",
     "ingredients": [
       {
         "name": "Rollgerste",
@@ -3026,26 +2944,26 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Herbst",
-      "Winter"
-    ],
     "weatherType": "kalt",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Sättigende Suppe mit Rollgerste.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Herbst",
+      "Winter",
+      "Schweizer"
+    ]
   },
   {
     "id": "sup-04",
     "name": "Gelberbsensuppe",
-    "category": "Suppen",
+    "category": "Suppen, Eintöpfe & Currys",
     "timeMinutes": 50,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Gelbe Erbsen (getrocknet)",
@@ -3078,26 +2996,25 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Herbst",
-      "Winter"
-    ],
     "weatherType": "kalt",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Deftige Erbsensuppe nach Grossmutterart.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Herbst",
+      "Winter"
+    ]
   },
   {
     "id": "sup-05",
     "name": "Süsskartoffelsuppe",
-    "category": "Suppen",
+    "category": "Suppen, Eintöpfe & Currys",
     "timeMinutes": 35,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Süsskartoffeln",
@@ -3130,26 +3047,25 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Herbst",
-      "Winter"
-    ],
     "weatherType": "kalt",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Samtweiche Suppe mit exotischer Note.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Herbst",
+      "Winter"
+    ]
   },
   {
     "id": "sup-06",
     "name": "Tomaten-Basilikum Cremesuppe",
-    "category": "Suppen",
+    "category": "Suppen, Eintöpfe & Currys",
     "timeMinutes": 25,
-    "timeLabel": "schnell",
     "ingredients": [
       {
         "name": "Tomaten (aus der Dose, ganz)",
@@ -3206,15 +3122,7 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Sommer",
-      "Herbst",
-      "ganzjährig"
-    ],
     "weatherType": "warm",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
-    "dietType": "vegan",
     "source": "cuiseline",
     "basePortions": 4,
     "description": "Samtig glatte Tomatensuppe mit Basilikum — in 25 Minuten auf dem Tisch und besser als jede Fertigsuppe.",
@@ -3226,34 +3134,39 @@
       "Mit Salz und Pfeffer abschmecken. Mit Basilikum und einem Olivenölschuss servieren."
     ],
     "tips": "Mit frischen Sommertomaten aus dem Garten schmeckt die Suppe noch besser. Wer es etwas schärfer mag, gibt eine Prise Chiliflocken dazu.",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Sommer",
+      "Herbst"
+    ]
   },
   {
     "id": "rec-1779488181331-i6vew",
     "name": "Tomaten & Mozzerella Salat",
-    "category": "Salat/Bowl",
+    "category": "Salate & Bowls",
     "timeMinutes": 15,
-    "timeLabel": "schnell",
     "ingredients": [],
-    "season": [
-      "Sommer"
-    ],
     "weatherType": "warm",
-    "isMealprep": false,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mittagsgericht",
+      "Vegetarisch",
+      "Sommer"
+    ]
   },
   {
     "id": "sal-01",
     "name": "Quinoa Bowl",
-    "category": "Salat/Bowl",
+    "category": "Salate & Bowls",
     "timeMinutes": 25,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Quinoa",
@@ -3286,26 +3199,25 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Frühling",
-      "Sommer"
-    ],
     "weatherType": "warm",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Proteinreiche Bowl für warme Tage.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Frühling",
+      "Sommer"
+    ]
   },
   {
     "id": "sal-02",
     "name": "Rucola Birnen Fetasalat",
-    "category": "Salat/Bowl",
+    "category": "Salate & Bowls",
     "timeMinutes": 15,
-    "timeLabel": "schnell",
     "ingredients": [
       {
         "name": "Rucola",
@@ -3344,27 +3256,25 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Herbst",
-      "Frühling",
-      "Sommer"
-    ],
     "weatherType": "warm",
-    "isMealprep": false,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Eleganter Salat mit Birne und Feta.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mittagsgericht",
+      "Herbst",
+      "Frühling",
+      "Sommer"
+    ]
   },
   {
     "id": "sal-03",
     "name": "Taboulé",
-    "category": "Salat/Bowl",
+    "category": "Salate & Bowls",
     "timeMinutes": 20,
-    "timeLabel": "schnell",
     "ingredients": [
       {
         "name": "Bulgur",
@@ -3409,27 +3319,27 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Frühling",
-      "Sommer"
-    ],
     "weatherType": "warm",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Frischer Levante-Salat.",
     "steps": [],
     "tips": "",
     "imageUrl": "/images/recipes/cuiselin-taboule.jpeg",
-    "imageZutaten": "/images/recipes/cuiselin-taboule-zutaten.jpeg"
+    "imageZutaten": "/images/recipes/cuiselin-taboule-zutaten.jpeg",
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Frühling",
+      "Sommer",
+      "Orientalisch"
+    ]
   },
   {
     "id": "sal-04",
     "name": "Kichererbsensalat",
-    "category": "Salat/Bowl",
+    "category": "Salate & Bowls",
     "timeMinutes": 15,
-    "timeLabel": "schnell",
     "ingredients": [
       {
         "name": "Kichererbsen (Dose)",
@@ -3474,26 +3384,25 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Frühling",
-      "Sommer"
-    ],
     "weatherType": "warm",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Proteinreicher Salat, schnell gemacht.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Frühling",
+      "Sommer"
+    ]
   },
   {
     "id": "sal-05",
     "name": "Roter Linsensalat",
-    "category": "Salat/Bowl",
+    "category": "Salate & Bowls",
     "timeMinutes": 20,
-    "timeLabel": "schnell",
     "ingredients": [
       {
         "name": "Rote Linsen",
@@ -3538,26 +3447,25 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Frühling",
-      "Sommer"
-    ],
     "weatherType": "warm",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Leichter Salat mit roten Linsen.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Frühling",
+      "Sommer"
+    ]
   },
   {
     "id": "sal-06",
     "name": "Kartoffelsalat",
-    "category": "Salat/Bowl",
+    "category": "Salate & Bowls",
     "timeMinutes": 30,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Festkochende Kartoffeln",
@@ -3590,25 +3498,23 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": false,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Klassischer Kartoffelsalat.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mittagsgericht",
+      "Schweizer"
+    ]
   },
   {
     "id": "sal-07",
     "name": "Griechischer Salat",
-    "category": "Salat/Bowl",
+    "category": "Salate & Bowls",
     "timeMinutes": 15,
-    "timeLabel": "schnell",
     "ingredients": [
       {
         "name": "Tomaten",
@@ -3653,26 +3559,24 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Frühling",
-      "Sommer"
-    ],
     "weatherType": "warm",
-    "isMealprep": false,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Sommerlicher Klassiker aus Griechenland.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mittagsgericht",
+      "Frühling",
+      "Sommer"
+    ]
   },
   {
     "id": "sal-08",
     "name": "Buddha Bowl mit Süsskartoffel und Tahini",
-    "category": "Salat/Bowl",
+    "category": "Salate & Bowls",
     "timeMinutes": 35,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Süsskartoffeln",
@@ -3741,13 +3645,7 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
-    "dietType": "vegan",
     "source": "cuiseline",
     "basePortions": 4,
     "description": "Sättigende Bowl mit gerösteter Süsskartoffel, knusprigen Kichererbsen und cremigem Tahini-Dressing.",
@@ -3759,14 +3657,18 @@
       "Bowls aufbauen: Quinoa, Spinat, Süsskartoffel, Kichererbsen, Avocadoscheiben. Mit Dressing beträufeln und Granatapfelkerne streuen."
     ],
     "tips": "Für Meal-Prep alle Komponenten separat aufbewahren und erst vor dem Essen zusammenstellen. Hält im Kühlschrank 3 Tage.",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet",
+      "Mittagsgericht"
+    ]
   },
   {
     "id": "sal-09",
     "name": "Griechischer Sommer-Salat",
-    "category": "Salat/Bowl",
+    "category": "Salate & Bowls",
     "timeMinutes": 15,
-    "timeLabel": "schnell",
     "ingredients": [
       {
         "name": "Tomaten (verschiedene Sorten)",
@@ -3823,13 +3725,7 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Sommer"
-    ],
     "weatherType": "warm",
-    "isMealprep": false,
-    "isSuitableForLunch": true,
-    "dietType": "vegetarisch",
     "source": "cuiseline",
     "basePortions": 4,
     "description": "Der echte griechische Salat — kein Eisberg-Salat, nur Tomaten, Gurken, Oliven und ein ganzer Block Feta. Perfekt im Sommer.",
@@ -3842,14 +3738,18 @@
       "Kurz vor dem Servieren zum Tisch bringen und erst dann vermischen."
     ],
     "tips": "Der Schlüssel: beste Tomaten (reif und aromatisch), gutes Olivenöl und echter griechischer Feta aus Schafsmilch. Niemals Eisbergsalat.",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Vegetarisch",
+      "Mittagsgericht",
+      "Sommer"
+    ]
   },
   {
     "id": "fvt-08",
     "name": "Gefüllte Paprika mit Quinoa und schwarzen Bohnen",
-    "category": "Ofen",
+    "category": "Aufläufe & Gratins",
     "timeMinutes": 50,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Quinoa",
@@ -3936,26 +3836,26 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Sommer",
-      "Herbst"
-    ],
     "weatherType": "neutral",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
     "source": "Familientisch voraus! (LittleFant)",
     "basePortions": 4,
     "description": "Im Ofen gegarte Paprika gefüllt mit würziger Quinoa-Bohnen-Mais-Füllung. Farbig und nährstoffreich.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Ofengericht",
+      "Sommer",
+      "Herbst"
+    ]
   },
   {
     "id": "ofe-01",
     "name": "Ofengemüse mit Feta und Tahini-Quinoa",
-    "category": "Ofen",
+    "category": "Aufläufe & Gratins",
     "timeMinutes": 50,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Gemischtes Gemüse",
@@ -3994,25 +3894,24 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Buntes Ofengemüse mit Tahini-Quinoa und Feta.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Ofengericht"
+    ]
   },
   {
     "id": "ofe-02",
     "name": "Pizza Bianca mit Zucchini und Ricotta",
-    "category": "Ofen",
+    "category": "Aufläufe & Gratins",
     "timeMinutes": 40,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Fertig-Pizzateig (rund, 400g)",
@@ -4075,14 +3974,7 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Sommer",
-      "Frühling"
-    ],
     "weatherType": "warm",
-    "isMealprep": false,
-    "isSuitableForLunch": true,
-    "dietType": "vegetarisch",
     "source": "cuiseline",
     "basePortions": 4,
     "description": "Weisse Pizza ohne Tomatensauce — cremiger Ricotta, frische Zucchini und Mozzarella ergeben eine sommerlich-leichte Alternative.",
@@ -4095,14 +3987,21 @@
       "10–12 Minuten backen bis der Rand goldbraun ist. Mit Parmesan und Fleur de sel fertigstellen."
     ],
     "tips": "Fertigteig spart Zeit — alternativ selbst gemachten Teig 24h im Kühlschrank gehen lassen für besseren Geschmack.",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Vegetarisch",
+      "Mittagsgericht",
+      "Ofengericht",
+      "Sommer",
+      "Frühling",
+      "Italienisch"
+    ]
   },
   {
     "id": "asi-01",
     "name": "Pad Thai",
-    "category": "Asiatisch",
+    "category": "Pasta",
     "timeMinutes": 25,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Reisnudeln",
@@ -4147,26 +4046,25 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Frühling",
-      "Sommer"
-    ],
     "weatherType": "warm",
-    "isMealprep": false,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Klassisches Thai-Nudelgericht.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mittagsgericht",
+      "Asiatisch",
+      "Frühling",
+      "Sommer"
+    ]
   },
   {
     "id": "asi-02",
     "name": "Ayurvedisches Kitchari",
-    "category": "Asiatisch",
+    "category": "Reis & Getreide",
     "timeMinutes": 40,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Rote Linsen",
@@ -4211,25 +4109,24 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Ayurvedischer Klassiker – reinigend und nahrhaft.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Asiatisch"
+    ]
   },
   {
     "id": "asi-03",
     "name": "Pad Thai mit Tofu und Erdnüssen",
-    "category": "Asiatisch",
+    "category": "Pasta",
     "timeMinutes": 30,
-    "timeLabel": "schnell",
     "ingredients": [
       {
         "name": "Reisnudeln (flach, 5mm)",
@@ -4304,13 +4201,7 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": false,
-    "isSuitableForLunch": true,
-    "dietType": "vegetarisch",
     "source": "cuiseline",
     "basePortions": 4,
     "description": "Authentisches Pad Thai mit knusprigem Tofu — süss, sauer, salzig und in 30 Minuten auf dem Tisch.",
@@ -4323,14 +4214,18 @@
       "Mit Erdnüssen, Koriander, Limette und grünen Frühlingszwiebelringen servieren."
     ],
     "tips": "Für vegane Variante Eier weglassen und Sojasauce statt Fischsauce verwenden. Mise en place ist wichtig — alles vorbereiten bevor das Wokken beginnt.",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Vegetarisch",
+      "Mittagsgericht",
+      "Asiatisch"
+    ]
   },
   {
     "id": "fis-01",
     "name": "Fisch, Salzkartoffeln und Spinat",
-    "category": "Fisch",
+    "category": "Fisch & Meeresfrüchte",
     "timeMinutes": 30,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Fischfilets (z.B. Lachs)",
@@ -4363,25 +4258,20 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": false,
-    "isSuitableForLunch": false,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Leichtes Fischgericht mit Beilagen.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": []
   },
   {
     "id": "fis-02",
     "name": "Lachs auf Zitronenbutter-Spinat",
-    "category": "Fisch",
+    "category": "Fisch & Meeresfrüchte",
     "timeMinutes": 20,
-    "timeLabel": "schnell",
     "ingredients": [
       {
         "name": "Lachsfilets (mit Haut)",
@@ -4438,13 +4328,7 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": false,
-    "isSuitableForLunch": true,
-    "dietType": "pescetarisch",
     "source": "cuiseline",
     "basePortions": 4,
     "description": "Knuspriger Lachs mit schaumiger Zitronenbutter und Babyspinat — elegant und in 20 Minuten fertig.",
@@ -4457,14 +4341,16 @@
       "Spinat auf Tellern verteilen, Lachs darauflegen. Mit Dill und Zitronenspalten garnieren."
     ],
     "tips": "Den Lachs unbedingt zimmertemperiert einlegen — kalter Fisch aus dem Kühlschrank direkt in die Pfanne gibt kein gleichmässiges Garergebnis.",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mittagsgericht"
+    ]
   },
   {
     "id": "fvt-01",
     "name": "Süsskartoffel-Kichererbsen-Waffeln mit Joghurt-Gurken-Dip",
-    "category": "Sonstige",
+    "category": "Snacks & Vorspeisen",
     "timeMinutes": 35,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Süsskartoffel",
@@ -4533,25 +4419,23 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
     "source": "Familientisch voraus! (LittleFant)",
     "basePortions": 4,
     "description": "Herzhafte Waffeln mit Süsskartoffel und Kichererbsen, dazu ein frischer Joghurt-Gurken-Dip. Gefriergeeignet.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht"
+    ]
   },
   {
     "id": "fvt-05",
     "name": "Kartoffelpuffer mit Bohnen und Kräuter-Dip",
-    "category": "Sonstige",
+    "category": "Snacks & Vorspeisen",
     "timeMinutes": 40,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Kartoffeln (festkochend)",
@@ -4626,25 +4510,22 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": false,
-    "isSuitableForLunch": true,
     "source": "Familientisch voraus! (LittleFant)",
     "basePortions": 4,
     "description": "Knusprige Kartoffelpuffer mit Süsskartoffel und Bohnen, dazu ein frischer Kräuter-Quark-Dip.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mittagsgericht"
+    ]
   },
   {
     "id": "fvt-11",
     "name": "Süsskartoffel-Quesadillas mit Guacamole",
-    "category": "Sonstige",
+    "category": "Wraps & Sandwiches",
     "timeMinutes": 25,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Süsskartoffel (gross)",
@@ -4707,25 +4588,23 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "warm",
-    "isMealprep": false,
-    "isSuitableForLunch": true,
     "source": "Familientisch voraus! (LittleFant)",
     "basePortions": 4,
     "description": "Vegane Quesadillas mit Süsskartoffel-Bohnen-Füllung und selbstgemachter Guacamole.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mittagsgericht",
+      "Mexikanisch"
+    ]
   },
   {
     "id": "fvt-13",
     "name": "Räuber-Nuggets aus Tofu und Gemüse",
-    "category": "Sonstige",
+    "category": "Snacks & Vorspeisen",
     "timeMinutes": 45,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Kartoffeln (festkochend)",
@@ -4776,25 +4655,23 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
     "source": "Familientisch voraus! (LittleFant)",
     "basePortions": 4,
     "description": "Knusprige vegane Nuggets aus Tofu, Kartoffeln und Blumenkohl – gefriergeeignet, Kinder-Liebling.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht"
+    ]
   },
   {
     "id": "son-01",
     "name": "Fajitas",
-    "category": "Sonstige",
+    "category": "Wraps & Sandwiches",
     "timeMinutes": 25,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Weizentortillas",
@@ -4839,25 +4716,22 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": false,
-    "isSuitableForLunch": false,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Buntes Fajita-Fest für die Familie.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mexikanisch"
+    ]
   },
   {
     "id": "son-02",
     "name": "Tacos mit Linsen & Baumnüsse",
-    "category": "Sonstige",
+    "category": "Wraps & Sandwiches",
     "timeMinutes": 25,
-    "timeLabel": "mittel",
     "ingredients": [
       {
         "name": "Taco-Shells",
@@ -4896,25 +4770,22 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": false,
-    "isSuitableForLunch": false,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Vegane Tacos mit knackigen Baumnüssen.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mexikanisch"
+    ]
   },
   {
     "id": "son-03",
     "name": "Pitabrot mit Falafel, Tzatziki und Gemüse",
-    "category": "Sonstige",
+    "category": "Wraps & Sandwiches",
     "timeMinutes": 20,
-    "timeLabel": "schnell",
     "ingredients": [
       {
         "name": "Pitabrot",
@@ -4953,26 +4824,25 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "Frühling",
-      "Sommer"
-    ],
     "weatherType": "warm",
-    "isMealprep": false,
-    "isSuitableForLunch": true,
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Frisches Streetfood zu Hause.",
     "steps": [],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Mittagsgericht",
+      "Frühling",
+      "Sommer",
+      "Orientalisch"
+    ]
   },
   {
     "id": "son-04",
     "name": "Avocado Toast mit pochiertem Ei",
-    "category": "Sonstige",
+    "category": "Frühstück",
     "timeMinutes": 15,
-    "timeLabel": "schnell",
     "ingredients": [
       {
         "name": "Sauerteigbrot (dicke Scheiben)",
@@ -5029,13 +4899,7 @@
         "perPortions": 4
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": false,
-    "isSuitableForLunch": true,
-    "dietType": "vegetarisch",
     "source": "cuiseline",
     "basePortions": 4,
     "description": "Der Klassiker neu gedacht — mit pochiertem Ei, Kresse und dem richtigen Sauerteigbrot. Fertig in 15 Minuten.",
@@ -5048,14 +4912,17 @@
       "Mit Olivenöl, Chiliflocken, Fleur de sel und Kresse fertigstellen."
     ],
     "tips": "Frische Eier pochieren sich am besten — das Eiweiss hält besser zusammen. Variante: statt pochiertem Ei ein Spiegelei oder Scrambled Eggs verwenden.",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Vegetarisch",
+      "Mittagsgericht"
+    ]
   },
   {
     "id": "kds-01",
     "name": "Blitzschnelle Pizza-Brötchen",
-    "category": "Brot & Aufstrich",
+    "category": "Snacks & Vorspeisen",
     "timeMinutes": 35,
-    "timeLabel": "mittel",
     "basePortions": 8,
     "ingredients": [
       {
@@ -5131,13 +4998,7 @@
         "perPortions": 8
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": true,
-    "isSuitableForLunch": false,
-    "dietCategory": "vegan",
     "source": "LittleFant – Kindersnacks für jeden Tag",
     "description": "Saftige Mini-Brötchen mit Kichererbsen, Oliven und Oregano – mediterran und sättigend. In unter 35 Minuten fertig.",
     "steps": [
@@ -5148,14 +5009,17 @@
       "Backofen auf 190 °C (Umluft) vorheizen. Brötchen 18–20 Minuten goldbraun backen."
     ],
     "tips": "Für Kinder unter 12 Monaten ohne Salz zubereiten.",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet"
+    ]
   },
   {
     "id": "kds-02",
     "name": "Hummus-Waffeln",
-    "category": "Snacks",
+    "category": "Snacks & Vorspeisen",
     "timeMinutes": 40,
-    "timeLabel": "mittel",
     "basePortions": 5,
     "ingredients": [
       {
@@ -5237,13 +5101,7 @@
         "perPortions": 5
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": true,
-    "isSuitableForLunch": false,
-    "dietCategory": "vegan",
     "source": "LittleFant – Kindersnacks für jeden Tag",
     "description": "Hummus in Waffelform! Eisenreich dank Kichererbsen und Chiasamen, praktisch zum Mitnehmen.",
     "steps": [
@@ -5253,14 +5111,17 @@
       "Waffeleisen erhitzen und mit Olivenöl einfetten. Teig portionsweise zu goldbraunen Waffeln ausbacken."
     ],
     "tips": "Für die Beikost ohne Salz zubereiten.",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet"
+    ]
   },
   {
     "id": "kds-03",
     "name": "Tahin-Cracker",
-    "category": "Brot & Aufstrich",
+    "category": "Snacks & Vorspeisen",
     "timeMinutes": 25,
-    "timeLabel": "mittel",
     "basePortions": 30,
     "ingredients": [
       {
@@ -5324,13 +5185,7 @@
         "perPortions": 30
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": true,
-    "isSuitableForLunch": false,
-    "dietCategory": "vegan",
     "source": "LittleFant – Kindersnacks für jeden Tag",
     "description": "Knusprige Cracker mit Sesammus – sättigend und nährstoffreich. Halten luftdicht verpackt ca. 2 Wochen.",
     "steps": [
@@ -5340,14 +5195,17 @@
       "Bei 200 °C (Umluft) ca. 8–12 Minuten backen bis goldbraun."
     ],
     "tips": "Luftdicht aufbewahren – ca. 2 Wochen haltbar.",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet"
+    ]
   },
   {
     "id": "kds-04",
     "name": "Bunte Gemüse-Muffins",
-    "category": "Snacks",
+    "category": "Snacks & Vorspeisen",
     "timeMinutes": 55,
-    "timeLabel": "aufwendig",
     "basePortions": 12,
     "ingredients": [
       {
@@ -5441,13 +5299,7 @@
         "perPortions": 12
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": true,
-    "isSuitableForLunch": false,
-    "dietCategory": "vegan",
     "source": "LittleFant – Kindersnacks für jeden Tag",
     "description": "Herzhafte Muffins mit Linsen und buntem Gemüse – sättigend und voller Nährstoffe, perfekt für die Brotdose.",
     "steps": [
@@ -5457,14 +5309,17 @@
       "Ofen auf 220 °C (Umluft) vorheizen. In Muffinförmchen füllen, 5 Minuten backen. Auf 180 °C reduzieren und weitere 30 Minuten backen."
     ],
     "tips": "Saaten und Erbsen je nach Alter des Kindes vorher zerkleinern.",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet"
+    ]
   },
   {
     "id": "kds-05",
     "name": "Herzhafte Haferkekse",
-    "category": "Snacks",
+    "category": "Snacks & Vorspeisen",
     "timeMinutes": 27,
-    "timeLabel": "mittel",
     "basePortions": 15,
     "ingredients": [
       {
@@ -5528,13 +5383,7 @@
         "perPortions": 15
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": true,
-    "isSuitableForLunch": false,
-    "dietCategory": "vegan",
     "source": "LittleFant – Kindersnacks für jeden Tag",
     "description": "Herzhafte Haferkekse mit Oliven und Rosmarin – ballaststoffreich, knusprig und auch für Erwachsene unwiderstehlich.",
     "steps": [
@@ -5543,14 +5392,17 @@
       "Zu Kugeln formen, auf Backblech platt drücken. Bei 180 °C 12–15 Minuten backen."
     ],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet"
+    ]
   },
   {
     "id": "kds-06",
     "name": "Herzhafte Linsen-Bällchen",
-    "category": "Snacks",
+    "category": "Snacks & Vorspeisen",
     "timeMinutes": 50,
-    "timeLabel": "aufwendig",
     "basePortions": 15,
     "ingredients": [
       {
@@ -5614,13 +5466,7 @@
         "perPortions": 15
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": true,
-    "isSuitableForLunch": false,
-    "dietCategory": "vegan",
     "source": "LittleFant – Kindersnacks für jeden Tag",
     "description": "Geballte Eisen-Power: Linsenbällchen mit Haferflocken und Aprikose – herzhaft und praktisch zum Mitnehmen.",
     "steps": [
@@ -5628,14 +5474,17 @@
       "Alle Zutaten mischen, leicht anpürieren und zu Bällchen formen. Bei 200 °C (Umluft) ca. 20 Minuten backen."
     ],
     "tips": "Mit Vitamin-C-reichem Gemüse (z.B. Paprika) für bessere Eisenaufnahme kombinieren.",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet"
+    ]
   },
   {
     "id": "kds-07",
     "name": "Karotten-Mais-Happen",
-    "category": "Snacks",
+    "category": "Snacks & Vorspeisen",
     "timeMinutes": 35,
-    "timeLabel": "mittel",
     "basePortions": 10,
     "ingredients": [
       {
@@ -5699,13 +5548,7 @@
         "perPortions": 10
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": true,
-    "isSuitableForLunch": false,
-    "dietCategory": "vegan",
     "source": "LittleFant – Kindersnacks für jeden Tag",
     "description": "Goldbraune Maistaler mit Karotte und Sojajoghurt – saftig innen, leicht knusprig außen.",
     "steps": [
@@ -5714,14 +5557,17 @@
       "Zu Kugeln formen, platt drücken. Bei 230 °C (Ober-/Unterhitze) 15–20 Minuten backen."
     ],
     "tips": "Bis zu 60 g Hülsenfrüchte-Reste mit Sojajoghurt pürieren für Extra-Eiweiß.",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet"
+    ]
   },
   {
     "id": "kds-08",
     "name": "Blumenkohl-Puffer",
-    "category": "Snacks",
+    "category": "Snacks & Vorspeisen",
     "timeMinutes": 40,
-    "timeLabel": "mittel",
     "basePortions": 12,
     "ingredients": [
       {
@@ -5785,13 +5631,7 @@
         "perPortions": 12
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": true,
-    "isSuitableForLunch": true,
-    "dietCategory": "vegan",
     "source": "LittleFant – Kindersnacks für jeden Tag",
     "description": "Blumenkohl-Kichererbsen-Puffer – nährstoffreich, gut vorzubereiten und auch als Beilage geeignet.",
     "steps": [
@@ -5800,14 +5640,18 @@
       "Alle Zutaten mischen, zu Bratlingen formen und in Rapsöl von beiden Seiten goldbraun braten."
     ],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet",
+      "Mittagsgericht"
+    ]
   },
   {
     "id": "kds-09",
     "name": "Gemüsebrötchen",
-    "category": "Brot & Aufstrich",
+    "category": "Snacks & Vorspeisen",
     "timeMinutes": 85,
-    "timeLabel": "aufwendig",
     "basePortions": 8,
     "ingredients": [
       {
@@ -5883,13 +5727,7 @@
         "perPortions": 8
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": true,
-    "isSuitableForLunch": false,
-    "dietCategory": "vegan",
     "source": "LittleFant – Kindersnacks für jeden Tag",
     "description": "Bunte Brötchen mit Karotte, Paprika, Mais und versteckten Linsen – nährstoffreich und farbenfroh.",
     "steps": [
@@ -5899,14 +5737,17 @@
       "Mit Kurkuma-Sojadrink bepinseln. Bei 180 °C (Ober-/Unterhitze) 20–25 Minuten backen."
     ],
     "tips": "Für Kinder unter 12 Monaten Mais zerkleinern und Salz weglassen.",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet"
+    ]
   },
   {
     "id": "kds-10",
     "name": "Tomaten-Oregano-Cracker",
-    "category": "Brot & Aufstrich",
+    "category": "Snacks & Vorspeisen",
     "timeMinutes": 25,
-    "timeLabel": "mittel",
     "basePortions": 30,
     "ingredients": [
       {
@@ -5970,13 +5811,7 @@
         "perPortions": 30
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": true,
-    "isSuitableForLunch": false,
-    "dietCategory": "vegan",
     "source": "LittleFant – Kindersnacks für jeden Tag",
     "description": "Knusprige Cracker mit Tomate und Oregano – herzhaft und lange haltbar.",
     "steps": [
@@ -5985,14 +5820,17 @@
       "Dünn ausrollen, in Rechtecke schneiden. Bei 200 °C (Umluft) ca. 8–12 Minuten backen."
     ],
     "tips": "Luftdicht aufbewahren – ca. 2 Wochen haltbar.",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet"
+    ]
   },
   {
     "id": "kds-11",
     "name": "Linsen-Knusperbrot",
-    "category": "Brot & Aufstrich",
+    "category": "Snacks & Vorspeisen",
     "timeMinutes": 65,
-    "timeLabel": "aufwendig",
     "basePortions": 20,
     "ingredients": [
       {
@@ -6044,13 +5882,7 @@
         "perPortions": 20
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": true,
-    "isSuitableForLunch": false,
-    "dietCategory": "vegan",
     "source": "LittleFant – Kindersnacks für jeden Tag",
     "description": "Knuspriges Vollkornbrot mit roten Linsen – perfekt zum Dippen von Hummus oder Kräuterquark.",
     "steps": [
@@ -6059,14 +5891,17 @@
       "Bei 150 °C (Umluft) 15 Minuten backen. Herausnehmen, in Stücke schneiden. Weitere 40–45 Minuten backen."
     ],
     "tips": "In luftdichtem Behälter aufbewahren.",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet"
+    ]
   },
   {
     "id": "kds-12",
     "name": "30-Minuten-Brötchen",
-    "category": "Brot & Aufstrich",
+    "category": "Snacks & Vorspeisen",
     "timeMinutes": 30,
-    "timeLabel": "mittel",
     "basePortions": 8,
     "ingredients": [
       {
@@ -6136,13 +5971,7 @@
         "perPortions": 8
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": true,
-    "isSuitableForLunch": false,
-    "dietCategory": "vegan",
     "source": "LittleFant – Kindersnacks für jeden Tag",
     "description": "Nährstoffreiche Brötchen ohne Hefe – in 30 Minuten fertig. Mit Kichererbsen und Sojajoghurt.",
     "steps": [
@@ -6151,14 +5980,17 @@
       "Bei 190 °C (Umluft) 15 Minuten goldbraun backen."
     ],
     "tips": "Für die Beikost ohne Salz zubereiten.",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet"
+    ]
   },
   {
     "id": "kds-13",
     "name": "Gesunde Vanille-Waffeln",
-    "category": "Snacks",
+    "category": "Desserts & Süsses",
     "timeMinutes": 25,
-    "timeLabel": "mittel",
     "basePortions": 6,
     "ingredients": [
       {
@@ -6210,13 +6042,7 @@
         "perPortions": 6
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": true,
-    "isSuitableForLunch": false,
-    "dietCategory": "vegan",
     "source": "LittleFant – Kindersnacks für jeden Tag",
     "description": "Waffeln mit Rosinen, weißen Bohnen und Vanille – nur natürlich gesüßt, einfach und nährstoffreich.",
     "steps": [
@@ -6225,14 +6051,17 @@
       "Im gefetteten Waffeleisen goldbraune Waffeln ausbacken."
     ],
     "tips": "Gut auf Vorrat zubereiten und im Toaster frisch aufbacken.",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet"
+    ]
   },
   {
     "id": "kds-14",
     "name": "Eisen-Booster-Energyballs",
-    "category": "Snacks",
+    "category": "Desserts & Süsses",
     "timeMinutes": 20,
-    "timeLabel": "mittel",
     "basePortions": 20,
     "ingredients": [
       {
@@ -6260,13 +6089,7 @@
         "perPortions": 20
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": true,
-    "isSuitableForLunch": false,
-    "dietCategory": "vegan",
     "source": "LittleFant – Kindersnacks für jeden Tag",
     "description": "Eisenreiche Energyballs aus Aprikosen, Haferflocken und Kürbiskernen – schnell gemacht, 2 Wochen haltbar.",
     "steps": [
@@ -6275,14 +6098,17 @@
       "Mit feuchten Händen zu ca. 20 Kugeln formen."
     ],
     "tips": "Im Kühlschrank ca. 2 Wochen haltbar, alternativ einfrieren.",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet"
+    ]
   },
   {
     "id": "kds-15",
     "name": "Linsen-Mandel-Kekse",
-    "category": "Snacks",
+    "category": "Desserts & Süsses",
     "timeMinutes": 70,
-    "timeLabel": "aufwendig",
     "basePortions": 30,
     "ingredients": [
       {
@@ -6334,13 +6160,7 @@
         "perPortions": 30
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": true,
-    "isSuitableForLunch": false,
-    "dietCategory": "vegan",
     "source": "LittleFant – Kindersnacks für jeden Tag",
     "description": "Eisenreiche Kekse mit roten Linsen und Datteln – man sieht die Linsen nicht, aber sie liefern Eisen.",
     "steps": [
@@ -6349,14 +6169,17 @@
       "30 Minuten im Kühlschrank ruhen. Dünn ausrollen, in Rauten schneiden. Bei 200 °C 12–15 Minuten backen."
     ],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet"
+    ]
   },
   {
     "id": "kds-16",
     "name": "Karotten-Müsli-Riegel",
-    "category": "Snacks",
+    "category": "Desserts & Süsses",
     "timeMinutes": 55,
-    "timeLabel": "aufwendig",
     "basePortions": 8,
     "ingredients": [
       {
@@ -6408,13 +6231,7 @@
         "perPortions": 8
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": true,
-    "isSuitableForLunch": false,
-    "dietCategory": "vegan",
     "source": "LittleFant – Kindersnacks für jeden Tag",
     "description": "Nährstoffreiche Müsliriegel mit Hafer, Hirse, Karotte und natürlicher Apfelsüße – ohne Industriezucker.",
     "steps": [
@@ -6423,14 +6240,17 @@
       "Bei 190 °C (Ober-/Unterhitze) ca. 20 Minuten backen. Noch warm in 8 Riegel schneiden."
     ],
     "tips": "Im Kühlschrank ca. 5 Tage haltbar.",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet"
+    ]
   },
   {
     "id": "kds-17",
     "name": "Eisenreiche Aprikosen-Taler",
-    "category": "Snacks",
+    "category": "Desserts & Süsses",
     "timeMinutes": 35,
-    "timeLabel": "mittel",
     "basePortions": 15,
     "ingredients": [
       {
@@ -6482,13 +6302,7 @@
         "perPortions": 15
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": true,
-    "isSuitableForLunch": false,
-    "dietCategory": "vegan",
     "source": "LittleFant – Kindersnacks für jeden Tag",
     "description": "Eisenreiche Taler mit Aprikosen und Mandelmus – in Haferflocken gewälzt und goldbraun gebacken.",
     "steps": [
@@ -6497,14 +6311,17 @@
       "Bei 170 °C (Umluft) ca. 15 Minuten backen."
     ],
     "tips": "Frisch und noch warm schmecken sie am besten.",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet"
+    ]
   },
   {
     "id": "kds-18",
     "name": "Cashew-Zimt-Energyballs",
-    "category": "Snacks",
+    "category": "Desserts & Süsses",
     "timeMinutes": 20,
-    "timeLabel": "mittel",
     "basePortions": 15,
     "ingredients": [
       {
@@ -6544,13 +6361,7 @@
         "perPortions": 15
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": true,
-    "isSuitableForLunch": false,
-    "dietCategory": "vegan",
     "source": "LittleFant – Kindersnacks für jeden Tag",
     "description": "Schnelle Energyballs mit Datteln, Cashewmus und Zimt – in Kokosflocken gewälzt.",
     "steps": [
@@ -6558,14 +6369,17 @@
       "Alle Zutaten außer Kokosflocken vermengen. Zu Kugeln formen und in Kokosflocken wälzen."
     ],
     "tips": "Im Kühlschrank ca. 2 Wochen haltbar.",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet"
+    ]
   },
   {
     "id": "kds-19",
     "name": "Glücks-Hörnchen mit Vanille",
-    "category": "Snacks",
+    "category": "Desserts & Süsses",
     "timeMinutes": 90,
-    "timeLabel": "aufwendig",
     "basePortions": 8,
     "ingredients": [
       {
@@ -6611,13 +6425,7 @@
         "perPortions": 8
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": true,
-    "isSuitableForLunch": false,
-    "dietCategory": "vegan",
     "source": "LittleFant – Kindersnacks für jeden Tag",
     "description": "Fluffige Vanille-Hörnchen mit weißen Bohnen und Cashewmus – reich an Protein, Eisen und Serotonin-Vorstufen.",
     "steps": [
@@ -6627,14 +6435,17 @@
       "Mit Sojasahne einpinseln. Bei 180 °C (Ober-/Unterhitze) 15–20 Minuten goldbraun backen."
     ],
     "tips": "",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet"
+    ]
   },
   {
     "id": "kds-20",
     "name": "Apfel-Zimt-Waffeln",
-    "category": "Snacks",
+    "category": "Desserts & Süsses",
     "timeMinutes": 30,
-    "timeLabel": "mittel",
     "basePortions": 6,
     "ingredients": [
       {
@@ -6698,15 +6509,7 @@
         "perPortions": 6
       }
     ],
-    "season": [
-      "Herbst",
-      "Winter",
-      "ganzjährig"
-    ],
     "weatherType": "kalt",
-    "isMealprep": true,
-    "isSuitableForLunch": false,
-    "dietCategory": "vegan",
     "source": "LittleFant – Kindersnacks für jeden Tag",
     "description": "Saftige Waffeln mit frischem Apfel und Zimt – eisenreich dank Haferflocken und Vollkornmehl.",
     "steps": [
@@ -6715,14 +6518,19 @@
       "Im gefetteten Waffeleisen goldbraune Waffeln ausbacken."
     ],
     "tips": "Vor dem ersten Geburtstag keinen Ahornsirup verwenden. Im Toaster frisch aufbacken.",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet",
+      "Herbst",
+      "Winter"
+    ]
   },
   {
     "id": "kds-21",
     "name": "\"Nur-Gutes-drin\"-Muffins",
-    "category": "Snacks",
+    "category": "Desserts & Süsses",
     "timeMinutes": 37,
-    "timeLabel": "mittel",
     "basePortions": 12,
     "ingredients": [
       {
@@ -6804,13 +6612,7 @@
         "perPortions": 12
       }
     ],
-    "season": [
-      "ganzjährig"
-    ],
     "weatherType": "neutral",
-    "isMealprep": true,
-    "isSuitableForLunch": false,
-    "dietCategory": "vegan",
     "source": "LittleFant – Kindersnacks für jeden Tag",
     "description": "Schokoladige Muffins mit schwarzen Bohnen, Zucchini und Datteln – unglaublich saftig und voller Nährstoffe.",
     "steps": [
@@ -6819,6 +6621,10 @@
       "Bei 210 °C (Umluft) 5 Minuten backen. Auf 170 °C reduzieren und weitere 12 Minuten backen. Bei geöffneter Ofentür abkühlen lassen."
     ],
     "tips": "Optional mit Schokotropfen verzieren.",
-    "imageUrl": null
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet"
+    ]
   }
 ]

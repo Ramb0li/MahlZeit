@@ -2,15 +2,17 @@ import type {
   Recipe,
   DayConstraint,
   WeatherType,
-  Season,
   Promotion,
+  Category,
 } from '@/types';
 import { getCurrentSeason } from './utils';
 import { isRecipeExcluded } from './allergens';
 
+const SEASON_TAGS = new Set(['Frühling', 'Sommer', 'Herbst', 'Winter']);
+
 export interface SuggestionOptions {
   weatherType?: WeatherType;
-  season?: Season;
+  season?: string;
   constraint?: DayConstraint;
   promotions?: Promotion[];
   excludeIds?: string[];
@@ -27,7 +29,9 @@ function recipeScore(
   let score = 0;
 
   const season = options.season ?? getCurrentSeason();
-  if (recipe.season.includes('ganzjährig') || recipe.season.includes(season)) score += 10;
+  const recipeSeasoned = recipe.tags.some(t => SEASON_TAGS.has(t));
+  // No season tags = ganzjährig (always in season); tagged → only current season
+  if (!recipeSeasoned || recipe.tags.includes(season)) score += 10;
 
   if (options.weatherType && recipe.weatherType === options.weatherType) score += 15;
   else if (options.weatherType && recipe.weatherType === 'neutral') score += 5;
@@ -37,9 +41,9 @@ function recipeScore(
     else score -= 20;
   }
 
-  if (options.constraint?.constraint === 'mealprep' && recipe.isMealprep) score += 12;
+  if (options.constraint?.constraint === 'mealprep' && recipe.tags.includes('Mealprep-geeignet')) score += 12;
 
-  if (options.lunchOnly && !recipe.isSuitableForLunch) score -= 50;
+  if (options.lunchOnly && !recipe.tags.includes('Mittagsgericht')) score -= 50;
 
   if (promotionKeywords.some((kw) => recipe.name.toLowerCase().includes(kw) ||
     recipe.ingredients.some((ing) => ing.name.toLowerCase().includes(kw)))) {
@@ -67,7 +71,7 @@ export function suggestRecipe(
   const available = recipes.filter((r) => {
     if (options.excludeIds?.includes(r.id)) return false;
     if (options.constraint?.constraint === 'leftovers') return false;
-    if (options.lunchOnly && !r.isSuitableForLunch) return false;
+    if (options.lunchOnly && !r.tags.includes('Mittagsgericht')) return false;
     if (isRecipeExcluded(r, excluded)) return false;
     return true;
   });
@@ -94,40 +98,37 @@ export interface SuggestWeekOptions {
   flexitarisch?: boolean;  // max 1 Fleischgericht pro Wochenplan
 }
 
-// Kategorien die nie als Menüplan-Vorschlag erscheinen sollen.
-const BREAKFAST_CATEGORIES  = new Set(['Frühstück']);
-const SWEET_CATEGORIES      = new Set(['Süsses']);
-// Snacks + Brote sind Beilagen/Extras, keine vollständigen Mahlzeiten.
-const EXCLUDED_CATEGORIES   = new Set(['Snacks', 'Brot & Aufstrich']);
+const BREAKFAST_CATS  = new Set<Category>(['Frühstück']);
+const EXCLUDED_CATS   = new Set<Category>(['Snacks & Vorspeisen', 'Desserts & Süsses']);
+
+function isMeatRecipe(r: Recipe): boolean {
+  return r.category === 'Fleisch & Geflügel' ||
+    (!r.tags.includes('Vegetarisch') && !r.tags.includes('Vegan') && r.category !== 'Fisch & Meeresfrüchte');
+}
 
 export function suggestWeek(
   recipes: Recipe[],
   constraints: DayConstraint[],
   weatherTypes: Record<number, WeatherType>,
-  season: Season,
+  season: string,
   opts: SuggestWeekOptions = {}
 ): Record<number, { breakfast?: string; lunch?: string; dinner?: string }> {
   const { showBreakfast = false, showLunch = false, showDinner = true, allergiesAndAversions, flexitarisch = false } = opts;
   const result: Record<number, { breakfast?: string; lunch?: string; dinner?: string }> = {};
   const usedIds: string[] = [];
-  let meatMealsThisWeek = 0; // Flexitarisch: zählt Fleischgerichte
+  let meatMealsThisWeek = 0;
 
-  // Breakfast: prefer Frühstück category; also allow quick lunch-suitable recipes
-  const breakfastRecipes = recipes.filter(
-    (r) => !EXCLUDED_CATEGORIES.has(r.category) &&
-           (BREAKFAST_CATEGORIES.has(r.category) || r.isSuitableForLunch)
-  );
-  // Lunch: quick recipes, but NOT breakfast-only or excluded ones
+  // Breakfast: only Frühstück category
+  const breakfastRecipes = recipes.filter(r => BREAKFAST_CATS.has(r.category));
+  // Lunch: tagged 'Mittagsgericht', not breakfast
   const lunchRecipes = recipes.filter(
-    (r) => r.isSuitableForLunch &&
-           !BREAKFAST_CATEGORIES.has(r.category) &&
-           !EXCLUDED_CATEGORIES.has(r.category)
+    r => r.tags.includes('Mittagsgericht') && !BREAKFAST_CATS.has(r.category)
   );
-  // Dinner: exclude breakfast, sweets and non-meal categories
+  // Dinner: not breakfast, not snacks/desserts; exclude lunch-only (Mittagsgericht without Abendgericht)
   const dinnerRecipes = recipes.filter(
-    (r) => !BREAKFAST_CATEGORIES.has(r.category) &&
-           !SWEET_CATEGORIES.has(r.category) &&
-           !EXCLUDED_CATEGORIES.has(r.category)
+    r => !BREAKFAST_CATS.has(r.category) &&
+         !EXCLUDED_CATS.has(r.category) &&
+         (!r.tags.includes('Mittagsgericht') || r.tags.includes('Abendgericht'))
   );
 
   for (let day = 1; day <= 7; day++) {
@@ -142,9 +143,8 @@ export function suggestWeek(
     result[day] = {};
 
     if (showDinner) {
-      // Flexitarisch: Fleischgerichte nach dem ersten ausblenden
       const dinnerPool = flexitarisch && meatMealsThisWeek >= 1
-        ? dinnerRecipes.filter(r => r.dietCategory !== 'meat')
+        ? dinnerRecipes.filter(r => !isMeatRecipe(r))
         : dinnerRecipes;
       const dinner = suggestRecipe(dinnerPool, {
         weatherType, season, constraint, usedThisWeek: usedIds, allergiesAndAversions,
@@ -152,12 +152,11 @@ export function suggestWeek(
       if (dinner) {
         result[day].dinner = dinner.id;
         usedIds.push(dinner.id);
-        if (dinner.dietCategory === 'meat') meatMealsThisWeek++;
+        if (isMeatRecipe(dinner)) meatMealsThisWeek++;
       }
     }
 
     if (showLunch) {
-      // Check if this day gets mealprep lunch from another day
       const mealPrepConstraint = constraints.find((c) => c.mealprepLunchDays?.includes(day));
       if (mealPrepConstraint) {
         const sourceDay = mealPrepConstraint.dayOfWeek;

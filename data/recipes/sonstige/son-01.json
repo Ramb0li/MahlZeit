@@ -1,9 +1,8 @@
 {
   "id": "son-01",
   "name": "Fajitas",
-  "category": "Sonstige",
+  "category": "Wraps & Sandwiches",
   "timeMinutes": 25,
-  "timeLabel": "mittel",
   "ingredients": [
     {
       "name": "Weizentortillas",
@@ -48,16 +47,14 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "ganzjährig"
-  ],
   "weatherType": "neutral",
-  "isMealprep": false,
-  "isSuitableForLunch": false,
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Buntes Fajita-Fest für die Familie.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Mexikanisch"
+  ]
 }

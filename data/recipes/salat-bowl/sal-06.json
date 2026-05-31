@@ -1,9 +1,8 @@
 {
   "id": "sal-06",
   "name": "Kartoffelsalat",
-  "category": "Salat/Bowl",
+  "category": "Salate & Bowls",
   "timeMinutes": 30,
-  "timeLabel": "mittel",
   "ingredients": [
     {
       "name": "Festkochende Kartoffeln",
@@ -36,16 +35,15 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "ganzjährig"
-  ],
   "weatherType": "neutral",
-  "isMealprep": false,
-  "isSuitableForLunch": true,
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Klassischer Kartoffelsalat.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Mittagsgericht",
+    "Schweizer"
+  ]
 }

@@ -1,7 +1,7 @@
 'use client';
 import { useState, useRef, useCallback } from 'react';
 import { Link2, ImagePlus, X, Loader2, Lock, AlertCircle, CheckCircle2, ArrowRight } from 'lucide-react';
-import type { Recipe, Category, Season, WeatherType, TimeLabel, DietType, Ingredient } from '@/types';
+import { type Recipe, type Category, type WeatherType, type Ingredient } from '@/types';
 
 function generateId(): string {
   return `rec-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`;
@@ -37,56 +37,53 @@ export function ImportRecipeModal({ isPremium, onClose, onImported }: ImportReci
   // ── helpers ────────────────────────────────────────────────────────────────
 
   function buildRecipe(data: Record<string, unknown>, sourceUrl?: string): Recipe {
-    const safeStr   = (v: unknown, fallback = '') => (typeof v === 'string' ? v : fallback);
-    const safeNum   = (v: unknown, fallback = 0)  => (typeof v === 'number' ? v : fallback);
-    const safeBool  = (v: unknown)                 => v === true;
+    const safeStr = (v: unknown, fallback = '') => (typeof v === 'string' ? v : fallback);
+    const safeNum = (v: unknown, fallback = 0)  => (typeof v === 'number' ? v : fallback);
 
     const VALID_CATS: Category[] = [
-      'Eier','Reis','Pasta','Eintopf/Gratin','Fisch','Sonstige','Asiatisch','Ofen','Suppen','Salat/Bowl',
+      'Frühstück', 'Snacks & Vorspeisen', 'Suppen, Eintöpfe & Currys',
+      'Salate & Bowls', 'Pasta', 'Reis & Getreide', 'Kartoffelgerichte',
+      'Fleisch & Geflügel', 'Fisch & Meeresfrüchte', 'Vegetarische Hauptgerichte',
+      'Aufläufe & Gratins', 'Wraps & Sandwiches', 'Desserts & Süsses',
     ];
-    const VALID_DIET: DietType[] = ['vegan','vegetarisch','pescetarisch'];
-    const VALID_WEATHER: WeatherType[] = ['warm','kalt','neutral'];
+    const VALID_WEATHER: WeatherType[] = ['warm', 'kalt', 'neutral'];
 
     const rawMins = safeNum(data.timeMinutes, 30);
     const mins    = rawMins > 0 ? rawMins : 30;
-    const timeLabel: TimeLabel = mins < 20 ? 'schnell' : mins <= 40 ? 'mittel' : 'aufwändig';
 
     const rawIng = Array.isArray(data.ingredients) ? data.ingredients : [];
     const ingredients: Ingredient[] = rawIng.map((ing: unknown) => {
       const i = (typeof ing === 'object' && ing !== null) ? ing as Record<string, unknown> : {};
       const perP = safeNum(data.basePortions, 4) || 4;
       return {
-        name:       safeStr(i.name, 'Unbekannte Zutat'),
-        amount:     safeNum(i.amount, 1),
-        unit:       safeStr(i.unit, 'Stk'),
+        name:        safeStr(i.name, 'Unbekannte Zutat'),
+        amount:      safeNum(i.amount, 1),
+        unit:        safeStr(i.unit, 'Stk'),
         perPortions: perP,
       };
     });
 
-    const cat = safeStr(data.category);
-    const diet = safeStr(data.dietType);
+    const cat     = safeStr(data.category);
     const weather = safeStr(data.weatherType);
-
-    const steps = Array.isArray(data.steps)
+    const steps   = Array.isArray(data.steps)
       ? (data.steps as unknown[]).map(s => safeStr(s)).filter(Boolean)
       : [];
 
+    // Accept tags[] from Claude response; fallback to empty array
+    const rawTags = Array.isArray(data.tags) ? (data.tags as unknown[]).map(t => safeStr(t)).filter(Boolean) : [];
+
     return {
-      id:                generateId(),
-      name:              safeStr(data.name, 'Importiertes Rezept'),
-      description:       safeStr(data.description),
-      category:          (VALID_CATS.includes(cat as Category) ? cat : 'Sonstige') as Category,
-      timeMinutes:       mins,
-      timeLabel,
+      id:           generateId(),
+      name:         safeStr(data.name, 'Importiertes Rezept'),
+      description:  safeStr(data.description),
+      category:     (VALID_CATS.includes(cat as Category) ? cat : 'Vegetarische Hauptgerichte') as Category,
+      timeMinutes:  mins,
+      tags:         rawTags,
       ingredients,
-      season:            ['ganzjährig'] as Season[],
-      weatherType:       (VALID_WEATHER.includes(weather as WeatherType) ? weather : 'neutral') as WeatherType,
-      isMealprep:        safeBool(data.isMealprep),
-      isSuitableForLunch: safeBool(data.isSuitableForLunch),
-      source:            sourceUrl ?? safeStr(data.source, 'Import'),
-      basePortions:      safeNum(data.basePortions, 4) || 4,
-      dietType:          (VALID_DIET.includes(diet as DietType) ? diet : undefined) as DietType | undefined,
-      steps:             steps.length ? steps : undefined,
+      weatherType:  (VALID_WEATHER.includes(weather as WeatherType) ? weather : 'neutral') as WeatherType,
+      source:       sourceUrl ?? safeStr(data.source, 'Import'),
+      basePortions: safeNum(data.basePortions, 4) || 4,
+      steps:        steps.length ? steps : undefined,
     };
   }
 

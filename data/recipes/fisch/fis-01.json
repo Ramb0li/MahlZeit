@@ -1,9 +1,8 @@
 {
   "id": "fis-01",
   "name": "Fisch, Salzkartoffeln und Spinat",
-  "category": "Fisch",
+  "category": "Fisch & Meeresfrüchte",
   "timeMinutes": 30,
-  "timeLabel": "mittel",
   "ingredients": [
     {
       "name": "Fischfilets (z.B. Lachs)",
@@ -36,16 +35,12 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "ganzjährig"
-  ],
   "weatherType": "neutral",
-  "isMealprep": false,
-  "isSuitableForLunch": false,
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Leichtes Fischgericht mit Beilagen.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": []
 }

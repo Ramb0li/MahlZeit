@@ -1,9 +1,8 @@
 {
   "id": "ei-03",
   "name": "Rösti, Avocado, Spiegeleier",
-  "category": "Eier",
+  "category": "Frühstück",
   "timeMinutes": 30,
-  "timeLabel": "mittel",
   "ingredients": [
     {
       "name": "Kartoffeln (mehlig)",
@@ -42,16 +41,14 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "ganzjährig"
-  ],
   "weatherType": "neutral",
-  "isMealprep": false,
-  "isSuitableForLunch": true,
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Schweizer Rösti trifft auf Avocado.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Mittagsgericht"
+  ]
 }

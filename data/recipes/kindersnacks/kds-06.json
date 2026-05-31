@@ -1,9 +1,8 @@
 {
   "id": "kds-06",
   "name": "Herzhafte Linsen-Bällchen",
-  "category": "Snacks",
+  "category": "Snacks & Vorspeisen",
   "timeMinutes": 50,
-  "timeLabel": "aufwendig",
   "basePortions": 15,
   "ingredients": [
     {
@@ -67,13 +66,7 @@
       "perPortions": 15
     }
   ],
-  "season": [
-    "ganzjährig"
-  ],
   "weatherType": "neutral",
-  "isMealprep": true,
-  "isSuitableForLunch": false,
-  "dietCategory": "vegan",
   "source": "LittleFant – Kindersnacks für jeden Tag",
   "description": "Geballte Eisen-Power: Linsenbällchen mit Haferflocken und Aprikose – herzhaft und praktisch zum Mitnehmen.",
   "steps": [
@@ -81,5 +74,9 @@
     "Alle Zutaten mischen, leicht anpürieren und zu Bällchen formen. Bei 200 °C (Umluft) ca. 20 Minuten backen."
   ],
   "tips": "Mit Vitamin-C-reichem Gemüse (z.B. Paprika) für bessere Eisenaufnahme kombinieren.",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Vegan",
+    "Mealprep-geeignet"
+  ]
 }

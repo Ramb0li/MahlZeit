@@ -3,7 +3,6 @@
   "name": "Vollkornnudeln mit Linsen-Bolognese (Familientisch)",
   "category": "Pasta",
   "timeMinutes": 45,
-  "timeLabel": "mittel",
   "ingredients": [
     {
       "name": "Berglinsen",
@@ -72,18 +71,18 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "Herbst",
-    "Winter",
-    "Frühling"
-  ],
   "weatherType": "kalt",
-  "isMealprep": true,
-  "isSuitableForLunch": true,
   "source": "Familientisch voraus! (LittleFant)",
   "basePortions": 4,
   "description": "Vollwertige Variante mit Berglinsen – extra Balsamico für Tiefe. Sauce gut einfrierbar.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Mealprep-geeignet",
+    "Mittagsgericht",
+    "Herbst",
+    "Winter",
+    "Frühling"
+  ]
 }

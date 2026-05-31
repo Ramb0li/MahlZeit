@@ -3,7 +3,6 @@
   "name": "Spätzli mit Kürbissauce",
   "category": "Pasta",
   "timeMinutes": 40,
-  "timeLabel": "mittel",
   "ingredients": [
     {
       "name": "Spätzli (fertig)",
@@ -36,16 +35,14 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "Herbst"
-  ],
   "weatherType": "kalt",
-  "isMealprep": false,
-  "isSuitableForLunch": false,
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Herbstliche Spätzli-Variante.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Herbst"
+  ]
 }

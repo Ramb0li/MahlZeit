@@ -3,7 +3,6 @@
   "name": "Napoli",
   "category": "Pasta",
   "timeMinutes": 20,
-  "timeLabel": "schnell",
   "ingredients": [
     {
       "name": "Pasta",
@@ -36,16 +35,14 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "ganzjährig"
-  ],
   "weatherType": "neutral",
-  "isMealprep": false,
-  "isSuitableForLunch": true,
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Klassische Tomatensauce – simpel und gut.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Mittagsgericht"
+  ]
 }

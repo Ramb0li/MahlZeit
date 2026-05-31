@@ -1,9 +1,8 @@
 {
   "id": "kds-15",
   "name": "Linsen-Mandel-Kekse",
-  "category": "Snacks",
+  "category": "Desserts & Süsses",
   "timeMinutes": 70,
-  "timeLabel": "aufwendig",
   "basePortions": 30,
   "ingredients": [
     {
@@ -55,13 +54,7 @@
       "perPortions": 30
     }
   ],
-  "season": [
-    "ganzjährig"
-  ],
   "weatherType": "neutral",
-  "isMealprep": true,
-  "isSuitableForLunch": false,
-  "dietCategory": "vegan",
   "source": "LittleFant – Kindersnacks für jeden Tag",
   "description": "Eisenreiche Kekse mit roten Linsen und Datteln – man sieht die Linsen nicht, aber sie liefern Eisen.",
   "steps": [
@@ -70,5 +63,9 @@
     "30 Minuten im Kühlschrank ruhen. Dünn ausrollen, in Rauten schneiden. Bei 200 °C 12–15 Minuten backen."
   ],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Vegan",
+    "Mealprep-geeignet"
+  ]
 }

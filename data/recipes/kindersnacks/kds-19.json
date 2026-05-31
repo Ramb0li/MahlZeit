@@ -1,9 +1,8 @@
 {
   "id": "kds-19",
   "name": "Glücks-Hörnchen mit Vanille",
-  "category": "Snacks",
+  "category": "Desserts & Süsses",
   "timeMinutes": 90,
-  "timeLabel": "aufwendig",
   "basePortions": 8,
   "ingredients": [
     {
@@ -49,13 +48,7 @@
       "perPortions": 8
     }
   ],
-  "season": [
-    "ganzjährig"
-  ],
   "weatherType": "neutral",
-  "isMealprep": true,
-  "isSuitableForLunch": false,
-  "dietCategory": "vegan",
   "source": "LittleFant – Kindersnacks für jeden Tag",
   "description": "Fluffige Vanille-Hörnchen mit weißen Bohnen und Cashewmus – reich an Protein, Eisen und Serotonin-Vorstufen.",
   "steps": [
@@ -65,5 +58,9 @@
     "Mit Sojasahne einpinseln. Bei 180 °C (Ober-/Unterhitze) 15–20 Minuten goldbraun backen."
   ],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Vegan",
+    "Mealprep-geeignet"
+  ]
 }

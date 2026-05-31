@@ -3,22 +3,57 @@
   "name": "Pasta al Limone",
   "category": "Pasta",
   "timeMinutes": 25,
-  "timeLabel": "schnell",
   "ingredients": [
-    { "name": "Spaghetti oder Linguine", "amount": 320, "unit": "g", "perPortions": 4 },
-    { "name": "Zitronen (Bio)", "amount": 2, "unit": "Stk", "perPortions": 4 },
-    { "name": "Olivenöl (extra vergine)", "amount": 6, "unit": "EL", "perPortions": 4 },
-    { "name": "Knoblauch", "amount": 2, "unit": "Zehen", "perPortions": 4 },
-    { "name": "Pasta-Kochwasser", "amount": 120, "unit": "ml", "perPortions": 4 },
-    { "name": "Frische Petersilie", "amount": 1, "unit": "Bund", "perPortions": 4 },
-    { "name": "Salz & schwarzer Pfeffer", "amount": 1, "unit": "Prise", "perPortions": 4 },
-    { "name": "Chiliflocken (optional)", "amount": 1, "unit": "TL", "perPortions": 4 }
+    {
+      "name": "Spaghetti oder Linguine",
+      "amount": 320,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitronen (Bio)",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl (extra vergine)",
+      "amount": 6,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 2,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Pasta-Kochwasser",
+      "amount": 120,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Frische Petersilie",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz & schwarzer Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Chiliflocken (optional)",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    }
   ],
-  "season": ["Frühling", "Sommer", "ganzjährig"],
   "weatherType": "warm",
-  "isMealprep": false,
-  "isSuitableForLunch": true,
-  "dietType": "vegan",
   "source": "cuiseline",
   "basePortions": 4,
   "description": "Cremige Zitronenpasta ohne Sahne — das Geheimnis liegt im stärkehaltigen Kochwasser und guter Emulsion.",
@@ -30,5 +65,11 @@
     "Mit Salz, Pfeffer und Chiliflocken abschmecken. Petersilie grob hacken und unterheben. Sofort servieren."
   ],
   "tips": "Für eine cremigere Version 2 EL vegane Butter zum Schluss unterrühren. Parmesan oder Hefeflocken machen das Gericht noch aromatischer.",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Vegan",
+    "Mittagsgericht",
+    "Frühling",
+    "Sommer"
+  ]
 }

@@ -1,9 +1,8 @@
 {
   "id": "ei-04",
   "name": "Gemüse-Eieromelette",
-  "category": "Eier",
+  "category": "Vegetarische Hauptgerichte",
   "timeMinutes": 20,
-  "timeLabel": "schnell",
   "ingredients": [
     {
       "name": "Eier",
@@ -42,16 +41,14 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "ganzjährig"
-  ],
   "weatherType": "neutral",
-  "isMealprep": false,
-  "isSuitableForLunch": true,
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Schnelle Omelette mit buntem Gemüse.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Mittagsgericht"
+  ]
 }

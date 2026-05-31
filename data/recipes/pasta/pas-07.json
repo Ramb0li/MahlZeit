@@ -3,7 +3,6 @@
   "name": "Älpler Magronen",
   "category": "Pasta",
   "timeMinutes": 45,
-  "timeLabel": "mittel",
   "ingredients": [
     {
       "name": "Hörnli",
@@ -42,17 +41,16 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "Herbst",
-    "Winter"
-  ],
   "weatherType": "kalt",
-  "isMealprep": false,
-  "isSuitableForLunch": false,
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Schweizer Klassiker vom Berg.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Herbst",
+    "Winter",
+    "Schweizer"
+  ]
 }

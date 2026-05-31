@@ -1,9 +1,8 @@
 {
   "id": "fvt-13",
   "name": "Räuber-Nuggets aus Tofu und Gemüse",
-  "category": "Sonstige",
+  "category": "Snacks & Vorspeisen",
   "timeMinutes": 45,
-  "timeLabel": "mittel",
   "ingredients": [
     {
       "name": "Kartoffeln (festkochend)",
@@ -54,16 +53,15 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "ganzjährig"
-  ],
   "weatherType": "neutral",
-  "isMealprep": true,
-  "isSuitableForLunch": true,
   "source": "Familientisch voraus! (LittleFant)",
   "basePortions": 4,
   "description": "Knusprige vegane Nuggets aus Tofu, Kartoffeln und Blumenkohl – gefriergeeignet, Kinder-Liebling.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Mealprep-geeignet",
+    "Mittagsgericht"
+  ]
 }

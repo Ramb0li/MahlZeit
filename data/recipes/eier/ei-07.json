@@ -1,9 +1,8 @@
 {
   "id": "ei-07",
   "name": "Polenta, Gemüse & Eier",
-  "category": "Eier",
+  "category": "Vegetarische Hauptgerichte",
   "timeMinutes": 35,
-  "timeLabel": "mittel",
   "ingredients": [
     {
       "name": "Polenta",
@@ -42,17 +41,15 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "Herbst",
-    "Winter"
-  ],
   "weatherType": "kalt",
-  "isMealprep": false,
-  "isSuitableForLunch": false,
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Cremige Polenta mit Gemüse und Eiern.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Herbst",
+    "Winter"
+  ]
 }

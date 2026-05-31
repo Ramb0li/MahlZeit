@@ -1,9 +1,8 @@
 {
   "id": "kds-16",
   "name": "Karotten-Müsli-Riegel",
-  "category": "Snacks",
+  "category": "Desserts & Süsses",
   "timeMinutes": 55,
-  "timeLabel": "aufwendig",
   "basePortions": 8,
   "ingredients": [
     {
@@ -55,13 +54,7 @@
       "perPortions": 8
     }
   ],
-  "season": [
-    "ganzjährig"
-  ],
   "weatherType": "neutral",
-  "isMealprep": true,
-  "isSuitableForLunch": false,
-  "dietCategory": "vegan",
   "source": "LittleFant – Kindersnacks für jeden Tag",
   "description": "Nährstoffreiche Müsliriegel mit Hafer, Hirse, Karotte und natürlicher Apfelsüße – ohne Industriezucker.",
   "steps": [
@@ -70,5 +63,9 @@
     "Bei 190 °C (Ober-/Unterhitze) ca. 20 Minuten backen. Noch warm in 8 Riegel schneiden."
   ],
   "tips": "Im Kühlschrank ca. 5 Tage haltbar.",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Vegan",
+    "Mealprep-geeignet"
+  ]
 }

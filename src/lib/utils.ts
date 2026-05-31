@@ -12,7 +12,7 @@ import {
   getYear,
 } from 'date-fns';
 import { de } from 'date-fns/locale';
-import type { Child, HouseholdSettings, PortionInfo, Season, WeatherType } from '@/types';
+import type { Child, HouseholdSettings, PortionInfo, WeatherType } from '@/types';
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -93,7 +93,7 @@ export function scaleIngredientAmount(
   return Math.round(scaled);
 }
 
-export function getCurrentSeason(): Season {
+export function getCurrentSeason(): string {
   const month = new Date().getMonth() + 1;
   if (month >= 3 && month <= 5) return 'Frühling';
   if (month >= 6 && month <= 8) return 'Sommer';

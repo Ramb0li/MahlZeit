@@ -1,9 +1,8 @@
 {
   "id": "kds-17",
   "name": "Eisenreiche Aprikosen-Taler",
-  "category": "Snacks",
+  "category": "Desserts & Süsses",
   "timeMinutes": 35,
-  "timeLabel": "mittel",
   "basePortions": 15,
   "ingredients": [
     {
@@ -55,13 +54,7 @@
       "perPortions": 15
     }
   ],
-  "season": [
-    "ganzjährig"
-  ],
   "weatherType": "neutral",
-  "isMealprep": true,
-  "isSuitableForLunch": false,
-  "dietCategory": "vegan",
   "source": "LittleFant – Kindersnacks für jeden Tag",
   "description": "Eisenreiche Taler mit Aprikosen und Mandelmus – in Haferflocken gewälzt und goldbraun gebacken.",
   "steps": [
@@ -70,5 +63,9 @@
     "Bei 170 °C (Umluft) ca. 15 Minuten backen."
   ],
   "tips": "Frisch und noch warm schmecken sie am besten.",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Vegan",
+    "Mealprep-geeignet"
+  ]
 }

@@ -1,24 +1,38 @@
 export type WeatherType = 'warm' | 'kalt' | 'neutral';
-export type Season = 'Frühling' | 'Sommer' | 'Herbst' | 'Winter' | 'ganzjährig';
-export type TimeLabel = 'schnell' | 'mittel' | 'aufwändig';
+// DietType is kept for AppSettings.dietPreference (user household filter)
 export type DietType = 'vegan' | 'vegetarisch' | 'pescetarisch' | 'fleischhaltig' | 'flexitarisch';
-/** Nutritional category derived from ingredients — used for diet filtering. */
-export type DietCategory = 'meat' | 'fish' | 'vegetarian' | 'vegan';
+
 export type Category =
-  | 'Eier'
-  | 'Reis'
-  | 'Pasta'
-  | 'Eintopf/Gratin'
-  | 'Fisch'
-  | 'Sonstige'
-  | 'Asiatisch'
-  | 'Ofen'
-  | 'Suppen'
-  | 'Salat/Bowl'
   | 'Frühstück'
-  | 'Süsses'
-  | 'Brot & Aufstrich'
-  | 'Snacks';
+  | 'Snacks & Vorspeisen'
+  | 'Suppen, Eintöpfe & Currys'
+  | 'Salate & Bowls'
+  | 'Pasta'
+  | 'Reis & Getreide'
+  | 'Kartoffelgerichte'
+  | 'Fleisch & Geflügel'
+  | 'Fisch & Meeresfrüchte'
+  | 'Vegetarische Hauptgerichte'
+  | 'Aufläufe & Gratins'
+  | 'Wraps & Sandwiches'
+  | 'Desserts & Süsses';
+
+export const TAG_GROUPS = {
+  Ernährung: ['Vegetarisch', 'Vegan'],
+  Planung:   ['Mealprep-geeignet', 'Kinderfreundlich'],
+  Saison:    ['Frühling', 'Sommer', 'Herbst', 'Winter'],
+  Methode:   ['Grillgericht', 'Ofengericht', 'Mittagsgericht', 'Abendgericht'],
+  Küche:     ['Schweizer', 'Italienisch', 'Asiatisch', 'Mexikanisch', 'Orientalisch'],
+} as const;
+
+export type Tag = typeof TAG_GROUPS[keyof typeof TAG_GROUPS][number];
+
+export function computeTimeTags(minutes: number): string[] {
+  const t: string[] = [];
+  if (minutes < 20) t.push('Schnell (<20min)');
+  if (minutes < 30) t.push('Einfach (<30min)');
+  return t;
+}
 
 export interface Ingredient {
   name: string;
@@ -47,25 +61,19 @@ export interface Recipe {
   name: string;
   category: Category;
   timeMinutes: number;
-  timeLabel: TimeLabel;
+  tags: string[];
   ingredients: Ingredient[];
-  season: Season[];
   weatherType: WeatherType;
-  isMealprep: boolean;
-  isSuitableForLunch: boolean;
   source: string;
   basePortions: number;
   description: string;
-  // Detailansicht
-  steps?: string[];              // Nummerierte Zubereitungsschritte
-  tips?: string;                 // Tipps & Varianten
-  ingredientGroups?: IngredientGroup[]; // Strukturierte Zutaten-Gruppen (Mise-en-Place)
-  imageUrl?: string | null;      // Hauptbild (Fertiges Menü) – lokal oder extern
-  imageZutaten?: string | null;  // Zutaten-Bild
-  imageKochen?: string | null;   // Kochprozess-Bild
-  archived?: boolean;            // Archiviert – nicht vorschlagen, nicht im Picker zeigen
-  dietType?: DietType;           // Ernährungsweise (Legacy-Feld für manuelle Markierung)
-  dietCategory?: DietCategory;   // Automatisch aus Zutaten abgeleitete Kategorie
+  steps?: string[];
+  tips?: string;
+  ingredientGroups?: IngredientGroup[];
+  imageUrl?: string | null;
+  imageZutaten?: string | null;
+  imageKochen?: string | null;
+  archived?: boolean;
 }
 
 export interface MealSlot {

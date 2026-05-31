@@ -1,29 +1,89 @@
 {
   "id": "ein-06",
   "name": "Marokkanische Tajine mit Kichererbsen und Aprikosen",
-  "category": "Eintopf/Gratin",
+  "category": "Suppen, Eintöpfe & Currys",
   "timeMinutes": 45,
-  "timeLabel": "mittel",
   "ingredients": [
-    { "name": "Kichererbsen (Dose)", "amount": 800, "unit": "g", "perPortions": 4 },
-    { "name": "Getrocknete Aprikosen", "amount": 100, "unit": "g", "perPortions": 4 },
-    { "name": "Karotten", "amount": 3, "unit": "Stk", "perPortions": 4 },
-    { "name": "Zwiebeln", "amount": 2, "unit": "Stk", "perPortions": 4 },
-    { "name": "Tomaten (aus der Dose)", "amount": 400, "unit": "g", "perPortions": 4 },
-    { "name": "Gemüsebrühe", "amount": 400, "unit": "ml", "perPortions": 4 },
-    { "name": "Ras el Hanout", "amount": 2, "unit": "TL", "perPortions": 4 },
-    { "name": "Zimt", "amount": 0.5, "unit": "TL", "perPortions": 4 },
-    { "name": "Ingwer (frisch oder Pulver)", "amount": 15, "unit": "g", "perPortions": 4 },
-    { "name": "Olivenöl", "amount": 3, "unit": "EL", "perPortions": 4 },
-    { "name": "Honig oder Agavensirup", "amount": 1, "unit": "EL", "perPortions": 4 },
-    { "name": "Frischer Koriander", "amount": 1, "unit": "Bund", "perPortions": 4 },
-    { "name": "Couscous", "amount": 300, "unit": "g", "perPortions": 4 }
+    {
+      "name": "Kichererbsen (Dose)",
+      "amount": 800,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Getrocknete Aprikosen",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Karotten",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebeln",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomaten (aus der Dose)",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebrühe",
+      "amount": 400,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Ras el Hanout",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Zimt",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Ingwer (frisch oder Pulver)",
+      "amount": 15,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Honig oder Agavensirup",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Frischer Koriander",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Couscous",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    }
   ],
-  "season": ["Herbst", "Winter"],
   "weatherType": "kalt",
-  "isMealprep": true,
-  "isSuitableForLunch": true,
-  "dietType": "vegan",
   "source": "cuiseline",
   "basePortions": 4,
   "description": "Aromatischer Eintopf mit nordafrikanischen Gewürzen — süss, würzig und unglaublich wärmend an kalten Tagen.",
@@ -36,5 +96,13 @@
     "Tajine mit Koriander bestreuen und auf Couscous servieren."
   ],
   "tips": "Schmeckt am nächsten Tag noch besser. Dazu passt Harissa und eine Scheibe Zitrone. Für Fleischesser: 500g Lammwürfel mit den Zwiebeln anbraten.",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Vegan",
+    "Mealprep-geeignet",
+    "Mittagsgericht",
+    "Orientalisch",
+    "Herbst",
+    "Winter"
+  ]
 }

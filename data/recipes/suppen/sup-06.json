@@ -1,25 +1,65 @@
 {
   "id": "sup-06",
   "name": "Tomaten-Basilikum Cremesuppe",
-  "category": "Suppen",
+  "category": "Suppen, Eintöpfe & Currys",
   "timeMinutes": 25,
-  "timeLabel": "schnell",
   "ingredients": [
-    { "name": "Tomaten (aus der Dose, ganz)", "amount": 800, "unit": "g", "perPortions": 4 },
-    { "name": "Gemüsebrühe", "amount": 500, "unit": "ml", "perPortions": 4 },
-    { "name": "Frisches Basilikum", "amount": 1, "unit": "Bund", "perPortions": 4 },
-    { "name": "Zwiebel", "amount": 1, "unit": "Stk", "perPortions": 4 },
-    { "name": "Knoblauch", "amount": 3, "unit": "Zehen", "perPortions": 4 },
-    { "name": "Olivenöl", "amount": 3, "unit": "EL", "perPortions": 4 },
-    { "name": "Kokosmilch (Vollmilch)", "amount": 100, "unit": "ml", "perPortions": 4 },
-    { "name": "Zucker", "amount": 1, "unit": "TL", "perPortions": 4 },
-    { "name": "Salz & Pfeffer", "amount": 1, "unit": "Prise", "perPortions": 4 }
+    {
+      "name": "Tomaten (aus der Dose, ganz)",
+      "amount": 800,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebrühe",
+      "amount": 500,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Frisches Basilikum",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 3,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kokosmilch (Vollmilch)",
+      "amount": 100,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Zucker",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz & Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
   ],
-  "season": ["Sommer", "Herbst", "ganzjährig"],
   "weatherType": "warm",
-  "isMealprep": true,
-  "isSuitableForLunch": true,
-  "dietType": "vegan",
   "source": "cuiseline",
   "basePortions": 4,
   "description": "Samtig glatte Tomatensuppe mit Basilikum — in 25 Minuten auf dem Tisch und besser als jede Fertigsuppe.",
@@ -31,5 +71,12 @@
     "Mit Salz und Pfeffer abschmecken. Mit Basilikum und einem Olivenölschuss servieren."
   ],
   "tips": "Mit frischen Sommertomaten aus dem Garten schmeckt die Suppe noch besser. Wer es etwas schärfer mag, gibt eine Prise Chiliflocken dazu.",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Vegan",
+    "Mealprep-geeignet",
+    "Mittagsgericht",
+    "Sommer",
+    "Herbst"
+  ]
 }

@@ -1,9 +1,8 @@
 {
   "id": "ein-05",
   "name": "Sauerkraut-Auflauf mit Räuchertofu und Kartoffel-Karotten-Stampf",
-  "category": "Eintopf/Gratin",
+  "category": "Aufläufe & Gratins",
   "timeMinutes": 60,
-  "timeLabel": "aufwändig",
   "ingredients": [
     {
       "name": "Sauerkraut",
@@ -42,17 +41,17 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "Herbst",
-    "Winter"
-  ],
   "weatherType": "kalt",
-  "isMealprep": false,
-  "isSuitableForLunch": false,
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Wärmender Auflauf mit Sauerkraut.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Vegan",
+    "Herbst",
+    "Winter",
+    "Ofengericht"
+  ]
 }

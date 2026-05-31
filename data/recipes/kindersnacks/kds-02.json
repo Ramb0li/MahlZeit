@@ -1,9 +1,8 @@
 {
   "id": "kds-02",
   "name": "Hummus-Waffeln",
-  "category": "Snacks",
+  "category": "Snacks & Vorspeisen",
   "timeMinutes": 40,
-  "timeLabel": "mittel",
   "basePortions": 5,
   "ingredients": [
     {
@@ -85,13 +84,7 @@
       "perPortions": 5
     }
   ],
-  "season": [
-    "ganzjährig"
-  ],
   "weatherType": "neutral",
-  "isMealprep": true,
-  "isSuitableForLunch": false,
-  "dietCategory": "vegan",
   "source": "LittleFant – Kindersnacks für jeden Tag",
   "description": "Hummus in Waffelform! Eisenreich dank Kichererbsen und Chiasamen, praktisch zum Mitnehmen.",
   "steps": [
@@ -101,5 +94,9 @@
     "Waffeleisen erhitzen und mit Olivenöl einfetten. Teig portionsweise zu goldbraunen Waffeln ausbacken."
   ],
   "tips": "Für die Beikost ohne Salz zubereiten.",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Vegan",
+    "Mealprep-geeignet"
+  ]
 }

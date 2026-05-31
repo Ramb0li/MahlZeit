@@ -8,7 +8,7 @@ import { getTheme } from '@/lib/themes';
 import { WeatherIcon } from '@/components/ui/WeatherIcon';
 import { Badge } from '@/components/ui/Badge';
 import { RecipePickerModal, LEFTOVERS_ID } from './RecipePickerModal';
-import type { DayPlan, Recipe, WeatherDay, DayConstraint, MealSlot, AppSettings } from '@/types';
+import { type DayPlan, type Recipe, type WeatherDay, type DayConstraint, type MealSlot, type AppSettings, computeTimeTags } from '@/types';
 import type { AppTheme } from '@/lib/themes';
 
 interface DayColumnProps {
@@ -347,8 +347,8 @@ function MealSlotCard({
         </p>
         <div className="flex items-center gap-1.5 mt-2">
           <span className={`text-[10px] px-1.5 py-0.5 rounded-full font-semibold ${
-            recipe.timeLabel === 'schnell' ? 'bg-green-100 text-green-700' :
-            recipe.timeLabel === 'mittel'  ? 'bg-amber-100 text-amber-700' :
+            computeTimeTags(recipe.timeMinutes).includes('Schnell (<20min)') ? 'bg-green-100 text-green-700' :
+            computeTimeTags(recipe.timeMinutes).includes('Einfach (<30min)') ? 'bg-amber-100 text-amber-700' :
             'bg-red-100 text-red-700'
           }`}>
             {recipe.timeMinutes} min

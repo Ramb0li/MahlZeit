@@ -1,9 +1,8 @@
 {
   "id": "fvt-11",
   "name": "Süsskartoffel-Quesadillas mit Guacamole",
-  "category": "Sonstige",
+  "category": "Wraps & Sandwiches",
   "timeMinutes": 25,
-  "timeLabel": "mittel",
   "ingredients": [
     {
       "name": "Süsskartoffel (gross)",
@@ -66,16 +65,15 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "ganzjährig"
-  ],
   "weatherType": "warm",
-  "isMealprep": false,
-  "isSuitableForLunch": true,
   "source": "Familientisch voraus! (LittleFant)",
   "basePortions": 4,
   "description": "Vegane Quesadillas mit Süsskartoffel-Bohnen-Füllung und selbstgemachter Guacamole.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Mittagsgericht",
+    "Mexikanisch"
+  ]
 }

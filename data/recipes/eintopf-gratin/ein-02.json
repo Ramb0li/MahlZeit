@@ -1,9 +1,8 @@
 {
   "id": "ein-02",
   "name": "Urdinkelkernotto mit Kohlrabi & Lauch",
-  "category": "Eintopf/Gratin",
+  "category": "Reis & Getreide",
   "timeMinutes": 50,
-  "timeLabel": "mittel",
   "ingredients": [
     {
       "name": "Urdinkelkerne",
@@ -42,16 +41,12 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "ganzjährig"
-  ],
   "weatherType": "neutral",
-  "isMealprep": false,
-  "isSuitableForLunch": false,
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Risotto-Variante mit Urdinkelkernen.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": []
 }

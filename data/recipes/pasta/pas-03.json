@@ -1,9 +1,8 @@
 {
   "id": "pas-03",
   "name": "Spinat-Lasagne",
-  "category": "Pasta",
+  "category": "Aufläufe & Gratins",
   "timeMinutes": 70,
-  "timeLabel": "aufwändig",
   "ingredients": [
     {
       "name": "Lasagneblätter",
@@ -42,17 +41,18 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "Herbst",
-    "Winter"
-  ],
   "weatherType": "kalt",
-  "isMealprep": true,
-  "isSuitableForLunch": true,
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Cremige Spinat-Ricotta Lasagne.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Mealprep-geeignet",
+    "Mittagsgericht",
+    "Herbst",
+    "Winter",
+    "Ofengericht"
+  ]
 }

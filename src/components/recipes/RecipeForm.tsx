@@ -1,15 +1,14 @@
 'use client';
 import { useState, useRef } from 'react';
 import { Plus, Trash2, ImagePlus, X } from 'lucide-react';
-import type { Recipe, Category, Season, WeatherType, TimeLabel, Ingredient, IngredientGroup, DietType } from '@/types';
+import { type Recipe, type Category, type WeatherType, type Ingredient, type IngredientGroup, TAG_GROUPS, computeTimeTags } from '@/types';
 
 const CATEGORIES: Category[] = [
-  'Eier', 'Reis', 'Pasta', 'Eintopf/Gratin', 'Fisch',
-  'Sonstige', 'Asiatisch', 'Ofen', 'Suppen', 'Salat/Bowl',
-  'Frühstück', 'Süsses', 'Brot & Aufstrich', 'Snacks',
+  'Frühstück', 'Snacks & Vorspeisen', 'Suppen, Eintöpfe & Currys',
+  'Salate & Bowls', 'Pasta', 'Reis & Getreide', 'Kartoffelgerichte',
+  'Fleisch & Geflügel', 'Fisch & Meeresfrüchte', 'Vegetarische Hauptgerichte',
+  'Aufläufe & Gratins', 'Wraps & Sandwiches', 'Desserts & Süsses',
 ];
-
-const SEASONS: Season[] = ['Frühling', 'Sommer', 'Herbst', 'Winter', 'ganzjährig'];
 
 // Shared input style
 const inputStyle = {
@@ -35,13 +34,10 @@ interface RecipeFormProps {
 
 export function RecipeForm({ recipe, onSave, onCancel }: RecipeFormProps) {
   const [name, setName]                       = useState(recipe?.name ?? '');
-  const [category, setCategory]               = useState<Category>(recipe?.category ?? 'Sonstige');
+  const [category, setCategory]               = useState<Category>(recipe?.category ?? 'Vegetarische Hauptgerichte');
   const [timeMinutes, setTimeMinutes]         = useState(recipe?.timeMinutes ?? 30);
   const [weatherType, setWeatherType]         = useState<WeatherType>(recipe?.weatherType ?? 'neutral');
-  const [seasons, setSeasons]                 = useState<Season[]>(recipe?.season ?? ['ganzjährig']);
-  const [dietType, setDietType]               = useState<DietType | 'alle'>(recipe?.dietType ?? 'alle');
-  const [isMealprep, setIsMealprep]           = useState(recipe?.isMealprep ?? false);
-  const [isSuitableForLunch, setIsSuitableForLunch] = useState(recipe?.isSuitableForLunch ?? false);
+  const [tags, setTags]                       = useState<string[]>(recipe?.tags ?? []);
   const [source, setSource]                   = useState(recipe?.source ?? 'Rezept von Cuiselin');
   const [basePortions, setBasePortions]       = useState(recipe?.basePortions ?? 4);
   const [description, setDescription]         = useState(recipe?.description ?? '');
@@ -67,16 +63,10 @@ export function RecipeForm({ recipe, onSave, onCancel }: RecipeFormProps) {
       : [{ name: 'Zutaten', ingredients: [{ name: '', amount: 1, unit: 'g', perPortions: 4 }] }]
   );
 
-  const timeLabel: TimeLabel =
-    timeMinutes < 20 ? 'schnell' : timeMinutes <= 40 ? 'mittel' : 'aufwändig';
+  const timeTags = computeTimeTags(timeMinutes);
 
-  const toggleSeason = (s: Season) => {
-    if (s === 'ganzjährig') { setSeasons(['ganzjährig']); return; }
-    setSeasons((prev) => {
-      const withoutAll = prev.filter((x) => x !== 'ganzjährig');
-      return prev.includes(s) ? withoutAll.filter((x) => x !== s) : [...withoutAll, s];
-    });
-  };
+  const toggleTag = (tag: string) =>
+    setTags(prev => prev.includes(tag) ? prev.filter(t => t !== tag) : [...prev, tag]);
 
   const addIngredient = () =>
     setIngredients((prev) => [...prev, { name: '', amount: 1, unit: 'g', perPortions: basePortions }]);
@@ -150,12 +140,11 @@ export function RecipeForm({ recipe, onSave, onCancel }: RecipeFormProps) {
     }
 
     const r: Recipe = {
-      id: recipe?.id ?? generateId(),
-      name, category, timeMinutes, timeLabel,
-      ingredients: finalIngredients,
-      season: seasons.length ? seasons : ['ganzjährig'],
-      weatherType, isMealprep, isSuitableForLunch, source, basePortions, description,
-      ...(dietType !== 'alle' ? { dietType } : {}),
+      id:           recipe?.id ?? generateId(),
+      name, category, timeMinutes,
+      tags,
+      ingredients:  finalIngredients,
+      weatherType,  source, basePortions, description,
       imageUrl:     imageUrl     || null,
       imageZutaten: imageZutaten || null,
       imageKochen:  imageKochen  || null,
@@ -202,16 +191,12 @@ export function RecipeForm({ recipe, onSave, onCancel }: RecipeFormProps) {
         <div>
           <label style={labelStyle}>
             Zeitaufwand: {timeMinutes} min{' '}
-            <span
-              className="ml-1 text-xs px-2 py-0.5 rounded-full font-semibold"
-              style={
-                timeLabel === 'schnell' ? { backgroundColor: '#e8f5e9', color: '#2e7d32' } :
-                timeLabel === 'mittel'  ? { backgroundColor: '#fff3e0', color: '#e65100' } :
-                { backgroundColor: '#fce4ec', color: '#c62828' }
-              }
-            >
-              {timeLabel}
-            </span>
+            {timeTags.map(t => (
+              <span key={t} className="ml-1 text-xs px-2 py-0.5 rounded-full font-semibold"
+                style={t.includes('Schnell') ? { backgroundColor: '#e8f5e9', color: '#2e7d32' } : { backgroundColor: '#fff3e0', color: '#e65100' }}>
+                {t}
+              </span>
+            ))}
           </label>
           <input
             type="range" min={10} max={120} step={5} value={timeMinutes}
@@ -219,31 +204,6 @@ export function RecipeForm({ recipe, onSave, onCancel }: RecipeFormProps) {
             className="w-full"
             style={{ accentColor: '#b5614a' }}
           />
-        </div>
-
-        {/* Ernährungsweise */}
-        <div className="sm:col-span-2">
-          <label style={labelStyle}>Ernährungsweise</label>
-          <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-6 gap-2">
-            {([
-              { value: 'alle',          label: '🍽 Alle Rezepte' },
-              { value: 'fleischhaltig', label: '🥩 Fleischhaltig' },
-              { value: 'flexitarisch',  label: '🌾 Flexitarisch' },
-              { value: 'pescetarisch',  label: '🐟 Pescetarisch' },
-              { value: 'vegetarisch',   label: '🥗 Vegetarisch' },
-              { value: 'vegan',         label: '🌿 Vegan' },
-            ] as { value: DietType | 'alle'; label: string }[]).map(({ value, label }) => (
-              <button
-                key={value}
-                type="button"
-                onClick={() => setDietType(value)}
-                className="py-1.5 px-2 rounded-xl text-xs font-semibold transition-all"
-                style={dietType === value ? chipActive : chipInactive}
-              >
-                {label}
-              </button>
-            ))}
-          </div>
         </div>
 
         {/* Wettertyp */}
@@ -264,24 +224,6 @@ export function RecipeForm({ recipe, onSave, onCancel }: RecipeFormProps) {
                 }
               >
                 {w === 'kalt' ? '❄️ Kalt' : w === 'warm' ? '☀️ Warm' : '🌤 Neutral'}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {/* Saison */}
-        <div>
-          <label style={labelStyle}>Saison</label>
-          <div className="flex flex-wrap gap-1.5">
-            {SEASONS.map((s) => (
-              <button
-                key={s}
-                type="button"
-                onClick={() => toggleSeason(s)}
-                className="px-2.5 py-1 rounded-full text-xs font-semibold transition-all"
-                style={seasons.includes(s) ? chipActive : chipInactive}
-              >
-                {s}
               </button>
             ))}
           </div>
@@ -333,24 +275,26 @@ export function RecipeForm({ recipe, onSave, onCancel }: RecipeFormProps) {
           />
         </div>
 
-        {/* Checkboxen */}
-        <div className="sm:col-span-2 flex gap-4">
-          <label className="flex items-center gap-2 cursor-pointer">
-            <input
-              type="checkbox" checked={isMealprep}
-              onChange={(e) => setIsMealprep(e.target.checked)}
-              style={{ accentColor: '#b5614a' }}
-            />
-            <span className="text-sm" style={{ color: '#5a4e48' }}>Mealprep-geeignet</span>
-          </label>
-          <label className="flex items-center gap-2 cursor-pointer">
-            <input
-              type="checkbox" checked={isSuitableForLunch}
-              onChange={(e) => setIsSuitableForLunch(e.target.checked)}
-              style={{ accentColor: '#b5614a' }}
-            />
-            <span className="text-sm" style={{ color: '#5a4e48' }}>Für Mittagessen geeignet</span>
-          </label>
+        {/* Tags */}
+        <div className="sm:col-span-2">
+          <label style={labelStyle}>Tags</label>
+          <div className="space-y-3">
+            {(Object.entries(TAG_GROUPS) as [string, readonly string[]][]).map(([group, groupTags]) => (
+              <div key={group}>
+                <span className="text-[11px] font-semibold uppercase tracking-wide block mb-1.5" style={{ color: '#9c8c84' }}>{group}</span>
+                <div className="flex flex-wrap gap-1.5">
+                  {groupTags.map(tag => (
+                    <button key={tag} type="button" onClick={() => toggleTag(tag)}
+                      className="px-2.5 py-1 rounded-full text-xs font-semibold transition-all"
+                      style={tags.includes(tag) ? chipActive : chipInactive}
+                    >
+                      {tag}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 

@@ -15,15 +15,17 @@ const RECIPE_TOOL = {
   input_schema: {
     type: 'object',
     properties: {
-      name:               { type: 'string',  description: 'Rezeptname' },
-      description:        { type: 'string',  description: 'Kurze appetitliche Beschreibung (1-2 Sätze)' },
-      category:           { type: 'string',  enum: ['Eier','Reis','Pasta','Eintopf/Gratin','Fisch','Sonstige','Asiatisch','Ofen','Suppen','Salat/Bowl','Frühstück','Süsses','Brot & Aufstrich'] },
-      timeMinutes:        { type: 'number',  description: 'Gesamtzeit in Minuten' },
-      basePortions:       { type: 'number',  description: 'Anzahl Portionen' },
-      dietType:           { type: ['string','null'], enum: ['vegan','vegetarisch','pescetarisch', null] },
-      weatherType:        { type: 'string',  enum: ['warm','kalt','neutral'] },
-      isMealprep:         { type: 'boolean' },
-      isSuitableForLunch: { type: 'boolean', description: 'true wenn leicht & ≤30min' },
+      name:         { type: 'string', description: 'Rezeptname' },
+      description:  { type: 'string', description: 'Kurze appetitliche Beschreibung (1-2 Sätze)' },
+      category:     { type: 'string', enum: ['Frühstück','Snacks & Vorspeisen','Suppen, Eintöpfe & Currys','Salate & Bowls','Pasta','Reis & Getreide','Kartoffelgerichte','Fleisch & Geflügel','Fisch & Meeresfrüchte','Vegetarische Hauptgerichte','Aufläufe & Gratins','Wraps & Sandwiches','Desserts & Süsses'] },
+      timeMinutes:  { type: 'number', description: 'Gesamtzeit in Minuten' },
+      basePortions: { type: 'number', description: 'Anzahl Portionen' },
+      weatherType:  { type: 'string', enum: ['warm','kalt','neutral'] },
+      tags: {
+        type: 'array',
+        description: 'Passende Tags aus: Vegetarisch, Vegan, Mealprep-geeignet, Kinderfreundlich, Frühling, Sommer, Herbst, Winter, Grillgericht, Ofengericht, Mittagsgericht, Abendgericht, Schweizer, Italienisch, Asiatisch, Mexikanisch, Orientalisch',
+        items: { type: 'string' },
+      },
       ingredients: {
         type: 'array',
         items: {
@@ -41,7 +43,7 @@ const RECIPE_TOOL = {
         items: { type: 'string', description: 'Sinngemäss auf Deutsch umformuliert' },
       },
     },
-    required: ['name','category','timeMinutes','basePortions','weatherType','ingredients','steps'],
+    required: ['name','category','timeMinutes','basePortions','weatherType','tags','ingredients','steps'],
   },
 } as const;
 

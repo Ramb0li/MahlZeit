@@ -5,7 +5,7 @@ import { getSessionWithGroup as getSession } from '@/lib/session';
 import { getRecipes, getConstraints, getWeatherCache, getWeekPlan, saveWeekPlan, getSettings } from '@/lib/data';
 import { suggestWeek, suggestRecipe } from '@/lib/suggestions';
 import { getCurrentSeason, getWeatherTypeFromTemp } from '@/lib/utils';
-import type { WeatherType, DayPlan, DietType } from '@/types';
+import type { WeatherType, Category } from '@/types';
 
 export async function POST(request: Request) {
   try {
@@ -26,31 +26,19 @@ export async function POST(request: Request) {
     // Archivierte Rezepte nie vorschlagen; Diät-Filter anwenden
     const dietPref = settings.dietPreference;
 
-    // dietCategory-basierter Filter (neues Feld ab Phase 1)
-    // fleischhaltig: alle Rezepte zeigen (kein Filter)
-    // flexitarisch:  alle zeigen, aber beim Wochenplan max. 1 Fleischgericht
-    // pescetarisch:  kein meat
-    // vegetarisch:   kein meat, kein fish
-    // vegan:         nur vegan
-    const blockedCategories: string[] = [];
-    if (dietPref === 'vegetarisch')  blockedCategories.push('meat', 'fish');
-    if (dietPref === 'pescetarisch') blockedCategories.push('meat');
-    if (dietPref === 'vegan')        blockedCategories.push('meat', 'fish', 'vegetarian');
-
-    // Legacy dietType-Filter (Rückwärtskompatibilität für Rezepte ohne dietCategory)
-    const allowedDiets: DietType[] | null =
-      !dietPref || dietPref === 'alle' || dietPref === 'fleischhaltig' || dietPref === 'flexitarisch' ? null :
-      dietPref === 'vegan'        ? ['vegan'] :
-      dietPref === 'vegetarisch'  ? ['vegan', 'vegetarisch'] :
-      dietPref === 'pescetarisch' ? ['vegan', 'vegetarisch', 'pescetarisch'] :
-      null;
+    // Tag-basierter Diät-Filter
+    // fleischhaltig/flexitarisch: kein Filter (flexitarisch-Logik in suggestWeek)
+    // pescetarisch: kein Fleisch & Geflügel
+    // vegetarisch:  kein Fleisch & Geflügel, kein Fisch & Meeresfrüchte
+    // vegan:        nur Rezepte mit Vegan-Tag
+    const MEAT_CAT: Category  = 'Fleisch & Geflügel';
+    const FISH_CAT: Category  = 'Fisch & Meeresfrüchte';
 
     const recipes = allRecipes.filter((r) => {
       if (r.archived) return false;
-      // Neues dietCategory-Feld hat Vorrang
-      if (r.dietCategory && blockedCategories.includes(r.dietCategory)) return false;
-      // Legacy dietType-Fallback für Rezepte ohne dietCategory
-      if (!r.dietCategory && allowedDiets && r.dietType && !allowedDiets.includes(r.dietType)) return false;
+      if (dietPref === 'pescetarisch' && r.category === MEAT_CAT) return false;
+      if (dietPref === 'vegetarisch'  && (r.category === MEAT_CAT || r.category === FISH_CAT)) return false;
+      if (dietPref === 'vegan'        && !r.tags.includes('Vegan')) return false;
       return true;
     });
 
@@ -70,13 +58,13 @@ export async function POST(request: Request) {
         [d.dinner?.recipeId, d.lunch?.recipeId].filter(Boolean) as string[]
       );
 
-      // Fix #5: Filter recipes by meal slot so Frühstück / Süsses stay out of dinner.
+      // Filter recipes by meal slot
       const mealFiltered =
         mealType === 'breakfast'
-          ? recipes.filter((r) => r.category === 'Frühstück' || r.isSuitableForLunch)
+          ? recipes.filter((r) => r.category === 'Frühstück')
           : mealType === 'lunch'
-            ? recipes.filter((r) => r.isSuitableForLunch && r.category !== 'Frühstück')
-            : recipes.filter((r) => r.category !== 'Frühstück' && r.category !== 'Süsses');
+            ? recipes.filter((r) => r.tags.includes('Mittagsgericht'))
+            : recipes.filter((r) => r.category !== 'Frühstück' && r.category !== 'Desserts & Süsses' && r.category !== 'Snacks & Vorspeisen');
 
       const suggestion = suggestRecipe(mealFiltered, {
         weatherType,

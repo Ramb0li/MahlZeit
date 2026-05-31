@@ -1,9 +1,8 @@
 {
   "id": "kds-20",
   "name": "Apfel-Zimt-Waffeln",
-  "category": "Snacks",
+  "category": "Desserts & Süsses",
   "timeMinutes": 30,
-  "timeLabel": "mittel",
   "basePortions": 6,
   "ingredients": [
     {
@@ -67,15 +66,7 @@
       "perPortions": 6
     }
   ],
-  "season": [
-    "Herbst",
-    "Winter",
-    "ganzjährig"
-  ],
   "weatherType": "kalt",
-  "isMealprep": true,
-  "isSuitableForLunch": false,
-  "dietCategory": "vegan",
   "source": "LittleFant – Kindersnacks für jeden Tag",
   "description": "Saftige Waffeln mit frischem Apfel und Zimt – eisenreich dank Haferflocken und Vollkornmehl.",
   "steps": [
@@ -84,5 +75,11 @@
     "Im gefetteten Waffeleisen goldbraune Waffeln ausbacken."
   ],
   "tips": "Vor dem ersten Geburtstag keinen Ahornsirup verwenden. Im Toaster frisch aufbacken.",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Vegan",
+    "Mealprep-geeignet",
+    "Herbst",
+    "Winter"
+  ]
 }

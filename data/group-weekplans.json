@@ -81,52 +81,66 @@
       "days": {
         "1": {
           "dinner": {
-            "recipeId": "sup-06",
-            "isLeftovers": false
-          },
-          "showLunch": false
-        },
-        "2": {
-          "dinner": {
-            "recipeId": "rei-04"
-          },
-          "showLunch": false
-        },
-        "3": {
-          "dinner": {
             "recipeId": "rei-05"
-          },
-          "showLunch": false
-        },
-        "4": {
-          "dinner": {
-            "recipeId": "sal-04"
           },
           "showLunch": false,
           "lunch": {
-            "recipeId": "rei-05"
+            "recipeId": "sal-05"
+          }
+        },
+        "2": {
+          "dinner": {
+            "recipeId": "sal-02"
+          },
+          "showLunch": false,
+          "lunch": {
+            "recipeId": "pas-04"
+          }
+        },
+        "3": {
+          "dinner": {
+            "recipeId": "sal-01"
+          },
+          "showLunch": false,
+          "lunch": {
+            "recipeId": "son-03"
+          }
+        },
+        "4": {
+          "dinner": {
+            "recipeId": "fvt-12"
+          },
+          "showLunch": false,
+          "lunch": {
+            "recipeId": "sal-01"
           }
         },
         "5": {
           "dinner": {
-            "recipeId": "sal-03"
+            "recipeId": "fvt-11"
           },
           "showLunch": false,
           "lunch": {
-            "recipeId": "rei-05"
+            "recipeId": "sal-01"
           }
         },
         "6": {
           "dinner": {
-            "recipeId": "asi-01"
+            "recipeId": "sal-07"
           },
-          "showLunch": false
+          "showLunch": false,
+          "lunch": {
+            "recipeId": "sup-06"
+          }
         },
         "7": {
           "dinner": {
-            "recipeId": "sal-01"
+            "recipeId": "ofe-02"
           },
-          "showLunch": false
+          "showLunch": false,
+          "lunch": {
+            "recipeId": "rei-04"
+          }
         }
       }
     }

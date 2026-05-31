@@ -1,9 +1,8 @@
 {
   "id": "asi-01",
   "name": "Pad Thai",
-  "category": "Asiatisch",
+  "category": "Pasta",
   "timeMinutes": 25,
-  "timeLabel": "mittel",
   "ingredients": [
     {
       "name": "Reisnudeln",
@@ -48,17 +47,17 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "Frühling",
-    "Sommer"
-  ],
   "weatherType": "warm",
-  "isMealprep": false,
-  "isSuitableForLunch": true,
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Klassisches Thai-Nudelgericht.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Mittagsgericht",
+    "Asiatisch",
+    "Frühling",
+    "Sommer"
+  ]
 }

@@ -1,9 +1,8 @@
 {
   "id": "ofe-01",
   "name": "Ofengemüse mit Feta und Tahini-Quinoa",
-  "category": "Ofen",
+  "category": "Aufläufe & Gratins",
   "timeMinutes": 50,
-  "timeLabel": "mittel",
   "ingredients": [
     {
       "name": "Gemischtes Gemüse",
@@ -42,16 +41,16 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "ganzjährig"
-  ],
   "weatherType": "neutral",
-  "isMealprep": true,
-  "isSuitableForLunch": true,
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Buntes Ofengemüse mit Tahini-Quinoa und Feta.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Mealprep-geeignet",
+    "Mittagsgericht",
+    "Ofengericht"
+  ]
 }

@@ -1,9 +1,8 @@
 {
   "id": "ei-02",
   "name": "Rahmspinat, Salzkartoffeln, Spiegeleier",
-  "category": "Eier",
+  "category": "Vegetarische Hauptgerichte",
   "timeMinutes": 35,
-  "timeLabel": "mittel",
   "ingredients": [
     {
       "name": "Spinat (tiefgekühlt)",
@@ -54,17 +53,15 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "Herbst",
-    "Winter"
-  ],
   "weatherType": "kalt",
-  "isMealprep": false,
-  "isSuitableForLunch": false,
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Herzhafter Klassiker für kalte Abende.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Herbst",
+    "Winter"
+  ]
 }

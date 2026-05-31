@@ -3,7 +3,6 @@
   "name": "Kein-Käse-Käse-Spätzle (vegan)",
   "category": "Pasta",
   "timeMinutes": 50,
-  "timeLabel": "mittel",
   "ingredients": [
     {
       "name": "Weizenmehl (Type 630)",
@@ -84,17 +83,16 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "Herbst",
-    "Winter"
-  ],
   "weatherType": "kalt",
-  "isMealprep": false,
-  "isSuitableForLunch": false,
   "source": "Familientisch voraus! (LittleFant)",
   "basePortions": 4,
   "description": "Selbstgemachte Kichererbsen-Spätzle mit cremiger Tofu-Cashew-Sauce – ganz ohne Käse, aber \"cheesy\".",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Vegan",
+    "Herbst",
+    "Winter"
+  ]
 }

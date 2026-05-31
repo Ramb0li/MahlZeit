@@ -1,9 +1,8 @@
 {
   "id": "kds-08",
   "name": "Blumenkohl-Puffer",
-  "category": "Snacks",
+  "category": "Snacks & Vorspeisen",
   "timeMinutes": 40,
-  "timeLabel": "mittel",
   "basePortions": 12,
   "ingredients": [
     {
@@ -67,13 +66,7 @@
       "perPortions": 12
     }
   ],
-  "season": [
-    "ganzjährig"
-  ],
   "weatherType": "neutral",
-  "isMealprep": true,
-  "isSuitableForLunch": true,
-  "dietCategory": "vegan",
   "source": "LittleFant – Kindersnacks für jeden Tag",
   "description": "Blumenkohl-Kichererbsen-Puffer – nährstoffreich, gut vorzubereiten und auch als Beilage geeignet.",
   "steps": [
@@ -82,5 +75,10 @@
     "Alle Zutaten mischen, zu Bratlingen formen und in Rapsöl von beiden Seiten goldbraun braten."
   ],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Vegan",
+    "Mealprep-geeignet",
+    "Mittagsgericht"
+  ]
 }

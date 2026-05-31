@@ -1,9 +1,8 @@
 {
   "id": "fvt-02",
   "name": "Kartoffel-Kürbis-Gulasch mit weissen Bohnen",
-  "category": "Eintopf/Gratin",
+  "category": "Suppen, Eintöpfe & Currys",
   "timeMinutes": 50,
-  "timeLabel": "mittel",
   "ingredients": [
     {
       "name": "Kartoffeln",
@@ -96,17 +95,17 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "Herbst",
-    "Winter"
-  ],
   "weatherType": "kalt",
-  "isMealprep": true,
-  "isSuitableForLunch": true,
   "source": "Familientisch voraus! (LittleFant)",
   "basePortions": 4,
   "description": "Wärmend-herzhaftes Gulasch mit Kürbis, Kartoffeln und weissen Bohnen. Garniert mit Kräuteröl.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Mealprep-geeignet",
+    "Mittagsgericht",
+    "Herbst",
+    "Winter"
+  ]
 }

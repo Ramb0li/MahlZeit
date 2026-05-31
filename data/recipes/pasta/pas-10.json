@@ -3,7 +3,6 @@
   "name": "Pasta mit Kürbissauce",
   "category": "Pasta",
   "timeMinutes": 35,
-  "timeLabel": "mittel",
   "ingredients": [
     {
       "name": "Pasta",
@@ -42,17 +41,16 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "Herbst",
-    "Winter"
-  ],
   "weatherType": "kalt",
-  "isMealprep": false,
-  "isSuitableForLunch": true,
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Herbstliche Pasta mit cremiger Kürbissauce.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Mittagsgericht",
+    "Herbst",
+    "Winter"
+  ]
 }

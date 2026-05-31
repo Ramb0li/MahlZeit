@@ -1,9 +1,8 @@
 {
   "id": "kds-10",
   "name": "Tomaten-Oregano-Cracker",
-  "category": "Brot & Aufstrich",
+  "category": "Snacks & Vorspeisen",
   "timeMinutes": 25,
-  "timeLabel": "mittel",
   "basePortions": 30,
   "ingredients": [
     {
@@ -67,13 +66,7 @@
       "perPortions": 30
     }
   ],
-  "season": [
-    "ganzjährig"
-  ],
   "weatherType": "neutral",
-  "isMealprep": true,
-  "isSuitableForLunch": false,
-  "dietCategory": "vegan",
   "source": "LittleFant – Kindersnacks für jeden Tag",
   "description": "Knusprige Cracker mit Tomate und Oregano – herzhaft und lange haltbar.",
   "steps": [
@@ -82,5 +75,9 @@
     "Dünn ausrollen, in Rechtecke schneiden. Bei 200 °C (Umluft) ca. 8–12 Minuten backen."
   ],
   "tips": "Luftdicht aufbewahren – ca. 2 Wochen haltbar.",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Vegan",
+    "Mealprep-geeignet"
+  ]
 }

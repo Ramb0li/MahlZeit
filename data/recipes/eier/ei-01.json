@@ -1,9 +1,8 @@
 {
   "id": "ei-01",
   "name": "Rührei",
-  "category": "Eier",
+  "category": "Frühstück",
   "timeMinutes": 15,
-  "timeLabel": "schnell",
   "ingredients": [
     {
       "name": "Eier",
@@ -30,16 +29,14 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "ganzjährig"
-  ],
   "weatherType": "neutral",
-  "isMealprep": false,
-  "isSuitableForLunch": true,
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Klassisches Rührei, schnell und einfach.",
   "imageUrl": null,
   "imageZutaten": null,
-  "imageKochen": null
+  "imageKochen": null,
+  "tags": [
+    "Mittagsgericht"
+  ]
 }

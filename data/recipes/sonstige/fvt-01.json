@@ -1,9 +1,8 @@
 {
   "id": "fvt-01",
   "name": "Süsskartoffel-Kichererbsen-Waffeln mit Joghurt-Gurken-Dip",
-  "category": "Sonstige",
+  "category": "Snacks & Vorspeisen",
   "timeMinutes": 35,
-  "timeLabel": "mittel",
   "ingredients": [
     {
       "name": "Süsskartoffel",
@@ -72,16 +71,15 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "ganzjährig"
-  ],
   "weatherType": "neutral",
-  "isMealprep": true,
-  "isSuitableForLunch": true,
   "source": "Familientisch voraus! (LittleFant)",
   "basePortions": 4,
   "description": "Herzhafte Waffeln mit Süsskartoffel und Kichererbsen, dazu ein frischer Joghurt-Gurken-Dip. Gefriergeeignet.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Mealprep-geeignet",
+    "Mittagsgericht"
+  ]
 }

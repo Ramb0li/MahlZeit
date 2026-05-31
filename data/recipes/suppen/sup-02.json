@@ -1,9 +1,8 @@
 {
   "id": "sup-02",
   "name": "Minestrone",
-  "category": "Suppen",
+  "category": "Suppen, Eintöpfe & Currys",
   "timeMinutes": 45,
-  "timeLabel": "mittel",
   "ingredients": [
     {
       "name": "Gemischtes Gemüse",
@@ -42,19 +41,20 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "Herbst",
-    "Winter",
-    "Frühling"
-  ],
   "weatherType": "kalt",
-  "isMealprep": true,
-  "isSuitableForLunch": true,
   "source": "Menüliste",
   "basePortions": 4,
   "description": "Italienische Gemüsesuppe mit Pasta und Bohnen.",
   "steps": [],
   "tips": "",
   "imageUrl": "/images/recipes/cuiselin-minestrone-zutaten.jpg",
-  "imageZutaten": "/images/recipes/cuiselin-minestrone-zutaten.jpg"
+  "imageZutaten": "/images/recipes/cuiselin-minestrone-zutaten.jpg",
+  "tags": [
+    "Mealprep-geeignet",
+    "Mittagsgericht",
+    "Herbst",
+    "Winter",
+    "Frühling",
+    "Italienisch"
+  ]
 }

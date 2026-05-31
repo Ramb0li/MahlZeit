@@ -3,7 +3,6 @@
   "name": "Vollkornpasta mit Blumenkohl-Bohnen-Cashew-Sauce",
   "category": "Pasta",
   "timeMinutes": 35,
-  "timeLabel": "mittel",
   "ingredients": [
     {
       "name": "Cashewkerne",
@@ -66,18 +65,17 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "Herbst",
-    "Winter",
-    "Frühling"
-  ],
   "weatherType": "kalt",
-  "isMealprep": false,
-  "isSuitableForLunch": true,
   "source": "Familientisch voraus! (LittleFant)",
   "basePortions": 4,
   "description": "Cremige vegane Cashew-Sauce mit Blumenkohl und weissen Bohnen – geröstete Röschen als Topping.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Mittagsgericht",
+    "Herbst",
+    "Winter",
+    "Frühling"
+  ]
 }

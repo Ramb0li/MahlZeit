@@ -1,9 +1,8 @@
 {
   "id": "son-02",
   "name": "Tacos mit Linsen & Baumnüsse",
-  "category": "Sonstige",
+  "category": "Wraps & Sandwiches",
   "timeMinutes": 25,
-  "timeLabel": "mittel",
   "ingredients": [
     {
       "name": "Taco-Shells",
@@ -42,16 +41,14 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "ganzjährig"
-  ],
   "weatherType": "neutral",
-  "isMealprep": false,
-  "isSuitableForLunch": false,
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Vegane Tacos mit knackigen Baumnüssen.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Mexikanisch"
+  ]
 }

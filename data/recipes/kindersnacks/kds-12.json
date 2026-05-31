@@ -1,9 +1,8 @@
 {
   "id": "kds-12",
   "name": "30-Minuten-Brötchen",
-  "category": "Brot & Aufstrich",
+  "category": "Snacks & Vorspeisen",
   "timeMinutes": 30,
-  "timeLabel": "mittel",
   "basePortions": 8,
   "ingredients": [
     {
@@ -73,13 +72,7 @@
       "perPortions": 8
     }
   ],
-  "season": [
-    "ganzjährig"
-  ],
   "weatherType": "neutral",
-  "isMealprep": true,
-  "isSuitableForLunch": false,
-  "dietCategory": "vegan",
   "source": "LittleFant – Kindersnacks für jeden Tag",
   "description": "Nährstoffreiche Brötchen ohne Hefe – in 30 Minuten fertig. Mit Kichererbsen und Sojajoghurt.",
   "steps": [
@@ -88,5 +81,9 @@
     "Bei 190 °C (Umluft) 15 Minuten goldbraun backen."
   ],
   "tips": "Für die Beikost ohne Salz zubereiten.",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Vegan",
+    "Mealprep-geeignet"
+  ]
 }

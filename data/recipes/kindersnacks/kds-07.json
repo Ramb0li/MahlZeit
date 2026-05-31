@@ -1,9 +1,8 @@
 {
   "id": "kds-07",
   "name": "Karotten-Mais-Happen",
-  "category": "Snacks",
+  "category": "Snacks & Vorspeisen",
   "timeMinutes": 35,
-  "timeLabel": "mittel",
   "basePortions": 10,
   "ingredients": [
     {
@@ -67,13 +66,7 @@
       "perPortions": 10
     }
   ],
-  "season": [
-    "ganzjährig"
-  ],
   "weatherType": "neutral",
-  "isMealprep": true,
-  "isSuitableForLunch": false,
-  "dietCategory": "vegan",
   "source": "LittleFant – Kindersnacks für jeden Tag",
   "description": "Goldbraune Maistaler mit Karotte und Sojajoghurt – saftig innen, leicht knusprig außen.",
   "steps": [
@@ -82,5 +75,9 @@
     "Zu Kugeln formen, platt drücken. Bei 230 °C (Ober-/Unterhitze) 15–20 Minuten backen."
   ],
   "tips": "Bis zu 60 g Hülsenfrüchte-Reste mit Sojajoghurt pürieren für Extra-Eiweiß.",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Vegan",
+    "Mealprep-geeignet"
+  ]
 }

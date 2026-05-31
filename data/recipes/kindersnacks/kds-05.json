@@ -1,9 +1,8 @@
 {
   "id": "kds-05",
   "name": "Herzhafte Haferkekse",
-  "category": "Snacks",
+  "category": "Snacks & Vorspeisen",
   "timeMinutes": 27,
-  "timeLabel": "mittel",
   "basePortions": 15,
   "ingredients": [
     {
@@ -67,13 +66,7 @@
       "perPortions": 15
     }
   ],
-  "season": [
-    "ganzjährig"
-  ],
   "weatherType": "neutral",
-  "isMealprep": true,
-  "isSuitableForLunch": false,
-  "dietCategory": "vegan",
   "source": "LittleFant – Kindersnacks für jeden Tag",
   "description": "Herzhafte Haferkekse mit Oliven und Rosmarin – ballaststoffreich, knusprig und auch für Erwachsene unwiderstehlich.",
   "steps": [
@@ -82,5 +75,9 @@
     "Zu Kugeln formen, auf Backblech platt drücken. Bei 180 °C 12–15 Minuten backen."
   ],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Vegan",
+    "Mealprep-geeignet"
+  ]
 }

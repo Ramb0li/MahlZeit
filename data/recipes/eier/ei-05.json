@@ -1,9 +1,8 @@
 {
   "id": "ei-05",
   "name": "Omelette mit Pilz-Kräutersauce",
-  "category": "Eier",
+  "category": "Vegetarische Hauptgerichte",
   "timeMinutes": 25,
-  "timeLabel": "mittel",
   "ingredients": [
     {
       "name": "Eier",
@@ -42,17 +41,15 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "Herbst",
-    "Winter"
-  ],
   "weatherType": "kalt",
-  "isMealprep": false,
-  "isSuitableForLunch": false,
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Cremige Pilzsauce über fluffiger Omelette.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Herbst",
+    "Winter"
+  ]
 }

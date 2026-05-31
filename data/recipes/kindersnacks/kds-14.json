@@ -1,9 +1,8 @@
 {
   "id": "kds-14",
   "name": "Eisen-Booster-Energyballs",
-  "category": "Snacks",
+  "category": "Desserts & Süsses",
   "timeMinutes": 20,
-  "timeLabel": "mittel",
   "basePortions": 20,
   "ingredients": [
     {
@@ -31,13 +30,7 @@
       "perPortions": 20
     }
   ],
-  "season": [
-    "ganzjährig"
-  ],
   "weatherType": "neutral",
-  "isMealprep": true,
-  "isSuitableForLunch": false,
-  "dietCategory": "vegan",
   "source": "LittleFant – Kindersnacks für jeden Tag",
   "description": "Eisenreiche Energyballs aus Aprikosen, Haferflocken und Kürbiskernen – schnell gemacht, 2 Wochen haltbar.",
   "steps": [
@@ -46,5 +39,9 @@
     "Mit feuchten Händen zu ca. 20 Kugeln formen."
   ],
   "tips": "Im Kühlschrank ca. 2 Wochen haltbar, alternativ einfrieren.",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Vegan",
+    "Mealprep-geeignet"
+  ]
 }

@@ -1,25 +1,65 @@
 {
   "id": "sal-09",
   "name": "Griechischer Sommer-Salat",
-  "category": "Salat/Bowl",
+  "category": "Salate & Bowls",
   "timeMinutes": 15,
-  "timeLabel": "schnell",
   "ingredients": [
-    { "name": "Tomaten (verschiedene Sorten)", "amount": 600, "unit": "g", "perPortions": 4 },
-    { "name": "Gurke", "amount": 1, "unit": "Stk", "perPortions": 4 },
-    { "name": "Rote Zwiebel", "amount": 1, "unit": "Stk", "perPortions": 4 },
-    { "name": "Grüne Oliven", "amount": 100, "unit": "g", "perPortions": 4 },
-    { "name": "Feta (Block)", "amount": 200, "unit": "g", "perPortions": 4 },
-    { "name": "Olivenöl (extra vergine)", "amount": 5, "unit": "EL", "perPortions": 4 },
-    { "name": "Rotweinessig", "amount": 2, "unit": "EL", "perPortions": 4 },
-    { "name": "Getrockneter Oregano", "amount": 1, "unit": "TL", "perPortions": 4 },
-    { "name": "Fleur de sel & Pfeffer", "amount": 1, "unit": "Prise", "perPortions": 4 }
+    {
+      "name": "Tomaten (verschiedene Sorten)",
+      "amount": 600,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Gurke",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Rote Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Grüne Oliven",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Feta (Block)",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl (extra vergine)",
+      "amount": 5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Rotweinessig",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Getrockneter Oregano",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Fleur de sel & Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
   ],
-  "season": ["Sommer"],
   "weatherType": "warm",
-  "isMealprep": false,
-  "isSuitableForLunch": true,
-  "dietType": "vegetarisch",
   "source": "cuiseline",
   "basePortions": 4,
   "description": "Der echte griechische Salat — kein Eisberg-Salat, nur Tomaten, Gurken, Oliven und ein ganzer Block Feta. Perfekt im Sommer.",
@@ -32,5 +72,10 @@
     "Kurz vor dem Servieren zum Tisch bringen und erst dann vermischen."
   ],
   "tips": "Der Schlüssel: beste Tomaten (reif und aromatisch), gutes Olivenöl und echter griechischer Feta aus Schafsmilch. Niemals Eisbergsalat.",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Vegetarisch",
+    "Mittagsgericht",
+    "Sommer"
+  ]
 }

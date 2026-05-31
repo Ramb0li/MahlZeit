@@ -1,20 +1,19 @@
 {
   "id": "rec-1779488181331-i6vew",
   "name": "Tomaten & Mozzerella Salat",
-  "category": "Salat/Bowl",
+  "category": "Salate & Bowls",
   "timeMinutes": 15,
-  "timeLabel": "schnell",
   "ingredients": [],
-  "season": [
-    "Sommer"
-  ],
   "weatherType": "warm",
-  "isMealprep": false,
-  "isSuitableForLunch": true,
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Mittagsgericht",
+    "Vegetarisch",
+    "Sommer"
+  ]
 }

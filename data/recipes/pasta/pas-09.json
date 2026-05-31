@@ -1,9 +1,8 @@
 {
   "id": "pas-09",
   "name": "Hörnligratin mit Lauch, Erbsen & Broccoli",
-  "category": "Pasta",
+  "category": "Aufläufe & Gratins",
   "timeMinutes": 50,
-  "timeLabel": "mittel",
   "ingredients": [
     {
       "name": "Hörnli",
@@ -42,18 +41,19 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "Herbst",
-    "Winter",
-    "Frühling"
-  ],
   "weatherType": "kalt",
-  "isMealprep": true,
-  "isSuitableForLunch": true,
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Herzhafter Nudelauflauf mit Gemüse.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Mealprep-geeignet",
+    "Mittagsgericht",
+    "Herbst",
+    "Winter",
+    "Frühling",
+    "Ofengericht"
+  ]
 }

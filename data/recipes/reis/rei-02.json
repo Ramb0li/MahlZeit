@@ -1,9 +1,8 @@
 {
   "id": "rei-02",
   "name": "Risotto mit Ofengemüse",
-  "category": "Reis",
+  "category": "Reis & Getreide",
   "timeMinutes": 60,
-  "timeLabel": "aufwändig",
   "ingredients": [
     {
       "name": "Risottoreis",
@@ -42,16 +41,15 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "ganzjährig"
-  ],
   "weatherType": "kalt",
-  "isMealprep": true,
-  "isSuitableForLunch": false,
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Risotto mit karamellisiertem Ofengemüse.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Mealprep-geeignet",
+    "Ofengericht"
+  ]
 }

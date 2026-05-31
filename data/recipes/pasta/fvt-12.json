@@ -3,7 +3,6 @@
   "name": "Nudeln mit Basilikum-Bohnen-Pesto",
   "category": "Pasta",
   "timeMinutes": 20,
-  "timeLabel": "schnell",
   "ingredients": [
     {
       "name": "Basilikum",
@@ -54,17 +53,16 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "Frühling",
-    "Sommer"
-  ],
   "weatherType": "warm",
-  "isMealprep": false,
-  "isSuitableForLunch": true,
   "source": "Familientisch voraus! (LittleFant)",
   "basePortions": 4,
   "description": "Schnelles veganes Pesto aus Basilikum, weissen Bohnen und Cashews – nährstoffreicher als klassisches Pesto.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Mittagsgericht",
+    "Frühling",
+    "Sommer"
+  ]
 }

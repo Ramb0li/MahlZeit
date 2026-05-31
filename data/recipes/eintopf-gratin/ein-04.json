@@ -1,9 +1,8 @@
 {
   "id": "ein-04",
   "name": "Ebly mit Tomaten, Räuchertofu & Sauerkraut",
-  "category": "Eintopf/Gratin",
+  "category": "Reis & Getreide",
   "timeMinutes": 35,
-  "timeLabel": "mittel",
   "ingredients": [
     {
       "name": "Ebly (Weichweizenkörner)",
@@ -36,17 +35,18 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "Herbst",
-    "Winter"
-  ],
   "weatherType": "kalt",
-  "isMealprep": true,
-  "isSuitableForLunch": true,
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Deftige Kombination mit Räuchertofu.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Vegan",
+    "Mealprep-geeignet",
+    "Mittagsgericht",
+    "Herbst",
+    "Winter"
+  ]
 }

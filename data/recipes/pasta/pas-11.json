@@ -1,9 +1,8 @@
 {
   "id": "pas-11",
   "name": "Spätzligratin mit Tomatensauce",
-  "category": "Pasta",
+  "category": "Aufläufe & Gratins",
   "timeMinutes": 45,
-  "timeLabel": "mittel",
   "ingredients": [
     {
       "name": "Spätzli (fertig)",
@@ -36,17 +35,18 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "Herbst",
-    "Winter"
-  ],
   "weatherType": "kalt",
-  "isMealprep": true,
-  "isSuitableForLunch": true,
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Schweizer Spätzli aus dem Ofen.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Mealprep-geeignet",
+    "Mittagsgericht",
+    "Herbst",
+    "Winter",
+    "Ofengericht"
+  ]
 }

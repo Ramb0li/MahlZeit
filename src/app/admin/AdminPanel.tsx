@@ -11,20 +11,19 @@ import type { Recipe, Category } from '@/types';
 
 // Kategoriefarben für Badges
 const CAT_COLOR: Record<string, { bg: string; color: string }> = {
-  'Eier':           { bg: '#fff3e0', color: '#e65100' },
-  'Reis':           { bg: '#f5ece0', color: '#c49a6c' },
-  'Pasta':          { bg: '#f2e5e0', color: '#b5614a' },
-  'Eintopf/Gratin': { bg: '#fce4ec', color: '#c62828' },
-  'Fisch':          { bg: '#e3f2fd', color: '#1565c0' },
-  'Sonstige':       { bg: '#efe9df', color: '#5a4e48' },
-  'Asiatisch':      { bg: '#fce4ec', color: '#ad1457' },
-  'Ofen':           { bg: '#ede7f6', color: '#4527a0' },
-  'Suppen':         { bg: '#e0f2f1', color: '#00695c' },
-  'Salat/Bowl':     { bg: '#e8f5e9', color: '#2e7d32' },
-  'Frühstück':      { bg: '#fff8e1', color: '#f57f17' },
-  'Süsses':         { bg: '#fce4ec', color: '#880e4f' },
-  'Brot & Aufstrich': { bg: '#efebe9', color: '#4e342e' },
-  'Snacks':         { bg: '#f3e5f5', color: '#6a1b9a' },
+  'Frühstück':                  { bg: '#fff8e1', color: '#f57f17' },
+  'Snacks & Vorspeisen':        { bg: '#f3e5f5', color: '#6a1b9a' },
+  'Suppen, Eintöpfe & Currys':  { bg: '#e0f2f1', color: '#00695c' },
+  'Salate & Bowls':             { bg: '#e8f5e9', color: '#2e7d32' },
+  'Pasta':                      { bg: '#f2e5e0', color: '#b5614a' },
+  'Reis & Getreide':            { bg: '#f5ece0', color: '#c49a6c' },
+  'Kartoffelgerichte':          { bg: '#fdf3e7', color: '#bf6000' },
+  'Fleisch & Geflügel':         { bg: '#fce4ec', color: '#c62828' },
+  'Fisch & Meeresfrüchte':      { bg: '#e3f2fd', color: '#1565c0' },
+  'Vegetarische Hauptgerichte': { bg: '#f1f8e9', color: '#558b2f' },
+  'Aufläufe & Gratins':         { bg: '#ede7f6', color: '#4527a0' },
+  'Wraps & Sandwiches':         { bg: '#fbe9e7', color: '#bf360c' },
+  'Desserts & Süsses':          { bg: '#fce4ec', color: '#880e4f' },
 };
 
 type SafeUser = Omit<AppUser, 'passwordHash'>;

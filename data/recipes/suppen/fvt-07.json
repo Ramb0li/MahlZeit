@@ -1,9 +1,8 @@
 {
   "id": "fvt-07",
   "name": "Schnelle Gemüsesuppe mit Bohnen",
-  "category": "Suppen",
+  "category": "Suppen, Eintöpfe & Currys",
   "timeMinutes": 30,
-  "timeLabel": "mittel",
   "ingredients": [
     {
       "name": "Zwiebel",
@@ -90,18 +89,18 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "Herbst",
-    "Winter",
-    "Frühling"
-  ],
   "weatherType": "kalt",
-  "isMealprep": true,
-  "isSuitableForLunch": true,
   "source": "Familientisch voraus! (LittleFant)",
   "basePortions": 4,
   "description": "Bunte Gemüsesuppe mit Bohnen und Vollkornnudeln – ideal um neue Gemüsesorten einzuführen.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Mealprep-geeignet",
+    "Mittagsgericht",
+    "Herbst",
+    "Winter",
+    "Frühling"
+  ]
 }

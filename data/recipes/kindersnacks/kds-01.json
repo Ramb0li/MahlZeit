@@ -1,9 +1,8 @@
 {
   "id": "kds-01",
   "name": "Blitzschnelle Pizza-Brötchen",
-  "category": "Brot & Aufstrich",
+  "category": "Snacks & Vorspeisen",
   "timeMinutes": 35,
-  "timeLabel": "mittel",
   "basePortions": 8,
   "ingredients": [
     {
@@ -79,13 +78,7 @@
       "perPortions": 8
     }
   ],
-  "season": [
-    "ganzjährig"
-  ],
   "weatherType": "neutral",
-  "isMealprep": true,
-  "isSuitableForLunch": false,
-  "dietCategory": "vegan",
   "source": "LittleFant – Kindersnacks für jeden Tag",
   "description": "Saftige Mini-Brötchen mit Kichererbsen, Oliven und Oregano – mediterran und sättigend. In unter 35 Minuten fertig.",
   "steps": [
@@ -96,5 +89,9 @@
     "Backofen auf 190 °C (Umluft) vorheizen. Brötchen 18–20 Minuten goldbraun backen."
   ],
   "tips": "Für Kinder unter 12 Monaten ohne Salz zubereiten.",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Vegan",
+    "Mealprep-geeignet"
+  ]
 }

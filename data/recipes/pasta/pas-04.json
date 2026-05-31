@@ -3,7 +3,6 @@
   "name": "Pesto Genovese",
   "category": "Pasta",
   "timeMinutes": 15,
-  "timeLabel": "schnell",
   "ingredients": [
     {
       "name": "Pasta",
@@ -36,18 +35,17 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "Frühling",
-    "Sommer"
-  ],
   "weatherType": "warm",
-  "isMealprep": false,
-  "isSuitableForLunch": true,
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Schnell, lecker, mit frischem Basilikum-Pesto.",
   "steps": [],
   "tips": "",
   "imageUrl": "/images/recipes/cuiselin-pesto-genovese.jpg",
-  "imageZutaten": "/images/recipes/cuiselin-pesto-genovese-zutaten.jpg"
+  "imageZutaten": "/images/recipes/cuiselin-pesto-genovese-zutaten.jpg",
+  "tags": [
+    "Mittagsgericht",
+    "Frühling",
+    "Sommer"
+  ]
 }

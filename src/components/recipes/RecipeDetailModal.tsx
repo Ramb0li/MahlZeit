@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect, useCallback } from 'react';
 import { X, Clock, Leaf, ChevronUp, ChevronDown, Star, UtensilsCrossed, Pencil } from 'lucide-react';
-import type { Recipe, Ingredient, IngredientGroup, RecipeRating } from '@/types';
+import { type Recipe, type Ingredient, type IngredientGroup, type RecipeRating, computeTimeTags } from '@/types';
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
@@ -272,9 +272,10 @@ export function RecipeDetailModal({
 
   const hasSteps = (recipe.steps?.length ?? 0) > 0;
 
+  const timeTags = computeTimeTags(recipe.timeMinutes);
   const timeColor =
-    recipe.timeLabel === 'schnell' ? { bg: '#e8f5e9', color: '#2e7d32' } :
-    recipe.timeLabel === 'mittel'  ? { bg: '#fff3e0', color: '#e65100' } :
+    timeTags.includes('Schnell (<20min)') ? { bg: '#e8f5e9', color: '#2e7d32' } :
+    timeTags.includes('Einfach (<30min)') ? { bg: '#fff3e0', color: '#e65100' } :
     { bg: '#fce4ec', color: '#c62828' };
 
   // Trap scroll on body while modal is open
@@ -375,7 +376,7 @@ export function RecipeDetailModal({
                 <Clock size={11} />
                 {recipe.timeMinutes} min
               </span>
-              {recipe.isMealprep && (
+              {recipe.tags?.includes('Mealprep-geeignet') && (
                 <span className="inline-flex items-center gap-1 text-xs px-2.5 py-1 rounded-full font-semibold" style={{ backgroundColor: '#f5ece0', color: '#c49a6c' }}>
                   <Leaf size={11} />
                   Mealprep

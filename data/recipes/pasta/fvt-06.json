@@ -3,7 +3,6 @@
   "name": "Brokkoli-Gnocchi",
   "category": "Pasta",
   "timeMinutes": 55,
-  "timeLabel": "aufwändig",
   "ingredients": [
     {
       "name": "Kartoffeln (festkochend)",
@@ -48,16 +47,12 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "ganzjährig"
-  ],
   "weatherType": "neutral",
-  "isMealprep": false,
-  "isSuitableForLunch": false,
   "source": "Familientisch voraus! (LittleFant)",
   "basePortions": 4,
   "description": "Selbstgemachte Gnocchi mit Brokkoli und Kichererbsenmehl – nährstoffreicher als klassische Variante.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": []
 }

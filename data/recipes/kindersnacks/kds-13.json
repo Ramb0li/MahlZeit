@@ -1,9 +1,8 @@
 {
   "id": "kds-13",
   "name": "Gesunde Vanille-Waffeln",
-  "category": "Snacks",
+  "category": "Desserts & Süsses",
   "timeMinutes": 25,
-  "timeLabel": "mittel",
   "basePortions": 6,
   "ingredients": [
     {
@@ -55,13 +54,7 @@
       "perPortions": 6
     }
   ],
-  "season": [
-    "ganzjährig"
-  ],
   "weatherType": "neutral",
-  "isMealprep": true,
-  "isSuitableForLunch": false,
-  "dietCategory": "vegan",
   "source": "LittleFant – Kindersnacks für jeden Tag",
   "description": "Waffeln mit Rosinen, weißen Bohnen und Vanille – nur natürlich gesüßt, einfach und nährstoffreich.",
   "steps": [
@@ -70,5 +63,9 @@
     "Im gefetteten Waffeleisen goldbraune Waffeln ausbacken."
   ],
   "tips": "Gut auf Vorrat zubereiten und im Toaster frisch aufbacken.",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Vegan",
+    "Mealprep-geeignet"
+  ]
 }

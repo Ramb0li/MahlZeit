@@ -13,7 +13,7 @@
  * Legacy-globalen Pfad zurück (für Migrationsphase / Admin-Tools).
  */
 
-import type { Recipe, WeekPlan, AppSettings, PromotionsCache, WeatherCache, DayConstraint, ShoppingGroups, RecipeRating } from '@/types';
+import type { Recipe, WeekPlan, AppSettings, PromotionsCache, WeatherCache, DayConstraint, ShoppingGroups, RecipeRating, Category } from '@/types';
 
 import seedRecipes     from '../../data/recipes.json';
 import seedSettings    from '../../data/settings.json';
@@ -79,14 +79,66 @@ export async function saveTemplateRecipes(recipes: Recipe[]): Promise<void> {
   await getRedis().set(K.recipesGlobal, recipes);
 }
 
+// ─── Legacy recipe normalizer (Redis group recipes may use old schema) ────────
+
+const OLD_CAT_MAP: Record<string, Category> = {
+  'Eier':             'Vegetarische Hauptgerichte',
+  'Reis':             'Reis & Getreide',
+  'Pasta':            'Pasta',
+  'Eintopf/Gratin':   'Suppen, Eintöpfe & Currys',
+  'Fisch':            'Fisch & Meeresfrüchte',
+  'Sonstige':         'Vegetarische Hauptgerichte',
+  'Asiatisch':        'Vegetarische Hauptgerichte',
+  'Ofen':             'Aufläufe & Gratins',
+  'Suppen':           'Suppen, Eintöpfe & Currys',
+  'Salat/Bowl':       'Salate & Bowls',
+  'Frühstück':        'Frühstück',
+  'Süsses':           'Desserts & Süsses',
+  'Brot & Aufstrich': 'Snacks & Vorspeisen',
+  'Snacks':           'Snacks & Vorspeisen',
+};
+const SEASON_VALS = new Set(['Frühling', 'Sommer', 'Herbst', 'Winter']);
+
+function normalizeRecipe(r: Recipe): Recipe {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const raw = r as any;
+  // Category migration
+  if (OLD_CAT_MAP[r.category as string]) {
+    r = { ...r, category: OLD_CAT_MAP[r.category as string] };
+    if ((r.category as string) === 'Aufläufe & Gratins' && raw.category === 'Ofen') {
+      raw._addOfengericht = true;
+    }
+  }
+  // Tags migration (only if tags field is absent)
+  if (!Array.isArray(raw.tags)) {
+    const tags: string[] = [];
+    if (Array.isArray(raw.season)) {
+      raw.season.forEach((s: string) => { if (SEASON_VALS.has(s)) tags.push(s); });
+    }
+    if (raw.isMealprep)       tags.push('Mealprep-geeignet');
+    if (raw.isSuitableForLunch) tags.push('Mittagsgericht');
+    const dc = raw.dietCategory as string | undefined;
+    const dt = raw.dietType    as string | undefined;
+    if (dc === 'vegetarian' || dt === 'vegetarisch') tags.push('Vegetarisch');
+    if (dc === 'vegan'      || dt === 'vegan')       tags.push('Vegan');
+    if (raw._addOfengericht) tags.push('Ofengericht');
+    if (raw.category === 'Asiatisch') tags.push('Asiatisch');
+    r = { ...r, tags };
+  }
+  return r;
+}
+
 // ─── Group-scoped Recipes (custom recipes per group) ──────────────────────────
 
 async function getGroupCustomRecipes(groupId: string): Promise<Recipe[]> {
+  let recipes: Recipe[];
   if (!USE_REDIS) {
     const all = readJson<Record<string, Recipe[]>>('group-recipes.json', {});
-    return all[groupId] ?? [];
+    recipes = all[groupId] ?? [];
+  } else {
+    recipes = (await getRedis().get<Recipe[]>(K.groupRecipes(groupId))) ?? [];
   }
-  return (await getRedis().get<Recipe[]>(K.groupRecipes(groupId))) ?? [];
+  return recipes.map(normalizeRecipe);
 }
 
 async function saveGroupCustomRecipes(groupId: string, recipes: Recipe[]): Promise<void> {

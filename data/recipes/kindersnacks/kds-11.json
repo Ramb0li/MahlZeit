@@ -1,9 +1,8 @@
 {
   "id": "kds-11",
   "name": "Linsen-Knusperbrot",
-  "category": "Brot & Aufstrich",
+  "category": "Snacks & Vorspeisen",
   "timeMinutes": 65,
-  "timeLabel": "aufwendig",
   "basePortions": 20,
   "ingredients": [
     {
@@ -55,13 +54,7 @@
       "perPortions": 20
     }
   ],
-  "season": [
-    "ganzjährig"
-  ],
   "weatherType": "neutral",
-  "isMealprep": true,
-  "isSuitableForLunch": false,
-  "dietCategory": "vegan",
   "source": "LittleFant – Kindersnacks für jeden Tag",
   "description": "Knuspriges Vollkornbrot mit roten Linsen – perfekt zum Dippen von Hummus oder Kräuterquark.",
   "steps": [
@@ -70,5 +63,9 @@
     "Bei 150 °C (Umluft) 15 Minuten backen. Herausnehmen, in Stücke schneiden. Weitere 40–45 Minuten backen."
   ],
   "tips": "In luftdichtem Behälter aufbewahren.",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Vegan",
+    "Mealprep-geeignet"
+  ]
 }

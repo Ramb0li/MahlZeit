@@ -1,9 +1,8 @@
 {
   "id": "rei-01",
   "name": "Lauchrisotto",
-  "category": "Reis",
+  "category": "Reis & Getreide",
   "timeMinutes": 40,
-  "timeLabel": "mittel",
   "ingredients": [
     {
       "name": "Risottoreis",
@@ -48,18 +47,16 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "Herbst",
-    "Winter",
-    "Frühling"
-  ],
   "weatherType": "kalt",
-  "isMealprep": false,
-  "isSuitableForLunch": false,
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Cremiges Lauchrisotto – Komfort food pur.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Herbst",
+    "Winter",
+    "Frühling"
+  ]
 }

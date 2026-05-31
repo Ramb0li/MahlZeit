@@ -1,9 +1,8 @@
 {
   "id": "son-03",
   "name": "Pitabrot mit Falafel, Tzatziki und Gemüse",
-  "category": "Sonstige",
+  "category": "Wraps & Sandwiches",
   "timeMinutes": 20,
-  "timeLabel": "schnell",
   "ingredients": [
     {
       "name": "Pitabrot",
@@ -42,17 +41,17 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "Frühling",
-    "Sommer"
-  ],
   "weatherType": "warm",
-  "isMealprep": false,
-  "isSuitableForLunch": true,
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Frisches Streetfood zu Hause.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Mittagsgericht",
+    "Frühling",
+    "Sommer",
+    "Orientalisch"
+  ]
 }

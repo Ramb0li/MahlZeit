@@ -1,9 +1,8 @@
 {
   "id": "ei-06",
   "name": "Eier in Senfsauce mit Blumenkohlpüree",
-  "category": "Eier",
+  "category": "Vegetarische Hauptgerichte",
   "timeMinutes": 35,
-  "timeLabel": "mittel",
   "ingredients": [
     {
       "name": "Eier",
@@ -42,17 +41,15 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "Herbst",
-    "Winter"
-  ],
   "weatherType": "kalt",
-  "isMealprep": false,
-  "isSuitableForLunch": false,
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Deftige Senfsauce mit Eiern und feinem Blumenkohlpüree.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Herbst",
+    "Winter"
+  ]
 }

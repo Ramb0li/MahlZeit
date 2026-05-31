@@ -1,9 +1,8 @@
 {
   "id": "kds-21",
   "name": "\"Nur-Gutes-drin\"-Muffins",
-  "category": "Snacks",
+  "category": "Desserts & Süsses",
   "timeMinutes": 37,
-  "timeLabel": "mittel",
   "basePortions": 12,
   "ingredients": [
     {
@@ -85,13 +84,7 @@
       "perPortions": 12
     }
   ],
-  "season": [
-    "ganzjährig"
-  ],
   "weatherType": "neutral",
-  "isMealprep": true,
-  "isSuitableForLunch": false,
-  "dietCategory": "vegan",
   "source": "LittleFant – Kindersnacks für jeden Tag",
   "description": "Schokoladige Muffins mit schwarzen Bohnen, Zucchini und Datteln – unglaublich saftig und voller Nährstoffe.",
   "steps": [
@@ -100,5 +93,9 @@
     "Bei 210 °C (Umluft) 5 Minuten backen. Auf 170 °C reduzieren und weitere 12 Minuten backen. Bei geöffneter Ofentür abkühlen lassen."
   ],
   "tips": "Optional mit Schokotropfen verzieren.",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Vegan",
+    "Mealprep-geeignet"
+  ]
 }

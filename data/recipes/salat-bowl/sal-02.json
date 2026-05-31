@@ -1,9 +1,8 @@
 {
   "id": "sal-02",
   "name": "Rucola Birnen Fetasalat",
-  "category": "Salat/Bowl",
+  "category": "Salate & Bowls",
   "timeMinutes": 15,
-  "timeLabel": "schnell",
   "ingredients": [
     {
       "name": "Rucola",
@@ -42,18 +41,17 @@
       "perPortions": 4
     }
   ],
-  "season": [
-    "Herbst",
-    "Frühling",
-    "Sommer"
-  ],
   "weatherType": "warm",
-  "isMealprep": false,
-  "isSuitableForLunch": true,
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Eleganter Salat mit Birne und Feta.",
   "steps": [],
   "tips": "",
-  "imageUrl": null
+  "imageUrl": null,
+  "tags": [
+    "Mittagsgericht",
+    "Herbst",
+    "Frühling",
+    "Sommer"
+  ]
 }
