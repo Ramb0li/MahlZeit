@@ -56,8 +56,11 @@ export function WeekPlanner({ recipes, settings, constraints }: WeekPlannerProps
     } catch {}
   }, []);
 
+  const weatherLocation = settings.weather?.location ?? '';
+
   useEffect(() => { loadPlan(); }, [loadPlan]);
-  useEffect(() => { loadWeather(); }, [loadWeather]);
+  // Neu laden wenn Standort in Einstellungen geändert wurde
+  useEffect(() => { loadWeather(); }, [loadWeather, weatherLocation]);
 
   const handleSuggestWeek = async () => {
     setIsSuggesting(true);

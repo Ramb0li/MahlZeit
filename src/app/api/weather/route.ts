@@ -2,6 +2,7 @@ export const dynamic = 'force-dynamic';
 
 import { NextResponse } from 'next/server';
 import { getWeatherCache, saveWeatherCache, getSettings } from '@/lib/data';
+import { getSessionWithGroup } from '@/lib/session';
 import { getWeatherTypeFromTemp } from '@/lib/utils';
 import type { WeatherDay, WeatherCache } from '@/types';
 
@@ -72,7 +73,12 @@ export async function GET(request: Request) {
     const { searchParams } = new URL(request.url);
     const forceRefresh = searchParams.get('refresh') === 'true';
 
-    const [cached, settings] = await Promise.all([getWeatherCache(), getSettings()]);
+    // Session lesen um korrekte Gruppen-Einstellungen zu holen
+    const session = await getSessionWithGroup().catch(() => null);
+    const [cached, settings] = await Promise.all([
+      getWeatherCache(),
+      getSettings(session?.groupId ?? undefined),
+    ]);
 
     const location = settings.weather?.location || 'Luzern';
 
