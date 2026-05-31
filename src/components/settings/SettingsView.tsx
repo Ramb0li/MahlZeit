@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect, useContext, createContext } from 'react';
+import { useState, useEffect, useContext, createContext, useRef, useCallback } from 'react';
 import { Plus, Trash2, Save, ChevronDown, ChevronUp, Search, X, Users, Mail, Edit3 } from 'lucide-react';
 import { THEMES } from '@/lib/themes';
 import type { ThemeId } from '@/lib/themes';
@@ -148,6 +148,44 @@ export function SettingsView({
   const [openSections, setOpenSections]   = useState<Set<string>>(new Set(['theme', 'meals']));
   const [aversionSearch, setAversionSearch] = useState('');
 
+  // Weather autocomplete
+  interface GeoResult { name: string; admin1?: string; country?: string; latitude: number; longitude: number; }
+  const [locationSuggestions, setLocationSuggestions] = useState<GeoResult[]>([]);
+  const [locationLoading, setLocationLoading]         = useState(false);
+  const [showSuggestions, setShowSuggestions]         = useState(false);
+  const locationWrapperRef = useRef<HTMLDivElement>(null);
+  const locationDebounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const lastSavedLocationRef = useRef(initialSettings.weather?.location ?? '');
+
+  // Schließe Dropdown bei Klick außerhalb
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (locationWrapperRef.current && !locationWrapperRef.current.contains(e.target as Node)) {
+        setShowSuggestions(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  const fetchLocationSuggestions = useCallback(async (query: string) => {
+    if (query.trim().length < 2) { setLocationSuggestions([]); setLocationLoading(false); return; }
+    setLocationLoading(true);
+    try {
+      const res = await fetch(
+        `https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(query)}&count=5&language=de&format=json`
+      );
+      if (!res.ok) return;
+      const data = await res.json() as { results?: GeoResult[] };
+      setLocationSuggestions(data.results ?? []);
+      setShowSuggestions(true);
+    } catch {
+      setLocationSuggestions([]);
+    } finally {
+      setLocationLoading(false);
+    }
+  }, []);
+
   // Group state
   const [groupName, setGroupName]       = useState(group?.name ?? '');
   const [renaming, setRenaming]         = useState(false);
@@ -289,9 +327,13 @@ export function SettingsView({
     setConstraints((prev) => prev.filter((c) => c.id !== id));
 
   const handleSave = async () => {
+    const locationChanged = settings.weather.location.trim() !== lastSavedLocationRef.current.trim();
     await fetch('/api/settings', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ settings, constraints }) });
     onSettingsChange?.(settings);
     onConstraintsChange?.(constraints);
+    lastSavedLocationRef.current = settings.weather.location;
+    // Standort geändert → Wetter sofort im Hintergrund neu laden
+    if (locationChanged) fetch('/api/weather?refresh=true').catch(() => {});
     setSaved(true);
     setTimeout(() => setSaved(false), 2000);
   };
@@ -770,13 +812,66 @@ export function SettingsView({
       <Section id="weather" title="Wetterintegration" sub="Standort für Wetter-Kochvorschläge.">
         <div>
           <label style={labelStyle}>Standort</label>
-          <input
-            type="text"
-            value={settings.weather.location}
-            onChange={(e) => setSettings((s) => ({ ...s, weather: { ...s.weather, location: e.target.value } }))}
-            placeholder="z.B. Luzern, Zürich, Bern …"
-            style={{ ...inputStyle, width: '100%' }}
-          />
+          <div ref={locationWrapperRef} style={{ position: 'relative' }}>
+            <input
+              type="text"
+              value={settings.weather.location}
+              onChange={(e) => {
+                const val = e.target.value;
+                setSettings((s) => ({ ...s, weather: { ...s.weather, location: val } }));
+                if (locationDebounceRef.current) clearTimeout(locationDebounceRef.current);
+                if (val.trim().length >= 2) {
+                  setLocationLoading(true);
+                  locationDebounceRef.current = setTimeout(() => fetchLocationSuggestions(val), 280);
+                } else {
+                  setLocationSuggestions([]);
+                  setShowSuggestions(false);
+                  setLocationLoading(false);
+                }
+              }}
+              onFocus={() => { if (locationSuggestions.length > 0) setShowSuggestions(true); }}
+              onKeyDown={(e) => { if (e.key === 'Escape') setShowSuggestions(false); }}
+              placeholder="z.B. Luzern, Zürich, Bern …"
+              style={{ ...inputStyle, width: '100%', paddingRight: locationLoading ? '30px' : undefined }}
+              autoComplete="off"
+            />
+            {locationLoading && (
+              <span style={{ position: 'absolute', right: '10px', top: '50%', transform: 'translateY(-50%)', fontSize: '11px', color: '#9c8c84' }}>
+                …
+              </span>
+            )}
+            {showSuggestions && locationSuggestions.length > 0 && (
+              <div style={{
+                position: 'absolute', top: 'calc(100% + 4px)', left: 0, right: 0, zIndex: 50,
+                backgroundColor: '#fff', border: '1px solid #e0d8ce', borderRadius: '12px',
+                boxShadow: '0 4px 16px rgba(44,36,32,0.12)', overflow: 'hidden',
+              }}>
+                {locationSuggestions.map((r, i) => (
+                  <button
+                    key={i}
+                    type="button"
+                    onMouseDown={(e) => {
+                      e.preventDefault();
+                      setSettings((s) => ({ ...s, weather: { ...s.weather, location: r.name } }));
+                      setShowSuggestions(false);
+                      setLocationSuggestions([]);
+                    }}
+                    className="w-full text-left px-4 py-2.5 transition-colors"
+                    style={{ borderBottom: i < locationSuggestions.length - 1 ? '1px solid #f0ebe3' : 'none' }}
+                    onMouseEnter={e => { (e.currentTarget as HTMLElement).style.backgroundColor = '#f7f4ee'; }}
+                    onMouseLeave={e => { (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent'; }}
+                  >
+                    <span style={{ fontSize: '13px', fontWeight: 600, color: '#2c2420' }}>{r.name}</span>
+                    {(r.admin1 || r.country) && (
+                      <span style={{ fontSize: '11px', color: '#9c8c84', marginLeft: '6px' }}>
+                        {[r.admin1, r.country].filter(Boolean).join(', ')}
+                      </span>
+                    )}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
           <p className="text-xs mt-1" style={{ color: '#9c8c84' }}>
             Wetterdaten via{' '}
             <a href="https://open-meteo.com" target="_blank" rel="noopener" className="transition-colors hover:underline" style={{ color: '#4a7a4e' }}>

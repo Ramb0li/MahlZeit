@@ -5,8 +5,15 @@ import { getWeatherCache, saveWeatherCache, getSettings } from '@/lib/data';
 import { getWeatherTypeFromTemp } from '@/lib/utils';
 import type { WeatherDay, WeatherCache } from '@/types';
 
-function isStale(lastUpdated: string | null, days: { date: string }[]): boolean {
+function isStale(
+  lastUpdated: string | null,
+  days: { date: string }[],
+  cachedQuery: string | undefined,
+  currentLocation: string,
+): boolean {
   if (!lastUpdated) return true;
+  // Standort wurde geändert → sofort neu laden
+  if ((cachedQuery ?? '').trim().toLowerCase() !== currentLocation.trim().toLowerCase()) return true;
   // Älter als 6 Stunden → stale
   if (Date.now() - new Date(lastUpdated).getTime() > 6 * 60 * 60 * 1000) return true;
   // Kein einziges gecachtes Datum liegt heute oder in der Zukunft → stale
@@ -67,11 +74,11 @@ export async function GET(request: Request) {
 
     const [cached, settings] = await Promise.all([getWeatherCache(), getSettings()]);
 
-    if (!forceRefresh && !isStale(cached.lastUpdated, cached.days) && cached.days.length > 0) {
+    const location = settings.weather?.location || 'Luzern';
+
+    if (!forceRefresh && !isStale(cached.lastUpdated, cached.days, cached.rawQuery, location) && cached.days.length > 0) {
       return NextResponse.json(cached);
     }
-
-    const location = settings.weather?.location || 'Luzern';
     const geo = await geocode(location);
     if (!geo) return NextResponse.json(getFallbackWeather(location));
 
@@ -100,7 +107,7 @@ export async function GET(request: Request) {
       };
     });
 
-    const weatherData: WeatherCache = { lastUpdated: new Date().toISOString(), location: geo.name, days };
+    const weatherData: WeatherCache = { lastUpdated: new Date().toISOString(), location: geo.name, rawQuery: location, days };
     await saveWeatherCache(weatherData);
     return NextResponse.json(weatherData);
   } catch {

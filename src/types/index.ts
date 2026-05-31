@@ -123,6 +123,7 @@ export interface WeatherDay {
 export interface WeatherCache {
   lastUpdated: string | null;
   location: string;
+  rawQuery?: string;  // Ursprüngliche User-Eingabe für Location-Change-Detection
   days: WeatherDay[];
 }
 
