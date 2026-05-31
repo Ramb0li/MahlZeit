@@ -5053,7 +5053,7 @@
   {
     "id": "kds-01",
     "name": "Blitzschnelle Pizza-Brötchen",
-    "category": "Brot & Aufstrich",
+    "category": "Snacks",
     "timeMinutes": 35,
     "timeLabel": "mittel",
     "basePortions": 8,
@@ -5153,7 +5153,7 @@
   {
     "id": "kds-02",
     "name": "Hummus-Waffeln",
-    "category": "Frühstück",
+    "category": "Snacks",
     "timeMinutes": 40,
     "timeLabel": "mittel",
     "basePortions": 5,
@@ -5258,7 +5258,7 @@
   {
     "id": "kds-03",
     "name": "Tahin-Cracker",
-    "category": "Brot & Aufstrich",
+    "category": "Snacks",
     "timeMinutes": 25,
     "timeLabel": "mittel",
     "basePortions": 30,
@@ -5345,7 +5345,7 @@
   {
     "id": "kds-04",
     "name": "Bunte Gemüse-Muffins",
-    "category": "Sonstige",
+    "category": "Snacks",
     "timeMinutes": 55,
     "timeLabel": "aufwendig",
     "basePortions": 12,
@@ -5462,7 +5462,7 @@
   {
     "id": "kds-05",
     "name": "Herzhafte Haferkekse",
-    "category": "Sonstige",
+    "category": "Snacks",
     "timeMinutes": 27,
     "timeLabel": "mittel",
     "basePortions": 15,
@@ -5548,7 +5548,7 @@
   {
     "id": "kds-06",
     "name": "Herzhafte Linsen-Bällchen",
-    "category": "Sonstige",
+    "category": "Snacks",
     "timeMinutes": 50,
     "timeLabel": "aufwendig",
     "basePortions": 15,
@@ -5633,7 +5633,7 @@
   {
     "id": "kds-07",
     "name": "Karotten-Mais-Happen",
-    "category": "Sonstige",
+    "category": "Snacks",
     "timeMinutes": 35,
     "timeLabel": "mittel",
     "basePortions": 10,
@@ -5719,7 +5719,7 @@
   {
     "id": "kds-08",
     "name": "Blumenkohl-Puffer",
-    "category": "Sonstige",
+    "category": "Snacks",
     "timeMinutes": 40,
     "timeLabel": "mittel",
     "basePortions": 12,
@@ -5805,7 +5805,7 @@
   {
     "id": "kds-09",
     "name": "Gemüsebrötchen",
-    "category": "Brot & Aufstrich",
+    "category": "Snacks",
     "timeMinutes": 85,
     "timeLabel": "aufwendig",
     "basePortions": 8,
@@ -5904,7 +5904,7 @@
   {
     "id": "kds-10",
     "name": "Tomaten-Oregano-Cracker",
-    "category": "Brot & Aufstrich",
+    "category": "Snacks",
     "timeMinutes": 25,
     "timeLabel": "mittel",
     "basePortions": 30,
@@ -5990,7 +5990,7 @@
   {
     "id": "kds-11",
     "name": "Linsen-Knusperbrot",
-    "category": "Brot & Aufstrich",
+    "category": "Snacks",
     "timeMinutes": 65,
     "timeLabel": "aufwendig",
     "basePortions": 20,
@@ -6064,7 +6064,7 @@
   {
     "id": "kds-12",
     "name": "30-Minuten-Brötchen",
-    "category": "Brot & Aufstrich",
+    "category": "Snacks",
     "timeMinutes": 30,
     "timeLabel": "mittel",
     "basePortions": 8,
@@ -6156,7 +6156,7 @@
   {
     "id": "kds-13",
     "name": "Gesunde Vanille-Waffeln",
-    "category": "Frühstück",
+    "category": "Snacks",
     "timeMinutes": 25,
     "timeLabel": "mittel",
     "basePortions": 6,
@@ -6230,7 +6230,7 @@
   {
     "id": "kds-14",
     "name": "Eisen-Booster-Energyballs",
-    "category": "Süsses",
+    "category": "Snacks",
     "timeMinutes": 20,
     "timeLabel": "mittel",
     "basePortions": 20,
@@ -6280,7 +6280,7 @@
   {
     "id": "kds-15",
     "name": "Linsen-Mandel-Kekse",
-    "category": "Süsses",
+    "category": "Snacks",
     "timeMinutes": 70,
     "timeLabel": "aufwendig",
     "basePortions": 30,
@@ -6354,7 +6354,7 @@
   {
     "id": "kds-16",
     "name": "Karotten-Müsli-Riegel",
-    "category": "Süsses",
+    "category": "Snacks",
     "timeMinutes": 55,
     "timeLabel": "aufwendig",
     "basePortions": 8,
@@ -6428,7 +6428,7 @@
   {
     "id": "kds-17",
     "name": "Eisenreiche Aprikosen-Taler",
-    "category": "Süsses",
+    "category": "Snacks",
     "timeMinutes": 35,
     "timeLabel": "mittel",
     "basePortions": 15,
@@ -6502,7 +6502,7 @@
   {
     "id": "kds-18",
     "name": "Cashew-Zimt-Energyballs",
-    "category": "Süsses",
+    "category": "Snacks",
     "timeMinutes": 20,
     "timeLabel": "mittel",
     "basePortions": 15,
@@ -6563,7 +6563,7 @@
   {
     "id": "kds-19",
     "name": "Glücks-Hörnchen mit Vanille",
-    "category": "Süsses",
+    "category": "Snacks",
     "timeMinutes": 90,
     "timeLabel": "aufwendig",
     "basePortions": 8,
@@ -6632,7 +6632,7 @@
   {
     "id": "kds-20",
     "name": "Apfel-Zimt-Waffeln",
-    "category": "Frühstück",
+    "category": "Snacks",
     "timeMinutes": 30,
     "timeLabel": "mittel",
     "basePortions": 6,
@@ -6720,7 +6720,7 @@
   {
     "id": "kds-21",
     "name": "\"Nur-Gutes-drin\"-Muffins",
-    "category": "Süsses",
+    "category": "Snacks",
     "timeMinutes": 37,
     "timeLabel": "mittel",
     "basePortions": 12,

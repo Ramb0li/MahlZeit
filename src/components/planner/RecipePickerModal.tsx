@@ -7,7 +7,7 @@ import type { Recipe, Category, TimeLabel, DietType } from '@/types';
 const CATEGORIES: Category[] = [
   'Eier', 'Reis', 'Pasta', 'Eintopf/Gratin', 'Fisch',
   'Sonstige', 'Asiatisch', 'Ofen', 'Suppen', 'Salat/Bowl',
-  'Frühstück', 'Süsses', 'Brot & Aufstrich',
+  'Frühstück', 'Süsses', 'Brot & Aufstrich', 'Snacks',
 ];
 
 export const LEFTOVERS_ID = '__leftovers__';

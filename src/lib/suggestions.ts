@@ -94,9 +94,11 @@ export interface SuggestWeekOptions {
   flexitarisch?: boolean;  // max 1 Fleischgericht pro Wochenplan
 }
 
-// Fix #5: Categories that should never appear as dinner or lunch suggestions.
-const BREAKFAST_CATEGORIES = new Set(['Frühstück']);
-const SWEET_CATEGORIES     = new Set(['Süsses']);
+// Kategorien die nie als Menüplan-Vorschlag erscheinen sollen.
+const BREAKFAST_CATEGORIES  = new Set(['Frühstück']);
+const SWEET_CATEGORIES      = new Set(['Süsses']);
+// Snacks + Brote sind Beilagen/Extras, keine vollständigen Mahlzeiten.
+const EXCLUDED_CATEGORIES   = new Set(['Snacks', 'Brot & Aufstrich']);
 
 export function suggestWeek(
   recipes: Recipe[],
@@ -112,15 +114,20 @@ export function suggestWeek(
 
   // Breakfast: prefer Frühstück category; also allow quick lunch-suitable recipes
   const breakfastRecipes = recipes.filter(
-    (r) => BREAKFAST_CATEGORIES.has(r.category) || r.isSuitableForLunch
+    (r) => !EXCLUDED_CATEGORIES.has(r.category) &&
+           (BREAKFAST_CATEGORIES.has(r.category) || r.isSuitableForLunch)
   );
-  // Lunch: quick recipes, but NOT breakfast-only ones
+  // Lunch: quick recipes, but NOT breakfast-only or excluded ones
   const lunchRecipes = recipes.filter(
-    (r) => r.isSuitableForLunch && !BREAKFAST_CATEGORIES.has(r.category)
+    (r) => r.isSuitableForLunch &&
+           !BREAKFAST_CATEGORIES.has(r.category) &&
+           !EXCLUDED_CATEGORIES.has(r.category)
   );
-  // Dinner: exclude breakfast and sweets
+  // Dinner: exclude breakfast, sweets and non-meal categories
   const dinnerRecipes = recipes.filter(
-    (r) => !BREAKFAST_CATEGORIES.has(r.category) && !SWEET_CATEGORIES.has(r.category)
+    (r) => !BREAKFAST_CATEGORIES.has(r.category) &&
+           !SWEET_CATEGORIES.has(r.category) &&
+           !EXCLUDED_CATEGORIES.has(r.category)
   );
 
   for (let day = 1; day <= 7; day++) {

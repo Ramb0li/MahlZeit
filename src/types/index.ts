@@ -17,7 +17,8 @@ export type Category =
   | 'Salat/Bowl'
   | 'Frühstück'
   | 'Süsses'
-  | 'Brot & Aufstrich';
+  | 'Brot & Aufstrich'
+  | 'Snacks';
 
 export interface Ingredient {
   name: string;

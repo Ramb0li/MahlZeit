@@ -27,7 +27,7 @@ const DIET_CAT_TABS: { value: DietCategory | 'alle'; label: string }[] = [
 const CATEGORIES: Category[] = [
   'Eier', 'Reis', 'Pasta', 'Eintopf/Gratin', 'Fisch',
   'Sonstige', 'Asiatisch', 'Ofen', 'Suppen', 'Salat/Bowl',
-  'Frühstück', 'Süsses', 'Brot & Aufstrich',
+  'Frühstück', 'Süsses', 'Brot & Aufstrich', 'Snacks',
 ];
 
 // Chip helpers
@@ -80,6 +80,7 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
     'Frühstück':      { bg: '#fff8e1', color: '#f57f17' },
     'Süsses':         { bg: '#fce4ec', color: '#880e4f' },
     'Brot & Aufstrich': { bg: '#efebe9', color: '#4e342e' },
+    'Snacks':         { bg: '#f3e5f5', color: '#6a1b9a' },
   };
 
   // ─── filtered lists ───────────────────────────────────────────────────────
