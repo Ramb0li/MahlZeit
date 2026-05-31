@@ -5053,7 +5053,7 @@
   {
     "id": "kds-01",
     "name": "Blitzschnelle Pizza-Brötchen",
-    "category": "Snacks",
+    "category": "Brot & Aufstrich",
     "timeMinutes": 35,
     "timeLabel": "mittel",
     "basePortions": 8,
@@ -5258,7 +5258,7 @@
   {
     "id": "kds-03",
     "name": "Tahin-Cracker",
-    "category": "Snacks",
+    "category": "Brot & Aufstrich",
     "timeMinutes": 25,
     "timeLabel": "mittel",
     "basePortions": 30,
@@ -5805,7 +5805,7 @@
   {
     "id": "kds-09",
     "name": "Gemüsebrötchen",
-    "category": "Snacks",
+    "category": "Brot & Aufstrich",
     "timeMinutes": 85,
     "timeLabel": "aufwendig",
     "basePortions": 8,
@@ -5904,7 +5904,7 @@
   {
     "id": "kds-10",
     "name": "Tomaten-Oregano-Cracker",
-    "category": "Snacks",
+    "category": "Brot & Aufstrich",
     "timeMinutes": 25,
     "timeLabel": "mittel",
     "basePortions": 30,
@@ -5990,7 +5990,7 @@
   {
     "id": "kds-11",
     "name": "Linsen-Knusperbrot",
-    "category": "Snacks",
+    "category": "Brot & Aufstrich",
     "timeMinutes": 65,
     "timeLabel": "aufwendig",
     "basePortions": 20,
@@ -6064,7 +6064,7 @@
   {
     "id": "kds-12",
     "name": "30-Minuten-Brötchen",
-    "category": "Snacks",
+    "category": "Brot & Aufstrich",
     "timeMinutes": 30,
     "timeLabel": "mittel",
     "basePortions": 8,
