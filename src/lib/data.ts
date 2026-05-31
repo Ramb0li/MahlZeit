@@ -98,14 +98,16 @@ async function saveGroupCustomRecipes(groupId: string, recipes: Recipe[]): Promi
 }
 
 /**
- * Liefert alle für eine Gruppe sichtbaren Rezepte: Templates + custom.
- * Templates sind read-only — Bearbeitungen werden als custom-Kopie gespeichert.
+ * Liefert alle für eine Gruppe sichtbaren Rezepte: Templates + Gruppen-Overrides + neue Rezepte.
+ * Gruppen-Overrides (gleiche ID wie ein Template, aber geändert) ersetzen das Original.
  */
 export async function getRecipes(groupId?: string): Promise<Recipe[]> {
   const templates = await getTemplateRecipes();
   if (!groupId) return templates;
   const custom = await getGroupCustomRecipes(groupId);
-  return [...templates, ...custom];
+  // Gruppen-Rezepte mit Template-ID überschreiben das jeweilige Template
+  const overriddenIds = new Set(custom.map(r => r.id));
+  return [...templates.filter(t => !overriddenIds.has(t.id)), ...custom];
 }
 
 export async function saveRecipes(recipes: Recipe[], groupId?: string): Promise<void> {
@@ -114,11 +116,16 @@ export async function saveRecipes(recipes: Recipe[], groupId?: string): Promise<
     await saveTemplateRecipes(recipes);
     return;
   }
-  // Wir speichern nur die NICHT-Template Rezepte als group-custom.
-  const templates    = await getTemplateRecipes();
-  const templateIds  = new Set(templates.map(r => r.id));
-  const customOnly   = recipes.filter(r => !templateIds.has(r.id));
-  await saveGroupCustomRecipes(groupId, customOnly);
+  // Speichere: neue Rezepte (keine Template-ID) + geänderte Templates (Override).
+  // Unveränderte Templates werden weggelassen — sie kommen immer aus dem Seed.
+  const templates   = await getTemplateRecipes();
+  const templateMap = new Map(templates.map(t => [t.id, JSON.stringify(t)]));
+  const toSave = recipes.filter(r => {
+    const orig = templateMap.get(r.id);
+    if (!orig) return true;                    // neues eigenes Rezept
+    return JSON.stringify(r) !== orig;          // Template wurde geändert → Override
+  });
+  await saveGroupCustomRecipes(groupId, toSave);
 }
 
 // ─── Group-scoped Settings ───────────────────────────────────────────────────
