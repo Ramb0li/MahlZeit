@@ -1,9 +1,10 @@
 export const dynamic = 'force-dynamic';
 
-import { NextResponse }                  from 'next/server';
-import { getAllUsers, updateUser }       from '@/lib/users';
-import { createGroup, newGroupId }       from '@/lib/groups';
-import { getAppUrl }                     from '@/lib/email';
+import { NextResponse }                                           from 'next/server';
+import { getUserByConfirmationToken, deleteConfirmationTokenIndex,
+         updateUser }                                            from '@/lib/users';
+import { createGroup, newGroupId }                               from '@/lib/groups';
+import { getAppUrl }                                             from '@/lib/email';
 
 /**
  * GET /api/auth/confirm?token=XXX
@@ -25,8 +26,8 @@ export async function GET(request: Request) {
     return NextResponse.redirect(`${base}/auth?error=invalid_token`);
   }
 
-  const users = await getAllUsers();
-  const user  = users.find(u => u.confirmationToken === token);
+  // Fix #11: O(1) lookup via token index (Redis) instead of O(n) scan over all users.
+  const user = await getUserByConfirmationToken(token);
 
   if (!user) {
     return NextResponse.redirect(`${base}/auth?error=invalid_token`);
@@ -64,7 +65,10 @@ export async function GET(request: Request) {
     updated.groupRole = 'owner';
   }
 
-  await updateUser(updated);
+  await Promise.all([
+    updateUser(updated),
+    deleteConfirmationTokenIndex(token), // clean up the token index key
+  ]);
 
   return NextResponse.redirect(`${base}/auth?confirmed=1`);
 }

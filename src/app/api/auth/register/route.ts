@@ -3,7 +3,7 @@ export const dynamic = 'force-dynamic';
 import { NextResponse }                  from 'next/server';
 import { randomBytes }                   from 'crypto';
 import bcrypt                            from 'bcryptjs';
-import { createUser, getUserByEmail }    from '@/lib/users';
+import { createUser, getUserByEmail, setConfirmationTokenIndex } from '@/lib/users';
 import { sendConfirmationEmail }         from '@/lib/email';
 import type { PlanType, AppUser }        from '@/lib/users';
 
@@ -53,6 +53,8 @@ export async function POST(request: Request) {
     };
 
     await createUser(user);
+    // Fix #11: build token→email index for O(1) confirm lookup in production
+    await setConfirmationTokenIndex(token, user.email);
 
     // Bestätigungsmail senden (loggt nur lokal ohne RESEND_API_KEY)
     try {

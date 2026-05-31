@@ -114,6 +114,34 @@ export async function updateUser(user: AppUser): Promise<void> {
   ]);
 }
 
+// ─── Confirmation Token Index (Fix #11) ──────────────────────────────────────
+// In production: a dedicated Redis key per token avoids O(n) scan over all users.
+// In local dev:  linear scan over users.json (fine for development).
+
+const TOKEN_INDEX_TTL_SECS = 26 * 60 * 60; // 26h — outlives the 24h token TTL
+
+export async function setConfirmationTokenIndex(token: string, email: string): Promise<void> {
+  if (!USE_REDIS) return; // local dev: linear scan is fine
+  await getRedis().set(`mz:confirm:${token}`, email.toLowerCase(), { ex: TOKEN_INDEX_TTL_SECS });
+}
+
+export async function deleteConfirmationTokenIndex(token: string): Promise<void> {
+  if (!USE_REDIS) return;
+  await getRedis().del(`mz:confirm:${token}`);
+}
+
+export async function getUserByConfirmationToken(token: string): Promise<AppUser | null> {
+  if (!USE_REDIS) {
+    // Local dev: O(n) scan — acceptable for <100 users in dev
+    const all = await getAllUsers();
+    return all.find(u => u.confirmationToken === token) ?? null;
+  }
+  // Production: O(1) lookup via token index key
+  const email = await getRedis().get<string>(`mz:confirm:${token}`);
+  if (!email) return null;
+  return getUserByEmail(email);
+}
+
 export async function getUsersByGroup(groupId: string): Promise<AppUser[]> {
   const all = await getAllUsers();
   return all.filter(u => u.groupId === groupId);

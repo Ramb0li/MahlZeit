@@ -65,13 +65,22 @@ export async function POST(request: Request) {
 
     const passwordHash = await bcrypt.hash(password, 12);
 
+    // Fix #4: Inherit the owner's current plan instead of hardcoding 'lifetime'.
+    // NOTE: if the owner's plan changes later (e.g. abo cancelled), the member's
+    // stored plan becomes stale. A full solution would re-check on each login,
+    // but for this family-scale app the owner manages membership manually.
+    const owner       = await getUserByEmail(invite.invitedBy);
+    const memberPlan  = (owner?.plan === 'lifetime' || owner?.plan === 'abo')
+      ? owner.plan
+      : 'lifetime'; // fallback: owner deleted or plan unknown → keep access
+
     const user = {
       id:           `u_${Date.now()}_${Math.random().toString(36).slice(2, 7)}`,
       firstName,
       lastName,
       email:        invite.email,
       passwordHash,
-      plan:         'lifetime' as const,  // Members erben den Plan des Owners (effektiv 'lifetime' für Zugang)
+      plan:         memberPlan,
       status:       'active' as const,
       registeredAt: new Date().toISOString(),
       groupId:      invite.groupId,

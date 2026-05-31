@@ -17,7 +17,7 @@ export async function middleware(req: NextRequest) {
     return NextResponse.redirect(url);
   }
 
-  // /admin → only co@o-v-k.ch
+  // /admin → only ADMIN_EMAIL (info@o-v-k.ch)
   if (req.nextUrl.pathname.startsWith('/admin') && session.email !== ADMIN_EMAIL) {
     url.pathname = '/app';
     return NextResponse.redirect(url);

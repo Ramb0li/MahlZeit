@@ -101,7 +101,8 @@ export function isRecipeExcluded(
     const keywords = ALLERGEN_KEYWORDS[id] ?? [id];
     return keywords.some(kw => {
       if (matchesTerm(recipe.name, kw)) return true;
-      return recipe.ingredients.some(ing => matchesTerm(ing.name, kw));
+      // Fix #10: guard against legacy recipe objects where ing.name may be undefined
+      return recipe.ingredients.some(ing => matchesTerm(ing.name ?? '', kw));
     });
   });
 }

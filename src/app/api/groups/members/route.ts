@@ -16,7 +16,10 @@ export async function GET() {
 
     const members = await getUsersByGroup(session.groupId);
     // sensitive Felder filtern
-    const safe = members.map(({ passwordHash: _pw, confirmationToken: _c, ...rest }) => rest);
+    // Fix #6: also strip confirmationTokenExpiresAt — no reason to expose it to clients.
+    const safe = members.map(
+      ({ passwordHash: _pw, confirmationToken: _c, confirmationTokenExpiresAt: _exp, ...rest }) => rest
+    );
     return NextResponse.json(safe);
   } catch {
     return NextResponse.json({ error: 'Fehler' }, { status: 500 });

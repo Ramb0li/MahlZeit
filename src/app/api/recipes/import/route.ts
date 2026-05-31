@@ -158,6 +158,42 @@ ${text}`;
 
 const IMAGE_PROMPT_TEXT = `Du bist ein Rezept-Extraktor. Extrahiere alle Rezeptinformationen aus diesem Bild (Screenshot, Foto, Instagram-Post o.Ä.) in das vorgegebene Tool-Schema. Zubereitungsschritte sinngemäss auf Deutsch formulieren.`;
 
+// ─── SSRF guard ────────────────────────────────────────────────────────────
+
+/**
+ * Fix #2: Blocks SSRF by rejecting URLs that resolve to private/internal hosts.
+ * Prevents fetching http://localhost/..., 169.254.169.254 (cloud metadata), etc.
+ */
+function isSafeExternalUrl(raw: string): boolean {
+  let u: URL;
+  try { u = new URL(raw); } catch { return false; }
+
+  // Must be http or https
+  if (u.protocol !== 'http:' && u.protocol !== 'https:') return false;
+
+  const host = u.hostname.toLowerCase();
+
+  // Localhost variants
+  if (host === 'localhost' || host === '127.0.0.1' || host === '::1') return false;
+
+  // AWS/GCP/Azure instance metadata
+  if (host === '169.254.169.254' || host === 'metadata.google.internal') return false;
+
+  // Private IPv4 ranges
+  const ipv4 = host.match(/^(\d+)\.(\d+)\.(\d+)\.(\d+)$/);
+  if (ipv4) {
+    const [, a, b] = ipv4.map(Number);
+    if (a === 10) return false;                         // 10.0.0.0/8
+    if (a === 172 && b >= 16 && b <= 31) return false; // 172.16.0.0/12
+    if (a === 192 && b === 168) return false;           // 192.168.0.0/16
+  }
+
+  // Internal hostnames
+  if (host.endsWith('.local') || host.endsWith('.internal') || host.endsWith('.localhost')) return false;
+
+  return true;
+}
+
 // ─── Route ─────────────────────────────────────────────────────────────────
 
 export async function POST(request: Request) {
@@ -197,8 +233,8 @@ export async function POST(request: Request) {
     // ── URL import (free) ─────────────────────────────────────────────────
     if (body.url) {
       const url = body.url.trim();
-      if (!url.startsWith('http')) {
-        return NextResponse.json({ error: 'Ungültige URL' }, { status: 400 });
+      if (!isSafeExternalUrl(url)) {
+        return NextResponse.json({ error: 'Ungültige oder nicht erlaubte URL.' }, { status: 400 });
       }
 
       let html: string;

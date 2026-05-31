@@ -93,6 +93,10 @@ export interface SuggestWeekOptions {
   allergiesAndAversions?: string[];
 }
 
+// Fix #5: Categories that should never appear as dinner or lunch suggestions.
+const BREAKFAST_CATEGORIES = new Set(['Frühstück']);
+const SWEET_CATEGORIES     = new Set(['Süsses']);
+
 export function suggestWeek(
   recipes: Recipe[],
   constraints: DayConstraint[],
@@ -104,8 +108,18 @@ export function suggestWeek(
   const result: Record<number, { breakfast?: string; lunch?: string; dinner?: string }> = {};
   const usedIds: string[] = [];
 
-  // Recipes suitable for lunch/breakfast (quick, lunch-suitable)
-  const lunchRecipes = recipes.filter((r) => r.isSuitableForLunch);
+  // Breakfast: prefer Frühstück category; also allow quick lunch-suitable recipes
+  const breakfastRecipes = recipes.filter(
+    (r) => BREAKFAST_CATEGORIES.has(r.category) || r.isSuitableForLunch
+  );
+  // Lunch: quick recipes, but NOT breakfast-only ones
+  const lunchRecipes = recipes.filter(
+    (r) => r.isSuitableForLunch && !BREAKFAST_CATEGORIES.has(r.category)
+  );
+  // Dinner: exclude breakfast and sweets
+  const dinnerRecipes = recipes.filter(
+    (r) => !BREAKFAST_CATEGORIES.has(r.category) && !SWEET_CATEGORIES.has(r.category)
+  );
 
   for (let day = 1; day <= 7; day++) {
     const constraint = constraints.find((c) => c.dayOfWeek === day);
@@ -119,7 +133,7 @@ export function suggestWeek(
     result[day] = {};
 
     if (showDinner) {
-      const dinner = suggestRecipe(recipes, {
+      const dinner = suggestRecipe(dinnerRecipes, {
         weatherType, season, constraint, usedThisWeek: usedIds, allergiesAndAversions,
       });
       if (dinner) {
@@ -148,8 +162,8 @@ export function suggestWeek(
     }
 
     if (showBreakfast) {
-      const breakfast = suggestRecipe(lunchRecipes, {
-        season, usedThisWeek: usedIds, lunchOnly: true, allergiesAndAversions,
+      const breakfast = suggestRecipe(breakfastRecipes, {
+        season, usedThisWeek: usedIds, allergiesAndAversions,
       });
       if (breakfast) {
         result[day].breakfast = breakfast.id;

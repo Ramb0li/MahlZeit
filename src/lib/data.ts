@@ -65,10 +65,10 @@ const EMPTY_WEATHER:    WeatherCache    = { lastUpdated: null, location: '', day
 
 export async function getTemplateRecipes(): Promise<Recipe[]> {
   if (!USE_REDIS) return readJson<Recipe[]>('recipes.json', seedRecipes as Recipe[]);
-  const redis = getRedis();
-  const data  = await redis.get<Recipe[]>(K.recipesGlobal);
-  if (!data) { await redis.set(K.recipesGlobal, seedRecipes); return seedRecipes as Recipe[]; }
-  return data;
+  // Fix #1: In production always use the bundled seed — embedded at build time,
+  // guaranteed up-to-date after every deploy. Caching in Redis caused stale data
+  // whenever new template recipes were added (the old Redis value was returned).
+  return seedRecipes as Recipe[];
 }
 
 export async function saveTemplateRecipes(recipes: Recipe[]): Promise<void> {
@@ -142,7 +142,11 @@ export async function getSettings(groupId?: string): Promise<AppSettings> {
 }
 
 export async function saveSettings(settings: AppSettings, groupId?: string): Promise<void> {
-  if (!groupId) { writeJson('settings.json', settings); return; }
+  if (!groupId) {
+    // Fix #8: Only write local file in dev — Vercel has no writable filesystem.
+    if (!USE_REDIS) writeJson('settings.json', settings);
+    return;
+  }
   if (!USE_REDIS) {
     const all = readJson<Record<string, AppSettings>>('group-settings.json', {});
     all[groupId] = settings;

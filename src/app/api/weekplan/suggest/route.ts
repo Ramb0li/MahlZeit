@@ -54,7 +54,15 @@ export async function POST(request: Request) {
         [d.dinner?.recipeId, d.lunch?.recipeId].filter(Boolean) as string[]
       );
 
-      const suggestion = suggestRecipe(recipes, {
+      // Fix #5: Filter recipes by meal slot so Frühstück / Süsses stay out of dinner.
+      const mealFiltered =
+        mealType === 'breakfast'
+          ? recipes.filter((r) => r.category === 'Frühstück' || r.isSuitableForLunch)
+          : mealType === 'lunch'
+            ? recipes.filter((r) => r.isSuitableForLunch && r.category !== 'Frühstück')
+            : recipes.filter((r) => r.category !== 'Frühstück' && r.category !== 'Süsses');
+
+      const suggestion = suggestRecipe(mealFiltered, {
         weatherType,
         season,
         constraint,
@@ -74,7 +82,14 @@ export async function POST(request: Request) {
     });
 
     let plan = await getWeekPlan(weekId, groupId);
-    if (!plan) plan = { weekId, startDate: '', days: {} };
+    // Fix #12: derive startDate from weekId (format "YYYY-Www") to avoid empty string.
+    if (!plan) {
+      const [year, week] = weekId.split('-W').map(Number);
+      const jan4 = new Date(year, 0, 4); // ISO week 1 always contains Jan 4
+      const startMs = jan4.getTime() - (((jan4.getDay() + 6) % 7) - (week - 1) * 7) * 86400000;
+      const startDate = new Date(startMs).toISOString().slice(0, 10);
+      plan = { weekId, startDate, days: {} };
+    }
 
     for (const [dayStr, meals] of Object.entries(suggestions)) {
       const day = parseInt(dayStr);
