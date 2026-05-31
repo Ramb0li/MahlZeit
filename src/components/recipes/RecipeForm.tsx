@@ -42,7 +42,7 @@ export function RecipeForm({ recipe, onSave, onCancel }: RecipeFormProps) {
   const [dietType, setDietType]               = useState<DietType | 'alle'>(recipe?.dietType ?? 'alle');
   const [isMealprep, setIsMealprep]           = useState(recipe?.isMealprep ?? false);
   const [isSuitableForLunch, setIsSuitableForLunch] = useState(recipe?.isSuitableForLunch ?? false);
-  const [source, setSource]                   = useState(recipe?.source ?? 'eigenes Rezept');
+  const [source, setSource]                   = useState(recipe?.source ?? 'Rezept von Cuiselin');
   const [basePortions, setBasePortions]       = useState(recipe?.basePortions ?? 4);
   const [description, setDescription]         = useState(recipe?.description ?? '');
   const [stepsText, setStepsText]             = useState((recipe?.steps ?? []).join('\n'));
@@ -224,12 +224,14 @@ export function RecipeForm({ recipe, onSave, onCancel }: RecipeFormProps) {
         {/* Ernährungsweise */}
         <div className="sm:col-span-2">
           <label style={labelStyle}>Ernährungsweise</label>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+          <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-6 gap-2">
             {([
-              { value: 'alle',         label: '🍽 Alle Rezepte' },
-              { value: 'pescetarisch', label: '🐟 Pescetarisch' },
-              { value: 'vegetarisch',  label: '🥗 Vegetarisch' },
-              { value: 'vegan',        label: '🌿 Vegan' },
+              { value: 'alle',          label: '🍽 Alle Rezepte' },
+              { value: 'fleischhaltig', label: '🥩 Fleischhaltig' },
+              { value: 'flexitarisch',  label: '🌾 Flexitarisch' },
+              { value: 'pescetarisch',  label: '🐟 Pescetarisch' },
+              { value: 'vegetarisch',   label: '🥗 Vegetarisch' },
+              { value: 'vegan',         label: '🌿 Vegan' },
             ] as { value: DietType | 'alle'; label: string }[]).map(({ value, label }) => (
               <button
                 key={value}

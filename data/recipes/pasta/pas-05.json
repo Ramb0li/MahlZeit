@@ -42,7 +42,7 @@
   "weatherType": "neutral",
   "isMealprep": false,
   "isSuitableForLunch": true,
-  "source": "eigenes Rezept",
+  "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Klassische Tomatensauce – simpel und gut.",
   "steps": [],

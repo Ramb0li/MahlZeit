@@ -43,7 +43,7 @@
   "weatherType": "kalt",
   "isMealprep": true,
   "isSuitableForLunch": true,
-  "source": "eigenes Rezept",
+  "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Samtweiche Suppe mit exotischer Note.",
   "steps": [],

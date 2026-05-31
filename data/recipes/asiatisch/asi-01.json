@@ -55,7 +55,7 @@
   "weatherType": "warm",
   "isMealprep": false,
   "isSuitableForLunch": true,
-  "source": "eigenes Rezept",
+  "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Klassisches Thai-Nudelgericht.",
   "steps": [],

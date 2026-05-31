@@ -48,7 +48,7 @@
   "weatherType": "kalt",
   "isMealprep": true,
   "isSuitableForLunch": false,
-  "source": "eigenes Rezept",
+  "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Risotto mit karamellisiertem Ofengemüse.",
   "steps": [],

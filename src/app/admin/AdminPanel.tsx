@@ -4,6 +4,7 @@ import { useState, useMemo } from 'react';
 import { useRouter }         from 'next/navigation';
 import Link                  from 'next/link';
 import { RecipeForm }        from '@/components/recipes/RecipeForm';
+import { ImportRecipeModal } from '@/components/recipes/ImportRecipeModal';
 import type { AppUser }      from '@/lib/users';
 import type { Group }        from '@/lib/groups';
 import type { Recipe, Category } from '@/types';
@@ -66,6 +67,7 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
   const [recipeSaving,   setRecipeSaving]   = useState(false);
   const [recipeNotice,   setRecipeNotice]   = useState<{ type: 'ok'|'err'; text: string } | null>(null);
   const [deleteRecipeId, setDeleteRecipeId] = useState<string | null>(null);
+  const [showImportModal, setShowImportModal] = useState(false);
 
   const filteredRecipes = useMemo(() => recipes.filter(r => {
     if (recipeCatFilter !== 'Alle' && r.category !== recipeCatFilter) return false;
@@ -405,6 +407,13 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                 {recipeCategories.map(c => <option key={c} value={c}>{c}</option>)}
               </select>
               <button
+                onClick={() => setShowImportModal(true)}
+                className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold"
+                style={{ backgroundColor: '#efe9df', color: '#5a4e48', border: '1px solid #e0d8ce' }}
+              >
+                ↓ Importieren
+              </button>
+              <button
                 onClick={() => setEditingRecipe('new')}
                 className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold"
                 style={{ backgroundColor: '#4a7a4e', color: '#fff' }}
@@ -474,6 +483,17 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                 </tbody>
               </table>
             </div>
+
+            {showImportModal && (
+              <ImportRecipeModal
+                isPremium={true}
+                onClose={() => setShowImportModal(false)}
+                onImported={(recipe) => {
+                  setShowImportModal(false);
+                  setEditingRecipe(recipe);
+                }}
+              />
+            )}
           </div>
         )}
 
