@@ -1,0 +1,74 @@
+{
+  "id": "kds-16",
+  "name": "Karotten-Müsli-Riegel",
+  "category": "Süsses",
+  "timeMinutes": 55,
+  "timeLabel": "aufwendig",
+  "basePortions": 8,
+  "ingredients": [
+    {
+      "name": "Haferflocken Feinblatt",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 8
+    },
+    {
+      "name": "Hirseflocken",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 8
+    },
+    {
+      "name": "Zimt",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 8
+    },
+    {
+      "name": "Rosinen",
+      "amount": 25,
+      "unit": "g",
+      "perPortions": 8
+    },
+    {
+      "name": "Apfelmark",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 8
+    },
+    {
+      "name": "Sojadrink",
+      "amount": 100,
+      "unit": "ml",
+      "perPortions": 8
+    },
+    {
+      "name": "Mandelmus",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 8
+    },
+    {
+      "name": "Karotte (fein gerieben)",
+      "amount": 60,
+      "unit": "g",
+      "perPortions": 8
+    }
+  ],
+  "season": [
+    "ganzjährig"
+  ],
+  "weatherType": "neutral",
+  "isMealprep": true,
+  "isSuitableForLunch": false,
+  "dietCategory": "vegan",
+  "source": "LittleFant – Kindersnacks für jeden Tag",
+  "description": "Nährstoffreiche Müsliriegel mit Hafer, Hirse, Karotte und natürlicher Apfelsüße – ohne Industriezucker.",
+  "steps": [
+    "Haferflocken zu Mehl mahlen, mit Hirseflocken und Zimt mischen. Rosinen hacken und zugeben.",
+    "Apfelmark, Sojadrink und Mandelmus verrühren, mit Karotte zu Trockenzutaten geben, 20 Minuten quellen lassen.",
+    "Bei 190 °C (Ober-/Unterhitze) ca. 20 Minuten backen. Noch warm in 8 Riegel schneiden."
+  ],
+  "tips": "Im Kühlschrank ca. 5 Tage haltbar.",
+  "imageUrl": null
+}

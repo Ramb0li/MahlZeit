@@ -22,9 +22,11 @@ function compatibleDiets(pref: DietType | 'alle' | undefined): DietType[] | null
 }
 
 const DIET_BADGE: Record<DietType, { label: string; bg: string; color: string }> = {
-  vegan:        { label: '🌿', bg: '#f5ece0', color: '#c49a6c' },
-  vegetarisch:  { label: '🥗', bg: '#f2e5e0', color: '#b5614a' },
-  pescetarisch: { label: '🐟', bg: '#e8dfd3', color: '#5a4e48' },
+  vegan:          { label: '🌿', bg: '#f5ece0', color: '#c49a6c' },
+  vegetarisch:    { label: '🥗', bg: '#f2e5e0', color: '#b5614a' },
+  pescetarisch:   { label: '🐟', bg: '#e8dfd3', color: '#5a4e48' },
+  fleischhaltig:  { label: '🥩', bg: '#fce4ec', color: '#c62828' },
+  flexitarisch:   { label: '🌾', bg: '#fff3e0', color: '#e65100' },
 };
 
 // Chip style helpers

@@ -1,0 +1,88 @@
+{
+  "id": "kds-20",
+  "name": "Apfel-Zimt-Waffeln",
+  "category": "Frühstück",
+  "timeMinutes": 30,
+  "timeLabel": "mittel",
+  "basePortions": 6,
+  "ingredients": [
+    {
+      "name": "Haferflocken",
+      "amount": 60,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Apfel (gerieben)",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 6
+    },
+    {
+      "name": "Apfelmark",
+      "amount": 120,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Dinkelmehl Type 630",
+      "amount": 70,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Dinkelvollkornmehl",
+      "amount": 70,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Sojajoghurt",
+      "amount": 180,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Sojadrink",
+      "amount": 180,
+      "unit": "ml",
+      "perPortions": 6
+    },
+    {
+      "name": "Mandelmus",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 6
+    },
+    {
+      "name": "Backpulver",
+      "amount": 1.5,
+      "unit": "TL",
+      "perPortions": 6
+    },
+    {
+      "name": "Zimt",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 6
+    }
+  ],
+  "season": [
+    "Herbst",
+    "Winter",
+    "ganzjährig"
+  ],
+  "weatherType": "kalt",
+  "isMealprep": true,
+  "isSuitableForLunch": false,
+  "dietCategory": "vegan",
+  "source": "LittleFant – Kindersnacks für jeden Tag",
+  "description": "Saftige Waffeln mit frischem Apfel und Zimt – eisenreich dank Haferflocken und Vollkornmehl.",
+  "steps": [
+    "Haferflocken zu Mehl mahlen. Apfel fein reiben.",
+    "Alle Zutaten zu einem homogenen Teig verrühren.",
+    "Im gefetteten Waffeleisen goldbraune Waffeln ausbacken."
+  ],
+  "tips": "Vor dem ersten Geburtstag keinen Ahornsirup verwenden. Im Toaster frisch aufbacken.",
+  "imageUrl": null
+}

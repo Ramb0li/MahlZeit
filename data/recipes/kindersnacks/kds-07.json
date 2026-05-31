@@ -1,0 +1,86 @@
+{
+  "id": "kds-07",
+  "name": "Karotten-Mais-Happen",
+  "category": "Sonstige",
+  "timeMinutes": 35,
+  "timeLabel": "mittel",
+  "basePortions": 10,
+  "ingredients": [
+    {
+      "name": "Haferflocken",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 10
+    },
+    {
+      "name": "Polenta (Maisgrieß)",
+      "amount": 75,
+      "unit": "g",
+      "perPortions": 10
+    },
+    {
+      "name": "Maisstärke",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 10
+    },
+    {
+      "name": "Backpulver",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 10
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 10
+    },
+    {
+      "name": "Thymian",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 10
+    },
+    {
+      "name": "Schalotte",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 10
+    },
+    {
+      "name": "Sojajoghurt",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 10
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 10
+    },
+    {
+      "name": "Karotte (fein gerieben)",
+      "amount": 75,
+      "unit": "g",
+      "perPortions": 10
+    }
+  ],
+  "season": [
+    "ganzjährig"
+  ],
+  "weatherType": "neutral",
+  "isMealprep": true,
+  "isSuitableForLunch": false,
+  "dietCategory": "vegan",
+  "source": "LittleFant – Kindersnacks für jeden Tag",
+  "description": "Goldbraune Maistaler mit Karotte und Sojajoghurt – saftig innen, leicht knusprig außen.",
+  "steps": [
+    "Haferflocken zu Mehl mahlen, mit trockenen Zutaten mischen.",
+    "Schalotte mit Sojajoghurt und Olivenöl pürieren, mit geriebener Karotte zu den Trockenzutaten geben und 5 Minuten quellen lassen.",
+    "Zu Kugeln formen, platt drücken. Bei 230 °C (Ober-/Unterhitze) 15–20 Minuten backen."
+  ],
+  "tips": "Bis zu 60 g Hülsenfrüchte-Reste mit Sojajoghurt pürieren für Extra-Eiweiß.",
+  "imageUrl": null
+}

@@ -1,12 +1,13 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
-import { CalendarDays, BookOpen, ShoppingCart, Settings, Users } from 'lucide-react';
+import { CalendarDays, BookOpen, ShoppingCart, Settings, Users, LogOut } from 'lucide-react';
 import { WeekPlanner } from '@/components/planner/WeekPlanner';
 import { RecipeList } from '@/components/recipes/RecipeList';
 import { ShoppingListView } from '@/components/shopping/ShoppingListView';
 import { SettingsView } from '@/components/settings/SettingsView';
 import { GroupNameOnboarding } from '@/components/groups/GroupNameOnboarding';
+import { OnboardingWizard } from '@/components/groups/OnboardingWizard';
 import { getTheme } from '@/lib/themes';
 import type { Recipe, AppSettings, DayConstraint } from '@/types';
 import type { Group, GroupRole } from '@/lib/groups';
@@ -32,6 +33,11 @@ interface AppShellProps {
   groupRole?: GroupRole;
 }
 
+async function handleLogout() {
+  await fetch('/api/auth/logout', { method: 'POST' });
+  window.location.href = '/auth';
+}
+
 export function AppShell({
   recipes: initialRecipes,
   settings: initialSettings,
@@ -49,7 +55,9 @@ export function AppShell({
   const [group, setGroup]             = useState<Group | null>(initialGroup);
 
   const theme = getTheme(settings.theme);
-  const showOnboarding = group && !group.nameSet && groupRole === 'owner';
+  // Onboarding-Wizard nur für echte Erstregistrierungen (nameSet === false).
+  // NICHT bei onboardingDone-Check, da bestehende User das Feld nicht haben → Regression.
+  const showFullOnboarding = group && groupRole === 'owner' && !group.nameSet;
 
   return (
     <div
@@ -117,6 +125,16 @@ export function AppShell({
                 ★ Admin
               </Link>
             )}
+            {/* Abmelden – Phase 6 */}
+            <button
+              onClick={handleLogout}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold transition-opacity hover:opacity-70"
+              style={{ border: `1px solid ${theme.borderColor}`, color: theme.pageSubtext }}
+              title="Abmelden"
+            >
+              <LogOut size={14} />
+              Abmelden
+            </button>
           </div>
         </div>
       </header>
@@ -193,14 +211,27 @@ export function AppShell({
               {label}
             </button>
           ))}
+          {/* Mobile Logout */}
+          <button
+            onClick={handleLogout}
+            className="flex-1 flex flex-col items-center gap-1 py-3 text-[10px] font-semibold transition-colors"
+            style={{ color: theme.pageSubtext }}
+          >
+            <LogOut size={20} />
+            Abmelden
+          </button>
         </div>
       </nav>
 
-      {/* First-Login Onboarding Modal — blocking */}
-      {showOnboarding && group && (
-        <GroupNameOnboarding
-          currentName={group.name}
-          onSaved={(updated) => setGroup(updated)}
+      {/* Onboarding-Wizard — nur für Erstregistrierungen (group.nameSet === false) */}
+      {showFullOnboarding && group && (
+        <OnboardingWizard
+          currentGroupName={group.name}
+          currentSettings={settings}
+          onComplete={(updatedGroup, updatedSettings) => {
+            setGroup(updatedGroup);
+            setSettings(updatedSettings);
+          }}
         />
       )}
     </div>

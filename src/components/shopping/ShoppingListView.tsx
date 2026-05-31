@@ -2,7 +2,28 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { Check, Download, RefreshCw, Tag, Plus, Trash2, RotateCcw, X, ChevronDown, ChevronUp } from 'lucide-react';
 import { getWeekId, nextWeek, formatAmount } from '@/lib/utils';
-import type { ShoppingList } from '@/types';
+import type { ShoppingList, ShoppingGroups } from '@/types';
+
+const DAY_LABELS_SHORT = ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'];
+const GROUP_COLORS = [
+  { bg: '#e8f2e8', border: '#4a7a4e', text: '#2e5a32' },
+  { bg: '#e3f2fd', border: '#1565c0', text: '#0d47a1' },
+  { bg: '#fce4ec', border: '#c62828', text: '#b71c1c' },
+  { bg: '#fff3e0', border: '#e65100', text: '#bf360c' },
+  { bg: '#f3e5f5', border: '#6a1b9a', text: '#4a148c' },
+  { bg: '#e0f2f1', border: '#00695c', text: '#004d40' },
+  { bg: '#fafafa', border: '#424242', text: '#212121' },
+];
+
+/** Listenname z.B. "KW23.Mo-So" oder "KW23.Mo-Mi" */
+function buildListLabel(weekId: string, dayIndices: number[]): string {
+  const kw = weekId.split('-W')[1] ?? '';
+  if (!dayIndices.length) return `KW${kw}`;
+  const sorted = [...dayIndices].sort((a, b) => a - b);
+  const first = DAY_LABELS_SHORT[(sorted[0] ?? 1) - 1] ?? '';
+  const last  = DAY_LABELS_SHORT[(sorted[sorted.length - 1] ?? 7) - 1] ?? '';
+  return first === last ? `KW${kw}.${first}` : `KW${kw}.${first}-${last}`;
+}
 
 // ─── Kategorien ───────────────────────────────────────────────────────────────
 
@@ -47,6 +68,10 @@ export function ShoppingListView() {
   const [list, setList]       = useState<ShoppingList>({});
   const [loading, setLoading] = useState(true);
 
+  // Phase 4: Mehrfach-Listen
+  const [groups, setGroups]           = useState<ShoppingGroups>([{ id: 'sg-1', dayIndices: [1,2,3,4,5,6,7] }]);
+  const [activeGroupIdx, setActiveGroupIdx] = useState<number | null>(null); // null = alle
+
   const [checked, setChecked] = useState<Set<string>>(new Set());
   const [deleted, setDeleted] = useState<string[]>(() => readLS(`mz-del-${weekId}`, [] as string[]));
   const [overrides, setOverrides] = useState<Record<string, number>>(() => readLS(`mz-ov-${weekId}`, {}));
@@ -67,12 +92,13 @@ export function ShoppingListView() {
   useEffect(() => { if (editKey) editRef.current?.focus(); }, [editKey]);
   useEffect(() => { if (showAdd) nameInputRef.current?.focus(); }, [showAdd]);
 
-  const loadList = useCallback(async () => {
+  const loadList = useCallback(async (dayIndices?: number[]) => {
     setLoading(true);
     try {
-      const res  = await fetch(`/api/shopping-list?weekId=${weekId}`);
+      const params = new URLSearchParams({ weekId });
+      if (dayIndices?.length) params.set('dayIndices', dayIndices.join(','));
+      const res  = await fetch(`/api/shopping-list?${params}`);
       const data = await res.json();
-      // API-Fehler-Response (z.B. { error: '...' }) → leere Liste statt Crash
       if (!res.ok || (data && typeof data === 'object' && 'error' in data)) {
         setList({});
       } else {
@@ -81,7 +107,32 @@ export function ShoppingListView() {
     } finally { setLoading(false); }
   }, [weekId]);
 
-  useEffect(() => { loadList(); }, [loadList]);
+  const loadGroupsMeta = useCallback(async () => {
+    try {
+      const res = await fetch(`/api/shopping-list?weekId=${weekId}&meta=1`);
+      if (res.ok) {
+        const data = await res.json();
+        if (data.groups) setGroups(data.groups);
+      }
+    } catch {}
+  }, [weekId]);
+
+  useEffect(() => {
+    // Bei Wochenwechsel aktive Gruppe zurücksetzen (Gruppen-Struktur kann sich unterscheiden)
+    setActiveGroupIdx(null);
+    loadGroupsMeta();
+    loadList();
+  }, [loadList, loadGroupsMeta]);
+
+  const handleSelectGroup = (idx: number | null) => {
+    setActiveGroupIdx(idx);
+    if (idx === null) {
+      loadList();
+    } else {
+      const g = groups[idx];
+      if (g) loadList(g.dayIndices);
+    }
+  };
 
   const toggleChecked = (key: string) =>
     setChecked(prev => { const n = new Set(prev); n.has(key) ? n.delete(key) : n.add(key); return n; });
@@ -278,6 +329,48 @@ export function ShoppingListView() {
   return (
     <div className="max-w-2xl space-y-4">
 
+      {/* Einkaufslisten-Übersicht (Phase 4) */}
+      {groups.length > 1 && (
+        <div className="rounded-2xl overflow-hidden border" style={{ borderColor: '#e0d8ce', backgroundColor: '#fff9f3' }}>
+          <div className="px-4 py-3 border-b" style={{ borderColor: '#f0ebe3' }}>
+            <p className="text-xs font-semibold uppercase tracking-wider" style={{ color: '#9c8c84' }}>
+              Einkaufslisten dieser Woche
+            </p>
+          </div>
+          <div className="flex flex-wrap gap-2 p-3">
+            {/* "Alle" Button */}
+            <button
+              onClick={() => handleSelectGroup(null)}
+              className="flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-semibold border-2 transition-all"
+              style={activeGroupIdx === null
+                ? { borderColor: '#2c2420', backgroundColor: '#2c2420', color: '#fff' }
+                : { borderColor: '#e0d8ce', color: '#5a4e48' }
+              }
+            >
+              Alle
+            </button>
+            {groups.map((g, gi) => {
+              const colors = GROUP_COLORS[gi % GROUP_COLORS.length];
+              const label = buildListLabel(weekId, g.dayIndices);
+              return (
+                <button
+                  key={g.id}
+                  onClick={() => handleSelectGroup(gi)}
+                  className="flex flex-col items-start px-3 py-2 rounded-xl text-xs border-2 transition-all"
+                  style={activeGroupIdx === gi
+                    ? { borderColor: colors.border, backgroundColor: colors.border, color: '#fff' }
+                    : { borderColor: colors.border, backgroundColor: colors.bg, color: colors.text }
+                  }
+                >
+                  <span className="font-semibold">Einkaufsliste {gi + 1}</span>
+                  <span className="opacity-75">{label}</span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
@@ -298,7 +391,10 @@ export function ShoppingListView() {
         </div>
         <div className="flex gap-2">
           <button
-            onClick={loadList}
+            onClick={() => {
+              const g = activeGroupIdx !== null ? groups[activeGroupIdx] : undefined;
+              loadList(g?.dayIndices);
+            }}
             className="flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-medium transition-all"
             style={{ border: '1px solid #e0d8ce', color: '#5a4e48', backgroundColor: '#fff9f3' }}
             onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#f7f4ee')}

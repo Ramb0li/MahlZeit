@@ -1,0 +1,74 @@
+{
+  "id": "kds-15",
+  "name": "Linsen-Mandel-Kekse",
+  "category": "Süsses",
+  "timeMinutes": 70,
+  "timeLabel": "aufwendig",
+  "basePortions": 30,
+  "ingredients": [
+    {
+      "name": "Rote Linsen (trocken)",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 30
+    },
+    {
+      "name": "Datteln",
+      "amount": 75,
+      "unit": "g",
+      "perPortions": 30
+    },
+    {
+      "name": "Mandelmus",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 30
+    },
+    {
+      "name": "Rapsöl",
+      "amount": 80,
+      "unit": "ml",
+      "perPortions": 30
+    },
+    {
+      "name": "Wasser",
+      "amount": 30,
+      "unit": "ml",
+      "perPortions": 30
+    },
+    {
+      "name": "Dinkelvollkornmehl",
+      "amount": 225,
+      "unit": "g",
+      "perPortions": 30
+    },
+    {
+      "name": "Backpulver",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 30
+    },
+    {
+      "name": "Bourbon-Vanille (gemahlen)",
+      "amount": 1,
+      "unit": "Msp",
+      "perPortions": 30
+    }
+  ],
+  "season": [
+    "ganzjährig"
+  ],
+  "weatherType": "neutral",
+  "isMealprep": true,
+  "isSuitableForLunch": false,
+  "dietCategory": "vegan",
+  "source": "LittleFant – Kindersnacks für jeden Tag",
+  "description": "Eisenreiche Kekse mit roten Linsen und Datteln – man sieht die Linsen nicht, aber sie liefern Eisen.",
+  "steps": [
+    "Linsen 2+ Stunden einweichen, 5 Minuten kochen, abdampfen. Datteln einweichen, mit Linsen, Mandelmus, Öl und Wasser pürieren.",
+    "Mehl, Backpulver und Vanille mischen, Linsen-Dattel-Paste zugeben und zu Teig kneten.",
+    "30 Minuten im Kühlschrank ruhen. Dünn ausrollen, in Rauten schneiden. Bei 200 °C 12–15 Minuten backen."
+  ],
+  "tips": "",
+  "imageUrl": null
+}

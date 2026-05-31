@@ -5,9 +5,13 @@ import { getWeatherCache, saveWeatherCache, getSettings } from '@/lib/data';
 import { getWeatherTypeFromTemp } from '@/lib/utils';
 import type { WeatherDay, WeatherCache } from '@/types';
 
-function isStale(lastUpdated: string | null): boolean {
+function isStale(lastUpdated: string | null, days: { date: string }[]): boolean {
   if (!lastUpdated) return true;
-  return Date.now() - new Date(lastUpdated).getTime() > 6 * 60 * 60 * 1000;
+  // Älter als 6 Stunden → stale
+  if (Date.now() - new Date(lastUpdated).getTime() > 6 * 60 * 60 * 1000) return true;
+  // Kein einziges gecachtes Datum liegt heute oder in der Zukunft → stale
+  const today = new Date().toISOString().split('T')[0];
+  return !days.some((d) => d.date >= today);
 }
 
 async function geocode(location: string): Promise<{ lat: number; lon: number; name: string } | null> {
@@ -40,7 +44,7 @@ function getFallbackWeather(location: string): WeatherCache {
   const today = new Date();
   const month = today.getMonth() + 1;
   const baseTemp = month <= 2 || month === 12 ? 4 : month <= 4 ? 12 : month <= 8 ? 22 : 14;
-  const days: WeatherDay[] = Array.from({ length: 7 }, (_, i) => {
+  const days: WeatherDay[] = Array.from({ length: 14 }, (_, i) => {
     const d = new Date(today);
     d.setDate(d.getDate() + i);
     const tempMax = baseTemp + Math.floor(Math.random() * 5);
@@ -63,7 +67,7 @@ export async function GET(request: Request) {
 
     const [cached, settings] = await Promise.all([getWeatherCache(), getSettings()]);
 
-    if (!forceRefresh && !isStale(cached.lastUpdated) && cached.days.length > 0) {
+    if (!forceRefresh && !isStale(cached.lastUpdated, cached.days) && cached.days.length > 0) {
       return NextResponse.json(cached);
     }
 
@@ -71,7 +75,8 @@ export async function GET(request: Request) {
     const geo = await geocode(location);
     if (!geo) return NextResponse.json(getFallbackWeather(location));
 
-    const url = `https://api.open-meteo.com/v1/forecast?latitude=${geo.lat}&longitude=${geo.lon}&daily=temperature_2m_max,temperature_2m_min,weathercode&timezone=Europe%2FBerlin&forecast_days=7`;
+    // 14 Tage abrufen: deckt aktuelle Woche + nächste Woche ab
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${geo.lat}&longitude=${geo.lon}&daily=temperature_2m_max,temperature_2m_min,weathercode&timezone=Europe%2FBerlin&forecast_days=14`;
     const resp = await fetch(url);
     if (!resp.ok) return NextResponse.json(getFallbackWeather(location));
 
@@ -84,7 +89,7 @@ export async function GET(request: Request) {
     const tempMinArr = (daily.temperature_2m_min as number[]) ?? [];
     const wmoCodes  = (daily.weathercode         as number[]) ?? [];
 
-    const days: WeatherDay[] = dates.slice(0, 7).map((date, i) => {
+    const days: WeatherDay[] = dates.slice(0, 14).map((date, i) => {
       const tempMax = tempMaxArr[i] ?? 15;
       const tempMin = tempMinArr[i] ?? 10;
       const { condition, conditionLabel } = wmoToCondition(wmoCodes[i] ?? 0);

@@ -2,7 +2,7 @@ export const dynamic = 'force-dynamic';
 
 import { NextResponse } from 'next/server';
 import { getSessionWithGroup as getSession } from '@/lib/session';
-import { getWeekPlan, getRecipes, getSettings, getPromotions } from '@/lib/data';
+import { getWeekPlan, getRecipes, getSettings, getPromotions, getShoppingGroups } from '@/lib/data';
 import { calculatePortions, scaleIngredientAmount, categorizeIngredient } from '@/lib/utils';
 import type { ShoppingItem, ShoppingList, Promotion } from '@/types';
 
@@ -16,12 +16,26 @@ export async function GET(request: Request) {
     const weekId = searchParams.get('weekId');
     if (!weekId) return NextResponse.json({ error: 'weekId fehlt' }, { status: 400 });
 
-    const [plan, recipes, settings, promoData] = await Promise.all([
+    // Optionaler dayIndices-Filter für Mehrfach-Listen (Phase 4)
+    const dayIndicesParam = searchParams.get('dayIndices');
+    const dayIndicesFilter: number[] | null = dayIndicesParam
+      ? dayIndicesParam.split(',').map(Number).filter(n => n >= 1 && n <= 7)
+      : null;
+
+    // Optionaler groups-Modus: gibt Gruppen-Metadaten zurück statt Liste
+    const groupsMeta = searchParams.get('meta') === '1';
+
+    const [plan, recipes, settings, promoData, shoppingGroups] = await Promise.all([
       getWeekPlan(weekId, session.groupId),
       getRecipes(session.groupId),
       getSettings(session.groupId),
       getPromotions(),
+      getShoppingGroups(weekId, session.groupId),
     ]);
+
+    if (groupsMeta) {
+      return NextResponse.json({ groups: shoppingGroups, weekId });
+    }
 
     if (!plan) return NextResponse.json({});
 
@@ -64,7 +78,11 @@ export async function GET(request: Request) {
       }
     };
 
-    for (const [, dayPlan] of Object.entries(plan.days)) {
+    for (const [dayStr, dayPlan] of Object.entries(plan.days)) {
+      const dayIndex = parseInt(dayStr);
+      // Tages-Filter für Mehrfach-Listen
+      if (dayIndicesFilter && !dayIndicesFilter.includes(dayIndex)) continue;
+
       if (showDinner && dayPlan.dinner) {
         addSlotIngredients(dayPlan.dinner, dayPlan.dinner.recipeId);
         addSlotIngredients(dayPlan.dinner, dayPlan.dinner.sideRecipeId);

@@ -1,0 +1,85 @@
+{
+  "id": "kds-06",
+  "name": "Herzhafte Linsen-Bällchen",
+  "category": "Sonstige",
+  "timeMinutes": 50,
+  "timeLabel": "aufwendig",
+  "basePortions": 15,
+  "ingredients": [
+    {
+      "name": "Braune Linsen (trocken)",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 15
+    },
+    {
+      "name": "Getrocknete Aprikosen",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 15
+    },
+    {
+      "name": "Petersilie",
+      "amount": 10,
+      "unit": "g",
+      "perPortions": 15
+    },
+    {
+      "name": "Haferflocken",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 15
+    },
+    {
+      "name": "Kichererbsenmehl",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 15
+    },
+    {
+      "name": "Hefeflocken",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 15
+    },
+    {
+      "name": "Tomatenmark",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 15
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 15
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 15
+    },
+    {
+      "name": "Rosmarin",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 15
+    }
+  ],
+  "season": [
+    "ganzjährig"
+  ],
+  "weatherType": "neutral",
+  "isMealprep": true,
+  "isSuitableForLunch": false,
+  "dietCategory": "vegan",
+  "source": "LittleFant – Kindersnacks für jeden Tag",
+  "description": "Geballte Eisen-Power: Linsenbällchen mit Haferflocken und Aprikose – herzhaft und praktisch zum Mitnehmen.",
+  "steps": [
+    "Linsen 2+ Stunden einweichen, 25 Minuten kochen, abgießen. Aprikosen einweichen und fein würfeln. Petersilie hacken.",
+    "Alle Zutaten mischen, leicht anpürieren und zu Bällchen formen. Bei 200 °C (Umluft) ca. 20 Minuten backen."
+  ],
+  "tips": "Mit Vitamin-C-reichem Gemüse (z.B. Paprika) für bessere Eisenaufnahme kombinieren.",
+  "imageUrl": null
+}

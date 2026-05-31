@@ -25,8 +25,21 @@ export async function POST(request: Request) {
 
     // Archivierte Rezepte nie vorschlagen; Diät-Filter anwenden
     const dietPref = settings.dietPreference;
+
+    // dietCategory-basierter Filter (neues Feld ab Phase 1)
+    // fleischhaltig: alle Rezepte zeigen (kein Filter)
+    // flexitarisch:  alle zeigen, aber beim Wochenplan max. 1 Fleischgericht
+    // pescetarisch:  kein meat
+    // vegetarisch:   kein meat, kein fish
+    // vegan:         nur vegan
+    const blockedCategories: string[] = [];
+    if (dietPref === 'vegetarisch')  blockedCategories.push('meat', 'fish');
+    if (dietPref === 'pescetarisch') blockedCategories.push('meat');
+    if (dietPref === 'vegan')        blockedCategories.push('meat', 'fish', 'vegetarian');
+
+    // Legacy dietType-Filter (Rückwärtskompatibilität für Rezepte ohne dietCategory)
     const allowedDiets: DietType[] | null =
-      !dietPref || dietPref === 'alle' ? null :
+      !dietPref || dietPref === 'alle' || dietPref === 'fleischhaltig' || dietPref === 'flexitarisch' ? null :
       dietPref === 'vegan'        ? ['vegan'] :
       dietPref === 'vegetarisch'  ? ['vegan', 'vegetarisch'] :
       dietPref === 'pescetarisch' ? ['vegan', 'vegetarisch', 'pescetarisch'] :
@@ -34,7 +47,10 @@ export async function POST(request: Request) {
 
     const recipes = allRecipes.filter((r) => {
       if (r.archived) return false;
-      if (allowedDiets && r.dietType && !allowedDiets.includes(r.dietType)) return false;
+      // Neues dietCategory-Feld hat Vorrang
+      if (r.dietCategory && blockedCategories.includes(r.dietCategory)) return false;
+      // Legacy dietType-Fallback für Rezepte ohne dietCategory
+      if (!r.dietCategory && allowedDiets && r.dietType && !allowedDiets.includes(r.dietType)) return false;
       return true;
     });
 
@@ -79,6 +95,7 @@ export async function POST(request: Request) {
       showLunch:             settings.showLunch             ?? false,
       showDinner:            settings.showDinner            ?? true,
       allergiesAndAversions: settings.allergiesAndAversions,
+      flexitarisch:          dietPref === 'flexitarisch',
     });
 
     let plan = await getWeekPlan(weekId, groupId);

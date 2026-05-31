@@ -5049,5 +5049,1776 @@
     ],
     "tips": "Frische Eier pochieren sich am besten — das Eiweiss hält besser zusammen. Variante: statt pochiertem Ei ein Spiegelei oder Scrambled Eggs verwenden.",
     "imageUrl": null
+  },
+  {
+    "id": "kds-01",
+    "name": "Blitzschnelle Pizza-Brötchen",
+    "category": "Brot & Aufstrich",
+    "timeMinutes": 35,
+    "timeLabel": "mittel",
+    "basePortions": 8,
+    "ingredients": [
+      {
+        "name": "Kichererbsen (gekocht)",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Oliven",
+        "amount": 60,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Dinkelvollkornmehl",
+        "amount": 125,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Dinkelmehl Type 630",
+        "amount": 125,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Backpulver",
+        "amount": 3,
+        "unit": "TL",
+        "perPortions": 8
+      },
+      {
+        "name": "Natron",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 8
+      },
+      {
+        "name": "Sojajoghurt",
+        "amount": 160,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Tomatenmark",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 8
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 8
+      },
+      {
+        "name": "Hefeflocken",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 8
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 8
+      },
+      {
+        "name": "Oregano",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 8
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "neutral",
+    "isMealprep": true,
+    "isSuitableForLunch": false,
+    "dietCategory": "vegan",
+    "source": "LittleFant – Kindersnacks für jeden Tag",
+    "description": "Saftige Mini-Brötchen mit Kichererbsen, Oliven und Oregano – mediterran und sättigend. In unter 35 Minuten fertig.",
+    "steps": [
+      "Kichererbsen abgießen, gut spülen und im Mixer grob zerkleinern (stückig lassen). Oliven in Scheiben schneiden.",
+      "Dinkelvollkornmehl, Dinkelmehl, Backpulver und Natron mischen.",
+      "Sojajoghurt, Tomatenmark, Zitronensaft, Hefeflocken, Salz und Oregano verrühren und zusammen mit den Kichererbsen und Oliven zum Mehl geben. Zu einem glatten Teig kneten.",
+      "Teig in 8 Portionen teilen, zu Kugeln formen, auf ein Backblech legen, etwas flach drücken, kreuzförmig einschneiden und mit Wasser einpinseln.",
+      "Backofen auf 190 °C (Umluft) vorheizen. Brötchen 18–20 Minuten goldbraun backen."
+    ],
+    "tips": "Für Kinder unter 12 Monaten ohne Salz zubereiten.",
+    "imageUrl": null
+  },
+  {
+    "id": "kds-02",
+    "name": "Hummus-Waffeln",
+    "category": "Frühstück",
+    "timeMinutes": 40,
+    "timeLabel": "mittel",
+    "basePortions": 5,
+    "ingredients": [
+      {
+        "name": "Chiasamen",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 5
+      },
+      {
+        "name": "Wasser (zum Quellen)",
+        "amount": 6,
+        "unit": "EL",
+        "perPortions": 5
+      },
+      {
+        "name": "Kichererbsen (gekocht)",
+        "amount": 240,
+        "unit": "g",
+        "perPortions": 5
+      },
+      {
+        "name": "Sesammus (Tahin)",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 5
+      },
+      {
+        "name": "Knoblauchzehe",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 5
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 5
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 30,
+        "unit": "ml",
+        "perPortions": 5
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 5
+      },
+      {
+        "name": "Wasser",
+        "amount": 120,
+        "unit": "ml",
+        "perPortions": 5
+      },
+      {
+        "name": "Dinkelmehl Type 630",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 5
+      },
+      {
+        "name": "Dinkelvollkornmehl",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 5
+      },
+      {
+        "name": "Backpulver",
+        "amount": 2,
+        "unit": "TL",
+        "perPortions": 5
+      },
+      {
+        "name": "Kreuzkümmel",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 5
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "neutral",
+    "isMealprep": true,
+    "isSuitableForLunch": false,
+    "dietCategory": "vegan",
+    "source": "LittleFant – Kindersnacks für jeden Tag",
+    "description": "Hummus in Waffelform! Eisenreich dank Kichererbsen und Chiasamen, praktisch zum Mitnehmen.",
+    "steps": [
+      "Chiasamen mit 6 EL Wasser vermengen und mindestens 10 Minuten quellen lassen.",
+      "Kichererbsen gut abspülen und mit Sesammus, Knoblauch, Zitronensaft, Olivenöl, Salz, Wasser und den gequollenen Chiasamen fein pürieren.",
+      "Mehl, Backpulver und Kreuzkümmel mischen. Kichererbsenmasse hinzugeben und zu einem Teig zusammenfügen.",
+      "Waffeleisen erhitzen und mit Olivenöl einfetten. Teig portionsweise zu goldbraunen Waffeln ausbacken."
+    ],
+    "tips": "Für die Beikost ohne Salz zubereiten.",
+    "imageUrl": null
+  },
+  {
+    "id": "kds-03",
+    "name": "Tahin-Cracker",
+    "category": "Brot & Aufstrich",
+    "timeMinutes": 25,
+    "timeLabel": "mittel",
+    "basePortions": 30,
+    "ingredients": [
+      {
+        "name": "Dinkelvollkornmehl",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 30
+      },
+      {
+        "name": "Kichererbsenmehl",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 30
+      },
+      {
+        "name": "Hefeflocken",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 30
+      },
+      {
+        "name": "Rosmarin",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 30
+      },
+      {
+        "name": "Salz",
+        "amount": 3,
+        "unit": "g",
+        "perPortions": 30
+      },
+      {
+        "name": "Trockenhefe",
+        "amount": 5,
+        "unit": "g",
+        "perPortions": 30
+      },
+      {
+        "name": "Wasser",
+        "amount": 100,
+        "unit": "ml",
+        "perPortions": 30
+      },
+      {
+        "name": "Sesammus (Tahin)",
+        "amount": 30,
+        "unit": "g",
+        "perPortions": 30
+      },
+      {
+        "name": "Rapsöl",
+        "amount": 30,
+        "unit": "g",
+        "perPortions": 30
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 30,
+        "unit": "g",
+        "perPortions": 30
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "neutral",
+    "isMealprep": true,
+    "isSuitableForLunch": false,
+    "dietCategory": "vegan",
+    "source": "LittleFant – Kindersnacks für jeden Tag",
+    "description": "Knusprige Cracker mit Sesammus – sättigend und nährstoffreich. Halten luftdicht verpackt ca. 2 Wochen.",
+    "steps": [
+      "Alle trockenen Zutaten vermischen.",
+      "Hefe in Wasser auflösen, Sesammus, Rapsöl und Olivenöl unterrühren. Zur Mehlmischung geben und zu einem glatten Teig kneten.",
+      "Teig in 2 Hälften teilen und dünn ausrollen. Auf Backpapier-Bleche legen und in Rechtecke schneiden.",
+      "Bei 200 °C (Umluft) ca. 8–12 Minuten backen bis goldbraun."
+    ],
+    "tips": "Luftdicht aufbewahren – ca. 2 Wochen haltbar.",
+    "imageUrl": null
+  },
+  {
+    "id": "kds-04",
+    "name": "Bunte Gemüse-Muffins",
+    "category": "Sonstige",
+    "timeMinutes": 55,
+    "timeLabel": "aufwendig",
+    "basePortions": 12,
+    "ingredients": [
+      {
+        "name": "Rote Linsen (trocken)",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 12
+      },
+      {
+        "name": "Saatenmix",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 12
+      },
+      {
+        "name": "Weizenvollkornmehl",
+        "amount": 160,
+        "unit": "g",
+        "perPortions": 12
+      },
+      {
+        "name": "Weizenmehl Type 1050",
+        "amount": 125,
+        "unit": "g",
+        "perPortions": 12
+      },
+      {
+        "name": "Kichererbsenmehl",
+        "amount": 65,
+        "unit": "g",
+        "perPortions": 12
+      },
+      {
+        "name": "Speisestärke",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 12
+      },
+      {
+        "name": "Backpulver",
+        "amount": 2,
+        "unit": "TL",
+        "perPortions": 12
+      },
+      {
+        "name": "Natron",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 12
+      },
+      {
+        "name": "Hefeflocken",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 12
+      },
+      {
+        "name": "Italienische Kräuter",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 12
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 12
+      },
+      {
+        "name": "Gemüse (z.B. Karotte, Zucchini, Erbsen)",
+        "amount": 450,
+        "unit": "g",
+        "perPortions": 12
+      },
+      {
+        "name": "Sojadrink",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 12
+      },
+      {
+        "name": "Apfelessig",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 12
+      },
+      {
+        "name": "Rapsöl",
+        "amount": 125,
+        "unit": "g",
+        "perPortions": 12
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "neutral",
+    "isMealprep": true,
+    "isSuitableForLunch": false,
+    "dietCategory": "vegan",
+    "source": "LittleFant – Kindersnacks für jeden Tag",
+    "description": "Herzhafte Muffins mit Linsen und buntem Gemüse – sättigend und voller Nährstoffe, perfekt für die Brotdose.",
+    "steps": [
+      "Linsen mindestens 2 Stunden einweichen, abspülen, 5 Minuten kochen, abgießen und abkühlen lassen.",
+      "Saatenmix ohne Fett anrösten und mit den trockenen Zutaten mischen. Gemüse fein reiben.",
+      "Alle Zutaten kurz zu einem homogenen Teig verrühren und 10 Minuten ruhen lassen.",
+      "Ofen auf 220 °C (Umluft) vorheizen. In Muffinförmchen füllen, 5 Minuten backen. Auf 180 °C reduzieren und weitere 30 Minuten backen."
+    ],
+    "tips": "Saaten und Erbsen je nach Alter des Kindes vorher zerkleinern.",
+    "imageUrl": null
+  },
+  {
+    "id": "kds-05",
+    "name": "Herzhafte Haferkekse",
+    "category": "Sonstige",
+    "timeMinutes": 27,
+    "timeLabel": "mittel",
+    "basePortions": 15,
+    "ingredients": [
+      {
+        "name": "Haferflocken Feinblatt",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 15
+      },
+      {
+        "name": "Haferflocken Grobblatt",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 15
+      },
+      {
+        "name": "Kürbiskerne",
+        "amount": 20,
+        "unit": "g",
+        "perPortions": 15
+      },
+      {
+        "name": "Rosmarin",
+        "amount": 0.25,
+        "unit": "TL",
+        "perPortions": 15
+      },
+      {
+        "name": "Salz",
+        "amount": 0.25,
+        "unit": "TL",
+        "perPortions": 15
+      },
+      {
+        "name": "Backpulver",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 15
+      },
+      {
+        "name": "Sesammus (Tahin)",
+        "amount": 30,
+        "unit": "g",
+        "perPortions": 15
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 30,
+        "unit": "g",
+        "perPortions": 15
+      },
+      {
+        "name": "Wasser",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 15
+      },
+      {
+        "name": "Oliven",
+        "amount": 15,
+        "unit": "g",
+        "perPortions": 15
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "neutral",
+    "isMealprep": true,
+    "isSuitableForLunch": false,
+    "dietCategory": "vegan",
+    "source": "LittleFant – Kindersnacks für jeden Tag",
+    "description": "Herzhafte Haferkekse mit Oliven und Rosmarin – ballaststoffreich, knusprig und auch für Erwachsene unwiderstehlich.",
+    "steps": [
+      "Feine Haferflocken und Kürbiskerne zu Mehl mahlen. Grobe Haferflocken, Rosmarin, Salz und Backpulver zugeben.",
+      "Oliven fein hacken und mit Sesammus, Olivenöl und Wasser zu einem Teig vermengen.",
+      "Zu Kugeln formen, auf Backblech platt drücken. Bei 180 °C 12–15 Minuten backen."
+    ],
+    "tips": "",
+    "imageUrl": null
+  },
+  {
+    "id": "kds-06",
+    "name": "Herzhafte Linsen-Bällchen",
+    "category": "Sonstige",
+    "timeMinutes": 50,
+    "timeLabel": "aufwendig",
+    "basePortions": 15,
+    "ingredients": [
+      {
+        "name": "Braune Linsen (trocken)",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 15
+      },
+      {
+        "name": "Getrocknete Aprikosen",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 15
+      },
+      {
+        "name": "Petersilie",
+        "amount": 10,
+        "unit": "g",
+        "perPortions": 15
+      },
+      {
+        "name": "Haferflocken",
+        "amount": 30,
+        "unit": "g",
+        "perPortions": 15
+      },
+      {
+        "name": "Kichererbsenmehl",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 15
+      },
+      {
+        "name": "Hefeflocken",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 15
+      },
+      {
+        "name": "Tomatenmark",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 15
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 15
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 15
+      },
+      {
+        "name": "Rosmarin",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 15
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "neutral",
+    "isMealprep": true,
+    "isSuitableForLunch": false,
+    "dietCategory": "vegan",
+    "source": "LittleFant – Kindersnacks für jeden Tag",
+    "description": "Geballte Eisen-Power: Linsenbällchen mit Haferflocken und Aprikose – herzhaft und praktisch zum Mitnehmen.",
+    "steps": [
+      "Linsen 2+ Stunden einweichen, 25 Minuten kochen, abgießen. Aprikosen einweichen und fein würfeln. Petersilie hacken.",
+      "Alle Zutaten mischen, leicht anpürieren und zu Bällchen formen. Bei 200 °C (Umluft) ca. 20 Minuten backen."
+    ],
+    "tips": "Mit Vitamin-C-reichem Gemüse (z.B. Paprika) für bessere Eisenaufnahme kombinieren.",
+    "imageUrl": null
+  },
+  {
+    "id": "kds-07",
+    "name": "Karotten-Mais-Happen",
+    "category": "Sonstige",
+    "timeMinutes": 35,
+    "timeLabel": "mittel",
+    "basePortions": 10,
+    "ingredients": [
+      {
+        "name": "Haferflocken",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 10
+      },
+      {
+        "name": "Polenta (Maisgrieß)",
+        "amount": 75,
+        "unit": "g",
+        "perPortions": 10
+      },
+      {
+        "name": "Maisstärke",
+        "amount": 2,
+        "unit": "TL",
+        "perPortions": 10
+      },
+      {
+        "name": "Backpulver",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 10
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 10
+      },
+      {
+        "name": "Thymian",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 10
+      },
+      {
+        "name": "Schalotte",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 10
+      },
+      {
+        "name": "Sojajoghurt",
+        "amount": 150,
+        "unit": "g",
+        "perPortions": 10
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 10
+      },
+      {
+        "name": "Karotte (fein gerieben)",
+        "amount": 75,
+        "unit": "g",
+        "perPortions": 10
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "neutral",
+    "isMealprep": true,
+    "isSuitableForLunch": false,
+    "dietCategory": "vegan",
+    "source": "LittleFant – Kindersnacks für jeden Tag",
+    "description": "Goldbraune Maistaler mit Karotte und Sojajoghurt – saftig innen, leicht knusprig außen.",
+    "steps": [
+      "Haferflocken zu Mehl mahlen, mit trockenen Zutaten mischen.",
+      "Schalotte mit Sojajoghurt und Olivenöl pürieren, mit geriebener Karotte zu den Trockenzutaten geben und 5 Minuten quellen lassen.",
+      "Zu Kugeln formen, platt drücken. Bei 230 °C (Ober-/Unterhitze) 15–20 Minuten backen."
+    ],
+    "tips": "Bis zu 60 g Hülsenfrüchte-Reste mit Sojajoghurt pürieren für Extra-Eiweiß.",
+    "imageUrl": null
+  },
+  {
+    "id": "kds-08",
+    "name": "Blumenkohl-Puffer",
+    "category": "Sonstige",
+    "timeMinutes": 40,
+    "timeLabel": "mittel",
+    "basePortions": 12,
+    "ingredients": [
+      {
+        "name": "Blumenkohl",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 12
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 12
+      },
+      {
+        "name": "Knoblauchzehe",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 12
+      },
+      {
+        "name": "Petersilie",
+        "amount": 2,
+        "unit": "Stiele",
+        "perPortions": 12
+      },
+      {
+        "name": "Kichererbsen (gekocht)",
+        "amount": 240,
+        "unit": "g",
+        "perPortions": 12
+      },
+      {
+        "name": "Leinsamen",
+        "amount": 1.5,
+        "unit": "EL",
+        "perPortions": 12
+      },
+      {
+        "name": "Haferflocken",
+        "amount": 60,
+        "unit": "g",
+        "perPortions": 12
+      },
+      {
+        "name": "Paprikapulver edelsüß",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 12
+      },
+      {
+        "name": "Salz",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 12
+      },
+      {
+        "name": "Rapsöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 12
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "neutral",
+    "isMealprep": true,
+    "isSuitableForLunch": true,
+    "dietCategory": "vegan",
+    "source": "LittleFant – Kindersnacks für jeden Tag",
+    "description": "Blumenkohl-Kichererbsen-Puffer – nährstoffreich, gut vorzubereiten und auch als Beilage geeignet.",
+    "steps": [
+      "Blumenkohl in Röschen schneiden, 10–15 Minuten dünsten, abdampfen und zerdrücken.",
+      "Zwiebel und Knoblauch glasig dünsten. Kichererbsen zerkleinern, Leinsamen schroten, Haferflocken zu Mehl mahlen.",
+      "Alle Zutaten mischen, zu Bratlingen formen und in Rapsöl von beiden Seiten goldbraun braten."
+    ],
+    "tips": "",
+    "imageUrl": null
+  },
+  {
+    "id": "kds-09",
+    "name": "Gemüsebrötchen",
+    "category": "Brot & Aufstrich",
+    "timeMinutes": 85,
+    "timeLabel": "aufwendig",
+    "basePortions": 8,
+    "ingredients": [
+      {
+        "name": "Gelbe Linsen (trocken)",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Sojadrink",
+        "amount": 150,
+        "unit": "ml",
+        "perPortions": 8
+      },
+      {
+        "name": "Frischhefe",
+        "amount": 10,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Sesammus",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 8
+      },
+      {
+        "name": "Dinkelmehl Type 630",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Dinkelvollkornmehl",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Mais",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 8
+      },
+      {
+        "name": "Paprika (fein gewürfelt)",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 8
+      },
+      {
+        "name": "Karotte (fein gerieben)",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 8
+      },
+      {
+        "name": "Hefeflocken",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 8
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 8
+      },
+      {
+        "name": "Kurkuma",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 8
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "neutral",
+    "isMealprep": true,
+    "isSuitableForLunch": false,
+    "dietCategory": "vegan",
+    "source": "LittleFant – Kindersnacks für jeden Tag",
+    "description": "Bunte Brötchen mit Karotte, Paprika, Mais und versteckten Linsen – nährstoffreich und farbenfroh.",
+    "steps": [
+      "Linsen 2+ Stunden einweichen, 5 Minuten kochen, abgießen.",
+      "Sojadrink handwarm erwärmen, Hefe auflösen, Sesammus einrühren. Mehl zugeben und zu elastischem Teig kneten. 30–45 Minuten gehen lassen.",
+      "Gemüse und Linsen in den Teig kneten. 8 Brötchen formen, 20 Minuten gehen lassen.",
+      "Mit Kurkuma-Sojadrink bepinseln. Bei 180 °C (Ober-/Unterhitze) 20–25 Minuten backen."
+    ],
+    "tips": "Für Kinder unter 12 Monaten Mais zerkleinern und Salz weglassen.",
+    "imageUrl": null
+  },
+  {
+    "id": "kds-10",
+    "name": "Tomaten-Oregano-Cracker",
+    "category": "Brot & Aufstrich",
+    "timeMinutes": 25,
+    "timeLabel": "mittel",
+    "basePortions": 30,
+    "ingredients": [
+      {
+        "name": "Dinkelvollkornmehl",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 30
+      },
+      {
+        "name": "Kichererbsenmehl",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 30
+      },
+      {
+        "name": "Hefeflocken",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 30
+      },
+      {
+        "name": "Oregano",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 30
+      },
+      {
+        "name": "Salz",
+        "amount": 3,
+        "unit": "g",
+        "perPortions": 30
+      },
+      {
+        "name": "Trockenhefe",
+        "amount": 5,
+        "unit": "g",
+        "perPortions": 30
+      },
+      {
+        "name": "Wasser",
+        "amount": 70,
+        "unit": "ml",
+        "perPortions": 30
+      },
+      {
+        "name": "Tomatenmark",
+        "amount": 30,
+        "unit": "g",
+        "perPortions": 30
+      },
+      {
+        "name": "Rapsöl",
+        "amount": 30,
+        "unit": "g",
+        "perPortions": 30
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 30,
+        "unit": "g",
+        "perPortions": 30
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "neutral",
+    "isMealprep": true,
+    "isSuitableForLunch": false,
+    "dietCategory": "vegan",
+    "source": "LittleFant – Kindersnacks für jeden Tag",
+    "description": "Knusprige Cracker mit Tomate und Oregano – herzhaft und lange haltbar.",
+    "steps": [
+      "Alle trockenen Zutaten vermischen.",
+      "Hefe in Wasser auflösen, Tomatenmark und Öle unterrühren. Zu einem Teig kneten.",
+      "Dünn ausrollen, in Rechtecke schneiden. Bei 200 °C (Umluft) ca. 8–12 Minuten backen."
+    ],
+    "tips": "Luftdicht aufbewahren – ca. 2 Wochen haltbar.",
+    "imageUrl": null
+  },
+  {
+    "id": "kds-11",
+    "name": "Linsen-Knusperbrot",
+    "category": "Brot & Aufstrich",
+    "timeMinutes": 65,
+    "timeLabel": "aufwendig",
+    "basePortions": 20,
+    "ingredients": [
+      {
+        "name": "Rote Linsen (trocken)",
+        "amount": 60,
+        "unit": "g",
+        "perPortions": 20
+      },
+      {
+        "name": "Sonnenblumenkerne",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 20
+      },
+      {
+        "name": "Wasser",
+        "amount": 350,
+        "unit": "ml",
+        "perPortions": 20
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 20
+      },
+      {
+        "name": "Haferflocken",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 20
+      },
+      {
+        "name": "Dinkelvollkornmehl",
+        "amount": 120,
+        "unit": "g",
+        "perPortions": 20
+      },
+      {
+        "name": "Rosmarin",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 20
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 20
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "neutral",
+    "isMealprep": true,
+    "isSuitableForLunch": false,
+    "dietCategory": "vegan",
+    "source": "LittleFant – Kindersnacks für jeden Tag",
+    "description": "Knuspriges Vollkornbrot mit roten Linsen – perfekt zum Dippen von Hummus oder Kräuterquark.",
+    "steps": [
+      "Linsen 2+ Stunden einweichen, mit Sonnenblumenkernen, Wasser und Salz fein pürieren.",
+      "Haferflocken, Mehl, Rosmarin und Öl untermischen, 5 Minuten quellen lassen.",
+      "Bei 150 °C (Umluft) 15 Minuten backen. Herausnehmen, in Stücke schneiden. Weitere 40–45 Minuten backen."
+    ],
+    "tips": "In luftdichtem Behälter aufbewahren.",
+    "imageUrl": null
+  },
+  {
+    "id": "kds-12",
+    "name": "30-Minuten-Brötchen",
+    "category": "Brot & Aufstrich",
+    "timeMinutes": 30,
+    "timeLabel": "mittel",
+    "basePortions": 8,
+    "ingredients": [
+      {
+        "name": "Kichererbsen (gekocht)",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Dinkelvollkornmehl",
+        "amount": 125,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Dinkelmehl Type 630",
+        "amount": 125,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Sojajoghurt",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Sesammus",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 8
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 8
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 8
+      },
+      {
+        "name": "Backpulver",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 8
+      },
+      {
+        "name": "Natron",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 8
+      },
+      {
+        "name": "Paprikapulver edelsüß",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 8
+      },
+      {
+        "name": "Hefeflocken",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 8
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "neutral",
+    "isMealprep": true,
+    "isSuitableForLunch": false,
+    "dietCategory": "vegan",
+    "source": "LittleFant – Kindersnacks für jeden Tag",
+    "description": "Nährstoffreiche Brötchen ohne Hefe – in 30 Minuten fertig. Mit Kichererbsen und Sojajoghurt.",
+    "steps": [
+      "Kichererbsen grob zerkleinern. Alle Zutaten zu einem Teig kneten.",
+      "In 8 Portionen teilen, zu Kugeln formen, flach drücken, einschneiden, einpinseln.",
+      "Bei 190 °C (Umluft) 15 Minuten goldbraun backen."
+    ],
+    "tips": "Für die Beikost ohne Salz zubereiten.",
+    "imageUrl": null
+  },
+  {
+    "id": "kds-13",
+    "name": "Gesunde Vanille-Waffeln",
+    "category": "Frühstück",
+    "timeMinutes": 25,
+    "timeLabel": "mittel",
+    "basePortions": 6,
+    "ingredients": [
+      {
+        "name": "Rosinen",
+        "amount": 30,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Weiße Bohnen (gekocht)",
+        "amount": 120,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Sojadrink",
+        "amount": 250,
+        "unit": "ml",
+        "perPortions": 6
+      },
+      {
+        "name": "Mandelmus",
+        "amount": 20,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Dinkelvollkornmehl",
+        "amount": 70,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Haferflocken Feinblatt",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Bourbon-Vanille (gemahlen)",
+        "amount": 0.25,
+        "unit": "TL",
+        "perPortions": 6
+      },
+      {
+        "name": "Backpulver",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 6
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "neutral",
+    "isMealprep": true,
+    "isSuitableForLunch": false,
+    "dietCategory": "vegan",
+    "source": "LittleFant – Kindersnacks für jeden Tag",
+    "description": "Waffeln mit Rosinen, weißen Bohnen und Vanille – nur natürlich gesüßt, einfach und nährstoffreich.",
+    "steps": [
+      "Rosinen mit weißen Bohnen, Sojadrink und Mandelmus fein mixen.",
+      "Trockene Zutaten vermischen und mit dem Bohnen-Mix verrühren.",
+      "Im gefetteten Waffeleisen goldbraune Waffeln ausbacken."
+    ],
+    "tips": "Gut auf Vorrat zubereiten und im Toaster frisch aufbacken.",
+    "imageUrl": null
+  },
+  {
+    "id": "kds-14",
+    "name": "Eisen-Booster-Energyballs",
+    "category": "Süsses",
+    "timeMinutes": 20,
+    "timeLabel": "mittel",
+    "basePortions": 20,
+    "ingredients": [
+      {
+        "name": "Getrocknete Aprikosen",
+        "amount": 80,
+        "unit": "g",
+        "perPortions": 20
+      },
+      {
+        "name": "Mandelmus",
+        "amount": 25,
+        "unit": "g",
+        "perPortions": 20
+      },
+      {
+        "name": "Haferflocken",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 20
+      },
+      {
+        "name": "Kürbiskerne",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 20
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "neutral",
+    "isMealprep": true,
+    "isSuitableForLunch": false,
+    "dietCategory": "vegan",
+    "source": "LittleFant – Kindersnacks für jeden Tag",
+    "description": "Eisenreiche Energyballs aus Aprikosen, Haferflocken und Kürbiskernen – schnell gemacht, 2 Wochen haltbar.",
+    "steps": [
+      "Aprikosen 10 Minuten einweichen, abtropfen und mit Mandelmus pürieren.",
+      "Haferflocken und Kürbiskerne fein mahlen. Mit Aprikosen-Masse vermengen.",
+      "Mit feuchten Händen zu ca. 20 Kugeln formen."
+    ],
+    "tips": "Im Kühlschrank ca. 2 Wochen haltbar, alternativ einfrieren.",
+    "imageUrl": null
+  },
+  {
+    "id": "kds-15",
+    "name": "Linsen-Mandel-Kekse",
+    "category": "Süsses",
+    "timeMinutes": 70,
+    "timeLabel": "aufwendig",
+    "basePortions": 30,
+    "ingredients": [
+      {
+        "name": "Rote Linsen (trocken)",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 30
+      },
+      {
+        "name": "Datteln",
+        "amount": 75,
+        "unit": "g",
+        "perPortions": 30
+      },
+      {
+        "name": "Mandelmus",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 30
+      },
+      {
+        "name": "Rapsöl",
+        "amount": 80,
+        "unit": "ml",
+        "perPortions": 30
+      },
+      {
+        "name": "Wasser",
+        "amount": 30,
+        "unit": "ml",
+        "perPortions": 30
+      },
+      {
+        "name": "Dinkelvollkornmehl",
+        "amount": 225,
+        "unit": "g",
+        "perPortions": 30
+      },
+      {
+        "name": "Backpulver",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 30
+      },
+      {
+        "name": "Bourbon-Vanille (gemahlen)",
+        "amount": 1,
+        "unit": "Msp",
+        "perPortions": 30
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "neutral",
+    "isMealprep": true,
+    "isSuitableForLunch": false,
+    "dietCategory": "vegan",
+    "source": "LittleFant – Kindersnacks für jeden Tag",
+    "description": "Eisenreiche Kekse mit roten Linsen und Datteln – man sieht die Linsen nicht, aber sie liefern Eisen.",
+    "steps": [
+      "Linsen 2+ Stunden einweichen, 5 Minuten kochen, abdampfen. Datteln einweichen, mit Linsen, Mandelmus, Öl und Wasser pürieren.",
+      "Mehl, Backpulver und Vanille mischen, Linsen-Dattel-Paste zugeben und zu Teig kneten.",
+      "30 Minuten im Kühlschrank ruhen. Dünn ausrollen, in Rauten schneiden. Bei 200 °C 12–15 Minuten backen."
+    ],
+    "tips": "",
+    "imageUrl": null
+  },
+  {
+    "id": "kds-16",
+    "name": "Karotten-Müsli-Riegel",
+    "category": "Süsses",
+    "timeMinutes": 55,
+    "timeLabel": "aufwendig",
+    "basePortions": 8,
+    "ingredients": [
+      {
+        "name": "Haferflocken Feinblatt",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Hirseflocken",
+        "amount": 30,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Zimt",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 8
+      },
+      {
+        "name": "Rosinen",
+        "amount": 25,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Apfelmark",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 8
+      },
+      {
+        "name": "Sojadrink",
+        "amount": 100,
+        "unit": "ml",
+        "perPortions": 8
+      },
+      {
+        "name": "Mandelmus",
+        "amount": 2,
+        "unit": "TL",
+        "perPortions": 8
+      },
+      {
+        "name": "Karotte (fein gerieben)",
+        "amount": 60,
+        "unit": "g",
+        "perPortions": 8
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "neutral",
+    "isMealprep": true,
+    "isSuitableForLunch": false,
+    "dietCategory": "vegan",
+    "source": "LittleFant – Kindersnacks für jeden Tag",
+    "description": "Nährstoffreiche Müsliriegel mit Hafer, Hirse, Karotte und natürlicher Apfelsüße – ohne Industriezucker.",
+    "steps": [
+      "Haferflocken zu Mehl mahlen, mit Hirseflocken und Zimt mischen. Rosinen hacken und zugeben.",
+      "Apfelmark, Sojadrink und Mandelmus verrühren, mit Karotte zu Trockenzutaten geben, 20 Minuten quellen lassen.",
+      "Bei 190 °C (Ober-/Unterhitze) ca. 20 Minuten backen. Noch warm in 8 Riegel schneiden."
+    ],
+    "tips": "Im Kühlschrank ca. 5 Tage haltbar.",
+    "imageUrl": null
+  },
+  {
+    "id": "kds-17",
+    "name": "Eisenreiche Aprikosen-Taler",
+    "category": "Süsses",
+    "timeMinutes": 35,
+    "timeLabel": "mittel",
+    "basePortions": 15,
+    "ingredients": [
+      {
+        "name": "Getrocknete Aprikosen",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 15
+      },
+      {
+        "name": "Wasser",
+        "amount": 75,
+        "unit": "ml",
+        "perPortions": 15
+      },
+      {
+        "name": "Mandelmus",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 15
+      },
+      {
+        "name": "Dinkelvollkornmehl",
+        "amount": 75,
+        "unit": "g",
+        "perPortions": 15
+      },
+      {
+        "name": "Kichererbsenmehl",
+        "amount": 75,
+        "unit": "g",
+        "perPortions": 15
+      },
+      {
+        "name": "Backpulver",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 15
+      },
+      {
+        "name": "Zimt",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 15
+      },
+      {
+        "name": "Haferflocken (zum Wälzen)",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 15
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "neutral",
+    "isMealprep": true,
+    "isSuitableForLunch": false,
+    "dietCategory": "vegan",
+    "source": "LittleFant – Kindersnacks für jeden Tag",
+    "description": "Eisenreiche Taler mit Aprikosen und Mandelmus – in Haferflocken gewälzt und goldbraun gebacken.",
+    "steps": [
+      "Aprikosen 10 Minuten einweichen, mit Wasser und Mandelmus pürieren.",
+      "Trockene Zutaten mischen, mit Aprikosen-Mix zu Teig verrühren. Zu Kugeln formen, in Haferflocken wälzen, flach drücken.",
+      "Bei 170 °C (Umluft) ca. 15 Minuten backen."
+    ],
+    "tips": "Frisch und noch warm schmecken sie am besten.",
+    "imageUrl": null
+  },
+  {
+    "id": "kds-18",
+    "name": "Cashew-Zimt-Energyballs",
+    "category": "Süsses",
+    "timeMinutes": 20,
+    "timeLabel": "mittel",
+    "basePortions": 15,
+    "ingredients": [
+      {
+        "name": "Haferflocken",
+        "amount": 40,
+        "unit": "g",
+        "perPortions": 15
+      },
+      {
+        "name": "Hirseflocken",
+        "amount": 35,
+        "unit": "g",
+        "perPortions": 15
+      },
+      {
+        "name": "Datteln",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 15
+      },
+      {
+        "name": "Cashewmus",
+        "amount": 25,
+        "unit": "g",
+        "perPortions": 15
+      },
+      {
+        "name": "Zimt",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 15
+      },
+      {
+        "name": "Kokosflocken",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 15
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "neutral",
+    "isMealprep": true,
+    "isSuitableForLunch": false,
+    "dietCategory": "vegan",
+    "source": "LittleFant – Kindersnacks für jeden Tag",
+    "description": "Schnelle Energyballs mit Datteln, Cashewmus und Zimt – in Kokosflocken gewälzt.",
+    "steps": [
+      "Hafer- und Hirseflocken fein mahlen. Datteln einweichen, abtropfen und mit Cashewmus pürieren.",
+      "Alle Zutaten außer Kokosflocken vermengen. Zu Kugeln formen und in Kokosflocken wälzen."
+    ],
+    "tips": "Im Kühlschrank ca. 2 Wochen haltbar.",
+    "imageUrl": null
+  },
+  {
+    "id": "kds-19",
+    "name": "Glücks-Hörnchen mit Vanille",
+    "category": "Süsses",
+    "timeMinutes": 90,
+    "timeLabel": "aufwendig",
+    "basePortions": 8,
+    "ingredients": [
+      {
+        "name": "Weiße Bohnen (gekocht)",
+        "amount": 150,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Apfelmark",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Cashewmus",
+        "amount": 25,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Sojadrink",
+        "amount": 30,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Frischhefe",
+        "amount": 7,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Bourbon-Vanille (gemahlen)",
+        "amount": 0.25,
+        "unit": "TL",
+        "perPortions": 8
+      },
+      {
+        "name": "Dinkelmehl Type 630",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 8
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "neutral",
+    "isMealprep": true,
+    "isSuitableForLunch": false,
+    "dietCategory": "vegan",
+    "source": "LittleFant – Kindersnacks für jeden Tag",
+    "description": "Fluffige Vanille-Hörnchen mit weißen Bohnen und Cashewmus – reich an Protein, Eisen und Serotonin-Vorstufen.",
+    "steps": [
+      "Bohnen mit Apfelmark und Cashewmus fein pürieren.",
+      "Sojadrink handwarm erwärmen, Hefe auflösen, Vanille und Bohnen-Mix einrühren. Mehl zugeben und zu elastischem Teig kneten. 30–45 Minuten gehen lassen.",
+      "Zu Kreis ausrollen, in 8 Stücke schneiden. Von der breiten Seite aufrollen und zu Hörnchen biegen. Weitere 30 Minuten gehen lassen.",
+      "Mit Sojasahne einpinseln. Bei 180 °C (Ober-/Unterhitze) 15–20 Minuten goldbraun backen."
+    ],
+    "tips": "",
+    "imageUrl": null
+  },
+  {
+    "id": "kds-20",
+    "name": "Apfel-Zimt-Waffeln",
+    "category": "Frühstück",
+    "timeMinutes": 30,
+    "timeLabel": "mittel",
+    "basePortions": 6,
+    "ingredients": [
+      {
+        "name": "Haferflocken",
+        "amount": 60,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Apfel (gerieben)",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 6
+      },
+      {
+        "name": "Apfelmark",
+        "amount": 120,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Dinkelmehl Type 630",
+        "amount": 70,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Dinkelvollkornmehl",
+        "amount": 70,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Sojajoghurt",
+        "amount": 180,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Sojadrink",
+        "amount": 180,
+        "unit": "ml",
+        "perPortions": 6
+      },
+      {
+        "name": "Mandelmus",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 6
+      },
+      {
+        "name": "Backpulver",
+        "amount": 1.5,
+        "unit": "TL",
+        "perPortions": 6
+      },
+      {
+        "name": "Zimt",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 6
+      }
+    ],
+    "season": [
+      "Herbst",
+      "Winter",
+      "ganzjährig"
+    ],
+    "weatherType": "kalt",
+    "isMealprep": true,
+    "isSuitableForLunch": false,
+    "dietCategory": "vegan",
+    "source": "LittleFant – Kindersnacks für jeden Tag",
+    "description": "Saftige Waffeln mit frischem Apfel und Zimt – eisenreich dank Haferflocken und Vollkornmehl.",
+    "steps": [
+      "Haferflocken zu Mehl mahlen. Apfel fein reiben.",
+      "Alle Zutaten zu einem homogenen Teig verrühren.",
+      "Im gefetteten Waffeleisen goldbraune Waffeln ausbacken."
+    ],
+    "tips": "Vor dem ersten Geburtstag keinen Ahornsirup verwenden. Im Toaster frisch aufbacken.",
+    "imageUrl": null
+  },
+  {
+    "id": "kds-21",
+    "name": "\"Nur-Gutes-drin\"-Muffins",
+    "category": "Süsses",
+    "timeMinutes": 37,
+    "timeLabel": "mittel",
+    "basePortions": 12,
+    "ingredients": [
+      {
+        "name": "Datteln",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 12
+      },
+      {
+        "name": "Schwarze Bohnen (gekocht)",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 12
+      },
+      {
+        "name": "Sojadrink",
+        "amount": 180,
+        "unit": "ml",
+        "perPortions": 12
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 12
+      },
+      {
+        "name": "Rapsöl",
+        "amount": 100,
+        "unit": "ml",
+        "perPortions": 12
+      },
+      {
+        "name": "Sesammus",
+        "amount": 30,
+        "unit": "g",
+        "perPortions": 12
+      },
+      {
+        "name": "Zucchini (fein gerieben)",
+        "amount": 70,
+        "unit": "g",
+        "perPortions": 12
+      },
+      {
+        "name": "Karotte (fein gerieben)",
+        "amount": 70,
+        "unit": "g",
+        "perPortions": 12
+      },
+      {
+        "name": "Dinkelvollkornmehl",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 12
+      },
+      {
+        "name": "Kakaopulver (ungesüßt)",
+        "amount": 25,
+        "unit": "g",
+        "perPortions": 12
+      },
+      {
+        "name": "Backpulver",
+        "amount": 2,
+        "unit": "TL",
+        "perPortions": 12
+      },
+      {
+        "name": "Natron",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 12
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 12
+      }
+    ],
+    "season": [
+      "ganzjährig"
+    ],
+    "weatherType": "neutral",
+    "isMealprep": true,
+    "isSuitableForLunch": false,
+    "dietCategory": "vegan",
+    "source": "LittleFant – Kindersnacks für jeden Tag",
+    "description": "Schokoladige Muffins mit schwarzen Bohnen, Zucchini und Datteln – unglaublich saftig und voller Nährstoffe.",
+    "steps": [
+      "Datteln 10 Minuten einweichen. Schwarze Bohnen spülen. Beides mit Sojadrink, Zitronensaft, Rapsöl und Sesammus fein mixen.",
+      "Trockene Zutaten mischen, geriebene Zucchini und Karotte sowie den Dattel-Mix einrühren. 10 Minuten ruhen lassen.",
+      "Bei 210 °C (Umluft) 5 Minuten backen. Auf 170 °C reduzieren und weitere 12 Minuten backen. Bei geöffneter Ofentür abkühlen lassen."
+    ],
+    "tips": "Optional mit Schokotropfen verzieren.",
+    "imageUrl": null
   }
 ]

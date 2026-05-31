@@ -1,0 +1,104 @@
+{
+  "id": "kds-21",
+  "name": "\"Nur-Gutes-drin\"-Muffins",
+  "category": "Süsses",
+  "timeMinutes": 37,
+  "timeLabel": "mittel",
+  "basePortions": 12,
+  "ingredients": [
+    {
+      "name": "Datteln",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Schwarze Bohnen (gekocht)",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Sojadrink",
+      "amount": 180,
+      "unit": "ml",
+      "perPortions": 12
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 12
+    },
+    {
+      "name": "Rapsöl",
+      "amount": 100,
+      "unit": "ml",
+      "perPortions": 12
+    },
+    {
+      "name": "Sesammus",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Zucchini (fein gerieben)",
+      "amount": 70,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Karotte (fein gerieben)",
+      "amount": 70,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Dinkelvollkornmehl",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Kakaopulver (ungesüßt)",
+      "amount": 25,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Backpulver",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 12
+    },
+    {
+      "name": "Natron",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 12
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 12
+    }
+  ],
+  "season": [
+    "ganzjährig"
+  ],
+  "weatherType": "neutral",
+  "isMealprep": true,
+  "isSuitableForLunch": false,
+  "dietCategory": "vegan",
+  "source": "LittleFant – Kindersnacks für jeden Tag",
+  "description": "Schokoladige Muffins mit schwarzen Bohnen, Zucchini und Datteln – unglaublich saftig und voller Nährstoffe.",
+  "steps": [
+    "Datteln 10 Minuten einweichen. Schwarze Bohnen spülen. Beides mit Sojadrink, Zitronensaft, Rapsöl und Sesammus fein mixen.",
+    "Trockene Zutaten mischen, geriebene Zucchini und Karotte sowie den Dattel-Mix einrühren. 10 Minuten ruhen lassen.",
+    "Bei 210 °C (Umluft) 5 Minuten backen. Auf 170 °C reduzieren und weitere 12 Minuten backen. Bei geöffneter Ofentür abkühlen lassen."
+  ],
+  "tips": "Optional mit Schokotropfen verzieren.",
+  "imageUrl": null
+}

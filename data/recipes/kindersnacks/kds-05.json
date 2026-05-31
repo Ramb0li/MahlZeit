@@ -1,0 +1,86 @@
+{
+  "id": "kds-05",
+  "name": "Herzhafte Haferkekse",
+  "category": "Sonstige",
+  "timeMinutes": 27,
+  "timeLabel": "mittel",
+  "basePortions": 15,
+  "ingredients": [
+    {
+      "name": "Haferflocken Feinblatt",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 15
+    },
+    {
+      "name": "Haferflocken Grobblatt",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 15
+    },
+    {
+      "name": "Kürbiskerne",
+      "amount": 20,
+      "unit": "g",
+      "perPortions": 15
+    },
+    {
+      "name": "Rosmarin",
+      "amount": 0.25,
+      "unit": "TL",
+      "perPortions": 15
+    },
+    {
+      "name": "Salz",
+      "amount": 0.25,
+      "unit": "TL",
+      "perPortions": 15
+    },
+    {
+      "name": "Backpulver",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 15
+    },
+    {
+      "name": "Sesammus (Tahin)",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 15
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 15
+    },
+    {
+      "name": "Wasser",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 15
+    },
+    {
+      "name": "Oliven",
+      "amount": 15,
+      "unit": "g",
+      "perPortions": 15
+    }
+  ],
+  "season": [
+    "ganzjährig"
+  ],
+  "weatherType": "neutral",
+  "isMealprep": true,
+  "isSuitableForLunch": false,
+  "dietCategory": "vegan",
+  "source": "LittleFant – Kindersnacks für jeden Tag",
+  "description": "Herzhafte Haferkekse mit Oliven und Rosmarin – ballaststoffreich, knusprig und auch für Erwachsene unwiderstehlich.",
+  "steps": [
+    "Feine Haferflocken und Kürbiskerne zu Mehl mahlen. Grobe Haferflocken, Rosmarin, Salz und Backpulver zugeben.",
+    "Oliven fein hacken und mit Sesammus, Olivenöl und Wasser zu einem Teig vermengen.",
+    "Zu Kugeln formen, auf Backblech platt drücken. Bei 180 °C 12–15 Minuten backen."
+  ],
+  "tips": "",
+  "imageUrl": null
+}

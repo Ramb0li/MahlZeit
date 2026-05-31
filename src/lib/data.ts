@@ -13,7 +13,7 @@
  * Legacy-globalen Pfad zurück (für Migrationsphase / Admin-Tools).
  */
 
-import type { Recipe, WeekPlan, AppSettings, PromotionsCache, WeatherCache, DayConstraint } from '@/types';
+import type { Recipe, WeekPlan, AppSettings, PromotionsCache, WeatherCache, DayConstraint, ShoppingGroups } from '@/types';
 
 import seedRecipes     from '../../data/recipes.json';
 import seedSettings    from '../../data/settings.json';
@@ -52,10 +52,11 @@ const K = {
   promotions:    'mz:promotions',
   weather:       'mz:weather',
   // Group-scoped
-  groupRecipes:     (g: string) => `mz:group:${g}:recipes`,     // custom recipes
-  groupSettings:    (g: string) => `mz:group:${g}:settings`,
-  groupConstraints: (g: string) => `mz:group:${g}:constraints`,
-  groupWeekPlan:    (g: string, w: string) => `mz:group:${g}:weekplan:${w}`,
+  groupRecipes:        (g: string) => `mz:group:${g}:recipes`,     // custom recipes
+  groupSettings:       (g: string) => `mz:group:${g}:settings`,
+  groupConstraints:    (g: string) => `mz:group:${g}:constraints`,
+  groupWeekPlan:       (g: string, w: string) => `mz:group:${g}:weekplan:${w}`,
+  groupShoppingGroups: (g: string, w: string) => `mz:group:${g}:week:${w}:shopping_groups`,
 };
 
 const EMPTY_PROMOTIONS: PromotionsCache = { lastUpdated: null, migros: [], coop: [], lidl: [] };
@@ -207,6 +208,32 @@ export async function saveWeekPlan(plan: WeekPlan, groupId?: string): Promise<vo
     return;
   }
   await getRedis().set(K.groupWeekPlan(groupId, plan.weekId), plan);
+}
+
+// ─── Shopping Groups (pro Gruppe + Woche) ────────────────────────────────────
+
+/** Standard: alle 7 Tage in einer Einkaufsliste */
+function defaultShoppingGroups(): ShoppingGroups {
+  return [{ id: 'sg-1', dayIndices: [1, 2, 3, 4, 5, 6, 7] }];
+}
+
+export async function getShoppingGroups(weekId: string, groupId: string): Promise<ShoppingGroups> {
+  if (!USE_REDIS) {
+    const all = readJson<Record<string, Record<string, ShoppingGroups>>>('group-shopping-groups.json', {});
+    return all[groupId]?.[weekId] ?? defaultShoppingGroups();
+  }
+  return (await getRedis().get<ShoppingGroups>(K.groupShoppingGroups(groupId, weekId))) ?? defaultShoppingGroups();
+}
+
+export async function saveShoppingGroups(weekId: string, groupId: string, groups: ShoppingGroups): Promise<void> {
+  if (!USE_REDIS) {
+    const all = readJson<Record<string, Record<string, ShoppingGroups>>>('group-shopping-groups.json', {});
+    if (!all[groupId]) all[groupId] = {};
+    all[groupId][weekId] = groups;
+    writeJson('group-shopping-groups.json', all);
+    return;
+  }
+  await getRedis().set(K.groupShoppingGroups(groupId, weekId), groups);
 }
 
 // ─── Promotions & Weather (global — nicht gruppen-spezifisch) ────────────────

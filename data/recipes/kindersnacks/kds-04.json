@@ -1,0 +1,117 @@
+{
+  "id": "kds-04",
+  "name": "Bunte Gemüse-Muffins",
+  "category": "Sonstige",
+  "timeMinutes": 55,
+  "timeLabel": "aufwendig",
+  "basePortions": 12,
+  "ingredients": [
+    {
+      "name": "Rote Linsen (trocken)",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Saatenmix",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 12
+    },
+    {
+      "name": "Weizenvollkornmehl",
+      "amount": 160,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Weizenmehl Type 1050",
+      "amount": 125,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Kichererbsenmehl",
+      "amount": 65,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Speisestärke",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 12
+    },
+    {
+      "name": "Backpulver",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 12
+    },
+    {
+      "name": "Natron",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 12
+    },
+    {
+      "name": "Hefeflocken",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 12
+    },
+    {
+      "name": "Italienische Kräuter",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 12
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 12
+    },
+    {
+      "name": "Gemüse (z.B. Karotte, Zucchini, Erbsen)",
+      "amount": 450,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Sojadrink",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Apfelessig",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 12
+    },
+    {
+      "name": "Rapsöl",
+      "amount": 125,
+      "unit": "g",
+      "perPortions": 12
+    }
+  ],
+  "season": [
+    "ganzjährig"
+  ],
+  "weatherType": "neutral",
+  "isMealprep": true,
+  "isSuitableForLunch": false,
+  "dietCategory": "vegan",
+  "source": "LittleFant – Kindersnacks für jeden Tag",
+  "description": "Herzhafte Muffins mit Linsen und buntem Gemüse – sättigend und voller Nährstoffe, perfekt für die Brotdose.",
+  "steps": [
+    "Linsen mindestens 2 Stunden einweichen, abspülen, 5 Minuten kochen, abgießen und abkühlen lassen.",
+    "Saatenmix ohne Fett anrösten und mit den trockenen Zutaten mischen. Gemüse fein reiben.",
+    "Alle Zutaten kurz zu einem homogenen Teig verrühren und 10 Minuten ruhen lassen.",
+    "Ofen auf 220 °C (Umluft) vorheizen. In Muffinförmchen füllen, 5 Minuten backen. Auf 180 °C reduzieren und weitere 30 Minuten backen."
+  ],
+  "tips": "Saaten und Erbsen je nach Alter des Kindes vorher zerkleinern.",
+  "imageUrl": null
+}

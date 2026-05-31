@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext, createContext } from 'react';
 import { Plus, Trash2, Save, ChevronDown, ChevronUp, Search, X, Users, Mail, Edit3 } from 'lucide-react';
 import { THEMES } from '@/lib/themes';
 import type { ThemeId } from '@/lib/themes';
@@ -67,6 +67,46 @@ const inputStyle = {
   fontSize: '13px',
   outline: 'none',
 } as const;
+
+// Stile für SettingsSection – auf Modul-Ebene damit keine Re-Renders ausgelöst werden
+const h2Style  = { fontSize: '15px', fontWeight: 600, color: '#2c2420' } as const;
+const subStyle = { fontSize: '12px', color: '#9c8c84', display: 'block', marginTop: '2px' } as const;
+
+// Context für collapsible Sections – stabile Referenz verhindert Scroll-Sprünge bei Re-Renders
+interface SectionCtxValue { openSections: Set<string>; toggleSection: (id: string) => void; }
+const SectionCtx = createContext<SectionCtxValue>({ openSections: new Set(), toggleSection: () => {} });
+
+function SettingsSection({ id, title, sub, children, action }: {
+  id: string; title: string; sub?: string; children: React.ReactNode; action?: React.ReactNode;
+}) {
+  const { openSections, toggleSection } = useContext(SectionCtx);
+  const open = openSections.has(id);
+  return (
+    <section style={sectionCard}>
+      <button
+        onClick={() => toggleSection(id)}
+        className="w-full flex items-center justify-between px-6 py-4 transition-colors"
+        style={{ backgroundColor: open ? 'transparent' : '#fffdf9' }}
+        onMouseEnter={e => { if (!open) (e.currentTarget as HTMLElement).style.backgroundColor = '#f7f4ee'; }}
+        onMouseLeave={e => { if (!open) (e.currentTarget as HTMLElement).style.backgroundColor = '#fffdf9'; }}
+      >
+        <div className="text-left">
+          <h2 style={h2Style}>{title}</h2>
+          {sub && <span style={subStyle}>{sub}</span>}
+        </div>
+        <div className="flex items-center gap-3">
+          {action && open && <div onClick={e => e.stopPropagation()}>{action}</div>}
+          {open ? <ChevronUp size={16} style={{ color: '#9c8c84' }} /> : <ChevronDown size={16} style={{ color: '#9c8c84' }} />}
+        </div>
+      </button>
+      {open && (
+        <div className="px-6 pb-5" style={{ borderTop: '1px solid #f0ebe3' }}>
+          <div className="mt-4">{children}</div>
+        </div>
+      )}
+    </section>
+  );
+}
 
 interface MemberSummary {
   email:     string;
@@ -256,43 +296,13 @@ export function SettingsView({
     setTimeout(() => setSaved(false), 2000);
   };
 
-  const h2Style = { fontSize: '15px', fontWeight: 600, color: '#2c2420' } as const;
-  const subStyle = { fontSize: '12px', color: '#9c8c84', display: 'block', marginTop: '2px' } as const;
   const labelStyle = { fontSize: '13px', fontWeight: 500, color: '#5a4e48', display: 'block', marginBottom: '4px' } as const;
 
-  // Collapsible section wrapper
-  const Section = ({ id, title, sub, children, action }: {
-    id: string; title: string; sub?: string; children: React.ReactNode; action?: React.ReactNode
-  }) => {
-    const open = openSections.has(id);
-    return (
-      <section style={sectionCard}>
-        <button
-          onClick={() => toggleSection(id)}
-          className="w-full flex items-center justify-between px-6 py-4 transition-colors"
-          style={{ backgroundColor: open ? 'transparent' : '#fffdf9' }}
-          onMouseEnter={e => { if (!open) (e.currentTarget as HTMLElement).style.backgroundColor = '#f7f4ee'; }}
-          onMouseLeave={e => { if (!open) (e.currentTarget as HTMLElement).style.backgroundColor = '#fffdf9'; }}
-        >
-          <div className="text-left">
-            <h2 style={h2Style}>{title}</h2>
-            {sub && <span style={subStyle}>{sub}</span>}
-          </div>
-          <div className="flex items-center gap-3">
-            {action && open && <div onClick={e => e.stopPropagation()}>{action}</div>}
-            {open ? <ChevronUp size={16} style={{ color: '#9c8c84' }} /> : <ChevronDown size={16} style={{ color: '#9c8c84' }} />}
-          </div>
-        </button>
-        {open && (
-          <div className="px-6 pb-5" style={{ borderTop: '1px solid #f0ebe3' }}>
-            <div className="mt-4">{children}</div>
-          </div>
-        )}
-      </section>
-    );
-  };
+  // SettingsSection liest openSections/toggleSection via SectionCtx – stabile Modul-Referenz
+  const Section = SettingsSection;
 
   return (
+    <SectionCtx.Provider value={{ openSections, toggleSection }}>
     <div className="max-w-2xl space-y-3">
 
       {/* ── Familie & Mitglieder ─────────────────────────────────────────── */}
@@ -545,13 +555,15 @@ export function SettingsView({
 
       {/* ── Diet preference ──────────────────────────────────────────────── */}
       <Section id="diet" title="Ernährungsweise" sub="Filtert Rezeptvorschläge und den Menü-Picker.">
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
           {(
             [
-              { value: 'alle',         emoji: '🍽',  label: 'Alle',          sub: 'Kein Filter' },
-              { value: 'pescetarisch', emoji: '🐟',  label: 'Pescetarisch',  sub: 'Kein Fleisch' },
-              { value: 'vegetarisch',  emoji: '🥗',  label: 'Vegetarisch',   sub: 'Kein Fisch' },
-              { value: 'vegan',        emoji: '🌿',  label: 'Vegan',         sub: 'Pflanzlich' },
+              { value: 'alle',          emoji: '🍽',  label: 'Alle',           sub: 'Kein Filter' },
+              { value: 'fleischhaltig', emoji: '🥩',  label: 'Fleischhaltig',  sub: 'Inkl. Fleischgerichte' },
+              { value: 'flexitarisch',  emoji: '🌾',  label: 'Flexitarisch',   sub: 'Max. 1× Fleisch/Woche' },
+              { value: 'pescetarisch',  emoji: '🐟',  label: 'Pescetarisch',   sub: 'Kein Fleisch' },
+              { value: 'vegetarisch',   emoji: '🥗',  label: 'Vegetarisch',    sub: 'Kein Fleisch, kein Fisch' },
+              { value: 'vegan',         emoji: '🌿',  label: 'Vegan',          sub: 'Nur pflanzlich' },
             ] as const
           ).map(({ value, emoji, label, sub }) => {
             const isActive = (settings.dietPreference ?? 'alle') === value;
@@ -896,5 +908,6 @@ export function SettingsView({
         </button>
       </div>
     </div>
+    </SectionCtx.Provider>
   );
 }

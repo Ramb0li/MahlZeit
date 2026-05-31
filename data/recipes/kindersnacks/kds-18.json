@@ -1,0 +1,61 @@
+{
+  "id": "kds-18",
+  "name": "Cashew-Zimt-Energyballs",
+  "category": "Süsses",
+  "timeMinutes": 20,
+  "timeLabel": "mittel",
+  "basePortions": 15,
+  "ingredients": [
+    {
+      "name": "Haferflocken",
+      "amount": 40,
+      "unit": "g",
+      "perPortions": 15
+    },
+    {
+      "name": "Hirseflocken",
+      "amount": 35,
+      "unit": "g",
+      "perPortions": 15
+    },
+    {
+      "name": "Datteln",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 15
+    },
+    {
+      "name": "Cashewmus",
+      "amount": 25,
+      "unit": "g",
+      "perPortions": 15
+    },
+    {
+      "name": "Zimt",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 15
+    },
+    {
+      "name": "Kokosflocken",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 15
+    }
+  ],
+  "season": [
+    "ganzjährig"
+  ],
+  "weatherType": "neutral",
+  "isMealprep": true,
+  "isSuitableForLunch": false,
+  "dietCategory": "vegan",
+  "source": "LittleFant – Kindersnacks für jeden Tag",
+  "description": "Schnelle Energyballs mit Datteln, Cashewmus und Zimt – in Kokosflocken gewälzt.",
+  "steps": [
+    "Hafer- und Hirseflocken fein mahlen. Datteln einweichen, abtropfen und mit Cashewmus pürieren.",
+    "Alle Zutaten außer Kokosflocken vermengen. Zu Kugeln formen und in Kokosflocken wälzen."
+  ],
+  "tips": "Im Kühlschrank ca. 2 Wochen haltbar.",
+  "imageUrl": null
+}

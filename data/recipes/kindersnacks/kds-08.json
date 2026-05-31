@@ -1,0 +1,86 @@
+{
+  "id": "kds-08",
+  "name": "Blumenkohl-Puffer",
+  "category": "Sonstige",
+  "timeMinutes": 40,
+  "timeLabel": "mittel",
+  "basePortions": 12,
+  "ingredients": [
+    {
+      "name": "Blumenkohl",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 12
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 12
+    },
+    {
+      "name": "Petersilie",
+      "amount": 2,
+      "unit": "Stiele",
+      "perPortions": 12
+    },
+    {
+      "name": "Kichererbsen (gekocht)",
+      "amount": 240,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Leinsamen",
+      "amount": 1.5,
+      "unit": "EL",
+      "perPortions": 12
+    },
+    {
+      "name": "Haferflocken",
+      "amount": 60,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Paprikapulver edelsüß",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 12
+    },
+    {
+      "name": "Salz",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 12
+    },
+    {
+      "name": "Rapsöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 12
+    }
+  ],
+  "season": [
+    "ganzjährig"
+  ],
+  "weatherType": "neutral",
+  "isMealprep": true,
+  "isSuitableForLunch": true,
+  "dietCategory": "vegan",
+  "source": "LittleFant – Kindersnacks für jeden Tag",
+  "description": "Blumenkohl-Kichererbsen-Puffer – nährstoffreich, gut vorzubereiten und auch als Beilage geeignet.",
+  "steps": [
+    "Blumenkohl in Röschen schneiden, 10–15 Minuten dünsten, abdampfen und zerdrücken.",
+    "Zwiebel und Knoblauch glasig dünsten. Kichererbsen zerkleinern, Leinsamen schroten, Haferflocken zu Mehl mahlen.",
+    "Alle Zutaten mischen, zu Bratlingen formen und in Rapsöl von beiden Seiten goldbraun braten."
+  ],
+  "tips": "",
+  "imageUrl": null
+}

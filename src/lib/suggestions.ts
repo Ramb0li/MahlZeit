@@ -91,6 +91,7 @@ export interface SuggestWeekOptions {
   showLunch?: boolean;
   showDinner?: boolean;
   allergiesAndAversions?: string[];
+  flexitarisch?: boolean;  // max 1 Fleischgericht pro Wochenplan
 }
 
 // Fix #5: Categories that should never appear as dinner or lunch suggestions.
@@ -104,9 +105,10 @@ export function suggestWeek(
   season: Season,
   opts: SuggestWeekOptions = {}
 ): Record<number, { breakfast?: string; lunch?: string; dinner?: string }> {
-  const { showBreakfast = false, showLunch = false, showDinner = true, allergiesAndAversions } = opts;
+  const { showBreakfast = false, showLunch = false, showDinner = true, allergiesAndAversions, flexitarisch = false } = opts;
   const result: Record<number, { breakfast?: string; lunch?: string; dinner?: string }> = {};
   const usedIds: string[] = [];
+  let meatMealsThisWeek = 0; // Flexitarisch: zählt Fleischgerichte
 
   // Breakfast: prefer Frühstück category; also allow quick lunch-suitable recipes
   const breakfastRecipes = recipes.filter(
@@ -133,12 +135,17 @@ export function suggestWeek(
     result[day] = {};
 
     if (showDinner) {
-      const dinner = suggestRecipe(dinnerRecipes, {
+      // Flexitarisch: Fleischgerichte nach dem ersten ausblenden
+      const dinnerPool = flexitarisch && meatMealsThisWeek >= 1
+        ? dinnerRecipes.filter(r => r.dietCategory !== 'meat')
+        : dinnerRecipes;
+      const dinner = suggestRecipe(dinnerPool, {
         weatherType, season, constraint, usedThisWeek: usedIds, allergiesAndAversions,
       });
       if (dinner) {
         result[day].dinner = dinner.id;
         usedIds.push(dinner.id);
+        if (dinner.dietCategory === 'meat') meatMealsThisWeek++;
       }
     }
 

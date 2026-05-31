@@ -1,0 +1,50 @@
+{
+  "id": "kds-14",
+  "name": "Eisen-Booster-Energyballs",
+  "category": "Süsses",
+  "timeMinutes": 20,
+  "timeLabel": "mittel",
+  "basePortions": 20,
+  "ingredients": [
+    {
+      "name": "Getrocknete Aprikosen",
+      "amount": 80,
+      "unit": "g",
+      "perPortions": 20
+    },
+    {
+      "name": "Mandelmus",
+      "amount": 25,
+      "unit": "g",
+      "perPortions": 20
+    },
+    {
+      "name": "Haferflocken",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 20
+    },
+    {
+      "name": "Kürbiskerne",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 20
+    }
+  ],
+  "season": [
+    "ganzjährig"
+  ],
+  "weatherType": "neutral",
+  "isMealprep": true,
+  "isSuitableForLunch": false,
+  "dietCategory": "vegan",
+  "source": "LittleFant – Kindersnacks für jeden Tag",
+  "description": "Eisenreiche Energyballs aus Aprikosen, Haferflocken und Kürbiskernen – schnell gemacht, 2 Wochen haltbar.",
+  "steps": [
+    "Aprikosen 10 Minuten einweichen, abtropfen und mit Mandelmus pürieren.",
+    "Haferflocken und Kürbiskerne fein mahlen. Mit Aprikosen-Masse vermengen.",
+    "Mit feuchten Händen zu ca. 20 Kugeln formen."
+  ],
+  "tips": "Im Kühlschrank ca. 2 Wochen haltbar, alternativ einfrieren.",
+  "imageUrl": null
+}

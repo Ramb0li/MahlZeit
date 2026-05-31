@@ -202,6 +202,101 @@ export async function sendInviteEmail(
   }
 }
 
+// ─── Password Reset ─────────────────────────────────────────────────────────
+
+function resetHtml(firstName: string, resetUrl: string): string {
+  return `<div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 600px; margin: 0 auto; background: #f2f6f2; padding: 32px 24px;">
+  <div style="background: #4a7a4e; color: #fff; padding: 20px 24px; border-radius: 16px 16px 0 0;">
+    <h1 style="margin: 0; font-size: 22px; font-weight: 800;">
+      Mahl<span style="opacity: 0.85;">Zeit</span>
+    </h1>
+    <p style="margin: 4px 0 0; font-size: 13px; opacity: 0.9;">Menüplaner für Familien</p>
+  </div>
+  <div style="background: #fff; padding: 32px 24px; border-radius: 0 0 16px 16px;">
+    <p style="font-size: 16px; color: #2c2420; margin: 0 0 16px;">
+      Hallo ${escapeHtml(firstName)},
+    </p>
+    <p style="font-size: 15px; line-height: 1.6; color: #2c2420; margin: 0 0 24px;">
+      wir haben eine Anfrage erhalten, das Passwort für deinen MahlZeit-Account
+      zurückzusetzen. Klicke auf den Button, um ein neues Passwort festzulegen:
+    </p>
+    <div style="text-align: center; margin: 32px 0;">
+      <a href="${resetUrl}"
+         style="display: inline-block; background: #b5614a; color: #fff;
+                padding: 14px 32px; border-radius: 12px; text-decoration: none;
+                font-weight: 600; font-size: 15px;">
+        Passwort zurücksetzen →
+      </a>
+    </div>
+    <p style="font-size: 13px; color: #6b8c6f; line-height: 1.6; margin: 0 0 8px;">
+      Der Link ist <strong>1 Stunde</strong> gültig. Falls der Button nicht funktioniert,
+      kopiere diesen Link in deinen Browser:
+    </p>
+    <p style="font-size: 12px; color: #9c8c84; word-break: break-all; margin: 0 0 24px;">
+      ${resetUrl}
+    </p>
+    <hr style="border: none; border-top: 1px solid #e0e8e0; margin: 24px 0;" />
+    <p style="font-size: 12px; color: #9c8c84; line-height: 1.5; margin: 0;">
+      Du hast kein Passwort-Reset angefordert? Dann ignoriere diese E-Mail einfach —
+      dein Passwort bleibt unverändert.
+    </p>
+  </div>
+  <p style="text-align: center; font-size: 11px; color: #9c8c84; margin-top: 16px;">
+    MahlZeit · Wochenplaner für Familien · info@o-v-k.ch
+  </p>
+</div>`;
+}
+
+function resetText(firstName: string, resetUrl: string): string {
+  return `Hallo ${firstName},
+
+wir haben eine Anfrage erhalten, das Passwort für deinen MahlZeit-Account zurückzusetzen.
+
+Klicke auf den folgenden Link, um ein neues Passwort festzulegen:
+
+${resetUrl}
+
+Der Link ist 1 Stunde gültig.
+
+Falls du kein Passwort-Reset angefordert hast, ignoriere diese E-Mail einfach.
+Dein Passwort bleibt unverändert.
+
+Herzliche Grüsse
+Das MahlZeit-Team`;
+}
+
+export async function sendPasswordResetEmail(
+  firstName: string,
+  toEmail: string,
+  token: string,
+): Promise<void> {
+  const resetUrl = `${getAppUrl()}/auth?mode=reset&token=${encodeURIComponent(token)}`;
+  const apiKey   = process.env.RESEND_API_KEY;
+
+  if (!apiKey) {
+    console.log(
+      `\n[email] RESEND_API_KEY nicht gesetzt — Passwort-Reset-URL:\n  ${resetUrl}\n  (User: ${toEmail})\n`
+    );
+    return;
+  }
+
+  const { Resend } = await import('resend');
+  const resend     = new Resend(apiKey);
+
+  const { error } = await resend.emails.send({
+    from:    getFromEmail(),
+    to:      toEmail,
+    subject: 'Dein MahlZeit-Passwort zurücksetzen',
+    html:    resetHtml(firstName, resetUrl),
+    text:    resetText(firstName, resetUrl),
+  });
+
+  if (error) {
+    console.error('[email] Passwort-Reset-Versand fehlgeschlagen:', error);
+    throw new Error('E-Mail-Versand fehlgeschlagen');
+  }
+}
+
 // ─── Confirmation ───────────────────────────────────────────────────────────
 
 export async function sendConfirmationEmail(user: AppUser, token: string): Promise<void> {

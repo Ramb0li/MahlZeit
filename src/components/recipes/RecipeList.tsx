@@ -5,20 +5,24 @@ import { RecipeForm } from './RecipeForm';
 import { ImportRecipeModal } from './ImportRecipeModal';
 import { Modal } from '@/components/ui/Modal';
 import { isRecipeExcluded } from '@/lib/allergens';
-import type { Recipe, Category, TimeLabel, DietType } from '@/types';
-
-const DIET_OPTIONS: { value: DietType | 'Alle'; label: string }[] = [
-  { value: 'Alle',         label: 'Alle Rezepte' },
-  { value: 'pescetarisch', label: '🐟 Pescetarisch' },
-  { value: 'vegetarisch',  label: '🥗 Vegetarisch' },
-  { value: 'vegan',        label: '🌿 Vegan' },
-];
+import type { Recipe, Category, TimeLabel, DietType, DietCategory } from '@/types';
 
 const DIET_BADGE: Record<DietType, { label: string; bg: string; color: string }> = {
-  vegan:        { label: '🌿 Vegan',        bg: '#f5ece0', color: '#c49a6c' },
-  vegetarisch:  { label: '🥗 Vegetarisch',  bg: '#f2e5e0', color: '#b5614a' },
-  pescetarisch: { label: '🐟 Pescetarisch', bg: '#e8dfd3', color: '#5a4e48' },
+  vegan:          { label: '🌿 Vegan',         bg: '#f5ece0', color: '#c49a6c' },
+  vegetarisch:    { label: '🥗 Vegetarisch',   bg: '#f2e5e0', color: '#b5614a' },
+  pescetarisch:   { label: '🐟 Pescetarisch',  bg: '#e8dfd3', color: '#5a4e48' },
+  fleischhaltig:  { label: '🥩 Fleischhaltig', bg: '#fce4ec', color: '#c62828' },
+  flexitarisch:   { label: '🌾 Flexitarisch',  bg: '#fff3e0', color: '#e65100' },
 };
+
+/** Filter-Tabs basierend auf dem neuen dietCategory-Feld */
+const DIET_CAT_TABS: { value: DietCategory | 'alle'; label: string }[] = [
+  { value: 'alle',        label: 'Alle Rezepte' },
+  { value: 'meat',        label: '🥩 Fleischhaltig' },
+  { value: 'fish',        label: '🐟 Pescetarisch' },
+  { value: 'vegetarian',  label: '🥗 Vegetarisch' },
+  { value: 'vegan',       label: '🌿 Vegan' },
+];
 
 const CATEGORIES: Category[] = [
   'Eier', 'Reis', 'Pasta', 'Eintopf/Gratin', 'Fisch',
@@ -52,7 +56,7 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
   const [search, setSearch]                 = useState('');
   const [filterCategory, setFilterCategory] = useState<Category | 'Alle'>('Alle');
   const [filterTime, setFilterTime]         = useState<TimeLabel | 'Alle'>('Alle');
-  const [filterDiet, setFilterDiet]         = useState<DietType | 'Alle'>('Alle');
+  const [filterDietCat, setFilterDietCat]   = useState<DietCategory | 'alle'>('alle');
   const [editRecipe, setEditRecipe]         = useState<Recipe | null>(null);
   const [isCreating, setIsCreating]         = useState(false);
   const [showArchive, setShowArchive]       = useState(false);
@@ -83,12 +87,22 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
     return recipes.filter((r) => {
       if (r.archived) return false;
       if (filterCategory !== 'Alle' && r.category !== filterCategory) return false;
-      if (filterTime    !== 'Alle' && r.timeLabel  !== filterTime)    return false;
-      if (filterDiet    !== 'Alle' && r.dietType   !== filterDiet)    return false;
+      if (filterTime     !== 'Alle' && r.timeLabel !== filterTime)     return false;
+      // dietCategory-Filter (Phase 2)
+      if (filterDietCat !== 'alle') {
+        // "Pescetarisch"-Tab: zeigt fish + vegetarian + vegan
+        if (filterDietCat === 'fish') {
+          if (!r.dietCategory || !['fish', 'vegetarian', 'vegan'].includes(r.dietCategory)) return false;
+        } else if (filterDietCat === 'vegetarian') {
+          if (!r.dietCategory || !['vegetarian', 'vegan'].includes(r.dietCategory)) return false;
+        } else {
+          if (r.dietCategory !== filterDietCat) return false;
+        }
+      }
       if (search && !r.name.toLowerCase().includes(search.toLowerCase())) return false;
       return true;
     });
-  }, [recipes, search, filterCategory, filterTime, filterDiet]);
+  }, [recipes, search, filterCategory, filterTime, filterDietCat]);
 
   const archivedFiltered = useMemo(() => {
     return recipes.filter((r) => {
@@ -208,13 +222,14 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
             ))}
           </div>
 
+          {/* Diet-Kategorie-Tabs (Phase 2) */}
           <div className="flex flex-wrap gap-1.5">
-            {DIET_OPTIONS.map(({ value, label }) => (
+            {DIET_CAT_TABS.map(({ value, label }) => (
               <button
                 key={value}
-                onClick={() => setFilterDiet(value as DietType | 'Alle')}
+                onClick={() => setFilterDietCat(value as DietCategory | 'alle')}
                 className="px-2.5 py-1 rounded-full text-xs font-semibold transition-all"
-                style={filterDiet === value ? chipActive : chipInactive}
+                style={filterDietCat === value ? chipActive : chipInactive}
               >
                 {label}
               </button>

@@ -1,0 +1,99 @@
+{
+  "id": "kds-09",
+  "name": "Gemüsebrötchen",
+  "category": "Brot & Aufstrich",
+  "timeMinutes": 85,
+  "timeLabel": "aufwendig",
+  "basePortions": 8,
+  "ingredients": [
+    {
+      "name": "Gelbe Linsen (trocken)",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 8
+    },
+    {
+      "name": "Sojadrink",
+      "amount": 150,
+      "unit": "ml",
+      "perPortions": 8
+    },
+    {
+      "name": "Frischhefe",
+      "amount": 10,
+      "unit": "g",
+      "perPortions": 8
+    },
+    {
+      "name": "Sesammus",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 8
+    },
+    {
+      "name": "Dinkelmehl Type 630",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 8
+    },
+    {
+      "name": "Dinkelvollkornmehl",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 8
+    },
+    {
+      "name": "Mais",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 8
+    },
+    {
+      "name": "Paprika (fein gewürfelt)",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 8
+    },
+    {
+      "name": "Karotte (fein gerieben)",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 8
+    },
+    {
+      "name": "Hefeflocken",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 8
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 8
+    },
+    {
+      "name": "Kurkuma",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 8
+    }
+  ],
+  "season": [
+    "ganzjährig"
+  ],
+  "weatherType": "neutral",
+  "isMealprep": true,
+  "isSuitableForLunch": false,
+  "dietCategory": "vegan",
+  "source": "LittleFant – Kindersnacks für jeden Tag",
+  "description": "Bunte Brötchen mit Karotte, Paprika, Mais und versteckten Linsen – nährstoffreich und farbenfroh.",
+  "steps": [
+    "Linsen 2+ Stunden einweichen, 5 Minuten kochen, abgießen.",
+    "Sojadrink handwarm erwärmen, Hefe auflösen, Sesammus einrühren. Mehl zugeben und zu elastischem Teig kneten. 30–45 Minuten gehen lassen.",
+    "Gemüse und Linsen in den Teig kneten. 8 Brötchen formen, 20 Minuten gehen lassen.",
+    "Mit Kurkuma-Sojadrink bepinseln. Bei 180 °C (Ober-/Unterhitze) 20–25 Minuten backen."
+  ],
+  "tips": "Für Kinder unter 12 Monaten Mais zerkleinern und Salz weglassen.",
+  "imageUrl": null
+}

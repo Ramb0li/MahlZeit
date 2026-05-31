@@ -1,0 +1,92 @@
+{
+  "id": "kds-12",
+  "name": "30-Minuten-Brötchen",
+  "category": "Brot & Aufstrich",
+  "timeMinutes": 30,
+  "timeLabel": "mittel",
+  "basePortions": 8,
+  "ingredients": [
+    {
+      "name": "Kichererbsen (gekocht)",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 8
+    },
+    {
+      "name": "Dinkelvollkornmehl",
+      "amount": 125,
+      "unit": "g",
+      "perPortions": 8
+    },
+    {
+      "name": "Dinkelmehl Type 630",
+      "amount": 125,
+      "unit": "g",
+      "perPortions": 8
+    },
+    {
+      "name": "Sojajoghurt",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 8
+    },
+    {
+      "name": "Sesammus",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 8
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 8
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 8
+    },
+    {
+      "name": "Backpulver",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 8
+    },
+    {
+      "name": "Natron",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 8
+    },
+    {
+      "name": "Paprikapulver edelsüß",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 8
+    },
+    {
+      "name": "Hefeflocken",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 8
+    }
+  ],
+  "season": [
+    "ganzjährig"
+  ],
+  "weatherType": "neutral",
+  "isMealprep": true,
+  "isSuitableForLunch": false,
+  "dietCategory": "vegan",
+  "source": "LittleFant – Kindersnacks für jeden Tag",
+  "description": "Nährstoffreiche Brötchen ohne Hefe – in 30 Minuten fertig. Mit Kichererbsen und Sojajoghurt.",
+  "steps": [
+    "Kichererbsen grob zerkleinern. Alle Zutaten zu einem Teig kneten.",
+    "In 8 Portionen teilen, zu Kugeln formen, flach drücken, einschneiden, einpinseln.",
+    "Bei 190 °C (Umluft) 15 Minuten goldbraun backen."
+  ],
+  "tips": "Für die Beikost ohne Salz zubereiten.",
+  "imageUrl": null
+}

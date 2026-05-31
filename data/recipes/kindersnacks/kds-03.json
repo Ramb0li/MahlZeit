@@ -1,0 +1,87 @@
+{
+  "id": "kds-03",
+  "name": "Tahin-Cracker",
+  "category": "Brot & Aufstrich",
+  "timeMinutes": 25,
+  "timeLabel": "mittel",
+  "basePortions": 30,
+  "ingredients": [
+    {
+      "name": "Dinkelvollkornmehl",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 30
+    },
+    {
+      "name": "Kichererbsenmehl",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 30
+    },
+    {
+      "name": "Hefeflocken",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 30
+    },
+    {
+      "name": "Rosmarin",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 30
+    },
+    {
+      "name": "Salz",
+      "amount": 3,
+      "unit": "g",
+      "perPortions": 30
+    },
+    {
+      "name": "Trockenhefe",
+      "amount": 5,
+      "unit": "g",
+      "perPortions": 30
+    },
+    {
+      "name": "Wasser",
+      "amount": 100,
+      "unit": "ml",
+      "perPortions": 30
+    },
+    {
+      "name": "Sesammus (Tahin)",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 30
+    },
+    {
+      "name": "Rapsöl",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 30
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 30
+    }
+  ],
+  "season": [
+    "ganzjährig"
+  ],
+  "weatherType": "neutral",
+  "isMealprep": true,
+  "isSuitableForLunch": false,
+  "dietCategory": "vegan",
+  "source": "LittleFant – Kindersnacks für jeden Tag",
+  "description": "Knusprige Cracker mit Sesammus – sättigend und nährstoffreich. Halten luftdicht verpackt ca. 2 Wochen.",
+  "steps": [
+    "Alle trockenen Zutaten vermischen.",
+    "Hefe in Wasser auflösen, Sesammus, Rapsöl und Olivenöl unterrühren. Zur Mehlmischung geben und zu einem glatten Teig kneten.",
+    "Teig in 2 Hälften teilen und dünn ausrollen. Auf Backpapier-Bleche legen und in Rechtecke schneiden.",
+    "Bei 200 °C (Umluft) ca. 8–12 Minuten backen bis goldbraun."
+  ],
+  "tips": "Luftdicht aufbewahren – ca. 2 Wochen haltbar.",
+  "imageUrl": null
+}

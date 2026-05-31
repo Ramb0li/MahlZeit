@@ -1,7 +1,9 @@
 export type WeatherType = 'warm' | 'kalt' | 'neutral';
 export type Season = 'Frühling' | 'Sommer' | 'Herbst' | 'Winter' | 'ganzjährig';
 export type TimeLabel = 'schnell' | 'mittel' | 'aufwändig';
-export type DietType = 'vegan' | 'vegetarisch' | 'pescetarisch';
+export type DietType = 'vegan' | 'vegetarisch' | 'pescetarisch' | 'fleischhaltig' | 'flexitarisch';
+/** Nutritional category derived from ingredients — used for diet filtering. */
+export type DietCategory = 'meat' | 'fish' | 'vegetarian' | 'vegan';
 export type Category =
   | 'Eier'
   | 'Reis'
@@ -45,7 +47,8 @@ export interface Recipe {
   imageZutaten?: string | null;  // Zutaten-Bild
   imageKochen?: string | null;   // Kochprozess-Bild
   archived?: boolean;            // Archiviert – nicht vorschlagen, nicht im Picker zeigen
-  dietType?: DietType;           // Ernährungsweise
+  dietType?: DietType;           // Ernährungsweise (Legacy-Feld für manuelle Markierung)
+  dietCategory?: DietCategory;   // Automatisch aus Zutaten abgeleitete Kategorie
 }
 
 export interface MealSlot {
@@ -101,6 +104,7 @@ export interface AppSettings {
   showLunch: boolean;       // Mittagessen im Wochenplaner anzeigen
   showDinner: boolean;      // Abendessen im Wochenplaner anzeigen
   dietPreference?: DietType | 'alle';  // Globaler Diät-Filter für Picker & Vorschläge
+  onboardingDone?: boolean;            // Onboarding-Fragebogen abgeschlossen
   theme?: import('@/lib/themes').ThemeId;
   promotions: PromotionSettings;
   weekSwitchDay?: number;   // 0=Sonntag (default), 1=Mo, ..., 6=Sa — ab diesem Tag nächste Woche anzeigen
@@ -147,6 +151,15 @@ export interface DayConstraint {
   mealprepLunchDays?: number[];
   notes?: string;
 }
+
+/** Gruppiert Tage (1=Mo … 7=So) einer Woche auf Einkaufslisten */
+export interface ShoppingGroup {
+  id: string;          // z.B. "sg-1"
+  label?: string;      // optionaler Name
+  dayIndices: number[]; // 1–7 (Mo–So)
+}
+
+export type ShoppingGroups = ShoppingGroup[];
 
 export interface ShoppingItem {
   name: string;

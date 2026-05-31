@@ -1,0 +1,74 @@
+{
+  "id": "kds-13",
+  "name": "Gesunde Vanille-Waffeln",
+  "category": "Frühstück",
+  "timeMinutes": 25,
+  "timeLabel": "mittel",
+  "basePortions": 6,
+  "ingredients": [
+    {
+      "name": "Rosinen",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Weiße Bohnen (gekocht)",
+      "amount": 120,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Sojadrink",
+      "amount": 250,
+      "unit": "ml",
+      "perPortions": 6
+    },
+    {
+      "name": "Mandelmus",
+      "amount": 20,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Dinkelvollkornmehl",
+      "amount": 70,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Haferflocken Feinblatt",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Bourbon-Vanille (gemahlen)",
+      "amount": 0.25,
+      "unit": "TL",
+      "perPortions": 6
+    },
+    {
+      "name": "Backpulver",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 6
+    }
+  ],
+  "season": [
+    "ganzjährig"
+  ],
+  "weatherType": "neutral",
+  "isMealprep": true,
+  "isSuitableForLunch": false,
+  "dietCategory": "vegan",
+  "source": "LittleFant – Kindersnacks für jeden Tag",
+  "description": "Waffeln mit Rosinen, weißen Bohnen und Vanille – nur natürlich gesüßt, einfach und nährstoffreich.",
+  "steps": [
+    "Rosinen mit weißen Bohnen, Sojadrink und Mandelmus fein mixen.",
+    "Trockene Zutaten vermischen und mit dem Bohnen-Mix verrühren.",
+    "Im gefetteten Waffeleisen goldbraune Waffeln ausbacken."
+  ],
+  "tips": "Gut auf Vorrat zubereiten und im Toaster frisch aufbacken.",
+  "imageUrl": null
+}

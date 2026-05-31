@@ -1,0 +1,69 @@
+{
+  "id": "kds-19",
+  "name": "Glücks-Hörnchen mit Vanille",
+  "category": "Süsses",
+  "timeMinutes": 90,
+  "timeLabel": "aufwendig",
+  "basePortions": 8,
+  "ingredients": [
+    {
+      "name": "Weiße Bohnen (gekocht)",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 8
+    },
+    {
+      "name": "Apfelmark",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 8
+    },
+    {
+      "name": "Cashewmus",
+      "amount": 25,
+      "unit": "g",
+      "perPortions": 8
+    },
+    {
+      "name": "Sojadrink",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 8
+    },
+    {
+      "name": "Frischhefe",
+      "amount": 7,
+      "unit": "g",
+      "perPortions": 8
+    },
+    {
+      "name": "Bourbon-Vanille (gemahlen)",
+      "amount": 0.25,
+      "unit": "TL",
+      "perPortions": 8
+    },
+    {
+      "name": "Dinkelmehl Type 630",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 8
+    }
+  ],
+  "season": [
+    "ganzjährig"
+  ],
+  "weatherType": "neutral",
+  "isMealprep": true,
+  "isSuitableForLunch": false,
+  "dietCategory": "vegan",
+  "source": "LittleFant – Kindersnacks für jeden Tag",
+  "description": "Fluffige Vanille-Hörnchen mit weißen Bohnen und Cashewmus – reich an Protein, Eisen und Serotonin-Vorstufen.",
+  "steps": [
+    "Bohnen mit Apfelmark und Cashewmus fein pürieren.",
+    "Sojadrink handwarm erwärmen, Hefe auflösen, Vanille und Bohnen-Mix einrühren. Mehl zugeben und zu elastischem Teig kneten. 30–45 Minuten gehen lassen.",
+    "Zu Kreis ausrollen, in 8 Stücke schneiden. Von der breiten Seite aufrollen und zu Hörnchen biegen. Weitere 30 Minuten gehen lassen.",
+    "Mit Sojasahne einpinseln. Bei 180 °C (Ober-/Unterhitze) 15–20 Minuten goldbraun backen."
+  ],
+  "tips": "",
+  "imageUrl": null
+}

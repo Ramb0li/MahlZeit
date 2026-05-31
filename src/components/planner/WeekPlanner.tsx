@@ -6,7 +6,8 @@ import { de } from 'date-fns/locale';
 import { getWeekId, getWeekDays, nextWeek, prevWeek, formatDate, getInitialDisplayWeek } from '@/lib/utils';
 import { getTheme } from '@/lib/themes';
 import { DayColumn } from './DayColumn';
-import type { WeekPlan, Recipe, WeatherCache, DayConstraint, AppSettings, MealSlot } from '@/types';
+import { ShoppingGroupsBar } from './ShoppingGroupsBar';
+import type { WeekPlan, Recipe, WeatherCache, DayConstraint, AppSettings, MealSlot, ShoppingGroups } from '@/types';
 
 interface WeekPlannerProps {
   recipes: Recipe[];
@@ -20,6 +21,7 @@ export function WeekPlanner({ recipes, settings, constraints }: WeekPlannerProps
   );
   const [weekPlan, setWeekPlan] = useState<WeekPlan | null>(null);
   const [weather, setWeather] = useState<WeatherCache | null>(null);
+  const [shoppingGroups, setShoppingGroups] = useState<ShoppingGroups>([{ id: 'sg-1', dayIndices: [1,2,3,4,5,6,7] }]);
   const [isSuggesting, setIsSuggesting] = useState(false);
   const [isClearing, setIsClearing] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -31,9 +33,16 @@ export function WeekPlanner({ recipes, settings, constraints }: WeekPlannerProps
   const loadPlan = useCallback(async () => {
     setLoading(true);
     try {
-      const res = await fetch(`/api/weekplan?weekId=${weekId}`);
-      const data = await res.json();
-      setWeekPlan(data);
+      const [planRes, groupsRes] = await Promise.all([
+        fetch(`/api/weekplan?weekId=${weekId}`),
+        fetch(`/api/weekplan/shopping-groups?weekId=${weekId}`),
+      ]);
+      const planData = await planRes.json();
+      setWeekPlan(planData);
+      if (groupsRes.ok) {
+        const groupsData = await groupsRes.json();
+        setShoppingGroups(groupsData);
+      }
     } finally {
       setLoading(false);
     }
@@ -347,6 +356,13 @@ export function WeekPlanner({ recipes, settings, constraints }: WeekPlannerProps
           </button>
         </div>
       </div>
+
+      {/* Shopping Groups Bar */}
+      <ShoppingGroupsBar
+        weekId={weekId}
+        groups={shoppingGroups}
+        onChange={setShoppingGroups}
+      />
 
       {loading ? (
         <div className="flex-1 flex items-center justify-center text-sm" style={{ color: theme.pageSubtext }}>

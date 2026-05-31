@@ -1,0 +1,105 @@
+{
+  "id": "kds-02",
+  "name": "Hummus-Waffeln",
+  "category": "Frühstück",
+  "timeMinutes": 40,
+  "timeLabel": "mittel",
+  "basePortions": 5,
+  "ingredients": [
+    {
+      "name": "Chiasamen",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 5
+    },
+    {
+      "name": "Wasser (zum Quellen)",
+      "amount": 6,
+      "unit": "EL",
+      "perPortions": 5
+    },
+    {
+      "name": "Kichererbsen (gekocht)",
+      "amount": 240,
+      "unit": "g",
+      "perPortions": 5
+    },
+    {
+      "name": "Sesammus (Tahin)",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 5
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 5
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 5
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 30,
+      "unit": "ml",
+      "perPortions": 5
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 5
+    },
+    {
+      "name": "Wasser",
+      "amount": 120,
+      "unit": "ml",
+      "perPortions": 5
+    },
+    {
+      "name": "Dinkelmehl Type 630",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 5
+    },
+    {
+      "name": "Dinkelvollkornmehl",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 5
+    },
+    {
+      "name": "Backpulver",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 5
+    },
+    {
+      "name": "Kreuzkümmel",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 5
+    }
+  ],
+  "season": [
+    "ganzjährig"
+  ],
+  "weatherType": "neutral",
+  "isMealprep": true,
+  "isSuitableForLunch": false,
+  "dietCategory": "vegan",
+  "source": "LittleFant – Kindersnacks für jeden Tag",
+  "description": "Hummus in Waffelform! Eisenreich dank Kichererbsen und Chiasamen, praktisch zum Mitnehmen.",
+  "steps": [
+    "Chiasamen mit 6 EL Wasser vermengen und mindestens 10 Minuten quellen lassen.",
+    "Kichererbsen gut abspülen und mit Sesammus, Knoblauch, Zitronensaft, Olivenöl, Salz, Wasser und den gequollenen Chiasamen fein pürieren.",
+    "Mehl, Backpulver und Kreuzkümmel mischen. Kichererbsenmasse hinzugeben und zu einem Teig zusammenfügen.",
+    "Waffeleisen erhitzen und mit Olivenöl einfetten. Teig portionsweise zu goldbraunen Waffeln ausbacken."
+  ],
+  "tips": "Für die Beikost ohne Salz zubereiten.",
+  "imageUrl": null
+}

@@ -72,3 +72,38 @@ See `.env.example`. Required for full functionality:
 - `RESEND_API_KEY` + `FROM_EMAIL` + `APP_URL` — Email sending
 - `JWT_SECRET` — Session signing (dev uses insecure fallback)
 - `UPSTASH_REDIS_REST_URL` + `UPSTASH_REDIS_REST_TOKEN` — Production persistence
+
+## Current Status (Stand 2026-05-31 – Update nach Phases 1–6)
+
+**Live:** https://mahlzeit.o-v-k.ch (Vercel, Upstash Redis, Resend).
+
+**Content:**
+- 95 Template-Rezepte in `data/recipes.json` (+21 Kindersnacks aus LittleFant-PDF, IDs `kds-01`–`kds-21`)
+- 16 Rezepte mit Bildern in `public/images/recipes/` verlinkt (13 MahlZeit + 3 ältere)
+- 26 MahlZeit-Bilder + 20 Cuiselin-Bilder verfügbar — viele Cuiselin-Bilder noch nicht als Rezept angelegt
+- Kategorien erweitert: `Frühstück`, `Süsses`, `Brot & Aufstrich` (siehe `src/types/index.ts`, `RecipeList.tsx`, `RecipeForm.tsx`, `RecipePickerModal.tsx`)
+- Alle Kindersnacks: `dietCategory: 'vegan'`, `source: 'LittleFant – Kindersnacks für jeden Tag'`, `isMealprep: true`
+
+**Asset-Struktur** (außerhalb des Repos):
+```
+../Menüs/
+├── Quellen/{Cuiselin,MahlZeit}/   # Original-Bilder (Backup)
+├── PDFs/_Importiert/              # bereits verarbeitete PDFs (inkl. Kindersnacks)
+└── Neu/                            # Inbox für neuen Content
+```
+
+**Letzter Code-Review (12 Fixes, Commit `641787a`):**
+Stale-Redis-Cache für Templates beseitigt, SSRF-Guard im URL-Import, Redis-Rate-Limit, Member-Plan erbt Owner, Kategorie-basierte Meal-Pools, Datenleck `confirmationTokenExpiresAt`, Template-Delete-Guard, O(1) Confirmation-Token-Index, `weekplan/suggest` startDate aus weekId.
+
+**Implementiert (Phases 1–6, Build grün):**
+- Phase 1: `DietCategory = 'meat'|'fish'|'vegetarian'|'vegan'` in allen 74 Rezepten; neue DietTypes `fleischhaltig` + `flexitarisch`; Settings-Kacheln; Flexitarisch-Logik (max 1 Fleisch/Woche) in `lib/suggestions.ts`
+- Phase 2: RecipeList dietCategory-Filter-Tabs (Alle | Fleischhaltig | Pescetarisch | Vegetarisch | Vegan)
+- Phase 3: `ShoppingGroupsBar` im WeekPlanner; API `/api/weekplan/shopping-groups`; Redis-Key `mz:group:<id>:week:<kw>:shopping_groups`
+- Phase 4: ShoppingListView Mehrfach-Listen-Übersicht; `?dayIndices=` Filter in `/api/shopping-list`; `buildListLabel` (KW23.Mo-So)
+- Phase 5: `OnboardingWizard` (6 Schritte: Familienname, Ort, Portionen, Diät, Allergien, Einkaufsrhythmus); ersetzt alten `GroupNameOnboarding`; Flag `settings.onboardingDone`
+- Phase 6: Abmelde-Button in Desktop-Nav + Mobile-Nav (`handleLogout` → `/api/auth/logout`)
+
+**Offene Tasks (Priorität ↓):**
+1. Weitere Rezepte aus Kochbüchern und vorbereiteten Links importieren (Grundlagenphase)
+2. App-Review (UX, Funktionalität durchklicken)
+3. Marketing-Setup (SEO-Meta, Vercel Analytics, OG-Images, Newsletter)

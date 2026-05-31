@@ -1,0 +1,86 @@
+{
+  "id": "kds-10",
+  "name": "Tomaten-Oregano-Cracker",
+  "category": "Brot & Aufstrich",
+  "timeMinutes": 25,
+  "timeLabel": "mittel",
+  "basePortions": 30,
+  "ingredients": [
+    {
+      "name": "Dinkelvollkornmehl",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 30
+    },
+    {
+      "name": "Kichererbsenmehl",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 30
+    },
+    {
+      "name": "Hefeflocken",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 30
+    },
+    {
+      "name": "Oregano",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 30
+    },
+    {
+      "name": "Salz",
+      "amount": 3,
+      "unit": "g",
+      "perPortions": 30
+    },
+    {
+      "name": "Trockenhefe",
+      "amount": 5,
+      "unit": "g",
+      "perPortions": 30
+    },
+    {
+      "name": "Wasser",
+      "amount": 70,
+      "unit": "ml",
+      "perPortions": 30
+    },
+    {
+      "name": "Tomatenmark",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 30
+    },
+    {
+      "name": "Rapsöl",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 30
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 30
+    }
+  ],
+  "season": [
+    "ganzjährig"
+  ],
+  "weatherType": "neutral",
+  "isMealprep": true,
+  "isSuitableForLunch": false,
+  "dietCategory": "vegan",
+  "source": "LittleFant – Kindersnacks für jeden Tag",
+  "description": "Knusprige Cracker mit Tomate und Oregano – herzhaft und lange haltbar.",
+  "steps": [
+    "Alle trockenen Zutaten vermischen.",
+    "Hefe in Wasser auflösen, Tomatenmark und Öle unterrühren. Zu einem Teig kneten.",
+    "Dünn ausrollen, in Rechtecke schneiden. Bei 200 °C (Umluft) ca. 8–12 Minuten backen."
+  ],
+  "tips": "Luftdicht aufbewahren – ca. 2 Wochen haltbar.",
+  "imageUrl": null
+}
