@@ -4,7 +4,7 @@
     "firstName": "Oliver",
     "lastName": "von Kaenel",
     "email": "info@o-v-k.ch",
-    "passwordHash": "$2b$12$dTTw65M8vuLFkqueUjdneeC6gOElx6AIHoaCy33LFQyJpu9s4MyUa",
+    "passwordHash": "$2b$12$ZN/SS7IVz6vCf9f/CEDcpOGkJbqQ2KuG8F9/wFIzootYqdRozJEUa",
     "plan": "lifetime",
     "status": "active",
     "registeredAt": "2026-05-24T23:08:53.369Z",

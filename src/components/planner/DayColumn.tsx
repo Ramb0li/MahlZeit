@@ -23,11 +23,12 @@ interface DayColumnProps {
   weekId: string;
   onUpdate: (dayIndex: number, mealType: 'breakfast' | 'lunch' | 'dinner' | 'showLunch', slot: unknown) => void;
   onToggleConstraint: (constraintId: string) => void;
+  onViewRecipe?: (recipe: Recipe) => void;
 }
 
 export function DayColumn({
   date, dayIndex, dayPlan, recipes, constraints, disabledConstraintIds,
-  weather, settings, weekId, onUpdate, onToggleConstraint,
+  weather, settings, weekId, onUpdate, onToggleConstraint, onViewRecipe,
 }: DayColumnProps) {
   const [pickerOpen, setPickerOpen]         = useState<'breakfast' | 'lunch' | 'dinner' | null>(null);
   const [pickerOpenSide, setPickerOpenSide] = useState<'breakfast' | 'lunch' | 'dinner' | null>(null);
@@ -188,6 +189,7 @@ export function DayColumn({
             onClear={() => onUpdate(dayIndex, 'breakfast', { recipeId: null, isLeftovers: false })}
             onPickSide={() => setPickerOpenSide('breakfast')}
             onClearSide={() => handleClearSide('breakfast')}
+            onViewRecipe={onViewRecipe}
           />
         )}
 
@@ -207,6 +209,7 @@ export function DayColumn({
             onClear={() => onUpdate(dayIndex, 'lunch', { recipeId: null, isLeftovers: false })}
             onPickSide={() => setPickerOpenSide('lunch')}
             onClearSide={() => handleClearSide('lunch')}
+            onViewRecipe={onViewRecipe}
           />
         )}
 
@@ -226,6 +229,7 @@ export function DayColumn({
             onClear={() => onUpdate(dayIndex, 'dinner', { recipeId: null, isLeftovers: false })}
             onPickSide={() => setPickerOpenSide('dinner')}
             onClearSide={() => handleClearSide('dinner')}
+            onViewRecipe={onViewRecipe}
           />
         )}
       </div>
@@ -270,12 +274,13 @@ interface MealSlotCardProps {
   onClear: () => void;
   onPickSide: () => void;
   onClearSide: () => void;
+  onViewRecipe?: (recipe: Recipe) => void;
 }
 
 function MealSlotCard({
   label, recipe, isLeftovers, sideRecipe, sideIsLeftovers,
   suggesting, theme, dayColor,
-  onPick, onSuggest, onClear, onPickSide, onClearSide, mealType,
+  onPick, onSuggest, onClear, onPickSide, onClearSide, mealType, onViewRecipe,
 }: MealSlotCardProps) {
   const hasSide = !!(sideRecipe || sideIsLeftovers);
   const sideName = sideIsLeftovers ? 'Reste essen' : sideRecipe?.name ?? '';
@@ -333,7 +338,11 @@ function MealSlotCard({
         <p className="text-[10px] font-bold uppercase tracking-wide mb-1" style={{ color: theme.mealLabelText }}>
           {label}
         </p>
-        <p className="text-xs font-semibold leading-snug line-clamp-3" style={{ color: theme.mealFilledText }}>
+        <p
+          className="text-xs font-semibold leading-snug line-clamp-3"
+          style={{ color: theme.mealFilledText, cursor: onViewRecipe ? 'pointer' : 'default', textDecoration: onViewRecipe ? 'underline' : 'none', textDecorationColor: 'rgba(0,0,0,0.15)', textUnderlineOffset: '2px' }}
+          onClick={(e) => { e.stopPropagation(); onViewRecipe?.(recipe); }}
+        >
           {recipe.name}
         </p>
         <div className="flex items-center gap-1.5 mt-2">

@@ -13,9 +13,10 @@ interface WeekPlannerProps {
   recipes: Recipe[];
   settings: AppSettings;
   constraints: DayConstraint[];
+  onViewRecipe?: (recipe: Recipe) => void;
 }
 
-export function WeekPlanner({ recipes, settings, constraints }: WeekPlannerProps) {
+export function WeekPlanner({ recipes, settings, constraints, onViewRecipe }: WeekPlannerProps) {
   const [currentDate, setCurrentDate] = useState(() =>
     getInitialDisplayWeek(settings.weekSwitchDay ?? 0)
   );
@@ -395,6 +396,7 @@ export function WeekPlanner({ recipes, settings, constraints }: WeekPlannerProps
                   weekId={weekId}
                   onUpdate={handleUpdateSlot}
                   onToggleConstraint={handleToggleConstraint}
+                  onViewRecipe={onViewRecipe}
                 />
               );
             })}

@@ -27,6 +27,21 @@ export interface Ingredient {
   perPortions: number;
 }
 
+/** Zutaten-Gruppe fuer strukturierte Mise-en-Place-Ansicht */
+export interface IngredientGroup {
+  name: string;
+  ingredients: Ingredient[];
+}
+
+/** Nutzerbewertung fuer ein Rezept (global sichtbar) */
+export interface RecipeRating {
+  userId: string;       // email als stabiler Identifier
+  userEmail: string;
+  rating: number;       // 1-5
+  comment: string;
+  createdAt: string;    // ISO string
+}
+
 export interface Recipe {
   id: string;
   name: string;
@@ -41,9 +56,10 @@ export interface Recipe {
   source: string;
   basePortions: number;
   description: string;
-  // Für spätere Detailansicht
-  steps?: string[];        // Nummerierte Zubereitungsschritte
-  tips?: string;           // Tipps & Varianten
+  // Detailansicht
+  steps?: string[];              // Nummerierte Zubereitungsschritte
+  tips?: string;                 // Tipps & Varianten
+  ingredientGroups?: IngredientGroup[]; // Strukturierte Zutaten-Gruppen (Mise-en-Place)
   imageUrl?: string | null;      // Hauptbild (Fertiges Menü) – lokal oder extern
   imageZutaten?: string | null;  // Zutaten-Bild
   imageKochen?: string | null;   // Kochprozess-Bild

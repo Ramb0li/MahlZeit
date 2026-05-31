@@ -1,5 +1,5 @@
 'use client';
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { Plus, Search, Link, Pencil, Trash2, Clock, Leaf, Archive, RotateCcw, ChevronDown, ChevronUp } from 'lucide-react';
 import { RecipeForm } from './RecipeForm';
 import { ImportRecipeModal } from './ImportRecipeModal';
@@ -40,9 +40,12 @@ interface RecipeListProps {
   allergiesAndAversions?: string[];
   isPremium?: boolean;
   onRecipesChange?: (recipes: Recipe[]) => void;
+  onViewRecipe?: (recipe: Recipe) => void;
+  requestEditRecipe?: Recipe | null;
+  onEditRequestConsumed?: () => void;
 }
 
-export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremium = false, onRecipesChange }: RecipeListProps) {
+export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremium = false, onRecipesChange, onViewRecipe, requestEditRecipe, onEditRequestConsumed }: RecipeListProps) {
   const [recipes, setRecipes] = useState<Recipe[]>(initialRecipes);
 
   const updateRecipes = (updater: (prev: Recipe[]) => Recipe[]) => {
@@ -64,6 +67,15 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
   const [archiveId, setArchiveId]   = useState<string | null>(null);
   const [deleteId, setDeleteId]     = useState<string | null>(null);
   const [importOpen, setImportOpen] = useState(false);
+
+  // Externer Edit-Request (z.B. vom RecipeDetailModal via AppShell)
+  useEffect(() => {
+    if (!requestEditRecipe) return;
+    setEditRecipe(requestEditRecipe);
+    setIsCreating(false);
+    setShowArchive(false);
+    onEditRequestConsumed?.();
+  }, [requestEditRecipe]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Category badge colours — warm palette variants
   const categoryColors: Record<Category, { bg: string; color: string }> = {
@@ -263,13 +275,14 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
 
       {/* Active recipes */}
       {!showArchive && (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {activeFiltered.map((recipe) => (
             <RecipeCard
               key={recipe.id}
               recipe={recipe}
               categoryColors={categoryColors}
               isExcluded={isRecipeExcluded(recipe, allergiesAndAversions)}
+              onView={() => onViewRecipe?.(recipe)}
               onEdit={() => setEditRecipe(recipe)}
               onArchive={() => setArchiveId(recipe.id)}
             />
@@ -384,122 +397,113 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
   );
 }
 
-// ─── Active recipe card ──────────────────────────────────────────────────────
+// ─── Active recipe card (fooby-Style mit Hero-Bild) ─────────────────────────
 
 interface RecipeCardProps {
   recipe: Recipe;
   categoryColors: Record<Category, { bg: string; color: string }>;
   isExcluded?: boolean;
+  onView: () => void;
   onEdit: () => void;
   onArchive: () => void;
 }
 
-function RecipeCard({ recipe, categoryColors, isExcluded = false, onEdit, onArchive }: RecipeCardProps) {
+function RecipeCard({ recipe, categoryColors, isExcluded = false, onView, onEdit, onArchive }: RecipeCardProps) {
   const catColor = categoryColors[recipe.category] ?? { bg: '#efe9df', color: '#5a4e48' };
-  const hasImage = !!recipe.imageUrl;
+
+  const timeStyle =
+    recipe.timeLabel === 'schnell' ? { backgroundColor: '#e8f5e9', color: '#2e7d32' } :
+    recipe.timeLabel === 'mittel'  ? { backgroundColor: '#fff3e0', color: '#e65100' } :
+    { backgroundColor: '#fce4ec', color: '#c62828' };
+
   return (
     <div
-      className="group rounded-2xl p-4 transition-all cursor-default relative overflow-hidden"
+      className="group rounded-2xl overflow-hidden transition-all cursor-pointer flex flex-col"
       style={{
         backgroundColor: '#fff9f3',
         border: isExcluded ? '1px solid #e8c5b5' : '1px solid #e0d8ce',
         boxShadow: '0 2px 12px rgba(44,36,32,0.05)',
-        opacity: isExcluded ? 0.45 : 1,
+        opacity: isExcluded ? 0.55 : 1,
       }}
+      onClick={onView}
       onMouseEnter={e => {
-        (e.currentTarget as HTMLElement).style.borderColor = '#d4a090';
-        (e.currentTarget as HTMLElement).style.boxShadow = '0 6px 24px rgba(44,36,32,0.09)';
-        (e.currentTarget as HTMLElement).style.transform = 'translateY(-1px)';
+        (e.currentTarget as HTMLElement).style.borderColor = '#b5614a';
+        (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 28px rgba(44,36,32,0.12)';
       }}
       onMouseLeave={e => {
-        (e.currentTarget as HTMLElement).style.borderColor = '#e0d8ce';
+        (e.currentTarget as HTMLElement).style.borderColor = isExcluded ? '#e8c5b5' : '#e0d8ce';
         (e.currentTarget as HTMLElement).style.boxShadow = '0 2px 12px rgba(44,36,32,0.05)';
-        (e.currentTarget as HTMLElement).style.transform = 'translateY(0)';
       }}
     >
-      {/* Background food photo — subtle, text stays readable */}
-      {hasImage && (
+      {/* Hero image */}
+      <div className="relative overflow-hidden shrink-0" style={{ aspectRatio: '4 / 3' }}>
+        {recipe.imageUrl ? (
+          <img
+            src={recipe.imageUrl}
+            alt={recipe.name}
+            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+        ) : (
+          <div
+            className="w-full h-full flex items-center justify-center"
+            style={{ backgroundColor: catColor.bg }}
+          >
+            <span style={{ fontSize: 40, opacity: 0.35 }}>🍽</span>
+          </div>
+        )}
+        {/* Edit / Archive overlay buttons */}
         <div
-          className="absolute inset-0 rounded-2xl"
-          style={{
-            backgroundImage: `url(${recipe.imageUrl})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            opacity: 0.13,
-            pointerEvents: 'none',
-          }}
-        />
-      )}
-      <div className="relative">
-      <div className="flex items-start justify-between gap-2 mb-2">
-        <h3 className="font-semibold text-sm leading-snug" style={{ color: '#2c2420' }}>{recipe.name}</h3>
-        <div className="flex gap-1 opacity-0 group-hover:opacity-100 transition-opacity shrink-0">
+          className="absolute top-2 right-2 flex gap-1 opacity-0 group-hover:opacity-100 transition-opacity"
+          onClick={(e) => e.stopPropagation()}
+        >
           <button
             onClick={onEdit}
-            className="p-1.5 rounded-lg transition-colors"
-            style={{ color: '#9c8c84' }}
-            onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#efe9df')}
-            onMouseLeave={e => (e.currentTarget.style.backgroundColor = 'transparent')}
+            className="w-7 h-7 rounded-full flex items-center justify-center transition-opacity hover:opacity-80"
+            style={{ backgroundColor: 'rgba(255,255,255,0.9)', color: '#2c2420' }}
             title="Bearbeiten"
           >
-            <Pencil size={13} />
+            <Pencil size={12} />
           </button>
           <button
             onClick={onArchive}
-            className="p-1.5 rounded-lg transition-colors"
-            style={{ color: '#c49a6c' }}
-            onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#f5ece0')}
-            onMouseLeave={e => (e.currentTarget.style.backgroundColor = 'transparent')}
+            className="w-7 h-7 rounded-full flex items-center justify-center transition-opacity hover:opacity-80"
+            style={{ backgroundColor: 'rgba(255,255,255,0.9)', color: '#c49a6c' }}
             title="Archivieren"
           >
-            <Archive size={13} />
+            <Archive size={12} />
           </button>
         </div>
       </div>
 
-      {recipe.description && (
-        <p className="text-xs mb-3 line-clamp-2" style={{ color: '#9c8c84' }}>{recipe.description}</p>
-      )}
+      {/* Info block below image */}
+      <div className="p-3 flex-1 flex flex-col gap-2">
+        <h3 className="font-bold text-sm leading-snug" style={{ color: '#2c2420' }}>{recipe.name}</h3>
 
-      <div className="flex flex-wrap gap-1.5">
-        <span className="text-xs px-2 py-0.5 rounded-full font-semibold" style={{ backgroundColor: catColor.bg, color: catColor.color }}>
-          {recipe.category}
-        </span>
-        <span
-          className="inline-flex items-center gap-1 text-xs px-2 py-0.5 rounded-full font-semibold"
-          style={
-            recipe.timeLabel === 'schnell' ? { backgroundColor: '#e8f5e9', color: '#2e7d32' } :
-            recipe.timeLabel === 'mittel'  ? { backgroundColor: '#fff3e0', color: '#e65100' } :
-            { backgroundColor: '#fce4ec', color: '#c62828' }
-          }
-        >
-          <Clock size={10} />
-          {recipe.timeMinutes} min
-        </span>
-        {recipe.isMealprep && (
-          <span className="inline-flex items-center gap-1 text-xs px-2 py-0.5 rounded-full font-semibold" style={{ backgroundColor: '#f5ece0', color: '#c49a6c' }}>
-            <Leaf size={10} />
-            Mealprep
+        <div className="flex flex-wrap gap-1">
+          <span className="text-[11px] px-2 py-0.5 rounded-full font-semibold" style={{ backgroundColor: catColor.bg, color: catColor.color }}>
+            {recipe.category}
           </span>
-        )}
-        {recipe.isSuitableForLunch && (
-          <span className="text-xs px-2 py-0.5 rounded-full font-semibold" style={{ backgroundColor: '#e3f2fd', color: '#1565c0' }}>
-            Mittag
+          <span className="inline-flex items-center gap-1 text-[11px] px-2 py-0.5 rounded-full font-semibold" style={timeStyle}>
+            <Clock size={9} />
+            {recipe.timeMinutes} min
           </span>
-        )}
-        {recipe.dietType && DIET_BADGE[recipe.dietType] && (
-          <span className="text-xs px-2 py-0.5 rounded-full font-semibold" style={{ backgroundColor: DIET_BADGE[recipe.dietType].bg, color: DIET_BADGE[recipe.dietType].color }}>
-            {DIET_BADGE[recipe.dietType].label}
-          </span>
+          {recipe.isMealprep && (
+            <span className="inline-flex items-center gap-1 text-[11px] px-2 py-0.5 rounded-full font-semibold" style={{ backgroundColor: '#f5ece0', color: '#c49a6c' }}>
+              <Leaf size={9} />
+              MP
+            </span>
+          )}
+          {recipe.dietType && DIET_BADGE[recipe.dietType] && (
+            <span className="text-[11px] px-2 py-0.5 rounded-full font-semibold" style={{ backgroundColor: DIET_BADGE[recipe.dietType].bg, color: DIET_BADGE[recipe.dietType].color }}>
+              {DIET_BADGE[recipe.dietType].label}
+            </span>
+          )}
+        </div>
+
+        {recipe.description && (
+          <p className="text-xs line-clamp-2 mt-auto" style={{ color: '#9c8c84' }}>{recipe.description}</p>
         )}
       </div>
-
-      <div className="mt-2">
-        <p className="text-xs" style={{ color: '#9c8c84' }}>
-          {recipe.ingredients.length} Zutaten · {recipe.basePortions} Portionen
-        </p>
-      </div>
-      </div>{/* /relative */}
     </div>
   );
 }

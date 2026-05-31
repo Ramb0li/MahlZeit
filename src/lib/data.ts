@@ -13,7 +13,7 @@
  * Legacy-globalen Pfad zurück (für Migrationsphase / Admin-Tools).
  */
 
-import type { Recipe, WeekPlan, AppSettings, PromotionsCache, WeatherCache, DayConstraint, ShoppingGroups } from '@/types';
+import type { Recipe, WeekPlan, AppSettings, PromotionsCache, WeatherCache, DayConstraint, ShoppingGroups, RecipeRating } from '@/types';
 
 import seedRecipes     from '../../data/recipes.json';
 import seedSettings    from '../../data/settings.json';
@@ -51,6 +51,8 @@ const K = {
   recipesGlobal: 'mz:recipes',                                  // 74 Template-Rezepte
   promotions:    'mz:promotions',
   weather:       'mz:weather',
+  // Global Ratings (per recipe, sichtbar fuer alle User)
+  recipeRatings: (id: string) => `mz:recipe:${id}:ratings`,
   // Group-scoped
   groupRecipes:        (g: string) => `mz:group:${g}:recipes`,     // custom recipes
   groupSettings:       (g: string) => `mz:group:${g}:settings`,
@@ -263,4 +265,29 @@ export async function getWeatherCache(): Promise<WeatherCache> {
 export async function saveWeatherCache(weather: WeatherCache): Promise<void> {
   if (!USE_REDIS) { writeJson('weather.json', weather); return; }
   await getRedis().set(K.weather, weather, { ex: 6 * 60 * 60 });
+}
+
+// ─── Recipe Ratings (global — fuer alle User sichtbar) ───────────────────────
+
+export async function getRecipeRatings(recipeId: string): Promise<RecipeRating[]> {
+  if (!USE_REDIS) {
+    const all = readJson<Record<string, RecipeRating[]>>('recipe-ratings.json', {});
+    return all[recipeId] ?? [];
+  }
+  return (await getRedis().get<RecipeRating[]>(K.recipeRatings(recipeId))) ?? [];
+}
+
+export async function saveRecipeRating(recipeId: string, rating: RecipeRating): Promise<void> {
+  // Upsert: eine Bewertung pro userId, neueste ersetzt die alte
+  if (!USE_REDIS) {
+    const all = readJson<Record<string, RecipeRating[]>>('recipe-ratings.json', {});
+    const existing = all[recipeId] ?? [];
+    const updated  = [...existing.filter((r) => r.userId !== rating.userId), rating];
+    all[recipeId]  = updated;
+    writeJson('recipe-ratings.json', all);
+    return;
+  }
+  const existing = (await getRedis().get<RecipeRating[]>(K.recipeRatings(recipeId))) ?? [];
+  const updated  = [...existing.filter((r) => r.userId !== rating.userId), rating];
+  await getRedis().set(K.recipeRatings(recipeId), updated);
 }

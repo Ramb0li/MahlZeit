@@ -1,7 +1,7 @@
 'use client';
 import { useState, useRef } from 'react';
 import { Plus, Trash2, ImagePlus, X } from 'lucide-react';
-import type { Recipe, Category, Season, WeatherType, TimeLabel, Ingredient, DietType } from '@/types';
+import type { Recipe, Category, Season, WeatherType, TimeLabel, Ingredient, IngredientGroup, DietType } from '@/types';
 
 const CATEGORIES: Category[] = [
   'Eier', 'Reis', 'Pasta', 'Eintopf/Gratin', 'Fisch',
@@ -53,8 +53,18 @@ export function RecipeForm({ recipe, onSave, onCancel }: RecipeFormProps) {
   const imgZutatenRef = useRef<HTMLInputElement | null>(null);
   const imgKochenRef  = useRef<HTMLInputElement | null>(null);
 
-  const [ingredients, setIngredients]         = useState<Ingredient[]>(
+  // Modus: 'flat' = einfache Liste, 'grouped' = Mise-en-Place-Gruppen
+  const hasGroups = (recipe?.ingredientGroups?.length ?? 0) > 0;
+  const [ingredientMode, setIngredientMode] = useState<'flat' | 'grouped'>(hasGroups ? 'grouped' : 'flat');
+
+  const [ingredients, setIngredients] = useState<Ingredient[]>(
     recipe?.ingredients ?? [{ name: '', amount: 1, unit: 'Stk', perPortions: 4 }]
+  );
+
+  const [ingredientGroups, setIngredientGroups] = useState<IngredientGroup[]>(
+    recipe?.ingredientGroups?.length
+      ? recipe.ingredientGroups
+      : [{ name: 'Zutaten', ingredients: [{ name: '', amount: 1, unit: 'g', perPortions: 4 }] }]
   );
 
   const timeLabel: TimeLabel =
@@ -91,15 +101,60 @@ export function RecipeForm({ recipe, onSave, onCancel }: RecipeFormProps) {
     reader.readAsDataURL(file);
   };
 
+  // Helfer fuer Gruppen-Modus
+  const updateGroup = (gi: number, field: 'name', value: string) =>
+    setIngredientGroups((prev) => prev.map((g, i) => i === gi ? { ...g, [field]: value } : g));
+
+  const addGroupIngredient = (gi: number) =>
+    setIngredientGroups((prev) => prev.map((g, i) =>
+      i === gi ? { ...g, ingredients: [...g.ingredients, { name: '', amount: 1, unit: 'g', perPortions: basePortions }] } : g
+    ));
+
+  const updateGroupIngredient = (gi: number, ii: number, field: keyof Ingredient, value: string | number) =>
+    setIngredientGroups((prev) => prev.map((g, i) =>
+      i === gi ? {
+        ...g,
+        ingredients: g.ingredients.map((ing, j) =>
+          j === ii ? { ...ing, [field]: field === 'amount' ? Number(value) : value } : ing
+        ),
+      } : g
+    ));
+
+  const removeGroupIngredient = (gi: number, ii: number) =>
+    setIngredientGroups((prev) => prev.map((g, i) =>
+      i === gi ? { ...g, ingredients: g.ingredients.filter((_, j) => j !== ii) } : g
+    ));
+
+  const addGroup = () =>
+    setIngredientGroups((prev) => [...prev, { name: 'Neue Gruppe', ingredients: [{ name: '', amount: 1, unit: 'g', perPortions: basePortions }] }]);
+
+  const removeGroup = (gi: number) =>
+    setIngredientGroups((prev) => prev.filter((_, i) => i !== gi));
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    let finalIngredients: Ingredient[];
+    let finalGroups: IngredientGroup[] | undefined;
+
+    if (ingredientMode === 'grouped') {
+      const cleanGroups = ingredientGroups
+        .map((g) => ({ ...g, ingredients: g.ingredients.filter((ing) => ing.name.trim()) }))
+        .filter((g) => g.ingredients.length > 0);
+      finalGroups      = cleanGroups.length ? cleanGroups : undefined;
+      // Flache Liste aus allen Gruppen ableiten (fuer Einkaufsliste)
+      finalIngredients = cleanGroups.flatMap((g) => g.ingredients);
+    } else {
+      finalIngredients = ingredients.filter((ing) => ing.name.trim());
+      finalGroups      = undefined;
+    }
+
     const r: Recipe = {
       id: recipe?.id ?? generateId(),
       name, category, timeMinutes, timeLabel,
-      ingredients: ingredients.filter((ing) => ing.name.trim()),
+      ingredients: finalIngredients,
       season: seasons.length ? seasons : ['ganzjährig'],
       weatherType, isMealprep, isSuitableForLunch, source, basePortions, description,
-      // 'alle' bedeutet kein Diät-Filter → dietType im Recipe weglassen
       ...(dietType !== 'alle' ? { dietType } : {}),
       imageUrl:     imageUrl     || null,
       imageZutaten: imageZutaten || null,
@@ -107,6 +162,7 @@ export function RecipeForm({ recipe, onSave, onCancel }: RecipeFormProps) {
       steps:        stepsText.split('\n').map(s => s.trim()).filter(Boolean).length
                       ? stepsText.split('\n').map(s => s.trim()).filter(Boolean)
                       : undefined,
+      ...(finalGroups ? { ingredientGroups: finalGroups } : {}),
     };
     onSave(r);
   };
@@ -355,50 +411,151 @@ export function RecipeForm({ recipe, onSave, onCancel }: RecipeFormProps) {
         </div>
       </div>
 
-      {/* Zutaten */}
+      {/* Zutaten — Modus-Wahl */}
       <div>
-        <div className="flex items-center justify-between mb-2">
+        <div className="flex items-center justify-between mb-3">
           <label style={{ ...labelStyle, marginBottom: 0 }}>Zutaten (pro {basePortions} Portionen)</label>
-          <button
-            type="button"
-            onClick={addIngredient}
-            className="flex items-center gap-1 text-xs font-semibold transition-opacity hover:opacity-70"
-            style={{ color: '#b5614a' }}
-          >
-            <Plus size={14} />
-            Zutat hinzufügen
-          </button>
+          <div className="flex rounded-xl overflow-hidden" style={{ border: '1px solid #e0d8ce' }}>
+            <button
+              type="button"
+              onClick={() => setIngredientMode('flat')}
+              className="px-3 py-1.5 text-xs font-semibold transition-colors"
+              style={ingredientMode === 'flat' ? chipActive : { ...chipInactive, border: 'none', borderRadius: 0 }}
+            >
+              Einfache Liste
+            </button>
+            <button
+              type="button"
+              onClick={() => setIngredientMode('grouped')}
+              className="px-3 py-1.5 text-xs font-semibold transition-colors"
+              style={ingredientMode === 'grouped' ? chipActive : { ...chipInactive, border: 'none', borderRadius: 0 }}
+            >
+              Gruppen (Mise-en-Place)
+            </button>
+          </div>
         </div>
-        <div className="space-y-2">
-          {ingredients.map((ing, i) => (
-            <div key={i} className="flex gap-2 items-center">
-              <input
-                type="text" placeholder="Zutat" value={ing.name}
-                onChange={(e) => updateIngredient(i, 'name', e.target.value)}
-                style={{ ...inputStyle, flex: 1, padding: '6px 10px' }}
-              />
-              <input
-                type="number" placeholder="Menge" value={ing.amount} min={0} step={0.5}
-                onChange={(e) => updateIngredient(i, 'amount', e.target.value)}
-                style={{ ...inputStyle, width: '72px', padding: '6px 10px' }}
-              />
-              <input
-                type="text" placeholder="Einheit" value={ing.unit}
-                onChange={(e) => updateIngredient(i, 'unit', e.target.value)}
-                style={{ ...inputStyle, width: '64px', padding: '6px 10px' }}
-              />
-              <button
-                type="button" onClick={() => removeIngredient(i)}
-                className="p-1.5 rounded-lg transition-colors"
-                style={{ color: '#9c8c84' }}
-                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.backgroundColor = '#fce4ec'; (e.currentTarget as HTMLElement).style.color = '#c62828'; }}
-                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent'; (e.currentTarget as HTMLElement).style.color = '#9c8c84'; }}
-              >
-                <Trash2 size={14} />
-              </button>
-            </div>
-          ))}
-        </div>
+
+        {/* Flat mode */}
+        {ingredientMode === 'flat' && (
+          <div className="space-y-2">
+            {ingredients.map((ing, i) => (
+              <div key={i} className="flex gap-2 items-center">
+                <input
+                  type="text" placeholder="Zutat" value={ing.name}
+                  onChange={(e) => updateIngredient(i, 'name', e.target.value)}
+                  style={{ ...inputStyle, flex: 1, padding: '6px 10px' }}
+                />
+                <input
+                  type="number" placeholder="Menge" value={ing.amount} min={0} step={0.5}
+                  onChange={(e) => updateIngredient(i, 'amount', e.target.value)}
+                  style={{ ...inputStyle, width: '72px', padding: '6px 10px' }}
+                />
+                <input
+                  type="text" placeholder="Einheit" value={ing.unit}
+                  onChange={(e) => updateIngredient(i, 'unit', e.target.value)}
+                  style={{ ...inputStyle, width: '64px', padding: '6px 10px' }}
+                />
+                <button
+                  type="button" onClick={() => removeIngredient(i)}
+                  className="p-1.5 rounded-lg transition-colors"
+                  style={{ color: '#9c8c84' }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.backgroundColor = '#fce4ec'; (e.currentTarget as HTMLElement).style.color = '#c62828'; }}
+                  onMouseLeave={e => { (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent'; (e.currentTarget as HTMLElement).style.color = '#9c8c84'; }}
+                >
+                  <Trash2 size={14} />
+                </button>
+              </div>
+            ))}
+            <button
+              type="button" onClick={addIngredient}
+              className="flex items-center gap-1 text-xs font-semibold mt-1 transition-opacity hover:opacity-70"
+              style={{ color: '#b5614a' }}
+            >
+              <Plus size={14} />
+              Zutat hinzufügen
+            </button>
+          </div>
+        )}
+
+        {/* Grouped mode */}
+        {ingredientMode === 'grouped' && (
+          <div className="space-y-4">
+            {ingredientGroups.map((group, gi) => (
+              <div key={gi} className="rounded-xl p-3" style={{ backgroundColor: '#f7f4ee', border: '1px solid #e0d8ce' }}>
+                <div className="flex gap-2 items-center mb-2">
+                  <input
+                    type="text"
+                    placeholder="Gruppenname (z.B. Sauce, Teig, Belag)"
+                    value={group.name}
+                    onChange={(e) => updateGroup(gi, 'name', e.target.value)}
+                    style={{ ...inputStyle, flex: 1, padding: '5px 10px', fontWeight: 600, fontSize: 13 }}
+                  />
+                  {ingredientGroups.length > 1 && (
+                    <button
+                      type="button"
+                      onClick={() => removeGroup(gi)}
+                      className="p-1.5 rounded-lg transition-colors"
+                      style={{ color: '#9c8c84' }}
+                      onMouseEnter={e => { (e.currentTarget as HTMLElement).style.backgroundColor = '#fce4ec'; (e.currentTarget as HTMLElement).style.color = '#c62828'; }}
+                      onMouseLeave={e => { (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent'; (e.currentTarget as HTMLElement).style.color = '#9c8c84'; }}
+                      title="Gruppe entfernen"
+                    >
+                      <Trash2 size={14} />
+                    </button>
+                  )}
+                </div>
+                <div className="space-y-2">
+                  {group.ingredients.map((ing, ii) => (
+                    <div key={ii} className="flex gap-2 items-center">
+                      <input
+                        type="text" placeholder="Zutat" value={ing.name}
+                        onChange={(e) => updateGroupIngredient(gi, ii, 'name', e.target.value)}
+                        style={{ ...inputStyle, flex: 1, padding: '5px 10px' }}
+                      />
+                      <input
+                        type="number" placeholder="Menge" value={ing.amount} min={0} step={0.5}
+                        onChange={(e) => updateGroupIngredient(gi, ii, 'amount', e.target.value)}
+                        style={{ ...inputStyle, width: '72px', padding: '5px 10px' }}
+                      />
+                      <input
+                        type="text" placeholder="Einheit" value={ing.unit}
+                        onChange={(e) => updateGroupIngredient(gi, ii, 'unit', e.target.value)}
+                        style={{ ...inputStyle, width: '64px', padding: '5px 10px' }}
+                      />
+                      <button
+                        type="button" onClick={() => removeGroupIngredient(gi, ii)}
+                        className="p-1.5 rounded-lg transition-colors"
+                        style={{ color: '#9c8c84' }}
+                        onMouseEnter={e => { (e.currentTarget as HTMLElement).style.backgroundColor = '#fce4ec'; (e.currentTarget as HTMLElement).style.color = '#c62828'; }}
+                        onMouseLeave={e => { (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent'; (e.currentTarget as HTMLElement).style.color = '#9c8c84'; }}
+                      >
+                        <Trash2 size={14} />
+                      </button>
+                    </div>
+                  ))}
+                </div>
+                <button
+                  type="button"
+                  onClick={() => addGroupIngredient(gi)}
+                  className="flex items-center gap-1 text-xs font-semibold mt-2 transition-opacity hover:opacity-70"
+                  style={{ color: '#b5614a' }}
+                >
+                  <Plus size={13} />
+                  Zutat zur Gruppe
+                </button>
+              </div>
+            ))}
+            <button
+              type="button"
+              onClick={addGroup}
+              className="flex items-center gap-1.5 text-xs font-semibold px-3 py-2 rounded-xl transition-opacity hover:opacity-80"
+              style={{ border: '1.5px dashed #b5614a', color: '#b5614a' }}
+            >
+              <Plus size={14} />
+              Neue Gruppe hinzufügen
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Actions */}

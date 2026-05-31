@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { CalendarDays, BookOpen, ShoppingCart, Settings, Users, LogOut } from 'lucide-react';
 import { WeekPlanner } from '@/components/planner/WeekPlanner';
 import { RecipeList } from '@/components/recipes/RecipeList';
+import { RecipeDetailModal } from '@/components/recipes/RecipeDetailModal';
+import { CookingGuide } from '@/components/recipes/CookingGuide';
 import { ShoppingListView } from '@/components/shopping/ShoppingListView';
 import { SettingsView } from '@/components/settings/SettingsView';
 import { GroupNameOnboarding } from '@/components/groups/GroupNameOnboarding';
@@ -53,6 +55,11 @@ export function AppShell({
   const [settings, setSettings]       = useState<AppSettings>(initialSettings);
   const [constraints, setConstraints] = useState<DayConstraint[]>(initialConstraints);
   const [group, setGroup]             = useState<Group | null>(initialGroup);
+
+  // Rezept-Detail + Koch-Guide + Edit-Request
+  const [detailRecipe,     setDetailRecipe]     = useState<Recipe | null>(null);
+  const [cookingRecipe,    setCookingRecipe]     = useState<Recipe | null>(null);
+  const [pendingEditRecipe, setPendingEditRecipe] = useState<Recipe | null>(null);
 
   const theme = getTheme(settings.theme);
   // Onboarding-Wizard nur für echte Erstregistrierungen (nameSet === false).
@@ -162,7 +169,7 @@ export function AppShell({
 
         {activeTab === 'planner' && (
           <div className="md:h-[calc(100vh-180px)]">
-            <WeekPlanner recipes={recipes} settings={settings} constraints={constraints} />
+            <WeekPlanner recipes={recipes} settings={settings} constraints={constraints} onViewRecipe={setDetailRecipe} />
           </div>
         )}
         {activeTab === 'recipes' && (
@@ -171,6 +178,9 @@ export function AppShell({
             allergiesAndAversions={settings.allergiesAndAversions ?? []}
             isPremium={isPremium}
             onRecipesChange={setRecipes}
+            onViewRecipe={setDetailRecipe}
+            requestEditRecipe={pendingEditRecipe}
+            onEditRequestConsumed={() => setPendingEditRecipe(null)}
           />
         )}
         {activeTab === 'shopping' && (
@@ -231,6 +241,37 @@ export function AppShell({
           onComplete={(updatedGroup, updatedSettings) => {
             setGroup(updatedGroup);
             setSettings(updatedSettings);
+          }}
+        />
+      )}
+
+      {/* Rezept-Detailansicht */}
+      {detailRecipe && (
+        <RecipeDetailModal
+          recipe={detailRecipe}
+          isPremium={isPremium}
+          isAdmin={isAdmin}
+          onClose={() => setDetailRecipe(null)}
+          onEdit={(r) => {
+            setDetailRecipe(null);
+            setActiveTab('recipes');
+            setPendingEditRecipe(r);
+          }}
+          onStartCooking={(r) => {
+            setDetailRecipe(null);
+            setCookingRecipe(r);
+          }}
+        />
+      )}
+
+      {/* Step-by-Step Koch-Guide */}
+      {cookingRecipe && (
+        <CookingGuide
+          recipe={cookingRecipe}
+          onClose={() => setCookingRecipe(null)}
+          onFinished={() => {
+            setCookingRecipe(null);
+            setDetailRecipe(cookingRecipe);
           }}
         />
       )}
