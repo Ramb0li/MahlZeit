@@ -1,0 +1,84 @@
+{
+  "id": "ocr-14",
+  "name": "Hackbraten nach Annemarie Wildeisen",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 120,
+  "tags": [],
+  "weatherType": "kalt",
+  "source": "Familien-Rezeptbuch (OCR)",
+  "basePortions": 6,
+  "description": "Bester Hackbraten mit Rind-Kalb-Mischung, Mortadella und Rotwein-Sauce.",
+  "ingredients": [
+    {
+      "name": "Rindshackfleisch",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Kalbshackfleisch",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Mortadella",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Weggil",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 6
+    },
+    {
+      "name": "Milch",
+      "amount": 150,
+      "unit": "ml",
+      "perPortions": 6
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 6
+    },
+    {
+      "name": "Ei",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 6
+    },
+    {
+      "name": "Eigelb",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 6
+    },
+    {
+      "name": "Rotwein",
+      "amount": 0.25,
+      "unit": "L",
+      "perPortions": 6
+    },
+    {
+      "name": "Bratensaucenwürfel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 6
+    }
+  ],
+  "steps": [
+    "Mortadella fein hacken, unter Fleisch mischen, kalt stellen.",
+    "Weggil in Milch 20 Min. einweichen, ausdrücken, fein hacken.",
+    "Zwiebel, Karotte, Sellerie, Dörrromaten andünsten.",
+    "Alles mischen, kräftig würzen, zu Laib formen.",
+    "Bei 200°C 20 Min. anbraten, Rotwein-Sauce beifügen, auf 120°C reduzieren. 1.5 Std. nachgaren."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

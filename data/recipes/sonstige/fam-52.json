@@ -1,0 +1,67 @@
+{
+  "id": "fam-52",
+  "name": "Weissweinrahmsauce",
+  "category": "Snacks & Vorspeisen",
+  "timeMinutes": 20,
+  "tags": [
+    "Vegetarisch"
+  ],
+  "weatherType": "neutral",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Elegante Weisswein-Rahmsauce mit Cognac – passt zu Fisch, Fleisch oder Pasta.",
+  "ingredients": [
+    {
+      "name": "Butter",
+      "amount": 60,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebeln",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Weisswein",
+      "amount": 2,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Rahm",
+      "amount": 5,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Cognac",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Petersilie",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Butter schmelzen, Zwiebeln und Knoblauch dünsten.",
+    "Mit Weisswein ablöschen, Hälfte einkochen.",
+    "Mehl einrühren, Rahm dazugiessen, 5 Min. köcheln.",
+    "Cognac und Petersilie dazugeben, würzen."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

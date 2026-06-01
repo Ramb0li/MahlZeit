@@ -2,59 +2,81 @@
   "id": "sup-02",
   "name": "Minestrone",
   "category": "Suppen, Eintöpfe & Currys",
-  "timeMinutes": 45,
+  "timeMinutes": 70,
+  "tags": [
+    "Vegetarisch",
+    "Vegan",
+    "Italienisch"
+  ],
+  "weatherType": "kalt",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Klassische italienische Gemüsesuppe mit Borlotti-Bohnen.",
   "ingredients": [
     {
-      "name": "Gemischtes Gemüse",
-      "amount": 600,
+      "name": "Borlotti-Bohnen (Dose)",
+      "amount": 1,
+      "unit": "Dose",
+      "perPortions": 4
+    },
+    {
+      "name": "Kartoffeln",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Wirz",
+      "amount": 200,
       "unit": "g",
       "perPortions": 4
     },
     {
-      "name": "Tomatenwürfel (Dose)",
-      "amount": 400,
+      "name": "Karotten",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Lauch",
+      "amount": 1,
+      "unit": "Stange",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomatenpüree",
+      "amount": 140,
       "unit": "g",
       "perPortions": 4
     },
     {
-      "name": "Pasta (klein)",
-      "amount": 150,
-      "unit": "g",
+      "name": "Gemüsebouillon",
+      "amount": 1.5,
+      "unit": "L",
       "perPortions": 4
     },
     {
-      "name": "Weisse Bohnen (Dose)",
-      "amount": 400,
-      "unit": "g",
-      "perPortions": 4
-    },
-    {
-      "name": "Gemüsebrühe",
-      "amount": 1000,
-      "unit": "ml",
-      "perPortions": 4
-    },
-    {
-      "name": "Parmesan",
-      "amount": 40,
-      "unit": "g",
+      "name": "Olivenöl",
+      "amount": 3,
+      "unit": "EL",
       "perPortions": 4
     }
   ],
-  "weatherType": "kalt",
-  "source": "Menüliste",
-  "basePortions": 4,
-  "description": "Italienische Gemüsesuppe mit Pasta und Bohnen.",
-  "steps": [],
+  "steps": [
+    "Gemüse klein schneiden.",
+    "Öl erhitzen, Zwiebel dünsten. Tomatenpüree mitdünsten. Gemüse beifügen.",
+    "Mit Bouillon ablöschen, aufkochen.",
+    "Ca. 1 Stunde köcheln.",
+    "Mit Salz, Pfeffer abschmecken. Mit Petersilie garnieren."
+  ],
   "tips": "",
-  "imageUrl": "/images/recipes/cuiselin-minestrone-zutaten.jpg",
-  "imageZutaten": "/images/recipes/cuiselin-minestrone-zutaten.jpg",
-  "tags": [
-    "Mealprep-geeignet",
-    "Mittagsgericht",
-    "Herbst",
-    "Winter",
-    "Frühling",
-    "Italienisch"
-  ]
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null
 }

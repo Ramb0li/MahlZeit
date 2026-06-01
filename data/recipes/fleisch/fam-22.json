@@ -1,0 +1,71 @@
+{
+  "id": "fam-22",
+  "name": "Knöpfli-Töpfli Füürtüfeli",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 30,
+  "tags": [],
+  "weatherType": "neutral",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Würzige Knöpfli mit Poulet, Lauch, Peperoni und Sojasauce.",
+  "ingredients": [
+    {
+      "name": "Pouletfleisch",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Bio-Spätzli",
+      "amount": 1,
+      "unit": "kg",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebeln",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 3,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Lauch",
+      "amount": 3,
+      "unit": "Stangen",
+      "perPortions": 4
+    },
+    {
+      "name": "Peperoni",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Sojasauce",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Curry",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Poulet anbraten, würzen, warmstellen.",
+    "Zwiebeln und Knoblauch andämpfen. Gemüse und Peperoncini beifügen.",
+    "Sojasauce dazugeben, würzen, 10 Min. zugedeckt köcheln.",
+    "Knöpfli in Butter anbraten. Gemüse und Fleisch beifügen, abschmecken."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

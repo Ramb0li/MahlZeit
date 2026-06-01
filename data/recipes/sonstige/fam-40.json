@@ -1,0 +1,61 @@
+{
+  "id": "fam-40",
+  "name": "Spinat-Pancakes vom Ofen",
+  "category": "Vegetarische Hauptgerichte",
+  "timeMinutes": 30,
+  "tags": [
+    "Vegetarisch",
+    "Ofengericht"
+  ],
+  "weatherType": "neutral",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 8,
+  "description": "Herzhafter Spinat-Pancake-Blechkuchen – in Quadrate geschnitten.",
+  "ingredients": [
+    {
+      "name": "TK-Spinat, gehackt (aufgetaut)",
+      "amount": 260,
+      "unit": "g",
+      "perPortions": 8
+    },
+    {
+      "name": "Eier",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 8
+    },
+    {
+      "name": "Dinkelvollkorn-Mehl",
+      "amount": 10,
+      "unit": "EL",
+      "perPortions": 8
+    },
+    {
+      "name": "Backpulver",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 8
+    },
+    {
+      "name": "Sojamilch",
+      "amount": 140,
+      "unit": "ml",
+      "perPortions": 8
+    },
+    {
+      "name": "Mozzarella, gerieben",
+      "amount": 120,
+      "unit": "g",
+      "perPortions": 8
+    }
+  ],
+  "steps": [
+    "Alles gut vermischen.",
+    "Auf Backpapier verstreichen, bei 180°C ca. 20 Min. backen.",
+    "In Quadrate schneiden oder mit Form ausstechen."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

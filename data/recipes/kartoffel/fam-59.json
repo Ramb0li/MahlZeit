@@ -1,0 +1,64 @@
+{
+  "id": "fam-59",
+  "name": "Ofenkartoffeln",
+  "category": "Kartoffelgerichte",
+  "timeMinutes": 40,
+  "tags": [
+    "Vegetarisch",
+    "Vegan",
+    "Ofengericht"
+  ],
+  "weatherType": "kalt",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Aromatische Ofenkartoffeln mit Rosmarin, Thymian und Weisswein.",
+  "ingredients": [
+    {
+      "name": "Kartoffeln",
+      "amount": 1,
+      "unit": "kg",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Rosmarin",
+      "amount": 2,
+      "unit": "Zweige",
+      "perPortions": 4
+    },
+    {
+      "name": "Thymian",
+      "amount": 2,
+      "unit": "Zweige",
+      "perPortions": 4
+    },
+    {
+      "name": "Weisswein",
+      "amount": 1,
+      "unit": "Schuss",
+      "perPortions": 4
+    },
+    {
+      "name": "Paprika",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Ofen auf 220°C vorheizen.",
+    "Kartoffeln waschen, in mundgerechte Stücke schneiden.",
+    "Gratinform mit Olivenöl einstreichen.",
+    "Kartoffeln, Kräuter, Gewürze, Weisswein und Olivenöl dazugeben.",
+    "30–40 Min. backen, alle 15 Min. umrühren."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

@@ -1,0 +1,56 @@
+{
+  "id": "fam-39",
+  "name": "Spaghetti freschi",
+  "category": "Pasta",
+  "timeMinutes": 20,
+  "tags": [
+    "Vegetarisch",
+    "Sommer"
+  ],
+  "weatherType": "warm",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Frische, leichte Cherrytomaten-Sauce mit Basilikum.",
+  "ingredients": [
+    {
+      "name": "Spaghetti",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Cherrytomaten",
+      "amount": 2,
+      "unit": "Karton",
+      "perPortions": 4
+    },
+    {
+      "name": "Basilikum",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 2,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Knoblauch in Butter andämpfen.",
+    "Halbierte Cherrytomaten beifügen, mitdämpfen, würzen.",
+    "Basilikum erst gegen Schluss dazugeben.",
+    "Unterdessen Spaghetti kochen."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

@@ -1,0 +1,69 @@
+{
+  "id": "ocr-02",
+  "name": "Biskuitroulade mit Äpfeln",
+  "category": "Desserts & Süsses",
+  "timeMinutes": 45,
+  "tags": [
+    "Vegetarisch"
+  ],
+  "weatherType": "neutral",
+  "source": "Familien-Rezeptbuch (OCR)",
+  "basePortions": 8,
+  "description": "Beliebtes, saftiges Dessert: Biskuitroulade mit frischem Apfel-Rahm.",
+  "ingredients": [
+    {
+      "name": "Eier",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 8
+    },
+    {
+      "name": "Zucker",
+      "amount": 120,
+      "unit": "g",
+      "perPortions": 8
+    },
+    {
+      "name": "Mehl",
+      "amount": 120,
+      "unit": "g",
+      "perPortions": 8
+    },
+    {
+      "name": "Rahm",
+      "amount": 1.5,
+      "unit": "dl",
+      "perPortions": 8
+    },
+    {
+      "name": "Äpfel",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 8
+    },
+    {
+      "name": "Zucker (Füllung)",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 8
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 8
+    }
+  ],
+  "steps": [
+    "Eigelb mit heissem Wasser schaumig rühren. Zucker und Mehl darunter.",
+    "Auf belegtem Blech verstreichen, bei 200°C 10–15 Min. backen.",
+    "Unter Blech auskühlen, einrollen.",
+    "Rahm steifschlagen.",
+    "Äpfel raffeln, sofort mit Rahm mischen, Zitronensaft und Zucker beifügen.",
+    "Auf erkaltete Roulade streichen, einrollen, mit Puderzucker bestreuen."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

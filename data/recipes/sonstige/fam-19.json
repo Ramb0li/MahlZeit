@@ -1,0 +1,67 @@
+{
+  "id": "fam-19",
+  "name": "Himbeertiramisu",
+  "category": "Desserts & Süsses",
+  "timeMinutes": 30,
+  "tags": [
+    "Vegetarisch"
+  ],
+  "weatherType": "neutral",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 6,
+  "description": "Leichtes Himbeertiramisu mit Philadelphia und geschlagenem Rahm.",
+  "ingredients": [
+    {
+      "name": "Philadelphia",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Vollrahm",
+      "amount": 4,
+      "unit": "dl",
+      "perPortions": 6
+    },
+    {
+      "name": "Zucker",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "TK-Himbeeren",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Petite Beurre Guetzli",
+      "amount": 7,
+      "unit": "Stk",
+      "perPortions": 6
+    },
+    {
+      "name": "Mandelscheiben",
+      "amount": 0.5,
+      "unit": "Packung",
+      "perPortions": 6
+    },
+    {
+      "name": "Butter",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 6
+    }
+  ],
+  "steps": [
+    "Philadelphia, Rahm, Zucker, Vanillezucker mischen. Hälfte in Gratinform füllen.",
+    "Angetaute Himbeeren eindrücken. Restliche Masse darüber, kühlstellen.",
+    "Guetzli zerkleinern, mit Mandeln und Zucker in Butter rösten.",
+    "Kurz vor Servieren auf Tiramisu geben."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

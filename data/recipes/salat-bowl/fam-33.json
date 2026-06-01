@@ -1,0 +1,61 @@
+{
+  "id": "fam-33",
+  "name": "Randensalat",
+  "category": "Salate & Bowls",
+  "timeMinutes": 15,
+  "tags": [
+    "Vegetarisch",
+    "Vegan"
+  ],
+  "weatherType": "neutral",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Saftiger Randensalat mit Senf-Dressing.",
+  "ingredients": [
+    {
+      "name": "Randen (gekocht), gerieben",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Senf",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Essig",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Öl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Sojasauce",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Randen mit Röstiraffel reiben.",
+    "Dressing aus Senf, Essig, Öl, Sojasauce, Salz, Pfeffer rühren.",
+    "Mit Zwiebeln und Randen mischen."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

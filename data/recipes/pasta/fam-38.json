@@ -1,0 +1,65 @@
+{
+  "id": "fam-38",
+  "name": "Spaghetti Carbonara",
+  "category": "Pasta",
+  "timeMinutes": 25,
+  "tags": [],
+  "weatherType": "neutral",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Cremige Carbonara mit Schinken, Ei-Rahm-Sauce und Sbrinz.",
+  "ingredients": [
+    {
+      "name": "Spaghetti",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Schinken oder Speck",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 2,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Rahm",
+      "amount": 4,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Ei",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Sbrinz, gerieben",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Sambal Oelek",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Ei, Rahm, Käse, Sambal mixen.",
+    "Spaghetti kochen.",
+    "Schinken in Bratbutter anbraten, Knoblauch am Schluss.",
+    "Abgeschüttete Spaghetti vom Herd, Olivenöl darunter, Eier-Rahmgemisch einrühren, Schinken beigeben."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

@@ -1,0 +1,73 @@
+{
+  "id": "fam-23",
+  "name": "Kräuter-Gemüse-Rahmsauce",
+  "category": "Vegetarische Hauptgerichte",
+  "timeMinutes": 30,
+  "tags": [
+    "Vegetarisch"
+  ],
+  "weatherType": "neutral",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 6,
+  "description": "Cremige Gemüse-Cashew-Rahmsauce mit Kräutern – ideal zu Pasta oder Ravioli.",
+  "ingredients": [
+    {
+      "name": "Cashewkerne",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 6
+    },
+    {
+      "name": "Rüebli",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 6
+    },
+    {
+      "name": "Champignons",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Zucchetti",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 6
+    },
+    {
+      "name": "Gemüsebouillon",
+      "amount": 4,
+      "unit": "dl",
+      "perPortions": 6
+    },
+    {
+      "name": "Schnittlauch",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 6
+    },
+    {
+      "name": "Petersilie",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 6
+    }
+  ],
+  "steps": [
+    "Cashewkerne in Wasser einlegen.",
+    "Zwiebel glasig dünsten. Knoblauch, Rüebli, Champignons, Zucchetti beifügen.",
+    "Mit Bouillon ablöschen, köcheln. Kräuter fein schneiden.",
+    "Cashews mit 200 ml Wasser pürieren, zum Gemüse geben. Würzen."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

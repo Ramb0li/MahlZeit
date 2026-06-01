@@ -1,0 +1,64 @@
+{
+  "id": "fam-53",
+  "name": "Wurstsalat",
+  "category": "Salate & Bowls",
+  "timeMinutes": 20,
+  "tags": [],
+  "weatherType": "warm",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Herzhafter Wurstsalat mit Cervelat, Eiern, Tomaten und Essiggurken.",
+  "ingredients": [
+    {
+      "name": "Cervelats",
+      "amount": 5,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomaten",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Essiggurken",
+      "amount": 6,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Eier, gesotten",
+      "amount": 6,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Mayonnaise",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Essig",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Cervelats in Würfel, Tomaten und Gurken würfeln, Eier vierteln.",
+    "Dressing aus Mayo, Milch, Essig, Öl, Senf, Salz, Pfeffer rühren.",
+    "Alles mischen."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

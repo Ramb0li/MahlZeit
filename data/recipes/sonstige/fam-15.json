@@ -1,0 +1,81 @@
+{
+  "id": "fam-15",
+  "name": "Gemüse-Bolognese",
+  "category": "Vegetarische Hauptgerichte",
+  "timeMinutes": 35,
+  "tags": [
+    "Vegetarisch",
+    "Vegan"
+  ],
+  "weatherType": "neutral",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Vollwertige Bolognese aus Zucchetti, Peperoni, Rüebli und Cherrytomaten.",
+  "ingredients": [
+    {
+      "name": "Zwiebeln",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Zucchetti",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Rüebli",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Peperoni",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Champignons",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Cherrytomaten",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomatenpüree",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Weisswein",
+      "amount": 1,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebouillon",
+      "amount": 1,
+      "unit": "Tasse",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Gemüse hacken (nicht zu fein).",
+    "Öl erhitzen, Gemüse und Pilze andämpfen.",
+    "Tomatenpüree beifügen, mit Wein ablöschen.",
+    "Würzen (All'Arrabbiata, Ital. Kräuter, Salz, Pfeffer), Bouillon dazugeben, 20 Min. köcheln.",
+    "Cherrytomaten zuletzt dazugeben, 5 Min. fertigkochen."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

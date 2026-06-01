@@ -1,0 +1,57 @@
+{
+  "id": "fam-43",
+  "name": "Thonaufstrich",
+  "category": "Snacks & Vorspeisen",
+  "timeMinutes": 15,
+  "tags": [],
+  "weatherType": "neutral",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 6,
+  "description": "Cremiger Thunfischaufstrich mit Essiggurken und Kapern – ideal auf Brot.",
+  "ingredients": [
+    {
+      "name": "Thun (Dose)",
+      "amount": 2,
+      "unit": "Dosen",
+      "perPortions": 6
+    },
+    {
+      "name": "Eier, gesotten",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 6
+    },
+    {
+      "name": "Essiggurken",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 6
+    },
+    {
+      "name": "Butter",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Tomatenpüree",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 6
+    },
+    {
+      "name": "Sambal Oelek",
+      "amount": 1,
+      "unit": "KL",
+      "perPortions": 6
+    }
+  ],
+  "steps": [
+    "Alle Zutaten mit Stabmixer pürieren.",
+    "Mit Kapern und Zwiebelringen dekorieren."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

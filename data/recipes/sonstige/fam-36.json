@@ -1,0 +1,58 @@
+{
+  "id": "fam-36",
+  "name": "Rotkraut à la Grosi",
+  "category": "Vegetarische Hauptgerichte",
+  "timeMinutes": 55,
+  "tags": [
+    "Vegetarisch",
+    "Vegan",
+    "Herbst",
+    "Schweizer"
+  ],
+  "weatherType": "kalt",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 6,
+  "description": "Traditionelles Rotkraut im Dampfkochtopf mit Äpfeln und Rotwein.",
+  "ingredients": [
+    {
+      "name": "Rotchabis, fein gehobelt",
+      "amount": 1.5,
+      "unit": "kg",
+      "perPortions": 6
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 6
+    },
+    {
+      "name": "Äpfel, fein gehobelt",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 6
+    },
+    {
+      "name": "Rotwein",
+      "amount": 2,
+      "unit": "dl",
+      "perPortions": 6
+    },
+    {
+      "name": "Weinessig",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 6
+    }
+  ],
+  "steps": [
+    "Öl erhitzen, Zwiebeln glasig andämpfen.",
+    "Rotchabis dazugeben, zusammenfallen lassen.",
+    "Äpfel dazugeben, würzen (Salz, Zucker).",
+    "Rotwein und Essig dazugeben, aufkochen. Zugedeckt 45 Min. dampfgaren."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

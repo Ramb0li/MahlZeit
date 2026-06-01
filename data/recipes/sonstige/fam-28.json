@@ -1,0 +1,63 @@
+{
+  "id": "fam-28",
+  "name": "Mediterranes Gemüse",
+  "category": "Vegetarische Hauptgerichte",
+  "timeMinutes": 35,
+  "tags": [
+    "Vegetarisch",
+    "Vegan",
+    "Ofengericht",
+    "Sommer"
+  ],
+  "weatherType": "warm",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Buntes Ofengemüse mit Cherrytomaten, Oliven und Rosmarin.",
+  "ingredients": [
+    {
+      "name": "Zucchetti",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Peperoni",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Champignons",
+      "amount": 1,
+      "unit": "Packung",
+      "perPortions": 4
+    },
+    {
+      "name": "Cherrytomaten",
+      "amount": 2,
+      "unit": "Packungen",
+      "perPortions": 4
+    },
+    {
+      "name": "schwarze Oliven, entsteint",
+      "amount": 1,
+      "unit": "Handvoll",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Gemüse würfeln. In Gratinform legen, würzen (All'Arrabiata, Salz, Pfeffer), mit Olivenöl begiessen. Rosmarin dazu.",
+    "Bei 200°C 20 Min. schmoren.",
+    "Cherrytomaten dazugeben, 5–10 Min. weiterschmoren."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

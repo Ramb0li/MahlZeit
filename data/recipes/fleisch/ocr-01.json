@@ -1,0 +1,86 @@
+{
+  "id": "ocr-01",
+  "name": "Poulet-Geschnetzeltes im afrikanischen Kleid",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 45,
+  "tags": [
+    "Orientalisch"
+  ],
+  "weatherType": "warm",
+  "source": "Familien-Rezeptbuch (OCR)",
+  "basePortions": 4,
+  "description": "Würziges Pouletgeschnetzeltes mit Kichererbsen, Peperoni und Couscous.",
+  "ingredients": [
+    {
+      "name": "Pouletbrüstchen, geschnetzelt",
+      "amount": 600,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Kichererbsen",
+      "amount": 80,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Peperoni rot/gelb",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Chilischoten",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 4,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Couscous",
+      "amount": 160,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Bratenjus",
+      "amount": 2,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Aceto Balsamico",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kreuzkümmel",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Chilipulver",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Kreuzkümmel, Pfeffer, Chili, Salz mischen, Poulet würzen.",
+    "Portionsweise heiss anbraten, abtropfen, Saft auffangen.",
+    "Zwiebel, Peperoni, Chili, Knoblauch kurz anbraten. Mit Bratenjus und Balsamico ablöschen, einkochen.",
+    "Poulet, Saft und Kichererbsen dazugeben, aufkochen, würzen.",
+    "Couscous: Salzwasser mit Chili aufkochen, Couscous quellen lassen, mit Olivenöl und Petersilie mischen."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

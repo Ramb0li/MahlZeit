@@ -1,0 +1,55 @@
+{
+  "id": "fam-48",
+  "name": "Tomatensuppe à la Grosi",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 20,
+  "tags": [
+    "Vegetarisch",
+    "Schweizer"
+  ],
+  "weatherType": "kalt",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Grossmutters einfache, klassische Tomatensuppe.",
+  "ingredients": [
+    {
+      "name": "Butter",
+      "amount": 1,
+      "unit": "Stück",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomatenpüree (Büchse)",
+      "amount": 1,
+      "unit": "Dose",
+      "perPortions": 4
+    },
+    {
+      "name": "Mehl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Bouillon",
+      "amount": 1,
+      "unit": "L",
+      "perPortions": 4
+    },
+    {
+      "name": "Rahm",
+      "amount": 1,
+      "unit": "dl",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Butter schmelzen, Tomatenpüree andämpfen, Mehl beifügen.",
+    "Mit Bouillon ablöschen, würzen (Ital. Kräuter, Pfeffer).",
+    "5–10 Min. köcheln. Rahm dazugeben."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
-import Link from 'next/link';
+import Link  from 'next/link';
+import Image from 'next/image';
 import { CalendarDays, BookOpen, ShoppingCart, Settings, Users, LogOut } from 'lucide-react';
 import { WeekPlanner } from '@/components/planner/WeekPlanner';
 import { RecipeList } from '@/components/recipes/RecipeList';
@@ -84,12 +85,7 @@ export function AppShell({
         <div className="flex items-center justify-between px-5 h-full">
           {/* Brand */}
           <Link href="/" className="flex items-center gap-2.5" style={{ textDecoration: 'none' }}>
-            <div
-              className="w-8 h-8 rounded-xl flex items-center justify-center"
-              style={{ backgroundColor: theme.todayAccent + '22', border: `1px solid ${theme.borderColor}` }}
-            >
-              <span className="text-base leading-none">🍽</span>
-            </div>
+            <Image src="/Logo-Mahlzeit.png" alt="MahlZeit" width={32} height={32} style={{ objectFit: 'contain' }} />
             <div className="flex flex-col leading-tight">
               <span
                 className="font-fraunces font-black text-[17px] tracking-tight leading-none"

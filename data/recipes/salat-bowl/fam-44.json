@@ -1,0 +1,57 @@
+{
+  "id": "fam-44",
+  "name": "Thonsalat",
+  "category": "Salate & Bowls",
+  "timeMinutes": 10,
+  "tags": [],
+  "weatherType": "warm",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Klassischer Thonsalat mit Mayonnaise und Essig.",
+  "ingredients": [
+    {
+      "name": "Thun (Dosen)",
+      "amount": 2,
+      "unit": "Dosen",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel, fein gehackt",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Mayonnaise",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Essig",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Öl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Milch",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Thun fein zerzupfen.",
+    "Mit restlichen Zutaten mischen, abschmecken."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

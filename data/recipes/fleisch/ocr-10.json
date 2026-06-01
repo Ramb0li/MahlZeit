@@ -1,0 +1,71 @@
+{
+  "id": "ocr-10",
+  "name": "Geschnetzeltes mit Rosmarinpolenta",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 50,
+  "tags": [],
+  "weatherType": "kalt",
+  "source": "Familien-Rezeptbuch (OCR)",
+  "basePortions": 4,
+  "description": "Geschnetzeltes Schweinefleisch mit cremiger Rosmarinpolenta.",
+  "ingredients": [
+    {
+      "name": "Schweinefleisch, geschnetzelt",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Polentagries",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Wasser",
+      "amount": 1,
+      "unit": "L",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 2,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Weisswein",
+      "amount": 2,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Fleischbouillon",
+      "amount": 2,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Polenta: Wasser mit Rosmarin aufkochen, würzen. Mais einrühren, 40 Min. auf kleiner Hitze köcheln. Butter darunter.",
+    "Fleisch in Mehl-Salz-Paprika wenden, portionsweise anbraten.",
+    "Zwiebeln, Knoblauch andämpfen. Tomatenpüree, Wein, Bouillon beifügen. 20 Min. köcheln.",
+    "Mit Polenta anrichten."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

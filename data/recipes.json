@@ -474,6 +474,385 @@
     ]
   },
   {
+    "id": "fam-29",
+    "name": "Nudeln al Pollo",
+    "category": "Pasta",
+    "timeMinutes": 35,
+    "tags": [],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Breite Nudeln mit saftigem Poulet, Peperoni und Sauerrahmsauce.",
+    "ingredients": [
+      {
+        "name": "Pouletfleisch, geschnetzelt",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "breite Krausnudeln",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Peperoni",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebeln",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Sauerrahm",
+        "amount": 2,
+        "unit": "Becher",
+        "perPortions": 4
+      },
+      {
+        "name": "Rahm",
+        "amount": 1,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Sojasauce",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Poulet in Sojasauce und Pouletgewürz marinieren (¼ h), dann knusprig anbraten.",
+      "Zwiebeln andämpfen, Peperoni beifügen. Sojasauce und Wein dazugeben, 10 Min. köcheln.",
+      "Nudeln al dente kochen.",
+      "Kurz vor Servieren Sauerrahm und Rahm zu Nudeln geben, erhitzen. Peperoni und Poulet beifügen."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-30",
+    "name": "Nudeln mit Gemüse-Poulet-Sauce",
+    "category": "Pasta",
+    "timeMinutes": 35,
+    "tags": [],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Pasta mit würziger Poulet-Gemüse-Sauce in Rahm.",
+    "ingredients": [
+      {
+        "name": "Pouletfleisch, geschnetzelt",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Nudeln",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Blumenkohl, halb",
+        "amount": 0.5,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Peperoni",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Zucchetti",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Rahm",
+        "amount": 3,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebeln",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Gemüse klein schneiden.",
+      "Poulet anbraten, würzen, warmstellen.",
+      "Zwiebeln andünsten, Gemüse beifügen, würzen. 10–15 Min. köcheln.",
+      "Rahm und Poulet dazugeben."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-38",
+    "name": "Spaghetti Carbonara",
+    "category": "Pasta",
+    "timeMinutes": 25,
+    "tags": [],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Cremige Carbonara mit Schinken, Ei-Rahm-Sauce und Sbrinz.",
+    "ingredients": [
+      {
+        "name": "Spaghetti",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Schinken oder Speck",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Rahm",
+        "amount": 4,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Ei",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Sbrinz, gerieben",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Sambal Oelek",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Ei, Rahm, Käse, Sambal mixen.",
+      "Spaghetti kochen.",
+      "Schinken in Bratbutter anbraten, Knoblauch am Schluss.",
+      "Abgeschüttete Spaghetti vom Herd, Olivenöl darunter, Eier-Rahmgemisch einrühren, Schinken beigeben."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-39",
+    "name": "Spaghetti freschi",
+    "category": "Pasta",
+    "timeMinutes": 20,
+    "tags": [
+      "Vegetarisch",
+      "Sommer"
+    ],
+    "weatherType": "warm",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Frische, leichte Cherrytomaten-Sauce mit Basilikum.",
+    "ingredients": [
+      {
+        "name": "Spaghetti",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Cherrytomaten",
+        "amount": 2,
+        "unit": "Karton",
+        "perPortions": 4
+      },
+      {
+        "name": "Basilikum",
+        "amount": 1,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Butter",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Knoblauch in Butter andämpfen.",
+      "Halbierte Cherrytomaten beifügen, mitdämpfen, würzen.",
+      "Basilikum erst gegen Schluss dazugeben.",
+      "Unterdessen Spaghetti kochen."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-50",
+    "name": "Tortellini an Blunschi-Kräutersauce",
+    "category": "Pasta",
+    "timeMinutes": 25,
+    "tags": [
+      "Vegetarisch"
+    ],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Tortellini mit aromatischer Blunschi-Kräutersauce.",
+    "ingredients": [
+      {
+        "name": "Tortellini mit Spinatfüllung",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Butter",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Weisswein",
+        "amount": 2,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Rahm",
+        "amount": 5,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Schnittlauch",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Petersilie",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Basilikum",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Zwiebel in Butter andämpfen, mit Weisswein ablöschen.",
+      "Bouillon, Curry, Provence-Kräuter, Kräuter beifügen.",
+      "Rahm dazugeben, würzen, kurz köcheln.",
+      "Tortellini nach Anleitung kochen, mit Sauce servieren."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-55",
+    "name": "Zitronenravioli an Prosecco-Sauce",
+    "category": "Pasta",
+    "timeMinutes": 25,
+    "tags": [
+      "Vegetarisch"
+    ],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Festliche Zitronenravioli in Prosecco-Parmesan-Sauce.",
+    "ingredients": [
+      {
+        "name": "Zitronenravioli",
+        "amount": 800,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Prosecco/Champagner",
+        "amount": 2.5,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Rahm",
+        "amount": 1.5,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Sbrinz",
+        "amount": 2,
+        "unit": "Handvoll",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Zwiebel in Butter 5 Min. andämpfen.",
+      "Mit Prosecco ablöschen, einkochen.",
+      "Käse hinzufügen, schmelzen. Rahm, Zitronenöl/Schale beifügen, würzen.",
+      "Ravioli nach Anleitung kochen."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
     "id": "fvt-03",
     "name": "Vollkornnudeln mit Linsen-Bolognese (Familientisch)",
     "category": "Pasta",
@@ -867,6 +1246,165 @@
     ]
   },
   {
+    "id": "ocr-04",
+    "name": "Bolognesesauce Marcello",
+    "category": "Pasta",
+    "timeMinutes": 75,
+    "tags": [],
+    "weatherType": "kalt",
+    "source": "Familien-Rezeptbuch (OCR)",
+    "basePortions": 4,
+    "description": "Klassische Bolognesesauce mit Rindsfleisch nach dem Rezept von Marcello.",
+    "ingredients": [
+      {
+        "name": "Rindsfleisch, gehackt",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebeln",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 1,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Rüebli, geraffelt",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Sellerie, geraffelt",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomaten, geschält",
+        "amount": 5,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomatenpüree",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Rotwein",
+        "amount": 1,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Bouillon",
+        "amount": 4,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Lorbeerblatt",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Fleisch in heissem Öl anbraten, würzen.",
+      "Zwiebeln, Knoblauch, Rüebli, Sellerie 5 Min. mitdämpfen.",
+      "Mit Wein ablöschen, einkochen.",
+      "Tomaten, Tomatenpüree und Bouillon beifügen.",
+      "1 Stunde köcheln lassen."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "ocr-07",
+    "name": "Vollkornnudeln mit Auberginen (Cinque Pì)",
+    "category": "Pasta",
+    "timeMinutes": 40,
+    "tags": [
+      "Vegetarisch",
+      "Italienisch"
+    ],
+    "weatherType": "warm",
+    "source": "Familien-Rezeptbuch (OCR)",
+    "basePortions": 4,
+    "description": "Vollkornnudeln mit würziger Auberginen-Sardellenfiletsauce.",
+    "ingredients": [
+      {
+        "name": "Vollkornnudeln",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Auberginen",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Pelati, gehackt (Dose)",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Sardellenfilets",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Basilikum",
+        "amount": 10,
+        "unit": "Blätter",
+        "perPortions": 4
+      },
+      {
+        "name": "Parmesan",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Nudeln al dente kochen.",
+      "Öl erhitzen, Zwiebel und Knoblauch andämpfen.",
+      "Auberginen würfeln, mitdämpfen.",
+      "Pelati beifügen, 20–30 Min. köcheln.",
+      "Sardellen und Basilikum unterrühren, würzen. Mit Nudeln servieren."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
     "id": "pas-01",
     "name": "Linsen-Gemüse-Bolognese",
     "category": "Pasta",
@@ -998,58 +1536,78 @@
     "name": "Spinat-Lasagne",
     "category": "Aufläufe & Gratins",
     "timeMinutes": 70,
+    "tags": [
+      "Vegetarisch",
+      "Mealprep-geeignet",
+      "Ofengericht",
+      "Herbst",
+      "Winter"
+    ],
+    "weatherType": "kalt",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Spinat-Lasagne mit Béchamelsauce und Sbrinz.",
     "ingredients": [
       {
+        "name": "TK-Blattspinat",
+        "amount": 600,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
         "name": "Lasagneblätter",
-        "amount": 250,
+        "amount": 9,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Sbrinz, gerieben",
+        "amount": 100,
         "unit": "g",
         "perPortions": 4
       },
       {
-        "name": "Spinat (TK)",
-        "amount": 500,
+        "name": "Kochbutter",
+        "amount": 50,
         "unit": "g",
         "perPortions": 4
       },
       {
-        "name": "Ricotta",
-        "amount": 250,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Béchamelsauce",
-        "amount": 400,
-        "unit": "ml",
-        "perPortions": 4
-      },
-      {
-        "name": "Mozzarella",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Muskatnuss",
+        "name": "Mehl",
         "amount": 1,
-        "unit": "Prise",
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Milch",
+        "amount": 5,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 1,
+        "unit": "Zehe",
         "perPortions": 4
       }
     ],
-    "weatherType": "kalt",
-    "source": "Rezept von Cuiselin",
-    "basePortions": 4,
-    "description": "Cremige Spinat-Ricotta Lasagne.",
-    "steps": [],
+    "steps": [
+      "Béchamel: Butter schmelzen, Mehl andünsten, mit Milch ablöschen. Aufkochen, 5 Min. rühren, würzen.",
+      "Zwiebeln glasig dünsten. Spinat 3 Min. mitdünsten, würzen.",
+      "Béchamel dazugiessen, aufkochen.",
+      "Form fetten. Blätter mit Spinatmasse abwechseln. Sbrinz drüber.",
+      "Bei 200–220°C 40–45 Min. backen."
+    ],
     "tips": "",
     "imageUrl": null,
-    "tags": [
-      "Mealprep-geeignet",
-      "Mittagsgericht",
-      "Herbst",
-      "Winter",
-      "Ofengericht"
-    ]
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "pas-04",
@@ -1104,51 +1662,60 @@
   },
   {
     "id": "pas-05",
-    "name": "Napoli",
+    "name": "Spaghetti Napoli",
     "category": "Pasta",
-    "timeMinutes": 20,
+    "timeMinutes": 25,
+    "tags": [
+      "Vegetarisch",
+      "Vegan",
+      "Italienisch"
+    ],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Klassische Tomatensauce nach Hausrezept.",
     "ingredients": [
       {
-        "name": "Pasta",
-        "amount": 320,
-        "unit": "g",
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
         "perPortions": 4
       },
       {
-        "name": "Passierte Tomaten",
+        "name": "Tomatenpüree (Dose)",
+        "amount": 1,
+        "unit": "Dose",
+        "perPortions": 4
+      },
+      {
+        "name": "Pelati (Dose)",
+        "amount": 1,
+        "unit": "Dose",
+        "perPortions": 4
+      },
+      {
+        "name": "Bouillon",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Spaghetti",
         "amount": 400,
         "unit": "g",
         "perPortions": 4
-      },
-      {
-        "name": "Knoblauch",
-        "amount": 3,
-        "unit": "Zehen",
-        "perPortions": 4
-      },
-      {
-        "name": "Basilikum",
-        "amount": 1,
-        "unit": "Bund",
-        "perPortions": 4
-      },
-      {
-        "name": "Olivenöl",
-        "amount": 3,
-        "unit": "EL",
-        "perPortions": 4
       }
     ],
-    "weatherType": "neutral",
-    "source": "Rezept von Cuiselin",
-    "basePortions": 4,
-    "description": "Klassische Tomatensauce – simpel und gut.",
-    "steps": [],
+    "steps": [
+      "Zwiebel in Olivenöl andämpfen.",
+      "Tomatenpüree, Pelati, Bouillon beifügen.",
+      "Würzen (Ital. Kräuter, Salz, Pfeffer, All'Arrabbiata), 15–20 Min. köcheln.",
+      "Spaghetti al dente kochen."
+    ],
     "tips": "",
     "imageUrl": null,
-    "tags": [
-      "Mittagsgericht"
-    ]
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "pas-06",
@@ -1207,59 +1774,80 @@
   },
   {
     "id": "pas-07",
-    "name": "Älpler Magronen",
-    "category": "Pasta",
+    "name": "Älplermagronen",
+    "category": "Aufläufe & Gratins",
     "timeMinutes": 45,
+    "tags": [
+      "Vegetarisch",
+      "Schweizer",
+      "Herbst",
+      "Winter"
+    ],
+    "weatherType": "kalt",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Schweizer Klassiker: Magronen mit Kartoffeln, Käse, Rahm und Röstizwiebeln.",
     "ingredients": [
       {
-        "name": "Hörnli",
-        "amount": 320,
-        "unit": "g",
+        "name": "Kernser Älplermagronen",
+        "amount": 1,
+        "unit": "Packung",
         "perPortions": 4
       },
       {
         "name": "Kartoffeln",
-        "amount": 400,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Rahm",
-        "amount": 200,
-        "unit": "ml",
-        "perPortions": 4
-      },
-      {
-        "name": "Gruyère (gerieben)",
-        "amount": 150,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Zwiebeln (für Röstzwiebeln)",
-        "amount": 2,
+        "amount": 5,
         "unit": "Stk",
         "perPortions": 4
       },
       {
-        "name": "Apfelmus",
+        "name": "Sbrinz, gerieben",
         "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Greyerzer, gerieben",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Vollrahm",
+        "amount": 5,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Halbrahm",
+        "amount": 2,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebeln",
+        "amount": 5,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Butter",
+        "amount": 100,
         "unit": "g",
         "perPortions": 4
       }
     ],
-    "weatherType": "kalt",
-    "source": "Rezept von Cuiselin",
-    "basePortions": 4,
-    "description": "Schweizer Klassiker vom Berg.",
-    "steps": [],
+    "steps": [
+      "Kartoffeln würfeln. Wasser mit Salz aufkochen, Kartoffeln beifügen. Teigwaren kochen.",
+      "Zwiebeln in Butter knusprig braten.",
+      "Abgeschüttete Teigwaren lagenweise mit Käse in Gratinform, Rahm darüber.",
+      "Bei 100–150°C 15 Min. warmhalten.",
+      "Gut mischen, Zwiebelringe drauf. Mit Apfelmus servieren."
+    ],
     "tips": "",
     "imageUrl": null,
-    "tags": [
-      "Herbst",
-      "Winter",
-      "Schweizer"
-    ]
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "pas-08",
@@ -1602,6 +2190,62 @@
     ]
   },
   {
+    "id": "fam-56",
+    "name": "Zitronenrisotto",
+    "category": "Reis & Getreide",
+    "timeMinutes": 35,
+    "tags": [
+      "Vegetarisch"
+    ],
+    "weatherType": "warm",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Erfrischendes Zitronenrisotto mit Greyerzer.",
+    "ingredients": [
+      {
+        "name": "Risottoreis",
+        "amount": 3,
+        "unit": "Tassen",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitrone",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Greyerzer",
+        "amount": 2,
+        "unit": "Handvoll",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebouillon",
+        "amount": 1,
+        "unit": "L",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Zitronenschale abreiben, Saft auspressen.",
+      "Zwiebeln in Olivenöl andünsten, Reis beifügen, glasig dünsten.",
+      "Mit Zitronensaft ablöschen, Schale hinzufügen.",
+      "Warme Bouillon nach und nach dazugeben, rühren und einkochen.",
+      "Vor Servieren Greyerzer beifügen, pfeffern."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
     "id": "fvt-10",
     "name": "Spinat-Linsen-Daal mit Vollkornreis",
     "category": "Reis & Getreide",
@@ -1707,6 +2351,86 @@
       "Winter",
       "Frühling"
     ]
+  },
+  {
+    "id": "ocr-09",
+    "name": "Gerstotto mit Spinat und Bündnerfleisch",
+    "category": "Reis & Getreide",
+    "timeMinutes": 65,
+    "tags": [
+      "Schweizer"
+    ],
+    "weatherType": "kalt",
+    "source": "Familien-Rezeptbuch (OCR)",
+    "basePortions": 4,
+    "description": "Gerste als Risotto mit Spinat, Bündnerfleisch und Schlagrahm gebunden.",
+    "ingredients": [
+      {
+        "name": "Bündnerfleisch",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 1,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Rollgerste",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Weisswein",
+        "amount": 150,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebouillon",
+        "amount": 1,
+        "unit": "L",
+        "perPortions": 4
+      },
+      {
+        "name": "Spinat (frisch oder TK)",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Rahm",
+        "amount": 75,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Sbrinz oder Parmesan, gerieben",
+        "amount": 60,
+        "unit": "g",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Bündnerfleisch in Streifen. Zwiebel und Knoblauch hacken.",
+      "Butter schmelzen, Zwiebel andünsten. Gerste und Bündnerfleisch rösten. Mit Wein ablöschen.",
+      "Bouillon beifügen, zugedeckt 45 Min. köcheln.",
+      "Spinat blanchieren und ausdrücken. Rahm steifschlagen.",
+      "Spinat unter Gerste mischen, würzen. Käse beifügen, Schlagrahm darunterziehen."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
   },
   {
     "id": "rei-01",
@@ -1955,28 +2679,43 @@
     "name": "Mexikanischer Reissalat",
     "category": "Salate & Bowls",
     "timeMinutes": 20,
+    "tags": [
+      "Vegetarisch",
+      "Vegan",
+      "Mexikanisch"
+    ],
+    "weatherType": "warm",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Bunter Reissalat mit Bohnen, Mais, Avocado und Limetten-Dressing.",
     "ingredients": [
       {
-        "name": "Langkornreis",
-        "amount": 280,
+        "name": "Vollkornreis (Resten)",
+        "amount": 300,
         "unit": "g",
         "perPortions": 4
       },
       {
-        "name": "Mais (Dose)",
-        "amount": 200,
-        "unit": "g",
+        "name": "Kidneybohnen (Dose)",
+        "amount": 1,
+        "unit": "Dose",
         "perPortions": 4
       },
       {
-        "name": "Schwarze Bohnen (Dose)",
-        "amount": 400,
-        "unit": "g",
+        "name": "Mais (Glas)",
+        "amount": 1,
+        "unit": "Glas",
         "perPortions": 4
       },
       {
-        "name": "Paprika",
-        "amount": 2,
+        "name": "Avocado",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Frühlingszwiebel",
+        "amount": 1,
         "unit": "Stk",
         "perPortions": 4
       },
@@ -1987,32 +2726,28 @@
         "perPortions": 4
       },
       {
-        "name": "Limettensaft",
-        "amount": 2,
-        "unit": "EL",
+        "name": "Limette",
+        "amount": 1,
+        "unit": "Stk",
         "perPortions": 4
       },
       {
         "name": "Olivenöl",
-        "amount": 3,
+        "amount": 2,
         "unit": "EL",
         "perPortions": 4
       }
     ],
-    "weatherType": "warm",
-    "source": "Rezept von Cuiselin",
-    "basePortions": 4,
-    "description": "Bunter Reissalat mit mexikanischen Aromen.",
-    "steps": [],
+    "steps": [
+      "Dressing: Olivenöl, Limettensaft, Kreuzkümmel, Chili, Salz, Pfeffer verrühren.",
+      "Reis, Bohnen, Mais mischen.",
+      "Avocado würfeln, Frühlingszwiebel in Ringe, Koriander zerzupfen.",
+      "Alles mischen, Dressing darüber."
+    ],
     "tips": "",
     "imageUrl": null,
-    "tags": [
-      "Mealprep-geeignet",
-      "Mittagsgericht",
-      "Frühling",
-      "Sommer",
-      "Mexikanisch"
-    ]
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "rei-06",
@@ -2568,6 +3303,145 @@
     ]
   },
   {
+    "id": "fam-09",
+    "name": "Chnöpfli-Gratin",
+    "category": "Aufläufe & Gratins",
+    "timeMinutes": 35,
+    "tags": [],
+    "weatherType": "kalt",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Chnöpfli-Gratin mit Napoli-Sauce, Schinken und Reibkäse.",
+    "ingredients": [
+      {
+        "name": "Chnöpfli/Bio-Spätzli",
+        "amount": 2,
+        "unit": "Packungen",
+        "perPortions": 4
+      },
+      {
+        "name": "Reibkäse",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Schinken",
+        "amount": 150,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Butter",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Pelati (Dose)",
+        "amount": 1,
+        "unit": "Dose",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomatenpüree",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Butter schmelzen, Chnöpfli anbraten, in eingebutterte Gratinform geben.",
+      "Napoli-Sauce zubereiten (Zwiebel, Pelati, Tomatenpüree, Kräuter, 15 Min. köcheln).",
+      "Sauce und Schinken unter Chnöpfli mischen.",
+      "Viel Reibkäse darüber. 10 Min. bei 220°C backen."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-20",
+    "name": "Hörnligratin mit Räuchertofu und Lauch",
+    "category": "Aufläufe & Gratins",
+    "timeMinutes": 45,
+    "tags": [
+      "Vegetarisch"
+    ],
+    "weatherType": "kalt",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 6,
+    "description": "Cremiger Hörnligratin mit Räuchertofu, Lauch, Erbsen und Greyerzer.",
+    "ingredients": [
+      {
+        "name": "Urdinkel-Hörnli",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Räuchertofu",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Lauch",
+        "amount": 2,
+        "unit": "Stangen",
+        "perPortions": 6
+      },
+      {
+        "name": "Erbsen",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Rahm",
+        "amount": 4,
+        "unit": "dl",
+        "perPortions": 6
+      },
+      {
+        "name": "Greyerzer, gerieben",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Weisswein",
+        "amount": 2,
+        "unit": "dl",
+        "perPortions": 6
+      },
+      {
+        "name": "Petersilie",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 6
+      }
+    ],
+    "steps": [
+      "Hörnli in Salzwasser al dente kochen.",
+      "Räuchertofu goldbraun anbraten, beiseitestellen.",
+      "Lauch in Butter andünsten, mit Wein ablöschen. Rahm und Milch dazugeben, würzen. Erbsen hinzu.",
+      "Hörnli, Tofu, Petersilie, 2/3 Käse unter Sauce mischen. In Gratinform, restl. Käse drauf.",
+      "20 Min. bei 220°C gratinieren."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
     "id": "fvt-02",
     "name": "Kartoffel-Kürbis-Gulasch mit weissen Bohnen",
     "category": "Suppen, Eintöpfe & Currys",
@@ -2677,6 +3551,387 @@
       "Herbst",
       "Winter"
     ]
+  },
+  {
+    "id": "ocr-05",
+    "name": "Chilbitopf",
+    "category": "Aufläufe & Gratins",
+    "timeMinutes": 60,
+    "tags": [],
+    "weatherType": "kalt",
+    "source": "Familien-Rezeptbuch (OCR)",
+    "basePortions": 4,
+    "description": "Herzhafter Sauerkraut-Gratin mit Pouletfleisch und Rahmsauce.",
+    "ingredients": [
+      {
+        "name": "Sauerkraut, gekocht",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Pouletfleisch, geschnetzelt",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Butter",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Mehl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Weisswein",
+        "amount": 1,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Rahm",
+        "amount": 1.5,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Senf",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Poulet anbraten, salzen, pfeffern, herausnehmen.",
+      "Zwiebel im Fond 5 Min. dünsten, mit Mehl bestäuben, mit Wein ablöschen.",
+      "Rahm und Senf beifügen, 5 Min. eindicken lassen.",
+      "Gratinform einbuttern, Sauerkraut einlegen, Poulet verteilen, Sauce drüber.",
+      "Ca. 30 Min. bei 180°C gratinieren."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "ocr-12",
+    "name": "Gnocchi-Gratin mit Basilikumsauce",
+    "category": "Aufläufe & Gratins",
+    "timeMinutes": 35,
+    "tags": [
+      "Vegetarisch"
+    ],
+    "weatherType": "kalt",
+    "source": "Familien-Rezeptbuch (OCR)",
+    "basePortions": 4,
+    "description": "Frische Gnocchi mit Basilikum-Mascarpone-Sauce und Cherrytomaten überbacken.",
+    "ingredients": [
+      {
+        "name": "Gnocchi (Kühlregal)",
+        "amount": 700,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Basilikum",
+        "amount": 2,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Milch",
+        "amount": 1.5,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Mascarpone",
+        "amount": 150,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Eigelb",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Cherrytomaten",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Sbrinz, gerieben",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Gnocchi kochen, in gebutterte Gratinform.",
+      "Basilikum, Milch, Mascarpone, Eigelb pürieren. Kräftig würzen. Über Gnocchi giessen.",
+      "Cherrytomaten halbieren, würzen, zwischen und über Gnocchi.",
+      "Mit Sbrinz bestreuen.",
+      "Ca. 20 Min. bei 220°C backen."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-01",
+    "name": "Bärlauchsuppe",
+    "category": "Suppen, Eintöpfe & Currys",
+    "timeMinutes": 20,
+    "tags": [
+      "Vegetarisch",
+      "Frühling"
+    ],
+    "weatherType": "warm",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 6,
+    "description": "Samtige Bärlauchsuppe – kurzes Frühlingsvergnügen.",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Zwiebel, fein gehackt",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 6
+      },
+      {
+        "name": "Mehl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 6
+      },
+      {
+        "name": "Gemüsebouillon",
+        "amount": 1.5,
+        "unit": "L",
+        "perPortions": 6
+      },
+      {
+        "name": "Bärlauch, fein geschnitten",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Rahm",
+        "amount": 1,
+        "unit": "dl",
+        "perPortions": 6
+      }
+    ],
+    "steps": [
+      "Butter erwärmen, Zwiebel andämpfen.",
+      "Mehl hinzufügen, kurz dünsten.",
+      "Mit Bouillon ablöschen, gut rühren. 10 Min. köcheln.",
+      "Bärlauch beifügen.",
+      "Rahm hinzufügen, würzen."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-13",
+    "name": "Einlaufsuppe",
+    "category": "Suppen, Eintöpfe & Currys",
+    "timeMinutes": 20,
+    "tags": [
+      "Vegetarisch"
+    ],
+    "weatherType": "kalt",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Einfache Schweizer Einlaufsuppe mit Ei.",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Mehl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Bouillon",
+        "amount": 1,
+        "unit": "L",
+        "perPortions": 4
+      },
+      {
+        "name": "Ei",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Rahm",
+        "amount": 1,
+        "unit": "Schuss",
+        "perPortions": 4
+      },
+      {
+        "name": "Schnittlauch",
+        "amount": 1,
+        "unit": "Schuss",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Butter schmelzen, Mehl andünsten.",
+      "Mit Bouillon ablöschen, 10 Min. köcheln.",
+      "Ei mit Rahm verquirlen. Pfanne vom Herd, unter Rühren langsam einlaufen lassen.",
+      "Mit Schnittlauch garnieren."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-48",
+    "name": "Tomatensuppe à la Grosi",
+    "category": "Suppen, Eintöpfe & Currys",
+    "timeMinutes": 20,
+    "tags": [
+      "Vegetarisch",
+      "Schweizer"
+    ],
+    "weatherType": "kalt",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Grossmutters einfache, klassische Tomatensuppe.",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "amount": 1,
+        "unit": "Stück",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomatenpüree (Büchse)",
+        "amount": 1,
+        "unit": "Dose",
+        "perPortions": 4
+      },
+      {
+        "name": "Mehl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Bouillon",
+        "amount": 1,
+        "unit": "L",
+        "perPortions": 4
+      },
+      {
+        "name": "Rahm",
+        "amount": 1,
+        "unit": "dl",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Butter schmelzen, Tomatenpüree andämpfen, Mehl beifügen.",
+      "Mit Bouillon ablöschen, würzen (Ital. Kräuter, Pfeffer).",
+      "5–10 Min. köcheln. Rahm dazugeben."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-49",
+    "name": "Tomatensuppe",
+    "category": "Suppen, Eintöpfe & Currys",
+    "timeMinutes": 20,
+    "tags": [
+      "Vegetarisch",
+      "Vegan"
+    ],
+    "weatherType": "kalt",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Frische Tomatensuppe mit Pelati.",
+    "ingredients": [
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Pelati (Dose)",
+        "amount": 1,
+        "unit": "Dose",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomatenpüree",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Bouillon",
+        "amount": 1,
+        "unit": "L",
+        "perPortions": 4
+      },
+      {
+        "name": "Rahm",
+        "amount": 1,
+        "unit": "Schuss",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Olivenöl erhitzen, Zwiebeln andämpfen.",
+      "Pelati und Tomatenpüree beifügen, kurz andämpfen.",
+      "Mit Bouillon ablöschen, 10–15 Min. köcheln.",
+      "Rahm dazugeben, würzen."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
   },
   {
     "id": "fvt-07",
@@ -2845,61 +4100,83 @@
     "id": "sup-02",
     "name": "Minestrone",
     "category": "Suppen, Eintöpfe & Currys",
-    "timeMinutes": 45,
+    "timeMinutes": 70,
+    "tags": [
+      "Vegetarisch",
+      "Vegan",
+      "Italienisch"
+    ],
+    "weatherType": "kalt",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Klassische italienische Gemüsesuppe mit Borlotti-Bohnen.",
     "ingredients": [
       {
-        "name": "Gemischtes Gemüse",
-        "amount": 600,
+        "name": "Borlotti-Bohnen (Dose)",
+        "amount": 1,
+        "unit": "Dose",
+        "perPortions": 4
+      },
+      {
+        "name": "Kartoffeln",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Wirz",
+        "amount": 200,
         "unit": "g",
         "perPortions": 4
       },
       {
-        "name": "Tomatenwürfel (Dose)",
-        "amount": 400,
+        "name": "Karotten",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Lauch",
+        "amount": 1,
+        "unit": "Stange",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomatenpüree",
+        "amount": 140,
         "unit": "g",
         "perPortions": 4
       },
       {
-        "name": "Pasta (klein)",
-        "amount": 150,
-        "unit": "g",
+        "name": "Gemüsebouillon",
+        "amount": 1.5,
+        "unit": "L",
         "perPortions": 4
       },
       {
-        "name": "Weisse Bohnen (Dose)",
-        "amount": 400,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Gemüsebrühe",
-        "amount": 1000,
-        "unit": "ml",
-        "perPortions": 4
-      },
-      {
-        "name": "Parmesan",
-        "amount": 40,
-        "unit": "g",
+        "name": "Olivenöl",
+        "amount": 3,
+        "unit": "EL",
         "perPortions": 4
       }
     ],
-    "weatherType": "kalt",
-    "source": "Menüliste",
-    "basePortions": 4,
-    "description": "Italienische Gemüsesuppe mit Pasta und Bohnen.",
-    "steps": [],
+    "steps": [
+      "Gemüse klein schneiden.",
+      "Öl erhitzen, Zwiebel dünsten. Tomatenpüree mitdünsten. Gemüse beifügen.",
+      "Mit Bouillon ablöschen, aufkochen.",
+      "Ca. 1 Stunde köcheln.",
+      "Mit Salz, Pfeffer abschmecken. Mit Petersilie garnieren."
+    ],
     "tips": "",
-    "imageUrl": "/images/recipes/cuiselin-minestrone-zutaten.jpg",
-    "imageZutaten": "/images/recipes/cuiselin-minestrone-zutaten.jpg",
-    "tags": [
-      "Mealprep-geeignet",
-      "Mittagsgericht",
-      "Herbst",
-      "Winter",
-      "Frühling",
-      "Italienisch"
-    ]
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "sup-03",
@@ -3144,6 +4421,709 @@
     ]
   },
   {
+    "id": "fam-02",
+    "name": "Birnen-Rucola-Salat mit Feta",
+    "category": "Salate & Bowls",
+    "timeMinutes": 15,
+    "tags": [
+      "Vegetarisch"
+    ],
+    "weatherType": "warm",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 2,
+    "description": "Rucola mit Birne, Feta, Pecannüssen und Tahini-Dressing.",
+    "ingredients": [
+      {
+        "name": "Rucola",
+        "amount": 2,
+        "unit": "Handvoll",
+        "perPortions": 2
+      },
+      {
+        "name": "Birne",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 2
+      },
+      {
+        "name": "Feta",
+        "amount": 80,
+        "unit": "g",
+        "perPortions": 2
+      },
+      {
+        "name": "Pecannüsse",
+        "amount": 1,
+        "unit": "Handvoll",
+        "perPortions": 2
+      },
+      {
+        "name": "Granatapfelkerne",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 2
+      },
+      {
+        "name": "Tahini",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 2
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 2
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 2
+      }
+    ],
+    "steps": [
+      "Dressing aus Tahini, Zitronensaft, Olivenöl, Salz, Pfeffer mischen.",
+      "Rucola anrichten, Birne in Schnitze legen.",
+      "Feta zerbröckeln, Nüsse grob hacken, mit Granatapfelkernen verteilen.",
+      "Dressing darüber."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-05",
+    "name": "Bohnensalat",
+    "category": "Salate & Bowls",
+    "timeMinutes": 40,
+    "tags": [
+      "Vegetarisch",
+      "Vegan"
+    ],
+    "weatherType": "warm",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Warmer grüner Bohnensalat mit Senf-Dressing.",
+    "ingredients": [
+      {
+        "name": "grüne Bohnen",
+        "amount": 1,
+        "unit": "kg",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 1,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Senf",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Essig",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Rapsöl",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Bohnen rüsten, mit Bohnenkraut in Salzwasser 30 Min. kochen (Dampfkochtopf 8–12 Min.).",
+      "Dressing aus Senf, Essig, Öl, Salz, Pfeffer, Bohnenkraut rühren.",
+      "Heisse Bohnen mit Dressing mischen. 15 Min. ziehen lassen."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-10",
+    "name": "Couscoussalat",
+    "category": "Salate & Bowls",
+    "timeMinutes": 20,
+    "tags": [
+      "Vegetarisch",
+      "Vegan"
+    ],
+    "weatherType": "warm",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Frischer Couscoussalat mit Kichererbsen, Tomaten und Kräutern.",
+    "ingredients": [
+      {
+        "name": "Couscous",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Kichererbsen (Dose)",
+        "amount": 1,
+        "unit": "Dose",
+        "perPortions": 4
+      },
+      {
+        "name": "Cherrytomaten",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Petersilie",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Rapsöl",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Essig",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Couscous nach Anleitung zubereiten.",
+      "Kichererbsen abspülen, Tomaten halbieren, Kräuter hacken.",
+      "Dressing aus Ölen, Essig, Salz, Pfeffer, Curry, Ital. Kräutern rühren.",
+      "Alles mischen."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-27",
+    "name": "Maissalat",
+    "category": "Salate & Bowls",
+    "timeMinutes": 10,
+    "tags": [
+      "Vegetarisch"
+    ],
+    "weatherType": "warm",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Schneller Maissalat mit Crème fraîche und Curry.",
+    "ingredients": [
+      {
+        "name": "Mais (Dose)",
+        "amount": 1,
+        "unit": "Dose",
+        "perPortions": 4
+      },
+      {
+        "name": "Crème fraîche",
+        "amount": 0.5,
+        "unit": "Becher",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Curry",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Essig",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Senf",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Mais abgiessen.",
+      "Crème fraîche, Curry, Essig, Senf, Salz, Pfeffer verrühren.",
+      "Mit Mais mischen."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-31",
+    "name": "Orangen-Randensalat",
+    "category": "Salate & Bowls",
+    "timeMinutes": 15,
+    "tags": [
+      "Vegetarisch",
+      "Vegan"
+    ],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Eleganter Salat mit Randen, Orangen und Ingwer-Dressing.",
+    "ingredients": [
+      {
+        "name": "Randen, gekocht",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Orangen",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Ingwer",
+        "amount": 1.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Honig",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Feigenbalsamico",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Senf",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Randen in Scheiben, Orangen filetieren.",
+      "Dressing aus Ingwer, Honig, Balsamico, Öl, Senf, Salz, Pfeffer rühren.",
+      "Anrichten, Dressing darüber."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-33",
+    "name": "Randensalat",
+    "category": "Salate & Bowls",
+    "timeMinutes": 15,
+    "tags": [
+      "Vegetarisch",
+      "Vegan"
+    ],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Saftiger Randensalat mit Senf-Dressing.",
+    "ingredients": [
+      {
+        "name": "Randen (gekocht), gerieben",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Senf",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Essig",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Öl",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Sojasauce",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Randen mit Röstiraffel reiben.",
+      "Dressing aus Senf, Essig, Öl, Sojasauce, Salz, Pfeffer rühren.",
+      "Mit Zwiebeln und Randen mischen."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-35",
+    "name": "Reissalat à la Céline",
+    "category": "Salate & Bowls",
+    "timeMinutes": 15,
+    "tags": [
+      "Vegetarisch"
+    ],
+    "weatherType": "warm",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Frischer Reissalat mit Tomaten, Essiggurken und cremigem Dressing.",
+    "ingredients": [
+      {
+        "name": "Reisresten",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Cherrytomaten",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Essiggurken",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Kichererbsen (optional, Dose)",
+        "amount": 0.5,
+        "unit": "Dose",
+        "perPortions": 4
+      },
+      {
+        "name": "Basilikum",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Crème fraîche",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Mayonnaise",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Essig",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Tomaten halbieren, Gurken würfeln, Kräuter hacken.",
+      "Dressing aus Crème fraîche, Mayonnaise, Essig, Salz, Pfeffer, Ital. Kräutern rühren.",
+      "Alles mischen."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-37",
+    "name": "Rüeblisalat",
+    "category": "Salate & Bowls",
+    "timeMinutes": 15,
+    "tags": [
+      "Vegetarisch",
+      "Vegan"
+    ],
+    "weatherType": "warm",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Einfacher Rüeblisalat mit Zitronensaft und Rahm.",
+    "ingredients": [
+      {
+        "name": "Rüebli, fein geraffelt",
+        "amount": 1,
+        "unit": "kg",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Rahm",
+        "amount": 0.5,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Rüebli reiben.",
+      "Zitronensaft und Rahm darunter mischen, salzen."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-42",
+    "name": "Teigwaren-Salat",
+    "category": "Salate & Bowls",
+    "timeMinutes": 20,
+    "tags": [
+      "Vegetarisch"
+    ],
+    "weatherType": "warm",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Schneller Pasta-Salat mit Peperoni, Ei und Mayonnaise-Dressing.",
+    "ingredients": [
+      {
+        "name": "Teigwarenresten",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Peperoni",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Eier, gesotten",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Essiggurken",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Mayonnaise",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Milch",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Essig",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Peperoni würfeln, Eier vierteln, Gurken würfeln.",
+      "Dressing aus Mayo, Milch, Essig, Senf, Salz, Pfeffer rühren.",
+      "Alles mischen."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-44",
+    "name": "Thonsalat",
+    "category": "Salate & Bowls",
+    "timeMinutes": 10,
+    "tags": [],
+    "weatherType": "warm",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Klassischer Thonsalat mit Mayonnaise und Essig.",
+    "ingredients": [
+      {
+        "name": "Thun (Dosen)",
+        "amount": 2,
+        "unit": "Dosen",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel, fein gehackt",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Mayonnaise",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Essig",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Öl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Milch",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Thun fein zerzupfen.",
+      "Mit restlichen Zutaten mischen, abschmecken."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-53",
+    "name": "Wurstsalat",
+    "category": "Salate & Bowls",
+    "timeMinutes": 20,
+    "tags": [],
+    "weatherType": "warm",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Herzhafter Wurstsalat mit Cervelat, Eiern, Tomaten und Essiggurken.",
+    "ingredients": [
+      {
+        "name": "Cervelats",
+        "amount": 5,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomaten",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Essiggurken",
+        "amount": 6,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Eier, gesotten",
+        "amount": 6,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Mayonnaise",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Essig",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Cervelats in Würfel, Tomaten und Gurken würfeln, Eier vierteln.",
+      "Dressing aus Mayo, Milch, Essig, Öl, Senf, Salz, Pfeffer rühren.",
+      "Alles mischen."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
     "id": "rec-1779488181331-i6vew",
     "name": "Tomaten & Mozzerella Salat",
     "category": "Salate & Bowls",
@@ -3340,63 +5320,67 @@
     "name": "Kichererbsensalat",
     "category": "Salate & Bowls",
     "timeMinutes": 15,
+    "tags": [
+      "Vegetarisch",
+      "Vegan"
+    ],
+    "weatherType": "warm",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Einfacher Kichererbsensalat mit getrockneten Tomaten und Schnittlauch.",
     "ingredients": [
       {
         "name": "Kichererbsen (Dose)",
-        "amount": 800,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Tomaten",
-        "amount": 3,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Gurke",
         "amount": 1,
+        "unit": "Dose",
+        "perPortions": 4
+      },
+      {
+        "name": "getrocknete Tomaten in Öl",
+        "amount": 4,
         "unit": "Stk",
         "perPortions": 4
       },
       {
-        "name": "Rote Zwiebel",
-        "amount": 1,
+        "name": "Zwiebel",
+        "amount": 0.5,
         "unit": "Stk",
         "perPortions": 4
       },
       {
-        "name": "Petersilie",
+        "name": "Schnittlauch",
         "amount": 0.5,
         "unit": "Bund",
         "perPortions": 4
       },
       {
-        "name": "Zitronensaft",
-        "amount": 3,
+        "name": "Rapsöl",
+        "amount": 2,
         "unit": "EL",
         "perPortions": 4
       },
       {
-        "name": "Olivenöl",
-        "amount": 3,
+        "name": "Essig",
+        "amount": 1,
         "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Senf",
+        "amount": 1,
+        "unit": "TL",
         "perPortions": 4
       }
     ],
-    "weatherType": "warm",
-    "source": "Rezept von Cuiselin",
-    "basePortions": 4,
-    "description": "Proteinreicher Salat, schnell gemacht.",
-    "steps": [],
+    "steps": [
+      "Kichererbsen abspülen. Tomaten in Streifen, Zwiebel und Schnittlauch schneiden.",
+      "Dressing aus Öl, Essig, Senf, Salz, Pfeffer, Kräutern rühren.",
+      "Alles mischen."
+    ],
     "tips": "",
     "imageUrl": null,
-    "tags": [
-      "Mealprep-geeignet",
-      "Mittagsgericht",
-      "Frühling",
-      "Sommer"
-    ]
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "sal-05",
@@ -4222,6 +6206,138 @@
     ]
   },
   {
+    "id": "fam-11",
+    "name": "Crevetten-Zucchetti-Sauce",
+    "category": "Fisch & Meeresfrüchte",
+    "timeMinutes": 35,
+    "tags": [],
+    "weatherType": "warm",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Würzige Crevetten-Sauce mit Zucchetti und Pelati – mariniert und pikant.",
+    "ingredients": [
+      {
+        "name": "Riesencrevetten",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zucchetti",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebeln",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 3,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Pelati (Dose)",
+        "amount": 1,
+        "unit": "Dose",
+        "perPortions": 4
+      },
+      {
+        "name": "Weisswein",
+        "amount": 1,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Rahm",
+        "amount": 1,
+        "unit": "Schuss",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Crevetten marinieren (Olivenöl, Zitronensaft, Meersalz, Sambal Oelek, 1–2 h).",
+      "Zucchetti in Scheiben, Zwiebeln andünsten, Zucchetti dazugeben, mit Mehl bestäuben.",
+      "Tomatenpüree, Knoblauch, Weisswein, Bouillon, Pelati beifügen. Würzen, köcheln.",
+      "Crevetten kurz anbraten, in Sauce geben. Rahm dazugeben, abschmecken."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-12",
+    "name": "Crevettenspiessli",
+    "category": "Fisch & Meeresfrüchte",
+    "timeMinutes": 20,
+    "tags": [
+      "Grillgericht",
+      "Sommer"
+    ],
+    "weatherType": "warm",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Marinierte Crevetten-Spiessli – perfekt für den Grill.",
+    "ingredients": [
+      {
+        "name": "Crevetten (Tail on)",
+        "amount": 1,
+        "unit": "Packung",
+        "perPortions": 4
+      },
+      {
+        "name": "Sojasauce",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Sambal Oelek",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch, gepresst",
+        "amount": 1,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Marinade verrühren.",
+      "Crevetten darin wenden, auf Holzspiesse stecken.",
+      "Beidseitig anbraten oder grillieren."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
     "id": "fis-01",
     "name": "Fisch, Salzkartoffeln und Spinat",
     "category": "Fisch & Meeresfrüchte",
@@ -4347,6 +6463,2682 @@
     ]
   },
   {
+    "id": "fam-14",
+    "name": "Zucchetti mit Fleisch- und Gemüsefüllung",
+    "category": "Fleisch & Geflügel",
+    "timeMinutes": 45,
+    "tags": [],
+    "weatherType": "warm",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Grosse Zucchetti mit gewürztem Hackfleisch und Gemüse, überbacken mit Sbrinz.",
+    "ingredients": [
+      {
+        "name": "Rindshackfleisch",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "grosse Zucchetti",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Champignons",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomaten",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Peperoni",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Karotten",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Sbrinz, gerieben",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Paniermehl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebouillon",
+        "amount": 2,
+        "unit": "dl",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Zucchetti aushöhlen, würzen, bei 250°C im Ofen vorwärmen.",
+      "Hackfleisch in Olivenöl anbraten, Zwiebeln beifügen.",
+      "Gemüse, Paniermehl, Basilikum dazugeben, würzen.",
+      "Zucchetti füllen, Käse darüber, Bouillon und Weisswein dazugeben.",
+      "Ca. 20 Min. weiterscmoren, zwischendurch begiessen."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-16",
+    "name": "Geschnetzeltes Poulet mit Zitronenrahmsauce",
+    "category": "Fleisch & Geflügel",
+    "timeMinutes": 30,
+    "tags": [],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Zartes Pouletgeschnetzeltes in aromatischer Zitronenrahmsauce.",
+    "ingredients": [
+      {
+        "name": "Pouletfleisch",
+        "amount": 600,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitrone",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Rahm",
+        "amount": 5,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Senf",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Maizena",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Weisswein",
+        "amount": 1,
+        "unit": "Schuss",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Poulet eine Nacht marinieren (Zitronensaft, Schale, Senf, Salz, Pfeffer, Sambal, Maizena, Wein).",
+      "Fleisch abtupfen, heiss in Bratbutter anbraten.",
+      "Zitronensaft und Schale dazugeben, einkochen. Rahm beifügen, würzen. 5 Min. köcheln."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-21",
+    "name": "Kalbsgeschnetzeltes an Zitronenrahmsauce",
+    "category": "Fleisch & Geflügel",
+    "timeMinutes": 25,
+    "tags": [],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Klassisches Kalbsgeschnetzeltes in feiner Zitronenrahmsauce.",
+    "ingredients": [
+      {
+        "name": "Kalbsgeschnetzeltes",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Butter",
+        "amount": 60,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebeln",
+        "amount": 150,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 1,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 0.5,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Weisswein",
+        "amount": 1,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Rahm",
+        "amount": 5,
+        "unit": "dl",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Butter schmelzen, Zwiebeln und Knoblauch dünsten.",
+      "Fleisch und Mehl beifügen, anbraten.",
+      "Mit Zitronensaft und Wein ablöschen, Hälfte einkochen.",
+      "Rahm dazugiessen, 5 Min. köcheln. Würzen."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-22",
+    "name": "Knöpfli-Töpfli Füürtüfeli",
+    "category": "Fleisch & Geflügel",
+    "timeMinutes": 30,
+    "tags": [],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Würzige Knöpfli mit Poulet, Lauch, Peperoni und Sojasauce.",
+    "ingredients": [
+      {
+        "name": "Pouletfleisch",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Bio-Spätzli",
+        "amount": 1,
+        "unit": "kg",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebeln",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 3,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Lauch",
+        "amount": 3,
+        "unit": "Stangen",
+        "perPortions": 4
+      },
+      {
+        "name": "Peperoni",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Sojasauce",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Curry",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Poulet anbraten, würzen, warmstellen.",
+      "Zwiebeln und Knoblauch andämpfen. Gemüse und Peperoncini beifügen.",
+      "Sojasauce dazugeben, würzen, 10 Min. zugedeckt köcheln.",
+      "Knöpfli in Butter anbraten. Gemüse und Fleisch beifügen, abschmecken."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-26",
+    "name": "Luzerner Pastetli",
+    "category": "Fleisch & Geflügel",
+    "timeMinutes": 45,
+    "tags": [
+      "Schweizer"
+    ],
+    "weatherType": "kalt",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Zarte Luzerner Pastetli mit Poulet, Kalbsbrät, Pilzen und Rahmfüllung.",
+    "ingredients": [
+      {
+        "name": "Pastetli",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Champignons",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Pouletfleisch, feingeschnetzelt",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Kalbsbratwurst",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Weisswein",
+        "amount": 2,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Fleischbouillon",
+        "amount": 2,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Rahm",
+        "amount": 2,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Mehl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Butter",
+        "amount": 20,
+        "unit": "g",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Sud: Weisswein, Bouillon mit bespickter Zwiebel aufkochen. Pilze 5 Min. kochen, herausnehmen. Poulet 5 Min. garen.",
+      "Sauce: Butter und Mehl andämpfen, Sud dazugiessen, aufkochen. Rahm beifügen, würzen.",
+      "Pilze, Poulet, Brät in Sauce geben, erhitzen.",
+      "Pastetli im kalten Ofen nach Anleitung backen, füllen."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-32",
+    "name": "Rahmschnitzeli",
+    "category": "Fleisch & Geflügel",
+    "timeMinutes": 20,
+    "tags": [],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Klassische Schweinsplätzchen in cremiger Weisswein-Rahmsauce.",
+    "ingredients": [
+      {
+        "name": "Schweinsplätzchen vom Nierstück",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Weisswein",
+        "amount": 1,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "S'Wunder Bratensauce",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Rahm",
+        "amount": 4,
+        "unit": "dl",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Plätzchen mit Senf bestreichen, würzen. In Bratbutter je 1 Min. anbraten, warmstellen.",
+      "Weisswein in Pfanne giessen, einkochen. S'Wunder dazugeben, mit Rahm ablöschen. Würzen."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-60",
+    "name": "Kalbfleisch mit Irish-Coffee-Sauce",
+    "category": "Fleisch & Geflügel",
+    "timeMinutes": 60,
+    "tags": [],
+    "weatherType": "kalt",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Zartes Kalbsnierstück im Sud gegart, mit Kaffeebohnen-Whisky-Sauce.",
+    "ingredients": [
+      {
+        "name": "Kalbsnierstück",
+        "amount": 1,
+        "unit": "kg",
+        "perPortions": 4
+      },
+      {
+        "name": "Fleischbouillon",
+        "amount": 2,
+        "unit": "L",
+        "perPortions": 4
+      },
+      {
+        "name": "Lauch",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Karotte",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Saucen-Halbrahm",
+        "amount": 1.8,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Vollrahm",
+        "amount": 1,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Kaffeebohnen",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Whisky",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Sud aufkochen (Bouillon, Lauch, Rüebli, Zwiebel, Pfeffer, Petersilie), 10 Min. köcheln.",
+      "Kalbfleisch in leicht siedenden Sud geben, offen 45 Min. ziehen lassen.",
+      "Sud auf Hälfte einkochen, Rahm und Kaffeebohnen beifügen, 10 Min. köcheln.",
+      "Whisky beifügen, würzen.",
+      "Fleisch quer aufschneiden, Sauce dazu servieren."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "ocr-01",
+    "name": "Poulet-Geschnetzeltes im afrikanischen Kleid",
+    "category": "Fleisch & Geflügel",
+    "timeMinutes": 45,
+    "tags": [
+      "Orientalisch"
+    ],
+    "weatherType": "warm",
+    "source": "Familien-Rezeptbuch (OCR)",
+    "basePortions": 4,
+    "description": "Würziges Pouletgeschnetzeltes mit Kichererbsen, Peperoni und Couscous.",
+    "ingredients": [
+      {
+        "name": "Pouletbrüstchen, geschnetzelt",
+        "amount": 600,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Kichererbsen",
+        "amount": 80,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Peperoni rot/gelb",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Chilischoten",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 4,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Couscous",
+        "amount": 160,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Bratenjus",
+        "amount": 2,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Aceto Balsamico",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kreuzkümmel",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Chilipulver",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Kreuzkümmel, Pfeffer, Chili, Salz mischen, Poulet würzen.",
+      "Portionsweise heiss anbraten, abtropfen, Saft auffangen.",
+      "Zwiebel, Peperoni, Chili, Knoblauch kurz anbraten. Mit Bratenjus und Balsamico ablöschen, einkochen.",
+      "Poulet, Saft und Kichererbsen dazugeben, aufkochen, würzen.",
+      "Couscous: Salzwasser mit Chili aufkochen, Couscous quellen lassen, mit Olivenöl und Petersilie mischen."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "ocr-06",
+    "name": "Chinesisches Ananaspoulet",
+    "category": "Fleisch & Geflügel",
+    "timeMinutes": 30,
+    "tags": [
+      "Asiatisch"
+    ],
+    "weatherType": "warm",
+    "source": "Familien-Rezeptbuch (OCR)",
+    "basePortions": 4,
+    "description": "Saftiges Poulet mit Ananas in asiatischer Marinade.",
+    "ingredients": [
+      {
+        "name": "Pouletbrüstchen",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Ananasscheiben",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Ananassaft",
+        "amount": 1,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Sojasauce",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Maizena",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Öl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Marinade: Maizena, Öl, Sojasauce mischen. Poulet in Streifen, 30 Min. marinieren.",
+      "Portionsweise heiss anbraten, herausnehmen.",
+      "Ananasscheiben 10 Min. schmoren. Poulet herausnehmen.",
+      "Knoblauch andünsten, mit Ananassaft ablöschen.",
+      "Maizena/Wasser einrühren, aufkochen. Poulet und Ananas beifügen."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "ocr-10",
+    "name": "Geschnetzeltes mit Rosmarinpolenta",
+    "category": "Fleisch & Geflügel",
+    "timeMinutes": 50,
+    "tags": [],
+    "weatherType": "kalt",
+    "source": "Familien-Rezeptbuch (OCR)",
+    "basePortions": 4,
+    "description": "Geschnetzeltes Schweinefleisch mit cremiger Rosmarinpolenta.",
+    "ingredients": [
+      {
+        "name": "Schweinefleisch, geschnetzelt",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Polentagries",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Wasser",
+        "amount": 1,
+        "unit": "L",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Weisswein",
+        "amount": 2,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Fleischbouillon",
+        "amount": 2,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Butter",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Polenta: Wasser mit Rosmarin aufkochen, würzen. Mais einrühren, 40 Min. auf kleiner Hitze köcheln. Butter darunter.",
+      "Fleisch in Mehl-Salz-Paprika wenden, portionsweise anbraten.",
+      "Zwiebeln, Knoblauch andämpfen. Tomatenpüree, Wein, Bouillon beifügen. 20 Min. köcheln.",
+      "Mit Polenta anrichten."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "ocr-11",
+    "name": "Ghackets Betty Bossi",
+    "category": "Fleisch & Geflügel",
+    "timeMinutes": 30,
+    "tags": [
+      "Schweizer"
+    ],
+    "weatherType": "kalt",
+    "source": "Familien-Rezeptbuch (OCR)",
+    "basePortions": 4,
+    "description": "Klassisches Rindshackfleisch nach Betty Bossi – Grossmutters Lieblingsrezept.",
+    "ingredients": [
+      {
+        "name": "Rindsfleisch, grob gehackt",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 1,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Rotwein",
+        "amount": 1,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Bratensaucenpulver",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomatenpüree",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Lorbeerblatt",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Fleisch in Öl anbraten, mit Mehl bestäuben.",
+      "Zwiebeln, Knoblauch, Tomatenpüree mitbraten.",
+      "Wein einkochen lassen.",
+      "Bratensauce und Wasser beifügen, 20–25 Min. auf kleiner Stufe köcheln."
+    ],
+    "tips": "Dazu passen Teigwaren, Mais, Reis oder Kartoffeln. Auch mit Quorn möglich.",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null
+  },
+  {
+    "id": "ocr-14",
+    "name": "Hackbraten nach Annemarie Wildeisen",
+    "category": "Fleisch & Geflügel",
+    "timeMinutes": 120,
+    "tags": [],
+    "weatherType": "kalt",
+    "source": "Familien-Rezeptbuch (OCR)",
+    "basePortions": 6,
+    "description": "Bester Hackbraten mit Rind-Kalb-Mischung, Mortadella und Rotwein-Sauce.",
+    "ingredients": [
+      {
+        "name": "Rindshackfleisch",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Kalbshackfleisch",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Mortadella",
+        "amount": 150,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Weggil",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 6
+      },
+      {
+        "name": "Milch",
+        "amount": 150,
+        "unit": "ml",
+        "perPortions": 6
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 6
+      },
+      {
+        "name": "Ei",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 6
+      },
+      {
+        "name": "Eigelb",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 6
+      },
+      {
+        "name": "Rotwein",
+        "amount": 0.25,
+        "unit": "L",
+        "perPortions": 6
+      },
+      {
+        "name": "Bratensaucenwürfel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 6
+      }
+    ],
+    "steps": [
+      "Mortadella fein hacken, unter Fleisch mischen, kalt stellen.",
+      "Weggil in Milch 20 Min. einweichen, ausdrücken, fein hacken.",
+      "Zwiebel, Karotte, Sellerie, Dörrromaten andünsten.",
+      "Alles mischen, kräftig würzen, zu Laib formen.",
+      "Bei 200°C 20 Min. anbraten, Rotwein-Sauce beifügen, auf 120°C reduzieren. 1.5 Std. nachgaren."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "ocr-17",
+    "name": "Lammwürfel an Paprika-Sauerrahmsauce",
+    "category": "Fleisch & Geflügel",
+    "timeMinutes": 45,
+    "tags": [],
+    "weatherType": "kalt",
+    "source": "Familien-Rezeptbuch (OCR)",
+    "basePortions": 4,
+    "description": "Zartes Lammrückenfilet mit Peperoni-Crème-fraîche-Sauce.",
+    "ingredients": [
+      {
+        "name": "Lammrückenfilet",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Peperoni rot/gelb",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Peperoncino",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Noilly Prat / Sherry",
+        "amount": 0.5,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Weisswein",
+        "amount": 1,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Crème fraîche",
+        "amount": 2,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomatenpüree",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Lammwürfel schneiden, salzen, pfeffern. Sehr heiss 1.5–1 Min. anbraten. Bei 80°C 20 Min. nachgaren.",
+      "Bratensatz mit Noilly Prat und Wein auflösen. Crème fraîche eingiessen.",
+      "Zwiebeln, Knoblauch, Peperoni dünsten. Paprika und Tomatenpüree mitdünsten. Sauce 10 Min. einkochen.",
+      "Lammwürfel in Sauce geben, erhitzen. Mit Petersilie bestreuen."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-17",
+    "name": "Geschwellte Kartoffeln & Rösti",
+    "category": "Kartoffelgerichte",
+    "timeMinutes": 60,
+    "tags": [
+      "Vegetarisch",
+      "Schweizer"
+    ],
+    "weatherType": "kalt",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Schweizer Klassiker: Im Sud gekochte Kartoffeln und goldbraune Rösti.",
+    "ingredients": [
+      {
+        "name": "Kartoffeln",
+        "amount": 1,
+        "unit": "kg",
+        "perPortions": 4
+      },
+      {
+        "name": "Röstikartoffeln",
+        "amount": 1,
+        "unit": "kg",
+        "perPortions": 4
+      },
+      {
+        "name": "Butter",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Geschwellte: Kartoffeln waschen, in Salzwasser zugedeckt 30–50 Min. köcheln.",
+      "Rösti: Kartoffeln vorgekocht und ausgekühlt schälen, durch Röstiraffel reiben.",
+      "Butter schmelzen, Kartoffeln salzen. Zugedeckt 10 Min. braten.",
+      "Mit Deckel umdrehen, am Rand Butter dazugeben. Ungedeckt 10 Min. fertigbraten."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-59",
+    "name": "Ofenkartoffeln",
+    "category": "Kartoffelgerichte",
+    "timeMinutes": 40,
+    "tags": [
+      "Vegetarisch",
+      "Vegan",
+      "Ofengericht"
+    ],
+    "weatherType": "kalt",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Aromatische Ofenkartoffeln mit Rosmarin, Thymian und Weisswein.",
+    "ingredients": [
+      {
+        "name": "Kartoffeln",
+        "amount": 1,
+        "unit": "kg",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Rosmarin",
+        "amount": 2,
+        "unit": "Zweige",
+        "perPortions": 4
+      },
+      {
+        "name": "Thymian",
+        "amount": 2,
+        "unit": "Zweige",
+        "perPortions": 4
+      },
+      {
+        "name": "Weisswein",
+        "amount": 1,
+        "unit": "Schuss",
+        "perPortions": 4
+      },
+      {
+        "name": "Paprika",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Ofen auf 220°C vorheizen.",
+      "Kartoffeln waschen, in mundgerechte Stücke schneiden.",
+      "Gratinform mit Olivenöl einstreichen.",
+      "Kartoffeln, Kräuter, Gewürze, Weisswein und Olivenöl dazugeben.",
+      "30–40 Min. backen, alle 15 Min. umrühren."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "ocr-15",
+    "name": "Kartoffel-Käse-Küchlein mit Schnittlauchcreme",
+    "category": "Kartoffelgerichte",
+    "timeMinutes": 30,
+    "tags": [
+      "Vegetarisch"
+    ],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch (OCR)",
+    "basePortions": 2,
+    "description": "Knusprige Kartoffel-Käse-Küchlein aus der Pfanne mit cremiger Schnittlauchsauce.",
+    "ingredients": [
+      {
+        "name": "mehlig kochende Kartoffeln",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 2
+      },
+      {
+        "name": "Emmentaler",
+        "amount": 80,
+        "unit": "g",
+        "perPortions": 2
+      },
+      {
+        "name": "Crème fraîche",
+        "amount": 80,
+        "unit": "g",
+        "perPortions": 2
+      },
+      {
+        "name": "Ei",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 2
+      },
+      {
+        "name": "Petersilie",
+        "amount": 1,
+        "unit": "Bund",
+        "perPortions": 2
+      },
+      {
+        "name": "Mehl",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 2
+      },
+      {
+        "name": "saurer Halbrahm",
+        "amount": 180,
+        "unit": "g",
+        "perPortions": 2
+      },
+      {
+        "name": "Schnittlauch",
+        "amount": 1,
+        "unit": "Bund",
+        "perPortions": 2
+      }
+    ],
+    "steps": [
+      "Petersilie, Zwiebel, Knoblauch hacken, mit Crème fraîche und Ei verrühren, würzen.",
+      "Kartoffeln und Käse in Masse reiben. Mehl darunter.",
+      "In Bratbutter 2 Portionen à je 5 Min. pro Seite auf mittlerer Hitze braten.",
+      "Schnittlauchcreme: Halbrahm, Salz, Pfeffer, Paprika verrühren, Schnittlauch einschneiden."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "ocr-16",
+    "name": "Kartoffelstock mit pochiertem Ei",
+    "category": "Kartoffelgerichte",
+    "timeMinutes": 40,
+    "tags": [
+      "Vegetarisch"
+    ],
+    "weatherType": "kalt",
+    "source": "Familien-Rezeptbuch (OCR)",
+    "basePortions": 4,
+    "description": "Feiner Kartoffelstock mit pochiertem Ei und Belper Knolle.",
+    "ingredients": [
+      {
+        "name": "Kartoffeln",
+        "amount": 800,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Milch",
+        "amount": 2,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Rahm",
+        "amount": 0.5,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Butter",
+        "amount": 30,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Belper Knolle",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Eier",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Weissweinessig",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Kartoffeln schälen, kochen.",
+      "Milch, Rahm, Butter, 1/3 Belper Knolle aufkochen. Kartoffeln durch Presse drücken, einrühren.",
+      "Wasser mit Essig aufkochen. Eier aufschlagen, ins Wasser gleiten lassen.",
+      "4–5 Min. unter Siedepunkt ziehen lassen.",
+      "Kartoffelstock in Tellern anrichten, Ei einlegen, restliche Belper Knolle hobeln."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-03",
+    "name": "Blechkuchen",
+    "category": "Desserts & Süsses",
+    "timeMinutes": 30,
+    "tags": [
+      "Vegetarisch"
+    ],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 12,
+    "description": "Saftiger Schoggiblechkuchen mit Kakao-Butter-Glasur.",
+    "ingredients": [
+      {
+        "name": "Mehl",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 12
+      },
+      {
+        "name": "Zucker",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 12
+      },
+      {
+        "name": "Kakaopulver",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 12
+      },
+      {
+        "name": "Eier",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 12
+      },
+      {
+        "name": "Milch",
+        "amount": 2,
+        "unit": "dl",
+        "perPortions": 12
+      },
+      {
+        "name": "Butter (flüssig)",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 12
+      },
+      {
+        "name": "Backpulver",
+        "amount": 0.5,
+        "unit": "Päckli",
+        "perPortions": 12
+      },
+      {
+        "name": "Puderzucker",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 12
+      }
+    ],
+    "steps": [
+      "Mehl, Zucker, Kakao, Eier, Milch, Butter und Backpulver mischen.",
+      "Auf grosses Backblech verteilen, 15 Min. bei 180°C backen.",
+      "10 Min. abkühlen lassen.",
+      "Glasur aus Puderzucker, Kakao, Vanillezucker, Butter und Kaffee rühren.",
+      "Auf noch warmen Kuchen geben, Kokosraspeln darüber, in Würfel schneiden."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-04",
+    "name": "Blunschy-Kräutersauce",
+    "category": "Snacks & Vorspeisen",
+    "timeMinutes": 15,
+    "tags": [
+      "Vegetarisch"
+    ],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Cremige Kräutersauce à la Blunschy – ideal zu Fisch oder Ravioli.",
+    "ingredients": [
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Weisswein",
+        "amount": 2,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Bouillon",
+        "amount": 1,
+        "unit": "KL",
+        "perPortions": 4
+      },
+      {
+        "name": "Schnittlauch",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Petersilie",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Basilikum",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Rahm",
+        "amount": 5,
+        "unit": "dl",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Zwiebel andämpfen, mit Weisswein ablöschen.",
+      "Bouillon, Curry, Provence-Kräuter beifügen, einkochen.",
+      "Kräuter fein hacken, mit Rahm einrühren.",
+      "Würzen, kurz erhitzen."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-06",
+    "name": "Bruschetta mit Tomaten",
+    "category": "Snacks & Vorspeisen",
+    "timeMinutes": 15,
+    "tags": [
+      "Vegetarisch",
+      "Vegan",
+      "Italienisch",
+      "Sommer"
+    ],
+    "weatherType": "warm",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Klassische Bruschetta mit frischen Tomaten, Basilikum und Knoblauch.",
+    "ingredients": [
+      {
+        "name": "Baguette",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomaten, gewürfelt",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Basilikum",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Brot toasten. Mit Knoblauch einreiben, mit Olivenöl bestreichen.",
+      "Tomatenwürfel (ohne Saft) mit Basilikum, Olivenöl, Salz, Pfeffer mischen.",
+      "Auf Brot verteilen und sofort servieren."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-07",
+    "name": "Buchweizen-Pancakes mit Zwetschgenkompott",
+    "category": "Frühstück",
+    "timeMinutes": 30,
+    "tags": [
+      "Vegetarisch"
+    ],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Herzhafte Buchweizen-Pancakes mit selbst gemachtem Zwetschgenkompott und Kokosjoghurt.",
+    "ingredients": [
+      {
+        "name": "Buchweizenmehl",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Dinkelmehl",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Sojamilch",
+        "amount": 2,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Eier",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Backpulver",
+        "amount": 2,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "TK Bio-Zwetschgen",
+        "amount": 600,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zimt",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Ghee",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Mehl, Backpulver, Salz, Vanille mischen. Sojamilch und Eier einrühren.",
+      "Ghee erhitzen, Pancakes (ca. 8 cm) beidseitig goldbraun backen.",
+      "Kompott: Zwetschgen mit Zimt und wenig Wasser aufkochen, 10 Min. köcheln.",
+      "Mit Zwetschgenkompott und Kokosjoghurt servieren."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-08",
+    "name": "Burger",
+    "category": "Wraps & Sandwiches",
+    "timeMinutes": 20,
+    "tags": [],
+    "weatherType": "warm",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Klassischer Burger mit Avocado, Essiggurken und Kräuterbutter.",
+    "ingredients": [
+      {
+        "name": "Hamburgerbrötchen",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Burger oder Vegi-Burger",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Cheddar-Käsescheiben",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomate",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "rote Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Avocado",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Essiggurken",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Brötchen mit Käse im Ofen kurz aufbacken.",
+      "Burger anbraten.",
+      "Alle Zutaten belegen: Kräuterbutter, Senf, Ketchup nach Belieben."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-15",
+    "name": "Gemüse-Bolognese",
+    "category": "Vegetarische Hauptgerichte",
+    "timeMinutes": 35,
+    "tags": [
+      "Vegetarisch",
+      "Vegan"
+    ],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Vollwertige Bolognese aus Zucchetti, Peperoni, Rüebli und Cherrytomaten.",
+    "ingredients": [
+      {
+        "name": "Zwiebeln",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Zucchetti",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Rüebli",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Peperoni",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Champignons",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Cherrytomaten",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomatenpüree",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Weisswein",
+        "amount": 1,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebouillon",
+        "amount": 1,
+        "unit": "Tasse",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Gemüse hacken (nicht zu fein).",
+      "Öl erhitzen, Gemüse und Pilze andämpfen.",
+      "Tomatenpüree beifügen, mit Wein ablöschen.",
+      "Würzen (All'Arrabbiata, Ital. Kräuter, Salz, Pfeffer), Bouillon dazugeben, 20 Min. köcheln.",
+      "Cherrytomaten zuletzt dazugeben, 5 Min. fertigkochen."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-18",
+    "name": "Hafertätschli",
+    "category": "Vegetarische Hauptgerichte",
+    "timeMinutes": 30,
+    "tags": [
+      "Vegetarisch"
+    ],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Herzhafte Haferflocken-Tätschli mit Rüebli, Zwiebeln und Kräutern.",
+    "ingredients": [
+      {
+        "name": "Haferflocken",
+        "amount": 2,
+        "unit": "Tassen",
+        "perPortions": 4
+      },
+      {
+        "name": "Milch",
+        "amount": 1,
+        "unit": "Tasse",
+        "perPortions": 4
+      },
+      {
+        "name": "Rüebli",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Ei",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Petersilie",
+        "amount": 1,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Weggli",
+        "amount": 0.5,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Paniermehl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Haferflocken und Weggli in Milch einweichen.",
+      "Zwiebeln, Rüebli, Petersilie hacken, kurz andämpfen.",
+      "Alles vermischen, Ei einrühren, würzen. Bei Bedarf Paniermehl dazugeben.",
+      "Tätschli formen, in Bratbutter je 2–3 Min. pro Seite braten."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-19",
+    "name": "Himbeertiramisu",
+    "category": "Desserts & Süsses",
+    "timeMinutes": 30,
+    "tags": [
+      "Vegetarisch"
+    ],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 6,
+    "description": "Leichtes Himbeertiramisu mit Philadelphia und geschlagenem Rahm.",
+    "ingredients": [
+      {
+        "name": "Philadelphia",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Vollrahm",
+        "amount": 4,
+        "unit": "dl",
+        "perPortions": 6
+      },
+      {
+        "name": "Zucker",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "TK-Himbeeren",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Petite Beurre Guetzli",
+        "amount": 7,
+        "unit": "Stk",
+        "perPortions": 6
+      },
+      {
+        "name": "Mandelscheiben",
+        "amount": 0.5,
+        "unit": "Packung",
+        "perPortions": 6
+      },
+      {
+        "name": "Butter",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 6
+      }
+    ],
+    "steps": [
+      "Philadelphia, Rahm, Zucker, Vanillezucker mischen. Hälfte in Gratinform füllen.",
+      "Angetaute Himbeeren eindrücken. Restliche Masse darüber, kühlstellen.",
+      "Guetzli zerkleinern, mit Mandeln und Zucker in Butter rösten.",
+      "Kurz vor Servieren auf Tiramisu geben."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-23",
+    "name": "Kräuter-Gemüse-Rahmsauce",
+    "category": "Vegetarische Hauptgerichte",
+    "timeMinutes": 30,
+    "tags": [
+      "Vegetarisch"
+    ],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 6,
+    "description": "Cremige Gemüse-Cashew-Rahmsauce mit Kräutern – ideal zu Pasta oder Ravioli.",
+    "ingredients": [
+      {
+        "name": "Cashewkerne",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 6
+      },
+      {
+        "name": "Rüebli",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 6
+      },
+      {
+        "name": "Champignons",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Zucchetti",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 6
+      },
+      {
+        "name": "Gemüsebouillon",
+        "amount": 4,
+        "unit": "dl",
+        "perPortions": 6
+      },
+      {
+        "name": "Schnittlauch",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 6
+      },
+      {
+        "name": "Petersilie",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 6
+      }
+    ],
+    "steps": [
+      "Cashewkerne in Wasser einlegen.",
+      "Zwiebel glasig dünsten. Knoblauch, Rüebli, Champignons, Zucchetti beifügen.",
+      "Mit Bouillon ablöschen, köcheln. Kräuter fein schneiden.",
+      "Cashews mit 200 ml Wasser pürieren, zum Gemüse geben. Würzen."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-24",
+    "name": "Kräuterbutter",
+    "category": "Snacks & Vorspeisen",
+    "timeMinutes": 10,
+    "tags": [
+      "Vegetarisch"
+    ],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 6,
+    "description": "Selbst gemachte Kräuterbutter mit Petersilie und Knoblauch.",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Petersilie",
+        "amount": 1,
+        "unit": "Bund",
+        "perPortions": 6
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 6
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 0.5,
+        "unit": "EL",
+        "perPortions": 6
+      }
+    ],
+    "steps": [
+      "Butter schaumig rühren.",
+      "Petersilie hacken, Knoblauch pressen – alles beifügen, mixen.",
+      "In Alufolie einrollen und einfrieren."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-25",
+    "name": "Bärlauchbutter",
+    "category": "Snacks & Vorspeisen",
+    "timeMinutes": 10,
+    "tags": [
+      "Vegetarisch",
+      "Frühling"
+    ],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 6,
+    "description": "Aromatische Bärlauchbutter für Brot, Fleisch oder Grilladen.",
+    "ingredients": [
+      {
+        "name": "Butter (weich)",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Bärlauch, fein geschnitten",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Senf",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 6
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 3,
+        "unit": "TL",
+        "perPortions": 6
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 6
+      }
+    ],
+    "steps": [
+      "Butter schaumig rühren.",
+      "Bärlauch, Senf, Zitronensaft, Salz und Pfeffer beifügen, mixen.",
+      "In Alufolie einrollen, einfrieren."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-28",
+    "name": "Mediterranes Gemüse",
+    "category": "Vegetarische Hauptgerichte",
+    "timeMinutes": 35,
+    "tags": [
+      "Vegetarisch",
+      "Vegan",
+      "Ofengericht",
+      "Sommer"
+    ],
+    "weatherType": "warm",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Buntes Ofengemüse mit Cherrytomaten, Oliven und Rosmarin.",
+    "ingredients": [
+      {
+        "name": "Zucchetti",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Peperoni",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Champignons",
+        "amount": 1,
+        "unit": "Packung",
+        "perPortions": 4
+      },
+      {
+        "name": "Cherrytomaten",
+        "amount": 2,
+        "unit": "Packungen",
+        "perPortions": 4
+      },
+      {
+        "name": "schwarze Oliven, entsteint",
+        "amount": 1,
+        "unit": "Handvoll",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Gemüse würfeln. In Gratinform legen, würzen (All'Arrabiata, Salz, Pfeffer), mit Olivenöl begiessen. Rosmarin dazu.",
+      "Bei 200°C 20 Min. schmoren.",
+      "Cherrytomaten dazugeben, 5–10 Min. weiterschmoren."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-34",
+    "name": "Reisnudeln mit Tofu und Gemüse",
+    "category": "Vegetarische Hauptgerichte",
+    "timeMinutes": 35,
+    "tags": [
+      "Vegetarisch",
+      "Vegan",
+      "Asiatisch"
+    ],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 3,
+    "description": "Asiatische Reisnudeln mit Curry-Tofu, buntem Gemüse und Erdnuss-Sesam-Topping.",
+    "ingredients": [
+      {
+        "name": "Curry Bio-Tofu",
+        "amount": 220,
+        "unit": "g",
+        "perPortions": 3
+      },
+      {
+        "name": "Reisnudeln",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 3
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 3
+      },
+      {
+        "name": "Broccoli",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 3
+      },
+      {
+        "name": "Karotten",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 3
+      },
+      {
+        "name": "Peperoni",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 3
+      },
+      {
+        "name": "Sojasauce",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 3
+      },
+      {
+        "name": "Sesamöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 3
+      },
+      {
+        "name": "Erdnussbutter",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 3
+      },
+      {
+        "name": "Sesamsamen",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 3
+      }
+    ],
+    "steps": [
+      "Sesamsamen und Erdnüsse rösten.",
+      "Tofu knusprig braten, warmstellen.",
+      "Zwiebeln andünsten, Gemüse beifügen.",
+      "Sesamöl, Sojasauce, Reisessig, Rohrzucker, Erdnussbutter, Chiliflocken dazugeben.",
+      "Reisnudeln nach Anleitung kochen, mit Tofu und Gemüse mischen.",
+      "Mit Sesam, Erdnüssen und Koriander garnieren."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-36",
+    "name": "Rotkraut à la Grosi",
+    "category": "Vegetarische Hauptgerichte",
+    "timeMinutes": 55,
+    "tags": [
+      "Vegetarisch",
+      "Vegan",
+      "Herbst",
+      "Schweizer"
+    ],
+    "weatherType": "kalt",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 6,
+    "description": "Traditionelles Rotkraut im Dampfkochtopf mit Äpfeln und Rotwein.",
+    "ingredients": [
+      {
+        "name": "Rotchabis, fein gehobelt",
+        "amount": 1.5,
+        "unit": "kg",
+        "perPortions": 6
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 6
+      },
+      {
+        "name": "Äpfel, fein gehobelt",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 6
+      },
+      {
+        "name": "Rotwein",
+        "amount": 2,
+        "unit": "dl",
+        "perPortions": 6
+      },
+      {
+        "name": "Weinessig",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 6
+      }
+    ],
+    "steps": [
+      "Öl erhitzen, Zwiebeln glasig andämpfen.",
+      "Rotchabis dazugeben, zusammenfallen lassen.",
+      "Äpfel dazugeben, würzen (Salz, Zucker).",
+      "Rotwein und Essig dazugeben, aufkochen. Zugedeckt 45 Min. dampfgaren."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-40",
+    "name": "Spinat-Pancakes vom Ofen",
+    "category": "Vegetarische Hauptgerichte",
+    "timeMinutes": 30,
+    "tags": [
+      "Vegetarisch",
+      "Ofengericht"
+    ],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 8,
+    "description": "Herzhafter Spinat-Pancake-Blechkuchen – in Quadrate geschnitten.",
+    "ingredients": [
+      {
+        "name": "TK-Spinat, gehackt (aufgetaut)",
+        "amount": 260,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Eier",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 8
+      },
+      {
+        "name": "Dinkelvollkorn-Mehl",
+        "amount": 10,
+        "unit": "EL",
+        "perPortions": 8
+      },
+      {
+        "name": "Backpulver",
+        "amount": 2,
+        "unit": "TL",
+        "perPortions": 8
+      },
+      {
+        "name": "Sojamilch",
+        "amount": 140,
+        "unit": "ml",
+        "perPortions": 8
+      },
+      {
+        "name": "Mozzarella, gerieben",
+        "amount": 120,
+        "unit": "g",
+        "perPortions": 8
+      }
+    ],
+    "steps": [
+      "Alles gut vermischen.",
+      "Auf Backpapier verstreichen, bei 180°C ca. 20 Min. backen.",
+      "In Quadrate schneiden oder mit Form ausstechen."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-43",
+    "name": "Thonaufstrich",
+    "category": "Snacks & Vorspeisen",
+    "timeMinutes": 15,
+    "tags": [],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 6,
+    "description": "Cremiger Thunfischaufstrich mit Essiggurken und Kapern – ideal auf Brot.",
+    "ingredients": [
+      {
+        "name": "Thun (Dose)",
+        "amount": 2,
+        "unit": "Dosen",
+        "perPortions": 6
+      },
+      {
+        "name": "Eier, gesotten",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 6
+      },
+      {
+        "name": "Essiggurken",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 6
+      },
+      {
+        "name": "Butter",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Tomatenpüree",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 6
+      },
+      {
+        "name": "Sambal Oelek",
+        "amount": 1,
+        "unit": "KL",
+        "perPortions": 6
+      }
+    ],
+    "steps": [
+      "Alle Zutaten mit Stabmixer pürieren.",
+      "Mit Kapern und Zwiebelringen dekorieren."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-45",
+    "name": "Toast Hawaii",
+    "category": "Wraps & Sandwiches",
+    "timeMinutes": 15,
+    "tags": [],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Klassischer Toast Hawaii mit Ananas, Schinken und Raclette-Käse.",
+    "ingredients": [
+      {
+        "name": "Toastbrot",
+        "amount": 8,
+        "unit": "Scheiben",
+        "perPortions": 4
+      },
+      {
+        "name": "Toastschinken",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Ananas (Dose)",
+        "amount": 1,
+        "unit": "Dose",
+        "perPortions": 4
+      },
+      {
+        "name": "Raclette-Käsescheiben",
+        "amount": 8,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Butter",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Senf",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Toast mit Senf und Butter bestreichen.",
+      "Mit Schinken belegen, dann Ananas (oder Birne/Tomaten).",
+      "Mit Käse zudecken, würzen.",
+      "Im Ofen überbacken bis Käse schmilzt."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-46",
+    "name": "Tomaten-Bärlauch-Sandwich",
+    "category": "Wraps & Sandwiches",
+    "timeMinutes": 10,
+    "tags": [
+      "Vegetarisch",
+      "Vegan",
+      "Frühling"
+    ],
+    "weatherType": "warm",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Einfaches, frühlingshaftes Sandwich mit Bärlauchbutter und Tomaten.",
+    "ingredients": [
+      {
+        "name": "Brot, dünn geschnitten",
+        "amount": 8,
+        "unit": "Scheiben",
+        "perPortions": 4
+      },
+      {
+        "name": "Bärlauchbutter",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomaten",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Basilikum",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Brot mit Bärlauchbutter bestreichen.",
+      "Dünne Tomatenscheiben drauflegen.",
+      "Mit Kräutersalz und Basilikum würzen."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-47",
+    "name": "Tomaten-Bärlauch-Crostini",
+    "category": "Snacks & Vorspeisen",
+    "timeMinutes": 10,
+    "tags": [
+      "Vegetarisch",
+      "Frühling"
+    ],
+    "weatherType": "warm",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 6,
+    "description": "Knusprige Crostini mit Bärlauchbutter, Tomaten und Basilikum.",
+    "ingredients": [
+      {
+        "name": "Parisette/Baguette",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 6
+      },
+      {
+        "name": "Bärlauchbutter",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 6
+      },
+      {
+        "name": "Tomaten",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 6
+      },
+      {
+        "name": "Basilikum",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 6
+      }
+    ],
+    "steps": [
+      "Brot in Scheiben schneiden, toasten.",
+      "Mit Bärlauchbutter bestreichen.",
+      "Tomatenscheiben drauf, würzen, Basilikum darüber."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-51",
+    "name": "Veganer Rahmspinat",
+    "category": "Vegetarische Hauptgerichte",
+    "timeMinutes": 20,
+    "tags": [
+      "Vegetarisch",
+      "Vegan"
+    ],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Cremiger veganer Rahmspinat mit Cashew-Rahm.",
+    "ingredients": [
+      {
+        "name": "Cashewnüsse",
+        "amount": 80,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "TK-Spinat, gehackt",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "vegane Butter",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüse-Bouillonpaste",
+        "amount": 0.25,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Cashews in 250 ml Wasser einweichen.",
+      "Zwiebel und Knoblauch hacken, in Butter andünsten.",
+      "Spinat beifügen, langsam erwärmen.",
+      "Cashews pürieren zu Rahm. Mit Bouillonpaste zum Spinat geben, aufkochen.",
+      "Mit Muskatnuss, Hefeflocken, Salz und Pfeffer würzen."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-52",
+    "name": "Weissweinrahmsauce",
+    "category": "Snacks & Vorspeisen",
+    "timeMinutes": 20,
+    "tags": [
+      "Vegetarisch"
+    ],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Elegante Weisswein-Rahmsauce mit Cognac – passt zu Fisch, Fleisch oder Pasta.",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "amount": 60,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebeln",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 1,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Weisswein",
+        "amount": 2,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Rahm",
+        "amount": 5,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Cognac",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Petersilie",
+        "amount": 1,
+        "unit": "Bund",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Butter schmelzen, Zwiebeln und Knoblauch dünsten.",
+      "Mit Weisswein ablöschen, Hälfte einkochen.",
+      "Mehl einrühren, Rahm dazugiessen, 5 Min. köcheln.",
+      "Cognac und Petersilie dazugeben, würzen."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-54",
+    "name": "Zitronenrahmsauce",
+    "category": "Snacks & Vorspeisen",
+    "timeMinutes": 15,
+    "tags": [
+      "Vegetarisch"
+    ],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Frische Zitronenrahmsauce für Fleisch oder Pasta.",
+    "ingredients": [
+      {
+        "name": "Zitronensaft",
+        "amount": 1.5,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Rahm",
+        "amount": 3,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Bratensaucenpulver/-paste",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "In der Fleischpfanne Zitronensaft dazugiessen, einkochen. Evtl. Wasser dazugeben.",
+      "S'Wunder Bratensauce dazugeben, mit Rahm ablöschen. Rühren, aufkochen, würzen."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-57",
+    "name": "Zwetschgenkompott & Beerenkompott",
+    "category": "Desserts & Süsses",
+    "timeMinutes": 20,
+    "tags": [
+      "Vegetarisch",
+      "Vegan"
+    ],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Einfaches Zwetschgen- oder Beerenkompott – gut zu Pancakes oder Frühstück.",
+    "ingredients": [
+      {
+        "name": "TK Bio-Zwetschgen",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zimt",
+        "amount": 2,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Wasser",
+        "amount": 1,
+        "unit": "Schuss",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Alle Zutaten in Pfanne geben, aufkochen.",
+      "Hitze reduzieren, 10 Min. köcheln.",
+      "Nach Belieben pürieren."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "fam-58",
+    "name": "Zwetschgencreme mit Zimtrahm",
+    "category": "Desserts & Süsses",
+    "timeMinutes": 30,
+    "tags": [
+      "Vegetarisch"
+    ],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 6,
+    "description": "Feines Zwetschgenpüree mit Kefir, geschlagenem Rahm und Zimtrahm.",
+    "ingredients": [
+      {
+        "name": "Zwetschgen",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Rotwein",
+        "amount": 1,
+        "unit": "dl",
+        "perPortions": 6
+      },
+      {
+        "name": "Zucker",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 6
+      },
+      {
+        "name": "Kefir",
+        "amount": 180,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Rahm",
+        "amount": 1.5,
+        "unit": "dl",
+        "perPortions": 6
+      },
+      {
+        "name": "Puderzucker",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 6
+      },
+      {
+        "name": "Zimt",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 6
+      }
+    ],
+    "steps": [
+      "Zwetschgen entsteinen, in Rotwein mit Zucker und Gewürzen 15 Min. weichkochen.",
+      "Flüssigkeit 5–10 Min. einkochen, pürieren, auskühlen.",
+      "Kefir und Schlagrahm untermischen, kühlstellen.",
+      "Zimtrahm: Rahm mit Puderzucker und Zimt schlagen.",
+      "Mit Zimtrahm und Zwetschgen garnieren."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
     "id": "fvt-01",
     "name": "Süsskartoffel-Kichererbsen-Waffeln mit Joghurt-Gurken-Dip",
     "category": "Snacks & Vorspeisen",
@@ -4434,7 +9226,7 @@
   {
     "id": "fvt-05",
     "name": "Kartoffelpuffer mit Bohnen und Kräuter-Dip",
-    "category": "Snacks & Vorspeisen",
+    "category": "Kartoffelgerichte",
     "timeMinutes": 40,
     "ingredients": [
       {
@@ -4603,7 +9395,7 @@
   {
     "id": "fvt-13",
     "name": "Räuber-Nuggets aus Tofu und Gemüse",
-    "category": "Snacks & Vorspeisen",
+    "category": "Vegetarische Hauptgerichte",
     "timeMinutes": 45,
     "ingredients": [
       {
@@ -4666,6 +9458,316 @@
       "Mealprep-geeignet",
       "Mittagsgericht"
     ]
+  },
+  {
+    "id": "ocr-02",
+    "name": "Biskuitroulade mit Äpfeln",
+    "category": "Desserts & Süsses",
+    "timeMinutes": 45,
+    "tags": [
+      "Vegetarisch"
+    ],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch (OCR)",
+    "basePortions": 8,
+    "description": "Beliebtes, saftiges Dessert: Biskuitroulade mit frischem Apfel-Rahm.",
+    "ingredients": [
+      {
+        "name": "Eier",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 8
+      },
+      {
+        "name": "Zucker",
+        "amount": 120,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Mehl",
+        "amount": 120,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Rahm",
+        "amount": 1.5,
+        "unit": "dl",
+        "perPortions": 8
+      },
+      {
+        "name": "Äpfel",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 8
+      },
+      {
+        "name": "Zucker (Füllung)",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 8
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 0.5,
+        "unit": "Stk",
+        "perPortions": 8
+      }
+    ],
+    "steps": [
+      "Eigelb mit heissem Wasser schaumig rühren. Zucker und Mehl darunter.",
+      "Auf belegtem Blech verstreichen, bei 200°C 10–15 Min. backen.",
+      "Unter Blech auskühlen, einrollen.",
+      "Rahm steifschlagen.",
+      "Äpfel raffeln, sofort mit Rahm mischen, Zitronensaft und Zucker beifügen.",
+      "Auf erkaltete Roulade streichen, einrollen, mit Puderzucker bestreuen."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "ocr-03",
+    "name": "Apple Crumble",
+    "category": "Desserts & Süsses",
+    "timeMinutes": 40,
+    "tags": [
+      "Vegetarisch",
+      "Herbst"
+    ],
+    "weatherType": "kalt",
+    "source": "Familien-Rezeptbuch (OCR)",
+    "basePortions": 6,
+    "description": "Butterige Streusel über saftigen Äpfeln – warm serviert ein Gedicht.",
+    "ingredients": [
+      {
+        "name": "Äpfel",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Butter",
+        "amount": 140,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Mehl",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Gemahlene Mandeln",
+        "amount": 15,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "brauner Zucker",
+        "amount": 150,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Zimt",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 6
+      }
+    ],
+    "steps": [
+      "Ofen auf 180°C vorheizen, Auflaufform einbuttern.",
+      "Apfelstücke in Form geben, mit Zimt bestreuen.",
+      "Butter, Mehl, Mandeln, Zucker, Salz, Vanille mischen, Streusel formen.",
+      "Streusel auf Äpfeln verteilen, mit Mandeln bestreuen.",
+      "25 Min. backen. Warm servieren."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "ocr-08",
+    "name": "Feigenrezept mit warmem Ziegenkäse",
+    "category": "Snacks & Vorspeisen",
+    "timeMinutes": 25,
+    "tags": [],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch (OCR)",
+    "basePortions": 4,
+    "description": "Reife Feigen mit Ziegenkäse und Rohschinken – elegant als Vorspeise.",
+    "ingredients": [
+      {
+        "name": "reife Feigen",
+        "amount": 8,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Ziegenkäse-Frischkäse",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Rohschinken",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Balsamico",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Honig",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Feigen halbieren, mit der Schnittfläche nach oben in feuerfeste Form legen.",
+      "Mit Ziegenkäse füllen, mit Rohschinken umwickeln.",
+      "15 Min. bei 40°C im Ofen erwärmen.",
+      "Mit Balsamico-Honig-Mix beträufeln, pfeffern.",
+      "Als Vorspeise mit Blattsalat servieren."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "ocr-13",
+    "name": "Traditionelle Gurkensandwiches",
+    "category": "Snacks & Vorspeisen",
+    "timeMinutes": 25,
+    "tags": [
+      "Vegetarisch"
+    ],
+    "weatherType": "warm",
+    "source": "Familien-Rezeptbuch (OCR)",
+    "basePortions": 4,
+    "description": "Klassische Gurkensandwiches mit Crème fraîche, Dill und Zitrone.",
+    "ingredients": [
+      {
+        "name": "Toastbrot",
+        "amount": 6,
+        "unit": "Scheiben",
+        "perPortions": 4
+      },
+      {
+        "name": "Gurke",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Crème fraîche",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Dill",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 1,
+        "unit": "Schuss",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Gurke schälen, würfeln, salzen, 15 Min. ziehen lassen.",
+      "Gurke abspülen, trockentupfen.",
+      "Crème fraîche, Zitronensaft, Dill, Pfeffer verrühren.",
+      "Masse auf 3 Toastscheiben streichen, je mit 1 Scheibe decken.",
+      "In 4 Schnittchen schneiden."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
+  },
+  {
+    "id": "ocr-18",
+    "name": "Käse-Kräuter-Scones",
+    "category": "Snacks & Vorspeisen",
+    "timeMinutes": 25,
+    "tags": [
+      "Vegetarisch"
+    ],
+    "weatherType": "neutral",
+    "source": "Familien-Rezeptbuch (OCR)",
+    "basePortions": 11,
+    "description": "Warme, herzhafte Käse-Kräuter-Scones – ideal noch warm serviert.",
+    "ingredients": [
+      {
+        "name": "Mehl",
+        "amount": 450,
+        "unit": "g",
+        "perPortions": 11
+      },
+      {
+        "name": "Backpulver",
+        "amount": 1.5,
+        "unit": "Päckchen",
+        "perPortions": 11
+      },
+      {
+        "name": "Gruyère, gerieben",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 11
+      },
+      {
+        "name": "Ital. Kräuter",
+        "amount": 3,
+        "unit": "TL",
+        "perPortions": 11
+      },
+      {
+        "name": "Butter (kalt)",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 11
+      },
+      {
+        "name": "Milch",
+        "amount": 1.5,
+        "unit": "dl",
+        "perPortions": 11
+      },
+      {
+        "name": "Wasser",
+        "amount": 0.75,
+        "unit": "dl",
+        "perPortions": 11
+      }
+    ],
+    "steps": [
+      "Ofen auf 230°C, Blech mit Backpapier belegen.",
+      "Mehl, Backpulver, Salz, Käse, Kräuter mischen. Butter einbröseln.",
+      "Milch und Wasser rasch einkneten.",
+      "Auswalzen, Rondellen (5 cm) ausstechen. Mit Milch bestreichen, Käse drüber.",
+      "13–15 Min. goldgelb backen. Noch warm servieren."
+    ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "tips": ""
   },
   {
     "id": "son-01",

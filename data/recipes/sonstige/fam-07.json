@@ -1,0 +1,73 @@
+{
+  "id": "fam-07",
+  "name": "Buchweizen-Pancakes mit Zwetschgenkompott",
+  "category": "Frühstück",
+  "timeMinutes": 30,
+  "tags": [
+    "Vegetarisch"
+  ],
+  "weatherType": "neutral",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Herzhafte Buchweizen-Pancakes mit selbst gemachtem Zwetschgenkompott und Kokosjoghurt.",
+  "ingredients": [
+    {
+      "name": "Buchweizenmehl",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Dinkelmehl",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Sojamilch",
+      "amount": 2,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Eier",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Backpulver",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "TK Bio-Zwetschgen",
+      "amount": 600,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zimt",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Ghee",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Mehl, Backpulver, Salz, Vanille mischen. Sojamilch und Eier einrühren.",
+    "Ghee erhitzen, Pancakes (ca. 8 cm) beidseitig goldbraun backen.",
+    "Kompott: Zwetschgen mit Zimt und wenig Wasser aufkochen, 10 Min. köcheln.",
+    "Mit Zwetschgenkompott und Kokosjoghurt servieren."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

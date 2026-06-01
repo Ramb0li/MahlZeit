@@ -27,7 +27,10 @@ const CATEGORY_ORDER = [
   'ofen',
   'asiatisch',
   'fisch',
+  'fleisch',
+  'kartoffel',
   'sonstige',
+  'kindersnacks',
 ];
 
 function buildRecipes() {

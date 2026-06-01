@@ -1,0 +1,64 @@
+{
+  "id": "fam-08",
+  "name": "Burger",
+  "category": "Wraps & Sandwiches",
+  "timeMinutes": 20,
+  "tags": [],
+  "weatherType": "warm",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Klassischer Burger mit Avocado, Essiggurken und Kräuterbutter.",
+  "ingredients": [
+    {
+      "name": "Hamburgerbrötchen",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Burger oder Vegi-Burger",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Cheddar-Käsescheiben",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomate",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "rote Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Avocado",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Essiggurken",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Brötchen mit Käse im Ofen kurz aufbacken.",
+    "Burger anbraten.",
+    "Alle Zutaten belegen: Kräuterbutter, Senf, Ketchup nach Belieben."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

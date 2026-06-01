@@ -1,0 +1,68 @@
+{
+  "id": "ocr-12",
+  "name": "Gnocchi-Gratin mit Basilikumsauce",
+  "category": "Aufläufe & Gratins",
+  "timeMinutes": 35,
+  "tags": [
+    "Vegetarisch"
+  ],
+  "weatherType": "kalt",
+  "source": "Familien-Rezeptbuch (OCR)",
+  "basePortions": 4,
+  "description": "Frische Gnocchi mit Basilikum-Mascarpone-Sauce und Cherrytomaten überbacken.",
+  "ingredients": [
+    {
+      "name": "Gnocchi (Kühlregal)",
+      "amount": 700,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Basilikum",
+      "amount": 2,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Milch",
+      "amount": 1.5,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Mascarpone",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Eigelb",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Cherrytomaten",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Sbrinz, gerieben",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Gnocchi kochen, in gebutterte Gratinform.",
+    "Basilikum, Milch, Mascarpone, Eigelb pürieren. Kräftig würzen. Über Gnocchi giessen.",
+    "Cherrytomaten halbieren, würzen, zwischen und über Gnocchi.",
+    "Mit Sbrinz bestreuen.",
+    "Ca. 20 Min. bei 220°C backen."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

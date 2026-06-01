@@ -1,0 +1,72 @@
+{
+  "id": "fam-35",
+  "name": "Reissalat à la Céline",
+  "category": "Salate & Bowls",
+  "timeMinutes": 15,
+  "tags": [
+    "Vegetarisch"
+  ],
+  "weatherType": "warm",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Frischer Reissalat mit Tomaten, Essiggurken und cremigem Dressing.",
+  "ingredients": [
+    {
+      "name": "Reisresten",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Cherrytomaten",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Essiggurken",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Kichererbsen (optional, Dose)",
+      "amount": 0.5,
+      "unit": "Dose",
+      "perPortions": 4
+    },
+    {
+      "name": "Basilikum",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Crème fraîche",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Mayonnaise",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Essig",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Tomaten halbieren, Gurken würfeln, Kräuter hacken.",
+    "Dressing aus Crème fraîche, Mayonnaise, Essig, Salz, Pfeffer, Ital. Kräutern rühren.",
+    "Alles mischen."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

@@ -1,0 +1,56 @@
+{
+  "id": "fam-56",
+  "name": "Zitronenrisotto",
+  "category": "Reis & Getreide",
+  "timeMinutes": 35,
+  "tags": [
+    "Vegetarisch"
+  ],
+  "weatherType": "warm",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Erfrischendes Zitronenrisotto mit Greyerzer.",
+  "ingredients": [
+    {
+      "name": "Risottoreis",
+      "amount": 3,
+      "unit": "Tassen",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitrone",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Greyerzer",
+      "amount": 2,
+      "unit": "Handvoll",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebouillon",
+      "amount": 1,
+      "unit": "L",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Zitronenschale abreiben, Saft auspressen.",
+    "Zwiebeln in Olivenöl andünsten, Reis beifügen, glasig dünsten.",
+    "Mit Zitronensaft ablöschen, Schale hinzufügen.",
+    "Warme Bouillon nach und nach dazugeben, rühren und einkochen.",
+    "Vor Servieren Greyerzer beifügen, pfeffern."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

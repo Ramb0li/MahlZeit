@@ -1,0 +1,57 @@
+{
+  "id": "fam-06",
+  "name": "Bruschetta mit Tomaten",
+  "category": "Snacks & Vorspeisen",
+  "timeMinutes": 15,
+  "tags": [
+    "Vegetarisch",
+    "Vegan",
+    "Italienisch",
+    "Sommer"
+  ],
+  "weatherType": "warm",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Klassische Bruschetta mit frischen Tomaten, Basilikum und Knoblauch.",
+  "ingredients": [
+    {
+      "name": "Baguette",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomaten, gewürfelt",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Basilikum",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 2,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Brot toasten. Mit Knoblauch einreiben, mit Olivenöl bestreichen.",
+    "Tomatenwürfel (ohne Saft) mit Basilikum, Olivenöl, Salz, Pfeffer mischen.",
+    "Auf Brot verteilen und sofort servieren."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

@@ -1,0 +1,67 @@
+{
+  "id": "fam-31",
+  "name": "Orangen-Randensalat",
+  "category": "Salate & Bowls",
+  "timeMinutes": 15,
+  "tags": [
+    "Vegetarisch",
+    "Vegan"
+  ],
+  "weatherType": "neutral",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Eleganter Salat mit Randen, Orangen und Ingwer-Dressing.",
+  "ingredients": [
+    {
+      "name": "Randen, gekocht",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Orangen",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Ingwer",
+      "amount": 1.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Honig",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Feigenbalsamico",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Senf",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Randen in Scheiben, Orangen filetieren.",
+    "Dressing aus Ingwer, Honig, Balsamico, Öl, Senf, Salz, Pfeffer rühren.",
+    "Anrichten, Dressing darüber."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

@@ -1,0 +1,72 @@
+{
+  "id": "ocr-05",
+  "name": "Chilbitopf",
+  "category": "Aufläufe & Gratins",
+  "timeMinutes": 60,
+  "tags": [],
+  "weatherType": "kalt",
+  "source": "Familien-Rezeptbuch (OCR)",
+  "basePortions": 4,
+  "description": "Herzhafter Sauerkraut-Gratin mit Pouletfleisch und Rahmsauce.",
+  "ingredients": [
+    {
+      "name": "Sauerkraut, gekocht",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Pouletfleisch, geschnetzelt",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Mehl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Weisswein",
+      "amount": 1,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Rahm",
+      "amount": 1.5,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Senf",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Poulet anbraten, salzen, pfeffern, herausnehmen.",
+    "Zwiebel im Fond 5 Min. dünsten, mit Mehl bestäuben, mit Wein ablöschen.",
+    "Rahm und Senf beifügen, 5 Min. eindicken lassen.",
+    "Gratinform einbuttern, Sauerkraut einlegen, Poulet verteilen, Sauce drüber.",
+    "Ca. 30 Min. bei 180°C gratinieren."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

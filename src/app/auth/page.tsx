@@ -3,6 +3,7 @@
 import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams, useRouter }    from 'next/navigation';
 import Link                              from 'next/link';
+import Image                             from 'next/image';
 
 /* ─── Plan cards ─────────────────────────────────────────────────────────── */
 
@@ -221,7 +222,7 @@ function AuthInner() {
 
         {/* Logo */}
         <div className="lp-login-logo">
-          <div className="lp-login-logo-icon">🍽</div>
+          <Image src="/Logo-Mahlzeit.png" alt="MahlZeit" width={56} height={56} style={{ objectFit: 'contain' }} priority />
           <div className="lp-login-logo-text">
             Mahl<span style={{ color: '#b5614a' }}>Zeit</span>
           </div>

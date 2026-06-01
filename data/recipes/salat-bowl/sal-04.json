@@ -3,61 +3,65 @@
   "name": "Kichererbsensalat",
   "category": "Salate & Bowls",
   "timeMinutes": 15,
+  "tags": [
+    "Vegetarisch",
+    "Vegan"
+  ],
+  "weatherType": "warm",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Einfacher Kichererbsensalat mit getrockneten Tomaten und Schnittlauch.",
   "ingredients": [
     {
       "name": "Kichererbsen (Dose)",
-      "amount": 800,
-      "unit": "g",
-      "perPortions": 4
-    },
-    {
-      "name": "Tomaten",
-      "amount": 3,
-      "unit": "Stk",
-      "perPortions": 4
-    },
-    {
-      "name": "Gurke",
       "amount": 1,
+      "unit": "Dose",
+      "perPortions": 4
+    },
+    {
+      "name": "getrocknete Tomaten in Öl",
+      "amount": 4,
       "unit": "Stk",
       "perPortions": 4
     },
     {
-      "name": "Rote Zwiebel",
-      "amount": 1,
+      "name": "Zwiebel",
+      "amount": 0.5,
       "unit": "Stk",
       "perPortions": 4
     },
     {
-      "name": "Petersilie",
+      "name": "Schnittlauch",
       "amount": 0.5,
       "unit": "Bund",
       "perPortions": 4
     },
     {
-      "name": "Zitronensaft",
-      "amount": 3,
+      "name": "Rapsöl",
+      "amount": 2,
       "unit": "EL",
       "perPortions": 4
     },
     {
-      "name": "Olivenöl",
-      "amount": 3,
+      "name": "Essig",
+      "amount": 1,
       "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Senf",
+      "amount": 1,
+      "unit": "TL",
       "perPortions": 4
     }
   ],
-  "weatherType": "warm",
-  "source": "Rezept von Cuiselin",
-  "basePortions": 4,
-  "description": "Proteinreicher Salat, schnell gemacht.",
-  "steps": [],
+  "steps": [
+    "Kichererbsen abspülen. Tomaten in Streifen, Zwiebel und Schnittlauch schneiden.",
+    "Dressing aus Öl, Essig, Senf, Salz, Pfeffer, Kräutern rühren.",
+    "Alles mischen."
+  ],
   "tips": "",
   "imageUrl": null,
-  "tags": [
-    "Mealprep-geeignet",
-    "Mittagsgericht",
-    "Frühling",
-    "Sommer"
-  ]
+  "imageZutaten": null,
+  "imageKochen": null
 }

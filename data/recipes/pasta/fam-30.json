@@ -1,0 +1,65 @@
+{
+  "id": "fam-30",
+  "name": "Nudeln mit Gemüse-Poulet-Sauce",
+  "category": "Pasta",
+  "timeMinutes": 35,
+  "tags": [],
+  "weatherType": "neutral",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Pasta mit würziger Poulet-Gemüse-Sauce in Rahm.",
+  "ingredients": [
+    {
+      "name": "Pouletfleisch, geschnetzelt",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Nudeln",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Blumenkohl, halb",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Peperoni",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Zucchetti",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Rahm",
+      "amount": 3,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebeln",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Gemüse klein schneiden.",
+    "Poulet anbraten, würzen, warmstellen.",
+    "Zwiebeln andünsten, Gemüse beifügen, würzen. 10–15 Min. köcheln.",
+    "Rahm und Poulet dazugeben."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

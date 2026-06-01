@@ -1,0 +1,45 @@
+{
+  "id": "fam-32",
+  "name": "Rahmschnitzeli",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 20,
+  "tags": [],
+  "weatherType": "neutral",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Klassische Schweinsplätzchen in cremiger Weisswein-Rahmsauce.",
+  "ingredients": [
+    {
+      "name": "Schweinsplätzchen vom Nierstück",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Weisswein",
+      "amount": 1,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "S'Wunder Bratensauce",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Rahm",
+      "amount": 4,
+      "unit": "dl",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Plätzchen mit Senf bestreichen, würzen. In Bratbutter je 1 Min. anbraten, warmstellen.",
+    "Weisswein in Pfanne giessen, einkochen. S'Wunder dazugeben, mit Rahm ablöschen. Würzen."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

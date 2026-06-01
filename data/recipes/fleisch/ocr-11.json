@@ -1,0 +1,67 @@
+{
+  "id": "ocr-11",
+  "name": "Ghackets Betty Bossi",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 30,
+  "tags": [
+    "Schweizer"
+  ],
+  "weatherType": "kalt",
+  "source": "Familien-Rezeptbuch (OCR)",
+  "basePortions": 4,
+  "description": "Klassisches Rindshackfleisch nach Betty Bossi – Grossmutters Lieblingsrezept.",
+  "ingredients": [
+    {
+      "name": "Rindsfleisch, grob gehackt",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Rotwein",
+      "amount": 1,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Bratensaucenpulver",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomatenpüree",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Lorbeerblatt",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Fleisch in Öl anbraten, mit Mehl bestäuben.",
+    "Zwiebeln, Knoblauch, Tomatenpüree mitbraten.",
+    "Wein einkochen lassen.",
+    "Bratensauce und Wasser beifügen, 20–25 Min. auf kleiner Stufe köcheln."
+  ],
+  "tips": "Dazu passen Teigwaren, Mais, Reis oder Kartoffeln. Auch mit Quorn möglich.",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null
+}

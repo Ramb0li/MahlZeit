@@ -1,0 +1,75 @@
+{
+  "id": "ocr-07",
+  "name": "Vollkornnudeln mit Auberginen (Cinque Pì)",
+  "category": "Pasta",
+  "timeMinutes": 40,
+  "tags": [
+    "Vegetarisch",
+    "Italienisch"
+  ],
+  "weatherType": "warm",
+  "source": "Familien-Rezeptbuch (OCR)",
+  "basePortions": 4,
+  "description": "Vollkornnudeln mit würziger Auberginen-Sardellenfiletsauce.",
+  "ingredients": [
+    {
+      "name": "Vollkornnudeln",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Auberginen",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Pelati, gehackt (Dose)",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Sardellenfilets",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 2,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Basilikum",
+      "amount": 10,
+      "unit": "Blätter",
+      "perPortions": 4
+    },
+    {
+      "name": "Parmesan",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Nudeln al dente kochen.",
+    "Öl erhitzen, Zwiebel und Knoblauch andämpfen.",
+    "Auberginen würfeln, mitdämpfen.",
+    "Pelati beifügen, 20–30 Min. köcheln.",
+    "Sardellen und Basilikum unterrühren, würzen. Mit Nudeln servieren."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

@@ -1,0 +1,62 @@
+{
+  "id": "fam-49",
+  "name": "Tomatensuppe",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 20,
+  "tags": [
+    "Vegetarisch",
+    "Vegan"
+  ],
+  "weatherType": "kalt",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Frische Tomatensuppe mit Pelati.",
+  "ingredients": [
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Pelati (Dose)",
+      "amount": 1,
+      "unit": "Dose",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomatenpüree",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Bouillon",
+      "amount": 1,
+      "unit": "L",
+      "perPortions": 4
+    },
+    {
+      "name": "Rahm",
+      "amount": 1,
+      "unit": "Schuss",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Olivenöl erhitzen, Zwiebeln andämpfen.",
+    "Pelati und Tomatenpüree beifügen, kurz andämpfen.",
+    "Mit Bouillon ablöschen, 10–15 Min. köcheln.",
+    "Rahm dazugeben, würzen."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

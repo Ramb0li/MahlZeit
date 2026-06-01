@@ -1,0 +1,41 @@
+{
+  "id": "fam-54",
+  "name": "Zitronenrahmsauce",
+  "category": "Snacks & Vorspeisen",
+  "timeMinutes": 15,
+  "tags": [
+    "Vegetarisch"
+  ],
+  "weatherType": "neutral",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Frische Zitronenrahmsauce für Fleisch oder Pasta.",
+  "ingredients": [
+    {
+      "name": "Zitronensaft",
+      "amount": 1.5,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Rahm",
+      "amount": 3,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Bratensaucenpulver/-paste",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "In der Fleischpfanne Zitronensaft dazugiessen, einkochen. Evtl. Wasser dazugeben.",
+    "S'Wunder Bratensauce dazugeben, mit Rahm ablöschen. Rühren, aufkochen, würzen."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

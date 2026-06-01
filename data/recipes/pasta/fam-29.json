@@ -1,0 +1,65 @@
+{
+  "id": "fam-29",
+  "name": "Nudeln al Pollo",
+  "category": "Pasta",
+  "timeMinutes": 35,
+  "tags": [],
+  "weatherType": "neutral",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Breite Nudeln mit saftigem Poulet, Peperoni und Sauerrahmsauce.",
+  "ingredients": [
+    {
+      "name": "Pouletfleisch, geschnetzelt",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "breite Krausnudeln",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Peperoni",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebeln",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Sauerrahm",
+      "amount": 2,
+      "unit": "Becher",
+      "perPortions": 4
+    },
+    {
+      "name": "Rahm",
+      "amount": 1,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Sojasauce",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Poulet in Sojasauce und Pouletgewürz marinieren (¼ h), dann knusprig anbraten.",
+    "Zwiebeln andämpfen, Peperoni beifügen. Sojasauce und Wein dazugeben, 10 Min. köcheln.",
+    "Nudeln al dente kochen.",
+    "Kurz vor Servieren Sauerrahm und Rahm zu Nudeln geben, erhitzen. Peperoni und Poulet beifügen."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

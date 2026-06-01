@@ -1,0 +1,48 @@
+{
+  "id": "fam-24",
+  "name": "Kräuterbutter",
+  "category": "Snacks & Vorspeisen",
+  "timeMinutes": 10,
+  "tags": [
+    "Vegetarisch"
+  ],
+  "weatherType": "neutral",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 6,
+  "description": "Selbst gemachte Kräuterbutter mit Petersilie und Knoblauch.",
+  "ingredients": [
+    {
+      "name": "Butter",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Petersilie",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 6
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 2,
+      "unit": "Zehen",
+      "perPortions": 6
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 0.5,
+      "unit": "EL",
+      "perPortions": 6
+    }
+  ],
+  "steps": [
+    "Butter schaumig rühren.",
+    "Petersilie hacken, Knoblauch pressen – alles beifügen, mixen.",
+    "In Alufolie einrollen und einfrieren."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

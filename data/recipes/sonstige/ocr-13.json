@@ -1,0 +1,56 @@
+{
+  "id": "ocr-13",
+  "name": "Traditionelle Gurkensandwiches",
+  "category": "Snacks & Vorspeisen",
+  "timeMinutes": 25,
+  "tags": [
+    "Vegetarisch"
+  ],
+  "weatherType": "warm",
+  "source": "Familien-Rezeptbuch (OCR)",
+  "basePortions": 4,
+  "description": "Klassische Gurkensandwiches mit Crème fraîche, Dill und Zitrone.",
+  "ingredients": [
+    {
+      "name": "Toastbrot",
+      "amount": 6,
+      "unit": "Scheiben",
+      "perPortions": 4
+    },
+    {
+      "name": "Gurke",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Crème fraîche",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Dill",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 1,
+      "unit": "Schuss",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Gurke schälen, würfeln, salzen, 15 Min. ziehen lassen.",
+    "Gurke abspülen, trockentupfen.",
+    "Crème fraîche, Zitronensaft, Dill, Pfeffer verrühren.",
+    "Masse auf 3 Toastscheiben streichen, je mit 1 Scheibe decken.",
+    "In 4 Schnittchen schneiden."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

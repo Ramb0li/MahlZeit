@@ -1,0 +1,65 @@
+{
+  "id": "fam-09",
+  "name": "Chnöpfli-Gratin",
+  "category": "Aufläufe & Gratins",
+  "timeMinutes": 35,
+  "tags": [],
+  "weatherType": "kalt",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Chnöpfli-Gratin mit Napoli-Sauce, Schinken und Reibkäse.",
+  "ingredients": [
+    {
+      "name": "Chnöpfli/Bio-Spätzli",
+      "amount": 2,
+      "unit": "Packungen",
+      "perPortions": 4
+    },
+    {
+      "name": "Reibkäse",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Schinken",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Pelati (Dose)",
+      "amount": 1,
+      "unit": "Dose",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomatenpüree",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Butter schmelzen, Chnöpfli anbraten, in eingebutterte Gratinform geben.",
+    "Napoli-Sauce zubereiten (Zwiebel, Pelati, Tomatenpüree, Kräuter, 15 Min. köcheln).",
+    "Sauce und Schinken unter Chnöpfli mischen.",
+    "Viel Reibkäse darüber. 10 Min. bei 220°C backen."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

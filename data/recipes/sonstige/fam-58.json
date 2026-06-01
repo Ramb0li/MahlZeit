@@ -1,0 +1,68 @@
+{
+  "id": "fam-58",
+  "name": "Zwetschgencreme mit Zimtrahm",
+  "category": "Desserts & Süsses",
+  "timeMinutes": 30,
+  "tags": [
+    "Vegetarisch"
+  ],
+  "weatherType": "neutral",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 6,
+  "description": "Feines Zwetschgenpüree mit Kefir, geschlagenem Rahm und Zimtrahm.",
+  "ingredients": [
+    {
+      "name": "Zwetschgen",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Rotwein",
+      "amount": 1,
+      "unit": "dl",
+      "perPortions": 6
+    },
+    {
+      "name": "Zucker",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 6
+    },
+    {
+      "name": "Kefir",
+      "amount": 180,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Rahm",
+      "amount": 1.5,
+      "unit": "dl",
+      "perPortions": 6
+    },
+    {
+      "name": "Puderzucker",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 6
+    },
+    {
+      "name": "Zimt",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 6
+    }
+  ],
+  "steps": [
+    "Zwetschgen entsteinen, in Rotwein mit Zucker und Gewürzen 15 Min. weichkochen.",
+    "Flüssigkeit 5–10 Min. einkochen, pürieren, auskühlen.",
+    "Kefir und Schlagrahm untermischen, kühlstellen.",
+    "Zimtrahm: Rahm mit Puderzucker und Zimt schlagen.",
+    "Mit Zimtrahm und Zwetschgen garnieren."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

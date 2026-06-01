@@ -1,4 +1,5 @@
-import Link from 'next/link';
+import Link  from 'next/link';
+import Image from 'next/image';
 
 /* ─── Static data ──────────────────────────────────────────────────── */
 
@@ -137,7 +138,7 @@ export default function LandingPage() {
 
           {/* Frosted-glass logo */}
           <div className="lp-hero-logo-panel">
-            <div className="lp-hero-logo-icon">🍽</div>
+            <Image src="/Logo-Mahlzeit.png" alt="MahlZeit" width={64} height={64} style={{ objectFit: 'contain' }} priority />
             <div className="lp-hero-logo-text">
               Mahl<span style={{ color: '#b5614a' }}>Zeit</span>
             </div>

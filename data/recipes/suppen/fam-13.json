@@ -1,0 +1,61 @@
+{
+  "id": "fam-13",
+  "name": "Einlaufsuppe",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 20,
+  "tags": [
+    "Vegetarisch"
+  ],
+  "weatherType": "kalt",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Einfache Schweizer Einlaufsuppe mit Ei.",
+  "ingredients": [
+    {
+      "name": "Butter",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Mehl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Bouillon",
+      "amount": 1,
+      "unit": "L",
+      "perPortions": 4
+    },
+    {
+      "name": "Ei",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Rahm",
+      "amount": 1,
+      "unit": "Schuss",
+      "perPortions": 4
+    },
+    {
+      "name": "Schnittlauch",
+      "amount": 1,
+      "unit": "Schuss",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Butter schmelzen, Mehl andünsten.",
+    "Mit Bouillon ablöschen, 10 Min. köcheln.",
+    "Ei mit Rahm verquirlen. Pfanne vom Herd, unter Rühren langsam einlaufen lassen.",
+    "Mit Schnittlauch garnieren."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

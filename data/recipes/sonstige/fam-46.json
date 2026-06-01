@@ -1,0 +1,50 @@
+{
+  "id": "fam-46",
+  "name": "Tomaten-Bärlauch-Sandwich",
+  "category": "Wraps & Sandwiches",
+  "timeMinutes": 10,
+  "tags": [
+    "Vegetarisch",
+    "Vegan",
+    "Frühling"
+  ],
+  "weatherType": "warm",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Einfaches, frühlingshaftes Sandwich mit Bärlauchbutter und Tomaten.",
+  "ingredients": [
+    {
+      "name": "Brot, dünn geschnitten",
+      "amount": 8,
+      "unit": "Scheiben",
+      "perPortions": 4
+    },
+    {
+      "name": "Bärlauchbutter",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomaten",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Basilikum",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Brot mit Bärlauchbutter bestreichen.",
+    "Dünne Tomatenscheiben drauflegen.",
+    "Mit Kräutersalz und Basilikum würzen."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

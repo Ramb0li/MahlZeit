@@ -1,0 +1,89 @@
+{
+  "id": "fam-34",
+  "name": "Reisnudeln mit Tofu und Gemüse",
+  "category": "Vegetarische Hauptgerichte",
+  "timeMinutes": 35,
+  "tags": [
+    "Vegetarisch",
+    "Vegan",
+    "Asiatisch"
+  ],
+  "weatherType": "neutral",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 3,
+  "description": "Asiatische Reisnudeln mit Curry-Tofu, buntem Gemüse und Erdnuss-Sesam-Topping.",
+  "ingredients": [
+    {
+      "name": "Curry Bio-Tofu",
+      "amount": 220,
+      "unit": "g",
+      "perPortions": 3
+    },
+    {
+      "name": "Reisnudeln",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 3
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 3
+    },
+    {
+      "name": "Broccoli",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 3
+    },
+    {
+      "name": "Karotten",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 3
+    },
+    {
+      "name": "Peperoni",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 3
+    },
+    {
+      "name": "Sojasauce",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 3
+    },
+    {
+      "name": "Sesamöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 3
+    },
+    {
+      "name": "Erdnussbutter",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 3
+    },
+    {
+      "name": "Sesamsamen",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 3
+    }
+  ],
+  "steps": [
+    "Sesamsamen und Erdnüsse rösten.",
+    "Tofu knusprig braten, warmstellen.",
+    "Zwiebeln andünsten, Gemüse beifügen.",
+    "Sesamöl, Sojasauce, Reisessig, Rohrzucker, Erdnussbutter, Chiliflocken dazugeben.",
+    "Reisnudeln nach Anleitung kochen, mit Tofu und Gemüse mischen.",
+    "Mit Sesam, Erdnüssen und Koriander garnieren."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

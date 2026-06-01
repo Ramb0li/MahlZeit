@@ -1,0 +1,55 @@
+{
+  "id": "fam-55",
+  "name": "Zitronenravioli an Prosecco-Sauce",
+  "category": "Pasta",
+  "timeMinutes": 25,
+  "tags": [
+    "Vegetarisch"
+  ],
+  "weatherType": "neutral",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Festliche Zitronenravioli in Prosecco-Parmesan-Sauce.",
+  "ingredients": [
+    {
+      "name": "Zitronenravioli",
+      "amount": 800,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Prosecco/Champagner",
+      "amount": 2.5,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Rahm",
+      "amount": 1.5,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Sbrinz",
+      "amount": 2,
+      "unit": "Handvoll",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Zwiebel in Butter 5 Min. andämpfen.",
+    "Mit Prosecco ablöschen, einkochen.",
+    "Käse hinzufügen, schmelzen. Rahm, Zitronenöl/Schale beifügen, würzen.",
+    "Ravioli nach Anleitung kochen."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

@@ -1,0 +1,73 @@
+{
+  "id": "fam-18",
+  "name": "Hafertätschli",
+  "category": "Vegetarische Hauptgerichte",
+  "timeMinutes": 30,
+  "tags": [
+    "Vegetarisch"
+  ],
+  "weatherType": "neutral",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Herzhafte Haferflocken-Tätschli mit Rüebli, Zwiebeln und Kräutern.",
+  "ingredients": [
+    {
+      "name": "Haferflocken",
+      "amount": 2,
+      "unit": "Tassen",
+      "perPortions": 4
+    },
+    {
+      "name": "Milch",
+      "amount": 1,
+      "unit": "Tasse",
+      "perPortions": 4
+    },
+    {
+      "name": "Rüebli",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Ei",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Petersilie",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Weggli",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Paniermehl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Haferflocken und Weggli in Milch einweichen.",
+    "Zwiebeln, Rüebli, Petersilie hacken, kurz andämpfen.",
+    "Alles vermischen, Ei einrühren, würzen. Bei Bedarf Paniermehl dazugeben.",
+    "Tätschli formen, in Bratbutter je 2–3 Min. pro Seite braten."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

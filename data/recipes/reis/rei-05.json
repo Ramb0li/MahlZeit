@@ -3,28 +3,43 @@
   "name": "Mexikanischer Reissalat",
   "category": "Salate & Bowls",
   "timeMinutes": 20,
+  "tags": [
+    "Vegetarisch",
+    "Vegan",
+    "Mexikanisch"
+  ],
+  "weatherType": "warm",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Bunter Reissalat mit Bohnen, Mais, Avocado und Limetten-Dressing.",
   "ingredients": [
     {
-      "name": "Langkornreis",
-      "amount": 280,
+      "name": "Vollkornreis (Resten)",
+      "amount": 300,
       "unit": "g",
       "perPortions": 4
     },
     {
-      "name": "Mais (Dose)",
-      "amount": 200,
-      "unit": "g",
+      "name": "Kidneybohnen (Dose)",
+      "amount": 1,
+      "unit": "Dose",
       "perPortions": 4
     },
     {
-      "name": "Schwarze Bohnen (Dose)",
-      "amount": 400,
-      "unit": "g",
+      "name": "Mais (Glas)",
+      "amount": 1,
+      "unit": "Glas",
       "perPortions": 4
     },
     {
-      "name": "Paprika",
-      "amount": 2,
+      "name": "Avocado",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Frühlingszwiebel",
+      "amount": 1,
       "unit": "Stk",
       "perPortions": 4
     },
@@ -35,30 +50,26 @@
       "perPortions": 4
     },
     {
-      "name": "Limettensaft",
-      "amount": 2,
-      "unit": "EL",
+      "name": "Limette",
+      "amount": 1,
+      "unit": "Stk",
       "perPortions": 4
     },
     {
       "name": "Olivenöl",
-      "amount": 3,
+      "amount": 2,
       "unit": "EL",
       "perPortions": 4
     }
   ],
-  "weatherType": "warm",
-  "source": "Rezept von Cuiselin",
-  "basePortions": 4,
-  "description": "Bunter Reissalat mit mexikanischen Aromen.",
-  "steps": [],
+  "steps": [
+    "Dressing: Olivenöl, Limettensaft, Kreuzkümmel, Chili, Salz, Pfeffer verrühren.",
+    "Reis, Bohnen, Mais mischen.",
+    "Avocado würfeln, Frühlingszwiebel in Ringe, Koriander zerzupfen.",
+    "Alles mischen, Dressing darüber."
+  ],
   "tips": "",
   "imageUrl": null,
-  "tags": [
-    "Mealprep-geeignet",
-    "Mittagsgericht",
-    "Frühling",
-    "Sommer",
-    "Mexikanisch"
-  ]
+  "imageZutaten": null,
+  "imageKochen": null
 }

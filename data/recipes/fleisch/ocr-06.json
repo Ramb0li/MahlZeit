@@ -1,0 +1,68 @@
+{
+  "id": "ocr-06",
+  "name": "Chinesisches Ananaspoulet",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 30,
+  "tags": [
+    "Asiatisch"
+  ],
+  "weatherType": "warm",
+  "source": "Familien-Rezeptbuch (OCR)",
+  "basePortions": 4,
+  "description": "Saftiges Poulet mit Ananas in asiatischer Marinade.",
+  "ingredients": [
+    {
+      "name": "Pouletbrüstchen",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Ananasscheiben",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Ananassaft",
+      "amount": 1,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Sojasauce",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Maizena",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 2,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Öl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Marinade: Maizena, Öl, Sojasauce mischen. Poulet in Streifen, 30 Min. marinieren.",
+    "Portionsweise heiss anbraten, herausnehmen.",
+    "Ananasscheiben 10 Min. schmoren. Poulet herausnehmen.",
+    "Knoblauch andünsten, mit Ananassaft ablöschen.",
+    "Maizena/Wasser einrühren, aufkochen. Poulet und Ananas beifügen."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

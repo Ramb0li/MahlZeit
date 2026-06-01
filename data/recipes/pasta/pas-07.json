@@ -1,56 +1,77 @@
 {
   "id": "pas-07",
-  "name": "Älpler Magronen",
-  "category": "Pasta",
+  "name": "Älplermagronen",
+  "category": "Aufläufe & Gratins",
   "timeMinutes": 45,
+  "tags": [
+    "Vegetarisch",
+    "Schweizer",
+    "Herbst",
+    "Winter"
+  ],
+  "weatherType": "kalt",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Schweizer Klassiker: Magronen mit Kartoffeln, Käse, Rahm und Röstizwiebeln.",
   "ingredients": [
     {
-      "name": "Hörnli",
-      "amount": 320,
-      "unit": "g",
+      "name": "Kernser Älplermagronen",
+      "amount": 1,
+      "unit": "Packung",
       "perPortions": 4
     },
     {
       "name": "Kartoffeln",
-      "amount": 400,
-      "unit": "g",
-      "perPortions": 4
-    },
-    {
-      "name": "Rahm",
-      "amount": 200,
-      "unit": "ml",
-      "perPortions": 4
-    },
-    {
-      "name": "Gruyère (gerieben)",
-      "amount": 150,
-      "unit": "g",
-      "perPortions": 4
-    },
-    {
-      "name": "Zwiebeln (für Röstzwiebeln)",
-      "amount": 2,
+      "amount": 5,
       "unit": "Stk",
       "perPortions": 4
     },
     {
-      "name": "Apfelmus",
+      "name": "Sbrinz, gerieben",
       "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Greyerzer, gerieben",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Vollrahm",
+      "amount": 5,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Halbrahm",
+      "amount": 2,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebeln",
+      "amount": 5,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 100,
       "unit": "g",
       "perPortions": 4
     }
   ],
-  "weatherType": "kalt",
-  "source": "Rezept von Cuiselin",
-  "basePortions": 4,
-  "description": "Schweizer Klassiker vom Berg.",
-  "steps": [],
+  "steps": [
+    "Kartoffeln würfeln. Wasser mit Salz aufkochen, Kartoffeln beifügen. Teigwaren kochen.",
+    "Zwiebeln in Butter knusprig braten.",
+    "Abgeschüttete Teigwaren lagenweise mit Käse in Gratinform, Rahm darüber.",
+    "Bei 100–150°C 15 Min. warmhalten.",
+    "Gut mischen, Zwiebelringe drauf. Mit Apfelmus servieren."
+  ],
   "tips": "",
   "imageUrl": null,
-  "tags": [
-    "Herbst",
-    "Winter",
-    "Schweizer"
-  ]
+  "imageZutaten": null,
+  "imageKochen": null
 }

@@ -1,0 +1,74 @@
+{
+  "id": "fam-03",
+  "name": "Blechkuchen",
+  "category": "Desserts & Süsses",
+  "timeMinutes": 30,
+  "tags": [
+    "Vegetarisch"
+  ],
+  "weatherType": "neutral",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 12,
+  "description": "Saftiger Schoggiblechkuchen mit Kakao-Butter-Glasur.",
+  "ingredients": [
+    {
+      "name": "Mehl",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Zucker",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Kakaopulver",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 12
+    },
+    {
+      "name": "Eier",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 12
+    },
+    {
+      "name": "Milch",
+      "amount": 2,
+      "unit": "dl",
+      "perPortions": 12
+    },
+    {
+      "name": "Butter (flüssig)",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Backpulver",
+      "amount": 0.5,
+      "unit": "Päckli",
+      "perPortions": 12
+    },
+    {
+      "name": "Puderzucker",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 12
+    }
+  ],
+  "steps": [
+    "Mehl, Zucker, Kakao, Eier, Milch, Butter und Backpulver mischen.",
+    "Auf grosses Backblech verteilen, 15 Min. bei 180°C backen.",
+    "10 Min. abkühlen lassen.",
+    "Glasur aus Puderzucker, Kakao, Vanillezucker, Butter und Kaffee rühren.",
+    "Auf noch warmen Kuchen geben, Kokosraspeln darüber, in Würfel schneiden."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

@@ -1,0 +1,72 @@
+{
+  "id": "fam-60",
+  "name": "Kalbfleisch mit Irish-Coffee-Sauce",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 60,
+  "tags": [],
+  "weatherType": "kalt",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Zartes Kalbsnierstück im Sud gegart, mit Kaffeebohnen-Whisky-Sauce.",
+  "ingredients": [
+    {
+      "name": "Kalbsnierstück",
+      "amount": 1,
+      "unit": "kg",
+      "perPortions": 4
+    },
+    {
+      "name": "Fleischbouillon",
+      "amount": 2,
+      "unit": "L",
+      "perPortions": 4
+    },
+    {
+      "name": "Lauch",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Karotte",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Saucen-Halbrahm",
+      "amount": 1.8,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Vollrahm",
+      "amount": 1,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Kaffeebohnen",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Whisky",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Sud aufkochen (Bouillon, Lauch, Rüebli, Zwiebel, Pfeffer, Petersilie), 10 Min. köcheln.",
+    "Kalbfleisch in leicht siedenden Sud geben, offen 45 Min. ziehen lassen.",
+    "Sud auf Hälfte einkochen, Rahm und Kaffeebohnen beifügen, 10 Min. köcheln.",
+    "Whisky beifügen, würzen.",
+    "Fleisch quer aufschneiden, Sauce dazu servieren."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

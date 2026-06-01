@@ -1,0 +1,54 @@
+{
+  "id": "ocr-08",
+  "name": "Feigenrezept mit warmem Ziegenkäse",
+  "category": "Snacks & Vorspeisen",
+  "timeMinutes": 25,
+  "tags": [],
+  "weatherType": "neutral",
+  "source": "Familien-Rezeptbuch (OCR)",
+  "basePortions": 4,
+  "description": "Reife Feigen mit Ziegenkäse und Rohschinken – elegant als Vorspeise.",
+  "ingredients": [
+    {
+      "name": "reife Feigen",
+      "amount": 8,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Ziegenkäse-Frischkäse",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Rohschinken",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Balsamico",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Honig",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Feigen halbieren, mit der Schnittfläche nach oben in feuerfeste Form legen.",
+    "Mit Ziegenkäse füllen, mit Rohschinken umwickeln.",
+    "15 Min. bei 40°C im Ofen erwärmen.",
+    "Mit Balsamico-Honig-Mix beträufeln, pfeffern.",
+    "Als Vorspeise mit Blattsalat servieren."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

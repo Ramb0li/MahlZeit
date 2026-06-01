@@ -1,0 +1,61 @@
+{
+  "id": "fam-05",
+  "name": "Bohnensalat",
+  "category": "Salate & Bowls",
+  "timeMinutes": 40,
+  "tags": [
+    "Vegetarisch",
+    "Vegan"
+  ],
+  "weatherType": "warm",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Warmer grüner Bohnensalat mit Senf-Dressing.",
+  "ingredients": [
+    {
+      "name": "grüne Bohnen",
+      "amount": 1,
+      "unit": "kg",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Senf",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Essig",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Rapsöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Bohnen rüsten, mit Bohnenkraut in Salzwasser 30 Min. kochen (Dampfkochtopf 8–12 Min.).",
+    "Dressing aus Senf, Essig, Öl, Salz, Pfeffer, Bohnenkraut rühren.",
+    "Heisse Bohnen mit Dressing mischen. 15 Min. ziehen lassen."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

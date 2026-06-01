@@ -1,0 +1,65 @@
+{
+  "id": "fam-21",
+  "name": "Kalbsgeschnetzeltes an Zitronenrahmsauce",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 25,
+  "tags": [],
+  "weatherType": "neutral",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Klassisches Kalbsgeschnetzeltes in feiner Zitronenrahmsauce.",
+  "ingredients": [
+    {
+      "name": "Kalbsgeschnetzeltes",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 60,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebeln",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 0.5,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Weisswein",
+      "amount": 1,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Rahm",
+      "amount": 5,
+      "unit": "dl",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Butter schmelzen, Zwiebeln und Knoblauch dünsten.",
+    "Fleisch und Mehl beifügen, anbraten.",
+    "Mit Zitronensaft und Wein ablöschen, Hälfte einkochen.",
+    "Rahm dazugiessen, 5 Min. köcheln. Würzen."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

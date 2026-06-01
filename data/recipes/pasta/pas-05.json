@@ -1,48 +1,57 @@
 {
   "id": "pas-05",
-  "name": "Napoli",
+  "name": "Spaghetti Napoli",
   "category": "Pasta",
-  "timeMinutes": 20,
+  "timeMinutes": 25,
+  "tags": [
+    "Vegetarisch",
+    "Vegan",
+    "Italienisch"
+  ],
+  "weatherType": "neutral",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Klassische Tomatensauce nach Hausrezept.",
   "ingredients": [
     {
-      "name": "Pasta",
-      "amount": 320,
-      "unit": "g",
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
       "perPortions": 4
     },
     {
-      "name": "Passierte Tomaten",
+      "name": "Tomatenpüree (Dose)",
+      "amount": 1,
+      "unit": "Dose",
+      "perPortions": 4
+    },
+    {
+      "name": "Pelati (Dose)",
+      "amount": 1,
+      "unit": "Dose",
+      "perPortions": 4
+    },
+    {
+      "name": "Bouillon",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Spaghetti",
       "amount": 400,
       "unit": "g",
       "perPortions": 4
-    },
-    {
-      "name": "Knoblauch",
-      "amount": 3,
-      "unit": "Zehen",
-      "perPortions": 4
-    },
-    {
-      "name": "Basilikum",
-      "amount": 1,
-      "unit": "Bund",
-      "perPortions": 4
-    },
-    {
-      "name": "Olivenöl",
-      "amount": 3,
-      "unit": "EL",
-      "perPortions": 4
     }
   ],
-  "weatherType": "neutral",
-  "source": "Rezept von Cuiselin",
-  "basePortions": 4,
-  "description": "Klassische Tomatensauce – simpel und gut.",
-  "steps": [],
+  "steps": [
+    "Zwiebel in Olivenöl andämpfen.",
+    "Tomatenpüree, Pelati, Bouillon beifügen.",
+    "Würzen (Ital. Kräuter, Salz, Pfeffer, All'Arrabbiata), 15–20 Min. köcheln.",
+    "Spaghetti al dente kochen."
+  ],
   "tips": "",
   "imageUrl": null,
-  "tags": [
-    "Mittagsgericht"
-  ]
+  "imageZutaten": null,
+  "imageKochen": null
 }

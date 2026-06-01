@@ -1,0 +1,74 @@
+{
+  "id": "fam-20",
+  "name": "Hörnligratin mit Räuchertofu und Lauch",
+  "category": "Aufläufe & Gratins",
+  "timeMinutes": 45,
+  "tags": [
+    "Vegetarisch"
+  ],
+  "weatherType": "kalt",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 6,
+  "description": "Cremiger Hörnligratin mit Räuchertofu, Lauch, Erbsen und Greyerzer.",
+  "ingredients": [
+    {
+      "name": "Urdinkel-Hörnli",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Räuchertofu",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Lauch",
+      "amount": 2,
+      "unit": "Stangen",
+      "perPortions": 6
+    },
+    {
+      "name": "Erbsen",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Rahm",
+      "amount": 4,
+      "unit": "dl",
+      "perPortions": 6
+    },
+    {
+      "name": "Greyerzer, gerieben",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Weisswein",
+      "amount": 2,
+      "unit": "dl",
+      "perPortions": 6
+    },
+    {
+      "name": "Petersilie",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 6
+    }
+  ],
+  "steps": [
+    "Hörnli in Salzwasser al dente kochen.",
+    "Räuchertofu goldbraun anbraten, beiseitestellen.",
+    "Lauch in Butter andünsten, mit Wein ablöschen. Rahm und Milch dazugeben, würzen. Erbsen hinzu.",
+    "Hörnli, Tofu, Petersilie, 2/3 Käse unter Sauce mischen. In Gratinform, restl. Käse drauf.",
+    "20 Min. bei 220°C gratinieren."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

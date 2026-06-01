@@ -1,0 +1,68 @@
+{
+  "id": "ocr-18",
+  "name": "Käse-Kräuter-Scones",
+  "category": "Snacks & Vorspeisen",
+  "timeMinutes": 25,
+  "tags": [
+    "Vegetarisch"
+  ],
+  "weatherType": "neutral",
+  "source": "Familien-Rezeptbuch (OCR)",
+  "basePortions": 11,
+  "description": "Warme, herzhafte Käse-Kräuter-Scones – ideal noch warm serviert.",
+  "ingredients": [
+    {
+      "name": "Mehl",
+      "amount": 450,
+      "unit": "g",
+      "perPortions": 11
+    },
+    {
+      "name": "Backpulver",
+      "amount": 1.5,
+      "unit": "Päckchen",
+      "perPortions": 11
+    },
+    {
+      "name": "Gruyère, gerieben",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 11
+    },
+    {
+      "name": "Ital. Kräuter",
+      "amount": 3,
+      "unit": "TL",
+      "perPortions": 11
+    },
+    {
+      "name": "Butter (kalt)",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 11
+    },
+    {
+      "name": "Milch",
+      "amount": 1.5,
+      "unit": "dl",
+      "perPortions": 11
+    },
+    {
+      "name": "Wasser",
+      "amount": 0.75,
+      "unit": "dl",
+      "perPortions": 11
+    }
+  ],
+  "steps": [
+    "Ofen auf 230°C, Blech mit Backpapier belegen.",
+    "Mehl, Backpulver, Salz, Käse, Kräuter mischen. Butter einbröseln.",
+    "Milch und Wasser rasch einkneten.",
+    "Auswalzen, Rondellen (5 cm) ausstechen. Mit Milch bestreichen, Käse drüber.",
+    "13–15 Min. goldgelb backen. Noch warm servieren."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

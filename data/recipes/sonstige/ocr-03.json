@@ -1,0 +1,63 @@
+{
+  "id": "ocr-03",
+  "name": "Apple Crumble",
+  "category": "Desserts & Süsses",
+  "timeMinutes": 40,
+  "tags": [
+    "Vegetarisch",
+    "Herbst"
+  ],
+  "weatherType": "kalt",
+  "source": "Familien-Rezeptbuch (OCR)",
+  "basePortions": 6,
+  "description": "Butterige Streusel über saftigen Äpfeln – warm serviert ein Gedicht.",
+  "ingredients": [
+    {
+      "name": "Äpfel",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Butter",
+      "amount": 140,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Mehl",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Gemahlene Mandeln",
+      "amount": 15,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "brauner Zucker",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Zimt",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 6
+    }
+  ],
+  "steps": [
+    "Ofen auf 180°C vorheizen, Auflaufform einbuttern.",
+    "Apfelstücke in Form geben, mit Zimt bestreuen.",
+    "Butter, Mehl, Mandeln, Zucker, Salz, Vanille mischen, Streusel formen.",
+    "Streusel auf Äpfeln verteilen, mit Mandeln bestreuen.",
+    "25 Min. backen. Warm servieren."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

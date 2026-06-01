@@ -3,56 +3,76 @@
   "name": "Spinat-Lasagne",
   "category": "Aufläufe & Gratins",
   "timeMinutes": 70,
+  "tags": [
+    "Vegetarisch",
+    "Mealprep-geeignet",
+    "Ofengericht",
+    "Herbst",
+    "Winter"
+  ],
+  "weatherType": "kalt",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Spinat-Lasagne mit Béchamelsauce und Sbrinz.",
   "ingredients": [
     {
+      "name": "TK-Blattspinat",
+      "amount": 600,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
       "name": "Lasagneblätter",
-      "amount": 250,
+      "amount": 9,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Sbrinz, gerieben",
+      "amount": 100,
       "unit": "g",
       "perPortions": 4
     },
     {
-      "name": "Spinat (TK)",
-      "amount": 500,
+      "name": "Kochbutter",
+      "amount": 50,
       "unit": "g",
       "perPortions": 4
     },
     {
-      "name": "Ricotta",
-      "amount": 250,
-      "unit": "g",
-      "perPortions": 4
-    },
-    {
-      "name": "Béchamelsauce",
-      "amount": 400,
-      "unit": "ml",
-      "perPortions": 4
-    },
-    {
-      "name": "Mozzarella",
-      "amount": 200,
-      "unit": "g",
-      "perPortions": 4
-    },
-    {
-      "name": "Muskatnuss",
+      "name": "Mehl",
       "amount": 1,
-      "unit": "Prise",
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Milch",
+      "amount": 5,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 1,
+      "unit": "Zehe",
       "perPortions": 4
     }
   ],
-  "weatherType": "kalt",
-  "source": "Rezept von Cuiselin",
-  "basePortions": 4,
-  "description": "Cremige Spinat-Ricotta Lasagne.",
-  "steps": [],
+  "steps": [
+    "Béchamel: Butter schmelzen, Mehl andünsten, mit Milch ablöschen. Aufkochen, 5 Min. rühren, würzen.",
+    "Zwiebeln glasig dünsten. Spinat 3 Min. mitdünsten, würzen.",
+    "Béchamel dazugiessen, aufkochen.",
+    "Form fetten. Blätter mit Spinatmasse abwechseln. Sbrinz drüber.",
+    "Bei 200–220°C 40–45 Min. backen."
+  ],
   "tips": "",
   "imageUrl": null,
-  "tags": [
-    "Mealprep-geeignet",
-    "Mittagsgericht",
-    "Herbst",
-    "Winter",
-    "Ofengericht"
-  ]
+  "imageZutaten": null,
+  "imageKochen": null
 }

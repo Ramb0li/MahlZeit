@@ -1,0 +1,84 @@
+{
+  "id": "ocr-04",
+  "name": "Bolognesesauce Marcello",
+  "category": "Pasta",
+  "timeMinutes": 75,
+  "tags": [],
+  "weatherType": "kalt",
+  "source": "Familien-Rezeptbuch (OCR)",
+  "basePortions": 4,
+  "description": "Klassische Bolognesesauce mit Rindsfleisch nach dem Rezept von Marcello.",
+  "ingredients": [
+    {
+      "name": "Rindsfleisch, gehackt",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebeln",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Rüebli, geraffelt",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Sellerie, geraffelt",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomaten, geschält",
+      "amount": 5,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomatenpüree",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Rotwein",
+      "amount": 1,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Bouillon",
+      "amount": 4,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Lorbeerblatt",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Fleisch in heissem Öl anbraten, würzen.",
+    "Zwiebeln, Knoblauch, Rüebli, Sellerie 5 Min. mitdämpfen.",
+    "Mit Wein ablöschen, einkochen.",
+    "Tomaten, Tomatenpüree und Bouillon beifügen.",
+    "1 Stunde köcheln lassen."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

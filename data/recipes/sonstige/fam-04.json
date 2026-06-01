@@ -1,0 +1,67 @@
+{
+  "id": "fam-04",
+  "name": "Blunschy-Kräutersauce",
+  "category": "Snacks & Vorspeisen",
+  "timeMinutes": 15,
+  "tags": [
+    "Vegetarisch"
+  ],
+  "weatherType": "neutral",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Cremige Kräutersauce à la Blunschy – ideal zu Fisch oder Ravioli.",
+  "ingredients": [
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Weisswein",
+      "amount": 2,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Bouillon",
+      "amount": 1,
+      "unit": "KL",
+      "perPortions": 4
+    },
+    {
+      "name": "Schnittlauch",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Petersilie",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Basilikum",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Rahm",
+      "amount": 5,
+      "unit": "dl",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Zwiebel andämpfen, mit Weisswein ablöschen.",
+    "Bouillon, Curry, Provence-Kräuter beifügen, einkochen.",
+    "Kräuter fein hacken, mit Rahm einrühren.",
+    "Würzen, kurz erhitzen."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

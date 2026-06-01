@@ -1,0 +1,63 @@
+{
+  "id": "fam-51",
+  "name": "Veganer Rahmspinat",
+  "category": "Vegetarische Hauptgerichte",
+  "timeMinutes": 20,
+  "tags": [
+    "Vegetarisch",
+    "Vegan"
+  ],
+  "weatherType": "neutral",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Cremiger veganer Rahmspinat mit Cashew-Rahm.",
+  "ingredients": [
+    {
+      "name": "Cashewnüsse",
+      "amount": 80,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "TK-Spinat, gehackt",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "vegane Butter",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 2,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüse-Bouillonpaste",
+      "amount": 0.25,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Cashews in 250 ml Wasser einweichen.",
+    "Zwiebel und Knoblauch hacken, in Butter andünsten.",
+    "Spinat beifügen, langsam erwärmen.",
+    "Cashews pürieren zu Rahm. Mit Bouillonpaste zum Spinat geben, aufkochen.",
+    "Mit Muskatnuss, Hefeflocken, Salz und Pfeffer würzen."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

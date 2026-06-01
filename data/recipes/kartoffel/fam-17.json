@@ -1,0 +1,50 @@
+{
+  "id": "fam-17",
+  "name": "Geschwellte Kartoffeln & Rösti",
+  "category": "Kartoffelgerichte",
+  "timeMinutes": 60,
+  "tags": [
+    "Vegetarisch",
+    "Schweizer"
+  ],
+  "weatherType": "kalt",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Schweizer Klassiker: Im Sud gekochte Kartoffeln und goldbraune Rösti.",
+  "ingredients": [
+    {
+      "name": "Kartoffeln",
+      "amount": 1,
+      "unit": "kg",
+      "perPortions": 4
+    },
+    {
+      "name": "Röstikartoffeln",
+      "amount": 1,
+      "unit": "kg",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Geschwellte: Kartoffeln waschen, in Salzwasser zugedeckt 30–50 Min. köcheln.",
+    "Rösti: Kartoffeln vorgekocht und ausgekühlt schälen, durch Röstiraffel reiben.",
+    "Butter schmelzen, Kartoffeln salzen. Zugedeckt 10 Min. braten.",
+    "Mit Deckel umdrehen, am Rand Butter dazugeben. Ungedeckt 10 Min. fertigbraten."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

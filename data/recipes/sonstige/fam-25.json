@@ -1,0 +1,55 @@
+{
+  "id": "fam-25",
+  "name": "Bärlauchbutter",
+  "category": "Snacks & Vorspeisen",
+  "timeMinutes": 10,
+  "tags": [
+    "Vegetarisch",
+    "Frühling"
+  ],
+  "weatherType": "neutral",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 6,
+  "description": "Aromatische Bärlauchbutter für Brot, Fleisch oder Grilladen.",
+  "ingredients": [
+    {
+      "name": "Butter (weich)",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Bärlauch, fein geschnitten",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Senf",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 6
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 3,
+      "unit": "TL",
+      "perPortions": 6
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 6
+    }
+  ],
+  "steps": [
+    "Butter schaumig rühren.",
+    "Bärlauch, Senf, Zitronensaft, Salz und Pfeffer beifügen, mixen.",
+    "In Alufolie einrollen, einfrieren."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

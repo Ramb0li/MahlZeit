@@ -1,0 +1,49 @@
+{
+  "id": "fam-47",
+  "name": "Tomaten-Bärlauch-Crostini",
+  "category": "Snacks & Vorspeisen",
+  "timeMinutes": 10,
+  "tags": [
+    "Vegetarisch",
+    "Frühling"
+  ],
+  "weatherType": "warm",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 6,
+  "description": "Knusprige Crostini mit Bärlauchbutter, Tomaten und Basilikum.",
+  "ingredients": [
+    {
+      "name": "Parisette/Baguette",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 6
+    },
+    {
+      "name": "Bärlauchbutter",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 6
+    },
+    {
+      "name": "Tomaten",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 6
+    },
+    {
+      "name": "Basilikum",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 6
+    }
+  ],
+  "steps": [
+    "Brot in Scheiben schneiden, toasten.",
+    "Mit Bärlauchbutter bestreichen.",
+    "Tomatenscheiben drauf, würzen, Basilikum darüber."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

@@ -81,16 +81,16 @@ See `.env.example`. Required for full functionality:
 - `JWT_SECRET` — Session signing (dev uses insecure fallback)
 - `UPSTASH_REDIS_REST_URL` + `UPSTASH_REDIS_REST_TOKEN` — Production persistence
 
-## Current Status (Stand 2026-05-31 – Update nach Phases 1–6)
+## Current Status (Stand 2026-06-01 – Update nach Phases 1–6)
 
 **Live:** https://mahlzeit.o-v-k.ch (Vercel, Upstash Redis, Resend).
 
 **Content:**
-- 95 Template-Rezepte in `data/recipes.json` (+21 Kindersnacks aus LittleFant-PDF, IDs `kds-01`–`kds-21`)
+- 172 Template-Rezepte in `data/recipes.json` (+77 neu importiert; davon 21 Kindersnacks aus LittleFant-PDF, IDs `kds-01`–`kds-21`)
 - 16 Rezepte mit Bildern in `public/images/recipes/` verlinkt (13 MahlZeit + 3 ältere)
 - 26 MahlZeit-Bilder + 20 Cuiselin-Bilder verfügbar — viele Cuiselin-Bilder noch nicht als Rezept angelegt
-- Kategorien erweitert: `Frühstück`, `Süsses`, `Brot & Aufstrich` (siehe `src/types/index.ts`, `RecipeList.tsx`, `RecipeForm.tsx`, `RecipePickerModal.tsx`)
-- Alle Kindersnacks: `dietCategory: 'vegan'`, `source: 'LittleFant – Kindersnacks für jeden Tag'`, `isMealprep: true`
+- Kategorien (13 gesamt): `Frühstück`, `Süsses`, `Brot & Aufstrich`, `Fleisch & Geflügel` (13 Rezepte), `Kartoffelgerichte` (5 Rezepte) und weitere (siehe `src/types/index.ts`, `RecipeList.tsx`, `RecipeForm.tsx`, `RecipePickerModal.tsx`)
+- Alle Kindersnacks: `tags: ['Vegan']`, `source: 'LittleFant – Kindersnacks für jeden Tag'`, Tag `'Mealprep-geeignet'`
 
 **Asset-Struktur** (außerhalb des Repos):
 ```

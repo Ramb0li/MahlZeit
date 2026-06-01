@@ -1,0 +1,71 @@
+{
+  "id": "fam-11",
+  "name": "Crevetten-Zucchetti-Sauce",
+  "category": "Fisch & Meeresfrüchte",
+  "timeMinutes": 35,
+  "tags": [],
+  "weatherType": "warm",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Würzige Crevetten-Sauce mit Zucchetti und Pelati – mariniert und pikant.",
+  "ingredients": [
+    {
+      "name": "Riesencrevetten",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zucchetti",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebeln",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 3,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Pelati (Dose)",
+      "amount": 1,
+      "unit": "Dose",
+      "perPortions": 4
+    },
+    {
+      "name": "Weisswein",
+      "amount": 1,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Rahm",
+      "amount": 1,
+      "unit": "Schuss",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Crevetten marinieren (Olivenöl, Zitronensaft, Meersalz, Sambal Oelek, 1–2 h).",
+    "Zucchetti in Scheiben, Zwiebeln andünsten, Zucchetti dazugeben, mit Mehl bestäuben.",
+    "Tomatenpüree, Knoblauch, Weisswein, Bouillon, Pelati beifügen. Würzen, köcheln.",
+    "Crevetten kurz anbraten, in Sauce geben. Rahm dazugeben, abschmecken."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

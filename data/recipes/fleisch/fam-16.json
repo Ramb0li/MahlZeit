@@ -1,0 +1,58 @@
+{
+  "id": "fam-16",
+  "name": "Geschnetzeltes Poulet mit Zitronenrahmsauce",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 30,
+  "tags": [],
+  "weatherType": "neutral",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Zartes Pouletgeschnetzeltes in aromatischer Zitronenrahmsauce.",
+  "ingredients": [
+    {
+      "name": "Pouletfleisch",
+      "amount": 600,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitrone",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Rahm",
+      "amount": 5,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Senf",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Maizena",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Weisswein",
+      "amount": 1,
+      "unit": "Schuss",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Poulet eine Nacht marinieren (Zitronensaft, Schale, Senf, Salz, Pfeffer, Sambal, Maizena, Wein).",
+    "Fleisch abtupfen, heiss in Bratbutter anbraten.",
+    "Zitronensaft und Schale dazugeben, einkochen. Rahm beifügen, würzen. 5 Min. köcheln."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

@@ -1,0 +1,66 @@
+{
+  "id": "fam-27",
+  "name": "Maissalat",
+  "category": "Salate & Bowls",
+  "timeMinutes": 10,
+  "tags": [
+    "Vegetarisch"
+  ],
+  "weatherType": "warm",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 4,
+  "description": "Schneller Maissalat mit Crème fraîche und Curry.",
+  "ingredients": [
+    {
+      "name": "Mais (Dose)",
+      "amount": 1,
+      "unit": "Dose",
+      "perPortions": 4
+    },
+    {
+      "name": "Crème fraîche",
+      "amount": 0.5,
+      "unit": "Becher",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Curry",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Essig",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Senf",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Mais abgiessen.",
+    "Crème fraîche, Curry, Essig, Senf, Salz, Pfeffer verrühren.",
+    "Mit Mais mischen."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

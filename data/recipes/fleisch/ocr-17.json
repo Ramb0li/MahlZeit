@@ -1,0 +1,71 @@
+{
+  "id": "ocr-17",
+  "name": "Lammwürfel an Paprika-Sauerrahmsauce",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 45,
+  "tags": [],
+  "weatherType": "kalt",
+  "source": "Familien-Rezeptbuch (OCR)",
+  "basePortions": 4,
+  "description": "Zartes Lammrückenfilet mit Peperoni-Crème-fraîche-Sauce.",
+  "ingredients": [
+    {
+      "name": "Lammrückenfilet",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Peperoni rot/gelb",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Peperoncino",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Noilly Prat / Sherry",
+      "amount": 0.5,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Weisswein",
+      "amount": 1,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Crème fraîche",
+      "amount": 2,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomatenpüree",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Lammwürfel schneiden, salzen, pfeffern. Sehr heiss 1.5–1 Min. anbraten. Bei 80°C 20 Min. nachgaren.",
+    "Bratensatz mit Noilly Prat und Wein auflösen. Crème fraîche eingiessen.",
+    "Zwiebeln, Knoblauch, Peperoni dünsten. Paprika und Tomatenpüree mitdünsten. Sauce 10 Min. einkochen.",
+    "Lammwürfel in Sauce geben, erhitzen. Mit Petersilie bestreuen."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}

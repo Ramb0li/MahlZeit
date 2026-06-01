@@ -1,0 +1,73 @@
+{
+  "id": "fam-02",
+  "name": "Birnen-Rucola-Salat mit Feta",
+  "category": "Salate & Bowls",
+  "timeMinutes": 15,
+  "tags": [
+    "Vegetarisch"
+  ],
+  "weatherType": "warm",
+  "source": "Familien-Rezeptbuch",
+  "basePortions": 2,
+  "description": "Rucola mit Birne, Feta, Pecannüssen und Tahini-Dressing.",
+  "ingredients": [
+    {
+      "name": "Rucola",
+      "amount": 2,
+      "unit": "Handvoll",
+      "perPortions": 2
+    },
+    {
+      "name": "Birne",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Feta",
+      "amount": 80,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Pecannüsse",
+      "amount": 1,
+      "unit": "Handvoll",
+      "perPortions": 2
+    },
+    {
+      "name": "Granatapfelkerne",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Tahini",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 2
+    }
+  ],
+  "steps": [
+    "Dressing aus Tahini, Zitronensaft, Olivenöl, Salz, Pfeffer mischen.",
+    "Rucola anrichten, Birne in Schnitze legen.",
+    "Feta zerbröckeln, Nüsse grob hacken, mit Granatapfelkernen verteilen.",
+    "Dressing darüber."
+  ],
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "tips": ""
+}
