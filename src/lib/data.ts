@@ -68,10 +68,10 @@ const EMPTY_WEATHER:    WeatherCache    = { lastUpdated: null, location: '', day
 
 export async function getTemplateRecipes(): Promise<Recipe[]> {
   if (!USE_REDIS) return readJson<Recipe[]>('recipes.json', seedRecipes as Recipe[]);
-  // Fix #1: In production always use the bundled seed — embedded at build time,
-  // guaranteed up-to-date after every deploy. Caching in Redis caused stale data
-  // whenever new template recipes were added (the old Redis value was returned).
-  return seedRecipes as Recipe[];
+  // Redis-first: admin edits write to Redis (mz:recipes).
+  // Fall back to bundled seed only when Redis is empty (first deploy or after manual clear).
+  const stored = await getRedis().get<Recipe[]>(K.recipesGlobal);
+  return stored ?? (seedRecipes as Recipe[]);
 }
 
 export async function saveTemplateRecipes(recipes: Recipe[]): Promise<void> {

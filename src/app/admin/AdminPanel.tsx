@@ -418,6 +418,9 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
               <button onClick={() => setShowImportModal(true)} className="mz-btn-soft">
                 Importieren
               </button>
+              <a href="/api/admin/recipes/export" download className="mz-btn-soft" style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}>
+                Export JSON
+              </a>
               <button onClick={() => setEditingRecipe('new')} className="mz-btn-primary">
                 + Neues Rezept
               </button>
