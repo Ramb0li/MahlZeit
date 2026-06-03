@@ -133,10 +133,14 @@ export function suggestWeek(
   );
 
   // Favoriten-Tag: wenn ≥3 definiert, einen zufälligen Dinner-Tag reservieren
+  // Leftovers-Tage ausschliessen, damit die Garantie immer erfüllt werden kann
   const favSet = new Set(favorites);
   const favDinnerPool = dinnerRecipes.filter(r => favSet.has(r.id));
-  const favoriteDayIndex = favDinnerPool.length >= 3
-    ? Math.floor(Math.random() * 7) + 1
+  const eligibleDays  = [1, 2, 3, 4, 5, 6, 7].filter(
+    d => !constraints.some(c => c.dayOfWeek === d && c.constraint === 'leftovers')
+  );
+  const favoriteDayIndex = favDinnerPool.length >= 3 && eligibleDays.length > 0
+    ? eligibleDays[Math.floor(Math.random() * eligibleDays.length)]
     : null;
 
   for (let day = 1; day <= 7; day++) {

@@ -29,6 +29,12 @@ const CAT_COLOR: Record<string, { bg: string; color: string }> = {
 
 type SafeUser = Omit<AppUser, 'passwordHash'>;
 
+type EditUserForm = {
+  plan:        'trial' | 'lifetime' | 'abo' | 'beta';
+  status:      'active' | 'inactive' | 'pending';
+  accessUntil: string;
+};
+
 const PLAN_LABEL: Record<string, string> = {
   trial:    '7-Tage Test',
   lifetime: 'Lifetime',
@@ -58,11 +64,6 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
   const [confirm,  setConfirm]  = useState<string | null>(null);
 
   // ── User bearbeiten ──────────────────────────────────────────────────────────
-  type EditUserForm = {
-    plan:        'trial' | 'lifetime' | 'abo' | 'beta';
-    status:      'active' | 'inactive' | 'pending';
-    accessUntil: string;
-  };
   const [editingUser,    setEditingUser]    = useState<SafeUser | null>(null);
   const [editUserSaving, setEditUserSaving] = useState(false);
   const [editUserForm,   setEditUserForm]   = useState<EditUserForm | null>(null);

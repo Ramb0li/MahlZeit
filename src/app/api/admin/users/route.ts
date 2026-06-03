@@ -34,17 +34,19 @@ export async function PATCH(request: Request) {
   const users = await getAllUsers();
   const user  = users.find((u) => u.email === body.email);
   if (!user) return NextResponse.json({ error: 'Nutzer nicht gefunden' }, { status: 404 });
-  const updated = {
+  const updated: typeof user = {
     ...user,
     ...(body.status ? { status: body.status } : {}),
     ...(body.plan   ? { plan:   body.plan   } : {}),
-    // Beta + Lifetime haben kein Ablaufdatum
-    ...((body.plan === 'lifetime' || body.plan === 'beta') ? { accessUntil: undefined } : {}),
-    // Admin kann accessUntil direkt setzen oder löschen (null = löschen)
-    ...(body.accessUntil !== undefined
-      ? { accessUntil: body.accessUntil ?? undefined }
-      : {}),
   };
+  // accessUntil: Reihenfolge ist wichtig — Plan-Regel gewinnt über expliziten Wert
+  if (body.plan === 'lifetime' || body.plan === 'beta') {
+    // Diese Pläne haben kein Ablaufdatum; expliziter accessUntil-Wert wird ignoriert
+    delete updated.accessUntil;
+  } else if (body.accessUntil !== undefined) {
+    // Admin setzt oder löscht Ablaufdatum für trial/abo
+    updated.accessUntil = body.accessUntil ?? undefined;
+  }
   await updateUser(updated);
   return NextResponse.json({ ok: true, user: updated });
 }

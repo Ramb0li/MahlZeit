@@ -61,9 +61,9 @@ export async function DELETE(request: Request) {
   if (!groupId || !recipeId)
     return NextResponse.json({ error: 'groupId und recipeId erforderlich.' }, { status: 400 });
 
-  const all      = await getRecipes(groupId);
-  const filtered = all.filter((r) => r.id !== recipeId);
-  if (filtered.length === all.length)
+  const custom  = await getGroupCustomRecipes(groupId);
+  const filtered = custom.filter((r) => r.id !== recipeId);
+  if (filtered.length === custom.length)
     return NextResponse.json({ error: 'Rezept nicht gefunden.' }, { status: 404 });
 
   await saveRecipes(filtered, groupId);
