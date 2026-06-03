@@ -207,7 +207,7 @@ export async function POST(request: Request) {
 
     const isPremium =
       session.status === 'active' &&
-      (session.plan === 'lifetime' || session.plan === 'abo');
+      (session.plan === 'lifetime' || session.plan === 'abo' || session.plan === 'beta');
 
     const body = await request.json() as {
       url?:         string;

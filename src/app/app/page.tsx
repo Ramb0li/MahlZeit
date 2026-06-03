@@ -45,7 +45,7 @@ export default async function AppPage({ searchParams }: PageProps) {
 
   const isPremium =
     session.status === 'active' &&
-    (session.plan === 'lifetime' || session.plan === 'abo');
+    (session.plan === 'lifetime' || session.plan === 'abo' || session.plan === 'beta');
 
   const groupRole = user?.groupRole ?? session.groupRole ?? 'member';
 

@@ -34,6 +34,7 @@ const PLAN_LABEL: Record<string, string> = {
   lifetime: 'Lifetime',
   abo:      'Monatsabo',
   yearly:   'Jahresabo',
+  beta:     'Beta-Tester',
 };
 
 const STATUS_COLOR: Record<string, { bg: string; color: string }> = {
@@ -55,6 +56,17 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
   const [users,    setUsers]    = useState<SafeUser[]>(initialUsers);
   const [loading,  setLoading]  = useState<string | null>(null);
   const [confirm,  setConfirm]  = useState<string | null>(null);
+
+  // ── User bearbeiten ──────────────────────────────────────────────────────────
+  type EditUserForm = {
+    plan:        'trial' | 'lifetime' | 'abo' | 'beta';
+    status:      'active' | 'inactive' | 'pending';
+    accessUntil: string;
+  };
+  const [editingUser,    setEditingUser]    = useState<SafeUser | null>(null);
+  const [editUserSaving, setEditUserSaving] = useState(false);
+  const [editUserForm,   setEditUserForm]   = useState<EditUserForm | null>(null);
+  const [editUserNotice, setEditUserNotice] = useState<{ type: 'ok' | 'err'; text: string } | null>(null);
   const router = useRouter();
 
   // ── Tab-State ───────────────────────────────────────────────────────────────
@@ -229,6 +241,60 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
       setRecipeNotice({ type: 'err', text: 'Netzwerkfehler.' });
     } finally {
       setSeeding(false);
+    }
+  };
+
+  const openEditUser = (u: SafeUser) => {
+    setEditingUser(u);
+    setEditUserForm({
+      plan:        (u.plan as EditUserForm['plan']) ?? 'trial',
+      status:      u.status,
+      accessUntil: u.accessUntil?.slice(0, 10) ?? '',
+    });
+    setEditUserNotice(null);
+  };
+
+  const saveEditUser = async () => {
+    if (!editingUser || !editUserForm) return;
+    setEditUserSaving(true);
+    setEditUserNotice(null);
+    try {
+      const body: Record<string, unknown> = {
+        email:  editingUser.email,
+        plan:   editUserForm.plan,
+        status: editUserForm.status,
+      };
+      if (editUserForm.plan === 'trial' || editUserForm.plan === 'abo') {
+        body.accessUntil = editUserForm.accessUntil || null;
+      }
+      const res  = await fetch('/api/admin/users', {
+        method:  'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body:    JSON.stringify(body),
+      });
+      const data = await res.json() as { ok?: boolean; error?: string };
+      if (!res.ok) {
+        setEditUserNotice({ type: 'err', text: data.error ?? 'Fehler beim Speichern.' });
+        return;
+      }
+      setUsers(prev => prev.map(u =>
+        u.email === editingUser.email
+          ? {
+              ...u,
+              plan:        editUserForm.plan,
+              status:      editUserForm.status,
+              accessUntil: (editUserForm.plan === 'trial' || editUserForm.plan === 'abo')
+                ? (editUserForm.accessUntil || undefined)
+                : undefined,
+            }
+          : u
+      ));
+      setEditUserNotice({ type: 'ok', text: 'Gespeichert.' });
+      setTimeout(() => { setEditingUser(null); setEditUserForm(null); setEditUserNotice(null); }, 1200);
+    } catch {
+      setEditUserNotice({ type: 'err', text: 'Netzwerkfehler.' });
+    } finally {
+      setEditUserSaving(false);
     }
   };
 
@@ -418,7 +484,13 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                         {admin ? (
                           <span style={{ fontSize: 12, fontStyle: 'italic', color: 'var(--muted)' }}>—</span>
                         ) : (
-                          <div style={{ display: 'flex', gap: 6 }}>
+                          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+                            <button
+                              onClick={() => openEditUser(u)}
+                              style={{ background: 'var(--bg-2)', color: 'var(--sage)', padding: '4px 10px', borderRadius: 6, fontSize: 12, fontWeight: 600 }}
+                            >
+                              Bearbeiten
+                            </button>
                             {u.status === 'active' ? (
                               <button
                                 onClick={() => patch(u.email, 'inactive')}
@@ -1142,6 +1214,105 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                   style={{ background: '#c62828', color: '#fff', padding: '9px 18px', borderRadius: 999, fontWeight: 700, fontSize: 14, opacity: loading ? .5 : 1 }}
                 >
                   {loading ? '…' : 'Löschen'}
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* ── Nutzer bearbeiten — Modal ────────────────────────────────────── */}
+        {editingUser && editUserForm && (
+          <div style={{ position: 'fixed', inset: 0, zIndex: 50, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(39,31,26,.5)' }}>
+            <div style={{ borderRadius: 'var(--r-card)', padding: 28, width: '100%', maxWidth: 440, boxShadow: 'var(--shadow-lg)', background: 'var(--card)' }}>
+
+              {/* Header */}
+              <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: 20 }}>
+                <div>
+                  <h3 style={{ fontWeight: 700, fontSize: 15, color: 'var(--ink)', margin: 0 }}>Nutzer bearbeiten</h3>
+                  <div style={{ fontSize: 12, color: 'var(--muted)', marginTop: 3 }}>
+                    {editingUser.firstName} {editingUser.lastName} · {editingUser.email}
+                  </div>
+                </div>
+                <button
+                  onClick={() => { setEditingUser(null); setEditUserForm(null); setEditUserNotice(null); }}
+                  style={{ color: 'var(--muted)', fontSize: 18, lineHeight: 1, marginLeft: 12 }}
+                >✕</button>
+              </div>
+
+              {/* Plan */}
+              <div style={{ marginBottom: 14 }}>
+                <label style={{ fontSize: 11, fontWeight: 700, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '.06em', display: 'block', marginBottom: 6 }}>
+                  Plan
+                </label>
+                <select
+                  value={editUserForm.plan}
+                  onChange={e => setEditUserForm(prev => prev && ({ ...prev, plan: e.target.value as EditUserForm['plan'] }))}
+                  style={{ width: '100%', border: '1px solid var(--border)', background: 'var(--bg)', color: 'var(--ink)', borderRadius: 8, padding: '8px 10px', fontSize: 13, outline: 'none' }}
+                >
+                  <option value="trial">7-Tage Test</option>
+                  <option value="lifetime">Lifetime</option>
+                  <option value="abo">Monatsabo</option>
+                  <option value="beta">Beta-Tester</option>
+                </select>
+              </div>
+
+              {/* Status */}
+              <div style={{ marginBottom: 14 }}>
+                <label style={{ fontSize: 11, fontWeight: 700, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '.06em', display: 'block', marginBottom: 6 }}>
+                  Status
+                </label>
+                <select
+                  value={editUserForm.status}
+                  onChange={e => setEditUserForm(prev => prev && ({ ...prev, status: e.target.value as EditUserForm['status'] }))}
+                  style={{ width: '100%', border: '1px solid var(--border)', background: 'var(--bg)', color: 'var(--ink)', borderRadius: 8, padding: '8px 10px', fontSize: 13, outline: 'none' }}
+                >
+                  <option value="active">Aktiv</option>
+                  <option value="inactive">Inaktiv</option>
+                  <option value="pending">Ausstehend</option>
+                </select>
+              </div>
+
+              {/* accessUntil — nur für trial/abo */}
+              {(editUserForm.plan === 'trial' || editUserForm.plan === 'abo') && (
+                <div style={{ marginBottom: 14 }}>
+                  <label style={{ fontSize: 11, fontWeight: 700, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '.06em', display: 'block', marginBottom: 6 }}>
+                    Zugang bis <span style={{ fontWeight: 400, textTransform: 'none' }}>(leer = kein Ablaufdatum)</span>
+                  </label>
+                  <input
+                    type="date"
+                    value={editUserForm.accessUntil}
+                    onChange={e => setEditUserForm(prev => prev && ({ ...prev, accessUntil: e.target.value }))}
+                    style={{ width: '100%', border: '1px solid var(--border)', background: 'var(--bg)', color: 'var(--ink)', borderRadius: 8, padding: '8px 10px', fontSize: 13, outline: 'none', boxSizing: 'border-box' }}
+                  />
+                </div>
+              )}
+
+              {/* Notice */}
+              {editUserNotice && (
+                <div style={{
+                  marginBottom: 14, padding: '8px 12px', borderRadius: 'var(--r-sm)', fontSize: 13,
+                  ...(editUserNotice.type === 'ok'
+                    ? { background: '#e8f5e9', color: '#2e7d32' }
+                    : { background: '#fce4ec', color: '#c62828' }),
+                }}>
+                  {editUserNotice.text}
+                </div>
+              )}
+
+              {/* Actions */}
+              <div style={{ display: 'flex', gap: 10, justifyContent: 'flex-end' }}>
+                <button
+                  onClick={() => { setEditingUser(null); setEditUserForm(null); setEditUserNotice(null); }}
+                  className="mz-btn-soft"
+                >
+                  Abbrechen
+                </button>
+                <button
+                  onClick={saveEditUser}
+                  disabled={editUserSaving}
+                  className="mz-btn-primary"
+                >
+                  {editUserSaving ? 'Speichern…' : 'Speichern'}
                 </button>
               </div>
             </div>

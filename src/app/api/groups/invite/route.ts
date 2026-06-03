@@ -23,7 +23,7 @@ export async function POST(request: Request) {
     }
 
     // Nur zahlende Pläne dürfen einladen
-    if (session.plan !== 'lifetime' && session.plan !== 'abo') {
+    if (session.plan !== 'lifetime' && session.plan !== 'abo' && session.plan !== 'beta') {
       return NextResponse.json({ error: 'Einladungen sind nur für Lifetime- und Abo-Nutzer verfügbar.' }, { status: 403 });
     }
 

@@ -26,9 +26,10 @@ export async function PATCH(request: Request) {
     return NextResponse.json({ error: 'Nicht autorisiert' }, { status: 403 });
   }
   const body = await request.json() as {
-    email:    string;
-    status?:  'active' | 'inactive';
-    plan?:    'trial' | 'lifetime' | 'abo';
+    email:        string;
+    status?:      'active' | 'inactive' | 'pending';
+    plan?:        'trial' | 'lifetime' | 'abo' | 'beta';
+    accessUntil?: string | null;
   };
   const users = await getAllUsers();
   const user  = users.find((u) => u.email === body.email);
@@ -37,8 +38,12 @@ export async function PATCH(request: Request) {
     ...user,
     ...(body.status ? { status: body.status } : {}),
     ...(body.plan   ? { plan:   body.plan   } : {}),
-    // Lifetime hat keinen accessUntil — wenn auf lifetime gewechselt wird, entfernen
-    ...(body.plan === 'lifetime' ? { accessUntil: undefined } : {}),
+    // Beta + Lifetime haben kein Ablaufdatum
+    ...((body.plan === 'lifetime' || body.plan === 'beta') ? { accessUntil: undefined } : {}),
+    // Admin kann accessUntil direkt setzen oder löschen (null = löschen)
+    ...(body.accessUntil !== undefined
+      ? { accessUntil: body.accessUntil ?? undefined }
+      : {}),
   };
   await updateUser(updated);
   return NextResponse.json({ ok: true, user: updated });
