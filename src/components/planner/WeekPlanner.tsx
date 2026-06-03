@@ -144,22 +144,26 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe }: We
       return r?.imageUrl ?? null;
     };
 
-    // Header background
-    doc.setFillColor(...C.sage);
-    doc.rect(0, 0, pageW, 22, 'F');
+    // Header — heller Hintergrund mit dunklem Text
+    doc.setFillColor(...C.sageLt);
+    doc.rect(0, 0, pageW, 12, 'F');
 
     // Logo text
     doc.setFont('helvetica', 'bold');
     doc.setFontSize(14);
-    doc.setTextColor(...C.white);
-    doc.text('MahlZeit', margin, 14);
+    doc.setTextColor(...C.text);
+    doc.text('MahlZeit', margin, 9);
     doc.setFont('helvetica', 'normal');
     doc.setFontSize(9);
-    doc.setTextColor(200, 230, 200);
+    doc.setTextColor(...C.textMuted);
 
     const dateFrom = weekDays[0] ? format(weekDays[0], 'd. MMM', { locale: de }) : '';
     const dateTo   = weekDays[6] ? format(weekDays[6], 'd. MMM yyyy', { locale: de }) : '';
-    doc.text(`Wochenplan · KW ${kwNum} · ${dateFrom} – ${dateTo}`, margin + 28, 14);
+    doc.text(`Wochenplan · KW ${kwNum} · ${dateFrom} – ${dateTo}`, margin + 28, 9);
+
+    // Dünner Akzent-Streifen unterhalb Header
+    doc.setFillColor(...C.sage);
+    doc.rect(0, 12, pageW, 2.5, 'F');
 
     // Meal rows config
     const allMealRows: { key: 'breakfast'|'lunch'|'dinner'; label: string; show: boolean }[] = [
@@ -170,7 +174,7 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe }: We
     const mealRows = allMealRows.filter(r => r.show);
 
     const numRows = mealRows.length || 1;
-    const startY  = 27;
+    const startY  = 18;
     const gridH   = usableH - (startY - margin);
     const rowH    = gridH / numRows;
     const labelW  = 20;

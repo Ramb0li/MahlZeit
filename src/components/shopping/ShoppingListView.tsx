@@ -242,11 +242,8 @@ export function ShoppingListView() {
       // Category header
       doc.setFillColor(...sageLt);
       doc.rect(x - 2, y - 3, colW + 4, 8, 'F');
-      doc.setDrawColor(...border);
-      doc.setLineWidth(0.2);
-      doc.rect(x - 2, y - 3, colW + 4, 8, 'S');
       doc.setFont('helvetica', 'bold');
-      doc.setFontSize(8);
+      doc.setFontSize(7.5);
       doc.setTextColor(...textD);
       doc.text(cat.toUpperCase(), x, y + 2);
       advY(10);
@@ -286,7 +283,7 @@ export function ShoppingListView() {
         if (it.qty) {
           doc.setFont('helvetica', 'bold');
           doc.setFontSize(8);
-          doc.setTextColor(...textM);
+          doc.setTextColor(...sage);
           doc.text(it.qty, ix + colW, iy, { align: 'right' });
         }
         advY(nameLines.length * 4.5 + 1);
