@@ -1,7 +1,11 @@
+export const dynamic = 'force-dynamic';
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { Check, Leaf, Clock, Flame } from 'lucide-react';
 import { LandingBleed } from '@/components/landing/LandingBleed';
+import { getLandingContent } from '@/lib/content';
+import type { LandingFeature } from '@/lib/content';
 
 const COLLAGE = [
   { cls: 'mz-cc1', src: '/images/recipes/cuiselin-taboule.jpeg',             alt: 'Taboulé'           },
@@ -25,68 +29,30 @@ const WEEK = [
   { name: 'So', meal: 'Linsensuppe',     sub: '25 min' },
 ].map(d => ({ ...d, today: d.name === todayShort }));
 
-const REVIEWS = [
-  { text: '«Endlich plane ich die Woche durch — kein tägliches Grübeln mehr. Die Einkaufsliste spart mir jedes Mal Zeit.»', name: 'Sarah M.',  role: 'Mutter, Basel'     },
-  { text: '«Ich esse seit MahlZeit viel abwechslungsreicher. Die Rezeptvorschläge passen wirklich zu mir — und alles ist vegan.»', name: 'Lukas B.',  role: 'Student, Zürich'   },
-  { text: '«Das UI ist aufgeräumt und es läuft. Ich habe viele Apps ausprobiert — MahlZeit ist die erste, die ich täglich nutze.»', name: 'Mia K.',    role: 'Grafikerin, Bern'  },
-];
+/** Renders a feature text with an optional inline link injected at link.text. */
+function renderFeatureText(f: LandingFeature) {
+  if (!f.link) return f.text;
+  const idx = f.text.indexOf(f.link.text);
+  if (idx === -1) return f.text;
+  return (
+    <>
+      {f.text.slice(0, idx)}
+      <a
+        href={f.link.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ color: 'var(--accent)', textDecoration: 'none', fontWeight: 600 }}
+      >
+        {f.link.text}
+      </a>
+      {f.text.slice(idx + f.link.text.length)}
+    </>
+  );
+}
 
-const PLANS = [
-  {
-    badge: 'Gratis starten', name: 'Testwoche', cur: 'CHF', amount: '0', per: '7 Tage kostenlos',
-    desc: 'Voller Zugang. Kein Kreditkarteneintrag.',
-    features: ['Wochenplaner', 'Rezeptbibliothek', 'Einkaufsliste', 'KI-Vorschläge'],
-    href: '/auth?plan=trial', featured: false,
-  },
-  {
-    badge: 'Flexibel', name: 'Monatsabo', cur: 'CHF', amount: '3', per: '/ Monat · kündbar',
-    desc: 'Monatlich kündbar.',
-    features: ['Alles aus Testwoche', 'Unbegrenzte Rezepte', 'KI Menü-Import', 'Kündigung jederzeit'],
-    href: '/auth?plan=abo', featured: false,
-  },
-  {
-    badge: 'Beliebteste Wahl', name: 'Lifetime', cur: 'CHF', amount: '99', per: 'einmalig · für immer',
-    desc: 'Einmal zahlen, für immer nutzen. Alle Updates inklusive.',
-    features: ['Alles aus Jahresabo', 'Alle zukünftigen Features', 'Keine Folgekosten', 'Priority Support'],
-    href: '/auth?plan=lifetime', featured: true,
-  },
-  {
-    badge: 'Bester Wert', name: 'Jahresabo', cur: 'CHF', amount: '30', per: '/ Jahr · 2 Monate gratis',
-    desc: 'Spare gegenüber dem Monatsabo.',
-    features: ['Alles aus Monatsabo', 'Priorisierter Support', '2 Monate gespart'],
-    href: '/auth?plan=yearly', featured: false,
-  },
-];
+export default async function LandingPage() {
+  const { reviews, features, plans } = await getLandingContent();
 
-// Features mit React.ReactNode für Link im Rezeptbibliothek-Text
-const FEATURES: { n: string; title: string; text: React.ReactNode }[] = [
-  {
-    n: '01', title: 'Smarte Vorschläge',
-    text: 'MahlZeit schlägt Gerichte vor, die zu deinen Vorlieben, der Saison und dem Wetter passen. Kein Kopfzerbrechen mehr.',
-  },
-  {
-    n: '02', title: 'Wochenplaner',
-    text: 'Plane Wochen im Voraus, in der Wochenübersicht alle Mahlzeiten, übersichtlich dargestellt. Änderungen aktualisieren deine Einkaufslisten sofort und automatisch.',
-  },
-  {
-    n: '03', title: 'Rezeptbibliothek',
-    text: (
-      <>
-        170+ Rezepte von{' '}
-        <a href="https://www.instagram.com/cuiseline/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)', textDecoration: 'none', fontWeight: 600 }}>
-          @cuiseline
-        </a>
-        , kuratiert und laufend erweitert. Speichere deine Lieblingsrezepte mit Anleitungen, Zutaten und Variationen mithilfe unserem KI Tool, welches Fotos oder Rezepte automatisch erkennt und einliest.
-      </>
-    ),
-  },
-  {
-    n: '04', title: 'Automatische Einkaufsliste',
-    text: 'Alle Zutaten zusammengefasst, nach Regal sortiert, mit dem ganzen Haushalt geteilt.',
-  },
-];
-
-export default function LandingPage() {
   return (
     <div className="mz-lp">
 
@@ -161,11 +127,11 @@ export default function LandingPage() {
           Alles, was du für<br />deine Woche <em>brauchst.</em>
         </h2>
         <div className="mz-lp-feat-grid">
-          {FEATURES.map(({ n, title, text }) => (
-            <div key={n} className="mz-lp-feat">
-              <div className="mz-lp-feat-num">{n}</div>
-              <h3>{title}</h3>
-              <p>{text}</p>
+          {features.map((f) => (
+            <div key={f.n} className="mz-lp-feat">
+              <div className="mz-lp-feat-num">{f.n}</div>
+              <h3>{f.title}</h3>
+              <p>{renderFeatureText(f)}</p>
             </div>
           ))}
         </div>
@@ -229,7 +195,7 @@ export default function LandingPage() {
           Was <em>andere</em> sagen.
         </h2>
         <div className="mz-lp-rev-grid" style={{ marginTop: 32 }}>
-          {REVIEWS.map(({ text, name, role }) => (
+          {reviews.map(({ text, name, role }) => (
             <div key={name} className="mz-lp-rev">
               <div className="mz-lp-stars">
                 {[...Array(5)].map((_, i) => (
@@ -260,7 +226,7 @@ export default function LandingPage() {
           Einfach. Fair. <em>Dein</em> Preis.
         </h2>
         <div className="mz-lp-plans">
-          {PLANS.map((p) => (
+          {plans.map((p) => (
             <div key={p.name} className={`mz-lp-plan${p.featured ? ' featured' : ''}`}>
               <span className="mz-lp-plan-badge">{p.badge}</span>
               <div className="mz-lp-plan-name">{p.name}</div>

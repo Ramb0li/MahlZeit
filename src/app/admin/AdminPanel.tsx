@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { useRouter }         from 'next/navigation';
 import Link                  from 'next/link';
 import { RecipeForm }        from '@/components/recipes/RecipeForm';
@@ -8,6 +8,7 @@ import { ImportRecipeModal } from '@/components/recipes/ImportRecipeModal';
 import type { AppUser }      from '@/lib/users';
 import type { Group }        from '@/lib/groups';
 import type { Recipe, Category } from '@/types';
+import type { LandingContent, LandingFeature } from '@/lib/content';
 
 // Kategoriefarben für Badges — kategorienspezifisch, bleiben als Hex
 const CAT_COLOR: Record<string, { bg: string; color: string }> = {
@@ -57,7 +58,40 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
   const router = useRouter();
 
   // ── Tab-State ───────────────────────────────────────────────────────────────
-  const [activeTab, setActiveTab] = useState<'users' | 'recipes'>('users');
+  const [activeTab, setActiveTab] = useState<'users' | 'recipes' | 'landing'>('users');
+
+  // ── Landing Content State ────────────────────────────────────────────────────
+  const [landingContent, setLandingContent] = useState<LandingContent | null>(null);
+  const [landingSaving,  setLandingSaving]  = useState(false);
+  const [landingNotice,  setLandingNotice]  = useState<{ type: 'ok' | 'err'; text: string } | null>(null);
+
+  useEffect(() => {
+    if (activeTab !== 'landing' || landingContent !== null) return;
+    fetch('/api/admin/content')
+      .then(r => r.json())
+      .then(data => setLandingContent(data))
+      .catch(() => setLandingNotice({ type: 'err', text: 'Fehler beim Laden der Landing-Inhalte.' }));
+  }, [activeTab, landingContent]);
+
+  const saveLanding = async () => {
+    if (!landingContent) return;
+    setLandingSaving(true);
+    try {
+      const res  = await fetch('/api/admin/content', {
+        method:  'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body:    JSON.stringify(landingContent),
+      });
+      const data = await res.json();
+      if (!res.ok) { setLandingNotice({ type: 'err', text: data.error ?? 'Fehler beim Speichern.' }); return; }
+      setLandingNotice({ type: 'ok', text: 'Landing Page gespeichert. Änderungen sind sofort live.' });
+      setTimeout(() => setLandingNotice(null), 4000);
+    } catch {
+      setLandingNotice({ type: 'err', text: 'Netzwerkfehler.' });
+    } finally {
+      setLandingSaving(false);
+    }
+  };
 
   // ── Rezepte-State ────────────────────────────────────────────────────────────
   const [recipes,         setRecipes]         = useState<Recipe[]>(initialRecipes);
@@ -181,15 +215,17 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
           <span style={{ fontFamily: 'var(--font-ui)', fontSize: 12, fontWeight: 600, color: 'var(--muted)', marginLeft: 8 }}>Admin</span>
         </div>
         <nav className="mz-topnav">
-          {(['users', 'recipes'] as const).map(tab => (
+          {([
+            { id: 'users'   as const, label: `Nutzer (${users.filter(u => !isAdmin(u.email)).length})` },
+            { id: 'recipes' as const, label: `Rezepte (${recipes.length})` },
+            { id: 'landing' as const, label: 'Landing' },
+          ]).map(({ id, label }) => (
             <button
-              key={tab}
-              onClick={() => setActiveTab(tab)}
-              className={`mz-topnav-btn${activeTab === tab ? ' on' : ''}`}
+              key={id}
+              onClick={() => setActiveTab(id)}
+              className={`mz-topnav-btn${activeTab === id ? ' on' : ''}`}
             >
-              {tab === 'users'
-                ? `Nutzer (${users.filter(u => !isAdmin(u.email)).length})`
-                : `Rezepte (${recipes.length})`}
+              {label}
             </button>
           ))}
         </nav>
@@ -457,6 +493,341 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                 }}
               />
             )}
+          </div>
+        )}
+
+        {/* ── Landing Content Tab ──────────────────────────────────────────── */}
+        {activeTab === 'landing' && (
+          <div>
+            {landingNotice && (
+              <div style={{
+                marginBottom: 16, padding: '10px 16px', borderRadius: 'var(--r-sm)', fontSize: 13,
+                ...(landingNotice.type === 'ok'
+                  ? { background: '#e8f5e9', color: '#2e7d32' }
+                  : { background: '#fce4ec', color: '#c62828' }),
+              }}>
+                {landingNotice.text}
+              </div>
+            )}
+
+            {!landingContent && !landingNotice && (
+              <div style={{ textAlign: 'center', padding: 48, color: 'var(--muted)', fontSize: 13 }}>Lade…</div>
+            )}
+
+            {landingContent && (() => {
+              const lc = landingContent;
+
+              const inputStyle: React.CSSProperties = {
+                border: '1px solid var(--border)', background: 'var(--bg)', color: 'var(--ink)',
+                borderRadius: 8, padding: '7px 10px', fontSize: 13, outline: 'none', width: '100%', boxSizing: 'border-box',
+              };
+              const taStyle: React.CSSProperties = {
+                ...inputStyle, resize: 'vertical' as const, fontFamily: 'inherit',
+              };
+              const labelStyle: React.CSSProperties = {
+                fontSize: 11, fontWeight: 600, color: 'var(--muted)',
+                textTransform: 'uppercase', letterSpacing: '.06em', display: 'block', marginBottom: 4,
+              };
+              const cardStyle: React.CSSProperties = {
+                background: 'var(--card)', border: '1px solid var(--border)',
+                borderRadius: 'var(--r-card)', padding: 16,
+              };
+              const sectionHeadStyle: React.CSSProperties = {
+                fontSize: 14, fontWeight: 700, color: 'var(--ink)', margin: '0 0 12px 0',
+              };
+
+              return (
+                <>
+                  {/* Header row */}
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 28 }}>
+                    <div>
+                      <h2 style={{ fontSize: 16, fontWeight: 700, color: 'var(--ink)', margin: 0 }}>Landing Page Inhalt</h2>
+                      <p style={{ fontSize: 12, color: 'var(--muted)', marginTop: 4, margin: '4px 0 0' }}>
+                        Testimonials, Features und Preispläne. Änderungen werden sofort live ohne Deployment.
+                      </p>
+                    </div>
+                    <button onClick={saveLanding} disabled={landingSaving} className="mz-btn-primary">
+                      {landingSaving ? 'Speichern…' : 'Speichern'}
+                    </button>
+                  </div>
+
+                  {/* ── Testimonials ── */}
+                  <div style={{ marginBottom: 36 }}>
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 12 }}>
+                      <h3 style={sectionHeadStyle}>Testimonials</h3>
+                      <button
+                        onClick={() => setLandingContent({ ...lc, reviews: [...lc.reviews, { name: '', text: '', role: '' }] })}
+                        className="mz-btn-soft"
+                        style={{ fontSize: 12 }}
+                      >
+                        + Hinzufügen
+                      </button>
+                    </div>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+                      {lc.reviews.map((r, i) => (
+                        <div key={i} style={cardStyle}>
+                          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginBottom: 10 }}>
+                            <div>
+                              <label style={labelStyle}>Name</label>
+                              <input
+                                value={r.name}
+                                onChange={e => {
+                                  const reviews = [...lc.reviews];
+                                  reviews[i] = { ...r, name: e.target.value };
+                                  setLandingContent({ ...lc, reviews });
+                                }}
+                                style={inputStyle}
+                                placeholder="Sarah M."
+                              />
+                            </div>
+                            <div>
+                              <label style={labelStyle}>Rolle</label>
+                              <input
+                                value={r.role}
+                                onChange={e => {
+                                  const reviews = [...lc.reviews];
+                                  reviews[i] = { ...r, role: e.target.value };
+                                  setLandingContent({ ...lc, reviews });
+                                }}
+                                style={inputStyle}
+                                placeholder="Mutter, Basel"
+                              />
+                            </div>
+                          </div>
+                          <div>
+                            <label style={labelStyle}>Zitat</label>
+                            <textarea
+                              value={r.text}
+                              rows={3}
+                              onChange={e => {
+                                const reviews = [...lc.reviews];
+                                reviews[i] = { ...r, text: e.target.value };
+                                setLandingContent({ ...lc, reviews });
+                              }}
+                              style={taStyle}
+                              placeholder="«Das war …»"
+                            />
+                          </div>
+                          {lc.reviews.length > 1 && (
+                            <div style={{ marginTop: 8, textAlign: 'right' }}>
+                              <button
+                                onClick={() => setLandingContent({ ...lc, reviews: lc.reviews.filter((_, j) => j !== i) })}
+                                style={{ background: 'var(--chip)', color: 'var(--muted)', padding: '4px 10px', borderRadius: 6, fontSize: 12, fontWeight: 600, border: '1px solid var(--border)' }}
+                              >
+                                Entfernen
+                              </button>
+                            </div>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* ── Features ── */}
+                  <div style={{ marginBottom: 36 }}>
+                    <h3 style={sectionHeadStyle}>Features</h3>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+                      {lc.features.map((f: LandingFeature, i: number) => (
+                        <div key={i} style={cardStyle}>
+                          <div style={{ display: 'grid', gridTemplateColumns: '44px 1fr', gap: 10, marginBottom: 10, alignItems: 'center' }}>
+                            <div style={{ background: 'var(--accent-tint)', color: 'var(--accent-ink)', borderRadius: 6, padding: '4px 8px', fontSize: 12, fontWeight: 700, textAlign: 'center' }}>
+                              {f.n}
+                            </div>
+                            <input
+                              value={f.title}
+                              onChange={e => {
+                                const features = [...lc.features];
+                                features[i] = { ...f, title: e.target.value };
+                                setLandingContent({ ...lc, features });
+                              }}
+                              style={{ ...inputStyle, fontWeight: 600 }}
+                              placeholder="Feature-Titel"
+                            />
+                          </div>
+                          <div style={{ marginBottom: 10 }}>
+                            <label style={labelStyle}>Text</label>
+                            <textarea
+                              value={f.text}
+                              rows={3}
+                              onChange={e => {
+                                const features = [...lc.features];
+                                features[i] = { ...f, text: e.target.value };
+                                setLandingContent({ ...lc, features });
+                              }}
+                              style={taStyle}
+                            />
+                          </div>
+                          <details>
+                            <summary style={{ fontSize: 12, color: 'var(--muted)', cursor: 'pointer', userSelect: 'none' }}>
+                              Inline-Link {f.link ? `(aktiv: ${f.link.text})` : '(keiner)'}
+                            </summary>
+                            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginTop: 8 }}>
+                              <div>
+                                <label style={labelStyle}>Link-Text (im Fliesstext)</label>
+                                <input
+                                  value={f.link?.text ?? ''}
+                                  onChange={e => {
+                                    const features = [...lc.features];
+                                    const lt = e.target.value;
+                                    features[i] = { ...f, link: lt ? { text: lt, url: f.link?.url ?? '' } : undefined };
+                                    setLandingContent({ ...lc, features });
+                                  }}
+                                  style={inputStyle}
+                                  placeholder="@cuiseline"
+                                />
+                              </div>
+                              <div>
+                                <label style={labelStyle}>Link-URL</label>
+                                <input
+                                  value={f.link?.url ?? ''}
+                                  onChange={e => {
+                                    const features = [...lc.features];
+                                    const lu = e.target.value;
+                                    const lt = f.link?.text ?? '';
+                                    features[i] = { ...f, link: lt ? { text: lt, url: lu } : undefined };
+                                    setLandingContent({ ...lc, features });
+                                  }}
+                                  style={inputStyle}
+                                  placeholder="https://…"
+                                />
+                              </div>
+                            </div>
+                          </details>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* ── Preise ── */}
+                  <div style={{ marginBottom: 36 }}>
+                    <h3 style={sectionHeadStyle}>Preispläne</h3>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(290px, 1fr))', gap: 12 }}>
+                      {lc.plans.map((p, i) => (
+                        <div key={i} style={{ ...cardStyle, borderColor: p.featured ? 'var(--accent)' : 'var(--border)' }}>
+                          {/* Badge + Featured */}
+                          <div style={{ display: 'flex', gap: 8, marginBottom: 8, alignItems: 'center' }}>
+                            <input
+                              value={p.badge}
+                              onChange={e => {
+                                const plans = [...lc.plans];
+                                plans[i] = { ...p, badge: e.target.value };
+                                setLandingContent({ ...lc, plans });
+                              }}
+                              style={{ ...inputStyle, fontSize: 11 }}
+                              placeholder="Badge (Bester Wert)"
+                            />
+                            <label style={{ display: 'flex', alignItems: 'center', gap: 4, fontSize: 12, color: 'var(--muted)', cursor: 'pointer', whiteSpace: 'nowrap' }}>
+                              <input
+                                type="checkbox"
+                                checked={p.featured}
+                                onChange={e => {
+                                  const plans = [...lc.plans];
+                                  plans[i] = { ...p, featured: e.target.checked };
+                                  setLandingContent({ ...lc, plans });
+                                }}
+                              />
+                              Featured
+                            </label>
+                          </div>
+                          {/* Name */}
+                          <input
+                            value={p.name}
+                            onChange={e => {
+                              const plans = [...lc.plans];
+                              plans[i] = { ...p, name: e.target.value };
+                              setLandingContent({ ...lc, plans });
+                            }}
+                            style={{ ...inputStyle, fontSize: 15, fontWeight: 700, marginBottom: 8 }}
+                            placeholder="Plan-Name"
+                          />
+                          {/* Price + per */}
+                          <div style={{ display: 'grid', gridTemplateColumns: '70px 1fr', gap: 8, marginBottom: 8 }}>
+                            <input
+                              value={p.amount}
+                              onChange={e => {
+                                const plans = [...lc.plans];
+                                plans[i] = { ...p, amount: e.target.value };
+                                setLandingContent({ ...lc, plans });
+                              }}
+                              style={{ ...inputStyle, fontSize: 20, fontWeight: 900, textAlign: 'center' }}
+                              placeholder="99"
+                            />
+                            <input
+                              value={p.per}
+                              onChange={e => {
+                                const plans = [...lc.plans];
+                                plans[i] = { ...p, per: e.target.value };
+                                setLandingContent({ ...lc, plans });
+                              }}
+                              style={{ ...inputStyle, fontSize: 12 }}
+                              placeholder="/ Monat · kündbar"
+                            />
+                          </div>
+                          {/* Description */}
+                          <textarea
+                            value={p.desc}
+                            rows={2}
+                            onChange={e => {
+                              const plans = [...lc.plans];
+                              plans[i] = { ...p, desc: e.target.value };
+                              setLandingContent({ ...lc, plans });
+                            }}
+                            style={{ ...taStyle, fontSize: 12, resize: 'none', marginBottom: 8 }}
+                            placeholder="Kurzbeschreibung"
+                          />
+                          {/* Features list */}
+                          <div>
+                            <label style={labelStyle}>Features</label>
+                            {p.features.map((feat, j) => (
+                              <div key={j} style={{ display: 'flex', gap: 6, marginBottom: 4 }}>
+                                <input
+                                  value={feat}
+                                  onChange={e => {
+                                    const plans = [...lc.plans];
+                                    const features = [...p.features];
+                                    features[j] = e.target.value;
+                                    plans[i] = { ...p, features };
+                                    setLandingContent({ ...lc, plans });
+                                  }}
+                                  style={{ ...inputStyle, fontSize: 12, padding: '5px 8px' }}
+                                />
+                                <button
+                                  onClick={() => {
+                                    const plans = [...lc.plans];
+                                    plans[i] = { ...p, features: p.features.filter((_, k) => k !== j) };
+                                    setLandingContent({ ...lc, plans });
+                                  }}
+                                  style={{ color: 'var(--muted)', padding: '4px 8px', borderRadius: 6, fontSize: 14, background: 'var(--chip)', border: '1px solid var(--border)', lineHeight: 1 }}
+                                >
+                                  ×
+                                </button>
+                              </div>
+                            ))}
+                            <button
+                              onClick={() => {
+                                const plans = [...lc.plans];
+                                plans[i] = { ...p, features: [...p.features, ''] };
+                                setLandingContent({ ...lc, plans });
+                              }}
+                              style={{ background: 'none', color: 'var(--accent)', fontSize: 12, fontWeight: 600, padding: 0, marginTop: 2 }}
+                            >
+                              + Feature hinzufügen
+                            </button>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Bottom save */}
+                  <div style={{ display: 'flex', justifyContent: 'flex-end', paddingTop: 16, borderTop: '1px solid var(--border)' }}>
+                    <button onClick={saveLanding} disabled={landingSaving} className="mz-btn-primary">
+                      {landingSaving ? 'Speichern…' : 'Alle Änderungen speichern'}
+                    </button>
+                  </div>
+                </>
+              );
+            })()}
           </div>
         )}
 
