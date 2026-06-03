@@ -195,9 +195,17 @@ export interface ShoppingItem {
   recipeNames: string[];
   promotions: Promotion[];
   checked: boolean;
+  inPantry?: boolean;
 }
 
 export type ShoppingList = Record<string, ShoppingItem[]>;
+
+export interface PantryItem {
+  id: string;
+  name: string;
+  amount?: string;
+  addedAt: string;
+}
 
 export interface PortionInfo {
   adults: number;

@@ -560,7 +560,11 @@ export function ShoppingListView() {
                         {/* Name */}
                         <span
                           className="text-sm font-medium transition-colors"
-                          style={isFaded ? { textDecoration: 'line-through', color: '#9c8c84' } : { color: '#2c2420' }}
+                          style={
+                            isFaded        ? { textDecoration: 'line-through', color: '#9c8c84' } :
+                            item.inPantry  ? { textDecoration: 'line-through', color: '#5a8c5a' } :
+                                             { color: '#2c2420' }
+                          }
                         >
                           {item.name}
                         </span>
@@ -618,6 +622,14 @@ export function ShoppingListView() {
                       {/* Promo + recipe names */}
                       {!isDeleted && (
                         <div className="flex items-center gap-2 mt-1 flex-wrap">
+                          {item.inPantry && (
+                            <span
+                              className="inline-flex items-center text-xs px-1.5 py-0.5 rounded-full font-medium"
+                              style={{ backgroundColor: '#e8f5e9', color: '#2e7d32' }}
+                            >
+                              Im Chuchichäschtli
+                            </span>
+                          )}
                           {item.promotions.map((promo, pi) => {
                             const sc = STORE_COLORS[promo.store] ?? { bg: '#efe9df', color: '#5a4e48' };
                             return (

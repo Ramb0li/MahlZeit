@@ -13,7 +13,7 @@
  * Legacy-globalen Pfad zurück (für Migrationsphase / Admin-Tools).
  */
 
-import type { Recipe, WeekPlan, AppSettings, PromotionsCache, WeatherCache, DayConstraint, ShoppingGroups, RecipeRating, Category } from '@/types';
+import type { Recipe, WeekPlan, AppSettings, PromotionsCache, WeatherCache, DayConstraint, ShoppingGroups, RecipeRating, Category, PantryItem } from '@/types';
 
 import seedRecipes     from '../../data/recipes.json';
 import seedSettings    from '../../data/settings.json';
@@ -60,6 +60,7 @@ const K = {
   groupWeekPlan:       (g: string, w: string) => `mz:group:${g}:weekplan:${w}`,
   groupShoppingGroups: (g: string, w: string) => `mz:group:${g}:week:${w}:shopping_groups`,
   groupFavorites:      (g: string)             => `mz:group:${g}:favorites`,
+  groupPantry:         (g: string)             => `mz:group:${g}:pantry`,
 };
 
 const EMPTY_PROMOTIONS: PromotionsCache = { lastUpdated: null, migros: [], coop: [], lidl: [] };
@@ -168,6 +169,24 @@ export async function saveFavorites(groupId: string, recipeIds: string[]): Promi
     return;
   }
   await getRedis().set(K.groupFavorites(groupId), recipeIds);
+}
+
+export async function getPantry(groupId: string): Promise<PantryItem[]> {
+  if (!USE_REDIS) {
+    const all = readJson<Record<string, PantryItem[]>>('group-pantry.json', {});
+    return all[groupId] ?? [];
+  }
+  return (await getRedis().get<PantryItem[]>(K.groupPantry(groupId))) ?? [];
+}
+
+export async function savePantry(groupId: string, items: PantryItem[]): Promise<void> {
+  if (!USE_REDIS) {
+    const all = readJson<Record<string, PantryItem[]>>('group-pantry.json', {});
+    all[groupId] = items;
+    writeJson('group-pantry.json', all);
+    return;
+  }
+  await getRedis().set(K.groupPantry(groupId), items);
 }
 
 /**

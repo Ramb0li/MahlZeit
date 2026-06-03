@@ -2,7 +2,7 @@ export const dynamic = 'force-dynamic';
 
 import { NextResponse } from 'next/server';
 import { getSessionWithGroup as getSession } from '@/lib/session';
-import { getWeekPlan, getRecipes, getSettings, getPromotions, getShoppingGroups } from '@/lib/data';
+import { getWeekPlan, getRecipes, getSettings, getPromotions, getShoppingGroups, getPantry } from '@/lib/data';
 import { calculatePortions, scaleIngredientAmount, categorizeIngredient } from '@/lib/utils';
 import type { ShoppingItem, ShoppingList, Promotion } from '@/types';
 
@@ -25,12 +25,13 @@ export async function GET(request: Request) {
     // Optionaler groups-Modus: gibt Gruppen-Metadaten zurück statt Liste
     const groupsMeta = searchParams.get('meta') === '1';
 
-    const [plan, recipes, settings, promoData, shoppingGroups] = await Promise.all([
+    const [plan, recipes, settings, promoData, shoppingGroups, pantry] = await Promise.all([
       getWeekPlan(weekId, session.groupId),
       getRecipes(session.groupId),
       getSettings(session.groupId),
       getPromotions(),
       getShoppingGroups(weekId, session.groupId),
+      getPantry(session.groupId),
     ]);
 
     if (groupsMeta) {
@@ -95,6 +96,12 @@ export async function GET(request: Request) {
         addSlotIngredients(dayPlan.breakfast, dayPlan.breakfast.recipeId);
         addSlotIngredients(dayPlan.breakfast, dayPlan.breakfast.sideRecipeId);
       }
+    }
+
+    // Pantry-Abgleich: Zutaten die im Vorrat vorhanden sind markieren
+    const pantryNames = new Set(pantry.map((p) => p.name.toLowerCase().trim()));
+    for (const item of Object.values(aggregated)) {
+      if (pantryNames.has(item.name.toLowerCase().trim())) item.inPantry = true;
     }
 
     const grouped: ShoppingList = {};

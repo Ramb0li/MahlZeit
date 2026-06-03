@@ -1,12 +1,13 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { CalendarDays, BookOpen, ShoppingCart, Settings, LogOut } from 'lucide-react';
+import { CalendarDays, BookOpen, ShoppingCart, Settings, LogOut, Package } from 'lucide-react';
 import { WeekPlanner } from '@/components/planner/WeekPlanner';
 import { RecipeList } from '@/components/recipes/RecipeList';
 import { RecipeDetailModal } from '@/components/recipes/RecipeDetailModal';
 import { CookingGuide } from '@/components/recipes/CookingGuide';
 import { ShoppingListView } from '@/components/shopping/ShoppingListView';
+import { PantryView }      from '@/components/pantry/PantryView';
 import { SettingsView } from '@/components/settings/SettingsView';
 import { OnboardingWizard } from '@/components/groups/OnboardingWizard';
 import { Wordmark } from '@/components/ui/Wordmark';
@@ -14,14 +15,15 @@ import { toDataTheme } from '@/lib/themes';
 import type { Recipe, AppSettings, DayConstraint } from '@/types';
 import type { Group, GroupRole } from '@/lib/groups';
 
-type Tab = 'planner' | 'recipes' | 'shopping' | 'settings';
+type Tab = 'planner' | 'recipes' | 'shopping' | 'pantry' | 'settings';
 export type { Tab };
 
 const TABS: { id: Tab; label: string; icon: React.ComponentType<{ size?: number | string }> }[] = [
-  { id: 'planner',  label: 'Menüplan',      icon: CalendarDays },
-  { id: 'shopping', label: 'Einkauf',        icon: ShoppingCart },
-  { id: 'recipes',  label: 'Rezepte',        icon: BookOpen     },
-  { id: 'settings', label: 'Einstellungen',  icon: Settings     },
+  { id: 'planner',  label: 'Menüplan',        icon: CalendarDays },
+  { id: 'shopping', label: 'Einkauf',          icon: ShoppingCart },
+  { id: 'pantry',   label: 'Chuchichäschtli',  icon: Package      },
+  { id: 'recipes',  label: 'Rezepte',          icon: BookOpen     },
+  { id: 'settings', label: 'Einstellungen',    icon: Settings     },
 ];
 
 interface AppShellProps {
@@ -144,6 +146,9 @@ export function AppShell({
         )}
         {activeTab === 'shopping' && (
           <ShoppingListView />
+        )}
+        {activeTab === 'pantry' && (
+          <PantryView />
         )}
         {activeTab === 'settings' && (
           <SettingsView
