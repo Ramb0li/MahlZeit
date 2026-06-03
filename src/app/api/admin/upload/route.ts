@@ -42,12 +42,28 @@ export async function POST(request: Request) {
   if (file.size > 8 * 1024 * 1024)
     return NextResponse.json({ error: 'Datei zu gross (max 8 MB).' }, { status: 400 });
 
+  if (!process.env.BLOB_READ_WRITE_TOKEN)
+    return NextResponse.json(
+      { error: 'Bild-Upload nicht konfiguriert (BLOB_READ_WRITE_TOKEN fehlt).' },
+      { status: 503 },
+    );
+
   // Sanitize filename: keep extension, replace spaces/special chars
   const ext      = file.name.split('.').pop() ?? 'jpg';
   const basename = file.name.replace(/\.[^.]+$/, '').replace(/[^a-z0-9_-]/gi, '-').toLowerCase();
   const blobName = `recipes/${basename}-${Date.now()}.${ext}`;
 
-  const blob = await put(blobName, file, { access: 'public' });
+  let blob: { url: string };
+  try {
+    blob = await put(blobName, file, { access: 'public' });
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : String(err);
+    console.error('[upload] Vercel Blob error:', msg);
+    return NextResponse.json(
+      { error: `Upload fehlgeschlagen: ${msg}` },
+      { status: 502 },
+    );
+  }
 
   return NextResponse.json({ url: blob.url });
 }

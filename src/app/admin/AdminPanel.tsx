@@ -102,6 +102,7 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
   const [recipeNotice,    setRecipeNotice]    = useState<{ type: 'ok'|'err'; text: string } | null>(null);
   const [deleteRecipeId,  setDeleteRecipeId]  = useState<string | null>(null);
   const [showImportModal, setShowImportModal] = useState(false);
+  const [seeding,         setSeeding]         = useState(false);
 
   const filteredRecipes = useMemo(() => recipes.filter(r => {
     if (recipeCatFilter !== 'Alle' && r.category !== recipeCatFilter) return false;
@@ -159,6 +160,25 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
       setTimeout(() => setRecipeNotice(null), 2500);
     } finally {
       setRecipeSaving(false);
+    }
+  };
+
+  const seedRedis = async () => {
+    if (!window.confirm('Rezepte in Redis mit dem aktuellen Bundle überschreiben? Manuelle Prod-Änderungen gehen verloren.')) return;
+    setSeeding(true);
+    try {
+      const res  = await fetch('/api/admin/recipes/seed', { method: 'POST' });
+      const data = await res.json() as { ok?: boolean; count?: number; error?: string };
+      if (!res.ok) {
+        setRecipeNotice({ type: 'err', text: data.error ?? 'Seed fehlgeschlagen.' });
+      } else {
+        setRecipeNotice({ type: 'ok', text: `Redis mit ${data.count} Rezepten aus dem Bundle befüllt. Seite neu laden.` });
+        setTimeout(() => window.location.reload(), 2000);
+      }
+    } catch {
+      setRecipeNotice({ type: 'err', text: 'Netzwerkfehler.' });
+    } finally {
+      setSeeding(false);
     }
   };
 
@@ -421,6 +441,9 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
               <a href="/api/admin/recipes/export" download className="mz-btn-soft" style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}>
                 Export JSON
               </a>
+              <button onClick={seedRedis} disabled={seeding} className="mz-btn-soft" title="Bundle-Rezepte nach Redis schreiben (überschreibt Prod-Daten)">
+                {seeding ? 'Laden…' : 'Seed Redis'}
+              </button>
               <button onClick={() => setEditingRecipe('new')} className="mz-btn-primary">
                 + Neues Rezept
               </button>
