@@ -4,12 +4,11 @@ import { format } from 'date-fns';
 import { de } from 'date-fns/locale';
 import { Plus, Sparkles, Trash2, UtensilsCrossed, X } from 'lucide-react';
 import { formatDate } from '@/lib/utils';
-import { getTheme } from '@/lib/themes';
 import { WeatherIcon } from '@/components/ui/WeatherIcon';
 import { Badge } from '@/components/ui/Badge';
+import { PhotoSlot } from '@/components/ui/PhotoSlot';
 import { RecipePickerModal, LEFTOVERS_ID } from './RecipePickerModal';
 import { type DayPlan, type Recipe, type WeatherDay, type DayConstraint, type MealSlot, type AppSettings, computeTimeTags } from '@/types';
-import type { AppTheme } from '@/lib/themes';
 
 interface DayColumnProps {
   date: Date;
@@ -34,8 +33,6 @@ export function DayColumn({
   const [pickerOpenSide, setPickerOpenSide] = useState<'breakfast' | 'lunch' | 'dinner' | null>(null);
   const [suggesting, setSuggesting]         = useState<'lunch' | 'dinner' | null>(null);
 
-  const theme = getTheme(settings.theme);
-  const dayColor = theme.dayCards[(dayIndex - 1) % 7];
   const isToday = formatDate(date) === formatDate(new Date());
 
   const showBreakfast = settings.showBreakfast ?? false;
@@ -115,64 +112,43 @@ export function DayColumn({
   };
 
   return (
-    <div
-      className="flex flex-col w-full md:flex-1 md:min-w-36 rounded-2xl overflow-hidden transition-all"
-      style={{
-        backgroundColor: dayColor.bg,
-        boxShadow: isToday
-          ? `0 0 0 2px ${theme.todayRing}, 0 4px 12px rgba(0,0,0,0.12)`
-          : '0 1px 4px rgba(0,0,0,0.07)',
-      }}
-    >
-      {isToday && (
-        <div className="h-1 w-full" style={{ backgroundColor: theme.todayAccent }} />
-      )}
-
-      {/* Header */}
-      <div className="px-3 pt-3 pb-2">
-        <div className="flex items-start justify-between gap-1">
-          <div>
-            <p className="text-[10px] font-bold uppercase tracking-widest" style={{ color: dayColor.textSecondary }}>
-              {dayShort}
-            </p>
-            <p className="text-3xl font-black leading-none mt-0.5" style={{ color: dayColor.textPrimary }}>
-              {dayNum}
-            </p>
-            <p className="text-[10px] font-medium mt-0.5" style={{ color: dayColor.textSecondary }}>
-              {monthShort}
-            </p>
+    <div className={`mz-magday${isToday ? ' today' : ''}`}>
+      {/* Day header */}
+      <div className="mz-magday-head">
+        <div>
+          <div className="mz-magday-dow">
+            {dayShort}
+            {isToday && <span className="mz-magday-todaydot" />}
           </div>
-
-          {weather && (
-            <div className="flex items-center gap-1 pt-0.5">
-              <WeatherIcon condition={weather.condition} size={14} />
-              <span className="text-xs font-semibold" style={{ color: dayColor.textSecondary }}>
-                {weather.tempMax}°
-              </span>
-            </div>
-          )}
+          <div className="mz-magday-date">{dayNum}. {monthShort}</div>
         </div>
+        {weather && (
+          <div className="mz-magday-weather">
+            <WeatherIcon condition={weather.condition} size={14} />
+            <span>{weather.tempMax}°</span>
+          </div>
+        )}
+      </div>
 
-        {/* Constraints — clickable to cross out for this week */}
-        <div className="flex flex-wrap gap-1 mt-2 min-h-[26px] content-start">
-          {constraints.map((c) => {
-            const disabled = disabledConstraintIds.includes(c.id);
-            return (
-              <button
-                key={c.id}
-                onClick={() => onToggleConstraint(c.id)}
-                title={disabled ? 'Wiederherstellen' : 'Für diese Woche deaktivieren'}
-                style={{ opacity: disabled ? 0.4 : 1, textDecoration: disabled ? 'line-through' : 'none' }}
-              >
-                <Badge label={c.label} color={c.color} />
-              </button>
-            );
-          })}
-        </div>
+      {/* Constraints — immer rendern (auch leer), min-height hält alle Slots auf gleicher Linie */}
+      <div className="mz-magday-constraints">
+        {constraints.map((c) => {
+          const disabled = disabledConstraintIds.includes(c.id);
+          return (
+            <button
+              key={c.id}
+              onClick={() => onToggleConstraint(c.id)}
+              title={disabled ? 'Wiederherstellen' : 'Für diese Woche deaktivieren'}
+              style={{ opacity: disabled ? 0.4 : 1, textDecoration: disabled ? 'line-through' : 'none' }}
+            >
+              <Badge label={c.label} color={c.color} />
+            </button>
+          );
+        })}
       </div>
 
       {/* Meal slots */}
-      <div className="flex flex-col gap-2 p-2 pb-3 flex-1">
+      <div className="mz-magday-slots">
         {showBreakfast && (
           <MealSlotCard
             label="Frühstück"
@@ -182,8 +158,6 @@ export function DayColumn({
             sideIsLeftovers={breakfastSlot?.sideIsLeftovers}
             mealType="breakfast"
             suggesting={false}
-            theme={theme}
-            dayColor={dayColor}
             onPick={() => setPickerOpen('breakfast')}
             onSuggest={() => {}}
             onClear={() => onUpdate(dayIndex, 'breakfast', { recipeId: null, isLeftovers: false })}
@@ -202,8 +176,6 @@ export function DayColumn({
             sideIsLeftovers={lunchSlot?.sideIsLeftovers}
             mealType="lunch"
             suggesting={suggesting === 'lunch'}
-            theme={theme}
-            dayColor={dayColor}
             onPick={() => setPickerOpen('lunch')}
             onSuggest={() => handleSuggest('lunch')}
             onClear={() => onUpdate(dayIndex, 'lunch', { recipeId: null, isLeftovers: false })}
@@ -222,8 +194,6 @@ export function DayColumn({
             sideIsLeftovers={dinnerSlot?.sideIsLeftovers}
             mealType="dinner"
             suggesting={suggesting === 'dinner'}
-            theme={theme}
-            dayColor={dayColor}
             onPick={() => setPickerOpen('dinner')}
             onSuggest={() => handleSuggest('dinner')}
             onClear={() => onUpdate(dayIndex, 'dinner', { recipeId: null, isLeftovers: false })}
@@ -267,8 +237,6 @@ interface MealSlotCardProps {
   sideIsLeftovers?: boolean;
   mealType: 'breakfast' | 'lunch' | 'dinner';
   suggesting: boolean;
-  theme: AppTheme;
-  dayColor: AppTheme['dayCards'][number];
   onPick: () => void;
   onSuggest: () => void;
   onClear: () => void;
@@ -279,8 +247,7 @@ interface MealSlotCardProps {
 
 function MealSlotCard({
   label, recipe, isLeftovers, sideRecipe, sideIsLeftovers,
-  suggesting, theme, dayColor,
-  onPick, onSuggest, onClear, onPickSide, onClearSide, mealType, onViewRecipe,
+  suggesting, onPick, onSuggest, onClear, onPickSide, onClearSide, mealType, onViewRecipe,
 }: MealSlotCardProps) {
   const hasSide = !!(sideRecipe || sideIsLeftovers);
   const sideName = sideIsLeftovers ? 'Reste essen' : sideRecipe?.name ?? '';
@@ -288,42 +255,21 @@ function MealSlotCard({
   // ── Reste essen ──────────────────────────────────────────────────────────
   if (isLeftovers && !recipe) {
     return (
-      <div
-        className="group relative rounded-xl p-2.5 min-h-[80px]"
-        style={{ backgroundColor: '#f5ece0', boxShadow: '0 1px 3px rgba(44,36,32,0.08)', border: '1px solid #e0d8ce' }}
-      >
-        <p className="text-[10px] font-bold uppercase tracking-wide mb-1" style={{ color: '#c49a6c' }}>
-          {label}
-        </p>
-        <div className="flex items-center gap-2 mt-1">
-          <UtensilsCrossed size={14} style={{ color: '#b5614a' }} className="shrink-0" />
-          <p className="text-xs font-semibold" style={{ color: '#5a4e48' }}>Reste essen</p>
+      <div className="mz-magslot leftovers group">
+        <span className="mz-slot-label">{label}</span>
+        <div className="mz-leftovers-body">
+          <UtensilsCrossed size={14} />
+          <span>Reste essen</span>
         </div>
-
-        {hasSide ? (
-          <div className="mt-2 pt-1.5 flex items-center gap-1" style={{ borderTop: '1px solid #e0d8ce' }}>
-            <p className="text-[10px] line-clamp-1 flex-1" style={{ color: '#9c8c84' }}>+ {sideName}</p>
-            <button onClick={onClearSide} className="shrink-0 p-0.5 rounded hover:bg-red-50 text-amber-300 hover:text-red-400 transition-colors">
-              <X size={9} />
-            </button>
+        {hasSide && (
+          <div style={{ display: 'flex', alignItems: 'center', gap: 6, paddingTop: 4, borderTop: '1px solid var(--accent-tint)' }}>
+            <span style={{ flex: 1, fontSize: 11, color: 'var(--accent-ink)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+              + {sideName}
+            </span>
+            <button onClick={onClearSide} style={{ color: 'var(--muted)', padding: 2 }}><X size={10} /></button>
           </div>
-        ) : (
-          <button
-            onClick={onPickSide}
-            className="absolute bottom-1.5 right-1.5 opacity-0 group-hover:opacity-100 w-5 h-5 flex items-center justify-center rounded-full transition-all"
-            style={{ backgroundColor: 'rgba(196,154,108,0.25)', color: '#c49a6c' }}
-            title="Beilage hinzufügen"
-          >
-            <Plus size={9} />
-          </button>
         )}
-
-        <button
-          onClick={onClear}
-          className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 p-1 rounded-lg hover:bg-red-50 text-red-400 transition-all"
-        >
-          <Trash2 size={11} />
-        </button>
+        <button onClick={onClear} className="mz-slot-del" style={{ opacity: 1 }}><Trash2 size={12} /></button>
       </div>
     );
   }
@@ -331,87 +277,71 @@ function MealSlotCard({
   // ── Rezept ausgewählt ─────────────────────────────────────────────────────
   if (recipe) {
     return (
-      <div
-        className="group relative rounded-xl p-2.5 min-h-[80px]"
-        style={{ backgroundColor: theme.mealFilledBg, boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}
-      >
-        <p className="text-[10px] font-bold uppercase tracking-wide mb-1" style={{ color: theme.mealLabelText }}>
-          {label}
-        </p>
-        <p
-          className="text-xs font-semibold leading-snug line-clamp-3"
-          style={{ color: theme.mealFilledText, cursor: onViewRecipe ? 'pointer' : 'default', textDecoration: onViewRecipe ? 'underline' : 'none', textDecorationColor: 'rgba(0,0,0,0.15)', textUnderlineOffset: '2px' }}
-          onClick={(e) => { e.stopPropagation(); onViewRecipe?.(recipe); }}
-        >
-          {recipe.name}
-        </p>
-        <div className="flex items-center gap-1.5 mt-2">
-          <span className={`text-[10px] px-1.5 py-0.5 rounded-full font-semibold ${
-            computeTimeTags(recipe.timeMinutes).includes('Schnell (<20min)') ? 'bg-green-100 text-green-700' :
-            computeTimeTags(recipe.timeMinutes).includes('Einfach (<30min)') ? 'bg-amber-100 text-amber-700' :
-            'bg-red-100 text-red-700'
-          }`}>
-            {recipe.timeMinutes} min
-          </span>
+      <div className="mz-magslot filled group">
+        <div className="mz-magslot-img">
+          {recipe.imageUrl ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={recipe.imageUrl} alt={recipe.name} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+          ) : (
+            <PhotoSlot category={recipe.category} />
+          )}
+        </div>
+        <div className="mz-magslot-grad" />
+        <span className="mz-slot-label on-img">{label}</span>
+        <div className="mz-magslot-info">
+          <p
+            className="mz-magslot-name mz-clamp2"
+            onClick={() => onViewRecipe?.(recipe)}
+            style={{ cursor: onViewRecipe ? 'pointer' : 'default' }}
+          >
+            {recipe.name}
+          </p>
+          <div className="mz-magslot-meta">
+            <span>{recipe.timeMinutes} min</span>
+          </div>
         </div>
 
-        {hasSide ? (
-          <div className="mt-2 pt-1.5 border-t border-black/5 flex items-center gap-1">
-            <p className="text-[10px] line-clamp-1 flex-1" style={{ color: theme.mealLabelText, opacity: 0.8 }}>
+        {hasSide && (
+          <div style={{ position: 'absolute', bottom: 36, left: 11, right: 11, display: 'flex', alignItems: 'center', gap: 5 }}>
+            <span style={{ fontSize: 10, color: 'rgba(255,255,255,.82)', flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
               + {sideName}
-            </p>
-            <button onClick={onClearSide} className="shrink-0 p-0.5 rounded hover:bg-red-50 text-gray-300 hover:text-red-400 transition-colors">
-              <X size={9} />
-            </button>
+            </span>
+            <button onClick={onClearSide} style={{ color: 'rgba(255,255,255,.6)', flexShrink: 0 }}><X size={9} /></button>
           </div>
-        ) : (
+        )}
+        {!hasSide && (
           <button
             onClick={onPickSide}
-            className="absolute bottom-1.5 right-1.5 opacity-0 group-hover:opacity-100 w-5 h-5 flex items-center justify-center rounded-full transition-all"
-            style={{ backgroundColor: 'rgba(44,36,32,0.07)', color: '#9c8c84' }}
+            className="mz-slot-del on-img"
+            style={{ bottom: 8, top: 'auto', right: 36, opacity: 0, width: 20, height: 20, borderRadius: '50%' }}
             title="Beilage hinzufügen"
           >
-            <Plus size={9} />
+            <Plus size={10} />
           </button>
         )}
-
-        <button
-          onClick={onClear}
-          className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 p-1 rounded-lg hover:bg-red-50 text-red-400 transition-all"
-        >
-          <Trash2 size={11} />
-        </button>
+        <button onClick={onClear} className="mz-slot-del on-img"><Trash2 size={12} /></button>
       </div>
     );
   }
 
   // ── Leer ─────────────────────────────────────────────────────────────────
   return (
-    <div
-      className="rounded-xl min-h-[80px] flex flex-col"
-      style={{ backgroundColor: theme.mealEmptyBg, border: `1px dashed ${theme.mealEmptyBorder}` }}
-    >
-      <p className="text-[10px] font-bold uppercase tracking-wide px-2.5 pt-2.5" style={{ color: theme.mealLabelText }}>
-        {label}
-      </p>
-      <div className="flex-1 flex items-center justify-center gap-1.5 pb-2">
-        <button
-          onClick={onPick}
-          className="flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-semibold transition-all"
-          style={{ backgroundColor: theme.mealBtnBg, color: theme.mealBtnText }}
-        >
-          <Plus size={11} />
+    <div className="mz-magslot empty">
+      <span className="mz-slot-label">{label}</span>
+      <div className="mz-empty-actions">
+        <button onClick={onPick} className="mz-empty-pick">
+          <Plus size={12} />
           Wählen
         </button>
         {mealType !== 'breakfast' && (
           <button
             onClick={onSuggest}
             disabled={suggesting}
-            className="flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-semibold transition-all disabled:opacity-40"
-            style={{ backgroundColor: theme.mealBtnBg, color: theme.mealBtnText }}
+            className="mz-empty-ai"
             title="KI-Vorschlag"
+            style={{ opacity: suggesting ? 0.5 : 1 }}
           >
-            <Sparkles size={11} className={suggesting ? 'animate-pulse' : ''} />
+            <Sparkles size={14} className={suggesting ? 'mz-pulse' : ''} />
           </button>
         )}
       </div>

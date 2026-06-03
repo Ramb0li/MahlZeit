@@ -371,50 +371,36 @@ export function ShoppingListView() {
         </div>
       )}
 
-      {/* Header */}
-      <div className="flex items-center justify-between">
+      {/* Progress + actions */}
+      <div className="mz-view-head">
         <div>
-          <p className="text-sm" style={{ color: '#9c8c84' }}>
-            {checkedCount} von {totalItems} erledigt
-            {modifiedCount > 0 && (
-              <span className="ml-2 text-xs" style={{ color: '#c49a6c' }}>{modifiedCount} angepasst</span>
-            )}
-          </p>
-          {totalItems > 0 && (
-            <div className="mt-1.5 h-1.5 rounded-full w-48 overflow-hidden" style={{ backgroundColor: '#e8dfd3' }}>
-              <div
-                className="h-full rounded-full transition-all"
-                style={{ width: `${totalItems ? (checkedCount / totalItems) * 100 : 0}%`, backgroundColor: '#b5614a' }}
-              />
-            </div>
-          )}
+          <h1 className="mz-view-title">Einkaufsliste</h1>
+          <p className="mz-view-sub">{checkedCount} von {totalItems} erledigt</p>
         </div>
-        <div className="flex gap-2">
+        <div style={{ display: 'flex', gap: 8 }}>
           <button
-            onClick={() => {
-              const g = activeGroupIdx !== null ? groups[activeGroupIdx] : undefined;
-              loadList(g?.dayIndices);
-            }}
-            className="flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-medium transition-all"
-            style={{ border: '1px solid #e0d8ce', color: '#5a4e48', backgroundColor: '#fff9f3' }}
-            onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#f7f4ee')}
-            onMouseLeave={e => (e.currentTarget.style.backgroundColor = '#fff9f3')}
+            onClick={() => { const g = activeGroupIdx !== null ? groups[activeGroupIdx] : undefined; loadList(g?.dayIndices); }}
+            className="mz-btn-soft"
           >
             <RefreshCw size={14} />
-            Aktualisieren
+            <span className="mz-hide-sm">Aktualisieren</span>
           </button>
           {totalItems > 0 && (
-            <button
-              onClick={exportPDF}
-              className="flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-semibold text-white transition-opacity hover:opacity-80"
-              style={{ backgroundColor: '#b5614a' }}
-            >
+            <button onClick={exportPDF} className="mz-btn-primary">
               <Download size={14} />
               PDF
             </button>
           )}
         </div>
       </div>
+      {totalItems > 0 && (
+        <div className="mz-shop-progress">
+          <div className="mz-shop-progress-bar">
+            <div style={{ width: `${totalItems ? (checkedCount / totalItems) * 100 : 0}%` }} />
+          </div>
+          <span>{checkedCount}/{totalItems}</span>
+        </div>
+      )}
 
       {/* Loading */}
       {loading && (
@@ -507,22 +493,19 @@ export function ShoppingListView() {
         const checkedCount = recipeItems.filter(i => checked.has(`${i.name.toLowerCase()}_${i.unit}`)).length + customInCat.filter(c => c.checked).length;
 
         return (
-          <div key={category} className="rounded-2xl overflow-hidden" style={{ backgroundColor: '#fff9f3', border: '1px solid #e0d8ce' }}>
-            {/* Category header — clickable to collapse */}
+          <div key={category} className="mz-shop-group">
+            {/* Category header */}
             <button
               onClick={() => toggleCategory(category)}
-              className="w-full flex items-center justify-between px-4 py-2.5 transition-colors"
-              style={{ backgroundColor: '#efe9df', borderBottom: isCollapsed ? 'none' : '1px solid #e0d8ce' }}
-              onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#e8dfd3')}
-              onMouseLeave={e => (e.currentTarget.style.backgroundColor = '#efe9df')}
+              className="mz-shop-group-head"
+              style={{ width: '100%', textAlign: 'left' }}
             >
-              <div className="flex items-center gap-2">
-                <h3 className="text-sm font-semibold" style={{ color: '#5a4e48' }}>{category}</h3>
-                <span className="text-xs px-1.5 py-0.5 rounded-full font-medium" style={{ backgroundColor: '#fff9f3', color: '#9c8c84' }}>
-                  {checkedCount}/{totalCount}
-                </span>
+              <div className="mz-shop-cat-ic">
+                <Tag size={14} />
               </div>
-              {isCollapsed ? <ChevronDown size={14} style={{ color: '#9c8c84' }} /> : <ChevronUp size={14} style={{ color: '#9c8c84' }} />}
+              <span style={{ flex: 1 }}>{category}</span>
+              <span className="mz-shop-count">{checkedCount}/{totalCount}</span>
+              {isCollapsed ? <ChevronDown size={14} style={{ color: 'var(--muted)' }} /> : <ChevronUp size={14} style={{ color: 'var(--muted)' }} />}
             </button>
             {!isCollapsed && <div>
 
@@ -539,26 +522,14 @@ export function ShoppingListView() {
                 return (
                   <div
                     key={key}
-                    className="flex items-start gap-3 px-4 py-3 transition-colors"
-                    style={{
-                      backgroundColor: isDeleted ? '#f7f4ee' : isChecked ? '#f7f4ee' : isModified ? '#fdfaf5' : 'transparent',
-                      borderLeft: isModified && !isDeleted ? '2.5px solid #c49a6c' : 'none',
-                      borderBottom: '1px solid #f0ebe3',
-                    }}
-                    onMouseEnter={e => { if (!isDeleted && !isChecked && !isModified) (e.currentTarget as HTMLElement).style.backgroundColor = '#f7f4ee'; }}
-                    onMouseLeave={e => { if (!isDeleted && !isChecked && !isModified) (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent'; }}
+                    className={`mz-shop-item${isFaded ? ' done' : ''}`}
+                    style={isModified && !isFaded ? { borderLeft: '2.5px solid var(--accent)' } : undefined}
+                    onClick={() => toggleChecked(key)}
                   >
                     {/* Checkbox */}
-                    <button
-                      onClick={() => toggleChecked(key)}
-                      className="mt-0.5 w-5 h-5 rounded flex items-center justify-center flex-shrink-0 transition-colors"
-                      style={isChecked
-                        ? { backgroundColor: '#b5614a', border: '2px solid #b5614a' }
-                        : { border: '2px solid #d0c8be', backgroundColor: 'transparent' }
-                      }
-                    >
+                    <div className={`mz-check${isChecked ? ' on' : ''}`} onClick={e => e.stopPropagation()}>
                       {isChecked && <Check size={11} color="#fff" strokeWidth={3} />}
-                    </button>
+                    </div>
 
                     {/* Content */}
                     <div className="flex-1 min-w-0">

@@ -4,61 +4,43 @@ import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams, useRouter }    from 'next/navigation';
 import Link                              from 'next/link';
 import Image                             from 'next/image';
+import { ChevronLeft, X }                from 'lucide-react';
 
 /* ─── Plan cards ─────────────────────────────────────────────────────────── */
 
-const PLANS = [
-  {
-    id:      'trial' as const,
-    icon:    '🎁',
-    name:    'Testwoche',
-    price:   'Gratis',
-    detail:  '7 Tage kostenlos · kein Kreditkarteneintrag',
-    color:   '#c49a6c',
-  },
-  {
-    id:      'lifetime' as const,
-    icon:    '⭐',
-    name:    'Lifetime',
-    price:   'CHF 35',
-    detail:  'einmalig · für immer · alle Updates',
-    color:   '#b5614a',
-    featured: true,
-  },
-  {
-    id:      'abo' as const,
-    icon:    '📅',
-    name:    'Monatsabo',
-    price:   'CHF 3/Mt.',
-    detail:  'jederzeit kündbar',
-    color:   '#5a4e48',
-  },
+type PlanId = 'trial' | 'abo' | 'yearly' | 'lifetime';
+
+const PLANS: { id: PlanId; star: string; name: string; price: string; per: string; feat: string; featured?: boolean }[] = [
+  { id: 'trial',    star: '',              name: 'Testwoche', price: 'Gratis',   per: '7 Tage kostenlos',       feat: 'Voller Zugang, kein Kreditkarteneintrag' },
+  { id: 'abo',      star: '',              name: 'Monatsabo', price: 'CHF 3',    per: '/ Monat · kündbar',      feat: 'Jederzeit kündbar' },
+  { id: 'yearly',   star: '2 Monate gratis', name: 'Jahresabo', price: 'CHF 30', per: '/ Jahr',                feat: 'Günstiger als Monatsabo' },
+  { id: 'lifetime', star: 'Beliebteste Wahl', name: 'Lifetime', price: 'CHF 99', per: 'einmalig · für immer',  feat: 'Alle Updates inklusive', featured: true },
 ];
 
-/* ─── Input style ─────────────────────────────────────────────────────────── */
+const COLLAGE_IMGS = [
+  '/images/recipes/cuiselin-taboule.jpeg',
+  '/images/recipes/cuiselin-pesto-genovese.jpg',
+  '/images/recipes/cuiselin-granola.jpg',
+  '/images/recipes/cuiselin-gruener-linsensalat.jpg',
+];
 
-const inputCls =
-  'w-full px-4 py-2.5 rounded-xl text-sm focus:outline-none transition-all';
-const inputStyle = {
-  border:          '1px solid #e0d8ce',
-  backgroundColor: '#f7f4ee',
-  color:           '#2c2420',
-};
-const inputFocusStyle = {
-  border:          '1.5px solid #b5614a',
-  backgroundColor: '#fff9f3',
-};
+/* ─── Banner helper ──────────────────────────────────────────────────────── */
 
-function StyledInput(props: React.InputHTMLAttributes<HTMLInputElement>) {
-  const [focused, setFocused] = useState(false);
+function Banner({ type, children, onClose }: { type: 'success' | 'error' | 'warn'; children: React.ReactNode; onClose?: () => void }) {
+  const colors = {
+    success: { bg: '#e8f2e8', border: '#c8d8c8', color: '#2e5a32' },
+    error:   { bg: '#fce4ec', border: '#f5c0c0', color: '#c62828' },
+    warn:    { bg: '#fff3e0', border: '#f5d8a0', color: '#e65100' },
+  }[type];
   return (
-    <input
-      {...props}
-      className={inputCls}
-      style={focused ? inputFocusStyle : inputStyle}
-      onFocus={() => setFocused(true)}
-      onBlur={() => setFocused(false)}
-    />
+    <div className="mz-auth-banner" style={{ backgroundColor: colors.bg, borderColor: colors.border, color: colors.color }}>
+      <span style={{ flex: 1 }}>{children}</span>
+      {onClose && (
+        <button onClick={onClose} style={{ flexShrink: 0, color: 'inherit', opacity: 0.7 }}>
+          <X size={14} />
+        </button>
+      )}
+    </div>
   );
 }
 
@@ -69,55 +51,44 @@ function AuthInner() {
   const router = useRouter();
 
   const initialTab  = params.get('tab') === 'register' ? 'register' : 'login';
-  const initialPlan = (params.get('plan') as 'trial' | 'lifetime' | 'abo') ?? 'trial';
+  const initialPlan = (params.get('plan') as PlanId) ?? 'trial';
 
-  // Query-param Banner (Confirm-Flow)
   const confirmed  = params.get('confirmed') === '1';
-  const tokenError = params.get('error'); // 'invalid_token' | 'expired_token'
-
-  // Passwort-Reset via URL-Token
+  const tokenError = params.get('error');
   const resetToken = params.get('token');
   const isResetMode = params.get('mode') === 'reset' && !!resetToken;
 
   const [tab,     setTab]     = useState<'login' | 'register'>(initialTab);
-  const [mode,    setMode]    = useState<'default' | 'forgot' | 'reset'>(
-    isResetMode ? 'reset' : 'default',
-  );
-  const [plan,    setPlan]    = useState<'trial' | 'lifetime' | 'abo'>(initialPlan);
+  const [mode,    setMode]    = useState<'default' | 'forgot' | 'reset'>(isResetMode ? 'reset' : 'default');
+  const [plan,    setPlan]    = useState<PlanId>(initialPlan);
   const [loading, setLoading] = useState(false);
   const [error,   setError]   = useState('');
 
-  // Pending confirmation (nach Register oder Login mit unbestätigter E-Mail)
   const [pendingEmail, setPendingEmail] = useState<string | null>(null);
   const [resending,    setResending]    = useState(false);
   const [resendNotice, setResendNotice] = useState('');
 
-  // Login fields
   const [loginEmail,    setLoginEmail]    = useState('');
   const [loginPassword, setLoginPassword] = useState('');
 
-  // Register fields
   const [firstName,   setFirstName]   = useState('');
   const [lastName,    setLastName]    = useState('');
   const [regEmail,    setRegEmail]    = useState('');
   const [regPassword, setRegPassword] = useState('');
   const [regConfirm,  setRegConfirm]  = useState('');
 
-  // Forgot-password fields
-  const [forgotEmail,    setForgotEmail]    = useState('');
-  const [forgotSent,     setForgotSent]     = useState(false);
+  const [forgotEmail, setForgotEmail] = useState('');
+  const [forgotSent,  setForgotSent]  = useState(false);
 
-  // Reset-password fields
   const [resetPw,        setResetPw]        = useState('');
   const [resetPwConfirm, setResetPwConfirm] = useState('');
   const [resetDone,      setResetDone]      = useState(false);
 
   useEffect(() => {
-    const p = params.get('plan') as 'trial' | 'lifetime' | 'abo' | null;
+    const p = params.get('plan') as PlanId | null;
     if (p) { setPlan(p); setTab('register'); }
   }, [params]);
 
-  /* ── Login ── */
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setError(''); setResendNotice(''); setLoading(true);
@@ -137,7 +108,6 @@ function AuthInner() {
     } finally { setLoading(false); }
   };
 
-  /* ── Register ── */
   const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault();
     setError(''); setResendNotice('');
@@ -157,7 +127,6 @@ function AuthInner() {
     } finally { setLoading(false); }
   };
 
-  /* ── Resend confirmation ── */
   const handleResend = async () => {
     if (!pendingEmail) return;
     setResending(true); setResendNotice('');
@@ -167,11 +136,10 @@ function AuthInner() {
         body:   JSON.stringify({ email: pendingEmail }),
       });
       const data = await res.json();
-      setResendNotice(res.ok ? 'Bestätigungs-E-Mail wurde erneut gesendet.' : (data.error ?? 'Fehler beim Versand'));
+      setResendNotice(res.ok ? 'E-Mail wurde erneut gesendet.' : (data.error ?? 'Fehler beim Versand'));
     } finally { setResending(false); }
   };
 
-  /* ── Forgot password ── */
   const handleForgot = async (e: React.FormEvent) => {
     e.preventDefault();
     setError(''); setLoading(true);
@@ -180,12 +148,10 @@ function AuthInner() {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
         body:   JSON.stringify({ email: forgotEmail }),
       });
-      // Immer Erfolg zeigen — kein Info-Leak ob E-Mail existiert
       setForgotSent(true);
     } finally { setLoading(false); }
   };
 
-  /* ── Reset password ── */
   const handleReset = async (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
@@ -203,303 +169,259 @@ function AuthInner() {
     } finally { setLoading(false); }
   };
 
-  const btnStyle: React.CSSProperties = {
-    backgroundColor: '#b5614a', color: '#fff', border: 'none',
-    borderRadius: '12px', padding: '11px 0', fontSize: '14px',
-    fontWeight: 700, cursor: loading ? 'not-allowed' : 'pointer',
-    opacity: loading ? 0.7 : 1, width: '100%',
-  };
-  const linkBtn: React.CSSProperties = {
-    color: '#b5614a', fontSize: 13, fontWeight: 600,
-    background: 'none', border: 'none', cursor: 'pointer', padding: 0,
-  };
+  const submitLabel =
+    loading ? 'Wird verarbeitet…' :
+    tab === 'login' ? 'Anmelden →' :
+    plan === 'trial' ? 'Kostenlos starten →' :
+    plan === 'lifetime' ? 'Jetzt kaufen (CHF 35) →' :
+    plan === 'yearly' ? 'Abo starten (CHF 24/J.) →' :
+    'Abo starten (CHF 3/Mt.) →';
 
   return (
-    <div className="lp-login-page">
-      <Link href="/" className="lp-login-back">← Zurück zur Startseite</Link>
+    <div className="mz-auth-bg">
+      {/* Food-photo background collage */}
+      <div className="mz-auth-collage">
+        {COLLAGE_IMGS.map((src, i) => (
+          <div key={i} className="mz-auth-col-cell" style={{ backgroundImage: `url(${src})` }} />
+        ))}
+      </div>
+      <div className="mz-auth-scrim" />
 
-      <div className="lp-login-card" style={{ maxWidth: 480 }}>
+      {/* Back link */}
+      <Link href="/" className="mz-auth-back">
+        <ChevronLeft size={14} />
+        Startseite
+      </Link>
+
+      <div className="mz-auth-card">
 
         {/* Logo */}
-        <div className="lp-login-logo">
-          <Image src="/Logo-Mahlzeit.png" alt="MahlZeit" width={56} height={56} style={{ objectFit: 'contain' }} priority />
-          <div className="lp-login-logo-text">
-            Mahl<span style={{ color: '#b5614a' }}>Zeit</span>
-          </div>
-          <div className="lp-login-logo-sub">Menüplaner</div>
+        <div className="mz-auth-logo">
+          <Image src="/Logo-Mahlzeit.png" alt="MahlZeit" width={52} height={52} style={{ objectFit: 'contain' }} priority />
+          <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 22, letterSpacing: '-0.03em', color: 'var(--ink)' }}>
+            Mahl<span style={{ color: 'var(--accent)' }}>Zeit</span>
+          </span>
+          <span className="mz-auth-logo-sub">Familienmenüplaner</span>
         </div>
 
-        {/* ── PASSWORT ZURÜCKSETZEN (via Link aus E-Mail) ── */}
+        {/* ── RESET PASSWORD (via email link) ── */}
         {mode === 'reset' && (
-          <>
+          <div className="mz-auth-form">
             {resetDone ? (
-              <div className="space-y-4 text-center">
-                <div className="text-4xl">✅</div>
-                <p className="font-semibold" style={{ color: '#2c2420' }}>Passwort gespeichert!</p>
-                <p className="text-sm" style={{ color: '#9c8c84' }}>
-                  Du kannst dich jetzt mit deinem neuen Passwort anmelden.
-                </p>
-                <button style={btnStyle} onClick={() => { setMode('default'); setResetDone(false); }}>
+              <>
+                <Banner type="success">
+                  <strong>Passwort gespeichert!</strong> Du kannst dich jetzt anmelden.
+                </Banner>
+                <button className="mz-btn-primary mz-auth-submit" onClick={() => { setMode('default'); setResetDone(false); }}>
                   Zur Anmeldung →
                 </button>
-              </div>
+              </>
             ) : (
               <>
-                <h2 className="text-base font-semibold mb-1" style={{ color: '#2c2420' }}>
-                  Neues Passwort festlegen
-                </h2>
-                <p className="text-sm mb-5" style={{ color: '#9c8c84' }}>
-                  Wähle ein sicheres Passwort mit mindestens 8 Zeichen.
-                </p>
-                {error && (
-                  <div className="mb-4 px-4 py-3 rounded-xl text-sm" style={{ backgroundColor: '#fce4ec', color: '#c62828' }}>
-                    {error}
+                <div className="mz-auth-forgot-head">
+                  <h3>Neues Passwort</h3>
+                  <p>Wähle ein sicheres Passwort mit mindestens 8 Zeichen.</p>
+                </div>
+                {error && <Banner type="error" onClose={() => setError('')}>{error}</Banner>}
+                <form onSubmit={handleReset} className="mz-auth-form">
+                  <div className="mz-auth-field">
+                    <label>Neues Passwort</label>
+                    <input type="password" autoComplete="new-password" placeholder="••••••••" value={resetPw} onChange={e => setResetPw(e.target.value)} required />
                   </div>
-                )}
-                <form onSubmit={handleReset} className="space-y-4">
-                  <div>
-                    <label className="lp-login-label">Neues Passwort</label>
-                    <StyledInput
-                      type="password" autoComplete="new-password" placeholder="••••••••"
-                      value={resetPw} onChange={(e) => setResetPw(e.target.value)} required
-                    />
+                  <div className="mz-auth-field">
+                    <label>Passwort bestätigen</label>
+                    <input type="password" autoComplete="new-password" placeholder="••••••••" value={resetPwConfirm} onChange={e => setResetPwConfirm(e.target.value)} required />
                   </div>
-                  <div>
-                    <label className="lp-login-label">Passwort bestätigen</label>
-                    <StyledInput
-                      type="password" autoComplete="new-password" placeholder="••••••••"
-                      value={resetPwConfirm} onChange={(e) => setResetPwConfirm(e.target.value)} required
-                    />
-                  </div>
-                  <button type="submit" style={btnStyle} disabled={loading}>
+                  <button type="submit" className="mz-btn-primary mz-auth-submit" disabled={loading}>
                     {loading ? 'Wird gespeichert…' : 'Passwort speichern →'}
                   </button>
                 </form>
               </>
             )}
-          </>
+          </div>
         )}
 
-        {/* ── PASSWORT VERGESSEN (E-Mail eingeben) ── */}
+        {/* ── FORGOT PASSWORD ── */}
         {mode === 'forgot' && (
-          <>
+          <div className="mz-auth-form">
             {forgotSent ? (
-              <div className="space-y-4">
-                <div
-                  className="px-4 py-4 rounded-xl text-sm flex items-start gap-3"
-                  style={{ backgroundColor: '#eef4ee', color: '#2e5a32', border: '1px solid #c8d8c8' }}
-                >
-                  <span style={{ fontSize: 20 }}>📧</span>
-                  <div>
-                    <strong>Falls diese Adresse bekannt ist, haben wir einen Link gesendet.</strong>
-                    <p style={{ margin: '4px 0 0', fontSize: 13, opacity: 0.85 }}>
-                      Bitte prüfe dein Postfach (auch Spam-Ordner). Der Link ist 1 Stunde gültig.
-                    </p>
-                  </div>
-                </div>
-                <button
-                  style={{ ...linkBtn, display: 'block', marginTop: 8 }}
-                  onClick={() => { setMode('default'); setForgotSent(false); setForgotEmail(''); }}
-                >
-                  ← Zurück zur Anmeldung
+              <>
+                <Banner type="success">
+                  <strong>Falls diese Adresse bekannt ist, haben wir einen Link gesendet.</strong>
+                  <br /><span style={{ fontSize: 12, opacity: 0.85 }}>Bitte prüfe dein Postfach (auch Spam). Der Link ist 1 Stunde gültig.</span>
+                </Banner>
+                <button className="mz-auth-link" onClick={() => { setMode('default'); setForgotSent(false); setForgotEmail(''); }}>
+                  <ChevronLeft size={13} /> Zurück zur Anmeldung
                 </button>
-              </div>
+              </>
             ) : (
               <>
-                <button
-                  style={{ ...linkBtn, marginBottom: 16, display: 'flex', alignItems: 'center', gap: 4 }}
-                  onClick={() => { setMode('default'); setError(''); }}
-                >
-                  ← Zurück
-                </button>
-                <h2 className="text-base font-semibold mb-1" style={{ color: '#2c2420' }}>
-                  Passwort vergessen?
-                </h2>
-                <p className="text-sm mb-5" style={{ color: '#9c8c84' }}>
-                  Gib deine E-Mail-Adresse ein. Falls sie bei uns registriert ist,
-                  erhältst du einen Link zum Zurücksetzen.
-                </p>
-                {error && (
-                  <div className="mb-4 px-4 py-3 rounded-xl text-sm" style={{ backgroundColor: '#fce4ec', color: '#c62828' }}>
-                    {error}
+                <div className="mz-auth-forgot-head">
+                  <h3>Passwort vergessen?</h3>
+                  <p>Gib deine E-Mail ein. Falls sie bei uns registriert ist, erhältst du einen Reset-Link.</p>
+                </div>
+                {error && <Banner type="error" onClose={() => setError('')}>{error}</Banner>}
+                <form onSubmit={handleForgot} className="mz-auth-form">
+                  <div className="mz-auth-field">
+                    <label>E-Mail</label>
+                    <input type="email" autoComplete="email" placeholder="deine@email.ch" value={forgotEmail} onChange={e => setForgotEmail(e.target.value)} required />
                   </div>
-                )}
-                <form onSubmit={handleForgot} className="space-y-4">
-                  <div>
-                    <label className="lp-login-label">E-Mail</label>
-                    <StyledInput
-                      type="email" autoComplete="email" placeholder="deine@email.ch"
-                      value={forgotEmail} onChange={(e) => setForgotEmail(e.target.value)} required
-                    />
-                  </div>
-                  <button type="submit" style={btnStyle} disabled={loading}>
+                  <button type="submit" className="mz-btn-primary mz-auth-submit" disabled={loading}>
                     {loading ? 'Wird gesendet…' : 'Reset-Link senden →'}
                   </button>
                 </form>
+                <button className="mz-auth-link" onClick={() => { setMode('default'); setError(''); }}>
+                  <ChevronLeft size={13} /> Zurück
+                </button>
               </>
             )}
-          </>
+          </div>
         )}
 
-        {/* ── STANDARD-MODUS: Login / Register ── */}
+        {/* ── DEFAULT: Login / Register ── */}
         {mode === 'default' && (
           <>
-            {/* Confirm-Flow Banner */}
             {confirmed && (
-              <div className="mb-4 px-4 py-3 rounded-xl text-sm flex items-start gap-2"
-                style={{ backgroundColor: '#e8f2e8', color: '#2e5a32', border: '1px solid #c8d8c8' }}>
-                <span style={{ fontSize: 18 }}>✓</span>
-                <div>
-                  <strong>E-Mail bestätigt!</strong>
-                  <p style={{ margin: '2px 0 0', fontSize: 13, opacity: 0.85 }}>Du kannst dich jetzt anmelden.</p>
-                </div>
-              </div>
+              <Banner type="success" onClose={() => {}}>
+                <strong>E-Mail bestätigt!</strong> Du kannst dich jetzt anmelden.
+              </Banner>
             )}
             {tokenError === 'invalid_token' && (
-              <div className="mb-4 px-4 py-3 rounded-xl text-sm" style={{ backgroundColor: '#fce4ec', color: '#c62828' }}>
-                <strong>Ungültiger Bestätigungslink.</strong>
-                <p style={{ margin: '2px 0 0', fontSize: 13, opacity: 0.85 }}>Bitte fordere unten einen neuen Link an.</p>
-              </div>
+              <Banner type="error">
+                <strong>Ungültiger Bestätigungslink.</strong> Bitte fordere unten einen neuen an.
+              </Banner>
             )}
             {tokenError === 'expired_token' && (
-              <div className="mb-4 px-4 py-3 rounded-xl text-sm" style={{ backgroundColor: '#fff3e0', color: '#e65100' }}>
-                <strong>Link abgelaufen.</strong>
-                <p style={{ margin: '2px 0 0', fontSize: 13, opacity: 0.85 }}>
-                  Der Bestätigungslink war nur 24 Stunden gültig — bitte logge dich ein und fordere einen neuen Link an.
-                </p>
-              </div>
+              <Banner type="warn">
+                <strong>Link abgelaufen.</strong> Bitte logge dich ein und fordere einen neuen Link an.
+              </Banner>
             )}
-
-            {/* Pending-Confirmation Hinweis */}
             {pendingEmail && (
-              <div className="mb-4 px-4 py-3 rounded-xl text-sm"
-                style={{ backgroundColor: '#eef4ee', color: '#2e5a32', border: '1px solid #c8d8c8' }}>
-                <strong>📧 Bitte E-Mail prüfen und bestätigen</strong>
-                <p style={{ margin: '4px 0 8px', fontSize: 13, opacity: 0.85 }}>
-                  Wir haben dir einen Bestätigungslink an <strong>{pendingEmail}</strong> gesendet.
-                </p>
-                <button onClick={handleResend} disabled={resending} className="text-xs font-semibold underline"
-                  style={{ color: '#4a7a4e', cursor: resending ? 'not-allowed' : 'pointer', opacity: resending ? 0.6 : 1 }}>
+              <Banner type="success">
+                <strong>📧 E-Mail bestätigen</strong>
+                <br />Wir haben einen Bestätigungslink an <strong>{pendingEmail}</strong> gesendet.
+                <br />
+                <button
+                  onClick={handleResend}
+                  disabled={resending}
+                  style={{ marginTop: 6, fontSize: 12, fontWeight: 600, textDecoration: 'underline', color: 'inherit', opacity: resending ? 0.6 : 1 }}
+                >
                   {resending ? 'Wird gesendet…' : 'E-Mail erneut senden'}
                 </button>
-                {resendNotice && <p style={{ margin: '6px 0 0', fontSize: 12, color: '#4a7a4e' }}>{resendNotice}</p>}
-              </div>
+                {resendNotice && <span style={{ display: 'block', marginTop: 4, fontSize: 12 }}>{resendNotice}</span>}
+              </Banner>
             )}
 
             {/* Tabs */}
-            <div className="flex rounded-2xl p-1 mb-6" style={{ backgroundColor: '#efe9df' }}>
+            <div className="mz-auth-tabs">
               {(['login', 'register'] as const).map((t) => (
-                <button key={t} onClick={() => { setTab(t); setError(''); }}
-                  className="flex-1 py-2 text-sm font-semibold rounded-xl transition-all"
-                  style={tab === t
-                    ? { backgroundColor: '#fff9f3', color: '#2c2420', boxShadow: '0 1px 6px rgba(44,36,32,0.10)' }
-                    : { color: '#9c8c84', backgroundColor: 'transparent' }}>
+                <button
+                  key={t}
+                  onClick={() => { setTab(t); setError(''); }}
+                  className={`mz-auth-tab${tab === t ? ' on' : ''}`}
+                >
                   {t === 'login' ? 'Anmelden' : 'Registrieren'}
                 </button>
               ))}
             </div>
 
-            {/* Error banner */}
-            {error && (
-              <div className="mb-4 px-4 py-3 rounded-xl text-sm" style={{ backgroundColor: '#fce4ec', color: '#c62828' }}>
-                {error}
-              </div>
-            )}
+            {error && <Banner type="error" onClose={() => setError('')}>{error}</Banner>}
 
             {/* ── LOGIN FORM ── */}
             {tab === 'login' && (
-              <form onSubmit={handleLogin} className="space-y-4">
-                <div>
-                  <label className="lp-login-label">E-Mail</label>
-                  <StyledInput type="email" autoComplete="email" placeholder="deine@email.ch"
-                    value={loginEmail} onChange={(e) => setLoginEmail(e.target.value)} required />
+              <form onSubmit={handleLogin} className="mz-auth-form">
+                <div className="mz-auth-field">
+                  <label>E-Mail</label>
+                  <input type="email" autoComplete="email" placeholder="deine@email.ch"
+                    value={loginEmail} onChange={e => setLoginEmail(e.target.value)} required />
                 </div>
-                <div>
-                  <label className="lp-login-label">Passwort</label>
-                  <StyledInput type="password" autoComplete="current-password" placeholder="••••••••"
-                    value={loginPassword} onChange={(e) => setLoginPassword(e.target.value)} required />
-                  {/* Passwort vergessen Link */}
-                  <div className="text-right mt-1">
-                    <button type="button" style={linkBtn}
-                      onClick={() => { setMode('forgot'); setError(''); setForgotEmail(loginEmail); }}>
-                      Passwort vergessen?
-                    </button>
-                  </div>
+                <div className="mz-auth-field">
+                  <label>Passwort</label>
+                  <input type="password" autoComplete="current-password" placeholder="••••••••"
+                    value={loginPassword} onChange={e => setLoginPassword(e.target.value)} required />
+                  <button
+                    type="button"
+                    className="mz-auth-link"
+                    style={{ alignSelf: 'flex-end', marginTop: 4, fontSize: 12 }}
+                    onClick={() => { setMode('forgot'); setError(''); setForgotEmail(loginEmail); }}
+                  >
+                    Passwort vergessen?
+                  </button>
                 </div>
-                <button type="submit" style={btnStyle} disabled={loading}>
+                <button type="submit" className="mz-btn-primary mz-auth-submit" disabled={loading}>
                   {loading ? 'Anmelden…' : 'Anmelden →'}
+                </button>
+                <div className="mz-auth-divider">oder</div>
+                <button type="button" className="mz-auth-skip" onClick={() => setTab('register')}>
+                  Noch kein Konto? Jetzt registrieren →
                 </button>
               </form>
             )}
 
             {/* ── REGISTER FORM ── */}
             {tab === 'register' && (
-              <form onSubmit={handleRegister} className="space-y-4">
-                <div className="grid grid-cols-2 gap-3">
-                  <div>
-                    <label className="lp-login-label">Vorname</label>
-                    <StyledInput type="text" placeholder="Max" value={firstName}
-                      onChange={(e) => setFirstName(e.target.value)} required />
+              <form onSubmit={handleRegister} className="mz-auth-form">
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+                  <div className="mz-auth-field">
+                    <label>Vorname</label>
+                    <input type="text" placeholder="Max" value={firstName} onChange={e => setFirstName(e.target.value)} required />
                   </div>
-                  <div>
-                    <label className="lp-login-label">Nachname</label>
-                    <StyledInput type="text" placeholder="Muster" value={lastName}
-                      onChange={(e) => setLastName(e.target.value)} required />
+                  <div className="mz-auth-field">
+                    <label>Nachname</label>
+                    <input type="text" placeholder="Muster" value={lastName} onChange={e => setLastName(e.target.value)} required />
                   </div>
                 </div>
-                <div>
-                  <label className="lp-login-label">E-Mail</label>
-                  <StyledInput type="email" autoComplete="email" placeholder="deine@email.ch"
-                    value={regEmail} onChange={(e) => setRegEmail(e.target.value)} required />
+                <div className="mz-auth-field">
+                  <label>E-Mail</label>
+                  <input type="email" autoComplete="email" placeholder="deine@email.ch"
+                    value={regEmail} onChange={e => setRegEmail(e.target.value)} required />
                 </div>
-                <div>
-                  <label className="lp-login-label">Passwort (mind. 8 Zeichen)</label>
-                  <StyledInput type="password" autoComplete="new-password" placeholder="••••••••"
-                    value={regPassword} onChange={(e) => setRegPassword(e.target.value)} required />
+                <div className="mz-auth-field">
+                  <label>Passwort (mind. 8 Zeichen)</label>
+                  <input type="password" autoComplete="new-password" placeholder="••••••••"
+                    value={regPassword} onChange={e => setRegPassword(e.target.value)} required />
                 </div>
-                <div>
-                  <label className="lp-login-label">Passwort bestätigen</label>
-                  <StyledInput type="password" autoComplete="new-password" placeholder="••••••••"
-                    value={regConfirm} onChange={(e) => setRegConfirm(e.target.value)} required />
+                <div className="mz-auth-field">
+                  <label>Passwort bestätigen</label>
+                  <input type="password" autoComplete="new-password" placeholder="••••••••"
+                    value={regConfirm} onChange={e => setRegConfirm(e.target.value)} required />
                 </div>
+
+                {/* Plan selection */}
                 <div>
-                  <label className="lp-login-label" style={{ marginBottom: 8 }}>Plan wählen</label>
-                  <div className="grid grid-cols-3 gap-2">
+                  <p className="mz-auth-plans-lbl">Plan wählen</p>
+                  <div className="mz-auth-plans-row">
                     {PLANS.map((p) => (
-                      <button key={p.id} type="button" onClick={() => setPlan(p.id)}
-                        className="flex flex-col items-center gap-1 rounded-2xl p-3 text-center transition-all"
-                        style={plan === p.id
-                          ? { border: `2px solid ${p.color}`, backgroundColor: `${p.color}18` }
-                          : { border: '1.5px solid #e0d8ce', backgroundColor: '#f7f4ee' }}>
-                        <span style={{ fontSize: 20 }}>{p.icon}</span>
-                        <span className="text-xs font-bold" style={{ color: plan === p.id ? p.color : '#2c2420' }}>{p.name}</span>
-                        <span className="text-xs font-semibold" style={{ color: p.color }}>{p.price}</span>
-                        <span className="text-[10px] leading-tight" style={{ color: '#9c8c84' }}>{p.detail}</span>
+                      <button
+                        key={p.id}
+                        type="button"
+                        onClick={() => setPlan(p.id)}
+                        className={`mz-auth-plan${p.featured ? ' feat' : ''}${plan === p.id ? ' on' : ''}`}
+                      >
+                        <span className="mz-auth-plan-star">{p.star}</span>
+                        <span className="mz-auth-plan-name">{p.name}</span>
+                        <span className="mz-auth-plan-price">{p.price}</span>
+                        <span className="mz-auth-plan-per">{p.per}</span>
+                        <span className="mz-auth-plan-feat">{p.feat}</span>
                       </button>
                     ))}
                   </div>
                 </div>
-                <button type="submit" style={btnStyle} disabled={loading}>
-                  {loading ? 'Wird verarbeitet…'
-                    : plan === 'trial'    ? 'Kostenlos starten →'
-                    : plan === 'lifetime' ? 'Jetzt kaufen (CHF 35) →'
-                    : 'Abo starten (CHF 3/Mt.) →'}
+
+                <button type="submit" className="mz-btn-primary mz-auth-submit" disabled={loading}>
+                  {submitLabel}
                 </button>
-                <p className="text-[11px] text-center" style={{ color: '#9c8c84' }}>
+                <p style={{ fontSize: 11, textAlign: 'center', color: 'var(--muted)', margin: 0 }}>
                   {plan === 'trial'
-                    ? '7 Tage gratis, danach wähle ein Abo — kein automatisches Upgrade.'
-                    : 'Du wirst nach dem Klick zu Stripe weitergeleitet. 🔒 Sichere Zahlung.'}
+                    ? '7 Tage gratis · kein automatisches Upgrade'
+                    : '🔒 Sichere Zahlung via Stripe'}
                 </p>
+                <div className="mz-auth-divider">oder</div>
+                <button type="button" className="mz-auth-skip" onClick={() => setTab('login')}>
+                  Bereits registriert? Anmelden →
+                </button>
               </form>
             )}
-
-            {/* Footer links */}
-            <div className="lp-login-footer" style={{ marginTop: 24 }}>
-              {tab === 'login'
-                ? <span>Noch kein Konto? <button onClick={() => setTab('register')} className="font-semibold" style={{ color: '#b5614a' }}>Registrieren</button></span>
-                : <span>Bereits registriert? <button onClick={() => setTab('login')} className="font-semibold" style={{ color: '#b5614a' }}>Anmelden</button></span>
-              }
-            </div>
           </>
         )}
 
@@ -508,7 +430,7 @@ function AuthInner() {
   );
 }
 
-/* ─── Page wrapper with Suspense for useSearchParams ─────────────────────── */
+/* ─── Page wrapper ────────────────────────────────────────────────────────── */
 
 export default function AuthPage() {
   return (

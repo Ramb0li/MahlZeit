@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect, useContext, createContext, useRef, useCallback } from 'react';
 import { Plus, Trash2, Save, ChevronDown, ChevronUp, Search, X, Users, Mail, Edit3 } from 'lucide-react';
-import { THEMES } from '@/lib/themes';
+import { THEME_DEFS, toDataTheme } from '@/lib/themes';
 import type { ThemeId } from '@/lib/themes';
 import type { AppSettings, DayConstraint, Child } from '@/types';
 import type { Group, GroupRole } from '@/lib/groups';
@@ -512,25 +512,35 @@ export function SettingsView({
       )}
 
       {/* ── Theme picker ─────────────────────────────────────────────────── */}
-      <Section id="theme" title="Design-Variante" sub="Wird nach dem Speichern sofort angewendet.">
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-          {(Object.values(THEMES) as typeof THEMES[ThemeId][]).map((t) => {
-            const isActive = (settings.theme ?? 'sage') === t.id;
+      <Section id="theme" title="Design" sub="Sofort angewendet.">
+        <div className="mz-theme-tiles">
+          {THEME_DEFS.map((t) => {
+            const activeTheme = toDataTheme(settings.theme as ThemeId);
+            const isActive = activeTheme === t.dataTheme;
             return (
               <button
                 key={t.id}
-                onClick={() => setSettings((s) => ({ ...s, theme: t.id as ThemeId }))}
-                className="flex flex-col overflow-hidden rounded-2xl border-2 transition-all"
-                style={isActive ? { borderColor: '#4a7a4e', boxShadow: '0 4px 16px rgba(74,122,78,0.18)' } : { borderColor: '#e0d8ce' }}
+                onClick={() => {
+                  const newSettings = { ...settings, theme: t.id as ThemeId };
+                  setSettings(newSettings);
+                  document.documentElement.setAttribute('data-theme', t.dataTheme);
+                  try { localStorage.setItem('mz-theme', t.dataTheme); } catch {}
+                }}
+                className={`mz-theme-tile${isActive ? ' on' : ''}`}
               >
-                <div className="flex h-10">
-                  {t.previewColors.map((color, i) => (
-                    <div key={i} className="flex-1" style={{ backgroundColor: color }} />
-                  ))}
+                <div className="mz-theme-preview" style={{ background: t.previewBg }}>
+                  <div className="mz-theme-accent-bar" style={{ background: t.accentColor }} />
+                  {isActive && (
+                    <div className="mz-theme-check">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke={t.accentColor} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M20 6 9 17l-5-5" />
+                      </svg>
+                    </div>
+                  )}
                 </div>
-                <div className="px-2 py-1.5 flex flex-col items-start" style={{ backgroundColor: t.isDark ? '#1c1510' : '#fff9f3' }}>
-                  <span className="text-xs font-bold" style={{ color: t.isDark ? '#ede5d8' : '#2c2420' }}>{t.label}</span>
-                  <span className="text-[10px]" style={{ color: '#9c8c84' }}>{t.description}</span>
+                <div className="mz-theme-info">
+                  <span className="mz-theme-name">{t.label}</span>
+                  <span className="mz-theme-mode">{t.mode}</span>
                 </div>
               </button>
             );

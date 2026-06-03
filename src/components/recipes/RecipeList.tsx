@@ -1,6 +1,7 @@
 'use client';
 import { useState, useMemo, useEffect } from 'react';
 import { Plus, Search, Link, Pencil, Trash2, Clock, Archive, RotateCcw, ChevronDown, ChevronUp } from 'lucide-react';
+import { PhotoSlot } from '@/components/ui/PhotoSlot';
 import { RecipeForm } from './RecipeForm';
 import { ImportRecipeModal } from './ImportRecipeModal';
 import { Modal } from '@/components/ui/Modal';
@@ -148,88 +149,64 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
     <div className="space-y-4">
 
       {/* Search + action buttons */}
-      <div className="flex items-center gap-2">
-        <div className="relative flex-1">
-          <Search size={15} className="absolute left-3 top-1/2 -translate-y-1/2" style={{ color: '#9c8c84' }} />
+      <div className="mz-rfilters">
+        <div className="mz-search-box" style={{ flex: 1 }}>
+          <Search size={15} style={{ color: 'var(--muted)', flexShrink: 0 }} />
           <input
             type="text"
             placeholder="Rezept suchen…"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full pl-9 pr-4 py-2.5 rounded-xl text-sm focus:outline-none"
-            style={{ border: '1px solid #e0d8ce', backgroundColor: '#fff9f3', color: '#2c2420' }}
           />
         </div>
-        <button
-          onClick={() => setImportOpen(true)}
-          className="flex items-center gap-1.5 px-3 py-2.5 rounded-xl text-sm font-semibold shrink-0 transition-opacity hover:opacity-80 border"
-          style={{ borderColor: '#4a7a4e', color: '#4a7a4e', backgroundColor: '#f2f6f2' }}
-          title="Rezept von URL oder Screenshot importieren"
-        >
+        <button onClick={() => setImportOpen(true)} className="mz-btn-soft" title="Rezept importieren">
           <Link size={15} />
-          <span className="hidden sm:inline">Importieren</span>
+          <span className="mz-hide-sm">Importieren</span>
         </button>
-        <button
-          onClick={() => setIsCreating(true)}
-          className="flex items-center gap-1.5 px-3 py-2.5 rounded-xl text-sm font-semibold shrink-0 transition-opacity hover:opacity-80"
-          style={{ backgroundColor: '#b5614a', color: '#fff' }}
-        >
+        <button onClick={() => setIsCreating(true)} className="mz-btn-primary">
           <Plus size={15} />
-          <span className="hidden sm:inline">Neues Rezept</span>
-          <span className="sm:hidden">Neu</span>
+          <span className="mz-hide-sm">Neues Rezept</span>
         </button>
       </div>
 
       {/* Filters */}
       {!showArchive && (
-        <div className="space-y-2">
-          {/* Category dropdown */}
-          <select
-            value={filterCategory}
-            onChange={e => setFilterCategory(e.target.value as Category | 'Alle')}
-            className="w-full rounded-xl px-3 py-2 text-sm focus:outline-none"
-            style={{ border: '1px solid #e0d8ce', backgroundColor: '#fff9f3', color: '#2c2420', cursor: 'pointer' }}
-          >
-            <option value="Alle">Alle Kategorien</option>
-            {CATEGORIES.map(c => <option key={c} value={c}>{c}</option>)}
-          </select>
-
-          {/* Zeit chips (computed) */}
-          <div className="flex flex-wrap gap-1.5">
-            {['Schnell (<20min)', 'Einfach (<30min)'].map(tag => (
-              <button key={tag} onClick={() => toggleTag(tag)}
-                className="px-2.5 py-1 rounded-full text-xs font-semibold transition-all"
-                style={filterTags.includes(tag) ? { backgroundColor: '#2c2420', color: '#fff' } : chipInactive}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+          {/* Category scroll */}
+          <div className="mz-catscroll">
+            <button
+              onClick={() => setFilterCategory('Alle')}
+              className={`mz-chip${filterCategory === 'Alle' ? ' on' : ''}`}
+            >
+              Alle
+            </button>
+            {CATEGORIES.map(c => (
+              <button
+                key={c}
+                onClick={() => setFilterCategory(c)}
+                className={`mz-chip${filterCategory === c ? ' on' : ''}`}
               >
-                ⏱ {tag}
+                {c}
               </button>
             ))}
           </div>
 
-          {/* Tag groups */}
-          {(Object.entries(TAG_GROUPS) as [string, readonly string[]][]).map(([group, tags]) => (
-            <div key={group} className="flex flex-wrap gap-1.5 items-center">
-              <span className="text-[10px] font-semibold uppercase tracking-wide w-full" style={{ color: '#9c8c84' }}>{group}</span>
-              {tags.map(tag => (
-                <button key={tag} onClick={() => toggleTag(tag)}
-                  className="px-2.5 py-1 rounded-full text-xs font-semibold transition-all"
-                  style={filterTags.includes(tag) ? chipTagActive : chipInactive}
-                >
-                  {tag}
-                </button>
-              ))}
-            </div>
-          ))}
-
-          {filterTags.length > 0 && (
-            <button
-              onClick={() => setFilterTags([])}
-              className="text-xs px-2 py-0.5 rounded-full transition-all"
-              style={{ color: '#b5614a', border: '1px solid #b5614a' }}
-            >
-              Filter zurücksetzen
-            </button>
-          )}
+          {/* Tag chips */}
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+            {['Schnell (<20min)', 'Einfach (<30min)', ...(Object.values(TAG_GROUPS).flat())].map(tag => (
+              <button key={tag} onClick={() => toggleTag(tag)}
+                className={`mz-chip${filterTags.includes(tag) ? ' on' : ''}`}
+                style={{ fontSize: 12, padding: '5px 10px' }}
+              >
+                {tag}
+              </button>
+            ))}
+            {filterTags.length > 0 && (
+              <button onClick={() => setFilterTags([])} className="mz-btn-soft" style={{ fontSize: 12, padding: '5px 10px' }}>
+                Zurücksetzen
+              </button>
+            )}
+          </div>
         </div>
       )}
 
@@ -257,7 +234,7 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
 
       {/* Active recipes */}
       {!showArchive && (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        <div className="mz-rgrid">
           {activeFiltered.map((recipe) => (
             <RecipeCard
               key={recipe.id}
@@ -362,75 +339,53 @@ interface RecipeCardProps {
 }
 
 function RecipeCard({ recipe, onView, onEdit, onArchive }: RecipeCardProps) {
-  const catColor = CAT_COLORS[recipe.category] ?? { bg: '#efe9df', color: '#5a4e48' };
-  const timeTags = computeTimeTags(recipe.timeMinutes);
-  const isSchnell = timeTags.includes('Schnell (<20min)');
-  const timeStyle = isSchnell
-    ? { backgroundColor: '#e8f5e9', color: '#2e7d32' }
-    : timeTags.includes('Einfach (<30min)')
-      ? { backgroundColor: '#fff3e0', color: '#e65100' }
-      : { backgroundColor: '#fce4ec', color: '#c62828' };
-
   const keyTags = (recipe.tags ?? []).filter(t =>
-    ['Vegetarisch', 'Vegan', 'Mealprep-geeignet'].includes(t)
+    ['Vegetarisch', 'Vegan', 'Mealprep-geeignet', 'Kinderfreundlich'].includes(t)
   ).slice(0, 2);
 
   return (
-    <div
-      className="group rounded-2xl overflow-hidden transition-all cursor-pointer flex flex-col"
-      style={{
-        backgroundColor: '#fff9f3',
-        border: '1px solid #e0d8ce',
-        boxShadow: '0 2px 12px rgba(44,36,32,0.05)',
-      }}
-      onClick={onView}
-      onMouseEnter={e => {
-        (e.currentTarget as HTMLElement).style.borderColor = '#b5614a';
-        (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 28px rgba(44,36,32,0.12)';
-      }}
-      onMouseLeave={e => {
-        (e.currentTarget as HTMLElement).style.borderColor = '#e0d8ce';
-        (e.currentTarget as HTMLElement).style.boxShadow = '0 2px 12px rgba(44,36,32,0.05)';
-      }}
-    >
-      <div className="relative overflow-hidden shrink-0" style={{ aspectRatio: '4 / 3' }}>
+    <button className="mz-rcard" onClick={onView} style={{ textAlign: 'left' }}>
+      <div className="mz-rcard-img">
         {recipe.imageUrl ? (
-          <img src={recipe.imageUrl} alt={recipe.name} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={recipe.imageUrl} alt={recipe.name} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
         ) : (
-          <div className="w-full h-full flex items-center justify-center" style={{ backgroundColor: catColor.bg }}>
-            <span style={{ fontSize: 40, opacity: 0.35 }}>🍽</span>
-          </div>
+          <PhotoSlot category={recipe.category} />
         )}
-        <div className="absolute top-2 right-2 flex gap-1 opacity-0 group-hover:opacity-100 transition-opacity" onClick={e => e.stopPropagation()}>
-          <button onClick={onEdit} className="w-7 h-7 rounded-full flex items-center justify-center hover:opacity-80" style={{ backgroundColor: 'rgba(255,255,255,0.9)', color: '#2c2420' }} title="Bearbeiten">
-            <Pencil size={12} />
+        {recipe.timeMinutes && (
+          <span className="mz-rcard-time">
+            <Clock size={10} />{recipe.timeMinutes} min
+          </span>
+        )}
+        <div
+          style={{ position: 'absolute', top: 8, right: 8, display: 'flex', gap: 4, opacity: 0, transition: '.15s' }}
+          className="group-hover:opacity-100"
+          onClick={e => e.stopPropagation()}
+          onMouseEnter={e => (e.currentTarget.style.opacity = '1')}
+        >
+          <button onClick={onEdit} className="mz-detail-close" style={{ width: 28, height: 28 }} title="Bearbeiten">
+            <Pencil size={11} />
           </button>
-          <button onClick={onArchive} className="w-7 h-7 rounded-full flex items-center justify-center hover:opacity-80" style={{ backgroundColor: 'rgba(255,255,255,0.9)', color: '#c49a6c' }} title="Archivieren">
-            <Archive size={12} />
+          <button onClick={onArchive} className="mz-detail-close" style={{ width: 28, height: 28 }} title="Archivieren">
+            <Archive size={11} />
           </button>
         </div>
       </div>
-
-      <div className="p-3 flex-1 flex flex-col gap-2">
-        <h3 className="font-bold text-sm leading-snug" style={{ color: '#2c2420' }}>{recipe.name}</h3>
-        <div className="flex flex-wrap gap-1">
-          <span className="text-[11px] px-2 py-0.5 rounded-full font-semibold" style={{ backgroundColor: catColor.bg, color: catColor.color }}>
-            {recipe.category}
-          </span>
-          <span className="inline-flex items-center gap-1 text-[11px] px-2 py-0.5 rounded-full font-semibold" style={timeStyle}>
-            <Clock size={9} />{recipe.timeMinutes} min
-          </span>
+      <div className="mz-rcard-body">
+        <span className="mz-rcard-cat">{recipe.category}</span>
+        <span className="mz-rcard-name mz-clamp2">{recipe.name}</span>
+        <div className="mz-rcard-tags">
           {keyTags.map(tag => (
-            <span key={tag} className="text-[11px] px-2 py-0.5 rounded-full font-semibold" style={{ backgroundColor: '#f1f8e9', color: '#558b2f' }}>
-              {tag}
-            </span>
+            <span key={tag} className="mz-chip" style={{ fontSize: 11, padding: '3px 8px', cursor: 'default' }}>{tag}</span>
           ))}
+          {recipe.description && keyTags.length === 0 && (
+            <span style={{ fontSize: 12, color: 'var(--muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', maxWidth: '100%' }}>
+              {recipe.description}
+            </span>
+          )}
         </div>
-        {recipe.description && (
-          <p className="text-xs line-clamp-2 mt-auto" style={{ color: '#9c8c84' }}>{recipe.description}</p>
-        )}
       </div>
-    </div>
+    </button>
   );
 }
 

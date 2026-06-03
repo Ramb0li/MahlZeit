@@ -1,435 +1,292 @@
-import Link  from 'next/link';
+import Link from 'next/link';
 import Image from 'next/image';
+import { Check } from 'lucide-react';
 
-/* ─── Static data ──────────────────────────────────────────────────── */
-
-const PHOTO_CELLS = [
-  { cls: 'lp-food-hero-1',                     image: '/images/recipes/cuiselin-taboule.jpeg',              alt: 'Taboulé'              },
-  { cls: 'lp-food-hero-3 lp-photo-cell-center', image: '/images/recipes/cuiselin-pesto-genovese.jpg',       alt: 'Pesto Genovese'       },
-  { cls: 'lp-food-hero-2',                     image: '/images/recipes/cuiselin-gurken-ananas-salat.jpeg',  alt: 'Gurken-Ananas-Salat'  },
-  { cls: 'lp-food-hero-2',                     image: '/images/recipes/cuiselin-granola.jpg',                alt: 'Granola'               },
-  { cls: 'lp-food-hero-1',                     image: '/images/recipes/cuiselin-gruener-linsensalat.jpg',   alt: 'Grüner Linsensalat'   },
+const COLLAGE = [
+  { cls: 'mz-cc1', src: '/images/recipes/cuiselin-taboule.jpeg',             alt: 'Taboulé'           },
+  { cls: 'mz-cc2', src: '/images/recipes/cuiselin-gurken-ananas-salat.jpeg', alt: 'Gurken-Ananas-Salat'},
+  { cls: 'mz-cc3', src: '/images/recipes/cuiselin-granola.jpg',              alt: 'Granola'            },
+  { cls: 'mz-cc4', src: '/images/recipes/cuiselin-pesto-genovese.jpg',       alt: 'Pesto Genovese'    },
 ];
 
-const MOCK_SHOPPING = [
-  { done: true,  name: 'Pasta',        qty: '500g'   },
-  { done: true,  name: 'Zitronen',     qty: '3×'     },
-  { done: false, name: 'Avocados',     qty: '2×'     },
-  { done: false, name: 'Kichererbsen', qty: '1 Dose' },
-  { done: false, name: 'Haferflocken', qty: '1kg'    },
-];
-
-const MOCK_WEEK = [
-  { name: 'Mo', meal: 'Overnight Oats', sub: 'Linsensuppe',  today: false },
-  { name: 'Di', meal: 'Birchermüesli',  sub: 'Pasta Limone', today: true  },
-  { name: 'Mi', meal: 'Avocado Toast',  sub: 'Buddha Bowl',  today: false },
-  { name: 'Do', meal: 'Smoothie Bowl',  sub: 'Gemüse Curry', today: false },
-  { name: 'Fr', meal: 'Porridge',       sub: 'Pizza Bianca', today: false },
-  { name: 'Sa', meal: 'Pancakes',       sub: 'Risotto',      today: false },
-  { name: 'So', meal: 'French Toast',   sub: 'Tajine',       today: false },
+const WEEK = [
+  { name: 'Mo', meal: 'Overnight Oats',  sub: '5 min',   today: false },
+  { name: 'Di', meal: 'Pasta al Limone', sub: '25 min',  today: true  },
+  { name: 'Mi', meal: 'Buddha Bowl',     sub: '20 min',  today: false },
+  { name: 'Do', meal: 'Gemüse Curry',    sub: '35 min',  today: false },
+  { name: 'Fr', meal: 'Pizza Bianca',    sub: '30 min',  today: false },
+  { name: 'Sa', meal: 'Risotto',         sub: '40 min',  today: false },
+  { name: 'So', meal: 'Linsensuppe',     sub: '25 min',  today: false },
 ];
 
 const REVIEWS = [
-  { text: '"Endlich plane ich die Woche durch — kein tägliches Grübeln mehr was ich kochen soll. Die Einkaufsliste spart mir jedes Mal Zeit."', name: 'Sarah M.',  handle: 'Beta-Testerin', emoji: '👩'    },
-  { text: '"Ich esse seit MahlZeit viel abwechslungsreicher. Die Rezeptvorschläge sind wirklich gut — und alles ist vegan."',                 name: 'Lukas B.',  handle: 'Beta-Tester',   emoji: '🧑'    },
-  { text: '"Das UI ist so aufgeräumt. Ich habe viele Apps ausprobiert — MahlZeit ist die erste, die ich wirklich täglich nutze."',           name: 'Mia K.',    handle: 'Beta-Testerin', emoji: '👩‍💼' },
-  { text: '"Die Verknüpfung von Wochenplan und Einkaufsliste ist das Killer-Feature. Einfach genialer Ansatz."',                             name: 'Tobias R.', handle: 'Beta-Tester',   emoji: '👨‍🍳' },
+  { text: '«Endlich plane ich die Woche durch — kein tägliches Grübeln mehr. Die Einkaufsliste spart mir jedes Mal Zeit.»', name: 'Sarah M.',  role: 'Mutter, Basel'     },
+  { text: '«Ich esse seit MahlZeit viel abwechslungsreicher. Die Rezeptvorschläge passen wirklich zu mir — und alles ist vegan.»', name: 'Lukas B.',  role: 'Student, Zürich'   },
+  { text: '«Das UI ist aufgeräumt und es läuft. Ich habe viele Apps ausprobiert — MahlZeit ist die erste, die ich täglich nutze.»', name: 'Mia K.',    role: 'Grafikerin, Bern'  },
 ];
 
 const PLANS = [
   {
-    badge: 'Gratis starten',
-    badgeMuted: true,
-    icon: '🎁',
-    name: 'Testwoche',
-    amount: '0',
-    free: true,
-    currency: 'CHF',
-    period: '7 Tage kostenlos',
-    desc: 'Voller Zugang. Kein Kreditkarteneintrag. Danach wähle ein Abo.',
-    features: [
-      'Wochenplaner (7 Tage)',
-      'Rezeptbibliothek',
-      'Automatische Einkaufsliste',
-      'Wetter-Vorschläge',
-    ],
-    btn: 'Jetzt gratis testen →',
-    btnStyle: 'ghost',
-    href: '/auth?plan=trial',
+    badge: 'Gratis starten', name: 'Testwoche', cur: 'CHF', amount: '0', per: '7 Tage kostenlos',
+    desc: 'Voller Zugang. Kein Kreditkarteneintrag.',
+    features: ['Wochenplaner', 'Rezeptbibliothek', 'Einkaufsliste', 'KI-Vorschläge'],
+    href: '/auth?plan=trial', featured: false,
   },
   {
-    badge: 'Beliebteste Wahl',
-    badgeMuted: false,
-    icon: '⭐',
-    name: 'Lifetime',
-    amount: '35',
-    free: false,
-    currency: 'CHF',
-    period: 'einmalig · für immer',
-    desc: 'Einmal zahlen, für immer nutzen. Alle zukünftigen Updates inklusive.',
-    features: [
-      'Alles aus der Testwoche',
-      'Unbegrenzte Rezepte',
-      'PDF-Export & Drucken',
-      'Alle zukünftigen Features',
-    ],
-    btn: 'Jetzt kaufen →',
-    btnStyle: 'secondary',
-    href: '/auth?plan=lifetime',
-    featured: true,
+    badge: 'Flexibel', name: 'Monatsabo', cur: 'CHF', amount: '3', per: '/ Monat · kündbar',
+    desc: 'Monatlich kündbar.',
+    features: ['Alles aus Testwoche', 'Unbegrenzte Rezepte', 'PDF-Export', 'Kündigung jederzeit'],
+    href: '/auth?plan=abo', featured: false,
   },
   {
-    badge: 'Flexibel',
-    badgeMuted: true,
-    icon: '📅',
-    name: 'Monatsabo',
-    amount: '3',
-    free: false,
-    currency: 'CHF',
-    period: '/ Monat · jederzeit kündbar',
-    desc: 'Monatlich kündbar. Ideal wenn du erst reinschnuppern möchtest.',
-    features: [
-      'Alles aus der Testwoche',
-      'Unbegrenzte Rezepte',
-      'PDF-Export & Drucken',
-      'Kündigung jederzeit',
-    ],
-    btn: 'Abo starten →',
-    btnStyle: 'primary',
-    href: '/auth?plan=abo',
+    badge: 'Beliebteste Wahl', name: 'Lifetime', cur: 'CHF', amount: '99', per: 'einmalig · für immer',
+    desc: 'Einmal zahlen, für immer nutzen. Alle Updates inklusive.',
+    features: ['Alles aus Jahresabo', 'Alle zukünftigen Features', 'Keine Folgekosten', 'Priority Support'],
+    href: '/auth?plan=lifetime', featured: true,
+  },
+  {
+    badge: 'Bester Wert', name: 'Jahresabo', cur: 'CHF', amount: '30', per: '/ Jahr · 2 Monate gratis',
+    desc: 'Spare gegenüber dem Monatsabo.',
+    features: ['Alles aus Monatsabo', 'Priorisierter Support', '2 Monate gespart', 'Exklusive Rezepte'],
+    href: '/auth?plan=yearly', featured: false,
   },
 ];
 
-/* ─── Page ─────────────────────────────────────────────────────────── */
-
 export default function LandingPage() {
   return (
-    <div className="lp-page">
+    <div className="mz-lp">
 
-      {/* ══════════════════════════════════════════════════════════════
-          HERO — full viewport
-      ══════════════════════════════════════════════════════════════ */}
-      <div className="lp-full-hero">
+      {/* ── Nav ───────────────────────────────────────────────────────── */}
+      <nav className="mz-lp-nav">
+        <Link href="/" style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 8 }}>
+          <Image src="/Logo-Mahlzeit.png" alt="MahlZeit" width={28} height={28} style={{ objectFit: 'contain' }} />
+          <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 18, letterSpacing: '-0.03em', color: 'var(--ink)' }}>
+            Mahl<span style={{ color: 'var(--accent)' }}>Zeit</span>
+          </span>
+        </Link>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+          <Link href="/auth" className="mz-lp-login">Anmelden</Link>
+          <Link href="/auth?plan=trial" className="mz-btn-primary" style={{ fontSize: 14, padding: '9px 18px' }}>
+            Gratis starten
+          </Link>
+        </div>
+      </nav>
 
-        {/* Fixed nav */}
-        <nav className="lp-full-hero-nav">
-          <Link href="/" className="lp-nav-logo">Mahl<em>Zeit</em></Link>
-          <Link href="/auth" className="lp-nav-login">Anmelden</Link>
-        </nav>
-
-        {/* Stage */}
-        <div className="lp-full-hero-stage">
-
-          {/* Food-photo collage */}
-          <div className="lp-photo-grid">
-            {PHOTO_CELLS.map(({ cls, image, alt }, i) => (
-              <div
-                key={i}
-                className={`lp-photo-cell ${cls}`}
-                style={{
-                  backgroundImage: `url(${image})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                }}
-                aria-label={alt}
-              />
-            ))}
+      {/* ── Hero ──────────────────────────────────────────────────────── */}
+      <div className="mz-lp-hero">
+        <div>
+          <div className="mz-lp-kicker">
+            <div className="mz-lp-kicker-dot" />
+            Dein schlauer Menüplaner
           </div>
-
-          {/* Frosted-glass logo */}
-          <div className="lp-hero-logo-panel">
-            <Image src="/Logo-Mahlzeit.png" alt="MahlZeit" width={64} height={64} style={{ objectFit: 'contain' }} priority />
-            <div className="lp-hero-logo-text">
-              Mahl<span style={{ color: '#b5614a' }}>Zeit</span>
-            </div>
-            <div className="lp-hero-logo-sub">Menüplaner</div>
-          </div>
-
-          {/* Scroll hint */}
-          <div className="lp-scroll-hint">Mehr entdecken</div>
-
-          {/* Centered CTA — scrolls to pricing */}
-          <div className="lp-corner-cta" style={{ left: '50%', transform: 'translateX(-50%)', right: 'auto', bottom: '2.5rem' }}>
-            <Link href="#pricing" className="lp-corner-cta-btn">
-              Bereit für deinen persönlichen Menüplaner? →
+          <h1 className="mz-lp-h1">
+            Deine Woche.<br /><em>Dein</em> Essen.
+          </h1>
+          <p className="mz-lp-lead">
+            MahlZeit erstellt deinen Wochenplan, schlägt Rezepte vor und schreibt
+            automatisch deine Einkaufsliste. Alles verknüpft. Alles automatisiert.
+          </p>
+          <div className="mz-lp-hero-cta">
+            <Link href="/auth?plan=trial" className="mz-btn-primary lg">
+              7 Tage gratis testen
+            </Link>
+            <Link href="#features" className="mz-btn-soft lg" style={{ padding: '14px 22px', fontSize: 15 }}>
+              Mehr erfahren
             </Link>
           </div>
+          <p className="mz-lp-hero-note" style={{ marginTop: 14 }}>
+            Kein Abo-Zwang · 🇨🇭 Made in Switzerland
+          </p>
+        </div>
 
+        <div className="mz-lp-hero-collage">
+          {COLLAGE.map(({ cls, src, alt }) => (
+            <div
+              key={cls}
+              className={`mz-cc ${cls}`}
+              style={{ backgroundImage: `url(${src})` }}
+              aria-label={alt}
+            />
+          ))}
+          <div className="mz-cc-badge">
+            <span className="mz-cc-badge-num">172+</span>
+            <span>Rezepte</span>
+          </div>
         </div>
       </div>
 
-      {/* ══════════════════════════════════════════════════════════════
-          STATEMENT — "Deine Woche. Dein Essen."
-      ══════════════════════════════════════════════════════════════ */}
-      <div className="lp-statement">
-        <div className="lp-statement-h1">
-          Deine Woche.<br />
-          <em>Dein</em> Essen.
+      {/* ── Statement ─────────────────────────────────────────────────── */}
+      <div className="mz-lp-statement">
+        <h2>Schluss mit der Frage<br />«<em>Was koche ich heute?</em>»</h2>
+      </div>
+
+      {/* ── Features ──────────────────────────────────────────────────── */}
+      <div className="mz-lp-features" id="features">
+        <p className="mz-eyebrow">Was dich erwartet</p>
+        <h2 className="mz-lp-h2" style={{ marginTop: 10 }}>
+          Alles, was du für<br />deine Woche <em>brauchst.</em>
+        </h2>
+        <div className="mz-lp-feat-grid">
+          {[
+            { n: '01', title: 'Smarte Vorschläge',       text: 'MahlZeit schlägt Gerichte vor, die zu deinen Vorlieben, der Saison und dem Wetter passen. Kein Kopfzerbrechen mehr.' },
+            { n: '02', title: 'Wochenplaner',             text: 'Sieben Tage, alle Mahlzeiten, übersichtlich dargestellt. Änderungen aktualisieren die Einkaufsliste sofort.' },
+            { n: '03', title: 'Rezeptbibliothek',         text: '172+ Rezepte von @cuiseline, kuratiert und laufend erweitert. Eigene Rezepte hinzufügen und importieren.' },
+            { n: '04', title: 'Automatische Einkaufsliste', text: 'Alle Zutaten des Wochenplans, zusammengefasst nach Kategorien. Als PDF exportieren oder direkt teilen.' },
+          ].map(({ n, title, text }) => (
+            <div key={n} className="mz-lp-feat">
+              <div className="mz-lp-feat-num">{n}</div>
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </div>
+          ))}
         </div>
-        <p className="lp-statement-sub">
-          MahlZeit plant deinen Wochenplan, schlägt Rezepte vor und erstellt
-          automatisch deine Einkaufsliste. Alles verknüpft. Alles einfach.
+      </div>
+
+      {/* ── Full-bleed image ───────────────────────────────────────────── */}
+      <div
+        className="mz-lp-bleed"
+        style={{ backgroundImage: 'url(/images/recipes/cuiselin-taboule.jpeg)' }}
+      >
+        <div className="mz-lp-bleed-card">
+          <span className="mz-lp-bleed-tag">Heute Abend</span>
+          <div className="mz-lp-bleed-name">Taboulé</div>
+          <div className="mz-lp-bleed-meta">20 min · Vegan · Frischer Levante-Salat</div>
+        </div>
+      </div>
+
+      {/* ── Week preview ──────────────────────────────────────────────── */}
+      <div className="mz-lp-week">
+        <p className="mz-eyebrow">Wochenplan</p>
+        <h2 className="mz-lp-h2" style={{ marginTop: 10 }}>
+          Deine Woche, <em>geplant.</em>
+        </h2>
+        <div className="mz-lp-week-grid">
+          {WEEK.map(({ name, meal, sub, today }) => (
+            <div key={name} className={`mz-lp-wd${today ? ' today' : ''}`}>
+              <div className="mz-lp-wd-day">{name}</div>
+              <div className="mz-lp-wd-meal">{meal}</div>
+              <div className="mz-lp-wd-sub">{sub}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── Two-col: recipe highlight ─────────────────────────────────── */}
+      <div className="mz-lp-two">
+        <div
+          className="mz-lp-two-img"
+          style={{ backgroundImage: 'url(/images/recipes/cuiselin-pesto-genovese.jpg)' }}
+        />
+        <div className="mz-lp-two-txt">
+          <p className="mz-eyebrow">Rezepte die passen</p>
+          <h3 style={{ marginTop: 10 }}>
+            Nicht irgendwelche Rezepte — <em>deine.</em>
+          </h3>
+          <p>
+            Saisonal, wetterabhängig, auf deine Diät und deine Familie abgestimmt.
+            Sonnig? MahlZeit schlägt leichte Sommerküche vor.
+          </p>
+          <div className="mz-lp-tagrow">
+            {['🌱 Vegan', '⏱ Unter 30 Min', '🔥 Saisonal', '💪 Proteinreich', '👨‍👩‍👧 Familienküche'].map(tag => (
+              <span key={tag} className="mz-chip" style={{ cursor: 'default' }}>{tag}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* ── Reviews ───────────────────────────────────────────────────── */}
+      <div className="mz-lp-reviews">
+        <p className="mz-eyebrow" style={{ textAlign: 'center' }}>Stimmen</p>
+        <h2 className="mz-lp-h2" style={{ marginTop: 10, textAlign: 'center' }}>
+          Was <em>andere</em> sagen.
+        </h2>
+        <div className="mz-lp-rev-grid" style={{ marginTop: 32 }}>
+          {REVIEWS.map(({ text, name, role }) => (
+            <div key={name} className="mz-lp-rev">
+              <div className="mz-lp-stars">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 18.4 6.1 21l1.2-6.5L2.5 9.9l6.6-1z" />
+                  </svg>
+                ))}
+              </div>
+              <p>{text}</p>
+              <div className="mz-lp-rev-author">
+                <div style={{ width: 36, height: 36, borderRadius: '50%', background: 'var(--accent-tint)', color: 'var(--accent-ink)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: 14 }}>
+                  {name.slice(0, 1)}
+                </div>
+                <div>
+                  {name}
+                  <em>{role}</em>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── Pricing ───────────────────────────────────────────────────── */}
+      <div className="mz-lp-pricing" id="pricing">
+        <p className="mz-eyebrow" style={{ color: 'rgba(255,255,255,.6)' }}>Preise</p>
+        <h2 className="mz-lp-h2" style={{ color: '#fff', marginTop: 10 }}>
+          Einfach. Fair. Dein Preis.
+        </h2>
+        <p style={{ color: 'rgba(255,255,255,.7)', fontSize: 17, marginTop: 14 }}>
+          Starte kostenlos — wähle danach was zu dir passt.
+        </p>
+        <div className="mz-lp-plans">
+          {PLANS.map((p) => (
+            <div key={p.name} className={`mz-lp-plan${p.featured ? ' featured' : ''}`}>
+              <span className="mz-lp-plan-badge">{p.badge}</span>
+              <div className="mz-lp-plan-name">{p.name}</div>
+              <div className="mz-lp-plan-price">
+                <span className="mz-lp-plan-cur">{p.cur}</span>
+                <span className="mz-lp-plan-amt">{p.amount}</span>
+              </div>
+              <div className="mz-lp-plan-per">{p.per}</div>
+              <p className="mz-lp-plan-desc">{p.desc}</p>
+              <ul className="mz-lp-plan-feats">
+                {p.features.map((f) => (
+                  <li key={f}>
+                    <Check size={14} />
+                    {f}
+                  </li>
+                ))}
+              </ul>
+              <Link href={p.href} className={p.featured ? 'mz-btn-primary' : 'mz-btn-ghost-light'} style={{ display: 'block', textAlign: 'center', textDecoration: 'none', padding: '11px 18px', borderRadius: 999, fontWeight: 700, fontSize: 14 }}>
+                {p.featured ? 'Jetzt kaufen →' : 'Auswählen →'}
+              </Link>
+            </div>
+          ))}
+        </div>
+        <p className="mz-lp-trust">
+          🔒 Sichere Zahlung via Stripe &nbsp;·&nbsp; 🇨🇭 Made in Switzerland &nbsp;·&nbsp; Kein Abo-Zwang bei Lifetime
         </p>
       </div>
 
-      {/* ══════════════════════════════════════════════════════════════
-          FEATURES
-      ══════════════════════════════════════════════════════════════ */}
-      <div className="lp-wrap" id="features">
-        <div className="lp-section">
-          <span className="lp-label">Was dich erwartet</span>
-          <h2 style={{ marginTop: 12 }}>
-            Alles, was du<br />für deine Woche<br /><em>brauchst.</em>
-          </h2>
-          <ul className="lp-feature-list">
-            <li className="lp-feature-item">
-              <div className="lp-feature-num">01</div>
-              <div className="lp-feature-content">
-                <h3>Smarte Menü-Vorschläge</h3>
-                <p>MahlZeit schlägt dir Gerichte vor, die zu deinen Vorlieben, der Saison und deinem Vorrat passen. Kein Kopfzerbrechen mehr — einfach auswählen und loslegen.</p>
-              </div>
-            </li>
-            <li className="lp-feature-item">
-              <div className="lp-feature-num">02</div>
-              <div className="lp-feature-content">
-                <h3>Wochenplaner auf einen Blick</h3>
-                <p>Sieben Tage, alle Mahlzeiten, übersichtlich dargestellt. Automatisch ausgewogen. Änderungen aktualisieren sofort die Einkaufsliste.</p>
-              </div>
-            </li>
-            <li className="lp-feature-item">
-              <div className="lp-feature-num">03</div>
-              <div className="lp-feature-content">
-                <h3>Deine Rezeptbibliothek</h3>
-                <p>Speichere deine Lieblingsrezepte mit Anleitungen, Zutaten und Variationen — von @cuiseline kuratiert und laufend erweitert.</p>
-              </div>
-            </li>
-            <li className="lp-feature-item">
-              <div className="lp-feature-num">04</div>
-              <div className="lp-feature-content">
-                <h3>Automatische Einkaufsliste</h3>
-                <p>Alle Zutaten deines Wochenplans — zusammengefasst, nach Kategorien sortiert, direkt aufs Handy. Kein Vergessen mehr, kein doppeltes Kaufen. Die Liste kann mit allen Personen im Haushalt geteilt werden.</p>
-              </div>
-            </li>
-          </ul>
+      {/* ── Footer ────────────────────────────────────────────────────── */}
+      <footer className="mz-lp-footer">
+        <Link href="/" style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 8 }}>
+          <Image src="/Logo-Mahlzeit.png" alt="MahlZeit" width={24} height={24} style={{ objectFit: 'contain' }} />
+          <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 16, letterSpacing: '-0.03em', color: 'var(--ink)' }}>
+            Mahl<span style={{ color: 'var(--accent)' }}>Zeit</span>
+          </span>
+        </Link>
+        <div className="mz-lp-foot-links">
+          <a>Datenschutz</a>
+          <a>Impressum</a>
+          <a>Nutzungsbedingungen</a>
+          <a>Kontakt</a>
         </div>
-      </div>
-
-      {/* Full-bleed banner */}
-      <div className="lp-full-img">
-        <div
-          className="lp-full-img-inner"
-          style={{
-            backgroundImage: 'url(/images/recipes/cuiselin-taboule.jpeg)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        >
-          <div className="lp-food-img-overlay">
-            <div>
-              <div className="lp-food-img-title">Taboulé</div>
-              <div className="lp-food-img-meta">20 min · Vegan · Frischer Levante-Salat</div>
-            </div>
-            <div className="lp-food-img-tag">Heute Abend</div>
-          </div>
-        </div>
-      </div>
-
-      {/* App mockup + week preview */}
-      <div className="lp-wrap">
-        <div className="lp-section">
-          <span className="lp-label">Wochenplan</span>
-          <h2 style={{ marginTop: 12 }}>Deine Woche,<br /><em>geplant.</em></h2>
-          <p style={{ marginTop: 12, maxWidth: 440 }}>Ein Blick, und du weisst was auf den Tisch kommt.</p>
-
-          {/* App mockup */}
-          <div className="lp-hero-mockup" style={{ marginTop: 32 }}>
-            <div className="lp-hero-mockup-inner">
-              <div className="lp-mock-nav">
-                <div className="lp-mock-logo">Mahl<em>Zeit</em></div>
-                <div className="lp-mock-pills">
-                  <div className="lp-mock-pill active">Wochenplan</div>
-                  <div className="lp-mock-pill">Rezepte</div>
-                  <div className="lp-mock-pill">Einkaufen</div>
-                </div>
-              </div>
-              <div className="lp-mock-body">
-                <div className="lp-mock-col">
-                  <div className="lp-mock-col-label">Heute · Di</div>
-                  <div className="lp-mock-meal featured">
-                    <div className="lp-mock-meal-emoji">🍝</div>
-                    <div>
-                      <div className="lp-mock-meal-name">Pasta al Limone</div>
-                      <div className="lp-mock-meal-meta">Abend · 25 min</div>
-                    </div>
-                  </div>
-                  <div className="lp-mock-meal">
-                    <div className="lp-mock-meal-emoji">🥣</div>
-                    <div>
-                      <div className="lp-mock-meal-name">Overnight Oats</div>
-                      <div className="lp-mock-meal-meta">Morgen · 5 min</div>
-                    </div>
-                  </div>
-                </div>
-                <div className="lp-mock-col">
-                  <div className="lp-mock-col-label">Mi – Do</div>
-                  <div className="lp-mock-meal">
-                    <div className="lp-mock-meal-emoji">🥗</div>
-                    <div>
-                      <div className="lp-mock-meal-name">Buddha Bowl</div>
-                      <div className="lp-mock-meal-meta">Mi Abend</div>
-                    </div>
-                  </div>
-                  <div className="lp-mock-meal">
-                    <div className="lp-mock-meal-emoji">🍛</div>
-                    <div>
-                      <div className="lp-mock-meal-name">Gemüse Curry</div>
-                      <div className="lp-mock-meal-meta">Do Abend</div>
-                    </div>
-                  </div>
-                </div>
-                <div className="lp-mock-col">
-                  <div className="lp-mock-col-label">Einkaufsliste</div>
-                  {MOCK_SHOPPING.map(({ done, name, qty }) => (
-                    <div key={name} className="lp-mock-shop-item">
-                      <div className={`lp-mock-check${done ? ' done' : ''}`}>{done ? '✓' : ''}</div>
-                      <span className={`lp-mock-shop-name${done ? ' done' : ''}`}>{name}</span>
-                      <span className="lp-mock-shop-qty">{qty}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Week preview */}
-          <div className="lp-week-preview" style={{ marginTop: 32 }}>
-            <div className="lp-wp-header">
-              <div className="lp-wp-title">KW 21 · Mai 2025</div>
-              <span className="lp-wp-action" style={{ cursor: 'default', opacity: 0.5 }}>Plan anpassen →</span>
-            </div>
-            <div className="lp-wp-grid">
-              {MOCK_WEEK.map(({ name, meal, sub, today }) => (
-                <div key={name} className={`lp-wp-day${today ? ' today' : ''}`}>
-                  <div className="lp-wp-day-name">{name}{today ? ' — Heute' : ''}</div>
-                  <div className="lp-wp-meal">{meal}</div>
-                  <div className="lp-wp-meal-sm">{sub}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Two-col: recipes */}
-        <div className="lp-two-col">
-          <div
-            className="lp-two-col-img"
-            style={{
-              backgroundImage: 'url(/images/recipes/cuiselin-pesto-genovese.jpg)',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }}
-          />
-          <div className="lp-two-col-text">
-            <h3>Rezepte,<br />die <em>passen.</em></h3>
-            <p>Nicht irgendwelche Rezepte — sondern solche, die zu deinen Vorlieben, der Zeit, der Saison <em>und dem aktuellen Wetter</em> passen. Sonnig und warm? MahlZeit schlägt leichte Sommerküche vor.</p>
-            <div className="lp-tag-row">
-              <span className="lp-tag-pill">🌱 Vegan</span>
-              <span className="lp-tag-pill warm">⏱ Unter 30 Min</span>
-              <span className="lp-tag-pill">🔥 Saisonal</span>
-              <span className="lp-tag-pill warm">💪 Proteinreich</span>
-            </div>
-          </div>
-        </div>
-
-        {/* Reviews */}
-        <div className="lp-section">
-          <span className="lp-label">Bewertungen</span>
-          <h2 style={{ marginTop: 12 }}><em>Was andere</em><br />sagen.</h2>
-          <div className="lp-reviews-grid">
-            {REVIEWS.map(({ text, name, handle, emoji }) => (
-              <div key={name} className="lp-review-card">
-                <div className="lp-review-stars">★★★★★</div>
-                <div className="lp-review-text">{text}</div>
-                <div className="lp-review-author">
-                  <div className="lp-review-avatar">{emoji}</div>
-                  <div>
-                    <div className="lp-review-name">{name}</div>
-                    <div className="lp-review-handle">{handle}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-      </div>
-
-      {/* ══════════════════════════════════════════════════════════════
-          PRICING
-      ══════════════════════════════════════════════════════════════ */}
-      <div className="lp-pricing" id="pricing">
-        <div className="lp-pricing-wrap">
-          <div className="lp-pricing-label">Preise</div>
-          <div className="lp-pricing-headline">Einfach. Fair. Dein Preis.</div>
-          <p className="lp-pricing-sub">
-            Starte kostenlos und wähle danach, was zu dir passt.
-          </p>
-
-          <div className="lp-pricing-cards">
-            {PLANS.map((plan) => (
-              <div key={plan.name} className={`lp-plan-card${plan.featured ? ' featured' : ''}`}>
-                <div className={`lp-plan-badge${plan.badgeMuted ? ' muted' : ''}`}>{plan.badge}</div>
-                <span className="lp-plan-icon">{plan.icon}</span>
-                <div className="lp-plan-name">{plan.name}</div>
-                <div className="lp-plan-price">
-                  <span className="lp-plan-currency">{plan.currency}</span>
-                  <span className={`lp-plan-amount${plan.free ? ' free' : ''}`}>{plan.amount}</span>
-                </div>
-                <div className="lp-plan-period">{plan.period}</div>
-                <p className="lp-plan-desc">{plan.desc}</p>
-                <ul className="lp-plan-features">
-                  {plan.features.map((f) => (
-                    <li key={f} className="lp-plan-feature">
-                      <div className="lp-plan-check">✓</div>
-                      {f}
-                    </li>
-                  ))}
-                </ul>
-                <Link href={plan.href} className={`lp-plan-btn ${plan.btnStyle}`}>
-                  {plan.btn}
-                </Link>
-              </div>
-            ))}
-          </div>
-
-          <div className="lp-pricing-trust">
-            🔒 Sichere Zahlung via Stripe &nbsp;·&nbsp; 🇨🇭 Made in Switzerland
-            &nbsp;·&nbsp; Kein Abo-Zwang bei Lifetime
-          </div>
-        </div>
-      </div>
-
-      {/* Footer */}
-      <footer className="lp-footer">
-        <Link href="/" className="lp-footer-logo">Mahl<em>Zeit</em></Link>
-        <div className="lp-footer-links">
-          <Link href="#">Datenschutz</Link>
-          <Link href="#">Impressum</Link>
-          <Link href="#">Nutzungsbedingungen</Link>
-          <Link href="#">Kontakt</Link>
-        </div>
-        <div className="lp-footer-copy">© 2025 MahlZeit · @cuiseline</div>
+        <span className="mz-lp-foot-copy">© 2025 MahlZeit · @cuiseline</span>
       </footer>
 
-      {/* Sticky mobile CTA */}
-      <div className="lp-sticky-cta">
-        <div>
-          <div className="lp-sticky-cta-text">MahlZeit</div>
-          <div className="lp-sticky-cta-sub">7 Tage gratis testen</div>
-        </div>
-        <Link href="#pricing" className="lp-btn-main" style={{ fontSize: 14, padding: '12px 24px' }}>
-          Pläne ansehen →
+      {/* ── Mobile sticky CTA ─────────────────────────────────────────── */}
+      <div className="mz-lp-mobile-cta">
+        <Link href="/auth?plan=trial" className="mz-btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
+          7 Tage gratis testen
         </Link>
+        <p className="mz-lp-mobile-cta-note">Kein Kreditkarteneintrag nötig</p>
       </div>
 
     </div>
