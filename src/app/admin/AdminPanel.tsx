@@ -64,6 +64,8 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
   type UserRecipeRow = { groupId: string; groupName: string; recipe: Recipe };
   const [userRecipes,        setUserRecipes]        = useState<UserRecipeRow[] | null>(null);
   const [userRecipesLoading, setUserRecipesLoading] = useState(false);
+  const [editingUserRecipe,  setEditingUserRecipe]  = useState<UserRecipeRow | null>(null);
+  const [userRecipeSaving,   setUserRecipeSaving]   = useState(false);
 
   // ── Landing Content State ────────────────────────────────────────────────────
   const [landingContent, setLandingContent] = useState<LandingContent | null>(null);
@@ -176,6 +178,39 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
       setTimeout(() => setRecipeNotice(null), 2500);
     } finally {
       setRecipeSaving(false);
+    }
+  };
+
+  const handleUserRecipeSave = async (recipe: Recipe) => {
+    if (!editingUserRecipe) return;
+    setUserRecipeSaving(true);
+    setRecipeNotice(null);
+    try {
+      const res = await fetch('/api/admin/group-recipes', {
+        method:  'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body:    JSON.stringify({ groupId: editingUserRecipe.groupId, recipe }),
+      });
+      const data = await res.json() as { ok?: boolean; recipe?: Recipe; error?: string };
+      if (!res.ok) {
+        setRecipeNotice({ type: 'err', text: data.error ?? 'Fehler beim Speichern.' });
+        return;
+      }
+      setUserRecipes(prev => prev
+        ? prev.map(row =>
+            row.groupId === editingUserRecipe.groupId && row.recipe.id === recipe.id
+              ? { ...row, recipe }
+              : row
+          )
+        : prev
+      );
+      setEditingUserRecipe(null);
+      setRecipeNotice({ type: 'ok', text: `"${recipe.name}" gespeichert.` });
+      setTimeout(() => setRecipeNotice(null), 3000);
+    } catch {
+      setRecipeNotice({ type: 'err', text: 'Netzwerkfehler.' });
+    } finally {
+      setUserRecipeSaving(false);
     }
   };
 
@@ -920,7 +955,13 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                             : <span style={{ color: 'var(--muted)', fontSize: 11 }}>–</span>}
                         </td>
                         <td style={{ padding: '10px 16px' }}>
-                          <div style={{ display: 'flex', gap: 8 }}>
+                          <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+                            <button
+                              style={{ background: 'var(--bg-2)', color: 'var(--sage)', padding: '5px 12px', borderRadius: 6, fontSize: 12, fontWeight: 600 }}
+                              onClick={() => setEditingUserRecipe({ groupId, groupName, recipe })}
+                            >
+                              Bearbeiten
+                            </button>
                             <button
                               className="mz-btn-primary"
                               style={{ fontSize: 12, padding: '5px 12px' }}
@@ -1024,6 +1065,34 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                   recipe={editingRecipe === 'new' ? undefined : (editingRecipe as Recipe)}
                   onSave={handleRecipeSave}
                   onCancel={() => setEditingRecipe(null)}
+                />
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* ── Nutzer-Rezept bearbeiten — Modal ────────────────────────────── */}
+        {editingUserRecipe !== null && (
+          <div style={{ position: 'fixed', inset: 0, zIndex: 50, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', overflowY: 'auto', padding: '32px 16px', background: 'rgba(39,31,26,.6)' }}>
+            <div style={{ width: '100%', maxWidth: 760, borderRadius: 'var(--r-card)', boxShadow: 'var(--shadow-lg)', background: 'var(--card)' }}>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '16px 24px', borderBottom: '1px solid var(--border)' }}>
+                <div>
+                  <h2 style={{ fontWeight: 700, fontSize: 15, color: 'var(--ink)', margin: 0 }}>
+                    Bearbeiten: {editingUserRecipe.recipe.name}
+                  </h2>
+                  <div style={{ fontSize: 12, color: 'var(--muted)', marginTop: 2 }}>
+                    Gruppe: {editingUserRecipe.groupName}
+                  </div>
+                </div>
+                <button onClick={() => setEditingUserRecipe(null)} style={{ color: 'var(--muted)', fontSize: 18, lineHeight: 1 }}>✕</button>
+              </div>
+              <div style={{ padding: 24 }}>
+                {userRecipeSaving && <p style={{ textAlign: 'center', fontSize: 13, color: 'var(--muted)', marginBottom: 12 }}>Speichern…</p>}
+                <RecipeForm
+                  recipe={editingUserRecipe.recipe}
+                  onSave={handleUserRecipeSave}
+                  onCancel={() => setEditingUserRecipe(null)}
+                  uploadEndpoint="/api/admin/upload"
                 />
               </div>
             </div>

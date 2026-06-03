@@ -3,6 +3,7 @@ export const dynamic = 'force-dynamic';
 import { NextResponse }                                       from 'next/server';
 import { getSession, ADMIN_EMAIL }                           from '@/lib/auth';
 import { getAllGroups }                                      from '@/lib/groups';
+import type { Recipe }                                       from '@/types';
 import { getGroupCustomRecipes, getRecipes, saveRecipes,
          getTemplateRecipes, saveTemplateRecipes }           from '@/lib/data';
 
@@ -30,6 +31,25 @@ export async function GET() {
   );
 
   return NextResponse.json(rows);
+}
+
+/** PUT — admin edits a user recipe within its group */
+export async function PUT(request: Request) {
+  if (!(await requireAdmin()))
+    return NextResponse.json({ error: 'Nicht autorisiert' }, { status: 403 });
+
+  const { groupId, recipe } = await request.json() as { groupId?: string; recipe?: Recipe };
+  if (!groupId || !recipe?.id)
+    return NextResponse.json({ error: 'groupId und recipe erforderlich.' }, { status: 400 });
+
+  const groupRecipes = await getGroupCustomRecipes(groupId);
+  if (!groupRecipes.some((r) => r.id === recipe.id))
+    return NextResponse.json({ error: 'Rezept nicht gefunden.' }, { status: 404 });
+
+  const allGroup = await getRecipes(groupId);
+  await saveRecipes(allGroup.map((r) => r.id === recipe.id ? recipe : r), groupId);
+
+  return NextResponse.json({ ok: true, recipe });
 }
 
 /** DELETE — admin removes a user recipe from a group */
