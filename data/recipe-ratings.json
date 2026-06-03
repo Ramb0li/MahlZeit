@@ -1,1 +1,11 @@
-{}
+{
+  "pas-04": [
+    {
+      "userId": "info@o-v-k.ch",
+      "userEmail": "info@o-v-k.ch",
+      "rating": 4,
+      "comment": "super Gericht!",
+      "createdAt": "2026-06-03T09:38:27.863Z"
+    }
+  ]
+}

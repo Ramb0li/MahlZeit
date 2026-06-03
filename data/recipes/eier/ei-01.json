@@ -3,6 +3,17 @@
   "name": "Rührei",
   "category": "Frühstück",
   "timeMinutes": 15,
+  "tags": [
+    "Mittagsgericht",
+    "Abendgericht",
+    "Schweizer",
+    "Frühling",
+    "Sommer",
+    "Herbst",
+    "Winter",
+    "Kinderfreundlich",
+    "Vegetarisch"
+  ],
   "ingredients": [
     {
       "name": "Eier",
@@ -33,10 +44,7 @@
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Klassisches Rührei, schnell und einfach.",
-  "imageUrl": null,
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-01-1780502993941.jpg",
   "imageZutaten": null,
-  "imageKochen": null,
-  "tags": [
-    "Mittagsgericht"
-  ]
+  "imageKochen": null
 }
