@@ -2,7 +2,7 @@ export const dynamic = 'force-dynamic';
 
 import { NextResponse } from 'next/server';
 import { getSessionWithGroup as getSession } from '@/lib/session';
-import { getRecipes, getConstraints, getWeatherCache, getWeekPlan, saveWeekPlan, getSettings } from '@/lib/data';
+import { getRecipes, getConstraints, getWeatherCache, getWeekPlan, saveWeekPlan, getSettings, getFavorites } from '@/lib/data';
 import { suggestWeek, suggestRecipe } from '@/lib/suggestions';
 import { getCurrentSeason, getWeatherTypeFromTemp } from '@/lib/utils';
 import type { WeatherType, Category } from '@/types';
@@ -16,11 +16,12 @@ export async function POST(request: Request) {
 
     const { weekId, dayIndex, mealType } = await request.json();
 
-    const [allRecipes, constraints, weatherCache, settings] = await Promise.all([
+    const [allRecipes, constraints, weatherCache, settings, favorites] = await Promise.all([
       getRecipes(groupId),
       getConstraints(groupId),
       getWeatherCache(),
       getSettings(groupId),
+      getFavorites(groupId),
     ]);
 
     // Archivierte Rezepte nie vorschlagen; Diät-Filter anwenden
@@ -84,6 +85,7 @@ export async function POST(request: Request) {
       showDinner:            settings.showDinner            ?? true,
       allergiesAndAversions: settings.allergiesAndAversions,
       flexitarisch:          dietPref === 'flexitarisch',
+      favorites,
     });
 
     let plan = await getWeekPlan(weekId, groupId);

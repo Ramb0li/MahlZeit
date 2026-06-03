@@ -59,6 +59,7 @@ const K = {
   groupConstraints:    (g: string) => `mz:group:${g}:constraints`,
   groupWeekPlan:       (g: string, w: string) => `mz:group:${g}:weekplan:${w}`,
   groupShoppingGroups: (g: string, w: string) => `mz:group:${g}:week:${w}:shopping_groups`,
+  groupFavorites:      (g: string)             => `mz:group:${g}:favorites`,
 };
 
 const EMPTY_PROMOTIONS: PromotionsCache = { lastUpdated: null, migros: [], coop: [], lidl: [] };
@@ -149,6 +150,24 @@ async function saveGroupCustomRecipes(groupId: string, recipes: Recipe[]): Promi
     return;
   }
   await getRedis().set(K.groupRecipes(groupId), recipes);
+}
+
+export async function getFavorites(groupId: string): Promise<string[]> {
+  if (!USE_REDIS) {
+    const all = readJson<Record<string, string[]>>('favorites.json', {});
+    return all[groupId] ?? [];
+  }
+  return (await getRedis().get<string[]>(K.groupFavorites(groupId))) ?? [];
+}
+
+export async function saveFavorites(groupId: string, recipeIds: string[]): Promise<void> {
+  if (!USE_REDIS) {
+    const all = readJson<Record<string, string[]>>('favorites.json', {});
+    all[groupId] = recipeIds;
+    writeJson('favorites.json', all);
+    return;
+  }
+  await getRedis().set(K.groupFavorites(groupId), recipeIds);
 }
 
 /**

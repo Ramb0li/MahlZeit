@@ -1031,15 +1031,17 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
               <h2 style={{ fontWeight: 700, fontSize: 15, color: 'var(--ink)', marginBottom: 16 }}>Technische Funktionen (nur Admin)</h2>
 
               <div style={{ borderRadius: 'var(--r-sm)', border: '1px solid var(--border)', overflow: 'hidden', fontSize: 13 }}>
-                {[
-                  { fn: 'Export JSON', desc: 'Lädt alle aktuellen Rezepte als JSON-Datei herunter. Für Backup oder lokale Synchronisation: Datei als data/recipes.json ins Repo legen, dann git push.' },
-                  { fn: 'Seed Redis', desc: 'Überschreibt Redis mit dem aktuellen Code-Bundle. Nur nach einem neuen Deployment verwenden wenn neue Rezepte aus dem Code geladen werden sollen. Vorher Export JSON machen!' },
-                ].map(({ fn, desc }, i) => (
-                  <div key={fn} style={{ display: 'grid', gridTemplateColumns: '160px 1fr', borderBottom: i === 0 ? '1px solid var(--border)' : 'none' }}>
-                    <div style={{ padding: '12px 16px', fontWeight: 700, color: 'var(--ink)', background: 'var(--bg-2)' }}>{fn}</div>
-                    <div style={{ padding: '12px 16px', color: 'var(--ink-2)' }}>{desc}</div>
+                <div style={{ display: 'grid', gridTemplateColumns: '160px 1fr', borderBottom: '1px solid var(--border)' }}>
+                  <div style={{ padding: '12px 16px', fontWeight: 700, color: 'var(--ink)', background: 'var(--bg-2)' }}>Export JSON</div>
+                  <div style={{ padding: '12px 16px', color: 'var(--ink-2)' }}>
+                    Lädt alle aktuellen Rezepte als JSON-Datei herunter. Für Backup oder lokale Synchronisation: Datei als <code style={{ background: 'var(--bg-2)', padding: '1px 5px', borderRadius: 4, fontFamily: 'monospace', fontSize: 12 }}>data/recipes.json</code> ins Repo legen, dann Terminal öffnen (<kbd style={{ background: 'var(--bg-2)', padding: '1px 6px', borderRadius: 4, border: '1px solid var(--border)', fontSize: 11 }}>cmd+Leertaste</kbd> → Terminal) und folgenden Code eingeben:
+                    <pre style={{ marginTop: 10, background: '#1e1e1e', color: '#d4d4d4', borderRadius: 8, padding: '10px 14px', fontSize: 12, lineHeight: 1.6, overflowX: 'auto', userSelect: 'all' }}>{`cd ~/Documents/Claude/Cowork/Wochenplaner\\ Essen/mahlzeitplaner\ngit add data/recipes.json\ngit commit -m "Rezepte aktualisiert"\ngit push`}</pre>
                   </div>
-                ))}
+                </div>
+                <div style={{ display: 'grid', gridTemplateColumns: '160px 1fr' }}>
+                  <div style={{ padding: '12px 16px', fontWeight: 700, color: 'var(--ink)', background: 'var(--bg-2)' }}>Seed Redis</div>
+                  <div style={{ padding: '12px 16px', color: 'var(--ink-2)' }}>Überschreibt Redis mit dem aktuellen Code-Bundle. Nur nach einem neuen Deployment verwenden wenn neue Rezepte aus dem Code geladen werden sollen. Vorher Export JSON machen!</div>
+                </div>
               </div>
 
               <div style={{ marginTop: 20, padding: '12px 16px', background: 'var(--accent-tint)', borderRadius: 'var(--r-sm)', fontSize: 12, color: 'var(--accent)', fontWeight: 600 }}>

@@ -1,6 +1,6 @@
 'use client';
 import { useState, useMemo, useEffect } from 'react';
-import { Plus, Search, Link, Pencil, Trash2, Clock, Archive, RotateCcw, ChevronDown, ChevronUp } from 'lucide-react';
+import { Plus, Search, Link, Pencil, Trash2, Clock, Archive, RotateCcw, ChevronDown, ChevronUp, Heart } from 'lucide-react';
 import { PhotoSlot } from '@/components/ui/PhotoSlot';
 import { RecipeForm } from './RecipeForm';
 import { ImportRecipeModal } from './ImportRecipeModal';
@@ -59,6 +59,8 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
   const [search, setSearch]                 = useState('');
   const [filterCategory, setFilterCategory] = useState<Category | 'Alle'>('Alle');
   const [filterTags, setFilterTags]         = useState<string[]>([]);
+  const [showFavorites, setShowFavorites]   = useState(false);
+  const [favorites, setFavorites]           = useState<Set<string>>(new Set());
   const [editRecipe, setEditRecipe]         = useState<Recipe | null>(null);
   const [isCreating, setIsCreating]         = useState(false);
   const [showArchive, setShowArchive]       = useState(false);
@@ -74,6 +76,36 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
     onEditRequestConsumed?.();
   }, [requestEditRecipe]); // eslint-disable-line react-hooks/exhaustive-deps
 
+  useEffect(() => {
+    fetch('/api/favorites')
+      .then(r => r.json())
+      .then((ids: string[]) => setFavorites(new Set(ids)))
+      .catch(() => {/* Favoriten nicht kritisch */});
+  }, []);
+
+  const toggleFavorite = async (recipeId: string, e: React.MouseEvent) => {
+    e.stopPropagation();
+    const nowFavorited = !favorites.has(recipeId);
+    setFavorites(prev => {
+      const next = new Set(prev);
+      if (nowFavorited) next.add(recipeId); else next.delete(recipeId);
+      return next;
+    });
+    try {
+      await fetch('/api/favorites', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ recipeId, favorited: nowFavorited }),
+      });
+    } catch {
+      setFavorites(prev => {
+        const next = new Set(prev);
+        if (nowFavorited) next.delete(recipeId); else next.add(recipeId);
+        return next;
+      });
+    }
+  };
+
   const toggleTag = (tag: string) => {
     setFilterTags(prev =>
       prev.includes(tag) ? prev.filter(t => t !== tag) : [...prev, tag]
@@ -83,7 +115,8 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
   const activeFiltered = useMemo(() => {
     return recipes.filter((r) => {
       if (r.archived) return false;
-      if (filterCategory !== 'Alle' && r.category !== filterCategory) return false;
+      if (showFavorites && !favorites.has(r.id)) return false;
+      if (!showFavorites && filterCategory !== 'Alle' && r.category !== filterCategory) return false;
       if (filterTags.length > 0) {
         const recipeTags = [...(r.tags ?? []), ...computeTimeTags(r.timeMinutes)];
         if (!filterTags.every(t => recipeTags.includes(t))) return false;
@@ -92,7 +125,7 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
       if (isRecipeExcluded(r, allergiesAndAversions)) return false;
       return true;
     });
-  }, [recipes, search, filterCategory, filterTags, allergiesAndAversions]);
+  }, [recipes, search, filterCategory, filterTags, allergiesAndAversions, showFavorites, favorites]);
 
   const archivedFiltered = useMemo(() => {
     return recipes.filter((r) => {
@@ -175,16 +208,24 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
           {/* Category scroll */}
           <div className="mz-catscroll">
             <button
-              onClick={() => setFilterCategory('Alle')}
-              className={`mz-chip${filterCategory === 'Alle' ? ' on' : ''}`}
+              onClick={() => { setShowFavorites(true); setFilterCategory('Alle'); }}
+              className={`mz-chip${showFavorites ? ' on' : ''}`}
+              style={showFavorites ? { background: '#e53935', color: '#fff', borderColor: '#e53935' } : {}}
+            >
+              <Heart size={11} fill={showFavorites ? 'currentColor' : 'none'} style={{ display: 'inline', marginRight: 4, verticalAlign: 'middle' }} />
+              Favoriten{favorites.size > 0 ? ` (${favorites.size})` : ''}
+            </button>
+            <button
+              onClick={() => { setShowFavorites(false); setFilterCategory('Alle'); }}
+              className={`mz-chip${!showFavorites && filterCategory === 'Alle' ? ' on' : ''}`}
             >
               Alle
             </button>
             {CATEGORIES.map(c => (
               <button
                 key={c}
-                onClick={() => setFilterCategory(c)}
-                className={`mz-chip${filterCategory === c ? ' on' : ''}`}
+                onClick={() => { setShowFavorites(false); setFilterCategory(c); }}
+                className={`mz-chip${!showFavorites && filterCategory === c ? ' on' : ''}`}
               >
                 {c}
               </button>
@@ -239,9 +280,11 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
             <RecipeCard
               key={recipe.id}
               recipe={recipe}
+              favorited={favorites.has(recipe.id)}
               onView={() => onViewRecipe?.(recipe)}
               onEdit={() => setEditRecipe(recipe)}
               onArchive={() => setArchiveId(recipe.id)}
+              onToggleFavorite={(e) => toggleFavorite(recipe.id, e)}
             />
           ))}
         </div>
@@ -333,12 +376,14 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
 
 interface RecipeCardProps {
   recipe: Recipe;
+  favorited: boolean;
   onView: () => void;
   onEdit: () => void;
   onArchive: () => void;
+  onToggleFavorite: (e: React.MouseEvent) => void;
 }
 
-function RecipeCard({ recipe, onView, onEdit, onArchive }: RecipeCardProps) {
+function RecipeCard({ recipe, favorited, onView, onEdit, onArchive, onToggleFavorite }: RecipeCardProps) {
   const keyTags = (recipe.tags ?? []).filter(t =>
     ['Vegetarisch', 'Vegan', 'Mealprep-geeignet', 'Kinderfreundlich'].includes(t)
   ).slice(0, 2);
@@ -357,6 +402,22 @@ function RecipeCard({ recipe, onView, onEdit, onArchive }: RecipeCardProps) {
             <Clock size={10} />{recipe.timeMinutes} min
           </span>
         )}
+        <button
+          onClick={onToggleFavorite}
+          style={{
+            position: 'absolute', top: 8, left: 8,
+            width: 28, height: 28, borderRadius: '50%', border: 'none', cursor: 'pointer',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            background: favorited ? 'rgba(255,255,255,.92)' : 'rgba(255,255,255,.55)',
+            color: favorited ? '#e53935' : '#9c8c84',
+            opacity: favorited ? 1 : 0,
+            transition: '.15s',
+          }}
+          className="mz-fav-btn"
+          title={favorited ? 'Aus Favoriten entfernen' : 'Zu Favoriten hinzufügen'}
+        >
+          <Heart size={13} fill={favorited ? 'currentColor' : 'none'} />
+        </button>
         <div
           style={{ position: 'absolute', top: 8, right: 8, display: 'flex', gap: 4, opacity: 0, transition: '.15s' }}
           className="group-hover:opacity-100"

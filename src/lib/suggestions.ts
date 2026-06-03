@@ -96,6 +96,7 @@ export interface SuggestWeekOptions {
   showDinner?: boolean;
   allergiesAndAversions?: string[];
   flexitarisch?: boolean;  // max 1 Fleischgericht pro Wochenplan
+  favorites?: string[];    // recipe IDs — wenn ≥3, mind. 1 Dinner/Woche aus Favoriten
 }
 
 const BREAKFAST_CATS  = new Set<Category>(['Frühstück']);
@@ -113,7 +114,7 @@ export function suggestWeek(
   season: string,
   opts: SuggestWeekOptions = {}
 ): Record<number, { breakfast?: string; lunch?: string; dinner?: string }> {
-  const { showBreakfast = false, showLunch = false, showDinner = true, allergiesAndAversions, flexitarisch = false } = opts;
+  const { showBreakfast = false, showLunch = false, showDinner = true, allergiesAndAversions, flexitarisch = false, favorites = [] } = opts;
   const result: Record<number, { breakfast?: string; lunch?: string; dinner?: string }> = {};
   const usedIds: string[] = [];
   let meatMealsThisWeek = 0;
@@ -131,6 +132,13 @@ export function suggestWeek(
          (!r.tags.includes('Mittagsgericht') || r.tags.includes('Abendgericht'))
   );
 
+  // Favoriten-Tag: wenn ≥3 definiert, einen zufälligen Dinner-Tag reservieren
+  const favSet = new Set(favorites);
+  const favDinnerPool = dinnerRecipes.filter(r => favSet.has(r.id));
+  const favoriteDayIndex = favDinnerPool.length >= 3
+    ? Math.floor(Math.random() * 7) + 1
+    : null;
+
   for (let day = 1; day <= 7; day++) {
     const constraint = constraints.find((c) => c.dayOfWeek === day);
     const weatherType = weatherTypes[day] ?? 'neutral';
@@ -143,9 +151,12 @@ export function suggestWeek(
     result[day] = {};
 
     if (showDinner) {
-      const dinnerPool = flexitarisch && meatMealsThisWeek >= 1
+      const basePool = flexitarisch && meatMealsThisWeek >= 1
         ? dinnerRecipes.filter(r => !isMeatRecipe(r))
         : dinnerRecipes;
+      const isFavDay = favoriteDayIndex === day && favDinnerPool.length > 0;
+      const favFiltered = isFavDay ? favDinnerPool.filter(r => basePool.some(b => b.id === r.id)) : [];
+      const dinnerPool = favFiltered.length > 0 ? favFiltered : basePool;
       const dinner = suggestRecipe(dinnerPool, {
         weatherType, season, constraint, usedThisWeek: usedIds, allergiesAndAversions,
       });
