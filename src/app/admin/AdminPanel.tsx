@@ -420,20 +420,21 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
 
         </> /* end users tab */}
 
+        {/* Notice — tabübergreifend (Rezepte + Nutzer-Rezepte) */}
+        {recipeNotice && (
+          <div style={{
+            marginBottom: 16, padding: '10px 16px', borderRadius: 'var(--r-sm)', fontSize: 13,
+            ...(recipeNotice.type === 'ok'
+              ? { background: '#e8f5e9', color: '#2e7d32' }
+              : { background: '#fce4ec', color: '#c62828' })
+          }}>
+            {recipeNotice.text}
+          </div>
+        )}
+
         {/* ── Rezepte-Tab ──────────────────────────────────────────────────── */}
         {activeTab === 'recipes' && (
           <div>
-            {/* Notice */}
-            {recipeNotice && (
-              <div style={{
-                marginBottom: 16, padding: '10px 16px', borderRadius: 'var(--r-sm)', fontSize: 13,
-                ...(recipeNotice.type === 'ok'
-                  ? { background: '#e8f5e9', color: '#2e7d32' }
-                  : { background: '#fce4ec', color: '#c62828' })
-              }}>
-                {recipeNotice.text}
-              </div>
-            )}
 
             {/* Toolbar */}
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, marginBottom: 16, alignItems: 'center' }}>
@@ -904,7 +905,11 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                         <td style={{ padding: '10px 16px', fontWeight: 600, color: 'var(--ink)' }}>{recipe.name}</td>
                         <td style={{ padding: '10px 16px' }}>
                           {recipe.category && (
-                            <span style={{ ...CAT_COLOR[recipe.category] ?? { bg: 'var(--bg-2)', color: 'var(--ink)' }, padding: '2px 8px', borderRadius: 999, fontSize: 11, fontWeight: 600 }}>
+                            <span style={{
+                              background: CAT_COLOR[recipe.category]?.bg ?? 'var(--bg-2)',
+                              color:      CAT_COLOR[recipe.category]?.color ?? 'var(--ink)',
+                              padding: '2px 8px', borderRadius: 999, fontSize: 11, fontWeight: 600,
+                            }}>
                               {recipe.category}
                             </span>
                           )}
