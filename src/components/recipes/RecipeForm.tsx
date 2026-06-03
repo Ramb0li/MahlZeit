@@ -30,9 +30,10 @@ interface RecipeFormProps {
   recipe?: Recipe;
   onSave: (recipe: Recipe) => void;
   onCancel: () => void;
+  uploadEndpoint?: string;
 }
 
-export function RecipeForm({ recipe, onSave, onCancel }: RecipeFormProps) {
+export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/admin/upload' }: RecipeFormProps) {
   const [name, setName]                       = useState(recipe?.name ?? '');
   const [category, setCategory]               = useState<Category>(recipe?.category ?? 'Vegetarische Hauptgerichte');
   const [timeMinutes, setTimeMinutes]         = useState(recipe?.timeMinutes ?? 30);
@@ -100,7 +101,7 @@ export function RecipeForm({ recipe, onSave, onCancel }: RecipeFormProps) {
     try {
       const form = new FormData();
       form.append('file', file);
-      const res  = await fetch('/api/admin/upload', { method: 'POST', body: form });
+      const res  = await fetch(uploadEndpoint, { method: 'POST', body: form });
       const data = await res.json() as { url?: string; error?: string };
 
       if (!res.ok || !data.url) {
@@ -118,7 +119,7 @@ export function RecipeForm({ recipe, onSave, onCancel }: RecipeFormProps) {
       // Reset file input so the same file can be re-selected after an error
       if (e.target) e.target.value = '';
     }
-  }, []);
+  }, [uploadEndpoint]);
 
   // Helfer fuer Gruppen-Modus
   const updateGroup = (gi: number, field: 'name', value: string) =>

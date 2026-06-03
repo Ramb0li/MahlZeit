@@ -58,7 +58,12 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
   const router = useRouter();
 
   // ── Tab-State ───────────────────────────────────────────────────────────────
-  const [activeTab, setActiveTab] = useState<'users' | 'recipes' | 'landing'>('users');
+  const [activeTab, setActiveTab] = useState<'users' | 'recipes' | 'landing' | 'user-recipes' | 'howto'>('users');
+
+  // ── Nutzer-Rezepte-State ─────────────────────────────────────────────────────
+  type UserRecipeRow = { groupId: string; groupName: string; recipe: Recipe };
+  const [userRecipes,        setUserRecipes]        = useState<UserRecipeRow[] | null>(null);
+  const [userRecipesLoading, setUserRecipesLoading] = useState(false);
 
   // ── Landing Content State ────────────────────────────────────────────────────
   const [landingContent, setLandingContent] = useState<LandingContent | null>(null);
@@ -72,6 +77,16 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
       .then(data => setLandingContent(data))
       .catch(() => setLandingNotice({ type: 'err', text: 'Fehler beim Laden der Landing-Inhalte.' }));
   }, [activeTab, landingContent]);
+
+  useEffect(() => {
+    if (activeTab !== 'user-recipes' || userRecipes !== null) return;
+    setUserRecipesLoading(true);
+    fetch('/api/admin/group-recipes')
+      .then(r => r.json())
+      .then((data: UserRecipeRow[]) => setUserRecipes(data))
+      .catch(() => setUserRecipes([]))
+      .finally(() => setUserRecipesLoading(false));
+  }, [activeTab, userRecipes]);
 
   const saveLanding = async () => {
     if (!landingContent) return;
@@ -103,6 +118,7 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
   const [deleteRecipeId,  setDeleteRecipeId]  = useState<string | null>(null);
   const [showImportModal, setShowImportModal] = useState(false);
   const [seeding,         setSeeding]         = useState(false);
+  const [showSeedModal,   setShowSeedModal]   = useState(false);
 
   const filteredRecipes = useMemo(() => recipes.filter(r => {
     if (recipeCatFilter !== 'Alle' && r.category !== recipeCatFilter) return false;
@@ -164,7 +180,6 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
   };
 
   const seedRedis = async () => {
-    if (!window.confirm('Rezepte in Redis mit dem aktuellen Bundle überschreiben? Manuelle Prod-Änderungen gehen verloren.')) return;
     setSeeding(true);
     try {
       const res  = await fetch('/api/admin/recipes/seed', { method: 'POST' });
@@ -237,8 +252,10 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
         <nav className="mz-topnav">
           {([
             { id: 'users'   as const, label: `Nutzer (${users.filter(u => !isAdmin(u.email)).length})` },
-            { id: 'recipes' as const, label: `Rezepte (${recipes.length})` },
-            { id: 'landing' as const, label: 'Landing' },
+            { id: 'recipes'      as const, label: `Rezepte (${recipes.length})` },
+            { id: 'user-recipes' as const, label: `Nutzer-Rezepte${userRecipes ? ` (${userRecipes.length})` : ''}` },
+            { id: 'landing'      as const, label: 'Landing' },
+            { id: 'howto'        as const, label: 'How-To' },
           ]).map(({ id, label }) => (
             <button
               key={id}
@@ -441,7 +458,7 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
               <a href="/api/admin/recipes/export" download className="mz-btn-soft" style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}>
                 Export JSON
               </a>
-              <button onClick={seedRedis} disabled={seeding} className="mz-btn-soft" title="Bundle-Rezepte nach Redis schreiben (überschreibt Prod-Daten)">
+              <button onClick={() => setShowSeedModal(true)} disabled={seeding} className="mz-btn-soft" title="Bundle-Rezepte nach Redis schreiben (überschreibt Prod-Daten)">
                 {seeding ? 'Laden…' : 'Seed Redis'}
               </button>
               <button onClick={() => setEditingRecipe('new')} className="mz-btn-primary">
@@ -857,6 +874,135 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
           </div>
         )}
 
+        {/* ── Nutzer-Rezepte Tab ───────────────────────────────────────────── */}
+        {activeTab === 'user-recipes' && (
+          <div>
+            <div style={{ marginBottom: 16 }}>
+              <h2 style={{ fontWeight: 700, fontSize: 16, color: 'var(--ink)', margin: 0 }}>Nutzer-Rezepte</h2>
+              <p style={{ fontSize: 13, color: 'var(--muted)', marginTop: 4 }}>
+                Von Nutzern erstellte Gruppenrezepte. Du kannst sie in die offizielle Template-Liste übernehmen oder löschen.
+              </p>
+            </div>
+            {userRecipesLoading && <p style={{ color: 'var(--muted)', fontSize: 13 }}>Lade…</p>}
+            {!userRecipesLoading && userRecipes !== null && userRecipes.length === 0 && (
+              <p style={{ color: 'var(--muted)', fontSize: 13 }}>Noch keine Nutzer-Rezepte vorhanden.</p>
+            )}
+            {!userRecipesLoading && userRecipes && userRecipes.length > 0 && (
+              <div style={{ borderRadius: 'var(--r-card)', overflow: 'hidden', border: '1px solid var(--border)', background: 'var(--card)', boxShadow: 'var(--shadow-sm)' }}>
+                <table style={{ width: '100%', fontSize: 13, borderCollapse: 'collapse' }}>
+                  <thead>
+                    <tr style={{ background: 'var(--bg-2)', borderBottom: '1px solid var(--border)' }}>
+                      {['Gruppe', 'Rezept', 'Kategorie', 'Bild', 'Aktionen'].map(h => (
+                        <th key={h} style={{ textAlign: 'left', padding: '10px 16px', fontWeight: 700, fontSize: 11, textTransform: 'uppercase', letterSpacing: '.06em', color: 'var(--muted)' }}>{h}</th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {userRecipes.map(({ groupId, groupName, recipe }) => (
+                      <tr key={`${groupId}-${recipe.id}`} style={{ borderBottom: '1px solid var(--border)' }}>
+                        <td style={{ padding: '10px 16px', color: 'var(--muted)', fontSize: 12 }}>{groupName}</td>
+                        <td style={{ padding: '10px 16px', fontWeight: 600, color: 'var(--ink)' }}>{recipe.name}</td>
+                        <td style={{ padding: '10px 16px' }}>
+                          {recipe.category && (
+                            <span style={{ ...CAT_COLOR[recipe.category] ?? { bg: 'var(--bg-2)', color: 'var(--ink)' }, padding: '2px 8px', borderRadius: 999, fontSize: 11, fontWeight: 600 }}>
+                              {recipe.category}
+                            </span>
+                          )}
+                        </td>
+                        <td style={{ padding: '10px 16px' }}>
+                          {recipe.imageUrl
+                            ? <img src={recipe.imageUrl} alt="" style={{ width: 40, height: 40, objectFit: 'cover', borderRadius: 6 }} />
+                            : <span style={{ color: 'var(--muted)', fontSize: 11 }}>–</span>}
+                        </td>
+                        <td style={{ padding: '10px 16px' }}>
+                          <div style={{ display: 'flex', gap: 8 }}>
+                            <button
+                              className="mz-btn-primary"
+                              style={{ fontSize: 12, padding: '5px 12px' }}
+                              onClick={async () => {
+                                const res  = await fetch('/api/admin/group-recipes', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ groupId, recipeId: recipe.id }) });
+                                const data = await res.json() as { ok?: boolean; recipe?: Recipe; error?: string };
+                                if (res.ok && data.recipe) {
+                                  setRecipes(prev => [...prev.filter(r => r.id !== data.recipe!.id), data.recipe!]);
+                                  setUserRecipes(prev => prev ? prev.filter(r => !(r.groupId === groupId && r.recipe.id === recipe.id)) : prev);
+                                  setRecipeNotice({ type: 'ok', text: `"${recipe.name}" in offizielle Liste übernommen.` });
+                                  setTimeout(() => setRecipeNotice(null), 3000);
+                                } else {
+                                  setRecipeNotice({ type: 'err', text: data.error ?? 'Fehler beim Übernehmen.' });
+                                }
+                              }}
+                            >
+                              In offizielle Liste
+                            </button>
+                            <button
+                              className="mz-btn-soft"
+                              style={{ fontSize: 12, padding: '5px 12px', color: '#c62828' }}
+                              onClick={async () => {
+                                if (!window.confirm(`"${recipe.name}" aus der Gruppe "${groupName}" löschen?`)) return;
+                                const res = await fetch('/api/admin/group-recipes', { method: 'DELETE', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ groupId, recipeId: recipe.id }) });
+                                if (res.ok) {
+                                  setUserRecipes(prev => prev ? prev.filter(r => !(r.groupId === groupId && r.recipe.id === recipe.id)) : prev);
+                                  setRecipeNotice({ type: 'ok', text: `"${recipe.name}" gelöscht.` });
+                                  setTimeout(() => setRecipeNotice(null), 2500);
+                                }
+                              }}
+                            >
+                              Löschen
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* ── How-To Tab ───────────────────────────────────────────────────── */}
+        {activeTab === 'howto' && (
+          <div style={{ maxWidth: 760 }}>
+            <div style={{ borderRadius: 'var(--r-card)', border: '1px solid var(--border)', background: 'var(--card)', padding: '32px 40px', boxShadow: 'var(--shadow-sm)', lineHeight: 1.7 }}>
+              <h1 style={{ fontWeight: 800, fontSize: 22, color: 'var(--ink)', marginBottom: 4 }}>MahlZeit — Rezeptverwaltung</h1>
+              <p style={{ color: 'var(--muted)', fontSize: 13, marginBottom: 28 }}>Admin-Panel How-To · <strong>mahlzeit.o-v-k.ch/admin</strong></p>
+
+              {[
+                { title: 'Rezept bearbeiten', body: 'In der Tabelle auf den Stift klicken. Felder anpassen und Speichern klicken — Änderung ist sofort live.' },
+                { title: 'Neues Rezept erstellen', body: 'Button "+ Neues Rezept" klicken. Pflichtfelder: ID (z.B. linsen-curry, nur Kleinbuchstaben/Bindestriche), Name, Kategorie, Zutaten, Anleitung.' },
+                { title: 'Bild hochladen', body: 'Im Rezept-Formular auf ein Bildfeld klicken → Datei wählen (JPG/PNG, max 8 MB). Bild wird automatisch hochgeladen. Danach Speichern klicken.' },
+                { title: 'Rezept löschen', body: 'Papierkorb-Icon in der Tabelle → Bestätigen.' },
+                { title: 'Rezepte per KI importieren', body: 'Button "Importieren" → URL einer Rezept-Website oder Screenshot/Foto hochladen. Die KI befüllt das Formular automatisch. Felder prüfen → Speichern.' },
+                { title: 'Nutzer-Rezepte übernehmen', body: 'Tab "Nutzer-Rezepte" öffnen. Dort siehst du alle von Nutzern erstellten Rezepte. Mit "In offizielle Liste" wird das Rezept als Template für alle verfügbar.' },
+              ].map(({ title, body }) => (
+                <div key={title} style={{ marginBottom: 20 }}>
+                  <h3 style={{ fontWeight: 700, fontSize: 14, color: 'var(--ink)', marginBottom: 4 }}>{title}</h3>
+                  <p style={{ fontSize: 13, color: 'var(--ink-2)', margin: 0 }}>{body}</p>
+                </div>
+              ))}
+
+              <hr style={{ border: 'none', borderTop: '1px solid var(--border)', margin: '24px 0' }} />
+              <h2 style={{ fontWeight: 700, fontSize: 15, color: 'var(--ink)', marginBottom: 16 }}>Technische Funktionen (nur Admin)</h2>
+
+              <div style={{ borderRadius: 'var(--r-sm)', border: '1px solid var(--border)', overflow: 'hidden', fontSize: 13 }}>
+                {[
+                  { fn: 'Export JSON', desc: 'Lädt alle aktuellen Rezepte als JSON-Datei herunter. Für Backup oder lokale Synchronisation: Datei als data/recipes.json ins Repo legen, dann git push.' },
+                  { fn: 'Seed Redis', desc: 'Überschreibt Redis mit dem aktuellen Code-Bundle. Nur nach einem neuen Deployment verwenden wenn neue Rezepte aus dem Code geladen werden sollen. Vorher Export JSON machen!' },
+                ].map(({ fn, desc }, i) => (
+                  <div key={fn} style={{ display: 'grid', gridTemplateColumns: '160px 1fr', borderBottom: i === 0 ? '1px solid var(--border)' : 'none' }}>
+                    <div style={{ padding: '12px 16px', fontWeight: 700, color: 'var(--ink)', background: 'var(--bg-2)' }}>{fn}</div>
+                    <div style={{ padding: '12px 16px', color: 'var(--ink-2)' }}>{desc}</div>
+                  </div>
+                ))}
+              </div>
+
+              <div style={{ marginTop: 20, padding: '12px 16px', background: 'var(--accent-tint)', borderRadius: 'var(--r-sm)', fontSize: 12, color: 'var(--accent)', fontWeight: 600 }}>
+                Alle Änderungen sind sofort live. Kein Neustart nötig.
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* ── Rezept Bearbeiten / Neu — Modal ─────────────────────────────── */}
         {editingRecipe !== null && (
           <div style={{ position: 'fixed', inset: 0, zIndex: 50, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', overflowY: 'auto', padding: '32px 16px', background: 'rgba(39,31,26,.6)' }}>
@@ -920,6 +1066,41 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                   style={{ background: '#c62828', color: '#fff', padding: '9px 18px', borderRadius: 999, fontWeight: 700, fontSize: 14, opacity: loading ? .5 : 1 }}
                 >
                   {loading ? '…' : 'Löschen'}
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* ── Seed Redis — Bestätigung ─────────────────────────────────────── */}
+        {showSeedModal && (
+          <div style={{ position: 'fixed', inset: 0, zIndex: 50, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(39,31,26,.5)' }}>
+            <div style={{ borderRadius: 'var(--r-card)', padding: 28, width: '100%', maxWidth: 460, boxShadow: 'var(--shadow-lg)', background: 'var(--card)' }}>
+              <h3 style={{ fontWeight: 700, marginBottom: 8, color: 'var(--ink)', fontSize: 16 }}>Redis überschreiben?</h3>
+              <p style={{ fontSize: 13, marginBottom: 8, color: 'var(--ink-2)' }}>
+                Alle manuell in Produktion vorgenommenen Rezept-Änderungen gehen verloren und werden mit dem aktuellen Code-Bundle überschrieben.
+              </p>
+              <p style={{ fontSize: 13, marginBottom: 20, color: 'var(--ink-2)', fontWeight: 600 }}>
+                Hast du deine aktuellen Menüs bereits exportiert und lokal gespeichert?
+              </p>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, justifyContent: 'flex-end' }}>
+                <button onClick={() => setShowSeedModal(false)} className="mz-btn-soft">
+                  Abbrechen
+                </button>
+                <a
+                  href="/api/admin/recipes/export"
+                  download
+                  className="mz-btn-soft"
+                  style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}
+                >
+                  Aktuelle Menüs als Export JSON
+                </a>
+                <button
+                  onClick={() => { setShowSeedModal(false); seedRedis(); }}
+                  disabled={seeding}
+                  className="mz-btn-primary"
+                >
+                  Bestätigen
                 </button>
               </div>
             </div>

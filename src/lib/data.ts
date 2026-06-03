@@ -130,7 +130,7 @@ function normalizeRecipe(r: Recipe): Recipe {
 
 // ─── Group-scoped Recipes (custom recipes per group) ──────────────────────────
 
-async function getGroupCustomRecipes(groupId: string): Promise<Recipe[]> {
+export async function getGroupCustomRecipes(groupId: string): Promise<Recipe[]> {
   let recipes: Recipe[];
   if (!USE_REDIS) {
     const all = readJson<Record<string, Recipe[]>>('group-recipes.json', {});

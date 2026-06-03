@@ -280,7 +280,7 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
           }
           size="xl"
         >
-          <RecipeForm recipe={editRecipe ?? undefined} onSave={handleSave} onCancel={() => { setIsCreating(false); setEditRecipe(null); }} />
+          <RecipeForm recipe={editRecipe ?? undefined} onSave={handleSave} onCancel={() => { setIsCreating(false); setEditRecipe(null); }} uploadEndpoint="/api/upload" />
         </Modal>
       )}
 
