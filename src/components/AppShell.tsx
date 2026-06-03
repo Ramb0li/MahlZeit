@@ -18,10 +18,10 @@ type Tab = 'planner' | 'recipes' | 'shopping' | 'settings';
 export type { Tab };
 
 const TABS: { id: Tab; label: string; icon: React.ComponentType<{ size?: number | string }> }[] = [
-  { id: 'planner',  label: 'Menüplan',     icon: CalendarDays },
-  { id: 'recipes',  label: 'Rezepte',       icon: BookOpen     },
-  { id: 'shopping', label: 'Einkauf',       icon: ShoppingCart },
-  { id: 'settings', label: 'Einstellungen', icon: Settings     },
+  { id: 'planner',  label: 'Menüplan',      icon: CalendarDays },
+  { id: 'shopping', label: 'Einkauf',        icon: ShoppingCart },
+  { id: 'recipes',  label: 'Rezepte',        icon: BookOpen     },
+  { id: 'settings', label: 'Einstellungen',  icon: Settings     },
 ];
 
 interface AppShellProps {

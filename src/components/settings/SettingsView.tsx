@@ -819,7 +819,7 @@ export function SettingsView({
       </Section>
 
       {/* ── Weather ──────────────────────────────────────────────────────── */}
-      <Section id="weather" title="Wetterintegration" sub="Standort für Wetter-Kochvorschläge.">
+      <Section id="weather" title="Standort und Wetter" sub="MahlZeit schlägt bei warmem Wetter leichte Gerichte vor — bei Kälte Wärmendes.">
         <div>
           <label style={labelStyle}>Standort</label>
           <div ref={locationWrapperRef} style={{ position: 'relative' }}>

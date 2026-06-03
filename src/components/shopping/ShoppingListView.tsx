@@ -64,7 +64,11 @@ function readLS<T>(key: string, fallback: T): T {
 // ─── Component ────────────────────────────────────────────────────────────────
 
 export function ShoppingListView() {
-  const [weekId]  = useState(() => getWeekId(nextWeek(new Date())));
+  // Beide Wochen verfügbar — User kann wechseln
+  const currentWeekId = getWeekId(new Date());
+  const nextWeekId    = getWeekId(nextWeek(new Date()));
+  const [weekId, setWeekId] = useState(currentWeekId);
+
   const [list, setList]       = useState<ShoppingList>({});
   const [loading, setLoading] = useState(true);
 
@@ -83,7 +87,8 @@ export function ShoppingListView() {
   const [custom, setCustom] = useState<CustomItem[]>(() => readLS('mz-custom', [] as CustomItem[]));
   const [showAdd, setShowAdd] = useState(false);
   const [draft, setDraft] = useState({ name: '', amount: '', unit: 'Stk', category: 'Sonstiges' });
-  const [collapsedCategories, setCollapsedCategories] = useState<Set<string>>(new Set());
+  // Alle Kategorien standardmässig eingeklappt
+  const [collapsedCategories, setCollapsedCategories] = useState<Set<string>>(() => new Set(ALL_CATEGORIES));
   const nameInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => { localStorage.setItem(`mz-ov-${weekId}`,  JSON.stringify(overrides)); }, [overrides, weekId]);
@@ -328,6 +333,24 @@ export function ShoppingListView() {
 
   return (
     <div className="max-w-2xl space-y-4">
+
+      {/* Wochenselektor: aktuelle + nächste Woche */}
+      <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+        <button
+          onClick={() => setWeekId(currentWeekId)}
+          className={`mz-chip${weekId === currentWeekId ? ' on' : ''}`}
+        >
+          Diese Woche
+          <span style={{ opacity: .55, fontSize: 11, marginLeft: 4 }}>{currentWeekId}</span>
+        </button>
+        <button
+          onClick={() => setWeekId(nextWeekId)}
+          className={`mz-chip${weekId === nextWeekId ? ' on' : ''}`}
+        >
+          Nächste Woche
+          <span style={{ opacity: .55, fontSize: 11, marginLeft: 4 }}>{nextWeekId}</span>
+        </button>
+      </div>
 
       {/* Einkaufslisten-Übersicht (Phase 4) */}
       {groups.length > 1 && (

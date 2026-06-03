@@ -9,7 +9,7 @@ import type { AppUser }      from '@/lib/users';
 import type { Group }        from '@/lib/groups';
 import type { Recipe, Category } from '@/types';
 
-// Kategoriefarben für Badges
+// Kategoriefarben für Badges — kategorienspezifisch, bleiben als Hex
 const CAT_COLOR: Record<string, { bg: string; color: string }> = {
   'Frühstück':                  { bg: '#fff8e1', color: '#f57f17' },
   'Snacks & Vorspeisen':        { bg: '#f3e5f5', color: '#6a1b9a' },
@@ -32,6 +32,7 @@ const PLAN_LABEL: Record<string, string> = {
   trial:    '7-Tage Test',
   lifetime: 'Lifetime',
   abo:      'Monatsabo',
+  yearly:   'Jahresabo',
 };
 
 const STATUS_COLOR: Record<string, { bg: string; color: string }> = {
@@ -59,13 +60,13 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
   const [activeTab, setActiveTab] = useState<'users' | 'recipes'>('users');
 
   // ── Rezepte-State ────────────────────────────────────────────────────────────
-  const [recipes,        setRecipes]        = useState<Recipe[]>(initialRecipes);
-  const [recipeSearch,   setRecipeSearch]   = useState('');
+  const [recipes,         setRecipes]         = useState<Recipe[]>(initialRecipes);
+  const [recipeSearch,    setRecipeSearch]    = useState('');
   const [recipeCatFilter, setRecipeCatFilter] = useState<Category | 'Alle'>('Alle');
-  const [editingRecipe,  setEditingRecipe]  = useState<Recipe | null | 'new'>(null);
-  const [recipeSaving,   setRecipeSaving]   = useState(false);
-  const [recipeNotice,   setRecipeNotice]   = useState<{ type: 'ok'|'err'; text: string } | null>(null);
-  const [deleteRecipeId, setDeleteRecipeId] = useState<string | null>(null);
+  const [editingRecipe,   setEditingRecipe]   = useState<Recipe | null | 'new'>(null);
+  const [recipeSaving,    setRecipeSaving]    = useState(false);
+  const [recipeNotice,    setRecipeNotice]    = useState<{ type: 'ok'|'err'; text: string } | null>(null);
+  const [deleteRecipeId,  setDeleteRecipeId]  = useState<string | null>(null);
   const [showImportModal, setShowImportModal] = useState(false);
 
   const filteredRecipes = useMemo(() => recipes.filter(r => {
@@ -171,101 +172,84 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
   };
 
   return (
-    <div style={{ minHeight: '100vh', backgroundColor: '#f7f4ee', padding: '24px 16px' }}>
+    <div style={{ minHeight: '100vh', background: 'var(--bg)', fontFamily: 'var(--font-ui)' }}>
 
       {/* Header */}
-      <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-        <div className="flex items-center justify-between mb-6">
-          <div>
-            <h1 className="font-fraunces font-black text-2xl" style={{ color: '#2c2420' }}>
-              🍽 MahlZeit — Admin
-            </h1>
-            <p className="text-sm mt-0.5" style={{ color: '#9c8c84' }}>
-              {users.filter(u => !isAdmin(u.email)).length} registrierte Nutzer
-            </p>
-          </div>
-          <div className="flex gap-2">
-            <Link
-              href="/app"
-              className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold transition-opacity hover:opacity-80"
-              style={{ backgroundColor: '#e8f2e8', color: '#4a7a4e', border: '1px solid #c8d8c8', textDecoration: 'none' }}
-            >
-              🍽 Zum Menüplaner →
-            </Link>
-            <button
-              onClick={exportCsv}
-              className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold transition-opacity hover:opacity-80"
-              style={{ backgroundColor: '#e8f5e9', color: '#2e7d32', border: '1px solid #c8e6c9' }}
-            >
-              ↓ CSV Export
-            </button>
-            <button
-              onClick={logout}
-              className="px-4 py-2 rounded-xl text-sm font-semibold transition-opacity hover:opacity-80"
-              style={{ backgroundColor: '#fce4ec', color: '#c62828', border: '1px solid #ffcdd2' }}
-            >
-              Abmelden
-            </button>
-          </div>
+      <header className="mz-header" style={{ position: 'sticky', top: 0, zIndex: 30 }}>
+        <div style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 18, letterSpacing: '-0.03em', color: 'var(--ink)' }}>
+          Mahl<span style={{ color: 'var(--accent)' }}>Zeit</span>
+          <span style={{ fontFamily: 'var(--font-ui)', fontSize: 12, fontWeight: 600, color: 'var(--muted)', marginLeft: 8 }}>Admin</span>
         </div>
-
-        {/* Tabs */}
-        <div className="flex gap-2 mb-5">
+        <nav className="mz-topnav">
           {(['users', 'recipes'] as const).map(tab => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className="px-5 py-2 rounded-xl text-sm font-semibold transition-all"
-              style={activeTab === tab
-                ? { backgroundColor: '#4a7a4e', color: '#fff' }
-                : { backgroundColor: '#efe9df', color: '#5a4e48' }
-              }
+              className={`mz-topnav-btn${activeTab === tab ? ' on' : ''}`}
             >
-              {tab === 'users' ? `👥 Nutzer (${users.filter(u => !isAdmin(u.email)).length})` : `📖 Rezepte (${recipes.length})`}
+              {tab === 'users'
+                ? `Nutzer (${users.filter(u => !isAdmin(u.email)).length})`
+                : `Rezepte (${recipes.length})`}
             </button>
           ))}
+        </nav>
+        <div className="mz-header-r">
+          <Link
+            href="/app"
+            style={{ background: 'var(--sage)', color: '#fff', padding: '6px 14px', borderRadius: 999, fontSize: 13, fontWeight: 700, textDecoration: 'none' }}
+          >
+            Zum Planer
+          </Link>
+          <button className="mz-btn-soft" onClick={exportCsv}>
+            CSV Export
+          </button>
+          <button className="mz-logout" onClick={logout}>
+            Abmelden
+          </button>
         </div>
+      </header>
+
+      <div style={{ maxWidth: 1100, margin: '0 auto', padding: '28px 24px' }}>
 
         {activeTab === 'users' && <>
 
-        {/* Stats row — Admin wird in keiner Metrik mitgezählt */}
-        <div className="grid grid-cols-4 gap-3 mb-6">
+        {/* Stats row */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 12, marginBottom: 24 }}>
           {(() => {
             const customers = users.filter(u => !isAdmin(u.email));
             return [
               { label: 'Aktiv',      value: customers.filter((u) => u.status === 'active').length,   color: '#2e7d32', bg: '#e8f5e9' },
               { label: 'Ausstehend', value: customers.filter((u) => u.status === 'pending').length,  color: '#e65100', bg: '#fff3e0' },
               { label: 'Inaktiv',    value: customers.filter((u) => u.status === 'inactive').length, color: '#c62828', bg: '#fce4ec' },
-              { label: 'Lifetime',   value: customers.filter((u) => u.plan === 'lifetime').length,   color: '#b5614a', bg: '#f2e5e0' },
+              { label: 'Lifetime',   value: customers.filter((u) => u.plan === 'lifetime').length,   color: 'var(--accent)', bg: 'var(--accent-tint)' },
             ];
           })().map(({ label, value, color, bg }) => (
-            <div key={label} className="rounded-2xl p-4" style={{ backgroundColor: bg }}>
-              <div className="text-2xl font-black" style={{ color }}>{value}</div>
-              <div className="text-xs font-semibold mt-0.5" style={{ color }}>{label}</div>
+            <div key={label} style={{ background: bg, borderRadius: 'var(--r-card)', padding: '16px 20px', border: '1px solid var(--border)' }}>
+              <div style={{ fontSize: 28, fontWeight: 900, fontFamily: 'var(--font-display)', color }}>{value}</div>
+              <div style={{ fontSize: 12, fontWeight: 600, marginTop: 2, color }}>{label}</div>
             </div>
           ))}
         </div>
 
         {/* Table */}
-        <div className="rounded-2xl overflow-hidden" style={{ border: '1px solid #e0d8ce', backgroundColor: '#fff9f3' }}>
-          <table className="w-full text-sm">
+        <div style={{ borderRadius: 'var(--r-card)', overflow: 'hidden', border: '1px solid var(--border)', background: 'var(--card)', boxShadow: 'var(--shadow-sm)' }}>
+          <table style={{ width: '100%', fontSize: 13, borderCollapse: 'collapse' }}>
             <thead>
-              <tr style={{ backgroundColor: '#efe9df', borderBottom: '1px solid #e0d8ce' }}>
+              <tr style={{ background: 'var(--bg-2)', borderBottom: '1px solid var(--border)' }}>
                 {['Name', 'E-Mail', 'Gruppe', 'Plan', 'Status', 'Registriert', 'Aktionen'].map((h) => (
-                  <th key={h} className="text-left px-4 py-3 font-semibold text-xs" style={{ color: '#9c8c84' }}>{h}</th>
+                  <th key={h} style={{ textAlign: 'left', padding: '10px 16px', fontWeight: 700, fontSize: 11, textTransform: 'uppercase', letterSpacing: '.06em', color: 'var(--muted)' }}>{h}</th>
                 ))}
               </tr>
             </thead>
             <tbody>
               {users.length === 0 && (
                 <tr>
-                  <td colSpan={7} className="text-center py-12 text-sm" style={{ color: '#9c8c84' }}>
+                  <td colSpan={7} style={{ textAlign: 'center', padding: '48px 16px', color: 'var(--muted)', fontSize: 13 }}>
                     Noch keine Nutzer registriert.
                   </td>
                 </tr>
               )}
               {(() => {
-                // Owners zuerst, dann ihre Members darunter, dann Users ohne Gruppe
                 const owners       = users.filter(u => u.groupRole === 'owner');
                 const members      = users.filter(u => u.groupRole === 'member');
                 const ungrouped    = users.filter(u => !u.groupRole);
@@ -277,10 +261,8 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                   const groupMembers = members.filter(m => m.groupId === owner.groupId);
                   for (const m of groupMembers) rendered.push({ user: m, isMember: true });
                 }
-                // Members ohne dazugehörigen Owner (Edge-Case)
                 const orphanMembers = members.filter(m => !ownersByGroup.has(m.groupId));
                 for (const m of orphanMembers) rendered.push({ user: m, isMember: true });
-                // User ohne groupRole (Legacy / pre-Migration)
                 for (const u of ungrouped) rendered.push({ user: u, isMember: false });
 
                 return rendered.map(({ user: u, isMember }) => {
@@ -288,59 +270,52 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                   const admin = isAdmin(u.email);
                   return (
                     <tr key={u.email} style={{
-                      borderBottom: '1px solid #f0ede8',
-                      backgroundColor: admin ? '#f2f6f2' : isMember ? '#fbfaf5' : 'transparent',
+                      borderBottom: '1px solid var(--border-2)',
+                      background: admin ? 'var(--bg-2)' : isMember ? 'color-mix(in srgb, var(--bg) 60%, var(--card))' : 'var(--card)',
                     }}>
-                      <td className="px-4 py-3 font-medium" style={{ color: '#2c2420', paddingLeft: isMember ? 32 : 16 }}>
-                        <div className="flex items-center gap-2">
-                          {isMember && <span style={{ color: '#c49a6c', fontWeight: 'bold' }}>↳</span>}
+                      <td style={{ padding: '10px 16px', paddingLeft: isMember ? 32 : 16, fontWeight: 600, color: 'var(--ink)' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                          {isMember && <span style={{ color: 'var(--accent)', fontWeight: 800 }}>↳</span>}
                           {u.firstName} {u.lastName}
                           {admin && (
-                            <span
-                              className="px-1.5 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wide"
-                              style={{ backgroundColor: '#4a7a4e', color: '#fff' }}
-                              title="Administrator-Account — wird in den Statistiken nicht mitgezählt"
-                            >
-                              ★ Admin
+                            <span style={{ background: 'var(--sage)', color: '#fff', padding: '2px 6px', borderRadius: 4, fontSize: 10, fontWeight: 700, letterSpacing: '.06em', textTransform: 'uppercase' }}>
+                              Admin
                             </span>
                           )}
                           {isMember && (
-                            <span className="px-1.5 py-0.5 rounded-md text-[10px] font-semibold" style={{ backgroundColor: '#f5ece0', color: '#c49a6c' }}>
+                            <span style={{ background: 'var(--chip)', color: 'var(--ink-2)', padding: '2px 6px', borderRadius: 4, fontSize: 10, fontWeight: 600 }}>
                               Mitglied
                             </span>
                           )}
                         </div>
                       </td>
-                      <td className="px-4 py-3" style={{ color: '#5a4e48' }}>{u.email}</td>
-                      <td className="px-4 py-3 text-xs" style={{ color: '#5a4e48' }}>
+                      <td style={{ padding: '10px 16px', color: 'var(--ink-2)' }}>{u.email}</td>
+                      <td style={{ padding: '10px 16px', fontSize: 12, color: 'var(--ink-2)' }}>
                         {groupNameById(u.groupId)}
                       </td>
-                      <td className="px-4 py-3">
-                        <span className="px-2 py-0.5 rounded-full text-xs font-semibold" style={{ backgroundColor: '#f2e5e0', color: '#b5614a' }}>
+                      <td style={{ padding: '10px 16px' }}>
+                        <span style={{ background: 'var(--accent-tint)', color: 'var(--accent-ink)', padding: '2px 8px', borderRadius: 999, fontSize: 11, fontWeight: 600 }}>
                           {PLAN_LABEL[u.plan] ?? u.plan}
                         </span>
                       </td>
-                      <td className="px-4 py-3">
-                        <span className="px-2 py-0.5 rounded-full text-xs font-semibold" style={sc}>
+                      <td style={{ padding: '10px 16px' }}>
+                        <span style={{ ...sc, padding: '2px 8px', borderRadius: 999, fontSize: 11, fontWeight: 600 }}>
                           {u.status === 'active' ? 'Aktiv' : u.status === 'pending' ? 'Ausstehend' : 'Inaktiv'}
                         </span>
                       </td>
-                      <td className="px-4 py-3 text-xs" style={{ color: '#9c8c84' }}>
+                      <td style={{ padding: '10px 16px', fontSize: 12, color: 'var(--muted)' }}>
                         {u.registeredAt.slice(0, 10)}
                       </td>
-                      <td className="px-4 py-3">
+                      <td style={{ padding: '10px 16px' }}>
                         {admin ? (
-                          <span className="text-xs italic" style={{ color: '#9c8c84' }}>
-                            —
-                          </span>
+                          <span style={{ fontSize: 12, fontStyle: 'italic', color: 'var(--muted)' }}>—</span>
                         ) : (
-                          <div className="flex gap-1.5">
+                          <div style={{ display: 'flex', gap: 6 }}>
                             {u.status === 'active' ? (
                               <button
                                 onClick={() => patch(u.email, 'inactive')}
                                 disabled={!!loading}
-                                className="px-2.5 py-1 rounded-lg text-xs font-semibold transition-opacity hover:opacity-70"
-                                style={{ backgroundColor: '#fce4ec', color: '#c62828' }}
+                                style={{ background: '#fce4ec', color: '#c62828', padding: '4px 10px', borderRadius: 6, fontSize: 12, fontWeight: 600, opacity: loading ? .5 : 1 }}
                               >
                                 {loading === u.email + 'inactive' ? '…' : 'Deaktivieren'}
                               </button>
@@ -348,16 +323,14 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                               <button
                                 onClick={() => patch(u.email, 'active')}
                                 disabled={!!loading}
-                                className="px-2.5 py-1 rounded-lg text-xs font-semibold transition-opacity hover:opacity-70"
-                                style={{ backgroundColor: '#e8f5e9', color: '#2e7d32' }}
+                                style={{ background: '#e8f5e9', color: '#2e7d32', padding: '4px 10px', borderRadius: 6, fontSize: 12, fontWeight: 600, opacity: loading ? .5 : 1 }}
                               >
                                 {loading === u.email + 'active' ? '…' : 'Aktivieren'}
                               </button>
                             )}
                             <button
                               onClick={() => setConfirm(u.email)}
-                              className="px-2.5 py-1 rounded-lg text-xs font-semibold transition-opacity hover:opacity-70"
-                              style={{ backgroundColor: '#f7f4ee', color: '#9c8c84', border: '1px solid #e0d8ce' }}
+                              style={{ background: 'var(--chip)', color: 'var(--muted)', padding: '4px 10px', borderRadius: 6, fontSize: 12, fontWeight: 600, border: '1px solid var(--border)' }}
                             >
                               Löschen
                             </button>
@@ -379,98 +352,89 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
           <div>
             {/* Notice */}
             {recipeNotice && (
-              <div className="mb-4 px-4 py-2 rounded-xl text-sm" style={recipeNotice.type === 'ok'
-                ? { backgroundColor: '#e8f5e9', color: '#2e7d32' }
-                : { backgroundColor: '#fce4ec', color: '#c62828' }
-              }>
+              <div style={{
+                marginBottom: 16, padding: '10px 16px', borderRadius: 'var(--r-sm)', fontSize: 13,
+                ...(recipeNotice.type === 'ok'
+                  ? { background: '#e8f5e9', color: '#2e7d32' }
+                  : { background: '#fce4ec', color: '#c62828' })
+              }}>
                 {recipeNotice.text}
               </div>
             )}
 
             {/* Toolbar */}
-            <div className="flex flex-wrap items-center gap-3 mb-4">
-              <input
-                type="text"
-                value={recipeSearch}
-                onChange={e => setRecipeSearch(e.target.value)}
-                placeholder="Rezept suchen…"
-                className="rounded-xl px-3 py-2 text-sm flex-1 min-w-[180px]"
-                style={{ border: '1px solid #e0d8ce', backgroundColor: '#fff9f3', color: '#2c2420', outline: 'none' }}
-              />
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, marginBottom: 16, alignItems: 'center' }}>
+              <div className="mz-search-box" style={{ flex: 1, minWidth: 180 }}>
+                <input
+                  type="text"
+                  value={recipeSearch}
+                  onChange={e => setRecipeSearch(e.target.value)}
+                  placeholder="Rezept suchen…"
+                />
+              </div>
               <select
                 value={recipeCatFilter}
                 onChange={e => setRecipeCatFilter(e.target.value as Category | 'Alle')}
-                className="rounded-xl px-3 py-2 text-sm"
-                style={{ border: '1px solid #e0d8ce', backgroundColor: '#fff9f3', color: '#2c2420', outline: 'none' }}
+                style={{ border: '1px solid var(--border)', background: 'var(--card)', color: 'var(--ink)', borderRadius: 10, padding: '8px 12px', fontSize: 13, outline: 'none' }}
               >
                 {recipeCategories.map(c => <option key={c} value={c}>{c}</option>)}
               </select>
-              <button
-                onClick={() => setShowImportModal(true)}
-                className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold"
-                style={{ backgroundColor: '#efe9df', color: '#5a4e48', border: '1px solid #e0d8ce' }}
-              >
-                ↓ Importieren
+              <button onClick={() => setShowImportModal(true)} className="mz-btn-soft">
+                Importieren
               </button>
-              <button
-                onClick={() => setEditingRecipe('new')}
-                className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold"
-                style={{ backgroundColor: '#4a7a4e', color: '#fff' }}
-              >
+              <button onClick={() => setEditingRecipe('new')} className="mz-btn-primary">
                 + Neues Rezept
               </button>
             </div>
 
             {/* Rezepte-Tabelle */}
-            <div className="rounded-2xl overflow-hidden" style={{ border: '1px solid #e0d8ce', backgroundColor: '#fff9f3' }}>
-              <table className="w-full text-sm">
+            <div style={{ borderRadius: 'var(--r-card)', overflow: 'hidden', border: '1px solid var(--border)', background: 'var(--card)', boxShadow: 'var(--shadow-sm)' }}>
+              <table style={{ width: '100%', fontSize: 13, borderCollapse: 'collapse' }}>
                 <thead>
-                  <tr style={{ backgroundColor: '#efe9df', borderBottom: '1px solid #e0d8ce' }}>
+                  <tr style={{ background: 'var(--bg-2)', borderBottom: '1px solid var(--border)' }}>
                     {['Rezept', 'Kategorie', 'Zeit', 'Quelle', 'Aktionen'].map(h => (
-                      <th key={h} className="text-left px-4 py-3 font-semibold text-xs" style={{ color: '#9c8c84' }}>{h}</th>
+                      <th key={h} style={{ textAlign: 'left', padding: '10px 16px', fontWeight: 700, fontSize: 11, textTransform: 'uppercase', letterSpacing: '.06em', color: 'var(--muted)' }}>{h}</th>
                     ))}
                   </tr>
                 </thead>
                 <tbody>
                   {filteredRecipes.length === 0 && (
                     <tr>
-                      <td colSpan={5} className="text-center py-10 text-sm" style={{ color: '#9c8c84' }}>
+                      <td colSpan={5} style={{ textAlign: 'center', padding: '40px 16px', color: 'var(--muted)', fontSize: 13 }}>
                         Keine Rezepte gefunden.
                       </td>
                     </tr>
                   )}
                   {filteredRecipes.map((r, i) => {
-                    const catCol = CAT_COLOR[r.category] ?? { bg: '#efe9df', color: '#5a4e48' };
+                    const catCol = CAT_COLOR[r.category] ?? { bg: 'var(--chip)', color: 'var(--ink-2)' };
                     return (
-                      <tr key={r.id} style={{ borderBottom: '1px solid #f0ede8', backgroundColor: i % 2 === 0 ? 'transparent' : '#fffdf9' }}>
-                        <td className="px-4 py-3">
-                          <div className="font-medium" style={{ color: '#2c2420' }}>{r.name}</div>
-                          <div className="text-[11px] mt-0.5" style={{ color: '#9c8c84' }}>{r.id}</div>
+                      <tr key={r.id} style={{ borderBottom: '1px solid var(--border-2)', background: i % 2 === 0 ? 'var(--card)' : 'var(--bg)' }}>
+                        <td style={{ padding: '10px 16px' }}>
+                          <div style={{ fontWeight: 600, color: 'var(--ink)' }}>{r.name}</div>
+                          <div style={{ fontSize: 11, marginTop: 2, color: 'var(--muted)' }}>{r.id}</div>
                         </td>
-                        <td className="px-4 py-3">
-                          <span className="px-2 py-0.5 rounded-full text-xs font-semibold" style={catCol}>
+                        <td style={{ padding: '10px 16px' }}>
+                          <span style={{ ...catCol, padding: '2px 8px', borderRadius: 999, fontSize: 11, fontWeight: 600 }}>
                             {r.category}
                           </span>
                         </td>
-                        <td className="px-4 py-3 text-xs" style={{ color: '#5a4e48' }}>
+                        <td style={{ padding: '10px 16px', fontSize: 12, color: 'var(--ink-2)' }}>
                           {r.timeMinutes ? `${r.timeMinutes} min` : '—'}
                         </td>
-                        <td className="px-4 py-3 text-xs max-w-[180px] truncate" style={{ color: '#9c8c84' }} title={r.source}>
+                        <td style={{ padding: '10px 16px', fontSize: 12, maxWidth: 180, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', color: 'var(--muted)' }} title={r.source}>
                           {r.source ?? '—'}
                         </td>
-                        <td className="px-4 py-3">
-                          <div className="flex gap-1.5">
+                        <td style={{ padding: '10px 16px' }}>
+                          <div style={{ display: 'flex', gap: 6 }}>
                             <button
                               onClick={() => setEditingRecipe(r)}
-                              className="px-3 py-1 rounded-lg text-xs font-semibold transition-opacity hover:opacity-70"
-                              style={{ backgroundColor: '#e8f2e8', color: '#4a7a4e' }}
+                              style={{ background: 'var(--bg-2)', color: 'var(--sage)', padding: '4px 10px', borderRadius: 6, fontSize: 12, fontWeight: 600 }}
                             >
                               Bearbeiten
                             </button>
                             <button
                               onClick={() => setDeleteRecipeId(r.id)}
-                              className="px-3 py-1 rounded-lg text-xs font-semibold transition-opacity hover:opacity-70"
-                              style={{ backgroundColor: '#f7f4ee', color: '#9c8c84', border: '1px solid #e0d8ce' }}
+                              style={{ background: 'var(--chip)', color: 'var(--muted)', padding: '4px 10px', borderRadius: 6, fontSize: 12, fontWeight: 600, border: '1px solid var(--border)' }}
                             >
                               Löschen
                             </button>
@@ -498,17 +462,16 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
 
         {/* ── Rezept Bearbeiten / Neu — Modal ─────────────────────────────── */}
         {editingRecipe !== null && (
-          <div className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto py-8 px-4"
-               style={{ backgroundColor: 'rgba(44,36,32,0.6)' }}>
-            <div className="w-full max-w-3xl rounded-2xl shadow-2xl" style={{ backgroundColor: '#fff9f3' }}>
-              <div className="flex items-center justify-between px-6 py-4" style={{ borderBottom: '1px solid #e0d8ce' }}>
-                <h2 className="font-semibold text-base" style={{ color: '#2c2420' }}>
+          <div style={{ position: 'fixed', inset: 0, zIndex: 50, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', overflowY: 'auto', padding: '32px 16px', background: 'rgba(39,31,26,.6)' }}>
+            <div style={{ width: '100%', maxWidth: 760, borderRadius: 'var(--r-card)', boxShadow: 'var(--shadow-lg)', background: 'var(--card)' }}>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '16px 24px', borderBottom: '1px solid var(--border)' }}>
+                <h2 style={{ fontWeight: 700, fontSize: 15, color: 'var(--ink)', margin: 0 }}>
                   {editingRecipe === 'new' ? 'Neues Template-Rezept' : `Bearbeiten: ${(editingRecipe as Recipe).name}`}
                 </h2>
-                <button onClick={() => setEditingRecipe(null)} style={{ color: '#9c8c84' }} className="text-xl leading-none">✕</button>
+                <button onClick={() => setEditingRecipe(null)} style={{ color: 'var(--muted)', fontSize: 18, lineHeight: 1 }}>✕</button>
               </div>
-              <div className="p-6">
-                {recipeSaving && <p className="text-sm text-center mb-3" style={{ color: '#9c8c84' }}>Speichern…</p>}
+              <div style={{ padding: 24 }}>
+                {recipeSaving && <p style={{ textAlign: 'center', fontSize: 13, color: 'var(--muted)', marginBottom: 12 }}>Speichern…</p>}
                 <RecipeForm
                   recipe={editingRecipe === 'new' ? undefined : (editingRecipe as Recipe)}
                   onSave={handleRecipeSave}
@@ -521,24 +484,21 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
 
         {/* ── Rezept löschen — Bestätigung ────────────────────────────────── */}
         {deleteRecipeId && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center" style={{ backgroundColor: 'rgba(44,36,32,0.5)' }}>
-            <div className="rounded-2xl p-6 w-full max-w-sm shadow-2xl" style={{ backgroundColor: '#fff9f3' }}>
-              <h3 className="font-semibold mb-2" style={{ color: '#2c2420' }}>Template-Rezept löschen?</h3>
-              <p className="text-sm mb-1" style={{ color: '#5a4e48' }}>
-                <strong>{recipes.find(r => r.id === deleteRecipeId)?.name}</strong>
+          <div style={{ position: 'fixed', inset: 0, zIndex: 50, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(39,31,26,.5)' }}>
+            <div style={{ borderRadius: 'var(--r-card)', padding: 24, width: '100%', maxWidth: 380, boxShadow: 'var(--shadow-lg)', background: 'var(--card)' }}>
+              <h3 style={{ fontWeight: 700, marginBottom: 8, color: 'var(--ink)' }}>Template-Rezept löschen?</h3>
+              <p style={{ fontSize: 13, marginBottom: 4, color: 'var(--ink-2)', fontWeight: 600 }}>
+                {recipes.find(r => r.id === deleteRecipeId)?.name}
               </p>
-              <p className="text-xs mb-5" style={{ color: '#9c8c84' }}>
-                Die JSON-Datei wird gelöscht. Die Änderung wird erst nach einem Deployment für alle Nutzer wirksam.
+              <p style={{ fontSize: 12, marginBottom: 20, color: 'var(--muted)' }}>
+                Die JSON-Datei wird gelöscht. Änderung erst nach Deployment wirksam.
               </p>
-              <div className="flex gap-3 justify-end">
-                <button onClick={() => setDeleteRecipeId(null)} className="px-4 py-2 rounded-xl text-sm font-semibold" style={{ color: '#5a4e48' }}>
-                  Abbrechen
-                </button>
+              <div style={{ display: 'flex', gap: 10, justifyContent: 'flex-end' }}>
+                <button onClick={() => setDeleteRecipeId(null)} className="mz-btn-soft">Abbrechen</button>
                 <button
                   onClick={() => handleRecipeDelete(deleteRecipeId)}
                   disabled={recipeSaving}
-                  className="px-4 py-2 rounded-xl text-sm font-semibold text-white"
-                  style={{ backgroundColor: '#c62828' }}
+                  style={{ background: '#c62828', color: '#fff', padding: '9px 18px', borderRadius: 999, fontWeight: 700, fontSize: 14, opacity: recipeSaving ? .5 : 1 }}
                 >
                   {recipeSaving ? '…' : 'Löschen'}
                 </button>
@@ -549,25 +509,18 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
 
         {/* Delete confirm modal */}
         {confirm && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center" style={{ backgroundColor: 'rgba(44,36,32,0.5)' }}>
-            <div className="rounded-2xl p-6 w-full max-w-sm shadow-2xl" style={{ backgroundColor: '#fff9f3' }}>
-              <h3 className="font-semibold mb-2" style={{ color: '#2c2420' }}>Nutzer löschen?</h3>
-              <p className="text-sm mb-5" style={{ color: '#5a4e48' }}>
-                <strong>{confirm}</strong> wird <strong>endgültig</strong> gelöscht und kann nicht wiederhergestellt werden.
+          <div style={{ position: 'fixed', inset: 0, zIndex: 50, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(39,31,26,.5)' }}>
+            <div style={{ borderRadius: 'var(--r-card)', padding: 24, width: '100%', maxWidth: 380, boxShadow: 'var(--shadow-lg)', background: 'var(--card)' }}>
+              <h3 style={{ fontWeight: 700, marginBottom: 8, color: 'var(--ink)' }}>Nutzer löschen?</h3>
+              <p style={{ fontSize: 13, marginBottom: 20, color: 'var(--ink-2)' }}>
+                <strong>{confirm}</strong> wird endgültig gelöscht und kann nicht wiederhergestellt werden.
               </p>
-              <div className="flex gap-3 justify-end">
-                <button
-                  onClick={() => setConfirm(null)}
-                  className="px-4 py-2 rounded-xl text-sm font-semibold"
-                  style={{ color: '#5a4e48' }}
-                >
-                  Abbrechen
-                </button>
+              <div style={{ display: 'flex', gap: 10, justifyContent: 'flex-end' }}>
+                <button onClick={() => setConfirm(null)} className="mz-btn-soft">Abbrechen</button>
                 <button
                   onClick={() => del(confirm)}
                   disabled={!!loading}
-                  className="px-4 py-2 rounded-xl text-sm font-semibold text-white"
-                  style={{ backgroundColor: '#c62828' }}
+                  style={{ background: '#c62828', color: '#fff', padding: '9px 18px', borderRadius: 999, fontWeight: 700, fontSize: 14, opacity: loading ? .5 : 1 }}
                 >
                   {loading ? '…' : 'Löschen'}
                 </button>
@@ -575,6 +528,7 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
             </div>
           </div>
         )}
+
       </div>
     </div>
   );

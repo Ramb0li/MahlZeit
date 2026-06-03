@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Check } from 'lucide-react';
+import { Check, Leaf, Clock, Flame } from 'lucide-react';
+import { LandingBleed } from '@/components/landing/LandingBleed';
 
 const COLLAGE = [
   { cls: 'mz-cc1', src: '/images/recipes/cuiselin-taboule.jpeg',             alt: 'Taboulé'           },
@@ -9,15 +10,20 @@ const COLLAGE = [
   { cls: 'mz-cc4', src: '/images/recipes/cuiselin-pesto-genovese.jpg',       alt: 'Pesto Genovese'    },
 ];
 
+// Heutiger Wochentag dynamisch (Serverzeit) — hebt den richtigen Tag hervor
+const todayIdx  = new Date().getDay(); // 0=So … 6=Sa
+const DAY_SHORT = ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'];
+const todayShort = DAY_SHORT[todayIdx];
+
 const WEEK = [
-  { name: 'Mo', meal: 'Overnight Oats',  sub: '5 min',   today: false },
-  { name: 'Di', meal: 'Pasta al Limone', sub: '25 min',  today: true  },
-  { name: 'Mi', meal: 'Buddha Bowl',     sub: '20 min',  today: false },
-  { name: 'Do', meal: 'Gemüse Curry',    sub: '35 min',  today: false },
-  { name: 'Fr', meal: 'Pizza Bianca',    sub: '30 min',  today: false },
-  { name: 'Sa', meal: 'Risotto',         sub: '40 min',  today: false },
-  { name: 'So', meal: 'Linsensuppe',     sub: '25 min',  today: false },
-];
+  { name: 'Mo', meal: 'Overnight Oats',  sub: '5 min'  },
+  { name: 'Di', meal: 'Pasta al Limone', sub: '25 min' },
+  { name: 'Mi', meal: 'Buddha Bowl',     sub: '20 min' },
+  { name: 'Do', meal: 'Gemüse Curry',    sub: '35 min' },
+  { name: 'Fr', meal: 'Pizza Bianca',    sub: '30 min' },
+  { name: 'Sa', meal: 'Risotto',         sub: '40 min' },
+  { name: 'So', meal: 'Linsensuppe',     sub: '25 min' },
+].map(d => ({ ...d, today: d.name === todayShort }));
 
 const REVIEWS = [
   { text: '«Endlich plane ich die Woche durch — kein tägliches Grübeln mehr. Die Einkaufsliste spart mir jedes Mal Zeit.»', name: 'Sarah M.',  role: 'Mutter, Basel'     },
@@ -35,7 +41,7 @@ const PLANS = [
   {
     badge: 'Flexibel', name: 'Monatsabo', cur: 'CHF', amount: '3', per: '/ Monat · kündbar',
     desc: 'Monatlich kündbar.',
-    features: ['Alles aus Testwoche', 'Unbegrenzte Rezepte', 'PDF-Export', 'Kündigung jederzeit'],
+    features: ['Alles aus Testwoche', 'Unbegrenzte Rezepte', 'KI Menü-Import', 'Kündigung jederzeit'],
     href: '/auth?plan=abo', featured: false,
   },
   {
@@ -47,8 +53,36 @@ const PLANS = [
   {
     badge: 'Bester Wert', name: 'Jahresabo', cur: 'CHF', amount: '30', per: '/ Jahr · 2 Monate gratis',
     desc: 'Spare gegenüber dem Monatsabo.',
-    features: ['Alles aus Monatsabo', 'Priorisierter Support', '2 Monate gespart', 'Exklusive Rezepte'],
+    features: ['Alles aus Monatsabo', 'Priorisierter Support', '2 Monate gespart'],
     href: '/auth?plan=yearly', featured: false,
+  },
+];
+
+// Features mit React.ReactNode für Link im Rezeptbibliothek-Text
+const FEATURES: { n: string; title: string; text: React.ReactNode }[] = [
+  {
+    n: '01', title: 'Smarte Vorschläge',
+    text: 'MahlZeit schlägt Gerichte vor, die zu deinen Vorlieben, der Saison und dem Wetter passen. Kein Kopfzerbrechen mehr.',
+  },
+  {
+    n: '02', title: 'Wochenplaner',
+    text: 'Plane Wochen im Voraus, in der Wochenübersicht alle Mahlzeiten, übersichtlich dargestellt. Änderungen aktualisieren deine Einkaufslisten sofort und automatisch.',
+  },
+  {
+    n: '03', title: 'Rezeptbibliothek',
+    text: (
+      <>
+        170+ Rezepte von{' '}
+        <a href="https://www.instagram.com/cuiseline/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)', textDecoration: 'none', fontWeight: 600 }}>
+          @cuiseline
+        </a>
+        , kuratiert und laufend erweitert. Speichere deine Lieblingsrezepte mit Anleitungen, Zutaten und Variationen mithilfe unserem KI Tool, welches Fotos oder Rezepte automatisch erkennt und einliest.
+      </>
+    ),
+  },
+  {
+    n: '04', title: 'Automatische Einkaufsliste',
+    text: 'Alle Zutaten zusammengefasst, nach Regal sortiert, mit dem ganzen Haushalt geteilt.',
   },
 ];
 
@@ -117,7 +151,7 @@ export default function LandingPage() {
 
       {/* ── Statement ─────────────────────────────────────────────────── */}
       <div className="mz-lp-statement">
-        <h2>Schluss mit der Frage<br />«<em>Was koche ich heute?</em>»</h2>
+        <h2>Schluss mit der Frage<br /><em>«Was koche ich heute?»</em></h2>
       </div>
 
       {/* ── Features ──────────────────────────────────────────────────── */}
@@ -127,12 +161,7 @@ export default function LandingPage() {
           Alles, was du für<br />deine Woche <em>brauchst.</em>
         </h2>
         <div className="mz-lp-feat-grid">
-          {[
-            { n: '01', title: 'Smarte Vorschläge',       text: 'MahlZeit schlägt Gerichte vor, die zu deinen Vorlieben, der Saison und dem Wetter passen. Kein Kopfzerbrechen mehr.' },
-            { n: '02', title: 'Wochenplaner',             text: 'Sieben Tage, alle Mahlzeiten, übersichtlich dargestellt. Änderungen aktualisieren die Einkaufsliste sofort.' },
-            { n: '03', title: 'Rezeptbibliothek',         text: '172+ Rezepte von @cuiseline, kuratiert und laufend erweitert. Eigene Rezepte hinzufügen und importieren.' },
-            { n: '04', title: 'Automatische Einkaufsliste', text: 'Alle Zutaten des Wochenplans, zusammengefasst nach Kategorien. Als PDF exportieren oder direkt teilen.' },
-          ].map(({ n, title, text }) => (
+          {FEATURES.map(({ n, title, text }) => (
             <div key={n} className="mz-lp-feat">
               <div className="mz-lp-feat-num">{n}</div>
               <h3>{title}</h3>
@@ -142,17 +171,8 @@ export default function LandingPage() {
         </div>
       </div>
 
-      {/* ── Full-bleed image ───────────────────────────────────────────── */}
-      <div
-        className="mz-lp-bleed"
-        style={{ backgroundImage: 'url(/images/recipes/cuiselin-taboule.jpeg)' }}
-      >
-        <div className="mz-lp-bleed-card">
-          <span className="mz-lp-bleed-tag">Heute Abend</span>
-          <div className="mz-lp-bleed-name">Taboulé</div>
-          <div className="mz-lp-bleed-meta">20 min · Vegan · Frischer Levante-Salat</div>
-        </div>
-      </div>
+      {/* ── Full-bleed image — zeitbasiert (Client Component) ──────────── */}
+      <LandingBleed />
 
       {/* ── Week preview ──────────────────────────────────────────────── */}
       <div className="mz-lp-week">
@@ -175,20 +195,28 @@ export default function LandingPage() {
       <div className="mz-lp-two">
         <div
           className="mz-lp-two-img"
-          style={{ backgroundImage: 'url(/images/recipes/cuiselin-pesto-genovese.jpg)' }}
+          style={{ backgroundImage: 'url(/images/recipes/cuiselin-gruener-linsensalat.jpg)' }}
         />
         <div className="mz-lp-two-txt">
           <p className="mz-eyebrow">Rezepte die passen</p>
           <h3 style={{ marginTop: 10 }}>
-            Nicht irgendwelche Rezepte — <em>deine.</em>
+            Rezepte,<br /><em>die passen.</em>
           </h3>
           <p>
-            Saisonal, wetterabhängig, auf deine Diät und deine Familie abgestimmt.
-            Sonnig? MahlZeit schlägt leichte Sommerküche vor.
+            Nicht irgendwelche — sondern solche, die zu deinen Vorlieben, der Zeit,
+            der Saison und dem aktuellen Wetter passen. Sonnig? MahlZeit schlägt
+            ein leichtes Sommermenü vor.
           </p>
           <div className="mz-lp-tagrow">
-            {['🌱 Vegan', '⏱ Unter 30 Min', '🔥 Saisonal', '💪 Proteinreich', '👨‍👩‍👧 Familienküche'].map(tag => (
-              <span key={tag} className="mz-chip" style={{ cursor: 'default' }}>{tag}</span>
+            {[
+              { icon: <Leaf  size={13} />, label: 'Vegan'        },
+              { icon: <Clock size={13} />, label: 'Unter 30 Min' },
+              { icon: <Flame size={13} />, label: 'Saisonal'     },
+              { icon: null,                label: 'Proteinreich'  },
+            ].map(({ icon, label }) => (
+              <span key={label} className="mz-chip" style={{ cursor: 'default', display: 'inline-flex', alignItems: 'center', gap: 5 }}>
+                {icon}{label}
+              </span>
             ))}
           </div>
         </div>
@@ -229,11 +257,8 @@ export default function LandingPage() {
       <div className="mz-lp-pricing" id="pricing">
         <p className="mz-eyebrow" style={{ color: 'rgba(255,255,255,.6)' }}>Preise</p>
         <h2 className="mz-lp-h2" style={{ color: '#fff', marginTop: 10 }}>
-          Einfach. Fair. Dein Preis.
+          Einfach. Fair. <em>Dein</em> Preis.
         </h2>
-        <p style={{ color: 'rgba(255,255,255,.7)', fontSize: 17, marginTop: 14 }}>
-          Starte kostenlos — wähle danach was zu dir passt.
-        </p>
         <div className="mz-lp-plans">
           {PLANS.map((p) => (
             <div key={p.name} className={`mz-lp-plan${p.featured ? ' featured' : ''}`}>
