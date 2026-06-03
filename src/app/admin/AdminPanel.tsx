@@ -43,6 +43,16 @@ const PLAN_LABEL: Record<string, string> = {
   beta:     'Beta-Tester',
 };
 
+const PLAN_COLOR: Record<string, { bg: string; color: string }> = {
+  trial:    { bg: '#fff3e0', color: '#e65100' },
+  lifetime: { bg: '#e8f5e9', color: '#2e7d32' },
+  abo:      { bg: '#e3f2fd', color: '#1565c0' },
+  yearly:   { bg: '#e3f2fd', color: '#1565c0' },
+  beta:     { bg: '#f3e5f5', color: '#6a1b9a' },
+};
+
+type UserFilter = 'all' | 'active' | 'pending' | 'inactive' | 'lifetime';
+
 const STATUS_COLOR: Record<string, { bg: string; color: string }> = {
   active:   { bg: '#e8f5e9', color: '#2e7d32' },
   inactive: { bg: '#fce4ec', color: '#c62828' },
@@ -62,6 +72,9 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
   const [users,    setUsers]    = useState<SafeUser[]>(initialUsers);
   const [loading,  setLoading]  = useState<string | null>(null);
   const [confirm,  setConfirm]  = useState<string | null>(null);
+
+  // ── User Filter ─────────────────────────────────────────────────────────────
+  const [userFilter, setUserFilter] = useState<UserFilter>('all');
 
   // ── User bearbeiten ──────────────────────────────────────────────────────────
   const [editingUser,    setEditingUser]    = useState<SafeUser | null>(null);
@@ -388,20 +401,31 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
 
         {activeTab === 'users' && <>
 
-        {/* Stats row */}
+        {/* Stats row — klickbar zum Filtern */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 12, marginBottom: 24 }}>
           {(() => {
             const customers = users.filter(u => !isAdmin(u.email));
             return [
-              { label: 'Aktiv',      value: customers.filter((u) => u.status === 'active').length,   color: '#2e7d32', bg: '#e8f5e9' },
-              { label: 'Ausstehend', value: customers.filter((u) => u.status === 'pending').length,  color: '#e65100', bg: '#fff3e0' },
-              { label: 'Inaktiv',    value: customers.filter((u) => u.status === 'inactive').length, color: '#c62828', bg: '#fce4ec' },
-              { label: 'Lifetime',   value: customers.filter((u) => u.plan === 'lifetime').length,   color: 'var(--accent)', bg: 'var(--accent-tint)' },
+              { label: 'Aktiv',      value: customers.filter((u) => u.status === 'active').length,   color: '#2e7d32', bg: '#e8f5e9', filter: 'active'   as UserFilter },
+              { label: 'Ausstehend', value: customers.filter((u) => u.status === 'pending').length,  color: '#e65100', bg: '#fff3e0', filter: 'pending'  as UserFilter },
+              { label: 'Inaktiv',    value: customers.filter((u) => u.status === 'inactive').length, color: '#c62828', bg: '#fce4ec', filter: 'inactive' as UserFilter },
+              { label: 'Lifetime',   value: customers.filter((u) => u.plan === 'lifetime').length,   color: PLAN_COLOR.lifetime.color, bg: PLAN_COLOR.lifetime.bg, filter: 'lifetime' as UserFilter },
             ];
-          })().map(({ label, value, color, bg }) => (
-            <div key={label} style={{ background: bg, borderRadius: 'var(--r-card)', padding: '16px 20px', border: '1px solid var(--border)' }}>
+          })().map(({ label, value, color, bg, filter }) => (
+            <div
+              key={label}
+              onClick={() => setUserFilter(prev => prev === filter ? 'all' : filter)}
+              style={{
+                background: bg, borderRadius: 'var(--r-card)', padding: '16px 20px', cursor: 'pointer',
+                border: userFilter === filter ? `2px solid ${color}` : '1px solid var(--border)',
+                transition: 'border .15s',
+                userSelect: 'none',
+              }}
+            >
               <div style={{ fontSize: 28, fontWeight: 900, fontFamily: 'var(--font-display)', color }}>{value}</div>
-              <div style={{ fontSize: 12, fontWeight: 600, marginTop: 2, color }}>{label}</div>
+              <div style={{ fontSize: 12, fontWeight: 600, marginTop: 2, color }}>
+                {label}{userFilter === filter ? ' ×' : ''}
+              </div>
             </div>
           ))}
         </div>
@@ -440,7 +464,17 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                 for (const m of orphanMembers) rendered.push({ user: m, isMember: true });
                 for (const u of ungrouped) rendered.push({ user: u, isMember: false });
 
-                return rendered.map(({ user: u, isMember }) => {
+                const toShow = rendered.filter(({ user: u }) => {
+                  if (isAdmin(u.email)) return true;
+                  if (userFilter === 'all')      return true;
+                  if (userFilter === 'active')   return u.status === 'active';
+                  if (userFilter === 'pending')  return u.status === 'pending';
+                  if (userFilter === 'inactive') return u.status === 'inactive';
+                  if (userFilter === 'lifetime') return u.plan === 'lifetime';
+                  return true;
+                });
+
+                return toShow.map(({ user: u, isMember }) => {
                   const sc    = STATUS_COLOR[u.status] ?? STATUS_COLOR.inactive;
                   const admin = isAdmin(u.email);
                   return (
@@ -469,9 +503,14 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                         {groupNameById(u.groupId)}
                       </td>
                       <td style={{ padding: '10px 16px' }}>
-                        <span style={{ background: 'var(--accent-tint)', color: 'var(--accent-ink)', padding: '2px 8px', borderRadius: 999, fontSize: 11, fontWeight: 600 }}>
-                          {PLAN_LABEL[u.plan] ?? u.plan}
-                        </span>
+                        {(() => {
+                          const pc = PLAN_COLOR[u.plan] ?? { bg: 'var(--chip)', color: 'var(--ink-2)' };
+                          return (
+                            <span style={{ background: pc.bg, color: pc.color, padding: '2px 8px', borderRadius: 999, fontSize: 11, fontWeight: 600, whiteSpace: 'nowrap' }}>
+                              {PLAN_LABEL[u.plan] ?? u.plan}
+                            </span>
+                          );
+                        })()}
                       </td>
                       <td style={{ padding: '10px 16px' }}>
                         <span style={{ ...sc, padding: '2px 8px', borderRadius: 999, fontSize: 11, fontWeight: 600 }}>
@@ -580,7 +619,7 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
               <table style={{ width: '100%', fontSize: 13, borderCollapse: 'collapse' }}>
                 <thead>
                   <tr style={{ background: 'var(--bg-2)', borderBottom: '1px solid var(--border)' }}>
-                    {['Rezept', 'Kategorie', 'Zeit', 'Quelle', 'Aktionen'].map(h => (
+                    {['Rezept', 'Kategorie', 'Zeit', 'Bild', 'Quelle', 'Aktionen'].map(h => (
                       <th key={h} style={{ textAlign: 'left', padding: '10px 16px', fontWeight: 700, fontSize: 11, textTransform: 'uppercase', letterSpacing: '.06em', color: 'var(--muted)' }}>{h}</th>
                     ))}
                   </tr>
@@ -588,7 +627,7 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                 <tbody>
                   {filteredRecipes.length === 0 && (
                     <tr>
-                      <td colSpan={5} style={{ textAlign: 'center', padding: '40px 16px', color: 'var(--muted)', fontSize: 13 }}>
+                      <td colSpan={6} style={{ textAlign: 'center', padding: '40px 16px', color: 'var(--muted)', fontSize: 13 }}>
                         Keine Rezepte gefunden.
                       </td>
                     </tr>
@@ -608,6 +647,11 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                         </td>
                         <td style={{ padding: '10px 16px', fontSize: 12, color: 'var(--ink-2)' }}>
                           {r.timeMinutes ? `${r.timeMinutes} min` : '—'}
+                        </td>
+                        <td style={{ padding: '10px 16px' }}>
+                          {r.imageUrl
+                            ? <img src={r.imageUrl} alt="" style={{ width: 40, height: 40, objectFit: 'cover', borderRadius: 6, display: 'block' }} />
+                            : <span style={{ color: 'var(--muted)', fontSize: 11 }}>–</span>}
                         </td>
                         <td style={{ padding: '10px 16px', fontSize: 12, maxWidth: 180, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', color: 'var(--muted)' }} title={r.source}>
                           {r.source ?? '—'}
