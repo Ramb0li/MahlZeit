@@ -489,11 +489,6 @@
     "tags": [
       "Vegan"
     ],
-    "weatherType": "warm",
-    "source": "Cuiseline",
-    "basePortions": 1,
-    "dietCategory": "vegan",
-    "description": "Cremige Smoothie Bowl mit Heidelbeeren, Hanf- und Leinsamen.",
     "ingredients": [
       {
         "name": "tiefgefrorene Heidelbeeren",
@@ -532,16 +527,19 @@
         "perPortions": 1
       }
     ],
+    "weatherType": "warm",
+    "source": "Cuiseline",
+    "basePortions": 1,
+    "description": "Cremige Smoothie Bowl mit Heidelbeeren, Hanf- und Leinsamen.",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---blueberry-smoothie-bowl-2--1780577059410.jpeg",
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---blueberry-smoothie-bowl-3--1780577067152.jpeg",
+    "imageKochen": null,
     "steps": [
       "Heidelbeeren, Banane, Mandeljogurt, Haferdrink, Leinsamen und Hanfsamen in den Mixer geben.",
       "Fein mixen bis eine cremige Masse entsteht.",
       "In eine Schüssel geben.",
       "Mit Granola, Früchten (Banane, Granatapfelkerne), Nüssen und Pfefferminze garnieren."
-    ],
-    "tips": "",
-    "imageUrl": null,
-    "imageZutaten": null,
-    "imageKochen": null
+    ]
   },
   {
     "id": "ei-10",
@@ -620,11 +618,6 @@
       "Vegan",
       "Mealprep-geeignet"
     ],
-    "weatherType": "neutral",
-    "source": "Cuiseline",
-    "basePortions": 8,
-    "dietCategory": "vegan",
-    "description": "Selbstgemachtes knuspriges Granola mit Nüssen, Samen und Datteln.",
     "ingredients": [
       {
         "name": "Haferflocken",
@@ -699,6 +692,13 @@
         "perPortions": 8
       }
     ],
+    "weatherType": "neutral",
+    "source": "Cuiseline",
+    "basePortions": 8,
+    "description": "Selbstgemachtes knuspriges Granola mit Nüssen, Samen und Datteln.",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---granola-1--1780577321739.jpeg",
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---granola-2--1780577355124.jpeg",
+    "imageKochen": null,
     "steps": [
       "Ofen auf 160 °C vorheizen (Ober- und Unterhitze).",
       "Alle Zutaten ausser Datteln in grosser Schüssel mit Rapsöl und Ahornsirup gut vermischen.",
@@ -706,11 +706,7 @@
       "Ca. 40 Minuten backen, in der Halbzeit die Bleche tauschen damit alles gleichmässig röstet.",
       "Datteln in feine Ringe schneiden, 7 Minuten vor Backende auf den Blechen verteilen.",
       "Auf Backblech vollständig auskühlen lassen, dann in Gläser abfüllen."
-    ],
-    "tips": "Mit Kokosjogurt, pflanzlicher Milch und saisonalen Früchten servieren.",
-    "imageUrl": null,
-    "imageZutaten": null,
-    "imageKochen": null
+    ]
   },
   {
     "id": "fam-29",
@@ -2451,11 +2447,6 @@
       "Vegan",
       "Sommer"
     ],
-    "weatherType": "warm",
-    "source": "Cuiseline",
-    "basePortions": 4,
-    "dietCategory": "vegan",
-    "description": "Geröstete sardische Pasta mit Sommergemüse und Sojasosse.",
     "ingredients": [
       {
         "name": "Fregola Sarda",
@@ -2518,6 +2509,13 @@
         "perPortions": 4
       }
     ],
+    "weatherType": "warm",
+    "source": "Cuiseline",
+    "basePortions": 4,
+    "description": "Geröstete sardische Pasta mit Sommergemüse und Sojasosse.",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fregola-sarda-1--1780577458863.jpeg",
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fregola-sarda-2--1780577468333.jpeg",
+    "imageKochen": null,
     "steps": [
       "Olivenöl in Pfanne erhitzen, Zwiebel und Knoblauch anrösten.",
       "Karotten und Peperoni dazugeben, bei mittlerer Hitze dünsten.",
@@ -2525,11 +2523,7 @@
       "Fregola Sarda nach Anleitung al dente kochen.",
       "Gemüse mit Sojasosse würzen, mit Salz und Pfeffer abschmecken.",
       "Gemüse und Fregola Sarda mischen. Mit frischem Basilikum garnieren."
-    ],
-    "tips": "",
-    "imageUrl": null,
-    "imageZutaten": null,
-    "imageKochen": null
+    ]
   },
   {
     "id": "pas-15",
@@ -2540,11 +2534,6 @@
       "Vegetarisch",
       "Herbst"
     ],
-    "weatherType": "neutral",
-    "source": "Cuiseline",
-    "basePortions": 4,
-    "dietCategory": "vegetarian",
-    "description": "Herbstliche Spaghetti mit gebratenen Pfifferlingen und gerösteten Haselnüssen.",
     "ingredients": [
       {
         "name": "Vollkornspaghetti",
@@ -2595,6 +2584,13 @@
         "perPortions": 4
       }
     ],
+    "weatherType": "neutral",
+    "source": "Cuiseline",
+    "basePortions": 4,
+    "description": "Herbstliche Spaghetti mit gebratenen Pfifferlingen und gerösteten Haselnüssen.",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---spaghetti-mit-pfifferlingen-und-cherrytomaten-1--1780577497670.jpeg",
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---spaghetti-mit-pifferlingen-und-cherrytomaten-2--1780577575474.jpeg",
+    "imageKochen": null,
     "steps": [
       "Haselnüsse in grosser Bratpfanne ohne Fett rösten, grob hacken, beiseitestellen.",
       "Pfifferlinge putzen und je nach Grösse halbieren.",
@@ -2602,11 +2598,7 @@
       "Olivenöl erhitzen, Pfifferlinge bei starker Hitze 5 Minuten braten. Knoblauch dazugeben, weitere 5 Minuten bei mittlerer Hitze.",
       "Cherrytomaten beifügen, kurz mitbraten. Mit Salz, Pfeffer und Chiliflocken würzen.",
       "Spaghetti abgiessen, in die Pfanne geben. Mit Haselnüssen und Petersilie garnieren."
-    ],
-    "tips": "",
-    "imageUrl": null,
-    "imageZutaten": null,
-    "imageKochen": null
+    ]
   },
   {
     "id": "fam-56",
@@ -2856,6 +2848,12 @@
     "name": "Lauchrisotto",
     "category": "Reis & Getreide",
     "timeMinutes": 40,
+    "tags": [
+      "Herbst",
+      "Winter",
+      "Frühling",
+      "Vegan"
+    ],
     "ingredients": [
       {
         "name": "Risottoreis",
@@ -2904,22 +2902,16 @@
     "source": "Cuiseline",
     "basePortions": 4,
     "description": "Cremiges Lauchrisotto – Komfort food pur.",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---rei-01-1--1780577619393.jpeg",
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---rei-01-2--1780577648794.jpeg",
+    "imageKochen": null,
     "steps": [
       "Vegane Butter in Pfanne, Zwiebeln und Lauch andünsten.",
       "Risottoreis dazugeben, gut verrühren.",
       "Nach und nach heisse Gemüsebrühe beigeben, regelmässig rühren bis der Reis die Flüssigkeit aufgenommen hat (ca. 20 Min.).",
       "Restliche vegane Butter und veganen Parmesan unterrühren.",
       "Mit Salz und Pfeffer würzen. Mit Röstzwiebeln garnieren."
-    ],
-    "tips": "",
-    "imageUrl": null,
-    "tags": [
-      "Herbst",
-      "Winter",
-      "Frühling",
-      "Vegan"
-    ],
-    "dietCategory": "vegan"
+    ]
   },
   {
     "id": "rei-02",
@@ -3181,6 +3173,11 @@
     "name": "Linsen-Reis",
     "category": "Reis & Getreide",
     "timeMinutes": 40,
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Vegan"
+    ],
     "ingredients": [
       {
         "name": "Linsen (trocken)",
@@ -3247,6 +3244,9 @@
     "source": "Cuiseline",
     "basePortions": 4,
     "description": "Würziger Linsenreis mit Kurkuma, Kardamom und frischem Koriander.",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---rei-06-1--1780577735944.jpeg",
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---rei-06-2--1780577746940.jpeg",
+    "imageKochen": null,
     "steps": [
       "Zwiebeln, Knoblauch und Ingwer im Rapsöl andünsten.",
       "Linsen, Kardamom und Kurkuma beigeben, kurz mitdünsten.",
@@ -3254,15 +3254,7 @@
       "Reis dazugeben, weitere 15 Minuten köcheln bis alles gar ist.",
       "Koriander abzupfen, daruntermengen. Mit Salz abschmecken.",
       "Nach Belieben mit Kokosmilch und extra Koriander garnieren."
-    ],
-    "tips": "",
-    "imageUrl": null,
-    "tags": [
-      "Mealprep-geeignet",
-      "Mittagsgericht",
-      "Vegan"
-    ],
-    "dietCategory": "vegan"
+    ]
   },
   {
     "id": "rei-07",
@@ -3463,11 +3455,6 @@
     "tags": [
       "Vegan"
     ],
-    "weatherType": "neutral",
-    "source": "Cuiseline",
-    "basePortions": 4,
-    "dietCategory": "vegan",
-    "description": "Nahrhafte Hirse-Pfanne mit Brokkoli, Federkohl und würzigem Räuchertofu.",
     "ingredients": [
       {
         "name": "Hirse",
@@ -3530,23 +3517,34 @@
         "perPortions": 4
       }
     ],
+    "weatherType": "neutral",
+    "source": "Cuiseline",
+    "basePortions": 4,
+    "description": "Nahrhafte Hirse-Pfanne mit Brokkoli, Federkohl und würzigem Räuchertofu.",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---hirse-gemu-se-pfanne-mit-ra-uchertofu-1--1780578809829.jpeg",
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---hirse-gemu-se-pfanne-mit-ra-uchertofu-2--1780579029051.jpeg",
+    "imageKochen": null,
     "steps": [
       "Gemüsebrühe in Pfanne zum Kochen bringen, Hirse beigeben, ca. 8 Minuten garen.",
       "Räuchertofu in Würfel schneiden, in Rapsöl goldbraun braten, mit 50 ml Sojasosse würzen.",
       "Zwiebel und Knoblauch andünsten. Brokkoli, Federkohl und Karotte in Streifen dazugeben.",
       "Gemüse mit restlicher Sojasosse würzen, mitdünsten.",
       "Räuchertofu und Hirse daruntermengen. Mit Frühlingszwiebeln garnieren."
-    ],
-    "tips": "",
-    "imageUrl": null,
-    "imageZutaten": null,
-    "imageKochen": null
+    ]
   },
   {
     "id": "ein-01",
     "name": "Chili sin carne",
     "category": "Suppen, Eintöpfe & Currys",
     "timeMinutes": 40,
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Herbst",
+      "Winter",
+      "Mexikanisch",
+      "Vegan"
+    ],
     "ingredients": [
       {
         "name": "Rote Bohnen (Dose)",
@@ -3613,24 +3611,16 @@
     "source": "Cuiseline",
     "basePortions": 4,
     "description": "Veganes Chili – würzig und sättigend.",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ein-01-1--1780579129751.jpeg",
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ein-01-2--1780579145821.jpeg",
+    "imageKochen": null,
     "steps": [
       "Vegane Butter in Pfanne, Zwiebeln und Knoblauch andünsten.",
       "Currypulver dazugeben, kurz mitdünsten.",
       "Mit Rotwein und Gemüsebrühe ablöschen, Tomaten dazugeben. Mit Salz und Pfeffer würzen, 10 Min. köcheln.",
       "Bohnen, Mais und Sonnenblumen-Hack beigeben, vermengen.",
       "Nach Belieben mit Kokosmilch, Petersilie/Koriander und Chiliflocken garnieren."
-    ],
-    "tips": "",
-    "imageUrl": null,
-    "tags": [
-      "Mealprep-geeignet",
-      "Mittagsgericht",
-      "Herbst",
-      "Winter",
-      "Mexikanisch",
-      "Vegan"
-    ],
-    "dietCategory": "vegan"
+    ]
   },
   {
     "id": "ein-02",
@@ -3793,6 +3783,12 @@
     "name": "Sauerkraut-Auflauf mit Räuchertofu und Kartoffel-Karotten-Stampf",
     "category": "Aufläufe & Gratins",
     "timeMinutes": 60,
+    "tags": [
+      "Vegan",
+      "Herbst",
+      "Winter",
+      "Ofengericht"
+    ],
     "ingredients": [
       {
         "name": "Sauerkraut",
@@ -3835,15 +3831,9 @@
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Wärmender Auflauf mit Sauerkraut.",
-    "steps": [],
-    "tips": "",
-    "imageUrl": null,
-    "tags": [
-      "Vegan",
-      "Herbst",
-      "Winter",
-      "Ofengericht"
-    ]
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ein-05--1780579170085.jpeg",
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "ein-06",
@@ -4352,10 +4342,6 @@
       "Vegetarisch",
       "Frühling"
     ],
-    "weatherType": "warm",
-    "source": "Cuiseline",
-    "basePortions": 6,
-    "description": "Samtige Bärlauchsuppe – kurzes Frühlingsvergnügen.",
     "ingredients": [
       {
         "name": "vegane Butter",
@@ -4400,17 +4386,19 @@
         "perPortions": 6
       }
     ],
+    "weatherType": "warm",
+    "source": "Cuiseline",
+    "basePortions": 6,
+    "description": "Samtige Bärlauchsuppe – kurzes Frühlingsvergnügen.",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fam-01-1--1780579197526.jpeg",
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fam-01-2--1780579209531.jpeg",
+    "imageKochen": null,
     "steps": [
       "Vegane Butter erwärmen, Zwiebel andünsten, Mehl bestreuen.",
       "Mit Gemüsebrühe ablöschen, gut rühren, 10 Minuten köcheln.",
       "Bärlauch gründlich waschen, in feine Streifen schneiden, hinzufügen.",
       "Veganen Rahm beifügen, mit Salz und Pfeffer abschmecken."
-    ],
-    "imageUrl": null,
-    "imageZutaten": null,
-    "imageKochen": null,
-    "tips": "",
-    "dietCategory": "vegan"
+    ]
   },
   {
     "id": "fam-13",
@@ -4701,6 +4689,13 @@
     "name": "Kürbissuppe mit Kartoffel, Ingwer und Curry",
     "category": "Suppen, Eintöpfe & Currys",
     "timeMinutes": 35,
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Herbst",
+      "Winter",
+      "Vegan"
+    ],
     "ingredients": [
       {
         "name": "Butternusskürbis",
@@ -4743,6 +4738,9 @@
     "source": "Cuiseline",
     "basePortions": 4,
     "description": "Wärmende Kürbissuppe mit exotischem Kick.",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---sup-01-1-ku-rbis-kokos-suppe--1780579271952.jpeg",
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---sup-01-2-ku-rbis-kokos-suppe--1780579300744.jpeg",
+    "imageKochen": null,
     "steps": [
       "Zwiebel, Kartoffeln und Kürbis würfeln.",
       "Olivenöl in Pfanne erhitzen, Zwiebel andünsten. Kartoffeln und Kürbis beigeben.",
@@ -4750,17 +4748,7 @@
       "Mit Gemüsebrühe und Kokosmilch aufgiessen, aufkochen, 20 Min. köcheln.",
       "Mit Stabmixer pürieren. Mit Salz und Pfeffer abschmecken.",
       "Mit Kokosmilch, Kürbiskernen und Chiliflocken garnieren."
-    ],
-    "tips": "",
-    "imageUrl": null,
-    "tags": [
-      "Mealprep-geeignet",
-      "Mittagsgericht",
-      "Herbst",
-      "Winter",
-      "Vegan"
-    ],
-    "dietCategory": "vegan"
+    ]
   },
   {
     "id": "sup-02",
@@ -4772,10 +4760,6 @@
       "Vegan",
       "Italienisch"
     ],
-    "weatherType": "kalt",
-    "source": "Cuiseline",
-    "basePortions": 4,
-    "description": "Klassische italienische Gemüsesuppe mit Borlotti-Bohnen.",
     "ingredients": [
       {
         "name": "Borlotti-Bohnen (Dose)",
@@ -4832,6 +4816,13 @@
         "perPortions": 4
       }
     ],
+    "weatherType": "kalt",
+    "source": "Cuiseline",
+    "basePortions": 4,
+    "description": "Klassische italienische Gemüsesuppe mit Borlotti-Bohnen.",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---sup-02-1--1780579317635.jpeg",
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---sup-02-2--1780579347422.jpeg",
+    "imageKochen": null,
     "steps": [
       "Wirz, Karotten, Lauch, Kartoffeln und Zwiebeln klein schneiden.",
       "Olivenöl in grossem Topf erhitzen, Zwiebel andünsten. Tomatenpüree mitdünsten.",
@@ -4839,12 +4830,7 @@
       "Mit Gemüsebouillon ablöschen, aufkochen.",
       "Ca. 1 Stunde köcheln. Bohnen in den letzten 10 Minuten beifügen.",
       "Mit Salz und Pfeffer abschmecken. Mit Petersilie garnieren."
-    ],
-    "tips": "",
-    "imageUrl": null,
-    "imageZutaten": null,
-    "imageKochen": null,
-    "dietCategory": "vegan"
+    ]
   },
   {
     "id": "sup-03",
@@ -5098,11 +5084,6 @@
       "Herbst",
       "Winter"
     ],
-    "weatherType": "kalt",
-    "source": "Cuiseline",
-    "basePortions": 4,
-    "dietCategory": "vegan",
-    "description": "Würzige Kürbissuppe mit weissen Bohnen, Federkohl und Massaman Currypaste.",
     "ingredients": [
       {
         "name": "Kürbis",
@@ -5165,6 +5146,13 @@
         "perPortions": 4
       }
     ],
+    "weatherType": "kalt",
+    "source": "Cuiseline",
+    "basePortions": 4,
+    "description": "Würzige Kürbissuppe mit weissen Bohnen, Federkohl und Massaman Currypaste.",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ku-rbis-curry-suppe-1--1780579383333.jpeg",
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ku-rbis-curry-suppe-2--1780579389516.jpeg",
+    "imageKochen": null,
     "steps": [
       "Federkohl waschen, in Stücke zupfen (Stiel entfernen), etwas zum Garnieren beiseite stellen.",
       "Bohnen abspülen und abtropfen lassen.",
@@ -5172,11 +5160,7 @@
       "Kürbis und Federkohl beigeben, andünsten.",
       "Mit Gemüsebrühe ablöschen, Kokosmilch zugeben, aufkochen. Bohnen die letzten 15 Min. mitkochen.",
       "Mit Salz und Pfeffer abschmecken. Mit Federkohl und Sesamkörnern garnieren."
-    ],
-    "tips": "",
-    "imageUrl": null,
-    "imageZutaten": null,
-    "imageKochen": null
+    ]
   },
   {
     "id": "sup-08",
@@ -5187,11 +5171,6 @@
       "Vegan",
       "Herbst"
     ],
-    "weatherType": "kalt",
-    "source": "Cuiseline",
-    "basePortions": 4,
-    "dietCategory": "vegan",
-    "description": "Aromatisches Curry mit Butternut-Kürbis, Kartoffeln, Süsskartoffeln und Kokosmilch.",
     "ingredients": [
       {
         "name": "Butternut-Kürbis",
@@ -5266,17 +5245,20 @@
         "perPortions": 4
       }
     ],
+    "weatherType": "kalt",
+    "source": "Cuiseline",
+    "basePortions": 4,
+    "description": "Aromatisches Curry mit Butternut-Kürbis, Kartoffeln, Süsskartoffeln und Kokosmilch.",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ku-rbis-kartoffel-curry-1--1780579408538.jpeg",
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ku-rbis-kartoffel-curry-2--1780579465960.jpeg",
+    "imageKochen": null,
     "steps": [
       "Butternut-Kürbis und Süsskartoffeln schälen und würfeln. Kartoffeln würfeln.",
       "Olivenöl in grosser Pfanne erhitzen, Zwiebel und Knoblauch andünsten.",
       "Kurkuma fein schneiden und kurz anbraten. Gemüse dazugeben und mitdünsten.",
       "Tomaten, Kokosmilch und Gemüsebrühe dazugeben, aufkochen, 25–30 Minuten köcheln.",
       "Mit Limettensaft und Salz abschmecken. Mit frischem Koriander und Limette garnieren."
-    ],
-    "tips": "",
-    "imageUrl": null,
-    "imageZutaten": null,
-    "imageKochen": null
+    ]
   },
   {
     "id": "fam-02",
@@ -5286,10 +5268,6 @@
     "tags": [
       "Vegetarisch"
     ],
-    "weatherType": "warm",
-    "source": "Familien-Rezeptbuch",
-    "basePortions": 2,
-    "description": "Rucola mit Birne, Feta, Pecannüssen und Tahini-Dressing.",
     "ingredients": [
       {
         "name": "Rucola",
@@ -5340,16 +5318,19 @@
         "perPortions": 2
       }
     ],
+    "weatherType": "warm",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 2,
+    "description": "Rucola mit Birne, Feta, Pecannüssen und Tahini-Dressing.",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fam-02--1780579489550.jpeg",
+    "imageZutaten": null,
+    "imageKochen": null,
     "steps": [
       "Dressing aus Tahini, Zitronensaft, Olivenöl, Salz, Pfeffer mischen.",
       "Rucola anrichten, Birne in Schnitze legen.",
       "Feta zerbröckeln, Nüsse grob hacken, mit Granatapfelkernen verteilen.",
       "Dressing darüber."
-    ],
-    "imageUrl": null,
-    "imageZutaten": null,
-    "imageKochen": null,
-    "tips": ""
+    ]
   },
   {
     "id": "fam-05",
@@ -6052,63 +6033,6 @@
     ]
   },
   {
-    "id": "sal-02",
-    "name": "Rucola Birnen Fetasalat",
-    "category": "Salate & Bowls",
-    "timeMinutes": 15,
-    "ingredients": [
-      {
-        "name": "Rucola",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Birnen",
-        "amount": 2,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Feta",
-        "amount": 150,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Walnüsse",
-        "amount": 60,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Balsamico",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Olivenöl",
-        "amount": 3,
-        "unit": "EL",
-        "perPortions": 4
-      }
-    ],
-    "weatherType": "warm",
-    "source": "Rezept von Cuiselin",
-    "basePortions": 4,
-    "description": "Eleganter Salat mit Birne und Feta.",
-    "steps": [],
-    "tips": "",
-    "imageUrl": null,
-    "tags": [
-      "Mittagsgericht",
-      "Herbst",
-      "Frühling",
-      "Sommer"
-    ]
-  },
-  {
     "id": "sal-03",
     "name": "Taboulé",
     "category": "Salate & Bowls",
@@ -6202,10 +6126,6 @@
       "Vegetarisch",
       "Vegan"
     ],
-    "weatherType": "warm",
-    "source": "Cuiseline",
-    "basePortions": 4,
-    "description": "Einfacher Kichererbsensalat mit getrockneten Tomaten und Schnittlauch.",
     "ingredients": [
       {
         "name": "Kichererbsen (Dose)",
@@ -6262,18 +6182,20 @@
         "perPortions": 4
       }
     ],
+    "weatherType": "warm",
+    "source": "Cuiseline",
+    "basePortions": 4,
+    "description": "Einfacher Kichererbsensalat mit getrockneten Tomaten und Schnittlauch.",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---sal-04-1--1780579587426.jpeg",
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---sal-04-2--1780579592398.jpeg",
+    "imageKochen": null,
     "steps": [
       "Kichererbsen abspülen und abtropfen lassen.",
       "Dörrtomaten in Streifen schneiden, Kirschtomaten halbieren.",
       "Schnittlauch und Basilikum fein schneiden.",
       "Dressing aus Olivenöl, Aceto Balsamico, Senf, Curry, Salz und Pfeffer rühren.",
       "Alles vermengen und abschmecken."
-    ],
-    "tips": "",
-    "imageUrl": null,
-    "imageZutaten": null,
-    "imageKochen": null,
-    "dietCategory": "vegan"
+    ]
   },
   {
     "id": "sal-05",
@@ -6720,11 +6642,6 @@
       "Vegan",
       "Sommer"
     ],
-    "weatherType": "warm",
-    "source": "Cuiseline",
-    "basePortions": 4,
-    "dietCategory": "vegan",
-    "description": "Einfacher Gurkensalat mit Dill und Mandeljogurt-Dressing.",
     "ingredients": [
       {
         "name": "Gurken",
@@ -6763,16 +6680,19 @@
         "perPortions": 4
       }
     ],
+    "weatherType": "warm",
+    "source": "Cuiseline",
+    "basePortions": 4,
+    "description": "Einfacher Gurkensalat mit Dill und Mandeljogurt-Dressing.",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---gurkensalat-1--1780579715668.jpeg",
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---gurkensalat-2--1780579721355.jpeg",
+    "imageKochen": null,
     "steps": [
       "Mandeljogurt, Senf, Essig und Öl in eine Schüssel geben, mit Salz, Pfeffer und Kräutersalz würzen.",
       "Gurken in Scheiben schneiden.",
       "Dill zerkleinern und dazugeben.",
       "Gurken in die Schüssel geben und alles vermischen."
-    ],
-    "tips": "",
-    "imageUrl": null,
-    "imageZutaten": null,
-    "imageKochen": null
+    ]
   },
   {
     "id": "sal-12",
@@ -6783,11 +6703,6 @@
       "Vegan",
       "Herbst"
     ],
-    "weatherType": "neutral",
-    "source": "Cuiseline",
-    "basePortions": 4,
-    "dietCategory": "vegan",
-    "description": "Proteinreicher Linsensalat mit Apfel, Granatapfel und Thymian.",
     "ingredients": [
       {
         "name": "grüne Linsen",
@@ -6856,6 +6771,13 @@
         "perPortions": 4
       }
     ],
+    "weatherType": "neutral",
+    "source": "Cuiseline",
+    "basePortions": 4,
+    "description": "Proteinreicher Linsensalat mit Apfel, Granatapfel und Thymian.",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---linsen-apfel-salat-1--1780579776842.jpeg",
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---linsen-apfel-salat-2--1780579783529.jpeg",
+    "imageKochen": null,
     "steps": [
       "Gemüsebrühe mit Lorbeerblatt aufkochen. Linsen abspülen, bissfest kochen. Abgiessen und abkühlen lassen.",
       "Apfelessig, Olivenöl, Ahornsirup, Salz und Pfeffer in grosser Schüssel verrühren.",
@@ -6863,11 +6785,7 @@
       "Rote Zwiebel in feine Streifen schneiden, Petersilie hacken, Thymian abzupfen.",
       "Linsen und alle Zutaten zum Dressing geben, vermischen.",
       "Ca. 30 Minuten ziehen lassen. Mit Granatapfelkernen garnieren."
-    ],
-    "tips": "Schmeckt besonders gut wenn er ca. eine halbe Stunde ziehen kann.",
-    "imageUrl": null,
-    "imageZutaten": null,
-    "imageKochen": null
+    ]
   },
   {
     "id": "fvt-08",
@@ -6980,6 +6898,11 @@
     "name": "Ofengemüse mit Feta und Tahini-Quinoa",
     "category": "Aufläufe & Gratins",
     "timeMinutes": 50,
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Ofengericht"
+    ],
     "ingredients": [
       {
         "name": "Gemischtes Gemüse",
@@ -7022,14 +6945,9 @@
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Buntes Ofengemüse mit Tahini-Quinoa und Feta.",
-    "steps": [],
-    "tips": "",
-    "imageUrl": null,
-    "tags": [
-      "Mealprep-geeignet",
-      "Mittagsgericht",
-      "Ofengericht"
-    ]
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ofengemu-se--1780579869402.jpeg",
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "ofe-02",
@@ -7129,11 +7047,6 @@
     "tags": [
       "Vegan"
     ],
-    "weatherType": "kalt",
-    "source": "Cuiseline",
-    "basePortions": 6,
-    "dietCategory": "vegan",
-    "description": "Sättigender veganer Brotauflauf mit Karotten, Zucchini und Kichererbsenmehl-Guss.",
     "ingredients": [
       {
         "name": "Brot (vom Vortag)",
@@ -7220,6 +7133,13 @@
         "perPortions": 6
       }
     ],
+    "weatherType": "kalt",
+    "source": "Cuiseline",
+    "basePortions": 6,
+    "description": "Sättigender veganer Brotauflauf mit Karotten, Zucchini und Kichererbsenmehl-Guss.",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---brot-gemu-se-auflauf-1--1780579881377.jpeg",
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---brot-gemu-se-auflauf-2--1780579895432.jpeg",
+    "imageKochen": null,
     "steps": [
       "Ofen auf 200 °C vorheizen.",
       "Zwiebel glasig andünsten. Zucchini und grob geriebene Karotten mitdünsten.",
@@ -7227,11 +7147,7 @@
       "Brot würfeln. Brot und Gemüse in geölte Gratinform schichten, Guss darübergeben.",
       "Bei 200 °C ca. 30 Minuten backen bis oben leicht gebräunt.",
       "Mit Kräutern (Schnittlauch oder Petersilie) garnieren."
-    ],
-    "tips": "",
-    "imageUrl": null,
-    "imageZutaten": null,
-    "imageKochen": null
+    ]
   },
   {
     "id": "ofe-04",
@@ -7242,11 +7158,6 @@
       "Vegan",
       "Orientalisch"
     ],
-    "weatherType": "warm",
-    "source": "Cuiseline",
-    "basePortions": 4,
-    "dietCategory": "vegan",
-    "description": "Ofenauberginen gefüllt mit gewürztem Couscous, Datteln, Mandeln und Granatapfel.",
     "ingredients": [
       {
         "name": "Auberginen",
@@ -7327,6 +7238,13 @@
         "perPortions": 4
       }
     ],
+    "weatherType": "warm",
+    "source": "Cuiseline",
+    "basePortions": 4,
+    "description": "Ofenauberginen gefüllt mit gewürztem Couscous, Datteln, Mandeln und Granatapfel.",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---gefu-llte-auberginen-mit-couscous-1--1780579992533.jpeg",
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---gefu-llte-auberginen-mit-couscous-2--1780580021044.jpeg",
+    "imageKochen": null,
     "steps": [
       "Ofen auf 200 °C vorheizen.",
       "Auberginen längs halbieren, aushöhlen (Fruchtfleisch beiseite stellen).",
@@ -7336,11 +7254,7 @@
       "Datteln und Mandeln fein hacken. Mit Couscous, Zitronensaft, Curry, Salz mischen.",
       "Auberginenhälften füllen. Kokosjogurt mit Zitronensaft verrühren, darüber verteilen.",
       "Mit Granatapfelkernen und Pfefferminze garnieren."
-    ],
-    "tips": "",
-    "imageUrl": null,
-    "imageZutaten": null,
-    "imageKochen": null
+    ]
   },
   {
     "id": "asi-01",
@@ -8036,10 +7950,6 @@
     "category": "Fleisch & Geflügel",
     "timeMinutes": 30,
     "tags": [],
-    "weatherType": "neutral",
-    "source": "Cuiseline",
-    "basePortions": 4,
-    "description": "Würzige Knöpfli mit Poulet, Lauch, Peperoni und Sojasauce.",
     "ingredients": [
       {
         "name": "Pouletfleisch",
@@ -8090,18 +8000,20 @@
         "perPortions": 4
       }
     ],
+    "weatherType": "neutral",
+    "source": "Cuiseline",
+    "basePortions": 4,
+    "description": "Würzige Knöpfli mit Poulet, Lauch, Peperoni und Sojasauce.",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fam-22-1--1780580054260.jpeg",
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fam-22-2--1780580068978.jpeg",
+    "imageKochen": null,
     "steps": [
       "Pouletfleisch (oder pflanzliches Poulet) in Rapsöl anbraten, würzen, warmstellen.",
       "Vegane Butter in gleicher Pfanne, Zwiebeln und Knoblauch andünsten.",
       "Lauch, Peperoni und Papperoncini dazugeben, mitdünsten. Mit Curry würzen.",
       "Sojasauce dazugeben, ca. 10 Minuten zugedeckt köcheln.",
       "Knöpfli in veganer Butter anbraten, Gemüse und Fleisch beifügen, abschmecken."
-    ],
-    "imageUrl": null,
-    "imageZutaten": null,
-    "imageKochen": null,
-    "tips": "",
-    "dietCategory": "meat"
+    ]
   },
   {
     "id": "fam-26",
@@ -8806,10 +8718,6 @@
       "Vegan",
       "Ofengericht"
     ],
-    "weatherType": "kalt",
-    "source": "Familien-Rezeptbuch",
-    "basePortions": 4,
-    "description": "Aromatische Ofenkartoffeln mit Rosmarin, Thymian und Weisswein.",
     "ingredients": [
       {
         "name": "Kartoffeln",
@@ -8848,17 +8756,20 @@
         "perPortions": 4
       }
     ],
+    "weatherType": "kalt",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 4,
+    "description": "Aromatische Ofenkartoffeln mit Rosmarin, Thymian und Weisswein.",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fam-59--1780580156551.jpeg",
+    "imageZutaten": null,
+    "imageKochen": null,
     "steps": [
       "Ofen auf 220°C vorheizen.",
       "Kartoffeln waschen, in mundgerechte Stücke schneiden.",
       "Gratinform mit Olivenöl einstreichen.",
       "Kartoffeln, Kräuter, Gewürze, Weisswein und Olivenöl dazugeben.",
       "30–40 Min. backen, alle 15 Min. umrühren."
-    ],
-    "imageUrl": null,
-    "imageZutaten": null,
-    "imageKochen": null,
-    "tips": ""
+    ]
   },
   {
     "id": "ocr-15",
@@ -9687,10 +9598,6 @@
       "Vegetarisch",
       "Frühling"
     ],
-    "weatherType": "neutral",
-    "source": "Cuiseline",
-    "basePortions": 6,
-    "description": "Aromatische Bärlauchbutter für Brot, Fleisch oder Grilladen.",
     "ingredients": [
       {
         "name": "Butter (weich)",
@@ -9729,18 +9636,20 @@
         "perPortions": 6
       }
     ],
+    "weatherType": "neutral",
+    "source": "Cuiseline",
+    "basePortions": 6,
+    "description": "Aromatische Bärlauchbutter für Brot, Fleisch oder Grilladen.",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fam-25-1--1780580193452.jpeg",
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fam-25-2--1780580212771.jpeg",
+    "imageKochen": null,
     "steps": [
       "Butter aus dem Kühlschrank nehmen, auf Zimmertemperatur bringen.",
       "Bärlauch gründlich waschen, abtrocknen, in feine Streifen schneiden.",
       "Bärlauch, Senf, Zitronensaft, Paprika edelsüss, Salz und Pfeffer zur Butter geben.",
       "Mit Stabmixer oder in Küchenmaschine alles gut mischen.",
       "In Klarsichtfolie einrollen, einfrieren."
-    ],
-    "imageUrl": null,
-    "imageZutaten": null,
-    "imageKochen": null,
-    "tips": "",
-    "dietCategory": "vegan"
+    ]
   },
   {
     "id": "fam-28",
@@ -10840,11 +10749,6 @@
     "tags": [
       "Vegan"
     ],
-    "weatherType": "neutral",
-    "source": "Cuiseline",
-    "basePortions": 4,
-    "dietCategory": "vegan",
-    "description": "Knusprige Linsen-Bratlinge mit Couscous, Mandeln und Petersilie.",
     "ingredients": [
       {
         "name": "rote Linsen",
@@ -10913,6 +10817,13 @@
         "perPortions": 4
       }
     ],
+    "weatherType": "neutral",
+    "source": "Cuiseline",
+    "basePortions": 4,
+    "description": "Knusprige Linsen-Bratlinge mit Couscous, Mandeln und Petersilie.",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---linsen-ta-tschli-1--1780580295074.jpeg",
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---linsen-ta-tschli-2--1780580300522.jpeg",
+    "imageKochen": null,
     "steps": [
       "Zwiebeln und Knoblauch im Olivenöl andünsten. Linsen beigeben, mit Gemüsebrühe ablöschen.",
       "Linsen ca. 10–12 Minuten weich kochen lassen.",
@@ -10920,11 +10831,7 @@
       "Rapsöl in Bratpfanne erhitzen. Je 2 EL Masse in die Pfanne geben, flach drücken.",
       "Ca. 4 Minuten pro Seite goldbraun braten.",
       "Mit Couscous, Granatapfelkernen und Pfefferminze servieren."
-    ],
-    "tips": "Wenn die Masse zu flüssig ist, etwas Mehl oder Haferflocken beigeben.",
-    "imageUrl": null,
-    "imageZutaten": null,
-    "imageKochen": null
+    ]
   },
   {
     "id": "ocr-02",
@@ -11496,11 +11403,6 @@
       "Vegan",
       "Frühling"
     ],
-    "weatherType": "neutral",
-    "source": "Cuiseline",
-    "basePortions": 4,
-    "dietCategory": "vegan",
-    "description": "Frisches Bärlauchpesto – im Kühlschrank 2–3 Wochen haltbar.",
     "ingredients": [
       {
         "name": "Bärlauch",
@@ -11533,17 +11435,20 @@
         "perPortions": 4
       }
     ],
+    "weatherType": "neutral",
+    "source": "Cuiseline",
+    "basePortions": 4,
+    "description": "Frisches Bärlauchpesto – im Kühlschrank 2–3 Wochen haltbar.",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ba-rlauchpesto-2--1780580422187.jpeg",
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ba-rlauchpesto-3--1780580437953.jpeg",
+    "imageKochen": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ba-rlauchpesto-1--1780580445058.jpeg",
     "steps": [
       "Pinienkerne kurz ohne Fett anrösten, beiseitestellen.",
       "Bärlauch gründlich waschen, abtrocknen, in grobe Streifen schneiden.",
       "Bärlauch, Olivenöl, veganen Parmesan und Pinienkerne mit Stabmixer pürieren.",
       "Mit Zitronensaft, Salz und Pfeffer abschmecken.",
       "Mit einer Schicht Olivenöl abgedeckt im Kühlschrank aufbewahren."
-    ],
-    "tips": "Im Kühlschrank ca. 2–3 Wochen haltbar wenn mit Olivenöl bedeckt.",
-    "imageUrl": null,
-    "imageZutaten": null,
-    "imageKochen": null
+    ]
   },
   {
     "id": "son-06",
@@ -11616,11 +11521,6 @@
     "tags": [
       "Vegan"
     ],
-    "weatherType": "neutral",
-    "source": "Cuiseline",
-    "basePortions": 4,
-    "dietCategory": "vegan",
-    "description": "Knusprige vegane Gipfeli mit würziger Räuchertofu-Füllung.",
     "ingredients": [
       {
         "name": "Blätterteig (rund)",
@@ -11671,6 +11571,13 @@
         "perPortions": 4
       }
     ],
+    "weatherType": "neutral",
+    "source": "Cuiseline",
+    "basePortions": 4,
+    "description": "Knusprige vegane Gipfeli mit würziger Räuchertofu-Füllung.",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---tofu-gipfeli-1--1780580501728.jpeg",
+    "imageZutaten": null,
+    "imageKochen": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---tofu-gipfeli-2--1780580506536.jpeg",
     "steps": [
       "Ofen auf 200 °C vorheizen.",
       "Knoblauch fein hacken. Räuchertofu fein würfeln. Mit Olivenöl, Petersilie, Senf, Paprika, Salz und Pfeffer mischen.",
@@ -11679,11 +11586,7 @@
       "Dreieck von der breiten Seite her aufrollen und leicht biegen.",
       "Gipfeli auf Backblech legen, mit pflanzlicher Milch bestreichen.",
       "Im vorgeheizten Ofen bei 200 °C ca. 20–25 Minuten goldbraun backen."
-    ],
-    "tips": "",
-    "imageUrl": null,
-    "imageZutaten": null,
-    "imageKochen": null
+    ]
   },
   {
     "id": "kds-01",
