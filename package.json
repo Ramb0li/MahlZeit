@@ -7,7 +7,8 @@
     "build": "node scripts/build-recipes.js && next build",
     "start": "next start",
     "lint": "next lint",
-    "recipes:build": "node scripts/build-recipes.js"
+    "recipes:build": "node scripts/build-recipes.js",
+    "recipes:sync": "node scripts/sync-recipes.js"
   },
   "dependencies": {
     "@types/bcryptjs": "^2.4.6",
