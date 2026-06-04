@@ -6056,63 +6056,6 @@
     ]
   },
   {
-    "id": "sal-02",
-    "name": "Rucola Birnen Fetasalat",
-    "category": "Salate & Bowls",
-    "timeMinutes": 15,
-    "ingredients": [
-      {
-        "name": "Rucola",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Birnen",
-        "amount": 2,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Feta",
-        "amount": 150,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Walnüsse",
-        "amount": 60,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Balsamico",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Olivenöl",
-        "amount": 3,
-        "unit": "EL",
-        "perPortions": 4
-      }
-    ],
-    "weatherType": "warm",
-    "source": "Rezept von Cuiselin",
-    "basePortions": 4,
-    "description": "Eleganter Salat mit Birne und Feta.",
-    "steps": [],
-    "tips": "",
-    "imageUrl": null,
-    "tags": [
-      "Mittagsgericht",
-      "Herbst",
-      "Frühling",
-      "Sommer"
-    ]
-  },
-  {
     "id": "sal-03",
     "name": "Taboulé",
     "category": "Salate & Bowls",
