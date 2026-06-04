@@ -31,6 +31,15 @@ const CAT_COLORS: Record<Category, { bg: string; color: string }> = {
   'Desserts & Süsses':          { bg: '#fce4ec', color: '#880e4f' },
 };
 
+const DIET_FILTERS = [
+  { key: 'meat',       icon: '🥩', label: 'Fleischhaltig', color: '#d9543b', bg: '#fce4dc' },
+  { key: 'fish',       icon: '🐟', label: 'Pescetarisch',  color: '#1565c0', bg: '#deeafb' },
+  { key: 'vegetarian', icon: '🌿', label: 'Vegetarisch',   color: '#2e7d32', bg: '#e4f3e5' },
+  { key: 'vegan',      icon: '🌱', label: 'Vegan',         color: '#558b2f', bg: '#ecf4df' },
+] as const;
+
+type DietFilterKey = typeof DIET_FILTERS[number]['key'];
+
 const chipActive   = { backgroundColor: '#b5614a', color: '#fff' };
 const chipInactive = { backgroundColor: '#efe9df', color: '#5a4e48', border: '1.5px solid #e0d8ce' };
 const chipTagActive = { backgroundColor: '#4a7a4e', color: '#fff' };
@@ -59,6 +68,7 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
   const [search, setSearch]                 = useState('');
   const [filterCategory, setFilterCategory] = useState<Category | 'Alle'>('Alle');
   const [filterTags, setFilterTags]         = useState<string[]>([]);
+  const [filterDiet, setFilterDiet]         = useState<DietFilterKey | null>(null);
   const [showFavorites, setShowFavorites]   = useState(false);
   const [favorites, setFavorites]           = useState<Set<string>>(new Set());
   const [editRecipe, setEditRecipe]         = useState<Recipe | null>(null);
@@ -121,11 +131,12 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
         const recipeTags = [...(r.tags ?? []), ...computeTimeTags(r.timeMinutes)];
         if (!filterTags.every(t => recipeTags.includes(t))) return false;
       }
+      if (filterDiet && r.dietCategory !== filterDiet) return false;
       if (search && !r.name.toLowerCase().includes(search.toLowerCase())) return false;
       if (isRecipeExcluded(r, allergiesAndAversions)) return false;
       return true;
     });
-  }, [recipes, search, filterCategory, filterTags, allergiesAndAversions, showFavorites, favorites]);
+  }, [recipes, search, filterCategory, filterTags, filterDiet, allergiesAndAversions, showFavorites, favorites]);
 
   const archivedFiltered = useMemo(() => {
     return recipes.filter((r) => {
@@ -181,24 +192,52 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
   return (
     <div className="space-y-4">
 
-      {/* Search + action buttons */}
+      {/* Page title */}
+      <div className="flex items-end justify-between">
+        <div>
+          <p className="text-xs font-bold uppercase tracking-widest mb-0.5" style={{ color: '#9a8c80' }}>Bibliothek</p>
+          <h1 className="mz-view-title" style={{ marginBottom: 0 }}>Rezepte</h1>
+        </div>
+        <button onClick={() => setIsCreating(true)} className="mz-btn-primary">
+          <Plus size={15} />
+          <span className="mz-hide-sm">Rezept hinzufügen</span>
+        </button>
+      </div>
+
+      {/* Search + diet icons + import */}
       <div className="mz-rfilters">
         <div className="mz-search-box" style={{ flex: 1 }}>
           <Search size={15} style={{ color: 'var(--muted)', flexShrink: 0 }} />
           <input
             type="text"
-            placeholder="Rezept suchen…"
+            placeholder="Rezepte & Tags suchen…"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
         </div>
+        {/* Diet filter icon buttons */}
+        <div className="flex items-center gap-1">
+          {DIET_FILTERS.map(({ key, icon, label, color, bg }) => {
+            const active = filterDiet === key;
+            return (
+              <button
+                key={key}
+                onClick={() => setFilterDiet(active ? null : key)}
+                title={label}
+                className="w-8 h-8 rounded-full flex items-center justify-center text-base transition-all"
+                style={active
+                  ? { backgroundColor: bg, outline: `2px solid ${color}`, outlineOffset: 1 }
+                  : { backgroundColor: '#efe9df' }
+                }
+              >
+                {icon}
+              </button>
+            );
+          })}
+        </div>
         <button onClick={() => setImportOpen(true)} className="mz-btn-soft" title="Rezept importieren">
           <Link size={15} />
           <span className="mz-hide-sm">Importieren</span>
-        </button>
-        <button onClick={() => setIsCreating(true)} className="mz-btn-primary">
-          <Plus size={15} />
-          <span className="mz-hide-sm">Neues Rezept</span>
         </button>
       </div>
 

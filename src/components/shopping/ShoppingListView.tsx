@@ -1,7 +1,9 @@
 'use client';
 import { useState, useEffect, useCallback, useRef } from 'react';
-import { Check, Download, RefreshCw, Tag, Plus, Trash2, RotateCcw, X, ChevronDown, ChevronUp } from 'lucide-react';
-import { getWeekId, nextWeek, formatAmount } from '@/lib/utils';
+import { Check, Download, RefreshCw, Plus, Trash2, RotateCcw, X } from 'lucide-react';
+import { getWeekId, getWeekDays, nextWeek, formatAmount } from '@/lib/utils';
+import { format } from 'date-fns';
+import { de } from 'date-fns/locale';
 import type { ShoppingList, ShoppingGroups } from '@/types';
 
 const DAY_LABELS_SHORT = ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'];
@@ -24,6 +26,26 @@ function buildListLabel(weekId: string, dayIndices: number[]): string {
   const last  = DAY_LABELS_SHORT[(sorted[sorted.length - 1] ?? 7) - 1] ?? '';
   return first === last ? `KW${kw}.${first}` : `KW${kw}.${first}-${last}`;
 }
+
+// ─── Kategorie-Emojis ────────────────────────────────────────────────────────
+
+const CAT_ICONS: Record<string, string> = {
+  'Gemüse & Salat':        '🥕',
+  'Hülsenfrüchte':         '🌾',
+  'Getreide & Stärke':     '🫘',
+  'Milchprodukte & Eier':  '🥛',
+  'Fisch & Meeresfrüchte': '🐟',
+  'Tofu & Veganes':        '🫘',
+  'Haltbare Produkte':     '🫙',
+  'Nüsse & Samen':         '🥜',
+  'Gewürze & Kräuter':     '🌿',
+  'Sonstiges':             '🫧',
+  'Haushalt':              '🧹',
+  'Hygiene':               '🧴',
+  'Persönliches':          '🪞',
+  'Getränke':              '🥤',
+  'Tierbedarf':            '🐾',
+};
 
 // ─── Kategorien ───────────────────────────────────────────────────────────────
 
@@ -65,9 +87,13 @@ function readLS<T>(key: string, fallback: T): T {
 
 export function ShoppingListView() {
   // Beide Wochen verfügbar — User kann wechseln
-  const currentWeekId = getWeekId(new Date());
-  const nextWeekId    = getWeekId(nextWeek(new Date()));
-  const [weekId, setWeekId] = useState(currentWeekId);
+  const todayDate     = new Date();
+  const nextDate      = nextWeek(todayDate);
+  const currentWeekId = getWeekId(todayDate);
+  const nextWeekId    = getWeekId(nextDate);
+  const [weekDate, setWeekDate] = useState(todayDate);
+  const weekId   = getWeekId(weekDate);
+  const weekDays = getWeekDays(weekDate);
 
   const [list, setList]       = useState<ShoppingList>({});
   const [loading, setLoading] = useState(true);
@@ -76,9 +102,9 @@ export function ShoppingListView() {
   const [groups, setGroups]           = useState<ShoppingGroups>([{ id: 'sg-1', dayIndices: [1,2,3,4,5,6,7] }]);
   const [activeGroupIdx, setActiveGroupIdx] = useState<number | null>(null); // null = alle
 
-  const [checked, setChecked] = useState<Set<string>>(new Set());
-  const [deleted, setDeleted] = useState<string[]>(() => readLS(`mz-del-${weekId}`, [] as string[]));
-  const [overrides, setOverrides] = useState<Record<string, number>>(() => readLS(`mz-ov-${weekId}`, {}));
+  const [checked, setChecked]   = useState<Set<string>>(new Set());
+  const [deleted, setDeleted]   = useState<string[]>(() => readLS(`mz-del-${currentWeekId}`, [] as string[]));
+  const [overrides, setOverrides] = useState<Record<string, number>>(() => readLS(`mz-ov-${currentWeekId}`, {}));
 
   const [editKey, setEditKey] = useState<string | null>(null);
   const [editVal, setEditVal] = useState('');
@@ -87,14 +113,12 @@ export function ShoppingListView() {
   const [custom, setCustom] = useState<CustomItem[]>(() => readLS('mz-custom', [] as CustomItem[]));
   const [showAdd, setShowAdd] = useState(false);
   const [draft, setDraft] = useState({ name: '', amount: '', unit: 'Stk', category: 'Sonstiges' });
-  // Alle Kategorien standardmässig eingeklappt
-  const [collapsedCategories, setCollapsedCategories] = useState<Set<string>>(() => new Set(ALL_CATEGORIES));
   const nameInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => { localStorage.setItem(`mz-ov-${weekId}`,  JSON.stringify(overrides)); }, [overrides, weekId]);
   useEffect(() => { localStorage.setItem('mz-custom',        JSON.stringify(custom));    }, [custom]);
   useEffect(() => { localStorage.setItem(`mz-del-${weekId}`, JSON.stringify(deleted));   }, [deleted, weekId]);
-  useEffect(() => { if (editKey) editRef.current?.focus(); }, [editKey]);
+  useEffect(() => { if (editKey && editRef.current) editRef.current.focus(); }, [editKey]);
   useEffect(() => { if (showAdd) nameInputRef.current?.focus(); }, [showAdd]);
 
   const loadList = useCallback(async (dayIndices?: number[]) => {
@@ -123,7 +147,6 @@ export function ShoppingListView() {
   }, [weekId]);
 
   useEffect(() => {
-    // Bei Wochenwechsel aktive Gruppe zurücksetzen (Gruppen-Struktur kann sich unterscheiden)
     setActiveGroupIdx(null);
     loadGroupsMeta();
     loadList();
@@ -175,13 +198,6 @@ export function ShoppingListView() {
 
   const removeCustom = (id: string) => setCustom(prev => prev.filter(c => c.id !== id));
 
-  const toggleCategory = (cat: string) =>
-    setCollapsedCategories(prev => {
-      const n = new Set(Array.from(prev));
-      n.has(cat) ? n.delete(cat) : n.add(cat);
-      return n;
-    });
-
   const exportPDF = async () => {
     const { default: jsPDF } = await import('jspdf');
     const doc = new jsPDF({ format: 'a4', unit: 'mm' });
@@ -227,6 +243,14 @@ export function ShoppingListView() {
     doc.setTextColor(...C.muted);
     doc.text('EINKAUFSLISTE', m, 18);
 
+    // Artikel-Zusammenfassung unter dem Wordmark
+    const pdfTotalItems = Object.values(list).reduce((s, a) => s + a.length, 0) + custom.length;
+    const pdfCatCount   = buildOrderedCategories().length;
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(7);
+    doc.setTextColor(...C.ink2);
+    doc.text(`${pdfTotalItems} Artikel · ${pdfCatCount} Kategorien`, m, 23);
+
     const kw = weekId.split('-W')[1] ?? '';
     doc.setFont('helvetica', 'bold');
     doc.setFontSize(20);
@@ -238,13 +262,15 @@ export function ShoppingListView() {
     doc.setFont('helvetica', 'normal');
     doc.setFontSize(7);
     doc.setTextColor(...C.ink2);
-    doc.text(new Date().toLocaleDateString('de-CH'), pageW - m, 18, { align: 'right' });
+    const pdfDateFrom = weekDays[0] ? format(weekDays[0], 'd. MMM', { locale: de }) : '';
+    const pdfDateTo   = weekDays[6] ? format(weekDays[6], 'd. MMM yyyy', { locale: de }) : '';
+    doc.text(`${pdfDateFrom} – ${pdfDateTo}`, pageW - m, 18, { align: 'right' });
 
     doc.setFillColor(...C.accent);
-    doc.rect(m, 21, pageW - 2 * m, 0.8, 'F');
+    doc.rect(m, 26, pageW - 2 * m, 0.8, 'F');
 
     // Two-column layout
-    let yL = 26; let yR = 26;
+    let yL = 31; let yR = 31;
     let col = 0;
 
     const getY  = () => col === 0 ? yL : yR;
@@ -358,9 +384,11 @@ export function ShoppingListView() {
   };
 
   const orderedCategories = buildOrderedCategories();
-  const totalItems   = Object.values(list).reduce((s, a) => s + a.length, 0) + custom.length;
-  const checkedCount = checked.size + custom.filter(c => c.checked).length;
-  const modifiedCount = Object.keys(overrides).length;
+  const totalItems    = Object.values(list).reduce((s, a) => s + a.length, 0) + custom.length;
+  const checkedCount  = checked.size + custom.filter(c => c.checked).length;
+  const kwNum         = weekId.split('-W')[1] ?? '';
+  const dateFrom      = weekDays[0] ? format(weekDays[0], 'd. MMM', { locale: de }) : '';
+  const dateTo        = weekDays[6] ? format(weekDays[6], 'd. MMM yyyy', { locale: de }) : '';
 
   const inputStyle = {
     border: '1px solid #e0d8ce',
@@ -373,41 +401,92 @@ export function ShoppingListView() {
   } as const;
 
   return (
-    <div className="max-w-2xl space-y-4">
+    <div className="space-y-4">
 
-      {/* Wochenselektor: aktuelle + nächste Woche */}
-      <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+      {/* ── Page header ─────────────────────────────────────────────────── */}
+      <div className="flex items-start justify-between gap-4">
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-widest mb-1" style={{ color: '#9a8c80' }}>
+            KW {kwNum}, {dateFrom} – {dateTo}
+          </p>
+          <h1 className="mz-view-title" style={{ marginBottom: 4 }}>Einkaufsliste</h1>
+          <p className="text-sm" style={{ color: '#9a8c80' }}>
+            Automatisch aus deinem Wochenplan
+            {totalItems > 0 && <> &middot; <strong style={{ color: '#5a4e48' }}>{totalItems} Artikel</strong></>}
+          </p>
+        </div>
+        <div style={{ display: 'flex', gap: 8, flexShrink: 0, flexWrap: 'wrap', justifyContent: 'flex-end' }}>
+          <button
+            onClick={() => { const g = activeGroupIdx !== null ? groups[activeGroupIdx] : undefined; loadList(g?.dayIndices); }}
+            className="mz-btn-soft"
+            title="Aktualisieren"
+          >
+            <RefreshCw size={14} />
+          </button>
+          {totalItems > 0 && (
+            <button onClick={exportPDF} className="mz-btn-primary">
+              <Download size={14} />
+              PDF
+            </button>
+          )}
+        </div>
+      </div>
+
+      {/* Progress bar */}
+      {totalItems > 0 && (
+        <div>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 6 }}>
+            <span className="text-sm font-medium" style={{ color: '#5a4e48' }}>
+              {checkedCount}/{totalItems} erledigt
+            </span>
+            <span className="text-xs" style={{ color: '#9a8c80' }}>
+              {Math.round((checkedCount / totalItems) * 100)} %
+            </span>
+          </div>
+          <div style={{ height: 4, borderRadius: 999, backgroundColor: '#e0d8ce', overflow: 'hidden' }}>
+            <div
+              style={{
+                height: '100%',
+                width: `${(checkedCount / totalItems) * 100}%`,
+                backgroundColor: '#d9543b',
+                borderRadius: 999,
+                transition: 'width 0.3s ease',
+              }}
+            />
+          </div>
+        </div>
+      )}
+
+      {/* Week selector */}
+      <div style={{ display: 'flex', gap: 8 }}>
         <button
-          onClick={() => setWeekId(currentWeekId)}
+          onClick={() => setWeekDate(todayDate)}
           className={`mz-chip${weekId === currentWeekId ? ' on' : ''}`}
         >
           Diese Woche
-          <span style={{ opacity: .55, fontSize: 11, marginLeft: 4 }}>{currentWeekId}</span>
         </button>
         <button
-          onClick={() => setWeekId(nextWeekId)}
+          onClick={() => setWeekDate(nextDate)}
           className={`mz-chip${weekId === nextWeekId ? ' on' : ''}`}
         >
           Nächste Woche
-          <span style={{ opacity: .55, fontSize: 11, marginLeft: 4 }}>{nextWeekId}</span>
         </button>
       </div>
 
-      {/* Einkaufslisten-Übersicht (Phase 4) */}
+      {/* Multi-list groups (Phase 4) */}
       {groups.length > 1 && (
         <div className="rounded-2xl overflow-hidden border" style={{ borderColor: '#e0d8ce', backgroundColor: '#fff9f3' }}>
           <div className="px-4 py-3 border-b" style={{ borderColor: '#f0ebe3' }}>
-            <p className="text-xs font-semibold uppercase tracking-wider" style={{ color: '#9c8c84' }}>
+            <p className="text-xs font-semibold uppercase tracking-wider" style={{ color: '#9a8c80' }}>
               Einkaufslisten dieser Woche
             </p>
           </div>
           <div className="flex flex-wrap gap-2 p-3">
-            {/* "Alle" Button */}
             <button
               onClick={() => handleSelectGroup(null)}
               className="flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-semibold border-2 transition-all"
               style={activeGroupIdx === null
-                ? { borderColor: '#2c2420', backgroundColor: '#2c2420', color: '#fff' }
+                ? { borderColor: '#271f1a', backgroundColor: '#271f1a', color: '#fff' }
                 : { borderColor: '#e0d8ce', color: '#5a4e48' }
               }
             >
@@ -435,37 +514,6 @@ export function ShoppingListView() {
         </div>
       )}
 
-      {/* Progress + actions */}
-      <div className="mz-view-head">
-        <div>
-          <h1 className="mz-view-title">Einkaufsliste</h1>
-          <p className="mz-view-sub">{checkedCount} von {totalItems} erledigt</p>
-        </div>
-        <div style={{ display: 'flex', gap: 8 }}>
-          <button
-            onClick={() => { const g = activeGroupIdx !== null ? groups[activeGroupIdx] : undefined; loadList(g?.dayIndices); }}
-            className="mz-btn-soft"
-          >
-            <RefreshCw size={14} />
-            <span className="mz-hide-sm">Aktualisieren</span>
-          </button>
-          {totalItems > 0 && (
-            <button onClick={exportPDF} className="mz-btn-primary">
-              <Download size={14} />
-              PDF
-            </button>
-          )}
-        </div>
-      </div>
-      {totalItems > 0 && (
-        <div className="mz-shop-progress">
-          <div className="mz-shop-progress-bar">
-            <div style={{ width: `${totalItems ? (checkedCount / totalItems) * 100 : 0}%` }} />
-          </div>
-          <span>{checkedCount}/{totalItems}</span>
-        </div>
-      )}
-
       {/* Loading */}
       {loading && (
         <div className="flex items-center justify-center py-12">
@@ -480,18 +528,18 @@ export function ShoppingListView() {
             <button
               onClick={() => setShowAdd(true)}
               className="w-full flex items-center gap-2 px-4 py-3 text-sm transition-colors"
-              style={{ color: '#9c8c84' }}
+              style={{ color: '#9a8c80' }}
               onMouseEnter={e => { (e.currentTarget as HTMLElement).style.backgroundColor = '#f7f4ee'; (e.currentTarget as HTMLElement).style.color = '#5a4e48'; }}
-              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent'; (e.currentTarget as HTMLElement).style.color = '#9c8c84'; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent'; (e.currentTarget as HTMLElement).style.color = '#9a8c80'; }}
             >
-              <Plus size={15} style={{ color: '#b5614a' }} />
+              <Plus size={15} style={{ color: '#d9543b' }} />
               Produkt hinzufügen
             </button>
           ) : (
             <div className="p-4 space-y-3">
               <div className="flex items-center justify-between mb-1">
-                <p className="text-sm font-semibold" style={{ color: '#2c2420' }}>Neues Produkt</p>
-                <button onClick={() => setShowAdd(false)} className="p-1 rounded-lg" style={{ color: '#9c8c84' }}
+                <p className="text-sm font-semibold" style={{ color: '#271f1a' }}>Neues Produkt</p>
+                <button onClick={() => setShowAdd(false)} className="p-1 rounded-lg" style={{ color: '#9a8c80' }}
                   onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#efe9df')}
                   onMouseLeave={e => (e.currentTarget.style.backgroundColor = 'transparent')}
                 >
@@ -500,9 +548,7 @@ export function ShoppingListView() {
               </div>
               <input
                 ref={nameInputRef}
-                type="text"
-                placeholder="Name (z.B. Waschmittel)"
-                value={draft.name}
+                type="text" placeholder="Name (z.B. Waschmittel)" value={draft.name}
                 onChange={(e) => setDraft(d => ({ ...d, name: e.target.value }))}
                 onKeyDown={(e) => e.key === 'Enter' && addCustom()}
                 style={{ ...inputStyle, width: '100%' }}
@@ -527,10 +573,9 @@ export function ShoppingListView() {
                 </select>
               </div>
               <button
-                onClick={addCustom}
-                disabled={!draft.name.trim()}
+                onClick={addCustom} disabled={!draft.name.trim()}
                 className="w-full py-2 rounded-xl text-sm font-semibold text-white transition-opacity hover:opacity-80 disabled:opacity-40"
-                style={{ backgroundColor: '#b5614a' }}
+                style={{ backgroundColor: '#d9543b' }}
               >
                 Hinzufügen
               </button>
@@ -542,77 +587,118 @@ export function ShoppingListView() {
       {/* Empty */}
       {!loading && totalItems === 0 && (
         <div className="text-center py-12">
-          <p className="text-sm" style={{ color: '#9c8c84' }}>Keine Einträge. Plane zuerst die Woche im Menüplan.</p>
+          <p className="text-sm" style={{ color: '#9a8c80' }}>Keine Einträge. Plane zuerst die Woche im Menüplan.</p>
         </div>
       )}
 
-      {/* Categories */}
-      {!loading && orderedCategories.map((category) => {
-        const recipeItems = list[category] ?? [];
-        const customInCat = custom.filter(c => c.category === category);
-        if (!recipeItems.length && !customInCat.length) return null;
+      {/* ── Category grid ──────────────────────────────────────────────── */}
+      {!loading && orderedCategories.length > 0 && (
+        <div
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+            gap: 12,
+            alignItems: 'start',
+          }}
+        >
+          {orderedCategories.map((category) => {
+            const recipeItems = list[category] ?? [];
+            const customInCat = custom.filter(c => c.category === category);
+            if (!recipeItems.length && !customInCat.length) return null;
 
-        const isCollapsed = collapsedCategories.has(category);
-        const totalCount = recipeItems.filter(i => !deleted.includes(`${i.name.toLowerCase()}_${i.unit}`)).length + customInCat.length;
-        const checkedCount = recipeItems.filter(i => checked.has(`${i.name.toLowerCase()}_${i.unit}`)).length + customInCat.filter(c => c.checked).length;
+            const visibleRecipeItems = recipeItems.filter(i => !deleted.includes(`${i.name.toLowerCase()}_${i.unit}`));
+            const catTotal   = visibleRecipeItems.length + customInCat.length;
+            const catChecked = visibleRecipeItems.filter(i => checked.has(`${i.name.toLowerCase()}_${i.unit}`)).length
+                             + customInCat.filter(c => c.checked).length;
+            const icon = CAT_ICONS[category] ?? '🛒';
 
-        return (
-          <div key={category} className="mz-shop-group">
-            {/* Category header */}
-            <button
-              onClick={() => toggleCategory(category)}
-              className="mz-shop-group-head"
-              style={{ width: '100%', textAlign: 'left' }}
-            >
-              <div className="mz-shop-cat-ic">
-                <Tag size={14} />
-              </div>
-              <span style={{ flex: 1 }}>{category}</span>
-              <span className="mz-shop-count">{checkedCount}/{totalCount}</span>
-              {isCollapsed ? <ChevronDown size={14} style={{ color: 'var(--muted)' }} /> : <ChevronUp size={14} style={{ color: 'var(--muted)' }} />}
-            </button>
-            {!isCollapsed && <div>
-
-              {/* Recipe items */}
-              {recipeItems.map((item) => {
-                const key          = `${item.name.toLowerCase()}_${item.unit}`;
-                const isChecked    = checked.has(key);
-                const isDeleted    = deleted.includes(key);
-                const isModified   = key in overrides;
-                const effectiveAmt = overrides[key] ?? item.totalAmount;
-                const isEditing    = editKey === key;
-                const isFaded      = isChecked || isDeleted;
-
-                return (
-                  <div
-                    key={key}
-                    className={`mz-shop-item${isFaded ? ' done' : ''}`}
-                    style={isModified && !isFaded ? { borderLeft: '2.5px solid var(--accent)' } : undefined}
-                    onClick={() => toggleChecked(key)}
+            return (
+              <div
+                key={category}
+                className="rounded-2xl overflow-hidden"
+                style={{ backgroundColor: '#fff', border: '1px solid #e0d8ce' }}
+              >
+                {/* Card header */}
+                <div
+                  className="flex items-center gap-2 px-4 py-3"
+                  style={{ borderBottom: '1px solid #f0ebe3', backgroundColor: '#faf7f2' }}
+                >
+                  <span style={{ fontSize: 18 }}>{icon}</span>
+                  <span className="flex-1 text-sm font-semibold" style={{ color: '#271f1a' }}>{category}</span>
+                  <span
+                    className="text-xs font-bold px-2 py-0.5 rounded-full"
+                    style={{
+                      backgroundColor: catChecked === catTotal && catTotal > 0 ? '#e8f5e9' : '#efe9df',
+                      color: catChecked === catTotal && catTotal > 0 ? '#2e7d32' : '#9a8c80',
+                    }}
                   >
-                    {/* Checkbox */}
-                    <div className={`mz-check${isChecked ? ' on' : ''}`} onClick={e => e.stopPropagation()}>
-                      {isChecked && <Check size={11} color="#fff" strokeWidth={3} />}
-                    </div>
+                    {catChecked}/{catTotal}
+                  </span>
+                </div>
 
-                    {/* Content */}
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-2 flex-wrap">
+                {/* Items */}
+                <div>
+                  {visibleRecipeItems.map((item) => {
+                    const key          = `${item.name.toLowerCase()}_${item.unit}`;
+                    const isChecked    = checked.has(key);
+                    const isModified   = key in overrides;
+                    const effectiveAmt = overrides[key] ?? item.totalAmount;
+                    const isEditing    = editKey === key;
+                    const isDeleted    = deleted.includes(key);
+                    const isFaded      = isChecked || isDeleted;
+
+                    return (
+                      <div
+                        key={key}
+                        className="flex items-center gap-3 px-4 py-2.5 cursor-pointer transition-colors"
+                        style={{
+                          borderBottom: '1px solid #f7f4ee',
+                          backgroundColor: isChecked ? '#f7f4ee' : 'transparent',
+                        }}
+                        onClick={() => toggleChecked(key)}
+                        onMouseEnter={e => { if (!isChecked) (e.currentTarget as HTMLElement).style.backgroundColor = '#faf7f2'; }}
+                        onMouseLeave={e => { if (!isChecked) (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent'; }}
+                      >
+                        {/* Checkbox */}
+                        <div
+                          className="shrink-0 w-4 h-4 rounded flex items-center justify-center transition-colors"
+                          style={isChecked
+                            ? { backgroundColor: '#d9543b', border: '2px solid #d9543b' }
+                            : { border: '2px solid #d0c8be', backgroundColor: 'transparent' }
+                          }
+                          onClick={e => e.stopPropagation()}
+                        >
+                          {isChecked && <Check size={9} color="#fff" strokeWidth={3} />}
+                        </div>
+
                         {/* Name */}
                         <span
-                          className="text-sm font-medium transition-colors"
-                          style={
-                            isFaded        ? { textDecoration: 'line-through', color: '#9c8c84' } :
-                            item.inPantry  ? { textDecoration: 'line-through', color: '#5a8c5a' } :
-                                             { color: '#2c2420' }
+                          className="flex-1 text-sm"
+                          style={isFaded
+                            ? { textDecoration: 'line-through', color: '#9a8c80' }
+                            : isModified
+                            ? { color: '#271f1a', fontWeight: 500 }
+                            : { color: '#271f1a' }
                           }
                         >
                           {item.name}
+                          {item.promotions.map((promo, pi) => {
+                            const sc = STORE_COLORS[promo.store] ?? { bg: '#efe9df', color: '#5a4e48' };
+                            return (
+                              <span
+                                key={pi}
+                                className="ml-1.5 inline-flex items-center text-[10px] px-1.5 py-0.5 rounded-full font-medium"
+                                style={{ backgroundColor: sc.bg, color: sc.color }}
+                              >
+                                {promo.store.charAt(0).toUpperCase() + promo.store.slice(1)}
+                              </span>
+                            );
+                          })}
                         </span>
 
                         {/* Amount — editable */}
                         {isEditing ? (
-                          <div className="flex items-center gap-1">
+                          <div className="flex items-center gap-1" onClick={e => e.stopPropagation()}>
                             <input
                               ref={editRef}
                               type="text" inputMode="decimal" value={editVal}
@@ -622,170 +708,103 @@ export function ShoppingListView() {
                                 if (e.key === 'Enter')  commitEdit(key, item.totalAmount);
                                 if (e.key === 'Escape') setEditKey(null);
                               }}
-                              className="w-20 px-2 py-0.5 text-sm rounded-lg focus:outline-none"
-                              style={{ border: '1px solid #c49a6c', backgroundColor: '#fff9f3', color: '#2c2420' }}
+                              className="w-16 px-2 py-0.5 text-xs rounded-lg focus:outline-none"
+                              style={{ border: '1px solid #c49a6c', backgroundColor: '#fff9f3', color: '#271f1a' }}
                             />
-                            <span className="text-xs" style={{ color: '#9c8c84' }}>{item.unit}</span>
+                            <span className="text-xs" style={{ color: '#9a8c80' }}>{item.unit}</span>
                           </div>
                         ) : (
                           <button
                             onClick={(e) => { e.stopPropagation(); if (!isFaded) startEdit(key, effectiveAmt); }}
-                            title="Menge anpassen"
-                            className="flex items-center gap-1 text-sm rounded px-1 -mx-1 transition-colors"
+                            className="shrink-0 text-xs font-medium"
                             style={isFaded
-                              ? { color: '#9c8c84', cursor: 'default' }
+                              ? { color: '#9a8c80', textDecoration: 'line-through', cursor: 'default' }
                               : isModified
-                              ? { color: '#c49a6c', fontWeight: 600, cursor: 'pointer' }
-                              : { color: '#5a4e48', cursor: 'pointer' }
+                              ? { color: '#c49a6c', cursor: 'pointer' }
+                              : { color: '#9a8c80', cursor: 'pointer' }
                             }
                           >
-                            {isModified && !isFaded && <span style={{ color: '#c49a6c', fontSize: '10px' }}>●</span>}
-                            <span style={isFaded ? { textDecoration: 'line-through' } : {}}>
-                              {formatAmount(effectiveAmt, item.unit)}
-                            </span>
+                            {formatAmount(effectiveAmt, item.unit)}
                           </button>
                         )}
+
+                        {/* Soft-delete */}
+                        <button
+                          onClick={(e) => { e.stopPropagation(); toggleDeleted(key); }}
+                          title={isDeleted ? 'Wiederherstellen' : 'Entfernen'}
+                          className="shrink-0 p-1 rounded-lg opacity-0 hover:opacity-100 transition-all"
+                          style={{ color: '#d0c8be' }}
+                          onMouseEnter={e => { (e.currentTarget as HTMLElement).style.opacity = '1'; (e.currentTarget as HTMLElement).style.color = '#c62828'; }}
+                          onMouseLeave={e => { (e.currentTarget as HTMLElement).style.opacity = '0'; (e.currentTarget as HTMLElement).style.color = '#d0c8be'; }}
+                        >
+                          <Trash2 size={12} />
+                        </button>
 
                         {/* Reset override */}
                         {isModified && !isEditing && !isFaded && (
                           <button
                             onClick={(e) => { e.stopPropagation(); resetOverride(key); }}
-                            style={{ color: '#9c8c84' }}
-                            title={`Zurücksetzen auf ${formatAmount(item.totalAmount, item.unit)}`}
+                            style={{ color: '#9a8c80' }}
+                            title="Zurücksetzen"
                             onMouseEnter={e => (e.currentTarget.style.color = '#c49a6c')}
-                            onMouseLeave={e => (e.currentTarget.style.color = '#9c8c84')}
+                            onMouseLeave={e => (e.currentTarget.style.color = '#9a8c80')}
                           >
-                            <RotateCcw size={12} />
+                            <RotateCcw size={11} />
                           </button>
                         )}
                       </div>
+                    );
+                  })}
 
-                      {/* Promo + recipe names */}
-                      {!isDeleted && (
-                        <div className="flex items-center gap-2 mt-1 flex-wrap">
-                          {item.inPantry && (
-                            <span
-                              className="inline-flex items-center text-xs px-1.5 py-0.5 rounded-full font-medium"
-                              style={{ backgroundColor: '#e8f5e9', color: '#2e7d32' }}
-                            >
-                              Im Chuchichäschtli
-                            </span>
-                          )}
-                          {item.promotions.map((promo, pi) => {
-                            const sc = STORE_COLORS[promo.store] ?? { bg: '#efe9df', color: '#5a4e48' };
-                            return (
-                              <span
-                                key={pi}
-                                className="inline-flex items-center gap-1 text-xs px-1.5 py-0.5 rounded-full font-medium"
-                                style={{ backgroundColor: sc.bg, color: sc.color }}
-                              >
-                                <Tag size={10} />
-                                {promo.store.charAt(0).toUpperCase() + promo.store.slice(1)}
-                                {promo.discount && ` ${promo.discount}`}
-                              </span>
-                            );
-                          })}
-                          {item.recipeNames.length <= 2
-                            ? item.recipeNames.map((name, ri) => (
-                                <span key={ri} className="text-xs truncate" style={{ color: '#9c8c84' }}>{name}</span>
-                              ))
-                            : <span className="text-xs" style={{ color: '#9c8c84' }}>{item.recipeNames.length} Rezepte</span>
-                          }
-                        </div>
-                      )}
-                    </div>
-
-                    {/* Soft-delete button */}
-                    <button
-                      onClick={(e) => { e.stopPropagation(); toggleDeleted(key); }}
-                      title={isDeleted ? 'Wiederherstellen' : 'Nicht benötigt'}
-                      className="flex-shrink-0 p-1.5 rounded-lg transition-all mt-0.5"
-                      style={isDeleted
-                        ? { color: '#c62828', backgroundColor: '#fce4ec', opacity: 1 }
-                        : { color: '#d0c8be', opacity: 0.5 }
-                      }
-                      onMouseEnter={e => {
-                        if (!isDeleted) {
-                          (e.currentTarget as HTMLElement).style.opacity = '1';
-                          (e.currentTarget as HTMLElement).style.color = '#c62828';
-                          (e.currentTarget as HTMLElement).style.backgroundColor = '#fce4ec';
-                        }
+                  {/* Custom items in category */}
+                  {customInCat.map((item) => (
+                    <div
+                      key={item.id}
+                      className="flex items-center gap-3 px-4 py-2.5 cursor-pointer transition-colors"
+                      style={{
+                        borderBottom: '1px solid #f7f4ee',
+                        borderLeft: '2.5px solid #d4a090',
+                        backgroundColor: item.checked ? '#f7f4ee' : 'transparent',
                       }}
-                      onMouseLeave={e => {
-                        if (!isDeleted) {
-                          (e.currentTarget as HTMLElement).style.opacity = '0.5';
-                          (e.currentTarget as HTMLElement).style.color = '#d0c8be';
-                          (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent';
-                        }
-                      }}
+                      onClick={() => toggleCustomChecked(item.id)}
                     >
-                      <Trash2 size={14} />
-                    </button>
-                  </div>
-                );
-              })}
-
-              {/* Custom items */}
-              {customInCat.map((item) => (
-                <div
-                  key={item.id}
-                  className="flex items-center gap-3 px-4 py-3 transition-colors"
-                  style={{
-                    borderLeft: '2.5px solid #d4a090',
-                    borderBottom: '1px solid #f0ebe3',
-                    backgroundColor: item.checked ? '#f7f4ee' : 'transparent',
-                  }}
-                  onMouseEnter={e => { if (!item.checked) (e.currentTarget as HTMLElement).style.backgroundColor = '#f7f4ee'; }}
-                  onMouseLeave={e => { if (!item.checked) (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent'; }}
-                >
-                  <button
-                    onClick={() => toggleCustomChecked(item.id)}
-                    className="w-5 h-5 rounded flex items-center justify-center flex-shrink-0 transition-colors"
-                    style={item.checked
-                      ? { backgroundColor: '#b5614a', border: '2px solid #b5614a' }
-                      : { border: '2px solid #d0c8be', backgroundColor: 'transparent' }
-                    }
-                  >
-                    {item.checked && <Check size={11} color="#fff" strokeWidth={3} />}
-                  </button>
-
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-2">
+                      <div
+                        className="shrink-0 w-4 h-4 rounded flex items-center justify-center"
+                        style={item.checked
+                          ? { backgroundColor: '#d9543b', border: '2px solid #d9543b' }
+                          : { border: '2px solid #d0c8be' }
+                        }
+                      >
+                        {item.checked && <Check size={9} color="#fff" strokeWidth={3} />}
+                      </div>
                       <span
-                        className="text-sm font-medium"
-                        style={item.checked ? { textDecoration: 'line-through', color: '#9c8c84' } : { color: '#2c2420' }}
+                        className="flex-1 text-sm"
+                        style={item.checked ? { textDecoration: 'line-through', color: '#9a8c80' } : { color: '#271f1a' }}
                       >
                         {item.name}
                       </span>
                       {item.amount && (
-                        <span className="text-sm" style={{ color: item.checked ? '#9c8c84' : '#5a4e48' }}>
+                        <span className="text-xs shrink-0" style={{ color: '#9a8c80' }}>
                           {item.amount} {item.unit}
                         </span>
                       )}
-                      <span
-                        className="text-[10px] px-1.5 py-0.5 rounded-full font-semibold"
-                        style={{ backgroundColor: '#f2e5e0', color: '#b5614a' }}
+                      <button
+                        onClick={(e) => { e.stopPropagation(); removeCustom(item.id); }}
+                        className="shrink-0 p-1 rounded-lg opacity-0 hover:opacity-100 transition-all"
+                        style={{ color: '#d0c8be' }}
+                        onMouseEnter={e => { (e.currentTarget as HTMLElement).style.opacity = '1'; (e.currentTarget as HTMLElement).style.color = '#c62828'; }}
+                        onMouseLeave={e => { (e.currentTarget as HTMLElement).style.opacity = '0'; (e.currentTarget as HTMLElement).style.color = '#d0c8be'; }}
                       >
-                        manuell
-                      </span>
+                        <Trash2 size={12} />
+                      </button>
                     </div>
-                  </div>
-
-                  <button
-                    onClick={() => removeCustom(item.id)}
-                    className="flex-shrink-0 p-1.5 rounded-lg transition-all"
-                    style={{ color: '#d0c8be', opacity: 0.5 }}
-                    onMouseEnter={e => { (e.currentTarget as HTMLElement).style.opacity = '1'; (e.currentTarget as HTMLElement).style.color = '#c62828'; (e.currentTarget as HTMLElement).style.backgroundColor = '#fce4ec'; }}
-                    onMouseLeave={e => { (e.currentTarget as HTMLElement).style.opacity = '0.5'; (e.currentTarget as HTMLElement).style.color = '#d0c8be'; (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent'; }}
-                  >
-                    <Trash2 size={14} />
-                  </button>
+                  ))}
                 </div>
-              ))}
-            </div>}
-          </div>
-        );
-      })}
+              </div>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }

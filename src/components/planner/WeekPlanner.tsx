@@ -177,10 +177,17 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe }: We
     doc.setTextColor(...C.ink);
     doc.text('MahlZeit', margin, 11);
 
+    const pdfAdults   = settings.household.adults;
+    const pdfChildren = settings.household.children.length;
+    const pdfHousehold = [
+      `${pdfAdults} Erw.`,
+      pdfChildren > 0 ? `${pdfChildren} Kind${pdfChildren !== 1 ? 'er' : ''}` : null,
+    ].filter(Boolean).join(' · ');
+
     doc.setFont('helvetica', 'normal');
     doc.setFontSize(6.5);
     doc.setTextColor(...C.muted);
-    doc.text('MENÜPLAN', margin, 16);
+    doc.text(`MENÜPLANER  ·  ${pdfHousehold}`, margin, 16);
 
     const dateFrom = weekDays[0] ? format(weekDays[0], 'd. MMM', { locale: de }) : '';
     const dateTo   = weekDays[6] ? format(weekDays[6], 'd. MMM yyyy', { locale: de }) : '';
@@ -381,12 +388,32 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe }: We
   };
 
   const kwNum = weekId.split('-W')[1];
-  const startDateStr = weekDays[0] ? formatDate(weekDays[0]).slice(0, 10) : '';
+  const dateFrom = weekDays[0] ? format(weekDays[0], 'd. MMM', { locale: de }) : '';
+  const dateTo   = weekDays[6] ? format(weekDays[6], 'd. MMM yyyy', { locale: de }) : '';
+  const adults   = settings.household.adults;
+  const children = settings.household.children.length;
+  const householdLabel = [
+    `${adults} Erwachsene${adults !== 1 ? '' : 'r'}`,
+    children > 0 ? `${children} Kind${children !== 1 ? 'er' : ''}` : null,
+  ].filter(Boolean).join(' · ');
 
   return (
     <div className="mz-planner">
       <div className="mz-plbar">
         <div className="mz-plbar-l">
+          {/* MahlZeit wordmark + subtitle */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
+            <div style={{ display: 'flex', alignItems: 'baseline', gap: 8 }}>
+              <span style={{ fontSize: 18, fontWeight: 900, letterSpacing: '-0.03em', color: '#271f1a' }}>
+                Mahl<span style={{ color: '#d9543b' }}>Zeit</span>
+              </span>
+              <span className="mz-hide-sm" style={{ fontSize: 11, fontWeight: 600, letterSpacing: '0.05em', color: '#9a8c80', textTransform: 'uppercase' }}>
+                Menüplaner
+              </span>
+            </div>
+            <span className="mz-hide-sm" style={{ fontSize: 11, color: '#9a8c80' }}>{householdLabel}</span>
+          </div>
+
           <div className="mz-weeknav">
             <button
               onClick={() => setCurrentDate(prevWeek(currentDate))}
@@ -397,7 +424,7 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe }: We
             </button>
             <div className="mz-weeklabel">
               <span className="mz-kw">KW {kwNum}</span>
-              <span className="mz-range">{startDateStr}</span>
+              <span className="mz-range mz-hide-sm">{dateFrom} – {dateTo}</span>
             </div>
             <button
               onClick={() => setCurrentDate(nextWeek(currentDate))}

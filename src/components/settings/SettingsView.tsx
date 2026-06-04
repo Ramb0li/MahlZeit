@@ -345,7 +345,236 @@ export function SettingsView({
 
   return (
     <SectionCtx.Provider value={{ openSections, toggleSection }}>
-    <div className="max-w-2xl space-y-3">
+    <div className="max-w-3xl space-y-3">
+
+      {/* ── Haushaltsgrösse ──────────────────────────────────────────────── (war unten) */}
+      <Section id="household" title="Haushaltsgrösse" sub={`Gesamtportionen: ${totalPortions()}`}>
+        <div className="space-y-4">
+          <div className="flex items-center justify-between">
+            <label className="text-sm" style={{ color: '#5a4e48' }}>Erwachsene</label>
+            <div className="flex items-center gap-3">
+              <button
+                onClick={() => setSettings((s) => ({ ...s, household: { ...s.household, adults: Math.max(1, s.household.adults - 1) } }))}
+                className="w-8 h-8 rounded-full flex items-center justify-center font-medium transition-colors"
+                style={{ border: '1px solid #e0d8ce', color: '#5a4e48' }}
+                onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#efe9df')}
+                onMouseLeave={e => (e.currentTarget.style.backgroundColor = 'transparent')}
+              >–</button>
+              <span className="w-6 text-center font-semibold" style={{ color: '#2c2420' }}>{settings.household.adults}</span>
+              <button
+                onClick={() => setSettings((s) => ({ ...s, household: { ...s.household, adults: s.household.adults + 1 } }))}
+                className="w-8 h-8 rounded-full flex items-center justify-center font-medium transition-colors"
+                style={{ border: '1px solid #e0d8ce', color: '#5a4e48' }}
+                onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#efe9df')}
+                onMouseLeave={e => (e.currentTarget.style.backgroundColor = 'transparent')}
+              >+</button>
+            </div>
+          </div>
+          <div>
+            <div className="flex items-center justify-between mb-3">
+              <label className="text-sm" style={{ color: '#5a4e48' }}>Kinder</label>
+              <button onClick={addChild} className="flex items-center gap-1 text-xs font-semibold transition-opacity hover:opacity-70" style={{ color: '#4a7a4e' }}>
+                <Plus size={14} />Kind hinzufügen
+              </button>
+            </div>
+            {settings.household.children.length === 0 && (
+              <p className="text-xs" style={{ color: '#9c8c84' }}>Noch keine Kinder</p>
+            )}
+            <div className="space-y-2">
+              {settings.household.children.map((child) => (
+                <div key={child.id} className="flex items-center gap-3 p-3 rounded-xl" style={{ backgroundColor: '#f7f4ee' }}>
+                  <span className="text-sm flex-1" style={{ color: '#5a4e48' }}>Kind · {child.age} Jahre</span>
+                  <span className="text-xs px-2 py-0.5 rounded-full" style={{ backgroundColor: '#fff9f3', color: '#9c8c84', border: '1px solid #e0d8ce' }}>
+                    {portionFactor(child.age)} Portion
+                  </span>
+                  <input
+                    type="number" min={0} max={18} value={child.age}
+                    onChange={(e) => updateChild(child.id, Number(e.target.value))}
+                    style={{ ...inputStyle, width: '56px', textAlign: 'center', padding: '4px 8px' }}
+                  />
+                  <button
+                    onClick={() => removeChild(child.id)}
+                    className="p-1.5 rounded-lg transition-colors"
+                    style={{ color: '#9c8c84' }}
+                    onMouseEnter={e => { (e.currentTarget as HTMLElement).style.backgroundColor = '#fce4ec'; (e.currentTarget as HTMLElement).style.color = '#c62828'; }}
+                    onMouseLeave={e => { (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent'; (e.currentTarget as HTMLElement).style.color = '#9c8c84'; }}
+                  >
+                    <Trash2 size={14} />
+                  </button>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* ── Ernährungsweise ──────────────────────────────────────────────── (verschoben) */}
+      <Section id="diet" title="Ernährungsweise" sub="Filtert Rezeptvorschläge und den Menü-Picker.">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+          {(
+            [
+              { value: 'alle',          emoji: '🍽',  label: 'Alle',           sub: 'Kein Filter' },
+              { value: 'fleischhaltig', emoji: '🥩',  label: 'Fleischhaltig',  sub: 'Inkl. Fleischgerichte' },
+              { value: 'flexitarisch',  emoji: '🌾',  label: 'Flexitarisch',   sub: 'Max. 1× Fleisch/Woche' },
+              { value: 'pescetarisch',  emoji: '🐟',  label: 'Pescetarisch',   sub: 'Kein Fleisch' },
+              { value: 'vegetarisch',   emoji: '🥗',  label: 'Vegetarisch',    sub: 'Kein Fleisch, kein Fisch' },
+              { value: 'vegan',         emoji: '🌿',  label: 'Vegan',          sub: 'Nur pflanzlich' },
+            ] as const
+          ).map(({ value, emoji, label, sub }) => {
+            const isActive = (settings.dietPreference ?? 'alle') === value;
+            return (
+              <button
+                key={value}
+                onClick={() => setSettings((s) => ({ ...s, dietPreference: value }))}
+                className="flex flex-col items-center gap-1 p-3 rounded-2xl border-2 text-center transition-all"
+                style={isActive
+                  ? { borderColor: '#4a7a4e', backgroundColor: '#e8f2e8' }
+                  : { borderColor: '#e0d8ce' }
+                }
+              >
+                <span className="text-2xl">{emoji}</span>
+                <p className="text-xs font-semibold leading-tight" style={{ color: isActive ? '#4a7a4e' : '#2c2420' }}>{label}</p>
+                <p className="text-[10px]" style={{ color: '#9c8c84' }}>{sub}</p>
+              </button>
+            );
+          })}
+        </div>
+      </Section>
+
+      {/* ── Allergien & Abneigungen ──────────────────────────────────────── (verschoben) */}
+      <Section id="allergies" title="Allergien & Abneigungen" sub="Rezepte mit diesen Zutaten werden ausgegraut und nicht vorgeschlagen.">
+        {(() => {
+          const selected = settings.allergiesAndAversions ?? [];
+          const toggle = (id: string) =>
+            setSettings(s => ({
+              ...s,
+              allergiesAndAversions: selected.includes(id)
+                ? selected.filter(x => x !== id)
+                : [...selected, id],
+            }));
+          const customAversions = selected.filter(
+            id => !ALLERGENS.some(a => a.id === id) && !PRESET_AVERSIONS.map(p => p.toLowerCase()).includes(id)
+          );
+          const filteredPresets = PRESET_AVERSIONS.filter(p =>
+            aversionSearch === '' || p.toLowerCase().includes(aversionSearch.toLowerCase())
+          );
+          return (
+            <div className="space-y-5">
+              <div>
+                <p className="text-xs font-semibold mb-3" style={{ color: '#5a4e48' }}>Allergene & Intoleranzen</p>
+                <div className="flex flex-wrap gap-2">
+                  {ALLERGENS.map(({ id, label, emoji }) => {
+                    const active = selected.includes(id);
+                    return (
+                      <button
+                        key={id}
+                        onClick={() => toggle(id)}
+                        className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold border-2 transition-all"
+                        style={active
+                          ? { borderColor: '#b5614a', backgroundColor: '#fce8e3', color: '#b5614a' }
+                          : { borderColor: '#e0d8ce', backgroundColor: '#f7f4ee', color: '#5a4e48' }
+                        }
+                      >
+                        <span>{emoji}</span>{label}{active && <X size={10} />}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+              <div>
+                <p className="text-xs font-semibold mb-3" style={{ color: '#5a4e48' }}>Sonstige Abneigungen</p>
+                <div className="flex flex-wrap gap-2 mb-3">
+                  {filteredPresets.map(p => {
+                    const id = p.toLowerCase();
+                    const active = selected.includes(id);
+                    return (
+                      <button
+                        key={id}
+                        onClick={() => toggle(id)}
+                        className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold border-2 transition-all"
+                        style={active
+                          ? { borderColor: '#b5614a', backgroundColor: '#fce8e3', color: '#b5614a' }
+                          : { borderColor: '#e0d8ce', backgroundColor: '#f7f4ee', color: '#5a4e48' }
+                        }
+                      >
+                        {p}{active && <X size={10} />}
+                      </button>
+                    );
+                  })}
+                  {customAversions.map(id => (
+                    <button
+                      key={id}
+                      onClick={() => toggle(id)}
+                      className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold border-2 transition-all"
+                      style={{ borderColor: '#b5614a', backgroundColor: '#fce8e3', color: '#b5614a' }}
+                    >
+                      {id}<X size={10} />
+                    </button>
+                  ))}
+                </div>
+                <div className="relative">
+                  <Search size={13} className="absolute left-3 top-1/2 -translate-y-1/2" style={{ color: '#9c8c84' }} />
+                  <input
+                    type="text" value={aversionSearch}
+                    onChange={e => setAversionSearch(e.target.value)}
+                    onKeyDown={e => {
+                      if (e.key === 'Enter' && aversionSearch.trim()) {
+                        const id = aversionSearch.trim().toLowerCase();
+                        if (!selected.includes(id)) toggle(id);
+                        setAversionSearch('');
+                      }
+                    }}
+                    placeholder="Suchen oder hinzufügen (Enter)"
+                    style={{ ...inputStyle, width: '100%', paddingLeft: '32px' }}
+                  />
+                </div>
+                {aversionSearch && filteredPresets.length === 0 && (
+                  <p className="text-xs mt-1.5" style={{ color: '#9c8c84' }}>
+                    Enter drücken um &quot;{aversionSearch}&quot; hinzuzufügen
+                  </p>
+                )}
+              </div>
+              {selected.length > 0 && (
+                <p className="text-xs" style={{ color: '#9c8c84' }}>
+                  {selected.length} Einschränkung{selected.length !== 1 ? 'en' : ''} aktiv — Rezepte mit diesen Zutaten werden ausgegraut.
+                </p>
+              )}
+            </div>
+          );
+        })()}
+      </Section>
+
+      {/* ── Mahlzeiten ───────────────────────────────────────────────────── (verschoben) */}
+      <Section id="meals" title="Mahlzeiten im Wochenplan" sub="Klicke auf eine Mahlzeit um sie ein- oder auszublenden.">
+        <div className="flex flex-col sm:grid sm:grid-cols-3 gap-3">
+          {(
+            [
+              { key: 'showBreakfast' as const, emoji: '☕', label: 'Frühstück',   def: false },
+              { key: 'showLunch'     as const, emoji: '🥗', label: 'Mittagessen', def: false },
+              { key: 'showDinner'    as const, emoji: '🍽', label: 'Abendessen',  def: true  },
+            ]
+          ).map(({ key, emoji, label, def }) => {
+            const isActive = settings[key] ?? def;
+            return (
+              <button
+                key={key}
+                onClick={() => setSettings((s) => ({ ...s, [key]: !isActive }))}
+                className="flex items-center gap-3 p-4 rounded-2xl border-2 text-left transition-all"
+                style={isActive
+                  ? { borderColor: '#4a7a4e', backgroundColor: '#e8f2e8' }
+                  : { borderColor: '#e0d8ce', opacity: 0.55 }
+                }
+              >
+                <span className="text-2xl">{emoji}</span>
+                <div>
+                  <p className="text-sm font-semibold leading-tight" style={{ color: isActive ? '#4a7a4e' : '#2c2420' }}>{label}</p>
+                  <p className="text-[11px] mt-0.5" style={{ color: '#9c8c84' }}>{isActive ? 'Aktiv' : 'Ausgeblendet'}</p>
+                </div>
+              </button>
+            );
+          })}
+        </div>
+      </Section>
 
       {/* ── Familie & Mitglieder ─────────────────────────────────────────── */}
       {group && (
@@ -548,38 +777,6 @@ export function SettingsView({
         </div>
       </Section>
 
-      {/* ── Meal toggles ─────────────────────────────────────────────────── */}
-      <Section id="meals" title="Mahlzeiten im Wochenplan" sub="Klicke auf eine Mahlzeit um sie ein- oder auszublenden.">
-        <div className="flex flex-col sm:grid sm:grid-cols-3 gap-3">
-          {(
-            [
-              { key: 'showBreakfast' as const, emoji: '☕', label: 'Frühstück',   def: false },
-              { key: 'showLunch'     as const, emoji: '🥗', label: 'Mittagessen', def: false },
-              { key: 'showDinner'    as const, emoji: '🍽', label: 'Abendessen',  def: true  },
-            ]
-          ).map(({ key, emoji, label, def }) => {
-            const isActive = settings[key] ?? def;
-            return (
-              <button
-                key={key}
-                onClick={() => setSettings((s) => ({ ...s, [key]: !isActive }))}
-                className="flex items-center gap-3 p-4 rounded-2xl border-2 text-left transition-all"
-                style={isActive
-                  ? { borderColor: '#4a7a4e', backgroundColor: '#e8f2e8' }
-                  : { borderColor: '#e0d8ce', opacity: 0.55 }
-                }
-              >
-                <span className="text-2xl">{emoji}</span>
-                <div>
-                  <p className="text-sm font-semibold leading-tight" style={{ color: isActive ? '#4a7a4e' : '#2c2420' }}>{label}</p>
-                  <p className="text-[11px] mt-0.5" style={{ color: '#9c8c84' }}>{isActive ? 'Aktiv' : 'Ausgeblendet'}</p>
-                </div>
-              </button>
-            );
-          })}
-        </div>
-      </Section>
-
       {/* ── Week switch day ──────────────────────────────────────────────── */}
       <Section id="weekswitch" title="Wochenansicht" sub="Ab welchem Wochentag soll automatisch die nächste Woche angezeigt werden?">
         <div className="flex flex-wrap gap-2">
@@ -605,218 +802,10 @@ export function SettingsView({
         </p>
       </Section>
 
-      {/* ── Diet preference ──────────────────────────────────────────────── */}
-      <Section id="diet" title="Ernährungsweise" sub="Filtert Rezeptvorschläge und den Menü-Picker.">
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-          {(
-            [
-              { value: 'alle',          emoji: '🍽',  label: 'Alle',           sub: 'Kein Filter' },
-              { value: 'fleischhaltig', emoji: '🥩',  label: 'Fleischhaltig',  sub: 'Inkl. Fleischgerichte' },
-              { value: 'flexitarisch',  emoji: '🌾',  label: 'Flexitarisch',   sub: 'Max. 1× Fleisch/Woche' },
-              { value: 'pescetarisch',  emoji: '🐟',  label: 'Pescetarisch',   sub: 'Kein Fleisch' },
-              { value: 'vegetarisch',   emoji: '🥗',  label: 'Vegetarisch',    sub: 'Kein Fleisch, kein Fisch' },
-              { value: 'vegan',         emoji: '🌿',  label: 'Vegan',          sub: 'Nur pflanzlich' },
-            ] as const
-          ).map(({ value, emoji, label, sub }) => {
-            const isActive = (settings.dietPreference ?? 'alle') === value;
-            return (
-              <button
-                key={value}
-                onClick={() => setSettings((s) => ({ ...s, dietPreference: value }))}
-                className="flex flex-col items-center gap-1 p-3 rounded-2xl border-2 text-center transition-all"
-                style={isActive
-                  ? { borderColor: '#4a7a4e', backgroundColor: '#e8f2e8' }
-                  : { borderColor: '#e0d8ce' }
-                }
-              >
-                <span className="text-2xl">{emoji}</span>
-                <p className="text-xs font-semibold leading-tight" style={{ color: isActive ? '#4a7a4e' : '#2c2420' }}>{label}</p>
-                <p className="text-[10px]" style={{ color: '#9c8c84' }}>{sub}</p>
-              </button>
-            );
-          })}
-        </div>
-      </Section>
 
       {/* ── Allergien & Abneigungen ──────────────────────────────────────── */}
-      <Section id="allergies" title="Allergien & Abneigungen" sub="Rezepte mit diesen Zutaten werden ausgegraut und nicht vorgeschlagen.">
-        {(() => {
-          const selected = settings.allergiesAndAversions ?? [];
-          const toggle = (id: string) =>
-            setSettings(s => ({
-              ...s,
-              allergiesAndAversions: selected.includes(id)
-                ? selected.filter(x => x !== id)
-                : [...selected, id],
-            }));
-
-          const customAversions = selected.filter(
-            id => !ALLERGENS.some(a => a.id === id) && !PRESET_AVERSIONS.map(p => p.toLowerCase()).includes(id)
-          );
-
-          const filteredPresets = PRESET_AVERSIONS.filter(p =>
-            aversionSearch === '' || p.toLowerCase().includes(aversionSearch.toLowerCase())
-          );
-
-          return (
-            <div className="space-y-5">
-              {/* Allergen chips */}
-              <div>
-                <p className="text-xs font-semibold mb-3" style={{ color: '#5a4e48' }}>Allergene & Intoleranzen</p>
-                <div className="flex flex-wrap gap-2">
-                  {ALLERGENS.map(({ id, label, emoji }) => {
-                    const active = selected.includes(id);
-                    return (
-                      <button
-                        key={id}
-                        onClick={() => toggle(id)}
-                        className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold border-2 transition-all"
-                        style={active
-                          ? { borderColor: '#b5614a', backgroundColor: '#fce8e3', color: '#b5614a' }
-                          : { borderColor: '#e0d8ce', backgroundColor: '#f7f4ee', color: '#5a4e48' }
-                        }
-                      >
-                        <span>{emoji}</span>
-                        {label}
-                        {active && <X size={10} />}
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-
-              {/* Aversions */}
-              <div>
-                <p className="text-xs font-semibold mb-3" style={{ color: '#5a4e48' }}>Sonstige Abneigungen</p>
-                <div className="flex flex-wrap gap-2 mb-3">
-                  {filteredPresets.map(p => {
-                    const id = p.toLowerCase();
-                    const active = selected.includes(id);
-                    return (
-                      <button
-                        key={id}
-                        onClick={() => toggle(id)}
-                        className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold border-2 transition-all"
-                        style={active
-                          ? { borderColor: '#b5614a', backgroundColor: '#fce8e3', color: '#b5614a' }
-                          : { borderColor: '#e0d8ce', backgroundColor: '#f7f4ee', color: '#5a4e48' }
-                        }
-                      >
-                        {p}
-                        {active && <X size={10} />}
-                      </button>
-                    );
-                  })}
-                  {customAversions.map(id => (
-                    <button
-                      key={id}
-                      onClick={() => toggle(id)}
-                      className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold border-2 transition-all"
-                      style={{ borderColor: '#b5614a', backgroundColor: '#fce8e3', color: '#b5614a' }}
-                    >
-                      {id}
-                      <X size={10} />
-                    </button>
-                  ))}
-                </div>
-
-                {/* Search / add custom aversion */}
-                <div className="relative">
-                  <Search size={13} className="absolute left-3 top-1/2 -translate-y-1/2" style={{ color: '#9c8c84' }} />
-                  <input
-                    type="text"
-                    value={aversionSearch}
-                    onChange={e => setAversionSearch(e.target.value)}
-                    onKeyDown={e => {
-                      if (e.key === 'Enter' && aversionSearch.trim()) {
-                        const id = aversionSearch.trim().toLowerCase();
-                        if (!selected.includes(id)) toggle(id);
-                        setAversionSearch('');
-                      }
-                    }}
-                    placeholder="Suchen oder hinzufügen (Enter)"
-                    style={{ ...inputStyle, width: '100%', paddingLeft: '32px' }}
-                  />
-                </div>
-                {aversionSearch && filteredPresets.length === 0 && (
-                  <p className="text-xs mt-1.5" style={{ color: '#9c8c84' }}>
-                    Enter drücken um &quot;{aversionSearch}&quot; hinzuzufügen
-                  </p>
-                )}
-              </div>
-
-              {selected.length > 0 && (
-                <p className="text-xs" style={{ color: '#9c8c84' }}>
-                  {selected.length} Einschränkung{selected.length !== 1 ? 'en' : ''} aktiv — Rezepte mit diesen Zutaten werden ausgegraut.
-                </p>
-              )}
-            </div>
-          );
-        })()}
-      </Section>
 
       {/* ── Household ────────────────────────────────────────────────────── */}
-      <Section id="household" title="Haushaltsgrösse" sub={`Gesamtportionen: ${totalPortions()}`}>
-        <div className="space-y-4">
-          <div className="flex items-center justify-between">
-            <label className="text-sm" style={{ color: '#5a4e48' }}>Erwachsene</label>
-            <div className="flex items-center gap-3">
-              <button
-                onClick={() => setSettings((s) => ({ ...s, household: { ...s.household, adults: Math.max(1, s.household.adults - 1) } }))}
-                className="w-8 h-8 rounded-full flex items-center justify-center font-medium transition-colors"
-                style={{ border: '1px solid #e0d8ce', color: '#5a4e48' }}
-                onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#efe9df')}
-                onMouseLeave={e => (e.currentTarget.style.backgroundColor = 'transparent')}
-              >–</button>
-              <span className="w-6 text-center font-semibold" style={{ color: '#2c2420' }}>{settings.household.adults}</span>
-              <button
-                onClick={() => setSettings((s) => ({ ...s, household: { ...s.household, adults: s.household.adults + 1 } }))}
-                className="w-8 h-8 rounded-full flex items-center justify-center font-medium transition-colors"
-                style={{ border: '1px solid #e0d8ce', color: '#5a4e48' }}
-                onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#efe9df')}
-                onMouseLeave={e => (e.currentTarget.style.backgroundColor = 'transparent')}
-              >+</button>
-            </div>
-          </div>
-
-          <div>
-            <div className="flex items-center justify-between mb-3">
-              <label className="text-sm" style={{ color: '#5a4e48' }}>Kinder</label>
-              <button onClick={addChild} className="flex items-center gap-1 text-xs font-semibold transition-opacity hover:opacity-70" style={{ color: '#4a7a4e' }}>
-                <Plus size={14} />
-                Kind hinzufügen
-              </button>
-            </div>
-            {settings.household.children.length === 0 && (
-              <p className="text-xs" style={{ color: '#9c8c84' }}>Noch keine Kinder</p>
-            )}
-            <div className="space-y-2">
-              {settings.household.children.map((child) => (
-                <div key={child.id} className="flex items-center gap-3 p-3 rounded-xl" style={{ backgroundColor: '#f7f4ee' }}>
-                  <span className="text-sm flex-1" style={{ color: '#5a4e48' }}>Kind · {child.age} Jahre</span>
-                  <span className="text-xs px-2 py-0.5 rounded-full" style={{ backgroundColor: '#fff9f3', color: '#9c8c84', border: '1px solid #e0d8ce' }}>
-                    {portionFactor(child.age)} Portion
-                  </span>
-                  <input
-                    type="number" min={0} max={18} value={child.age}
-                    onChange={(e) => updateChild(child.id, Number(e.target.value))}
-                    style={{ ...inputStyle, width: '56px', textAlign: 'center', padding: '4px 8px' }}
-                  />
-                  <button
-                    onClick={() => removeChild(child.id)}
-                    className="p-1.5 rounded-lg transition-colors"
-                    style={{ color: '#9c8c84' }}
-                    onMouseEnter={e => { (e.currentTarget as HTMLElement).style.backgroundColor = '#fce4ec'; (e.currentTarget as HTMLElement).style.color = '#c62828'; }}
-                    onMouseLeave={e => { (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent'; (e.currentTarget as HTMLElement).style.color = '#9c8c84'; }}
-                  >
-                    <Trash2 size={14} />
-                  </button>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </Section>
 
       {/* ── Weather ──────────────────────────────────────────────────────── */}
       <Section id="weather" title="Standort und Wetter" sub="MahlZeit schlägt bei warmem Wetter leichte Gerichte vor — bei Kälte Wärmendes.">
