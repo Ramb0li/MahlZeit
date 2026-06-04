@@ -1,20 +1,12 @@
 {
-  "lastUpdated": "2026-06-03T16:11:29.251Z",
+  "lastUpdated": "2026-06-04T06:55:14.568Z",
   "location": "Luzern",
   "rawQuery": "Luzern",
   "days": [
     {
-      "date": "2026-06-03",
-      "tempMin": 13,
-      "tempMax": 18,
-      "condition": "rainy",
-      "conditionLabel": "Regen",
-      "weatherType": "neutral"
-    },
-    {
       "date": "2026-06-04",
       "tempMin": 10,
-      "tempMax": 21,
+      "tempMax": 22,
       "condition": "rainy",
       "conditionLabel": "Regen",
       "weatherType": "neutral"
@@ -29,10 +21,10 @@
     },
     {
       "date": "2026-06-06",
-      "tempMin": 11,
+      "tempMin": 9,
       "tempMax": 22,
-      "condition": "rainy",
-      "conditionLabel": "Regenschauer",
+      "condition": "cloudy",
+      "conditionLabel": "Bewölkt",
       "weatherType": "neutral"
     },
     {
@@ -45,74 +37,82 @@
     },
     {
       "date": "2026-06-08",
-      "tempMin": 13,
-      "tempMax": 25,
+      "tempMin": 12,
+      "tempMax": 26,
+      "condition": "cloudy",
+      "conditionLabel": "Bewölkt",
+      "weatherType": "neutral"
+    },
+    {
+      "date": "2026-06-09",
+      "tempMin": 15,
+      "tempMax": 19,
       "condition": "rainy",
       "conditionLabel": "Regenschauer",
       "weatherType": "neutral"
     },
     {
-      "date": "2026-06-09",
-      "tempMin": 14,
-      "tempMax": 18,
-      "condition": "rainy",
-      "conditionLabel": "Gewitter",
-      "weatherType": "neutral"
-    },
-    {
       "date": "2026-06-10",
-      "tempMin": 11,
+      "tempMin": 14,
       "tempMax": 19,
-      "condition": "cloudy",
-      "conditionLabel": "Bewölkt",
+      "condition": "rainy",
+      "conditionLabel": "Regen",
       "weatherType": "neutral"
     },
     {
       "date": "2026-06-11",
-      "tempMin": 13,
-      "tempMax": 22,
-      "condition": "sunny",
-      "conditionLabel": "Sonnig",
+      "tempMin": 12,
+      "tempMax": 21,
+      "condition": "cloudy",
+      "conditionLabel": "Bewölkt",
       "weatherType": "neutral"
     },
     {
       "date": "2026-06-12",
-      "tempMin": 14,
-      "tempMax": 25,
-      "condition": "partly-cloudy",
-      "conditionLabel": "Teils bewölkt",
-      "weatherType": "neutral"
+      "tempMin": 15,
+      "tempMax": 26,
+      "condition": "cloudy",
+      "conditionLabel": "Bewölkt",
+      "weatherType": "warm"
     },
     {
       "date": "2026-06-13",
-      "tempMin": 16,
-      "tempMax": 26,
-      "condition": "sunny",
-      "conditionLabel": "Sonnig",
+      "tempMin": 18,
+      "tempMax": 25,
+      "condition": "rainy",
+      "conditionLabel": "Regen",
       "weatherType": "warm"
     },
     {
       "date": "2026-06-14",
-      "tempMin": 16,
-      "tempMax": 26,
-      "condition": "cloudy",
-      "conditionLabel": "Bewölkt",
+      "tempMin": 17,
+      "tempMax": 27,
+      "condition": "rainy",
+      "conditionLabel": "Regen",
       "weatherType": "warm"
     },
     {
       "date": "2026-06-15",
-      "tempMin": 17,
-      "tempMax": 26,
-      "condition": "cloudy",
-      "conditionLabel": "Bewölkt",
+      "tempMin": 18,
+      "tempMax": 28,
+      "condition": "rainy",
+      "conditionLabel": "Regen",
       "weatherType": "warm"
     },
     {
       "date": "2026-06-16",
-      "tempMin": 17,
+      "tempMin": 19,
       "tempMax": 27,
-      "condition": "cloudy",
-      "conditionLabel": "Bewölkt",
+      "condition": "rainy",
+      "conditionLabel": "Regen",
+      "weatherType": "warm"
+    },
+    {
+      "date": "2026-06-17",
+      "tempMin": 18,
+      "tempMax": 28,
+      "condition": "sunny",
+      "conditionLabel": "Sonnig",
       "weatherType": "warm"
     }
   ]
