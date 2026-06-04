@@ -198,10 +198,16 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
           <p className="text-xs font-bold uppercase tracking-widest mb-0.5" style={{ color: '#9a8c80' }}>Bibliothek</p>
           <h1 className="mz-view-title" style={{ marginBottom: 0 }}>Rezepte</h1>
         </div>
-        <button onClick={() => setIsCreating(true)} className="mz-btn-primary">
-          <Plus size={15} />
-          <span className="mz-hide-sm">Rezept hinzufügen</span>
-        </button>
+        <div className="flex items-center gap-2">
+          <button onClick={() => setImportOpen(true)} className="mz-btn-soft" title="Rezept importieren">
+            <Link size={15} />
+            <span className="mz-hide-sm">Importieren</span>
+          </button>
+          <button onClick={() => setIsCreating(true)} className="mz-btn-primary">
+            <Plus size={15} />
+            <span className="mz-hide-sm">Rezept hinzufügen</span>
+          </button>
+        </div>
       </div>
 
       {/* Search + diet icons + import */}
@@ -235,10 +241,6 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
             );
           })}
         </div>
-        <button onClick={() => setImportOpen(true)} className="mz-btn-soft" title="Rezept importieren">
-          <Link size={15} />
-          <span className="mz-hide-sm">Importieren</span>
-        </button>
       </div>
 
       {/* Filters */}

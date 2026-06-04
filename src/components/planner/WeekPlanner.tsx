@@ -187,7 +187,7 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe }: We
     doc.setFont('helvetica', 'normal');
     doc.setFontSize(6.5);
     doc.setTextColor(...C.muted);
-    doc.text(`MENÜPLANER  ·  ${pdfHousehold}`, margin, 16);
+    doc.text(`MENÜPLANER · ${pdfHousehold}`, margin, 16);
 
     const dateFrom = weekDays[0] ? format(weekDays[0], 'd. MMM', { locale: de }) : '';
     const dateTo   = weekDays[6] ? format(weekDays[6], 'd. MMM yyyy', { locale: de }) : '';

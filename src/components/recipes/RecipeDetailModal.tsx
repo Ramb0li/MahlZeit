@@ -1,6 +1,6 @@
 'use client';
 import { useState, useEffect, useCallback } from 'react';
-import { X, Pencil, UtensilsCrossed, CalendarPlus } from 'lucide-react';
+import { X, Pencil, UtensilsCrossed } from 'lucide-react';
 import { getCurrentSeason } from '@/lib/utils';
 import { type Recipe, type Ingredient, type IngredientGroup, type RecipeRating } from '@/types';
 
@@ -498,8 +498,8 @@ export function RecipeDetailModal({
               }}
               title={hasSteps ? undefined : 'Keine Zubereitungsschritte hinterlegt'}
             >
-              <CalendarPlus size={14} />
-              In Wochenplan
+              <UtensilsCrossed size={14} />
+              Jetzt kochen
             </button>
           )}
         </div>

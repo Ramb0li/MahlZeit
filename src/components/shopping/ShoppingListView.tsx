@@ -106,6 +106,13 @@ export function ShoppingListView() {
   const [deleted, setDeleted]   = useState<string[]>(() => readLS(`mz-del-${currentWeekId}`, [] as string[]));
   const [overrides, setOverrides] = useState<Record<string, number>>(() => readLS(`mz-ov-${currentWeekId}`, {}));
 
+  // Reload per-week localStorage state whenever the selected week changes
+  useEffect(() => {
+    setDeleted(readLS(`mz-del-${weekId}`, [] as string[]));
+    setOverrides(readLS(`mz-ov-${weekId}`, {} as Record<string, number>));
+    setChecked(new Set());
+  }, [weekId]); // eslint-disable-line react-hooks/exhaustive-deps
+
   const [editKey, setEditKey] = useState<string | null>(null);
   const [editVal, setEditVal] = useState('');
   const editRef = useRef<HTMLInputElement>(null);
