@@ -1134,7 +1134,7 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                 { title: 'Rezept bearbeiten', body: 'In der Tabelle auf den Stift klicken. Felder anpassen und Speichern klicken — Änderung ist sofort live.' },
                 { title: 'Neues Rezept erstellen', body: 'Button "+ Neues Rezept" klicken. Pflichtfelder: ID (z.B. linsen-curry, nur Kleinbuchstaben/Bindestriche), Name, Kategorie, Zutaten, Anleitung.' },
                 { title: 'Bild hochladen', body: 'Im Rezept-Formular auf ein Bildfeld klicken → Datei wählen (JPG/PNG, max 8 MB). Bild wird automatisch hochgeladen. Danach Speichern klicken.' },
-                { title: 'Rezept löschen', body: 'Papierkorb-Icon in der Tabelle → Bestätigen.' },
+                { title: 'Rezept löschen', body: 'Papierkorb-Icon in der Tabelle → Bestätigen. Das Rezept verschwindet sofort aus Redis. Damit es dauerhaft aus dem Code entfernt wird: Export JSON → npm run recipes:sync → git push → Seed Redis (siehe unten).' },
                 { title: 'Rezepte per KI importieren', body: 'Button "Importieren" → URL einer Rezept-Website oder Screenshot/Foto hochladen. Die KI befüllt das Formular automatisch. Felder prüfen → Speichern.' },
                 { title: 'Nutzer-Rezepte übernehmen', body: 'Tab "Nutzer-Rezepte" öffnen. Dort siehst du alle von Nutzern erstellten Rezepte. Mit "In offizielle Liste" wird das Rezept als Template für alle verfügbar.' },
               ].map(({ title, body }) => (
@@ -1151,13 +1151,30 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                 <div style={{ display: 'grid', gridTemplateColumns: '160px 1fr', borderBottom: '1px solid var(--border)' }}>
                   <div style={{ padding: '12px 16px', fontWeight: 700, color: 'var(--ink)', background: 'var(--bg-2)' }}>Export JSON</div>
                   <div style={{ padding: '12px 16px', color: 'var(--ink-2)' }}>
-                    Lädt alle aktuellen Rezepte als JSON-Datei herunter. Für Backup oder lokale Synchronisation: Datei als <code style={{ background: 'var(--bg-2)', padding: '1px 5px', borderRadius: 4, fontFamily: 'monospace', fontSize: 12 }}>data/recipes.json</code> ins Repo legen, dann Terminal öffnen (<kbd style={{ background: 'var(--bg-2)', padding: '1px 6px', borderRadius: 4, border: '1px solid var(--border)', fontSize: 11 }}>cmd+Leertaste</kbd> → Terminal) und folgenden Code eingeben:
-                    <pre style={{ marginTop: 10, background: '#1e1e1e', color: '#d4d4d4', borderRadius: 8, padding: '10px 14px', fontSize: 12, lineHeight: 1.6, overflowX: 'auto', userSelect: 'all' }}>{`cd ~/Documents/Claude/Cowork/Wochenplaner\\ Essen/mahlzeitplaner\ngit add data/recipes.json\ngit commit -m "Rezepte aktualisiert"\ngit push`}</pre>
+                    Lädt alle aktuellen Rezepte aus Redis als JSON-Datei herunter. Immer als ersten Schritt ausführen, bevor Änderungen ins Repo übernommen werden.
                   </div>
                 </div>
-                <div style={{ display: 'grid', gridTemplateColumns: '160px 1fr' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: '160px 1fr', borderBottom: '1px solid var(--border)' }}>
                   <div style={{ padding: '12px 16px', fontWeight: 700, color: 'var(--ink)', background: 'var(--bg-2)' }}>Seed Redis</div>
-                  <div style={{ padding: '12px 16px', color: 'var(--ink-2)' }}>Überschreibt Redis mit dem aktuellen Code-Bundle. Nur nach einem neuen Deployment verwenden wenn neue Rezepte aus dem Code geladen werden sollen. Vorher Export JSON machen!</div>
+                  <div style={{ padding: '12px 16px', color: 'var(--ink-2)' }}>Überschreibt Redis mit dem aktuellen Deployment-Bundle. Nur nach einem erfolgreichen <code style={{ background: 'var(--bg-2)', padding: '1px 5px', borderRadius: 4, fontFamily: 'monospace', fontSize: 12 }}>git push</code> + Vercel-Deployment verwenden. Vorher immer Export JSON!</div>
+                </div>
+                <div style={{ display: 'grid', gridTemplateColumns: '160px 1fr' }}>
+                  <div style={{ padding: '12px 16px', fontWeight: 700, color: 'var(--ink)', background: 'var(--bg-2)', display: 'flex', alignItems: 'center' }}>Vollständiger Workflow</div>
+                  <div style={{ padding: '12px 16px', color: 'var(--ink-2)' }}>
+                    <p style={{ margin: '0 0 8px 0', fontSize: 13 }}>Nach Bearbeitungen, Löschungen oder Bild-Uploads im Admin:</p>
+                    <ol style={{ margin: 0, paddingLeft: 18, fontSize: 13, lineHeight: 2 }}>
+                      <li>Hier auf <strong>Export JSON</strong> klicken → Datei als <code style={{ background: 'var(--bg-2)', padding: '1px 5px', borderRadius: 4, fontFamily: 'monospace', fontSize: 12 }}>data/recipes.json</code> ins Repo-Verzeichnis speichern</li>
+                      <li>Terminal öffnen (<kbd style={{ background: 'var(--bg-2)', padding: '1px 6px', borderRadius: 4, border: '1px solid var(--border)', fontSize: 11 }}>cmd+Leertaste</kbd> → Terminal) und eingeben:</li>
+                    </ol>
+                    <pre style={{ margin: '8px 0', background: '#1e1e1e', color: '#d4d4d4', borderRadius: 8, padding: '10px 14px', fontSize: 12, lineHeight: 1.6, overflowX: 'auto', userSelect: 'all' }}>{`cd ~/Documents/Claude/Cowork/Wochenplaner\\ Essen/mahlzeitplaner\nnpm run recipes:sync\ngit add -A\ngit commit -m "Rezepte aktualisiert"\ngit push`}</pre>
+                    <ol start={3} style={{ margin: 0, paddingLeft: 18, fontSize: 13, lineHeight: 2 }}>
+                      <li>Ca. 2 Minuten warten bis Vercel das Deployment abgeschlossen hat</li>
+                      <li>Hier auf <strong>Seed Redis</strong> klicken → sollte <code style={{ background: 'var(--bg-2)', padding: '1px 5px', borderRadius: 4, fontFamily: 'monospace', fontSize: 12 }}>{`{ ok: true, count: 189 }`}</code> zurückgeben</li>
+                    </ol>
+                    <p style={{ margin: '8px 0 0 0', fontSize: 12, color: 'var(--muted)' }}>
+                      <strong>recipes:sync</strong> erkennt automatisch neu hinzugefügte Bilder, geänderte Felder und gelöschte Rezepte — kein manuelles Bearbeiten von Einzeldateien nötig.
+                    </p>
+                  </div>
                 </div>
               </div>
 
