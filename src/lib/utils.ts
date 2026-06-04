@@ -170,3 +170,35 @@ export function formatAmount(amount: number, unit: string): string {
   const formatted = amount % 1 === 0 ? amount.toString() : amount.toFixed(1);
   return `${formatted} ${unit}`;
 }
+
+// ─── Einheiten & Mengen-Constraints ──────────────────────────────────────────
+
+export const COMMON_UNITS = [
+  'g', 'kg',
+  'ml', 'dl', 'l',
+  'Stk', 'Stk.',
+  'EL', 'TL',
+  'Prise',
+  'Tasse',
+  'Blatt', 'Bund', 'Dose', 'Handvoll', 'Kopf',
+  'Leib', 'Msp', 'Pkg', 'Portion', 'Scheibe',
+  'Stange', 'Würfel', 'Zehe', 'Zweig',
+];
+
+export interface AmountConstraints { min: number; max: number; step: number; }
+
+export function getAmountConstraints(unit: string): AmountConstraints {
+  switch (unit.toLowerCase().trim()) {
+    case 'g':                                      return { min: 0.1,  max: 999,  step: 0.1  };
+    case 'kg':                                     return { min: 0.1,  max: 100,  step: 0.1  };
+    case 'ml':                                     return { min: 1,    max: 999,  step: 0.25 };
+    case 'dl':                                     return { min: 0.1,  max: 99,   step: 0.25 };
+    case 'l':                                      return { min: 0.1,  max: 100,  step: 0.1  };
+    case 'stk': case 'stk.': case 'stück':        return { min: 0.5,  max: 1000, step: 0.5  };
+    case 'prise': case 'prisen':                   return { min: 1,    max: 10,   step: 1    };
+    case 'el': case 'el.':                         return { min: 0.5,  max: 20,   step: 0.1  };
+    case 'tl': case 'tl.':                         return { min: 0.5,  max: 20,   step: 0.1  };
+    case 'tasse':                                  return { min: 0.25, max: 10,   step: 0.25 };
+    default:                                       return { min: 0.5,  max: 100,  step: 0.5  };
+  }
+}

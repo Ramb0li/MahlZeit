@@ -54,7 +54,7 @@
     "Mit Kokosmilch, Kürbiskernen und Chiliflocken garnieren."
   ],
   "tips": "",
-  "imageUrl": null,
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---sup-01-1-ku-rbis-kokos-suppe--1780579271952.jpeg",
   "tags": [
     "Mealprep-geeignet",
     "Mittagsgericht",
@@ -62,5 +62,6 @@
     "Winter",
     "Vegan"
   ],
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---sup-01-2-ku-rbis-kokos-suppe--1780579300744.jpeg"
 }

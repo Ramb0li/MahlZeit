@@ -2,6 +2,7 @@
 import { useState, useRef, useCallback } from 'react';
 import { Plus, Trash2, ImagePlus, X } from 'lucide-react';
 import { type Recipe, type Category, type WeatherType, type Ingredient, type IngredientGroup, TAG_GROUPS, computeTimeTags } from '@/types';
+import { getAmountConstraints, COMMON_UNITS } from '@/lib/utils';
 
 const CATEGORIES: Category[] = [
   'Frühstück', 'Snacks & Vorspeisen', 'Suppen, Eintöpfe & Currys',
@@ -433,14 +434,15 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/ad
                   style={{ ...inputStyle, flex: 1, padding: '6px 10px' }}
                 />
                 <input
-                  type="number" placeholder="Menge" value={ing.amount} min={0} step={0.5}
+                  type="number" placeholder="Menge" value={ing.amount}
+                  {...getAmountConstraints(ing.unit)}
                   onChange={(e) => updateIngredient(i, 'amount', e.target.value)}
                   style={{ ...inputStyle, width: '72px', padding: '6px 10px' }}
                 />
                 <input
-                  type="text" placeholder="Einheit" value={ing.unit}
+                  type="text" list="mz-units" placeholder="Einheit" value={ing.unit}
                   onChange={(e) => updateIngredient(i, 'unit', e.target.value)}
-                  style={{ ...inputStyle, width: '64px', padding: '6px 10px' }}
+                  style={{ ...inputStyle, width: '72px', padding: '6px 10px' }}
                 />
                 <button
                   type="button" onClick={() => removeIngredient(i)}
@@ -500,14 +502,15 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/ad
                         style={{ ...inputStyle, flex: 1, padding: '5px 10px' }}
                       />
                       <input
-                        type="number" placeholder="Menge" value={ing.amount} min={0} step={0.5}
+                        type="number" placeholder="Menge" value={ing.amount}
+                        {...getAmountConstraints(ing.unit)}
                         onChange={(e) => updateGroupIngredient(gi, ii, 'amount', e.target.value)}
                         style={{ ...inputStyle, width: '72px', padding: '5px 10px' }}
                       />
                       <input
-                        type="text" placeholder="Einheit" value={ing.unit}
+                        type="text" list="mz-units" placeholder="Einheit" value={ing.unit}
                         onChange={(e) => updateGroupIngredient(gi, ii, 'unit', e.target.value)}
-                        style={{ ...inputStyle, width: '64px', padding: '5px 10px' }}
+                        style={{ ...inputStyle, width: '72px', padding: '5px 10px' }}
                       />
                       <button
                         type="button" onClick={() => removeGroupIngredient(gi, ii)}
@@ -544,6 +547,10 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/ad
           </div>
         )}
       </div>
+
+      <datalist id="mz-units">
+        {COMMON_UNITS.map(u => <option key={u} value={u} />)}
+      </datalist>
 
       {/* Actions */}
       <div className="flex gap-3 justify-end pt-2">

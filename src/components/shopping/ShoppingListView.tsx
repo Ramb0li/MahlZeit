@@ -189,27 +189,62 @@ export function ShoppingListView() {
     const m = 16; const col2X = pageW / 2 + 4;
     const colW = pageW / 2 - m - 4;
 
-    // Colours
-    const sage:    [number,number,number] = [74, 122, 78];
-    const sageLt:  [number,number,number] = [232, 242, 232];
-    const textD:   [number,number,number] = [30, 45, 30];
-    const textM:   [number,number,number] = [107, 140, 107];
-    const border:  [number,number,number] = [200, 220, 200];
+    const C = {
+      ink:    [ 39,  31,  26] as [number,number,number],
+      ink2:   [ 92,  80,  72] as [number,number,number],
+      muted:  [154, 140, 128] as [number,number,number],
+      border: [224, 216, 206] as [number,number,number],
+      accent: [217,  84,  59] as [number,number,number],
+    };
 
-    // Header band
-    doc.setFillColor(...sage);
-    doc.rect(0, 0, pageW, 24, 'F');
+    const INGREDIENT_CAT_COLORS: Record<string, { text: [number,number,number]; bg: [number,number,number] }> = {
+      'Gemüse & Salat':        { text: [ 90, 138,  79], bg: [238, 246, 236] },
+      'Hülsenfrüchte':         { text: [176, 106,  16], bg: [254, 246, 228] },
+      'Getreide & Stärke':     { text: [122,  88,  24], bg: [253, 246, 228] },
+      'Milchprodukte & Eier':  { text: [ 58, 122, 154], bg: [232, 243, 248] },
+      'Fisch & Meeresfrüchte': { text: [ 32,  96, 160], bg: [232, 240, 252] },
+      'Tofu & Veganes':        { text: [ 74, 122,  78], bg: [238, 244, 236] },
+      'Haltbare Produkte':     { text: [138,  64,  32], bg: [253, 240, 232] },
+      'Nüsse & Samen':         { text: [160, 112,  16], bg: [254, 252, 232] },
+      'Gewürze & Kräuter':     { text: [ 70, 100,  70], bg: [240, 248, 240] },
+      'Sonstiges':             { text: [106,  92,  80], bg: [244, 240, 236] },
+      'Haushalt':              { text: [ 80, 100, 130], bg: [232, 240, 252] },
+      'Hygiene':               { text: [130,  80, 120], bg: [248, 236, 248] },
+      'Persönliches':          { text: [140,  80, 100], bg: [252, 236, 240] },
+      'Getränke':              { text: [ 32,  96, 160], bg: [228, 244, 255] },
+      'Tierbedarf':            { text: [140, 100,  40], bg: [252, 244, 228] },
+    };
+    const DEFAULT_CAT = { text: [106, 92, 80] as [number,number,number], bg: [244, 240, 236] as [number,number,number] };
+
+    // Header — Wordmark links + KW-Block rechts + Akzentlinie
     doc.setFont('helvetica', 'bold');
-    doc.setFontSize(14);
-    doc.setTextColor(255, 255, 255);
-    doc.text('MahlZeit — Einkaufsliste', m, 15);
+    doc.setFontSize(16);
+    doc.setTextColor(...C.ink);
+    doc.text('MahlZeit', m, 13);
+
     doc.setFont('helvetica', 'normal');
-    doc.setFontSize(8.5);
-    doc.setTextColor(200, 230, 200);
-    doc.text(`KW ${weekId.split('-W')[1]}  ·  ${new Date().toLocaleDateString('de-CH')}`, pageW - m, 15, { align: 'right' });
+    doc.setFontSize(6.5);
+    doc.setTextColor(...C.muted);
+    doc.text('EINKAUFSLISTE', m, 18);
+
+    const kw = weekId.split('-W')[1] ?? '';
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(20);
+    doc.setTextColor(...C.ink);
+    doc.text(kw, pageW - m, 13, { align: 'right' });
+    doc.setFontSize(8);
+    doc.text('KW ', pageW - m - doc.getTextWidth(kw) - 0.5, 13, { align: 'right' });
+
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(7);
+    doc.setTextColor(...C.ink2);
+    doc.text(new Date().toLocaleDateString('de-CH'), pageW - m, 18, { align: 'right' });
+
+    doc.setFillColor(...C.accent);
+    doc.rect(m, 21, pageW - 2 * m, 0.8, 'F');
 
     // Two-column layout
-    let yL = 32; let yR = 32;
+    let yL = 26; let yR = 26;
     let col = 0;
 
     const getY  = () => col === 0 ? yL : yR;
@@ -220,9 +255,9 @@ export function ShoppingListView() {
       if (col === 0 && yL > yR + 20) { col = 1; return; }
       if (col === 0) { col = 1; yR = yL; return; }
       doc.addPage();
-      doc.setFillColor(...sage);
-      doc.rect(0, 0, pageW, 10, 'F');
-      col = 0; yL = 18; yR = 18;
+      doc.setFillColor(...C.accent);
+      doc.rect(m, 8, pageW - 2 * m, 0.8, 'F');
+      col = 0; yL = 14; yR = 14;
     };
 
     const checkOverflow = () => {
@@ -239,14 +274,7 @@ export function ShoppingListView() {
       const x = getX();
       const y = getY();
 
-      // Category header
-      doc.setFillColor(...sageLt);
-      doc.rect(x - 2, y - 3, colW + 4, 8, 'F');
-      doc.setFont('helvetica', 'bold');
-      doc.setFontSize(7.5);
-      doc.setTextColor(...textD);
-      doc.text(cat.toUpperCase(), x, y + 2);
-      advY(10);
+      const catTheme = INGREDIENT_CAT_COLORS[cat] ?? DEFAULT_CAT;
 
       const allItems = [
         ...recipeItems.map(item => {
@@ -261,29 +289,40 @@ export function ShoppingListView() {
         })),
       ];
 
+      // Category header
+      doc.setFillColor(...catTheme.bg);
+      doc.rect(x - 2, y - 3, colW + 4, 9, 'F');
+      doc.setFont('helvetica', 'bold');
+      doc.setFontSize(7.5);
+      doc.setTextColor(...catTheme.text);
+      doc.text(cat.toUpperCase(), x + 2, y + 2);
+      doc.setFontSize(6.5);
+      doc.text(String(allItems.length), x + colW, y + 2, { align: 'right' });
+      advY(11);
+
       for (const it of allItems) {
         checkOverflow();
         const ix = getX(); const iy = getY();
         doc.setFont('helvetica', 'normal');
         doc.setFontSize(8.5);
-        doc.setTextColor(it.done ? 160 : textD[0], it.done ? 160 : textD[1], it.done ? 160 : textD[2]);
+        doc.setTextColor(it.done ? 160 : C.ink[0], it.done ? 160 : C.ink[1], it.done ? 160 : C.ink[2]);
         // Checkbox
-        doc.setDrawColor(...border);
+        doc.setDrawColor(...C.border);
         doc.setLineWidth(0.4);
         doc.rect(ix, iy - 3.5, 4, 4, 'S');
         if (it.done) {
-          doc.setDrawColor(...sage);
+          doc.setDrawColor(...C.accent);
           doc.line(ix + 0.5, iy - 1.5, ix + 1.5, iy - 0.5);
           doc.line(ix + 1.5, iy - 0.5, ix + 3.5, iy - 3.2);
         }
         // Name
         const nameLines = doc.splitTextToSize(it.text, colW - 24);
         doc.text(nameLines, ix + 6, iy);
-        // Qty right-aligned
+        // Qty right-aligned in muted
         if (it.qty) {
           doc.setFont('helvetica', 'bold');
           doc.setFontSize(8);
-          doc.setTextColor(...sage);
+          doc.setTextColor(...C.muted);
           doc.text(it.qty, ix + colW, iy, { align: 'right' });
         }
         advY(nameLines.length * 4.5 + 1);
@@ -293,9 +332,14 @@ export function ShoppingListView() {
 
     // Footer
     doc.setFont('helvetica', 'normal');
+    doc.setFontSize(6.5);
+    doc.setTextColor(...C.muted);
+    doc.text(`Erstellt am ${new Date().toLocaleDateString('de-CH', { day:'numeric', month:'long', year:'numeric' })}`, m, pageH - 6);
+
+    doc.setFont('helvetica', 'bold');
     doc.setFontSize(7);
-    doc.setTextColor(...textM);
-    doc.text(`Erstellt am ${new Date().toLocaleDateString('de-CH', { day:'numeric', month:'long', year:'numeric' })} · MahlZeitPlaner`, m, pageH - 6);
+    doc.setTextColor(...C.border);
+    doc.text('MAHLZEIT', pageW - m, pageH - 6, { align: 'right' });
 
     doc.save(`einkaufsliste-kw${weekId.split('-W')[1]}.pdf`);
   };

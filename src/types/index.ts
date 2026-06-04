@@ -56,6 +56,8 @@ export interface RecipeRating {
   createdAt: string;    // ISO string
 }
 
+export type DietCategory = 'meat' | 'fish' | 'vegetarian' | 'vegan';
+
 export interface Recipe {
   id: string;
   name: string;
@@ -74,6 +76,7 @@ export interface Recipe {
   imageZutaten?: string | null;
   imageKochen?: string | null;
   archived?: boolean;
+  dietCategory?: DietCategory;
 }
 
 export interface MealSlot {

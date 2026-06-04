@@ -105,21 +105,44 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe }: We
     const showLunch     = settings.showLunch     ?? false;
     const showDinner    = settings.showDinner    ?? true;
 
-    const DAY_SHORT  = ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'];
+    const DAY_SHORT = ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'];
     const pageW = 297; const pageH = 210;
     const margin = 12;
     const usableW = pageW - margin * 2;
-    const usableH = pageH - margin * 2;
 
-    // Palette — Salbei als PDF-Design
     const C = {
-      sage:      [74,  122,  78] as [number,number,number],
-      sageMid:   [143, 184, 143] as [number,number,number],
-      sageLt:    [232, 242, 232] as [number,number,number],
-      white:     [255, 255, 255] as [number,number,number],
-      text:      [30,  45,  30]  as [number,number,number],
-      textMuted: [107, 140, 107] as [number,number,number],
-      border:    [200, 220, 200] as [number,number,number],
+      ink:    [ 39,  31,  26] as [number,number,number],
+      ink2:   [ 92,  80,  72] as [number,number,number],
+      muted:  [154, 140, 128] as [number,number,number],
+      border: [224, 216, 206] as [number,number,number],
+      bg:     [250, 247, 242] as [number,number,number],
+      accent: [217,  84,  59] as [number,number,number],
+      frBar:  [192, 122,  18] as [number,number,number],
+      miBar:  [217,  84,  59] as [number,number,number],
+      abBar:  [ 62,  44,  34] as [number,number,number],
+      frBg:   [255, 252, 240] as [number,number,number],
+      miBg:   [255, 255, 255] as [number,number,number],
+      abBg:   [250, 247, 243] as [number,number,number],
+      dotV:   [111, 154, 106] as [number,number,number],
+      dotVg:  [ 90, 138,  79] as [number,number,number],
+      dotP:   [ 91, 134, 166] as [number,number,number],
+      dotM:   [217,  84,  59] as [number,number,number],
+    };
+
+    const CATEGORY_COLORS: Record<string, [number,number,number]> = {
+      'Frühstück':                  [240, 204,  88],
+      'Salate & Bowls':             [156, 200, 152],
+      'Pasta':                      [245, 168, 104],
+      'Reis & Getreide':            [232, 216, 128],
+      'Suppen, Eintöpfe & Currys':  [245, 200,  72],
+      'Vegetarische Hauptgerichte': [156, 200, 152],
+      'Desserts & Süsses':          [245, 164, 176],
+      'Aufläufe & Gratins':         [245, 176, 136],
+      'Fisch & Meeresfrüchte':      [136, 196, 232],
+      'Fleisch & Geflügel':         [232, 168, 152],
+      'Snacks & Vorspeisen':        [245, 187, 136],
+      'Wraps & Sandwiches':         [168, 200, 240],
+      'Kartoffelgerichte':          [216, 192, 140],
     };
 
     const getRecipeName = (slot: MealSlot | null | undefined) => {
@@ -138,133 +161,201 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe }: We
       return r ? `${r.timeMinutes} min` : '';
     };
 
-    const getRecipeImageUrl = (slot: MealSlot | null | undefined): string | null => {
-      if (!slot?.recipeId) return null;
-      const r = recipes.find(x => x.id === slot.recipeId);
-      return r?.imageUrl ?? null;
+    const getRecipeCategory = (slot: MealSlot | null | undefined): string => {
+      if (!slot?.recipeId) return '';
+      return recipes.find(x => x.id === slot.recipeId)?.category ?? '';
     };
 
-    // Header — heller Hintergrund mit dunklem Text
-    doc.setFillColor(...C.sageLt);
-    doc.rect(0, 0, pageW, 12, 'F');
+    const getRecipeDietCategory = (slot: MealSlot | null | undefined): string => {
+      if (!slot?.recipeId) return '';
+      return recipes.find(x => x.id === slot.recipeId)?.dietCategory ?? '';
+    };
 
-    // Logo text
+    // Header — Wordmark links + KW-Block rechts + Akzentlinie
     doc.setFont('helvetica', 'bold');
-    doc.setFontSize(14);
-    doc.setTextColor(...C.text);
-    doc.text('MahlZeit', margin, 9);
+    doc.setFontSize(16);
+    doc.setTextColor(...C.ink);
+    doc.text('MahlZeit', margin, 11);
+
     doc.setFont('helvetica', 'normal');
-    doc.setFontSize(9);
-    doc.setTextColor(...C.textMuted);
+    doc.setFontSize(6.5);
+    doc.setTextColor(...C.muted);
+    doc.text('MENÜPLAN', margin, 16);
 
     const dateFrom = weekDays[0] ? format(weekDays[0], 'd. MMM', { locale: de }) : '';
     const dateTo   = weekDays[6] ? format(weekDays[6], 'd. MMM yyyy', { locale: de }) : '';
-    doc.text(`Wochenplan · KW ${kwNum} · ${dateFrom} – ${dateTo}`, margin + 28, 9);
+    const kwStr    = String(kwNum);
 
-    // Dünner Akzent-Streifen unterhalb Header
-    doc.setFillColor(...C.sage);
-    doc.rect(0, 12, pageW, 2.5, 'F');
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(20);
+    doc.setTextColor(...C.ink);
+    doc.text(kwStr, pageW - margin, 11, { align: 'right' });
+    doc.setFontSize(8);
+    doc.text('KW ', pageW - margin - doc.getTextWidth(kwStr) - 0.5, 11, { align: 'right' });
+
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(7);
+    doc.setTextColor(...C.ink2);
+    doc.text(`${dateFrom} – ${dateTo}`, pageW - margin, 16, { align: 'right' });
+
+    doc.setFillColor(...C.accent);
+    doc.rect(margin, 19, usableW, 0.8, 'F');
 
     // Meal rows config
     const allMealRows: { key: 'breakfast'|'lunch'|'dinner'; label: string; show: boolean }[] = [
-      { key: 'breakfast', label: 'Frühstück',   show: showBreakfast },
-      { key: 'lunch',     label: 'Mittagessen',  show: showLunch     },
-      { key: 'dinner',    label: 'Abendessen',   show: showDinner    },
+      { key: 'breakfast', label: 'Frühstück',  show: showBreakfast },
+      { key: 'lunch',     label: 'Mittagessen', show: showLunch     },
+      { key: 'dinner',    label: 'Abendessen',  show: showDinner    },
     ];
     const mealRows = allMealRows.filter(r => r.show);
+    const numRows  = mealRows.length || 1;
 
-    const numRows = mealRows.length || 1;
-    const startY  = 18;
-    const gridH   = usableH - (startY - margin);
-    const rowH    = gridH / numRows;
-    const labelW  = 20;
-    const dayColW = (usableW - labelW) / 7;
+    const startY     = 23;
+    const labelW     = 16;
+    const dayColW    = (usableW - labelW) / 7;
+    const dayHeaderH = 12;
+    const footerH    = 10;
+    const gridH      = pageH - margin - startY - footerH;
+    const mealH      = (gridH - dayHeaderH) / numRows;
 
-    // Draw grid
-    for (let ri = 0; ri < mealRows.length; ri++) {
-      const row = mealRows[ri];
-      const y   = startY + ri * rowH;
+    // Corner + Day-Header-Zeile
+    doc.setFillColor(...C.bg);
+    doc.rect(margin, startY, labelW, dayHeaderH, 'F');
 
-      // Row label background
-      doc.setFillColor(...C.sageLt);
-      doc.rect(margin, y, labelW, rowH, 'F');
+    for (let di = 0; di < 7; di++) {
+      const x = margin + labelW + di * dayColW;
+      doc.setFillColor(...C.bg);
+      doc.rect(x, startY, dayColW, dayHeaderH, 'F');
+      if (di > 0) {
+        doc.setDrawColor(...C.border);
+        doc.setLineWidth(0.2);
+        doc.line(x, startY, x, startY + dayHeaderH);
+      }
       doc.setFont('helvetica', 'bold');
-      doc.setFontSize(7);
-      doc.setTextColor(...C.textMuted);
-      // Vertical text label (rotated)
-      doc.saveGraphicsState();
-      doc.text(row.label, margin + labelW / 2, y + rowH / 2, { angle: 90, align: 'center' });
-      doc.restoreGraphicsState();
+      doc.setFontSize(6.5);
+      doc.setTextColor(...C.muted);
+      doc.text(DAY_SHORT[di].toUpperCase(), x + dayColW / 2, startY + 4.5, { align: 'center' });
+      const dayDate = weekDays[di];
+      doc.setFontSize(8.5);
+      doc.setTextColor(...C.ink);
+      doc.text(dayDate ? format(dayDate, 'd.M.', { locale: de }) : '', x + dayColW / 2, startY + 9.5, { align: 'center' });
+    }
 
-      // Day cells
+    doc.setDrawColor(...C.border);
+    doc.setLineWidth(0.3);
+    doc.line(margin, startY + dayHeaderH, margin + usableW, startY + dayHeaderH);
+
+    // Meal-Rows
+    for (let ri = 0; ri < mealRows.length; ri++) {
+      const row  = mealRows[ri];
+      const rowY = startY + dayHeaderH + ri * mealH;
+      const mealBg       = row.key === 'breakfast' ? C.frBg : row.key === 'lunch' ? C.miBg : C.abBg;
+      const mealBarColor = row.key === 'breakfast' ? C.frBar : row.key === 'lunch' ? C.miBar : C.abBar;
+
+      // Row-Label
+      doc.setFillColor(...C.bg);
+      doc.rect(margin, rowY, labelW, mealH, 'F');
+      doc.setFillColor(...mealBarColor);
+      doc.rect(margin, rowY, 1, mealH, 'F');
+      doc.setFont('helvetica', 'bold');
+      doc.setFontSize(6);
+      doc.setTextColor(...mealBarColor);
+      doc.text(row.label.toUpperCase(), margin + labelW / 2, rowY + mealH / 2, { angle: 90, align: 'center' });
+
+      // 7 Tageszellen
       for (let di = 0; di < 7; di++) {
         const x    = margin + labelW + di * dayColW;
         const plan = weekPlan?.days?.[di + 1];
         const slot = plan?.[row.key];
         const name = getRecipeName(slot);
         const time = getRecipeTime(slot);
+        const cat  = getRecipeCategory(slot);
+        const diet = getRecipeDietCategory(slot);
 
-        // Cell background — alternate
-        const isToday = formatDate(weekDays[di]) === formatDate(new Date());
-        doc.setFillColor(isToday ? 220 : (di % 2 === 0 ? 248 : 255), isToday ? 242 : (di % 2 === 0 ? 250 : 255), isToday ? 220 : (di % 2 === 0 ? 248 : 255));
-        doc.rect(x, y, dayColW, rowH, 'F');
+        doc.setFillColor(...mealBg);
+        doc.rect(x, rowY, dayColW, mealH, 'F');
 
-        // Border
-        doc.setDrawColor(...C.border);
-        doc.setLineWidth(0.3);
-        doc.rect(x, y, dayColW, rowH, 'S');
-
-        // Day header (only first row)
-        if (ri === 0) {
-          doc.setFillColor(...C.sageMid);
-          doc.rect(x, y, dayColW, 8, 'F');
-          doc.setFont('helvetica', 'bold');
-          doc.setFontSize(8);
-          doc.setTextColor(...C.white);
-          const dayDate = weekDays[di];
-          const dayLabel = `${DAY_SHORT[di]}  ${dayDate ? format(dayDate, 'd. MMM', { locale: de }) : ''}`;
-          doc.text(dayLabel, x + dayColW / 2, y + 5.5, { align: 'center' });
+        // Kategorie-Farb-Strip (0.8mm)
+        const catColor = cat ? CATEGORY_COLORS[cat] : null;
+        if (catColor && name) {
+          doc.setFillColor(...catColor);
+          doc.rect(x, rowY, dayColW, 0.8, 'F');
         }
 
-        // Recipe name
         if (name) {
-          const textY = ri === 0 ? y + 12 : y + 6;
+          const textY = rowY + mealH * 0.33;
           doc.setFont('helvetica', 'bold');
           doc.setFontSize(7.5);
-          doc.setTextColor(...C.text);
-          const lines = doc.splitTextToSize(name, dayColW - 4);
-          doc.text(lines.slice(0, 3), x + 2, textY);
+          doc.setTextColor(...C.ink);
+          const lines = doc.splitTextToSize(name, dayColW - 6);
+          doc.text(lines.slice(0, 3), x + dayColW / 2, textY, { align: 'center' });
           if (time) {
             doc.setFont('helvetica', 'normal');
             doc.setFontSize(6.5);
-            doc.setTextColor(...C.textMuted);
-            doc.text(time, x + 2, textY + lines.slice(0,3).length * 4.5);
+            doc.setTextColor(...C.muted);
+            doc.text(time, x + dayColW / 2, textY + lines.slice(0, 3).length * 4.5, { align: 'center' });
+          }
+          const dotColor =
+            diet === 'vegan'      ? C.dotV  :
+            diet === 'vegetarian' ? C.dotVg :
+            diet === 'fish'       ? C.dotP  :
+            diet === 'meat'       ? C.dotM  : null;
+          if (dotColor) {
+            doc.setFillColor(...dotColor);
+            doc.circle(x + dayColW / 2, rowY + mealH - 5, 1.5, 'F');
           }
         } else {
-          const textY = ri === 0 ? y + 15 : y + rowH / 2;
           doc.setFont('helvetica', 'normal');
-          doc.setFontSize(7);
+          doc.setFontSize(10);
           doc.setTextColor(...C.border);
-          doc.text('—', x + dayColW / 2, textY, { align: 'center' });
+          doc.text('—', x + dayColW / 2, rowY + mealH / 2, { align: 'center' });
+        }
+
+        if (di > 0) {
+          doc.setDrawColor(...C.border);
+          doc.setLineWidth(0.2);
+          doc.line(x, rowY, x, rowY + mealH);
         }
       }
+
+      doc.setDrawColor(...C.border);
+      doc.setLineWidth(0.3);
+      doc.line(margin, rowY + mealH, margin + usableW, rowY + mealH);
     }
 
-    // Row borders
+    // Linke Trennlinie Label | Tage
     doc.setDrawColor(...C.border);
-    doc.setLineWidth(0.5);
-    for (let ri = 0; ri <= mealRows.length; ri++) {
-      const y = startY + ri * rowH;
-      doc.line(margin, y, margin + usableW, y);
-    }
-    // Label/day column separator
-    doc.line(margin + labelW, startY, margin + labelW, startY + gridH);
+    doc.setLineWidth(0.3);
+    doc.line(margin + labelW, startY, margin + labelW, startY + dayHeaderH + mealRows.length * mealH);
 
     // Footer
+    const footerY = pageH - 8;
+    doc.setDrawColor(...C.border);
+    doc.setLineWidth(0.3);
+    doc.line(margin, footerY - 2, margin + usableW, footerY - 2);
+
     doc.setFont('helvetica', 'normal');
     doc.setFontSize(6.5);
-    doc.setTextColor(...C.textMuted);
-    doc.text(`Erstellt am ${format(new Date(), 'd. MMM yyyy, HH:mm', { locale: de })} · MahlZeitPlaner`, margin, pageH - 4);
+    doc.setTextColor(...C.muted);
+    doc.text(`Erstellt ${format(new Date(), 'd. MMM yyyy, HH:mm', { locale: de })}`, margin, footerY + 1.5);
+
+    const legend: { label: string; color: [number,number,number] }[] = [
+      { label: 'Vegan', color: C.dotV }, { label: 'Vegetarisch', color: C.dotVg },
+      { label: 'Pescetarisch', color: C.dotP }, { label: 'Fleisch', color: C.dotM },
+    ];
+    let lx = margin + 28;
+    for (const leg of legend) {
+      doc.setFillColor(...leg.color);
+      doc.circle(lx, footerY + 1, 1.5, 'F');
+      doc.setTextColor(...C.muted);
+      doc.text(leg.label, lx + 3, footerY + 1.5);
+      lx += doc.getTextWidth(leg.label) + 9;
+    }
+
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(7);
+    doc.setTextColor(...C.border);
+    doc.text('MAHLZEIT', margin + usableW, footerY + 1.5, { align: 'right' });
 
     doc.save(`wochenplan-kw${kwNum}.pdf`);
   };
