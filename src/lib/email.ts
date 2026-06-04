@@ -27,51 +27,55 @@ function getFromEmail(): string {
 
 // ─── HTML + Plain-Text Templates ─────────────────────────────────────────────
 
+function mzEmailShell(bodyContent: string): string {
+  return `<!DOCTYPE html><html lang="de"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
+<body style="margin:0;padding:0;background:#ece6de;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;">
+<table width="100%" cellpadding="0" cellspacing="0" style="background:#ece6de;padding:32px 16px;">
+  <tr><td align="center">
+    <table width="100%" cellpadding="0" cellspacing="0" style="max-width:580px;border-radius:20px;overflow:hidden;box-shadow:0 8px 40px rgba(39,31,26,.18);">
+      <!-- Header -->
+      <tr><td style="background:#271f1a;padding:24px 32px;">
+        <span style="font-size:20px;font-weight:900;letter-spacing:-.03em;color:#fff;">Mahl<span style="color:#d9543b;">Zeit</span></span>
+      </td></tr>
+      <!-- Body -->
+      <tr><td style="background:#faf7f2;padding:36px 32px 28px;">
+        ${bodyContent}
+      </td></tr>
+      <!-- Footer -->
+      <tr><td style="background:#f0ebe3;padding:16px 32px;text-align:center;">
+        <p style="margin:0;font-size:12px;color:#9a8c80;">MahlZeit &middot; Wochenplaner für Familien &middot; <a href="mailto:info@o-v-k.ch" style="color:#9a8c80;text-decoration:none;">info@o-v-k.ch</a></p>
+      </td></tr>
+    </table>
+  </td></tr>
+</table>
+</body></html>`;
+}
+
 function htmlBody(firstName: string, confirmUrl: string): string {
-  return `<div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 600px; margin: 0 auto; background: #f2f6f2; padding: 32px 24px;">
-  <div style="background: #4a7a4e; color: #fff; padding: 20px 24px; border-radius: 16px 16px 0 0;">
-    <h1 style="margin: 0; font-size: 22px; font-weight: 800;">
-      Mahl<span style="opacity: 0.85;">Zeit</span>
-    </h1>
-    <p style="margin: 4px 0 0; font-size: 13px; opacity: 0.9;">Menüplaner für Familien</p>
-  </div>
-  <div style="background: #fff; padding: 32px 24px; border-radius: 0 0 16px 16px;">
-    <p style="font-size: 16px; color: #2c2420; margin: 0 0 16px;">
-      Hallo ${escapeHtml(firstName)},
+  return mzEmailShell(`
+    <p style="font-size:16px;font-weight:600;color:#271f1a;margin:0 0 8px;">Hallo ${escapeHtml(firstName)},</p>
+    <p style="font-size:15px;line-height:1.65;color:#5c5048;margin:0 0 20px;">
+      schön, dass du dich für <strong style="color:#271f1a;">MahlZeit</strong> angemeldet hast —
+      den Wochen-Menüplaner, der euch Zeit, Geld und das tägliche
+      «Was koche ich heute?» abnimmt.
     </p>
-    <p style="font-size: 15px; line-height: 1.6; color: #2c2420; margin: 0 0 24px;">
-      schön, dass du dich für MahlZeit angemeldet hast — den Wochen-Menüplaner,
-      der euch Zeit, Geld und das tägliche "Was-koche-ich-heute?" abnimmt.
+    <p style="font-size:15px;line-height:1.65;color:#5c5048;margin:0 0 28px;">
+      Bitte bestätige deine E-Mail-Adresse:
     </p>
-    <p style="font-size: 15px; line-height: 1.6; color: #2c2420; margin: 0 0 24px;">
-      Bitte bestätige deine E-Mail-Adresse mit einem Klick auf den Button:
-    </p>
-    <div style="text-align: center; margin: 32px 0;">
-      <a href="${confirmUrl}"
-         style="display: inline-block; background: #4a7a4e; color: #fff;
-                padding: 14px 32px; border-radius: 12px; text-decoration: none;
-                font-weight: 600; font-size: 15px;">
-        E-Mail bestätigen →
+    <div style="text-align:center;margin:0 0 28px;">
+      <a href="${confirmUrl}" style="display:inline-block;background:#d9543b;color:#fff;padding:13px 32px;border-radius:999px;text-decoration:none;font-weight:700;font-size:15px;">
+        E-Mail bestätigen &rarr;
       </a>
     </div>
-    <p style="font-size: 13px; color: #6b8c6f; line-height: 1.6; margin: 0 0 8px;">
-      Der Link ist 24 Stunden gültig. Falls der Button nicht funktioniert,
-      kopiere diesen Link in deinen Browser:
+    <p style="font-size:13px;color:#9a8c80;line-height:1.6;margin:0 0 8px;">
+      Der Link ist 24 Stunden gültig. Falls der Button nicht funktioniert, kopiere diesen Link:
     </p>
-    <p style="font-size: 12px; color: #9c8c84; word-break: break-all; margin: 0 0 24px;">
-      ${confirmUrl}
+    <p style="font-size:12px;color:#9a8c80;word-break:break-all;margin:0 0 24px;">${confirmUrl}</p>
+    <hr style="border:none;border-top:1px solid #e0d8ce;margin:24px 0;">
+    <p style="font-size:12px;color:#9a8c80;line-height:1.5;margin:0;">
+      Nicht angemeldet? Diese E-Mail einfach ignorieren — der Account wird nach 24 Stunden gelöscht.
     </p>
-    <hr style="border: none; border-top: 1px solid #e0e8e0; margin: 24px 0;" />
-    <p style="font-size: 12px; color: #9c8c84; line-height: 1.5; margin: 0;">
-      Du hast dich nicht bei MahlZeit angemeldet? Dann kannst du diese E-Mail
-      einfach ignorieren — ohne Bestätigung wird dein Account nach 24 Stunden
-      automatisch gelöscht.
-    </p>
-  </div>
-  <p style="text-align: center; font-size: 11px; color: #9c8c84; margin-top: 16px;">
-    MahlZeit · Wochenplaner für Familien · info@o-v-k.ch
-  </p>
-</div>`;
+  `);
 }
 
 function textBody(firstName: string, confirmUrl: string): string {
@@ -106,50 +110,30 @@ function escapeHtml(s: string): string {
 // ─── Group Invite ───────────────────────────────────────────────────────────
 
 function inviteHtml(groupName: string, inviterName: string, acceptUrl: string): string {
-  return `<div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 600px; margin: 0 auto; background: #f2f6f2; padding: 32px 24px;">
-  <div style="background: #4a7a4e; color: #fff; padding: 20px 24px; border-radius: 16px 16px 0 0;">
-    <h1 style="margin: 0; font-size: 22px; font-weight: 800;">
-      Mahl<span style="opacity: 0.85;">Zeit</span>
-    </h1>
-    <p style="margin: 4px 0 0; font-size: 13px; opacity: 0.9;">Menüplaner für Familien</p>
-  </div>
-  <div style="background: #fff; padding: 32px 24px; border-radius: 0 0 16px 16px;">
-    <p style="font-size: 16px; color: #2c2420; margin: 0 0 16px;">
-      Hallo,
+  return mzEmailShell(`
+    <p style="font-size:16px;font-weight:600;color:#271f1a;margin:0 0 8px;">Hallo,</p>
+    <p style="font-size:15px;line-height:1.65;color:#5c5048;margin:0 0 20px;">
+      <strong style="color:#271f1a;">${escapeHtml(inviterName)}</strong> hat dich zur Gruppe
+      <strong style="color:#271f1a;">${escapeHtml(groupName)}</strong> auf
+      <strong style="color:#271f1a;">MahlZeit</strong> eingeladen — dem Wochen-Menüplaner für Familien.
     </p>
-    <p style="font-size: 15px; line-height: 1.6; color: #2c2420; margin: 0 0 24px;">
-      <strong>${escapeHtml(inviterName)}</strong> hat dich zur Gruppe
-      <strong>${escapeHtml(groupName)}</strong> auf MahlZeit eingeladen — dem
-      Wochen-Menüplaner für Familien.
+    <p style="font-size:15px;line-height:1.65;color:#5c5048;margin:0 0 28px;">
+      Klicke auf den Button, um beizutreten. Beim ersten Login wirst du nach Name und Passwort gefragt.
     </p>
-    <p style="font-size: 15px; line-height: 1.6; color: #2c2420; margin: 0 0 24px;">
-      Klicke auf den Button, um beizutreten. Du wirst beim ersten Login um Namen
-      und Passwort gebeten.
-    </p>
-    <div style="text-align: center; margin: 32px 0;">
-      <a href="${acceptUrl}"
-         style="display: inline-block; background: #4a7a4e; color: #fff;
-                padding: 14px 32px; border-radius: 12px; text-decoration: none;
-                font-weight: 600; font-size: 15px;">
-        Einladung annehmen →
+    <div style="text-align:center;margin:0 0 28px;">
+      <a href="${acceptUrl}" style="display:inline-block;background:#d9543b;color:#fff;padding:13px 32px;border-radius:999px;text-decoration:none;font-weight:700;font-size:15px;">
+        Einladung annehmen &rarr;
       </a>
     </div>
-    <p style="font-size: 13px; color: #6b8c6f; line-height: 1.6; margin: 0 0 8px;">
-      Der Link ist 7 Tage gültig. Falls der Button nicht funktioniert,
-      kopiere diesen Link in deinen Browser:
+    <p style="font-size:13px;color:#9a8c80;line-height:1.6;margin:0 0 8px;">
+      Der Link ist 7 Tage gültig. Falls der Button nicht funktioniert, kopiere diesen Link:
     </p>
-    <p style="font-size: 12px; color: #9c8c84; word-break: break-all; margin: 0 0 24px;">
-      ${acceptUrl}
+    <p style="font-size:12px;color:#9a8c80;word-break:break-all;margin:0 0 24px;">${acceptUrl}</p>
+    <hr style="border:none;border-top:1px solid #e0d8ce;margin:24px 0;">
+    <p style="font-size:12px;color:#9a8c80;line-height:1.5;margin:0;">
+      Den Absender nicht kennen? Diese E-Mail einfach ignorieren.
     </p>
-    <hr style="border: none; border-top: 1px solid #e0e8e0; margin: 24px 0;" />
-    <p style="font-size: 12px; color: #9c8c84; line-height: 1.5; margin: 0;">
-      Du kennst den Absender nicht? Dann ignoriere diese E-Mail einfach.
-    </p>
-  </div>
-  <p style="text-align: center; font-size: 11px; color: #9c8c84; margin-top: 16px;">
-    MahlZeit · Wochenplaner für Familien · info@o-v-k.ch
-  </p>
-</div>`;
+  `);
 }
 
 function inviteText(groupName: string, inviterName: string, acceptUrl: string): string {
@@ -205,46 +189,26 @@ export async function sendInviteEmail(
 // ─── Password Reset ─────────────────────────────────────────────────────────
 
 function resetHtml(firstName: string, resetUrl: string): string {
-  return `<div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 600px; margin: 0 auto; background: #f2f6f2; padding: 32px 24px;">
-  <div style="background: #4a7a4e; color: #fff; padding: 20px 24px; border-radius: 16px 16px 0 0;">
-    <h1 style="margin: 0; font-size: 22px; font-weight: 800;">
-      Mahl<span style="opacity: 0.85;">Zeit</span>
-    </h1>
-    <p style="margin: 4px 0 0; font-size: 13px; opacity: 0.9;">Menüplaner für Familien</p>
-  </div>
-  <div style="background: #fff; padding: 32px 24px; border-radius: 0 0 16px 16px;">
-    <p style="font-size: 16px; color: #2c2420; margin: 0 0 16px;">
-      Hallo ${escapeHtml(firstName)},
+  return mzEmailShell(`
+    <p style="font-size:16px;font-weight:600;color:#271f1a;margin:0 0 8px;">Hallo ${escapeHtml(firstName)},</p>
+    <p style="font-size:15px;line-height:1.65;color:#5c5048;margin:0 0 28px;">
+      wir haben eine Anfrage erhalten, das Passwort für deinen MahlZeit-Account zurückzusetzen.
+      Klicke auf den Button, um ein neues Passwort festzulegen:
     </p>
-    <p style="font-size: 15px; line-height: 1.6; color: #2c2420; margin: 0 0 24px;">
-      wir haben eine Anfrage erhalten, das Passwort für deinen MahlZeit-Account
-      zurückzusetzen. Klicke auf den Button, um ein neues Passwort festzulegen:
-    </p>
-    <div style="text-align: center; margin: 32px 0;">
-      <a href="${resetUrl}"
-         style="display: inline-block; background: #b5614a; color: #fff;
-                padding: 14px 32px; border-radius: 12px; text-decoration: none;
-                font-weight: 600; font-size: 15px;">
-        Passwort zurücksetzen →
+    <div style="text-align:center;margin:0 0 28px;">
+      <a href="${resetUrl}" style="display:inline-block;background:#d9543b;color:#fff;padding:13px 32px;border-radius:999px;text-decoration:none;font-weight:700;font-size:15px;">
+        Passwort zurücksetzen &rarr;
       </a>
     </div>
-    <p style="font-size: 13px; color: #6b8c6f; line-height: 1.6; margin: 0 0 8px;">
-      Der Link ist <strong>1 Stunde</strong> gültig. Falls der Button nicht funktioniert,
-      kopiere diesen Link in deinen Browser:
+    <p style="font-size:13px;color:#9a8c80;line-height:1.6;margin:0 0 8px;">
+      Der Link ist <strong>1 Stunde</strong> gültig. Falls der Button nicht funktioniert, kopiere diesen Link:
     </p>
-    <p style="font-size: 12px; color: #9c8c84; word-break: break-all; margin: 0 0 24px;">
-      ${resetUrl}
+    <p style="font-size:12px;color:#9a8c80;word-break:break-all;margin:0 0 24px;">${resetUrl}</p>
+    <hr style="border:none;border-top:1px solid #e0d8ce;margin:24px 0;">
+    <p style="font-size:12px;color:#9a8c80;line-height:1.5;margin:0;">
+      Kein Reset angefordert? Diese E-Mail ignorieren — dein Passwort bleibt unverändert.
     </p>
-    <hr style="border: none; border-top: 1px solid #e0e8e0; margin: 24px 0;" />
-    <p style="font-size: 12px; color: #9c8c84; line-height: 1.5; margin: 0;">
-      Du hast kein Passwort-Reset angefordert? Dann ignoriere diese E-Mail einfach —
-      dein Passwort bleibt unverändert.
-    </p>
-  </div>
-  <p style="text-align: center; font-size: 11px; color: #9c8c84; margin-top: 16px;">
-    MahlZeit · Wochenplaner für Familien · info@o-v-k.ch
-  </p>
-</div>`;
+  `);
 }
 
 function resetText(firstName: string, resetUrl: string): string {

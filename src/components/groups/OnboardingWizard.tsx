@@ -1,51 +1,33 @@
 'use client';
 import { useState } from 'react';
-import { ArrowRight, ArrowLeft, Check, Loader2, X } from 'lucide-react';
+import { Check, Loader2 } from 'lucide-react';
 import type { Group } from '@/lib/groups';
-import type { AppSettings, DietType } from '@/types';
+import type { AppSettings, DietType, Child } from '@/types';
 
-/* ─── Daten ─────────────────────────────────────────────────────────────────── */
+/* ─── Konstanten ────────────────────────────────────────────────────────────── */
 
-const ALLERGENS = [
-  { id: 'gluten',       label: 'Gluten',       emoji: '🌾' },
-  { id: 'weizen',       label: 'Weizen',        emoji: '🌾' },
-  { id: 'laktose',      label: 'Laktose',       emoji: '🥛' },
-  { id: 'milch',        label: 'Milch',         emoji: '🍼' },
-  { id: 'ei',           label: 'Ei',            emoji: '🥚' },
-  { id: 'fisch',        label: 'Fisch',         emoji: '🐟' },
-  { id: 'schalentiere', label: 'Schalentiere',  emoji: '🦐' },
-  { id: 'erdnüsse',     label: 'Erdnüsse',      emoji: '🥜' },
-  { id: 'haselnüsse',   label: 'Haselnüsse',    emoji: '🌰' },
-  { id: 'walnüsse',     label: 'Walnüsse',      emoji: '🌰' },
-  { id: 'soja',         label: 'Soja',          emoji: '🫘' },
-  { id: 'sesam',        label: 'Sesam',         emoji: '🌻' },
-  { id: 'sellerie',     label: 'Sellerie',      emoji: '🥬' },
-  { id: 'senf',         label: 'Senf',          emoji: '🟡' },
-  { id: 'lupinen',      label: 'Lupinen',       emoji: '🌿' },
-  { id: 'alkohol',      label: 'Alkohol',       emoji: '🍷' },
-  { id: 'fruktose',     label: 'Fruktose',      emoji: '🍬' },
-  { id: 'sorbit',       label: 'Sorbit',        emoji: '🍬' },
-] as const;
-
-const PRESET_AVERSIONS = ['Schweinefleisch', 'Fisch', 'Ersatzprodukte', 'Koriander', 'Rosenkohl', 'Pilze'];
-
-const DIET_OPTIONS: { value: DietType | 'alle'; emoji: string; label: string; sub: string }[] = [
-  { value: 'alle',          emoji: '🍽',  label: 'Alle',           sub: 'Kein Filter' },
-  { value: 'fleischhaltig', emoji: '🥩',  label: 'Fleischhaltig',  sub: 'Inkl. Fleisch' },
-  { value: 'flexitarisch',  emoji: '🌾',  label: 'Flexitarisch',   sub: 'Max. 1× Fleisch/Woche' },
-  { value: 'pescetarisch',  emoji: '🐟',  label: 'Pescetarisch',   sub: 'Kein Fleisch' },
-  { value: 'vegetarisch',   emoji: '🥗',  label: 'Vegetarisch',    sub: 'Kein Fleisch/Fisch' },
-  { value: 'vegan',         emoji: '🌿',  label: 'Vegan',          sub: 'Nur pflanzlich' },
+const ALLERGEN_CHIPS = [
+  { id: 'gluten',    label: 'Gluten'    },
+  { id: 'laktose',   label: 'Laktose'   },
+  { id: 'erdnüsse',  label: 'Erdnüsse'  },
+  { id: 'nüsse',     label: 'Nüsse'     },
+  { id: 'soja',      label: 'Soja'      },
+  { id: 'ei',        label: 'Ei'        },
+  { id: 'fisch',     label: 'Fisch'     },
 ];
 
-const DAY_OPTIONS = [
-  { value: 1, label: 'Montag' },
-  { value: 2, label: 'Dienstag' },
-  { value: 3, label: 'Mittwoch' },
-  { value: 4, label: 'Donnerstag' },
-  { value: 5, label: 'Freitag' },
-  { value: 6, label: 'Samstag' },
-  { value: 0, label: 'Sonntag' },
+const DIET_OPTIONS: { value: DietType; label: string }[] = [
+  { value: 'fleischhaltig', label: 'Fleischhaltig'  },
+  { value: 'flexitarisch',  label: 'Flexitarisch'   },
+  { value: 'pescetarisch',  label: 'Pescetarisch'   },
+  { value: 'vegetarisch',   label: 'Vegetarisch'    },
+  { value: 'vegan',         label: 'Vegan'          },
+];
+
+const SHOPPING_OPTIONS = [
+  { value: 'once'  as const, label: 'Einmal pro Woche',  sub: 'Eine grosse Liste für 7 Tage'       },
+  { value: 'twice' as const, label: 'Zweimal pro Woche', sub: 'Mo–Mi und Do–So getrennt'           },
+  { value: 'daily' as const, label: 'Fast täglich',      sub: 'Frische, kleine Einkäufe'           },
 ];
 
 /* ─── Props ─────────────────────────────────────────────────────────────────── */
@@ -62,81 +44,75 @@ export function OnboardingWizard({ currentGroupName, currentSettings, onComplete
   const [step, setStep] = useState(1);
   const TOTAL = 6;
 
-  // Step 1
-  const [familyName, setFamilyName] = useState(
-    currentGroupName === 'Meine Familie' ? '' : currentGroupName
+  const [familyName,   setFamilyName]   = useState(currentGroupName === 'Meine Familie' ? '' : currentGroupName);
+  const [location,     setLocation]     = useState(currentSettings.weather?.location ?? '');
+  const [adults,       setAdults]       = useState(currentSettings.household?.adults ?? 2);
+  const [childCount,   setChildCount]   = useState(currentSettings.household?.children?.length ?? 0);
+  const [diet,         setDiet]         = useState<DietType>(
+    (currentSettings.dietPreference && currentSettings.dietPreference !== 'alle'
+      ? currentSettings.dietPreference as DietType
+      : 'flexitarisch')
   );
-
-  // Step 2
-  const [location, setLocation] = useState(currentSettings.weather?.location ?? '');
-
-  // Step 3
-  const [adults, setAdults] = useState(currentSettings.household?.adults ?? 2);
-
-  // Step 4
-  const [diet, setDiet] = useState<DietType | 'alle'>(currentSettings.dietPreference ?? 'alle');
-
-  // Step 5
-  const [allergies, setAllergies] = useState<string[]>(currentSettings.allergiesAndAversions ?? []);
-
-  // Step 6
-  const [shoppingFreq, setShoppingFreq]   = useState<'once' | 'multi'>('once');
-  const [shoppingDays, setShoppingDays]   = useState<number[]>([1]); // 1 = Montag default
+  const [allergies,    setAllergies]    = useState<string[]>(currentSettings.allergiesAndAversions ?? []);
+  const [noneSelected, setNoneSelected] = useState((currentSettings.allergiesAndAversions ?? []).length === 0);
+  const [shopping,     setShopping]     = useState<'once' | 'twice' | 'daily'>('once');
 
   const [loading, setLoading] = useState(false);
-  const [error, setError]     = useState('');
+  const [error,   setError]   = useState('');
 
-  const toggleAllergy = (id: string) =>
+  const toggleAllergy = (id: string) => {
+    setNoneSelected(false);
     setAllergies(prev => prev.includes(id) ? prev.filter(x => x !== id) : [...prev, id]);
+  };
 
-  const toggleShoppingDay = (d: number) => {
-    if (shoppingFreq === 'once') {
-      setShoppingDays([d]);
+  const selectNone = () => {
+    setNoneSelected(true);
+    setAllergies([]);
+  };
+
+  const buildSettings = (): AppSettings => {
+    const existingChildren = currentSettings.household?.children ?? [];
+    let newChildren: Child[];
+    if (childCount <= existingChildren.length) {
+      newChildren = existingChildren.slice(0, childCount);
     } else {
-      setShoppingDays(prev => prev.includes(d) ? prev.filter(x => x !== d) : [...prev, d]);
+      const extra: Child[] = Array.from({ length: childCount - existingChildren.length }, (_, i) => ({
+        id: `child-${Date.now()}-${i}`,
+        age: 8,
+      }));
+      newChildren = [...existingChildren, ...extra];
     }
+    const weekSwitchDay = shopping === 'once' ? 1 : 0;
+    return {
+      ...currentSettings,
+      weather:               { ...currentSettings.weather, location: location.trim() || currentSettings.weather.location },
+      household:             { adults, children: newChildren },
+      dietPreference:        diet,
+      allergiesAndAversions: noneSelected ? [] : allergies,
+      weekSwitchDay,
+      onboardingDone:        true,
+    };
   };
 
   const handleFinish = async () => {
     setLoading(true);
     setError('');
     try {
-      // 1. Gruppenname speichern
       const nameRes = await fetch('/api/groups/rename', {
         method:  'POST',
         headers: { 'Content-Type': 'application/json' },
-        body:    JSON.stringify({ name: (familyName.trim() || 'Meine Familie') }),
+        body:    JSON.stringify({ name: familyName.trim() || 'Meine Familie' }),
       });
-      if (!nameRes.ok) {
-        const d = await nameRes.json();
-        setError(d.error ?? 'Fehler beim Speichern');
-        return;
-      }
+      if (!nameRes.ok) { setError((await nameRes.json()).error ?? 'Fehler'); return; }
       const groupData = await nameRes.json() as Group;
 
-      // 2. Settings speichern (inkl. onboardingDone-Flag)
-      const newSettings: AppSettings = {
-        ...currentSettings,
-        weather:              { ...currentSettings.weather, location: location.trim() || currentSettings.weather.location },
-        household:            { ...currentSettings.household, adults },
-        dietPreference:       diet,
-        allergiesAndAversions: allergies,
-        // 'once': gewählter Einkaufstag als Wochenwechsel-Tag
-        // 'multi': bestehende Einstellung beibehalten (Woche im Planer weiter konfigurierbar)
-        weekSwitchDay: shoppingFreq === 'once' ? (shoppingDays[0] ?? 1) : (currentSettings.weekSwitchDay ?? 0),
-        onboardingDone:       true,
-      };
-
+      const newSettings = buildSettings();
       const settingsRes = await fetch('/api/settings', {
         method:  'POST',
         headers: { 'Content-Type': 'application/json' },
         body:    JSON.stringify({ settings: newSettings }),
       });
-      if (!settingsRes.ok) {
-        setError('Fehler beim Speichern der Einstellungen');
-        return;
-      }
-
+      if (!settingsRes.ok) { setError('Fehler beim Speichern'); return; }
       onComplete(groupData, newSettings);
     } catch {
       setError('Unbekannter Fehler');
@@ -145,343 +121,273 @@ export function OnboardingWizard({ currentGroupName, currentSettings, onComplete
     }
   };
 
-  const canProceed = () => {
-    if (step === 1) return familyName.trim().length >= 2;
-    return true;
+  const handleSkip = async () => {
+    setLoading(true);
+    try {
+      const nameRes = await fetch('/api/groups/rename', {
+        method:  'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body:    JSON.stringify({ name: currentGroupName }),
+      });
+      if (!nameRes.ok) return;
+      const groupData = await nameRes.json() as Group;
+      const skipSettings: AppSettings = { ...currentSettings, onboardingDone: true };
+      await fetch('/api/settings', {
+        method:  'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body:    JSON.stringify({ settings: skipSettings }),
+      });
+      onComplete(groupData, skipSettings);
+    } finally {
+      setLoading(false);
+    }
   };
 
-  /* ─── Styles ─────────────────────────────────────────────────────────────── */
+  const canProceed = step === 1 ? familyName.trim().length >= 2 : true;
 
-  const inputStyle = {
-    border: '1.5px solid #c8d8c8',
-    backgroundColor: '#f2f6f2',
-    color: '#2c2420',
-    borderRadius: '12px',
-    padding: '12px 16px',
-    fontSize: '14px',
-    outline: 'none',
-    width: '100%',
-  } as const;
+  /* ─── Step meta ──────────────────────────────────────────────────────────── */
+
+  const STEP_META: { title: string; sub: string }[] = [
+    { title: 'Wie heisst dein Haushalt?', sub: 'So findest du deine Gruppe wieder.' },
+    { title: 'Wo kocht ihr?',             sub: 'Für wetterbasierte Vorschläge.'     },
+    { title: 'Wer isst mit?',             sub: 'Für die richtigen Portionen.'       },
+    { title: 'Wie ernährt ihr euch?',     sub: 'Du kannst das jederzeit ändern.'    },
+    { title: 'Allergien?',               sub: 'Solche Zutaten blenden wir aus.'    },
+    { title: 'Wie oft kaufst du ein?',   sub: 'Wir gruppieren die Einkaufsliste passend.' },
+  ];
+  const { title, sub } = STEP_META[step - 1];
+
+  /* ─── Shared input style ─────────────────────────────────────────────────── */
+
+  const inp: React.CSSProperties = {
+    width: '100%', padding: '12px 16px',
+    border: '1.5px solid #e0d8ce', borderRadius: '12px',
+    background: '#faf7f2', color: '#271f1a', fontSize: '15px', outline: 'none',
+  };
+
+  /* ─── Stepper row ─────────────────────────────────────────────────────────── */
+
+  const StepperRow = ({ label, value, onDec, onInc }: { label: string; value: number; onDec: () => void; onInc: () => void }) => (
+    <div className="flex items-center justify-between px-5 py-4 rounded-2xl" style={{ border: '1.5px solid #e0d8ce', background: '#faf7f2' }}>
+      <span className="text-sm font-semibold" style={{ color: '#271f1a' }}>{label}</span>
+      <div className="flex items-center gap-4">
+        <button onClick={onDec} className="w-8 h-8 rounded-full flex items-center justify-center text-lg font-bold" style={{ border: '1.5px solid #e0d8ce', color: '#5c5048' }}>−</button>
+        <span className="text-base font-bold w-5 text-center" style={{ color: '#271f1a' }}>{value}</span>
+        <button onClick={onInc} className="w-8 h-8 rounded-full flex items-center justify-center text-lg font-bold" style={{ border: '1.5px solid #e0d8ce', color: '#5c5048' }}>+</button>
+      </div>
+    </div>
+  );
+
+  /* ─── Render ─────────────────────────────────────────────────────────────── */
 
   return (
-    <div
-      className="fixed inset-0 z-[60] flex items-center justify-center p-4"
-      style={{ backgroundColor: 'rgba(44,36,32,0.65)', backdropFilter: 'blur(6px)' }}
-    >
-      <div className="w-full max-w-lg rounded-3xl shadow-2xl overflow-hidden bg-white">
+    <div className="fixed inset-0 z-[60] flex items-center justify-center p-4" style={{ background: 'rgba(39,31,26,0.7)', backdropFilter: 'blur(8px)' }}>
+      <div className="flex overflow-hidden rounded-3xl shadow-2xl" style={{ width: 'min(820px,95vw)', height: 'min(580px,90vh)', background: '#fff' }}>
 
-        {/* Header */}
-        <div className="px-6 pt-6 pb-5" style={{ backgroundColor: '#4a7a4e' }}>
-          <div className="flex items-center justify-between mb-3">
-            <h2 className="text-lg font-bold text-white">Willkommen bei MahlZeit!</h2>
-            <span className="text-xs font-semibold px-2 py-0.5 rounded-full" style={{ backgroundColor: 'rgba(255,255,255,0.2)', color: '#c8e0c8' }}>
-              Schritt {step} / {TOTAL}
-            </span>
+        {/* ── Left panel ─────────────────────────────────────────────────── */}
+        <div className="hidden sm:flex flex-col flex-shrink-0 p-8" style={{ width: '42%', background: '#271f1a' }}>
+          {/* Logo */}
+          <div className="text-base font-black tracking-tight" style={{ color: '#fff', letterSpacing: '-0.03em' }}>
+            Mahl<span style={{ color: '#d9543b' }}>Zeit</span>
           </div>
-          {/* Progress bar */}
-          <div className="h-1.5 rounded-full overflow-hidden" style={{ backgroundColor: 'rgba(255,255,255,0.25)' }}>
-            <div
-              className="h-full rounded-full transition-all duration-300"
-              style={{ width: `${(step / TOTAL) * 100}%`, backgroundColor: '#fff' }}
-            />
+
+          <div style={{ flex: 1 }} />
+
+          {/* Welcome text */}
+          <h1 className="text-4xl font-black leading-tight mb-3" style={{ color: '#fff' }}>Willkommen.</h1>
+          <p className="text-sm leading-relaxed" style={{ color: '#9a8c80' }}>
+            In sechs Schritten zu deinem persönlichen Menüplaner — danach plant MahlZeit deine Woche fast von allein.
+          </p>
+
+          {/* Progress dots */}
+          <div className="flex items-center gap-2 mt-8">
+            {Array.from({ length: TOTAL }, (_, i) => {
+              const n = i + 1;
+              return (
+                <div key={n} style={{
+                  height: 8, borderRadius: 4, transition: 'all 0.25s',
+                  width: n === step ? 20 : 8,
+                  background: n === step ? '#d9543b' : n < step ? 'rgba(255,255,255,0.45)' : 'rgba(255,255,255,0.15)',
+                }} />
+              );
+            })}
           </div>
         </div>
 
-        {/* Body */}
-        <div className="px-6 py-6">
+        {/* ── Right panel ────────────────────────────────────────────────── */}
+        <div className="flex flex-col flex-1 min-w-0" style={{ background: '#fff' }}>
 
-          {error && (
-            <div className="mb-4 px-4 py-3 rounded-xl text-sm" style={{ backgroundColor: '#fce4ec', color: '#c62828' }}>
-              {error}
-            </div>
-          )}
+          {/* Skip */}
+          <div className="flex justify-end px-6 pt-4 pb-0 flex-shrink-0">
+            <button onClick={handleSkip} className="text-sm transition-opacity hover:opacity-60" style={{ color: '#9a8c80' }}>
+              Überspringen
+            </button>
+          </div>
 
-          {/* ── Step 1: Familienname ── */}
-          {step === 1 && (
-            <div className="space-y-4">
-              <div>
-                <h3 className="text-base font-bold mb-1" style={{ color: '#2c2420' }}>Wie heisst deine Familie?</h3>
-                <p className="text-sm mb-4" style={{ color: '#9c8c84' }}>
-                  Der Name erscheint im Menüplan und auf Einladungen an Familienmitglieder.
-                </p>
-              </div>
+          {/* Step content */}
+          <div className="flex-1 overflow-y-auto px-8 py-4">
+
+            <p className="text-xs font-bold tracking-widest mb-2" style={{ color: '#d9543b', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+              SCHRITT {step} VON {TOTAL}
+            </p>
+            <h2 className="text-2xl font-extrabold mb-1 leading-snug" style={{ color: '#271f1a' }}>{title}</h2>
+            <p className="text-sm mb-6" style={{ color: '#5c5048' }}>{sub}</p>
+
+            {error && (
+              <div className="mb-4 px-4 py-3 rounded-xl text-sm" style={{ background: '#fce4ec', color: '#c62828' }}>{error}</div>
+            )}
+
+            {/* ── Step 1: Familienname ── */}
+            {step === 1 && (
               <input
-                type="text"
-                value={familyName}
-                onChange={e => setFamilyName(e.target.value)}
-                autoFocus
+                type="text" autoFocus
+                value={familyName} onChange={e => setFamilyName(e.target.value)}
+                onKeyDown={e => { if (e.key === 'Enter' && canProceed) setStep(2); }}
+                placeholder="Familie Keller"
+                style={inp}
                 maxLength={60}
-                placeholder="z.B. Familie Muster"
-                style={inputStyle}
               />
-            </div>
-          )}
+            )}
 
-          {/* ── Step 2: Wohnort ── */}
-          {step === 2 && (
-            <div className="space-y-4">
-              <div>
-                <h3 className="text-base font-bold mb-1" style={{ color: '#2c2420' }}>Wo wohnst du?</h3>
-                <p className="text-sm mb-4" style={{ color: '#9c8c84' }}>
-                  Der Menüplan berücksichtigt dein Wetter und macht passende Menüvorschläge — z.B. Suppen an kalten Tagen.
-                </p>
-              </div>
+            {/* ── Step 2: Wohnort ── */}
+            {step === 2 && (
               <input
-                type="text"
-                value={location}
-                onChange={e => setLocation(e.target.value)}
-                autoFocus
-                placeholder="z.B. Luzern, Schweiz"
-                style={inputStyle}
+                type="text" autoFocus
+                value={location} onChange={e => setLocation(e.target.value)}
+                onKeyDown={e => { if (e.key === 'Enter') setStep(3); }}
+                placeholder="Zürich"
+                style={inp}
               />
-              <p className="text-xs" style={{ color: '#9c8c84' }}>
-                Optional — kann jederzeit in den Einstellungen geändert werden.
-              </p>
-            </div>
-          )}
+            )}
 
-          {/* ── Step 3: Portionen ── */}
-          {step === 3 && (
-            <div className="space-y-4">
-              <div>
-                <h3 className="text-base font-bold mb-1" style={{ color: '#2c2420' }}>Wie viele Personen kochst du für?</h3>
-                <p className="text-sm mb-4" style={{ color: '#9c8c84' }}>
-                  Anzahl Erwachsene im Haushalt — Rezepte werden entsprechend skaliert.
-                </p>
+            {/* ── Step 3: Haushalt ── */}
+            {step === 3 && (
+              <div className="space-y-3">
+                <StepperRow label="Erwachsene" value={adults}     onDec={() => setAdults(Math.max(1, adults - 1))}         onInc={() => setAdults(Math.min(10, adults + 1))} />
+                <StepperRow label="Kinder"     value={childCount} onDec={() => setChildCount(Math.max(0, childCount - 1))} onInc={() => setChildCount(Math.min(10, childCount + 1))} />
               </div>
-              <div className="flex items-center gap-5 justify-center py-4">
-                <button
-                  onClick={() => setAdults(Math.max(1, adults - 1))}
-                  className="w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold transition-all"
-                  style={{ border: '2px solid #e0d8ce', color: '#5a4e48' }}
-                >
-                  –
-                </button>
-                <div className="text-center">
-                  <span className="text-5xl font-black" style={{ color: '#2c2420' }}>{adults}</span>
-                  <p className="text-xs mt-1" style={{ color: '#9c8c84' }}>
-                    {adults === 1 ? 'Person' : 'Personen'}
-                  </p>
-                </div>
-                <button
-                  onClick={() => setAdults(Math.min(10, adults + 1))}
-                  className="w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold transition-all"
-                  style={{ border: '2px solid #e0d8ce', color: '#5a4e48' }}
-                >
-                  +
-                </button>
-              </div>
-              <p className="text-xs text-center" style={{ color: '#9c8c84' }}>
-                Kinder kannst du später unter Einstellungen → Haushaltsgrösse erfassen.
-              </p>
-            </div>
-          )}
+            )}
 
-          {/* ── Step 4: Ernährungsweise ── */}
-          {step === 4 && (
-            <div className="space-y-4">
-              <div>
-                <h3 className="text-base font-bold mb-1" style={{ color: '#2c2420' }}>Wie esst ihr?</h3>
-                <p className="text-sm mb-4" style={{ color: '#9c8c84' }}>
-                  Das filtert die Rezeptvorschläge und den Menüplan-Generator.
-                </p>
-              </div>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-                {DIET_OPTIONS.map(({ value, emoji, label, sub }) => {
-                  const isActive = diet === value;
+            {/* ── Step 4: Ernährungsweise ── */}
+            {step === 4 && (
+              <div className="flex flex-wrap gap-2">
+                {DIET_OPTIONS.map(({ value, label }) => {
+                  const active = diet === value;
                   return (
                     <button
                       key={value}
                       onClick={() => setDiet(value)}
-                      className="flex flex-col items-center gap-1 p-3 rounded-2xl border-2 text-center transition-all"
-                      style={isActive
-                        ? { borderColor: '#4a7a4e', backgroundColor: '#e8f2e8' }
-                        : { borderColor: '#e0d8ce' }
+                      className="px-4 py-2 rounded-full text-sm font-semibold transition-all"
+                      style={active
+                        ? { border: '1.5px solid #d9543b', background: 'rgba(217,84,59,0.07)', color: '#d9543b' }
+                        : { border: '1.5px solid #e0d8ce', background: '#fff', color: '#271f1a' }
                       }
                     >
-                      <span className="text-2xl">{emoji}</span>
-                      <p className="text-xs font-semibold" style={{ color: isActive ? '#4a7a4e' : '#2c2420' }}>{label}</p>
-                      <p className="text-[10px]" style={{ color: '#9c8c84' }}>{sub}</p>
+                      {label}
                     </button>
                   );
                 })}
               </div>
-            </div>
-          )}
+            )}
 
-          {/* ── Step 5: Allergien & Abneigungen ── */}
-          {step === 5 && (
-            <div className="space-y-4">
-              <div>
-                <h3 className="text-base font-bold mb-1" style={{ color: '#2c2420' }}>Allergien & Abneigungen</h3>
-                <p className="text-sm mb-4" style={{ color: '#9c8c84' }}>
-                  Rezepte mit diesen Zutaten werden ausgegraut und nicht vorgeschlagen.
-                </p>
+            {/* ── Step 5: Allergien ── */}
+            {step === 5 && (
+              <div className="flex flex-wrap gap-2">
+                {ALLERGEN_CHIPS.map(({ id, label }) => {
+                  const active = allergies.includes(id);
+                  return (
+                    <button
+                      key={id}
+                      onClick={() => toggleAllergy(id)}
+                      className="px-4 py-2 rounded-full text-sm font-semibold transition-all"
+                      style={active
+                        ? { border: '1.5px solid #d9543b', background: 'rgba(217,84,59,0.07)', color: '#d9543b' }
+                        : { border: '1.5px solid #e0d8ce', background: '#fff', color: '#271f1a' }
+                      }
+                    >
+                      {label}
+                    </button>
+                  );
+                })}
+                <button
+                  onClick={selectNone}
+                  className="px-4 py-2 rounded-full text-sm font-semibold transition-all"
+                  style={noneSelected
+                    ? { border: '1.5px solid #d9543b', background: 'rgba(217,84,59,0.07)', color: '#d9543b' }
+                    : { border: '1.5px solid #e0d8ce', background: '#fff', color: '#271f1a' }
+                  }
+                >
+                  Keine
+                </button>
               </div>
+            )}
 
-              <div>
-                <p className="text-xs font-semibold mb-2" style={{ color: '#5a4e48' }}>Allergene & Intoleranzen</p>
-                <div className="flex flex-wrap gap-2">
-                  {ALLERGENS.map(({ id, label, emoji }) => {
-                    const active = allergies.includes(id);
-                    return (
-                      <button
-                        key={id}
-                        onClick={() => toggleAllergy(id)}
-                        className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold border-2 transition-all"
-                        style={active
-                          ? { borderColor: '#b5614a', backgroundColor: '#fce8e3', color: '#b5614a' }
-                          : { borderColor: '#e0d8ce', backgroundColor: '#f7f4ee', color: '#5a4e48' }
-                        }
-                      >
-                        <span>{emoji}</span>{label}
-                        {active && <X size={10} />}
-                      </button>
-                    );
-                  })}
-                </div>
+            {/* ── Step 6: Einkaufsrhythmus ── */}
+            {step === 6 && (
+              <div className="space-y-3">
+                {SHOPPING_OPTIONS.map(({ value, label, sub: optSub }) => {
+                  const active = shopping === value;
+                  return (
+                    <button
+                      key={value}
+                      onClick={() => setShopping(value)}
+                      className="w-full flex items-center gap-4 px-5 py-4 rounded-2xl text-left transition-all"
+                      style={active
+                        ? { border: '1.5px solid #d9543b', background: 'rgba(217,84,59,0.05)' }
+                        : { border: '1.5px solid #e0d8ce', background: '#fff' }
+                      }
+                    >
+                      <div className="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center" style={{ border: `2px solid ${active ? '#d9543b' : '#e0d8ce'}` }}>
+                        {active && <div className="w-2.5 h-2.5 rounded-full" style={{ background: '#d9543b' }} />}
+                      </div>
+                      <div>
+                        <p className="text-sm font-bold" style={{ color: '#271f1a' }}>{label}</p>
+                        <p className="text-xs" style={{ color: '#9a8c80' }}>{optSub}</p>
+                      </div>
+                    </button>
+                  );
+                })}
               </div>
+            )}
+          </div>
 
-              <div>
-                <p className="text-xs font-semibold mb-2" style={{ color: '#5a4e48' }}>Sonstige Abneigungen</p>
-                <div className="flex flex-wrap gap-2">
-                  {PRESET_AVERSIONS.map(p => {
-                    const id = p.toLowerCase();
-                    const active = allergies.includes(id);
-                    return (
-                      <button
-                        key={id}
-                        onClick={() => toggleAllergy(id)}
-                        className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold border-2 transition-all"
-                        style={active
-                          ? { borderColor: '#b5614a', backgroundColor: '#fce8e3', color: '#b5614a' }
-                          : { borderColor: '#e0d8ce', backgroundColor: '#f7f4ee', color: '#5a4e48' }
-                        }
-                      >
-                        {p}
-                        {active && <X size={10} />}
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
+          {/* Navigation */}
+          <div className="flex items-center justify-between px-8 pb-7 pt-4 flex-shrink-0">
+            {step > 1 ? (
+              <button
+                onClick={() => setStep(s => s - 1)}
+                className="flex items-center gap-1.5 px-4 py-2.5 rounded-full text-sm font-semibold transition-opacity hover:opacity-70"
+                style={{ border: '1.5px solid #e0d8ce', color: '#5c5048' }}
+              >
+                ‹ Zurück
+              </button>
+            ) : <div />}
 
-              <p className="text-xs" style={{ color: '#9c8c84' }}>
-                Weitere Abneigungen kannst du später in den Einstellungen ergänzen.
-              </p>
-            </div>
-          )}
-
-          {/* ── Step 6: Einkaufsrhythmus ── */}
-          {step === 6 && (
-            <div className="space-y-4">
-              <div>
-                <h3 className="text-base font-bold mb-1" style={{ color: '#2c2420' }}>Wann kaufst du ein?</h3>
-                <p className="text-sm mb-4" style={{ color: '#9c8c84' }}>
-                  Ab welchem Wochentag soll automatisch die nächste Woche angezeigt werden?
-                </p>
-              </div>
-
-              {/* Frequenz-Auswahl */}
-              <div className="grid grid-cols-2 gap-3">
-                {([
-                  { val: 'once' as const,  label: '1× pro Woche',    sub: 'Wochentag wählen',         emoji: '🛒' },
-                  { val: 'multi' as const, label: 'Mehrmals/Woche',  sub: 'Im Planer einstellbar',    emoji: '🔄' },
-                ] as const).map(({ val, label, sub, emoji }) => (
-                  <button
-                    key={val}
-                    onClick={() => {
-                      setShoppingFreq(val);
-                      if (val === 'once' && shoppingDays.length > 1) setShoppingDays([shoppingDays[0] ?? 1]);
-                    }}
-                    className="flex flex-col items-center gap-1 p-4 rounded-2xl border-2 text-center transition-all"
-                    style={shoppingFreq === val
-                      ? { borderColor: '#4a7a4e', backgroundColor: '#e8f2e8' }
-                      : { borderColor: '#e0d8ce' }
-                    }
-                  >
-                    <span className="text-2xl">{emoji}</span>
-                    <p className="text-xs font-semibold" style={{ color: shoppingFreq === val ? '#4a7a4e' : '#2c2420' }}>{label}</p>
-                    <p className="text-[10px]" style={{ color: '#9c8c84' }}>{sub}</p>
-                  </button>
-                ))}
-              </div>
-
-              {/* Tagesauswahl — nur bei 1× pro Woche */}
-              {shoppingFreq === 'once' && (
-                <div>
-                  <p className="text-xs font-semibold mb-2" style={{ color: '#5a4e48' }}>
-                    Ab welchem Tag beginnt deine neue Planungswoche?
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    {DAY_OPTIONS.map(({ value, label }) => {
-                      const active = shoppingDays.includes(value);
-                      return (
-                        <button
-                          key={value}
-                          onClick={() => setShoppingDays([value])}
-                          className="px-3 py-1.5 rounded-xl text-xs font-semibold border-2 transition-all"
-                          style={active
-                            ? { borderColor: '#4a7a4e', backgroundColor: '#e8f2e8', color: '#4a7a4e' }
-                            : { borderColor: '#e0d8ce', color: '#5a4e48' }
-                          }
-                        >
-                          {label}
-                        </button>
-                      );
-                    })}
-                  </div>
-                </div>
-              )}
-
-              {/* Hinweis bei mehrmals/Woche */}
-              {shoppingFreq === 'multi' && (
-                <div className="px-4 py-3 rounded-xl text-xs" style={{ backgroundColor: '#e8f2e8', color: '#2e5a32' }}>
-                  <strong>Tipp:</strong> Im Menüplan kannst du unter «Einkaufslisten» die Woche auf mehrere
-                  Listen aufteilen — z.B. Mo–Mi und Do–Sa.
-                </div>
-              )}
-            </div>
-          )}
+            {step < TOTAL ? (
+              <button
+                onClick={() => setStep(s => s + 1)}
+                disabled={!canProceed}
+                className="flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-bold text-white transition-all disabled:opacity-40"
+                style={{ background: '#d9543b' }}
+              >
+                Weiter ›
+              </button>
+            ) : (
+              <button
+                onClick={handleFinish}
+                disabled={loading}
+                className="flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-bold text-white transition-all disabled:opacity-50"
+                style={{ background: '#d9543b' }}
+              >
+                {loading
+                  ? <><Loader2 size={15} className="animate-spin" /> Wird gespeichert…</>
+                  : <><Check size={15} /> Loslegen</>
+                }
+              </button>
+            )}
+          </div>
         </div>
 
-        {/* Footer */}
-        <div className="px-6 pb-6 flex items-center justify-between gap-3">
-          {step > 1 ? (
-            <button
-              onClick={() => setStep(s => s - 1)}
-              className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-sm font-semibold transition-opacity hover:opacity-70"
-              style={{ border: '1.5px solid #e0d8ce', color: '#5a4e48' }}
-            >
-              <ArrowLeft size={15} />
-              Zurück
-            </button>
-          ) : <div />}
-
-          {step < TOTAL ? (
-            <button
-              onClick={() => setStep(s => s + 1)}
-              disabled={!canProceed()}
-              className="flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-bold text-white transition-all disabled:opacity-40"
-              style={{ backgroundColor: '#4a7a4e' }}
-            >
-              Weiter
-              <ArrowRight size={15} />
-            </button>
-          ) : (
-            <button
-              onClick={handleFinish}
-              disabled={loading}
-              className="flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-bold text-white transition-all disabled:opacity-50"
-              style={{ backgroundColor: '#4a7a4e' }}
-            >
-              {loading
-                ? <><Loader2 size={15} className="animate-spin" /> Wird gespeichert…</>
-                : <><Check size={15} /> Loslegen</>
-              }
-            </button>
-          )}
-        </div>
       </div>
     </div>
   );

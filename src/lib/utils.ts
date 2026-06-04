@@ -189,16 +189,16 @@ export interface AmountConstraints { min: number; max: number; step: number; }
 
 export function getAmountConstraints(unit: string): AmountConstraints {
   switch (unit.toLowerCase().trim()) {
-    case 'g':                                      return { min: 0.1,  max: 999,  step: 0.1  };
-    case 'kg':                                     return { min: 0.1,  max: 100,  step: 0.1  };
-    case 'ml':                                     return { min: 1,    max: 999,  step: 0.25 };
-    case 'dl':                                     return { min: 0.1,  max: 99,   step: 0.25 };
-    case 'l':                                      return { min: 0.1,  max: 100,  step: 0.1  };
-    case 'stk': case 'stk.': case 'stück':        return { min: 0.5,  max: 1000, step: 0.5  };
-    case 'prise': case 'prisen':                   return { min: 1,    max: 10,   step: 1    };
-    case 'el': case 'el.':                         return { min: 0.5,  max: 20,   step: 0.1  };
-    case 'tl': case 'tl.':                         return { min: 0.5,  max: 20,   step: 0.1  };
-    case 'tasse':                                  return { min: 0.25, max: 10,   step: 0.25 };
-    default:                                       return { min: 0.5,  max: 100,  step: 0.5  };
+    case 'g':                                      return { min: 0, max: 999,  step: 0.1  };
+    case 'kg':                                     return { min: 0, max: 100,  step: 0.1  };
+    case 'ml':                                     return { min: 0, max: 999,  step: 0.25 };
+    case 'dl':                                     return { min: 0, max: 99,   step: 0.25 };
+    case 'l':                                      return { min: 0, max: 100,  step: 0.1  };
+    case 'stk': case 'stk.': case 'stück':        return { min: 0, max: 1000, step: 0.5  };
+    case 'prise': case 'prisen':                   return { min: 0, max: 10,   step: 1    };
+    case 'el': case 'el.':                         return { min: 0, max: 20,   step: 0.1  };
+    case 'tl': case 'tl.':                         return { min: 0, max: 20,   step: 0.1  };
+    case 'tasse':                                  return { min: 0, max: 10,   step: 0.25 };
+    default:                                       return { min: 0, max: 100,  step: 0.5  };
   }
 }
