@@ -10,5 +10,67 @@
     "registeredAt": "2026-05-24T23:08:53.369Z",
     "groupId": "g_1779664133369_admin",
     "groupRole": "owner"
+  },
+  {
+    "id": "u_1780612014462_u5hjs",
+    "firstName": "Test",
+    "lastName": "Test",
+    "email": "co@o-v-k.ch",
+    "passwordHash": "$2b$10$8BhuTaNFBkzsfl8oKHDhN.v3UAVMA4/BBdgxf276iXiAYyqbGrZUi",
+    "plan": "lifetime",
+    "status": "pending",
+    "registeredAt": "2026-06-04T22:39:39.734Z",
+    "confirmationToken": "95d2f617373154bdbf180c051fed93003e3af92fa7db351bd7b2a4d6a6dc23b4",
+    "confirmationTokenExpiresAt": "2026-06-05T22:26:54.462Z",
+    "groupId": "g_1780612779673_gwhyc",
+    "groupRole": "owner"
+  },
+  {
+    "id": "u_1780613192909_8658c2",
+    "firstName": "Test",
+    "lastName": "Tester",
+    "email": "info@abrimmo.ch",
+    "passwordHash": "$2b$10$oXCVzYqA7UqwqEaVZpBG1eARf81s4BhvvN9n4Su2p0t9K.gYF1Naa",
+    "plan": "abo",
+    "status": "pending",
+    "registeredAt": "2026-06-04T22:46:32.909Z",
+    "groupId": "g_1780613192839_ufdnb",
+    "groupRole": "owner"
+  },
+  {
+    "id": "u_1780613258912_598bed",
+    "firstName": "test",
+    "lastName": "tester",
+    "email": "alp@alp.ch",
+    "passwordHash": "$2b$10$aoHPbrgbme7zGCnqNRSE1us.Y6uoCvBtAbyMoCxg40uCivw/E1xYy",
+    "plan": "yearly",
+    "status": "pending",
+    "registeredAt": "2026-06-04T22:47:38.912Z",
+    "groupId": "g_1780613258848_m882q",
+    "groupRole": "owner"
+  },
+  {
+    "id": "u_1780613380522_21075f",
+    "firstName": "Test",
+    "lastName": "Tester",
+    "email": "test@test.ch",
+    "passwordHash": "$2b$10$ozyJ48JbD8Y003u9p5IbwOb6UhtFIo8.JjsR26R4MUB2jDT1UVo0S",
+    "plan": "yearly",
+    "status": "pending",
+    "registeredAt": "2026-06-04T22:49:40.522Z",
+    "groupId": "g_1780613380460_9lzfd",
+    "groupRole": "owner"
+  },
+  {
+    "id": "u_1780613413368_be90fc",
+    "firstName": "test",
+    "lastName": "tester",
+    "email": "test@tester.ch",
+    "passwordHash": "$2b$10$7IWuJaG/c4nOdRwQ8FcR6e2kklFGwVAbKQ0kDdf9LPrmSqXW.cSou",
+    "plan": "lifetime",
+    "status": "pending",
+    "registeredAt": "2026-06-04T22:50:13.369Z",
+    "groupId": "g_1780613413293_yzous",
+    "groupRole": "owner"
   }
 ]

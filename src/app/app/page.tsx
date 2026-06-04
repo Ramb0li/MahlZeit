@@ -45,7 +45,7 @@ export default async function AppPage({ searchParams }: PageProps) {
 
   const isPremium =
     session.status === 'active' &&
-    (session.plan === 'lifetime' || session.plan === 'abo' || session.plan === 'beta');
+    (session.plan === 'lifetime' || session.plan === 'abo' || session.plan === 'yearly' || session.plan === 'beta');
 
   const groupRole = user?.groupRole ?? session.groupRole ?? 'member';
 
@@ -56,6 +56,7 @@ export default async function AppPage({ searchParams }: PageProps) {
       constraints={constraints}
       initialTab={initialTab}
       isPremium={isPremium}
+      userPlan={session.plan}
       isAdmin={session.isAdmin}
       group={group}
       groupRole={groupRole}

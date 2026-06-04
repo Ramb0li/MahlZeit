@@ -53,10 +53,13 @@ function AuthInner() {
   const initialTab  = params.get('tab') === 'register' ? 'register' : 'login';
   const initialPlan = (params.get('plan') as PlanId) ?? 'trial';
 
-  const confirmed  = params.get('confirmed') === '1';
-  const tokenError = params.get('error');
-  const resetToken = params.get('token');
-  const isResetMode = params.get('mode') === 'reset' && !!resetToken;
+  const confirmed     = params.get('confirmed') === '1';
+  const setupSuccess  = params.get('setup') === '1';
+  const stripeError   = params.get('stripe_error') === '1';
+  const tokenError    = params.get('error');
+  const resetToken    = params.get('token');
+  const isSetupMode   = params.get('setup') === '1' && !!resetToken;
+  const isResetMode   = params.get('mode') === 'reset' && !!resetToken;
 
   const [tab,     setTab]     = useState<'login' | 'register'>(initialTab);
   const [mode,    setMode]    = useState<'default' | 'forgot' | 'reset'>(isResetMode ? 'reset' : 'default');
@@ -111,13 +114,17 @@ function AuthInner() {
   const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault();
     setError(''); setResendNotice('');
-    if (regPassword !== regConfirm) { setError('Passwörter stimmen nicht überein.'); return; }
-    if (regPassword.length < 8)     { setError('Passwort muss mindestens 8 Zeichen haben.'); return; }
+    if (!isPaidPlan) {
+      if (regPassword !== regConfirm) { setError('Passwörter stimmen nicht überein.'); return; }
+      if (regPassword.length < 8)     { setError('Passwort muss mindestens 8 Zeichen haben.'); return; }
+    }
     setLoading(true);
     try {
+      const body: Record<string, string> = { firstName, lastName, email: regEmail, plan };
+      if (!isPaidPlan) body.password = regPassword;
       const res  = await fetch('/api/auth/register', {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body:   JSON.stringify({ firstName, lastName, email: regEmail, password: regPassword, plan }),
+        body:   JSON.stringify(body),
       });
       const data = await res.json();
       if (!res.ok) { setError(data.error ?? 'Fehler'); return; }
@@ -165,17 +172,19 @@ function AuthInner() {
       });
       const data = await res.json();
       if (!res.ok) { setError(data.error ?? 'Fehler'); return; }
+      // Neues Konto nach Stripe-Zahlung: direkt weiterleiten
+      if (data.redirect) { window.location.href = data.redirect; return; }
       setResetDone(true);
     } finally { setLoading(false); }
   };
 
+  const isPaidPlan = plan !== 'trial';
+
   const submitLabel =
-    loading ? 'Wird verarbeitet…' :
-    tab === 'login' ? 'Anmelden →' :
+    loading          ? 'Wird verarbeitet…'   :
+    tab === 'login'  ? 'Anmelden →'          :
     plan === 'trial' ? 'Kostenlos starten →' :
-    plan === 'lifetime' ? 'Jetzt kaufen (CHF 35) →' :
-    plan === 'yearly' ? 'Abo starten (CHF 24/J.) →' :
-    'Abo starten (CHF 3/Mt.) →';
+    'Weiter zu Stripe →';
 
   return (
     <div className="mz-auth-bg">
@@ -219,8 +228,11 @@ function AuthInner() {
             ) : (
               <>
                 <div className="mz-auth-forgot-head">
-                  <h3>Neues Passwort</h3>
-                  <p>Wähle ein sicheres Passwort mit mindestens 8 Zeichen.</p>
+                  <h3>{isSetupMode ? 'Konto einrichten' : 'Neues Passwort'}</h3>
+                  <p>{isSetupMode
+                    ? 'Fast geschafft! Lege dein Passwort fest und lege direkt los.'
+                    : 'Wähle ein sicheres Passwort mit mindestens 8 Zeichen.'
+                  }</p>
                 </div>
                 {error && <Banner type="error" onClose={() => setError('')}>{error}</Banner>}
                 <form onSubmit={handleReset} className="mz-auth-form">
@@ -284,6 +296,16 @@ function AuthInner() {
             {confirmed && (
               <Banner type="success" onClose={() => {}}>
                 <strong>E-Mail bestätigt!</strong> Du kannst dich jetzt anmelden.
+              </Banner>
+            )}
+            {setupSuccess && !resetToken && (
+              <Banner type="success" onClose={() => {}}>
+                <strong>Zahlung erfolgreich!</strong> Wir haben dir eine E-Mail mit deinem Einrichtungslink gesendet. Bitte prüfe dein Postfach.
+              </Banner>
+            )}
+            {stripeError && (
+              <Banner type="error" onClose={() => {}}>
+                <strong>Zahlung konnte nicht verarbeitet werden.</strong> Bitte versuche es erneut oder kontaktiere uns.
               </Banner>
             )}
             {tokenError === 'invalid_token' && (
@@ -376,16 +398,20 @@ function AuthInner() {
                   <input type="email" autoComplete="email" placeholder="deine@email.ch"
                     value={regEmail} onChange={e => setRegEmail(e.target.value)} required />
                 </div>
-                <div className="mz-auth-field">
-                  <label>Passwort (mind. 8 Zeichen)</label>
-                  <input type="password" autoComplete="new-password" placeholder="••••••••"
-                    value={regPassword} onChange={e => setRegPassword(e.target.value)} required />
-                </div>
-                <div className="mz-auth-field">
-                  <label>Passwort bestätigen</label>
-                  <input type="password" autoComplete="new-password" placeholder="••••••••"
-                    value={regConfirm} onChange={e => setRegConfirm(e.target.value)} required />
-                </div>
+                {!isPaidPlan && (
+                  <>
+                    <div className="mz-auth-field">
+                      <label>Passwort (mind. 8 Zeichen)</label>
+                      <input type="password" autoComplete="new-password" placeholder="••••••••"
+                        value={regPassword} onChange={e => setRegPassword(e.target.value)} required />
+                    </div>
+                    <div className="mz-auth-field">
+                      <label>Passwort bestätigen</label>
+                      <input type="password" autoComplete="new-password" placeholder="••••••••"
+                        value={regConfirm} onChange={e => setRegConfirm(e.target.value)} required />
+                    </div>
+                  </>
+                )}
 
                 {/* Plan selection */}
                 <div>
@@ -412,9 +438,9 @@ function AuthInner() {
                   {submitLabel}
                 </button>
                 <p style={{ fontSize: 11, textAlign: 'center', color: 'var(--muted)', margin: 0 }}>
-                  {plan === 'trial'
-                    ? '7 Tage gratis · kein automatisches Upgrade'
-                    : '🔒 Sichere Zahlung via Stripe'}
+                  {isPaidPlan
+                    ? 'Sichere Zahlung via Stripe · Passwort wird nach Zahlung per E-Mail eingerichtet'
+                    : '7 Tage gratis · kein automatisches Upgrade'}
                 </p>
                 <div className="mz-auth-divider">oder</div>
                 <button type="button" className="mz-auth-skip" onClick={() => setTab('login')}>

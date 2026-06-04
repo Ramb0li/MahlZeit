@@ -19,7 +19,7 @@ function getSecret() {
 
 export interface SessionPayload {
   email:      string;
-  plan:       'trial' | 'lifetime' | 'abo' | 'beta';
+  plan:       'trial' | 'lifetime' | 'abo' | 'yearly' | 'beta';
   status:     'active' | 'inactive' | 'pending';
   isAdmin:    boolean;
   groupId?:   string;

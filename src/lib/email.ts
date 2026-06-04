@@ -261,6 +261,78 @@ export async function sendPasswordResetEmail(
   }
 }
 
+// ─── Account Setup (nach Stripe-Zahlung) ────────────────────────────────────
+
+function setupHtml(firstName: string, setupUrl: string): string {
+  return mzEmailShell(`
+    <p style="font-size:16px;font-weight:600;color:#271f1a;margin:0 0 8px;">Hallo ${escapeHtml(firstName)},</p>
+    <p style="font-size:15px;line-height:1.65;color:#5c5048;margin:0 0 8px;">
+      <strong style="color:#4a7a4e;">Zahlung erfolgreich!</strong> Danke für dein Vertrauen in MahlZeit.
+    </p>
+    <p style="font-size:15px;line-height:1.65;color:#5c5048;margin:0 0 28px;">
+      Klicke auf den Button, um dein Passwort festzulegen und direkt loszulegen:
+    </p>
+    <div style="text-align:center;margin:0 0 28px;">
+      <a href="${setupUrl}" style="display:inline-block;background:#d9543b;color:#fff;padding:13px 32px;border-radius:999px;text-decoration:none;font-weight:700;font-size:15px;">
+        Konto einrichten &rarr;
+      </a>
+    </div>
+    <p style="font-size:13px;color:#9a8c80;line-height:1.6;margin:0 0 8px;">
+      Der Link ist <strong>24 Stunden</strong> gültig. Falls der Button nicht funktioniert, kopiere diesen Link:
+    </p>
+    <p style="font-size:12px;color:#9a8c80;word-break:break-all;margin:0 0 24px;">${setupUrl}</p>
+    <hr style="border:none;border-top:1px solid #e0d8ce;margin:24px 0;">
+    <p style="font-size:12px;color:#9a8c80;line-height:1.5;margin:0;">
+      Fragen? Schreib uns: <a href="mailto:info@o-v-k.ch" style="color:#9a8c80;">info@o-v-k.ch</a>
+    </p>
+  `);
+}
+
+function setupText(firstName: string, setupUrl: string): string {
+  return `Hallo ${firstName},
+
+Zahlung erfolgreich! Danke für dein Vertrauen in MahlZeit.
+
+Klicke auf den folgenden Link, um dein Passwort festzulegen und direkt loszulegen:
+
+${setupUrl}
+
+Der Link ist 24 Stunden gültig.
+
+Herzliche Grüsse
+Das MahlZeit-Team`;
+}
+
+export async function sendAccountSetupEmail(
+  firstName: string,
+  toEmail:   string,
+  token:     string,
+): Promise<void> {
+  const setupUrl = `${getAppUrl()}/auth?mode=reset&token=${encodeURIComponent(token)}&setup=1`;
+  const apiKey   = process.env.RESEND_API_KEY;
+
+  if (!apiKey) {
+    console.log(`\n[email] RESEND_API_KEY nicht gesetzt — Setup-URL:\n  ${setupUrl}\n  (User: ${toEmail})\n`);
+    return;
+  }
+
+  const { Resend } = await import('resend');
+  const resend     = new Resend(apiKey);
+
+  const { error } = await resend.emails.send({
+    from:    getFromEmail(),
+    to:      toEmail,
+    subject: 'Dein MahlZeit-Konto ist bereit — Passwort festlegen',
+    html:    setupHtml(firstName, setupUrl),
+    text:    setupText(firstName, setupUrl),
+  });
+
+  if (error) {
+    console.error('[email] Setup-Mail fehlgeschlagen:', error);
+    throw new Error('E-Mail-Versand fehlgeschlagen');
+  }
+}
+
 // ─── Confirmation ───────────────────────────────────────────────────────────
 
 export async function sendConfirmationEmail(user: AppUser, token: string): Promise<void> {

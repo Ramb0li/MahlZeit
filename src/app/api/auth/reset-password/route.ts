@@ -7,8 +7,9 @@ export const dynamic = 'force-dynamic';
  * aktualisiert den Passwort-Hash und invalidiert das Token sofort.
  */
 
-import { NextResponse }      from 'next/server';
-import { getUserByEmail, updateUser } from '@/lib/users';
+import { NextResponse }                                   from 'next/server';
+import { getUserByEmail, updateUser }                     from '@/lib/users';
+import { ADMIN_EMAIL, signToken, sessionCookieHeader }   from '@/lib/auth';
 
 // ─── Token-Storage (dieselbe Logik wie forgot-password) ─────────────────────
 
@@ -82,10 +83,40 @@ export async function POST(request: Request) {
     // Neuen Hash berechnen + User aktualisieren
     const { hash } = await import('bcryptjs');
     const passwordHash = await hash(password, 12);
-    await updateUser({ ...user, passwordHash });
+
+    const wasNewAccount = user.status === 'pending';
+    const updatedUser = {
+      ...user,
+      passwordHash,
+      // Neues Konto nach Stripe-Zahlung: jetzt aktivieren
+      status: wasNewAccount ? ('active' as const) : user.status,
+    };
+    await updateUser(updatedUser);
 
     // Token sofort invalidieren (Einmal-Use)
     await deleteToken(token);
+
+    // Neues Konto: direkt einloggen (JWT setzen + Redirect)
+    if (wasNewAccount) {
+      const jwt = await signToken({
+        email:     updatedUser.email,
+        plan:      updatedUser.plan,
+        status:    'active',
+        isAdmin:   updatedUser.email === ADMIN_EMAIL,
+        groupId:   updatedUser.groupId,
+        groupRole: updatedUser.groupRole,
+      });
+      return new NextResponse(
+        JSON.stringify({ ok: true, redirect: '/app' }),
+        {
+          status: 200,
+          headers: {
+            'Content-Type': 'application/json',
+            'Set-Cookie':   sessionCookieHeader(jwt),
+          },
+        }
+      );
+    }
 
     return NextResponse.json({ ok: true });
   } catch (err) {

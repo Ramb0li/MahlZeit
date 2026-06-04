@@ -4,7 +4,7 @@
  * - Production (Vercel):  reads/writes Upstash Redis
  */
 
-export type PlanType   = 'trial' | 'lifetime' | 'abo' | 'beta';
+export type PlanType   = 'trial' | 'lifetime' | 'abo' | 'yearly' | 'beta';
 export type UserStatus = 'active' | 'inactive' | 'pending';
 
 export interface AppUser {

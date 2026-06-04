@@ -124,6 +124,7 @@ interface SettingsViewProps {
   initialSettings: AppSettings;
   initialConstraints: DayConstraint[];
   isPremium?: boolean;
+  userPlan?: string;
   group?: Group | null;
   groupRole?: GroupRole;
   onSettingsChange?: (settings: AppSettings) => void;
@@ -135,6 +136,7 @@ export function SettingsView({
   initialSettings,
   initialConstraints,
   isPremium = false,
+  userPlan = 'trial',
   group = null,
   groupRole = 'member',
   onSettingsChange,
@@ -146,6 +148,8 @@ export function SettingsView({
   const [constraints, setConstraints]     = useState<DayConstraint[]>(initialConstraints);
   const [saved, setSaved]                 = useState(false);
   const [openSections, setOpenSections]   = useState<Set<string>>(new Set(['theme', 'meals']));
+  const [checkoutLoading, setCheckoutLoading] = useState<string | null>(null);
+  const [checkoutError, setCheckoutError]     = useState<string | null>(null);
   const [aversionSearch, setAversionSearch] = useState('');
 
   // Weather autocomplete
@@ -326,6 +330,25 @@ export function SettingsView({
   const removeConstraint = (id: string) =>
     setConstraints((prev) => prev.filter((c) => c.id !== id));
 
+  const handleCheckout = async (plan: 'abo' | 'yearly' | 'lifetime') => {
+    setCheckoutLoading(plan);
+    setCheckoutError(null);
+    try {
+      const res = await fetch('/api/stripe/checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ plan }),
+      });
+      const data = await res.json();
+      if (!res.ok) { setCheckoutError(data.error ?? 'Fehler beim Checkout'); return; }
+      window.location.href = data.url;
+    } catch {
+      setCheckoutError('Verbindungsfehler. Bitte erneut versuchen.');
+    } finally {
+      setCheckoutLoading(null);
+    }
+  };
+
   const handleSave = async () => {
     const locationChanged = settings.weather.location.trim() !== lastSavedLocationRef.current.trim();
     await fetch('/api/settings', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ settings, constraints }) });
@@ -343,9 +366,82 @@ export function SettingsView({
   // SettingsSection liest openSections/toggleSection via SectionCtx – stabile Modul-Referenz
   const Section = SettingsSection;
 
+  const PLAN_LABELS: Record<string, string> = {
+    trial: 'Testwoche', abo: 'Monatsabo', yearly: 'Jahresabo', lifetime: 'Lifetime', beta: 'Beta',
+  };
+
   return (
     <SectionCtx.Provider value={{ openSections, toggleSection }}>
     <div className="max-w-3xl space-y-3">
+
+      {/* ── Dein Plan ────────────────────────────────────────────────────── */}
+      <div style={{ ...sectionCard, padding: '20px 24px' }}>
+        <div className="flex items-center justify-between mb-1">
+          <h2 style={h2Style}>Dein Plan</h2>
+          <span
+            className="text-xs font-semibold px-2.5 py-1 rounded-full"
+            style={isPremium
+              ? { backgroundColor: '#e8f2e8', color: '#4a7a4e' }
+              : { backgroundColor: '#fef3cd', color: '#9a7a1e' }
+            }
+          >
+            {PLAN_LABELS[userPlan] ?? userPlan}
+          </span>
+        </div>
+        <p className="text-xs mb-4" style={{ color: '#9c8c84' }}>
+          {isPremium
+            ? userPlan === 'lifetime'
+              ? 'Danke — du hast lebenslangen Zugang zu MahlZeit.'
+              : 'Dein Abo ist aktiv.'
+            : 'Kostenlose Testphase — upgrade für unbegrenzten Zugang.'
+          }
+        </p>
+
+        {!isPremium && (
+          <>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-3">
+              {([
+                { plan: 'abo',      name: 'Monatsabo',  price: 'CHF 3',  per: '/ Monat',       desc: 'Monatlich kündbar' },
+                { plan: 'yearly',   name: 'Jahresabo',  price: 'CHF 30', per: '/ Jahr',         desc: '2 Monate gratis' },
+                { plan: 'lifetime', name: 'Lifetime',   price: 'CHF 99', per: 'einmalig',       desc: 'Für immer', featured: true },
+              ] as const).map(({ plan, name, price, per, desc, ...rest }) => { const featured = 'featured' in rest && rest.featured; return (
+                <button
+                  key={plan}
+                  onClick={() => handleCheckout(plan)}
+                  disabled={checkoutLoading !== null}
+                  className="flex flex-col items-start p-4 rounded-2xl border-2 text-left transition-all"
+                  style={featured
+                    ? { borderColor: '#d9543b', backgroundColor: '#fef7f5' }
+                    : { borderColor: '#e0d8ce', backgroundColor: '#fff9f3' }
+                  }
+                >
+                  {featured && (
+                    <span className="text-[10px] font-bold uppercase tracking-wide mb-1.5 px-2 py-0.5 rounded-full" style={{ backgroundColor: '#d9543b', color: '#fff' }}>
+                      Beliebt
+                    </span>
+                  )}
+                  <p className="font-semibold text-sm" style={{ color: '#271f1a' }}>{name}</p>
+                  <p className="text-lg font-bold mt-0.5" style={{ color: featured ? '#d9543b' : '#271f1a' }}>{price}</p>
+                  <p className="text-xs" style={{ color: '#9a8c80' }}>{per} · {desc}</p>
+                  <span
+                    className="mt-3 w-full text-center text-xs font-semibold py-1.5 rounded-lg transition-opacity"
+                    style={{
+                      backgroundColor: featured ? '#d9543b' : '#271f1a',
+                      color: '#fff',
+                      opacity: checkoutLoading === plan ? 0.6 : 1,
+                    }}
+                  >
+                    {checkoutLoading === plan ? 'Weiterleitung...' : 'Upgrade'}
+                  </span>
+                </button>
+              );} )}
+            </div>
+            {checkoutError && (
+              <p className="text-xs" style={{ color: '#c62828' }}>{checkoutError}</p>
+            )}
+          </>
+        )}
+      </div>
 
       {/* ── Haushaltsgrösse ──────────────────────────────────────────────── (war unten) */}
       <Section id="household" title="Haushaltsgrösse" sub={`Gesamtportionen: ${totalPortions()}`}>

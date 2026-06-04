@@ -12,5 +12,33 @@
     "nameSet": false,
     "ownerEmail": "co@o-v-k.ch",
     "createdAt": "2026-05-25T23:43:24.819Z"
+  },
+  {
+    "id": "g_1780613192839_ufdnb",
+    "name": "Tests Familie",
+    "nameSet": false,
+    "ownerEmail": "info@abrimmo.ch",
+    "createdAt": "2026-06-04T22:46:32.911Z"
+  },
+  {
+    "id": "g_1780613258848_m882q",
+    "name": "tests Familie",
+    "nameSet": false,
+    "ownerEmail": "alp@alp.ch",
+    "createdAt": "2026-06-04T22:47:38.914Z"
+  },
+  {
+    "id": "g_1780613380460_9lzfd",
+    "name": "Tests Familie",
+    "nameSet": false,
+    "ownerEmail": "test@test.ch",
+    "createdAt": "2026-06-04T22:49:40.523Z"
+  },
+  {
+    "id": "g_1780613413293_yzous",
+    "name": "tests Familie",
+    "nameSet": false,
+    "ownerEmail": "test@tester.ch",
+    "createdAt": "2026-06-04T22:50:13.370Z"
   }
 ]

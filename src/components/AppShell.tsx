@@ -32,6 +32,7 @@ interface AppShellProps {
   constraints: DayConstraint[];
   initialTab?: Tab;
   isPremium?: boolean;
+  userPlan?: string;
   isAdmin?: boolean;
   group?: Group | null;
   groupRole?: GroupRole;
@@ -48,6 +49,7 @@ export function AppShell({
   constraints: initialConstraints,
   initialTab,
   isPremium = false,
+  userPlan = 'trial',
   isAdmin = false,
   group: initialGroup = null,
   groupRole = 'member',
@@ -155,6 +157,7 @@ export function AppShell({
             initialSettings={settings}
             initialConstraints={constraints}
             isPremium={isPremium}
+            userPlan={userPlan}
             group={group}
             groupRole={groupRole}
             onSettingsChange={setSettings}
