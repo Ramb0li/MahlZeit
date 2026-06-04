@@ -1,0 +1,90 @@
+{
+  "id": "sup-07",
+  "name": "Kürbis-Curry-Suppe mit Federkohl und Bohnen",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 35,
+  "tags": [
+    "Vegan",
+    "Herbst",
+    "Winter"
+  ],
+  "weatherType": "kalt",
+  "source": "Cuiseline",
+  "basePortions": 4,
+  "dietCategory": "vegan",
+  "description": "Würzige Kürbissuppe mit weissen Bohnen, Federkohl und Massaman Currypaste.",
+  "ingredients": [
+    {
+      "name": "Kürbis",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Weisse Bohnen (Dose)",
+      "amount": 2,
+      "unit": "Dose",
+      "perPortions": 4
+    },
+    {
+      "name": "Federkohl",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 3,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Massaman Currypaste",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kokosmilch",
+      "amount": 250,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebrühe",
+      "amount": 400,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Sesamkörner",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Federkohl waschen, in Stücke zupfen (Stiel entfernen), etwas zum Garnieren beiseite stellen.",
+    "Bohnen abspülen und abtropfen lassen.",
+    "Olivenöl in weiter Pfanne erhitzen, Zwiebel und Currypaste kurz mitdünsten.",
+    "Kürbis und Federkohl beigeben, andünsten.",
+    "Mit Gemüsebrühe ablöschen, Kokosmilch zugeben, aufkochen. Bohnen die letzten 15 Min. mitkochen.",
+    "Mit Salz und Pfeffer abschmecken. Mit Federkohl und Sesamkörnern garnieren."
+  ],
+  "tips": "",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null
+}

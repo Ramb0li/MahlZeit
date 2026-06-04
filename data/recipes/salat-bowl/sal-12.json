@@ -1,0 +1,95 @@
+{
+  "id": "sal-12",
+  "name": "Linsen-Apfel-Salat",
+  "category": "Salate & Bowls",
+  "timeMinutes": 25,
+  "tags": [
+    "Vegan",
+    "Herbst"
+  ],
+  "weatherType": "neutral",
+  "source": "Cuiseline",
+  "basePortions": 4,
+  "dietCategory": "vegan",
+  "description": "Proteinreicher Linsensalat mit Apfel, Granatapfel und Thymian.",
+  "ingredients": [
+    {
+      "name": "grüne Linsen",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebrühe",
+      "amount": 700,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Lorbeerblatt",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Granatapfel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Äpfel",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "rote Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Petersilie",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Thymian",
+      "amount": 4,
+      "unit": "Zweige",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 6,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Apfelessig",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Ahornsirup",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Gemüsebrühe mit Lorbeerblatt aufkochen. Linsen abspülen, bissfest kochen. Abgiessen und abkühlen lassen.",
+    "Apfelessig, Olivenöl, Ahornsirup, Salz und Pfeffer in grosser Schüssel verrühren.",
+    "Äpfel fein würfeln und ins Dressing geben.",
+    "Rote Zwiebel in feine Streifen schneiden, Petersilie hacken, Thymian abzupfen.",
+    "Linsen und alle Zutaten zum Dressing geben, vermischen.",
+    "Ca. 30 Minuten ziehen lassen. Mit Granatapfelkernen garnieren."
+  ],
+  "tips": "Schmeckt besonders gut wenn er ca. eine halbe Stunde ziehen kann.",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null
+}

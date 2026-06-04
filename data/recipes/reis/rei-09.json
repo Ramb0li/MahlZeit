@@ -1,0 +1,87 @@
+{
+  "id": "rei-09",
+  "name": "Hirse-Gemüse-Pfanne mit Räuchertofu",
+  "category": "Reis & Getreide",
+  "timeMinutes": 35,
+  "tags": [
+    "Vegan"
+  ],
+  "weatherType": "neutral",
+  "source": "Cuiseline",
+  "basePortions": 4,
+  "dietCategory": "vegan",
+  "description": "Nahrhafte Hirse-Pfanne mit Brokkoli, Federkohl und würzigem Räuchertofu.",
+  "ingredients": [
+    {
+      "name": "Hirse",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebrühe",
+      "amount": 500,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Räuchertofu",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Brokkoli",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Federkohl",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Karotte",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Sojasosse",
+      "amount": 100,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Rapsöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Gemüsebrühe in Pfanne zum Kochen bringen, Hirse beigeben, ca. 8 Minuten garen.",
+    "Räuchertofu in Würfel schneiden, in Rapsöl goldbraun braten, mit 50 ml Sojasosse würzen.",
+    "Zwiebel und Knoblauch andünsten. Brokkoli, Federkohl und Karotte in Streifen dazugeben.",
+    "Gemüse mit restlicher Sojasosse würzen, mitdünsten.",
+    "Räuchertofu und Hirse daruntermengen. Mit Frühlingszwiebeln garnieren."
+  ],
+  "tips": "",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null
+}

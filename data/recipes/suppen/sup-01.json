@@ -42,16 +42,25 @@
     }
   ],
   "weatherType": "kalt",
-  "source": "Rezept von Cuiselin",
+  "source": "Cuiseline",
   "basePortions": 4,
   "description": "Wärmende Kürbissuppe mit exotischem Kick.",
-  "steps": [],
+  "steps": [
+    "Zwiebel, Kartoffeln und Kürbis würfeln.",
+    "Olivenöl in Pfanne erhitzen, Zwiebel andünsten. Kartoffeln und Kürbis beigeben.",
+    "Currypulver und Ingwer dazugeben, kurz mitdünsten.",
+    "Mit Gemüsebrühe und Kokosmilch aufgiessen, aufkochen, 20 Min. köcheln.",
+    "Mit Stabmixer pürieren. Mit Salz und Pfeffer abschmecken.",
+    "Mit Kokosmilch, Kürbiskernen und Chiliflocken garnieren."
+  ],
   "tips": "",
   "imageUrl": null,
   "tags": [
     "Mealprep-geeignet",
     "Mittagsgericht",
     "Herbst",
-    "Winter"
-  ]
+    "Winter",
+    "Vegan"
+  ],
+  "dietCategory": "vegan"
 }

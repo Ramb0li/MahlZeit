@@ -8,12 +8,12 @@
     "Frühling"
   ],
   "weatherType": "warm",
-  "source": "Familien-Rezeptbuch",
+  "source": "Cuiseline",
   "basePortions": 6,
   "description": "Samtige Bärlauchsuppe – kurzes Frühlingsvergnügen.",
   "ingredients": [
     {
-      "name": "Butter",
+      "name": "vegane Butter",
       "amount": 50,
       "unit": "g",
       "perPortions": 6
@@ -43,21 +43,27 @@
       "perPortions": 6
     },
     {
-      "name": "Rahm",
+      "name": "veganer Rahm",
       "amount": 1,
       "unit": "dl",
+      "perPortions": 6
+    },
+    {
+      "name": "Kartoffeln",
+      "amount": 200,
+      "unit": "g",
       "perPortions": 6
     }
   ],
   "steps": [
-    "Butter erwärmen, Zwiebel andämpfen.",
-    "Mehl hinzufügen, kurz dünsten.",
-    "Mit Bouillon ablöschen, gut rühren. 10 Min. köcheln.",
-    "Bärlauch beifügen.",
-    "Rahm hinzufügen, würzen."
+    "Vegane Butter erwärmen, Zwiebel andünsten, Mehl bestreuen.",
+    "Mit Gemüsebrühe ablöschen, gut rühren, 10 Minuten köcheln.",
+    "Bärlauch gründlich waschen, in feine Streifen schneiden, hinzufügen.",
+    "Veganen Rahm beifügen, mit Salz und Pfeffer abschmecken."
   ],
   "imageUrl": null,
   "imageZutaten": null,
   "imageKochen": null,
-  "tips": ""
+  "tips": "",
+  "dietCategory": "vegan"
 }

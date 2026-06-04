@@ -2,50 +2,64 @@
   "id": "pas-04",
   "name": "Pesto Genovese",
   "category": "Pasta",
-  "timeMinutes": 15,
+  "timeMinutes": 25,
   "ingredients": [
     {
-      "name": "Pasta",
-      "amount": 320,
+      "name": "Vollkornspaghetti",
+      "amount": 500,
       "unit": "g",
       "perPortions": 4
     },
     {
-      "name": "Pesto Genovese (Glas)",
-      "amount": 150,
+      "name": "Basilikum",
+      "amount": 4,
+      "unit": "Handvoll",
+      "perPortions": 4
+    },
+    {
+      "name": "Pinienkerne (oder Zedernkerne)",
+      "amount": 100,
       "unit": "g",
       "perPortions": 4
     },
     {
-      "name": "Parmesan",
-      "amount": 40,
+      "name": "Olivenöl",
+      "amount": 1.5,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Veganer Parmesan",
+      "amount": 100,
       "unit": "g",
       "perPortions": 4
     },
     {
-      "name": "Pinienkerne",
-      "amount": 30,
-      "unit": "g",
-      "perPortions": 4
-    },
-    {
-      "name": "Kirschtomaten",
-      "amount": 200,
-      "unit": "g",
+      "name": "Kartoffeln (klein)",
+      "amount": 8,
+      "unit": "Stk",
       "perPortions": 4
     }
   ],
   "weatherType": "warm",
-  "source": "Rezept von Cuiselin",
+  "source": "Cuiseline",
   "basePortions": 4,
-  "description": "Schnell, lecker, mit frischem Basilikum-Pesto.",
-  "steps": [],
+  "description": "Selbstgemachtes Basilikum-Pesto mit Vollkornspaghetti und kleinen Kartoffeln.",
+  "steps": [
+    "Pinienkerne ohne Fett in Pfanne rösten, beiseitestellen.",
+    "Basilikum waschen, Blätter abzupfen. Etwas zum Garnieren beiseite legen.",
+    "Restliches Basilikum mit Olivenöl, veganem Parmesan und Pinienkerne mit Stabmixer pürieren. Mit Salz und Pfeffer würzen.",
+    "Kartoffeln und Spaghetti in Salzwasser al dente kochen, abgiessen.",
+    "Alles mit Pesto mischen, mit Pinienkerne und veganem Parmesan garnieren."
+  ],
   "tips": "",
   "imageUrl": "/images/recipes/cuiselin-pesto-genovese.jpg",
   "imageZutaten": "/images/recipes/cuiselin-pesto-genovese-zutaten.jpg",
   "tags": [
     "Mittagsgericht",
     "Frühling",
-    "Sommer"
-  ]
+    "Sommer",
+    "Vegan"
+  ],
+  "dietCategory": "vegan"
 }

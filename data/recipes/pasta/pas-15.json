@@ -1,0 +1,77 @@
+{
+  "id": "pas-15",
+  "name": "Spaghetti mit Pfifferlingen und Cherrytomaten",
+  "category": "Pasta",
+  "timeMinutes": 30,
+  "tags": [
+    "Vegetarisch",
+    "Herbst"
+  ],
+  "weatherType": "neutral",
+  "source": "Cuiseline",
+  "basePortions": 4,
+  "dietCategory": "vegetarian",
+  "description": "Herbstliche Spaghetti mit gebratenen Pfifferlingen und gerösteten Haselnüssen.",
+  "ingredients": [
+    {
+      "name": "Vollkornspaghetti",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfifferlinge",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Cherrytomaten",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Haselnüsse",
+      "amount": 1,
+      "unit": "Handvoll",
+      "perPortions": 4
+    },
+    {
+      "name": "Petersilie",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Chiliflocken",
+      "amount": 1,
+      "unit": "Messerspitze",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Haselnüsse in grosser Bratpfanne ohne Fett rösten, grob hacken, beiseitestellen.",
+    "Pfifferlinge putzen und je nach Grösse halbieren.",
+    "Spaghetti nach Anleitung al dente kochen.",
+    "Olivenöl erhitzen, Pfifferlinge bei starker Hitze 5 Minuten braten. Knoblauch dazugeben, weitere 5 Minuten bei mittlerer Hitze.",
+    "Cherrytomaten beifügen, kurz mitbraten. Mit Salz, Pfeffer und Chiliflocken würzen.",
+    "Spaghetti abgiessen, in die Pfanne geben. Mit Haselnüssen und Petersilie garnieren."
+  ],
+  "tips": "",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null
+}

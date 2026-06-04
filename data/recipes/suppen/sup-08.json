@@ -1,0 +1,100 @@
+{
+  "id": "sup-08",
+  "name": "Kürbis-Kartoffel-Curry",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 40,
+  "tags": [
+    "Vegan",
+    "Herbst"
+  ],
+  "weatherType": "kalt",
+  "source": "Cuiseline",
+  "basePortions": 4,
+  "dietCategory": "vegan",
+  "description": "Aromatisches Curry mit Butternut-Kürbis, Kartoffeln, Süsskartoffeln und Kokosmilch.",
+  "ingredients": [
+    {
+      "name": "Butternut-Kürbis",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Kartoffeln",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Süsskartoffeln",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "rote Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 2,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Kurkuma (frisch)",
+      "amount": 15,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "gehackte Tomaten (Dose)",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Kokosmilch",
+      "amount": 500,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebrühe",
+      "amount": 350,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Limette",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "frischer Koriander",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Butternut-Kürbis und Süsskartoffeln schälen und würfeln. Kartoffeln würfeln.",
+    "Olivenöl in grosser Pfanne erhitzen, Zwiebel und Knoblauch andünsten.",
+    "Kurkuma fein schneiden und kurz anbraten. Gemüse dazugeben und mitdünsten.",
+    "Tomaten, Kokosmilch und Gemüsebrühe dazugeben, aufkochen, 25–30 Minuten köcheln.",
+    "Mit Limettensaft und Salz abschmecken. Mit frischem Koriander und Limette garnieren."
+  ],
+  "tips": "",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null
+}

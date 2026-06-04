@@ -8,7 +8,7 @@
     "Vegan"
   ],
   "weatherType": "warm",
-  "source": "Familien-Rezeptbuch",
+  "source": "Cuiseline",
   "basePortions": 4,
   "description": "Einfacher Kichererbsensalat mit getrockneten Tomaten und Schnittlauch.",
   "ingredients": [
@@ -37,13 +37,13 @@
       "perPortions": 4
     },
     {
-      "name": "Rapsöl",
-      "amount": 2,
+      "name": "Olivenöl",
+      "amount": 3,
       "unit": "EL",
       "perPortions": 4
     },
     {
-      "name": "Essig",
+      "name": "Aceto Balsamico",
       "amount": 1,
       "unit": "EL",
       "perPortions": 4
@@ -53,15 +53,30 @@
       "amount": 1,
       "unit": "TL",
       "perPortions": 4
+    },
+    {
+      "name": "Kirschtomaten",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Basilikum",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
     }
   ],
   "steps": [
-    "Kichererbsen abspülen. Tomaten in Streifen, Zwiebel und Schnittlauch schneiden.",
-    "Dressing aus Öl, Essig, Senf, Salz, Pfeffer, Kräutern rühren.",
-    "Alles mischen."
+    "Kichererbsen abspülen und abtropfen lassen.",
+    "Dörrtomaten in Streifen schneiden, Kirschtomaten halbieren.",
+    "Schnittlauch und Basilikum fein schneiden.",
+    "Dressing aus Olivenöl, Aceto Balsamico, Senf, Curry, Salz und Pfeffer rühren.",
+    "Alles vermengen und abschmecken."
   ],
   "tips": "",
   "imageUrl": null,
   "imageZutaten": null,
-  "imageKochen": null
+  "imageKochen": null,
+  "dietCategory": "vegan"
 }

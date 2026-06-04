@@ -8,7 +8,7 @@
     "Frühling"
   ],
   "weatherType": "neutral",
-  "source": "Familien-Rezeptbuch",
+  "source": "Cuiseline",
   "basePortions": 6,
   "description": "Aromatische Bärlauchbutter für Brot, Fleisch oder Grilladen.",
   "ingredients": [
@@ -41,15 +41,24 @@
       "amount": 1,
       "unit": "TL",
       "perPortions": 6
+    },
+    {
+      "name": "Paprika edelsüss",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 6
     }
   ],
   "steps": [
-    "Butter schaumig rühren.",
-    "Bärlauch, Senf, Zitronensaft, Salz und Pfeffer beifügen, mixen.",
-    "In Alufolie einrollen, einfrieren."
+    "Butter aus dem Kühlschrank nehmen, auf Zimmertemperatur bringen.",
+    "Bärlauch gründlich waschen, abtrocknen, in feine Streifen schneiden.",
+    "Bärlauch, Senf, Zitronensaft, Paprika edelsüss, Salz und Pfeffer zur Butter geben.",
+    "Mit Stabmixer oder in Küchenmaschine alles gut mischen.",
+    "In Klarsichtfolie einrollen, einfrieren."
   ],
   "imageUrl": null,
   "imageZutaten": null,
   "imageKochen": null,
-  "tips": ""
+  "tips": "",
+  "dietCategory": "vegan"
 }

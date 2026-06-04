@@ -5,7 +5,15 @@
     "category": "Frühstück",
     "timeMinutes": 15,
     "tags": [
-      "Mittagsgericht"
+      "Mittagsgericht",
+      "Abendgericht",
+      "Schweizer",
+      "Frühling",
+      "Sommer",
+      "Herbst",
+      "Winter",
+      "Kinderfreundlich",
+      "Vegetarisch"
     ],
     "ingredients": [
       {
@@ -37,7 +45,7 @@
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Klassisches Rührei, schnell und einfach.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-01-1780503940711.jpg",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-01-1780502993941.jpg",
     "imageZutaten": null,
     "imageKochen": null
   },
@@ -472,6 +480,237 @@
       "Mittagsgericht",
       "Vegetarisch"
     ]
+  },
+  {
+    "id": "ei-09",
+    "name": "Blueberry Smoothie Bowl",
+    "category": "Frühstück",
+    "timeMinutes": 10,
+    "tags": [
+      "Vegan"
+    ],
+    "weatherType": "warm",
+    "source": "Cuiseline",
+    "basePortions": 1,
+    "dietCategory": "vegan",
+    "description": "Cremige Smoothie Bowl mit Heidelbeeren, Hanf- und Leinsamen.",
+    "ingredients": [
+      {
+        "name": "tiefgefrorene Heidelbeeren",
+        "amount": 90,
+        "unit": "g",
+        "perPortions": 1
+      },
+      {
+        "name": "reife Banane",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 1
+      },
+      {
+        "name": "Mandeljogurt",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 1
+      },
+      {
+        "name": "Haferdrink",
+        "amount": 1,
+        "unit": "dl",
+        "perPortions": 1
+      },
+      {
+        "name": "Leinsamen",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 1
+      },
+      {
+        "name": "Hanfsamen",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 1
+      }
+    ],
+    "steps": [
+      "Heidelbeeren, Banane, Mandeljogurt, Haferdrink, Leinsamen und Hanfsamen in den Mixer geben.",
+      "Fein mixen bis eine cremige Masse entsteht.",
+      "In eine Schüssel geben.",
+      "Mit Granola, Früchten (Banane, Granatapfelkerne), Nüssen und Pfefferminze garnieren."
+    ],
+    "tips": "",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null
+  },
+  {
+    "id": "ei-10",
+    "name": "Cacao Smoothie Bowl",
+    "category": "Frühstück",
+    "timeMinutes": 10,
+    "tags": [
+      "Vegan"
+    ],
+    "weatherType": "neutral",
+    "source": "Cuiseline",
+    "basePortions": 1,
+    "dietCategory": "vegan",
+    "description": "Schokoladige Smoothie Bowl mit Banane, Kakao und Mandelmus.",
+    "ingredients": [
+      {
+        "name": "reife Banane",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 1
+      },
+      {
+        "name": "Kakaopulver",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 1
+      },
+      {
+        "name": "Mandelmus",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 1
+      },
+      {
+        "name": "Datteln",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 1
+      },
+      {
+        "name": "Hafermilch",
+        "amount": 0.75,
+        "unit": "dl",
+        "perPortions": 1
+      },
+      {
+        "name": "Leinsamen",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 1
+      },
+      {
+        "name": "Hanfsamen",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 1
+      }
+    ],
+    "steps": [
+      "Alle Zutaten in den Mixer geben.",
+      "Fein mixen bis eine cremige Masse entsteht.",
+      "In eine Schüssel geben.",
+      "Mit Granola, Früchten, Cacao Nibs und Kokosflocken garnieren."
+    ],
+    "tips": "",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null
+  },
+  {
+    "id": "ei-11",
+    "name": "Granola",
+    "category": "Frühstück",
+    "timeMinutes": 50,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet"
+    ],
+    "weatherType": "neutral",
+    "source": "Cuiseline",
+    "basePortions": 8,
+    "dietCategory": "vegan",
+    "description": "Selbstgemachtes knuspriges Granola mit Nüssen, Samen und Datteln.",
+    "ingredients": [
+      {
+        "name": "Haferflocken",
+        "amount": 3,
+        "unit": "Tassen",
+        "perPortions": 8
+      },
+      {
+        "name": "Pekannüsse",
+        "amount": 1,
+        "unit": "Tasse",
+        "perPortions": 8
+      },
+      {
+        "name": "Walnüsse",
+        "amount": 1,
+        "unit": "Tasse",
+        "perPortions": 8
+      },
+      {
+        "name": "Kürbiskerne",
+        "amount": 0.5,
+        "unit": "Tasse",
+        "perPortions": 8
+      },
+      {
+        "name": "Cashewnüsse",
+        "amount": 1,
+        "unit": "Tasse",
+        "perPortions": 8
+      },
+      {
+        "name": "Leinsamen",
+        "amount": 0.5,
+        "unit": "Tasse",
+        "perPortions": 8
+      },
+      {
+        "name": "Hanfsamen",
+        "amount": 0.5,
+        "unit": "Tasse",
+        "perPortions": 8
+      },
+      {
+        "name": "Datteln",
+        "amount": 1,
+        "unit": "Tasse",
+        "perPortions": 8
+      },
+      {
+        "name": "Ahornsirup",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 8
+      },
+      {
+        "name": "Rapsöl",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 8
+      },
+      {
+        "name": "Zimt",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 8
+      },
+      {
+        "name": "Salz",
+        "amount": 2,
+        "unit": "Prisen",
+        "perPortions": 8
+      }
+    ],
+    "steps": [
+      "Ofen auf 160 °C vorheizen (Ober- und Unterhitze).",
+      "Alle Zutaten ausser Datteln in grosser Schüssel mit Rapsöl und Ahornsirup gut vermischen.",
+      "Masse auf zwei Backbleche verteilen.",
+      "Ca. 40 Minuten backen, in der Halbzeit die Bleche tauschen damit alles gleichmässig röstet.",
+      "Datteln in feine Ringe schneiden, 7 Minuten vor Backende auf den Blechen verteilen.",
+      "Auf Backblech vollständig auskühlen lassen, dann in Gläser abfüllen."
+    ],
+    "tips": "Mit Kokosjogurt, pflanzlicher Milch und saisonalen Früchten servieren.",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "fam-29",
@@ -1613,52 +1852,66 @@
     "id": "pas-04",
     "name": "Pesto Genovese",
     "category": "Pasta",
-    "timeMinutes": 15,
+    "timeMinutes": 25,
     "ingredients": [
       {
-        "name": "Pasta",
-        "amount": 320,
+        "name": "Vollkornspaghetti",
+        "amount": 500,
         "unit": "g",
         "perPortions": 4
       },
       {
-        "name": "Pesto Genovese (Glas)",
-        "amount": 150,
+        "name": "Basilikum",
+        "amount": 4,
+        "unit": "Handvoll",
+        "perPortions": 4
+      },
+      {
+        "name": "Pinienkerne (oder Zedernkerne)",
+        "amount": 100,
         "unit": "g",
         "perPortions": 4
       },
       {
-        "name": "Parmesan",
-        "amount": 40,
+        "name": "Olivenöl",
+        "amount": 1.5,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Veganer Parmesan",
+        "amount": 100,
         "unit": "g",
         "perPortions": 4
       },
       {
-        "name": "Pinienkerne",
-        "amount": 30,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Kirschtomaten",
-        "amount": 200,
-        "unit": "g",
+        "name": "Kartoffeln (klein)",
+        "amount": 8,
+        "unit": "Stk",
         "perPortions": 4
       }
     ],
     "weatherType": "warm",
-    "source": "Rezept von Cuiselin",
+    "source": "Cuiseline",
     "basePortions": 4,
-    "description": "Schnell, lecker, mit frischem Basilikum-Pesto.",
-    "steps": [],
+    "description": "Selbstgemachtes Basilikum-Pesto mit Vollkornspaghetti und kleinen Kartoffeln.",
+    "steps": [
+      "Pinienkerne ohne Fett in Pfanne rösten, beiseitestellen.",
+      "Basilikum waschen, Blätter abzupfen. Etwas zum Garnieren beiseite legen.",
+      "Restliches Basilikum mit Olivenöl, veganem Parmesan und Pinienkerne mit Stabmixer pürieren. Mit Salz und Pfeffer würzen.",
+      "Kartoffeln und Spaghetti in Salzwasser al dente kochen, abgiessen.",
+      "Alles mit Pesto mischen, mit Pinienkerne und veganem Parmesan garnieren."
+    ],
     "tips": "",
     "imageUrl": "/images/recipes/cuiselin-pesto-genovese.jpg",
     "imageZutaten": "/images/recipes/cuiselin-pesto-genovese-zutaten.jpg",
     "tags": [
       "Mittagsgericht",
       "Frühling",
-      "Sommer"
-    ]
+      "Sommer",
+      "Vegan"
+    ],
+    "dietCategory": "vegan"
   },
   {
     "id": "pas-05",
@@ -2190,6 +2443,172 @@
     ]
   },
   {
+    "id": "pas-14",
+    "name": "Fregola Sarda mit Sommergemüse",
+    "category": "Pasta",
+    "timeMinutes": 30,
+    "tags": [
+      "Vegan",
+      "Sommer"
+    ],
+    "weatherType": "warm",
+    "source": "Cuiseline",
+    "basePortions": 4,
+    "dietCategory": "vegan",
+    "description": "Geröstete sardische Pasta mit Sommergemüse und Sojasosse.",
+    "ingredients": [
+      {
+        "name": "Fregola Sarda",
+        "amount": 1,
+        "unit": "Packung",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Karotten",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Peperoni",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Aubergine",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomaten",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Sojasosse",
+        "amount": 5,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 500,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Basilikum",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Olivenöl in Pfanne erhitzen, Zwiebel und Knoblauch anrösten.",
+      "Karotten und Peperoni dazugeben, bei mittlerer Hitze dünsten.",
+      "Aubergine und Tomaten beifügen.",
+      "Fregola Sarda nach Anleitung al dente kochen.",
+      "Gemüse mit Sojasosse würzen, mit Salz und Pfeffer abschmecken.",
+      "Gemüse und Fregola Sarda mischen. Mit frischem Basilikum garnieren."
+    ],
+    "tips": "",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null
+  },
+  {
+    "id": "pas-15",
+    "name": "Spaghetti mit Pfifferlingen und Cherrytomaten",
+    "category": "Pasta",
+    "timeMinutes": 30,
+    "tags": [
+      "Vegetarisch",
+      "Herbst"
+    ],
+    "weatherType": "neutral",
+    "source": "Cuiseline",
+    "basePortions": 4,
+    "dietCategory": "vegetarian",
+    "description": "Herbstliche Spaghetti mit gebratenen Pfifferlingen und gerösteten Haselnüssen.",
+    "ingredients": [
+      {
+        "name": "Vollkornspaghetti",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfifferlinge",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Cherrytomaten",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 1,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Haselnüsse",
+        "amount": 1,
+        "unit": "Handvoll",
+        "perPortions": 4
+      },
+      {
+        "name": "Petersilie",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Chiliflocken",
+        "amount": 1,
+        "unit": "Messerspitze",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Haselnüsse in grosser Bratpfanne ohne Fett rösten, grob hacken, beiseitestellen.",
+      "Pfifferlinge putzen und je nach Grösse halbieren.",
+      "Spaghetti nach Anleitung al dente kochen.",
+      "Olivenöl erhitzen, Pfifferlinge bei starker Hitze 5 Minuten braten. Knoblauch dazugeben, weitere 5 Minuten bei mittlerer Hitze.",
+      "Cherrytomaten beifügen, kurz mitbraten. Mit Salz, Pfeffer und Chiliflocken würzen.",
+      "Spaghetti abgiessen, in die Pfanne geben. Mit Haselnüssen und Petersilie garnieren."
+    ],
+    "tips": "",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null
+  },
+  {
     "id": "fam-56",
     "name": "Zitronenrisotto",
     "category": "Reis & Getreide",
@@ -2463,13 +2882,13 @@
         "perPortions": 4
       },
       {
-        "name": "Parmesan",
+        "name": "Veganer Parmesan",
         "amount": 60,
         "unit": "g",
         "perPortions": 4
       },
       {
-        "name": "Butter",
+        "name": "vegane Butter",
         "amount": 40,
         "unit": "g",
         "perPortions": 4
@@ -2482,17 +2901,25 @@
       }
     ],
     "weatherType": "kalt",
-    "source": "Rezept von Cuiselin",
+    "source": "Cuiseline",
     "basePortions": 4,
     "description": "Cremiges Lauchrisotto – Komfort food pur.",
-    "steps": [],
+    "steps": [
+      "Vegane Butter in Pfanne, Zwiebeln und Lauch andünsten.",
+      "Risottoreis dazugeben, gut verrühren.",
+      "Nach und nach heisse Gemüsebrühe beigeben, regelmässig rühren bis der Reis die Flüssigkeit aufgenommen hat (ca. 20 Min.).",
+      "Restliche vegane Butter und veganen Parmesan unterrühren.",
+      "Mit Salz und Pfeffer würzen. Mit Röstzwiebeln garnieren."
+    ],
     "tips": "",
     "imageUrl": null,
     "tags": [
       "Herbst",
       "Winter",
-      "Frühling"
-    ]
+      "Frühling",
+      "Vegan"
+    ],
+    "dietCategory": "vegan"
   },
   {
     "id": "rei-02",
@@ -2753,56 +3180,89 @@
     "id": "rei-06",
     "name": "Linsen-Reis",
     "category": "Reis & Getreide",
-    "timeMinutes": 30,
+    "timeMinutes": 40,
     "ingredients": [
       {
-        "name": "Linsen (grün)",
-        "amount": 200,
+        "name": "Linsen (trocken)",
+        "amount": 300,
         "unit": "g",
         "perPortions": 4
       },
       {
-        "name": "Basmati- oder Langkornreis",
-        "amount": 280,
+        "name": "Jasminreis",
+        "amount": 400,
         "unit": "g",
         "perPortions": 4
       },
       {
-        "name": "Zwiebel",
+        "name": "Zwiebeln",
         "amount": 2,
         "unit": "Stk",
         "perPortions": 4
       },
       {
         "name": "Knoblauch",
-        "amount": 2,
+        "amount": 3,
         "unit": "Zehen",
         "perPortions": 4
       },
       {
-        "name": "Kreuzkümmel",
+        "name": "Ingwer",
+        "amount": 2,
+        "unit": "cm Stück",
+        "perPortions": 4
+      },
+      {
+        "name": "Rapsöl",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kardamom gemahlen",
         "amount": 1,
         "unit": "TL",
         "perPortions": 4
       },
       {
-        "name": "Olivenöl",
-        "amount": 3,
-        "unit": "EL",
+        "name": "Kurkuma",
+        "amount": 4,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 1400,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Koriander",
+        "amount": 1,
+        "unit": "Bund",
         "perPortions": 4
       }
     ],
     "weatherType": "neutral",
-    "source": "Rezept von Cuiselin",
+    "source": "Cuiseline",
     "basePortions": 4,
-    "description": "Einfaches, sättigendes Linsen-Reis-Gericht.",
-    "steps": [],
+    "description": "Würziger Linsenreis mit Kurkuma, Kardamom und frischem Koriander.",
+    "steps": [
+      "Zwiebeln, Knoblauch und Ingwer im Rapsöl andünsten.",
+      "Linsen, Kardamom und Kurkuma beigeben, kurz mitdünsten.",
+      "Gemüsebrühe dazugiessen, aufkochen, ca. 15 Min. bei kleiner Hitze köcheln.",
+      "Reis dazugeben, weitere 15 Minuten köcheln bis alles gar ist.",
+      "Koriander abzupfen, daruntermengen. Mit Salz abschmecken.",
+      "Nach Belieben mit Kokosmilch und extra Koriander garnieren."
+    ],
     "tips": "",
     "imageUrl": null,
     "tags": [
       "Mealprep-geeignet",
-      "Mittagsgericht"
-    ]
+      "Mittagsgericht",
+      "Vegan"
+    ],
+    "dietCategory": "vegan"
   },
   {
     "id": "rei-07",
@@ -2906,6 +3366,183 @@
     ]
   },
   {
+    "id": "rei-08",
+    "name": "Gerösteter Rosenkohl mit Risotto",
+    "category": "Reis & Getreide",
+    "timeMinutes": 40,
+    "tags": [
+      "Vegan",
+      "Herbst",
+      "Winter"
+    ],
+    "weatherType": "kalt",
+    "source": "Cuiseline",
+    "basePortions": 3,
+    "dietCategory": "vegan",
+    "description": "Karamellisierter Ofenrosenkohl mit cremigem Risotto.",
+    "ingredients": [
+      {
+        "name": "Rosenkohl",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 3
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 3
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 3
+      },
+      {
+        "name": "Ahornsirup",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 3
+      },
+      {
+        "name": "Paprika edelsüss",
+        "amount": 0.33,
+        "unit": "TL",
+        "perPortions": 3
+      },
+      {
+        "name": "Chiliflocken",
+        "amount": 0.33,
+        "unit": "TL",
+        "perPortions": 3
+      },
+      {
+        "name": "Risottoreis",
+        "amount": 240,
+        "unit": "g",
+        "perPortions": 3
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 900,
+        "unit": "ml",
+        "perPortions": 3
+      },
+      {
+        "name": "vegane Butter",
+        "amount": 30,
+        "unit": "g",
+        "perPortions": 3
+      },
+      {
+        "name": "Veganer Parmesan",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 3
+      }
+    ],
+    "steps": [
+      "Ofen auf 190 °C vorheizen.",
+      "Rosenkohl halbieren, mit Olivenöl, Ahornsirup, Paprika, Chiliflocken, Salz und Pfeffer mischen.",
+      "Auf Backblech verteilen, 20 Minuten backen (letzte 5 Min. auf oberster Rille).",
+      "Parallel Risotto zubereiten: Zwiebel andünsten, Reis beigeben, nach und nach Brühe einrühren.",
+      "Vegane Butter und Parmesan unterrühren. Mit Salz und Pfeffer würzen.",
+      "Risotto anrichten, gerösteten Rosenkohl darübergeben."
+    ],
+    "tips": "",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null
+  },
+  {
+    "id": "rei-09",
+    "name": "Hirse-Gemüse-Pfanne mit Räuchertofu",
+    "category": "Reis & Getreide",
+    "timeMinutes": 35,
+    "tags": [
+      "Vegan"
+    ],
+    "weatherType": "neutral",
+    "source": "Cuiseline",
+    "basePortions": 4,
+    "dietCategory": "vegan",
+    "description": "Nahrhafte Hirse-Pfanne mit Brokkoli, Federkohl und würzigem Räuchertofu.",
+    "ingredients": [
+      {
+        "name": "Hirse",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 500,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Räuchertofu",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Brokkoli",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Federkohl",
+        "amount": 150,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Karotte",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 1,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Sojasosse",
+        "amount": 100,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Rapsöl",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Gemüsebrühe in Pfanne zum Kochen bringen, Hirse beigeben, ca. 8 Minuten garen.",
+      "Räuchertofu in Würfel schneiden, in Rapsöl goldbraun braten, mit 50 ml Sojasosse würzen.",
+      "Zwiebel und Knoblauch andünsten. Brokkoli, Federkohl und Karotte in Streifen dazugeben.",
+      "Gemüse mit restlicher Sojasosse würzen, mitdünsten.",
+      "Räuchertofu und Hirse daruntermengen. Mit Frühlingszwiebeln garnieren."
+    ],
+    "tips": "",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null
+  },
+  {
     "id": "ein-01",
     "name": "Chili sin carne",
     "category": "Suppen, Eintöpfe & Currys",
@@ -2964,13 +3601,25 @@
         "amount": 100,
         "unit": "g",
         "perPortions": 4
+      },
+      {
+        "name": "Sonnenblumen-Hack",
+        "amount": 1,
+        "unit": "Packung",
+        "perPortions": 4
       }
     ],
     "weatherType": "kalt",
-    "source": "Rezept von Cuiselin",
+    "source": "Cuiseline",
     "basePortions": 4,
     "description": "Veganes Chili – würzig und sättigend.",
-    "steps": [],
+    "steps": [
+      "Vegane Butter in Pfanne, Zwiebeln und Knoblauch andünsten.",
+      "Currypulver dazugeben, kurz mitdünsten.",
+      "Mit Rotwein und Gemüsebrühe ablöschen, Tomaten dazugeben. Mit Salz und Pfeffer würzen, 10 Min. köcheln.",
+      "Bohnen, Mais und Sonnenblumen-Hack beigeben, vermengen.",
+      "Nach Belieben mit Kokosmilch, Petersilie/Koriander und Chiliflocken garnieren."
+    ],
     "tips": "",
     "imageUrl": null,
     "tags": [
@@ -2978,8 +3627,10 @@
       "Mittagsgericht",
       "Herbst",
       "Winter",
-      "Mexikanisch"
-    ]
+      "Mexikanisch",
+      "Vegan"
+    ],
+    "dietCategory": "vegan"
   },
   {
     "id": "ein-02",
@@ -3702,12 +4353,12 @@
       "Frühling"
     ],
     "weatherType": "warm",
-    "source": "Familien-Rezeptbuch",
+    "source": "Cuiseline",
     "basePortions": 6,
     "description": "Samtige Bärlauchsuppe – kurzes Frühlingsvergnügen.",
     "ingredients": [
       {
-        "name": "Butter",
+        "name": "vegane Butter",
         "amount": 50,
         "unit": "g",
         "perPortions": 6
@@ -3737,23 +4388,29 @@
         "perPortions": 6
       },
       {
-        "name": "Rahm",
+        "name": "veganer Rahm",
         "amount": 1,
         "unit": "dl",
+        "perPortions": 6
+      },
+      {
+        "name": "Kartoffeln",
+        "amount": 200,
+        "unit": "g",
         "perPortions": 6
       }
     ],
     "steps": [
-      "Butter erwärmen, Zwiebel andämpfen.",
-      "Mehl hinzufügen, kurz dünsten.",
-      "Mit Bouillon ablöschen, gut rühren. 10 Min. köcheln.",
-      "Bärlauch beifügen.",
-      "Rahm hinzufügen, würzen."
+      "Vegane Butter erwärmen, Zwiebel andünsten, Mehl bestreuen.",
+      "Mit Gemüsebrühe ablöschen, gut rühren, 10 Minuten köcheln.",
+      "Bärlauch gründlich waschen, in feine Streifen schneiden, hinzufügen.",
+      "Veganen Rahm beifügen, mit Salz und Pfeffer abschmecken."
     ],
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "dietCategory": "vegan"
   },
   {
     "id": "fam-13",
@@ -4083,18 +4740,27 @@
       }
     ],
     "weatherType": "kalt",
-    "source": "Rezept von Cuiselin",
+    "source": "Cuiseline",
     "basePortions": 4,
     "description": "Wärmende Kürbissuppe mit exotischem Kick.",
-    "steps": [],
+    "steps": [
+      "Zwiebel, Kartoffeln und Kürbis würfeln.",
+      "Olivenöl in Pfanne erhitzen, Zwiebel andünsten. Kartoffeln und Kürbis beigeben.",
+      "Currypulver und Ingwer dazugeben, kurz mitdünsten.",
+      "Mit Gemüsebrühe und Kokosmilch aufgiessen, aufkochen, 20 Min. köcheln.",
+      "Mit Stabmixer pürieren. Mit Salz und Pfeffer abschmecken.",
+      "Mit Kokosmilch, Kürbiskernen und Chiliflocken garnieren."
+    ],
     "tips": "",
     "imageUrl": null,
     "tags": [
       "Mealprep-geeignet",
       "Mittagsgericht",
       "Herbst",
-      "Winter"
-    ]
+      "Winter",
+      "Vegan"
+    ],
+    "dietCategory": "vegan"
   },
   {
     "id": "sup-02",
@@ -4107,7 +4773,7 @@
       "Italienisch"
     ],
     "weatherType": "kalt",
-    "source": "Familien-Rezeptbuch",
+    "source": "Cuiseline",
     "basePortions": 4,
     "description": "Klassische italienische Gemüsesuppe mit Borlotti-Bohnen.",
     "ingredients": [
@@ -4167,16 +4833,18 @@
       }
     ],
     "steps": [
-      "Gemüse klein schneiden.",
-      "Öl erhitzen, Zwiebel dünsten. Tomatenpüree mitdünsten. Gemüse beifügen.",
-      "Mit Bouillon ablöschen, aufkochen.",
-      "Ca. 1 Stunde köcheln.",
-      "Mit Salz, Pfeffer abschmecken. Mit Petersilie garnieren."
+      "Wirz, Karotten, Lauch, Kartoffeln und Zwiebeln klein schneiden.",
+      "Olivenöl in grossem Topf erhitzen, Zwiebel andünsten. Tomatenpüree mitdünsten.",
+      "Restliches Gemüse beifügen und andünsten.",
+      "Mit Gemüsebouillon ablöschen, aufkochen.",
+      "Ca. 1 Stunde köcheln. Bohnen in den letzten 10 Minuten beifügen.",
+      "Mit Salz und Pfeffer abschmecken. Mit Petersilie garnieren."
     ],
     "tips": "",
     "imageUrl": null,
     "imageZutaten": null,
-    "imageKochen": null
+    "imageKochen": null,
+    "dietCategory": "vegan"
   },
   {
     "id": "sup-03",
@@ -4419,6 +5087,196 @@
       "Sommer",
       "Herbst"
     ]
+  },
+  {
+    "id": "sup-07",
+    "name": "Kürbis-Curry-Suppe mit Federkohl und Bohnen",
+    "category": "Suppen, Eintöpfe & Currys",
+    "timeMinutes": 35,
+    "tags": [
+      "Vegan",
+      "Herbst",
+      "Winter"
+    ],
+    "weatherType": "kalt",
+    "source": "Cuiseline",
+    "basePortions": 4,
+    "dietCategory": "vegan",
+    "description": "Würzige Kürbissuppe mit weissen Bohnen, Federkohl und Massaman Currypaste.",
+    "ingredients": [
+      {
+        "name": "Kürbis",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Weisse Bohnen (Dose)",
+        "amount": 2,
+        "unit": "Dose",
+        "perPortions": 4
+      },
+      {
+        "name": "Federkohl",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 3,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Massaman Currypaste",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kokosmilch",
+        "amount": 250,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 400,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Sesamkörner",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Federkohl waschen, in Stücke zupfen (Stiel entfernen), etwas zum Garnieren beiseite stellen.",
+      "Bohnen abspülen und abtropfen lassen.",
+      "Olivenöl in weiter Pfanne erhitzen, Zwiebel und Currypaste kurz mitdünsten.",
+      "Kürbis und Federkohl beigeben, andünsten.",
+      "Mit Gemüsebrühe ablöschen, Kokosmilch zugeben, aufkochen. Bohnen die letzten 15 Min. mitkochen.",
+      "Mit Salz und Pfeffer abschmecken. Mit Federkohl und Sesamkörnern garnieren."
+    ],
+    "tips": "",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null
+  },
+  {
+    "id": "sup-08",
+    "name": "Kürbis-Kartoffel-Curry",
+    "category": "Suppen, Eintöpfe & Currys",
+    "timeMinutes": 40,
+    "tags": [
+      "Vegan",
+      "Herbst"
+    ],
+    "weatherType": "kalt",
+    "source": "Cuiseline",
+    "basePortions": 4,
+    "dietCategory": "vegan",
+    "description": "Aromatisches Curry mit Butternut-Kürbis, Kartoffeln, Süsskartoffeln und Kokosmilch.",
+    "ingredients": [
+      {
+        "name": "Butternut-Kürbis",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Kartoffeln",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Süsskartoffeln",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "rote Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Kurkuma (frisch)",
+        "amount": 15,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "gehackte Tomaten (Dose)",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Kokosmilch",
+        "amount": 500,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 350,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Limette",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "frischer Koriander",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Butternut-Kürbis und Süsskartoffeln schälen und würfeln. Kartoffeln würfeln.",
+      "Olivenöl in grosser Pfanne erhitzen, Zwiebel und Knoblauch andünsten.",
+      "Kurkuma fein schneiden und kurz anbraten. Gemüse dazugeben und mitdünsten.",
+      "Tomaten, Kokosmilch und Gemüsebrühe dazugeben, aufkochen, 25–30 Minuten köcheln.",
+      "Mit Limettensaft und Salz abschmecken. Mit frischem Koriander und Limette garnieren."
+    ],
+    "tips": "",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "fam-02",
@@ -5257,21 +6115,21 @@
     "timeMinutes": 20,
     "ingredients": [
       {
-        "name": "Bulgur",
-        "amount": 200,
+        "name": "Vollkorn-Couscous",
+        "amount": 250,
         "unit": "g",
         "perPortions": 4
       },
       {
-        "name": "Petersilie",
-        "amount": 1,
-        "unit": "Bund",
+        "name": "Gemüsebrühe",
+        "amount": 500,
+        "unit": "ml",
         "perPortions": 4
       },
       {
-        "name": "Minze",
-        "amount": 0.5,
-        "unit": "Bund",
+        "name": "Gurke",
+        "amount": 1,
+        "unit": "Stk",
         "perPortions": 4
       },
       {
@@ -5281,29 +6139,47 @@
         "perPortions": 4
       },
       {
-        "name": "Gurke",
-        "amount": 0.5,
+        "name": "Peperoni",
+        "amount": 1,
         "unit": "Stk",
         "perPortions": 4
       },
       {
-        "name": "Zitronensaft",
-        "amount": 3,
-        "unit": "EL",
+        "name": "Petersilie (glatt)",
+        "amount": 1,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfefferminzblätter",
+        "amount": 6,
+        "unit": "Stk",
         "perPortions": 4
       },
       {
         "name": "Olivenöl",
-        "amount": 4,
+        "amount": 6,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 1.5,
         "unit": "EL",
         "perPortions": 4
       }
     ],
     "weatherType": "warm",
-    "source": "Rezept von Cuiselin",
+    "source": "Cuiseline",
     "basePortions": 4,
-    "description": "Frischer Levante-Salat.",
-    "steps": [],
+    "description": "Frischer Levante-Salat mit Couscous, Gurke, Tomaten und Peperoni.",
+    "steps": [
+      "Couscous in grosse Schüssel, mit heisser Gemüsebrühe übergiessen, aufquellen lassen, mit Gabel auflockern.",
+      "Gurke, Tomaten und Peperoni fein würfeln.",
+      "Petersilie und Pfefferminze fein hacken.",
+      "Gemüse und Kräuter zum abgekühlten Couscous geben.",
+      "Olivenöl und Zitronensaft dazugeben, mit Salz und Pfeffer würzen. Alles vermischen."
+    ],
     "tips": "",
     "imageUrl": "/images/recipes/cuiselin-taboule.jpeg",
     "imageZutaten": "/images/recipes/cuiselin-taboule-zutaten.jpeg",
@@ -5312,8 +6188,10 @@
       "Mittagsgericht",
       "Frühling",
       "Sommer",
-      "Orientalisch"
-    ]
+      "Orientalisch",
+      "Vegan"
+    ],
+    "dietCategory": "vegan"
   },
   {
     "id": "sal-04",
@@ -5325,7 +6203,7 @@
       "Vegan"
     ],
     "weatherType": "warm",
-    "source": "Familien-Rezeptbuch",
+    "source": "Cuiseline",
     "basePortions": 4,
     "description": "Einfacher Kichererbsensalat mit getrockneten Tomaten und Schnittlauch.",
     "ingredients": [
@@ -5354,13 +6232,13 @@
         "perPortions": 4
       },
       {
-        "name": "Rapsöl",
-        "amount": 2,
+        "name": "Olivenöl",
+        "amount": 3,
         "unit": "EL",
         "perPortions": 4
       },
       {
-        "name": "Essig",
+        "name": "Aceto Balsamico",
         "amount": 1,
         "unit": "EL",
         "perPortions": 4
@@ -5370,17 +6248,32 @@
         "amount": 1,
         "unit": "TL",
         "perPortions": 4
+      },
+      {
+        "name": "Kirschtomaten",
+        "amount": 150,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Basilikum",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
       }
     ],
     "steps": [
-      "Kichererbsen abspülen. Tomaten in Streifen, Zwiebel und Schnittlauch schneiden.",
-      "Dressing aus Öl, Essig, Senf, Salz, Pfeffer, Kräutern rühren.",
-      "Alles mischen."
+      "Kichererbsen abspülen und abtropfen lassen.",
+      "Dörrtomaten in Streifen schneiden, Kirschtomaten halbieren.",
+      "Schnittlauch und Basilikum fein schneiden.",
+      "Dressing aus Olivenöl, Aceto Balsamico, Senf, Curry, Salz und Pfeffer rühren.",
+      "Alles vermengen und abschmecken."
     ],
     "tips": "",
     "imageUrl": null,
     "imageZutaten": null,
-    "imageKochen": null
+    "imageKochen": null,
+    "dietCategory": "vegan"
   },
   {
     "id": "sal-05",
@@ -5730,6 +6623,253 @@
     ]
   },
   {
+    "id": "sal-10",
+    "name": "Gurken-Ananas-Salat",
+    "category": "Salate & Bowls",
+    "timeMinutes": 15,
+    "tags": [
+      "Vegan",
+      "Sommer"
+    ],
+    "weatherType": "warm",
+    "source": "Cuiseline",
+    "basePortions": 4,
+    "dietCategory": "vegan",
+    "description": "Exotischer Salat mit Gurke, Ananas und asiatischem Dressing.",
+    "ingredients": [
+      {
+        "name": "Salatgurke",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Ananas (frisch)",
+        "amount": 8,
+        "unit": "Scheiben",
+        "perPortions": 4
+      },
+      {
+        "name": "Frühlingszwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Cashewnüsse",
+        "amount": 80,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Ingwer",
+        "amount": 1,
+        "unit": "kleines Stück",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 1,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Sojasosse",
+        "amount": 5,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Heller Balsamico",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Sambal Oelek",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Sesamkörner",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Ingwer schälen und fein reiben, Knoblauch pressen.",
+      "Sauce aus Ingwer, Knoblauch, Sojasosse, Balsamico, Sambal Oelek, Salz und Pfeffer gut mischen.",
+      "Cashewnüsse in einer Pfanne ohne Öl rösten und grob hacken.",
+      "Ananasscheiben würfeln, Gurke in Scheiben schneiden, Frühlingszwiebel schneiden.",
+      "Gemüse und Ananas mit der Sauce mischen, anrichten.",
+      "Cashewnüsse und Sesamkörner darüber verteilen."
+    ],
+    "tips": "",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null
+  },
+  {
+    "id": "sal-11",
+    "name": "Gurkensalat",
+    "category": "Salate & Bowls",
+    "timeMinutes": 10,
+    "tags": [
+      "Vegan",
+      "Sommer"
+    ],
+    "weatherType": "warm",
+    "source": "Cuiseline",
+    "basePortions": 4,
+    "dietCategory": "vegan",
+    "description": "Einfacher Gurkensalat mit Dill und Mandeljogurt-Dressing.",
+    "ingredients": [
+      {
+        "name": "Gurken",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Mandeljogurt",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Dijon-Senf (körnig)",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kräuteressig",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Sonnenblumenöl",
+        "amount": 1.5,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Dill (frisch oder getrocknet)",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Mandeljogurt, Senf, Essig und Öl in eine Schüssel geben, mit Salz, Pfeffer und Kräutersalz würzen.",
+      "Gurken in Scheiben schneiden.",
+      "Dill zerkleinern und dazugeben.",
+      "Gurken in die Schüssel geben und alles vermischen."
+    ],
+    "tips": "",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null
+  },
+  {
+    "id": "sal-12",
+    "name": "Linsen-Apfel-Salat",
+    "category": "Salate & Bowls",
+    "timeMinutes": 25,
+    "tags": [
+      "Vegan",
+      "Herbst"
+    ],
+    "weatherType": "neutral",
+    "source": "Cuiseline",
+    "basePortions": 4,
+    "dietCategory": "vegan",
+    "description": "Proteinreicher Linsensalat mit Apfel, Granatapfel und Thymian.",
+    "ingredients": [
+      {
+        "name": "grüne Linsen",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 700,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Lorbeerblatt",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Granatapfel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Äpfel",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "rote Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Petersilie",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Thymian",
+        "amount": 4,
+        "unit": "Zweige",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 6,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Apfelessig",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Ahornsirup",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Gemüsebrühe mit Lorbeerblatt aufkochen. Linsen abspülen, bissfest kochen. Abgiessen und abkühlen lassen.",
+      "Apfelessig, Olivenöl, Ahornsirup, Salz und Pfeffer in grosser Schüssel verrühren.",
+      "Äpfel fein würfeln und ins Dressing geben.",
+      "Rote Zwiebel in feine Streifen schneiden, Petersilie hacken, Thymian abzupfen.",
+      "Linsen und alle Zutaten zum Dressing geben, vermischen.",
+      "Ca. 30 Minuten ziehen lassen. Mit Granatapfelkernen garnieren."
+    ],
+    "tips": "Schmeckt besonders gut wenn er ca. eine halbe Stunde ziehen kann.",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null
+  },
+  {
     "id": "fvt-08",
     "name": "Gefüllte Paprika mit Quinoa und schwarzen Bohnen",
     "category": "Aufläufe & Gratins",
@@ -5980,6 +7120,227 @@
       "Frühling",
       "Italienisch"
     ]
+  },
+  {
+    "id": "ofe-03",
+    "name": "Brot-Gemüse-Auflauf",
+    "category": "Vegetarische Hauptgerichte",
+    "timeMinutes": 50,
+    "tags": [
+      "Vegan"
+    ],
+    "weatherType": "kalt",
+    "source": "Cuiseline",
+    "basePortions": 6,
+    "dietCategory": "vegan",
+    "description": "Sättigender veganer Brotauflauf mit Karotten, Zucchini und Kichererbsenmehl-Guss.",
+    "ingredients": [
+      {
+        "name": "Brot (vom Vortag)",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 6
+      },
+      {
+        "name": "Zucchini",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 6
+      },
+      {
+        "name": "Karotten",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 6
+      },
+      {
+        "name": "Kichererbsenmehl",
+        "amount": 90,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Maizena",
+        "amount": 30,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 3,
+        "unit": "Zehen",
+        "perPortions": 6
+      },
+      {
+        "name": "Senf",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 6
+      },
+      {
+        "name": "Gemüsebouillon",
+        "amount": 1.5,
+        "unit": "dl",
+        "perPortions": 6
+      },
+      {
+        "name": "Veganer Rahm (Hafer Cuisine)",
+        "amount": 2.5,
+        "unit": "dl",
+        "perPortions": 6
+      },
+      {
+        "name": "Pflanzliche Milch",
+        "amount": 4.5,
+        "unit": "dl",
+        "perPortions": 6
+      },
+      {
+        "name": "Veganer Parmesan",
+        "amount": 75,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Cashewnüsse",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 6
+      }
+    ],
+    "steps": [
+      "Ofen auf 200 °C vorheizen.",
+      "Zwiebel glasig andünsten. Zucchini und grob geriebene Karotten mitdünsten.",
+      "Alle Zutaten für den Guss (Kichererbsenmehl, Maizena, Knoblauch, Senf, Bouillon, Rahm, Milch, Salz, Pfeffer) gut vermischen.",
+      "Brot würfeln. Brot und Gemüse in geölte Gratinform schichten, Guss darübergeben.",
+      "Bei 200 °C ca. 30 Minuten backen bis oben leicht gebräunt.",
+      "Mit Kräutern (Schnittlauch oder Petersilie) garnieren."
+    ],
+    "tips": "",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null
+  },
+  {
+    "id": "ofe-04",
+    "name": "Gefüllte Auberginen mit Couscous",
+    "category": "Vegetarische Hauptgerichte",
+    "timeMinutes": 50,
+    "tags": [
+      "Vegan",
+      "Orientalisch"
+    ],
+    "weatherType": "warm",
+    "source": "Cuiseline",
+    "basePortions": 4,
+    "dietCategory": "vegan",
+    "description": "Ofenauberginen gefüllt mit gewürztem Couscous, Datteln, Mandeln und Granatapfel.",
+    "ingredients": [
+      {
+        "name": "Auberginen",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 5,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Curry",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Datteln (weich)",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Mandeln",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Dinkel-Couscous",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 375,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Granatapfel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfefferminze",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Kokosjogurt",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Ofen auf 200 °C vorheizen.",
+      "Auberginen längs halbieren, aushöhlen (Fruchtfleisch beiseite stellen).",
+      "Hälften mit 3 EL Olivenöl bestreichen, salzen. Im Ofen 25 Minuten backen.",
+      "Couscous mit heisser Gemüsebrühe übergiessen, 25–30 Minuten quellen lassen.",
+      "Zwiebel und Knoblauch in 2 EL Olivenöl dünsten. Auberginenfruchtfleisch zerkleinern und mitdünsten.",
+      "Datteln und Mandeln fein hacken. Mit Couscous, Zitronensaft, Curry, Salz mischen.",
+      "Auberginenhälften füllen. Kokosjogurt mit Zitronensaft verrühren, darüber verteilen.",
+      "Mit Granatapfelkernen und Pfefferminze garnieren."
+    ],
+    "tips": "",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "asi-01",
@@ -6676,7 +8037,7 @@
     "timeMinutes": 30,
     "tags": [],
     "weatherType": "neutral",
-    "source": "Familien-Rezeptbuch",
+    "source": "Cuiseline",
     "basePortions": 4,
     "description": "Würzige Knöpfli mit Poulet, Lauch, Peperoni und Sojasauce.",
     "ingredients": [
@@ -6730,15 +8091,17 @@
       }
     ],
     "steps": [
-      "Poulet anbraten, würzen, warmstellen.",
-      "Zwiebeln und Knoblauch andämpfen. Gemüse und Peperoncini beifügen.",
-      "Sojasauce dazugeben, würzen, 10 Min. zugedeckt köcheln.",
-      "Knöpfli in Butter anbraten. Gemüse und Fleisch beifügen, abschmecken."
+      "Pouletfleisch (oder pflanzliches Poulet) in Rapsöl anbraten, würzen, warmstellen.",
+      "Vegane Butter in gleicher Pfanne, Zwiebeln und Knoblauch andünsten.",
+      "Lauch, Peperoni und Papperoncini dazugeben, mitdünsten. Mit Curry würzen.",
+      "Sojasauce dazugeben, ca. 10 Minuten zugedeckt köcheln.",
+      "Knöpfli in veganer Butter anbraten, Gemüse und Fleisch beifügen, abschmecken."
     ],
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "dietCategory": "meat"
   },
   {
     "id": "fam-26",
@@ -8325,7 +9688,7 @@
       "Frühling"
     ],
     "weatherType": "neutral",
-    "source": "Familien-Rezeptbuch",
+    "source": "Cuiseline",
     "basePortions": 6,
     "description": "Aromatische Bärlauchbutter für Brot, Fleisch oder Grilladen.",
     "ingredients": [
@@ -8358,17 +9721,26 @@
         "amount": 1,
         "unit": "TL",
         "perPortions": 6
+      },
+      {
+        "name": "Paprika edelsüss",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 6
       }
     ],
     "steps": [
-      "Butter schaumig rühren.",
-      "Bärlauch, Senf, Zitronensaft, Salz und Pfeffer beifügen, mixen.",
-      "In Alufolie einrollen, einfrieren."
+      "Butter aus dem Kühlschrank nehmen, auf Zimmertemperatur bringen.",
+      "Bärlauch gründlich waschen, abtrocknen, in feine Streifen schneiden.",
+      "Bärlauch, Senf, Zitronensaft, Paprika edelsüss, Salz und Pfeffer zur Butter geben.",
+      "Mit Stabmixer oder in Küchenmaschine alles gut mischen.",
+      "In Klarsichtfolie einrollen, einfrieren."
     ],
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "dietCategory": "vegan"
   },
   {
     "id": "fam-28",
@@ -8866,7 +10238,7 @@
       "Vegan"
     ],
     "weatherType": "neutral",
-    "source": "Familien-Rezeptbuch",
+    "source": "Cuiseline",
     "basePortions": 4,
     "description": "Cremiger veganer Rahmspinat mit Cashew-Rahm.",
     "ingredients": [
@@ -8877,7 +10249,7 @@
         "perPortions": 4
       },
       {
-        "name": "TK-Spinat, gehackt",
+        "name": "frischer Spinat",
         "amount": 500,
         "unit": "g",
         "perPortions": 4
@@ -8908,16 +10280,17 @@
       }
     ],
     "steps": [
-      "Cashews in 250 ml Wasser einweichen.",
-      "Zwiebel und Knoblauch hacken, in Butter andünsten.",
-      "Spinat beifügen, langsam erwärmen.",
-      "Cashews pürieren zu Rahm. Mit Bouillonpaste zum Spinat geben, aufkochen.",
-      "Mit Muskatnuss, Hefeflocken, Salz und Pfeffer würzen."
+      "Cashewnüsse in 250 ml Gemüsebrühe einweichen.",
+      "Vegane Butter in Pfanne, Zwiebel und Knoblauch andünsten.",
+      "Frischen Spinat beifügen, langsam erwärmen.",
+      "Cashews mit der Brühe fein pürieren.",
+      "Cashewrahm zum Spinat geben, aufkochen. Mit Muskatnuss, Salz, Pfeffer und Hefeflocken würzen."
     ],
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "dietCategory": "vegan"
   },
   {
     "id": "fam-52",
@@ -9458,6 +10831,100 @@
       "Mealprep-geeignet",
       "Mittagsgericht"
     ]
+  },
+  {
+    "id": "fvt-14",
+    "name": "Linsen-Tätschli",
+    "category": "Vegetarische Hauptgerichte",
+    "timeMinutes": 35,
+    "tags": [
+      "Vegan"
+    ],
+    "weatherType": "neutral",
+    "source": "Cuiseline",
+    "basePortions": 4,
+    "dietCategory": "vegan",
+    "description": "Knusprige Linsen-Bratlinge mit Couscous, Mandeln und Petersilie.",
+    "ingredients": [
+      {
+        "name": "rote Linsen",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 400,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebeln",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Petersilie",
+        "amount": 1,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Mandeln",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Dinkel-Couscous",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Rapsöl",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Granatapfel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfefferminze",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Zwiebeln und Knoblauch im Olivenöl andünsten. Linsen beigeben, mit Gemüsebrühe ablöschen.",
+      "Linsen ca. 10–12 Minuten weich kochen lassen.",
+      "Petersilie hacken und Mandeln grob hacken. Unter die Linsenmasse mischen, würzen.",
+      "Rapsöl in Bratpfanne erhitzen. Je 2 EL Masse in die Pfanne geben, flach drücken.",
+      "Ca. 4 Minuten pro Seite goldbraun braten.",
+      "Mit Couscous, Granatapfelkernen und Pfefferminze servieren."
+    ],
+    "tips": "Wenn die Masse zu flüssig ist, etwas Mehl oder Haferflocken beigeben.",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "ocr-02",
@@ -10019,6 +11486,204 @@
       "Vegetarisch",
       "Mittagsgericht"
     ]
+  },
+  {
+    "id": "son-05",
+    "name": "Bärlauchpesto",
+    "category": "Snacks & Vorspeisen",
+    "timeMinutes": 15,
+    "tags": [
+      "Vegan",
+      "Frühling"
+    ],
+    "weatherType": "neutral",
+    "source": "Cuiseline",
+    "basePortions": 4,
+    "dietCategory": "vegan",
+    "description": "Frisches Bärlauchpesto – im Kühlschrank 2–3 Wochen haltbar.",
+    "ingredients": [
+      {
+        "name": "Bärlauch",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 1,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Veganer Parmesan",
+        "amount": 70,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Pinienkerne (oder Zedernkerne)",
+        "amount": 40,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 40,
+        "unit": "ml",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Pinienkerne kurz ohne Fett anrösten, beiseitestellen.",
+      "Bärlauch gründlich waschen, abtrocknen, in grobe Streifen schneiden.",
+      "Bärlauch, Olivenöl, veganen Parmesan und Pinienkerne mit Stabmixer pürieren.",
+      "Mit Zitronensaft, Salz und Pfeffer abschmecken.",
+      "Mit einer Schicht Olivenöl abgedeckt im Kühlschrank aufbewahren."
+    ],
+    "tips": "Im Kühlschrank ca. 2–3 Wochen haltbar wenn mit Olivenöl bedeckt.",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null
+  },
+  {
+    "id": "son-06",
+    "name": "Hummus-Gemüse-Wrap",
+    "category": "Snacks & Vorspeisen",
+    "timeMinutes": 10,
+    "tags": [
+      "Vegan"
+    ],
+    "weatherType": "warm",
+    "source": "Cuiseline",
+    "basePortions": 1,
+    "dietCategory": "vegan",
+    "description": "Schneller Wrap mit Hummus, frischem Gemüse und Rucola.",
+    "ingredients": [
+      {
+        "name": "Vollkorntortilla",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 1
+      },
+      {
+        "name": "Hummus",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 1
+      },
+      {
+        "name": "Salatgurke",
+        "amount": 0.25,
+        "unit": "Stk",
+        "perPortions": 1
+      },
+      {
+        "name": "Cherrytomaten",
+        "amount": 5,
+        "unit": "Stk",
+        "perPortions": 1
+      },
+      {
+        "name": "Dörrtomaten",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 1
+      },
+      {
+        "name": "Rucola",
+        "amount": 1,
+        "unit": "Handvoll",
+        "perPortions": 1
+      }
+    ],
+    "steps": [
+      "Tortilla flach auslegen.",
+      "Hummus gleichmässig aufstreichen.",
+      "Gurke, Cherrytomaten und Dörrtomaten darauf verteilen.",
+      "Rucola dazugeben, mit Salz und Pfeffer würzen.",
+      "Wrap fest einrollen."
+    ],
+    "tips": "Gemüse kann nach Belieben variiert werden.",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null
+  },
+  {
+    "id": "son-07",
+    "name": "Vegane Schinkengipfeli (Tofu-Gipfeli)",
+    "category": "Snacks & Vorspeisen",
+    "timeMinutes": 35,
+    "tags": [
+      "Vegan"
+    ],
+    "weatherType": "neutral",
+    "source": "Cuiseline",
+    "basePortions": 4,
+    "dietCategory": "vegan",
+    "description": "Knusprige vegane Gipfeli mit würziger Räuchertofu-Füllung.",
+    "ingredients": [
+      {
+        "name": "Blätterteig (rund)",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Räuchertofu",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 1,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Petersilie",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Senf",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Paprika edelsüss",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "pflanzliche Milch",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Ofen auf 200 °C vorheizen.",
+      "Knoblauch fein hacken. Räuchertofu fein würfeln. Mit Olivenöl, Petersilie, Senf, Paprika, Salz und Pfeffer mischen.",
+      "Blätterteige in je 8 gleiche Dreiecke schneiden.",
+      "Ca. 2–3 TL Füllung auf das breite Ende jedes Dreiecks geben.",
+      "Dreieck von der breiten Seite her aufrollen und leicht biegen.",
+      "Gipfeli auf Backblech legen, mit pflanzlicher Milch bestreichen.",
+      "Im vorgeheizten Ofen bei 200 °C ca. 20–25 Minuten goldbraun backen."
+    ],
+    "tips": "",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "kds-01",
@@ -11728,36 +13393,5 @@
       "Vegan",
       "Mealprep-geeignet"
     ]
-  },
-  {
-    "id": "rec-1780509979903-q5i5h",
-    "name": "Verücktes Testmenü",
-    "category": "Fleisch & Geflügel",
-    "timeMinutes": 30,
-    "tags": [
-      "Sommer",
-      "Italienisch"
-    ],
-    "ingredients": [
-      {
-        "name": "Ei",
-        "amount": 2,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Bratwurst",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 4
-      }
-    ],
-    "weatherType": "neutral",
-    "source": "Rezept von Oli",
-    "basePortions": 4,
-    "description": "",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/test-01-lustiges-gericht-1780509968436.jpg",
-    "imageZutaten": null,
-    "imageKochen": null
   }
 ]

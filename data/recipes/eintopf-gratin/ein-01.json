@@ -57,13 +57,25 @@
       "amount": 100,
       "unit": "g",
       "perPortions": 4
+    },
+    {
+      "name": "Sonnenblumen-Hack",
+      "amount": 1,
+      "unit": "Packung",
+      "perPortions": 4
     }
   ],
   "weatherType": "kalt",
-  "source": "Rezept von Cuiselin",
+  "source": "Cuiseline",
   "basePortions": 4,
   "description": "Veganes Chili – würzig und sättigend.",
-  "steps": [],
+  "steps": [
+    "Vegane Butter in Pfanne, Zwiebeln und Knoblauch andünsten.",
+    "Currypulver dazugeben, kurz mitdünsten.",
+    "Mit Rotwein und Gemüsebrühe ablöschen, Tomaten dazugeben. Mit Salz und Pfeffer würzen, 10 Min. köcheln.",
+    "Bohnen, Mais und Sonnenblumen-Hack beigeben, vermengen.",
+    "Nach Belieben mit Kokosmilch, Petersilie/Koriander und Chiliflocken garnieren."
+  ],
   "tips": "",
   "imageUrl": null,
   "tags": [
@@ -71,6 +83,8 @@
     "Mittagsgericht",
     "Herbst",
     "Winter",
-    "Mexikanisch"
-  ]
+    "Mexikanisch",
+    "Vegan"
+  ],
+  "dietCategory": "vegan"
 }

@@ -1,0 +1,63 @@
+{
+  "id": "son-06",
+  "name": "Hummus-Gemüse-Wrap",
+  "category": "Snacks & Vorspeisen",
+  "timeMinutes": 10,
+  "tags": [
+    "Vegan"
+  ],
+  "weatherType": "warm",
+  "source": "Cuiseline",
+  "basePortions": 1,
+  "dietCategory": "vegan",
+  "description": "Schneller Wrap mit Hummus, frischem Gemüse und Rucola.",
+  "ingredients": [
+    {
+      "name": "Vollkorntortilla",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 1
+    },
+    {
+      "name": "Hummus",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 1
+    },
+    {
+      "name": "Salatgurke",
+      "amount": 0.25,
+      "unit": "Stk",
+      "perPortions": 1
+    },
+    {
+      "name": "Cherrytomaten",
+      "amount": 5,
+      "unit": "Stk",
+      "perPortions": 1
+    },
+    {
+      "name": "Dörrtomaten",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 1
+    },
+    {
+      "name": "Rucola",
+      "amount": 1,
+      "unit": "Handvoll",
+      "perPortions": 1
+    }
+  ],
+  "steps": [
+    "Tortilla flach auslegen.",
+    "Hummus gleichmässig aufstreichen.",
+    "Gurke, Cherrytomaten und Dörrtomaten darauf verteilen.",
+    "Rucola dazugeben, mit Salz und Pfeffer würzen.",
+    "Wrap fest einrollen."
+  ],
+  "tips": "Gemüse kann nach Belieben variiert werden.",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null
+}

@@ -29,13 +29,13 @@
       "perPortions": 4
     },
     {
-      "name": "Parmesan",
+      "name": "Veganer Parmesan",
       "amount": 60,
       "unit": "g",
       "perPortions": 4
     },
     {
-      "name": "Butter",
+      "name": "vegane Butter",
       "amount": 40,
       "unit": "g",
       "perPortions": 4
@@ -48,15 +48,23 @@
     }
   ],
   "weatherType": "kalt",
-  "source": "Rezept von Cuiselin",
+  "source": "Cuiseline",
   "basePortions": 4,
   "description": "Cremiges Lauchrisotto – Komfort food pur.",
-  "steps": [],
+  "steps": [
+    "Vegane Butter in Pfanne, Zwiebeln und Lauch andünsten.",
+    "Risottoreis dazugeben, gut verrühren.",
+    "Nach und nach heisse Gemüsebrühe beigeben, regelmässig rühren bis der Reis die Flüssigkeit aufgenommen hat (ca. 20 Min.).",
+    "Restliche vegane Butter und veganen Parmesan unterrühren.",
+    "Mit Salz und Pfeffer würzen. Mit Röstzwiebeln garnieren."
+  ],
   "tips": "",
   "imageUrl": null,
   "tags": [
     "Herbst",
     "Winter",
-    "Frühling"
-  ]
+    "Frühling",
+    "Vegan"
+  ],
+  "dietCategory": "vegan"
 }

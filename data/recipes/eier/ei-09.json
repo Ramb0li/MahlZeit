@@ -1,0 +1,62 @@
+{
+  "id": "ei-09",
+  "name": "Blueberry Smoothie Bowl",
+  "category": "Frühstück",
+  "timeMinutes": 10,
+  "tags": [
+    "Vegan"
+  ],
+  "weatherType": "warm",
+  "source": "Cuiseline",
+  "basePortions": 1,
+  "dietCategory": "vegan",
+  "description": "Cremige Smoothie Bowl mit Heidelbeeren, Hanf- und Leinsamen.",
+  "ingredients": [
+    {
+      "name": "tiefgefrorene Heidelbeeren",
+      "amount": 90,
+      "unit": "g",
+      "perPortions": 1
+    },
+    {
+      "name": "reife Banane",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 1
+    },
+    {
+      "name": "Mandeljogurt",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 1
+    },
+    {
+      "name": "Haferdrink",
+      "amount": 1,
+      "unit": "dl",
+      "perPortions": 1
+    },
+    {
+      "name": "Leinsamen",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 1
+    },
+    {
+      "name": "Hanfsamen",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 1
+    }
+  ],
+  "steps": [
+    "Heidelbeeren, Banane, Mandeljogurt, Haferdrink, Leinsamen und Hanfsamen in den Mixer geben.",
+    "Fein mixen bis eine cremige Masse entsteht.",
+    "In eine Schüssel geben.",
+    "Mit Granola, Früchten (Banane, Granatapfelkerne), Nüssen und Pfefferminze garnieren."
+  ],
+  "tips": "",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null
+}

@@ -1,0 +1,112 @@
+{
+  "id": "ofe-03",
+  "name": "Brot-Gemüse-Auflauf",
+  "category": "Vegetarische Hauptgerichte",
+  "timeMinutes": 50,
+  "tags": [
+    "Vegan"
+  ],
+  "weatherType": "kalt",
+  "source": "Cuiseline",
+  "basePortions": 6,
+  "dietCategory": "vegan",
+  "description": "Sättigender veganer Brotauflauf mit Karotten, Zucchini und Kichererbsenmehl-Guss.",
+  "ingredients": [
+    {
+      "name": "Brot (vom Vortag)",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 6
+    },
+    {
+      "name": "Zucchini",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 6
+    },
+    {
+      "name": "Karotten",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 6
+    },
+    {
+      "name": "Kichererbsenmehl",
+      "amount": 90,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Maizena",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 3,
+      "unit": "Zehen",
+      "perPortions": 6
+    },
+    {
+      "name": "Senf",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 6
+    },
+    {
+      "name": "Gemüsebouillon",
+      "amount": 1.5,
+      "unit": "dl",
+      "perPortions": 6
+    },
+    {
+      "name": "Veganer Rahm (Hafer Cuisine)",
+      "amount": 2.5,
+      "unit": "dl",
+      "perPortions": 6
+    },
+    {
+      "name": "Pflanzliche Milch",
+      "amount": 4.5,
+      "unit": "dl",
+      "perPortions": 6
+    },
+    {
+      "name": "Veganer Parmesan",
+      "amount": 75,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Cashewnüsse",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 6
+    }
+  ],
+  "steps": [
+    "Ofen auf 200 °C vorheizen.",
+    "Zwiebel glasig andünsten. Zucchini und grob geriebene Karotten mitdünsten.",
+    "Alle Zutaten für den Guss (Kichererbsenmehl, Maizena, Knoblauch, Senf, Bouillon, Rahm, Milch, Salz, Pfeffer) gut vermischen.",
+    "Brot würfeln. Brot und Gemüse in geölte Gratinform schichten, Guss darübergeben.",
+    "Bei 200 °C ca. 30 Minuten backen bis oben leicht gebräunt.",
+    "Mit Kräutern (Schnittlauch oder Petersilie) garnieren."
+  ],
+  "tips": "",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null
+}

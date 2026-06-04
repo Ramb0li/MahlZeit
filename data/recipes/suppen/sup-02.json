@@ -9,7 +9,7 @@
     "Italienisch"
   ],
   "weatherType": "kalt",
-  "source": "Familien-Rezeptbuch",
+  "source": "Cuiseline",
   "basePortions": 4,
   "description": "Klassische italienische Gemüsesuppe mit Borlotti-Bohnen.",
   "ingredients": [
@@ -69,14 +69,16 @@
     }
   ],
   "steps": [
-    "Gemüse klein schneiden.",
-    "Öl erhitzen, Zwiebel dünsten. Tomatenpüree mitdünsten. Gemüse beifügen.",
-    "Mit Bouillon ablöschen, aufkochen.",
-    "Ca. 1 Stunde köcheln.",
-    "Mit Salz, Pfeffer abschmecken. Mit Petersilie garnieren."
+    "Wirz, Karotten, Lauch, Kartoffeln und Zwiebeln klein schneiden.",
+    "Olivenöl in grossem Topf erhitzen, Zwiebel andünsten. Tomatenpüree mitdünsten.",
+    "Restliches Gemüse beifügen und andünsten.",
+    "Mit Gemüsebouillon ablöschen, aufkochen.",
+    "Ca. 1 Stunde köcheln. Bohnen in den letzten 10 Minuten beifügen.",
+    "Mit Salz und Pfeffer abschmecken. Mit Petersilie garnieren."
   ],
   "tips": "",
   "imageUrl": null,
   "imageZutaten": null,
-  "imageKochen": null
+  "imageKochen": null,
+  "dietCategory": "vegan"
 }

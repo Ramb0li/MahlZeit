@@ -1,0 +1,94 @@
+{
+  "id": "fvt-14",
+  "name": "Linsen-Tätschli",
+  "category": "Vegetarische Hauptgerichte",
+  "timeMinutes": 35,
+  "tags": [
+    "Vegan"
+  ],
+  "weatherType": "neutral",
+  "source": "Cuiseline",
+  "basePortions": 4,
+  "dietCategory": "vegan",
+  "description": "Knusprige Linsen-Bratlinge mit Couscous, Mandeln und Petersilie.",
+  "ingredients": [
+    {
+      "name": "rote Linsen",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebrühe",
+      "amount": 400,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebeln",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 2,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Petersilie",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Mandeln",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Dinkel-Couscous",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Rapsöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Granatapfel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfefferminze",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Zwiebeln und Knoblauch im Olivenöl andünsten. Linsen beigeben, mit Gemüsebrühe ablöschen.",
+    "Linsen ca. 10–12 Minuten weich kochen lassen.",
+    "Petersilie hacken und Mandeln grob hacken. Unter die Linsenmasse mischen, würzen.",
+    "Rapsöl in Bratpfanne erhitzen. Je 2 EL Masse in die Pfanne geben, flach drücken.",
+    "Ca. 4 Minuten pro Seite goldbraun braten.",
+    "Mit Couscous, Granatapfelkernen und Pfefferminze servieren."
+  ],
+  "tips": "Wenn die Masse zu flüssig ist, etwas Mehl oder Haferflocken beigeben.",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null
+}

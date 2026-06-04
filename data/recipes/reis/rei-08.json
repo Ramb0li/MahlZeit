@@ -1,0 +1,90 @@
+{
+  "id": "rei-08",
+  "name": "Gerösteter Rosenkohl mit Risotto",
+  "category": "Reis & Getreide",
+  "timeMinutes": 40,
+  "tags": [
+    "Vegan",
+    "Herbst",
+    "Winter"
+  ],
+  "weatherType": "kalt",
+  "source": "Cuiseline",
+  "basePortions": 3,
+  "dietCategory": "vegan",
+  "description": "Karamellisierter Ofenrosenkohl mit cremigem Risotto.",
+  "ingredients": [
+    {
+      "name": "Rosenkohl",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 3
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 3
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 3
+    },
+    {
+      "name": "Ahornsirup",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 3
+    },
+    {
+      "name": "Paprika edelsüss",
+      "amount": 0.33,
+      "unit": "TL",
+      "perPortions": 3
+    },
+    {
+      "name": "Chiliflocken",
+      "amount": 0.33,
+      "unit": "TL",
+      "perPortions": 3
+    },
+    {
+      "name": "Risottoreis",
+      "amount": 240,
+      "unit": "g",
+      "perPortions": 3
+    },
+    {
+      "name": "Gemüsebrühe",
+      "amount": 900,
+      "unit": "ml",
+      "perPortions": 3
+    },
+    {
+      "name": "vegane Butter",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 3
+    },
+    {
+      "name": "Veganer Parmesan",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 3
+    }
+  ],
+  "steps": [
+    "Ofen auf 190 °C vorheizen.",
+    "Rosenkohl halbieren, mit Olivenöl, Ahornsirup, Paprika, Chiliflocken, Salz und Pfeffer mischen.",
+    "Auf Backblech verteilen, 20 Minuten backen (letzte 5 Min. auf oberster Rille).",
+    "Parallel Risotto zubereiten: Zwiebel andünsten, Reis beigeben, nach und nach Brühe einrühren.",
+    "Vegane Butter und Parmesan unterrühren. Mit Salz und Pfeffer würzen.",
+    "Risotto anrichten, gerösteten Rosenkohl darübergeben."
+  ],
+  "tips": "",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null
+}

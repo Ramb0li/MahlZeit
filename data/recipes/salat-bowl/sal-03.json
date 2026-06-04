@@ -5,21 +5,21 @@
   "timeMinutes": 20,
   "ingredients": [
     {
-      "name": "Bulgur",
-      "amount": 200,
+      "name": "Vollkorn-Couscous",
+      "amount": 250,
       "unit": "g",
       "perPortions": 4
     },
     {
-      "name": "Petersilie",
-      "amount": 1,
-      "unit": "Bund",
+      "name": "Gemüsebrühe",
+      "amount": 500,
+      "unit": "ml",
       "perPortions": 4
     },
     {
-      "name": "Minze",
-      "amount": 0.5,
-      "unit": "Bund",
+      "name": "Gurke",
+      "amount": 1,
+      "unit": "Stk",
       "perPortions": 4
     },
     {
@@ -29,29 +29,47 @@
       "perPortions": 4
     },
     {
-      "name": "Gurke",
-      "amount": 0.5,
+      "name": "Peperoni",
+      "amount": 1,
       "unit": "Stk",
       "perPortions": 4
     },
     {
-      "name": "Zitronensaft",
-      "amount": 3,
-      "unit": "EL",
+      "name": "Petersilie (glatt)",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfefferminzblätter",
+      "amount": 6,
+      "unit": "Stk",
       "perPortions": 4
     },
     {
       "name": "Olivenöl",
-      "amount": 4,
+      "amount": 6,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 1.5,
       "unit": "EL",
       "perPortions": 4
     }
   ],
   "weatherType": "warm",
-  "source": "Rezept von Cuiselin",
+  "source": "Cuiseline",
   "basePortions": 4,
-  "description": "Frischer Levante-Salat.",
-  "steps": [],
+  "description": "Frischer Levante-Salat mit Couscous, Gurke, Tomaten und Peperoni.",
+  "steps": [
+    "Couscous in grosse Schüssel, mit heisser Gemüsebrühe übergiessen, aufquellen lassen, mit Gabel auflockern.",
+    "Gurke, Tomaten und Peperoni fein würfeln.",
+    "Petersilie und Pfefferminze fein hacken.",
+    "Gemüse und Kräuter zum abgekühlten Couscous geben.",
+    "Olivenöl und Zitronensaft dazugeben, mit Salz und Pfeffer würzen. Alles vermischen."
+  ],
   "tips": "",
   "imageUrl": "/images/recipes/cuiselin-taboule.jpeg",
   "imageZutaten": "/images/recipes/cuiselin-taboule-zutaten.jpeg",
@@ -60,6 +78,8 @@
     "Mittagsgericht",
     "Frühling",
     "Sommer",
-    "Orientalisch"
-  ]
+    "Orientalisch",
+    "Vegan"
+  ],
+  "dietCategory": "vegan"
 }

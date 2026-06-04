@@ -1,0 +1,68 @@
+{
+  "id": "ei-10",
+  "name": "Cacao Smoothie Bowl",
+  "category": "Frühstück",
+  "timeMinutes": 10,
+  "tags": [
+    "Vegan"
+  ],
+  "weatherType": "neutral",
+  "source": "Cuiseline",
+  "basePortions": 1,
+  "dietCategory": "vegan",
+  "description": "Schokoladige Smoothie Bowl mit Banane, Kakao und Mandelmus.",
+  "ingredients": [
+    {
+      "name": "reife Banane",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 1
+    },
+    {
+      "name": "Kakaopulver",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 1
+    },
+    {
+      "name": "Mandelmus",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 1
+    },
+    {
+      "name": "Datteln",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 1
+    },
+    {
+      "name": "Hafermilch",
+      "amount": 0.75,
+      "unit": "dl",
+      "perPortions": 1
+    },
+    {
+      "name": "Leinsamen",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 1
+    },
+    {
+      "name": "Hanfsamen",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 1
+    }
+  ],
+  "steps": [
+    "Alle Zutaten in den Mixer geben.",
+    "Fein mixen bis eine cremige Masse entsteht.",
+    "In eine Schüssel geben.",
+    "Mit Granola, Früchten, Cacao Nibs und Kokosflocken garnieren."
+  ],
+  "tips": "",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null
+}

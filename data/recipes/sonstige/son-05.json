@@ -1,0 +1,58 @@
+{
+  "id": "son-05",
+  "name": "Bärlauchpesto",
+  "category": "Snacks & Vorspeisen",
+  "timeMinutes": 15,
+  "tags": [
+    "Vegan",
+    "Frühling"
+  ],
+  "weatherType": "neutral",
+  "source": "Cuiseline",
+  "basePortions": 4,
+  "dietCategory": "vegan",
+  "description": "Frisches Bärlauchpesto – im Kühlschrank 2–3 Wochen haltbar.",
+  "ingredients": [
+    {
+      "name": "Bärlauch",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 1,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Veganer Parmesan",
+      "amount": 70,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Pinienkerne (oder Zedernkerne)",
+      "amount": 40,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 40,
+      "unit": "ml",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Pinienkerne kurz ohne Fett anrösten, beiseitestellen.",
+    "Bärlauch gründlich waschen, abtrocknen, in grobe Streifen schneiden.",
+    "Bärlauch, Olivenöl, veganen Parmesan und Pinienkerne mit Stabmixer pürieren.",
+    "Mit Zitronensaft, Salz und Pfeffer abschmecken.",
+    "Mit einer Schicht Olivenöl abgedeckt im Kühlschrank aufbewahren."
+  ],
+  "tips": "Im Kühlschrank ca. 2–3 Wochen haltbar wenn mit Olivenöl bedeckt.",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null
+}

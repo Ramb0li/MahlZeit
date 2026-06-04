@@ -1,0 +1,89 @@
+{
+  "id": "sal-10",
+  "name": "Gurken-Ananas-Salat",
+  "category": "Salate & Bowls",
+  "timeMinutes": 15,
+  "tags": [
+    "Vegan",
+    "Sommer"
+  ],
+  "weatherType": "warm",
+  "source": "Cuiseline",
+  "basePortions": 4,
+  "dietCategory": "vegan",
+  "description": "Exotischer Salat mit Gurke, Ananas und asiatischem Dressing.",
+  "ingredients": [
+    {
+      "name": "Salatgurke",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Ananas (frisch)",
+      "amount": 8,
+      "unit": "Scheiben",
+      "perPortions": 4
+    },
+    {
+      "name": "Frühlingszwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Cashewnüsse",
+      "amount": 80,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Ingwer",
+      "amount": 1,
+      "unit": "kleines Stück",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Sojasosse",
+      "amount": 5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Heller Balsamico",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Sambal Oelek",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Sesamkörner",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Ingwer schälen und fein reiben, Knoblauch pressen.",
+    "Sauce aus Ingwer, Knoblauch, Sojasosse, Balsamico, Sambal Oelek, Salz und Pfeffer gut mischen.",
+    "Cashewnüsse in einer Pfanne ohne Öl rösten und grob hacken.",
+    "Ananasscheiben würfeln, Gurke in Scheiben schneiden, Frühlingszwiebel schneiden.",
+    "Gemüse und Ananas mit der Sauce mischen, anrichten.",
+    "Cashewnüsse und Sesamkörner darüber verteilen."
+  ],
+  "tips": "",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null
+}

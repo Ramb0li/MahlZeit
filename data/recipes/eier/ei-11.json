@@ -1,0 +1,101 @@
+{
+  "id": "ei-11",
+  "name": "Granola",
+  "category": "Frühstück",
+  "timeMinutes": 50,
+  "tags": [
+    "Vegan",
+    "Mealprep-geeignet"
+  ],
+  "weatherType": "neutral",
+  "source": "Cuiseline",
+  "basePortions": 8,
+  "dietCategory": "vegan",
+  "description": "Selbstgemachtes knuspriges Granola mit Nüssen, Samen und Datteln.",
+  "ingredients": [
+    {
+      "name": "Haferflocken",
+      "amount": 3,
+      "unit": "Tassen",
+      "perPortions": 8
+    },
+    {
+      "name": "Pekannüsse",
+      "amount": 1,
+      "unit": "Tasse",
+      "perPortions": 8
+    },
+    {
+      "name": "Walnüsse",
+      "amount": 1,
+      "unit": "Tasse",
+      "perPortions": 8
+    },
+    {
+      "name": "Kürbiskerne",
+      "amount": 0.5,
+      "unit": "Tasse",
+      "perPortions": 8
+    },
+    {
+      "name": "Cashewnüsse",
+      "amount": 1,
+      "unit": "Tasse",
+      "perPortions": 8
+    },
+    {
+      "name": "Leinsamen",
+      "amount": 0.5,
+      "unit": "Tasse",
+      "perPortions": 8
+    },
+    {
+      "name": "Hanfsamen",
+      "amount": 0.5,
+      "unit": "Tasse",
+      "perPortions": 8
+    },
+    {
+      "name": "Datteln",
+      "amount": 1,
+      "unit": "Tasse",
+      "perPortions": 8
+    },
+    {
+      "name": "Ahornsirup",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 8
+    },
+    {
+      "name": "Rapsöl",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 8
+    },
+    {
+      "name": "Zimt",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 8
+    },
+    {
+      "name": "Salz",
+      "amount": 2,
+      "unit": "Prisen",
+      "perPortions": 8
+    }
+  ],
+  "steps": [
+    "Ofen auf 160 °C vorheizen (Ober- und Unterhitze).",
+    "Alle Zutaten ausser Datteln in grosser Schüssel mit Rapsöl und Ahornsirup gut vermischen.",
+    "Masse auf zwei Backbleche verteilen.",
+    "Ca. 40 Minuten backen, in der Halbzeit die Bleche tauschen damit alles gleichmässig röstet.",
+    "Datteln in feine Ringe schneiden, 7 Minuten vor Backende auf den Blechen verteilen.",
+    "Auf Backblech vollständig auskühlen lassen, dann in Gläser abfüllen."
+  ],
+  "tips": "Mit Kokosjogurt, pflanzlicher Milch und saisonalen Früchten servieren.",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null
+}

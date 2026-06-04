@@ -8,7 +8,7 @@
     "Vegan"
   ],
   "weatherType": "neutral",
-  "source": "Familien-Rezeptbuch",
+  "source": "Cuiseline",
   "basePortions": 4,
   "description": "Cremiger veganer Rahmspinat mit Cashew-Rahm.",
   "ingredients": [
@@ -19,7 +19,7 @@
       "perPortions": 4
     },
     {
-      "name": "TK-Spinat, gehackt",
+      "name": "frischer Spinat",
       "amount": 500,
       "unit": "g",
       "perPortions": 4
@@ -50,14 +50,15 @@
     }
   ],
   "steps": [
-    "Cashews in 250 ml Wasser einweichen.",
-    "Zwiebel und Knoblauch hacken, in Butter andünsten.",
-    "Spinat beifügen, langsam erwärmen.",
-    "Cashews pürieren zu Rahm. Mit Bouillonpaste zum Spinat geben, aufkochen.",
-    "Mit Muskatnuss, Hefeflocken, Salz und Pfeffer würzen."
+    "Cashewnüsse in 250 ml Gemüsebrühe einweichen.",
+    "Vegane Butter in Pfanne, Zwiebel und Knoblauch andünsten.",
+    "Frischen Spinat beifügen, langsam erwärmen.",
+    "Cashews mit der Brühe fein pürieren.",
+    "Cashewrahm zum Spinat geben, aufkochen. Mit Muskatnuss, Salz, Pfeffer und Hefeflocken würzen."
   ],
   "imageUrl": null,
   "imageZutaten": null,
   "imageKochen": null,
-  "tips": ""
+  "tips": "",
+  "dietCategory": "vegan"
 }

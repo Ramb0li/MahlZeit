@@ -1,0 +1,63 @@
+{
+  "id": "sal-11",
+  "name": "Gurkensalat",
+  "category": "Salate & Bowls",
+  "timeMinutes": 10,
+  "tags": [
+    "Vegan",
+    "Sommer"
+  ],
+  "weatherType": "warm",
+  "source": "Cuiseline",
+  "basePortions": 4,
+  "dietCategory": "vegan",
+  "description": "Einfacher Gurkensalat mit Dill und Mandeljogurt-Dressing.",
+  "ingredients": [
+    {
+      "name": "Gurken",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Mandeljogurt",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Dijon-Senf (körnig)",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kräuteressig",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Sonnenblumenöl",
+      "amount": 1.5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Dill (frisch oder getrocknet)",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Mandeljogurt, Senf, Essig und Öl in eine Schüssel geben, mit Salz, Pfeffer und Kräutersalz würzen.",
+    "Gurken in Scheiben schneiden.",
+    "Dill zerkleinern und dazugeben.",
+    "Gurken in die Schüssel geben und alles vermischen."
+  ],
+  "tips": "",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null
+}

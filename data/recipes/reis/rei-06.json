@@ -2,54 +2,87 @@
   "id": "rei-06",
   "name": "Linsen-Reis",
   "category": "Reis & Getreide",
-  "timeMinutes": 30,
+  "timeMinutes": 40,
   "ingredients": [
     {
-      "name": "Linsen (grün)",
-      "amount": 200,
+      "name": "Linsen (trocken)",
+      "amount": 300,
       "unit": "g",
       "perPortions": 4
     },
     {
-      "name": "Basmati- oder Langkornreis",
-      "amount": 280,
+      "name": "Jasminreis",
+      "amount": 400,
       "unit": "g",
       "perPortions": 4
     },
     {
-      "name": "Zwiebel",
+      "name": "Zwiebeln",
       "amount": 2,
       "unit": "Stk",
       "perPortions": 4
     },
     {
       "name": "Knoblauch",
-      "amount": 2,
+      "amount": 3,
       "unit": "Zehen",
       "perPortions": 4
     },
     {
-      "name": "Kreuzkümmel",
+      "name": "Ingwer",
+      "amount": 2,
+      "unit": "cm Stück",
+      "perPortions": 4
+    },
+    {
+      "name": "Rapsöl",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kardamom gemahlen",
       "amount": 1,
       "unit": "TL",
       "perPortions": 4
     },
     {
-      "name": "Olivenöl",
-      "amount": 3,
-      "unit": "EL",
+      "name": "Kurkuma",
+      "amount": 4,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebrühe",
+      "amount": 1400,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Koriander",
+      "amount": 1,
+      "unit": "Bund",
       "perPortions": 4
     }
   ],
   "weatherType": "neutral",
-  "source": "Rezept von Cuiselin",
+  "source": "Cuiseline",
   "basePortions": 4,
-  "description": "Einfaches, sättigendes Linsen-Reis-Gericht.",
-  "steps": [],
+  "description": "Würziger Linsenreis mit Kurkuma, Kardamom und frischem Koriander.",
+  "steps": [
+    "Zwiebeln, Knoblauch und Ingwer im Rapsöl andünsten.",
+    "Linsen, Kardamom und Kurkuma beigeben, kurz mitdünsten.",
+    "Gemüsebrühe dazugiessen, aufkochen, ca. 15 Min. bei kleiner Hitze köcheln.",
+    "Reis dazugeben, weitere 15 Minuten köcheln bis alles gar ist.",
+    "Koriander abzupfen, daruntermengen. Mit Salz abschmecken.",
+    "Nach Belieben mit Kokosmilch und extra Koriander garnieren."
+  ],
   "tips": "",
   "imageUrl": null,
   "tags": [
     "Mealprep-geeignet",
-    "Mittagsgericht"
-  ]
+    "Mittagsgericht",
+    "Vegan"
+  ],
+  "dietCategory": "vegan"
 }
