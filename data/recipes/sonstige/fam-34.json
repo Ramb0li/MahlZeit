@@ -72,6 +72,42 @@
       "amount": 2,
       "unit": "EL",
       "perPortions": 3
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 3
+    },
+    {
+      "name": "Reisessig",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 3
+    },
+    {
+      "name": "Rohrzucker",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 3
+    },
+    {
+      "name": "Chiliflocken",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 3
+    },
+    {
+      "name": "Koriander",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 3
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 3
     }
   ],
   "steps": [

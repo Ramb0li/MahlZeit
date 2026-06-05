@@ -35,6 +35,12 @@
       "amount": 0.5,
       "unit": "Bund",
       "perPortions": 6
+    },
+    {
+      "name": "Kräutersalz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 6
     }
   ],
   "steps": [

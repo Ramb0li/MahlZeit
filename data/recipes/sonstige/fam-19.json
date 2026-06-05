@@ -52,6 +52,12 @@
       "amount": 2,
       "unit": "EL",
       "perPortions": 6
+    },
+    {
+      "name": "Vanillezucker",
+      "amount": 1,
+      "unit": "Pkg",
+      "perPortions": 6
     }
   ],
   "steps": [

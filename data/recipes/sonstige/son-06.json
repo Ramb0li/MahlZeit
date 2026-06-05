@@ -37,7 +37,7 @@
       "perPortions": 1
     },
     {
-      "name": "Dörrtomaten",
+      "name": "In Öl eingelegte Dörrtomaten",
       "amount": 2,
       "unit": "Stk",
       "perPortions": 1
@@ -46,6 +46,24 @@
       "name": "Rucola",
       "amount": 1,
       "unit": "Handvoll",
+      "perPortions": 1
+    },
+    {
+      "name": "Borlotti Bohnen",
+      "amount": 1,
+      "unit": "Handvoll",
+      "perPortions": 1
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 1
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
       "perPortions": 1
     }
   ],

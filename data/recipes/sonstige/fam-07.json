@@ -58,6 +58,18 @@
       "amount": 1,
       "unit": "EL",
       "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.25,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Vanillezucker",
+      "amount": 0.5,
+      "unit": "Pkg",
+      "perPortions": 4
     }
   ],
   "steps": [

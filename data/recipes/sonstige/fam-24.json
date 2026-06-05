@@ -34,6 +34,24 @@
       "amount": 0.5,
       "unit": "EL",
       "perPortions": 6
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 6
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 6
+    },
+    {
+      "name": "Cayennepfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 6
     }
   ],
   "steps": [

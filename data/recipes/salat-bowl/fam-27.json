@@ -52,6 +52,12 @@
       "amount": 0.5,
       "unit": "TL",
       "perPortions": 4
+    },
+    {
+      "name": "Mayonnaise",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
     }
   ],
   "steps": [

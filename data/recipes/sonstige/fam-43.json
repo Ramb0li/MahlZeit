@@ -44,6 +44,36 @@
       "amount": 1,
       "unit": "KL",
       "perPortions": 6
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 6
+    },
+    {
+      "name": "Rahm",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 6
+    },
+    {
+      "name": "Kapern",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 6
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 6
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 6
     }
   ],
   "steps": [

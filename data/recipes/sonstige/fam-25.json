@@ -47,6 +47,18 @@
       "amount": 1,
       "unit": "TL",
       "perPortions": 6
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 6
+    },
+    {
+      "name": "Cayennepfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 6
     }
   ],
   "steps": [

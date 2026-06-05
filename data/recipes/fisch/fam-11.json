@@ -56,6 +56,36 @@
       "amount": 2,
       "unit": "EL",
       "perPortions": 4
+    },
+    {
+      "name": "Peperoncini",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomatenpüree",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Bouillon",
+      "amount": 0.5,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
     }
   ],
   "steps": [

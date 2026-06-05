@@ -52,6 +52,12 @@
       "amount": 0.5,
       "unit": "TL",
       "perPortions": 6
+    },
+    {
+      "name": "Nelkenpulver",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 6
     }
   ],
   "steps": [

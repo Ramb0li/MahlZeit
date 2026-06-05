@@ -58,6 +58,18 @@
       "amount": 1,
       "unit": "EL",
       "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
     }
   ],
   "steps": [

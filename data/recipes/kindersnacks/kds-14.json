@@ -28,6 +28,12 @@
       "amount": 50,
       "unit": "g",
       "perPortions": 20
+    },
+    {
+      "name": "Wasser (zum Einweichen)",
+      "amount": 100,
+      "unit": "ml",
+      "perPortions": 20
     }
   ],
   "weatherType": "neutral",

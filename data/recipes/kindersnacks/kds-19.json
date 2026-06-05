@@ -46,6 +46,18 @@
       "amount": 200,
       "unit": "g",
       "perPortions": 8
+    },
+    {
+      "name": "Salz",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 8
+    },
+    {
+      "name": "Sojasahne",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 8
     }
   ],
   "weatherType": "neutral",

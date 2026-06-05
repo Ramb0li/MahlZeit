@@ -58,6 +58,18 @@
       "amount": 200,
       "unit": "g",
       "perPortions": 12
+    },
+    {
+      "name": "Vanillezucker",
+      "amount": 1,
+      "unit": "Pkg",
+      "perPortions": 12
+    },
+    {
+      "name": "Kaffee",
+      "amount": 60,
+      "unit": "ml",
+      "perPortions": 12
     }
   ],
   "steps": [

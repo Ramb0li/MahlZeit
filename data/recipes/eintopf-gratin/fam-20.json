@@ -58,6 +58,48 @@
       "amount": 0.5,
       "unit": "Bund",
       "perPortions": 6
+    },
+    {
+      "name": "Rapsöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 6
+    },
+    {
+      "name": "Butter",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 6
+    },
+    {
+      "name": "Gemüsebouillon",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 6
+    },
+    {
+      "name": "Muskatnuss",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 6
+    },
+    {
+      "name": "Paprika",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 6
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 6
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 6
     }
   ],
   "steps": [

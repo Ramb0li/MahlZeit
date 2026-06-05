@@ -50,6 +50,18 @@
       "amount": 4,
       "unit": "Stk",
       "perPortions": 4
+    },
+    {
+      "name": "Senf",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Ketchup",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
     }
   ],
   "steps": [

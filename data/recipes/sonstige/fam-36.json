@@ -43,6 +43,24 @@
       "amount": 2,
       "unit": "EL",
       "perPortions": 6
+    },
+    {
+      "name": "Sonnenblumenöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 6
+    },
+    {
+      "name": "Zucker",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 6
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 6
     }
   ],
   "steps": [

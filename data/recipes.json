@@ -1167,6 +1167,36 @@
         "amount": 3,
         "unit": "EL",
         "perPortions": 4
+      },
+      {
+        "name": "Weisswein",
+        "amount": 1,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Pouletgewürz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Bratbutter",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
       }
     ],
     "steps": [
@@ -1231,6 +1261,48 @@
         "name": "Zwiebeln",
         "amount": 2,
         "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Chilischote",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Bratbutter",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Curry",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Paprika",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Italienische Kräuter",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
         "perPortions": 4
       }
     ],
@@ -1297,6 +1369,24 @@
         "amount": 1,
         "unit": "TL",
         "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
       }
     ],
     "steps": [
@@ -1352,6 +1442,24 @@
         "name": "Butter",
         "amount": 1,
         "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Italienische Kräuter",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
         "perPortions": 4
       }
     ],
@@ -1426,6 +1534,36 @@
         "amount": 0.5,
         "unit": "Bund",
         "perPortions": 4
+      },
+      {
+        "name": "Bouillon",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Curry",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Provence Kräuter",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
       }
     ],
     "steps": [
@@ -1480,6 +1618,30 @@
         "name": "Sbrinz",
         "amount": 2,
         "unit": "Handvoll",
+        "perPortions": 4
+      },
+      {
+        "name": "Butter",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitronenschale (abgerieben)",
+        "amount": 0.5,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
         "perPortions": 4
       }
     ],
@@ -3382,6 +3544,18 @@
         "name": "Gemüsebouillon",
         "amount": 1,
         "unit": "L",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
         "perPortions": 4
       }
     ],
@@ -5670,6 +5844,36 @@
         "amount": 1,
         "unit": "EL",
         "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Bouillon",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Italienische Kräuter",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
       }
     ],
     "steps": [
@@ -5742,6 +5946,48 @@
         "name": "Petersilie",
         "amount": 0.5,
         "unit": "Bund",
+        "perPortions": 6
+      },
+      {
+        "name": "Rapsöl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 6
+      },
+      {
+        "name": "Butter",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 6
+      },
+      {
+        "name": "Gemüsebouillon",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 6
+      },
+      {
+        "name": "Muskatnuss",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 6
+      },
+      {
+        "name": "Paprika",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 6
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 6
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
         "perPortions": 6
       }
     ],
@@ -6181,6 +6427,24 @@
         "amount": 1,
         "unit": "dl",
         "perPortions": 4
+      },
+      {
+        "name": "Italienische Kräuter",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
       }
     ],
     "steps": [
@@ -6241,6 +6505,24 @@
         "name": "Olivenöl",
         "amount": 2,
         "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Italienische Kräuter",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
         "perPortions": 4
       }
     ],
@@ -8071,6 +8353,18 @@
         "amount": 1,
         "unit": "EL",
         "perPortions": 2
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 2
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 2
       }
     ],
     "steps": [
@@ -8132,6 +8426,24 @@
         "name": "Rapsöl",
         "amount": 3,
         "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Bohnenkraut",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
         "perPortions": 4
       }
     ],
@@ -8200,6 +8512,30 @@
         "amount": 2,
         "unit": "EL",
         "perPortions": 4
+      },
+      {
+        "name": "Curry",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Italienische Kräuter",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
       }
     ],
     "steps": [
@@ -8266,6 +8602,12 @@
         "name": "Senf",
         "amount": 0.5,
         "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Mayonnaise",
+        "amount": 1,
+        "unit": "EL",
         "perPortions": 4
       }
     ],
@@ -8334,6 +8676,18 @@
         "amount": 0.5,
         "unit": "TL",
         "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
       }
     ],
     "steps": [
@@ -8394,6 +8748,18 @@
         "name": "Sojasauce",
         "amount": 1,
         "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
         "perPortions": 4
       }
     ],
@@ -8466,6 +8832,30 @@
         "name": "Essig",
         "amount": 1,
         "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Senf",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Italienische Kräuter",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
         "perPortions": 4
       }
     ],
@@ -8581,6 +8971,36 @@
         "amount": 1,
         "unit": "EL",
         "perPortions": 4
+      },
+      {
+        "name": "Senf",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Rapsöl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Paprika",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
       }
     ],
     "steps": [
@@ -8638,6 +9058,24 @@
         "name": "Milch",
         "amount": 2,
         "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Senf",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
         "perPortions": 4
       }
     ],
@@ -8701,6 +9139,36 @@
         "name": "Essig",
         "amount": 2,
         "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Senf",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Milch",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Rapsöl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
         "perPortions": 4
       }
     ],
@@ -11179,6 +11647,36 @@
         "amount": 2,
         "unit": "EL",
         "perPortions": 4
+      },
+      {
+        "name": "Peperoncini",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomatenpüree",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Bouillon",
+        "amount": 0.5,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
       }
     ],
     "steps": [
@@ -11240,6 +11738,18 @@
         "name": "Zitronensaft",
         "amount": 1,
         "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
         "perPortions": 4
       }
     ],
@@ -11448,6 +11958,36 @@
         "amount": 2,
         "unit": "dl",
         "perPortions": 4
+      },
+      {
+        "name": "Basilikum",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Weisswein",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
       }
     ],
     "steps": [
@@ -11507,6 +12047,42 @@
         "name": "Weisswein",
         "amount": 1,
         "unit": "Schuss",
+        "perPortions": 4
+      },
+      {
+        "name": "Bratbutter",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Bratensaucenpulver",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Paprika",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Sambal Oelek",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
         "perPortions": 4
       }
     ],
@@ -11571,6 +12147,24 @@
         "name": "Rahm",
         "amount": 5,
         "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Mehl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
         "perPortions": 4
       }
     ],
@@ -11642,6 +12236,24 @@
         "name": "Curry",
         "amount": 1,
         "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
         "perPortions": 4
       }
     ],
@@ -11724,6 +12336,42 @@
         "amount": 20,
         "unit": "g",
         "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Lorbeerblatt",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Nelke",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Paprika",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
       }
     ],
     "steps": [
@@ -11770,6 +12418,36 @@
         "name": "Rahm",
         "amount": 4,
         "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Bratbutter",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Senf",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Paprika",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
         "perPortions": 4
       }
     ],
@@ -11839,6 +12517,36 @@
         "name": "Whisky",
         "amount": 4,
         "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Petersilienstiele",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfefferkörner",
+        "amount": 0.5,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
         "perPortions": 4
       }
     ],
@@ -12481,6 +13189,18 @@
         "amount": 1,
         "unit": "TL",
         "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
       }
     ],
     "steps": [
@@ -12746,6 +13466,18 @@
         "amount": 200,
         "unit": "g",
         "perPortions": 12
+      },
+      {
+        "name": "Vanillezucker",
+        "amount": 1,
+        "unit": "Pkg",
+        "perPortions": 12
+      },
+      {
+        "name": "Kaffee",
+        "amount": 60,
+        "unit": "ml",
+        "perPortions": 12
       }
     ],
     "steps": [
@@ -12814,6 +13546,30 @@
         "amount": 5,
         "unit": "dl",
         "perPortions": 4
+      },
+      {
+        "name": "Curry",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Provence Kräuter",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
       }
     ],
     "steps": [
@@ -12871,6 +13627,18 @@
         "name": "Olivenöl",
         "amount": 3,
         "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
         "perPortions": 4
       }
     ],
@@ -12944,6 +13712,18 @@
         "amount": 1,
         "unit": "EL",
         "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 0.25,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Vanillezucker",
+        "amount": 0.5,
+        "unit": "Pkg",
+        "perPortions": 4
       }
     ],
     "steps": [
@@ -13008,6 +13788,18 @@
         "name": "Essiggurken",
         "amount": 4,
         "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Senf",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Ketchup",
+        "amount": 1,
+        "unit": "EL",
         "perPortions": 4
       }
     ],
@@ -13088,6 +13880,36 @@
         "amount": 1,
         "unit": "Tasse",
         "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "All'Arrabbiata Gewürz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Italienische Kräuter",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
       }
     ],
     "steps": [
@@ -13162,6 +13984,42 @@
         "amount": 2,
         "unit": "EL",
         "perPortions": 4
+      },
+      {
+        "name": "Bratbutter",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Paprika",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Italienische Kräuter",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Senf",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
       }
     ],
     "steps": [
@@ -13228,6 +14086,12 @@
         "name": "Butter",
         "amount": 2,
         "unit": "EL",
+        "perPortions": 6
+      },
+      {
+        "name": "Vanillezucker",
+        "amount": 1,
+        "unit": "Pkg",
         "perPortions": 6
       }
     ],
@@ -13302,6 +14166,42 @@
         "amount": 0.5,
         "unit": "Bund",
         "perPortions": 6
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 1,
+        "unit": "Zehe",
+        "perPortions": 6
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 6
+      },
+      {
+        "name": "Basilikum",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 6
+      },
+      {
+        "name": "Paprika",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 6
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 6
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 6
       }
     ],
     "steps": [
@@ -13350,6 +14250,24 @@
         "name": "Zitronensaft",
         "amount": 0.5,
         "unit": "EL",
+        "perPortions": 6
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 6
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 6
+      },
+      {
+        "name": "Cayennepfeffer",
+        "amount": 1,
+        "unit": "Prise",
         "perPortions": 6
       }
     ],
@@ -13411,6 +14329,18 @@
         "name": "Paprika edelsüss",
         "amount": 1,
         "unit": "TL",
+        "perPortions": 6
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 6
+      },
+      {
+        "name": "Cayennepfeffer",
+        "amount": 1,
+        "unit": "Prise",
         "perPortions": 6
       }
     ],
@@ -13477,6 +14407,30 @@
         "name": "Olivenöl",
         "amount": 3,
         "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Rosmarin",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "All'Arrabbiata Gewürz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
         "perPortions": 4
       }
     ],
@@ -13564,6 +14518,42 @@
         "amount": 2,
         "unit": "EL",
         "perPortions": 3
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 3
+      },
+      {
+        "name": "Reisessig",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 3
+      },
+      {
+        "name": "Rohrzucker",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 3
+      },
+      {
+        "name": "Chiliflocken",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 3
+      },
+      {
+        "name": "Koriander",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 3
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 3
       }
     ],
     "steps": [
@@ -13623,6 +14613,24 @@
         "name": "Weinessig",
         "amount": 2,
         "unit": "EL",
+        "perPortions": 6
+      },
+      {
+        "name": "Sonnenblumenöl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 6
+      },
+      {
+        "name": "Zucker",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 6
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
         "perPortions": 6
       }
     ],
@@ -13744,6 +14752,36 @@
         "amount": 1,
         "unit": "KL",
         "perPortions": 6
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 6
+      },
+      {
+        "name": "Rahm",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 6
+      },
+      {
+        "name": "Kapern",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 6
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 6
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 6
       }
     ],
     "steps": [
@@ -13801,6 +14839,18 @@
         "amount": 1,
         "unit": "EL",
         "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
       }
     ],
     "steps": [
@@ -13852,6 +14902,12 @@
         "amount": 0.5,
         "unit": "Bund",
         "perPortions": 4
+      },
+      {
+        "name": "Kräutersalz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
       }
     ],
     "steps": [
@@ -13900,6 +14956,12 @@
         "name": "Basilikum",
         "amount": 0.5,
         "unit": "Bund",
+        "perPortions": 6
+      },
+      {
+        "name": "Kräutersalz",
+        "amount": 1,
+        "unit": "Prise",
         "perPortions": 6
       }
     ],
@@ -13961,6 +15023,24 @@
         "name": "Gemüse-Bouillonpaste",
         "amount": 0.25,
         "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Muskatnuss",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
         "perPortions": 4
       }
     ],
@@ -14031,6 +15111,24 @@
         "amount": 1,
         "unit": "Bund",
         "perPortions": 4
+      },
+      {
+        "name": "Mehl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
       }
     ],
     "steps": [
@@ -14073,6 +15171,18 @@
         "name": "Bratensaucenpulver/-paste",
         "amount": 1,
         "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
         "perPortions": 4
       }
     ],
@@ -14181,6 +15291,12 @@
         "name": "Zimt",
         "amount": 0.5,
         "unit": "TL",
+        "perPortions": 6
+      },
+      {
+        "name": "Nelkenpulver",
+        "amount": 1,
+        "unit": "Prise",
         "perPortions": 6
       }
     ],
@@ -15269,7 +16385,7 @@
         "perPortions": 1
       },
       {
-        "name": "Dörrtomaten",
+        "name": "In Öl eingelegte Dörrtomaten",
         "amount": 2,
         "unit": "Stk",
         "perPortions": 1
@@ -15278,6 +16394,24 @@
         "name": "Rucola",
         "amount": 1,
         "unit": "Handvoll",
+        "perPortions": 1
+      },
+      {
+        "name": "Borlotti Bohnen",
+        "amount": 1,
+        "unit": "Handvoll",
+        "perPortions": 1
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 1
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
         "perPortions": 1
       }
     ],
@@ -15353,6 +16487,18 @@
         "name": "pflanzliche Milch",
         "amount": 2,
         "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
         "perPortions": 4
       }
     ],
@@ -17275,6 +18421,12 @@
         "amount": 50,
         "unit": "g",
         "perPortions": 20
+      },
+      {
+        "name": "Wasser (zum Einweichen)",
+        "amount": 100,
+        "unit": "ml",
+        "perPortions": 20
       }
     ],
     "weatherType": "neutral",
@@ -17610,6 +18762,18 @@
         "name": "Dinkelmehl Type 630",
         "amount": 200,
         "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Salz",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 8
+      },
+      {
+        "name": "Sojasahne",
+        "amount": 2,
+        "unit": "EL",
         "perPortions": 8
       }
     ],
