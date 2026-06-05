@@ -310,9 +310,9 @@ export function ShoppingListView() {
 
     const ordered = buildOrderedCategories();
     for (const cat of ordered) {
-      const recipeItems = (list[cat] ?? []).filter(item => !deleted.includes(`${item.name.toLowerCase()}_${item.unit}`));
+      const allCatItems = list[cat] ?? [];
       const customInCat = custom.filter(c => c.category === cat);
-      if (!recipeItems.length && !customInCat.length) continue;
+      if (!allCatItems.length && !customInCat.length) continue;
 
       checkOverflow();
       const x = getX();
@@ -321,15 +321,23 @@ export function ShoppingListView() {
       const catTheme = INGREDIENT_CAT_COLORS[cat] ?? DEFAULT_CAT;
 
       const allItems = [
-        ...recipeItems.map(item => {
+        ...allCatItems.map(item => {
           const key = `${item.name.toLowerCase()}_${item.unit}`;
           const amount = overrides[key] ?? item.totalAmount;
-          return { text: `${item.name}`, qty: formatAmount(amount, item.unit), done: checked.has(key) };
+          return {
+            text: item.name,
+            qty: formatAmount(amount, item.unit),
+            done: checked.has(key),
+            deleted: deleted.includes(key),
+            inPantry: item.inPantry ?? false,
+          };
         }),
         ...customInCat.map(c => ({
           text: c.name,
           qty: c.amount ? `${c.amount} ${c.unit}` : '',
           done: c.checked,
+          deleted: false,
+          inPantry: false,
         })),
       ];
 
@@ -349,12 +357,16 @@ export function ShoppingListView() {
         const ix = getX(); const iy = getY();
         doc.setFont('helvetica', 'normal');
         doc.setFontSize(8.5);
-        doc.setTextColor(it.done ? 160 : C.ink[0], it.done ? 160 : C.ink[1], it.done ? 160 : C.ink[2]);
-        // Checkbox
-        doc.setDrawColor(...C.border);
+        // deleted = warm-grey, done = neutral grey, else ink
+        const textColor: [number, number, number] = it.deleted
+          ? [190, 175, 165]
+          : (it.done ? [160, 160, 160] : C.ink);
+        doc.setTextColor(...textColor);
+        // Checkbox (dimmed border for deleted, no checkmark)
+        doc.setDrawColor(...(it.deleted ? ([210, 200, 192] as [number, number, number]) : C.border));
         doc.setLineWidth(0.4);
         doc.rect(ix, iy - 3.5, 4, 4, 'S');
-        if (it.done) {
+        if (it.done && !it.deleted) {
           doc.setDrawColor(...C.accent);
           doc.line(ix + 0.5, iy - 1.5, ix + 1.5, iy - 0.5);
           doc.line(ix + 1.5, iy - 0.5, ix + 3.5, iy - 3.2);
@@ -362,14 +374,30 @@ export function ShoppingListView() {
         // Name
         const nameLines = doc.splitTextToSize(it.text, colW - 24);
         doc.text(nameLines, ix + 6, iy);
+        // Strikethrough for deleted items
+        if (it.deleted) {
+          doc.setDrawColor(190, 175, 165);
+          doc.setLineWidth(0.3);
+          const lineW = Math.min(doc.getTextWidth(it.text), colW - 30);
+          doc.line(ix + 6, iy - 2, ix + 6 + lineW, iy - 2);
+        }
         // Qty right-aligned in muted
         if (it.qty) {
           doc.setFont('helvetica', 'bold');
           doc.setFontSize(8);
-          doc.setTextColor(...C.muted);
+          doc.setTextColor(...(it.deleted ? ([190, 175, 165] as [number, number, number]) : C.muted));
           doc.text(it.qty, ix + colW, iy, { align: 'right' });
         }
         advY(nameLines.length * 4.5 + 1);
+        // "Im Vorrat" label below item
+        if (it.inPantry) {
+          checkOverflow();
+          doc.setFont('helvetica', 'normal');
+          doc.setFontSize(6);
+          doc.setTextColor(80, 140, 85);
+          doc.text('Im Vorrat', getX() + 6, getY() + 1.5);
+          advY(4.5);
+        }
       }
       advY(4);
     }
