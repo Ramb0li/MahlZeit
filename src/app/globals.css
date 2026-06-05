@@ -841,9 +841,19 @@ em { font-style: normal; color: var(--accent); }
 .mz-legal th, .mz-legal td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
 .mz-legal th { font-weight: 700; }
 
-/* ── Shopping-List responsive grid ──────────────────────── */
-.mz-shop-grid { display: grid; gap: 12px; align-items: start; grid-template-columns: repeat(1, 1fr); }
-@media (min-width: 540px)  { .mz-shop-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 860px)  { .mz-shop-grid { grid-template-columns: repeat(3, 1fr); } }
-@media (min-width: 1200px) { .mz-shop-grid { grid-template-columns: repeat(4, 1fr); } }
-@media (min-width: 1600px) { .mz-shop-grid { grid-template-columns: repeat(5, 1fr); } }
+/* ── Shopping-List responsive masonry (CSS columns) ─────── */
+/* Multi-Column-Layout statt Grid: Boxen packen sich vertikal dicht,
+   unabhängig von der Höhe der Nachbar-Boxen (kein Zeilen-Alignment). */
+.mz-shop-grid { column-count: 1; column-gap: 12px; }
+@media (min-width: 540px)  { .mz-shop-grid { column-count: 2; } }
+@media (min-width: 860px)  { .mz-shop-grid { column-count: 3; } }
+@media (min-width: 1200px) { .mz-shop-grid { column-count: 4; } }
+@media (min-width: 1600px) { .mz-shop-grid { column-count: 5; } }
+.mz-shop-grid > * {
+  display: inline-block;   /* verhindert Umbruch innerhalb einer Box (Browser-Kompatibilität) */
+  width: 100%;
+  margin-bottom: 12px;
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+}
