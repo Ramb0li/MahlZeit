@@ -1,6 +1,6 @@
 'use client';
 import { useState, useEffect, useCallback, useRef } from 'react';
-import { Check, Download, RefreshCw, Plus, Trash2, RotateCcw, X } from 'lucide-react';
+import { Check, Download, RefreshCw, Plus, Trash2, RotateCcw, X, ChevronDown } from 'lucide-react';
 import { getWeekId, getWeekDays, nextWeek, formatAmount } from '@/lib/utils';
 import { format } from 'date-fns';
 import { de } from 'date-fns/locale';
@@ -121,6 +121,9 @@ export function ShoppingListView() {
   const [showAdd, setShowAdd] = useState(false);
   const [draft, setDraft] = useState({ name: '', amount: '', unit: 'Stk', category: 'Sonstiges' });
   const nameInputRef = useRef<HTMLInputElement>(null);
+  const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
+  const toggleCollapse = (cat: string) =>
+    setCollapsed(prev => { const n = new Set(prev); n.has(cat) ? n.delete(cat) : n.add(cat); return n; });
 
   useEffect(() => { localStorage.setItem(`mz-ov-${weekId}`,  JSON.stringify(overrides)); }, [overrides, weekId]);
   useEffect(() => { localStorage.setItem('mz-custom',        JSON.stringify(custom));    }, [custom]);
@@ -263,8 +266,9 @@ export function ShoppingListView() {
     doc.setFontSize(20);
     doc.setTextColor(...C.ink);
     doc.text(kw, pageW - m, 13, { align: 'right' });
+    const kwWidth = doc.getTextWidth(kw);
     doc.setFontSize(8);
-    doc.text('KW ', pageW - m - doc.getTextWidth(kw) - 0.5, 13, { align: 'right' });
+    doc.text('KW ', pageW - m - kwWidth - 1, 13, { align: 'right' });
 
     doc.setFont('helvetica', 'normal');
     doc.setFontSize(7);
@@ -627,8 +631,9 @@ export function ShoppingListView() {
               >
                 {/* Card header */}
                 <div
-                  className="flex items-center gap-2 px-4 py-3"
-                  style={{ borderBottom: '1px solid #f0ebe3', backgroundColor: '#faf7f2' }}
+                  className="flex items-center gap-2 px-4 py-3 cursor-pointer select-none"
+                  style={{ borderBottom: collapsed.has(category) ? 'none' : '1px solid #f0ebe3', backgroundColor: '#faf7f2' }}
+                  onClick={() => toggleCollapse(category)}
                 >
                   <span style={{ fontSize: 18 }}>{icon}</span>
                   <span className="flex-1 text-sm font-semibold" style={{ color: '#271f1a' }}>{category}</span>
@@ -641,10 +646,19 @@ export function ShoppingListView() {
                   >
                     {catChecked}/{catTotal}
                   </span>
+                  <ChevronDown
+                    size={14}
+                    style={{
+                      color: '#9a8c80',
+                      transform: collapsed.has(category) ? 'rotate(-90deg)' : 'rotate(0deg)',
+                      transition: 'transform .2s',
+                      flexShrink: 0,
+                    }}
+                  />
                 </div>
 
                 {/* Items */}
-                <div>
+                {!collapsed.has(category) && <div>
                   {visibleRecipeItems.map((item) => {
                     const key          = `${item.name.toLowerCase()}_${item.unit}`;
                     const isChecked    = checked.has(key);
@@ -806,7 +820,7 @@ export function ShoppingListView() {
                       </button>
                     </div>
                   ))}
-                </div>
+                </div>}
               </div>
             );
           })}

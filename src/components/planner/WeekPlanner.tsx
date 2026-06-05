@@ -197,8 +197,9 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe }: We
     doc.setFontSize(20);
     doc.setTextColor(...C.ink);
     doc.text(kwStr, pageW - margin, 11, { align: 'right' });
+    const kwNumWidth = doc.getTextWidth(kwStr);
     doc.setFontSize(8);
-    doc.text('KW ', pageW - margin - doc.getTextWidth(kwStr) - 0.5, 11, { align: 'right' });
+    doc.text('KW ', pageW - margin - kwNumWidth - 1, 11, { align: 'right' });
 
     doc.setFont('helvetica', 'normal');
     doc.setFontSize(7);
@@ -267,7 +268,7 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe }: We
       doc.setFont('helvetica', 'bold');
       doc.setFontSize(6);
       doc.setTextColor(...mealBarColor);
-      doc.text(row.label.toUpperCase(), margin + labelW / 2, rowY + mealH / 2, { angle: 90, align: 'center' });
+      doc.text(row.label.toUpperCase(), margin + 2 + (labelW - 2) / 2, rowY + mealH / 2, { angle: 90, align: 'center' });
 
       // 7 Tageszellen
       for (let di = 0; di < 7; di++) {
@@ -350,7 +351,10 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe }: We
       { label: 'Vegan', color: C.dotV }, { label: 'Vegetarisch', color: C.dotVg },
       { label: 'Pescetarisch', color: C.dotP }, { label: 'Fleisch', color: C.dotM },
     ];
-    let lx = margin + 28;
+    doc.setFontSize(6.5);
+    const legendItemWidths = legend.map(leg => doc.getTextWidth(leg.label) + 9);
+    const totalLegendW = legendItemWidths.reduce((a, b) => a + b, 0);
+    let lx = (pageW / 2) - (totalLegendW / 2);
     for (const leg of legend) {
       doc.setFillColor(...leg.color);
       doc.circle(lx, footerY + 1, 1.5, 'F');

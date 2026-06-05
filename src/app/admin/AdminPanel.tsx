@@ -59,6 +59,22 @@ const STATUS_COLOR: Record<string, { bg: string; color: string }> = {
   pending:  { bg: '#fff3e0', color: '#e65100' },
 };
 
+/** Einheitliche Tab-Definition für Desktop-Nav und Mobile-BottomNav. */
+function ADMIN_TABS(
+  users: SafeUser[],
+  recipes: Recipe[],
+  userRecipes: { length: number } | null,
+  isAdmin: (email: string) => boolean,
+) {
+  return [
+    { id: 'users',        label: `Nutzer (${users.filter(u => !isAdmin(u.email)).length})`,           shortLabel: 'Nutzer'   },
+    { id: 'recipes',      label: `Rezepte (${recipes.length})`,                                        shortLabel: 'Rezepte'  },
+    { id: 'user-recipes', label: `Nutzer-Rezepte${userRecipes ? ` (${userRecipes.length})` : ''}`,    shortLabel: 'Nutzer-R.'},
+    { id: 'landing',      label: 'Landing',                                                            shortLabel: 'Landing'  },
+    { id: 'howto',        label: 'How-To',                                                             shortLabel: 'How-To'   },
+  ] as const;
+}
+
 interface Props {
   initialUsers:   SafeUser[];
   adminEmail:     string;
@@ -84,7 +100,8 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
   const router = useRouter();
 
   // ── Tab-State ───────────────────────────────────────────────────────────────
-  const [activeTab, setActiveTab] = useState<'users' | 'recipes' | 'landing' | 'user-recipes' | 'howto'>('users');
+  type AdminTab = 'users' | 'recipes' | 'user-recipes' | 'landing' | 'howto';
+  const [activeTab, setActiveTab] = useState<AdminTab>('users');
 
   // ── Nutzer-Rezepte-State ─────────────────────────────────────────────────────
   type UserRecipeRow = { groupId: string; groupName: string; recipe: Recipe };
@@ -364,18 +381,12 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
           Mahl<span style={{ color: 'var(--accent)' }}>Zeit</span>
           <span style={{ fontFamily: 'var(--font-ui)', fontSize: 12, fontWeight: 600, color: 'var(--muted)', marginLeft: 8 }}>Admin</span>
         </div>
-        <nav className="mz-topnav">
-          {([
-            { id: 'users'   as const, label: `Nutzer (${users.filter(u => !isAdmin(u.email)).length})` },
-            { id: 'recipes'      as const, label: `Rezepte (${recipes.length})` },
-            { id: 'user-recipes' as const, label: `Nutzer-Rezepte${userRecipes ? ` (${userRecipes.length})` : ''}` },
-            { id: 'landing'      as const, label: 'Landing' },
-            { id: 'howto'        as const, label: 'How-To' },
-          ]).map(({ id, label }) => (
+        <nav className="mz-admin-topnav">
+          {ADMIN_TABS(users, recipes, userRecipes, isAdmin).map(({ id, label }) => (
             <button
               key={id}
-              onClick={() => setActiveTab(id)}
-              className={`mz-topnav-btn${activeTab === id ? ' on' : ''}`}
+              onClick={() => setActiveTab(id as AdminTab)}
+              className={`mz-admin-topnav-btn${activeTab === id ? ' on' : ''}`}
             >
               {label}
             </button>
@@ -397,7 +408,7 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
         </div>
       </header>
 
-      <div style={{ maxWidth: 1100, margin: '0 auto', padding: '28px 24px' }}>
+      <div className="mz-admin-content" style={{ maxWidth: 1100, margin: '0 auto', padding: '28px 24px' }}>
 
         {activeTab === 'users' && <>
 
@@ -431,7 +442,7 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
         </div>
 
         {/* Table */}
-        <div style={{ borderRadius: 'var(--r-card)', overflow: 'hidden', border: '1px solid var(--border)', background: 'var(--card)', boxShadow: 'var(--shadow-sm)' }}>
+        <div style={{ borderRadius: 'var(--r-card)', overflow: 'auto', border: '1px solid var(--border)', background: 'var(--card)', boxShadow: 'var(--shadow-sm)' }}>
           <table style={{ width: '100%', fontSize: 13, borderCollapse: 'collapse' }}>
             <thead>
               <tr style={{ background: 'var(--bg-2)', borderBottom: '1px solid var(--border)' }}>
@@ -615,7 +626,7 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
             </div>
 
             {/* Rezepte-Tabelle */}
-            <div style={{ borderRadius: 'var(--r-card)', overflow: 'hidden', border: '1px solid var(--border)', background: 'var(--card)', boxShadow: 'var(--shadow-sm)' }}>
+            <div style={{ borderRadius: 'var(--r-card)', overflow: 'auto', border: '1px solid var(--border)', background: 'var(--card)', boxShadow: 'var(--shadow-sm)' }}>
               <table style={{ width: '100%', fontSize: 13, borderCollapse: 'collapse' }}>
                 <thead>
                   <tr style={{ background: 'var(--bg-2)', borderBottom: '1px solid var(--border)' }}>
@@ -1041,7 +1052,7 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
               <p style={{ color: 'var(--muted)', fontSize: 13 }}>Noch keine Nutzer-Rezepte vorhanden.</p>
             )}
             {!userRecipesLoading && userRecipes && userRecipes.length > 0 && (
-              <div style={{ borderRadius: 'var(--r-card)', overflow: 'hidden', border: '1px solid var(--border)', background: 'var(--card)', boxShadow: 'var(--shadow-sm)' }}>
+              <div style={{ borderRadius: 'var(--r-card)', overflow: 'auto', border: '1px solid var(--border)', background: 'var(--card)', boxShadow: 'var(--shadow-sm)' }}>
                 <table style={{ width: '100%', fontSize: 13, borderCollapse: 'collapse' }}>
                   <thead>
                     <tr style={{ background: 'var(--bg-2)', borderBottom: '1px solid var(--border)' }}>
@@ -1417,6 +1428,20 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
         )}
 
       </div>
+
+      {/* Mobile Bottom Nav */}
+      <nav className="mz-admin-botnav">
+        {ADMIN_TABS(users, recipes, userRecipes, isAdmin).map(({ id, shortLabel }) => (
+          <button
+            key={id}
+            onClick={() => setActiveTab(id as AdminTab)}
+            className={`mz-admin-botnav-btn${activeTab === id ? ' on' : ''}`}
+          >
+            {shortLabel}
+          </button>
+        ))}
+      </nav>
+
     </div>
   );
 }

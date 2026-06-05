@@ -148,8 +148,8 @@ export function CookingGuide({ recipe, onClose, onFinished }: CookingGuideProps)
         {/* Mise-en-Place */}
         {isMisePage && (
           <>
-            <h1 className="text-2xl font-black uppercase tracking-widest text-center mb-6" style={{ color: '#fff', fontFamily: 'serif' }}>
-              MISE-EN-PLACE
+            <h1 className="text-xl font-bold leading-tight mb-6" style={{ color: '#fff' }}>
+              Mise-en-Place
             </h1>
             <div className="space-y-4">
               {groups.map((g, gi) => (

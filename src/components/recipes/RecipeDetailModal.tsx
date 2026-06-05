@@ -285,7 +285,7 @@ export function RecipeDetailModal({
         style={{ backgroundColor: '#fff', boxShadow: '0 24px 64px rgba(39,31,26,0.28)' }}
       >
         {/* ── Hero image ─────────────────────────────────────────────────── */}
-        <div className="relative shrink-0 overflow-hidden" style={{ height: 200 }}>
+        <div className="relative shrink-0 overflow-hidden" style={{ height: 'clamp(240px, 50vw, 320px)' }}>
           {images.length > 0 ? (
             images.map((src, i) => (
               <img

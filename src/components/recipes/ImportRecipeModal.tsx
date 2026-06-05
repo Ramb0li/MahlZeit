@@ -158,8 +158,8 @@ export function ImportRecipeModal({ isPremium, onClose, onImported }: ImportReci
       onClick={e => { if (e.target === e.currentTarget) onClose(); }}
     >
       <div
-        className="relative w-full max-w-md rounded-3xl shadow-2xl overflow-hidden"
-        style={{ backgroundColor: '#f2f6f2' }}
+        className="relative w-full max-w-md rounded-3xl shadow-2xl flex flex-col"
+        style={{ backgroundColor: '#f2f6f2', maxHeight: '85dvh', overflowY: 'auto' }}
       >
         {/* Header */}
         <div className="px-6 pt-6 pb-4" style={{ backgroundColor: '#4a7a4e' }}>

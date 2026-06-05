@@ -87,9 +87,6 @@ export default async function LandingPage() {
             automatisch deine Einkaufsliste. Alles verknüpft. Alles automatisiert.
           </p>
           <div className="mz-lp-hero-cta">
-            <Link href="/auth?plan=trial" className="mz-btn-primary lg">
-              7 Tage gratis testen
-            </Link>
             <Link href="#features" className="mz-btn-soft lg" style={{ padding: '14px 22px', fontSize: 15 }}>
               Mehr erfahren
             </Link>
@@ -109,7 +106,7 @@ export default async function LandingPage() {
             />
           ))}
           <div className="mz-cc-badge">
-            <span className="mz-cc-badge-num">172+</span>
+            <span className="mz-cc-badge-num">200+</span>
             <span>Rezepte</span>
           </div>
         </div>
