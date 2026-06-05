@@ -608,7 +608,7 @@ export function ShoppingListView() {
       )}
 
       {/* Empty */}
-      {!loading && totalItems === 0 && (
+      {!loading && totalItems === 0 && orderedCategories.length === 0 && (
         <div className="text-center py-12">
           <p className="text-sm" style={{ color: '#9a8c80' }}>Keine Einträge. Plane zuerst die Woche im Menüplan.</p>
         </div>

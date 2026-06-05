@@ -566,7 +566,7 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe }: We
               <button className="mz-btn-soft" onClick={() => setConfirmSuggest(false)}>
                 Abbrechen
               </button>
-              <button className="mz-btn-primary" onClick={runSuggestWeek}>
+              <button className="mz-btn-primary" onClick={runSuggestWeek} style={{ background: '#c62828' }}>
                 Neu vorschlagen
               </button>
             </div>
