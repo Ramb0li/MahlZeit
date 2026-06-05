@@ -604,14 +604,7 @@ export function ShoppingListView() {
 
       {/* ── Category grid ──────────────────────────────────────────────── */}
       {!loading && orderedCategories.length > 0 && (
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
-            gap: 12,
-            alignItems: 'start',
-          }}
-        >
+        <div className="mz-shop-grid">
           {orderedCategories.map((category) => {
             const recipeItems = list[category] ?? [];
             const customInCat = custom.filter(c => c.category === category);
@@ -669,11 +662,10 @@ export function ShoppingListView() {
                     const isFaded      = isChecked || isDeleted;
 
                     return (
+                      <div key={key} style={{ borderBottom: '1px solid #f7f4ee' }}>
                       <div
-                        key={key}
                         className="flex items-center gap-3 px-4 py-2.5 cursor-pointer transition-colors"
                         style={{
-                          borderBottom: '1px solid #f7f4ee',
                           backgroundColor: isChecked ? '#f7f4ee' : 'transparent',
                         }}
                         onClick={() => toggleChecked(key)}
@@ -773,6 +765,25 @@ export function ShoppingListView() {
                             <RotateCcw size={11} />
                           </button>
                         )}
+                      </div>
+                      {/* Recipe source + pantry indicator */}
+                      {(item.inPantry || (item.recipeNames?.length ?? 0) > 0) && (
+                        <div className="px-4 pb-2 flex flex-wrap items-center gap-1.5" style={{ marginTop: -2 }}>
+                          {item.inPantry && (
+                            <span
+                              className="text-[10px] font-medium px-1.5 py-0.5 rounded-full"
+                              style={{ backgroundColor: '#e8f5e9', color: '#2e7d32' }}
+                            >
+                              Im Vorrat
+                            </span>
+                          )}
+                          {(item.recipeNames?.length ?? 0) > 0 && (
+                            <span className="text-xs" style={{ color: '#b0a090' }}>
+                              {item.recipeNames.join(' · ')}
+                            </span>
+                          )}
+                        </div>
+                      )}
                       </div>
                     );
                   })}

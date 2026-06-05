@@ -758,6 +758,83 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                     </button>
                   </div>
 
+                  {/* ── Allgemeine Texte (meta) ── */}
+                  <div style={{ marginBottom: 36 }}>
+                    <h3 style={sectionHeadStyle}>Allgemeine Texte</h3>
+                    <div style={cardStyle}>
+                      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+                        <div>
+                          <label style={labelStyle}>Rezept-Anzahl (Badge)</label>
+                          <input
+                            value={lc.meta.recipeCount}
+                            onChange={e => setLandingContent({ ...lc, meta: { ...lc.meta, recipeCount: e.target.value } })}
+                            style={inputStyle}
+                            placeholder="200+"
+                          />
+                        </div>
+                        <div>
+                          <label style={labelStyle}>Footer-Jahr</label>
+                          <input
+                            value={lc.meta.footerYear}
+                            onChange={e => setLandingContent({ ...lc, meta: { ...lc.meta, footerYear: e.target.value } })}
+                            style={inputStyle}
+                            placeholder="2025"
+                          />
+                        </div>
+                      </div>
+                      <div style={{ marginTop: 12 }}>
+                        <label style={labelStyle}>Hero-Titel (Zeilenumbruch = neue Zeile · *Wort* = hervorgehoben)</label>
+                        <textarea
+                          value={lc.meta.heroTitle}
+                          onChange={e => setLandingContent({ ...lc, meta: { ...lc.meta, heroTitle: e.target.value } })}
+                          style={taStyle}
+                          rows={2}
+                          placeholder={'Deine Woche.\n*Dein* Essen.'}
+                        />
+                      </div>
+                      <div style={{ marginTop: 12 }}>
+                        <label style={labelStyle}>Hero-Lead (Einleitungstext)</label>
+                        <textarea
+                          value={lc.meta.heroLead}
+                          onChange={e => setLandingContent({ ...lc, meta: { ...lc.meta, heroLead: e.target.value } })}
+                          style={taStyle}
+                          rows={3}
+                        />
+                      </div>
+                      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 12, marginTop: 12 }}>
+                        <div>
+                          <label style={labelStyle}>Eyebrow: Features</label>
+                          <input value={lc.meta.eyebrowFeatures} onChange={e => setLandingContent({ ...lc, meta: { ...lc.meta, eyebrowFeatures: e.target.value } })} style={inputStyle} />
+                        </div>
+                        <div>
+                          <label style={labelStyle}>Eyebrow: Wochenplan</label>
+                          <input value={lc.meta.eyebrowWeek} onChange={e => setLandingContent({ ...lc, meta: { ...lc.meta, eyebrowWeek: e.target.value } })} style={inputStyle} />
+                        </div>
+                        <div>
+                          <label style={labelStyle}>Eyebrow: Rezepte</label>
+                          <input value={lc.meta.eyebrowRecipes} onChange={e => setLandingContent({ ...lc, meta: { ...lc.meta, eyebrowRecipes: e.target.value } })} style={inputStyle} />
+                        </div>
+                        <div>
+                          <label style={labelStyle}>Eyebrow: Stimmen</label>
+                          <input value={lc.meta.eyebrowReviews} onChange={e => setLandingContent({ ...lc, meta: { ...lc.meta, eyebrowReviews: e.target.value } })} style={inputStyle} />
+                        </div>
+                        <div>
+                          <label style={labelStyle}>Eyebrow: Preise</label>
+                          <input value={lc.meta.eyebrowPricing} onChange={e => setLandingContent({ ...lc, meta: { ...lc.meta, eyebrowPricing: e.target.value } })} style={inputStyle} />
+                        </div>
+                      </div>
+                      <div style={{ marginTop: 12 }}>
+                        <label style={labelStyle}>Trust-Zeile (unter den Preisen)</label>
+                        <textarea
+                          value={lc.meta.footerTrust}
+                          onChange={e => setLandingContent({ ...lc, meta: { ...lc.meta, footerTrust: e.target.value } })}
+                          style={taStyle}
+                          rows={2}
+                        />
+                      </div>
+                    </div>
+                  </div>
+
                   {/* ── Testimonials ── */}
                   <div style={{ marginBottom: 36 }}>
                     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 12 }}>

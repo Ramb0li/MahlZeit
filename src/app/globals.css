@@ -565,7 +565,8 @@ em { font-style: normal; color: var(--accent); }
 .mz-lp-rev-author em { font-weight: 500; font-size: 12.5px; color: var(--muted); }
 .mz-lp-pricing { background: linear-gradient(160deg, #2c211c, #3a2a22); padding: clamp(50px,7vw,90px) 40px; text-align: center; }
 .mz-lp-plans { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; max-width: 1180px; margin: 36px auto 0; }
-.mz-lp-plan { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14); border-radius: 22px; padding: 28px 22px; text-align: left; color: #fff; }
+.mz-lp-plan { display: flex; flex-direction: column; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14); border-radius: 22px; padding: 28px 22px; text-align: left; color: #fff; }
+.mz-lp-plan-cta { margin-top: auto; }
 .mz-lp-plan.featured { background: #fff; color: var(--ink); transform: scale(1.04); box-shadow: var(--shadow-lg); }
 .mz-lp-plan-badge { display: inline-block; font-size: 11.5px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; padding: 5px 12px; border-radius: 999px; background: rgba(255,255,255,.12); margin-bottom: 18px; }
 .mz-lp-plan.featured .mz-lp-plan-badge { background: var(--accent-tint); color: var(--accent-ink); }
@@ -822,3 +823,27 @@ em { font-style: normal; color: var(--accent); }
 .scrollbar-hide { scrollbar-width: none; }
 .scrollbar-hide::-webkit-scrollbar { display: none; }
 .font-fraunces { font-family: var(--font-display); }
+
+/* ── Legal / static prose pages ─────────────────────────── */
+.mz-legal { max-width: 760px; margin: 0 auto; padding: 48px 24px 72px; color: var(--ink); }
+.mz-legal h1 { font-family: var(--font-display); font-size: 38px; font-weight: 800; letter-spacing: -.03em; line-height: 1.1; margin: 0 0 6px; }
+.mz-legal .mz-legal-sub { color: var(--muted); font-size: 14.5px; margin: 0 0 36px; }
+.mz-legal h2 { font-family: var(--font-display); font-size: 22px; font-weight: 800; letter-spacing: -.02em; margin: 38px 0 12px; }
+.mz-legal h3 { font-size: 16px; font-weight: 700; margin: 24px 0 8px; }
+.mz-legal p { font-size: 15px; line-height: 1.7; margin: 0 0 14px; color: var(--ink); }
+.mz-legal ul { margin: 0 0 16px; padding-left: 20px; }
+.mz-legal li { font-size: 15px; line-height: 1.7; margin-bottom: 6px; }
+.mz-legal a { color: var(--accent); text-decoration: none; font-weight: 600; }
+.mz-legal a:hover { text-decoration: underline; }
+.mz-legal strong { font-weight: 700; }
+.mz-legal .mz-legal-note { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 14px 18px; font-size: 13.5px; color: var(--muted); margin: 0 0 28px; }
+.mz-legal table { width: 100%; border-collapse: collapse; margin: 4px 0 18px; font-size: 14px; }
+.mz-legal th, .mz-legal td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+.mz-legal th { font-weight: 700; }
+
+/* ── Shopping-List responsive grid ──────────────────────── */
+.mz-shop-grid { display: grid; gap: 12px; align-items: start; grid-template-columns: repeat(1, 1fr); }
+@media (min-width: 540px)  { .mz-shop-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 860px)  { .mz-shop-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1200px) { .mz-shop-grid { grid-template-columns: repeat(4, 1fr); } }
+@media (min-width: 1600px) { .mz-shop-grid { grid-template-columns: repeat(5, 1fr); } }

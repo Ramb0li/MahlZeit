@@ -206,7 +206,6 @@ export type ShoppingList = Record<string, ShoppingItem[]>;
 export interface PantryItem {
   id: string;
   name: string;
-  amount?: string;
   addedAt: string;
 }
 

@@ -39,10 +39,27 @@ export interface LandingPlan {
   featured: boolean;
 }
 
+export interface LandingMeta {
+  /** Hero badge, e.g. "200+" */
+  recipeCount:     string;
+  /** Hero headline. Convention: "\n" = line break, *word* = <em>word</em> */
+  heroTitle:       string;
+  heroLead:        string;
+  eyebrowFeatures: string;
+  eyebrowWeek:     string;
+  eyebrowRecipes:  string;
+  eyebrowReviews:  string;
+  eyebrowPricing:  string;
+  footerYear:      string;
+  /** Trust line under the pricing cards */
+  footerTrust:     string;
+}
+
 export interface LandingContent {
   reviews:  LandingReview[];
   features: LandingFeature[];
   plans:    LandingPlan[];
+  meta:     LandingMeta;
 }
 
 // ─── Defaults (matches page.tsx hardcode, used as fallback) ───────────────────
@@ -79,7 +96,7 @@ export const DEFAULT_LANDING_CONTENT: LandingContent = {
     {
       n: '03',
       title: 'Rezeptbibliothek',
-      text: '170+ Rezepte von @cuiseline, kuratiert und laufend erweitert. Speichere deine Lieblingsrezepte mit Anleitungen, Zutaten und Variationen mithilfe unserem KI Tool, welches Fotos oder Rezepte automatisch erkennt und einliest.',
+      text: '200+ Menüs von @cuiseline, kuratiert und laufend erweitert. Speichere deine Lieblingsrezepte mit Anleitungen, Zutaten und Variationen mithilfe unserem KI Tool, welches Fotos oder Rezepte automatisch erkennt und einliest.',
       link: { text: '@cuiseline', url: 'https://www.instagram.com/cuiseline/' },
     },
     {
@@ -114,16 +131,39 @@ export const DEFAULT_LANDING_CONTENT: LandingContent = {
       href: '/auth?plan=yearly', featured: false,
     },
   ],
+  meta: {
+    recipeCount:     '200+',
+    heroTitle:       'Deine Woche.\n*Dein* Essen.',
+    heroLead:        'MahlZeit erstellt deinen Wochenplan, schlägt Rezepte vor und schreibt automatisch deine Einkaufsliste. Alles verknüpft. Alles automatisiert.',
+    eyebrowFeatures: 'Was dich erwartet',
+    eyebrowWeek:     'Wochenplan',
+    eyebrowRecipes:  'Rezepte die passen',
+    eyebrowReviews:  'Stimmen',
+    eyebrowPricing:  'Preise',
+    footerYear:      '2025',
+    footerTrust:     '🔒 Sichere Zahlung via Stripe  ·  🇨🇭 Made in Switzerland  ·  Kein Abo-Zwang bei Lifetime',
+  },
 };
 
 // ─── Storage helpers ──────────────────────────────────────────────────────────
+
+/** Merge stored content over defaults so older records without newer fields (e.g. `meta`) never crash. */
+function withDefaults(stored: Partial<LandingContent> | null | undefined): LandingContent {
+  if (!stored) return DEFAULT_LANDING_CONTENT;
+  return {
+    reviews:  stored.reviews  ?? DEFAULT_LANDING_CONTENT.reviews,
+    features: stored.features ?? DEFAULT_LANDING_CONTENT.features,
+    plans:    stored.plans    ?? DEFAULT_LANDING_CONTENT.plans,
+    meta:     { ...DEFAULT_LANDING_CONTENT.meta, ...(stored.meta ?? {}) },
+  };
+}
 
 function readJson(): LandingContent {
   const fs   = require('fs')   as typeof import('fs');
   const path = require('path') as typeof import('path');
   const filePath = path.join(process.cwd(), 'data', JSON_FILE);
   if (!fs.existsSync(filePath)) return DEFAULT_LANDING_CONTENT;
-  try { return JSON.parse(fs.readFileSync(filePath, 'utf-8')) as LandingContent; }
+  try { return withDefaults(JSON.parse(fs.readFileSync(filePath, 'utf-8')) as Partial<LandingContent>); }
   catch   { return DEFAULT_LANDING_CONTENT; }
 }
 
@@ -142,8 +182,8 @@ function getRedis() {
 
 export async function getLandingContent(): Promise<LandingContent> {
   if (!USE_REDIS) return readJson();
-  const stored = await getRedis().get<LandingContent>(REDIS_KEY);
-  return stored ?? DEFAULT_LANDING_CONTENT;
+  const stored = await getRedis().get<Partial<LandingContent>>(REDIS_KEY);
+  return withDefaults(stored);
 }
 
 export async function setLandingContent(content: LandingContent): Promise<void> {

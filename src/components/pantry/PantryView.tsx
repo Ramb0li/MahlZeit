@@ -2,14 +2,11 @@
 import { useState, useEffect, useRef } from 'react';
 import { Package, Plus, Trash2 } from 'lucide-react';
 import type { PantryItem, Recipe } from '@/types';
-import { getAmountConstraints, COMMON_UNITS } from '@/lib/utils';
 
 export function PantryView() {
   const [items, setItems]               = useState<PantryItem[]>([]);
   const [loading, setLoading]           = useState(true);
   const [inputVal, setInputVal]         = useState('');
-  const [inputAmount, setInputAmount]   = useState('');
-  const [inputUnit, setInputUnit]       = useState('Stk');
   const [allIngredients, setAllIngredients] = useState<string[]>([]);
   const [suggestions, setSuggestions]   = useState<string[]>([]);
   const [showSug, setShowSug]           = useState(false);
@@ -56,24 +53,19 @@ export function PantryView() {
 
   const addItem = async () => {
     if (!inputVal.trim()) return;
-    const name   = inputVal.trim();
-    const amount = inputAmount.trim()
-      ? `${inputAmount.trim()} ${inputUnit.trim()}`
-      : undefined;
+    const name = inputVal.trim();
     // Optimistic insert
-    const tempId   = `tmp-${Date.now()}`;
-    const tempItem: PantryItem = { id: tempId, name, amount, addedAt: new Date().toISOString() };
+    const tempId = `tmp-${Date.now()}`;
+    const tempItem: PantryItem = { id: tempId, name, addedAt: new Date().toISOString() };
     setItems((prev) => [...prev, tempItem]);
     setInputVal('');
-    setInputAmount('');
-    setInputUnit('Stk');
     setShowSug(false);
     inputRef.current?.focus();
 
     const res = await fetch('/api/pantry', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name, amount }),
+      body: JSON.stringify({ name }),
     });
     if (res.ok) {
       const { item } = await res.json() as { item: PantryItem };
@@ -162,26 +154,6 @@ export function PantryView() {
           </div>
 
           <div className="flex gap-2">
-            <input
-              type="number"
-              placeholder="Menge"
-              value={inputAmount}
-              {...getAmountConstraints(inputUnit)}
-              onChange={(e) => setInputAmount(e.target.value)}
-              onKeyDown={(e) => { if (e.key === 'Enter') addItem(); }}
-              style={{ ...inputStyle, width: '90px' }}
-            />
-            <input
-              type="text"
-              list="mz-units-pantry"
-              placeholder="Einheit"
-              value={inputUnit}
-              onChange={(e) => setInputUnit(e.target.value)}
-              style={{ ...inputStyle, width: '84px' }}
-            />
-            <datalist id="mz-units-pantry">
-              {COMMON_UNITS.map(u => <option key={u} value={u} />)}
-            </datalist>
             <button
               onClick={addItem}
               disabled={!inputVal.trim()}
@@ -235,11 +207,6 @@ export function PantryView() {
                 <span className="flex-1 text-sm font-medium truncate" style={{ color: '#2c2420' }}>
                   {item.name}
                 </span>
-                {item.amount && (
-                  <span className="text-sm font-semibold flex-shrink-0" style={{ color: '#9c8c84' }}>
-                    {item.amount}
-                  </span>
-                )}
                 <button
                   onClick={() => removeItem(item.id)}
                   className="flex-shrink-0 p-1.5 rounded-lg transition-all"

@@ -17,7 +17,7 @@ export async function POST(request: Request) {
   if (!session)         return NextResponse.json({ error: 'Nicht angemeldet' }, { status: 401 });
   if (!session.groupId) return NextResponse.json({ error: 'Keine Gruppe' },     { status: 403 });
 
-  const { name, amount } = await request.json() as { name?: string; amount?: string };
+  const { name } = await request.json() as { name?: string };
   if (!name?.trim()) return NextResponse.json({ error: 'Name fehlt' }, { status: 400 });
 
   const items = await getPantry(session.groupId);
@@ -25,7 +25,6 @@ export async function POST(request: Request) {
     id:      `pi_${Date.now()}_${Math.random().toString(36).slice(2, 7)}`,
     name:    name.trim(),
     addedAt: new Date().toISOString(),
-    ...(amount?.trim() ? { amount: amount.trim() } : {}),
   };
   await savePantry(session.groupId, [...items, item]);
   return NextResponse.json({ ok: true, item });

@@ -268,7 +268,7 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe }: We
       doc.setFont('helvetica', 'bold');
       doc.setFontSize(6);
       doc.setTextColor(...mealBarColor);
-      doc.text(row.label.toUpperCase(), margin + 2 + (labelW - 2) / 2, rowY + mealH / 2, { angle: 90, align: 'center' });
+      doc.text(row.label.toUpperCase(), margin + labelW + 5, rowY + mealH / 2, { angle: 90, align: 'center' });
 
       // 7 Tageszellen
       for (let di = 0; di < 7; di++) {

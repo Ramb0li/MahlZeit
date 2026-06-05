@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Check, Leaf, Clock, Flame } from 'lucide-react';
 import { LandingBleed } from '@/components/landing/LandingBleed';
+import { SiteFooter } from '@/components/landing/SiteFooter';
 import { getLandingContent } from '@/lib/content';
 import type { LandingFeature } from '@/lib/content';
 
@@ -29,6 +30,20 @@ const WEEK = [
   { name: 'So', meal: 'Linsensuppe',     sub: '25 min' },
 ].map(d => ({ ...d, today: d.name === todayShort }));
 
+/** Renders editable headline text. Convention: "\n" = line break, *word* = <em>word</em>. */
+function renderRichTitle(raw: string) {
+  return raw.split('\n').map((line, li, arr) => (
+    <span key={li}>
+      {line.split(/(\*[^*]+\*)/g).map((part, pi) =>
+        part.startsWith('*') && part.endsWith('*') && part.length > 1
+          ? <em key={pi}>{part.slice(1, -1)}</em>
+          : <span key={pi}>{part}</span>
+      )}
+      {li < arr.length - 1 && <br />}
+    </span>
+  ));
+}
+
 /** Renders a feature text with an optional inline link injected at link.text. */
 function renderFeatureText(f: LandingFeature) {
   if (!f.link) return f.text;
@@ -51,7 +66,7 @@ function renderFeatureText(f: LandingFeature) {
 }
 
 export default async function LandingPage() {
-  const { reviews, features, plans } = await getLandingContent();
+  const { reviews, features, plans, meta } = await getLandingContent();
 
   return (
     <div className="mz-lp">
@@ -80,11 +95,10 @@ export default async function LandingPage() {
             Dein schlauer Menüplaner
           </div>
           <h1 className="mz-lp-h1">
-            Deine Woche.<br /><em>Dein</em> Essen.
+            {renderRichTitle(meta.heroTitle)}
           </h1>
           <p className="mz-lp-lead">
-            MahlZeit erstellt deinen Wochenplan, schlägt Rezepte vor und schreibt
-            automatisch deine Einkaufsliste. Alles verknüpft. Alles automatisiert.
+            {meta.heroLead}
           </p>
           <div className="mz-lp-hero-cta">
             <Link href="#features" className="mz-btn-soft lg" style={{ padding: '14px 22px', fontSize: 15 }}>
@@ -106,7 +120,7 @@ export default async function LandingPage() {
             />
           ))}
           <div className="mz-cc-badge">
-            <span className="mz-cc-badge-num">200+</span>
+            <span className="mz-cc-badge-num">{meta.recipeCount}</span>
             <span>Rezepte</span>
           </div>
         </div>
@@ -119,7 +133,7 @@ export default async function LandingPage() {
 
       {/* ── Features ──────────────────────────────────────────────────── */}
       <div className="mz-lp-features" id="features">
-        <p className="mz-eyebrow">Was dich erwartet</p>
+        <p className="mz-eyebrow">{meta.eyebrowFeatures}</p>
         <h2 className="mz-lp-h2" style={{ marginTop: 10 }}>
           Alles, was du für<br />deine Woche <em>brauchst.</em>
         </h2>
@@ -139,7 +153,7 @@ export default async function LandingPage() {
 
       {/* ── Week preview ──────────────────────────────────────────────── */}
       <div className="mz-lp-week">
-        <p className="mz-eyebrow">Wochenplan</p>
+        <p className="mz-eyebrow">{meta.eyebrowWeek}</p>
         <h2 className="mz-lp-h2" style={{ marginTop: 10 }}>
           Deine Woche, <em>geplant.</em>
         </h2>
@@ -161,7 +175,7 @@ export default async function LandingPage() {
           style={{ backgroundImage: 'url(/images/recipes/cuiselin-gruener-linsensalat.jpg)' }}
         />
         <div className="mz-lp-two-txt">
-          <p className="mz-eyebrow">Rezepte die passen</p>
+          <p className="mz-eyebrow">{meta.eyebrowRecipes}</p>
           <h3 style={{ marginTop: 10 }}>
             Rezepte,<br /><em>die passen.</em>
           </h3>
@@ -187,7 +201,7 @@ export default async function LandingPage() {
 
       {/* ── Reviews ───────────────────────────────────────────────────── */}
       <div className="mz-lp-reviews">
-        <p className="mz-eyebrow" style={{ textAlign: 'center' }}>Stimmen</p>
+        <p className="mz-eyebrow" style={{ textAlign: 'center' }}>{meta.eyebrowReviews}</p>
         <h2 className="mz-lp-h2" style={{ marginTop: 10, textAlign: 'center' }}>
           Was <em>andere</em> sagen.
         </h2>
@@ -218,7 +232,7 @@ export default async function LandingPage() {
 
       {/* ── Pricing ───────────────────────────────────────────────────── */}
       <div className="mz-lp-pricing" id="pricing">
-        <p className="mz-eyebrow" style={{ color: 'rgba(255,255,255,.6)' }}>Preise</p>
+        <p className="mz-eyebrow" style={{ color: 'rgba(255,255,255,.6)' }}>{meta.eyebrowPricing}</p>
         <h2 className="mz-lp-h2" style={{ color: '#fff', marginTop: 10 }}>
           Einfach. Fair. <em>Dein</em> Preis.
         </h2>
@@ -241,33 +255,19 @@ export default async function LandingPage() {
                   </li>
                 ))}
               </ul>
-              <Link href={p.href} className={p.featured ? 'mz-btn-primary' : 'mz-btn-ghost-light'} style={{ display: 'block', textAlign: 'center', textDecoration: 'none', padding: '11px 18px', borderRadius: 999, fontWeight: 700, fontSize: 14 }}>
+              <Link href={p.href} className={`mz-lp-plan-cta ${p.featured ? 'mz-btn-primary' : 'mz-btn-ghost-light'}`} style={{ display: 'block', textAlign: 'center', textDecoration: 'none', padding: '11px 18px', borderRadius: 999, fontWeight: 700, fontSize: 14 }}>
                 {p.featured ? 'Jetzt kaufen →' : 'Auswählen →'}
               </Link>
             </div>
           ))}
         </div>
         <p className="mz-lp-trust">
-          🔒 Sichere Zahlung via Stripe &nbsp;·&nbsp; 🇨🇭 Made in Switzerland &nbsp;·&nbsp; Kein Abo-Zwang bei Lifetime
+          {meta.footerTrust}
         </p>
       </div>
 
       {/* ── Footer ────────────────────────────────────────────────────── */}
-      <footer className="mz-lp-footer">
-        <Link href="/" style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 8 }}>
-          <Image src="/Logo-Mahlzeit.png" alt="MahlZeit" width={24} height={24} style={{ objectFit: 'contain' }} />
-          <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 16, letterSpacing: '-0.03em', color: 'var(--ink)' }}>
-            Mahl<span style={{ color: 'var(--accent)' }}>Zeit</span>
-          </span>
-        </Link>
-        <div className="mz-lp-foot-links">
-          <a>Datenschutz</a>
-          <a>Impressum</a>
-          <a>Nutzungsbedingungen</a>
-          <a>Kontakt</a>
-        </div>
-        <span className="mz-lp-foot-copy">© 2025 MahlZeit · @cuiseline</span>
-      </footer>
+      <SiteFooter year={meta.footerYear} />
 
       {/* ── Mobile sticky CTA ─────────────────────────────────────────── */}
       <div className="mz-lp-mobile-cta">
