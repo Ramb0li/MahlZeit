@@ -1,0 +1,36 @@
+{
+  "id": "sup-13",
+  "name": "Linsensuppe nach türkischer Art",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 35,
+  "ingredients": [
+    { "name": "Rote Linsen", "amount": 200, "unit": "g", "perPortions": 4 },
+    { "name": "Zwiebel (gross)", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Karotte (gross)", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Kartoffel (gross)", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Paprika", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Tomatenmark", "amount": 6, "unit": "EL", "perPortions": 4 },
+    { "name": "Wasser oder Gemüsebrühe", "amount": 1500, "unit": "ml", "perPortions": 4 },
+    { "name": "Zimt", "amount": 1.5, "unit": "TL", "perPortions": 4 },
+    { "name": "Zitronensaft", "amount": 2, "unit": "EL", "perPortions": 4 },
+    { "name": "Petersilie (frisch)", "amount": 1, "unit": "Bund", "perPortions": 4 },
+    { "name": "Olivenöl", "amount": 2, "unit": "EL", "perPortions": 4 },
+    { "name": "Salz und Pfeffer", "amount": 1, "unit": "Prise", "perPortions": 4 }
+  ],
+  "weatherType": "kalt",
+  "source": "css.ch",
+  "basePortions": 4,
+  "description": "Herzhafte türkische Linsensuppe mit Zimt und Tomatenmark – ein wärmendes Alltagsgericht.",
+  "steps": [
+    "Gemüse würfeln: Zwiebel, Karotte, Kartoffel und Paprika klein schneiden.",
+    "Olivenöl erhitzen, Gemüse darin anbraten.",
+    "Gewaschene Linsen hinzufügen, mit Brühe aufkochen. Tomatenmark unterrühren.",
+    "Nach ca. 20 Minuten mit Salz, Pfeffer und Zimt würzen.",
+    "Optional mit dem Stabmixer pürieren.",
+    "Vor dem Servieren Zitronensaft und Petersilie hinzufügen."
+  ],
+  "tips": "Der Zimt gibt der Suppe eine typisch türkische Note. Wer möchte, kann die Suppe auch chunky lassen.",
+  "imageUrl": null,
+  "tags": ["Vegan", "Mealprep-geeignet", "Orientalisch", "Winter"],
+  "dietCategory": "vegan"
+}

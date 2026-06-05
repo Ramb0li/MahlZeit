@@ -1,0 +1,31 @@
+{
+  "id": "sal-14",
+  "name": "Veganer «Eier»Salat",
+  "category": "Salate & Bowls",
+  "timeMinutes": 30,
+  "ingredients": [
+    { "name": "Fusilli", "amount": 80, "unit": "g", "perPortions": 4 },
+    { "name": "Kichererbsen (aus der Dose, abgetropft)", "amount": 240, "unit": "g", "perPortions": 4 },
+    { "name": "Vegane Mayonnaise", "amount": 120, "unit": "g", "perPortions": 4 },
+    { "name": "Kala Namak (schwarzes Salz)", "amount": 1, "unit": "TL", "perPortions": 4 },
+    { "name": "Paprikapulver", "amount": 0.5, "unit": "TL", "perPortions": 4 },
+    { "name": "Kurkuma", "amount": 0.5, "unit": "TL", "perPortions": 4 },
+    { "name": "Essiggurken (kleine)", "amount": 50, "unit": "g", "perPortions": 4 },
+    { "name": "Schnittlauch", "amount": 0.5, "unit": "Bund", "perPortions": 4 }
+  ],
+  "weatherType": "neutral",
+  "source": "Avobelle",
+  "basePortions": 4,
+  "description": "Täuschend echter veganer Eiersalat auf Kichererbsen-Basis – Kala Namak sorgt für den typischen Ei-Geschmack.",
+  "steps": [
+    "Fusilli in gesalzenem Wasser sehr weich kochen (15–20 Minuten), dann abtropfen lassen.",
+    "Kichererbsen, Mayonnaise, Kala Namak, Paprikapulver und Kurkuma in einem hohen Gefäss mit dem Stabmixer pürieren.",
+    "Abgetropfte Fusilli in kleine Stücke schneiden. Essiggurken in feine Scheiben schneiden. Schnittlauch hacken.",
+    "Fusilli, Essiggurken und Schnittlauch zum Kichererbsengemisch geben und gut vermengen.",
+    "Mit Brot, Toast oder Crackern servieren."
+  ],
+  "tips": "Kala Namak (schwarzes Schwefelsalz) gibt dem Salat den typischen Eier-Geschmack und ist in Bioläden oder online erhältlich.",
+  "imageUrl": null,
+  "tags": ["Vegan", "Mittagsgericht"],
+  "dietCategory": "vegan"
+}

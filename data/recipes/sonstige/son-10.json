@@ -1,0 +1,32 @@
+{
+  "id": "son-10",
+  "name": "Scharf angebratener Rosenkohl mit Sobanudeln",
+  "category": "Vegetarische Hauptgerichte",
+  "timeMinutes": 25,
+  "ingredients": [
+    { "name": "Rosenkohl", "amount": 350, "unit": "g", "perPortions": 2 },
+    { "name": "Sobanudeln", "amount": 200, "unit": "g", "perPortions": 2 },
+    { "name": "Schwarze Bohnen (Dose, Abtropfgewicht)", "amount": 130, "unit": "g", "perPortions": 2 },
+    { "name": "Knoblauchzehen", "amount": 2, "unit": "Zehen", "perPortions": 2 },
+    { "name": "Ingwer (frisch)", "amount": 20, "unit": "g", "perPortions": 2 },
+    { "name": "Getrocknete Chilischote", "amount": 1, "unit": "Stk", "perPortions": 2 },
+    { "name": "Sojasosse", "amount": 2, "unit": "EL", "perPortions": 2 },
+    { "name": "Kokosöl oder Bratöl", "amount": 2, "unit": "EL", "perPortions": 2 }
+  ],
+  "weatherType": "kalt",
+  "source": "bevegt.de",
+  "basePortions": 2,
+  "description": "Knuspriger Rosenkohl mit asiatischen Sobanudeln und schwarzen Bohnen – schnell, scharf und sättigend.",
+  "steps": [
+    "Rosenkohl waschen, Strunk entfernen und Röschen halbieren.",
+    "Knoblauch fein hacken. Ingwer schälen und reiben. Chilischote entkernen und in Ringe schneiden.",
+    "Öl in Pfanne erhitzen. Rosenkohl unter ständigem Rühren 5–7 Min. scharf anbraten – darf dunkel werden.",
+    "Sobanudeln parallel in Salzwasser 4–8 Min. garen.",
+    "Knoblauch, Ingwer und Chili zum Rosenkohl geben, 2 Min. mitbraten. Schwarze Bohnen zugeben und erwärmen.",
+    "Mit Sojasosse ablöschen. Sobanudeln abgiessen und zusammen mit Rosenkohl-Mischung servieren."
+  ],
+  "tips": "Der Rosenkohl darf wirklich dunkel werden – das gibt das typische Röstaroma. Sobanudeln nicht überkochen.",
+  "imageUrl": null,
+  "tags": ["Vegan", "Asiatisch"],
+  "dietCategory": "vegan"
+}

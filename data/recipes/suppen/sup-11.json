@@ -1,0 +1,40 @@
+{
+  "id": "sup-11",
+  "name": "Dal Suppe",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 45,
+  "ingredients": [
+    { "name": "Rote Linsen", "amount": 200, "unit": "g", "perPortions": 4 },
+    { "name": "Kokosmilch", "amount": 250, "unit": "ml", "perPortions": 4 },
+    { "name": "Karotten", "amount": 2, "unit": "Stk", "perPortions": 4 },
+    { "name": "Kartoffeln", "amount": 2, "unit": "Stk", "perPortions": 4 },
+    { "name": "Koriander (frisch)", "amount": 20, "unit": "g", "perPortions": 4 },
+    { "name": "Zwiebel (gross)", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Knoblauchzehen", "amount": 3, "unit": "Zehen", "perPortions": 4 },
+    { "name": "Chili (rot)", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Ingwer (frisch)", "amount": 15, "unit": "g", "perPortions": 4 },
+    { "name": "Tomatenmark", "amount": 1, "unit": "EL", "perPortions": 4 },
+    { "name": "Koriandersaat (gemahlen)", "amount": 2, "unit": "TL", "perPortions": 4 },
+    { "name": "Kreuzkümmel (gemahlen)", "amount": 2, "unit": "TL", "perPortions": 4 },
+    { "name": "Kurkuma", "amount": 2, "unit": "TL", "perPortions": 4 },
+    { "name": "Garam Masala", "amount": 2, "unit": "TL", "perPortions": 4 },
+    { "name": "Gemüsebrühe", "amount": 800, "unit": "ml", "perPortions": 4 },
+    { "name": "Kokosöl", "amount": 1, "unit": "EL", "perPortions": 4 }
+  ],
+  "weatherType": "kalt",
+  "source": "Kitchen Stories",
+  "basePortions": 4,
+  "description": "Aromatische indische Linsensuppe mit Kokosmilch, frischem Ingwer und wärmenden Gewürzen.",
+  "steps": [
+    "Karotten und Kartoffeln schälen und in mundgerechte Stücke schneiden. Koriander fein hacken. Knoblauch, Zwiebeln, Chili und Ingwer fein würfeln.",
+    "Zwiebeln, Knoblauch, Chili und Ingwer bei mittlerer Hitze in Kokosöl andünsten.",
+    "Kartoffeln und Karotten ca. 4–5 Minuten mitbraten. Linsen hinzufügen und 2–3 Minuten weiterbraten.",
+    "Tomatenmark und alle Gewürze zugeben, ständig rühren und 1–2 Minuten anrösten.",
+    "Mit Gemüsebrühe ablöschen, salzen und aufkochen. Bei niedriger Hitze 15–20 Minuten köcheln lassen bis Linsen weich sind.",
+    "Kokosmilch hinzufügen und erneut erhitzen. Mit Salz und Zitronensaft abschmecken. Mit frischem Koriander garnieren."
+  ],
+  "tips": "Mit Naanbrot servieren. Schärfe über die Chili-Menge anpassen.",
+  "imageUrl": null,
+  "tags": ["Vegan", "Mealprep-geeignet", "Orientalisch", "Winter"],
+  "dietCategory": "vegan"
+}

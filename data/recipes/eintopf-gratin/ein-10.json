@@ -1,0 +1,38 @@
+{
+  "id": "ein-10",
+  "name": "Beluga-Linsen-Curry mit Süsskartoffel",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 50,
+  "ingredients": [
+    { "name": "Beluga-Linsen (schwarz)", "amount": 300, "unit": "g", "perPortions": 4 },
+    { "name": "Süsskartoffel", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Zwiebel", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Karotten (klein)", "amount": 2, "unit": "Stk", "perPortions": 4 },
+    { "name": "Knoblauchzehen", "amount": 2, "unit": "Zehen", "perPortions": 4 },
+    { "name": "Ingwer (frisch)", "amount": 10, "unit": "g", "perPortions": 4 },
+    { "name": "Currypaste oder Currypulver", "amount": 1.5, "unit": "EL", "perPortions": 4 },
+    { "name": "Passierte Tomaten", "amount": 400, "unit": "ml", "perPortions": 4 },
+    { "name": "Kokosmilch (Dose)", "amount": 400, "unit": "ml", "perPortions": 4 },
+    { "name": "Gemüsebrühe", "amount": 560, "unit": "ml", "perPortions": 4 },
+    { "name": "Babyspinat (frisch)", "amount": 100, "unit": "g", "perPortions": 4 },
+    { "name": "Limetten- oder Zitronensaft", "amount": 2, "unit": "EL", "perPortions": 4 },
+    { "name": "Kokosöl", "amount": 1, "unit": "EL", "perPortions": 4 }
+  ],
+  "weatherType": "kalt",
+  "source": "Bianca Zapatka",
+  "basePortions": 4,
+  "description": "Cremiges indisches Beluga-Linsen-Curry mit Süsskartoffel und Spinat – reich an Proteinen und Ballaststoffen.",
+  "steps": [
+    "Kokosöl erhitzen, Zwiebeln, Knoblauch, Ingwer und Karotten 1–2 Minuten anbraten.",
+    "Currypaste und Linsen hinzufügen, weitere Minute anschwitzen.",
+    "Passierte Tomaten, Kokosmilch und 1 Tasse Brühe zugeben. Aufkochen.",
+    "Ca. 20–25 Minuten köcheln, restliche Brühe nach und nach zugeben.",
+    "Süsskartoffelwürfel hinzufügen, weitere 15 Minuten kochen bis alles weich und cremig ist.",
+    "Mit Salz, Pfeffer und Limettensaft abschmecken. Spinat einrühren, 1 Minute garen.",
+    "Mit Joghurt, Koriander und Sesam garnieren. Mit Reis oder Naan servieren."
+  ],
+  "tips": "Beluga-Linsen müssen nicht eingeweicht werden und behalten ihre Form beim Kochen.",
+  "imageUrl": null,
+  "tags": ["Vegan", "Mealprep-geeignet", "Orientalisch"],
+  "dietCategory": "vegan"
+}

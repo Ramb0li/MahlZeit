@@ -1,0 +1,27 @@
+{
+  "id": "kar-01",
+  "name": "Pommes Frites aus dem Ofen",
+  "category": "Kartoffelgerichte",
+  "timeMinutes": 50,
+  "ingredients": [
+    { "name": "Festkochende Kartoffeln", "amount": 1200, "unit": "g", "perPortions": 4 },
+    { "name": "Öl", "amount": 4, "unit": "TL", "perPortions": 4 },
+    { "name": "Salz", "amount": 2, "unit": "TL", "perPortions": 4 },
+    { "name": "Paprikapulver (optional)", "amount": 1, "unit": "TL", "perPortions": 4 }
+  ],
+  "weatherType": "neutral",
+  "source": "Kochbar",
+  "basePortions": 4,
+  "description": "Knusprige Ofenpommes ohne Frittieren – die gesunde Alternative mit dem klassischen Pommes-Frites-Geschmack.",
+  "steps": [
+    "Kartoffeln schälen und in stäbchenförmige Pommes schneiden. Kurz in Wasser einweichen, um Stärke zu entfernen.",
+    "Gut trocken tupfen und in einer Schüssel mit Öl und Gewürzen vermengen.",
+    "Auf einem mit Backpapier ausgelegten Blech in einer einzigen Schicht verteilen.",
+    "Bei 200 °C Heissluft auf der mittleren Schiene ca. 20–25 Min. backen bis goldbraun.",
+    "In den letzten 5–10 Minuten die Ofentür einen Spalt öffnen, damit Feuchtigkeit entweicht."
+  ],
+  "tips": "Kartoffeln gut trocken tupfen für extra Knusprigkeit. Nicht zu viele auf einmal aufs Blech – sie müssen Abstand haben.",
+  "imageUrl": null,
+  "tags": ["Vegan", "Kinderfreundlich"],
+  "dietCategory": "vegan"
+}

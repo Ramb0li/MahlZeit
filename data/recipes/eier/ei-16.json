@@ -1,0 +1,30 @@
+{
+  "id": "ei-16",
+  "name": "Vegane Bananen-Pancakes",
+  "category": "Frühstück",
+  "timeMinutes": 20,
+  "ingredients": [
+    { "name": "Reife Bananen", "amount": 4, "unit": "Stk", "perPortions": 4 },
+    { "name": "Haferflocken (fein gemahlen oder Hafermehl)", "amount": 80, "unit": "g", "perPortions": 4 },
+    { "name": "Mandelmilch oder Pflanzenmilch", "amount": 4, "unit": "EL", "perPortions": 4 },
+    { "name": "Backpulver", "amount": 1, "unit": "TL", "perPortions": 4 },
+    { "name": "Vanilleextrakt", "amount": 1, "unit": "TL", "perPortions": 4 },
+    { "name": "Zimt", "amount": 0.5, "unit": "TL", "perPortions": 4 }
+  ],
+  "weatherType": "neutral",
+  "source": "Chefkoch",
+  "basePortions": 4,
+  "description": "Einfachste vegane Pancakes aus Bananen und Haferflocken – ohne Mehl, Zucker oder Ei.",
+  "steps": [
+    "Bananen in einer Schüssel zerdrücken bis eine glatte Paste entsteht.",
+    "Hafermehl (oder fein gemahlene Haferflocken), Backpulver, Vanilleextrakt und Zimt untermischen.",
+    "Pflanzenmilch zugeben und zu einem dickflüssigen Teig verrühren.",
+    "Antihaftpfanne bei mittlerer Hitze erhitzen. Löffelweise Teig hineingeben und kleine runde Pancakes formen.",
+    "Ca. 3–4 Minuten backen bis die Unterseite goldbraun ist, vorsichtig wenden und weitere 2–3 Minuten fertigbacken.",
+    "Mit Beeren, Ahornsirup oder Nussbutter servieren."
+  ],
+  "tips": "Je reifer die Bananen, desto süsser die Pancakes. Haferflocken können in einem Mixer selbst zu Mehl gemahlen werden.",
+  "imageUrl": null,
+  "tags": ["Vegan", "Kinderfreundlich"],
+  "dietCategory": "vegan"
+}

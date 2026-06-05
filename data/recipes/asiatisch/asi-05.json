@@ -1,0 +1,38 @@
+{
+  "id": "asi-05",
+  "name": "Vegane Thai-Erdnuss-Ramen",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 30,
+  "ingredients": [
+    { "name": "Ramen-Nudeln", "amount": 250, "unit": "g", "perPortions": 4 },
+    { "name": "Naturtofu", "amount": 260, "unit": "g", "perPortions": 4 },
+    { "name": "Gemüsebrühe", "amount": 800, "unit": "ml", "perPortions": 4 },
+    { "name": "Kokosmilch (hell)", "amount": 500, "unit": "ml", "perPortions": 4 },
+    { "name": "Erdnussmus", "amount": 100, "unit": "g", "perPortions": 4 },
+    { "name": "Vegane rote Currypaste", "amount": 3, "unit": "EL", "perPortions": 4 },
+    { "name": "Sojasosse", "amount": 3, "unit": "EL", "perPortions": 4 },
+    { "name": "Knoblauchzehen (gepresst)", "amount": 2, "unit": "Zehen", "perPortions": 4 },
+    { "name": "Ingwer (frisch gerieben)", "amount": 20, "unit": "g", "perPortions": 4 },
+    { "name": "Karotte (dünn geschnitten)", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Pak-Choi (dünn geschnitten)", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Erdnussöl", "amount": 2.5, "unit": "EL", "perPortions": 4 },
+    { "name": "Speisestärke (für Tofu)", "amount": 1, "unit": "EL", "perPortions": 4 },
+    { "name": "Agavensirup", "amount": 1, "unit": "EL", "perPortions": 4 },
+    { "name": "Gesalzene Erdnüsse", "amount": 40, "unit": "g", "perPortions": 4 },
+    { "name": "Koriander (frisch)", "amount": 0.5, "unit": "Bund", "perPortions": 4 }
+  ],
+  "weatherType": "kalt",
+  "source": "fooby.ch",
+  "basePortions": 4,
+  "description": "Reichhaltige vegane Thai-Ramen-Suppe mit cremiger Erdnuss-Kokosmilch-Brühe und knusprigem Tofu.",
+  "steps": [
+    "Suppe: Öl erhitzen, Knoblauch, Ingwer und Currypaste anbraten. Brühe, Kokosmilch, Erdnussmus und Sojasosse zugeben, aufkochen. Ca. 10 Min. köcheln. Karotte und Pak-Choi hinzufügen, 5 Min. mitkochen.",
+    "Tofu: Tofuwürfel mit Stärke mischen. Öl erhitzen, Tofu ca. 10 Min. goldbraun braten. Sojasosse und Agavensirup mischen, zum Tofu geben und schwenken.",
+    "Ramen-Nudeln in Salzwasser ca. 4 Min. kochen, abtropfen lassen.",
+    "Nudeln und Tofu in Schüsseln verteilen, heisse Suppe darübergiessen. Mit Erdnüssen und Koriander garnieren."
+  ],
+  "tips": "Mit Sesam, Limette oder frischer Chili nach Belieben garnieren.",
+  "imageUrl": null,
+  "tags": ["Vegan", "Asiatisch"],
+  "dietCategory": "vegan"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "sup-15",
+  "name": "Marokkanische Linsensuppe",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 35,
+  "ingredients": [
+    { "name": "Rote Linsen", "amount": 100, "unit": "g", "perPortions": 4 },
+    { "name": "Zwiebel", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Gehackte Tomaten (Dose)", "amount": 400, "unit": "g", "perPortions": 4 },
+    { "name": "Tomatenmark", "amount": 2, "unit": "TL", "perPortions": 4 },
+    { "name": "Gemüsebrühe", "amount": 800, "unit": "ml", "perPortions": 4 },
+    { "name": "Ras el-Hanout", "amount": 2, "unit": "TL", "perPortions": 4 },
+    { "name": "Kreuzkümmel (gemahlen)", "amount": 1, "unit": "TL", "perPortions": 4 },
+    { "name": "Kurkuma", "amount": 0.5, "unit": "TL", "perPortions": 4 },
+    { "name": "Olivenöl", "amount": 2, "unit": "EL", "perPortions": 4 },
+    { "name": "Koriander oder Petersilie (frisch)", "amount": 0.5, "unit": "Bund", "perPortions": 4 },
+    { "name": "Naturjoghurt oder Feta (zum Servieren)", "amount": 4, "unit": "EL", "perPortions": 4 }
+  ],
+  "weatherType": "kalt",
+  "source": "css.ch",
+  "basePortions": 4,
+  "description": "Würzige marokkanische Linsensuppe mit Ras el-Hanout und Tomaten – exotisch und wärmend.",
+  "steps": [
+    "Zwiebeln fein hacken und in Olivenöl andünsten.",
+    "Gewaschene Linsen, Tomaten und Tomatenmark hinzugeben.",
+    "Mit Ras el-Hanout, Kreuzkümmel und Kurkuma würzen. Brühe zugeben und verrühren.",
+    "Ca. 20–30 Minuten köcheln lassen. Optional mit dem Stabmixer pürieren.",
+    "Mit Joghurt oder Feta und frischen Kräutern servieren."
+  ],
+  "tips": "Ras el-Hanout gibt der Suppe die typisch marokkanische Note. Erhältlich in gut sortierten Supermärkten.",
+  "imageUrl": null,
+  "tags": ["Vegan", "Mealprep-geeignet", "Orientalisch", "Winter"],
+  "dietCategory": "vegan"
+}

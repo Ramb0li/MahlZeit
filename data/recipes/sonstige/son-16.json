@@ -1,0 +1,36 @@
+{
+  "id": "son-16",
+  "name": "Vegane Schweizer Apfelquiche",
+  "category": "Desserts & Süsses",
+  "timeMinutes": 50,
+  "ingredients": [
+    { "name": "Vegane Butter (z.B. Alsan)", "amount": 80, "unit": "g", "perPortions": 4 },
+    { "name": "Mehl", "amount": 160, "unit": "g", "perPortions": 4 },
+    { "name": "Salz", "amount": 1, "unit": "Prise", "perPortions": 4 },
+    { "name": "Vanilleextrakt", "amount": 1, "unit": "TL", "perPortions": 4 },
+    { "name": "Kaltes Wasser", "amount": 50, "unit": "ml", "perPortions": 4 },
+    { "name": "Äpfel (geschält, entkernt, gewürfelt)", "amount": 4, "unit": "Stk", "perPortions": 4 },
+    { "name": "Pflanzensahne (Soja oder Hafer)", "amount": 200, "unit": "ml", "perPortions": 4 },
+    { "name": "Pflanzenjoghurt (Kokos)", "amount": 50, "unit": "g", "perPortions": 4 },
+    { "name": "Zucker", "amount": 3, "unit": "EL", "perPortions": 4 },
+    { "name": "Stärke", "amount": 3, "unit": "TL", "perPortions": 4 },
+    { "name": "Zimt", "amount": 1, "unit": "TL", "perPortions": 4 },
+    { "name": "Gemahlene Haselnüsse", "amount": 3, "unit": "EL", "perPortions": 4 }
+  ],
+  "weatherType": "neutral",
+  "source": "frei-style.com",
+  "basePortions": 4,
+  "description": "Vegane Schweizer Apfelquiche mit mürben Teig, aromatischer Custard-Füllung und Zimt – ein Klassiker.",
+  "steps": [
+    "Mehl mit Salz mischen. Kalte Butter in Stücken einarbeiten bis eine krümelige Masse entsteht. Wasser und Vanille zugeben und zu einem glatten Teig kneten.",
+    "Teig ausrollen und in Pieform legen. 30 Min. kühl stellen.",
+    "Äpfel schälen, entkernen und würfeln.",
+    "Alle Custard-Zutaten (Sahne, Joghurt, Zucker, Stärke, Vanille, Zimt) fein mixen.",
+    "Ofen auf 220 °C vorheizen. Teigboden einstechen, mit Haselnüssen bestreuen. Äpfel kreisförmig auflegen, Custard darüber giessen.",
+    "Im unteren Ofenbereich 30–35 Min. backen."
+  ],
+  "tips": "Empfohlene Apfelsorten: Boskop, Gala, Golden Delicious oder Braeburn.",
+  "imageUrl": null,
+  "tags": ["Vegan", "Schweizer", "Herbst"],
+  "dietCategory": "vegan"
+}

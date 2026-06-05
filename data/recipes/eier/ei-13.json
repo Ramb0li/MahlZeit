@@ -1,0 +1,30 @@
+{
+  "id": "ei-13",
+  "name": "Smoothie Bowl mit Beeren und Zucchetti",
+  "category": "Frühstück",
+  "timeMinutes": 20,
+  "ingredients": [
+    { "name": "Bananen (eingefroren)", "amount": 4, "unit": "Stk", "perPortions": 4 },
+    { "name": "Zucchetti (in Stücken)", "amount": 2, "unit": "Stk", "perPortions": 4 },
+    { "name": "Erdbeeren", "amount": 250, "unit": "g", "perPortions": 4 },
+    { "name": "Himbeeren", "amount": 250, "unit": "g", "perPortions": 4 },
+    { "name": "Kokosnussmilch-Joghurt", "amount": 300, "unit": "g", "perPortions": 4 },
+    { "name": "Erdbeeren (zum Garnieren)", "amount": 4, "unit": "Stk", "perPortions": 4 },
+    { "name": "Himbeeren (zum Garnieren)", "amount": 50, "unit": "g", "perPortions": 4 },
+    { "name": "Johannisbeeren (zum Garnieren)", "amount": 50, "unit": "g", "perPortions": 4 },
+    { "name": "Müeslimischung", "amount": 8, "unit": "EL", "perPortions": 4 }
+  ],
+  "weatherType": "warm",
+  "source": "fooby.ch",
+  "basePortions": 4,
+  "description": "Cremige, pinke Smoothie Bowl mit Banane, Beeren und versteckter Zucchetti – ein vitaminreicher Start in den Tag.",
+  "steps": [
+    "Bananen mit Zucchetti, Erdbeeren, Himbeeren und Joghurt im Mixer fein pürieren.",
+    "Smoothie gleichmässig in vier Bowls verteilen.",
+    "Mit Beeren (Erdbeerscheiben, Himbeeren, Johannisbeeren) und Müesli garnieren."
+  ],
+  "tips": "Bananen und Zucchetti am Vortag einfrieren für die dickste Konsistenz. Die Zucchetti schmeckt man überhaupt nicht.",
+  "imageUrl": null,
+  "tags": ["Vegan", "Sommer", "Frühling"],
+  "dietCategory": "vegan"
+}

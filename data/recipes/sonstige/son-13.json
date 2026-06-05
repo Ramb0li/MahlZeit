@@ -1,0 +1,31 @@
+{
+  "id": "son-13",
+  "name": "Vegane Apéro-Gipfeli",
+  "category": "Snacks & Vorspeisen",
+  "timeMinutes": 40,
+  "ingredients": [
+    { "name": "Blätterteig (rechteckig, ausgerollt)", "amount": 1, "unit": "Stk", "perPortions": 8 },
+    { "name": "Schwarze Oliven (entsteint, fein gehackt)", "amount": 100, "unit": "g", "perPortions": 8 },
+    { "name": "Getrocknete Tomaten (fein gehackt)", "amount": 50, "unit": "g", "perPortions": 8 },
+    { "name": "Veganer Kräuterfrischkäse", "amount": 100, "unit": "g", "perPortions": 8 },
+    { "name": "Mandelmilch", "amount": 2, "unit": "EL", "perPortions": 8 },
+    { "name": "Sesam", "amount": 1, "unit": "EL", "perPortions": 8 },
+    { "name": "Pfeffer", "amount": 1, "unit": "Prise", "perPortions": 8 }
+  ],
+  "weatherType": "neutral",
+  "source": "fooby.ch",
+  "basePortions": 8,
+  "description": "Knusprige vegane Apéro-Gipfeli mit Oliven-Tomaten-Frischkäse-Füllung – ideal als Fingerfood.",
+  "steps": [
+    "Oliven, Tomaten und Frischkäse vermengen. Mit Pfeffer würzen.",
+    "Blätterteig in 16 gleich grosse Dreiecke schneiden.",
+    "Füllung auf dem unteren Teil jedes Dreiecks verteilen. Zur Spitze aufrollen.",
+    "Auf Backpapier legen, mit Mandelmilch bestreichen und mit Sesam bestreuen.",
+    "Ca. 15 Min. in der Mitte des vorgeheizten Ofens bei 220 °C backen.",
+    "Auf Gitter auskühlen lassen und servieren."
+  ],
+  "tips": "Die Gipfeli schmecken warm und kalt. Können gut vorbereitet und direkt vor dem Apéro gebacken werden.",
+  "imageUrl": null,
+  "tags": ["Vegan", "Mealprep-geeignet"],
+  "dietCategory": "vegan"
+}

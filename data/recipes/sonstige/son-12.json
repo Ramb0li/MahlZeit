@@ -1,0 +1,29 @@
+{
+  "id": "son-12",
+  "name": "Federkohlchips",
+  "category": "Snacks & Vorspeisen",
+  "timeMinutes": 30,
+  "ingredients": [
+    { "name": "Federkohl (Kale)", "amount": 250, "unit": "g", "perPortions": 5 },
+    { "name": "Bratcrème oder Rapsöl", "amount": 2, "unit": "EL", "perPortions": 5 },
+    { "name": "Salz", "amount": 0.5, "unit": "TL", "perPortions": 5 },
+    { "name": "Paprikapulver", "amount": 1, "unit": "TL", "perPortions": 5 },
+    { "name": "Pfeffer oder Chili", "amount": 1, "unit": "Prise", "perPortions": 5 }
+  ],
+  "weatherType": "neutral",
+  "source": "Swissmilk",
+  "basePortions": 5,
+  "description": "Knusprige Kale-Chips aus dem Ofen – das gesunde Snack-Rezept mit nur 5 Zutaten.",
+  "steps": [
+    "Backofen auf 130 °C vorheizen.",
+    "Federkohlblätter vom harten Strunk trennen und in Chips-Grösse zupfen.",
+    "Blätter waschen und sehr gründlich trocken schleudern.",
+    "Öl mit Gewürzen mischen. Kaleblätter zugeben und gut vermengen.",
+    "Auf einem Backblech in einer einzigen Schicht verteilen. Ca. 20 Min. backen – alle 5 Min. die Ofentür kurz öffnen.",
+    "Abkühlen lassen, nach Belieben nachwürzen."
+  ],
+  "tips": "Die Blätter müssen wirklich trocken sein – sonst werden sie nicht knusprig, sondern gedämpft.",
+  "imageUrl": null,
+  "tags": ["Vegan", "Mealprep-geeignet"],
+  "dietCategory": "vegan"
+}

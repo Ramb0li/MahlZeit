@@ -1,0 +1,37 @@
+{
+  "id": "sup-19",
+  "name": "Grüne Gazpacho",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 20,
+  "ingredients": [
+    { "name": "Gurke", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Jungspinat", "amount": 100, "unit": "g", "perPortions": 4 },
+    { "name": "Avocado", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Bundzwiebeln", "amount": 3, "unit": "Stk", "perPortions": 4 },
+    { "name": "Knoblauchzehen", "amount": 2, "unit": "Zehen", "perPortions": 4 },
+    { "name": "Petersilie", "amount": 1, "unit": "Bund", "perPortions": 4 },
+    { "name": "Basilikum", "amount": 1, "unit": "Bund", "perPortions": 4 },
+    { "name": "Pfefferminze", "amount": 1, "unit": "Bund", "perPortions": 4 },
+    { "name": "Dill", "amount": 0.5, "unit": "Bund", "perPortions": 4 },
+    { "name": "Grüne Chilischote", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Kokosnussmilch-Joghurt", "amount": 200, "unit": "g", "perPortions": 4 },
+    { "name": "Weissweinessig", "amount": 2, "unit": "EL", "perPortions": 4 },
+    { "name": "Biozitrone (Schale und Saft)", "amount": 0.5, "unit": "Stk", "perPortions": 4 },
+    { "name": "Salz", "amount": 1, "unit": "TL", "perPortions": 4 },
+    { "name": "Croûtons", "amount": 50, "unit": "g", "perPortions": 4 }
+  ],
+  "weatherType": "warm",
+  "source": "fooby.ch",
+  "basePortions": 4,
+  "description": "Erfrischende grüne Gazpacho mit Avocado, frischen Kräutern und cremigem Kokosjogurt – perfekt für heisse Tage.",
+  "steps": [
+    "Gurke in Stücke schneiden. Avocado schälen und entkernen. Bundzwiebeln, Chilischote und Kräuter grob hacken.",
+    "Alle Zutaten ausser Croûtons in einen Mixer geben und fein pürieren.",
+    "Gazpacho abschmecken und zugedeckt ca. 1 Stunde kühl stellen.",
+    "In Schalen oder Gläser verteilen. Mit Joghurt, Olivenöl, Dill und Croûtons garnieren."
+  ],
+  "tips": "Mindestens 1 Stunde kühlen für den besten Geschmack. Kann auch als Vorspeise in kleinen Gläsern serviert werden.",
+  "imageUrl": null,
+  "tags": ["Vegan", "Sommer", "Mittagsgericht"],
+  "dietCategory": "vegan"
+}

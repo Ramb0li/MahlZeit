@@ -1,0 +1,37 @@
+{
+  "id": "pas-17",
+  "name": "Linsen-Bolognese mit Spaghetti",
+  "category": "Pasta",
+  "timeMinutes": 30,
+  "ingredients": [
+    { "name": "Spaghetti", "amount": 400, "unit": "g", "perPortions": 4 },
+    { "name": "Rote Linsen", "amount": 250, "unit": "g", "perPortions": 4 },
+    { "name": "Zwiebel", "amount": 2, "unit": "Stk", "perPortions": 4 },
+    { "name": "Karotten", "amount": 2, "unit": "Stk", "perPortions": 4 },
+    { "name": "Champignons", "amount": 200, "unit": "g", "perPortions": 4 },
+    { "name": "Knoblauchzehen", "amount": 3, "unit": "Zehen", "perPortions": 4 },
+    { "name": "Tomatenmark", "amount": 2, "unit": "EL", "perPortions": 4 },
+    { "name": "Passierte Tomaten", "amount": 500, "unit": "g", "perPortions": 4 },
+    { "name": "Gestückelte Tomaten (Dose)", "amount": 400, "unit": "g", "perPortions": 4 },
+    { "name": "Gemüsebrühe", "amount": 480, "unit": "ml", "perPortions": 4 },
+    { "name": "Italienische Kräuter", "amount": 2, "unit": "TL", "perPortions": 4 },
+    { "name": "Olivenöl", "amount": 2, "unit": "EL", "perPortions": 4 },
+    { "name": "Salz und Pfeffer", "amount": 1, "unit": "Prise", "perPortions": 4 }
+  ],
+  "weatherType": "neutral",
+  "source": "Bianca Zapatka",
+  "basePortions": 4,
+  "description": "Reichhaltige vegane Bolognese mit roten Linsen – in nur 30 Minuten fertig und voller Umami.",
+  "steps": [
+    "Öl in grosser Pfanne erhitzen. Zwiebeln 2 Minuten glasig dünsten.",
+    "Karotten, Champignons und Knoblauch hinzufügen, 5–7 Minuten anbraten.",
+    "Tomatenmark und Kräuter einrühren, 1–2 Minuten anrösten.",
+    "Linsen, passierte und gestückelte Tomaten sowie Gemüsebrühe zugeben, verrühren. Aufkochen und zugedeckt 15–20 Minuten köcheln bis Linsen gar sind.",
+    "Spaghetti in Salzwasser al dente kochen. Abtropfen lassen.",
+    "Bolognese mit Salz und Pfeffer abschmecken. Mit Spaghetti servieren, optional mit veganem Parmesan."
+  ],
+  "tips": "Die Sauce schmeckt auch grossartig als Füllung für Lasagne oder in Zucchetti-Boots.",
+  "imageUrl": null,
+  "tags": ["Vegan", "Mealprep-geeignet", "Italienisch"],
+  "dietCategory": "vegan"
+}

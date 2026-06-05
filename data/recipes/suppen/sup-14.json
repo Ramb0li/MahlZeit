@@ -1,0 +1,39 @@
+{
+  "id": "sup-14",
+  "name": "Indische Linsensuppe mit Kokosmilch",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 40,
+  "ingredients": [
+    { "name": "Gelbe Linsen", "amount": 200, "unit": "g", "perPortions": 4 },
+    { "name": "Zwiebel (gross)", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Knoblauchzehen", "amount": 2, "unit": "Zehen", "perPortions": 4 },
+    { "name": "Ingwer (frisch)", "amount": 10, "unit": "g", "perPortions": 4 },
+    { "name": "Karotte (gross)", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Reis", "amount": 50, "unit": "g", "perPortions": 4 },
+    { "name": "Kokosmilch", "amount": 500, "unit": "ml", "perPortions": 4 },
+    { "name": "Gemüsebrühe", "amount": 1000, "unit": "ml", "perPortions": 4 },
+    { "name": "Chilipulver", "amount": 0.25, "unit": "TL", "perPortions": 4 },
+    { "name": "Kurkuma", "amount": 1, "unit": "TL", "perPortions": 4 },
+    { "name": "Garam Masala", "amount": 1, "unit": "TL", "perPortions": 4 },
+    { "name": "Kreuzkümmel", "amount": 1, "unit": "TL", "perPortions": 4 },
+    { "name": "Olivenöl", "amount": 2, "unit": "EL", "perPortions": 4 },
+    { "name": "Zitronensaft", "amount": 2, "unit": "EL", "perPortions": 4 },
+    { "name": "Koriander (frisch)", "amount": 0.5, "unit": "Bund", "perPortions": 4 }
+  ],
+  "weatherType": "kalt",
+  "source": "css.ch",
+  "basePortions": 4,
+  "description": "Cremige indische Linsensuppe mit Kokosmilch, Garam Masala und frischem Ingwer.",
+  "steps": [
+    "Zwiebel, Karotte, Knoblauch und Ingwer würfeln.",
+    "Öl erhitzen, Zwiebeln dünsten. Karotte, Knoblauch und Ingwer mitbraten.",
+    "Linsen und Reis hinzugeben, mit Gemüsebrühe aufkochen.",
+    "Kokosmilch und alle Gewürze unterrühren.",
+    "Ca. 20–30 Minuten garen bis Linsen weich sind.",
+    "Mit Zitronensaft abschmecken, mit Koriander und Feta (optional) servieren."
+  ],
+  "tips": "Wer möchte, kann die Suppe mit Feta und Limette verfeinern.",
+  "imageUrl": null,
+  "tags": ["Vegan", "Mealprep-geeignet", "Orientalisch", "Winter"],
+  "dietCategory": "vegan"
+}

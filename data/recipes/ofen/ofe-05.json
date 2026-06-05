@@ -1,0 +1,33 @@
+{
+  "id": "ofe-05",
+  "name": "Süsskartoffeln aus dem Ofen mit Pilz-Nusskruste",
+  "category": "Vegetarische Hauptgerichte",
+  "timeMinutes": 55,
+  "ingredients": [
+    { "name": "Süsskartoffeln", "amount": 800, "unit": "g", "perPortions": 4 },
+    { "name": "Champignons", "amount": 450, "unit": "g", "perPortions": 4 },
+    { "name": "Schalotten", "amount": 2, "unit": "Stk", "perPortions": 4 },
+    { "name": "Knoblauchzehe", "amount": 1, "unit": "Zehe", "perPortions": 4 },
+    { "name": "Bratbutter", "amount": 2, "unit": "EL", "perPortions": 4 },
+    { "name": "Thymian (frisch)", "amount": 3, "unit": "Stk", "perPortions": 4 },
+    { "name": "Crème fraîche", "amount": 150, "unit": "g", "perPortions": 4 },
+    { "name": "Weissbrot (ohne Rinde, klein geschnitten)", "amount": 3, "unit": "Stk", "perPortions": 4 },
+    { "name": "Haselnüsse (grob gehackt, geröstet)", "amount": 30, "unit": "g", "perPortions": 4 },
+    { "name": "Salz und Pfeffer", "amount": 1, "unit": "Prise", "perPortions": 4 }
+  ],
+  "weatherType": "kalt",
+  "source": "Swissmilk",
+  "basePortions": 4,
+  "description": "Ofensüsskartoffeln mit herzhafter Pilz-Nuss-Kruste aus Champignons, Crème fraîche und gerösteten Haselnüssen.",
+  "steps": [
+    "Süsskartoffeln in 2 cm dicke Scheiben schneiden, auf Backpapier legen und salzen.",
+    "Bratbutter erhitzen, Knoblauch und Schalotten andämpfen. Champignons würfeln und hinzufügen, leicht salzen und dünsten.",
+    "Thymian und Crème fraîche beifügen, ca. 2 Minuten köcheln.",
+    "Brotstücke und Haselnüsse mit der Pilzmasse mischen, würzen.",
+    "Ofen auf 180 °C Heissluft vorheizen. Pilzmasse auf den Kartoffelscheiben verteilen und ca. 35 Minuten backen."
+  ],
+  "tips": "Gut als Hauptgericht mit einem grünen Salat oder als Beilage zu Fleisch.",
+  "imageUrl": null,
+  "tags": ["Vegetarisch", "Ofengericht", "Herbst", "Winter", "Schweizer"],
+  "dietCategory": "vegetarian"
+}

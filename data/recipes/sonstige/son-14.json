@@ -1,0 +1,32 @@
+{
+  "id": "son-14",
+  "name": "Schnelle braune Sauce (vegan)",
+  "category": "Snacks & Vorspeisen",
+  "timeMinutes": 15,
+  "ingredients": [
+    { "name": "Zwiebel", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Knoblauchzehe", "amount": 1, "unit": "Zehe", "perPortions": 4 },
+    { "name": "Tomatenmark", "amount": 1, "unit": "EL", "perPortions": 4 },
+    { "name": "Weizenmehl", "amount": 2, "unit": "EL", "perPortions": 4 },
+    { "name": "Gemüsebrühe", "amount": 400, "unit": "ml", "perPortions": 4 },
+    { "name": "Sojasosse", "amount": 2, "unit": "EL", "perPortions": 4 },
+    { "name": "Thymian (getrocknet)", "amount": 0.5, "unit": "TL", "perPortions": 4 },
+    { "name": "Öl", "amount": 1, "unit": "EL", "perPortions": 4 },
+    { "name": "Pfeffer", "amount": 1, "unit": "Prise", "perPortions": 4 }
+  ],
+  "weatherType": "neutral",
+  "source": "Chefkoch",
+  "basePortions": 4,
+  "description": "Blitzschnelle vegane braune Sauce zu Spätzli, Kartoffeln oder Gemüse – in 15 Minuten fertig.",
+  "steps": [
+    "Zwiebel und Knoblauch fein würfeln. Öl erhitzen, Zwiebeln goldbraun anbraten.",
+    "Knoblauch und Tomatenmark zugeben, 1 Min. mitrösten.",
+    "Mehl einstreuen und unter Rühren kurz anschwitzen.",
+    "Mit Brühe ablöschen, dabei kontinuierlich rühren. Sojasosse und Thymian zugeben.",
+    "Unter Rühren ca. 5 Min. köcheln bis die Sauce eindickt. Mit Pfeffer abschmecken."
+  ],
+  "tips": "Für mehr Tiefe einen Schuss Rotwein oder Worcestershiresauce (vegan) einrühren.",
+  "imageUrl": null,
+  "tags": ["Vegan"],
+  "dietCategory": "vegan"
+}

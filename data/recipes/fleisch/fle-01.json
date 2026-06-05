@@ -1,0 +1,33 @@
+{
+  "id": "fle-01",
+  "name": "Chicken Tikka Masala mit Naan und Raita",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 100,
+  "ingredients": [
+    { "name": "Pouletbrüste", "amount": 720, "unit": "g", "perPortions": 4 },
+    { "name": "Knoblauchzehen", "amount": 2, "unit": "Zehen", "perPortions": 4 },
+    { "name": "Chilischoten", "amount": 2, "unit": "Stk", "perPortions": 4 },
+    { "name": "Naturjoghurt", "amount": 180, "unit": "g", "perPortions": 4 },
+    { "name": "Tikka Masala Sauce", "amount": 500, "unit": "g", "perPortions": 4 },
+    { "name": "Naan (ca. 130 g pro Stück)", "amount": 4, "unit": "Stk", "perPortions": 4 },
+    { "name": "Koriander", "amount": 0.5, "unit": "Bund", "perPortions": 4 },
+    { "name": "Kreuzkümmel", "amount": 1, "unit": "TL", "perPortions": 4 },
+    { "name": "Salz", "amount": 1, "unit": "TL", "perPortions": 4 }
+  ],
+  "weatherType": "kalt",
+  "source": "Migusto",
+  "basePortions": 4,
+  "description": "Klassisches Chicken Tikka Masala mit warmem Naan-Brot und einem frischen Joghurt-Raita.",
+  "steps": [
+    "Pouletbrüste in Sechstel schneiden. Knoblauch fein hacken, Chilis entkernen und klein schneiden. Mit 3 EL Joghurt und Poulet mischen. Ca. 1 Stunde marinieren.",
+    "Ofen auf 220 °C vorheizen. Poulet leicht salzen, in eine Auflaufform geben und 15 Min. backen.",
+    "Tikka Masala Sauce über das Poulet giessen und weitere 10 Min. backen.",
+    "Ofen auf 180 °C reduzieren. Naans leicht mit Wasser besprengen und 4–5 Min. erwärmen.",
+    "Koriander fein hacken, mit restlichem Joghurt mischen. Kreuzkümmel mahlen und mit Salz zum Raita geben.",
+    "Chicken Tikka Masala mit Naan und Raita servieren."
+  ],
+  "tips": "Fertige Tikka Masala Sauce ist in den meisten Supermärkten erhältlich und spart Zeit.",
+  "imageUrl": null,
+  "tags": ["Orientalisch"],
+  "dietCategory": "meat"
+}

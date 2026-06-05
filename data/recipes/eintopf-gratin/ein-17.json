@@ -1,0 +1,37 @@
+{
+  "id": "ein-17",
+  "name": "Ebly-Gratin mit Sauerkraut und Hackfleisch",
+  "category": "Aufläufe & Gratins",
+  "timeMinutes": 50,
+  "ingredients": [
+    { "name": "Ebly (Weichweizen vorgegart)", "amount": 250, "unit": "g", "perPortions": 4 },
+    { "name": "Hackfleisch (gemischt)", "amount": 400, "unit": "g", "perPortions": 4 },
+    { "name": "Sauerkraut (abgetropft)", "amount": 400, "unit": "g", "perPortions": 4 },
+    { "name": "Zwiebel", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Knoblauchzehe", "amount": 1, "unit": "Zehe", "perPortions": 4 },
+    { "name": "Gemüsebrühe", "amount": 300, "unit": "ml", "perPortions": 4 },
+    { "name": "Rahm", "amount": 100, "unit": "ml", "perPortions": 4 },
+    { "name": "Gruyère oder Appenzeller (gerieben)", "amount": 100, "unit": "g", "perPortions": 4 },
+    { "name": "Öl", "amount": 1, "unit": "EL", "perPortions": 4 },
+    { "name": "Paprikapulver", "amount": 1, "unit": "TL", "perPortions": 4 },
+    { "name": "Kümmel", "amount": 0.5, "unit": "TL", "perPortions": 4 },
+    { "name": "Salz und Pfeffer", "amount": 1, "unit": "Prise", "perPortions": 4 }
+  ],
+  "weatherType": "kalt",
+  "source": "Coop",
+  "basePortions": 4,
+  "description": "Herzhafter Auflauf mit Weichweizen-Ebly, Sauerkraut und Hackfleisch – ein gemütliches Herbst- und Wintergericht.",
+  "steps": [
+    "Ebly nach Packungsanleitung in Brühe garen.",
+    "Zwiebel und Knoblauch würfeln. Öl erhitzen, Hackfleisch anbraten bis es krümelig ist.",
+    "Zwiebel und Knoblauch mitbraten. Mit Paprika, Kümmel, Salz und Pfeffer würzen.",
+    "Sauerkraut unterrühren, kurz mitbraten.",
+    "Ebly in gefettete Auflaufform geben. Hackfleisch-Sauerkraut-Mischung darüber verteilen.",
+    "Rahm darüber giessen, mit geriebenem Käse bestreuen.",
+    "Ca. 20–25 Min. bei 200 °C überbacken bis der Käse golden ist."
+  ],
+  "tips": "Ebly ist in den meisten Schweizer Supermärkten erhältlich. Das Gratin schmeckt auch mit Spätzli statt Ebly.",
+  "imageUrl": null,
+  "tags": ["Herbst", "Winter", "Schweizer"],
+  "dietCategory": "meat"
+}

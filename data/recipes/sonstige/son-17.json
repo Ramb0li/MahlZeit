@@ -1,0 +1,32 @@
+{
+  "id": "son-17",
+  "name": "Öpfechüechli",
+  "category": "Desserts & Süsses",
+  "timeMinutes": 30,
+  "ingredients": [
+    { "name": "Äpfel (z.B. Boskop)", "amount": 4, "unit": "Stk", "perPortions": 4 },
+    { "name": "Mehl", "amount": 150, "unit": "g", "perPortions": 4 },
+    { "name": "Bier oder Milch", "amount": 250, "unit": "ml", "perPortions": 4 },
+    { "name": "Eier", "amount": 2, "unit": "Stk", "perPortions": 4 },
+    { "name": "Zucker", "amount": 1, "unit": "EL", "perPortions": 4 },
+    { "name": "Salz", "amount": 1, "unit": "Prise", "perPortions": 4 },
+    { "name": "Vanilleextrakt", "amount": 1, "unit": "TL", "perPortions": 4 },
+    { "name": "Bratöl oder Butterschmalz (zum Frittieren)", "amount": 500, "unit": "ml", "perPortions": 4 },
+    { "name": "Puderzucker oder Zimtzucker (zum Bestäuben)", "amount": 3, "unit": "EL", "perPortions": 4 }
+  ],
+  "weatherType": "neutral",
+  "source": "js1.ch",
+  "basePortions": 4,
+  "description": "Klassische Schweizer Öpfechüechli – in Bierteig gebackene Apfelringe, heiss serviert mit Zimtzucker.",
+  "steps": [
+    "Mehl, Eier, Bier (oder Milch), Zucker, Salz und Vanille zu einem glatten Teig verrühren. 15 Min. ruhen lassen.",
+    "Äpfel schälen und in ca. 1 cm dicke Ringe schneiden. Kerngehäuse mit einem runden Ausstecher entfernen.",
+    "Öl oder Butterschmalz in einer tiefen Pfanne auf ca. 170 °C erhitzen.",
+    "Apfelringe durch den Teig ziehen und im heissen Fett ca. 2–3 Min. pro Seite goldbraun ausbacken.",
+    "Auf Küchenpapier abtropfen lassen und sofort mit Zimtzucker bestäuben."
+  ],
+  "tips": "Säuerliche Äpfel (Boskop) geben den besten Kontrast zur süssen Panade. Mit Vanilleeis oder Rahmschaum servieren.",
+  "imageUrl": null,
+  "tags": ["Vegetarisch", "Schweizer", "Herbst", "Kinderfreundlich"],
+  "dietCategory": "vegetarian"
+}

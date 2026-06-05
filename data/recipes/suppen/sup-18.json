@@ -1,0 +1,36 @@
+{
+  "id": "sup-18",
+  "name": "Marronisuppe mit pikanten Twistern",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 60,
+  "ingredients": [
+    { "name": "Marroni (tiefgekühlt, geschält)", "amount": 400, "unit": "g", "perPortions": 4 },
+    { "name": "Schalotten", "amount": 2, "unit": "Stk", "perPortions": 4 },
+    { "name": "Butter", "amount": 0.5, "unit": "EL", "perPortions": 4 },
+    { "name": "Zucker", "amount": 1, "unit": "TL", "perPortions": 4 },
+    { "name": "Wasser", "amount": 800, "unit": "ml", "perPortions": 4 },
+    { "name": "Rahm (zum Aufschlagen)", "amount": 100, "unit": "ml", "perPortions": 4 },
+    { "name": "Paprikapulver (zum Garnieren)", "amount": 1, "unit": "Prise", "perPortions": 4 },
+    { "name": "Blätterteig (rechteckig)", "amount": 0.5, "unit": "Stk", "perPortions": 4 },
+    { "name": "Sambal Oelek", "amount": 1.5, "unit": "TL", "perPortions": 4 },
+    { "name": "Fleur de Sel", "amount": 0.25, "unit": "TL", "perPortions": 4 },
+    { "name": "Salz und Pfeffer", "amount": 1, "unit": "Prise", "perPortions": 4 }
+  ],
+  "weatherType": "kalt",
+  "source": "fooby.ch",
+  "basePortions": 4,
+  "description": "Samtige Herbst-Suppe aus Marroni mit einem luftigen Rahmklecks und pikanten Blätterteig-Twistern.",
+  "steps": [
+    "Butter erhitzen, Schalotten andünsten. Zucker beigeben und 2 Minuten karamellisieren. Marroni kurz mitdünsten.",
+    "Wasser angiessen, aufkochen und zugedeckt ca. 25 Minuten köcheln lassen.",
+    "Suppe mit dem Stabmixer pürieren, mit Salz und Pfeffer würzen.",
+    "Rahm steif schlagen. Suppe in Schüsseln verteilen, Rahm aufsetzen, mit Paprika bestäuben.",
+    "Twister: Blätterteig mit Sambal Oelek bestreichen und mit Fleur de Sel bestreuen. In 2 cm breite Streifen schneiden und spiralförmig drehen.",
+    "Auf Backpapier legen, 30 Min. kühl stellen, dann ca. 10 Min. bei 220 °C backen.",
+    "Twister zur Suppe servieren."
+  ],
+  "tips": "Twister können gut vorbereitet werden – Teig abdecken und im Kühlschrank aufbewahren.",
+  "imageUrl": null,
+  "tags": ["Vegetarisch", "Herbst", "Schweizer"],
+  "dietCategory": "vegetarian"
+}

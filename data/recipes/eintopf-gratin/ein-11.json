@@ -1,0 +1,36 @@
+{
+  "id": "ein-11",
+  "name": "Mungobohnen-Dal mit Spinat und Kokosmilch",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 60,
+  "ingredients": [
+    { "name": "Mungobohnen (getrocknet)", "amount": 200, "unit": "g", "perPortions": 4 },
+    { "name": "Blattspinat (tiefgekühlt oder frisch)", "amount": 300, "unit": "g", "perPortions": 4 },
+    { "name": "Zwiebeln", "amount": 150, "unit": "g", "perPortions": 4 },
+    { "name": "Tomatenstücke (Dose)", "amount": 400, "unit": "g", "perPortions": 4 },
+    { "name": "Kokosmilch (Dose)", "amount": 400, "unit": "ml", "perPortions": 4 },
+    { "name": "Knoblauchzehen", "amount": 2, "unit": "Zehen", "perPortions": 4 },
+    { "name": "Ingwer (frisch)", "amount": 20, "unit": "g", "perPortions": 4 },
+    { "name": "Currypulver", "amount": 1, "unit": "EL", "perPortions": 4 },
+    { "name": "Kreuzkümmel (gemahlen)", "amount": 1, "unit": "TL", "perPortions": 4 },
+    { "name": "Gemüsebrühepulver", "amount": 3, "unit": "EL", "perPortions": 4 },
+    { "name": "Öl", "amount": 4, "unit": "EL", "perPortions": 4 },
+    { "name": "Zitronensaft", "amount": 1, "unit": "EL", "perPortions": 4 }
+  ],
+  "weatherType": "kalt",
+  "source": "veggie-einhorn.de",
+  "basePortions": 4,
+  "description": "Proteinreiches indisches Dal aus Mungobohnen mit Spinat und cremiger Kokosmilch.",
+  "steps": [
+    "Mungobohnen über Nacht oder mind. 3 Stunden einweichen. Abtropfen lassen.",
+    "In reichlich Wasser ca. 30 Minuten kochen bis weich. Abtropfen lassen.",
+    "Zwiebeln würfeln, Knoblauch und Ingwer fein hacken.",
+    "Öl erhitzen, Zwiebeln 4 Min. anbraten. Ingwer, Knoblauch, Curry und Kreuzkümmel 1 Min. mitbraten.",
+    "Tomaten, Kokosmilch, Brühepulver und Spinat hinzufügen. 5 Min. köcheln.",
+    "Gekochte Mungobohnen unterrühren, weitere 5 Min. köcheln. Mit Salz, Pfeffer und Zitronensaft abschmecken."
+  ],
+  "tips": "Wer keine Zeit hat zum Einweichen, kocht die Bohnen direkt aber ca. 20 Min. länger.",
+  "imageUrl": null,
+  "tags": ["Vegan", "Mealprep-geeignet", "Orientalisch"],
+  "dietCategory": "vegan"
+}

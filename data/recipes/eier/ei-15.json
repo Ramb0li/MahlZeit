@@ -1,0 +1,32 @@
+{
+  "id": "ei-15",
+  "name": "Klassische Pfannkuchen",
+  "category": "Frühstück",
+  "timeMinutes": 25,
+  "ingredients": [
+    { "name": "Mehl", "amount": 250, "unit": "g", "perPortions": 4 },
+    { "name": "Eier", "amount": 2, "unit": "Stk", "perPortions": 4 },
+    { "name": "Milch", "amount": 400, "unit": "ml", "perPortions": 4 },
+    { "name": "Butter (geschmolzen)", "amount": 2, "unit": "EL", "perPortions": 4 },
+    { "name": "Zucker", "amount": 2, "unit": "EL", "perPortions": 4 },
+    { "name": "Backpulver", "amount": 2, "unit": "TL", "perPortions": 4 },
+    { "name": "Salz", "amount": 1, "unit": "Prise", "perPortions": 4 },
+    { "name": "Vanilleextrakt", "amount": 1, "unit": "TL", "perPortions": 4 }
+  ],
+  "weatherType": "neutral",
+  "source": "Allrecipes",
+  "basePortions": 4,
+  "description": "Amerikanische Pancakes – luftig, dick und goldbraun. Ein Frühstücksklassiker für die ganze Familie.",
+  "steps": [
+    "Mehl, Zucker, Backpulver und Salz in einer Schüssel mischen.",
+    "Eier, Milch, Butter und Vanilleextrakt verquirlen.",
+    "Nasse Zutaten zu den trockenen geben und bis zur glatten Masse verrühren. 3 Minuten ruhen lassen.",
+    "Pfanne bei mittlerer Hitze erhitzen, leicht buttern. Ca. ¼ Tasse Teig hineingeben.",
+    "Backen bis die Ränder fest und Blasen entstehen, dann wenden und goldbraun fertigbacken.",
+    "Mit Ahornsirup, Butter oder frischen Früchten servieren."
+  ],
+  "tips": "Perfekte Pancakes: Teig nicht zu lange rühren und zwischen den Portionen die Pfannentemperatur kurz anpassen.",
+  "imageUrl": null,
+  "tags": ["Vegetarisch", "Kinderfreundlich"],
+  "dietCategory": "vegetarian"
+}

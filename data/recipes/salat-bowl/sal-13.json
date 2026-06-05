@@ -1,0 +1,35 @@
+{
+  "id": "sal-13",
+  "name": "Griechischer Salat",
+  "category": "Salate & Bowls",
+  "timeMinutes": 20,
+  "ingredients": [
+    { "name": "Tomaten", "amount": 3, "unit": "Stk", "perPortions": 4 },
+    { "name": "Gurke", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Rote Peperoni", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Gelbe Peperoni", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Zwiebel", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Schwarze und grüne Oliven", "amount": 100, "unit": "g", "perPortions": 4 },
+    { "name": "Feta", "amount": 150, "unit": "g", "perPortions": 4 },
+    { "name": "Weissweinessig", "amount": 2, "unit": "EL", "perPortions": 4 },
+    { "name": "Olivenöl", "amount": 5, "unit": "EL", "perPortions": 4 },
+    { "name": "Knoblauchzehe", "amount": 1, "unit": "Zehe", "perPortions": 4 },
+    { "name": "Petersilie und Oregano (frisch)", "amount": 0.5, "unit": "Bund", "perPortions": 4 },
+    { "name": "Salz", "amount": 1, "unit": "TL", "perPortions": 4 },
+    { "name": "Pfeffer", "amount": 1, "unit": "Prise", "perPortions": 4 }
+  ],
+  "weatherType": "warm",
+  "source": "Betty Bossi",
+  "basePortions": 4,
+  "description": "Knackiger Klassiker mit Feta, Oliven und frischem Gemüse – mediterran und in 20 Minuten fertig.",
+  "steps": [
+    "Essig und Öl in einer Schüssel verrühren. Knoblauch dazupressen, fein geschnittene Kräuter beigeben und würzen.",
+    "Peperoni entkernen und in Streifen schneiden. Tomaten in Schnitze schneiden. Gurke schälen, entkernen und würfeln. Zwiebel schälen und in Ringe schneiden.",
+    "Alles zusammen mit den Oliven zur Vinaigrette geben und gut vermischen.",
+    "Feta in Stücke schneiden und als Garnierung über den Salat geben."
+  ],
+  "tips": "Den Salat 10 Minuten vor dem Servieren marinieren lassen, damit die Aromen sich verbinden.",
+  "imageUrl": null,
+  "tags": ["Vegetarisch", "Sommer", "Mittagsgericht"],
+  "dietCategory": "vegetarian"
+}

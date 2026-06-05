@@ -1,0 +1,33 @@
+{
+  "id": "sal-16",
+  "name": "Blutorangen-Randen-Salat mit Labneh",
+  "category": "Salate & Bowls",
+  "timeMinutes": 75,
+  "ingredients": [
+    { "name": "Rote Bete (roh, in Schnitzen)", "amount": 1000, "unit": "g", "perPortions": 4 },
+    { "name": "Blutorangen", "amount": 4, "unit": "Stk", "perPortions": 4 },
+    { "name": "Naturjoghurt (für Labneh)", "amount": 500, "unit": "g", "perPortions": 4 },
+    { "name": "Olivenöl", "amount": 3, "unit": "EL", "perPortions": 4 },
+    { "name": "Salbei (frisch)", "amount": 1, "unit": "Bund", "perPortions": 4 },
+    { "name": "Kürbiskerne", "amount": 2, "unit": "EL", "perPortions": 4 },
+    { "name": "Weissweinessig", "amount": 2, "unit": "EL", "perPortions": 4 },
+    { "name": "Salz", "amount": 1.5, "unit": "TL", "perPortions": 4 },
+    { "name": "Pfeffer", "amount": 1, "unit": "Prise", "perPortions": 4 }
+  ],
+  "weatherType": "neutral",
+  "source": "fooby.ch",
+  "basePortions": 4,
+  "description": "Wunderschöner Wintersalat mit gerösteter Roter Bete, Blutorangen und hausgemachtem Labneh.",
+  "steps": [
+    "Labneh (am Vortag): Joghurt mit 1 TL Salz verrühren, in ein Sieb mit feinem Tuch geben, zugedeckt mind. 8 Stunden abtropfen lassen.",
+    "Rote Bete mit 2 EL Olivenöl, fein gehacktem Salbei, 1 TL Salz und Pfeffer mischen, auf Backpapier verteilen und ca. 45 Min. bei 220 °C backen.",
+    "1 EL Olivenöl erhitzen, Kürbiskerne und Salbeiblätter ca. 5 Min. anbraten.",
+    "Blutorangen schälen und in Scheiben schneiden.",
+    "Labneh auf einer Platte verteilen, Rote Bete und Blutorangen darauf anrichten.",
+    "Weissweinessig mit restlichem Olivenöl verrühren, würzen und über den Salat träufeln. Mit Kürbiskernen und Salbei garnieren."
+  ],
+  "tips": "Den Labneh unbedingt am Vortag vorbereiten. Je länger er abtropft, desto fester und aromatischer wird er.",
+  "imageUrl": null,
+  "tags": ["Vegetarisch", "Winter", "Herbst"],
+  "dietCategory": "vegetarian"
+}

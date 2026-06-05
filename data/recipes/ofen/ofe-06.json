@@ -1,0 +1,36 @@
+{
+  "id": "ofe-06",
+  "name": "Gebackene Rotkabis-Steaks mit Lachs",
+  "category": "Fisch & Meeresfrüchte",
+  "timeMinutes": 70,
+  "ingredients": [
+    { "name": "Rotkohl", "amount": 800, "unit": "g", "perPortions": 4 },
+    { "name": "Lachsfilet", "amount": 400, "unit": "g", "perPortions": 4 },
+    { "name": "Süsser Senf", "amount": 0.5, "unit": "EL", "perPortions": 4 },
+    { "name": "Balsamico-Essig", "amount": 3, "unit": "EL", "perPortions": 4 },
+    { "name": "Olivenöl", "amount": 5, "unit": "EL", "perPortions": 4 },
+    { "name": "Flüssiger Honig", "amount": 1.5, "unit": "EL", "perPortions": 4 },
+    { "name": "Knoblauchzehen (fein gehackt)", "amount": 2, "unit": "Zehen", "perPortions": 4 },
+    { "name": "Chiliflocken", "amount": 0.5, "unit": "TL", "perPortions": 4 },
+    { "name": "Dill (frisch)", "amount": 1, "unit": "Bund", "perPortions": 4 },
+    { "name": "Petersilie (glatt)", "amount": 1, "unit": "Bund", "perPortions": 4 },
+    { "name": "Limettensaft", "amount": 1, "unit": "EL", "perPortions": 4 },
+    { "name": "Blutorange", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Fleur de Sel", "amount": 0.5, "unit": "TL", "perPortions": 4 }
+  ],
+  "weatherType": "neutral",
+  "source": "fooby.ch",
+  "basePortions": 4,
+  "description": "Spektakuläres Ofengericht: karamellisierte Rotkabis-Steaks mit zartem Lachs und einer frischen Kräuter-Garnitur.",
+  "steps": [
+    "Marinade: Senf, Essig, 4 EL Öl, Honig, Knoblauch, Chili und Salz verrühren.",
+    "Rotkohl in ca. 1.5 cm dicke Scheiben schneiden und auf Backpapier legen. Mit der Hälfte der Marinade bepinseln.",
+    "Ca. 30 Min. bei 200 °C backen. Lachs daneben legen und mit restlicher Marinade bepinseln. Weitere ca. 10 Min. backen.",
+    "Lachs mit einer Gabel in Flocken teilen. Mit Limettensaft, 1 EL Öl und Kräutern vermischen. Mit Fleur de Sel würzen.",
+    "Rotkabis-Steaks auf einer Platte anrichten. Lachs-Kräutergemisch darüber verteilen. Mit Blutorangen-Scheiben garnieren."
+  ],
+  "tips": "Wer keinen Lachs möchte, kann das Gericht auch rein vegan mit Kichererbsen als Topping servieren.",
+  "imageUrl": null,
+  "tags": ["Ofengericht", "Winter"],
+  "dietCategory": "fish"
+}

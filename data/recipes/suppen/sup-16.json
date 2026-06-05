@@ -1,0 +1,37 @@
+{
+  "id": "sup-16",
+  "name": "Asiatische Nudelsuppe mit Tofu",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 30,
+  "ingredients": [
+    { "name": "Reisnudeln", "amount": 200, "unit": "g", "perPortions": 4 },
+    { "name": "Tofu (fest)", "amount": 300, "unit": "g", "perPortions": 4 },
+    { "name": "Gemüsebrühe", "amount": 1200, "unit": "ml", "perPortions": 4 },
+    { "name": "Pak-Choi", "amount": 2, "unit": "Stk", "perPortions": 4 },
+    { "name": "Karotten", "amount": 2, "unit": "Stk", "perPortions": 4 },
+    { "name": "Ingwer (frisch)", "amount": 20, "unit": "g", "perPortions": 4 },
+    { "name": "Knoblauchzehen", "amount": 2, "unit": "Zehen", "perPortions": 4 },
+    { "name": "Miso-Paste", "amount": 2, "unit": "EL", "perPortions": 4 },
+    { "name": "Sojasosse", "amount": 3, "unit": "EL", "perPortions": 4 },
+    { "name": "Sesamöl", "amount": 1, "unit": "EL", "perPortions": 4 },
+    { "name": "Frühlingszwiebeln", "amount": 3, "unit": "Stk", "perPortions": 4 },
+    { "name": "Sesam", "amount": 2, "unit": "EL", "perPortions": 4 }
+  ],
+  "weatherType": "kalt",
+  "source": "Coop",
+  "basePortions": 4,
+  "description": "Würzige asiatische Nudelsuppe mit gebratenem Tofu, Pak-Choi und einem tiefen Miso-Brühe.",
+  "steps": [
+    "Tofu in Würfel schneiden und in einer Pfanne mit Sesamöl goldbraun anbraten.",
+    "Ingwer und Knoblauch fein hacken. Karotten in feine Streifen schneiden. Pak-Choi in Stücke schneiden.",
+    "Brühe aufkochen, Ingwer und Knoblauch hinzufügen. Miso-Paste einrühren.",
+    "Karotten hinzufügen und 5 Minuten köcheln lassen.",
+    "Reisnudeln nach Packungsanleitung kochen, abtropfen lassen.",
+    "Pak-Choi zur Suppe geben und 2 Minuten mitkochen. Mit Sojasosse würzen.",
+    "Nudeln in Schüsseln verteilen, Brühe aufgiessen. Mit Tofu, Frühlingszwiebeln und Sesam garnieren."
+  ],
+  "tips": "Miso-Paste nicht kochen – erst kurz vor dem Servieren einrühren, damit die Probiotika erhalten bleiben.",
+  "imageUrl": null,
+  "tags": ["Vegan", "Asiatisch", "Mittagsgericht"],
+  "dietCategory": "vegan"
+}

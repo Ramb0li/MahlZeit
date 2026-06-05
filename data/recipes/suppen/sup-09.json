@@ -1,0 +1,36 @@
+{
+  "id": "sup-09",
+  "name": "Hirsesuppe mit Gemüseeinlage",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 40,
+  "ingredients": [
+    { "name": "Hirse", "amount": 200, "unit": "g", "perPortions": 4 },
+    { "name": "Zwiebel", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Karotten", "amount": 2, "unit": "Stk", "perPortions": 4 },
+    { "name": "Zucchetti", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Selleriestangen", "amount": 2, "unit": "Stk", "perPortions": 4 },
+    { "name": "Gemüsebrühe", "amount": 1200, "unit": "ml", "perPortions": 4 },
+    { "name": "Olivenöl", "amount": 2, "unit": "EL", "perPortions": 4 },
+    { "name": "Knoblauchzehe", "amount": 1, "unit": "Zehe", "perPortions": 4 },
+    { "name": "Salz", "amount": 1, "unit": "TL", "perPortions": 4 },
+    { "name": "Pfeffer", "amount": 1, "unit": "Prise", "perPortions": 4 },
+    { "name": "Schnittlauch (frisch)", "amount": 0.5, "unit": "Bund", "perPortions": 4 }
+  ],
+  "weatherType": "kalt",
+  "source": "Chefkoch",
+  "basePortions": 4,
+  "description": "Leichte, nährstoffreiche Suppe mit Hirse und frischem Gemüse – einfach, sättigend und schnell gemacht.",
+  "steps": [
+    "Hirse unter kaltem Wasser abspülen und abtropfen lassen.",
+    "Zwiebel und Knoblauch fein würfeln. Karotten, Zucchetti und Sellerie in kleine Würfel schneiden.",
+    "Olivenöl in einem Topf erhitzen, Zwiebel und Knoblauch glasig dünsten.",
+    "Karotten und Sellerie hinzufügen und ca. 3 Minuten mitbraten.",
+    "Hirse und Gemüsebrühe hinzufügen, aufkochen. Bei mittlerer Hitze ca. 20 Minuten köcheln lassen.",
+    "Zucchetti hinzufügen und weitere 5 Minuten mitkochen. Mit Salz und Pfeffer abschmecken.",
+    "In Schüsseln verteilen und mit Schnittlauch garnieren."
+  ],
+  "tips": "Die Hirse gut abspülen, damit der leicht bittere Geschmack entfernt wird. Die Suppe schmeckt am nächsten Tag noch besser.",
+  "imageUrl": null,
+  "tags": ["Vegan", "Mealprep-geeignet", "Winter", "Mittagsgericht"],
+  "dietCategory": "vegan"
+}

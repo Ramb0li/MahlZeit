@@ -1,0 +1,30 @@
+{
+  "id": "son-11",
+  "name": "Spinat-Chüechli",
+  "category": "Vegetarische Hauptgerichte",
+  "timeMinutes": 35,
+  "ingredients": [
+    { "name": "Blätterteig (rechteckig, ausgerollt)", "amount": 1, "unit": "Stk", "perPortions": 8 },
+    { "name": "Tiefkühlspinat (aufgetaut)", "amount": 600, "unit": "g", "perPortions": 8 },
+    { "name": "Eier", "amount": 4, "unit": "Stk", "perPortions": 8 },
+    { "name": "Gruyère (gerieben)", "amount": 120, "unit": "g", "perPortions": 8 },
+    { "name": "Zwiebel (fein gehackt)", "amount": 1, "unit": "Stk", "perPortions": 8 },
+    { "name": "Salz", "amount": 0.5, "unit": "TL", "perPortions": 8 },
+    { "name": "Pfeffer", "amount": 1, "unit": "Prise", "perPortions": 8 },
+    { "name": "Muskatnuss", "amount": 1, "unit": "Prise", "perPortions": 8 }
+  ],
+  "weatherType": "neutral",
+  "source": "fooby.ch",
+  "basePortions": 8,
+  "description": "Klassische Schweizer Spinat-Chüechli aus Blätterteig – saftig gefüllt, goldbraun gebacken und überall beliebt.",
+  "steps": [
+    "Aus dem Blätterteig 8 Kreise (ca. 10 cm Durchmesser) ausstechen. In gefettete Muffinformen legen, Boden mit Gabel einstechen und kurz kühlen.",
+    "Tiefkühlspinat gut ausdrücken. Mit Eiern, geriebenem Käse und Zwiebeln vermischen. Mit Salz, Pfeffer und Muskat würzen.",
+    "Spinatmasse in die vorbereiteten Förmchen verteilen.",
+    "Ca. 25 Min. im unteren Drittel des vorgeheizten Ofens bei 220 °C backen bis goldbraun."
+  ],
+  "tips": "Den Spinat vor dem Mischen gut ausdrücken – zu viel Flüssigkeit macht die Chüechli matschig.",
+  "imageUrl": null,
+  "tags": ["Vegetarisch", "Schweizer", "Kinderfreundlich"],
+  "dietCategory": "vegetarian"
+}

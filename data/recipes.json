@@ -713,6 +713,409 @@
     "imageKochen": null
   },
   {
+    "id": "ei-12",
+    "name": "Shakshuka",
+    "category": "Vegetarische Hauptgerichte",
+    "timeMinutes": 45,
+    "ingredients": [
+      {
+        "name": "Eier",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Rote Peperoni",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Gelbe Peperoni",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehen",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Gehackte Tomaten (Dose)",
+        "amount": 800,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Paprikapulver edelsüss",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kreuzkümmel",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Cayennepfeffer",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Zimtstange",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Feta (zerbröselt)",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Koriander und Petersilie",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Bratfett",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz und Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "neutral",
+    "source": "Swissmilk",
+    "basePortions": 4,
+    "description": "Nordafrikanischer Klassiker: pochierte Eier in einer würzigen Paprika-Tomaten-Sauce mit Feta.",
+    "steps": [
+      "Bratfett in einer grossen Pfanne erhitzen. Peperoni in Streifen, Zwiebeln und Knoblauch fein schneiden. Ca. 5 Min. bei mittlerer Hitze andünsten.",
+      "Tomaten und Gewürze (inkl. Zimtstange) zugeben. Unter gelegentlichem Rühren 20–25 Min. offen köcheln bis die Sauce eindickt.",
+      "Feta zugeben und abschmecken. Zimtstange entfernen.",
+      "Vier Mulden in die Sauce drücken. Jeweils ein Ei hineinsetzen. Zugedeckt 8–10 Min. pochieren bis Eiweiss gestockt, Eigelb noch weich.",
+      "Mit frischen Kräutern garnieren und mit Baguette oder Fladenbrot servieren."
+    ],
+    "tips": "Schmeckt auch als Brunch. Die Sauce kann gut vorbereitet werden – Eier erst kurz vor dem Servieren hineinsetzen.",
+    "imageUrl": null,
+    "tags": [
+      "Vegetarisch",
+      "Orientalisch",
+      "Mittagsgericht"
+    ],
+    "dietCategory": "vegetarian"
+  },
+  {
+    "id": "ei-13",
+    "name": "Smoothie Bowl mit Beeren und Zucchetti",
+    "category": "Frühstück",
+    "timeMinutes": 20,
+    "ingredients": [
+      {
+        "name": "Bananen (eingefroren)",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Zucchetti (in Stücken)",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Erdbeeren",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Himbeeren",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Kokosnussmilch-Joghurt",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Erdbeeren (zum Garnieren)",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Himbeeren (zum Garnieren)",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Johannisbeeren (zum Garnieren)",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Müeslimischung",
+        "amount": 8,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "warm",
+    "source": "fooby.ch",
+    "basePortions": 4,
+    "description": "Cremige, pinke Smoothie Bowl mit Banane, Beeren und versteckter Zucchetti – ein vitaminreicher Start in den Tag.",
+    "steps": [
+      "Bananen mit Zucchetti, Erdbeeren, Himbeeren und Joghurt im Mixer fein pürieren.",
+      "Smoothie gleichmässig in vier Bowls verteilen.",
+      "Mit Beeren (Erdbeerscheiben, Himbeeren, Johannisbeeren) und Müesli garnieren."
+    ],
+    "tips": "Bananen und Zucchetti am Vortag einfrieren für die dickste Konsistenz. Die Zucchetti schmeckt man überhaupt nicht.",
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Sommer",
+      "Frühling"
+    ],
+    "dietCategory": "vegan"
+  },
+  {
+    "id": "ei-14",
+    "name": "Fluffige Vegane Pancakes",
+    "category": "Frühstück",
+    "timeMinutes": 35,
+    "ingredients": [
+      {
+        "name": "Mehl",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zucker",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Backpulver",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Pflanzenmilch (z.B. Mandelmilch)",
+        "amount": 480,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Apfelessig",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Vanilleextrakt",
+        "amount": 2,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Ahornsirup (zum Servieren)",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "neutral",
+    "source": "Tasty",
+    "basePortions": 4,
+    "description": "Überraschend luftige vegane Pancakes ohne Ei und Milch – mit Apfelessig als Geheimzutat.",
+    "steps": [
+      "Mehl, Zucker, Backpulver und Salz in einer Schüssel vermischen.",
+      "Pflanzenmilch, Apfelessig und Vanilleextrakt in einer zweiten Schüssel verrühren.",
+      "Nasse Zutaten zu den trockenen giessen und glatt verrühren. 5 Minuten quellen lassen.",
+      "Antihaftpfanne bei mittlerer Hitze erwärmen (kein Fett nötig). Ca. ½ Tasse Teig hineingeben.",
+      "Backen bis Blasen entstehen, dann wenden und goldbraun fertigbacken.",
+      "Mit Ahornsirup und Früchten servieren."
+    ],
+    "tips": "Teig nicht zu stark rühren – kleine Klümpchen sind in Ordnung und sorgen für Fluffigkeit.",
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Kinderfreundlich"
+    ],
+    "dietCategory": "vegan"
+  },
+  {
+    "id": "ei-15",
+    "name": "Klassische Pfannkuchen",
+    "category": "Frühstück",
+    "timeMinutes": 25,
+    "ingredients": [
+      {
+        "name": "Mehl",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Eier",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Milch",
+        "amount": 400,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Butter (geschmolzen)",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Zucker",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Backpulver",
+        "amount": 2,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Vanilleextrakt",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "neutral",
+    "source": "Allrecipes",
+    "basePortions": 4,
+    "description": "Amerikanische Pancakes – luftig, dick und goldbraun. Ein Frühstücksklassiker für die ganze Familie.",
+    "steps": [
+      "Mehl, Zucker, Backpulver und Salz in einer Schüssel mischen.",
+      "Eier, Milch, Butter und Vanilleextrakt verquirlen.",
+      "Nasse Zutaten zu den trockenen geben und bis zur glatten Masse verrühren. 3 Minuten ruhen lassen.",
+      "Pfanne bei mittlerer Hitze erhitzen, leicht buttern. Ca. ¼ Tasse Teig hineingeben.",
+      "Backen bis die Ränder fest und Blasen entstehen, dann wenden und goldbraun fertigbacken.",
+      "Mit Ahornsirup, Butter oder frischen Früchten servieren."
+    ],
+    "tips": "Perfekte Pancakes: Teig nicht zu lange rühren und zwischen den Portionen die Pfannentemperatur kurz anpassen.",
+    "imageUrl": null,
+    "tags": [
+      "Vegetarisch",
+      "Kinderfreundlich"
+    ],
+    "dietCategory": "vegetarian"
+  },
+  {
+    "id": "ei-16",
+    "name": "Vegane Bananen-Pancakes",
+    "category": "Frühstück",
+    "timeMinutes": 20,
+    "ingredients": [
+      {
+        "name": "Reife Bananen",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Haferflocken (fein gemahlen oder Hafermehl)",
+        "amount": 80,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Mandelmilch oder Pflanzenmilch",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Backpulver",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Vanilleextrakt",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Zimt",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "neutral",
+    "source": "Chefkoch",
+    "basePortions": 4,
+    "description": "Einfachste vegane Pancakes aus Bananen und Haferflocken – ohne Mehl, Zucker oder Ei.",
+    "steps": [
+      "Bananen in einer Schüssel zerdrücken bis eine glatte Paste entsteht.",
+      "Hafermehl (oder fein gemahlene Haferflocken), Backpulver, Vanilleextrakt und Zimt untermischen.",
+      "Pflanzenmilch zugeben und zu einem dickflüssigen Teig verrühren.",
+      "Antihaftpfanne bei mittlerer Hitze erhitzen. Löffelweise Teig hineingeben und kleine runde Pancakes formen.",
+      "Ca. 3–4 Minuten backen bis die Unterseite goldbraun ist, vorsichtig wenden und weitere 2–3 Minuten fertigbacken.",
+      "Mit Beeren, Ahornsirup oder Nussbutter servieren."
+    ],
+    "tips": "Je reifer die Bananen, desto süsser die Pancakes. Haferflocken können in einem Mixer selbst zu Mehl gemahlen werden.",
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Kinderfreundlich"
+    ],
+    "dietCategory": "vegan"
+  },
+  {
     "id": "fam-29",
     "name": "Nudeln al Pollo",
     "category": "Pasta",
@@ -2609,6 +3012,336 @@
     "imageKochen": null
   },
   {
+    "id": "pas-16",
+    "name": "Vegane Linsen-Lasagne",
+    "category": "Pasta",
+    "timeMinutes": 100,
+    "ingredients": [
+      {
+        "name": "Grüne Linsen",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Lasagne-Blätter (grün)",
+        "amount": 12,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Passierte Tomaten",
+        "amount": 700,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehen",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Rüebli (Karotte)",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knollensellerie",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Getrocknete Steinpilze",
+        "amount": 25,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Wasser",
+        "amount": 400,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Lorbeerblatt",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Haferdrink",
+        "amount": 700,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Weissmehl (für Béchamel)",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl (für Béchamel)",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Muskatnuss",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 2,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "neutral",
+    "source": "fooby.ch",
+    "basePortions": 4,
+    "description": "Herzhafte vegane Lasagne mit würziger Linsen-Tomaten-Sauce und cremiger Haferdrink-Béchamel.",
+    "steps": [
+      "Zwiebel, Knoblauch, Karotte und Sellerie fein hacken. Steinpilze 5 Min. einweichen, abtropfen und grob hacken.",
+      "Öl erhitzen, Gemüse 5 Min. andämpfen. Linsen, Steinpilze und Lorbeer beigeben, kurz mitdämpfen.",
+      "Passierte Tomaten und Wasser zugeben, aufkochen, zugedeckt ca. 40 Min. köcheln. Mit Salz und Pfeffer würzen.",
+      "Für die Béchamel: Öl erhitzen, Mehl einrühren und kurz dünsten. Haferdrink schrittweise zugeben, aufkochen, mit Muskat, Salz und Pfeffer würzen, ca. 10 Min. köcheln.",
+      "Auflaufform einfetten. Abwechselnd Béchamel, Linsensauce und Lasagne-Blätter schichten. Mit Béchamel abschliessen.",
+      "Ca. 40 Min. bei 200 °C backen. 5 Min. ruhen lassen vor dem Servieren."
+    ],
+    "tips": "Die Lasagne schmeckt am nächsten Tag noch besser. Reste lassen sich gut einfrieren.",
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet",
+      "Italienisch"
+    ],
+    "dietCategory": "vegan"
+  },
+  {
+    "id": "pas-17",
+    "name": "Linsen-Bolognese mit Spaghetti",
+    "category": "Pasta",
+    "timeMinutes": 30,
+    "ingredients": [
+      {
+        "name": "Spaghetti",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Rote Linsen",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Karotten",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Champignons",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehen",
+        "amount": 3,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomatenmark",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Passierte Tomaten",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Gestückelte Tomaten (Dose)",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 480,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Italienische Kräuter",
+        "amount": 2,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz und Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "neutral",
+    "source": "Bianca Zapatka",
+    "basePortions": 4,
+    "description": "Reichhaltige vegane Bolognese mit roten Linsen – in nur 30 Minuten fertig und voller Umami.",
+    "steps": [
+      "Öl in grosser Pfanne erhitzen. Zwiebeln 2 Minuten glasig dünsten.",
+      "Karotten, Champignons und Knoblauch hinzufügen, 5–7 Minuten anbraten.",
+      "Tomatenmark und Kräuter einrühren, 1–2 Minuten anrösten.",
+      "Linsen, passierte und gestückelte Tomaten sowie Gemüsebrühe zugeben, verrühren. Aufkochen und zugedeckt 15–20 Minuten köcheln bis Linsen gar sind.",
+      "Spaghetti in Salzwasser al dente kochen. Abtropfen lassen.",
+      "Bolognese mit Salz und Pfeffer abschmecken. Mit Spaghetti servieren, optional mit veganem Parmesan."
+    ],
+    "tips": "Die Sauce schmeckt auch grossartig als Füllung für Lasagne oder in Zucchetti-Boots.",
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet",
+      "Italienisch"
+    ],
+    "dietCategory": "vegan"
+  },
+  {
+    "id": "pas-18",
+    "name": "Vegane Spätzli mit Pilzgeschnetzeltem",
+    "category": "Pasta",
+    "timeMinutes": 35,
+    "ingredients": [
+      {
+        "name": "Vegane Spätzli (frisch oder aus Packung)",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Champignons",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Cremechampignons",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Schalotten",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehen",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Vegane Rahmsauce oder Hafer-Cuisine",
+        "amount": 200,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Weisswein (oder Gemüsebrühe)",
+        "amount": 100,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Thymian (frisch)",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Pflanzenöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Petersilie (frisch)",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz und Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "kalt",
+    "source": "Coop",
+    "basePortions": 4,
+    "description": "Klassische Schweizer Spätzli mit cremigem Pilzgeschnetzeltem – vegan und trotzdem herzhaft.",
+    "steps": [
+      "Schalotten und Knoblauch fein würfeln. Champignons in Scheiben schneiden.",
+      "Öl in einer grossen Pfanne erhitzen. Schalotten und Knoblauch glasig dünsten.",
+      "Pilze hinzugeben und auf hoher Hitze ca. 5 Minuten anbraten bis sie leicht gebräunt sind. Thymian beigeben.",
+      "Mit Weisswein oder Brühe ablöschen. Vegane Rahmsauce einrühren und 5 Minuten einköcheln lassen.",
+      "Spätzli in Salzwasser aufwärmen oder direkt in der Pfanne mit dem Pilzgeschnetzelten schwenken.",
+      "Mit Salz und Pfeffer abschmecken, mit frischer Petersilie garnieren."
+    ],
+    "tips": "Für mehr Geschmack gemischte Pilze verwenden – z.B. Champignons mit Shiitake oder Austernpilzen.",
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Schweizer",
+      "Herbst"
+    ],
+    "dietCategory": "vegan"
+  },
+  {
     "id": "fam-56",
     "name": "Zitronenrisotto",
     "category": "Reis & Getreide",
@@ -3957,6 +4690,935 @@
     ]
   },
   {
+    "id": "ein-07",
+    "name": "Pasta-Auflauf mit Spinat und Mozzarella",
+    "category": "Aufläufe & Gratins",
+    "timeMinutes": 45,
+    "ingredients": [
+      {
+        "name": "Penne oder Rigatoni",
+        "amount": 350,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Blattspinat (tiefgekühlt, aufgetaut)",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Mozzarella",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Passierte Tomaten",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehen",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Parmesan (gerieben)",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Ricotta",
+        "amount": 150,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Italienische Kräuter",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz und Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "neutral",
+    "source": "Knusperstübchen",
+    "basePortions": 4,
+    "description": "Einfacher Pasta-Auflauf mit cremigem Spinat, Ricotta und überbackenem Mozzarella – schnelles Ofengericht.",
+    "steps": [
+      "Pasta in Salzwasser al dente kochen. Abtropfen lassen.",
+      "Zwiebel und Knoblauch fein würfeln. Olivenöl erhitzen, Zwiebeln glasig dünsten, Knoblauch kurz mitbraten.",
+      "Passierte Tomaten und Kräuter hinzufügen, 5 Minuten köcheln. Mit Salz und Pfeffer würzen.",
+      "Spinat ausdrücken und unter die Tomatensauce rühren. Ricotta untermischen.",
+      "Pasta in eine gefettete Auflaufform geben. Tomatensauce darübergiessen und alles gut vermischen.",
+      "Mozzarella in Scheiben darauflegen, mit Parmesan bestreuen.",
+      "Ca. 20–25 Min. bei 200 °C backen bis der Käse goldbraun ist."
+    ],
+    "tips": "Der Auflauf lässt sich gut vorbereiten und im Kühlschrank aufbewahren. Vor dem Backen 15 Min. Raumtemperatur nehmen lassen.",
+    "imageUrl": null,
+    "tags": [
+      "Vegetarisch",
+      "Mealprep-geeignet",
+      "Italienisch"
+    ],
+    "dietCategory": "vegetarian"
+  },
+  {
+    "id": "ein-09",
+    "name": "Butternut- und Süsskartoffel-Curry",
+    "category": "Suppen, Eintöpfe & Currys",
+    "timeMinutes": 60,
+    "ingredients": [
+      {
+        "name": "Butternusskürbis",
+        "amount": 600,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Süsskartoffeln",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Rote Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Rote Chilischoten",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Ingwer (frisch)",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehen",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Kurkuma (frisch oder gemahlen)",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Korianderpulver",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Zimt (gemahlen)",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kokosmilch (Dose)",
+        "amount": 400,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 350,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Gehackte Tomaten (Dose)",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Kokos- oder Pflanzenöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Koriander (frisch)",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Limetten",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "kalt",
+    "source": "Nigella Lawson",
+    "basePortions": 4,
+    "description": "Wärmendes Kürbis-Süsskartoffel-Curry mit cremiger Kokosmilch – nach einem Rezept von Nigella Lawson.",
+    "steps": [
+      "Zwiebel, Chilis, Ingwer, Knoblauch und Gewürze mit dem Stabmixer zu einer Paste pürieren.",
+      "Öl in einem grossen Topf erhitzen, Paste ca. 1 Minute unter Rühren anbraten.",
+      "Den cremigen oberen Teil der Kokosmilch abschöpfen und einrühren, weitere Minute rühren. Restliche Kokosmilch, Brühe und Tomaten zugeben.",
+      "Kürbis und Süsskartoffeln würfeln und in den Topf geben. Gut verrühren und aufkochen.",
+      "Hitze reduzieren, zudecken und ca. 40–50 Minuten köcheln bis das Gemüse weich ist.",
+      "10 Minuten ruhen lassen. Mit Koriander und Limetten servieren – dazu passt Basmatireis."
+    ],
+    "tips": "Das Curry schmeckt am nächsten Tag noch besser. Gut eingefroren hält es sich 3 Monate.",
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet",
+      "Herbst",
+      "Winter"
+    ],
+    "dietCategory": "vegan"
+  },
+  {
+    "id": "ein-10",
+    "name": "Beluga-Linsen-Curry mit Süsskartoffel",
+    "category": "Suppen, Eintöpfe & Currys",
+    "timeMinutes": 50,
+    "ingredients": [
+      {
+        "name": "Beluga-Linsen (schwarz)",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Süsskartoffel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Karotten (klein)",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehen",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Ingwer (frisch)",
+        "amount": 10,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Currypaste oder Currypulver",
+        "amount": 1.5,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Passierte Tomaten",
+        "amount": 400,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Kokosmilch (Dose)",
+        "amount": 400,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 560,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Babyspinat (frisch)",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Limetten- oder Zitronensaft",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kokosöl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "kalt",
+    "source": "Bianca Zapatka",
+    "basePortions": 4,
+    "description": "Cremiges indisches Beluga-Linsen-Curry mit Süsskartoffel und Spinat – reich an Proteinen und Ballaststoffen.",
+    "steps": [
+      "Kokosöl erhitzen, Zwiebeln, Knoblauch, Ingwer und Karotten 1–2 Minuten anbraten.",
+      "Currypaste und Linsen hinzufügen, weitere Minute anschwitzen.",
+      "Passierte Tomaten, Kokosmilch und 1 Tasse Brühe zugeben. Aufkochen.",
+      "Ca. 20–25 Minuten köcheln, restliche Brühe nach und nach zugeben.",
+      "Süsskartoffelwürfel hinzufügen, weitere 15 Minuten kochen bis alles weich und cremig ist.",
+      "Mit Salz, Pfeffer und Limettensaft abschmecken. Spinat einrühren, 1 Minute garen.",
+      "Mit Joghurt, Koriander und Sesam garnieren. Mit Reis oder Naan servieren."
+    ],
+    "tips": "Beluga-Linsen müssen nicht eingeweicht werden und behalten ihre Form beim Kochen.",
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet",
+      "Orientalisch"
+    ],
+    "dietCategory": "vegan"
+  },
+  {
+    "id": "ein-11",
+    "name": "Mungobohnen-Dal mit Spinat und Kokosmilch",
+    "category": "Suppen, Eintöpfe & Currys",
+    "timeMinutes": 60,
+    "ingredients": [
+      {
+        "name": "Mungobohnen (getrocknet)",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Blattspinat (tiefgekühlt oder frisch)",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebeln",
+        "amount": 150,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomatenstücke (Dose)",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Kokosmilch (Dose)",
+        "amount": 400,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehen",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Ingwer (frisch)",
+        "amount": 20,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Currypulver",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kreuzkümmel (gemahlen)",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühepulver",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Öl",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "kalt",
+    "source": "veggie-einhorn.de",
+    "basePortions": 4,
+    "description": "Proteinreiches indisches Dal aus Mungobohnen mit Spinat und cremiger Kokosmilch.",
+    "steps": [
+      "Mungobohnen über Nacht oder mind. 3 Stunden einweichen. Abtropfen lassen.",
+      "In reichlich Wasser ca. 30 Minuten kochen bis weich. Abtropfen lassen.",
+      "Zwiebeln würfeln, Knoblauch und Ingwer fein hacken.",
+      "Öl erhitzen, Zwiebeln 4 Min. anbraten. Ingwer, Knoblauch, Curry und Kreuzkümmel 1 Min. mitbraten.",
+      "Tomaten, Kokosmilch, Brühepulver und Spinat hinzufügen. 5 Min. köcheln.",
+      "Gekochte Mungobohnen unterrühren, weitere 5 Min. köcheln. Mit Salz, Pfeffer und Zitronensaft abschmecken."
+    ],
+    "tips": "Wer keine Zeit hat zum Einweichen, kocht die Bohnen direkt aber ca. 20 Min. länger.",
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet",
+      "Orientalisch"
+    ],
+    "dietCategory": "vegan"
+  },
+  {
+    "id": "ein-12",
+    "name": "Kürbis-Kichererbsen-Curry",
+    "category": "Suppen, Eintöpfe & Currys",
+    "timeMinutes": 30,
+    "ingredients": [
+      {
+        "name": "Hokkaido-Kürbis",
+        "amount": 600,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Kichererbsen (Dose, abgetropft)",
+        "amount": 265,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Rote Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehen",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Ingwer (frisch)",
+        "amount": 15,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Gelbes Currypulver",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kokosmilch (Dose)",
+        "amount": 400,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Babyspinat",
+        "amount": 150,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kokosnussöl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Cashewnüsse",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Sesam",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "kalt",
+    "source": "Bianca Zapatka",
+    "basePortions": 4,
+    "description": "Schnelles veganes Curry mit Hokkaido-Kürbis, Kichererbsen und Spinat – in 30 Minuten auf dem Tisch.",
+    "steps": [
+      "Kürbis (ungeschält) und Zwiebel würfeln.",
+      "Kokosöl erhitzen, Kürbis und Zwiebeln 3 Min. anbraten.",
+      "Knoblauch, Ingwer und Currypulver hinzufügen, 1–2 Min. anschwitzen. Kokosmilch zugeben.",
+      "Aufkochen, Hitze reduzieren, ca. 10 Min. köcheln.",
+      "Spinat und Kichererbsen hinzufügen, weitere 5 Min. köcheln.",
+      "Mit Salz, Chili und Zitronensaft abschmecken. Mit Reis, Cashews und Sesam servieren."
+    ],
+    "tips": "Hokkaido-Kürbis muss nicht geschält werden – die Schale wird beim Kochen weich.",
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet",
+      "Herbst"
+    ],
+    "dietCategory": "vegan"
+  },
+  {
+    "id": "ein-13",
+    "name": "Cremiges Linsen-Dal",
+    "category": "Suppen, Eintöpfe & Currys",
+    "timeMinutes": 35,
+    "ingredients": [
+      {
+        "name": "Grüne oder braune Linsen",
+        "amount": 190,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel (mittelgross)",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Karotte (gross)",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehen",
+        "amount": 3,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Ingwer (frisch)",
+        "amount": 10,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Rote oder grüne Chilischote",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Kreuzkümmel (gemahlen)",
+        "amount": 2,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Currypulver",
+        "amount": 2,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kurkuma",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Korianderpulver",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 700,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Kokosmilch",
+        "amount": 240,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Kokosöl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "kalt",
+    "source": "Ela Vegan",
+    "basePortions": 4,
+    "description": "Einfaches, cremiges Linsen-Dal mit Kokosmilch und aromatischen Gewürzen – gesund, glutenfrei und vegan.",
+    "steps": [
+      "Linsen verlesen, abspülen und 15 Min. in lauwarmem Wasser einweichen.",
+      "Karotte, Zwiebel, Chili, Ingwer und Knoblauch fein hacken.",
+      "Öl erhitzen, Zwiebel 3–4 Min. anbraten.",
+      "Chili, Knoblauch, Ingwer und Karotten hinzufügen, Hitze reduzieren.",
+      "Alle Gewürze, abgetropfte Linsen und Gemüsebrühe zugeben, 15 Min. köcheln.",
+      "Kokosmilch einrühren, weitere 10–15 Min. köcheln bis Linsen weich sind. Abschmecken."
+    ],
+    "tips": "Mit Naan, Basmatireis oder Vollkornbrot servieren. Nach Belieben mit frischem Koriander garnieren.",
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet",
+      "Orientalisch"
+    ],
+    "dietCategory": "vegan"
+  },
+  {
+    "id": "ein-14",
+    "name": "Salziger Brotauflauf",
+    "category": "Aufläufe & Gratins",
+    "timeMinutes": 45,
+    "ingredients": [
+      {
+        "name": "Brot (in Scheiben, ca. 1 cm)",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Tiefkühlspinat (aufgetaut)",
+        "amount": 600,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Karotten (grob gerieben)",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Magerquark",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Eier",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 200,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Gruyère (gerieben)",
+        "amount": 75,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Preiselbeeren (fein gehackt)",
+        "amount": 75,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemischte Nüsse (grob gehackt)",
+        "amount": 75,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Muskatnuss",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz und Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "kalt",
+    "source": "fooby.ch",
+    "basePortions": 4,
+    "description": "Einfacher Brotauflauf mit Spinat und Karotten – der knackige Nuss-Beeren-Topping macht ihn besonders.",
+    "steps": [
+      "Spinat und Karotten mischen, mit Salz und Pfeffer würzen.",
+      "Brotscheiben und Gemüsemischung abwechselnd in einer gefetteten Auflaufform (2.5 L) schichten.",
+      "Brühe, Quark und Eier verquirlen, mit Salz, Muskat und Pfeffer würzen. Über das Brot giessen.",
+      "Gruyère, Preiselbeeren und Nüsse darüberstreuen.",
+      "Ca. 25 Min. im Ofen bei 200 °C (Mitte) backen."
+    ],
+    "tips": "Altbackenes Brot eignet sich besonders gut – es saugt die Flüssigkeit gut auf.",
+    "imageUrl": null,
+    "tags": [
+      "Vegetarisch",
+      "Herbst",
+      "Winter"
+    ],
+    "dietCategory": "vegetarian"
+  },
+  {
+    "id": "ein-16",
+    "name": "Kartoffelgratin mit Lauch",
+    "category": "Aufläufe & Gratins",
+    "timeMinutes": 85,
+    "ingredients": [
+      {
+        "name": "Mehligkochende Kartoffeln",
+        "amount": 1000,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Lauch",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Getrocknete Steinpilze",
+        "amount": 20,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Gruyère (gerieben)",
+        "amount": 120,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Rahm",
+        "amount": 250,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Muskatnuss",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 0.75,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Wasser (für Pilze)",
+        "amount": 200,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Apfelessig (für Salat)",
+        "amount": 1.5,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kürbiskernöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Feldsalat oder Frisee",
+        "amount": 150,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Kürbiskerne",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "kalt",
+    "source": "fooby.ch",
+    "basePortions": 4,
+    "description": "Klassisches Kartoffelgratin mit Lauch, Steinpilzen und Gruyère – ein echter Schweizer Hausklassiker.",
+    "steps": [
+      "Steinpilze ca. 15 Min. in Wasser einweichen, abtropfen lassen.",
+      "Kartoffeln (3 mm) in Scheiben, Lauch halbieren und in feine Streifen schneiden.",
+      "Kartoffeln, Lauch, Pilze und die Hälfte des Käses mischen. In gefettete Auflaufform geben.",
+      "Rahm mit Muskat, Salz und Pfeffer würzen und über die Mischung giessen.",
+      "Restlichen Käse darüberstreuen.",
+      "Ca. 1 Stunde bei 180 °C backen.",
+      "Salat mit Essig und Öl anrichten, mit Mohn und Kürbiskernen bestreuen. Zum Gratin servieren."
+    ],
+    "tips": "Das Gratin kann auch am Vortag vorbereitet und im Kühlschrank aufbewahrt werden.",
+    "imageUrl": null,
+    "tags": [
+      "Vegetarisch",
+      "Schweizer",
+      "Winter",
+      "Herbst"
+    ],
+    "dietCategory": "vegetarian"
+  },
+  {
+    "id": "ein-17",
+    "name": "Ebly-Gratin mit Sauerkraut und Hackfleisch",
+    "category": "Aufläufe & Gratins",
+    "timeMinutes": 50,
+    "ingredients": [
+      {
+        "name": "Ebly (Weichweizen vorgegart)",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Hackfleisch (gemischt)",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Sauerkraut (abgetropft)",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehe",
+        "amount": 1,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 300,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Rahm",
+        "amount": 100,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Gruyère oder Appenzeller (gerieben)",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Öl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Paprikapulver",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kümmel",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz und Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "kalt",
+    "source": "Coop",
+    "basePortions": 4,
+    "description": "Herzhafter Auflauf mit Weichweizen-Ebly, Sauerkraut und Hackfleisch – ein gemütliches Herbst- und Wintergericht.",
+    "steps": [
+      "Ebly nach Packungsanleitung in Brühe garen.",
+      "Zwiebel und Knoblauch würfeln. Öl erhitzen, Hackfleisch anbraten bis es krümelig ist.",
+      "Zwiebel und Knoblauch mitbraten. Mit Paprika, Kümmel, Salz und Pfeffer würzen.",
+      "Sauerkraut unterrühren, kurz mitbraten.",
+      "Ebly in gefettete Auflaufform geben. Hackfleisch-Sauerkraut-Mischung darüber verteilen.",
+      "Rahm darüber giessen, mit geriebenem Käse bestreuen.",
+      "Ca. 20–25 Min. bei 200 °C überbacken bis der Käse golden ist."
+    ],
+    "tips": "Ebly ist in den meisten Schweizer Supermärkten erhältlich. Das Gratin schmeckt auch mit Spätzli statt Ebly.",
+    "imageUrl": null,
+    "tags": [
+      "Herbst",
+      "Winter",
+      "Schweizer"
+    ],
+    "dietCategory": "meat"
+  },
+  {
     "id": "fam-09",
     "name": "Chnöpfli-Gratin",
     "category": "Aufläufe & Gratins",
@@ -5281,6 +6943,1073 @@
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ku-rbis-kartoffel-curry-1--1780579408538.jpeg",
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ku-rbis-kartoffel-curry-2--1780579465960.jpeg",
     "imageKochen": null
+  },
+  {
+    "id": "sup-09",
+    "name": "Hirsesuppe mit Gemüseeinlage",
+    "category": "Suppen, Eintöpfe & Currys",
+    "timeMinutes": 40,
+    "ingredients": [
+      {
+        "name": "Hirse",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Karotten",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Zucchetti",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Selleriestangen",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 1200,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehe",
+        "amount": 1,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Schnittlauch (frisch)",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "kalt",
+    "source": "Chefkoch",
+    "basePortions": 4,
+    "description": "Leichte, nährstoffreiche Suppe mit Hirse und frischem Gemüse – einfach, sättigend und schnell gemacht.",
+    "steps": [
+      "Hirse unter kaltem Wasser abspülen und abtropfen lassen.",
+      "Zwiebel und Knoblauch fein würfeln. Karotten, Zucchetti und Sellerie in kleine Würfel schneiden.",
+      "Olivenöl in einem Topf erhitzen, Zwiebel und Knoblauch glasig dünsten.",
+      "Karotten und Sellerie hinzufügen und ca. 3 Minuten mitbraten.",
+      "Hirse und Gemüsebrühe hinzufügen, aufkochen. Bei mittlerer Hitze ca. 20 Minuten köcheln lassen.",
+      "Zucchetti hinzufügen und weitere 5 Minuten mitkochen. Mit Salz und Pfeffer abschmecken.",
+      "In Schüsseln verteilen und mit Schnittlauch garnieren."
+    ],
+    "tips": "Die Hirse gut abspülen, damit der leicht bittere Geschmack entfernt wird. Die Suppe schmeckt am nächsten Tag noch besser.",
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet",
+      "Winter",
+      "Mittagsgericht"
+    ],
+    "dietCategory": "vegan"
+  },
+  {
+    "id": "sup-11",
+    "name": "Dal Suppe",
+    "category": "Suppen, Eintöpfe & Currys",
+    "timeMinutes": 45,
+    "ingredients": [
+      {
+        "name": "Rote Linsen",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Kokosmilch",
+        "amount": 250,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Karotten",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Kartoffeln",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Koriander (frisch)",
+        "amount": 20,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel (gross)",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehen",
+        "amount": 3,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Chili (rot)",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Ingwer (frisch)",
+        "amount": 15,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomatenmark",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Koriandersaat (gemahlen)",
+        "amount": 2,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kreuzkümmel (gemahlen)",
+        "amount": 2,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kurkuma",
+        "amount": 2,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Garam Masala",
+        "amount": 2,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 800,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Kokosöl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "kalt",
+    "source": "Kitchen Stories",
+    "basePortions": 4,
+    "description": "Aromatische indische Linsensuppe mit Kokosmilch, frischem Ingwer und wärmenden Gewürzen.",
+    "steps": [
+      "Karotten und Kartoffeln schälen und in mundgerechte Stücke schneiden. Koriander fein hacken. Knoblauch, Zwiebeln, Chili und Ingwer fein würfeln.",
+      "Zwiebeln, Knoblauch, Chili und Ingwer bei mittlerer Hitze in Kokosöl andünsten.",
+      "Kartoffeln und Karotten ca. 4–5 Minuten mitbraten. Linsen hinzufügen und 2–3 Minuten weiterbraten.",
+      "Tomatenmark und alle Gewürze zugeben, ständig rühren und 1–2 Minuten anrösten.",
+      "Mit Gemüsebrühe ablöschen, salzen und aufkochen. Bei niedriger Hitze 15–20 Minuten köcheln lassen bis Linsen weich sind.",
+      "Kokosmilch hinzufügen und erneut erhitzen. Mit Salz und Zitronensaft abschmecken. Mit frischem Koriander garnieren."
+    ],
+    "tips": "Mit Naanbrot servieren. Schärfe über die Chili-Menge anpassen.",
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet",
+      "Orientalisch",
+      "Winter"
+    ],
+    "dietCategory": "vegan"
+  },
+  {
+    "id": "sup-12",
+    "name": "Scharfe Mexikanische Bohnensuppe",
+    "category": "Suppen, Eintöpfe & Currys",
+    "timeMinutes": 40,
+    "ingredients": [
+      {
+        "name": "Schwarze Bohnen (Dose, abgetropft)",
+        "amount": 210,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Maiskörner (Dose, abgetropft)",
+        "amount": 140,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Süsskartoffeln",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Grüne Peperoni",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Bundzwiebeln",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehe",
+        "amount": 1,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Kokosöl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Tex Mex Spice Mix",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Paprikapulver",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Wasser",
+        "amount": 700,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Koriander (frisch)",
+        "amount": 1,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Kokosnussmilch-Joghurt",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Limette",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "kalt",
+    "source": "fooby.ch",
+    "basePortions": 4,
+    "description": "Würzig-scharfe Suppe mit schwarzen Bohnen, Mais und Süsskartoffeln – schnell und sättigend.",
+    "steps": [
+      "Kokosöl in einer Pfanne erwärmen, Knoblauch und Bundzwiebeln (weisser Teil) andämpfen.",
+      "Süsskartoffeln würfeln, Peperoni würfeln. Beides mit Spice Mix und Paprikapulver hinzufügen und ca. 2 Minuten mitdämpfen.",
+      "Bohnen und Mais beigeben, Wasser aufgiessen und aufkochen.",
+      "Salzen und zugedeckt ca. 20 Minuten köcheln lassen.",
+      "Die Hälfte des gehackten Korianders unter die Suppe rühren.",
+      "Mit Joghurt, Zwiebelgrün, restlichem Koriander und Limettenschnitzen servieren."
+    ],
+    "tips": "Schmeckt auch mit Tortillachips als Einlage. Schärfe über die Menge Tex Mex Spice Mix steuern.",
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mexikanisch",
+      "Mittagsgericht"
+    ],
+    "dietCategory": "vegan"
+  },
+  {
+    "id": "sup-13",
+    "name": "Linsensuppe nach türkischer Art",
+    "category": "Suppen, Eintöpfe & Currys",
+    "timeMinutes": 35,
+    "ingredients": [
+      {
+        "name": "Rote Linsen",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel (gross)",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Karotte (gross)",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Kartoffel (gross)",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Paprika",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomatenmark",
+        "amount": 6,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Wasser oder Gemüsebrühe",
+        "amount": 1500,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Zimt",
+        "amount": 1.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Petersilie (frisch)",
+        "amount": 1,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz und Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "kalt",
+    "source": "css.ch",
+    "basePortions": 4,
+    "description": "Herzhafte türkische Linsensuppe mit Zimt und Tomatenmark – ein wärmendes Alltagsgericht.",
+    "steps": [
+      "Gemüse würfeln: Zwiebel, Karotte, Kartoffel und Paprika klein schneiden.",
+      "Olivenöl erhitzen, Gemüse darin anbraten.",
+      "Gewaschene Linsen hinzufügen, mit Brühe aufkochen. Tomatenmark unterrühren.",
+      "Nach ca. 20 Minuten mit Salz, Pfeffer und Zimt würzen.",
+      "Optional mit dem Stabmixer pürieren.",
+      "Vor dem Servieren Zitronensaft und Petersilie hinzufügen."
+    ],
+    "tips": "Der Zimt gibt der Suppe eine typisch türkische Note. Wer möchte, kann die Suppe auch chunky lassen.",
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet",
+      "Orientalisch",
+      "Winter"
+    ],
+    "dietCategory": "vegan"
+  },
+  {
+    "id": "sup-14",
+    "name": "Indische Linsensuppe mit Kokosmilch",
+    "category": "Suppen, Eintöpfe & Currys",
+    "timeMinutes": 40,
+    "ingredients": [
+      {
+        "name": "Gelbe Linsen",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel (gross)",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehen",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Ingwer (frisch)",
+        "amount": 10,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Karotte (gross)",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Reis",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Kokosmilch",
+        "amount": 500,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 1000,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Chilipulver",
+        "amount": 0.25,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kurkuma",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Garam Masala",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kreuzkümmel",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Koriander (frisch)",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "kalt",
+    "source": "css.ch",
+    "basePortions": 4,
+    "description": "Cremige indische Linsensuppe mit Kokosmilch, Garam Masala und frischem Ingwer.",
+    "steps": [
+      "Zwiebel, Karotte, Knoblauch und Ingwer würfeln.",
+      "Öl erhitzen, Zwiebeln dünsten. Karotte, Knoblauch und Ingwer mitbraten.",
+      "Linsen und Reis hinzugeben, mit Gemüsebrühe aufkochen.",
+      "Kokosmilch und alle Gewürze unterrühren.",
+      "Ca. 20–30 Minuten garen bis Linsen weich sind.",
+      "Mit Zitronensaft abschmecken, mit Koriander und Feta (optional) servieren."
+    ],
+    "tips": "Wer möchte, kann die Suppe mit Feta und Limette verfeinern.",
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet",
+      "Orientalisch",
+      "Winter"
+    ],
+    "dietCategory": "vegan"
+  },
+  {
+    "id": "sup-15",
+    "name": "Marokkanische Linsensuppe",
+    "category": "Suppen, Eintöpfe & Currys",
+    "timeMinutes": 35,
+    "ingredients": [
+      {
+        "name": "Rote Linsen",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Gehackte Tomaten (Dose)",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomatenmark",
+        "amount": 2,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 800,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Ras el-Hanout",
+        "amount": 2,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kreuzkümmel (gemahlen)",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kurkuma",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Koriander oder Petersilie (frisch)",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Naturjoghurt oder Feta (zum Servieren)",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "kalt",
+    "source": "css.ch",
+    "basePortions": 4,
+    "description": "Würzige marokkanische Linsensuppe mit Ras el-Hanout und Tomaten – exotisch und wärmend.",
+    "steps": [
+      "Zwiebeln fein hacken und in Olivenöl andünsten.",
+      "Gewaschene Linsen, Tomaten und Tomatenmark hinzugeben.",
+      "Mit Ras el-Hanout, Kreuzkümmel und Kurkuma würzen. Brühe zugeben und verrühren.",
+      "Ca. 20–30 Minuten köcheln lassen. Optional mit dem Stabmixer pürieren.",
+      "Mit Joghurt oder Feta und frischen Kräutern servieren."
+    ],
+    "tips": "Ras el-Hanout gibt der Suppe die typisch marokkanische Note. Erhältlich in gut sortierten Supermärkten.",
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet",
+      "Orientalisch",
+      "Winter"
+    ],
+    "dietCategory": "vegan"
+  },
+  {
+    "id": "sup-16",
+    "name": "Asiatische Nudelsuppe mit Tofu",
+    "category": "Suppen, Eintöpfe & Currys",
+    "timeMinutes": 30,
+    "ingredients": [
+      {
+        "name": "Reisnudeln",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Tofu (fest)",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 1200,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Pak-Choi",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Karotten",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Ingwer (frisch)",
+        "amount": 20,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehen",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Miso-Paste",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Sojasosse",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Sesamöl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Frühlingszwiebeln",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Sesam",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "kalt",
+    "source": "Coop",
+    "basePortions": 4,
+    "description": "Würzige asiatische Nudelsuppe mit gebratenem Tofu, Pak-Choi und einem tiefen Miso-Brühe.",
+    "steps": [
+      "Tofu in Würfel schneiden und in einer Pfanne mit Sesamöl goldbraun anbraten.",
+      "Ingwer und Knoblauch fein hacken. Karotten in feine Streifen schneiden. Pak-Choi in Stücke schneiden.",
+      "Brühe aufkochen, Ingwer und Knoblauch hinzufügen. Miso-Paste einrühren.",
+      "Karotten hinzufügen und 5 Minuten köcheln lassen.",
+      "Reisnudeln nach Packungsanleitung kochen, abtropfen lassen.",
+      "Pak-Choi zur Suppe geben und 2 Minuten mitkochen. Mit Sojasosse würzen.",
+      "Nudeln in Schüsseln verteilen, Brühe aufgiessen. Mit Tofu, Frühlingszwiebeln und Sesam garnieren."
+    ],
+    "tips": "Miso-Paste nicht kochen – erst kurz vor dem Servieren einrühren, damit die Probiotika erhalten bleiben.",
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Asiatisch",
+      "Mittagsgericht"
+    ],
+    "dietCategory": "vegan"
+  },
+  {
+    "id": "sup-17",
+    "name": "Linsensuppe mit saisonalem Gemüse",
+    "category": "Suppen, Eintöpfe & Currys",
+    "timeMinutes": 55,
+    "ingredients": [
+      {
+        "name": "Braune Linsen",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebeln",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehe",
+        "amount": 1,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Kartoffeln",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Kürbis",
+        "amount": 150,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Lauch",
+        "amount": 130,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 1000,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Getrocknete Tomaten",
+        "amount": 5,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Lorbeerblätter",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Tamari Sojasosse",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Aceto Balsamico bianco",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl (hitzebeständig)",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Petersilie (frisch)",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "kalt",
+    "source": "dontwasteyourtaste.com",
+    "basePortions": 4,
+    "description": "Herzhafte Linsensuppe mit saisonalem Gemüse – nachhaltig, vielseitig und voller Geschmack.",
+    "steps": [
+      "Zwiebel und Knoblauch fein würfeln. Kartoffeln schälen und in 1 cm Würfel schneiden. Kürbis würfeln. Lauch in Ringe schneiden. Getrocknete Tomaten grob hacken.",
+      "Öl in grossem Topf erhitzen, Zwiebeln ca. 4 Minuten anbraten.",
+      "Knoblauch, Kartoffel- und Kürbiswürfel hinzugeben, 5 Minuten anbraten.",
+      "Lauchringe, Brühe, Lorbeerblätter, getrocknete Tomaten und abgetropfte Linsen hinzugeben, aufkochen.",
+      "Hitze reduzieren und 25 Minuten köcheln lassen.",
+      "Lorbeerblätter entfernen. Mit Tamari, Balsamico, Salz und Pfeffer abschmecken.",
+      "Mit frischer Petersilie bestreut servieren."
+    ],
+    "tips": "Das Gemüse je nach Saison variieren – z.B. Fenchel im Herbst, Spinat im Frühling.",
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet",
+      "Herbst",
+      "Winter"
+    ],
+    "dietCategory": "vegan"
+  },
+  {
+    "id": "sup-18",
+    "name": "Marronisuppe mit pikanten Twistern",
+    "category": "Suppen, Eintöpfe & Currys",
+    "timeMinutes": 60,
+    "ingredients": [
+      {
+        "name": "Marroni (tiefgekühlt, geschält)",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Schalotten",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Butter",
+        "amount": 0.5,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Zucker",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Wasser",
+        "amount": 800,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Rahm (zum Aufschlagen)",
+        "amount": 100,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Paprikapulver (zum Garnieren)",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Blätterteig (rechteckig)",
+        "amount": 0.5,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Sambal Oelek",
+        "amount": 1.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Fleur de Sel",
+        "amount": 0.25,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz und Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "kalt",
+    "source": "fooby.ch",
+    "basePortions": 4,
+    "description": "Samtige Herbst-Suppe aus Marroni mit einem luftigen Rahmklecks und pikanten Blätterteig-Twistern.",
+    "steps": [
+      "Butter erhitzen, Schalotten andünsten. Zucker beigeben und 2 Minuten karamellisieren. Marroni kurz mitdünsten.",
+      "Wasser angiessen, aufkochen und zugedeckt ca. 25 Minuten köcheln lassen.",
+      "Suppe mit dem Stabmixer pürieren, mit Salz und Pfeffer würzen.",
+      "Rahm steif schlagen. Suppe in Schüsseln verteilen, Rahm aufsetzen, mit Paprika bestäuben.",
+      "Twister: Blätterteig mit Sambal Oelek bestreichen und mit Fleur de Sel bestreuen. In 2 cm breite Streifen schneiden und spiralförmig drehen.",
+      "Auf Backpapier legen, 30 Min. kühl stellen, dann ca. 10 Min. bei 220 °C backen.",
+      "Twister zur Suppe servieren."
+    ],
+    "tips": "Twister können gut vorbereitet werden – Teig abdecken und im Kühlschrank aufbewahren.",
+    "imageUrl": null,
+    "tags": [
+      "Vegetarisch",
+      "Herbst",
+      "Schweizer"
+    ],
+    "dietCategory": "vegetarian"
+  },
+  {
+    "id": "sup-19",
+    "name": "Grüne Gazpacho",
+    "category": "Suppen, Eintöpfe & Currys",
+    "timeMinutes": 20,
+    "ingredients": [
+      {
+        "name": "Gurke",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Jungspinat",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Avocado",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Bundzwiebeln",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehen",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Petersilie",
+        "amount": 1,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Basilikum",
+        "amount": 1,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfefferminze",
+        "amount": 1,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Dill",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Grüne Chilischote",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Kokosnussmilch-Joghurt",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Weissweinessig",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Biozitrone (Schale und Saft)",
+        "amount": 0.5,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Croûtons",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "warm",
+    "source": "fooby.ch",
+    "basePortions": 4,
+    "description": "Erfrischende grüne Gazpacho mit Avocado, frischen Kräutern und cremigem Kokosjogurt – perfekt für heisse Tage.",
+    "steps": [
+      "Gurke in Stücke schneiden. Avocado schälen und entkernen. Bundzwiebeln, Chilischote und Kräuter grob hacken.",
+      "Alle Zutaten ausser Croûtons in einen Mixer geben und fein pürieren.",
+      "Gazpacho abschmecken und zugedeckt ca. 1 Stunde kühl stellen.",
+      "In Schalen oder Gläser verteilen. Mit Joghurt, Olivenöl, Dill und Croûtons garnieren."
+    ],
+    "tips": "Mindestens 1 Stunde kühlen für den besten Geschmack. Kann auch als Vorspeise in kleinen Gläsern serviert werden.",
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Sommer",
+      "Mittagsgericht"
+    ],
+    "dietCategory": "vegan"
   },
   {
     "id": "fam-02",
@@ -6817,6 +9546,363 @@
     "imageKochen": null
   },
   {
+    "id": "sal-13",
+    "name": "Griechischer Salat",
+    "category": "Salate & Bowls",
+    "timeMinutes": 20,
+    "ingredients": [
+      {
+        "name": "Tomaten",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Gurke",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Rote Peperoni",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Gelbe Peperoni",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Schwarze und grüne Oliven",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Feta",
+        "amount": 150,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Weissweinessig",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 5,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehe",
+        "amount": 1,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Petersilie und Oregano (frisch)",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "warm",
+    "source": "Betty Bossi",
+    "basePortions": 4,
+    "description": "Knackiger Klassiker mit Feta, Oliven und frischem Gemüse – mediterran und in 20 Minuten fertig.",
+    "steps": [
+      "Essig und Öl in einer Schüssel verrühren. Knoblauch dazupressen, fein geschnittene Kräuter beigeben und würzen.",
+      "Peperoni entkernen und in Streifen schneiden. Tomaten in Schnitze schneiden. Gurke schälen, entkernen und würfeln. Zwiebel schälen und in Ringe schneiden.",
+      "Alles zusammen mit den Oliven zur Vinaigrette geben und gut vermischen.",
+      "Feta in Stücke schneiden und als Garnierung über den Salat geben."
+    ],
+    "tips": "Den Salat 10 Minuten vor dem Servieren marinieren lassen, damit die Aromen sich verbinden.",
+    "imageUrl": null,
+    "tags": [
+      "Vegetarisch",
+      "Sommer",
+      "Mittagsgericht"
+    ],
+    "dietCategory": "vegetarian"
+  },
+  {
+    "id": "sal-14",
+    "name": "Veganer «Eier»Salat",
+    "category": "Salate & Bowls",
+    "timeMinutes": 30,
+    "ingredients": [
+      {
+        "name": "Fusilli",
+        "amount": 80,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Kichererbsen (aus der Dose, abgetropft)",
+        "amount": 240,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Vegane Mayonnaise",
+        "amount": 120,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Kala Namak (schwarzes Salz)",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Paprikapulver",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kurkuma",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Essiggurken (kleine)",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Schnittlauch",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "neutral",
+    "source": "Avobelle",
+    "basePortions": 4,
+    "description": "Täuschend echter veganer Eiersalat auf Kichererbsen-Basis – Kala Namak sorgt für den typischen Ei-Geschmack.",
+    "steps": [
+      "Fusilli in gesalzenem Wasser sehr weich kochen (15–20 Minuten), dann abtropfen lassen.",
+      "Kichererbsen, Mayonnaise, Kala Namak, Paprikapulver und Kurkuma in einem hohen Gefäss mit dem Stabmixer pürieren.",
+      "Abgetropfte Fusilli in kleine Stücke schneiden. Essiggurken in feine Scheiben schneiden. Schnittlauch hacken.",
+      "Fusilli, Essiggurken und Schnittlauch zum Kichererbsengemisch geben und gut vermengen.",
+      "Mit Brot, Toast oder Crackern servieren."
+    ],
+    "tips": "Kala Namak (schwarzes Schwefelsalz) gibt dem Salat den typischen Eier-Geschmack und ist in Bioläden oder online erhältlich.",
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mittagsgericht"
+    ],
+    "dietCategory": "vegan"
+  },
+  {
+    "id": "sal-15",
+    "name": "Frühlingssalat mit Radieschen",
+    "category": "Salate & Bowls",
+    "timeMinutes": 20,
+    "ingredients": [
+      {
+        "name": "Salatmischung (Kopfsalat, Rucola, Frisee)",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Radieschen",
+        "amount": 2,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Schnittlauch",
+        "amount": 1,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Salatgurke",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Kirschtomaten",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Lauchzwiebeln",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Naturjoghurt (3.5% Fett)",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Agavendicksaft",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Körniger Senf",
+        "amount": 2,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Rapsöl",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kräuteressig",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "warm",
+    "source": "einfachkochen.de",
+    "basePortions": 4,
+    "description": "Leichter Frühlingssalat mit knackigen Radieschen und einem cremigen Joghurt-Senf-Dressing.",
+    "steps": [
+      "Salat waschen und trockenschleudern. Radieschen in feine Scheiben schneiden. Schnittlauch in Ringe schneiden. Gurke in dünne Scheiben schneiden. Kirschtomaten halbieren. Lauchzwiebeln in Ringe schneiden.",
+      "Joghurt mit Agavendicksaft, Senf und Rapsöl verrühren. Essig und Zitronensaft unterheben. Mit Salz und Pfeffer abschmecken.",
+      "Alle Salatzutaten in eine Schüssel geben, mit dem Dressing vermischen und sofort servieren."
+    ],
+    "tips": "Das Dressing erst kurz vor dem Servieren untermischen, damit der Salat knackig bleibt.",
+    "imageUrl": null,
+    "tags": [
+      "Vegetarisch",
+      "Frühling",
+      "Mittagsgericht"
+    ],
+    "dietCategory": "vegetarian"
+  },
+  {
+    "id": "sal-16",
+    "name": "Blutorangen-Randen-Salat mit Labneh",
+    "category": "Salate & Bowls",
+    "timeMinutes": 75,
+    "ingredients": [
+      {
+        "name": "Rote Bete (roh, in Schnitzen)",
+        "amount": 1000,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Blutorangen",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Naturjoghurt (für Labneh)",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salbei (frisch)",
+        "amount": 1,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Kürbiskerne",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Weissweinessig",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "neutral",
+    "source": "fooby.ch",
+    "basePortions": 4,
+    "description": "Wunderschöner Wintersalat mit gerösteter Roter Bete, Blutorangen und hausgemachtem Labneh.",
+    "steps": [
+      "Labneh (am Vortag): Joghurt mit 1 TL Salz verrühren, in ein Sieb mit feinem Tuch geben, zugedeckt mind. 8 Stunden abtropfen lassen.",
+      "Rote Bete mit 2 EL Olivenöl, fein gehacktem Salbei, 1 TL Salz und Pfeffer mischen, auf Backpapier verteilen und ca. 45 Min. bei 220 °C backen.",
+      "1 EL Olivenöl erhitzen, Kürbiskerne und Salbeiblätter ca. 5 Min. anbraten.",
+      "Blutorangen schälen und in Scheiben schneiden.",
+      "Labneh auf einer Platte verteilen, Rote Bete und Blutorangen darauf anrichten.",
+      "Weissweinessig mit restlichem Olivenöl verrühren, würzen und über den Salat träufeln. Mit Kürbiskernen und Salbei garnieren."
+    ],
+    "tips": "Den Labneh unbedingt am Vortag vorbereiten. Je länger er abtropft, desto fester und aromatischer wird er.",
+    "imageUrl": null,
+    "tags": [
+      "Vegetarisch",
+      "Winter",
+      "Herbst"
+    ],
+    "dietCategory": "vegetarian"
+  },
+  {
     "id": "fvt-08",
     "name": "Gefüllte Paprika mit Quinoa und schwarzen Bohnen",
     "category": "Aufläufe & Gratins",
@@ -7290,6 +10376,199 @@
     "imageKochen": null
   },
   {
+    "id": "ofe-05",
+    "name": "Süsskartoffeln aus dem Ofen mit Pilz-Nusskruste",
+    "category": "Vegetarische Hauptgerichte",
+    "timeMinutes": 55,
+    "ingredients": [
+      {
+        "name": "Süsskartoffeln",
+        "amount": 800,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Champignons",
+        "amount": 450,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Schalotten",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehe",
+        "amount": 1,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Bratbutter",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Thymian (frisch)",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Crème fraîche",
+        "amount": 150,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Weissbrot (ohne Rinde, klein geschnitten)",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Haselnüsse (grob gehackt, geröstet)",
+        "amount": 30,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz und Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "kalt",
+    "source": "Swissmilk",
+    "basePortions": 4,
+    "description": "Ofensüsskartoffeln mit herzhafter Pilz-Nuss-Kruste aus Champignons, Crème fraîche und gerösteten Haselnüssen.",
+    "steps": [
+      "Süsskartoffeln in 2 cm dicke Scheiben schneiden, auf Backpapier legen und salzen.",
+      "Bratbutter erhitzen, Knoblauch und Schalotten andämpfen. Champignons würfeln und hinzufügen, leicht salzen und dünsten.",
+      "Thymian und Crème fraîche beifügen, ca. 2 Minuten köcheln.",
+      "Brotstücke und Haselnüsse mit der Pilzmasse mischen, würzen.",
+      "Ofen auf 180 °C Heissluft vorheizen. Pilzmasse auf den Kartoffelscheiben verteilen und ca. 35 Minuten backen."
+    ],
+    "tips": "Gut als Hauptgericht mit einem grünen Salat oder als Beilage zu Fleisch.",
+    "imageUrl": null,
+    "tags": [
+      "Vegetarisch",
+      "Ofengericht",
+      "Herbst",
+      "Winter",
+      "Schweizer"
+    ],
+    "dietCategory": "vegetarian"
+  },
+  {
+    "id": "ofe-06",
+    "name": "Gebackene Rotkabis-Steaks mit Lachs",
+    "category": "Fisch & Meeresfrüchte",
+    "timeMinutes": 70,
+    "ingredients": [
+      {
+        "name": "Rotkohl",
+        "amount": 800,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Lachsfilet",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Süsser Senf",
+        "amount": 0.5,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Balsamico-Essig",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 5,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Flüssiger Honig",
+        "amount": 1.5,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehen (fein gehackt)",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Chiliflocken",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Dill (frisch)",
+        "amount": 1,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Petersilie (glatt)",
+        "amount": 1,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Limettensaft",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Blutorange",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Fleur de Sel",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "neutral",
+    "source": "fooby.ch",
+    "basePortions": 4,
+    "description": "Spektakuläres Ofengericht: karamellisierte Rotkabis-Steaks mit zartem Lachs und einer frischen Kräuter-Garnitur.",
+    "steps": [
+      "Marinade: Senf, Essig, 4 EL Öl, Honig, Knoblauch, Chili und Salz verrühren.",
+      "Rotkohl in ca. 1.5 cm dicke Scheiben schneiden und auf Backpapier legen. Mit der Hälfte der Marinade bepinseln.",
+      "Ca. 30 Min. bei 200 °C backen. Lachs daneben legen und mit restlicher Marinade bepinseln. Weitere ca. 10 Min. backen.",
+      "Lachs mit einer Gabel in Flocken teilen. Mit Limettensaft, 1 EL Öl und Kräutern vermischen. Mit Fleur de Sel würzen.",
+      "Rotkabis-Steaks auf einer Platte anrichten. Lachs-Kräutergemisch darüber verteilen. Mit Blutorangen-Scheiben garnieren."
+    ],
+    "tips": "Wer keinen Lachs möchte, kann das Gericht auch rein vegan mit Kichererbsen als Topping servieren.",
+    "imageUrl": null,
+    "tags": [
+      "Ofengericht",
+      "Winter"
+    ],
+    "dietCategory": "fish"
+  },
+  {
     "id": "asi-01",
     "name": "Pad Thai",
     "category": "Pasta",
@@ -7512,6 +10791,335 @@
       "Mittagsgericht",
       "Asiatisch"
     ]
+  },
+  {
+    "id": "asi-04",
+    "name": "Wokgemüse mit Erdnuss-Sauce",
+    "category": "Vegetarische Hauptgerichte",
+    "timeMinutes": 30,
+    "ingredients": [
+      {
+        "name": "Brokkoli",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Rote Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Rote Paprikaschote",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Champignons",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Ingwer (frisch)",
+        "amount": 20,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehen",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Erdnussöl",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Helle Sojasosse",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Brauner Rohrzucker",
+        "amount": 2,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Rote Currypaste",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Agavendicksaft",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Erdnussmus",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Kokosmilch",
+        "amount": 200,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 200,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "neutral",
+    "source": "ProVeg",
+    "basePortions": 4,
+    "description": "Knackiges Wokgemüse mit einer cremigen Erdnuss-Kokosmilch-Sauce – asiatisch, vegan und schnell gemacht.",
+    "steps": [
+      "Brokkoli in Röschen schneiden und 5 Min. dämpfen. Zwiebel in dicke Scheiben, Paprika würfeln, Pilze halbieren. Ingwer reiben, Knoblauch würfeln.",
+      "Für die Erdnuss-Sauce: Zwiebel und Knoblauch (1 Zwiebel, 1 Zehe extra) hacken. Mit Currypaste und Agavendicksaft 3 Min. anbraten. Erdnussmus, Kokosmilch, Brühe und Zitronensaft zugeben, 5 Min. köcheln.",
+      "2 EL Erdnussöl in Wok erhitzen. Paprika, Pilze und Zwiebelscheiben anbraten. Brokkoli, Ingwer und Knoblauch hinzufügen, 2 Min. weiterbraten.",
+      "Sojasosse und Zucker zugeben, würzen.",
+      "Gemüse auf Tellern anrichten. Erdnuss-Sauce dazureichen. Mit Basmatireis oder Reisnudeln servieren."
+    ],
+    "tips": "Wer es schärfer mag, gibt mehr rote Currypaste in die Sauce.",
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Asiatisch"
+    ],
+    "dietCategory": "vegan"
+  },
+  {
+    "id": "asi-05",
+    "name": "Vegane Thai-Erdnuss-Ramen",
+    "category": "Suppen, Eintöpfe & Currys",
+    "timeMinutes": 30,
+    "ingredients": [
+      {
+        "name": "Ramen-Nudeln",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Naturtofu",
+        "amount": 260,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 800,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Kokosmilch (hell)",
+        "amount": 500,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Erdnussmus",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Vegane rote Currypaste",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Sojasosse",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehen (gepresst)",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Ingwer (frisch gerieben)",
+        "amount": 20,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Karotte (dünn geschnitten)",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Pak-Choi (dünn geschnitten)",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Erdnussöl",
+        "amount": 2.5,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Speisestärke (für Tofu)",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Agavensirup",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Gesalzene Erdnüsse",
+        "amount": 40,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Koriander (frisch)",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "kalt",
+    "source": "fooby.ch",
+    "basePortions": 4,
+    "description": "Reichhaltige vegane Thai-Ramen-Suppe mit cremiger Erdnuss-Kokosmilch-Brühe und knusprigem Tofu.",
+    "steps": [
+      "Suppe: Öl erhitzen, Knoblauch, Ingwer und Currypaste anbraten. Brühe, Kokosmilch, Erdnussmus und Sojasosse zugeben, aufkochen. Ca. 10 Min. köcheln. Karotte und Pak-Choi hinzufügen, 5 Min. mitkochen.",
+      "Tofu: Tofuwürfel mit Stärke mischen. Öl erhitzen, Tofu ca. 10 Min. goldbraun braten. Sojasosse und Agavensirup mischen, zum Tofu geben und schwenken.",
+      "Ramen-Nudeln in Salzwasser ca. 4 Min. kochen, abtropfen lassen.",
+      "Nudeln und Tofu in Schüsseln verteilen, heisse Suppe darübergiessen. Mit Erdnüssen und Koriander garnieren."
+    ],
+    "tips": "Mit Sesam, Limette oder frischer Chili nach Belieben garnieren.",
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Asiatisch"
+    ],
+    "dietCategory": "vegan"
+  },
+  {
+    "id": "asi-06",
+    "name": "Pad Thai mit Poulet (Thai Kitchen Art)",
+    "category": "Pasta",
+    "timeMinutes": 30,
+    "ingredients": [
+      {
+        "name": "Reisnudeln",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Pouletbrust (geschnetzelt)",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Eier",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Pad Thai Kochsauce",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Sojasprossen",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Frühlingszwiebeln",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehen (fein gehackt)",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Tofu (1 cm Würfel)",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Pflanzenöl",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Limette",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Koriander (frisch)",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "neutral",
+    "source": "Thai Kitchen",
+    "basePortions": 4,
+    "description": "Authentisches Pad Thai nach Thai Kitchen Art – mit Poulet, Tofu, Sojasprossen und der klassischen Pad-Thai-Sauce.",
+    "steps": [
+      "Reisnudeln nach Packungsanleitung kochen und beiseite stellen.",
+      "Weissen Teil der Frühlingszwiebeln mit Tofu und Knoblauch in 1 EL Öl anbraten, herausnehmen.",
+      "Poulet in 1 EL Öl anbraten bis gar, herausnehmen.",
+      "Eier in 1 EL Öl rührbraten. Sobald sie halb gar sind, Nudeln, Poulet und Tofu-Mischung zugeben und vermengen.",
+      "Pad Thai Sauce hinzufügen und alles gut vermischen.",
+      "Grünen Teil der Frühlingszwiebeln und Sojasprossen unterrühren. Mit Koriander und Limette servieren."
+    ],
+    "tips": "Fertige Pad-Thai-Sauce (z.B. von Thai Kitchen) gibt es in Asialäden und grossen Supermärkten.",
+    "imageUrl": null,
+    "tags": [
+      "Asiatisch"
+    ],
+    "dietCategory": "meat"
   },
   {
     "id": "fam-11",
@@ -8247,6 +11855,86 @@
     "tips": ""
   },
   {
+    "id": "fle-01",
+    "name": "Chicken Tikka Masala mit Naan und Raita",
+    "category": "Fleisch & Geflügel",
+    "timeMinutes": 100,
+    "ingredients": [
+      {
+        "name": "Pouletbrüste",
+        "amount": 720,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehen",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Chilischoten",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Naturjoghurt",
+        "amount": 180,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Tikka Masala Sauce",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Naan (ca. 130 g pro Stück)",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Koriander",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Kreuzkümmel",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "kalt",
+    "source": "Migusto",
+    "basePortions": 4,
+    "description": "Klassisches Chicken Tikka Masala mit warmem Naan-Brot und einem frischen Joghurt-Raita.",
+    "steps": [
+      "Pouletbrüste in Sechstel schneiden. Knoblauch fein hacken, Chilis entkernen und klein schneiden. Mit 3 EL Joghurt und Poulet mischen. Ca. 1 Stunde marinieren.",
+      "Ofen auf 220 °C vorheizen. Poulet leicht salzen, in eine Auflaufform geben und 15 Min. backen.",
+      "Tikka Masala Sauce über das Poulet giessen und weitere 10 Min. backen.",
+      "Ofen auf 180 °C reduzieren. Naans leicht mit Wasser besprengen und 4–5 Min. erwärmen.",
+      "Koriander fein hacken, mit restlichem Joghurt mischen. Kreuzkümmel mahlen und mit Salz zum Raita geben.",
+      "Chicken Tikka Masala mit Naan und Raita servieren."
+    ],
+    "tips": "Fertige Tikka Masala Sauce ist in den meisten Supermärkten erhältlich und spart Zeit.",
+    "imageUrl": null,
+    "tags": [
+      "Orientalisch"
+    ],
+    "dietCategory": "meat"
+  },
+  {
     "id": "ocr-01",
     "name": "Poulet-Geschnetzeltes im afrikanischen Kleid",
     "category": "Fleisch & Geflügel",
@@ -8806,6 +12494,56 @@
     "imageZutaten": null,
     "imageKochen": null,
     "tips": ""
+  },
+  {
+    "id": "kar-01",
+    "name": "Pommes Frites aus dem Ofen",
+    "category": "Kartoffelgerichte",
+    "timeMinutes": 50,
+    "ingredients": [
+      {
+        "name": "Festkochende Kartoffeln",
+        "amount": 1200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Öl",
+        "amount": 4,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 2,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Paprikapulver (optional)",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "neutral",
+    "source": "Kochbar",
+    "basePortions": 4,
+    "description": "Knusprige Ofenpommes ohne Frittieren – die gesunde Alternative mit dem klassischen Pommes-Frites-Geschmack.",
+    "steps": [
+      "Kartoffeln schälen und in stäbchenförmige Pommes schneiden. Kurz in Wasser einweichen, um Stärke zu entfernen.",
+      "Gut trocken tupfen und in einer Schüssel mit Öl und Gewürzen vermengen.",
+      "Auf einem mit Backpapier ausgelegten Blech in einer einzigen Schicht verteilen.",
+      "Bei 200 °C Heissluft auf der mittleren Schiene ca. 20–25 Min. backen bis goldbraun.",
+      "In den letzten 5–10 Minuten die Ofentür einen Spalt öffnen, damit Feuchtigkeit entweicht."
+    ],
+    "tips": "Kartoffeln gut trocken tupfen für extra Knusprigkeit. Nicht zu viele auf einmal aufs Blech – sie müssen Abstand haben.",
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Kinderfreundlich"
+    ],
+    "dietCategory": "vegan"
   },
   {
     "id": "ocr-15",
@@ -11631,6 +15369,742 @@
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---tofu-gipfeli-1--1780580501728.jpeg",
     "imageZutaten": null,
     "imageKochen": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---tofu-gipfeli-2--1780580506536.jpeg"
+  },
+  {
+    "id": "son-08",
+    "name": "Veganer Linsen-Tomatenaufstrich",
+    "category": "Snacks & Vorspeisen",
+    "timeMinutes": 40,
+    "ingredients": [
+      {
+        "name": "Rote Linsen",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Wasser (kochend)",
+        "amount": 250,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehe",
+        "amount": 1,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Getrocknete Tomaten in Öl",
+        "amount": 10,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Paprikapulver edelsüss",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "neutral",
+    "source": "fooby.ch",
+    "basePortions": 4,
+    "description": "Cremiger veganer Aufstrich aus roten Linsen und getrockneten Tomaten – ideal auf frischem Toast oder Vollkornbrot.",
+    "steps": [
+      "Linsen unter kaltem Wasser abspülen, gut abtropfen lassen und in kochendem Wasser ca. 20 Min. zugedeckt weich kochen. Auskühlen lassen.",
+      "3 EL Tomatenöl in einer Pfanne erwärmen. Zwiebel und Knoblauch kurz anbraten. Linsen und Tomaten zugeben und ca. 5 Min. köcheln. Mit Paprika, Salz und Pfeffer würzen.",
+      "Zitronensaft unterrühren. Mischung etwas abkühlen lassen, dann portionsweise fein pürieren.",
+      "Auf getoastetem Brot anrichten und mit Basilikumblättern garnieren."
+    ],
+    "tips": "Mit einem Klecks Joghurt und frischen Kräutern als Dip für Gemüsesticks servieren.",
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet"
+    ],
+    "dietCategory": "vegan"
+  },
+  {
+    "id": "son-09",
+    "name": "Würzig marinierte Auberginen vom Grill",
+    "category": "Vegetarische Hauptgerichte",
+    "timeMinutes": 70,
+    "ingredients": [
+      {
+        "name": "Auberginen (gross)",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl (extra vergine)",
+        "amount": 8,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehen",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Rote Chilischote",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Frischer Thymian",
+        "amount": 0.75,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Kräutersalz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Schwarzer Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "warm",
+    "source": "Nahrin",
+    "basePortions": 4,
+    "description": "Saftige Auberginen-Hälften, 30 Minuten in Kräuter-Öl mariniert und auf dem Grill langsam gegart.",
+    "steps": [
+      "Auberginen längs halbieren. Ca. 1 cm tief kreuzweise einschneiden ohne die Schale zu durchstechen. Mit Salz und Pfeffer würzen, mit Zitronensaft beträufeln.",
+      "Chili und Knoblauch fein hacken. Thymianblätter abzupfen. Alles mit Olivenöl verrühren.",
+      "Auberginen grosszügig mit der Marinade bestreichen, sodass sie auch in die Einschnitte einzieht. Mind. 30 Min. bei Raumtemperatur marinieren.",
+      "Auflaufform auf den Grill stellen (Deckel schliessen). Ca. 25–30 Min. grillen bis das Fleisch weich ist.",
+      "Mit orientalischem Fladenbrot oder Baguette servieren."
+    ],
+    "tips": "Wer keinen Grill hat, kann die Auberginen auch bei 200 °C im Ofen ca. 35 Minuten backen.",
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Grillgericht",
+      "Sommer",
+      "Orientalisch"
+    ],
+    "dietCategory": "vegan"
+  },
+  {
+    "id": "son-10",
+    "name": "Scharf angebratener Rosenkohl mit Sobanudeln",
+    "category": "Vegetarische Hauptgerichte",
+    "timeMinutes": 25,
+    "ingredients": [
+      {
+        "name": "Rosenkohl",
+        "amount": 350,
+        "unit": "g",
+        "perPortions": 2
+      },
+      {
+        "name": "Sobanudeln",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 2
+      },
+      {
+        "name": "Schwarze Bohnen (Dose, Abtropfgewicht)",
+        "amount": 130,
+        "unit": "g",
+        "perPortions": 2
+      },
+      {
+        "name": "Knoblauchzehen",
+        "amount": 2,
+        "unit": "Zehen",
+        "perPortions": 2
+      },
+      {
+        "name": "Ingwer (frisch)",
+        "amount": 20,
+        "unit": "g",
+        "perPortions": 2
+      },
+      {
+        "name": "Getrocknete Chilischote",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 2
+      },
+      {
+        "name": "Sojasosse",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 2
+      },
+      {
+        "name": "Kokosöl oder Bratöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 2
+      }
+    ],
+    "weatherType": "kalt",
+    "source": "bevegt.de",
+    "basePortions": 2,
+    "description": "Knuspriger Rosenkohl mit asiatischen Sobanudeln und schwarzen Bohnen – schnell, scharf und sättigend.",
+    "steps": [
+      "Rosenkohl waschen, Strunk entfernen und Röschen halbieren.",
+      "Knoblauch fein hacken. Ingwer schälen und reiben. Chilischote entkernen und in Ringe schneiden.",
+      "Öl in Pfanne erhitzen. Rosenkohl unter ständigem Rühren 5–7 Min. scharf anbraten – darf dunkel werden.",
+      "Sobanudeln parallel in Salzwasser 4–8 Min. garen.",
+      "Knoblauch, Ingwer und Chili zum Rosenkohl geben, 2 Min. mitbraten. Schwarze Bohnen zugeben und erwärmen.",
+      "Mit Sojasosse ablöschen. Sobanudeln abgiessen und zusammen mit Rosenkohl-Mischung servieren."
+    ],
+    "tips": "Der Rosenkohl darf wirklich dunkel werden – das gibt das typische Röstaroma. Sobanudeln nicht überkochen.",
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Asiatisch"
+    ],
+    "dietCategory": "vegan"
+  },
+  {
+    "id": "son-11",
+    "name": "Spinat-Chüechli",
+    "category": "Vegetarische Hauptgerichte",
+    "timeMinutes": 35,
+    "ingredients": [
+      {
+        "name": "Blätterteig (rechteckig, ausgerollt)",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 8
+      },
+      {
+        "name": "Tiefkühlspinat (aufgetaut)",
+        "amount": 600,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Eier",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 8
+      },
+      {
+        "name": "Gruyère (gerieben)",
+        "amount": 120,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Zwiebel (fein gehackt)",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 8
+      },
+      {
+        "name": "Salz",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 8
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 8
+      },
+      {
+        "name": "Muskatnuss",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 8
+      }
+    ],
+    "weatherType": "neutral",
+    "source": "fooby.ch",
+    "basePortions": 8,
+    "description": "Klassische Schweizer Spinat-Chüechli aus Blätterteig – saftig gefüllt, goldbraun gebacken und überall beliebt.",
+    "steps": [
+      "Aus dem Blätterteig 8 Kreise (ca. 10 cm Durchmesser) ausstechen. In gefettete Muffinformen legen, Boden mit Gabel einstechen und kurz kühlen.",
+      "Tiefkühlspinat gut ausdrücken. Mit Eiern, geriebenem Käse und Zwiebeln vermischen. Mit Salz, Pfeffer und Muskat würzen.",
+      "Spinatmasse in die vorbereiteten Förmchen verteilen.",
+      "Ca. 25 Min. im unteren Drittel des vorgeheizten Ofens bei 220 °C backen bis goldbraun."
+    ],
+    "tips": "Den Spinat vor dem Mischen gut ausdrücken – zu viel Flüssigkeit macht die Chüechli matschig.",
+    "imageUrl": null,
+    "tags": [
+      "Vegetarisch",
+      "Schweizer",
+      "Kinderfreundlich"
+    ],
+    "dietCategory": "vegetarian"
+  },
+  {
+    "id": "son-12",
+    "name": "Federkohlchips",
+    "category": "Snacks & Vorspeisen",
+    "timeMinutes": 30,
+    "ingredients": [
+      {
+        "name": "Federkohl (Kale)",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 5
+      },
+      {
+        "name": "Bratcrème oder Rapsöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 5
+      },
+      {
+        "name": "Salz",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 5
+      },
+      {
+        "name": "Paprikapulver",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 5
+      },
+      {
+        "name": "Pfeffer oder Chili",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 5
+      }
+    ],
+    "weatherType": "neutral",
+    "source": "Swissmilk",
+    "basePortions": 5,
+    "description": "Knusprige Kale-Chips aus dem Ofen – das gesunde Snack-Rezept mit nur 5 Zutaten.",
+    "steps": [
+      "Backofen auf 130 °C vorheizen.",
+      "Federkohlblätter vom harten Strunk trennen und in Chips-Grösse zupfen.",
+      "Blätter waschen und sehr gründlich trocken schleudern.",
+      "Öl mit Gewürzen mischen. Kaleblätter zugeben und gut vermengen.",
+      "Auf einem Backblech in einer einzigen Schicht verteilen. Ca. 20 Min. backen – alle 5 Min. die Ofentür kurz öffnen.",
+      "Abkühlen lassen, nach Belieben nachwürzen."
+    ],
+    "tips": "Die Blätter müssen wirklich trocken sein – sonst werden sie nicht knusprig, sondern gedämpft.",
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet"
+    ],
+    "dietCategory": "vegan"
+  },
+  {
+    "id": "son-13",
+    "name": "Vegane Apéro-Gipfeli",
+    "category": "Snacks & Vorspeisen",
+    "timeMinutes": 40,
+    "ingredients": [
+      {
+        "name": "Blätterteig (rechteckig, ausgerollt)",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 8
+      },
+      {
+        "name": "Schwarze Oliven (entsteint, fein gehackt)",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Getrocknete Tomaten (fein gehackt)",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Veganer Kräuterfrischkäse",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Mandelmilch",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 8
+      },
+      {
+        "name": "Sesam",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 8
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 8
+      }
+    ],
+    "weatherType": "neutral",
+    "source": "fooby.ch",
+    "basePortions": 8,
+    "description": "Knusprige vegane Apéro-Gipfeli mit Oliven-Tomaten-Frischkäse-Füllung – ideal als Fingerfood.",
+    "steps": [
+      "Oliven, Tomaten und Frischkäse vermengen. Mit Pfeffer würzen.",
+      "Blätterteig in 16 gleich grosse Dreiecke schneiden.",
+      "Füllung auf dem unteren Teil jedes Dreiecks verteilen. Zur Spitze aufrollen.",
+      "Auf Backpapier legen, mit Mandelmilch bestreichen und mit Sesam bestreuen.",
+      "Ca. 15 Min. in der Mitte des vorgeheizten Ofens bei 220 °C backen.",
+      "Auf Gitter auskühlen lassen und servieren."
+    ],
+    "tips": "Die Gipfeli schmecken warm und kalt. Können gut vorbereitet und direkt vor dem Apéro gebacken werden.",
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Mealprep-geeignet"
+    ],
+    "dietCategory": "vegan"
+  },
+  {
+    "id": "son-14",
+    "name": "Schnelle braune Sauce (vegan)",
+    "category": "Snacks & Vorspeisen",
+    "timeMinutes": 15,
+    "ingredients": [
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehe",
+        "amount": 1,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomatenmark",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Weizenmehl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebrühe",
+        "amount": 400,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Sojasosse",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Thymian (getrocknet)",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Öl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "neutral",
+    "source": "Chefkoch",
+    "basePortions": 4,
+    "description": "Blitzschnelle vegane braune Sauce zu Spätzli, Kartoffeln oder Gemüse – in 15 Minuten fertig.",
+    "steps": [
+      "Zwiebel und Knoblauch fein würfeln. Öl erhitzen, Zwiebeln goldbraun anbraten.",
+      "Knoblauch und Tomatenmark zugeben, 1 Min. mitrösten.",
+      "Mehl einstreuen und unter Rühren kurz anschwitzen.",
+      "Mit Brühe ablöschen, dabei kontinuierlich rühren. Sojasosse und Thymian zugeben.",
+      "Unter Rühren ca. 5 Min. köcheln bis die Sauce eindickt. Mit Pfeffer abschmecken."
+    ],
+    "tips": "Für mehr Tiefe einen Schuss Rotwein oder Worcestershiresauce (vegan) einrühren.",
+    "imageUrl": null,
+    "tags": [
+      "Vegan"
+    ],
+    "dietCategory": "vegan"
+  },
+  {
+    "id": "son-15",
+    "name": "Erdbeer-Bananen-Eis am Stiel",
+    "category": "Desserts & Süsses",
+    "timeMinutes": 15,
+    "ingredients": [
+      {
+        "name": "Bananen",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 6
+      },
+      {
+        "name": "Erdbeeren",
+        "amount": 150,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Rahm (Schlagrahm)",
+        "amount": 200,
+        "unit": "ml",
+        "perPortions": 6
+      }
+    ],
+    "weatherType": "warm",
+    "source": "familienkost.de",
+    "basePortions": 6,
+    "description": "Einfaches selbstgemachtes Eis am Stiel aus Banane, Erdbeeren und Rahm – ohne Eismaschine.",
+    "steps": [
+      "Bananen schälen und mit dem Rahm fein mixen.",
+      "Die Hälfte der Bananen-Rahm-Masse in die Eisformen füllen.",
+      "Erdbeeren waschen, entstielen und zur restlichen Masse geben. Fein mixen.",
+      "Die Erdbeer-Bananen-Masse in die Formen füllen. Stiele einsetzen.",
+      "Mind. 12 Stunden tiefgefrieren."
+    ],
+    "tips": "Für ein zweifarbiges Eis die Formen zur Hälfte füllen, kurz anfrieren lassen, dann die zweite Schicht einfüllen.",
+    "imageUrl": null,
+    "tags": [
+      "Vegetarisch",
+      "Kinderfreundlich",
+      "Sommer"
+    ],
+    "dietCategory": "vegetarian"
+  },
+  {
+    "id": "son-16",
+    "name": "Vegane Schweizer Apfelquiche",
+    "category": "Desserts & Süsses",
+    "timeMinutes": 50,
+    "ingredients": [
+      {
+        "name": "Vegane Butter (z.B. Alsan)",
+        "amount": 80,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Mehl",
+        "amount": 160,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Vanilleextrakt",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kaltes Wasser",
+        "amount": 50,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Äpfel (geschält, entkernt, gewürfelt)",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Pflanzensahne (Soja oder Hafer)",
+        "amount": 200,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Pflanzenjoghurt (Kokos)",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zucker",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Stärke",
+        "amount": 3,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Zimt",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemahlene Haselnüsse",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "neutral",
+    "source": "frei-style.com",
+    "basePortions": 4,
+    "description": "Vegane Schweizer Apfelquiche mit mürben Teig, aromatischer Custard-Füllung und Zimt – ein Klassiker.",
+    "steps": [
+      "Mehl mit Salz mischen. Kalte Butter in Stücken einarbeiten bis eine krümelige Masse entsteht. Wasser und Vanille zugeben und zu einem glatten Teig kneten.",
+      "Teig ausrollen und in Pieform legen. 30 Min. kühl stellen.",
+      "Äpfel schälen, entkernen und würfeln.",
+      "Alle Custard-Zutaten (Sahne, Joghurt, Zucker, Stärke, Vanille, Zimt) fein mixen.",
+      "Ofen auf 220 °C vorheizen. Teigboden einstechen, mit Haselnüssen bestreuen. Äpfel kreisförmig auflegen, Custard darüber giessen.",
+      "Im unteren Ofenbereich 30–35 Min. backen."
+    ],
+    "tips": "Empfohlene Apfelsorten: Boskop, Gala, Golden Delicious oder Braeburn.",
+    "imageUrl": null,
+    "tags": [
+      "Vegan",
+      "Schweizer",
+      "Herbst"
+    ],
+    "dietCategory": "vegan"
+  },
+  {
+    "id": "son-17",
+    "name": "Öpfechüechli",
+    "category": "Desserts & Süsses",
+    "timeMinutes": 30,
+    "ingredients": [
+      {
+        "name": "Äpfel (z.B. Boskop)",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Mehl",
+        "amount": 150,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Bier oder Milch",
+        "amount": 250,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Eier",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Zucker",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Vanilleextrakt",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Bratöl oder Butterschmalz (zum Frittieren)",
+        "amount": 500,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Puderzucker oder Zimtzucker (zum Bestäuben)",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "neutral",
+    "source": "js1.ch",
+    "basePortions": 4,
+    "description": "Klassische Schweizer Öpfechüechli – in Bierteig gebackene Apfelringe, heiss serviert mit Zimtzucker.",
+    "steps": [
+      "Mehl, Eier, Bier (oder Milch), Zucker, Salz und Vanille zu einem glatten Teig verrühren. 15 Min. ruhen lassen.",
+      "Äpfel schälen und in ca. 1 cm dicke Ringe schneiden. Kerngehäuse mit einem runden Ausstecher entfernen.",
+      "Öl oder Butterschmalz in einer tiefen Pfanne auf ca. 170 °C erhitzen.",
+      "Apfelringe durch den Teig ziehen und im heissen Fett ca. 2–3 Min. pro Seite goldbraun ausbacken.",
+      "Auf Küchenpapier abtropfen lassen und sofort mit Zimtzucker bestäuben."
+    ],
+    "tips": "Säuerliche Äpfel (Boskop) geben den besten Kontrast zur süssen Panade. Mit Vanilleeis oder Rahmschaum servieren.",
+    "imageUrl": null,
+    "tags": [
+      "Vegetarisch",
+      "Schweizer",
+      "Herbst",
+      "Kinderfreundlich"
+    ],
+    "dietCategory": "vegetarian"
   },
   {
     "id": "kds-01",

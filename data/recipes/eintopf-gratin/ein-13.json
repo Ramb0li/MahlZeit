@@ -1,0 +1,37 @@
+{
+  "id": "ein-13",
+  "name": "Cremiges Linsen-Dal",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 35,
+  "ingredients": [
+    { "name": "Grüne oder braune Linsen", "amount": 190, "unit": "g", "perPortions": 4 },
+    { "name": "Zwiebel (mittelgross)", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Karotte (gross)", "amount": 200, "unit": "g", "perPortions": 4 },
+    { "name": "Knoblauchzehen", "amount": 3, "unit": "Zehen", "perPortions": 4 },
+    { "name": "Ingwer (frisch)", "amount": 10, "unit": "g", "perPortions": 4 },
+    { "name": "Rote oder grüne Chilischote", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Kreuzkümmel (gemahlen)", "amount": 2, "unit": "TL", "perPortions": 4 },
+    { "name": "Currypulver", "amount": 2, "unit": "TL", "perPortions": 4 },
+    { "name": "Kurkuma", "amount": 1, "unit": "TL", "perPortions": 4 },
+    { "name": "Korianderpulver", "amount": 1, "unit": "TL", "perPortions": 4 },
+    { "name": "Gemüsebrühe", "amount": 700, "unit": "ml", "perPortions": 4 },
+    { "name": "Kokosmilch", "amount": 240, "unit": "ml", "perPortions": 4 },
+    { "name": "Kokosöl", "amount": 1, "unit": "EL", "perPortions": 4 }
+  ],
+  "weatherType": "kalt",
+  "source": "Ela Vegan",
+  "basePortions": 4,
+  "description": "Einfaches, cremiges Linsen-Dal mit Kokosmilch und aromatischen Gewürzen – gesund, glutenfrei und vegan.",
+  "steps": [
+    "Linsen verlesen, abspülen und 15 Min. in lauwarmem Wasser einweichen.",
+    "Karotte, Zwiebel, Chili, Ingwer und Knoblauch fein hacken.",
+    "Öl erhitzen, Zwiebel 3–4 Min. anbraten.",
+    "Chili, Knoblauch, Ingwer und Karotten hinzufügen, Hitze reduzieren.",
+    "Alle Gewürze, abgetropfte Linsen und Gemüsebrühe zugeben, 15 Min. köcheln.",
+    "Kokosmilch einrühren, weitere 10–15 Min. köcheln bis Linsen weich sind. Abschmecken."
+  ],
+  "tips": "Mit Naan, Basmatireis oder Vollkornbrot servieren. Nach Belieben mit frischem Koriander garnieren.",
+  "imageUrl": null,
+  "tags": ["Vegan", "Mealprep-geeignet", "Orientalisch"],
+  "dietCategory": "vegan"
+}

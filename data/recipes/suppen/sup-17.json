@@ -1,0 +1,38 @@
+{
+  "id": "sup-17",
+  "name": "Linsensuppe mit saisonalem Gemüse",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 55,
+  "ingredients": [
+    { "name": "Braune Linsen", "amount": 200, "unit": "g", "perPortions": 4 },
+    { "name": "Zwiebeln", "amount": 100, "unit": "g", "perPortions": 4 },
+    { "name": "Knoblauchzehe", "amount": 1, "unit": "Zehe", "perPortions": 4 },
+    { "name": "Kartoffeln", "amount": 300, "unit": "g", "perPortions": 4 },
+    { "name": "Kürbis", "amount": 150, "unit": "g", "perPortions": 4 },
+    { "name": "Lauch", "amount": 130, "unit": "g", "perPortions": 4 },
+    { "name": "Gemüsebrühe", "amount": 1000, "unit": "ml", "perPortions": 4 },
+    { "name": "Getrocknete Tomaten", "amount": 5, "unit": "Stk", "perPortions": 4 },
+    { "name": "Lorbeerblätter", "amount": 2, "unit": "Stk", "perPortions": 4 },
+    { "name": "Tamari Sojasosse", "amount": 2, "unit": "EL", "perPortions": 4 },
+    { "name": "Aceto Balsamico bianco", "amount": 2, "unit": "EL", "perPortions": 4 },
+    { "name": "Olivenöl (hitzebeständig)", "amount": 2, "unit": "EL", "perPortions": 4 },
+    { "name": "Petersilie (frisch)", "amount": 0.5, "unit": "Bund", "perPortions": 4 }
+  ],
+  "weatherType": "kalt",
+  "source": "dontwasteyourtaste.com",
+  "basePortions": 4,
+  "description": "Herzhafte Linsensuppe mit saisonalem Gemüse – nachhaltig, vielseitig und voller Geschmack.",
+  "steps": [
+    "Zwiebel und Knoblauch fein würfeln. Kartoffeln schälen und in 1 cm Würfel schneiden. Kürbis würfeln. Lauch in Ringe schneiden. Getrocknete Tomaten grob hacken.",
+    "Öl in grossem Topf erhitzen, Zwiebeln ca. 4 Minuten anbraten.",
+    "Knoblauch, Kartoffel- und Kürbiswürfel hinzugeben, 5 Minuten anbraten.",
+    "Lauchringe, Brühe, Lorbeerblätter, getrocknete Tomaten und abgetropfte Linsen hinzugeben, aufkochen.",
+    "Hitze reduzieren und 25 Minuten köcheln lassen.",
+    "Lorbeerblätter entfernen. Mit Tamari, Balsamico, Salz und Pfeffer abschmecken.",
+    "Mit frischer Petersilie bestreut servieren."
+  ],
+  "tips": "Das Gemüse je nach Saison variieren – z.B. Fenchel im Herbst, Spinat im Frühling.",
+  "imageUrl": null,
+  "tags": ["Vegan", "Mealprep-geeignet", "Herbst", "Winter"],
+  "dietCategory": "vegan"
+}

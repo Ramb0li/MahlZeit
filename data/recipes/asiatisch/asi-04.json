@@ -1,0 +1,38 @@
+{
+  "id": "asi-04",
+  "name": "Wokgemüse mit Erdnuss-Sauce",
+  "category": "Vegetarische Hauptgerichte",
+  "timeMinutes": 30,
+  "ingredients": [
+    { "name": "Brokkoli", "amount": 500, "unit": "g", "perPortions": 4 },
+    { "name": "Rote Zwiebel", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Rote Paprikaschote", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Champignons", "amount": 250, "unit": "g", "perPortions": 4 },
+    { "name": "Ingwer (frisch)", "amount": 20, "unit": "g", "perPortions": 4 },
+    { "name": "Knoblauchzehen", "amount": 2, "unit": "Zehen", "perPortions": 4 },
+    { "name": "Erdnussöl", "amount": 3, "unit": "EL", "perPortions": 4 },
+    { "name": "Helle Sojasosse", "amount": 2, "unit": "EL", "perPortions": 4 },
+    { "name": "Brauner Rohrzucker", "amount": 2, "unit": "TL", "perPortions": 4 },
+    { "name": "Rote Currypaste", "amount": 1, "unit": "EL", "perPortions": 4 },
+    { "name": "Agavendicksaft", "amount": 1, "unit": "EL", "perPortions": 4 },
+    { "name": "Erdnussmus", "amount": 100, "unit": "g", "perPortions": 4 },
+    { "name": "Kokosmilch", "amount": 200, "unit": "ml", "perPortions": 4 },
+    { "name": "Gemüsebrühe", "amount": 200, "unit": "ml", "perPortions": 4 },
+    { "name": "Zitronensaft", "amount": 1, "unit": "TL", "perPortions": 4 }
+  ],
+  "weatherType": "neutral",
+  "source": "ProVeg",
+  "basePortions": 4,
+  "description": "Knackiges Wokgemüse mit einer cremigen Erdnuss-Kokosmilch-Sauce – asiatisch, vegan und schnell gemacht.",
+  "steps": [
+    "Brokkoli in Röschen schneiden und 5 Min. dämpfen. Zwiebel in dicke Scheiben, Paprika würfeln, Pilze halbieren. Ingwer reiben, Knoblauch würfeln.",
+    "Für die Erdnuss-Sauce: Zwiebel und Knoblauch (1 Zwiebel, 1 Zehe extra) hacken. Mit Currypaste und Agavendicksaft 3 Min. anbraten. Erdnussmus, Kokosmilch, Brühe und Zitronensaft zugeben, 5 Min. köcheln.",
+    "2 EL Erdnussöl in Wok erhitzen. Paprika, Pilze und Zwiebelscheiben anbraten. Brokkoli, Ingwer und Knoblauch hinzufügen, 2 Min. weiterbraten.",
+    "Sojasosse und Zucker zugeben, würzen.",
+    "Gemüse auf Tellern anrichten. Erdnuss-Sauce dazureichen. Mit Basmatireis oder Reisnudeln servieren."
+  ],
+  "tips": "Wer es schärfer mag, gibt mehr rote Currypaste in die Sauce.",
+  "imageUrl": null,
+  "tags": ["Vegan", "Asiatisch"],
+  "dietCategory": "vegan"
+}

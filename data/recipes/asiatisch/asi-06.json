@@ -1,0 +1,35 @@
+{
+  "id": "asi-06",
+  "name": "Pad Thai mit Poulet (Thai Kitchen Art)",
+  "category": "Pasta",
+  "timeMinutes": 30,
+  "ingredients": [
+    { "name": "Reisnudeln", "amount": 250, "unit": "g", "perPortions": 4 },
+    { "name": "Pouletbrust (geschnetzelt)", "amount": 400, "unit": "g", "perPortions": 4 },
+    { "name": "Eier", "amount": 2, "unit": "Stk", "perPortions": 4 },
+    { "name": "Pad Thai Kochsauce", "amount": 200, "unit": "g", "perPortions": 4 },
+    { "name": "Sojasprossen", "amount": 200, "unit": "g", "perPortions": 4 },
+    { "name": "Frühlingszwiebeln", "amount": 4, "unit": "Stk", "perPortions": 4 },
+    { "name": "Knoblauchzehen (fein gehackt)", "amount": 2, "unit": "Zehen", "perPortions": 4 },
+    { "name": "Tofu (1 cm Würfel)", "amount": 100, "unit": "g", "perPortions": 4 },
+    { "name": "Pflanzenöl", "amount": 3, "unit": "EL", "perPortions": 4 },
+    { "name": "Limette", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Koriander (frisch)", "amount": 0.5, "unit": "Bund", "perPortions": 4 }
+  ],
+  "weatherType": "neutral",
+  "source": "Thai Kitchen",
+  "basePortions": 4,
+  "description": "Authentisches Pad Thai nach Thai Kitchen Art – mit Poulet, Tofu, Sojasprossen und der klassischen Pad-Thai-Sauce.",
+  "steps": [
+    "Reisnudeln nach Packungsanleitung kochen und beiseite stellen.",
+    "Weissen Teil der Frühlingszwiebeln mit Tofu und Knoblauch in 1 EL Öl anbraten, herausnehmen.",
+    "Poulet in 1 EL Öl anbraten bis gar, herausnehmen.",
+    "Eier in 1 EL Öl rührbraten. Sobald sie halb gar sind, Nudeln, Poulet und Tofu-Mischung zugeben und vermengen.",
+    "Pad Thai Sauce hinzufügen und alles gut vermischen.",
+    "Grünen Teil der Frühlingszwiebeln und Sojasprossen unterrühren. Mit Koriander und Limette servieren."
+  ],
+  "tips": "Fertige Pad-Thai-Sauce (z.B. von Thai Kitchen) gibt es in Asialäden und grossen Supermärkten.",
+  "imageUrl": null,
+  "tags": ["Asiatisch"],
+  "dietCategory": "meat"
+}

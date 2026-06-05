@@ -1,0 +1,26 @@
+{
+  "id": "son-15",
+  "name": "Erdbeer-Bananen-Eis am Stiel",
+  "category": "Desserts & Süsses",
+  "timeMinutes": 15,
+  "ingredients": [
+    { "name": "Bananen", "amount": 2, "unit": "Stk", "perPortions": 6 },
+    { "name": "Erdbeeren", "amount": 150, "unit": "g", "perPortions": 6 },
+    { "name": "Rahm (Schlagrahm)", "amount": 200, "unit": "ml", "perPortions": 6 }
+  ],
+  "weatherType": "warm",
+  "source": "familienkost.de",
+  "basePortions": 6,
+  "description": "Einfaches selbstgemachtes Eis am Stiel aus Banane, Erdbeeren und Rahm – ohne Eismaschine.",
+  "steps": [
+    "Bananen schälen und mit dem Rahm fein mixen.",
+    "Die Hälfte der Bananen-Rahm-Masse in die Eisformen füllen.",
+    "Erdbeeren waschen, entstielen und zur restlichen Masse geben. Fein mixen.",
+    "Die Erdbeer-Bananen-Masse in die Formen füllen. Stiele einsetzen.",
+    "Mind. 12 Stunden tiefgefrieren."
+  ],
+  "tips": "Für ein zweifarbiges Eis die Formen zur Hälfte füllen, kurz anfrieren lassen, dann die zweite Schicht einfüllen.",
+  "imageUrl": null,
+  "tags": ["Vegetarisch", "Kinderfreundlich", "Sommer"],
+  "dietCategory": "vegetarian"
+}

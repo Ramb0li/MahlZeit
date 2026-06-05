@@ -1,0 +1,33 @@
+{
+  "id": "sal-15",
+  "name": "Frühlingssalat mit Radieschen",
+  "category": "Salate & Bowls",
+  "timeMinutes": 20,
+  "ingredients": [
+    { "name": "Salatmischung (Kopfsalat, Rucola, Frisee)", "amount": 200, "unit": "g", "perPortions": 4 },
+    { "name": "Radieschen", "amount": 2, "unit": "Bund", "perPortions": 4 },
+    { "name": "Schnittlauch", "amount": 1, "unit": "Bund", "perPortions": 4 },
+    { "name": "Salatgurke", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Kirschtomaten", "amount": 250, "unit": "g", "perPortions": 4 },
+    { "name": "Lauchzwiebeln", "amount": 4, "unit": "Stk", "perPortions": 4 },
+    { "name": "Naturjoghurt (3.5% Fett)", "amount": 200, "unit": "g", "perPortions": 4 },
+    { "name": "Agavendicksaft", "amount": 2, "unit": "EL", "perPortions": 4 },
+    { "name": "Körniger Senf", "amount": 2, "unit": "TL", "perPortions": 4 },
+    { "name": "Rapsöl", "amount": 4, "unit": "EL", "perPortions": 4 },
+    { "name": "Kräuteressig", "amount": 4, "unit": "EL", "perPortions": 4 },
+    { "name": "Zitronensaft", "amount": 2, "unit": "EL", "perPortions": 4 }
+  ],
+  "weatherType": "warm",
+  "source": "einfachkochen.de",
+  "basePortions": 4,
+  "description": "Leichter Frühlingssalat mit knackigen Radieschen und einem cremigen Joghurt-Senf-Dressing.",
+  "steps": [
+    "Salat waschen und trockenschleudern. Radieschen in feine Scheiben schneiden. Schnittlauch in Ringe schneiden. Gurke in dünne Scheiben schneiden. Kirschtomaten halbieren. Lauchzwiebeln in Ringe schneiden.",
+    "Joghurt mit Agavendicksaft, Senf und Rapsöl verrühren. Essig und Zitronensaft unterheben. Mit Salz und Pfeffer abschmecken.",
+    "Alle Salatzutaten in eine Schüssel geben, mit dem Dressing vermischen und sofort servieren."
+  ],
+  "tips": "Das Dressing erst kurz vor dem Servieren untermischen, damit der Salat knackig bleibt.",
+  "imageUrl": null,
+  "tags": ["Vegetarisch", "Frühling", "Mittagsgericht"],
+  "dietCategory": "vegetarian"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "pas-16",
+  "name": "Vegane Linsen-Lasagne",
+  "category": "Pasta",
+  "timeMinutes": 100,
+  "ingredients": [
+    { "name": "Grüne Linsen", "amount": 200, "unit": "g", "perPortions": 4 },
+    { "name": "Lasagne-Blätter (grün)", "amount": 12, "unit": "Stk", "perPortions": 4 },
+    { "name": "Passierte Tomaten", "amount": 700, "unit": "g", "perPortions": 4 },
+    { "name": "Zwiebel", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Knoblauchzehen", "amount": 2, "unit": "Zehen", "perPortions": 4 },
+    { "name": "Rüebli (Karotte)", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Knollensellerie", "amount": 200, "unit": "g", "perPortions": 4 },
+    { "name": "Getrocknete Steinpilze", "amount": 25, "unit": "g", "perPortions": 4 },
+    { "name": "Wasser", "amount": 400, "unit": "ml", "perPortions": 4 },
+    { "name": "Lorbeerblatt", "amount": 1, "unit": "Stk", "perPortions": 4 },
+    { "name": "Olivenöl", "amount": 2, "unit": "EL", "perPortions": 4 },
+    { "name": "Haferdrink", "amount": 700, "unit": "ml", "perPortions": 4 },
+    { "name": "Weissmehl (für Béchamel)", "amount": 4, "unit": "EL", "perPortions": 4 },
+    { "name": "Olivenöl (für Béchamel)", "amount": 3, "unit": "EL", "perPortions": 4 },
+    { "name": "Muskatnuss", "amount": 1, "unit": "Prise", "perPortions": 4 },
+    { "name": "Salz", "amount": 2, "unit": "TL", "perPortions": 4 },
+    { "name": "Pfeffer", "amount": 1, "unit": "Prise", "perPortions": 4 }
+  ],
+  "weatherType": "neutral",
+  "source": "fooby.ch",
+  "basePortions": 4,
+  "description": "Herzhafte vegane Lasagne mit würziger Linsen-Tomaten-Sauce und cremiger Haferdrink-Béchamel.",
+  "steps": [
+    "Zwiebel, Knoblauch, Karotte und Sellerie fein hacken. Steinpilze 5 Min. einweichen, abtropfen und grob hacken.",
+    "Öl erhitzen, Gemüse 5 Min. andämpfen. Linsen, Steinpilze und Lorbeer beigeben, kurz mitdämpfen.",
+    "Passierte Tomaten und Wasser zugeben, aufkochen, zugedeckt ca. 40 Min. köcheln. Mit Salz und Pfeffer würzen.",
+    "Für die Béchamel: Öl erhitzen, Mehl einrühren und kurz dünsten. Haferdrink schrittweise zugeben, aufkochen, mit Muskat, Salz und Pfeffer würzen, ca. 10 Min. köcheln.",
+    "Auflaufform einfetten. Abwechselnd Béchamel, Linsensauce und Lasagne-Blätter schichten. Mit Béchamel abschliessen.",
+    "Ca. 40 Min. bei 200 °C backen. 5 Min. ruhen lassen vor dem Servieren."
+  ],
+  "tips": "Die Lasagne schmeckt am nächsten Tag noch besser. Reste lassen sich gut einfrieren.",
+  "imageUrl": null,
+  "tags": ["Vegan", "Mealprep-geeignet", "Italienisch"],
+  "dietCategory": "vegan"
+}
