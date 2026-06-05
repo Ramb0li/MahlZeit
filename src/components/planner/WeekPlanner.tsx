@@ -15,6 +15,16 @@ interface WeekPlannerProps {
   onViewRecipe?: (recipe: Recipe) => void;
 }
 
+/** True, wenn irgendein Tages-Slot der Woche ein Rezept (oder Custom-Eintrag) enthält. */
+function planHasRecipes(plan: WeekPlan | null): boolean {
+  if (!plan?.days) return false;
+  const hasMeal = (slot?: MealSlot) =>
+    !!slot && (!!slot.recipeId || !!slot.sideRecipeId || !!slot.customName);
+  return Object.values(plan.days).some(
+    (d) => hasMeal(d.breakfast) || hasMeal(d.lunch) || hasMeal(d.dinner),
+  );
+}
+
 export function WeekPlanner({ recipes, settings, constraints, onViewRecipe }: WeekPlannerProps) {
   const [currentDate, setCurrentDate] = useState(() =>
     getInitialDisplayWeek(settings.weekSwitchDay ?? 0)
@@ -23,6 +33,7 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe }: We
   const [weather, setWeather] = useState<WeatherCache | null>(null);
   const [shoppingGroups, setShoppingGroups] = useState<ShoppingGroups>([{ id: 'sg-1', dayIndices: [1,2,3,4,5,6,7] }]);
   const [isSuggesting, setIsSuggesting] = useState(false);
+  const [confirmSuggest, setConfirmSuggest] = useState(false);
   const [isClearing, setIsClearing] = useState(false);
   const [loading, setLoading] = useState(true);
 
@@ -61,7 +72,8 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe }: We
   // Neu laden wenn Standort in Einstellungen geändert wurde
   useEffect(() => { loadWeather(); }, [loadWeather, weatherLocation]);
 
-  const handleSuggestWeek = async () => {
+  const runSuggestWeek = async () => {
+    setConfirmSuggest(false);
     setIsSuggesting(true);
     try {
       const res = await fetch('/api/weekplan/suggest', {
@@ -73,6 +85,15 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe }: We
       setWeekPlan(data);
     } finally {
       setIsSuggesting(false);
+    }
+  };
+
+  const handleSuggestWeek = () => {
+    // Bereits gefüllte Woche nicht unbewusst überschreiben
+    if (planHasRecipes(weekPlan)) {
+      setConfirmSuggest(true);
+    } else {
+      runSuggestWeek();
     }
   };
 
@@ -517,6 +538,39 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe }: We
                 />
               );
             })}
+        </div>
+      )}
+
+      {/* Bestätigung vor dem Überschreiben einer bereits gefüllten Woche */}
+      {confirmSuggest && (
+        <div className="mz-modal-scrim" onClick={() => setConfirmSuggest(false)}>
+          <div
+            onClick={(e) => e.stopPropagation()}
+            style={{
+              background: 'var(--card)', border: '1px solid var(--border)',
+              borderRadius: 'var(--r-card)', padding: '24px 24px 20px',
+              maxWidth: 420, width: '100%', boxShadow: 'var(--shadow-lg)',
+            }}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 12 }}>
+              <span style={{ fontSize: 22, lineHeight: 1 }}>⚠️</span>
+              <h3 style={{ fontSize: 17, fontWeight: 700, color: 'var(--ink)', margin: 0 }}>
+                Woche neu vorschlagen?
+              </h3>
+            </div>
+            <p style={{ fontSize: 14, lineHeight: 1.55, color: 'var(--muted)', margin: '0 0 20px' }}>
+              Die aktuelle Woche wird neu vorgeschlagen und die bestehenden Rezepte werden aus dem
+              Menüplan gelöscht. Bist du dir sicher?
+            </p>
+            <div style={{ display: 'flex', justifyContent: 'flex-end', gap: 10 }}>
+              <button className="mz-btn-soft" onClick={() => setConfirmSuggest(false)}>
+                Abbrechen
+              </button>
+              <button className="mz-btn-primary" onClick={runSuggestWeek}>
+                Neu vorschlagen
+              </button>
+            </div>
+          </div>
         </div>
       )}
     </div>

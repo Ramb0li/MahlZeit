@@ -142,6 +142,13 @@ export function ShoppingListView() {
         setList({});
       } else {
         setList(data);
+        // Soft-Delete-Cleanup: durchgestrichene Items, die nicht mehr in der frisch
+        // generierten Liste stehen (weil sich ein Menü geändert hat), entfernen — und
+        // veraltete Streich-Keys können so nicht wieder auftauchen.
+        const liveKeys = new Set<string>(
+          Object.values(data as ShoppingList).flat().map(i => `${i.name.toLowerCase()}_${i.unit}`)
+        );
+        setDeleted(prev => prev.filter(k => liveKeys.has(k)));
       }
     } finally { setLoading(false); }
   }, [weekId]);
@@ -395,8 +402,13 @@ export function ShoppingListView() {
   };
 
   const orderedCategories = buildOrderedCategories();
-  const totalItems    = Object.values(list).reduce((s, a) => s + a.length, 0) + custom.length;
-  const checkedCount  = checked.size + custom.filter(c => c.checked).length;
+  // Durchgestrichene (soft-deleted) Items zählen nicht zu den "zu kaufenden" Artikeln.
+  const deletedSet    = new Set(deleted);
+  const totalItems    = Object.values(list).reduce(
+    (s, a) => s + a.filter(i => !deletedSet.has(`${i.name.toLowerCase()}_${i.unit}`)).length, 0,
+  ) + custom.length;
+  const checkedCount  = Array.from(checked).filter(k => !deletedSet.has(k)).length
+                      + custom.filter(c => c.checked).length;
   const kwNum         = weekId.split('-W')[1] ?? '';
   const dateFrom      = weekDays[0] ? format(weekDays[0], 'd. MMM', { locale: de }) : '';
   const dateTo        = weekDays[6] ? format(weekDays[6], 'd. MMM yyyy', { locale: de }) : '';
@@ -652,7 +664,7 @@ export function ShoppingListView() {
 
                 {/* Items */}
                 {!collapsed.has(category) && <div>
-                  {visibleRecipeItems.map((item) => {
+                  {recipeItems.map((item) => {
                     const key          = `${item.name.toLowerCase()}_${item.unit}`;
                     const isChecked    = checked.has(key);
                     const isModified   = key in overrides;
