@@ -39,13 +39,23 @@
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Proteinreiche Bowl für warme Tage.",
-  "steps": [],
-  "tips": "",
-  "imageUrl": null,
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/sal-01-1780782118051.jpg",
   "tags": [
     "Mealprep-geeignet",
     "Mittagsgericht",
     "Frühling",
     "Sommer"
-  ]
+  ],
+  "allergens": [
+    "sesam"
+  ],
+  "nutrition": {
+    "kcal": 412,
+    "protein": 15.8,
+    "fat": 14.5,
+    "carbs": 54.2,
+    "fiber": 9.8
+  },
+  "imageZutaten": null,
+  "imageKochen": null
 }

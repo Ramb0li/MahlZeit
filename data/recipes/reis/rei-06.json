@@ -85,5 +85,13 @@
     "Vegan"
   ],
   "dietCategory": "vegan",
-  "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---rei-06-2--1780577746940.jpeg"
+  "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---rei-06-2--1780577746940.jpeg",
+  "allergens": [],
+  "nutrition": {
+    "kcal": 628,
+    "protein": 23.2,
+    "fat": 14.8,
+    "carbs": 98.6,
+    "fiber": 12.4
+  }
 }

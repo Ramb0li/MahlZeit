@@ -97,5 +97,15 @@
   "tips": "Mit Kokosjogurt, pflanzlicher Milch und saisonalen Früchten servieren.",
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---granola-1--1780577321739.jpeg",
   "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---granola-2--1780577355124.jpeg",
-  "imageKochen": null
+  "imageKochen": null,
+  "allergens": [
+    "schalenfruechte"
+  ],
+  "nutrition": {
+    "kcal": 562,
+    "protein": 14.8,
+    "fat": 38.2,
+    "carbs": 42.1,
+    "fiber": 8.3
+  }
 }

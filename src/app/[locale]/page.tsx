@@ -1,13 +1,14 @@
 export const dynamic = 'force-dynamic';
 
-import Link from 'next/link';
 import Image from 'next/image';
 import { Check, Leaf, Clock, Flame } from 'lucide-react';
-import { LandingBleed } from '@/components/landing/LandingBleed';
-import { SiteFooter } from '@/components/landing/SiteFooter';
-import { getLandingContent } from '@/lib/content';
-import type { LandingFeature } from '@/lib/content';
-import { getSession } from '@/lib/auth';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { Link }                              from '@/i18n/navigation';
+import { LandingBleed }                      from '@/components/landing/LandingBleed';
+import { SiteFooter }                        from '@/components/landing/SiteFooter';
+import { getLandingContent }                 from '@/lib/content';
+import type { LandingFeature }               from '@/lib/content';
+import { getSession }                        from '@/lib/auth';
 
 const COLLAGE = [
   { cls: 'mz-cc1', src: '/images/recipes/cuiselin-taboule.jpeg',             alt: 'Taboulé'           },
@@ -16,9 +17,9 @@ const COLLAGE = [
   { cls: 'mz-cc4', src: '/images/recipes/cuiselin-pesto-genovese.jpg',       alt: 'Pesto Genovese'    },
 ];
 
-// Heutiger Wochentag dynamisch (Serverzeit) — hebt den richtigen Tag hervor
-const todayIdx  = new Date().getDay(); // 0=So … 6=Sa
-const DAY_SHORT = ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'];
+// Heutiger Wochentag dynamisch (Serverzeit)
+const todayIdx   = new Date().getDay();
+const DAY_SHORT  = ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'];
 const todayShort = DAY_SHORT[todayIdx];
 
 const WEEK = [
@@ -31,7 +32,6 @@ const WEEK = [
   { name: 'So', meal: 'Linsensuppe',     sub: '25 min' },
 ].map(d => ({ ...d, today: d.name === todayShort }));
 
-/** Renders editable headline text. Convention: "\n" = line break, *word* = <em>word</em>. */
 function renderRichTitle(raw: string) {
   return raw.split('\n').map((line, li, arr) => (
     <span key={li}>
@@ -45,7 +45,6 @@ function renderRichTitle(raw: string) {
   ));
 }
 
-/** Renders a feature text with an optional inline link injected at link.text. */
 function renderFeatureText(f: LandingFeature) {
   if (!f.link) return f.text;
   const idx = f.text.indexOf(f.link.text);
@@ -53,12 +52,8 @@ function renderFeatureText(f: LandingFeature) {
   return (
     <>
       {f.text.slice(0, idx)}
-      <a
-        href={f.link.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ color: 'var(--accent)', textDecoration: 'none', fontWeight: 600 }}
-      >
+      <a href={f.link.url} target="_blank" rel="noopener noreferrer"
+        style={{ color: 'var(--accent)', textDecoration: 'none', fontWeight: 600 }}>
         {f.link.text}
       </a>
       {f.text.slice(idx + f.link.text.length)}
@@ -66,10 +61,16 @@ function renderFeatureText(f: LandingFeature) {
   );
 }
 
-export default async function LandingPage() {
-  const [{ reviews, features, plans, meta }, session] = await Promise.all([
+interface Props { params: Promise<{ locale: string }> }
+
+export default async function LandingPage({ params }: Props) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
+  const [{ reviews, features, plans, meta }, session, t] = await Promise.all([
     getLandingContent(),
     getSession().catch(() => null),
+    getTranslations('Landing'),
   ]);
 
   return (
@@ -86,13 +87,13 @@ export default async function LandingPage() {
         <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
           {session ? (
             <Link href="/app" className="mz-btn-primary" style={{ fontSize: 14, padding: '9px 18px' }}>
-              Zum Menueplan
+              {t('navToPlanner')}
             </Link>
           ) : (
             <>
-              <Link href="/auth" className="mz-lp-login">Anmelden</Link>
+              <Link href="/auth" className="mz-lp-login">{t('navLogin')}</Link>
               <Link href="/auth?plan=trial" className="mz-btn-primary" style={{ fontSize: 14, padding: '9px 18px' }}>
-                Gratis starten
+                {t('navStartFree')}
               </Link>
             </>
           )}
@@ -104,7 +105,7 @@ export default async function LandingPage() {
         <div>
           <div className="mz-lp-kicker">
             <div className="mz-lp-kicker-dot" />
-            Dein schlauer Menüplaner
+            {t('kicker')}
           </div>
           <h1 className="mz-lp-h1">
             {renderRichTitle(meta.heroTitle)}
@@ -114,22 +115,17 @@ export default async function LandingPage() {
           </p>
           <div className="mz-lp-hero-cta">
             <Link href="#features" className="mz-btn-soft lg" style={{ padding: '14px 22px', fontSize: 15 }}>
-              Mehr erfahren
+              {t('heroCta')}
             </Link>
           </div>
           <p className="mz-lp-hero-note" style={{ marginTop: 14 }}>
-            Kein Abo-Zwang · 🇨🇭 Made in Switzerland
+            {t('heroNote')}
           </p>
         </div>
 
         <div className="mz-lp-hero-collage">
           {COLLAGE.map(({ cls, src, alt }) => (
-            <div
-              key={cls}
-              className={`mz-cc ${cls}`}
-              style={{ backgroundImage: `url(${src})` }}
-              aria-label={alt}
-            />
+            <div key={cls} className={`mz-cc ${cls}`} style={{ backgroundImage: `url(${src})` }} aria-label={alt} />
           ))}
           <div className="mz-cc-badge">
             <span className="mz-cc-badge-num">{meta.recipeCount}</span>
@@ -140,7 +136,7 @@ export default async function LandingPage() {
 
       {/* ── Statement ─────────────────────────────────────────────────── */}
       <div className="mz-lp-statement">
-        <h2>Schluss mit der Frage<br /><em>«Was koche ich heute?»</em></h2>
+        <h2>{t('statement1')}<br /><em>{t('statement2')}</em></h2>
       </div>
 
       {/* ── Features ──────────────────────────────────────────────────── */}
@@ -160,7 +156,7 @@ export default async function LandingPage() {
         </div>
       </div>
 
-      {/* ── Full-bleed image — zeitbasiert (Client Component) ──────────── */}
+      {/* ── Full-bleed image ──────────────────────────────────────────── */}
       <LandingBleed />
 
       {/* ── Week preview ──────────────────────────────────────────────── */}
@@ -182,10 +178,7 @@ export default async function LandingPage() {
 
       {/* ── Two-col: recipe highlight ─────────────────────────────────── */}
       <div className="mz-lp-two">
-        <div
-          className="mz-lp-two-img"
-          style={{ backgroundImage: 'url(/images/recipes/cuiselin-gruener-linsensalat.jpg)' }}
-        />
+        <div className="mz-lp-two-img" style={{ backgroundImage: 'url(/images/recipes/cuiselin-gruener-linsensalat.jpg)' }} />
         <div className="mz-lp-two-txt">
           <p className="mz-eyebrow">{meta.eyebrowRecipes}</p>
           <h3 style={{ marginTop: 10 }}>
@@ -261,21 +254,17 @@ export default async function LandingPage() {
               <p className="mz-lp-plan-desc">{p.desc}</p>
               <ul className="mz-lp-plan-feats">
                 {p.features.map((f) => (
-                  <li key={f}>
-                    <Check size={14} />
-                    {f}
-                  </li>
+                  <li key={f}><Check size={14} />{f}</li>
                 ))}
               </ul>
-              <Link href={p.href} className={`mz-lp-plan-cta ${p.featured ? 'mz-btn-primary' : 'mz-btn-ghost-light'}`} style={{ display: 'block', textAlign: 'center', textDecoration: 'none', padding: '11px 18px', borderRadius: 999, fontWeight: 700, fontSize: 14 }}>
-                {p.featured ? 'Jetzt kaufen →' : 'Auswählen →'}
+              <Link href={p.href} className={`mz-lp-plan-cta ${p.featured ? 'mz-btn-primary' : 'mz-btn-ghost-light'}`}
+                style={{ display: 'block', textAlign: 'center', textDecoration: 'none', padding: '11px 18px', borderRadius: 999, fontWeight: 700, fontSize: 14 }}>
+                {p.featured ? t('planBuy') : t('planSelect')}
               </Link>
             </div>
           ))}
         </div>
-        <p className="mz-lp-trust">
-          {meta.footerTrust}
-        </p>
+        <p className="mz-lp-trust">{meta.footerTrust}</p>
       </div>
 
       {/* ── Footer ────────────────────────────────────────────────────── */}
@@ -284,9 +273,9 @@ export default async function LandingPage() {
       {/* ── Mobile sticky CTA ─────────────────────────────────────────── */}
       <div className="mz-lp-mobile-cta">
         <Link href="/auth?plan=trial" className="mz-btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
-          7 Tage gratis testen
+          {t('mobileCta')}
         </Link>
-        <p className="mz-lp-mobile-cta-note">Kein Kreditkarteneintrag nötig</p>
+        <p className="mz-lp-mobile-cta-note">{t('mobileCtaNote')}</p>
       </div>
 
     </div>

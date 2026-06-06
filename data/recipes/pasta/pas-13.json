@@ -71,5 +71,15 @@
     "Mittagsgericht",
     "Frühling",
     "Sommer"
-  ]
+  ],
+  "allergens": [
+    "gluten"
+  ],
+  "nutrition": {
+    "kcal": 428,
+    "protein": 10.2,
+    "fat": 18.5,
+    "carbs": 55.8,
+    "fiber": 3.1
+  }
 }

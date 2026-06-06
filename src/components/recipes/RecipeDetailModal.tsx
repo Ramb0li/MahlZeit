@@ -2,7 +2,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { X, Pencil, UtensilsCrossed } from 'lucide-react';
 import { getCurrentSeason } from '@/lib/utils';
-import { type Recipe, type Ingredient, type IngredientGroup, type RecipeRating } from '@/types';
+import { type Recipe, type Ingredient, type IngredientGroup, type RecipeRating, type EuAllergen } from '@/types';
 
 // ─── Diet display mapping ─────────────────────────────────────────────────────
 
@@ -11,6 +11,25 @@ const DIET_LABEL: Record<string, string> = {
   fish:       '🐟 Pescetarisch',
   vegetarian: '🌿 Vegetarisch',
   vegan:      '🌱 Vegan',
+};
+
+// ─── Allergen display labels ─────────────────────────────────────────────────
+
+const EU_ALLERGEN_LABELS: Record<EuAllergen, string> = {
+  gluten:          'Gluten',
+  krebstiere:      'Krebstiere',
+  ei:              'Ei',
+  fisch:           'Fisch',
+  erdnuesse:       'Erdnüsse',
+  soja:            'Soja',
+  milch:           'Milch',
+  schalenfruechte: 'Schalenfrüchte',
+  sellerie:        'Sellerie',
+  senf:            'Senf',
+  sesam:           'Sesam',
+  sulfite:         'Sulfite',
+  lupinen:         'Lupinen',
+  weichtiere:      'Weichtiere',
 };
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
@@ -392,9 +411,60 @@ export function RecipeDetailModal({
               )}
             </div>
 
+            {/* Allergene */}
+            {recipe.allergens !== undefined && (
+              <div className="flex flex-wrap items-center gap-1.5">
+                {recipe.allergens.length === 0 ? (
+                  <span
+                    className="text-xs px-2.5 py-1 rounded-full"
+                    style={{ backgroundColor: '#e8f5e9', color: '#2e7d32' }}
+                  >
+                    Keine bekannten Allergene
+                  </span>
+                ) : (
+                  <>
+                    <span className="text-xs font-semibold" style={{ color: '#9a8c80' }}>Enthält:</span>
+                    {recipe.allergens.map(a => (
+                      <span
+                        key={a}
+                        className="text-xs px-2.5 py-1 rounded-full"
+                        style={{ backgroundColor: '#fef3f2', color: '#c0392b', border: '1px solid #fecaca' }}
+                      >
+                        {EU_ALLERGEN_LABELS[a]}
+                      </span>
+                    ))}
+                  </>
+                )}
+              </div>
+            )}
+
             {/* Description */}
             {recipe.description && (
               <p className="text-sm leading-relaxed" style={{ color: '#5a4e48' }}>{recipe.description}</p>
+            )}
+
+            {/* Nährwerte */}
+            {recipe.nutrition && (
+              <div className="rounded-xl p-3" style={{ backgroundColor: '#f7f4ee', border: '1px solid #e0d8ce' }}>
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-xs font-semibold" style={{ color: '#5a4e48' }}>Pro Portion</span>
+                  <span className="text-xs" style={{ color: '#b0a090' }}>Richtwerte</span>
+                </div>
+                <div className="grid grid-cols-5 gap-1 text-center">
+                  {[
+                    { label: 'kcal',          value: recipe.nutrition.kcal,    unit: '' },
+                    { label: 'Eiweiss',        value: recipe.nutrition.protein, unit: 'g' },
+                    { label: 'Fett',           value: recipe.nutrition.fat,     unit: 'g' },
+                    { label: 'Kohlenhydr.',    value: recipe.nutrition.carbs,   unit: 'g' },
+                    { label: 'Ballaststoffe',  value: recipe.nutrition.fiber,   unit: 'g' },
+                  ].map(({ label, value, unit }) => (
+                    <div key={label}>
+                      <div className="text-sm font-bold" style={{ color: '#271f1a' }}>{value}{unit}</div>
+                      <div className="text-[10px] leading-tight" style={{ color: '#9a8c80' }}>{label}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             )}
 
             {/* Portions scaler */}

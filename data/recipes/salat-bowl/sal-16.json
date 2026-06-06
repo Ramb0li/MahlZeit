@@ -4,15 +4,60 @@
   "category": "Salate & Bowls",
   "timeMinutes": 75,
   "ingredients": [
-    { "name": "Rote Bete (roh, in Schnitzen)", "amount": 1000, "unit": "g", "perPortions": 4 },
-    { "name": "Blutorangen", "amount": 4, "unit": "Stk", "perPortions": 4 },
-    { "name": "Naturjoghurt (für Labneh)", "amount": 500, "unit": "g", "perPortions": 4 },
-    { "name": "Olivenöl", "amount": 3, "unit": "EL", "perPortions": 4 },
-    { "name": "Salbei (frisch)", "amount": 1, "unit": "Bund", "perPortions": 4 },
-    { "name": "Kürbiskerne", "amount": 2, "unit": "EL", "perPortions": 4 },
-    { "name": "Weissweinessig", "amount": 2, "unit": "EL", "perPortions": 4 },
-    { "name": "Salz", "amount": 1.5, "unit": "TL", "perPortions": 4 },
-    { "name": "Pfeffer", "amount": 1, "unit": "Prise", "perPortions": 4 }
+    {
+      "name": "Rote Bete (roh, in Schnitzen)",
+      "amount": 1000,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Blutorangen",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Naturjoghurt (für Labneh)",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salbei (frisch)",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Kürbiskerne",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Weissweinessig",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
   ],
   "weatherType": "neutral",
   "source": "fooby.ch",
@@ -28,6 +73,21 @@
   ],
   "tips": "Den Labneh unbedingt am Vortag vorbereiten. Je länger er abtropft, desto fester und aromatischer wird er.",
   "imageUrl": null,
-  "tags": ["Vegetarisch", "Winter", "Herbst"],
-  "dietCategory": "vegetarian"
+  "tags": [
+    "Vegetarisch",
+    "Winter",
+    "Herbst"
+  ],
+  "dietCategory": "vegetarian",
+  "allergens": [
+    "milch",
+    "sulfite"
+  ],
+  "nutrition": {
+    "kcal": 298,
+    "protein": 12.6,
+    "fat": 14.2,
+    "carbs": 32.4,
+    "fiber": 6.8
+  }
 }

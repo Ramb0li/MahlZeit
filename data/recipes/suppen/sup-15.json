@@ -4,17 +4,72 @@
   "category": "Suppen, Eintöpfe & Currys",
   "timeMinutes": 35,
   "ingredients": [
-    { "name": "Rote Linsen", "amount": 100, "unit": "g", "perPortions": 4 },
-    { "name": "Zwiebel", "amount": 1, "unit": "Stk", "perPortions": 4 },
-    { "name": "Gehackte Tomaten (Dose)", "amount": 400, "unit": "g", "perPortions": 4 },
-    { "name": "Tomatenmark", "amount": 2, "unit": "TL", "perPortions": 4 },
-    { "name": "Gemüsebrühe", "amount": 800, "unit": "ml", "perPortions": 4 },
-    { "name": "Ras el-Hanout", "amount": 2, "unit": "TL", "perPortions": 4 },
-    { "name": "Kreuzkümmel (gemahlen)", "amount": 1, "unit": "TL", "perPortions": 4 },
-    { "name": "Kurkuma", "amount": 0.5, "unit": "TL", "perPortions": 4 },
-    { "name": "Olivenöl", "amount": 2, "unit": "EL", "perPortions": 4 },
-    { "name": "Koriander oder Petersilie (frisch)", "amount": 0.5, "unit": "Bund", "perPortions": 4 },
-    { "name": "Naturjoghurt oder Feta (zum Servieren)", "amount": 4, "unit": "EL", "perPortions": 4 }
+    {
+      "name": "Rote Linsen",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Gehackte Tomaten (Dose)",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomatenmark",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebrühe",
+      "amount": 800,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Ras el-Hanout",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kreuzkümmel (gemahlen)",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kurkuma",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Koriander oder Petersilie (frisch)",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Naturjoghurt oder Feta (zum Servieren)",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 4
+    }
   ],
   "weatherType": "kalt",
   "source": "css.ch",
@@ -29,6 +84,21 @@
   ],
   "tips": "Ras el-Hanout gibt der Suppe die typisch marokkanische Note. Erhältlich in gut sortierten Supermärkten.",
   "imageUrl": null,
-  "tags": ["Vegan", "Mealprep-geeignet", "Orientalisch", "Winter"],
-  "dietCategory": "vegan"
+  "tags": [
+    "Vegan",
+    "Mealprep-geeignet",
+    "Orientalisch",
+    "Winter"
+  ],
+  "dietCategory": "vegan",
+  "allergens": [
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 245,
+    "protein": 11.3,
+    "fat": 9.2,
+    "carbs": 29.8,
+    "fiber": 8.4
+  }
 }

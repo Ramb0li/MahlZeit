@@ -39,13 +39,23 @@
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Samtweiche Suppe mit exotischer Note.",
-  "steps": [],
-  "tips": "",
-  "imageUrl": null,
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/sup-05-1780777992254.jpg",
   "tags": [
     "Mealprep-geeignet",
     "Mittagsgericht",
     "Herbst",
     "Winter"
-  ]
+  ],
+  "allergens": [
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 288,
+    "protein": 4.2,
+    "fat": 11.5,
+    "carbs": 42.8,
+    "fiber": 6.2
+  },
+  "imageZutaten": null,
+  "imageKochen": null
 }

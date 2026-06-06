@@ -72,5 +72,15 @@
   "imageUrl": null,
   "imageZutaten": null,
   "imageKochen": null,
-  "tips": ""
+  "tips": "",
+  "allergens": [
+    "sulfite"
+  ],
+  "nutrition": {
+    "kcal": 118,
+    "protein": 2.8,
+    "fat": 2.6,
+    "carbs": 16.4,
+    "fiber": 5.2
+  }
 }

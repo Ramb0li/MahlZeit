@@ -56,5 +56,16 @@
   "imageUrl": null,
   "tags": [
     "Mexikanisch"
-  ]
+  ],
+  "allergens": [
+    "gluten",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 368,
+    "protein": 9.2,
+    "fat": 16.8,
+    "carbs": 46.4,
+    "fiber": 6.2
+  }
 }

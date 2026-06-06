@@ -4,18 +4,78 @@
   "category": "Suppen, Eintöpfe & Currys",
   "timeMinutes": 30,
   "ingredients": [
-    { "name": "Reisnudeln", "amount": 200, "unit": "g", "perPortions": 4 },
-    { "name": "Tofu (fest)", "amount": 300, "unit": "g", "perPortions": 4 },
-    { "name": "Gemüsebrühe", "amount": 1200, "unit": "ml", "perPortions": 4 },
-    { "name": "Pak-Choi", "amount": 2, "unit": "Stk", "perPortions": 4 },
-    { "name": "Karotten", "amount": 2, "unit": "Stk", "perPortions": 4 },
-    { "name": "Ingwer (frisch)", "amount": 20, "unit": "g", "perPortions": 4 },
-    { "name": "Knoblauchzehen", "amount": 2, "unit": "Zehen", "perPortions": 4 },
-    { "name": "Miso-Paste", "amount": 2, "unit": "EL", "perPortions": 4 },
-    { "name": "Sojasosse", "amount": 3, "unit": "EL", "perPortions": 4 },
-    { "name": "Sesamöl", "amount": 1, "unit": "EL", "perPortions": 4 },
-    { "name": "Frühlingszwiebeln", "amount": 3, "unit": "Stk", "perPortions": 4 },
-    { "name": "Sesam", "amount": 2, "unit": "EL", "perPortions": 4 }
+    {
+      "name": "Reisnudeln",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Tofu (fest)",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebrühe",
+      "amount": 1200,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Pak-Choi",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Karotten",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Ingwer (frisch)",
+      "amount": 20,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 2,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Miso-Paste",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Sojasosse",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Sesamöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Frühlingszwiebeln",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Sesam",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    }
   ],
   "weatherType": "kalt",
   "source": "Coop",
@@ -32,6 +92,22 @@
   ],
   "tips": "Miso-Paste nicht kochen – erst kurz vor dem Servieren einrühren, damit die Probiotika erhalten bleiben.",
   "imageUrl": null,
-  "tags": ["Vegan", "Asiatisch", "Mittagsgericht"],
-  "dietCategory": "vegan"
+  "tags": [
+    "Vegan",
+    "Asiatisch",
+    "Mittagsgericht"
+  ],
+  "dietCategory": "vegan",
+  "allergens": [
+    "gluten",
+    "sesam",
+    "soja"
+  ],
+  "nutrition": {
+    "kcal": 342,
+    "protein": 17.8,
+    "fat": 9.4,
+    "carbs": 46.2,
+    "fiber": 4.6
+  }
 }

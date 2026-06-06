@@ -4,16 +4,66 @@
   "category": "Vegetarische Hauptgerichte",
   "timeMinutes": 55,
   "ingredients": [
-    { "name": "Süsskartoffeln", "amount": 800, "unit": "g", "perPortions": 4 },
-    { "name": "Champignons", "amount": 450, "unit": "g", "perPortions": 4 },
-    { "name": "Schalotten", "amount": 2, "unit": "Stk", "perPortions": 4 },
-    { "name": "Knoblauchzehe", "amount": 1, "unit": "Zehe", "perPortions": 4 },
-    { "name": "Bratbutter", "amount": 2, "unit": "EL", "perPortions": 4 },
-    { "name": "Thymian (frisch)", "amount": 3, "unit": "Stk", "perPortions": 4 },
-    { "name": "Crème fraîche", "amount": 150, "unit": "g", "perPortions": 4 },
-    { "name": "Weissbrot (ohne Rinde, klein geschnitten)", "amount": 3, "unit": "Stk", "perPortions": 4 },
-    { "name": "Haselnüsse (grob gehackt, geröstet)", "amount": 30, "unit": "g", "perPortions": 4 },
-    { "name": "Salz und Pfeffer", "amount": 1, "unit": "Prise", "perPortions": 4 }
+    {
+      "name": "Süsskartoffeln",
+      "amount": 800,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Champignons",
+      "amount": 450,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Schalotten",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Bratbutter",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Thymian (frisch)",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Crème fraîche",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Weissbrot (ohne Rinde, klein geschnitten)",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Haselnüsse (grob gehackt, geröstet)",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz und Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
   ],
   "weatherType": "kalt",
   "source": "Swissmilk",
@@ -28,6 +78,24 @@
   ],
   "tips": "Gut als Hauptgericht mit einem grünen Salat oder als Beilage zu Fleisch.",
   "imageUrl": null,
-  "tags": ["Vegetarisch", "Ofengericht", "Herbst", "Winter", "Schweizer"],
-  "dietCategory": "vegetarian"
+  "tags": [
+    "Vegetarisch",
+    "Ofengericht",
+    "Herbst",
+    "Winter",
+    "Schweizer"
+  ],
+  "dietCategory": "vegetarian",
+  "allergens": [
+    "gluten",
+    "milch",
+    "schalenfruechte"
+  ],
+  "nutrition": {
+    "kcal": 468,
+    "protein": 11.2,
+    "fat": 24.6,
+    "carbs": 52.8,
+    "fiber": 8.7
+  }
 }

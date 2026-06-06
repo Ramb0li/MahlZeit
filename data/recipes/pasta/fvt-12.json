@@ -64,5 +64,16 @@
     "Mittagsgericht",
     "Frühling",
     "Sommer"
-  ]
+  ],
+  "allergens": [
+    "gluten",
+    "schalenfruechte"
+  ],
+  "nutrition": {
+    "kcal": 682,
+    "protein": 20.4,
+    "fat": 38.6,
+    "carbs": 63.8,
+    "fiber": 8.2
+  }
 }

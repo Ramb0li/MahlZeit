@@ -1,0 +1,40 @@
+{
+  "AppShell": {
+    "tabPlanner":  "Piano settimanale",
+    "tabShopping": "Spesa",
+    "tabPantry":   "Dispensa",
+    "tabRecipes":  "Ricette",
+    "tabSettings": "Impostazioni",
+    "logout":      "Disconnettersi",
+    "roleMember":  "Membro",
+    "roleOwner":   "Proprietario"
+  },
+  "Landing": {
+    "navLogin":       "Accedi",
+    "navStartFree":   "Inizia gratuitamente",
+    "navToPlanner":   "Al pianificatore",
+    "heroCta":        "Scopri di più",
+    "heroNote":       "Senza abbonamento obbligatorio · 🇨🇭 Made in Switzerland",
+    "kicker":         "Il tuo pianificatore di menu intelligente",
+    "statement1":     "Basta chiedersi",
+    "statement2":     "«Cosa cucino oggi?»",
+    "mobileCta":      "7 giorni gratuiti",
+    "mobileCtaNote":  "Nessuna carta di credito richiesta",
+    "planBuy":        "Acquista ora →",
+    "planSelect":     "Scegli →"
+  },
+  "NotFound": {
+    "title":       "Questa pagina non è nel menù.",
+    "description": "Forse la ricetta è stata rimossa, l'URL contiene un errore di battitura, o lo chef aveva una brutta giornata.",
+    "backHome":    "Torna alla pagina iniziale"
+  },
+  "LegalShell": {
+    "backHome": "Torna alla pagina iniziale"
+  },
+  "SiteFooter": {
+    "privacy": "Protezione dei dati",
+    "imprint": "Note legali",
+    "terms":   "Condizioni d'uso",
+    "contact": "Contatto"
+  }
+}

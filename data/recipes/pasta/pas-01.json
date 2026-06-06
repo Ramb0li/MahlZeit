@@ -65,5 +65,16 @@
     "Mittagsgericht",
     "Herbst",
     "Winter"
-  ]
+  ],
+  "allergens": [
+    "gluten",
+    "sellerie"
+  ],
+  "nutrition": {
+    "kcal": 485,
+    "protein": 22.8,
+    "fat": 8.9,
+    "carbs": 80.6,
+    "fiber": 12.4
+  }
 }

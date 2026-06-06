@@ -65,5 +65,16 @@
   "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fam-01-2--1780579209531.jpeg",
   "imageKochen": null,
   "tips": "",
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "allergens": [
+    "gluten",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 178,
+    "protein": 3.2,
+    "fat": 11.4,
+    "carbs": 15.8,
+    "fiber": 2.4
+  }
 }

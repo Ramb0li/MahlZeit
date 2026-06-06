@@ -55,5 +55,15 @@
     "Winter",
     "Frühling",
     "Ofengericht"
-  ]
+  ],
+  "allergens": [
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 512,
+    "protein": 22.3,
+    "fat": 20.8,
+    "carbs": 61.4,
+    "fiber": 7.2
+  }
 }

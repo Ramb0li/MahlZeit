@@ -89,11 +89,26 @@
     "Nudeln und Sauce in die Pfanne, alles vermengen. Tofu zugeben, kurz durchschwenken.",
     "Mit Erdnüssen, Koriander, Limette und grünen Frühlingszwiebelringen servieren."
   ],
-  "tips": "Für vegane Variante Eier weglassen und Sojasauce statt Fischsauce verwenden. Mise en place ist wichtig — alles vorbereiten bevor das Wokken beginnt.",
-  "imageUrl": null,
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/asi-03-1780783928840.jpg",
   "tags": [
     "Vegetarisch",
     "Mittagsgericht",
     "Asiatisch"
-  ]
+  ],
+  "allergens": [
+    "ei",
+    "erdnuesse",
+    "fisch",
+    "gluten",
+    "soja"
+  ],
+  "nutrition": {
+    "kcal": 628,
+    "protein": 30.2,
+    "fat": 24.8,
+    "carbs": 70.4,
+    "fiber": 5.6
+  },
+  "imageZutaten": null,
+  "imageKochen": null
 }

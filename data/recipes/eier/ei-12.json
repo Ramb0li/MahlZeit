@@ -4,20 +4,90 @@
   "category": "Vegetarische Hauptgerichte",
   "timeMinutes": 45,
   "ingredients": [
-    { "name": "Eier", "amount": 4, "unit": "Stk", "perPortions": 4 },
-    { "name": "Rote Peperoni", "amount": 1, "unit": "Stk", "perPortions": 4 },
-    { "name": "Gelbe Peperoni", "amount": 1, "unit": "Stk", "perPortions": 4 },
-    { "name": "Zwiebel", "amount": 1, "unit": "Stk", "perPortions": 4 },
-    { "name": "Knoblauchzehen", "amount": 2, "unit": "Zehen", "perPortions": 4 },
-    { "name": "Gehackte Tomaten (Dose)", "amount": 800, "unit": "g", "perPortions": 4 },
-    { "name": "Paprikapulver edelsüss", "amount": 1, "unit": "TL", "perPortions": 4 },
-    { "name": "Kreuzkümmel", "amount": 1, "unit": "TL", "perPortions": 4 },
-    { "name": "Cayennepfeffer", "amount": 1, "unit": "TL", "perPortions": 4 },
-    { "name": "Zimtstange", "amount": 1, "unit": "Stk", "perPortions": 4 },
-    { "name": "Feta (zerbröselt)", "amount": 100, "unit": "g", "perPortions": 4 },
-    { "name": "Koriander und Petersilie", "amount": 0.5, "unit": "Bund", "perPortions": 4 },
-    { "name": "Bratfett", "amount": 1, "unit": "EL", "perPortions": 4 },
-    { "name": "Salz und Pfeffer", "amount": 1, "unit": "Prise", "perPortions": 4 }
+    {
+      "name": "Eier",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Rote Peperoni",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Gelbe Peperoni",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 2,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Gehackte Tomaten (Dose)",
+      "amount": 800,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Paprikapulver edelsüss",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kreuzkümmel",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Cayennepfeffer",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Zimtstange",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Feta (zerbröselt)",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Koriander und Petersilie",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Bratfett",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz und Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
   ],
   "weatherType": "neutral",
   "source": "Swissmilk",
@@ -32,6 +102,21 @@
   ],
   "tips": "Schmeckt auch als Brunch. Die Sauce kann gut vorbereitet werden – Eier erst kurz vor dem Servieren hineinsetzen.",
   "imageUrl": null,
-  "tags": ["Vegetarisch", "Orientalisch", "Mittagsgericht"],
-  "dietCategory": "vegetarian"
+  "tags": [
+    "Vegetarisch",
+    "Orientalisch",
+    "Mittagsgericht"
+  ],
+  "dietCategory": "vegetarian",
+  "allergens": [
+    "ei",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 312,
+    "protein": 15.6,
+    "fat": 18.4,
+    "carbs": 20.3,
+    "fiber": 5.2
+  }
 }

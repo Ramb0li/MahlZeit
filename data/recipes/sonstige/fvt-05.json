@@ -86,5 +86,17 @@
   "imageUrl": null,
   "tags": [
     "Mittagsgericht"
-  ]
+  ],
+  "allergens": [
+    "gluten",
+    "milch",
+    "soja"
+  ],
+  "nutrition": {
+    "kcal": 448,
+    "protein": 18.2,
+    "fat": 14.8,
+    "carbs": 58.4,
+    "fiber": 11.3
+  }
 }

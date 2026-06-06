@@ -69,5 +69,16 @@
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fam-39-1780699369435.jpg",
   "imageZutaten": null,
-  "imageKochen": null
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 428,
+    "protein": 13.8,
+    "fat": 6.2,
+    "carbs": 78.6,
+    "fiber": 5.4
+  }
 }

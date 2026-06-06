@@ -49,5 +49,15 @@
   "imageUrl": null,
   "imageZutaten": null,
   "imageKochen": null,
-  "tips": ""
+  "tips": "",
+  "allergens": [
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 242,
+    "protein": 2.1,
+    "fat": 22.8,
+    "carbs": 6.4,
+    "fiber": 0.2
+  }
 }

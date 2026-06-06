@@ -73,5 +73,16 @@
   "tips": "",
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---spaghetti-mit-pfifferlingen-und-cherrytomaten-1--1780577497670.jpeg",
   "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---spaghetti-mit-pifferlingen-und-cherrytomaten-2--1780577575474.jpeg",
-  "imageKochen": null
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "schalenfruechte"
+  ],
+  "nutrition": {
+    "kcal": 468,
+    "protein": 16.8,
+    "fat": 12.4,
+    "carbs": 74.2,
+    "fiber": 10.5
+  }
 }

@@ -84,5 +84,16 @@
     "Frühling"
   ],
   "imageZutaten": null,
-  "imageKochen": null
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "sellerie"
+  ],
+  "nutrition": {
+    "kcal": 448,
+    "protein": 18.2,
+    "fat": 9.1,
+    "carbs": 72.8,
+    "fiber": 11.4
+  }
 }

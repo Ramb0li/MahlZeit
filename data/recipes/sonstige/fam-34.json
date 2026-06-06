@@ -4,9 +4,15 @@
   "category": "Vegetarische Hauptgerichte",
   "timeMinutes": 35,
   "tags": [
-    "Vegetarisch",
     "Vegan",
-    "Asiatisch"
+    "Asiatisch",
+    "Winter",
+    "Herbst",
+    "Sommer",
+    "Frühling",
+    "Kinderfreundlich",
+    "Abendgericht",
+    "Mittagsgericht"
   ],
   "weatherType": "neutral",
   "source": "Familien-Rezeptbuch",
@@ -118,8 +124,21 @@
     "Reisnudeln nach Anleitung kochen, mit Tofu und Gemüse mischen.",
     "Mit Sesam, Erdnüssen und Koriander garnieren."
   ],
-  "imageUrl": null,
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/asi-03-1780785826281.jpg",
   "imageZutaten": null,
   "imageKochen": null,
-  "tips": ""
+  "allergens": [
+    "erdnuesse",
+    "gluten",
+    "milch",
+    "sesam",
+    "soja"
+  ],
+  "nutrition": {
+    "kcal": 485,
+    "protein": 16.8,
+    "fat": 15.3,
+    "carbs": 70.2,
+    "fiber": 5.6
+  }
 }

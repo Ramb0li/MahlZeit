@@ -44,5 +44,15 @@
   "imageUrl": null,
   "tags": [
     "Herbst"
-  ]
+  ],
+  "allergens": [
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 482,
+    "protein": 13.8,
+    "fat": 18.2,
+    "carbs": 64.3,
+    "fiber": 3.2
+  }
 }

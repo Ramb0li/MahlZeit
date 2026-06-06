@@ -4,10 +4,30 @@
   "category": "Kartoffelgerichte",
   "timeMinutes": 50,
   "ingredients": [
-    { "name": "Festkochende Kartoffeln", "amount": 1200, "unit": "g", "perPortions": 4 },
-    { "name": "Öl", "amount": 4, "unit": "TL", "perPortions": 4 },
-    { "name": "Salz", "amount": 2, "unit": "TL", "perPortions": 4 },
-    { "name": "Paprikapulver (optional)", "amount": 1, "unit": "TL", "perPortions": 4 }
+    {
+      "name": "Festkochende Kartoffeln",
+      "amount": 1.2,
+      "unit": "kg",
+      "perPortions": 4
+    },
+    {
+      "name": "Öl",
+      "amount": 4,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Paprikapulver (optional)",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    }
   ],
   "weatherType": "neutral",
   "source": "Kochbar",
@@ -20,8 +40,27 @@
     "Bei 200 °C Heissluft auf der mittleren Schiene ca. 20–25 Min. backen bis goldbraun.",
     "In den letzten 5–10 Minuten die Ofentür einen Spalt öffnen, damit Feuchtigkeit entweicht."
   ],
-  "tips": "Kartoffeln gut trocken tupfen für extra Knusprigkeit. Nicht zu viele auf einmal aufs Blech – sie müssen Abstand haben.",
-  "imageUrl": null,
-  "tags": ["Vegan", "Kinderfreundlich"],
-  "dietCategory": "vegan"
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/kar-01-1780785412795.jpg",
+  "tags": [
+    "Vegan",
+    "Kinderfreundlich",
+    "Vegetarisch",
+    "Frühling",
+    "Sommer",
+    "Herbst",
+    "Winter",
+    "Mittagsgericht",
+    "Abendgericht",
+    "Ofengericht"
+  ],
+  "allergens": [],
+  "nutrition": {
+    "kcal": 312,
+    "protein": 5.4,
+    "fat": 5.8,
+    "carbs": 59.1,
+    "fiber": 5.1
+  },
+  "imageZutaten": null,
+  "imageKochen": null
 }

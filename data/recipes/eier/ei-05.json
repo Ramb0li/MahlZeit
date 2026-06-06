@@ -51,5 +51,16 @@
   "tags": [
     "Herbst",
     "Winter"
-  ]
+  ],
+  "allergens": [
+    "ei",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 268,
+    "protein": 15.9,
+    "fat": 21.3,
+    "carbs": 3.8,
+    "fiber": 1.2
+  }
 }

@@ -73,8 +73,17 @@
     "Mit Bouillon ablöschen, 10–15 Min. köcheln.",
     "Rahm dazugeben, würzen."
   ],
-  "imageUrl": null,
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fam-49-1780778064357.jpg",
   "imageZutaten": null,
   "imageKochen": null,
-  "tips": ""
+  "allergens": [
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 158,
+    "protein": 3.2,
+    "fat": 9.8,
+    "carbs": 14.2,
+    "fiber": 3.1
+  }
 }

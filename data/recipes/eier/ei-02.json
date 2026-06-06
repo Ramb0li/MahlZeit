@@ -1,18 +1,18 @@
 {
   "id": "ei-02",
-  "name": "Rahmspinat, Salzkartoffeln, Spiegeleier",
+  "name": "Rahmspinat, Bratkartoffeln, Spiegeleier",
   "category": "Vegetarische Hauptgerichte",
   "timeMinutes": 35,
   "ingredients": [
     {
       "name": "Spinat (tiefgekühlt)",
-      "amount": 400,
+      "amount": 500,
       "unit": "g",
       "perPortions": 4
     },
     {
       "name": "Rahm",
-      "amount": 100,
+      "amount": 150,
       "unit": "ml",
       "perPortions": 4
     },
@@ -24,7 +24,7 @@
     },
     {
       "name": "Eier",
-      "amount": 4,
+      "amount": 2,
       "unit": "Stk",
       "perPortions": 4
     },
@@ -36,14 +36,14 @@
     },
     {
       "name": "Knoblauch",
-      "amount": 2,
+      "amount": 1,
       "unit": "Zehen",
       "perPortions": 4
     },
     {
-      "name": "Butter",
-      "amount": 30,
-      "unit": "g",
+      "name": "Olivenöl",
+      "amount": 3,
+      "unit": "EL",
       "perPortions": 4
     },
     {
@@ -51,17 +51,63 @@
       "amount": 1,
       "unit": "Prise",
       "perPortions": 4
+    },
+    {
+      "name": "Chiliflocken",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
     }
   ],
   "weatherType": "kalt",
   "source": "Rezept von Cuiselin",
-  "basePortions": 4,
-  "description": "Herzhafter Klassiker für kalte Abende.",
-  "steps": [],
-  "tips": "",
-  "imageUrl": null,
+  "basePortions": 2,
+  "description": "Es gibt Gerichte, die erinnern an die Kindheit. Rahmspinat ist dabei auf einer der ersten Plätze meiner Kindheitserinnerungsessen. Ein herzhafter Klassiker für kalte Abende.",
+  "steps": [
+    "1. Den tiefgekühlten Spinat auftauen lassen.",
+    "2. Kartoffeln waschen, abtrocknen, schälen und in mundgerechte Würfel schneiden.",
+    "3. Die Kartoffelwürfel mit 1 EL Olivenöl in einer Pfanne mit Deckel bei mittlerer Hitze etwa 30 Minuten dünsten. Mit Salz und Pfeffer würzen. Hin und wieder durchrühren.",
+    "4. Anschliessend den Deckel abnehmen, die Hitze leicht erhöhen und die Kartoffeln kurz braten, bis sie eine schöne Kruste haben.",
+    "5. In der Zwischenzeit die Zwiebeln und Knoblauch schälen und in feine Würfel schneiden. Den Knoblauch schälen und in feine Würfel schneiden.",
+    "6. Die Zwiebeln in 1 EL Olivenöl in einem Topf bei mittlerer Hitze glasig dünsten. Knoblauch hinzugeben und kurz mit dünsten.",
+    "7. Spinat hinzugeben und einmal durchrühren. Mit Salz, Pfeffer und Chiliflocken würzen.",
+    "8. Sobald der Spinat in sich zusammengefallen ist, den Rahm hinzugeben. Den Rahmspinat bei kleiner Hitze leicht köcheln lassen und ab und zu durchrühren.",
+    "8. In einer Pfanne mit 1 EL Olivenöl die Eier braten. Je nach Geschmack mit festem Eigelb oder flüssigem. 9. Mit Salz und Pfeffer würzen.",
+    "10. Gebratene Kartoffeln mit Rahmspinat und Spiegel auf Teller geben und geniessen."
+  ],
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/rahmspinat-bratkartofeln-1780785972477.jpg",
   "tags": [
     "Herbst",
-    "Winter"
-  ]
+    "Winter",
+    "Kinderfreundlich",
+    "Vegetarisch",
+    "Mittagsgericht",
+    "Abendgericht",
+    "Schweizer"
+  ],
+  "allergens": [
+    "ei",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 371,
+    "protein": 14.2,
+    "fat": 18.9,
+    "carbs": 35.8,
+    "fiber": 5.1
+  },
+  "imageZutaten": null,
+  "imageKochen": null
 }

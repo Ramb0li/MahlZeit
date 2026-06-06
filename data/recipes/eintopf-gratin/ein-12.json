@@ -4,18 +4,78 @@
   "category": "Suppen, Eintöpfe & Currys",
   "timeMinutes": 30,
   "ingredients": [
-    { "name": "Hokkaido-Kürbis", "amount": 600, "unit": "g", "perPortions": 4 },
-    { "name": "Kichererbsen (Dose, abgetropft)", "amount": 265, "unit": "g", "perPortions": 4 },
-    { "name": "Rote Zwiebel", "amount": 1, "unit": "Stk", "perPortions": 4 },
-    { "name": "Knoblauchzehen", "amount": 2, "unit": "Zehen", "perPortions": 4 },
-    { "name": "Ingwer (frisch)", "amount": 15, "unit": "g", "perPortions": 4 },
-    { "name": "Gelbes Currypulver", "amount": 2, "unit": "EL", "perPortions": 4 },
-    { "name": "Kokosmilch (Dose)", "amount": 400, "unit": "ml", "perPortions": 4 },
-    { "name": "Babyspinat", "amount": 150, "unit": "g", "perPortions": 4 },
-    { "name": "Zitronensaft", "amount": 1, "unit": "EL", "perPortions": 4 },
-    { "name": "Kokosnussöl", "amount": 1, "unit": "EL", "perPortions": 4 },
-    { "name": "Cashewnüsse", "amount": 4, "unit": "EL", "perPortions": 4 },
-    { "name": "Sesam", "amount": 2, "unit": "EL", "perPortions": 4 }
+    {
+      "name": "Hokkaido-Kürbis",
+      "amount": 600,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Kichererbsen (Dose, abgetropft)",
+      "amount": 265,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Rote Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 2,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Ingwer (frisch)",
+      "amount": 15,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Gelbes Currypulver",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kokosmilch (Dose)",
+      "amount": 400,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Babyspinat",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kokosnussöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Cashewnüsse",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Sesam",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    }
   ],
   "weatherType": "kalt",
   "source": "Bianca Zapatka",
@@ -29,8 +89,24 @@
     "Spinat und Kichererbsen hinzufügen, weitere 5 Min. köcheln.",
     "Mit Salz, Chili und Zitronensaft abschmecken. Mit Reis, Cashews und Sesam servieren."
   ],
-  "tips": "Hokkaido-Kürbis muss nicht geschält werden – die Schale wird beim Kochen weich.",
-  "imageUrl": null,
-  "tags": ["Vegan", "Mealprep-geeignet", "Herbst"],
-  "dietCategory": "vegan"
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ein-12-1780778294972.jpg",
+  "tags": [
+    "Vegan",
+    "Mealprep-geeignet",
+    "Herbst"
+  ],
+  "allergens": [
+    "milch",
+    "schalenfruechte",
+    "sesam"
+  ],
+  "nutrition": {
+    "kcal": 424,
+    "protein": 13.2,
+    "fat": 22.6,
+    "carbs": 43.8,
+    "fiber": 10.8
+  },
+  "imageZutaten": null,
+  "imageKochen": null
 }

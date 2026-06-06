@@ -18,26 +18,32 @@
     "ingredients": [
       {
         "name": "Eier",
-        "amount": 3,
+        "amount": 10,
         "unit": "Stk",
         "perPortions": 4
       },
       {
-        "name": "Butter",
-        "amount": 20,
-        "unit": "g",
+        "name": "Rahm",
+        "amount": 4,
+        "unit": "EL",
         "perPortions": 4
       },
       {
         "name": "Salz",
-        "amount": 1,
+        "amount": 2,
         "unit": "Prise",
         "perPortions": 4
       },
       {
         "name": "Pfeffer",
-        "amount": 1,
+        "amount": 2,
         "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Ghee",
+        "amount": 1,
+        "unit": "EL",
         "perPortions": 4
       }
     ],
@@ -47,23 +53,42 @@
     "description": "Klassisches Rührei, schnell und einfach.",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-01-1780502993941.jpg",
     "imageZutaten": null,
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "ei",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 161,
+      "protein": 11.8,
+      "fat": 12.4,
+      "carbs": 0.6,
+      "fiber": 0
+    },
+    "steps": [
+      "1. Verquirle die Eier mit dem Rahm und zwei Prisen Salz in einer Schüssel mit einer Gabel bis eine gleichmässige Masse entsteht.",
+      "2. Bei Teflonpfanne Ghee (Butterschmalz) in Pfanne geben und erhitzen",
+      "(in Edelstahlpfanne erhitze diese bis der Leidenfrost-Effekt entsteht, dannach Ghee hinzugeben)",
+      "3. Wenn Ghee geschmolzen ist (! nicht braun werden lassen) Eimasse hinzugeben",
+      "4. Lass die Eimasse kurz anstocken. Schiebe dann mit einem Pfannenwender die Masse vorsichtig vom Pfannenrand in die Mitte. Wiederhole den Vorgang bis die Eimasse cremig stockt.",
+      "5. Nimm die Pfanne vom Herd bevor die Eimasse zu trocken wird. Nach belieben würzen (Bei Edelstahlpfanne Hitze nach dem ersten Stocken reduzieren bzw. Herdplatte abschalten. Das Rührei gart auf dem warmen Pfannenboden nach)"
+    ]
   },
   {
     "id": "ei-02",
-    "name": "Rahmspinat, Salzkartoffeln, Spiegeleier",
+    "name": "Rahmspinat, Bratkartoffeln, Spiegeleier",
     "category": "Vegetarische Hauptgerichte",
     "timeMinutes": 35,
     "ingredients": [
       {
         "name": "Spinat (tiefgekühlt)",
-        "amount": 400,
+        "amount": 500,
         "unit": "g",
         "perPortions": 4
       },
       {
         "name": "Rahm",
-        "amount": 100,
+        "amount": 150,
         "unit": "ml",
         "perPortions": 4
       },
@@ -75,7 +100,7 @@
       },
       {
         "name": "Eier",
-        "amount": 4,
+        "amount": 2,
         "unit": "Stk",
         "perPortions": 4
       },
@@ -87,14 +112,14 @@
       },
       {
         "name": "Knoblauch",
-        "amount": 2,
+        "amount": 1,
         "unit": "Zehen",
         "perPortions": 4
       },
       {
-        "name": "Butter",
-        "amount": 30,
-        "unit": "g",
+        "name": "Olivenöl",
+        "amount": 3,
+        "unit": "EL",
         "perPortions": 4
       },
       {
@@ -102,19 +127,65 @@
         "amount": 1,
         "unit": "Prise",
         "perPortions": 4
+      },
+      {
+        "name": "Chiliflocken",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 2
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 2
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 2
       }
     ],
     "weatherType": "kalt",
     "source": "Rezept von Cuiselin",
-    "basePortions": 4,
-    "description": "Herzhafter Klassiker für kalte Abende.",
-    "steps": [],
-    "tips": "",
-    "imageUrl": null,
+    "basePortions": 2,
+    "description": "Es gibt Gerichte, die erinnern an die Kindheit. Rahmspinat ist dabei auf einer der ersten Plätze meiner Kindheitserinnerungsessen. Ein herzhafter Klassiker für kalte Abende.",
+    "steps": [
+      "1. Den tiefgekühlten Spinat auftauen lassen.",
+      "2. Kartoffeln waschen, abtrocknen, schälen und in mundgerechte Würfel schneiden.",
+      "3. Die Kartoffelwürfel mit 1 EL Olivenöl in einer Pfanne mit Deckel bei mittlerer Hitze etwa 30 Minuten dünsten. Mit Salz und Pfeffer würzen. Hin und wieder durchrühren.",
+      "4. Anschliessend den Deckel abnehmen, die Hitze leicht erhöhen und die Kartoffeln kurz braten, bis sie eine schöne Kruste haben.",
+      "5. In der Zwischenzeit die Zwiebeln und Knoblauch schälen und in feine Würfel schneiden. Den Knoblauch schälen und in feine Würfel schneiden.",
+      "6. Die Zwiebeln in 1 EL Olivenöl in einem Topf bei mittlerer Hitze glasig dünsten. Knoblauch hinzugeben und kurz mit dünsten.",
+      "7. Spinat hinzugeben und einmal durchrühren. Mit Salz, Pfeffer und Chiliflocken würzen.",
+      "8. Sobald der Spinat in sich zusammengefallen ist, den Rahm hinzugeben. Den Rahmspinat bei kleiner Hitze leicht köcheln lassen und ab und zu durchrühren.",
+      "8. In einer Pfanne mit 1 EL Olivenöl die Eier braten. Je nach Geschmack mit festem Eigelb oder flüssigem. 9. Mit Salz und Pfeffer würzen.",
+      "10. Gebratene Kartoffeln mit Rahmspinat und Spiegel auf Teller geben und geniessen."
+    ],
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/rahmspinat-bratkartofeln-1780785972477.jpg",
     "tags": [
       "Herbst",
-      "Winter"
-    ]
+      "Winter",
+      "Kinderfreundlich",
+      "Vegetarisch",
+      "Mittagsgericht",
+      "Abendgericht",
+      "Schweizer"
+    ],
+    "allergens": [
+      "ei",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 371,
+      "protein": 14.2,
+      "fat": 18.9,
+      "carbs": 35.8,
+      "fiber": 5.1
+    },
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "ei-03",
@@ -168,7 +239,19 @@
     "imageUrl": null,
     "tags": [
       "Mittagsgericht"
-    ]
+    ],
+    "allergens": [
+      "ei",
+      "gluten",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 451,
+      "protein": 12.8,
+      "fat": 24.7,
+      "carbs": 44.2,
+      "fiber": 6.8
+    }
   },
   {
     "id": "ei-04",
@@ -222,7 +305,17 @@
       "Mittagsgericht"
     ],
     "imageZutaten": null,
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "ei"
+    ],
+    "nutrition": {
+      "kcal": 196,
+      "protein": 12.4,
+      "fat": 13.8,
+      "carbs": 6.2,
+      "fiber": 2.3
+    }
   },
   {
     "id": "ei-05",
@@ -277,7 +370,18 @@
     "tags": [
       "Herbst",
       "Winter"
-    ]
+    ],
+    "allergens": [
+      "ei",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 268,
+      "protein": 15.9,
+      "fat": 21.3,
+      "carbs": 3.8,
+      "fiber": 1.2
+    }
   },
   {
     "id": "ei-06",
@@ -332,7 +436,19 @@
       "Winter"
     ],
     "imageZutaten": null,
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "ei",
+      "milch",
+      "senf"
+    ],
+    "nutrition": {
+      "kcal": 408,
+      "protein": 23.8,
+      "fat": 31.7,
+      "carbs": 7.4,
+      "fiber": 2.8
+    }
   },
   {
     "id": "ei-07",
@@ -387,7 +503,18 @@
     "tags": [
       "Herbst",
       "Winter"
-    ]
+    ],
+    "allergens": [
+      "ei",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 412,
+      "protein": 18.3,
+      "fat": 16.8,
+      "carbs": 46.2,
+      "fiber": 4.5
+    }
   },
   {
     "id": "ei-08",
@@ -480,7 +607,18 @@
       "Vegetarisch"
     ],
     "imageZutaten": null,
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "ei",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 398,
+      "protein": 22.4,
+      "fat": 27.8,
+      "carbs": 15.3,
+      "fiber": 4.2
+    }
   },
   {
     "id": "ei-09",
@@ -542,7 +680,18 @@
     "tips": "",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---blueberry-smoothie-bowl-2--1780577059410.jpeg",
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---blueberry-smoothie-bowl-3--1780577067152.jpeg",
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "milch",
+      "schalenfruechte"
+    ],
+    "nutrition": {
+      "kcal": 285,
+      "protein": 8.4,
+      "fat": 10.2,
+      "carbs": 39.8,
+      "fiber": 8.6
+    }
   },
   {
     "id": "ei-10",
@@ -610,7 +759,18 @@
     "tips": "",
     "imageUrl": null,
     "imageZutaten": null,
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "milch",
+      "schalenfruechte"
+    ],
+    "nutrition": {
+      "kcal": 352,
+      "protein": 9.3,
+      "fat": 12.8,
+      "carbs": 52.4,
+      "fiber": 9.2
+    }
   },
   {
     "id": "ei-11",
@@ -711,7 +871,17 @@
     "tips": "Mit Kokosjogurt, pflanzlicher Milch und saisonalen Früchten servieren.",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---granola-1--1780577321739.jpeg",
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---granola-2--1780577355124.jpeg",
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "schalenfruechte"
+    ],
+    "nutrition": {
+      "kcal": 562,
+      "protein": 14.8,
+      "fat": 38.2,
+      "carbs": 42.1,
+      "fiber": 8.3
+    }
   },
   {
     "id": "ei-12",
@@ -822,7 +992,18 @@
       "Orientalisch",
       "Mittagsgericht"
     ],
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "allergens": [
+      "ei",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 312,
+      "protein": 15.6,
+      "fat": 18.4,
+      "carbs": 20.3,
+      "fiber": 5.2
+    }
   },
   {
     "id": "ei-13",
@@ -894,14 +1075,30 @@
       "Smoothie gleichmässig in vier Bowls verteilen.",
       "Mit Beeren (Erdbeerscheiben, Himbeeren, Johannisbeeren) und Müesli garnieren."
     ],
-    "imageUrl": "blob:https://mahlzeit.o-v-k.ch/7e4cf48d-0f11-4029-9d13-a7c52054da99",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-13-1780786326142.jpg",
     "tags": [
       "Vegan",
       "Sommer",
-      "Frühling"
+      "Frühling",
+      "Kinderfreundlich",
+      "Vegetarisch",
+      "Herbst",
+      "Winter"
     ],
     "imageZutaten": null,
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "ei",
+      "milch",
+      "schalenfruechte"
+    ],
+    "nutrition": {
+      "kcal": 358,
+      "protein": 7.2,
+      "fat": 9.8,
+      "carbs": 63.4,
+      "fiber": 10.5
+    }
   },
   {
     "id": "ei-14",
@@ -970,13 +1167,30 @@
       "Backen bis Blasen entstehen, dann wenden und goldbraun fertigbacken.",
       "Mit Ahornsirup und Früchten servieren."
     ],
-    "imageUrl": "blob:https://mahlzeit.o-v-k.ch/a4e9612a-cb72-4486-9918-1d5eb8a20177",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-14-1780786366445.jpg",
     "tags": [
       "Vegan",
-      "Kinderfreundlich"
+      "Kinderfreundlich",
+      "Frühling",
+      "Sommer",
+      "Herbst",
+      "Winter",
+      "Vegetarisch"
     ],
     "imageZutaten": null,
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "gluten",
+      "milch",
+      "schalenfruechte"
+    ],
+    "nutrition": {
+      "kcal": 368,
+      "protein": 7.4,
+      "fat": 3.2,
+      "carbs": 78.6,
+      "fiber": 2.8
+    }
   },
   {
     "id": "ei-15",
@@ -1051,7 +1265,19 @@
       "Kinderfreundlich"
     ],
     "imageZutaten": null,
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "ei",
+      "gluten",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 342,
+      "protein": 11.2,
+      "fat": 10.8,
+      "carbs": 50.3,
+      "fiber": 1.8
+    }
   },
   {
     "id": "ei-16",
@@ -1114,7 +1340,19 @@
       "Kinderfreundlich"
     ],
     "imageZutaten": null,
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "gluten",
+      "milch",
+      "schalenfruechte"
+    ],
+    "nutrition": {
+      "kcal": 198,
+      "protein": 5.1,
+      "fat": 3.2,
+      "carbs": 39.8,
+      "fiber": 5.4
+    }
   },
   {
     "id": "fam-29",
@@ -1209,7 +1447,20 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "gluten",
+      "milch",
+      "soja",
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 682,
+      "protein": 42.5,
+      "fat": 28.3,
+      "carbs": 58.4,
+      "fiber": 4.2
+    }
   },
   {
     "id": "fam-30",
@@ -1316,7 +1567,18 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "gluten",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 628,
+      "protein": 40.8,
+      "fat": 25.6,
+      "carbs": 54.2,
+      "fiber": 6.8
+    }
   },
   {
     "id": "fam-38",
@@ -1398,7 +1660,19 @@
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fam-38-1780699276557.jpg",
     "imageZutaten": null,
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "ei",
+      "gluten",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 748,
+      "protein": 35.2,
+      "fat": 38.4,
+      "carbs": 61.5,
+      "fiber": 2.8
+    }
   },
   {
     "id": "fam-39",
@@ -1471,7 +1745,18 @@
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fam-39-1780699369435.jpg",
     "imageZutaten": null,
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "gluten",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 428,
+      "protein": 13.8,
+      "fat": 6.2,
+      "carbs": 78.6,
+      "fiber": 5.4
+    }
   },
   {
     "id": "fam-50",
@@ -1573,7 +1858,18 @@
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fam-50-1780699402158.jpg",
     "imageZutaten": null,
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "milch",
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 672,
+      "protein": 15.8,
+      "fat": 44.2,
+      "carbs": 42.3,
+      "fiber": 2.8
+    }
   },
   {
     "id": "fam-55",
@@ -1651,7 +1947,18 @@
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fam-55-1780699429979.jpg",
     "imageZutaten": null,
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "milch",
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 748,
+      "protein": 22.4,
+      "fat": 28.6,
+      "carbs": 88.5,
+      "fiber": 3.2
+    }
   },
   {
     "id": "fvt-03",
@@ -1739,7 +2046,18 @@
       "Frühling"
     ],
     "imageZutaten": null,
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "gluten",
+      "sellerie"
+    ],
+    "nutrition": {
+      "kcal": 448,
+      "protein": 18.2,
+      "fat": 9.1,
+      "carbs": 72.8,
+      "fiber": 11.4
+    }
   },
   {
     "id": "fvt-04",
@@ -1820,7 +2138,19 @@
       "Herbst",
       "Winter",
       "Frühling"
-    ]
+    ],
+    "allergens": [
+      "gluten",
+      "schalenfruechte",
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 524,
+      "protein": 20.3,
+      "fat": 18.7,
+      "carbs": 68.2,
+      "fiber": 13.6
+    }
   },
   {
     "id": "fvt-06",
@@ -1878,7 +2208,17 @@
     "steps": [],
     "tips": "",
     "imageUrl": null,
-    "tags": []
+    "tags": [],
+    "allergens": [
+      "gluten"
+    ],
+    "nutrition": {
+      "kcal": 382,
+      "protein": 12.8,
+      "fat": 7.4,
+      "carbs": 68.5,
+      "fiber": 6.9
+    }
   },
   {
     "id": "fvt-09",
@@ -1976,7 +2316,20 @@
       "Vegan",
       "Herbst",
       "Winter"
-    ]
+    ],
+    "allergens": [
+      "gluten",
+      "milch",
+      "schalenfruechte",
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 486,
+      "protein": 19.6,
+      "fat": 21.3,
+      "carbs": 54.2,
+      "fiber": 6.8
+    }
   },
   {
     "id": "fvt-12",
@@ -2044,7 +2397,18 @@
       "Mittagsgericht",
       "Frühling",
       "Sommer"
-    ]
+    ],
+    "allergens": [
+      "gluten",
+      "schalenfruechte"
+    ],
+    "nutrition": {
+      "kcal": 682,
+      "protein": 20.4,
+      "fat": 38.6,
+      "carbs": 63.8,
+      "fiber": 8.2
+    }
   },
   {
     "id": "ocr-04",
@@ -2128,7 +2492,18 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "sellerie",
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 248,
+      "protein": 21.5,
+      "fat": 9.8,
+      "carbs": 16.2,
+      "fiber": 3.8
+    }
   },
   {
     "id": "ocr-07",
@@ -2203,7 +2578,19 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "fisch",
+      "gluten",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 448,
+      "protein": 18.7,
+      "fat": 7.2,
+      "carbs": 75.4,
+      "fiber": 11.3
+    }
   },
   {
     "id": "pas-01",
@@ -2272,7 +2659,18 @@
       "Mittagsgericht",
       "Herbst",
       "Winter"
-    ]
+    ],
+    "allergens": [
+      "gluten",
+      "sellerie"
+    ],
+    "nutrition": {
+      "kcal": 485,
+      "protein": 22.8,
+      "fat": 8.9,
+      "carbs": 80.6,
+      "fiber": 12.4
+    }
   },
   {
     "id": "pas-02",
@@ -2330,7 +2728,18 @@
       "Ofengericht"
     ],
     "imageZutaten": null,
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "gluten",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 562,
+      "protein": 24.3,
+      "fat": 16.8,
+      "carbs": 74.2,
+      "fiber": 8.9
+    }
   },
   {
     "id": "pas-03",
@@ -2407,7 +2816,18 @@
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/pas-03-1780699620075.jpg",
     "imageZutaten": null,
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "gluten",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 438,
+      "protein": 21.7,
+      "fat": 22.4,
+      "carbs": 38.6,
+      "fiber": 4.2
+    }
   },
   {
     "id": "pas-04",
@@ -2472,7 +2892,18 @@
       "Sommer",
       "Vegan"
     ],
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "allergens": [
+      "gluten",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 892,
+      "protein": 23.8,
+      "fat": 54.7,
+      "carbs": 76.3,
+      "fiber": 11.2
+    }
   },
   {
     "id": "pas-05",
@@ -2528,7 +2959,17 @@
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/pas-05-1780699648000.jpg",
     "imageZutaten": null,
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "gluten"
+    ],
+    "nutrition": {
+      "kcal": 392,
+      "protein": 13.2,
+      "fat": 2.1,
+      "carbs": 81.4,
+      "fiber": 6.8
+    }
   },
   {
     "id": "pas-06",
@@ -2583,7 +3024,18 @@
       "Winter"
     ],
     "imageZutaten": null,
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "gluten",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 458,
+      "protein": 13.6,
+      "fat": 16.9,
+      "carbs": 63.2,
+      "fiber": 4.3
+    }
   },
   {
     "id": "pas-07",
@@ -2660,7 +3112,17 @@
     "tips": "",
     "imageUrl": null,
     "imageZutaten": null,
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 1247,
+      "protein": 42.8,
+      "fat": 81.3,
+      "carbs": 78.6,
+      "fiber": 4.5
+    }
   },
   {
     "id": "pas-08",
@@ -2710,7 +3172,18 @@
       "Mealprep-geeignet",
       "Mittagsgericht",
       "Ofengericht"
-    ]
+    ],
+    "allergens": [
+      "gluten",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 523,
+      "protein": 20.4,
+      "fat": 21.7,
+      "carbs": 63.8,
+      "fiber": 5.6
+    }
   },
   {
     "id": "pas-09",
@@ -2769,7 +3242,17 @@
       "Winter",
       "Frühling",
       "Ofengericht"
-    ]
+    ],
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 512,
+      "protein": 22.3,
+      "fat": 20.8,
+      "carbs": 61.4,
+      "fiber": 7.2
+    }
   },
   {
     "id": "pas-10",
@@ -2825,7 +3308,18 @@
       "Mittagsgericht",
       "Herbst",
       "Winter"
-    ]
+    ],
+    "allergens": [
+      "gluten",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 442,
+      "protein": 13.8,
+      "fat": 14.2,
+      "carbs": 66.7,
+      "fiber": 5.1
+    }
   },
   {
     "id": "pas-11",
@@ -2877,7 +3371,17 @@
       "Herbst",
       "Winter",
       "Ofengericht"
-    ]
+    ],
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 468,
+      "protein": 18.6,
+      "fat": 15.3,
+      "carbs": 63.2,
+      "fiber": 4.3
+    }
   },
   {
     "id": "pas-12",
@@ -2925,7 +3429,17 @@
     "imageUrl": null,
     "tags": [
       "Herbst"
-    ]
+    ],
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 482,
+      "protein": 13.8,
+      "fat": 18.2,
+      "carbs": 64.3,
+      "fiber": 3.2
+    }
   },
   {
     "id": "pas-13",
@@ -3000,7 +3514,17 @@
       "Mittagsgericht",
       "Frühling",
       "Sommer"
-    ]
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "nutrition": {
+      "kcal": 428,
+      "protein": 10.2,
+      "fat": 18.5,
+      "carbs": 55.8,
+      "fiber": 3.1
+    }
   },
   {
     "id": "pas-14",
@@ -3089,7 +3613,17 @@
     "tips": "",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fregola-sarda-1--1780577458863.jpeg",
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fregola-sarda-2--1780577468333.jpeg",
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 385,
+      "protein": 12.4,
+      "fat": 6.8,
+      "carbs": 68.2,
+      "fiber": 8.5
+    }
   },
   {
     "id": "pas-15",
@@ -3166,7 +3700,18 @@
     "tips": "",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---spaghetti-mit-pfifferlingen-und-cherrytomaten-1--1780577497670.jpeg",
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---spaghetti-mit-pifferlingen-und-cherrytomaten-2--1780577575474.jpeg",
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "gluten",
+      "schalenfruechte"
+    ],
+    "nutrition": {
+      "kcal": 468,
+      "protein": 16.8,
+      "fat": 12.4,
+      "carbs": 74.2,
+      "fiber": 10.5
+    }
   },
   {
     "id": "pas-16",
@@ -3296,7 +3841,18 @@
       "Mealprep-geeignet",
       "Italienisch"
     ],
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "allergens": [
+      "gluten",
+      "sellerie"
+    ],
+    "nutrition": {
+      "kcal": 542,
+      "protein": 21.3,
+      "fat": 16.8,
+      "carbs": 76.4,
+      "fiber": 11.2
+    }
   },
   {
     "id": "pas-17",
@@ -3402,7 +3958,17 @@
       "Mealprep-geeignet",
       "Italienisch"
     ],
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "allergens": [
+      "gluten"
+    ],
+    "nutrition": {
+      "kcal": 518,
+      "protein": 24.6,
+      "fat": 7.2,
+      "carbs": 88.5,
+      "fiber": 14.3
+    }
   },
   {
     "id": "pas-18",
@@ -3496,7 +4062,18 @@
       "Schweizer",
       "Herbst"
     ],
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "allergens": [
+      "milch",
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 445,
+      "protein": 14.2,
+      "fat": 16.5,
+      "carbs": 58.7,
+      "fiber": 6.8
+    }
   },
   {
     "id": "fam-56",
@@ -3564,7 +4141,15 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [],
+    "nutrition": {
+      "kcal": 512,
+      "protein": 15.8,
+      "fat": 12.4,
+      "carbs": 82.5,
+      "fiber": 2.8
+    }
   },
   {
     "id": "fvt-10",
@@ -3671,7 +4256,17 @@
       "Herbst",
       "Winter",
       "Frühling"
-    ]
+    ],
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 485,
+      "protein": 18.7,
+      "fat": 14.2,
+      "carbs": 68.3,
+      "fiber": 12.5
+    }
   },
   {
     "id": "ocr-09",
@@ -3751,7 +4346,19 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "gluten",
+      "milch",
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 468,
+      "protein": 21.5,
+      "fat": 11.8,
+      "carbs": 64.2,
+      "fiber": 9.3
+    }
   },
   {
     "id": "rei-01",
@@ -3822,7 +4429,18 @@
       "Vegan"
     ],
     "dietCategory": "vegan",
-    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---rei-01-2--1780577648794.jpeg"
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---rei-01-2--1780577648794.jpeg",
+    "allergens": [
+      "milch",
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 492,
+      "protein": 10.2,
+      "fat": 13.8,
+      "carbs": 73.6,
+      "fiber": 3.8
+    }
   },
   {
     "id": "rei-02",
@@ -3877,7 +4495,17 @@
     "tags": [
       "Mealprep-geeignet",
       "Ofengericht"
-    ]
+    ],
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 468,
+      "protein": 14.3,
+      "fat": 16.2,
+      "carbs": 65.4,
+      "fiber": 5.2
+    }
   },
   {
     "id": "rei-03",
@@ -3945,7 +4573,17 @@
       "Mealprep-geeignet",
       "Mittagsgericht",
       "Asiatisch"
-    ]
+    ],
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 612,
+      "protein": 18.4,
+      "fat": 18.6,
+      "carbs": 89.2,
+      "fiber": 10.3
+    }
   },
   {
     "id": "rei-04",
@@ -4002,7 +4640,17 @@
       "Mittagsgericht",
       "Frühling",
       "Sommer"
-    ]
+    ],
+    "allergens": [
+      "sesam"
+    ],
+    "nutrition": {
+      "kcal": 534,
+      "protein": 15.8,
+      "fat": 22.4,
+      "carbs": 68.2,
+      "fiber": 12.6
+    }
   },
   {
     "id": "rei-05",
@@ -4077,7 +4725,15 @@
     "tips": "",
     "imageUrl": null,
     "imageZutaten": null,
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [],
+    "nutrition": {
+      "kcal": 398,
+      "protein": 12.8,
+      "fat": 12.6,
+      "carbs": 58.4,
+      "fiber": 11.2
+    }
   },
   {
     "id": "rei-06",
@@ -4166,7 +4822,15 @@
       "Vegan"
     ],
     "dietCategory": "vegan",
-    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---rei-06-2--1780577746940.jpeg"
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---rei-06-2--1780577746940.jpeg",
+    "allergens": [],
+    "nutrition": {
+      "kcal": 628,
+      "protein": 23.2,
+      "fat": 14.8,
+      "carbs": 98.6,
+      "fiber": 12.4
+    }
   },
   {
     "id": "rei-07",
@@ -4267,7 +4931,18 @@
       "Mittagsgericht",
       "Herbst",
       "Winter"
-    ]
+    ],
+    "allergens": [
+      "milch",
+      "schalenfruechte"
+    ],
+    "nutrition": {
+      "kcal": 586,
+      "protein": 16.8,
+      "fat": 19.4,
+      "carbs": 86.2,
+      "fiber": 11.8
+    }
   },
   {
     "id": "rei-08",
@@ -4357,7 +5032,17 @@
     "tips": "",
     "imageUrl": null,
     "imageZutaten": null,
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 558,
+      "protein": 12.8,
+      "fat": 21.6,
+      "carbs": 76.4,
+      "fiber": 8.2
+    }
   },
   {
     "id": "rei-09",
@@ -4444,7 +5129,17 @@
     "tips": "",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---hirse-gemu-se-pfanne-mit-ra-uchertofu-1--1780578809829.jpeg",
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---hirse-gemu-se-pfanne-mit-ra-uchertofu-2--1780579029051.jpeg",
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 492,
+      "protein": 21.4,
+      "fat": 15.8,
+      "carbs": 64.2,
+      "fiber": 10.6
+    }
   },
   {
     "id": "ein-01",
@@ -4535,7 +5230,17 @@
       "Vegan"
     ],
     "dietCategory": "vegan",
-    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ein-01-2--1780579145821.jpeg"
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ein-01-2--1780579145821.jpeg",
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 368,
+      "protein": 18.6,
+      "fat": 9.4,
+      "carbs": 52.8,
+      "fiber": 14.2
+    }
   },
   {
     "id": "ein-02",
@@ -4587,7 +5292,18 @@
     "steps": [],
     "tips": "",
     "imageUrl": null,
-    "tags": []
+    "tags": [],
+    "allergens": [
+      "gluten",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 387,
+      "protein": 14.8,
+      "fat": 11.2,
+      "carbs": 56.4,
+      "fiber": 8.5
+    }
   },
   {
     "id": "ein-03",
@@ -4639,7 +5355,18 @@
     "steps": [],
     "tips": "",
     "imageUrl": null,
-    "tags": []
+    "tags": [],
+    "allergens": [
+      "gluten",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 398,
+      "protein": 19.6,
+      "fat": 5.8,
+      "carbs": 64.2,
+      "fiber": 12.3
+    }
   },
   {
     "id": "ein-04",
@@ -4691,7 +5418,18 @@
       "Mittagsgericht",
       "Herbst",
       "Winter"
-    ]
+    ],
+    "allergens": [
+      "gluten",
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 342,
+      "protein": 17.2,
+      "fat": 6.8,
+      "carbs": 53.4,
+      "fiber": 8.9
+    }
   },
   {
     "id": "ein-05",
@@ -4748,7 +5486,18 @@
       "Herbst",
       "Winter",
       "Ofengericht"
-    ]
+    ],
+    "allergens": [
+      "milch",
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 358,
+      "protein": 15.4,
+      "fat": 14.6,
+      "carbs": 38.7,
+      "fiber": 7.2
+    }
   },
   {
     "id": "ein-06",
@@ -4856,7 +5605,17 @@
       "Orientalisch",
       "Herbst",
       "Winter"
-    ]
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "nutrition": {
+      "kcal": 612,
+      "protein": 19.8,
+      "fat": 13.4,
+      "carbs": 101.6,
+      "fiber": 15.7
+    }
   },
   {
     "id": "ein-07",
@@ -4951,7 +5710,18 @@
       "Italienisch"
     ],
     "imageZutaten": null,
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "gluten",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 628,
+      "protein": 30.2,
+      "fat": 24.8,
+      "carbs": 68.4,
+      "fiber": 5.6
+    }
   },
   {
     "id": "ein-09",
@@ -5070,7 +5840,17 @@
       "Herbst",
       "Winter"
     ],
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 378,
+      "protein": 6.8,
+      "fat": 18.2,
+      "carbs": 48.6,
+      "fiber": 8.9
+    }
   },
   {
     "id": "ein-10",
@@ -5177,7 +5957,17 @@
       "Mealprep-geeignet",
       "Orientalisch"
     ],
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 512,
+      "protein": 22.4,
+      "fat": 18.6,
+      "carbs": 62.8,
+      "fiber": 16.2
+    }
   },
   {
     "id": "ein-11",
@@ -5277,7 +6067,17 @@
       "Mealprep-geeignet",
       "Orientalisch"
     ],
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 448,
+      "protein": 18.6,
+      "fat": 22.4,
+      "carbs": 42.8,
+      "fiber": 12.4
+    }
   },
   {
     "id": "ein-12",
@@ -5370,14 +6170,26 @@
       "Spinat und Kichererbsen hinzufügen, weitere 5 Min. köcheln.",
       "Mit Salz, Chili und Zitronensaft abschmecken. Mit Reis, Cashews und Sesam servieren."
     ],
-    "tips": "Hokkaido-Kürbis muss nicht geschält werden – die Schale wird beim Kochen weich.",
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ein-12-1780778294972.jpg",
     "tags": [
       "Vegan",
       "Mealprep-geeignet",
       "Herbst"
     ],
-    "dietCategory": "vegan"
+    "allergens": [
+      "milch",
+      "schalenfruechte",
+      "sesam"
+    ],
+    "nutrition": {
+      "kcal": 424,
+      "protein": 13.2,
+      "fat": 22.6,
+      "carbs": 43.8,
+      "fiber": 10.8
+    },
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "ein-13",
@@ -5483,100 +6295,17 @@
       "Mealprep-geeignet",
       "Orientalisch"
     ],
-    "dietCategory": "vegan"
-  },
-  {
-    "id": "ein-14",
-    "name": "Salziger Brotauflauf",
-    "category": "Aufläufe & Gratins",
-    "timeMinutes": 45,
-    "ingredients": [
-      {
-        "name": "Brot (in Scheiben, ca. 1 cm)",
-        "amount": 300,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Tiefkühlspinat (aufgetaut)",
-        "amount": 600,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Karotten (grob gerieben)",
-        "amount": 250,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Magerquark",
-        "amount": 250,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Eier",
-        "amount": 3,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Gemüsebrühe",
-        "amount": 200,
-        "unit": "ml",
-        "perPortions": 4
-      },
-      {
-        "name": "Gruyère (gerieben)",
-        "amount": 75,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Preiselbeeren (fein gehackt)",
-        "amount": 75,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Gemischte Nüsse (grob gehackt)",
-        "amount": 75,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Muskatnuss",
-        "amount": 1,
-        "unit": "Prise",
-        "perPortions": 4
-      },
-      {
-        "name": "Salz und Pfeffer",
-        "amount": 1,
-        "unit": "Prise",
-        "perPortions": 4
-      }
+    "dietCategory": "vegan",
+    "allergens": [
+      "milch"
     ],
-    "weatherType": "kalt",
-    "source": "fooby.ch",
-    "basePortions": 4,
-    "description": "Einfacher Brotauflauf mit Spinat und Karotten – der knackige Nuss-Beeren-Topping macht ihn besonders.",
-    "steps": [
-      "Spinat und Karotten mischen, mit Salz und Pfeffer würzen.",
-      "Brotscheiben und Gemüsemischung abwechselnd in einer gefetteten Auflaufform (2.5 L) schichten.",
-      "Brühe, Quark und Eier verquirlen, mit Salz, Muskat und Pfeffer würzen. Über das Brot giessen.",
-      "Gruyère, Preiselbeeren und Nüsse darüberstreuen.",
-      "Ca. 25 Min. im Ofen bei 200 °C (Mitte) backen."
-    ],
-    "tips": "Altbackenes Brot eignet sich besonders gut – es saugt die Flüssigkeit gut auf.",
-    "imageUrl": null,
-    "tags": [
-      "Vegetarisch",
-      "Herbst",
-      "Winter"
-    ],
-    "dietCategory": "vegetarian"
+    "nutrition": {
+      "kcal": 342,
+      "protein": 13.2,
+      "fat": 13.8,
+      "carbs": 41.5,
+      "fiber": 8.4
+    }
   },
   {
     "id": "ein-16",
@@ -5684,7 +6413,18 @@
       "Winter",
       "Herbst"
     ],
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "allergens": [
+      "gluten",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 542,
+      "protein": 15.8,
+      "fat": 30.4,
+      "carbs": 52.6,
+      "fiber": 6.8
+    }
   },
   {
     "id": "ein-17",
@@ -5785,7 +6525,18 @@
       "Winter",
       "Schweizer"
     ],
-    "dietCategory": "meat"
+    "dietCategory": "meat",
+    "allergens": [
+      "gluten",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 578,
+      "protein": 35.4,
+      "fat": 25.6,
+      "carbs": 48.3,
+      "fiber": 6.5
+    }
   },
   {
     "id": "fam-09",
@@ -5880,7 +6631,17 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 520,
+      "protein": 24.8,
+      "fat": 18.5,
+      "carbs": 62.4,
+      "fiber": 3.8
+    }
   },
   {
     "id": "fam-20",
@@ -5996,7 +6757,20 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "gluten",
+      "milch",
+      "soja",
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 638,
+      "protein": 28.3,
+      "fat": 28.6,
+      "carbs": 64.7,
+      "fiber": 6.2
+    }
   },
   {
     "id": "fvt-02",
@@ -6107,7 +6881,15 @@
       "Mittagsgericht",
       "Herbst",
       "Winter"
-    ]
+    ],
+    "allergens": [],
+    "nutrition": {
+      "kcal": 418,
+      "protein": 11.8,
+      "fat": 16.2,
+      "carbs": 58.4,
+      "fiber": 12.6
+    }
   },
   {
     "id": "ocr-05",
@@ -6179,7 +6961,20 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "gluten",
+      "milch",
+      "senf",
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 324,
+      "protein": 21.4,
+      "fat": 19.8,
+      "carbs": 12.6,
+      "fiber": 4.2
+    }
   },
   {
     "id": "ocr-12",
@@ -6247,7 +7042,18 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "ei",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 458,
+      "protein": 15.7,
+      "fat": 18.4,
+      "carbs": 56.3,
+      "fiber": 4.1
+    }
   },
   {
     "id": "fam-01",
@@ -6316,7 +7122,18 @@
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fam-01-2--1780579209531.jpeg",
     "imageKochen": null,
     "tips": "",
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "allergens": [
+      "gluten",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 178,
+      "protein": 3.2,
+      "fat": 11.4,
+      "carbs": 15.8,
+      "fiber": 2.4
+    }
   },
   {
     "id": "fam-13",
@@ -6377,7 +7194,19 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "ei",
+      "gluten",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 189,
+      "protein": 3.2,
+      "fat": 14.8,
+      "carbs": 9.6,
+      "fiber": 0.3
+    }
   },
   {
     "id": "fam-48",
@@ -6450,7 +7279,18 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "gluten",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 242,
+      "protein": 4.8,
+      "fat": 16.2,
+      "carbs": 18.5,
+      "fiber": 2.1
+    }
   },
   {
     "id": "fam-49",
@@ -6527,10 +7367,19 @@
       "Mit Bouillon ablöschen, 10–15 Min. köcheln.",
       "Rahm dazugeben, würzen."
     ],
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fam-49-1780778064357.jpg",
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 158,
+      "protein": 3.2,
+      "fat": 9.8,
+      "carbs": 14.2,
+      "fiber": 3.1
+    }
   },
   {
     "id": "fvt-07",
@@ -6636,7 +7485,17 @@
       "Herbst",
       "Winter",
       "Frühling"
-    ]
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "nutrition": {
+      "kcal": 398,
+      "protein": 15.8,
+      "fat": 11.2,
+      "carbs": 61.4,
+      "fiber": 13.2
+    }
   },
   {
     "id": "sup-01",
@@ -6703,7 +7562,17 @@
       "Vegan"
     ],
     "dietCategory": "vegan",
-    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---sup-01-2-ku-rbis-kokos-suppe--1780579300744.jpeg"
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---sup-01-2-ku-rbis-kokos-suppe--1780579300744.jpeg",
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 268,
+      "protein": 4.8,
+      "fat": 11.2,
+      "carbs": 38.6,
+      "fiber": 5.8
+    }
   },
   {
     "id": "sup-02",
@@ -6787,7 +7656,15 @@
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---sup-02-1--1780579317635.jpeg",
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---sup-02-2--1780579347422.jpeg",
     "imageKochen": null,
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "allergens": [],
+    "nutrition": {
+      "kcal": 285,
+      "protein": 11.2,
+      "fat": 10.8,
+      "carbs": 38.5,
+      "fiber": 9.2
+    }
   },
   {
     "id": "sup-03",
@@ -6845,7 +7722,18 @@
       "Herbst",
       "Winter",
       "Schweizer"
-    ]
+    ],
+    "allergens": [
+      "gluten",
+      "sellerie"
+    ],
+    "nutrition": {
+      "kcal": 168,
+      "protein": 5.2,
+      "fat": 1.2,
+      "carbs": 34.8,
+      "fiber": 7.5
+    }
   },
   {
     "id": "sup-04",
@@ -6896,7 +7784,15 @@
       "Mittagsgericht",
       "Herbst",
       "Winter"
-    ]
+    ],
+    "allergens": [],
+    "nutrition": {
+      "kcal": 298,
+      "protein": 19.5,
+      "fat": 1.8,
+      "carbs": 49.2,
+      "fiber": 16.8
+    }
   },
   {
     "id": "sup-05",
@@ -6939,15 +7835,25 @@
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Samtweiche Suppe mit exotischer Note.",
-    "steps": [],
-    "tips": "",
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/sup-05-1780777992254.jpg",
     "tags": [
       "Mealprep-geeignet",
       "Mittagsgericht",
       "Herbst",
       "Winter"
-    ]
+    ],
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 288,
+      "protein": 4.2,
+      "fat": 11.5,
+      "carbs": 42.8,
+      "fiber": 6.2
+    },
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "sup-06",
@@ -7029,7 +7935,17 @@
       "Mittagsgericht",
       "Sommer",
       "Herbst"
-    ]
+    ],
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 185,
+      "protein": 3.8,
+      "fat": 13.2,
+      "carbs": 14.5,
+      "fiber": 3.8
+    }
   },
   {
     "id": "sup-07",
@@ -7119,7 +8035,18 @@
     "tips": "",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ku-rbis-curry-suppe-1--1780579383333.jpeg",
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ku-rbis-curry-suppe-2--1780579389516.jpeg",
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "milch",
+      "sesam"
+    ],
+    "nutrition": {
+      "kcal": 358,
+      "protein": 11.2,
+      "fat": 18.4,
+      "carbs": 37.8,
+      "fiber": 10.5
+    }
   },
   {
     "id": "sup-08",
@@ -7219,7 +8146,17 @@
     "tips": "",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ku-rbis-kartoffel-curry-1--1780579408538.jpeg",
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ku-rbis-kartoffel-curry-2--1780579465960.jpeg",
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 445,
+      "protein": 8.3,
+      "fat": 24.6,
+      "carbs": 51.2,
+      "fiber": 8.9
+    }
   },
   {
     "id": "sup-09",
@@ -7315,7 +8252,17 @@
       "Winter",
       "Mittagsgericht"
     ],
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "allergens": [
+      "sellerie"
+    ],
+    "nutrition": {
+      "kcal": 312,
+      "protein": 9.1,
+      "fat": 8.9,
+      "carbs": 50.3,
+      "fiber": 7.2
+    }
   },
   {
     "id": "sup-11",
@@ -7432,15 +8379,25 @@
       "Mit Gemüsebrühe ablöschen, salzen und aufkochen. Bei niedriger Hitze 15–20 Minuten köcheln lassen bis Linsen weich sind.",
       "Kokosmilch hinzufügen und erneut erhitzen. Mit Salz und Zitronensaft abschmecken. Mit frischem Koriander garnieren."
     ],
-    "tips": "Mit Naanbrot servieren. Schärfe über die Chili-Menge anpassen.",
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/sup-11-1780778392802.jpg",
     "tags": [
       "Vegan",
       "Mealprep-geeignet",
       "Orientalisch",
       "Winter"
     ],
-    "dietCategory": "vegan"
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 398,
+      "protein": 16.8,
+      "fat": 16.2,
+      "carbs": 45.7,
+      "fiber": 11.3
+    },
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "sup-12",
@@ -7552,7 +8509,18 @@
       "Mexikanisch",
       "Mittagsgericht"
     ],
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "allergens": [
+      "milch",
+      "schalenfruechte"
+    ],
+    "nutrition": {
+      "kcal": 298,
+      "protein": 10.4,
+      "fat": 6.8,
+      "carbs": 49.2,
+      "fiber": 11.8
+    }
   },
   {
     "id": "sup-13",
@@ -7598,8 +8566,8 @@
       },
       {
         "name": "Wasser oder Gemüsebrühe",
-        "amount": 1500,
-        "unit": "ml",
+        "amount": 1.5,
+        "unit": "l",
         "perPortions": 4
       },
       {
@@ -7645,15 +8613,23 @@
       "Optional mit dem Stabmixer pürieren.",
       "Vor dem Servieren Zitronensaft und Petersilie hinzufügen."
     ],
-    "tips": "Der Zimt gibt der Suppe eine typisch türkische Note. Wer möchte, kann die Suppe auch chunky lassen.",
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/sup-13-1780778603969.jpg",
     "tags": [
       "Vegan",
       "Mealprep-geeignet",
       "Orientalisch",
       "Winter"
     ],
-    "dietCategory": "vegan"
+    "allergens": [],
+    "nutrition": {
+      "kcal": 312,
+      "protein": 14.6,
+      "fat": 7.8,
+      "carbs": 46.3,
+      "fiber": 10.2
+    },
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "sup-14",
@@ -7772,7 +8748,17 @@
       "Orientalisch",
       "Winter"
     ],
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 456,
+      "protein": 16.2,
+      "fat": 23.1,
+      "carbs": 48.7,
+      "fiber": 9.8
+    }
   },
   {
     "id": "sup-15",
@@ -7866,7 +8852,17 @@
       "Orientalisch",
       "Winter"
     ],
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 245,
+      "protein": 11.3,
+      "fat": 9.2,
+      "carbs": 29.8,
+      "fiber": 8.4
+    }
   },
   {
     "id": "sup-16",
@@ -7967,7 +8963,19 @@
       "Asiatisch",
       "Mittagsgericht"
     ],
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "allergens": [
+      "gluten",
+      "sesam",
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 342,
+      "protein": 17.8,
+      "fat": 9.4,
+      "carbs": 46.2,
+      "fiber": 4.6
+    }
   },
   {
     "id": "sup-17",
@@ -8075,7 +9083,17 @@
       "Herbst",
       "Winter"
     ],
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "allergens": [
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 298,
+      "protein": 13.2,
+      "fat": 7.6,
+      "carbs": 44.8,
+      "fiber": 11.4
+    }
   },
   {
     "id": "sup-18",
@@ -8163,14 +9181,24 @@
       "Auf Backpapier legen, 30 Min. kühl stellen, dann ca. 10 Min. bei 220 °C backen.",
       "Twister zur Suppe servieren."
     ],
-    "tips": "Twister können gut vorbereitet werden – Teig abdecken und im Kühlschrank aufbewahren.",
-    "imageUrl": null,
+    "imageUrl": "blob:https://mahlzeit.o-v-k.ch/a5131c8c-cf1b-43a3-b522-90cc1c067010",
     "tags": [
       "Vegetarisch",
       "Herbst",
       "Schweizer"
     ],
-    "dietCategory": "vegetarian"
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 382,
+      "protein": 5.8,
+      "fat": 16.2,
+      "carbs": 52.4,
+      "fiber": 5.3
+    },
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "sup-19",
@@ -8279,14 +9307,26 @@
       "Gazpacho abschmecken und zugedeckt ca. 1 Stunde kühl stellen.",
       "In Schalen oder Gläser verteilen. Mit Joghurt, Olivenöl, Dill und Croûtons garnieren."
     ],
-    "tips": "Mindestens 1 Stunde kühlen für den besten Geschmack. Kann auch als Vorspeise in kleinen Gläsern serviert werden.",
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/soup-19-1780779512383.jpg",
     "tags": [
       "Vegan",
       "Sommer",
       "Mittagsgericht"
     ],
-    "dietCategory": "vegan"
+    "allergens": [
+      "milch",
+      "schalenfruechte",
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 248,
+      "protein": 6.2,
+      "fat": 16.8,
+      "carbs": 19.4,
+      "fiber": 6.8
+    },
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "fam-02",
@@ -8371,7 +9411,18 @@
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fam-02--1780579489550.jpeg",
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "milch",
+      "sesam"
+    ],
+    "nutrition": {
+      "kcal": 378,
+      "protein": 10.2,
+      "fat": 30.5,
+      "carbs": 16.8,
+      "fiber": 4.2
+    }
   },
   {
     "id": "fam-05",
@@ -8448,9 +9499,18 @@
       "Heisse Bohnen mit Dressing mischen. 15 Min. ziehen lassen."
     ],
     "imageUrl": null,
-    "imageZutaten": null,
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fam-05-1780779720433.jpg",
     "imageKochen": null,
-    "tips": ""
+    "allergens": [
+      "senf"
+    ],
+    "nutrition": {
+      "kcal": 152,
+      "protein": 5.8,
+      "fat": 10.2,
+      "carbs": 11.5,
+      "fiber": 7.2
+    }
   },
   {
     "id": "fam-10",
@@ -8542,7 +9602,17 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "gluten"
+    ],
+    "nutrition": {
+      "kcal": 398,
+      "protein": 12.4,
+      "fat": 13.8,
+      "carbs": 57.6,
+      "fiber": 7.8
+    }
   },
   {
     "id": "fam-27",
@@ -8614,7 +9684,18 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "ei",
+      "senf"
+    ],
+    "nutrition": {
+      "kcal": 218,
+      "protein": 3.8,
+      "fat": 14.6,
+      "carbs": 18.2,
+      "fiber": 2.4
+    }
   },
   {
     "id": "fam-31",
@@ -8693,7 +9774,17 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "senf"
+    ],
+    "nutrition": {
+      "kcal": 142,
+      "protein": 2.8,
+      "fat": 7.2,
+      "carbs": 17.5,
+      "fiber": 4.1
+    }
   },
   {
     "id": "fam-33",
@@ -8763,10 +9854,20 @@
       "Dressing aus Senf, Essig, Öl, Sojasauce, Salz, Pfeffer rühren.",
       "Mit Zwiebeln und Randen mischen."
     ],
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fam-33-1780780224703.jpg",
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "allergens": [
+      "senf",
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 158,
+      "protein": 3.2,
+      "fat": 10.8,
+      "carbs": 12.4,
+      "fiber": 3.8
+    }
   },
   {
     "id": "fam-35",
@@ -8862,7 +9963,18 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "ei",
+      "senf"
+    ],
+    "nutrition": {
+      "kcal": 282,
+      "protein": 7.8,
+      "fat": 8.4,
+      "carbs": 44.2,
+      "fiber": 4.6
+    }
   },
   {
     "id": "fam-37",
@@ -8908,9 +10020,18 @@
       "Zitronensaft und Rahm darunter mischen, salzen."
     ],
     "imageUrl": null,
-    "imageZutaten": null,
+    "imageZutaten": "blob:https://mahlzeit.o-v-k.ch/09ce3dc7-d8f9-43f7-b629-6e5e365529d2",
     "imageKochen": null,
-    "tips": ""
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 98,
+      "protein": 2.4,
+      "fat": 2.8,
+      "carbs": 16.2,
+      "fiber": 7.8
+    }
   },
   {
     "id": "fam-42",
@@ -9006,7 +10127,19 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "ei",
+      "milch",
+      "senf"
+    ],
+    "nutrition": {
+      "kcal": 338,
+      "protein": 11.2,
+      "fat": 14.8,
+      "carbs": 39.5,
+      "fiber": 2.8
+    }
   },
   {
     "id": "fam-44",
@@ -9081,7 +10214,19 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "ei",
+      "milch",
+      "senf"
+    ],
+    "nutrition": {
+      "kcal": 248,
+      "protein": 22.4,
+      "fat": 16.2,
+      "carbs": 3.8,
+      "fiber": 0.4
+    }
   },
   {
     "id": "fam-53",
@@ -9175,11 +10320,23 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "ei",
+      "milch",
+      "senf"
+    ],
+    "nutrition": {
+      "kcal": 542,
+      "protein": 29.8,
+      "fat": 42.5,
+      "carbs": 8.2,
+      "fiber": 1.8
+    }
   },
   {
     "id": "rec-1779488181331-i6vew",
-    "name": "Tomaten & Mozzerella Salat",
+    "name": "Tomaten & Mozzarella Salat",
     "category": "Salate & Bowls",
     "timeMinutes": 15,
     "ingredients": [],
@@ -9187,14 +10344,24 @@
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "",
-    "steps": [],
-    "tips": "",
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/bryony-elena-djgeisqeeiw-unsplash-1780781966169.jpg",
     "tags": [
       "Mittagsgericht",
       "Vegetarisch",
-      "Sommer"
-    ]
+      "Sommer",
+      "Abendgericht",
+      "Grillgericht"
+    ],
+    "allergens": [],
+    "nutrition": {
+      "kcal": 185,
+      "protein": 12.5,
+      "fat": 13.2,
+      "carbs": 4.8,
+      "fiber": 1.2
+    },
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "sal-01",
@@ -9237,15 +10404,25 @@
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Proteinreiche Bowl für warme Tage.",
-    "steps": [],
-    "tips": "",
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/sal-01-1780782118051.jpg",
     "tags": [
       "Mealprep-geeignet",
       "Mittagsgericht",
       "Frühling",
       "Sommer"
-    ]
+    ],
+    "allergens": [
+      "sesam"
+    ],
+    "nutrition": {
+      "kcal": 412,
+      "protein": 15.8,
+      "fat": 14.5,
+      "carbs": 54.2,
+      "fiber": 9.8
+    },
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "sal-03",
@@ -9330,7 +10507,17 @@
       "Orientalisch",
       "Vegan"
     ],
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "allergens": [
+      "gluten"
+    ],
+    "nutrition": {
+      "kcal": 385,
+      "protein": 9.2,
+      "fat": 18.5,
+      "carbs": 48.3,
+      "fiber": 7.2
+    }
   },
   {
     "id": "sal-04",
@@ -9412,7 +10599,18 @@
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---sal-04-1--1780579587426.jpeg",
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---sal-04-2--1780579592398.jpeg",
     "imageKochen": null,
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "allergens": [
+      "senf",
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 268,
+      "protein": 9.8,
+      "fat": 14.2,
+      "carbs": 26.5,
+      "fiber": 7.5
+    }
   },
   {
     "id": "sal-05",
@@ -9475,7 +10673,15 @@
       "Mittagsgericht",
       "Frühling",
       "Sommer"
-    ]
+    ],
+    "allergens": [],
+    "nutrition": {
+      "kcal": 285,
+      "protein": 13.8,
+      "fat": 10.8,
+      "carbs": 34.2,
+      "fiber": 11.2
+    }
   },
   {
     "id": "sal-06",
@@ -9524,69 +10730,18 @@
     "tags": [
       "Mittagsgericht",
       "Schweizer"
-    ]
-  },
-  {
-    "id": "sal-07",
-    "name": "Griechischer Salat",
-    "category": "Salate & Bowls",
-    "timeMinutes": 15,
-    "ingredients": [
-      {
-        "name": "Tomaten",
-        "amount": 4,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Gurke",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Feta",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Oliven",
-        "amount": 100,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Rote Zwiebel",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Oregano",
-        "amount": 1,
-        "unit": "TL",
-        "perPortions": 4
-      },
-      {
-        "name": "Olivenöl",
-        "amount": 4,
-        "unit": "EL",
-        "perPortions": 4
-      }
     ],
-    "weatherType": "warm",
-    "source": "Rezept von Cuiselin",
-    "basePortions": 4,
-    "description": "Sommerlicher Klassiker aus Griechenland.",
-    "steps": [],
-    "tips": "",
-    "imageUrl": null,
-    "tags": [
-      "Mittagsgericht",
-      "Frühling",
-      "Sommer"
-    ]
+    "allergens": [
+      "ei",
+      "senf"
+    ],
+    "nutrition": {
+      "kcal": 312,
+      "protein": 5.2,
+      "fat": 13.5,
+      "carbs": 42.8,
+      "fiber": 4.5
+    }
   },
   {
     "id": "sal-08",
@@ -9678,88 +10833,17 @@
       "Vegan",
       "Mealprep-geeignet",
       "Mittagsgericht"
-    ]
-  },
-  {
-    "id": "sal-09",
-    "name": "Griechischer Sommer-Salat",
-    "category": "Salate & Bowls",
-    "timeMinutes": 15,
-    "ingredients": [
-      {
-        "name": "Tomaten (verschiedene Sorten)",
-        "amount": 600,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Gurke",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Rote Zwiebel",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Grüne Oliven",
-        "amount": 100,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Feta (Block)",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Olivenöl (extra vergine)",
-        "amount": 5,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Rotweinessig",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Getrockneter Oregano",
-        "amount": 1,
-        "unit": "TL",
-        "perPortions": 4
-      },
-      {
-        "name": "Fleur de sel & Pfeffer",
-        "amount": 1,
-        "unit": "Prise",
-        "perPortions": 4
-      }
     ],
-    "weatherType": "warm",
-    "source": "cuiseline",
-    "basePortions": 4,
-    "description": "Der echte griechische Salat — kein Eisberg-Salat, nur Tomaten, Gurken, Oliven und ein ganzer Block Feta. Perfekt im Sommer.",
-    "steps": [
-      "Tomaten in grobe Stücke schneiden. Gurke halbieren und in Scheiben schneiden.",
-      "Rote Zwiebel in dünne Ringe schneiden.",
-      "Alles in einer Schüssel anrichten. Oliven dazugeben.",
-      "Feta als ganzen Block obenauf legen (nicht krümeln!).",
-      "Olivenöl, Essig und Oregano darüber. Mit Fleur de sel würzen.",
-      "Kurz vor dem Servieren zum Tisch bringen und erst dann vermischen."
+    "allergens": [
+      "sesam"
     ],
-    "tips": "Der Schlüssel: beste Tomaten (reif und aromatisch), gutes Olivenöl und echter griechischer Feta aus Schafsmilch. Niemals Eisbergsalat.",
-    "imageUrl": null,
-    "tags": [
-      "Vegetarisch",
-      "Mittagsgericht",
-      "Sommer"
-    ]
+    "nutrition": {
+      "kcal": 612,
+      "protein": 16.8,
+      "fat": 28.4,
+      "carbs": 70.3,
+      "fiber": 13.2
+    }
   },
   {
     "id": "sal-10",
@@ -9773,7 +10857,6 @@
     "weatherType": "warm",
     "source": "Cuiseline",
     "basePortions": 4,
-    "dietCategory": "vegan",
     "description": "Exotischer Salat mit Gurke, Ananas und asiatischem Dressing.",
     "ingredients": [
       {
@@ -9845,10 +10928,21 @@
       "Gemüse und Ananas mit der Sauce mischen, anrichten.",
       "Cashewnüsse und Sesamkörner darüber verteilen."
     ],
-    "tips": "",
-    "imageUrl": null,
-    "imageZutaten": null,
-    "imageKochen": null
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/bcf5cb4f-8569-4d6e-8de7-23f5f02fd11e-1780786067736.JPG",
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/57b894c5-0320-4168-83cb-d476c5dbdb86-1780786073858.JPG",
+    "imageKochen": null,
+    "allergens": [
+      "schalenfruechte",
+      "sesam",
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 248,
+      "protein": 6.8,
+      "fat": 12.4,
+      "carbs": 28.6,
+      "fiber": 3.9
+    }
   },
   {
     "id": "sal-11",
@@ -9911,7 +11005,19 @@
     "tips": "",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---gurkensalat-1--1780579715668.jpeg",
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---gurkensalat-2--1780579721355.jpeg",
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "milch",
+      "schalenfruechte",
+      "senf"
+    ],
+    "nutrition": {
+      "kcal": 68,
+      "protein": 1.8,
+      "fat": 4.2,
+      "carbs": 5.9,
+      "fiber": 1.4
+    }
   },
   {
     "id": "sal-12",
@@ -10006,7 +11112,15 @@
     "tips": "Schmeckt besonders gut wenn er ca. eine halbe Stunde ziehen kann.",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---linsen-apfel-salat-1--1780579776842.jpeg",
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---linsen-apfel-salat-2--1780579783529.jpeg",
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [],
+    "nutrition": {
+      "kcal": 398,
+      "protein": 16.2,
+      "fat": 16.8,
+      "carbs": 45.3,
+      "fiber": 11.8
+    }
   },
   {
     "id": "sal-13",
@@ -10103,14 +11217,29 @@
       "Alles zusammen mit den Oliven zur Vinaigrette geben und gut vermischen.",
       "Feta in Stücke schneiden und als Garnierung über den Salat geben."
     ],
-    "tips": "Den Salat 10 Minuten vor dem Servieren marinieren lassen, damit die Aromen sich verbinden.",
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/sal-13-1780782771480.jpg",
     "tags": [
       "Vegetarisch",
       "Sommer",
-      "Mittagsgericht"
+      "Mittagsgericht",
+      "Frühling",
+      "Herbst",
+      "Grillgericht",
+      "Abendgericht"
     ],
-    "dietCategory": "vegetarian"
+    "allergens": [
+      "milch",
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 268,
+      "protein": 7.8,
+      "fat": 21.4,
+      "carbs": 12.6,
+      "fiber": 3.8
+    },
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "sal-14",
@@ -10184,7 +11313,17 @@
       "Vegan",
       "Mittagsgericht"
     ],
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "allergens": [
+      "ei"
+    ],
+    "nutrition": {
+      "kcal": 352,
+      "protein": 9.4,
+      "fat": 21.6,
+      "carbs": 30.2,
+      "fiber": 5.8
+    }
   },
   {
     "id": "sal-15",
@@ -10281,7 +11420,19 @@
       "Frühling",
       "Mittagsgericht"
     ],
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "allergens": [
+      "milch",
+      "senf",
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 228,
+      "protein": 6.4,
+      "fat": 14.8,
+      "carbs": 17.2,
+      "fiber": 3.6
+    }
   },
   {
     "id": "sal-16",
@@ -10363,7 +11514,18 @@
       "Winter",
       "Herbst"
     ],
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "allergens": [
+      "milch",
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 298,
+      "protein": 12.6,
+      "fat": 14.2,
+      "carbs": 32.4,
+      "fiber": 6.8
+    }
   },
   {
     "id": "fvt-08",
@@ -10469,7 +11631,17 @@
       "Ofengericht",
       "Sommer",
       "Herbst"
-    ]
+    ],
+    "allergens": [
+      "sesam"
+    ],
+    "nutrition": {
+      "kcal": 468,
+      "protein": 17.2,
+      "fat": 12.8,
+      "carbs": 71.4,
+      "fiber": 14.6
+    }
   },
   {
     "id": "ofe-01",
@@ -10525,7 +11697,18 @@
       "Mealprep-geeignet",
       "Mittagsgericht",
       "Ofengericht"
-    ]
+    ],
+    "allergens": [
+      "milch",
+      "sesam"
+    ],
+    "nutrition": {
+      "kcal": 518,
+      "protein": 17.8,
+      "fat": 28.4,
+      "carbs": 46.2,
+      "fiber": 7.3
+    }
   },
   {
     "id": "ofe-02",
@@ -10615,7 +11798,17 @@
       "Sommer",
       "Frühling",
       "Italienisch"
-    ]
+    ],
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 682,
+      "protein": 28.4,
+      "fat": 32.6,
+      "carbs": 65.8,
+      "fiber": 3.2
+    }
   },
   {
     "id": "ofe-03",
@@ -10727,7 +11920,20 @@
     "tips": "",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---brot-gemu-se-auflauf-1--1780579881377.jpeg",
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---brot-gemu-se-auflauf-2--1780579895432.jpeg",
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "gluten",
+      "milch",
+      "schalenfruechte",
+      "senf"
+    ],
+    "nutrition": {
+      "kcal": 448,
+      "protein": 16.2,
+      "fat": 14.8,
+      "carbs": 62.4,
+      "fiber": 9.1
+    }
   },
   {
     "id": "ofe-04",
@@ -10836,7 +12042,19 @@
     "tips": "",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---gefu-llte-auberginen-mit-couscous-1--1780579992533.jpeg",
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---gefu-llte-auberginen-mit-couscous-2--1780580021044.jpeg",
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "gluten",
+      "milch",
+      "schalenfruechte"
+    ],
+    "nutrition": {
+      "kcal": 612,
+      "protein": 16.8,
+      "fat": 24.7,
+      "carbs": 82.3,
+      "fiber": 12.4
+    }
   },
   {
     "id": "ofe-05",
@@ -10925,7 +12143,19 @@
       "Winter",
       "Schweizer"
     ],
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "allergens": [
+      "gluten",
+      "milch",
+      "schalenfruechte"
+    ],
+    "nutrition": {
+      "kcal": 468,
+      "protein": 11.2,
+      "fat": 24.6,
+      "carbs": 52.8,
+      "fiber": 8.7
+    }
   },
   {
     "id": "ofe-06",
@@ -11029,11 +12259,22 @@
       "Ofengericht",
       "Winter"
     ],
-    "dietCategory": "fish"
+    "dietCategory": "fish",
+    "allergens": [
+      "fisch",
+      "senf"
+    ],
+    "nutrition": {
+      "kcal": 398,
+      "protein": 26.4,
+      "fat": 24.8,
+      "carbs": 18.6,
+      "fiber": 4.2
+    }
   },
   {
     "id": "asi-01",
-    "name": "Pad Thai",
+    "name": "Pad Thai mit Crevetten",
     "category": "Pasta",
     "timeMinutes": 25,
     "ingredients": [
@@ -11084,15 +12325,28 @@
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Klassisches Thai-Nudelgericht.",
-    "steps": [],
-    "tips": "",
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/asi-01-1780783881713.jpg",
     "tags": [
       "Mittagsgericht",
       "Asiatisch",
       "Frühling",
       "Sommer"
-    ]
+    ],
+    "allergens": [
+      "ei",
+      "erdnuesse",
+      "gluten",
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 542,
+      "protein": 22.3,
+      "fat": 18.6,
+      "carbs": 68.4,
+      "fiber": 4.8
+    },
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "asi-02",
@@ -11154,7 +12408,17 @@
       "Mealprep-geeignet",
       "Mittagsgericht",
       "Asiatisch"
-    ]
+    ],
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 438,
+      "protein": 16.2,
+      "fat": 8.4,
+      "carbs": 74.6,
+      "fiber": 8.9
+    }
   },
   {
     "id": "asi-03",
@@ -11247,13 +12511,28 @@
       "Nudeln und Sauce in die Pfanne, alles vermengen. Tofu zugeben, kurz durchschwenken.",
       "Mit Erdnüssen, Koriander, Limette und grünen Frühlingszwiebelringen servieren."
     ],
-    "tips": "Für vegane Variante Eier weglassen und Sojasauce statt Fischsauce verwenden. Mise en place ist wichtig — alles vorbereiten bevor das Wokken beginnt.",
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/asi-03-1780783928840.jpg",
     "tags": [
       "Vegetarisch",
       "Mittagsgericht",
       "Asiatisch"
-    ]
+    ],
+    "allergens": [
+      "ei",
+      "erdnuesse",
+      "fisch",
+      "gluten",
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 628,
+      "protein": 30.2,
+      "fat": 24.8,
+      "carbs": 70.4,
+      "fiber": 5.6
+    },
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "asi-04",
@@ -11369,7 +12648,19 @@
       "Vegan",
       "Asiatisch"
     ],
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "allergens": [
+      "erdnuesse",
+      "milch",
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 424,
+      "protein": 14.6,
+      "fat": 26.8,
+      "carbs": 32.4,
+      "fiber": 9.2
+    }
   },
   {
     "id": "asi-05",
@@ -11490,7 +12781,20 @@
       "Vegan",
       "Asiatisch"
     ],
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "allergens": [
+      "erdnuesse",
+      "gluten",
+      "milch",
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 612,
+      "protein": 21.3,
+      "fat": 35.8,
+      "carbs": 52.4,
+      "fiber": 5.2
+    }
   },
   {
     "id": "asi-06",
@@ -11582,7 +12886,19 @@
     "tags": [
       "Asiatisch"
     ],
-    "dietCategory": "meat"
+    "dietCategory": "meat",
+    "allergens": [
+      "ei",
+      "gluten",
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 548,
+      "protein": 38.2,
+      "fat": 14.6,
+      "carbs": 62.8,
+      "fiber": 3.4
+    }
   },
   {
     "id": "fam-11",
@@ -11683,7 +12999,18 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "milch",
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 268,
+      "protein": 28.4,
+      "fat": 11.2,
+      "carbs": 12.6,
+      "fiber": 3.1
+    }
   },
   {
     "id": "fam-12",
@@ -11692,7 +13019,10 @@
     "timeMinutes": 20,
     "tags": [
       "Grillgericht",
-      "Sommer"
+      "Sommer",
+      "Abendgericht",
+      "Mittagsgericht",
+      "Asiatisch"
     ],
     "weatherType": "warm",
     "source": "Familien-Rezeptbuch",
@@ -11753,10 +13083,19 @@
       "Crevetten darin wenden, auf Holzspiesse stecken.",
       "Beidseitig anbraten oder grillieren."
     ],
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fam-12-1780784327262.jpg",
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "allergens": [
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 142,
+      "protein": 18.6,
+      "fat": 6.8,
+      "carbs": 2.1,
+      "fiber": 0.2
+    }
   },
   {
     "id": "fis-01",
@@ -11802,7 +13141,18 @@
     "steps": [],
     "tips": "",
     "imageUrl": null,
-    "tags": []
+    "tags": [],
+    "allergens": [
+      "fisch",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 398,
+      "protein": 34.2,
+      "fat": 14.8,
+      "carbs": 28.5,
+      "fiber": 4.6
+    }
   },
   {
     "id": "fis-02",
@@ -11881,7 +13231,18 @@
     "imageUrl": null,
     "tags": [
       "Mittagsgericht"
-    ]
+    ],
+    "allergens": [
+      "fisch",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 342,
+      "protein": 32.6,
+      "fat": 22.4,
+      "carbs": 3.2,
+      "fiber": 1.8
+    }
   },
   {
     "id": "fam-14",
@@ -11995,7 +13356,18 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "gluten",
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 284,
+      "protein": 22.8,
+      "fat": 14.6,
+      "carbs": 16.4,
+      "fiber": 4.2
+    }
   },
   {
     "id": "fam-16",
@@ -12089,7 +13461,19 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "milch",
+      "senf",
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 518,
+      "protein": 36.2,
+      "fat": 40.8,
+      "carbs": 5.4,
+      "fiber": 0.6
+    }
   },
   {
     "id": "fam-21",
@@ -12172,7 +13556,19 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "gluten",
+      "milch",
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 524,
+      "protein": 28.6,
+      "fat": 43.2,
+      "carbs": 9.8,
+      "fiber": 1.2
+    }
   },
   {
     "id": "fam-22",
@@ -12263,7 +13659,17 @@
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fam-22-2--1780580068978.jpeg",
     "imageKochen": null,
     "tips": "",
-    "dietCategory": "meat"
+    "dietCategory": "meat",
+    "allergens": [
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 638,
+      "protein": 38.4,
+      "fat": 12.6,
+      "carbs": 92.8,
+      "fiber": 5.8
+    }
   },
   {
     "id": "fam-26",
@@ -12378,7 +13784,19 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "gluten",
+      "milch",
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 782,
+      "protein": 42.3,
+      "fat": 48.6,
+      "carbs": 35.2,
+      "fiber": 2.8
+    }
   },
   {
     "id": "fam-32",
@@ -12453,7 +13871,19 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "milch",
+      "senf",
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 658,
+      "protein": 38.5,
+      "fat": 52.4,
+      "carbs": 5.2,
+      "fiber": 0.3
+    }
   },
   {
     "id": "fam-60",
@@ -12555,7 +13985,18 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "milch",
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 685,
+      "protein": 58.2,
+      "fat": 38.5,
+      "carbs": 8.4,
+      "fiber": 1.2
+    }
   },
   {
     "id": "fle-01",
@@ -12630,12 +14071,22 @@
       "Koriander fein hacken, mit restlichem Joghurt mischen. Kreuzkümmel mahlen und mit Salz zum Raita geben.",
       "Chicken Tikka Masala mit Naan und Raita servieren."
     ],
-    "tips": "Fertige Tikka Masala Sauce ist in den meisten Supermärkten erhältlich und spart Zeit.",
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fle-01-1780784909551.jpg",
     "tags": [
       "Orientalisch"
     ],
-    "dietCategory": "meat"
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 712,
+      "protein": 52.8,
+      "fat": 22.4,
+      "carbs": 68.5,
+      "fiber": 3.6
+    },
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "ocr-01",
@@ -12721,7 +14172,17 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "gluten"
+    ],
+    "nutrition": {
+      "kcal": 485,
+      "protein": 46.2,
+      "fat": 9.8,
+      "carbs": 48.5,
+      "fiber": 6.2
+    }
   },
   {
     "id": "ocr-06",
@@ -12789,7 +14250,17 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 348,
+      "protein": 42.5,
+      "fat": 9.2,
+      "carbs": 24.8,
+      "fiber": 1.4
+    }
   },
   {
     "id": "ocr-10",
@@ -12860,7 +14331,18 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "milch",
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 542,
+      "protein": 38.5,
+      "fat": 15.8,
+      "carbs": 52.3,
+      "fiber": 3.2
+    }
   },
   {
     "id": "ocr-11",
@@ -12927,14 +14409,31 @@
     "tips": "Dazu passen Teigwaren, Mais, Reis oder Kartoffeln. Auch mit Quorn möglich.",
     "imageUrl": null,
     "imageZutaten": null,
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 285,
+      "protein": 28.4,
+      "fat": 12.6,
+      "carbs": 6.8,
+      "fiber": 0.8
+    }
   },
   {
     "id": "ocr-14",
     "name": "Hackbraten nach Annemarie Wildeisen",
     "category": "Fleisch & Geflügel",
     "timeMinutes": 120,
-    "tags": [],
+    "tags": [
+      "Herbst",
+      "Winter",
+      "Ofengericht",
+      "Mittagsgericht",
+      "Abendgericht",
+      "Schweizer"
+    ],
     "weatherType": "kalt",
     "source": "Familien-Rezeptbuch (OCR)",
     "basePortions": 6,
@@ -12990,8 +14489,8 @@
       },
       {
         "name": "Rotwein",
-        "amount": 0.25,
-        "unit": "L",
+        "amount": 2.5,
+        "unit": "dl",
         "perPortions": 6
       },
       {
@@ -13008,10 +14507,21 @@
       "Alles mischen, kräftig würzen, zu Laib formen.",
       "Bei 200°C 20 Min. anbraten, Rotwein-Sauce beifügen, auf 120°C reduzieren. 1.5 Std. nachgaren."
     ],
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ocr14-1780785156505.jpg",
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "allergens": [
+      "ei",
+      "milch",
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 512,
+      "protein": 42.6,
+      "fat": 28.4,
+      "carbs": 18.5,
+      "fiber": 0.9
+    }
   },
   {
     "id": "ocr-17",
@@ -13082,7 +14592,18 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "milch",
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 445,
+      "protein": 32.8,
+      "fat": 28.5,
+      "carbs": 9.2,
+      "fiber": 2.1
+    }
   },
   {
     "id": "fam-17",
@@ -13132,7 +14653,17 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 436,
+      "protein": 6.8,
+      "fat": 6.2,
+      "carbs": 87.4,
+      "fiber": 7.8
+    }
   },
   {
     "id": "fam-59",
@@ -13208,7 +14739,17 @@
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fam-59--1780580156551.jpeg",
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 288,
+      "protein": 4.5,
+      "fat": 10.2,
+      "carbs": 43.7,
+      "fiber": 3.9
+    }
   },
   {
     "id": "kar-01",
@@ -13218,8 +14759,8 @@
     "ingredients": [
       {
         "name": "Festkochende Kartoffeln",
-        "amount": 1200,
-        "unit": "g",
+        "amount": 1.2,
+        "unit": "kg",
         "perPortions": 4
       },
       {
@@ -13252,13 +14793,29 @@
       "Bei 200 °C Heissluft auf der mittleren Schiene ca. 20–25 Min. backen bis goldbraun.",
       "In den letzten 5–10 Minuten die Ofentür einen Spalt öffnen, damit Feuchtigkeit entweicht."
     ],
-    "tips": "Kartoffeln gut trocken tupfen für extra Knusprigkeit. Nicht zu viele auf einmal aufs Blech – sie müssen Abstand haben.",
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/kar-01-1780785412795.jpg",
     "tags": [
       "Vegan",
-      "Kinderfreundlich"
+      "Kinderfreundlich",
+      "Vegetarisch",
+      "Frühling",
+      "Sommer",
+      "Herbst",
+      "Winter",
+      "Mittagsgericht",
+      "Abendgericht",
+      "Ofengericht"
     ],
-    "dietCategory": "vegan"
+    "allergens": [],
+    "nutrition": {
+      "kcal": 312,
+      "protein": 5.4,
+      "fat": 5.8,
+      "carbs": 59.1,
+      "fiber": 5.1
+    },
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "ocr-15",
@@ -13331,7 +14888,19 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "ei",
+      "gluten",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 587,
+      "protein": 22.4,
+      "fat": 35.8,
+      "carbs": 42.6,
+      "fiber": 3.8
+    }
   },
   {
     "id": "ocr-16",
@@ -13399,7 +14968,19 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "ei",
+      "milch",
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 398,
+      "protein": 13.8,
+      "fat": 19.6,
+      "carbs": 40.2,
+      "fiber": 3.2
+    }
   },
   {
     "id": "fam-03",
@@ -13485,7 +15066,19 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "ei",
+      "gluten",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 385,
+      "protein": 5.2,
+      "fat": 17.8,
+      "carbs": 52.4,
+      "fiber": 1.4
+    }
   },
   {
     "id": "fam-04",
@@ -13576,7 +15169,18 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "milch",
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 378,
+      "protein": 3.8,
+      "fat": 33.2,
+      "carbs": 6.4,
+      "fiber": 0.8
+    }
   },
   {
     "id": "fam-06",
@@ -13645,7 +15249,15 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [],
+    "nutrition": {
+      "kcal": 245,
+      "protein": 7.2,
+      "fat": 11.4,
+      "carbs": 28.6,
+      "fiber": 2.8
+    }
   },
   {
     "id": "fam-07",
@@ -13730,14 +15342,36 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "ei",
+      "gluten",
+      "milch",
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 318,
+      "protein": 11.2,
+      "fat": 8.4,
+      "carbs": 51.6,
+      "fiber": 6.2
+    }
   },
   {
     "id": "fam-08",
     "name": "Burger",
     "category": "Wraps & Sandwiches",
     "timeMinutes": 20,
-    "tags": [],
+    "tags": [
+      "Mittagsgericht",
+      "Abendgericht",
+      "Grillgericht",
+      "Kinderfreundlich",
+      "Winter",
+      "Herbst",
+      "Sommer",
+      "Frühling"
+    ],
     "weatherType": "warm",
     "source": "Familien-Rezeptbuch",
     "basePortions": 4,
@@ -13803,10 +15437,21 @@
       "Burger anbraten.",
       "Alle Zutaten belegen: Kräuterbutter, Senf, Ketchup nach Belieben."
     ],
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fam-08-1780785769273.jpg",
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "allergens": [
+      "gluten",
+      "milch",
+      "senf"
+    ],
+    "nutrition": {
+      "kcal": 548,
+      "protein": 26.4,
+      "fat": 24.8,
+      "carbs": 52.3,
+      "fiber": 5.6
+    }
   },
   {
     "id": "fam-15",
@@ -13917,7 +15562,17 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 145,
+      "protein": 4.2,
+      "fat": 4.1,
+      "carbs": 18.3,
+      "fiber": 5.8
+    }
   },
   {
     "id": "fam-18",
@@ -14026,7 +15681,20 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "ei",
+      "gluten",
+      "milch",
+      "senf"
+    ],
+    "nutrition": {
+      "kcal": 312,
+      "protein": 11.8,
+      "fat": 10.2,
+      "carbs": 42.5,
+      "fiber": 5.3
+    }
   },
   {
     "id": "fam-19",
@@ -14099,7 +15767,18 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "milch",
+      "schalenfruechte"
+    ],
+    "nutrition": {
+      "kcal": 587,
+      "protein": 7.8,
+      "fat": 40.2,
+      "carbs": 48.3,
+      "fiber": 3.2
+    }
   },
   {
     "id": "fam-23",
@@ -14208,7 +15887,18 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "milch",
+      "schalenfruechte"
+    ],
+    "nutrition": {
+      "kcal": 152,
+      "protein": 5.1,
+      "fat": 10.8,
+      "carbs": 9.2,
+      "fiber": 3.4
+    }
   },
   {
     "id": "fam-24",
@@ -14274,7 +15964,17 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 245,
+      "protein": 0.6,
+      "fat": 27.4,
+      "carbs": 0.5,
+      "fiber": 0.2
+    }
   },
   {
     "id": "fam-25",
@@ -14350,7 +16050,18 @@
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fam-25-2--1780580212771.jpeg",
     "imageKochen": null,
     "tips": "",
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "allergens": [
+      "milch",
+      "senf"
+    ],
+    "nutrition": {
+      "kcal": 308,
+      "protein": 1.2,
+      "fat": 33.8,
+      "carbs": 1.3,
+      "fiber": 0.8
+    }
   },
   {
     "id": "fam-28",
@@ -14437,7 +16148,15 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [],
+    "nutrition": {
+      "kcal": 158,
+      "protein": 5.3,
+      "fat": 11.2,
+      "carbs": 10.8,
+      "fiber": 5.1
+    }
   },
   {
     "id": "fam-34",
@@ -14445,9 +16164,15 @@
     "category": "Vegetarische Hauptgerichte",
     "timeMinutes": 35,
     "tags": [
-      "Vegetarisch",
       "Vegan",
-      "Asiatisch"
+      "Asiatisch",
+      "Winter",
+      "Herbst",
+      "Sommer",
+      "Frühling",
+      "Kinderfreundlich",
+      "Abendgericht",
+      "Mittagsgericht"
     ],
     "weatherType": "neutral",
     "source": "Familien-Rezeptbuch",
@@ -14559,10 +16284,23 @@
       "Reisnudeln nach Anleitung kochen, mit Tofu und Gemüse mischen.",
       "Mit Sesam, Erdnüssen und Koriander garnieren."
     ],
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/asi-03-1780785826281.jpg",
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "allergens": [
+      "erdnuesse",
+      "gluten",
+      "milch",
+      "sesam",
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 485,
+      "protein": 16.8,
+      "fat": 15.3,
+      "carbs": 70.2,
+      "fiber": 5.6
+    }
   },
   {
     "id": "fam-36",
@@ -14638,7 +16376,17 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 118,
+      "protein": 2.8,
+      "fat": 2.6,
+      "carbs": 16.4,
+      "fiber": 5.2
+    }
   },
   {
     "id": "fam-40",
@@ -14699,7 +16447,20 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "ei",
+      "gluten",
+      "milch",
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 168,
+      "protein": 11.2,
+      "fat": 8.4,
+      "carbs": 12.3,
+      "fiber": 2.1
+    }
   },
   {
     "id": "fam-43",
@@ -14786,7 +16547,18 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "ei",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 178,
+      "protein": 13.2,
+      "fat": 12.8,
+      "carbs": 2.1,
+      "fiber": 0.3
+    }
   },
   {
     "id": "fam-45",
@@ -14857,7 +16629,19 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "gluten",
+      "milch",
+      "senf"
+    ],
+    "nutrition": {
+      "kcal": 486,
+      "protein": 28.4,
+      "fat": 22.6,
+      "carbs": 38.2,
+      "fiber": 2.1
+    }
   },
   {
     "id": "fam-46",
@@ -14913,7 +16697,18 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "gluten",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 198,
+      "protein": 6.2,
+      "fat": 8.4,
+      "carbs": 24.8,
+      "fiber": 3.2
+    }
   },
   {
     "id": "fam-47",
@@ -14968,7 +16763,17 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 156,
+      "protein": 4.8,
+      "fat": 6.2,
+      "carbs": 20.1,
+      "fiber": 2.1
+    }
   },
   {
     "id": "fam-51",
@@ -15046,11 +16851,20 @@
       "Cashews mit der Brühe fein pürieren.",
       "Cashewrahm zum Spinat geben, aufkochen. Mit Muskatnuss, Salz, Pfeffer und Hefeflocken würzen."
     ],
-    "imageUrl": null,
-    "imageZutaten": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fam-51-1--1780786021770.jpeg",
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fam-51-2--1780786040870.jpeg",
     "imageKochen": null,
-    "tips": "",
-    "dietCategory": "vegan"
+    "allergens": [
+      "milch",
+      "schalenfruechte"
+    ],
+    "nutrition": {
+      "kcal": 198,
+      "protein": 7.8,
+      "fat": 15.6,
+      "carbs": 9.2,
+      "fiber": 3.8
+    }
   },
   {
     "id": "fam-52",
@@ -15135,7 +16949,19 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "gluten",
+      "milch",
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 428,
+      "protein": 4.2,
+      "fat": 38.6,
+      "carbs": 10.8,
+      "fiber": 1.2
+    }
   },
   {
     "id": "fam-54",
@@ -15188,7 +17014,17 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 242,
+      "protein": 2.1,
+      "fat": 22.8,
+      "carbs": 6.4,
+      "fiber": 0.2
+    }
   },
   {
     "id": "fam-57",
@@ -15231,7 +17067,15 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [],
+    "nutrition": {
+      "kcal": 58,
+      "protein": 0.9,
+      "fat": 0.2,
+      "carbs": 12.8,
+      "fiber": 2.4
+    }
   },
   {
     "id": "fam-58",
@@ -15305,7 +17149,18 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "milch",
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 218,
+      "protein": 3.8,
+      "fat": 9.2,
+      "carbs": 26.4,
+      "fiber": 2.1
+    }
   },
   {
     "id": "fvt-01",
@@ -15390,7 +17245,20 @@
     "tags": [
       "Mealprep-geeignet",
       "Mittagsgericht"
-    ]
+    ],
+    "allergens": [
+      "gluten",
+      "milch",
+      "sesam",
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 312,
+      "protein": 11.4,
+      "fat": 11.8,
+      "carbs": 38.6,
+      "fiber": 6.8
+    }
   },
   {
     "id": "fvt-05",
@@ -15480,7 +17348,19 @@
     "imageUrl": null,
     "tags": [
       "Mittagsgericht"
-    ]
+    ],
+    "allergens": [
+      "gluten",
+      "milch",
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 448,
+      "protein": 18.2,
+      "fat": 14.8,
+      "carbs": 58.4,
+      "fiber": 11.3
+    }
   },
   {
     "id": "fvt-11",
@@ -15559,7 +17439,17 @@
     "tags": [
       "Mittagsgericht",
       "Mexikanisch"
-    ]
+    ],
+    "allergens": [
+      "schalenfruechte"
+    ],
+    "nutrition": {
+      "kcal": 402,
+      "protein": 13.8,
+      "fat": 17.6,
+      "carbs": 48.2,
+      "fiber": 10.4
+    }
   },
   {
     "id": "fvt-13",
@@ -15626,7 +17516,19 @@
     "tags": [
       "Mealprep-geeignet",
       "Mittagsgericht"
-    ]
+    ],
+    "allergens": [
+      "gluten",
+      "schalenfruechte",
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 418,
+      "protein": 17.6,
+      "fat": 16.2,
+      "carbs": 48.5,
+      "fiber": 6.8
+    }
   },
   {
     "id": "fvt-14",
@@ -15720,7 +17622,18 @@
     "tips": "Wenn die Masse zu flüssig ist, etwas Mehl oder Haferflocken beigeben.",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---linsen-ta-tschli-1--1780580295074.jpeg",
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---linsen-ta-tschli-2--1780580300522.jpeg",
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "gluten",
+      "schalenfruechte"
+    ],
+    "nutrition": {
+      "kcal": 562,
+      "protein": 21.4,
+      "fat": 19.8,
+      "carbs": 72.3,
+      "fiber": 12.6
+    }
   },
   {
     "id": "ocr-02",
@@ -15789,7 +17702,19 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "ei",
+      "gluten",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 198,
+      "protein": 4.8,
+      "fat": 6.2,
+      "carbs": 31.4,
+      "fiber": 1.4
+    }
   },
   {
     "id": "ocr-03",
@@ -15852,7 +17777,19 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "gluten",
+      "milch",
+      "schalenfruechte"
+    ],
+    "nutrition": {
+      "kcal": 398,
+      "protein": 3.8,
+      "fat": 20.6,
+      "carbs": 49.2,
+      "fiber": 2.8
+    }
   },
   {
     "id": "ocr-08",
@@ -15906,7 +17843,17 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 218,
+      "protein": 12.4,
+      "fat": 10.8,
+      "carbs": 18.6,
+      "fiber": 2.4
+    }
   },
   {
     "id": "ocr-13",
@@ -15962,7 +17909,17 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "gluten"
+    ],
+    "nutrition": {
+      "kcal": 162,
+      "protein": 4.8,
+      "fat": 6.4,
+      "carbs": 21.2,
+      "fiber": 1.6
+    }
   },
   {
     "id": "ocr-18",
@@ -16030,7 +17987,18 @@
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": ""
+    "tips": "",
+    "allergens": [
+      "gluten",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 208,
+      "protein": 5.8,
+      "fat": 6.2,
+      "carbs": 32.4,
+      "fiber": 1.4
+    }
   },
   {
     "id": "son-01",
@@ -16090,7 +18058,18 @@
     "imageUrl": null,
     "tags": [
       "Mexikanisch"
-    ]
+    ],
+    "allergens": [
+      "gluten",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 368,
+      "protein": 9.2,
+      "fat": 16.8,
+      "carbs": 46.4,
+      "fiber": 6.2
+    }
   },
   {
     "id": "son-02",
@@ -16144,7 +18123,15 @@
     "imageUrl": null,
     "tags": [
       "Mexikanisch"
-    ]
+    ],
+    "allergens": [],
+    "nutrition": {
+      "kcal": 442,
+      "protein": 17.8,
+      "fat": 16.2,
+      "carbs": 54.3,
+      "fiber": 11.4
+    }
   },
   {
     "id": "son-03",
@@ -16201,7 +18188,17 @@
       "Frühling",
       "Sommer",
       "Orientalisch"
-    ]
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "nutrition": {
+      "kcal": 485,
+      "protein": 18.5,
+      "fat": 18.7,
+      "carbs": 58.2,
+      "fiber": 9.3
+    }
   },
   {
     "id": "son-04",
@@ -16282,7 +18279,19 @@
       "Mittagsgericht"
     ],
     "imageZutaten": null,
-    "imageKochen": null
+    "imageKochen": null,
+    "allergens": [
+      "ei",
+      "gluten",
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 398,
+      "protein": 14.6,
+      "fat": 28.4,
+      "carbs": 22.1,
+      "fiber": 8.2
+    }
   },
   {
     "id": "son-05",
@@ -16340,7 +18349,17 @@
     "tips": "Im Kühlschrank ca. 2–3 Wochen haltbar wenn mit Olivenöl bedeckt.",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ba-rlauchpesto-2--1780580422187.jpeg",
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ba-rlauchpesto-3--1780580437953.jpeg",
-    "imageKochen": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ba-rlauchpesto-1--1780580445058.jpeg"
+    "imageKochen": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ba-rlauchpesto-1--1780580445058.jpeg",
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 342,
+      "protein": 6.8,
+      "fat": 33.7,
+      "carbs": 4.2,
+      "fiber": 1.8
+    }
   },
   {
     "id": "son-06",
@@ -16353,7 +18372,6 @@
     "weatherType": "warm",
     "source": "Cuiseline",
     "basePortions": 1,
-    "dietCategory": "vegan",
     "description": "Schneller Wrap mit Hummus, frischem Gemüse und Rucola.",
     "ingredients": [
       {
@@ -16418,10 +18436,19 @@
       "Rucola dazugeben, mit Salz und Pfeffer würzen.",
       "Wrap fest einrollen."
     ],
-    "tips": "Gemüse kann nach Belieben variiert werden.",
-    "imageUrl": null,
-    "imageZutaten": null,
-    "imageKochen": null
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---hummus-gemu-se-wrap-1--1780786140067.jpeg",
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---hummus-gemu-se-wrap-2--1780786147162.jpeg",
+    "imageKochen": null,
+    "allergens": [
+      "ei"
+    ],
+    "nutrition": {
+      "kcal": 387,
+      "protein": 14.2,
+      "fat": 12.8,
+      "carbs": 52.6,
+      "fiber": 10.5
+    }
   },
   {
     "id": "son-07",
@@ -16510,7 +18537,19 @@
     "tips": "",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---tofu-gipfeli-1--1780580501728.jpeg",
     "imageZutaten": null,
-    "imageKochen": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---tofu-gipfeli-2--1780580506536.jpeg"
+    "imageKochen": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---tofu-gipfeli-2--1780580506536.jpeg",
+    "allergens": [
+      "milch",
+      "senf",
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 358,
+      "protein": 12.4,
+      "fat": 24.6,
+      "carbs": 23.8,
+      "fiber": 2.1
+    }
   },
   {
     "id": "son-08",
@@ -16589,7 +18628,15 @@
       "Vegan",
       "Mealprep-geeignet"
     ],
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "allergens": [],
+    "nutrition": {
+      "kcal": 145,
+      "protein": 6.8,
+      "fat": 5.2,
+      "carbs": 17.3,
+      "fiber": 4.6
+    }
   },
   {
     "id": "son-09",
@@ -16665,7 +18712,15 @@
       "Sommer",
       "Orientalisch"
     ],
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "allergens": [],
+    "nutrition": {
+      "kcal": 268,
+      "protein": 2.1,
+      "fat": 25.8,
+      "carbs": 9.4,
+      "fiber": 5.6
+    }
   },
   {
     "id": "son-10",
@@ -16740,7 +18795,18 @@
       "Vegan",
       "Asiatisch"
     ],
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "allergens": [
+      "gluten",
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 512,
+      "protein": 22.3,
+      "fat": 15.8,
+      "carbs": 68.4,
+      "fiber": 12.7
+    }
   },
   {
     "id": "son-11",
@@ -16814,7 +18880,17 @@
       "Schweizer",
       "Kinderfreundlich"
     ],
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "allergens": [
+      "ei"
+    ],
+    "nutrition": {
+      "kcal": 268,
+      "protein": 11.2,
+      "fat": 17.4,
+      "carbs": 16.3,
+      "fiber": 2.8
+    }
   },
   {
     "id": "son-12",
@@ -16871,7 +18947,15 @@
       "Vegan",
       "Mealprep-geeignet"
     ],
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "allergens": [],
+    "nutrition": {
+      "kcal": 58,
+      "protein": 1.8,
+      "fat": 3.2,
+      "carbs": 5.1,
+      "fiber": 1.4
+    }
   },
   {
     "id": "son-13",
@@ -16940,7 +19024,19 @@
       "Vegan",
       "Mealprep-geeignet"
     ],
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "allergens": [
+      "milch",
+      "schalenfruechte",
+      "sesam"
+    ],
+    "nutrition": {
+      "kcal": 168,
+      "protein": 3.2,
+      "fat": 11.8,
+      "carbs": 12.4,
+      "fiber": 1.3
+    }
   },
   {
     "id": "son-14",
@@ -17019,7 +19115,18 @@
     "tags": [
       "Vegan"
     ],
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "allergens": [
+      "gluten",
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 68,
+      "protein": 1.8,
+      "fat": 3.2,
+      "carbs": 8.4,
+      "fiber": 1.2
+    }
   },
   {
     "id": "son-15",
@@ -17064,7 +19171,18 @@
       "Kinderfreundlich",
       "Sommer"
     ],
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "allergens": [
+      "ei",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 128,
+      "protein": 1.4,
+      "fat": 8.2,
+      "carbs": 13.6,
+      "fiber": 1.8
+    }
   },
   {
     "id": "son-16",
@@ -17164,7 +19282,20 @@
       "Schweizer",
       "Herbst"
     ],
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "allergens": [
+      "gluten",
+      "milch",
+      "schalenfruechte",
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 512,
+      "protein": 7.4,
+      "fat": 25.8,
+      "carbs": 63.2,
+      "fiber": 5.8
+    }
   },
   {
     "id": "son-17",
@@ -17246,7 +19377,20 @@
       "Herbst",
       "Kinderfreundlich"
     ],
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "allergens": [
+      "ei",
+      "gluten",
+      "milch",
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 485,
+      "protein": 10.2,
+      "fat": 18.5,
+      "carbs": 67.3,
+      "fiber": 3.8
+    }
   },
   {
     "id": "kds-01",
@@ -17343,7 +19487,19 @@
     "tags": [
       "Vegan",
       "Mealprep-geeignet"
-    ]
+    ],
+    "allergens": [
+      "gluten",
+      "milch",
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 152,
+      "protein": 5.8,
+      "fat": 3.2,
+      "carbs": 24.6,
+      "fiber": 4.2
+    }
   },
   {
     "id": "kds-02",
@@ -17445,7 +19601,18 @@
     "tags": [
       "Vegan",
       "Mealprep-geeignet"
-    ]
+    ],
+    "allergens": [
+      "gluten",
+      "sesam"
+    ],
+    "nutrition": {
+      "kcal": 238,
+      "protein": 9.4,
+      "fat": 11.8,
+      "carbs": 24.2,
+      "fiber": 5.6
+    }
   },
   {
     "id": "kds-03",
@@ -17529,7 +19696,18 @@
     "tags": [
       "Vegan",
       "Mealprep-geeignet"
-    ]
+    ],
+    "allergens": [
+      "gluten",
+      "sesam"
+    ],
+    "nutrition": {
+      "kcal": 52,
+      "protein": 1.8,
+      "fat": 2.4,
+      "carbs": 5.8,
+      "fiber": 1.2
+    }
   },
   {
     "id": "kds-04",
@@ -17643,7 +19821,18 @@
     "tags": [
       "Vegan",
       "Mealprep-geeignet"
-    ]
+    ],
+    "allergens": [
+      "gluten",
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 218,
+      "protein": 7.2,
+      "fat": 11.4,
+      "carbs": 22.8,
+      "fiber": 4.3
+    }
   },
   {
     "id": "kds-05",
@@ -17726,7 +19915,17 @@
     "tags": [
       "Vegan",
       "Mealprep-geeignet"
-    ]
+    ],
+    "allergens": [
+      "sesam"
+    ],
+    "nutrition": {
+      "kcal": 56,
+      "protein": 1.5,
+      "fat": 3.5,
+      "carbs": 4.8,
+      "fiber": 0.9
+    }
   },
   {
     "id": "kds-06",
@@ -17808,7 +20007,17 @@
     "tags": [
       "Vegan",
       "Mealprep-geeignet"
-    ]
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "nutrition": {
+      "kcal": 52,
+      "protein": 2.8,
+      "fat": 1.2,
+      "carbs": 7.5,
+      "fiber": 1.8
+    }
   },
   {
     "id": "kds-07",
@@ -17891,7 +20100,19 @@
     "tags": [
       "Vegan",
       "Mealprep-geeignet"
-    ]
+    ],
+    "allergens": [
+      "gluten",
+      "milch",
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 117,
+      "protein": 3.2,
+      "fat": 4.8,
+      "carbs": 15.8,
+      "fiber": 1.8
+    }
   },
   {
     "id": "kds-08",
@@ -17975,7 +20196,15 @@
       "Vegan",
       "Mealprep-geeignet",
       "Mittagsgericht"
-    ]
+    ],
+    "allergens": [],
+    "nutrition": {
+      "kcal": 68,
+      "protein": 3.2,
+      "fat": 2.5,
+      "carbs": 7.8,
+      "fiber": 2.4
+    }
   },
   {
     "id": "kds-09",
@@ -18071,7 +20300,19 @@
     "tags": [
       "Vegan",
       "Mealprep-geeignet"
-    ]
+    ],
+    "allergens": [
+      "gluten",
+      "sesam",
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 165,
+      "protein": 6.8,
+      "fat": 2.5,
+      "carbs": 28.2,
+      "fiber": 3.5
+    }
   },
   {
     "id": "kds-10",
@@ -18154,7 +20395,17 @@
     "tags": [
       "Vegan",
       "Mealprep-geeignet"
-    ]
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "nutrition": {
+      "kcal": 46,
+      "protein": 1.5,
+      "fat": 2.2,
+      "carbs": 5.2,
+      "fiber": 1
+    }
   },
   {
     "id": "kds-11",
@@ -18225,7 +20476,17 @@
     "tags": [
       "Vegan",
       "Mealprep-geeignet"
-    ]
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "nutrition": {
+      "kcal": 62,
+      "protein": 2.5,
+      "fat": 2.4,
+      "carbs": 7.5,
+      "fiber": 1.6
+    }
   },
   {
     "id": "kds-12",
@@ -18314,7 +20575,20 @@
     "tags": [
       "Vegan",
       "Mealprep-geeignet"
-    ]
+    ],
+    "allergens": [
+      "gluten",
+      "milch",
+      "sesam",
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 137,
+      "protein": 6.2,
+      "fat": 2.8,
+      "carbs": 21.5,
+      "fiber": 3.8
+    }
   },
   {
     "id": "kds-13",
@@ -18385,7 +20659,19 @@
     "tags": [
       "Vegan",
       "Mealprep-geeignet"
-    ]
+    ],
+    "allergens": [
+      "gluten",
+      "schalenfruechte",
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 145,
+      "protein": 6.2,
+      "fat": 4.2,
+      "carbs": 21.5,
+      "fiber": 4.5
+    }
   },
   {
     "id": "kds-14",
@@ -18438,7 +20724,18 @@
     "tags": [
       "Vegan",
       "Mealprep-geeignet"
-    ]
+    ],
+    "allergens": [
+      "ei",
+      "schalenfruechte"
+    ],
+    "nutrition": {
+      "kcal": 45,
+      "protein": 1.8,
+      "fat": 2.2,
+      "carbs": 5.2,
+      "fiber": 1.2
+    }
   },
   {
     "id": "kds-15",
@@ -18509,7 +20806,18 @@
     "tags": [
       "Vegan",
       "Mealprep-geeignet"
-    ]
+    ],
+    "allergens": [
+      "gluten",
+      "schalenfruechte"
+    ],
+    "nutrition": {
+      "kcal": 73,
+      "protein": 1.8,
+      "fat": 4.2,
+      "carbs": 7.1,
+      "fiber": 1.2
+    }
   },
   {
     "id": "kds-16",
@@ -18580,7 +20888,18 @@
     "tags": [
       "Vegan",
       "Mealprep-geeignet"
-    ]
+    ],
+    "allergens": [
+      "schalenfruechte",
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 72,
+      "protein": 2.3,
+      "fat": 1.8,
+      "carbs": 11.4,
+      "fiber": 1.6
+    }
   },
   {
     "id": "kds-17",
@@ -18651,7 +20970,19 @@
     "tags": [
       "Vegan",
       "Mealprep-geeignet"
-    ]
+    ],
+    "allergens": [
+      "ei",
+      "gluten",
+      "schalenfruechte"
+    ],
+    "nutrition": {
+      "kcal": 79,
+      "protein": 2.8,
+      "fat": 3.2,
+      "carbs": 10.2,
+      "fiber": 2.1
+    }
   },
   {
     "id": "kds-18",
@@ -18709,7 +21040,17 @@
     "tags": [
       "Vegan",
       "Mealprep-geeignet"
-    ]
+    ],
+    "allergens": [
+      "schalenfruechte"
+    ],
+    "nutrition": {
+      "kcal": 68,
+      "protein": 1.6,
+      "fat": 2.3,
+      "carbs": 10.1,
+      "fiber": 1.4
+    }
   },
   {
     "id": "kds-19",
@@ -18787,7 +21128,20 @@
     "tags": [
       "Vegan",
       "Mealprep-geeignet"
-    ]
+    ],
+    "allergens": [
+      "gluten",
+      "milch",
+      "schalenfruechte",
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 148,
+      "protein": 5.8,
+      "fat": 2.7,
+      "carbs": 24.3,
+      "fiber": 3.2
+    }
   },
   {
     "id": "kds-20",
@@ -18872,7 +21226,20 @@
       "Mealprep-geeignet",
       "Herbst",
       "Winter"
-    ]
+    ],
+    "allergens": [
+      "gluten",
+      "milch",
+      "schalenfruechte",
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 197,
+      "protein": 6.8,
+      "fat": 4.9,
+      "carbs": 31.2,
+      "fiber": 4.3
+    }
   },
   {
     "id": "kds-21",
@@ -18973,6 +21340,18 @@
     "tags": [
       "Vegan",
       "Mealprep-geeignet"
-    ]
+    ],
+    "allergens": [
+      "gluten",
+      "sesam",
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 175,
+      "protein": 4.2,
+      "fat": 9.8,
+      "carbs": 18.4,
+      "fiber": 3.6
+    }
   }
 ]

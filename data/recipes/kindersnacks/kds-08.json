@@ -80,5 +80,13 @@
     "Vegan",
     "Mealprep-geeignet",
     "Mittagsgericht"
-  ]
+  ],
+  "allergens": [],
+  "nutrition": {
+    "kcal": 68,
+    "protein": 3.2,
+    "fat": 2.5,
+    "carbs": 7.8,
+    "fiber": 2.4
+  }
 }

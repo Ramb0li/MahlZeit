@@ -86,5 +86,15 @@
     "Sommer",
     "Frühling",
     "Italienisch"
-  ]
+  ],
+  "allergens": [
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 682,
+    "protein": 28.4,
+    "fat": 32.6,
+    "carbs": 65.8,
+    "fiber": 3.2
+  }
 }

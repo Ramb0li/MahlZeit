@@ -1,6 +1,6 @@
 {
   "id": "rec-1779488181331-i6vew",
-  "name": "Tomaten & Mozzerella Salat",
+  "name": "Tomaten & Mozzarella Salat",
   "category": "Salate & Bowls",
   "timeMinutes": 15,
   "ingredients": [],
@@ -8,12 +8,22 @@
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "",
-  "steps": [],
-  "tips": "",
-  "imageUrl": null,
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/bryony-elena-djgeisqeeiw-unsplash-1780781966169.jpg",
   "tags": [
     "Mittagsgericht",
     "Vegetarisch",
-    "Sommer"
-  ]
+    "Sommer",
+    "Abendgericht",
+    "Grillgericht"
+  ],
+  "allergens": [],
+  "nutrition": {
+    "kcal": 185,
+    "protein": 12.5,
+    "fat": 13.2,
+    "carbs": 4.8,
+    "fiber": 1.2
+  },
+  "imageZutaten": null,
+  "imageKochen": null
 }

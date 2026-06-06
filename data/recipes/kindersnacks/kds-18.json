@@ -54,5 +54,15 @@
   "tags": [
     "Vegan",
     "Mealprep-geeignet"
-  ]
+  ],
+  "allergens": [
+    "schalenfruechte"
+  ],
+  "nutrition": {
+    "kcal": 68,
+    "protein": 1.6,
+    "fat": 2.3,
+    "carbs": 10.1,
+    "fiber": 1.4
+  }
 }

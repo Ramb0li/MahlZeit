@@ -103,5 +103,15 @@
     "Herbst",
     "Winter",
     "Frühling"
-  ]
+  ],
+  "allergens": [
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 485,
+    "protein": 18.7,
+    "fat": 14.2,
+    "carbs": 68.3,
+    "fiber": 12.5
+  }
 }

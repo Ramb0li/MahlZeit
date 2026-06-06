@@ -67,5 +67,17 @@
   "tags": [
     "Vegan",
     "Mealprep-geeignet"
-  ]
+  ],
+  "allergens": [
+    "gluten",
+    "schalenfruechte",
+    "soja"
+  ],
+  "nutrition": {
+    "kcal": 145,
+    "protein": 6.2,
+    "fat": 4.2,
+    "carbs": 21.5,
+    "fiber": 4.5
+  }
 }

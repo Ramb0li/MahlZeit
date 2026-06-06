@@ -4,14 +4,54 @@
   "category": "Salate & Bowls",
   "timeMinutes": 30,
   "ingredients": [
-    { "name": "Fusilli", "amount": 80, "unit": "g", "perPortions": 4 },
-    { "name": "Kichererbsen (aus der Dose, abgetropft)", "amount": 240, "unit": "g", "perPortions": 4 },
-    { "name": "Vegane Mayonnaise", "amount": 120, "unit": "g", "perPortions": 4 },
-    { "name": "Kala Namak (schwarzes Salz)", "amount": 1, "unit": "TL", "perPortions": 4 },
-    { "name": "Paprikapulver", "amount": 0.5, "unit": "TL", "perPortions": 4 },
-    { "name": "Kurkuma", "amount": 0.5, "unit": "TL", "perPortions": 4 },
-    { "name": "Essiggurken (kleine)", "amount": 50, "unit": "g", "perPortions": 4 },
-    { "name": "Schnittlauch", "amount": 0.5, "unit": "Bund", "perPortions": 4 }
+    {
+      "name": "Fusilli",
+      "amount": 80,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Kichererbsen (aus der Dose, abgetropft)",
+      "amount": 240,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Vegane Mayonnaise",
+      "amount": 120,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Kala Namak (schwarzes Salz)",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Paprikapulver",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kurkuma",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Essiggurken (kleine)",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Schnittlauch",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    }
   ],
   "weatherType": "neutral",
   "source": "Avobelle",
@@ -26,6 +66,19 @@
   ],
   "tips": "Kala Namak (schwarzes Schwefelsalz) gibt dem Salat den typischen Eier-Geschmack und ist in Bioläden oder online erhältlich.",
   "imageUrl": null,
-  "tags": ["Vegan", "Mittagsgericht"],
-  "dietCategory": "vegan"
+  "tags": [
+    "Vegan",
+    "Mittagsgericht"
+  ],
+  "dietCategory": "vegan",
+  "allergens": [
+    "ei"
+  ],
+  "nutrition": {
+    "kcal": 352,
+    "protein": 9.4,
+    "fat": 21.6,
+    "carbs": 30.2,
+    "fiber": 5.8
+  }
 }

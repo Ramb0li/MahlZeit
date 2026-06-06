@@ -1,0 +1,40 @@
+{
+  "AppShell": {
+    "tabPlanner":  "Menu de la semaine",
+    "tabShopping": "Courses",
+    "tabPantry":   "Garde-manger",
+    "tabRecipes":  "Recettes",
+    "tabSettings": "Paramètres",
+    "logout":      "Se déconnecter",
+    "roleMember":  "Membre",
+    "roleOwner":   "Propriétaire"
+  },
+  "Landing": {
+    "navLogin":       "Se connecter",
+    "navStartFree":   "Commencer gratuitement",
+    "navToPlanner":   "Vers le planificateur",
+    "heroCta":        "En savoir plus",
+    "heroNote":       "Sans abonnement obligatoire · 🇨🇭 Made in Switzerland",
+    "kicker":         "Votre planificateur de menus intelligent",
+    "statement1":     "Fini la question",
+    "statement2":     "«Qu'est-ce que je cuisine aujourd'hui?»",
+    "mobileCta":      "7 jours gratuits",
+    "mobileCtaNote":  "Aucune carte de crédit requise",
+    "planBuy":        "Acheter maintenant →",
+    "planSelect":     "Choisir →"
+  },
+  "NotFound": {
+    "title":       "Cette page n'est pas au menu.",
+    "description": "La recette a peut-être été supprimée, l'URL contient une faute de frappe, ou le chef avait une mauvaise journée.",
+    "backHome":    "Retour à l'accueil"
+  },
+  "LegalShell": {
+    "backHome": "Retour à l'accueil"
+  },
+  "SiteFooter": {
+    "privacy": "Protection des données",
+    "imprint": "Mentions légales",
+    "terms":   "Conditions d'utilisation",
+    "contact": "Contact"
+  }
+}

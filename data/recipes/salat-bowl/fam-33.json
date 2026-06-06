@@ -66,8 +66,18 @@
     "Dressing aus Senf, Essig, Öl, Sojasauce, Salz, Pfeffer rühren.",
     "Mit Zwiebeln und Randen mischen."
   ],
-  "imageUrl": null,
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fam-33-1780780224703.jpg",
   "imageZutaten": null,
   "imageKochen": null,
-  "tips": ""
+  "allergens": [
+    "senf",
+    "soja"
+  ],
+  "nutrition": {
+    "kcal": 158,
+    "protein": 3.2,
+    "fat": 10.8,
+    "carbs": 12.4,
+    "fiber": 3.8
+  }
 }

@@ -81,5 +81,18 @@
     "Mealprep-geeignet",
     "Herbst",
     "Winter"
-  ]
+  ],
+  "allergens": [
+    "gluten",
+    "milch",
+    "schalenfruechte",
+    "soja"
+  ],
+  "nutrition": {
+    "kcal": 197,
+    "protein": 6.8,
+    "fat": 4.9,
+    "carbs": 31.2,
+    "fiber": 4.3
+  }
 }

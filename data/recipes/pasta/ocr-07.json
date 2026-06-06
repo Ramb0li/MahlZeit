@@ -71,5 +71,17 @@
   "imageUrl": null,
   "imageZutaten": null,
   "imageKochen": null,
-  "tips": ""
+  "tips": "",
+  "allergens": [
+    "fisch",
+    "gluten",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 448,
+    "protein": 18.7,
+    "fat": 7.2,
+    "carbs": 75.4,
+    "fiber": 11.3
+  }
 }

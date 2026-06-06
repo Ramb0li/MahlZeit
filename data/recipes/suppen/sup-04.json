@@ -47,5 +47,13 @@
     "Mittagsgericht",
     "Herbst",
     "Winter"
-  ]
+  ],
+  "allergens": [],
+  "nutrition": {
+    "kcal": 298,
+    "protein": 19.5,
+    "fat": 1.8,
+    "carbs": 49.2,
+    "fiber": 16.8
+  }
 }

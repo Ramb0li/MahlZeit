@@ -4,23 +4,108 @@
   "category": "Pasta",
   "timeMinutes": 100,
   "ingredients": [
-    { "name": "Grüne Linsen", "amount": 200, "unit": "g", "perPortions": 4 },
-    { "name": "Lasagne-Blätter (grün)", "amount": 12, "unit": "Stk", "perPortions": 4 },
-    { "name": "Passierte Tomaten", "amount": 700, "unit": "g", "perPortions": 4 },
-    { "name": "Zwiebel", "amount": 1, "unit": "Stk", "perPortions": 4 },
-    { "name": "Knoblauchzehen", "amount": 2, "unit": "Zehen", "perPortions": 4 },
-    { "name": "Rüebli (Karotte)", "amount": 1, "unit": "Stk", "perPortions": 4 },
-    { "name": "Knollensellerie", "amount": 200, "unit": "g", "perPortions": 4 },
-    { "name": "Getrocknete Steinpilze", "amount": 25, "unit": "g", "perPortions": 4 },
-    { "name": "Wasser", "amount": 400, "unit": "ml", "perPortions": 4 },
-    { "name": "Lorbeerblatt", "amount": 1, "unit": "Stk", "perPortions": 4 },
-    { "name": "Olivenöl", "amount": 2, "unit": "EL", "perPortions": 4 },
-    { "name": "Haferdrink", "amount": 700, "unit": "ml", "perPortions": 4 },
-    { "name": "Weissmehl (für Béchamel)", "amount": 4, "unit": "EL", "perPortions": 4 },
-    { "name": "Olivenöl (für Béchamel)", "amount": 3, "unit": "EL", "perPortions": 4 },
-    { "name": "Muskatnuss", "amount": 1, "unit": "Prise", "perPortions": 4 },
-    { "name": "Salz", "amount": 2, "unit": "TL", "perPortions": 4 },
-    { "name": "Pfeffer", "amount": 1, "unit": "Prise", "perPortions": 4 }
+    {
+      "name": "Grüne Linsen",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Lasagne-Blätter (grün)",
+      "amount": 12,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Passierte Tomaten",
+      "amount": 700,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 2,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Rüebli (Karotte)",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knollensellerie",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Getrocknete Steinpilze",
+      "amount": 25,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Wasser",
+      "amount": 400,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Lorbeerblatt",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Haferdrink",
+      "amount": 700,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Weissmehl (für Béchamel)",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl (für Béchamel)",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Muskatnuss",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
   ],
   "weatherType": "neutral",
   "source": "fooby.ch",
@@ -36,6 +121,21 @@
   ],
   "tips": "Die Lasagne schmeckt am nächsten Tag noch besser. Reste lassen sich gut einfrieren.",
   "imageUrl": null,
-  "tags": ["Vegan", "Mealprep-geeignet", "Italienisch"],
-  "dietCategory": "vegan"
+  "tags": [
+    "Vegan",
+    "Mealprep-geeignet",
+    "Italienisch"
+  ],
+  "dietCategory": "vegan",
+  "allergens": [
+    "gluten",
+    "sellerie"
+  ],
+  "nutrition": {
+    "kcal": 542,
+    "protein": 21.3,
+    "fat": 16.8,
+    "carbs": 76.4,
+    "fiber": 11.2
+  }
 }

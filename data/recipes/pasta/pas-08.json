@@ -46,5 +46,16 @@
     "Mealprep-geeignet",
     "Mittagsgericht",
     "Ofengericht"
-  ]
+  ],
+  "allergens": [
+    "gluten",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 523,
+    "protein": 20.4,
+    "fat": 21.7,
+    "carbs": 63.8,
+    "fiber": 5.6
+  }
 }

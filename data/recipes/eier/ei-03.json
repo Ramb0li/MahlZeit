@@ -50,5 +50,17 @@
   "imageUrl": null,
   "tags": [
     "Mittagsgericht"
-  ]
+  ],
+  "allergens": [
+    "ei",
+    "gluten",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 451,
+    "protein": 12.8,
+    "fat": 24.7,
+    "carbs": 44.2,
+    "fiber": 6.8
+  }
 }

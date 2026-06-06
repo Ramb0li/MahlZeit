@@ -1,9 +1,12 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import { ArrowLeft } from 'lucide-react';
-import { SiteFooter } from './SiteFooter';
+import Image              from 'next/image';
+import { ArrowLeft }      from 'lucide-react';
+import { getTranslations } from 'next-intl/server';
+import { Link }            from '@/i18n/navigation';
+import { SiteFooter }      from './SiteFooter';
 
-export function LegalShell({ children }: { children: React.ReactNode }) {
+export async function LegalShell({ children }: { children: React.ReactNode }) {
+  const t = await getTranslations('LegalShell');
+
   return (
     <div className="mz-lp">
       {/* Schlanke Nav */}
@@ -16,7 +19,7 @@ export function LegalShell({ children }: { children: React.ReactNode }) {
         </Link>
         <Link href="/" className="mz-lp-login" style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
           <ArrowLeft size={15} />
-          Zur Startseite
+          {t('backHome')}
         </Link>
       </nav>
 

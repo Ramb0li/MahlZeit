@@ -4,22 +4,102 @@
   "category": "Suppen, Eintöpfe & Currys",
   "timeMinutes": 30,
   "ingredients": [
-    { "name": "Ramen-Nudeln", "amount": 250, "unit": "g", "perPortions": 4 },
-    { "name": "Naturtofu", "amount": 260, "unit": "g", "perPortions": 4 },
-    { "name": "Gemüsebrühe", "amount": 800, "unit": "ml", "perPortions": 4 },
-    { "name": "Kokosmilch (hell)", "amount": 500, "unit": "ml", "perPortions": 4 },
-    { "name": "Erdnussmus", "amount": 100, "unit": "g", "perPortions": 4 },
-    { "name": "Vegane rote Currypaste", "amount": 3, "unit": "EL", "perPortions": 4 },
-    { "name": "Sojasosse", "amount": 3, "unit": "EL", "perPortions": 4 },
-    { "name": "Knoblauchzehen (gepresst)", "amount": 2, "unit": "Zehen", "perPortions": 4 },
-    { "name": "Ingwer (frisch gerieben)", "amount": 20, "unit": "g", "perPortions": 4 },
-    { "name": "Karotte (dünn geschnitten)", "amount": 1, "unit": "Stk", "perPortions": 4 },
-    { "name": "Pak-Choi (dünn geschnitten)", "amount": 1, "unit": "Stk", "perPortions": 4 },
-    { "name": "Erdnussöl", "amount": 2.5, "unit": "EL", "perPortions": 4 },
-    { "name": "Speisestärke (für Tofu)", "amount": 1, "unit": "EL", "perPortions": 4 },
-    { "name": "Agavensirup", "amount": 1, "unit": "EL", "perPortions": 4 },
-    { "name": "Gesalzene Erdnüsse", "amount": 40, "unit": "g", "perPortions": 4 },
-    { "name": "Koriander (frisch)", "amount": 0.5, "unit": "Bund", "perPortions": 4 }
+    {
+      "name": "Ramen-Nudeln",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Naturtofu",
+      "amount": 260,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebrühe",
+      "amount": 800,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Kokosmilch (hell)",
+      "amount": 500,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Erdnussmus",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Vegane rote Currypaste",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Sojasosse",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehen (gepresst)",
+      "amount": 2,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Ingwer (frisch gerieben)",
+      "amount": 20,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Karotte (dünn geschnitten)",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Pak-Choi (dünn geschnitten)",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Erdnussöl",
+      "amount": 2.5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Speisestärke (für Tofu)",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Agavensirup",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Gesalzene Erdnüsse",
+      "amount": 40,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Koriander (frisch)",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    }
   ],
   "weatherType": "kalt",
   "source": "fooby.ch",
@@ -33,6 +113,22 @@
   ],
   "tips": "Mit Sesam, Limette oder frischer Chili nach Belieben garnieren.",
   "imageUrl": null,
-  "tags": ["Vegan", "Asiatisch"],
-  "dietCategory": "vegan"
+  "tags": [
+    "Vegan",
+    "Asiatisch"
+  ],
+  "dietCategory": "vegan",
+  "allergens": [
+    "erdnuesse",
+    "gluten",
+    "milch",
+    "soja"
+  ],
+  "nutrition": {
+    "kcal": 612,
+    "protein": 21.3,
+    "fat": 35.8,
+    "carbs": 52.4,
+    "fiber": 5.2
+  }
 }

@@ -4,14 +4,54 @@
   "category": "Vegetarische Hauptgerichte",
   "timeMinutes": 70,
   "ingredients": [
-    { "name": "Auberginen (gross)", "amount": 2, "unit": "Stk", "perPortions": 4 },
-    { "name": "Olivenöl (extra vergine)", "amount": 8, "unit": "EL", "perPortions": 4 },
-    { "name": "Zitronensaft", "amount": 2, "unit": "EL", "perPortions": 4 },
-    { "name": "Knoblauchzehen", "amount": 2, "unit": "Zehen", "perPortions": 4 },
-    { "name": "Rote Chilischote", "amount": 1, "unit": "Stk", "perPortions": 4 },
-    { "name": "Frischer Thymian", "amount": 0.75, "unit": "Bund", "perPortions": 4 },
-    { "name": "Kräutersalz", "amount": 1, "unit": "TL", "perPortions": 4 },
-    { "name": "Schwarzer Pfeffer", "amount": 1, "unit": "Prise", "perPortions": 4 }
+    {
+      "name": "Auberginen (gross)",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl (extra vergine)",
+      "amount": 8,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 2,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Rote Chilischote",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Frischer Thymian",
+      "amount": 0.75,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Kräutersalz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Schwarzer Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
   ],
   "weatherType": "warm",
   "source": "Nahrin",
@@ -26,6 +66,19 @@
   ],
   "tips": "Wer keinen Grill hat, kann die Auberginen auch bei 200 °C im Ofen ca. 35 Minuten backen.",
   "imageUrl": null,
-  "tags": ["Vegan", "Grillgericht", "Sommer", "Orientalisch"],
-  "dietCategory": "vegan"
+  "tags": [
+    "Vegan",
+    "Grillgericht",
+    "Sommer",
+    "Orientalisch"
+  ],
+  "dietCategory": "vegan",
+  "allergens": [],
+  "nutrition": {
+    "kcal": 268,
+    "protein": 2.1,
+    "fat": 25.8,
+    "carbs": 9.4,
+    "fiber": 5.6
+  }
 }

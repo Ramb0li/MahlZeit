@@ -98,5 +98,16 @@
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fam-50-1780699402158.jpg",
   "imageZutaten": null,
-  "imageKochen": null
+  "imageKochen": null,
+  "allergens": [
+    "milch",
+    "sulfite"
+  ],
+  "nutrition": {
+    "kcal": 672,
+    "protein": 15.8,
+    "fat": 44.2,
+    "carbs": 42.3,
+    "fiber": 2.8
+  }
 }

@@ -10,7 +10,6 @@
   "weatherType": "warm",
   "source": "Cuiseline",
   "basePortions": 4,
-  "dietCategory": "vegan",
   "description": "Exotischer Salat mit Gurke, Ananas und asiatischem Dressing.",
   "ingredients": [
     {
@@ -82,8 +81,19 @@
     "Gemüse und Ananas mit der Sauce mischen, anrichten.",
     "Cashewnüsse und Sesamkörner darüber verteilen."
   ],
-  "tips": "",
-  "imageUrl": null,
-  "imageZutaten": null,
-  "imageKochen": null
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/bcf5cb4f-8569-4d6e-8de7-23f5f02fd11e-1780786067736.JPG",
+  "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/57b894c5-0320-4168-83cb-d476c5dbdb86-1780786073858.JPG",
+  "imageKochen": null,
+  "allergens": [
+    "schalenfruechte",
+    "sesam",
+    "soja"
+  ],
+  "nutrition": {
+    "kcal": 248,
+    "protein": 6.8,
+    "fat": 12.4,
+    "carbs": 28.6,
+    "fiber": 3.9
+  }
 }

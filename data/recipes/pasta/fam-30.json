@@ -103,5 +103,16 @@
   "imageUrl": null,
   "imageZutaten": null,
   "imageKochen": null,
-  "tips": ""
+  "tips": "",
+  "allergens": [
+    "gluten",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 628,
+    "protein": 40.8,
+    "fat": 25.6,
+    "carbs": 54.2,
+    "fiber": 6.8
+  }
 }

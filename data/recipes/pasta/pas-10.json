@@ -52,5 +52,16 @@
     "Mittagsgericht",
     "Herbst",
     "Winter"
-  ]
+  ],
+  "allergens": [
+    "gluten",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 442,
+    "protein": 13.8,
+    "fat": 14.2,
+    "carbs": 66.7,
+    "fiber": 5.1
+  }
 }

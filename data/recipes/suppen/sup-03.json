@@ -54,5 +54,16 @@
     "Herbst",
     "Winter",
     "Schweizer"
-  ]
+  ],
+  "allergens": [
+    "gluten",
+    "sellerie"
+  ],
+  "nutrition": {
+    "kcal": 168,
+    "protein": 5.2,
+    "fat": 1.2,
+    "carbs": 34.8,
+    "fiber": 7.5
+  }
 }

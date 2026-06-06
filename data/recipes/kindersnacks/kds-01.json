@@ -93,5 +93,17 @@
   "tags": [
     "Vegan",
     "Mealprep-geeignet"
-  ]
+  ],
+  "allergens": [
+    "gluten",
+    "milch",
+    "soja"
+  ],
+  "nutrition": {
+    "kcal": 152,
+    "protein": 5.8,
+    "fat": 3.2,
+    "carbs": 24.6,
+    "fiber": 4.2
+  }
 }

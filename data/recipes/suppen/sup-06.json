@@ -78,5 +78,15 @@
     "Mittagsgericht",
     "Sommer",
     "Herbst"
-  ]
+  ],
+  "allergens": [
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 185,
+    "protein": 3.8,
+    "fat": 13.2,
+    "carbs": 14.5,
+    "fiber": 3.8
+  }
 }

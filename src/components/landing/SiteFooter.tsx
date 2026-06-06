@@ -1,14 +1,17 @@
-import Link from 'next/link';
-import Image from 'next/image';
+import Image              from 'next/image';
+import { getTranslations } from 'next-intl/server';
+import { Link }            from '@/i18n/navigation';
 
-const FOOT_LINKS = [
-  { href: '/datenschutz',        label: 'Datenschutz' },
-  { href: '/impressum',          label: 'Impressum' },
-  { href: '/nutzungsbedingungen', label: 'Nutzungsbedingungen' },
-  { href: '/kontakt',            label: 'Kontakt' },
-];
+export async function SiteFooter({ year = '2025' }: { year?: string }) {
+  const t = await getTranslations('SiteFooter');
 
-export function SiteFooter({ year = '2025' }: { year?: string }) {
+  const FOOT_LINKS = [
+    { href: '/datenschutz' as const,         label: t('privacy') },
+    { href: '/impressum' as const,           label: t('imprint') },
+    { href: '/nutzungsbedingungen' as const, label: t('terms')   },
+    { href: '/kontakt' as const,             label: t('contact') },
+  ];
+
   return (
     <footer className="mz-lp-footer">
       <Link href="/" style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 8 }}>
@@ -22,7 +25,7 @@ export function SiteFooter({ year = '2025' }: { year?: string }) {
           <Link key={href} href={href}>{label}</Link>
         ))}
       </div>
-      <span className="mz-lp-foot-copy">© {year} MahlZeit · @cuiseline</span>
+      <span className="mz-lp-foot-copy">&copy; {year} MahlZeit &middot; @cuiseline</span>
     </footer>
   );
 }

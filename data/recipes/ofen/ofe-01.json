@@ -52,5 +52,16 @@
     "Mealprep-geeignet",
     "Mittagsgericht",
     "Ofengericht"
-  ]
+  ],
+  "allergens": [
+    "milch",
+    "sesam"
+  ],
+  "nutrition": {
+    "kcal": 518,
+    "protein": 17.8,
+    "fat": 28.4,
+    "carbs": 46.2,
+    "fiber": 7.3
+  }
 }

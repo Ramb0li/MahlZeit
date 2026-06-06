@@ -4,11 +4,36 @@
   "category": "Snacks & Vorspeisen",
   "timeMinutes": 30,
   "ingredients": [
-    { "name": "Federkohl (Kale)", "amount": 250, "unit": "g", "perPortions": 5 },
-    { "name": "Bratcrème oder Rapsöl", "amount": 2, "unit": "EL", "perPortions": 5 },
-    { "name": "Salz", "amount": 0.5, "unit": "TL", "perPortions": 5 },
-    { "name": "Paprikapulver", "amount": 1, "unit": "TL", "perPortions": 5 },
-    { "name": "Pfeffer oder Chili", "amount": 1, "unit": "Prise", "perPortions": 5 }
+    {
+      "name": "Federkohl (Kale)",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 5
+    },
+    {
+      "name": "Bratcrème oder Rapsöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 5
+    },
+    {
+      "name": "Salz",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 5
+    },
+    {
+      "name": "Paprikapulver",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 5
+    },
+    {
+      "name": "Pfeffer oder Chili",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 5
+    }
   ],
   "weatherType": "neutral",
   "source": "Swissmilk",
@@ -24,6 +49,17 @@
   ],
   "tips": "Die Blätter müssen wirklich trocken sein – sonst werden sie nicht knusprig, sondern gedämpft.",
   "imageUrl": null,
-  "tags": ["Vegan", "Mealprep-geeignet"],
-  "dietCategory": "vegan"
+  "tags": [
+    "Vegan",
+    "Mealprep-geeignet"
+  ],
+  "dietCategory": "vegan",
+  "allergens": [],
+  "nutrition": {
+    "kcal": 58,
+    "protein": 1.8,
+    "fat": 3.2,
+    "carbs": 5.1,
+    "fiber": 1.4
+  }
 }

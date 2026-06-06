@@ -63,5 +63,15 @@
     "Vegan"
   ],
   "dietCategory": "vegan",
-  "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---sup-01-2-ku-rbis-kokos-suppe--1780579300744.jpeg"
+  "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---sup-01-2-ku-rbis-kokos-suppe--1780579300744.jpeg",
+  "allergens": [
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 268,
+    "protein": 4.8,
+    "fat": 11.2,
+    "carbs": 38.6,
+    "fiber": 5.8
+  }
 }

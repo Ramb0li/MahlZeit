@@ -94,5 +94,18 @@
     "Vegan",
     "Herbst",
     "Winter"
-  ]
+  ],
+  "allergens": [
+    "gluten",
+    "milch",
+    "schalenfruechte",
+    "soja"
+  ],
+  "nutrition": {
+    "kcal": 486,
+    "protein": 19.6,
+    "fat": 21.3,
+    "carbs": 54.2,
+    "fiber": 6.8
+  }
 }

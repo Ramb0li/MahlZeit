@@ -104,5 +104,15 @@
     "Orientalisch",
     "Herbst",
     "Winter"
-  ]
+  ],
+  "allergens": [
+    "gluten"
+  ],
+  "nutrition": {
+    "kcal": 612,
+    "protein": 19.8,
+    "fat": 13.4,
+    "carbs": 101.6,
+    "fiber": 15.7
+  }
 }

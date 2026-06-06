@@ -4,15 +4,60 @@
   "category": "Fleisch & Geflügel",
   "timeMinutes": 100,
   "ingredients": [
-    { "name": "Pouletbrüste", "amount": 720, "unit": "g", "perPortions": 4 },
-    { "name": "Knoblauchzehen", "amount": 2, "unit": "Zehen", "perPortions": 4 },
-    { "name": "Chilischoten", "amount": 2, "unit": "Stk", "perPortions": 4 },
-    { "name": "Naturjoghurt", "amount": 180, "unit": "g", "perPortions": 4 },
-    { "name": "Tikka Masala Sauce", "amount": 500, "unit": "g", "perPortions": 4 },
-    { "name": "Naan (ca. 130 g pro Stück)", "amount": 4, "unit": "Stk", "perPortions": 4 },
-    { "name": "Koriander", "amount": 0.5, "unit": "Bund", "perPortions": 4 },
-    { "name": "Kreuzkümmel", "amount": 1, "unit": "TL", "perPortions": 4 },
-    { "name": "Salz", "amount": 1, "unit": "TL", "perPortions": 4 }
+    {
+      "name": "Pouletbrüste",
+      "amount": 720,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 2,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Chilischoten",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Naturjoghurt",
+      "amount": 180,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Tikka Masala Sauce",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Naan (ca. 130 g pro Stück)",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Koriander",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Kreuzkümmel",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    }
   ],
   "weatherType": "kalt",
   "source": "Migusto",
@@ -26,8 +71,20 @@
     "Koriander fein hacken, mit restlichem Joghurt mischen. Kreuzkümmel mahlen und mit Salz zum Raita geben.",
     "Chicken Tikka Masala mit Naan und Raita servieren."
   ],
-  "tips": "Fertige Tikka Masala Sauce ist in den meisten Supermärkten erhältlich und spart Zeit.",
-  "imageUrl": null,
-  "tags": ["Orientalisch"],
-  "dietCategory": "meat"
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fle-01-1780784909551.jpg",
+  "tags": [
+    "Orientalisch"
+  ],
+  "allergens": [
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 712,
+    "protein": 52.8,
+    "fat": 22.4,
+    "carbs": 68.5,
+    "fiber": 3.6
+  },
+  "imageZutaten": null,
+  "imageKochen": null
 }

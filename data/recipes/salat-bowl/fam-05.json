@@ -73,7 +73,16 @@
     "Heisse Bohnen mit Dressing mischen. 15 Min. ziehen lassen."
   ],
   "imageUrl": null,
-  "imageZutaten": null,
+  "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fam-05-1780779720433.jpg",
   "imageKochen": null,
-  "tips": ""
+  "allergens": [
+    "senf"
+  ],
+  "nutrition": {
+    "kcal": 152,
+    "protein": 5.8,
+    "fat": 10.2,
+    "carbs": 11.5,
+    "fiber": 7.2
+  }
 }

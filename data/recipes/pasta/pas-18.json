@@ -4,17 +4,72 @@
   "category": "Pasta",
   "timeMinutes": 35,
   "ingredients": [
-    { "name": "Vegane Spätzli (frisch oder aus Packung)", "amount": 500, "unit": "g", "perPortions": 4 },
-    { "name": "Champignons", "amount": 400, "unit": "g", "perPortions": 4 },
-    { "name": "Cremechampignons", "amount": 200, "unit": "g", "perPortions": 4 },
-    { "name": "Schalotten", "amount": 3, "unit": "Stk", "perPortions": 4 },
-    { "name": "Knoblauchzehen", "amount": 2, "unit": "Zehen", "perPortions": 4 },
-    { "name": "Vegane Rahmsauce oder Hafer-Cuisine", "amount": 200, "unit": "ml", "perPortions": 4 },
-    { "name": "Weisswein (oder Gemüsebrühe)", "amount": 100, "unit": "ml", "perPortions": 4 },
-    { "name": "Thymian (frisch)", "amount": 4, "unit": "Stk", "perPortions": 4 },
-    { "name": "Pflanzenöl", "amount": 2, "unit": "EL", "perPortions": 4 },
-    { "name": "Petersilie (frisch)", "amount": 0.5, "unit": "Bund", "perPortions": 4 },
-    { "name": "Salz und Pfeffer", "amount": 1, "unit": "Prise", "perPortions": 4 }
+    {
+      "name": "Vegane Spätzli (frisch oder aus Packung)",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Champignons",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Cremechampignons",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Schalotten",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 2,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Vegane Rahmsauce oder Hafer-Cuisine",
+      "amount": 200,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Weisswein (oder Gemüsebrühe)",
+      "amount": 100,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Thymian (frisch)",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Pflanzenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Petersilie (frisch)",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz und Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
   ],
   "weatherType": "kalt",
   "source": "Coop",
@@ -30,6 +85,21 @@
   ],
   "tips": "Für mehr Geschmack gemischte Pilze verwenden – z.B. Champignons mit Shiitake oder Austernpilzen.",
   "imageUrl": null,
-  "tags": ["Vegan", "Schweizer", "Herbst"],
-  "dietCategory": "vegan"
+  "tags": [
+    "Vegan",
+    "Schweizer",
+    "Herbst"
+  ],
+  "dietCategory": "vegan",
+  "allergens": [
+    "milch",
+    "sulfite"
+  ],
+  "nutrition": {
+    "kcal": 445,
+    "protein": 14.2,
+    "fat": 16.5,
+    "carbs": 58.7,
+    "fiber": 6.8
+  }
 }

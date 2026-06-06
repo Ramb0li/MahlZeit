@@ -97,5 +97,16 @@
     "Mittagsgericht",
     "Herbst",
     "Winter"
-  ]
+  ],
+  "allergens": [
+    "milch",
+    "schalenfruechte"
+  ],
+  "nutrition": {
+    "kcal": 586,
+    "protein": 16.8,
+    "fat": 19.4,
+    "carbs": 86.2,
+    "fiber": 11.8
+  }
 }

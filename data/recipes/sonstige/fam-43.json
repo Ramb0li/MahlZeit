@@ -83,5 +83,16 @@
   "imageUrl": null,
   "imageZutaten": null,
   "imageKochen": null,
-  "tips": ""
+  "tips": "",
+  "allergens": [
+    "ei",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 178,
+    "protein": 13.2,
+    "fat": 12.8,
+    "carbs": 2.1,
+    "fiber": 0.3
+  }
 }

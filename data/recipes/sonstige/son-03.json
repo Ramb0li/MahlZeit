@@ -53,5 +53,15 @@
     "Frühling",
     "Sommer",
     "Orientalisch"
-  ]
+  ],
+  "allergens": [
+    "gluten"
+  ],
+  "nutrition": {
+    "kcal": 485,
+    "protein": 18.5,
+    "fat": 18.7,
+    "carbs": 58.2,
+    "fiber": 9.3
+  }
 }

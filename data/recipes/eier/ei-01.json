@@ -17,26 +17,32 @@
   "ingredients": [
     {
       "name": "Eier",
-      "amount": 3,
+      "amount": 10,
       "unit": "Stk",
       "perPortions": 4
     },
     {
-      "name": "Butter",
-      "amount": 20,
-      "unit": "g",
+      "name": "Rahm",
+      "amount": 4,
+      "unit": "EL",
       "perPortions": 4
     },
     {
       "name": "Salz",
-      "amount": 1,
+      "amount": 2,
       "unit": "Prise",
       "perPortions": 4
     },
     {
       "name": "Pfeffer",
-      "amount": 1,
+      "amount": 2,
       "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Ghee",
+      "amount": 1,
+      "unit": "EL",
       "perPortions": 4
     }
   ],
@@ -46,5 +52,24 @@
   "description": "Klassisches Rührei, schnell und einfach.",
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-01-1780502993941.jpg",
   "imageZutaten": null,
-  "imageKochen": null
+  "imageKochen": null,
+  "allergens": [
+    "ei",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 161,
+    "protein": 11.8,
+    "fat": 12.4,
+    "carbs": 0.6,
+    "fiber": 0
+  },
+  "steps": [
+    "1. Verquirle die Eier mit dem Rahm und zwei Prisen Salz in einer Schüssel mit einer Gabel bis eine gleichmässige Masse entsteht.",
+    "2. Bei Teflonpfanne Ghee (Butterschmalz) in Pfanne geben und erhitzen",
+    "(in Edelstahlpfanne erhitze diese bis der Leidenfrost-Effekt entsteht, dannach Ghee hinzugeben)",
+    "3. Wenn Ghee geschmolzen ist (! nicht braun werden lassen) Eimasse hinzugeben",
+    "4. Lass die Eimasse kurz anstocken. Schiebe dann mit einem Pfannenwender die Masse vorsichtig vom Pfannenrand in die Mitte. Wiederhole den Vorgang bis die Eimasse cremig stockt.",
+    "5. Nimm die Pfanne vom Herd bevor die Eimasse zu trocken wird. Nach belieben würzen (Bei Edelstahlpfanne Hitze nach dem ersten Stocken reduzieren bzw. Herdplatte abschalten. Das Rührei gart auf dem warmen Pfannenboden nach)"
+  ]
 }

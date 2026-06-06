@@ -102,5 +102,15 @@
     "Ofengericht",
     "Sommer",
     "Herbst"
-  ]
+  ],
+  "allergens": [
+    "sesam"
+  ],
+  "nutrition": {
+    "kcal": 468,
+    "protein": 17.2,
+    "fat": 12.8,
+    "carbs": 71.4,
+    "fiber": 14.6
+  }
 }

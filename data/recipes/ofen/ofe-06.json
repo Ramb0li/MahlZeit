@@ -4,19 +4,84 @@
   "category": "Fisch & Meeresfrüchte",
   "timeMinutes": 70,
   "ingredients": [
-    { "name": "Rotkohl", "amount": 800, "unit": "g", "perPortions": 4 },
-    { "name": "Lachsfilet", "amount": 400, "unit": "g", "perPortions": 4 },
-    { "name": "Süsser Senf", "amount": 0.5, "unit": "EL", "perPortions": 4 },
-    { "name": "Balsamico-Essig", "amount": 3, "unit": "EL", "perPortions": 4 },
-    { "name": "Olivenöl", "amount": 5, "unit": "EL", "perPortions": 4 },
-    { "name": "Flüssiger Honig", "amount": 1.5, "unit": "EL", "perPortions": 4 },
-    { "name": "Knoblauchzehen (fein gehackt)", "amount": 2, "unit": "Zehen", "perPortions": 4 },
-    { "name": "Chiliflocken", "amount": 0.5, "unit": "TL", "perPortions": 4 },
-    { "name": "Dill (frisch)", "amount": 1, "unit": "Bund", "perPortions": 4 },
-    { "name": "Petersilie (glatt)", "amount": 1, "unit": "Bund", "perPortions": 4 },
-    { "name": "Limettensaft", "amount": 1, "unit": "EL", "perPortions": 4 },
-    { "name": "Blutorange", "amount": 1, "unit": "Stk", "perPortions": 4 },
-    { "name": "Fleur de Sel", "amount": 0.5, "unit": "TL", "perPortions": 4 }
+    {
+      "name": "Rotkohl",
+      "amount": 800,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Lachsfilet",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Süsser Senf",
+      "amount": 0.5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Balsamico-Essig",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Flüssiger Honig",
+      "amount": 1.5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehen (fein gehackt)",
+      "amount": 2,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Chiliflocken",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Dill (frisch)",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Petersilie (glatt)",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Limettensaft",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Blutorange",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Fleur de Sel",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    }
   ],
   "weatherType": "neutral",
   "source": "fooby.ch",
@@ -31,6 +96,20 @@
   ],
   "tips": "Wer keinen Lachs möchte, kann das Gericht auch rein vegan mit Kichererbsen als Topping servieren.",
   "imageUrl": null,
-  "tags": ["Ofengericht", "Winter"],
-  "dietCategory": "fish"
+  "tags": [
+    "Ofengericht",
+    "Winter"
+  ],
+  "dietCategory": "fish",
+  "allergens": [
+    "fisch",
+    "senf"
+  ],
+  "nutrition": {
+    "kcal": 398,
+    "protein": 26.4,
+    "fat": 24.8,
+    "carbs": 18.6,
+    "fiber": 4.2
+  }
 }

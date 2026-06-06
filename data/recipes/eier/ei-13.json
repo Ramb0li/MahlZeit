@@ -68,12 +68,28 @@
     "Smoothie gleichmässig in vier Bowls verteilen.",
     "Mit Beeren (Erdbeerscheiben, Himbeeren, Johannisbeeren) und Müesli garnieren."
   ],
-  "imageUrl": "blob:https://mahlzeit.o-v-k.ch/7e4cf48d-0f11-4029-9d13-a7c52054da99",
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-13-1780786326142.jpg",
   "tags": [
     "Vegan",
     "Sommer",
-    "Frühling"
+    "Frühling",
+    "Kinderfreundlich",
+    "Vegetarisch",
+    "Herbst",
+    "Winter"
   ],
   "imageZutaten": null,
-  "imageKochen": null
+  "imageKochen": null,
+  "allergens": [
+    "ei",
+    "milch",
+    "schalenfruechte"
+  ],
+  "nutrition": {
+    "kcal": 358,
+    "protein": 7.2,
+    "fat": 9.8,
+    "carbs": 63.4,
+    "fiber": 10.5
+  }
 }

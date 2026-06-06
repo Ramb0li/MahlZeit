@@ -34,6 +34,23 @@ const CATEGORY_ORDER = [
 ];
 
 function buildRecipes() {
+  // Bestehende Anreicherungs-Felder (allergens, nutrition) aus recipes.json laden —
+  // so dass `npm run recipes:enrich` nicht bei jedem Build verloren geht.
+  const enrichmentMap = new Map();
+  if (fs.existsSync(OUTPUT_FILE)) {
+    try {
+      const existing = JSON.parse(fs.readFileSync(OUTPUT_FILE, 'utf-8'));
+      for (const r of existing) {
+        if (r.allergens !== undefined || r.nutrition !== undefined) {
+          enrichmentMap.set(r.id, {
+            ...(r.allergens !== undefined ? { allergens: r.allergens } : {}),
+            ...(r.nutrition  !== undefined ? { nutrition:  r.nutrition  } : {}),
+          });
+        }
+      }
+    } catch { /* ignore parse errors — enrichment simply won't be merged */ }
+  }
+
   const recipes = [];
 
   for (const folder of CATEGORY_ORDER) {
@@ -53,6 +70,9 @@ function buildRecipes() {
       try {
         const content = fs.readFileSync(filePath, 'utf-8');
         const recipe  = JSON.parse(content);
+        // Anreicherungs-Felder aus vorherigem Build wiederherstellen
+        const enrichment = enrichmentMap.get(recipe.id);
+        if (enrichment) Object.assign(recipe, enrichment);
         recipes.push(recipe);
       } catch (err) {
         console.error(`❌ Fehler in ${folder}/${file}:`, err.message);
@@ -72,6 +92,8 @@ function buildRecipes() {
     const files = fs.readdirSync(dir).filter(f => f.endsWith('.json')).sort();
     for (const file of files) {
       const recipe = JSON.parse(fs.readFileSync(path.join(dir, file), 'utf-8'));
+      const enrichment = enrichmentMap.get(recipe.id);
+      if (enrichment) Object.assign(recipe, enrichment);
       recipes.push(recipe);
     }
   }

@@ -4,19 +4,84 @@
   "category": "Salate & Bowls",
   "timeMinutes": 20,
   "ingredients": [
-    { "name": "Tomaten", "amount": 3, "unit": "Stk", "perPortions": 4 },
-    { "name": "Gurke", "amount": 1, "unit": "Stk", "perPortions": 4 },
-    { "name": "Rote Peperoni", "amount": 1, "unit": "Stk", "perPortions": 4 },
-    { "name": "Gelbe Peperoni", "amount": 1, "unit": "Stk", "perPortions": 4 },
-    { "name": "Zwiebel", "amount": 1, "unit": "Stk", "perPortions": 4 },
-    { "name": "Schwarze und grüne Oliven", "amount": 100, "unit": "g", "perPortions": 4 },
-    { "name": "Feta", "amount": 150, "unit": "g", "perPortions": 4 },
-    { "name": "Weissweinessig", "amount": 2, "unit": "EL", "perPortions": 4 },
-    { "name": "Olivenöl", "amount": 5, "unit": "EL", "perPortions": 4 },
-    { "name": "Knoblauchzehe", "amount": 1, "unit": "Zehe", "perPortions": 4 },
-    { "name": "Petersilie und Oregano (frisch)", "amount": 0.5, "unit": "Bund", "perPortions": 4 },
-    { "name": "Salz", "amount": 1, "unit": "TL", "perPortions": 4 },
-    { "name": "Pfeffer", "amount": 1, "unit": "Prise", "perPortions": 4 }
+    {
+      "name": "Tomaten",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Gurke",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Rote Peperoni",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Gelbe Peperoni",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Schwarze und grüne Oliven",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Feta",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Weissweinessig",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Petersilie und Oregano (frisch)",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
   ],
   "weatherType": "warm",
   "source": "Betty Bossi",
@@ -28,8 +93,27 @@
     "Alles zusammen mit den Oliven zur Vinaigrette geben und gut vermischen.",
     "Feta in Stücke schneiden und als Garnierung über den Salat geben."
   ],
-  "tips": "Den Salat 10 Minuten vor dem Servieren marinieren lassen, damit die Aromen sich verbinden.",
-  "imageUrl": null,
-  "tags": ["Vegetarisch", "Sommer", "Mittagsgericht"],
-  "dietCategory": "vegetarian"
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/sal-13-1780782771480.jpg",
+  "tags": [
+    "Vegetarisch",
+    "Sommer",
+    "Mittagsgericht",
+    "Frühling",
+    "Herbst",
+    "Grillgericht",
+    "Abendgericht"
+  ],
+  "allergens": [
+    "milch",
+    "sulfite"
+  ],
+  "nutrition": {
+    "kcal": 268,
+    "protein": 7.8,
+    "fat": 21.4,
+    "carbs": 12.6,
+    "fiber": 3.8
+  },
+  "imageZutaten": null,
+  "imageKochen": null
 }

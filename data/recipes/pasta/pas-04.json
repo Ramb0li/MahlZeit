@@ -61,5 +61,16 @@
     "Sommer",
     "Vegan"
   ],
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "allergens": [
+    "gluten",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 892,
+    "protein": 23.8,
+    "fat": 54.7,
+    "carbs": 76.3,
+    "fiber": 11.2
+  }
 }

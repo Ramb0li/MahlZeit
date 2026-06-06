@@ -4,19 +4,84 @@
   "category": "Aufläufe & Gratins",
   "timeMinutes": 85,
   "ingredients": [
-    { "name": "Mehligkochende Kartoffeln", "amount": 1000, "unit": "g", "perPortions": 4 },
-    { "name": "Lauch", "amount": 300, "unit": "g", "perPortions": 4 },
-    { "name": "Getrocknete Steinpilze", "amount": 20, "unit": "g", "perPortions": 4 },
-    { "name": "Gruyère (gerieben)", "amount": 120, "unit": "g", "perPortions": 4 },
-    { "name": "Rahm", "amount": 250, "unit": "ml", "perPortions": 4 },
-    { "name": "Muskatnuss", "amount": 1, "unit": "Prise", "perPortions": 4 },
-    { "name": "Salz", "amount": 0.75, "unit": "TL", "perPortions": 4 },
-    { "name": "Pfeffer", "amount": 1, "unit": "Prise", "perPortions": 4 },
-    { "name": "Wasser (für Pilze)", "amount": 200, "unit": "ml", "perPortions": 4 },
-    { "name": "Apfelessig (für Salat)", "amount": 1.5, "unit": "EL", "perPortions": 4 },
-    { "name": "Kürbiskernöl", "amount": 2, "unit": "EL", "perPortions": 4 },
-    { "name": "Feldsalat oder Frisee", "amount": 150, "unit": "g", "perPortions": 4 },
-    { "name": "Kürbiskerne", "amount": 2, "unit": "EL", "perPortions": 4 }
+    {
+      "name": "Mehligkochende Kartoffeln",
+      "amount": 1000,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Lauch",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Getrocknete Steinpilze",
+      "amount": 20,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Gruyère (gerieben)",
+      "amount": 120,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Rahm",
+      "amount": 250,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Muskatnuss",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.75,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Wasser (für Pilze)",
+      "amount": 200,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Apfelessig (für Salat)",
+      "amount": 1.5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kürbiskernöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Feldsalat oder Frisee",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Kürbiskerne",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    }
   ],
   "weatherType": "kalt",
   "source": "fooby.ch",
@@ -33,6 +98,22 @@
   ],
   "tips": "Das Gratin kann auch am Vortag vorbereitet und im Kühlschrank aufbewahrt werden.",
   "imageUrl": null,
-  "tags": ["Vegetarisch", "Schweizer", "Winter", "Herbst"],
-  "dietCategory": "vegetarian"
+  "tags": [
+    "Vegetarisch",
+    "Schweizer",
+    "Winter",
+    "Herbst"
+  ],
+  "dietCategory": "vegetarian",
+  "allergens": [
+    "gluten",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 542,
+    "protein": 15.8,
+    "fat": 30.4,
+    "carbs": 52.6,
+    "fiber": 6.8
+  }
 }

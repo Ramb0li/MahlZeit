@@ -4,17 +4,72 @@
   "category": "Suppen, Eintöpfe & Currys",
   "timeMinutes": 60,
   "ingredients": [
-    { "name": "Marroni (tiefgekühlt, geschält)", "amount": 400, "unit": "g", "perPortions": 4 },
-    { "name": "Schalotten", "amount": 2, "unit": "Stk", "perPortions": 4 },
-    { "name": "Butter", "amount": 0.5, "unit": "EL", "perPortions": 4 },
-    { "name": "Zucker", "amount": 1, "unit": "TL", "perPortions": 4 },
-    { "name": "Wasser", "amount": 800, "unit": "ml", "perPortions": 4 },
-    { "name": "Rahm (zum Aufschlagen)", "amount": 100, "unit": "ml", "perPortions": 4 },
-    { "name": "Paprikapulver (zum Garnieren)", "amount": 1, "unit": "Prise", "perPortions": 4 },
-    { "name": "Blätterteig (rechteckig)", "amount": 0.5, "unit": "Stk", "perPortions": 4 },
-    { "name": "Sambal Oelek", "amount": 1.5, "unit": "TL", "perPortions": 4 },
-    { "name": "Fleur de Sel", "amount": 0.25, "unit": "TL", "perPortions": 4 },
-    { "name": "Salz und Pfeffer", "amount": 1, "unit": "Prise", "perPortions": 4 }
+    {
+      "name": "Marroni (tiefgekühlt, geschält)",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Schalotten",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 0.5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Zucker",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Wasser",
+      "amount": 800,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Rahm (zum Aufschlagen)",
+      "amount": 100,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Paprikapulver (zum Garnieren)",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Blätterteig (rechteckig)",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Sambal Oelek",
+      "amount": 1.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Fleur de Sel",
+      "amount": 0.25,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz und Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
   ],
   "weatherType": "kalt",
   "source": "fooby.ch",
@@ -29,8 +84,22 @@
     "Auf Backpapier legen, 30 Min. kühl stellen, dann ca. 10 Min. bei 220 °C backen.",
     "Twister zur Suppe servieren."
   ],
-  "tips": "Twister können gut vorbereitet werden – Teig abdecken und im Kühlschrank aufbewahren.",
-  "imageUrl": null,
-  "tags": ["Vegetarisch", "Herbst", "Schweizer"],
-  "dietCategory": "vegetarian"
+  "imageUrl": "blob:https://mahlzeit.o-v-k.ch/a5131c8c-cf1b-43a3-b522-90cc1c067010",
+  "tags": [
+    "Vegetarisch",
+    "Herbst",
+    "Schweizer"
+  ],
+  "allergens": [
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 382,
+    "protein": 5.8,
+    "fat": 16.2,
+    "carbs": 52.4,
+    "fiber": 5.3
+  },
+  "imageZutaten": null,
+  "imageKochen": null
 }

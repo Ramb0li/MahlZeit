@@ -90,5 +90,17 @@
   "imageUrl": null,
   "imageZutaten": null,
   "imageKochen": null,
-  "tips": ""
+  "tips": "",
+  "allergens": [
+    "milch",
+    "senf",
+    "sulfite"
+  ],
+  "nutrition": {
+    "kcal": 518,
+    "protein": 36.2,
+    "fat": 40.8,
+    "carbs": 5.4,
+    "fiber": 0.6
+  }
 }

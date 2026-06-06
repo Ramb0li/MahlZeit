@@ -4,21 +4,96 @@
   "category": "Vegetarische Hauptgerichte",
   "timeMinutes": 30,
   "ingredients": [
-    { "name": "Brokkoli", "amount": 500, "unit": "g", "perPortions": 4 },
-    { "name": "Rote Zwiebel", "amount": 1, "unit": "Stk", "perPortions": 4 },
-    { "name": "Rote Paprikaschote", "amount": 1, "unit": "Stk", "perPortions": 4 },
-    { "name": "Champignons", "amount": 250, "unit": "g", "perPortions": 4 },
-    { "name": "Ingwer (frisch)", "amount": 20, "unit": "g", "perPortions": 4 },
-    { "name": "Knoblauchzehen", "amount": 2, "unit": "Zehen", "perPortions": 4 },
-    { "name": "Erdnussöl", "amount": 3, "unit": "EL", "perPortions": 4 },
-    { "name": "Helle Sojasosse", "amount": 2, "unit": "EL", "perPortions": 4 },
-    { "name": "Brauner Rohrzucker", "amount": 2, "unit": "TL", "perPortions": 4 },
-    { "name": "Rote Currypaste", "amount": 1, "unit": "EL", "perPortions": 4 },
-    { "name": "Agavendicksaft", "amount": 1, "unit": "EL", "perPortions": 4 },
-    { "name": "Erdnussmus", "amount": 100, "unit": "g", "perPortions": 4 },
-    { "name": "Kokosmilch", "amount": 200, "unit": "ml", "perPortions": 4 },
-    { "name": "Gemüsebrühe", "amount": 200, "unit": "ml", "perPortions": 4 },
-    { "name": "Zitronensaft", "amount": 1, "unit": "TL", "perPortions": 4 }
+    {
+      "name": "Brokkoli",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Rote Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Rote Paprikaschote",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Champignons",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Ingwer (frisch)",
+      "amount": 20,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 2,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Erdnussöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Helle Sojasosse",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Brauner Rohrzucker",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Rote Currypaste",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Agavendicksaft",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Erdnussmus",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Kokosmilch",
+      "amount": 200,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebrühe",
+      "amount": 200,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    }
   ],
   "weatherType": "neutral",
   "source": "ProVeg",
@@ -33,6 +108,21 @@
   ],
   "tips": "Wer es schärfer mag, gibt mehr rote Currypaste in die Sauce.",
   "imageUrl": null,
-  "tags": ["Vegan", "Asiatisch"],
-  "dietCategory": "vegan"
+  "tags": [
+    "Vegan",
+    "Asiatisch"
+  ],
+  "dietCategory": "vegan",
+  "allergens": [
+    "erdnuesse",
+    "milch",
+    "soja"
+  ],
+  "nutrition": {
+    "kcal": 424,
+    "protein": 14.6,
+    "fat": 26.8,
+    "carbs": 32.4,
+    "fiber": 9.2
+  }
 }

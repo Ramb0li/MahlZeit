@@ -42,5 +42,16 @@
   "steps": [],
   "tips": "",
   "imageUrl": null,
-  "tags": []
+  "tags": [],
+  "allergens": [
+    "fisch",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 398,
+    "protein": 34.2,
+    "fat": 14.8,
+    "carbs": 28.5,
+    "fiber": 4.6
+  }
 }

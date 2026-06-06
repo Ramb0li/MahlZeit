@@ -4,14 +4,54 @@
   "category": "Vegetarische Hauptgerichte",
   "timeMinutes": 35,
   "ingredients": [
-    { "name": "Blätterteig (rechteckig, ausgerollt)", "amount": 1, "unit": "Stk", "perPortions": 8 },
-    { "name": "Tiefkühlspinat (aufgetaut)", "amount": 600, "unit": "g", "perPortions": 8 },
-    { "name": "Eier", "amount": 4, "unit": "Stk", "perPortions": 8 },
-    { "name": "Gruyère (gerieben)", "amount": 120, "unit": "g", "perPortions": 8 },
-    { "name": "Zwiebel (fein gehackt)", "amount": 1, "unit": "Stk", "perPortions": 8 },
-    { "name": "Salz", "amount": 0.5, "unit": "TL", "perPortions": 8 },
-    { "name": "Pfeffer", "amount": 1, "unit": "Prise", "perPortions": 8 },
-    { "name": "Muskatnuss", "amount": 1, "unit": "Prise", "perPortions": 8 }
+    {
+      "name": "Blätterteig (rechteckig, ausgerollt)",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 8
+    },
+    {
+      "name": "Tiefkühlspinat (aufgetaut)",
+      "amount": 600,
+      "unit": "g",
+      "perPortions": 8
+    },
+    {
+      "name": "Eier",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 8
+    },
+    {
+      "name": "Gruyère (gerieben)",
+      "amount": 120,
+      "unit": "g",
+      "perPortions": 8
+    },
+    {
+      "name": "Zwiebel (fein gehackt)",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 8
+    },
+    {
+      "name": "Salz",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 8
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 8
+    },
+    {
+      "name": "Muskatnuss",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 8
+    }
   ],
   "weatherType": "neutral",
   "source": "fooby.ch",
@@ -25,6 +65,20 @@
   ],
   "tips": "Den Spinat vor dem Mischen gut ausdrücken – zu viel Flüssigkeit macht die Chüechli matschig.",
   "imageUrl": null,
-  "tags": ["Vegetarisch", "Schweizer", "Kinderfreundlich"],
-  "dietCategory": "vegetarian"
+  "tags": [
+    "Vegetarisch",
+    "Schweizer",
+    "Kinderfreundlich"
+  ],
+  "dietCategory": "vegetarian",
+  "allergens": [
+    "ei"
+  ],
+  "nutrition": {
+    "kcal": 268,
+    "protein": 11.2,
+    "fat": 17.4,
+    "carbs": 16.3,
+    "fiber": 2.8
+  }
 }

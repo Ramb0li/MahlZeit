@@ -65,11 +65,28 @@
     "Backen bis Blasen entstehen, dann wenden und goldbraun fertigbacken.",
     "Mit Ahornsirup und Früchten servieren."
   ],
-  "imageUrl": "blob:https://mahlzeit.o-v-k.ch/a4e9612a-cb72-4486-9918-1d5eb8a20177",
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-14-1780786366445.jpg",
   "tags": [
     "Vegan",
-    "Kinderfreundlich"
+    "Kinderfreundlich",
+    "Frühling",
+    "Sommer",
+    "Herbst",
+    "Winter",
+    "Vegetarisch"
   ],
   "imageZutaten": null,
-  "imageKochen": null
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch",
+    "schalenfruechte"
+  ],
+  "nutrition": {
+    "kcal": 368,
+    "protein": 7.4,
+    "fat": 3.2,
+    "carbs": 78.6,
+    "fiber": 2.8
+  }
 }

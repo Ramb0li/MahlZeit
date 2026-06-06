@@ -105,5 +105,17 @@
   "tips": "",
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---gefu-llte-auberginen-mit-couscous-1--1780579992533.jpeg",
   "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---gefu-llte-auberginen-mit-couscous-2--1780580021044.jpeg",
-  "imageKochen": null
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch",
+    "schalenfruechte"
+  ],
+  "nutrition": {
+    "kcal": 612,
+    "protein": 16.8,
+    "fat": 24.7,
+    "carbs": 82.3,
+    "fiber": 12.4
+  }
 }

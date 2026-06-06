@@ -91,5 +91,16 @@
     "Italienisch"
   ],
   "imageZutaten": null,
-  "imageKochen": null
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 628,
+    "protein": 30.2,
+    "fat": 24.8,
+    "carbs": 68.4,
+    "fiber": 5.6
+  }
 }

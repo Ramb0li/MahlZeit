@@ -74,9 +74,18 @@
     "Cashews mit der Brühe fein pürieren.",
     "Cashewrahm zum Spinat geben, aufkochen. Mit Muskatnuss, Salz, Pfeffer und Hefeflocken würzen."
   ],
-  "imageUrl": null,
-  "imageZutaten": null,
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fam-51-1--1780786021770.jpeg",
+  "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fam-51-2--1780786040870.jpeg",
   "imageKochen": null,
-  "tips": "",
-  "dietCategory": "vegan"
+  "allergens": [
+    "milch",
+    "schalenfruechte"
+  ],
+  "nutrition": {
+    "kcal": 198,
+    "protein": 7.8,
+    "fat": 15.6,
+    "carbs": 9.2,
+    "fiber": 3.8
+  }
 }

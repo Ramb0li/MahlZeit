@@ -105,5 +105,16 @@
   "imageUrl": null,
   "imageZutaten": null,
   "imageKochen": null,
-  "tips": ""
+  "tips": "",
+  "allergens": [
+    "milch",
+    "schalenfruechte"
+  ],
+  "nutrition": {
+    "kcal": 152,
+    "protein": 5.1,
+    "fat": 10.8,
+    "carbs": 9.2,
+    "fiber": 3.4
+  }
 }

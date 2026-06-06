@@ -1,0 +1,40 @@
+{
+  "AppShell": {
+    "tabPlanner":  "Meal Planner",
+    "tabShopping": "Shopping",
+    "tabPantry":   "Pantry",
+    "tabRecipes":  "Recipes",
+    "tabSettings": "Settings",
+    "logout":      "Log out",
+    "roleMember":  "Member",
+    "roleOwner":   "Owner"
+  },
+  "Landing": {
+    "navLogin":       "Log in",
+    "navStartFree":   "Start for free",
+    "navToPlanner":   "Open planner",
+    "heroCta":        "Learn more",
+    "heroNote":       "No subscription required · 🇨🇭 Made in Switzerland",
+    "kicker":         "Your smart meal planner",
+    "statement1":     "No more wondering",
+    "statement2":     "\"What should I cook today?\"",
+    "mobileCta":      "Start free for 7 days",
+    "mobileCtaNote":  "No credit card needed",
+    "planBuy":        "Buy now →",
+    "planSelect":     "Select →"
+  },
+  "NotFound": {
+    "title":       "This page is not on the menu.",
+    "description": "Either the recipe was removed, the URL was mistyped, or the chef just had a bad day.",
+    "backHome":    "Back to home"
+  },
+  "LegalShell": {
+    "backHome": "Back to home"
+  },
+  "SiteFooter": {
+    "privacy": "Privacy Policy",
+    "imprint": "Imprint",
+    "terms":   "Terms of Use",
+    "contact": "Contact"
+  }
+}

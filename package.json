@@ -8,9 +8,11 @@
     "start": "next start",
     "lint": "next lint",
     "recipes:build": "node scripts/build-recipes.js",
-    "recipes:sync": "node scripts/sync-recipes.js"
+    "recipes:sync": "node scripts/sync-recipes.js",
+    "recipes:enrich": "tsx scripts/enrich-recipes.ts"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.102.0",
     "@types/bcryptjs": "^2.4.6",
     "@upstash/redis": "^1.38.0",
     "@vercel/blob": "^2.4.0",
@@ -22,6 +24,7 @@
     "jspdf-autotable": "^3.8.2",
     "lucide-react": "^0.400.0",
     "next": "14.2.5",
+    "next-intl": "^4.13.0",
     "react": "^18",
     "react-dom": "^18",
     "resend": "^6.12.4",
@@ -37,6 +40,7 @@
     "eslint-config-next": "14.2.5",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
+    "tsx": "^4.22.4",
     "typescript": "^5"
   }
 }

@@ -73,5 +73,16 @@
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/pas-03-1780699620075.jpg",
   "imageZutaten": null,
-  "imageKochen": null
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 438,
+    "protein": 21.7,
+    "fat": 22.4,
+    "carbs": 38.6,
+    "fiber": 4.2
+  }
 }

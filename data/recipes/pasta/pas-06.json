@@ -51,5 +51,16 @@
     "Winter"
   ],
   "imageZutaten": null,
-  "imageKochen": null
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 458,
+    "protein": 13.6,
+    "fat": 16.9,
+    "carbs": 63.2,
+    "fiber": 4.3
+  }
 }

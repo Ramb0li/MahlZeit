@@ -59,5 +59,17 @@
     "Kinderfreundlich"
   ],
   "imageZutaten": null,
-  "imageKochen": null
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch",
+    "schalenfruechte"
+  ],
+  "nutrition": {
+    "kcal": 198,
+    "protein": 5.1,
+    "fat": 3.2,
+    "carbs": 39.8,
+    "fiber": 5.4
+  }
 }

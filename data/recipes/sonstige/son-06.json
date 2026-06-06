@@ -9,7 +9,6 @@
   "weatherType": "warm",
   "source": "Cuiseline",
   "basePortions": 1,
-  "dietCategory": "vegan",
   "description": "Schneller Wrap mit Hummus, frischem Gemüse und Rucola.",
   "ingredients": [
     {
@@ -74,8 +73,17 @@
     "Rucola dazugeben, mit Salz und Pfeffer würzen.",
     "Wrap fest einrollen."
   ],
-  "tips": "Gemüse kann nach Belieben variiert werden.",
-  "imageUrl": null,
-  "imageZutaten": null,
-  "imageKochen": null
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---hummus-gemu-se-wrap-1--1780786140067.jpeg",
+  "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---hummus-gemu-se-wrap-2--1780786147162.jpeg",
+  "imageKochen": null,
+  "allergens": [
+    "ei"
+  ],
+  "nutrition": {
+    "kcal": 387,
+    "protein": 14.2,
+    "fat": 12.8,
+    "carbs": 52.6,
+    "fiber": 10.5
+  }
 }

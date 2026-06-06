@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import { LegalShell } from '@/components/landing/LegalShell';
 
 export const metadata: Metadata = {

@@ -81,5 +81,18 @@
   "tags": [
     "Mealprep-geeignet",
     "Mittagsgericht"
-  ]
+  ],
+  "allergens": [
+    "gluten",
+    "milch",
+    "sesam",
+    "soja"
+  ],
+  "nutrition": {
+    "kcal": 312,
+    "protein": 11.4,
+    "fat": 11.8,
+    "carbs": 38.6,
+    "fiber": 6.8
+  }
 }

@@ -4,20 +4,90 @@
   "category": "Suppen, Eintöpfe & Currys",
   "timeMinutes": 40,
   "ingredients": [
-    { "name": "Schwarze Bohnen (Dose, abgetropft)", "amount": 210, "unit": "g", "perPortions": 4 },
-    { "name": "Maiskörner (Dose, abgetropft)", "amount": 140, "unit": "g", "perPortions": 4 },
-    { "name": "Süsskartoffeln", "amount": 300, "unit": "g", "perPortions": 4 },
-    { "name": "Grüne Peperoni", "amount": 1, "unit": "Stk", "perPortions": 4 },
-    { "name": "Bundzwiebeln", "amount": 2, "unit": "Stk", "perPortions": 4 },
-    { "name": "Knoblauchzehe", "amount": 1, "unit": "Zehe", "perPortions": 4 },
-    { "name": "Kokosöl", "amount": 1, "unit": "EL", "perPortions": 4 },
-    { "name": "Tex Mex Spice Mix", "amount": 1, "unit": "EL", "perPortions": 4 },
-    { "name": "Paprikapulver", "amount": 1, "unit": "TL", "perPortions": 4 },
-    { "name": "Wasser", "amount": 700, "unit": "ml", "perPortions": 4 },
-    { "name": "Salz", "amount": 1, "unit": "TL", "perPortions": 4 },
-    { "name": "Koriander (frisch)", "amount": 1, "unit": "Bund", "perPortions": 4 },
-    { "name": "Kokosnussmilch-Joghurt", "amount": 4, "unit": "EL", "perPortions": 4 },
-    { "name": "Limette", "amount": 1, "unit": "Stk", "perPortions": 4 }
+    {
+      "name": "Schwarze Bohnen (Dose, abgetropft)",
+      "amount": 210,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Maiskörner (Dose, abgetropft)",
+      "amount": 140,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Süsskartoffeln",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Grüne Peperoni",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Bundzwiebeln",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Kokosöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Tex Mex Spice Mix",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Paprikapulver",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Wasser",
+      "amount": 700,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Koriander (frisch)",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Kokosnussmilch-Joghurt",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Limette",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    }
   ],
   "weatherType": "kalt",
   "source": "fooby.ch",
@@ -33,6 +103,21 @@
   ],
   "tips": "Schmeckt auch mit Tortillachips als Einlage. Schärfe über die Menge Tex Mex Spice Mix steuern.",
   "imageUrl": null,
-  "tags": ["Vegan", "Mexikanisch", "Mittagsgericht"],
-  "dietCategory": "vegan"
+  "tags": [
+    "Vegan",
+    "Mexikanisch",
+    "Mittagsgericht"
+  ],
+  "dietCategory": "vegan",
+  "allergens": [
+    "milch",
+    "schalenfruechte"
+  ],
+  "nutrition": {
+    "kcal": 298,
+    "protein": 10.4,
+    "fat": 6.8,
+    "carbs": 49.2,
+    "fiber": 11.8
+  }
 }

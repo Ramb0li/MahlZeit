@@ -80,5 +80,16 @@
   "imageUrl": null,
   "imageZutaten": null,
   "imageKochen": null,
-  "tips": ""
+  "tips": "",
+  "allergens": [
+    "sellerie",
+    "sulfite"
+  ],
+  "nutrition": {
+    "kcal": 248,
+    "protein": 21.5,
+    "fat": 9.8,
+    "carbs": 16.2,
+    "fiber": 3.8
+  }
 }

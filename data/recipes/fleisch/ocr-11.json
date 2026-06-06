@@ -63,5 +63,15 @@
   "tips": "Dazu passen Teigwaren, Mais, Reis oder Kartoffeln. Auch mit Quorn möglich.",
   "imageUrl": null,
   "imageZutaten": null,
-  "imageKochen": null
+  "imageKochen": null,
+  "allergens": [
+    "sulfite"
+  ],
+  "nutrition": {
+    "kcal": 285,
+    "protein": 28.4,
+    "fat": 12.6,
+    "carbs": 6.8,
+    "fiber": 0.8
+  }
 }

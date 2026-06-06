@@ -4,18 +4,78 @@
   "category": "Desserts & Süsses",
   "timeMinutes": 50,
   "ingredients": [
-    { "name": "Vegane Butter (z.B. Alsan)", "amount": 80, "unit": "g", "perPortions": 4 },
-    { "name": "Mehl", "amount": 160, "unit": "g", "perPortions": 4 },
-    { "name": "Salz", "amount": 1, "unit": "Prise", "perPortions": 4 },
-    { "name": "Vanilleextrakt", "amount": 1, "unit": "TL", "perPortions": 4 },
-    { "name": "Kaltes Wasser", "amount": 50, "unit": "ml", "perPortions": 4 },
-    { "name": "Äpfel (geschält, entkernt, gewürfelt)", "amount": 4, "unit": "Stk", "perPortions": 4 },
-    { "name": "Pflanzensahne (Soja oder Hafer)", "amount": 200, "unit": "ml", "perPortions": 4 },
-    { "name": "Pflanzenjoghurt (Kokos)", "amount": 50, "unit": "g", "perPortions": 4 },
-    { "name": "Zucker", "amount": 3, "unit": "EL", "perPortions": 4 },
-    { "name": "Stärke", "amount": 3, "unit": "TL", "perPortions": 4 },
-    { "name": "Zimt", "amount": 1, "unit": "TL", "perPortions": 4 },
-    { "name": "Gemahlene Haselnüsse", "amount": 3, "unit": "EL", "perPortions": 4 }
+    {
+      "name": "Vegane Butter (z.B. Alsan)",
+      "amount": 80,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Mehl",
+      "amount": 160,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Vanilleextrakt",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kaltes Wasser",
+      "amount": 50,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Äpfel (geschält, entkernt, gewürfelt)",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Pflanzensahne (Soja oder Hafer)",
+      "amount": 200,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Pflanzenjoghurt (Kokos)",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zucker",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Stärke",
+      "amount": 3,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Zimt",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemahlene Haselnüsse",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    }
   ],
   "weatherType": "neutral",
   "source": "frei-style.com",
@@ -31,6 +91,23 @@
   ],
   "tips": "Empfohlene Apfelsorten: Boskop, Gala, Golden Delicious oder Braeburn.",
   "imageUrl": null,
-  "tags": ["Vegan", "Schweizer", "Herbst"],
-  "dietCategory": "vegan"
+  "tags": [
+    "Vegan",
+    "Schweizer",
+    "Herbst"
+  ],
+  "dietCategory": "vegan",
+  "allergens": [
+    "gluten",
+    "milch",
+    "schalenfruechte",
+    "soja"
+  ],
+  "nutrition": {
+    "kcal": 512,
+    "protein": 7.4,
+    "fat": 25.8,
+    "carbs": 63.2,
+    "fiber": 5.8
+  }
 }

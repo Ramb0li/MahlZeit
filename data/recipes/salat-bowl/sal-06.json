@@ -45,5 +45,16 @@
   "tags": [
     "Mittagsgericht",
     "Schweizer"
-  ]
+  ],
+  "allergens": [
+    "ei",
+    "senf"
+  ],
+  "nutrition": {
+    "kcal": 312,
+    "protein": 5.2,
+    "fat": 13.5,
+    "carbs": 42.8,
+    "fiber": 4.5
+  }
 }

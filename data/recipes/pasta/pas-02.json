@@ -54,5 +54,16 @@
     "Ofengericht"
   ],
   "imageZutaten": null,
-  "imageKochen": null
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 562,
+    "protein": 24.3,
+    "fat": 16.8,
+    "carbs": 74.2,
+    "fiber": 8.9
+  }
 }

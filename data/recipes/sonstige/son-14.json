@@ -4,15 +4,60 @@
   "category": "Snacks & Vorspeisen",
   "timeMinutes": 15,
   "ingredients": [
-    { "name": "Zwiebel", "amount": 1, "unit": "Stk", "perPortions": 4 },
-    { "name": "Knoblauchzehe", "amount": 1, "unit": "Zehe", "perPortions": 4 },
-    { "name": "Tomatenmark", "amount": 1, "unit": "EL", "perPortions": 4 },
-    { "name": "Weizenmehl", "amount": 2, "unit": "EL", "perPortions": 4 },
-    { "name": "Gemüsebrühe", "amount": 400, "unit": "ml", "perPortions": 4 },
-    { "name": "Sojasosse", "amount": 2, "unit": "EL", "perPortions": 4 },
-    { "name": "Thymian (getrocknet)", "amount": 0.5, "unit": "TL", "perPortions": 4 },
-    { "name": "Öl", "amount": 1, "unit": "EL", "perPortions": 4 },
-    { "name": "Pfeffer", "amount": 1, "unit": "Prise", "perPortions": 4 }
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomatenmark",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Weizenmehl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebrühe",
+      "amount": 400,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Sojasosse",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Thymian (getrocknet)",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Öl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
   ],
   "weatherType": "neutral",
   "source": "Chefkoch",
@@ -27,6 +72,19 @@
   ],
   "tips": "Für mehr Tiefe einen Schuss Rotwein oder Worcestershiresauce (vegan) einrühren.",
   "imageUrl": null,
-  "tags": ["Vegan"],
-  "dietCategory": "vegan"
+  "tags": [
+    "Vegan"
+  ],
+  "dietCategory": "vegan",
+  "allergens": [
+    "gluten",
+    "soja"
+  ],
+  "nutrition": {
+    "kcal": 68,
+    "protein": 1.8,
+    "fat": 3.2,
+    "carbs": 8.4,
+    "fiber": 1.2
+  }
 }

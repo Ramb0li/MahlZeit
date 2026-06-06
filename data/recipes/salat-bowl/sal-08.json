@@ -88,5 +88,15 @@
     "Vegan",
     "Mealprep-geeignet",
     "Mittagsgericht"
-  ]
+  ],
+  "allergens": [
+    "sesam"
+  ],
+  "nutrition": {
+    "kcal": 612,
+    "protein": 16.8,
+    "fat": 28.4,
+    "carbs": 70.3,
+    "fiber": 13.2
+  }
 }

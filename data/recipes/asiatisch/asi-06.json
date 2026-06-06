@@ -4,17 +4,72 @@
   "category": "Pasta",
   "timeMinutes": 30,
   "ingredients": [
-    { "name": "Reisnudeln", "amount": 250, "unit": "g", "perPortions": 4 },
-    { "name": "Pouletbrust (geschnetzelt)", "amount": 400, "unit": "g", "perPortions": 4 },
-    { "name": "Eier", "amount": 2, "unit": "Stk", "perPortions": 4 },
-    { "name": "Pad Thai Kochsauce", "amount": 200, "unit": "g", "perPortions": 4 },
-    { "name": "Sojasprossen", "amount": 200, "unit": "g", "perPortions": 4 },
-    { "name": "Frühlingszwiebeln", "amount": 4, "unit": "Stk", "perPortions": 4 },
-    { "name": "Knoblauchzehen (fein gehackt)", "amount": 2, "unit": "Zehen", "perPortions": 4 },
-    { "name": "Tofu (1 cm Würfel)", "amount": 100, "unit": "g", "perPortions": 4 },
-    { "name": "Pflanzenöl", "amount": 3, "unit": "EL", "perPortions": 4 },
-    { "name": "Limette", "amount": 1, "unit": "Stk", "perPortions": 4 },
-    { "name": "Koriander (frisch)", "amount": 0.5, "unit": "Bund", "perPortions": 4 }
+    {
+      "name": "Reisnudeln",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Pouletbrust (geschnetzelt)",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Eier",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Pad Thai Kochsauce",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Sojasprossen",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Frühlingszwiebeln",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehen (fein gehackt)",
+      "amount": 2,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Tofu (1 cm Würfel)",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Pflanzenöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Limette",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Koriander (frisch)",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    }
   ],
   "weatherType": "neutral",
   "source": "Thai Kitchen",
@@ -30,6 +85,20 @@
   ],
   "tips": "Fertige Pad-Thai-Sauce (z.B. von Thai Kitchen) gibt es in Asialäden und grossen Supermärkten.",
   "imageUrl": null,
-  "tags": ["Asiatisch"],
-  "dietCategory": "meat"
+  "tags": [
+    "Asiatisch"
+  ],
+  "dietCategory": "meat",
+  "allergens": [
+    "ei",
+    "gluten",
+    "soja"
+  ],
+  "nutrition": {
+    "kcal": 548,
+    "protein": 38.2,
+    "fat": 14.6,
+    "carbs": 62.8,
+    "fiber": 3.4
+  }
 }

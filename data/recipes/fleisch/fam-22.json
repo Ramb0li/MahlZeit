@@ -87,5 +87,15 @@
   "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fam-22-2--1780580068978.jpeg",
   "imageKochen": null,
   "tips": "",
-  "dietCategory": "meat"
+  "dietCategory": "meat",
+  "allergens": [
+    "soja"
+  ],
+  "nutrition": {
+    "kcal": 638,
+    "protein": 38.4,
+    "fat": 12.6,
+    "carbs": 92.8,
+    "fiber": 5.8
+  }
 }

@@ -4,21 +4,96 @@
   "category": "Suppen, Eintöpfe & Currys",
   "timeMinutes": 60,
   "ingredients": [
-    { "name": "Butternusskürbis", "amount": 600, "unit": "g", "perPortions": 4 },
-    { "name": "Süsskartoffeln", "amount": 500, "unit": "g", "perPortions": 4 },
-    { "name": "Rote Zwiebel", "amount": 1, "unit": "Stk", "perPortions": 4 },
-    { "name": "Rote Chilischoten", "amount": 2, "unit": "Stk", "perPortions": 4 },
-    { "name": "Ingwer (frisch)", "amount": 50, "unit": "g", "perPortions": 4 },
-    { "name": "Knoblauchzehen", "amount": 2, "unit": "Zehen", "perPortions": 4 },
-    { "name": "Kurkuma (frisch oder gemahlen)", "amount": 1, "unit": "TL", "perPortions": 4 },
-    { "name": "Korianderpulver", "amount": 1, "unit": "TL", "perPortions": 4 },
-    { "name": "Zimt (gemahlen)", "amount": 0.5, "unit": "TL", "perPortions": 4 },
-    { "name": "Kokosmilch (Dose)", "amount": 400, "unit": "ml", "perPortions": 4 },
-    { "name": "Gemüsebrühe", "amount": 350, "unit": "ml", "perPortions": 4 },
-    { "name": "Gehackte Tomaten (Dose)", "amount": 400, "unit": "g", "perPortions": 4 },
-    { "name": "Kokos- oder Pflanzenöl", "amount": 2, "unit": "EL", "perPortions": 4 },
-    { "name": "Koriander (frisch)", "amount": 0.5, "unit": "Bund", "perPortions": 4 },
-    { "name": "Limetten", "amount": 2, "unit": "Stk", "perPortions": 4 }
+    {
+      "name": "Butternusskürbis",
+      "amount": 600,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Süsskartoffeln",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Rote Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Rote Chilischoten",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Ingwer (frisch)",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 2,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Kurkuma (frisch oder gemahlen)",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Korianderpulver",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Zimt (gemahlen)",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kokosmilch (Dose)",
+      "amount": 400,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebrühe",
+      "amount": 350,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Gehackte Tomaten (Dose)",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Kokos- oder Pflanzenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Koriander (frisch)",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Limetten",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    }
   ],
   "weatherType": "kalt",
   "source": "Nigella Lawson",
@@ -34,6 +109,21 @@
   ],
   "tips": "Das Curry schmeckt am nächsten Tag noch besser. Gut eingefroren hält es sich 3 Monate.",
   "imageUrl": null,
-  "tags": ["Vegan", "Mealprep-geeignet", "Herbst", "Winter"],
-  "dietCategory": "vegan"
+  "tags": [
+    "Vegan",
+    "Mealprep-geeignet",
+    "Herbst",
+    "Winter"
+  ],
+  "dietCategory": "vegan",
+  "allergens": [
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 378,
+    "protein": 6.8,
+    "fat": 18.2,
+    "carbs": 48.6,
+    "fiber": 8.9
+  }
 }

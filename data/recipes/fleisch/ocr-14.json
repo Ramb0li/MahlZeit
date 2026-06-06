@@ -3,7 +3,14 @@
   "name": "Hackbraten nach Annemarie Wildeisen",
   "category": "Fleisch & Geflügel",
   "timeMinutes": 120,
-  "tags": [],
+  "tags": [
+    "Herbst",
+    "Winter",
+    "Ofengericht",
+    "Mittagsgericht",
+    "Abendgericht",
+    "Schweizer"
+  ],
   "weatherType": "kalt",
   "source": "Familien-Rezeptbuch (OCR)",
   "basePortions": 6,
@@ -59,8 +66,8 @@
     },
     {
       "name": "Rotwein",
-      "amount": 0.25,
-      "unit": "L",
+      "amount": 2.5,
+      "unit": "dl",
       "perPortions": 6
     },
     {
@@ -77,8 +84,19 @@
     "Alles mischen, kräftig würzen, zu Laib formen.",
     "Bei 200°C 20 Min. anbraten, Rotwein-Sauce beifügen, auf 120°C reduzieren. 1.5 Std. nachgaren."
   ],
-  "imageUrl": null,
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ocr14-1780785156505.jpg",
   "imageZutaten": null,
   "imageKochen": null,
-  "tips": ""
+  "allergens": [
+    "ei",
+    "milch",
+    "sulfite"
+  ],
+  "nutrition": {
+    "kcal": 512,
+    "protein": 42.6,
+    "fat": 28.4,
+    "carbs": 18.5,
+    "fiber": 0.9
+  }
 }

@@ -4,15 +4,60 @@
   "category": "Snacks & Vorspeisen",
   "timeMinutes": 40,
   "ingredients": [
-    { "name": "Rote Linsen", "amount": 100, "unit": "g", "perPortions": 4 },
-    { "name": "Wasser (kochend)", "amount": 250, "unit": "ml", "perPortions": 4 },
-    { "name": "Zwiebel", "amount": 1, "unit": "Stk", "perPortions": 4 },
-    { "name": "Knoblauchzehe", "amount": 1, "unit": "Zehe", "perPortions": 4 },
-    { "name": "Getrocknete Tomaten in Öl", "amount": 10, "unit": "Stk", "perPortions": 4 },
-    { "name": "Paprikapulver edelsüss", "amount": 0.5, "unit": "TL", "perPortions": 4 },
-    { "name": "Zitronensaft", "amount": 1, "unit": "EL", "perPortions": 4 },
-    { "name": "Salz", "amount": 0.5, "unit": "TL", "perPortions": 4 },
-    { "name": "Pfeffer", "amount": 1, "unit": "Prise", "perPortions": 4 }
+    {
+      "name": "Rote Linsen",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Wasser (kochend)",
+      "amount": 250,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Getrocknete Tomaten in Öl",
+      "amount": 10,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Paprikapulver edelsüss",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
   ],
   "weatherType": "neutral",
   "source": "fooby.ch",
@@ -26,6 +71,17 @@
   ],
   "tips": "Mit einem Klecks Joghurt und frischen Kräutern als Dip für Gemüsesticks servieren.",
   "imageUrl": null,
-  "tags": ["Vegan", "Mealprep-geeignet"],
-  "dietCategory": "vegan"
+  "tags": [
+    "Vegan",
+    "Mealprep-geeignet"
+  ],
+  "dietCategory": "vegan",
+  "allergens": [],
+  "nutrition": {
+    "kcal": 145,
+    "protein": 6.8,
+    "fat": 5.2,
+    "carbs": 17.3,
+    "fiber": 4.6
+  }
 }

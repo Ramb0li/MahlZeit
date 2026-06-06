@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
+import { useTranslations }     from 'next-intl';
+import { Link, useRouter }     from '@/i18n/navigation';
 import { CalendarDays, BookOpen, ShoppingCart, Settings, LogOut, Package } from 'lucide-react';
 import { WeekPlanner } from '@/components/planner/WeekPlanner';
 import { RecipeList } from '@/components/recipes/RecipeList';
@@ -18,12 +19,12 @@ import type { Group, GroupRole } from '@/lib/groups';
 type Tab = 'planner' | 'recipes' | 'shopping' | 'pantry' | 'settings';
 export type { Tab };
 
-const TABS: { id: Tab; label: string; icon: React.ComponentType<{ size?: number | string }> }[] = [
-  { id: 'planner',  label: 'Menüplan',        icon: CalendarDays },
-  { id: 'shopping', label: 'Einkauf',          icon: ShoppingCart },
-  { id: 'pantry',   label: 'Chuchichäschtli',  icon: Package      },
-  { id: 'recipes',  label: 'Rezepte',          icon: BookOpen     },
-  { id: 'settings', label: 'Einstellungen',    icon: Settings     },
+const TAB_DEFS: { id: Tab; labelKey: string; icon: React.ComponentType<{ size?: number | string }> }[] = [
+  { id: 'planner',  labelKey: 'tabPlanner',  icon: CalendarDays },
+  { id: 'shopping', labelKey: 'tabShopping', icon: ShoppingCart },
+  { id: 'pantry',   labelKey: 'tabPantry',   icon: Package      },
+  { id: 'recipes',  labelKey: 'tabRecipes',  icon: BookOpen     },
+  { id: 'settings', labelKey: 'tabSettings', icon: Settings     },
 ];
 
 interface AppShellProps {
@@ -38,11 +39,6 @@ interface AppShellProps {
   groupRole?: GroupRole;
 }
 
-async function handleLogout() {
-  await fetch('/api/auth/logout', { method: 'POST' });
-  window.location.href = '/auth';
-}
-
 export function AppShell({
   recipes: initialRecipes,
   settings: initialSettings,
@@ -54,6 +50,15 @@ export function AppShell({
   group: initialGroup = null,
   groupRole = 'member',
 }: AppShellProps) {
+  const t      = useTranslations('AppShell');
+  const router = useRouter();
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const handleLogout = async () => {
+    await fetch('/api/auth/logout', { method: 'POST' });
+    router.replace('/auth');
+  };
+
   const [activeTab, setActiveTab]     = useState<Tab>(initialTab ?? 'planner');
   const [recipes, setRecipes]         = useState<Recipe[]>(initialRecipes);
   const [settings, setSettings]       = useState<AppSettings>(initialSettings);
@@ -83,14 +88,15 @@ export function AppShell({
         </div>
 
         <nav className="mz-topnav">
-          {TABS.map(({ id, label, icon: Icon }) => (
+          {TAB_DEFS.map(({ id, labelKey, icon: Icon }) => (
             <button
               key={id}
               onClick={() => setActiveTab(id)}
               className={`mz-topnav-btn${activeTab === id ? ' on' : ''}`}
             >
               <Icon size={16} />
-              <span className="mz-hide-sm">{label}</span>
+              {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+              <span className="mz-hide-sm">{t(labelKey as any)}</span>
             </button>
           ))}
         </nav>
@@ -106,7 +112,7 @@ export function AppShell({
           )}
           <button className="mz-logout" onClick={handleLogout}>
             <LogOut size={14} />
-            <span className="mz-hide-sm">Abmelden</span>
+            <span className="mz-hide-sm">{t('logout')}</span>
           </button>
         </div>
       </header>
@@ -119,10 +125,10 @@ export function AppShell({
             </div>
             <span style={{ fontWeight: 700 }}>{group.name}</span>
             {groupRole === 'member' && (
-              <span className="mz-group-tag">Mitglied</span>
+              <span className="mz-group-tag">{t('roleMember')}</span>
             )}
             {groupRole === 'owner' && (
-              <span className="mz-group-tag">Eigentümer</span>
+              <span className="mz-group-tag">{t('roleOwner')}</span>
             )}
           </div>
         )}
@@ -168,19 +174,20 @@ export function AppShell({
       </main>
 
       <nav className="mz-botnav">
-        {TABS.map(({ id, label, icon: Icon }) => (
+        {TAB_DEFS.map(({ id, labelKey, icon: Icon }) => (
           <button
             key={id}
             onClick={() => setActiveTab(id)}
             className={`mz-botnav-btn${activeTab === id ? ' on' : ''}`}
           >
             <Icon size={20} />
-            {label}
+            {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+            {t(labelKey as any)}
           </button>
         ))}
         <button className="mz-botnav-btn" onClick={handleLogout}>
           <LogOut size={20} />
-          Abmelden
+          {t('logout')}
         </button>
       </nav>
 

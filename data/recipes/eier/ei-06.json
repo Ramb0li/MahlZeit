@@ -51,5 +51,17 @@
     "Winter"
   ],
   "imageZutaten": null,
-  "imageKochen": null
+  "imageKochen": null,
+  "allergens": [
+    "ei",
+    "milch",
+    "senf"
+  ],
+  "nutrition": {
+    "kcal": 408,
+    "protein": 23.8,
+    "fat": 31.7,
+    "carbs": 7.4,
+    "fiber": 2.8
+  }
 }

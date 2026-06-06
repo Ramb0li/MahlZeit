@@ -90,5 +90,17 @@
   "imageUrl": null,
   "imageZutaten": null,
   "imageKochen": null,
-  "tips": ""
+  "tips": "",
+  "allergens": [
+    "ei",
+    "milch",
+    "senf"
+  ],
+  "nutrition": {
+    "kcal": 542,
+    "protein": 29.8,
+    "fat": 42.5,
+    "carbs": 8.2,
+    "fiber": 1.8
+  }
 }

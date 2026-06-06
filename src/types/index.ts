@@ -59,6 +59,32 @@ export interface RecipeRating {
 
 export type DietCategory = 'meat' | 'fish' | 'vegetarian' | 'vegan';
 
+/** Die 14 offiziellen EU-Pflichtallergene */
+export type EuAllergen =
+  | 'gluten'
+  | 'krebstiere'
+  | 'ei'
+  | 'fisch'
+  | 'erdnuesse'
+  | 'soja'
+  | 'milch'
+  | 'schalenfruechte'
+  | 'sellerie'
+  | 'senf'
+  | 'sesam'
+  | 'sulfite'
+  | 'lupinen'
+  | 'weichtiere';
+
+/** Nährwerte pro Portion (KI-Schätzwerte) */
+export interface Nutrition {
+  kcal:    number;  // pro Portion, ganze Zahl
+  protein: number;  // g, 1 Dezimalstelle
+  fat:     number;  // g, 1 Dezimalstelle
+  carbs:   number;  // g, 1 Dezimalstelle
+  fiber:   number;  // g, 1 Dezimalstelle
+}
+
 export interface Recipe {
   id: string;
   name: string;
@@ -78,6 +104,8 @@ export interface Recipe {
   imageKochen?: string | null;
   archived?: boolean;
   dietCategory?: DietCategory;
+  allergens?: EuAllergen[];   // Vorberechnete EU-Pflichtallergene aus Zutaten
+  nutrition?: Nutrition;      // KI-geschätzte Nährwerte pro Portion
 }
 
 export interface MealSlot {

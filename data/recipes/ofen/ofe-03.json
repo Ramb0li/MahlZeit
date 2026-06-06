@@ -108,5 +108,18 @@
   "tips": "",
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---brot-gemu-se-auflauf-1--1780579881377.jpeg",
   "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---brot-gemu-se-auflauf-2--1780579895432.jpeg",
-  "imageKochen": null
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch",
+    "schalenfruechte",
+    "senf"
+  ],
+  "nutrition": {
+    "kcal": 448,
+    "protein": 16.2,
+    "fat": 14.8,
+    "carbs": 62.4,
+    "fiber": 9.1
+  }
 }

@@ -72,5 +72,15 @@
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fam-59--1780580156551.jpeg",
   "imageZutaten": null,
   "imageKochen": null,
-  "tips": ""
+  "tips": "",
+  "allergens": [
+    "sulfite"
+  ],
+  "nutrition": {
+    "kcal": 288,
+    "protein": 4.5,
+    "fat": 10.2,
+    "carbs": 43.7,
+    "fiber": 3.9
+  }
 }

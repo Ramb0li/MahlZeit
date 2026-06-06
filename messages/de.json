@@ -1,0 +1,40 @@
+{
+  "AppShell": {
+    "tabPlanner":  "Menüplan",
+    "tabShopping": "Einkauf",
+    "tabPantry":   "Chuchichäschtli",
+    "tabRecipes":  "Rezepte",
+    "tabSettings": "Einstellungen",
+    "logout":      "Abmelden",
+    "roleMember":  "Mitglied",
+    "roleOwner":   "Eigentümer"
+  },
+  "Landing": {
+    "navLogin":       "Anmelden",
+    "navStartFree":   "Gratis starten",
+    "navToPlanner":   "Zum Menüplan",
+    "heroCta":        "Mehr erfahren",
+    "heroNote":       "Kein Abo-Zwang · 🇨🇭 Made in Switzerland",
+    "kicker":         "Dein schlauer Menüplaner",
+    "statement1":     "Schluss mit der Frage",
+    "statement2":     "«Was koche ich heute?»",
+    "mobileCta":      "7 Tage gratis testen",
+    "mobileCtaNote":  "Kein Kreditkarteneintrag nötig",
+    "planBuy":        "Jetzt kaufen →",
+    "planSelect":     "Auswählen →"
+  },
+  "NotFound": {
+    "title":       "Diese Seite steht nicht auf der Speisekarte.",
+    "description": "Entweder wurde das Rezept entfernt, die URL hat sich vertippt oder der Koch hatte einfach einen schlechten Tag.",
+    "backHome":    "Zurück zur Startseite"
+  },
+  "LegalShell": {
+    "backHome": "Zur Startseite"
+  },
+  "SiteFooter": {
+    "privacy": "Datenschutz",
+    "imprint": "Impressum",
+    "terms":   "Nutzungsbedingungen",
+    "contact": "Kontakt"
+  }
+}

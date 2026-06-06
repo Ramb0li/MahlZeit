@@ -89,5 +89,16 @@
     "Vegetarisch"
   ],
   "imageZutaten": null,
-  "imageKochen": null
+  "imageKochen": null,
+  "allergens": [
+    "ei",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 398,
+    "protein": 22.4,
+    "fat": 27.8,
+    "carbs": 15.3,
+    "fiber": 4.2
+  }
 }

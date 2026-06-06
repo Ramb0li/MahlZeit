@@ -83,5 +83,15 @@
   "tips": "",
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---hirse-gemu-se-pfanne-mit-ra-uchertofu-1--1780578809829.jpeg",
   "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---hirse-gemu-se-pfanne-mit-ra-uchertofu-2--1780579029051.jpeg",
-  "imageKochen": null
+  "imageKochen": null,
+  "allergens": [
+    "soja"
+  ],
+  "nutrition": {
+    "kcal": 492,
+    "protein": 21.4,
+    "fat": 15.8,
+    "carbs": 64.2,
+    "fiber": 10.6
+  }
 }

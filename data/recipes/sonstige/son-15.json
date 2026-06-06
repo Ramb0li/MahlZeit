@@ -4,9 +4,24 @@
   "category": "Desserts & Süsses",
   "timeMinutes": 15,
   "ingredients": [
-    { "name": "Bananen", "amount": 2, "unit": "Stk", "perPortions": 6 },
-    { "name": "Erdbeeren", "amount": 150, "unit": "g", "perPortions": 6 },
-    { "name": "Rahm (Schlagrahm)", "amount": 200, "unit": "ml", "perPortions": 6 }
+    {
+      "name": "Bananen",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 6
+    },
+    {
+      "name": "Erdbeeren",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Rahm (Schlagrahm)",
+      "amount": 200,
+      "unit": "ml",
+      "perPortions": 6
+    }
   ],
   "weatherType": "warm",
   "source": "familienkost.de",
@@ -21,6 +36,21 @@
   ],
   "tips": "Für ein zweifarbiges Eis die Formen zur Hälfte füllen, kurz anfrieren lassen, dann die zweite Schicht einfüllen.",
   "imageUrl": null,
-  "tags": ["Vegetarisch", "Kinderfreundlich", "Sommer"],
-  "dietCategory": "vegetarian"
+  "tags": [
+    "Vegetarisch",
+    "Kinderfreundlich",
+    "Sommer"
+  ],
+  "dietCategory": "vegetarian",
+  "allergens": [
+    "ei",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 128,
+    "protein": 1.4,
+    "fat": 8.2,
+    "carbs": 13.6,
+    "fiber": 1.8
+  }
 }

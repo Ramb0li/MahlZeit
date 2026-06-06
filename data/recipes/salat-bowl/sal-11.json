@@ -59,5 +59,17 @@
   "tips": "",
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---gurkensalat-1--1780579715668.jpeg",
   "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---gurkensalat-2--1780579721355.jpeg",
-  "imageKochen": null
+  "imageKochen": null,
+  "allergens": [
+    "milch",
+    "schalenfruechte",
+    "senf"
+  ],
+  "nutrition": {
+    "kcal": 68,
+    "protein": 1.8,
+    "fat": 4.2,
+    "carbs": 5.9,
+    "fiber": 1.4
+  }
 }

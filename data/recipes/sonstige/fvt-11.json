@@ -75,5 +75,15 @@
   "tags": [
     "Mittagsgericht",
     "Mexikanisch"
-  ]
+  ],
+  "allergens": [
+    "schalenfruechte"
+  ],
+  "nutrition": {
+    "kcal": 402,
+    "protein": 13.8,
+    "fat": 17.6,
+    "carbs": 48.2,
+    "fiber": 10.4
+  }
 }

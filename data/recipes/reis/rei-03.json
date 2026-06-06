@@ -64,5 +64,15 @@
     "Mealprep-geeignet",
     "Mittagsgericht",
     "Asiatisch"
-  ]
+  ],
+  "allergens": [
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 612,
+    "protein": 18.4,
+    "fat": 18.6,
+    "carbs": 89.2,
+    "fiber": 10.3
+  }
 }

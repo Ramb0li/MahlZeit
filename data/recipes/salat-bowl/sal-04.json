@@ -78,5 +78,16 @@
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---sal-04-1--1780579587426.jpeg",
   "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---sal-04-2--1780579592398.jpeg",
   "imageKochen": null,
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "allergens": [
+    "senf",
+    "sulfite"
+  ],
+  "nutrition": {
+    "kcal": 268,
+    "protein": 9.8,
+    "fat": 14.2,
+    "carbs": 26.5,
+    "fiber": 7.5
+  }
 }

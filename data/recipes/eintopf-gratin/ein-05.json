@@ -53,5 +53,16 @@
     "Herbst",
     "Winter",
     "Ofengericht"
-  ]
+  ],
+  "allergens": [
+    "milch",
+    "soja"
+  ],
+  "nutrition": {
+    "kcal": 358,
+    "protein": 15.4,
+    "fat": 14.6,
+    "carbs": 38.7,
+    "fiber": 7.2
+  }
 }

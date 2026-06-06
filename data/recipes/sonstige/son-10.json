@@ -4,14 +4,54 @@
   "category": "Vegetarische Hauptgerichte",
   "timeMinutes": 25,
   "ingredients": [
-    { "name": "Rosenkohl", "amount": 350, "unit": "g", "perPortions": 2 },
-    { "name": "Sobanudeln", "amount": 200, "unit": "g", "perPortions": 2 },
-    { "name": "Schwarze Bohnen (Dose, Abtropfgewicht)", "amount": 130, "unit": "g", "perPortions": 2 },
-    { "name": "Knoblauchzehen", "amount": 2, "unit": "Zehen", "perPortions": 2 },
-    { "name": "Ingwer (frisch)", "amount": 20, "unit": "g", "perPortions": 2 },
-    { "name": "Getrocknete Chilischote", "amount": 1, "unit": "Stk", "perPortions": 2 },
-    { "name": "Sojasosse", "amount": 2, "unit": "EL", "perPortions": 2 },
-    { "name": "Kokosöl oder Bratöl", "amount": 2, "unit": "EL", "perPortions": 2 }
+    {
+      "name": "Rosenkohl",
+      "amount": 350,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Sobanudeln",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Schwarze Bohnen (Dose, Abtropfgewicht)",
+      "amount": 130,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 2,
+      "unit": "Zehen",
+      "perPortions": 2
+    },
+    {
+      "name": "Ingwer (frisch)",
+      "amount": 20,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Getrocknete Chilischote",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Sojasosse",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Kokosöl oder Bratöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 2
+    }
   ],
   "weatherType": "kalt",
   "source": "bevegt.de",
@@ -27,6 +67,20 @@
   ],
   "tips": "Der Rosenkohl darf wirklich dunkel werden – das gibt das typische Röstaroma. Sobanudeln nicht überkochen.",
   "imageUrl": null,
-  "tags": ["Vegan", "Asiatisch"],
-  "dietCategory": "vegan"
+  "tags": [
+    "Vegan",
+    "Asiatisch"
+  ],
+  "dietCategory": "vegan",
+  "allergens": [
+    "gluten",
+    "soja"
+  ],
+  "nutrition": {
+    "kcal": 512,
+    "protein": 22.3,
+    "fat": 15.8,
+    "carbs": 68.4,
+    "fiber": 12.7
+  }
 }

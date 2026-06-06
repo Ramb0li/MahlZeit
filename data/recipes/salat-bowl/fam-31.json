@@ -75,5 +75,15 @@
   "imageUrl": null,
   "imageZutaten": null,
   "imageKochen": null,
-  "tips": ""
+  "tips": "",
+  "allergens": [
+    "senf"
+  ],
+  "nutrition": {
+    "kcal": 142,
+    "protein": 2.8,
+    "fat": 7.2,
+    "carbs": 17.5,
+    "fiber": 4.1
+  }
 }

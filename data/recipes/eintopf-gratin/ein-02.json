@@ -48,5 +48,16 @@
   "steps": [],
   "tips": "",
   "imageUrl": null,
-  "tags": []
+  "tags": [],
+  "allergens": [
+    "gluten",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 387,
+    "protein": 14.8,
+    "fat": 11.2,
+    "carbs": 56.4,
+    "fiber": 8.5
+  }
 }

@@ -64,5 +64,15 @@
   "imageUrl": null,
   "imageZutaten": null,
   "imageKochen": null,
-  "tips": ""
+  "tips": "",
+  "allergens": [
+    "soja"
+  ],
+  "nutrition": {
+    "kcal": 348,
+    "protein": 42.5,
+    "fat": 9.2,
+    "carbs": 24.8,
+    "fiber": 1.4
+  }
 }

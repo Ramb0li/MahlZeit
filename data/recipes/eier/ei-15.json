@@ -71,5 +71,17 @@
     "Kinderfreundlich"
   ],
   "imageZutaten": null,
-  "imageKochen": null
+  "imageKochen": null,
+  "allergens": [
+    "ei",
+    "gluten",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 342,
+    "protein": 11.2,
+    "fat": 10.8,
+    "carbs": 50.3,
+    "fiber": 1.8
+  }
 }

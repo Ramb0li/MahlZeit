@@ -3,7 +3,16 @@
   "name": "Burger",
   "category": "Wraps & Sandwiches",
   "timeMinutes": 20,
-  "tags": [],
+  "tags": [
+    "Mittagsgericht",
+    "Abendgericht",
+    "Grillgericht",
+    "Kinderfreundlich",
+    "Winter",
+    "Herbst",
+    "Sommer",
+    "Frühling"
+  ],
   "weatherType": "warm",
   "source": "Familien-Rezeptbuch",
   "basePortions": 4,
@@ -69,8 +78,19 @@
     "Burger anbraten.",
     "Alle Zutaten belegen: Kräuterbutter, Senf, Ketchup nach Belieben."
   ],
-  "imageUrl": null,
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fam-08-1780785769273.jpg",
   "imageZutaten": null,
   "imageKochen": null,
-  "tips": ""
+  "allergens": [
+    "gluten",
+    "milch",
+    "senf"
+  ],
+  "nutrition": {
+    "kcal": 548,
+    "protein": 26.4,
+    "fat": 24.8,
+    "carbs": 52.3,
+    "fiber": 5.6
+  }
 }

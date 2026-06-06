@@ -4,18 +4,78 @@
   "category": "Suppen, Eintöpfe & Currys",
   "timeMinutes": 60,
   "ingredients": [
-    { "name": "Mungobohnen (getrocknet)", "amount": 200, "unit": "g", "perPortions": 4 },
-    { "name": "Blattspinat (tiefgekühlt oder frisch)", "amount": 300, "unit": "g", "perPortions": 4 },
-    { "name": "Zwiebeln", "amount": 150, "unit": "g", "perPortions": 4 },
-    { "name": "Tomatenstücke (Dose)", "amount": 400, "unit": "g", "perPortions": 4 },
-    { "name": "Kokosmilch (Dose)", "amount": 400, "unit": "ml", "perPortions": 4 },
-    { "name": "Knoblauchzehen", "amount": 2, "unit": "Zehen", "perPortions": 4 },
-    { "name": "Ingwer (frisch)", "amount": 20, "unit": "g", "perPortions": 4 },
-    { "name": "Currypulver", "amount": 1, "unit": "EL", "perPortions": 4 },
-    { "name": "Kreuzkümmel (gemahlen)", "amount": 1, "unit": "TL", "perPortions": 4 },
-    { "name": "Gemüsebrühepulver", "amount": 3, "unit": "EL", "perPortions": 4 },
-    { "name": "Öl", "amount": 4, "unit": "EL", "perPortions": 4 },
-    { "name": "Zitronensaft", "amount": 1, "unit": "EL", "perPortions": 4 }
+    {
+      "name": "Mungobohnen (getrocknet)",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Blattspinat (tiefgekühlt oder frisch)",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebeln",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomatenstücke (Dose)",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Kokosmilch (Dose)",
+      "amount": 400,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 2,
+      "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Ingwer (frisch)",
+      "amount": 20,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Currypulver",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kreuzkümmel (gemahlen)",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebrühepulver",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Öl",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    }
   ],
   "weatherType": "kalt",
   "source": "veggie-einhorn.de",
@@ -31,6 +91,20 @@
   ],
   "tips": "Wer keine Zeit hat zum Einweichen, kocht die Bohnen direkt aber ca. 20 Min. länger.",
   "imageUrl": null,
-  "tags": ["Vegan", "Mealprep-geeignet", "Orientalisch"],
-  "dietCategory": "vegan"
+  "tags": [
+    "Vegan",
+    "Mealprep-geeignet",
+    "Orientalisch"
+  ],
+  "dietCategory": "vegan",
+  "allergens": [
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 448,
+    "protein": 18.6,
+    "fat": 22.4,
+    "carbs": 42.8,
+    "fiber": 12.4
+  }
 }

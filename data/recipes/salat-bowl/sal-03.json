@@ -81,5 +81,15 @@
     "Orientalisch",
     "Vegan"
   ],
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "allergens": [
+    "gluten"
+  ],
+  "nutrition": {
+    "kcal": 385,
+    "protein": 9.2,
+    "fat": 18.5,
+    "carbs": 48.3,
+    "fiber": 7.2
+  }
 }

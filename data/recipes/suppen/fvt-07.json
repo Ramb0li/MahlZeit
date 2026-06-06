@@ -102,5 +102,15 @@
     "Herbst",
     "Winter",
     "Frühling"
-  ]
+  ],
+  "allergens": [
+    "gluten"
+  ],
+  "nutrition": {
+    "kcal": 398,
+    "protein": 15.8,
+    "fat": 11.2,
+    "carbs": 61.4,
+    "fiber": 13.2
+  }
 }
