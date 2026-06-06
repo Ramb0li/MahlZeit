@@ -45,14 +45,14 @@
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Klassische Lasagne vegetarisch.",
-  "steps": [],
-  "tips": "",
-  "imageUrl": null,
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/pas-02-1780699528706.jpg",
   "tags": [
     "Mealprep-geeignet",
     "Mittagsgericht",
     "Herbst",
     "Winter",
     "Ofengericht"
-  ]
+  ],
+  "imageZutaten": null,
+  "imageKochen": null
 }

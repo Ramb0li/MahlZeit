@@ -45,11 +45,11 @@
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Cremige Pilzrahmsauce mit Pasta.",
-  "steps": [],
-  "tips": "",
-  "imageUrl": null,
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/pas-06-1780699687747.jpg",
   "tags": [
     "Herbst",
     "Winter"
-  ]
+  ],
+  "imageZutaten": null,
+  "imageKochen": null
 }

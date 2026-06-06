@@ -217,12 +217,12 @@
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Schnelle Omelette mit buntem Gemüse.",
-    "steps": [],
-    "tips": "",
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-04-1780699103706.jpg",
     "tags": [
       "Mittagsgericht"
-    ]
+    ],
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "ei-05",
@@ -326,13 +326,13 @@
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Deftige Senfsauce mit Eiern und feinem Blumenkohlpüree.",
-    "steps": [],
-    "tips": "",
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-06-1780699136939.jpg",
     "tags": [
       "Herbst",
       "Winter"
-    ]
+    ],
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "ei-07",
@@ -474,12 +474,13 @@
       "Mit einem Löffel Mulden in die Sauce drücken, Eier hineingleiten lassen. Deckel drauf, 6–8 Minuten garen bis Eiweiss gestockt, Dotter noch weich.",
       "Mit restlichem Feta und frischen Kräutern garnieren. Mit Brot servieren."
     ],
-    "tips": "Dazu passt frisches Fladenbrot oder Sauerteigbrot. Für eine vegane Variante die Eier weglassen und mehr Gemüse hinzufügen.",
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-08-1780699167676.jpg",
     "tags": [
       "Mittagsgericht",
       "Vegetarisch"
-    ]
+    ],
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "ei-09",
@@ -893,14 +894,14 @@
       "Smoothie gleichmässig in vier Bowls verteilen.",
       "Mit Beeren (Erdbeerscheiben, Himbeeren, Johannisbeeren) und Müesli garnieren."
     ],
-    "tips": "Bananen und Zucchetti am Vortag einfrieren für die dickste Konsistenz. Die Zucchetti schmeckt man überhaupt nicht.",
-    "imageUrl": null,
+    "imageUrl": "blob:https://mahlzeit.o-v-k.ch/7e4cf48d-0f11-4029-9d13-a7c52054da99",
     "tags": [
       "Vegan",
       "Sommer",
       "Frühling"
     ],
-    "dietCategory": "vegan"
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "ei-14",
@@ -969,13 +970,13 @@
       "Backen bis Blasen entstehen, dann wenden und goldbraun fertigbacken.",
       "Mit Ahornsirup und Früchten servieren."
     ],
-    "tips": "Teig nicht zu stark rühren – kleine Klümpchen sind in Ordnung und sorgen für Fluffigkeit.",
-    "imageUrl": null,
+    "imageUrl": "blob:https://mahlzeit.o-v-k.ch/a4e9612a-cb72-4486-9918-1d5eb8a20177",
     "tags": [
       "Vegan",
       "Kinderfreundlich"
     ],
-    "dietCategory": "vegan"
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "ei-15",
@@ -1044,13 +1045,13 @@
       "Backen bis die Ränder fest und Blasen entstehen, dann wenden und goldbraun fertigbacken.",
       "Mit Ahornsirup, Butter oder frischen Früchten servieren."
     ],
-    "tips": "Perfekte Pancakes: Teig nicht zu lange rühren und zwischen den Portionen die Pfannentemperatur kurz anpassen.",
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-15-1780699224577.jpg",
     "tags": [
       "Vegetarisch",
       "Kinderfreundlich"
     ],
-    "dietCategory": "vegetarian"
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "ei-16",
@@ -1107,13 +1108,13 @@
       "Ca. 3–4 Minuten backen bis die Unterseite goldbraun ist, vorsichtig wenden und weitere 2–3 Minuten fertigbacken.",
       "Mit Beeren, Ahornsirup oder Nussbutter servieren."
     ],
-    "tips": "Je reifer die Bananen, desto süsser die Pancakes. Haferflocken können in einem Mixer selbst zu Mehl gemahlen werden.",
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-16-1780699242965.jpg",
     "tags": [
       "Vegan",
       "Kinderfreundlich"
     ],
-    "dietCategory": "vegan"
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "fam-29",
@@ -1395,10 +1396,9 @@
       "Schinken in Bratbutter anbraten, Knoblauch am Schluss.",
       "Abgeschüttete Spaghetti vom Herd, Olivenöl darunter, Eier-Rahmgemisch einrühren, Schinken beigeben."
     ],
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fam-38-1780699276557.jpg",
     "imageZutaten": null,
-    "imageKochen": null,
-    "tips": ""
+    "imageKochen": null
   },
   {
     "id": "fam-39",
@@ -1469,10 +1469,9 @@
       "Basilikum erst gegen Schluss dazugeben.",
       "Unterdessen Spaghetti kochen."
     ],
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fam-39-1780699369435.jpg",
     "imageZutaten": null,
-    "imageKochen": null,
-    "tips": ""
+    "imageKochen": null
   },
   {
     "id": "fam-50",
@@ -1572,10 +1571,9 @@
       "Rahm dazugeben, würzen, kurz köcheln.",
       "Tortellini nach Anleitung kochen, mit Sauce servieren."
     ],
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fam-50-1780699402158.jpg",
     "imageZutaten": null,
-    "imageKochen": null,
-    "tips": ""
+    "imageKochen": null
   },
   {
     "id": "fam-55",
@@ -1651,10 +1649,9 @@
       "Käse hinzufügen, schmelzen. Rahm, Zitronenöl/Schale beifügen, würzen.",
       "Ravioli nach Anleitung kochen."
     ],
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fam-55-1780699429979.jpg",
     "imageZutaten": null,
-    "imageKochen": null,
-    "tips": ""
+    "imageKochen": null
   },
   {
     "id": "fvt-03",
@@ -1733,16 +1730,16 @@
     "source": "Familientisch voraus! (LittleFant)",
     "basePortions": 4,
     "description": "Vollwertige Variante mit Berglinsen – extra Balsamico für Tiefe. Sauce gut einfrierbar.",
-    "steps": [],
-    "tips": "",
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fvt-03-1780699461296.jpg",
     "tags": [
       "Mealprep-geeignet",
       "Mittagsgericht",
       "Herbst",
       "Winter",
       "Frühling"
-    ]
+    ],
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "fvt-04",
@@ -2324,16 +2321,16 @@
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Klassische Lasagne vegetarisch.",
-    "steps": [],
-    "tips": "",
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/pas-02-1780699528706.jpg",
     "tags": [
       "Mealprep-geeignet",
       "Mittagsgericht",
       "Herbst",
       "Winter",
       "Ofengericht"
-    ]
+    ],
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "pas-03",
@@ -2408,8 +2405,7 @@
       "Form fetten. Blätter mit Spinatmasse abwechseln. Sbrinz drüber.",
       "Bei 200–220°C 40–45 Min. backen."
     ],
-    "tips": "",
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/pas-03-1780699620075.jpg",
     "imageZutaten": null,
     "imageKochen": null
   },
@@ -2530,8 +2526,7 @@
       "Würzen (Ital. Kräuter, Salz, Pfeffer, All'Arrabbiata), 15–20 Min. köcheln.",
       "Spaghetti al dente kochen."
     ],
-    "tips": "",
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/pas-05-1780699648000.jpg",
     "imageZutaten": null,
     "imageKochen": null
   },
@@ -2582,13 +2577,13 @@
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Cremige Pilzrahmsauce mit Pasta.",
-    "steps": [],
-    "tips": "",
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/pas-06-1780699687747.jpg",
     "tags": [
       "Herbst",
       "Winter"
-    ]
+    ],
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "pas-07",
@@ -4949,14 +4944,14 @@
       "Mozzarella in Scheiben darauflegen, mit Parmesan bestreuen.",
       "Ca. 20–25 Min. bei 200 °C backen bis der Käse goldbraun ist."
     ],
-    "tips": "Der Auflauf lässt sich gut vorbereiten und im Kühlschrank aufbewahren. Vor dem Backen 15 Min. Raumtemperatur nehmen lassen.",
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ein-07-1780699772589.jpg",
     "tags": [
       "Vegetarisch",
       "Mealprep-geeignet",
       "Italienisch"
     ],
-    "dietCategory": "vegetarian"
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "ein-09",
@@ -16210,7 +16205,7 @@
   },
   {
     "id": "son-04",
-    "name": "Avocado Toast mit pochiertem Ei",
+    "name": "Avocado Toast mit Spiegelei",
     "category": "Frühstück",
     "timeMinutes": 15,
     "ingredients": [
@@ -16272,21 +16267,22 @@
     "weatherType": "neutral",
     "source": "cuiseline",
     "basePortions": 4,
-    "description": "Der Klassiker neu gedacht — mit pochiertem Ei, Kresse und dem richtigen Sauerteigbrot. Fertig in 15 Minuten.",
+    "description": "Der Klassiker neu gedacht — mit Spiegelei, Kresse und dem richtigen Sauerteigbrot. Fertig in 15 Minuten.",
     "steps": [
       "Brotscheiben im Toaster oder Ofen kross toasten.",
       "Avocados halbieren, entkernen, das Fruchtfleisch mit einer Gabel grob zerdrücken. Mit Zitronensaft, Salz und Pfeffer würzen.",
-      "Für die pochierten Eier: Wasser in einem flachen Topf zum Sieden bringen (nicht kochen), Essig dazugeben.",
+      "Für die Spiegelei: Bratbutter oder Kokosöl in Edelstahlpfanne braten.",
       "Ei in eine kleine Tasse aufschlagen. Mit einem Löffel einen Strudel im Wasser erzeugen, Ei hineingleiten lassen. 3 Minuten pochieren.",
       "Avocado-Creme auf das Brot streichen. Ei darauflegen.",
       "Mit Olivenöl, Chiliflocken, Fleur de sel und Kresse fertigstellen."
     ],
-    "tips": "Frische Eier pochieren sich am besten — das Eiweiss hält besser zusammen. Variante: statt pochiertem Ei ein Spiegelei oder Scrambled Eggs verwenden.",
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/son-04-2-1780699834231.jpg",
     "tags": [
       "Vegetarisch",
       "Mittagsgericht"
-    ]
+    ],
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "son-05",

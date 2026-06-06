@@ -45,11 +45,11 @@
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Deftige Senfsauce mit Eiern und feinem Blumenkohlpüree.",
-  "steps": [],
-  "tips": "",
-  "imageUrl": null,
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-06-1780699136939.jpg",
   "tags": [
     "Herbst",
     "Winter"
-  ]
+  ],
+  "imageZutaten": null,
+  "imageKochen": null
 }

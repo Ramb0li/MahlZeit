@@ -45,10 +45,10 @@
   "source": "Rezept von Cuiselin",
   "basePortions": 4,
   "description": "Schnelle Omelette mit buntem Gemüse.",
-  "steps": [],
-  "tips": "",
-  "imageUrl": null,
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-04-1780699103706.jpg",
   "tags": [
     "Mittagsgericht"
-  ]
+  ],
+  "imageZutaten": null,
+  "imageKochen": null
 }

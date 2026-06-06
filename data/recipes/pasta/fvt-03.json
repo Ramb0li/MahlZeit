@@ -75,14 +75,14 @@
   "source": "Familientisch voraus! (LittleFant)",
   "basePortions": 4,
   "description": "Vollwertige Variante mit Berglinsen – extra Balsamico für Tiefe. Sauce gut einfrierbar.",
-  "steps": [],
-  "tips": "",
-  "imageUrl": null,
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fvt-03-1780699461296.jpg",
   "tags": [
     "Mealprep-geeignet",
     "Mittagsgericht",
     "Herbst",
     "Winter",
     "Frühling"
-  ]
+  ],
+  "imageZutaten": null,
+  "imageKochen": null
 }

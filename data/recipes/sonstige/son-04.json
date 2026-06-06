@@ -1,6 +1,6 @@
 {
   "id": "son-04",
-  "name": "Avocado Toast mit pochiertem Ei",
+  "name": "Avocado Toast mit Spiegelei",
   "category": "Frühstück",
   "timeMinutes": 15,
   "ingredients": [
@@ -62,19 +62,20 @@
   "weatherType": "neutral",
   "source": "cuiseline",
   "basePortions": 4,
-  "description": "Der Klassiker neu gedacht — mit pochiertem Ei, Kresse und dem richtigen Sauerteigbrot. Fertig in 15 Minuten.",
+  "description": "Der Klassiker neu gedacht — mit Spiegelei, Kresse und dem richtigen Sauerteigbrot. Fertig in 15 Minuten.",
   "steps": [
     "Brotscheiben im Toaster oder Ofen kross toasten.",
     "Avocados halbieren, entkernen, das Fruchtfleisch mit einer Gabel grob zerdrücken. Mit Zitronensaft, Salz und Pfeffer würzen.",
-    "Für die pochierten Eier: Wasser in einem flachen Topf zum Sieden bringen (nicht kochen), Essig dazugeben.",
+    "Für die Spiegelei: Bratbutter oder Kokosöl in Edelstahlpfanne braten.",
     "Ei in eine kleine Tasse aufschlagen. Mit einem Löffel einen Strudel im Wasser erzeugen, Ei hineingleiten lassen. 3 Minuten pochieren.",
     "Avocado-Creme auf das Brot streichen. Ei darauflegen.",
     "Mit Olivenöl, Chiliflocken, Fleur de sel und Kresse fertigstellen."
   ],
-  "tips": "Frische Eier pochieren sich am besten — das Eiweiss hält besser zusammen. Variante: statt pochiertem Ei ein Spiegelei oder Scrambled Eggs verwenden.",
-  "imageUrl": null,
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/son-04-2-1780699834231.jpg",
   "tags": [
     "Vegetarisch",
     "Mittagsgericht"
-  ]
+  ],
+  "imageZutaten": null,
+  "imageKochen": null
 }
