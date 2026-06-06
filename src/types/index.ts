@@ -49,11 +49,12 @@ export interface IngredientGroup {
 
 /** Nutzerbewertung fuer ein Rezept (global sichtbar) */
 export interface RecipeRating {
-  userId: string;       // email als stabiler Identifier
+  userId:    string;       // email als stabiler Identifier
   userEmail: string;
-  rating: number;       // 1-5
-  comment: string;
-  createdAt: string;    // ISO string
+  userName?: string;       // Vorname Nachname — kann bei aelteren Ratings fehlen
+  rating:    number;       // 1-5
+  comment:   string;
+  createdAt: string;       // ISO string
 }
 
 export type DietCategory = 'meat' | 'fish' | 'vegetarian' | 'vegan';

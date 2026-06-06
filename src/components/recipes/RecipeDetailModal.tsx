@@ -185,7 +185,7 @@ function RatingsSection({ recipeId, isPremium }: { recipeId: string; isPremium: 
           {[...ratings].reverse().map((r, i) => (
             <div key={i} className="rounded-xl p-3 text-sm" style={{ backgroundColor: '#f7f4ee', border: '1px solid #e0d8ce' }}>
               <div className="flex items-center justify-between mb-1">
-                <span className="font-semibold" style={{ color: '#5a4e48' }}>{emailShort(r.userEmail)}</span>
+                <span className="font-semibold" style={{ color: '#5a4e48' }}>{r.userName ?? emailShort(r.userEmail)}</span>
                 <div className="flex items-center gap-2">
                   <SpoonRating value={r.rating} />
                   <span className="text-xs" style={{ color: '#9a8c80' }}>{dateShort(r.createdAt)}</span>

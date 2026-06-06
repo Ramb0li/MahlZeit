@@ -7,6 +7,7 @@ import { LandingBleed } from '@/components/landing/LandingBleed';
 import { SiteFooter } from '@/components/landing/SiteFooter';
 import { getLandingContent } from '@/lib/content';
 import type { LandingFeature } from '@/lib/content';
+import { getSession } from '@/lib/auth';
 
 const COLLAGE = [
   { cls: 'mz-cc1', src: '/images/recipes/cuiselin-taboule.jpeg',             alt: 'Taboulé'           },
@@ -66,7 +67,10 @@ function renderFeatureText(f: LandingFeature) {
 }
 
 export default async function LandingPage() {
-  const { reviews, features, plans, meta } = await getLandingContent();
+  const [{ reviews, features, plans, meta }, session] = await Promise.all([
+    getLandingContent(),
+    getSession().catch(() => null),
+  ]);
 
   return (
     <div className="mz-lp">
@@ -80,10 +84,18 @@ export default async function LandingPage() {
           </span>
         </Link>
         <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-          <Link href="/auth" className="mz-lp-login">Anmelden</Link>
-          <Link href="/auth?plan=trial" className="mz-btn-primary" style={{ fontSize: 14, padding: '9px 18px' }}>
-            Gratis starten
-          </Link>
+          {session ? (
+            <Link href="/app" className="mz-btn-primary" style={{ fontSize: 14, padding: '9px 18px' }}>
+              Zum Menueplan
+            </Link>
+          ) : (
+            <>
+              <Link href="/auth" className="mz-lp-login">Anmelden</Link>
+              <Link href="/auth?plan=trial" className="mz-btn-primary" style={{ fontSize: 14, padding: '9px 18px' }}>
+                Gratis starten
+              </Link>
+            </>
+          )}
         </div>
       </nav>
 

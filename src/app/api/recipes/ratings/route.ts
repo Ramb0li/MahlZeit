@@ -8,6 +8,7 @@ export const dynamic = 'force-dynamic';
 import { NextResponse }      from 'next/server';
 import { getSession }        from '@/lib/auth';
 import { getRecipeRatings, saveRecipeRating } from '@/lib/data';
+import { getUserByEmail }    from '@/lib/users';
 import type { RecipeRating } from '@/types';
 
 export async function GET(request: Request) {
@@ -35,9 +36,13 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'Ungueltige Daten' }, { status: 400 });
   }
 
+  const user     = await getUserByEmail(session.email).catch(() => null);
+  const userName = [user?.firstName, user?.lastName].filter(Boolean).join(' ') || undefined;
+
   const ratingObj: RecipeRating = {
     userId:    session.email,
     userEmail: session.email,
+    userName,
     rating:    Math.round(rating),
     comment:   (comment ?? '').trim().slice(0, 500),
     createdAt: new Date().toISOString(),
