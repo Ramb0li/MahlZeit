@@ -85,7 +85,9 @@
       "days": {
         "1": {
           "dinner": {
-            "recipeId": "fam-28"
+            "recipeId": "fam-28",
+            "sideRecipeId": null,
+            "sideIsLeftovers": false
           },
           "showLunch": false,
           "lunch": {
@@ -98,7 +100,8 @@
           },
           "showLunch": false,
           "lunch": {
-            "recipeId": "sal-02"
+            "recipeId": "pas-77",
+            "isLeftovers": false
           }
         },
         "3": {

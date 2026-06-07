@@ -301,60 +301,64 @@ function MealSlotCard({
   if (recipe) {
     return (
       <div className="mz-magslot filled group">
-        <div className="mz-magslot-img">
-          {recipe.imageUrl ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img src={recipe.imageUrl} alt={recipe.name} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
-          ) : (
-            <PhotoSlot category={recipe.category} />
-          )}
-        </div>
-        <div className="mz-magslot-grad" />
-        <span className="mz-slot-label on-img">{label}</span>
-        <div className="mz-magslot-info">
-          <p
-            className="mz-magslot-name mz-clamp2"
-            onClick={() => onViewRecipe?.(recipe)}
-            style={{ cursor: onViewRecipe ? 'pointer' : 'default' }}
-          >
-            {recipe.name}
-          </p>
-          <div className="mz-magslot-meta">
-            <span>{recipe.timeMinutes} min</span>
+        {/* Bildsektion — feste Höhe, alle absolut positionierten Kinder bleiben hier */}
+        <div style={{ position: 'relative', height: 132, flexShrink: 0, borderRadius: 'inherit', overflow: 'hidden' }}>
+          <div className="mz-magslot-img">
+            {recipe.imageUrl ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img src={recipe.imageUrl} alt={recipe.name} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+            ) : (
+              <PhotoSlot category={recipe.category} />
+            )}
           </div>
+          <div className="mz-magslot-grad" />
+          <span className="mz-slot-label on-img">{label}</span>
+          <div className="mz-magslot-info">
+            <p
+              className="mz-magslot-name mz-clamp2"
+              onClick={() => onViewRecipe?.(recipe)}
+              style={{ cursor: onViewRecipe ? 'pointer' : 'default' }}
+            >
+              {recipe.name}
+            </p>
+            <div className="mz-magslot-meta">
+              <span>{recipe.timeMinutes} min</span>
+            </div>
+          </div>
+          {/* + Button für Beilage — nur wenn keine Beilage gesetzt */}
+          {!hasSide && (
+            <button
+              onClick={(e) => { e.stopPropagation(); onPickSide(); }}
+              className="mz-slot-del on-img"
+              style={{ bottom: 8, top: 'auto', right: 36, opacity: 0.65, width: 20, height: 20, borderRadius: '50%' }}
+              title="Beilage / zweites Gericht hinzufügen"
+            >
+              <Plus size={10} />
+            </button>
+          )}
+          <button onClick={(e) => { e.stopPropagation(); onClear(); }} className="mz-slot-del on-img"><Trash2 size={12} /></button>
         </div>
 
+        {/* Beilage-Strip — natürlicher Fluss unterhalb der Bildsektion, expandiert die Karte */}
         {hasSide && (
-          <div style={{ position: 'absolute', bottom: 36, left: 11, right: 11, display: 'flex', alignItems: 'center', gap: 3 }}>
-            <span style={{ fontSize: 10, color: 'rgba(255,255,255,.82)', flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-              + {sideName}
-            </span>
-            {/* Portionen-Override für Beilage */}
+          <div className="mz-side-strip">
+            <Plus size={9} style={{ color: 'var(--muted)', flexShrink: 0, opacity: 0.55 }} />
+            <span className="mz-side-strip-name">{sideName}</span>
             <button
+              className="mz-side-strip-btn"
               onClick={(e) => { e.stopPropagation(); onSidePortionChange(Math.max(1, (sidePortionOverride ?? defaultPortions) - 1)); }}
-              style={{ fontSize: 12, fontWeight: 700, color: 'rgba(255,255,255,.65)', flexShrink: 0, padding: '0 2px', lineHeight: 1 }}
             >−</button>
-            <span style={{ fontSize: 9, color: 'rgba(255,255,255,.9)', flexShrink: 0, minWidth: 18, textAlign: 'center' }}>
-              {sidePortionOverride ?? defaultPortions}P
-            </span>
+            <span className="mz-side-strip-count">{sidePortionOverride ?? defaultPortions}P</span>
             <button
+              className="mz-side-strip-btn"
               onClick={(e) => { e.stopPropagation(); onSidePortionChange(Math.min(20, (sidePortionOverride ?? defaultPortions) + 1)); }}
-              style={{ fontSize: 12, fontWeight: 700, color: 'rgba(255,255,255,.65)', flexShrink: 0, padding: '0 2px', lineHeight: 1 }}
             >+</button>
-            <button onClick={(e) => { e.stopPropagation(); onClearSide(); }} style={{ color: 'rgba(255,255,255,.6)', flexShrink: 0 }}><X size={9} /></button>
+            <button
+              onClick={(e) => { e.stopPropagation(); onClearSide(); }}
+              style={{ color: 'var(--ink-2)', flexShrink: 0, display: 'flex', alignItems: 'center' }}
+            ><X size={10} /></button>
           </div>
         )}
-        {!hasSide && (
-          <button
-            onClick={(e) => { e.stopPropagation(); onPickSide(); }}
-            className="mz-slot-del on-img"
-            style={{ bottom: 8, top: 'auto', right: 36, opacity: 0.65, width: 20, height: 20, borderRadius: '50%' }}
-            title="Beilage / zweites Gericht hinzufügen"
-          >
-            <Plus size={10} />
-          </button>
-        )}
-        <button onClick={onClear} className="mz-slot-del on-img"><Trash2 size={12} /></button>
       </div>
     );
   }

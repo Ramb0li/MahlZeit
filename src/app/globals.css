@@ -166,7 +166,7 @@ em { font-style: normal; color: var(--accent); }
 .mz-magday-slots { display: flex; flex-direction: column; gap: 9px; padding: 0 9px 11px; flex: 1; }
 
 .mz-magslot { position: relative; border-radius: var(--r-slot); overflow: hidden; transition: .16s; }
-.mz-magslot.filled { cursor: pointer; min-height: 132px; box-shadow: var(--shadow-sm); }
+.mz-magslot.filled { cursor: pointer; min-height: 132px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; }
 .mz-magslot.filled:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
 .mz-magslot-img { position: absolute; inset: 0; }
 .mz-magslot-img img, .mz-magslot-img > div { width: 100%; height: 100%; }
@@ -184,6 +184,10 @@ em { font-style: normal; color: var(--accent); }
 .mz-empty-ai:hover { background: var(--accent); color: #fff; }
 .mz-magslot.leftovers { min-height: 78px; background: var(--accent-tint); padding: 11px; display: flex; flex-direction: column; gap: 8px; }
 .mz-leftovers-body { display: flex; align-items: center; gap: 8px; color: var(--accent-ink); font-weight: 650; font-size: 13.5px; }
+.mz-side-strip { display: flex; align-items: center; gap: 5px; padding: 6px 10px; background: var(--card); border-top: 1px solid var(--border); border-radius: 0 0 var(--r-slot) var(--r-slot); flex-shrink: 0; }
+.mz-side-strip-name { font-size: 11px; color: var(--ink); flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.mz-side-strip-btn { font-size: 13px; font-weight: 700; color: var(--ink-2); flex-shrink: 0; padding: 0 3px; line-height: 1; }
+.mz-side-strip-count { font-size: 10px; color: var(--ink); flex-shrink: 0; min-width: 20px; text-align: center; font-weight: 600; }
 .mz-slot-del { position: absolute; top: 8px; right: 8px; width: 24px; height: 24px; border-radius: 50%; background: rgba(255,255,255,.92); color: var(--ink-2); display: flex; align-items: center; justify-content: center; opacity: 0; transition: .14s; box-shadow: var(--shadow-sm); }
 .mz-slot-del.on-img { background: rgba(0,0,0,.4); color: #fff; backdrop-filter: blur(4px); }
 .group:hover .mz-slot-del { opacity: 1; }
