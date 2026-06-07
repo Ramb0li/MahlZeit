@@ -72,7 +72,7 @@
       "perPortions": 4
     },
     {
-      "name": "Weißwein",
+      "name": "Weisswein",
       "amount": 50,
       "unit": "ml",
       "perPortions": 4
@@ -122,14 +122,14 @@
   ],
   "weatherType": "kalt",
   "source": "herrbuettner.de",
-  "description": "Eine wärmende, wohltuende Wintersuppe mit würzig-süßem Knollensellerie, reichhaltigen Kartoffeln, frischem Lauch und herzhaften Bockwürsten in einer leicht cremigen Sahnebrühe.",
+  "description": "Eine wärmende, wohltuende Wintersuppe mit würzig-süssem Knollensellerie, reichhaltigen Kartoffeln, frischem Lauch und herzhaften Bockwürsten in einer leicht cremigen Sahnebrühe.",
   "steps": [
-    "Kartoffeln und Knollensellerie schälen und in etwa 1 cm große Würfel schneiden. Schalotten und Knoblauch schälen und fein würfeln.",
-    "Einen großen Topf bei mittlerer Temperatur erhitzen und die Butter darin schmelzen lassen. Schalotten, Knoblauch und getrockneten Thymian glasig anschwitzen.",
+    "Kartoffeln und Knollensellerie schälen und in etwa 1 cm grosse Würfel schneiden. Schalotten und Knoblauch schälen und fein würfeln.",
+    "Einen grossen Topf bei mittlerer Temperatur erhitzen und die Butter darin schmelzen lassen. Schalotten, Knoblauch und getrockneten Thymian glasig anschwitzen.",
     "Nach etwa einer Minute die Kartoffel- und Selleriewürfel hinzufügen und mit Salz, Pfeffer und Zucker würzen. Einige Minuten anschwitzen lassen.",
-    "Mit Weißwein ablöschen und unter gelegentlichem Rühren einkochen lassen. Anschließend mit der Geflügelbrühe aufgießen.",
+    "Mit Weisswein ablöschen und unter gelegentlichem Rühren einkochen lassen. Anschliessend mit der Geflügelbrühe aufgiessen.",
     "Die Suppe zugedeckt etwa 25 Minuten bei niedriger Hitze köcheln lassen.",
-    "Währenddessen die Bockwürste in einer heißen Pfanne mit Olivenöl rundherum anbraten, herausnehmen und in grobe Stücke schneiden.",
+    "Währenddessen die Bockwürste in einer heissen Pfanne mit Olivenöl rundherum anbraten, herausnehmen und in grobe Stücke schneiden.",
     "Den Lauch in Ringe schneiden und in kaltem Wasser gründlich waschen, dabei die Ringe voneinander trennen. Gut abtropfen lassen. Die Petersilie fein hacken.",
     "Nach der Garzeit die Sahne zur Suppe geben und mit Cayennepfeffer würzen. Mit Salz und Pfeffer abschmecken.",
     "Lauch, Petersilie und Wurststücke unterrühren, einmal durchmischen und die Suppe servieren."

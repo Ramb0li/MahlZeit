@@ -1,6 +1,6 @@
 {
   "id": "pas-80",
-  "name": "Tortellini an Schinken-Mozzarella-Sahne-Soße",
+  "name": "Tortellini an Schinken-Mozzarella-Sahne-Sosse",
   "category": "Pasta",
   "timeMinutes": 15,
   "basePortions": 2,
@@ -18,7 +18,7 @@
       "perPortions": 2
     },
     {
-      "name": "Zwiebel, weiß",
+      "name": "Zwiebel, weiss",
       "amount": 1,
       "unit": "Stk",
       "perPortions": 2
@@ -92,15 +92,15 @@
   ],
   "weatherType": "neutral",
   "source": "herrbuettner.de",
-  "description": "Ein schnelles Feierabend-Gericht mit frischen Spinat-Ricotta-Tortellini in einer cremigen Schinken-Mozzarella-Sahne-Soße. In nur 15 Minuten steht dieses köstliche Pastagericht auf dem Tisch – perfekt nach einem langen Arbeitstag.",
+  "description": "Ein schnelles Feierabend-Gericht mit frischen Spinat-Ricotta-Tortellini in einer cremigen Schinken-Mozzarella-Sahne-Sosse. In nur 15 Minuten steht dieses köstliche Pastagericht auf dem Tisch – perfekt nach einem langen Arbeitstag.",
   "steps": [
     "Zwiebel und Knoblauch schälen und in feine Würfel schneiden.",
     "Basilikum klein hacken, dabei ein paar Blätter für die Garnitur beiseitelegen.",
-    "Schinken in etwa 1 cm große Würfel schneiden.",
+    "Schinken in etwa 1 cm grosse Würfel schneiden.",
     "Eine Pfanne bei mittlerer Hitze erwärmen und das Olivenöl hineingeben.",
     "Zwiebel- und Knoblauchwürfel mit einer Prise Salz in die Pfanne geben, umrühren und anbraten, bis die Zwiebeln weich werden.",
     "Mit dem Saft einer halben Zitrone ablöschen.",
-    "Tortellini hinzufügen, gut durchrühren und mit 80 ml Wasser aufgießen.",
+    "Tortellini hinzufügen, gut durchrühren und mit 80 ml Wasser aufgiessen.",
     "Köcheln lassen, bis etwa zwei Drittel des Wassers verkocht sind.",
     "Butter hinzufügen und unterrühren, bis sie geschmolzen ist.",
     "Kochsahne, geriebenen Mozzarella und Schinken hinzufügen. Mit Salz und Pfeffer würzen.",

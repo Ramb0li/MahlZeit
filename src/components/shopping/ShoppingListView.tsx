@@ -30,7 +30,7 @@ function buildListLabel(weekId: string, dayIndices: number[]): string {
 // ─── Kategorie-Emojis ────────────────────────────────────────────────────────
 
 const CAT_ICONS: Record<string, string> = {
-  'Gemüse & Salat':        '🥕',
+  'Obst & Gemüse':        '🍎',
   'Hülsenfrüchte':         '🌾',
   'Getreide & Stärke':     '🫘',
   'Milchprodukte & Eier':  '🥛',
@@ -50,7 +50,7 @@ const CAT_ICONS: Record<string, string> = {
 // ─── Kategorien ───────────────────────────────────────────────────────────────
 
 const RECIPE_CATEGORY_ORDER = [
-  'Gemüse & Salat', 'Hülsenfrüchte', 'Getreide & Stärke', 'Milchprodukte & Eier',
+  'Obst & Gemüse', 'Hülsenfrüchte', 'Getreide & Stärke', 'Milchprodukte & Eier',
   'Fisch & Meeresfrüchte', 'Tofu & Veganes', 'Haltbare Produkte', 'Nüsse & Samen',
   'Gewürze & Kräuter', 'Sonstiges',
 ];
@@ -102,7 +102,7 @@ export function ShoppingListView() {
   const [groups, setGroups]           = useState<ShoppingGroups>([{ id: 'sg-1', dayIndices: [1,2,3,4,5,6,7] }]);
   const [activeGroupIdx, setActiveGroupIdx] = useState<number | null>(null); // null = alle
 
-  const [checked, setChecked]   = useState<Set<string>>(new Set());
+  const [checked, setChecked]   = useState<Set<string>>(() => new Set(readLS(`mz-chk-${currentWeekId}`, [] as string[])));
   const [deleted, setDeleted]   = useState<string[]>(() => readLS(`mz-del-${currentWeekId}`, [] as string[]));
   const [overrides, setOverrides] = useState<Record<string, number>>(() => readLS(`mz-ov-${currentWeekId}`, {}));
 
@@ -110,12 +110,17 @@ export function ShoppingListView() {
   useEffect(() => {
     setDeleted(readLS(`mz-del-${weekId}`, [] as string[]));
     setOverrides(readLS(`mz-ov-${weekId}`, {} as Record<string, number>));
-    setChecked(new Set());
+    setChecked(new Set(readLS(`mz-chk-${weekId}`, [] as string[])));
   }, [weekId]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const [editKey, setEditKey] = useState<string | null>(null);
   const [editVal, setEditVal] = useState('');
   const editRef = useRef<HTMLInputElement>(null);
+
+  // Custom-Item Mengen-Bearbeitung
+  const [editCustomId, setEditCustomId] = useState<string | null>(null);
+  const [editCustomAmt, setEditCustomAmt] = useState('');
+  const editCustomRef = useRef<HTMLInputElement>(null);
 
   const [custom, setCustom] = useState<CustomItem[]>(() => readLS('mz-custom', [] as CustomItem[]));
   const [showAdd, setShowAdd] = useState(false);
@@ -125,10 +130,12 @@ export function ShoppingListView() {
   const toggleCollapse = (cat: string) =>
     setCollapsed(prev => { const n = new Set(prev); n.has(cat) ? n.delete(cat) : n.add(cat); return n; });
 
+  useEffect(() => { localStorage.setItem(`mz-chk-${weekId}`, JSON.stringify(Array.from(checked))); }, [checked, weekId]);
   useEffect(() => { localStorage.setItem(`mz-ov-${weekId}`,  JSON.stringify(overrides)); }, [overrides, weekId]);
   useEffect(() => { localStorage.setItem('mz-custom',        JSON.stringify(custom));    }, [custom]);
   useEffect(() => { localStorage.setItem(`mz-del-${weekId}`, JSON.stringify(deleted));   }, [deleted, weekId]);
   useEffect(() => { if (editKey && editRef.current) editRef.current.focus(); }, [editKey]);
+  useEffect(() => { if (editCustomId && editCustomRef.current) editCustomRef.current.focus(); }, [editCustomId]);
   useEffect(() => { if (showAdd) nameInputRef.current?.focus(); }, [showAdd]);
 
   const loadList = useCallback(async (dayIndices?: number[]) => {
@@ -231,7 +238,7 @@ export function ShoppingListView() {
     };
 
     const INGREDIENT_CAT_COLORS: Record<string, { text: [number,number,number]; bg: [number,number,number] }> = {
-      'Gemüse & Salat':        { text: [ 90, 138,  79], bg: [238, 246, 236] },
+      'Obst & Gemüse':        { text: [ 90, 138,  79], bg: [238, 246, 236] },
       'Hülsenfrüchte':         { text: [176, 106,  16], bg: [254, 246, 228] },
       'Getreide & Stärke':     { text: [122,  88,  24], bg: [253, 246, 228] },
       'Milchprodukte & Eier':  { text: [ 58, 122, 154], bg: [232, 243, 248] },
@@ -832,7 +839,7 @@ export function ShoppingListView() {
                         borderLeft: '2.5px solid #d4a090',
                         backgroundColor: item.checked ? '#f7f4ee' : 'transparent',
                       }}
-                      onClick={() => toggleCustomChecked(item.id)}
+                      onClick={() => { if (editCustomId !== item.id) toggleCustomChecked(item.id); }}
                     >
                       <div
                         className="shrink-0 w-4 h-4 rounded flex items-center justify-center"
@@ -849,10 +856,35 @@ export function ShoppingListView() {
                       >
                         {item.name}
                       </span>
-                      {item.amount && (
-                        <span className="text-xs shrink-0" style={{ color: '#9a8c80' }}>
-                          {item.amount} {item.unit}
-                        </span>
+                      {/* Menge — klickbar zum Bearbeiten */}
+                      {editCustomId === item.id ? (
+                        <input
+                          ref={editCustomRef}
+                          type="number"
+                          value={editCustomAmt}
+                          onChange={e => setEditCustomAmt(e.target.value)}
+                          onBlur={() => {
+                            const val = parseFloat(editCustomAmt.replace(',', '.'));
+                            if (!isNaN(val) && val > 0) {
+                              setCustom(prev => prev.map(c => c.id === item.id ? { ...c, amount: String(val) } : c));
+                            }
+                            setEditCustomId(null);
+                          }}
+                          onKeyDown={e => { if (e.key === 'Enter' || e.key === 'Escape') (e.target as HTMLInputElement).blur(); }}
+                          onClick={e => e.stopPropagation()}
+                          style={{ width: 52, fontSize: 12, textAlign: 'right', border: '1px solid #d0c8be', borderRadius: 6, padding: '2px 4px', background: '#fff' }}
+                        />
+                      ) : (
+                        item.amount ? (
+                          <span
+                            className="text-xs shrink-0"
+                            style={{ color: '#9a8c80', cursor: 'pointer', textDecoration: 'underline dotted' }}
+                            onClick={e => { e.stopPropagation(); setEditCustomId(item.id); setEditCustomAmt(String(item.amount)); }}
+                            title="Menge bearbeiten"
+                          >
+                            {item.amount} {item.unit}
+                          </span>
+                        ) : null
                       )}
                       <button
                         onClick={(e) => { e.stopPropagation(); removeCustom(item.id); }}

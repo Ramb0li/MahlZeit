@@ -74,5 +74,6 @@
     "fat": 9.2,
     "carbs": 24.8,
     "fiber": 1.4
-  }
+  },
+  "dietCategory": "meat"
 }

@@ -100,7 +100,7 @@
   "source": "LittleFant – Kindersnacks für jeden Tag",
   "description": "Herzhafte Muffins mit Linsen und buntem Gemüse – sättigend und voller Nährstoffe, perfekt für die Brotdose.",
   "steps": [
-    "Linsen mindestens 2 Stunden einweichen, abspülen, 5 Minuten kochen, abgießen und abkühlen lassen.",
+    "Linsen mindestens 2 Stunden einweichen, abspülen, 5 Minuten kochen, abgiessen und abkühlen lassen.",
     "Saatenmix ohne Fett anrösten und mit den trockenen Zutaten mischen. Gemüse fein reiben.",
     "Alle Zutaten kurz zu einem homogenen Teig verrühren und 10 Minuten ruhen lassen.",
     "Ofen auf 220 °C (Umluft) vorheizen. In Muffinförmchen füllen, 5 Minuten backen. Auf 180 °C reduzieren und weitere 30 Minuten backen."
@@ -121,5 +121,6 @@
     "fat": 11.4,
     "carbs": 22.8,
     "fiber": 4.3
-  }
+  },
+  "dietCategory": "vegan"
 }

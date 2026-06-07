@@ -102,5 +102,6 @@
     "fat": 24.8,
     "carbs": 68.4,
     "fiber": 5.6
-  }
+  },
+  "dietCategory": "vegetarian"
 }

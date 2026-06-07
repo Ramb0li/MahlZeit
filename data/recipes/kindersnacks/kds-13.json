@@ -12,7 +12,7 @@
       "perPortions": 6
     },
     {
-      "name": "Weiße Bohnen (gekocht)",
+      "name": "Weisse Bohnen (gekocht)",
       "amount": 120,
       "unit": "g",
       "perPortions": 6
@@ -56,9 +56,9 @@
   ],
   "weatherType": "neutral",
   "source": "LittleFant – Kindersnacks für jeden Tag",
-  "description": "Waffeln mit Rosinen, weißen Bohnen und Vanille – nur natürlich gesüßt, einfach und nährstoffreich.",
+  "description": "Waffeln mit Rosinen, weissen Bohnen und Vanille – nur natürlich gesüsst, einfach und nährstoffreich.",
   "steps": [
-    "Rosinen mit weißen Bohnen, Sojadrink und Mandelmus fein mixen.",
+    "Rosinen mit weissen Bohnen, Sojadrink und Mandelmus fein mixen.",
     "Trockene Zutaten vermischen und mit dem Bohnen-Mix verrühren.",
     "Im gefetteten Waffeleisen goldbraune Waffeln ausbacken."
   ],
@@ -79,5 +79,6 @@
     "fat": 4.2,
     "carbs": 21.5,
     "fiber": 4.5
-  }
+  },
+  "dietCategory": "vegan"
 }

@@ -108,5 +108,6 @@
     "fiber": 10.8
   },
   "imageZutaten": null,
-  "imageKochen": null
+  "imageKochen": null,
+  "dietCategory": "vegan"
 }

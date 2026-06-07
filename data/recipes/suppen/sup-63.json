@@ -1,6 +1,6 @@
 {
   "id": "sup-63",
-  "name": "Spießiges Hähnchen über Karotten Lava",
+  "name": "Spiessiges Hähnchen über Karotten Lava",
   "category": "Suppen, Eintöpfe & Currys",
   "timeMinutes": 35,
   "basePortions": 4,
@@ -24,7 +24,7 @@
       "perPortions": 4
     },
     {
-      "name": "Zwiebeln weiß",
+      "name": "Zwiebeln weiss",
       "amount": 2,
       "unit": "Stk",
       "perPortions": 4
@@ -114,7 +114,7 @@
       "perPortions": 4
     },
     {
-      "name": "Holzspieße",
+      "name": "Holzspiesse",
       "amount": 4,
       "unit": "Stk",
       "perPortions": 4
@@ -122,19 +122,19 @@
   ],
   "weatherType": "kalt",
   "source": "herrbuettner.de",
-  "description": "Eine cremige, pürierte Karottensuppe mit frischem Ingwer und Curry, getoppt mit gebratenen Hähnchen-Bacon-Spießen – eine vitaminreiche und geschmackvolle Kombination für Auge und Gaumen.",
+  "description": "Eine cremige, pürierte Karottensuppe mit frischem Ingwer und Curry, getoppt mit gebratenen Hähnchen-Bacon-Spiessen – eine vitaminreiche und geschmackvolle Kombination für Auge und Gaumen.",
   "steps": [
     "Die Karotten waschen und mit Schale in grobe Würfel schneiden. Den Ingwer schälen und ebenfalls grob würfeln. Die Zwiebeln schälen und grob würfeln. Die Petersilie fein hacken (etwa 10 g für später zur Seite stellen).",
-    "Einen großen Topf bei hoher Hitze erhitzen. 2 EL Olivenöl hineingeben und die Zwiebeln kurz anschwitzen. Karotten und Ingwer zügig dazugeben und kräftig durchrühren.",
+    "Einen grossen Topf bei hoher Hitze erhitzen. 2 EL Olivenöl hineingeben und die Zwiebeln kurz anschwitzen. Karotten und Ingwer zügig dazugeben und kräftig durchrühren.",
     "Mit Salz, Pfeffer, Curry, Muskat, Paprikapulver und Zucker würzen. Gut umrühren und 1 EL Balsamico-Essig zugeben. Alles etwa 5 Minuten braten und dabei immer wieder umrühren.",
     "Mit dem Wasser ablöschen, Deckel aufsetzen und die Hitze auf mittlere Stufe reduzieren. 15 Minuten köcheln lassen.",
-    "In der Zwischenzeit die Hähnchenbrust (sollte Zimmertemperatur haben) mit Küchenpapier trocken tupfen. Der Länge nach halbieren und in etwa 3-4 cm große Stücke schneiden. Mit Salz und Pfeffer würzen.",
-    "Die Bacon-Scheiben in kleinere Stücke schneiden. Jedes Hähnchenbruststück mit einer Bacon-Scheibe umwickeln und auf einen Holzspieß schieben, sodass der Bacon auf beiden Seiten durchbohrt wird. Zwischen den Stücken etwa 1-2 cm Abstand lassen. Mit allen Spießen so verfahren.",
-    "Eine Pfanne bei mittlerer Hitze erhitzen, 2 EL Olivenöl hineingeben und die Hähnchen-Bacon-Spieße 8-10 Minuten braten, dabei regelmäßig wenden.",
+    "In der Zwischenzeit die Hähnchenbrust (sollte Zimmertemperatur haben) mit Küchenpapier trocken tupfen. Der Länge nach halbieren und in etwa 3-4 cm grosse Stücke schneiden. Mit Salz und Pfeffer würzen.",
+    "Die Bacon-Scheiben in kleinere Stücke schneiden. Jedes Hähnchenbruststück mit einer Bacon-Scheibe umwickeln und auf einen Holzspiess schieben, sodass der Bacon auf beiden Seiten durchbohrt wird. Zwischen den Stücken etwa 1-2 cm Abstand lassen. Mit allen Spiessen so verfahren.",
+    "Eine Pfanne bei mittlerer Hitze erhitzen, 2 EL Olivenöl hineingeben und die Hähnchen-Bacon-Spiesse 8-10 Minuten braten, dabei regelmässig wenden.",
     "Nach den 15 Minuten Kochzeit den Deckel vom Topf nehmen, die Suppe durchrühren und mit einem Pürierstab nach Wunsch grob oder fein pürieren.",
     "Die Kokosmilch unterrühren und die Suppe abschmecken. Bei Bedarf nachwürzen. Die Suppe kurz aufkochen lassen, dann auf sehr kleine Stufe stellen und warmhalten.",
-    "Wenn die Hähnchen-Bacon-Spieße fertig sind, die restliche gehackte Petersilie zur Suppe geben und unterrühren.",
-    "Die Suppe auf Schüsseln verteilen, jeweils mit einem Klecks Crème fraîche und etwas Petersilie garnieren. Die Hähnchen-Bacon-Spieße obenauf legen und servieren."
+    "Wenn die Hähnchen-Bacon-Spiesse fertig sind, die restliche gehackte Petersilie zur Suppe geben und unterrühren.",
+    "Die Suppe auf Schüsseln verteilen, jeweils mit einem Klecks Crème fraîche und etwas Petersilie garnieren. Die Hähnchen-Bacon-Spiesse obenauf legen und servieren."
   ],
   "dietCategory": "meat",
   "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/10/moehrensuppe_mit_haehnchen_spiessen_big.jpg",

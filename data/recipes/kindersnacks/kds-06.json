@@ -70,7 +70,7 @@
   "source": "LittleFant – Kindersnacks für jeden Tag",
   "description": "Geballte Eisen-Power: Linsenbällchen mit Haferflocken und Aprikose – herzhaft und praktisch zum Mitnehmen.",
   "steps": [
-    "Linsen 2+ Stunden einweichen, 25 Minuten kochen, abgießen. Aprikosen einweichen und fein würfeln. Petersilie hacken.",
+    "Linsen 2+ Stunden einweichen, 25 Minuten kochen, abgiessen. Aprikosen einweichen und fein würfeln. Petersilie hacken.",
     "Alle Zutaten mischen, leicht anpürieren und zu Bällchen formen. Bei 200 °C (Umluft) ca. 20 Minuten backen."
   ],
   "tips": "Mit Vitamin-C-reichem Gemüse (z.B. Paprika) für bessere Eisenaufnahme kombinieren.",
@@ -88,5 +88,6 @@
     "fat": 1.2,
     "carbs": 7.5,
     "fiber": 1.8
-  }
+  },
+  "dietCategory": "vegan"
 }

@@ -101,5 +101,6 @@
     "fiber": 5.3
   },
   "imageZutaten": null,
-  "imageKochen": null
+  "imageKochen": null,
+  "dietCategory": "vegetarian"
 }

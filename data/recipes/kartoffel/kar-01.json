@@ -62,5 +62,6 @@
     "fiber": 5.1
   },
   "imageZutaten": null,
-  "imageKochen": null
+  "imageKochen": null,
+  "dietCategory": "vegan"
 }

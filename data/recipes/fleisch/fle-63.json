@@ -1,6 +1,6 @@
 {
   "id": "fle-63",
-  "name": "Hackbällchen Asia Style mit Mie-Nudeln an Kokos-Sojasoße",
+  "name": "Hackbällchen Asia Style mit Mie-Nudeln an Kokos-Sojasosse",
   "category": "Fleisch & Geflügel",
   "timeMinutes": 35,
   "basePortions": 4,
@@ -59,7 +59,7 @@
       "perPortions": 4
     },
     {
-      "name": "Sojasoße",
+      "name": "Sojasosse",
       "amount": 2,
       "unit": "EL",
       "perPortions": 4
@@ -91,16 +91,16 @@
   ],
   "weatherType": "neutral",
   "source": "herrbuettner.de",
-  "description": "Würzige Hackbällchen mit Ingwer, Chili und Frühlingszwiebeln, die in einer aromatischen Kokos-Sojasoße sanft gegart werden. Eine köstliche asiatische Alternative zu klassischen Hackbällchen, serviert mit Mie-Nudeln.",
+  "description": "Würzige Hackbällchen mit Ingwer, Chili und Frühlingszwiebeln, die in einer aromatischen Kokos-Sojasosse sanft gegart werden. Eine köstliche asiatische Alternative zu klassischen Hackbällchen, serviert mit Mie-Nudeln.",
   "steps": [
     "Frühlingszwiebeln und Chili waschen und trocknen. Ingwer schälen. Frühlingszwiebeln in feine Ringe schneiden und einige für die Garnierung beiseitelegen. Die restlichen Ringe fein hacken. Chili halbieren, entkernen und fein hacken. Ingwer ebenfalls fein hacken.",
     "Eine Pfanne bei mittlerer Hitze erhitzen und 1 EL Sesamöl hineingeben. Frühlingszwiebeln, Chili und Ingwer für 1 Minute unter gelegentlichem Rühren anschwitzen. Pfanne vom Herd nehmen und beiseitestellen.",
-    "In einer Schüssel 35 g Panko mit 100 ml Kokosmilch vermischen. Hackfleisch, Ei und das Frühlingszwiebel-Chili-Ingwer-Gemisch hinzufügen. Mit Salz und Pfeffer würzen und alles gut mit den Händen verkneten. Aus der Masse etwa 12 golfballgroße Bällchen formen.",
+    "In einer Schüssel 35 g Panko mit 100 ml Kokosmilch vermischen. Hackfleisch, Ei und das Frühlingszwiebel-Chili-Ingwer-Gemisch hinzufügen. Mit Salz und Pfeffer würzen und alles gut mit den Händen verkneten. Aus der Masse etwa 12 golfballgrosse Bällchen formen.",
     "Eine Pfanne bei mittlerer Hitze erhitzen und 2 EL Sesamöl hineingeben. Die Hackbällchen von allen Seiten anbraten, dann herausnehmen und beiseitestellen.",
-    "Den Bratensatz mit 2 EL Sojasoße ablöschen. 1 EL Honig hinzufügen und aufkochen lassen. Mit der restlichen Kokosmilch auffüllen und mit Salz und Pfeffer abschmecken. Hitze reduzieren.",
+    "Den Bratensatz mit 2 EL Sojasosse ablöschen. 1 EL Honig hinzufügen und aufkochen lassen. Mit der restlichen Kokosmilch auffüllen und mit Salz und Pfeffer abschmecken. Hitze reduzieren.",
     "Die Hackbällchen zurück in die Pfanne geben und bei niedriger Hitze 20 Minuten leicht blubbernd gar ziehen lassen.",
-    "5 Minuten vor Ende der Garzeit die Mie-Nudeln nach Packungsanweisung zubereiten - entweder mit kochendem Wasser übergießen und 5-10 Minuten quellen lassen oder 2 Minuten in kochendem Salzwasser garen.",
-    "Hackbällchen aus der Pfanne nehmen. Die abgetropften Mie-Nudeln zur Soße in die Pfanne geben und gut vermischen.",
+    "5 Minuten vor Ende der Garzeit die Mie-Nudeln nach Packungsanweisung zubereiten - entweder mit kochendem Wasser übergiessen und 5-10 Minuten quellen lassen oder 2 Minuten in kochendem Salzwasser garen.",
+    "Hackbällchen aus der Pfanne nehmen. Die abgetropften Mie-Nudeln zur Sosse in die Pfanne geben und gut vermischen.",
     "Mie-Nudeln und Hackbällchen auf Teller verteilen und mit den beiseitegelegten Frühlingszwiebeln garnieren."
   ],
   "dietCategory": "meat",

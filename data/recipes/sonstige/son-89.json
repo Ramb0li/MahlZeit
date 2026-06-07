@@ -1,6 +1,6 @@
 {
   "id": "son-89",
-  "name": "Gebackene Süßkartoffel mit Kichererbsen & Tahini Ziegenjoghurt",
+  "name": "Gebackene Süsskartoffel mit Kichererbsen & Tahini Ziegenjoghurt",
   "category": "Vegetarische Hauptgerichte",
   "timeMinutes": 60,
   "basePortions": 4,
@@ -13,7 +13,7 @@
   ],
   "ingredients": [
     {
-      "name": "Süßkartoffeln",
+      "name": "Süsskartoffeln",
       "amount": 1100,
       "unit": "g",
       "perPortions": 4
@@ -81,17 +81,17 @@
   ],
   "weatherType": "neutral",
   "source": "herrbuettner.de",
-  "description": "Ein orientalisches Gericht mit im Ofen gebackenen Süßkartoffeln, goldbraun gebratenen Kichererbsen und cremigem Tahini-Ziegenjoghurt. Die Sesampaste verleiht diesem einfachen Gericht einen unverwechselbaren, leicht bitteren Touch, der perfekt mit der Süße der Kartoffeln harmoniert.",
+  "description": "Ein orientalisches Gericht mit im Ofen gebackenen Süsskartoffeln, goldbraun gebratenen Kichererbsen und cremigem Tahini-Ziegenjoghurt. Die Sesampaste verleiht diesem einfachen Gericht einen unverwechselbaren, leicht bitteren Touch, der perfekt mit der Süsse der Kartoffeln harmoniert.",
   "steps": [
     "Den Backofen auf 200 Grad Ober-/Unterhitze vorheizen und ein Backblech mit Backpapier auf der mittleren Schiene platzieren.",
-    "Die Kichererbsen aus der Dose abgießen, in einem feinen Sieb mit Wasser abspülen und gut abtropfen lassen.",
-    "Die Süßkartoffeln gründlich waschen, trockentupfen und rundherum mit einer Gabel einstechen. Für 50-60 Minuten im Ofen backen, bis sie weich sind (zwischendurch mit einer Gabel die Garprobe machen).",
-    "Während die Süßkartoffeln backen, den Ziegenjoghurt mit Tahini, Zitronensaft, Salz und Pfeffer verrühren und beiseitestellen.",
+    "Die Kichererbsen aus der Dose abgiessen, in einem feinen Sieb mit Wasser abspülen und gut abtropfen lassen.",
+    "Die Süsskartoffeln gründlich waschen, trockentupfen und rundherum mit einer Gabel einstechen. Für 50-60 Minuten im Ofen backen, bis sie weich sind (zwischendurch mit einer Gabel die Garprobe machen).",
+    "Während die Süsskartoffeln backen, den Ziegenjoghurt mit Tahini, Zitronensaft, Salz und Pfeffer verrühren und beiseitestellen.",
     "Etwa 10 Minuten vor Ende der Backzeit eine Pfanne bei mittlerer Hitze erhitzen. Das Olivenöl hineingeben und die Kichererbsen darin anbraten.",
     "Die Kichererbsen mit Pfeffer, einer Prise Salz und Kurkuma würzen, gut durchrühren und etwa 5 Minuten braten, dabei gelegentlich umrühren.",
     "Die Chili halbieren, entkernen und in feine Streifen schneiden. Die Petersilie grob hacken.",
-    "Die fertigen Süßkartoffeln aus dem Ofen nehmen und kurz abkühlen lassen. Längs einschneiden und leicht auseinanderdrücken.",
-    "Etwas Tahini-Ziegenjoghurt auf die geöffneten Süßkartoffeln geben, die gebratenen Kichererbsen darauf verteilen.",
+    "Die fertigen Süsskartoffeln aus dem Ofen nehmen und kurz abkühlen lassen. Längs einschneiden und leicht auseinanderdrücken.",
+    "Etwas Tahini-Ziegenjoghurt auf die geöffneten Süsskartoffeln geben, die gebratenen Kichererbsen darauf verteilen.",
     "Mit dem restlichen Tahini-Ziegenjoghurt, Chilistreifen und Petersilie garnieren und servieren."
   ],
   "dietCategory": "vegetarian",

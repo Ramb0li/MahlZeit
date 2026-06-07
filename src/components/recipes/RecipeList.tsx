@@ -131,7 +131,14 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
         const recipeTags = [...(r.tags ?? []), ...computeTimeTags(r.timeMinutes)];
         if (!filterTags.every(t => recipeTags.includes(t))) return false;
       }
-      if (filterDiet && r.dietCategory !== filterDiet) return false;
+      if (filterDiet) {
+        // Vegetarisch-Tab zeigt auch vegane Rezepte (Vegan ⊂ Vegetarisch)
+        if (filterDiet === 'vegetarian') {
+          if (r.dietCategory !== 'vegetarian' && r.dietCategory !== 'vegan') return false;
+        } else {
+          if (r.dietCategory !== filterDiet) return false;
+        }
+      }
       if (search && !r.name.toLowerCase().includes(search.toLowerCase())) return false;
       if (isRecipeExcluded(r, allergiesAndAversions)) return false;
       return true;

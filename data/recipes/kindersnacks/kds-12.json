@@ -60,7 +60,7 @@
       "perPortions": 8
     },
     {
-      "name": "Paprikapulver edelsüß",
+      "name": "Paprikapulver edelsüss",
       "amount": 0.5,
       "unit": "TL",
       "perPortions": 8
@@ -98,5 +98,6 @@
     "fat": 2.8,
     "carbs": 21.5,
     "fiber": 3.8
-  }
+  },
+  "dietCategory": "vegan"
 }

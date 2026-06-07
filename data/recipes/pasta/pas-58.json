@@ -1,6 +1,6 @@
 {
   "id": "pas-58",
-  "name": "Nudeln mit Grünkohl, Lachs und Sojasoße",
+  "name": "Nudeln mit Grünkohl, Lachs und Sojasosse",
   "category": "Pasta",
   "timeMinutes": 15,
   "basePortions": 2,
@@ -42,7 +42,7 @@
       "perPortions": 2
     },
     {
-      "name": "Sojasoße",
+      "name": "Sojasosse",
       "amount": 2,
       "unit": "EL",
       "perPortions": 2
@@ -80,15 +80,15 @@
   ],
   "weatherType": "kalt",
   "source": "herrbuettner.de",
-  "description": "Eine überraschende und gelungene Kombination aus Grünkohl, Lachs und Sojasoße. Einfach zubereitet, schmeckt köstlich und sieht auch noch gut aus.",
+  "description": "Eine überraschende und gelungene Kombination aus Grünkohl, Lachs und Sojasosse. Einfach zubereitet, schmeckt köstlich und sieht auch noch gut aus.",
   "steps": [
-    "Einen großen Topf mit reichlich Wasser aufsetzen und zum Kochen bringen. Das Wasser gut salzen und die Pasta nach Packungsanweisung kochen.",
+    "Einen grossen Topf mit reichlich Wasser aufsetzen und zum Kochen bringen. Das Wasser gut salzen und die Pasta nach Packungsanweisung kochen.",
     "Währenddessen die Knoblauchzehen schälen und in dünne Scheiben schneiden. Die Chilischote entkernen und in feine Streifen schneiden.",
     "Eine Pfanne bei mittlerer Hitze erhitzen. Das Lachsfilet im Olivenöl von beiden Seiten je 2 Minuten anbraten, dann aus der Pfanne nehmen.",
     "Knoblauch und Chili in der Pfanne glasig anschwitzen. Das Tomatenmark dazugeben und in der Pfanne verteilen.",
-    "Mit Sojasoße ablöschen. Den Grünkohl hinzufügen und mit Salz und Pfeffer würzen. Gut durchrühren – der Grünkohl fällt schnell zusammen.",
+    "Mit Sojasosse ablöschen. Den Grünkohl hinzufügen und mit Salz und Pfeffer würzen. Gut durchrühren – der Grünkohl fällt schnell zusammen.",
     "Ein bis zwei Schöpfkellen Nudelwasser hinzufügen. Die Hitze reduzieren, die Butter einrühren und schmelzen lassen.",
-    "Den Lachs mit den Händen in Stücke zupfen, zur Soße geben und kurz ziehen lassen.",
+    "Den Lachs mit den Händen in Stücke zupfen, zur Sosse geben und kurz ziehen lassen.",
     "Die gekochten Nudeln untermischen und alles gut vermengen. Auf zwei Teller verteilen und servieren."
   ],
   "dietCategory": "fish",

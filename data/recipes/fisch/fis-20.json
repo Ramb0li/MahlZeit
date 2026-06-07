@@ -1,6 +1,6 @@
 {
   "id": "fis-20",
-  "name": "Ruhender Lachs auf weißen Schmetterlingen",
+  "name": "Ruhender Lachs auf weissen Schmetterlingen",
   "category": "Fisch & Meeresfrüchte",
   "timeMinutes": 20,
   "basePortions": 2,
@@ -66,9 +66,9 @@
   ],
   "weatherType": "neutral",
   "source": "herrbuettner.de",
-  "description": "Ein elegantes Gericht, bei dem saftiger Lachs auf cremigen Farfalle serviert wird. Durch die Trennung von Lachs und Sahnesoße kommt der intensive Eigengeschmack des Fischs besonders gut zur Geltung.",
+  "description": "Ein elegantes Gericht, bei dem saftiger Lachs auf cremigen Farfalle serviert wird. Durch die Trennung von Lachs und Sahnesosse kommt der intensive Eigengeschmack des Fischs besonders gut zur Geltung.",
   "steps": [
-    "Einen großen Topf mit gesalzenem Wasser für die Nudeln aufsetzen und zum Kochen bringen.",
+    "Einen grossen Topf mit gesalzenem Wasser für die Nudeln aufsetzen und zum Kochen bringen.",
     "Währenddessen den Knoblauch schälen und fein würfeln. Den Dill fein hacken und etwas für die Garnierung beiseitelegen.",
     "Von der Zitrone ein Drittel abschneiden, halbieren und beiseitelegen. Aus dem Rest den Saft auspressen.",
     "Die Lachsfilets mit Küchenpapier trocken tupfen, dann mit Salz und Pfeffer würzen.",
@@ -76,9 +76,9 @@
     "Eine Pfanne stark erhitzen. 1 EL Olivenöl und die Lachsfilets hineingeben und 3 Minuten auf der ersten Seite braten, ohne sie zu bewegen.",
     "Den Lachs wenden, die Hitze reduzieren und den gewürfelten Knoblauch hinzufügen. Weitere 3 Minuten braten.",
     "Mit dem Zitronensaft ablöschen und auch über den Fisch träufeln. Dann die Sahne hinzufügen und einmal aufkochen lassen.",
-    "Die Nudeln kurz vor dem perfekten Garpunkt abgießen. Den Lachs aus der Pfanne nehmen und beiseite stellen.",
-    "Die Sahnesoße mit Salz und Pfeffer abschmecken. Die Pasta und den gehackten Dill unterrühren und gut vermischen.",
-    "Die Nudeln mit Soße auf zwei Teller verteilen, je ein Lachsfilet darauf platzieren und mit Zitronenschnitzen und frischem Dill garnieren."
+    "Die Nudeln kurz vor dem perfekten Garpunkt abgiessen. Den Lachs aus der Pfanne nehmen und beiseite stellen.",
+    "Die Sahnesosse mit Salz und Pfeffer abschmecken. Die Pasta und den gehackten Dill unterrühren und gut vermischen.",
+    "Die Nudeln mit Sosse auf zwei Teller verteilen, je ein Lachsfilet darauf platzieren und mit Zitronenschnitzen und frischem Dill garnieren."
   ],
   "dietCategory": "fish",
   "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/03/lachs-auf-dill-sahne-farfalle01.jpg",

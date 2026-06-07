@@ -3,9 +3,9 @@ export const dynamic = 'force-dynamic';
 import { NextResponse } from 'next/server';
 import { getSessionWithGroup as getSession } from '@/lib/session';
 import { getRecipes, getConstraints, getWeatherCache, getWeekPlan, saveWeekPlan, getSettings, getFavorites } from '@/lib/data';
-import { suggestWeek, suggestRecipe } from '@/lib/suggestions';
+import { suggestWeek, suggestRecipe, getEffectiveDietCategory } from '@/lib/suggestions';
 import { getCurrentSeason, getWeatherTypeFromTemp } from '@/lib/utils';
-import type { WeatherType, Category } from '@/types';
+import type { WeatherType } from '@/types';
 
 export async function POST(request: Request) {
   try {
@@ -14,32 +14,34 @@ export async function POST(request: Request) {
     if (!session.groupId) return NextResponse.json({ error: 'Keine Gruppe zugeordnet' }, { status: 403 });
     const groupId = session.groupId;
 
-    const { weekId, dayIndex, mealType } = await request.json();
+    const { weekId, dayIndex, mealType, favoritesOnly } = await request.json();
 
-    const [allRecipes, constraints, weatherCache, settings, favorites] = await Promise.all([
+    const { getPantry } = await import('@/lib/data');
+    const [allRecipes, constraints, weatherCache, settings, favorites, pantry] = await Promise.all([
       getRecipes(groupId),
       getConstraints(groupId),
       getWeatherCache(),
       getSettings(groupId),
       getFavorites(groupId),
+      getPantry(groupId),
     ]);
+
+    const wantToUse = pantry.filter(p => p.wantToUse).map(p => p.name);
 
     // Archivierte Rezepte nie vorschlagen; Diät-Filter anwenden
     const dietPref = settings.dietPreference;
 
-    // Tag-basierter Diät-Filter
+    // dietCategory-basierter Diät-Filter (korrekt auch für Fleisch in Pasta-Kategorie etc.)
     // fleischhaltig/flexitarisch: kein Filter (flexitarisch-Logik in suggestWeek)
-    // pescetarisch: kein Fleisch & Geflügel
-    // vegetarisch:  kein Fleisch & Geflügel, kein Fisch & Meeresfrüchte
-    // vegan:        nur Rezepte mit Vegan-Tag
-    const MEAT_CAT: Category  = 'Fleisch & Geflügel';
-    const FISH_CAT: Category  = 'Fisch & Meeresfrüchte';
-
+    // pescetarisch: kein Fleisch
+    // vegetarisch:  kein Fleisch, kein Fisch
+    // vegan:        nur Vegan
     const recipes = allRecipes.filter((r) => {
       if (r.archived) return false;
-      if (dietPref === 'pescetarisch' && r.category === MEAT_CAT) return false;
-      if (dietPref === 'vegetarisch'  && (r.category === MEAT_CAT || r.category === FISH_CAT)) return false;
-      if (dietPref === 'vegan'        && !r.tags.includes('Vegan')) return false;
+      const diet = getEffectiveDietCategory(r);
+      if (dietPref === 'pescetarisch' && diet === 'meat') return false;
+      if (dietPref === 'vegetarisch'  && (diet === 'meat' || diet === 'fish')) return false;
+      if (dietPref === 'vegan'        && diet !== 'vegan') return false;
       return true;
     });
 
@@ -77,6 +79,7 @@ export async function POST(request: Request) {
         usedThisWeek: usedIds,
         lunchOnly: mealType === 'lunch',
         allergiesAndAversions: settings.allergiesAndAversions,
+        pantryIngredients: wantToUse,
       });
 
       return NextResponse.json({ recipeId: suggestion?.id ?? null, recipe: suggestion });
@@ -103,6 +106,8 @@ export async function POST(request: Request) {
       allergiesAndAversions: settings.allergiesAndAversions,
       flexitarisch:          dietPref === 'flexitarisch',
       favorites,
+      favoritesOnly:         !!favoritesOnly,
+      pantryIngredients:     wantToUse,
     });
 
     for (const [dayStr, meals] of Object.entries(suggestions)) {

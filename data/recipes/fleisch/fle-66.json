@@ -1,6 +1,6 @@
 {
   "id": "fle-66",
-  "name": "Hähnchen am Spieß auf Couscous mit Gemüse-Mix & Joghurt-Dip",
+  "name": "Hähnchen am Spiess auf Couscous mit Gemüse-Mix & Joghurt-Dip",
   "category": "Fleisch & Geflügel",
   "timeMinutes": 30,
   "basePortions": 4,
@@ -41,7 +41,7 @@
       "perPortions": 4
     },
     {
-      "name": "Zwiebeln, weiß",
+      "name": "Zwiebeln, weiss",
       "amount": 180,
       "unit": "g",
       "perPortions": 4
@@ -131,7 +131,7 @@
       "perPortions": 4
     },
     {
-      "name": "Holzspieße",
+      "name": "Holzspiesse",
       "amount": 4,
       "unit": "Stk",
       "perPortions": 4
@@ -139,18 +139,18 @@
   ],
   "weatherType": "neutral",
   "source": "herrbuettner.de",
-  "description": "Würzige Hähnchenspieße auf buntem Couscous-Gemüse-Mix mit roter, gelber und oranger Paprika sowie Zucchini, verfeinert mit einem leicht scharfen pikanten Joghurt-Dip. Ein farbenfrohes und aromatisches Gericht.",
+  "description": "Würzige Hähnchenspiesse auf buntem Couscous-Gemüse-Mix mit roter, gelber und oranger Paprika sowie Zucchini, verfeinert mit einem leicht scharfen pikanten Joghurt-Dip. Ein farbenfrohes und aromatisches Gericht.",
   "steps": [
-    "Die Hähnchenbrust in etwa 4 cm große Würfel schneiden. In einer Schüssel 1 EL Olivenöl mit Paprikapulver, Knoblauchgranulat, Cayennepfeffer und Honig vermengen. Die Hähnchenwürfel darin wenden und die Marinade gut einmassieren. Beiseite stellen.",
+    "Die Hähnchenbrust in etwa 4 cm grosse Würfel schneiden. In einer Schüssel 1 EL Olivenöl mit Paprikapulver, Knoblauchgranulat, Cayennepfeffer und Honig vermengen. Die Hähnchenwürfel darin wenden und die Marinade gut einmassieren. Beiseite stellen.",
     "Für den Joghurt-Dip die halbe Zitrone auspressen. Einen Schuss Zitronensaft mit dem Joghurt, Chiliflocken, Salz und Pfeffer verrühren. Den restlichen Zitronensaft aufbewahren. Den Dip beiseite stellen.",
     "Zwiebeln und Knoblauch schälen. Zwiebeln in feine Würfel schneiden, Knoblauch in dünne Scheiben schneiden. Die Paprikaschoten vom Kerngehäuse befreien und das Fruchtfleisch in kleine Würfel schneiden.",
-    "Die Zucchini vierteln und von jedem Viertel das weiche Kerngehäuse entfernen. Anschließend in kleine Würfel schneiden.",
-    "300 ml Wasser zum Kochen bringen. Den Couscous in eine Schüssel geben und mit dem kochenden Wasser übergießen. Mit Salz und Pfeffer würzen, mit einem Teller oder Deckel abdecken und etwa 10 Minuten quellen lassen.",
+    "Die Zucchini vierteln und von jedem Viertel das weiche Kerngehäuse entfernen. Anschliessend in kleine Würfel schneiden.",
+    "300 ml Wasser zum Kochen bringen. Den Couscous in eine Schüssel geben und mit dem kochenden Wasser übergiessen. Mit Salz und Pfeffer würzen, mit einem Teller oder Deckel abdecken und etwa 10 Minuten quellen lassen.",
     "Eine Pfanne bei mittlerer Hitze erhitzen und 1 EL Olivenöl hineingeben. Zwiebeln und Knoblauch kurz anschwitzen, bis die Zwiebeln glasig sind. Dann das gewürfelte Gemüse dazugeben, mit Salz und Pfeffer würzen und unter gelegentlichem Rühren etwa 10 Minuten braten.",
-    "Die marinierten Hähnchenwürfel auf die Holzspieße stecken. Dabei darauf achten, dass alle Fleischstücke auf einer Ebene liegen, damit sie gleichmäßig garen.",
-    "Eine weitere Pfanne bei mittlerer Hitze erhitzen, 2 EL Olivenöl hineingeben und die Hähnchenspieße darin von allen Seiten unter mehrmaligem Wenden etwa 10 Minuten braten.",
-    "Den gequollenen Couscous zum Gemüse in die Pfanne geben und gut vermischen. Den restlichen Zitronensaft dazugeben und unter gelegentlichem Rühren warm halten, bis die Hähnchenspieße fertig sind.",
-    "Die Petersilie fein hacken. Den Couscous-Gemüse-Mix auf Tellern verteilen, je einen Hähnchenspieß darauf anrichten, mit dem Joghurt-Dip und der gehackten Petersilie garnieren und servieren."
+    "Die marinierten Hähnchenwürfel auf die Holzspiesse stecken. Dabei darauf achten, dass alle Fleischstücke auf einer Ebene liegen, damit sie gleichmässig garen.",
+    "Eine weitere Pfanne bei mittlerer Hitze erhitzen, 2 EL Olivenöl hineingeben und die Hähnchenspiesse darin von allen Seiten unter mehrmaligem Wenden etwa 10 Minuten braten.",
+    "Den gequollenen Couscous zum Gemüse in die Pfanne geben und gut vermischen. Den restlichen Zitronensaft dazugeben und unter gelegentlichem Rühren warm halten, bis die Hähnchenspiesse fertig sind.",
+    "Die Petersilie fein hacken. Den Couscous-Gemüse-Mix auf Tellern verteilen, je einen Hähnchenspiess darauf anrichten, mit dem Joghurt-Dip und der gehackten Petersilie garnieren und servieren."
   ],
   "dietCategory": "meat",
   "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/09/gebratener_couscous_mit_gemuese_und_haehnchen_am_spiess01.jpg",

@@ -82,7 +82,7 @@
   "source": "LittleFant – Kindersnacks für jeden Tag",
   "description": "Saftige Mini-Brötchen mit Kichererbsen, Oliven und Oregano – mediterran und sättigend. In unter 35 Minuten fertig.",
   "steps": [
-    "Kichererbsen abgießen, gut spülen und im Mixer grob zerkleinern (stückig lassen). Oliven in Scheiben schneiden.",
+    "Kichererbsen abgiessen, gut spülen und im Mixer grob zerkleinern (stückig lassen). Oliven in Scheiben schneiden.",
     "Dinkelvollkornmehl, Dinkelmehl, Backpulver und Natron mischen.",
     "Sojajoghurt, Tomatenmark, Zitronensaft, Hefeflocken, Salz und Oregano verrühren und zusammen mit den Kichererbsen und Oliven zum Mehl geben. Zu einem glatten Teig kneten.",
     "Teig in 8 Portionen teilen, zu Kugeln formen, auf ein Backblech legen, etwas flach drücken, kreuzförmig einschneiden und mit Wasser einpinseln.",
@@ -105,5 +105,6 @@
     "fat": 3.2,
     "carbs": 24.6,
     "fiber": 4.2
-  }
+  },
+  "dietCategory": "vegan"
 }

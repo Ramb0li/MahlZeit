@@ -56,7 +56,7 @@
   ],
   "weatherType": "neutral",
   "source": "LittleFant – Kindersnacks für jeden Tag",
-  "description": "Nährstoffreiche Müsliriegel mit Hafer, Hirse, Karotte und natürlicher Apfelsüße – ohne Industriezucker.",
+  "description": "Nährstoffreiche Müsliriegel mit Hafer, Hirse, Karotte und natürlicher Apfelsüsse – ohne Industriezucker.",
   "steps": [
     "Haferflocken zu Mehl mahlen, mit Hirseflocken und Zimt mischen. Rosinen hacken und zugeben.",
     "Apfelmark, Sojadrink und Mandelmus verrühren, mit Karotte zu Trockenzutaten geben, 20 Minuten quellen lassen.",
@@ -78,5 +78,6 @@
     "fat": 1.8,
     "carbs": 11.4,
     "fiber": 1.6
-  }
+  },
+  "dietCategory": "vegan"
 }

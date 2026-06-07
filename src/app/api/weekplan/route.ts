@@ -44,7 +44,7 @@ export async function PUT(request: Request) {
   try {
     const gate = await requireGroup();
     if ('error' in gate) return gate.error;
-    const { weekId, day, mealType, slot, toggleConstraintId } = await request.json();
+    const { weekId, day, mealType, slot, toggleConstraintId, note } = await request.json();
     if (!weekId) return NextResponse.json({ error: 'weekId fehlt' }, { status: 400 });
 
     let plan = await getWeekPlan(weekId, gate.groupId);
@@ -55,6 +55,15 @@ export async function PUT(request: Request) {
       plan.disabledConstraintIds = ids.includes(toggleConstraintId)
         ? ids.filter(id => id !== toggleConstraintId)
         : [...ids, toggleConstraintId];
+      await saveWeekPlan(plan, gate.groupId);
+      return NextResponse.json(plan);
+    }
+
+    // Tagesnotiz speichern (kein mealType-Pflichtfeld)
+    if (mealType === 'note') {
+      if (day === undefined) return NextResponse.json({ error: 'day fehlt' }, { status: 400 });
+      if (!plan.days[day]) plan.days[day] = { dinner: { recipeId: null }, showLunch: false };
+      plan.days[day].note = typeof note === 'string' ? note : '';
       await saveWeekPlan(plan, gate.groupId);
       return NextResponse.json(plan);
     }

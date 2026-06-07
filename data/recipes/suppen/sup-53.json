@@ -1,6 +1,6 @@
 {
   "id": "sup-53",
-  "name": "Karottensuppe mit weißen Bohnen, Babyspinat und Mettenden",
+  "name": "Karottensuppe mit weissen Bohnen, Babyspinat und Mettenden",
   "category": "Suppen, Eintöpfe & Currys",
   "timeMinutes": 45,
   "basePortions": 4,
@@ -19,7 +19,7 @@
       "perPortions": 4
     },
     {
-      "name": "weiße Zwiebeln",
+      "name": "weisse Zwiebeln",
       "amount": 130,
       "unit": "g",
       "perPortions": 4
@@ -37,7 +37,7 @@
       "perPortions": 4
     },
     {
-      "name": "weiße Bohnen (abgetropft)",
+      "name": "weisse Bohnen (abgetropft)",
       "amount": 500,
       "unit": "g",
       "perPortions": 4
@@ -61,7 +61,7 @@
       "perPortions": 4
     },
     {
-      "name": "Weißweinessig",
+      "name": "Weissweinessig",
       "amount": 2,
       "unit": "EL",
       "perPortions": 4
@@ -87,22 +87,22 @@
   ],
   "weatherType": "kalt",
   "source": "herrbuettner.de",
-  "description": "Eine herzhafte Karottensuppe nach Oma-Art, bei der die Karotten grob gestampft werden. Mit weißen Bohnen, frischem Babyspinat und würzigen Mettenden wird daraus eine vollwertige, sättigende Mahlzeit.",
+  "description": "Eine herzhafte Karottensuppe nach Oma-Art, bei der die Karotten grob gestampft werden. Mit weissen Bohnen, frischem Babyspinat und würzigen Mettenden wird daraus eine vollwertige, sättigende Mahlzeit.",
   "steps": [
     "Die Karotten waschen, trocknen, schälen und in Würfel schneiden.",
     "Die Zwiebeln schälen und in kleine Würfel schneiden.",
     "Die Thymianblätter von den Zweigen zupfen und grob hacken.",
-    "Die weißen Bohnen aus der Dose nehmen, durch ein Sieb abgießen und unter kaltem fließendem Wasser abspülen.",
+    "Die weissen Bohnen aus der Dose nehmen, durch ein Sieb abgiessen und unter kaltem fliessendem Wasser abspülen.",
     "Die Mettenden rundherum mehrmals mit einer Gabel einstechen.",
     "Den Babyspinat waschen und grob trocken schütteln.",
-    "Einen großen Topf bei mittlerer Hitze erhitzen und das Olivenöl hineingeben.",
+    "Einen grossen Topf bei mittlerer Hitze erhitzen und das Olivenöl hineingeben.",
     "Zwiebeln, Thymian und Chiliflocken im Öl anschwitzen, bis die Zwiebeln glasig werden.",
     "Die Karottenwürfel hinzufügen, mit Salz und Pfeffer würzen, einmal durchrühren und etwa 1 Minute mit anschwitzen.",
-    "Mit Weißweinessig ablöschen, durchrühren und mit der Gemüsebrühe aufgießen.",
-    "Die Mettenden in die Suppe geben (sie sollten von der Brühe bedeckt sein), den Topf mit einem Deckel verschließen und 25-30 Minuten köcheln lassen, bis die Karotten weich sind.",
+    "Mit Weissweinessig ablöschen, durchrühren und mit der Gemüsebrühe aufgiessen.",
+    "Die Mettenden in die Suppe geben (sie sollten von der Brühe bedeckt sein), den Topf mit einem Deckel verschliessen und 25-30 Minuten köcheln lassen, bis die Karotten weich sind.",
     "Die Mettenden herausnehmen und die Karotten mit einem Kartoffelstampfer grob zerstampfen.",
     "Falls nötig, mit Salz und Pfeffer abschmecken.",
-    "Die weißen Bohnen und den Babyspinat hinzufügen, durchrühren und weitere 5 Minuten köcheln lassen, bis der Spinat zusammengefallen ist.",
+    "Die weissen Bohnen und den Babyspinat hinzufügen, durchrühren und weitere 5 Minuten köcheln lassen, bis der Spinat zusammengefallen ist.",
     "Die Mettenden in Scheiben schneiden und zurück in die Suppe geben.",
     "Einmal durchrühren und die Suppe servieren."
   ],

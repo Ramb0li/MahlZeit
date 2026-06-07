@@ -11,7 +11,7 @@
       "perPortions": 4
     },
     {
-      "name": "Hartweizengrieß",
+      "name": "Hartweizengriess",
       "amount": 60,
       "unit": "g",
       "perPortions": 4
@@ -107,5 +107,6 @@
     "fat": 21.3,
     "carbs": 54.2,
     "fiber": 6.8
-  }
+  },
+  "dietCategory": "vegan"
 }

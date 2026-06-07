@@ -30,6 +30,20 @@ export async function POST(request: Request) {
   return NextResponse.json({ ok: true, item });
 }
 
+export async function PATCH(request: Request) {
+  const session = await getSession();
+  if (!session)         return NextResponse.json({ error: 'Nicht angemeldet' }, { status: 401 });
+  if (!session.groupId) return NextResponse.json({ error: 'Keine Gruppe' },     { status: 403 });
+
+  const { id, wantToUse } = await request.json() as { id?: string; wantToUse?: boolean };
+  if (!id) return NextResponse.json({ error: 'id fehlt' }, { status: 400 });
+
+  const items = await getPantry(session.groupId);
+  const updated = items.map((i) => i.id === id ? { ...i, wantToUse: !!wantToUse } : i);
+  await savePantry(session.groupId, updated);
+  return NextResponse.json({ ok: true });
+}
+
 export async function DELETE(request: Request) {
   const session = await getSession();
   if (!session)         return NextResponse.json({ error: 'Nicht angemeldet' }, { status: 401 });

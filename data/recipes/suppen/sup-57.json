@@ -1,6 +1,6 @@
 {
   "id": "sup-57",
-  "name": "Weiße Bohnen Gemüsesuppe mit Cabanossi und Fenchelsamen",
+  "name": "Weisse Bohnen Gemüsesuppe mit Cabanossi und Fenchelsamen",
   "category": "Suppen, Eintöpfe & Currys",
   "timeMinutes": 30,
   "basePortions": 4,
@@ -24,7 +24,7 @@
       "perPortions": 4
     },
     {
-      "name": "Zwiebeln, weiß",
+      "name": "Zwiebeln, weiss",
       "amount": 128,
       "unit": "g",
       "perPortions": 4
@@ -54,7 +54,7 @@
       "perPortions": 4
     },
     {
-      "name": "Weiße Bohnen (Dose, Abtropfgewicht)",
+      "name": "Weisse Bohnen (Dose, Abtropfgewicht)",
       "amount": 500,
       "unit": "g",
       "perPortions": 4
@@ -98,17 +98,17 @@
   ],
   "weatherType": "kalt",
   "source": "herrbuettner.de",
-  "description": "Eine kräftige, wärmende Suppe mit weißen Bohnen, Cabanossi und aromatischen Fenchelsamen. Perfekt für kalte Tage und ganz einfach zubereitet.",
+  "description": "Eine kräftige, wärmende Suppe mit weissen Bohnen, Cabanossi und aromatischen Fenchelsamen. Perfekt für kalte Tage und ganz einfach zubereitet.",
   "steps": [
     "Karotten und Stangensellerie waschen, trocken tupfen. Karotten schälen und in kleine Würfel schneiden. Stangensellerie ebenfalls würfeln.",
     "Zwiebeln und Knoblauchzehen schälen und fein würfeln. Rosmarin von den Zweigen zupfen und klein hacken.",
-    "Weiße Bohnen durch ein Sieb abgießen und unter kaltem Wasser gründlich abspülen.",
-    "Cabanossi der Länge nach vierteln und dann in etwa 1 cm große Stücke schneiden.",
-    "Einen großen Topf bei höherer Hitze erhitzen. Olivenöl hineingeben und Cabanossi, Fenchelsamen sowie Rosmarin darin scharf anbraten, dabei gelegentlich umrühren.",
+    "Weisse Bohnen durch ein Sieb abgiessen und unter kaltem Wasser gründlich abspülen.",
+    "Cabanossi der Länge nach vierteln und dann in etwa 1 cm grosse Stücke schneiden.",
+    "Einen grossen Topf bei höherer Hitze erhitzen. Olivenöl hineingeben und Cabanossi, Fenchelsamen sowie Rosmarin darin scharf anbraten, dabei gelegentlich umrühren.",
     "Sobald sich am Topfboden ein Bratensatz bildet, Zwiebeln und Knoblauch hinzufügen und etwa 1 Minute unter Rühren anschwitzen lassen.",
     "Karotten und Stangensellerie in den Topf geben, kräftig mit Salz und Pfeffer würzen. Alles gut vermischen und unter gelegentlichem Rühren 1 Minute anbraten.",
-    "Tomatenmark einrühren, dann mit 1000 ml Wasser aufgießen und gut durchmischen.",
-    "Die weißen Bohnen hinzugeben und unterrühren. Hitze auf mittlere Stufe reduzieren und den Topf mit Deckel verschließen.",
+    "Tomatenmark einrühren, dann mit 1000 ml Wasser aufgiessen und gut durchmischen.",
+    "Die weissen Bohnen hinzugeben und unterrühren. Hitze auf mittlere Stufe reduzieren und den Topf mit Deckel verschliessen.",
     "Die Suppe 15-20 Minuten köcheln lassen, bis das Gemüse gar ist.",
     "Petersilie klein hacken und etwa zwei Drittel davon in die Suppe geben. Mit Salz und Pfeffer abschmecken.",
     "Suppe auf Schüsseln verteilen und mit der restlichen Petersilie garnieren."

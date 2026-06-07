@@ -12,7 +12,7 @@
       "perPortions": 10
     },
     {
-      "name": "Polenta (Maisgrieß)",
+      "name": "Polenta (Maisgriess)",
       "amount": 75,
       "unit": "g",
       "perPortions": 10
@@ -68,13 +68,13 @@
   ],
   "weatherType": "neutral",
   "source": "LittleFant – Kindersnacks für jeden Tag",
-  "description": "Goldbraune Maistaler mit Karotte und Sojajoghurt – saftig innen, leicht knusprig außen.",
+  "description": "Goldbraune Maistaler mit Karotte und Sojajoghurt – saftig innen, leicht knusprig aussen.",
   "steps": [
     "Haferflocken zu Mehl mahlen, mit trockenen Zutaten mischen.",
     "Schalotte mit Sojajoghurt und Olivenöl pürieren, mit geriebener Karotte zu den Trockenzutaten geben und 5 Minuten quellen lassen.",
     "Zu Kugeln formen, platt drücken. Bei 230 °C (Ober-/Unterhitze) 15–20 Minuten backen."
   ],
-  "tips": "Bis zu 60 g Hülsenfrüchte-Reste mit Sojajoghurt pürieren für Extra-Eiweiß.",
+  "tips": "Bis zu 60 g Hülsenfrüchte-Reste mit Sojajoghurt pürieren für Extra-Eiweiss.",
   "imageUrl": null,
   "tags": [
     "Vegan",
@@ -91,5 +91,6 @@
     "fat": 4.8,
     "carbs": 15.8,
     "fiber": 1.8
-  }
+  },
+  "dietCategory": "vegan"
 }

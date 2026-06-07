@@ -71,7 +71,7 @@
       "perPortions": 4
     },
     {
-      "name": "Weißweinessig",
+      "name": "Weissweinessig",
       "amount": 1,
       "unit": "EL",
       "perPortions": 4
@@ -97,20 +97,20 @@
   ],
   "weatherType": "warm",
   "source": "herrbuettner.de",
-  "description": "Ein erfrischender Sommersalat mit knackigem Fenchel und Karotten, kombiniert mit gebratenem Lachs, Feta und gerösteten Mandeln. Das fruchtig-süße Orangen-Honig-Dressing rundet dieses farbenfrohe Gericht perfekt ab.",
+  "description": "Ein erfrischender Sommersalat mit knackigem Fenchel und Karotten, kombiniert mit gebratenem Lachs, Feta und gerösteten Mandeln. Das fruchtig-süsse Orangen-Honig-Dressing rundet dieses farbenfrohe Gericht perfekt ab.",
   "steps": [
-    "Die Mandeln in einer beschichteten Pfanne ohne Fett bei mittlerer Hitze etwa 3 Minuten rösten. Dabei die Pfanne regelmäßig schwenken, damit die Mandeln gleichmäßig bräunen und nicht anbrennen. Anschließend im Mörser grob zerstoßen und beiseite stellen.",
+    "Die Mandeln in einer beschichteten Pfanne ohne Fett bei mittlerer Hitze etwa 3 Minuten rösten. Dabei die Pfanne regelmässig schwenken, damit die Mandeln gleichmässig bräunen und nicht anbrennen. Anschliessend im Mörser grob zerstossen und beiseite stellen.",
     "Karotten und Fenchel unter kaltem Wasser waschen und trocken tupfen. Die Karotten mit einem Sparschäler schälen und dann längs in hauchdünne, breite Streifen hobeln.",
     "Vom Fenchel die grünen Stängel nahe der Knolle sowie den Strunk entfernen. Die Knolle halbieren und jede Hälfte quer in feine Streifen schneiden. Das Fenchelgrün kann zum Garnieren aufbewahrt werden.",
-    "Karotten- und Fenchelstreifen in einer großen Schüssel vermengen und beiseite stellen.",
+    "Karotten- und Fenchelstreifen in einer grossen Schüssel vermengen und beiseite stellen.",
     "Das Lachsfilet mit Küchenpapier trocken tupfen und auf beiden Seiten mit Salz und Pfeffer würzen.",
-    "Eine Pfanne bei hoher Hitze erhitzen. Sobald sie heiß ist, 2 EL Rapsöl hineingeben. Den Lachs in die Pfanne legen und nach 30 Sekunden die Hitze auf mittlere Stufe reduzieren. Insgesamt 3 Minuten braten.",
+    "Eine Pfanne bei hoher Hitze erhitzen. Sobald sie heiss ist, 2 EL Rapsöl hineingeben. Den Lachs in die Pfanne legen und nach 30 Sekunden die Hitze auf mittlere Stufe reduzieren. Insgesamt 3 Minuten braten.",
     "Den Lachs wenden, die Hitze um zwei weitere Stufen reduzieren und etwa 4 Minuten fertig garen. Der Lachs sollte in der Mitte noch leicht glasig sein. Aus der Pfanne nehmen und ruhen lassen.",
     "Von einer Orangenhälfte den Saft auspressen, die andere Hälfte filetieren.",
-    "Für das Dressing 4 EL Olivenöl, 1 EL Weißweinessig, 1 EL Honig, den Orangensaft, Salz, Pfeffer und eine Prise Zucker in ein verschließbares Glas geben. Verschließen und kräftig schütteln, bis alles gut vermischt ist.",
+    "Für das Dressing 4 EL Olivenöl, 1 EL Weissweinessig, 1 EL Honig, den Orangensaft, Salz, Pfeffer und eine Prise Zucker in ein verschliessbares Glas geben. Verschliessen und kräftig schütteln, bis alles gut vermischt ist.",
     "Die Petersilie grob hacken.",
     "Die Hälfte des Dressings über die Karotten-Fenchel-Mischung geben und mit den Händen gut durchmischen.",
-    "Die Salat-Mischung auf einer großen Platte oder einem Teller anrichten. Orangenfilets und geröstete Mandeln darüber verteilen.",
+    "Die Salat-Mischung auf einer grossen Platte oder einem Teller anrichten. Orangenfilets und geröstete Mandeln darüber verteilen.",
     "Feta und Lachsfilet mit den Händen in Stücke zerteilen und über den Salat geben. Mit Petersilie garnieren und das restliche Dressing darüber träufeln."
   ],
   "dietCategory": "fish",

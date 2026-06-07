@@ -1,6 +1,6 @@
 {
   "id": "son-94",
-  "name": "Karotten Muffins mit weißer Schokolade",
+  "name": "Karotten Muffins mit weisser Schokolade",
   "category": "Desserts & Süsses",
   "timeMinutes": 35,
   "basePortions": 12,
@@ -65,7 +65,7 @@
       "perPortions": 12
     },
     {
-      "name": "Weiße Schokolade Kuvertüre",
+      "name": "Weisse Schokolade Kuvertüre",
       "amount": 200,
       "unit": "g",
       "perPortions": 12
@@ -73,7 +73,7 @@
   ],
   "weatherType": "neutral",
   "source": "herrbuettner.de",
-  "description": "Saftige Muffins mit fein geraspelten Karotten und einem großzügigen Topping aus weißer Schokolade. Eine wunderbare Kombination aus süßem und leicht herzhaftem Geschmack – absolute Lieblingsmuffins!",
+  "description": "Saftige Muffins mit fein geraspelten Karotten und einem grosszügigen Topping aus weisser Schokolade. Eine wunderbare Kombination aus süssem und leicht herzhaftem Geschmack – absolute Lieblingsmuffins!",
   "steps": [
     "Den Backofen auf 180 Grad Ober- und Unterhitze vorheizen.",
     "Die Butter in einem Topf bei kleiner Hitze schmelzen lassen, dann vom Herd nehmen und etwas abkühlen lassen.",
@@ -86,8 +86,8 @@
     "Den Teig auf 12 Muffin-Papierförmchen in einer Muffinform verteilen.",
     "Die Muffins für 20-25 Minuten auf der mittleren Schiene backen.",
     "Die Muffins nach dem Backen etwa 15 Minuten abkühlen lassen.",
-    "Für das Topping die weiße Schokolade zerkleinern und in einer feuerfesten Tasse über dem Wasserbad bei niedriger Hitze unter gelegentlichem Rühren schmelzen lassen.",
-    "Die geschmolzene Kuvertüre mit einem Esslöffel großzügig über die abgekühlten Muffins geben, sodass die Oberfläche bedeckt ist.",
+    "Für das Topping die weisse Schokolade zerkleinern und in einer feuerfesten Tasse über dem Wasserbad bei niedriger Hitze unter gelegentlichem Rühren schmelzen lassen.",
+    "Die geschmolzene Kuvertüre mit einem Esslöffel grosszügig über die abgekühlten Muffins geben, sodass die Oberfläche bedeckt ist.",
     "Mit den beiseitegelegten Karottenraspeln garnieren und die Kuvertüre fest werden lassen."
   ],
   "dietCategory": "vegetarian",

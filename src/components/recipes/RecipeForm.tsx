@@ -72,6 +72,7 @@ interface RecipeFormProps {
 export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/upload' }: RecipeFormProps) {
   const [name, setName]                       = useState(recipe?.name ?? '');
   const [category, setCategory]               = useState<Category>(recipe?.category ?? 'Vegetarische Hauptgerichte');
+  const [dietCategory, setDietCategory]       = useState<import('@/types').DietCategory | undefined>(recipe?.dietCategory);
   const [timeMinutes, setTimeMinutes]         = useState(recipe?.timeMinutes ?? 30);
   const [weatherType, setWeatherType]         = useState<WeatherType>(recipe?.weatherType ?? 'neutral');
   const [tags, setTags]                       = useState<string[]>(recipe?.tags ?? []);
@@ -223,6 +224,7 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/up
                       ? stepsText.split('\n').map(s => s.trim()).filter(Boolean)
                       : undefined,
       ...(finalGroups ? { ingredientGroups: finalGroups } : {}),
+      ...(dietCategory ? { dietCategory } : {}),
     };
     onSave(r);
   };
@@ -275,6 +277,29 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/up
             className="w-full"
             style={{ accentColor: '#b5614a' }}
           />
+        </div>
+
+        {/* Ernährung */}
+        <div className="sm:col-span-2">
+          <label style={labelStyle}>Ernährung</label>
+          <div className="flex flex-wrap gap-2">
+            {([
+              { value: 'meat',       label: '🥩 Fleischhaltig' },
+              { value: 'fish',       label: '🐟 Pescetarisch' },
+              { value: 'vegetarian', label: '🌿 Vegetarisch' },
+              { value: 'vegan',      label: '🌱 Vegan' },
+            ] as { value: import('@/types').DietCategory; label: string }[]).map((opt) => (
+              <button
+                key={opt.value}
+                type="button"
+                onClick={() => setDietCategory(prev => prev === opt.value ? undefined : opt.value)}
+                className="px-3 py-1.5 rounded-xl text-xs font-semibold transition-all"
+                style={dietCategory === opt.value ? chipActive : chipInactive}
+              >
+                {opt.label}
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* Wettertyp */}

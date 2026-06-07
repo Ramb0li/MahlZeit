@@ -60,7 +60,7 @@
       "perPortions": 12
     },
     {
-      "name": "Kakaopulver (ungesüßt)",
+      "name": "Kakaopulver (ungesüsst)",
       "amount": 25,
       "unit": "g",
       "perPortions": 12
@@ -109,5 +109,6 @@
     "fat": 9.8,
     "carbs": 18.4,
     "fiber": 3.6
-  }
+  },
+  "dietCategory": "vegan"
 }

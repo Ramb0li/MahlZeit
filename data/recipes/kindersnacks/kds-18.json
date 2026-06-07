@@ -47,7 +47,7 @@
   "description": "Schnelle Energyballs mit Datteln, Cashewmus und Zimt – in Kokosflocken gewälzt.",
   "steps": [
     "Hafer- und Hirseflocken fein mahlen. Datteln einweichen, abtropfen und mit Cashewmus pürieren.",
-    "Alle Zutaten außer Kokosflocken vermengen. Zu Kugeln formen und in Kokosflocken wälzen."
+    "Alle Zutaten ausser Kokosflocken vermengen. Zu Kugeln formen und in Kokosflocken wälzen."
   ],
   "tips": "Im Kühlschrank ca. 2 Wochen haltbar.",
   "imageUrl": null,
@@ -64,5 +64,6 @@
     "fat": 2.3,
     "carbs": 10.1,
     "fiber": 1.4
-  }
+  },
+  "dietCategory": "vegan"
 }

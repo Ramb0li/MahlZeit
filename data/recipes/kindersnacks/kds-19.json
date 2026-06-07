@@ -6,7 +6,7 @@
   "basePortions": 8,
   "ingredients": [
     {
-      "name": "Weiße Bohnen (gekocht)",
+      "name": "Weisse Bohnen (gekocht)",
       "amount": 150,
       "unit": "g",
       "perPortions": 8
@@ -62,7 +62,7 @@
   ],
   "weatherType": "neutral",
   "source": "LittleFant – Kindersnacks für jeden Tag",
-  "description": "Fluffige Vanille-Hörnchen mit weißen Bohnen und Cashewmus – reich an Protein, Eisen und Serotonin-Vorstufen.",
+  "description": "Fluffige Vanille-Hörnchen mit weissen Bohnen und Cashewmus – reich an Protein, Eisen und Serotonin-Vorstufen.",
   "steps": [
     "Bohnen mit Apfelmark und Cashewmus fein pürieren.",
     "Sojadrink handwarm erwärmen, Hefe auflösen, Vanille und Bohnen-Mix einrühren. Mehl zugeben und zu elastischem Teig kneten. 30–45 Minuten gehen lassen.",
@@ -87,5 +87,6 @@
     "fat": 2.7,
     "carbs": 24.3,
     "fiber": 3.2
-  }
+  },
+  "dietCategory": "vegan"
 }

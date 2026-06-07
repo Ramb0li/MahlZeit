@@ -108,13 +108,24 @@ export function getWeatherTypeFromTemp(temp: number): WeatherType {
 }
 
 export const INGREDIENT_CATEGORIES: Record<string, string[]> = {
-  'Gemüse & Salat': [
+  'Obst & Gemüse': [
+    // Gemüse
     'spinat', 'blumenkohl', 'broccoli', 'lauch', 'kohlrabi', 'zucchini', 'karotten', 'karotte',
     'sellerie', 'paprika', 'tomaten', 'tomate', 'gurke', 'salat', 'rucola', 'erbsen',
     'mais', 'kürbis', 'süsskartoffel', 'kartoffel', 'avocado', 'pilz', 'champignon',
-    'frühlingszwiebeln', 'zwiebel', 'knoblauch', 'ingwer', 'birne', 'gemischtes gemüse',
+    'frühlingszwiebeln', 'zwiebel', 'knoblauch', 'ingwer', 'gemischtes gemüse',
     'gemüse', 'kirschtomaten', 'brokkoli', 'fenchel', 'pastinake', 'hokkaido',
-    'baby-spinat', 'süsskartoffel', 'süßkartoffel',
+    'baby-spinat', 'süsskartoffel', 'rotkohl', 'rotkabis', 'rosenkohl', 'mangold',
+    'randen', 'rüebli', 'peperoni', 'artischocke', 'spargel', 'zuckerschote',
+    // Obst
+    'apfel', 'äpfel', 'birne', 'banane', 'bananen', 'erdbeere', 'erdbeeren',
+    'himbeere', 'himbeeren', 'heidelbeere', 'heidelbeeren', 'blaubeere', 'blaubeeren',
+    'kirsche', 'kirschen', 'zwetschge', 'zwetschgen', 'pflaume', 'pflaumen',
+    'orange', 'orangen', 'mandarine', 'mandarinen', 'clementine', 'clementinen',
+    'trauben', 'weintrauben', 'melone', 'wassermelone', 'honigmelone',
+    'ananas', 'mango', 'mangos', 'pfirsich', 'nektarine', 'grapefruit',
+    'kiwi', 'feige', 'feigen', 'obst', 'beeren', 'aprikose', 'aprikosen',
+    'mirabelle', 'granatapfel', 'passionsfrucht', 'litschi', 'papaya',
   ],
   'Hülsenfrüchte': [
     'linsen', 'kichererbsen', 'bohnen', 'erbsen (trocken)', 'gelbe erbsen',

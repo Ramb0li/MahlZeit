@@ -3,6 +3,7 @@ import { useState, useMemo } from 'react';
 import { Search, UtensilsCrossed } from 'lucide-react';
 import { Modal } from '@/components/ui/Modal';
 import { type Recipe, type Category, type DietType, computeTimeTags } from '@/types';
+import { getEffectiveDietCategory } from '@/lib/suggestions';
 
 const CATEGORIES: Category[] = [
   'Frühstück', 'Snacks & Vorspeisen', 'Suppen, Eintöpfe & Currys',
@@ -40,10 +41,13 @@ export function RecipePickerModal({ recipes, mealType, dietPreference, onSelect,
       if (r.archived) return false;
       if (mealType === 'lunch' && !r.tags.includes('Mittagsgericht')) return false;
       if (mealType === 'breakfast' && r.category !== 'Frühstück') return false;
-      // Diet preference filter
-      if (dietPreference === 'vegan'        && !r.tags.includes('Vegan')) return false;
-      if (dietPreference === 'vegetarisch'  && !r.tags.includes('Vegetarisch') && !r.tags.includes('Vegan')) return false;
-      if (dietPreference === 'pescetarisch' && r.category === 'Fleisch & Geflügel') return false;
+      // Diet preference filter (uses getEffectiveDietCategory für Korrektheit über alle Kategorien)
+      if (dietPreference && dietPreference !== 'alle' && dietPreference !== 'fleischhaltig' && dietPreference !== 'flexitarisch') {
+        const diet = getEffectiveDietCategory(r);
+        if (dietPreference === 'pescetarisch' && diet === 'meat') return false;
+        if (dietPreference === 'vegetarisch'  && (diet === 'meat' || diet === 'fish')) return false;
+        if (dietPreference === 'vegan'        && diet !== 'vegan') return false;
+      }
       if (filterCategory !== 'Alle' && r.category !== filterCategory) return false;
       if (filterTime !== 'Alle' && !computeTimeTags(r.timeMinutes).includes(filterTime)) return false;
       if (search && !r.name.toLowerCase().includes(search.toLowerCase())) return false;

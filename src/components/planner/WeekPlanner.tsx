@@ -6,7 +6,7 @@ import { de } from 'date-fns/locale';
 import { getWeekId, getWeekDays, nextWeek, prevWeek, formatDate, getInitialDisplayWeek } from '@/lib/utils';
 import { DayColumn } from './DayColumn';
 import { ShoppingGroupsBar } from './ShoppingGroupsBar';
-import type { WeekPlan, Recipe, WeatherCache, DayConstraint, AppSettings, MealSlot, ShoppingGroups } from '@/types';
+import type { WeekPlan, Recipe, WeatherCache, DayConstraint, AppSettings, MealSlot, ShoppingGroups, SideIngredient } from '@/types';
 
 interface WeekPlannerProps {
   recipes: Recipe[];
@@ -39,6 +39,7 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe, onOp
   const [confirmSuggest, setConfirmSuggest] = useState(false);
   const [isClearing, setIsClearing] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [favoritesOnly, setFavoritesOnly] = useState(false);
 
   const weekId = getWeekId(currentDate);
   const weekDays = getWeekDays(currentDate);
@@ -87,7 +88,7 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe, onOp
       const res = await fetch('/api/weekplan/suggest', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ weekId }),
+        body: JSON.stringify({ weekId, favoritesOnly }),
       });
       const data = await res.json();
       setWeekPlan(data);
@@ -414,6 +415,42 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe, onOp
     setWeekPlan(updated);
   };
 
+  const handleSaveNote = async (dayIndex: number, note: string) => {
+    const res = await fetch('/api/weekplan', {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ weekId, day: dayIndex, mealType: 'note', note }),
+    });
+    const updated = await res.json();
+    setWeekPlan(updated);
+  };
+
+  const handleSaveSideIngredient = async (
+    dayIndex: number,
+    mealType: 'breakfast' | 'lunch' | 'dinner',
+    ingredient: SideIngredient,
+    currentSlot: MealSlot
+  ) => {
+    const updatedSlot = {
+      ...currentSlot,
+      sideIngredients: [...(currentSlot.sideIngredients ?? []), ingredient],
+    };
+    await handleUpdateSlot(dayIndex, mealType, updatedSlot);
+  };
+
+  const handleRemoveSideIngredient = async (
+    dayIndex: number,
+    mealType: 'breakfast' | 'lunch' | 'dinner',
+    idx: number,
+    currentSlot: MealSlot
+  ) => {
+    const updatedSlot = {
+      ...currentSlot,
+      sideIngredients: (currentSlot.sideIngredients ?? []).filter((_, i) => i !== idx),
+    };
+    await handleUpdateSlot(dayIndex, mealType, updatedSlot);
+  };
+
   const getWeatherForDay = (date: Date) => {
     if (!weather?.days?.length) return null;
     const dateStr = formatDate(date);
@@ -495,17 +532,31 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe, onOp
             {isClearing ? <RefreshCw size={15} style={{ animation: 'mzspin 1s linear infinite' }} /> : <Trash2 size={15} />}
           </button>
 
-          <button
-            onClick={handleSuggestWeek}
-            disabled={isSuggesting}
-            className="mz-btn-primary"
-            style={{ opacity: isSuggesting ? 0.5 : 1 }}
-          >
-            {isSuggesting
-              ? <RefreshCw size={14} style={{ animation: 'mzspin 1s linear infinite' }} />
-              : <Sparkles size={14} />}
-            <span className="mz-hide-sm">Woche vorschlagen</span>
-          </button>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 3 }}>
+            <button
+              onClick={handleSuggestWeek}
+              disabled={isSuggesting}
+              className="mz-btn-primary"
+              style={{ opacity: isSuggesting ? 0.5 : 1 }}
+            >
+              {isSuggesting
+                ? <RefreshCw size={14} style={{ animation: 'mzspin 1s linear infinite' }} />
+                : <Sparkles size={14} />}
+              <span className="mz-hide-sm">Woche vorschlagen</span>
+            </button>
+            <label
+              className="flex items-center gap-1.5 cursor-pointer select-none"
+              style={{ fontSize: 11, color: 'var(--muted)', display: 'flex', alignItems: 'center', gap: 5, cursor: 'pointer' }}
+            >
+              <input
+                type="checkbox"
+                checked={favoritesOnly}
+                onChange={e => setFavoritesOnly(e.target.checked)}
+                style={{ accentColor: 'var(--accent)', width: 12, height: 12 }}
+              />
+              Nur Favoriten
+            </label>
+          </div>
         </div>
       </div>
 
@@ -544,6 +595,9 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe, onOp
                   onToggleConstraint={handleToggleConstraint}
                   onViewRecipe={onViewRecipe}
                   onOpenMeal={onOpenMeal}
+                  onSaveNote={(note) => handleSaveNote(dayIndex, note)}
+                  onSaveSideIngredient={(mealType, ing, slot) => handleSaveSideIngredient(dayIndex, mealType, ing, slot)}
+                  onRemoveSideIngredient={(mealType, idx, slot) => handleRemoveSideIngredient(dayIndex, mealType, idx, slot)}
                 />
               );
             })}

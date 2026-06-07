@@ -1,6 +1,6 @@
 {
   "id": "ei-22",
-  "name": "Shakshuka - Pochierte Eier in Tomatensoße",
+  "name": "Shakshuka - Pochierte Eier in Tomatensosse",
   "category": "Frühstück",
   "timeMinutes": 30,
   "basePortions": 2,
@@ -31,7 +31,7 @@
       "perPortions": 2
     },
     {
-      "name": "Zwiebel, weiß",
+      "name": "Zwiebel, weiss",
       "amount": 80,
       "unit": "g",
       "perPortions": 2
@@ -87,18 +87,18 @@
   ],
   "weatherType": "neutral",
   "source": "herrbuettner.de",
-  "description": "Ein traditionelles israelisches Gericht mit pochierten Eiern in würziger Tomatensoße - schnell zubereitet und wandelbar. Perfektes Seelenfutter, das auch als Mittagessen oder Snack funktioniert.",
+  "description": "Ein traditionelles israelisches Gericht mit pochierten Eiern in würziger Tomatensosse - schnell zubereitet und wandelbar. Perfektes Seelenfutter, das auch als Mittagessen oder Snack funktioniert.",
   "steps": [
     "Die Knoblauchzehe schälen und in feine Scheiben schneiden. Die Zwiebel schälen und in feine Würfel schneiden. Die Petersilie fein hacken.",
-    "Eine Pfanne (idealerweise 20 cm Durchmesser) bei mittlerer Hitze erwärmen. Sobald sie heiß ist, das Olivenöl hineingeben.",
+    "Eine Pfanne (idealerweise 20 cm Durchmesser) bei mittlerer Hitze erwärmen. Sobald sie heiss ist, das Olivenöl hineingeben.",
     "Die Zwiebelwürfel in die Pfanne geben, mit einer Prise Salz würzen und glasig anschwitzen.",
     "Wenn die Zwiebeln weich werden, den getrockneten Oregano und die Knoblauchscheiben hinzufügen. Gut umrühren und warten, bis der Knoblauch leicht gebräunt ist.",
     "Das Tomatenmark einrühren und kurz mitbraten.",
     "Die Dosentomaten dazugeben und gut mit den anderen Zutaten vermischen. Mit einem Kartoffelstampfer die Tomaten zerdrücken.",
-    "Die Hitze etwas reduzieren und die Soße mit Salz, Pfeffer und einer Prise Zucker abschmecken.",
-    "Unter gelegentlichem Rühren etwa 15 Minuten köcheln lassen, bis die Soße leicht eingedickt ist.",
-    "Mit einem Kochlöffel zwei Vertiefungen in die Soße drücken. Die Eier aufschlagen und vorsichtig in die Vertiefungen gleiten lassen.",
-    "Das Eigelb mit etwas Salz, Pfeffer und Chiliflocken würzen. Den Deckel auf die Pfanne setzen und warten, bis das Eiweiß vollständig gestockt ist.",
+    "Die Hitze etwas reduzieren und die Sosse mit Salz, Pfeffer und einer Prise Zucker abschmecken.",
+    "Unter gelegentlichem Rühren etwa 15 Minuten köcheln lassen, bis die Sosse leicht eingedickt ist.",
+    "Mit einem Kochlöffel zwei Vertiefungen in die Sosse drücken. Die Eier aufschlagen und vorsichtig in die Vertiefungen gleiten lassen.",
+    "Das Eigelb mit etwas Salz, Pfeffer und Chiliflocken würzen. Den Deckel auf die Pfanne setzen und warten, bis das Eiweiss vollständig gestockt ist.",
     "Das fertige Shakshuka mit gehackter Petersilie garnieren und mit Brot oder Baguette servieren."
   ],
   "dietCategory": "vegetarian",

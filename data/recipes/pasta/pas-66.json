@@ -1,6 +1,6 @@
 {
   "id": "pas-66",
-  "name": "Spaghetti mit Ofen-Tomatensoße, Thymian und Parmesan",
+  "name": "Spaghetti mit Ofen-Tomatensosse, Thymian und Parmesan",
   "category": "Pasta",
   "timeMinutes": 35,
   "basePortions": 4,
@@ -26,7 +26,7 @@
       "perPortions": 4
     },
     {
-      "name": "Zwiebel, weiß",
+      "name": "Zwiebel, weiss",
       "amount": 120,
       "unit": "g",
       "perPortions": 4
@@ -82,7 +82,7 @@
   ],
   "weatherType": "neutral",
   "source": "herrbuettner.de",
-  "description": "Eine besondere Tomatensoße mit im Ofen gegarten Tomaten, die das Aroma intensiviert. Zusammen mit frischem Thymian und Parmesan ein köstliches Pastagericht mit außergewöhnlichem Geschmack.",
+  "description": "Eine besondere Tomatensosse mit im Ofen gegarten Tomaten, die das Aroma intensiviert. Zusammen mit frischem Thymian und Parmesan ein köstliches Pastagericht mit aussergewöhnlichem Geschmack.",
   "steps": [
     "Den Backofen auf 190 Grad Ober-/Unterhitze vorheizen und ein Rost in die mittlere Schiene schieben.",
     "Die Tomaten waschen, trockentupfen und halbieren. In eine Auflaufform geben.",
@@ -95,8 +95,8 @@
     "5 Minuten bevor die Tomaten fertig sind, die Spaghetti ins kochende Wasser geben.",
     "Nach 20 Minuten die Auflaufform aus dem Ofen nehmen und den Balsamico Essig einrühren.",
     "Die Knoblauchzehen herausnehmen, schälen und alles in einer Küchenmaschine mit Schneidemesser zerkleinern.",
-    "Die fertig gekochten Spaghetti abgießen, dabei etwas Nudelwasser auffangen, und sofort zurück in den Topf geben.",
-    "Die Tomatensoße, zwei Drittel des Parmesans und die Butter zu den Spaghetti geben und gut vermischen, bis die Butter geschmolzen ist.",
+    "Die fertig gekochten Spaghetti abgiessen, dabei etwas Nudelwasser auffangen, und sofort zurück in den Topf geben.",
+    "Die Tomatensosse, zwei Drittel des Parmesans und die Butter zu den Spaghetti geben und gut vermischen, bis die Butter geschmolzen ist.",
     "Auf Tellern anrichten und mit dem restlichen Parmesan und einer Prise Pfeffer garnieren."
   ],
   "dietCategory": "vegetarian",

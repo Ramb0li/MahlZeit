@@ -80,6 +80,21 @@ export async function GET(request: Request) {
       }
     };
 
+    // Manuelle Beilage-Zutaten (sideIngredients) aggregieren — Menge 1:1, kein Skalieren
+    const addSideIngredients = (slot: typeof plan.days[number]['dinner'] | undefined) => {
+      if (!slot?.sideIngredients?.length) return;
+      for (const ing of slot.sideIngredients) {
+        const key = `${ing.name.toLowerCase()}_${ing.unit}`;
+        const category = categorizeIngredient(ing.name);
+        if (aggregated[key]) {
+          aggregated[key].totalAmount += ing.amount;
+          if (!aggregated[key].recipeNames.includes('Beilage')) aggregated[key].recipeNames.push('Beilage');
+        } else {
+          aggregated[key] = { name: ing.name, totalAmount: ing.amount, unit: ing.unit, category, recipeNames: ['Beilage'], promotions: [], checked: false };
+        }
+      }
+    };
+
     for (const [dayStr, dayPlan] of Object.entries(plan.days)) {
       const dayIndex = parseInt(dayStr);
       // Tages-Filter für Mehrfach-Listen
@@ -88,14 +103,17 @@ export async function GET(request: Request) {
       if (showDinner && dayPlan.dinner) {
         addSlotIngredients(dayPlan.dinner, dayPlan.dinner.recipeId);
         addSlotIngredients(dayPlan.dinner, dayPlan.dinner.sideRecipeId, dayPlan.dinner.sidePortionOverride);
+        addSideIngredients(dayPlan.dinner);
       }
       if (showLunch && dayPlan.lunch) {
         addSlotIngredients(dayPlan.lunch, dayPlan.lunch.recipeId);
         addSlotIngredients(dayPlan.lunch, dayPlan.lunch.sideRecipeId, dayPlan.lunch.sidePortionOverride);
+        addSideIngredients(dayPlan.lunch);
       }
       if (showBreakfast && dayPlan.breakfast) {
         addSlotIngredients(dayPlan.breakfast, dayPlan.breakfast.recipeId);
         addSlotIngredients(dayPlan.breakfast, dayPlan.breakfast.sideRecipeId, dayPlan.breakfast.sidePortionOverride);
+        addSideIngredients(dayPlan.breakfast);
       }
     }
 

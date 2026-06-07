@@ -86,5 +86,6 @@
     "fiber": 3.6
   },
   "imageZutaten": null,
-  "imageKochen": null
+  "imageKochen": null,
+  "dietCategory": "meat"
 }

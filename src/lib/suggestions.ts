@@ -10,6 +10,43 @@ import { isRecipeExcluded } from './allergens';
 
 const SEASON_TAGS = new Set(['Frühling', 'Sommer', 'Herbst', 'Winter']);
 
+// ── Kohlenhydrat-Typ-Erkennung ────────────────────────────────────────────────
+
+const PASTA_WORDS   = ['nudel', 'pasta', 'spaghetti', 'tagliatelle', 'penne', 'linguine', 'gnocchi', 'farfalle', 'rigatoni', 'fusilli', 'spätzle', 'lasagne'];
+const RICE_WORDS    = ['risotto', 'orzotto', 'kernotto', ' reis', 'reis '];
+const POTATO_WORDS  = ['kartoffel', 'rösti', 'bratkartoffel'];
+
+export function getCarbType(r: Recipe): string | null {
+  const n = r.name.toLowerCase();
+  if (r.category === 'Pasta' || PASTA_WORDS.some(w => n.includes(w))) return 'pasta';
+  if (r.category === 'Reis & Getreide' || RICE_WORDS.some(w => n.includes(w))) return 'rice';
+  if (r.category === 'Kartoffelgerichte' || POTATO_WORDS.some(w => n.includes(w))) return 'potato';
+  if (n.includes('couscous')) return 'couscous';
+  if (n.includes('polenta')) return 'polenta';
+  if (n.includes('quinoa')) return 'quinoa';
+  if (n.includes('ebly')) return 'ebly';
+  return null;
+}
+
+// ── Effektive Diät-Kategorie (bevorzugt dietCategory, Fallback über Kategorie/Tags) ──
+
+/**
+ * Bestimmt die effektive Diät-Kategorie eines Rezepts.
+ * Nutzt das explizite `dietCategory`-Feld wenn gesetzt, sonst Fallback über
+ * Kategorie (Fleisch & Geflügel → meat, Fisch & Meeresfrüchte → fish) und Tags.
+ * Fallback bei unbekannten Rezepten: 'vegetarian' (konservativ, nie Fleisch anzeigen).
+ */
+export function getEffectiveDietCategory(r: Recipe): 'meat' | 'fish' | 'vegetarian' | 'vegan' {
+  if (r.dietCategory) return r.dietCategory;
+  if (r.category === 'Fleisch & Geflügel') return 'meat';
+  if (r.category === 'Fisch & Meeresfrüchte') return 'fish';
+  if (r.tags.includes('Vegan')) return 'vegan';
+  if (r.tags.includes('Vegetarisch')) return 'vegetarian';
+  return 'vegetarian';
+}
+
+// ── Scoring ───────────────────────────────────────────────────────────────────
+
 export interface SuggestionOptions {
   weatherType?: WeatherType;
   season?: string;
@@ -19,6 +56,8 @@ export interface SuggestionOptions {
   lunchOnly?: boolean;
   usedThisWeek?: string[];
   allergiesAndAversions?: string[];
+  carbCounts?: Record<string, number>;   // NEU: verhindert KH-Monotonie
+  pantryIngredients?: string[];          // NEU: Vorrat-Bonus
 }
 
 function recipeScore(
@@ -51,6 +90,19 @@ function recipeScore(
   }
 
   if (options.usedThisWeek?.includes(recipe.id)) score -= 30;
+
+  // Kohlenhydrat-Abwechslung: -40 wenn derselbe KH-Typ bereits 2x in der Woche
+  const ct = getCarbType(recipe);
+  if (ct && (options.carbCounts?.[ct] ?? 0) >= 2) score -= 40;
+
+  // Vorrat-Bonus: +15 wenn Rezept eine "Reste verwerten"-Zutat enthält
+  if (options.pantryIngredients?.length) {
+    const ingNames = recipe.ingredients.map(i => i.name.toLowerCase());
+    const hit = options.pantryIngredients.some(pi =>
+      ingNames.some(n => n.includes(pi.toLowerCase()) || pi.toLowerCase().includes(n))
+    );
+    if (hit) score += 15;
+  }
 
   score += Math.random() * 5;
 
@@ -95,21 +147,24 @@ export function suggestRecipe(
   return pick?.recipe ?? null;
 }
 
+// ── Wochen-Vorschlag ──────────────────────────────────────────────────────────
+
 export interface SuggestWeekOptions {
   showBreakfast?: boolean;
   showLunch?: boolean;
   showDinner?: boolean;
   allergiesAndAversions?: string[];
-  flexitarisch?: boolean;  // max 1 Fleischgericht pro Wochenplan
-  favorites?: string[];    // recipe IDs — wenn ≥3, mind. 1 Dinner/Woche aus Favoriten
+  flexitarisch?: boolean;       // max 1 Fleischgericht pro Wochenplan
+  favorites?: string[];         // recipe IDs — wenn ≥3, mind. 1 Dinner/Woche aus Favoriten
+  favoritesOnly?: boolean;      // NEU: gesamter Pool auf Favoriten einschränken
+  pantryIngredients?: string[]; // NEU: für Vorrat-Bonus in der Wochen-Suggestion
 }
 
 const BREAKFAST_CATS  = new Set<Category>(['Frühstück']);
 const EXCLUDED_CATS   = new Set<Category>(['Snacks & Vorspeisen', 'Desserts & Süsses']);
 
 function isMeatRecipe(r: Recipe): boolean {
-  return r.category === 'Fleisch & Geflügel' ||
-    (!r.tags.includes('Vegetarisch') && !r.tags.includes('Vegan') && r.category !== 'Fisch & Meeresfrüchte');
+  return getEffectiveDietCategory(r) === 'meat';
 }
 
 /** Ein vorgeschlagener Slot: Rezept-ID oder Reste-Markierung (recipeId null + isLeftovers). */
@@ -125,23 +180,32 @@ export function suggestWeek(
   season: string,
   opts: SuggestWeekOptions = {}
 ): Record<number, { breakfast?: SuggestedSlot; lunch?: SuggestedSlot; dinner?: SuggestedSlot }> {
-  const { showBreakfast = false, showLunch = false, showDinner = true, allergiesAndAversions, flexitarisch = false, favorites = [] } = opts;
+  const { showBreakfast = false, showLunch = false, showDinner = true, allergiesAndAversions, flexitarisch = false, favorites = [], favoritesOnly = false, pantryIngredients } = opts;
   const result: Record<number, { breakfast?: SuggestedSlot; lunch?: SuggestedSlot; dinner?: SuggestedSlot }> = {};
   const usedIds: string[] = [];
   let meatMealsThisWeek = 0;
+  const carbCounts: Record<string, number> = {};
 
   // Breakfast: only Frühstück category
-  const breakfastRecipes = recipes.filter(r => BREAKFAST_CATS.has(r.category));
+  let breakfastRecipes = recipes.filter(r => BREAKFAST_CATS.has(r.category));
   // Lunch: tagged 'Mittagsgericht', not breakfast
-  const lunchRecipes = recipes.filter(
+  let lunchRecipes = recipes.filter(
     r => r.tags.includes('Mittagsgericht') && !BREAKFAST_CATS.has(r.category)
   );
   // Dinner: not breakfast, not snacks/desserts; exclude lunch-only (Mittagsgericht without Abendgericht)
-  const dinnerRecipes = recipes.filter(
+  let dinnerRecipes = recipes.filter(
     r => !BREAKFAST_CATS.has(r.category) &&
          !EXCLUDED_CATS.has(r.category) &&
          (!r.tags.includes('Mittagsgericht') || r.tags.includes('Abendgericht'))
   );
+
+  // favoritesOnly: gesamten Pool auf Favoriten einschränken
+  const favSet = new Set(favorites);
+  if (favoritesOnly && favSet.size > 0) {
+    breakfastRecipes = breakfastRecipes.filter(r => favSet.has(r.id));
+    lunchRecipes     = lunchRecipes.filter(r => favSet.has(r.id));
+    dinnerRecipes    = dinnerRecipes.filter(r => favSet.has(r.id));
+  }
 
   // Mealprep → "Reste essen" auf den Folgetagen reservieren.
   // Bevorzugtes Reste-Meal: Mittag (wenn angezeigt), sonst Abendessen.
@@ -162,7 +226,6 @@ export function suggestWeek(
 
   // Favoriten-Tag: wenn ≥3 definiert, einen zufälligen Dinner-Tag reservieren.
   // Leftovers-/Reste-Dinner-Tage ausschliessen, damit die Garantie erfüllbar bleibt.
-  const favSet = new Set(favorites);
   const favDinnerPool = dinnerRecipes.filter(r => favSet.has(r.id));
   const eligibleDays  = [1, 2, 3, 4, 5, 6, 7].filter(d =>
     !constraints.some(c => c.dayOfWeek === d && c.mealType === 'dinner' && c.constraint === 'leftovers') &&
@@ -195,12 +258,16 @@ export function suggestWeek(
         const favFiltered = isFavDay ? favDinnerPool.filter(r => basePool.some(b => b.id === r.id)) : [];
         const dinnerPool = favFiltered.length > 0 ? favFiltered : basePool;
         const dinner = suggestRecipe(dinnerPool, {
-          weatherType, season, constraint: dinnerConstraint, usedThisWeek: usedIds, allergiesAndAversions,
+          weatherType, season, constraint: dinnerConstraint, usedThisWeek: usedIds,
+          allergiesAndAversions, carbCounts, pantryIngredients,
         });
         if (dinner) {
           result[day].dinner = { recipeId: dinner.id };
           usedIds.push(dinner.id);
           if (isMeatRecipe(dinner)) meatMealsThisWeek++;
+          // KH-Tracking für Abwechslungs-Scoring
+          const ct = getCarbType(dinner);
+          if (ct) carbCounts[ct] = (carbCounts[ct] ?? 0) + 1;
         }
       }
     }
@@ -214,11 +281,14 @@ export function suggestWeek(
         if (result[src]?.dinner?.recipeId) result[day].lunch = { recipeId: null, isLeftovers: true };
       } else {
         const lunch = suggestRecipe(lunchRecipes, {
-          weatherType, season, constraint: lunchConstraint, usedThisWeek: usedIds, lunchOnly: true, allergiesAndAversions,
+          weatherType, season, constraint: lunchConstraint, usedThisWeek: usedIds,
+          lunchOnly: true, allergiesAndAversions, carbCounts, pantryIngredients,
         });
         if (lunch) {
           result[day].lunch = { recipeId: lunch.id };
           usedIds.push(lunch.id);
+          const ct = getCarbType(lunch);
+          if (ct) carbCounts[ct] = (carbCounts[ct] ?? 0) + 1;
         }
       }
     }

@@ -1,7 +1,22 @@
 'use client';
-import { useState, useEffect, useRef } from 'react';
-import { Package, Plus, Trash2 } from 'lucide-react';
+import { useState, useEffect, useRef, useMemo } from 'react';
+import { Package, Plus, Trash2, Search, ChevronDown, ChevronUp } from 'lucide-react';
+import { categorizeIngredient } from '@/lib/utils';
 import type { PantryItem, Recipe } from '@/types';
+
+const PANTRY_CAT_ORDER = [
+  'Obst & Gemüse',
+  'Hülsenfrüchte',
+  'Getreide & Stärke',
+  'Milchprodukte & Eier',
+  'Haltbare Produkte',
+  'Tofu & Veganes',
+  'Fisch & Meeresfrüchte',
+  'Fleisch & Geflügel',
+  'Gewürze & Kräuter',
+  'Nüsse & Samen',
+  'Sonstiges',
+];
 
 export function PantryView() {
   const [items, setItems]               = useState<PantryItem[]>([]);
@@ -10,7 +25,38 @@ export function PantryView() {
   const [allIngredients, setAllIngredients] = useState<string[]>([]);
   const [suggestions, setSuggestions]   = useState<string[]>([]);
   const [showSug, setShowSug]           = useState(false);
+  const [matchingRecipes, setMatchingRecipes] = useState<(Recipe & { matchCount: number })[] | null>(null);
+  const [loadingRecipes, setLoadingRecipes] = useState(false);
+  const [showResults, setShowResults]   = useState(true);
+  const [collapsedCats, setCollapsedCats] = useState<Set<string>>(new Set());
   const inputRef = useRef<HTMLInputElement>(null);
+
+  const groupedItems = useMemo(() => {
+    const map = new Map<string, PantryItem[]>();
+    for (const item of items) {
+      const cat = categorizeIngredient(item.name);
+      if (!map.has(cat)) map.set(cat, []);
+      map.get(cat)!.push(item);
+    }
+    // Sort categories by PANTRY_CAT_ORDER
+    const sorted = new Map<string, PantryItem[]>();
+    for (const cat of PANTRY_CAT_ORDER) {
+      if (map.has(cat)) sorted.set(cat, map.get(cat)!);
+    }
+    // Remaining categories not in the order list
+    map.forEach((catItems, cat) => {
+      if (!sorted.has(cat)) sorted.set(cat, catItems);
+    });
+    return sorted;
+  }, [items]);
+
+  const toggleCat = (cat: string) => {
+    setCollapsedCats(prev => {
+      const next = new Set(prev);
+      if (next.has(cat)) next.delete(cat); else next.add(cat);
+      return next;
+    });
+  };
 
   useEffect(() => {
     loadItems();
@@ -54,7 +100,6 @@ export function PantryView() {
   const addItem = async () => {
     if (!inputVal.trim()) return;
     const name = inputVal.trim();
-    // Optimistic insert
     const tempId = `tmp-${Date.now()}`;
     const tempItem: PantryItem = { id: tempId, name, addedAt: new Date().toISOString() };
     setItems((prev) => [...prev, tempItem]);
@@ -76,12 +121,51 @@ export function PantryView() {
   };
 
   const removeItem = async (id: string) => {
-    setItems((prev) => prev.filter((i) => i.id !== id)); // optimistic
+    setItems((prev) => prev.filter((i) => i.id !== id));
     await fetch('/api/pantry', {
       method: 'DELETE',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ id }),
     });
+  };
+
+  const handleToggleWantToUse = async (id: string, val: boolean) => {
+    setItems((prev) => prev.map((i) => i.id === id ? { ...i, wantToUse: val } : i));
+    setMatchingRecipes(null); // Reset results wenn Auswahl ändert
+    await fetch('/api/pantry', {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id, wantToUse: val }),
+    });
+  };
+
+  const handleFindRecipes = async () => {
+    const checkedNames = items.filter(i => i.wantToUse).map(i => i.name.toLowerCase());
+    if (!checkedNames.length) return;
+
+    setLoadingRecipes(true);
+    setShowResults(true);
+    try {
+      const res = await fetch('/api/recipes');
+      if (!res.ok) return;
+      const allRecipes: Recipe[] = await res.json();
+
+      const withCount = allRecipes
+        .filter(r => !r.archived)
+        .map(r => {
+          const ingNames = r.ingredients.map(i => i.name.toLowerCase());
+          const matchCount = checkedNames.filter(pi =>
+            ingNames.some(n => n.includes(pi) || pi.includes(n))
+          ).length;
+          return { ...r, matchCount };
+        })
+        .filter(r => r.matchCount > 0)
+        .sort((a, b) => b.matchCount - a.matchCount);
+
+      setMatchingRecipes(withCount);
+    } finally {
+      setLoadingRecipes(false);
+    }
   };
 
   const pickSuggestion = (name: string) => {
@@ -90,10 +174,18 @@ export function PantryView() {
     inputRef.current?.focus();
   };
 
+  const wantToUseCount = items.filter(i => i.wantToUse).length;
+
+  const cardStyle = {
+    backgroundColor: 'var(--card)',
+    border: '1px solid var(--border)',
+    borderRadius: '16px',
+  } as const;
+
   const inputStyle = {
-    border: '1px solid #e0d8ce',
-    backgroundColor: '#f7f4ee',
-    color: '#2c2420',
+    border: '1px solid var(--border)',
+    backgroundColor: 'var(--bg-2)',
+    color: 'var(--ink)',
     borderRadius: '10px',
     padding: '7px 10px',
     fontSize: '13px',
@@ -107,16 +199,15 @@ export function PantryView() {
       <div className="mz-view-head">
         <div>
           <h1 className="mz-view-title">Chuchichäschtli</h1>
-          <p className="mz-view-sub">Lebensmittel, die du zuhause hast — werden auf der Einkaufsliste markiert</p>
+          <p className="mz-view-sub">Lebensmittel zuhause erfassen — werden auf der Einkaufsliste markiert</p>
         </div>
       </div>
 
       {/* Eingabe */}
-      <div className="rounded-2xl overflow-visible" style={{ backgroundColor: '#fff9f3', border: '1px solid #e0d8ce' }}>
+      <div className="rounded-2xl overflow-visible" style={cardStyle}>
         <div className="p-4 space-y-3">
-          <p className="text-sm font-semibold" style={{ color: '#2c2420' }}>Lebensmittel erfassen</p>
+          <p className="text-sm font-semibold" style={{ color: 'var(--ink)' }}>Lebensmittel erfassen</p>
 
-          {/* Textfeld mit Autocomplete */}
           <div className="relative">
             <input
               ref={inputRef}
@@ -135,15 +226,15 @@ export function PantryView() {
             {showSug && (
               <div
                 className="absolute z-20 w-full mt-1 rounded-xl overflow-hidden shadow-lg"
-                style={{ border: '1px solid #e0d8ce', backgroundColor: '#fff' }}
+                style={{ border: '1px solid var(--border)', backgroundColor: 'var(--card)' }}
               >
                 {suggestions.map((s) => (
                   <button
                     key={s}
                     onMouseDown={() => pickSuggestion(s)}
                     className="w-full text-left px-3 py-2 text-sm"
-                    style={{ color: '#2c2420' }}
-                    onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.backgroundColor = '#f7f4ee')}
+                    style={{ color: 'var(--ink)' }}
+                    onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.backgroundColor = 'var(--bg-2)')}
                     onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.backgroundColor = 'transparent')}
                   >
                     {s}
@@ -158,7 +249,7 @@ export function PantryView() {
               onClick={addItem}
               disabled={!inputVal.trim()}
               className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold text-white transition-opacity hover:opacity-80 disabled:opacity-40"
-              style={{ backgroundColor: '#4a7a4e', flexShrink: 0 }}
+              style={{ backgroundColor: 'var(--accent)', flexShrink: 0 }}
             >
               <Plus size={15} />
               Hinzufügen
@@ -172,7 +263,7 @@ export function PantryView() {
         <div className="flex items-center justify-center py-12">
           <div
             className="animate-spin"
-            style={{ width: 24, height: 24, border: '2px solid #d0c8be', borderTopColor: 'transparent', borderRadius: '50%' }}
+            style={{ width: 24, height: 24, border: '2px solid var(--border)', borderTopColor: 'transparent', borderRadius: '50%' }}
           />
         </div>
       )}
@@ -180,52 +271,175 @@ export function PantryView() {
       {/* Leer */}
       {!loading && items.length === 0 && (
         <div className="text-center py-12">
-          <Package size={32} style={{ color: '#d0c8be', margin: '0 auto 12px' }} />
-          <p className="text-sm" style={{ color: '#9c8c84' }}>
+          <Package size={32} style={{ color: 'var(--border)', margin: '0 auto 12px' }} />
+          <p className="text-sm" style={{ color: 'var(--muted)' }}>
             Noch nichts erfasst. Füge Lebensmittel hinzu, die du zuhause hast.
           </p>
         </div>
       )}
 
-      {/* Liste */}
+      {/* Liste — nach Kategorie gruppiert */}
       {!loading && items.length > 0 && (
-        <div className="rounded-2xl overflow-hidden" style={{ border: '1px solid #e0d8ce' }}>
-          <div className="px-4 py-3 border-b" style={{ borderColor: '#f0ebe3', backgroundColor: '#fff9f3' }}>
-            <p className="text-xs font-semibold uppercase tracking-wider" style={{ color: '#9c8c84' }}>
+        <div className="space-y-2">
+          {/* Gesamt-Info */}
+          <div className="px-1">
+            <p className="text-xs" style={{ color: 'var(--muted)' }}>
               {items.length} {items.length === 1 ? 'Eintrag' : 'Einträge'}
+              {wantToUseCount > 0 && (
+                <span style={{ color: 'var(--accent)', marginLeft: 6 }}>
+                  · {wantToUseCount} zum Verwerten markiert
+                </span>
+              )}
             </p>
           </div>
-          <div>
-            {items.map((item, idx) => (
-              <div
-                key={item.id}
-                className="flex items-center gap-3 px-4 py-3 transition-colors"
-                style={{ borderBottom: idx < items.length - 1 ? '1px solid #f0ebe3' : undefined }}
-                onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.backgroundColor = '#f7f4ee')}
-                onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.backgroundColor = 'transparent')}
-              >
-                <span className="flex-1 text-sm font-medium truncate" style={{ color: '#2c2420' }}>
-                  {item.name}
-                </span>
+
+          {Array.from(groupedItems.entries()).map(([cat, catItems]) => {
+            const collapsed = collapsedCats.has(cat);
+            const catWantToUse = catItems.filter(i => i.wantToUse).length;
+            return (
+              <div key={cat} className="rounded-2xl overflow-hidden" style={{ border: '1px solid var(--border)' }}>
+                {/* Kategorie-Header */}
                 <button
-                  onClick={() => removeItem(item.id)}
-                  className="flex-shrink-0 p-1.5 rounded-lg transition-all"
-                  style={{ color: '#d0c8be', opacity: 0.5 }}
-                  onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLElement).style.opacity    = '1';
-                    (e.currentTarget as HTMLElement).style.color      = '#c62828';
-                    (e.currentTarget as HTMLElement).style.backgroundColor = '#fce4ec';
-                  }}
-                  onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLElement).style.opacity    = '0.5';
-                    (e.currentTarget as HTMLElement).style.color      = '#d0c8be';
-                    (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent';
-                  }}
+                  onClick={() => toggleCat(cat)}
+                  className="w-full flex items-center justify-between px-4 py-2.5"
+                  style={{ backgroundColor: 'var(--bg-2)', borderBottom: collapsed ? 'none' : '1px solid var(--border)', cursor: 'pointer' }}
                 >
-                  <Trash2 size={14} />
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: 'var(--muted)' }}>
+                      {cat}
+                    </span>
+                    <span
+                      className="text-xs font-semibold px-1.5 py-0.5 rounded-full"
+                      style={{ backgroundColor: 'var(--border)', color: 'var(--muted)', fontSize: 10 }}
+                    >
+                      {catItems.length}
+                    </span>
+                    {catWantToUse > 0 && (
+                      <span
+                        className="text-xs font-semibold px-1.5 py-0.5 rounded-full"
+                        style={{ backgroundColor: 'var(--accent-tint)', color: 'var(--accent)', fontSize: 10 }}
+                      >
+                        {catWantToUse} verwerten
+                      </span>
+                    )}
+                  </div>
+                  {collapsed ? <ChevronDown size={14} style={{ color: 'var(--muted)' }} /> : <ChevronUp size={14} style={{ color: 'var(--muted)' }} />}
                 </button>
+
+                {/* Einträge */}
+                {!collapsed && (
+                  <div style={{ backgroundColor: 'var(--card)' }}>
+                    {catItems.map((item, idx) => (
+                      <div
+                        key={item.id}
+                        className="flex items-center gap-3 px-4 py-3 transition-colors"
+                        style={{ borderBottom: idx < catItems.length - 1 ? '1px solid var(--border)' : undefined }}
+                        onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.backgroundColor = 'var(--bg-2)')}
+                        onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.backgroundColor = 'transparent')}
+                      >
+                        {/* Verwerten-Checkbox */}
+                        <label
+                          className="flex items-center gap-1.5 cursor-pointer flex-shrink-0"
+                          title="Zutaten verwerten — beeinflusst den Menüvorschlag"
+                        >
+                          <input
+                            type="checkbox"
+                            checked={!!item.wantToUse}
+                            onChange={(e) => handleToggleWantToUse(item.id, e.target.checked)}
+                            style={{ accentColor: 'var(--accent)', width: 14, height: 14, cursor: 'pointer' }}
+                          />
+                          <span className="text-xs" style={{ color: 'var(--muted)' }}>Verwerten</span>
+                        </label>
+
+                        <span className="flex-1 text-sm font-medium truncate" style={{ color: 'var(--ink)' }}>
+                          {item.name}
+                        </span>
+                        <button
+                          onClick={() => removeItem(item.id)}
+                          className="flex-shrink-0 p-1.5 rounded-lg transition-all"
+                          style={{ color: 'var(--muted)', opacity: 0.5 }}
+                          onMouseEnter={(e) => {
+                            (e.currentTarget as HTMLElement).style.opacity    = '1';
+                            (e.currentTarget as HTMLElement).style.color      = '#c62828';
+                            (e.currentTarget as HTMLElement).style.backgroundColor = '#fce4ec';
+                          }}
+                          onMouseLeave={(e) => {
+                            (e.currentTarget as HTMLElement).style.opacity    = '0.5';
+                            (e.currentTarget as HTMLElement).style.color      = 'var(--muted)';
+                            (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent';
+                          }}
+                        >
+                          <Trash2 size={14} />
+                        </button>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
-            ))}
+            );
+          })}
+        </div>
+      )}
+
+      {/* Rezepte aus Vorrat */}
+      {wantToUseCount > 0 && (
+        <div className="rounded-2xl overflow-hidden" style={cardStyle}>
+          <div className="p-4 space-y-3">
+            <div className="flex items-center justify-between gap-3">
+              <div>
+                <p className="text-sm font-semibold" style={{ color: 'var(--ink)' }}>Rezepte aus Vorrat</p>
+                <p className="text-xs mt-0.5" style={{ color: 'var(--muted)' }}>
+                  {wantToUseCount} {wantToUseCount === 1 ? 'Zutat' : 'Zutaten'} zum Verwerten — passende Rezepte finden
+                </p>
+              </div>
+              <button
+                onClick={handleFindRecipes}
+                disabled={loadingRecipes}
+                className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold text-white flex-shrink-0 transition-opacity hover:opacity-80 disabled:opacity-50"
+                style={{ backgroundColor: 'var(--accent)' }}
+              >
+                <Search size={14} />
+                {loadingRecipes ? 'Suche…' : 'Passende Rezepte'}
+              </button>
+            </div>
+
+            {matchingRecipes !== null && (
+              <div>
+                <button
+                  onClick={() => setShowResults(v => !v)}
+                  className="flex items-center gap-1.5 text-xs font-semibold mb-2"
+                  style={{ color: 'var(--accent)' }}
+                >
+                  {showResults ? <ChevronUp size={13} /> : <ChevronDown size={13} />}
+                  {matchingRecipes.length === 0
+                    ? 'Keine passenden Rezepte gefunden'
+                    : `${matchingRecipes.length} Rezept${matchingRecipes.length !== 1 ? 'e' : ''} gefunden`}
+                </button>
+
+                {showResults && matchingRecipes.length > 0 && (
+                  <div className="rounded-xl overflow-hidden" style={{ border: '1px solid var(--border)' }}>
+                    {matchingRecipes.slice(0, 12).map((r, idx) => (
+                      <div
+                        key={r.id}
+                        className="flex items-center gap-3 px-3 py-2.5"
+                        style={{ borderBottom: idx < Math.min(matchingRecipes.length, 12) - 1 ? '1px solid var(--border)' : undefined, backgroundColor: 'var(--card)' }}
+                      >
+                        <div className="flex-1 min-w-0">
+                          <p className="text-sm font-medium truncate" style={{ color: 'var(--ink)' }}>{r.name}</p>
+                          <p className="text-xs" style={{ color: 'var(--muted)' }}>{r.category}</p>
+                        </div>
+                        <span
+                          className="flex-shrink-0 text-xs font-semibold px-2 py-0.5 rounded-full"
+                          style={{ backgroundColor: 'var(--accent-tint)', color: 'var(--accent)' }}
+                        >
+                          {r.matchCount} {r.matchCount === 1 ? 'Zutat' : 'Zutaten'}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
           </div>
         </div>
       )}

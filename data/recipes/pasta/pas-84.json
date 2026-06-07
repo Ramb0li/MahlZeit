@@ -1,6 +1,6 @@
 {
   "id": "pas-84",
-  "name": "Pasta gratiniert in cremiger Käse-Sahne-Soße mit Thymian",
+  "name": "Pasta gratiniert in cremiger Käse-Sahne-Sosse mit Thymian",
   "category": "Pasta",
   "timeMinutes": 25,
   "basePortions": 4,
@@ -20,7 +20,7 @@
       "perPortions": 4
     },
     {
-      "name": "Zwiebeln, weiß",
+      "name": "Zwiebeln, weiss",
       "amount": 2,
       "unit": "Stk",
       "perPortions": 4
@@ -44,7 +44,7 @@
       "perPortions": 4
     },
     {
-      "name": "Weißwein",
+      "name": "Weisswein",
       "amount": 50,
       "unit": "ml",
       "perPortions": 4
@@ -106,18 +106,18 @@
   ],
   "weatherType": "kalt",
   "source": "herrbuettner.de",
-  "description": "Cremige Pasta-Träume werden wahr! Korkenzieher-Nudeln in einer würzigen Käse-Sahne-Soße mit Thymian, gratiniert mit knusprigem Parmesan – cheesy, creamy und crispy zugleich.",
+  "description": "Cremige Pasta-Träume werden wahr! Korkenzieher-Nudeln in einer würzigen Käse-Sahne-Sosse mit Thymian, gratiniert mit knusprigem Parmesan – cheesy, creamy und crispy zugleich.",
   "steps": [
     "Den Backofen auf 180 Grad Ober-/Unterhitze vorheizen und ein Blech auf die oberste Schiene schieben.",
-    "Einen großen Topf mit reichlich Wasser für die Nudeln aufsetzen. Sobald es kocht, kräftig salzen und die Pasta hineingeben.",
+    "Einen grossen Topf mit reichlich Wasser für die Nudeln aufsetzen. Sobald es kocht, kräftig salzen und die Pasta hineingeben.",
     "Zwiebeln und Knoblauch schälen und fein würfeln. Die Thymianblätter von den Stängeln zupfen.",
     "Eine Pfanne bei mittlerer Hitze erwärmen, 1 EL Olivenöl hineingeben und die Zwiebeln darin glasig dünsten.",
     "Knoblauch und Thymian zu den Zwiebeln geben, gut umrühren und etwa 2 Minuten anschwitzen lassen.",
-    "Die Pfanne mit Weißwein ablöschen und köcheln lassen, bis der Wein fast vollständig verkocht ist.",
+    "Die Pfanne mit Weisswein ablöschen und köcheln lassen, bis der Wein fast vollständig verkocht ist.",
     "Die Butter in die Pfanne geben, schmelzen lassen und gut verteilen. Das Mehl einstreuen und mit den anderen Zutaten verrühren, bis eine Mehlschwitze entsteht.",
-    "Mit Geflügelfond und Sahne aufgießen, den Schmelzkäse unterrühren bis er geschmolzen ist. Mit Salz, Pfeffer und frisch geriebener Muskatnuss würzen.",
+    "Mit Geflügelfond und Sahne aufgiessen, den Schmelzkäse unterrühren bis er geschmolzen ist. Mit Salz, Pfeffer und frisch geriebener Muskatnuss würzen.",
     "Die Hitze reduzieren und die Sauce leicht köcheln lassen, bis sie beginnt einzudicken.",
-    "Die Nudeln kurz vor dem al-dente-Punkt abgießen und zur Sauce in die Pfanne geben. Gut vermengen und 1 Minute ruhen lassen.",
+    "Die Nudeln kurz vor dem al-dente-Punkt abgiessen und zur Sauce in die Pfanne geben. Gut vermengen und 1 Minute ruhen lassen.",
     "Geriebenen Parmesan über die Pasta streuen und die Pfanne für 8-10 Minuten in den vorgeheizten Backofen geben, bis der Käse gratiniert und die oberste Schicht leicht gebräunt ist.",
     "Die gratinierte Pasta aus dem Ofen nehmen, nach Belieben mit Thymianblättern garnieren und servieren."
   ],

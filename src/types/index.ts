@@ -108,6 +108,13 @@ export interface Recipe {
   nutrition?: Nutrition;      // KI-geschätzte Nährwerte pro Portion
 }
 
+/** Einfache Beilage-Zutat (ohne Rezept), direkt im Tagesplan gespeichert. */
+export interface SideIngredient {
+  name: string;
+  amount: number;
+  unit: string;
+}
+
 export interface MealSlot {
   recipeId: string | null;
   customName?: string;
@@ -117,6 +124,7 @@ export interface MealSlot {
   sideRecipeId?: string | null;    // Beilage / Dessert / zweites Gericht
   sideIsLeftovers?: boolean;
   sidePortionOverride?: number;   // Portionen-Override nur für Beilage (z.B. Gäste)
+  sideIngredients?: SideIngredient[]; // Manuelle Beilage-Zutaten (z.B. Broccoli 1 Stk.)
 }
 
 export interface DayPlan {
@@ -124,6 +132,7 @@ export interface DayPlan {
   lunch?: MealSlot;
   dinner: MealSlot;
   showLunch: boolean; // kept for backwards-compat; display is now driven by AppSettings.defaultView
+  note?: string;      // Tagesnotiz / Hinweis
 }
 
 export interface WeekPlan {
@@ -237,6 +246,7 @@ export interface PantryItem {
   id: string;
   name: string;
   addedAt: string;
+  wantToUse?: boolean;
 }
 
 export interface PortionInfo {
