@@ -211,15 +211,18 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/up
       finalGroups      = undefined;
     }
 
+    // Strip temporary blob: preview URLs — if still present, the upload didn't finish
+    const sanitizeImg = (v: string) => (v && !v.startsWith('blob:') ? v : null);
+
     const r: Recipe = {
       id:           recipe?.id ?? generateId(),
       name, category, timeMinutes,
       tags,
       ingredients:  finalIngredients,
       weatherType,  source, basePortions, description,
-      imageUrl:     imageUrl     || null,
-      imageZutaten: imageZutaten || null,
-      imageKochen:  imageKochen  || null,
+      imageUrl:     sanitizeImg(imageUrl),
+      imageZutaten: sanitizeImg(imageZutaten),
+      imageKochen:  sanitizeImg(imageKochen),
       steps:        stepsText.split('\n').map(s => s.trim()).filter(Boolean).length
                       ? stepsText.split('\n').map(s => s.trim()).filter(Boolean)
                       : undefined,
@@ -633,10 +636,12 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/up
         </button>
         <button
           type="submit"
-          className="px-5 py-2 text-sm font-semibold text-white rounded-xl transition-opacity hover:opacity-80"
+          disabled={!!uploadingField}
+          className="px-5 py-2 text-sm font-semibold text-white rounded-xl transition-opacity hover:opacity-80 disabled:opacity-50 disabled:cursor-not-allowed"
           style={{ backgroundColor: '#b5614a' }}
+          title={uploadingField ? 'Bild wird noch hochgeladen…' : undefined}
         >
-          Speichern
+          {uploadingField ? 'Hochladen…' : 'Speichern'}
         </button>
       </div>
     </form>
