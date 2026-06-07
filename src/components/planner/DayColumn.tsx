@@ -23,11 +23,12 @@ interface DayColumnProps {
   onUpdate: (dayIndex: number, mealType: 'breakfast' | 'lunch' | 'dinner' | 'showLunch', slot: unknown) => void;
   onToggleConstraint: (constraintId: string) => void;
   onViewRecipe?: (recipe: Recipe) => void;
+  onOpenMeal?: (ctx: { recipe: Recipe; weekId: string; dayIndex: number; mealType: 'breakfast' | 'lunch' | 'dinner'; slot: MealSlot }) => void;
 }
 
 export function DayColumn({
   date, dayIndex, dayPlan, recipes, constraints, disabledConstraintIds,
-  weather, settings, weekId, onUpdate, onToggleConstraint, onViewRecipe,
+  weather, settings, weekId, onUpdate, onToggleConstraint, onViewRecipe, onOpenMeal,
 }: DayColumnProps) {
   const [pickerOpen, setPickerOpen]         = useState<'breakfast' | 'lunch' | 'dinner' | null>(null);
   const [pickerOpenSide, setPickerOpenSide] = useState<'breakfast' | 'lunch' | 'dinner' | null>(null);
@@ -177,6 +178,7 @@ export function DayColumn({
             onClearSide={() => handleClearSide('breakfast')}
             onSidePortionChange={(p) => handleSidePortionChange('breakfast', p)}
             onViewRecipe={onViewRecipe}
+            onOpenMeal={breakfastRecipe && breakfastSlot ? () => onOpenMeal?.({ recipe: breakfastRecipe, weekId, dayIndex, mealType: 'breakfast', slot: breakfastSlot }) : undefined}
           />
         )}
 
@@ -198,6 +200,7 @@ export function DayColumn({
             onClearSide={() => handleClearSide('lunch')}
             onSidePortionChange={(p) => handleSidePortionChange('lunch', p)}
             onViewRecipe={onViewRecipe}
+            onOpenMeal={lunchRecipe && lunchSlot ? () => onOpenMeal?.({ recipe: lunchRecipe, weekId, dayIndex, mealType: 'lunch', slot: lunchSlot }) : undefined}
           />
         )}
 
@@ -219,6 +222,7 @@ export function DayColumn({
             onClearSide={() => handleClearSide('dinner')}
             onSidePortionChange={(p) => handleSidePortionChange('dinner', p)}
             onViewRecipe={onViewRecipe}
+            onOpenMeal={dinnerRecipe && dinnerSlot ? () => onOpenMeal?.({ recipe: dinnerRecipe, weekId, dayIndex, mealType: 'dinner', slot: dinnerSlot }) : undefined}
           />
         )}
       </div>
@@ -265,12 +269,13 @@ interface MealSlotCardProps {
   onClearSide: () => void;
   onSidePortionChange: (portions: number) => void;
   onViewRecipe?: (recipe: Recipe) => void;
+  onOpenMeal?: () => void;
 }
 
 function MealSlotCard({
   label, recipe, isLeftovers, sideRecipe, sideIsLeftovers,
   suggesting, defaultPortions, sidePortionOverride,
-  onPick, onSuggest, onClear, onPickSide, onClearSide, onSidePortionChange, mealType, onViewRecipe,
+  onPick, onSuggest, onClear, onPickSide, onClearSide, onSidePortionChange, mealType, onViewRecipe, onOpenMeal,
 }: MealSlotCardProps) {
   const hasSide = !!(sideRecipe || sideIsLeftovers);
   const sideName = sideIsLeftovers ? 'Reste essen' : sideRecipe?.name ?? '';
@@ -316,8 +321,8 @@ function MealSlotCard({
           <div className="mz-magslot-info">
             <p
               className="mz-magslot-name mz-clamp2"
-              onClick={() => onViewRecipe?.(recipe)}
-              style={{ cursor: onViewRecipe ? 'pointer' : 'default' }}
+              onClick={() => (onOpenMeal ? onOpenMeal() : onViewRecipe?.(recipe))}
+              style={{ cursor: (onOpenMeal || onViewRecipe) ? 'pointer' : 'default' }}
             >
               {recipe.name}
             </p>
@@ -330,8 +335,8 @@ function MealSlotCard({
             <button
               onClick={(e) => { e.stopPropagation(); onPickSide(); }}
               className="mz-slot-del on-img"
-              style={{ bottom: 8, top: 'auto', right: 36, opacity: 0.65, width: 20, height: 20, borderRadius: '50%' }}
-              title="Beilage / zweites Gericht hinzufügen"
+              style={{ bottom: 8, top: 'auto', right: 8, opacity: 0.65, width: 20, height: 20, borderRadius: '50%' }}
+              title="Zusätzliches Menü erstellen"
             >
               <Plus size={10} />
             </button>
@@ -343,7 +348,12 @@ function MealSlotCard({
         {hasSide && (
           <div className="mz-side-strip">
             <Plus size={9} style={{ color: 'var(--muted)', flexShrink: 0, opacity: 0.55 }} />
-            <span className="mz-side-strip-name">{sideName}</span>
+            <span
+              className="mz-side-strip-name"
+              onClick={sideRecipe ? (e) => { e.stopPropagation(); onViewRecipe?.(sideRecipe); } : undefined}
+              style={{ cursor: sideRecipe && onViewRecipe ? 'pointer' : 'default' }}
+              title={sideRecipe ? 'Rezept ansehen' : undefined}
+            >{sideName}</span>
             <button
               className="mz-side-strip-btn"
               onClick={(e) => { e.stopPropagation(); onSidePortionChange(Math.max(1, (sidePortionOverride ?? defaultPortions) - 1)); }}

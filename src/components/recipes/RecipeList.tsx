@@ -1,6 +1,6 @@
 'use client';
 import { useState, useMemo, useEffect } from 'react';
-import { Plus, Search, Link, Pencil, Trash2, Clock, Archive, RotateCcw, ChevronDown, ChevronUp, Heart } from 'lucide-react';
+import { Plus, Search, Sparkles, Pencil, Trash2, Clock, Archive, RotateCcw, ChevronDown, ChevronUp, Heart } from 'lucide-react';
 import { PhotoSlot } from '@/components/ui/PhotoSlot';
 import { RecipeForm } from './RecipeForm';
 import { ImportRecipeModal } from './ImportRecipeModal';
@@ -199,11 +199,11 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
           <h1 className="mz-view-title" style={{ marginBottom: 0 }}>Rezepte</h1>
         </div>
         <div className="flex items-center gap-2">
-          <button onClick={() => setImportOpen(true)} className="mz-btn-soft" title="Rezept importieren">
-            <Link size={15} />
-            <span className="mz-hide-sm">Importieren</span>
+          <button onClick={() => setImportOpen(true)} className="mz-btn-primary" title="Rezept importieren (URL oder Screenshot)">
+            <Sparkles size={15} />
+            <span>Importieren</span>
           </button>
-          <button onClick={() => setIsCreating(true)} className="mz-btn-primary">
+          <button onClick={() => setIsCreating(true)} className="mz-btn-soft" title="Eigenes Rezept erfassen">
             <Plus size={15} />
             <span className="mz-hide-sm">Rezept hinzufügen</span>
           </button>

@@ -27,6 +27,41 @@ function generateId(): string {
   return `rec-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`;
 }
 
+/**
+ * Verkleinert grosse Handy-/Kamera-Fotos client-seitig (max. Kante 1600px) und
+ * re-encodiert als JPEG, damit das Server-Limit (4 MB) eingehalten wird.
+ * Kann der Browser das Bild nicht dekodieren (z.B. HEIC), wird das Original zurückgegeben.
+ */
+async function downscaleImage(file: File, maxEdge = 1600, quality = 0.85): Promise<{ blob: Blob; reencoded: boolean }> {
+  try {
+    const dataUrl = await new Promise<string>((resolve, reject) => {
+      const r = new FileReader();
+      r.onload = () => resolve(r.result as string);
+      r.onerror = reject;
+      r.readAsDataURL(file);
+    });
+    const img = await new Promise<HTMLImageElement>((resolve, reject) => {
+      const i = new Image();
+      i.onload = () => resolve(i);
+      i.onerror = reject;
+      i.src = dataUrl;
+    });
+    const scale = Math.min(1, maxEdge / Math.max(img.width, img.height));
+    // Klein genug und bereits passendes Format → Original behalten
+    if (scale === 1 && file.size <= 1_500_000) return { blob: file, reencoded: false };
+    const canvas = document.createElement('canvas');
+    canvas.width  = Math.round(img.width  * scale);
+    canvas.height = Math.round(img.height * scale);
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return { blob: file, reencoded: false };
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+    const blob = await new Promise<Blob | null>((resolve) => canvas.toBlob(resolve, 'image/jpeg', quality));
+    return blob ? { blob, reencoded: true } : { blob: file, reencoded: false };
+  } catch {
+    return { blob: file, reencoded: false };
+  }
+}
+
 interface RecipeFormProps {
   recipe?: Recipe;
   onSave: (recipe: Recipe) => void;
@@ -34,7 +69,7 @@ interface RecipeFormProps {
   uploadEndpoint?: string;
 }
 
-export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/admin/upload' }: RecipeFormProps) {
+export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/upload' }: RecipeFormProps) {
   const [name, setName]                       = useState(recipe?.name ?? '');
   const [category, setCategory]               = useState<Category>(recipe?.category ?? 'Vegetarische Hauptgerichte');
   const [timeMinutes, setTimeMinutes]         = useState(recipe?.timeMinutes ?? 30);
@@ -100,8 +135,13 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/ad
     setter(preview);
 
     try {
+      // Grosse Fotos client-seitig verkleinern (löst Grössenlimit + Handy-Fotos)
+      const { blob, reencoded } = await downscaleImage(file);
+      const filename = reencoded
+        ? `${file.name.replace(/\.[^.]+$/, '') || 'foto'}.jpg`
+        : file.name;
       const form = new FormData();
-      form.append('file', file);
+      form.append('file', blob, filename);
       const res  = await fetch(uploadEndpoint, { method: 'POST', body: form });
       const data = await res.json() as { url?: string; error?: string };
 
@@ -552,8 +592,11 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/ad
         {COMMON_UNITS.map(u => <option key={u} value={u} />)}
       </datalist>
 
-      {/* Actions */}
-      <div className="flex gap-3 justify-end pt-2">
+      {/* Actions — sticky am unteren Rand, damit Speichern auf dem Phone immer erreichbar ist */}
+      <div
+        className="flex gap-3 justify-end sticky bottom-0 z-10 -mx-6 px-6 pt-3 pb-2"
+        style={{ backgroundColor: '#fff9f3', borderTop: '1px solid #e0d8ce' }}
+      >
         <button
           type="button" onClick={onCancel}
           className="px-4 py-2 text-sm font-semibold rounded-xl transition-colors"
@@ -565,7 +608,7 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/ad
         </button>
         <button
           type="submit"
-          className="px-4 py-2 text-sm font-semibold text-white rounded-xl transition-opacity hover:opacity-80"
+          className="px-5 py-2 text-sm font-semibold text-white rounded-xl transition-opacity hover:opacity-80"
           style={{ backgroundColor: '#b5614a' }}
         >
           Speichern

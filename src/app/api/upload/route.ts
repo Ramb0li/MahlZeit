@@ -26,13 +26,14 @@ export async function POST(request: Request) {
   if (!file || file.size === 0)
     return NextResponse.json({ error: 'Kein File angegeben.' }, { status: 400 });
 
-  if (file.type !== 'image/jpeg' && file.type !== 'image/png')
-    return NextResponse.json({ error: 'Nur JPG und PNG erlaubt.' }, { status: 400 });
+  const ALLOWED: Record<string, string> = { 'image/jpeg': 'jpg', 'image/png': 'png', 'image/webp': 'webp' };
+  if (!ALLOWED[file.type])
+    return NextResponse.json({ error: 'Nur JPG, PNG oder WEBP erlaubt.' }, { status: 400 });
 
-  if (file.size > 1 * 1024 * 1024)
-    return NextResponse.json({ error: 'Datei zu gross (max 1 MB).' }, { status: 400 });
+  if (file.size > 4 * 1024 * 1024)
+    return NextResponse.json({ error: 'Datei zu gross (max 4 MB).' }, { status: 400 });
 
-  const ext      = file.type === 'image/png' ? 'png' : 'jpg';
+  const ext      = ALLOWED[file.type];
   const basename = file.name.replace(/\.[^.]+$/, '').replace(/[^a-z0-9_-]/gi, '-').toLowerCase();
   const blobName = `user-recipes/${session.groupId}/${basename}-${Date.now()}.${ext}`;
 

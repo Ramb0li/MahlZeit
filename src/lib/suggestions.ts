@@ -68,9 +68,14 @@ export function suggestRecipe(
   );
 
   const excluded = options.allergiesAndAversions ?? [];
+  const c = options.constraint;
   const available = recipes.filter((r) => {
     if (options.excludeIds?.includes(r.id)) return false;
-    if (options.constraint?.constraint === 'leftovers') return false;
+    if (c?.constraint === 'leftovers') return false;
+    // Hard-Filter: maxTime → nur Gerichte innerhalb des Zeitlimits
+    if (c?.constraint === 'maxTime' && c.maxTimeMinutes && r.timeMinutes > c.maxTimeMinutes) return false;
+    // Hard-Filter: mealprep → nur mealprep-geeignete Gerichte
+    if (c?.constraint === 'mealprep' && !r.tags.includes('Mealprep-geeignet')) return false;
     if (options.lunchOnly && !r.tags.includes('Mittagsgericht')) return false;
     if (isRecipeExcluded(r, excluded)) return false;
     return true;
@@ -107,15 +112,21 @@ function isMeatRecipe(r: Recipe): boolean {
     (!r.tags.includes('Vegetarisch') && !r.tags.includes('Vegan') && r.category !== 'Fisch & Meeresfrüchte');
 }
 
+/** Ein vorgeschlagener Slot: Rezept-ID oder Reste-Markierung (recipeId null + isLeftovers). */
+export interface SuggestedSlot {
+  recipeId: string | null;
+  isLeftovers?: boolean;
+}
+
 export function suggestWeek(
   recipes: Recipe[],
   constraints: DayConstraint[],
   weatherTypes: Record<number, WeatherType>,
   season: string,
   opts: SuggestWeekOptions = {}
-): Record<number, { breakfast?: string; lunch?: string; dinner?: string }> {
+): Record<number, { breakfast?: SuggestedSlot; lunch?: SuggestedSlot; dinner?: SuggestedSlot }> {
   const { showBreakfast = false, showLunch = false, showDinner = true, allergiesAndAversions, flexitarisch = false, favorites = [] } = opts;
-  const result: Record<number, { breakfast?: string; lunch?: string; dinner?: string }> = {};
+  const result: Record<number, { breakfast?: SuggestedSlot; lunch?: SuggestedSlot; dinner?: SuggestedSlot }> = {};
   const usedIds: string[] = [];
   let meatMealsThisWeek = 0;
 
@@ -132,69 +143,93 @@ export function suggestWeek(
          (!r.tags.includes('Mittagsgericht') || r.tags.includes('Abendgericht'))
   );
 
-  // Favoriten-Tag: wenn ≥3 definiert, einen zufälligen Dinner-Tag reservieren
-  // Leftovers-Tage ausschliessen, damit die Garantie immer erfüllt werden kann
+  // Mealprep → "Reste essen" auf den Folgetagen reservieren.
+  // Bevorzugtes Reste-Meal: Mittag (wenn angezeigt), sonst Abendessen.
+  const leftoversMeal: 'lunch' | 'dinner' = showLunch ? 'lunch' : 'dinner';
+  const reservedLeftovers = new Map<number, number>(); // Zieltag → Quelltag (Dinner)
+  for (const c of constraints) {
+    if (c.constraint !== 'mealprep') continue;
+    const sourceDay = c.dayOfWeek;
+    const targetDays = (c.mealprepLunchDays && c.mealprepLunchDays.length > 0)
+      ? c.mealprepLunchDays
+      : [sourceDay + 1, sourceDay + 2];
+    for (const td of targetDays) {
+      if (td >= 1 && td <= 7 && td !== sourceDay && !reservedLeftovers.has(td)) {
+        reservedLeftovers.set(td, sourceDay);
+      }
+    }
+  }
+
+  // Favoriten-Tag: wenn ≥3 definiert, einen zufälligen Dinner-Tag reservieren.
+  // Leftovers-/Reste-Dinner-Tage ausschliessen, damit die Garantie erfüllbar bleibt.
   const favSet = new Set(favorites);
   const favDinnerPool = dinnerRecipes.filter(r => favSet.has(r.id));
-  const eligibleDays  = [1, 2, 3, 4, 5, 6, 7].filter(
-    d => !constraints.some(c => c.dayOfWeek === d && c.constraint === 'leftovers')
+  const eligibleDays  = [1, 2, 3, 4, 5, 6, 7].filter(d =>
+    !constraints.some(c => c.dayOfWeek === d && c.mealType === 'dinner' && c.constraint === 'leftovers') &&
+    !(leftoversMeal === 'dinner' && reservedLeftovers.has(d))
   );
   const favoriteDayIndex = favDinnerPool.length >= 3 && eligibleDays.length > 0
     ? eligibleDays[Math.floor(Math.random() * eligibleDays.length)]
     : null;
 
   for (let day = 1; day <= 7; day++) {
-    const constraint = constraints.find((c) => c.dayOfWeek === day);
+    const dayConstraints  = constraints.filter((c) => c.dayOfWeek === day);
+    const dinnerConstraint = dayConstraints.find((c) => c.mealType === 'dinner');
+    const lunchConstraint  = dayConstraints.find((c) => c.mealType === 'lunch');
     const weatherType = weatherTypes[day] ?? 'neutral';
-
-    if (constraint?.constraint === 'leftovers') {
-      result[day] = {};
-      continue;
-    }
 
     result[day] = {};
 
+    // ── Abendessen ──
     if (showDinner) {
-      const basePool = flexitarisch && meatMealsThisWeek >= 1
-        ? dinnerRecipes.filter(r => !isMeatRecipe(r))
-        : dinnerRecipes;
-      const isFavDay = favoriteDayIndex === day && favDinnerPool.length > 0;
-      const favFiltered = isFavDay ? favDinnerPool.filter(r => basePool.some(b => b.id === r.id)) : [];
-      const dinnerPool = favFiltered.length > 0 ? favFiltered : basePool;
-      const dinner = suggestRecipe(dinnerPool, {
-        weatherType, season, constraint, usedThisWeek: usedIds, allergiesAndAversions,
-      });
-      if (dinner) {
-        result[day].dinner = dinner.id;
-        usedIds.push(dinner.id);
-        if (isMeatRecipe(dinner)) meatMealsThisWeek++;
+      if (dinnerConstraint?.constraint === 'leftovers') {
+        result[day].dinner = { recipeId: null, isLeftovers: true };
+      } else if (leftoversMeal === 'dinner' && reservedLeftovers.has(day)) {
+        const src = reservedLeftovers.get(day)!;
+        if (result[src]?.dinner?.recipeId) result[day].dinner = { recipeId: null, isLeftovers: true };
+      } else {
+        const basePool = flexitarisch && meatMealsThisWeek >= 1
+          ? dinnerRecipes.filter(r => !isMeatRecipe(r))
+          : dinnerRecipes;
+        const isFavDay = favoriteDayIndex === day && favDinnerPool.length > 0;
+        const favFiltered = isFavDay ? favDinnerPool.filter(r => basePool.some(b => b.id === r.id)) : [];
+        const dinnerPool = favFiltered.length > 0 ? favFiltered : basePool;
+        const dinner = suggestRecipe(dinnerPool, {
+          weatherType, season, constraint: dinnerConstraint, usedThisWeek: usedIds, allergiesAndAversions,
+        });
+        if (dinner) {
+          result[day].dinner = { recipeId: dinner.id };
+          usedIds.push(dinner.id);
+          if (isMeatRecipe(dinner)) meatMealsThisWeek++;
+        }
       }
     }
 
+    // ── Mittagessen ──
     if (showLunch) {
-      const mealPrepConstraint = constraints.find((c) => c.mealprepLunchDays?.includes(day));
-      if (mealPrepConstraint) {
-        const sourceDay = mealPrepConstraint.dayOfWeek;
-        if (result[sourceDay]?.dinner) {
-          result[day].lunch = result[sourceDay].dinner;
-        }
+      if (lunchConstraint?.constraint === 'leftovers') {
+        result[day].lunch = { recipeId: null, isLeftovers: true };
+      } else if (leftoversMeal === 'lunch' && reservedLeftovers.has(day)) {
+        const src = reservedLeftovers.get(day)!;
+        if (result[src]?.dinner?.recipeId) result[day].lunch = { recipeId: null, isLeftovers: true };
       } else {
         const lunch = suggestRecipe(lunchRecipes, {
-          weatherType, season, usedThisWeek: usedIds, lunchOnly: true, allergiesAndAversions,
+          weatherType, season, constraint: lunchConstraint, usedThisWeek: usedIds, lunchOnly: true, allergiesAndAversions,
         });
         if (lunch) {
-          result[day].lunch = lunch.id;
+          result[day].lunch = { recipeId: lunch.id };
           usedIds.push(lunch.id);
         }
       }
     }
 
+    // ── Frühstück ──
     if (showBreakfast) {
       const breakfast = suggestRecipe(breakfastRecipes, {
         season, usedThisWeek: usedIds, allergiesAndAversions,
       });
       if (breakfast) {
-        result[day].breakfast = breakfast.id;
+        result[day].breakfast = { recipeId: breakfast.id };
       }
     }
   }

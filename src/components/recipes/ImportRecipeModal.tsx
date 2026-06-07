@@ -1,11 +1,19 @@
 'use client';
-import { useState, useRef, useCallback } from 'react';
-import { Link2, ImagePlus, X, Loader2, Lock, AlertCircle, CheckCircle2, ArrowRight } from 'lucide-react';
+import { useState, useRef, useCallback, useEffect } from 'react';
+import { ImagePlus, X, Loader2, Lock, AlertCircle, CheckCircle2, ArrowRight } from 'lucide-react';
 import { type Recipe, type Category, type WeatherType, type Ingredient } from '@/types';
 
 function generateId(): string {
   return `rec-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`;
 }
+
+const CHEF_MESSAGES = [
+  'Unser Chefkoch liest dein Rezept ein…',
+  'Die Zutaten werden abgewogen…',
+  'Wir rühren die Schritte zusammen…',
+  'Eine Prise Magie kommt dazu…',
+  'Gleich ist angerichtet…',
+];
 
 interface ImportRecipeModalProps {
   isPremium: boolean;
@@ -16,9 +24,9 @@ interface ImportRecipeModalProps {
 type Tab = 'url' | 'screenshot';
 
 const inputStyle = {
-  border: '1px solid #c8d8c8',
-  backgroundColor: '#f2f6f2',
-  color: '#2c2420',
+  border: '1px solid var(--border)',
+  backgroundColor: 'var(--bg-2)',
+  color: 'var(--ink)',
   borderRadius: '12px',
   padding: '10px 14px',
   fontSize: '14px',
@@ -32,7 +40,15 @@ export function ImportRecipeModal({ isPremium, onClose, onImported }: ImportReci
   const [loading, setLoading] = useState(false);
   const [error, setError]   = useState('');
   const [dragging, setDragging] = useState(false);
+  const [chefMsg, setChefMsg] = useState(0);
   const fileRef = useRef<HTMLInputElement>(null);
+
+  // Lustige Chefkoch-Ladetexte zyklen, solange analysiert wird
+  useEffect(() => {
+    if (!loading) { setChefMsg(0); return; }
+    const t = setInterval(() => setChefMsg((i) => (i + 1) % CHEF_MESSAGES.length), 2200);
+    return () => clearInterval(t);
+  }, [loading]);
 
   // ── helpers ────────────────────────────────────────────────────────────────
 
@@ -158,15 +174,15 @@ export function ImportRecipeModal({ isPremium, onClose, onImported }: ImportReci
       onClick={e => { if (e.target === e.currentTarget) onClose(); }}
     >
       <div
-        className="relative w-full max-w-md rounded-3xl shadow-2xl flex flex-col"
-        style={{ backgroundColor: '#f2f6f2', maxHeight: '85dvh', overflowY: 'auto' }}
+        className="relative w-full max-w-md rounded-3xl shadow-2xl flex flex-col overflow-hidden"
+        style={{ backgroundColor: 'var(--card)', maxHeight: '90dvh' }}
       >
         {/* Header */}
-        <div className="px-6 pt-6 pb-4" style={{ backgroundColor: '#4a7a4e' }}>
+        <div className="px-6 pt-6 pb-4 shrink-0" style={{ backgroundColor: 'var(--accent)' }}>
           <div className="flex items-center justify-between">
             <div>
               <h2 className="text-lg font-bold text-white">Rezept importieren</h2>
-              <p className="text-sm mt-0.5" style={{ color: '#c8e0c8' }}>
+              <p className="text-sm mt-0.5" style={{ color: 'rgba(255,255,255,0.82)' }}>
                 URL oder Screenshot — in Sekunden fertig
               </p>
             </div>
@@ -190,7 +206,7 @@ export function ImportRecipeModal({ isPremium, onClose, onImported }: ImportReci
                 onClick={() => { setTab(id); setError(''); }}
                 className="flex-1 flex flex-col items-center py-2 rounded-xl transition-all"
                 style={tab === id
-                  ? { backgroundColor: '#fff', color: '#4a7a4e' }
+                  ? { backgroundColor: 'var(--card)', color: 'var(--accent)' }
                   : { color: 'rgba(255,255,255,0.75)' }
                 }
               >
@@ -202,7 +218,7 @@ export function ImportRecipeModal({ isPremium, onClose, onImported }: ImportReci
         </div>
 
         {/* Body */}
-        <div className="p-6 space-y-4">
+        <div className="p-6 space-y-4 overflow-y-auto flex-1">
 
           {/* Error */}
           {error && (
@@ -214,11 +230,11 @@ export function ImportRecipeModal({ isPremium, onClose, onImported }: ImportReci
 
           {/* Loading overlay text */}
           {loading && (
-            <div className="flex items-center gap-3 p-4 rounded-2xl" style={{ backgroundColor: '#e8f2e8', border: '1px solid #c8d8c8' }}>
-              <Loader2 size={20} className="animate-spin shrink-0" style={{ color: '#4a7a4e' }} />
+            <div className="flex items-center gap-3 p-4 rounded-2xl" style={{ backgroundColor: 'var(--accent-tint)', border: '1px solid var(--border)' }}>
+              <Loader2 size={20} className="animate-spin shrink-0" style={{ color: 'var(--accent)' }} />
               <div>
-                <p className="text-sm font-semibold" style={{ color: '#4a7a4e' }}>Rezept wird analysiert…</p>
-                <p className="text-xs mt-0.5" style={{ color: '#6a9a6e' }}>Claude liest die Zutaten und Schritte</p>
+                <p className="text-sm font-semibold" style={{ color: 'var(--accent-ink)' }}>{CHEF_MESSAGES[chefMsg]}</p>
+                <p className="text-xs mt-0.5" style={{ color: 'var(--muted)' }}>Einen Moment, das Rezept wird zubereitet</p>
               </div>
             </div>
           )}
@@ -236,11 +252,11 @@ export function ImportRecipeModal({ isPremium, onClose, onImported }: ImportReci
                   <div key={n} className="flex gap-3 items-start">
                     <div
                       className="w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold shrink-0 mt-0.5"
-                      style={{ backgroundColor: '#4a7a4e', color: '#fff' }}
+                      style={{ backgroundColor: 'var(--accent)', color: '#fff' }}
                     >
                       {n}
                     </div>
-                    <p className="text-sm" style={{ color: '#4a5e48' }}>{text}</p>
+                    <p className="text-sm" style={{ color: 'var(--ink-2)' }}>{text}</p>
                   </div>
                 ))}
               </div>
@@ -259,7 +275,7 @@ export function ImportRecipeModal({ isPremium, onClose, onImported }: ImportReci
                   onClick={handleUrlImport}
                   disabled={!url.trim() || loading}
                   className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-sm font-semibold transition-all disabled:opacity-40 shrink-0"
-                  style={{ backgroundColor: '#4a7a4e', color: '#fff' }}
+                  style={{ backgroundColor: 'var(--accent)', color: '#fff' }}
                 >
                   <ArrowRight size={15} />
                   Los
@@ -271,12 +287,12 @@ export function ImportRecipeModal({ isPremium, onClose, onImported }: ImportReci
                   <span
                     key={site}
                     className="text-[11px] px-2 py-0.5 rounded-full"
-                    style={{ backgroundColor: '#e0ece0', color: '#4a7a4e' }}
+                    style={{ backgroundColor: 'var(--accent-tint)', color: 'var(--accent-ink)' }}
                   >
                     {site}
                   </span>
                 ))}
-                <span className="text-[11px] px-2 py-0.5 rounded-full" style={{ backgroundColor: '#e0ece0', color: '#4a7a4e' }}>
+                <span className="text-[11px] px-2 py-0.5 rounded-full" style={{ backgroundColor: 'var(--accent-tint)', color: 'var(--accent-ink)' }}>
                   + viele mehr
                 </span>
               </div>
@@ -313,18 +329,17 @@ export function ImportRecipeModal({ isPremium, onClose, onImported }: ImportReci
                 <div className="space-y-3">
                   <div className="space-y-2">
                     {[
-                      { n: '1', text: 'Öffne Instagram und drücke bei einem Reel auf Senden → Teilen.' },
-                      { n: '2', text: 'Speichere den Screenshot oder teile das Bild direkt.' },
-                      { n: '3', text: 'Lade das Bild hoch — Claude extrahiert das Rezept automatisch.' },
+                      { n: '1', text: 'Zieh deinen Screenshot/Bild des Rezeptes in die Box oder mache direkt ein Foto aus deinem Rezeptbuch.' },
+                      { n: '2', text: 'Unsere KI extrahiert das Rezept automatisch.' },
                     ].map(({ n, text }) => (
                       <div key={n} className="flex gap-3 items-start">
                         <div
                           className="w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold shrink-0 mt-0.5"
-                          style={{ backgroundColor: '#4a7a4e', color: '#fff' }}
+                          style={{ backgroundColor: 'var(--accent)', color: '#fff' }}
                         >
                           {n}
                         </div>
-                        <p className="text-sm" style={{ color: '#4a5e48' }}>{text}</p>
+                        <p className="text-sm" style={{ color: 'var(--ink-2)' }}>{text}</p>
                       </div>
                     ))}
                   </div>
@@ -332,19 +347,19 @@ export function ImportRecipeModal({ isPremium, onClose, onImported }: ImportReci
                   <div
                     className="flex flex-col items-center justify-center py-10 rounded-2xl cursor-pointer transition-all"
                     style={{
-                      border: `2px dashed ${dragging ? '#4a7a4e' : '#c8d8c8'}`,
-                      backgroundColor: dragging ? '#e8f2e8' : '#eef4ee',
+                      border: `2px dashed ${dragging ? 'var(--accent)' : 'var(--border-2)'}`,
+                      backgroundColor: dragging ? 'var(--accent-tint)' : 'var(--bg-2)',
                     }}
                     onDragOver={e => { e.preventDefault(); setDragging(true); }}
                     onDragLeave={() => setDragging(false)}
                     onDrop={handleDrop}
                     onClick={() => fileRef.current?.click()}
                   >
-                    <ImagePlus size={28} style={{ color: '#4a7a4e', opacity: 0.7 }} className="mb-2" />
-                    <p className="text-sm font-semibold" style={{ color: '#4a7a4e' }}>
+                    <ImagePlus size={28} style={{ color: 'var(--accent)', opacity: 0.7 }} className="mb-2" />
+                    <p className="text-sm font-semibold" style={{ color: 'var(--accent)' }}>
                       Bild hierher ziehen
                     </p>
-                    <p className="text-xs mt-1" style={{ color: '#6a9a6e' }}>
+                    <p className="text-xs mt-1" style={{ color: 'var(--muted)' }}>
                       oder klicken zum Auswählen · JPG, PNG, WEBP
                     </p>
                   </div>
@@ -363,9 +378,9 @@ export function ImportRecipeModal({ isPremium, onClose, onImported }: ImportReci
         </div>
 
         {/* Footer note */}
-        <div className="px-6 pb-5">
-          <p className="text-[11px] text-center" style={{ color: '#9a9e9a' }}>
-            Zubereitungsschritte werden sinngemäss umformuliert · Kein Foto-Import · Quelle wird gespeichert
+        <div className="px-6 pb-5 shrink-0">
+          <p className="text-[11px] text-center" style={{ color: 'var(--muted)' }}>
+            Zubereitungsschritte werden sinngemäss umformuliert · Quelle wird gespeichert
           </p>
         </div>
       </div>

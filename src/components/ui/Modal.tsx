@@ -37,7 +37,7 @@ export function Modal({ open, onClose, title, children, size = 'md' }: ModalProp
       onClick={(e) => { if (e.target === backdropRef.current) onClose(); }}
     >
       <div
-        className={cn('rounded-2xl shadow-xl w-full flex flex-col max-h-[90vh]', sizeClass)}
+        className={cn('rounded-2xl shadow-xl w-full flex flex-col max-h-[90vh] max-h-[88dvh]', sizeClass)}
         style={{
           backgroundColor: '#fff9f3',
           border: '1px solid #e0d8ce',

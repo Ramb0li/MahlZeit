@@ -13,7 +13,8 @@ import { SettingsView } from '@/components/settings/SettingsView';
 import { OnboardingWizard } from '@/components/groups/OnboardingWizard';
 import { Wordmark } from '@/components/ui/Wordmark';
 import { toDataTheme } from '@/lib/themes';
-import type { Recipe, AppSettings, DayConstraint } from '@/types';
+import { calculatePortions } from '@/lib/utils';
+import type { Recipe, AppSettings, DayConstraint, MealSlot } from '@/types';
 import type { Group, GroupRole } from '@/lib/groups';
 
 type Tab = 'planner' | 'recipes' | 'shopping' | 'pantry' | 'settings';
@@ -68,6 +69,19 @@ export function AppShell({
   const [detailRecipe,      setDetailRecipe]      = useState<Recipe | null>(null);
   const [cookingRecipe,     setCookingRecipe]      = useState<Recipe | null>(null);
   const [pendingEditRecipe, setPendingEditRecipe]  = useState<Recipe | null>(null);
+
+  // Menüplan-Kontext, wenn das Detail-Modal aus einem Slot geöffnet wurde (Portionen speicherbar)
+  const [detailPortionCtx, setDetailPortionCtx] = useState<
+    { weekId: string; dayIndex: number; mealType: 'breakfast' | 'lunch' | 'dinner'; slot: MealSlot } | null
+  >(null);
+  const [plannerRefreshKey, setPlannerRefreshKey] = useState(0);
+
+  const viewRecipeOnly = (r: Recipe) => { setDetailPortionCtx(null); setDetailRecipe(r); };
+  const closeDetail    = () => { setDetailRecipe(null); setDetailPortionCtx(null); };
+  const handleOpenMeal = (ctx: { recipe: Recipe; weekId: string; dayIndex: number; mealType: 'breakfast' | 'lunch' | 'dinner'; slot: MealSlot }) => {
+    setDetailPortionCtx({ weekId: ctx.weekId, dayIndex: ctx.dayIndex, mealType: ctx.mealType, slot: ctx.slot });
+    setDetailRecipe(ctx.recipe);
+  };
 
   // Theme via data-theme Attribut setzen (CSS übernimmt die Farben)
   useEffect(() => {
@@ -138,7 +152,9 @@ export function AppShell({
             recipes={recipes}
             settings={settings}
             constraints={constraints}
-            onViewRecipe={setDetailRecipe}
+            onViewRecipe={viewRecipeOnly}
+            onOpenMeal={handleOpenMeal}
+            plannerRefreshKey={plannerRefreshKey}
           />
         )}
         {activeTab === 'recipes' && (
@@ -147,7 +163,7 @@ export function AppShell({
             allergiesAndAversions={settings.allergiesAndAversions ?? []}
             isPremium={isPremium}
             onRecipesChange={setRecipes}
-            onViewRecipe={setDetailRecipe}
+            onViewRecipe={viewRecipeOnly}
             requestEditRecipe={pendingEditRecipe}
             onEditRequestConsumed={() => setPendingEditRecipe(null)}
           />
@@ -204,19 +220,33 @@ export function AppShell({
 
       {detailRecipe && (
         <RecipeDetailModal
+          key={`${detailRecipe.id}${detailPortionCtx ? `-${detailPortionCtx.dayIndex}-${detailPortionCtx.mealType}` : ''}`}
           recipe={detailRecipe}
           isPremium={isPremium}
           isAdmin={isAdmin}
-          onClose={() => setDetailRecipe(null)}
+          onClose={closeDetail}
           onEdit={(r) => {
-            setDetailRecipe(null);
+            closeDetail();
             setActiveTab('recipes');
             setPendingEditRecipe(r);
           }}
           onStartCooking={(r) => {
-            setDetailRecipe(null);
+            closeDetail();
             setCookingRecipe(r);
           }}
+          portionContext={detailPortionCtx
+            ? { initialPortions: detailPortionCtx.slot.portionOverride ?? Math.max(1, Math.round(calculatePortions(settings.household).totalPortions)) }
+            : undefined}
+          onSavePortions={detailPortionCtx ? async (p) => {
+            const { weekId, dayIndex, mealType, slot } = detailPortionCtx;
+            await fetch('/api/weekplan', {
+              method: 'PUT',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ weekId, day: dayIndex, mealType, slot: { ...slot, portionOverride: p } }),
+            });
+            closeDetail();
+            setPlannerRefreshKey((k) => k + 1);
+          } : undefined}
         />
       )}
 

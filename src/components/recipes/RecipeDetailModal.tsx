@@ -262,6 +262,9 @@ interface RecipeDetailModalProps {
   onClose: () => void;
   onEdit?: (recipe: Recipe) => void;
   onStartCooking?: (recipe: Recipe) => void;
+  /** Wenn gesetzt: Modal wurde aus einem Menüplan-Slot geöffnet → Portionen speicherbar */
+  portionContext?: { initialPortions: number };
+  onSavePortions?: (portions: number) => void | Promise<void>;
 }
 
 export function RecipeDetailModal({
@@ -271,8 +274,11 @@ export function RecipeDetailModal({
   onClose,
   onEdit,
   onStartCooking,
+  portionContext,
+  onSavePortions,
 }: RecipeDetailModalProps) {
-  const [portions, setPortions] = useState(recipe.basePortions || 4);
+  const [portions, setPortions] = useState(portionContext?.initialPortions ?? recipe.basePortions ?? 4);
+  const [savingPortions, setSavingPortions] = useState(false);
 
   // Image slideshow
   const images = [recipe.imageUrl, recipe.imageZutaten, recipe.imageKochen].filter(Boolean) as string[];
@@ -557,6 +563,19 @@ export function RecipeDetailModal({
           >
             Schliessen
           </button>
+          {portionContext && onSavePortions && (
+            <button
+              onClick={async () => {
+                setSavingPortions(true);
+                try { await onSavePortions(portions); } finally { setSavingPortions(false); }
+              }}
+              disabled={savingPortions}
+              className="flex items-center gap-2 px-5 py-2 rounded-full text-sm font-semibold transition-opacity hover:opacity-85"
+              style={{ backgroundColor: '#d9543b', color: '#fff', opacity: savingPortions ? 0.6 : 1 }}
+            >
+              {savingPortions ? 'Speichern…' : `${portions} Portionen speichern`}
+            </button>
+          )}
           {onStartCooking && (
             <button
               onClick={() => onStartCooking(recipe)}

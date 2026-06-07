@@ -13,6 +13,9 @@ interface WeekPlannerProps {
   settings: AppSettings;
   constraints: DayConstraint[];
   onViewRecipe?: (recipe: Recipe) => void;
+  onOpenMeal?: (ctx: { recipe: Recipe; weekId: string; dayIndex: number; mealType: 'breakfast' | 'lunch' | 'dinner'; slot: MealSlot }) => void;
+  /** Inkrementiert von aussen (AppShell) nach einem Slot-Update → erzwingt Neuladen des Plans */
+  plannerRefreshKey?: number;
 }
 
 /** True, wenn irgendein Tages-Slot der Woche ein Rezept (oder Custom-Eintrag) enthält. */
@@ -25,7 +28,7 @@ function planHasRecipes(plan: WeekPlan | null): boolean {
   );
 }
 
-export function WeekPlanner({ recipes, settings, constraints, onViewRecipe }: WeekPlannerProps) {
+export function WeekPlanner({ recipes, settings, constraints, onViewRecipe, onOpenMeal, plannerRefreshKey }: WeekPlannerProps) {
   const [currentDate, setCurrentDate] = useState(() =>
     getInitialDisplayWeek(settings.weekSwitchDay ?? 0)
   );
@@ -71,6 +74,11 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe }: We
   useEffect(() => { loadPlan(); }, [loadPlan]);
   // Neu laden wenn Standort in Einstellungen geändert wurde
   useEffect(() => { loadWeather(); }, [loadWeather, weatherLocation]);
+  // Neu laden wenn von aussen (z.B. Portionen im Rezept-Modal gespeichert) angestossen
+  useEffect(() => {
+    if (plannerRefreshKey !== undefined) loadPlan();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [plannerRefreshKey]);
 
   const runSuggestWeek = async () => {
     setConfirmSuggest(false);
@@ -535,6 +543,7 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe }: We
                   onUpdate={handleUpdateSlot}
                   onToggleConstraint={handleToggleConstraint}
                   onViewRecipe={onViewRecipe}
+                  onOpenMeal={onOpenMeal}
                 />
               );
             })}

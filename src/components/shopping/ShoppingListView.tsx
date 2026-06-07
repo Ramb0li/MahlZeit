@@ -711,7 +711,7 @@ export function ShoppingListView() {
                             ? { backgroundColor: '#d9543b', border: '2px solid #d9543b' }
                             : { border: '2px solid #d0c8be', backgroundColor: 'transparent' }
                           }
-                          onClick={e => e.stopPropagation()}
+                          onClick={(e) => { e.stopPropagation(); toggleChecked(key); }}
                         >
                           {isChecked && <Check size={9} color="#fff" strokeWidth={3} />}
                         </div>

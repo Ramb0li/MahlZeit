@@ -52,9 +52,12 @@ export async function POST(request: Request) {
     });
 
     if (dayIndex !== undefined && mealType) {
-      const constraint = constraints.find((c) => c.dayOfWeek === dayIndex);
-      const weatherType = weatherTypes[dayIndex] ?? 'neutral';
       const currentPlan = await getWeekPlan(weekId, groupId);
+      const disabledIds = currentPlan?.disabledConstraintIds ?? [];
+      const constraint = constraints.find(
+        (c) => c.dayOfWeek === dayIndex && c.mealType === mealType && !disabledIds.includes(c.id)
+      );
+      const weatherType = weatherTypes[dayIndex] ?? 'neutral';
       const usedIds = Object.values(currentPlan?.days ?? {}).flatMap((d) =>
         [d.dinner?.recipeId, d.lunch?.recipeId].filter(Boolean) as string[]
       );
@@ -79,15 +82,6 @@ export async function POST(request: Request) {
       return NextResponse.json({ recipeId: suggestion?.id ?? null, recipe: suggestion });
     }
 
-    const suggestions = suggestWeek(recipes, constraints, weatherTypes, season, {
-      showBreakfast:         settings.showBreakfast        ?? false,
-      showLunch:             settings.showLunch             ?? false,
-      showDinner:            settings.showDinner            ?? true,
-      allergiesAndAversions: settings.allergiesAndAversions,
-      flexitarisch:          dietPref === 'flexitarisch',
-      favorites,
-    });
-
     let plan = await getWeekPlan(weekId, groupId);
     // Fix #12: derive startDate from weekId (format "YYYY-Www") to avoid empty string.
     if (!plan) {
@@ -98,14 +92,27 @@ export async function POST(request: Request) {
       plan = { weekId, startDate, days: {} };
     }
 
+    // Für diese Woche deaktivierte (durchgestrichene) Constraints ignorieren
+    const disabledIds = plan.disabledConstraintIds ?? [];
+    const activeConstraints = constraints.filter((c) => !disabledIds.includes(c.id));
+
+    const suggestions = suggestWeek(recipes, activeConstraints, weatherTypes, season, {
+      showBreakfast:         settings.showBreakfast        ?? false,
+      showLunch:             settings.showLunch             ?? false,
+      showDinner:            settings.showDinner            ?? true,
+      allergiesAndAversions: settings.allergiesAndAversions,
+      flexitarisch:          dietPref === 'flexitarisch',
+      favorites,
+    });
+
     for (const [dayStr, meals] of Object.entries(suggestions)) {
       const day = parseInt(dayStr);
       if (!plan.days[day]) {
         plan.days[day] = { dinner: { recipeId: null }, showLunch: false };
       }
-      if (meals.dinner)    plan.days[day].dinner    = { recipeId: meals.dinner };
-      if (meals.lunch)     plan.days[day].lunch     = { recipeId: meals.lunch };
-      if (meals.breakfast) plan.days[day].breakfast = { recipeId: meals.breakfast };
+      if (meals.dinner)    plan.days[day].dinner    = { recipeId: meals.dinner.recipeId, isLeftovers: meals.dinner.isLeftovers ?? false };
+      if (meals.lunch)     plan.days[day].lunch     = { recipeId: meals.lunch.recipeId, isLeftovers: meals.lunch.isLeftovers ?? false };
+      if (meals.breakfast) plan.days[day].breakfast = { recipeId: meals.breakfast.recipeId };
     }
 
     await saveWeekPlan(plan, groupId);

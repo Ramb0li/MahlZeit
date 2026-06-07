@@ -13,141 +13,20 @@
     "2026-W23": {
       "weekId": "2026-W23",
       "startDate": "",
-      "days": {
-        "1": {
-          "dinner": {
-            "recipeId": "fam-37"
-          },
-          "showLunch": false,
-          "lunch": {
-            "recipeId": "sal-01"
-          }
-        },
-        "2": {
-          "dinner": {
-            "recipeId": "fam-27"
-          },
-          "showLunch": false,
-          "lunch": {
-            "recipeId": "fvt-12"
-          }
-        },
-        "3": {
-          "dinner": {
-            "recipeId": "fam-15"
-          },
-          "showLunch": false,
-          "lunch": {
-            "recipeId": "asi-02"
-          }
-        },
-        "4": {
-          "dinner": {
-            "recipeId": "son-01"
-          },
-          "showLunch": false,
-          "lunch": {
-            "recipeId": "fam-15"
-          }
-        },
-        "5": {
-          "dinner": {
-            "recipeId": "fam-45"
-          },
-          "showLunch": false,
-          "lunch": {
-            "recipeId": "fam-15"
-          }
-        },
-        "6": {
-          "dinner": {
-            "recipeId": "fam-44"
-          },
-          "showLunch": false,
-          "lunch": {
-            "recipeId": "pas-04"
-          }
-        },
-        "7": {
-          "dinner": {
-            "recipeId": "fam-56"
-          },
-          "showLunch": false,
-          "lunch": {
-            "recipeId": "sal-07"
-          }
-        }
-      }
+      "days": {}
     },
     "2026-W24": {
       "weekId": "2026-W24",
-      "startDate": "2026-06-07",
+      "startDate": "",
       "days": {
         "1": {
           "dinner": {
-            "recipeId": "fam-28",
-            "sideRecipeId": null,
+            "recipeId": "ei-02",
+            "isLeftovers": false,
+            "sideRecipeId": "ei-03",
             "sideIsLeftovers": false
           },
-          "showLunch": false,
-          "lunch": {
-            "recipeId": "pas-04"
-          }
-        },
-        "2": {
-          "dinner": {
-            "recipeId": "fam-42"
-          },
-          "showLunch": false,
-          "lunch": {
-            "recipeId": "pas-77",
-            "isLeftovers": false
-          }
-        },
-        "3": {
-          "dinner": {
-            "recipeId": "fam-38"
-          },
-          "showLunch": false,
-          "lunch": {
-            "recipeId": "sal-08"
-          }
-        },
-        "4": {
-          "dinner": {
-            "recipeId": "fam-33"
-          },
-          "showLunch": false,
-          "lunch": {
-            "recipeId": "fam-38"
-          }
-        },
-        "5": {
-          "dinner": {
-            "recipeId": "fam-51"
-          },
-          "showLunch": false,
-          "lunch": {
-            "recipeId": "fam-38"
-          }
-        },
-        "6": {
-          "dinner": {
-            "recipeId": "fam-44"
-          },
-          "showLunch": false,
-          "lunch": {
-            "recipeId": "fvt-11"
-          }
-        },
-        "7": {
-          "dinner": {
-            "recipeId": "fam-53"
-          },
-          "showLunch": false,
-          "lunch": {
-            "recipeId": "asi-01"
-          }
+          "showLunch": false
         }
       }
     }
