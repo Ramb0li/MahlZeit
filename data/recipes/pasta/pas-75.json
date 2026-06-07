@@ -1,6 +1,6 @@
 {
   "id": "pas-75",
-  "name": "Spaghetti mit Bacon, Mais, Frühlingszwiebeln und Sahne",
+  "name": "Spaghetti mit Speck, Mais, Frühlingszwiebeln und Rahm",
   "category": "Pasta",
   "timeMinutes": 20,
   "basePortions": 2,
@@ -29,7 +29,7 @@
       "perPortions": 2
     },
     {
-      "name": "Bacon",
+      "name": "Speck",
       "amount": 75,
       "unit": "g",
       "perPortions": 2
@@ -41,7 +41,7 @@
       "perPortions": 2
     },
     {
-      "name": "Sahne",
+      "name": "Rahm",
       "amount": 100,
       "unit": "g",
       "perPortions": 2
@@ -61,22 +61,22 @@
   ],
   "weatherType": "neutral",
   "source": "herrbuettner.de",
-  "description": "Eine herrlich frische und aromatische Pasta, bei der Bacon im eigenen Fett knusprig ausgebraten wird und zusammen mit Frühlingszwiebeln, Mais und Sahne eine cremige Sauce ergibt. Schön gelb strahlend wie die Sonne!",
+  "description": "Eine herrlich frische und aromatische Pasta, bei der Speck im eigenen Fett knusprig ausgebraten wird und zusammen mit Frühlingszwiebeln, Mais und Rahm eine cremige Sauce ergibt. Schön gelb strahlend wie die Sonne!",
   "steps": [
     "Einen grossen Topf mit reichlich Wasser aufsetzen und zum Kochen bringen. Das Wasser gut salzen und die Spaghetti hineingeben. Unter gelegentlichem Rühren al dente kochen.",
-    "Gleichzeitig eine Pfanne bei mittlerer Hitze erhitzen. Die Bacon-Scheiben hineingeben und das Fett langsam auslassen. Den Bacon dabei schön braun braten, nach etwa 3 Minuten wenden. Darauf achten, dass er nicht verbrennt.",
-    "Sobald der Bacon knusprig und gebräunt ist, aus der Pfanne nehmen und auf Küchenpapier abtropfen lassen, damit überschüssiges Fett aufgesaugt wird und er richtig kross wird.",
-    "Während der Bacon brät, den Mais aus der Dose nehmen, durch ein Sieb abtropfen lassen und unter kaltem Wasser abspülen.",
+    "Gleichzeitig eine Pfanne bei mittlerer Hitze erhitzen. Die Speck-Scheiben hineingeben und das Fett langsam auslassen. Den Speck dabei schön braun braten, nach etwa 3 Minuten wenden. Darauf achten, dass er nicht verbrennt.",
+    "Sobald der Speck knusprig und gebräunt ist, aus der Pfanne nehmen und auf Küchenpapier abtropfen lassen, damit überschüssiges Fett aufgesaugt wird und er richtig kross wird.",
+    "Während der Speck brät, den Mais aus der Dose nehmen, durch ein Sieb abtropfen lassen und unter kaltem Wasser abspülen.",
     "Den Knoblauch schälen und fein würfeln. Die Frühlingszwiebeln waschen, trocken tupfen und der Länge nach in Ringe schneiden.",
-    "Im ausgelassenen Baconfett den Knoblauch und die Frühlingszwiebeln anschwitzen. Gut durchrühren und nach etwa 30 Sekunden den Mais hinzufügen.",
-    "Alles nochmals gut durchrühren, dann die Sahne dazugiessen. Mit Salz und Pfeffer würzen.",
+    "Im ausgelassenen Speckfett den Knoblauch und die Frühlingszwiebeln anschwitzen. Gut durchrühren und nach etwa 30 Sekunden den Mais hinzufügen.",
+    "Alles nochmals gut durchrühren, dann die Rahm dazugiessen. Mit Salz und Pfeffer würzen.",
     "Die fertig gekochten Spaghetti mit einer Zange direkt aus dem Topf in die Pfanne geben. Dabei etwas Nudelwasser (etwa eine Suppenkelle voll) mitnehmen.",
-    "Die Pasta mit den anderen Zutaten gut vermischen und etwa 60 Sekunden unter gelegentlichem Rühren köcheln lassen, damit durch Sahne und Nudelwasser eine schöne cremige Sauce entsteht.",
-    "Den Bacon grob klein schneiden, zur Pasta geben und alles ein letztes Mal gut vermischen.",
+    "Die Pasta mit den anderen Zutaten gut vermischen und etwa 60 Sekunden unter gelegentlichem Rühren köcheln lassen, damit durch Rahm und Nudelwasser eine schöne cremige Sauce entsteht.",
+    "Den Speck grob klein schneiden, zur Pasta geben und alles ein letztes Mal gut vermischen.",
     "Die Pasta auf Teller verteilen und sofort servieren."
   ],
   "dietCategory": "meat",
-  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/03/Spaghetti_mit_Bacon_Mais_Fruehlingszwiebeln_und_Sahne.jpg",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/03/Spaghetti_mit_Speck_Mais_Fruehlingszwiebeln_und_Rahm.jpg",
   "imageZutaten": null,
   "imageKochen": null,
   "allergens": [

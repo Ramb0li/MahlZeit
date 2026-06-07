@@ -1,6 +1,6 @@
 {
   "id": "pas-64",
-  "name": "Pasta mit dicken Bohnen und Katenschinken an Honig-Senf-Sosse",
+  "name": "Pasta mit dicken Bohnen und Katenschinken an Honig-Senf-Sauce",
   "category": "Pasta",
   "timeMinutes": 15,
   "basePortions": 2,
@@ -85,7 +85,7 @@
   ],
   "weatherType": "neutral",
   "source": "herrbuettner.de",
-  "description": "Schnelles und unkompliziertes Pastagericht mit knusprigem Katenschinken, dicken Bohnen und einer feinen Honig-Senf-Sosse. In nur 15 Minuten steht dieses leckere Essen auf dem Tisch – perfekt wenn es mal schnell gehen muss!",
+  "description": "Schnelles und unkompliziertes Pastagericht mit knusprigem Katenschinken, dicken Bohnen und einer feinen Honig-Senf-Sauce. In nur 15 Minuten steht dieses leckere Essen auf dem Tisch – perfekt wenn es mal schnell gehen muss!",
   "steps": [
     "Einen grossen Topf mit reichlich Wasser aufsetzen und zum Kochen bringen. Das kochende Wasser gut salzen.",
     "Die Nudeln ins kochende Wasser geben und je nach Sorte 8-11 Minuten bissfest kochen.",
@@ -93,14 +93,14 @@
     "Den Thymian von den Zweigen zupfen und grob hacken. Den Parmesan reiben.",
     "Eine Pfanne bei mittlerer Hitze erhitzen. 1 EL Olivenöl hineingeben und die Katenschinkenwürfel darin knusprig anbraten.",
     "Die abgetropften Bohnen und den gehackten Thymian zum Schinken geben. Mit Salz und Pfeffer würzen und gut durchschwenken.",
-    "Für die Honig-Senf-Sosse 3 EL Olivenöl, Honig, Senf und Zitronensaft mit einem Schneebesen zu einer homogenen Sosse verrühren.",
+    "Für die Honig-Senf-Sauce 3 EL Olivenöl, Honig, Senf und Zitronensaft mit einem Schneebesen zu einer homogenen Sauce verrühren.",
     "Die fertig gegarten Nudeln direkt aus dem Topf mit etwas Nudelwasser in die Pfanne zu Schinken und Bohnen geben.",
     "Den geriebenen Parmesan hinzufügen und alles durchschwenken.",
-    "Die Honig-Senf-Sosse über die Pasta giessen und nochmals gut durchmischen, sodass sich durch Nudelwasser und Parmesan eine cremige Sosse bildet.",
+    "Die Honig-Senf-Sauce über die Pasta giessen und nochmals gut durchmischen, sodass sich durch Nudelwasser und Parmesan eine cremige Sauce bildet.",
     "Die Pasta auf zwei Teller verteilen und mit geriebenem Parmesan und frisch gemahlenem Pfeffer garnieren."
   ],
   "dietCategory": "meat",
-  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2019/01/Pasta_mit_dicken_Bohnen_und_Katenschinken_an_Honig-Senf-Sosse_big.jpg",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2019/01/Pasta_mit_dicken_Bohnen_und_Katenschinken_an_Honig-Senf-Sauce_big.jpg",
   "imageZutaten": null,
   "imageKochen": null,
   "allergens": [

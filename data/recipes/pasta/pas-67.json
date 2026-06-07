@@ -1,6 +1,6 @@
 {
   "id": "pas-67",
-  "name": "Spaghetti mit Butter-Zitronen-Sosse und frittiertem Salbei",
+  "name": "Spaghetti mit Butter-Zitronen-Sauce und frittiertem Salbei",
   "category": "Pasta",
   "timeMinutes": 20,
   "basePortions": 2,
@@ -44,7 +44,7 @@
       "perPortions": 2
     },
     {
-      "name": "Sahne",
+      "name": "Rahm",
       "amount": 200,
       "unit": "g",
       "perPortions": 2
@@ -76,7 +76,7 @@
   ],
   "weatherType": "neutral",
   "source": "herrbuettner.de",
-  "description": "Cremige Pasta mit einer aromatischen Butter-Zitronen-Sahnesosse, verfeinert mit knusprig frittiertem Salbei und Parmesan. Der frittierte Salbei wird herrlich knusprig wie Chips und verleiht dem Gericht ein unverwechselbares Aroma.",
+  "description": "Cremige Pasta mit einer aromatischen Butter-Zitronen-Rahmsauce, verfeinert mit knusprig frittiertem Salbei und Parmesan. Der frittierte Salbei wird herrlich knusprig wie Chips und verleiht dem Gericht ein unverwechselbares Aroma.",
   "steps": [
     "Die Salbeiblätter vom Zweig zupfen und den Knoblauch schälen.",
     "Einen grossen Topf mit Wasser für die Nudeln aufsetzen. Sobald das Wasser kocht, gut salzen und die Spaghetti hineingeben. Die Pasta etwa 9 Minuten kochen lassen.",
@@ -85,10 +85,10 @@
     "Die Hitze auf mittlere Stufe reduzieren und die Butter in der Pfanne zerlassen.",
     "Sobald die Butter flüssig ist, den Knoblauch durch eine Knoblauchpresse drücken und in die Pfanne geben. Darauf achten, dass die Pfanne nicht mehr zu heiss ist, damit der Knoblauch nicht braun wird.",
     "Mit einem Zestenreisser die Schale einer halben Zitrone abziehen und die Zesten ebenfalls in die Pfanne geben. Alles etwa 30 Sekunden andünsten.",
-    "Mit dem Saft einer halben Zitrone ablöschen und dann die Sahne hinzugeben.",
-    "Den frittierten Salbei mit den Händen zerbröseln (einen Teil für die Garnierung beiseitelegen) und zusammen mit geriebenem Parmesan (ebenfalls etwas für die Garnierung zurückbehalten), Salz und Pfeffer zur Sosse geben.",
-    "Die Sosse umrühren und einmal aufkochen lassen. Danach die Hitze reduzieren und warten, bis die Nudeln gar sind.",
-    "Sobald die Spaghetti al dente sind, mit einer Küchenzange direkt aus dem kochenden Nudelwasser in die Pfanne zur Sosse geben und ordentlich miteinander vermischen.",
+    "Mit dem Saft einer halben Zitrone ablöschen und dann die Rahm hinzugeben.",
+    "Den frittierten Salbei mit den Händen zerbröseln (einen Teil für die Garnierung beiseitelegen) und zusammen mit geriebenem Parmesan (ebenfalls etwas für die Garnierung zurückbehalten), Salz und Pfeffer zur Sauce geben.",
+    "Die Sauce umrühren und einmal aufkochen lassen. Danach die Hitze reduzieren und warten, bis die Nudeln gar sind.",
+    "Sobald die Spaghetti al dente sind, mit einer Küchenzange direkt aus dem kochenden Nudelwasser in die Pfanne zur Sauce geben und ordentlich miteinander vermischen.",
     "Die Nudeln auf Teller verteilen und mit dem übrigen Salbei und Parmesan garnieren."
   ],
   "dietCategory": "vegetarian",

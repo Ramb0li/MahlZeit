@@ -1,6 +1,6 @@
 {
   "id": "pas-61",
-  "name": "Tagliatelle an Thunfisch-Tomatensosse mit Oliven, Anchovies und Basilikum",
+  "name": "Tagliatelle an Thunfisch-Tomatensauce mit Oliven, Anchovies und Basilikum",
   "category": "Pasta",
   "timeMinutes": 25,
   "basePortions": 2,
@@ -111,7 +111,7 @@
   ],
   "weatherType": "warm",
   "source": "herrbuettner.de",
-  "description": "Eine würzige Pastasosse mit Thunfisch, Anchovis, schwarzen Oliven und frischem Basilikum. Die Anchovisfilets verleihen der Sosse eine heimliche, würzige Tiefe, während Zitrone und Basilikum für frische Akzente sorgen – perfekt für einen sonnigen Frühlingstag.",
+  "description": "Eine würzige Pastasauce mit Thunfisch, Anchovis, schwarzen Oliven und frischem Basilikum. Die Anchovisfilets verleihen der Sauce eine heimliche, würzige Tiefe, während Zitrone und Basilikum für frische Akzente sorgen – perfekt für einen sonnigen Frühlingstag.",
   "steps": [
     "Die roten Zwiebeln schälen und fein würfeln. Die Oliven abspülen, trocken tupfen, entsteinen und grob hacken.",
     "Die Dosentomaten mit Saft in eine Schüssel geben. Die Dose mit etwas Wasser ausspülen und ebenfalls hinzufügen. Die Tomaten mit den Händen vorsichtig zerdrücken.",
@@ -120,9 +120,9 @@
     "Eine Pfanne bei mittlerer Hitze erwärmen. 2 EL Öl von den Anchovisfilets hineingeben und die Zwiebelwürfel darin glasig und leicht anrösten.",
     "Knoblauch durch die Presse drücken und zusammen mit Oliven, Anchovisfilets, Oregano und Basilikum zu den Zwiebeln geben. Mit Pfeffer und Chiliflocken würzen, durchrühren und 30 Sekunden anbraten.",
     "Mit dem Saft einer halben Zitrone ablöschen, durchrühren und weitere 30 Sekunden köcheln lassen.",
-    "Die zerdrückten Tomaten samt Saft hinzufügen. Den Thunfisch unterrühren und die Sosse 15 Minuten köcheln lassen.",
+    "Die zerdrückten Tomaten samt Saft hinzufügen. Den Thunfisch unterrühren und die Sauce 15 Minuten köcheln lassen.",
     "Währenddessen einen Topf mit Wasser zum Kochen bringen und gut salzen. Die Tagliatelle je nach Packungsangabe al dente kochen.",
-    "Wenn die Pasta fertig ist, die Sosse vom Herd nehmen. Die Nudeln mit einer Küchenzange aus dem Wasser direkt in die Pfanne geben und gut mit der Sosse vermischen.",
+    "Wenn die Pasta fertig ist, die Sauce vom Herd nehmen. Die Nudeln mit einer Küchenzange aus dem Wasser direkt in die Pfanne geben und gut mit der Sauce vermischen.",
     "Die Pasta auf Teller verteilen und mit geriebenem Parmesan, frischem Basilikum und einigen Spritzern Olivenöl garnieren."
   ],
   "dietCategory": "fish",

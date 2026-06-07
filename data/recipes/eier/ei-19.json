@@ -1,6 +1,6 @@
 {
   "id": "ei-19",
-  "name": "Pochiertes Ei auf Spinat, Mais, Bacon und Brot",
+  "name": "Pochiertes Ei auf Spinat, Mais, Speck und Brot",
   "category": "Frühstück",
   "timeMinutes": 15,
   "basePortions": 2,
@@ -47,7 +47,7 @@
       "perPortions": 2
     },
     {
-      "name": "Bacon",
+      "name": "Speck",
       "amount": 6,
       "unit": "Stk",
       "perPortions": 2
@@ -79,17 +79,17 @@
   ],
   "weatherType": "neutral",
   "source": "herrbuettner.de",
-  "description": "Ein herzhafter, farbenfroher Snack mit knusprigem Bacon, gebratenem Mais, frischem Spinat und perfekt pochiertem Ei auf geröstetem Körnerbrot. Das flüssige Eigelb sorgt zusammen mit dem Spinat für die perfekte Saftigkeit.",
+  "description": "Ein herzhafter, farbenfroher Snack mit knusprigem Speck, gebratenem Mais, frischem Spinat und perfekt pochiertem Ei auf geröstetem Körnerbrot. Das flüssige Eigelb sorgt zusammen mit dem Spinat für die perfekte Saftigkeit.",
   "steps": [
-    "Eine Pfanne bei niedriger bis mittlerer Hitze erwärmen. Den Bacon darin langsam auslassen, bis er schön braun und knusprig ist. Dabei zwischendurch wenden. Den fertigen Bacon auf Küchenpapier abtropfen lassen.",
+    "Eine Pfanne bei niedriger bis mittlerer Hitze erwärmen. Den Speck darin langsam auslassen, bis er schön braun und knusprig ist. Dabei zwischendurch wenden. Den fertigen Speck auf Küchenpapier abtropfen lassen.",
     "Knoblauch schälen und in feine Scheiben schneiden. Babyspinat bei Bedarf waschen und trocken tupfen. Chili halbieren, entkernen und in Streifen schneiden. Zuckermais-Schoten mit Salz und Pfeffer einreiben.",
     "Die Brotscheiben toasten. Die Eier in zwei separate kleine Schalen aufschlagen, dabei darauf achten, dass das Eigelb ganz bleibt.",
-    "Die Hitze der Pfanne mit dem Baconfett auf mittlere Stufe erhöhen. Die Zuckermais-Schoten darin rundherum braten, bis sie gebräunte Stellen haben. Den Knoblauch kurz im Fett anschwitzen (nicht braun werden lassen), dann herausnehmen und beiseitelegen.",
+    "Die Hitze der Pfanne mit dem Speckfett auf mittlere Stufe erhöhen. Die Zuckermais-Schoten darin rundherum braten, bis sie gebräunte Stellen haben. Den Knoblauch kurz im Fett anschwitzen (nicht braun werden lassen), dann herausnehmen und beiseitelegen.",
     "Einen grossen Topf mit reichlich Wasser zum Kochen bringen. Etwas Salz und den Weissweinessig zugeben, dann die Hitze reduzieren, bis das Wasser nur noch leicht simmert.",
     "Die Eier nacheinander vorsichtig ins Wasser gleiten lassen (zwischen den Eiern 15 Sekunden warten). Jedes Ei etwa 4 Minuten pochieren. Mit einer Schöpfkelle herausnehmen und vorsichtig mit Küchenpapier trockentupfen.",
     "Während die Eier pochieren, den fertigen Zuckermais aus der Pfanne nehmen und kurz abkühlen lassen. Den Spinat in die Pfanne geben, mit Salz, Pfeffer und Muskatnuss würzen, den gebratenen Knoblauch hinzufügen und durchrühren. Nach etwa 20 Sekunden aus der Pfanne nehmen.",
     "Die Maiskörner mit einem Messer von den Schoten schneiden, indem man die Schote hochkant auf ein Brett stellt und die Körner abschneidet.",
-    "Zum Anrichten zuerst den Bacon auf die getoasteten Brotscheiben verteilen, dann den Mais darauf geben, gefolgt vom Spinat (ruhig etwas von der Flüssigkeit verwenden). Das pochierte Ei obenauf setzen und mit Chilistreifen garnieren."
+    "Zum Anrichten zuerst den Speck auf die getoasteten Brotscheiben verteilen, dann den Mais darauf geben, gefolgt vom Spinat (ruhig etwas von der Flüssigkeit verwenden). Das pochierte Ei obenauf setzen und mit Chilistreifen garnieren."
   ],
   "dietCategory": "meat",
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-19-1780866921550.jpg",

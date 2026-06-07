@@ -11,7 +11,7 @@
   "source": "Cuiseline",
   "basePortions": 4,
   "dietCategory": "vegan",
-  "description": "Geröstete sardische Pasta mit Sommergemüse und Sojasosse.",
+  "description": "Geröstete sardische Pasta mit Sommergemüse und Sojasauce.",
   "ingredients": [
     {
       "name": "Fregola Sarda",
@@ -56,7 +56,7 @@
       "perPortions": 4
     },
     {
-      "name": "Sojasosse",
+      "name": "Sojasauce",
       "amount": 5,
       "unit": "EL",
       "perPortions": 4
@@ -79,7 +79,7 @@
     "Karotten und Peperoni dazugeben, bei mittlerer Hitze dünsten.",
     "Aubergine und Tomaten beifügen.",
     "Fregola Sarda nach Anleitung al dente kochen.",
-    "Gemüse mit Sojasosse würzen, mit Salz und Pfeffer abschmecken.",
+    "Gemüse mit Sojasauce würzen, mit Salz und Pfeffer abschmecken.",
     "Gemüse und Fregola Sarda mischen. Mit frischem Basilikum garnieren."
   ],
   "tips": "",

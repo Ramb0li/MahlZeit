@@ -59,7 +59,7 @@
       "perPortions": 4
     },
     {
-      "name": "Sahne",
+      "name": "Rahm",
       "amount": 200,
       "unit": "ml",
       "perPortions": 4
@@ -85,7 +85,7 @@
   ],
   "weatherType": "kalt",
   "source": "herrbuettner.de",
-  "description": "Eine herzhafte Suppe mit würzigem Hackfleisch, energiereichen Bohnen, frischem Babyspinat, zarten Kartoffeln und einem cremigen Touch durch Sahne. Perfekt für den goldenen Oktober – würzig und tief, aber auch frisch und leicht zugleich.",
+  "description": "Eine herzhafte Suppe mit würzigem Hackfleisch, energiereichen Bohnen, frischem Babyspinat, zarten Kartoffeln und einem cremigen Touch durch Rahm. Perfekt für den goldenen Oktober – würzig und tief, aber auch frisch und leicht zugleich.",
   "steps": [
     "Einen grossen Topf bei mittlerer Hitze erhitzen. Sobald er heiss ist, 2 EL Olivenöl hineingeben.",
     "Das Hackfleisch in den Topf geben und anbraten, dabei mit einem Kochlöffel zerkleinern. So lange braten, bis die austretende Flüssigkeit verkocht ist, das Fleisch schön braun wird und am Boden ein Bratensatz entsteht. Zwischendurch umrühren und mit Salz und Pfeffer würzen.",
@@ -98,7 +98,7 @@
     "Die Kartoffelwürfel in den Topf geben und mit einer Prise Salz, Pfeffer und 1 EL getrocknetem Oregano würzen. Einmal durchrühren.",
     "Mit der Gemüsebrühe ablöschen, die Bohnen hinzufügen und den Deckel auf den Topf setzen. Die Suppe für 15-20 Minuten köcheln lassen, bis die Kartoffeln gar sind.",
     "Falls nötig, den Babyspinat waschen und abtrocknen.",
-    "Sobald die Kartoffeln gar sind, die Sahne zur Suppe geben und den Babyspinat hinzufügen. Gut durchrühren, bis der Spinat zusammenfällt.",
+    "Sobald die Kartoffeln gar sind, die Rahm zur Suppe geben und den Babyspinat hinzufügen. Gut durchrühren, bis der Spinat zusammenfällt.",
     "Das Hackfleisch wieder zur Suppe geben und unterrühren. Die Suppe kurz aufkochen lassen und mit Salz und Pfeffer abschmecken."
   ],
   "dietCategory": "meat",

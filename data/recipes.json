@@ -1382,7 +1382,7 @@
     ],
     "ingredients": [
       {
-        "name": "Porree",
+        "name": "Lauch",
         "amount": 1,
         "unit": "Stk",
         "perPortions": 2
@@ -1474,7 +1474,7 @@
     ],
     "weatherType": "neutral",
     "source": "herrbuettner.de",
-    "description": "Eine fein würzige Frittata mit süssem Porree, erdigen Champignons und cremigem Zitronen-Hüttenkäse. Dazu ein erfrischender Apfel-Petersilie-Salat – in nur 25 Minuten fertig!",
+    "description": "Eine fein würzige Frittata mit süssem Lauch, erdigen Champignons und cremigem Zitronen-Hüttenkäse. Dazu ein erfrischender Apfel-Petersilie-Salat – in nur 25 Minuten fertig!",
     "steps": [
       "Den Backofen auf 200 Grad Ober-/Unterhitze vorheizen und ein Rost in die mittlere Schiene einsetzen.",
       "Den gehackten Knoblauch in einer ofenfesten Pfanne mit Olivenöl bei mittlerer Temperatur kurz glasig dünsten.",
@@ -1599,7 +1599,7 @@
   },
   {
     "id": "ei-19",
-    "name": "Pochiertes Ei auf Spinat, Mais, Bacon und Brot",
+    "name": "Pochiertes Ei auf Spinat, Mais, Speck und Brot",
     "category": "Frühstück",
     "timeMinutes": 15,
     "basePortions": 2,
@@ -1646,7 +1646,7 @@
         "perPortions": 2
       },
       {
-        "name": "Bacon",
+        "name": "Speck",
         "amount": 6,
         "unit": "Stk",
         "perPortions": 2
@@ -1678,17 +1678,17 @@
     ],
     "weatherType": "neutral",
     "source": "herrbuettner.de",
-    "description": "Ein herzhafter, farbenfroher Snack mit knusprigem Bacon, gebratenem Mais, frischem Spinat und perfekt pochiertem Ei auf geröstetem Körnerbrot. Das flüssige Eigelb sorgt zusammen mit dem Spinat für die perfekte Saftigkeit.",
+    "description": "Ein herzhafter, farbenfroher Snack mit knusprigem Speck, gebratenem Mais, frischem Spinat und perfekt pochiertem Ei auf geröstetem Körnerbrot. Das flüssige Eigelb sorgt zusammen mit dem Spinat für die perfekte Saftigkeit.",
     "steps": [
-      "Eine Pfanne bei niedriger bis mittlerer Hitze erwärmen. Den Bacon darin langsam auslassen, bis er schön braun und knusprig ist. Dabei zwischendurch wenden. Den fertigen Bacon auf Küchenpapier abtropfen lassen.",
+      "Eine Pfanne bei niedriger bis mittlerer Hitze erwärmen. Den Speck darin langsam auslassen, bis er schön braun und knusprig ist. Dabei zwischendurch wenden. Den fertigen Speck auf Küchenpapier abtropfen lassen.",
       "Knoblauch schälen und in feine Scheiben schneiden. Babyspinat bei Bedarf waschen und trocken tupfen. Chili halbieren, entkernen und in Streifen schneiden. Zuckermais-Schoten mit Salz und Pfeffer einreiben.",
       "Die Brotscheiben toasten. Die Eier in zwei separate kleine Schalen aufschlagen, dabei darauf achten, dass das Eigelb ganz bleibt.",
-      "Die Hitze der Pfanne mit dem Baconfett auf mittlere Stufe erhöhen. Die Zuckermais-Schoten darin rundherum braten, bis sie gebräunte Stellen haben. Den Knoblauch kurz im Fett anschwitzen (nicht braun werden lassen), dann herausnehmen und beiseitelegen.",
+      "Die Hitze der Pfanne mit dem Speckfett auf mittlere Stufe erhöhen. Die Zuckermais-Schoten darin rundherum braten, bis sie gebräunte Stellen haben. Den Knoblauch kurz im Fett anschwitzen (nicht braun werden lassen), dann herausnehmen und beiseitelegen.",
       "Einen grossen Topf mit reichlich Wasser zum Kochen bringen. Etwas Salz und den Weissweinessig zugeben, dann die Hitze reduzieren, bis das Wasser nur noch leicht simmert.",
       "Die Eier nacheinander vorsichtig ins Wasser gleiten lassen (zwischen den Eiern 15 Sekunden warten). Jedes Ei etwa 4 Minuten pochieren. Mit einer Schöpfkelle herausnehmen und vorsichtig mit Küchenpapier trockentupfen.",
       "Während die Eier pochieren, den fertigen Zuckermais aus der Pfanne nehmen und kurz abkühlen lassen. Den Spinat in die Pfanne geben, mit Salz, Pfeffer und Muskatnuss würzen, den gebratenen Knoblauch hinzufügen und durchrühren. Nach etwa 20 Sekunden aus der Pfanne nehmen.",
       "Die Maiskörner mit einem Messer von den Schoten schneiden, indem man die Schote hochkant auf ein Brett stellt und die Körner abschneidet.",
-      "Zum Anrichten zuerst den Bacon auf die getoasteten Brotscheiben verteilen, dann den Mais darauf geben, gefolgt vom Spinat (ruhig etwas von der Flüssigkeit verwenden). Das pochierte Ei obenauf setzen und mit Chilistreifen garnieren."
+      "Zum Anrichten zuerst den Speck auf die getoasteten Brotscheiben verteilen, dann den Mais darauf geben, gefolgt vom Spinat (ruhig etwas von der Flüssigkeit verwenden). Das pochierte Ei obenauf setzen und mit Chilistreifen garnieren."
     ],
     "dietCategory": "meat",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-19-1780866921550.jpg",
@@ -1810,7 +1810,7 @@
   },
   {
     "id": "ei-21",
-    "name": "Spiegelei Frittata mit Frühlingszwiebeln, Bacon und Mais",
+    "name": "Spiegelei Frittata mit Frühlingszwiebeln, Speck und Mais",
     "category": "Frühstück",
     "timeMinutes": 20,
     "basePortions": 2,
@@ -1829,7 +1829,7 @@
         "perPortions": 2
       },
       {
-        "name": "Bacon in Scheiben",
+        "name": "Speck in Scheiben",
         "amount": 125,
         "unit": "g",
         "perPortions": 2
@@ -1885,15 +1885,15 @@
     ],
     "weatherType": "neutral",
     "source": "herrbuettner.de",
-    "description": "Eine besondere Frittata-Variante mit knusprigem Bacon, Mais und Frühlingszwiebeln, gekrönt mit vier Spiegeleiern, die im Ofen mitgebacken werden. Das flüssige Eigelb verläuft beim Aufschneiden herrlich über die anderen Zutaten.",
+    "description": "Eine besondere Frittata-Variante mit knusprigem Speck, Mais und Frühlingszwiebeln, gekrönt mit vier Spiegeleiern, die im Ofen mitgebacken werden. Das flüssige Eigelb verläuft beim Aufschneiden herrlich über die anderen Zutaten.",
     "steps": [
       "Den Backofen auf 175 Grad vorheizen und ein Rost in die mittlere Schiene schieben.",
-      "Den Bacon in etwa 1 cm grosse Würfel schneiden.",
-      "Eine beschichtete Pfanne bei mittlerer Hitze auf den Herd stellen und den Bacon in die noch kalte Pfanne geben. Das Fett langsam auslassen und den Bacon leicht knusprig braten.",
+      "Den Speck in etwa 1 cm grosse Würfel schneiden.",
+      "Eine beschichtete Pfanne bei mittlerer Hitze auf den Herd stellen und den Speck in die noch kalte Pfanne geben. Das Fett langsam auslassen und den Speck leicht knusprig braten.",
       "Währenddessen den Mais aus der Dose nehmen und gut abtropfen lassen. Die Rosmarinnadeln vom Zweig zupfen und fein hacken. Den Knoblauch schälen und in feine Würfel schneiden.",
       "Die Frühlingszwiebeln waschen, trocken tupfen und in grobe Ringe schneiden. Ein paar Ringe für die Garnierung zur Seite legen. Den Parmesan fein reiben.",
       "6 Eier in eine Schüssel aufschlagen, Salz, Pfeffer und den geriebenen Parmesan hinzugeben. Mit einem Schneebesen kräftig verquirlen, bis die Masse leicht schäumt.",
-      "Sobald der Bacon ausreichend Fett ausgelassen hat, Rosmarin, Frühlingszwiebeln und Knoblauch in die Pfanne geben. Alles gut vermischen und etwa 1 Minute im Fett anbraten.",
+      "Sobald der Speck ausreichend Fett ausgelassen hat, Rosmarin, Frühlingszwiebeln und Knoblauch in die Pfanne geben. Alles gut vermischen und etwa 1 Minute im Fett anbraten.",
       "Die Butter hinzufügen, schmelzen lassen und in der Pfanne verteilen. Anschliessend den Mais untermischen und mit Salz und Pfeffer würzen.",
       "Die Ei-Parmesan-Mischung in die Pfanne giessen und mit einem Kochlöffel gleichmässig verteilen. Dabei gut mit den anderen Zutaten vermischen.",
       "Sobald die Eimasse am Boden zu stocken beginnt, das Rühren beenden. Die Pfanne noch etwa 1 Minute auf dem Herd stehen lassen.",
@@ -1902,7 +1902,7 @@
       "Die Frittata aus dem Ofen nehmen und 5 Minuten abkühlen lassen. Vor dem Servieren die Spiegeleier mit Salz und Pfeffer würzen und mit den zurückbehaltenen Frühlingszwiebeln garnieren."
     ],
     "dietCategory": "meat",
-    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/02/frittata_mit_bacon_mais_und_spiegelei01.jpg",
+    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/02/frittata_mit_speck_mais_und_spiegelei01.jpg",
     "imageZutaten": null,
     "imageKochen": null,
     "allergens": [
@@ -1912,7 +1912,7 @@
   },
   {
     "id": "ei-22",
-    "name": "Shakshuka - Pochierte Eier in Tomatensosse",
+    "name": "Shakshuka - Pochierte Eier in Tomatensauce",
     "category": "Frühstück",
     "timeMinutes": 30,
     "basePortions": 2,
@@ -1999,7 +1999,7 @@
     ],
     "weatherType": "neutral",
     "source": "herrbuettner.de",
-    "description": "Ein traditionelles israelisches Gericht mit pochierten Eiern in würziger Tomatensosse - schnell zubereitet und wandelbar. Perfektes Seelenfutter, das auch als Mittagessen oder Snack funktioniert.",
+    "description": "Ein traditionelles israelisches Gericht mit pochierten Eiern in würziger Tomatensauce - schnell zubereitet und wandelbar. Perfektes Seelenfutter, das auch als Mittagessen oder Snack funktioniert.",
     "steps": [
       "Die Knoblauchzehe schälen und in feine Scheiben schneiden. Die Zwiebel schälen und in feine Würfel schneiden. Die Petersilie fein hacken.",
       "Eine Pfanne (idealerweise 20 cm Durchmesser) bei mittlerer Hitze erwärmen. Sobald sie heiss ist, das Olivenöl hineingeben.",
@@ -2007,9 +2007,9 @@
       "Wenn die Zwiebeln weich werden, den getrockneten Oregano und die Knoblauchscheiben hinzufügen. Gut umrühren und warten, bis der Knoblauch leicht gebräunt ist.",
       "Das Tomatenmark einrühren und kurz mitbraten.",
       "Die Dosentomaten dazugeben und gut mit den anderen Zutaten vermischen. Mit einem Kartoffelstampfer die Tomaten zerdrücken.",
-      "Die Hitze etwas reduzieren und die Sosse mit Salz, Pfeffer und einer Prise Zucker abschmecken.",
-      "Unter gelegentlichem Rühren etwa 15 Minuten köcheln lassen, bis die Sosse leicht eingedickt ist.",
-      "Mit einem Kochlöffel zwei Vertiefungen in die Sosse drücken. Die Eier aufschlagen und vorsichtig in die Vertiefungen gleiten lassen.",
+      "Die Hitze etwas reduzieren und die Sauce mit Salz, Pfeffer und einer Prise Zucker abschmecken.",
+      "Unter gelegentlichem Rühren etwa 15 Minuten köcheln lassen, bis die Sauce leicht eingedickt ist.",
+      "Mit einem Kochlöffel zwei Vertiefungen in die Sauce drücken. Die Eier aufschlagen und vorsichtig in die Vertiefungen gleiten lassen.",
       "Das Eigelb mit etwas Salz, Pfeffer und Chiliflocken würzen. Den Deckel auf die Pfanne setzen und warten, bis das Eiweiss vollständig gestockt ist.",
       "Das fertige Shakshuka mit gehackter Petersilie garnieren und mit Brot oder Baguette servieren."
     ],
@@ -4535,7 +4535,7 @@
     "weatherType": "warm",
     "source": "cuiseline",
     "basePortions": 4,
-    "description": "Cremige Zitronenpasta ohne Sahne — das Geheimnis liegt im stärkehaltigen Kochwasser und guter Emulsion.",
+    "description": "Cremige Zitronenpasta ohne Rahm — das Geheimnis liegt im stärkehaltigen Kochwasser und guter Emulsion.",
     "steps": [
       "Pasta nach Packungsanweisung in gut gesalzenem Wasser kochen. Kurz vor dem Abgiessen 120 ml Kochwasser abschöpfen.",
       "Knoblauch fein hacken. In einer grossen Pfanne das Olivenöl bei mittlerer Hitze erwärmen, Knoblauch 1 Minute dünsten (nicht bräunen).",
@@ -4576,7 +4576,7 @@
     "source": "Cuiseline",
     "basePortions": 4,
     "dietCategory": "vegan",
-    "description": "Geröstete sardische Pasta mit Sommergemüse und Sojasosse.",
+    "description": "Geröstete sardische Pasta mit Sommergemüse und Sojasauce.",
     "ingredients": [
       {
         "name": "Fregola Sarda",
@@ -4621,7 +4621,7 @@
         "perPortions": 4
       },
       {
-        "name": "Sojasosse",
+        "name": "Sojasauce",
         "amount": 5,
         "unit": "EL",
         "perPortions": 4
@@ -4644,7 +4644,7 @@
       "Karotten und Peperoni dazugeben, bei mittlerer Hitze dünsten.",
       "Aubergine und Tomaten beifügen.",
       "Fregola Sarda nach Anleitung al dente kochen.",
-      "Gemüse mit Sojasosse würzen, mit Salz und Pfeffer abschmecken.",
+      "Gemüse mit Sojasauce würzen, mit Salz und Pfeffer abschmecken.",
       "Gemüse und Fregola Sarda mischen. Mit frischem Basilikum garnieren."
     ],
     "tips": "",
@@ -5301,7 +5301,7 @@
   },
   {
     "id": "pas-58",
-    "name": "Nudeln mit Grünkohl, Lachs und Sojasosse",
+    "name": "Nudeln mit Grünkohl, Lachs und Sojasauce",
     "category": "Pasta",
     "timeMinutes": 15,
     "basePortions": 2,
@@ -5343,7 +5343,7 @@
         "perPortions": 2
       },
       {
-        "name": "Sojasosse",
+        "name": "Sojasauce",
         "amount": 2,
         "unit": "EL",
         "perPortions": 2
@@ -5381,15 +5381,15 @@
     ],
     "weatherType": "kalt",
     "source": "herrbuettner.de",
-    "description": "Eine überraschende und gelungene Kombination aus Grünkohl, Lachs und Sojasosse. Einfach zubereitet, schmeckt köstlich und sieht auch noch gut aus.",
+    "description": "Eine überraschende und gelungene Kombination aus Grünkohl, Lachs und Sojasauce. Einfach zubereitet, schmeckt köstlich und sieht auch noch gut aus.",
     "steps": [
       "Einen grossen Topf mit reichlich Wasser aufsetzen und zum Kochen bringen. Das Wasser gut salzen und die Pasta nach Packungsanweisung kochen.",
       "Währenddessen die Knoblauchzehen schälen und in dünne Scheiben schneiden. Die Chilischote entkernen und in feine Streifen schneiden.",
       "Eine Pfanne bei mittlerer Hitze erhitzen. Das Lachsfilet im Olivenöl von beiden Seiten je 2 Minuten anbraten, dann aus der Pfanne nehmen.",
       "Knoblauch und Chili in der Pfanne glasig anschwitzen. Das Tomatenmark dazugeben und in der Pfanne verteilen.",
-      "Mit Sojasosse ablöschen. Den Grünkohl hinzufügen und mit Salz und Pfeffer würzen. Gut durchrühren – der Grünkohl fällt schnell zusammen.",
+      "Mit Sojasauce ablöschen. Den Grünkohl hinzufügen und mit Salz und Pfeffer würzen. Gut durchrühren – der Grünkohl fällt schnell zusammen.",
       "Ein bis zwei Schöpfkellen Nudelwasser hinzufügen. Die Hitze reduzieren, die Butter einrühren und schmelzen lassen.",
-      "Den Lachs mit den Händen in Stücke zupfen, zur Sosse geben und kurz ziehen lassen.",
+      "Den Lachs mit den Händen in Stücke zupfen, zur Sauce geben und kurz ziehen lassen.",
       "Die gekochten Nudeln untermischen und alles gut vermengen. Auf zwei Teller verteilen und servieren."
     ],
     "dietCategory": "fish",
@@ -5405,7 +5405,7 @@
   },
   {
     "id": "pas-59",
-    "name": "Tagliatelle mit Champignon-Sahnesosse und Kresse",
+    "name": "Tagliatelle mit Champignon-Rahmsauce und Kresse",
     "category": "Pasta",
     "timeMinutes": 20,
     "basePortions": 2,
@@ -5472,7 +5472,7 @@
         "perPortions": 2
       },
       {
-        "name": "Sahne",
+        "name": "Rahm",
         "amount": 100,
         "unit": "ml",
         "perPortions": 2
@@ -5498,7 +5498,7 @@
     ],
     "weatherType": "kalt",
     "source": "herrbuettner.de",
-    "description": "Diese cremige Pilz-Rahm-Sosse mit Gartenkresse und Nudeln schmeckt erdig, würzig und frisch – perfekt für gemütliche Herbsttage und in unter 20 Minuten zubereitet.",
+    "description": "Diese cremige Pilz-Rahm-Sauce mit Gartenkresse und Nudeln schmeckt erdig, würzig und frisch – perfekt für gemütliche Herbsttage und in unter 20 Minuten zubereitet.",
     "steps": [
       "Einen grossen Topf mit Wasser aufsetzen und zum Kochen bringen. Das kochende Wasser kräftig salzen.",
       "Die Frühlingszwiebel waschen, trocknen, äussere Schichten entfernen und klein hacken. Die Schalotte schälen und fein würfeln. Den Knoblauch schälen und fein hacken.",
@@ -5506,12 +5506,12 @@
       "Eine Pfanne bei mittlerer Hitze erhitzen und das Olivenöl hineingeben. Frühlingszwiebel, Schalotte und Knoblauch darin glasig anschwitzen.",
       "Das Tomatenmark dazugeben, gut vermischen und etwa eine Minute mitrösten. Danach alles aus der Pfanne nehmen und in einer Schüssel beiseitestellen.",
       "Die Champignons in die Pfanne geben, mit Salz und Pfeffer würzen und etwa 1 Minute scharf anbraten. Die Butter hinzufügen und schmelzen lassen, dabei gelegentlich umrühren.",
-      "Die Zwiebel-Tomatenmark-Mischung wieder in die Pfanne geben, mit der Gemüsebrühe ablöschen und die Sahne hinzufügen. Einmal aufkochen lassen, dann die Hitze reduzieren und leicht köcheln lassen.",
-      "Die Tagliatelle ins kochende Wasser geben und nach Packungsanweisung garen. 2 Minuten vor Ende der Garzeit die Nudeln direkt in die Pfanne mit der Sosse geben und dort zu Ende garen. Dabei mehrmals umrühren.",
+      "Die Zwiebel-Tomatenmark-Mischung wieder in die Pfanne geben, mit der Gemüsebrühe ablöschen und die Rahm hinzufügen. Einmal aufkochen lassen, dann die Hitze reduzieren und leicht köcheln lassen.",
+      "Die Tagliatelle ins kochende Wasser geben und nach Packungsanweisung garen. 2 Minuten vor Ende der Garzeit die Nudeln direkt in die Pfanne mit der Sauce geben und dort zu Ende garen. Dabei mehrmals umrühren.",
       "Die Pasta auf Teller verteilen und mit frischer Gartenkresse garnieren."
     ],
     "dietCategory": "vegetarian",
-    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2019/10/Tagliatelle_mit_Champignon_Sahnesauce.jpg",
+    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2019/10/Tagliatelle_mit_Champignon_Rahmsauce.jpg",
     "imageZutaten": null,
     "imageKochen": null,
     "allergens": [
@@ -5521,7 +5521,7 @@
   },
   {
     "id": "pas-60",
-    "name": "Pasta e ceci - Nudeln mit Kichererbsen in Tomatensosse",
+    "name": "Pasta e ceci - Nudeln mit Kichererbsen in Tomatensauce",
     "category": "Pasta",
     "timeMinutes": 30,
     "basePortions": 4,
@@ -5602,7 +5602,7 @@
     ],
     "weatherType": "neutral",
     "source": "herrbuettner.de",
-    "description": "Ein traditionelles italienisches One-Pot-Gericht, bei dem Nudeln und Kichererbsen langsam in einer aromatischen Tomatensosse garen. Wenige Zutaten, tiefer Geschmack und schnell zubereitet – ein Rezept zum Niederknien.",
+    "description": "Ein traditionelles italienisches One-Pot-Gericht, bei dem Nudeln und Kichererbsen langsam in einer aromatischen Tomatensauce garen. Wenige Zutaten, tiefer Geschmack und schnell zubereitet – ein Rezept zum Niederknien.",
     "steps": [
       "Die Kichererbsen aus der Dose abgiessen, in einem Sieb abtropfen lassen und unter kaltem Wasser abspülen. Beiseitestellen.",
       "Den Knoblauch schälen und in feine Scheiben schneiden. Die Rosmarinnadeln von den Zweigen zupfen und grob hacken.",
@@ -5623,7 +5623,7 @@
   },
   {
     "id": "pas-61",
-    "name": "Tagliatelle an Thunfisch-Tomatensosse mit Oliven, Anchovies und Basilikum",
+    "name": "Tagliatelle an Thunfisch-Tomatensauce mit Oliven, Anchovies und Basilikum",
     "category": "Pasta",
     "timeMinutes": 25,
     "basePortions": 2,
@@ -5734,7 +5734,7 @@
     ],
     "weatherType": "warm",
     "source": "herrbuettner.de",
-    "description": "Eine würzige Pastasosse mit Thunfisch, Anchovis, schwarzen Oliven und frischem Basilikum. Die Anchovisfilets verleihen der Sosse eine heimliche, würzige Tiefe, während Zitrone und Basilikum für frische Akzente sorgen – perfekt für einen sonnigen Frühlingstag.",
+    "description": "Eine würzige Pastasauce mit Thunfisch, Anchovis, schwarzen Oliven und frischem Basilikum. Die Anchovisfilets verleihen der Sauce eine heimliche, würzige Tiefe, während Zitrone und Basilikum für frische Akzente sorgen – perfekt für einen sonnigen Frühlingstag.",
     "steps": [
       "Die roten Zwiebeln schälen und fein würfeln. Die Oliven abspülen, trocken tupfen, entsteinen und grob hacken.",
       "Die Dosentomaten mit Saft in eine Schüssel geben. Die Dose mit etwas Wasser ausspülen und ebenfalls hinzufügen. Die Tomaten mit den Händen vorsichtig zerdrücken.",
@@ -5743,9 +5743,9 @@
       "Eine Pfanne bei mittlerer Hitze erwärmen. 2 EL Öl von den Anchovisfilets hineingeben und die Zwiebelwürfel darin glasig und leicht anrösten.",
       "Knoblauch durch die Presse drücken und zusammen mit Oliven, Anchovisfilets, Oregano und Basilikum zu den Zwiebeln geben. Mit Pfeffer und Chiliflocken würzen, durchrühren und 30 Sekunden anbraten.",
       "Mit dem Saft einer halben Zitrone ablöschen, durchrühren und weitere 30 Sekunden köcheln lassen.",
-      "Die zerdrückten Tomaten samt Saft hinzufügen. Den Thunfisch unterrühren und die Sosse 15 Minuten köcheln lassen.",
+      "Die zerdrückten Tomaten samt Saft hinzufügen. Den Thunfisch unterrühren und die Sauce 15 Minuten köcheln lassen.",
       "Währenddessen einen Topf mit Wasser zum Kochen bringen und gut salzen. Die Tagliatelle je nach Packungsangabe al dente kochen.",
-      "Wenn die Pasta fertig ist, die Sosse vom Herd nehmen. Die Nudeln mit einer Küchenzange aus dem Wasser direkt in die Pfanne geben und gut mit der Sosse vermischen.",
+      "Wenn die Pasta fertig ist, die Sauce vom Herd nehmen. Die Nudeln mit einer Küchenzange aus dem Wasser direkt in die Pfanne geben und gut mit der Sauce vermischen.",
       "Die Pasta auf Teller verteilen und mit geriebenem Parmesan, frischem Basilikum und einigen Spritzern Olivenöl garnieren."
     ],
     "dietCategory": "fish",
@@ -5761,7 +5761,7 @@
   },
   {
     "id": "pas-62",
-    "name": "Tagliatelle an Champignon-Sahnesosse mit Hackbällchen",
+    "name": "Tagliatelle an Champignon-Rahmsauce mit Hackbällchen",
     "category": "Pasta",
     "timeMinutes": 30,
     "basePortions": 2,
@@ -5827,7 +5827,7 @@
         "perPortions": 2
       },
       {
-        "name": "Sahne",
+        "name": "Rahm",
         "amount": 100,
         "unit": "ml",
         "perPortions": 2
@@ -5877,24 +5877,24 @@
     ],
     "weatherType": "neutral",
     "source": "herrbuettner.de",
-    "description": "Cremige Champignon-Sahnesosse mit Thymian und fluffigen Hackbällchen zu Tagliatelle – ein wahres Lieblingsessen, das in nur 30 Minuten auf dem Tisch steht.",
+    "description": "Cremige Champignon-Rahmsauce mit Thymian und fluffigen Hackbällchen zu Tagliatelle – ein wahres Lieblingsessen, das in nur 30 Minuten auf dem Tisch steht.",
     "steps": [
-      "Das Hackfleisch mit geriebenem Parmesan und etwas Pfeffer in eine Schüssel geben. Die Semmelbrösel mit 50 ml Sahne vermengen und zum Hackfleisch geben. Alles gut mit den Händen durchkneten.",
+      "Das Hackfleisch mit geriebenem Parmesan und etwas Pfeffer in eine Schüssel geben. Die Semmelbrösel mit 50 ml Rahm vermengen und zum Hackfleisch geben. Alles gut mit den Händen durchkneten.",
       "Aus der Hackmasse etwa 10 kleine gleichgrosse Bällchen formen und zur Seite stellen.",
       "Die Champignons putzen, den Strunk teilweise entfernen und in Scheiben schneiden. Die Thymianblätter von den Stielen zupfen und fein hacken. Die Schalotten schälen und in feine Würfel schneiden.",
       "Eine Pfanne auf hoher Hitze erhitzen. Sobald sie richtig heiss ist, 1 EL Olivenöl hineingeben und die Hackbällchen rundherum scharf anbraten, bis sie eine schöne braune Kruste haben. Aus der Pfanne nehmen und beiseitestellen.",
       "Die Champignons in die Pfanne geben (darauf achten, dass sie nicht übereinander liegen) und mit Pfeffer würzen. Eine Minute braten lassen, dann durchschwenken.",
       "Schalotten und Thymian hinzugeben. Den Knoblauch durchpressen und ebenfalls dazugeben. Alles zusammen 30 Sekunden weiterbraten.",
-      "Mit Gemüsebrühe ablöschen, die Hitze auf mittlere Stufe reduzieren und 50 ml Sahne hinzufügen. Mit Salz und Cayennepfeffer würzen.",
+      "Mit Gemüsebrühe ablöschen, die Hitze auf mittlere Stufe reduzieren und 50 ml Rahm hinzufügen. Mit Salz und Cayennepfeffer würzen.",
       "Etwas Flüssigkeit mit einer Schöpfkelle entnehmen, in eine Schüssel geben und die Speisestärke einrühren. Die Mischung zurück in die Pfanne geben.",
       "Die Hackbällchen wieder in die Pfanne geben und alles 20 Minuten köcheln lassen.",
-      "Währenddessen einen grossen Topf mit Wasser zum Kochen bringen und gut salzen. Die Tagliatelle 6 Minuten vor Ende der Garzeit der Sosse ins kochende Wasser geben und nach Packungsanweisung kochen.",
-      "Kurz vor Ende die Hitze der Sosse auf kleinste Stufe reduzieren und die Hackbällchen herausnehmen. Die kalte Butter in kleine Stücke schneiden, in die Sosse geben und einrühren.",
-      "Die Nudeln abgiessen und mit der Sosse in der Pfanne vermischen.",
+      "Währenddessen einen grossen Topf mit Wasser zum Kochen bringen und gut salzen. Die Tagliatelle 6 Minuten vor Ende der Garzeit der Sauce ins kochende Wasser geben und nach Packungsanweisung kochen.",
+      "Kurz vor Ende die Hitze der Sauce auf kleinste Stufe reduzieren und die Hackbällchen herausnehmen. Die kalte Butter in kleine Stücke schneiden, in die Sauce geben und einrühren.",
+      "Die Nudeln abgiessen und mit der Sauce in der Pfanne vermischen.",
       "Die Pasta mit den Hackbällchen auf zwei Tellern anrichten und mit geriebenem Parmesan garnieren."
     ],
     "dietCategory": "meat",
-    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2019/04/Tagliatelle_mit_Rinderhackbaellchen_an_Champignon_Thymian_Sahne_Sauce.jpg",
+    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2019/04/Tagliatelle_mit_Rinderhackbaellchen_an_Champignon_Thymian_Rahm_Sauce.jpg",
     "imageZutaten": null,
     "imageKochen": null,
     "allergens": [
@@ -5904,7 +5904,7 @@
   },
   {
     "id": "pas-63",
-    "name": "Spaghetti an Soja-Butter-Sosse mit gebratenen Champignons",
+    "name": "Spaghetti an Soja-Butter-Sauce mit gebratenen Champignons",
     "category": "Pasta",
     "timeMinutes": 15,
     "basePortions": 2,
@@ -5943,7 +5943,7 @@
         "perPortions": 2
       },
       {
-        "name": "Sojasosse",
+        "name": "Sojasauce",
         "amount": 3,
         "unit": "EL",
         "perPortions": 2
@@ -5981,7 +5981,7 @@
     ],
     "weatherType": "neutral",
     "source": "herrbuettner.de",
-    "description": "Eine cremige, würzige Sosse aus Sojasosse und Butter trifft auf gebratene Champignons, Frühlingszwiebeln und Vollkorn-Spaghetti. Mit geröstetem Sesam und Chiliflocken verfeinert ist dieses Gericht ein schneller asiatisch inspirierter Klassiker.",
+    "description": "Eine cremige, würzige Sauce aus Sojasauce und Butter trifft auf gebratene Champignons, Frühlingszwiebeln und Vollkorn-Spaghetti. Mit geröstetem Sesam und Chiliflocken verfeinert ist dieses Gericht ein schneller asiatisch inspirierter Klassiker.",
     "steps": [
       "Die Champignons säubern, den unteren Teil des Stiels abschneiden und in Scheiben schneiden.",
       "Die Frühlingszwiebeln waschen, trocken schütteln und in Ringe schneiden.",
@@ -5990,12 +5990,12 @@
       "Eine Pfanne stark erhitzen, das Olivenöl hineingeben und die Champignons darin anbraten. Mit Pfeffer würzen. Darauf achten, dass alle Pilze Kontakt zur Pfanne haben und sie nicht zu oft bewegen.",
       "Die Champignons nach etwa 2 Minuten wenden und weitere 2 Minuten braten. Falls viel Flüssigkeit austritt, die Hitze reduzieren und warten, bis diese verkocht ist, dann die Hitze wieder erhöhen.",
       "Wenn die Champignons schön gebräunt sind, die Hitze auf mittlere Stufe reduzieren. Frühlingszwiebeln und Chiliflocken hinzufügen und anbraten, bis die Frühlingszwiebeln weich sind.",
-      "Die Hitze weiter reduzieren und Sojasosse sowie Butter in die Pfanne geben. Die Pfanne leicht schwenken, sodass Butter und Sojasosse eine cremige Emulsion bilden. Bei Bedarf mit einem Kochlöffel nachhelfen.",
-      "Die fertig gekochten Spaghetti mit einer Küchenzange direkt aus dem Kochwasser in die Pfanne geben und gut mit der Sosse und den anderen Zutaten vermischen.",
+      "Die Hitze weiter reduzieren und Sojasauce sowie Butter in die Pfanne geben. Die Pfanne leicht schwenken, sodass Butter und Sojasauce eine cremige Emulsion bilden. Bei Bedarf mit einem Kochlöffel nachhelfen.",
+      "Die fertig gekochten Spaghetti mit einer Küchenzange direkt aus dem Kochwasser in die Pfanne geben und gut mit der Sauce und den anderen Zutaten vermischen.",
       "Die Pasta auf Teller verteilen und mit dem gerösteten Sesam garnieren."
     ],
     "dietCategory": "vegetarian",
-    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2019/02/Spaghetti-an-Soja-Butter-Sosse-mit-Champignons_big.jpg",
+    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2019/02/Spaghetti-an-Soja-Butter-Sauce-mit-Champignons_big.jpg",
     "imageZutaten": null,
     "imageKochen": null,
     "allergens": [
@@ -6007,7 +6007,7 @@
   },
   {
     "id": "pas-64",
-    "name": "Pasta mit dicken Bohnen und Katenschinken an Honig-Senf-Sosse",
+    "name": "Pasta mit dicken Bohnen und Katenschinken an Honig-Senf-Sauce",
     "category": "Pasta",
     "timeMinutes": 15,
     "basePortions": 2,
@@ -6092,7 +6092,7 @@
     ],
     "weatherType": "neutral",
     "source": "herrbuettner.de",
-    "description": "Schnelles und unkompliziertes Pastagericht mit knusprigem Katenschinken, dicken Bohnen und einer feinen Honig-Senf-Sosse. In nur 15 Minuten steht dieses leckere Essen auf dem Tisch – perfekt wenn es mal schnell gehen muss!",
+    "description": "Schnelles und unkompliziertes Pastagericht mit knusprigem Katenschinken, dicken Bohnen und einer feinen Honig-Senf-Sauce. In nur 15 Minuten steht dieses leckere Essen auf dem Tisch – perfekt wenn es mal schnell gehen muss!",
     "steps": [
       "Einen grossen Topf mit reichlich Wasser aufsetzen und zum Kochen bringen. Das kochende Wasser gut salzen.",
       "Die Nudeln ins kochende Wasser geben und je nach Sorte 8-11 Minuten bissfest kochen.",
@@ -6100,14 +6100,14 @@
       "Den Thymian von den Zweigen zupfen und grob hacken. Den Parmesan reiben.",
       "Eine Pfanne bei mittlerer Hitze erhitzen. 1 EL Olivenöl hineingeben und die Katenschinkenwürfel darin knusprig anbraten.",
       "Die abgetropften Bohnen und den gehackten Thymian zum Schinken geben. Mit Salz und Pfeffer würzen und gut durchschwenken.",
-      "Für die Honig-Senf-Sosse 3 EL Olivenöl, Honig, Senf und Zitronensaft mit einem Schneebesen zu einer homogenen Sosse verrühren.",
+      "Für die Honig-Senf-Sauce 3 EL Olivenöl, Honig, Senf und Zitronensaft mit einem Schneebesen zu einer homogenen Sauce verrühren.",
       "Die fertig gegarten Nudeln direkt aus dem Topf mit etwas Nudelwasser in die Pfanne zu Schinken und Bohnen geben.",
       "Den geriebenen Parmesan hinzufügen und alles durchschwenken.",
-      "Die Honig-Senf-Sosse über die Pasta giessen und nochmals gut durchmischen, sodass sich durch Nudelwasser und Parmesan eine cremige Sosse bildet.",
+      "Die Honig-Senf-Sauce über die Pasta giessen und nochmals gut durchmischen, sodass sich durch Nudelwasser und Parmesan eine cremige Sauce bildet.",
       "Die Pasta auf zwei Teller verteilen und mit geriebenem Parmesan und frisch gemahlenem Pfeffer garnieren."
     ],
     "dietCategory": "meat",
-    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2019/01/Pasta_mit_dicken_Bohnen_und_Katenschinken_an_Honig-Senf-Sosse_big.jpg",
+    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2019/01/Pasta_mit_dicken_Bohnen_und_Katenschinken_an_Honig-Senf-Sauce_big.jpg",
     "imageZutaten": null,
     "imageKochen": null,
     "allergens": [
@@ -6119,7 +6119,7 @@
   },
   {
     "id": "pas-65",
-    "name": "Tagliatelle mit Fourme d'Ambert Sosse und gerösteten Walnüssen",
+    "name": "Tagliatelle mit Fourme d'Ambert Sauce und gerösteten Walnüssen",
     "category": "Pasta",
     "timeMinutes": 20,
     "basePortions": 2,
@@ -6177,16 +6177,16 @@
     ],
     "weatherType": "kalt",
     "source": "herrbuettner.de",
-    "description": "Eine cremige französisch-italienische Symbiose aus frischen Tagliatelle in einer milden Blauschimmelkäse-Sosse, verfeinert mit gerösteten Walnüssen. Der milde Fourme d'Ambert verleiht diesem einfachen Gericht eine besondere aromatische Tiefe.",
+    "description": "Eine cremige französisch-italienische Symbiose aus frischen Tagliatelle in einer milden Blauschimmelkäse-Sauce, verfeinert mit gerösteten Walnüssen. Der milde Fourme d'Ambert verleiht diesem einfachen Gericht eine besondere aromatische Tiefe.",
     "steps": [
       "Eine Pfanne bei mittlerer Temperatur erhitzen und die Walnusskerne ohne Fettzugabe leicht rösten. Anschliessend herausnehmen, abkühlen lassen und mit den Händen grob zerkleinern.",
       "Einen grossen Topf mit reichlich Wasser für die Pasta aufsetzen und zum Kochen bringen.",
       "Den Fourme d'Ambert in kleine Würfel schneiden. Einige Würfel mit Rinde für die Dekoration beiseitelegen.",
       "In einem Topf die Milch bei mittlerer Hitze erwärmen. Sobald sie warm wird, den Blauschimmelkäse einrühren und unter ständigem Rühren kurz aufkochen lassen, bis sich der Käse vollständig aufgelöst hat.",
-      "Die Hitze reduzieren, damit die Sosse nicht mehr kocht. Die kalte Butter einrühren, bis sie sich aufgelöst hat. Mit einer Prise Cayennepfeffer würzen und die Sosse warmhalten.",
+      "Die Hitze reduzieren, damit die Sauce nicht mehr kocht. Die kalte Butter einrühren, bis sie sich aufgelöst hat. Mit einer Prise Cayennepfeffer würzen und die Sauce warmhalten.",
       "Das Nudelwasser kräftig salzen und die frischen Tagliatelle hineingeben. Etwa 2 Minuten garen, bis sie al dente sind.",
-      "Die fertigen Nudeln mit einer Küchenzange direkt aus dem Wasser in die Käsesosse geben, dabei darf ruhig etwas Nudelwasser mit in die Sosse gelangen. Gut vermischen, die Sosse bindet durch die Stärke des Nudelwassers.",
-      "Die Pasta mit Sosse auf Tellern anrichten und mit den gerösteten Walnüssen sowie den beiseitegelegten Käsewürfeln garnieren."
+      "Die fertigen Nudeln mit einer Küchenzange direkt aus dem Wasser in die Käsesauce geben, dabei darf ruhig etwas Nudelwasser mit in die Sauce gelangen. Gut vermischen, die Sauce bindet durch die Stärke des Nudelwassers.",
+      "Die Pasta mit Sauce auf Tellern anrichten und mit den gerösteten Walnüssen sowie den beiseitegelegten Käsewürfeln garnieren."
     ],
     "dietCategory": "vegetarian",
     "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/11/tagliatelle_mit_fourme-d-ambert_creme_sauce_und_geroesteten_wallnuessen_01.jpg",
@@ -6200,7 +6200,7 @@
   },
   {
     "id": "pas-66",
-    "name": "Spaghetti mit Ofen-Tomatensosse, Thymian und Parmesan",
+    "name": "Spaghetti mit Ofen-Tomatensauce, Thymian und Parmesan",
     "category": "Pasta",
     "timeMinutes": 35,
     "basePortions": 4,
@@ -6282,7 +6282,7 @@
     ],
     "weatherType": "neutral",
     "source": "herrbuettner.de",
-    "description": "Eine besondere Tomatensosse mit im Ofen gegarten Tomaten, die das Aroma intensiviert. Zusammen mit frischem Thymian und Parmesan ein köstliches Pastagericht mit aussergewöhnlichem Geschmack.",
+    "description": "Eine besondere Tomatensauce mit im Ofen gegarten Tomaten, die das Aroma intensiviert. Zusammen mit frischem Thymian und Parmesan ein köstliches Pastagericht mit aussergewöhnlichem Geschmack.",
     "steps": [
       "Den Backofen auf 190 Grad Ober-/Unterhitze vorheizen und ein Rost in die mittlere Schiene schieben.",
       "Die Tomaten waschen, trockentupfen und halbieren. In eine Auflaufform geben.",
@@ -6296,7 +6296,7 @@
       "Nach 20 Minuten die Auflaufform aus dem Ofen nehmen und den Balsamico Essig einrühren.",
       "Die Knoblauchzehen herausnehmen, schälen und alles in einer Küchenmaschine mit Schneidemesser zerkleinern.",
       "Die fertig gekochten Spaghetti abgiessen, dabei etwas Nudelwasser auffangen, und sofort zurück in den Topf geben.",
-      "Die Tomatensosse, zwei Drittel des Parmesans und die Butter zu den Spaghetti geben und gut vermischen, bis die Butter geschmolzen ist.",
+      "Die Tomatensauce, zwei Drittel des Parmesans und die Butter zu den Spaghetti geben und gut vermischen, bis die Butter geschmolzen ist.",
       "Auf Tellern anrichten und mit dem restlichen Parmesan und einer Prise Pfeffer garnieren."
     ],
     "dietCategory": "vegetarian",
@@ -6310,7 +6310,7 @@
   },
   {
     "id": "pas-67",
-    "name": "Spaghetti mit Butter-Zitronen-Sosse und frittiertem Salbei",
+    "name": "Spaghetti mit Butter-Zitronen-Sauce und frittiertem Salbei",
     "category": "Pasta",
     "timeMinutes": 20,
     "basePortions": 2,
@@ -6354,7 +6354,7 @@
         "perPortions": 2
       },
       {
-        "name": "Sahne",
+        "name": "Rahm",
         "amount": 200,
         "unit": "g",
         "perPortions": 2
@@ -6386,7 +6386,7 @@
     ],
     "weatherType": "neutral",
     "source": "herrbuettner.de",
-    "description": "Cremige Pasta mit einer aromatischen Butter-Zitronen-Sahnesosse, verfeinert mit knusprig frittiertem Salbei und Parmesan. Der frittierte Salbei wird herrlich knusprig wie Chips und verleiht dem Gericht ein unverwechselbares Aroma.",
+    "description": "Cremige Pasta mit einer aromatischen Butter-Zitronen-Rahmsauce, verfeinert mit knusprig frittiertem Salbei und Parmesan. Der frittierte Salbei wird herrlich knusprig wie Chips und verleiht dem Gericht ein unverwechselbares Aroma.",
     "steps": [
       "Die Salbeiblätter vom Zweig zupfen und den Knoblauch schälen.",
       "Einen grossen Topf mit Wasser für die Nudeln aufsetzen. Sobald das Wasser kocht, gut salzen und die Spaghetti hineingeben. Die Pasta etwa 9 Minuten kochen lassen.",
@@ -6395,10 +6395,10 @@
       "Die Hitze auf mittlere Stufe reduzieren und die Butter in der Pfanne zerlassen.",
       "Sobald die Butter flüssig ist, den Knoblauch durch eine Knoblauchpresse drücken und in die Pfanne geben. Darauf achten, dass die Pfanne nicht mehr zu heiss ist, damit der Knoblauch nicht braun wird.",
       "Mit einem Zestenreisser die Schale einer halben Zitrone abziehen und die Zesten ebenfalls in die Pfanne geben. Alles etwa 30 Sekunden andünsten.",
-      "Mit dem Saft einer halben Zitrone ablöschen und dann die Sahne hinzugeben.",
-      "Den frittierten Salbei mit den Händen zerbröseln (einen Teil für die Garnierung beiseitelegen) und zusammen mit geriebenem Parmesan (ebenfalls etwas für die Garnierung zurückbehalten), Salz und Pfeffer zur Sosse geben.",
-      "Die Sosse umrühren und einmal aufkochen lassen. Danach die Hitze reduzieren und warten, bis die Nudeln gar sind.",
-      "Sobald die Spaghetti al dente sind, mit einer Küchenzange direkt aus dem kochenden Nudelwasser in die Pfanne zur Sosse geben und ordentlich miteinander vermischen.",
+      "Mit dem Saft einer halben Zitrone ablöschen und dann die Rahm hinzugeben.",
+      "Den frittierten Salbei mit den Händen zerbröseln (einen Teil für die Garnierung beiseitelegen) und zusammen mit geriebenem Parmesan (ebenfalls etwas für die Garnierung zurückbehalten), Salz und Pfeffer zur Sauce geben.",
+      "Die Sauce umrühren und einmal aufkochen lassen. Danach die Hitze reduzieren und warten, bis die Nudeln gar sind.",
+      "Sobald die Spaghetti al dente sind, mit einer Küchenzange direkt aus dem kochenden Nudelwasser in die Pfanne zur Sauce geben und ordentlich miteinander vermischen.",
       "Die Nudeln auf Teller verteilen und mit dem übrigen Salbei und Parmesan garnieren."
     ],
     "dietCategory": "vegetarian",
@@ -6412,7 +6412,7 @@
   },
   {
     "id": "pas-68",
-    "name": "Spaghetti Avocado Carbonara mit Bacon",
+    "name": "Spaghetti Avocado Carbonara mit Speck",
     "category": "Pasta",
     "timeMinutes": 20,
     "basePortions": 2,
@@ -6453,7 +6453,7 @@
         "perPortions": 2
       },
       {
-        "name": "Bacon",
+        "name": "Speck",
         "amount": 4,
         "unit": "Stk",
         "perPortions": 2
@@ -6491,14 +6491,14 @@
     ],
     "weatherType": "neutral",
     "source": "herrbuettner.de",
-    "description": "Eine cremige Carbonara-Variation mit Avocado und knusprigem Bacon. Die Avocado verleiht dem Gericht einen unverwechselbaren Geschmack und macht die Pasta wunderbar cremig, während der Bacon für das perfekte Aroma sorgt.",
+    "description": "Eine cremige Carbonara-Variation mit Avocado und knusprigem Speck. Die Avocado verleiht dem Gericht einen unverwechselbaren Geschmack und macht die Pasta wunderbar cremig, während der Speck für das perfekte Aroma sorgt.",
     "steps": [
-      "Eine Pfanne bei mittlerer Hitze aufstellen und die Bacon-Scheiben in die noch kalte Pfanne legen. Das Fett langsam auslassen und den Bacon knusprig braten. Anschliessend auf Küchenpapier abtropfen lassen.",
+      "Eine Pfanne bei mittlerer Hitze aufstellen und die Speck-Scheiben in die noch kalte Pfanne legen. Das Fett langsam auslassen und den Speck knusprig braten. Anschliessend auf Küchenpapier abtropfen lassen.",
       "In einem Topf reichlich Wasser für die Nudeln zum Kochen bringen. Das kochende Wasser gut salzen und die Spaghetti hineingeben. Während des Garens gelegentlich umrühren.",
       "Die Avocado halbieren, den Kern entfernen und das Fruchtfleisch mit einem Löffel aus der Schale lösen. Den Knoblauch schälen und in Scheiben schneiden. Basilikumblätter von den Zweigen zupfen. Den Parmesan reiben.",
       "125 ml Nudelwasser entnehmen und beiseitestellen. Das Avocado-Fruchtfleisch, Knoblauch, Basilikum, Limettensaft, Eigelb, eine Prise Salz, eine Prise Pfeffer und das Nudelwasser in eine Küchenmaschine geben und zu einer cremigen Sauce mixen.",
-      "Die gegarten Spaghetti abgiessen und in die Pfanne geben, in der der Bacon gebraten wurde. Den Herd ausschalten. Die Avocado-Sauce zu den Nudeln geben und gut vermischen.",
-      "Den Bacon (bis auf etwas zur Garnierung) mit den Händen oder einem Messer zerkleinern und unter die Nudeln mischen. Alles gut durchmengen, auf Teller verteilen und mit dem restlichen Bacon garnieren. Sofort servieren."
+      "Die gegarten Spaghetti abgiessen und in die Pfanne geben, in der der Speck gebraten wurde. Den Herd ausschalten. Die Avocado-Sauce zu den Nudeln geben und gut vermischen.",
+      "Den Speck (bis auf etwas zur Garnierung) mit den Händen oder einem Messer zerkleinern und unter die Nudeln mischen. Alles gut durchmengen, auf Teller verteilen und mit dem restlichen Speck garnieren. Sofort servieren."
     ],
     "dietCategory": "meat",
     "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/08/Spaghetti_Avocado_Carbonara.jpg",
@@ -6512,7 +6512,7 @@
   },
   {
     "id": "pas-69",
-    "name": "Tomatensosse nach Marcella Hazan",
+    "name": "Tomatensauce nach Marcella Hazan",
     "category": "Pasta",
     "timeMinutes": 45,
     "basePortions": 4,
@@ -6550,7 +6550,7 @@
     ],
     "weatherType": "neutral",
     "source": "herrbuettner.de",
-    "description": "Eine legendäre italienische Tomatensosse mit nur 3 Zutaten – herrlich einfach, aromatisch und seidig. Die Butter sorgt für einen wunderbar runden Geschmack und schönen Glanz.",
+    "description": "Eine legendäre italienische Tomatensauce mit nur 3 Zutaten – herrlich einfach, aromatisch und seidig. Die Butter sorgt für einen wunderbar runden Geschmack und schönen Glanz.",
     "steps": [
       "Die Zwiebel schälen und halbieren.",
       "Die Tomaten samt Flüssigkeit in einen Topf geben.",
@@ -6558,12 +6558,12 @@
       "Mit einer Prise Salz würzen und alles einmal kurz aufkochen lassen.",
       "Die Hitze reduzieren und nur noch sanft köcheln lassen.",
       "Das Ganze 45 Minuten lang garen lassen. Dabei zwischendurch immer wieder umrühren und die Tomaten dabei mit dem Kochlöffel zerdrücken.",
-      "Die Sosse ist fertig, wenn kein Wasser mehr an der Oberfläche schwimmt und sie schön eingedickt ist.",
-      "Kurz vor dem Servieren die Zwiebel entfernen und die Sosse bei Bedarf mit Salz abschmecken.",
+      "Die Sauce ist fertig, wenn kein Wasser mehr an der Oberfläche schwimmt und sie schön eingedickt ist.",
+      "Kurz vor dem Servieren die Zwiebel entfernen und die Sauce bei Bedarf mit Salz abschmecken.",
       "Zu frisch gekochten Nudeln servieren. Optional mit Basilikum und Parmesan garnieren."
     ],
     "dietCategory": "vegetarian",
-    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/07/tomatensosse_nach_marcella_hazan.jpg",
+    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/07/tomatensauce_nach_marcella_hazan.jpg",
     "imageZutaten": null,
     "imageKochen": null,
     "allergens": [
@@ -6725,7 +6725,7 @@
     ],
     "weatherType": "neutral",
     "source": "herrbuettner.de",
-    "description": "Eine leichte und cremige Carbonara-Variante ohne Fleisch. Die Champignons und der Schnittlauch sorgen für Geschmack, während Eigelb, Parmesan und Nudelwasser die typisch cremige Sosse ergeben.",
+    "description": "Eine leichte und cremige Carbonara-Variante ohne Fleisch. Die Champignons und der Schnittlauch sorgen für Geschmack, während Eigelb, Parmesan und Nudelwasser die typisch cremige Sauce ergeben.",
     "steps": [
       "Einen grossen Topf mit reichlich Wasser aufsetzen und zum Kochen bringen. Das Wasser gut salzen und die Spaghetti hineingeben. Während des Garens gelegentlich umrühren.",
       "Die Champignons bei Bedarf grob säubern, den Stiel abschneiden und in Scheiben schneiden. Den Schnittlauch fein hacken.",
@@ -6733,7 +6733,7 @@
       "Eine Pfanne bei hoher Hitze erhitzen und das Olivenöl hineingeben. Die Champignonscheiben in die heisse Pfanne geben und scharf anbraten, dabei darauf achten, dass sie nicht übereinander liegen. Mit Pfeffer würzen und von beiden Seiten je 2 Minuten braten, bis sie schön gebräunt sind.",
       "Die Pfanne vom Herd nehmen, den gehackten Schnittlauch hinzufügen, durchschwenken und beiseite stellen.",
       "Sobald die Nudeln gar sind, direkt aus dem kochenden Wasser zur Ei-Parmesan-Mischung geben. 2-3 Suppenkellen Nudelwasser dazugiessen und eine gute Portion Pfeffer hinzufügen.",
-      "Die Nudeln gründlich mit der Ei-Parmesan-Mischung vermengen (am besten mit einer Küchenzange). Die Champignons mit dem Schnittlauch dazugeben und alles gut durchmischen. Nach und nach entsteht eine cremige Sosse.",
+      "Die Nudeln gründlich mit der Ei-Parmesan-Mischung vermengen (am besten mit einer Küchenzange). Die Champignons mit dem Schnittlauch dazugeben und alles gut durchmischen. Nach und nach entsteht eine cremige Sauce.",
       "Sofort servieren, mit dem restlichen Parmesan garnieren und geniessen."
     ],
     "dietCategory": "vegetarian",
@@ -6748,7 +6748,7 @@
   },
   {
     "id": "pas-72",
-    "name": "Grüne Tagliatelle mit Lachsfilet an Knoblauch-Zitronen-Sahnesosse",
+    "name": "Grüne Tagliatelle mit Lachsfilet an Knoblauch-Zitronen-Rahmsauce",
     "category": "Pasta",
     "timeMinutes": 15,
     "basePortions": 2,
@@ -6796,7 +6796,7 @@
         "perPortions": 2
       },
       {
-        "name": "Schlagsahne",
+        "name": "Schlagrahm",
         "amount": 200,
         "unit": "g",
         "perPortions": 2
@@ -6822,21 +6822,21 @@
     ],
     "weatherType": "neutral",
     "source": "herrbuettner.de",
-    "description": "Cremige Sahnesosse mit saftigem Lachsfilet, verfeinert mit Knoblauch, Zitrone und Chili, serviert auf grünen Tagliatelle. Ein echter Genuss für Lachs-Liebhaber!",
+    "description": "Cremige Rahmsauce mit saftigem Lachsfilet, verfeinert mit Knoblauch, Zitrone und Chili, serviert auf grünen Tagliatelle. Ein echter Genuss für Lachs-Liebhaber!",
     "steps": [
       "Knoblauch schälen und fein hacken. Chili halbieren, Kerne entfernen und in feine Streifen schneiden. Petersilie klein hacken.",
       "Einen grossen Topf mit reichlich Wasser und einer guten Prise Salz zum Kochen bringen. Die Tagliatelle hineingeben und je nach Packungsangabe 9 bis 12 Minuten kochen lassen.",
       "Eine Pfanne bei hoher Hitze erhitzen. Olivenöl in die heisse Pfanne geben. Das Lachsfilet mit der Hautseite nach unten hineinlegen und 3 Minuten braten lassen, ohne es zu bewegen.",
       "Den Lachs wenden und weitere 3 Minuten auf der anderen Seite braten. Anschliessend aus der Pfanne nehmen und beiseitestellen.",
       "Die Hitze reduzieren. Knoblauch und Chili in die Pfanne geben und kurz anschwitzen, dabei darauf achten, dass der Knoblauch nicht braun wird.",
-      "Mit Zitronensaft ablöschen und mit der Sahne aufgiessen.",
-      "Das Lachsfilet mit einem Messer zerkleinern und in die Sosse geben. Mit Salz und Pfeffer abschmecken.",
-      "Petersilie hinzufügen und die Sosse einmal aufkochen lassen. Danach die Hitze nochmals reduzieren.",
-      "Die gekochten Nudeln abgiessen und zur Sosse in die Pfanne geben. Alles gut miteinander vermengen.",
+      "Mit Zitronensaft ablöschen und mit der Rahm aufgiessen.",
+      "Das Lachsfilet mit einem Messer zerkleinern und in die Sauce geben. Mit Salz und Pfeffer abschmecken.",
+      "Petersilie hinzufügen und die Sauce einmal aufkochen lassen. Danach die Hitze nochmals reduzieren.",
+      "Die gekochten Nudeln abgiessen und zur Sauce in die Pfanne geben. Alles gut miteinander vermengen.",
       "Die Pasta auf Teller verteilen und servieren."
     ],
     "dietCategory": "fish",
-    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/05/gruene_tagliatelle_mit_lachs_sahne_sauce01.jpg",
+    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/05/gruene_tagliatelle_mit_lachs_rahm_sauce01.jpg",
     "imageZutaten": null,
     "imageKochen": null,
     "allergens": [
@@ -6944,7 +6944,7 @@
   },
   {
     "id": "pas-74",
-    "name": "Spätzle mit Hähnchenfleisch & Champignons in Sahnesosse",
+    "name": "Spätzle mit Hähnchenfleisch & Champignons in Rahmsauce",
     "category": "Pasta",
     "timeMinutes": 35,
     "basePortions": 2.5,
@@ -7012,7 +7012,7 @@
         "perPortions": 2.5
       },
       {
-        "name": "Sahne",
+        "name": "Rahm",
         "amount": 125,
         "unit": "g",
         "perPortions": 2.5
@@ -7050,7 +7050,7 @@
     ],
     "weatherType": "kalt",
     "source": "herrbuettner.de",
-    "description": "Ein herrlich cremiges und aromatisches Gericht mit zartem Hähnchenfleisch, gebratenen Champignons und einer würzigen Sahnesosse mit Thymian und Petersilie – einfach, schnell und unglaublich lecker.",
+    "description": "Ein herrlich cremiges und aromatisches Gericht mit zartem Hähnchenfleisch, gebratenen Champignons und einer würzigen Rahmsauce mit Thymian und Petersilie – einfach, schnell und unglaublich lecker.",
     "steps": [
       "Einen grossen Topf mit ausreichend Wasser für die Spätzle aufsetzen und zum Kochen bringen. Sobald das Wasser kocht, salzen.",
       "Das Hähnchenbrustfilet in mundgerechte Würfel von etwa 1,5-2 cm schneiden.",
@@ -7063,11 +7063,11 @@
       "1 EL Olivenöl in die Pfanne geben und die Zwiebeln darin glasig anschwitzen. Den Knoblauch hinzufügen und vermischen.",
       "Nach etwa 30 Sekunden das Tomatenmark hinzufügen, mit Zwiebeln und Knoblauch vermischen und kurz brutzeln lassen.",
       "Mit dem Geflügelfond ablöschen.",
-      "5 g Mehl mit 100 ml lauwarmem Wasser klumpenfrei verrühren und in die Pfanne giessen. Die Sahne dazugeben und alles durchrühren.",
-      "Die Pilze und das Hähnchenfleisch zurück in die Pfanne geben und durchrühren. Die Sosse aufkochen lassen, dann die Hitze reduzieren und köcheln lassen.",
-      "Die Spätzle ins kochende Wasser geben. Während die Spätzle garen, die Sosse immer wieder durchrühren und mit Salz und Pfeffer abschmecken. Bei Bedarf mit etwas Wasser verdünnen.",
-      "Die Petersilie klein hacken, zur Sosse geben und unterrühren. Etwas Petersilie für die Garnierung beiseitelegen.",
-      "Die Spätzle abseihen, auf Tellern verteilen und mit der Sosse übergiessen. Mit Petersilie garnieren und servieren."
+      "5 g Mehl mit 100 ml lauwarmem Wasser klumpenfrei verrühren und in die Pfanne giessen. Die Rahm dazugeben und alles durchrühren.",
+      "Die Pilze und das Hähnchenfleisch zurück in die Pfanne geben und durchrühren. Die Sauce aufkochen lassen, dann die Hitze reduzieren und köcheln lassen.",
+      "Die Spätzle ins kochende Wasser geben. Während die Spätzle garen, die Sauce immer wieder durchrühren und mit Salz und Pfeffer abschmecken. Bei Bedarf mit etwas Wasser verdünnen.",
+      "Die Petersilie klein hacken, zur Sauce geben und unterrühren. Etwas Petersilie für die Garnierung beiseitelegen.",
+      "Die Spätzle abseihen, auf Tellern verteilen und mit der Sauce übergiessen. Mit Petersilie garnieren und servieren."
     ],
     "dietCategory": "meat",
     "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/03/spaetzle_mit_haehnchen_champignon_sauce_.jpg",
@@ -7080,7 +7080,7 @@
   },
   {
     "id": "pas-75",
-    "name": "Spaghetti mit Bacon, Mais, Frühlingszwiebeln und Sahne",
+    "name": "Spaghetti mit Speck, Mais, Frühlingszwiebeln und Rahm",
     "category": "Pasta",
     "timeMinutes": 20,
     "basePortions": 2,
@@ -7109,7 +7109,7 @@
         "perPortions": 2
       },
       {
-        "name": "Bacon",
+        "name": "Speck",
         "amount": 75,
         "unit": "g",
         "perPortions": 2
@@ -7121,7 +7121,7 @@
         "perPortions": 2
       },
       {
-        "name": "Sahne",
+        "name": "Rahm",
         "amount": 100,
         "unit": "g",
         "perPortions": 2
@@ -7141,22 +7141,22 @@
     ],
     "weatherType": "neutral",
     "source": "herrbuettner.de",
-    "description": "Eine herrlich frische und aromatische Pasta, bei der Bacon im eigenen Fett knusprig ausgebraten wird und zusammen mit Frühlingszwiebeln, Mais und Sahne eine cremige Sauce ergibt. Schön gelb strahlend wie die Sonne!",
+    "description": "Eine herrlich frische und aromatische Pasta, bei der Speck im eigenen Fett knusprig ausgebraten wird und zusammen mit Frühlingszwiebeln, Mais und Rahm eine cremige Sauce ergibt. Schön gelb strahlend wie die Sonne!",
     "steps": [
       "Einen grossen Topf mit reichlich Wasser aufsetzen und zum Kochen bringen. Das Wasser gut salzen und die Spaghetti hineingeben. Unter gelegentlichem Rühren al dente kochen.",
-      "Gleichzeitig eine Pfanne bei mittlerer Hitze erhitzen. Die Bacon-Scheiben hineingeben und das Fett langsam auslassen. Den Bacon dabei schön braun braten, nach etwa 3 Minuten wenden. Darauf achten, dass er nicht verbrennt.",
-      "Sobald der Bacon knusprig und gebräunt ist, aus der Pfanne nehmen und auf Küchenpapier abtropfen lassen, damit überschüssiges Fett aufgesaugt wird und er richtig kross wird.",
-      "Während der Bacon brät, den Mais aus der Dose nehmen, durch ein Sieb abtropfen lassen und unter kaltem Wasser abspülen.",
+      "Gleichzeitig eine Pfanne bei mittlerer Hitze erhitzen. Die Speck-Scheiben hineingeben und das Fett langsam auslassen. Den Speck dabei schön braun braten, nach etwa 3 Minuten wenden. Darauf achten, dass er nicht verbrennt.",
+      "Sobald der Speck knusprig und gebräunt ist, aus der Pfanne nehmen und auf Küchenpapier abtropfen lassen, damit überschüssiges Fett aufgesaugt wird und er richtig kross wird.",
+      "Während der Speck brät, den Mais aus der Dose nehmen, durch ein Sieb abtropfen lassen und unter kaltem Wasser abspülen.",
       "Den Knoblauch schälen und fein würfeln. Die Frühlingszwiebeln waschen, trocken tupfen und der Länge nach in Ringe schneiden.",
-      "Im ausgelassenen Baconfett den Knoblauch und die Frühlingszwiebeln anschwitzen. Gut durchrühren und nach etwa 30 Sekunden den Mais hinzufügen.",
-      "Alles nochmals gut durchrühren, dann die Sahne dazugiessen. Mit Salz und Pfeffer würzen.",
+      "Im ausgelassenen Speckfett den Knoblauch und die Frühlingszwiebeln anschwitzen. Gut durchrühren und nach etwa 30 Sekunden den Mais hinzufügen.",
+      "Alles nochmals gut durchrühren, dann die Rahm dazugiessen. Mit Salz und Pfeffer würzen.",
       "Die fertig gekochten Spaghetti mit einer Zange direkt aus dem Topf in die Pfanne geben. Dabei etwas Nudelwasser (etwa eine Suppenkelle voll) mitnehmen.",
-      "Die Pasta mit den anderen Zutaten gut vermischen und etwa 60 Sekunden unter gelegentlichem Rühren köcheln lassen, damit durch Sahne und Nudelwasser eine schöne cremige Sauce entsteht.",
-      "Den Bacon grob klein schneiden, zur Pasta geben und alles ein letztes Mal gut vermischen.",
+      "Die Pasta mit den anderen Zutaten gut vermischen und etwa 60 Sekunden unter gelegentlichem Rühren köcheln lassen, damit durch Rahm und Nudelwasser eine schöne cremige Sauce entsteht.",
+      "Den Speck grob klein schneiden, zur Pasta geben und alles ein letztes Mal gut vermischen.",
       "Die Pasta auf Teller verteilen und sofort servieren."
     ],
     "dietCategory": "meat",
-    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/03/Spaghetti_mit_Bacon_Mais_Fruehlingszwiebeln_und_Sahne.jpg",
+    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/03/Spaghetti_mit_Speck_Mais_Fruehlingszwiebeln_und_Rahm.jpg",
     "imageZutaten": null,
     "imageKochen": null,
     "allergens": [
@@ -7370,7 +7370,7 @@
   },
   {
     "id": "pas-78",
-    "name": "Schnelle Spaghetti in Tomaten-Hackfleisch Sosse mit Spinat und Fenchelsamen",
+    "name": "Schnelle Spaghetti in Tomaten-Hackfleisch Sauce mit Spinat und Fenchelsamen",
     "category": "Pasta",
     "timeMinutes": 30,
     "basePortions": 4,
@@ -7480,18 +7480,18 @@
     ],
     "weatherType": "neutral",
     "source": "herrbuettner.de",
-    "description": "Würzige Pasta mit Hackfleischsosse, verfeinert mit aromatischen Fenchelsamen, frischem Spinat und Worcestershiresauce. Eine schnelle Alternative zur klassischen Bolognese mit neuen spannenden Aromen.",
+    "description": "Würzige Pasta mit Hackfleischsauce, verfeinert mit aromatischen Fenchelsamen, frischem Spinat und Worcestershiresauce. Eine schnelle Alternative zur klassischen Bolognese mit neuen spannenden Aromen.",
     "steps": [
       "Zwiebel und Knoblauch schälen. Die Zwiebel in feine Würfel und den Knoblauch in dünne Scheiben schneiden. Den Spinat bei Bedarf waschen und trocken tupfen.",
       "Einen grossen Topf bei mittlerer Hitze erhitzen. Olivenöl hineingeben und das Hackfleisch darin anbraten. So lange braten, bis das austretende Fett verkocht ist und es im Topf brutzelt. Dabei sollte sich ein Bratensatz am Topfboden bilden.",
       "Zwiebelwürfel und Knoblauchscheiben hinzugeben, gut durchrühren und etwa 1 Minute unter gelegentlichem Rühren anbraten.",
       "Kreuzkümmel, Fenchelsamen, getrockneten Oregano, Paprikapulver, Salz und Pfeffer hinzugeben und gut durchrühren. Anschliessend das Tomatenmark einrühren.",
       "Mit Worcestershiresauce ablöschen. Die Dosentomaten hinzugeben und die Dose zur Hälfte mit Wasser füllen. Dieses Wasser ebenfalls in den Topf geben.",
-      "Die Sosse 10 Minuten köcheln lassen und zwischendurch die Tomaten mit einem Kochlöffel zerdrücken.",
+      "Die Sauce 10 Minuten köcheln lassen und zwischendurch die Tomaten mit einem Kochlöffel zerdrücken.",
       "In der Zwischenzeit einen Topf mit reichlich Wasser zum Kochen bringen. Das kochende Wasser kräftig salzen und die Spaghetti darin bissfest kochen. Dabei ab und zu umrühren.",
-      "Nach 10 Minuten Kochzeit den Spinat zur Tomaten-Hackfleisch-Sosse geben. Den Topf mit einem Deckel verschliessen und etwa 30 Sekunden warten, bis der Spinat zusammengefallen ist. Deckel abnehmen und den Spinat unterrühren.",
-      "Die Sosse mit Salz und Pfeffer abschmecken.",
-      "Die fertig gekochten Spaghetti abgiessen und zurück in den Topf geben. Die Sosse zu den Nudeln geben und alles gut miteinander vermischen.",
+      "Nach 10 Minuten Kochzeit den Spinat zur Tomaten-Hackfleisch-Sauce geben. Den Topf mit einem Deckel verschliessen und etwa 30 Sekunden warten, bis der Spinat zusammengefallen ist. Deckel abnehmen und den Spinat unterrühren.",
+      "Die Sauce mit Salz und Pfeffer abschmecken.",
+      "Die fertig gekochten Spaghetti abgiessen und zurück in den Topf geben. Die Sauce zu den Nudeln geben und alles gut miteinander vermischen.",
       "Anrichten und mit geriebenem Parmesan garnieren. Servieren."
     ],
     "dietCategory": "meat",
@@ -7505,7 +7505,7 @@
   },
   {
     "id": "pas-79",
-    "name": "Penne mit Brokkoli und Cabanossi in Frischkäse-Sahne Sosse",
+    "name": "Penne mit Brokkoli und Cabanossi in Frischkäse-Rahm Sauce",
     "category": "Pasta",
     "timeMinutes": 20,
     "basePortions": 4,
@@ -7547,7 +7547,7 @@
         "perPortions": 4
       },
       {
-        "name": "Sahne",
+        "name": "Rahm",
         "amount": 100,
         "unit": "g",
         "perPortions": 4
@@ -7591,7 +7591,7 @@
     ],
     "weatherType": "neutral",
     "source": "herrbuettner.de",
-    "description": "Ein schnelles und unkompliziertes Pastagericht mit knackigem Brokkoli, würziger Cabanossi und einer cremigen Frischkäse-Sahne-Sauce. Perfekt für alle, die es einfach und lecker mögen!",
+    "description": "Ein schnelles und unkompliziertes Pastagericht mit knackigem Brokkoli, würziger Cabanossi und einer cremigen Frischkäse-Rahm-Sauce. Perfekt für alle, die es einfach und lecker mögen!",
     "steps": [
       "Die Cabanossi-Würste der Länge nach halbieren und anschliessend in etwa 1 cm dicke Scheiben schneiden. Den Knoblauch schälen und fein würfeln.",
       "Einen grossen Topf mit reichlich Wasser aufsetzen und zum Kochen bringen. Das Wasser kräftig salzen.",
@@ -7599,13 +7599,13 @@
       "Die Brokkoli-Röschen aus dem Wasser nehmen und beiseite stellen. Den Strunk im Wasser lassen und die Penne hinzugeben. Gelegentlich umrühren und nach Packungsanleitung kochen.",
       "In der Zwischenzeit eine Pfanne bei mittlerer Hitze erhitzen und das Olivenöl hineingeben. Die Cabanossi-Scheiben scharf anbraten, bis sie schön braun sind.",
       "Knoblauch und Brokkoli-Röschen zur Wurst geben. Mit Salz, Pfeffer, Muskatnuss und Paprikapulver würzen, gut durchrühren und etwa 1 Minute anbraten.",
-      "Den Frischkäse hinzufügen und unterrühren, bis er geschmolzen ist. Dann die Sahne angiessen und aufkochen lassen.",
+      "Den Frischkäse hinzufügen und unterrühren, bis er geschmolzen ist. Dann die Rahm angiessen und aufkochen lassen.",
       "Die fertig gekochten Penne mit einer Schöpfkelle direkt aus dem Kochwasser in die Pfanne geben und dabei etwas Nudelwasser mitnehmen.",
       "Mit zwei Kochlöffeln die Zutaten wie bei einem Salat unterheben und etwa 30 Sekunden lang vermischen, bis eine cremige Sauce entsteht.",
       "Auf Teller verteilen und mit Chiliflocken garnieren. Sofort servieren."
     ],
     "dietCategory": "meat",
-    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/03/Penne_mit_Brokkoli_und_Cabanossi_in_Frischkaese-Sahne-Sauce.jpg",
+    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/03/Penne_mit_Brokkoli_und_Cabanossi_in_Frischkaese-Rahm-Sauce.jpg",
     "imageZutaten": null,
     "imageKochen": null,
     "allergens": [
@@ -7615,7 +7615,7 @@
   },
   {
     "id": "pas-80",
-    "name": "Tortellini an Schinken-Mozzarella-Sahne-Sosse",
+    "name": "Tortellini an Schinken-Mozzarella-Rahm-Sauce",
     "category": "Pasta",
     "timeMinutes": 15,
     "basePortions": 2,
@@ -7657,7 +7657,7 @@
         "perPortions": 2
       },
       {
-        "name": "Kochsahne",
+        "name": "Kochrahm",
         "amount": 200,
         "unit": "g",
         "perPortions": 2
@@ -7707,7 +7707,7 @@
     ],
     "weatherType": "neutral",
     "source": "herrbuettner.de",
-    "description": "Ein schnelles Feierabend-Gericht mit frischen Spinat-Ricotta-Tortellini in einer cremigen Schinken-Mozzarella-Sahne-Sosse. In nur 15 Minuten steht dieses köstliche Pastagericht auf dem Tisch – perfekt nach einem langen Arbeitstag.",
+    "description": "Ein schnelles Feierabend-Gericht mit frischen Spinat-Ricotta-Tortellini in einer cremigen Schinken-Mozzarella-Rahm-Sauce. In nur 15 Minuten steht dieses köstliche Pastagericht auf dem Tisch – perfekt nach einem langen Arbeitstag.",
     "steps": [
       "Zwiebel und Knoblauch schälen und in feine Würfel schneiden.",
       "Basilikum klein hacken, dabei ein paar Blätter für die Garnitur beiseitelegen.",
@@ -7718,13 +7718,13 @@
       "Tortellini hinzufügen, gut durchrühren und mit 80 ml Wasser aufgiessen.",
       "Köcheln lassen, bis etwa zwei Drittel des Wassers verkocht sind.",
       "Butter hinzufügen und unterrühren, bis sie geschmolzen ist.",
-      "Kochsahne, geriebenen Mozzarella und Schinken hinzufügen. Mit Salz und Pfeffer würzen.",
+      "Kochrahm, geriebenen Mozzarella und Schinken hinzufügen. Mit Salz und Pfeffer würzen.",
       "Alles gut durchrühren und weitere 5 Minuten köcheln lassen.",
       "Das gehackte Basilikum unterrühren.",
       "Servieren und mit den restlichen Basilikumblättern und etwas Pfeffer garnieren."
     ],
     "dietCategory": "meat",
-    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/02/spinat-ricotta-tortellini-an-schinken-mozzarella-sahne-sauce01.jpg",
+    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/02/spinat-ricotta-tortellini-an-schinken-mozzarella-rahm-sauce01.jpg",
     "imageZutaten": null,
     "imageKochen": null,
     "allergens": [
@@ -7733,7 +7733,7 @@
   },
   {
     "id": "pas-81",
-    "name": "Gnocchi in Tomaten-Mozzarella Sosse",
+    "name": "Gnocchi in Tomaten-Mozzarella Sauce",
     "category": "Pasta",
     "timeMinutes": 15,
     "basePortions": 4,
@@ -7832,7 +7832,7 @@
     ],
     "weatherType": "neutral",
     "source": "herrbuettner.de",
-    "description": "Ein geniales Feierabend-Gericht, das in nur 15 Minuten fertig ist. Frische Gnocchi werden direkt in der Pfanne zubereitet und mit einer cremigen Tomaten-Mozzarella-Sosse verfeinert – perfekt für schnelle, leckere Küche nach einem langen Arbeitstag.",
+    "description": "Ein geniales Feierabend-Gericht, das in nur 15 Minuten fertig ist. Frische Gnocchi werden direkt in der Pfanne zubereitet und mit einer cremigen Tomaten-Mozzarella-Sauce verfeinert – perfekt für schnelle, leckere Küche nach einem langen Arbeitstag.",
     "steps": [
       "Zwiebeln und Knoblauch schälen und in grobe Würfel bzw. Scheiben schneiden.",
       "Eine grosse Pfanne bei mittlerer Hitze erhitzen und 2 EL Olivenöl hineingeben.",
@@ -7840,10 +7840,10 @@
       "Knoblauch und 2 TL getrockneten Oregano hinzufügen, gut vermischen und etwa 1 Minute anschwitzen lassen.",
       "Das Tomatenmark gründlich einrühren und die geschälten Tomaten aus der Dose dazugeben.",
       "Die Dose zu einem Drittel mit Wasser füllen und in die Pfanne giessen. Mit Salz, Pfeffer und einer Prise Zucker würzen und durchrühren.",
-      "Die Sosse in einen Mixer geben, den geriebenen Mozzarella hinzufügen und alles glatt pürieren. Beiseite stellen.",
+      "Die Sauce in einen Mixer geben, den geriebenen Mozzarella hinzufügen und alles glatt pürieren. Beiseite stellen.",
       "80 ml Wasser in die Pfanne giessen und die Gnocchi dazugeben. Warten, bis das Wasser fast verkocht ist.",
       "15 g Butter unterrühren und die Gnocchi mit Pfeffer würzen.",
-      "Die Sosse über die Gnocchi giessen und alles gut durchrühren.",
+      "Die Sauce über die Gnocchi giessen und alles gut durchrühren.",
       "Das Basilikum (bis auf ein paar Blätter zum Garnieren) klein hacken und zu den Gnocchi geben. Ein letztes Mal durchrühren.",
       "Anrichten und mit den restlichen Basilikumblättern garnieren."
     ],
@@ -7857,7 +7857,7 @@
   },
   {
     "id": "pas-82",
-    "name": "One-Pot-Pasta mit Paprika & Würstchen in Tomatensosse",
+    "name": "One-Pot-Pasta mit Paprika & Würstchen in Tomatensauce",
     "category": "Pasta",
     "timeMinutes": 30,
     "basePortions": 4,
@@ -7974,7 +7974,7 @@
     ],
     "weatherType": "neutral",
     "source": "herrbuettner.de",
-    "description": "Würzige, kräftige One-Pot-Pasta mit buntem Paprikagemüse, herzhaften Brühwürstchen und aromatischer Tomatensosse. Alles wird Step-by-Step im Topf zubereitet – so entstehen trotzdem leckere Röstaromen und eine schön sämige Sauce.",
+    "description": "Würzige, kräftige One-Pot-Pasta mit buntem Paprikagemüse, herzhaften Brühwürstchen und aromatischer Tomatensauce. Alles wird Step-by-Step im Topf zubereitet – so entstehen trotzdem leckere Röstaromen und eine schön sämige Sauce.",
     "steps": [
       "Die Paprika waschen, trocknen, Kerne und weisse Fasern entfernen und das Fruchtfleisch in Würfel schneiden.",
       "Die Zwiebel schälen und fein würfeln. Den Knoblauch schälen und fein hacken.",
@@ -7988,7 +7988,7 @@
       "Die Paprikawürfel in den Topf geben und mit Salz, Pfeffer und 1 TL Paprikapulver würzen. Alles gut durchrühren und 2 Minuten anbraten.",
       "Mit dem Tomatenfruchtfleisch und 400 ml Wasser aufgiessen.",
       "Die Nudeln und die Brühwürstchenscheiben hinzufügen.",
-      "Alles bei mittlerer Hitze 15-20 Minuten köcheln lassen, dabei immer wieder umrühren, damit nichts ansetzt. Die Nudeln werden nach und nach gar und die Sosse wird sämig.",
+      "Alles bei mittlerer Hitze 15-20 Minuten köcheln lassen, dabei immer wieder umrühren, damit nichts ansetzt. Die Nudeln werden nach und nach gar und die Sauce wird sämig.",
       "Kurz vor Ende der Garzeit 2 EL Worcestershiresauce unterrühren und mit Salz und Pfeffer abschmecken.",
       "Die gehackte Petersilie hinzufügen und ein letztes Mal gut durchrühren.",
       "Auf Tellern anrichten und mit frisch geriebenem Parmesan garnieren."
@@ -8157,7 +8157,7 @@
     ],
     "weatherType": "kalt",
     "source": "herrbuettner.de",
-    "description": "Ein klassisches Ragù alla bolognese, das mit viel Zeit und Geduld zubereitet wird. Besonders aromatisch durch die Zugabe von Zimt und Zartbitterschokolade, die den würzigen Tomaten-Fleisch-Sosse eine besondere Tiefe verleihen.",
+    "description": "Ein klassisches Ragù alla bolognese, das mit viel Zeit und Geduld zubereitet wird. Besonders aromatisch durch die Zugabe von Zimt und Zartbitterschokolade, die den würzigen Tomaten-Fleisch-Sauce eine besondere Tiefe verleihen.",
     "steps": [
       "Zwiebeln und Knoblauch schälen und in feine Würfel schneiden. Rosmarin und Thymian von den Stielen zupfen und fein hacken.",
       "Karotten und Staudensellerie gründlich waschen und anschliessend mit einer Reibe oder Küchenmaschine fein raspeln. Die Nelken im Mörser zu feinem Pulver zerkleinern.",
@@ -8167,8 +8167,8 @@
       "Mit Rotwein ablöschen, dabei den Bratensatz vom Boden lösen und alles gut durchrühren. Warten, bis der Rotwein verkocht ist.",
       "Die Hitze auf mittlere Stufe reduzieren. Zwiebeln, Knoblauch, Karotten, Staudensellerie, Rosmarin, Thymian, getrockneten Oregano und Nelkenpulver hinzufügen. Unter gelegentlichem Rühren 5 Minuten anschwitzen lassen.",
       "Tomatenmark einrühren, dann Rinderfond und Dosentomaten dazugeben. Gut durchrühren und die Lorbeerblätter hinzufügen.",
-      "Mit Salz, Pfeffer und einer Prise Zucker würzen. Die Hitze auf kleine Stufe reduzieren und die Sosse für 2 Stunden und 30 Minuten leicht köchelnd auf dem Herd lassen. Zwischendurch immer mal wieder umrühren.",
-      "Falls gewünscht, nach etwa 2 Stunden einen Deckel auflegen, damit die Sosse nicht zu stark eindickt.",
+      "Mit Salz, Pfeffer und einer Prise Zucker würzen. Die Hitze auf kleine Stufe reduzieren und die Sauce für 2 Stunden und 30 Minuten leicht köchelnd auf dem Herd lassen. Zwischendurch immer mal wieder umrühren.",
+      "Falls gewünscht, nach etwa 2 Stunden einen Deckel auflegen, damit die Sauce nicht zu stark eindickt.",
       "Nach 2 Stunden und 30 Minuten die Lorbeerblätter entfernen. Zimt und geriebene Zartbitterschokolade hinzufügen und gut durchrühren.",
       "Den Deckel auflegen und das Ragù weitere 30 Minuten leicht köcheln lassen.",
       "Zum Schluss mit Salz und Pfeffer abschmecken und servieren."
@@ -8184,7 +8184,7 @@
   },
   {
     "id": "pas-84",
-    "name": "Pasta gratiniert in cremiger Käse-Sahne-Sosse mit Thymian",
+    "name": "Pasta gratiniert in cremiger Käse-Rahm-Sauce mit Thymian",
     "category": "Pasta",
     "timeMinutes": 25,
     "basePortions": 4,
@@ -8234,7 +8234,7 @@
         "perPortions": 4
       },
       {
-        "name": "Sahne",
+        "name": "Rahm",
         "amount": 200,
         "unit": "ml",
         "perPortions": 4
@@ -8290,7 +8290,7 @@
     ],
     "weatherType": "kalt",
     "source": "herrbuettner.de",
-    "description": "Cremige Pasta-Träume werden wahr! Korkenzieher-Nudeln in einer würzigen Käse-Sahne-Sosse mit Thymian, gratiniert mit knusprigem Parmesan – cheesy, creamy und crispy zugleich.",
+    "description": "Cremige Pasta-Träume werden wahr! Korkenzieher-Nudeln in einer würzigen Käse-Rahm-Sauce mit Thymian, gratiniert mit knusprigem Parmesan – cheesy, creamy und crispy zugleich.",
     "steps": [
       "Den Backofen auf 180 Grad Ober-/Unterhitze vorheizen und ein Blech auf die oberste Schiene schieben.",
       "Einen grossen Topf mit reichlich Wasser für die Nudeln aufsetzen. Sobald es kocht, kräftig salzen und die Pasta hineingeben.",
@@ -8299,14 +8299,14 @@
       "Knoblauch und Thymian zu den Zwiebeln geben, gut umrühren und etwa 2 Minuten anschwitzen lassen.",
       "Die Pfanne mit Weisswein ablöschen und köcheln lassen, bis der Wein fast vollständig verkocht ist.",
       "Die Butter in die Pfanne geben, schmelzen lassen und gut verteilen. Das Mehl einstreuen und mit den anderen Zutaten verrühren, bis eine Mehlschwitze entsteht.",
-      "Mit Geflügelfond und Sahne aufgiessen, den Schmelzkäse unterrühren bis er geschmolzen ist. Mit Salz, Pfeffer und frisch geriebener Muskatnuss würzen.",
+      "Mit Geflügelfond und Rahm aufgiessen, den Schmelzkäse unterrühren bis er geschmolzen ist. Mit Salz, Pfeffer und frisch geriebener Muskatnuss würzen.",
       "Die Hitze reduzieren und die Sauce leicht köcheln lassen, bis sie beginnt einzudicken.",
       "Die Nudeln kurz vor dem al-dente-Punkt abgiessen und zur Sauce in die Pfanne geben. Gut vermengen und 1 Minute ruhen lassen.",
       "Geriebenen Parmesan über die Pasta streuen und die Pfanne für 8-10 Minuten in den vorgeheizten Backofen geben, bis der Käse gratiniert und die oberste Schicht leicht gebräunt ist.",
       "Die gratinierte Pasta aus dem Ofen nehmen, nach Belieben mit Thymianblättern garnieren und servieren."
     ],
     "dietCategory": "vegetarian",
-    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/10/pasta_in_cremiger_sahne_kaese_sosse_mit_thymian01.jpg",
+    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/10/pasta_in_cremiger_rahm_kaese_sauce_mit_thymian01.jpg",
     "imageZutaten": null,
     "imageKochen": null,
     "allergens": [
@@ -8353,7 +8353,7 @@
         "perPortions": 2
       },
       {
-        "name": "Sahne",
+        "name": "Rahm",
         "amount": 80,
         "unit": "ml",
         "perPortions": 2
@@ -8404,14 +8404,14 @@
       "Den Knoblauch schälen (Tipp: Knoblauchzehen in eine Schüssel mit Deckel geben und kräftig schütteln, dann lässt sich die Schale leichter entfernen). Die geschälten Zehen halbieren und zusammen mit einer Prise Salz in das heisse Öl geben.",
       "Den Knoblauch bei mittlerer Hitze braten, bis er leicht gebräunt und etwas schrumpelig wird. Den Topf dabei schräg halten, damit der Knoblauch im Öl schwimmt.",
       "Währenddessen den Parmesan reiben, die Petersilie fein hacken und die Chili entkernen und in feine Streifen schneiden.",
-      "Den gebratenen Knoblauch mit dem Öl in eine Schüssel geben. Sahne, drei Viertel des geriebenen Parmesans, Eigelb, Salz und Pfeffer hinzufügen und alles mit einem Pürierstab fein pürieren.",
-      "Die fertig gekochten Spaghetti abgiessen und zurück in den Topf geben. Die Knoblauch-Sahne-Sauce zu den Nudeln geben und gründlich vermischen.",
+      "Den gebratenen Knoblauch mit dem Öl in eine Schüssel geben. Rahm, drei Viertel des geriebenen Parmesans, Eigelb, Salz und Pfeffer hinzufügen und alles mit einem Pürierstab fein pürieren.",
+      "Die fertig gekochten Spaghetti abgiessen und zurück in den Topf geben. Die Knoblauch-Rahm-Sauce zu den Nudeln geben und gründlich vermischen.",
       "Chili und Petersilie untermischen und erneut gut durchrühren.",
       "Den Saft einer halben Zitrone hinzufügen und untermengen.",
       "Die Pasta auf Tellern anrichten und mit dem restlichen Parmesan und etwas Pfeffer garnieren."
     ],
     "dietCategory": "vegetarian",
-    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/08/Spaghetti_Aglio_Pasta_mit_Knoblauch_Sahne_Petersilie_und_Chili_01.jpg",
+    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/08/Spaghetti_Aglio_Pasta_mit_Knoblauch_Rahm_Petersilie_und_Chili_01.jpg",
     "imageZutaten": null,
     "imageKochen": null,
     "allergens": [
@@ -8422,7 +8422,7 @@
   },
   {
     "id": "pas-86",
-    "name": "Speedy Tomatensosse - Pasta al Pomodoro",
+    "name": "Speedy Tomatensauce - Pasta al Pomodoro",
     "category": "Pasta",
     "timeMinutes": 35,
     "basePortions": 2,
@@ -8520,7 +8520,7 @@
     ],
     "weatherType": "neutral",
     "source": "herrbuettner.de",
-    "description": "Ein italienischer Klassiker, der schnell und einfach zubereitet ist. Die aromatische Tomatensosse mit frischem Basilikum und Parmesan ist die perfekte Grundlage für viele weitere Pasta-Variationen.",
+    "description": "Ein italienischer Klassiker, der schnell und einfach zubereitet ist. Die aromatische Tomatensauce mit frischem Basilikum und Parmesan ist die perfekte Grundlage für viele weitere Pasta-Variationen.",
     "steps": [
       "Knoblauch und Zwiebel schälen und grob würfeln. Basilikumblätter vom Stiel zupfen und grob hacken, dabei einige Blätter für die Garnierung beiseitelegen. Parmesan fein reiben.",
       "Eine grosse Pfanne bei mittlerer Hitze erhitzen und Olivenöl hineingeben. Getrockneten Oregano hinzufügen und das Öl etwa 30 Sekunden aromatisieren lassen.",
@@ -8528,10 +8528,10 @@
       "Mit Balsamico-Essig ablöschen. Dann die Dosentomaten samt Flüssigkeit hinzufügen. Die leere Dose zu 3/4 mit Wasser füllen und ebenfalls in die Pfanne giessen.",
       "Mit Salz und Pfeffer würzen, gut umrühren und für 10 Minuten köcheln lassen.",
       "Einen grossen Topf mit Wasser für die Nudeln aufsetzen.",
-      "Nach 10 Minuten Kochzeit die Sosse in einen Mixer geben oder mit einem Pürierstab fein pürieren. Die pürierte Sosse zurück in die Pfanne geben und weitere 10-15 Minuten leicht köcheln lassen.",
+      "Nach 10 Minuten Kochzeit die Sauce in einen Mixer geben oder mit einem Pürierstab fein pürieren. Die pürierte Sauce zurück in die Pfanne geben und weitere 10-15 Minuten leicht köcheln lassen.",
       "Das Nudelwasser zum Kochen bringen, grosszügig salzen und die Nudeln etwa 12 Minuten kochen.",
       "Die gegarten Nudeln abgiessen und zurück in den Topf geben. Butter unter die Nudeln rühren.",
-      "Die Tomatensosse zu den Nudeln in den Topf geben, bei Bedarf nochmals abschmecken und nachwürzen. Alles gut vermischen.",
+      "Die Tomatensauce zu den Nudeln in den Topf geben, bei Bedarf nochmals abschmecken und nachwürzen. Alles gut vermischen.",
       "Gehacktes Basilikum und 3/4 des geriebenen Parmesans unterrühren.",
       "Auf Teller verteilen und mit dem restlichen Parmesan und Basilikum garnieren."
     ],
@@ -8546,7 +8546,7 @@
   },
   {
     "id": "pas-87",
-    "name": "Farfalle mit Bacon, Paprika, Erbsen & Frischkäse",
+    "name": "Farfalle mit Speck, Paprika, Erbsen & Frischkäse",
     "category": "Pasta",
     "timeMinutes": 25,
     "basePortions": 4,
@@ -8581,7 +8581,7 @@
         "perPortions": 4
       },
       {
-        "name": "Bacon",
+        "name": "Speck",
         "amount": 60,
         "unit": "g",
         "perPortions": 4
@@ -8631,20 +8631,20 @@
     ],
     "weatherType": "neutral",
     "source": "herrbuettner.de",
-    "description": "Eine kalorienbewusste Pasta mit rauchigem Bacon, bunter Paprika und cremigem Frischkäse. Vollkornnudeln sorgen für extra Nährstoffe, während die Sosse mit Nudelwasser statt Sahne zubereitet wird - lecker und ausgewogen zugleich!",
+    "description": "Eine kalorienbewusste Pasta mit rauchigem Speck, bunter Paprika und cremigem Frischkäse. Vollkornnudeln sorgen für extra Nährstoffe, während die Sauce mit Nudelwasser statt Rahm zubereitet wird - lecker und ausgewogen zugleich!",
     "steps": [
       "Einen grossen Topf mit reichlich Wasser aufsetzen und zum Kochen bringen. Sobald das Wasser kocht, kräftig salzen und die Farfalle hineingeben. Während des Kochens gelegentlich umrühren.",
-      "Den Bacon in Stücke schneiden. Eine Pfanne ohne Öl bei mittlerer Hitze erwärmen und die Baconwürfel hineingeben. Das Fett auslassen, bis der Bacon schön knusprig wird.",
+      "Den Speck in Stücke schneiden. Eine Pfanne ohne Öl bei mittlerer Hitze erwärmen und die Speckwürfel hineingeben. Das Fett auslassen, bis der Speck schön knusprig wird.",
       "Währenddessen die Paprika waschen, entkernen und in Würfel schneiden. Die Zwiebel schälen und fein würfeln.",
-      "Sobald das Baconfett ausgelassen ist, die Zwiebelwürfel in die Pfanne geben und glasig dünsten.",
+      "Sobald das Speckfett ausgelassen ist, die Zwiebelwürfel in die Pfanne geben und glasig dünsten.",
       "Paprikawürfel und tiefgekühlte Erbsen hinzufügen und alles gut durchrühren. Mit Salz, Pfeffer und Paprika-Gewürz würzen und nochmals gut vermischen.",
-      "Die fertig gekochten Nudeln abgiessen, dabei etwa 150 ml Nudelwasser auffangen. Die Farfalle zur Gemüse-Bacon-Mischung in die Pfanne geben und alles gut durchmischen. 5 Minuten gemeinsam anbraten.",
+      "Die fertig gekochten Nudeln abgiessen, dabei etwa 150 ml Nudelwasser auffangen. Die Farfalle zur Gemüse-Speck-Mischung in die Pfanne geben und alles gut durchmischen. 5 Minuten gemeinsam anbraten.",
       "Das aufgefangene Nudelwasser in die Pfanne giessen, den Frischkäse hinzufügen und alles gründlich vermischen, bis sich der Frischkäse überall verteilt hat. Bei Bedarf mit Salz und Pfeffer abschmecken.",
       "Den Herd ausschalten. Die Petersilie fein hacken und unter die Pasta heben. Ein letztes Mal durchrühren und kurz ruhen lassen.",
       "Auf Teller verteilen und nach Belieben mit geriebenem Parmesan garnieren."
     ],
     "dietCategory": "meat",
-    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/07/vollkorn_pasta_mit_bacon_erbsen_paprika_und_frischkaese01.jpg",
+    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/07/vollkorn_pasta_mit_speck_erbsen_paprika_und_frischkaese01.jpg",
     "imageZutaten": null,
     "imageKochen": null,
     "allergens": [
@@ -8653,7 +8653,7 @@
   },
   {
     "id": "pas-88",
-    "name": "Hackbällchen mit Parmesan-Kruste in Tomatensosse auf Spaghetti",
+    "name": "Hackbällchen mit Parmesan-Kruste in Tomatensauce auf Spaghetti",
     "category": "Pasta",
     "timeMinutes": 30,
     "basePortions": 4,
@@ -8781,7 +8781,7 @@
     ],
     "weatherType": "neutral",
     "source": "herrbuettner.de",
-    "description": "Saftige Hackbällchen mit goldbrauner Parmesan-Kruste, die in einer aromatischen Tomatensosse fertiggaren und auf Spaghetti serviert werden – ein Gericht, das Gross und Klein begeistert!",
+    "description": "Saftige Hackbällchen mit goldbrauner Parmesan-Kruste, die in einer aromatischen Tomatensauce fertiggaren und auf Spaghetti serviert werden – ein Gericht, das Gross und Klein begeistert!",
     "steps": [
       "Die Zwiebel und den Knoblauch schälen und in grobe Würfel schneiden. Das Brötchen in einer Küchenmaschine zu feinen Bröseln verarbeiten.",
       "Den Rosmarin vom Stiel zupfen und grob hacken. Die Petersilie fein hacken und einen Teil davon für die Garnierung beiseite stellen. Den Parmesan reiben und in eine Schüssel geben.",
@@ -8790,14 +8790,14 @@
       "Eine Pfanne bei hoher Hitze erhitzen, das Olivenöl hinzugeben und die Hackbällchen von allen Seiten scharf anbraten, bis sich eine goldbraune Kruste gebildet hat. Die Bällchen aus der Pfanne nehmen und beiseite stellen.",
       "Die Hitze auf mittlere Stufe reduzieren. 1 TL Oregano und den Rosmarin im Bratfett anschwitzen. Zwiebeln und Knoblauch hinzugeben und glasig dünsten.",
       "Das Tomatenmark einrühren und den Balsamicoessig hinzufügen. Die Dosentomaten dazugeben, die Dose zur Hälfte mit Wasser füllen und ebenfalls in die Pfanne geben. Die Tomaten dabei grob zerkleinern.",
-      "Die Sosse 10 Minuten köcheln lassen, dann mit einem Pürierstab oder Mixer fein pürieren. Die Sosse zurück in die Pfanne geben und auf kleiner Hitze weiterköcheln lassen.",
-      "Mit Zucker, Salz und Pfeffer abschmecken. Die Hackbällchen wieder in die Sosse geben und 10-15 Minuten darin fertiggaren lassen.",
+      "Die Sauce 10 Minuten köcheln lassen, dann mit einem Pürierstab oder Mixer fein pürieren. Die Sauce zurück in die Pfanne geben und auf kleiner Hitze weiterköcheln lassen.",
+      "Mit Zucker, Salz und Pfeffer abschmecken. Die Hackbällchen wieder in die Sauce geben und 10-15 Minuten darin fertiggaren lassen.",
       "In der Zwischenzeit einen Topf mit Wasser zum Kochen bringen, salzen und die Spaghetti darin bissfest garen.",
-      "Die Hackbällchen aus der Pfanne nehmen. Die Spaghetti abgiessen und in der Tomatensosse schwenken.",
+      "Die Hackbällchen aus der Pfanne nehmen. Die Spaghetti abgiessen und in der Tomatensauce schwenken.",
       "Die Spaghetti auf Teller verteilen, jeweils 3-4 Hackbällchen darauf anrichten und mit der restlichen Petersilie und nach Belieben mit Parmesan garnieren."
     ],
     "dietCategory": "meat",
-    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/06/hackbaellchen_in_tomatensosse_mit_spaghetti_01.jpg",
+    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/06/hackbaellchen_in_tomatensauce_mit_spaghetti_01.jpg",
     "imageZutaten": null,
     "imageKochen": null,
     "allergens": [
@@ -8808,7 +8808,7 @@
   },
   {
     "id": "pas-89",
-    "name": "Tagliatelle mit glasierten Karotten in Butter-Sahne",
+    "name": "Tagliatelle mit glasierten Karotten in Butter-Rahm",
     "category": "Pasta",
     "timeMinutes": 30,
     "basePortions": 4,
@@ -8850,7 +8850,7 @@
         "perPortions": 4
       },
       {
-        "name": "Sahne",
+        "name": "Rahm",
         "amount": 200,
         "unit": "ml",
         "perPortions": 4
@@ -8894,12 +8894,12 @@
     ],
     "weatherType": "neutral",
     "source": "herrbuettner.de",
-    "description": "Einfache, schnelle Pasta mit glasierten Möhrenstreifen in cremiger Butter-Sahne-Sauce. Durch die Reduzierung bildet sich eine köstliche, sämige Sosse, verfeinert mit Petersilie und gerösteten Mandeln.",
+    "description": "Einfache, schnelle Pasta mit glasierten Möhrenstreifen in cremiger Butter-Rahm-Sauce. Durch die Reduzierung bildet sich eine köstliche, sämige Sauce, verfeinert mit Petersilie und gerösteten Mandeln.",
     "steps": [
       "Eine Pfanne ohne Öl bei mittlerer Hitze erhitzen und die Mandeln darin für einige Minuten rösten, bis sie leicht gebräunt sind. Mandeln herausnehmen und beiseite stellen.",
       "Die Karotten schälen und die Enden abschneiden. Mit einem Sparschäler der Länge nach hauchdünne Streifen von den Karotten hobeln.",
       "Butter in einer Pfanne bei mittlerer Hitze zerlassen. Die gehobelten Karottenstreifen hineingeben, durchschwenken und mit Zucker bestreuen. Für 2 Minuten anschwitzen lassen.",
-      "Mineralwasser hinzugiessen und köcheln lassen. Sobald das Mineralwasser fast vollständig reduziert ist, die Sahne dazugiessen. Mit Salz und Pfeffer würzen.",
+      "Mineralwasser hinzugiessen und köcheln lassen. Sobald das Mineralwasser fast vollständig reduziert ist, die Rahm dazugiessen. Mit Salz und Pfeffer würzen.",
       "In einer kleinen Schüssel 50 ml Wasser mit 1 TL Mehl verrühren und zur Sauce geben. Alles für 20 Minuten bei mittlerer Hitze köcheln lassen.",
       "In der Zwischenzeit einen Topf mit reichlich Wasser aufsetzen und zum Kochen bringen. Salzen und die Tagliatelle nach Packungsanweisung kochen.",
       "Während die Sauce köchelt, diese immer wieder durchrühren. Die Karotten werden dabei nach und nach zerfallen und sich in der Sauce verteilen.",
@@ -8908,7 +8908,7 @@
       "Auf Tellern anrichten und mit den gerösteten Mandeln garnieren."
     ],
     "dietCategory": "vegetarian",
-    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/06/bandnudeln-mit-glasierten-karotten-in-sahnesosse-mit-petersilie-und-mandeln02.jpg",
+    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/06/bandnudeln-mit-glasierten-karotten-in-rahmsauce-mit-petersilie-und-mandeln02.jpg",
     "imageZutaten": null,
     "imageKochen": null,
     "allergens": [
@@ -8919,7 +8919,7 @@
   },
   {
     "id": "pas-90",
-    "name": "Nudeln in Tomaten-Thunfisch-Sosse",
+    "name": "Nudeln in Tomaten-Thunfisch-Sauce",
     "category": "Pasta",
     "timeMinutes": 20,
     "basePortions": 4,
@@ -9017,7 +9017,7 @@
     ],
     "weatherType": "neutral",
     "source": "herrbuettner.de",
-    "description": "Perfekt abgestimmte Pasta mit aromatischer Tomaten-Thunfisch-Sosse, verfeinert mit Kapern, Zitrone und frischem Basilikum. Ein einfaches und köstliches Gericht für jeden Tag!",
+    "description": "Perfekt abgestimmte Pasta mit aromatischer Tomaten-Thunfisch-Sauce, verfeinert mit Kapern, Zitrone und frischem Basilikum. Ein einfaches und köstliches Gericht für jeden Tag!",
     "steps": [
       "Eine Pfanne bei mittlerer Hitze erwärmen. In der Zwischenzeit den Knoblauch in kleine Würfel schneiden.",
       "Olivenöl, Knoblauch und getrockneten Oregano in die heisse Pfanne geben. Gut durchrühren und anbraten, bis der Knoblauch leicht gebräunt ist, um das Öl zu aromatisieren.",
@@ -9027,7 +9027,7 @@
       "Den Thunfisch aus der Dose nehmen, überschüssiges Wasser abgiessen und in die Pfanne geben. Gut durchrühren und für 15 Minuten köcheln lassen. Zwischendurch immer wieder umrühren und die Tomaten dabei zerdrücken.",
       "Währenddessen einen Topf mit reichlich Wasser zum Kochen bringen. Sobald es kocht, salzen und die Pasta hineingeben. Gelegentlich umrühren, damit die Nudeln nicht verkleben.",
       "Die Basilikumblätter vom Stiel zupfen und grob hacken.",
-      "Kurz bevor die Pasta al dente ist, abgiessen und zur Sosse in die Pfanne geben. Etwa 50 ml Nudelwasser hinzufügen und alles gut vermischen. Einen Moment ruhen lassen.",
+      "Kurz bevor die Pasta al dente ist, abgiessen und zur Sauce in die Pfanne geben. Etwa 50 ml Nudelwasser hinzufügen und alles gut vermischen. Einen Moment ruhen lassen.",
       "Zum Schluss Zitronensaft und gehacktes Basilikum hinzufügen und kräftig durchrühren.",
       "Die Pasta anrichten und nach Belieben mit Parmesan garnieren."
     ],
@@ -10193,7 +10193,7 @@
         "perPortions": 4
       },
       {
-        "name": "Sojasosse",
+        "name": "Sojasauce",
         "amount": 100,
         "unit": "ml",
         "perPortions": 4
@@ -10207,9 +10207,9 @@
     ],
     "steps": [
       "Gemüsebrühe in Pfanne zum Kochen bringen, Hirse beigeben, ca. 8 Minuten garen.",
-      "Räuchertofu in Würfel schneiden, in Rapsöl goldbraun braten, mit 50 ml Sojasosse würzen.",
+      "Räuchertofu in Würfel schneiden, in Rapsöl goldbraun braten, mit 50 ml Sojasauce würzen.",
       "Zwiebel und Knoblauch andünsten. Brokkoli, Federkohl und Karotte in Streifen dazugeben.",
-      "Gemüse mit restlicher Sojasosse würzen, mitdünsten.",
+      "Gemüse mit restlicher Sojasauce würzen, mitdünsten.",
       "Räuchertofu und Hirse daruntermengen. Mit Frühlingszwiebeln garnieren."
     ],
     "tips": "",
@@ -14151,7 +14151,7 @@
         "perPortions": 4
       },
       {
-        "name": "Sojasosse",
+        "name": "Sojasauce",
         "amount": 3,
         "unit": "EL",
         "perPortions": 4
@@ -14185,7 +14185,7 @@
       "Brühe aufkochen, Ingwer und Knoblauch hinzufügen. Miso-Paste einrühren.",
       "Karotten hinzufügen und 5 Minuten köcheln lassen.",
       "Reisnudeln nach Packungsanleitung kochen, abtropfen lassen.",
-      "Pak-Choi zur Suppe geben und 2 Minuten mitkochen. Mit Sojasosse würzen.",
+      "Pak-Choi zur Suppe geben und 2 Minuten mitkochen. Mit Sojasauce würzen.",
       "Nudeln in Schüsseln verteilen, Brühe aufgiessen. Mit Tofu, Frühlingszwiebeln und Sesam garnieren."
     ],
     "tips": "Miso-Paste nicht kochen – erst kurz vor dem Servieren einrühren, damit die Probiotika erhalten bleiben.",
@@ -14270,7 +14270,7 @@
         "perPortions": 4
       },
       {
-        "name": "Tamari Sojasosse",
+        "name": "Tamari Sojasauce",
         "amount": 2,
         "unit": "EL",
         "perPortions": 4
@@ -14624,7 +14624,7 @@
         "perPortions": 4
       },
       {
-        "name": "Sahne",
+        "name": "Rahm",
         "amount": 100,
         "unit": "g",
         "perPortions": 4
@@ -14686,7 +14686,7 @@
     ],
     "weatherType": "kalt",
     "source": "herrbuettner.de",
-    "description": "Eine wärmende, wohltuende Wintersuppe mit würzig-süssem Knollensellerie, reichhaltigen Kartoffeln, frischem Lauch und herzhaften Bockwürsten in einer leicht cremigen Sahnebrühe.",
+    "description": "Eine wärmende, wohltuende Wintersuppe mit würzig-süssem Knollensellerie, reichhaltigen Kartoffeln, frischem Lauch und herzhaften Bockwürsten in einer leicht cremigen Rahmbrühe.",
     "steps": [
       "Kartoffeln und Knollensellerie schälen und in etwa 1 cm grosse Würfel schneiden. Schalotten und Knoblauch schälen und fein würfeln.",
       "Einen grossen Topf bei mittlerer Temperatur erhitzen und die Butter darin schmelzen lassen. Schalotten, Knoblauch und getrockneten Thymian glasig anschwitzen.",
@@ -14695,7 +14695,7 @@
       "Die Suppe zugedeckt etwa 25 Minuten bei niedriger Hitze köcheln lassen.",
       "Währenddessen die Bockwürste in einer heissen Pfanne mit Olivenöl rundherum anbraten, herausnehmen und in grobe Stücke schneiden.",
       "Den Lauch in Ringe schneiden und in kaltem Wasser gründlich waschen, dabei die Ringe voneinander trennen. Gut abtropfen lassen. Die Petersilie fein hacken.",
-      "Nach der Garzeit die Sahne zur Suppe geben und mit Cayennepfeffer würzen. Mit Salz und Pfeffer abschmecken.",
+      "Nach der Garzeit die Rahm zur Suppe geben und mit Cayennepfeffer würzen. Mit Salz und Pfeffer abschmecken.",
       "Lauch, Petersilie und Wurststücke unterrühren, einmal durchmischen und die Suppe servieren."
     ],
     "dietCategory": "meat",
@@ -14993,7 +14993,7 @@
         "perPortions": 4
       },
       {
-        "name": "Sahne",
+        "name": "Rahm",
         "amount": 200,
         "unit": "ml",
         "perPortions": 4
@@ -15019,7 +15019,7 @@
     ],
     "weatherType": "kalt",
     "source": "herrbuettner.de",
-    "description": "Eine herzhafte Suppe mit würzigem Hackfleisch, energiereichen Bohnen, frischem Babyspinat, zarten Kartoffeln und einem cremigen Touch durch Sahne. Perfekt für den goldenen Oktober – würzig und tief, aber auch frisch und leicht zugleich.",
+    "description": "Eine herzhafte Suppe mit würzigem Hackfleisch, energiereichen Bohnen, frischem Babyspinat, zarten Kartoffeln und einem cremigen Touch durch Rahm. Perfekt für den goldenen Oktober – würzig und tief, aber auch frisch und leicht zugleich.",
     "steps": [
       "Einen grossen Topf bei mittlerer Hitze erhitzen. Sobald er heiss ist, 2 EL Olivenöl hineingeben.",
       "Das Hackfleisch in den Topf geben und anbraten, dabei mit einem Kochlöffel zerkleinern. So lange braten, bis die austretende Flüssigkeit verkocht ist, das Fleisch schön braun wird und am Boden ein Bratensatz entsteht. Zwischendurch umrühren und mit Salz und Pfeffer würzen.",
@@ -15032,7 +15032,7 @@
       "Die Kartoffelwürfel in den Topf geben und mit einer Prise Salz, Pfeffer und 1 EL getrocknetem Oregano würzen. Einmal durchrühren.",
       "Mit der Gemüsebrühe ablöschen, die Bohnen hinzufügen und den Deckel auf den Topf setzen. Die Suppe für 15-20 Minuten köcheln lassen, bis die Kartoffeln gar sind.",
       "Falls nötig, den Babyspinat waschen und abtrocknen.",
-      "Sobald die Kartoffeln gar sind, die Sahne zur Suppe geben und den Babyspinat hinzufügen. Gut durchrühren, bis der Spinat zusammenfällt.",
+      "Sobald die Kartoffeln gar sind, die Rahm zur Suppe geben und den Babyspinat hinzufügen. Gut durchrühren, bis der Spinat zusammenfällt.",
       "Das Hackfleisch wieder zur Suppe geben und unterrühren. Die Suppe kurz aufkochen lassen und mit Salz und Pfeffer abschmecken."
     ],
     "dietCategory": "meat",
@@ -15046,7 +15046,7 @@
   },
   {
     "id": "sup-55",
-    "name": "Maissuppe mit Bacon, Frühlingszwiebeln und Cheddar Tortilla-Chips",
+    "name": "Maissuppe mit Speck, Frühlingszwiebeln und Cheddar Tortilla-Chips",
     "category": "Suppen, Eintöpfe & Currys",
     "timeMinutes": 35,
     "basePortions": 4,
@@ -15089,7 +15089,7 @@
         "perPortions": 4
       },
       {
-        "name": "Bacon",
+        "name": "Speck",
         "amount": 100,
         "unit": "g",
         "perPortions": 4
@@ -15145,22 +15145,22 @@
     ],
     "weatherType": "neutral",
     "source": "herrbuettner.de",
-    "description": "Eine cremige, frische Maissuppe mit würzigem Bacon, verfeinert mit Kokosmilch und Limette. Serviert mit knusprigen, käseüberbackenen Tortilla-Chips – perfekt für jede Jahreszeit.",
+    "description": "Eine cremige, frische Maissuppe mit würzigem Speck, verfeinert mit Kokosmilch und Limette. Serviert mit knusprigen, käseüberbackenen Tortilla-Chips – perfekt für jede Jahreszeit.",
     "steps": [
-      "Einen grossen Topf bei mittlerer Hitze auf den Herd stellen und die Bacon-Scheiben in den kalten Topf legen. Das Fett langsam auslassen und den Bacon zwischendurch wenden. Sobald er braun und knusprig ist, herausnehmen und auf Küchenpapier abtropfen lassen.",
+      "Einen grossen Topf bei mittlerer Hitze auf den Herd stellen und die Speck-Scheiben in den kalten Topf legen. Das Fett langsam auslassen und den Speck zwischendurch wenden. Sobald er braun und knusprig ist, herausnehmen und auf Küchenpapier abtropfen lassen.",
       "Den Mais aus den Gläsern in ein Sieb geben, unter fliessendem Wasser abspülen und gut abtropfen lassen.",
       "Die Frühlingszwiebeln waschen, grob abtrocknen und in Ringe schneiden. Die Knoblauchzehe schälen und in feine Scheiben schneiden. Den Thymian von den Zweigen zupfen.",
-      "Die Butter im ausgelassenen Bacon-Fett zerlassen. Chiliflocken, Thymian und zwei Drittel der Frühlingszwiebeln hinzugeben, durchrühren und eine Minute anschwitzen. Dann den Knoblauch dazugeben und kurz mitanschwitzen.",
+      "Die Butter im ausgelassenen Speck-Fett zerlassen. Chiliflocken, Thymian und zwei Drittel der Frühlingszwiebeln hinzugeben, durchrühren und eine Minute anschwitzen. Dann den Knoblauch dazugeben und kurz mitanschwitzen.",
       "Zwei Drittel des Mais in den Topf geben, umrühren und kurz anschwitzen. Mit Salz und Pfeffer würzen.",
       "Mit dem Geflügelfond aufgiessen und die Suppe 20 Minuten bei niedriger Hitze leicht köcheln lassen.",
       "In der Zwischenzeit den Backofen auf 190 Grad Ober-/Unterhitze vorheizen. Die Tortilla-Chips auf einem mit Backpapier belegten Blech verteilen und mit geriebenem Cheddar bestreuen.",
       "Nach 20 Minuten Kochzeit die Hitze reduzieren und die Suppe mit einem Stabmixer pürieren.",
       "Den restlichen Mais und die Kokosmilch zur Suppe geben. Die Schale einer halben Limette (am besten mit einem Zestenreisser) und den Saft hinzufügen. Die Suppe abschmecken und bei Bedarf mit Salz und Pfeffer nachwürzen.",
       "Das Blech mit den Tortilla-Chips für etwa 5 Minuten auf der mittleren Schiene im Backofen backen, bis der Käse geschmolzen ist.",
-      "Den Bacon grob zerkleinern. Die Suppe in Schüsseln verteilen und mit Bacon und den restlichen Frühlingszwiebeln garnieren. Die überbackenen Tortilla-Chips separat dazu servieren."
+      "Den Speck grob zerkleinern. Die Suppe in Schüsseln verteilen und mit Speck und den restlichen Frühlingszwiebeln garnieren. Die überbackenen Tortilla-Chips separat dazu servieren."
     ],
     "dietCategory": "meat",
-    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/08/maissuppe_mit_bacon_und_cheddar_tortilla_chips01.jpg",
+    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/08/maissuppe_mit_speck_und_cheddar_tortilla_chips01.jpg",
     "imageZutaten": null,
     "imageKochen": null,
     "allergens": [
@@ -15653,7 +15653,7 @@
         "perPortions": 4
       },
       {
-        "name": "Sahne",
+        "name": "Rahm",
         "amount": 150,
         "unit": "g",
         "perPortions": 4
@@ -15675,8 +15675,8 @@
       "Die Paprikastücke hinzufügen, gut durchrühren und mit 2 TL geräuchertem Paprikapulver, Salz und Pfeffer würzen. Unter ständigem Rühren eine Minute brutzeln lassen.",
       "Das Tomatenfruchtfleisch aus der Dose hinzugeben. Die leere Dose eineinhalb Mal mit Wasser füllen und dazu giessen.",
       "Die Hitze um eine Stufe reduzieren und alles mit Deckel 20 Minuten leicht köcheln lassen.",
-      "Die Suppe mit einem Pürierstab pürieren. Mit der Sahne auffüllen und mit Salz und Pfeffer abschmecken. Bei Bedarf etwas Zucker hinzugeben, falls die Säure noch zu stark ist.",
-      "Die Suppe auf Tellern verteilen und mit den gerösteten Cashewkernen garnieren. Nach Geschmack mit etwas Sahne und Kräutern dekorieren."
+      "Die Suppe mit einem Pürierstab pürieren. Mit der Rahm auffüllen und mit Salz und Pfeffer abschmecken. Bei Bedarf etwas Zucker hinzugeben, falls die Säure noch zu stark ist.",
+      "Die Suppe auf Tellern verteilen und mit den gerösteten Cashewkernen garnieren. Nach Geschmack mit etwas Rahm und Kräutern dekorieren."
     ],
     "dietCategory": "vegetarian",
     "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/12/paprikasuppe_mit_geroesteten_cashews01.jpg",
@@ -16325,7 +16325,7 @@
         "perPortions": 4
       },
       {
-        "name": "Bacon-Scheiben lang",
+        "name": "Speck-Scheiben lang",
         "amount": 5,
         "unit": "Stk",
         "perPortions": 4
@@ -16339,19 +16339,19 @@
     ],
     "weatherType": "kalt",
     "source": "herrbuettner.de",
-    "description": "Eine cremige, pürierte Karottensuppe mit frischem Ingwer und Curry, getoppt mit gebratenen Hähnchen-Bacon-Spiessen – eine vitaminreiche und geschmackvolle Kombination für Auge und Gaumen.",
+    "description": "Eine cremige, pürierte Karottensuppe mit frischem Ingwer und Curry, getoppt mit gebratenen Hähnchen-Speck-Spiessen – eine vitaminreiche und geschmackvolle Kombination für Auge und Gaumen.",
     "steps": [
       "Die Karotten waschen und mit Schale in grobe Würfel schneiden. Den Ingwer schälen und ebenfalls grob würfeln. Die Zwiebeln schälen und grob würfeln. Die Petersilie fein hacken (etwa 10 g für später zur Seite stellen).",
       "Einen grossen Topf bei hoher Hitze erhitzen. 2 EL Olivenöl hineingeben und die Zwiebeln kurz anschwitzen. Karotten und Ingwer zügig dazugeben und kräftig durchrühren.",
       "Mit Salz, Pfeffer, Curry, Muskat, Paprikapulver und Zucker würzen. Gut umrühren und 1 EL Balsamico-Essig zugeben. Alles etwa 5 Minuten braten und dabei immer wieder umrühren.",
       "Mit dem Wasser ablöschen, Deckel aufsetzen und die Hitze auf mittlere Stufe reduzieren. 15 Minuten köcheln lassen.",
       "In der Zwischenzeit die Hähnchenbrust (sollte Zimmertemperatur haben) mit Küchenpapier trocken tupfen. Der Länge nach halbieren und in etwa 3-4 cm grosse Stücke schneiden. Mit Salz und Pfeffer würzen.",
-      "Die Bacon-Scheiben in kleinere Stücke schneiden. Jedes Hähnchenbruststück mit einer Bacon-Scheibe umwickeln und auf einen Holzspiess schieben, sodass der Bacon auf beiden Seiten durchbohrt wird. Zwischen den Stücken etwa 1-2 cm Abstand lassen. Mit allen Spiessen so verfahren.",
-      "Eine Pfanne bei mittlerer Hitze erhitzen, 2 EL Olivenöl hineingeben und die Hähnchen-Bacon-Spiesse 8-10 Minuten braten, dabei regelmässig wenden.",
+      "Die Speck-Scheiben in kleinere Stücke schneiden. Jedes Hähnchenbruststück mit einer Speck-Scheibe umwickeln und auf einen Holzspiess schieben, sodass der Speck auf beiden Seiten durchbohrt wird. Zwischen den Stücken etwa 1-2 cm Abstand lassen. Mit allen Spiessen so verfahren.",
+      "Eine Pfanne bei mittlerer Hitze erhitzen, 2 EL Olivenöl hineingeben und die Hähnchen-Speck-Spiesse 8-10 Minuten braten, dabei regelmässig wenden.",
       "Nach den 15 Minuten Kochzeit den Deckel vom Topf nehmen, die Suppe durchrühren und mit einem Pürierstab nach Wunsch grob oder fein pürieren.",
       "Die Kokosmilch unterrühren und die Suppe abschmecken. Bei Bedarf nachwürzen. Die Suppe kurz aufkochen lassen, dann auf sehr kleine Stufe stellen und warmhalten.",
-      "Wenn die Hähnchen-Bacon-Spiesse fertig sind, die restliche gehackte Petersilie zur Suppe geben und unterrühren.",
-      "Die Suppe auf Schüsseln verteilen, jeweils mit einem Klecks Crème fraîche und etwas Petersilie garnieren. Die Hähnchen-Bacon-Spiesse obenauf legen und servieren."
+      "Wenn die Hähnchen-Speck-Spiesse fertig sind, die restliche gehackte Petersilie zur Suppe geben und unterrühren.",
+      "Die Suppe auf Schüsseln verteilen, jeweils mit einem Klecks Crème fraîche und etwas Petersilie garnieren. Die Hähnchen-Speck-Spiesse obenauf legen und servieren."
     ],
     "dietCategory": "meat",
     "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/10/moehrensuppe_mit_haehnchen_spiessen_big.jpg",
@@ -17945,7 +17945,7 @@
         "perPortions": 4
       },
       {
-        "name": "Sojasosse",
+        "name": "Sojasauce",
         "amount": 5,
         "unit": "EL",
         "perPortions": 4
@@ -17971,7 +17971,7 @@
     ],
     "steps": [
       "Ingwer schälen und fein reiben, Knoblauch pressen.",
-      "Sauce aus Ingwer, Knoblauch, Sojasosse, Balsamico, Sambal Oelek, Salz und Pfeffer gut mischen.",
+      "Sauce aus Ingwer, Knoblauch, Sojasauce, Balsamico, Sambal Oelek, Salz und Pfeffer gut mischen.",
       "Cashewnüsse in einer Pfanne ohne Öl rösten und grob hacken.",
       "Ananasscheiben würfeln, Gurke in Scheiben schneiden, Frühlingszwiebel schneiden.",
       "Gemüse und Ananas mit der Sauce mischen, anrichten.",
@@ -20344,7 +20344,7 @@
         "perPortions": 4
       },
       {
-        "name": "Fischsauce oder Sojasosse (vegan)",
+        "name": "Fischsauce oder Sojasauce (vegan)",
         "amount": 3,
         "unit": "EL",
         "perPortions": 4
@@ -20459,7 +20459,7 @@
         "perPortions": 4
       },
       {
-        "name": "Helle Sojasosse",
+        "name": "Helle Sojasauce",
         "amount": 2,
         "unit": "EL",
         "perPortions": 4
@@ -20515,7 +20515,7 @@
       "Brokkoli in Röschen schneiden und 5 Min. dämpfen. Zwiebel in dicke Scheiben, Paprika würfeln, Pilze halbieren. Ingwer reiben, Knoblauch würfeln.",
       "Für die Erdnuss-Sauce: Zwiebel und Knoblauch (1 Zwiebel, 1 Zehe extra) hacken. Mit Currypaste und Agavendicksaft 3 Min. anbraten. Erdnussmus, Kokosmilch, Brühe und Zitronensaft zugeben, 5 Min. köcheln.",
       "2 EL Erdnussöl in Wok erhitzen. Paprika, Pilze und Zwiebelscheiben anbraten. Brokkoli, Ingwer und Knoblauch hinzufügen, 2 Min. weiterbraten.",
-      "Sojasosse und Zucker zugeben, würzen.",
+      "Sojasauce und Zucker zugeben, würzen.",
       "Gemüse auf Tellern anrichten. Erdnuss-Sauce dazureichen. Mit Basmatireis oder Reisnudeln servieren."
     ],
     "tips": "Wer es schärfer mag, gibt mehr rote Currypaste in die Sauce.",
@@ -20581,7 +20581,7 @@
         "perPortions": 4
       },
       {
-        "name": "Sojasosse",
+        "name": "Sojasauce",
         "amount": 3,
         "unit": "EL",
         "perPortions": 4
@@ -20646,8 +20646,8 @@
     "basePortions": 4,
     "description": "Reichhaltige vegane Thai-Ramen-Suppe mit cremiger Erdnuss-Kokosmilch-Brühe und knusprigem Tofu.",
     "steps": [
-      "Suppe: Öl erhitzen, Knoblauch, Ingwer und Currypaste anbraten. Brühe, Kokosmilch, Erdnussmus und Sojasosse zugeben, aufkochen. Ca. 10 Min. köcheln. Karotte und Pak-Choi hinzufügen, 5 Min. mitkochen.",
-      "Tofu: Tofuwürfel mit Stärke mischen. Öl erhitzen, Tofu ca. 10 Min. goldbraun braten. Sojasosse und Agavensirup mischen, zum Tofu geben und schwenken.",
+      "Suppe: Öl erhitzen, Knoblauch, Ingwer und Currypaste anbraten. Brühe, Kokosmilch, Erdnussmus und Sojasauce zugeben, aufkochen. Ca. 10 Min. köcheln. Karotte und Pak-Choi hinzufügen, 5 Min. mitkochen.",
+      "Tofu: Tofuwürfel mit Stärke mischen. Öl erhitzen, Tofu ca. 10 Min. goldbraun braten. Sojasauce und Agavensirup mischen, zum Tofu geben und schwenken.",
       "Ramen-Nudeln in Salzwasser ca. 4 Min. kochen, abtropfen lassen.",
       "Nudeln und Tofu in Schüsseln verteilen, heisse Suppe darübergiessen. Mit Erdnüssen und Koriander garnieren."
     ],
@@ -21980,7 +21980,7 @@
         "perPortions": 2
       },
       {
-        "name": "Sahne",
+        "name": "Rahm",
         "amount": 250,
         "unit": "g",
         "perPortions": 2
@@ -22018,7 +22018,7 @@
     ],
     "weatherType": "neutral",
     "source": "herrbuettner.de",
-    "description": "Ein elegantes Gericht, bei dem saftiger Lachs auf cremigen Farfalle serviert wird. Durch die Trennung von Lachs und Sahnesosse kommt der intensive Eigengeschmack des Fischs besonders gut zur Geltung.",
+    "description": "Ein elegantes Gericht, bei dem saftiger Lachs auf cremigen Farfalle serviert wird. Durch die Trennung von Lachs und Rahmsauce kommt der intensive Eigengeschmack des Fischs besonders gut zur Geltung.",
     "steps": [
       "Einen grossen Topf mit gesalzenem Wasser für die Nudeln aufsetzen und zum Kochen bringen.",
       "Währenddessen den Knoblauch schälen und fein würfeln. Den Dill fein hacken und etwas für die Garnierung beiseitelegen.",
@@ -22027,13 +22027,13 @@
       "Sobald das Wasser kocht, die Farfalle hineingeben und unter gelegentlichem Umrühren etwa 9 Minuten kochen.",
       "Eine Pfanne stark erhitzen. 1 EL Olivenöl und die Lachsfilets hineingeben und 3 Minuten auf der ersten Seite braten, ohne sie zu bewegen.",
       "Den Lachs wenden, die Hitze reduzieren und den gewürfelten Knoblauch hinzufügen. Weitere 3 Minuten braten.",
-      "Mit dem Zitronensaft ablöschen und auch über den Fisch träufeln. Dann die Sahne hinzufügen und einmal aufkochen lassen.",
+      "Mit dem Zitronensaft ablöschen und auch über den Fisch träufeln. Dann die Rahm hinzufügen und einmal aufkochen lassen.",
       "Die Nudeln kurz vor dem perfekten Garpunkt abgiessen. Den Lachs aus der Pfanne nehmen und beiseite stellen.",
-      "Die Sahnesosse mit Salz und Pfeffer abschmecken. Die Pasta und den gehackten Dill unterrühren und gut vermischen.",
-      "Die Nudeln mit Sosse auf zwei Teller verteilen, je ein Lachsfilet darauf platzieren und mit Zitronenschnitzen und frischem Dill garnieren."
+      "Die Rahmsauce mit Salz und Pfeffer abschmecken. Die Pasta und den gehackten Dill unterrühren und gut vermischen.",
+      "Die Nudeln mit Sauce auf zwei Teller verteilen, je ein Lachsfilet darauf platzieren und mit Zitronenschnitzen und frischem Dill garnieren."
     ],
     "dietCategory": "fish",
-    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/03/lachs-auf-dill-sahne-farfalle01.jpg",
+    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/03/lachs-auf-dill-rahm-farfalle01.jpg",
     "imageZutaten": null,
     "imageKochen": null,
     "allergens": [
@@ -23129,7 +23129,7 @@
   },
   {
     "id": "fle-63",
-    "name": "Hackbällchen Asia Style mit Mie-Nudeln an Kokos-Sojasosse",
+    "name": "Hackbällchen Asia Style mit Mie-Nudeln an Kokos-Sojasauce",
     "category": "Fleisch & Geflügel",
     "timeMinutes": 35,
     "basePortions": 4,
@@ -23188,7 +23188,7 @@
         "perPortions": 4
       },
       {
-        "name": "Sojasosse",
+        "name": "Sojasauce",
         "amount": 2,
         "unit": "EL",
         "perPortions": 4
@@ -23220,16 +23220,16 @@
     ],
     "weatherType": "neutral",
     "source": "herrbuettner.de",
-    "description": "Würzige Hackbällchen mit Ingwer, Chili und Frühlingszwiebeln, die in einer aromatischen Kokos-Sojasosse sanft gegart werden. Eine köstliche asiatische Alternative zu klassischen Hackbällchen, serviert mit Mie-Nudeln.",
+    "description": "Würzige Hackbällchen mit Ingwer, Chili und Frühlingszwiebeln, die in einer aromatischen Kokos-Sojasauce sanft gegart werden. Eine köstliche asiatische Alternative zu klassischen Hackbällchen, serviert mit Mie-Nudeln.",
     "steps": [
       "Frühlingszwiebeln und Chili waschen und trocknen. Ingwer schälen. Frühlingszwiebeln in feine Ringe schneiden und einige für die Garnierung beiseitelegen. Die restlichen Ringe fein hacken. Chili halbieren, entkernen und fein hacken. Ingwer ebenfalls fein hacken.",
       "Eine Pfanne bei mittlerer Hitze erhitzen und 1 EL Sesamöl hineingeben. Frühlingszwiebeln, Chili und Ingwer für 1 Minute unter gelegentlichem Rühren anschwitzen. Pfanne vom Herd nehmen und beiseitestellen.",
       "In einer Schüssel 35 g Panko mit 100 ml Kokosmilch vermischen. Hackfleisch, Ei und das Frühlingszwiebel-Chili-Ingwer-Gemisch hinzufügen. Mit Salz und Pfeffer würzen und alles gut mit den Händen verkneten. Aus der Masse etwa 12 golfballgrosse Bällchen formen.",
       "Eine Pfanne bei mittlerer Hitze erhitzen und 2 EL Sesamöl hineingeben. Die Hackbällchen von allen Seiten anbraten, dann herausnehmen und beiseitestellen.",
-      "Den Bratensatz mit 2 EL Sojasosse ablöschen. 1 EL Honig hinzufügen und aufkochen lassen. Mit der restlichen Kokosmilch auffüllen und mit Salz und Pfeffer abschmecken. Hitze reduzieren.",
+      "Den Bratensatz mit 2 EL Sojasauce ablöschen. 1 EL Honig hinzufügen und aufkochen lassen. Mit der restlichen Kokosmilch auffüllen und mit Salz und Pfeffer abschmecken. Hitze reduzieren.",
       "Die Hackbällchen zurück in die Pfanne geben und bei niedriger Hitze 20 Minuten leicht blubbernd gar ziehen lassen.",
       "5 Minuten vor Ende der Garzeit die Mie-Nudeln nach Packungsanweisung zubereiten - entweder mit kochendem Wasser übergiessen und 5-10 Minuten quellen lassen oder 2 Minuten in kochendem Salzwasser garen.",
-      "Hackbällchen aus der Pfanne nehmen. Die abgetropften Mie-Nudeln zur Sosse in die Pfanne geben und gut vermischen.",
+      "Hackbällchen aus der Pfanne nehmen. Die abgetropften Mie-Nudeln zur Sauce in die Pfanne geben und gut vermischen.",
       "Mie-Nudeln und Hackbällchen auf Teller verteilen und mit den beiseitegelegten Frühlingszwiebeln garnieren."
     ],
     "dietCategory": "meat",
@@ -23442,7 +23442,7 @@
         "perPortions": 4
       },
       {
-        "name": "Sahne",
+        "name": "Rahm",
         "amount": 200,
         "unit": "ml",
         "perPortions": 4
@@ -23472,7 +23472,7 @@
       "Einen Topf bei mittlerer Hitze erhitzen, die Hälfte der Butter darin schmelzen lassen und den Rosmarin einrühren.",
       "Die weissen Zwiebelwürfel hinzugeben und glasig dünsten. Den Knoblauch zugeben und kurz mitdünsten.",
       "Die Maiskörner in den Topf geben, mit Salz und Pfeffer würzen, gut umrühren und 1 Minute mitdünsten.",
-      "Die Sahne angiessen und die Hitze auf die niedrigste Stufe reduzieren. 5 Minuten leicht köcheln lassen.",
+      "Die Rahm angiessen und die Hitze auf die niedrigste Stufe reduzieren. 5 Minuten leicht köcheln lassen.",
       "Die Maismasse mit einem Mixer grob pürieren, zurück in den Topf geben und die restliche Butter einrühren. Mit Salz und Pfeffer abschmecken und warmhalten.",
       "Hähnchenwürfel, rote Zwiebelspalten und Ananasstücke abwechselnd auf Holzspiesse stecken.",
       "Den Backofen auf 180 Grad Ober-/Unterhitze vorheizen.",
@@ -23852,7 +23852,7 @@
         "perPortions": 6
       },
       {
-        "name": "Olivenöl für Sosse",
+        "name": "Olivenöl für Sauce",
         "amount": 5,
         "unit": "EL",
         "perPortions": 6
@@ -23864,7 +23864,7 @@
         "perPortions": 6
       },
       {
-        "name": "Wasser für Sosse",
+        "name": "Wasser für Sauce",
         "amount": 100,
         "unit": "ml",
         "perPortions": 6
@@ -23876,19 +23876,19 @@
         "perPortions": 6
       },
       {
-        "name": "Salz für Sosse",
+        "name": "Salz für Sauce",
         "amount": 1,
         "unit": "Prise",
         "perPortions": 6
       },
       {
-        "name": "Pfeffer für Sosse",
+        "name": "Pfeffer für Sauce",
         "amount": 1,
         "unit": "Prise",
         "perPortions": 6
       },
       {
-        "name": "brauner Zucker für Sosse",
+        "name": "brauner Zucker für Sauce",
         "amount": 1,
         "unit": "TL",
         "perPortions": 6
@@ -23920,22 +23920,22 @@
     ],
     "weatherType": "neutral",
     "source": "herrbuettner.de",
-    "description": "Eine herzhafte Pizza mit selbstgemachtem Vollkornteig und frischer Tomatensosse, belegt mit Thunfisch und Mozzarella. Durch das Weizenvollkornmehl wird der Teig aromatischer und macht länger satt.",
+    "description": "Eine herzhafte Pizza mit selbstgemachtem Vollkornteig und frischer Tomatensauce, belegt mit Thunfisch und Mozzarella. Durch das Weizenvollkornmehl wird der Teig aromatischer und macht länger satt.",
     "steps": [
       "Das Weizenvollkornmehl in eine grosse Schüssel sieben. Semola di Grano und eine Prise Salz hinzufügen und gut vermischen. In der Mitte eine Mulde formen.",
       "Die Hefe mit dem Zucker im lauwarmen Wasser auflösen, indem man die Hefe zerbröselt und mit einer Gabel gut durchrührt. Die Mischung 5 Minuten ruhen lassen.",
       "Die Hälfte des Hefe-Wasser-Gemischs in die Mulde giessen. Mit einer Gabel etwas Mehl vom Rand einarbeiten, bis ein klebriger Teig in der Mulde entsteht.",
       "Milch, Olivenöl und den Rest des Hefe-Wasser-Gemischs hinzufügen. Mit den Händen das restliche Mehl einarbeiten und alles verkneten.",
       "Den Teig auf eine bemehlte Arbeitsfläche geben und kräftig durchkneten, bis er glatt und geschmeidig ist. Zurück in die Schüssel geben, mit Frischhaltefolie abdecken und 3 Stunden an einem warmen, dunklen Ort gehen lassen.",
-      "Für die Tomatensosse die Tomaten unten kreuzförmig einritzen, in eine Schüssel geben und mit kochendem Wasser übergiessen. 1 Minute ziehen lassen, dann abschrecken und häuten. Tomaten vierteln und entkernen.",
+      "Für die Tomatensauce die Tomaten unten kreuzförmig einritzen, in eine Schüssel geben und mit kochendem Wasser übergiessen. 1 Minute ziehen lassen, dann abschrecken und häuten. Tomaten vierteln und entkernen.",
       "Knoblauch und Zwiebel schälen und würfeln. In einem Topf 5 EL Olivenöl bei mittlerer Hitze erhitzen, Zwiebel- und Knoblauchwürfel kurz anbraten.",
       "Tomaten und Zucker hinzufügen, mit Salz und Pfeffer würzen, gut durchrühren und 3 Minuten braten lassen.",
       "Balsamico Essig hinzufügen, Tomatenmark einrühren und mit Wasser ablöschen. 5 Minuten köcheln lassen und dabei gelegentlich umrühren.",
-      "Mit einem Stabmixer alles zu einer glatten Sosse pürieren. Hitze reduzieren und die Sosse 15-20 Minuten köcheln lassen, dabei zwischendurch umrühren. Vom Herd nehmen und beiseitestellen.",
+      "Mit einem Stabmixer alles zu einer glatten Sauce pürieren. Hitze reduzieren und die Sauce 15-20 Minuten köcheln lassen, dabei zwischendurch umrühren. Vom Herd nehmen und beiseitestellen.",
       "Den Backofen auf 250 Grad Ober-/Unterhitze vorheizen.",
       "Den aufgegangenen Hefeteig auf einer bemehlten Arbeitsfläche mit einem Nudelholz auf 0,5-0,8 mm Dicke ausrollen.",
       "Ein Backblech mit etwas Öl bestreichen und den ausgerollten Teig darauf legen.",
-      "Den Pizzateig mit der Tomatensosse bestreichen, ca. 10 g grob gezupftes Basilikum darüber verteilen und mit der Hälfte des geriebenen Mozzarellas bestreuen.",
+      "Den Pizzateig mit der Tomatensauce bestreichen, ca. 10 g grob gezupftes Basilikum darüber verteilen und mit der Hälfte des geriebenen Mozzarellas bestreuen.",
       "Das Blech für ca. 5 Minuten auf die mittlere Schiene des Backofens geben.",
       "In der Zwischenzeit die Thunfischdosen öffnen, abtropfen lassen und die Mozzarella-Kugel in Scheiben schneiden.",
       "Nach 5 Minuten das Blech aus dem Ofen holen, den Thunfisch verteilen und mit dem restlichen geriebenen Mozzarella bestreuen. Das Blech für ca. 5 Minuten auf die unterste Ebene bzw. auf den Boden des Ofens geben.",
@@ -23943,7 +23943,7 @@
       "Die Pizza etwas abkühlen lassen, mit restlichen Basilikumblättern garnieren und in 6 Stücke schneiden."
     ],
     "dietCategory": "meat",
-    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/04/rezept_vollkorn_pizza_mit_tomatensosse_thunfisch_und_mozzarella01.jpg",
+    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/04/rezept_vollkorn_pizza_mit_tomatensauce_thunfisch_und_mozzarella01.jpg",
     "imageZutaten": null,
     "imageKochen": null,
     "allergens": [
@@ -24051,7 +24051,7 @@
     ],
     "weatherType": "neutral",
     "source": "herrbuettner.de",
-    "description": "Eine köstliche Kombination aus Kohlrabi, Möhren und Kartoffeln in Buttersosse, serviert mit saftig gebratener Hähnchenbrust. Ein ausgewogenes Gericht, das durch die Harmonie von zartem Gemüse und würzigem Fleisch überzeugt.",
+    "description": "Eine köstliche Kombination aus Kohlrabi, Möhren und Kartoffeln in Buttersauce, serviert mit saftig gebratener Hähnchenbrust. Ein ausgewogenes Gericht, das durch die Harmonie von zartem Gemüse und würzigem Fleisch überzeugt.",
     "steps": [
       "Das gesamte Gemüse (Kohlrabi, Möhren und Kartoffeln) schälen und in gleich grosse Würfel schneiden.",
       "Zwiebel und Knoblauch schälen und fein würfeln. Den Knoblauch idealerweise durch eine Knoblauchpresse drücken.",
@@ -24063,7 +24063,7 @@
       "Etwa 10 Minuten bevor das Gemüse fertig ist, eine Pfanne bei hoher Hitze erhitzen. 1 EL Olivenöl hineingeben und die Hähnchenbrüste von jeder Seite circa 4 Minuten scharf anbraten.",
       "Die Hitze auf mittlere Stufe reduzieren und die Hähnchenbrüste gelegentlich wenden, bis sie durchgegart sind.",
       "Das Gemüse abgiessen, dabei 150 ml der Garflüssigkeit auffangen und aufbewahren.",
-      "Das Gemüse zurück in den Topf geben. 150 ml der aufgefangenen Brühe und die Butter hinzufügen und bei niedriger Hitze vorsichtig verrühren, bis eine sämige Sosse entsteht.",
+      "Das Gemüse zurück in den Topf geben. 150 ml der aufgefangenen Brühe und die Butter hinzufügen und bei niedriger Hitze vorsichtig verrühren, bis eine sämige Sauce entsteht.",
       "Frisch geriebene Muskatnuss hinzufügen und abschmecken.",
       "Die Petersilie fein hacken. Den grössten Teil unter das Gemüse rühren, einen kleinen Teil zum Garnieren beiseitelegen.",
       "Das Gemüse auf Tellern verteilen, die Hähnchenbrüste in etwa 2 cm breite Streifen schneiden und auf dem Gemüse anrichten.",
@@ -29116,7 +29116,7 @@
         "perPortions": 2
       },
       {
-        "name": "Sojasosse",
+        "name": "Sojasauce",
         "amount": 2,
         "unit": "EL",
         "perPortions": 2
@@ -29138,7 +29138,7 @@
       "Öl in Pfanne erhitzen. Rosenkohl unter ständigem Rühren 5–7 Min. scharf anbraten – darf dunkel werden.",
       "Sobanudeln parallel in Salzwasser 4–8 Min. garen.",
       "Knoblauch, Ingwer und Chili zum Rosenkohl geben, 2 Min. mitbraten. Schwarze Bohnen zugeben und erwärmen.",
-      "Mit Sojasosse ablöschen. Sobanudeln abgiessen und zusammen mit Rosenkohl-Mischung servieren."
+      "Mit Sojasauce ablöschen. Sobanudeln abgiessen und zusammen mit Rosenkohl-Mischung servieren."
     ],
     "tips": "Der Rosenkohl darf wirklich dunkel werden – das gibt das typische Röstaroma. Sobanudeln nicht überkochen.",
     "imageUrl": null,
@@ -29426,7 +29426,7 @@
         "perPortions": 4
       },
       {
-        "name": "Sojasosse",
+        "name": "Sojasauce",
         "amount": 2,
         "unit": "EL",
         "perPortions": 4
@@ -29458,7 +29458,7 @@
       "Zwiebel und Knoblauch fein würfeln. Öl erhitzen, Zwiebeln goldbraun anbraten.",
       "Knoblauch und Tomatenmark zugeben, 1 Min. mitrösten.",
       "Mehl einstreuen und unter Rühren kurz anschwitzen.",
-      "Mit Brühe ablöschen, dabei kontinuierlich rühren. Sojasosse und Thymian zugeben.",
+      "Mit Brühe ablöschen, dabei kontinuierlich rühren. Sojasauce und Thymian zugeben.",
       "Unter Rühren ca. 5 Min. köcheln bis die Sauce eindickt. Mit Pfeffer abschmecken."
     ],
     "tips": "Für mehr Tiefe einen Schuss Rotwein oder Worcestershiresauce (vegan) einrühren.",
@@ -29578,7 +29578,7 @@
         "perPortions": 4
       },
       {
-        "name": "Pflanzensahne (Soja oder Hafer)",
+        "name": "Pflanzenrahm (Soja oder Hafer)",
         "amount": 200,
         "unit": "ml",
         "perPortions": 4
@@ -29622,7 +29622,7 @@
       "Mehl mit Salz mischen. Kalte Butter in Stücken einarbeiten bis eine krümelige Masse entsteht. Wasser und Vanille zugeben und zu einem glatten Teig kneten.",
       "Teig ausrollen und in Pieform legen. 30 Min. kühl stellen.",
       "Äpfel schälen, entkernen und würfeln.",
-      "Alle Custard-Zutaten (Sahne, Joghurt, Zucker, Stärke, Vanille, Zimt) fein mixen.",
+      "Alle Custard-Zutaten (Rahm, Joghurt, Zucker, Stärke, Vanille, Zimt) fein mixen.",
       "Ofen auf 220 °C vorheizen. Teigboden einstechen, mit Haselnüssen bestreuen. Äpfel kreisförmig auflegen, Custard darüber giessen.",
       "Im unteren Ofenbereich 30–35 Min. backen."
     ],
@@ -29892,7 +29892,7 @@
         "perPortions": 2
       },
       {
-        "name": "Sahne",
+        "name": "Rahm",
         "amount": 150,
         "unit": "ml",
         "perPortions": 2
@@ -29939,7 +29939,7 @@
       "Die Schalotte schälen und in feine Würfel schneiden. Den Knoblauch schälen und ebenfalls fein würfeln.",
       "Die Schalottenwürfel in 1 EL Olivenöl in einem Topf bei mittlerer Hitze glasig andünsten. Den Knoblauch dazugeben und kurz mitdünsten.",
       "Den Spinat hinzufügen und einmal durchrühren. Mit Salz, Pfeffer und Chiliflocken würzen.",
-      "Sobald der Spinat zusammengefallen ist, die Sahne angiessen. Den Rahmspinat bei kleiner Hitze sanft köcheln lassen und ab und zu umrühren.",
+      "Sobald der Spinat zusammengefallen ist, die Rahm angiessen. Den Rahmspinat bei kleiner Hitze sanft köcheln lassen und ab und zu umrühren.",
       "In einer Pfanne mit 1 EL Olivenöl die Eier braten – je nach Geschmack mit festem oder flüssigem Eigelb. Mit Salz und Pfeffer würzen.",
       "Die gebratenen Kartoffeln mit Rahmspinat und Spiegelei auf Tellern anrichten und geniessen."
     ],
@@ -30952,7 +30952,7 @@
     ],
     "weatherType": "neutral",
     "source": "herrbuettner.de",
-    "description": "Eine köstliche Abwandlung des nordafrikanischen Klassikers mit Eiern in würziger Tomatensosse, verfeinert mit Cannellini Bohnen, frischem Spinat und Parmesan. Perfekt zum Dippen mit frischem Baguette!",
+    "description": "Eine köstliche Abwandlung des nordafrikanischen Klassikers mit Eiern in würziger Tomatensauce, verfeinert mit Cannellini Bohnen, frischem Spinat und Parmesan. Perfekt zum Dippen mit frischem Baguette!",
     "steps": [
       "Den Spinat bei Bedarf waschen und in einer Salatschleuder trocknen. Knoblauch und Zwiebeln schälen und in feine Würfel schneiden.",
       "Die Cannellini Bohnen aus der Dose nehmen, in einem feinen Sieb mit kaltem Wasser abspülen und abtropfen lassen. Den Parmesan fein reiben.",
@@ -30962,7 +30962,7 @@
       "Die Mini Rispentomaten halbieren und in die Pfanne geben. Mit Salz und Pfeffer würzen, durchrühren und weitere 30 Sekunden brutzeln lassen. Dabei mit einem Kochlöffel leicht auf die Tomaten drücken, um Saft herauszudrücken.",
       "Die Dosentomaten hinzufügen. Die leere Dose zu etwa einem Drittel mit Wasser füllen und ebenfalls in die Pfanne geben. Den geriebenen Parmesan einrühren.",
       "Den Spinat hinzufügen, mit Salz, Pfeffer und frisch geriebener Muskatnuss würzen. Die Pfanne mit einem Deckel verschliessen und 30-45 Sekunden warten, bis der Spinat zusammenfällt. Deckel abnehmen und den Spinat unterheben.",
-      "Mit einem Löffel 4 Vertiefungen in die Sosse drücken. Die Eier aufschlagen und jeweils in eine Vertiefung gleiten lassen.",
+      "Mit einem Löffel 4 Vertiefungen in die Sauce drücken. Die Eier aufschlagen und jeweils in eine Vertiefung gleiten lassen.",
       "Das Ganze für 20-25 Minuten köcheln lassen, bis das Eiweiss fest ist. Optional kann die Pfanne mit einem Deckel abgedeckt werden, um den Garprozess zu beschleunigen. Die Garzeit variiert je nachdem, wie flüssig oder fest das Eigelb gewünscht wird.",
       "Sobald das Eiweiss fest ist, servieren. Das Baguettebrot in Scheiben schneiden und zum Dippen dazu reichen."
     ],
@@ -30978,7 +30978,7 @@
   },
   {
     "id": "son-88",
-    "name": "Zucchini Boote gefüllt mit Paprikacremesosse und Feta",
+    "name": "Zucchini Boote gefüllt mit Paprikacremesauce und Feta",
     "category": "Vegetarische Hauptgerichte",
     "timeMinutes": 60,
     "basePortions": 4,
@@ -31078,7 +31078,7 @@
     ],
     "weatherType": "warm",
     "source": "herrbuettner.de",
-    "description": "Mediterrane Zucchini-Hälften gefüllt mit einer schmackhaften Paprikasosse und überbacken mit Schafskäse – ein tolles Aroma belohnt den etwas zeitaufwendigen Zubereitungsprozess.",
+    "description": "Mediterrane Zucchini-Hälften gefüllt mit einer schmackhaften Paprikasauce und überbacken mit Schafskäse – ein tolles Aroma belohnt den etwas zeitaufwendigen Zubereitungsprozess.",
     "steps": [
       "Den Grill im Backofen auf Stufe 3 vorheizen. Falls keine Grillfunktion vorhanden ist, auf Oberhitze oder Ober-/Unterhitze auf 250 Grad einstellen.",
       "Die Paprika waschen, trocken tupfen, halbieren und das Kerngehäuse entfernen. Die Paprikahälften mit etwas Olivenöl einreiben.",
@@ -31093,8 +31093,8 @@
       "Mit 1 TL Worcestershiresauce ablöschen, durchrühren und die Mischung aus der Pfanne nehmen und beiseite stellen.",
       "Die Zucchinihälften mit der Schnittfläche nach unten in die Pfanne geben und 45 Sekunden anbraten. Dann herausnehmen und mit der Schnittfläche nach oben auf das Backblech legen.",
       "Die Paprikahälften aus der Schüssel nehmen und die Haut abziehen.",
-      "Die gehäuteten Paprika zusammen mit der Zwiebel-Knoblauch-Mischung und Joghurt in eine Küchenmaschine geben und zu einer Sosse verarbeiten.",
-      "Die Paprikasosse auf die Zucchinihälften verteilen.",
+      "Die gehäuteten Paprika zusammen mit der Zwiebel-Knoblauch-Mischung und Joghurt in eine Küchenmaschine geben und zu einer Sauce verarbeiten.",
+      "Die Paprikasauce auf die Zucchinihälften verteilen.",
       "Den Schafskäse mit den Händen zerkrümeln und auf die Zucchinihälften geben.",
       "Das Blech für 30 Minuten auf die mittlere Schiene in den Backofen geben.",
       "Die Petersilie grob hacken.",
@@ -31215,7 +31215,7 @@
   },
   {
     "id": "son-90",
-    "name": "Erdbeerkuchen mit Kokosflocken und Sahne-Ricotta-Creme",
+    "name": "Erdbeerkuchen mit Kokosflocken und Rahm-Ricotta-Creme",
     "category": "Desserts & Süsses",
     "timeMinutes": 270,
     "basePortions": 8,
@@ -31274,7 +31274,7 @@
         "perPortions": 8
       },
       {
-        "name": "Schlagsahne",
+        "name": "Schlagrahm",
         "amount": 250,
         "unit": "ml",
         "perPortions": 8
@@ -31286,7 +31286,7 @@
         "perPortions": 8
       },
       {
-        "name": "Sahnesteif",
+        "name": "Rahmsteif",
         "amount": 1,
         "unit": "Stk",
         "perPortions": 8
@@ -31324,7 +31324,7 @@
     ],
     "weatherType": "neutral",
     "source": "herrbuettner.de",
-    "description": "Ein luftiger Rührkuchen mit Kokosflocken, frischen Erdbeeren und einer herrlich leichten Sahne-Ricotta-Creme. Perfekt für die Erdbeersaison und ein echter Frühlingstraum!",
+    "description": "Ein luftiger Rührkuchen mit Kokosflocken, frischen Erdbeeren und einer herrlich leichten Rahm-Ricotta-Creme. Perfekt für die Erdbeersaison und ein echter Frühlingstraum!",
     "steps": [
       "Den Backofen auf 175 Grad Ober-/Unterhitze vorheizen und ein Rost in die mittlere Schiene schieben.",
       "Die Erdbeeren waschen, trockentupfen, vom Grün befreien und halbieren. Mit 20 g Zucker vermischen und in einem feinen Sieb über einer Schüssel abtropfen lassen, um den austretenden Saft aufzufangen.",
@@ -31335,14 +31335,14 @@
       "Eine Springform (28 cm Durchmesser) grosszügig mit Butter einfetten und dünn mit Mehl bestäuben.",
       "Den Teig in die vorbereitete Springform füllen und mit einem Gummispatel gleichmässig verteilen.",
       "Den Kuchen für 20 Minuten im vorgeheizten Backofen backen.",
-      "Währenddessen die Sahne mit 100 g Zucker, 2 EL vom aufgefangenen Erdbeersaft und einem Päckchen Sahnesteif steif schlagen. Den Ricotta unterheben und die Creme im Kühlschrank kaltstellen.",
+      "Währenddessen die Rahm mit 100 g Zucker, 2 EL vom aufgefangenen Erdbeersaft und einem Päckchen Rahmsteif steif schlagen. Den Ricotta unterheben und die Creme im Kühlschrank kaltstellen.",
       "Den fertig gebackenen Kuchen vollständig auskühlen lassen, dann aus der Form nehmen und auf eine Tortenplatte setzen.",
       "Die abgetropften Erdbeeren kreisförmig auf dem Kuchen verteilen.",
-      "Die Sahne-Ricotta-Creme aus dem Kühlschrank nehmen und auf den Erdbeeren verstreichen. Einige Erdbeeren in die Mitte zur Dekoration legen.",
+      "Die Rahm-Ricotta-Creme aus dem Kühlschrank nehmen und auf den Erdbeeren verstreichen. Einige Erdbeeren in die Mitte zur Dekoration legen.",
       "Den fertigen Erdbeerkuchen für einige Stunden (ca. 3-4 Stunden) im Kühlschrank durchkühlen lassen, bevor er serviert wird."
     ],
     "dietCategory": "vegetarian",
-    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/05/erdbeerkuchen_mit_sahne_und_ricotta02.jpg",
+    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/05/erdbeerkuchen_mit_rahm_und_ricotta02.jpg",
     "imageZutaten": null,
     "imageKochen": null,
     "allergens": [
@@ -31451,7 +31451,7 @@
   },
   {
     "id": "son-92",
-    "name": "Zucchini-Boote gefüllt mit Tomaten-Hackfleisch-Sosse",
+    "name": "Zucchini-Boote gefüllt mit Tomaten-Hackfleisch-Sauce",
     "category": "Aufl\\u00e4ufe & Gratins",
     "timeMinutes": 40,
     "basePortions": 4,
@@ -31561,12 +31561,12 @@
       "Zwiebeln hinzugeben und glasig anschwitzen. Knoblauch dazugeben und kurz mitanschwitzen. Die Mischung aus dem Topf nehmen und beiseitestellen.",
       "1 EL Olivenöl in den Topf geben und das Hackfleisch anbraten. Mit einem Kochlöffel zerkleinern. Mit Salz, Pfeffer und Paprikapulver würzen. So lange braten, bis das Fleisch schön gebräunt ist und sich am Topfboden ein leichter Bratensatz bildet.",
       "Die Zwiebel-Knoblauch-Kräuter-Mischung und Tomatenmark zum Hackfleisch geben und gut verrühren, bis sich das Tomatenmark überall verteilt hat.",
-      "Tomatenfruchtfleisch aus der Dose dazugeben. Die Dose zur Hälfte mit Wasser füllen und ebenfalls hinzufügen. Eine Prise Zucker unterrühren und die Sosse 20 Minuten köcheln lassen, bis sie schön eingedickt ist.",
+      "Tomatenfruchtfleisch aus der Dose dazugeben. Die Dose zur Hälfte mit Wasser füllen und ebenfalls hinzufügen. Eine Prise Zucker unterrühren und die Sauce 20 Minuten köcheln lassen, bis sie schön eingedickt ist.",
       "Den Backofen auf 200 Grad Ober-/Unterhitze vorheizen.",
       "Die Zucchini waschen und trocken tupfen. Der Länge nach halbieren und das weiche Kerngehäuse mit einem Löffel aushöhlen.",
       "Eine Grillpfanne bei mittlerer Hitze erhitzen. Die Oberseite der Zucchini-Hälften mit Öl einreiben, salzen und pfeffern. Mit der Oberseite in die Grillpfanne legen und 3-5 Minuten grillen.",
       "Die gegrillten Zucchini-Hälften in eine Auflaufform geben. 2/3 der Crème fraîche auf die Zucchini-Hälften verteilen und verstreichen.",
-      "Die Tomaten-Hackfleisch-Sosse auf die Zucchini-Hälften verteilen. Die restliche Crème fraîche obendrauf geben und mit geriebenem Mozzarella bestreuen.",
+      "Die Tomaten-Hackfleisch-Sauce auf die Zucchini-Hälften verteilen. Die restliche Crème fraîche obendrauf geben und mit geriebenem Mozzarella bestreuen.",
       "Die gefüllten Zucchini-Boote 10 Minuten bei 200 Grad Ober-/Unterhitze auf der mittleren Schiene im Backofen gratinieren, bis der Käse geschmolzen und stellenweise gebräunt ist."
     ],
     "dietCategory": "meat",
@@ -33650,7 +33650,7 @@
         "perPortions": 8
       },
       {
-        "name": "Sojasahne",
+        "name": "Sojarahm",
         "amount": 2,
         "unit": "EL",
         "perPortions": 8
@@ -33663,7 +33663,7 @@
       "Bohnen mit Apfelmark und Cashewmus fein pürieren.",
       "Sojadrink handwarm erwärmen, Hefe auflösen, Vanille und Bohnen-Mix einrühren. Mehl zugeben und zu elastischem Teig kneten. 30–45 Minuten gehen lassen.",
       "Zu Kreis ausrollen, in 8 Stücke schneiden. Von der breiten Seite aufrollen und zu Hörnchen biegen. Weitere 30 Minuten gehen lassen.",
-      "Mit Sojasahne einpinseln. Bei 180 °C (Ober-/Unterhitze) 15–20 Minuten goldbraun backen."
+      "Mit Sojarahm einpinseln. Bei 180 °C (Ober-/Unterhitze) 15–20 Minuten goldbraun backen."
     ],
     "tips": "",
     "imageUrl": null,

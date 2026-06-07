@@ -1,6 +1,6 @@
 {
   "id": "ei-21",
-  "name": "Spiegelei Frittata mit Frühlingszwiebeln, Bacon und Mais",
+  "name": "Spiegelei Frittata mit Frühlingszwiebeln, Speck und Mais",
   "category": "Frühstück",
   "timeMinutes": 20,
   "basePortions": 2,
@@ -19,7 +19,7 @@
       "perPortions": 2
     },
     {
-      "name": "Bacon in Scheiben",
+      "name": "Speck in Scheiben",
       "amount": 125,
       "unit": "g",
       "perPortions": 2
@@ -75,15 +75,15 @@
   ],
   "weatherType": "neutral",
   "source": "herrbuettner.de",
-  "description": "Eine besondere Frittata-Variante mit knusprigem Bacon, Mais und Frühlingszwiebeln, gekrönt mit vier Spiegeleiern, die im Ofen mitgebacken werden. Das flüssige Eigelb verläuft beim Aufschneiden herrlich über die anderen Zutaten.",
+  "description": "Eine besondere Frittata-Variante mit knusprigem Speck, Mais und Frühlingszwiebeln, gekrönt mit vier Spiegeleiern, die im Ofen mitgebacken werden. Das flüssige Eigelb verläuft beim Aufschneiden herrlich über die anderen Zutaten.",
   "steps": [
     "Den Backofen auf 175 Grad vorheizen und ein Rost in die mittlere Schiene schieben.",
-    "Den Bacon in etwa 1 cm grosse Würfel schneiden.",
-    "Eine beschichtete Pfanne bei mittlerer Hitze auf den Herd stellen und den Bacon in die noch kalte Pfanne geben. Das Fett langsam auslassen und den Bacon leicht knusprig braten.",
+    "Den Speck in etwa 1 cm grosse Würfel schneiden.",
+    "Eine beschichtete Pfanne bei mittlerer Hitze auf den Herd stellen und den Speck in die noch kalte Pfanne geben. Das Fett langsam auslassen und den Speck leicht knusprig braten.",
     "Währenddessen den Mais aus der Dose nehmen und gut abtropfen lassen. Die Rosmarinnadeln vom Zweig zupfen und fein hacken. Den Knoblauch schälen und in feine Würfel schneiden.",
     "Die Frühlingszwiebeln waschen, trocken tupfen und in grobe Ringe schneiden. Ein paar Ringe für die Garnierung zur Seite legen. Den Parmesan fein reiben.",
     "6 Eier in eine Schüssel aufschlagen, Salz, Pfeffer und den geriebenen Parmesan hinzugeben. Mit einem Schneebesen kräftig verquirlen, bis die Masse leicht schäumt.",
-    "Sobald der Bacon ausreichend Fett ausgelassen hat, Rosmarin, Frühlingszwiebeln und Knoblauch in die Pfanne geben. Alles gut vermischen und etwa 1 Minute im Fett anbraten.",
+    "Sobald der Speck ausreichend Fett ausgelassen hat, Rosmarin, Frühlingszwiebeln und Knoblauch in die Pfanne geben. Alles gut vermischen und etwa 1 Minute im Fett anbraten.",
     "Die Butter hinzufügen, schmelzen lassen und in der Pfanne verteilen. Anschliessend den Mais untermischen und mit Salz und Pfeffer würzen.",
     "Die Ei-Parmesan-Mischung in die Pfanne giessen und mit einem Kochlöffel gleichmässig verteilen. Dabei gut mit den anderen Zutaten vermischen.",
     "Sobald die Eimasse am Boden zu stocken beginnt, das Rühren beenden. Die Pfanne noch etwa 1 Minute auf dem Herd stehen lassen.",
@@ -92,7 +92,7 @@
     "Die Frittata aus dem Ofen nehmen und 5 Minuten abkühlen lassen. Vor dem Servieren die Spiegeleier mit Salz und Pfeffer würzen und mit den zurückbehaltenen Frühlingszwiebeln garnieren."
   ],
   "dietCategory": "meat",
-  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/02/frittata_mit_bacon_mais_und_spiegelei01.jpg",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/02/frittata_mit_speck_mais_und_spiegelei01.jpg",
   "imageZutaten": null,
   "imageKochen": null,
   "allergens": [

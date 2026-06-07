@@ -1,6 +1,6 @@
 {
   "id": "pas-59",
-  "name": "Tagliatelle mit Champignon-Sahnesosse und Kresse",
+  "name": "Tagliatelle mit Champignon-Rahmsauce und Kresse",
   "category": "Pasta",
   "timeMinutes": 20,
   "basePortions": 2,
@@ -67,7 +67,7 @@
       "perPortions": 2
     },
     {
-      "name": "Sahne",
+      "name": "Rahm",
       "amount": 100,
       "unit": "ml",
       "perPortions": 2
@@ -93,7 +93,7 @@
   ],
   "weatherType": "kalt",
   "source": "herrbuettner.de",
-  "description": "Diese cremige Pilz-Rahm-Sosse mit Gartenkresse und Nudeln schmeckt erdig, würzig und frisch – perfekt für gemütliche Herbsttage und in unter 20 Minuten zubereitet.",
+  "description": "Diese cremige Pilz-Rahm-Sauce mit Gartenkresse und Nudeln schmeckt erdig, würzig und frisch – perfekt für gemütliche Herbsttage und in unter 20 Minuten zubereitet.",
   "steps": [
     "Einen grossen Topf mit Wasser aufsetzen und zum Kochen bringen. Das kochende Wasser kräftig salzen.",
     "Die Frühlingszwiebel waschen, trocknen, äussere Schichten entfernen und klein hacken. Die Schalotte schälen und fein würfeln. Den Knoblauch schälen und fein hacken.",
@@ -101,12 +101,12 @@
     "Eine Pfanne bei mittlerer Hitze erhitzen und das Olivenöl hineingeben. Frühlingszwiebel, Schalotte und Knoblauch darin glasig anschwitzen.",
     "Das Tomatenmark dazugeben, gut vermischen und etwa eine Minute mitrösten. Danach alles aus der Pfanne nehmen und in einer Schüssel beiseitestellen.",
     "Die Champignons in die Pfanne geben, mit Salz und Pfeffer würzen und etwa 1 Minute scharf anbraten. Die Butter hinzufügen und schmelzen lassen, dabei gelegentlich umrühren.",
-    "Die Zwiebel-Tomatenmark-Mischung wieder in die Pfanne geben, mit der Gemüsebrühe ablöschen und die Sahne hinzufügen. Einmal aufkochen lassen, dann die Hitze reduzieren und leicht köcheln lassen.",
-    "Die Tagliatelle ins kochende Wasser geben und nach Packungsanweisung garen. 2 Minuten vor Ende der Garzeit die Nudeln direkt in die Pfanne mit der Sosse geben und dort zu Ende garen. Dabei mehrmals umrühren.",
+    "Die Zwiebel-Tomatenmark-Mischung wieder in die Pfanne geben, mit der Gemüsebrühe ablöschen und die Rahm hinzufügen. Einmal aufkochen lassen, dann die Hitze reduzieren und leicht köcheln lassen.",
+    "Die Tagliatelle ins kochende Wasser geben und nach Packungsanweisung garen. 2 Minuten vor Ende der Garzeit die Nudeln direkt in die Pfanne mit der Sauce geben und dort zu Ende garen. Dabei mehrmals umrühren.",
     "Die Pasta auf Teller verteilen und mit frischer Gartenkresse garnieren."
   ],
   "dietCategory": "vegetarian",
-  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2019/10/Tagliatelle_mit_Champignon_Sahnesauce.jpg",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2019/10/Tagliatelle_mit_Champignon_Rahmsauce.jpg",
   "imageZutaten": null,
   "imageKochen": null,
   "allergens": [

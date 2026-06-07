@@ -1,6 +1,6 @@
 {
   "id": "pas-74",
-  "name": "Spätzle mit Hähnchenfleisch & Champignons in Sahnesosse",
+  "name": "Spätzle mit Hähnchenfleisch & Champignons in Rahmsauce",
   "category": "Pasta",
   "timeMinutes": 35,
   "basePortions": 2.5,
@@ -68,7 +68,7 @@
       "perPortions": 2.5
     },
     {
-      "name": "Sahne",
+      "name": "Rahm",
       "amount": 125,
       "unit": "g",
       "perPortions": 2.5
@@ -106,7 +106,7 @@
   ],
   "weatherType": "kalt",
   "source": "herrbuettner.de",
-  "description": "Ein herrlich cremiges und aromatisches Gericht mit zartem Hähnchenfleisch, gebratenen Champignons und einer würzigen Sahnesosse mit Thymian und Petersilie – einfach, schnell und unglaublich lecker.",
+  "description": "Ein herrlich cremiges und aromatisches Gericht mit zartem Hähnchenfleisch, gebratenen Champignons und einer würzigen Rahmsauce mit Thymian und Petersilie – einfach, schnell und unglaublich lecker.",
   "steps": [
     "Einen grossen Topf mit ausreichend Wasser für die Spätzle aufsetzen und zum Kochen bringen. Sobald das Wasser kocht, salzen.",
     "Das Hähnchenbrustfilet in mundgerechte Würfel von etwa 1,5-2 cm schneiden.",
@@ -119,11 +119,11 @@
     "1 EL Olivenöl in die Pfanne geben und die Zwiebeln darin glasig anschwitzen. Den Knoblauch hinzufügen und vermischen.",
     "Nach etwa 30 Sekunden das Tomatenmark hinzufügen, mit Zwiebeln und Knoblauch vermischen und kurz brutzeln lassen.",
     "Mit dem Geflügelfond ablöschen.",
-    "5 g Mehl mit 100 ml lauwarmem Wasser klumpenfrei verrühren und in die Pfanne giessen. Die Sahne dazugeben und alles durchrühren.",
-    "Die Pilze und das Hähnchenfleisch zurück in die Pfanne geben und durchrühren. Die Sosse aufkochen lassen, dann die Hitze reduzieren und köcheln lassen.",
-    "Die Spätzle ins kochende Wasser geben. Während die Spätzle garen, die Sosse immer wieder durchrühren und mit Salz und Pfeffer abschmecken. Bei Bedarf mit etwas Wasser verdünnen.",
-    "Die Petersilie klein hacken, zur Sosse geben und unterrühren. Etwas Petersilie für die Garnierung beiseitelegen.",
-    "Die Spätzle abseihen, auf Tellern verteilen und mit der Sosse übergiessen. Mit Petersilie garnieren und servieren."
+    "5 g Mehl mit 100 ml lauwarmem Wasser klumpenfrei verrühren und in die Pfanne giessen. Die Rahm dazugeben und alles durchrühren.",
+    "Die Pilze und das Hähnchenfleisch zurück in die Pfanne geben und durchrühren. Die Sauce aufkochen lassen, dann die Hitze reduzieren und köcheln lassen.",
+    "Die Spätzle ins kochende Wasser geben. Während die Spätzle garen, die Sauce immer wieder durchrühren und mit Salz und Pfeffer abschmecken. Bei Bedarf mit etwas Wasser verdünnen.",
+    "Die Petersilie klein hacken, zur Sauce geben und unterrühren. Etwas Petersilie für die Garnierung beiseitelegen.",
+    "Die Spätzle abseihen, auf Tellern verteilen und mit der Sauce übergiessen. Mit Petersilie garnieren und servieren."
   ],
   "dietCategory": "meat",
   "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/03/spaetzle_mit_haehnchen_champignon_sauce_.jpg",

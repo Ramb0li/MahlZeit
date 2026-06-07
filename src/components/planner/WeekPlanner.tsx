@@ -1,6 +1,6 @@
 'use client';
 import { useState, useEffect, useCallback } from 'react';
-import { ChevronLeft, ChevronRight, Sparkles, RefreshCw, Trash2, Printer } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Sparkles, RefreshCw, Trash2, Printer, Heart } from 'lucide-react';
 import { format } from 'date-fns';
 import { de } from 'date-fns/locale';
 import { getWeekId, getWeekDays, nextWeek, prevWeek, formatDate, getInitialDisplayWeek } from '@/lib/utils';
@@ -532,31 +532,35 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe, onOp
             {isClearing ? <RefreshCw size={15} style={{ animation: 'mzspin 1s linear infinite' }} /> : <Trash2 size={15} />}
           </button>
 
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 3 }}>
-            <button
-              onClick={handleSuggestWeek}
-              disabled={isSuggesting}
-              className="mz-btn-primary"
-              style={{ opacity: isSuggesting ? 0.5 : 1 }}
+          {/* Favoriten-Herz + Suggest — ein Pill-Button mit eingebettetem Toggle */}
+          <button
+            onClick={handleSuggestWeek}
+            disabled={isSuggesting}
+            className="mz-btn-primary"
+            style={{ paddingLeft: 5, opacity: isSuggesting ? 0.5 : 1 }}
+          >
+            <span
+              role="button"
+              tabIndex={0}
+              onClick={(e) => { e.stopPropagation(); setFavoritesOnly(v => !v); }}
+              onKeyDown={(e) => { if (e.key === 'Enter') { e.stopPropagation(); setFavoritesOnly(v => !v); } }}
+              title={favoritesOnly ? 'Nur Favoriten aktiv — klicken zum Deaktivieren' : 'Alle Rezepte — klicken für Nur Favoriten'}
+              style={{
+                display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+                width: 30, height: 30, borderRadius: '50%', flexShrink: 0,
+                background: 'rgba(255,255,255,.9)',
+                color: favoritesOnly ? '#e53935' : '#c49a6c',
+                cursor: 'pointer',
+                marginRight: 2,
+              }}
             >
-              {isSuggesting
-                ? <RefreshCw size={14} style={{ animation: 'mzspin 1s linear infinite' }} />
-                : <Sparkles size={14} />}
-              <span className="mz-hide-sm">Woche vorschlagen</span>
-            </button>
-            <label
-              className="flex items-center gap-1.5 cursor-pointer select-none"
-              style={{ fontSize: 11, color: 'var(--muted)', display: 'flex', alignItems: 'center', gap: 5, cursor: 'pointer' }}
-            >
-              <input
-                type="checkbox"
-                checked={favoritesOnly}
-                onChange={e => setFavoritesOnly(e.target.checked)}
-                style={{ accentColor: 'var(--accent)', width: 12, height: 12 }}
-              />
-              Nur Favoriten
-            </label>
-          </div>
+              <Heart size={13} fill={favoritesOnly ? 'currentColor' : 'none'} />
+            </span>
+            {isSuggesting
+              ? <RefreshCw size={14} style={{ animation: 'mzspin 1s linear infinite' }} />
+              : <Sparkles size={14} />}
+            <span className="mz-hide-sm">Woche vorschlagen</span>
+          </button>
         </div>
       </div>
 

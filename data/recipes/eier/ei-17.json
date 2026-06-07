@@ -14,7 +14,7 @@
   ],
   "ingredients": [
     {
-      "name": "Porree",
+      "name": "Lauch",
       "amount": 1,
       "unit": "Stk",
       "perPortions": 2
@@ -106,7 +106,7 @@
   ],
   "weatherType": "neutral",
   "source": "herrbuettner.de",
-  "description": "Eine fein würzige Frittata mit süssem Porree, erdigen Champignons und cremigem Zitronen-Hüttenkäse. Dazu ein erfrischender Apfel-Petersilie-Salat – in nur 25 Minuten fertig!",
+  "description": "Eine fein würzige Frittata mit süssem Lauch, erdigen Champignons und cremigem Zitronen-Hüttenkäse. Dazu ein erfrischender Apfel-Petersilie-Salat – in nur 25 Minuten fertig!",
   "steps": [
     "Den Backofen auf 200 Grad Ober-/Unterhitze vorheizen und ein Rost in die mittlere Schiene einsetzen.",
     "Den gehackten Knoblauch in einer ofenfesten Pfanne mit Olivenöl bei mittlerer Temperatur kurz glasig dünsten.",

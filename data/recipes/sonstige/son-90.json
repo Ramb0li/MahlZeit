@@ -1,6 +1,6 @@
 {
   "id": "son-90",
-  "name": "Erdbeerkuchen mit Kokosflocken und Sahne-Ricotta-Creme",
+  "name": "Erdbeerkuchen mit Kokosflocken und Rahm-Ricotta-Creme",
   "category": "Desserts & Süsses",
   "timeMinutes": 270,
   "basePortions": 8,
@@ -59,7 +59,7 @@
       "perPortions": 8
     },
     {
-      "name": "Schlagsahne",
+      "name": "Schlagrahm",
       "amount": 250,
       "unit": "ml",
       "perPortions": 8
@@ -71,7 +71,7 @@
       "perPortions": 8
     },
     {
-      "name": "Sahnesteif",
+      "name": "Rahmsteif",
       "amount": 1,
       "unit": "Stk",
       "perPortions": 8
@@ -109,7 +109,7 @@
   ],
   "weatherType": "neutral",
   "source": "herrbuettner.de",
-  "description": "Ein luftiger Rührkuchen mit Kokosflocken, frischen Erdbeeren und einer herrlich leichten Sahne-Ricotta-Creme. Perfekt für die Erdbeersaison und ein echter Frühlingstraum!",
+  "description": "Ein luftiger Rührkuchen mit Kokosflocken, frischen Erdbeeren und einer herrlich leichten Rahm-Ricotta-Creme. Perfekt für die Erdbeersaison und ein echter Frühlingstraum!",
   "steps": [
     "Den Backofen auf 175 Grad Ober-/Unterhitze vorheizen und ein Rost in die mittlere Schiene schieben.",
     "Die Erdbeeren waschen, trockentupfen, vom Grün befreien und halbieren. Mit 20 g Zucker vermischen und in einem feinen Sieb über einer Schüssel abtropfen lassen, um den austretenden Saft aufzufangen.",
@@ -120,14 +120,14 @@
     "Eine Springform (28 cm Durchmesser) grosszügig mit Butter einfetten und dünn mit Mehl bestäuben.",
     "Den Teig in die vorbereitete Springform füllen und mit einem Gummispatel gleichmässig verteilen.",
     "Den Kuchen für 20 Minuten im vorgeheizten Backofen backen.",
-    "Währenddessen die Sahne mit 100 g Zucker, 2 EL vom aufgefangenen Erdbeersaft und einem Päckchen Sahnesteif steif schlagen. Den Ricotta unterheben und die Creme im Kühlschrank kaltstellen.",
+    "Währenddessen die Rahm mit 100 g Zucker, 2 EL vom aufgefangenen Erdbeersaft und einem Päckchen Rahmsteif steif schlagen. Den Ricotta unterheben und die Creme im Kühlschrank kaltstellen.",
     "Den fertig gebackenen Kuchen vollständig auskühlen lassen, dann aus der Form nehmen und auf eine Tortenplatte setzen.",
     "Die abgetropften Erdbeeren kreisförmig auf dem Kuchen verteilen.",
-    "Die Sahne-Ricotta-Creme aus dem Kühlschrank nehmen und auf den Erdbeeren verstreichen. Einige Erdbeeren in die Mitte zur Dekoration legen.",
+    "Die Rahm-Ricotta-Creme aus dem Kühlschrank nehmen und auf den Erdbeeren verstreichen. Einige Erdbeeren in die Mitte zur Dekoration legen.",
     "Den fertigen Erdbeerkuchen für einige Stunden (ca. 3-4 Stunden) im Kühlschrank durchkühlen lassen, bevor er serviert wird."
   ],
   "dietCategory": "vegetarian",
-  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/05/erdbeerkuchen_mit_sahne_und_ricotta02.jpg",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/05/erdbeerkuchen_mit_rahm_und_ricotta02.jpg",
   "imageZutaten": null,
   "imageKochen": null,
   "allergens": [

@@ -41,7 +41,7 @@
       "perPortions": 4
     },
     {
-      "name": "Sojasosse",
+      "name": "Sojasauce",
       "amount": 3,
       "unit": "EL",
       "perPortions": 4
@@ -106,8 +106,8 @@
   "basePortions": 4,
   "description": "Reichhaltige vegane Thai-Ramen-Suppe mit cremiger Erdnuss-Kokosmilch-Brühe und knusprigem Tofu.",
   "steps": [
-    "Suppe: Öl erhitzen, Knoblauch, Ingwer und Currypaste anbraten. Brühe, Kokosmilch, Erdnussmus und Sojasosse zugeben, aufkochen. Ca. 10 Min. köcheln. Karotte und Pak-Choi hinzufügen, 5 Min. mitkochen.",
-    "Tofu: Tofuwürfel mit Stärke mischen. Öl erhitzen, Tofu ca. 10 Min. goldbraun braten. Sojasosse und Agavensirup mischen, zum Tofu geben und schwenken.",
+    "Suppe: Öl erhitzen, Knoblauch, Ingwer und Currypaste anbraten. Brühe, Kokosmilch, Erdnussmus und Sojasauce zugeben, aufkochen. Ca. 10 Min. köcheln. Karotte und Pak-Choi hinzufügen, 5 Min. mitkochen.",
+    "Tofu: Tofuwürfel mit Stärke mischen. Öl erhitzen, Tofu ca. 10 Min. goldbraun braten. Sojasauce und Agavensirup mischen, zum Tofu geben und schwenken.",
     "Ramen-Nudeln in Salzwasser ca. 4 Min. kochen, abtropfen lassen.",
     "Nudeln und Tofu in Schüsseln verteilen, heisse Suppe darübergiessen. Mit Erdnüssen und Koriander garnieren."
   ],

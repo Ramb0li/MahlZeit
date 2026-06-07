@@ -1,6 +1,6 @@
 {
   "id": "pas-89",
-  "name": "Tagliatelle mit glasierten Karotten in Butter-Sahne",
+  "name": "Tagliatelle mit glasierten Karotten in Butter-Rahm",
   "category": "Pasta",
   "timeMinutes": 30,
   "basePortions": 4,
@@ -42,7 +42,7 @@
       "perPortions": 4
     },
     {
-      "name": "Sahne",
+      "name": "Rahm",
       "amount": 200,
       "unit": "ml",
       "perPortions": 4
@@ -86,12 +86,12 @@
   ],
   "weatherType": "neutral",
   "source": "herrbuettner.de",
-  "description": "Einfache, schnelle Pasta mit glasierten Möhrenstreifen in cremiger Butter-Sahne-Sauce. Durch die Reduzierung bildet sich eine köstliche, sämige Sosse, verfeinert mit Petersilie und gerösteten Mandeln.",
+  "description": "Einfache, schnelle Pasta mit glasierten Möhrenstreifen in cremiger Butter-Rahm-Sauce. Durch die Reduzierung bildet sich eine köstliche, sämige Sauce, verfeinert mit Petersilie und gerösteten Mandeln.",
   "steps": [
     "Eine Pfanne ohne Öl bei mittlerer Hitze erhitzen und die Mandeln darin für einige Minuten rösten, bis sie leicht gebräunt sind. Mandeln herausnehmen und beiseite stellen.",
     "Die Karotten schälen und die Enden abschneiden. Mit einem Sparschäler der Länge nach hauchdünne Streifen von den Karotten hobeln.",
     "Butter in einer Pfanne bei mittlerer Hitze zerlassen. Die gehobelten Karottenstreifen hineingeben, durchschwenken und mit Zucker bestreuen. Für 2 Minuten anschwitzen lassen.",
-    "Mineralwasser hinzugiessen und köcheln lassen. Sobald das Mineralwasser fast vollständig reduziert ist, die Sahne dazugiessen. Mit Salz und Pfeffer würzen.",
+    "Mineralwasser hinzugiessen und köcheln lassen. Sobald das Mineralwasser fast vollständig reduziert ist, die Rahm dazugiessen. Mit Salz und Pfeffer würzen.",
     "In einer kleinen Schüssel 50 ml Wasser mit 1 TL Mehl verrühren und zur Sauce geben. Alles für 20 Minuten bei mittlerer Hitze köcheln lassen.",
     "In der Zwischenzeit einen Topf mit reichlich Wasser aufsetzen und zum Kochen bringen. Salzen und die Tagliatelle nach Packungsanweisung kochen.",
     "Während die Sauce köchelt, diese immer wieder durchrühren. Die Karotten werden dabei nach und nach zerfallen und sich in der Sauce verteilen.",
@@ -100,7 +100,7 @@
     "Auf Tellern anrichten und mit den gerösteten Mandeln garnieren."
   ],
   "dietCategory": "vegetarian",
-  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/06/bandnudeln-mit-glasierten-karotten-in-sahnesosse-mit-petersilie-und-mandeln02.jpg",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/06/bandnudeln-mit-glasierten-karotten-in-rahmsauce-mit-petersilie-und-mandeln02.jpg",
   "imageZutaten": null,
   "imageKochen": null,
   "allergens": [
