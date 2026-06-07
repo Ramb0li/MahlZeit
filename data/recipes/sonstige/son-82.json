@@ -1,0 +1,150 @@
+{
+  "id": "son-82",
+  "name": "Karottenkuchen mit Aprikosen-Fruchtaufstrich und Frischkäse-Frosting",
+  "category": "Desserts & Süsses",
+  "timeMinutes": 255,
+  "basePortions": 12,
+  "tags": [
+    "Vegetarisch",
+    "Frühling",
+    "Kinderfreundlich"
+  ],
+  "ingredients": [
+    {
+      "name": "Aprikosen-Fruchtaufstrich (z.B. Zentis 75% Frucht)",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Karotten, geraspelt",
+      "amount": 350,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Weizenmehl",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Weizenvollkornmehl",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Mandeln, fein gemahlen",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Mandeln, gehobelt",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Backpulver",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 12
+    },
+    {
+      "name": "Kristallzucker",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Brauner Rohrzucker",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 12
+    },
+    {
+      "name": "Eier",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 12
+    },
+    {
+      "name": "Pflanzenöl",
+      "amount": 175,
+      "unit": "ml",
+      "perPortions": 12
+    },
+    {
+      "name": "Butter für das Frosting",
+      "amount": 90,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Frischkäse",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Puderzucker",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Butter zum Einfetten",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 12
+    },
+    {
+      "name": "Mehl für die Form",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 12
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Ein saftig-fruchtiger Karottenkuchen mit Vollkornmehl und Mandeln, verfeinert mit Aprikosen-Fruchtaufstrich und cremigem Frischkäse-Frosting. Perfekt für Ostern oder zum Kaffee.",
+  "steps": [
+    "Den Backofen auf 175 Grad Ober-/Unterhitze vorheizen und ein Rost auf die zweite Schiene von unten einschieben.",
+    "Die Karotten waschen, trocken tupfen, schälen und fein raspeln.",
+    "In einer Schüssel Weizenmehl, Weizenvollkornmehl, fein gemahlene Mandeln, eine Prise Salz und Backpulver vermischen.",
+    "In einer zweiten Schüssel die Eier aufschlagen und mit dem Handrührgerät verquirlen, bis eine leicht schaumige Konsistenz entsteht.",
+    "Weiter rühren und dabei weißen und braunen Zucker nach und nach einrieseln lassen.",
+    "Das Pflanzenöl langsam unter Rühren hinzufügen und weitere 5 Minuten rühren.",
+    "Die geraspelten Karotten unterheben.",
+    "Die trockenen Zutaten zu den flüssigen geben und mit einem Teigschaber vorsichtig zu einem gleichmäßigen Teig vermischen.",
+    "Eine Springform (28 cm Durchmesser) mit Butter einfetten und mit Mehl bestäuben. Überschüssiges Mehl durch Klopfen entfernen.",
+    "Den Teig in die Springform füllen und verteilen. Die Form leicht anheben und fallen lassen, damit sich die Masse besser verteilt.",
+    "Knapp die Hälfte des Aprikosen-Fruchtaufstrichs auf dem Teig verteilen und mit einem Löffel leicht eindrücken und einrühren, sodass der Fruchtaufstrich gerade vom Teig bedeckt ist.",
+    "Die Form für etwa 50 Minuten im Backofen backen.",
+    "Währenddessen für das Frosting die Butter mit dem Handrührgerät cremig aufschlagen.",
+    "Den Puderzucker hinzufügen und etwa 2 Minuten weiterrühren.",
+    "Den Frischkäse hinzugeben und auf kleiner Stufe einrühren, bis eine glatte Creme entsteht. Das Frosting in den Kühlschrank stellen.",
+    "Den fertigen Kuchen gründlich auskühlen lassen.",
+    "Das Frischkäse-Frosting auf dem Kuchen verteilen.",
+    "Den restlichen Aprikosen-Fruchtaufstrich auf dem Frosting verteilen oder kunstvoll damit vermischen.",
+    "Den Kuchen mit gehobelten Mandeln bestreuen."
+  ],
+  "dietCategory": "vegetarian",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2019/03/Karotten-Kuchen-mit-Frischkaese-Frosting-und-Zentis-75-Prozent-Frucht-Aprikose-Konfituere_01.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "ei",
+    "gluten",
+    "milch",
+    "schalenfruechte"
+  ]
+}

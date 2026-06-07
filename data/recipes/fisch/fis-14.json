@@ -1,0 +1,111 @@
+{
+  "id": "fis-14",
+  "name": "Gebratenes Lachsfilet auf Chicorée-Salat mit Orangen",
+  "category": "Fisch & Meeresfrüchte",
+  "timeMinutes": 20,
+  "basePortions": 2,
+  "tags": [
+    "Abendgericht",
+    "Schnell und einfach",
+    "Herbst",
+    "Winter"
+  ],
+  "ingredients": [
+    {
+      "name": "Chicorée",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Bio Orange",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Bio Zitrone (Saft)",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Schalotte",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Schnittlauch",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 2
+    },
+    {
+      "name": "Gartenkresse",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 2
+    },
+    {
+      "name": "Blanchierte Mandeln gehobelt",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 2
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 1.5,
+      "unit": "Zehe",
+      "perPortions": 2
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Lachsfilets mit Haut",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 2
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Zartes Lachsfilet trifft auf frischen Chicorée-Salat mit saftigen Orangen. Die Zitronenvinaigrette und geröstete Mandeln balancieren die Bitternote perfekt aus – eine harmonische Komposition aus Süße, Säure und feinen Röstaromen.",
+  "steps": [
+    "Die gehobelten Mandeln in einer trockenen Pfanne ohne Fettzugabe rösten, bis sie leicht gebräunt sind. Anschließend herausnehmen und zur Seite stellen.",
+    "Den Strunk vom Chicorée entfernen und die einzelnen Blätter vorsichtig voneinander lösen.",
+    "Die Orange schälen, filetieren und Zesten abnehmen. Von der Zitrone Saft auspressen und ebenfalls Zesten abreiben. Die Schalotte in feine Würfel schneiden und den Schnittlauch fein hacken.",
+    "Für die Vinaigrette Zitronensaft, Zitronen- und Orangenzesten, Orangenfilets, Schalottenwürfel, Schnittlauch, Gartenkresse und 2 EL Olivenöl in einer Schüssel vermischen. Mit Salz und Pfeffer abschmecken.",
+    "Die Lachsfilets von beiden Seiten mit Salz und Pfeffer würzen.",
+    "Eine Pfanne bei mittlerer Hitze aufheizen. 1 EL Olivenöl hineingeben und die Lachsfilets mit der Hautseite nach unten 4-5 Minuten braten.",
+    "Die Hitze reduzieren, die Filets wenden und weitere 5-8 Minuten bei niedriger Temperatur garziehen lassen, bis die Kerntemperatur 50-55 Grad erreicht.",
+    "Die Lachsfilets aus der Pfanne nehmen. Die Hitze wieder auf mittlere Stufe erhöhen und den in Scheiben geschnittenen Knoblauch im verbliebenen Öl anschwitzen.",
+    "Die Chicorée-Blätter in die Pfanne geben, mit Salz und Pfeffer würzen und etwa 2 Minuten anschwitzen.",
+    "Den Chicorée mit dem Knoblauch auf zwei Teller verteilen. Die Orangen-Zitronenvinaigrette darüber verteilen.",
+    "Die Lachsfilets auf den Salat legen und mit den gerösteten Mandeln garnieren."
+  ],
+  "dietCategory": "fish",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2020/02/Gebratener_Lachs_auf_Chicoree-Salat.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "fisch",
+    "schalenfruechte"
+  ]
+}

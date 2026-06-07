@@ -1,0 +1,133 @@
+{
+  "id": "pas-84",
+  "name": "Pasta gratiniert in cremiger Käse-Sahne-Soße mit Thymian",
+  "category": "Pasta",
+  "timeMinutes": 25,
+  "basePortions": 4,
+  "tags": [
+    "Vegetarisch",
+    "Ofengericht",
+    "Abendgericht",
+    "Mittagsgericht",
+    "Herbst",
+    "Winter"
+  ],
+  "ingredients": [
+    {
+      "name": "Nudeln (Korkenzieher)",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebeln, weiß",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Thymian",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Geflügelfond",
+      "amount": 200,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Weißwein",
+      "amount": 50,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Sahne",
+      "amount": 200,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Schmelzkäse",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Parmesan",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Mehl",
+      "amount": 20,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Muskatnuss, frisch gerieben",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "weatherType": "kalt",
+  "source": "herrbuettner.de",
+  "description": "Cremige Pasta-Träume werden wahr! Korkenzieher-Nudeln in einer würzigen Käse-Sahne-Soße mit Thymian, gratiniert mit knusprigem Parmesan – cheesy, creamy und crispy zugleich.",
+  "steps": [
+    "Den Backofen auf 180 Grad Ober-/Unterhitze vorheizen und ein Blech auf die oberste Schiene schieben.",
+    "Einen großen Topf mit reichlich Wasser für die Nudeln aufsetzen. Sobald es kocht, kräftig salzen und die Pasta hineingeben.",
+    "Zwiebeln und Knoblauch schälen und fein würfeln. Die Thymianblätter von den Stängeln zupfen.",
+    "Eine Pfanne bei mittlerer Hitze erwärmen, 1 EL Olivenöl hineingeben und die Zwiebeln darin glasig dünsten.",
+    "Knoblauch und Thymian zu den Zwiebeln geben, gut umrühren und etwa 2 Minuten anschwitzen lassen.",
+    "Die Pfanne mit Weißwein ablöschen und köcheln lassen, bis der Wein fast vollständig verkocht ist.",
+    "Die Butter in die Pfanne geben, schmelzen lassen und gut verteilen. Das Mehl einstreuen und mit den anderen Zutaten verrühren, bis eine Mehlschwitze entsteht.",
+    "Mit Geflügelfond und Sahne aufgießen, den Schmelzkäse unterrühren bis er geschmolzen ist. Mit Salz, Pfeffer und frisch geriebener Muskatnuss würzen.",
+    "Die Hitze reduzieren und die Sauce leicht köcheln lassen, bis sie beginnt einzudicken.",
+    "Die Nudeln kurz vor dem al-dente-Punkt abgießen und zur Sauce in die Pfanne geben. Gut vermengen und 1 Minute ruhen lassen.",
+    "Geriebenen Parmesan über die Pasta streuen und die Pfanne für 8-10 Minuten in den vorgeheizten Backofen geben, bis der Käse gratiniert und die oberste Schicht leicht gebräunt ist.",
+    "Die gratinierte Pasta aus dem Ofen nehmen, nach Belieben mit Thymianblättern garnieren und servieren."
+  ],
+  "dietCategory": "vegetarian",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/10/pasta_in_cremiger_sahne_kaese_sosse_mit_thymian01.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch",
+    "sulfite"
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "pas-86",
+  "name": "Speedy Tomatensoße - Pasta al Pomodoro",
+  "category": "Pasta",
+  "timeMinutes": 35,
+  "basePortions": 2,
+  "tags": [
+    "Vegetarisch",
+    "Italienisch",
+    "Mittagsgericht",
+    "Abendgericht"
+  ],
+  "ingredients": [
+    {
+      "name": "Tortiglioni",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Tomaten aus der Dose",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Tomatenmark",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 2
+    },
+    {
+      "name": "Zwiebel, rot",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 3,
+      "unit": "Zehe",
+      "perPortions": 2
+    },
+    {
+      "name": "Parmigiano Reggiano",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Basilikum",
+      "amount": 6,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Oregano, getrocknet",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 2
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Balsamico Essig",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Butter",
+      "amount": 25,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Zucker",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Ein italienischer Klassiker, der schnell und einfach zubereitet ist. Die aromatische Tomatensoße mit frischem Basilikum und Parmesan ist die perfekte Grundlage für viele weitere Pasta-Variationen.",
+  "steps": [
+    "Knoblauch und Zwiebel schälen und grob würfeln. Basilikumblätter vom Stiel zupfen und grob hacken, dabei einige Blätter für die Garnierung beiseitelegen. Parmesan fein reiben.",
+    "Eine große Pfanne bei mittlerer Hitze erhitzen und Olivenöl hineingeben. Getrockneten Oregano hinzufügen und das Öl etwa 30 Sekunden aromatisieren lassen.",
+    "Zwiebeln und Knoblauch in die Pfanne geben und kurz andünsten, bis die Zwiebeln glasig sind. Tomatenmark einrühren und einige Minuten einkochen lassen.",
+    "Mit Balsamico-Essig ablöschen. Dann die Dosentomaten samt Flüssigkeit hinzufügen. Die leere Dose zu 3/4 mit Wasser füllen und ebenfalls in die Pfanne gießen.",
+    "Mit Salz und Pfeffer würzen, gut umrühren und für 10 Minuten köcheln lassen.",
+    "Einen großen Topf mit Wasser für die Nudeln aufsetzen.",
+    "Nach 10 Minuten Kochzeit die Soße in einen Mixer geben oder mit einem Pürierstab fein pürieren. Die pürierte Soße zurück in die Pfanne geben und weitere 10-15 Minuten leicht köcheln lassen.",
+    "Das Nudelwasser zum Kochen bringen, großzügig salzen und die Nudeln etwa 12 Minuten kochen.",
+    "Die gegarten Nudeln abgießen und zurück in den Topf geben. Butter unter die Nudeln rühren.",
+    "Die Tomatensoße zu den Nudeln in den Topf geben, bei Bedarf nochmals abschmecken und nachwürzen. Alles gut vermischen.",
+    "Gehacktes Basilikum und 3/4 des geriebenen Parmesans unterrühren.",
+    "Auf Teller verteilen und mit dem restlichen Parmesan und Basilikum garnieren."
+  ],
+  "dietCategory": "vegetarian",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/08/Rezept_Klassiker_Pasta-al-Pomodoro_Nudeln_in_Tomatensauce01.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch"
+  ]
+}

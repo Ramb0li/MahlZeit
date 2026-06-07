@@ -1,0 +1,112 @@
+{
+  "id": "sup-54",
+  "name": "Weiße Bohnensuppe mit Hackfleisch, Kartoffeln und Spinat",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 35,
+  "basePortions": 4,
+  "tags": [
+    "Herbst",
+    "Einfach",
+    "Ofengericht"
+  ],
+  "ingredients": [
+    {
+      "name": "Kartoffeln, mehligkochend",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel, weiß",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Babyspinat",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Oregano, getrocknet",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Weiße Bohnen aus der Dose (Abtropfgewicht)",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebrühe",
+      "amount": 800,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Rinderhackfleisch",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Sahne",
+      "amount": 200,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "weatherType": "kalt",
+  "source": "herrbuettner.de",
+  "description": "Eine herzhafte Suppe mit würzigem Hackfleisch, energiereichen Bohnen, frischem Babyspinat, zarten Kartoffeln und einem cremigen Touch durch Sahne. Perfekt für den goldenen Oktober – würzig und tief, aber auch frisch und leicht zugleich.",
+  "steps": [
+    "Einen großen Topf bei mittlerer Hitze erhitzen. Sobald er heiß ist, 2 EL Olivenöl hineingeben.",
+    "Das Hackfleisch in den Topf geben und anbraten, dabei mit einem Kochlöffel zerkleinern. So lange braten, bis die austretende Flüssigkeit verkocht ist, das Fleisch schön braun wird und am Boden ein Bratensatz entsteht. Zwischendurch umrühren und mit Salz und Pfeffer würzen.",
+    "In der Zwischenzeit die Bohnen aus der Dose nehmen, in ein Sieb geben und unter kaltem Wasser abspülen, um die schleimige Flüssigkeit zu entfernen. Gut abtropfen lassen.",
+    "Zwiebel und Knoblauch schälen. Die Zwiebel in feine Würfel und den Knoblauch in feine Scheiben schneiden.",
+    "Die Kartoffeln schälen und in etwa 2 cm große Würfel schneiden.",
+    "Das fertige Hackfleisch aus dem Topf nehmen und in einer Schüssel beiseite stellen.",
+    "Den Topf wieder auf den Herd stellen und 2 EL Olivenöl hineingeben. Die Zwiebelwürfel darin anschwitzen, bis sie weich werden.",
+    "Den Knoblauch hinzufügen und kurz mitbraten.",
+    "Die Kartoffelwürfel in den Topf geben und mit einer Prise Salz, Pfeffer und 1 EL getrocknetem Oregano würzen. Einmal durchrühren.",
+    "Mit der Gemüsebrühe ablöschen, die Bohnen hinzufügen und den Deckel auf den Topf setzen. Die Suppe für 15-20 Minuten köcheln lassen, bis die Kartoffeln gar sind.",
+    "Falls nötig, den Babyspinat waschen und abtrocknen.",
+    "Sobald die Kartoffeln gar sind, die Sahne zur Suppe geben und den Babyspinat hinzufügen. Gut durchrühren, bis der Spinat zusammenfällt.",
+    "Das Hackfleisch wieder zur Suppe geben und unterrühren. Die Suppe kurz aufkochen lassen und mit Salz und Pfeffer abschmecken."
+  ],
+  "dietCategory": "meat",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/10/Weisse-Bohnen-Suppe-mit-Hackfleisch-und-Spinat.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch"
+  ]
+}

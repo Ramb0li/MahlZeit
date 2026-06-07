@@ -1,0 +1,112 @@
+{
+  "id": "pas-91",
+  "name": "Zermatschte Avocados unter körniger Spaghetti",
+  "category": "Pasta",
+  "timeMinutes": 20,
+  "basePortions": 4,
+  "tags": [
+    "Vegetarisch",
+    "Schnell und einfach",
+    "Frühling",
+    "Sommer",
+    "Mittagsgericht",
+    "Abendgericht"
+  ],
+  "ingredients": [
+    {
+      "name": "Vollkorn-Spaghetti",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Avocados",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Cocktailtomaten",
+      "amount": 380,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Basilikum",
+      "amount": 20,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Pinienkerne",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 130,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Parmesan",
+      "amount": 40,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 7,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Nudelwasser",
+      "amount": 150,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Eine cremige Avocado-Pesto-Creme mit Basilikum, Parmesan und Knoblauch trifft auf nahrhafte Vollkorn-Spaghetti. Garniert mit gerösteten Pinienkernen und gebratenen Cocktailtomaten wird daraus ein schnelles, gesundes und richtig leckeres Pastagericht.",
+  "steps": [
+    "Einen großen Topf mit reichlich Wasser aufsetzen und zum Kochen bringen. Sobald das Wasser kocht, ausreichend salzen.",
+    "Eine Pfanne bei mittlerer Hitze erhitzen und die Pinienkerne darin rösten. Dabei regelmäßig wenden, damit sie nicht anbrennen. Sobald sie leicht gebräunt sind, aus der Pfanne nehmen und beiseitestellen.",
+    "Die Cocktailtomaten waschen und trocken tupfen.",
+    "Für die Avocado-Creme die Avocados halbieren, entkernen und das Fruchtfleisch mit einem Löffel herauslösen. Knoblauch schälen und Basilikumblätter vom Stiel zupfen. Parmesan reiben, dabei etwa 10 g für später zurückbehalten.",
+    "Avocado, Knoblauch, Basilikum, 30 g Parmesan, Zitronensaft, 5 EL Olivenöl, Salz und Pfeffer in einen Mixer oder einen hohen Behälter geben und mit einem Pürierstab zu einer cremigen Masse verarbeiten. Die Creme beiseitestellen.",
+    "Die Vollkorn-Spaghetti ins kochende Salzwasser geben und etwa 6 Minuten kochen (circa 2 Minuten kürzer als auf der Packung angegeben). Dabei mindestens 150 ml Nudelwasser auffangen, bevor die Nudeln abgegossen werden.",
+    "2 EL Olivenöl in die Pfanne geben und die Cocktailtomaten darin anbraten. Mit Salz und Pfeffer würzen und vorsichtig schwenken, bis die Tomaten glänzend werden und leicht weich sind (etwa 6 Minuten). Dabei darauf achten, dass sie nicht platzen.",
+    "Die abgegossenen Nudeln zurück in den Topf geben. Avocado-Creme und 150 ml Nudelwasser hinzufügen und alles gründlich vermischen, bis eine cremige Konsistenz entsteht.",
+    "Die gerösteten Pinienkerne und den restlichen Parmesan zu den Nudeln geben, mit Salz und Pfeffer abschmecken und nochmals gut vermengen.",
+    "Die Pasta auf Teller verteilen und mit den gebratenen Cocktailtomaten garnieren."
+  ],
+  "dietCategory": "vegetarian",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/04/vollkorn-spaghetti-mit-avocado-pinienkernen-und-tomaten01.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch"
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "id": "pas-72",
+  "name": "Grüne Tagliatelle mit Lachsfilet an Knoblauch-Zitronen-Sahnesoße",
+  "category": "Pasta",
+  "timeMinutes": 15,
+  "basePortions": 2,
+  "tags": [
+    "Schnell und einfach",
+    "Abendgericht",
+    "Mittagsgericht",
+    "Frühling"
+  ],
+  "ingredients": [
+    {
+      "name": "Lachsfilet mit Haut",
+      "amount": 180,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "grüne Tagliatelle",
+      "amount": 180,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 2,
+      "unit": "Zehe",
+      "perPortions": 2
+    },
+    {
+      "name": "rote Chili",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Petersilie",
+      "amount": 15,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Schlagsahne",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Cremige Sahnesoße mit saftigem Lachsfilet, verfeinert mit Knoblauch, Zitrone und Chili, serviert auf grünen Tagliatelle. Ein echter Genuss für Lachs-Liebhaber!",
+  "steps": [
+    "Knoblauch schälen und fein hacken. Chili halbieren, Kerne entfernen und in feine Streifen schneiden. Petersilie klein hacken.",
+    "Einen großen Topf mit reichlich Wasser und einer guten Prise Salz zum Kochen bringen. Die Tagliatelle hineingeben und je nach Packungsangabe 9 bis 12 Minuten kochen lassen.",
+    "Eine Pfanne bei hoher Hitze erhitzen. Olivenöl in die heiße Pfanne geben. Das Lachsfilet mit der Hautseite nach unten hineinlegen und 3 Minuten braten lassen, ohne es zu bewegen.",
+    "Den Lachs wenden und weitere 3 Minuten auf der anderen Seite braten. Anschließend aus der Pfanne nehmen und beiseitestellen.",
+    "Die Hitze reduzieren. Knoblauch und Chili in die Pfanne geben und kurz anschwitzen, dabei darauf achten, dass der Knoblauch nicht braun wird.",
+    "Mit Zitronensaft ablöschen und mit der Sahne aufgießen.",
+    "Das Lachsfilet mit einem Messer zerkleinern und in die Soße geben. Mit Salz und Pfeffer abschmecken.",
+    "Petersilie hinzufügen und die Soße einmal aufkochen lassen. Danach die Hitze nochmals reduzieren.",
+    "Die gekochten Nudeln abgießen und zur Soße in die Pfanne geben. Alles gut miteinander vermengen.",
+    "Die Pasta auf Teller verteilen und servieren."
+  ],
+  "dietCategory": "fish",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/05/gruene_tagliatelle_mit_lachs_sahne_sauce01.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "fisch",
+    "gluten",
+    "milch"
+  ]
+}

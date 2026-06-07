@@ -1,0 +1,108 @@
+{
+  "id": "ei-20",
+  "name": "Frittata mit Tomate, Mozzarella & Basilikum",
+  "category": "Frühstück",
+  "timeMinutes": 20,
+  "basePortions": 2,
+  "tags": [
+    "Vegetarisch",
+    "Schnell und einfach",
+    "Ofengericht",
+    "Mittagsgericht",
+    "Italienisch",
+    "Frühling",
+    "Sommer"
+  ],
+  "ingredients": [
+    {
+      "name": "Kirsch-, Roma- oder Cherrytomaten",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "frischer Basilikum",
+      "amount": 12,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "getrockneter Oregano",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Mozzarella",
+      "amount": 125,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Parmesan",
+      "amount": 25,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Eier",
+      "amount": 6,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "frisch geriebene Muskatnuss",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    }
+  ],
+  "weatherType": "warm",
+  "source": "herrbuettner.de",
+  "description": "Eine herrliche italienische Frittata mit saftigen Tomaten, zartem Mozzarella und frischem Basilikum. In nur 20 Minuten auf dem Tisch – perfekt für sonnige Tage, wenn man Lust auf etwas Leichtes und Aromatisches hat.",
+  "steps": [
+    "Den Backofen auf 175 Grad Ober-/Unterhitze vorheizen und ein Rost in die mittlere Schiene einschieben.",
+    "Die Tomaten waschen, trocken tupfen und in Scheiben schneiden. Den Knoblauch schälen und in feine Scheiben schneiden. Den Mozzarella ebenfalls in Scheiben schneiden.",
+    "Den Parmesan fein reiben. Den Basilikum klein hacken, dabei ein paar Blätter für die Garnierung zurückbehalten.",
+    "Die Eier in eine Schüssel aufschlagen. Den geriebenen Parmesan, etwas frisch geriebene Muskatnuss, Salz und Pfeffer hinzugeben und mit einem Schneebesen verquirlen, bis die Masse leicht schäumt.",
+    "Eine ofenfeste Pfanne bei mittlerer Hitze erhitzen. Das Olivenöl hineingeben und den Knoblauch nur kurz darin anschwitzen lassen, ohne dass er braun wird.",
+    "Die Ei-Mischung und den gehackten Basilikum in die Pfanne geben und mit einem Kochlöffel gut durchmischen.",
+    "Sobald die Ei-Masse am Boden anfängt zu stocken, mit dem Rühren aufhören. Den Mozzarella in der Pfanne verteilen und leicht in die Ei-Masse eindrücken.",
+    "Die Tomatenscheiben auf der Ei-Masse verteilen und die Pfanne für 10 Minuten in den vorgeheizten Backofen geben.",
+    "Die Frittata aus dem Ofen nehmen, sobald sie schön aufgegangen und an den Rändern leicht gebräunt ist. 5 Minuten abkühlen lassen.",
+    "Die Frittata mit einer Prise getrocknetem Oregano, etwas Pfeffer und den restlichen Basilikumblättern garnieren und servieren."
+  ],
+  "dietCategory": "vegetarian",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/03/frittata_mit_tomate_mozzarella_und_basilikum.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "ei",
+    "milch",
+    "sulfite"
+  ]
+}

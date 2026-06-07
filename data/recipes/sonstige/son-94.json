@@ -1,0 +1,102 @@
+{
+  "id": "son-94",
+  "name": "Karotten Muffins mit weißer Schokolade",
+  "category": "Desserts & Süsses",
+  "timeMinutes": 35,
+  "basePortions": 12,
+  "tags": [
+    "Vegetarisch",
+    "Kinderfreundlich",
+    "Ofengericht"
+  ],
+  "ingredients": [
+    {
+      "name": "Mehl",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Salz",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 12
+    },
+    {
+      "name": "Backpulver",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 12
+    },
+    {
+      "name": "Möhren, fein gerieben",
+      "amount": 125,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "brauner Zucker",
+      "amount": 125,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Butter",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Ei",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 12
+    },
+    {
+      "name": "Vanillezucker",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 12
+    },
+    {
+      "name": "Milch",
+      "amount": 30,
+      "unit": "ml",
+      "perPortions": 12
+    },
+    {
+      "name": "Weiße Schokolade Kuvertüre",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 12
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Saftige Muffins mit fein geraspelten Karotten und einem großzügigen Topping aus weißer Schokolade. Eine wunderbare Kombination aus süßem und leicht herzhaftem Geschmack – absolute Lieblingsmuffins!",
+  "steps": [
+    "Den Backofen auf 180 Grad Ober- und Unterhitze vorheizen.",
+    "Die Butter in einem Topf bei kleiner Hitze schmelzen lassen, dann vom Herd nehmen und etwas abkühlen lassen.",
+    "Die Karotten waschen, schälen und fein raspeln. Ein paar Raspel für die Dekoration beiseitelegen.",
+    "In einer Schüssel Mehl und Backpulver zusammen durchsieben.",
+    "In einer zweiten Schüssel das Ei mit der Milch verquirlen. Zucker, Vanillezucker und Salz hinzufügen und kräftig vermischen.",
+    "Die zerlassene Butter unter ständigem Rühren zur Ei-Milch-Mischung geben.",
+    "Die geraspelten Karotten (bis auf die für die Deko) vorsichtig unterheben.",
+    "Die trockenen Zutaten zu den feuchten Zutaten geben und behutsam zu einem glatten Teig verrühren. Nicht zu lange rühren.",
+    "Den Teig auf 12 Muffin-Papierförmchen in einer Muffinform verteilen.",
+    "Die Muffins für 20-25 Minuten auf der mittleren Schiene backen.",
+    "Die Muffins nach dem Backen etwa 15 Minuten abkühlen lassen.",
+    "Für das Topping die weiße Schokolade zerkleinern und in einer feuerfesten Tasse über dem Wasserbad bei niedriger Hitze unter gelegentlichem Rühren schmelzen lassen.",
+    "Die geschmolzene Kuvertüre mit einem Esslöffel großzügig über die abgekühlten Muffins geben, sodass die Oberfläche bedeckt ist.",
+    "Mit den beiseitegelegten Karottenraspeln garnieren und die Kuvertüre fest werden lassen."
+  ],
+  "dietCategory": "vegetarian",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/06/karotten-muffin-mit-weisser-schokolade.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "ei",
+    "gluten",
+    "milch"
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "id": "pas-88",
+  "name": "Hackbällchen mit Parmesan-Kruste in Tomatensoße auf Spaghetti",
+  "category": "Pasta",
+  "timeMinutes": 30,
+  "basePortions": 4,
+  "tags": [
+    "Kinderfreundlich",
+    "Abendgericht",
+    "Mittagsgericht",
+    "Italienisch"
+  ],
+  "ingredients": [
+    {
+      "name": "Spaghetti",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Hackfleisch halb und halb",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel (rot)",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 3,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Ei (Größe M)",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Parmesankäse",
+      "amount": 40,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Weizenbrötchen",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomaten aus der Dose (Abtropfgewicht)",
+      "amount": 240,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomatenmark",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Petersilie",
+      "amount": 13,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Oregano (getrocknet)",
+      "amount": 3,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchgranulat",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Paprikapulver",
+      "amount": 3,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Rosmarinzweig",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Zucker",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Balsamicoessig",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Saftige Hackbällchen mit goldbrauner Parmesan-Kruste, die in einer aromatischen Tomatensoße fertiggaren und auf Spaghetti serviert werden – ein Gericht, das Groß und Klein begeistert!",
+  "steps": [
+    "Die Zwiebel und den Knoblauch schälen und in grobe Würfel schneiden. Das Brötchen in einer Küchenmaschine zu feinen Bröseln verarbeiten.",
+    "Den Rosmarin vom Stiel zupfen und grob hacken. Die Petersilie fein hacken und einen Teil davon für die Garnierung beiseite stellen. Den Parmesan reiben und in eine Schüssel geben.",
+    "Das Hackfleisch in eine Schüssel geben und mit Ei, Knoblauchgranulat, 1 TL Oregano, Paprikapulver, Salz, Pfeffer, Petersilie und den Brötchenbröseln vermischen. Alles gut mit den Händen verkneten.",
+    "Mit feuchten Händen 12 gleichmäßige Bällchen aus der Hackmasse formen. Die Bällchen anschließend im geriebenen Parmesan wälzen, bis sie von allen Seiten bedeckt sind.",
+    "Eine Pfanne bei hoher Hitze erhitzen, das Olivenöl hinzugeben und die Hackbällchen von allen Seiten scharf anbraten, bis sich eine goldbraune Kruste gebildet hat. Die Bällchen aus der Pfanne nehmen und beiseite stellen.",
+    "Die Hitze auf mittlere Stufe reduzieren. 1 TL Oregano und den Rosmarin im Bratfett anschwitzen. Zwiebeln und Knoblauch hinzugeben und glasig dünsten.",
+    "Das Tomatenmark einrühren und den Balsamicoessig hinzufügen. Die Dosentomaten dazugeben, die Dose zur Hälfte mit Wasser füllen und ebenfalls in die Pfanne geben. Die Tomaten dabei grob zerkleinern.",
+    "Die Soße 10 Minuten köcheln lassen, dann mit einem Pürierstab oder Mixer fein pürieren. Die Soße zurück in die Pfanne geben und auf kleiner Hitze weiterköcheln lassen.",
+    "Mit Zucker, Salz und Pfeffer abschmecken. Die Hackbällchen wieder in die Soße geben und 10-15 Minuten darin fertiggaren lassen.",
+    "In der Zwischenzeit einen Topf mit Wasser zum Kochen bringen, salzen und die Spaghetti darin bissfest garen.",
+    "Die Hackbällchen aus der Pfanne nehmen. Die Spaghetti abgießen und in der Tomatensoße schwenken.",
+    "Die Spaghetti auf Teller verteilen, jeweils 3-4 Hackbällchen darauf anrichten und mit der restlichen Petersilie und nach Belieben mit Parmesan garnieren."
+  ],
+  "dietCategory": "meat",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/06/hackbaellchen_in_tomatensosse_mit_spaghetti_01.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "ei",
+    "gluten",
+    "milch"
+  ]
+}

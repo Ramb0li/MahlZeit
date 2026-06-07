@@ -1,0 +1,102 @@
+{
+  "id": "pas-67",
+  "name": "Spaghetti mit Butter-Zitronen-Soße und frittiertem Salbei",
+  "category": "Pasta",
+  "timeMinutes": 20,
+  "basePortions": 2,
+  "tags": [
+    "Vegetarisch",
+    "Schnell und einfach",
+    "Abendgericht",
+    "Mittagsgericht",
+    "Italienisch",
+    "Sommer"
+  ],
+  "ingredients": [
+    {
+      "name": "Spaghetti",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "frische Salbeiblätter",
+      "amount": 10,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Biozitrone (Schale und Saft)",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Parmesan",
+      "amount": 20,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Sahne",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Butter",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Cremige Pasta mit einer aromatischen Butter-Zitronen-Sahnesoße, verfeinert mit knusprig frittiertem Salbei und Parmesan. Der frittierte Salbei wird herrlich knusprig wie Chips und verleiht dem Gericht ein unverwechselbares Aroma.",
+  "steps": [
+    "Die Salbeiblätter vom Zweig zupfen und den Knoblauch schälen.",
+    "Einen großen Topf mit Wasser für die Nudeln aufsetzen. Sobald das Wasser kocht, gut salzen und die Spaghetti hineingeben. Die Pasta etwa 9 Minuten kochen lassen.",
+    "Während das Nudelwasser erhitzt wird, eine Pfanne bei leicht hoher Hitze (170-180 Grad) erwärmen. Etwa 4 EL Olivenöl in die Pfanne geben, sodass der Pfannenboden überall bedeckt ist.",
+    "Die Salbeiblätter ins heiße Öl geben und etwa 5 Minuten frittieren. Nach der Hälfte der Zeit wenden. Anschließend auf Küchenpapier abtropfen lassen, damit überschüssiges Fett aufgesaugt wird.",
+    "Die Hitze auf mittlere Stufe reduzieren und die Butter in der Pfanne zerlassen.",
+    "Sobald die Butter flüssig ist, den Knoblauch durch eine Knoblauchpresse drücken und in die Pfanne geben. Darauf achten, dass die Pfanne nicht mehr zu heiß ist, damit der Knoblauch nicht braun wird.",
+    "Mit einem Zestenreißer die Schale einer halben Zitrone abziehen und die Zesten ebenfalls in die Pfanne geben. Alles etwa 30 Sekunden andünsten.",
+    "Mit dem Saft einer halben Zitrone ablöschen und dann die Sahne hinzugeben.",
+    "Den frittierten Salbei mit den Händen zerbröseln (einen Teil für die Garnierung beiseitelegen) und zusammen mit geriebenem Parmesan (ebenfalls etwas für die Garnierung zurückbehalten), Salz und Pfeffer zur Soße geben.",
+    "Die Soße umrühren und einmal aufkochen lassen. Danach die Hitze reduzieren und warten, bis die Nudeln gar sind.",
+    "Sobald die Spaghetti al dente sind, mit einer Küchenzange direkt aus dem kochenden Nudelwasser in die Pfanne zur Soße geben und ordentlich miteinander vermischen.",
+    "Die Nudeln auf Teller verteilen und mit dem übrigen Salbei und Parmesan garnieren."
+  ],
+  "dietCategory": "vegetarian",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/08/Spaghetti_mit_Salbei_Butter_Zitronen_Sauce01.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch"
+  ]
+}

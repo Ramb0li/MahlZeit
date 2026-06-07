@@ -1,0 +1,62 @@
+{
+  "id": "son-96",
+  "name": "Pyrus Traum von Camembert",
+  "category": "Snacks & Vorspeisen",
+  "timeMinutes": 10,
+  "basePortions": 3,
+  "tags": [
+    "Vegetarisch",
+    "Schnell und einfach",
+    "Kinderfreundlich"
+  ],
+  "ingredients": [
+    {
+      "name": "Graubrot",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 3
+    },
+    {
+      "name": "Camembert",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 3
+    },
+    {
+      "name": "Birne",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 3
+    },
+    {
+      "name": "Honig",
+      "amount": 3,
+      "unit": "TL",
+      "perPortions": 3
+    },
+    {
+      "name": "Butter",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 3
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Eine köstliche Brotzeit-Kreation mit Graubrot, cremigem Camembert, frischer Birne und Honig. Die Kombination aus mildem Käse und süßem Honig harmoniert perfekt mit der feinen Säure der Birne.",
+  "steps": [
+    "Die Birne gründlich waschen und trocken tupfen. Der Länge nach halbieren und die Kerne entfernen. Eine Hälfte der Breite nach in etwa 0,5 mm dünne Scheiben schneiden.",
+    "Den Camembert auspacken und der Breite nach in etwa 1 cm dicke Scheiben schneiden.",
+    "Die Brotscheiben mit etwas Butter bestreichen.",
+    "Die Brotscheiben abwechselnd mit Camembert- und Birnenscheiben belegen.",
+    "Jeweils 1 TL Honig der Länge nach über die Brote träufeln und servieren."
+  ],
+  "dietCategory": "vegetarian",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/03/graubrot_camanbert_birne_honig01.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch"
+  ]
+}

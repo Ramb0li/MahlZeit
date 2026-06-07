@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { format } from 'date-fns';
 import { de } from 'date-fns/locale';
 import { Plus, Sparkles, Trash2, UtensilsCrossed, X } from 'lucide-react';
-import { formatDate } from '@/lib/utils';
+import { formatDate, calculatePortions } from '@/lib/utils';
 import { WeatherIcon } from '@/components/ui/WeatherIcon';
 import { Badge } from '@/components/ui/Badge';
 import { PhotoSlot } from '@/components/ui/PhotoSlot';
@@ -65,6 +65,8 @@ export function DayColumn({
   const lunchSideRecipe     = getSideRecipe(lunchSlot);
   const breakfastSideRecipe = getSideRecipe(breakfastSlot);
 
+  const defaultPortions = Math.max(1, Math.round(calculatePortions(settings.household).totalPortions));
+
   const handleSuggest = async (mealType: 'lunch' | 'dinner') => {
     setSuggesting(mealType);
     try {
@@ -108,7 +110,15 @@ export function DayColumn({
       mealType === 'breakfast' ? (dayPlan?.breakfast ?? { recipeId: null }) :
       mealType === 'lunch'     ? (dayPlan?.lunch     ?? { recipeId: null }) :
       (dayPlan?.dinner ?? { recipeId: null });
-    onUpdate(dayIndex, mealType, { ...current, sideRecipeId: null, sideIsLeftovers: false });
+    onUpdate(dayIndex, mealType, { ...current, sideRecipeId: null, sideIsLeftovers: false, sidePortionOverride: undefined });
+  };
+
+  const handleSidePortionChange = (mealType: 'breakfast' | 'lunch' | 'dinner', portions: number) => {
+    const current =
+      mealType === 'breakfast' ? (dayPlan?.breakfast ?? { recipeId: null }) :
+      mealType === 'lunch'     ? (dayPlan?.lunch     ?? { recipeId: null }) :
+      (dayPlan?.dinner ?? { recipeId: null });
+    onUpdate(dayIndex, mealType, { ...current, sidePortionOverride: portions });
   };
 
   return (
@@ -158,11 +168,14 @@ export function DayColumn({
             sideIsLeftovers={breakfastSlot?.sideIsLeftovers}
             mealType="breakfast"
             suggesting={false}
+            defaultPortions={defaultPortions}
+            sidePortionOverride={breakfastSlot?.sidePortionOverride}
             onPick={() => setPickerOpen('breakfast')}
             onSuggest={() => {}}
             onClear={() => onUpdate(dayIndex, 'breakfast', { recipeId: null, isLeftovers: false })}
             onPickSide={() => setPickerOpenSide('breakfast')}
             onClearSide={() => handleClearSide('breakfast')}
+            onSidePortionChange={(p) => handleSidePortionChange('breakfast', p)}
             onViewRecipe={onViewRecipe}
           />
         )}
@@ -176,11 +189,14 @@ export function DayColumn({
             sideIsLeftovers={lunchSlot?.sideIsLeftovers}
             mealType="lunch"
             suggesting={suggesting === 'lunch'}
+            defaultPortions={defaultPortions}
+            sidePortionOverride={lunchSlot?.sidePortionOverride}
             onPick={() => setPickerOpen('lunch')}
             onSuggest={() => handleSuggest('lunch')}
             onClear={() => onUpdate(dayIndex, 'lunch', { recipeId: null, isLeftovers: false })}
             onPickSide={() => setPickerOpenSide('lunch')}
             onClearSide={() => handleClearSide('lunch')}
+            onSidePortionChange={(p) => handleSidePortionChange('lunch', p)}
             onViewRecipe={onViewRecipe}
           />
         )}
@@ -194,11 +210,14 @@ export function DayColumn({
             sideIsLeftovers={dinnerSlot?.sideIsLeftovers}
             mealType="dinner"
             suggesting={suggesting === 'dinner'}
+            defaultPortions={defaultPortions}
+            sidePortionOverride={dinnerSlot?.sidePortionOverride}
             onPick={() => setPickerOpen('dinner')}
             onSuggest={() => handleSuggest('dinner')}
             onClear={() => onUpdate(dayIndex, 'dinner', { recipeId: null, isLeftovers: false })}
             onPickSide={() => setPickerOpenSide('dinner')}
             onClearSide={() => handleClearSide('dinner')}
+            onSidePortionChange={(p) => handleSidePortionChange('dinner', p)}
             onViewRecipe={onViewRecipe}
           />
         )}
@@ -237,17 +256,21 @@ interface MealSlotCardProps {
   sideIsLeftovers?: boolean;
   mealType: 'breakfast' | 'lunch' | 'dinner';
   suggesting: boolean;
+  defaultPortions: number;
+  sidePortionOverride?: number;
   onPick: () => void;
   onSuggest: () => void;
   onClear: () => void;
   onPickSide: () => void;
   onClearSide: () => void;
+  onSidePortionChange: (portions: number) => void;
   onViewRecipe?: (recipe: Recipe) => void;
 }
 
 function MealSlotCard({
   label, recipe, isLeftovers, sideRecipe, sideIsLeftovers,
-  suggesting, onPick, onSuggest, onClear, onPickSide, onClearSide, mealType, onViewRecipe,
+  suggesting, defaultPortions, sidePortionOverride,
+  onPick, onSuggest, onClear, onPickSide, onClearSide, onSidePortionChange, mealType, onViewRecipe,
 }: MealSlotCardProps) {
   const hasSide = !!(sideRecipe || sideIsLeftovers);
   const sideName = sideIsLeftovers ? 'Reste essen' : sideRecipe?.name ?? '';
@@ -302,19 +325,31 @@ function MealSlotCard({
         </div>
 
         {hasSide && (
-          <div style={{ position: 'absolute', bottom: 36, left: 11, right: 11, display: 'flex', alignItems: 'center', gap: 5 }}>
+          <div style={{ position: 'absolute', bottom: 36, left: 11, right: 11, display: 'flex', alignItems: 'center', gap: 3 }}>
             <span style={{ fontSize: 10, color: 'rgba(255,255,255,.82)', flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
               + {sideName}
             </span>
-            <button onClick={onClearSide} style={{ color: 'rgba(255,255,255,.6)', flexShrink: 0 }}><X size={9} /></button>
+            {/* Portionen-Override für Beilage */}
+            <button
+              onClick={(e) => { e.stopPropagation(); onSidePortionChange(Math.max(1, (sidePortionOverride ?? defaultPortions) - 1)); }}
+              style={{ fontSize: 12, fontWeight: 700, color: 'rgba(255,255,255,.65)', flexShrink: 0, padding: '0 2px', lineHeight: 1 }}
+            >−</button>
+            <span style={{ fontSize: 9, color: 'rgba(255,255,255,.9)', flexShrink: 0, minWidth: 18, textAlign: 'center' }}>
+              {sidePortionOverride ?? defaultPortions}P
+            </span>
+            <button
+              onClick={(e) => { e.stopPropagation(); onSidePortionChange(Math.min(20, (sidePortionOverride ?? defaultPortions) + 1)); }}
+              style={{ fontSize: 12, fontWeight: 700, color: 'rgba(255,255,255,.65)', flexShrink: 0, padding: '0 2px', lineHeight: 1 }}
+            >+</button>
+            <button onClick={(e) => { e.stopPropagation(); onClearSide(); }} style={{ color: 'rgba(255,255,255,.6)', flexShrink: 0 }}><X size={9} /></button>
           </div>
         )}
         {!hasSide && (
           <button
-            onClick={onPickSide}
+            onClick={(e) => { e.stopPropagation(); onPickSide(); }}
             className="mz-slot-del on-img"
-            style={{ bottom: 8, top: 'auto', right: 36, opacity: 0, width: 20, height: 20, borderRadius: '50%' }}
-            title="Beilage hinzufügen"
+            style={{ bottom: 8, top: 'auto', right: 36, opacity: 0.65, width: 20, height: 20, borderRadius: '50%' }}
+            title="Beilage / zweites Gericht hinzufügen"
           >
             <Plus size={10} />
           </button>

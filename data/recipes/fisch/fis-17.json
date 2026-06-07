@@ -1,0 +1,122 @@
+{
+  "id": "fis-17",
+  "name": "Spaghetti mit Rahmspinat, paniertem Seelachsfilet und Remoulade",
+  "category": "Fisch & Meeresfrüchte",
+  "timeMinutes": 25,
+  "basePortions": 2,
+  "tags": [
+    "Schnell und einfach",
+    "Kinderfreundlich",
+    "Mittagsgericht",
+    "Abendgericht"
+  ],
+  "ingredients": [
+    {
+      "name": "Alaska Seelachsfilet (tiefgefroren oder frisch)",
+      "amount": 260,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Rahmspinat (tiefgefroren)",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Spaghetti",
+      "amount": 140,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Weizenbrötchen",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Mehl",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Pflanzenöl",
+      "amount": 5,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Eier (Größe M)",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Zitrone",
+      "amount": 0.25,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Mandeln (gehobelt)",
+      "amount": 10,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Remoulade",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Petersilie (optional)",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Eine moderne Interpretation des Klassikers Fischstäbchen mit Rahmspinat – selbst panierter Alaska-Seelachs trifft auf cremige Spinat-Pasta und knusprige Mandeln. Ein nostalgisches Gericht mit frischer Note.",
+  "steps": [
+    "Den tiefgekühlten Rahmspinat in einen Topf geben und bei niedriger Hitze langsam auftauen lassen. Dabei gelegentlich umrühren. Sobald der Spinat aufgetaut ist, warm halten.",
+    "Einen großen Topf mit ausreichend gesalzenem Wasser für die Spaghetti aufsetzen und zum Kochen bringen.",
+    "Die gehobelten Mandeln in einer trockenen Pfanne bei mittlerer Hitze ohne Öl rösten, bis sie leicht gebräunt sind. Anschließend beiseite stellen.",
+    "Das Zitronenviertel nochmals halbieren, sodass zwei Spalten entstehen.",
+    "Das Brötchen in einer Küchenmaschine zu feinen Semmelbröseln verarbeiten und auf einem großen flachen Teller oder in einer Schüssel ausbreiten.",
+    "Das Mehl ebenfalls auf einem flachen Teller ausbreiten. Die Eier in einer dritten Schüssel aufschlagen und gut verquirlen.",
+    "Die Spaghetti ins kochende Salzwasser geben und nach Packungsanweisung kochen. Gelegentlich umrühren.",
+    "Das Seelachsfilet kurz abwaschen und mit Küchenpapier trocken tupfen. Mit Salz und Pfeffer würzen und in mundgerechte Stücke schneiden (etwa so groß wie Chicken-Nuggets).",
+    "Eine Pfanne bei mittlerer Hitze aufstellen und reichlich Pflanzenöl hineingeben, sodass der Pfannenboden gut bedeckt ist.",
+    "Die Fischstücke nacheinander erst im Mehl, dann im verquirlten Ei und zuletzt in den Semmelbröseln wälzen.",
+    "Die panierten Fischstücke in der Pfanne goldgelb ausbacken. Anschließend auf Küchenpapier legen, um überschüssiges Fett aufzusaugen.",
+    "Die gegarten Spaghetti abgießen und zurück in den Topf geben. Den Rahmspinat hinzufügen und alles gut miteinander vermischen.",
+    "Die Spinat-Spaghetti und die panierten Fischstücke auf Tellern anrichten. Remoulade als Kleckse am Tellerrand platzieren, die Zitronenspalten dazulegen und alles mit den gerösteten Mandeln bestreuen. Optional mit Petersilie garnieren."
+  ],
+  "dietCategory": "fish",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/08/spaghetti_mit_rahmspinat_panierten_alaska_seelachsfilet_und_remulade02.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "ei",
+    "fisch",
+    "gluten",
+    "milch",
+    "schalenfruechte"
+  ]
+}

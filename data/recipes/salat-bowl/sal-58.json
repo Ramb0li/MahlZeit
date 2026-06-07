@@ -1,0 +1,116 @@
+{
+  "id": "sal-58",
+  "name": "Gebratener Hühnchen-Ananas-Salat mit Zitronen-Honig-Chili Dressing",
+  "category": "Salate & Bowls",
+  "timeMinutes": 15,
+  "basePortions": 2,
+  "tags": [
+    "Schnell und einfach",
+    "Sommer",
+    "Mittagsgericht",
+    "Abendgericht"
+  ],
+  "ingredients": [
+    {
+      "name": "Hähnchenbrustfilets",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Babyspinat",
+      "amount": 70,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Chili, rot",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Ananas, frisch",
+      "amount": 175,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Kidneybohnen (Abtropfgewicht)",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Feta",
+      "amount": 25,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Kokosöl",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 15,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Honig",
+      "amount": 10,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    }
+  ],
+  "weatherType": "warm",
+  "source": "herrbuettner.de",
+  "description": "Ein köstlicher Salat mit der genialen Kombination aus gebratenem Hähnchen und Ananas, verfeinert mit Kidneybohnen, Feta und einem süß-säuerlich-scharfen Dressing. Schnell zubereitet und perfekt für warme Tage.",
+  "steps": [
+    "Den Babyspinat bei Bedarf waschen und in einer Salatschleuder trocken schleudern.",
+    "Die Kidneybohnen in ein Sieb geben, gründlich mit Wasser abspülen und gut abtropfen lassen.",
+    "Die Chili halbieren, Kerne entfernen und in feine Streifen schneiden.",
+    "Die Ananas schälen und 4 Scheiben abschneiden. Den Kern aus den Scheiben entfernen.",
+    "Die Hähnchenbrustfilets auf Backpapier legen und von beiden Seiten mit Salz und Pfeffer würzen.",
+    "Ein weiteres Stück Backpapier auf die Filets legen und mit einem Nudelholz die dickeren Stellen flach klopfen, damit das Fleisch gleichmäßig gart.",
+    "Eine Pfanne bei mittlerer Hitze (180-200°C) erwärmen und das Kokosöl hineingeben.",
+    "Die Hähnchenbrustfilets in die heiße Pfanne geben und von jeder Seite 5 Minuten braten.",
+    "Währenddessen für das Dressing Olivenöl, Zitronensaft, Honig, Chili, eine Prise Salz und Pfeffer in ein verschließbares Glas geben und kräftig schütteln.",
+    "Die fertigen Hähnchenbrustfilets aus der Pfanne nehmen und kurz ruhen lassen.",
+    "Die Ananasscheiben in die Pfanne geben und von beiden Seiten je 2 Minuten braten.",
+    "Die gebratenen Ananasscheiben aus der Pfanne nehmen, jede Scheibe halbieren und beiseitelegen.",
+    "Kidneybohnen und Spinat in eine Schüssel geben, etwa ein Drittel des Dressings hinzufügen und gut vermengen.",
+    "Die Kidneybohnen-Spinat-Mischung auf zwei Teller verteilen.",
+    "Die Hähnchenbrustfilets in Streifen schneiden und auf den Salat legen.",
+    "Die halbierten Ananasscheiben dazu arrangieren.",
+    "Den Feta über die Salate zerkrümeln und zum Schluss das restliche Dressing darüber verteilen."
+  ],
+  "dietCategory": "meat",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/05/huehnchen-ananas-salat-mit-babyspinat-kidneybohnen-und-zitronen-honig-chili-dressing01.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch"
+  ]
+}

@@ -260,8 +260,10 @@ export function ShoppingListView() {
     doc.setTextColor(...C.muted);
     doc.text('EINKAUFSLISTE', m, 18);
 
-    // Artikel-Zusammenfassung unter dem Wordmark
-    const pdfTotalItems = Object.values(list).reduce((s, a) => s + a.length, 0) + custom.length;
+    // Artikel-Zusammenfassung unter dem Wordmark (gelöschte Items ausschliessen)
+    const pdfTotalItems = Object.values(list).reduce(
+      (s, a) => s + a.filter(i => !deleted.includes(`${i.name.toLowerCase()}_${i.unit}`)).length, 0
+    ) + custom.length;
     const pdfCatCount   = buildOrderedCategories().length;
     doc.setFont('helvetica', 'normal');
     doc.setFontSize(7);
@@ -321,17 +323,18 @@ export function ShoppingListView() {
       const catTheme = INGREDIENT_CAT_COLORS[cat] ?? DEFAULT_CAT;
 
       const allItems = [
-        ...allCatItems.map(item => {
-          const key = `${item.name.toLowerCase()}_${item.unit}`;
-          const amount = overrides[key] ?? item.totalAmount;
-          return {
-            text: item.name,
-            qty: formatAmount(amount, item.unit),
-            done: checked.has(key),
-            deleted: deleted.includes(key),
-            inPantry: item.inPantry ?? false,
-          };
-        }),
+        ...allCatItems
+          .filter(item => !deleted.includes(`${item.name.toLowerCase()}_${item.unit}`))
+          .map(item => {
+            const key = `${item.name.toLowerCase()}_${item.unit}`;
+            const amount = overrides[key] ?? item.totalAmount;
+            return {
+              text: item.name,
+              qty: formatAmount(amount, item.unit),
+              done: checked.has(key),
+              inPantry: item.inPantry ?? false,
+            };
+          }),
         ...customInCat.map(c => ({
           text: c.name,
           qty: c.amount ? `${c.amount} ${c.unit}` : '',
@@ -357,16 +360,12 @@ export function ShoppingListView() {
         const ix = getX(); const iy = getY();
         doc.setFont('helvetica', 'normal');
         doc.setFontSize(8.5);
-        // deleted = warm-grey, done = neutral grey, else ink
-        const textColor: [number, number, number] = it.deleted
-          ? [190, 175, 165]
-          : (it.done ? [160, 160, 160] : C.ink);
+        const textColor: [number, number, number] = it.done ? [160, 160, 160] : C.ink;
         doc.setTextColor(...textColor);
-        // Checkbox (dimmed border for deleted, no checkmark)
-        doc.setDrawColor(...(it.deleted ? ([210, 200, 192] as [number, number, number]) : C.border));
+        doc.setDrawColor(...C.border);
         doc.setLineWidth(0.4);
         doc.rect(ix, iy - 3.5, 4, 4, 'S');
-        if (it.done && !it.deleted) {
+        if (it.done) {
           doc.setDrawColor(...C.accent);
           doc.line(ix + 0.5, iy - 1.5, ix + 1.5, iy - 0.5);
           doc.line(ix + 1.5, iy - 0.5, ix + 3.5, iy - 3.2);
@@ -374,18 +373,11 @@ export function ShoppingListView() {
         // Name
         const nameLines = doc.splitTextToSize(it.text, colW - 24);
         doc.text(nameLines, ix + 6, iy);
-        // Strikethrough for deleted items
-        if (it.deleted) {
-          doc.setDrawColor(190, 175, 165);
-          doc.setLineWidth(0.3);
-          const lineW = Math.min(doc.getTextWidth(it.text), colW - 30);
-          doc.line(ix + 6, iy - 2, ix + 6 + lineW, iy - 2);
-        }
         // Qty right-aligned in muted
         if (it.qty) {
           doc.setFont('helvetica', 'bold');
           doc.setFontSize(8);
-          doc.setTextColor(...(it.deleted ? ([190, 175, 165] as [number, number, number]) : C.muted));
+          doc.setTextColor(...C.muted);
           doc.text(it.qty, ix + colW, iy, { align: 'right' });
         }
         advY(nameLines.length * 4.5 + 1);
@@ -806,9 +798,9 @@ export function ShoppingListView() {
                           </button>
                         )}
                       </div>
-                      {/* Recipe source + pantry indicator */}
+                      {/* Recipe source + pantry indicator — pl-11 (44px) aligns under ingredient name text */}
                       {(item.inPantry || (item.recipeNames?.length ?? 0) > 0) && (
-                        <div className="px-4 pb-2 flex flex-wrap items-center gap-1.5" style={{ marginTop: -2 }}>
+                        <div className="pb-2 pr-4 pl-11 flex flex-wrap items-center gap-1.5" style={{ marginTop: -2 }}>
                           {item.inPantry && (
                             <span
                               className="text-[10px] font-medium px-1.5 py-0.5 rounded-full"
@@ -819,7 +811,9 @@ export function ShoppingListView() {
                           )}
                           {(item.recipeNames?.length ?? 0) > 0 && (
                             <span className="text-xs" style={{ color: '#b0a090' }}>
-                              {item.recipeNames.join(' · ')}
+                              {item.recipeNames.length > 2
+                                ? `in ${item.recipeNames.length} Rezepten enthalten`
+                                : item.recipeNames.join(' · ')}
                             </span>
                           )}
                         </div>

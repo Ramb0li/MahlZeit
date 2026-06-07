@@ -1,0 +1,107 @@
+{
+  "id": "fle-64",
+  "name": "Kartoffelpfanne mit Leberkäse, Ei und Emmentaler",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 35,
+  "basePortions": 2,
+  "tags": [
+    "Ofengericht",
+    "Abendgericht",
+    "Mittagsgericht",
+    "Kinderfreundlich"
+  ],
+  "ingredients": [
+    {
+      "name": "Kartoffeln, festkochend",
+      "amount": 800,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Leberkäse (Fleischkäse)",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Eier",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Emmentaler, gerieben",
+      "amount": 60,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Rosmarin, frisch",
+      "amount": 2,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Schnittlauch",
+      "amount": 7,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Oregano, getrocknet",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 2
+    },
+    {
+      "name": "Paprikapulver",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 2
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    }
+  ],
+  "weatherType": "kalt",
+  "source": "herrbuettner.de",
+  "description": "Eine herzhafte Pfanne mit knusprigen Ofenkartoffeln, goldbraun gebratenem Leberkäse, zartschmelzendem Emmentaler und Spiegeleiern – eine verrückte Bauernpfanne, die sich lohnt!",
+  "steps": [
+    "Den Backofen auf 180 Grad Ober-/Unterhitze vorheizen und ein Rost in die mittlere Schiene schieben.",
+    "Die Kartoffeln waschen, trocknen, schälen und in etwa 2 cm große Würfel schneiden.",
+    "Den Rosmarin von den Zweigen zupfen und fein hacken.",
+    "Die Kartoffelwürfel in eine Schüssel geben und mit 1 EL Olivenöl, Oregano, Rosmarin, Paprikapulver, Salz und Pfeffer gut vermischen.",
+    "Die marinierten Kartoffelwürfel in eine große Auflaufform verteilen und für 15 Minuten im Ofen backen.",
+    "Währenddessen den Leberkäse in einer Pfanne mit 1 EL Olivenöl goldbraun braten.",
+    "Den gebratenen Leberkäse aus der Pfanne nehmen, abkühlen lassen und mit Küchenpapier überschüssiges Fett abtupfen. Anschließend in 2 cm große Würfel schneiden.",
+    "Sobald die Kartoffeln fast gar sind (Garprobe mit einem Zahnstocher machen), die Auflaufform aus dem Ofen nehmen und die Leberkäsewürfel untermischen.",
+    "Die Kartoffel-Leberkäse-Mischung in eine ofenfeste Pfanne geben.",
+    "Den geriebenen Emmentaler und etwa zwei Drittel des Schnittlauchs dazugeben und kurz vermischen.",
+    "Die Eier vorsichtig aufschlagen und wie Spiegeleier in die Pfanne geben, ohne sie zu verquirlen oder zu verrühren.",
+    "Die Pfanne für 10 Minuten in den Backofen schieben, bis das Eiweiß gestockt ist.",
+    "Die fertige Kartoffelpfanne aus dem Ofen nehmen und mit dem restlichen Schnittlauch bestreuen."
+  ],
+  "dietCategory": "meat",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/02/kartoffel_leberkaese_eier_pfanne01.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "ei",
+    "milch"
+  ]
+}

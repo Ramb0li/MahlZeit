@@ -1,0 +1,137 @@
+{
+  "id": "son-80",
+  "name": "Couscous mit Butternut-Kürbis, Walnüssen und gratiniertem Ziegenkäse",
+  "category": "Vegetarische Hauptgerichte",
+  "timeMinutes": 35,
+  "basePortions": 4,
+  "tags": [
+    "Vegetarisch",
+    "Herbst",
+    "Winter",
+    "Ofengericht",
+    "Mittagsgericht",
+    "Abendgericht"
+  ],
+  "ingredients": [
+    {
+      "name": "Butternut-Kürbis",
+      "amount": 600,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 2,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "rote Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "rote Chili",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "glatte Petersilie",
+      "amount": 40,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Couscous",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Walnusskerne",
+      "amount": 70,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebrühe",
+      "amount": 200,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Ziegenkäserolle",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Honig",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "getrockneter Rosmarin",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Paprikapulver",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    }
+  ],
+  "weatherType": "warm",
+  "source": "herrbuettner.de",
+  "description": "Herbstliches Couscous-Gericht mit geröstetem Butternut-Kürbis, knackigen Walnüssen, frischer Petersilie und gratiniertem Ziegenkäse mit Honig – gesund, vielseitig und voller Aromen.",
+  "steps": [
+    "Den Backofen auf 170 Grad Ober-/Unterhitze vorheizen. Die Walnusskerne leicht mit Olivenöl benetzen und auf einem Backblech verteilen. Auf mittlerer Schiene 10 Minuten rösten und dabei einmal wenden. Anschließend grob im Mörser zerstoßen und beiseitestellen.",
+    "Den Butternut-Kürbis schälen, halbieren und entkernen. Das Fruchtfleisch in etwa 2 cm große Würfel schneiden.",
+    "Knoblauchzehen schälen und fein hacken. Die rote Zwiebel schälen und in feine Würfel schneiden. Die Chili längs halbieren, entkernen und in feine Streifen schneiden.",
+    "In einem Topf oder einer Pfanne 2 EL Olivenöl bei mittlerer Hitze erhitzen. Die Kürbiswürfel darin anschwitzen und mit Salz, Pfeffer, Paprikapulver und getrocknetem Rosmarin würzen. Gut durchrühren und mit Deckel verschließen.",
+    "Nach 5 Minuten Zwiebel, Knoblauch und Chili hinzufügen, umrühren und weitere 10 Minuten mit Deckel garen lassen.",
+    "Den Deckel abnehmen, die Gemüsebrühe hinzugeben und aufkochen lassen. Den Couscous einrühren, gut vermischen, Deckel auflegen und den Topf vom Herd nehmen. Den Couscous 10 Minuten quellen lassen.",
+    "Währenddessen den Backofen auf Grillfunktion Stufe 2 oder 220 Grad Ober-/Unterhitze einstellen. Die Ziegenkäserolle in 8 Scheiben schneiden und auf ein mit Backpapier belegtes Blech legen. Jede Scheibe mit etwas Olivenöl, Honig und Pfeffer beträufeln.",
+    "Das Blech auf der zweiten Schiene von oben 3-5 Minuten backen, bis der Ziegenkäse leicht gebräunt ist. Aus dem Ofen nehmen und beiseitestellen.",
+    "Die Petersilie fein hacken und zusammen mit dem Zitronensaft und den gerösteten Walnüssen unter den Couscous mischen. Mit Salz und Pfeffer abschmecken.",
+    "Den Couscous auf Teller verteilen und mit dem gratinierten Ziegenkäse garnieren."
+  ],
+  "dietCategory": "vegetarian",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2019/11/Couscous_mit_Butternusskuserbis_und_Ziegenkaese.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch",
+    "schalenfruechte"
+  ]
+}

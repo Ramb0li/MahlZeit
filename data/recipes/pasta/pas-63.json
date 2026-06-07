@@ -1,0 +1,103 @@
+{
+  "id": "pas-63",
+  "name": "Spaghetti an Soja-Butter-Soße mit gebratenen Champignons",
+  "category": "Pasta",
+  "timeMinutes": 15,
+  "basePortions": 2,
+  "tags": [
+    "Vegetarisch",
+    "Schnell und einfach",
+    "Asiatisch",
+    "Abendgericht",
+    "Mittagsgericht",
+    "Herbst",
+    "Winter"
+  ],
+  "ingredients": [
+    {
+      "name": "Vollkorn-Spaghetti",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "braune Champignons",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Frühlingszwiebeln",
+      "amount": 75,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Butter",
+      "amount": 40,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Sojasoße",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Sesam",
+      "amount": 5,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Chiliflocken",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 2
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Eine cremige, würzige Soße aus Sojasoße und Butter trifft auf gebratene Champignons, Frühlingszwiebeln und Vollkorn-Spaghetti. Mit geröstetem Sesam und Chiliflocken verfeinert ist dieses Gericht ein schneller asiatisch inspirierter Klassiker.",
+  "steps": [
+    "Die Champignons säubern, den unteren Teil des Stiels abschneiden und in Scheiben schneiden.",
+    "Die Frühlingszwiebeln waschen, trocken schütteln und in Ringe schneiden.",
+    "In einer Pfanne den Sesam ohne Öl bei mittlerer Hitze leicht rösten, dann herausnehmen und beiseitestellen.",
+    "Einen großen Topf mit Wasser aufsetzen und zum Kochen bringen. Das kochende Wasser gut salzen und die Spaghetti darin garen.",
+    "Eine Pfanne stark erhitzen, das Olivenöl hineingeben und die Champignons darin anbraten. Mit Pfeffer würzen. Darauf achten, dass alle Pilze Kontakt zur Pfanne haben und sie nicht zu oft bewegen.",
+    "Die Champignons nach etwa 2 Minuten wenden und weitere 2 Minuten braten. Falls viel Flüssigkeit austritt, die Hitze reduzieren und warten, bis diese verkocht ist, dann die Hitze wieder erhöhen.",
+    "Wenn die Champignons schön gebräunt sind, die Hitze auf mittlere Stufe reduzieren. Frühlingszwiebeln und Chiliflocken hinzufügen und anbraten, bis die Frühlingszwiebeln weich sind.",
+    "Die Hitze weiter reduzieren und Sojasoße sowie Butter in die Pfanne geben. Die Pfanne leicht schwenken, sodass Butter und Sojasoße eine cremige Emulsion bilden. Bei Bedarf mit einem Kochlöffel nachhelfen.",
+    "Die fertig gekochten Spaghetti mit einer Küchenzange direkt aus dem Kochwasser in die Pfanne geben und gut mit der Soße und den anderen Zutaten vermischen.",
+    "Die Pasta auf Teller verteilen und mit dem gerösteten Sesam garnieren."
+  ],
+  "dietCategory": "vegetarian",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2019/02/Spaghetti-an-Soja-Butter-Sosse-mit-Champignons_big.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch",
+    "sesam",
+    "soja"
+  ]
+}

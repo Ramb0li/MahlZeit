@@ -1,0 +1,146 @@
+{
+  "id": "sup-51",
+  "name": "Kartoffel-Sellerie-Suppe mit Lauch und Bockwurst",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 35,
+  "basePortions": 4,
+  "tags": [
+    "Winter",
+    "Herbst",
+    "Mittagsgericht",
+    "Abendgericht"
+  ],
+  "ingredients": [
+    {
+      "name": "festkochende Kartoffeln",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Knollensellerie",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Lauchstange",
+      "amount": 180,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Schalotten",
+      "amount": 40,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "glatte Petersilie",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Bockwürste",
+      "amount": 8,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Geflügelbrühe",
+      "amount": 800,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Sahne",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 40,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Weißwein",
+      "amount": 50,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Lorbeerblatt",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "getrockneter Thymian",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Cayennepfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Zucker",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "weatherType": "kalt",
+  "source": "herrbuettner.de",
+  "description": "Eine wärmende, wohltuende Wintersuppe mit würzig-süßem Knollensellerie, reichhaltigen Kartoffeln, frischem Lauch und herzhaften Bockwürsten in einer leicht cremigen Sahnebrühe.",
+  "steps": [
+    "Kartoffeln und Knollensellerie schälen und in etwa 1 cm große Würfel schneiden. Schalotten und Knoblauch schälen und fein würfeln.",
+    "Einen großen Topf bei mittlerer Temperatur erhitzen und die Butter darin schmelzen lassen. Schalotten, Knoblauch und getrockneten Thymian glasig anschwitzen.",
+    "Nach etwa einer Minute die Kartoffel- und Selleriewürfel hinzufügen und mit Salz, Pfeffer und Zucker würzen. Einige Minuten anschwitzen lassen.",
+    "Mit Weißwein ablöschen und unter gelegentlichem Rühren einkochen lassen. Anschließend mit der Geflügelbrühe aufgießen.",
+    "Die Suppe zugedeckt etwa 25 Minuten bei niedriger Hitze köcheln lassen.",
+    "Währenddessen die Bockwürste in einer heißen Pfanne mit Olivenöl rundherum anbraten, herausnehmen und in grobe Stücke schneiden.",
+    "Den Lauch in Ringe schneiden und in kaltem Wasser gründlich waschen, dabei die Ringe voneinander trennen. Gut abtropfen lassen. Die Petersilie fein hacken.",
+    "Nach der Garzeit die Sahne zur Suppe geben und mit Cayennepfeffer würzen. Mit Salz und Pfeffer abschmecken.",
+    "Lauch, Petersilie und Wurststücke unterrühren, einmal durchmischen und die Suppe servieren."
+  ],
+  "dietCategory": "meat",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2019/12/Kartoffel_Sellerie_Suppe_mit_Lauch_und_Bruehwurst.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch",
+    "sellerie",
+    "sulfite"
+  ]
+}

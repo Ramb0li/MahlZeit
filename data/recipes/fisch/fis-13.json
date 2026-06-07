@@ -1,0 +1,98 @@
+{
+  "id": "fis-13",
+  "name": "Nudeln mit Räucherlachs, Dill und Crème fraîche",
+  "category": "Fisch & Meeresfrüchte",
+  "timeMinutes": 15,
+  "basePortions": 2,
+  "tags": [
+    "Schnell und einfach",
+    "Mittagsgericht",
+    "Abendsgericht"
+  ],
+  "ingredients": [
+    {
+      "name": "Farfalle",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Räucherlachs",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 2,
+      "unit": "Zehe",
+      "perPortions": 2
+    },
+    {
+      "name": "Zitrone (Saft und Schale)",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Dill",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 2
+    },
+    {
+      "name": "Crème fraîche",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Chiliflocken",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 2
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Ein schnelles Pastagericht mit Räucherlachs, frischem Dill, Zitrone und Knoblauch in cremiger Crème fraîche-Sauce. Perfekt für ein unkompliziertes Mittag- oder Abendessen, das in nur 15 Minuten fertig ist.",
+  "steps": [
+    "Die Farfalle in reichlich gesalzenem Wasser nach Packungsanweisung bissfest kochen.",
+    "In der Zwischenzeit den Dill fein hacken und einen kleinen Teil zum Garnieren beiseitelegen.",
+    "Crème fraîche mit dem gehackten Dill, der Zitronenschale und dem Zitronensaft verrühren. Mit Salz und Pfeffer würzen.",
+    "Den Räucherlachs in grobe Stücke zerteilen.",
+    "Die Knoblauchzehen schälen und fein würfeln.",
+    "Einige Minuten bevor die Pasta fertig ist, den gewürfelten Knoblauch in 1 EL Olivenöl in einer Pfanne glasig anschwitzen.",
+    "Die Nudeln abgießen und direkt zum Knoblauch in die Pfanne geben. Den Herd ausschalten.",
+    "Den Räucherlachs hinzufügen und mit den Nudeln vermischen.",
+    "Die Dill-Crème-fraîche-Sauce unterrühren und alles gut vermengen.",
+    "Mit Salz, Pfeffer und Chiliflocken abschmecken.",
+    "Auf Tellern anrichten und mit Chiliflocken, dem restlichen Dill und etwas Olivenöl garnieren."
+  ],
+  "dietCategory": "fish",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2023/09/nudeln-mit-raeucherlachs-dill-und-creme-fraiche.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "fisch",
+    "gluten"
+  ]
+}

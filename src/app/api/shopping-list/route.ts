@@ -55,11 +55,12 @@ export async function GET(request: Request) {
     const showDinner    = settings.showDinner    ?? true;
 
     // Zutaten eines Rezept-Slots aggregieren
-    const addSlotIngredients = (slotArg: typeof plan.days[number]['dinner'] | undefined, recipeIdArg: string | null | undefined) => {
+    // portionOverrideArg: expliziter Override (z.B. sidePortionOverride für Beilagen-Gästeanzahl)
+    const addSlotIngredients = (slotArg: typeof plan.days[number]['dinner'] | undefined, recipeIdArg: string | null | undefined, portionOverrideArg?: number) => {
       if (!recipeIdArg) return;
       const recipe = recipeMap.get(recipeIdArg);
       if (!recipe) return;
-      const targetPortions = slotArg?.portionOverride ?? portionInfo.totalPortions;
+      const targetPortions = portionOverrideArg ?? slotArg?.portionOverride ?? portionInfo.totalPortions;
       for (const ing of recipe.ingredients) {
         const scaled = scaleIngredientAmount(ing.amount, recipe.basePortions, targetPortions);
         const key = `${ing.name.toLowerCase()}_${ing.unit}`;
@@ -86,15 +87,15 @@ export async function GET(request: Request) {
 
       if (showDinner && dayPlan.dinner) {
         addSlotIngredients(dayPlan.dinner, dayPlan.dinner.recipeId);
-        addSlotIngredients(dayPlan.dinner, dayPlan.dinner.sideRecipeId);
+        addSlotIngredients(dayPlan.dinner, dayPlan.dinner.sideRecipeId, dayPlan.dinner.sidePortionOverride);
       }
       if (showLunch && dayPlan.lunch) {
         addSlotIngredients(dayPlan.lunch, dayPlan.lunch.recipeId);
-        addSlotIngredients(dayPlan.lunch, dayPlan.lunch.sideRecipeId);
+        addSlotIngredients(dayPlan.lunch, dayPlan.lunch.sideRecipeId, dayPlan.lunch.sidePortionOverride);
       }
       if (showBreakfast && dayPlan.breakfast) {
         addSlotIngredients(dayPlan.breakfast, dayPlan.breakfast.recipeId);
-        addSlotIngredients(dayPlan.breakfast, dayPlan.breakfast.sideRecipeId);
+        addSlotIngredients(dayPlan.breakfast, dayPlan.breakfast.sideRecipeId, dayPlan.breakfast.sidePortionOverride);
       }
     }
 

@@ -1,0 +1,74 @@
+{
+  "id": "ei-23",
+  "name": "Farmers Rührei Muffins",
+  "category": "Frühstück",
+  "timeMinutes": 30,
+  "basePortions": 12,
+  "tags": [
+    "Vegetarisch",
+    "Mealprep-geeignet",
+    "Kinderfreundlich",
+    "Ofengericht",
+    "Frühstück",
+    "Schnell und einfach"
+  ],
+  "ingredients": [
+    {
+      "name": "Eier",
+      "amount": 8,
+      "unit": "Stk",
+      "perPortions": 12
+    },
+    {
+      "name": "Milch",
+      "amount": 100,
+      "unit": "ml",
+      "perPortions": 12
+    },
+    {
+      "name": "Käse gerieben",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 12
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 12
+    },
+    {
+      "name": "Öl zum Einfetten",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 12
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Herzhafte Rührei-Muffins – perfekt als Binge-Watching Snack oder für ein praktisches Frühstück. Diese würzigen Muffins lassen sich gut vorbereiten und sind ideal für unterwegs.",
+  "steps": [
+    "Den Backofen auf 180 Grad Celsius vorheizen.",
+    "Eine Muffinform mit etwas Öl einfetten oder mit Papierförmchen auslegen.",
+    "Die Eier in eine Schüssel aufschlagen und mit der Milch verquirlen.",
+    "Den geriebenen Käse zur Eimischung geben und gut unterrühren.",
+    "Die Masse mit Salz und Pfeffer abschmecken.",
+    "Die Eiermasse gleichmäßig in die vorbereiteten Muffinförmchen verteilen.",
+    "Die Muffins im vorgeheizten Ofen etwa 20 Minuten backen, bis sie goldbraun und durchgegart sind.",
+    "Die fertigen Rührei-Muffins aus dem Ofen nehmen und etwas abkühlen lassen, bevor sie aus der Form gelöst werden."
+  ],
+  "dietCategory": "vegetarian",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/01/binge-watching_snack_the_ranch_cowbobys-ruehrei-muffins_01.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "ei",
+    "milch"
+  ]
+}

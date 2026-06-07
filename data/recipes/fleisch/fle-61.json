@@ -1,0 +1,129 @@
+{
+  "id": "fle-61",
+  "name": "Hähnchenschnitzel mit Apfel-Kohlrabi-Salat an Walnuss-Dressing",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 30,
+  "basePortions": 2,
+  "tags": [
+    "Herbst",
+    "Winter",
+    "Abendgericht",
+    "Mittagsgericht"
+  ],
+  "ingredients": [
+    {
+      "name": "Hähnchenbrüste",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Eier",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Mehl Typ 405",
+      "amount": 60,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Paniermehl",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Panko",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "getrockneter Thymian",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 2
+    },
+    {
+      "name": "Pflanzenöl zum Braten",
+      "amount": 200,
+      "unit": "ml",
+      "perPortions": 2
+    },
+    {
+      "name": "Zitrone",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Kohlrabi",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Braeburn Apfel",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Walnusskerne",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Gartenkresse",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 2
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Knuspriges Hähnchenschnitzel mit Panko-Panade trifft auf einen frischen Herbstsalat aus Kohlrabi und Apfel, verfeinert mit gerösteten Walnüssen und würziger Kresse. Die perfekte Kombination aus knusprig und frisch.",
+  "steps": [
+    "Den Backofen auf 170 Grad Ober-/Unterhitze vorheizen. Die Walnusskerne auf ein mit Backpapier ausgelegtes Blech geben, leicht mit Öl beträufeln und 10 Minuten rösten. Danach herausnehmen und abkühlen lassen.",
+    "Den Kohlrabi schälen und in feine Stifte schneiden. Den Apfel waschen, trocken reiben und ebenfalls in Stifte schneiden.",
+    "Kohlrabi- und Apfelstifte in eine Schüssel geben und mit dem Saft einer halben Zitrone vermengen.",
+    "Die gerösteten Walnüsse im Mörser grob zerstoßen und zusammen mit der Gartenkresse zum Salat hinzufügen. 3 EL Olivenöl dazugeben, mit Salz und Pfeffer abschmecken und alles gut durchmischen.",
+    "Die Hähnchenbrüste an der dickeren Seite längs einschneiden und aufklappen (Schmetterlingsschnitt). Mit Salz und Pfeffer würzen, mit Frischhaltefolie bedecken und flach klopfen.",
+    "Eier in einer großen Schale verquirlen. Mehl in eine weitere Schale geben. Paniermehl, Panko und getrockneten Thymian in einer dritten Schale vermischen.",
+    "Die Schnitzel zuerst im Mehl wenden, dann durch das verquirlte Ei ziehen und abschließend in der Paniermehl-Panko-Mischung panieren.",
+    "Eine oder zwei Pfannen bei mittlerer bis leicht hoher Hitze erhitzen. Reichlich Pflanzenöl hineingeben, sodass die Schnitzel etwa zur Hälfte im Öl schwimmen.",
+    "Sobald das Öl etwa 160-170 Grad erreicht hat (am besten mit einem Küchenthermometer prüfen), die Schnitzel von jeder Seite ca. 4 Minuten goldbraun ausbacken. Dabei die Pfanne gelegentlich leicht schwenken, damit sich die Schnitzel bewegen.",
+    "Die fertigen Schnitzel auf Küchenpapier abtropfen lassen, auf Teller anrichten, mit Zitronenscheiben garnieren und den Salat dazu servieren."
+  ],
+  "dietCategory": "meat",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2019/11/Haehnchenschnitzel_mit_Apfel_Kohlrabi_Salat_mit_Walnuss_Kresse_Dressing.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "ei",
+    "gluten",
+    "schalenfruechte"
+  ]
+}

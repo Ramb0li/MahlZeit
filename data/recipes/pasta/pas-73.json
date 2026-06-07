@@ -1,0 +1,97 @@
+{
+  "id": "pas-73",
+  "name": "Spaghetti mit Bärlauch-Hüttenkäse auf marinierten Tomaten",
+  "category": "Pasta",
+  "timeMinutes": 20,
+  "basePortions": 2,
+  "tags": [
+    "Vegetarisch",
+    "Schnell und einfach",
+    "Frühling",
+    "Italienisch",
+    "Mittagsgericht",
+    "Abendgericht"
+  ],
+  "ingredients": [
+    {
+      "name": "Spaghetti",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Cherrytomaten, bunter Mix",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Bärlauch",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Knoblauchzehe, klein",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 2
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Pinienkerne",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Hüttenkäse",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 0.5,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Frühlingsfrische Spaghetti mit einer cremigen Bärlauch-Hüttenkäse-Mischung als kalorienärmere Pesto-Alternative, serviert auf marinierten bunten Cherrytomaten und verfeinert mit knackigen Pinienkernen.",
+  "steps": [
+    "Die Cherrytomaten waschen, trocken tupfen und halbieren. Mit einer Prise Salz, Pfeffer und dem Olivenöl in einer Schüssel vermengen und beiseitestellen.",
+    "Eine Pfanne bei mittlerer Hitze erhitzen und die Pinienkerne ohne Ölzugabe darin rösten, bis sie leicht gebräunt sind. Anschließend beiseitestellen.",
+    "Einen großen Topf mit ausreichend Wasser für die Pasta aufsetzen und zum Kochen bringen. Sobald das Wasser kocht, eine Prise Salz hinzufügen und die Spaghetti nach Packungsanweisung garen.",
+    "In der Zwischenzeit den Bärlauch waschen und gründlich trocken tupfen. Den Bärlauch zusammen mit dem Saft der halben Zitrone, der geschälten Knoblauchzehe, Salz, Pfeffer und dem Hüttenkäse in eine Küchenmaschine geben und zerkleinern.",
+    "Einen Schuss Nudelwasser zur Bärlauch-Hüttenkäse-Mischung hinzufügen und nochmals durchmixen.",
+    "Sobald die Pasta gar ist, abgießen und zurück in den Topf geben. Die Bärlauch-Hüttenkäse-Mischung zu den Nudeln geben und gut vermischen.",
+    "Zum Servieren zuerst die marinierten Tomaten auf den Tellern verteilen, darauf die Pasta anrichten und mit den gerösteten Pinienkernen bestreuen. Nach Belieben mit Bärlauchblättern garnieren."
+  ],
+  "dietCategory": "vegetarian",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/04/spaghetti_mit_baerlauch_huettenkaese_tomate_und_pinienkerne.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch"
+  ]
+}

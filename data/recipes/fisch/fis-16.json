@@ -1,0 +1,132 @@
+{
+  "id": "fis-16",
+  "name": "Gebratenes Seelachsfilet mit Bratkartoffeln und Feldsalat",
+  "category": "Fisch & Meeresfrüchte",
+  "timeMinutes": 30,
+  "basePortions": 2,
+  "tags": [
+    "Schnell und einfach",
+    "Abendgericht",
+    "Mittagsgericht"
+  ],
+  "ingredients": [
+    {
+      "name": "gekochte Kartoffeln vom Vortag, festkochend",
+      "amount": 750,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Zwiebel, weiß",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Schnittlauch",
+      "amount": 10,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Butter",
+      "amount": 15,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Olivenöl für Bratkartoffeln",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Feldsalat",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Olivenöl für Dressing",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Weißweinessig",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 2
+    },
+    {
+      "name": "Honig",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 2
+    },
+    {
+      "name": "Senf",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 2
+    },
+    {
+      "name": "Seelachsfilets (Köhler)",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Weizenmehl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Olivenöl zum Braten",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 2
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Knusprig gebratenes Seelachsfilet auf goldbraunen Bratkartoffeln mit Zwiebeln und Schnittlauch, getoppt mit frischem Feldsalat in Honig-Senf-Dressing – ein köstliches und unkompliziertes Gericht.",
+  "steps": [
+    "Den Feldsalat gründlich waschen und in einer Salatschleuder trocknen. Den Schnittlauch abspülen, trocken schütteln und beides beiseitestellen.",
+    "Die Zwiebel schälen und in feine Würfel schneiden.",
+    "Die gekochten Kartoffeln vom Vortag pellen, vierteln und in Scheiben schneiden. In einer Schüssel mit 1-2 EL Olivenöl marinieren.",
+    "Eine Pfanne bei mittlerer Hitze erhitzen. 1 EL Olivenöl hineingeben und die Zwiebelwürfel darin glasig dünsten. Anschließend herausnehmen und beiseitestellen.",
+    "Die Hitze um eine Stufe erhöhen und die Pfanne richtig heiß werden lassen. Die marinierten Kartoffelscheiben hineingeben, verteilen und mit Salz und Pfeffer würzen. 5 Minuten braten lassen, ohne sie zu bewegen.",
+    "Nach 5 Minuten prüfen, ob die Unterseite goldbraun ist, dann wenden. Weitere 5 Minuten braten, bis die Kartoffeln knusprig und goldbraun sind.",
+    "Für das Dressing 2 EL Olivenöl, 1 TL Weißweinessig, 1 TL Senf, 1 TL Honig, eine Prise Salz und Pfeffer in einer Schüssel mit einem Schneebesen verrühren.",
+    "Mehl mit einer Prise Salz und Pfeffer vermischen. Eine zweite Pfanne bei mittlerer Hitze erhitzen und so viel Öl hineingeben, dass der Boden leicht bedeckt ist.",
+    "Die Seelachsfilets in der Mehl-Gewürz-Mischung wenden, überschüssiges Mehl abklopfen und in die heiße Pfanne geben. Von beiden Seiten je 4 Minuten braten.",
+    "Den Schnittlauch klein schneiden. Die gedünsteten Zwiebeln und 15 g Butter zu den Bratkartoffeln geben und durch Schwenken oder mit einem Pfannenwender vermischen. Sobald die Butter geschmolzen ist, den Schnittlauch hinzufügen und unterheben.",
+    "Den Feldsalat in die Schüssel mit dem Dressing geben und gut vermischen.",
+    "Die Bratkartoffeln auf zwei Teller verteilen, das Fischfilet darauf legen und mit dem Feldsalat toppen."
+  ],
+  "dietCategory": "fish",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/12/seelachs_mit_bratkartoffeln_und_feldsalat_mit_honig_senf_dressing_big.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "fisch",
+    "gluten",
+    "milch",
+    "senf",
+    "sulfite"
+  ]
+}

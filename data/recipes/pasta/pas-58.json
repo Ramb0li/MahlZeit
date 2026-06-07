@@ -1,0 +1,104 @@
+{
+  "id": "pas-58",
+  "name": "Nudeln mit Grünkohl, Lachs und Sojasoße",
+  "category": "Pasta",
+  "timeMinutes": 15,
+  "basePortions": 2,
+  "tags": [
+    "Winter",
+    "Schnell und einfach",
+    "Abendgericht",
+    "Asiatisch"
+  ],
+  "ingredients": [
+    {
+      "name": "Tortiglioni",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Grünkohl gehackt",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 2,
+      "unit": "Zehe",
+      "perPortions": 2
+    },
+    {
+      "name": "rote Chili",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Tomatenmark",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Sojasoße",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Butter",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Lachsfilet ohne Haut",
+      "amount": 140,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    }
+  ],
+  "weatherType": "kalt",
+  "source": "herrbuettner.de",
+  "description": "Eine überraschende und gelungene Kombination aus Grünkohl, Lachs und Sojasoße. Einfach zubereitet, schmeckt köstlich und sieht auch noch gut aus.",
+  "steps": [
+    "Einen großen Topf mit reichlich Wasser aufsetzen und zum Kochen bringen. Das Wasser gut salzen und die Pasta nach Packungsanweisung kochen.",
+    "Währenddessen die Knoblauchzehen schälen und in dünne Scheiben schneiden. Die Chilischote entkernen und in feine Streifen schneiden.",
+    "Eine Pfanne bei mittlerer Hitze erhitzen. Das Lachsfilet im Olivenöl von beiden Seiten je 2 Minuten anbraten, dann aus der Pfanne nehmen.",
+    "Knoblauch und Chili in der Pfanne glasig anschwitzen. Das Tomatenmark dazugeben und in der Pfanne verteilen.",
+    "Mit Sojasoße ablöschen. Den Grünkohl hinzufügen und mit Salz und Pfeffer würzen. Gut durchrühren – der Grünkohl fällt schnell zusammen.",
+    "Ein bis zwei Schöpfkellen Nudelwasser hinzufügen. Die Hitze reduzieren, die Butter einrühren und schmelzen lassen.",
+    "Den Lachs mit den Händen in Stücke zupfen, zur Soße geben und kurz ziehen lassen.",
+    "Die gekochten Nudeln untermischen und alles gut vermengen. Auf zwei Teller verteilen und servieren."
+  ],
+  "dietCategory": "fish",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2019/12/Nudeln_mit_Gruenkohl_Lachs_und_Sojasauce.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "fisch",
+    "gluten",
+    "milch",
+    "soja"
+  ]
+}

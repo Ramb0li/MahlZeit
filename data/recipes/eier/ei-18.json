@@ -1,0 +1,99 @@
+{
+  "id": "ei-18",
+  "name": "Käsetoast mit Cheddar und Butterkäse mit Spiegelei",
+  "category": "Frühstück",
+  "timeMinutes": 15,
+  "basePortions": 2,
+  "tags": [
+    "Vegetarisch",
+    "Schnell und einfach",
+    "Kinderfreundlich"
+  ],
+  "ingredients": [
+    {
+      "name": "Vollkorntoast",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Cheddar",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Butterkäse",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Eier",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Butter",
+      "amount": 20,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Parmesan gerieben",
+      "amount": 10,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Chiliflocken",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Oregano getrocknet",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Ein köstlicher Käsetoast mit würzigem Cheddar und zartem Butterkäse, getoppt mit einem Spiegelei mit flüssigem Eigelb, das als perfekte „Sauce\" dient. Parmesan sorgt für die knusprige Kruste.",
+  "steps": [
+    "Je eine Scheibe Cheddar und eine Scheibe Butterkäse auf zwei Toastscheiben legen. Mit den übrigen Toastscheiben bedecken und mit der Hand leicht zusammendrücken.",
+    "Eine Pfanne bei mittlerer Hitze erwärmen und 10 g Butter darin schmelzen. Die Butter in der Pfanne verteilen und den Käsetoast hineinlegen. Den Toast kreisend in der Pfanne bewegen, damit er das Fett aufnimmt. Etwa 5 Minuten rösten, bis die Unterseite schön knusprig und gebräunt ist.",
+    "Den Toast aus der Pfanne nehmen, die restlichen 10 g Butter in die Pfanne geben und zerlassen. Toast zurück in die Pfanne legen und die andere Seite genauso behandeln - kreisend bewegen und mit einem Pfannenwender leicht andrücken.",
+    "Geriebenen Parmesan über den Toast streuen und wenden. Nach etwa 30 Sekunden nochmals wenden, dann aus der Pfanne nehmen und beiseitelegen.",
+    "Die Pfanne kurz reinigen und das Olivenöl hineingeben. Die beiden Eier aufschlagen und nach Wunsch braten. Mit Salz, Pfeffer und Chiliflocken würzen.",
+    "Den Käsetoast mit getrocknetem Oregano bestreuen und mit dem Spiegelei servieren."
+  ],
+  "dietCategory": "vegetarian",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2019/10/Kaese-Toast-mit-Spiegelei.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "ei",
+    "milch"
+  ]
+}

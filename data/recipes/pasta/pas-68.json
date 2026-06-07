@@ -1,0 +1,100 @@
+{
+  "id": "pas-68",
+  "name": "Spaghetti Avocado Carbonara mit Bacon",
+  "category": "Pasta",
+  "timeMinutes": 20,
+  "basePortions": 2,
+  "tags": [
+    "Schnell und einfach",
+    "Abendgericht",
+    "Mittagsgericht"
+  ],
+  "ingredients": [
+    {
+      "name": "Spaghetti",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Avocado",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 2
+    },
+    {
+      "name": "Limettensaft",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Basilikum",
+      "amount": 10,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Bacon",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Parmesan",
+      "amount": 20,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Eigelb",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Nudelwasser",
+      "amount": 125,
+      "unit": "ml",
+      "perPortions": 2
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Eine cremige Carbonara-Variation mit Avocado und knusprigem Bacon. Die Avocado verleiht dem Gericht einen unverwechselbaren Geschmack und macht die Pasta wunderbar cremig, während der Bacon für das perfekte Aroma sorgt.",
+  "steps": [
+    "Eine Pfanne bei mittlerer Hitze aufstellen und die Bacon-Scheiben in die noch kalte Pfanne legen. Das Fett langsam auslassen und den Bacon knusprig braten. Anschließend auf Küchenpapier abtropfen lassen.",
+    "In einem Topf reichlich Wasser für die Nudeln zum Kochen bringen. Das kochende Wasser gut salzen und die Spaghetti hineingeben. Während des Garens gelegentlich umrühren.",
+    "Die Avocado halbieren, den Kern entfernen und das Fruchtfleisch mit einem Löffel aus der Schale lösen. Den Knoblauch schälen und in Scheiben schneiden. Basilikumblätter von den Zweigen zupfen. Den Parmesan reiben.",
+    "125 ml Nudelwasser entnehmen und beiseitestellen. Das Avocado-Fruchtfleisch, Knoblauch, Basilikum, Limettensaft, Eigelb, eine Prise Salz, eine Prise Pfeffer und das Nudelwasser in eine Küchenmaschine geben und zu einer cremigen Sauce mixen.",
+    "Die gegarten Spaghetti abgießen und in die Pfanne geben, in der der Bacon gebraten wurde. Den Herd ausschalten. Die Avocado-Sauce zu den Nudeln geben und gut vermischen.",
+    "Den Bacon (bis auf etwas zur Garnierung) mit den Händen oder einem Messer zerkleinern und unter die Nudeln mischen. Alles gut durchmengen, auf Teller verteilen und mit dem restlichen Bacon garnieren. Sofort servieren."
+  ],
+  "dietCategory": "meat",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/08/Spaghetti_Avocado_Carbonara.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "ei",
+    "gluten",
+    "milch"
+  ]
+}

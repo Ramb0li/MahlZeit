@@ -1,0 +1,112 @@
+{
+  "id": "pas-64",
+  "name": "Pasta mit dicken Bohnen und Katenschinken an Honig-Senf-Soße",
+  "category": "Pasta",
+  "timeMinutes": 15,
+  "basePortions": 2,
+  "tags": [
+    "Kinderfreundlich",
+    "Mittagsgericht",
+    "Abendgericht"
+  ],
+  "ingredients": [
+    {
+      "name": "Nudeln (z.B. Muschelnudeln oder Orecchiette)",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Dicke Bohnen aus dem Glas",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Thymianzweige",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 2
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Katenschinkenwürfel",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Honig",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 2
+    },
+    {
+      "name": "Senf",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 2
+    },
+    {
+      "name": "Parmesan",
+      "amount": 20,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Parmesan zum Garnieren",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Schnelles und unkompliziertes Pastagericht mit knusprigem Katenschinken, dicken Bohnen und einer feinen Honig-Senf-Soße. In nur 15 Minuten steht dieses leckere Essen auf dem Tisch – perfekt wenn es mal schnell gehen muss!",
+  "steps": [
+    "Einen großen Topf mit reichlich Wasser aufsetzen und zum Kochen bringen. Das kochende Wasser gut salzen.",
+    "Die Nudeln ins kochende Wasser geben und je nach Sorte 8-11 Minuten bissfest kochen.",
+    "Währenddessen die dicken Bohnen aus dem Glas abgießen, in einem feinen Sieb unter kaltem Wasser abspülen und abtropfen lassen.",
+    "Den Thymian von den Zweigen zupfen und grob hacken. Den Parmesan reiben.",
+    "Eine Pfanne bei mittlerer Hitze erhitzen. 1 EL Olivenöl hineingeben und die Katenschinkenwürfel darin knusprig anbraten.",
+    "Die abgetropften Bohnen und den gehackten Thymian zum Schinken geben. Mit Salz und Pfeffer würzen und gut durchschwenken.",
+    "Für die Honig-Senf-Soße 3 EL Olivenöl, Honig, Senf und Zitronensaft mit einem Schneebesen zu einer homogenen Soße verrühren.",
+    "Die fertig gegarten Nudeln direkt aus dem Topf mit etwas Nudelwasser in die Pfanne zu Schinken und Bohnen geben.",
+    "Den geriebenen Parmesan hinzufügen und alles durchschwenken.",
+    "Die Honig-Senf-Soße über die Pasta gießen und nochmals gut durchmischen, sodass sich durch Nudelwasser und Parmesan eine cremige Soße bildet.",
+    "Die Pasta auf zwei Teller verteilen und mit geriebenem Parmesan und frisch gemahlenem Pfeffer garnieren."
+  ],
+  "dietCategory": "meat",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2019/01/Pasta_mit_dicken_Bohnen_und_Katenschinken_an_Honig-Senf-Sosse_big.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch",
+    "senf",
+    "weichtiere"
+  ]
+}

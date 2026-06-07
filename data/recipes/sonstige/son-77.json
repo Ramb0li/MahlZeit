@@ -1,0 +1,103 @@
+{
+  "id": "son-77",
+  "name": "Spargel-Kartoffel-Gemüse mit Schinken und pochiertem Ei",
+  "category": "Vegetarische Hauptgerichte",
+  "timeMinutes": 20,
+  "basePortions": 2,
+  "tags": [
+    "Frühling",
+    "Sommer",
+    "Mittagsgericht",
+    "Abendgericht"
+  ],
+  "ingredients": [
+    {
+      "name": "weißer Spargel",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "festkochende Kartoffeln (mittelgroß)",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "gekochter Schinken",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Eier",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Schnittlauch",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 2
+    },
+    {
+      "name": "Geflügelfond",
+      "amount": 200,
+      "unit": "ml",
+      "perPortions": 2
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Essig",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Chiliflocken",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    }
+  ],
+  "weatherType": "warm",
+  "source": "herrbuettner.de",
+  "description": "Ein leichtes Frühlingsgericht mit weißem Spargel und Kartoffeln, gegart in Geflügelfond. Verfeinert mit gekochtem Schinken und einem cremigen pochierten Ei – perfekt für sonnige Frühlingstage.",
+  "steps": [
+    "Die Kartoffeln schälen und in etwa 2 cm große Würfel schneiden.",
+    "Den Spargel schälen und die holzigen Enden entfernen. Die Spargelstangen in circa 3 cm große Stücke schneiden, dabei die Spitzen ganz lassen. Die Abschnitte können für Suppen oder Saucen aufbewahrt werden.",
+    "Eine Pfanne erhitzen und die Spargelstücke (ohne Spitzen) zusammen mit den Kartoffelwürfeln und dem Geflügelfond hineingeben. Mit einem Deckel abdecken und aufkochen lassen.",
+    "Sobald die Flüssigkeit kocht, die Hitze auf mittlere Stufe reduzieren und alles 10 Minuten köcheln lassen.",
+    "Den Deckel abnehmen, die Spargelspitzen hinzufügen und weiterköcheln lassen. Dabei gelegentlich umrühren. Der Fond wird reduziert und durch die Kartoffelstärke leicht gebunden. Köcheln lassen, bis die Kartoffeln weich sind.",
+    "Einen Schuss Olivenöl unterrühren, mit Salz und Pfeffer abschmecken und grob gehackten Schnittlauch hinzufügen.",
+    "Parallel einen Topf mit Wasser zum Kochen bringen. Sobald das Wasser kocht, einen Schuss Essig hinzugeben und die Hitze reduzieren, sodass das Wasser nur noch leicht siedet.",
+    "Die Eier jeweils in ein kleines Gefäß aufschlagen. Mit einem Kochlöffel einen Strudel im Wasser erzeugen und das erste Ei vorsichtig hineingleiten lassen. 3 Minuten ziehen lassen.",
+    "Das pochierte Ei herausheben und mit Salz, Pfeffer und Chiliflocken würzen. Den Vorgang mit dem zweiten Ei wiederholen.",
+    "Das Spargel-Kartoffel-Gemüse auf zwei Teller verteilen. Jeweils zwei Scheiben Schinken darauflegen und mit einem pochierten Ei krönen. Mit etwas Schnittlauch garnieren und servieren."
+  ],
+  "dietCategory": "meat",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2023/05/Spargel_Kartoffel_Gemuese_mit_schinken_und_porchierten_Ei.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "ei"
+  ]
+}

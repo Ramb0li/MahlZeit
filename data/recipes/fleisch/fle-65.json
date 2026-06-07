@@ -1,0 +1,137 @@
+{
+  "id": "fle-65",
+  "name": "Hähnchenspieße mit Ananas, roten Zwiebeln & Thymian auf grobem Maispüree",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 40,
+  "basePortions": 4,
+  "tags": [
+    "Ofengericht",
+    "Mittagsgericht",
+    "Abendgericht"
+  ],
+  "ingredients": [
+    {
+      "name": "Hähnchenbrustfilet",
+      "amount": 380,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "vorgekochte Maiskolben",
+      "amount": 800,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel, rot",
+      "amount": 65,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel, weiß",
+      "amount": 60,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Ananasstücke aus der Dose",
+      "amount": 140,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Rosmarinzweig",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Thymianzweige",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Paprikapulver",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kurkuma",
+      "amount": 0.25,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Sahne",
+      "amount": 200,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 35,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Holzspieße",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Saftige Hähnchenspieße mit Ananas und roten Zwiebeln auf cremigem Maispüree – eine perfekte Kombination mit echtem Karibikfeeling. Ein kulinarischer Hochgenuss, der Mais, Ananas, Zwiebeln und Hähnchen harmonisch vereint.",
+  "steps": [
+    "Das Hähnchenbrustfilet in gleichmäßig große Würfel schneiden.",
+    "Die Thymianblätter von den Zweigen zupfen und fein hacken. Die Ananasstücke aus der Dose nehmen und in einem Sieb abtropfen lassen.",
+    "Die rote Zwiebel schälen, vierteln und den Strunk herausschneiden. Die Zwiebelviertel mit den Händen in einzelne Spalten trennen.",
+    "Hähnchenwürfel mit Thymian, Ananasstücken, roten Zwiebelspalten, Paprikapulver, Kurkuma, Salz, Pfeffer und 1 EL Olivenöl in einer Schüssel gut vermischen und beiseitestellen.",
+    "Die Maiskörner von den vorgekochten Kolben schneiden. Rosmarinblätter vom Zweig zupfen und fein hacken. Die weiße Zwiebel und den Knoblauch schälen und in feine Würfel schneiden.",
+    "Einen Topf bei mittlerer Hitze erhitzen, die Hälfte der Butter darin schmelzen lassen und den Rosmarin einrühren.",
+    "Die weißen Zwiebelwürfel hinzugeben und glasig dünsten. Den Knoblauch zugeben und kurz mitdünsten.",
+    "Die Maiskörner in den Topf geben, mit Salz und Pfeffer würzen, gut umrühren und 1 Minute mitdünsten.",
+    "Die Sahne angießen und die Hitze auf die niedrigste Stufe reduzieren. 5 Minuten leicht köcheln lassen.",
+    "Die Maismasse mit einem Mixer grob pürieren, zurück in den Topf geben und die restliche Butter einrühren. Mit Salz und Pfeffer abschmecken und warmhalten.",
+    "Hähnchenwürfel, rote Zwiebelspalten und Ananasstücke abwechselnd auf Holzspieße stecken.",
+    "Den Backofen auf 180 Grad Ober-/Unterhitze vorheizen.",
+    "Eine Pfanne bei mittlerer Hitze erhitzen, 2 EL Olivenöl hineingeben und die Spieße von allen Seiten scharf anbraten, bis sie goldbraun sind.",
+    "Die Spieße auf ein mit Backpapier belegtes Backblech legen und auf der mittleren Schiene etwa 20 Minuten backen. Nach 10 Minuten die Spieße wenden.",
+    "Das Maispüree auf Teller verteilen und jeweils einen Hähnchenspieß darauf anrichten."
+  ],
+  "dietCategory": "meat",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/12/haehnchenspiess_mit_ananas_auf_groben_maispueree02.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch"
+  ]
+}

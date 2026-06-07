@@ -9,7 +9,8 @@
     "lint": "next lint",
     "recipes:build": "node scripts/build-recipes.js",
     "recipes:sync": "node scripts/sync-recipes.js",
-    "recipes:enrich": "tsx scripts/enrich-recipes.ts"
+    "recipes:enrich": "tsx scripts/enrich-recipes.ts",
+    "recipes:import-hbu": "tsx scripts/import-herrbuettner.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.102.0",

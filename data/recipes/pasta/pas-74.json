@@ -1,0 +1,136 @@
+{
+  "id": "pas-74",
+  "name": "Spätzle mit Hähnchenfleisch & Champignons in Sahnesoße",
+  "category": "Pasta",
+  "timeMinutes": 35,
+  "basePortions": 2.5,
+  "tags": [
+    "Herbst",
+    "Winter",
+    "Ofengericht",
+    "Mittagsgericht",
+    "Abendgericht",
+    "Kinderfreundlich"
+  ],
+  "ingredients": [
+    {
+      "name": "Spätzle, getrocknet",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 2.5
+    },
+    {
+      "name": "Hähnchenbrustfilet",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 2.5
+    },
+    {
+      "name": "Zwiebel, weiß",
+      "amount": 85,
+      "unit": "g",
+      "perPortions": 2.5
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 7,
+      "unit": "g",
+      "perPortions": 2.5
+    },
+    {
+      "name": "Champignons, weiß",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 2.5
+    },
+    {
+      "name": "Petersilie",
+      "amount": 15,
+      "unit": "g",
+      "perPortions": 2.5
+    },
+    {
+      "name": "Thymianzweige",
+      "amount": 3,
+      "unit": "g",
+      "perPortions": 2.5
+    },
+    {
+      "name": "Tomatenmark",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 2.5
+    },
+    {
+      "name": "Geflügelfond",
+      "amount": 400,
+      "unit": "ml",
+      "perPortions": 2.5
+    },
+    {
+      "name": "Sahne",
+      "amount": 125,
+      "unit": "g",
+      "perPortions": 2.5
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 2.5
+    },
+    {
+      "name": "Mehl",
+      "amount": 5,
+      "unit": "g",
+      "perPortions": 2.5
+    },
+    {
+      "name": "Wasser, lauwarm",
+      "amount": 100,
+      "unit": "ml",
+      "perPortions": 2.5
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2.5
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2.5
+    }
+  ],
+  "weatherType": "kalt",
+  "source": "herrbuettner.de",
+  "description": "Ein herrlich cremiges und aromatisches Gericht mit zartem Hähnchenfleisch, gebratenen Champignons und einer würzigen Sahnesoße mit Thymian und Petersilie – einfach, schnell und unglaublich lecker.",
+  "steps": [
+    "Einen großen Topf mit ausreichend Wasser für die Spätzle aufsetzen und zum Kochen bringen. Sobald das Wasser kocht, salzen.",
+    "Das Hähnchenbrustfilet in mundgerechte Würfel von etwa 1,5-2 cm schneiden.",
+    "Die Zwiebel schälen und in kleine Würfel schneiden. Den Knoblauch schälen und fein hacken.",
+    "Thymian von den Zweigen zupfen und grob hacken.",
+    "Die Champignons mit einem trockenen Tuch putzen, den Strunk entfernen und die Pilze vierteln.",
+    "Eine Pfanne bei mittlerer Hitze erhitzen. 1 EL Olivenöl hineingeben und das Hähnchenfleisch darin anbraten. Mit Salz und Pfeffer würzen und so lange braten, bis es schön braun ist.",
+    "Den Thymian dazugeben, durchrühren und nach 30 Sekunden das Fleisch mit dem Thymian aus der Pfanne nehmen und auf einem Teller beiseitestellen. Das Fett in der Pfanne lassen.",
+    "Die Champignons in die Pfanne geben, mit einer Prise Pfeffer würzen und unter gelegentlichem Rühren etwa 60 Sekunden braten, bis sie Farbe bekommen. Dann herausnehmen und beiseitestellen.",
+    "1 EL Olivenöl in die Pfanne geben und die Zwiebeln darin glasig anschwitzen. Den Knoblauch hinzufügen und vermischen.",
+    "Nach etwa 30 Sekunden das Tomatenmark hinzufügen, mit Zwiebeln und Knoblauch vermischen und kurz brutzeln lassen.",
+    "Mit dem Geflügelfond ablöschen.",
+    "5 g Mehl mit 100 ml lauwarmem Wasser klumpenfrei verrühren und in die Pfanne gießen. Die Sahne dazugeben und alles durchrühren.",
+    "Die Pilze und das Hähnchenfleisch zurück in die Pfanne geben und durchrühren. Die Soße aufkochen lassen, dann die Hitze reduzieren und köcheln lassen.",
+    "Die Spätzle ins kochende Wasser geben. Während die Spätzle garen, die Soße immer wieder durchrühren und mit Salz und Pfeffer abschmecken. Bei Bedarf mit etwas Wasser verdünnen.",
+    "Die Petersilie klein hacken, zur Soße geben und unterrühren. Etwas Petersilie für die Garnierung beiseitelegen.",
+    "Die Spätzle abseihen, auf Tellern verteilen und mit der Soße übergießen. Mit Petersilie garnieren und servieren."
+  ],
+  "dietCategory": "meat",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/03/spaetzle_mit_haehnchen_champignon_sauce_.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch"
+  ]
+}

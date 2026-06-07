@@ -1,0 +1,102 @@
+{
+  "id": "ei-21",
+  "name": "Spiegelei Frittata mit Frühlingszwiebeln, Bacon und Mais",
+  "category": "Frühstück",
+  "timeMinutes": 20,
+  "basePortions": 2,
+  "tags": [
+    "Schnell und einfach",
+    "Italienisch",
+    "Ofengericht",
+    "Frühstück",
+    "Abendgericht"
+  ],
+  "ingredients": [
+    {
+      "name": "Eier",
+      "amount": 10,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Bacon in Scheiben",
+      "amount": 125,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Rosmarinzweig",
+      "amount": 4,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Frühlingszwiebeln",
+      "amount": 110,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 2
+    },
+    {
+      "name": "Mais (Dose, Abtropfgewicht)",
+      "amount": 285,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Parmesan",
+      "amount": 25,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Butter",
+      "amount": 10,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Eine besondere Frittata-Variante mit knusprigem Bacon, Mais und Frühlingszwiebeln, gekrönt mit vier Spiegeleiern, die im Ofen mitgebacken werden. Das flüssige Eigelb verläuft beim Aufschneiden herrlich über die anderen Zutaten.",
+  "steps": [
+    "Den Backofen auf 175 Grad vorheizen und ein Rost in die mittlere Schiene schieben.",
+    "Den Bacon in etwa 1 cm große Würfel schneiden.",
+    "Eine beschichtete Pfanne bei mittlerer Hitze auf den Herd stellen und den Bacon in die noch kalte Pfanne geben. Das Fett langsam auslassen und den Bacon leicht knusprig braten.",
+    "Währenddessen den Mais aus der Dose nehmen und gut abtropfen lassen. Die Rosmarinnadeln vom Zweig zupfen und fein hacken. Den Knoblauch schälen und in feine Würfel schneiden.",
+    "Die Frühlingszwiebeln waschen, trocken tupfen und in grobe Ringe schneiden. Ein paar Ringe für die Garnierung zur Seite legen. Den Parmesan fein reiben.",
+    "6 Eier in eine Schüssel aufschlagen, Salz, Pfeffer und den geriebenen Parmesan hinzugeben. Mit einem Schneebesen kräftig verquirlen, bis die Masse leicht schäumt.",
+    "Sobald der Bacon ausreichend Fett ausgelassen hat, Rosmarin, Frühlingszwiebeln und Knoblauch in die Pfanne geben. Alles gut vermischen und etwa 1 Minute im Fett anbraten.",
+    "Die Butter hinzufügen, schmelzen lassen und in der Pfanne verteilen. Anschließend den Mais untermischen und mit Salz und Pfeffer würzen.",
+    "Die Ei-Parmesan-Mischung in die Pfanne gießen und mit einem Kochlöffel gleichmäßig verteilen. Dabei gut mit den anderen Zutaten vermischen.",
+    "Sobald die Eimasse am Boden zu stocken beginnt, das Rühren beenden. Die Pfanne noch etwa 1 Minute auf dem Herd stehen lassen.",
+    "Die restlichen 4 Eier vorsichtig auf die Frittata aufschlagen, als würde man Spiegeleier zubereiten.",
+    "Die Pfanne für 8-10 Minuten in den Backofen schieben, bis das Eiweiß der Spiegeleier gestockt und die Ei-Parmesan-Mischung goldbraun gebacken ist.",
+    "Die Frittata aus dem Ofen nehmen und 5 Minuten abkühlen lassen. Vor dem Servieren die Spiegeleier mit Salz und Pfeffer würzen und mit den zurückbehaltenen Frühlingszwiebeln garnieren."
+  ],
+  "dietCategory": "meat",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/02/frittata_mit_bacon_mais_und_spiegelei01.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "ei",
+    "milch"
+  ]
+}

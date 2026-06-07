@@ -1,0 +1,117 @@
+{
+  "id": "son-81",
+  "name": "Frittata mit Brokkoli, Kichererbsen, Tomaten und Mozzarella",
+  "category": "Vegetarische Hauptgerichte",
+  "timeMinutes": 30,
+  "basePortions": 4,
+  "tags": [
+    "Vegetarisch",
+    "Ofengericht",
+    "Mittagsgericht",
+    "Abendgericht",
+    "Italienisch",
+    "Mealprep-geeignet",
+    "Frühling"
+  ],
+  "ingredients": [
+    {
+      "name": "Brokkoli",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Mini Cherry Tomaten",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Basilikum",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Kichererbsen (abgetropft)",
+      "amount": 240,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Parmesan",
+      "amount": 20,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Mozzarella",
+      "amount": 125,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Eier",
+      "amount": 6,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Chiliflocken",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Eine bunte italienische Eierspeise mit knackigem Brokkoli, aromatischen Kichererbsen, fruchtigen Tomaten und schmelzendem Mozzarella. Schnell zubereitet und herrlich vielseitig – perfekt direkt aus der Pfanne genossen.",
+  "steps": [
+    "Den Backofen auf 200 Grad Ober-/Unterhitze vorheizen und ein Rost in die mittlere Schiene einsetzen.",
+    "Den Brokkoli waschen, trocknen und in mundgerechte Röschen schneiden.",
+    "Die Cherry Tomaten waschen, trockentupfen und halbieren.",
+    "Die Knoblauchzehe schälen und in dünne Scheiben schneiden.",
+    "Die Kichererbsen abgießen, gründlich unter kaltem Wasser abspülen und grob trockentupfen.",
+    "Den Mozzarella aus der Verpackung nehmen und trocken tupfen.",
+    "Die Eier in eine Schüssel aufschlagen und verquirlen. Den geriebenen Parmesan unterrühren.",
+    "Eine ofenfeste Pfanne bei mittlerer Hitze erhitzen und das Olivenöl hineingeben.",
+    "Knoblauch und Chiliflocken kurz im Öl anschwitzen lassen.",
+    "Brokkoliröschen, Cherry Tomaten und Kichererbsen hinzufügen, mit Salz und Pfeffer würzen und eine Minute anbraten.",
+    "Die Eier-Parmesan-Mischung über das Gemüse gießen und zügig vermengen.",
+    "Den Mozzarella mit den Händen in Stücke reißen und über der Frittata verteilen.",
+    "Die Pfanne für 20 Minuten in den vorgeheizten Ofen schieben.",
+    "Die Frittata aus dem Ofen nehmen, kurz abkühlen lassen und mit frischem Basilikum garnieren."
+  ],
+  "dietCategory": "vegetarian",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2019/03/frittata_mit_brokkoli_kichererbsen_tomaten_und_basilikum.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "ei",
+    "milch"
+  ]
+}

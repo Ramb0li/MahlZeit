@@ -1,0 +1,90 @@
+{
+  "id": "pas-70",
+  "name": "Würzige Spaghetti Bolognese von der Chorizo",
+  "category": "Pasta",
+  "timeMinutes": 40,
+  "basePortions": 2.5,
+  "tags": [
+    "Schnell und einfach",
+    "Abendgericht",
+    "Mittagsgericht",
+    "Italienisch",
+    "Herbst",
+    "Winter"
+  ],
+  "ingredients": [
+    {
+      "name": "Chorizo zum Braten/Grillen",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 2.5
+    },
+    {
+      "name": "Spaghetti",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 2.5
+    },
+    {
+      "name": "Kirschtomaten aus der Dose",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 2.5
+    },
+    {
+      "name": "Gegrillte Paprika aus dem Glas",
+      "amount": 130,
+      "unit": "g",
+      "perPortions": 2.5
+    },
+    {
+      "name": "Rosmarinzweige",
+      "amount": 2.5,
+      "unit": "Stk",
+      "perPortions": 2.5
+    },
+    {
+      "name": "Parmesan",
+      "amount": 25,
+      "unit": "g",
+      "perPortions": 2.5
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2.5
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2.5
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Ein italienischer Klassiker mit spanischem Twist: Aromatische Bolognese mit Chorizo, Rosmarin und gegrillter Paprika – eine echte Geschmacksbombe, die mit intensivem Aroma überzeugt.",
+  "steps": [
+    "Die Haut der Chorizo längs einschneiden und mit einem Messer komplett abziehen.",
+    "Eine Pfanne bei mittlerer Hitze erhitzen. Die Chorizo mit den Händen in grobe Stücke zerreißen und portionsweise in die heiße Pfanne geben. Etwa 8 Minuten braten, dabei gelegentlich umrühren und mit einem Kochlöffel weiter zerkleinern, bis eine Art grobes Hackfleisch entsteht.",
+    "Währenddessen einen großen Topf mit reichlich Wasser aufsetzen und zum Kochen bringen.",
+    "Rosmarinnadeln von den Zweigen zupfen und fein hacken. Die gegrillte Paprika abtropfen lassen. Den Parmesan reiben.",
+    "Sobald das Pastawasser kocht, großzügig salzen.",
+    "Nach 8 Minuten Bratzeit den gehackten Rosmarin und die Paprika zur Chorizo geben, umrühren und weitere 5 Minuten braten lassen.",
+    "Die Kirschtomaten aus der Dose hinzufügen. Die Dose zu einem Drittel mit Wasser füllen und ebenfalls in die Pfanne gießen. Alles für 20 Minuten köcheln lassen, dabei immer wieder umrühren und die Tomaten mit dem Kochlöffel zerdrücken.",
+    "Nach 10 Minuten Kochzeit der Sauce die Spaghetti ins kochende Wasser geben und unter gelegentlichem Rühren etwa 10 Minuten garen.",
+    "Den Großteil des geriebenen Parmesans zur fertigen Sauce geben (etwas zum Garnieren zurückbehalten) und die Sauce mit Salz und Pfeffer abschmecken.",
+    "Die Spaghetti mit einer Küchenzange direkt aus dem Kochwasser in die Pfanne zur Sauce geben, dabei ruhig etwas Nudelwasser mitnehmen. Pasta und Sauce gründlich vermischen.",
+    "Die Pasta auf Teller verteilen und mit dem restlichen Parmesan bestreuen. Sofort servieren."
+  ],
+  "dietCategory": "meat",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/12/spaghetti_chorizo_bolognese_big.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch",
+    "sulfite"
+  ]
+}

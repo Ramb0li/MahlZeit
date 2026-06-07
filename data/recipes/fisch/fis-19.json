@@ -1,0 +1,103 @@
+{
+  "id": "fis-19",
+  "name": "Spaghetti mit Makrele und Oregano",
+  "category": "Fisch & Meeresfrüchte",
+  "timeMinutes": 15,
+  "basePortions": 2,
+  "tags": [
+    "Schnell zubereitet",
+    "Mittagsgericht",
+    "Abendgericht"
+  ],
+  "ingredients": [
+    {
+      "name": "Spaghetti",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Makrelen aus der Dose (ohne Öl, Abtropfgewicht)",
+      "amount": 176,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 4,
+      "unit": "Zehe",
+      "perPortions": 2
+    },
+    {
+      "name": "getrockneter Oregano",
+      "amount": 3,
+      "unit": "TL",
+      "perPortions": 2
+    },
+    {
+      "name": "Petersilie",
+      "amount": 7,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 100,
+      "unit": "ml",
+      "perPortions": 2
+    },
+    {
+      "name": "Butter",
+      "amount": 25,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Zitronensaft (frisch gepresst)",
+      "amount": 35,
+      "unit": "ml",
+      "perPortions": 2
+    },
+    {
+      "name": "Parmesan (gerieben)",
+      "amount": 10,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Schnelles Pasta-Gericht mit Makrelen aus der Dose in aromatischem Olivenöl mit viel Knoblauch und getrocknetem Oregano. Die Zitrone bringt Frische und Säure ins Spiel – perfekt für ein unkompliziertes Mittag- oder Abendessen.",
+  "steps": [
+    "Einen großen Topf mit reichlich Wasser zum Kochen bringen. Das kochende Wasser salzen und die Spaghetti hineingeben. Nach Packungsanweisung etwa 9 Minuten kochen.",
+    "Den Knoblauch schälen und in Würfel oder Scheiben schneiden. Die Petersilie grob hacken.",
+    "Eine Pfanne bei mittlerer Hitze erwärmen. 4 EL Olivenöl und die Butter in die heiße Pfanne geben und die Butter mit einem Kochlöffel verteilen.",
+    "Sobald die Butter vollständig geschmolzen ist, Oregano und Knoblauch hinzufügen und gut durchrühren, damit sich alles gleichmäßig verteilt.",
+    "Die Makrelen aus den Dosen nehmen und überschüssige Flüssigkeit abtropfen lassen.",
+    "Wenn der Knoblauch leicht gebräunt ist, die Makrelen in die Pfanne geben. Mit dem Kochlöffel die Makrelen zerkleinern und in der Pfanne verteilen.",
+    "Den Zitronensaft hinzufügen und kräftig durchrühren. Mit Pfeffer und einer kleinen Prise Salz würzen.",
+    "Die gegarten Spaghetti abgießen und direkt in die Pfanne geben. Die Nudeln gründlich mit den anderen Zutaten vermischen und den geriebenen Parmesan unterrühren.",
+    "Kurz vor dem Servieren weitere 2-4 EL Olivenöl und die gehackte Petersilie über die Pasta geben, noch einmal durchmischen und anrichten. Nach Belieben mit zusätzlichem Parmesan bestreuen."
+  ],
+  "dietCategory": "fish",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/05/Spaghetti_mit_Makrelen_an_Oel_Knoblauch_getrockneten_Oregano02.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "fisch",
+    "gluten",
+    "milch"
+  ]
+}

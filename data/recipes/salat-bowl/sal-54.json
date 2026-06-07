@@ -1,0 +1,119 @@
+{
+  "id": "sal-54",
+  "name": "Herbstlicher Tortellini Salat mit Walnüssen und Kräuter Dressing",
+  "category": "Salate & Bowls",
+  "timeMinutes": 20,
+  "basePortions": 4,
+  "tags": [
+    "Vegetarisch",
+    "Herbst",
+    "Schnell und einfach"
+  ],
+  "ingredients": [
+    {
+      "name": "frische Tortellini mit Ricotta-Spinat Füllung",
+      "amount": 750,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Rucola",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Rosmarin",
+      "amount": 4,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Thymian",
+      "amount": 4,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "glatte Petersilie",
+      "amount": 10,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "frische Basilikum-Blätter",
+      "amount": 10,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Walnusskerne",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Sultaninen",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 80,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl zum Rösten",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Chiliflocken",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "weatherType": "kalt",
+  "source": "herrbuettner.de",
+  "description": "Ein köstlicher herbstlicher Salat mit cremigen Tortellini, knusprigen Walnüssen, süßen Rosinen, frischem Rucola und aromatischem Kräuter-Dressing – perfekt für die ersten kalten Tage nach dem Sommer.",
+  "steps": [
+    "Den Backofen auf 170 Grad Ober-/Unterhitze vorheizen. Walnusskerne auf ein mit Backpapier ausgelegtes Blech verteilen, leicht mit Öl beträufeln und 10 Minuten im Ofen rösten. Anschließend herausnehmen und abkühlen lassen.",
+    "Rosmarin- und Thymianblätter von den Zweigen zupfen und fein hacken. Eine Pfanne bei mittlerer Hitze erwärmen, 2 EL Olivenöl hineingeben und Rosmarin sowie Thymian darin eine Minute anbraten. Pfanne vom Herd nehmen und beiseitestellen.",
+    "Petersilie fein hacken. Basilikumblätter mit einer Prise Salz im Mörser zerstoßen.",
+    "Petersilie, Chiliflocken sowie das angebratene Rosmarin-Thymian-Gemisch mit dem aromatisierten Öl zum Basilikum in den Mörser geben. Mit 80 ml Olivenöl und Zitronensaft aufgießen und alles mit dem Stößel gut vermischen. Mit Salz und Pfeffer abschmecken.",
+    "Einen großen Topf mit reichlich Wasser zum Kochen bringen, gut salzen und die Tortellini darin 2 Minuten garen.",
+    "In der Zwischenzeit den Rucola waschen und gründlich trocken schleudern.",
+    "Tortellini abgießen, gut abtropfen lassen und in eine große Schüssel geben. Sultaninen und die grob mit den Händen zerkleinerten Walnüsse hinzufügen.",
+    "Das Kräuter-Dressing über den Salat gießen und alles gut vermengen. Etwas abkühlen lassen, dann den Rucola untermischen und servieren."
+  ],
+  "dietCategory": "vegetarian",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2019/10/Herbstlicher_Tortellini-Salat-mit-Walnuessen-Rosinen-Rucola-und-Kraeuter-Dressing.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch",
+    "schalenfruechte"
+  ]
+}

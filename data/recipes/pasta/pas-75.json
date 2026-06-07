@@ -1,0 +1,86 @@
+{
+  "id": "pas-75",
+  "name": "Spaghetti mit Bacon, Mais, Frühlingszwiebeln und Sahne",
+  "category": "Pasta",
+  "timeMinutes": 20,
+  "basePortions": 2,
+  "tags": [
+    "Frühling",
+    "Mittagsgericht",
+    "Abendgericht"
+  ],
+  "ingredients": [
+    {
+      "name": "Spaghetti",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Frühlingszwiebeln",
+      "amount": 120,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 7,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Bacon",
+      "amount": 75,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Mais (abgetropft)",
+      "amount": 285,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Sahne",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Eine herrlich frische und aromatische Pasta, bei der Bacon im eigenen Fett knusprig ausgebraten wird und zusammen mit Frühlingszwiebeln, Mais und Sahne eine cremige Sauce ergibt. Schön gelb strahlend wie die Sonne!",
+  "steps": [
+    "Einen grossen Topf mit reichlich Wasser aufsetzen und zum Kochen bringen. Das Wasser gut salzen und die Spaghetti hineingeben. Unter gelegentlichem Rühren al dente kochen.",
+    "Gleichzeitig eine Pfanne bei mittlerer Hitze erhitzen. Die Bacon-Scheiben hineingeben und das Fett langsam auslassen. Den Bacon dabei schön braun braten, nach etwa 3 Minuten wenden. Darauf achten, dass er nicht verbrennt.",
+    "Sobald der Bacon knusprig und gebräunt ist, aus der Pfanne nehmen und auf Küchenpapier abtropfen lassen, damit überschüssiges Fett aufgesaugt wird und er richtig kross wird.",
+    "Während der Bacon brät, den Mais aus der Dose nehmen, durch ein Sieb abtropfen lassen und unter kaltem Wasser abspülen.",
+    "Den Knoblauch schälen und fein würfeln. Die Frühlingszwiebeln waschen, trocken tupfen und der Länge nach in Ringe schneiden.",
+    "Im ausgelassenen Baconfett den Knoblauch und die Frühlingszwiebeln anschwitzen. Gut durchrühren und nach etwa 30 Sekunden den Mais hinzufügen.",
+    "Alles nochmals gut durchrühren, dann die Sahne dazugiessen. Mit Salz und Pfeffer würzen.",
+    "Die fertig gekochten Spaghetti mit einer Zange direkt aus dem Topf in die Pfanne geben. Dabei etwas Nudelwasser (etwa eine Suppenkelle voll) mitnehmen.",
+    "Die Pasta mit den anderen Zutaten gut vermischen und etwa 60 Sekunden unter gelegentlichem Rühren köcheln lassen, damit durch Sahne und Nudelwasser eine schöne cremige Sauce entsteht.",
+    "Den Bacon grob klein schneiden, zur Pasta geben und alles ein letztes Mal gut vermischen.",
+    "Die Pasta auf Teller verteilen und sofort servieren."
+  ],
+  "dietCategory": "meat",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/03/Spaghetti_mit_Bacon_Mais_Fruehlingszwiebeln_und_Sahne.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch"
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "id": "son-86",
+  "name": "Überbackener Toast mit Maiscreme, Thunfisch und Frühlingszwiebeln",
+  "category": "Snacks & Vorspeisen",
+  "timeMinutes": 30,
+  "basePortions": 4,
+  "tags": [
+    "Ofengericht",
+    "Schnell und einfach",
+    "Kinderfreundlich",
+    "Frühling",
+    "Sommer"
+  ],
+  "ingredients": [
+    {
+      "name": "Vollkorntoast",
+      "amount": 8,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Frühlingszwiebeln",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Mais (Dose, abgetropft)",
+      "amount": 285,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Thunfisch in eigenem Saft (Dose, abgetropft)",
+      "amount": 280,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Mozzarella, gerieben",
+      "amount": 120,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Frischkäse",
+      "amount": 75,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Oregano, getrocknet",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Knusprig überbackener Vollkorntoast mit cremigem Maisaufstrich, saftigem Thunfisch und frischen Frühlingszwiebeln – einfach, schnell und unglaublich lecker!",
+  "steps": [
+    "Den Backofen auf 200 Grad Ober-/Unterhitze vorheizen und ein Backblech mit Backpapier auslegen.",
+    "Den Mais aus der Dose nehmen, in einem feinen Sieb kurz mit Wasser abspülen und gut abtropfen lassen.",
+    "Den Thunfisch aus der Dose holen, in ein feines Sieb geben und mit den Händen die Flüssigkeit ausdrücken. Dabei den Thunfisch zerkleinern.",
+    "Die Frühlingszwiebeln waschen, trocken tupfen und in feine Ringe schneiden.",
+    "Den abgetropften Mais zusammen mit dem Frischkäse, Salz und Pfeffer in eine Küchenmaschine geben und zu einer leicht groben Creme verarbeiten.",
+    "Die Toastscheiben auf das vorbereitete Backblech legen.",
+    "Die Maiscreme gleichmäßig auf die Toastscheiben verteilen.",
+    "Den Thunfisch und die Frühlingszwiebelringe darauf verteilen.",
+    "Zum Schluss den geriebenen Mozzarella über alles streuen.",
+    "Das Backblech auf die mittlere Schiene in den Backofen schieben und 15-20 Minuten backen, bis der Käse geschmolzen ist und schöne gebräunte Stellen hat.",
+    "Das Backblech aus dem Ofen nehmen, die Toastscheiben mit getrocknetem Oregano bestreuen und servieren."
+  ],
+  "dietCategory": "fish",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/05/toast_mit_maiscreme_thunfisch_fruehlingszwiebeln_ueberbacken_mit_mozzarella.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "ei",
+    "fisch",
+    "milch"
+  ]
+}

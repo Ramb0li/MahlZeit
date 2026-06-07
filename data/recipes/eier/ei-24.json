@@ -1,0 +1,99 @@
+{
+  "id": "ei-24",
+  "name": "Vollkornbrot mit Kräuterbutter, Gurke und Makrele",
+  "category": "Frühstück",
+  "timeMinutes": 10,
+  "basePortions": 4,
+  "tags": [
+    "Kinderfreundlich",
+    "Frühling",
+    "Sommer",
+    "Herbst",
+    "Winter"
+  ],
+  "ingredients": [
+    {
+      "name": "Vollkornbrot",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Makrelenfilets aus der Dose in eigenem Saft (Abtropfgewicht)",
+      "amount": 176,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Schlangengurke",
+      "amount": 60,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitrone (Saft)",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 70,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Dill",
+      "amount": 1,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Schnittlauch",
+      "amount": 4,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Petersilie",
+      "amount": 4,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Ein kräftiges, energiereiches Frühstück mit proteinreichen Makrelenfilets und cremiger Kräuterbutter auf Vollkornbrot. Macht lange satt und liefert viel Power für den Tag.",
+  "steps": [
+    "Die Butter 30-60 Minuten vor der Zubereitung aus dem Kühlschrank nehmen, damit sie weich wird.",
+    "Die weiche Butter in eine Schüssel geben. Dill, Schnittlauch und Petersilie fein hacken und zur Butter geben.",
+    "Mit einer Gabel die Butter und Kräuter gut vermischen. Mit etwas Salz und Pfeffer würzen. Die Kräuterbutter für etwa eine Stunde in den Kühlschrank stellen, bis sie wieder fest ist.",
+    "Die vier Scheiben Vollkornbrot mit der Kräuterbutter bestreichen.",
+    "Die Gurke in Scheiben schneiden und die Brotscheiben damit belegen.",
+    "Die Makrelenfilets aus den Dosen nehmen, in ein Sieb geben und überschüssige Flüssigkeit ausdrücken.",
+    "Die Makrelenfilets mit dem Zitronensaft beträufeln und gut vermischen.",
+    "Die Makrelenfilets auf den Vollkornbroten verteilen und mit etwas Salz und Pfeffer würzen."
+  ],
+  "dietCategory": "fish",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/06/vollkornbrot_mit_kraeuterbutter_gurke_makrele01.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "ei",
+    "fisch",
+    "gluten",
+    "milch"
+  ]
+}

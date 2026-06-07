@@ -1,0 +1,98 @@
+{
+  "id": "son-91",
+  "name": "Wraps mit Zucchini, Hüttenkäse und Makrele",
+  "category": "Wraps & Sandwiches",
+  "timeMinutes": 15,
+  "basePortions": 6,
+  "tags": [
+    "Fisch",
+    "Mealprep-geeignet",
+    "Abendgericht",
+    "Mittagsgericht",
+    "Frühling",
+    "Sommer"
+  ],
+  "ingredients": [
+    {
+      "name": "Zucchini",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Zwiebeln, weiß",
+      "amount": 230,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Zitrone (Saft)",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 6
+    },
+    {
+      "name": "Dill",
+      "amount": 10,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Hüttenkäse",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Makrelenfilets (aus der Dose, Abtropfgewicht)",
+      "amount": 170,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Wraps (Tortillas)",
+      "amount": 6,
+      "unit": "Stk",
+      "perPortions": 6
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 6
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 6
+    },
+    {
+      "name": "Chiliflocken",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 6
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Schnelle und gesunde Wraps mit einer erfrischenden Füllung aus geraspelter Zucchini, cremigem Hüttenkäse und würziger Makrele, abgerundet mit Dill, Zitrone und Chiliflocken. Perfekt für unterwegs oder als schnelles Abendessen.",
+  "steps": [
+    "Die Zucchini waschen, trocken tupfen und mit einer Reibe grob raspeln. Die Raspel in eine Schüssel geben, salzen und etwa 10 Minuten ziehen lassen.",
+    "Währenddessen die Zwiebeln schälen und in feine Würfel schneiden. Den Dill fein hacken.",
+    "Die Makrelenfilets aus den Dosen abtropfen lassen, mit den Händen in kleine Stücke zerkleinern und beiseitestellen.",
+    "Die Zucchini-Raspel haben nun reichlich Flüssigkeit abgegeben. Diese mit den Händen kräftig ausdrücken und die ausgedrückte Zucchini in eine neue Schüssel umfüllen.",
+    "Zwiebelwürfel, Hüttenkäse, gehackten Dill, Zitronensaft sowie etwas Salz und Pfeffer zu den Zucchini-Raspeln geben und alles gut miteinander vermengen.",
+    "Nun die Wraps füllen: Etwas Zucchini-Mischung in die Mitte eines Wraps geben und zu einem Rechteck formen, dabei oben und unten Platz lassen. Etwas Makrele darauf verteilen und mit Chiliflocken bestreuen.",
+    "Die rechte und linke Seite des Wraps zur Mitte hin einschlagen. Dann die untere Seite nach oben klappen und den Wrap fest von unten nach oben einrollen, dabei alles gut zusammendrücken.",
+    "Den fertigen Wrap in der Mitte durchschneiden und sofort servieren oder ungeschnitten für später aufbewahren."
+  ],
+  "dietCategory": "fish",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/02/wraps_mit_zucchini_huettenkaese_und_makrele01.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "fisch",
+    "milch"
+  ]
+}

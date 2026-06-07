@@ -1,0 +1,120 @@
+{
+  "id": "sup-58",
+  "name": "Mango-Spinat-Kichererbsen Curry mit Reis",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 30,
+  "basePortions": 4,
+  "tags": [
+    "Vegan",
+    "Vegetarisch",
+    "Schnell und einfach",
+    "Asiatisch",
+    "Mealprep-geeignet",
+    "Abendgericht"
+  ],
+  "ingredients": [
+    {
+      "name": "Basmatireis",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Mango",
+      "amount": 650,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Ingwer",
+      "amount": 18,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel, weiß",
+      "amount": 65,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Chili",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "frischer Spinat",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Limette (Saft)",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "frische Korianderblätter",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Kichererbsen (Dose)",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "rote Currypaste",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kokosmilch",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Kokosöl",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "weatherType": "kalt",
+  "source": "herrbuettner.de",
+  "description": "Ein cremiges, würziges Curry mit süßer Mango, frischem Spinat und Kichererbsen in Kokosmilch. Schnell zubereitet und unglaublich aromatisch – ein veganer Genuss, der auf Basmatireis serviert wird.",
+  "steps": [
+    "Zwiebel, Knoblauch und Ingwer schälen und in feine Würfel schneiden. Die Chili längs halbieren und in dünne Streifen schneiden. Den Spinat bei Bedarf waschen und grob trocken tupfen. Die Mango schälen und in etwa 1,5 cm große Würfel schneiden.",
+    "Eine Pfanne bei mittlerer Hitze erhitzen und das Kokosöl hineingeben. Ingwer, Zwiebel, Chili und Knoblauch dazugeben, vermischen und mit einer Prise Salz würzen. Alles unter gelegentlichem Rühren etwa 2 Minuten anschwitzen.",
+    "Die Kichererbsen durch ein Sieb abtropfen lassen und in die Pfanne geben. Einmal durchrühren und mit Salz würzen. Die Currypaste hinzufügen, alles gut vermischen und etwa 1 Minute anbraten.",
+    "Mit dem Saft einer halben Limette ablöschen. Den Spinat hinzugeben und die Pfanne mit einem Deckel verschließen. Nach wenigen Sekunden, wenn der Spinat zusammengefallen ist, den Deckel abnehmen und alles gut durchrühren.",
+    "Die Kokosmilch angießen und die Mango-Würfel unterrühren. Die Hitze etwas reduzieren, den Deckel auflegen und das Curry köcheln lassen.",
+    "In der Zwischenzeit den Reis in einen Topf geben und mit 400 ml kochendem Wasser übergießen. Mit einer Prise Salz würzen, Deckel auflegen und bei kleiner Hitze etwa 10-15 Minuten garen lassen, bis der Reis das Wasser aufgenommen hat.",
+    "Reis und Curry auf Tellern anrichten und mit frischen Korianderblättern garnieren."
+  ],
+  "dietCategory": "vegan",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/02/mango-spinat-kichererbsen-curry-mit-reis01.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch"
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "pas-71",
+  "name": "Vegetarische Carbonara mit Champignons und Schnittlauch",
+  "category": "Pasta",
+  "timeMinutes": 20,
+  "basePortions": 2,
+  "tags": [
+    "Vegetarisch",
+    "Schnell und einfach",
+    "Mittagsgericht",
+    "Abendgericht",
+    "Italienisch"
+  ],
+  "ingredients": [
+    {
+      "name": "Spaghetti",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Braune Champignons",
+      "amount": 225,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Schnittlauch",
+      "amount": 20,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Parmesan",
+      "amount": 25,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Eigelb",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 2
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Eine leichte und cremige Carbonara-Variante ohne Fleisch. Die Champignons und der Schnittlauch sorgen für Geschmack, während Eigelb, Parmesan und Nudelwasser die typisch cremige Soße ergeben.",
+  "steps": [
+    "Einen grossen Topf mit reichlich Wasser aufsetzen und zum Kochen bringen. Das Wasser gut salzen und die Spaghetti hineingeben. Während des Garens gelegentlich umrühren.",
+    "Die Champignons bei Bedarf grob säubern, den Stiel abschneiden und in Scheiben schneiden. Den Schnittlauch fein hacken.",
+    "Die Eigelbe in eine grosse Schüssel geben. Den Parmesan reiben und zu den Eigelben geben (etwas Parmesan zum Garnieren zurückbehalten). Die Mischung mit Salz und Pfeffer würzen und mit einer Gabel gut verquirlen. Beiseite stellen.",
+    "Eine Pfanne bei hoher Hitze erhitzen und das Olivenöl hineingeben. Die Champignonscheiben in die heisse Pfanne geben und scharf anbraten, dabei darauf achten, dass sie nicht übereinander liegen. Mit Pfeffer würzen und von beiden Seiten je 2 Minuten braten, bis sie schön gebräunt sind.",
+    "Die Pfanne vom Herd nehmen, den gehackten Schnittlauch hinzufügen, durchschwenken und beiseite stellen.",
+    "Sobald die Nudeln gar sind, direkt aus dem kochenden Wasser zur Ei-Parmesan-Mischung geben. 2-3 Suppenkellen Nudelwasser dazugiessen und eine gute Portion Pfeffer hinzufügen.",
+    "Die Nudeln gründlich mit der Ei-Parmesan-Mischung vermengen (am besten mit einer Küchenzange). Die Champignons mit dem Schnittlauch dazugeben und alles gut durchmischen. Nach und nach entsteht eine cremige Sosse.",
+    "Sofort servieren, mit dem restlichen Parmesan garnieren und geniessen."
+  ],
+  "dietCategory": "vegetarian",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/05/champignon_carbonara.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "ei",
+    "gluten",
+    "milch"
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "id": "fle-67",
+  "name": "Hähnchenbrustfilet mit Petersilienkartoffeln und Tomaten-Basilikum-Gemüse",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 40,
+  "basePortions": 2,
+  "tags": [
+    "Abendgericht",
+    "Mittagsgericht",
+    "Herbst",
+    "Sommer"
+  ],
+  "ingredients": [
+    {
+      "name": "Hähnchenbrustfilets",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Kartoffeln (festkochend, klein)",
+      "amount": 360,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 2
+    },
+    {
+      "name": "Zwiebel (weiß)",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Tomaten",
+      "amount": 630,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Basilikum",
+      "amount": 10,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Petersilie",
+      "amount": 5,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Parmesan",
+      "amount": 10,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Balsamico Essig",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Paprikagewürz",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 2
+    },
+    {
+      "name": "Zucker",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Saftige Hähnchenbrustfilets mit Parmesankruste, begleitet von frischen Petersilienkartoffeln und aromatischem Tomaten-Basilikum-Gemüse – ein harmonisches Gericht, das ohne separate Sauce auskommt und perfekt für einen genussvollen Abend zu zweit ist.",
+  "steps": [
+    "Einen grossen Topf mit Wasser aufsetzen und zum Kochen bringen. Die Kartoffeln schälen, das Wasser salzen und die Kartoffeln hineingeben. Etwa 20-25 Minuten kochen lassen.",
+    "Die Tomaten kreuzförmig einritzen und mit kochendem Wasser übergiessen. 2 Minuten ziehen lassen, dann abschrecken und die Haut abziehen. Die Tomaten vierteln, entkernen und in grobe Würfel schneiden.",
+    "Knoblauch und Zwiebel schälen und fein schneiden. Petersilie und Basilikum fein hacken. Den Parmesan fein reiben.",
+    "Die Hähnchenbrustfilets auf Backpapier legen und mit Salz, Pfeffer und Paprikagewürz würzen. Die Gewürze gut einreiben. Die Filets mit einem zweiten Backpapier bedecken und mit einem Nudelholz flach klopfen, bis sie gleichmässig dick sind.",
+    "Das Backpapier entfernen und die Hähnchenbrustfilets von beiden Seiten mit geriebenem Parmesan bestreuen und andrücken.",
+    "Eine Pfanne stark erhitzen, 1 EL Olivenöl hineingeben und die Hähnchenbrustfilets von jeder Seite 3 Minuten scharf anbraten. Danach die Hitze auf mittlere Stufe reduzieren und weitere 3 Minuten braten.",
+    "Parallel die gekochten Kartoffeln abgiessen. Eine weitere Pfanne stark erhitzen, 2 EL Olivenöl und die Kartoffeln hineingeben. 2 Minuten unter gelegentlichem Schwenken braten. Den Herd ausschalten, die gehackte Petersilie darüber streuen und durchschwenken.",
+    "Gleichzeitig für das Tomatengemüse einen Topf bei mittlerer Hitze erhitzen. 1 EL Olivenöl und die Zwiebeln hineingeben und glasig dünsten. Den Knoblauch hinzufügen und kurz mitbraten.",
+    "Die Tomatenwürfel dazugeben, mit Salz, Pfeffer und einer Prise Zucker würzen. 1 EL Balsamico Essig einrühren, aufkochen lassen, dann vom Herd nehmen und das gehackte Basilikum unterrühren.",
+    "Alle Komponenten auf Tellern anrichten. Nach Belieben mit Basilikum und geriebenem Parmesan garnieren."
+  ],
+  "dietCategory": "meat",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/08/parmesan-haehnchen-mit-petersilienkartoffeln-und-tomaten-basilikum-gemuese02.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch"
+  ]
+}

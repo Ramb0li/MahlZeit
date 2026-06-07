@@ -1,0 +1,103 @@
+{
+  "id": "kar-60",
+  "name": "Kartoffel-Möhren-Stampf (Möhren untereinander)",
+  "category": "Kartoffelgerichte",
+  "timeMinutes": 35,
+  "basePortions": 4,
+  "tags": [
+    "Vegetarisch",
+    "Kinderfreundlich",
+    "Herbst",
+    "Winter",
+    "Ofengericht",
+    "Schweizer"
+  ],
+  "ingredients": [
+    {
+      "name": "Möhren",
+      "amount": 1,
+      "unit": "kg",
+      "perPortions": 4
+    },
+    {
+      "name": "mittelgroße Kartoffeln",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "glatte Petersilie",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsefond",
+      "amount": 200,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "getrockneter Majoran",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Zucker",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "weatherType": "kalt",
+  "source": "herrbuettner.de",
+  "description": "Ein klassischer Kartoffel-Möhren-Stampf wie von Oma – eine köstliche Gemüsebeilage, die perfekt zu Frikadellen, Bratwurst oder Fischstäbchen passt.",
+  "steps": [
+    "Möhren, Kartoffeln und Zwiebel schälen und in Würfel schneiden.",
+    "Die Petersilie waschen und zerkleinern – die Blätter fein hacken, die Stiele sehr fein schneiden.",
+    "In einem großen Topf die Butter bei mittlerer Hitze erhitzen und die Zwiebelwürfel darin glasig andünsten. Die fein geschnittenen Petersilienstiele dazugeben.",
+    "Möhren- und Kartoffelwürfel sowie das Olivenöl in den Topf geben. Mit Salz, Pfeffer, Zucker und getrocknetem Majoran würzen.",
+    "Den Gemüsefond hinzufügen, einmal gut durchrühren und alles aufkochen lassen.",
+    "Den Deckel aufsetzen und das Gemüse 25 Minuten bei niedriger Hitze köcheln lassen.",
+    "Das weichgekochte Gemüse mit einem Stampfer grob zerdrücken, die gehackten Petersilienblätter unterrühren und mit Salz und Pfeffer abschmecken.",
+    "Den Kartoffel-Möhren-Stampf servieren."
+  ],
+  "dietCategory": "vegetarian",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2024/03/karotten-kartoffel-stampf.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch"
+  ]
+}

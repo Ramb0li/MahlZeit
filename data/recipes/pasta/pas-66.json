@@ -1,0 +1,110 @@
+{
+  "id": "pas-66",
+  "name": "Spaghetti mit Ofen-Tomatensoße, Thymian und Parmesan",
+  "category": "Pasta",
+  "timeMinutes": 35,
+  "basePortions": 4,
+  "tags": [
+    "Vegetarisch",
+    "Ofengericht",
+    "Sommer",
+    "Italienisch",
+    "Abendgericht",
+    "Mittagsgericht"
+  ],
+  "ingredients": [
+    {
+      "name": "Spaghetti",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Cherry Rispentomaten",
+      "amount": 700,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel, weiß",
+      "amount": 120,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 2,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Thymianzweige",
+      "amount": 4,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Parmesan",
+      "amount": 25,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 20,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Balsamico Essig",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Eine besondere Tomatensoße mit im Ofen gegarten Tomaten, die das Aroma intensiviert. Zusammen mit frischem Thymian und Parmesan ein köstliches Pastagericht mit außergewöhnlichem Geschmack.",
+  "steps": [
+    "Den Backofen auf 190 Grad Ober-/Unterhitze vorheizen und ein Rost in die mittlere Schiene schieben.",
+    "Die Tomaten waschen, trockentupfen und halbieren. In eine Auflaufform geben.",
+    "Die Thymianblättchen von den Zweigen zupfen und zu den Tomaten geben.",
+    "Die Knoblauchzehen ungeschält leicht andrücken und ebenfalls in die Form geben.",
+    "Die Zwiebel schälen, halbieren, in Scheiben schneiden und zu den Tomaten geben.",
+    "Alles mit Olivenöl beträufeln, mit Salz und Pfeffer würzen und mit den Händen gut vermischen.",
+    "Die Auflaufform für 20 Minuten in den Ofen geben und nach 10 Minuten einmal durchrühren.",
+    "Währenddessen den Parmesan reiben und einen Topf mit reichlich Wasser für die Pasta aufsetzen und zum Kochen bringen. Das kochende Wasser gut salzen.",
+    "5 Minuten bevor die Tomaten fertig sind, die Spaghetti ins kochende Wasser geben.",
+    "Nach 20 Minuten die Auflaufform aus dem Ofen nehmen und den Balsamico Essig einrühren.",
+    "Die Knoblauchzehen herausnehmen, schälen und alles in einer Küchenmaschine mit Schneidemesser zerkleinern.",
+    "Die fertig gekochten Spaghetti abgießen, dabei etwas Nudelwasser auffangen, und sofort zurück in den Topf geben.",
+    "Die Tomatensoße, zwei Drittel des Parmesans und die Butter zu den Spaghetti geben und gut vermischen, bis die Butter geschmolzen ist.",
+    "Auf Tellern anrichten und mit dem restlichen Parmesan und einer Prise Pfeffer garnieren."
+  ],
+  "dietCategory": "vegetarian",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/10/Spaghetti_mit_Ofen_Tomaten_Sauce_und_Parmesan_big.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch"
+  ]
+}

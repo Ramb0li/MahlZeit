@@ -1,0 +1,106 @@
+{
+  "id": "sal-59",
+  "name": "Zucchinisalat mit Makrele, Ei & Chili an Joghurt-Zitronen-Dressing",
+  "category": "Salate & Bowls",
+  "timeMinutes": 15,
+  "basePortions": 2,
+  "tags": [
+    "Sommer",
+    "Frühling",
+    "Mittagsgericht",
+    "Abendgericht"
+  ],
+  "ingredients": [
+    {
+      "name": "Zucchini",
+      "amount": 310,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 2
+    },
+    {
+      "name": "Chili",
+      "amount": 10,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Zitrone (Saft)",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Petersilie",
+      "amount": 10,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Eier (Größe M)",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Joghurt",
+      "amount": 70,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Makrelen aus der Dose",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Vollkornbrot",
+      "amount": 80,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    }
+  ],
+  "weatherType": "warm",
+  "source": "herrbuettner.de",
+  "description": "Ein leichter, sommerlicher Salat mit hauchdünnen Zucchinistreifen, herzhafter Makrele und gekochten Eiern in einem frischen Joghurt-Zitronen-Dressing. Schnell zubereitet und geschmacklich top!",
+  "steps": [
+    "Einen großen Topf mit Wasser füllen und zum Kochen bringen. Die Eier hineingeben und 7 Minuten lang kochen. Anschließend unter kaltem Wasser abschrecken und beiseitelegen.",
+    "Die Makrelen aus der Dose nehmen und durch ein Sieb abtropfen lassen. Dabei etwa 1 EL vom Öl auffangen und aufbewahren.",
+    "Die Chili halbieren, entkernen und in feine Streifen schneiden. Petersilie fein hacken. Knoblauch schälen und halbieren.",
+    "Die Zucchini waschen, trocknen und die Enden abschneiden. Mit einem Sparschäler der Länge nach dünne Streifen abziehen.",
+    "In einer großen Schüssel den Zitronensaft, Joghurt, 1 EL Makrelenöl, Salz und Pfeffer mit einem Schneebesen gut verrühren.",
+    "Die Zucchinistreifen zum Dressing geben und gründlich vermischen. Beiseite stellen.",
+    "Die Vollkornbrotscheiben toasten und mit der Schnittfläche der halbierten Knoblauchzehe einreiben.",
+    "Die Eier schälen und vierteln.",
+    "Zum Anrichten die Zucchinistreifen mit Dressing auf Tellern verteilen. Die Makrelen grob zerkleinern und darüber geben. Die Eierviertel dazulegen.",
+    "Mit Chili, Petersilie und etwas Pfeffer garnieren. Die Brotscheiben halbieren und am Tellerrand platzieren."
+  ],
+  "dietCategory": "fish",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/04/zucchini-salat-mit-makrele-ei-und-chili.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "ei",
+    "fisch",
+    "gluten",
+    "milch"
+  ]
+}

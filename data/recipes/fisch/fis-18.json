@@ -1,0 +1,128 @@
+{
+  "id": "fis-18",
+  "name": "Reibekuchen mit Apfel-Karotten-Creme und Räucherlachs",
+  "category": "Fisch & Meeresfrüchte",
+  "timeMinutes": 30,
+  "basePortions": 2,
+  "tags": [
+    "Schnell und einfach",
+    "Abendgericht",
+    "Mittagsgericht"
+  ],
+  "ingredients": [
+    {
+      "name": "Kartoffeln, festkochend",
+      "amount": 770,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Möhre",
+      "amount": 70,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Apfel",
+      "amount": 160,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Zwiebeln",
+      "amount": 120,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Räucherlachs in Scheiben",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Eier (Größe M)",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Mehl",
+      "amount": 40,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Petersilie",
+      "amount": 5,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Dill",
+      "amount": 2,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Speisequark",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Frischkäse",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Muskatnuss, frisch gerieben",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Pflanzenfett oder Öl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 2
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Knusprige Reibekuchen aus geriebenen Kartoffeln, belegt mit einer frischen Apfel-Karotten-Creme aus Quark und Frischkäse und gekrönt mit zartem Räucherlachs. Eine kreative Kombination, die durch Dill und die Harmonie von Apfel und Möhre besonders raffiniert schmeckt.",
+  "steps": [
+    "Die Kartoffeln schälen und mit einer groben Reibe zu Raspeln reiben. In eine Schüssel geben, eine gute Portion Salz hinzufügen und 10 Minuten ziehen lassen, damit die Flüssigkeit austritt.",
+    "Währenddessen die Zwiebeln schälen und fein würfeln. Möhre und Apfel schälen und in etwa 0,5 cm kleine Würfel schneiden. Die Petersilie fein hacken.",
+    "In einer Schüssel Speisequark und Frischkäse verrühren. Eine gute Prise Pfeffer, etwas Salz, die gehackte Petersilie sowie die gewürfelten Möhren und Äpfel hinzugeben. Alles gut vermischen und beiseitestellen.",
+    "Die überschüssige Flüssigkeit aus den Kartoffelraspeln ausdrücken: Die Raspeln in die Mitte eines Geschirrtuchs geben, die Ecken hochziehen und zusammenwickeln, um die Flüssigkeit herauszupressen.",
+    "Die ausgedrückten Kartoffelraspeln in eine saubere Schüssel geben. Zwiebeln, 2 Eier, Salz, Pfeffer, frisch geriebene Muskatnuss und Mehl hinzufügen. Mit den Händen alles gut miteinander vermischen.",
+    "Eine Pfanne bei mittlerer Hitze erhitzen und Pflanzenfett oder Öl hineingeben. Mit einem Esslöffel Portionen vom Reibekuchenteig in die Pfanne geben, sofort flach drücken und zu Reibekuchen formen.",
+    "Die Reibekuchen braten, bis sie an den Seiten schön braun und knusprig sind, dann wenden und fertig braten. Vorgang wiederholen, bis der gesamte Teig verbraucht ist. Fertige Reibekuchen auf Küchenpapier legen, um überschüssiges Fett aufzusaugen.",
+    "Während die Reibekuchen braten, die Räucherlachs-Scheiben in grobe Stücke schneiden und den Dill fein hacken.",
+    "Zum Servieren je 3 Reibekuchen auf 2 Teller verteilen, mit der Apfel-Karotten-Creme bestreichen, mit Räucherlachs belegen und mit Dill garnieren."
+  ],
+  "dietCategory": "fish",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/08/reibekuchen_mit_apfel_karotten_creme_und_raeucherlachs01.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "ei",
+    "fisch",
+    "gluten",
+    "milch"
+  ]
+}

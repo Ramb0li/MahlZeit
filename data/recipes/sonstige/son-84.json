@@ -1,0 +1,114 @@
+{
+  "id": "son-84",
+  "name": "Gefüllte Tomaten mit Ricottacreme auf Rucola",
+  "category": "Vegetarische Hauptgerichte",
+  "timeMinutes": 40,
+  "basePortions": 4,
+  "tags": [
+    "Vegetarisch",
+    "Ofengericht",
+    "Sommer",
+    "Italienisch",
+    "Abendgericht"
+  ],
+  "ingredients": [
+    {
+      "name": "Fleischtomaten (große)",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Rucola",
+      "amount": 125,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Bio Zitrone",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Basilikum",
+      "amount": 10,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Parmesan",
+      "amount": 10,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Ricotta",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Mozzarella",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Baguette",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 4
+    }
+  ],
+  "weatherType": "warm",
+  "source": "herrbuettner.de",
+  "description": "Saftige Fleischtomaten werden mit einer würzigen Ricotta-Parmesan-Creme gefüllt, mit Mozzarella überbacken und auf einem frischen Rucolasalat mit knusprigen Baguettescheiben serviert. Ein leichtes mediterranes Gericht, das nicht nur toll aussieht, sondern auch herrlich schmeckt.",
+  "steps": [
+    "Den Backofen auf 200 Grad Ober-/Unterhitze vorheizen und ein Backblech auf der mittleren Schiene positionieren.",
+    "Die Tomaten waschen und gut abtrocknen. Das Basilikum von den Stielen zupfen und fein hacken. Den Parmesan reiben. Den Mozzarella in Scheiben schneiden.",
+    "Mit einem Zestenreißer die Schale von der halben Zitrone abreiben.",
+    "In einer Schüssel den Ricotta mit dem geriebenen Parmesan, dem gehackten Basilikum, 1 EL Olivenöl, dem Saft einer halben Zitrone, den Zitronenzesten, Salz und Pfeffer gründlich vermischen.",
+    "Bei jeder Tomate knapp unterhalb des Stiels einen Deckel abschneiden. Mit einem Löffel vorsichtig das Innere der Tomaten aushöhlen.",
+    "Die ausgehöhlten Tomaten mit der Ricottacreme befüllen und mit den Mozzarellascheiben belegen.",
+    "Die gefüllten Tomaten in eine Auflaufform setzen, mit den Deckeln verschließen und etwas Olivenöl darüber träufeln. Für 25 Minuten im Ofen backen.",
+    "In der Zwischenzeit den Rucola waschen, gut trocknen (am besten mit einer Salatschleuder) und in eine Schüssel geben.",
+    "Für das Dressing in einem verschließbaren Glas den Saft der restlichen Zitronenhälfte, 3 EL Olivenöl, Pfeffer und eine Prise Salz geben, verschließen und kräftig schütteln. Beiseite stellen.",
+    "Eine Pfanne bei mittlerer Hitze erwärmen. Das Baguette in Scheiben schneiden und diese mit Olivenöl einreiben.",
+    "Die Baguettescheiben in der Pfanne von beiden Seiten goldbraun rösten. Anschließend mit der geschälten Knoblauchzehe einreiben.",
+    "Das Dressing über den Rucola geben und gut durchmischen.",
+    "Die gebackenen Tomaten aus dem Ofen nehmen und kurz abkühlen lassen.",
+    "Den Rucola auf Teller verteilen, jeweils eine gefüllte Tomate darauf setzen und mit den Baguettescheiben servieren."
+  ],
+  "dietCategory": "vegetarian",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/08/Gefuellte_Tomaten_mit_Riccota.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch"
+  ]
+}

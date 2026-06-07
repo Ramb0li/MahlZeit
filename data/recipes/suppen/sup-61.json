@@ -1,0 +1,167 @@
+{
+  "id": "sup-61",
+  "name": "Gelbe Kokossuppe mit Reisnudeln, Chili und Koriander",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 30,
+  "basePortions": 2,
+  "tags": [
+    "Vegan",
+    "Vegetarisch",
+    "Asiatisch",
+    "Schnell und einfach",
+    "Abendgericht"
+  ],
+  "ingredients": [
+    {
+      "name": "Reisnudeln",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Wasser",
+      "amount": 300,
+      "unit": "ml",
+      "perPortions": 2
+    },
+    {
+      "name": "Kokosmilch",
+      "amount": 200,
+      "unit": "ml",
+      "perPortions": 2
+    },
+    {
+      "name": "Ingwer",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Chili",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Zitronengras",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Frühlingszwiebeln",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "frischer Koriander",
+      "amount": 10,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Limette",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Kardamomkapseln",
+      "amount": 2,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Senfkörner",
+      "amount": 4,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Koriandersamen",
+      "amount": 3,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "getrocknete Curryblätter",
+      "amount": 2,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Paprikapulver",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 2
+    },
+    {
+      "name": "Kurkuma",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 2
+    },
+    {
+      "name": "Cayennepfeffer",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Kokosöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 2
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Eine aromatische asiatische Kokossuppe mit würziger Gewürzbrühe, Reisnudeln und frischen Kräutern. Die Kombination aus Zitronengras, Ingwer und Koriander macht diese Suppe zu einem echten Geschmackserlebnis.",
+  "steps": [
+    "Zwiebel und Knoblauch schälen. Die Zwiebel würfeln und den Knoblauch in Scheiben schneiden.",
+    "Zitronengras vierteln und mit einem schweren Gegenstand aufbrechen, damit die Aromen freigesetzt werden.",
+    "Ingwer grob schälen und in Scheiben oder Würfel schneiden. Die Schale aufbewahren.",
+    "Frühlingszwiebeln in feine Scheiben schneiden und etwas für die Garnitur beiseitelegen.",
+    "Chili längs aufschneiden, Kerne entfernen und in feine Streifen schneiden.",
+    "Kardamomkapseln öffnen, indem man eine breite Messerklinge darauf legt und mit dem Handballen leicht darauf drückt. Die Samen herausnehmen.",
+    "Etwas frischen Koriander für die Garnitur beiseitelegen.",
+    "Einen großen Topf bei mittlerer Hitze erhitzen und Kokosöl hineingeben.",
+    "Kardamomsamen, Senfkörner, Koriandersamen, Paprikapulver, Kurkuma und Cayennepfeffer hinzufügen und gut durchmischen.",
+    "Zwiebeln, Frühlingszwiebeln, Knoblauch, Ingwer (samt Schale) und Zitronengras dazugeben. Eine gute Portion Salz hinzufügen und alles etwa 5 Minuten anbraten, bis sich am Topfboden ein leichter Ansatz bildet.",
+    "Mit Wasser ablöschen. Frischen Koriander und getrocknete Curryblätter hinzufügen. Die Hitze reduzieren, Deckel auflegen und alles 20 Minuten leicht köcheln lassen.",
+    "Nach 10 Minuten Kochzeit die Reisnudeln in eine Schüssel geben und mit kochendem Wasser übergießen. 10 Minuten ziehen lassen.",
+    "Nach 20 Minuten die Brühe durch ein feines Sieb in einen zweiten Topf gießen. Die Zutaten dabei gut ausdrücken.",
+    "Die aufgefangene Brühe auf den Herd stellen, Kokosmilch hinzufügen und mit Salz abschmecken. Kurz aufkochen lassen.",
+    "Die Nudeln abgießen und bei Bedarf mit Messer oder Schere halbieren.",
+    "Reisnudeln auf Suppenschüsseln verteilen und die Suppe darüber gießen.",
+    "Mit Chili, Frühlingszwiebeln und frischem Koriander garnieren. Zum Schluss frisch gepressten Limettensaft darüber träufeln."
+  ],
+  "dietCategory": "vegan",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/08/gelbe_kokossuppe_mit_reisnudeln_und_chili01.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch",
+    "senf"
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "id": "fle-69",
+  "name": "Dreierlei Gemüse mit Hähnchenbrust",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 30,
+  "basePortions": 2,
+  "tags": [
+    "Mittagsgericht",
+    "Abendgericht",
+    "Mealprep-geeignet"
+  ],
+  "ingredients": [
+    {
+      "name": "Kohlrabi",
+      "amount": 330,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Möhre",
+      "amount": 225,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Kartoffeln, festkochend",
+      "amount": 315,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Zwiebel, weiß",
+      "amount": 70,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 2,
+      "unit": "Zehe",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Paprika-Gewürz",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 2
+    },
+    {
+      "name": "Muskatnuss, frisch gerieben",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Wasser",
+      "amount": 500,
+      "unit": "ml",
+      "perPortions": 2
+    },
+    {
+      "name": "Butter",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Petersilie",
+      "amount": 10,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Hähnchenbrüste",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 2
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Eine köstliche Kombination aus Kohlrabi, Möhren und Kartoffeln in Buttersoße, serviert mit saftig gebratener Hähnchenbrust. Ein ausgewogenes Gericht, das durch die Harmonie von zartem Gemüse und würzigem Fleisch überzeugt.",
+  "steps": [
+    "Das gesamte Gemüse (Kohlrabi, Möhren und Kartoffeln) schälen und in gleich große Würfel schneiden.",
+    "Zwiebel und Knoblauch schälen und fein würfeln. Den Knoblauch idealerweise durch eine Knoblauchpresse drücken.",
+    "Einen großen Topf bei hoher Hitze erhitzen. 2 EL Olivenöl hineingeben und die Zwiebeln darin glasig dünsten. Den Knoblauch kurz mitdünsten.",
+    "Möhren, Kartoffeln und Kohlrabi hinzufügen, gut umrühren und großzügig mit Salz und Pfeffer würzen.",
+    "Mit 500 ml Wasser ablöschen, umrühren, Deckel auflegen und etwa 20 Minuten köcheln lassen.",
+    "Währenddessen die Hähnchenbrüste zwischen zwei Blätter Backpapier legen und mit einem Nudelholz leicht flach klopfen (nicht zu dünn!).",
+    "Beide Seiten der Hähnchenbrüste mit Salz, Pfeffer und Paprika-Gewürz würzen und kurz ziehen lassen.",
+    "Etwa 10 Minuten bevor das Gemüse fertig ist, eine Pfanne bei hoher Hitze erhitzen. 1 EL Olivenöl hineingeben und die Hähnchenbrüste von jeder Seite circa 4 Minuten scharf anbraten.",
+    "Die Hitze auf mittlere Stufe reduzieren und die Hähnchenbrüste gelegentlich wenden, bis sie durchgegart sind.",
+    "Das Gemüse abgießen, dabei 150 ml der Garflüssigkeit auffangen und aufbewahren.",
+    "Das Gemüse zurück in den Topf geben. 150 ml der aufgefangenen Brühe und die Butter hinzufügen und bei niedriger Hitze vorsichtig verrühren, bis eine sämige Soße entsteht.",
+    "Frisch geriebene Muskatnuss hinzufügen und abschmecken.",
+    "Die Petersilie fein hacken. Den größten Teil unter das Gemüse rühren, einen kleinen Teil zum Garnieren beiseitelegen.",
+    "Das Gemüse auf Tellern verteilen, die Hähnchenbrüste in etwa 2 cm breite Streifen schneiden und auf dem Gemüse anrichten.",
+    "Mit der restlichen Petersilie garnieren und sofort servieren."
+  ],
+  "dietCategory": "meat",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/04/kartoffel-karotten-kohlrabi-gemuese-mit-gebratener-haehnchenbrust01.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "ei",
+    "milch"
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "id": "sup-60",
+  "name": "Blumenkohlsuppe mit Mandelmilch und gerösteten Kichererbsen",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 45,
+  "basePortions": 6,
+  "tags": [
+    "Vegan",
+    "Winterzeit",
+    "Herbst",
+    "Winter",
+    "Ofengericht"
+  ],
+  "ingredients": [
+    {
+      "name": "Blumenkohl",
+      "amount": 970,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Zwiebeln, weiß",
+      "amount": 110,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 2,
+      "unit": "Zehe",
+      "perPortions": 6
+    },
+    {
+      "name": "Kichererbsen (Dose)",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Mandeln, gehobelt",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Thymianzweige",
+      "amount": 8,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 6
+    },
+    {
+      "name": "Butter",
+      "amount": 25,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Mandelmilch",
+      "amount": 800,
+      "unit": "ml",
+      "perPortions": 6
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 6
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 6
+    },
+    {
+      "name": "Kurkuma",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 6
+    },
+    {
+      "name": "Muskatnuss, frisch gerieben",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 6
+    }
+  ],
+  "weatherType": "kalt",
+  "source": "herrbuettner.de",
+  "description": "Eine cremige, grüne Blumenkohlsuppe mit Thymian und Mandelmilch, getoppt mit knusprigen Kichererbsen und gerösteten Mandeln. Wärmend, wohltuend und unglaublich lecker!",
+  "steps": [
+    "Den Backofen auf 200 Grad Ober-/Unterhitze vorheizen und ein Backblech auf die mittlere Schiene schieben.",
+    "Die äußeren Blätter vom Blumenkohl entfernen, den Blumenkohl auf die Seite legen und den dicken Strunk großzügig abschneiden. In mittelgroße Röschen teilen, gründlich waschen und trocken tupfen.",
+    "Die Blumenkohlröschen in eine Auflaufform geben und mit 1 EL Olivenöl, Kurkuma, frisch geriebener Muskatnuss, Salz und Pfeffer würzen. Die Gewürze gut einmassieren und den Blumenkohl 20-25 Minuten im Ofen backen.",
+    "In der Zwischenzeit eine Pfanne bei mittlerer Hitze erhitzen und die gehobelten Mandeln darin rösten, bis sie leicht braun sind. Aus der Pfanne nehmen und beiseitestellen.",
+    "Die abgetropften Kichererbsen in dieselbe Pfanne geben, 1 EL Olivenöl hinzufügen und mit Salz und Pfeffer würzen. Braten, bis die Kichererbsen eine goldbraune Kruste haben, dann beiseitestellen.",
+    "Zwiebeln und Knoblauch schälen und in grobe Würfel schneiden. Den Thymian von den Zweigen zupfen.",
+    "Einen Topf bei mittlerer Hitze erhitzen, die Butter darin zerlassen und den Thymian 30 Sekunden anschwitzen lassen.",
+    "Die Zwiebeln hinzugeben und anbraten. Wenn sie glasig werden, den Knoblauch dazugeben und etwa eine Minute mitbraten.",
+    "Den Topf mit der Mandelmilch auffüllen. Den gebackenen Blumenkohl aus dem Ofen nehmen und in den Topf geben.",
+    "Die Suppe mit einem Pürierstab nach Geschmack grob, mittel oder fein pürieren. Die Hitze reduzieren und die Suppe 15 Minuten köcheln lassen.",
+    "Mit Salz und Pfeffer abschmecken, auf Teller verteilen und mit den gerösteten Kichererbsen und Mandeln toppen. Mit etwas Olivenöl beträufeln und mit Thymian garnieren."
+  ],
+  "dietCategory": "vegan",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/12/Blumenkohlsuppe_mit_Thymian_und_geroesteten_Kichererbsen01.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch",
+    "schalenfruechte"
+  ]
+}

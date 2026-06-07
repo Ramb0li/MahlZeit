@@ -1,0 +1,124 @@
+{
+  "id": "rei-57",
+  "name": "Knuspriges Hackfleisch auf gebratenem Reis mit Gemüse",
+  "category": "Reis & Getreide",
+  "timeMinutes": 25,
+  "basePortions": 4,
+  "tags": [
+    "Schnell und einfach",
+    "Mittagsgericht",
+    "Abendgericht"
+  ],
+  "ingredients": [
+    {
+      "name": "rote Zwiebel",
+      "amount": 120,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "rote Chili",
+      "amount": 10,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Frühlingszwiebeln",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "glatte Petersilie",
+      "amount": 40,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitrone (Saft)",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Tiefkühlerbsen",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "gegarter Reis",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Rinderhackfleisch",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "geräuchertes Paprikapulver",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Worcestershire Sauce",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "dunkles Sesamöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Ein spannendes Spiel der Aromen: frisch-zitroniger Gemüsereis trifft auf würzig-knuspriges Hackfleisch – ein köstlicher Kontrast, der in nur 25 Minuten auf dem Tisch steht.",
+  "steps": [
+    "Zwiebel und Knoblauch schälen und fein würfeln. Die Chili längs halbieren, entkernen und in feine Streifen schneiden.",
+    "Frühlingszwiebeln in dünne Ringe schneiden. Petersilie fein hacken.",
+    "Zwei Pfannen bei mittlerer Temperatur erhitzen und jeweils einen Esslöffel Olivenöl hineingeben.",
+    "In eine Pfanne den Reis geben und unter gelegentlichem Wenden anbraten. In die andere Pfanne das Hackfleisch geben und zerkleinern.",
+    "Die Hitze für das Hackfleisch erhöhen und kross anbraten. Anschliessend aus der Pfanne nehmen und zur Seite stellen.",
+    "Zwiebel, Knoblauch und Chili in der gleichen Pfanne glasig anschwitzen. Das Hackfleisch wieder zugeben und durchmischen. Mit Salz, Pfeffer und geräuchertem Paprikapulver würzen, dann mit Worcestershire Sauce ablöschen.",
+    "Frühlingszwiebeln, Petersilie und Tiefkühlerbsen zum Reis geben. Gut vermengen und mit Salz, Pfeffer, Zitronensaft und dunklem Sesamöl abschmecken.",
+    "Reis und Hackfleisch auf vier Schüsseln verteilen und servieren."
+  ],
+  "dietCategory": "meat",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2019/11/Reis_mit_Erbsen_Petersilie_und_Fruehlingszwiebeln_mit_knusprigen_Rinder-Hackfleisch.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "sesam"
+  ]
+}

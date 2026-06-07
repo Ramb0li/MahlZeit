@@ -1,0 +1,180 @@
+{
+  "id": "fle-68",
+  "name": "Vollkorn Pizza Tonno",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 210,
+  "basePortions": 6,
+  "tags": [
+    "Ofengericht",
+    "Italienisch",
+    "Abendgericht",
+    "Mittagsgericht"
+  ],
+  "ingredients": [
+    {
+      "name": "Weizenvollkornmehl",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Semola di Grano",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "lauwarmes Wasser",
+      "amount": 200,
+      "unit": "ml",
+      "perPortions": 6
+    },
+    {
+      "name": "Hefe",
+      "amount": 20,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Milch",
+      "amount": 5,
+      "unit": "EL",
+      "perPortions": 6
+    },
+    {
+      "name": "Olivenöl für Teig",
+      "amount": 5,
+      "unit": "EL",
+      "perPortions": 6
+    },
+    {
+      "name": "Salz für Teig",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 6
+    },
+    {
+      "name": "brauner Zucker für Teig",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 6
+    },
+    {
+      "name": "Tomaten",
+      "amount": 275,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "rote Zwiebel",
+      "amount": 95,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 2,
+      "unit": "Zehe",
+      "perPortions": 6
+    },
+    {
+      "name": "Olivenöl für Soße",
+      "amount": 5,
+      "unit": "EL",
+      "perPortions": 6
+    },
+    {
+      "name": "Balsamico Essig",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 6
+    },
+    {
+      "name": "Wasser für Soße",
+      "amount": 100,
+      "unit": "ml",
+      "perPortions": 6
+    },
+    {
+      "name": "Tomatenmark",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 6
+    },
+    {
+      "name": "Salz für Soße",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 6
+    },
+    {
+      "name": "Pfeffer für Soße",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 6
+    },
+    {
+      "name": "brauner Zucker für Soße",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 6
+    },
+    {
+      "name": "Thunfisch in Dosen (Abtropfgewicht)",
+      "amount": 260,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Mozzarella Kugel (Abtropfgewicht)",
+      "amount": 125,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "geriebener Mozzarella",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Basilikum",
+      "amount": 15,
+      "unit": "g",
+      "perPortions": 6
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Eine herzhafte Pizza mit selbstgemachtem Vollkornteig und frischer Tomatensoße, belegt mit Thunfisch und Mozzarella. Durch das Weizenvollkornmehl wird der Teig aromatischer und macht länger satt.",
+  "steps": [
+    "Das Weizenvollkornmehl in eine große Schüssel sieben. Semola di Grano und eine Prise Salz hinzufügen und gut vermischen. In der Mitte eine Mulde formen.",
+    "Die Hefe mit dem Zucker im lauwarmen Wasser auflösen, indem man die Hefe zerbröselt und mit einer Gabel gut durchrührt. Die Mischung 5 Minuten ruhen lassen.",
+    "Die Hälfte des Hefe-Wasser-Gemischs in die Mulde gießen. Mit einer Gabel etwas Mehl vom Rand einarbeiten, bis ein klebriger Teig in der Mulde entsteht.",
+    "Milch, Olivenöl und den Rest des Hefe-Wasser-Gemischs hinzufügen. Mit den Händen das restliche Mehl einarbeiten und alles verkneten.",
+    "Den Teig auf eine bemehlte Arbeitsfläche geben und kräftig durchkneten, bis er glatt und geschmeidig ist. Zurück in die Schüssel geben, mit Frischhaltefolie abdecken und 3 Stunden an einem warmen, dunklen Ort gehen lassen.",
+    "Für die Tomatensoße die Tomaten unten kreuzförmig einritzen, in eine Schüssel geben und mit kochendem Wasser übergießen. 1 Minute ziehen lassen, dann abschrecken und häuten. Tomaten vierteln und entkernen.",
+    "Knoblauch und Zwiebel schälen und würfeln. In einem Topf 5 EL Olivenöl bei mittlerer Hitze erhitzen, Zwiebel- und Knoblauchwürfel kurz anbraten.",
+    "Tomaten und Zucker hinzufügen, mit Salz und Pfeffer würzen, gut durchrühren und 3 Minuten braten lassen.",
+    "Balsamico Essig hinzufügen, Tomatenmark einrühren und mit Wasser ablöschen. 5 Minuten köcheln lassen und dabei gelegentlich umrühren.",
+    "Mit einem Stabmixer alles zu einer glatten Soße pürieren. Hitze reduzieren und die Soße 15-20 Minuten köcheln lassen, dabei zwischendurch umrühren. Vom Herd nehmen und beiseitestellen.",
+    "Den Backofen auf 250 Grad Ober-/Unterhitze vorheizen.",
+    "Den aufgegangenen Hefeteig auf einer bemehlten Arbeitsfläche mit einem Nudelholz auf 0,5-0,8 mm Dicke ausrollen.",
+    "Ein Backblech mit etwas Öl bestreichen und den ausgerollten Teig darauf legen.",
+    "Den Pizzateig mit der Tomatensoße bestreichen, ca. 10 g grob gezupftes Basilikum darüber verteilen und mit der Hälfte des geriebenen Mozzarellas bestreuen.",
+    "Das Blech für ca. 5 Minuten auf die mittlere Schiene des Backofens geben.",
+    "In der Zwischenzeit die Thunfischdosen öffnen, abtropfen lassen und die Mozzarella-Kugel in Scheiben schneiden.",
+    "Nach 5 Minuten das Blech aus dem Ofen holen, den Thunfisch verteilen und mit dem restlichen geriebenen Mozzarella bestreuen. Das Blech für ca. 5 Minuten auf die unterste Ebene bzw. auf den Boden des Ofens geben.",
+    "Das Blech erneut kurz herausnehmen, die Mozzarella-Scheiben verteilen und für weitere 5 Minuten zurück auf die unterste Ebene geben, bis der Käse zerlaufen und der Boden leicht gebräunt ist.",
+    "Die Pizza etwas abkühlen lassen, mit restlichen Basilikumblättern garnieren und in 6 Stücke schneiden."
+  ],
+  "dietCategory": "fish",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/04/rezept_vollkorn_pizza_mit_tomatensosse_thunfisch_und_mozzarella01.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "fisch",
+    "gluten",
+    "milch"
+  ]
+}

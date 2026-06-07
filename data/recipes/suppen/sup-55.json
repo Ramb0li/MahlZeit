@@ -1,0 +1,123 @@
+{
+  "id": "sup-55",
+  "name": "Maissuppe mit Bacon, Frühlingszwiebeln und Cheddar Tortilla-Chips",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 35,
+  "basePortions": 4,
+  "tags": [
+    "Sommer",
+    "Herbst",
+    "Winter",
+    "Mittagsgericht",
+    "Abendgericht"
+  ],
+  "ingredients": [
+    {
+      "name": "Gemüsemais aus dem Glas (Abtropfgewicht)",
+      "amount": 690,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Frühlingszwiebeln",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Thymianzweige",
+      "amount": 8,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Limette (Schale und Saft)",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Bacon",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Geflügelfond",
+      "amount": 500,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Kokosmilch",
+      "amount": 400,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 25,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Cheddar gerieben",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Chiliflocken",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Tortilla-Chips",
+      "amount": 125,
+      "unit": "g",
+      "perPortions": 4
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Eine cremige, frische Maissuppe mit würzigem Bacon, verfeinert mit Kokosmilch und Limette. Serviert mit knusprigen, käseüberbackenen Tortilla-Chips – perfekt für jede Jahreszeit.",
+  "steps": [
+    "Einen großen Topf bei mittlerer Hitze auf den Herd stellen und die Bacon-Scheiben in den kalten Topf legen. Das Fett langsam auslassen und den Bacon zwischendurch wenden. Sobald er braun und knusprig ist, herausnehmen und auf Küchenpapier abtropfen lassen.",
+    "Den Mais aus den Gläsern in ein Sieb geben, unter fließendem Wasser abspülen und gut abtropfen lassen.",
+    "Die Frühlingszwiebeln waschen, grob abtrocknen und in Ringe schneiden. Die Knoblauchzehe schälen und in feine Scheiben schneiden. Den Thymian von den Zweigen zupfen.",
+    "Die Butter im ausgelassenen Bacon-Fett zerlassen. Chiliflocken, Thymian und zwei Drittel der Frühlingszwiebeln hinzugeben, durchrühren und eine Minute anschwitzen. Dann den Knoblauch dazugeben und kurz mitanschwitzen.",
+    "Zwei Drittel des Mais in den Topf geben, umrühren und kurz anschwitzen. Mit Salz und Pfeffer würzen.",
+    "Mit dem Geflügelfond aufgießen und die Suppe 20 Minuten bei niedriger Hitze leicht köcheln lassen.",
+    "In der Zwischenzeit den Backofen auf 190 Grad Ober-/Unterhitze vorheizen. Die Tortilla-Chips auf einem mit Backpapier belegten Blech verteilen und mit geriebenem Cheddar bestreuen.",
+    "Nach 20 Minuten Kochzeit die Hitze reduzieren und die Suppe mit einem Stabmixer pürieren.",
+    "Den restlichen Mais und die Kokosmilch zur Suppe geben. Die Schale einer halben Limette (am besten mit einem Zestenreißer) und den Saft hinzufügen. Die Suppe abschmecken und bei Bedarf mit Salz und Pfeffer nachwürzen.",
+    "Das Blech mit den Tortilla-Chips für etwa 5 Minuten auf der mittleren Schiene im Backofen backen, bis der Käse geschmolzen ist.",
+    "Den Bacon grob zerkleinern. Die Suppe in Schüsseln verteilen und mit Bacon und den restlichen Frühlingszwiebeln garnieren. Die überbackenen Tortilla-Chips separat dazu servieren."
+  ],
+  "dietCategory": "meat",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/08/maissuppe_mit_bacon_und_cheddar_tortilla_chips01.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch"
+  ]
+}

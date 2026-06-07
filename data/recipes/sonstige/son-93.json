@@ -1,0 +1,98 @@
+{
+  "id": "son-93",
+  "name": "Wraps mit Räucherlachs, Babyspinat & Schafskäse",
+  "category": "Wraps & Sandwiches",
+  "timeMinutes": 10,
+  "basePortions": 4,
+  "tags": [
+    "Schnell und einfach",
+    "Mittagsgericht",
+    "Abendgericht",
+    "Mealprep-geeignet"
+  ],
+  "ingredients": [
+    {
+      "name": "Tortilla Wraps",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Räucherlachs in Scheiben",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Babyspinat",
+      "amount": 60,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Schafskäse",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Frischkäse",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitrone (Saft)",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Dill",
+      "amount": 3,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Rote Zwiebel",
+      "amount": 70,
+      "unit": "g",
+      "perPortions": 4
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Schnelle und köstliche Wraps mit mariniertem Räucherlachs, frischem Babyspinat und würzigem Schafskäse – perfekt für alle, die wenig Zeit haben und trotzdem genussvoll essen möchten. Ohne Kochen, voller gesunder Nährstoffe und in nur 10 Minuten fertig!",
+  "steps": [
+    "Die Räucherlachsscheiben aus dem Kühlschrank nehmen und auf einem großen Teller auslegen. Mit Zitronensaft beträufeln und mit einer Prise Salz und Pfeffer würzen. Beiseite stellen, damit die Marinade einziehen kann und der Lachs Zimmertemperatur annimmt.",
+    "Die rote Zwiebel schälen, halbieren und in feine Streifen (Halbkreise) schneiden.",
+    "Die Dillspitzen von den Stielen zupfen.",
+    "Den Babyspinat gründlich waschen und gut trockenschütteln.",
+    "Die 4 Tortilla Wraps gleichmäßig mit Frischkäse bestreichen.",
+    "Etwa die Hälfte jedes Wraps mit den marinierten Lachsscheiben belegen.",
+    "Nacheinander Dillspitzen, Zwiebelstreifen und Babyspinat auf dem Lachs verteilen.",
+    "Den Schafskäse mit den Händen über die Wraps zerbröseln.",
+    "Die Wraps mit etwas Pfeffer würzen.",
+    "Jeden Wrap von der Seite ohne Lachs beginnend mit leichtem Druck vom Handballen straff aufrollen. Servieren."
+  ],
+  "dietCategory": "fish",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/09/wraps_mit_raeucherlachs_frischkaese_dill_roten_zwiebeln_fetakaese_und_spinat01.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "fisch",
+    "milch"
+  ]
+}

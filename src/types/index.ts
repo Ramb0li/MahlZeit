@@ -116,6 +116,7 @@ export interface MealSlot {
   notes?: string;
   sideRecipeId?: string | null;    // Beilage / Dessert / zweites Gericht
   sideIsLeftovers?: boolean;
+  sidePortionOverride?: number;   // Portionen-Override nur für Beilage (z.B. Gäste)
 }
 
 export interface DayPlan {

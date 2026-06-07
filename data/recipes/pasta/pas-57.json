@@ -1,0 +1,95 @@
+{
+  "id": "pas-57",
+  "name": "Pasta mit Chorizo",
+  "category": "Pasta",
+  "timeMinutes": 15,
+  "basePortions": 1,
+  "tags": [
+    "Schnell und einfach",
+    "Abendgericht",
+    "Frühling",
+    "Sommer",
+    "Herbst",
+    "Winter"
+  ],
+  "ingredients": [
+    {
+      "name": "Kurze Bandnudeln",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 1
+    },
+    {
+      "name": "Frische Chorizo Würste (klein)",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 1
+    },
+    {
+      "name": "Rote Paprika",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 1
+    },
+    {
+      "name": "Frühlingszwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 1
+    },
+    {
+      "name": "Glatte Petersilie",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 1
+    },
+    {
+      "name": "Tomatenmark",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 1
+    },
+    {
+      "name": "Crème fraîche",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 1
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 1
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 1
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Ein schnelles und einfaches Pasta-Gericht für den Feierabend. Mit würziger Chorizo, Paprika und Frühlingszwiebeln – perfekt für eine Person zubereitet.",
+  "steps": [
+    "Einen Topf mit Wasser aufsetzen und zum Kochen bringen. Das kochende Wasser gut salzen.",
+    "Die Chorizo-Würste der Länge nach einschneiden, das Brät aus der Pelle lösen und grob zerkleinern.",
+    "Die Paprika mit einem Sparschäler schälen, entkernen und in kleine Würfel schneiden.",
+    "Die Frühlingszwiebel in feine Ringe schneiden. Die Petersilie grob hacken.",
+    "Das Chorizo-Brät ohne Ölzugabe in einer Pfanne bei mittlerer Hitze etwa 5 Minuten braten und dabei gelegentlich umrühren.",
+    "Während die Chorizo brät, die Nudeln in das kochende Salzwasser geben und gemäß Packungsanweisung garen.",
+    "Paprikawürfel und Frühlingszwiebeln zur Chorizo in die Pfanne geben und kurz mitbraten.",
+    "Das Tomatenmark hinzufügen und gut verteilen.",
+    "Die fertig gekochten Nudeln direkt mit einer Schöpfkelle aus dem Topf in die Pfanne geben und alles gut vermischen.",
+    "Mit Salz und Pfeffer abschmecken.",
+    "Die gehackte Petersilie unterrühren.",
+    "Auf einem Teller anrichten und mit einem Klecks Crème fraîche servieren."
+  ],
+  "dietCategory": "meat",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2023/05/Nudeln_mit_Chorizo.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten"
+  ]
+}

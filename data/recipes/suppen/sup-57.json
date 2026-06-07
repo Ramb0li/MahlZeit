@@ -1,0 +1,123 @@
+{
+  "id": "sup-57",
+  "name": "Weiße Bohnen Gemüsesuppe mit Cabanossi und Fenchelsamen",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 30,
+  "basePortions": 4,
+  "tags": [
+    "Herbst",
+    "Winter",
+    "Mittagsgericht",
+    "Abendgericht"
+  ],
+  "ingredients": [
+    {
+      "name": "Karotten",
+      "amount": 160,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Stangensellerie",
+      "amount": 110,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebeln, weiß",
+      "amount": 128,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 2,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Rosmarinzweige",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Fenchelsamen",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Petersilie",
+      "amount": 15,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Weiße Bohnen (Dose, Abtropfgewicht)",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomatenmark",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Cabanossi",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Wasser",
+      "amount": 1000,
+      "unit": "ml",
+      "perPortions": 4
+    }
+  ],
+  "weatherType": "kalt",
+  "source": "herrbuettner.de",
+  "description": "Eine kräftige, wärmende Suppe mit weißen Bohnen, Cabanossi und aromatischen Fenchelsamen. Perfekt für kalte Tage und ganz einfach zubereitet.",
+  "steps": [
+    "Karotten und Stangensellerie waschen, trocken tupfen. Karotten schälen und in kleine Würfel schneiden. Stangensellerie ebenfalls würfeln.",
+    "Zwiebeln und Knoblauchzehen schälen und fein würfeln. Rosmarin von den Zweigen zupfen und klein hacken.",
+    "Weiße Bohnen durch ein Sieb abgießen und unter kaltem Wasser gründlich abspülen.",
+    "Cabanossi der Länge nach vierteln und dann in etwa 1 cm große Stücke schneiden.",
+    "Einen großen Topf bei höherer Hitze erhitzen. Olivenöl hineingeben und Cabanossi, Fenchelsamen sowie Rosmarin darin scharf anbraten, dabei gelegentlich umrühren.",
+    "Sobald sich am Topfboden ein Bratensatz bildet, Zwiebeln und Knoblauch hinzufügen und etwa 1 Minute unter Rühren anschwitzen lassen.",
+    "Karotten und Stangensellerie in den Topf geben, kräftig mit Salz und Pfeffer würzen. Alles gut vermischen und unter gelegentlichem Rühren 1 Minute anbraten.",
+    "Tomatenmark einrühren, dann mit 1000 ml Wasser aufgießen und gut durchmischen.",
+    "Die weißen Bohnen hinzugeben und unterrühren. Hitze auf mittlere Stufe reduzieren und den Topf mit Deckel verschließen.",
+    "Die Suppe 15-20 Minuten köcheln lassen, bis das Gemüse gar ist.",
+    "Petersilie klein hacken und etwa zwei Drittel davon in die Suppe geben. Mit Salz und Pfeffer abschmecken.",
+    "Suppe auf Schüsseln verteilen und mit der restlichen Petersilie garnieren."
+  ],
+  "dietCategory": "meat",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/02/weisse_bohnen_gemuese-suppe_mit_cabanossis.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "sellerie"
+  ]
+}

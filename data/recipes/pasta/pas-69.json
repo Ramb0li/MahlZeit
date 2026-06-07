@@ -1,0 +1,60 @@
+{
+  "id": "pas-69",
+  "name": "Tomatensoße nach Marcella Hazan",
+  "category": "Pasta",
+  "timeMinutes": 45,
+  "basePortions": 4,
+  "tags": [
+    "Vegetarisch",
+    "Schnell und einfach",
+    "Italienisch",
+    "Mealprep-geeignet"
+  ],
+  "ingredients": [
+    {
+      "name": "geschälte ganze Tomaten aus der Dose in Tomatensaft",
+      "amount": 800,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 75,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Eine legendäre italienische Tomatensoße mit nur 3 Zutaten – herrlich einfach, aromatisch und seidig. Die Butter sorgt für einen wunderbar runden Geschmack und schönen Glanz.",
+  "steps": [
+    "Die Zwiebel schälen und halbieren.",
+    "Die Tomaten samt Flüssigkeit in einen Topf geben.",
+    "Butter und die halbierte Zwiebel zu den Tomaten in den Topf geben.",
+    "Mit einer Prise Salz würzen und alles einmal kurz aufkochen lassen.",
+    "Die Hitze reduzieren und nur noch sanft köcheln lassen.",
+    "Das Ganze 45 Minuten lang garen lassen. Dabei zwischendurch immer wieder umrühren und die Tomaten dabei mit dem Kochlöffel zerdrücken.",
+    "Die Soße ist fertig, wenn kein Wasser mehr an der Oberfläche schwimmt und sie schön eingedickt ist.",
+    "Kurz vor dem Servieren die Zwiebel entfernen und die Soße bei Bedarf mit Salz abschmecken.",
+    "Zu frisch gekochten Nudeln servieren. Optional mit Basilikum und Parmesan garnieren."
+  ],
+  "dietCategory": "vegetarian",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/07/tomatensosse_nach_marcella_hazan.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch"
+  ]
+}

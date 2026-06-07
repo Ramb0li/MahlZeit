@@ -1,0 +1,103 @@
+{
+  "id": "ei-19",
+  "name": "Pochiertes Ei auf Spinat, Mais, Bacon und Brot",
+  "category": "Frühstück",
+  "timeMinutes": 15,
+  "basePortions": 2,
+  "tags": [
+    "Frühling",
+    "Sommer",
+    "Schnell und einfach"
+  ],
+  "ingredients": [
+    {
+      "name": "Körnerbrot",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "rote Chili",
+      "amount": 10,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Babyspinat",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Zuckermais-Schoten, vorgekocht",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Eier, Größe M",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Bacon",
+      "amount": 6,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Weißweinessig",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "frisch geriebene Muskatnuss",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Ein herzhafter, farbenfroher Snack mit knusprigem Bacon, gebratenem Mais, frischem Spinat und perfekt pochiertem Ei auf geröstetem Körnerbrot. Das flüssige Eigelb sorgt zusammen mit dem Spinat für die perfekte Saftigkeit.",
+  "steps": [
+    "Eine Pfanne bei niedriger bis mittlerer Hitze erwärmen. Den Bacon darin langsam auslassen, bis er schön braun und knusprig ist. Dabei zwischendurch wenden. Den fertigen Bacon auf Küchenpapier abtropfen lassen.",
+    "Knoblauch schälen und in feine Scheiben schneiden. Babyspinat bei Bedarf waschen und trocken tupfen. Chili halbieren, entkernen und in Streifen schneiden. Zuckermais-Schoten mit Salz und Pfeffer einreiben.",
+    "Die Brotscheiben toasten. Die Eier in zwei separate kleine Schalen aufschlagen, dabei darauf achten, dass das Eigelb ganz bleibt.",
+    "Die Hitze der Pfanne mit dem Baconfett auf mittlere Stufe erhöhen. Die Zuckermais-Schoten darin rundherum braten, bis sie gebräunte Stellen haben. Den Knoblauch kurz im Fett anschwitzen (nicht braun werden lassen), dann herausnehmen und beiseitelegen.",
+    "Einen großen Topf mit reichlich Wasser zum Kochen bringen. Etwas Salz und den Weißweinessig zugeben, dann die Hitze reduzieren, bis das Wasser nur noch leicht simmert.",
+    "Die Eier nacheinander vorsichtig ins Wasser gleiten lassen (zwischen den Eiern 15 Sekunden warten). Jedes Ei etwa 4 Minuten pochieren. Mit einer Schöpfkelle herausnehmen und vorsichtig mit Küchenpapier trockentupfen.",
+    "Während die Eier pochieren, den fertigen Zuckermais aus der Pfanne nehmen und kurz abkühlen lassen. Den Spinat in die Pfanne geben, mit Salz, Pfeffer und Muskatnuss würzen, den gebratenen Knoblauch hinzufügen und durchrühren. Nach etwa 20 Sekunden aus der Pfanne nehmen.",
+    "Die Maiskörner mit einem Messer von den Schoten schneiden, indem man die Schote hochkant auf ein Brett stellt und die Körner abschneidet.",
+    "Zum Anrichten zuerst den Bacon auf die getoasteten Brotscheiben verteilen, dann den Mais darauf geben, gefolgt vom Spinat (ruhig etwas von der Flüssigkeit verwenden). Das pochierte Ei obenauf setzen und mit Chilistreifen garnieren."
+  ],
+  "dietCategory": "meat",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/04/pochiertes_ei_auf_spinat_mais_bacon_und_brot01.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "ei",
+    "gluten",
+    "sulfite"
+  ]
+}

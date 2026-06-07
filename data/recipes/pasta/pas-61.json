@@ -1,0 +1,138 @@
+{
+  "id": "pas-61",
+  "name": "Tagliatelle an Thunfisch-Tomatensoße mit Oliven, Anchovies und Basilikum",
+  "category": "Pasta",
+  "timeMinutes": 25,
+  "basePortions": 2,
+  "tags": [
+    "Frühling",
+    "Sommer",
+    "Mittagsgericht",
+    "Abendgericht",
+    "Italienisch"
+  ],
+  "ingredients": [
+    {
+      "name": "Tagliatelle, getrocknet",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Rote Zwiebeln",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 2
+    },
+    {
+      "name": "Frischer Basilikum",
+      "amount": 6,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Schwarze Oliven mit Stein",
+      "amount": 80,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Parmesan, gerieben",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Ganze Tomaten aus der Dose",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Anchovisfilets in Öl",
+      "amount": 15,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Öl von Anchovis",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Thunfisch im eigenen Saft",
+      "amount": 185,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Chiliflocken",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Getrockneter Oregano",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    }
+  ],
+  "weatherType": "warm",
+  "source": "herrbuettner.de",
+  "description": "Eine würzige Pastasoße mit Thunfisch, Anchovis, schwarzen Oliven und frischem Basilikum. Die Anchovisfilets verleihen der Soße eine heimliche, würzige Tiefe, während Zitrone und Basilikum für frische Akzente sorgen – perfekt für einen sonnigen Frühlingstag.",
+  "steps": [
+    "Die roten Zwiebeln schälen und fein würfeln. Die Oliven abspülen, trocken tupfen, entsteinen und grob hacken.",
+    "Die Dosentomaten mit Saft in eine Schüssel geben. Die Dose mit etwas Wasser ausspülen und ebenfalls hinzufügen. Die Tomaten mit den Händen vorsichtig zerdrücken.",
+    "Die Basilikumblätter abzupfen und grob hacken. Ein paar kleine Blätter für die Garnierung beiseitelegen.",
+    "Den Thunfisch aus der Dose nehmen, in ein feines Sieb geben und mit den Händen ausdrücken, um überschüssige Flüssigkeit zu entfernen.",
+    "Eine Pfanne bei mittlerer Hitze erwärmen. 2 EL Öl von den Anchovisfilets hineingeben und die Zwiebelwürfel darin glasig und leicht anrösten.",
+    "Knoblauch durch die Presse drücken und zusammen mit Oliven, Anchovisfilets, Oregano und Basilikum zu den Zwiebeln geben. Mit Pfeffer und Chiliflocken würzen, durchrühren und 30 Sekunden anbraten.",
+    "Mit dem Saft einer halben Zitrone ablöschen, durchrühren und weitere 30 Sekunden köcheln lassen.",
+    "Die zerdrückten Tomaten samt Saft hinzufügen. Den Thunfisch unterrühren und die Soße 15 Minuten köcheln lassen.",
+    "Währenddessen einen Topf mit Wasser zum Kochen bringen und gut salzen. Die Tagliatelle je nach Packungsangabe al dente kochen.",
+    "Wenn die Pasta fertig ist, die Soße vom Herd nehmen. Die Nudeln mit einer Küchenzange aus dem Wasser direkt in die Pfanne geben und gut mit der Soße vermischen.",
+    "Die Pasta auf Teller verteilen und mit geriebenem Parmesan, frischem Basilikum und einigen Spritzern Olivenöl garnieren."
+  ],
+  "dietCategory": "fish",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2019/04/Tagliatelle_an_Tomatensauce_mit_Thunfisch_Sardellen_und_Oliven.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "ei",
+    "fisch",
+    "gluten",
+    "milch"
+  ]
+}

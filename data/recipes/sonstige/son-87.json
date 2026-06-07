@@ -1,0 +1,132 @@
+{
+  "id": "son-87",
+  "name": "Shakshuka mit Cannellini Bohnen, Tomaten, Parmesan und Spinat",
+  "category": "Vegetarische Hauptgerichte",
+  "timeMinutes": 30,
+  "basePortions": 2,
+  "tags": [
+    "Vegetarisch",
+    "Schnell und einfach",
+    "Frühstück",
+    "Mittagsgericht",
+    "Abendgericht",
+    "Orientalisch"
+  ],
+  "ingredients": [
+    {
+      "name": "Mini Rispentomaten",
+      "amount": 480,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 2,
+      "unit": "Zehe",
+      "perPortions": 2
+    },
+    {
+      "name": "Zwiebeln, weiß",
+      "amount": 125,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "frischer Spinat",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Tomaten aus der Dose",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Cannellini Bohnen aus der Dose",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Tomatenmark",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Eier, Größe M",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Parmesan",
+      "amount": 25,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "frisch geriebene Muskatnuss",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "getrockneter Oregano",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 2
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Baguettebrot",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 2
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Eine köstliche Abwandlung des nordafrikanischen Klassikers mit Eiern in würziger Tomatensoße, verfeinert mit Cannellini Bohnen, frischem Spinat und Parmesan. Perfekt zum Dippen mit frischem Baguette!",
+  "steps": [
+    "Den Spinat bei Bedarf waschen und in einer Salatschleuder trocknen. Knoblauch und Zwiebeln schälen und in feine Würfel schneiden.",
+    "Die Cannellini Bohnen aus der Dose nehmen, in einem feinen Sieb mit kaltem Wasser abspülen und abtropfen lassen. Den Parmesan fein reiben.",
+    "Eine Pfanne bei mittlerer Hitze erhitzen und 2 EL Olivenöl hineingeben. Die Zwiebeln darin glasig anschwitzen.",
+    "Sobald die Zwiebeln weich sind, den Knoblauch hinzufügen, durchrühren und etwa 30 Sekunden mitanschwitzen. Dann den getrockneten Oregano einrühren.",
+    "Das Tomatenmark einrühren und gut in der Pfanne verteilen. Die Cannellini Bohnen hinzufügen, durchrühren und für 30 Sekunden brutzeln lassen.",
+    "Die Mini Rispentomaten halbieren und in die Pfanne geben. Mit Salz und Pfeffer würzen, durchrühren und weitere 30 Sekunden brutzeln lassen. Dabei mit einem Kochlöffel leicht auf die Tomaten drücken, um Saft herauszudrücken.",
+    "Die Dosentomaten hinzufügen. Die leere Dose zu etwa einem Drittel mit Wasser füllen und ebenfalls in die Pfanne geben. Den geriebenen Parmesan einrühren.",
+    "Den Spinat hinzufügen, mit Salz, Pfeffer und frisch geriebener Muskatnuss würzen. Die Pfanne mit einem Deckel verschließen und 30-45 Sekunden warten, bis der Spinat zusammenfällt. Deckel abnehmen und den Spinat unterheben.",
+    "Mit einem Löffel 4 Vertiefungen in die Soße drücken. Die Eier aufschlagen und jeweils in eine Vertiefung gleiten lassen.",
+    "Das Ganze für 20-25 Minuten köcheln lassen, bis das Eiweiß fest ist. Optional kann die Pfanne mit einem Deckel abgedeckt werden, um den Garprozess zu beschleunigen. Die Garzeit variiert je nachdem, wie flüssig oder fest das Eigelb gewünscht wird.",
+    "Sobald das Eiweiß fest ist, servieren. Das Baguettebrot in Scheiben schneiden und zum Dippen dazu reichen."
+  ],
+  "dietCategory": "vegetarian",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/05/shakshuka_mit_cannellinibohnen_frischen_tomaten_parmesan_und_spinat.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "ei",
+    "gluten",
+    "milch"
+  ]
+}

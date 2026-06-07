@@ -1,0 +1,107 @@
+{
+  "id": "pas-87",
+  "name": "Farfalle mit Bacon, Paprika, Erbsen & Frischkäse",
+  "category": "Pasta",
+  "timeMinutes": 25,
+  "basePortions": 4,
+  "tags": [
+    "Mittagsgericht",
+    "Abendgericht",
+    "Mealprep-geeignet"
+  ],
+  "ingredients": [
+    {
+      "name": "Vollkorn Farfalle",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "rote Paprika",
+      "amount": 330,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "junge Erbsen (tiefgekühlt)",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "rote Zwiebel",
+      "amount": 60,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Bacon",
+      "amount": 60,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Frischkäse",
+      "amount": 80,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Paprika-Gewürz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Petersilie",
+      "amount": 10,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Nudelwasser",
+      "amount": 150,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Parmesan gerieben",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "weatherType": "neutral",
+  "source": "herrbuettner.de",
+  "description": "Eine kalorienbewusste Pasta mit rauchigem Bacon, bunter Paprika und cremigem Frischkäse. Vollkornnudeln sorgen für extra Nährstoffe, während die Soße mit Nudelwasser statt Sahne zubereitet wird - lecker und ausgewogen zugleich!",
+  "steps": [
+    "Einen großen Topf mit reichlich Wasser aufsetzen und zum Kochen bringen. Sobald das Wasser kocht, kräftig salzen und die Farfalle hineingeben. Während des Kochens gelegentlich umrühren.",
+    "Den Bacon in Stücke schneiden. Eine Pfanne ohne Öl bei mittlerer Hitze erwärmen und die Baconwürfel hineingeben. Das Fett auslassen, bis der Bacon schön knusprig wird.",
+    "Währenddessen die Paprika waschen, entkernen und in Würfel schneiden. Die Zwiebel schälen und fein würfeln.",
+    "Sobald das Baconfett ausgelassen ist, die Zwiebelwürfel in die Pfanne geben und glasig dünsten.",
+    "Paprikawürfel und tiefgekühlte Erbsen hinzufügen und alles gut durchrühren. Mit Salz, Pfeffer und Paprika-Gewürz würzen und nochmals gut vermischen.",
+    "Die fertig gekochten Nudeln abgießen, dabei etwa 150 ml Nudelwasser auffangen. Die Farfalle zur Gemüse-Bacon-Mischung in die Pfanne geben und alles gut durchmischen. 5 Minuten gemeinsam anbraten.",
+    "Das aufgefangene Nudelwasser in die Pfanne gießen, den Frischkäse hinzufügen und alles gründlich vermischen, bis sich der Frischkäse überall verteilt hat. Bei Bedarf mit Salz und Pfeffer abschmecken.",
+    "Den Herd ausschalten. Die Petersilie fein hacken und unter die Pasta heben. Ein letztes Mal durchrühren und kurz ruhen lassen.",
+    "Auf Teller verteilen und nach Belieben mit geriebenem Parmesan garnieren."
+  ],
+  "dietCategory": "meat",
+  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/07/vollkorn_pasta_mit_bacon_erbsen_paprika_und_frischkaese01.jpg",
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch"
+  ]
+}
