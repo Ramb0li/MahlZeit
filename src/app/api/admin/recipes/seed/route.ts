@@ -1,19 +1,21 @@
 export const dynamic = 'force-dynamic';
 
 /**
- * Writes the bundled seed recipes (data/recipes.json as built into this deployment)
- * to Redis, overwriting whatever is currently stored there.
+ * Merges the bundled seed recipes (data/recipes.json) into Redis.
  *
- * Use this once after a deployment that bumps the recipe count, to sync Redis
- * with the latest bundled data.  Any manual edits made in prod after this call
- * will be lost — always Export JSON first if you need to preserve them.
+ * Strategy:
+ *  - Neue Rezepte (ID noch nicht in Redis) werden hinzugefügt.
+ *  - Bestehende Rezepte werden aktualisiert, aber imageUrl / imageZutaten
+ *    aus Redis bleiben erhalten, falls der Seed-Eintrag diese Felder nicht hat
+ *    (null / undefined). So gehen online hochgeladene Bilder beim Seeden nicht verloren.
+ *  - Rezepte, die in Redis aber nicht im Seed sind, bleiben unverändert.
  */
 
-import { NextResponse }            from 'next/server';
-import { getSession, ADMIN_EMAIL } from '@/lib/auth';
-import { saveTemplateRecipes }     from '@/lib/data';
-import seedRecipes                 from '../../../../../../data/recipes.json';
-import type { Recipe }             from '@/types';
+import { NextResponse }                          from 'next/server';
+import { getSession, ADMIN_EMAIL }               from '@/lib/auth';
+import { getTemplateRecipes, saveTemplateRecipes } from '@/lib/data';
+import seedRecipes                               from '../../../../../../data/recipes.json';
+import type { Recipe }                           from '@/types';
 
 async function requireAdmin() {
   const session = await getSession();
@@ -28,7 +30,37 @@ export async function POST() {
   if (!process.env.UPSTASH_REDIS_REST_URL)
     return NextResponse.json({ error: 'Nur in Produktion verfügbar (Redis nicht konfiguriert).' }, { status: 400 });
 
-  await saveTemplateRecipes(seedRecipes as Recipe[]);
+  // Bestehende Templates aus Redis laden, um Bilder zu bewahren
+  const existing    = await getTemplateRecipes();
+  const existingMap = new Map(existing.map((r) => [r.id, r]));
 
-  return NextResponse.json({ ok: true, count: seedRecipes.length });
+  // Seed-Rezepte mit bestehenden Bild-URLs mergen
+  const seed = seedRecipes as Recipe[];
+  const merged: Recipe[] = seed.map((s) => {
+    const ex = existingMap.get(s.id);
+    if (!ex) return s;                       // neues Rezept — direkt übernehmen
+    return {
+      ...s,
+      // Bild-URLs aus Redis erhalten, wenn Seed keinen Wert hat
+      imageUrl:      s.imageUrl      ?? ex.imageUrl,
+      imageZutaten:  s.imageZutaten  ?? ex.imageZutaten,
+    };
+  });
+
+  // Rezepte aus Redis, die nicht im Seed sind, anhängen (custom/unlisted)
+  for (const ex of existing) {
+    if (!merged.some((m) => m.id === ex.id)) merged.push(ex);
+  }
+
+  await saveTemplateRecipes(merged);
+
+  return NextResponse.json({
+    ok: true,
+    seeded: seed.length,
+    total: merged.length,
+    preserved: merged.filter((m) => {
+      const s = seed.find((x) => x.id === m.id);
+      return s && m.imageUrl && !s.imageUrl;
+    }).length,
+  });
 }
