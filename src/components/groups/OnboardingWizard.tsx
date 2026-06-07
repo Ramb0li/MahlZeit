@@ -1,27 +1,18 @@
 'use client';
-import { useState } from 'react';
+import { useState, useRef, useCallback } from 'react';
 import { Check, Loader2 } from 'lucide-react';
 import type { Group } from '@/lib/groups';
 import type { AppSettings, DietType, Child } from '@/types';
+import { ALLERGENS, PRESET_AVERSIONS } from '@/lib/allergens-config';
 
 /* ─── Konstanten ────────────────────────────────────────────────────────────── */
 
-const ALLERGEN_CHIPS = [
-  { id: 'gluten',    label: 'Gluten'    },
-  { id: 'laktose',   label: 'Laktose'   },
-  { id: 'erdnüsse',  label: 'Erdnüsse'  },
-  { id: 'nüsse',     label: 'Nüsse'     },
-  { id: 'soja',      label: 'Soja'      },
-  { id: 'ei',        label: 'Ei'        },
-  { id: 'fisch',     label: 'Fisch'     },
-];
-
-const DIET_OPTIONS: { value: DietType; label: string }[] = [
-  { value: 'fleischhaltig', label: 'Fleischhaltig'  },
-  { value: 'flexitarisch',  label: 'Flexitarisch'   },
-  { value: 'pescetarisch',  label: 'Pescetarisch'   },
-  { value: 'vegetarisch',   label: 'Vegetarisch'    },
-  { value: 'vegan',         label: 'Vegan'          },
+const DIET_OPTIONS: { value: DietType; label: string; desc: string }[] = [
+  { value: 'fleischhaltig', label: 'Fleischhaltig', desc: 'Fleisch und Fisch sind willkommen — keine Einschränkung.' },
+  { value: 'flexitarisch',  label: 'Flexitarisch',  desc: 'Überwiegend pflanzlich, höchstens ein Fleischgericht pro Woche.' },
+  { value: 'pescetarisch',  label: 'Pescetarisch',  desc: 'Kein Fleisch, aber Fisch und Meeresfrüchte sind okay.' },
+  { value: 'vegetarisch',   label: 'Vegetarisch',   desc: 'Kein Fleisch und kein Fisch.' },
+  { value: 'vegan',         label: 'Vegan',         desc: 'Komplett pflanzlich, keine tierischen Produkte.' },
 ];
 
 const SHOPPING_OPTIONS = [
@@ -29,6 +20,8 @@ const SHOPPING_OPTIONS = [
   { value: 'twice' as const, label: 'Zweimal pro Woche', sub: 'Mo–Mi und Do–So getrennt'           },
   { value: 'daily' as const, label: 'Fast täglich',      sub: 'Frische, kleine Einkäufe'           },
 ];
+
+interface GeoResult { name: string; admin1?: string; country?: string }
 
 /* ─── Props ─────────────────────────────────────────────────────────────────── */
 
@@ -56,6 +49,22 @@ export function OnboardingWizard({ currentGroupName, currentSettings, onComplete
   const [allergies,    setAllergies]    = useState<string[]>(currentSettings.allergiesAndAversions ?? []);
   const [noneSelected, setNoneSelected] = useState((currentSettings.allergiesAndAversions ?? []).length === 0);
   const [shopping,     setShopping]     = useState<'once' | 'twice' | 'daily'>('once');
+
+  // Standort-Autocomplete (open-meteo Geocoding, gleiche Quelle wie in den Einstellungen)
+  const [locSuggestions, setLocSuggestions] = useState<GeoResult[]>([]);
+  const [showLocSug,     setShowLocSug]     = useState(false);
+  const locDebounce = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const fetchLocSuggestions = useCallback(async (q: string) => {
+    if (q.trim().length < 2) { setLocSuggestions([]); return; }
+    try {
+      const res = await fetch(`https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(q)}&count=5&language=de&format=json`);
+      if (!res.ok) return;
+      const data = await res.json() as { results?: GeoResult[] };
+      setLocSuggestions(data.results ?? []);
+      setShowLocSug(true);
+    } catch { setLocSuggestions([]); }
+  }, []);
 
   const [loading, setLoading] = useState(false);
   const [error,   setError]   = useState('');
@@ -148,12 +157,12 @@ export function OnboardingWizard({ currentGroupName, currentSettings, onComplete
   /* ─── Step meta ──────────────────────────────────────────────────────────── */
 
   const STEP_META: { title: string; sub: string }[] = [
-    { title: 'Wie heisst dein Haushalt?', sub: 'So findest du deine Gruppe wieder.' },
-    { title: 'Wo kocht ihr?',             sub: 'Für wetterbasierte Vorschläge.'     },
-    { title: 'Wer isst mit?',             sub: 'Für die richtigen Portionen.'       },
-    { title: 'Wie ernährt ihr euch?',     sub: 'Du kannst das jederzeit ändern.'    },
-    { title: 'Allergien?',               sub: 'Solche Zutaten blenden wir aus.'    },
-    { title: 'Wie oft kaufst du ein?',   sub: 'Wir gruppieren die Einkaufsliste passend.' },
+    { title: 'Wie heisst dein Haushalt?',        sub: 'Gib deiner Gruppe einen Namen — so erkennst du sie wieder und kannst Mitglieder einladen.' },
+    { title: 'In welcher Stadt kocht ihr?',      sub: 'Wir nutzen das lokale Wetter für passende Vorschläge — z.B. Eintöpfe bei Kälte, Leichtes bei Hitze.' },
+    { title: 'Wie viele Personen essen mit?',    sub: 'Daraus berechnen wir die Mengen für Rezepte und Einkaufsliste. Kinder zählen wir kleiner.' },
+    { title: 'Wie ernährt ihr euch?',            sub: 'Bestimmt, welche Gerichte vorgeschlagen werden. Du kannst es jederzeit ändern.' },
+    { title: 'Allergien oder Abneigungen?',      sub: 'Tippe alles an, was nicht auf den Tisch soll — solche Gerichte blenden wir automatisch aus. Mehrfachauswahl möglich.' },
+    { title: 'Wie oft kaufst du ein?',           sub: 'Wir gruppieren die Einkaufsliste passend zu deinem Rhythmus.' },
   ];
   const { title, sub } = STEP_META[step - 1];
 
@@ -164,6 +173,8 @@ export function OnboardingWizard({ currentGroupName, currentSettings, onComplete
     border: '1.5px solid #e0d8ce', borderRadius: '12px',
     background: '#faf7f2', color: '#271f1a', fontSize: '15px', outline: 'none',
   };
+  const activeChip: React.CSSProperties = { border: '1.5px solid #d9543b', background: 'rgba(217,84,59,0.07)', color: '#d9543b' };
+  const idleChip:   React.CSSProperties = { border: '1.5px solid #e0d8ce', background: '#fff', color: '#271f1a' };
 
   /* ─── Stepper row ─────────────────────────────────────────────────────────── */
 
@@ -249,15 +260,42 @@ export function OnboardingWizard({ currentGroupName, currentSettings, onComplete
               />
             )}
 
-            {/* ── Step 2: Wohnort ── */}
+            {/* ── Step 2: Wohnort (mit Live-Vorschlägen) ── */}
             {step === 2 && (
-              <input
-                type="text" autoFocus
-                value={location} onChange={e => setLocation(e.target.value)}
-                onKeyDown={e => { if (e.key === 'Enter') setStep(3); }}
-                placeholder="Zürich"
-                style={inp}
-              />
+              <div style={{ position: 'relative' }}>
+                <input
+                  type="text"
+                  value={location}
+                  onChange={e => {
+                    const v = e.target.value;
+                    setLocation(v);
+                    if (locDebounce.current) clearTimeout(locDebounce.current);
+                    if (v.trim().length >= 2) locDebounce.current = setTimeout(() => fetchLocSuggestions(v), 280);
+                    else { setLocSuggestions([]); setShowLocSug(false); }
+                  }}
+                  onFocus={() => { if (locSuggestions.length) setShowLocSug(true); }}
+                  onKeyDown={e => { if (e.key === 'Enter') { setShowLocSug(false); setStep(3); } if (e.key === 'Escape') setShowLocSug(false); }}
+                  placeholder="z.B. Luzern, Zürich, Bern …"
+                  style={inp}
+                  autoComplete="off"
+                />
+                {showLocSug && locSuggestions.length > 0 && (
+                  <div style={{ position: 'absolute', top: '100%', left: 0, right: 0, marginTop: 4, background: '#fff', border: '1.5px solid #e0d8ce', borderRadius: 12, boxShadow: '0 12px 32px rgba(39,31,26,0.14)', overflow: 'hidden', zIndex: 10 }}>
+                    {locSuggestions.map((r, i) => (
+                      <button
+                        key={i}
+                        onMouseDown={e => { e.preventDefault(); setLocation(r.name); setShowLocSug(false); setLocSuggestions([]); }}
+                        className="w-full text-left px-4 py-2.5 flex flex-col transition-opacity hover:opacity-70"
+                      >
+                        <span className="text-sm font-semibold" style={{ color: '#271f1a' }}>{r.name}</span>
+                        {(r.admin1 || r.country) && (
+                          <span className="text-xs" style={{ color: '#9a8c80' }}>{[r.admin1, r.country].filter(Boolean).join(', ')}</span>
+                        )}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
             )}
 
             {/* ── Step 3: Haushalt ── */}
@@ -270,55 +308,75 @@ export function OnboardingWizard({ currentGroupName, currentSettings, onComplete
 
             {/* ── Step 4: Ernährungsweise ── */}
             {step === 4 && (
-              <div className="flex flex-wrap gap-2">
-                {DIET_OPTIONS.map(({ value, label }) => {
-                  const active = diet === value;
-                  return (
-                    <button
-                      key={value}
-                      onClick={() => setDiet(value)}
-                      className="px-4 py-2 rounded-full text-sm font-semibold transition-all"
-                      style={active
-                        ? { border: '1.5px solid #d9543b', background: 'rgba(217,84,59,0.07)', color: '#d9543b' }
-                        : { border: '1.5px solid #e0d8ce', background: '#fff', color: '#271f1a' }
-                      }
-                    >
-                      {label}
-                    </button>
-                  );
-                })}
+              <div>
+                <div className="flex flex-wrap gap-2">
+                  {DIET_OPTIONS.map(({ value, label }) => {
+                    const active = diet === value;
+                    return (
+                      <button
+                        key={value}
+                        onClick={() => setDiet(value)}
+                        className="px-4 py-2 rounded-full text-sm font-semibold transition-all"
+                        style={active ? activeChip : idleChip}
+                      >
+                        {label}
+                      </button>
+                    );
+                  })}
+                </div>
+                {/* Erklärung der gewählten Option */}
+                <p className="text-sm mt-4 px-4 py-3 rounded-xl" style={{ background: '#faf7f2', color: '#5c5048', border: '1px solid #e0d8ce' }}>
+                  {DIET_OPTIONS.find(o => o.value === diet)?.desc}
+                </p>
               </div>
             )}
 
-            {/* ── Step 5: Allergien ── */}
+            {/* ── Step 5: Allergien & Abneigungen (gleiche Liste wie in den Einstellungen) ── */}
             {step === 5 && (
-              <div className="flex flex-wrap gap-2">
-                {ALLERGEN_CHIPS.map(({ id, label }) => {
-                  const active = allergies.includes(id);
-                  return (
+              <div className="space-y-4">
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-wider mb-2" style={{ color: '#9a8c80' }}>Allergien</p>
+                  <div className="flex flex-wrap gap-2">
+                    {ALLERGENS.map(({ id, label, emoji }) => {
+                      const active = allergies.includes(id);
+                      return (
+                        <button
+                          key={id}
+                          onClick={() => toggleAllergy(id)}
+                          className="px-3.5 py-2 rounded-full text-sm font-semibold transition-all"
+                          style={active ? activeChip : idleChip}
+                        >
+                          <span style={{ marginRight: 5 }}>{emoji}</span>{label}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-wider mb-2" style={{ color: '#9a8c80' }}>Abneigungen</p>
+                  <div className="flex flex-wrap gap-2">
+                    {PRESET_AVERSIONS.map((label) => {
+                      const active = allergies.includes(label);
+                      return (
+                        <button
+                          key={label}
+                          onClick={() => toggleAllergy(label)}
+                          className="px-3.5 py-2 rounded-full text-sm font-semibold transition-all"
+                          style={active ? activeChip : idleChip}
+                        >
+                          {label}
+                        </button>
+                      );
+                    })}
                     <button
-                      key={id}
-                      onClick={() => toggleAllergy(id)}
-                      className="px-4 py-2 rounded-full text-sm font-semibold transition-all"
-                      style={active
-                        ? { border: '1.5px solid #d9543b', background: 'rgba(217,84,59,0.07)', color: '#d9543b' }
-                        : { border: '1.5px solid #e0d8ce', background: '#fff', color: '#271f1a' }
-                      }
+                      onClick={selectNone}
+                      className="px-3.5 py-2 rounded-full text-sm font-semibold transition-all"
+                      style={noneSelected ? activeChip : idleChip}
                     >
-                      {label}
+                      Keine
                     </button>
-                  );
-                })}
-                <button
-                  onClick={selectNone}
-                  className="px-4 py-2 rounded-full text-sm font-semibold transition-all"
-                  style={noneSelected
-                    ? { border: '1.5px solid #d9543b', background: 'rgba(217,84,59,0.07)', color: '#d9543b' }
-                    : { border: '1.5px solid #e0d8ce', background: '#fff', color: '#271f1a' }
-                  }
-                >
-                  Keine
-                </button>
+                  </div>
+                </div>
               </div>
             )}
 

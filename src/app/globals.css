@@ -613,6 +613,8 @@ em { font-style: normal; color: var(--accent); }
 [data-theme="espresso"] .mz-lp-nav { background: rgba(28,21,16,.9); }
 [data-theme="espresso"] .mz-auth-card { background: rgba(46,32,24,.96); }
 [data-theme="espresso"] .mz-auth-scrim { background: radial-gradient(circle at center, rgba(28,21,16,.6) 0%, rgba(28,21,16,.94) 65%); }
+/* Menüplaner-Boxen im Dunkel-Theme in Theme-Farbe (dunkelbraun) statt hartem Schwarzbraun */
+[data-theme="espresso"] .mz-magslot-grad { background: linear-gradient(to top, rgba(20,13,8,.86) 0%, rgba(28,21,16,.34) 45%, rgba(28,21,16,.06) 75%); }
 
 [data-theme="night"] {
   --bg: #12111a;
@@ -635,6 +637,8 @@ em { font-style: normal; color: var(--accent); }
 [data-theme="night"] .mz-lp-nav { background: rgba(18,17,26,.9); }
 [data-theme="night"] .mz-auth-card { background: rgba(33,31,48,.96); }
 [data-theme="night"] .mz-auth-scrim { background: radial-gradient(circle at center, rgba(18,17,26,.6) 0%, rgba(18,17,26,.94) 65%); }
+/* Menüplaner-Boxen im Night-Theme in dunkelblauem Verlauf statt Braun */
+[data-theme="night"] .mz-magslot-grad { background: linear-gradient(to top, rgba(10,10,20,.88) 0%, rgba(18,17,26,.36) 45%, rgba(18,17,26,.06) 75%); }
 
 [data-theme="sage"] {
   --bg: #f2f6f0;

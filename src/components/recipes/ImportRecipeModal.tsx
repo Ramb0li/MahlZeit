@@ -53,7 +53,8 @@ export function ImportRecipeModal({ isPremium, onClose, onImported }: ImportReci
   // ── helpers ────────────────────────────────────────────────────────────────
 
   function buildRecipe(data: Record<string, unknown>, sourceUrl?: string): Recipe {
-    const safeStr = (v: unknown, fallback = '') => (typeof v === 'string' ? v : fallback);
+    // Deutsch-Schweizer Rechtschreibung: ß → ss (Sicherheitsnetz zusätzlich zum Prompt)
+    const safeStr = (v: unknown, fallback = '') => (typeof v === 'string' ? v.replace(/ß/g, 'ss') : fallback);
     const safeNum = (v: unknown, fallback = 0)  => (typeof v === 'number' ? v : fallback);
 
     const VALID_CATS: Category[] = [
@@ -97,7 +98,7 @@ export function ImportRecipeModal({ isPremium, onClose, onImported }: ImportReci
       tags:         rawTags,
       ingredients,
       weatherType:  (VALID_WEATHER.includes(weather as WeatherType) ? weather : 'neutral') as WeatherType,
-      source:       sourceUrl ?? safeStr(data.source, 'Import'),
+      source:       safeStr(data.source) || sourceUrl || 'Import',
       basePortions: safeNum(data.basePortions, 4) || 4,
       steps:        steps.length ? steps : undefined,
     };
@@ -269,7 +270,6 @@ export function ImportRecipeModal({ isPremium, onClose, onImported }: ImportReci
                   onKeyDown={e => e.key === 'Enter' && handleUrlImport()}
                   placeholder="https://www.fooby.ch/de/rezepte/…"
                   style={{ ...inputStyle, flex: 1 }}
-                  autoFocus
                 />
                 <button
                   onClick={handleUrlImport}

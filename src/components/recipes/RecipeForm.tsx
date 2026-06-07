@@ -595,7 +595,7 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/up
       {/* Actions — sticky am unteren Rand, damit Speichern auf dem Phone immer erreichbar ist */}
       <div
         className="flex gap-3 justify-end sticky bottom-0 z-10 -mx-6 px-6 pt-3 pb-2"
-        style={{ backgroundColor: '#fff9f3', borderTop: '1px solid #e0d8ce' }}
+        style={{ backgroundColor: 'var(--card)', borderTop: '1px solid var(--border)' }}
       >
         <button
           type="button" onClick={onCancel}

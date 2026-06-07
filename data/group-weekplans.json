@@ -21,12 +21,80 @@
       "days": {
         "1": {
           "dinner": {
-            "recipeId": "ei-02",
-            "isLeftovers": false,
-            "sideRecipeId": "ei-03",
-            "sideIsLeftovers": false
+            "recipeId": "son-01",
+            "isLeftovers": false
           },
-          "showLunch": false
+          "showLunch": false,
+          "lunch": {
+            "recipeId": "son-93",
+            "isLeftovers": false
+          }
+        },
+        "2": {
+          "dinner": {
+            "recipeId": "fam-44",
+            "isLeftovers": false
+          },
+          "showLunch": false,
+          "lunch": {
+            "recipeId": "asi-01",
+            "isLeftovers": false
+          }
+        },
+        "3": {
+          "dinner": {
+            "recipeId": "pas-16",
+            "isLeftovers": false
+          },
+          "showLunch": false,
+          "lunch": {
+            "recipeId": "fvt-12",
+            "isLeftovers": false
+          }
+        },
+        "4": {
+          "dinner": {
+            "recipeId": "fam-42",
+            "isLeftovers": false
+          },
+          "showLunch": false,
+          "lunch": {
+            "recipeId": null,
+            "isLeftovers": true
+          }
+        },
+        "5": {
+          "dinner": {
+            "recipeId": "fam-37",
+            "isLeftovers": false
+          },
+          "showLunch": false,
+          "lunch": {
+            "recipeId": null,
+            "isLeftovers": true
+          }
+        },
+        "6": {
+          "dinner": {
+            "recipeId": "son-09",
+            "isLeftovers": false
+          },
+          "showLunch": false,
+          "lunch": {
+            "recipeId": "rec-1779488181331-i6vew",
+            "isLeftovers": false
+          }
+        },
+        "7": {
+          "dinner": {
+            "recipeId": "son-89",
+            "isLeftovers": false
+          },
+          "showLunch": false,
+          "lunch": {
+            "recipeId": "fis-17",
+            "isLeftovers": false
+          }
         }
       }
     }

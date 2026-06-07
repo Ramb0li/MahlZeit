@@ -39,21 +39,21 @@ export function Modal({ open, onClose, title, children, size = 'md' }: ModalProp
       <div
         className={cn('rounded-2xl shadow-xl w-full flex flex-col max-h-[90vh] max-h-[88dvh]', sizeClass)}
         style={{
-          backgroundColor: '#fff9f3',
-          border: '1px solid #e0d8ce',
-          boxShadow: '0 24px 64px rgba(44,36,32,0.14)',
+          backgroundColor: 'var(--card)',
+          border: '1px solid var(--border)',
+          boxShadow: '0 24px 64px rgba(0,0,0,0.18)',
         }}
       >
         <div
           className="flex items-center justify-between px-6 py-4"
-          style={{ borderBottom: '1px solid #e0d8ce' }}
+          style={{ borderBottom: '1px solid var(--border)' }}
         >
-          <h2 className="text-lg font-semibold" style={{ color: '#2c2420' }}>{title}</h2>
+          <h2 className="text-lg font-semibold" style={{ color: 'var(--ink)' }}>{title}</h2>
           <button
             onClick={onClose}
             className="p-1.5 rounded-lg transition-colors"
-            style={{ color: '#9c8c84' }}
-            onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#efe9df')}
+            style={{ color: 'var(--muted)' }}
+            onMouseEnter={e => (e.currentTarget.style.backgroundColor = 'var(--bg-2)')}
             onMouseLeave={e => (e.currentTarget.style.backgroundColor = 'transparent')}
           >
             <X size={18} />

@@ -5,6 +5,7 @@ import { THEME_DEFS, toDataTheme } from '@/lib/themes';
 import type { ThemeId } from '@/lib/themes';
 import type { AppSettings, DayConstraint, Child } from '@/types';
 import type { Group, GroupRole } from '@/lib/groups';
+import { ALLERGENS, PRESET_AVERSIONS } from '@/lib/allergens-config';
 
 const DAY_LABELS = ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'];
 const CONSTRAINT_LABELS = {
@@ -12,29 +13,6 @@ const CONSTRAINT_LABELS = {
   mealprep: 'Mealprep',
   custom: 'Anpassen',
 };
-
-const ALLERGENS = [
-  { id: 'gluten',       label: 'Gluten',       emoji: '🌾' },
-  { id: 'weizen',       label: 'Weizen',        emoji: '🌾' },
-  { id: 'laktose',      label: 'Laktose',       emoji: '🥛' },
-  { id: 'milch',        label: 'Milch',         emoji: '🍼' },
-  { id: 'ei',           label: 'Ei',            emoji: '🥚' },
-  { id: 'fisch',        label: 'Fisch',         emoji: '🐟' },
-  { id: 'schalentiere', label: 'Schalentiere',  emoji: '🦐' },
-  { id: 'erdnüsse',     label: 'Erdnüsse',      emoji: '🥜' },
-  { id: 'haselnüsse',   label: 'Haselnüsse',    emoji: '🌰' },
-  { id: 'walnüsse',     label: 'Walnüsse',      emoji: '🌰' },
-  { id: 'soja',         label: 'Soja',          emoji: '🫘' },
-  { id: 'sesam',        label: 'Sesam',         emoji: '🌻' },
-  { id: 'sellerie',     label: 'Sellerie',      emoji: '🥬' },
-  { id: 'senf',         label: 'Senf',          emoji: '🟡' },
-  { id: 'lupinen',      label: 'Lupinen',       emoji: '🌿' },
-  { id: 'alkohol',      label: 'Alkohol',       emoji: '🍷' },
-  { id: 'fruktose',     label: 'Fruktose',      emoji: '🍬' },
-  { id: 'sorbit',       label: 'Sorbit',        emoji: '🍬' },
-] as const;
-
-const PRESET_AVERSIONS = ['Schweinefleisch', 'Fisch', 'Ersatzprodukte', 'Koriander', 'Rosenkohl', 'Pilze'];
 
 const WEEK_SWITCH_OPTIONS = [
   { value: 1, label: 'Montag' },
@@ -47,8 +25,8 @@ const WEEK_SWITCH_OPTIONS = [
 ];
 
 const PRESET_COLORS = [
-  '#4a7a4e', '#b5614a', '#c49a6c', '#5a4e48',
-  '#2e7d32', '#1565c0', '#ad1457', '#00695c',
+  '#c0533f', '#b5614a', '#c49a6c', '#5a4e48',
+  '#1565c0', '#ad1457', '#6a4c93', '#37474f',
 ];
 
 const sectionCard = {
@@ -319,7 +297,7 @@ export function SettingsView({
     setSettings((s) => ({ ...s, household: { ...s.household, children: s.household.children.filter((c) => c.id !== id) } }));
 
   const addConstraint = () => {
-    const newC: DayConstraint = { id: `c-${Date.now()}`, dayOfWeek: 1, label: 'Neues Event', color: '#4a7a4e', mealType: 'dinner', constraint: 'maxTime', maxTimeMinutes: 30 };
+    const newC: DayConstraint = { id: `c-${Date.now()}`, dayOfWeek: 1, label: 'Neues Event', color: '#c0533f', mealType: 'dinner', constraint: 'maxTime', maxTimeMinutes: 30 };
     setConstraints((prev) => [...prev, newC]);
     setOpenSections(prev => new Set([...Array.from(prev), 'constraints']));
   };
@@ -381,7 +359,7 @@ export function SettingsView({
           <span
             className="text-xs font-semibold px-2.5 py-1 rounded-full"
             style={isPremium
-              ? { backgroundColor: '#e8f2e8', color: '#4a7a4e' }
+              ? { backgroundColor: 'var(--accent-tint)', color: 'var(--accent)' }
               : { backgroundColor: '#fef3cd', color: '#9a7a1e' }
             }
           >
@@ -469,7 +447,7 @@ export function SettingsView({
           <div>
             <div className="flex items-center justify-between mb-3">
               <label className="text-sm" style={{ color: '#5a4e48' }}>Kinder</label>
-              <button onClick={addChild} className="flex items-center gap-1 text-xs font-semibold transition-opacity hover:opacity-70" style={{ color: '#4a7a4e' }}>
+              <button onClick={addChild} className="flex items-center gap-1 text-xs font-semibold transition-opacity hover:opacity-70" style={{ color: 'var(--accent)' }}>
                 <Plus size={14} />Kind hinzufügen
               </button>
             </div>
@@ -524,12 +502,12 @@ export function SettingsView({
                 onClick={() => setSettings((s) => ({ ...s, dietPreference: value }))}
                 className="flex flex-col items-center gap-1 p-3 rounded-2xl border-2 text-center transition-all"
                 style={isActive
-                  ? { borderColor: '#4a7a4e', backgroundColor: '#e8f2e8' }
+                  ? { borderColor: 'var(--accent)', backgroundColor: 'var(--accent-tint)' }
                   : { borderColor: '#e0d8ce' }
                 }
               >
                 <span className="text-2xl">{emoji}</span>
-                <p className="text-xs font-semibold leading-tight" style={{ color: isActive ? '#4a7a4e' : '#2c2420' }}>{label}</p>
+                <p className="text-xs font-semibold leading-tight" style={{ color: isActive ? 'var(--accent)' : '#2c2420' }}>{label}</p>
                 <p className="text-[10px]" style={{ color: '#9c8c84' }}>{sub}</p>
               </button>
             );
@@ -657,13 +635,13 @@ export function SettingsView({
                 onClick={() => setSettings((s) => ({ ...s, [key]: !isActive }))}
                 className="flex items-center gap-3 p-4 rounded-2xl border-2 text-left transition-all"
                 style={isActive
-                  ? { borderColor: '#4a7a4e', backgroundColor: '#e8f2e8' }
+                  ? { borderColor: 'var(--accent)', backgroundColor: 'var(--accent-tint)' }
                   : { borderColor: '#e0d8ce', opacity: 0.55 }
                 }
               >
                 <span className="text-2xl">{emoji}</span>
                 <div>
-                  <p className="text-sm font-semibold leading-tight" style={{ color: isActive ? '#4a7a4e' : '#2c2420' }}>{label}</p>
+                  <p className="text-sm font-semibold leading-tight" style={{ color: isActive ? 'var(--accent)' : '#2c2420' }}>{label}</p>
                   <p className="text-[11px] mt-0.5" style={{ color: '#9c8c84' }}>{isActive ? 'Aktiv' : 'Ausgeblendet'}</p>
                 </div>
               </button>
@@ -686,7 +664,7 @@ export function SettingsView({
             {/* Notice banner */}
             {familyNotice && (
               <div className="px-3 py-2 rounded-xl text-xs" style={familyNotice.type === 'ok'
-                ? { backgroundColor: '#e8f2e8', color: '#2e5a32', border: '1px solid #c8d8c8' }
+                ? { backgroundColor: 'var(--accent-tint)', color: 'var(--accent-ink)', border: '1px solid var(--border)' }
                 : { backgroundColor: '#fce4ec', color: '#c62828' }
               }>
                 {familyNotice.text}
@@ -713,7 +691,7 @@ export function SettingsView({
                     onClick={handleRenameGroup}
                     disabled={renaming || groupName.trim() === group.name}
                     className="px-3 py-1.5 rounded-xl text-xs font-semibold disabled:opacity-40 transition-opacity hover:opacity-80"
-                    style={{ backgroundColor: '#4a7a4e', color: '#fff' }}
+                    style={{ backgroundColor: 'var(--accent)', color: '#fff' }}
                   >
                     {renaming ? '…' : 'Speichern'}
                   </button>
@@ -729,7 +707,7 @@ export function SettingsView({
               <div className="space-y-2">
                 {members.map(m => (
                   <div key={m.email} className="flex items-center gap-3 px-3 py-2 rounded-xl" style={{ backgroundColor: '#f7f4ee' }}>
-                    <div className="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold" style={{ backgroundColor: m.groupRole === 'owner' ? '#4a7a4e' : '#c49a6c', color: '#fff' }}>
+                    <div className="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold" style={{ backgroundColor: m.groupRole === 'owner' ? 'var(--accent)' : '#c49a6c', color: '#fff' }}>
                       {(m.firstName?.[0] ?? '?').toUpperCase()}
                     </div>
                     <div className="flex-1 min-w-0">
@@ -739,7 +717,7 @@ export function SettingsView({
                       <p className="text-[11px] truncate" style={{ color: '#9c8c84' }}>{m.email}</p>
                     </div>
                     <span className="text-[10px] px-2 py-0.5 rounded-full font-semibold" style={m.groupRole === 'owner'
-                      ? { backgroundColor: '#e8f2e8', color: '#4a7a4e' }
+                      ? { backgroundColor: 'var(--accent-tint)', color: 'var(--accent)' }
                       : { backgroundColor: '#f5ece0', color: '#c49a6c' }
                     }>
                       {m.groupRole === 'owner' ? 'Hauptuser' : 'Mitglied'}
@@ -811,7 +789,7 @@ export function SettingsView({
                         onClick={handleInvite}
                         disabled={inviting || !inviteEmail.trim()}
                         className="flex items-center gap-1 px-3 py-1.5 rounded-xl text-xs font-semibold disabled:opacity-40 transition-opacity hover:opacity-80"
-                        style={{ backgroundColor: '#4a7a4e', color: '#fff' }}
+                        style={{ backgroundColor: 'var(--accent)', color: '#fff' }}
                       >
                         <Mail size={12} />
                         {inviting ? '…' : 'Einladen'}
@@ -884,7 +862,7 @@ export function SettingsView({
                 onClick={() => setSettings(s => ({ ...s, weekSwitchDay: value }))}
                 className="px-4 py-2 rounded-xl text-sm font-semibold transition-all border-2"
                 style={isActive
-                  ? { borderColor: '#4a7a4e', backgroundColor: '#e8f2e8', color: '#4a7a4e' }
+                  ? { borderColor: 'var(--accent)', backgroundColor: 'var(--accent-tint)', color: 'var(--accent)' }
                   : { borderColor: '#e0d8ce', color: '#5a4e48' }
                 }
               >
@@ -967,13 +945,6 @@ export function SettingsView({
               </div>
             )}
           </div>
-          <p className="text-xs mt-1" style={{ color: '#9c8c84' }}>
-            Wetterdaten via{' '}
-            <a href="https://open-meteo.com" target="_blank" rel="noopener" className="transition-colors hover:underline" style={{ color: '#4a7a4e' }}>
-              open-meteo.com
-            </a>{' '}
-            · Kostenlos, kein API-Key nötig.
-          </p>
         </div>
       </Section>
 
@@ -986,7 +957,7 @@ export function SettingsView({
           <button
             onClick={addConstraint}
             className="flex items-center gap-1 text-xs font-semibold transition-opacity hover:opacity-70"
-            style={{ color: '#4a7a4e' }}
+            style={{ color: 'var(--accent)' }}
           >
             <Plus size={14} />
             Event hinzufügen
@@ -1089,8 +1060,8 @@ export function SettingsView({
           onClick={handleSave}
           className="flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-semibold transition-all"
           style={saved
-            ? { backgroundColor: '#e8f2e8', color: '#4a7a4e' }
-            : { backgroundColor: '#4a7a4e', color: '#fff' }
+            ? { backgroundColor: 'var(--accent-tint)', color: 'var(--accent)' }
+            : { backgroundColor: 'var(--accent)', color: '#fff' }
           }
         >
           <Save size={16} />

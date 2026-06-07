@@ -2,6 +2,7 @@ export const dynamic = 'force-dynamic';
 
 import { NextResponse } from 'next/server';
 import { getSession } from '@/lib/auth';
+import { getUserByEmail } from '@/lib/users';
 
 const CLAUDE_URL = 'https://api.anthropic.com/v1/messages';
 const MODEL      = 'claude-haiku-4-5-20251001';
@@ -40,7 +41,8 @@ const RECIPE_TOOL = {
       },
       steps: {
         type: 'array',
-        items: { type: 'string', description: 'Sinngemäss auf Deutsch umformuliert' },
+        description: 'Einzelne, aufeinanderfolgende Zubereitungsschritte — jeder Schritt ein eigenes Array-Element, OHNE führende Nummer (die Nummerierung erfolgt automatisch).',
+        items: { type: 'string', description: 'Ein Zubereitungsschritt, sinngemäss auf Deutsch (Deutsch-Schweizer Rechtschreibung, kein ß sondern ss)' },
       },
     },
     required: ['name','category','timeMinutes','basePortions','weatherType','tags','ingredients','steps'],
@@ -141,24 +143,24 @@ function urlPrompt(jsonLd: Record<string, unknown>): string {
   return `Du bist ein Rezept-Import-Assistent. Extrahiere und normalisiere die folgenden JSON-LD Rezeptdaten in das vorgegebene Tool-Schema.
 
 Regeln:
+- Gesamter Text in Deutsch-Schweizer Rechtschreibung (KEIN ß, immer "ss")
 - Mengen in metrischen Einheiten (g, kg, ml, l, EL, TL, Stk, Prise, Bund, Zehe)
 - Zubereitungsschritte SINNGEMÄSS auf Deutsch umformulieren (urheberrechtlich nicht 1:1 kopieren)
+- Jeder Zubereitungsschritt ein eigenes, einzelnes Array-Element in sinnvoller Reihenfolge, ohne führende Nummer
 - Kategorie passend wählen
-- dietType: 'vegan' = keine Tierprodukte, 'vegetarisch' = kein Fleisch/Fisch, 'pescetarisch' = Fisch aber kein Fleisch, sonst null
 - weatherType: 'warm' = leichte Sommergerichte, 'kalt' = Suppen/Eintöpfe, 'neutral' = rest
-- isSuitableForLunch: true wenn ≤ 30 Minuten und leicht
 
 JSON-LD Daten:
 ${JSON.stringify(jsonLd).slice(0, 5500)}`;
 }
 
 function htmlPrompt(text: string): string {
-  return `Du bist ein Rezept-Extraktor. Extrahiere das Rezept aus dem folgenden Webseitentext in das vorgegebene Tool-Schema. Zubereitungsschritte SINNGEMÄSS auf Deutsch umformulieren (nicht 1:1 kopieren).
+  return `Du bist ein Rezept-Extraktor. Extrahiere das Rezept aus dem folgenden Webseitentext in das vorgegebene Tool-Schema. Gesamter Text in Deutsch-Schweizer Rechtschreibung (KEIN ß, immer "ss"). Zubereitungsschritte SINNGEMÄSS auf Deutsch umformulieren (nicht 1:1 kopieren), jeder Schritt ein eigenes Array-Element ohne führende Nummer.
 
 ${text}`;
 }
 
-const IMAGE_PROMPT_TEXT = `Du bist ein Rezept-Extraktor. Extrahiere alle Rezeptinformationen aus diesem Bild (Screenshot, Foto, Instagram-Post o.Ä.) in das vorgegebene Tool-Schema. Zubereitungsschritte sinngemäss auf Deutsch formulieren.`;
+const IMAGE_PROMPT_TEXT = `Du bist ein Rezept-Extraktor. Extrahiere alle Rezeptinformationen aus diesem Bild (Screenshot, Foto, Instagram-Post o.Ä.) in das vorgegebene Tool-Schema. Gesamter Text in Deutsch-Schweizer Rechtschreibung (KEIN ß, immer "ss"). Zubereitungsschritte sinngemäss auf Deutsch formulieren, jeder Schritt ein eigenes Array-Element ohne führende Nummer.`;
 
 // ─── SSRF guard ────────────────────────────────────────────────────────────
 
@@ -209,6 +211,12 @@ export async function POST(request: Request) {
       session.status === 'active' &&
       (session.plan === 'lifetime' || session.plan === 'abo' || session.plan === 'beta');
 
+    // Quellenangabe: "Import durch <Name>" (Vor-/Nachname, sonst E-Mail-Präfix)
+    const user = await getUserByEmail(session.email);
+    const displayName = [user?.firstName, user?.lastName].filter(Boolean).join(' ').trim()
+      || session.email.split('@')[0];
+    const importSource = `Import durch ${displayName}`;
+
     const body = await request.json() as {
       url?:         string;
       imageBase64?: string;
@@ -228,6 +236,7 @@ export async function POST(request: Request) {
         { type: 'text',  text: IMAGE_PROMPT_TEXT },
         { type: 'image', source: { type: 'base64', media_type: body.mimeType, data: body.imageBase64 } },
       ]);
+      recipe.source = importSource;
 
       return NextResponse.json({ recipe, source: 'image' });
     }
@@ -283,6 +292,7 @@ export async function POST(request: Request) {
           if (match) recipe.basePortions = parseInt(match[0]);
         }
       }
+      recipe.source = importSource;
 
       return NextResponse.json({ recipe, source: jsonLd ? 'json-ld' : 'html', url });
     }
