@@ -191,6 +191,12 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
   };
 
   const handlePermanentDelete = async (id: string) => {
+    // Guard: only user-created recipes (id starts with 'rec-') may be permanently deleted
+    const recipe = recipes.find((r) => r.id === id);
+    if (!recipe || !recipe.id.startsWith('rec-')) {
+      setDeleteId(null);
+      return;
+    }
     await fetch('/api/recipes', { method: 'DELETE', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id }) });
     updateRecipes((prev) => prev.filter((r) => r.id !== id));
     setDeleteId(null);
@@ -351,6 +357,7 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
                 <ArchivedRecipeCard
                   key={recipe.id}
                   recipe={recipe}
+                  isOwned={recipe.id.startsWith('rec-')}
                   onRestore={() => handleRestore(recipe.id)}
                   onDelete={() => setDeleteId(recipe.id)}
                 />
@@ -450,6 +457,7 @@ function RecipeCard({ recipe, favorited, onView, onEdit, onArchive, onToggleFavo
             <Clock size={10} />{recipe.timeMinutes} min
           </span>
         )}
+        {/* Favorite — top-left */}
         <button
           onClick={onToggleFavorite}
           style={{
@@ -466,19 +474,42 @@ function RecipeCard({ recipe, favorited, onView, onEdit, onArchive, onToggleFavo
         >
           <Heart size={13} fill={favorited ? 'currentColor' : 'none'} />
         </button>
-        <div
-          style={{ position: 'absolute', top: 8, right: 8, display: 'flex', gap: 4, opacity: 0, transition: '.15s' }}
-          className="group-hover:opacity-100"
-          onClick={e => e.stopPropagation()}
-          onMouseEnter={e => (e.currentTarget.style.opacity = '1')}
+
+        {/* Edit — top-right, second from corner */}
+        <button
+          onClick={(e) => { e.stopPropagation(); onEdit(); }}
+          style={{
+            position: 'absolute', top: 8, right: 42,
+            width: 28, height: 28, borderRadius: '50%', border: 'none', cursor: 'pointer',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            background: 'rgba(255,255,255,.55)',
+            color: '#9c8c84',
+            opacity: 0,
+            transition: '.15s',
+          }}
+          className="mz-fav-btn"
+          title="Bearbeiten"
         >
-          <button onClick={onEdit} className="mz-detail-close" style={{ width: 28, height: 28 }} title="Bearbeiten">
-            <Pencil size={11} />
-          </button>
-          <button onClick={onArchive} className="mz-detail-close" style={{ width: 28, height: 28 }} title="Archivieren">
-            <Archive size={11} />
-          </button>
-        </div>
+          <Pencil size={11} />
+        </button>
+
+        {/* Archive — top-right corner */}
+        <button
+          onClick={(e) => { e.stopPropagation(); onArchive(); }}
+          style={{
+            position: 'absolute', top: 8, right: 8,
+            width: 28, height: 28, borderRadius: '50%', border: 'none', cursor: 'pointer',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            background: 'rgba(255,255,255,.55)',
+            color: '#9c8c84',
+            opacity: 0,
+            transition: '.15s',
+          }}
+          className="mz-archive-btn"
+          title="Archivieren"
+        >
+          <Archive size={11} />
+        </button>
       </div>
       <div className="mz-rcard-body">
         <span className="mz-rcard-cat">{recipe.category}</span>
@@ -502,11 +533,12 @@ function RecipeCard({ recipe, favorited, onView, onEdit, onArchive, onToggleFavo
 
 interface ArchivedRecipeCardProps {
   recipe: Recipe;
+  isOwned: boolean;
   onRestore: () => void;
   onDelete: () => void;
 }
 
-function ArchivedRecipeCard({ recipe, onRestore, onDelete }: ArchivedRecipeCardProps) {
+function ArchivedRecipeCard({ recipe, isOwned, onRestore, onDelete }: ArchivedRecipeCardProps) {
   return (
     <div className="group relative rounded-2xl p-4 opacity-65 hover:opacity-100 transition-all" style={{ backgroundColor: '#f7f4ee', border: '1px solid #e0d8ce' }}>
       <div className="absolute top-3 right-3 flex items-center gap-0.5 text-[10px] rounded-full px-1.5 py-0.5 font-semibold" style={{ backgroundColor: '#f5ece0', color: '#c49a6c', border: '1px solid #e0d8ce' }}>
@@ -528,9 +560,24 @@ function ArchivedRecipeCard({ recipe, onRestore, onDelete }: ArchivedRecipeCardP
         <button onClick={onRestore} className="flex-1 flex items-center justify-center gap-1.5 py-1.5 rounded-lg text-xs font-semibold" style={{ border: '1px solid #e0d8ce', color: '#5a4e48', backgroundColor: '#fff9f3' }}>
           <RotateCcw size={12} />Wiederherstellen
         </button>
-        <button onClick={onDelete} className="p-1.5 rounded-lg" style={{ color: '#9c8c84' }} title="Endgültig löschen">
-          <Trash2 size={14} />
-        </button>
+        {isOwned ? (
+          <button
+            onClick={onDelete}
+            className="p-1.5 rounded-lg transition-colors hover:text-red-700"
+            style={{ color: '#9c8c84' }}
+            title="Endgültig löschen (nur eigene Rezepte)"
+          >
+            <Trash2 size={14} />
+          </button>
+        ) : (
+          <span
+            className="p-1.5 rounded-lg"
+            style={{ color: '#d4c9c0', cursor: 'default' }}
+            title="Vorlage-Rezepte können nicht endgültig gelöscht werden"
+          >
+            <Trash2 size={14} />
+          </span>
+        )}
       </div>
     </div>
   );
