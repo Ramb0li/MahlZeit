@@ -178,7 +178,9 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
   const handleRecipeSave = async (recipe: Recipe) => {
     setRecipeSaving(true);
     setRecipeNotice(null);
-    const isNew = editingRecipe === 'new';
+    // "new" = explizit neues Rezept; importierte Rezepte haben eine neue ID,
+    // existieren aber noch nicht in Redis → ebenfalls POST verwenden
+    const isNew = editingRecipe === 'new' || !recipes.some(r => r.id === recipe.id);
     try {
       const res = await fetch('/api/admin/recipes', {
         method:  isNew ? 'POST' : 'PUT',
