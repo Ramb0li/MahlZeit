@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -13,6 +13,22 @@ interface ModalProps {
 
 export function Modal({ open, onClose, title, children, size = 'md' }: ModalProps) {
   const backdropRef = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(open);
+  const [closing, setClosing] = useState(false);
+
+  useEffect(() => {
+    if (open) {
+      setClosing(false);
+      setVisible(true);
+    } else if (visible) {
+      setClosing(true);
+      const t = setTimeout(() => {
+        setClosing(false);
+        setVisible(false);
+      }, 180);
+      return () => clearTimeout(t);
+    }
+  }, [open]); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     const handler = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose(); };
@@ -20,7 +36,7 @@ export function Modal({ open, onClose, title, children, size = 'md' }: ModalProp
     return () => document.removeEventListener('keydown', handler);
   }, [open, onClose]);
 
-  if (!open) return null;
+  if (!visible) return null;
 
   const sizeClass = {
     sm: 'max-w-sm',
@@ -32,12 +48,12 @@ export function Modal({ open, onClose, title, children, size = 'md' }: ModalProp
   return (
     <div
       ref={backdropRef}
-      className="fixed inset-0 z-50 flex items-center justify-center p-4"
+      className={cn('fixed inset-0 z-50 flex items-center justify-center p-4', closing && 'mz-modal-scrim-closing')}
       style={{ backgroundColor: 'rgba(44,36,32,0.45)', backdropFilter: 'blur(4px)' }}
       onClick={(e) => { if (e.target === backdropRef.current) onClose(); }}
     >
       <div
-        className={cn('rounded-2xl shadow-xl w-full flex flex-col max-h-[90vh] max-h-[88dvh]', sizeClass)}
+        className={cn('rounded-2xl shadow-xl w-full flex flex-col max-h-[90vh] max-h-[88dvh] mz-modal-panel', sizeClass, closing && 'mz-modal-closing')}
         style={{
           backgroundColor: 'var(--card)',
           border: '1px solid var(--border)',
@@ -51,10 +67,7 @@ export function Modal({ open, onClose, title, children, size = 'md' }: ModalProp
           <h2 className="text-lg font-semibold" style={{ color: 'var(--ink)' }}>{title}</h2>
           <button
             onClick={onClose}
-            className="p-1.5 rounded-lg transition-colors"
-            style={{ color: 'var(--muted)' }}
-            onMouseEnter={e => (e.currentTarget.style.backgroundColor = 'var(--bg-2)')}
-            onMouseLeave={e => (e.currentTarget.style.backgroundColor = 'transparent')}
+            className="p-1.5 rounded-lg mz-modal-close-btn"
           >
             <X size={18} />
           </button>
