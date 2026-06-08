@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MahlZeit – Wocheplan per Klick</title>
+  <meta name="description" content="MahlZeit erstellt dir deinen Menü-Wocheplan automatisch – abgestimmt auf Wetter, Saison und dine Familie. Inkl. Einkaufsliste und digitalem Chuchichäschtli." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="MahlZeit – Wocheplan per Klick" />
+  <meta property="og:description" content="KI-Wochenplan, automatische Einkaufsliste, digitales Chuchichäschtli. Nie mehr 'Was kochen wir heute?'" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mahlzeit.o-v-k.ch" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green:     #2d6a4f;
+      --green-mid: #40916c;
+      --green-lt:  #74c69d;
+      --cream:     #f8f5f0;
+      --sand:      #ede8e0;
+      --dark:      #1a1a1a;
+      --mid:       #555;
+      --light:     #888;
+      --white:     #fff;
+      --radius:    12px;
+      --shadow:    0 4px 24px rgba(0,0,0,.09);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,.95);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid #eee;
+      padding: 1rem 2rem;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .nav-logo { font-size: 1.3rem; font-weight: 700; color: var(--green); letter-spacing: -.5px; }
+    .nav-cta {
+      background: var(--green); color: var(--white);
+      padding: .55rem 1.3rem; border-radius: 999px;
+      font-size: .9rem; font-weight: 600; text-decoration: none;
+      transition: background .2s;
+    }
+    .nav-cta:hover { background: var(--green-mid); }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(160deg, var(--cream) 0%, #e8f4ee 100%);
+      padding: 6rem 2rem 5rem;
+      text-align: center;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: var(--green-lt); color: var(--green);
+      font-size: .78rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+      padding: .3rem .9rem; border-radius: 999px; margin-bottom: 1.5rem;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 800; line-height: 1.15;
+      color: var(--dark); max-width: 700px; margin: 0 auto 1rem;
+      letter-spacing: -.5px;
+    }
+    .hero h1 span { color: var(--green); }
+    .hero p {
+      font-size: 1.15rem; color: var(--mid);
+      max-width: 540px; margin: 0 auto 2.5rem;
+    }
+    .hero-ctas { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--green); color: var(--white);
+      padding: .85rem 2rem; border-radius: 999px;
+      font-size: 1rem; font-weight: 700; text-decoration: none;
+      box-shadow: 0 4px 18px rgba(45,106,79,.3);
+      transition: transform .15s, box-shadow .15s;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(45,106,79,.4); }
+    .btn-secondary {
+      background: transparent; color: var(--green);
+      padding: .85rem 2rem; border-radius: 999px;
+      font-size: 1rem; font-weight: 600; text-decoration: none;
+      border: 2px solid var(--green);
+      transition: background .15s;
+    }
+    .btn-secondary:hover { background: rgba(45,106,79,.06); }
+    .hero-note { margin-top: 1.2rem; font-size: .85rem; color: var(--light); }
+
+    /* ── STORY ── */
+    .story {
+      max-width: 780px; margin: 0 auto;
+      padding: 5rem 2rem;
+    }
+    .story-label { font-size: .8rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--green); margin-bottom: .8rem; }
+    .story h2 { font-size: 1.9rem; font-weight: 800; line-height: 1.25; margin-bottom: 1.5rem; letter-spacing: -.3px; }
+    .story p { font-size: 1.05rem; color: var(--mid); margin-bottom: 1.2rem; line-height: 1.75; }
+    .story p strong { color: var(--dark); }
+
+    /* ── DIVIDER ── */
+    .divider { text-align: center; padding: 1rem 0; color: var(--green); font-size: 1.5rem; }
+
+    /* ── FEATURES ── */
+    .features { background: var(--cream); padding: 5rem 2rem; }
+    .features-inner { max-width: 1100px; margin: 0 auto; }
+    .section-title { text-align: center; font-size: 1.9rem; font-weight: 800; margin-bottom: .6rem; letter-spacing: -.3px; }
+    .section-sub { text-align: center; color: var(--mid); font-size: 1.05rem; max-width: 500px; margin: 0 auto 3.5rem; }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 1.5rem;
+    }
+    .feature-card {
+      background: var(--white); border-radius: var(--radius);
+      padding: 2rem; box-shadow: var(--shadow);
+      transition: transform .15s;
+    }
+    .feature-card:hover { transform: translateY(-3px); }
+    .feature-icon { font-size: 2rem; margin-bottom: 1rem; }
+    .feature-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: .5rem; }
+    .feature-card p { font-size: .92rem; color: var(--mid); line-height: 1.6; }
+
+    /* ── USP STRIP ── */
+    .usp-strip {
+      background: var(--green);
+      color: var(--white);
+      padding: 2rem;
+      text-align: center;
+    }
+    .usp-strip p { font-size: 1.15rem; font-weight: 600; max-width: 700px; margin: 0 auto; line-height: 1.5; }
+    .usp-strip span { opacity: .75; display: block; font-size: .9rem; margin-top: .4rem; font-weight: 400; }
+
+    /* ── COMPARE ── */
+    .compare { padding: 5rem 2rem; }
+    .compare-inner { max-width: 900px; margin: 0 auto; }
+    .compare-table { width: 100%; border-collapse: collapse; margin-top: 2.5rem; font-size: .95rem; }
+    .compare-table th {
+      background: var(--green); color: var(--white);
+      padding: .9rem 1.2rem; text-align: left; font-weight: 700;
+    }
+    .compare-table th:first-child { border-radius: var(--radius) 0 0 0; }
+    .compare-table th:last-child { border-radius: 0 var(--radius) 0 0; }
+    .compare-table th.highlight { background: var(--green-mid); }
+    .compare-table td { padding: .85rem 1.2rem; border-bottom: 1px solid #eee; }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table tr:nth-child(even) td { background: var(--cream); }
+    .tick { color: var(--green); font-weight: 700; }
+    .cross { color: #ccc; }
+    .highlight-col { font-weight: 700; color: var(--green); }
+
+    /* ── PRICING ── */
+    .pricing { background: var(--cream); padding: 5rem 2rem; }
+    .pricing-inner { max-width: 900px; margin: 0 auto; }
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem; margin-top: 3rem;
+    }
+    .price-card {
+      background: var(--white); border-radius: var(--radius);
+      padding: 2rem; box-shadow: var(--shadow); position: relative;
+      text-align: center;
+    }
+    .price-card.featured {
+      border: 2px solid var(--green);
+    }
+    .price-badge {
+      position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+      background: var(--green); color: var(--white);
+      font-size: .72rem; font-weight: 700; letter-spacing: .08em;
+      text-transform: uppercase; padding: .2rem .9rem; border-radius: 999px;
+    }
+    .price-tier { font-size: .85rem; font-weight: 700; text-transform: uppercase; color: var(--light); margin-bottom: .6rem; letter-spacing: .08em; }
+    .price-amount { font-size: 2.8rem; font-weight: 800; color: var(--dark); line-height: 1; }
+    .price-amount sub { font-size: 1rem; font-weight: 400; color: var(--mid); }
+    .price-desc { font-size: .88rem; color: var(--mid); margin: .8rem 0 1.5rem; }
+    .price-features { list-style: none; text-align: left; font-size: .88rem; color: var(--mid); margin-bottom: 1.8rem; }
+    .price-features li { padding: .3rem 0; }
+    .price-features li::before { content: "✓ "; color: var(--green); font-weight: 700; }
+    .btn-price {
+      display: block; text-align: center;
+      background: var(--green); color: var(--white);
+      padding: .75rem; border-radius: 999px;
+      font-weight: 700; text-decoration: none; font-size: .95rem;
+      transition: background .2s;
+    }
+    .btn-price:hover { background: var(--green-mid); }
+    .btn-price.outline {
+      background: transparent; border: 2px solid var(--green); color: var(--green);
+    }
+    .btn-price.outline:hover { background: rgba(45,106,79,.06); }
+    .price-lifetime-note { text-align: center; font-size: .85rem; color: var(--light); margin-top: 1.5rem; }
+
+    /* ── TESTIMONIAL ── */
+    .testimonial {
+      max-width: 700px; margin: 5rem auto;
+      padding: 0 2rem; text-align: center;
+    }
+    .testimonial blockquote {
+      font-size: 1.3rem; font-style: italic; color: var(--mid);
+      line-height: 1.6; margin-bottom: 1rem;
+    }
+    .testimonial cite { font-size: .9rem; color: var(--light); font-style: normal; }
+
+    /* ── FINAL CTA ── */
+    .final-cta {
+      background: linear-gradient(160deg, #1a3a2a 0%, var(--green) 100%);
+      color: var(--white); text-align: center;
+      padding: 5rem 2rem;
+    }
+    .final-cta h2 { font-size: 2rem; font-weight: 800; margin-bottom: 1rem; letter-spacing: -.3px; }
+    .final-cta p { font-size: 1.1rem; opacity: .8; max-width: 480px; margin: 0 auto 2.5rem; }
+    .btn-white {
+      display: inline-block;
+      background: var(--white); color: var(--green);
+      padding: .9rem 2.2rem; border-radius: 999px;
+      font-size: 1rem; font-weight: 700; text-decoration: none;
+      box-shadow: 0 4px 18px rgba(0,0,0,.2);
+      transition: transform .15s;
+    }
+    .btn-white:hover { transform: translateY(-2px); }
+    .final-note { margin-top: 1.2rem; font-size: .85rem; opacity: .6; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #111; color: #999;
+      text-align: center; padding: 2rem;
+      font-size: .85rem;
+    }
+    footer a { color: #777; text-decoration: none; }
+    footer a:hover { color: #bbb; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .hero { padding: 4rem 1.5rem 3.5rem; }
+      .story, .compare-inner, .pricing-inner, .features-inner { padding: 0 1rem; }
+      .compare-table { font-size: .82rem; }
+      .compare-table td, .compare-table th { padding: .6rem .8rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <span class="nav-logo">MahlZeit</span>
+  <a href="https://mahlzeit.o-v-k.ch/app" class="nav-cta">Jetzt gratis starten</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <span class="hero-badge">Jetzt live – Schweiz</span>
+  <h1>Nie mehr <span>"Was choche mir hüt?"</span></h1>
+  <p>MahlZeit erstellt dir deinen Menü-Wocheplan per Klick. Abgestimmt aufs Wetter, die Saison und dini Familie.</p>
+  <div class="hero-ctas">
+    <a href="https://mahlzeit.o-v-k.ch/register" class="btn-primary">Gratis starten</a>
+    <a href="#features" class="btn-secondary">Features entdecken</a>
+  </div>
+  <p class="hero-note">Erste Woche gratis &middot; Kein Kreditkarte nötig &middot; Webapp – kein Download</p>
+</section>
+
+<!-- STORY -->
+<section class="story">
+  <p class="story-label">Die Geschichte dahinter</p>
+  <h2>Vom Fresszettel zur App</h2>
+  <p>
+    Meine Frau und ich plane gern im Voraus. So auch üsi Menüs. Wir haben jeweils uf Fresszettelchen üsern Wocheplan aufskizziert und überlegt, was wir an jedem Tag choche sölle. Hierbei hend wir nach <strong>Saisonalität, Wetter und Luscht</strong> üsi Menüs zämmegsuecht – teils us Kochbücher, teils online, teils us @cuiselin.
+  </p>
+  <p>
+    Danach war leider d'Arbeit no nid getan. Meine Frau mösste dann us de usgwählte Rezept die Zutaten rausschriibe, schaue was im Reduit no isch und was möglichst bald verbraucht werde söll.
+  </p>
+  <p>
+    <strong>Mir hend üs überlegt wie mir dä Prozess vereinfache chönne – und hend MahlZeit baut.</strong>
+  </p>
+  <p>
+    Üsi über 170 Rezept sind nid irgendwo zusammengesucht. Céline kocht seit Jahren für @cuiselin – üsi Rezept sind getestet, geprüft und geliebt. MahlZeit ist üsi persönliche Küchenhelferin. Jetzt teile mir sie mit üch.
+  </p>
+</section>
+
+<div class="divider">&#9654;</div>
+
+<!-- USP STRIP -->
+<div class="usp-strip">
+  <p>"Der einzige Menüplaner, der weiss wie das Wetter morgen wird."
+    <span>KI-Wochenplan + Live-Wetter + Saison + Schweizer Supermarkt-Aktionen + Chuchichäschtli</span>
+  </p>
+</div>
+
+<!-- FEATURES -->
+<section class="features" id="features">
+  <div class="features-inner">
+    <h2 class="section-title">Was macht MahlZeit?</h2>
+    <p class="section-sub">Alles was du für die Wochenplanung brauchst – an einem Ort.</p>
+
+    <div class="feature-grid">
+
+      <div class="feature-card">
+        <div class="feature-icon">&#9925;</div>
+        <h3>Wetterbasierter Wocheplan</h3>
+        <p>MahlZeit schaut täglich wie das Wetter wird und schlägt passende Gerichte vor. Suppe bei Regen, Salat bei Sommerwärme.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">&#127809;</div>
+        <h3>Saisonal & ausgewogen</h3>
+        <p>Frühling, Sommer, Herbst oder Winter – die Vorschläge passen automatisch zur Jahreszeit. Flexitarisch-Modus: max. 1 Fleischgericht pro Woche.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">&#128722;</div>
+        <h3>Automatische Einkaufsliste</h3>
+        <p>Aus dem Wocheplan wird sofort eine Einkaufsliste – skaliert auf deine Haushaltsgrösse. PDF-Export. Live-Sync mit dem ganzen Haushalt.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">&#127968;</div>
+        <h3>Digitales Chuchichäschtli</h3>
+        <p>Erfasse was du daheim hast. MahlZeit zieht's automatisch von der Einkaufsliste ab – und schlägt Rezepte vor, die du heute schon kochen kannst.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">&#127860;</div>
+        <h3>172+ kuratierte Rezepte</h3>
+        <p>Kein anonymes Rezept-Dump. Jedes Gericht ist von uns ausgewählt und getestet – viele davon von Célines @cuiselin.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">&#128101;</div>
+        <h3>Haushalt teilen</h3>
+        <p>Planst du mit jemandem zusammen? Alle Haushaltsmitglieder sehen denselben Wocheplan und dieselbe Einkaufsliste – in Echtzeit.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">&#129297;</div>
+        <h3>Supermarkt-Aktionen</h3>
+        <p>Aktuelle Aktionen von Migros, Coop und Lidl werden direkt in der Einkaufsliste angezeigt. So sparst du ohne zu suchen.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">&#127760;</div>
+        <h3>Rezept-Import per KI</h3>
+        <p>Rezept aus dem Web oder aus einem Screenshot? MahlZeit liest es per KI aus und fügt es direkt in deine Sammlung ein.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">&#9200;</div>
+        <h3>Tages-Constraints</h3>
+        <p>Montagabend wenig Zeit? Mealprep am Sonntag? Definiere Regeln pro Wochentag – MahlZeit plant entsprechend.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section class="compare">
+  <div class="compare-inner">
+    <h2 class="section-title">MahlZeit vs. Alternativen</h2>
+    <p class="section-sub">Warum MahlZeit die einzige Lösung im DACH-Raum ist, die wirklich plant.</p>
+
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th class="highlight">MahlZeit</th>
+          <th>Choosy (DE)</th>
+          <th>fooby.ch</th>
+          <th>le menu</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>KI-Wochenplan</td>
+          <td class="tick highlight-col">&#10003; Vollautomatisch</td>
+          <td class="tick">&#10003;</td>
+          <td class="cross">Manuell</td>
+          <td class="cross">Newsletter</td>
+        </tr>
+        <tr>
+          <td>Wetterbasierte Planung</td>
+          <td class="tick highlight-col">&#10003; Einzigartig</td>
+          <td class="cross">–</td>
+          <td class="cross">–</td>
+          <td class="cross">–</td>
+        </tr>
+        <tr>
+          <td>Schweizer Supermarkt-Aktionen</td>
+          <td class="tick highlight-col">&#10003; Migros, Coop, Lidl</td>
+          <td class="cross">–</td>
+          <td class="cross">–</td>
+          <td class="cross">–</td>
+        </tr>
+        <tr>
+          <td>Digitales Chuchichäschtli</td>
+          <td class="tick highlight-col">&#10003;</td>
+          <td class="tick">&#10003;</td>
+          <td class="cross">–</td>
+          <td class="cross">–</td>
+        </tr>
+        <tr>
+          <td>Haushalt teilen (Gruppen)</td>
+          <td class="tick highlight-col">&#10003;</td>
+          <td class="cross">–</td>
+          <td class="cross">–</td>
+          <td class="cross">–</td>
+        </tr>
+        <tr>
+          <td>Kein App-Download nötig</td>
+          <td class="tick highlight-col">&#10003; Webapp</td>
+          <td class="cross">App erforderlich</td>
+          <td class="cross">App</td>
+          <td class="tick">&#10003;</td>
+        </tr>
+        <tr>
+          <td>Preis / Monat</td>
+          <td class="highlight-col">CHF 4.–</td>
+          <td>€ 5.99</td>
+          <td>Kostenlos*</td>
+          <td>Magazin-Abo</td>
+        </tr>
+        <tr>
+          <td>Schweizer Fokus</td>
+          <td class="tick highlight-col">&#10003;</td>
+          <td class="cross">DE-zentriert</td>
+          <td class="tick">&#10003;</td>
+          <td class="tick">&#10003;</td>
+        </tr>
+        <tr>
+          <td>Kuratierte Rezepte (getestet)</td>
+          <td class="tick highlight-col">&#10003; @cuiselin</td>
+          <td class="cross">–</td>
+          <td class="tick">&#10003;</td>
+          <td class="tick">&#10003;</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:.8rem;color:#aaa;margin-top:.8rem;">*fooby ist Coop-Marketingplattform, kein Planungs-Tool.</p>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="preise">
+  <div class="pricing-inner">
+    <h2 class="section-title">Eifach, fair, günstig</h2>
+    <p class="section-sub">Wähle das Modell das zu dir passt.</p>
+
+    <div class="pricing-grid">
+
+      <div class="price-card">
+        <p class="price-tier">Gratis</p>
+        <p class="price-amount">CHF&nbsp;0<sub></sub></p>
+        <p class="price-desc">Zum Kennenlernen</p>
+        <ul class="price-features">
+          <li>Rezepte durchstöbern</li>
+          <li>Manuelle Planung</li>
+          <li>Einkaufsliste (basic)</li>
+        </ul>
+        <a href="https://mahlzeit.o-v-k.ch/register" class="btn-price outline">Gratis registrieren</a>
+      </div>
+
+      <div class="price-card featured">
+        <span class="price-badge">Empfohlen</span>
+        <p class="price-tier">Jahresabo</p>
+        <p class="price-amount">CHF&nbsp;40<sub>/Jahr</sub></p>
+        <p class="price-desc">CHF 3.33 / Monat – 2 Monate gratis</p>
+        <ul class="price-features">
+          <li>KI-Wocheplan per Klick</li>
+          <li>Wetter- & Saisonplanung</li>
+          <li>Automatische Einkaufsliste</li>
+          <li>Digitales Chuchichäschtli</li>
+          <li>Haushalt teilen</li>
+          <li>Supermarkt-Aktionen</li>
+          <li>PDF-Export</li>
+        </ul>
+        <a href="https://mahlzeit.o-v-k.ch/register" class="btn-price">Jetzt abonnieren</a>
+      </div>
+
+      <div class="price-card">
+        <p class="price-tier">Monatsabo</p>
+        <p class="price-amount">CHF&nbsp;4<sub>/Monat</sub></p>
+        <p class="price-desc">Jederzeit kündbar</p>
+        <ul class="price-features">
+          <li>Alle Premium-Features</li>
+          <li>Flexibel ohne Bindung</li>
+        </ul>
+        <a href="https://mahlzeit.o-v-k.ch/register" class="btn-price outline">Monatlich starten</a>
+      </div>
+
+    </div>
+
+    <p class="price-lifetime-note">
+      Lifetime-Deal für die ersten 100 User: CHF 129.– einmalig – einmal zahlen, für immer geniessen.<br>
+      <a href="https://mahlzeit.o-v-k.ch/register" style="color:var(--green);font-weight:600;">Jetzt sichern &rarr;</a>
+    </p>
+  </div>
+</section>
+
+<!-- TESTIMONIAL PLACEHOLDER -->
+<section class="testimonial">
+  <blockquote>
+    "Ich habe jetzt zum ersten Mal seit Jahren keine Angst mehr vor dem Montag-Einkauf. MahlZeit macht einfach alles."
+  </blockquote>
+  <cite>– Erste User-Stimme (Platzhalter – ersetzen sobald Feedback vorhanden)</cite>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <h2>Probier's aus. Eine Woche gratis.</h2>
+  <p>Kein Kreditkarte, kein Risiko, kein App-Download. Einfach öffnen und loslegen.</p>
+  <a href="https://mahlzeit.o-v-k.ch/register" class="btn-white">Jetzt gratis starten</a>
+  <p class="final-note">Webapp &middot; Läuft auf Handy, Tablet und Desktop &middot; Kein Download</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>
+    &copy; 2026 MahlZeit &middot; von Oliver &amp; C&eacute;line &middot;
+    <a href="https://mahlzeit.o-v-k.ch">mahlzeit.o-v-k.ch</a> &middot;
+    <a href="https://instagram.com/cuiselin">@cuiselin</a>
+  </p>
+</footer>
+
+</body>
+</html>
