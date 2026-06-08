@@ -1,14 +1,17 @@
 export const dynamic = 'force-dynamic';
 
 /**
- * Merges the bundled seed recipes (data/recipes.json) into Redis.
+ * Schreibt die gebündelten Seed-Rezepte (data/recipes.json) autoritär nach Redis.
  *
- * Strategy:
- *  - Neue Rezepte (ID noch nicht in Redis) werden hinzugefügt.
- *  - Bestehende Rezepte werden aktualisiert, aber imageUrl / imageZutaten
- *    aus Redis bleiben erhalten, falls der Seed-Eintrag diese Felder nicht hat
- *    (null / undefined). So gehen online hochgeladene Bilder beim Seeden nicht verloren.
- *  - Rezepte, die in Redis aber nicht im Seed sind, bleiben unverändert.
+ * Strategy via Seed-Manifest:
+ *  - Ein "Seed-Manifest" (mz:recipes:seed_manifest) speichert die IDs des letzten Seeds.
+ *  - Beim Seeden gilt:
+ *      1. Seed-Rezepte → immer in Redis (mit Bild-URL-Erhalt aus Redis).
+ *      2. Redis-Rezepte die im alten Manifest waren, aber nicht mehr im neuen Seed
+ *         → werden ENTFERNT (absichtlich gelöscht).
+ *      3. Redis-Rezepte die NIE im Manifest waren (via Admin-Import hinzugefügt)
+ *         → bleiben ERHALTEN.
+ *  - So können Template-Rezepte sauber gelöscht werden, ohne Admin-importe zu verlieren.
  */
 
 import { NextResponse }                          from 'next/server';
@@ -16,6 +19,17 @@ import { getSession, ADMIN_EMAIL }               from '@/lib/auth';
 import { getTemplateRecipes, saveTemplateRecipes } from '@/lib/data';
 import seedRecipes                               from '../../../../../../data/recipes.json';
 import type { Recipe }                           from '@/types';
+
+// Inline Redis-Zugriff für das Manifest (kein Export nötig)
+import { Redis } from '@upstash/redis';
+const MANIFEST_KEY = 'mz:recipes:seed_manifest';
+
+function getRedis() {
+  return new Redis({
+    url:   process.env.UPSTASH_REDIS_REST_URL!,
+    token: process.env.UPSTASH_REDIS_REST_TOKEN!,
+  });
+}
 
 async function requireAdmin() {
   const session = await getSession();
@@ -30,37 +44,56 @@ export async function POST() {
   if (!process.env.UPSTASH_REDIS_REST_URL)
     return NextResponse.json({ error: 'Nur in Produktion verfügbar (Redis nicht konfiguriert).' }, { status: 400 });
 
-  // Bestehende Templates aus Redis laden, um Bilder zu bewahren
+  const redis = getRedis();
+
+  // Altes Seed-Manifest laden (IDs die beim letzten Seed vorhanden waren)
+  const oldManifest: string[] = (await redis.get<string[]>(MANIFEST_KEY)) ?? [];
+  const oldManifestSet = new Set(oldManifest);
+
+  // Bestehende Templates aus Redis laden
   const existing    = await getTemplateRecipes();
   const existingMap = new Map(existing.map((r) => [r.id, r]));
 
-  // Seed-Rezepte mit bestehenden Bild-URLs mergen
-  const seed = seedRecipes as Recipe[];
+  const seed    = seedRecipes as Recipe[];
+  const seedIds = new Set(seed.map((s) => s.id));
+
+  // 1. Seed-Rezepte mit bestehenden Bild-URLs mergen
   const merged: Recipe[] = seed.map((s) => {
     const ex = existingMap.get(s.id);
-    if (!ex) return s;                       // neues Rezept — direkt übernehmen
+    if (!ex) return s;
     return {
       ...s,
-      // Bild-URLs aus Redis erhalten, wenn Seed keinen Wert hat
       imageUrl:      s.imageUrl      ?? ex.imageUrl,
       imageZutaten:  s.imageZutaten  ?? ex.imageZutaten,
+      imageKochen:   s.imageKochen   ?? ex.imageKochen,
     };
   });
 
-  // Rezepte aus Redis, die nicht im Seed sind, anhängen (custom/unlisted)
+  // 2. Redis-Rezepte die NICHT im Seed sind:
+  //    - Im alten Manifest (= frühere Template-Rezepte) → ENTFERNEN (absichtlich gelöscht)
+  //    - Nicht im Manifest (= via Admin-Import hinzugefügt) → BEHALTEN
+  let removedCount = 0;
+  let preservedCount = 0;
   for (const ex of existing) {
-    if (!merged.some((m) => m.id === ex.id)) merged.push(ex);
+    if (seedIds.has(ex.id)) continue; // bereits in merged (seed)
+    if (oldManifestSet.has(ex.id)) {
+      removedCount++; // war im alten Seed, nicht mehr im neuen → löschen
+    } else {
+      merged.push(ex); // nie im Seed → Admin-Import → behalten
+      preservedCount++;
+    }
   }
+
+  // 3. Neues Manifest speichern (exakt die IDs des aktuellen Seeds)
+  await redis.set(MANIFEST_KEY, Array.from(seedIds));
 
   await saveTemplateRecipes(merged);
 
   return NextResponse.json({
-    ok: true,
-    seeded: seed.length,
-    total: merged.length,
-    preserved: merged.filter((m) => {
-      const s = seed.find((x) => x.id === m.id);
-      return s && m.imageUrl && !s.imageUrl;
-    }).length,
+    ok:        true,
+    seeded:    seed.length,
+    removed:   removedCount,
+    preserved: preservedCount,
+    total:     merged.length,
   });
 }

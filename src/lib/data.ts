@@ -52,7 +52,8 @@ const K = {
   promotions:    'mz:promotions',
   weather:       'mz:weather',
   // Global Ratings (per recipe, sichtbar fuer alle User)
-  recipeRatings: (id: string) => `mz:recipe:${id}:ratings`,
+  recipeRatings:    (id: string) => `mz:recipe:${id}:ratings`,
+  recipesSeedManifest: 'mz:recipes:seed_manifest', // IDs der letzten Seed-Operation
   // Group-scoped
   groupRecipes:        (g: string) => `mz:group:${g}:recipes`,     // custom recipes
   groupSettings:       (g: string) => `mz:group:${g}:settings`,
