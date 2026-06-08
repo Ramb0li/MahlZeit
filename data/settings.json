@@ -15,7 +15,7 @@
     "locationId": "2659811"
   },
   "showBreakfast": false,
-  "showLunch": true,
+  "showLunch": false,
   "showDinner": true,
   "theme": "ivory",
   "promotions": {

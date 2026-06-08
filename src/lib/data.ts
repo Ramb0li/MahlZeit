@@ -13,7 +13,7 @@
  * Legacy-globalen Pfad zurück (für Migrationsphase / Admin-Tools).
  */
 
-import type { Recipe, WeekPlan, AppSettings, PromotionsCache, WeatherCache, DayConstraint, ShoppingGroups, RecipeRating, Category, PantryItem } from '@/types';
+import type { Recipe, WeekPlan, AppSettings, PromotionsCache, WeatherCache, DayConstraint, ShoppingGroups, RecipeRating, Category, PantryItem, ShoppingListState } from '@/types';
 
 import seedRecipes     from '../../data/recipes.json';
 import seedSettings    from '../../data/settings.json';
@@ -59,6 +59,7 @@ const K = {
   groupConstraints:    (g: string) => `mz:group:${g}:constraints`,
   groupWeekPlan:       (g: string, w: string) => `mz:group:${g}:weekplan:${w}`,
   groupShoppingGroups: (g: string, w: string) => `mz:group:${g}:week:${w}:shopping_groups`,
+  groupShoppingState:  (g: string, w: string) => `mz:group:${g}:week:${w}:shopping_state`,
   groupFavorites:      (g: string)             => `mz:group:${g}:favorites`,
   groupPantry:         (g: string)             => `mz:group:${g}:pantry`,
 };
@@ -333,6 +334,32 @@ export async function saveShoppingGroups(weekId: string, groupId: string, groups
     return;
   }
   await getRedis().set(K.groupShoppingGroups(groupId, weekId), groups);
+}
+
+// ─── Shopping List State (pro Gruppe + Woche, shared unter Haushaltsmitgliedern) ────
+
+function emptyShoppingListState(): ShoppingListState {
+  return { checked: [], userPantry: [], overrides: {}, customItems: [], updatedAt: new Date(0).toISOString() };
+}
+
+export async function getShoppingListState(groupId: string, weekId: string): Promise<ShoppingListState> {
+  if (!USE_REDIS) {
+    const all = readJson<Record<string, Record<string, ShoppingListState>>>('group-shopping-state.json', {});
+    return all[groupId]?.[weekId] ?? emptyShoppingListState();
+  }
+  return (await getRedis().get<ShoppingListState>(K.groupShoppingState(groupId, weekId))) ?? emptyShoppingListState();
+}
+
+export async function saveShoppingListState(groupId: string, weekId: string, state: ShoppingListState): Promise<void> {
+  if (!USE_REDIS) {
+    const all = readJson<Record<string, Record<string, ShoppingListState>>>('group-shopping-state.json', {});
+    if (!all[groupId]) all[groupId] = {};
+    all[groupId][weekId] = state;
+    writeJson('group-shopping-state.json', all);
+    return;
+  }
+  // 60 Tage TTL — wird pro Woche gespeichert und ist zeitlich begrenzt relevant
+  await getRedis().set(K.groupShoppingState(groupId, weekId), state, { ex: 60 * 24 * 60 * 60 });
 }
 
 // ─── Promotions & Weather (global — nicht gruppen-spezifisch) ────────────────

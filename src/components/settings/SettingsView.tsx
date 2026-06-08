@@ -138,6 +138,9 @@ export function SettingsView({
   const locationWrapperRef = useRef<HTMLDivElement>(null);
   const locationDebounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const lastSavedLocationRef = useRef(initialSettings.weather?.location ?? '');
+  // Auto-save refs
+  const isInitialMount  = useRef(true);
+  const autoSaveTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // Schließe Dropdown bei Klick außerhalb
   useEffect(() => {
@@ -149,6 +152,23 @@ export function SettingsView({
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
+
+  // Auto-save: settings oder constraints geändert → nach 800ms automatisch speichern
+  // (nicht beim ersten Mount feuern)
+  useEffect(() => {
+    if (isInitialMount.current) { isInitialMount.current = false; return; }
+    if (autoSaveTimerRef.current) clearTimeout(autoSaveTimerRef.current);
+    autoSaveTimerRef.current = setTimeout(() => {
+      fetch('/api/settings', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ settings, constraints }),
+      }).catch(() => {});
+      onSettingsChange?.(settings);
+      onConstraintsChange?.(constraints);
+    }, 800);
+    return () => { if (autoSaveTimerRef.current) clearTimeout(autoSaveTimerRef.current); };
+  }, [settings, constraints]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const fetchLocationSuggestions = useCallback(async (query: string) => {
     if (query.trim().length < 2) { setLocationSuggestions([]); setLocationLoading(false); return; }
@@ -328,6 +348,8 @@ export function SettingsView({
   };
 
   const handleSave = async () => {
+    // Ausstehenden Auto-Save-Timer canceln, um Doppel-Request zu vermeiden
+    if (autoSaveTimerRef.current) { clearTimeout(autoSaveTimerRef.current); autoSaveTimerRef.current = null; }
     const locationChanged = settings.weather.location.trim() !== lastSavedLocationRef.current.trim();
     await fetch('/api/settings', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ settings, constraints }) });
     onSettingsChange?.(settings);

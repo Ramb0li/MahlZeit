@@ -1,10 +1,10 @@
 'use client';
 import { useState, useEffect, useCallback, useRef } from 'react';
-import { Check, Download, RefreshCw, Plus, Trash2, RotateCcw, X, ChevronDown } from 'lucide-react';
+import { Check, Download, RefreshCw, Plus, Trash2, RotateCcw, X, ChevronDown, PackageCheck } from 'lucide-react';
 import { getWeekId, getWeekDays, nextWeek, formatAmount } from '@/lib/utils';
 import { format } from 'date-fns';
 import { de } from 'date-fns/locale';
-import type { ShoppingList, ShoppingGroups } from '@/types';
+import type { ShoppingList, ShoppingGroups, ShoppingListState, CustomShoppingItem } from '@/types';
 
 const DAY_LABELS_SHORT = ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'];
 const GROUP_COLORS = [
@@ -64,23 +64,16 @@ const STORE_COLORS: Record<string, { bg: string; color: string }> = {
   lidl:   { bg: '#fffde7', color: '#f57f17' },
 };
 
-// ─── Types ────────────────────────────────────────────────────────────────────
-
-interface CustomItem {
-  id: string;
-  name: string;
-  amount: string;
-  unit: string;
-  category: string;
-  checked: boolean;
-}
-
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
-function readLS<T>(key: string, fallback: T): T {
-  if (typeof window === 'undefined') return fallback;
-  try { return JSON.parse(localStorage.getItem(key) ?? 'null') ?? fallback; }
-  catch { return fallback; }
+const EMPTY_STATE: ShoppingListState = {
+  checked: [], userPantry: [], overrides: {}, customItems: [], updatedAt: new Date(0).toISOString(),
+};
+
+/** "ca. 24g" wenn approx=true, sonst normale Formatierung */
+function formatItemAmount(amount: number, unit: string, approx?: boolean): string {
+  const base = formatAmount(amount, unit);
+  return approx ? `ca. ${base}` : base;
 }
 
 // ─── Component ────────────────────────────────────────────────────────────────
@@ -102,38 +95,93 @@ export function ShoppingListView() {
   const [groups, setGroups]           = useState<ShoppingGroups>([{ id: 'sg-1', dayIndices: [1,2,3,4,5,6,7] }]);
   const [activeGroupIdx, setActiveGroupIdx] = useState<number | null>(null); // null = alle
 
-  const [checked, setChecked]   = useState<Set<string>>(() => new Set(readLS(`mz-chk-${currentWeekId}`, [] as string[])));
-  const [deleted, setDeleted]   = useState<string[]>(() => readLS(`mz-del-${currentWeekId}`, [] as string[]));
-  const [overrides, setOverrides] = useState<Record<string, number>>(() => readLS(`mz-ov-${currentWeekId}`, {}));
+  // ─── Server-State (shared zwischen Haushaltsmitgliedern) ─────────────────
+  const [state, setState]       = useState<ShoppingListState>(EMPTY_STATE);
+  const [stateLoading, setStateLoading] = useState(true);
+  const stateRef       = useRef<ShoppingListState>(EMPTY_STATE);
+  const persistTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // Reload per-week localStorage state whenever the selected week changes
+  // ─── Debounced PATCH an Server ───────────────────────────────────────────
+  const persistState = useCallback((newState: ShoppingListState) => {
+    if (persistTimerRef.current) clearTimeout(persistTimerRef.current);
+    persistTimerRef.current = setTimeout(() => {
+      fetch(`/api/shopping-list/state?weekId=${weekId}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(newState),
+      }).catch(() => {});
+    }, 300);
+  }, [weekId]);
+
+  /** Optimistisches Update + debounced Persist */
+  const updateState = useCallback((updater: (s: ShoppingListState) => ShoppingListState) => {
+    setState(prev => {
+      const next = updater(prev);
+      stateRef.current = next;
+      persistState(next);
+      return next;
+    });
+  }, [persistState]);
+
+  // ─── State vom Server laden ───────────────────────────────────────────────
+  const loadState = useCallback(async () => {
+    try {
+      const res = await fetch(`/api/shopping-list/state?weekId=${weekId}`);
+      if (res.ok) {
+        const fresh = await res.json() as ShoppingListState;
+        setState(fresh);
+        stateRef.current = fresh;
+      }
+    } catch {}
+    setStateLoading(false);
+  }, [weekId]);
+
+  // ─── Polling + visibilitychange ───────────────────────────────────────────
   useEffect(() => {
-    setDeleted(readLS(`mz-del-${weekId}`, [] as string[]));
-    setOverrides(readLS(`mz-ov-${weekId}`, {} as Record<string, number>));
-    setChecked(new Set(readLS(`mz-chk-${weekId}`, [] as string[])));
-  }, [weekId]); // eslint-disable-line react-hooks/exhaustive-deps
+    setStateLoading(true);
+    loadState();
 
+    const interval = setInterval(async () => {
+      try {
+        const res = await fetch(`/api/shopping-list/state?weekId=${weekId}`);
+        if (res.ok) {
+          const fresh = await res.json() as ShoppingListState;
+          // Nur updaten wenn Server-Stand neuer als lokaler Stand
+          if (fresh.updatedAt > stateRef.current.updatedAt) {
+            setState(fresh);
+            stateRef.current = fresh;
+          }
+        }
+      } catch {}
+    }, 30_000);
+
+    const handleVisibility = () => {
+      if (document.visibilityState === 'visible') loadState();
+    };
+    document.addEventListener('visibilitychange', handleVisibility);
+
+    return () => {
+      clearInterval(interval);
+      document.removeEventListener('visibilitychange', handleVisibility);
+    };
+  }, [weekId, loadState]);
+
+  // ─── Edit state ──────────────────────────────────────────────────────────
   const [editKey, setEditKey] = useState<string | null>(null);
   const [editVal, setEditVal] = useState('');
   const editRef = useRef<HTMLInputElement>(null);
 
-  // Custom-Item Mengen-Bearbeitung
   const [editCustomId, setEditCustomId] = useState<string | null>(null);
   const [editCustomAmt, setEditCustomAmt] = useState('');
   const editCustomRef = useRef<HTMLInputElement>(null);
 
-  const [custom, setCustom] = useState<CustomItem[]>(() => readLS('mz-custom', [] as CustomItem[]));
   const [showAdd, setShowAdd] = useState(false);
   const [draft, setDraft] = useState({ name: '', amount: '', unit: 'Stk', category: 'Sonstiges' });
   const nameInputRef = useRef<HTMLInputElement>(null);
-  const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
+  const [collapsed, setCollapsed] = useState<Set<string>>(new Set(['Im Vorrat vorhanden']));
   const toggleCollapse = (cat: string) =>
     setCollapsed(prev => { const n = new Set(prev); n.has(cat) ? n.delete(cat) : n.add(cat); return n; });
 
-  useEffect(() => { localStorage.setItem(`mz-chk-${weekId}`, JSON.stringify(Array.from(checked))); }, [checked, weekId]);
-  useEffect(() => { localStorage.setItem(`mz-ov-${weekId}`,  JSON.stringify(overrides)); }, [overrides, weekId]);
-  useEffect(() => { localStorage.setItem('mz-custom',        JSON.stringify(custom));    }, [custom]);
-  useEffect(() => { localStorage.setItem(`mz-del-${weekId}`, JSON.stringify(deleted));   }, [deleted, weekId]);
   useEffect(() => { if (editKey && editRef.current) editRef.current.focus(); }, [editKey]);
   useEffect(() => { if (editCustomId && editCustomRef.current) editCustomRef.current.focus(); }, [editCustomId]);
   useEffect(() => { if (showAdd) nameInputRef.current?.focus(); }, [showAdd]);
@@ -149,13 +197,6 @@ export function ShoppingListView() {
         setList({});
       } else {
         setList(data);
-        // Soft-Delete-Cleanup: durchgestrichene Items, die nicht mehr in der frisch
-        // generierten Liste stehen (weil sich ein Menü geändert hat), entfernen — und
-        // veraltete Streich-Keys können so nicht wieder auftauchen.
-        const liveKeys = new Set<string>(
-          Object.values(data as ShoppingList).flat().map(i => `${i.name.toLowerCase()}_${i.unit}`)
-        );
-        setDeleted(prev => prev.filter(k => liveKeys.has(k)));
       }
     } finally { setLoading(false); }
   }, [weekId]);
@@ -186,14 +227,35 @@ export function ShoppingListView() {
     }
   };
 
+  // ─── Action-Funktionen ───────────────────────────────────────────────────
+
   const toggleChecked = (key: string) =>
-    setChecked(prev => { const n = new Set(prev); n.has(key) ? n.delete(key) : n.add(key); return n; });
+    updateState(s => ({
+      ...s,
+      checked: s.checked.includes(key)
+        ? s.checked.filter(k => k !== key)
+        : [...s.checked, key],
+    }));
 
   const toggleCustomChecked = (id: string) =>
-    setCustom(prev => prev.map(c => c.id === id ? { ...c, checked: !c.checked } : c));
+    updateState(s => ({
+      ...s,
+      customItems: s.customItems.map(c => c.id === id ? { ...c, checked: !c.checked } : c),
+    }));
 
-  const toggleDeleted = (key: string) =>
-    setDeleted(prev => prev.includes(key) ? prev.filter(k => k !== key) : [...prev, key]);
+  /** Zutat als "Im Vorrat vorhanden" markieren (PackageCheck) */
+  const markPantry = (key: string) =>
+    updateState(s => ({
+      ...s,
+      userPantry: s.userPantry.includes(key) ? s.userPantry : [...s.userPantry, key],
+    }));
+
+  /** Pantry-Markierung rückgängig machen */
+  const unmarkPantry = (key: string) =>
+    updateState(s => ({
+      ...s,
+      userPantry: s.userPantry.filter(k => k !== key),
+    }));
 
   const startEdit = (key: string, currentAmount: number) => {
     setEditKey(key);
@@ -203,24 +265,94 @@ export function ShoppingListView() {
   const commitEdit = (key: string, originalAmount: number) => {
     const val = parseFloat(editVal.replace(',', '.'));
     if (!isNaN(val) && val > 0) {
-      if (Math.abs(val - originalAmount) < 0.001) resetOverride(key);
-      else setOverrides(prev => ({ ...prev, [key]: val }));
+      if (Math.abs(val - originalAmount) < 0.001) {
+        resetOverride(key);
+      } else {
+        updateState(s => ({ ...s, overrides: { ...s.overrides, [key]: val } }));
+      }
     }
     setEditKey(null);
   };
 
   const resetOverride = (key: string) =>
-    setOverrides(prev => { const n = { ...prev }; delete n[key]; return n; });
+    updateState(s => {
+      const n = { ...s.overrides }; delete n[key];
+      return { ...s, overrides: n };
+    });
 
   const addCustom = () => {
     if (!draft.name.trim()) return;
-    const item: CustomItem = { id: `c-${Date.now()}`, name: draft.name.trim(), amount: draft.amount.trim(), unit: draft.unit.trim(), category: draft.category, checked: false };
-    setCustom(prev => [...prev, item]);
+    const item: CustomShoppingItem = {
+      id: `c-${Date.now()}`,
+      name: draft.name.trim(),
+      amount: draft.amount.trim(),
+      unit: draft.unit.trim(),
+      category: draft.category,
+      checked: false,
+    };
+    updateState(s => ({ ...s, customItems: [...s.customItems, item] }));
     setDraft({ name: '', amount: '', unit: 'Stk', category: 'Sonstiges' });
     setShowAdd(false);
   };
 
-  const removeCustom = (id: string) => setCustom(prev => prev.filter(c => c.id !== id));
+  const removeCustom = (id: string) =>
+    updateState(s => ({ ...s, customItems: s.customItems.filter(c => c.id !== id) }));
+
+  // ─── Abgeleitete Werte ───────────────────────────────────────────────────
+
+  /** Alle Items die als "Im Vorrat" gelten (API-Flag oder User-Markierung) */
+  const pantryKeys = new Set<string>([
+    ...Object.values(list).flat().filter(i => i.inPantry).map(i => `${i.name.toLowerCase()}_${i.unit}`),
+    ...state.userPantry,
+  ]);
+
+  const checkedSet  = new Set(state.checked);
+  const overrides   = state.overrides;
+  const custom      = state.customItems;
+
+  const buildOrderedCategories = () => {
+    const recipeCatKeys = Object.keys(list).filter(k => list[k]?.some(i => !pantryKeys.has(`${i.name.toLowerCase()}_${i.unit}`)));
+    const customCatKeys = custom.map(c => c.category);
+    const hasCategory   = (c: string) => recipeCatKeys.includes(c) || customCatKeys.includes(c);
+    const all = [
+      ...RECIPE_CATEGORY_ORDER.filter(hasCategory),
+      ...EXTRA_CATEGORIES.filter(hasCategory),
+      ...recipeCatKeys.filter(c => !ALL_CATEGORIES.includes(c)),
+      ...customCatKeys.filter(c => !ALL_CATEGORIES.includes(c)),
+    ];
+    return all.filter((c, i) => all.indexOf(c) === i);
+  };
+
+  const orderedCategories = buildOrderedCategories();
+
+  // Alle Pantry-Items (für eigene Gruppe am Ende)
+  const allPantryItems = Object.values(list).flat().filter(i =>
+    pantryKeys.has(`${i.name.toLowerCase()}_${i.unit}`)
+  );
+
+  // Zählung (Pantry-Items sind "erledigt" und werden nicht gezählt)
+  const totalItems = Object.values(list).flat().filter(i =>
+    !pantryKeys.has(`${i.name.toLowerCase()}_${i.unit}`)
+  ).length + custom.length;
+
+  const checkedCount = Array.from(checkedSet).filter(k => !pantryKeys.has(k)).length
+                     + custom.filter(c => c.checked).length;
+
+  const kwNum    = weekId.split('-W')[1] ?? '';
+  const dateFrom = weekDays[0] ? format(weekDays[0], 'd. MMM', { locale: de }) : '';
+  const dateTo   = weekDays[6] ? format(weekDays[6], 'd. MMM yyyy', { locale: de }) : '';
+
+  const inputStyle = {
+    border: '1px solid #e0d8ce',
+    backgroundColor: '#f7f4ee',
+    color: '#2c2420',
+    borderRadius: '10px',
+    padding: '7px 10px',
+    fontSize: '13px',
+    outline: 'none',
+  } as const;
+
+  // ─── PDF Export ───────────────────────────────────────────────────────────
 
   const exportPDF = async () => {
     const { default: jsPDF } = await import('jspdf');
@@ -256,7 +388,7 @@ export function ShoppingListView() {
     };
     const DEFAULT_CAT = { text: [106, 92, 80] as [number,number,number], bg: [244, 240, 236] as [number,number,number] };
 
-    // Header — Wordmark links + KW-Block rechts + Akzentlinie
+    // Header
     doc.setFont('helvetica', 'bold');
     doc.setFontSize(16);
     doc.setTextColor(...C.ink);
@@ -267,11 +399,10 @@ export function ShoppingListView() {
     doc.setTextColor(...C.muted);
     doc.text('EINKAUFSLISTE', m, 18);
 
-    // Artikel-Zusammenfassung unter dem Wordmark (gelöschte Items ausschliessen)
     const pdfTotalItems = Object.values(list).reduce(
-      (s, a) => s + a.filter(i => !deleted.includes(`${i.name.toLowerCase()}_${i.unit}`)).length, 0
+      (s, a) => s + a.filter(i => !pantryKeys.has(`${i.name.toLowerCase()}_${i.unit}`)).length, 0
     ) + custom.length;
-    const pdfCatCount   = buildOrderedCategories().length;
+    const pdfCatCount = buildOrderedCategories().length;
     doc.setFont('helvetica', 'normal');
     doc.setFontSize(7);
     doc.setTextColor(...C.ink2);
@@ -296,7 +427,6 @@ export function ShoppingListView() {
     doc.setFillColor(...C.accent);
     doc.rect(m, 26, pageW - 2 * m, 0.8, 'F');
 
-    // Two-column layout
     let yL = 31; let yR = 31;
     let col = 0;
 
@@ -331,25 +461,24 @@ export function ShoppingListView() {
 
       const allItems = [
         ...allCatItems
-          .filter(item => !deleted.includes(`${item.name.toLowerCase()}_${item.unit}`))
+          .filter(item => !pantryKeys.has(`${item.name.toLowerCase()}_${item.unit}`))
           .map(item => {
             const key = `${item.name.toLowerCase()}_${item.unit}`;
             const amount = overrides[key] ?? item.totalAmount;
             return {
               text: item.name,
-              qty: formatAmount(amount, item.unit),
-              done: checked.has(key),
-              inPantry: item.inPantry ?? false,
+              qty: formatItemAmount(amount, item.unit, item.approx),
+              done: checkedSet.has(key),
             };
           }),
         ...customInCat.map(c => ({
           text: c.name,
           qty: c.amount ? `${c.amount} ${c.unit}` : '',
           done: c.checked,
-          deleted: false,
-          inPantry: false,
         })),
       ];
+
+      if (!allItems.length) continue;
 
       // Category header
       doc.setFillColor(...catTheme.bg);
@@ -377,10 +506,8 @@ export function ShoppingListView() {
           doc.line(ix + 0.5, iy - 1.5, ix + 1.5, iy - 0.5);
           doc.line(ix + 1.5, iy - 0.5, ix + 3.5, iy - 3.2);
         }
-        // Name
         const nameLines = doc.splitTextToSize(it.text, colW - 24);
         doc.text(nameLines, ix + 6, iy);
-        // Qty right-aligned in muted
         if (it.qty) {
           doc.setFont('helvetica', 'bold');
           doc.setFontSize(8);
@@ -388,15 +515,6 @@ export function ShoppingListView() {
           doc.text(it.qty, ix + colW, iy, { align: 'right' });
         }
         advY(nameLines.length * 4.5 + 1);
-        // "Im Vorrat" label below item
-        if (it.inPantry) {
-          checkOverflow();
-          doc.setFont('helvetica', 'normal');
-          doc.setFontSize(6);
-          doc.setTextColor(80, 140, 85);
-          doc.text('Im Vorrat', getX() + 6, getY() + 1.5);
-          advY(4.5);
-        }
       }
       advY(4);
     }
@@ -415,40 +533,7 @@ export function ShoppingListView() {
     doc.save(`einkaufsliste-kw${weekId.split('-W')[1]}.pdf`);
   };
 
-  const buildOrderedCategories = () => {
-    const recipeCatKeys = Object.keys(list).filter(k => list[k]?.length);
-    const customCatKeys = custom.map(c => c.category);
-    const hasCategory   = (c: string) => recipeCatKeys.includes(c) || customCatKeys.includes(c);
-    const all = [
-      ...RECIPE_CATEGORY_ORDER.filter(hasCategory),
-      ...EXTRA_CATEGORIES.filter(hasCategory),
-      ...recipeCatKeys.filter(c => !ALL_CATEGORIES.includes(c)),
-      ...customCatKeys.filter(c => !ALL_CATEGORIES.includes(c)),
-    ];
-    return all.filter((c, i) => all.indexOf(c) === i);
-  };
-
-  const orderedCategories = buildOrderedCategories();
-  // Durchgestrichene (soft-deleted) Items zählen nicht zu den "zu kaufenden" Artikeln.
-  const deletedSet    = new Set(deleted);
-  const totalItems    = Object.values(list).reduce(
-    (s, a) => s + a.filter(i => !deletedSet.has(`${i.name.toLowerCase()}_${i.unit}`)).length, 0,
-  ) + custom.length;
-  const checkedCount  = Array.from(checked).filter(k => !deletedSet.has(k)).length
-                      + custom.filter(c => c.checked).length;
-  const kwNum         = weekId.split('-W')[1] ?? '';
-  const dateFrom      = weekDays[0] ? format(weekDays[0], 'd. MMM', { locale: de }) : '';
-  const dateTo        = weekDays[6] ? format(weekDays[6], 'd. MMM yyyy', { locale: de }) : '';
-
-  const inputStyle = {
-    border: '1px solid #e0d8ce',
-    backgroundColor: '#f7f4ee',
-    color: '#2c2420',
-    borderRadius: '10px',
-    padding: '7px 10px',
-    fontSize: '13px',
-    outline: 'none',
-  } as const;
+  // ─── Render ───────────────────────────────────────────────────────────────
 
   return (
     <div className="space-y-4">
@@ -565,7 +650,7 @@ export function ShoppingListView() {
       )}
 
       {/* Loading */}
-      {loading && (
+      {(loading || stateLoading) && (
         <div className="flex items-center justify-center py-12">
           <RefreshCw size={24} className="animate-spin" style={{ color: '#d0c8be' }} />
         </div>
@@ -635,23 +720,22 @@ export function ShoppingListView() {
       )}
 
       {/* Empty */}
-      {!loading && totalItems === 0 && orderedCategories.length === 0 && (
+      {!loading && !stateLoading && totalItems === 0 && orderedCategories.length === 0 && allPantryItems.length === 0 && (
         <div className="text-center py-12">
           <p className="text-sm" style={{ color: '#9a8c80' }}>Keine Einträge. Plane zuerst die Woche im Menüplan.</p>
         </div>
       )}
 
       {/* ── Category grid ──────────────────────────────────────────────── */}
-      {!loading && orderedCategories.length > 0 && (
+      {!loading && !stateLoading && orderedCategories.length > 0 && (
         <div className="mz-shop-grid">
           {orderedCategories.map((category) => {
-            const recipeItems = list[category] ?? [];
-            const customInCat = custom.filter(c => c.category === category);
+            const recipeItems    = (list[category] ?? []).filter(i => !pantryKeys.has(`${i.name.toLowerCase()}_${i.unit}`));
+            const customInCat    = custom.filter(c => c.category === category);
             if (!recipeItems.length && !customInCat.length) return null;
 
-            const visibleRecipeItems = recipeItems.filter(i => !deleted.includes(`${i.name.toLowerCase()}_${i.unit}`));
-            const catTotal   = visibleRecipeItems.length + customInCat.length;
-            const catChecked = visibleRecipeItems.filter(i => checked.has(`${i.name.toLowerCase()}_${i.unit}`)).length
+            const catTotal   = recipeItems.length + customInCat.length;
+            const catChecked = recipeItems.filter(i => checkedSet.has(`${i.name.toLowerCase()}_${i.unit}`)).length
                              + customInCat.filter(c => c.checked).length;
             const icon = CAT_ICONS[category] ?? '🛒';
 
@@ -693,12 +777,11 @@ export function ShoppingListView() {
                 {!collapsed.has(category) && <div>
                   {recipeItems.map((item) => {
                     const key          = `${item.name.toLowerCase()}_${item.unit}`;
-                    const isChecked    = checked.has(key);
+                    const isChecked    = checkedSet.has(key);
                     const isModified   = key in overrides;
                     const effectiveAmt = overrides[key] ?? item.totalAmount;
                     const isEditing    = editKey === key;
-                    const isDeleted    = deleted.includes(key);
-                    const isFaded      = isChecked || isDeleted;
+                    const isFaded      = isChecked;
 
                     return (
                       <div key={key} style={{ borderBottom: '1px solid #f7f4ee' }}>
@@ -776,20 +859,20 @@ export function ShoppingListView() {
                               : { color: '#9a8c80', cursor: 'pointer' }
                             }
                           >
-                            {formatAmount(effectiveAmt, item.unit)}
+                            {formatItemAmount(effectiveAmt, item.unit, item.approx)}
                           </button>
                         )}
 
-                        {/* Soft-delete */}
+                        {/* "Im Vorrat markieren" — PackageCheck (nur für Rezept-Items) */}
                         <button
-                          onClick={(e) => { e.stopPropagation(); toggleDeleted(key); }}
-                          title={isDeleted ? 'Wiederherstellen' : 'Entfernen'}
+                          onClick={(e) => { e.stopPropagation(); markPantry(key); }}
+                          title="Als vorrätig markieren"
                           className="shrink-0 p-1 rounded-lg opacity-0 hover:opacity-100 transition-all"
                           style={{ color: '#d0c8be' }}
-                          onMouseEnter={e => { (e.currentTarget as HTMLElement).style.opacity = '1'; (e.currentTarget as HTMLElement).style.color = '#c62828'; }}
+                          onMouseEnter={e => { (e.currentTarget as HTMLElement).style.opacity = '1'; (e.currentTarget as HTMLElement).style.color = '#2e7d32'; }}
                           onMouseLeave={e => { (e.currentTarget as HTMLElement).style.opacity = '0'; (e.currentTarget as HTMLElement).style.color = '#d0c8be'; }}
                         >
-                          <Trash2 size={12} />
+                          <PackageCheck size={12} />
                         </button>
 
                         {/* Reset override */}
@@ -805,24 +888,14 @@ export function ShoppingListView() {
                           </button>
                         )}
                       </div>
-                      {/* Recipe source + pantry indicator — pl-11 (44px) aligns under ingredient name text */}
-                      {(item.inPantry || (item.recipeNames?.length ?? 0) > 0) && (
+                      {/* Recipe source */}
+                      {(item.recipeNames?.length ?? 0) > 0 && (
                         <div className="pb-2 pr-4 pl-11 flex flex-wrap items-center gap-1.5" style={{ marginTop: -2 }}>
-                          {item.inPantry && (
-                            <span
-                              className="text-[10px] font-medium px-1.5 py-0.5 rounded-full"
-                              style={{ backgroundColor: '#e8f5e9', color: '#2e7d32' }}
-                            >
-                              Im Vorrat
-                            </span>
-                          )}
-                          {(item.recipeNames?.length ?? 0) > 0 && (
-                            <span className="text-xs" style={{ color: '#b0a090' }}>
-                              {item.recipeNames.length > 2
-                                ? `in ${item.recipeNames.length} Rezepten enthalten`
-                                : item.recipeNames.join(' · ')}
-                            </span>
-                          )}
+                          <span className="text-xs" style={{ color: '#b0a090' }}>
+                            {item.recipeNames.length > 2
+                              ? `in ${item.recipeNames.length} Rezepten enthalten`
+                              : item.recipeNames.join(' · ')}
+                          </span>
                         </div>
                       )}
                       </div>
@@ -866,7 +939,10 @@ export function ShoppingListView() {
                           onBlur={() => {
                             const val = parseFloat(editCustomAmt.replace(',', '.'));
                             if (!isNaN(val) && val > 0) {
-                              setCustom(prev => prev.map(c => c.id === item.id ? { ...c, amount: String(val) } : c));
+                              updateState(s => ({
+                                ...s,
+                                customItems: s.customItems.map(c => c.id === item.id ? { ...c, amount: String(val) } : c),
+                              }));
                             }
                             setEditCustomId(null);
                           }}
@@ -886,6 +962,7 @@ export function ShoppingListView() {
                           </span>
                         ) : null
                       )}
+                      {/* Papierkorb für manuelle Items */}
                       <button
                         onClick={(e) => { e.stopPropagation(); removeCustom(item.id); }}
                         className="shrink-0 p-1 rounded-lg opacity-0 hover:opacity-100 transition-all"
@@ -901,6 +978,82 @@ export function ShoppingListView() {
               </div>
             );
           })}
+        </div>
+      )}
+
+      {/* ── Im Vorrat vorhanden ────────────────────────────────────────── */}
+      {!loading && !stateLoading && allPantryItems.length > 0 && (
+        <div className="rounded-2xl overflow-hidden" style={{ border: '1px solid #c8e6c9', backgroundColor: '#fff' }}>
+          {/* Header */}
+          <div
+            className="flex items-center gap-2 px-4 py-3 cursor-pointer select-none"
+            style={{
+              borderBottom: collapsed.has('Im Vorrat vorhanden') ? 'none' : '1px solid #c8e6c9',
+              backgroundColor: '#f1f8e9',
+            }}
+            onClick={() => toggleCollapse('Im Vorrat vorhanden')}
+          >
+            <span style={{ fontSize: 18 }}>✅</span>
+            <span className="flex-1 text-sm font-semibold" style={{ color: '#2e7d32' }}>Im Vorrat vorhanden</span>
+            <span
+              className="text-xs font-bold px-2 py-0.5 rounded-full"
+              style={{ backgroundColor: '#c8e6c9', color: '#2e7d32' }}
+            >
+              {allPantryItems.length}
+            </span>
+            <ChevronDown
+              size={14}
+              style={{
+                color: '#4caf50',
+                transform: collapsed.has('Im Vorrat vorhanden') ? 'rotate(-90deg)' : 'rotate(0deg)',
+                transition: 'transform .2s',
+                flexShrink: 0,
+              }}
+            />
+          </div>
+
+          {/* Pantry items */}
+          {!collapsed.has('Im Vorrat vorhanden') && (
+            <div>
+              {allPantryItems.map((item) => {
+                const key = `${item.name.toLowerCase()}_${item.unit}`;
+                const isUserMarked = state.userPantry.includes(key);
+                return (
+                  <div
+                    key={key}
+                    className="flex items-center gap-3 px-4 py-2.5"
+                    style={{ borderBottom: '1px solid #f1f8e9' }}
+                  >
+                    <div
+                      className="shrink-0 w-4 h-4 rounded flex items-center justify-center"
+                      style={{ backgroundColor: '#4caf50', border: '2px solid #4caf50' }}
+                    >
+                      <Check size={9} color="#fff" strokeWidth={3} />
+                    </div>
+                    <span className="flex-1 text-sm" style={{ color: '#4a7a4e' }}>
+                      {item.name}
+                    </span>
+                    <span className="text-xs" style={{ color: '#81c784' }}>
+                      {formatItemAmount(item.totalAmount, item.unit, item.approx)}
+                    </span>
+                    {/* Rückgängig-Button (nur für user-markierte Items) */}
+                    {isUserMarked && (
+                      <button
+                        onClick={() => unmarkPantry(key)}
+                        title="Markierung aufheben"
+                        className="shrink-0 p-1 rounded-lg transition-colors"
+                        style={{ color: '#a5d6a7' }}
+                        onMouseEnter={e => (e.currentTarget.style.color = '#2e7d32')}
+                        onMouseLeave={e => (e.currentTarget.style.color = '#a5d6a7')}
+                      >
+                        <RotateCcw size={12} />
+                      </button>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          )}
         </div>
       )}
     </div>

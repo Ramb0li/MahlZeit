@@ -4,6 +4,7 @@ import { NextResponse } from 'next/server';
 import { getSessionWithGroup as getSession } from '@/lib/session';
 import { getWeekPlan, getRecipes, getSettings, getPromotions, getShoppingGroups, getPantry } from '@/lib/data';
 import { calculatePortions, scaleIngredientAmount, categorizeIngredient } from '@/lib/utils';
+import { normalizeUnit } from '@/lib/unitConversion';
 import type { ShoppingItem, ShoppingList, Promotion } from '@/types';
 
 export async function GET(request: Request) {
@@ -63,19 +64,22 @@ export async function GET(request: Request) {
       const targetPortions = portionOverrideArg ?? slotArg?.portionOverride ?? portionInfo.totalPortions;
       for (const ing of recipe.ingredients) {
         const scaled = scaleIngredientAmount(ing.amount, recipe.basePortions, targetPortions);
-        const key = `${ing.name.toLowerCase()}_${ing.unit}`;
+        // Einheiten-Normalisierung: EL/TL → g oder ml (für Cross-Unit-Aggregation)
+        const { amount: normAmt, unit: normUnit, approx } = normalizeUnit(ing.name, scaled, ing.unit);
+        const key = `${ing.name.toLowerCase()}_${normUnit}`;
         const category = categorizeIngredient(ing.name);
         const relatedPromos = allPromotions.filter((p) =>
           p.product.toLowerCase().includes(ing.name.toLowerCase().split(' ')[0])
         );
         if (aggregated[key]) {
-          aggregated[key].totalAmount += scaled;
+          aggregated[key].totalAmount += normAmt;
+          if (approx || aggregated[key].approx) aggregated[key].approx = true;
           if (!aggregated[key].recipeNames.includes(recipe.name)) aggregated[key].recipeNames.push(recipe.name);
           relatedPromos.forEach((p) => {
             if (!aggregated[key].promotions.find((ep) => ep.product === p.product)) aggregated[key].promotions.push(p);
           });
         } else {
-          aggregated[key] = { name: ing.name, totalAmount: scaled, unit: ing.unit, category, recipeNames: [recipe.name], promotions: relatedPromos, checked: false };
+          aggregated[key] = { name: ing.name, totalAmount: normAmt, unit: normUnit, category, recipeNames: [recipe.name], promotions: relatedPromos, checked: false, ...(approx && { approx: true }) };
         }
       }
     };

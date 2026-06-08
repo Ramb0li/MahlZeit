@@ -238,9 +238,29 @@ export interface ShoppingItem {
   promotions: Promotion[];
   checked: boolean;
   inPantry?: boolean;
+  approx?: boolean;   // true wenn Menge durch Einheiten-Konversion ermittelt wurde (z.B. EL → g)
 }
 
 export type ShoppingList = Record<string, ShoppingItem[]>;
+
+/** Manuell hinzugefügte Zutat in der Einkaufsliste */
+export interface CustomShoppingItem {
+  id:       string;
+  name:     string;
+  amount:   string;
+  unit:     string;
+  category: string;
+  checked:  boolean;
+}
+
+/** Server-seitiger State der Einkaufsliste (pro Gruppe + Woche, shared zwischen allen Haushaltsmitgliedern) */
+export interface ShoppingListState {
+  checked:     string[];                   // item-Keys "name_unit" die abgehakt sind
+  userPantry:  string[];                   // item-Keys die User als "bereits vorhanden" markiert haben
+  overrides:   Record<string, number>;     // item-Key → benutzerdefinierte Menge
+  customItems: CustomShoppingItem[];       // manuell hinzugefügte Zutaten
+  updatedAt:   string;                     // ISO-Timestamp, für Polling-Vergleich
+}
 
 export interface PantryItem {
   id: string;
