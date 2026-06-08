@@ -6,6 +6,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Link }                              from '@/i18n/navigation';
 import { LandingBleed }                      from '@/components/landing/LandingBleed';
 import { SiteFooter }                        from '@/components/landing/SiteFooter';
+import { PwaInstallButton }                  from '@/components/landing/PwaInstallButton';
 import { getLandingContent }                 from '@/lib/content';
 import type { LandingFeature }               from '@/lib/content';
 import { getSession }                        from '@/lib/auth';
@@ -117,6 +118,7 @@ export default async function LandingPage({ params }: Props) {
             <Link href="#features" className="mz-btn-soft lg" style={{ padding: '14px 22px', fontSize: 15 }}>
               {t('heroCta')}
             </Link>
+            <PwaInstallButton />
           </div>
           <p className="mz-lp-hero-note" style={{ marginTop: 14 }}>
             {t('heroNote')}
