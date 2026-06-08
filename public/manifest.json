@@ -1,13 +1,28 @@
 {
-  "name": "MahlZeitPlaner",
+  "id": "/",
+  "name": "MahlZeit — Familienmenüplaner",
   "short_name": "MahlZeit",
   "description": "Wöchentlicher Familienmenüplaner für die Schweiz",
-  "start_url": "/",
+  "start_url": "/de/app",
+  "scope": "/",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#FFF8F0",
-  "theme_color": "#4CAF50",
+  "theme_color": "#c0533f",
+  "categories": ["food", "lifestyle", "utilities"],
+  "lang": "de",
   "icons": [
-    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
   ]
 }

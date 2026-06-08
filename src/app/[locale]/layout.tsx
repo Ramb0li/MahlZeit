@@ -5,6 +5,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
+import { ServiceWorkerRegistration } from '@/components/ServiceWorkerRegistration';
 import '../globals.css';
 
 const fraunces = Fraunces({
@@ -51,6 +52,12 @@ export default async function LocaleLayout({ children, params }: Props) {
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <meta name="theme-color" content="#c0533f" />
+        {/* PWA / Add to Home Screen */}
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-title" content="MahlZeit" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="mobile-web-app-capable" content="yes" />
         {/* Synchrones Theme-Init vor React-Hydration, verhindert FOUC */}
         <script dangerouslySetInnerHTML={{ __html: `
           try {
@@ -63,6 +70,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
+        <ServiceWorkerRegistration />
       </body>
     </html>
   );
