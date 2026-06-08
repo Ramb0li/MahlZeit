@@ -1,20 +1,29 @@
 {
   "id": "fam-50",
-  "name": "Tortellini an Blunschi-Kräutersauce",
+  "name": "Tortellini an Kräutersauce",
   "category": "Pasta",
-  "timeMinutes": 25,
+  "timeMinutes": 15,
   "tags": [
-    "Vegetarisch"
+    "Vegetarisch",
+    "Mealprep-geeignet",
+    "Kinderfreundlich",
+    "Frühling",
+    "Sommer",
+    "Herbst",
+    "Winter",
+    "Mittagsgericht",
+    "Abendgericht",
+    "Italienisch"
   ],
   "weatherType": "neutral",
-  "source": "Familien-Rezeptbuch",
+  "source": "MahlZeit",
   "basePortions": 4,
-  "description": "Tortellini mit aromatischer Blunschi-Kräutersauce.",
+  "description": "Tortellini mit aromatischer-Kräutersauce",
   "ingredients": [
     {
       "name": "Tortellini mit Spinatfüllung",
-      "amount": 400,
-      "unit": "g",
+      "amount": 1,
+      "unit": "kg",
       "perPortions": 4
     },
     {
@@ -30,32 +39,32 @@
       "perPortions": 4
     },
     {
-      "name": "Weisswein",
-      "amount": 2,
+      "name": "Weisswein ",
+      "amount": 1,
       "unit": "dl",
       "perPortions": 4
     },
     {
       "name": "Rahm",
-      "amount": 5,
+      "amount": 3,
       "unit": "dl",
       "perPortions": 4
     },
     {
       "name": "Schnittlauch",
-      "amount": 0.5,
+      "amount": 1,
       "unit": "Bund",
       "perPortions": 4
     },
     {
       "name": "Petersilie",
-      "amount": 0.5,
+      "amount": 1,
       "unit": "Bund",
       "perPortions": 4
     },
     {
       "name": "Basilikum",
-      "amount": 0.5,
+      "amount": 1,
       "unit": "Bund",
       "perPortions": 4
     },
@@ -88,13 +97,20 @@
       "amount": 1,
       "unit": "Prise",
       "perPortions": 4
+    },
+    {
+      "name": "Reibkäse",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 4
     }
   ],
   "steps": [
-    "Zwiebel in Butter andämpfen, mit Weisswein ablöschen.",
-    "Bouillon, Curry, Provence-Kräuter, Kräuter beifügen.",
-    "Rahm dazugeben, würzen, kurz köcheln.",
-    "Tortellini nach Anleitung kochen, mit Sauce servieren."
+    "1. Zwiebel hacken. Schnittlauch fein schneiden. Petersilie und Basilikum hacken.",
+    "2. Zwiebelnin Butter andämpfen, mit Weisswein ablöschen (anstelle von Weiswein kann auch Bouillon verwendet werden).",
+    "3. Bouillon, Curry, Provence-Kräuter und frische Kräuter beifügen.",
+    "4. Rahm dazugeben, würzen, kurz köcheln lassen.",
+    "5. Tortellini nach Anleitung kochen, mit Sauce und Reibkäse servieren."
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fam-50-1780699402158.jpg",
   "imageZutaten": null,

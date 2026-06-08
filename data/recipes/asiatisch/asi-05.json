@@ -111,11 +111,17 @@
     "Ramen-Nudeln in Salzwasser ca. 4 Min. kochen, abtropfen lassen.",
     "Nudeln und Tofu in Schüsseln verteilen, heisse Suppe darübergiessen. Mit Erdnüssen und Koriander garnieren."
   ],
-  "tips": "Mit Sesam, Limette oder frischer Chili nach Belieben garnieren.",
-  "imageUrl": null,
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/thaila-ndische-erdnuss-nudelsuppe-1780949095716.jpg",
   "tags": [
     "Vegan",
-    "Asiatisch"
+    "Asiatisch",
+    "Vegetarisch",
+    "Mealprep-geeignet",
+    "Winter",
+    "Herbst",
+    "Frühling",
+    "Mittagsgericht",
+    "Abendgericht"
   ],
   "dietCategory": "vegan",
   "allergens": [
@@ -130,5 +136,7 @@
     "fat": 35.8,
     "carbs": 52.4,
     "fiber": 5.2
-  }
+  },
+  "imageZutaten": null,
+  "imageKochen": null
 }

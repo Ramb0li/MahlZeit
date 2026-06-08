@@ -87,5 +87,6 @@
     "carbs": 3.2,
     "fiber": 1.8
   },
-  "dietCategory": "fish"
+  "dietCategory": "fish",
+  "imageZutaten": null
 }

@@ -68,5 +68,6 @@
     "carbs": 34.2,
     "fiber": 11.2
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "imageZutaten": null
 }

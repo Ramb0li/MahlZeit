@@ -1,8 +1,8 @@
 {
   "id": "ei-12",
-  "name": "Shakshuka",
+  "name": "Shakshuka mit Feta",
   "category": "Vegetarische Hauptgerichte",
-  "timeMinutes": 45,
+  "timeMinutes": 35,
   "ingredients": [
     {
       "name": "Eier",
@@ -65,47 +65,70 @@
       "perPortions": 4
     },
     {
-      "name": "Feta (zerbröselt)",
+      "name": "Feta ",
       "amount": 100,
       "unit": "g",
       "perPortions": 4
     },
     {
-      "name": "Koriander und Petersilie",
-      "amount": 0.5,
-      "unit": "Bund",
+      "name": "Olivenöl",
+      "amount": 1.25,
+      "unit": "EL",
       "perPortions": 4
     },
     {
-      "name": "Bratfett",
+      "name": "Tomatenmark",
       "amount": 1,
       "unit": "EL",
       "perPortions": 4
     },
     {
-      "name": "Salz und Pfeffer",
+      "name": "Salz",
       "amount": 1,
       "unit": "Prise",
       "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Petersilie",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Koriander",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
     }
   ],
-  "weatherType": "neutral",
-  "source": "Swissmilk",
+  "weatherType": "kalt",
+  "source": "MahlZeit",
   "basePortions": 4,
-  "description": "Nordafrikanischer Klassiker: pochierte Eier in einer würzigen Paprika-Tomaten-Sauce mit Feta.",
+  "description": "Ein traditionelles nordafrikanisches Gericht mit pochierten Eiern in würziger Tomatensauce - schnell zubereitet und wandelbar. Perfektes Seelenfutter, das sowohl als Frühstück als auch als Mittag- und Abendessen funktioniert.",
   "steps": [
-    "Bratfett in einer grossen Pfanne erhitzen. Peperoni in Streifen, Zwiebeln und Knoblauch fein schneiden. Ca. 5 Min. bei mittlerer Hitze andünsten.",
-    "Tomaten und Gewürze (inkl. Zimtstange) zugeben. Unter gelegentlichem Rühren 20–25 Min. offen köcheln bis die Sauce eindickt.",
-    "Feta zugeben und abschmecken. Zimtstange entfernen.",
-    "Vier Mulden in die Sauce drücken. Jeweils ein Ei hineinsetzen. Zugedeckt 8–10 Min. pochieren bis Eiweiss gestockt, Eigelb noch weich.",
-    "Mit frischen Kräutern garnieren und mit Baguette oder Fladenbrot servieren."
+    "1. Zwiebel und Peperoni würfeln, Knoblauch hacken.",
+    "2. In einer grossen Pfanne Olivenöl erhitzen. Zwiebel und Peperoni ca. 3 Minuten andünsten, dann Gewürze (Paprika, Kreuzkümmel, Cayennepfeffer), Knoblauch und Tomatenmark kurz mitrösten.",
+    "3. Gehackte Tomaten und Zimtstange dazugeben. Unter gelegentlichem Rühren 20 Minuten offen köcheln lassen bis die Sauce eindickt.",
+    "4. Zimtstange entfernen. Feta in grobe Stücke bröckeln, die Hälfte in die Sauce geben. Mit Salz und Pfeffer abschmecken.",
+    "5. Mit einem Löffel Mulden in die Sauce drücken, jeweils ein Ei hineingleiten lassen. Zugedeckt 6–8 Minuten garen bis Eiweiss gestockt, Eigelb noch weich.",
+    "6. Mit restlichem Feta und frischen Kräutern garnieren. Mit Brot servieren."
   ],
-  "tips": "Schmeckt auch als Brunch. Die Sauce kann gut vorbereitet werden – Eier erst kurz vor dem Servieren hineinsetzen.",
-  "imageUrl": null,
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-08-1780870240294.jpg",
   "tags": [
     "Vegetarisch",
     "Orientalisch",
-    "Mittagsgericht"
+    "Mittagsgericht",
+    "Kinderfreundlich",
+    "Frühling",
+    "Herbst",
+    "Winter",
+    "Abendgericht"
   ],
   "dietCategory": "vegetarian",
   "allergens": [
@@ -118,5 +141,7 @@
     "fat": 18.4,
     "carbs": 20.3,
     "fiber": 5.2
-  }
+  },
+  "imageZutaten": null,
+  "imageKochen": null
 }

@@ -59,7 +59,7 @@
   "description": "Vegane Bolognese aus Linsen und Gemüse.",
   "steps": [],
   "tips": "",
-  "imageUrl": null,
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/fvt-03-1780871671442.jpg",
   "tags": [
     "Mealprep-geeignet",
     "Mittagsgericht",
@@ -77,5 +77,6 @@
     "carbs": 80.6,
     "fiber": 12.4
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "imageZutaten": null
 }

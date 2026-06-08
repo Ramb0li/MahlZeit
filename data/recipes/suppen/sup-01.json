@@ -1,6 +1,6 @@
 {
   "id": "sup-01",
-  "name": "Kürbissuppe mit Kartoffel, Ingwer und Curry",
+  "name": "Kürbis-Kokos-Suppe",
   "category": "Suppen, Eintöpfe & Currys",
   "timeMinutes": 35,
   "ingredients": [
@@ -30,8 +30,8 @@
     },
     {
       "name": "Gemüsebrühe",
-      "amount": 1000,
-      "unit": "ml",
+      "amount": 1,
+      "unit": "l",
       "perPortions": 4
     },
     {
@@ -53,14 +53,16 @@
     "Mit Stabmixer pürieren. Mit Salz und Pfeffer abschmecken.",
     "Mit Kokosmilch, Kürbiskernen und Chiliflocken garnieren."
   ],
-  "tips": "",
-  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---sup-01-1-ku-rbis-kokos-suppe--1780579271952.jpeg",
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/8974f249-b14f-4b36-81d7-a62b25046c65-1780948312054.jpg",
   "tags": [
     "Mealprep-geeignet",
     "Mittagsgericht",
     "Herbst",
     "Winter",
-    "Vegan"
+    "Vegan",
+    "Kinderfreundlich",
+    "Abendgericht",
+    "Vegetarisch"
   ],
   "dietCategory": "vegan",
   "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---sup-01-2-ku-rbis-kokos-suppe--1780579300744.jpeg",
@@ -73,5 +75,6 @@
     "fat": 11.2,
     "carbs": 38.6,
     "fiber": 5.8
-  }
+  },
+  "imageKochen": null
 }

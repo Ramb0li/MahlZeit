@@ -254,7 +254,8 @@
       "carbs": 44.2,
       "fiber": 6.8
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "imageZutaten": null
   },
   {
     "id": "ei-04",
@@ -386,7 +387,8 @@
       "carbs": 3.8,
       "fiber": 1.2
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "imageZutaten": null
   },
   {
     "id": "ei-06",
@@ -521,112 +523,8 @@
       "carbs": 46.2,
       "fiber": 4.5
     },
-    "dietCategory": "vegetarian"
-  },
-  {
-    "id": "ei-08",
-    "name": "Shakshuka mit Feta",
-    "category": "Vegetarische Hauptgerichte",
-    "timeMinutes": 25,
-    "ingredients": [
-      {
-        "name": "Eier",
-        "amount": 8,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Passierte Tomaten",
-        "amount": 700,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Rote Peperoni",
-        "amount": 2,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Zwiebel",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Knoblauch",
-        "amount": 3,
-        "unit": "Zehen",
-        "perPortions": 4
-      },
-      {
-        "name": "Feta",
-        "amount": 150,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Olivenöl",
-        "amount": 3,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Kreuzkümmel",
-        "amount": 1,
-        "unit": "TL",
-        "perPortions": 4
-      },
-      {
-        "name": "Paprikapulver (geräuchert)",
-        "amount": 1,
-        "unit": "TL",
-        "perPortions": 4
-      },
-      {
-        "name": "Chiliflocken",
-        "amount": 0.5,
-        "unit": "TL",
-        "perPortions": 4
-      },
-      {
-        "name": "Frischer Koriander oder Petersilie",
-        "amount": 1,
-        "unit": "Bund",
-        "perPortions": 4
-      }
-    ],
-    "weatherType": "neutral",
-    "source": "cuiseline",
-    "basePortions": 4,
-    "description": "Pochierte Eier in würziger Tomatensauce — das klassische nordafrikanische Gericht, das zum Frühstück, Mittag- oder Abendessen passt.",
-    "steps": [
-      "Zwiebel und Peperoni würfeln, Knoblauch hacken. In einer grossen Pfanne (mit Deckel) Olivenöl erhitzen.",
-      "Zwiebeln 3 Minuten dünsten, dann Peperoni und Gewürze (Kreuzkümmel, Paprika, Chili) 2 Minuten mitrösten.",
-      "Knoblauch hinzufügen, kurz anbraten. Passierte Tomaten dazugiessen, mit Salz abschmecken und 10 Minuten köcheln.",
-      "Feta in grobe Stücke bröckeln, die Hälfte in die Sauce geben.",
-      "Mit einem Löffel Mulden in die Sauce drücken, Eier hineingleiten lassen. Deckel drauf, 6–8 Minuten garen bis Eiweiss gestockt, Dotter noch weich.",
-      "Mit restlichem Feta und frischen Kräutern garnieren. Mit Brot servieren."
-    ],
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-08-1780699167676.jpg",
-    "tags": [
-      "Mittagsgericht",
-      "Vegetarisch"
-    ],
-    "imageZutaten": null,
-    "imageKochen": null,
-    "allergens": [
-      "ei",
-      "milch"
-    ],
-    "nutrition": {
-      "kcal": 398,
-      "protein": 22.4,
-      "fat": 27.8,
-      "carbs": 15.3,
-      "fiber": 4.2
-    },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "imageZutaten": null
   },
   {
     "id": "ei-09",
@@ -893,9 +791,9 @@
   },
   {
     "id": "ei-12",
-    "name": "Shakshuka",
+    "name": "Shakshuka mit Feta",
     "category": "Vegetarische Hauptgerichte",
-    "timeMinutes": 45,
+    "timeMinutes": 35,
     "ingredients": [
       {
         "name": "Eier",
@@ -958,47 +856,70 @@
         "perPortions": 4
       },
       {
-        "name": "Feta (zerbröselt)",
+        "name": "Feta ",
         "amount": 100,
         "unit": "g",
         "perPortions": 4
       },
       {
-        "name": "Koriander und Petersilie",
-        "amount": 0.5,
-        "unit": "Bund",
+        "name": "Olivenöl",
+        "amount": 1.25,
+        "unit": "EL",
         "perPortions": 4
       },
       {
-        "name": "Bratfett",
+        "name": "Tomatenmark",
         "amount": 1,
         "unit": "EL",
         "perPortions": 4
       },
       {
-        "name": "Salz und Pfeffer",
+        "name": "Salz",
         "amount": 1,
         "unit": "Prise",
         "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Petersilie",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Koriander",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
       }
     ],
-    "weatherType": "neutral",
-    "source": "Swissmilk",
+    "weatherType": "kalt",
+    "source": "MahlZeit",
     "basePortions": 4,
-    "description": "Nordafrikanischer Klassiker: pochierte Eier in einer würzigen Paprika-Tomaten-Sauce mit Feta.",
+    "description": "Ein traditionelles nordafrikanisches Gericht mit pochierten Eiern in würziger Tomatensauce - schnell zubereitet und wandelbar. Perfektes Seelenfutter, das sowohl als Frühstück als auch als Mittag- und Abendessen funktioniert.",
     "steps": [
-      "Bratfett in einer grossen Pfanne erhitzen. Peperoni in Streifen, Zwiebeln und Knoblauch fein schneiden. Ca. 5 Min. bei mittlerer Hitze andünsten.",
-      "Tomaten und Gewürze (inkl. Zimtstange) zugeben. Unter gelegentlichem Rühren 20–25 Min. offen köcheln bis die Sauce eindickt.",
-      "Feta zugeben und abschmecken. Zimtstange entfernen.",
-      "Vier Mulden in die Sauce drücken. Jeweils ein Ei hineinsetzen. Zugedeckt 8–10 Min. pochieren bis Eiweiss gestockt, Eigelb noch weich.",
-      "Mit frischen Kräutern garnieren und mit Baguette oder Fladenbrot servieren."
+      "1. Zwiebel und Peperoni würfeln, Knoblauch hacken.",
+      "2. In einer grossen Pfanne Olivenöl erhitzen. Zwiebel und Peperoni ca. 3 Minuten andünsten, dann Gewürze (Paprika, Kreuzkümmel, Cayennepfeffer), Knoblauch und Tomatenmark kurz mitrösten.",
+      "3. Gehackte Tomaten und Zimtstange dazugeben. Unter gelegentlichem Rühren 20 Minuten offen köcheln lassen bis die Sauce eindickt.",
+      "4. Zimtstange entfernen. Feta in grobe Stücke bröckeln, die Hälfte in die Sauce geben. Mit Salz und Pfeffer abschmecken.",
+      "5. Mit einem Löffel Mulden in die Sauce drücken, jeweils ein Ei hineingleiten lassen. Zugedeckt 6–8 Minuten garen bis Eiweiss gestockt, Eigelb noch weich.",
+      "6. Mit restlichem Feta und frischen Kräutern garnieren. Mit Brot servieren."
     ],
-    "tips": "Schmeckt auch als Brunch. Die Sauce kann gut vorbereitet werden – Eier erst kurz vor dem Servieren hineinsetzen.",
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-08-1780870240294.jpg",
     "tags": [
       "Vegetarisch",
       "Orientalisch",
-      "Mittagsgericht"
+      "Mittagsgericht",
+      "Kinderfreundlich",
+      "Frühling",
+      "Herbst",
+      "Winter",
+      "Abendgericht"
     ],
     "dietCategory": "vegetarian",
     "allergens": [
@@ -1011,7 +932,9 @@
       "fat": 18.4,
       "carbs": 20.3,
       "fiber": 5.2
-    }
+    },
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "ei-13",
@@ -1911,117 +1834,6 @@
     ]
   },
   {
-    "id": "ei-22",
-    "name": "Shakshuka - Pochierte Eier in Tomatensauce",
-    "category": "Frühstück",
-    "timeMinutes": 30,
-    "basePortions": 2,
-    "tags": [
-      "Vegetarisch",
-      "Schnell und einfach",
-      "Frühstück",
-      "Orientalisch",
-      "Mittagsgericht"
-    ],
-    "ingredients": [
-      {
-        "name": "Geschälte ganze Tomaten in Saft (Dose)",
-        "amount": 400,
-        "unit": "g",
-        "perPortions": 2
-      },
-      {
-        "name": "Tomatenmark",
-        "amount": 1,
-        "unit": "EL",
-        "perPortions": 2
-      },
-      {
-        "name": "Eier",
-        "amount": 2,
-        "unit": "Stk",
-        "perPortions": 2
-      },
-      {
-        "name": "Zwiebel, weiss",
-        "amount": 80,
-        "unit": "g",
-        "perPortions": 2
-      },
-      {
-        "name": "Knoblauch",
-        "amount": 1,
-        "unit": "Zehe",
-        "perPortions": 2
-      },
-      {
-        "name": "Getrockneter Oregano",
-        "amount": 1,
-        "unit": "TL",
-        "perPortions": 2
-      },
-      {
-        "name": "Petersilie",
-        "amount": 2,
-        "unit": "g",
-        "perPortions": 2
-      },
-      {
-        "name": "Salz",
-        "amount": 1,
-        "unit": "Prise",
-        "perPortions": 2
-      },
-      {
-        "name": "Pfeffer",
-        "amount": 1,
-        "unit": "Prise",
-        "perPortions": 2
-      },
-      {
-        "name": "Zucker",
-        "amount": 1,
-        "unit": "Prise",
-        "perPortions": 2
-      },
-      {
-        "name": "Chiliflocken",
-        "amount": 1,
-        "unit": "Prise",
-        "perPortions": 2
-      },
-      {
-        "name": "Olivenöl",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 2
-      }
-    ],
-    "weatherType": "neutral",
-    "source": "herrbuettner.de",
-    "description": "Ein traditionelles israelisches Gericht mit pochierten Eiern in würziger Tomatensauce - schnell zubereitet und wandelbar. Perfektes Seelenfutter, das auch als Mittagessen oder Snack funktioniert.",
-    "steps": [
-      "Die Knoblauchzehe schälen und in feine Scheiben schneiden. Die Zwiebel schälen und in feine Würfel schneiden. Die Petersilie fein hacken.",
-      "Eine Pfanne (idealerweise 20 cm Durchmesser) bei mittlerer Hitze erwärmen. Sobald sie heiss ist, das Olivenöl hineingeben.",
-      "Die Zwiebelwürfel in die Pfanne geben, mit einer Prise Salz würzen und glasig anschwitzen.",
-      "Wenn die Zwiebeln weich werden, den getrockneten Oregano und die Knoblauchscheiben hinzufügen. Gut umrühren und warten, bis der Knoblauch leicht gebräunt ist.",
-      "Das Tomatenmark einrühren und kurz mitbraten.",
-      "Die Dosentomaten dazugeben und gut mit den anderen Zutaten vermischen. Mit einem Kartoffelstampfer die Tomaten zerdrücken.",
-      "Die Hitze etwas reduzieren und die Sauce mit Salz, Pfeffer und einer Prise Zucker abschmecken.",
-      "Unter gelegentlichem Rühren etwa 15 Minuten köcheln lassen, bis die Sauce leicht eingedickt ist.",
-      "Mit einem Kochlöffel zwei Vertiefungen in die Sauce drücken. Die Eier aufschlagen und vorsichtig in die Vertiefungen gleiten lassen.",
-      "Das Eigelb mit etwas Salz, Pfeffer und Chiliflocken würzen. Den Deckel auf die Pfanne setzen und warten, bis das Eiweiss vollständig gestockt ist.",
-      "Das fertige Shakshuka mit gehackter Petersilie garnieren und mit Brot oder Baguette servieren."
-    ],
-    "dietCategory": "vegetarian",
-    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/01/rezept_shakshuka01.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
-    "allergens": [
-      "ei"
-    ]
-  },
-  {
     "id": "ei-23",
     "name": "Farmers Rührei Muffins",
     "category": "Frühstück",
@@ -2776,21 +2588,30 @@
   },
   {
     "id": "fam-50",
-    "name": "Tortellini an Blunschi-Kräutersauce",
+    "name": "Tortellini an Kräutersauce",
     "category": "Pasta",
-    "timeMinutes": 25,
+    "timeMinutes": 15,
     "tags": [
-      "Vegetarisch"
+      "Vegetarisch",
+      "Mealprep-geeignet",
+      "Kinderfreundlich",
+      "Frühling",
+      "Sommer",
+      "Herbst",
+      "Winter",
+      "Mittagsgericht",
+      "Abendgericht",
+      "Italienisch"
     ],
     "weatherType": "neutral",
-    "source": "Familien-Rezeptbuch",
+    "source": "MahlZeit",
     "basePortions": 4,
-    "description": "Tortellini mit aromatischer Blunschi-Kräutersauce.",
+    "description": "Tortellini mit aromatischer-Kräutersauce",
     "ingredients": [
       {
         "name": "Tortellini mit Spinatfüllung",
-        "amount": 400,
-        "unit": "g",
+        "amount": 1,
+        "unit": "kg",
         "perPortions": 4
       },
       {
@@ -2806,32 +2627,32 @@
         "perPortions": 4
       },
       {
-        "name": "Weisswein",
-        "amount": 2,
+        "name": "Weisswein ",
+        "amount": 1,
         "unit": "dl",
         "perPortions": 4
       },
       {
         "name": "Rahm",
-        "amount": 5,
+        "amount": 3,
         "unit": "dl",
         "perPortions": 4
       },
       {
         "name": "Schnittlauch",
-        "amount": 0.5,
+        "amount": 1,
         "unit": "Bund",
         "perPortions": 4
       },
       {
         "name": "Petersilie",
-        "amount": 0.5,
+        "amount": 1,
         "unit": "Bund",
         "perPortions": 4
       },
       {
         "name": "Basilikum",
-        "amount": 0.5,
+        "amount": 1,
         "unit": "Bund",
         "perPortions": 4
       },
@@ -2864,13 +2685,20 @@
         "amount": 1,
         "unit": "Prise",
         "perPortions": 4
+      },
+      {
+        "name": "Reibkäse",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 4
       }
     ],
     "steps": [
-      "Zwiebel in Butter andämpfen, mit Weisswein ablöschen.",
-      "Bouillon, Curry, Provence-Kräuter, Kräuter beifügen.",
-      "Rahm dazugeben, würzen, kurz köcheln.",
-      "Tortellini nach Anleitung kochen, mit Sauce servieren."
+      "1. Zwiebel hacken. Schnittlauch fein schneiden. Petersilie und Basilikum hacken.",
+      "2. Zwiebelnin Butter andämpfen, mit Weisswein ablöschen (anstelle von Weiswein kann auch Bouillon verwendet werden).",
+      "3. Bouillon, Curry, Provence-Kräuter und frische Kräuter beifügen.",
+      "4. Rahm dazugeben, würzen, kurz köcheln lassen.",
+      "5. Tortellini nach Anleitung kochen, mit Sauce und Reibkäse servieren."
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fam-50-1780699402158.jpg",
     "imageZutaten": null,
@@ -2975,106 +2803,6 @@
       "fat": 28.6,
       "carbs": 88.5,
       "fiber": 3.2
-    },
-    "dietCategory": "vegetarian"
-  },
-  {
-    "id": "fvt-03",
-    "name": "Vollkornnudeln mit Linsen-Bolognese (Familientisch)",
-    "category": "Pasta",
-    "timeMinutes": 45,
-    "ingredients": [
-      {
-        "name": "Berglinsen",
-        "amount": 100,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Karotten",
-        "amount": 2,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Sellerie",
-        "amount": 1,
-        "unit": "Stange",
-        "perPortions": 4
-      },
-      {
-        "name": "Zwiebel",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Knoblauch",
-        "amount": 1,
-        "unit": "Zehe",
-        "perPortions": 4
-      },
-      {
-        "name": "Olivenöl",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Tomatenmark",
-        "amount": 1,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Passierte Tomaten",
-        "amount": 400,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Oregano",
-        "amount": 1,
-        "unit": "TL",
-        "perPortions": 4
-      },
-      {
-        "name": "Balsamico-Essig",
-        "amount": 1,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Vollkornnudeln",
-        "amount": 400,
-        "unit": "g",
-        "perPortions": 4
-      }
-    ],
-    "weatherType": "kalt",
-    "source": "Familientisch voraus! (LittleFant)",
-    "basePortions": 4,
-    "description": "Vollwertige Variante mit Berglinsen – extra Balsamico für Tiefe. Sauce gut einfrierbar.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fvt-03-1780699461296.jpg",
-    "tags": [
-      "Mealprep-geeignet",
-      "Mittagsgericht",
-      "Herbst",
-      "Winter",
-      "Frühling"
-    ],
-    "imageZutaten": null,
-    "imageKochen": null,
-    "allergens": [
-      "gluten",
-      "sellerie"
-    ],
-    "nutrition": {
-      "kcal": 448,
-      "protein": 18.2,
-      "fat": 9.1,
-      "carbs": 72.8,
-      "fiber": 11.4
     },
     "dietCategory": "vegetarian"
   },
@@ -3678,7 +3406,7 @@
     "description": "Vegane Bolognese aus Linsen und Gemüse.",
     "steps": [],
     "tips": "",
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/fvt-03-1780871671442.jpg",
     "tags": [
       "Mealprep-geeignet",
       "Mittagsgericht",
@@ -3696,7 +3424,8 @@
       "carbs": 80.6,
       "fiber": 12.4
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "imageZutaten": null
   },
   {
     "id": "pas-02",
@@ -4047,7 +3776,7 @@
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Cremige Pilzrahmsauce mit Pasta.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/pas-06-1780699687747.jpg",
+    "imageUrl": null,
     "tags": [
       "Herbst",
       "Winter"
@@ -4353,7 +4082,8 @@
       "carbs": 66.7,
       "fiber": 5.1
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "imageZutaten": null
   },
   {
     "id": "pas-11",
@@ -4475,7 +4205,8 @@
       "carbs": 64.3,
       "fiber": 3.2
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "imageZutaten": null
   },
   {
     "id": "pas-13",
@@ -4561,7 +4292,8 @@
       "carbs": 55.8,
       "fiber": 3.1
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "imageZutaten": null
   },
   {
     "id": "pas-14",
@@ -8003,186 +7735,6 @@
     ]
   },
   {
-    "id": "pas-83",
-    "name": "Ragù alla bolognese mit Zimt und Schokolade",
-    "category": "Pasta",
-    "timeMinutes": 180,
-    "basePortions": 8,
-    "tags": [
-      "Herbst",
-      "Winter",
-      "Italienisch",
-      "Mittagsgericht",
-      "Abendgericht"
-    ],
-    "ingredients": [
-      {
-        "name": "Hackfleisch vom Rind",
-        "amount": 500,
-        "unit": "g",
-        "perPortions": 8
-      },
-      {
-        "name": "Hackfleisch vom Schwein",
-        "amount": 500,
-        "unit": "g",
-        "perPortions": 8
-      },
-      {
-        "name": "Rinderfond",
-        "amount": 400,
-        "unit": "ml",
-        "perPortions": 8
-      },
-      {
-        "name": "Rotwein",
-        "amount": 250,
-        "unit": "ml",
-        "perPortions": 8
-      },
-      {
-        "name": "Karotten",
-        "amount": 190,
-        "unit": "g",
-        "perPortions": 8
-      },
-      {
-        "name": "Staudensellerie",
-        "amount": 150,
-        "unit": "g",
-        "perPortions": 8
-      },
-      {
-        "name": "Zwiebel, rot",
-        "amount": 115,
-        "unit": "g",
-        "perPortions": 8
-      },
-      {
-        "name": "Zwiebel, weiss",
-        "amount": 75,
-        "unit": "g",
-        "perPortions": 8
-      },
-      {
-        "name": "Knoblauchzehen",
-        "amount": 3,
-        "unit": "Zehe",
-        "perPortions": 8
-      },
-      {
-        "name": "Dosentomaten",
-        "amount": 850,
-        "unit": "ml",
-        "perPortions": 8
-      },
-      {
-        "name": "Tomatenmark",
-        "amount": 70,
-        "unit": "g",
-        "perPortions": 8
-      },
-      {
-        "name": "Rosmarin",
-        "amount": 8,
-        "unit": "g",
-        "perPortions": 8
-      },
-      {
-        "name": "Thymian",
-        "amount": 5,
-        "unit": "g",
-        "perPortions": 8
-      },
-      {
-        "name": "Lorbeerblätter",
-        "amount": 3,
-        "unit": "Stk",
-        "perPortions": 8
-      },
-      {
-        "name": "Nelken",
-        "amount": 4,
-        "unit": "Stk",
-        "perPortions": 8
-      },
-      {
-        "name": "Oregano, getrocknet",
-        "amount": 3,
-        "unit": "TL",
-        "perPortions": 8
-      },
-      {
-        "name": "Paprikapulver",
-        "amount": 3,
-        "unit": "TL",
-        "perPortions": 8
-      },
-      {
-        "name": "Salz",
-        "amount": 1,
-        "unit": "Prise",
-        "perPortions": 8
-      },
-      {
-        "name": "Pfeffer",
-        "amount": 1,
-        "unit": "Prise",
-        "perPortions": 8
-      },
-      {
-        "name": "Zucker",
-        "amount": 1,
-        "unit": "Prise",
-        "perPortions": 8
-      },
-      {
-        "name": "Zimt",
-        "amount": 1,
-        "unit": "Prise",
-        "perPortions": 8
-      },
-      {
-        "name": "Zartbitterschokolade (70% Kakao)",
-        "amount": 6,
-        "unit": "g",
-        "perPortions": 8
-      },
-      {
-        "name": "Olivenöl",
-        "amount": 3,
-        "unit": "EL",
-        "perPortions": 8
-      }
-    ],
-    "weatherType": "kalt",
-    "source": "herrbuettner.de",
-    "description": "Ein klassisches Ragù alla bolognese, das mit viel Zeit und Geduld zubereitet wird. Besonders aromatisch durch die Zugabe von Zimt und Zartbitterschokolade, die den würzigen Tomaten-Fleisch-Sauce eine besondere Tiefe verleihen.",
-    "steps": [
-      "Zwiebeln und Knoblauch schälen und in feine Würfel schneiden. Rosmarin und Thymian von den Stielen zupfen und fein hacken.",
-      "Karotten und Staudensellerie gründlich waschen und anschliessend mit einer Reibe oder Küchenmaschine fein raspeln. Die Nelken im Mörser zu feinem Pulver zerkleinern.",
-      "Einen grossen Topf bei hoher Hitze aufsetzen. Sobald der Topf heiss ist, 3 EL Olivenöl hineingeben.",
-      "Das Hackfleisch in den Topf geben und scharf anbraten. Mit einem Kochlöffel zerteilen und mit Salz, Pfeffer und Paprikapulver würzen.",
-      "Unter gelegentlichem Rühren das Fleisch braten, bis der Fleischsaft verkocht ist, das Hackfleisch schön braun und leicht knusprig geworden ist und sich am Topfboden ein Bratensatz gebildet hat.",
-      "Mit Rotwein ablöschen, dabei den Bratensatz vom Boden lösen und alles gut durchrühren. Warten, bis der Rotwein verkocht ist.",
-      "Die Hitze auf mittlere Stufe reduzieren. Zwiebeln, Knoblauch, Karotten, Staudensellerie, Rosmarin, Thymian, getrockneten Oregano und Nelkenpulver hinzufügen. Unter gelegentlichem Rühren 5 Minuten anschwitzen lassen.",
-      "Tomatenmark einrühren, dann Rinderfond und Dosentomaten dazugeben. Gut durchrühren und die Lorbeerblätter hinzufügen.",
-      "Mit Salz, Pfeffer und einer Prise Zucker würzen. Die Hitze auf kleine Stufe reduzieren und die Sauce für 2 Stunden und 30 Minuten leicht köchelnd auf dem Herd lassen. Zwischendurch immer mal wieder umrühren.",
-      "Falls gewünscht, nach etwa 2 Stunden einen Deckel auflegen, damit die Sauce nicht zu stark eindickt.",
-      "Nach 2 Stunden und 30 Minuten die Lorbeerblätter entfernen. Zimt und geriebene Zartbitterschokolade hinzufügen und gut durchrühren.",
-      "Den Deckel auflegen und das Ragù weitere 30 Minuten leicht köcheln lassen.",
-      "Zum Schluss mit Salz und Pfeffer abschmecken und servieren."
-    ],
-    "dietCategory": "meat",
-    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/10/Ragu_alla_bolognese01.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
-    "allergens": [
-      "sellerie",
-      "sulfite"
-    ]
-  },
-  {
     "id": "pas-84",
     "name": "Pasta gratiniert in cremiger Käse-Rahm-Sauce mit Thymian",
     "category": "Pasta",
@@ -10028,7 +9580,8 @@
       "carbs": 86.2,
       "fiber": 11.8
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "imageZutaten": null
   },
   {
     "id": "rei-08",
@@ -10514,7 +10067,8 @@
       "carbs": 56.4,
       "fiber": 8.5
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "imageZutaten": null
   },
   {
     "id": "ein-03",
@@ -10578,7 +10132,8 @@
       "carbs": 64.2,
       "fiber": 12.3
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "imageZutaten": null
   },
   {
     "id": "ein-04",
@@ -10642,7 +10197,8 @@
       "carbs": 53.4,
       "fiber": 8.9
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "imageZutaten": null
   },
   {
     "id": "ein-05",
@@ -10711,7 +10267,8 @@
       "carbs": 38.7,
       "fiber": 7.2
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "imageZutaten": null
   },
   {
     "id": "ein-06",
@@ -10830,7 +10387,8 @@
       "carbs": 101.6,
       "fiber": 15.7
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "imageZutaten": null
   },
   {
     "id": "ein-07",
@@ -12725,7 +12283,7 @@
   },
   {
     "id": "sup-01",
-    "name": "Kürbissuppe mit Kartoffel, Ingwer und Curry",
+    "name": "Kürbis-Kokos-Suppe",
     "category": "Suppen, Eintöpfe & Currys",
     "timeMinutes": 35,
     "ingredients": [
@@ -12755,8 +12313,8 @@
       },
       {
         "name": "Gemüsebrühe",
-        "amount": 1000,
-        "unit": "ml",
+        "amount": 1,
+        "unit": "l",
         "perPortions": 4
       },
       {
@@ -12778,14 +12336,16 @@
       "Mit Stabmixer pürieren. Mit Salz und Pfeffer abschmecken.",
       "Mit Kokosmilch, Kürbiskernen und Chiliflocken garnieren."
     ],
-    "tips": "",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---sup-01-1-ku-rbis-kokos-suppe--1780579271952.jpeg",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/8974f249-b14f-4b36-81d7-a62b25046c65-1780948312054.jpg",
     "tags": [
       "Mealprep-geeignet",
       "Mittagsgericht",
       "Herbst",
       "Winter",
-      "Vegan"
+      "Vegan",
+      "Kinderfreundlich",
+      "Abendgericht",
+      "Vegetarisch"
     ],
     "dietCategory": "vegan",
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---sup-01-2-ku-rbis-kokos-suppe--1780579300744.jpeg",
@@ -12798,7 +12358,8 @@
       "fat": 11.2,
       "carbs": 38.6,
       "fiber": 5.8
-    }
+    },
+    "imageKochen": null
   },
   {
     "id": "sup-02",
@@ -12960,7 +12521,8 @@
       "carbs": 34.8,
       "fiber": 7.5
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "imageZutaten": null
   },
   {
     "id": "sup-04",
@@ -13175,7 +12737,8 @@
       "carbs": 14.5,
       "fiber": 3.8
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "imageZutaten": null
   },
   {
     "id": "sup-07",
@@ -14413,7 +13976,7 @@
       "Auf Backpapier legen, 30 Min. kühl stellen, dann ca. 10 Min. bei 220 °C backen.",
       "Twister zur Suppe servieren."
     ],
-    "imageUrl": null,
+    "imageUrl": "blob:https://mahlzeit.o-v-k.ch/a5131c8c-cf1b-43a3-b522-90cc1c067010",
     "tags": [
       "Vegetarisch",
       "Herbst",
@@ -17060,7 +16623,7 @@
       "Zitronensaft und Rahm darunter mischen, salzen."
     ],
     "imageUrl": null,
-    "imageZutaten": null,
+    "imageZutaten": "blob:https://mahlzeit.o-v-k.ch/09ce3dc7-d8f9-43f7-b629-6e5e365529d2",
     "imageKochen": null,
     "allergens": [
       "milch"
@@ -17728,7 +17291,8 @@
       "carbs": 34.2,
       "fiber": 11.2
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "imageZutaten": null
   },
   {
     "id": "sal-06",
@@ -17789,7 +17353,8 @@
       "carbs": 42.8,
       "fiber": 4.5
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "imageZutaten": null
   },
   {
     "id": "sal-08",
@@ -17892,7 +17457,8 @@
       "carbs": 70.3,
       "fiber": 13.2
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "imageZutaten": null
   },
   {
     "id": "sal-10",
@@ -19681,7 +19247,8 @@
       "carbs": 65.8,
       "fiber": 3.2
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "imageZutaten": null
   },
   {
     "id": "ofe-03",
@@ -20651,11 +20218,17 @@
       "Ramen-Nudeln in Salzwasser ca. 4 Min. kochen, abtropfen lassen.",
       "Nudeln und Tofu in Schüsseln verteilen, heisse Suppe darübergiessen. Mit Erdnüssen und Koriander garnieren."
     ],
-    "tips": "Mit Sesam, Limette oder frischer Chili nach Belieben garnieren.",
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/thaila-ndische-erdnuss-nudelsuppe-1780949095716.jpg",
     "tags": [
       "Vegan",
-      "Asiatisch"
+      "Asiatisch",
+      "Vegetarisch",
+      "Mealprep-geeignet",
+      "Winter",
+      "Herbst",
+      "Frühling",
+      "Mittagsgericht",
+      "Abendgericht"
     ],
     "dietCategory": "vegan",
     "allergens": [
@@ -20670,7 +20243,9 @@
       "fat": 35.8,
       "carbs": 52.4,
       "fiber": 5.2
-    }
+    },
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "asi-06",
@@ -21122,7 +20697,8 @@
       "carbs": 3.2,
       "fiber": 1.8
     },
-    "dietCategory": "fish"
+    "dietCategory": "fish",
+    "imageZutaten": null
   },
   {
     "id": "fis-13",
@@ -28416,7 +27992,8 @@
       "carbs": 46.4,
       "fiber": 6.2
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "imageZutaten": null
   },
   {
     "id": "son-02",
@@ -28479,7 +28056,8 @@
       "carbs": 54.3,
       "fiber": 11.4
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "imageZutaten": null
   },
   {
     "id": "son-03",
@@ -28547,7 +28125,8 @@
       "carbs": 58.2,
       "fiber": 9.3
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "imageZutaten": null
   },
   {
     "id": "son-04",
@@ -29844,112 +29423,6 @@
     "imageKochen": null,
     "allergens": [
       "ei"
-    ]
-  },
-  {
-    "id": "son-78",
-    "name": "Rahmspinat mit gebratenen Kartoffeln und Spiegelei",
-    "category": "Vegetarische Hauptgerichte",
-    "timeMinutes": 35,
-    "basePortions": 2,
-    "tags": [
-      "Vegetarisch",
-      "Kinderfreundlich",
-      "Schnell und einfach",
-      "Mittagsgericht",
-      "Abendgericht",
-      "Ofengericht"
-    ],
-    "ingredients": [
-      {
-        "name": "festkochende Kartoffeln",
-        "amount": 600,
-        "unit": "g",
-        "perPortions": 2
-      },
-      {
-        "name": "Spinat",
-        "amount": 500,
-        "unit": "g",
-        "perPortions": 2
-      },
-      {
-        "name": "Schalotte",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 2
-      },
-      {
-        "name": "Knoblauchzehe",
-        "amount": 1,
-        "unit": "Zehe",
-        "perPortions": 2
-      },
-      {
-        "name": "Eier",
-        "amount": 2,
-        "unit": "Stk",
-        "perPortions": 2
-      },
-      {
-        "name": "Rahm",
-        "amount": 150,
-        "unit": "ml",
-        "perPortions": 2
-      },
-      {
-        "name": "Olivenöl",
-        "amount": 3,
-        "unit": "EL",
-        "perPortions": 2
-      },
-      {
-        "name": "Muskat",
-        "amount": 1,
-        "unit": "Prise",
-        "perPortions": 2
-      },
-      {
-        "name": "Chiliflocken",
-        "amount": 1,
-        "unit": "Prise",
-        "perPortions": 2
-      },
-      {
-        "name": "Salz",
-        "amount": 1,
-        "unit": "Prise",
-        "perPortions": 2
-      },
-      {
-        "name": "Pfeffer",
-        "amount": 1,
-        "unit": "Prise",
-        "perPortions": 2
-      }
-    ],
-    "weatherType": "neutral",
-    "source": "herrbuettner.de",
-    "description": "Ein klassisches Gericht voller Kindheitserinnerungen: Cremiger Rahmspinat mit knusprigen Bratkartoffeln und goldgelbem Spiegelei – einfach und köstlich.",
-    "steps": [
-      "Die Kartoffeln waschen, trocken tupfen, schälen und in mundgerechte Würfel schneiden.",
-      "Die Kartoffelwürfel mit 1 EL Olivenöl in einer Pfanne mit Deckel bei mittlerer Hitze etwa 30 Minuten dünsten und gelegentlich umrühren. Mit Salz und Pfeffer abschmecken.",
-      "Den Deckel entfernen, die Hitze etwas erhöhen und die Kartoffeln kurz anbraten, bis sie eine schöne Kruste bekommen.",
-      "Währenddessen den Spinat gründlich waschen und abtropfen lassen. Danach grob hacken, die Stiele fein hacken.",
-      "Die Schalotte schälen und in feine Würfel schneiden. Den Knoblauch schälen und ebenfalls fein würfeln.",
-      "Die Schalottenwürfel in 1 EL Olivenöl in einem Topf bei mittlerer Hitze glasig andünsten. Den Knoblauch dazugeben und kurz mitdünsten.",
-      "Den Spinat hinzufügen und einmal durchrühren. Mit Salz, Pfeffer und Chiliflocken würzen.",
-      "Sobald der Spinat zusammengefallen ist, die Rahm angiessen. Den Rahmspinat bei kleiner Hitze sanft köcheln lassen und ab und zu umrühren.",
-      "In einer Pfanne mit 1 EL Olivenöl die Eier braten – je nach Geschmack mit festem oder flüssigem Eigelb. Mit Salz und Pfeffer würzen.",
-      "Die gebratenen Kartoffeln mit Rahmspinat und Spiegelei auf Tellern anrichten und geniessen."
-    ],
-    "dietCategory": "vegetarian",
-    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2020/01/Rahmspinat_mit_Bratkartoffeln_und_Spiegelei.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
-    "allergens": [
-      "ei",
-      "milch"
     ]
   },
   {
