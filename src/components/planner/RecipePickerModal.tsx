@@ -40,7 +40,7 @@ export function RecipePickerModal({ recipes, mealType, dietPreference, onSelect,
     return recipes.filter((r) => {
       if (r.archived) return false;
       if (mealType === 'lunch' && !r.tags.includes('Mittagsgericht')) return false;
-      if (mealType === 'breakfast' && r.category !== 'Frühstück') return false;
+      if (mealType === 'breakfast' && r.category !== 'Frühstück' && !r.tags.includes('Frühstücksgericht')) return false;
       // Diet preference filter (uses getEffectiveDietCategory für Korrektheit über alle Kategorien)
       if (dietPreference && dietPreference !== 'alle' && dietPreference !== 'fleischhaltig' && dietPreference !== 'flexitarisch') {
         const diet = getEffectiveDietCategory(r);

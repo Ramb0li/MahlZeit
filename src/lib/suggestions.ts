@@ -186,15 +186,20 @@ export function suggestWeek(
   let meatMealsThisWeek = 0;
   const carbCounts: Record<string, number> = {};
 
-  // Breakfast: only Frühstück category
-  let breakfastRecipes = recipes.filter(r => BREAKFAST_CATS.has(r.category));
+  // Breakfast: Frühstück category OR tagged 'Frühstücksgericht'
+  let breakfastRecipes = recipes.filter(
+    r => BREAKFAST_CATS.has(r.category) || r.tags.includes('Frühstücksgericht')
+  );
   // Lunch: tagged 'Mittagsgericht', not breakfast
   let lunchRecipes = recipes.filter(
-    r => r.tags.includes('Mittagsgericht') && !BREAKFAST_CATS.has(r.category)
+    r => r.tags.includes('Mittagsgericht') &&
+         !BREAKFAST_CATS.has(r.category) &&
+         !r.tags.includes('Frühstücksgericht')
   );
-  // Dinner: not breakfast, not snacks/desserts; exclude lunch-only (Mittagsgericht without Abendgericht)
+  // Dinner: not breakfast, not snacks/desserts; exclude lunch-only and breakfast-only
   let dinnerRecipes = recipes.filter(
     r => !BREAKFAST_CATS.has(r.category) &&
+         !r.tags.includes('Frühstücksgericht') &&
          !EXCLUDED_CATS.has(r.category) &&
          (!r.tags.includes('Mittagsgericht') || r.tags.includes('Abendgericht'))
   );

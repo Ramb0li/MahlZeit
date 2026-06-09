@@ -24,7 +24,7 @@ const RECIPE_TOOL = {
       weatherType:  { type: 'string', enum: ['warm','kalt','neutral'] },
       tags: {
         type: 'array',
-        description: 'Passende Tags aus: Vegetarisch, Vegan, Mealprep-geeignet, Kinderfreundlich, Frühling, Sommer, Herbst, Winter, Grillgericht, Ofengericht, Mittagsgericht, Abendgericht, Schweizer, Italienisch, Asiatisch, Mexikanisch, Orientalisch',
+        description: 'Passende Tags aus: Vegetarisch, Vegan, Mealprep-geeignet, Kinderfreundlich, Frühling, Sommer, Herbst, Winter, Frühstücksgericht, Mittagsgericht, Abendgericht, Grillgericht, Ofengericht, Schweizer, Italienisch, Asiatisch, Mexikanisch, Orientalisch',
         items: { type: 'string' },
       },
       ingredients: {

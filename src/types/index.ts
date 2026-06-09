@@ -21,7 +21,7 @@ export const TAG_GROUPS = {
   Ernährung: ['Fleischhaltig', 'Pescetarisch', 'Vegetarisch', 'Vegan'],
   Planung:   ['Mealprep-geeignet', 'Kinderfreundlich'],
   Saison:    ['Frühling', 'Sommer', 'Herbst', 'Winter'],
-  Methode:   ['Grillgericht', 'Ofengericht', 'Mittagsgericht', 'Abendgericht'],
+  Gerichtart: ['Frühstücksgericht', 'Mittagsgericht', 'Abendgericht', 'Grillgericht', 'Ofengericht'],
   Küche:     ['Schweizer', 'Italienisch', 'Asiatisch', 'Mexikanisch', 'Orientalisch'],
 } as const;
 
