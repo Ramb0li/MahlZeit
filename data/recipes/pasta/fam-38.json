@@ -71,10 +71,10 @@
     }
   ],
   "steps": [
-    "Ei, Rahm, Käse, Sambal mixen.",
-    "Spaghetti kochen.",
-    "Schinken in Bratbutter anbraten, Knoblauch am Schluss.",
-    "Abgeschüttete Spaghetti vom Herd, Olivenöl darunter, Eier-Rahmgemisch einrühren, Schinken beigeben."
+    "1. Ei, Rahm, Käse, Sambal mixen.",
+    "2. Spaghetti kochen.",
+    "3. Schinken in Bratbutter anbraten, Knoblauch am Schluss.",
+    "4. Abgeschüttete Spaghetti vom Herd, Olivenöl darunter, Eier-Rahmgemisch einrühren, Schinken beigeben."
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fam-38-1780699276557.jpg",
   "imageZutaten": null,

@@ -78,16 +78,16 @@
     }
   ],
   "weatherType": "neutral",
-  "source": "cuiseline",
+  "source": "Cuiseline",
   "basePortions": 4,
   "description": "Authentisches Pad Thai mit knusprigem Tofu — süss, sauer, salzig und in 30 Minuten auf dem Tisch.",
   "steps": [
-    "Reisnudeln nach Packungsanweisung einweichen (ca. 15 Min. in lauwarmem Wasser), dann abgiessen.",
-    "Tofu abtupfen, in Würfel schneiden. In Öl bei starker Hitze rundum knusprig braten, herausnehmen.",
-    "Pad-Thai-Sauce: Tamarindenpaste, Sojasauce und Zucker verrühren.",
-    "Frühlingszwiebeln (helle Teile) und Sojasprossen in der Pfanne kurz anbraten. Beiseite schieben, Eier einschlagen und scrambled braten.",
-    "Nudeln und Sauce in die Pfanne, alles vermengen. Tofu zugeben, kurz durchschwenken.",
-    "Mit Erdnüssen, Koriander, Limette und grünen Frühlingszwiebelringen servieren."
+    "1. Reisnudeln nach Packungsanweisung einweichen (ca. 15 Min. in lauwarmem Wasser), dann abgiessen.",
+    "2. Tofu abtupfen, in Würfel schneiden. In Öl bei starker Hitze rundum knusprig braten, herausnehmen.",
+    "3. Pad-Thai-Sauce: Tamarindenpaste, Sojasauce und Zucker verrühren.",
+    "4. Frühlingszwiebeln (helle Teile) und Sojasprossen in der Pfanne kurz anbraten. Beiseite schieben, Eier einschlagen und scrambled braten.",
+    "5. Nudeln und Sauce in die Pfanne, alles vermengen. Tofu zugeben, kurz durchschwenken.",
+    "6. Mit Erdnüssen, Koriander, Limette und grünen Frühlingszwiebelringen servieren."
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/asi-03-1780783928840.jpg",
   "tags": [

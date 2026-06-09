@@ -64,9 +64,9 @@
   "basePortions": 4,
   "description": "Cremige, pinke Smoothie Bowl mit Banane, Beeren und versteckter Zucchetti – ein vitaminreicher Start in den Tag.",
   "steps": [
-    "Bananen mit Zucchetti, Erdbeeren, Himbeeren und Joghurt im Mixer fein pürieren.",
-    "Smoothie gleichmässig in vier Bowls verteilen.",
-    "Mit Beeren (Erdbeerscheiben, Himbeeren, Johannisbeeren) und Müesli garnieren."
+    "1. Bananen mit Zucchetti, Erdbeeren, Himbeeren und Joghurt im Mixer fein pürieren.",
+    "2. Smoothie gleichmässig in vier Bowls verteilen.",
+    "3. Mit Beeren (Erdbeerscheiben, Himbeeren, Johannisbeeren) und Müesli garnieren."
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-13-1780786326142.jpg",
   "tags": [
@@ -76,7 +76,8 @@
     "Kinderfreundlich",
     "Vegetarisch",
     "Herbst",
-    "Winter"
+    "Winter",
+    "Frühstücksgericht"
   ],
   "imageZutaten": null,
   "imageKochen": null,

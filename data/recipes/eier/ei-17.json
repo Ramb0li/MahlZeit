@@ -10,7 +10,8 @@
     "Ofengericht",
     "Herbst",
     "Winter",
-    "Frühstück"
+    "Frühstück",
+    "Frühstücksgericht"
   ],
   "ingredients": [
     {
@@ -105,21 +106,21 @@
     }
   ],
   "weatherType": "neutral",
-  "source": "herrbuettner.de",
+  "source": "zu überarbeiten",
   "description": "Eine fein würzige Frittata mit süssem Lauch, erdigen Champignons und cremigem Zitronen-Hüttenkäse. Dazu ein erfrischender Apfel-Petersilie-Salat – in nur 25 Minuten fertig!",
   "steps": [
-    "Den Backofen auf 200 Grad Ober-/Unterhitze vorheizen und ein Rost in die mittlere Schiene einsetzen.",
-    "Den gehackten Knoblauch in einer ofenfesten Pfanne mit Olivenöl bei mittlerer Temperatur kurz glasig dünsten.",
-    "Das Tomatenmark unterrühren und kurz mitdünsten lassen.",
-    "Die Champignonscheiben und den geschnittenen Lauch in die Pfanne geben, mit Salz und Pfeffer würzen und unter gelegentlichem Wenden etwa 5 Minuten andünsten.",
-    "Die Milch zu den verquirlten Eiern geben und mit frisch geriebener Muskatnuss würzen.",
-    "Die Ei-Milch-Mischung gleichmässig über das Gemüse in der Pfanne giessen und gut verteilen. Den Herd ausschalten.",
-    "Den geriebenen Parmesan über die Frittata streuen.",
-    "Die Pfanne für 15-20 Minuten in den vorgeheizten Ofen stellen.",
-    "In der Zwischenzeit die Hälfte des Zitronensafts mit dem Hüttenkäse verrühren und mit Salz und Pfeffer abschmecken.",
-    "Die gehackte Petersilie, die Apfelwürfel und den restlichen Zitronensaft vermischen und mit Pfeffer würzen.",
-    "Die fertige Frittata aus dem Ofen nehmen, kurz abkühlen lassen und vorsichtig aus der Pfanne auf einen Servierteller oder ein Brett gleiten lassen.",
-    "Mit dem Apfel-Petersilie-Salat und dem Zitronen-Hüttenkäse servieren."
+    "1. Den Backofen auf 200 Grad Ober-/Unterhitze vorheizen und ein Rost in die mittlere Schiene einsetzen.",
+    "2. Den gehackten Knoblauch in einer ofenfesten Pfanne mit Olivenöl bei mittlerer Temperatur kurz glasig dünsten.",
+    "3. Das Tomatenmark unterrühren und kurz mitdünsten lassen.",
+    "4. Die Champignonscheiben und den geschnittenen Lauch in die Pfanne geben, mit Salz und Pfeffer würzen und unter gelegentlichem Wenden etwa 5 Minuten andünsten.",
+    "5. Die Milch zu den verquirlten Eiern geben und mit frisch geriebener Muskatnuss würzen.",
+    "6. Die Ei-Milch-Mischung gleichmässig über das Gemüse in der Pfanne giessen und gut verteilen. Den Herd ausschalten.",
+    "7. Den geriebenen Parmesan über die Frittata streuen.",
+    "8. Die Pfanne für 15-20 Minuten in den vorgeheizten Ofen stellen.",
+    "9. In der Zwischenzeit die Hälfte des Zitronensafts mit dem Hüttenkäse verrühren und mit Salz und Pfeffer abschmecken.",
+    "10. Die gehackte Petersilie, die Apfelwürfel und den restlichen Zitronensaft vermischen und mit Pfeffer würzen.",
+    "11. Die fertige Frittata aus dem Ofen nehmen, kurz abkühlen lassen und vorsichtig aus der Pfanne auf einen Servierteller oder ein Brett gleiten lassen.",
+    "12. Mit dem Apfel-Petersilie-Salat und dem Zitronen-Hüttenkäse servieren."
   ],
   "dietCategory": "vegetarian",
   "imageUrl": "https://herrbuettner.de/wp-content/uploads/2019/12/Fritatta_mit_Lauch_und_Champignons_Apfe-Petersilie-Salat_Zitronen_Huettnekaese.jpg",

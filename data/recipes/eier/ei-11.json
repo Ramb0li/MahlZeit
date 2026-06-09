@@ -5,7 +5,8 @@
   "timeMinutes": 50,
   "tags": [
     "Vegan",
-    "Mealprep-geeignet"
+    "Mealprep-geeignet",
+    "Frühstücksgericht"
   ],
   "weatherType": "neutral",
   "source": "Cuiseline",
@@ -87,12 +88,12 @@
     }
   ],
   "steps": [
-    "Ofen auf 160 °C vorheizen (Ober- und Unterhitze).",
-    "Alle Zutaten ausser Datteln in grosser Schüssel mit Rapsöl und Ahornsirup gut vermischen.",
-    "Masse auf zwei Backbleche verteilen.",
-    "Ca. 40 Minuten backen, in der Halbzeit die Bleche tauschen damit alles gleichmässig röstet.",
-    "Datteln in feine Ringe schneiden, 7 Minuten vor Backende auf den Blechen verteilen.",
-    "Auf Backblech vollständig auskühlen lassen, dann in Gläser abfüllen."
+    "1. Ofen auf 160 °C vorheizen (Ober- und Unterhitze).",
+    "2. Alle Zutaten ausser Datteln in grosser Schüssel mit Rapsöl und Ahornsirup gut vermischen.",
+    "3. Masse auf zwei Backbleche verteilen.",
+    "4. Ca. 40 Minuten backen, in der Halbzeit die Bleche tauschen damit alles gleichmässig röstet.",
+    "5. Datteln in feine Ringe schneiden, 7 Minuten vor Backende auf den Blechen verteilen.",
+    "6. Auf Backblech vollständig auskühlen lassen, dann in Gläser abfüllen."
   ],
   "tips": "Mit Kokosjogurt, pflanzlicher Milch und saisonalen Früchten servieren.",
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---granola-1--1780577321739.jpeg",

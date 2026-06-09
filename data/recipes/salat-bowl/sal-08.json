@@ -72,15 +72,15 @@
     }
   ],
   "weatherType": "neutral",
-  "source": "cuiseline",
+  "source": "Cuiseline",
   "basePortions": 4,
   "description": "Sättigende Bowl mit gerösteter Süsskartoffel, knusprigen Kichererbsen und cremigem Tahini-Dressing.",
   "steps": [
-    "Ofen auf 200 °C (Ober-/Unterhitze) vorheizen. Süsskartoffeln würfeln, Kichererbsen abgiessen und abtupfen.",
-    "Beides auf einem Blech mit Olivenöl, Paprika und Kreuzkümmel mischen. 25 Minuten rösten, bis die Kichererbsen knusprig sind.",
-    "Quinoa in der doppelten Menge Wasser mit Prise Salz aufkochen, 15 Minuten köcheln, quellen lassen.",
-    "Tahini-Dressing: Tahini, Zitronensaft, 3 EL Wasser und Prise Salz glatt rühren.",
-    "Bowls aufbauen: Quinoa, Spinat, Süsskartoffel, Kichererbsen, Avocadoscheiben. Mit Dressing beträufeln und Granatapfelkerne streuen."
+    "1. Ofen auf 200 °C (Ober-/Unterhitze) vorheizen. Süsskartoffeln würfeln, Kichererbsen abgiessen und abtupfen.",
+    "2. Beides auf einem Blech mit Olivenöl, Paprika und Kreuzkümmel mischen. 25 Minuten rösten, bis die Kichererbsen knusprig sind.",
+    "3. Quinoa in der doppelten Menge Wasser mit Prise Salz aufkochen, 15 Minuten köcheln, quellen lassen.",
+    "4. Tahini-Dressing: Tahini, Zitronensaft, 3 EL Wasser und Prise Salz glatt rühren.",
+    "5. Bowls aufbauen: Quinoa, Spinat, Süsskartoffel, Kichererbsen, Avocadoscheiben. Mit Dressing beträufeln und Granatapfelkerne streuen."
   ],
   "tips": "Für Meal-Prep alle Komponenten separat aufbewahren und erst vor dem Essen zusammenstellen. Hält im Kühlschrank 3 Tage.",
   "imageUrl": null,

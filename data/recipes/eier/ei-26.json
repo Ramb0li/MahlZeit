@@ -9,7 +9,8 @@
     "Kinderfreundlich",
     "Frühling",
     "Sommer",
-    "Ofengericht"
+    "Ofengericht",
+    "Frühstücksgericht"
   ],
   "ingredients": [
     {
@@ -68,16 +69,16 @@
     }
   ],
   "weatherType": "neutral",
-  "source": "herrbuettner.de",
+  "source": "zu überarbeiten",
   "description": "Ein luftiger Ofenpfannkuchen, der im Backofen spektakulär aufgeht und mit frischen Erdbeeren serviert wird. Einfach zubereitet und perfekt für die Erdbeersaison.",
   "steps": [
-    "Den Backofen auf 220 Grad vorheizen. Den Gitterrost auf die unterste Ebene schieben und die Auflaufform (23 cm x 30 cm x 6 cm) zum Aufheizen mit in den Ofen geben.",
-    "Für den Teig die Eier mit Zucker, Vanillinzucker und einer Prise Salz verquirlen. Die Milch hinzufügen und verrühren.",
-    "Das Mehl sieben, zur Eimasse geben und alles zu einem glatten, flüssigen Teig verrühren.",
-    "Die Butter in die vorgeheizte Auflaufform geben und im Ofen schmelzen lassen. Die Form herausnehmen und leicht schwenken, damit sich die Butter überall verteilt.",
-    "Den Teig in die gebutterte Form giessen und für 10-15 Minuten backen, bis der Teig stark aufgegangen und goldbraun ist.",
-    "In der Zwischenzeit die Erdbeeren waschen, trocken tupfen und in Scheiben schneiden.",
-    "Das fertige Dutch Baby aus dem Ofen holen, mit Puderzucker bestäuben, auf Teller verteilen und mit den Erdbeerscheiben garnieren."
+    "1. Den Backofen auf 220 Grad vorheizen. Den Gitterrost auf die unterste Ebene schieben und die Auflaufform (23 cm x 30 cm x 6 cm) zum Aufheizen mit in den Ofen geben.",
+    "2. Für den Teig die Eier mit Zucker, Vanillinzucker und einer Prise Salz verquirlen. Die Milch hinzufügen und verrühren.",
+    "3. Das Mehl sieben, zur Eimasse geben und alles zu einem glatten, flüssigen Teig verrühren.",
+    "4. Die Butter in die vorgeheizte Auflaufform geben und im Ofen schmelzen lassen. Die Form herausnehmen und leicht schwenken, damit sich die Butter überall verteilt.",
+    "5. Den Teig in die gebutterte Form giessen und für 10-15 Minuten backen, bis der Teig stark aufgegangen und goldbraun ist.",
+    "6. In der Zwischenzeit die Erdbeeren waschen, trocken tupfen und in Scheiben schneiden.",
+    "7. Das fertige Dutch Baby aus dem Ofen holen, mit Puderzucker bestäuben, auf Teller verteilen und mit den Erdbeerscheiben garnieren."
   ],
   "dietCategory": "vegetarian",
   "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/05/dutch_baby_mit_erdbeeren01.jpg",

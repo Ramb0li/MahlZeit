@@ -60,21 +60,22 @@
     }
   ],
   "weatherType": "neutral",
-  "source": "cuiseline",
+  "source": "Cuiseline",
   "basePortions": 4,
   "description": "Der Klassiker neu gedacht — mit Spiegelei, Kresse und dem richtigen Sauerteigbrot. Fertig in 15 Minuten.",
   "steps": [
-    "Brotscheiben im Toaster oder Ofen kross toasten.",
-    "Avocados halbieren, entkernen, das Fruchtfleisch mit einer Gabel grob zerdrücken. Mit Zitronensaft, Salz und Pfeffer würzen.",
-    "Für die Spiegelei: Bratbutter oder Kokosöl in Edelstahlpfanne braten.",
-    "Ei in eine kleine Tasse aufschlagen. Mit einem Löffel einen Strudel im Wasser erzeugen, Ei hineingleiten lassen. 3 Minuten pochieren.",
-    "Avocado-Creme auf das Brot streichen. Ei darauflegen.",
-    "Mit Olivenöl, Chiliflocken, Fleur de sel und Kresse fertigstellen."
+    "1. Brotscheiben im Toaster oder Ofen kross toasten.",
+    "2. Avocados halbieren, entkernen, das Fruchtfleisch mit einer Gabel grob zerdrücken. Mit Zitronensaft, Salz und Pfeffer würzen.",
+    "3. Für die Spiegelei: Bratbutter oder Kokosöl in Edelstahlpfanne braten.",
+    "4. Ei in eine kleine Tasse aufschlagen. Mit einem Löffel einen Strudel im Wasser erzeugen, Ei hineingleiten lassen. 3 Minuten pochieren.",
+    "5. Avocado-Creme auf das Brot streichen. Ei darauflegen.",
+    "6. Mit Olivenöl, Chiliflocken, Fleur de sel und Kresse fertigstellen."
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/son-04-2-1780699834231.jpg",
   "tags": [
     "Vegetarisch",
-    "Mittagsgericht"
+    "Mittagsgericht",
+    "Frühstücksgericht"
   ],
   "imageZutaten": null,
   "imageKochen": null,

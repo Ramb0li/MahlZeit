@@ -58,12 +58,12 @@
   "basePortions": 4,
   "description": "Überraschend luftige vegane Pancakes ohne Ei und Milch – mit Apfelessig als Geheimzutat.",
   "steps": [
-    "Mehl, Zucker, Backpulver und Salz in einer Schüssel vermischen.",
-    "Pflanzenmilch, Apfelessig und Vanilleextrakt in einer zweiten Schüssel verrühren.",
-    "Nasse Zutaten zu den trockenen giessen und glatt verrühren. 5 Minuten quellen lassen.",
-    "Antihaftpfanne bei mittlerer Hitze erwärmen (kein Fett nötig). Ca. ½ Tasse Teig hineingeben.",
-    "Backen bis Blasen entstehen, dann wenden und goldbraun fertigbacken.",
-    "Mit Ahornsirup und Früchten servieren."
+    "1. Mehl, Zucker, Backpulver und Salz in einer Schüssel vermischen.",
+    "2. Pflanzenmilch, Apfelessig und Vanilleextrakt in einer zweiten Schüssel verrühren.",
+    "3. Nasse Zutaten zu den trockenen giessen und glatt verrühren. 5 Minuten quellen lassen.",
+    "4. Antihaftpfanne bei mittlerer Hitze erwärmen (kein Fett nötig). Ca. ½ Tasse Teig hineingeben.",
+    "5. Backen bis Blasen entstehen, dann wenden und goldbraun fertigbacken.",
+    "6. Mit Ahornsirup und Früchten servieren."
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-14-1780786366445.jpg",
   "tags": [
@@ -73,7 +73,8 @@
     "Sommer",
     "Herbst",
     "Winter",
-    "Vegetarisch"
+    "Vegetarisch",
+    "Frühstücksgericht"
   ],
   "imageZutaten": null,
   "imageKochen": null,

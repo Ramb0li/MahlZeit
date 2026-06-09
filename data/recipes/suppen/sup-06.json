@@ -60,15 +60,15 @@
     }
   ],
   "weatherType": "warm",
-  "source": "cuiseline",
+  "source": "Cuiseline",
   "basePortions": 4,
   "description": "Samtig glatte Tomatensuppe mit Basilikum — in 25 Minuten auf dem Tisch und besser als jede Fertigsuppe.",
   "steps": [
-    "Zwiebel fein würfeln, Knoblauch hacken. In Olivenöl bei mittlerer Hitze 3 Minuten andünsten.",
-    "Dosentomaten, Brühe und 1 TL Zucker dazugeben. Aufkochen und 15 Minuten köcheln lassen.",
-    "Basilikum (ein paar Blätter zum Garnieren beiseitelegen) in die Suppe geben.",
-    "Mit dem Stabmixer fein pürieren. Kokosmilch einrühren, nochmals erwärmen.",
-    "Mit Salz und Pfeffer abschmecken. Mit Basilikum und einem Olivenölschuss servieren."
+    "1. Zwiebel fein würfeln, Knoblauch hacken. In Olivenöl bei mittlerer Hitze 3 Minuten andünsten.",
+    "2. Dosentomaten, Brühe und 1 TL Zucker dazugeben. Aufkochen und 15 Minuten köcheln lassen.",
+    "3. Basilikum (ein paar Blätter zum Garnieren beiseitelegen) in die Suppe geben.",
+    "4. Mit dem Stabmixer fein pürieren. Kokosmilch einrühren, nochmals erwärmen.",
+    "5. Mit Salz und Pfeffer abschmecken. Mit Basilikum und einem Olivenölschuss servieren."
   ],
   "tips": "Mit frischen Sommertomaten aus dem Garten schmeckt die Suppe noch besser. Wer es etwas schärfer mag, gibt eine Prise Chiliflocken dazu.",
   "imageUrl": null,

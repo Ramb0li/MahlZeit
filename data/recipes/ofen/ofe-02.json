@@ -66,16 +66,16 @@
     }
   ],
   "weatherType": "warm",
-  "source": "cuiseline",
+  "source": "Cuiseline",
   "basePortions": 4,
   "description": "Weisse Pizza ohne Tomatensauce — cremiger Ricotta, frische Zucchini und Mozzarella ergeben eine sommerlich-leichte Alternative.",
   "steps": [
-    "Ofen auf 230 °C vorheizen. Ricotta mit geriebenem Knoblauch, Zitronenschale, Salz und Pfeffer verrühren.",
-    "Zucchini mit einem Sparschäler in dünne Streifen hobeln. Mit etwas Salz ziehen lassen, dann abtupfen.",
-    "Pizzateig ausrollen, auf Backpapier legen. Ricotta-Mischung darauf verteilen (Rand lassen).",
-    "Mozzarella in Scheiben darauflegen, Zucchinistreifen wellig anordnen.",
-    "Mit Olivenöl beträufeln, Thymianblättchen darüber zupfen.",
-    "10–12 Minuten backen bis der Rand goldbraun ist. Mit Parmesan und Fleur de sel fertigstellen."
+    "1. Ofen auf 230 °C vorheizen. Ricotta mit geriebenem Knoblauch, Zitronenschale, Salz und Pfeffer verrühren.",
+    "2. Zucchini mit einem Sparschäler in dünne Streifen hobeln. Mit etwas Salz ziehen lassen, dann abtupfen.",
+    "3. Pizzateig ausrollen, auf Backpapier legen. Ricotta-Mischung darauf verteilen (Rand lassen).",
+    "4. Mozzarella in Scheiben darauflegen, Zucchinistreifen wellig anordnen.",
+    "5. Mit Olivenöl beträufeln, Thymianblättchen darüber zupfen.",
+    "6. 10–12 Minuten backen bis der Rand goldbraun ist. Mit Parmesan und Fleur de sel fertigstellen."
   ],
   "tips": "Fertigteig spart Zeit — alternativ selbst gemachten Teig 24h im Kühlschrank gehen lassen für besseren Geschmack.",
   "imageUrl": null,

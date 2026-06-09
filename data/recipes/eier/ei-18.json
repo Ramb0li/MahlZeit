@@ -7,7 +7,8 @@
   "tags": [
     "Vegetarisch",
     "Schnell und einfach",
-    "Kinderfreundlich"
+    "Kinderfreundlich",
+    "Frühstücksgericht"
   ],
   "ingredients": [
     {
@@ -78,15 +79,15 @@
     }
   ],
   "weatherType": "neutral",
-  "source": "herrbuettner.de",
+  "source": "zu überarbeiten",
   "description": "Ein köstlicher Käsetoast mit würzigem Cheddar und zartem Butterkäse, getoppt mit einem Spiegelei mit flüssigem Eigelb, das als perfekte „Sauce\" dient. Parmesan sorgt für die knusprige Kruste.",
   "steps": [
-    "Je eine Scheibe Cheddar und eine Scheibe Butterkäse auf zwei Toastscheiben legen. Mit den übrigen Toastscheiben bedecken und mit der Hand leicht zusammendrücken.",
-    "Eine Pfanne bei mittlerer Hitze erwärmen und 10 g Butter darin schmelzen. Die Butter in der Pfanne verteilen und den Käsetoast hineinlegen. Den Toast kreisend in der Pfanne bewegen, damit er das Fett aufnimmt. Etwa 5 Minuten rösten, bis die Unterseite schön knusprig und gebräunt ist.",
-    "Den Toast aus der Pfanne nehmen, die restlichen 10 g Butter in die Pfanne geben und zerlassen. Toast zurück in die Pfanne legen und die andere Seite genauso behandeln - kreisend bewegen und mit einem Pfannenwender leicht andrücken.",
-    "Geriebenen Parmesan über den Toast streuen und wenden. Nach etwa 30 Sekunden nochmals wenden, dann aus der Pfanne nehmen und beiseitelegen.",
-    "Die Pfanne kurz reinigen und das Olivenöl hineingeben. Die beiden Eier aufschlagen und nach Wunsch braten. Mit Salz, Pfeffer und Chiliflocken würzen.",
-    "Den Käsetoast mit getrocknetem Oregano bestreuen und mit dem Spiegelei servieren."
+    "1. Je eine Scheibe Cheddar und eine Scheibe Butterkäse auf zwei Toastscheiben legen. Mit den übrigen Toastscheiben bedecken und mit der Hand leicht zusammendrücken.",
+    "2. Eine Pfanne bei mittlerer Hitze erwärmen und 10 g Butter darin schmelzen. Die Butter in der Pfanne verteilen und den Käsetoast hineinlegen. Den Toast kreisend in der Pfanne bewegen, damit er das Fett aufnimmt. Etwa 5 Minuten rösten, bis die Unterseite schön knusprig und gebräunt ist.",
+    "3. Den Toast aus der Pfanne nehmen, die restlichen 10 g Butter in die Pfanne geben und zerlassen. Toast zurück in die Pfanne legen und die andere Seite genauso behandeln - kreisend bewegen und mit einem Pfannenwender leicht andrücken.",
+    "4. Geriebenen Parmesan über den Toast streuen und wenden. Nach etwa 30 Sekunden nochmals wenden, dann aus der Pfanne nehmen und beiseitelegen.",
+    "5. Die Pfanne kurz reinigen und das Olivenöl hineingeben. Die beiden Eier aufschlagen und nach Wunsch braten. Mit Salz, Pfeffer und Chiliflocken würzen.",
+    "6. Den Käsetoast mit getrocknetem Oregano bestreuen und mit dem Spiegelei servieren."
   ],
   "dietCategory": "vegetarian",
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-18-1780866860975.jpg",

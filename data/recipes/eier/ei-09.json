@@ -4,7 +4,8 @@
   "category": "Frühstück",
   "timeMinutes": 10,
   "tags": [
-    "Vegan"
+    "Vegan",
+    "Frühstücksgericht"
   ],
   "weatherType": "warm",
   "source": "Cuiseline",
@@ -50,10 +51,10 @@
     }
   ],
   "steps": [
-    "Heidelbeeren, Banane, Mandeljogurt, Haferdrink, Leinsamen und Hanfsamen in den Mixer geben.",
-    "Fein mixen bis eine cremige Masse entsteht.",
-    "In eine Schüssel geben.",
-    "Mit Granola, Früchten (Banane, Granatapfelkerne), Nüssen und Pfefferminze garnieren."
+    "1. Heidelbeeren, Banane, Mandeljogurt, Haferdrink, Leinsamen und Hanfsamen in den Mixer geben.",
+    "2. Fein mixen bis eine cremige Masse entsteht.",
+    "3. In eine Schüssel geben.",
+    "4. Mit Granola, Früchten (Banane, Granatapfelkerne), Nüssen und Pfefferminze garnieren."
   ],
   "tips": "",
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---blueberry-smoothie-bowl-2--1780577059410.jpeg",

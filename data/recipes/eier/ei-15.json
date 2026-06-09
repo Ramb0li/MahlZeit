@@ -58,17 +58,18 @@
   "basePortions": 4,
   "description": "Amerikanische Pancakes – luftig, dick und goldbraun. Ein Frühstücksklassiker für die ganze Familie.",
   "steps": [
-    "Mehl, Zucker, Backpulver und Salz in einer Schüssel mischen.",
-    "Eier, Milch, Butter und Vanilleextrakt verquirlen.",
-    "Nasse Zutaten zu den trockenen geben und bis zur glatten Masse verrühren. 3 Minuten ruhen lassen.",
-    "Pfanne bei mittlerer Hitze erhitzen, leicht buttern. Ca. ¼ Tasse Teig hineingeben.",
-    "Backen bis die Ränder fest und Blasen entstehen, dann wenden und goldbraun fertigbacken.",
-    "Mit Ahornsirup, Butter oder frischen Früchten servieren."
+    "1. Mehl, Zucker, Backpulver und Salz in einer Schüssel mischen.",
+    "2. Eier, Milch, Butter und Vanilleextrakt verquirlen.",
+    "3. Nasse Zutaten zu den trockenen geben und bis zur glatten Masse verrühren. 3 Minuten ruhen lassen.",
+    "4. Pfanne bei mittlerer Hitze erhitzen, leicht buttern. Ca. ¼ Tasse Teig hineingeben.",
+    "5. Backen bis die Ränder fest und Blasen entstehen, dann wenden und goldbraun fertigbacken.",
+    "6. Mit Ahornsirup, Butter oder frischen Früchten servieren."
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-15-1780699224577.jpg",
   "tags": [
     "Vegetarisch",
-    "Kinderfreundlich"
+    "Kinderfreundlich",
+    "Frühstücksgericht"
   ],
   "imageZutaten": null,
   "imageKochen": null,

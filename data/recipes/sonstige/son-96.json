@@ -42,14 +42,14 @@
     }
   ],
   "weatherType": "neutral",
-  "source": "herrbuettner.de",
+  "source": "zu überarbeiten",
   "description": "Eine köstliche Brotzeit-Kreation mit Graubrot, cremigem Camembert, frischer Birne und Honig. Die Kombination aus mildem Käse und süssem Honig harmoniert perfekt mit der feinen Säure der Birne.",
   "steps": [
-    "Die Birne gründlich waschen und trocken tupfen. Der Länge nach halbieren und die Kerne entfernen. Eine Hälfte der Breite nach in etwa 0,5 mm dünne Scheiben schneiden.",
-    "Den Camembert auspacken und der Breite nach in etwa 1 cm dicke Scheiben schneiden.",
-    "Die Brotscheiben mit etwas Butter bestreichen.",
-    "Die Brotscheiben abwechselnd mit Camembert- und Birnenscheiben belegen.",
-    "Jeweils 1 TL Honig der Länge nach über die Brote träufeln und servieren."
+    "1. Die Birne gründlich waschen und trocken tupfen. Der Länge nach halbieren und die Kerne entfernen. Eine Hälfte der Breite nach in etwa 0,5 mm dünne Scheiben schneiden.",
+    "2. Den Camembert auspacken und der Breite nach in etwa 1 cm dicke Scheiben schneiden.",
+    "3. Die Brotscheiben mit etwas Butter bestreichen.",
+    "4. Die Brotscheiben abwechselnd mit Camembert- und Birnenscheiben belegen.",
+    "5. Jeweils 1 TL Honig der Länge nach über die Brote träufeln und servieren."
   ],
   "dietCategory": "vegetarian",
   "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/03/graubrot_camanbert_birne_honig01.jpg",

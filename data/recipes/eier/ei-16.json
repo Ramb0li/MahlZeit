@@ -46,17 +46,18 @@
   "basePortions": 4,
   "description": "Einfachste vegane Pancakes aus Bananen und Haferflocken – ohne Mehl, Zucker oder Ei.",
   "steps": [
-    "Bananen in einer Schüssel zerdrücken bis eine glatte Paste entsteht.",
-    "Hafermehl (oder fein gemahlene Haferflocken), Backpulver, Vanilleextrakt und Zimt untermischen.",
-    "Pflanzenmilch zugeben und zu einem dickflüssigen Teig verrühren.",
-    "Antihaftpfanne bei mittlerer Hitze erhitzen. Löffelweise Teig hineingeben und kleine runde Pancakes formen.",
-    "Ca. 3–4 Minuten backen bis die Unterseite goldbraun ist, vorsichtig wenden und weitere 2–3 Minuten fertigbacken.",
-    "Mit Beeren, Ahornsirup oder Nussbutter servieren."
+    "1. Bananen in einer Schüssel zerdrücken bis eine glatte Paste entsteht.",
+    "2. Hafermehl (oder fein gemahlene Haferflocken), Backpulver, Vanilleextrakt und Zimt untermischen.",
+    "3. Pflanzenmilch zugeben und zu einem dickflüssigen Teig verrühren.",
+    "4. Antihaftpfanne bei mittlerer Hitze erhitzen. Löffelweise Teig hineingeben und kleine runde Pancakes formen.",
+    "5. Ca. 3–4 Minuten backen bis die Unterseite goldbraun ist, vorsichtig wenden und weitere 2–3 Minuten fertigbacken.",
+    "6. Mit Beeren, Ahornsirup oder Nussbutter servieren."
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-16-1780699242965.jpg",
   "tags": [
     "Vegan",
-    "Kinderfreundlich"
+    "Kinderfreundlich",
+    "Frühstücksgericht"
   ],
   "imageZutaten": null,
   "imageKochen": null,

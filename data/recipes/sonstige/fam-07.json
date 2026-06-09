@@ -4,7 +4,8 @@
   "category": "Frühstück",
   "timeMinutes": 30,
   "tags": [
-    "Vegetarisch"
+    "Vegetarisch",
+    "Frühstücksgericht"
   ],
   "weatherType": "neutral",
   "source": "Familien-Rezeptbuch",
@@ -73,10 +74,10 @@
     }
   ],
   "steps": [
-    "Mehl, Backpulver, Salz, Vanille mischen. Sojamilch und Eier einrühren.",
-    "Ghee erhitzen, Pancakes (ca. 8 cm) beidseitig goldbraun backen.",
-    "Kompott: Zwetschgen mit Zimt und wenig Wasser aufkochen, 10 Min. köcheln.",
-    "Mit Zwetschgenkompott und Kokosjoghurt servieren."
+    "1. Mehl, Backpulver, Salz, Vanille mischen. Sojamilch und Eier einrühren.",
+    "2. Ghee erhitzen, Pancakes (ca. 8 cm) beidseitig goldbraun backen.",
+    "3. Kompott: Zwetschgen mit Zimt und wenig Wasser aufkochen, 10 Min. köcheln.",
+    "4. Mit Zwetschgenkompott und Kokosjoghurt servieren."
   ],
   "imageUrl": null,
   "imageZutaten": null,

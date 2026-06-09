@@ -11312,6 +11312,10 @@
     "tags": [
       "Vegetarisch"
     ],
+    "weatherType": "kalt",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 6,
+    "description": "Cremiger Hörnligratin mit Räuchertofu, Lauch, Erbsen und Greyerzer.",
     "ingredients": [
       {
         "name": "Urdinkel-Hörnli",
@@ -11404,13 +11408,6 @@
         "perPortions": 6
       }
     ],
-    "weatherType": "kalt",
-    "source": "Familien-Rezeptbuch",
-    "basePortions": 6,
-    "description": "Cremiger Hörnligratin mit Räuchertofu, Lauch, Erbsen und Greyerzer.",
-    "imageUrl": null,
-    "imageZutaten": null,
-    "imageKochen": null,
     "steps": [
       "1. Hörnli in Salzwasser al dente kochen.",
       "2. Räuchertofu goldbraun anbraten, beiseitestellen.",
@@ -11418,6 +11415,22 @@
       "4. Hörnli, Tofu, Petersilie, 2/3 Käse unter Sauce mischen. In Gratinform, restl. Käse drauf.",
       "5. 20 Min. bei 220°C gratinieren."
     ],
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "gluten",
+      "milch",
+      "soja",
+      "sulfite"
+    ],
+    "nutrition": {
+      "kcal": 638,
+      "protein": 28.3,
+      "fat": 28.6,
+      "carbs": 64.7,
+      "fiber": 6.2
+    },
     "dietCategory": "vegetarian"
   },
   {
@@ -33130,164 +33143,6 @@
       "carbs": 18.4,
       "fiber": 3.6
     },
-    "dietCategory": "vegan"
-  },
-  {
-    "id": "rec-1780953992976-qmwcv",
-    "name": "Thai Nudelsuppe mit Tofu",
-    "category": "Suppen, Eintöpfe & Currys",
-    "timeMinutes": 20,
-    "tags": [
-      "Vegetarisch",
-      "Asiatisch",
-      "Mittagsgericht",
-      "Abendgericht",
-      "Vegan",
-      "Mealprep-geeignet",
-      "Frühling",
-      "Herbst",
-      "Winter",
-      "Kinderfreundlich"
-    ],
-    "ingredients": [
-      {
-        "name": "Kokosöl",
-        "amount": 1,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Schalotte",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Knoblauchzehen",
-        "amount": 1,
-        "unit": "Zehe",
-        "perPortions": 4
-      },
-      {
-        "name": "Zitronengras",
-        "amount": 2,
-        "unit": "Stängel",
-        "perPortions": 4
-      },
-      {
-        "name": "Rote Currypaste",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Gemüsebouillon",
-        "amount": 0.5,
-        "unit": "l",
-        "perPortions": 4
-      },
-      {
-        "name": "Kokosmilch",
-        "amount": 2.5,
-        "unit": "dl",
-        "perPortions": 4
-      },
-      {
-        "name": "Sojasauce",
-        "amount": 3,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Tofu nature",
-        "amount": 220,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Karotten",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Breite Reisnudeln",
-        "amount": 125,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Mungbohnensprossen",
-        "amount": 100,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Rote Chilis",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Limettenblätter",
-        "amount": 2,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Thai-Basilikum",
-        "amount": 0.5,
-        "unit": "Bund",
-        "perPortions": 4
-      },
-      {
-        "name": "Limetten",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 4
-      }
-    ],
-    "weatherType": "kalt",
-    "source": "MahlZeit",
-    "basePortions": 4,
-    "description": "Eine wohltuende asiatische Nudelsuppe mit zartem Tofu, kombiniert mit fernöstlichen Gewürzen, frischen Geschmacksnuancen und würziger Schärfe. Perfekt für eine schnelle und aromavolle Mahlzeit.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/1c475ced-8e43-4f74-9fd4-3e4d370886e1-1780954259698.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
-    "steps": [
-      "1. Schalotte würfeln, Knoblauchzehe und das Innere vom Zitronengras fein hacken. Tofu würfeln. Karotten in Streifen schneiden. Chili entkernen und in feine Ringe schneiden.",
-      "2. Kokosöl in einer Pfanne erwärmen und Schalotte, Knoblauch, Zitronengras, Kaffirlimettenblätter sowie Currypaste darin andämpfen.",
-      "3. Gemüsebouillon und Kokosmilch dazugiessen und aufkochen lassen.",
-      "4. Sojasauce, Karotten und Tofu in die Suppe geben, ca. 3 Minuten köcheln lassen.",
-      "5. Geraspelte oder in Stücken geschnittene Rüebli beigeben und etwa 3 Minuten köcheln lassen.",
-      "6. Reisnudeln nach Angabe auf der Verpackung kochen und in die Suppe geben.",
-      "7. Suppe mit Mungbohnensprossen, Chili, frischem Thai-Basilikum und einem Limettenschnitz garniert servieren."
-    ],
-    "dietCategory": "vegan"
-  },
-  {
-    "id": "rec-1780955620762-cmk4x",
-    "name": "Kürbis-Ingwer-Suppe",
-    "category": "Suppen, Eintöpfe & Currys",
-    "timeMinutes": 20,
-    "tags": [
-      "Vegetarisch",
-      "Vegan",
-      "Mealprep-geeignet",
-      "Kinderfreundlich",
-      "Herbst",
-      "Winter",
-      "Mittagsgericht",
-      "Abendgericht"
-    ],
-    "ingredients": [],
-    "weatherType": "kalt",
-    "source": "Cuiseline",
-    "basePortions": 4,
-    "description": "",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/gro---sup-01-1-ku-rbis-kokos-suppe--1780955617506.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
     "dietCategory": "vegan"
   }
 ]

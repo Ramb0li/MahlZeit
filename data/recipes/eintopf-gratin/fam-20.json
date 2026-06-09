@@ -1,6 +1,6 @@
 {
   "id": "fam-20",
-  "name": "Hörnligratin mit Räuchertofu und Lauch",
+  "name": "Hörnligratin mit Räuchertofu, Lauch, Erbsen und Broccoli",
   "category": "Aufläufe & Gratins",
   "timeMinutes": 45,
   "tags": [
@@ -103,16 +103,15 @@
     }
   ],
   "steps": [
-    "Hörnli in Salzwasser al dente kochen.",
-    "Räuchertofu goldbraun anbraten, beiseitestellen.",
-    "Lauch in Butter andünsten, mit Wein ablöschen. Rahm und Milch dazugeben, würzen. Erbsen hinzu.",
-    "Hörnli, Tofu, Petersilie, 2/3 Käse unter Sauce mischen. In Gratinform, restl. Käse drauf.",
-    "20 Min. bei 220°C gratinieren."
+    "1. Hörnli in Salzwasser al dente kochen.",
+    "2. Räuchertofu goldbraun anbraten, beiseitestellen.",
+    "3. Lauch in Butter andünsten, mit Wein ablöschen. Rahm und Milch dazugeben, würzen. Erbsen hinzu.",
+    "4. Hörnli, Tofu, Petersilie, 2/3 Käse unter Sauce mischen. In Gratinform, restl. Käse drauf.",
+    "5. 20 Min. bei 220°C gratinieren."
   ],
   "imageUrl": null,
   "imageZutaten": null,
   "imageKochen": null,
-  "tips": "",
   "allergens": [
     "gluten",
     "milch",
