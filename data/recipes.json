@@ -3,7 +3,7 @@
     "id": "ei-01",
     "name": "Rührei",
     "category": "Frühstück",
-    "timeMinutes": 15,
+    "timeMinutes": 10,
     "tags": [
       "Mittagsgericht",
       "Abendgericht",
@@ -19,7 +19,7 @@
     "ingredients": [
       {
         "name": "Eier",
-        "amount": 10,
+        "amount": 8,
         "unit": "Stk",
         "perPortions": 4
       },
@@ -49,7 +49,7 @@
       }
     ],
     "weatherType": "neutral",
-    "source": "Cuiseline",
+    "source": "MahlZeit",
     "basePortions": 4,
     "description": "Klassisches Rührei, schnell und einfach.",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-01-1780502993941.jpg",
@@ -78,7 +78,7 @@
   },
   {
     "id": "ei-02",
-    "name": "Rahmspinat, Bratkartoffeln, Spiegeleier",
+    "name": "Spiegeleier mit Rahmspinat und Bratkartoffeln",
     "category": "Vegetarische Hauptgerichte",
     "timeMinutes": 35,
     "ingredients": [
@@ -131,12 +131,6 @@
         "perPortions": 4
       },
       {
-        "name": "Chiliflocken",
-        "amount": 1,
-        "unit": "Prise",
-        "perPortions": 2
-      },
-      {
         "name": "Salz",
         "amount": 1,
         "unit": "Prise",
@@ -147,10 +141,16 @@
         "amount": 1,
         "unit": "Prise",
         "perPortions": 2
+      },
+      {
+        "name": "Paprika",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 2
       }
     ],
     "weatherType": "kalt",
-    "source": "Cuiseline",
+    "source": "MahlZeit",
     "basePortions": 2,
     "description": "Es gibt Gerichte, die erinnern an die Kindheit. Rahmspinat ist dabei auf einer der ersten Plätze meiner Kindheitserinnerungsessen. Ein herzhafter Klassiker für kalte Abende.",
     "steps": [
@@ -160,9 +160,9 @@
       "4. Anschliessend den Deckel abnehmen, die Hitze leicht erhöhen und die Kartoffeln kurz braten, bis sie eine schöne Kruste haben.",
       "5. In der Zwischenzeit die Zwiebeln und Knoblauch schälen und in feine Würfel schneiden. Den Knoblauch schälen und in feine Würfel schneiden.",
       "6. Die Zwiebeln in 1 EL Olivenöl in einem Topf bei mittlerer Hitze glasig dünsten. Knoblauch hinzugeben und kurz mit dünsten.",
-      "7. Spinat hinzugeben und einmal durchrühren. Mit Salz, Pfeffer und Chiliflocken würzen.",
+      "7. Spinat hinzugeben und einmal durchrühren. Mit Salz, Pfeffer und Muskatnuss würzen.",
       "8. Sobald der Spinat in sich zusammengefallen ist, den Rahm hinzugeben. Den Rahmspinat bei kleiner Hitze leicht köcheln lassen und ab und zu durchrühren.",
-      "8. In einer Pfanne mit 1 EL Olivenöl die Eier braten. Je nach Geschmack mit festem Eigelb oder flüssigem. 9. Mit Salz und Pfeffer würzen.",
+      "8. In einer Pfanne mit 1 EL Olivenöl die Eier braten. Je nach Geschmack mit festem Eigelb oder flüssigem. 9. Mit Salz, Pfeffer und Paprika würzen.",
       "10. Gebratene Kartoffeln mit Rahmspinat und Spiegel auf Teller geben und geniessen."
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/rahmspinat-bratkartofeln-1780785972477.jpg",
@@ -173,7 +173,8 @@
       "Vegetarisch",
       "Mittagsgericht",
       "Abendgericht",
-      "Schweizer"
+      "Schweizer",
+      "Frühling"
     ],
     "allergens": [
       "ei",
@@ -192,14 +193,14 @@
   },
   {
     "id": "ei-03",
-    "name": "Rösti, Avocado, Spiegeleier",
+    "name": "Rösti mit Avocado und Spiegelei",
     "category": "Frühstück",
     "timeMinutes": 30,
     "ingredients": [
       {
-        "name": "Kartoffeln (mehlig)",
-        "amount": 800,
-        "unit": "g",
+        "name": "Geschwellte Kartoffeln (festkochend)",
+        "amount": 1,
+        "unit": "kg",
         "perPortions": 4
       },
       {
@@ -210,7 +211,7 @@
       },
       {
         "name": "Eier",
-        "amount": 4,
+        "amount": 8,
         "unit": "Stk",
         "perPortions": 4
       },
@@ -231,18 +232,43 @@
         "amount": 1,
         "unit": "Prise",
         "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Paprika",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
       }
     ],
     "weatherType": "neutral",
-    "source": "Cuiseline",
+    "source": "MahlZeit",
     "basePortions": 4,
-    "description": "Schweizer Rösti trifft auf Avocado.",
-    "steps": [],
-    "tips": "",
-    "imageUrl": null,
+    "description": "Schweizer Klassiker trifft auf Avocado.",
+    "steps": [
+      "1. Geschwellte Kartoffeln (am besten vom Vortag) schälen und an der Röstiraffel reiben, anschliessend salzen.",
+      "2. Butter in einer beschichteten Bratpfanne erhitzen. Die Kartoffeln dazugeben und unter gelegentlichem Wenden rund 5 Minuten anbraten.",
+      "3. Anschliessend die Kartoffeln mit einer Bratschaufel zu einer Rösti formen und nicht mehr bewegen. Die Rösti ohne Deckel bei mittlerer Hitze etwa 10 Minuten braten.",
+      "4. Zum Wenden einen flachen Teller auf die Pfanne legen und die Rösti darauf stürzen. Nochmals etwas Butter in die Pfanne geben, die Rösti vorsichtig zurückgleiten lassen und ohne Deckel weitere ca. 10 Minuten fertig braten.",
+      "5. Unterdessen Avocado in Scheiben schneiden und Spiegeleier braten. Spiegeleier mit Salz, Pfeffer und Paprika würzen.",
+      "6. Rösti mit Spiegeleier und Avocado anrichten. Etwas Zitronensaft über die Avocado pressen und servieren."
+    ],
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-03-1781044613388.jpg",
     "tags": [
       "Mittagsgericht",
-      "Frühstücksgericht"
+      "Frühstücksgericht",
+      "Vegetarisch",
+      "Kinderfreundlich",
+      "Frühling",
+      "Herbst",
+      "Winter",
+      "Abendgericht",
+      "Schweizer"
     ],
     "allergens": [
       "ei",
@@ -257,58 +283,104 @@
       "fiber": 6.8
     },
     "dietCategory": "vegetarian",
-    "imageZutaten": null
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "ei-04",
-    "name": "Gemüse-Eieromelette",
+    "name": "Gemüse-Eieromelette mit Vollkornbrot",
     "category": "Vegetarische Hauptgerichte",
     "timeMinutes": 20,
     "ingredients": [
       {
         "name": "Eier",
-        "amount": 4,
+        "amount": 7,
         "unit": "Stk",
         "perPortions": 4
       },
       {
-        "name": "Paprika",
+        "name": "Rote Peperoni",
         "amount": 1,
         "unit": "Stk",
         "perPortions": 4
       },
       {
-        "name": "Zucchini",
+        "name": "Zucchetti",
         "amount": 1,
         "unit": "Stk",
         "perPortions": 4
       },
       {
         "name": "Zwiebel",
-        "amount": 1,
+        "amount": 2,
         "unit": "Stk",
         "perPortions": 4
       },
       {
         "name": "Olivenöl",
-        "amount": 2,
+        "amount": 4,
         "unit": "EL",
         "perPortions": 4
       },
       {
-        "name": "Kräuter",
+        "name": "Glattblättrige Petersilie ",
         "amount": 1,
         "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Champignons",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Milch",
+        "amount": 100,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Paprika",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Vollkornbrot",
+        "amount": 8,
+        "unit": "Scheibe",
         "perPortions": 4
       }
     ],
     "weatherType": "neutral",
-    "source": "Cuiseline",
+    "source": "MahlZeit",
     "basePortions": 4,
-    "description": "Schnelle Omelette mit buntem Gemüse.",
+    "description": "Ob als eiweissreiches Frühstück oder als leichte, sättigende Mahlzeit am Mittag oder Abend: Dieses schnelle Omelett mit buntem Gemüse und Vollkornbrot passt immer.",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-04-1780699103706.jpg",
     "tags": [
-      "Mittagsgericht"
+      "Mittagsgericht",
+      "Vegetarisch",
+      "Kinderfreundlich",
+      "Frühling",
+      "Sommer",
+      "Herbst",
+      "Winter",
+      "Frühstücksgericht",
+      "Abendgericht",
+      "Schweizer"
     ],
     "imageZutaten": null,
     "imageKochen": null,
@@ -322,61 +394,166 @@
       "carbs": 6.2,
       "fiber": 2.3
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "steps": [
+      "1. Zwiebeln schälen und in kleine Würfel schneiden. Zucchetti waschen, längs halbieren und in Scheiben schneiden. Peperoni halbieren, entkernen, waschen und würfeln. Champignons putzen und in Scheiben schneiden.",
+      "2. Die Eier zusammen mit der Milch in einer Schüssel verquirlen. Mit Paprika, Salz und Pfeffer würzen.",
+      "3. In einer grossen beschichteten Pfanne etwas Olivenöl erhitzen. Zwiebeln und Knoblauch darin bei mittlerer Hitze 2–3 Minuten glasig dünsten. Das vorbereitete Gemüse beigeben und rund 5 Minuten mitbraten.",
+      "4. Den Backofen auf 100 Grad vorheizen. Etwa drei Viertel des Gemüses aus der Pfanne nehmen. Das restliche Gemüse mit einem Viertel der Eiermasse übergiessen und bei mittlerer Hitze 3–4 Minuten stocken lassen. Das Omelett wenden und weitere ca. 2 Minuten fertig braten, bis es leicht gebräunt ist. Herausnehmen, zusammenklappen und im Ofen warm halten.",
+      "5. Für die weiteren Omeletts jeweils wieder etwas Olivenöl in die Pfanne geben, einen Teil der Gemüsemischung beigeben und mit einem Viertel der Eiermasse übergiessen. So fortfahren, bis insgesamt 4 Omeletts fertig sind.",
+      "6. Die Gemüseomeletts mit gehackter Petersilie bestreuen und mit getoastetem Vollkornbrot servieren."
+    ]
   },
   {
     "id": "ei-05",
     "name": "Omelette mit Pilz-Kräutersauce",
     "category": "Vegetarische Hauptgerichte",
-    "timeMinutes": 25,
+    "timeMinutes": 50,
     "ingredients": [
       {
-        "name": "Eier",
-        "amount": 6,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Champignons",
+        "name": "Mehl",
         "amount": 300,
         "unit": "g",
         "perPortions": 4
       },
       {
-        "name": "Rahm",
-        "amount": 100,
-        "unit": "ml",
+        "name": "Salz",
+        "amount": 1,
+        "unit": "TL",
         "perPortions": 4
       },
       {
-        "name": "Petersilie",
-        "amount": 0.5,
-        "unit": "Bund",
+        "name": "Eier",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Milch",
+        "amount": 3,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Wasser",
+        "amount": 3,
+        "unit": "dl",
         "perPortions": 4
       },
       {
         "name": "Butter",
-        "amount": 30,
+        "amount": 50,
         "unit": "g",
         "perPortions": 4
       },
       {
-        "name": "Knoblauch",
+        "name": "Bratbutter",
+        "amount": 5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Butter",
         "amount": 1,
-        "unit": "Zehe",
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "kleine Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Champignons",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Mehl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitrone",
+        "amount": 0.5,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Rahm",
+        "amount": 3,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Cayennepfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Paprika",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Salbeiblätter",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Petersilie",
+        "amount": 0.25,
+        "unit": "Bund",
         "perPortions": 4
       }
     ],
     "weatherType": "kalt",
-    "source": "Cuiseline",
+    "source": "MahlZeit",
     "basePortions": 4,
-    "description": "Cremige Pilzsauce über fluffiger Omelette.",
-    "steps": [],
-    "tips": "",
-    "imageUrl": null,
+    "description": "Feine Omeletten treffen auf cremige Pilzsauce mit frischer Zitronennote und aromatischem Salbei – ein herzhaftes Gericht für ein gemütliches Essen.",
+    "steps": [
+      "1. Butter in einer kleinen Pfanne schmelzen, beiseitestellen und auskühlen lassen.",
+      "2. Mehl und Salz in einer Schüssel mischen, in der Mitte eine Mulde formen.",
+      "3. Eier, Milchwasser und ausgekühlte Butter verquirlen. Zum Mehl giessen und zu einem glatten Teig rühren.",
+      "4. Teig zugedeckt ca. 30 Minuten ruhen lassen.",
+      "5. Während der Teig ruht, Pilzsauce vorbereiten: Zwiebel hacken, Champignons in Scheiben schneiden.",
+      "6. Butter in einer Pfanne erwärmen. Zwiebel beigeben und andämpfen.",
+      "7. Champignons hinzufügen und zugedeckt ca. 5 Minuten mitdämpfen. Mehl beigeben und kurz mitdünsten.",
+      "8. Zitrone dünn schälen, Schale in feine Streifen schneiden. Zitronenschale und 1 TL Zitronensaft beigeben, kurz einkochen lassen.",
+      "9. Rahm, Gewürze und Salbei unter Rühren beigeben. Zugedeckt bei kleiner Hitze ca. 10 Minuten köcheln lassen. Sauce warm halten.",
+      "10. Beschichtete Pfanne mit wenig Bratbutter erhitzen. Aus dem Teig portionenweise dünne Omeletten goldgelb backen.",
+      "11. Fertige Omeletten auf einen Teller schichten und bei 60 °C Ober-/Unterhitze warm halten, bis alle Omeletten gebacken sind.",
+      "12. Omeletten mit Pilzsauce füllen und etwas Petersilie garnieren."
+    ],
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-05-1781045328742.jpg",
     "tags": [
       "Herbst",
-      "Winter"
+      "Winter",
+      "Vegetarisch",
+      "Mealprep-geeignet",
+      "Kinderfreundlich",
+      "Frühling",
+      "Mittagsgericht",
+      "Abendgericht",
+      "Schweizer"
     ],
     "allergens": [
       "ei",
@@ -390,14 +567,111 @@
       "fiber": 1.2
     },
     "dietCategory": "vegetarian",
-    "imageZutaten": null
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
-    "id": "ei-06",
-    "name": "Eier in Senfsauce mit Blumenkohlpüree",
+    "id": "ei-07",
+    "name": "Polenta mit mediterranem Gemüse und Spiegelei",
     "category": "Vegetarische Hauptgerichte",
-    "timeMinutes": 35,
+    "timeMinutes": 40,
     "ingredients": [
+      {
+        "name": "Zucchetti",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Peperoni",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Champginons",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Cherrytomaten",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Schwarze Oliven, entsteint",
+        "amount": 1,
+        "unit": "Pkg",
+        "perPortions": 4
+      },
+      {
+        "name": "Rosmarinzweige",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "All'Arrabbiata Gewürz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Milch",
+        "amount": 600,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebouillon",
+        "amount": 600,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Polenta",
+        "amount": 260,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Geriebener Parmesan",
+        "amount": 160,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Butter",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 4,
+        "unit": "Prise",
+        "perPortions": 4
+      },
       {
         "name": "Eier",
         "amount": 8,
@@ -405,114 +679,49 @@
         "perPortions": 4
       },
       {
-        "name": "Dijonsenf",
-        "amount": 2,
-        "unit": "EL",
+        "name": "Butter",
+        "amount": 3,
+        "unit": "TL",
         "perPortions": 4
       },
       {
-        "name": "Rahm",
-        "amount": 200,
-        "unit": "ml",
-        "perPortions": 4
-      },
-      {
-        "name": "Blumenkohl",
+        "name": "Salz",
         "amount": 1,
-        "unit": "Kopf",
+        "unit": "Prise",
         "perPortions": 4
       },
       {
-        "name": "Butter",
-        "amount": 40,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Milch",
-        "amount": 100,
-        "unit": "ml",
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
         "perPortions": 4
       }
     ],
     "weatherType": "kalt",
-    "source": "Cuiseline",
+    "source": "MahlZeit",
     "basePortions": 4,
-    "description": "Deftige Senfsauce mit Eiern und feinem Blumenkohlpüree.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-06-1780699136939.jpg",
+    "description": "Herzhaft, farbenfroh und sättigend – diese Käsepolenta mit Ofengemüse und Spiegelei bringt mediterrane Wärme auf den Teller.",
+    "steps": [
+      "1.  Zucchetti, Peperoni und Champignons in Würfel schneiden. Cherrytomaten halbieren.",
+      "2. Gemüsewürfel in eine Gratinform geben. Oliven beigeben, mit All’Arrabbiata-Gewürz, Salz und Pfeffer würzen. Rosmarin darauf verteilen, mit Olivenöl beträufeln und mischen.",
+      "3. Ofengemüse bei 200 °C ca. 20 Minuten schmoren.",
+      "4. Milch und Gemüsebouillon in einer Pfanne aufkochen. Hitze reduzieren, Polenta unter ständigem Rühren einrieseln lassen.",
+      "5. Polenta bei kleiner Hitze unter regelmässigem Rühren ca. 10–15 Minuten garen. Pfanne vom Herd nehmen oder Herd ausschalten.",
+      "6. Geriebenen Parmesan sorgfältig unter die Polenta rühren. Butter beigeben, mit Pfeffer abschmecken. Salz erst nach dem Probieren ergänzen.",
+      "7. Cherrytomaten zum Ofengemüse geben und weitere 5–10 Minuten mitschmoren.",
+      "8. Wenig Butter oder Olivenöl in einer beschichteten Pfanne erhitzen. Eier aufschlagen und zu Spiegeleiern braten. Mit Salz und Pfeffer würzen.",
+      "9. Polenta, Ofengemüse und Spiegeleier auf Tellern anrichten."
+    ],
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-07-1781044634643.jpg",
     "tags": [
       "Herbst",
-      "Winter"
-    ],
-    "imageZutaten": null,
-    "imageKochen": null,
-    "allergens": [
-      "ei",
-      "milch",
-      "senf"
-    ],
-    "nutrition": {
-      "kcal": 408,
-      "protein": 23.8,
-      "fat": 31.7,
-      "carbs": 7.4,
-      "fiber": 2.8
-    },
-    "dietCategory": "vegetarian"
-  },
-  {
-    "id": "ei-07",
-    "name": "Polenta, Gemüse & Eier",
-    "category": "Vegetarische Hauptgerichte",
-    "timeMinutes": 35,
-    "ingredients": [
-      {
-        "name": "Polenta",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Gemüsebrühe",
-        "amount": 800,
-        "unit": "ml",
-        "perPortions": 4
-      },
-      {
-        "name": "Eier",
-        "amount": 4,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Gemischtes Gemüse",
-        "amount": 400,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Parmesan",
-        "amount": 40,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Butter",
-        "amount": 30,
-        "unit": "g",
-        "perPortions": 4
-      }
-    ],
-    "weatherType": "kalt",
-    "source": "Cuiseline",
-    "basePortions": 4,
-    "description": "Cremige Polenta mit Gemüse und Eiern.",
-    "steps": [],
-    "tips": "",
-    "imageUrl": null,
-    "tags": [
-      "Herbst",
-      "Winter"
+      "Winter",
+      "Vegetarisch",
+      "Kinderfreundlich",
+      "Mealprep-geeignet",
+      "Frühling",
+      "Mittagsgericht",
+      "Abendgericht"
     ],
     "allergens": [
       "ei",
@@ -526,7 +735,8 @@
       "fiber": 4.5
     },
     "dietCategory": "vegetarian",
-    "imageZutaten": null
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "ei-09",
@@ -535,16 +745,20 @@
     "timeMinutes": 10,
     "tags": [
       "Vegan",
-      "Frühstücksgericht"
+      "Frühstücksgericht",
+      "Kinderfreundlich",
+      "Mealprep-geeignet",
+      "Frühling",
+      "Sommer"
     ],
     "weatherType": "warm",
     "source": "Cuiseline",
     "basePortions": 1,
     "dietCategory": "vegan",
-    "description": "Cremige Smoothie Bowl mit Heidelbeeren, Hanf- und Leinsamen.",
+    "description": "Fruchtig, cremig und voller Energie – diese Blueberry Smoothie Bowl bringt Farbe in den Morgen.",
     "ingredients": [
       {
-        "name": "tiefgefrorene Heidelbeeren",
+        "name": "TK Heidelbeeren",
         "amount": 90,
         "unit": "g",
         "perPortions": 1
@@ -556,7 +770,7 @@
         "perPortions": 1
       },
       {
-        "name": "Mandeljogurt",
+        "name": "Kokosjoghurt, ungesüsst",
         "amount": 2,
         "unit": "EL",
         "perPortions": 1
@@ -578,15 +792,44 @@
         "amount": 1,
         "unit": "EL",
         "perPortions": 1
+      },
+      {
+        "name": "Haferflocken",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 1
+      },
+      {
+        "name": "Mandelmus",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 1
+      },
+      {
+        "name": "Medjool Datteln",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 1
+      },
+      {
+        "name": "Granola",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 1
+      },
+      {
+        "name": "Früchte zum Garnieren",
+        "amount": 0.25,
+        "unit": "Stk",
+        "perPortions": 1
       }
     ],
     "steps": [
-      "1. Heidelbeeren, Banane, Mandeljogurt, Haferdrink, Leinsamen und Hanfsamen in den Mixer geben.",
-      "2. Fein mixen bis eine cremige Masse entsteht.",
-      "3. In eine Schüssel geben.",
-      "4. Mit Granola, Früchten (Banane, Granatapfelkerne), Nüssen und Pfefferminze garnieren."
+      "1. Heidelbeeren, Banane, Kokosjoghurt, Haferdrink, Leinsamen, Hanfsamen, Haferflocken und zerkleinerte Datteln in den Mixer geben.",
+      "2. Alles fein pürieren, bis eine cremige, dickflüssige Masse entsteht.",
+      "3. Smoothie-Masse in eine Schüssel füllen.",
+      "4. Mit Granola bzw. Nüssen und Kernen und Früchten nach Wahl garnieren."
     ],
-    "tips": "",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---blueberry-smoothie-bowl-2--1780577059410.jpeg",
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---blueberry-smoothie-bowl-3--1780577067152.jpeg",
     "imageKochen": null,
@@ -31270,7 +31513,9 @@
       "carbs": 24.6,
       "fiber": 4.2
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "kds-02",

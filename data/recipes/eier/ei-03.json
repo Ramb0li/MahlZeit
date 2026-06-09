@@ -1,13 +1,13 @@
 {
   "id": "ei-03",
-  "name": "Rösti, Avocado, Spiegeleier",
+  "name": "Rösti mit Avocado und Spiegelei",
   "category": "Frühstück",
   "timeMinutes": 30,
   "ingredients": [
     {
-      "name": "Kartoffeln (mehlig)",
-      "amount": 800,
-      "unit": "g",
+      "name": "Geschwellte Kartoffeln (festkochend)",
+      "amount": 1,
+      "unit": "kg",
       "perPortions": 4
     },
     {
@@ -18,7 +18,7 @@
     },
     {
       "name": "Eier",
-      "amount": 4,
+      "amount": 8,
       "unit": "Stk",
       "perPortions": 4
     },
@@ -39,18 +39,43 @@
       "amount": 1,
       "unit": "Prise",
       "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Paprika",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
     }
   ],
   "weatherType": "neutral",
-  "source": "Cuiseline",
+  "source": "MahlZeit",
   "basePortions": 4,
-  "description": "Schweizer Rösti trifft auf Avocado.",
-  "steps": [],
-  "tips": "",
-  "imageUrl": null,
+  "description": "Schweizer Klassiker trifft auf Avocado.",
+  "steps": [
+    "1. Geschwellte Kartoffeln (am besten vom Vortag) schälen und an der Röstiraffel reiben, anschliessend salzen.",
+    "2. Butter in einer beschichteten Bratpfanne erhitzen. Die Kartoffeln dazugeben und unter gelegentlichem Wenden rund 5 Minuten anbraten.",
+    "3. Anschliessend die Kartoffeln mit einer Bratschaufel zu einer Rösti formen und nicht mehr bewegen. Die Rösti ohne Deckel bei mittlerer Hitze etwa 10 Minuten braten.",
+    "4. Zum Wenden einen flachen Teller auf die Pfanne legen und die Rösti darauf stürzen. Nochmals etwas Butter in die Pfanne geben, die Rösti vorsichtig zurückgleiten lassen und ohne Deckel weitere ca. 10 Minuten fertig braten.",
+    "5. Unterdessen Avocado in Scheiben schneiden und Spiegeleier braten. Spiegeleier mit Salz, Pfeffer und Paprika würzen.",
+    "6. Rösti mit Spiegeleier und Avocado anrichten. Etwas Zitronensaft über die Avocado pressen und servieren."
+  ],
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-03-1781044613388.jpg",
   "tags": [
     "Mittagsgericht",
-    "Frühstücksgericht"
+    "Frühstücksgericht",
+    "Vegetarisch",
+    "Kinderfreundlich",
+    "Frühling",
+    "Herbst",
+    "Winter",
+    "Abendgericht",
+    "Schweizer"
   ],
   "allergens": [
     "ei",
@@ -65,5 +90,6 @@
     "fiber": 6.8
   },
   "dietCategory": "vegetarian",
-  "imageZutaten": null
+  "imageZutaten": null,
+  "imageKochen": null
 }

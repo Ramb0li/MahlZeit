@@ -227,10 +227,11 @@ export async function saveRecipes(recipes: Recipe[], groupId?: string): Promise<
 /** Stellt sicher dass neuere Settings-Felder vorhanden sind (Migration alter Datensätze) */
 function normalizeSettings(s: AppSettings): AppSettings {
   if (!s.promotions) {
-    s.promotions = { enabledStores: ['migros', 'coop', 'lidl'] };
-  } else if (!s.promotions.enabledStores) {
+    return { ...s, promotions: { enabledStores: ['migros', 'coop', 'lidl'] } };
+  }
+  if (!s.promotions.enabledStores) {
     // Alte Struktur (nur manualX) → enabledStores migrieren
-    s.promotions.enabledStores = ['migros', 'coop', 'lidl'];
+    return { ...s, promotions: { ...s.promotions, enabledStores: ['migros', 'coop', 'lidl'] } };
   }
   return s;
 }

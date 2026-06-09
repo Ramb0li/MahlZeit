@@ -1,8 +1,17 @@
 'use client';
-import { useState, useRef, useCallback } from 'react';
-import { Plus, Trash2, ImagePlus, X } from 'lucide-react';
+import { useState, useRef, useCallback, useEffect } from 'react';
+import { Plus, Trash2, ImagePlus, X, GripVertical } from 'lucide-react';
 import { type Recipe, type Category, type WeatherType, type Ingredient, type IngredientGroup, TAG_GROUPS, computeTimeTags } from '@/types';
-import { getAmountConstraints, COMMON_UNITS } from '@/lib/utils';
+import { COMMON_UNITS } from '@/lib/utils';
+import {
+  DndContext, closestCenter, PointerSensor, useSensor, useSensors,
+  type DragEndEvent,
+} from '@dnd-kit/core';
+import {
+  SortableContext, verticalListSortingStrategy,
+  useSortable, arrayMove,
+} from '@dnd-kit/sortable';
+import { CSS } from '@dnd-kit/utilities';
 
 const CATEGORIES: Category[] = [
   'Frühstück', 'Snacks & Vorspeisen', 'Suppen, Eintöpfe & Currys',
@@ -61,6 +70,107 @@ async function downscaleImage(file: File, maxEdge = 1600, quality = 0.85): Promi
     return { blob: file, reencoded: false };
   }
 }
+
+// ─── Sortable ingredient row ──────────────────────────────────────────────────
+
+interface SortableIngredientRowProps {
+  id:         string;
+  ing:        Ingredient;
+  compact?:   boolean;
+  onUpdate:   (field: keyof Ingredient, value: string | number) => void;
+  onRemove:   () => void;
+}
+
+function SortableIngredientRow({ id, ing, compact = false, onUpdate, onRemove }: SortableIngredientRowProps) {
+  const { attributes, listeners, setNodeRef, transform, transition, isDragging } = useSortable({ id });
+  const p = compact ? '5px 10px' : '6px 10px';
+  const rowStyle: React.CSSProperties = {
+    transform:  CSS.Transform.toString(transform),
+    transition,
+    opacity:    isDragging ? 0.45 : 1,
+    zIndex:     isDragging ? 20 : 'auto',
+    position:   'relative',
+  };
+
+  // Local string state so the user can type "0,5", clear to "", etc.
+  // Parent receives a parsed number only on blur.
+  const [displayAmount, setDisplayAmount] = useState(() => String(ing.amount));
+
+  // Sync when parent changes the amount externally (e.g. portion rescaling)
+  useEffect(() => {
+    setDisplayAmount(String(ing.amount));
+  }, [ing.amount]);
+
+  const handleAmountChange = (raw: string) => {
+    // Keep only digits and at most one decimal separator (, or .)
+    const stripped = raw.replace(/[^0-9.,]/g, '');
+    // Collapse multiple separators: keep only the first one
+    const firstSep = stripped.search(/[.,]/);
+    const display  = firstSep === -1
+      ? stripped
+      : stripped.slice(0, firstSep + 1) + stripped.slice(firstSep + 1).replace(/[.,]/g, '');
+    setDisplayAmount(display);
+  };
+
+  const commitAmount = () => {
+    // Normalise comma → dot, then parse
+    const parsed = parseFloat(displayAmount.replace(',', '.'));
+    if (!isNaN(parsed) && parsed >= 0) {
+      onUpdate('amount', parsed);
+      setDisplayAmount(String(parsed));
+    } else {
+      // Empty or invalid → reset to the current model value
+      setDisplayAmount(String(ing.amount));
+    }
+  };
+
+  return (
+    <div ref={setNodeRef} style={rowStyle} className="flex gap-2 items-center">
+      {/* Drag handle — only this element activates drag; inputs stay fully interactive */}
+      <button
+        type="button"
+        {...attributes}
+        {...listeners}
+        tabIndex={-1}
+        className="p-1 rounded cursor-grab active:cursor-grabbing touch-none shrink-0"
+        style={{ color: '#c4b8b0' }}
+      >
+        <GripVertical size={14} />
+      </button>
+
+      <input
+        type="text" placeholder="Zutat" value={ing.name}
+        onChange={(e) => onUpdate('name', e.target.value)}
+        style={{ ...inputStyle, flex: 1, padding: p }}
+      />
+      <input
+        type="text"
+        inputMode="decimal"
+        placeholder="Menge"
+        value={displayAmount}
+        onChange={(e) => handleAmountChange(e.target.value)}
+        onBlur={commitAmount}
+        style={{ ...inputStyle, width: '72px', padding: p }}
+      />
+      <input
+        type="text" list="mz-units" placeholder="Einheit" value={ing.unit}
+        onChange={(e) => onUpdate('unit', e.target.value)}
+        style={{ ...inputStyle, width: '72px', padding: p }}
+      />
+      <button
+        type="button" onClick={onRemove}
+        className="p-1.5 rounded-lg transition-colors"
+        style={{ color: '#9c8c84' }}
+        onMouseEnter={e => { (e.currentTarget as HTMLElement).style.backgroundColor = '#fce4ec'; (e.currentTarget as HTMLElement).style.color = '#c62828'; }}
+        onMouseLeave={e => { (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent'; (e.currentTarget as HTMLElement).style.color = '#9c8c84'; }}
+      >
+        <Trash2 size={14} />
+      </button>
+    </div>
+  );
+}
+
+// ─── RecipeForm ───────────────────────────────────────────────────────────────
 
 interface RecipeFormProps {
   recipe?: Recipe;
@@ -192,6 +302,24 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/up
 
   const removeGroup = (gi: number) =>
     setIngredientGroups((prev) => prev.filter((_, i) => i !== gi));
+
+  // ── Drag & Drop ──────────────────────────────────────────────────────────────
+
+  const sensors = useSensors(
+    useSensor(PointerSensor, { activationConstraint: { distance: 8 } }),
+  );
+
+  const handleFlatDragEnd = ({ active, over }: DragEndEvent) => {
+    if (!over || active.id === over.id) return;
+    setIngredients(prev => arrayMove(prev, Number(active.id), Number(over.id)));
+  };
+
+  const handleGroupIngredientDragEnd = (gi: number) => ({ active, over }: DragEndEvent) => {
+    if (!over || active.id === over.id) return;
+    setIngredientGroups(prev => prev.map((g, i) =>
+      i === gi ? { ...g, ingredients: arrayMove(g.ingredients, Number(active.id), Number(over.id)) } : g
+    ));
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -494,35 +622,19 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/up
         {/* Flat mode */}
         {ingredientMode === 'flat' && (
           <div className="space-y-2">
-            {ingredients.map((ing, i) => (
-              <div key={i} className="flex gap-2 items-center">
-                <input
-                  type="text" placeholder="Zutat" value={ing.name}
-                  onChange={(e) => updateIngredient(i, 'name', e.target.value)}
-                  style={{ ...inputStyle, flex: 1, padding: '6px 10px' }}
-                />
-                <input
-                  type="number" placeholder="Menge" value={ing.amount}
-                  {...getAmountConstraints(ing.unit)}
-                  onChange={(e) => updateIngredient(i, 'amount', e.target.value)}
-                  style={{ ...inputStyle, width: '72px', padding: '6px 10px' }}
-                />
-                <input
-                  type="text" list="mz-units" placeholder="Einheit" value={ing.unit}
-                  onChange={(e) => updateIngredient(i, 'unit', e.target.value)}
-                  style={{ ...inputStyle, width: '72px', padding: '6px 10px' }}
-                />
-                <button
-                  type="button" onClick={() => removeIngredient(i)}
-                  className="p-1.5 rounded-lg transition-colors"
-                  style={{ color: '#9c8c84' }}
-                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.backgroundColor = '#fce4ec'; (e.currentTarget as HTMLElement).style.color = '#c62828'; }}
-                  onMouseLeave={e => { (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent'; (e.currentTarget as HTMLElement).style.color = '#9c8c84'; }}
-                >
-                  <Trash2 size={14} />
-                </button>
-              </div>
-            ))}
+            <DndContext sensors={sensors} collisionDetection={closestCenter} onDragEnd={handleFlatDragEnd}>
+              <SortableContext items={ingredients.map((_, i) => String(i))} strategy={verticalListSortingStrategy}>
+                {ingredients.map((ing, i) => (
+                  <SortableIngredientRow
+                    key={i}
+                    id={String(i)}
+                    ing={ing}
+                    onUpdate={(f, v) => updateIngredient(i, f, v)}
+                    onRemove={() => removeIngredient(i)}
+                  />
+                ))}
+              </SortableContext>
+            </DndContext>
             <button
               type="button" onClick={addIngredient}
               className="flex items-center gap-1 text-xs font-semibold mt-1 transition-opacity hover:opacity-70"
@@ -562,35 +674,20 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/up
                   )}
                 </div>
                 <div className="space-y-2">
-                  {group.ingredients.map((ing, ii) => (
-                    <div key={ii} className="flex gap-2 items-center">
-                      <input
-                        type="text" placeholder="Zutat" value={ing.name}
-                        onChange={(e) => updateGroupIngredient(gi, ii, 'name', e.target.value)}
-                        style={{ ...inputStyle, flex: 1, padding: '5px 10px' }}
-                      />
-                      <input
-                        type="number" placeholder="Menge" value={ing.amount}
-                        {...getAmountConstraints(ing.unit)}
-                        onChange={(e) => updateGroupIngredient(gi, ii, 'amount', e.target.value)}
-                        style={{ ...inputStyle, width: '72px', padding: '5px 10px' }}
-                      />
-                      <input
-                        type="text" list="mz-units" placeholder="Einheit" value={ing.unit}
-                        onChange={(e) => updateGroupIngredient(gi, ii, 'unit', e.target.value)}
-                        style={{ ...inputStyle, width: '72px', padding: '5px 10px' }}
-                      />
-                      <button
-                        type="button" onClick={() => removeGroupIngredient(gi, ii)}
-                        className="p-1.5 rounded-lg transition-colors"
-                        style={{ color: '#9c8c84' }}
-                        onMouseEnter={e => { (e.currentTarget as HTMLElement).style.backgroundColor = '#fce4ec'; (e.currentTarget as HTMLElement).style.color = '#c62828'; }}
-                        onMouseLeave={e => { (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent'; (e.currentTarget as HTMLElement).style.color = '#9c8c84'; }}
-                      >
-                        <Trash2 size={14} />
-                      </button>
-                    </div>
-                  ))}
+                  <DndContext sensors={sensors} collisionDetection={closestCenter} onDragEnd={handleGroupIngredientDragEnd(gi)}>
+                    <SortableContext items={group.ingredients.map((_, ii) => String(ii))} strategy={verticalListSortingStrategy}>
+                      {group.ingredients.map((ing, ii) => (
+                        <SortableIngredientRow
+                          key={ii}
+                          id={String(ii)}
+                          ing={ing}
+                          compact
+                          onUpdate={(f, v) => updateGroupIngredient(gi, ii, f, v)}
+                          onRemove={() => removeGroupIngredient(gi, ii)}
+                        />
+                      ))}
+                    </SortableContext>
+                  </DndContext>
                 </div>
                 <button
                   type="button"

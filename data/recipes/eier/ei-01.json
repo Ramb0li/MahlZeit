@@ -2,7 +2,7 @@
   "id": "ei-01",
   "name": "Rührei",
   "category": "Frühstück",
-  "timeMinutes": 15,
+  "timeMinutes": 10,
   "tags": [
     "Mittagsgericht",
     "Abendgericht",
@@ -18,7 +18,7 @@
   "ingredients": [
     {
       "name": "Eier",
-      "amount": 10,
+      "amount": 8,
       "unit": "Stk",
       "perPortions": 4
     },
@@ -48,7 +48,7 @@
     }
   ],
   "weatherType": "neutral",
-  "source": "Cuiseline",
+  "source": "MahlZeit",
   "basePortions": 4,
   "description": "Klassisches Rührei, schnell und einfach.",
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-01-1780502993941.jpg",

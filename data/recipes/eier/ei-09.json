@@ -5,16 +5,20 @@
   "timeMinutes": 10,
   "tags": [
     "Vegan",
-    "Frühstücksgericht"
+    "Frühstücksgericht",
+    "Kinderfreundlich",
+    "Mealprep-geeignet",
+    "Frühling",
+    "Sommer"
   ],
   "weatherType": "warm",
   "source": "Cuiseline",
   "basePortions": 1,
   "dietCategory": "vegan",
-  "description": "Cremige Smoothie Bowl mit Heidelbeeren, Hanf- und Leinsamen.",
+  "description": "Fruchtig, cremig und voller Energie – diese Blueberry Smoothie Bowl bringt Farbe in den Morgen.",
   "ingredients": [
     {
-      "name": "tiefgefrorene Heidelbeeren",
+      "name": "TK Heidelbeeren",
       "amount": 90,
       "unit": "g",
       "perPortions": 1
@@ -26,7 +30,7 @@
       "perPortions": 1
     },
     {
-      "name": "Mandeljogurt",
+      "name": "Kokosjoghurt, ungesüsst",
       "amount": 2,
       "unit": "EL",
       "perPortions": 1
@@ -48,15 +52,44 @@
       "amount": 1,
       "unit": "EL",
       "perPortions": 1
+    },
+    {
+      "name": "Haferflocken",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 1
+    },
+    {
+      "name": "Mandelmus",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 1
+    },
+    {
+      "name": "Medjool Datteln",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 1
+    },
+    {
+      "name": "Granola",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 1
+    },
+    {
+      "name": "Früchte zum Garnieren",
+      "amount": 0.25,
+      "unit": "Stk",
+      "perPortions": 1
     }
   ],
   "steps": [
-    "1. Heidelbeeren, Banane, Mandeljogurt, Haferdrink, Leinsamen und Hanfsamen in den Mixer geben.",
-    "2. Fein mixen bis eine cremige Masse entsteht.",
-    "3. In eine Schüssel geben.",
-    "4. Mit Granola, Früchten (Banane, Granatapfelkerne), Nüssen und Pfefferminze garnieren."
+    "1. Heidelbeeren, Banane, Kokosjoghurt, Haferdrink, Leinsamen, Hanfsamen, Haferflocken und zerkleinerte Datteln in den Mixer geben.",
+    "2. Alles fein pürieren, bis eine cremige, dickflüssige Masse entsteht.",
+    "3. Smoothie-Masse in eine Schüssel füllen.",
+    "4. Mit Granola bzw. Nüssen und Kernen und Früchten nach Wahl garnieren."
   ],
-  "tips": "",
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---blueberry-smoothie-bowl-2--1780577059410.jpeg",
   "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---blueberry-smoothie-bowl-3--1780577067152.jpeg",
   "imageKochen": null,

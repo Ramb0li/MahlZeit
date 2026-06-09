@@ -1,6 +1,6 @@
 {
   "id": "ei-02",
-  "name": "Rahmspinat, Bratkartoffeln, Spiegeleier",
+  "name": "Spiegeleier mit Rahmspinat und Bratkartoffeln",
   "category": "Vegetarische Hauptgerichte",
   "timeMinutes": 35,
   "ingredients": [
@@ -53,12 +53,6 @@
       "perPortions": 4
     },
     {
-      "name": "Chiliflocken",
-      "amount": 1,
-      "unit": "Prise",
-      "perPortions": 2
-    },
-    {
       "name": "Salz",
       "amount": 1,
       "unit": "Prise",
@@ -69,10 +63,16 @@
       "amount": 1,
       "unit": "Prise",
       "perPortions": 2
+    },
+    {
+      "name": "Paprika",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
     }
   ],
   "weatherType": "kalt",
-  "source": "Cuiseline",
+  "source": "MahlZeit",
   "basePortions": 2,
   "description": "Es gibt Gerichte, die erinnern an die Kindheit. Rahmspinat ist dabei auf einer der ersten Plätze meiner Kindheitserinnerungsessen. Ein herzhafter Klassiker für kalte Abende.",
   "steps": [
@@ -82,9 +82,9 @@
     "4. Anschliessend den Deckel abnehmen, die Hitze leicht erhöhen und die Kartoffeln kurz braten, bis sie eine schöne Kruste haben.",
     "5. In der Zwischenzeit die Zwiebeln und Knoblauch schälen und in feine Würfel schneiden. Den Knoblauch schälen und in feine Würfel schneiden.",
     "6. Die Zwiebeln in 1 EL Olivenöl in einem Topf bei mittlerer Hitze glasig dünsten. Knoblauch hinzugeben und kurz mit dünsten.",
-    "7. Spinat hinzugeben und einmal durchrühren. Mit Salz, Pfeffer und Chiliflocken würzen.",
+    "7. Spinat hinzugeben und einmal durchrühren. Mit Salz, Pfeffer und Muskatnuss würzen.",
     "8. Sobald der Spinat in sich zusammengefallen ist, den Rahm hinzugeben. Den Rahmspinat bei kleiner Hitze leicht köcheln lassen und ab und zu durchrühren.",
-    "8. In einer Pfanne mit 1 EL Olivenöl die Eier braten. Je nach Geschmack mit festem Eigelb oder flüssigem. 9. Mit Salz und Pfeffer würzen.",
+    "8. In einer Pfanne mit 1 EL Olivenöl die Eier braten. Je nach Geschmack mit festem Eigelb oder flüssigem. 9. Mit Salz, Pfeffer und Paprika würzen.",
     "10. Gebratene Kartoffeln mit Rahmspinat und Spiegel auf Teller geben und geniessen."
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/rahmspinat-bratkartofeln-1780785972477.jpg",
@@ -95,7 +95,8 @@
     "Vegetarisch",
     "Mittagsgericht",
     "Abendgericht",
-    "Schweizer"
+    "Schweizer",
+    "Frühling"
   ],
   "allergens": [
     "ei",

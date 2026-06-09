@@ -104,11 +104,12 @@ export async function scrapeSwissPromotions(
   ingredientNames: string[],
 ): Promise<Partial<Record<StoreId, Promotion[]>>> {
 
-  // Keyword array: first word of each ingredient name, min 3 chars (avoids noise from "ei", "öl")
+  // Keyword array: first word of each ingredient name, min 4 chars
+  // (3 would let "bio" through and match every organic product on the shelf)
   const keywordArr = Array.from(new Set(
     ingredientNames
       .map(n => n.toLowerCase().split(/\s+/)[0])
-      .filter(k => k.length >= 3),
+      .filter(k => k.length >= 4),
   ));
 
   // Initialise result for all enabled stores
@@ -120,7 +121,7 @@ export async function scrapeSwissPromotions(
   );
   const needsLidl = enabledStores.includes('lidl');
 
-  // ── aktionis.ch ──────────────────────────────────────────────────────────────
+  // ── aktionis.ch — alle Seiten parallel fetchen ───────────────────────────────
   if (needsAktionis) {
     const pageUrls = [
       `${AKTIONIS_BASE}/deals?c=7-&page=1&f=t&empty_search=false`,
@@ -129,13 +130,20 @@ export async function scrapeSwissPromotions(
       ),
     ];
 
-    for (const url of pageUrls) {
-      try {
-        const res = await fetch(url, {
+    const pageResults = await Promise.allSettled(
+      pageUrls.map(url =>
+        fetch(url, {
           headers: { 'User-Agent': UA },
           signal: AbortSignal.timeout(FETCH_TIMEOUT),
-        });
-        if (!res.ok) continue;
+        })
+      ),
+    );
+
+    for (const settled of pageResults) {
+      if (settled.status === 'rejected') continue;   // timeout / network error
+      const res = settled.value;
+      if (!res.ok) continue;
+      try {
         const html = await res.text();
         const promos = parseAktionisPage(html, enabledStores, keywordArr);
         for (const p of promos) {
@@ -143,7 +151,7 @@ export async function scrapeSwissPromotions(
           if (arr && !arr.some(e => e.product === p.product)) arr.push(p);
         }
       } catch {
-        // timeout or network error — skip this page
+        // parse error — skip this page
       }
     }
   }

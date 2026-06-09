@@ -1,56 +1,155 @@
 {
   "id": "ei-07",
-  "name": "Polenta, Gemüse & Eier",
+  "name": "Polenta mit mediterranem Gemüse und Spiegelei",
   "category": "Vegetarische Hauptgerichte",
-  "timeMinutes": 35,
+  "timeMinutes": 40,
   "ingredients": [
     {
-      "name": "Polenta",
-      "amount": 200,
-      "unit": "g",
-      "perPortions": 4
-    },
-    {
-      "name": "Gemüsebrühe",
-      "amount": 800,
-      "unit": "ml",
-      "perPortions": 4
-    },
-    {
-      "name": "Eier",
-      "amount": 4,
+      "name": "Zucchetti",
+      "amount": 3,
       "unit": "Stk",
       "perPortions": 4
     },
     {
-      "name": "Gemischtes Gemüse",
-      "amount": 400,
+      "name": "Peperoni",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Champginons",
+      "amount": 250,
       "unit": "g",
       "perPortions": 4
     },
     {
-      "name": "Parmesan",
-      "amount": 40,
+      "name": "Cherrytomaten",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Schwarze Oliven, entsteint",
+      "amount": 1,
+      "unit": "Pkg",
+      "perPortions": 4
+    },
+    {
+      "name": "Rosmarinzweige",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "All'Arrabbiata Gewürz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Milch",
+      "amount": 600,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebouillon",
+      "amount": 600,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Polenta",
+      "amount": 260,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Geriebener Parmesan",
+      "amount": 160,
       "unit": "g",
       "perPortions": 4
     },
     {
       "name": "Butter",
-      "amount": 30,
-      "unit": "g",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 4,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Eier",
+      "amount": 8,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 3,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
       "perPortions": 4
     }
   ],
   "weatherType": "kalt",
-  "source": "Cuiseline",
+  "source": "MahlZeit",
   "basePortions": 4,
-  "description": "Cremige Polenta mit Gemüse und Eiern.",
-  "steps": [],
-  "tips": "",
-  "imageUrl": null,
+  "description": "Herzhaft, farbenfroh und sättigend – diese Käsepolenta mit Ofengemüse und Spiegelei bringt mediterrane Wärme auf den Teller.",
+  "steps": [
+    "1.  Zucchetti, Peperoni und Champignons in Würfel schneiden. Cherrytomaten halbieren.",
+    "2. Gemüsewürfel in eine Gratinform geben. Oliven beigeben, mit All’Arrabbiata-Gewürz, Salz und Pfeffer würzen. Rosmarin darauf verteilen, mit Olivenöl beträufeln und mischen.",
+    "3. Ofengemüse bei 200 °C ca. 20 Minuten schmoren.",
+    "4. Milch und Gemüsebouillon in einer Pfanne aufkochen. Hitze reduzieren, Polenta unter ständigem Rühren einrieseln lassen.",
+    "5. Polenta bei kleiner Hitze unter regelmässigem Rühren ca. 10–15 Minuten garen. Pfanne vom Herd nehmen oder Herd ausschalten.",
+    "6. Geriebenen Parmesan sorgfältig unter die Polenta rühren. Butter beigeben, mit Pfeffer abschmecken. Salz erst nach dem Probieren ergänzen.",
+    "7. Cherrytomaten zum Ofengemüse geben und weitere 5–10 Minuten mitschmoren.",
+    "8. Wenig Butter oder Olivenöl in einer beschichteten Pfanne erhitzen. Eier aufschlagen und zu Spiegeleiern braten. Mit Salz und Pfeffer würzen.",
+    "9. Polenta, Ofengemüse und Spiegeleier auf Tellern anrichten."
+  ],
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-07-1781044634643.jpg",
   "tags": [
     "Herbst",
-    "Winter"
+    "Winter",
+    "Vegetarisch",
+    "Kinderfreundlich",
+    "Mealprep-geeignet",
+    "Frühling",
+    "Mittagsgericht",
+    "Abendgericht"
   ],
   "allergens": [
     "ei",
@@ -64,5 +163,6 @@
     "fiber": 4.5
   },
   "dietCategory": "vegetarian",
-  "imageZutaten": null
+  "imageZutaten": null,
+  "imageKochen": null
 }

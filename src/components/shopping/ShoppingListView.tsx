@@ -820,16 +820,15 @@ export function ShoppingListView() {
                           }
                         >
                           {item.name}
-                          {item.promotions.map((promo, pi) => (
+                          {item.promotions.length > 0 && (
                             <span
-                              key={pi}
-                              title={STORE_NAMES[promo.store] ?? promo.store}
+                              title={item.promotions.map(p => STORE_NAMES[p.store] ?? p.store).join(', ')}
                               className="ml-1.5 inline-flex items-center text-[10px] px-1.5 py-0.5 rounded-full font-medium cursor-default"
                               style={{ backgroundColor: '#dcfce7', color: '#166534' }}
                             >
                               Aktion
                             </span>
-                          ))}
+                          )}
                         </span>
 
                         {/* Amount — editable */}

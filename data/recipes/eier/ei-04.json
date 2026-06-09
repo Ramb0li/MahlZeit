@@ -1,53 +1,98 @@
 {
   "id": "ei-04",
-  "name": "Gemüse-Eieromelette",
+  "name": "Gemüse-Eieromelette mit Vollkornbrot",
   "category": "Vegetarische Hauptgerichte",
   "timeMinutes": 20,
   "ingredients": [
     {
       "name": "Eier",
-      "amount": 4,
+      "amount": 7,
       "unit": "Stk",
       "perPortions": 4
     },
     {
-      "name": "Paprika",
+      "name": "Rote Peperoni",
       "amount": 1,
       "unit": "Stk",
       "perPortions": 4
     },
     {
-      "name": "Zucchini",
+      "name": "Zucchetti",
       "amount": 1,
       "unit": "Stk",
       "perPortions": 4
     },
     {
       "name": "Zwiebel",
-      "amount": 1,
+      "amount": 2,
       "unit": "Stk",
       "perPortions": 4
     },
     {
       "name": "Olivenöl",
-      "amount": 2,
+      "amount": 4,
       "unit": "EL",
       "perPortions": 4
     },
     {
-      "name": "Kräuter",
+      "name": "Glattblättrige Petersilie ",
       "amount": 1,
       "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Champignons",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Milch",
+      "amount": 100,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Paprika",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Vollkornbrot",
+      "amount": 8,
+      "unit": "Scheibe",
       "perPortions": 4
     }
   ],
   "weatherType": "neutral",
-  "source": "Cuiseline",
+  "source": "MahlZeit",
   "basePortions": 4,
-  "description": "Schnelle Omelette mit buntem Gemüse.",
+  "description": "Ob als eiweissreiches Frühstück oder als leichte, sättigende Mahlzeit am Mittag oder Abend: Dieses schnelle Omelett mit buntem Gemüse und Vollkornbrot passt immer.",
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-04-1780699103706.jpg",
   "tags": [
-    "Mittagsgericht"
+    "Mittagsgericht",
+    "Vegetarisch",
+    "Kinderfreundlich",
+    "Frühling",
+    "Sommer",
+    "Herbst",
+    "Winter",
+    "Frühstücksgericht",
+    "Abendgericht",
+    "Schweizer"
   ],
   "imageZutaten": null,
   "imageKochen": null,
@@ -61,5 +106,13 @@
     "carbs": 6.2,
     "fiber": 2.3
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "steps": [
+    "1. Zwiebeln schälen und in kleine Würfel schneiden. Zucchetti waschen, längs halbieren und in Scheiben schneiden. Peperoni halbieren, entkernen, waschen und würfeln. Champignons putzen und in Scheiben schneiden.",
+    "2. Die Eier zusammen mit der Milch in einer Schüssel verquirlen. Mit Paprika, Salz und Pfeffer würzen.",
+    "3. In einer grossen beschichteten Pfanne etwas Olivenöl erhitzen. Zwiebeln und Knoblauch darin bei mittlerer Hitze 2–3 Minuten glasig dünsten. Das vorbereitete Gemüse beigeben und rund 5 Minuten mitbraten.",
+    "4. Den Backofen auf 100 Grad vorheizen. Etwa drei Viertel des Gemüses aus der Pfanne nehmen. Das restliche Gemüse mit einem Viertel der Eiermasse übergiessen und bei mittlerer Hitze 3–4 Minuten stocken lassen. Das Omelett wenden und weitere ca. 2 Minuten fertig braten, bis es leicht gebräunt ist. Herausnehmen, zusammenklappen und im Ofen warm halten.",
+    "5. Für die weiteren Omeletts jeweils wieder etwas Olivenöl in die Pfanne geben, einen Teil der Gemüsemischung beigeben und mit einem Viertel der Eiermasse übergiessen. So fortfahren, bis insgesamt 4 Omeletts fertig sind.",
+    "6. Die Gemüseomeletts mit gehackter Petersilie bestreuen und mit getoastetem Vollkornbrot servieren."
+  ]
 }

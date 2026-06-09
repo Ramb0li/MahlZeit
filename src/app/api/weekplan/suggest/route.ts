@@ -5,7 +5,7 @@ import { getSessionWithGroup as getSession } from '@/lib/session';
 import { getRecipes, getConstraints, getWeatherCache, getWeekPlan, saveWeekPlan, getSettings, getFavorites, getPromotions } from '@/lib/data';
 import { suggestWeek, suggestRecipe, getEffectiveDietCategory } from '@/lib/suggestions';
 import { getCurrentSeason, getWeatherTypeFromTemp } from '@/lib/utils';
-import type { WeatherType } from '@/types';
+import type { WeatherType, Promotion } from '@/types';
 
 export async function POST(request: Request) {
   try {
@@ -32,7 +32,7 @@ export async function POST(request: Request) {
     // Promotions: flatten only enabled stores
     const enabledStores = settings.promotions?.enabledStores ?? ['migros', 'coop', 'lidl'];
     const activePromotions = enabledStores.flatMap(
-      (s) => (promoData[s as keyof typeof promoData] as import('@/types').Promotion[] | undefined) ?? [],
+      (s) => (promoData[s as keyof typeof promoData] as Promotion[] | undefined) ?? [],
     );
 
     // Archivierte Rezepte nie vorschlagen; Diät-Filter anwenden
