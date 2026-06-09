@@ -3776,7 +3776,7 @@
     "source": "Rezept von Cuiselin",
     "basePortions": 4,
     "description": "Cremige Pilzrahmsauce mit Pasta.",
-    "imageUrl": null,
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/pas-06-1780699687747.jpg",
     "tags": [
       "Herbst",
       "Winter"
@@ -3947,76 +3947,6 @@
     "dietCategory": "vegetarian"
   },
   {
-    "id": "pas-09",
-    "name": "Hörnligratin mit Lauch, Erbsen & Broccoli",
-    "category": "Aufläufe & Gratins",
-    "timeMinutes": 50,
-    "ingredients": [
-      {
-        "name": "Hörnli",
-        "amount": 320,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Lauch",
-        "amount": 1,
-        "unit": "Stange",
-        "perPortions": 4
-      },
-      {
-        "name": "Erbsen (TK)",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Broccoli",
-        "amount": 300,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Rahm",
-        "amount": 200,
-        "unit": "ml",
-        "perPortions": 4
-      },
-      {
-        "name": "Käse (gerieben)",
-        "amount": 150,
-        "unit": "g",
-        "perPortions": 4
-      }
-    ],
-    "weatherType": "kalt",
-    "source": "Rezept von Cuiselin",
-    "basePortions": 4,
-    "description": "Herzhafter Nudelauflauf mit Gemüse.",
-    "steps": [],
-    "tips": "",
-    "imageUrl": null,
-    "tags": [
-      "Mealprep-geeignet",
-      "Mittagsgericht",
-      "Herbst",
-      "Winter",
-      "Frühling",
-      "Ofengericht"
-    ],
-    "allergens": [
-      "milch"
-    ],
-    "nutrition": {
-      "kcal": 512,
-      "protein": 22.3,
-      "fat": 20.8,
-      "carbs": 61.4,
-      "fiber": 7.2
-    },
-    "dietCategory": "vegetarian"
-  },
-  {
     "id": "pas-10",
     "name": "Pasta mit Kürbissauce",
     "category": "Pasta",
@@ -4084,69 +4014,6 @@
     },
     "dietCategory": "vegetarian",
     "imageZutaten": null
-  },
-  {
-    "id": "pas-11",
-    "name": "Spätzligratin mit Tomatensauce",
-    "category": "Aufläufe & Gratins",
-    "timeMinutes": 45,
-    "ingredients": [
-      {
-        "name": "Spätzli (fertig)",
-        "amount": 500,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Passierte Tomaten",
-        "amount": 400,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Zwiebel",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Käse (gerieben)",
-        "amount": 150,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Kräuter",
-        "amount": 1,
-        "unit": "TL",
-        "perPortions": 4
-      }
-    ],
-    "weatherType": "kalt",
-    "source": "Rezept von Cuiselin",
-    "basePortions": 4,
-    "description": "Schweizer Spätzli aus dem Ofen.",
-    "steps": [],
-    "tips": "",
-    "imageUrl": null,
-    "tags": [
-      "Mealprep-geeignet",
-      "Mittagsgericht",
-      "Herbst",
-      "Winter",
-      "Ofengericht"
-    ],
-    "allergens": [
-      "milch"
-    ],
-    "nutrition": {
-      "kcal": 468,
-      "protein": 18.6,
-      "fat": 15.3,
-      "carbs": 63.2,
-      "fiber": 4.3
-    },
-    "dietCategory": "vegetarian"
   },
   {
     "id": "pas-12",
@@ -11421,16 +11288,12 @@
   },
   {
     "id": "fam-20",
-    "name": "Hörnligratin mit Räuchertofu und Lauch",
+    "name": "Hörnligratin mit Räuchertofu, Lauch, Erbsen und Broccoli",
     "category": "Aufläufe & Gratins",
     "timeMinutes": 45,
     "tags": [
       "Vegetarisch"
     ],
-    "weatherType": "kalt",
-    "source": "Familien-Rezeptbuch",
-    "basePortions": 6,
-    "description": "Cremiger Hörnligratin mit Räuchertofu, Lauch, Erbsen und Greyerzer.",
     "ingredients": [
       {
         "name": "Urdinkel-Hörnli",
@@ -11523,6 +11386,13 @@
         "perPortions": 6
       }
     ],
+    "weatherType": "kalt",
+    "source": "Familien-Rezeptbuch",
+    "basePortions": 6,
+    "description": "Cremiger Hörnligratin mit Räuchertofu, Lauch, Erbsen und Greyerzer.",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
     "steps": [
       "Hörnli in Salzwasser al dente kochen.",
       "Räuchertofu goldbraun anbraten, beiseitestellen.",
@@ -11530,23 +11400,6 @@
       "Hörnli, Tofu, Petersilie, 2/3 Käse unter Sauce mischen. In Gratinform, restl. Käse drauf.",
       "20 Min. bei 220°C gratinieren."
     ],
-    "imageUrl": null,
-    "imageZutaten": null,
-    "imageKochen": null,
-    "tips": "",
-    "allergens": [
-      "gluten",
-      "milch",
-      "soja",
-      "sulfite"
-    ],
-    "nutrition": {
-      "kcal": 638,
-      "protein": 28.3,
-      "fat": 28.6,
-      "carbs": 64.7,
-      "fiber": 6.2
-    },
     "dietCategory": "vegetarian"
   },
   {
@@ -13657,119 +13510,6 @@
       "fat": 9.2,
       "carbs": 29.8,
       "fiber": 8.4
-    }
-  },
-  {
-    "id": "sup-16",
-    "name": "Asiatische Nudelsuppe mit Tofu",
-    "category": "Suppen, Eintöpfe & Currys",
-    "timeMinutes": 30,
-    "ingredients": [
-      {
-        "name": "Reisnudeln",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Tofu (fest)",
-        "amount": 300,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Gemüsebrühe",
-        "amount": 1200,
-        "unit": "ml",
-        "perPortions": 4
-      },
-      {
-        "name": "Pak-Choi",
-        "amount": 2,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Karotten",
-        "amount": 2,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Ingwer (frisch)",
-        "amount": 20,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Knoblauchzehen",
-        "amount": 2,
-        "unit": "Zehen",
-        "perPortions": 4
-      },
-      {
-        "name": "Miso-Paste",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Sojasauce",
-        "amount": 3,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Sesamöl",
-        "amount": 1,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Frühlingszwiebeln",
-        "amount": 3,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Sesam",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 4
-      }
-    ],
-    "weatherType": "kalt",
-    "source": "Coop",
-    "basePortions": 4,
-    "description": "Würzige asiatische Nudelsuppe mit gebratenem Tofu, Pak-Choi und einem tiefen Miso-Brühe.",
-    "steps": [
-      "Tofu in Würfel schneiden und in einer Pfanne mit Sesamöl goldbraun anbraten.",
-      "Ingwer und Knoblauch fein hacken. Karotten in feine Streifen schneiden. Pak-Choi in Stücke schneiden.",
-      "Brühe aufkochen, Ingwer und Knoblauch hinzufügen. Miso-Paste einrühren.",
-      "Karotten hinzufügen und 5 Minuten köcheln lassen.",
-      "Reisnudeln nach Packungsanleitung kochen, abtropfen lassen.",
-      "Pak-Choi zur Suppe geben und 2 Minuten mitkochen. Mit Sojasauce würzen.",
-      "Nudeln in Schüsseln verteilen, Brühe aufgiessen. Mit Tofu, Frühlingszwiebeln und Sesam garnieren."
-    ],
-    "tips": "Miso-Paste nicht kochen – erst kurz vor dem Servieren einrühren, damit die Probiotika erhalten bleiben.",
-    "imageUrl": null,
-    "tags": [
-      "Vegan",
-      "Asiatisch",
-      "Mittagsgericht"
-    ],
-    "dietCategory": "vegan",
-    "allergens": [
-      "gluten",
-      "sesam",
-      "soja"
-    ],
-    "nutrition": {
-      "kcal": 342,
-      "protein": 17.8,
-      "fat": 9.4,
-      "carbs": 46.2,
-      "fiber": 4.6
     }
   },
   {
@@ -33370,6 +33110,164 @@
       "carbs": 18.4,
       "fiber": 3.6
     },
+    "dietCategory": "vegan"
+  },
+  {
+    "id": "rec-1780953992976-qmwcv",
+    "name": "Thai Nudelsuppe mit Tofu",
+    "category": "Suppen, Eintöpfe & Currys",
+    "timeMinutes": 20,
+    "tags": [
+      "Vegetarisch",
+      "Asiatisch",
+      "Mittagsgericht",
+      "Abendgericht",
+      "Vegan",
+      "Mealprep-geeignet",
+      "Frühling",
+      "Herbst",
+      "Winter",
+      "Kinderfreundlich"
+    ],
+    "ingredients": [
+      {
+        "name": "Kokosöl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Schalotte",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehen",
+        "amount": 1,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitronengras",
+        "amount": 2,
+        "unit": "Stängel",
+        "perPortions": 4
+      },
+      {
+        "name": "Rote Currypaste",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebouillon",
+        "amount": 0.5,
+        "unit": "l",
+        "perPortions": 4
+      },
+      {
+        "name": "Kokosmilch",
+        "amount": 2.5,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Sojasauce",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Tofu nature",
+        "amount": 220,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Karotten",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Breite Reisnudeln",
+        "amount": 125,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Mungbohnensprossen",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Rote Chilis",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Limettenblätter",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Thai-Basilikum",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Limetten",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "kalt",
+    "source": "MahlZeit",
+    "basePortions": 4,
+    "description": "Eine wohltuende asiatische Nudelsuppe mit zartem Tofu, kombiniert mit fernöstlichen Gewürzen, frischen Geschmacksnuancen und würziger Schärfe. Perfekt für eine schnelle und aromavolle Mahlzeit.",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/1c475ced-8e43-4f74-9fd4-3e4d370886e1-1780954259698.jpg",
+    "imageZutaten": null,
+    "imageKochen": null,
+    "steps": [
+      "1. Schalotte würfeln, Knoblauchzehe und das Innere vom Zitronengras fein hacken. Tofu würfeln. Karotten in Streifen schneiden. Chili entkernen und in feine Ringe schneiden.",
+      "2. Kokosöl in einer Pfanne erwärmen und Schalotte, Knoblauch, Zitronengras, Kaffirlimettenblätter sowie Currypaste darin andämpfen.",
+      "3. Gemüsebouillon und Kokosmilch dazugiessen und aufkochen lassen.",
+      "4. Sojasauce, Karotten und Tofu in die Suppe geben, ca. 3 Minuten köcheln lassen.",
+      "5. Geraspelte oder in Stücken geschnittene Rüebli beigeben und etwa 3 Minuten köcheln lassen.",
+      "6. Reisnudeln nach Angabe auf der Verpackung kochen und in die Suppe geben.",
+      "7. Suppe mit Mungbohnensprossen, Chili, frischem Thai-Basilikum und einem Limettenschnitz garniert servieren."
+    ],
+    "dietCategory": "vegan"
+  },
+  {
+    "id": "rec-1780955620762-cmk4x",
+    "name": "Kürbis-Ingwer-Suppe",
+    "category": "Suppen, Eintöpfe & Currys",
+    "timeMinutes": 20,
+    "tags": [
+      "Vegetarisch",
+      "Vegan",
+      "Mealprep-geeignet",
+      "Kinderfreundlich",
+      "Herbst",
+      "Winter",
+      "Mittagsgericht",
+      "Abendgericht"
+    ],
+    "ingredients": [],
+    "weatherType": "kalt",
+    "source": "cuiseline",
+    "basePortions": 4,
+    "description": "",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/gro---sup-01-1-ku-rbis-kokos-suppe--1780955617506.jpg",
+    "imageZutaten": null,
+    "imageKochen": null,
     "dietCategory": "vegan"
   }
 ]

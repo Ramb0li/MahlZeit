@@ -108,15 +108,116 @@ export function getWeatherTypeFromTemp(temp: number): WeatherType {
 }
 
 export const INGREDIENT_CATEGORIES: Record<string, string[]> = {
+  // Specific categories first — prevents substring conflicts with broader keywords below
+  'Gewürze & Kräuter': [
+    // Spice-specific keywords before generic 'paprika' or 'mais' can match in vegetables
+    'paprikapulver', 'paprikagewürz', 'paprikagewürz', 'geräuchertes paprikapulver',
+    // Classic spices & herbs
+    'salz', 'pfeffer', 'pfefferkörner', 'muskatnuss', 'muskat',
+    'kreuzkümmel', 'kümmel', 'kurkuma', 'currypulver', 'currypaste',
+    'chiliflocken', 'chili', 'chilischote', 'chilipulver',
+    'majoran', 'oregano', 'salbei', 'koriander', 'petersilie', 'peterli',
+    'basilikum', 'minze', 'pfefferminze', 'kräuter', 'thymian', 'dill',
+    'rosmarin', 'lorbeerblatt', 'lorbeerblätter', 'lorbeer',
+    'nelke', 'nelken', 'nelkenpulver', 'kardamom', 'zimt',
+    'ras el hanout', 'ras el-hanout', 'garam masala',
+    'peperoncino', 'peperoncini', 'cayennepfeffer',
+    'fajita-gewürz', 'gewürzmischung', 'pad thai sauce', 'pouletgewürz',
+    'curryblätter', 'kala namak', 'zitronengras',
+    'dijonsenf', 'senf', 'senfkörner',
+    'zitronensaft', 'limettensaft', 'limette', 'zitrone',
+    'zitronenschale', 'limettenblätter',
+    'vanille', 'vanilleextrakt', 'vanillezucker', 'vanillinzucker', 'bourbon-vanille',
+    'backpulver', 'natron',
+    'fleur de sel', 'kräutersalz', 'knoblauchgranulat',
+    'sesamöl', 'essig',
+    'sambal oelek', 'worcestershire',
+    'curry', 'tikka masala', 'tex mex', 'kakaopulver', 'kakao',
+    'arrabbiata', 'béchamel', 'pad thai kochsauce',
+  ],
+  'Fleisch & Geflügel': [
+    'poulet', 'hähnchen', 'hähnchenbrustfilet',
+    'hackfleisch', 'rindshackfleisch', 'rinderfleisch', 'rindsfleisch', 'rindsfilet',
+    'kalbsfleisch', 'kalbshackfleisch', 'kalbsgeschnetzeltes', 'kalbsnierstück', 'kalbsbratwurst',
+    'lammrücken', 'lammfilet',
+    'schweinefleisch', 'schweinsplätzchen',
+    'speck', 'bauchspeck', 'speckwürfel',
+    'schinken', 'rohschinken', 'toastschinken', 'katenschinkenwürfel', 'prosciutto',
+    'bündnerfleisch', 'mortadella',
+    'wurst', 'bratwurst', 'cervelat', 'cabanossi', 'chorizo', 'mettend',
+    'leberkäse', 'brühwürstchen', 'bockwürste',
+    'burger',
+  ],
+  'Fisch & Meeresfrüchte': [
+    'fisch', 'lachs', 'fischfilets', 'seelachs', 'seelachsfilet',
+    'thunfisch', 'thun (', 'thun (dose', 'makrele', 'makrelen',
+    'crevetten', 'riesencrevetten', 'garnelen', 'shrimps',
+    'anchovis', 'anchovisfilets', 'sardellen', 'sardellenfilets',
+    'räucherlachs',
+  ],
+  'Getreide & Stärke': [
+    // Specific starch keywords before 'mais' hits vegetables
+    'maisstärke', 'maizena', 'speisestärke', 'stärke',
+    // Grains & pasta
+    'couscous', 'hirse', 'hirseflocken',
+    'pasta', 'nudeln', 'spaghetti', 'penne', 'farfalle', 'tagliatelle', 'fusilli',
+    'hörnli', 'lasagne', 'spätzli', 'reisnudeln', 'sobanudeln', 'ramen',
+    'reis', 'risottoreis', 'basmatireis', 'jasminreis', 'vollkornreis',
+    'quinoa', 'bulgur', 'polenta', 'ebly', 'urdinkelkerne', 'rollgerste',
+    'weizentortillas', 'taco-shells', 'pitabrot', 'vollkornnudeln',
+    'hartweizennudeln', 'hartweizengrieß', 'hartweizengrieß',
+    'dinkelvollkornmehl', 'dinkelmehl', 'weizenmehl', 'kichererbsenmehl',
+    'semmelbrösel', 'haferflocken', 'grieß', 'tortillas', 'wraps',
+    'gnocchi', 'naan', 'baguette', 'brot', 'toast', 'mehl',
+    'brötchen', 'weggil', 'weggli', 'fladenbrot',
+    'tortiglioni', 'fregola', 'semola', 'hartweizengriess', 'panko', 'müesli', 'teigwaren',
+    'blätterteig', 'pizzateig', 'croûton', 'tortilla', 'spätzle', 'rosinen', 'sultaninen',
+    'älplermagronen', 'pastetli',
+  ],
+  'Hülsenfrüchte': [
+    'linsen', 'kichererbsen', 'bohnen', 'erbsen (trocken)', 'gelbe erbsen',
+    'schwarze bohnen', 'weisse bohnen', 'mungobohnen', 'mungbohnensprossen', 'sojasprossen',
+  ],
+  'Milchprodukte & Eier': [
+    // Specific dairy names before generic 'milch' / 'käse' / 'rahm'
+    'joghurt', 'jogurt', 'kefir',
+    'mascarpone', 'philadelphia', 'frischkäse',
+    'emmentaler', 'greyerzer', 'sbrinz', 'cheddar', 'appenzeller',
+    'quark', 'speisequark', 'hüttenkäse',
+    'brie', 'camembert', 'parmigiano', 'belper', 'fourme',
+    'eigelb', 'crème', 'hafer',
+    // Existing
+    'eier', 'butter', 'rahm', 'milch', 'käse', 'parmesan', 'gruyère', 'feta', 'mozzarella',
+    'ricotta', 'sauerrahm', 'ghee', 'tzatziki', 'sojajoghurt', 'sojaquark', 'sojadrink',
+  ],
+  'Nüsse & Samen': [
+    'walnüsse', 'baumnüsse', 'pinienkerne', 'erdnüsse', 'cashew', 'mandeln', 'mandelmus',
+    'sesammus', 'cashewmus', 'chiasamen',
+    'haselnüsse', 'pecannüsse', 'pekannüsse',
+    'sesam', 'sesamkörner', 'sesamsamen',
+    'hanfsamen', 'leinsamen', 'sonnenblumenkerne', 'kürbiskerne', 'kokosflocken',
+    'walnuss', 'mandel', 'saaten', 'datteln', 'marroni', 'erdnuss',
+  ],
+  'Tofu & Veganes': [
+    'tofu', 'räuchertofu', 'falafel', 'naturtofu', 'sonnenblumen-hack',
+  ],
   'Obst & Gemüse': [
     // Gemüse
-    'spinat', 'blumenkohl', 'broccoli', 'lauch', 'kohlrabi', 'zucchini', 'karotten', 'karotte',
-    'sellerie', 'paprika', 'tomaten', 'tomate', 'gurke', 'salat', 'rucola', 'erbsen',
-    'mais', 'kürbis', 'süsskartoffel', 'kartoffel', 'avocado', 'pilz', 'champignon',
-    'frühlingszwiebeln', 'zwiebel', 'knoblauch', 'ingwer', 'gemischtes gemüse',
-    'gemüse', 'kirschtomaten', 'brokkoli', 'fenchel', 'pastinake', 'hokkaido',
-    'baby-spinat', 'süsskartoffel', 'rotkohl', 'rotkabis', 'rosenkohl', 'mangold',
-    'randen', 'rüebli', 'peperoni', 'artischocke', 'spargel', 'zuckerschote',
+    'spinat', 'blumenkohl', 'broccoli', 'brokkoli', 'lauch', 'kohlrabi', 'zucchini', 'zucchetti',
+    'karotten', 'karotte', 'möhre', 'möhren', 'rüebli',
+    'sellerie', 'staudensellerie', 'knollensellerie', 'stangensellerie',
+    'paprika', 'peperoni', 'tomaten', 'tomate', 'kirschtomaten',
+    'gurke', 'salatgurke', 'schlangengurke', 'salat', 'rucola',
+    'erbsen', 'mais', 'kürbis', 'hokkaido', 'butternusskürbis', 'butternut',
+    'süsskartoffel', 'kartoffel', 'avocado', 'pilz', 'champignon',
+    'frühlingszwiebeln', 'bundzwiebeln', 'lauchzwiebeln',
+    'zwiebel', 'schalotte', 'knoblauch', 'ingwer',
+    'gemischtes gemüse', 'gemüse',
+    'fenchel', 'pastinake', 'baby-spinat', 'babyspinat',
+    'rotkohl', 'rotkabis', 'rotchabis', 'rosenkohl', 'mangold',
+    'randen', 'rote bete', 'spargel', 'zuckerschote',
+    'aubergine', 'federkohl', 'grünkohl', 'wirz', 'chicorée', 'pak-choi', 'radieschen', 'pfifferling',
+    'schnittlauch', 'bärlauch', 'kresse', 'feldsalat',
     // Obst
     'apfel', 'äpfel', 'birne', 'banane', 'bananen', 'erdbeere', 'erdbeeren',
     'himbeere', 'himbeeren', 'heidelbeere', 'heidelbeeren', 'blaubeere', 'blaubeeren',
@@ -127,47 +228,35 @@ export const INGREDIENT_CATEGORIES: Record<string, string[]> = {
     'kiwi', 'feige', 'feigen', 'obst', 'beeren', 'aprikose', 'aprikosen',
     'mirabelle', 'granatapfel', 'passionsfrucht', 'litschi', 'papaya',
   ],
-  'Hülsenfrüchte': [
-    'linsen', 'kichererbsen', 'bohnen', 'erbsen (trocken)', 'gelbe erbsen',
-    'schwarze bohnen', 'weisse bohnen',
+  'Spirituosen': [
+    'cognac', 'whisky', 'prosecco', 'champagner', 'sherry', 'noilly',
+    'rum', 'gin', 'vodka', 'brandy', 'wermut', 'likör', 'schnaps', 'bier',
   ],
-  'Getreide & Stärke': [
-    'pasta', 'spaghetti', 'hörnli', 'lasagne', 'spätzli', 'reis', 'risottoreis', 'basmatireis',
-    'quinoa', 'bulgur', 'polenta', 'ebly', 'urdinkelkerne', 'rollgerste', 'reisnudeln',
-    'weizentortillas', 'taco-shells', 'pitabrot', 'vollkornnudeln', 'vollkornreis',
-    'hartweizennudeln', 'hartweizengrieß', 'dinkelvollkornmehl', 'dinkelmehl', 'weizenmehl',
-    'kichererbsenmehl', 'semmelbrösel', 'haferflocken', 'grieß', 'tortillas',
-  ],
-  'Milchprodukte & Eier': [
-    'eier', 'butter', 'rahm', 'milch', 'käse', 'parmesan', 'gruyère', 'feta', 'mozzarella',
-    'ricotta', 'sauerrahm', 'ghee', 'tzatziki', 'sojajoghurt', 'sojaquark', 'sojadrink',
+  'Süsses & Backen': [
+    'schokolade', 'kuvertüre', 'guetzli', 'kekse', 'puderzucker',
+    'karamell', 'konfitüre', 'marmelade',
   ],
   'Haltbare Produkte': [
     'passierte tomaten', 'tomatenwürfel', 'tomaten (dose)', 'kokosmilch', 'gemüsebrühe',
     'bohnen (dose)', 'kichererbsen (dose)', 'mais (dose)', 'zuckermais', 'oliven', 'pesto',
     'tahini', 'weisswein', 'balsamico', 'olivenöl', 'rapsöl', 'salsa', 'guacamole',
     'sauerkraut', 'tomatenmark', 'hefeflocken', 'kokosöl',
-  ],
-  'Tofu & Veganes': [
-    'tofu', 'räuchertofu', 'falafel', 'naturtofu',
-  ],
-  'Gewürze & Kräuter': [
-    'salz', 'pfeffer', 'muskatnuss', 'kreuzkümmel', 'kurkuma', 'currypulver', 'currypaste',
-    'chiliflocken', 'majoran', 'oregano', 'salbei', 'koriander', 'petersilie', 'peterli',
-    'basilikum', 'minze', 'kräuter', 'fajita-gewürz', 'gewürzmischung', 'pad thai sauce',
-    'dijonsenf', 'senf', 'zitronensaft', 'limettensaft', 'limette', 'zitrone',
-    'thymian', 'paprikapulver', 'garam masala', 'zimt', 'backpulver', 'dill',
-  ],
-  'Nüsse & Samen': [
-    'walnüsse', 'baumnüsse', 'pinienkerne', 'erdnüsse', 'cashew', 'mandeln', 'mandelmus',
-    'sesammus', 'cashewmus', 'chiasamen',
-  ],
-  'Fisch & Meeresfrüchte': [
-    'fisch', 'lachs', 'fischfilets',
+    'sojasauce', 'kapern', 'ketchup', 'mayonnaise', 'hummus',
+    'honig', 'ahornsirup', 'agavensirup', 'agavendicksaft',
+    'öl', 'bouillon', 'brühe', 'fond', 'jus', 'rotwein', 'pelati', 'zucker', 'rohrzucker',
+    'hefe', 'trockenhefe', 'remoulade', 'tamarinden', 'bratensauce',
+    'kaffee',
   ],
 };
 
 export function categorizeIngredient(name: string): string {
+  // Pattern-based rules applied before generic keyword matching.
+  // 'Ei' / 'Ei (Grösse M)' = Ei als Zutat → Milchprodukte & Eier.
+  // Trifft nicht auf 'Eigelb', 'Eier', 'Eis' etc., da diese per Keyword abgedeckt sind.
+  if (/^Ei(\s|$|\()/.test(name.trim())) return 'Milchprodukte & Eier';
+  // 'Vegi-Burger' / 'Veggie Burger' bleibt in Sonstiges, 'Burger' geht zu Fleisch.
+  if (/vegi.?burger/i.test(name)) return 'Sonstiges';
+
   const lower = name.toLowerCase();
   for (const [category, keywords] of Object.entries(INGREDIENT_CATEGORIES)) {
     if (keywords.some((kw) => lower.includes(kw))) {
