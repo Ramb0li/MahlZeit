@@ -45,10 +45,12 @@ function parseAktionisPage(
     const product = nameMatch[1].trim();
     if (!product) continue;
 
-    // Store from logo img src: //storage.cpstatic.ch/storage/minicrop/SLUG-HASH--ID.webp
-    const logoMatch = /\/minicrop\/(.+?)-[a-f0-9]{8}--/.exec(row);
-    if (!logoMatch) continue;
-    const storeId = AKTIONIS_STORE_MAP[logoMatch[1]] ?? null;
+    // Store from the <td class="logo"> image src (separate from product image)
+    const logoCellMatch = /<td class="logo">\s*<img src="([^"]+)"/.exec(row);
+    if (!logoCellMatch) continue;
+    const logoSlugMatch = /\/minicrop\/(.+?)-[a-f0-9]{8}--/.exec(logoCellMatch[1]);
+    if (!logoSlugMatch) continue;
+    const storeId = AKTIONIS_STORE_MAP[logoSlugMatch[1]] ?? null;
     if (!storeId || !enabledStores.includes(storeId)) continue;
 
     // Ingredient keyword match
