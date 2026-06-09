@@ -57,11 +57,14 @@ const RECIPE_CATEGORY_ORDER = [
 const EXTRA_CATEGORIES = ['Haushalt', 'Hygiene', 'Persönliches', 'Getränke', 'Tierbedarf'];
 const ALL_CATEGORIES   = [...RECIPE_CATEGORY_ORDER, ...EXTRA_CATEGORIES];
 
-// Store promo badge colours — kept distinct for brand identity
-const STORE_COLORS: Record<string, { bg: string; color: string }> = {
-  migros: { bg: '#fff3e0', color: '#e65100' },
-  coop:   { bg: '#fce4ec', color: '#c62828' },
-  lidl:   { bg: '#fffde7', color: '#f57f17' },
+// Store display names for tooltip
+const STORE_NAMES: Record<string, string> = {
+  migros: 'Migros',
+  coop:   'Coop',
+  denner: 'Denner',
+  aldi:   'Aldi Suisse',
+  lidl:   'Lidl',
+  volg:   'Volg',
 };
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
@@ -817,18 +820,16 @@ export function ShoppingListView() {
                           }
                         >
                           {item.name}
-                          {item.promotions.map((promo, pi) => {
-                            const sc = STORE_COLORS[promo.store] ?? { bg: '#efe9df', color: '#5a4e48' };
-                            return (
-                              <span
-                                key={pi}
-                                className="ml-1.5 inline-flex items-center text-[10px] px-1.5 py-0.5 rounded-full font-medium"
-                                style={{ backgroundColor: sc.bg, color: sc.color }}
-                              >
-                                {promo.store.charAt(0).toUpperCase() + promo.store.slice(1)}
-                              </span>
-                            );
-                          })}
+                          {item.promotions.map((promo, pi) => (
+                            <span
+                              key={pi}
+                              title={STORE_NAMES[promo.store] ?? promo.store}
+                              className="ml-1.5 inline-flex items-center text-[10px] px-1.5 py-0.5 rounded-full font-medium cursor-default"
+                              style={{ backgroundColor: '#dcfce7', color: '#166534' }}
+                            >
+                              Aktion
+                            </span>
+                          ))}
                         </span>
 
                         {/* Amount — editable */}

@@ -158,6 +158,7 @@ export interface SuggestWeekOptions {
   favorites?: string[];         // recipe IDs — wenn ≥3, mind. 1 Dinner/Woche aus Favoriten
   favoritesOnly?: boolean;      // NEU: gesamter Pool auf Favoriten einschränken
   pantryIngredients?: string[]; // NEU: für Vorrat-Bonus in der Wochen-Suggestion
+  promotions?: Promotion[];     // Aktions-Promotionen → +20 Bonus im Scoring
 }
 
 const BREAKFAST_CATS  = new Set<Category>(['Frühstück']);
@@ -180,7 +181,7 @@ export function suggestWeek(
   season: string,
   opts: SuggestWeekOptions = {}
 ): Record<number, { breakfast?: SuggestedSlot; lunch?: SuggestedSlot; dinner?: SuggestedSlot }> {
-  const { showBreakfast = false, showLunch = false, showDinner = true, allergiesAndAversions, flexitarisch = false, favorites = [], favoritesOnly = false, pantryIngredients } = opts;
+  const { showBreakfast = false, showLunch = false, showDinner = true, allergiesAndAversions, flexitarisch = false, favorites = [], favoritesOnly = false, pantryIngredients, promotions } = opts;
   const result: Record<number, { breakfast?: SuggestedSlot; lunch?: SuggestedSlot; dinner?: SuggestedSlot }> = {};
   const usedIds: string[] = [];
   let meatMealsThisWeek = 0;
@@ -264,7 +265,7 @@ export function suggestWeek(
         const dinnerPool = favFiltered.length > 0 ? favFiltered : basePool;
         const dinner = suggestRecipe(dinnerPool, {
           weatherType, season, constraint: dinnerConstraint, usedThisWeek: usedIds,
-          allergiesAndAversions, carbCounts, pantryIngredients,
+          allergiesAndAversions, carbCounts, pantryIngredients, promotions,
         });
         if (dinner) {
           result[day].dinner = { recipeId: dinner.id };
@@ -287,7 +288,7 @@ export function suggestWeek(
       } else {
         const lunch = suggestRecipe(lunchRecipes, {
           weatherType, season, constraint: lunchConstraint, usedThisWeek: usedIds,
-          lunchOnly: true, allergiesAndAversions, carbCounts, pantryIngredients,
+          lunchOnly: true, allergiesAndAversions, carbCounts, pantryIngredients, promotions,
         });
         if (lunch) {
           result[day].lunch = { recipeId: lunch.id };
@@ -301,7 +302,7 @@ export function suggestWeek(
     // ── Frühstück ──
     if (showBreakfast) {
       const breakfast = suggestRecipe(breakfastRecipes, {
-        season, usedThisWeek: usedIds, allergiesAndAversions,
+        season, usedThisWeek: usedIds, allergiesAndAversions, promotions,
       });
       if (breakfast) {
         result[day].breakfast = { recipeId: breakfast.id };

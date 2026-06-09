@@ -65,7 +65,7 @@ const K = {
   groupPantry:         (g: string)             => `mz:group:${g}:pantry`,
 };
 
-const EMPTY_PROMOTIONS: PromotionsCache = { lastUpdated: null, migros: [], coop: [], lidl: [] };
+const EMPTY_PROMOTIONS: PromotionsCache = { lastUpdated: null, migros: [], coop: [], denner: [], aldi: [], lidl: [], volg: [] };
 const EMPTY_WEATHER:    WeatherCache    = { lastUpdated: null, location: '', days: [] };
 
 // ─── Templates (global Recipes — 74) ──────────────────────────────────────────
@@ -224,23 +224,34 @@ export async function saveRecipes(recipes: Recipe[], groupId?: string): Promise<
 
 // ─── Group-scoped Settings ───────────────────────────────────────────────────
 
+/** Stellt sicher dass neuere Settings-Felder vorhanden sind (Migration alter Datensätze) */
+function normalizeSettings(s: AppSettings): AppSettings {
+  if (!s.promotions) {
+    s.promotions = { enabledStores: ['migros', 'coop', 'lidl'] };
+  } else if (!s.promotions.enabledStores) {
+    // Alte Struktur (nur manualX) → enabledStores migrieren
+    s.promotions.enabledStores = ['migros', 'coop', 'lidl'];
+  }
+  return s;
+}
+
 export async function getSettings(groupId?: string): Promise<AppSettings> {
   if (!groupId) {
     // Legacy fallback (z.B. Admin ohne Group)
-    return readJson<AppSettings>('settings.json', seedSettings as AppSettings);
+    return normalizeSettings(readJson<AppSettings>('settings.json', seedSettings as AppSettings));
   }
   if (!USE_REDIS) {
     const all = readJson<Record<string, AppSettings>>('group-settings.json', {});
-    return all[groupId] ?? (seedSettings as AppSettings);
+    return normalizeSettings(all[groupId] ?? (seedSettings as AppSettings));
   }
   const redis = getRedis();
   const data  = await redis.get<AppSettings>(K.groupSettings(groupId));
   if (!data) {
     // Erste Settings für diese Gruppe — Seed kopieren
     await redis.set(K.groupSettings(groupId), seedSettings);
-    return seedSettings as AppSettings;
+    return normalizeSettings(seedSettings as AppSettings);
   }
-  return data;
+  return normalizeSettings(data);
 }
 
 export async function saveSettings(settings: AppSettings, groupId?: string): Promise<void> {

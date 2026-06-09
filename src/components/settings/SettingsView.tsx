@@ -1,9 +1,9 @@
 'use client';
 import { useState, useEffect, useContext, createContext, useRef, useCallback } from 'react';
-import { Plus, Trash2, Save, ChevronDown, ChevronUp, Search, X, Users, Mail, Edit3 } from 'lucide-react';
+import { Plus, Trash2, Save, ChevronDown, ChevronUp, Search, X, Users, Mail, Edit3, RefreshCw } from 'lucide-react';
 import { THEME_DEFS, toDataTheme } from '@/lib/themes';
 import type { ThemeId } from '@/lib/themes';
-import type { AppSettings, DayConstraint, Child } from '@/types';
+import type { AppSettings, DayConstraint, Child, StoreId } from '@/types';
 import type { Group, GroupRole } from '@/lib/groups';
 import { ALLERGENS, PRESET_AVERSIONS } from '@/lib/allergens-config';
 
@@ -27,6 +27,15 @@ const WEEK_SWITCH_OPTIONS = [
 const PRESET_COLORS = [
   '#c0533f', '#b5614a', '#c49a6c', '#5a4e48',
   '#1565c0', '#ad1457', '#6a4c93', '#37474f',
+];
+
+const SWISS_STORES: { id: StoreId; name: string; color: string; bg: string }[] = [
+  { id: 'migros', name: 'Migros',      color: '#e65100', bg: '#fff3e0' },
+  { id: 'coop',   name: 'Coop',        color: '#c62828', bg: '#fce4ec' },
+  { id: 'denner', name: 'Denner',      color: '#7b1fa2', bg: '#f3e5f5' },
+  { id: 'aldi',   name: 'Aldi Suisse', color: '#1565c0', bg: '#e3f2fd' },
+  { id: 'lidl',   name: 'Lidl',        color: '#f57f17', bg: '#fffde7' },
+  { id: 'volg',   name: 'Volg',        color: '#2e7d32', bg: '#e8f5e9' },
 ];
 
 const sectionCard = {
@@ -129,6 +138,9 @@ export function SettingsView({
   const [checkoutLoading, setCheckoutLoading] = useState<string | null>(null);
   const [checkoutError, setCheckoutError]     = useState<string | null>(null);
   const [aversionSearch, setAversionSearch] = useState('');
+  const [promoRefreshing, setPromoRefreshing] = useState(false);
+  const [promoError, setPromoError]           = useState<string | null>(null);
+  const [promoLastUpdated, setPromoLastUpdated] = useState<string | null>(null);
 
   // Weather autocomplete
   interface GeoResult { name: string; admin1?: string; country?: string; latitude: number; longitude: number; }
@@ -344,6 +356,29 @@ export function SettingsView({
       setCheckoutError('Verbindungsfehler. Bitte erneut versuchen.');
     } finally {
       setCheckoutLoading(null);
+    }
+  };
+
+  // Load last-updated timestamp for promotions on mount
+  useEffect(() => {
+    fetch('/api/promotions')
+      .then(r => r.json())
+      .then((d: { lastUpdated?: string | null }) => { if (d.lastUpdated) setPromoLastUpdated(d.lastUpdated); })
+      .catch(() => {});
+  }, []);
+
+  const handlePromoRefresh = async () => {
+    setPromoRefreshing(true);
+    setPromoError(null);
+    try {
+      const res = await fetch('/api/promotions/refresh', { method: 'POST' });
+      const data = await res.json() as { success?: boolean; lastUpdated?: string; error?: string };
+      if (!res.ok || !data.success) throw new Error(data.error ?? 'Unbekannter Fehler');
+      if (data.lastUpdated) setPromoLastUpdated(data.lastUpdated);
+    } catch (err) {
+      setPromoError(err instanceof Error ? err.message : 'Fehler beim Laden der Aktionen.');
+    } finally {
+      setPromoRefreshing(false);
     }
   };
 
@@ -1055,24 +1090,67 @@ export function SettingsView({
       </Section>
 
       {/* ── Aktionen ─────────────────────────────────────────────────────── */}
-      <Section id="promotions" title="Aktionen (manuelle Eingabe)" sub="Aktuelle Aktionen bei Migros, Coop oder Lidl eintragen.">
-        <div>
-          {(['migros', 'coop', 'lidl'] as const).map((store) => (
-            <div key={store} className="mb-4">
-              <label style={labelStyle} className="capitalize">{store}</label>
-              <textarea
-                value={settings.promotions[`manual${store.charAt(0).toUpperCase() + store.slice(1)}` as keyof typeof settings.promotions]?.join('\n') ?? ''}
-                onChange={(e) => {
-                  const items = e.target.value.split('\n').filter((x) => x.trim());
-                  const key = `manual${store.charAt(0).toUpperCase() + store.slice(1)}` as 'manualMigros' | 'manualCoop' | 'manualLidl';
-                  setSettings((s) => ({ ...s, promotions: { ...s.promotions, [key]: items } }));
-                }}
-                rows={2}
-                placeholder="Je ein Produkt pro Zeile (z.B. Lachsfilet)"
-                style={{ ...inputStyle, width: '100%', resize: 'none' }}
-              />
-            </div>
-          ))}
+      <Section id="promotions" title="Aktionen — Supermärkte" sub="Wähle deine Einkaufsläden. Zutaten im Angebot erscheinen grün markiert in der Einkaufsliste.">
+        <div className="space-y-4">
+          {/* Store toggle grid */}
+          <div className="grid grid-cols-2 gap-2">
+            {SWISS_STORES.map(({ id, name, color, bg }) => {
+              const enabled = (settings.promotions?.enabledStores ?? []).includes(id);
+              return (
+                <button
+                  key={id}
+                  type="button"
+                  onClick={() => {
+                    setSettings((s) => {
+                      const current = s.promotions?.enabledStores ?? [];
+                      const next = enabled
+                        ? current.filter((x) => x !== id)
+                        : [...current, id];
+                      return { ...s, promotions: { ...s.promotions, enabledStores: next } };
+                    });
+                  }}
+                  className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-left transition-all"
+                  style={{
+                    border: enabled ? `1.5px solid ${color}` : '1.5px solid #e0d8ce',
+                    backgroundColor: enabled ? bg : '#f7f4ee',
+                  }}
+                >
+                  <span
+                    className="w-2 h-2 rounded-full flex-shrink-0"
+                    style={{ backgroundColor: enabled ? color : '#d0c8be' }}
+                  />
+                  <span className="text-sm font-medium flex-1" style={{ color: enabled ? '#2c2420' : '#9c8c84' }}>
+                    {name}
+                  </span>
+                  {enabled && (
+                    <span className="text-xs font-bold" style={{ color }}>✓</span>
+                  )}
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Refresh button + last-updated */}
+          <div className="flex items-center justify-between gap-3 pt-1">
+            <p className="text-xs" style={{ color: '#9c8c84' }}>
+              {promoLastUpdated
+                ? `Aktualisiert: ${new Date(promoLastUpdated).toLocaleString('de-CH', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' })}`
+                : 'Noch nicht aktualisiert'}
+            </p>
+            <button
+              type="button"
+              onClick={handlePromoRefresh}
+              disabled={promoRefreshing || (settings.promotions?.enabledStores ?? []).length === 0}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold transition-all"
+              style={{ backgroundColor: '#2c2420', color: '#fff', opacity: promoRefreshing ? 0.6 : 1 }}
+            >
+              <RefreshCw size={12} className={promoRefreshing ? 'animate-spin' : ''} />
+              {promoRefreshing ? 'Lädt...' : 'Jetzt aktualisieren'}
+            </button>
+          </div>
+          {promoError && (
+            <p className="text-xs" style={{ color: '#c62828' }}>{promoError}</p>
+          )}
         </div>
       </Section>
 

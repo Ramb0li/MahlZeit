@@ -42,11 +42,11 @@ export async function GET(request: Request) {
     if (!plan) return NextResponse.json({});
 
     const portionInfo = calculatePortions(settings.household);
-    const allPromotions: Promotion[] = [
-      ...promoData.migros,
-      ...promoData.coop,
-      ...promoData.lidl,
-    ];
+    // Include only promotions from the group's enabled stores
+    const enabledStores = settings.promotions?.enabledStores ?? ['migros', 'coop', 'lidl'];
+    const allPromotions: Promotion[] = enabledStores.flatMap(
+      (s) => (promoData[s as keyof typeof promoData] as Promotion[] | undefined) ?? [],
+    );
 
     const recipeMap = new Map(recipes.map((r) => [r.id, r]));
     const aggregated: Record<string, ShoppingItem> = {};

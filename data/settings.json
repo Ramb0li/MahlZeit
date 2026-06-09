@@ -19,9 +19,7 @@
   "showDinner": true,
   "theme": "ivory",
   "promotions": {
-    "manualMigros": [],
-    "manualCoop": [],
-    "manualLidl": []
+    "enabledStores": ["migros", "coop", "lidl"]
   },
   "dietPreference": "alle"
 }

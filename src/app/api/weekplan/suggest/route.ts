@@ -2,7 +2,7 @@ export const dynamic = 'force-dynamic';
 
 import { NextResponse } from 'next/server';
 import { getSessionWithGroup as getSession } from '@/lib/session';
-import { getRecipes, getConstraints, getWeatherCache, getWeekPlan, saveWeekPlan, getSettings, getFavorites } from '@/lib/data';
+import { getRecipes, getConstraints, getWeatherCache, getWeekPlan, saveWeekPlan, getSettings, getFavorites, getPromotions } from '@/lib/data';
 import { suggestWeek, suggestRecipe, getEffectiveDietCategory } from '@/lib/suggestions';
 import { getCurrentSeason, getWeatherTypeFromTemp } from '@/lib/utils';
 import type { WeatherType } from '@/types';
@@ -17,16 +17,23 @@ export async function POST(request: Request) {
     const { weekId, dayIndex, mealType, favoritesOnly } = await request.json();
 
     const { getPantry } = await import('@/lib/data');
-    const [allRecipes, constraints, weatherCache, settings, favorites, pantry] = await Promise.all([
+    const [allRecipes, constraints, weatherCache, settings, favorites, pantry, promoData] = await Promise.all([
       getRecipes(groupId),
       getConstraints(groupId),
       getWeatherCache(),
       getSettings(groupId),
       getFavorites(groupId),
       getPantry(groupId),
+      getPromotions(),
     ]);
 
     const wantToUse = pantry.filter(p => p.wantToUse).map(p => p.name);
+
+    // Promotions: flatten only enabled stores
+    const enabledStores = settings.promotions?.enabledStores ?? ['migros', 'coop', 'lidl'];
+    const activePromotions = enabledStores.flatMap(
+      (s) => (promoData[s as keyof typeof promoData] as import('@/types').Promotion[] | undefined) ?? [],
+    );
 
     // Archivierte Rezepte nie vorschlagen; Diät-Filter anwenden
     const dietPref = settings.dietPreference;
@@ -80,6 +87,7 @@ export async function POST(request: Request) {
         lunchOnly: mealType === 'lunch',
         allergiesAndAversions: settings.allergiesAndAversions,
         pantryIngredients: wantToUse,
+        promotions: activePromotions,
       });
 
       return NextResponse.json({ recipeId: suggestion?.id ?? null, recipe: suggestion });
@@ -108,6 +116,7 @@ export async function POST(request: Request) {
       favorites,
       favoritesOnly:         !!favoritesOnly,
       pantryIngredients:     wantToUse,
+      promotions:            activePromotions,
     });
 
     for (const [dayStr, meals] of Object.entries(suggestions)) {

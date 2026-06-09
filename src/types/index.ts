@@ -159,9 +159,11 @@ export interface WeatherSettings {
 }
 
 export interface PromotionSettings {
-  manualMigros: string[];
-  manualCoop: string[];
-  manualLidl: string[];
+  enabledStores: StoreId[];   // Welche Läden sind aktiviert (Schweiz)
+  // Altfelder für Rückwärtskompatibilität:
+  manualMigros?: string[];
+  manualCoop?:   string[];
+  manualLidl?:   string[];
 }
 
 export interface AppSettings {
@@ -194,8 +196,10 @@ export interface WeatherCache {
   days: WeatherDay[];
 }
 
+export type StoreId = 'migros' | 'coop' | 'denner' | 'aldi' | 'lidl' | 'volg';
+
 export interface Promotion {
-  store: 'migros' | 'coop' | 'lidl';
+  store: StoreId;
   product: string;
   discount?: string;
   validUntil?: string;
@@ -203,9 +207,12 @@ export interface Promotion {
 
 export interface PromotionsCache {
   lastUpdated: string | null;
-  migros: Promotion[];
-  coop: Promotion[];
-  lidl: Promotion[];
+  migros:  Promotion[];
+  coop:    Promotion[];
+  denner:  Promotion[];
+  aldi:    Promotion[];
+  lidl:    Promotion[];
+  volg:    Promotion[];
 }
 
 export interface DayConstraint {
