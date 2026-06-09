@@ -730,7 +730,7 @@ export function ShoppingListView() {
       )}
 
       {/* ── Category grid ──────────────────────────────────────────────── */}
-      {!loading && !stateLoading && orderedCategories.length > 0 && (
+      {!loading && !stateLoading && (orderedCategories.length > 0 || allPantryItems.length > 0) && (
         <div className="mz-shop-grid">
           {orderedCategories.map((category) => {
             const recipeItems    = (list[category] ?? []).filter(i => !pantryKeys.has(`${i.name.toLowerCase()}_${i.unit}`));
@@ -978,12 +978,10 @@ export function ShoppingListView() {
               </div>
             );
           })}
-        </div>
-      )}
 
-      {/* ── Im Vorrat vorhanden ────────────────────────────────────────── */}
-      {!loading && !stateLoading && allPantryItems.length > 0 && (
-        <div className="rounded-2xl overflow-hidden" style={{ border: '1px solid #c8e6c9', backgroundColor: '#fff' }}>
+          {/* ── Im Vorrat vorhanden ──────────────────────────────────── */}
+          {allPantryItems.length > 0 && (
+            <div className="rounded-2xl overflow-hidden" style={{ border: '1px solid #c8e6c9', backgroundColor: '#fff' }}>
           {/* Header */}
           <div
             className="flex items-center gap-2 px-4 py-3 cursor-pointer select-none"
@@ -1052,6 +1050,8 @@ export function ShoppingListView() {
                   </div>
                 );
               })}
+            </div>
+          )}
             </div>
           )}
         </div>

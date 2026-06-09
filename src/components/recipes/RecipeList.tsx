@@ -142,7 +142,7 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
       if (search && !r.name.toLowerCase().includes(search.toLowerCase())) return false;
       if (isRecipeExcluded(r, allergiesAndAversions)) return false;
       return true;
-    });
+    }).sort((a, b) => a.name.localeCompare(b.name, 'de'));
   }, [recipes, search, filterCategory, filterTags, filterDiet, allergiesAndAversions, showFavorites, favorites]);
 
   const archivedFiltered = useMemo(() => {
@@ -150,7 +150,7 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
       if (!r.archived) return false;
       if (search && !r.name.toLowerCase().includes(search.toLowerCase())) return false;
       return true;
-    });
+    }).sort((a, b) => a.name.localeCompare(b.name, 'de'));
   }, [recipes, search]);
 
   const archivedCount = recipes.filter((r) => r.archived).length;
