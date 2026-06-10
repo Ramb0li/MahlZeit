@@ -54,7 +54,7 @@ export default function DatenschutzPage() {
           <tr><th>Dienst</th><th>Zweck</th></tr>
         </thead>
         <tbody>
-          <tr><td>Vercel</td><td>Hosting der Anwendung, Server-Logs</td></tr>
+          <tr><td>Vercel</td><td>Hosting der Anwendung, Server-Logs, anonymisierte Webanalyse (Vercel Web Analytics)</td></tr>
           <tr><td>Upstash (Redis)</td><td>Datenbank für Konten, Rezepte, Pläne und Einstellungen</td></tr>
           <tr><td>Resend</td><td>Versand von Transaktions-E-Mails</td></tr>
           <tr><td>Stripe</td><td>Zahlungsabwicklung für kostenpflichtige Pläne</td></tr>
@@ -83,7 +83,19 @@ export default function DatenschutzPage() {
         Analyse- oder Werbe-Cookies eingesetzt. Daher ist kein Cookie-Banner erforderlich.
       </p>
 
-      <h2>7. Speicherdauer</h2>
+      <h2>7. Webanalyse</h2>
+      <p>
+        Zur Verbesserung der App nutzen wir <strong>Vercel Web Analytics</strong>. Dieser Dienst
+        erfasst Seitenaufrufe und grundlegende technische Angaben (z.&nbsp;B. Gerätetyp, Browser,
+        Herkunftsland, Referrer) <strong>vollständig anonymisiert und ohne Cookies</strong>. Es werden
+        keine persönlichen Profile erstellt, keine IP-Adressen dauerhaft gespeichert und kein
+        seitenübergreifendes Tracking durchgeführt. Eine Identifikation einzelner Besucherinnen und
+        Besucher ist nicht möglich. Rechtsgrundlage ist unser berechtigtes Interesse an der
+        Analyse und Verbesserung unseres Angebots (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO bzw.
+        überwiegendes berechtigtes Interesse nach revDSG).
+      </p>
+
+      <h2>8. Speicherdauer</h2>
       <p>
         Wir bearbeiten personenbezogene Daten, solange dein Konto besteht bzw. solange es für die
         genannten Zwecke erforderlich ist. Nach Löschung deines Kontos werden die zugehörigen Daten
@@ -91,7 +103,7 @@ export default function DatenschutzPage() {
         entgegenstehen.
       </p>
 
-      <h2>8. Deine Rechte</h2>
+      <h2>9. Deine Rechte</h2>
       <p>Du hast – im Rahmen des anwendbaren Rechts – das Recht auf:</p>
       <ul>
         <li>Auskunft über die zu dir bearbeiteten Daten;</li>
@@ -105,14 +117,14 @@ export default function DatenschutzPage() {
         Zur Ausübung deiner Rechte genügt eine E-Mail an <a href="mailto:info@o-v-k.ch">info@o-v-k.ch</a>.
       </p>
 
-      <h2>9. Beschwerderecht</h2>
+      <h2>10. Beschwerderecht</h2>
       <p>
         In der Schweiz kannst du dich an den Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten
         (EDÖB) wenden. In der EU steht dir das Beschwerderecht bei der für dich zuständigen
         Datenschutz-Aufsichtsbehörde zu.
       </p>
 
-      <h2>10. Änderungen</h2>
+      <h2>11. Änderungen</h2>
       <p>
         Wir können diese Datenschutzerklärung anpassen, etwa bei Weiterentwicklung der App oder
         Änderungen der Rechtslage. Es gilt jeweils die hier veröffentlichte Fassung.
