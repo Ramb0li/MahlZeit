@@ -177,9 +177,10 @@ interface RecipeFormProps {
   onSave: (recipe: Recipe) => void;
   onCancel: () => void;
   uploadEndpoint?: string;
+  showImageUrl?: boolean;
 }
 
-export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/upload' }: RecipeFormProps) {
+export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/upload', showImageUrl = false }: RecipeFormProps) {
   const [name, setName]                       = useState(recipe?.name ?? '');
   const [category, setCategory]               = useState<Category>(recipe?.category ?? 'Eigene Rezepte');
   const [dietCategory, setDietCategory]       = useState<import('@/types').DietCategory | undefined>(recipe?.dietCategory);
@@ -229,24 +230,22 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/up
   const removeIngredient = (i: number) =>
     setIngredients((prev) => prev.filter((_, idx) => idx !== i));
 
-  // Upload file to Vercel Blob via /api/admin/upload, store returned CDN URL
-  const handleFileChange = useCallback(async (
-    e: React.ChangeEvent<HTMLInputElement>,
+  const [dragOverField, setDragOverField] = useState<string | null>(null);
+
+  const handleImageFile = useCallback(async (
+    file: File,
     field: string,
     setter: (v: string) => void,
   ) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
-
+    if (file.size > 2 * 1024 * 1024) {
+      setUploadError('Das Bild ist zu gross (max. 2 MB). Bitte eine kleinere Datei wählen.');
+      return;
+    }
     setUploadError(null);
     setUploadingField(field);
-
-    // Show local object-URL as immediate preview
     const preview = URL.createObjectURL(file);
     setter(preview);
-
     try {
-      // Grosse Fotos client-seitig verkleinern (löst Grössenlimit + Handy-Fotos)
       const { blob, reencoded } = await downscaleImage(file);
       const filename = reencoded
         ? `${file.name.replace(/\.[^.]+$/, '') || 'foto'}.jpg`
@@ -255,23 +254,30 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/up
       form.append('file', blob, filename);
       const res  = await fetch(uploadEndpoint, { method: 'POST', body: form });
       const data = await res.json() as { url?: string; error?: string };
-
       if (!res.ok || !data.url) {
-        setter(''); // clear broken preview
+        setter('');
         setUploadError(data.error ?? 'Upload fehlgeschlagen.');
       } else {
         URL.revokeObjectURL(preview);
-        setter(data.url); // replace preview with permanent CDN URL
+        setter(data.url);
       }
     } catch {
       setter('');
       setUploadError('Netzwerkfehler beim Upload.');
     } finally {
       setUploadingField(null);
-      // Reset file input so the same file can be re-selected after an error
-      if (e.target) e.target.value = '';
     }
   }, [uploadEndpoint]);
+
+  const handleFileChange = useCallback(async (
+    e: React.ChangeEvent<HTMLInputElement>,
+    field: string,
+    setter: (v: string) => void,
+  ) => {
+    const file = e.target.files?.[0];
+    if (file) await handleImageFile(file, field, setter);
+    if (e.target) e.target.value = '';
+  }, [handleImageFile]);
 
   // Helfer fuer Gruppen-Modus
   const updateGroup = (gi: number, field: 'name', value: string) =>
@@ -551,13 +557,22 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/up
                   className="relative rounded-xl overflow-hidden flex items-center justify-center cursor-pointer transition-all"
                   style={{
                     height: 80,
-                    border: isUploading ? '1.5px dashed var(--accent, #b5614a)' : '1.5px dashed #e0d8ce',
-                    backgroundColor: '#f7f4ee',
+                    border: (dragOverField === field || isUploading) ? '1.5px dashed var(--accent, #b5614a)' : '1.5px dashed #e0d8ce',
+                    backgroundColor: dragOverField === field ? '#fdf3ee' : '#f7f4ee',
                     backgroundImage: displayUrl && !isUploading ? `url(${displayUrl})` : undefined,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                   }}
                   onClick={() => !isUploading && ref.current?.click()}
+                  onDragOver={(e) => { e.preventDefault(); setDragOverField(field); }}
+                  onDragEnter={(e) => { e.preventDefault(); setDragOverField(field); }}
+                  onDragLeave={() => setDragOverField(null)}
+                  onDrop={(e) => {
+                    e.preventDefault();
+                    setDragOverField(null);
+                    const f = e.dataTransfer.files?.[0];
+                    if (f && f.type.startsWith('image/')) handleImageFile(f, field, setter);
+                  }}
                 >
                   {isUploading ? (
                     <span style={{ fontSize: 11, color: '#b5614a', fontWeight: 600 }}>Hochladen…</span>
@@ -581,14 +596,16 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/up
                   className="hidden"
                   onChange={(e) => handleFileChange(e, field, setter)}
                 />
-                {/* Optional: paste URL directly */}
-                <input
-                  type="text"
-                  placeholder="oder URL einfügen"
-                  value={value.startsWith('blob:') ? '' : value}
-                  onChange={(e) => setter(e.target.value)}
-                  style={{ ...inputStyle, fontSize: 11, padding: '4px 8px' }}
-                />
+                {/* URL only visible in admin context */}
+                {showImageUrl && (
+                  <input
+                    type="text"
+                    placeholder="oder URL einfügen"
+                    value={value.startsWith('blob:') ? '' : value}
+                    onChange={(e) => setter(e.target.value)}
+                    style={{ ...inputStyle, fontSize: 11, padding: '4px 8px' }}
+                  />
+                )}
               </div>
             );
           })}

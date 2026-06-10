@@ -1291,6 +1291,7 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                   recipe={editingRecipe === 'new' ? undefined : (editingRecipe as Recipe)}
                   onSave={handleRecipeSave}
                   onCancel={() => setEditingRecipe(null)}
+                  showImageUrl
                 />
               </div>
             </div>
@@ -1319,6 +1320,7 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                   onSave={handleUserRecipeSave}
                   onCancel={() => setEditingUserRecipe(null)}
                   uploadEndpoint="/api/admin/upload"
+                  showImageUrl
                 />
               </div>
             </div>

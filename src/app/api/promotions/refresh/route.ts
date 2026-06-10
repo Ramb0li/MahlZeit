@@ -6,7 +6,7 @@ import { getSettings, getPromotions, savePromotions, getTemplateRecipes } from '
 import { scrapeSwissPromotions } from '@/lib/scrapePromotions';
 import type { StoreId } from '@/types';
 
-const REFRESH_COOLDOWN_MS = 24 * 60 * 60 * 1000; // 24 Stunden
+const REFRESH_COOLDOWN_MS = 12 * 60 * 60 * 1000; // 12 Stunden
 
 export async function POST() {
   try {
