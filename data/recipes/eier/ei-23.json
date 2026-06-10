@@ -1,7 +1,7 @@
 {
   "id": "ei-23",
   "name": "Farmers Rührei Muffins",
-  "category": "Frühstück",
+  "category": "Vegetarische Hauptgerichte",
   "timeMinutes": 30,
   "basePortions": 12,
   "tags": [
@@ -9,7 +9,6 @@
     "Mealprep-geeignet",
     "Kinderfreundlich",
     "Ofengericht",
-    "Frühstück",
     "Schnell und einfach",
     "Frühstücksgericht"
   ],

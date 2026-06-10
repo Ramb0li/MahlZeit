@@ -1,9 +1,342 @@
 {
-  "lastUpdated": null,
-  "migros": [],
-  "coop": [],
+  "lastUpdated": "2026-06-10T07:57:03.461Z",
+  "migros": [
+    {
+      "store": "migros",
+      "product": "Longobardi Tomaten gehackt, 6er-Pack",
+      "discount": "40%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "migros",
+      "product": "Minitörtli, 6er-Pack",
+      "discount": "40%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "migros",
+      "product": "Agnesi-Tortiglioni, -Pennette oder -Spaghetti",
+      "discount": "33%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "migros",
+      "product": "Alle Frischback Gipfel",
+      "discount": "33%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "migros",
+      "product": "Costa-Pacific Prawns, ASC oder -Meeresfrüchtemischung",
+      "discount": "33%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "migros",
+      "product": "Migros Bio Eisbergsalat",
+      "discount": "31%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "migros",
+      "product": "Alle Grill- und Bratkäse in Selbstbedienung",
+      "discount": "30%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "migros",
+      "product": "Migros Bio Fenchel",
+      "discount": "25%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "migros",
+      "product": "Migros Bio Mozzarella Kugeln, 3er-Pack",
+      "discount": "25%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "migros",
+      "product": "Migros Bio Zuckermais, Duo-Pack",
+      "discount": "25%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "migros",
+      "product": "Erdbeeren",
+      "discount": "25%",
+      "validUntil": "10.06.2026"
+    }
+  ],
+  "coop": [
+    {
+      "store": "coop",
+      "product": "Bio Tomaten gehackt 12x400g",
+      "discount": "50%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Primagusto Tomaten Cherry Mix",
+      "discount": "40%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Gehackte Tomaten 6x800g",
+      "discount": "40%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Bonduelle Goldmais 6x285g",
+      "discount": "40%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Lachsfilets ASC",
+      "discount": "40%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Citterio Rohschinken 2x90g",
+      "discount": "38%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Naturaplan Bio Tortilla Chips BBQ Paprika",
+      "discount": "37%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Waadtländer Pastetli 4x110g",
+      "discount": "37%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Munz Schokoladen-Bananen 20x19g",
+      "discount": "36%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Naturaplan Bio Tortilla Chips Nature XL",
+      "discount": "35%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Popcorn gesalzen XL",
+      "discount": "34%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Tortilla Chips Mild Chili",
+      "discount": "34%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Tortilla Chips Nature",
+      "discount": "34%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Erdnüsse gesalzen",
+      "discount": "34%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Fairtrade Cashews geröstet+gesalzen",
+      "discount": "34%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Pistazien geröstet &amp; gesalzen",
+      "discount": "34%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Kambly Tasche 4 Sorten Salzgebäck",
+      "discount": "34%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Roland Petite Pause Schokolade",
+      "discount": "33%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Roland Petite Pause Milch",
+      "discount": "33%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Chio Minions Maisstangen gesalzen 3x75g",
+      "discount": "33%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Chio Jumpy`s Chips sunny Paprika 3x100g",
+      "discount": "33%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Nussmix Salz",
+      "discount": "33%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Naturaplan Bio Fairtrade Mango 3x120g",
+      "discount": "33%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Naturaplan Bio Cashewnüsse 3x150g",
+      "discount": "33%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Naturaplan Crevetten Black Tiger roh",
+      "discount": "33%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Bio Lachsfilet mit Haut 2x180g",
+      "discount": "31%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Pom-Bär Paprika 2x100g",
+      "discount": "30%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Betty Bossi Red Thai Curry",
+      "discount": "30%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Betty Bossi Plant Kitchen vegane Alternative zu Schnitzel...",
+      "discount": "30%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Wernli Petit Beurre Guezli Milchschokolade 3x125g",
+      "discount": "30%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Wernli Butterherzli 3x100g",
+      "discount": "30%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Oreo Sandwich Mini DUO 2x6x55ml",
+      "discount": "30%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Lotus Mini Stick 2x6x50ml",
+      "discount": "30%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Naturaplan Bio Hinterschinken Rustico",
+      "discount": "27%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Danone Activia Mix&amp;Go Vanilla Granola",
+      "discount": "26%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Activia probiotischer Joghurt Cerealienmix 8x115g",
+      "discount": "25%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Activia probiotischer Joghurt Fruchtmix 8x115g",
+      "discount": "25%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Zweifel Kezz Chips Meersalz 2x110g",
+      "discount": "25%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Zweifel Cractiv Chips Paprika 2x160g",
+      "discount": "25%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Naturaplan Bio Kristallzucker 4x1kg",
+      "discount": "25%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Rio mare Insalatissime Thunfischsalat mit Mais 3x160g",
+      "discount": "25%",
+      "validUntil": "10.06.2026"
+    },
+    {
+      "store": "coop",
+      "product": "Rio mare Insalatissime Thunfischsalat Messicana 3x160g",
+      "discount": "25%",
+      "validUntil": "10.06.2026"
+    }
+  ],
   "denner": [],
   "aldi": [],
-  "lidl": [],
+  "lidl": [
+    {
+      "store": "lidl",
+      "product": "Pastasaucen"
+    },
+    {
+      "store": "lidl",
+      "product": "Nudeln al bronzo IGP"
+    },
+    {
+      "store": "lidl",
+      "product": "Nudeln IGP"
+    }
+  ],
   "volg": []
 }
