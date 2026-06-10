@@ -185,6 +185,11 @@ export function ShoppingListView() {
   const toggleCollapse = (cat: string) =>
     setCollapsed(prev => { const n = new Set(prev); n.has(cat) ? n.delete(cat) : n.add(cat); return n; });
 
+  // ─── Promotions state ────────────────────────────────────────────────────
+  const [promoRefreshing, setPromoRefreshing] = useState(false);
+  const [promoError, setPromoError]           = useState<string | null>(null);
+  const [promoLastUpdated, setPromoLastUpdated] = useState<string | null>(null);
+
   useEffect(() => { if (editKey && editRef.current) editRef.current.focus(); }, [editKey]);
   useEffect(() => { if (editCustomId && editCustomRef.current) editCustomRef.current.focus(); }, [editCustomId]);
   useEffect(() => { if (showAdd) nameInputRef.current?.focus(); }, [showAdd]);
@@ -203,6 +208,29 @@ export function ShoppingListView() {
       }
     } finally { setLoading(false); }
   }, [weekId]);
+
+  useEffect(() => {
+    fetch('/api/promotions')
+      .then(r => r.json())
+      .then((d: { lastUpdated?: string | null }) => { if (d.lastUpdated) setPromoLastUpdated(d.lastUpdated); })
+      .catch(() => {});
+  }, []);
+
+  const handlePromoRefresh = useCallback(async () => {
+    setPromoRefreshing(true);
+    setPromoError(null);
+    try {
+      const res  = await fetch('/api/promotions/refresh', { method: 'POST' });
+      const data = await res.json() as { success?: boolean; lastUpdated?: string; error?: string };
+      if (!res.ok || !data.success) throw new Error(data.error ?? 'Fehler beim Laden der Aktionen.');
+      if (data.lastUpdated) setPromoLastUpdated(data.lastUpdated);
+      await loadList();
+    } catch (err) {
+      setPromoError(err instanceof Error ? err.message : 'Fehler beim Laden der Aktionen.');
+    } finally {
+      setPromoRefreshing(false);
+    }
+  }, [loadList]);
 
   const loadGroupsMeta = useCallback(async () => {
     try {
@@ -593,6 +621,28 @@ export function ShoppingListView() {
             />
           </div>
         </div>
+      )}
+
+      {/* Aktionen */}
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 8, flexWrap: 'wrap' }}>
+        <p className="text-xs" style={{ color: '#9c8c84' }}>
+          {promoLastUpdated
+            ? `Aktionen: ${new Date(promoLastUpdated).toLocaleString('de-CH', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' })}`
+            : 'Aktionen: noch nicht geladen'}
+        </p>
+        <button
+          type="button"
+          onClick={handlePromoRefresh}
+          disabled={promoRefreshing}
+          className="flex items-center gap-1.5 px-3 py-1 rounded-xl text-xs font-semibold transition-all"
+          style={{ backgroundColor: '#f0ebe3', color: '#5a4e48', opacity: promoRefreshing ? 0.6 : 1 }}
+        >
+          <RefreshCw size={11} className={promoRefreshing ? 'animate-spin' : ''} />
+          {promoRefreshing ? 'Sucht...' : 'Nach Aktionen suchen'}
+        </button>
+      </div>
+      {promoError && (
+        <p className="text-xs" style={{ color: '#c62828' }}>{promoError}</p>
       )}
 
       {/* Week selector */}
