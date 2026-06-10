@@ -6,6 +6,7 @@ import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { ServiceWorkerRegistration } from '@/components/ServiceWorkerRegistration';
+import { Analytics } from '@vercel/analytics/next';
 import '../globals.css';
 
 const fraunces = Fraunces({
@@ -71,6 +72,7 @@ export default async function LocaleLayout({ children, params }: Props) {
           {children}
         </NextIntlClientProvider>
         <ServiceWorkerRegistration />
+        <Analytics />
       </body>
     </html>
   );
