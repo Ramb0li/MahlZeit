@@ -3,7 +3,6 @@ export type WeatherType = 'warm' | 'kalt' | 'neutral';
 export type DietType = 'vegan' | 'vegetarisch' | 'pescetarisch' | 'fleischhaltig' | 'flexitarisch';
 
 export type Category =
-  | 'Frühstück'
   | 'Snacks & Vorspeisen'
   | 'Suppen, Eintöpfe & Currys'
   | 'Salate & Bowls'
@@ -15,7 +14,8 @@ export type Category =
   | 'Vegetarische Hauptgerichte'
   | 'Aufläufe & Gratins'
   | 'Wraps & Sandwiches'
-  | 'Desserts & Süsses';
+  | 'Desserts & Süsses'
+  | 'Eigene Rezepte';
 
 export const TAG_GROUPS = {
   Ernährung: ['Fleischhaltig', 'Pescetarisch', 'Vegetarisch', 'Vegan'],

@@ -51,7 +51,7 @@ const CATEGORY_FOLDER: Record<Category, string> = {
   'Vegetarische Hauptgerichte': 'sonstige',
   'Aufläufe & Gratins':         'eintopf-gratin',
   'Reis & Getreide':            'reis',
-  'Frühstück':                  'eier',
+  'Eigene Rezepte':             'sonstige',
   'Snacks & Vorspeisen':        'sonstige',
   'Wraps & Sandwiches':         'sonstige',
   'Desserts & Süsses':          'sonstige',

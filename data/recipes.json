@@ -2,7 +2,7 @@
   {
     "id": "ei-01",
     "name": "Rührei",
-    "category": "Frühstück",
+    "category": "Vegetarische Hauptgerichte",
     "timeMinutes": 10,
     "tags": [
       "Mittagsgericht",
@@ -194,7 +194,7 @@
   {
     "id": "ei-03",
     "name": "Rösti mit Avocado und Spiegelei",
-    "category": "Frühstück",
+    "category": "Vegetarische Hauptgerichte",
     "timeMinutes": 30,
     "ingredients": [
       {
@@ -741,7 +741,7 @@
   {
     "id": "ei-09",
     "name": "Blueberry Smoothie Bowl",
-    "category": "Frühstück",
+    "category": "Vegetarische Hauptgerichte",
     "timeMinutes": 10,
     "tags": [
       "Vegan",
@@ -848,7 +848,7 @@
   {
     "id": "ei-10",
     "name": "Cacao Smoothie Bowl",
-    "category": "Frühstück",
+    "category": "Vegetarische Hauptgerichte",
     "timeMinutes": 10,
     "tags": [
       "Vegan",
@@ -928,7 +928,7 @@
   {
     "id": "ei-11",
     "name": "Granola",
-    "category": "Frühstück",
+    "category": "Vegetarische Hauptgerichte",
     "timeMinutes": 50,
     "tags": [
       "Vegan",
@@ -1187,7 +1187,7 @@
   {
     "id": "ei-13",
     "name": "Smoothie Bowl mit Beeren und Zucchetti",
-    "category": "Frühstück",
+    "category": "Vegetarische Hauptgerichte",
     "timeMinutes": 20,
     "ingredients": [
       {
@@ -1284,7 +1284,7 @@
   {
     "id": "ei-14",
     "name": "Fluffige Vegane Pancakes",
-    "category": "Frühstück",
+    "category": "Vegetarische Hauptgerichte",
     "timeMinutes": 35,
     "ingredients": [
       {
@@ -1378,7 +1378,7 @@
   {
     "id": "ei-15",
     "name": "Klassische Pfannkuchen",
-    "category": "Frühstück",
+    "category": "Vegetarische Hauptgerichte",
     "timeMinutes": 25,
     "ingredients": [
       {
@@ -1467,7 +1467,7 @@
   {
     "id": "ei-16",
     "name": "Vegane Bananen-Pancakes",
-    "category": "Frühstück",
+    "category": "Vegetarische Hauptgerichte",
     "timeMinutes": 20,
     "ingredients": [
       {
@@ -1544,7 +1544,7 @@
   {
     "id": "ei-17",
     "name": "Frittata mit Lauch und Champignon",
-    "category": "Frühstück",
+    "category": "Vegetarische Hauptgerichte",
     "timeMinutes": 25,
     "basePortions": 2,
     "tags": [
@@ -1553,7 +1553,6 @@
       "Ofengericht",
       "Herbst",
       "Winter",
-      "Frühstück",
       "Frühstücksgericht"
     ],
     "ingredients": [
@@ -1677,7 +1676,7 @@
   {
     "id": "ei-18",
     "name": "Käsetoast mit Cheddar und Butterkäse mit Spiegelei",
-    "category": "Frühstück",
+    "category": "Vegetarische Hauptgerichte",
     "timeMinutes": 15,
     "basePortions": 2,
     "tags": [
@@ -1777,7 +1776,7 @@
   {
     "id": "ei-19",
     "name": "Pochiertes Ei auf Spinat, Mais, Speck und Brot",
-    "category": "Frühstück",
+    "category": "Fleisch & Geflügel",
     "timeMinutes": 15,
     "basePortions": 2,
     "tags": [
@@ -1881,7 +1880,7 @@
   {
     "id": "ei-20",
     "name": "Frittata mit Tomate, Mozzarella & Basilikum",
-    "category": "Frühstück",
+    "category": "Vegetarische Hauptgerichte",
     "timeMinutes": 20,
     "basePortions": 2,
     "tags": [
@@ -1990,14 +1989,13 @@
   {
     "id": "ei-21",
     "name": "Spiegelei Frittata mit Frühlingszwiebeln, Speck und Mais",
-    "category": "Frühstück",
+    "category": "Fleisch & Geflügel",
     "timeMinutes": 20,
     "basePortions": 2,
     "tags": [
       "Schnell und einfach",
       "Italienisch",
       "Ofengericht",
-      "Frühstück",
       "Abendgericht",
       "Frühstücksgericht"
     ],
@@ -2093,7 +2091,7 @@
   {
     "id": "ei-23",
     "name": "Farmers Rührei Muffins",
-    "category": "Frühstück",
+    "category": "Vegetarische Hauptgerichte",
     "timeMinutes": 30,
     "basePortions": 12,
     "tags": [
@@ -2101,7 +2099,6 @@
       "Mealprep-geeignet",
       "Kinderfreundlich",
       "Ofengericht",
-      "Frühstück",
       "Schnell und einfach",
       "Frühstücksgericht"
     ],
@@ -2168,7 +2165,7 @@
   {
     "id": "ei-24",
     "name": "Vollkornbrot mit Kräuterbutter, Gurke und Makrele",
-    "category": "Frühstück",
+    "category": "Fisch & Meeresfrüchte",
     "timeMinutes": 10,
     "basePortions": 4,
     "tags": [
@@ -2268,7 +2265,7 @@
   {
     "id": "ei-25",
     "name": "Mozzarella-Basilikum-Creme auf Vollkorntoast mit Cherrytomaten",
-    "category": "Frühstück",
+    "category": "Vegetarische Hauptgerichte",
     "timeMinutes": 10,
     "basePortions": 2,
     "tags": [
@@ -2350,7 +2347,7 @@
   {
     "id": "ei-26",
     "name": "Dutch Baby mit frischen Erdbeeren",
-    "category": "Frühstück",
+    "category": "Vegetarische Hauptgerichte",
     "timeMinutes": 15,
     "basePortions": 2.5,
     "tags": [
@@ -25169,7 +25166,7 @@
   {
     "id": "fam-07",
     "name": "Buchweizen-Pancakes mit Zwetschgenkompott",
-    "category": "Frühstück",
+    "category": "Vegetarische Hauptgerichte",
     "timeMinutes": 30,
     "tags": [
       "Vegetarisch",
@@ -28146,7 +28143,7 @@
   {
     "id": "son-04",
     "name": "Avocado Toast mit Spiegelei",
-    "category": "Frühstück",
+    "category": "Vegetarische Hauptgerichte",
     "timeMinutes": 15,
     "ingredients": [
       {
@@ -30342,7 +30339,6 @@
     "tags": [
       "Vegetarisch",
       "Schnell und einfach",
-      "Frühstück",
       "Mittagsgericht",
       "Abendgericht",
       "Orientalisch"

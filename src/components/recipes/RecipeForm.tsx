@@ -14,10 +14,10 @@ import {
 import { CSS } from '@dnd-kit/utilities';
 
 const CATEGORIES: Category[] = [
-  'Frühstück', 'Snacks & Vorspeisen', 'Suppen, Eintöpfe & Currys',
+  'Snacks & Vorspeisen', 'Suppen, Eintöpfe & Currys',
   'Salate & Bowls', 'Pasta', 'Reis & Getreide', 'Kartoffelgerichte',
   'Fleisch & Geflügel', 'Fisch & Meeresfrüchte', 'Vegetarische Hauptgerichte',
-  'Aufläufe & Gratins', 'Wraps & Sandwiches', 'Desserts & Süsses',
+  'Aufläufe & Gratins', 'Wraps & Sandwiches', 'Desserts & Süsses', 'Eigene Rezepte',
 ];
 
 // Shared input style
@@ -181,7 +181,7 @@ interface RecipeFormProps {
 
 export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/upload' }: RecipeFormProps) {
   const [name, setName]                       = useState(recipe?.name ?? '');
-  const [category, setCategory]               = useState<Category>(recipe?.category ?? 'Vegetarische Hauptgerichte');
+  const [category, setCategory]               = useState<Category>(recipe?.category ?? 'Eigene Rezepte');
   const [dietCategory, setDietCategory]       = useState<import('@/types').DietCategory | undefined>(recipe?.dietCategory);
   const [timeMinutes, setTimeMinutes]         = useState(recipe?.timeMinutes ?? 30);
   const [weatherType, setWeatherType]         = useState<WeatherType>(recipe?.weatherType ?? 'neutral');

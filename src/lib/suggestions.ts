@@ -161,7 +161,7 @@ export interface SuggestWeekOptions {
   promotions?: Promotion[];     // Aktions-Promotionen → +20 Bonus im Scoring
 }
 
-const BREAKFAST_CATS  = new Set<Category>(['Frühstück']);
+const BREAKFAST_CATS  = new Set<Category>();
 const EXCLUDED_CATS   = new Set<Category>(['Snacks & Vorspeisen', 'Desserts & Süsses']);
 
 function isMeatRecipe(r: Recipe): boolean {

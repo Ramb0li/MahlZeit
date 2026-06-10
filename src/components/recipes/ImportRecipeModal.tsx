@@ -58,10 +58,10 @@ export function ImportRecipeModal({ isPremium, onClose, onImported }: ImportReci
     const safeNum = (v: unknown, fallback = 0)  => (typeof v === 'number' ? v : fallback);
 
     const VALID_CATS: Category[] = [
-      'Frühstück', 'Snacks & Vorspeisen', 'Suppen, Eintöpfe & Currys',
+      'Snacks & Vorspeisen', 'Suppen, Eintöpfe & Currys',
       'Salate & Bowls', 'Pasta', 'Reis & Getreide', 'Kartoffelgerichte',
       'Fleisch & Geflügel', 'Fisch & Meeresfrüchte', 'Vegetarische Hauptgerichte',
-      'Aufläufe & Gratins', 'Wraps & Sandwiches', 'Desserts & Süsses',
+      'Aufläufe & Gratins', 'Wraps & Sandwiches', 'Desserts & Süsses', 'Eigene Rezepte',
     ];
     const VALID_WEATHER: WeatherType[] = ['warm', 'kalt', 'neutral'];
 

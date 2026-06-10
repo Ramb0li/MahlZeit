@@ -9,14 +9,13 @@ import { isRecipeExcluded } from '@/lib/allergens';
 import { type Recipe, type Category, TAG_GROUPS, computeTimeTags } from '@/types';
 
 const CATEGORIES: Category[] = [
-  'Frühstück', 'Snacks & Vorspeisen', 'Suppen, Eintöpfe & Currys',
+  'Snacks & Vorspeisen', 'Suppen, Eintöpfe & Currys',
   'Salate & Bowls', 'Pasta', 'Reis & Getreide', 'Kartoffelgerichte',
   'Fleisch & Geflügel', 'Fisch & Meeresfrüchte', 'Vegetarische Hauptgerichte',
-  'Aufläufe & Gratins', 'Wraps & Sandwiches', 'Desserts & Süsses',
+  'Aufläufe & Gratins', 'Wraps & Sandwiches', 'Desserts & Süsses', 'Eigene Rezepte',
 ];
 
 const CAT_COLORS: Record<Category, { bg: string; color: string }> = {
-  'Frühstück':                  { bg: '#fff8e1', color: '#f57f17' },
   'Snacks & Vorspeisen':        { bg: '#f3e5f5', color: '#6a1b9a' },
   'Suppen, Eintöpfe & Currys':  { bg: '#e0f2f1', color: '#00695c' },
   'Salate & Bowls':             { bg: '#e8f5e9', color: '#2e7d32' },
@@ -29,6 +28,7 @@ const CAT_COLORS: Record<Category, { bg: string; color: string }> = {
   'Aufläufe & Gratins':         { bg: '#ede7f6', color: '#4527a0' },
   'Wraps & Sandwiches':         { bg: '#fbe9e7', color: '#bf360c' },
   'Desserts & Süsses':          { bg: '#fce4ec', color: '#880e4f' },
+  'Eigene Rezepte':             { bg: '#ede9fe', color: '#5b21b6' },
 };
 
 const DIET_FILTERS = [

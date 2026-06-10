@@ -96,7 +96,7 @@ const OLD_CAT_MAP: Record<string, Category> = {
   'Ofen':             'Aufläufe & Gratins',
   'Suppen':           'Suppen, Eintöpfe & Currys',
   'Salat/Bowl':       'Salate & Bowls',
-  'Frühstück':        'Frühstück',
+  'Frühstück':        'Vegetarische Hauptgerichte',
   'Süsses':           'Desserts & Süsses',
   'Brot & Aufstrich': 'Snacks & Vorspeisen',
   'Snacks':           'Snacks & Vorspeisen',
@@ -107,11 +107,16 @@ function normalizeRecipe(r: Recipe): Recipe {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const raw = r as any;
   // Category migration
+  const wasFreuehstueck = (r.category as string) === 'Frühstück';
   if (OLD_CAT_MAP[r.category as string]) {
     r = { ...r, category: OLD_CAT_MAP[r.category as string] };
     if ((r.category as string) === 'Aufläufe & Gratins' && raw.category === 'Ofen') {
       raw._addOfengericht = true;
     }
+  }
+  // Frühstück migration: ensure Frühstücksgericht tag is present
+  if (wasFreuehstueck && Array.isArray(r.tags) && !r.tags.includes('Frühstücksgericht')) {
+    r = { ...r, tags: [...r.tags, 'Frühstücksgericht'] };
   }
   // Tags migration (only if tags field is absent)
   if (!Array.isArray(raw.tags)) {

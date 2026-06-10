@@ -74,10 +74,14 @@ export async function POST(request: Request) {
       // Filter recipes by meal slot
       const mealFiltered =
         mealType === 'breakfast'
-          ? recipes.filter((r) => r.category === 'Frühstück')
+          ? recipes.filter((r) => r.tags.includes('Frühstücksgericht'))
           : mealType === 'lunch'
             ? recipes.filter((r) => r.tags.includes('Mittagsgericht'))
-            : recipes.filter((r) => r.category !== 'Frühstück' && r.category !== 'Desserts & Süsses' && r.category !== 'Snacks & Vorspeisen');
+            : recipes.filter((r) =>
+                !r.tags.includes('Frühstücksgericht') &&
+                r.category !== 'Desserts & Süsses' &&
+                r.category !== 'Snacks & Vorspeisen'
+              );
 
       const suggestion = suggestRecipe(mealFiltered, {
         weatherType,

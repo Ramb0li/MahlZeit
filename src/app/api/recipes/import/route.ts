@@ -18,7 +18,7 @@ const RECIPE_TOOL = {
     properties: {
       name:         { type: 'string', description: 'Rezeptname' },
       description:  { type: 'string', description: 'Kurze appetitliche Beschreibung (1-2 Sätze)' },
-      category:     { type: 'string', enum: ['Frühstück','Snacks & Vorspeisen','Suppen, Eintöpfe & Currys','Salate & Bowls','Pasta','Reis & Getreide','Kartoffelgerichte','Fleisch & Geflügel','Fisch & Meeresfrüchte','Vegetarische Hauptgerichte','Aufläufe & Gratins','Wraps & Sandwiches','Desserts & Süsses'] },
+      category:     { type: 'string', enum: ['Snacks & Vorspeisen','Suppen, Eintöpfe & Currys','Salate & Bowls','Pasta','Reis & Getreide','Kartoffelgerichte','Fleisch & Geflügel','Fisch & Meeresfrüchte','Vegetarische Hauptgerichte','Aufläufe & Gratins','Wraps & Sandwiches','Desserts & Süsses','Eigene Rezepte'] },
       timeMinutes:  { type: 'number', description: 'Gesamtzeit in Minuten' },
       basePortions: { type: 'number', description: 'Anzahl Portionen' },
       weatherType:  { type: 'string', enum: ['warm','kalt','neutral'] },
@@ -237,6 +237,7 @@ export async function POST(request: Request) {
         { type: 'image', source: { type: 'base64', media_type: body.mimeType, data: body.imageBase64 } },
       ]);
       recipe.source = importSource;
+      recipe.category = 'Eigene Rezepte';
 
       return NextResponse.json({ recipe, source: 'image' });
     }
@@ -293,6 +294,7 @@ export async function POST(request: Request) {
         }
       }
       recipe.source = importSource;
+      recipe.category = 'Eigene Rezepte';
 
       return NextResponse.json({ recipe, source: jsonLd ? 'json-ld' : 'html', url });
     }
