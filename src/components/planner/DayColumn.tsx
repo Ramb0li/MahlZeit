@@ -433,7 +433,7 @@ function MealSlotCard({
               <button
                 onClick={(e) => { e.stopPropagation(); setShowSideMenu(v => !v); }}
                 className="mz-slot-del on-img"
-                style={{ opacity: 0.65, width: 20, height: 20, borderRadius: '50%' }}
+                style={{ position: 'static', opacity: 0.65, width: 20, height: 20, borderRadius: '50%' }}
                 title="Beilage hinzufügen"
               >
                 <Plus size={10} />
