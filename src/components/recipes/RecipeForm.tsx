@@ -124,6 +124,22 @@ function SortableIngredientRow({ id, ing, compact = false, onUpdate, onRemove }:
     }
   };
 
+  const stepAmount = (delta: number) => {
+    const cur = parseFloat(displayAmount.replace(',', '.'));
+    const base = isNaN(cur) ? 0 : cur;
+    const next = Math.max(0, Math.round((base + delta) * 10) / 10);
+    const nextStr = next % 1 === 0 ? String(next) : next.toFixed(1);
+    setDisplayAmount(nextStr);
+    onUpdate('amount', next);
+  };
+
+  const btnStyle: React.CSSProperties = {
+    width: 24, height: 24, borderRadius: 8, border: '1px solid #e0d8ce',
+    backgroundColor: '#f7f4ee', color: '#5a4e48', fontSize: 14,
+    display: 'flex', alignItems: 'center', justifyContent: 'center',
+    cursor: 'pointer', padding: 0, flexShrink: 0, lineHeight: 1,
+  };
+
   return (
     <div ref={setNodeRef} style={rowStyle} className="flex gap-2 items-center">
       {/* Drag handle — only this element activates drag; inputs stay fully interactive */}
@@ -143,6 +159,7 @@ function SortableIngredientRow({ id, ing, compact = false, onUpdate, onRemove }:
         onChange={(e) => onUpdate('name', e.target.value)}
         style={{ ...inputStyle, flex: 1, padding: p }}
       />
+      <button type="button" onClick={() => stepAmount(-1)} style={btnStyle}>–</button>
       <input
         type="text"
         inputMode="decimal"
@@ -150,8 +167,9 @@ function SortableIngredientRow({ id, ing, compact = false, onUpdate, onRemove }:
         value={displayAmount}
         onChange={(e) => handleAmountChange(e.target.value)}
         onBlur={commitAmount}
-        style={{ ...inputStyle, width: '72px', padding: p }}
+        style={{ ...inputStyle, width: '60px', padding: p, textAlign: 'center' }}
       />
+      <button type="button" onClick={() => stepAmount(1)} style={btnStyle}>+</button>
       <input
         type="text" list="mz-units" placeholder="Einheit" value={ing.unit}
         onChange={(e) => onUpdate('unit', e.target.value)}
@@ -190,7 +208,7 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/up
   const [source, setSource]                   = useState(recipe?.source ?? 'Rezept von Cuiselin');
   const [basePortions, setBasePortions]       = useState(recipe?.basePortions ?? 4);
   const [description, setDescription]         = useState(recipe?.description ?? '');
-  const [stepsText, setStepsText]             = useState((recipe?.steps ?? []).join('\n'));
+  const [stepsText, setStepsText]             = useState((recipe?.steps ?? []).map(s => s.replace(/^\d+[.)]\s*/, '')).join('\n'));
   const [imageUrl, setImageUrl]               = useState(recipe?.imageUrl ?? '');
   const [imageZutaten, setImageZutaten]       = useState(recipe?.imageZutaten ?? '');
   const [imageKochen, setImageKochen]         = useState(recipe?.imageKochen ?? '');
@@ -466,7 +484,7 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/up
         <div>
           <label style={labelStyle}>Grundportionen</label>
           <input
-            type="number" min={1} max={12} value={basePortions}
+            type="number" min={1} max={99} value={basePortions}
             onChange={(e) => setBasePortions(Number(e.target.value))}
             style={inputStyle}
           />
@@ -502,8 +520,17 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/up
           <textarea
             value={stepsText}
             onChange={(e) => setStepsText(e.target.value)}
+            onPaste={(e) => {
+              e.preventDefault();
+              const raw = e.clipboardData.getData('text');
+              const stripped = raw.split('\n').map(s => s.replace(/^\d+[.)]\s*/, '')).join('\n');
+              const ta = e.currentTarget;
+              const start = ta.selectionStart ?? 0;
+              const end   = ta.selectionEnd   ?? 0;
+              setStepsText(stepsText.slice(0, start) + stripped + stepsText.slice(end));
+            }}
             rows={5}
-            placeholder={'1. Zwiebeln würfeln und in Öl andünsten.\n2. Tomaten hinzugeben und 10 min köcheln lassen.\n3. Mit Salz und Pfeffer abschmecken.'}
+            placeholder={'Zwiebeln würfeln und in Öl andünsten.\nTomaten hinzugeben und 10 min köcheln lassen.\nMit Salz und Pfeffer abschmecken.'}
             style={{ ...inputStyle, resize: 'vertical', fontFamily: 'inherit' }}
           />
         </div>

@@ -12,6 +12,8 @@ const CATEGORIES: Category[] = [
   'Aufläufe & Gratins', 'Wraps & Sandwiches', 'Desserts & Süsses', 'Eigene Rezepte',
 ];
 
+type FilterCategory = Category | 'Frühstück';
+
 export const LEFTOVERS_ID = '__leftovers__';
 
 const chipActive   = { backgroundColor: '#b5614a', color: '#fff' };
@@ -28,7 +30,7 @@ interface RecipePickerModalProps {
 
 export function RecipePickerModal({ recipes, mealType, dietPreference, onSelect, onClose }: RecipePickerModalProps) {
   const [search, setSearch] = useState('');
-  const [filterCategory, setFilterCategory] = useState<Category | 'Alle'>('Alle');
+  const [filterCategory, setFilterCategory] = useState<FilterCategory | 'Alle'>('Alle');
   const [filterTime, setFilterTime] = useState<'Alle' | 'Schnell (<20min)' | 'Einfach (<30min)'>('Alle');
 
   const title =
@@ -48,7 +50,13 @@ export function RecipePickerModal({ recipes, mealType, dietPreference, onSelect,
         if (dietPreference === 'vegetarisch'  && (diet === 'meat' || diet === 'fish')) return false;
         if (dietPreference === 'vegan'        && diet !== 'vegan') return false;
       }
-      if (filterCategory !== 'Alle' && r.category !== filterCategory) return false;
+      if (filterCategory !== 'Alle') {
+        if (filterCategory === 'Frühstück') {
+          if (!r.tags.includes('Frühstücksgericht')) return false;
+        } else {
+          if (r.category !== filterCategory) return false;
+        }
+      }
       if (filterTime !== 'Alle' && !computeTimeTags(r.timeMinutes).includes(filterTime)) return false;
       if (search && !r.name.toLowerCase().includes(search.toLowerCase())) return false;
       return true;
@@ -74,11 +82,12 @@ export function RecipePickerModal({ recipes, mealType, dietPreference, onSelect,
         {/* Category dropdown */}
         <select
           value={filterCategory}
-          onChange={e => setFilterCategory(e.target.value as Category | 'Alle')}
+          onChange={e => setFilterCategory(e.target.value as FilterCategory | 'Alle')}
           className="w-full rounded-xl px-3 py-2 text-sm focus:outline-none"
           style={{ border: '1px solid #e0d8ce', backgroundColor: '#f7f4ee', color: '#2c2420', cursor: 'pointer' }}
         >
           <option value="Alle">Alle Kategorien</option>
+          <option value="Frühstück">Frühstück</option>
           {CATEGORIES.map(c => <option key={c} value={c}>{c}</option>)}
         </select>
 

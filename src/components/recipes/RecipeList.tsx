@@ -15,7 +15,16 @@ const CATEGORIES: Category[] = [
   'Aufläufe & Gratins', 'Wraps & Sandwiches', 'Desserts & Süsses', 'Eigene Rezepte',
 ];
 
-const CAT_COLORS: Record<Category, { bg: string; color: string }> = {
+type FilterCategory = Category | 'Frühstück';
+
+// "Frühstück" is a virtual filter-only category: shows recipes tagged 'Frühstücksgericht'
+const FILTER_CATEGORIES: FilterCategory[] = [
+  'Frühstück',
+  ...CATEGORIES,
+];
+
+const CAT_COLORS: Record<FilterCategory, { bg: string; color: string }> = {
+  'Frühstück':                  { bg: '#fff3e0', color: '#e65100' },
   'Snacks & Vorspeisen':        { bg: '#f3e5f5', color: '#6a1b9a' },
   'Suppen, Eintöpfe & Currys':  { bg: '#e0f2f1', color: '#00695c' },
   'Salate & Bowls':             { bg: '#e8f5e9', color: '#2e7d32' },
@@ -66,7 +75,7 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
   };
 
   const [search, setSearch]                 = useState('');
-  const [filterCategory, setFilterCategory] = useState<Category | 'Alle'>('Alle');
+  const [filterCategory, setFilterCategory] = useState<FilterCategory | 'Alle'>('Alle');
   const [filterTags, setFilterTags]         = useState<string[]>([]);
   const [filterDiet, setFilterDiet]         = useState<DietFilterKey | null>(null);
   const [showFavorites, setShowFavorites]   = useState(false);
@@ -126,7 +135,13 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
     return recipes.filter((r) => {
       if (r.archived) return false;
       if (showFavorites && !favorites.has(r.id)) return false;
-      if (!showFavorites && filterCategory !== 'Alle' && r.category !== filterCategory) return false;
+      if (!showFavorites && filterCategory !== 'Alle') {
+        if (filterCategory === 'Frühstück') {
+          if (!r.tags.includes('Frühstücksgericht')) return false;
+        } else {
+          if (r.category !== filterCategory) return false;
+        }
+      }
       if (filterTags.length > 0) {
         const recipeTags = [...(r.tags ?? []), ...computeTimeTags(r.timeMinutes)];
         if (!filterTags.every(t => recipeTags.includes(t))) return false;
@@ -275,7 +290,7 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
             >
               Alle
             </button>
-            {CATEGORIES.map(c => (
+            {FILTER_CATEGORIES.map(c => (
               <button
                 key={c}
                 onClick={() => { setShowFavorites(false); setFilterCategory(c); }}
