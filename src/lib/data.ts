@@ -68,6 +68,37 @@ const K = {
 const EMPTY_PROMOTIONS: PromotionsCache = { lastUpdated: null, migros: [], coop: [], denner: [], aldi: [], lidl: [], volg: [] };
 const EMPTY_WEATHER:    WeatherCache    = { lastUpdated: null, location: '', days: [] };
 
+// ─── Gruppen-Daten vollständig löschen (Konto-Löschung / 30-Tage-Cleanup) ──────
+
+/** Löscht ALLE gruppen-bezogenen Daten (Rezepte, Settings, Wochenpläne, Listen, Pantry, Favoriten). */
+export async function purgeGroupData(groupId: string): Promise<void> {
+  if (!USE_REDIS) {
+    const files = [
+      'group-recipes.json', 'group-settings.json', 'group-constraints.json',
+      'group-weekplans.json', 'group-shopping-groups.json', 'group-shopping-state.json',
+      'group-pantry.json', 'favorites.json',
+    ];
+    for (const f of files) {
+      const all = readJson<Record<string, unknown>>(f, {});
+      if (groupId in all) {
+        delete all[groupId];
+        writeJson(f, all);
+      }
+    }
+    return;
+  }
+  const redis = getRedis();
+  // Alle Keys mit Prefix mz:group:<id>: per SCAN finden und löschen
+  let cursor = '0';
+  const toDelete: string[] = [];
+  do {
+    const [next, keys] = await redis.scan(cursor, { match: `mz:group:${groupId}:*`, count: 100 });
+    toDelete.push(...keys);
+    cursor = String(next);
+  } while (cursor !== '0');
+  if (toDelete.length) await redis.del(...toDelete);
+}
+
 // ─── Templates (global Recipes — 74) ──────────────────────────────────────────
 
 export async function getTemplateRecipes(): Promise<Recipe[]> {

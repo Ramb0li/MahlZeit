@@ -11,6 +11,8 @@ import { ShoppingListView } from '@/components/shopping/ShoppingListView';
 import { PantryView }      from '@/components/pantry/PantryView';
 import { SettingsView } from '@/components/settings/SettingsView';
 import { OnboardingWizard } from '@/components/groups/OnboardingWizard';
+import { UpgradeBanner } from '@/components/UpgradeBanner';
+import { UpgradeModal } from '@/components/UpgradeModal';
 import { Wordmark } from '@/components/ui/Wordmark';
 import { toDataTheme } from '@/lib/themes';
 import { calculatePortions } from '@/lib/utils';
@@ -38,6 +40,8 @@ interface AppShellProps {
   isAdmin?: boolean;
   group?: Group | null;
   groupRole?: GroupRole;
+  /** Freemium-Sperre: Trial abgelaufen oder Gruppe verwaist */
+  locked?: boolean;
 }
 
 export function AppShell({
@@ -50,6 +54,7 @@ export function AppShell({
   isAdmin = false,
   group: initialGroup = null,
   groupRole = 'member',
+  locked = false,
 }: AppShellProps) {
   const t      = useTranslations('AppShell');
   const router = useRouter();
@@ -66,6 +71,7 @@ export function AppShell({
   const [constraints, setConstraints] = useState<DayConstraint[]>(initialConstraints);
   const [group, setGroup]             = useState<Group | null>(initialGroup);
 
+  const [upgradeOpen,       setUpgradeOpen]       = useState(false);
   const [detailRecipe,      setDetailRecipe]      = useState<Recipe | null>(null);
   const [cookingRecipe,     setCookingRecipe]      = useState<Recipe | null>(null);
   const [pendingEditRecipe, setPendingEditRecipe]  = useState<Recipe | null>(null);
@@ -131,6 +137,8 @@ export function AppShell({
         </div>
       </header>
 
+      {locked && <UpgradeBanner onClick={() => setUpgradeOpen(true)} />}
+
       <main className="mz-main">
         {group?.nameSet && (
           <div className="mz-group-banner">
@@ -155,6 +163,8 @@ export function AppShell({
             onViewRecipe={viewRecipeOnly}
             onOpenMeal={handleOpenMeal}
             plannerRefreshKey={plannerRefreshKey}
+            locked={locked}
+            onLockedAction={() => setUpgradeOpen(true)}
           />
         )}
         {activeTab === 'recipes' && (
@@ -166,6 +176,8 @@ export function AppShell({
             onViewRecipe={viewRecipeOnly}
             requestEditRecipe={pendingEditRecipe}
             onEditRequestConsumed={() => setPendingEditRecipe(null)}
+            locked={locked}
+            onLockedAction={() => setUpgradeOpen(true)}
           />
         )}
         {activeTab === 'shopping' && (
@@ -206,6 +218,8 @@ export function AppShell({
           {t('logout')}
         </button>
       </nav>
+
+      {upgradeOpen && <UpgradeModal onClose={() => setUpgradeOpen(false)} />}
 
       {showFullOnboarding && group && (
         <OnboardingWizard

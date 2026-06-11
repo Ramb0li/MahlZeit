@@ -26,9 +26,11 @@ interface RecipePickerModalProps {
   dietPreference?: DietType | 'alle';
   onSelect: (recipeId: string) => void;
   onClose: () => void;
+  /** Freemium-Sperre: Template-Rezepte nicht wählbar, nur eigene (rec-*) */
+  locked?: boolean;
 }
 
-export function RecipePickerModal({ recipes, mealType, dietPreference, onSelect, onClose }: RecipePickerModalProps) {
+export function RecipePickerModal({ recipes, mealType, dietPreference, onSelect, onClose, locked = false }: RecipePickerModalProps) {
   const [search, setSearch] = useState('');
   const [filterCategory, setFilterCategory] = useState<FilterCategory | 'Alle'>('Alle');
   const [filterTime, setFilterTime] = useState<'Alle' | 'Schnell (<20min)' | 'Einfach (<30min)'>('Alle');
@@ -141,14 +143,17 @@ export function RecipePickerModal({ recipes, mealType, dietPreference, onSelect,
               : timeTags.includes('Einfach (<30min)')
                 ? { backgroundColor: '#fff3e0', color: '#e65100' }
                 : { backgroundColor: '#fce4ec', color: '#c62828' };
+            const isLockedRecipe = locked && !recipe.id.startsWith('rec-');
             return (
               <button
                 key={recipe.id}
-                onClick={() => onSelect(recipe.id)}
+                onClick={() => { if (!isLockedRecipe) onSelect(recipe.id); }}
+                disabled={isLockedRecipe}
+                title={isLockedRecipe ? 'Erfordert ein aktives Abo' : undefined}
                 className="flex items-center gap-3 p-3 rounded-xl text-left transition-all"
-                style={{ border: '1px solid #e0d8ce', backgroundColor: '#fff9f3' }}
-                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.borderColor = '#b5614a'; (e.currentTarget as HTMLElement).style.backgroundColor = '#f2e5e0'; }}
-                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.borderColor = '#e0d8ce'; (e.currentTarget as HTMLElement).style.backgroundColor = '#fff9f3'; }}
+                style={{ border: '1px solid #e0d8ce', backgroundColor: '#fff9f3', opacity: isLockedRecipe ? 0.4 : 1, cursor: isLockedRecipe ? 'not-allowed' : 'pointer' }}
+                onMouseEnter={e => { if (isLockedRecipe) return; (e.currentTarget as HTMLElement).style.borderColor = '#b5614a'; (e.currentTarget as HTMLElement).style.backgroundColor = '#f2e5e0'; }}
+                onMouseLeave={e => { if (isLockedRecipe) return; (e.currentTarget as HTMLElement).style.borderColor = '#e0d8ce'; (e.currentTarget as HTMLElement).style.backgroundColor = '#fff9f3'; }}
               >
                 <div className="flex-1 min-w-0">
                   <p className="text-sm font-medium truncate" style={{ color: '#2c2420' }}>{recipe.name}</p>

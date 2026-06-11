@@ -142,6 +142,13 @@ export function SettingsView({
   const [promoError, setPromoError]           = useState<string | null>(null);
   const [promoLastUpdated, setPromoLastUpdated] = useState<string | null>(null);
 
+  // Konto löschen
+  const [deleteOpen, setDeleteOpen]       = useState(false);
+  const [deletePw, setDeletePw]           = useState('');
+  const [deletePw2, setDeletePw2]         = useState('');
+  const [deleteLoading, setDeleteLoading] = useState(false);
+  const [deleteError, setDeleteError]     = useState<string | null>(null);
+
   // Weather autocomplete
   interface GeoResult { name: string; admin1?: string; country?: string; latitude: number; longitude: number; }
   const [locationSuggestions, setLocationSuggestions] = useState<GeoResult[]>([]);
@@ -382,6 +389,29 @@ export function SettingsView({
     }
   };
 
+  const handleDeleteAccount = async () => {
+    if (!deletePw || deletePw !== deletePw2) {
+      setDeleteError('Die Passwörter stimmen nicht überein.');
+      return;
+    }
+    setDeleteLoading(true);
+    setDeleteError(null);
+    try {
+      const res = await fetch('/api/auth/delete-account', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ password: deletePw }),
+      });
+      const data = await res.json();
+      if (!res.ok) { setDeleteError(data.error ?? 'Löschung fehlgeschlagen.'); return; }
+      window.location.href = '/';
+    } catch {
+      setDeleteError('Verbindungsfehler. Bitte erneut versuchen.');
+    } finally {
+      setDeleteLoading(false);
+    }
+  };
+
   const handleSave = async () => {
     // Ausstehenden Auto-Save-Timer canceln, um Doppel-Request zu vermeiden
     if (autoSaveTimerRef.current) { clearTimeout(autoSaveTimerRef.current); autoSaveTimerRef.current = null; }
@@ -436,9 +466,9 @@ export function SettingsView({
           <>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-3">
               {([
-                { plan: 'abo',      name: 'Monatsabo',  price: 'CHF 3',  per: '/ Monat',       desc: 'Monatlich kündbar' },
-                { plan: 'yearly',   name: 'Jahresabo',  price: 'CHF 30', per: '/ Jahr',         desc: '2 Monate gratis' },
-                { plan: 'lifetime', name: 'Lifetime',   price: 'CHF 99', per: 'einmalig',       desc: 'Für immer', featured: true },
+                { plan: 'abo',      name: 'Monatsabo',  price: 'CHF 4',   per: '/ Monat',       desc: 'Monatlich kündbar' },
+                { plan: 'yearly',   name: 'Jahresabo',  price: 'CHF 40',  per: '/ Jahr',         desc: '2 Monate gratis' },
+                { plan: 'lifetime', name: 'Lifetime',   price: 'CHF 129', per: 'einmalig',       desc: 'Für immer', featured: true },
               ] as const).map(({ plan, name, price, per, desc, ...rest }) => { const featured = 'featured' in rest && rest.featured; return (
                 <button
                   key={plan}
@@ -1153,6 +1183,80 @@ export function SettingsView({
           )}
         </div>
       </Section>
+
+      {/* ── Konto löschen (Danger Zone) ─────────────────────────────────── */}
+      <div style={{ ...sectionCard, padding: '20px 24px', borderColor: '#e8b4ab' }}>
+        <h2 style={{ ...h2Style, color: '#c62828' }}>Konto löschen</h2>
+        <p className="text-xs mt-1 mb-3" style={{ color: '#9c8c84' }}>
+          {isOwner
+            ? 'Dein Konto wird endgültig gelöscht. Deine Gruppe mit allen Rezepten und Plänen bleibt 30 Tage erhalten — Mitglieder werden informiert und können die Gruppe mit einem Abo übernehmen. Danach wird alles gelöscht.'
+            : 'Dein Konto wird endgültig gelöscht. Die Gruppe und ihre Rezepte bleiben für die übrigen Mitglieder erhalten.'}
+        </p>
+        <button
+          onClick={() => { setDeleteOpen(true); setDeletePw(''); setDeletePw2(''); setDeleteError(null); }}
+          className="flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold transition-all"
+          style={{ border: '1.5px solid #c62828', color: '#c62828', backgroundColor: 'transparent' }}
+        >
+          <Trash2 size={13} />
+          Konto löschen…
+        </button>
+      </div>
+
+      {/* Bestätigungsmodal Konto löschen */}
+      {deleteOpen && (
+        <div className="mz-modal-scrim" onClick={() => setDeleteOpen(false)}>
+          <div
+            onClick={(e) => e.stopPropagation()}
+            style={{
+              background: 'var(--card)', border: '1px solid var(--border)',
+              borderRadius: 'var(--r-card)', padding: '24px 24px 20px',
+              maxWidth: 420, width: '100%', boxShadow: 'var(--shadow-lg)',
+            }}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 12 }}>
+              <span style={{ fontSize: 22, lineHeight: 1 }}>⚠️</span>
+              <h3 style={{ fontSize: 17, fontWeight: 700, color: 'var(--ink)', margin: 0 }}>
+                Konto wirklich löschen?
+              </h3>
+            </div>
+            <p style={{ fontSize: 14, lineHeight: 1.55, color: 'var(--muted)', margin: '0 0 16px' }}>
+              Dies kann nicht rückgängig gemacht werden. Gib zur Bestätigung zweimal dein Passwort ein.
+            </p>
+            <div className="space-y-2" style={{ marginBottom: 16 }}>
+              <input
+                type="password"
+                placeholder="Passwort"
+                value={deletePw}
+                onChange={(e) => setDeletePw(e.target.value)}
+                style={{ ...inputStyle, width: '100%' }}
+              />
+              <input
+                type="password"
+                placeholder="Passwort wiederholen"
+                value={deletePw2}
+                onChange={(e) => setDeletePw2(e.target.value)}
+                style={{ ...inputStyle, width: '100%' }}
+              />
+            </div>
+            {deleteError && (
+              <p style={{ fontSize: 12, color: '#c62828', margin: '0 0 12px' }}>{deleteError}</p>
+            )}
+            <div style={{ display: 'flex', justifyContent: 'flex-end', gap: 10 }}>
+              <button className="mz-btn-soft" onClick={() => setDeleteOpen(false)}>
+                Abbrechen
+              </button>
+              <button
+                className="mz-btn-primary"
+                onClick={handleDeleteAccount}
+                disabled={deleteLoading || !deletePw || deletePw !== deletePw2}
+                style={{ background: '#c62828', opacity: deleteLoading || !deletePw || deletePw !== deletePw2 ? 0.5 : 1 }}
+              >
+                {deleteLoading ? 'Wird gelöscht…' : 'Endgültig löschen'}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Save button */}
       <div className="flex justify-end pb-8">

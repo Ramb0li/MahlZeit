@@ -48,13 +48,8 @@ export async function POST(request: Request) {
       );
     }
 
-    // Check trial expiry
-    if (user.plan === 'trial' && user.accessUntil && new Date(user.accessUntil) < new Date()) {
-      return NextResponse.json(
-        { error: 'Deine 7-Tage-Testphase ist abgelaufen.', redirect: '/auth?plan=lifetime' },
-        { status: 403 }
-      );
-    }
+    // Abgelaufene Trials dürfen sich weiterhin einloggen — die App läuft dann
+    // im gesperrten Freemium-Modus (siehe getAccessState in lib/users.ts).
 
     // Auto-Migration: User ohne Gruppe bekommen beim Login automatisch eine Solo-Gruppe.
     // (Für Bestands-User aus der Pre-Groups-Era.)

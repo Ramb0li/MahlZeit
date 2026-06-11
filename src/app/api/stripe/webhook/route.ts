@@ -3,7 +3,7 @@ export const dynamic = 'force-dynamic';
 
 import { NextResponse }       from 'next/server';
 import Stripe                 from 'stripe';
-import { getUserByEmail, updateUser } from '@/lib/users';
+import { getUserByEmail, updateUser, reviveOrphanedGroup } from '@/lib/users';
 import type { PlanType }      from '@/lib/users';
 
 function stripe() {
@@ -25,6 +25,8 @@ async function applyPlanUpgrade(email: string, plan: PlanType, customerId: strin
     delete user.accessUntil;
   }
   await updateUser(user);
+  // Verwaiste Gruppe? Abonnierendes Mitglied wird neuer Owner
+  await reviveOrphanedGroup(user);
 }
 
 async function applySubscriptionCancellation(customerId: string) {
@@ -32,8 +34,11 @@ async function applySubscriptionCancellation(customerId: string) {
   const users = await getAllUsers();
   const user = users.find(u => u.stripeCustomerId === customerId);
   if (!user) return;
-  user.plan   = 'trial';
-  user.status = 'inactive';
+  // Gekündigte User bleiben aktiv, fallen aber in den gesperrten Freemium-Modus
+  // (Trial mit sofort abgelaufenem accessUntil) — Login bleibt möglich.
+  user.plan        = 'trial';
+  user.status      = 'active';
+  user.accessUntil = new Date().toISOString();
   delete user.stripeSubscriptionId;
   await updateUser(user);
 }

@@ -5,7 +5,7 @@ export const dynamic = 'force-dynamic';
 import { NextResponse }                              from 'next/server';
 import { randomBytes }                               from 'crypto';
 import Stripe                                        from 'stripe';
-import { getUserByEmail, updateUser }                from '@/lib/users';
+import { getUserByEmail, updateUser, reviveOrphanedGroup } from '@/lib/users';
 import type { PlanType }                             from '@/lib/users';
 import { ADMIN_EMAIL, signToken, sessionCookieHeader } from '@/lib/auth';
 import { sendAccountSetupEmail }                     from '@/lib/email';
@@ -93,6 +93,12 @@ export async function GET(request: Request) {
   }
 
   await updateUser(user);
+
+  // Verwaiste Gruppe? Abonnierendes Mitglied wird neuer Owner
+  if (user.status === 'active') {
+    const revived = await reviveOrphanedGroup(user);
+    user.groupRole = revived.groupRole;
+  }
 
   // ── New account: send setup email ─────────────────────────────────────────
   if (user.status === 'pending') {

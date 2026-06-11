@@ -19,6 +19,11 @@ export interface Group {
   nameSet:    boolean;      // false bis User beim First-Login Namen setzt
   ownerEmail: string;       // Owner = zahlender User
   createdAt:  string;       // ISO date
+  // Verwaist: Owner hat sein Konto gelöscht. Daten bleiben 30 Tage erhalten;
+  // schliesst ein Mitglied ein Abo ab, wird es neuer Owner und die Felder werden entfernt.
+  orphaned?:         boolean;
+  orphanedAt?:       string;  // ISO date — Basis für die 30-Tage-Löschfrist
+  formerOwnerEmail?: string;
 }
 
 const USE_REDIS = !!process.env.UPSTASH_REDIS_REST_URL;

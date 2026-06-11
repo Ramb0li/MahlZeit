@@ -104,7 +104,7 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
   const [activeTab, setActiveTab] = useState<AdminTab>('users');
 
   // ── Nutzer-Rezepte-State ─────────────────────────────────────────────────────
-  type UserRecipeRow = { groupId: string; groupName: string; recipe: Recipe };
+  type UserRecipeRow = { groupId: string; groupName: string; orphaned?: boolean; orphanedAt?: string; recipe: Recipe };
   const [userRecipes,        setUserRecipes]        = useState<UserRecipeRow[] | null>(null);
   const [userRecipesLoading, setUserRecipesLoading] = useState(false);
   const [editingUserRecipe,  setEditingUserRecipe]  = useState<UserRecipeRow | null>(null);
@@ -1130,6 +1130,57 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
             {!userRecipesLoading && userRecipes !== null && userRecipes.length === 0 && (
               <p style={{ color: 'var(--muted)', fontSize: 13 }}>Noch keine Nutzer-Rezepte vorhanden.</p>
             )}
+
+            {/* Verwaiste Gruppen — Owner hat Konto gelöscht, 30-Tage-Frist läuft */}
+            {!userRecipesLoading && userRecipes && (() => {
+              const orphanedGroups = Array.from(
+                new Map(
+                  userRecipes
+                    .filter(r => r.orphaned)
+                    .map(r => [r.groupId, { groupId: r.groupId, groupName: r.groupName, orphanedAt: r.orphanedAt }])
+                ).values()
+              );
+              if (orphanedGroups.length === 0) return null;
+              return (
+                <div style={{ marginBottom: 16, padding: '14px 16px', borderRadius: 'var(--r-card)', border: '1.5px solid #e8b4ab', background: '#fdf3f1' }}>
+                  <p style={{ fontWeight: 700, fontSize: 13, color: '#c62828', margin: '0 0 8px' }}>
+                    Verwaiste Gruppen ({orphanedGroups.length})
+                  </p>
+                  <p style={{ fontSize: 12, color: 'var(--muted)', margin: '0 0 10px' }}>
+                    Owner hat das Konto gelöscht. Rezepte vorher übernehmen — nach 30 Tagen wird die Gruppe automatisch gelöscht.
+                  </p>
+                  {orphanedGroups.map(({ groupId, groupName, orphanedAt }) => {
+                    const days = orphanedAt ? Math.floor((Date.now() - new Date(orphanedAt).getTime()) / 86400000) : 0;
+                    return (
+                      <div key={groupId} style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '6px 0', fontSize: 13 }}>
+                        <span style={{ fontWeight: 600, color: 'var(--ink)' }}>{groupName}</span>
+                        <span style={{ fontSize: 11, color: '#c62828', fontWeight: 600 }}>
+                          verwaist seit {days} Tag{days !== 1 ? 'en' : ''} · Löschung in {Math.max(0, 30 - days)} Tagen
+                        </span>
+                        <button
+                          className="mz-btn-soft"
+                          style={{ fontSize: 11, padding: '3px 10px', color: '#c62828', marginLeft: 'auto' }}
+                          onClick={async () => {
+                            if (!window.confirm(`Gruppe "${groupName}" mit ALLEN Daten und Mitglieder-Konten endgültig löschen?`)) return;
+                            const res = await fetch('/api/admin/groups', { method: 'DELETE', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ groupId }) });
+                            if (res.ok) {
+                              setUserRecipes(prev => prev ? prev.filter(r => r.groupId !== groupId) : prev);
+                              setRecipeNotice({ type: 'ok', text: `Gruppe "${groupName}" gelöscht.` });
+                              setTimeout(() => setRecipeNotice(null), 3000);
+                            } else {
+                              const data = await res.json() as { error?: string };
+                              setRecipeNotice({ type: 'err', text: data.error ?? 'Fehler beim Löschen.' });
+                            }
+                          }}
+                        >
+                          Gruppe endgültig löschen
+                        </button>
+                      </div>
+                    );
+                  })}
+                </div>
+              );
+            })()}
             {!userRecipesLoading && userRecipes && userRecipes.length > 0 && (
               <div style={{ borderRadius: 'var(--r-card)', overflow: 'auto', border: '1px solid var(--border)', background: 'var(--card)', boxShadow: 'var(--shadow-sm)' }}>
                 <table style={{ width: '100%', fontSize: 13, borderCollapse: 'collapse' }}>
@@ -1141,9 +1192,16 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                     </tr>
                   </thead>
                   <tbody>
-                    {userRecipes.map(({ groupId, groupName, recipe }) => (
+                    {userRecipes.map(({ groupId, groupName, orphaned, recipe }) => (
                       <tr key={`${groupId}-${recipe.id}`} style={{ borderBottom: '1px solid var(--border)' }}>
-                        <td style={{ padding: '10px 16px', color: 'var(--muted)', fontSize: 12 }}>{groupName}</td>
+                        <td style={{ padding: '10px 16px', color: 'var(--muted)', fontSize: 12 }}>
+                          {groupName}
+                          {orphaned && (
+                            <span style={{ marginLeft: 6, background: '#fdecea', color: '#c62828', padding: '1px 7px', borderRadius: 999, fontSize: 10, fontWeight: 700 }}>
+                              Verwaist
+                            </span>
+                          )}
+                        </td>
                         <td style={{ padding: '10px 16px', fontWeight: 600, color: 'var(--ink)' }}>{recipe.name}</td>
                         <td style={{ padding: '10px 16px' }}>
                           {recipe.category && (

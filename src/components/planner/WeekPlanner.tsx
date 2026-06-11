@@ -16,6 +16,10 @@ interface WeekPlannerProps {
   onOpenMeal?: (ctx: { recipe: Recipe; weekId: string; dayIndex: number; mealType: 'breakfast' | 'lunch' | 'dinner'; slot: MealSlot }) => void;
   /** Inkrementiert von aussen (AppShell) nach einem Slot-Update → erzwingt Neuladen des Plans */
   plannerRefreshKey?: number;
+  /** Freemium-Sperre: Menüvorschlag + Template-Rezepte gesperrt */
+  locked?: boolean;
+  /** Öffnet das Upgrade-Modal (AppShell) */
+  onLockedAction?: () => void;
 }
 
 /** True, wenn irgendein Tages-Slot der Woche ein Rezept (oder Custom-Eintrag) enthält. */
@@ -28,7 +32,7 @@ function planHasRecipes(plan: WeekPlan | null): boolean {
   );
 }
 
-export function WeekPlanner({ recipes, settings, constraints, onViewRecipe, onOpenMeal, plannerRefreshKey }: WeekPlannerProps) {
+export function WeekPlanner({ recipes, settings, constraints, onViewRecipe, onOpenMeal, plannerRefreshKey, locked = false, onLockedAction }: WeekPlannerProps) {
   const [currentDate, setCurrentDate] = useState(() =>
     getInitialDisplayWeek(settings.weekSwitchDay ?? 0)
   );
@@ -98,6 +102,7 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe, onOp
   };
 
   const handleSuggestWeek = () => {
+    if (locked) { onLockedAction?.(); return; }
     // Bereits gefüllte Woche nicht unbewusst überschreiben
     if (planHasRecipes(weekPlan)) {
       setConfirmSuggest(true);
@@ -537,7 +542,8 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe, onOp
             onClick={handleSuggestWeek}
             disabled={isSuggesting}
             className="mz-btn-primary"
-            style={{ paddingLeft: 5, opacity: isSuggesting ? 0.5 : 1 }}
+            title={locked ? 'Erfordert ein aktives Abo' : undefined}
+            style={{ paddingLeft: 5, opacity: isSuggesting ? 0.5 : locked ? 0.45 : 1, filter: locked ? 'grayscale(0.7)' : undefined }}
           >
             <span
               role="button"
@@ -602,6 +608,8 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe, onOp
                   onSaveNote={(note) => handleSaveNote(dayIndex, note)}
                   onSaveSideIngredient={(mealType, ing, slot) => handleSaveSideIngredient(dayIndex, mealType, ing, slot)}
                   onRemoveSideIngredient={(mealType, idx, slot) => handleRemoveSideIngredient(dayIndex, mealType, idx, slot)}
+                  locked={locked}
+                  onLockedAction={onLockedAction}
                 />
               );
             })}

@@ -160,7 +160,14 @@ export async function POST(request: Request) {
     }, { status: 201 });
 
   } catch (err) {
-    console.error('[register]', err);
+    if (err instanceof Stripe.errors.StripeError) {
+      console.error('[register] Stripe-Fehler:', { type: err.type, code: err.code, message: err.message });
+      return NextResponse.json(
+        { error: 'Zahlungsanbieter momentan nicht erreichbar. Bitte versuche es später erneut.' },
+        { status: 502 }
+      );
+    }
+    console.error('[register]', err instanceof Error ? { message: err.message, stack: err.stack } : err);
     return NextResponse.json({ error: 'Registrierung fehlgeschlagen.' }, { status: 500 });
   }
 }

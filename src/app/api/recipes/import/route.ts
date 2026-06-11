@@ -211,6 +211,12 @@ export async function POST(request: Request) {
       session.status === 'active' &&
       (session.plan === 'lifetime' || session.plan === 'abo' || session.plan === 'beta');
 
+    const { getAccessState } = await import('@/lib/users');
+    const access = await getAccessState(session.email);
+    if (access.locked) {
+      return NextResponse.json({ error: 'Der Rezept-Import erfordert ein aktives Abo.' }, { status: 403 });
+    }
+
     // Quellenangabe: "Import durch <Name>" (Vor-/Nachname, sonst E-Mail-Präfix)
     const user = await getUserByEmail(session.email);
     const displayName = [user?.firstName, user?.lastName].filter(Boolean).join(' ').trim()

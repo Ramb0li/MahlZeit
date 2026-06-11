@@ -61,9 +61,13 @@ interface RecipeListProps {
   onViewRecipe?: (recipe: Recipe) => void;
   requestEditRecipe?: Recipe | null;
   onEditRequestConsumed?: () => void;
+  /** Freemium-Sperre: Template-Rezepte ausgegraut, KI-Import gesperrt */
+  locked?: boolean;
+  /** Öffnet das Upgrade-Modal (AppShell) */
+  onLockedAction?: () => void;
 }
 
-export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremium = false, onRecipesChange, onViewRecipe, requestEditRecipe, onEditRequestConsumed }: RecipeListProps) {
+export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremium = false, onRecipesChange, onViewRecipe, requestEditRecipe, onEditRequestConsumed, locked = false, onLockedAction }: RecipeListProps) {
   const [recipes, setRecipes] = useState<Recipe[]>(initialRecipes);
 
   const updateRecipes = (updater: (prev: Recipe[]) => Recipe[]) => {
@@ -227,7 +231,12 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
           <h1 className="mz-view-title" style={{ marginBottom: 0 }}>Rezepte</h1>
         </div>
         <div className="flex items-center gap-2">
-          <button onClick={() => setImportOpen(true)} className="mz-btn-primary" title="Rezept importieren (URL oder Screenshot)">
+          <button
+            onClick={() => { if (locked) { onLockedAction?.(); return; } setImportOpen(true); }}
+            className="mz-btn-primary"
+            title={locked ? 'Erfordert ein aktives Abo' : 'Rezept importieren (URL oder Screenshot)'}
+            style={locked ? { opacity: 0.45, filter: 'grayscale(0.7)' } : undefined}
+          >
             <Sparkles size={15} />
             <span>Importieren</span>
           </button>
@@ -350,10 +359,12 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
               key={recipe.id}
               recipe={recipe}
               favorited={favorites.has(recipe.id)}
+              locked={locked && !recipe.id.startsWith('rec-')}
               onView={() => onViewRecipe?.(recipe)}
               onEdit={() => setEditRecipe(recipe)}
               onArchive={() => setArchiveId(recipe.id)}
               onToggleFavorite={(e) => toggleFavorite(recipe.id, e)}
+              onLockedAction={onLockedAction}
             />
           ))}
         </div>
@@ -447,19 +458,27 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
 interface RecipeCardProps {
   recipe: Recipe;
   favorited: boolean;
+  /** Freemium-Sperre: Karte ausgegraut, Klick öffnet Upgrade-Modal */
+  locked?: boolean;
   onView: () => void;
   onEdit: () => void;
   onArchive: () => void;
   onToggleFavorite: (e: React.MouseEvent) => void;
+  onLockedAction?: () => void;
 }
 
-function RecipeCard({ recipe, favorited, onView, onEdit, onArchive, onToggleFavorite }: RecipeCardProps) {
+function RecipeCard({ recipe, favorited, locked = false, onView, onEdit, onArchive, onToggleFavorite, onLockedAction }: RecipeCardProps) {
   const keyTags = (recipe.tags ?? []).filter(t =>
     ['Vegetarisch', 'Vegan', 'Mealprep-geeignet', 'Kinderfreundlich'].includes(t)
   ).slice(0, 2);
 
   return (
-    <button className="mz-rcard" onClick={onView} style={{ textAlign: 'left' }}>
+    <button
+      className="mz-rcard"
+      onClick={locked ? onLockedAction : onView}
+      title={locked ? 'Erfordert ein aktives Abo' : undefined}
+      style={{ textAlign: 'left', opacity: locked ? 0.45 : 1, filter: locked ? 'grayscale(0.6)' : undefined }}
+    >
       <div className="mz-rcard-img">
         {recipe.imageUrl ? (
           // eslint-disable-next-line @next/next/no-img-element
@@ -473,6 +492,7 @@ function RecipeCard({ recipe, favorited, onView, onEdit, onArchive, onToggleFavo
           </span>
         )}
         {/* Favorite — top-left */}
+        {!locked && (
         <button
           onClick={onToggleFavorite}
           style={{
@@ -489,8 +509,10 @@ function RecipeCard({ recipe, favorited, onView, onEdit, onArchive, onToggleFavo
         >
           <Heart size={13} fill={favorited ? 'currentColor' : 'none'} />
         </button>
+        )}
 
         {/* Edit — top-right, second from corner */}
+        {!locked && (
         <button
           onClick={(e) => { e.stopPropagation(); onEdit(); }}
           style={{
@@ -507,8 +529,10 @@ function RecipeCard({ recipe, favorited, onView, onEdit, onArchive, onToggleFavo
         >
           <Pencil size={11} />
         </button>
+        )}
 
         {/* Archive — top-right corner */}
+        {!locked && (
         <button
           onClick={(e) => { e.stopPropagation(); onArchive(); }}
           style={{
@@ -525,6 +549,7 @@ function RecipeCard({ recipe, favorited, onView, onEdit, onArchive, onToggleFavo
         >
           <Archive size={11} />
         </button>
+        )}
       </div>
       <div className="mz-rcard-body">
         <span className="mz-rcard-cat">{recipe.category}</span>

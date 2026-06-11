@@ -14,6 +14,12 @@ export async function POST(request: Request) {
     if (!session.groupId) return NextResponse.json({ error: 'Keine Gruppe zugeordnet' }, { status: 403 });
     const groupId = session.groupId;
 
+    const { getAccessState } = await import('@/lib/users');
+    const access = await getAccessState(session.email);
+    if (access.locked) {
+      return NextResponse.json({ error: 'Diese Funktion erfordert ein aktives Abo.' }, { status: 403 });
+    }
+
     const { weekId, dayIndex, mealType, favoritesOnly } = await request.json();
 
     const { getPantry } = await import('@/lib/data');

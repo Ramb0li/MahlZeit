@@ -333,6 +333,79 @@ export async function sendAccountSetupEmail(
   }
 }
 
+// ─── Gruppe verwaist (Owner hat Konto gelöscht) ─────────────────────────────
+
+function orphanedHtml(firstName: string, groupName: string, appUrl: string): string {
+  return mzEmailShell(`
+    <p style="font-size:16px;font-weight:600;color:#271f1a;margin:0 0 8px;">Hallo ${escapeHtml(firstName)},</p>
+    <p style="font-size:15px;line-height:1.65;color:#5c5048;margin:0 0 20px;">
+      der Besitzer deiner Gruppe <strong style="color:#271f1a;">${escapeHtml(groupName)}</strong> hat
+      sein MahlZeit-Konto gelöscht. Deine Rezepte und Pläne bleiben erhalten, die Premium-Funktionen
+      (Menüvorschlag, Rezeptbibliothek, KI-Import) sind jedoch gesperrt.
+    </p>
+    <p style="font-size:15px;line-height:1.65;color:#5c5048;margin:0 0 28px;">
+      Schliesst du ein Abo ab, wirst du neuer Besitzer der Gruppe und alles läuft weiter wie bisher.
+      <strong style="color:#271f1a;">Ohne Abo wird die Gruppe mit allen Daten in 30 Tagen gelöscht.</strong>
+    </p>
+    <div style="text-align:center;margin:0 0 28px;">
+      <a href="${appUrl}/app?tab=settings" style="display:inline-block;background:#d9543b;color:#fff;padding:13px 32px;border-radius:999px;text-decoration:none;font-weight:700;font-size:15px;">
+        Jetzt Abo abschliessen &rarr;
+      </a>
+    </div>
+    <p style="font-size:13px;color:#9a8c80;line-height:1.6;margin:0;">
+      Pläne ab CHF 4.– pro Monat — jederzeit kündbar.
+    </p>
+  `);
+}
+
+function orphanedText(firstName: string, groupName: string, appUrl: string): string {
+  return `Hallo ${firstName},
+
+der Besitzer deiner Gruppe "${groupName}" hat sein MahlZeit-Konto gelöscht.
+
+Deine Rezepte und Pläne bleiben erhalten, die Premium-Funktionen (Menüvorschlag,
+Rezeptbibliothek, KI-Import) sind jedoch gesperrt.
+
+Schliesst du ein Abo ab, wirst du neuer Besitzer der Gruppe und alles läuft
+weiter wie bisher. Ohne Abo wird die Gruppe mit allen Daten in 30 Tagen gelöscht.
+
+Jetzt Abo abschliessen (ab CHF 4.–/Monat, jederzeit kündbar):
+${appUrl}/app?tab=settings
+
+Herzliche Grüsse
+Das MahlZeit-Team`;
+}
+
+export async function sendGroupOrphanedEmail(
+  firstName: string,
+  toEmail:   string,
+  groupName: string,
+): Promise<void> {
+  const appUrl = getAppUrl();
+  const apiKey = process.env.RESEND_API_KEY;
+
+  if (!apiKey) {
+    console.log(`\n[email] RESEND_API_KEY nicht gesetzt — Gruppe-verwaist-Info an: ${toEmail} (Gruppe: ${groupName})\n`);
+    return;
+  }
+
+  const { Resend } = await import('resend');
+  const resend     = new Resend(apiKey);
+
+  const { error } = await resend.emails.send({
+    from:    getFromEmail(),
+    to:      toEmail,
+    subject: `Wichtig: Deine MahlZeit-Gruppe "${groupName}" braucht ein Abo`,
+    html:    orphanedHtml(firstName, groupName, appUrl),
+    text:    orphanedText(firstName, groupName, appUrl),
+  });
+
+  if (error) {
+    console.error('[email] Gruppe-verwaist-Versand fehlgeschlagen:', error);
+    throw new Error('E-Mail-Versand fehlgeschlagen');
+  }
+}
+
 // ─── Confirmation ───────────────────────────────────────────────────────────
 
 export async function sendConfirmationEmail(user: AppUser, token: string): Promise<void> {

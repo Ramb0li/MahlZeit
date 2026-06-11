@@ -27,12 +27,15 @@ interface DayColumnProps {
   onSaveNote?: (note: string) => void;
   onSaveSideIngredient?: (mealType: 'breakfast' | 'lunch' | 'dinner', ing: SideIngredient, slot: MealSlot) => void;
   onRemoveSideIngredient?: (mealType: 'breakfast' | 'lunch' | 'dinner', idx: number, slot: MealSlot) => void;
+  locked?: boolean;
+  onLockedAction?: () => void;
 }
 
 export function DayColumn({
   date, dayIndex, dayPlan, recipes, constraints, disabledConstraintIds,
   weather, settings, weekId, onUpdate, onToggleConstraint, onViewRecipe, onOpenMeal,
   onSaveNote, onSaveSideIngredient, onRemoveSideIngredient,
+  locked = false, onLockedAction,
 }: DayColumnProps) {
   const [pickerOpen, setPickerOpen]         = useState<'breakfast' | 'lunch' | 'dinner' | null>(null);
   const [pickerOpenSide, setPickerOpenSide] = useState<'breakfast' | 'lunch' | 'dinner' | null>(null);
@@ -78,6 +81,7 @@ export function DayColumn({
   const defaultPortions = Math.max(1, Math.round(calculatePortions(settings.household).totalPortions));
 
   const handleSuggest = async (mealType: 'lunch' | 'dinner') => {
+    if (locked) { onLockedAction?.(); return; }
     setSuggesting(mealType);
     try {
       const res = await fetch('/api/weekplan/suggest', {
@@ -287,6 +291,7 @@ export function DayColumn({
           dietPreference={settings.dietPreference}
           onSelect={(recipeId) => handlePickerSelect(pickerOpen, recipeId)}
           onClose={() => setPickerOpen(null)}
+          locked={locked}
         />
       )}
 
@@ -297,6 +302,7 @@ export function DayColumn({
           dietPreference={settings.dietPreference}
           onSelect={(recipeId) => handlePickerSelectSide(pickerOpenSide, recipeId)}
           onClose={() => setPickerOpenSide(null)}
+          locked={locked}
         />
       )}
     </div>

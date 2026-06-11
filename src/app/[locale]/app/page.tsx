@@ -5,7 +5,7 @@ import { setRequestLocale } from 'next-intl/server';
 import { redirect }         from 'next/navigation';
 import { getRecipes, getSettings, getConstraints } from '@/lib/data';
 import { getSession }                              from '@/lib/auth';
-import { getUserByEmail }                          from '@/lib/users';
+import { getUserByEmail, getAccessState }          from '@/lib/users';
 import { getGroupById }                            from '@/lib/groups';
 import { AppShell }                                from '@/components/AppShell';
 
@@ -37,11 +37,12 @@ export default async function AppPage({ params, searchParams }: PageProps) {
     redirect(`/${locale}/auth?error=no_group`);
   }
 
-  const [recipes, settings, constraints, group] = await Promise.all([
+  const [recipes, settings, constraints, group, access] = await Promise.all([
     getRecipes(groupId),
     getSettings(groupId),
     getConstraints(groupId),
     getGroupById(groupId),
+    getAccessState(session.email),
   ]);
 
   const isPremium =
@@ -61,6 +62,7 @@ export default async function AppPage({ params, searchParams }: PageProps) {
       isAdmin={session.isAdmin}
       group={group}
       groupRole={groupRole}
+      locked={access.locked}
     />
   );
 }

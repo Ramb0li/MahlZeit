@@ -19,13 +19,19 @@ export async function GET() {
     return NextResponse.json({ error: 'Nicht autorisiert' }, { status: 403 });
 
   const groups = await getAllGroups();
-  const rows: { groupId: string; groupName: string; recipe: object }[] = [];
+  const rows: { groupId: string; groupName: string; orphaned?: boolean; orphanedAt?: string; recipe: object }[] = [];
 
   await Promise.all(
     groups.map(async (group) => {
       const recipes = await getGroupCustomRecipes(group.id);
       for (const recipe of recipes) {
-        rows.push({ groupId: group.id, groupName: group.name, recipe });
+        rows.push({
+          groupId:   group.id,
+          groupName: group.name,
+          orphaned:  group.orphaned,
+          orphanedAt: group.orphanedAt,
+          recipe,
+        });
       }
     }),
   );

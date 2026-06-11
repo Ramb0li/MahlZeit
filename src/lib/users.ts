@@ -147,6 +147,66 @@ export async function getUsersByGroup(groupId: string): Promise<AppUser[]> {
   return all.filter(u => u.groupId === groupId);
 }
 
+// ─── Access State (Freemium-Sperre) ──────────────────────────────────────────
+// locked = Trial abgelaufen ODER Gruppe verwaist, und kein eigenes aktives
+// Bezahl-Abo. Gesperrte User können sich einloggen, aber Menüvorschlag,
+// Template-Rezepte und KI-Import sind blockiert (Client-UI + Server-Routen).
+
+export interface AccessState {
+  locked: boolean;
+  reason: 'trial-expired' | 'group-orphaned' | null;
+}
+
+export function isPremiumActive(u: AppUser): boolean {
+  return u.status === 'active' &&
+    (u.plan === 'lifetime' || u.plan === 'abo' || u.plan === 'yearly' || u.plan === 'beta');
+}
+
+export function isTrialExpired(u: AppUser): boolean {
+  return u.plan === 'trial' && !!u.accessUntil && new Date(u.accessUntil) < new Date();
+}
+
+export async function getAccessState(email: string): Promise<AccessState> {
+  const user = await getUserByEmail(email);
+  if (!user) return { locked: true, reason: null };
+  if (isPremiumActive(user)) return { locked: false, reason: null };
+
+  if (user.groupId) {
+    const { getGroupById } = await import('@/lib/groups');
+    const group = await getGroupById(user.groupId);
+    if (group?.orphaned) return { locked: true, reason: 'group-orphaned' };
+    // Member erbt den Zugriff vom Gruppen-Owner
+    if (group && user.groupRole === 'member' && group.ownerEmail.toLowerCase() !== user.email.toLowerCase()) {
+      const owner = await getUserByEmail(group.ownerEmail);
+      if (owner && isPremiumActive(owner)) return { locked: false, reason: null };
+      if (owner && isTrialExpired(owner)) return { locked: true, reason: 'trial-expired' };
+    }
+  }
+
+  if (isTrialExpired(user)) return { locked: true, reason: 'trial-expired' };
+  return { locked: false, reason: null };
+}
+
+/**
+ * Verwaiste Gruppe wiederbeleben: Schliesst ein Mitglied einer verwaisten Gruppe
+ * ein Abo ab, wird es neuer Owner und die Orphaned-Markierung wird entfernt.
+ * Gibt den (ggf. aktualisierten) User zurück.
+ */
+export async function reviveOrphanedGroup(user: AppUser): Promise<AppUser> {
+  if (!user.groupId) return user;
+  const { getGroupById, updateGroup } = await import('@/lib/groups');
+  const group = await getGroupById(user.groupId);
+  if (!group?.orphaned) return user;
+
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const { orphaned, orphanedAt, formerOwnerEmail, ...rest } = group;
+  await updateGroup({ ...rest, ownerEmail: user.email });
+
+  const updated: AppUser = { ...user, groupRole: 'owner' };
+  await updateUser(updated);
+  return updated;
+}
+
 export async function deleteUser(email: string): Promise<void> {
   if (!USE_REDIS) {
     const all = readUsersLocal().filter((u) => u.email.toLowerCase() !== email.toLowerCase());
