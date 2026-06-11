@@ -16953,36 +16953,6 @@
     "dietCategory": "meat"
   },
   {
-    "id": "sal-90",
-    "name": "Tomaten & Mozzarella Salat",
-    "category": "Salate & Bowls",
-    "timeMinutes": 15,
-    "ingredients": [],
-    "weatherType": "warm",
-    "source": "Cuiseline",
-    "basePortions": 4,
-    "description": "",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/bryony-elena-djgeisqeeiw-unsplash-1780781966169.jpg",
-    "tags": [
-      "Mittagsgericht",
-      "Vegetarisch",
-      "Sommer",
-      "Abendgericht",
-      "Grillgericht"
-    ],
-    "allergens": [],
-    "nutrition": {
-      "kcal": 185,
-      "protein": 12.5,
-      "fat": 13.2,
-      "carbs": 4.8,
-      "fiber": 1.2
-    },
-    "imageZutaten": null,
-    "imageKochen": null,
-    "dietCategory": "vegetarian"
-  },
-  {
     "id": "sal-01",
     "name": "Quinoa Bowl",
     "category": "Salate & Bowls",
@@ -18973,6 +18943,36 @@
       "schalenfruechte",
       "senf"
     ]
+  },
+  {
+    "id": "sal-90",
+    "name": "Tomaten & Mozzarella Salat",
+    "category": "Salate & Bowls",
+    "timeMinutes": 15,
+    "ingredients": [],
+    "weatherType": "warm",
+    "source": "Cuiseline",
+    "basePortions": 4,
+    "description": "",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/bryony-elena-djgeisqeeiw-unsplash-1780781966169.jpg",
+    "tags": [
+      "Mittagsgericht",
+      "Vegetarisch",
+      "Sommer",
+      "Abendgericht",
+      "Grillgericht"
+    ],
+    "allergens": [],
+    "nutrition": {
+      "kcal": 185,
+      "protein": 12.5,
+      "fat": 13.2,
+      "carbs": 4.8,
+      "fiber": 1.2
+    },
+    "imageZutaten": null,
+    "imageKochen": null,
+    "dietCategory": "vegetarian"
   },
   {
     "id": "fvt-08",
