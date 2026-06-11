@@ -17,7 +17,7 @@
       "perPortions": 4
     },
     {
-      "name": "Champginons",
+      "name": "Champignons",
       "amount": 250,
       "unit": "g",
       "perPortions": 4
@@ -56,6 +56,12 @@
       "name": "Pfeffer",
       "amount": 1,
       "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 4,
+      "unit": "EL",
       "perPortions": 4
     },
     {
@@ -101,15 +107,15 @@
       "perPortions": 4
     },
     {
-      "name": "Eier",
-      "amount": 8,
-      "unit": "Stk",
+      "name": "Butter",
+      "amount": 20,
+      "unit": "g",
       "perPortions": 4
     },
     {
-      "name": "Butter",
-      "amount": 3,
-      "unit": "TL",
+      "name": "Eier",
+      "amount": 8,
+      "unit": "Stk",
       "perPortions": 4
     },
     {
@@ -164,5 +170,148 @@
   },
   "dietCategory": "vegetarian",
   "imageZutaten": null,
-  "imageKochen": null
+  "imageKochen": null,
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Gemüse",
+      "ingredients": [
+        {
+          "name": "Zucchetti",
+          "amount": 3,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Peperoni",
+          "amount": 3,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Champignons",
+          "amount": 250,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Cherrytomaten",
+          "amount": 500,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Schwarze Oliven, entsteint",
+          "amount": 1,
+          "unit": "Pkg",
+          "perPortions": 4
+        },
+        {
+          "name": "Rosmarinzweige",
+          "amount": 3,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "All'Arrabbiata Gewürz",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 4,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Polenta",
+      "ingredients": [
+        {
+          "name": "Milch",
+          "amount": 600,
+          "unit": "ml",
+          "perPortions": 4
+        },
+        {
+          "name": "Gemüsebouillon",
+          "amount": 600,
+          "unit": "ml",
+          "perPortions": 4
+        },
+        {
+          "name": "Polenta",
+          "amount": 260,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Geriebener Parmesan",
+          "amount": 160,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Butter",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 4,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Spiegelei",
+      "ingredients": [
+        {
+          "name": "Butter",
+          "amount": 20,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Eier",
+          "amount": 8,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    }
+  ]
 }

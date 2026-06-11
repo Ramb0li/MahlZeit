@@ -1,8 +1,8 @@
 {
   "id": "ei-13",
   "name": "Smoothie Bowl mit Beeren und Zucchetti",
-  "category": "Vegetarische Hauptgerichte",
-  "timeMinutes": 20,
+  "category": "Desserts & Süsses",
+  "timeMinutes": 10,
   "ingredients": [
     {
       "name": "Bananen (eingefroren)",
@@ -18,20 +18,26 @@
     },
     {
       "name": "Erdbeeren",
-      "amount": 250,
+      "amount": 500,
       "unit": "g",
       "perPortions": 4
     },
     {
-      "name": "Himbeeren",
-      "amount": 250,
-      "unit": "g",
-      "perPortions": 4
-    },
-    {
-      "name": "Kokosnussmilch-Joghurt",
+      "name": "Kokosjoghurt, ungesüsst",
       "amount": 300,
       "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Mandelmus",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 1,
+      "unit": "TL",
       "perPortions": 4
     },
     {
@@ -41,32 +47,32 @@
       "perPortions": 4
     },
     {
-      "name": "Himbeeren (zum Garnieren)",
+      "name": "Heidelbeeren (zum Garnieren)",
       "amount": 50,
       "unit": "g",
       "perPortions": 4
     },
     {
-      "name": "Johannisbeeren (zum Garnieren)",
+      "name": "Banane (zum Garnieren)",
       "amount": 50,
       "unit": "g",
       "perPortions": 4
     },
     {
-      "name": "Müeslimischung",
+      "name": "Granola",
       "amount": 8,
       "unit": "EL",
       "perPortions": 4
     }
   ],
   "weatherType": "warm",
-  "source": "fooby.ch",
+  "source": "MahlZeit",
   "basePortions": 4,
   "description": "Cremige, pinke Smoothie Bowl mit Banane, Beeren und versteckter Zucchetti – ein vitaminreicher Start in den Tag.",
   "steps": [
-    "1. Bananen mit Zucchetti, Erdbeeren, Himbeeren und Joghurt im Mixer fein pürieren.",
-    "2. Smoothie gleichmässig in vier Bowls verteilen.",
-    "3. Mit Beeren (Erdbeerscheiben, Himbeeren, Johannisbeeren) und Müesli garnieren."
+    "Bananen mit Zucchetti, Erdbeeren, Kokosjoghurt, Mandelmus und Zitronensaft im Mixer fein pürieren.",
+    "Smoothie gleichmässig in vier Schalen verteilen.",
+    "Mit Beeren, Banane und Granola garnieren."
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-13-1780786326142.jpg",
   "tags": [
@@ -75,9 +81,8 @@
     "Frühling",
     "Kinderfreundlich",
     "Vegetarisch",
-    "Herbst",
-    "Winter",
-    "Frühstücksgericht"
+    "Frühstücksgericht",
+    "Mealprep-geeignet"
   ],
   "imageZutaten": null,
   "imageKochen": null,

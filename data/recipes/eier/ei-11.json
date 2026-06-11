@@ -1,18 +1,24 @@
 {
   "id": "ei-11",
   "name": "Granola",
-  "category": "Vegetarische Hauptgerichte",
+  "category": "Frühstück",
   "timeMinutes": 50,
   "tags": [
     "Vegan",
     "Mealprep-geeignet",
-    "Frühstücksgericht"
+    "Frühstücksgericht",
+    "Vegetarisch",
+    "Kinderfreundlich",
+    "Frühling",
+    "Sommer",
+    "Herbst",
+    "Winter"
   ],
   "weatherType": "neutral",
   "source": "Cuiseline",
   "basePortions": 8,
   "dietCategory": "vegan",
-  "description": "Selbstgemachtes knuspriges Granola mit Nüssen, Samen und Datteln.",
+  "description": "Ein Vorratsglas voller Energie: selbstgemachtes Granola mit Haferflocken, Nüssen, Samen und feiner Süsse. Perfekt für Bowls, Joghurt oder den schnellen Frühstücksmoment.",
   "ingredients": [
     {
       "name": "Haferflocken",
@@ -88,14 +94,15 @@
     }
   ],
   "steps": [
-    "1. Ofen auf 160 °C vorheizen (Ober- und Unterhitze).",
-    "2. Alle Zutaten ausser Datteln in grosser Schüssel mit Rapsöl und Ahornsirup gut vermischen.",
-    "3. Masse auf zwei Backbleche verteilen.",
-    "4. Ca. 40 Minuten backen, in der Halbzeit die Bleche tauschen damit alles gleichmässig röstet.",
-    "5. Datteln in feine Ringe schneiden, 7 Minuten vor Backende auf den Blechen verteilen.",
-    "6. Auf Backblech vollständig auskühlen lassen, dann in Gläser abfüllen."
+    "Ofen auf 160 °C Ober-/Unterhitze vorheizen.",
+    "Haferflocken, gepufften Quinoa und/oder Amaranth, Pekannüsse, Mandelscheiben, Kürbiskerne, Sonnenblumenkerne, Leinsamen, Hanfsamen, Salz, Zimt, Ahornsirup und Rapsöl in einer grossen Schüssel gut vermischen.",
+    "Masse auf zwei mit Backpapier belegte Backbleche verteilen.",
+    "Granola ca. 40 Minuten backen. Nach der Hälfte der Backzeit die Bleche tauschen, damit alles gleichmässig röstet.",
+    "Inzwischen Datteln in feine Ringe schneiden.",
+    "Datteln und Cranberries ca. 7 Minuten vor Backende auf den Blechen verteilen und mitbacken.",
+    "Granola auf den Blechen ca. 2 Stunden vollständig auskühlen lassen.",
+    "Anschliessend in ein gut verschliessbares 3-Liter-Behältnis abfüllen."
   ],
-  "tips": "Mit Kokosjogurt, pflanzlicher Milch und saisonalen Früchten servieren.",
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---granola-1--1780577321739.jpeg",
   "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---granola-2--1780577355124.jpeg",
   "imageKochen": null,

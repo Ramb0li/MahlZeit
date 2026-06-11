@@ -5,6 +5,12 @@
   "timeMinutes": 50,
   "ingredients": [
     {
+      "name": "Butter",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
       "name": "Mehl",
       "amount": 300,
       "unit": "g",
@@ -32,12 +38,6 @@
       "name": "Wasser",
       "amount": 3,
       "unit": "dl",
-      "perPortions": 4
-    },
-    {
-      "name": "Butter",
-      "amount": 50,
-      "unit": "g",
       "perPortions": 4
     },
     {
@@ -124,18 +124,18 @@
   "basePortions": 4,
   "description": "Feine Omeletten treffen auf cremige Pilzsauce mit frischer Zitronennote und aromatischem Salbei – ein herzhaftes Gericht für ein gemütliches Essen.",
   "steps": [
-    "1. Butter in einer kleinen Pfanne schmelzen, beiseitestellen und auskühlen lassen.",
-    "2. Mehl und Salz in einer Schüssel mischen, in der Mitte eine Mulde formen.",
-    "3. Eier, Milchwasser und ausgekühlte Butter verquirlen. Zum Mehl giessen und zu einem glatten Teig rühren.",
-    "4. Teig zugedeckt ca. 30 Minuten ruhen lassen.",
-    "5. Während der Teig ruht, Pilzsauce vorbereiten: Zwiebel hacken, Champignons in Scheiben schneiden.",
-    "6. Butter in einer Pfanne erwärmen. Zwiebel beigeben und andämpfen.",
-    "7. Champignons hinzufügen und zugedeckt ca. 5 Minuten mitdämpfen. Mehl beigeben und kurz mitdünsten.",
-    "8. Zitrone dünn schälen, Schale in feine Streifen schneiden. Zitronenschale und 1 TL Zitronensaft beigeben, kurz einkochen lassen.",
-    "9. Rahm, Gewürze und Salbei unter Rühren beigeben. Zugedeckt bei kleiner Hitze ca. 10 Minuten köcheln lassen. Sauce warm halten.",
-    "10. Beschichtete Pfanne mit wenig Bratbutter erhitzen. Aus dem Teig portionenweise dünne Omeletten goldgelb backen.",
-    "11. Fertige Omeletten auf einen Teller schichten und bei 60 °C Ober-/Unterhitze warm halten, bis alle Omeletten gebacken sind.",
-    "12. Omeletten mit Pilzsauce füllen und etwas Petersilie garnieren."
+    "Butter in einer kleinen Pfanne schmelzen, beiseitestellen und auskühlen lassen.",
+    "Mehl und Salz in einer Schüssel mischen, in der Mitte eine Mulde formen.",
+    "Eier, Milchwasser und ausgekühlte Butter verquirlen. Zum Mehl giessen und zu einem glatten Teig rühren.",
+    "Teig zugedeckt ca. 30 Minuten ruhen lassen.",
+    "Während der Teig ruht, Pilzsauce vorbereiten: Zwiebel hacken, Champignons in Scheiben schneiden.",
+    "Butter in einer Pfanne erwärmen. Zwiebel beigeben und andämpfen.",
+    "Champignons hinzufügen und zugedeckt ca. 5 Minuten mitdämpfen. Mehl beigeben und kurz mitdünsten.",
+    "Zitrone dünn schälen, Schale in feine Streifen schneiden. Zitronenschale und 1 TL Zitronensaft beigeben, kurz einkochen lassen.",
+    "Rahm, Gewürze und Salbei unter Rühren beigeben. Zugedeckt bei kleiner Hitze ca. 10 Minuten köcheln lassen. Sauce warm halten.",
+    "Beschichtete Pfanne mit wenig Bratbutter erhitzen. Aus dem Teig portionenweise dünne Omeletten goldgelb backen.",
+    "Fertige Omeletten auf einen Teller schichten und bei 60 °C Ober-/Unterhitze warm halten, bis alle Omeletten gebacken sind.",
+    "Omeletten mit Pilzsauce füllen und etwas Petersilie garnieren."
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-05-1781045328742.jpg",
   "tags": [
@@ -162,5 +162,131 @@
   },
   "dietCategory": "vegetarian",
   "imageZutaten": null,
-  "imageKochen": null
+  "imageKochen": null,
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Omelette",
+      "ingredients": [
+        {
+          "name": "Butter",
+          "amount": 50,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Mehl",
+          "amount": 300,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Eier",
+          "amount": 3,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Milch",
+          "amount": 3,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Wasser",
+          "amount": 3,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Bratbutter",
+          "amount": 5,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Pilz-Kräutersauce",
+      "ingredients": [
+        {
+          "name": "Butter",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "kleine Zwiebel",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Champignons",
+          "amount": 200,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Mehl",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Zitrone",
+          "amount": 0.5,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Rahm",
+          "amount": 3,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Cayennepfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Paprika",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Salbeiblätter",
+          "amount": 4,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Petersilie",
+          "amount": 0.25,
+          "unit": "Bund",
+          "perPortions": 4
+        }
+      ]
+    }
+  ]
 }

@@ -1,22 +1,46 @@
 {
   "id": "ei-10",
   "name": "Cacao Smoothie Bowl",
-  "category": "Vegetarische Hauptgerichte",
+  "category": "Frühstück",
   "timeMinutes": 10,
   "tags": [
     "Vegan",
-    "Frühstücksgericht"
+    "Frühstücksgericht",
+    "Frühling",
+    "Sommer",
+    "Herbst",
+    "Winter",
+    "Kinderfreundlich",
+    "Mealprep-geeignet"
   ],
   "weatherType": "neutral",
   "source": "Cuiseline",
   "basePortions": 1,
   "dietCategory": "vegan",
-  "description": "Schokoladige Smoothie Bowl mit Banane, Kakao und Mandelmus.",
+  "description": "Cremige Cacao-Bowl mit Granola, Früchten und Cacao Nibs – wie Dessert zum Frühstück.",
   "ingredients": [
     {
       "name": "reife Banane",
       "amount": 1,
       "unit": "Stk",
+      "perPortions": 1
+    },
+    {
+      "name": "Haferflocken",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 1
+    },
+    {
+      "name": "Leinsamen",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 1
+    },
+    {
+      "name": "Hanfsamen",
+      "amount": 1,
+      "unit": "EL",
       "perPortions": 1
     },
     {
@@ -28,6 +52,12 @@
     {
       "name": "Mandelmus",
       "amount": 1,
+      "unit": "EL",
+      "perPortions": 1
+    },
+    {
+      "name": "Kokosjoghurt, ungesüsst",
+      "amount": 2,
       "unit": "EL",
       "perPortions": 1
     },
@@ -44,25 +74,31 @@
       "perPortions": 1
     },
     {
-      "name": "Leinsamen",
-      "amount": 1,
+      "name": "Granola",
+      "amount": 2,
       "unit": "EL",
       "perPortions": 1
     },
     {
-      "name": "Hanfsamen",
+      "name": "Beeren/Früchte zum Garnieren",
+      "amount": 0.25,
+      "unit": "Stk",
+      "perPortions": 1
+    },
+    {
+      "name": "Cacao Nibs",
       "amount": 1,
-      "unit": "EL",
+      "unit": "TL",
       "perPortions": 1
     }
   ],
   "steps": [
-    "1. Alle Zutaten in den Mixer geben.",
-    "2. Fein mixen bis eine cremige Masse entsteht.",
-    "3. In eine Schüssel geben.",
-    "4. Mit Granola, Früchten, Cacao Nibs und Kokosflocken garnieren."
+    "1. Datteln entsteinen und in kleine Stücke schneiden.",
+    "2. Alle Zutaten zusammen mit den zerkleinerten Datteln in den Mixer geben.",
+    "3. Alles fein pürieren, bis eine cremige, dickflüssige Masse entsteht.",
+    "4. Smoothie-Masse in eine Schüssel füllen.",
+    "5. Mit Granola, saisonalen Früchten/Beeren und Cacao Nibs garnieren."
   ],
-  "tips": "",
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-10-1-1780867619910.jpg",
   "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-10-2-1780867626293.jpg",
   "imageKochen": null,

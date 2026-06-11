@@ -1,25 +1,19 @@
 {
   "id": "ei-03",
   "name": "Rösti mit Avocado und Spiegelei",
-  "category": "Vegetarische Hauptgerichte",
+  "category": "Frühstück",
   "timeMinutes": 30,
   "ingredients": [
     {
-      "name": "Geschwellte Kartoffeln (festkochend)",
+      "name": "Kartoffeln",
       "amount": 1,
       "unit": "kg",
       "perPortions": 4
     },
     {
-      "name": "Avocado",
-      "amount": 2,
-      "unit": "Stk",
-      "perPortions": 4
-    },
-    {
-      "name": "Eier",
-      "amount": 8,
-      "unit": "Stk",
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
       "perPortions": 4
     },
     {
@@ -29,9 +23,15 @@
       "perPortions": 4
     },
     {
-      "name": "Zitronensaft",
+      "name": "Olivenöl",
       "amount": 1,
       "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Eier",
+      "amount": 8,
+      "unit": "Stk",
       "perPortions": 4
     },
     {
@@ -51,6 +51,18 @@
       "amount": 1,
       "unit": "Prise",
       "perPortions": 4
+    },
+    {
+      "name": "Avocado",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
     }
   ],
   "weatherType": "neutral",
@@ -58,12 +70,12 @@
   "basePortions": 4,
   "description": "Schweizer Klassiker trifft auf Avocado.",
   "steps": [
-    "1. Geschwellte Kartoffeln (am besten vom Vortag) schälen und an der Röstiraffel reiben, anschliessend salzen.",
-    "2. Butter in einer beschichteten Bratpfanne erhitzen. Die Kartoffeln dazugeben und unter gelegentlichem Wenden rund 5 Minuten anbraten.",
-    "3. Anschliessend die Kartoffeln mit einer Bratschaufel zu einer Rösti formen und nicht mehr bewegen. Die Rösti ohne Deckel bei mittlerer Hitze etwa 10 Minuten braten.",
-    "4. Zum Wenden einen flachen Teller auf die Pfanne legen und die Rösti darauf stürzen. Nochmals etwas Butter in die Pfanne geben, die Rösti vorsichtig zurückgleiten lassen und ohne Deckel weitere ca. 10 Minuten fertig braten.",
-    "5. Unterdessen Avocado in Scheiben schneiden und Spiegeleier braten. Spiegeleier mit Salz, Pfeffer und Paprika würzen.",
-    "6. Rösti mit Spiegeleier und Avocado anrichten. Etwas Zitronensaft über die Avocado pressen und servieren."
+    "Geschwellte Kartoffeln (am besten vom Vortag) schälen und an der Röstiraffel reiben, anschliessend salzen.",
+    "Butter in einer beschichteten Bratpfanne erhitzen. Die Kartoffeln dazugeben und unter gelegentlichem Wenden rund 5 Minuten anbraten.",
+    "Anschliessend die Kartoffeln mit einer Bratschaufel zu einer Rösti formen und nicht mehr bewegen. Die Rösti ohne Deckel bei mittlerer Hitze etwa 10 Minuten braten.",
+    "Zum Wenden einen flachen Teller auf die Pfanne legen und die Rösti darauf stürzen. Nochmals etwas Butter in die Pfanne geben, die Rösti vorsichtig zurückgleiten lassen und ohne Deckel weitere ca. 10 Minuten fertig braten.",
+    "Unterdessen Avocado in Scheiben schneiden und Spiegeleier braten. Spiegeleier mit Salz, Pfeffer und Paprika würzen.",
+    "Rösti mit Spiegeleier und Avocado anrichten. Etwas Zitronensaft über die Avocado pressen und servieren."
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-03-1781044613388.jpg",
   "tags": [
@@ -91,5 +103,77 @@
   },
   "dietCategory": "vegetarian",
   "imageZutaten": null,
-  "imageKochen": null
+  "imageKochen": null,
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Rösti",
+      "ingredients": [
+        {
+          "name": "Kartoffeln",
+          "amount": 1,
+          "unit": "kg",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Butter",
+          "amount": 40,
+          "unit": "g",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Spiegelei und Avocado",
+      "ingredients": [
+        {
+          "name": "Olivenöl",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Eier",
+          "amount": 8,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Paprika",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Avocado",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Zitronensaft",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    }
+  ]
 }
