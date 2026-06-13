@@ -787,6 +787,17 @@ export function ShoppingListView() {
             const customInCat    = custom.filter(c => c.category === category);
             if (!recipeItems.length && !customInCat.length) return null;
 
+            const sortedRecipeItems = [...recipeItems].sort((a, b) => {
+              const aChecked = checkedSet.has(`${a.name.toLowerCase()}_${a.unit}`);
+              const bChecked = checkedSet.has(`${b.name.toLowerCase()}_${b.unit}`);
+              if (aChecked !== bChecked) return aChecked ? 1 : -1;
+              return a.name.localeCompare(b.name, 'de');
+            });
+            const sortedCustomInCat = [...customInCat].sort((a, b) => {
+              if (a.checked !== b.checked) return a.checked ? 1 : -1;
+              return a.name.localeCompare(b.name, 'de');
+            });
+
             const catTotal   = recipeItems.length + customInCat.length;
             const catChecked = recipeItems.filter(i => checkedSet.has(`${i.name.toLowerCase()}_${i.unit}`)).length
                              + customInCat.filter(c => c.checked).length;
@@ -828,7 +839,7 @@ export function ShoppingListView() {
 
                 {/* Items */}
                 {!collapsed.has(category) && <div>
-                  {recipeItems.map((item) => {
+                  {sortedRecipeItems.map((item) => {
                     const key          = `${item.name.toLowerCase()}_${item.unit}`;
                     const isChecked    = checkedSet.has(key);
                     const isModified   = key in overrides;
@@ -953,7 +964,7 @@ export function ShoppingListView() {
                   })}
 
                   {/* Custom items in category */}
-                  {customInCat.map((item) => (
+                  {sortedCustomInCat.map((item) => (
                     <div
                       key={item.id}
                       className="flex items-center gap-3 px-4 py-2.5 cursor-pointer transition-colors"
