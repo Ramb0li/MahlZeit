@@ -462,7 +462,7 @@ function MealSlotCard({
               }}
               onKeyDown={e => { if (e.key === 'Enter') handleSaveSideIng(); if (e.key === 'Escape') { setSideIngForm(false); } }}
             />
-            <div style={{ display: 'flex', gap: 4, alignItems: 'center' }}>
+            <div style={{ display: 'flex', gap: 4, alignItems: 'center', overflow: 'hidden' }}>
               <input
                 type="number"
                 value={ingAmount}
@@ -470,7 +470,7 @@ function MealSlotCard({
                 min={0.1}
                 step={0.5}
                 style={{
-                  width: 52, flexShrink: 0, fontSize: 11, padding: '4px 5px', border: '1px solid var(--border)',
+                  width: 52, flexShrink: 0, minWidth: 0, fontSize: 11, padding: '4px 5px', border: '1px solid var(--border)',
                   borderRadius: 5, background: 'var(--bg)', color: 'var(--ink)', outline: 'none', fontFamily: 'inherit',
                 }}
               />
@@ -478,7 +478,7 @@ function MealSlotCard({
                 value={ingUnit}
                 onChange={e => setIngUnit(e.target.value)}
                 style={{
-                  width: 72, flexShrink: 0, fontSize: 11, padding: '4px 5px', border: '1px solid var(--border)',
+                  width: 56, flexShrink: 0, minWidth: 0, fontSize: 11, padding: '4px 5px', border: '1px solid var(--border)',
                   borderRadius: 5, background: 'var(--bg)', color: 'var(--ink)', outline: 'none', fontFamily: 'inherit',
                 }}
               >
@@ -718,7 +718,7 @@ function MealSlotCard({
               }}
               onKeyDown={e => { if (e.key === 'Enter') handleSaveSideIng(); if (e.key === 'Escape') { setSideIngForm(false); } }}
             />
-            <div style={{ display: 'flex', gap: 4, alignItems: 'center' }}>
+            <div style={{ display: 'flex', gap: 4, alignItems: 'center', overflow: 'hidden' }}>
               <input
                 type="number"
                 value={ingAmount}
@@ -726,7 +726,7 @@ function MealSlotCard({
                 min={0.1}
                 step={0.5}
                 style={{
-                  width: 52, flexShrink: 0, fontSize: 11, padding: '4px 5px', border: '1px solid var(--border)',
+                  width: 52, flexShrink: 0, minWidth: 0, fontSize: 11, padding: '4px 5px', border: '1px solid var(--border)',
                   borderRadius: 5, background: 'var(--bg)', color: 'var(--ink)', outline: 'none', fontFamily: 'inherit',
                 }}
               />
@@ -734,7 +734,7 @@ function MealSlotCard({
                 value={ingUnit}
                 onChange={e => setIngUnit(e.target.value)}
                 style={{
-                  width: 72, flexShrink: 0, fontSize: 11, padding: '4px 5px', border: '1px solid var(--border)',
+                  width: 56, flexShrink: 0, minWidth: 0, fontSize: 11, padding: '4px 5px', border: '1px solid var(--border)',
                   borderRadius: 5, background: 'var(--bg)', color: 'var(--ink)', outline: 'none', fontFamily: 'inherit',
                 }}
               >
