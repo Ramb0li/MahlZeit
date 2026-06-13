@@ -13,7 +13,7 @@
  * Legacy-globalen Pfad zurück (für Migrationsphase / Admin-Tools).
  */
 
-import type { Recipe, WeekPlan, AppSettings, PromotionsCache, WeatherCache, DayConstraint, ShoppingGroups, RecipeRating, Category, PantryItem, ShoppingListState, SourceType } from '@/types';
+import type { Recipe, WeekPlan, AppSettings, PromotionsCache, WeatherCache, DayConstraint, ShoppingGroups, RecipeRating, Category, PantryItem, ShoppingListState } from '@/types';
 
 import seedRecipes     from '../../data/recipes.json';
 import seedSettings    from '../../data/settings.json';
@@ -198,6 +198,14 @@ function normalizeRecipe(r: Recipe): Recipe {
     if (newTags.length !== r.tags.length || newTags.some((t, i) => t !== r.tags[i])) {
       r = { ...r, tags: newTags };
     }
+  }
+
+  // Strip internal migration flag so it never reaches API responses
+  if (raw._migrated_v2) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const { _migrated_v2, ...rest } = r as any;
+    void _migrated_v2;
+    r = rest as Recipe;
   }
 
   return r;

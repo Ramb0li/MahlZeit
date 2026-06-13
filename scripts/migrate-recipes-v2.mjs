@@ -10,7 +10,7 @@
  *   node scripts/migrate-recipes-v2.mjs --dry-run  # preview only
  */
 
-import { readFileSync, writeFileSync, readdirSync, statSync, existsSync } from 'fs';
+import { readFileSync, writeFileSync, readdirSync, statSync } from 'fs';
 import { fileURLToPath } from 'url';
 import path from 'path';
 import { execSync } from 'child_process';

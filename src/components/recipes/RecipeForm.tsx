@@ -244,7 +244,8 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/up
   const toggleSeasonTag = (tag: string) =>
     setTags(prev => {
       if (tag === 'Ganzjährig') {
-        return [...prev.filter(t => !SEASON_TAGS_SET.has(t) && t !== 'Ganzjährig'), 'Ganzjährig'];
+        if (prev.includes('Ganzjährig')) return prev.filter(t => t !== 'Ganzjährig');
+        return [...prev.filter(t => !SEASON_TAGS_SET.has(t)), 'Ganzjährig'];
       }
       let next = prev.filter(t => t !== 'Ganzjährig');
       next = next.includes(tag) ? next.filter(t => t !== tag) : [...next, tag];
