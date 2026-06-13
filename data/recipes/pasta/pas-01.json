@@ -1,39 +1,9 @@
 {
   "id": "pas-01",
-  "name": "Linsen-Gemüse-Bolognese",
+  "name": "Spaghetti mit Linsen-Gemüse-Bolognese",
   "category": "Pasta",
   "timeMinutes": 40,
   "ingredients": [
-    {
-      "name": "Spaghetti",
-      "amount": 320,
-      "unit": "g",
-      "perPortions": 4
-    },
-    {
-      "name": "Rote Linsen",
-      "amount": 200,
-      "unit": "g",
-      "perPortions": 4
-    },
-    {
-      "name": "Passierte Tomaten",
-      "amount": 500,
-      "unit": "g",
-      "perPortions": 4
-    },
-    {
-      "name": "Karotten",
-      "amount": 2,
-      "unit": "Stk",
-      "perPortions": 4
-    },
-    {
-      "name": "Sellerie",
-      "amount": 2,
-      "unit": "Stangen",
-      "perPortions": 4
-    },
     {
       "name": "Zwiebel",
       "amount": 1,
@@ -42,8 +12,38 @@
     },
     {
       "name": "Knoblauch",
-      "amount": 3,
+      "amount": 2,
       "unit": "Zehen",
+      "perPortions": 4
+    },
+    {
+      "name": "Karotten",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knollensellerie",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Peperoni",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Zucchetti",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Cherrytomaten",
+      "amount": 250,
+      "unit": "g",
       "perPortions": 4
     },
     {
@@ -51,20 +51,90 @@
       "amount": 3,
       "unit": "EL",
       "perPortions": 4
+    },
+    {
+      "name": "Tomatenmark",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Weisswein (optional)",
+      "amount": 1,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Linsen (gelb oder rot)",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebouillon",
+      "amount": 5,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "italienische Kräuter",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "All'arrabbiata-Gewürz",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Peffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Spaghetti",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
     }
   ],
   "weatherType": "kalt",
   "source": "Cuiseline",
   "basePortions": 4,
-  "description": "Vegane Bolognese aus Linsen und Gemüse.",
-  "steps": [],
-  "tips": "",
+  "description": "Bunte Gemüsevielfalt, würzige Linsen und al dente gekochte Spaghetti – pflanzliches Soulfood für jeden Tag.",
+  "steps": [
+    "Zwiebeln, Knoblauch, Karotte, Knollensellerie, Zucchetti und Peperoni hacken. Cherrytomaten halbieren.",
+    "Olivenöl in einer Pfanne erhitzen. Gemüse beigeben und andämpfen.",
+    "Tomatenmark hinzufügen und kurz mitrösten.",
+    "Linsen beigeben und kurz mitdämpfen.",
+    "Optional mit Weisswein ablöschen und Flüssigkeit einkochen lassen.",
+    "Gemüsebouillon beigeben und aufkochen. Mit italienischen Kräutern, All’arrabbiata-Gewürz, Salz und Pfeffer würzen.",
+    "Sauce bei kleiner Hitze ca. 15 Minuten köcheln lassen.",
+    "Gegen Ende Spaghetti nach Packungsangabe al dente kochen.",
+    "Cherrytomaten zur Sauce geben und ca. 5 Minuten mitkochen. Abschmecken.",
+    "Spaghetti mit Linsen-Gemüse-Sauce anrichten und servieren."
+  ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/fvt-03-1780871671442.jpg",
   "tags": [
     "Mealprep-geeignet",
     "Mittagsgericht",
     "Herbst",
-    "Winter"
+    "Winter",
+    "Kinderfreundlich",
+    "Frühling",
+    "Abendgericht",
+    "Italienisch",
+    "Vegan",
+    "Vegetarisch"
   ],
   "allergens": [
     "gluten",
@@ -77,6 +147,7 @@
     "carbs": 80.6,
     "fiber": 12.4
   },
-  "dietCategory": "vegetarian",
-  "imageZutaten": null
+  "dietCategory": "vegan",
+  "imageZutaten": null,
+  "imageKochen": null
 }

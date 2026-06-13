@@ -1,8 +1,8 @@
 {
   "id": "ei-14",
-  "name": "Fluffige Vegane Pancakes",
+  "name": "Fluffige vegane Pancakes",
   "category": "Frühstück",
-  "timeMinutes": 35,
+  "timeMinutes": 30,
   "ingredients": [
     {
       "name": "Mehl",
@@ -12,24 +12,24 @@
     },
     {
       "name": "Zucker",
-      "amount": 4,
-      "unit": "EL",
-      "perPortions": 4
-    },
-    {
-      "name": "Backpulver",
       "amount": 2,
       "unit": "EL",
       "perPortions": 4
     },
     {
-      "name": "Salz",
+      "name": "Backpulver",
       "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.5,
       "unit": "TL",
       "perPortions": 4
     },
     {
-      "name": "Pflanzenmilch (z.B. Mandelmilch)",
+      "name": "Pflanzendrink (z.B. Hafer- oder Sojadrink)",
       "amount": 480,
       "unit": "ml",
       "perPortions": 4
@@ -47,23 +47,29 @@
       "perPortions": 4
     },
     {
-      "name": "Ahornsirup (zum Servieren)",
+      "name": "Beeren/Früchte (für die Garnitur)",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Ahornsirup oder Mandelmus (zum Servieren)",
       "amount": 4,
       "unit": "EL",
       "perPortions": 4
     }
   ],
   "weatherType": "neutral",
-  "source": "Tasty",
+  "source": "MahlZeit",
   "basePortions": 4,
-  "description": "Überraschend luftige vegane Pancakes ohne Ei und Milch – mit Apfelessig als Geheimzutat.",
+  "description": "Vegane Pancakes, goldbraun gebacken, schön luftig und herrlich fein – diese Pancakes bringen Frühstücksfreude auf den Teller.",
   "steps": [
-    "1. Mehl, Zucker, Backpulver und Salz in einer Schüssel vermischen.",
-    "2. Pflanzenmilch, Apfelessig und Vanilleextrakt in einer zweiten Schüssel verrühren.",
-    "3. Nasse Zutaten zu den trockenen giessen und glatt verrühren. 5 Minuten quellen lassen.",
-    "4. Antihaftpfanne bei mittlerer Hitze erwärmen (kein Fett nötig). Ca. ½ Tasse Teig hineingeben.",
-    "5. Backen bis Blasen entstehen, dann wenden und goldbraun fertigbacken.",
-    "6. Mit Ahornsirup und Früchten servieren."
+    "Mehl, Zucker, Backpulver und Salz in einer Schüssel vermischen.",
+    "Pflanzendrink, Apfelessig und Vanilleextrakt in einer zweiten Schüssel verrühren.",
+    "Nasse Zutaten zu den trockenen giessen und glatt verrühren. 5 Minuten quellen lassen.",
+    "Antihaftpfanne bei mittlerer Hitze erwärmen (kein Fett nötig). Pro Pancake ca. 1 dl Teig oder eine kleine Schöpfkelle in die Pfanne geben.",
+    "Backen bis die Ränder fest und Blasen entstehen, dann wenden und goldbraun fertigbacken.",
+    "Mit Beeren, Früchten, Mandelmus oder Ahornsirup servieren."
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-14-1780786366445.jpg",
   "tags": [
@@ -74,7 +80,8 @@
     "Herbst",
     "Winter",
     "Vegetarisch",
-    "Frühstücksgericht"
+    "Frühstücksgericht",
+    "Mealprep-geeignet"
   ],
   "imageZutaten": null,
   "imageKochen": null,

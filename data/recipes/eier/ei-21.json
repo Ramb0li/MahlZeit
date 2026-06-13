@@ -1,16 +1,24 @@
 {
   "id": "ei-21",
-  "name": "Spiegelei Frittata mit Frühlingszwiebeln, Speck und Mais",
-  "category": "Frühstück",
-  "timeMinutes": 20,
-  "basePortions": 2,
+  "name": "Frittata mit Frühlingszwiebeln, Speck, Mais und Spiegeleier",
+  "category": "Aufläufe & Gratins",
+  "timeMinutes": 25,
+  "basePortions": 4,
   "tags": [
     "Schnell und einfach",
     "Italienisch",
     "Ofengericht",
     "Frühstück",
     "Abendgericht",
-    "Frühstücksgericht"
+    "Frühstücksgericht",
+    "Fleischhaltig",
+    "Mealprep-geeignet",
+    "Kinderfreundlich",
+    "Frühling",
+    "Sommer",
+    "Herbst",
+    "Winter",
+    "Mittagsgericht"
   ],
   "ingredients": [
     {
@@ -20,7 +28,7 @@
       "perPortions": 2
     },
     {
-      "name": "Speck in Scheiben",
+      "name": "Speck",
       "amount": 125,
       "unit": "g",
       "perPortions": 2
@@ -75,25 +83,26 @@
     }
   ],
   "weatherType": "neutral",
-  "source": "zu überarbeiten",
+  "source": "MahlZeit",
   "description": "Eine besondere Frittata-Variante mit knusprigem Speck, Mais und Frühlingszwiebeln, gekrönt mit vier Spiegeleiern, die im Ofen mitgebacken werden. Das flüssige Eigelb verläuft beim Aufschneiden herrlich über die anderen Zutaten.",
   "steps": [
-    "1. Den Backofen auf 175 Grad vorheizen und ein Rost in die mittlere Schiene schieben.",
-    "2. Den Speck in etwa 1 cm grosse Würfel schneiden.",
-    "3. Eine beschichtete Pfanne bei mittlerer Hitze auf den Herd stellen und den Speck in die noch kalte Pfanne geben. Das Fett langsam auslassen und den Speck leicht knusprig braten.",
-    "4. Währenddessen den Mais aus der Dose nehmen und gut abtropfen lassen. Die Rosmarinnadeln vom Zweig zupfen und fein hacken. Den Knoblauch schälen und in feine Würfel schneiden.",
-    "5. Die Frühlingszwiebeln waschen, trocken tupfen und in grobe Ringe schneiden. Ein paar Ringe für die Garnierung zur Seite legen. Den Parmesan fein reiben.",
-    "6. 6 Eier in eine Schüssel aufschlagen, Salz, Pfeffer und den geriebenen Parmesan hinzugeben. Mit einem Schneebesen kräftig verquirlen, bis die Masse leicht schäumt.",
-    "7. Sobald der Speck ausreichend Fett ausgelassen hat, Rosmarin, Frühlingszwiebeln und Knoblauch in die Pfanne geben. Alles gut vermischen und etwa 1 Minute im Fett anbraten.",
-    "8. Die Butter hinzufügen, schmelzen lassen und in der Pfanne verteilen. Anschliessend den Mais untermischen und mit Salz und Pfeffer würzen.",
-    "9. Die Ei-Parmesan-Mischung in die Pfanne giessen und mit einem Kochlöffel gleichmässig verteilen. Dabei gut mit den anderen Zutaten vermischen.",
-    "10. Sobald die Eimasse am Boden zu stocken beginnt, das Rühren beenden. Die Pfanne noch etwa 1 Minute auf dem Herd stehen lassen.",
-    "11. Die restlichen 4 Eier vorsichtig auf die Frittata aufschlagen, als würde man Spiegeleier zubereiten.",
-    "12. Die Pfanne für 8-10 Minuten in den Backofen schieben, bis das Eiweiss der Spiegeleier gestockt und die Ei-Parmesan-Mischung goldbraun gebacken ist.",
-    "13. Die Frittata aus dem Ofen nehmen und 5 Minuten abkühlen lassen. Vor dem Servieren die Spiegeleier mit Salz und Pfeffer würzen und mit den zurückbehaltenen Frühlingszwiebeln garnieren."
+    "Den Backofen auf 175 Grad vorheizen und ein Rost in die Mitte des Ofens schieben.",
+    "Den Speck in etwa 1 cm grosse Würfel schneiden.",
+    "Eine beschichtete Pfanne bei mittlerer Hitze auf den Herd stellen und den Speck in die noch kalte Pfanne geben. Das Fett langsam vergehen lassen und den Speck leicht knusprig anbraten.",
+    "Währenddessen den Mais aus der Dose nehmen und gut abtropfen lassen. Rosmarin vom Zweig zupfen und fein hacken. Den Knoblauch schälen und in kleine Würfel schneiden.",
+    "Die Frühlingszwiebeln waschen, trocken tupfen und in Ringe schneiden. Ein paar Ringe für die Garnierung zur Seite legen.",
+    "Den Parmesan fein reiben.",
+    "6 Eier in eine Schüssel aufschlagen, Salz, Pfeffer und den geriebenen Parmesan hinzugeben. Mit einem Schwingbesen kräftig verquirlen, bis die Masse leicht schäumt.",
+    "Sobald der Speck ausreichend Fett abgegeben hat, Rosmarin, Frühlingszwiebeln und Knoblauch in die Pfanne geben. Alles gut vermischen und etwa 1 Minute im Fett anbraten.",
+    "Die Butter hinzufügen, schmelzen lassen und in der Pfanne verteilen. Anschliessend den Mais untermischen und mit Salz und Pfeffer würzen.",
+    "Die Ei-Parmesan-Mischung in die Pfanne giessen und mit einem Kochlöffel gleichmässig verteilen. Dabei gut mit den anderen Zutaten vermischen.",
+    "Sobald die Eimasse am Boden zu stocken beginnt, das Rühren beenden. Die Pfanne noch etwa 1 Minute auf dem Herd stehen lassen.",
+    "Die restlichen 4 Eier vorsichtig auf die Frittata aufschlagen, als würde man Spiegeleier zubereiten.",
+    "Die Pfanne für 8-10 Minuten in den Backofen schieben, bis das Eiweiss der Spiegeleier gestockt und die Ei-Parmesan-Mischung goldbraun gebacken ist.",
+    "Die Frittata aus dem Ofen nehmen und 5 Minuten abkühlen lassen. Vor dem Servieren die Spiegeleier mit Salz und Pfeffer würzen und mit den zurückbehaltenen Frühlingszwiebeln garnieren."
   ],
   "dietCategory": "meat",
-  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/02/frittata_mit_speck_mais_und_spiegelei01.jpg",
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei_21-1781359059158.jpg",
   "imageZutaten": null,
   "imageKochen": null,
   "allergens": [

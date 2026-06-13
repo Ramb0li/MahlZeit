@@ -1,18 +1,40 @@
 {
   "id": "ocr-04",
-  "name": "Bolognesesauce Marcello",
+  "name": "Spaghetti Bolognese",
   "category": "Pasta",
   "timeMinutes": 75,
-  "tags": [],
+  "tags": [
+    "Fleischhaltig",
+    "Mealprep-geeignet",
+    "Kinderfreundlich",
+    "Frühling",
+    "Herbst",
+    "Winter",
+    "Mittagsgericht",
+    "Abendgericht",
+    "Italienisch"
+  ],
   "weatherType": "kalt",
-  "source": "Familien-Rezeptbuch (OCR)",
+  "source": "Familien-Rezeptbuch",
   "basePortions": 4,
-  "description": "Klassische Bolognesesauce mit Rindsfleisch nach dem Rezept von Marcello.",
+  "description": "Langsam geschmort, herzhaft gewürzt und mit Parmesan serviert – Spaghetti Bolognese zum Wohlfühlen.",
   "ingredients": [
     {
       "name": "Rindsfleisch, gehackt",
       "amount": 300,
       "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Lorbeerblatt",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 4,
+      "unit": "EL",
       "perPortions": 4
     },
     {
@@ -28,21 +50,15 @@
       "perPortions": 4
     },
     {
-      "name": "Rüebli, geraffelt",
+      "name": "Rüebli",
       "amount": 1,
       "unit": "Stk",
       "perPortions": 4
     },
     {
-      "name": "Sellerie, geraffelt",
+      "name": "gehackte Tomaten",
       "amount": 1,
-      "unit": "Stk",
-      "perPortions": 4
-    },
-    {
-      "name": "Tomaten, geschält",
-      "amount": 5,
-      "unit": "Stk",
+      "unit": "Dose",
       "perPortions": 4
     },
     {
@@ -52,7 +68,7 @@
       "perPortions": 4
     },
     {
-      "name": "Rotwein",
+      "name": "Rotwein (optional)",
       "amount": 1,
       "unit": "dl",
       "perPortions": 4
@@ -64,23 +80,37 @@
       "perPortions": 4
     },
     {
-      "name": "Lorbeerblatt",
+      "name": "Salz",
       "amount": 1,
-      "unit": "Stk",
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Reibkäse (z.B. Parmesan oder Sbrinz)",
+      "amount": 1,
+      "unit": "g",
       "perPortions": 4
     }
   ],
   "steps": [
-    "1. Fleisch in heissem Öl anbraten, würzen.",
-    "2. Zwiebeln, Knoblauch, Rüebli, Sellerie 5 Min. mitdämpfen.",
-    "3. Mit Wein ablöschen, einkochen.",
-    "4. Tomaten, Tomatenpüree und Bouillon beifügen.",
-    "5. 1 Stunde köcheln lassen."
+    "Zwiebeln und Knoblauch fein hacken. Rüebli klein würfeln.",
+    "Olivenöl in einer Pfanne erhitzen. Fleisch kräftig anbraten, Lorbeerblatt kurz mitbraten.",
+    "Zwiebeln, Knoblauch und Rüebli beigeben und mitdämpfen. Mit Salz, Pfeffer und 2 TL italienischen Kräutern würzen.",
+    "Tomaten und Tomatenpüree beigeben und ca. 5 Minuten mitdämpfen.",
+    "Optional mit Wein ablöschen und Flüssigkeit zur Hälfte einkochen lassen.",
+    "Bouillon beigeben und Sauce bei kleiner Hitze ca. 1 Stunde köcheln lassen.",
+    "Spaghetti in Salzwasser al dente kochen.",
+    "Spaghetti mit Sauce anrichten und mit geriebenem Parmesan oder Sbrinz servieren."
   ],
   "imageUrl": null,
   "imageZutaten": null,
   "imageKochen": null,
-  "tips": "",
   "allergens": [
     "sellerie",
     "sulfite"

@@ -1,6 +1,6 @@
 {
   "id": "ei-15",
-  "name": "Klassische Pfannkuchen",
+  "name": "Klassische Pancakes",
   "category": "Frühstück",
   "timeMinutes": 25,
   "ingredients": [
@@ -51,25 +51,48 @@
       "amount": 1,
       "unit": "TL",
       "perPortions": 4
+    },
+    {
+      "name": "Beeren/Früchte (für die Garnitur)",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Ahornsirup/Mandelmus (zum Servieren)",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter (zum Servieren)",
+      "amount": 40,
+      "unit": "g",
+      "perPortions": 4
     }
   ],
   "weatherType": "neutral",
-  "source": "Allrecipes",
+  "source": "MahlZeit",
   "basePortions": 4,
   "description": "Amerikanische Pancakes – luftig, dick und goldbraun. Ein Frühstücksklassiker für die ganze Familie.",
   "steps": [
-    "1. Mehl, Zucker, Backpulver und Salz in einer Schüssel mischen.",
-    "2. Eier, Milch, Butter und Vanilleextrakt verquirlen.",
-    "3. Nasse Zutaten zu den trockenen geben und bis zur glatten Masse verrühren. 3 Minuten ruhen lassen.",
-    "4. Pfanne bei mittlerer Hitze erhitzen, leicht buttern. Ca. ¼ Tasse Teig hineingeben.",
-    "5. Backen bis die Ränder fest und Blasen entstehen, dann wenden und goldbraun fertigbacken.",
-    "6. Mit Ahornsirup, Butter oder frischen Früchten servieren."
+    "Mehl, Zucker, Backpulver und Salz in einer Schüssel mischen.",
+    "Eier, Milch, Butter und Vanilleextrakt verquirlen.",
+    "Nasse Zutaten zu den trockenen geben und bis zur glatten Masse verrühren. 3 Minuten ruhen lassen.",
+    "Pfanne bei mittlerer Hitze erhitzen, leicht buttern. Pro Pancake eine kleine Schöpfkelle Teig in die Pfanne geben.",
+    "Backen bis die Ränder fest und Blasen entstehen, dann wenden und goldbraun fertigbacken.",
+    "Mit frischen Früchten, Beeren, Butter, Ahornsirup oder Mandelmus servieren."
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-15-1780699224577.jpg",
   "tags": [
     "Vegetarisch",
     "Kinderfreundlich",
-    "Frühstücksgericht"
+    "Frühstücksgericht",
+    "Mealprep-geeignet",
+    "Frühling",
+    "Sommer",
+    "Herbst",
+    "Winter"
   ],
   "imageZutaten": null,
   "imageKochen": null,

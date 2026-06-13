@@ -1,39 +1,30 @@
 {
   "id": "ocr-07",
-  "name": "Vollkornnudeln mit Auberginen (Cinque Pì)",
+  "name": "Penne mit Auberginen-Tomatensauce",
   "category": "Pasta",
   "timeMinutes": 40,
   "tags": [
     "Vegetarisch",
-    "Italienisch"
+    "Italienisch",
+    "Pescetarisch",
+    "Mealprep-geeignet",
+    "Kinderfreundlich",
+    "Frühling",
+    "Sommer",
+    "Herbst",
+    "Winter",
+    "Mittagsgericht",
+    "Abendgericht"
   ],
   "weatherType": "warm",
   "source": "Familien-Rezeptbuch (OCR)",
   "basePortions": 4,
-  "description": "Vollkornnudeln mit würziger Auberginen-Sardellenfiletsauce.",
+  "description": "Aromatische Auberginen, fruchtige Tomaten und frischer Basilikum – mediterrane Pasta, einfach und voller Geschmack.",
   "ingredients": [
-    {
-      "name": "Vollkornnudeln",
-      "amount": 400,
-      "unit": "g",
-      "perPortions": 4
-    },
     {
       "name": "Auberginen",
       "amount": 400,
       "unit": "g",
-      "perPortions": 4
-    },
-    {
-      "name": "Pelati, gehackt (Dose)",
-      "amount": 400,
-      "unit": "g",
-      "perPortions": 4
-    },
-    {
-      "name": "Sardellenfilets",
-      "amount": 4,
-      "unit": "Stk",
       "perPortions": 4
     },
     {
@@ -55,23 +46,67 @@
       "perPortions": 4
     },
     {
+      "name": "Gehackte Tomaten",
+      "amount": 1,
+      "unit": "Dose",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Sardellenfilets (optional)",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
       "name": "Parmesan",
       "amount": 3,
       "unit": "EL",
       "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Vollkornteigwaren (z.B Penne)",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Reibkäse (z.B. Parmesan oder Sbrinz)",
+      "amount": 1,
+      "unit": "g",
+      "perPortions": 4
     }
   ],
   "steps": [
-    "1. Nudeln al dente kochen.",
-    "2. Öl erhitzen, Zwiebel und Knoblauch andämpfen.",
-    "3. Auberginen würfeln, mitdämpfen.",
-    "4. Pelati beifügen, 20–30 Min. köcheln.",
-    "5. Sardellen und Basilikum unterrühren, würzen. Mit Nudeln servieren."
+    "Zwiebel und Knoblauch fein hacken. Aubergine in Würfel schneiden. Basilikum fein schneiden.",
+    "Olivenöl in einer Pfanne erhitzen. Zwiebel und Knoblauch beigeben und andämpfen.",
+    "Aubergine hinzufügen und einige Minuten mitdämpfen.",
+    "Gehackte Tomaten beigeben. Sauce bei kleiner Hitze ca. 20–30 Minuten köcheln lassen.",
+    "Gegen Ende Penne in Salzwasser al dente kochen.",
+    "Optional Sardellen hacken.",
+    "Basilikum und Sardellen unter Sauce rühren. Mit Salz und Pfeffer abschmecken.",
+    "Penne abgiessen, mit Sauce anrichten und mit geriebenem Parmesan servieren."
   ],
   "imageUrl": null,
   "imageZutaten": null,
   "imageKochen": null,
-  "tips": "",
   "allergens": [
     "fisch",
     "gluten",
@@ -84,5 +119,5 @@
     "carbs": 75.4,
     "fiber": 11.3
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "fish"
 }

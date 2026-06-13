@@ -1845,9 +1845,9 @@
   },
   {
     "id": "ei-14",
-    "name": "Fluffige Vegane Pancakes",
+    "name": "Fluffige vegane Pancakes",
     "category": "Frühstück",
-    "timeMinutes": 35,
+    "timeMinutes": 30,
     "ingredients": [
       {
         "name": "Mehl",
@@ -1857,24 +1857,24 @@
       },
       {
         "name": "Zucker",
-        "amount": 4,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Backpulver",
         "amount": 2,
         "unit": "EL",
         "perPortions": 4
       },
       {
-        "name": "Salz",
+        "name": "Backpulver",
         "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 0.5,
         "unit": "TL",
         "perPortions": 4
       },
       {
-        "name": "Pflanzenmilch (z.B. Mandelmilch)",
+        "name": "Pflanzendrink (z.B. Hafer- oder Sojadrink)",
         "amount": 480,
         "unit": "ml",
         "perPortions": 4
@@ -1892,23 +1892,29 @@
         "perPortions": 4
       },
       {
-        "name": "Ahornsirup (zum Servieren)",
+        "name": "Beeren/Früchte (für die Garnitur)",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Ahornsirup oder Mandelmus (zum Servieren)",
         "amount": 4,
         "unit": "EL",
         "perPortions": 4
       }
     ],
     "weatherType": "neutral",
-    "source": "Tasty",
+    "source": "MahlZeit",
     "basePortions": 4,
-    "description": "Überraschend luftige vegane Pancakes ohne Ei und Milch – mit Apfelessig als Geheimzutat.",
+    "description": "Vegane Pancakes, goldbraun gebacken, schön luftig und herrlich fein – diese Pancakes bringen Frühstücksfreude auf den Teller.",
     "steps": [
-      "1. Mehl, Zucker, Backpulver und Salz in einer Schüssel vermischen.",
-      "2. Pflanzenmilch, Apfelessig und Vanilleextrakt in einer zweiten Schüssel verrühren.",
-      "3. Nasse Zutaten zu den trockenen giessen und glatt verrühren. 5 Minuten quellen lassen.",
-      "4. Antihaftpfanne bei mittlerer Hitze erwärmen (kein Fett nötig). Ca. ½ Tasse Teig hineingeben.",
-      "5. Backen bis Blasen entstehen, dann wenden und goldbraun fertigbacken.",
-      "6. Mit Ahornsirup und Früchten servieren."
+      "Mehl, Zucker, Backpulver und Salz in einer Schüssel vermischen.",
+      "Pflanzendrink, Apfelessig und Vanilleextrakt in einer zweiten Schüssel verrühren.",
+      "Nasse Zutaten zu den trockenen giessen und glatt verrühren. 5 Minuten quellen lassen.",
+      "Antihaftpfanne bei mittlerer Hitze erwärmen (kein Fett nötig). Pro Pancake ca. 1 dl Teig oder eine kleine Schöpfkelle in die Pfanne geben.",
+      "Backen bis die Ränder fest und Blasen entstehen, dann wenden und goldbraun fertigbacken.",
+      "Mit Beeren, Früchten, Mandelmus oder Ahornsirup servieren."
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-14-1780786366445.jpg",
     "tags": [
@@ -1919,7 +1925,8 @@
       "Herbst",
       "Winter",
       "Vegetarisch",
-      "Frühstücksgericht"
+      "Frühstücksgericht",
+      "Mealprep-geeignet"
     ],
     "imageZutaten": null,
     "imageKochen": null,
@@ -1939,7 +1946,7 @@
   },
   {
     "id": "ei-15",
-    "name": "Klassische Pfannkuchen",
+    "name": "Klassische Pancakes",
     "category": "Frühstück",
     "timeMinutes": 25,
     "ingredients": [
@@ -1990,25 +1997,48 @@
         "amount": 1,
         "unit": "TL",
         "perPortions": 4
+      },
+      {
+        "name": "Beeren/Früchte (für die Garnitur)",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Ahornsirup/Mandelmus (zum Servieren)",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Butter (zum Servieren)",
+        "amount": 40,
+        "unit": "g",
+        "perPortions": 4
       }
     ],
     "weatherType": "neutral",
-    "source": "Allrecipes",
+    "source": "MahlZeit",
     "basePortions": 4,
     "description": "Amerikanische Pancakes – luftig, dick und goldbraun. Ein Frühstücksklassiker für die ganze Familie.",
     "steps": [
-      "1. Mehl, Zucker, Backpulver und Salz in einer Schüssel mischen.",
-      "2. Eier, Milch, Butter und Vanilleextrakt verquirlen.",
-      "3. Nasse Zutaten zu den trockenen geben und bis zur glatten Masse verrühren. 3 Minuten ruhen lassen.",
-      "4. Pfanne bei mittlerer Hitze erhitzen, leicht buttern. Ca. ¼ Tasse Teig hineingeben.",
-      "5. Backen bis die Ränder fest und Blasen entstehen, dann wenden und goldbraun fertigbacken.",
-      "6. Mit Ahornsirup, Butter oder frischen Früchten servieren."
+      "Mehl, Zucker, Backpulver und Salz in einer Schüssel mischen.",
+      "Eier, Milch, Butter und Vanilleextrakt verquirlen.",
+      "Nasse Zutaten zu den trockenen geben und bis zur glatten Masse verrühren. 3 Minuten ruhen lassen.",
+      "Pfanne bei mittlerer Hitze erhitzen, leicht buttern. Pro Pancake eine kleine Schöpfkelle Teig in die Pfanne geben.",
+      "Backen bis die Ränder fest und Blasen entstehen, dann wenden und goldbraun fertigbacken.",
+      "Mit frischen Früchten, Beeren, Butter, Ahornsirup oder Mandelmus servieren."
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-15-1780699224577.jpg",
     "tags": [
       "Vegetarisch",
       "Kinderfreundlich",
-      "Frühstücksgericht"
+      "Frühstücksgericht",
+      "Mealprep-geeignet",
+      "Frühling",
+      "Sommer",
+      "Herbst",
+      "Winter"
     ],
     "imageZutaten": null,
     "imageKochen": null,
@@ -2045,7 +2075,7 @@
         "perPortions": 4
       },
       {
-        "name": "Mandelmilch oder Pflanzenmilch",
+        "name": "Pflanzendrink (z.B. Hafer- oder Sojadrink)",
         "amount": 4,
         "unit": "EL",
         "perPortions": 4
@@ -2067,19 +2097,31 @@
         "amount": 0.5,
         "unit": "TL",
         "perPortions": 4
+      },
+      {
+        "name": "Beeren/Früchte (für die Garnitur)",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Mandelmus (für die Garnitur",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
       }
     ],
     "weatherType": "neutral",
-    "source": "Chefkoch",
+    "source": "MahlZeit",
     "basePortions": 4,
     "description": "Einfachste vegane Pancakes aus Bananen und Haferflocken – ohne Mehl, Zucker oder Ei.",
     "steps": [
-      "1. Bananen in einer Schüssel zerdrücken bis eine glatte Paste entsteht.",
-      "2. Hafermehl (oder fein gemahlene Haferflocken), Backpulver, Vanilleextrakt und Zimt untermischen.",
-      "3. Pflanzenmilch zugeben und zu einem dickflüssigen Teig verrühren.",
-      "4. Antihaftpfanne bei mittlerer Hitze erhitzen. Löffelweise Teig hineingeben und kleine runde Pancakes formen.",
-      "5. Ca. 3–4 Minuten backen bis die Unterseite goldbraun ist, vorsichtig wenden und weitere 2–3 Minuten fertigbacken.",
-      "6. Mit Beeren, Ahornsirup oder Nussbutter servieren."
+      "Bananen in einer Schüssel zerdrücken bis eine glatte Paste entsteht.",
+      "Hafermehl (oder fein gemahlene Haferflocken), Backpulver, Vanilleextrakt und Zimt untermischen.",
+      "Pflanzendrink zugeben und zu einem dickflüssigen Teig verrühren.",
+      "Antihaftpfanne bei mittlerer Hitze erhitzen. Löffelweise Teig hineingeben und kleine runde Pancakes formen.",
+      "Ca. 3–4 Minuten backen bis die Unterseite goldbraun ist, vorsichtig wenden und weitere 2–3 Minuten fertigbacken.",
+      "Mit Beeren, Früchten und/oder Nussmus servieren."
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-16-1780699242965.jpg",
     "tags": [
@@ -2116,7 +2158,12 @@
       "Herbst",
       "Winter",
       "Frühstück",
-      "Frühstücksgericht"
+      "Frühstücksgericht",
+      "Kinderfreundlich",
+      "Mealprep-geeignet",
+      "Frühling",
+      "Sommer",
+      "Italienisch"
     ],
     "ingredients": [
       {
@@ -2150,7 +2197,7 @@
         "perPortions": 2
       },
       {
-        "name": "Zitronensaft",
+        "name": "Zitrone",
         "amount": 1,
         "unit": "Stk",
         "perPortions": 2
@@ -2198,7 +2245,7 @@
         "perPortions": 2
       },
       {
-        "name": "Muskatnuss frisch gerieben",
+        "name": "Muskatnuss",
         "amount": 1,
         "unit": "Prise",
         "perPortions": 2
@@ -2212,20 +2259,21 @@
     ],
     "weatherType": "neutral",
     "source": "zu überarbeiten",
-    "description": "Eine fein würzige Frittata mit süssem Lauch, erdigen Champignons und cremigem Zitronen-Hüttenkäse. Dazu ein erfrischender Apfel-Petersilie-Salat – in nur 25 Minuten fertig!",
+    "description": "Eine fein würzige Frittata mit Lauch, Champignons und cremigem Zitronen-Hüttenkäse. Dazu ein erfrischender Apfel-Petersilie-Salat.",
     "steps": [
-      "1. Den Backofen auf 200 Grad Ober-/Unterhitze vorheizen und ein Rost in die mittlere Schiene einsetzen.",
-      "2. Den gehackten Knoblauch in einer ofenfesten Pfanne mit Olivenöl bei mittlerer Temperatur kurz glasig dünsten.",
-      "3. Das Tomatenmark unterrühren und kurz mitdünsten lassen.",
-      "4. Die Champignonscheiben und den geschnittenen Lauch in die Pfanne geben, mit Salz und Pfeffer würzen und unter gelegentlichem Wenden etwa 5 Minuten andünsten.",
-      "5. Die Milch zu den verquirlten Eiern geben und mit frisch geriebener Muskatnuss würzen.",
-      "6. Die Ei-Milch-Mischung gleichmässig über das Gemüse in der Pfanne giessen und gut verteilen. Den Herd ausschalten.",
-      "7. Den geriebenen Parmesan über die Frittata streuen.",
-      "8. Die Pfanne für 15-20 Minuten in den vorgeheizten Ofen stellen.",
-      "9. In der Zwischenzeit die Hälfte des Zitronensafts mit dem Hüttenkäse verrühren und mit Salz und Pfeffer abschmecken.",
-      "10. Die gehackte Petersilie, die Apfelwürfel und den restlichen Zitronensaft vermischen und mit Pfeffer würzen.",
-      "11. Die fertige Frittata aus dem Ofen nehmen, kurz abkühlen lassen und vorsichtig aus der Pfanne auf einen Servierteller oder ein Brett gleiten lassen.",
-      "12. Mit dem Apfel-Petersilie-Salat und dem Zitronen-Hüttenkäse servieren."
+      "Lauch längs halbieren und in feine Streifen schneiden. Champignons in Scheiben schneiden. Knoblauch schälen und fein hacken. Apfel in grobe Würfel schneiden. Petersilie fein hacken. Zitrone halbieren und Saft auspressen.",
+      "Backofen auf 200 °C Ober-/Unterhitze vorheizen. Rost in mittlere Schiene einschieben.",
+      "Knoblauch in ofenfester Pfanne mit Olivenöl bei mittlerer Hitze kurz glasig dünsten.",
+      "Tomatenmark beigeben und kurz mitdünsten.",
+      "Champignons und Lauch beigeben, mit Salz und Pfeffer würzen und ca. 5 Minuten andünsten.",
+      "Milch mit verquirlten Eiern mischen, mit Muskatnuss würzen.",
+      "Ei-Milch-Mischung gleichmässig über Gemüse giessen und verteilen. Herd ausschalten.",
+      "Parmesan darüberstreuen.",
+      "Pfanne ca. 15–20 Minuten in Ofen geben, bis Frittata gestockt und leicht gebräunt ist.",
+      "Inzwischen Zitronensaft zur Hälfte mit Hüttenkäse verrühren. Mit Salz und Pfeffer abschmecken.",
+      "Petersilie, Apfelwürfel und restlichen Zitronensaft mischen. Mit Pfeffer würzen.",
+      "Frittata aus Ofen nehmen, kurz abkühlen lassen und vorsichtig auf Teller oder Brett gleiten lassen.",
+      "Mit Apfel-Petersilie-Salat und Zitronen-Hüttenkäse servieren."
     ],
     "dietCategory": "vegetarian",
     "imageUrl": "https://herrbuettner.de/wp-content/uploads/2019/12/Fritatta_mit_Lauch_und_Champignons_Apfe-Petersilie-Salat_Zitronen_Huettnekaese.jpg",
@@ -2551,17 +2599,25 @@
   },
   {
     "id": "ei-21",
-    "name": "Spiegelei Frittata mit Frühlingszwiebeln, Speck und Mais",
-    "category": "Frühstück",
-    "timeMinutes": 20,
-    "basePortions": 2,
+    "name": "Frittata mit Frühlingszwiebeln, Speck, Mais und Spiegeleier",
+    "category": "Aufläufe & Gratins",
+    "timeMinutes": 25,
+    "basePortions": 4,
     "tags": [
       "Schnell und einfach",
       "Italienisch",
       "Ofengericht",
       "Frühstück",
       "Abendgericht",
-      "Frühstücksgericht"
+      "Frühstücksgericht",
+      "Fleischhaltig",
+      "Mealprep-geeignet",
+      "Kinderfreundlich",
+      "Frühling",
+      "Sommer",
+      "Herbst",
+      "Winter",
+      "Mittagsgericht"
     ],
     "ingredients": [
       {
@@ -2571,7 +2627,7 @@
         "perPortions": 2
       },
       {
-        "name": "Speck in Scheiben",
+        "name": "Speck",
         "amount": 125,
         "unit": "g",
         "perPortions": 2
@@ -2626,25 +2682,26 @@
       }
     ],
     "weatherType": "neutral",
-    "source": "zu überarbeiten",
+    "source": "MahlZeit",
     "description": "Eine besondere Frittata-Variante mit knusprigem Speck, Mais und Frühlingszwiebeln, gekrönt mit vier Spiegeleiern, die im Ofen mitgebacken werden. Das flüssige Eigelb verläuft beim Aufschneiden herrlich über die anderen Zutaten.",
     "steps": [
-      "1. Den Backofen auf 175 Grad vorheizen und ein Rost in die mittlere Schiene schieben.",
-      "2. Den Speck in etwa 1 cm grosse Würfel schneiden.",
-      "3. Eine beschichtete Pfanne bei mittlerer Hitze auf den Herd stellen und den Speck in die noch kalte Pfanne geben. Das Fett langsam auslassen und den Speck leicht knusprig braten.",
-      "4. Währenddessen den Mais aus der Dose nehmen und gut abtropfen lassen. Die Rosmarinnadeln vom Zweig zupfen und fein hacken. Den Knoblauch schälen und in feine Würfel schneiden.",
-      "5. Die Frühlingszwiebeln waschen, trocken tupfen und in grobe Ringe schneiden. Ein paar Ringe für die Garnierung zur Seite legen. Den Parmesan fein reiben.",
-      "6. 6 Eier in eine Schüssel aufschlagen, Salz, Pfeffer und den geriebenen Parmesan hinzugeben. Mit einem Schneebesen kräftig verquirlen, bis die Masse leicht schäumt.",
-      "7. Sobald der Speck ausreichend Fett ausgelassen hat, Rosmarin, Frühlingszwiebeln und Knoblauch in die Pfanne geben. Alles gut vermischen und etwa 1 Minute im Fett anbraten.",
-      "8. Die Butter hinzufügen, schmelzen lassen und in der Pfanne verteilen. Anschliessend den Mais untermischen und mit Salz und Pfeffer würzen.",
-      "9. Die Ei-Parmesan-Mischung in die Pfanne giessen und mit einem Kochlöffel gleichmässig verteilen. Dabei gut mit den anderen Zutaten vermischen.",
-      "10. Sobald die Eimasse am Boden zu stocken beginnt, das Rühren beenden. Die Pfanne noch etwa 1 Minute auf dem Herd stehen lassen.",
-      "11. Die restlichen 4 Eier vorsichtig auf die Frittata aufschlagen, als würde man Spiegeleier zubereiten.",
-      "12. Die Pfanne für 8-10 Minuten in den Backofen schieben, bis das Eiweiss der Spiegeleier gestockt und die Ei-Parmesan-Mischung goldbraun gebacken ist.",
-      "13. Die Frittata aus dem Ofen nehmen und 5 Minuten abkühlen lassen. Vor dem Servieren die Spiegeleier mit Salz und Pfeffer würzen und mit den zurückbehaltenen Frühlingszwiebeln garnieren."
+      "Den Backofen auf 175 Grad vorheizen und ein Rost in die Mitte des Ofens schieben.",
+      "Den Speck in etwa 1 cm grosse Würfel schneiden.",
+      "Eine beschichtete Pfanne bei mittlerer Hitze auf den Herd stellen und den Speck in die noch kalte Pfanne geben. Das Fett langsam vergehen lassen und den Speck leicht knusprig anbraten.",
+      "Währenddessen den Mais aus der Dose nehmen und gut abtropfen lassen. Rosmarin vom Zweig zupfen und fein hacken. Den Knoblauch schälen und in kleine Würfel schneiden.",
+      "Die Frühlingszwiebeln waschen, trocken tupfen und in Ringe schneiden. Ein paar Ringe für die Garnierung zur Seite legen.",
+      "Den Parmesan fein reiben.",
+      "6 Eier in eine Schüssel aufschlagen, Salz, Pfeffer und den geriebenen Parmesan hinzugeben. Mit einem Schwingbesen kräftig verquirlen, bis die Masse leicht schäumt.",
+      "Sobald der Speck ausreichend Fett abgegeben hat, Rosmarin, Frühlingszwiebeln und Knoblauch in die Pfanne geben. Alles gut vermischen und etwa 1 Minute im Fett anbraten.",
+      "Die Butter hinzufügen, schmelzen lassen und in der Pfanne verteilen. Anschliessend den Mais untermischen und mit Salz und Pfeffer würzen.",
+      "Die Ei-Parmesan-Mischung in die Pfanne giessen und mit einem Kochlöffel gleichmässig verteilen. Dabei gut mit den anderen Zutaten vermischen.",
+      "Sobald die Eimasse am Boden zu stocken beginnt, das Rühren beenden. Die Pfanne noch etwa 1 Minute auf dem Herd stehen lassen.",
+      "Die restlichen 4 Eier vorsichtig auf die Frittata aufschlagen, als würde man Spiegeleier zubereiten.",
+      "Die Pfanne für 8-10 Minuten in den Backofen schieben, bis das Eiweiss der Spiegeleier gestockt und die Ei-Parmesan-Mischung goldbraun gebacken ist.",
+      "Die Frittata aus dem Ofen nehmen und 5 Minuten abkühlen lassen. Vor dem Servieren die Spiegeleier mit Salz und Pfeffer würzen und mit den zurückbehaltenen Frühlingszwiebeln garnieren."
     ],
     "dietCategory": "meat",
-    "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/02/frittata_mit_speck_mais_und_spiegelei01.jpg",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei_21-1781359059158.jpg",
     "imageZutaten": null,
     "imageKochen": null,
     "allergens": [
@@ -3006,11 +3063,20 @@
     "name": "Nudeln al Pollo",
     "category": "Pasta",
     "timeMinutes": 35,
-    "tags": [],
-    "weatherType": "neutral",
+    "tags": [
+      "Fleischhaltig",
+      "Mealprep-geeignet",
+      "Frühling",
+      "Herbst",
+      "Winter",
+      "Mittagsgericht",
+      "Abendgericht",
+      "Kinderfreundlich"
+    ],
+    "weatherType": "kalt",
     "source": "Familien-Rezeptbuch",
     "basePortions": 4,
-    "description": "Breite Nudeln mit saftigem Poulet, Peperoni und Sauerrahmsauce.",
+    "description": "Poulet, Nudeln und Peperoni in cremiger Sauce – ein unkompliziertes Lieblingsgericht zum Wohlfühlen.",
     "ingredients": [
       {
         "name": "Pouletfleisch, geschnetzelt",
@@ -3019,9 +3085,21 @@
         "perPortions": 4
       },
       {
-        "name": "breite Krausnudeln",
-        "amount": 400,
-        "unit": "g",
+        "name": "Sojasauce",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Pouletgewürz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebeln",
+        "amount": 2,
+        "unit": "Stk",
         "perPortions": 4
       },
       {
@@ -3031,9 +3109,27 @@
         "perPortions": 4
       },
       {
-        "name": "Zwiebeln",
+        "name": "Bratbutter",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
         "amount": 2,
-        "unit": "Stk",
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Weisswein (optional)",
+        "amount": 1,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "breite Krausnudeln",
+        "amount": 400,
+        "unit": "g",
         "perPortions": 4
       },
       {
@@ -3046,30 +3142,6 @@
         "name": "Rahm",
         "amount": 1,
         "unit": "dl",
-        "perPortions": 4
-      },
-      {
-        "name": "Sojasauce",
-        "amount": 3,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Weisswein",
-        "amount": 1,
-        "unit": "dl",
-        "perPortions": 4
-      },
-      {
-        "name": "Pouletgewürz",
-        "amount": 1,
-        "unit": "TL",
-        "perPortions": 4
-      },
-      {
-        "name": "Bratbutter",
-        "amount": 1,
-        "unit": "EL",
         "perPortions": 4
       },
       {
@@ -3086,15 +3158,18 @@
       }
     ],
     "steps": [
-      "1. Poulet in Sojasauce und Pouletgewürz marinieren (¼ h), dann knusprig anbraten.",
-      "2. Zwiebeln andämpfen, Peperoni beifügen. Sojasauce und Wein dazugeben, 10 Min. köcheln.",
-      "3. Nudeln al dente kochen.",
-      "4. Kurz vor Servieren Sauerrahm und Rahm zu Nudeln geben, erhitzen. Peperoni und Poulet beifügen."
+      "Poulet in 2 EL Sojasauce und Pouletgewürz marinieren (15 Minuten).",
+      "Unterdessen Zwiebeln hacken,. Peperoni würfeln.",
+      "Poulet in Bratbutter knusprig anbraten.",
+      "Olivenöl in gleicher Pfanne erhitzen und Zwiebeln andämpfen, Peperoni beigeben und andünsten.",
+      "2 EL Sojasauce und Wein dazugeben, 10 Minuten köcheln.",
+      "In der Zwischenzeit Nudeln in ausreichend Salzwasser al dente kochen.",
+      "Kurz vor Servieren Sauerrahm und Rahm zu Nudeln geben, kurz erhitzen.",
+      "Peperoni und Poulet beifügen. Mit Salz, Pfeffer, Sojasauce und Pouletgewürz abschmecken."
     ],
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": "",
     "allergens": [
       "gluten",
       "milch",
@@ -3112,25 +3187,28 @@
   },
   {
     "id": "fam-30",
-    "name": "Nudeln mit Gemüse-Poulet-Sauce",
+    "name": "Nudeln mit Poulet-Gemüse-Sauce",
     "category": "Pasta",
     "timeMinutes": 35,
-    "tags": [],
+    "tags": [
+      "Fleischhaltig",
+      "Mealprep-geeignet",
+      "Kinderfreundlich",
+      "Frühling",
+      "Herbst",
+      "Winter",
+      "Mittagsgericht",
+      "Abendgericht"
+    ],
     "weatherType": "neutral",
     "source": "Familien-Rezeptbuch",
     "basePortions": 4,
-    "description": "Pasta mit würziger Poulet-Gemüse-Sauce in Rahm.",
+    "description": "Zartes Poulet, knackiges Gemüse und feine Rahmsauce mit Curry – ein unkompliziertes Pastagericht für jeden Tag.",
     "ingredients": [
       {
-        "name": "Pouletfleisch, geschnetzelt",
-        "amount": 500,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Nudeln",
-        "amount": 400,
-        "unit": "g",
+        "name": "Zwiebeln",
+        "amount": 2,
+        "unit": "Stk",
         "perPortions": 4
       },
       {
@@ -3152,27 +3230,39 @@
         "perPortions": 4
       },
       {
-        "name": "Rahm",
-        "amount": 3,
-        "unit": "dl",
-        "perPortions": 4
-      },
-      {
-        "name": "Zwiebeln",
-        "amount": 2,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
         "name": "Chilischote",
         "amount": 1,
         "unit": "Stk",
         "perPortions": 4
       },
       {
+        "name": "Pouletfleisch, geschnetzelt",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
         "name": "Bratbutter",
         "amount": 1,
         "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Nudeln",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Rahm",
+        "amount": 3,
+        "unit": "dl",
         "perPortions": 4
       },
       {
@@ -3196,7 +3286,7 @@
       {
         "name": "Salz",
         "amount": 1,
-        "unit": "Prise",
+        "unit": "TL",
         "perPortions": 4
       },
       {
@@ -3207,15 +3297,18 @@
       }
     ],
     "steps": [
-      "1. Gemüse klein schneiden.",
-      "2. Poulet anbraten, würzen, warmstellen.",
-      "3. Zwiebeln andünsten, Gemüse beifügen, würzen. 10–15 Min. köcheln.",
-      "4. Rahm und Poulet dazugeben."
+      "Zwiebeln hacken. Blumenkohl, Peperoni und Zucchetti klein schneiden. Chilischote entkernen und fein schneiden.",
+      "Poulet in Bratbutter anbraten. Mit Curry, scharfem Paprika, Salz und Pfeffer würzen, herausnehmen und warm halten.",
+      "Olivenöl in gleicher Pfanne erhitzen. Zwiebeln beigeben und andünsten.",
+      "Gemüse beigeben. Mit Curry, scharfem Paprika, Provence-Kräutern, Salz und Pfeffer würzen.",
+      "Gemüse zugedeckt ca. 10–15 Minuten köcheln lassen.",
+      "Inzwischen Teigwaren nach Packungsangabe al dente kochen.",
+      "Rahm und Poulet zum Gemüse geben und kurz erhitzen.",
+      "Nudeln mit Poulet-Gemüse-Sauce anrichten und servieren."
     ],
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": "",
     "allergens": [
       "gluten",
       "milch"
@@ -3233,28 +3326,38 @@
     "id": "fam-38",
     "name": "Spaghetti Carbonara",
     "category": "Pasta",
-    "timeMinutes": 25,
-    "tags": [],
-    "weatherType": "neutral",
+    "timeMinutes": 20,
+    "tags": [
+      "Fleischhaltig",
+      "Mealprep-geeignet",
+      "Frühling",
+      "Herbst",
+      "Winter",
+      "Mittagsgericht",
+      "Abendgericht",
+      "Italienisch",
+      "Kinderfreundlich"
+    ],
+    "weatherType": "kalt",
     "source": "Familien-Rezeptbuch",
     "basePortions": 4,
-    "description": "Cremige Carbonara mit Schinken, Ei-Rahm-Sauce und Sbrinz.",
+    "description": "Feine Spaghetti in cremiger Sauce mit würzigem Schinken – einfach, klassisch und immer beliebt.",
     "ingredients": [
       {
         "name": "Spaghetti",
-        "amount": 400,
+        "amount": 500,
         "unit": "g",
         "perPortions": 4
       },
       {
-        "name": "Schinken oder Speck",
+        "name": "Schinken",
         "amount": 300,
         "unit": "g",
         "perPortions": 4
       },
       {
         "name": "Knoblauch",
-        "amount": 2,
+        "amount": 3,
         "unit": "Zehen",
         "perPortions": 4
       },
@@ -3265,7 +3368,7 @@
         "perPortions": 4
       },
       {
-        "name": "Ei",
+        "name": "Ei (optional)",
         "amount": 1,
         "unit": "Stk",
         "perPortions": 4
@@ -3284,7 +3387,7 @@
       },
       {
         "name": "Olivenöl",
-        "amount": 1,
+        "amount": 2,
         "unit": "EL",
         "perPortions": 4
       },
@@ -3302,10 +3405,11 @@
       }
     ],
     "steps": [
-      "1. Ei, Rahm, Käse, Sambal mixen.",
-      "2. Spaghetti kochen.",
-      "3. Schinken in Bratbutter anbraten, Knoblauch am Schluss.",
-      "4. Abgeschüttete Spaghetti vom Herd, Olivenöl darunter, Eier-Rahmgemisch einrühren, Schinken beigeben."
+      "Schinken in Streifen schneiden.",
+      "Rahm, Käse, Gewürze und optional ein Ei in einem Becher mit dem Pürierstab mixen.",
+      "Spaghetti kochen.",
+      "Unterdessen Schinken in Bratbutter anbraten, am Schluss Knoblauch dazupressen und kurz mitbraten.",
+      "Abgeschüttete Spaghetti zurück in die Pfanne geben, vom Herd nehmen. Olivenöl und kurz vor dem Servieren Eier-Rahmgemisch daruntermischen, zuletzt Schinken beigeben."
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fam-38-1780699276557.jpg",
     "imageZutaten": null,
@@ -3331,23 +3435,41 @@
     "timeMinutes": 20,
     "tags": [
       "Vegetarisch",
-      "Sommer"
+      "Sommer",
+      "Vegan",
+      "Mealprep-geeignet",
+      "Kinderfreundlich",
+      "Mittagsgericht",
+      "Abendgericht",
+      "Italienisch"
     ],
     "weatherType": "warm",
     "source": "Familien-Rezeptbuch",
     "basePortions": 4,
-    "description": "Frische, leichte Cherrytomaten-Sauce mit Basilikum.",
+    "description": "Sonnige Tomaten, duftender Basilikum und Spaghetti – ein frischer, unkomplizierter Pasta-Klassiker für jeden Tag.",
     "ingredients": [
       {
         "name": "Spaghetti",
-        "amount": 400,
+        "amount": 500,
         "unit": "g",
         "perPortions": 4
       },
       {
-        "name": "Cherrytomaten",
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
         "amount": 2,
-        "unit": "Karton",
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Cherrytomaten",
+        "amount": 1,
+        "unit": "kg",
         "perPortions": 4
       },
       {
@@ -3363,8 +3485,8 @@
         "perPortions": 4
       },
       {
-        "name": "Butter",
-        "amount": 1,
+        "name": "Olivenöl",
+        "amount": 4,
         "unit": "EL",
         "perPortions": 4
       },
@@ -3388,10 +3510,12 @@
       }
     ],
     "steps": [
-      "1. Knoblauch in Butter andämpfen.",
-      "2. Halbierte Cherrytomaten beifügen, mitdämpfen, würzen.",
-      "3. Basilikum erst gegen Schluss dazugeben.",
-      "4. Unterdessen Spaghetti kochen."
+      "Zwiebel und Knoblauch fein hacken. Cherrytomaten halbieren. Basilikum fein schneiden.",
+      "Reichlich Olivenöl in einer Pfanne erwärmen. Zwiebel und Knoblauch beigeben und andämpfen.",
+      "Cherrytomaten hinzufügen und einige Minuten mitdämpfen. Mit Salz, Pfeffer und italienischen Kräutern würzen.",
+      "Inzwischen Spaghetti in Salzwasser al dente kochen.",
+      "Basilikum kurz vor Schluss zu Tomaten geben und unterrühren.",
+      "Spaghetti abgiessen, mit Tomatensauce mischen und servieren."
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fam-39-1780699369435.jpg",
     "imageZutaten": null,
@@ -3986,19 +4110,41 @@
   },
   {
     "id": "ocr-04",
-    "name": "Bolognesesauce Marcello",
+    "name": "Spaghetti Bolognese",
     "category": "Pasta",
     "timeMinutes": 75,
-    "tags": [],
+    "tags": [
+      "Fleischhaltig",
+      "Mealprep-geeignet",
+      "Kinderfreundlich",
+      "Frühling",
+      "Herbst",
+      "Winter",
+      "Mittagsgericht",
+      "Abendgericht",
+      "Italienisch"
+    ],
     "weatherType": "kalt",
-    "source": "Familien-Rezeptbuch (OCR)",
+    "source": "Familien-Rezeptbuch",
     "basePortions": 4,
-    "description": "Klassische Bolognesesauce mit Rindsfleisch nach dem Rezept von Marcello.",
+    "description": "Langsam geschmort, herzhaft gewürzt und mit Parmesan serviert – Spaghetti Bolognese zum Wohlfühlen.",
     "ingredients": [
       {
         "name": "Rindsfleisch, gehackt",
         "amount": 300,
         "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Lorbeerblatt",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 4,
+        "unit": "EL",
         "perPortions": 4
       },
       {
@@ -4014,21 +4160,15 @@
         "perPortions": 4
       },
       {
-        "name": "Rüebli, geraffelt",
+        "name": "Rüebli",
         "amount": 1,
         "unit": "Stk",
         "perPortions": 4
       },
       {
-        "name": "Sellerie, geraffelt",
+        "name": "gehackte Tomaten",
         "amount": 1,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Tomaten, geschält",
-        "amount": 5,
-        "unit": "Stk",
+        "unit": "Dose",
         "perPortions": 4
       },
       {
@@ -4038,7 +4178,7 @@
         "perPortions": 4
       },
       {
-        "name": "Rotwein",
+        "name": "Rotwein (optional)",
         "amount": 1,
         "unit": "dl",
         "perPortions": 4
@@ -4050,23 +4190,37 @@
         "perPortions": 4
       },
       {
-        "name": "Lorbeerblatt",
+        "name": "Salz",
         "amount": 1,
-        "unit": "Stk",
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Reibkäse (z.B. Parmesan oder Sbrinz)",
+        "amount": 1,
+        "unit": "g",
         "perPortions": 4
       }
     ],
     "steps": [
-      "1. Fleisch in heissem Öl anbraten, würzen.",
-      "2. Zwiebeln, Knoblauch, Rüebli, Sellerie 5 Min. mitdämpfen.",
-      "3. Mit Wein ablöschen, einkochen.",
-      "4. Tomaten, Tomatenpüree und Bouillon beifügen.",
-      "5. 1 Stunde köcheln lassen."
+      "Zwiebeln und Knoblauch fein hacken. Rüebli klein würfeln.",
+      "Olivenöl in einer Pfanne erhitzen. Fleisch kräftig anbraten, Lorbeerblatt kurz mitbraten.",
+      "Zwiebeln, Knoblauch und Rüebli beigeben und mitdämpfen. Mit Salz, Pfeffer und 2 TL italienischen Kräutern würzen.",
+      "Tomaten und Tomatenpüree beigeben und ca. 5 Minuten mitdämpfen.",
+      "Optional mit Wein ablöschen und Flüssigkeit zur Hälfte einkochen lassen.",
+      "Bouillon beigeben und Sauce bei kleiner Hitze ca. 1 Stunde köcheln lassen.",
+      "Spaghetti in Salzwasser al dente kochen.",
+      "Spaghetti mit Sauce anrichten und mit geriebenem Parmesan oder Sbrinz servieren."
     ],
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": "",
     "allergens": [
       "sellerie",
       "sulfite"
@@ -4082,40 +4236,31 @@
   },
   {
     "id": "ocr-07",
-    "name": "Vollkornnudeln mit Auberginen (Cinque Pì)",
+    "name": "Penne mit Auberginen-Tomatensauce",
     "category": "Pasta",
     "timeMinutes": 40,
     "tags": [
       "Vegetarisch",
-      "Italienisch"
+      "Italienisch",
+      "Pescetarisch",
+      "Mealprep-geeignet",
+      "Kinderfreundlich",
+      "Frühling",
+      "Sommer",
+      "Herbst",
+      "Winter",
+      "Mittagsgericht",
+      "Abendgericht"
     ],
     "weatherType": "warm",
     "source": "Familien-Rezeptbuch (OCR)",
     "basePortions": 4,
-    "description": "Vollkornnudeln mit würziger Auberginen-Sardellenfiletsauce.",
+    "description": "Aromatische Auberginen, fruchtige Tomaten und frischer Basilikum – mediterrane Pasta, einfach und voller Geschmack.",
     "ingredients": [
-      {
-        "name": "Vollkornnudeln",
-        "amount": 400,
-        "unit": "g",
-        "perPortions": 4
-      },
       {
         "name": "Auberginen",
         "amount": 400,
         "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Pelati, gehackt (Dose)",
-        "amount": 400,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Sardellenfilets",
-        "amount": 4,
-        "unit": "Stk",
         "perPortions": 4
       },
       {
@@ -4137,23 +4282,67 @@
         "perPortions": 4
       },
       {
+        "name": "Gehackte Tomaten",
+        "amount": 1,
+        "unit": "Dose",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Sardellenfilets (optional)",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
         "name": "Parmesan",
         "amount": 3,
         "unit": "EL",
         "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Vollkornteigwaren (z.B Penne)",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Reibkäse (z.B. Parmesan oder Sbrinz)",
+        "amount": 1,
+        "unit": "g",
+        "perPortions": 4
       }
     ],
     "steps": [
-      "1. Nudeln al dente kochen.",
-      "2. Öl erhitzen, Zwiebel und Knoblauch andämpfen.",
-      "3. Auberginen würfeln, mitdämpfen.",
-      "4. Pelati beifügen, 20–30 Min. köcheln.",
-      "5. Sardellen und Basilikum unterrühren, würzen. Mit Nudeln servieren."
+      "Zwiebel und Knoblauch fein hacken. Aubergine in Würfel schneiden. Basilikum fein schneiden.",
+      "Olivenöl in einer Pfanne erhitzen. Zwiebel und Knoblauch beigeben und andämpfen.",
+      "Aubergine hinzufügen und einige Minuten mitdämpfen.",
+      "Gehackte Tomaten beigeben. Sauce bei kleiner Hitze ca. 20–30 Minuten köcheln lassen.",
+      "Gegen Ende Penne in Salzwasser al dente kochen.",
+      "Optional Sardellen hacken.",
+      "Basilikum und Sardellen unter Sauce rühren. Mit Salz und Pfeffer abschmecken.",
+      "Penne abgiessen, mit Sauce anrichten und mit geriebenem Parmesan servieren."
     ],
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": "",
     "allergens": [
       "fisch",
       "gluten",
@@ -4166,44 +4355,14 @@
       "carbs": 75.4,
       "fiber": 11.3
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "fish"
   },
   {
     "id": "pas-01",
-    "name": "Linsen-Gemüse-Bolognese",
+    "name": "Spaghetti mit Linsen-Gemüse-Bolognese",
     "category": "Pasta",
     "timeMinutes": 40,
     "ingredients": [
-      {
-        "name": "Spaghetti",
-        "amount": 320,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Rote Linsen",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Passierte Tomaten",
-        "amount": 500,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Karotten",
-        "amount": 2,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Sellerie",
-        "amount": 2,
-        "unit": "Stangen",
-        "perPortions": 4
-      },
       {
         "name": "Zwiebel",
         "amount": 1,
@@ -4212,8 +4371,38 @@
       },
       {
         "name": "Knoblauch",
-        "amount": 3,
+        "amount": 2,
         "unit": "Zehen",
+        "perPortions": 4
+      },
+      {
+        "name": "Karotten",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knollensellerie",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Peperoni",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Zucchetti",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Cherrytomaten",
+        "amount": 250,
+        "unit": "g",
         "perPortions": 4
       },
       {
@@ -4221,20 +4410,90 @@
         "amount": 3,
         "unit": "EL",
         "perPortions": 4
+      },
+      {
+        "name": "Tomatenmark",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Weisswein (optional)",
+        "amount": 1,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Linsen (gelb oder rot)",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebouillon",
+        "amount": 5,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "italienische Kräuter",
+        "amount": 2,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "All'arrabbiata-Gewürz",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Peffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Spaghetti",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 4
       }
     ],
     "weatherType": "kalt",
     "source": "Cuiseline",
     "basePortions": 4,
-    "description": "Vegane Bolognese aus Linsen und Gemüse.",
-    "steps": [],
-    "tips": "",
+    "description": "Bunte Gemüsevielfalt, würzige Linsen und al dente gekochte Spaghetti – pflanzliches Soulfood für jeden Tag.",
+    "steps": [
+      "Zwiebeln, Knoblauch, Karotte, Knollensellerie, Zucchetti und Peperoni hacken. Cherrytomaten halbieren.",
+      "Olivenöl in einer Pfanne erhitzen. Gemüse beigeben und andämpfen.",
+      "Tomatenmark hinzufügen und kurz mitrösten.",
+      "Linsen beigeben und kurz mitdämpfen.",
+      "Optional mit Weisswein ablöschen und Flüssigkeit einkochen lassen.",
+      "Gemüsebouillon beigeben und aufkochen. Mit italienischen Kräutern, All’arrabbiata-Gewürz, Salz und Pfeffer würzen.",
+      "Sauce bei kleiner Hitze ca. 15 Minuten köcheln lassen.",
+      "Gegen Ende Spaghetti nach Packungsangabe al dente kochen.",
+      "Cherrytomaten zur Sauce geben und ca. 5 Minuten mitkochen. Abschmecken.",
+      "Spaghetti mit Linsen-Gemüse-Sauce anrichten und servieren."
+    ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/fvt-03-1780871671442.jpg",
     "tags": [
       "Mealprep-geeignet",
       "Mittagsgericht",
       "Herbst",
-      "Winter"
+      "Winter",
+      "Kinderfreundlich",
+      "Frühling",
+      "Abendgericht",
+      "Italienisch",
+      "Vegan",
+      "Vegetarisch"
     ],
     "allergens": [
       "gluten",
@@ -4247,52 +4506,16 @@
       "carbs": 80.6,
       "fiber": 12.4
     },
-    "dietCategory": "vegetarian",
-    "imageZutaten": null
+    "dietCategory": "vegan",
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "pas-02",
     "name": "Linsen-Gemüse-Lasagne",
     "category": "Aufläufe & Gratins",
     "timeMinutes": 75,
-    "ingredients": [
-      {
-        "name": "Lasagneblätter",
-        "amount": 250,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Rote Linsen",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Passierte Tomaten",
-        "amount": 500,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Gemischtes Gemüse",
-        "amount": 400,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Béchamelsauce (Fertig)",
-        "amount": 400,
-        "unit": "ml",
-        "perPortions": 4
-      },
-      {
-        "name": "Käse (gerieben)",
-        "amount": 150,
-        "unit": "g",
-        "perPortions": 4
-      }
-    ],
+    "ingredients": [],
     "weatherType": "kalt",
     "source": "Cuiseline",
     "basePortions": 4,
@@ -4303,7 +4526,9 @@
       "Mittagsgericht",
       "Herbst",
       "Winter",
-      "Ofengericht"
+      "Ofengericht",
+      "Abendgericht",
+      "Vegetarisch"
     ],
     "imageZutaten": null,
     "imageKochen": null,
@@ -4318,7 +4543,25 @@
       "carbs": 74.2,
       "fiber": 8.9
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "steps": [
+      "Zwiebel und Knoblauch fein hacken. Karotte, Knollensellerie, Zucchetti, Peperoni und Champignons klein schneiden.",
+      "Olivenöl in einer grossen Pfanne erhitzen. Gemüse und Champignons beigeben und andämpfen.",
+      "Tomatenpüree hinzufügen und kurz mitrösten.",
+      "Linsen beigeben und kurz mitdämpfen.",
+      "Optional mit Weisswein ablöschen und Flüssigkeit einkochen lassen.",
+      "Gemüsebouillon beigeben und aufkochen. Mit italienischen Kräutern, All’arrabbiata-Gewürz, Salz und Pfeffer würzen.",
+      "Linsen-Gemüse-Sauce bei kleiner Hitze ca. 15 Minuten köcheln lassen. Sauce abschmecken.",
+      "Backofen auf 200 °C Ober-/Unterhitze vorheizen. Gratinform mit wenig Butter einfetten.",
+      "Für Béchamelsauce Butter in einer Pfanne schmelzen. Mehl beigeben und unter Rühren mit Schwingbesen kurz dünsten, ohne dass Mehl Farbe annimmt.",
+      "Milch oder Sojadrink auf einmal dazugiessen und unter ständigem Rühren aufkochen.",
+      "Mit Salz, Pfeffer und Muskatnuss würzen. Hitze reduzieren und Sauce unter gelegentlichem Rühren ca. 10 Minuten köcheln lassen, bis sie sämig ist.",
+      "Wenig Béchamelsauce auf Boden der vorbereiteten Form verteilen.",
+      "Lasagneblätter, Linsen-Gemüse-Sauce, Béchamelsauce, Mozzarella und Sbrinz lagenweise einschichten.",
+      "Vorgang wiederholen, bis alle Zutaten aufgebraucht sind. Mit Lasagneblättern und Béchamelsauce abschliessen.",
+      "Restlichen Mozzarella und Sbrinz darüberstreuen.",
+      "Lasagne in Ofenmitte ca. 35–40 Minuten backen, bis Oberfläche goldbraun ist."
+    ]
   },
   {
     "id": "pas-03",
@@ -5311,122 +5554,6 @@
       "fat": 16.8,
       "carbs": 76.4,
       "fiber": 11.2
-    }
-  },
-  {
-    "id": "pas-17",
-    "name": "Linsen-Bolognese mit Spaghetti",
-    "category": "Pasta",
-    "timeMinutes": 30,
-    "ingredients": [
-      {
-        "name": "Spaghetti",
-        "amount": 400,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Rote Linsen",
-        "amount": 250,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Zwiebel",
-        "amount": 2,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Karotten",
-        "amount": 2,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Champignons",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Knoblauchzehen",
-        "amount": 3,
-        "unit": "Zehen",
-        "perPortions": 4
-      },
-      {
-        "name": "Tomatenmark",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Passierte Tomaten",
-        "amount": 500,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Gestückelte Tomaten (Dose)",
-        "amount": 400,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Gemüsebrühe",
-        "amount": 480,
-        "unit": "ml",
-        "perPortions": 4
-      },
-      {
-        "name": "Italienische Kräuter",
-        "amount": 2,
-        "unit": "TL",
-        "perPortions": 4
-      },
-      {
-        "name": "Olivenöl",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Salz und Pfeffer",
-        "amount": 1,
-        "unit": "Prise",
-        "perPortions": 4
-      }
-    ],
-    "weatherType": "neutral",
-    "source": "Bianca Zapatka",
-    "basePortions": 4,
-    "description": "Reichhaltige vegane Bolognese mit roten Linsen – in nur 30 Minuten fertig und voller Umami.",
-    "steps": [
-      "1. Öl in grosser Pfanne erhitzen. Zwiebeln 2 Minuten glasig dünsten.",
-      "2. Karotten, Champignons und Knoblauch hinzufügen, 5–7 Minuten anbraten.",
-      "3. Tomatenmark und Kräuter einrühren, 1–2 Minuten anrösten.",
-      "4. Linsen, passierte und gestückelte Tomaten sowie Gemüsebrühe zugeben, verrühren. Aufkochen und zugedeckt 15–20 Minuten köcheln bis Linsen gar sind.",
-      "5. Spaghetti in Salzwasser al dente kochen. Abtropfen lassen.",
-      "6. Bolognese mit Salz und Pfeffer abschmecken. Mit Spaghetti servieren, optional mit veganem Parmesan."
-    ],
-    "tips": "Die Sauce schmeckt auch grossartig als Füllung für Lasagne oder in Zucchetti-Boots.",
-    "imageUrl": null,
-    "tags": [
-      "Vegan",
-      "Mealprep-geeignet",
-      "Italienisch"
-    ],
-    "dietCategory": "vegan",
-    "allergens": [
-      "gluten"
-    ],
-    "nutrition": {
-      "kcal": 518,
-      "protein": 24.6,
-      "fat": 7.2,
-      "carbs": 88.5,
-      "fiber": 14.3
     }
   },
   {
@@ -25897,17 +26024,25 @@
   },
   {
     "id": "fam-15",
-    "name": "Gemüse-Bolognese",
-    "category": "Vegetarische Hauptgerichte",
+    "name": "Spaghetti mit Gemüse-Bolognese",
+    "category": "Pasta",
     "timeMinutes": 35,
     "tags": [
       "Vegetarisch",
-      "Vegan"
+      "Vegan",
+      "Kinderfreundlich",
+      "Mealprep-geeignet",
+      "Frühling",
+      "Herbst",
+      "Winter",
+      "Mittagsgericht",
+      "Abendgericht",
+      "Italienisch"
     ],
     "weatherType": "neutral",
     "source": "Familien-Rezeptbuch",
     "basePortions": 4,
-    "description": "Vollwertige Bolognese aus Zucchetti, Peperoni, Rüebli und Cherrytomaten.",
+    "description": "Kräftig, gemüsig und wunderbar aromatisch – diese vollwertige vegane Bolognese bringt Abwechslung auf den Teller.",
     "ingredients": [
       {
         "name": "Zwiebeln",
@@ -25922,7 +26057,7 @@
         "perPortions": 4
       },
       {
-        "name": "Rüebli",
+        "name": "Karotten",
         "amount": 3,
         "unit": "Stk",
         "perPortions": 4
@@ -25935,24 +26070,24 @@
       },
       {
         "name": "Champignons",
-        "amount": 100,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Cherrytomaten",
         "amount": 200,
         "unit": "g",
         "perPortions": 4
       },
       {
-        "name": "Tomatenpüree",
+        "name": "Cherrytomaten",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomatenmark",
         "amount": 1,
         "unit": "EL",
         "perPortions": 4
       },
       {
-        "name": "Weisswein",
+        "name": "Weisswein (optional)",
         "amount": 1,
         "unit": "dl",
         "perPortions": 4
@@ -25992,19 +26127,28 @@
         "amount": 1,
         "unit": "Prise",
         "perPortions": 4
+      },
+      {
+        "name": "Spaghetti",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 4
       }
     ],
     "steps": [
-      "1. Gemüse hacken (nicht zu fein).",
-      "2. Öl erhitzen, Gemüse und Pilze andämpfen.",
-      "3. Tomatenpüree beifügen, mit Wein ablöschen.",
-      "4. Würzen (All'Arrabbiata, Ital. Kräuter, Salz, Pfeffer), Bouillon dazugeben, 20 Min. köcheln.",
-      "5. Cherrytomaten zuletzt dazugeben, 5 Min. fertigkochen."
+      "Zwiebeln, Knoblauch, Karotte, Knollensellerie, Zucchetti, Peperoni und Champignons hacken. Cherrytomaten halbieren.",
+      "Olivenöl in einer Pfanne erhitzen. Gemüse und Champignons beigeben und andämpfen.",
+      "Tomatenmark hinzufügen und kurz mitrösten.",
+      "Optional mit Weisswein ablöschen und Flüssigkeit einkochen lassen.",
+      "Gemüsebouillon beigeben und aufkochen. Mit italienischen Kräutern, All’arrabbiata Gewürz, Salz und Pfeffer würzen.",
+      "Sauce bei kleiner Hitze ca. 15 Minuten köcheln lassen.",
+      "Gegen Ende Spaghetti nach Packungsangabe al dente kochen.",
+      "Cherrytomaten zur Sauce geben und ca. 5 Minuten mitkochen. Abschmecken.",
+      "Spaghetti mit Gemüse-Sauce anrichten und servieren."
     ],
     "imageUrl": null,
     "imageZutaten": null,
     "imageKochen": null,
-    "tips": "",
     "allergens": [
       "sulfite"
     ],

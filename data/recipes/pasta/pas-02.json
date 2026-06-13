@@ -3,44 +3,7 @@
   "name": "Linsen-Gemüse-Lasagne",
   "category": "Aufläufe & Gratins",
   "timeMinutes": 75,
-  "ingredients": [
-    {
-      "name": "Lasagneblätter",
-      "amount": 250,
-      "unit": "g",
-      "perPortions": 4
-    },
-    {
-      "name": "Rote Linsen",
-      "amount": 200,
-      "unit": "g",
-      "perPortions": 4
-    },
-    {
-      "name": "Passierte Tomaten",
-      "amount": 500,
-      "unit": "g",
-      "perPortions": 4
-    },
-    {
-      "name": "Gemischtes Gemüse",
-      "amount": 400,
-      "unit": "g",
-      "perPortions": 4
-    },
-    {
-      "name": "Béchamelsauce (Fertig)",
-      "amount": 400,
-      "unit": "ml",
-      "perPortions": 4
-    },
-    {
-      "name": "Käse (gerieben)",
-      "amount": 150,
-      "unit": "g",
-      "perPortions": 4
-    }
-  ],
+  "ingredients": [],
   "weatherType": "kalt",
   "source": "Cuiseline",
   "basePortions": 4,
@@ -51,7 +14,9 @@
     "Mittagsgericht",
     "Herbst",
     "Winter",
-    "Ofengericht"
+    "Ofengericht",
+    "Abendgericht",
+    "Vegetarisch"
   ],
   "imageZutaten": null,
   "imageKochen": null,
@@ -66,5 +31,23 @@
     "carbs": 74.2,
     "fiber": 8.9
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "steps": [
+    "Zwiebel und Knoblauch fein hacken. Karotte, Knollensellerie, Zucchetti, Peperoni und Champignons klein schneiden.",
+    "Olivenöl in einer grossen Pfanne erhitzen. Gemüse und Champignons beigeben und andämpfen.",
+    "Tomatenpüree hinzufügen und kurz mitrösten.",
+    "Linsen beigeben und kurz mitdämpfen.",
+    "Optional mit Weisswein ablöschen und Flüssigkeit einkochen lassen.",
+    "Gemüsebouillon beigeben und aufkochen. Mit italienischen Kräutern, All’arrabbiata-Gewürz, Salz und Pfeffer würzen.",
+    "Linsen-Gemüse-Sauce bei kleiner Hitze ca. 15 Minuten köcheln lassen. Sauce abschmecken.",
+    "Backofen auf 200 °C Ober-/Unterhitze vorheizen. Gratinform mit wenig Butter einfetten.",
+    "Für Béchamelsauce Butter in einer Pfanne schmelzen. Mehl beigeben und unter Rühren mit Schwingbesen kurz dünsten, ohne dass Mehl Farbe annimmt.",
+    "Milch oder Sojadrink auf einmal dazugiessen und unter ständigem Rühren aufkochen.",
+    "Mit Salz, Pfeffer und Muskatnuss würzen. Hitze reduzieren und Sauce unter gelegentlichem Rühren ca. 10 Minuten köcheln lassen, bis sie sämig ist.",
+    "Wenig Béchamelsauce auf Boden der vorbereiteten Form verteilen.",
+    "Lasagneblätter, Linsen-Gemüse-Sauce, Béchamelsauce, Mozzarella und Sbrinz lagenweise einschichten.",
+    "Vorgang wiederholen, bis alle Zutaten aufgebraucht sind. Mit Lasagneblättern und Béchamelsauce abschliessen.",
+    "Restlichen Mozzarella und Sbrinz darüberstreuen.",
+    "Lasagne in Ofenmitte ca. 35–40 Minuten backen, bis Oberfläche goldbraun ist."
+  ]
 }

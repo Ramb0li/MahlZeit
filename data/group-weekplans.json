@@ -21,18 +21,7 @@
       "days": {
         "1": {
           "dinner": {
-            "recipeId": "son-01",
-            "isLeftovers": false
-          },
-          "showLunch": false,
-          "lunch": {
-            "recipeId": "son-93",
-            "isLeftovers": false
-          }
-        },
-        "2": {
-          "dinner": {
-            "recipeId": "fam-44",
+            "recipeId": "sup-56",
             "isLeftovers": false
           },
           "showLunch": false,
@@ -41,20 +30,31 @@
             "isLeftovers": false
           }
         },
-        "3": {
+        "2": {
           "dinner": {
-            "recipeId": "pas-16",
+            "recipeId": "pas-56",
             "isLeftovers": false
           },
           "showLunch": false,
           "lunch": {
-            "recipeId": "fvt-12",
+            "recipeId": "sup-19",
+            "isLeftovers": false
+          }
+        },
+        "3": {
+          "dinner": {
+            "recipeId": "son-91",
+            "isLeftovers": false
+          },
+          "showLunch": false,
+          "lunch": {
+            "recipeId": "fvt-11",
             "isLeftovers": false
           }
         },
         "4": {
           "dinner": {
-            "recipeId": "fam-42",
+            "recipeId": "fis-16",
             "isLeftovers": false
           },
           "showLunch": false,
@@ -65,7 +65,7 @@
         },
         "5": {
           "dinner": {
-            "recipeId": "fam-37",
+            "recipeId": "sup-55",
             "isLeftovers": false
           },
           "showLunch": false,
@@ -76,23 +76,23 @@
         },
         "6": {
           "dinner": {
-            "recipeId": "son-09",
+            "recipeId": "fis-20",
             "isLeftovers": false
           },
           "showLunch": false,
           "lunch": {
-            "recipeId": "sal-90",
+            "recipeId": "son-93",
             "isLeftovers": false
           }
         },
         "7": {
           "dinner": {
-            "recipeId": "son-89",
+            "recipeId": "fam-22",
             "isLeftovers": false
           },
           "showLunch": false,
           "lunch": {
-            "recipeId": "fis-17",
+            "recipeId": "rei-04",
             "isLeftovers": false
           }
         }

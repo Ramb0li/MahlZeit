@@ -1,16 +1,24 @@
 {
   "id": "fam-15",
-  "name": "Gemüse-Bolognese",
-  "category": "Vegetarische Hauptgerichte",
+  "name": "Spaghetti mit Gemüse-Bolognese",
+  "category": "Pasta",
   "timeMinutes": 35,
   "tags": [
     "Vegetarisch",
-    "Vegan"
+    "Vegan",
+    "Kinderfreundlich",
+    "Mealprep-geeignet",
+    "Frühling",
+    "Herbst",
+    "Winter",
+    "Mittagsgericht",
+    "Abendgericht",
+    "Italienisch"
   ],
   "weatherType": "neutral",
   "source": "Familien-Rezeptbuch",
   "basePortions": 4,
-  "description": "Vollwertige Bolognese aus Zucchetti, Peperoni, Rüebli und Cherrytomaten.",
+  "description": "Kräftig, gemüsig und wunderbar aromatisch – diese vollwertige vegane Bolognese bringt Abwechslung auf den Teller.",
   "ingredients": [
     {
       "name": "Zwiebeln",
@@ -25,7 +33,7 @@
       "perPortions": 4
     },
     {
-      "name": "Rüebli",
+      "name": "Karotten",
       "amount": 3,
       "unit": "Stk",
       "perPortions": 4
@@ -38,24 +46,24 @@
     },
     {
       "name": "Champignons",
-      "amount": 100,
-      "unit": "g",
-      "perPortions": 4
-    },
-    {
-      "name": "Cherrytomaten",
       "amount": 200,
       "unit": "g",
       "perPortions": 4
     },
     {
-      "name": "Tomatenpüree",
+      "name": "Cherrytomaten",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomatenmark",
       "amount": 1,
       "unit": "EL",
       "perPortions": 4
     },
     {
-      "name": "Weisswein",
+      "name": "Weisswein (optional)",
       "amount": 1,
       "unit": "dl",
       "perPortions": 4
@@ -95,19 +103,28 @@
       "amount": 1,
       "unit": "Prise",
       "perPortions": 4
+    },
+    {
+      "name": "Spaghetti",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
     }
   ],
   "steps": [
-    "1. Gemüse hacken (nicht zu fein).",
-    "2. Öl erhitzen, Gemüse und Pilze andämpfen.",
-    "3. Tomatenpüree beifügen, mit Wein ablöschen.",
-    "4. Würzen (All'Arrabbiata, Ital. Kräuter, Salz, Pfeffer), Bouillon dazugeben, 20 Min. köcheln.",
-    "5. Cherrytomaten zuletzt dazugeben, 5 Min. fertigkochen."
+    "Zwiebeln, Knoblauch, Karotte, Knollensellerie, Zucchetti, Peperoni und Champignons hacken. Cherrytomaten halbieren.",
+    "Olivenöl in einer Pfanne erhitzen. Gemüse und Champignons beigeben und andämpfen.",
+    "Tomatenmark hinzufügen und kurz mitrösten.",
+    "Optional mit Weisswein ablöschen und Flüssigkeit einkochen lassen.",
+    "Gemüsebouillon beigeben und aufkochen. Mit italienischen Kräutern, All’arrabbiata Gewürz, Salz und Pfeffer würzen.",
+    "Sauce bei kleiner Hitze ca. 15 Minuten köcheln lassen.",
+    "Gegen Ende Spaghetti nach Packungsangabe al dente kochen.",
+    "Cherrytomaten zur Sauce geben und ca. 5 Minuten mitkochen. Abschmecken.",
+    "Spaghetti mit Gemüse-Sauce anrichten und servieren."
   ],
   "imageUrl": null,
   "imageZutaten": null,
   "imageKochen": null,
-  "tips": "",
   "allergens": [
     "sulfite"
   ],

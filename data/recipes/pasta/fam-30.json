@@ -1,24 +1,27 @@
 {
   "id": "fam-30",
-  "name": "Nudeln mit Gemüse-Poulet-Sauce",
+  "name": "Nudeln mit Poulet-Gemüse-Sauce",
   "category": "Pasta",
   "timeMinutes": 35,
-  "tags": [],
+  "tags": [
+    "Fleischhaltig",
+    "Mealprep-geeignet",
+    "Kinderfreundlich",
+    "Frühling",
+    "Herbst",
+    "Winter",
+    "Mittagsgericht",
+    "Abendgericht"
+  ],
   "weatherType": "neutral",
   "source": "Familien-Rezeptbuch",
   "basePortions": 4,
-  "description": "Pasta mit würziger Poulet-Gemüse-Sauce in Rahm.",
+  "description": "Zartes Poulet, knackiges Gemüse und feine Rahmsauce mit Curry – ein unkompliziertes Pastagericht für jeden Tag.",
   "ingredients": [
     {
-      "name": "Pouletfleisch, geschnetzelt",
-      "amount": 500,
-      "unit": "g",
-      "perPortions": 4
-    },
-    {
-      "name": "Nudeln",
-      "amount": 400,
-      "unit": "g",
+      "name": "Zwiebeln",
+      "amount": 2,
+      "unit": "Stk",
       "perPortions": 4
     },
     {
@@ -40,27 +43,39 @@
       "perPortions": 4
     },
     {
-      "name": "Rahm",
-      "amount": 3,
-      "unit": "dl",
-      "perPortions": 4
-    },
-    {
-      "name": "Zwiebeln",
-      "amount": 2,
-      "unit": "Stk",
-      "perPortions": 4
-    },
-    {
       "name": "Chilischote",
       "amount": 1,
       "unit": "Stk",
       "perPortions": 4
     },
     {
+      "name": "Pouletfleisch, geschnetzelt",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
       "name": "Bratbutter",
       "amount": 1,
       "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Nudeln",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Rahm",
+      "amount": 3,
+      "unit": "dl",
       "perPortions": 4
     },
     {
@@ -84,7 +99,7 @@
     {
       "name": "Salz",
       "amount": 1,
-      "unit": "Prise",
+      "unit": "TL",
       "perPortions": 4
     },
     {
@@ -95,15 +110,18 @@
     }
   ],
   "steps": [
-    "1. Gemüse klein schneiden.",
-    "2. Poulet anbraten, würzen, warmstellen.",
-    "3. Zwiebeln andünsten, Gemüse beifügen, würzen. 10–15 Min. köcheln.",
-    "4. Rahm und Poulet dazugeben."
+    "Zwiebeln hacken. Blumenkohl, Peperoni und Zucchetti klein schneiden. Chilischote entkernen und fein schneiden.",
+    "Poulet in Bratbutter anbraten. Mit Curry, scharfem Paprika, Salz und Pfeffer würzen, herausnehmen und warm halten.",
+    "Olivenöl in gleicher Pfanne erhitzen. Zwiebeln beigeben und andünsten.",
+    "Gemüse beigeben. Mit Curry, scharfem Paprika, Provence-Kräutern, Salz und Pfeffer würzen.",
+    "Gemüse zugedeckt ca. 10–15 Minuten köcheln lassen.",
+    "Inzwischen Teigwaren nach Packungsangabe al dente kochen.",
+    "Rahm und Poulet zum Gemüse geben und kurz erhitzen.",
+    "Nudeln mit Poulet-Gemüse-Sauce anrichten und servieren."
   ],
   "imageUrl": null,
   "imageZutaten": null,
   "imageKochen": null,
-  "tips": "",
   "allergens": [
     "gluten",
     "milch"

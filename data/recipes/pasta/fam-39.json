@@ -5,23 +5,41 @@
   "timeMinutes": 20,
   "tags": [
     "Vegetarisch",
-    "Sommer"
+    "Sommer",
+    "Vegan",
+    "Mealprep-geeignet",
+    "Kinderfreundlich",
+    "Mittagsgericht",
+    "Abendgericht",
+    "Italienisch"
   ],
   "weatherType": "warm",
   "source": "Familien-Rezeptbuch",
   "basePortions": 4,
-  "description": "Frische, leichte Cherrytomaten-Sauce mit Basilikum.",
+  "description": "Sonnige Tomaten, duftender Basilikum und Spaghetti – ein frischer, unkomplizierter Pasta-Klassiker für jeden Tag.",
   "ingredients": [
     {
       "name": "Spaghetti",
-      "amount": 400,
+      "amount": 500,
       "unit": "g",
       "perPortions": 4
     },
     {
-      "name": "Cherrytomaten",
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
       "amount": 2,
-      "unit": "Karton",
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Cherrytomaten",
+      "amount": 1,
+      "unit": "kg",
       "perPortions": 4
     },
     {
@@ -37,8 +55,8 @@
       "perPortions": 4
     },
     {
-      "name": "Butter",
-      "amount": 1,
+      "name": "Olivenöl",
+      "amount": 4,
       "unit": "EL",
       "perPortions": 4
     },
@@ -62,10 +80,12 @@
     }
   ],
   "steps": [
-    "1. Knoblauch in Butter andämpfen.",
-    "2. Halbierte Cherrytomaten beifügen, mitdämpfen, würzen.",
-    "3. Basilikum erst gegen Schluss dazugeben.",
-    "4. Unterdessen Spaghetti kochen."
+    "Zwiebel und Knoblauch fein hacken. Cherrytomaten halbieren. Basilikum fein schneiden.",
+    "Reichlich Olivenöl in einer Pfanne erwärmen. Zwiebel und Knoblauch beigeben und andämpfen.",
+    "Cherrytomaten hinzufügen und einige Minuten mitdämpfen. Mit Salz, Pfeffer und italienischen Kräutern würzen.",
+    "Inzwischen Spaghetti in Salzwasser al dente kochen.",
+    "Basilikum kurz vor Schluss zu Tomaten geben und unterrühren.",
+    "Spaghetti abgiessen, mit Tomatensauce mischen und servieren."
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fam-39-1780699369435.jpg",
   "imageZutaten": null,

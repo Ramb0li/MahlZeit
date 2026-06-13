@@ -1,43 +1,19 @@
 {
-  "lastUpdated": "2026-06-10T07:56:39.808Z",
+  "lastUpdated": "2026-06-13T09:54:44.090Z",
   "location": "Luzern",
   "rawQuery": "Luzern",
   "days": [
     {
-      "date": "2026-06-10",
-      "tempMin": 11,
-      "tempMax": 14,
-      "condition": "rainy",
-      "conditionLabel": "Regenschauer",
-      "weatherType": "neutral"
-    },
-    {
-      "date": "2026-06-11",
-      "tempMin": 8,
-      "tempMax": 18,
-      "condition": "rainy",
-      "conditionLabel": "Regenschauer",
-      "weatherType": "neutral"
-    },
-    {
-      "date": "2026-06-12",
-      "tempMin": 12,
-      "tempMax": 22,
-      "condition": "rainy",
-      "conditionLabel": "Regen",
-      "weatherType": "neutral"
-    },
-    {
       "date": "2026-06-13",
-      "tempMin": 13,
-      "tempMax": 26,
-      "condition": "partly-cloudy",
-      "conditionLabel": "Teils bewölkt",
+      "tempMin": 12,
+      "tempMax": 28,
+      "condition": "cloudy",
+      "conditionLabel": "Bewölkt",
       "weatherType": "neutral"
     },
     {
       "date": "2026-06-14",
-      "tempMin": 14,
+      "tempMin": 12,
       "tempMax": 28,
       "condition": "partly-cloudy",
       "conditionLabel": "Teils bewölkt",
@@ -45,74 +21,98 @@
     },
     {
       "date": "2026-06-15",
-      "tempMin": 16,
-      "tempMax": 25,
-      "condition": "cloudy",
-      "conditionLabel": "Bewölkt",
-      "weatherType": "warm"
+      "tempMin": 12,
+      "tempMax": 23,
+      "condition": "rainy",
+      "conditionLabel": "Regen",
+      "weatherType": "neutral"
     },
     {
       "date": "2026-06-16",
-      "tempMin": 16,
-      "tempMax": 28,
+      "tempMin": 13,
+      "tempMax": 25,
       "condition": "cloudy",
       "conditionLabel": "Bewölkt",
-      "weatherType": "warm"
+      "weatherType": "neutral"
     },
     {
       "date": "2026-06-17",
-      "tempMin": 20,
-      "tempMax": 29,
+      "tempMin": 18,
+      "tempMax": 31,
       "condition": "cloudy",
       "conditionLabel": "Bewölkt",
       "weatherType": "warm"
     },
     {
       "date": "2026-06-18",
-      "tempMin": 17,
-      "tempMax": 29,
+      "tempMin": 23,
+      "tempMax": 33,
       "condition": "sunny",
       "conditionLabel": "Sonnig",
       "weatherType": "warm"
     },
     {
       "date": "2026-06-19",
-      "tempMin": 18,
-      "tempMax": 29,
-      "condition": "sunny",
-      "conditionLabel": "Sonnig",
-      "weatherType": "warm"
-    },
-    {
-      "date": "2026-06-20",
-      "tempMin": 18,
-      "tempMax": 30,
+      "tempMin": 24,
+      "tempMax": 33,
       "condition": "cloudy",
       "conditionLabel": "Bewölkt",
       "weatherType": "warm"
     },
     {
+      "date": "2026-06-20",
+      "tempMin": 23,
+      "tempMax": 31,
+      "condition": "rainy",
+      "conditionLabel": "Regenschauer",
+      "weatherType": "warm"
+    },
+    {
       "date": "2026-06-21",
       "tempMin": 19,
-      "tempMax": 30,
+      "tempMax": 33,
       "condition": "cloudy",
       "conditionLabel": "Bewölkt",
       "weatherType": "warm"
     },
     {
       "date": "2026-06-22",
-      "tempMin": 18,
-      "tempMax": 31,
+      "tempMin": 20,
+      "tempMax": 34,
       "condition": "rainy",
-      "conditionLabel": "Regen",
+      "conditionLabel": "Gewitter",
       "weatherType": "warm"
     },
     {
       "date": "2026-06-23",
       "tempMin": 20,
-      "tempMax": 31,
+      "tempMax": 26,
       "condition": "rainy",
-      "conditionLabel": "Regenschauer",
+      "conditionLabel": "Regen",
+      "weatherType": "warm"
+    },
+    {
+      "date": "2026-06-24",
+      "tempMin": 18,
+      "tempMax": 27,
+      "condition": "rainy",
+      "conditionLabel": "Regen",
+      "weatherType": "warm"
+    },
+    {
+      "date": "2026-06-25",
+      "tempMin": 20,
+      "tempMax": 29,
+      "condition": "rainy",
+      "conditionLabel": "Regen",
+      "weatherType": "warm"
+    },
+    {
+      "date": "2026-06-26",
+      "tempMin": 18,
+      "tempMax": 26,
+      "condition": "rainy",
+      "conditionLabel": "Regen",
       "weatherType": "warm"
     }
   ]

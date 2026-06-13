@@ -2,28 +2,38 @@
   "id": "fam-38",
   "name": "Spaghetti Carbonara",
   "category": "Pasta",
-  "timeMinutes": 25,
-  "tags": [],
-  "weatherType": "neutral",
+  "timeMinutes": 20,
+  "tags": [
+    "Fleischhaltig",
+    "Mealprep-geeignet",
+    "Frühling",
+    "Herbst",
+    "Winter",
+    "Mittagsgericht",
+    "Abendgericht",
+    "Italienisch",
+    "Kinderfreundlich"
+  ],
+  "weatherType": "kalt",
   "source": "Familien-Rezeptbuch",
   "basePortions": 4,
-  "description": "Cremige Carbonara mit Schinken, Ei-Rahm-Sauce und Sbrinz.",
+  "description": "Feine Spaghetti in cremiger Sauce mit würzigem Schinken – einfach, klassisch und immer beliebt.",
   "ingredients": [
     {
       "name": "Spaghetti",
-      "amount": 400,
+      "amount": 500,
       "unit": "g",
       "perPortions": 4
     },
     {
-      "name": "Schinken oder Speck",
+      "name": "Schinken",
       "amount": 300,
       "unit": "g",
       "perPortions": 4
     },
     {
       "name": "Knoblauch",
-      "amount": 2,
+      "amount": 3,
       "unit": "Zehen",
       "perPortions": 4
     },
@@ -34,7 +44,7 @@
       "perPortions": 4
     },
     {
-      "name": "Ei",
+      "name": "Ei (optional)",
       "amount": 1,
       "unit": "Stk",
       "perPortions": 4
@@ -53,7 +63,7 @@
     },
     {
       "name": "Olivenöl",
-      "amount": 1,
+      "amount": 2,
       "unit": "EL",
       "perPortions": 4
     },
@@ -71,10 +81,11 @@
     }
   ],
   "steps": [
-    "1. Ei, Rahm, Käse, Sambal mixen.",
-    "2. Spaghetti kochen.",
-    "3. Schinken in Bratbutter anbraten, Knoblauch am Schluss.",
-    "4. Abgeschüttete Spaghetti vom Herd, Olivenöl darunter, Eier-Rahmgemisch einrühren, Schinken beigeben."
+    "Schinken in Streifen schneiden.",
+    "Rahm, Käse, Gewürze und optional ein Ei in einem Becher mit dem Pürierstab mixen.",
+    "Spaghetti kochen.",
+    "Unterdessen Schinken in Bratbutter anbraten, am Schluss Knoblauch dazupressen und kurz mitbraten.",
+    "Abgeschüttete Spaghetti zurück in die Pfanne geben, vom Herd nehmen. Olivenöl und kurz vor dem Servieren Eier-Rahmgemisch daruntermischen, zuletzt Schinken beigeben."
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fam-38-1780699276557.jpg",
   "imageZutaten": null,
