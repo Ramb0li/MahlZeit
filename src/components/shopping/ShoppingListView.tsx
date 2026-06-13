@@ -606,14 +606,14 @@ export function ShoppingListView() {
               {checkedCount}/{totalItems} erledigt
             </span>
             <span className="text-xs" style={{ color: '#9a8c80' }}>
-              {Math.round((checkedCount / totalItems) * 100)} %
+              {Math.min(100, Math.round((checkedCount / totalItems) * 100))} %
             </span>
           </div>
           <div style={{ height: 4, borderRadius: 999, backgroundColor: '#e0d8ce', overflow: 'hidden' }}>
             <div
               style={{
                 height: '100%',
-                width: `${(checkedCount / totalItems) * 100}%`,
+                width: `${Math.min(100, (checkedCount / totalItems) * 100)}%`,
                 backgroundColor: '#d9543b',
                 borderRadius: 999,
                 transition: 'width 0.3s ease',

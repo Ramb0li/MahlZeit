@@ -467,7 +467,7 @@ function MealSlotCard({
                 type="number"
                 value={ingAmount}
                 onChange={e => setIngAmount(e.target.value)}
-                min={0.1}
+                min={0}
                 step={0.5}
                 style={{
                   width: 52, flexShrink: 0, minWidth: 0, fontSize: 11, padding: '4px 5px', border: '1px solid var(--border)',
@@ -723,7 +723,7 @@ function MealSlotCard({
                 type="number"
                 value={ingAmount}
                 onChange={e => setIngAmount(e.target.value)}
-                min={0.1}
+                min={0}
                 step={0.5}
                 style={{
                   width: 52, flexShrink: 0, minWidth: 0, fontSize: 11, padding: '4px 5px', border: '1px solid var(--border)',
