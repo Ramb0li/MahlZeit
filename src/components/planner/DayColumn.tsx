@@ -1,5 +1,6 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
+import { createPortal } from 'react-dom';
 import { format } from 'date-fns';
 import { de } from 'date-fns/locale';
 import { Plus, Sparkles, Trash2, UtensilsCrossed, X } from 'lucide-react';
@@ -350,6 +351,7 @@ function MealSlotCard({
 
   // Side menu + ingredient form state
   const [showSideMenu, setShowSideMenu] = useState(false);
+  const [menuPos, setMenuPos] = useState<{ top: number; right: number } | null>(null);
   const [sideIngForm, setSideIngForm]   = useState(false);
   const [ingName, setIngName]           = useState('');
   const [ingAmount, setIngAmount]       = useState('1');
@@ -581,12 +583,22 @@ function MealSlotCard({
             </div>
           </div>
 
-          {/* + Button — bleibt in Bildsektion, Dropdown erscheint unterhalb */}
+          {/* + Button — bleibt in Bildsektion, Dropdown wird via Portal unterhalb der Karte gerendert */}
           {!hasSide && !hasAnyIngredients && (
             <div style={{ position: 'absolute', bottom: 8, right: 8, zIndex: 10 }}>
               <button
                 ref={plusBtnRef}
-                onClick={(e) => { e.stopPropagation(); setShowSideMenu(v => !v); }}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  if (!showSideMenu && plusBtnRef.current) {
+                    const card = plusBtnRef.current.closest<HTMLElement>('.mz-magslot');
+                    if (card) {
+                      const r = card.getBoundingClientRect();
+                      setMenuPos({ top: r.bottom + 4, right: window.innerWidth - r.right });
+                    }
+                  }
+                  setShowSideMenu(v => !v);
+                }}
                 className="mz-slot-del on-img"
                 style={{ position: 'static', opacity: 0.65, width: 20, height: 20, borderRadius: '50%' }}
                 title="Beilage hinzufügen"
@@ -599,12 +611,12 @@ function MealSlotCard({
           <button onClick={(e) => { e.stopPropagation(); onClear(); }} className="mz-slot-del on-img"><Trash2 size={12} /></button>
         </div>
 
-        {/* Dropdown — außerhalb der Bildsektion, erscheint unterhalb des + Buttons */}
-        {showSideMenu && !hasSide && !hasAnyIngredients && (
+        {/* Dropdown — Portal in document.body, erscheint unterhalb der Karte */}
+        {showSideMenu && !hasSide && !hasAnyIngredients && menuPos && typeof document !== 'undefined' && createPortal(
           <div
             ref={menuRef}
             style={{
-              position: 'absolute', top: 108, right: 8, zIndex: 20,
+              position: 'fixed', top: menuPos.top, right: menuPos.right, zIndex: 1000,
               background: 'var(--card)', border: '1px solid var(--border)',
               borderRadius: 8, boxShadow: 'var(--shadow-lg)',
               minWidth: 160, overflow: 'hidden',
@@ -627,7 +639,8 @@ function MealSlotCard({
             >
               Zutat hinzufügen
             </button>
-          </div>
+          </div>,
+          document.body
         )}
 
         {/* Beilage-Strip (Rezept) */}
