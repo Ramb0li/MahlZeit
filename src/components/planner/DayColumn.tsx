@@ -29,6 +29,7 @@ interface DayColumnProps {
   onRemoveSideIngredient?: (mealType: 'breakfast' | 'lunch' | 'dinner', idx: number, slot: MealSlot) => void;
   locked?: boolean;
   onLockedAction?: () => void;
+  favoritesOnly?: boolean;
 }
 
 export function DayColumn({
@@ -36,6 +37,7 @@ export function DayColumn({
   weather, settings, weekId, onUpdate, onToggleConstraint, onViewRecipe, onOpenMeal,
   onSaveNote, onSaveSideIngredient, onRemoveSideIngredient,
   locked = false, onLockedAction,
+  favoritesOnly = false,
 }: DayColumnProps) {
   const [pickerOpen, setPickerOpen]         = useState<'breakfast' | 'lunch' | 'dinner' | null>(null);
   const [pickerOpenSide, setPickerOpenSide] = useState<'breakfast' | 'lunch' | 'dinner' | null>(null);
@@ -87,7 +89,7 @@ export function DayColumn({
       const res = await fetch('/api/weekplan/suggest', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ weekId, dayIndex, mealType }),
+        body: JSON.stringify({ weekId, dayIndex, mealType, favoritesOnly }),
       });
       const data = await res.json();
       if (data.recipeId) onUpdate(dayIndex, mealType, { recipeId: data.recipeId, isLeftovers: false });
@@ -352,13 +354,15 @@ function MealSlotCard({
   const [ingName, setIngName]           = useState('');
   const [ingAmount, setIngAmount]       = useState('1');
   const [ingUnit, setIngUnit]           = useState('Stk');
-  const menuRef = useRef<HTMLDivElement>(null);
+  const menuRef    = useRef<HTMLDivElement>(null);
+  const plusBtnRef = useRef<HTMLButtonElement>(null);
 
-  // Close menu when clicking outside
+  // Close menu when clicking outside (button or dropdown)
   useEffect(() => {
     if (!showSideMenu) return;
     const handler = (e: MouseEvent) => {
-      if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
+      const target = e.target as Node;
+      if (!menuRef.current?.contains(target) && !plusBtnRef.current?.contains(target)) {
         setShowSideMenu(false);
       }
     };
@@ -385,14 +389,164 @@ function MealSlotCard({
           <UtensilsCrossed size={14} />
           <span>Reste essen</span>
         </div>
+
+        {/* Beilage-Strip (Rezept) */}
         {hasSide && (
-          <div style={{ display: 'flex', alignItems: 'center', gap: 6, paddingTop: 4, borderTop: '1px solid var(--accent-tint)' }}>
-            <span style={{ flex: 1, fontSize: 11, color: 'var(--accent-ink)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-              + {sideName}
-            </span>
-            <button onClick={onClearSide} style={{ color: 'var(--muted)', padding: 2 }}><X size={10} /></button>
+          <div className="mz-side-strip">
+            <Plus size={9} style={{ color: 'var(--muted)', flexShrink: 0, opacity: 0.55 }} />
+            <span className="mz-side-strip-name">{sideName}</span>
+            <button
+              className="mz-side-strip-btn"
+              onClick={(e) => { e.stopPropagation(); onSidePortionChange(Math.max(1, (sidePortionOverride ?? defaultPortions) - 1)); }}
+            >−</button>
+            <span className="mz-side-strip-count">{sidePortionOverride ?? defaultPortions}P</span>
+            <button
+              className="mz-side-strip-btn"
+              onClick={(e) => { e.stopPropagation(); onSidePortionChange(Math.min(20, (sidePortionOverride ?? defaultPortions) + 1)); }}
+            >+</button>
+            <button
+              onClick={(e) => { e.stopPropagation(); onClearSide(); }}
+              style={{ color: 'var(--ink-2)', flexShrink: 0, display: 'flex', alignItems: 'center' }}
+            ><X size={10} /></button>
           </div>
         )}
+
+        {/* Manuelle Beilage-Zutaten */}
+        {hasAnyIngredients && sideIngredients!.map((ing, idx) => (
+          <div
+            key={idx}
+            style={{
+              display: 'flex', alignItems: 'center', gap: 4, padding: '3px 10px 3px 8px',
+              borderTop: idx === 0 ? '1px solid var(--border)' : 'none',
+            }}
+          >
+            <Plus size={9} style={{ color: 'var(--muted)', flexShrink: 0, opacity: 0.55 }} />
+            <span style={{ flex: 1, fontSize: 11, color: 'var(--ink-2)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+              {ing.name} {ing.amount} {ing.unit}
+            </span>
+            <button
+              onClick={(e) => { e.stopPropagation(); onRemoveSideIngredient?.(idx); }}
+              style={{ color: 'var(--muted)', display: 'flex', alignItems: 'center', flexShrink: 0 }}
+            ><X size={10} /></button>
+          </div>
+        ))}
+
+        {/* Zutat-Hinzufügen-Schaltfläche */}
+        {(hasAnyIngredients || hasSide) && !sideIngForm && (
+          <button
+            onClick={() => setSideIngForm(true)}
+            style={{
+              display: 'flex', alignItems: 'center', gap: 4, padding: '4px 10px',
+              fontSize: 11, color: 'var(--muted)', background: 'none', border: 'none', cursor: 'pointer',
+              borderTop: '1px solid var(--border)', width: '100%', textAlign: 'left',
+            }}
+          >
+            <Plus size={9} />
+            Zutat hinzufügen
+          </button>
+        )}
+
+        {/* Mini Zutat-Formular */}
+        {sideIngForm && (
+          <div style={{ padding: '8px 10px', borderTop: '1px solid var(--border)', display: 'flex', flexDirection: 'column', gap: 6 }}>
+            <input
+              placeholder="Zutat (z.B. Broccoli)"
+              value={ingName}
+              onChange={e => setIngName(e.target.value)}
+              autoFocus
+              style={{
+                width: '100%', fontSize: 11, padding: '4px 7px', border: '1px solid var(--border)',
+                borderRadius: 5, background: 'var(--bg)', color: 'var(--ink)', outline: 'none', fontFamily: 'inherit',
+              }}
+              onKeyDown={e => { if (e.key === 'Enter') handleSaveSideIng(); if (e.key === 'Escape') { setSideIngForm(false); } }}
+            />
+            <div style={{ display: 'flex', gap: 4, alignItems: 'center' }}>
+              <input
+                type="number"
+                value={ingAmount}
+                onChange={e => setIngAmount(e.target.value)}
+                min={0.1}
+                step={0.5}
+                style={{
+                  width: 52, flexShrink: 0, fontSize: 11, padding: '4px 5px', border: '1px solid var(--border)',
+                  borderRadius: 5, background: 'var(--bg)', color: 'var(--ink)', outline: 'none', fontFamily: 'inherit',
+                }}
+              />
+              <select
+                value={ingUnit}
+                onChange={e => setIngUnit(e.target.value)}
+                style={{
+                  width: 72, flexShrink: 0, fontSize: 11, padding: '4px 5px', border: '1px solid var(--border)',
+                  borderRadius: 5, background: 'var(--bg)', color: 'var(--ink)', outline: 'none', fontFamily: 'inherit',
+                }}
+              >
+                {SIDE_UNITS.map(u => <option key={u}>{u}</option>)}
+              </select>
+              <button
+                onClick={handleSaveSideIng}
+                style={{
+                  flexShrink: 0, padding: '4px 9px', fontSize: 11, background: 'var(--accent)', color: '#fff',
+                  border: 'none', borderRadius: 5, cursor: 'pointer', fontWeight: 600,
+                }}
+              >+</button>
+              <button
+                onClick={() => setSideIngForm(false)}
+                style={{
+                  flexShrink: 0, padding: '4px 7px', fontSize: 11, background: 'none', color: 'var(--muted)',
+                  border: '1px solid var(--border)', borderRadius: 5, cursor: 'pointer',
+                }}
+              >×</button>
+            </div>
+          </div>
+        )}
+
+        {/* + Button für Beilage (nur wenn noch keine Beilage/Zutaten) */}
+        {!hasSide && !hasAnyIngredients && (
+          <button
+            ref={plusBtnRef}
+            onClick={(e) => { e.stopPropagation(); setShowSideMenu(v => !v); }}
+            style={{
+              position: 'absolute', bottom: 8, right: 8,
+              width: 20, height: 20, borderRadius: '50%',
+              background: 'rgba(0,0,0,0.35)', color: '#fff',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              border: 'none', cursor: 'pointer', opacity: 0.65,
+            }}
+            title="Beilage hinzufügen"
+          >
+            <Plus size={10} />
+          </button>
+        )}
+        {showSideMenu && !hasSide && !hasAnyIngredients && (
+          <div
+            ref={menuRef}
+            style={{
+              position: 'absolute', bottom: 8, right: 8, zIndex: 20,
+              background: 'var(--card)', border: '1px solid var(--border)',
+              borderRadius: 8, boxShadow: 'var(--shadow-lg)',
+              minWidth: 160, overflow: 'hidden',
+            }}
+            onClick={e => e.stopPropagation()}
+          >
+            <button
+              style={{ display: 'block', width: '100%', textAlign: 'left', padding: '8px 12px', fontSize: 12, color: 'var(--ink)', background: 'none', border: 'none', cursor: 'pointer' }}
+              onMouseEnter={e => (e.currentTarget.style.background = 'var(--accent-tint)')}
+              onMouseLeave={e => (e.currentTarget.style.background = 'none')}
+              onClick={() => { setShowSideMenu(false); onPickSide(); }}
+            >
+              Zusätzliches Menü
+            </button>
+            <button
+              style={{ display: 'block', width: '100%', textAlign: 'left', padding: '8px 12px', fontSize: 12, color: 'var(--ink)', background: 'none', border: 'none', cursor: 'pointer' }}
+              onMouseEnter={e => (e.currentTarget.style.background = 'var(--accent-tint)')}
+              onMouseLeave={e => (e.currentTarget.style.background = 'none')}
+              onClick={() => { setShowSideMenu(false); setSideIngForm(true); }}
+            >
+              Zutat hinzufügen
+            </button>
+          </div>
+        )}
+
         <button onClick={onClear} className="mz-slot-del" style={{ opacity: 1 }}><Trash2 size={12} /></button>
       </div>
     );
@@ -427,10 +581,11 @@ function MealSlotCard({
             </div>
           </div>
 
-          {/* + Button — zeigt Menü für Beilage oder Zutat */}
+          {/* + Button — bleibt in Bildsektion, Dropdown erscheint unterhalb */}
           {!hasSide && !hasAnyIngredients && (
-            <div ref={menuRef} style={{ position: 'absolute', bottom: 8, right: 8, zIndex: 10 }}>
+            <div style={{ position: 'absolute', bottom: 8, right: 8, zIndex: 10 }}>
               <button
+                ref={plusBtnRef}
                 onClick={(e) => { e.stopPropagation(); setShowSideMenu(v => !v); }}
                 className="mz-slot-del on-img"
                 style={{ position: 'static', opacity: 0.65, width: 20, height: 20, borderRadius: '50%' }}
@@ -438,39 +593,42 @@ function MealSlotCard({
               >
                 <Plus size={10} />
               </button>
-              {showSideMenu && (
-                <div
-                  style={{
-                    position: 'absolute', bottom: 24, right: 0, zIndex: 20,
-                    background: 'var(--card)', border: '1px solid var(--border)',
-                    borderRadius: 8, boxShadow: 'var(--shadow-lg)',
-                    minWidth: 150, overflow: 'hidden',
-                  }}
-                  onClick={e => e.stopPropagation()}
-                >
-                  <button
-                    style={{ display: 'block', width: '100%', textAlign: 'left', padding: '8px 12px', fontSize: 12, color: 'var(--ink)', background: 'none', border: 'none', cursor: 'pointer' }}
-                    onMouseEnter={e => (e.currentTarget.style.background = 'var(--accent-tint)')}
-                    onMouseLeave={e => (e.currentTarget.style.background = 'none')}
-                    onClick={() => { setShowSideMenu(false); onPickSide(); }}
-                  >
-                    Rezept als Beilage
-                  </button>
-                  <button
-                    style={{ display: 'block', width: '100%', textAlign: 'left', padding: '8px 12px', fontSize: 12, color: 'var(--ink)', background: 'none', border: 'none', cursor: 'pointer' }}
-                    onMouseEnter={e => (e.currentTarget.style.background = 'var(--accent-tint)')}
-                    onMouseLeave={e => (e.currentTarget.style.background = 'none')}
-                    onClick={() => { setShowSideMenu(false); setSideIngForm(true); }}
-                  >
-                    Zutat hinzufügen
-                  </button>
-                </div>
-              )}
             </div>
           )}
 
           <button onClick={(e) => { e.stopPropagation(); onClear(); }} className="mz-slot-del on-img"><Trash2 size={12} /></button>
         </div>
+
+        {/* Dropdown — außerhalb der Bildsektion, erscheint unterhalb des + Buttons */}
+        {showSideMenu && !hasSide && !hasAnyIngredients && (
+          <div
+            ref={menuRef}
+            style={{
+              position: 'absolute', top: 108, right: 8, zIndex: 20,
+              background: 'var(--card)', border: '1px solid var(--border)',
+              borderRadius: 8, boxShadow: 'var(--shadow-lg)',
+              minWidth: 160, overflow: 'hidden',
+            }}
+            onClick={e => e.stopPropagation()}
+          >
+            <button
+              style={{ display: 'block', width: '100%', textAlign: 'left', padding: '8px 12px', fontSize: 12, color: 'var(--ink)', background: 'none', border: 'none', cursor: 'pointer' }}
+              onMouseEnter={e => (e.currentTarget.style.background = 'var(--accent-tint)')}
+              onMouseLeave={e => (e.currentTarget.style.background = 'none')}
+              onClick={() => { setShowSideMenu(false); onPickSide(); }}
+            >
+              Zusätzliches Menü
+            </button>
+            <button
+              style={{ display: 'block', width: '100%', textAlign: 'left', padding: '8px 12px', fontSize: 12, color: 'var(--ink)', background: 'none', border: 'none', cursor: 'pointer' }}
+              onMouseEnter={e => (e.currentTarget.style.background = 'var(--accent-tint)')}
+              onMouseLeave={e => (e.currentTarget.style.background = 'none')}
+              onClick={() => { setShowSideMenu(false); setSideIngForm(true); }}
+            >
+              Zutat hinzufügen
+            </button>
+          </div>
+        )}
 
         {/* Beilage-Strip (Rezept) */}
         {hasSide && (
@@ -555,7 +713,7 @@ function MealSlotCard({
                 min={0.1}
                 step={0.5}
                 style={{
-                  width: 52, fontSize: 11, padding: '4px 5px', border: '1px solid var(--border)',
+                  width: 52, flexShrink: 0, fontSize: 11, padding: '4px 5px', border: '1px solid var(--border)',
                   borderRadius: 5, background: 'var(--bg)', color: 'var(--ink)', outline: 'none', fontFamily: 'inherit',
                 }}
               />
@@ -563,7 +721,7 @@ function MealSlotCard({
                 value={ingUnit}
                 onChange={e => setIngUnit(e.target.value)}
                 style={{
-                  flex: 1, fontSize: 11, padding: '4px 5px', border: '1px solid var(--border)',
+                  width: 72, flexShrink: 0, fontSize: 11, padding: '4px 5px', border: '1px solid var(--border)',
                   borderRadius: 5, background: 'var(--bg)', color: 'var(--ink)', outline: 'none', fontFamily: 'inherit',
                 }}
               >
@@ -572,14 +730,14 @@ function MealSlotCard({
               <button
                 onClick={handleSaveSideIng}
                 style={{
-                  padding: '4px 9px', fontSize: 11, background: 'var(--accent)', color: '#fff',
+                  flexShrink: 0, padding: '4px 9px', fontSize: 11, background: 'var(--accent)', color: '#fff',
                   border: 'none', borderRadius: 5, cursor: 'pointer', fontWeight: 600,
                 }}
               >+</button>
               <button
                 onClick={() => setSideIngForm(false)}
                 style={{
-                  padding: '4px 7px', fontSize: 11, background: 'none', color: 'var(--muted)',
+                  flexShrink: 0, padding: '4px 7px', fontSize: 11, background: 'none', color: 'var(--muted)',
                   border: '1px solid var(--border)', borderRadius: 5, cursor: 'pointer',
                 }}
               >×</button>

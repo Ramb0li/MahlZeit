@@ -89,7 +89,13 @@ export async function POST(request: Request) {
                 r.category !== 'Snacks & Vorspeisen'
               );
 
-      const suggestion = suggestRecipe(mealFiltered, {
+      // Favoriten-Filter: wenn favoritesOnly aktiv, nur Favoriten vorschlagen
+      // Fallback auf ungefilterten Pool wenn keine Favoriten in dieser Kategorie vorhanden
+      const pool = favoritesOnly && favorites.length > 0
+        ? mealFiltered.filter((r) => favorites.includes(r.id))
+        : mealFiltered;
+
+      const suggestion = suggestRecipe(pool.length > 0 ? pool : mealFiltered, {
         weatherType,
         season,
         constraint,

@@ -610,6 +610,7 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe, onOp
                   onRemoveSideIngredient={(mealType, idx, slot) => handleRemoveSideIngredient(dayIndex, mealType, idx, slot)}
                   locked={locked}
                   onLockedAction={onLockedAction}
+                  favoritesOnly={favoritesOnly}
                 />
               );
             })}
