@@ -95,13 +95,12 @@
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/sal-13-1780782771480.jpg",
   "tags": [
-    "Vegetarisch",
     "Sommer",
-    "Mittagsgericht",
+    "Mittagessen",
     "Frühling",
     "Herbst",
     "Grillgericht",
-    "Abendgericht"
+    "Abendessen"
   ],
   "allergens": [
     "milch",
@@ -116,5 +115,7 @@
   },
   "imageZutaten": null,
   "imageKochen": null,
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

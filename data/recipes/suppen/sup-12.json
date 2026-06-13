@@ -104,9 +104,8 @@
   "tips": "Schmeckt auch mit Tortillachips als Einlage. Schärfe über die Menge Tex Mex Spice Mix steuern.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Mexikanisch",
-    "Mittagsgericht"
+    "Mittagessen"
   ],
   "dietCategory": "vegan",
   "allergens": [
@@ -119,5 +118,7 @@
     "fat": 6.8,
     "carbs": 49.2,
     "fiber": 11.8
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

@@ -113,15 +113,13 @@
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/thaila-ndische-erdnuss-nudelsuppe-1780949095716.jpg",
   "tags": [
-    "Vegan",
     "Asiatisch",
-    "Vegetarisch",
     "Mealprep-geeignet",
     "Winter",
     "Herbst",
     "Frühling",
-    "Mittagsgericht",
-    "Abendgericht"
+    "Mittagessen",
+    "Abendessen"
   ],
   "dietCategory": "vegan",
   "allergens": [
@@ -138,5 +136,7 @@
     "fiber": 5.2
   },
   "imageZutaten": null,
-  "imageKochen": null
+  "imageKochen": null,
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

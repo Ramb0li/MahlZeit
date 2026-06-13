@@ -1,11 +1,9 @@
 {
   "id": "fvt-14",
   "name": "Linsen-Tätschli",
-  "category": "Vegetarische Hauptgerichte",
+  "category": "Reis, Getreide & Hülsenfrüchte",
   "timeMinutes": 35,
-  "tags": [
-    "Vegan"
-  ],
+  "tags": [],
   "weatherType": "neutral",
   "source": "Cuiseline",
   "basePortions": 4,
@@ -101,5 +99,7 @@
     "fat": 19.8,
     "carbs": 72.3,
     "fiber": 12.6
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

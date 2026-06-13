@@ -86,9 +86,8 @@
   ],
   "imageUrl": "blob:https://mahlzeit.o-v-k.ch/a5131c8c-cf1b-43a3-b522-90cc1c067010",
   "tags": [
-    "Vegetarisch",
     "Herbst",
-    "Schweizer"
+    "Schweizerisch"
   ],
   "allergens": [
     "milch"
@@ -102,5 +101,7 @@
   },
   "imageZutaten": null,
   "imageKochen": null,
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

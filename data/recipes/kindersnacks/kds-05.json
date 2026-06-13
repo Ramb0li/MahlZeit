@@ -77,7 +77,6 @@
   "tips": "",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Mealprep-geeignet"
   ],
   "allergens": [
@@ -90,5 +89,7 @@
     "carbs": 4.8,
     "fiber": 0.9
   },
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

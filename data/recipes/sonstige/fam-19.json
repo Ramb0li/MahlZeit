@@ -3,9 +3,7 @@
   "name": "Himbeertiramisu",
   "category": "Desserts & Süsses",
   "timeMinutes": 30,
-  "tags": [
-    "Vegetarisch"
-  ],
+  "tags": [],
   "weatherType": "neutral",
   "source": "Familien-Rezeptbuch",
   "basePortions": 6,
@@ -81,5 +79,7 @@
     "carbs": 48.3,
     "fiber": 3.2
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

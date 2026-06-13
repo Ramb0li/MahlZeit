@@ -1,12 +1,9 @@
 {
   "id": "fam-51",
   "name": "Veganer Rahmspinat",
-  "category": "Vegetarische Hauptgerichte",
+  "category": "Gemüsegerichte",
   "timeMinutes": 20,
-  "tags": [
-    "Vegetarisch",
-    "Vegan"
-  ],
+  "tags": [],
   "weatherType": "neutral",
   "source": "Cuiseline",
   "basePortions": 4,
@@ -88,5 +85,7 @@
     "carbs": 9.2,
     "fiber": 3.8
   },
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

@@ -56,7 +56,7 @@
   "imageUrl": null,
   "tags": [
     "Mealprep-geeignet",
-    "Mittagsgericht",
+    "Mittagessen",
     "Frühling",
     "Sommer"
   ],
@@ -69,5 +69,7 @@
     "fiber": 11.2
   },
   "dietCategory": "vegetarian",
-  "imageZutaten": null
+  "imageZutaten": null,
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

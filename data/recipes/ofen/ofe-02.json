@@ -80,8 +80,7 @@
   "tips": "Fertigteig spart Zeit — alternativ selbst gemachten Teig 24h im Kühlschrank gehen lassen für besseren Geschmack.",
   "imageUrl": null,
   "tags": [
-    "Vegetarisch",
-    "Mittagsgericht",
+    "Mittagessen",
     "Ofengericht",
     "Sommer",
     "Frühling",
@@ -98,5 +97,7 @@
     "fiber": 3.2
   },
   "dietCategory": "vegetarian",
-  "imageZutaten": null
+  "imageZutaten": null,
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

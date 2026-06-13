@@ -1,7 +1,7 @@
 {
   "id": "fvt-11",
   "name": "Süsskartoffel-Quesadillas mit Guacamole",
-  "category": "Wraps & Sandwiches",
+  "category": "Wraps, Sandwiches & Burger",
   "timeMinutes": 25,
   "ingredients": [
     {
@@ -73,7 +73,7 @@
   "tips": "",
   "imageUrl": null,
   "tags": [
-    "Mittagsgericht",
+    "Mittagessen",
     "Mexikanisch"
   ],
   "allergens": [
@@ -86,5 +86,7 @@
     "carbs": 48.2,
     "fiber": 10.4
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

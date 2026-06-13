@@ -1,7 +1,7 @@
 {
   "id": "ei-04",
   "name": "Gemüse-Eieromelette mit Vollkornbrot",
-  "category": "Vegetarische Hauptgerichte",
+  "category": "Eiergerichte",
   "timeMinutes": 20,
   "ingredients": [
     {
@@ -83,16 +83,12 @@
   "description": "Ob als eiweissreiches Frühstück oder als leichte, sättigende Mahlzeit am Mittag oder Abend: Dieses schnelle Omelett mit buntem Gemüse und Vollkornbrot passt immer.",
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-04-1780699103706.jpg",
   "tags": [
-    "Mittagsgericht",
-    "Vegetarisch",
+    "Mittagessen",
     "Kinderfreundlich",
-    "Frühling",
-    "Sommer",
-    "Herbst",
-    "Winter",
-    "Frühstücksgericht",
-    "Abendgericht",
-    "Schweizer"
+    "Frühstück",
+    "Abendessen",
+    "Schweizerisch",
+    "Ganzjährig"
   ],
   "imageZutaten": null,
   "imageKochen": null,
@@ -114,5 +110,7 @@
     "Den Backofen auf 100 Grad vorheizen. Etwa drei Viertel des Gemüses aus der Pfanne nehmen. Das restliche Gemüse mit einem Viertel der Eiermasse übergiessen und bei mittlerer Hitze 3–4 Minuten stocken lassen. Das Omelett wenden und weitere ca. 2 Minuten fertig braten, bis es leicht gebräunt ist. Herausnehmen, zusammenklappen und im Ofen warm halten.",
     "Für die weiteren Omeletts jeweils wieder etwas Olivenöl in die Pfanne geben, einen Teil der Gemüsemischung beigeben und mit einem Viertel der Eiermasse übergiessen. So fortfahren, bis insgesamt 4 Omeletts fertig sind.",
     "Die Gemüseomeletts mit gehackter Petersilie bestreuen und mit getoastetem Vollkornbrot servieren."
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

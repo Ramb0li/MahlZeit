@@ -47,7 +47,6 @@
   "tips": "Im Kühlschrank ca. 2 Wochen haltbar, alternativ einfrieren.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Mealprep-geeignet"
   ],
   "allergens": [
@@ -61,5 +60,7 @@
     "carbs": 5.2,
     "fiber": 1.2
   },
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

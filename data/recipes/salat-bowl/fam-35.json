@@ -3,9 +3,7 @@
   "name": "Reissalat à la Céline",
   "category": "Salate & Bowls",
   "timeMinutes": 15,
-  "tags": [
-    "Vegetarisch"
-  ],
+  "tags": [],
   "weatherType": "warm",
   "source": "Familien-Rezeptbuch",
   "basePortions": 4,
@@ -104,5 +102,7 @@
     "carbs": 44.2,
     "fiber": 4.6
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

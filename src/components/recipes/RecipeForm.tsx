@@ -14,11 +14,15 @@ import {
 import { CSS } from '@dnd-kit/utilities';
 
 const CATEGORIES: Category[] = [
-  'Snacks & Vorspeisen', 'Suppen, Eintöpfe & Currys',
-  'Salate & Bowls', 'Pasta', 'Reis & Getreide', 'Kartoffelgerichte',
-  'Fleisch & Geflügel', 'Fisch & Meeresfrüchte', 'Vegetarische Hauptgerichte',
-  'Aufläufe & Gratins', 'Wraps & Sandwiches', 'Desserts & Süsses', 'Eigene Rezepte',
+  'Snacks & Vorspeisen', 'Suppen, Eintöpfe & Currys', 'Salate & Bowls',
+  'Pasta & Teigwaren', 'Reis, Getreide & Hülsenfrüchte', 'Kartoffelgerichte',
+  'Eiergerichte', 'Fleisch & Geflügel', 'Fisch & Meeresfrüchte', 'Gemüsegerichte',
+  'Aufläufe & Gratins', 'Wraps, Sandwiches & Burger', 'Pizza, Flammkuchen, Wähen & Quiches',
+  'Beilagen, Saucen & Dips', 'Desserts & Süsses', 'Brot & Gebäck',
+  'Müesli, Porridge & Frühstücksschalen', 'Getränke & Smoothies',
 ];
+
+const SEASON_TAGS_SET = new Set(['Frühling', 'Sommer', 'Herbst', 'Winter']);
 
 // Shared input style
 const inputStyle = {
@@ -200,7 +204,7 @@ interface RecipeFormProps {
 
 export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/upload', showImageUrl = false }: RecipeFormProps) {
   const [name, setName]                       = useState(recipe?.name ?? '');
-  const [category, setCategory]               = useState<Category>(recipe?.category ?? 'Eigene Rezepte');
+  const [category, setCategory]               = useState<Category>(recipe?.category ?? 'Gemüsegerichte');
   const [dietCategory, setDietCategory]       = useState<import('@/types').DietCategory | undefined>(recipe?.dietCategory);
   const [timeMinutes, setTimeMinutes]         = useState(recipe?.timeMinutes ?? 30);
   const [weatherType, setWeatherType]         = useState<WeatherType>(recipe?.weatherType ?? 'neutral');
@@ -236,6 +240,17 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/up
 
   const toggleTag = (tag: string) =>
     setTags(prev => prev.includes(tag) ? prev.filter(t => t !== tag) : [...prev, tag]);
+
+  const toggleSeasonTag = (tag: string) =>
+    setTags(prev => {
+      if (tag === 'Ganzjährig') {
+        return [...prev.filter(t => !SEASON_TAGS_SET.has(t) && t !== 'Ganzjährig'), 'Ganzjährig'];
+      }
+      let next = prev.filter(t => t !== 'Ganzjährig');
+      next = next.includes(tag) ? next.filter(t => t !== tag) : [...next, tag];
+      const selected = next.filter(t => SEASON_TAGS_SET.has(t));
+      return selected.length === 4 ? [...next.filter(t => !SEASON_TAGS_SET.has(t)), 'Ganzjährig'] : next;
+    });
 
   const addIngredient = () =>
     setIngredients((prev) => [...prev, { name: '', amount: 1, unit: 'g', perPortions: basePortions }]);
@@ -544,7 +559,8 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/up
                 <span className="text-[11px] font-semibold uppercase tracking-wide block mb-1.5" style={{ color: '#9c8c84' }}>{group}</span>
                 <div className="flex flex-wrap gap-1.5">
                   {groupTags.map(tag => (
-                    <button key={tag} type="button" onClick={() => toggleTag(tag)}
+                    <button key={tag} type="button"
+                      onClick={() => group === 'Saison' ? toggleSeasonTag(tag) : toggleTag(tag)}
                       className="px-2.5 py-1 rounded-full text-xs font-semibold transition-all"
                       style={tags.includes(tag) ? chipActive : chipInactive}
                     >

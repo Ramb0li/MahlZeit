@@ -1,11 +1,9 @@
 {
   "id": "fam-56",
   "name": "Zitronenrisotto",
-  "category": "Reis & Getreide",
+  "category": "Reis, Getreide & Hülsenfrüchte",
   "timeMinutes": 35,
-  "tags": [
-    "Vegetarisch"
-  ],
+  "tags": [],
   "weatherType": "warm",
   "source": "Familien-Rezeptbuch",
   "basePortions": 4,
@@ -73,5 +71,7 @@
     "carbs": 82.5,
     "fiber": 2.8
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

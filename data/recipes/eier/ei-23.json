@@ -1,17 +1,14 @@
 {
   "id": "ei-23",
   "name": "Farmers Rührei Muffins",
-  "category": "Frühstück",
+  "category": "Eiergerichte",
   "timeMinutes": 30,
   "basePortions": 12,
   "tags": [
-    "Vegetarisch",
     "Mealprep-geeignet",
     "Kinderfreundlich",
     "Ofengericht",
-    "Frühstück",
-    "Schnell und einfach",
-    "Frühstücksgericht"
+    "Frühstück"
   ],
   "ingredients": [
     {
@@ -71,5 +68,7 @@
   "allergens": [
     "ei",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

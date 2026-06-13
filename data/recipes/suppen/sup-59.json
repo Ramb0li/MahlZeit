@@ -5,8 +5,7 @@
   "timeMinutes": 40,
   "basePortions": 4,
   "tags": [
-    "Vegetarisch",
-    "Winterzeit",
+    "Winter",
     "Herbst",
     "Ofengericht"
   ],
@@ -128,5 +127,7 @@
   "allergens": [
     "milch",
     "schalenfruechte"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

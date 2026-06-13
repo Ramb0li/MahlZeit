@@ -77,7 +77,6 @@
   "tips": "Bis zu 60 g Hülsenfrüchte-Reste mit Sojajoghurt pürieren für Extra-Eiweiss.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Mealprep-geeignet"
   ],
   "allergens": [
@@ -92,5 +91,7 @@
     "carbs": 15.8,
     "fiber": 1.8
   },
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

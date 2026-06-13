@@ -72,7 +72,6 @@
   "tips": "Mit einem Klecks Joghurt und frischen Kräutern als Dip für Gemüsesticks servieren.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Mealprep-geeignet"
   ],
   "dietCategory": "vegan",
@@ -83,5 +82,7 @@
     "fat": 5.2,
     "carbs": 17.3,
     "fiber": 4.6
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

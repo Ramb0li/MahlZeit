@@ -1,11 +1,9 @@
 {
   "id": "ofe-03",
   "name": "Brot-Gemüse-Auflauf",
-  "category": "Vegetarische Hauptgerichte",
+  "category": "Aufläufe & Gratins",
   "timeMinutes": 50,
-  "tags": [
-    "Vegan"
-  ],
+  "tags": [],
   "weatherType": "kalt",
   "source": "Cuiseline",
   "basePortions": 6,
@@ -121,5 +119,7 @@
     "fat": 14.8,
     "carbs": 62.4,
     "fiber": 9.1
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

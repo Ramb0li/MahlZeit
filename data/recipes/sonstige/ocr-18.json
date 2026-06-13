@@ -3,9 +3,7 @@
   "name": "Käse-Kräuter-Scones",
   "category": "Snacks & Vorspeisen",
   "timeMinutes": 25,
-  "tags": [
-    "Vegetarisch"
-  ],
+  "tags": [],
   "weatherType": "neutral",
   "source": "Familien-Rezeptbuch (OCR)",
   "basePortions": 11,
@@ -76,5 +74,7 @@
     "carbs": 32.4,
     "fiber": 1.4
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

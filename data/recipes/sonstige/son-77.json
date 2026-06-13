@@ -1,14 +1,14 @@
 {
   "id": "son-77",
   "name": "Spargel-Kartoffel-Gemüse mit Schinken und pochiertem Ei",
-  "category": "Vegetarische Hauptgerichte",
+  "category": "Eiergerichte",
   "timeMinutes": 20,
   "basePortions": 2,
   "tags": [
     "Frühling",
     "Sommer",
-    "Mittagsgericht",
-    "Abendgericht"
+    "Mittagessen",
+    "Abendessen"
   ],
   "ingredients": [
     {
@@ -99,5 +99,7 @@
   "imageKochen": null,
   "allergens": [
     "ei"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

@@ -4,7 +4,6 @@
   "category": "Salate & Bowls",
   "timeMinutes": 10,
   "tags": [
-    "Vegan",
     "Sommer"
   ],
   "weatherType": "warm",
@@ -71,5 +70,7 @@
     "fat": 4.2,
     "carbs": 5.9,
     "fiber": 1.4
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

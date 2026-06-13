@@ -3,10 +3,7 @@
   "name": "Bohnensalat",
   "category": "Salate & Bowls",
   "timeMinutes": 40,
-  "tags": [
-    "Vegetarisch",
-    "Vegan"
-  ],
+  "tags": [],
   "weatherType": "warm",
   "source": "Familien-Rezeptbuch",
   "basePortions": 4,
@@ -85,5 +82,7 @@
     "carbs": 11.5,
     "fiber": 7.2
   },
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

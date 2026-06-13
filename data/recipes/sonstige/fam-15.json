@@ -1,18 +1,16 @@
 {
   "id": "fam-15",
   "name": "Spaghetti mit Gemüse-Bolognese",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 35,
   "tags": [
-    "Vegetarisch",
-    "Vegan",
     "Kinderfreundlich",
     "Mealprep-geeignet",
     "Frühling",
     "Herbst",
     "Winter",
-    "Mittagsgericht",
-    "Abendgericht",
+    "Mittagessen",
+    "Abendessen",
     "Italienisch"
   ],
   "weatherType": "neutral",
@@ -135,5 +133,7 @@
     "carbs": 18.3,
     "fiber": 5.8
   },
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

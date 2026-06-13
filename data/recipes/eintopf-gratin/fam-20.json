@@ -3,9 +3,7 @@
   "name": "Hörnligratin mit Räuchertofu, Lauch, Erbsen und Broccoli",
   "category": "Aufläufe & Gratins",
   "timeMinutes": 45,
-  "tags": [
-    "Vegetarisch"
-  ],
+  "tags": [],
   "weatherType": "kalt",
   "source": "Familien-Rezeptbuch",
   "basePortions": 6,
@@ -125,5 +123,7 @@
     "carbs": 64.7,
     "fiber": 6.2
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

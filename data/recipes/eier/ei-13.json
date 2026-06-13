@@ -76,12 +76,10 @@
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-13-1780786326142.jpg",
   "tags": [
-    "Vegan",
     "Sommer",
     "Frühling",
     "Kinderfreundlich",
-    "Vegetarisch",
-    "Frühstücksgericht",
+    "Frühstück",
     "Mealprep-geeignet"
   ],
   "imageZutaten": null,
@@ -98,5 +96,7 @@
     "carbs": 63.4,
     "fiber": 10.5
   },
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

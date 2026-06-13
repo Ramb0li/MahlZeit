@@ -98,9 +98,8 @@
   "tips": "Mit Naan, Basmatireis oder Vollkornbrot servieren. Nach Belieben mit frischem Koriander garnieren.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Mealprep-geeignet",
-    "Orientalisch"
+    "Nahöstlich"
   ],
   "dietCategory": "vegan",
   "allergens": [
@@ -112,5 +111,7 @@
     "fat": 13.8,
     "carbs": 41.5,
     "fiber": 8.4
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

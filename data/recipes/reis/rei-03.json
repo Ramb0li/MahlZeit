@@ -62,7 +62,7 @@
   "imageUrl": null,
   "tags": [
     "Mealprep-geeignet",
-    "Mittagsgericht",
+    "Mittagessen",
     "Asiatisch"
   ],
   "allergens": [
@@ -75,5 +75,7 @@
     "carbs": 89.2,
     "fiber": 10.3
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

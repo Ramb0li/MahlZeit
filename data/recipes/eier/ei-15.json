@@ -1,7 +1,7 @@
 {
   "id": "ei-15",
   "name": "Klassische Pancakes",
-  "category": "Frühstück",
+  "category": "Eiergerichte",
   "timeMinutes": 25,
   "ingredients": [
     {
@@ -85,14 +85,10 @@
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-15-1780699224577.jpg",
   "tags": [
-    "Vegetarisch",
     "Kinderfreundlich",
-    "Frühstücksgericht",
+    "Frühstück",
     "Mealprep-geeignet",
-    "Frühling",
-    "Sommer",
-    "Herbst",
-    "Winter"
+    "Ganzjährig"
   ],
   "imageZutaten": null,
   "imageKochen": null,
@@ -108,5 +104,7 @@
     "carbs": 50.3,
     "fiber": 1.8
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

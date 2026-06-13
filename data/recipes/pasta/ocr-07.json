@@ -1,20 +1,15 @@
 {
   "id": "ocr-07",
   "name": "Penne mit Auberginen-Tomatensauce",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 40,
   "tags": [
-    "Vegetarisch",
     "Italienisch",
-    "Pescetarisch",
     "Mealprep-geeignet",
     "Kinderfreundlich",
-    "Frühling",
-    "Sommer",
-    "Herbst",
-    "Winter",
-    "Mittagsgericht",
-    "Abendgericht"
+    "Mittagessen",
+    "Abendessen",
+    "Ganzjährig"
   ],
   "weatherType": "warm",
   "source": "Familien-Rezeptbuch (OCR)",
@@ -119,5 +114,7 @@
     "carbs": 75.4,
     "fiber": 11.3
   },
-  "dietCategory": "fish"
+  "dietCategory": "fish",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

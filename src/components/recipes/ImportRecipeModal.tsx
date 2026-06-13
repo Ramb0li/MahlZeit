@@ -58,10 +58,12 @@ export function ImportRecipeModal({ isPremium, onClose, onImported }: ImportReci
     const safeNum = (v: unknown, fallback = 0)  => (typeof v === 'number' ? v : fallback);
 
     const VALID_CATS: Category[] = [
-      'Snacks & Vorspeisen', 'Suppen, Eintöpfe & Currys',
-      'Salate & Bowls', 'Pasta', 'Reis & Getreide', 'Kartoffelgerichte',
-      'Fleisch & Geflügel', 'Fisch & Meeresfrüchte', 'Vegetarische Hauptgerichte',
-      'Aufläufe & Gratins', 'Wraps & Sandwiches', 'Desserts & Süsses', 'Eigene Rezepte',
+      'Snacks & Vorspeisen', 'Suppen, Eintöpfe & Currys', 'Salate & Bowls',
+      'Pasta & Teigwaren', 'Reis, Getreide & Hülsenfrüchte', 'Kartoffelgerichte',
+      'Eiergerichte', 'Fleisch & Geflügel', 'Fisch & Meeresfrüchte', 'Gemüsegerichte',
+      'Aufläufe & Gratins', 'Wraps, Sandwiches & Burger', 'Pizza, Flammkuchen, Wähen & Quiches',
+      'Beilagen, Saucen & Dips', 'Desserts & Süsses', 'Brot & Gebäck',
+      'Müesli, Porridge & Frühstücksschalen', 'Getränke & Smoothies',
     ];
     const VALID_WEATHER: WeatherType[] = ['warm', 'kalt', 'neutral'];
 
@@ -88,12 +90,14 @@ export function ImportRecipeModal({ isPremium, onClose, onImported }: ImportReci
 
     // Accept tags[] from Claude response; fallback to empty array
     const rawTags = Array.isArray(data.tags) ? (data.tags as unknown[]).map(t => safeStr(t)).filter(Boolean) : [];
+    const VALID_DIET = ['meat', 'fish', 'vegetarian', 'vegan'] as const;
+    const rawDiet = safeStr(data.dietCategory);
 
     return {
       id:           generateId(),
       name:         safeStr(data.name, 'Importiertes Rezept'),
       description:  safeStr(data.description),
-      category:     (VALID_CATS.includes(cat as Category) ? cat : 'Vegetarische Hauptgerichte') as Category,
+      category:     (VALID_CATS.includes(cat as Category) ? cat : 'Gemüsegerichte') as Category,
       timeMinutes:  mins,
       tags:         rawTags,
       ingredients,
@@ -101,6 +105,8 @@ export function ImportRecipeModal({ isPremium, onClose, onImported }: ImportReci
       source:       safeStr(data.source) || sourceUrl || 'Import',
       basePortions: safeNum(data.basePortions, 4) || 4,
       steps:        steps.length ? steps : undefined,
+      sourceType:   'imported' as const,
+      ...(VALID_DIET.includes(rawDiet as typeof VALID_DIET[number]) && { dietCategory: rawDiet as import('@/types').DietCategory }),
     };
   }
 

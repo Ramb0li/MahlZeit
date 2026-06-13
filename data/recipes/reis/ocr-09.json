@@ -1,10 +1,10 @@
 {
   "id": "ocr-09",
   "name": "Gerstotto mit Spinat und Bündnerfleisch",
-  "category": "Reis & Getreide",
+  "category": "Reis, Getreide & Hülsenfrüchte",
   "timeMinutes": 65,
   "tags": [
-    "Schweizer"
+    "Schweizerisch"
   ],
   "weatherType": "kalt",
   "source": "Familien-Rezeptbuch (OCR)",
@@ -89,5 +89,7 @@
     "carbs": 64.2,
     "fiber": 9.3
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

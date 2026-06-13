@@ -1,17 +1,13 @@
 {
   "id": "ei-10",
   "name": "Cacao Smoothie Bowl",
-  "category": "Frühstück",
+  "category": "Getränke & Smoothies",
   "timeMinutes": 10,
   "tags": [
-    "Vegan",
-    "Frühstücksgericht",
-    "Frühling",
-    "Sommer",
-    "Herbst",
-    "Winter",
+    "Frühstück",
     "Kinderfreundlich",
-    "Mealprep-geeignet"
+    "Mealprep-geeignet",
+    "Ganzjährig"
   ],
   "weatherType": "neutral",
   "source": "Cuiseline",
@@ -112,5 +108,7 @@
     "fat": 12.8,
     "carbs": 52.4,
     "fiber": 9.2
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

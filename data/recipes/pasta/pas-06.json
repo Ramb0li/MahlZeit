@@ -1,7 +1,7 @@
 {
   "id": "pas-06",
   "name": "Pilzrahmsauce",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 25,
   "ingredients": [
     {
@@ -63,5 +63,7 @@
     "carbs": 63.2,
     "fiber": 4.3
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

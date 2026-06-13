@@ -3,9 +3,7 @@
   "name": "Kartoffelstock mit pochiertem Ei",
   "category": "Kartoffelgerichte",
   "timeMinutes": 40,
-  "tags": [
-    "Vegetarisch"
-  ],
+  "tags": [],
   "weatherType": "kalt",
   "source": "Familien-Rezeptbuch (OCR)",
   "basePortions": 4,
@@ -77,5 +75,7 @@
     "carbs": 40.2,
     "fiber": 3.2
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

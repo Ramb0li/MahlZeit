@@ -6,8 +6,8 @@
   "basePortions": 4,
   "tags": [
     "Ofengericht",
-    "Mittagsgericht",
-    "Abendgericht"
+    "Mittagessen",
+    "Abendessen"
   ],
   "ingredients": [
     {
@@ -133,5 +133,7 @@
   "imageKochen": null,
   "allergens": [
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

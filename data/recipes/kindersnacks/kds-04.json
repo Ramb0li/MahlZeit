@@ -108,7 +108,6 @@
   "tips": "Saaten und Erbsen je nach Alter des Kindes vorher zerkleinern.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Mealprep-geeignet"
   ],
   "allergens": [
@@ -122,5 +121,7 @@
     "carbs": 22.8,
     "fiber": 4.3
   },
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

@@ -90,7 +90,6 @@
   "tips": "Für Kinder unter 12 Monaten Mais zerkleinern und Salz weglassen.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Mealprep-geeignet"
   ],
   "allergens": [
@@ -105,5 +104,7 @@
     "carbs": 28.2,
     "fiber": 3.5
   },
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

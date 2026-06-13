@@ -1,7 +1,7 @@
 {
   "id": "fvt-10",
   "name": "Spinat-Linsen-Daal mit Vollkornreis",
-  "category": "Reis & Getreide",
+  "category": "Reis, Getreide & Hülsenfrüchte",
   "timeMinutes": 50,
   "ingredients": [
     {
@@ -98,7 +98,7 @@
   "imageUrl": null,
   "tags": [
     "Mealprep-geeignet",
-    "Mittagsgericht",
+    "Mittagessen",
     "Asiatisch",
     "Herbst",
     "Winter",
@@ -114,5 +114,7 @@
     "carbs": 68.3,
     "fiber": 12.5
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

@@ -1,7 +1,7 @@
 {
   "id": "son-10",
   "name": "Scharf angebratener Rosenkohl mit Sobanudeln",
-  "category": "Vegetarische Hauptgerichte",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 25,
   "ingredients": [
     {
@@ -68,7 +68,6 @@
   "tips": "Der Rosenkohl darf wirklich dunkel werden – das gibt das typische Röstaroma. Sobanudeln nicht überkochen.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Asiatisch"
   ],
   "dietCategory": "vegan",
@@ -82,5 +81,7 @@
     "fat": 15.8,
     "carbs": 68.4,
     "fiber": 12.7
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

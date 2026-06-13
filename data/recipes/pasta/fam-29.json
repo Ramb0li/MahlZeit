@@ -1,16 +1,15 @@
 {
   "id": "fam-29",
   "name": "Nudeln al Pollo",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 35,
   "tags": [
-    "Fleischhaltig",
     "Mealprep-geeignet",
     "Frühling",
     "Herbst",
     "Winter",
-    "Mittagsgericht",
-    "Abendgericht",
+    "Mittagessen",
+    "Abendessen",
     "Kinderfreundlich"
   ],
   "weatherType": "kalt",
@@ -123,5 +122,7 @@
     "carbs": 58.4,
     "fiber": 4.2
   },
-  "dietCategory": "meat"
+  "dietCategory": "meat",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

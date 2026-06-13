@@ -4,7 +4,6 @@
   "category": "Snacks & Vorspeisen",
   "timeMinutes": 10,
   "tags": [
-    "Vegetarisch",
     "Frühling"
   ],
   "weatherType": "warm",
@@ -62,5 +61,7 @@
     "carbs": 20.1,
     "fiber": 2.1
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

@@ -65,7 +65,6 @@
   "tips": "Gut auf Vorrat zubereiten und im Toaster frisch aufbacken.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Mealprep-geeignet"
   ],
   "allergens": [
@@ -80,5 +79,7 @@
     "carbs": 21.5,
     "fiber": 4.5
   },
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

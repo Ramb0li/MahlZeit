@@ -4,8 +4,6 @@
   "category": "Suppen, Eintöpfe & Currys",
   "timeMinutes": 70,
   "tags": [
-    "Vegetarisch",
-    "Vegan",
     "Italienisch"
   ],
   "weatherType": "kalt",
@@ -88,5 +86,7 @@
     "fat": 10.8,
     "carbs": 38.5,
     "fiber": 9.2
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

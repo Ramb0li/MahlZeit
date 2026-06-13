@@ -1,7 +1,7 @@
 {
   "id": "pas-10",
   "name": "Pasta mit Kürbissauce",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 35,
   "ingredients": [
     {
@@ -49,7 +49,7 @@
   "tips": "",
   "imageUrl": null,
   "tags": [
-    "Mittagsgericht",
+    "Mittagessen",
     "Herbst",
     "Winter"
   ],
@@ -65,5 +65,7 @@
     "fiber": 5.1
   },
   "dietCategory": "vegetarian",
-  "imageZutaten": null
+  "imageZutaten": null,
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

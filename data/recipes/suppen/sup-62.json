@@ -8,8 +8,8 @@
     "Herbst",
     "Winter",
     "Italienisch",
-    "Mittagsgericht",
-    "Abendgericht"
+    "Mittagessen",
+    "Abendessen"
   ],
   "ingredients": [
     {
@@ -239,5 +239,7 @@
     "gluten",
     "sellerie",
     "weichtiere"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

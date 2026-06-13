@@ -1,7 +1,7 @@
 {
   "id": "fvt-09",
   "name": "Kein-Käse-Käse-Spätzle (vegan)",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 50,
   "ingredients": [
     {
@@ -91,7 +91,6 @@
   "tips": "",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Herbst",
     "Winter"
   ],
@@ -108,5 +107,7 @@
     "carbs": 54.2,
     "fiber": 6.8
   },
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

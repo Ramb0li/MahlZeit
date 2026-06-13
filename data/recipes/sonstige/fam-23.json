@@ -1,11 +1,9 @@
 {
   "id": "fam-23",
   "name": "Kräuter-Gemüse-Rahmsauce",
-  "category": "Vegetarische Hauptgerichte",
+  "category": "Gemüsegerichte",
   "timeMinutes": 30,
-  "tags": [
-    "Vegetarisch"
-  ],
+  "tags": [],
   "weatherType": "neutral",
   "source": "Familien-Rezeptbuch",
   "basePortions": 6,
@@ -117,5 +115,7 @@
     "carbs": 9.2,
     "fiber": 3.4
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

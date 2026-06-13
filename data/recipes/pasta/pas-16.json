@@ -1,7 +1,7 @@
 {
   "id": "pas-16",
   "name": "Vegane Linsen-Lasagne",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 100,
   "ingredients": [
     {
@@ -122,7 +122,6 @@
   "tips": "Die Lasagne schmeckt am nächsten Tag noch besser. Reste lassen sich gut einfrieren.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Mealprep-geeignet",
     "Italienisch"
   ],
@@ -137,5 +136,7 @@
     "fat": 16.8,
     "carbs": 76.4,
     "fiber": 11.2
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

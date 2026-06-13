@@ -7,9 +7,9 @@
     "Herbst",
     "Winter",
     "Ofengericht",
-    "Mittagsgericht",
-    "Abendgericht",
-    "Schweizer"
+    "Mittagessen",
+    "Abendessen",
+    "Schweizerisch"
   ],
   "weatherType": "kalt",
   "source": "Familien-Rezeptbuch (OCR)",
@@ -99,5 +99,7 @@
     "carbs": 18.5,
     "fiber": 0.9
   },
-  "dietCategory": "meat"
+  "dietCategory": "meat",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

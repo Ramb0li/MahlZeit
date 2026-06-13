@@ -91,7 +91,6 @@
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ein-12-1780778294972.jpg",
   "tags": [
-    "Vegan",
     "Mealprep-geeignet",
     "Herbst"
   ],
@@ -109,5 +108,7 @@
   },
   "imageZutaten": null,
   "imageKochen": null,
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

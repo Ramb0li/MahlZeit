@@ -5,11 +5,10 @@
   "timeMinutes": 20,
   "basePortions": 2,
   "tags": [
-    "Schnell und einfach",
     "Herbst",
     "Winter",
-    "Mittagsgericht",
-    "Abendgericht"
+    "Mittagessen",
+    "Abendessen"
   ],
   "ingredients": [
     {
@@ -101,5 +100,7 @@
   "allergens": [
     "gluten",
     "schalenfruechte"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

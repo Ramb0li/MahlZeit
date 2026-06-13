@@ -99,7 +99,6 @@
   "tips": "Das Gemüse je nach Saison variieren – z.B. Fenchel im Herbst, Spinat im Frühling.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Mealprep-geeignet",
     "Herbst",
     "Winter"
@@ -114,5 +113,7 @@
     "fat": 7.6,
     "carbs": 44.8,
     "fiber": 11.4
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

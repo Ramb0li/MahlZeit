@@ -62,7 +62,6 @@
   "tips": "Die Gipfeli schmecken warm und kalt. Können gut vorbereitet und direkt vor dem Apéro gebacken werden.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Mealprep-geeignet"
   ],
   "dietCategory": "vegan",
@@ -77,5 +76,7 @@
     "fat": 11.8,
     "carbs": 12.4,
     "fiber": 1.3
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

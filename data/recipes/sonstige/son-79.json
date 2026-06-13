@@ -5,10 +5,9 @@
   "timeMinutes": 100,
   "basePortions": 4,
   "tags": [
-    "Vegetarisch",
     "Ofengericht",
     "Winter",
-    "Abendgericht"
+    "Abendessen"
   ],
   "ingredients": [
     {
@@ -88,5 +87,7 @@
   "imageKochen": null,
   "allergens": [
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

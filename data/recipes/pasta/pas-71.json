@@ -1,14 +1,12 @@
 {
   "id": "pas-71",
   "name": "Vegetarische Carbonara mit Champignons und Schnittlauch",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 20,
   "basePortions": 2,
   "tags": [
-    "Vegetarisch",
-    "Schnell und einfach",
-    "Mittagsgericht",
-    "Abendgericht",
+    "Mittagessen",
+    "Abendessen",
     "Italienisch"
   ],
   "ingredients": [
@@ -82,5 +80,7 @@
     "ei",
     "gluten",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

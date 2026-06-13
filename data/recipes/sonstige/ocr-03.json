@@ -4,7 +4,6 @@
   "category": "Desserts & Süsses",
   "timeMinutes": 40,
   "tags": [
-    "Vegetarisch",
     "Herbst"
   ],
   "weatherType": "kalt",
@@ -72,5 +71,7 @@
     "carbs": 49.2,
     "fiber": 2.8
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

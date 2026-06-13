@@ -1,15 +1,14 @@
 {
   "id": "pas-60",
   "name": "Pasta e ceci - Nudeln mit Kichererbsen in Tomatensauce",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 30,
   "basePortions": 4,
   "tags": [
-    "Vegetarisch",
     "Italienisch",
     "Mealprep-geeignet",
-    "Mittagsgericht",
-    "Abendgericht"
+    "Mittagessen",
+    "Abendessen"
   ],
   "ingredients": [
     {
@@ -98,5 +97,7 @@
   "allergens": [
     "gluten",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

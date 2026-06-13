@@ -7,8 +7,8 @@
   "tags": [
     "Herbst",
     "Winter",
-    "Mittagsgericht",
-    "Abendgericht",
+    "Mittagessen",
+    "Abendessen",
     "Mealprep-geeignet",
     "Kinderfreundlich"
   ],
@@ -104,5 +104,7 @@
   "imageUrl": "https://herrbuettner.de/wp-content/uploads/2019/10/Karotten_Kartoffel_Erbsen_Suppe_mit_Hackbaellchen.jpg",
   "imageZutaten": null,
   "imageKochen": null,
-  "allergens": []
+  "allergens": [],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

@@ -42,19 +42,24 @@ const SOURCE      = 'herrbuettner.de';
 
 // Kategorie → Ordner-Mapping
 const CATEGORY_FOLDER: Record<Category, string> = {
-  'Pasta':                      'pasta',
-  'Suppen, Eintöpfe & Currys':  'suppen',
-  'Salate & Bowls':             'salat-bowl',
-  'Kartoffelgerichte':          'kartoffel',
-  'Fleisch & Geflügel':         'fleisch',
-  'Fisch & Meeresfrüchte':      'fisch',
-  'Vegetarische Hauptgerichte': 'sonstige',
-  'Aufläufe & Gratins':         'eintopf-gratin',
-  'Reis & Getreide':            'reis',
-  'Eigene Rezepte':             'sonstige',
-  'Snacks & Vorspeisen':        'sonstige',
-  'Wraps & Sandwiches':         'sonstige',
-  'Desserts & Süsses':          'sonstige',
+  'Pasta & Teigwaren':                  'pasta',
+  'Suppen, Eintöpfe & Currys':          'suppen',
+  'Salate & Bowls':                     'salat-bowl',
+  'Kartoffelgerichte':                  'kartoffel',
+  'Fleisch & Geflügel':                 'fleisch',
+  'Fisch & Meeresfrüchte':              'fisch',
+  'Gemüsegerichte':                     'sonstige',
+  'Aufläufe & Gratins':                 'eintopf-gratin',
+  'Reis, Getreide & Hülsenfrüchte':     'reis',
+  'Snacks & Vorspeisen':                'sonstige',
+  'Wraps, Sandwiches & Burger':         'sonstige',
+  'Pizza, Flammkuchen, Wähen & Quiches': 'sonstige',
+  'Beilagen, Saucen & Dips':            'sonstige',
+  'Desserts & Süsses':                  'sonstige',
+  'Eiergerichte':                       'eier',
+  'Brot & Gebäck':                      'sonstige',
+  'Müesli, Porridge & Frühstücksschalen': 'sonstige',
+  'Getränke & Smoothies':               'sonstige',
 };
 
 // Ordner → ID-Praefix

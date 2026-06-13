@@ -3,9 +3,7 @@
   "name": "Traditionelle Gurkensandwiches",
   "category": "Snacks & Vorspeisen",
   "timeMinutes": 25,
-  "tags": [
-    "Vegetarisch"
-  ],
+  "tags": [],
   "weatherType": "warm",
   "source": "Familien-Rezeptbuch (OCR)",
   "basePortions": 4,
@@ -63,5 +61,7 @@
     "carbs": 21.2,
     "fiber": 1.6
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

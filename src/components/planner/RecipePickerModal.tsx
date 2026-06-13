@@ -6,10 +6,12 @@ import { type Recipe, type Category, type DietType, computeTimeTags } from '@/ty
 import { getEffectiveDietCategory } from '@/lib/suggestions';
 
 const CATEGORIES: Category[] = [
-  'Snacks & Vorspeisen', 'Suppen, Eintöpfe & Currys',
-  'Salate & Bowls', 'Pasta', 'Reis & Getreide', 'Kartoffelgerichte',
-  'Fleisch & Geflügel', 'Fisch & Meeresfrüchte', 'Vegetarische Hauptgerichte',
-  'Aufläufe & Gratins', 'Wraps & Sandwiches', 'Desserts & Süsses', 'Eigene Rezepte',
+  'Snacks & Vorspeisen', 'Suppen, Eintöpfe & Currys', 'Salate & Bowls',
+  'Pasta & Teigwaren', 'Reis, Getreide & Hülsenfrüchte', 'Kartoffelgerichte',
+  'Eiergerichte', 'Fleisch & Geflügel', 'Fisch & Meeresfrüchte', 'Gemüsegerichte',
+  'Aufläufe & Gratins', 'Wraps, Sandwiches & Burger', 'Pizza, Flammkuchen, Wähen & Quiches',
+  'Beilagen, Saucen & Dips', 'Desserts & Süsses', 'Brot & Gebäck',
+  'Müesli, Porridge & Frühstücksschalen', 'Getränke & Smoothies',
 ];
 
 type FilterCategory = Category | 'Frühstück';
@@ -33,7 +35,7 @@ interface RecipePickerModalProps {
 export function RecipePickerModal({ recipes, mealType, dietPreference, onSelect, onClose, locked = false }: RecipePickerModalProps) {
   const [search, setSearch] = useState('');
   const [filterCategory, setFilterCategory] = useState<FilterCategory | 'Alle'>('Alle');
-  const [filterTime, setFilterTime] = useState<'Alle' | 'Schnell (<20min)' | 'Einfach (<30min)'>('Alle');
+  const [filterTime, setFilterTime] = useState<'Alle' | 'Schnell'>('Alle');
 
   const title =
     mealType === 'breakfast' ? 'Frühstück wählen' :
@@ -43,8 +45,8 @@ export function RecipePickerModal({ recipes, mealType, dietPreference, onSelect,
   const filtered = useMemo(() => {
     return recipes.filter((r) => {
       if (r.archived) return false;
-      if (mealType === 'lunch' && !r.tags.includes('Mittagsgericht')) return false;
-      if (mealType === 'breakfast' && !r.tags.includes('Frühstücksgericht')) return false;
+      if (mealType === 'lunch' && !r.tags.includes('Mittagessen')) return false;
+      if (mealType === 'breakfast' && !r.tags.includes('Frühstück')) return false;
       // Diet preference filter (uses getEffectiveDietCategory für Korrektheit über alle Kategorien)
       if (dietPreference && dietPreference !== 'alle' && dietPreference !== 'fleischhaltig' && dietPreference !== 'flexitarisch') {
         const diet = getEffectiveDietCategory(r);
@@ -54,7 +56,7 @@ export function RecipePickerModal({ recipes, mealType, dietPreference, onSelect,
       }
       if (filterCategory !== 'Alle') {
         if (filterCategory === 'Frühstück') {
-          if (!r.tags.includes('Frühstücksgericht')) return false;
+          if (!r.tags.includes('Frühstück')) return false;
         } else {
           if (r.category !== filterCategory) return false;
         }
@@ -95,12 +97,12 @@ export function RecipePickerModal({ recipes, mealType, dietPreference, onSelect,
 
         {/* Time chips */}
         <div className="flex gap-1.5">
-          {(['Alle', 'Schnell (<20min)', 'Einfach (<30min)'] as const).map((t) => (
+          {(['Alle', 'Schnell'] as const).map((t) => (
             <button key={t} onClick={() => setFilterTime(t)}
               className="px-2.5 py-1 rounded-full text-xs font-semibold transition-all"
               style={filterTime === t ? (t === 'Alle' ? chipActive : chipDarkActive) : chipInactive}
             >
-              {t}
+              {t === 'Schnell' ? `Schnell (≤30min)` : t}
             </button>
           ))}
         </div>
@@ -137,12 +139,10 @@ export function RecipePickerModal({ recipes, mealType, dietPreference, onSelect,
 
           {filtered.map((recipe) => {
             const timeTags = computeTimeTags(recipe.timeMinutes);
-            const isSchnell = timeTags.includes('Schnell (<20min)');
+            const isSchnell = timeTags.includes('Schnell');
             const timeStyle = isSchnell
               ? { backgroundColor: '#e8f5e9', color: '#2e7d32' }
-              : timeTags.includes('Einfach (<30min)')
-                ? { backgroundColor: '#fff3e0', color: '#e65100' }
-                : { backgroundColor: '#fce4ec', color: '#c62828' };
+              : { backgroundColor: '#fce4ec', color: '#c62828' };
             const isLockedRecipe = locked && !recipe.id.startsWith('rec-');
             return (
               <button
@@ -160,10 +160,10 @@ export function RecipePickerModal({ recipes, mealType, dietPreference, onSelect,
                   <p className="text-xs mt-0.5" style={{ color: '#9c8c84' }}>{recipe.category}</p>
                 </div>
                 <div className="flex items-center gap-1.5 shrink-0">
-                  {recipe.tags.includes('Vegan') && (
+                  {recipe.dietCategory === 'vegan' && (
                     <span className="text-xs px-1.5 py-0.5 rounded-full font-medium" style={{ backgroundColor: '#f5ece0', color: '#c49a6c' }}>🌿</span>
                   )}
-                  {!recipe.tags.includes('Vegan') && recipe.tags.includes('Vegetarisch') && (
+                  {recipe.dietCategory === 'vegetarian' && (
                     <span className="text-xs px-1.5 py-0.5 rounded-full font-medium" style={{ backgroundColor: '#f2e5e0', color: '#b5614a' }}>🥗</span>
                   )}
                   <span className="text-xs px-2 py-0.5 rounded-full font-medium" style={timeStyle}>

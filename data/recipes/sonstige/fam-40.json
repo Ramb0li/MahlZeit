@@ -1,10 +1,9 @@
 {
   "id": "fam-40",
   "name": "Spinat-Pancakes vom Ofen",
-  "category": "Vegetarische Hauptgerichte",
+  "category": "Gemüsegerichte",
   "timeMinutes": 30,
   "tags": [
-    "Vegetarisch",
     "Ofengericht"
   ],
   "weatherType": "neutral",
@@ -71,5 +70,7 @@
     "carbs": 12.3,
     "fiber": 2.1
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

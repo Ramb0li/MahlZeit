@@ -99,9 +99,8 @@
   "tips": "Beluga-Linsen müssen nicht eingeweicht werden und behalten ihre Form beim Kochen.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Mealprep-geeignet",
-    "Orientalisch"
+    "Nahöstlich"
   ],
   "dietCategory": "vegan",
   "allergens": [
@@ -113,5 +112,7 @@
     "fat": 18.6,
     "carbs": 62.8,
     "fiber": 16.2
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

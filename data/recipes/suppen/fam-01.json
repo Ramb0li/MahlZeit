@@ -4,7 +4,6 @@
   "category": "Suppen, Eintöpfe & Currys",
   "timeMinutes": 20,
   "tags": [
-    "Vegetarisch",
     "Frühling"
   ],
   "weatherType": "warm",
@@ -76,5 +75,7 @@
     "fat": 11.4,
     "carbs": 15.8,
     "fiber": 2.4
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

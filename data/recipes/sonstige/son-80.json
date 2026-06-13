@@ -1,16 +1,15 @@
 {
   "id": "son-80",
   "name": "Couscous mit Butternut-Kürbis, Walnüssen und gratiniertem Ziegenkäse",
-  "category": "Vegetarische Hauptgerichte",
+  "category": "Reis, Getreide & Hülsenfrüchte",
   "timeMinutes": 35,
   "basePortions": 4,
   "tags": [
-    "Vegetarisch",
     "Herbst",
     "Winter",
     "Ofengericht",
-    "Mittagsgericht",
-    "Abendgericht"
+    "Mittagessen",
+    "Abendessen"
   ],
   "ingredients": [
     {
@@ -133,5 +132,7 @@
     "gluten",
     "milch",
     "schalenfruechte"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

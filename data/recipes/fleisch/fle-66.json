@@ -5,9 +5,9 @@
   "timeMinutes": 30,
   "basePortions": 4,
   "tags": [
-    "Mittagsgericht",
-    "Abendgericht",
-    "Orientalisch"
+    "Mittagessen",
+    "Abendessen",
+    "Nahöstlich"
   ],
   "ingredients": [
     {
@@ -159,5 +159,7 @@
   "allergens": [
     "gluten",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

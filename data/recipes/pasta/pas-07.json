@@ -4,8 +4,7 @@
   "category": "Aufläufe & Gratins",
   "timeMinutes": 45,
   "tags": [
-    "Vegetarisch",
-    "Schweizer",
+    "Schweizerisch",
     "Herbst",
     "Winter"
   ],
@@ -84,5 +83,7 @@
     "carbs": 78.6,
     "fiber": 4.5
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

@@ -1,13 +1,12 @@
 {
   "id": "pas-79",
   "name": "Penne mit Brokkoli und Cabanossi in Frischkäse-Rahm Sauce",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 20,
   "basePortions": 4,
   "tags": [
-    "Schnell und einfach",
-    "Mittagsgericht",
-    "Abendgericht",
+    "Mittagessen",
+    "Abendessen",
     "Kinderfreundlich"
   ],
   "ingredients": [
@@ -106,5 +105,7 @@
   "allergens": [
     "gluten",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

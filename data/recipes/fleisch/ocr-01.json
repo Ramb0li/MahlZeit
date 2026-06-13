@@ -4,7 +4,7 @@
   "category": "Fleisch & Geflügel",
   "timeMinutes": 45,
   "tags": [
-    "Orientalisch"
+    "Nahöstlich"
   ],
   "weatherType": "warm",
   "source": "Familien-Rezeptbuch (OCR)",
@@ -93,5 +93,7 @@
     "carbs": 48.5,
     "fiber": 6.2
   },
-  "dietCategory": "meat"
+  "dietCategory": "meat",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

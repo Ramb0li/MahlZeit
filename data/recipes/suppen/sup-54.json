@@ -6,7 +6,6 @@
   "basePortions": 4,
   "tags": [
     "Herbst",
-    "Einfach",
     "Ofengericht"
   ],
   "ingredients": [
@@ -108,5 +107,7 @@
   "allergens": [
     "gluten",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

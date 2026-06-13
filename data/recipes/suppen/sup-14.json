@@ -110,9 +110,8 @@
   "tips": "Wer möchte, kann die Suppe mit Feta und Limette verfeinern.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Mealprep-geeignet",
-    "Orientalisch",
+    "Nahöstlich",
     "Winter"
   ],
   "dietCategory": "vegan",
@@ -125,5 +124,7 @@
     "fat": 23.1,
     "carbs": 48.7,
     "fiber": 9.8
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

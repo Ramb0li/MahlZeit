@@ -5,10 +5,9 @@
   "timeMinutes": 15,
   "basePortions": 2,
   "tags": [
-    "Schnell und einfach",
     "Sommer",
-    "Mittagsgericht",
-    "Abendgericht"
+    "Mittagessen",
+    "Abendessen"
   ],
   "ingredients": [
     {
@@ -112,5 +111,7 @@
   "imageKochen": null,
   "allergens": [
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

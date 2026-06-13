@@ -5,10 +5,8 @@
   "timeMinutes": 45,
   "basePortions": 6,
   "tags": [
-    "Vegan",
-    "Winterzeit",
-    "Herbst",
     "Winter",
+    "Herbst",
     "Ofengericht"
   ],
   "ingredients": [
@@ -114,5 +112,7 @@
   "allergens": [
     "milch",
     "schalenfruechte"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

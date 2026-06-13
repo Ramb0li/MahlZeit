@@ -1,7 +1,7 @@
 {
   "id": "asi-03",
   "name": "Pad Thai mit Tofu und Erdnüssen",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 30,
   "ingredients": [
     {
@@ -91,8 +91,7 @@
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/asi-03-1780783928840.jpg",
   "tags": [
-    "Vegetarisch",
-    "Mittagsgericht",
+    "Mittagessen",
     "Asiatisch"
   ],
   "allergens": [
@@ -111,5 +110,7 @@
   },
   "imageZutaten": null,
   "imageKochen": null,
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

@@ -1,11 +1,10 @@
 {
   "id": "ofe-04",
   "name": "Gefüllte Auberginen mit Couscous",
-  "category": "Vegetarische Hauptgerichte",
+  "category": "Reis, Getreide & Hülsenfrüchte",
   "timeMinutes": 50,
   "tags": [
-    "Vegan",
-    "Orientalisch"
+    "Nahöstlich"
   ],
   "weatherType": "warm",
   "source": "Cuiseline",
@@ -117,5 +116,7 @@
     "fat": 24.7,
     "carbs": 82.3,
     "fiber": 12.4
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

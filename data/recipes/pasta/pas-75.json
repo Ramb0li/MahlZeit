@@ -1,13 +1,13 @@
 {
   "id": "pas-75",
   "name": "Spaghetti mit Speck, Mais, Frühlingszwiebeln und Rahm",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 20,
   "basePortions": 2,
   "tags": [
     "Frühling",
-    "Mittagsgericht",
-    "Abendgericht"
+    "Mittagessen",
+    "Abendessen"
   ],
   "ingredients": [
     {
@@ -82,5 +82,7 @@
   "allergens": [
     "gluten",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

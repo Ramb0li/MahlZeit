@@ -1,7 +1,7 @@
 {
   "id": "son-09",
   "name": "Würzig marinierte Auberginen vom Grill",
-  "category": "Vegetarische Hauptgerichte",
+  "category": "Gemüsegerichte",
   "timeMinutes": 70,
   "ingredients": [
     {
@@ -67,10 +67,9 @@
   "tips": "Wer keinen Grill hat, kann die Auberginen auch bei 200 °C im Ofen ca. 35 Minuten backen.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Grillgericht",
     "Sommer",
-    "Orientalisch"
+    "Nahöstlich"
   ],
   "dietCategory": "vegan",
   "allergens": [],
@@ -80,5 +79,7 @@
     "fat": 25.8,
     "carbs": 9.4,
     "fiber": 5.6
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

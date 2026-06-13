@@ -1,12 +1,10 @@
 {
   "id": "pas-69",
   "name": "Tomatensauce nach Marcella Hazan",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 45,
   "basePortions": 4,
   "tags": [
-    "Vegetarisch",
-    "Schnell und einfach",
     "Italienisch",
     "Mealprep-geeignet"
   ],
@@ -56,5 +54,7 @@
   "imageKochen": null,
   "allergens": [
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

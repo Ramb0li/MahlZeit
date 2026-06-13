@@ -50,7 +50,7 @@
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ofengemu-se--1780579869402.jpeg",
   "tags": [
     "Mealprep-geeignet",
-    "Mittagsgericht",
+    "Mittagessen",
     "Ofengericht"
   ],
   "allergens": [
@@ -64,5 +64,7 @@
     "carbs": 46.2,
     "fiber": 7.3
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

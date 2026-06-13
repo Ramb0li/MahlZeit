@@ -1,14 +1,13 @@
 {
   "id": "pas-86",
   "name": "Speedy Tomatensauce - Pasta al Pomodoro",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 35,
   "basePortions": 2,
   "tags": [
-    "Vegetarisch",
     "Italienisch",
-    "Mittagsgericht",
-    "Abendgericht"
+    "Mittagessen",
+    "Abendessen"
   ],
   "ingredients": [
     {
@@ -120,5 +119,7 @@
   "allergens": [
     "gluten",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

@@ -1,13 +1,12 @@
 {
   "id": "pas-72",
   "name": "Grüne Tagliatelle mit Lachsfilet an Knoblauch-Zitronen-Rahmsauce",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 15,
   "basePortions": 2,
   "tags": [
-    "Schnell und einfach",
-    "Abendgericht",
-    "Mittagsgericht",
+    "Abendessen",
+    "Mittagessen",
     "Frühling"
   ],
   "ingredients": [
@@ -95,5 +94,7 @@
     "fisch",
     "gluten",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

@@ -110,7 +110,6 @@
   "tips": "Das Curry schmeckt am nächsten Tag noch besser. Gut eingefroren hält es sich 3 Monate.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Mealprep-geeignet",
     "Herbst",
     "Winter"
@@ -125,5 +124,7 @@
     "fat": 18.2,
     "carbs": 48.6,
     "fiber": 8.9
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

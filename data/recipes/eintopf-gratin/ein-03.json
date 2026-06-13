@@ -1,7 +1,7 @@
 {
   "id": "ein-03",
   "name": "Urdinkelkernotto mit Tomate und weissen Bohnen",
-  "category": "Reis & Getreide",
+  "category": "Reis, Getreide & Hülsenfrüchte",
   "timeMinutes": 50,
   "ingredients": [
     {
@@ -61,5 +61,7 @@
     "fiber": 12.3
   },
   "dietCategory": "vegetarian",
-  "imageZutaten": null
+  "imageZutaten": null,
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

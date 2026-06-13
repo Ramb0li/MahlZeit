@@ -4,8 +4,7 @@
   "category": "Suppen, Eintöpfe & Currys",
   "timeMinutes": 20,
   "tags": [
-    "Vegetarisch",
-    "Schweizer"
+    "Schweizerisch"
   ],
   "weatherType": "kalt",
   "source": "Familien-Rezeptbuch",
@@ -81,5 +80,7 @@
     "carbs": 18.5,
     "fiber": 2.1
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

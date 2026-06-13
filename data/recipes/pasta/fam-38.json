@@ -1,16 +1,15 @@
 {
   "id": "fam-38",
   "name": "Spaghetti Carbonara",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 20,
   "tags": [
-    "Fleischhaltig",
     "Mealprep-geeignet",
     "Frühling",
     "Herbst",
     "Winter",
-    "Mittagsgericht",
-    "Abendgericht",
+    "Mittagessen",
+    "Abendessen",
     "Italienisch",
     "Kinderfreundlich"
   ],
@@ -102,5 +101,7 @@
     "carbs": 61.5,
     "fiber": 2.8
   },
-  "dietCategory": "meat"
+  "dietCategory": "meat",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

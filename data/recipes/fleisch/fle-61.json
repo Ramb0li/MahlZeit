@@ -7,8 +7,8 @@
   "tags": [
     "Herbst",
     "Winter",
-    "Abendgericht",
-    "Mittagsgericht"
+    "Abendessen",
+    "Mittagessen"
   ],
   "ingredients": [
     {
@@ -125,5 +125,7 @@
     "ei",
     "gluten",
     "schalenfruechte"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

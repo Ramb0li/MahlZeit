@@ -1,7 +1,7 @@
 {
   "id": "ein-04",
   "name": "Ebly mit Tomaten, Räuchertofu & Sauerkraut",
-  "category": "Reis & Getreide",
+  "category": "Reis, Getreide & Hülsenfrüchte",
   "timeMinutes": 35,
   "ingredients": [
     {
@@ -43,9 +43,8 @@
   "tips": "",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Mealprep-geeignet",
-    "Mittagsgericht",
+    "Mittagessen",
     "Herbst",
     "Winter"
   ],
@@ -61,5 +60,7 @@
     "fiber": 8.9
   },
   "dietCategory": "vegan",
-  "imageZutaten": null
+  "imageZutaten": null,
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

@@ -1,13 +1,12 @@
 {
   "id": "pas-70",
   "name": "Würzige Spaghetti Bolognese von der Chorizo",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 40,
   "basePortions": 2.5,
   "tags": [
-    "Schnell und einfach",
-    "Abendgericht",
-    "Mittagsgericht",
+    "Abendessen",
+    "Mittagessen",
     "Italienisch",
     "Herbst",
     "Winter"
@@ -86,5 +85,7 @@
     "gluten",
     "milch",
     "sulfite"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

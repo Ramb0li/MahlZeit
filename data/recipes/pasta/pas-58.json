@@ -1,13 +1,12 @@
 {
   "id": "pas-58",
   "name": "Nudeln mit Grünkohl, Lachs und Sojasauce",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 15,
   "basePortions": 2,
   "tags": [
     "Winter",
-    "Schnell und einfach",
-    "Abendgericht",
+    "Abendessen",
     "Asiatisch"
   ],
   "ingredients": [
@@ -100,5 +99,7 @@
     "gluten",
     "milch",
     "soja"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

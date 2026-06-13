@@ -3,9 +3,7 @@
   "name": "Weissweinrahmsauce",
   "category": "Snacks & Vorspeisen",
   "timeMinutes": 20,
-  "tags": [
-    "Vegetarisch"
-  ],
+  "tags": [],
   "weatherType": "neutral",
   "source": "Familien-Rezeptbuch",
   "basePortions": 4,
@@ -94,5 +92,7 @@
     "carbs": 10.8,
     "fiber": 1.2
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

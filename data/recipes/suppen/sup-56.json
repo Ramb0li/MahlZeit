@@ -6,8 +6,8 @@
   "basePortions": 4,
   "tags": [
     "Sommer",
-    "Abendgericht",
-    "Mittagsgericht"
+    "Abendessen",
+    "Mittagessen"
   ],
   "ingredients": [
     {
@@ -141,5 +141,7 @@
     "fisch",
     "milch",
     "schalenfruechte"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

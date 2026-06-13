@@ -3,10 +3,7 @@
   "name": "Zwetschgenkompott & Beerenkompott",
   "category": "Desserts & Süsses",
   "timeMinutes": 20,
-  "tags": [
-    "Vegetarisch",
-    "Vegan"
-  ],
+  "tags": [],
   "weatherType": "neutral",
   "source": "Familien-Rezeptbuch",
   "basePortions": 4,
@@ -48,5 +45,7 @@
     "carbs": 12.8,
     "fiber": 2.4
   },
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

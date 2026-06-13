@@ -109,5 +109,7 @@
     "carbs": 12.6,
     "fiber": 3.1
   },
-  "dietCategory": "fish"
+  "dietCategory": "fish",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

@@ -1,11 +1,9 @@
 {
   "id": "fam-55",
   "name": "Zitronenravioli an Prosecco-Sauce",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 25,
-  "tags": [
-    "Vegetarisch"
-  ],
+  "tags": [],
   "weatherType": "neutral",
   "source": "Familien-Rezeptbuch",
   "basePortions": 4,
@@ -86,5 +84,7 @@
     "carbs": 88.5,
     "fiber": 3.2
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

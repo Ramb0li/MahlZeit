@@ -9,35 +9,42 @@ import { isRecipeExcluded } from '@/lib/allergens';
 import { type Recipe, type Category, TAG_GROUPS, computeTimeTags } from '@/types';
 
 const CATEGORIES: Category[] = [
-  'Snacks & Vorspeisen', 'Suppen, Eintöpfe & Currys',
-  'Salate & Bowls', 'Pasta', 'Reis & Getreide', 'Kartoffelgerichte',
-  'Fleisch & Geflügel', 'Fisch & Meeresfrüchte', 'Vegetarische Hauptgerichte',
-  'Aufläufe & Gratins', 'Wraps & Sandwiches', 'Desserts & Süsses', 'Eigene Rezepte',
+  'Snacks & Vorspeisen', 'Suppen, Eintöpfe & Currys', 'Salate & Bowls',
+  'Pasta & Teigwaren', 'Reis, Getreide & Hülsenfrüchte', 'Kartoffelgerichte',
+  'Eiergerichte', 'Fleisch & Geflügel', 'Fisch & Meeresfrüchte', 'Gemüsegerichte',
+  'Aufläufe & Gratins', 'Wraps, Sandwiches & Burger', 'Pizza, Flammkuchen, Wähen & Quiches',
+  'Beilagen, Saucen & Dips', 'Desserts & Süsses', 'Brot & Gebäck',
+  'Müesli, Porridge & Frühstücksschalen', 'Getränke & Smoothies',
 ];
 
 type FilterCategory = Category | 'Frühstück';
 
-// "Frühstück" is a virtual filter-only category: shows recipes tagged 'Frühstücksgericht'
+// "Frühstück" is a virtual filter: shows recipes tagged with Mahlzeit-Tag 'Frühstück'
 const FILTER_CATEGORIES: FilterCategory[] = [
   'Frühstück',
   ...CATEGORIES,
 ];
 
 const CAT_COLORS: Record<FilterCategory, { bg: string; color: string }> = {
-  'Frühstück':                  { bg: '#fff3e0', color: '#e65100' },
-  'Snacks & Vorspeisen':        { bg: '#f3e5f5', color: '#6a1b9a' },
-  'Suppen, Eintöpfe & Currys':  { bg: '#e0f2f1', color: '#00695c' },
-  'Salate & Bowls':             { bg: '#e8f5e9', color: '#2e7d32' },
-  'Pasta':                      { bg: '#f2e5e0', color: '#b5614a' },
-  'Reis & Getreide':            { bg: '#f5ece0', color: '#c49a6c' },
-  'Kartoffelgerichte':          { bg: '#fdf3e7', color: '#bf6000' },
-  'Fleisch & Geflügel':         { bg: '#fce4ec', color: '#c62828' },
-  'Fisch & Meeresfrüchte':      { bg: '#e3f2fd', color: '#1565c0' },
-  'Vegetarische Hauptgerichte': { bg: '#f1f8e9', color: '#558b2f' },
-  'Aufläufe & Gratins':         { bg: '#ede7f6', color: '#4527a0' },
-  'Wraps & Sandwiches':         { bg: '#fbe9e7', color: '#bf360c' },
-  'Desserts & Süsses':          { bg: '#fce4ec', color: '#880e4f' },
-  'Eigene Rezepte':             { bg: '#ede9fe', color: '#5b21b6' },
+  'Frühstück':                          { bg: '#fff3e0', color: '#e65100' },
+  'Snacks & Vorspeisen':                { bg: '#f3e5f5', color: '#6a1b9a' },
+  'Suppen, Eintöpfe & Currys':          { bg: '#e0f2f1', color: '#00695c' },
+  'Salate & Bowls':                     { bg: '#e8f5e9', color: '#2e7d32' },
+  'Pasta & Teigwaren':                  { bg: '#f2e5e0', color: '#b5614a' },
+  'Reis, Getreide & Hülsenfrüchte':     { bg: '#f5ece0', color: '#c49a6c' },
+  'Kartoffelgerichte':                  { bg: '#fdf3e7', color: '#bf6000' },
+  'Eiergerichte':                       { bg: '#fffde7', color: '#f57f17' },
+  'Fleisch & Geflügel':                 { bg: '#fce4ec', color: '#c62828' },
+  'Fisch & Meeresfrüchte':              { bg: '#e3f2fd', color: '#1565c0' },
+  'Gemüsegerichte':                     { bg: '#f1f8e9', color: '#558b2f' },
+  'Aufläufe & Gratins':                 { bg: '#ede7f6', color: '#4527a0' },
+  'Wraps, Sandwiches & Burger':         { bg: '#fbe9e7', color: '#bf360c' },
+  'Pizza, Flammkuchen, Wähen & Quiches': { bg: '#fff8e1', color: '#ff8f00' },
+  'Beilagen, Saucen & Dips':            { bg: '#e8eaf6', color: '#283593' },
+  'Desserts & Süsses':                  { bg: '#fce4ec', color: '#880e4f' },
+  'Brot & Gebäck':                      { bg: '#efebe9', color: '#4e342e' },
+  'Müesli, Porridge & Frühstücksschalen': { bg: '#fff8e1', color: '#e65100' },
+  'Getränke & Smoothies':               { bg: '#e1f5fe', color: '#0277bd' },
 };
 
 const DIET_FILTERS = [
@@ -141,7 +148,7 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
       if (showFavorites && !favorites.has(r.id)) return false;
       if (!showFavorites && filterCategory !== 'Alle') {
         if (filterCategory === 'Frühstück') {
-          if (!r.tags.includes('Frühstücksgericht')) return false;
+          if (!r.tags.includes('Frühstück')) return false;
         } else {
           if (r.category !== filterCategory) return false;
         }
@@ -312,7 +319,7 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
 
           {/* Tag chips */}
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
-            {['Schnell (<20min)', 'Einfach (<30min)', ...(Object.values(TAG_GROUPS).flat())].map(tag => (
+            {['Schnell', ...(Object.values(TAG_GROUPS).flat())].map(tag => (
               <button key={tag} onClick={() => toggleTag(tag)}
                 className={`mz-chip${filterTags.includes(tag) ? ' on' : ''}`}
                 style={{ fontSize: 12, padding: '5px 10px' }}

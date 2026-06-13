@@ -73,9 +73,8 @@
   "tips": "Mit frischen Sommertomaten aus dem Garten schmeckt die Suppe noch besser. Wer es etwas schärfer mag, gibt eine Prise Chiliflocken dazu.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Mealprep-geeignet",
-    "Mittagsgericht",
+    "Mittagessen",
     "Sommer",
     "Herbst"
   ],
@@ -90,5 +89,7 @@
     "fiber": 3.8
   },
   "dietCategory": "vegan",
-  "imageZutaten": null
+  "imageZutaten": null,
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

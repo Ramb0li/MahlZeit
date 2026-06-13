@@ -18,13 +18,14 @@ const RECIPE_TOOL = {
     properties: {
       name:         { type: 'string', description: 'Rezeptname' },
       description:  { type: 'string', description: 'Kurze appetitliche Beschreibung (1-2 Sätze)' },
-      category:     { type: 'string', enum: ['Snacks & Vorspeisen','Suppen, Eintöpfe & Currys','Salate & Bowls','Pasta','Reis & Getreide','Kartoffelgerichte','Fleisch & Geflügel','Fisch & Meeresfrüchte','Vegetarische Hauptgerichte','Aufläufe & Gratins','Wraps & Sandwiches','Desserts & Süsses','Eigene Rezepte'] },
+      category:     { type: 'string', enum: ['Snacks & Vorspeisen','Suppen, Eintöpfe & Currys','Salate & Bowls','Pasta & Teigwaren','Reis, Getreide & Hülsenfrüchte','Kartoffelgerichte','Eiergerichte','Fleisch & Geflügel','Fisch & Meeresfrüchte','Gemüsegerichte','Aufläufe & Gratins','Wraps, Sandwiches & Burger','Pizza, Flammkuchen, Wähen & Quiches','Beilagen, Saucen & Dips','Desserts & Süsses','Brot & Gebäck','Müesli, Porridge & Frühstücksschalen','Getränke & Smoothies'], description: 'Passende Hauptkategorie' },
+      dietCategory: { type: 'string', enum: ['meat','fish','vegetarian','vegan'], description: 'Ernährungsform: meat=Fleischhaltig, fish=Pescetarisch, vegetarian=Vegetarisch, vegan=Vegan' },
       timeMinutes:  { type: 'number', description: 'Gesamtzeit in Minuten' },
       basePortions: { type: 'number', description: 'Anzahl Portionen' },
       weatherType:  { type: 'string', enum: ['warm','kalt','neutral'] },
       tags: {
         type: 'array',
-        description: 'Passende Tags aus: Vegetarisch, Vegan, Mealprep-geeignet, Kinderfreundlich, Frühling, Sommer, Herbst, Winter, Frühstücksgericht, Mittagsgericht, Abendgericht, Grillgericht, Ofengericht, Schweizer, Italienisch, Asiatisch, Mexikanisch, Orientalisch',
+        description: 'Passende Tags aus — Mahlzeit: Frühstück, Brunch, Mittagessen, Abendessen, Snack, Dessert — Planung: Mealprep-geeignet, Kinderfreundlich, Einfrierbar, Resteverwertung, Budgetfreundlich, Für Gäste, Gut zum Mitnehmen — Zubereitung: Pfannengericht, Ofengericht, Grillgericht, One-Pot-Gericht, Airfryer, Ohne Kochen — Saison: Frühling, Sommer, Herbst, Winter, Ganzjährig — Küche: Schweizerisch, Italienisch, Mediterran, Französisch, Griechisch, Mexikanisch, Amerikanisch, Indisch, Thai, Chinesisch, Japanisch, Türkisch, Nahöstlich',
         items: { type: 'string' },
       },
       ingredients: {
@@ -243,7 +244,7 @@ export async function POST(request: Request) {
         { type: 'image', source: { type: 'base64', media_type: body.mimeType, data: body.imageBase64 } },
       ]);
       recipe.source = importSource;
-      recipe.category = 'Eigene Rezepte';
+      recipe.sourceType = 'imported';
 
       return NextResponse.json({ recipe, source: 'image' });
     }
@@ -300,7 +301,7 @@ export async function POST(request: Request) {
         }
       }
       recipe.source = importSource;
-      recipe.category = 'Eigene Rezepte';
+      recipe.sourceType = 'imported';
 
       return NextResponse.json({ recipe, source: jsonLd ? 'json-ld' : 'html', url });
     }

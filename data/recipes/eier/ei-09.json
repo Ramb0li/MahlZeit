@@ -1,11 +1,10 @@
 {
   "id": "ei-09",
   "name": "Blueberry Smoothie Bowl",
-  "category": "Frühstück",
+  "category": "Getränke & Smoothies",
   "timeMinutes": 10,
   "tags": [
-    "Vegan",
-    "Frühstücksgericht",
+    "Frühstück",
     "Kinderfreundlich",
     "Mealprep-geeignet",
     "Frühling",
@@ -103,5 +102,7 @@
     "fat": 10.2,
     "carbs": 39.8,
     "fiber": 8.6
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

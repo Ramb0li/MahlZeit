@@ -1,7 +1,7 @@
 {
   "id": "fvt-06",
   "name": "Brokkoli-Gnocchi",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 55,
   "ingredients": [
     {
@@ -65,5 +65,7 @@
     "carbs": 68.5,
     "fiber": 6.9
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

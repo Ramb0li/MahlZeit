@@ -13,7 +13,7 @@
  * Legacy-globalen Pfad zurück (für Migrationsphase / Admin-Tools).
  */
 
-import type { Recipe, WeekPlan, AppSettings, PromotionsCache, WeatherCache, DayConstraint, ShoppingGroups, RecipeRating, Category, PantryItem, ShoppingListState } from '@/types';
+import type { Recipe, WeekPlan, AppSettings, PromotionsCache, WeatherCache, DayConstraint, ShoppingGroups, RecipeRating, Category, PantryItem, ShoppingListState, SourceType } from '@/types';
 
 import seedRecipes     from '../../data/recipes.json';
 import seedSettings    from '../../data/settings.json';
@@ -117,54 +117,89 @@ export async function saveTemplateRecipes(recipes: Recipe[]): Promise<void> {
 // ─── Legacy recipe normalizer (Redis group recipes may use old schema) ────────
 
 const OLD_CAT_MAP: Record<string, Category> = {
-  'Eier':             'Vegetarische Hauptgerichte',
-  'Reis':             'Reis & Getreide',
-  'Pasta':            'Pasta',
+  // Legacy folder-based names (very old schema)
+  'Eier':             'Eiergerichte',
+  'Reis':             'Reis, Getreide & Hülsenfrüchte',
   'Eintopf/Gratin':   'Suppen, Eintöpfe & Currys',
   'Fisch':            'Fisch & Meeresfrüchte',
-  'Sonstige':         'Vegetarische Hauptgerichte',
-  'Asiatisch':        'Vegetarische Hauptgerichte',
+  'Sonstige':         'Gemüsegerichte',
+  'Asiatisch':        'Gemüsegerichte',
   'Ofen':             'Aufläufe & Gratins',
   'Suppen':           'Suppen, Eintöpfe & Currys',
   'Salat/Bowl':       'Salate & Bowls',
-  'Frühstück':        'Vegetarische Hauptgerichte',
+  'Frühstück':        'Eiergerichte',
   'Süsses':           'Desserts & Süsses',
   'Brot & Aufstrich': 'Snacks & Vorspeisen',
   'Snacks':           'Snacks & Vorspeisen',
+  // v2 category renames
+  'Pasta':                      'Pasta & Teigwaren',
+  'Reis & Getreide':            'Reis, Getreide & Hülsenfrüchte',
+  'Wraps & Sandwiches':         'Wraps, Sandwiches & Burger',
+  'Vegetarische Hauptgerichte': 'Gemüsegerichte',
+  'Eigene Rezepte':             'Gemüsegerichte',
 };
 const SEASON_VALS = new Set(['Frühling', 'Sommer', 'Herbst', 'Winter']);
+
+const TAG_RENAMES: Record<string, string> = {
+  'Schweizer':        'Schweizerisch',
+  'Orientalisch':     'Nahöstlich',
+  'Frühstücksgericht': 'Frühstück',
+  'Mittagsgericht':   'Mittagessen',
+  'Abendgericht':     'Abendessen',
+  'Abendsgericht':    'Abendessen',
+  'Winterzeit':       'Winter',
+  'Sommergericht':    'Sommer',
+};
+const REMOVE_TAGS = new Set(['Schnell und einfach', 'Schnell zubereitet', 'Schnell', 'Einfach', 'Fisch', 'Fleischhaltig', 'Pescetarisch', 'Vegetarisch', 'Vegan']);
 
 function normalizeRecipe(r: Recipe): Recipe {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const raw = r as any;
+  // Sanitize literal \uXXXX sequences in category (data quality issue in some recipes)
+  const catStr = (r.category as string).replace(/\\u([0-9a-fA-F]{4})/g, (_, h) => String.fromCharCode(parseInt(h, 16)));
+
   // Category migration
-  const wasFreuehstueck = (r.category as string) === 'Frühstück';
-  if (OLD_CAT_MAP[r.category as string]) {
-    r = { ...r, category: OLD_CAT_MAP[r.category as string] };
-    if ((r.category as string) === 'Aufläufe & Gratins' && raw.category === 'Ofen') {
-      raw._addOfengericht = true;
-    }
+  const wasFreuehstueck = catStr === 'Frühstück';
+  const wasEigeneRezepte = catStr === 'Eigene Rezepte';
+  if (OLD_CAT_MAP[catStr]) {
+    r = { ...r, category: OLD_CAT_MAP[catStr] };
+    if (catStr === 'Ofen') raw._addOfengericht = true;
   }
-  // Frühstück migration: ensure Frühstücksgericht tag is present
-  if (wasFreuehstueck && Array.isArray(r.tags) && !r.tags.includes('Frühstücksgericht')) {
-    r = { ...r, tags: [...r.tags, 'Frühstücksgericht'] };
+
+  // sourceType for migrated user-created recipes
+  if (wasEigeneRezepte && !r.sourceType) {
+    r = { ...r, sourceType: 'user_created' };
   }
-  // Tags migration (only if tags field is absent)
+
+  // Frühstück: ensure Mahlzeit-Tag 'Frühstück' is present
+  if (wasFreuehstueck && Array.isArray(r.tags) && !r.tags.includes('Frühstück') && !r.tags.includes('Frühstücksgericht')) {
+    r = { ...r, tags: [...r.tags, 'Frühstück'] };
+  }
+
+  // Tags migration
   if (!Array.isArray(raw.tags)) {
+    // Very old schema: no tags array — reconstruct from legacy fields
     const tags: string[] = [];
     if (Array.isArray(raw.season)) {
       raw.season.forEach((s: string) => { if (SEASON_VALS.has(s)) tags.push(s); });
     }
-    if (raw.isMealprep)       tags.push('Mealprep-geeignet');
-    if (raw.isSuitableForLunch) tags.push('Mittagsgericht');
-    const dc = raw.dietCategory as string | undefined;
-    const dt = raw.dietType    as string | undefined;
-    if (dc === 'vegetarian' || dt === 'vegetarisch') tags.push('Vegetarisch');
-    if (dc === 'vegan'      || dt === 'vegan')       tags.push('Vegan');
-    if (raw._addOfengericht) tags.push('Ofengericht');
-    if (raw.category === 'Asiatisch') tags.push('Asiatisch');
+    if (raw.isMealprep)         tags.push('Mealprep-geeignet');
+    if (raw.isSuitableForLunch) tags.push('Mittagessen');
+    if (raw._addOfengericht)    tags.push('Ofengericht');
+    if (catStr === 'Asiatisch') tags.push('Asiatisch');
     r = { ...r, tags };
+  } else {
+    // Current schema: rename/remove stale tag values
+    const mapped = r.tags.filter(t => !REMOVE_TAGS.has(t)).map(t => TAG_RENAMES[t] ?? t);
+    const newTags = mapped.filter((t, i) => mapped.indexOf(t) === i);
+    if (raw._addOfengericht && !newTags.includes('Ofengericht')) {
+      newTags.push('Ofengericht');
+    }
+    if (newTags.length !== r.tags.length || newTags.some((t, i) => t !== r.tags[i])) {
+      r = { ...r, tags: newTags };
+    }
   }
+
   return r;
 }
 

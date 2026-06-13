@@ -77,9 +77,8 @@
   "tips": "",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Mealprep-geeignet",
-    "Mittagsgericht"
+    "Mittagessen"
   ],
   "allergens": [],
   "nutrition": {
@@ -89,5 +88,7 @@
     "carbs": 7.8,
     "fiber": 2.4
   },
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

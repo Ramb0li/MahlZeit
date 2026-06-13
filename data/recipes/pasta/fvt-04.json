@@ -1,7 +1,7 @@
 {
   "id": "fvt-04",
   "name": "Vollkornpasta mit Blumenkohl-Bohnen-Cashew-Sauce",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 35,
   "ingredients": [
     {
@@ -73,7 +73,7 @@
   "tips": "",
   "imageUrl": null,
   "tags": [
-    "Mittagsgericht",
+    "Mittagessen",
     "Herbst",
     "Winter",
     "Frühling"
@@ -90,5 +90,7 @@
     "carbs": 68.2,
     "fiber": 13.6
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

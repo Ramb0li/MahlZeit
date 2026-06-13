@@ -1,14 +1,13 @@
 {
   "id": "pas-81",
   "name": "Gnocchi in Tomaten-Mozzarella Sauce",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 15,
   "basePortions": 4,
   "tags": [
-    "Vegetarisch",
     "Kinderfreundlich",
-    "Mittagsgericht",
-    "Abendgericht",
+    "Mittagessen",
+    "Abendessen",
     "Italienisch"
   ],
   "ingredients": [
@@ -120,5 +119,7 @@
   "imageKochen": null,
   "allergens": [
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

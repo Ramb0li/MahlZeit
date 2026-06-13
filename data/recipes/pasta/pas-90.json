@@ -1,12 +1,12 @@
 {
   "id": "pas-90",
   "name": "Nudeln in Tomaten-Thunfisch-Sauce",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 20,
   "basePortions": 4,
   "tags": [
-    "Mittagsgericht",
-    "Abendgericht",
+    "Mittagessen",
+    "Abendessen",
     "Italienisch",
     "Mealprep-geeignet"
   ],
@@ -120,5 +120,7 @@
     "fisch",
     "gluten",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

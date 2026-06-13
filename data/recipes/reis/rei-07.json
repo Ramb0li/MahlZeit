@@ -92,9 +92,8 @@
   "tips": "Mit Koriander und einer Scheibe Limette garnieren. Am nächsten Tag schmeckt das Curry noch besser — ideal für Meal-Prep.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Mealprep-geeignet",
-    "Mittagsgericht",
+    "Mittagessen",
     "Herbst",
     "Winter"
   ],
@@ -110,5 +109,7 @@
     "fiber": 11.8
   },
   "dietCategory": "vegan",
-  "imageZutaten": null
+  "imageZutaten": null,
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

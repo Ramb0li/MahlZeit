@@ -7,8 +7,8 @@
   "tags": [
     "Ofengericht",
     "Italienisch",
-    "Abendgericht",
-    "Mittagsgericht"
+    "Abendessen",
+    "Mittagessen"
   ],
   "ingredients": [
     {
@@ -176,5 +176,7 @@
     "fisch",
     "gluten",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

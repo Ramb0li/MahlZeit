@@ -1,16 +1,15 @@
 {
   "id": "ei-26",
   "name": "Dutch Baby mit frischen Erdbeeren",
-  "category": "Frühstück",
+  "category": "Eiergerichte",
   "timeMinutes": 15,
   "basePortions": 2.5,
   "tags": [
-    "Vegetarisch",
     "Kinderfreundlich",
     "Frühling",
     "Sommer",
     "Ofengericht",
-    "Frühstücksgericht"
+    "Frühstück"
   ],
   "ingredients": [
     {
@@ -88,5 +87,7 @@
     "ei",
     "gluten",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

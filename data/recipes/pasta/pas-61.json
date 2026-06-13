@@ -1,14 +1,14 @@
 {
   "id": "pas-61",
   "name": "Tagliatelle an Thunfisch-Tomatensauce mit Oliven, Anchovies und Basilikum",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 25,
   "basePortions": 2,
   "tags": [
     "Frühling",
     "Sommer",
-    "Mittagsgericht",
-    "Abendgericht",
+    "Mittagessen",
+    "Abendessen",
     "Italienisch"
   ],
   "ingredients": [
@@ -134,5 +134,7 @@
     "fisch",
     "gluten",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

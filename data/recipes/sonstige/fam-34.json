@@ -1,18 +1,14 @@
 {
   "id": "fam-34",
   "name": "Reisnudeln mit Tofu und Gemüse",
-  "category": "Vegetarische Hauptgerichte",
+  "category": "Eiergerichte",
   "timeMinutes": 35,
   "tags": [
-    "Vegan",
     "Asiatisch",
-    "Winter",
-    "Herbst",
-    "Sommer",
-    "Frühling",
     "Kinderfreundlich",
-    "Abendgericht",
-    "Mittagsgericht"
+    "Abendessen",
+    "Mittagessen",
+    "Ganzjährig"
   ],
   "weatherType": "neutral",
   "source": "Familien-Rezeptbuch",
@@ -141,5 +137,7 @@
     "carbs": 70.2,
     "fiber": 5.6
   },
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

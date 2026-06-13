@@ -1,18 +1,13 @@
 {
   "id": "ei-11",
   "name": "Granola",
-  "category": "Frühstück",
+  "category": "Müesli, Porridge & Frühstücksschalen",
   "timeMinutes": 50,
   "tags": [
-    "Vegan",
     "Mealprep-geeignet",
-    "Frühstücksgericht",
-    "Vegetarisch",
+    "Frühstück",
     "Kinderfreundlich",
-    "Frühling",
-    "Sommer",
-    "Herbst",
-    "Winter"
+    "Ganzjährig"
   ],
   "weatherType": "neutral",
   "source": "Cuiseline",
@@ -115,5 +110,7 @@
     "fat": 38.2,
     "carbs": 42.1,
     "fiber": 8.3
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

@@ -5,12 +5,11 @@
   "timeMinutes": 35,
   "basePortions": 4,
   "tags": [
-    "Vegetarisch",
     "Kinderfreundlich",
     "Herbst",
     "Winter",
     "Ofengericht",
-    "Schweizer"
+    "Schweizerisch"
   ],
   "ingredients": [
     {
@@ -99,5 +98,7 @@
   "imageKochen": null,
   "allergens": [
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

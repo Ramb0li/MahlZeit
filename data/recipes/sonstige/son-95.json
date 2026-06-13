@@ -5,8 +5,6 @@
   "timeMinutes": 8,
   "basePortions": 4,
   "tags": [
-    "Vegetarisch",
-    "Schnell und einfach",
     "Kinderfreundlich",
     "Frühling",
     "Sommer"
@@ -73,5 +71,7 @@
   "allergens": [
     "gluten",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

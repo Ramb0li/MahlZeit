@@ -5,8 +5,8 @@
   "timeMinutes": 40,
   "basePortions": 2,
   "tags": [
-    "Abendgericht",
-    "Mittagsgericht",
+    "Abendessen",
+    "Mittagessen",
     "Herbst",
     "Sommer"
   ],
@@ -117,5 +117,7 @@
   "imageKochen": null,
   "allergens": [
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

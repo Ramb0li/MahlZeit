@@ -1,7 +1,7 @@
 {
   "id": "fam-45",
   "name": "Toast Hawaii",
-  "category": "Wraps & Sandwiches",
+  "category": "Wraps, Sandwiches & Burger",
   "timeMinutes": 15,
   "tags": [],
   "weatherType": "neutral",
@@ -80,5 +80,7 @@
     "carbs": 38.2,
     "fiber": 2.1
   },
-  "dietCategory": "meat"
+  "dietCategory": "meat",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

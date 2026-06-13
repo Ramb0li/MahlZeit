@@ -1,10 +1,9 @@
 {
   "id": "pas-14",
   "name": "Fregola Sarda mit Sommergemüse",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 30,
   "tags": [
-    "Vegan",
     "Sommer"
   ],
   "weatherType": "warm",
@@ -95,5 +94,7 @@
     "fat": 6.8,
     "carbs": 68.2,
     "fiber": 8.5
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

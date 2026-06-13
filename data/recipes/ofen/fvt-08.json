@@ -98,7 +98,7 @@
   "imageUrl": null,
   "tags": [
     "Mealprep-geeignet",
-    "Mittagsgericht",
+    "Mittagessen",
     "Ofengericht",
     "Sommer",
     "Herbst"
@@ -113,5 +113,7 @@
     "carbs": 71.4,
     "fiber": 14.6
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

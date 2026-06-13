@@ -1,13 +1,13 @@
 {
   "id": "pas-88",
   "name": "Hackbällchen mit Parmesan-Kruste in Tomatensauce auf Spaghetti",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 30,
   "basePortions": 4,
   "tags": [
     "Kinderfreundlich",
-    "Abendgericht",
-    "Mittagsgericht",
+    "Abendessen",
+    "Mittagessen",
     "Italienisch"
   ],
   "ingredients": [
@@ -151,5 +151,7 @@
     "ei",
     "gluten",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

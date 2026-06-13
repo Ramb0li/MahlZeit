@@ -3,9 +3,7 @@
   "name": "Zitronenrahmsauce",
   "category": "Snacks & Vorspeisen",
   "timeMinutes": 15,
-  "tags": [
-    "Vegetarisch"
-  ],
+  "tags": [],
   "weatherType": "neutral",
   "source": "Familien-Rezeptbuch",
   "basePortions": 4,
@@ -60,5 +58,7 @@
     "carbs": 6.4,
     "fiber": 0.2
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

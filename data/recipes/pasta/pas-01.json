@@ -1,7 +1,7 @@
 {
   "id": "pas-01",
   "name": "Spaghetti mit Linsen-Gemüse-Bolognese",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 40,
   "ingredients": [
     {
@@ -126,15 +126,13 @@
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/fvt-03-1780871671442.jpg",
   "tags": [
     "Mealprep-geeignet",
-    "Mittagsgericht",
+    "Mittagessen",
     "Herbst",
     "Winter",
     "Kinderfreundlich",
     "Frühling",
-    "Abendgericht",
-    "Italienisch",
-    "Vegan",
-    "Vegetarisch"
+    "Abendessen",
+    "Italienisch"
   ],
   "allergens": [
     "gluten",
@@ -149,5 +147,7 @@
   },
   "dietCategory": "vegan",
   "imageZutaten": null,
-  "imageKochen": null
+  "imageKochen": null,
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

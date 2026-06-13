@@ -6,7 +6,7 @@
   "basePortions": 2,
   "tags": [
     "Italienisch",
-    "Abendgericht",
+    "Abendessen",
     "Frühling",
     "Herbst"
   ],
@@ -128,5 +128,7 @@
     "milch",
     "schalenfruechte",
     "sulfite"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

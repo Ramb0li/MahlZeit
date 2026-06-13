@@ -1,13 +1,11 @@
 {
   "id": "pas-85",
   "name": "Anti Vampir Pasta: Spaghetti Aglio mit Petersilie & Chili",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 20,
   "basePortions": 2,
   "tags": [
-    "Vegetarisch",
-    "Schnell und einfach",
-    "Abendgericht",
+    "Abendessen",
     "Italienisch"
   ],
   "ingredients": [
@@ -101,5 +99,7 @@
     "ei",
     "gluten",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

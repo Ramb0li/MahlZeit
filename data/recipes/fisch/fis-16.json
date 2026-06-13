@@ -5,9 +5,8 @@
   "timeMinutes": 30,
   "basePortions": 2,
   "tags": [
-    "Schnell und einfach",
-    "Abendgericht",
-    "Mittagsgericht"
+    "Abendessen",
+    "Mittagessen"
   ],
   "ingredients": [
     {
@@ -128,5 +127,7 @@
     "milch",
     "senf",
     "sulfite"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

@@ -1,16 +1,14 @@
 {
   "id": "pas-77",
   "name": "Spaghetti mit Zoodles an Crème fraîche mit Zitrone & Schafskäse",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 15,
   "basePortions": 2,
   "tags": [
-    "Vegetarisch",
     "Frühling",
     "Sommer",
-    "Schnell und einfach",
-    "Mittagsgericht",
-    "Abendgericht"
+    "Mittagessen",
+    "Abendessen"
   ],
   "ingredients": [
     {
@@ -101,5 +99,7 @@
   "allergens": [
     "gluten",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

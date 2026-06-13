@@ -3,9 +3,7 @@
   "name": "Teigwaren-Salat",
   "category": "Salate & Bowls",
   "timeMinutes": 20,
-  "tags": [
-    "Vegetarisch"
-  ],
+  "tags": [],
   "weatherType": "warm",
   "source": "Familien-Rezeptbuch",
   "basePortions": 4,
@@ -105,5 +103,7 @@
     "carbs": 39.5,
     "fiber": 2.8
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

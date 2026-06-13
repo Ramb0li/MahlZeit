@@ -4,8 +4,6 @@
   "category": "Kartoffelgerichte",
   "timeMinutes": 40,
   "tags": [
-    "Vegetarisch",
-    "Vegan",
     "Ofengericht"
   ],
   "weatherType": "kalt",
@@ -83,5 +81,7 @@
     "carbs": 43.7,
     "fiber": 3.9
   },
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

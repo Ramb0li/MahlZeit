@@ -6,32 +6,39 @@ export type Category =
   | 'Snacks & Vorspeisen'
   | 'Suppen, Eintöpfe & Currys'
   | 'Salate & Bowls'
-  | 'Pasta'
-  | 'Reis & Getreide'
+  | 'Pasta & Teigwaren'
+  | 'Reis, Getreide & Hülsenfrüchte'
   | 'Kartoffelgerichte'
+  | 'Eiergerichte'
   | 'Fleisch & Geflügel'
   | 'Fisch & Meeresfrüchte'
-  | 'Vegetarische Hauptgerichte'
+  | 'Gemüsegerichte'
   | 'Aufläufe & Gratins'
-  | 'Wraps & Sandwiches'
+  | 'Wraps, Sandwiches & Burger'
+  | 'Pizza, Flammkuchen, Wähen & Quiches'
+  | 'Beilagen, Saucen & Dips'
   | 'Desserts & Süsses'
-  | 'Eigene Rezepte';
+  | 'Brot & Gebäck'
+  | 'Müesli, Porridge & Frühstücksschalen'
+  | 'Getränke & Smoothies';
 
 export const TAG_GROUPS = {
-  Ernährung: ['Fleischhaltig', 'Pescetarisch', 'Vegetarisch', 'Vegan'],
-  Planung:   ['Mealprep-geeignet', 'Kinderfreundlich'],
-  Saison:    ['Frühling', 'Sommer', 'Herbst', 'Winter'],
-  Gerichtart: ['Frühstücksgericht', 'Mittagsgericht', 'Abendgericht', 'Grillgericht', 'Ofengericht'],
-  Küche:     ['Schweizer', 'Italienisch', 'Asiatisch', 'Mexikanisch', 'Orientalisch'],
+  Mahlzeit:    ['Frühstück', 'Brunch', 'Mittagessen', 'Abendessen', 'Snack', 'Dessert'],
+  Planung:     ['Mealprep-geeignet', 'Kinderfreundlich', 'Einfrierbar', 'Resteverwertung', 'Budgetfreundlich', 'Für Gäste', 'Gut zum Mitnehmen'],
+  Zubereitung: ['Pfannengericht', 'Ofengericht', 'Grillgericht', 'One-Pot-Gericht', 'Airfryer', 'Ohne Kochen'],
+  Saison:      ['Frühling', 'Sommer', 'Herbst', 'Winter', 'Ganzjährig'],
+  Küche:       ['Schweizerisch', 'Italienisch', 'Mediterran', 'Französisch', 'Griechisch', 'Mexikanisch', 'Amerikanisch', 'Indisch', 'Thai', 'Chinesisch', 'Japanisch', 'Türkisch', 'Nahöstlich'],
 } as const;
 
 export type Tag = typeof TAG_GROUPS[keyof typeof TAG_GROUPS][number];
 
+export type SourceType = 'mahlzyt' | 'user_created' | 'imported' | 'ai_generated';
+
+/** Schnell-Schwelle in Minuten — zentral konfigurierbar */
+export const QUICK_THRESHOLD_MINUTES = 30;
+
 export function computeTimeTags(minutes: number): string[] {
-  const t: string[] = [];
-  if (minutes < 20) t.push('Schnell (<20min)');
-  if (minutes < 30) t.push('Einfach (<30min)');
-  return t;
+  return minutes <= QUICK_THRESHOLD_MINUTES ? ['Schnell'] : [];
 }
 
 export interface Ingredient {
@@ -106,6 +113,7 @@ export interface Recipe {
   dietCategory?: DietCategory;
   allergens?: EuAllergen[];   // Vorberechnete EU-Pflichtallergene aus Zutaten
   nutrition?: Nutrition;      // KI-geschätzte Nährwerte pro Portion
+  sourceType?: SourceType;    // Herkunft des Rezepts
 }
 
 /** Einfache Beilage-Zutat (ohne Rezept), direkt im Tagesplan gespeichert. */

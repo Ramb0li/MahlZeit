@@ -1,16 +1,14 @@
 {
   "id": "ei-25",
   "name": "Mozzarella-Basilikum-Creme auf Vollkorntoast mit Cherrytomaten",
-  "category": "Frühstück",
+  "category": "Eiergerichte",
   "timeMinutes": 10,
   "basePortions": 2,
   "tags": [
-    "Vegetarisch",
-    "Schnell und einfach",
     "Frühling",
     "Sommer",
     "Kinderfreundlich",
-    "Frühstücksgericht"
+    "Frühstück"
   ],
   "ingredients": [
     {
@@ -78,5 +76,7 @@
   "imageKochen": null,
   "allergens": [
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

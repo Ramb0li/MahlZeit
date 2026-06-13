@@ -3,10 +3,7 @@
   "name": "Orangen-Randensalat",
   "category": "Salate & Bowls",
   "timeMinutes": 15,
-  "tags": [
-    "Vegetarisch",
-    "Vegan"
-  ],
+  "tags": [],
   "weatherType": "neutral",
   "source": "Familien-Rezeptbuch",
   "basePortions": 4,
@@ -86,5 +83,7 @@
     "carbs": 17.5,
     "fiber": 4.1
   },
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

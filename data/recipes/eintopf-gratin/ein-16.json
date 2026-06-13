@@ -99,8 +99,7 @@
   "tips": "Das Gratin kann auch am Vortag vorbereitet und im Kühlschrank aufbewahrt werden.",
   "imageUrl": null,
   "tags": [
-    "Vegetarisch",
-    "Schweizer",
+    "Schweizerisch",
     "Winter",
     "Herbst"
   ],
@@ -115,5 +114,7 @@
     "fat": 30.4,
     "carbs": 52.6,
     "fiber": 6.8
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

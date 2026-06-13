@@ -1,7 +1,7 @@
 {
   "id": "pas-13",
   "name": "Pasta al Limone",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 25,
   "ingredients": [
     {
@@ -67,8 +67,7 @@
   "tips": "Für eine cremigere Version 2 EL vegane Butter zum Schluss unterrühren. Parmesan oder Hefeflocken machen das Gericht noch aromatischer.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
-    "Mittagsgericht",
+    "Mittagessen",
     "Frühling",
     "Sommer"
   ],
@@ -83,5 +82,7 @@
     "fiber": 3.1
   },
   "dietCategory": "vegan",
-  "imageZutaten": null
+  "imageZutaten": null,
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

@@ -1,15 +1,13 @@
 {
   "id": "pas-65",
   "name": "Tagliatelle mit Fourme d'Ambert Sauce und gerösteten Walnüssen",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 20,
   "basePortions": 2,
   "tags": [
-    "Vegetarisch",
     "Herbst",
     "Winter",
-    "Schnell und einfach",
-    "Abendgericht",
+    "Abendessen",
     "Italienisch"
   ],
   "ingredients": [
@@ -77,5 +75,7 @@
     "gluten",
     "milch",
     "schalenfruechte"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

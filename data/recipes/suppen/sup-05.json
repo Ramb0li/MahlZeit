@@ -42,7 +42,7 @@
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/sup-05-1780777992254.jpg",
   "tags": [
     "Mealprep-geeignet",
-    "Mittagsgericht",
+    "Mittagessen",
     "Herbst",
     "Winter"
   ],
@@ -58,5 +58,7 @@
   },
   "imageZutaten": null,
   "imageKochen": null,
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

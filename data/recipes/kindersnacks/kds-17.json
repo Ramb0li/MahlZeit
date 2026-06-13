@@ -65,7 +65,6 @@
   "tips": "Frisch und noch warm schmecken sie am besten.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Mealprep-geeignet"
   ],
   "allergens": [
@@ -80,5 +79,7 @@
     "carbs": 10.2,
     "fiber": 2.1
   },
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

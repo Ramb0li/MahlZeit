@@ -73,8 +73,7 @@
   "tips": "Säuerliche Äpfel (Boskop) geben den besten Kontrast zur süssen Panade. Mit Vanilleeis oder Rahmschaum servieren.",
   "imageUrl": null,
   "tags": [
-    "Vegetarisch",
-    "Schweizer",
+    "Schweizerisch",
     "Herbst",
     "Kinderfreundlich"
   ],
@@ -91,5 +90,7 @@
     "fat": 18.5,
     "carbs": 67.3,
     "fiber": 3.8
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

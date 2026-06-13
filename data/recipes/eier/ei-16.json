@@ -1,7 +1,7 @@
 {
   "id": "ei-16",
   "name": "Vegane Bananen-Pancakes",
-  "category": "Frühstück",
+  "category": "Eiergerichte",
   "timeMinutes": 20,
   "ingredients": [
     {
@@ -67,9 +67,8 @@
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-16-1780699242965.jpg",
   "tags": [
-    "Vegan",
     "Kinderfreundlich",
-    "Frühstücksgericht"
+    "Frühstück"
   ],
   "imageZutaten": null,
   "imageKochen": null,
@@ -85,5 +84,7 @@
     "carbs": 39.8,
     "fiber": 5.4
   },
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

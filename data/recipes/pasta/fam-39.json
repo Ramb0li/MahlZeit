@@ -1,16 +1,14 @@
 {
   "id": "fam-39",
   "name": "Spaghetti freschi",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 20,
   "tags": [
-    "Vegetarisch",
     "Sommer",
-    "Vegan",
     "Mealprep-geeignet",
     "Kinderfreundlich",
-    "Mittagsgericht",
-    "Abendgericht",
+    "Mittagessen",
+    "Abendessen",
     "Italienisch"
   ],
   "weatherType": "warm",
@@ -101,5 +99,7 @@
     "carbs": 78.6,
     "fiber": 5.4
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

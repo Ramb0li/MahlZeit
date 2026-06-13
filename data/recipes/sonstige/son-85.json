@@ -1,16 +1,14 @@
 {
   "id": "son-85",
   "name": "Zucchini Frittata mit Hüttenkäse, Feta und Petersilie",
-  "category": "Vegetarische Hauptgerichte",
+  "category": "Eiergerichte",
   "timeMinutes": 30,
   "basePortions": 4,
   "tags": [
-    "Vegetarisch",
-    "Schnell und einfach",
     "Ofengericht",
     "Sommer",
-    "Mittagsgericht",
-    "Abendsgericht",
+    "Mittagessen",
+    "Abendessen",
     "Italienisch",
     "Mealprep-geeignet"
   ],
@@ -101,5 +99,7 @@
   "allergens": [
     "ei",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

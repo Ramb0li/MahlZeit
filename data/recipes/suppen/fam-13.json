@@ -3,9 +3,7 @@
   "name": "Einlaufsuppe",
   "category": "Suppen, Eintöpfe & Currys",
   "timeMinutes": 20,
-  "tags": [
-    "Vegetarisch"
-  ],
+  "tags": [],
   "weatherType": "kalt",
   "source": "Familien-Rezeptbuch",
   "basePortions": 4,
@@ -70,5 +68,7 @@
     "carbs": 9.6,
     "fiber": 0.3
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

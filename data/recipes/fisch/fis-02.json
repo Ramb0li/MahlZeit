@@ -74,7 +74,7 @@
   "tips": "Den Lachs unbedingt zimmertemperiert einlegen — kalter Fisch aus dem Kühlschrank direkt in die Pfanne gibt kein gleichmässiges Garergebnis.",
   "imageUrl": null,
   "tags": [
-    "Mittagsgericht"
+    "Mittagessen"
   ],
   "allergens": [
     "fisch",
@@ -88,5 +88,7 @@
     "fiber": 1.8
   },
   "dietCategory": "fish",
-  "imageZutaten": null
+  "imageZutaten": null,
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

@@ -1,16 +1,15 @@
 {
   "id": "son-88",
   "name": "Zucchini Boote gefüllt mit Paprikacremesauce und Feta",
-  "category": "Vegetarische Hauptgerichte",
+  "category": "Gemüsegerichte",
   "timeMinutes": 60,
   "basePortions": 4,
   "tags": [
-    "Vegetarisch",
     "Ofengericht",
-    "Abendgericht",
+    "Abendessen",
     "Sommer",
     "Herbst",
-    "Mittagsgericht"
+    "Mittagessen"
   ],
   "ingredients": [
     {
@@ -128,5 +127,7 @@
   "imageKochen": null,
   "allergens": [
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

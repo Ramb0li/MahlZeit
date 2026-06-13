@@ -107,9 +107,8 @@
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/soup-19-1780779512383.jpg",
   "tags": [
-    "Vegan",
     "Sommer",
-    "Mittagsgericht"
+    "Mittagessen"
   ],
   "allergens": [
     "milch",
@@ -125,5 +124,7 @@
   },
   "imageZutaten": null,
   "imageKochen": null,
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

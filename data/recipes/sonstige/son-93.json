@@ -1,13 +1,12 @@
 {
   "id": "son-93",
   "name": "Wraps mit Räucherlachs, Babyspinat & Schafskäse",
-  "category": "Wraps & Sandwiches",
+  "category": "Wraps, Sandwiches & Burger",
   "timeMinutes": 10,
   "basePortions": 4,
   "tags": [
-    "Schnell und einfach",
-    "Mittagsgericht",
-    "Abendgericht",
+    "Mittagessen",
+    "Abendessen",
     "Mealprep-geeignet"
   ],
   "ingredients": [
@@ -94,5 +93,7 @@
   "allergens": [
     "fisch",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

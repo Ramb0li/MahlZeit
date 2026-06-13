@@ -6,7 +6,6 @@
   "basePortions": 4,
   "tags": [
     "Ofengericht",
-    "Schnell und einfach",
     "Kinderfreundlich",
     "Frühling",
     "Sommer"
@@ -91,5 +90,7 @@
     "ei",
     "fisch",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

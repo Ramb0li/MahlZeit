@@ -5,7 +5,6 @@
   "timeMinutes": 20,
   "basePortions": 4,
   "tags": [
-    "Vegetarisch",
     "Winter",
     "Ofengericht"
   ],
@@ -134,5 +133,7 @@
     "milch",
     "schalenfruechte",
     "senf"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

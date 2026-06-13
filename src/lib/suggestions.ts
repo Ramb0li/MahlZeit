@@ -8,7 +8,7 @@ import type {
 import { getCurrentSeason } from './utils';
 import { isRecipeExcluded } from './allergens';
 
-const SEASON_TAGS = new Set(['Frühling', 'Sommer', 'Herbst', 'Winter']);
+const SEASON_TAGS = new Set(['Frühling', 'Sommer', 'Herbst', 'Winter', 'Ganzjährig']);
 
 // ── Kohlenhydrat-Typ-Erkennung ────────────────────────────────────────────────
 
@@ -18,8 +18,8 @@ const POTATO_WORDS  = ['kartoffel', 'rösti', 'bratkartoffel'];
 
 export function getCarbType(r: Recipe): string | null {
   const n = r.name.toLowerCase();
-  if (r.category === 'Pasta' || PASTA_WORDS.some(w => n.includes(w))) return 'pasta';
-  if (r.category === 'Reis & Getreide' || RICE_WORDS.some(w => n.includes(w))) return 'rice';
+  if (r.category === 'Pasta & Teigwaren' || PASTA_WORDS.some(w => n.includes(w))) return 'pasta';
+  if (r.category === 'Reis, Getreide & Hülsenfrüchte' || RICE_WORDS.some(w => n.includes(w))) return 'rice';
   if (r.category === 'Kartoffelgerichte' || POTATO_WORDS.some(w => n.includes(w))) return 'potato';
   if (n.includes('couscous')) return 'couscous';
   if (n.includes('polenta')) return 'polenta';
@@ -68,9 +68,9 @@ function recipeScore(
   let score = 0;
 
   const season = options.season ?? getCurrentSeason();
-  const recipeSeasoned = recipe.tags.some(t => SEASON_TAGS.has(t));
-  // No season tags = ganzjährig (always in season); tagged → only current season
-  if (!recipeSeasoned || recipe.tags.includes(season)) score += 10;
+  const recipeSeasoned = recipe.tags.some(t => SEASON_TAGS.has(t) && t !== 'Ganzjährig');
+  // No season tags or 'Ganzjährig' = always in season; specific season tags → only current season
+  if (!recipeSeasoned || recipe.tags.includes('Ganzjährig') || recipe.tags.includes(season)) score += 10;
 
   if (options.weatherType && recipe.weatherType === options.weatherType) score += 15;
   else if (options.weatherType && recipe.weatherType === 'neutral') score += 5;
@@ -82,7 +82,7 @@ function recipeScore(
 
   if (options.constraint?.constraint === 'mealprep' && recipe.tags.includes('Mealprep-geeignet')) score += 12;
 
-  if (options.lunchOnly && !recipe.tags.includes('Mittagsgericht')) score -= 50;
+  if (options.lunchOnly && !recipe.tags.includes('Mittagessen')) score -= 50;
 
   if (promotionKeywords.some((kw) => recipe.name.toLowerCase().includes(kw) ||
     recipe.ingredients.some((ing) => ing.name.toLowerCase().includes(kw)))) {
@@ -128,7 +128,7 @@ export function suggestRecipe(
     if (c?.constraint === 'maxTime' && c.maxTimeMinutes && r.timeMinutes > c.maxTimeMinutes) return false;
     // Hard-Filter: mealprep → nur mealprep-geeignete Gerichte
     if (c?.constraint === 'mealprep' && !r.tags.includes('Mealprep-geeignet')) return false;
-    if (options.lunchOnly && !r.tags.includes('Mittagsgericht')) return false;
+    if (options.lunchOnly && !r.tags.includes('Mittagessen')) return false;
     if (isRecipeExcluded(r, excluded)) return false;
     return true;
   });
@@ -187,22 +187,22 @@ export function suggestWeek(
   let meatMealsThisWeek = 0;
   const carbCounts: Record<string, number> = {};
 
-  // Breakfast: Frühstück category OR tagged 'Frühstücksgericht'
+  // Breakfast: tagged 'Frühstück' (Mahlzeit-Tag)
   let breakfastRecipes = recipes.filter(
-    r => BREAKFAST_CATS.has(r.category) || r.tags.includes('Frühstücksgericht')
+    r => BREAKFAST_CATS.has(r.category) || r.tags.includes('Frühstück')
   );
-  // Lunch: tagged 'Mittagsgericht', not breakfast
+  // Lunch: tagged 'Mittagessen', not breakfast
   let lunchRecipes = recipes.filter(
-    r => r.tags.includes('Mittagsgericht') &&
+    r => r.tags.includes('Mittagessen') &&
          !BREAKFAST_CATS.has(r.category) &&
-         !r.tags.includes('Frühstücksgericht')
+         !r.tags.includes('Frühstück')
   );
-  // Dinner: not breakfast, not snacks/desserts; exclude lunch-only and breakfast-only
+  // Dinner: not breakfast, not snacks/desserts; exclude lunch-only
   let dinnerRecipes = recipes.filter(
     r => !BREAKFAST_CATS.has(r.category) &&
-         !r.tags.includes('Frühstücksgericht') &&
+         !r.tags.includes('Frühstück') &&
          !EXCLUDED_CATS.has(r.category) &&
-         (!r.tags.includes('Mittagsgericht') || r.tags.includes('Abendgericht'))
+         (!r.tags.includes('Mittagessen') || r.tags.includes('Abendessen'))
   );
 
   // favoritesOnly: gesamten Pool auf Favoriten einschränken

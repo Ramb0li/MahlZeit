@@ -98,10 +98,9 @@
   "tips": "Schmeckt am nächsten Tag noch besser. Dazu passt Harissa und eine Scheibe Zitrone. Für Fleischesser: 500g Lammwürfel mit den Zwiebeln anbraten.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Mealprep-geeignet",
-    "Mittagsgericht",
-    "Orientalisch",
+    "Mittagessen",
+    "Nahöstlich",
     "Herbst",
     "Winter"
   ],
@@ -116,5 +115,7 @@
     "fiber": 15.7
   },
   "dietCategory": "vegan",
-  "imageZutaten": null
+  "imageZutaten": null,
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

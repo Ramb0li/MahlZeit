@@ -1,14 +1,12 @@
 {
   "id": "pas-89",
   "name": "Tagliatelle mit glasierten Karotten in Butter-Rahm",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 30,
   "basePortions": 4,
   "tags": [
-    "Vegetarisch",
-    "Schnell und einfach",
-    "Mittagsgericht",
-    "Abendgericht"
+    "Mittagessen",
+    "Abendessen"
   ],
   "ingredients": [
     {
@@ -107,5 +105,7 @@
     "gluten",
     "milch",
     "schalenfruechte"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

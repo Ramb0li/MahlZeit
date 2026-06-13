@@ -1,16 +1,12 @@
 {
   "id": "pas-57",
   "name": "Pasta mit Chorizo",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 15,
   "basePortions": 1,
   "tags": [
-    "Schnell und einfach",
-    "Abendgericht",
-    "Frühling",
-    "Sommer",
-    "Herbst",
-    "Winter"
+    "Abendessen",
+    "Ganzjährig"
   ],
   "ingredients": [
     {
@@ -91,5 +87,7 @@
   "imageKochen": null,
   "allergens": [
     "gluten"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

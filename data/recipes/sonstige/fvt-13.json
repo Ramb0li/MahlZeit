@@ -1,7 +1,7 @@
 {
   "id": "fvt-13",
   "name": "Räuber-Nuggets aus Tofu und Gemüse",
-  "category": "Vegetarische Hauptgerichte",
+  "category": "Gemüsegerichte",
   "timeMinutes": 45,
   "ingredients": [
     {
@@ -62,7 +62,7 @@
   "imageUrl": null,
   "tags": [
     "Mealprep-geeignet",
-    "Mittagsgericht"
+    "Mittagessen"
   ],
   "allergens": [
     "gluten",
@@ -76,5 +76,7 @@
     "carbs": 48.5,
     "fiber": 6.8
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

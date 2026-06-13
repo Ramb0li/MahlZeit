@@ -5,8 +5,8 @@
   "timeMinutes": 30,
   "basePortions": 2,
   "tags": [
-    "Mittagsgericht",
-    "Abendgericht",
+    "Mittagessen",
+    "Abendessen",
     "Mealprep-geeignet"
   ],
   "ingredients": [
@@ -122,5 +122,7 @@
   "allergens": [
     "ei",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

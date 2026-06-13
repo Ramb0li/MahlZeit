@@ -89,9 +89,8 @@
   "tips": "Das Dressing erst kurz vor dem Servieren untermischen, damit der Salat knackig bleibt.",
   "imageUrl": null,
   "tags": [
-    "Vegetarisch",
     "Frühling",
-    "Mittagsgericht"
+    "Mittagessen"
   ],
   "dietCategory": "vegetarian",
   "allergens": [
@@ -105,5 +104,7 @@
     "fat": 14.8,
     "carbs": 17.2,
     "fiber": 3.6
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

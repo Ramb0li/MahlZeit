@@ -1,16 +1,14 @@
 {
   "id": "pas-56",
   "name": "Soja-Butter-Nudeln mit grünem Spargel und Knoblauch",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 20,
   "basePortions": 1,
   "tags": [
-    "Vegetarisch",
-    "Schnell und einfach",
     "Frühling",
     "Sommer",
-    "Mittagsgericht",
-    "Abendgericht"
+    "Mittagessen",
+    "Abendessen"
   ],
   "ingredients": [
     {
@@ -88,5 +86,7 @@
     "gluten",
     "milch",
     "soja"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

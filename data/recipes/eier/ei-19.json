@@ -1,14 +1,13 @@
 {
   "id": "ei-19",
   "name": "Pochiertes Ei auf Spinat, Mais, Speck und Brot",
-  "category": "Frühstück",
+  "category": "Eiergerichte",
   "timeMinutes": 15,
   "basePortions": 2,
   "tags": [
     "Frühling",
     "Sommer",
-    "Schnell und einfach",
-    "Frühstücksgericht"
+    "Frühstück"
   ],
   "ingredients": [
     {
@@ -100,5 +99,7 @@
     "ei",
     "gluten",
     "sulfite"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

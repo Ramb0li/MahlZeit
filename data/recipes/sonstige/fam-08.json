@@ -1,17 +1,14 @@
 {
   "id": "fam-08",
   "name": "Burger",
-  "category": "Wraps & Sandwiches",
+  "category": "Wraps, Sandwiches & Burger",
   "timeMinutes": 20,
   "tags": [
-    "Mittagsgericht",
-    "Abendgericht",
+    "Mittagessen",
+    "Abendessen",
     "Grillgericht",
     "Kinderfreundlich",
-    "Winter",
-    "Herbst",
-    "Sommer",
-    "Frühling"
+    "Ganzjährig"
   ],
   "weatherType": "warm",
   "source": "Familien-Rezeptbuch",
@@ -93,5 +90,7 @@
     "carbs": 52.3,
     "fiber": 5.6
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

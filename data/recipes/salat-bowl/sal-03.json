@@ -75,11 +75,10 @@
   "imageZutaten": "/images/recipes/cuiselin-taboule-zutaten.jpeg",
   "tags": [
     "Mealprep-geeignet",
-    "Mittagsgericht",
+    "Mittagessen",
     "Frühling",
     "Sommer",
-    "Orientalisch",
-    "Vegan"
+    "Nahöstlich"
   ],
   "dietCategory": "vegan",
   "allergens": [
@@ -91,5 +90,7 @@
     "fat": 18.5,
     "carbs": 48.3,
     "fiber": 7.2
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

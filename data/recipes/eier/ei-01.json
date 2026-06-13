@@ -1,19 +1,15 @@
 {
   "id": "ei-01",
   "name": "Rührei",
-  "category": "Frühstück",
+  "category": "Eiergerichte",
   "timeMinutes": 10,
   "tags": [
-    "Mittagsgericht",
-    "Abendgericht",
-    "Schweizer",
-    "Frühling",
-    "Sommer",
-    "Herbst",
-    "Winter",
+    "Mittagessen",
+    "Abendessen",
+    "Schweizerisch",
     "Kinderfreundlich",
-    "Vegetarisch",
-    "Frühstücksgericht"
+    "Frühstück",
+    "Ganzjährig"
   ],
   "ingredients": [
     {
@@ -73,5 +69,7 @@
     "Lass die Eimasse kurz anstocken. Schiebe dann mit einem Pfannenwender die Masse vorsichtig vom Pfannenrand in die Mitte. Wiederhole den Vorgang bis die Eimasse cremig stockt.",
     "Nimm die Pfanne vom Herd bevor die Eimasse zu trocken wird. Nach belieben würzen (Bei Edelstahlpfanne Hitze nach dem ersten Stocken reduzieren bzw. Herdplatte abschalten. Das Rührei gart auf dem warmen Pfannenboden nach)."
   ],
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

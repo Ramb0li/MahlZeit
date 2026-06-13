@@ -85,7 +85,7 @@
   "tips": "",
   "imageUrl": null,
   "tags": [
-    "Mittagsgericht"
+    "Mittagessen"
   ],
   "allergens": [
     "gluten",
@@ -99,5 +99,7 @@
     "carbs": 58.4,
     "fiber": 11.3
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

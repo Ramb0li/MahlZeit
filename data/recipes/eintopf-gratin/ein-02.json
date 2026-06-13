@@ -1,7 +1,7 @@
 {
   "id": "ein-02",
   "name": "Urdinkelkernotto mit Kohlrabi & Lauch",
-  "category": "Reis & Getreide",
+  "category": "Reis, Getreide & Hülsenfrüchte",
   "timeMinutes": 50,
   "ingredients": [
     {
@@ -61,5 +61,7 @@
     "fiber": 8.5
   },
   "dietCategory": "vegetarian",
-  "imageZutaten": null
+  "imageZutaten": null,
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

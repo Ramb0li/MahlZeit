@@ -1,16 +1,14 @@
 {
   "id": "pas-91",
   "name": "Zermatschte Avocados unter körniger Spaghetti",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 20,
   "basePortions": 4,
   "tags": [
-    "Vegetarisch",
-    "Schnell und einfach",
     "Frühling",
     "Sommer",
-    "Mittagsgericht",
-    "Abendgericht"
+    "Mittagessen",
+    "Abendessen"
   ],
   "ingredients": [
     {
@@ -108,5 +106,7 @@
   "allergens": [
     "gluten",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

@@ -1,7 +1,7 @@
 {
   "id": "pas-12",
   "name": "Spätzli mit Kürbissauce",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 40,
   "ingredients": [
     {
@@ -56,5 +56,7 @@
     "fiber": 3.2
   },
   "dietCategory": "vegetarian",
-  "imageZutaten": null
+  "imageZutaten": null,
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

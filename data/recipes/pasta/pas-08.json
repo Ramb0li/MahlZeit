@@ -44,7 +44,7 @@
   "imageUrl": null,
   "tags": [
     "Mealprep-geeignet",
-    "Mittagsgericht",
+    "Mittagessen",
     "Ofengericht"
   ],
   "allergens": [
@@ -58,5 +58,7 @@
     "carbs": 63.8,
     "fiber": 5.6
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

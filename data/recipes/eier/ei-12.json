@@ -1,7 +1,7 @@
 {
   "id": "ei-12",
   "name": "Shakshuka mit Feta",
-  "category": "Vegetarische Hauptgerichte",
+  "category": "Eiergerichte",
   "timeMinutes": 35,
   "ingredients": [
     {
@@ -121,14 +121,13 @@
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-08-1780870240294.jpg",
   "tags": [
-    "Vegetarisch",
-    "Orientalisch",
-    "Mittagsgericht",
+    "Nahöstlich",
+    "Mittagessen",
     "Kinderfreundlich",
     "Frühling",
     "Herbst",
     "Winter",
-    "Abendgericht"
+    "Abendessen"
   ],
   "dietCategory": "vegetarian",
   "allergens": [
@@ -143,5 +142,7 @@
     "fiber": 5.2
   },
   "imageZutaten": null,
-  "imageKochen": null
+  "imageKochen": null,
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

@@ -50,10 +50,10 @@
   "imageUrl": null,
   "tags": [
     "Mealprep-geeignet",
-    "Mittagsgericht",
+    "Mittagessen",
     "Herbst",
     "Winter",
-    "Schweizer"
+    "Schweizerisch"
   ],
   "allergens": [
     "gluten",
@@ -67,5 +67,7 @@
     "fiber": 7.5
   },
   "dietCategory": "vegetarian",
-  "imageZutaten": null
+  "imageZutaten": null,
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

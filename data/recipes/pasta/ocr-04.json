@@ -1,17 +1,16 @@
 {
   "id": "ocr-04",
   "name": "Spaghetti Bolognese",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 75,
   "tags": [
-    "Fleischhaltig",
     "Mealprep-geeignet",
     "Kinderfreundlich",
     "Frühling",
     "Herbst",
     "Winter",
-    "Mittagsgericht",
-    "Abendgericht",
+    "Mittagessen",
+    "Abendessen",
     "Italienisch"
   ],
   "weatherType": "kalt",
@@ -122,5 +121,7 @@
     "carbs": 16.2,
     "fiber": 3.8
   },
-  "dietCategory": "meat"
+  "dietCategory": "meat",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

@@ -1,13 +1,13 @@
 {
   "id": "son-92",
   "name": "Zucchini-Boote gefüllt mit Tomaten-Hackfleisch-Sauce",
-  "category": "Aufl\\u00e4ufe & Gratins",
+  "category": "Aufläufe & Gratins",
   "timeMinutes": 40,
   "basePortions": 4,
   "tags": [
     "Ofengericht",
-    "Abendgericht",
-    "Mittagsgericht"
+    "Abendessen",
+    "Mittagessen"
   ],
   "ingredients": [
     {
@@ -124,5 +124,7 @@
   "imageKochen": null,
   "allergens": [
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

@@ -77,7 +77,6 @@
   "tips": "Luftdicht aufbewahren – ca. 2 Wochen haltbar.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Mealprep-geeignet"
   ],
   "allergens": [
@@ -90,5 +89,7 @@
     "carbs": 5.2,
     "fiber": 1
   },
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

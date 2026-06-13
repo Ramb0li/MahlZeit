@@ -1,7 +1,7 @@
 {
   "id": "ei-07",
   "name": "Polenta mit mediterranem Gemüse und Spiegelei",
-  "category": "Vegetarische Hauptgerichte",
+  "category": "Eiergerichte",
   "timeMinutes": 40,
   "ingredients": [
     {
@@ -150,12 +150,11 @@
   "tags": [
     "Herbst",
     "Winter",
-    "Vegetarisch",
     "Kinderfreundlich",
     "Mealprep-geeignet",
     "Frühling",
-    "Mittagsgericht",
-    "Abendgericht"
+    "Mittagessen",
+    "Abendessen"
   ],
   "allergens": [
     "ei",
@@ -313,5 +312,7 @@
         }
       ]
     }
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

@@ -1,7 +1,7 @@
 {
   "id": "ei-05",
   "name": "Omelette mit Pilz-Kräutersauce",
-  "category": "Vegetarische Hauptgerichte",
+  "category": "Eiergerichte",
   "timeMinutes": 50,
   "ingredients": [
     {
@@ -141,13 +141,12 @@
   "tags": [
     "Herbst",
     "Winter",
-    "Vegetarisch",
     "Mealprep-geeignet",
     "Kinderfreundlich",
     "Frühling",
-    "Mittagsgericht",
-    "Abendgericht",
-    "Schweizer"
+    "Mittagessen",
+    "Abendessen",
+    "Schweizerisch"
   ],
   "allergens": [
     "ei",
@@ -288,5 +287,7 @@
         }
       ]
     }
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

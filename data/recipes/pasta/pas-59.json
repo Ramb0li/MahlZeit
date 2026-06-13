@@ -1,15 +1,14 @@
 {
   "id": "pas-59",
   "name": "Tagliatelle mit Champignon-Rahmsauce und Kresse",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 20,
   "basePortions": 2,
   "tags": [
-    "Vegetarisch",
     "Herbst",
     "Winter",
-    "Abendgericht",
-    "Mittagsgericht"
+    "Abendessen",
+    "Mittagessen"
   ],
   "ingredients": [
     {
@@ -112,5 +111,7 @@
   "allergens": [
     "gluten",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

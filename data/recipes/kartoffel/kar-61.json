@@ -8,8 +8,8 @@
     "Ofengericht",
     "Herbst",
     "Winter",
-    "Abendgericht",
-    "Mittagsgericht"
+    "Abendessen",
+    "Mittagessen"
   ],
   "ingredients": [
     {
@@ -122,5 +122,7 @@
   "allergens": [
     "ei",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

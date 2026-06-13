@@ -72,9 +72,7 @@
   ],
   "tips": "Für mehr Tiefe einen Schuss Rotwein oder Worcestershiresauce (vegan) einrühren.",
   "imageUrl": null,
-  "tags": [
-    "Vegan"
-  ],
+  "tags": [],
   "dietCategory": "vegan",
   "allergens": [
     "gluten",
@@ -86,5 +84,7 @@
     "fat": 3.2,
     "carbs": 8.4,
     "fiber": 1.2
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

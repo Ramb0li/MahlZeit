@@ -85,9 +85,8 @@
   "tips": "Ras el-Hanout gibt der Suppe die typisch marokkanische Note. Erhältlich in gut sortierten Supermärkten.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Mealprep-geeignet",
-    "Orientalisch",
+    "Nahöstlich",
     "Winter"
   ],
   "dietCategory": "vegan",
@@ -100,5 +99,7 @@
     "fat": 9.2,
     "carbs": 29.8,
     "fiber": 8.4
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

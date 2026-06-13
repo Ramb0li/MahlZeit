@@ -1,16 +1,13 @@
 {
   "id": "ei-24",
   "name": "Vollkornbrot mit Kräuterbutter, Gurke und Makrele",
-  "category": "Frühstück",
+  "category": "Eiergerichte",
   "timeMinutes": 10,
   "basePortions": 4,
   "tags": [
     "Kinderfreundlich",
-    "Frühling",
-    "Sommer",
-    "Herbst",
-    "Winter",
-    "Frühstücksgericht"
+    "Frühstück",
+    "Ganzjährig"
   ],
   "ingredients": [
     {
@@ -96,5 +93,7 @@
     "fisch",
     "gluten",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

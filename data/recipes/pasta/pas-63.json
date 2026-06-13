@@ -1,15 +1,13 @@
 {
   "id": "pas-63",
   "name": "Spaghetti an Soja-Butter-Sauce mit gebratenen Champignons",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 15,
   "basePortions": 2,
   "tags": [
-    "Vegetarisch",
-    "Schnell und einfach",
     "Asiatisch",
-    "Abendgericht",
-    "Mittagsgericht",
+    "Abendessen",
+    "Mittagessen",
     "Herbst",
     "Winter"
   ],
@@ -99,5 +97,7 @@
     "milch",
     "sesam",
     "soja"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

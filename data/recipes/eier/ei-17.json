@@ -1,22 +1,16 @@
 {
   "id": "ei-17",
   "name": "Frittata mit Lauch und Champignon",
-  "category": "Frühstück",
+  "category": "Eiergerichte",
   "timeMinutes": 25,
   "basePortions": 2,
   "tags": [
-    "Vegetarisch",
-    "Schnell und einfach",
     "Ofengericht",
-    "Herbst",
-    "Winter",
     "Frühstück",
-    "Frühstücksgericht",
     "Kinderfreundlich",
     "Mealprep-geeignet",
-    "Frühling",
-    "Sommer",
-    "Italienisch"
+    "Italienisch",
+    "Ganzjährig"
   ],
   "ingredients": [
     {
@@ -135,5 +129,7 @@
   "allergens": [
     "ei",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

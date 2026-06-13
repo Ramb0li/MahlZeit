@@ -1,15 +1,14 @@
 {
   "id": "son-89",
   "name": "Gebackene Süsskartoffel mit Kichererbsen & Tahini Ziegenjoghurt",
-  "category": "Vegetarische Hauptgerichte",
+  "category": "Reis, Getreide & Hülsenfrüchte",
   "timeMinutes": 60,
   "basePortions": 4,
   "tags": [
-    "Vegetarisch",
-    "Orientalisch",
+    "Nahöstlich",
     "Ofengericht",
-    "Mittagsgericht",
-    "Abendgericht"
+    "Mittagessen",
+    "Abendessen"
   ],
   "ingredients": [
     {
@@ -101,5 +100,7 @@
   "allergens": [
     "milch",
     "sesam"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

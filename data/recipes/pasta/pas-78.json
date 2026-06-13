@@ -1,14 +1,13 @@
 {
   "id": "pas-78",
   "name": "Schnelle Spaghetti in Tomaten-Hackfleisch Sauce mit Spinat und Fenchelsamen",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 30,
   "basePortions": 4,
   "tags": [
-    "Schnell und einfach",
     "Kinderfreundlich",
-    "Abendgericht",
-    "Mittagsgericht"
+    "Abendessen",
+    "Mittagessen"
   ],
   "ingredients": [
     {
@@ -131,5 +130,7 @@
   "allergens": [
     "gluten",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

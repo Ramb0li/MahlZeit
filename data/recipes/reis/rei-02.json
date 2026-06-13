@@ -1,7 +1,7 @@
 {
   "id": "rei-02",
   "name": "Risotto mit Ofengemüse",
-  "category": "Reis & Getreide",
+  "category": "Reis, Getreide & Hülsenfrüchte",
   "timeMinutes": 60,
   "ingredients": [
     {
@@ -62,5 +62,7 @@
     "carbs": 65.4,
     "fiber": 5.2
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

@@ -74,7 +74,6 @@
   "tips": "Den Labneh unbedingt am Vortag vorbereiten. Je länger er abtropft, desto fester und aromatischer wird er.",
   "imageUrl": null,
   "tags": [
-    "Vegetarisch",
     "Winter",
     "Herbst"
   ],
@@ -89,5 +88,7 @@
     "fat": 14.2,
     "carbs": 32.4,
     "fiber": 6.8
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

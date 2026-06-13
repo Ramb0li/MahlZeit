@@ -1,16 +1,15 @@
 {
   "id": "pas-66",
   "name": "Spaghetti mit Ofen-Tomatensauce, Thymian und Parmesan",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 35,
   "basePortions": 4,
   "tags": [
-    "Vegetarisch",
     "Ofengericht",
     "Sommer",
     "Italienisch",
-    "Abendgericht",
-    "Mittagsgericht"
+    "Abendessen",
+    "Mittagessen"
   ],
   "ingredients": [
     {
@@ -106,5 +105,7 @@
   "allergens": [
     "gluten",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

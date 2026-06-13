@@ -5,7 +5,6 @@
   "timeMinutes": 35,
   "basePortions": 12,
   "tags": [
-    "Vegetarisch",
     "Kinderfreundlich",
     "Ofengericht"
   ],
@@ -98,5 +97,7 @@
     "ei",
     "gluten",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

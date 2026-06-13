@@ -65,7 +65,6 @@
   "tips": "Im Kühlschrank ca. 5 Tage haltbar.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Mealprep-geeignet"
   ],
   "allergens": [
@@ -79,5 +78,7 @@
     "carbs": 11.4,
     "fiber": 1.6
   },
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

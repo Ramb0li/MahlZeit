@@ -5,8 +5,7 @@
   "timeMinutes": 20,
   "basePortions": 2,
   "tags": [
-    "Abendgericht",
-    "Schnell und einfach",
+    "Abendessen",
     "Herbst",
     "Winter"
   ],
@@ -107,5 +106,7 @@
   "allergens": [
     "fisch",
     "schalenfruechte"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

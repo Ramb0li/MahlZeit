@@ -3,9 +3,7 @@
   "name": "Birnen-Rucola-Salat mit Feta",
   "category": "Salate & Bowls",
   "timeMinutes": 15,
-  "tags": [
-    "Vegetarisch"
-  ],
+  "tags": [],
   "weatherType": "warm",
   "source": "Familien-Rezeptbuch",
   "basePortions": 2,
@@ -93,5 +91,7 @@
     "carbs": 16.8,
     "fiber": 4.2
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

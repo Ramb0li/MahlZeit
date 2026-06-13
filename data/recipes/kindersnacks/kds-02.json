@@ -96,7 +96,6 @@
   "tips": "Für die Beikost ohne Salz zubereiten.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Mealprep-geeignet"
   ],
   "allergens": [
@@ -110,5 +109,7 @@
     "carbs": 24.2,
     "fiber": 5.6
   },
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

@@ -1,13 +1,13 @@
 {
   "id": "pas-64",
   "name": "Pasta mit dicken Bohnen und Katenschinken an Honig-Senf-Sauce",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 15,
   "basePortions": 2,
   "tags": [
     "Kinderfreundlich",
-    "Mittagsgericht",
-    "Abendgericht"
+    "Mittagessen",
+    "Abendessen"
   ],
   "ingredients": [
     {
@@ -108,5 +108,7 @@
     "milch",
     "senf",
     "weichtiere"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

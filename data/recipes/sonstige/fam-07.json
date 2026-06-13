@@ -1,11 +1,10 @@
 {
   "id": "fam-07",
   "name": "Buchweizen-Pancakes mit Zwetschgenkompott",
-  "category": "Frühstück",
+  "category": "Eiergerichte",
   "timeMinutes": 30,
   "tags": [
-    "Vegetarisch",
-    "Frühstücksgericht"
+    "Frühstück"
   ],
   "weatherType": "neutral",
   "source": "Familien-Rezeptbuch",
@@ -96,5 +95,7 @@
     "carbs": 51.6,
     "fiber": 6.2
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

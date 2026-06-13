@@ -95,7 +95,7 @@
   "tags": [
     "Herbst",
     "Winter",
-    "Schweizer"
+    "Schweizerisch"
   ],
   "dietCategory": "meat",
   "allergens": [
@@ -108,5 +108,7 @@
     "fat": 25.6,
     "carbs": 48.3,
     "fiber": 6.5
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

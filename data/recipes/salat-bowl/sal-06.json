@@ -43,8 +43,8 @@
   "tips": "",
   "imageUrl": null,
   "tags": [
-    "Mittagsgericht",
-    "Schweizer"
+    "Mittagessen",
+    "Schweizerisch"
   ],
   "allergens": [
     "ei",
@@ -58,5 +58,7 @@
     "fiber": 4.5
   },
   "dietCategory": "vegetarian",
-  "imageZutaten": null
+  "imageZutaten": null,
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

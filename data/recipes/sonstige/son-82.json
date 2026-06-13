@@ -5,7 +5,6 @@
   "timeMinutes": 255,
   "basePortions": 12,
   "tags": [
-    "Vegetarisch",
     "Frühling",
     "Kinderfreundlich"
   ],
@@ -146,5 +145,7 @@
     "gluten",
     "milch",
     "schalenfruechte"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

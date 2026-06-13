@@ -5,11 +5,8 @@
   "timeMinutes": 30,
   "basePortions": 2,
   "tags": [
-    "Vegan",
-    "Vegetarisch",
     "Asiatisch",
-    "Schnell und einfach",
-    "Abendgericht"
+    "Abendessen"
   ],
   "ingredients": [
     {
@@ -163,5 +160,7 @@
     "gluten",
     "milch",
     "senf"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

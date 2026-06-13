@@ -1,7 +1,7 @@
 {
   "id": "son-11",
   "name": "Spinat-Chüechli",
-  "category": "Vegetarische Hauptgerichte",
+  "category": "Gemüsegerichte",
   "timeMinutes": 35,
   "ingredients": [
     {
@@ -66,8 +66,7 @@
   "tips": "Den Spinat vor dem Mischen gut ausdrücken – zu viel Flüssigkeit macht die Chüechli matschig.",
   "imageUrl": null,
   "tags": [
-    "Vegetarisch",
-    "Schweizer",
+    "Schweizerisch",
     "Kinderfreundlich"
   ],
   "dietCategory": "vegetarian",
@@ -80,5 +79,7 @@
     "fat": 17.4,
     "carbs": 16.3,
     "fiber": 2.8
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

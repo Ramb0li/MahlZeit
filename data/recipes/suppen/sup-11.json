@@ -115,9 +115,8 @@
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/sup-11-1780778392802.jpg",
   "tags": [
-    "Vegan",
     "Mealprep-geeignet",
-    "Orientalisch",
+    "Nahöstlich",
     "Winter"
   ],
   "allergens": [
@@ -132,5 +131,7 @@
   },
   "imageZutaten": null,
   "imageKochen": null,
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

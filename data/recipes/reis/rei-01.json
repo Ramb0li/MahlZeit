@@ -1,7 +1,7 @@
 {
   "id": "rei-01",
   "name": "Lauchrisotto",
-  "category": "Reis & Getreide",
+  "category": "Reis, Getreide & Hülsenfrüchte",
   "timeMinutes": 40,
   "ingredients": [
     {
@@ -63,8 +63,7 @@
   "tags": [
     "Herbst",
     "Winter",
-    "Frühling",
-    "Vegan"
+    "Frühling"
   ],
   "dietCategory": "vegan",
   "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---rei-01-2--1780577648794.jpeg",
@@ -78,5 +77,7 @@
     "fat": 13.8,
     "carbs": 73.6,
     "fiber": 3.8
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

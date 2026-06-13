@@ -1,14 +1,13 @@
 {
   "id": "son-81",
   "name": "Frittata mit Brokkoli, Kichererbsen, Tomaten und Mozzarella",
-  "category": "Vegetarische Hauptgerichte",
+  "category": "Eiergerichte",
   "timeMinutes": 30,
   "basePortions": 4,
   "tags": [
-    "Vegetarisch",
     "Ofengericht",
-    "Mittagsgericht",
-    "Abendgericht",
+    "Mittagessen",
+    "Abendessen",
     "Italienisch",
     "Mealprep-geeignet",
     "Frühling"
@@ -113,5 +112,7 @@
   "allergens": [
     "ei",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

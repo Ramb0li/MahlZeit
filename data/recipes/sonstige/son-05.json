@@ -4,7 +4,6 @@
   "category": "Snacks & Vorspeisen",
   "timeMinutes": 15,
   "tags": [
-    "Vegan",
     "Frühling"
   ],
   "weatherType": "neutral",
@@ -64,5 +63,7 @@
     "fat": 33.7,
     "carbs": 4.2,
     "fiber": 1.8
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

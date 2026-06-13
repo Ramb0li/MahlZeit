@@ -1,15 +1,14 @@
 {
   "id": "son-84",
   "name": "Gefüllte Tomaten mit Ricottacreme auf Rucola",
-  "category": "Vegetarische Hauptgerichte",
+  "category": "Gemüsegerichte",
   "timeMinutes": 40,
   "basePortions": 4,
   "tags": [
-    "Vegetarisch",
     "Ofengericht",
     "Sommer",
     "Italienisch",
-    "Abendgericht"
+    "Abendessen"
   ],
   "ingredients": [
     {
@@ -110,5 +109,7 @@
   "imageKochen": null,
   "allergens": [
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

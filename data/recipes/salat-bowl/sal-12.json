@@ -4,7 +4,6 @@
   "category": "Salate & Bowls",
   "timeMinutes": 25,
   "tags": [
-    "Vegan",
     "Herbst"
   ],
   "weatherType": "neutral",
@@ -99,5 +98,7 @@
     "fat": 16.8,
     "carbs": 45.3,
     "fiber": 11.8
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

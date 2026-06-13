@@ -85,9 +85,8 @@
   "tips": "Für Meal-Prep alle Komponenten separat aufbewahren und erst vor dem Essen zusammenstellen. Hält im Kühlschrank 3 Tage.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Mealprep-geeignet",
-    "Mittagsgericht"
+    "Mittagessen"
   ],
   "allergens": [
     "sesam"
@@ -100,5 +99,7 @@
     "fiber": 13.2
   },
   "dietCategory": "vegan",
-  "imageZutaten": null
+  "imageZutaten": null,
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

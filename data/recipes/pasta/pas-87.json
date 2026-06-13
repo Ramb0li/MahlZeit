@@ -1,12 +1,12 @@
 {
   "id": "pas-87",
   "name": "Farfalle mit Speck, Paprika, Erbsen & Frischkäse",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 25,
   "basePortions": 4,
   "tags": [
-    "Mittagsgericht",
-    "Abendgericht",
+    "Mittagessen",
+    "Abendessen",
     "Mealprep-geeignet"
   ],
   "ingredients": [
@@ -103,5 +103,7 @@
   "imageKochen": null,
   "allergens": [
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

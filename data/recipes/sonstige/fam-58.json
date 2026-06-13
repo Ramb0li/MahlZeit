@@ -3,9 +3,7 @@
   "name": "Zwetschgencreme mit Zimtrahm",
   "category": "Desserts & Süsses",
   "timeMinutes": 30,
-  "tags": [
-    "Vegetarisch"
-  ],
+  "tags": [],
   "weatherType": "neutral",
   "source": "Familien-Rezeptbuch",
   "basePortions": 6,
@@ -82,5 +80,7 @@
     "carbs": 26.4,
     "fiber": 2.1
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

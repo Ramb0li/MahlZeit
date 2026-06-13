@@ -1,11 +1,9 @@
 {
   "id": "pas-05",
   "name": "Spaghetti Napoli",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 25,
   "tags": [
-    "Vegetarisch",
-    "Vegan",
     "Italienisch"
   ],
   "weatherType": "neutral",
@@ -63,5 +61,7 @@
     "carbs": 81.4,
     "fiber": 6.8
   },
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

@@ -75,5 +75,7 @@
     "carbs": 24.8,
     "fiber": 1.4
   },
-  "dietCategory": "meat"
+  "dietCategory": "meat",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

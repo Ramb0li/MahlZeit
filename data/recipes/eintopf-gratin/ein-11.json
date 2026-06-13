@@ -92,9 +92,8 @@
   "tips": "Wer keine Zeit hat zum Einweichen, kocht die Bohnen direkt aber ca. 20 Min. länger.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Mealprep-geeignet",
-    "Orientalisch"
+    "Nahöstlich"
   ],
   "dietCategory": "vegan",
   "allergens": [
@@ -106,5 +105,7 @@
     "fat": 22.4,
     "carbs": 42.8,
     "fiber": 12.4
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

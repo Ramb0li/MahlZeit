@@ -5,10 +5,9 @@
   "timeMinutes": 25,
   "basePortions": 2,
   "tags": [
-    "Schnell und einfach",
     "Kinderfreundlich",
-    "Mittagsgericht",
-    "Abendgericht"
+    "Mittagessen",
+    "Abendessen"
   ],
   "ingredients": [
     {
@@ -118,5 +117,7 @@
     "gluten",
     "milch",
     "schalenfruechte"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

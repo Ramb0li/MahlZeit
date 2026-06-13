@@ -5,9 +5,7 @@
   "timeMinutes": 20,
   "basePortions": 4,
   "tags": [
-    "Sommer",
-    "Sommergericht",
-    "Schnell und einfach"
+    "Sommer"
   ],
   "ingredients": [
     {
@@ -122,5 +120,7 @@
     "milch",
     "schalenfruechte",
     "sulfite"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

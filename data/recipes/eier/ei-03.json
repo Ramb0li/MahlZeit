@@ -1,7 +1,7 @@
 {
   "id": "ei-03",
   "name": "Rösti mit Avocado und Spiegelei",
-  "category": "Frühstück",
+  "category": "Eiergerichte",
   "timeMinutes": 30,
   "ingredients": [
     {
@@ -79,15 +79,14 @@
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-03-1781044613388.jpg",
   "tags": [
-    "Mittagsgericht",
-    "Frühstücksgericht",
-    "Vegetarisch",
+    "Mittagessen",
+    "Frühstück",
     "Kinderfreundlich",
     "Frühling",
     "Herbst",
     "Winter",
-    "Abendgericht",
-    "Schweizer"
+    "Abendessen",
+    "Schweizerisch"
   ],
   "allergens": [
     "ei",
@@ -175,5 +174,7 @@
         }
       ]
     }
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

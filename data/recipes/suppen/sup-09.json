@@ -87,10 +87,9 @@
   "tips": "Die Hirse gut abspülen, damit der leicht bittere Geschmack entfernt wird. Die Suppe schmeckt am nächsten Tag noch besser.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Mealprep-geeignet",
     "Winter",
-    "Mittagsgericht"
+    "Mittagessen"
   ],
   "dietCategory": "vegan",
   "allergens": [
@@ -102,5 +101,7 @@
     "fat": 8.9,
     "carbs": 50.3,
     "fiber": 7.2
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

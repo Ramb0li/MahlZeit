@@ -4,7 +4,7 @@
   "category": "Fleisch & Geflügel",
   "timeMinutes": 45,
   "tags": [
-    "Schweizer"
+    "Schweizerisch"
   ],
   "weatherType": "kalt",
   "source": "Familien-Rezeptbuch",
@@ -124,5 +124,7 @@
     "carbs": 35.2,
     "fiber": 2.8
   },
-  "dietCategory": "meat"
+  "dietCategory": "meat",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

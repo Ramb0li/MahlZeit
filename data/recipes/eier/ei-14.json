@@ -1,7 +1,7 @@
 {
   "id": "ei-14",
   "name": "Fluffige vegane Pancakes",
-  "category": "Frühstück",
+  "category": "Eiergerichte",
   "timeMinutes": 30,
   "ingredients": [
     {
@@ -73,15 +73,10 @@
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-14-1780786366445.jpg",
   "tags": [
-    "Vegan",
     "Kinderfreundlich",
-    "Frühling",
-    "Sommer",
-    "Herbst",
-    "Winter",
-    "Vegetarisch",
-    "Frühstücksgericht",
-    "Mealprep-geeignet"
+    "Frühstück",
+    "Mealprep-geeignet",
+    "Ganzjährig"
   ],
   "imageZutaten": null,
   "imageKochen": null,
@@ -97,5 +92,7 @@
     "carbs": 78.6,
     "fiber": 2.8
   },
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

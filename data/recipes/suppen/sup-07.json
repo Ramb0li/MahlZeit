@@ -4,7 +4,6 @@
   "category": "Suppen, Eintöpfe & Currys",
   "timeMinutes": 35,
   "tags": [
-    "Vegan",
     "Herbst",
     "Winter"
   ],
@@ -97,5 +96,7 @@
     "fat": 18.4,
     "carbs": 37.8,
     "fiber": 10.5
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

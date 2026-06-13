@@ -1,13 +1,12 @@
 {
   "id": "rei-57",
   "name": "Knuspriges Hackfleisch auf gebratenem Reis mit Gemüse",
-  "category": "Reis & Getreide",
+  "category": "Reis, Getreide & Hülsenfrüchte",
   "timeMinutes": 25,
   "basePortions": 4,
   "tags": [
-    "Schnell und einfach",
-    "Mittagsgericht",
-    "Abendgericht"
+    "Mittagessen",
+    "Abendessen"
   ],
   "ingredients": [
     {
@@ -120,5 +119,7 @@
   "imageKochen": null,
   "allergens": [
     "sesam"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

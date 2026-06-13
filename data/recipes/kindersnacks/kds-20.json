@@ -77,7 +77,6 @@
   "tips": "Vor dem ersten Geburtstag keinen Ahornsirup verwenden. Im Toaster frisch aufbacken.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Mealprep-geeignet",
     "Herbst",
     "Winter"
@@ -95,5 +94,7 @@
     "carbs": 31.2,
     "fiber": 4.3
   },
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

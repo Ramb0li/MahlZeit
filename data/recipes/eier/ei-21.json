@@ -5,20 +5,14 @@
   "timeMinutes": 25,
   "basePortions": 4,
   "tags": [
-    "Schnell und einfach",
     "Italienisch",
     "Ofengericht",
     "Frühstück",
-    "Abendgericht",
-    "Frühstücksgericht",
-    "Fleischhaltig",
+    "Abendessen",
     "Mealprep-geeignet",
     "Kinderfreundlich",
-    "Frühling",
-    "Sommer",
-    "Herbst",
-    "Winter",
-    "Mittagsgericht"
+    "Mittagessen",
+    "Ganzjährig"
   ],
   "ingredients": [
     {
@@ -108,5 +102,7 @@
   "allergens": [
     "ei",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

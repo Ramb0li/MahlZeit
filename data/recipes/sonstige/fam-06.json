@@ -4,8 +4,6 @@
   "category": "Snacks & Vorspeisen",
   "timeMinutes": 15,
   "tags": [
-    "Vegetarisch",
-    "Vegan",
     "Italienisch",
     "Sommer"
   ],
@@ -74,5 +72,7 @@
     "carbs": 28.6,
     "fiber": 2.8
   },
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

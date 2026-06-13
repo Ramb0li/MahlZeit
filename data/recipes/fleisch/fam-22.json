@@ -97,5 +97,7 @@
     "fat": 12.6,
     "carbs": 92.8,
     "fiber": 5.8
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

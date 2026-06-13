@@ -11,12 +11,11 @@
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/pas-02-1780699528706.jpg",
   "tags": [
     "Mealprep-geeignet",
-    "Mittagsgericht",
+    "Mittagessen",
     "Herbst",
     "Winter",
     "Ofengericht",
-    "Abendgericht",
-    "Vegetarisch"
+    "Abendessen"
   ],
   "imageZutaten": null,
   "imageKochen": null,
@@ -49,5 +48,7 @@
     "Vorgang wiederholen, bis alle Zutaten aufgebraucht sind. Mit Lasagneblättern und Béchamelsauce abschliessen.",
     "Restlichen Mozzarella und Sbrinz darüberstreuen.",
     "Lasagne in Ofenmitte ca. 35–40 Minuten backen, bis Oberfläche goldbraun ist."
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

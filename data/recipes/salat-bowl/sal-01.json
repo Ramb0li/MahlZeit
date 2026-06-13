@@ -42,7 +42,7 @@
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/sal-01-1780782118051.jpg",
   "tags": [
     "Mealprep-geeignet",
-    "Mittagsgericht",
+    "Mittagessen",
     "Frühling",
     "Sommer"
   ],
@@ -58,5 +58,7 @@
   },
   "imageZutaten": null,
   "imageKochen": null,
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

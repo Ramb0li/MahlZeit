@@ -6,8 +6,7 @@
   "basePortions": 4,
   "tags": [
     "Asiatisch",
-    "Schnell und einfach",
-    "Abendgericht"
+    "Abendessen"
   ],
   "ingredients": [
     {
@@ -113,5 +112,7 @@
     "milch",
     "sesam",
     "soja"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

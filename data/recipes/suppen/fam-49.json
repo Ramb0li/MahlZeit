@@ -3,10 +3,7 @@
   "name": "Tomatensuppe",
   "category": "Suppen, Eintöpfe & Currys",
   "timeMinutes": 20,
-  "tags": [
-    "Vegetarisch",
-    "Vegan"
-  ],
+  "tags": [],
   "weatherType": "kalt",
   "source": "Familien-Rezeptbuch",
   "basePortions": 4,
@@ -86,5 +83,7 @@
     "carbs": 14.2,
     "fiber": 3.1
   },
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

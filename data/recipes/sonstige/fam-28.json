@@ -1,11 +1,9 @@
 {
   "id": "fam-28",
   "name": "Mediterranes Gemüse",
-  "category": "Vegetarische Hauptgerichte",
+  "category": "Gemüsegerichte",
   "timeMinutes": 35,
   "tags": [
-    "Vegetarisch",
-    "Vegan",
     "Ofengericht",
     "Sommer"
   ],
@@ -92,5 +90,7 @@
     "carbs": 10.8,
     "fiber": 5.1
   },
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

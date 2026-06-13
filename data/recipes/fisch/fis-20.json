@@ -5,8 +5,7 @@
   "timeMinutes": 20,
   "basePortions": 2,
   "tags": [
-    "Schnell und einfach",
-    "Abendgericht"
+    "Abendessen"
   ],
   "ingredients": [
     {
@@ -88,5 +87,7 @@
     "fisch",
     "gluten",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

@@ -5,7 +5,6 @@
   "timeMinutes": 270,
   "basePortions": 8,
   "tags": [
-    "Vegetarisch",
     "Frühling",
     "Sommer"
   ],
@@ -134,5 +133,7 @@
     "ei",
     "gluten",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

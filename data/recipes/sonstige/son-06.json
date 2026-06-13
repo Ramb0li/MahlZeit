@@ -3,9 +3,7 @@
   "name": "Hummus-Gemüse-Wrap",
   "category": "Snacks & Vorspeisen",
   "timeMinutes": 10,
-  "tags": [
-    "Vegan"
-  ],
+  "tags": [],
   "weatherType": "warm",
   "source": "Cuiseline",
   "basePortions": 1,
@@ -86,5 +84,7 @@
     "carbs": 52.6,
     "fiber": 10.5
   },
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

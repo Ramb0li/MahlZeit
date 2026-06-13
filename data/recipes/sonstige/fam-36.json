@@ -1,13 +1,11 @@
 {
   "id": "fam-36",
   "name": "Rotkraut à la Grosi",
-  "category": "Vegetarische Hauptgerichte",
+  "category": "Gemüsegerichte",
   "timeMinutes": 55,
   "tags": [
-    "Vegetarisch",
-    "Vegan",
     "Herbst",
-    "Schweizer"
+    "Schweizerisch"
   ],
   "weatherType": "kalt",
   "source": "Familien-Rezeptbuch",
@@ -83,5 +81,7 @@
     "carbs": 16.4,
     "fiber": 5.2
   },
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

@@ -1,7 +1,7 @@
 {
   "id": "son-04",
   "name": "Avocado Toast mit Spiegelei",
-  "category": "Frühstück",
+  "category": "Eiergerichte",
   "timeMinutes": 15,
   "ingredients": [
     {
@@ -73,9 +73,8 @@
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/son-04-2-1780699834231.jpg",
   "tags": [
-    "Vegetarisch",
-    "Mittagsgericht",
-    "Frühstücksgericht"
+    "Mittagessen",
+    "Frühstück"
   ],
   "imageZutaten": null,
   "imageKochen": null,
@@ -91,5 +90,7 @@
     "carbs": 22.1,
     "fiber": 8.2
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

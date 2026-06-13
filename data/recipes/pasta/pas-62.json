@@ -1,13 +1,12 @@
 {
   "id": "pas-62",
   "name": "Tagliatelle an Champignon-Rahmsauce mit Hackbällchen",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 30,
   "basePortions": 2,
   "tags": [
-    "Schnell und einfach",
-    "Abendgericht",
-    "Mittagsgericht",
+    "Abendessen",
+    "Mittagessen",
     "Frühling"
   ],
   "ingredients": [
@@ -139,5 +138,7 @@
   "allergens": [
     "gluten",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

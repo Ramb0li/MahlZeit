@@ -1,14 +1,12 @@
 {
   "id": "pas-67",
   "name": "Spaghetti mit Butter-Zitronen-Sauce und frittiertem Salbei",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 20,
   "basePortions": 2,
   "tags": [
-    "Vegetarisch",
-    "Schnell und einfach",
-    "Abendgericht",
-    "Mittagsgericht",
+    "Abendessen",
+    "Mittagessen",
     "Italienisch",
     "Sommer"
   ],
@@ -98,5 +96,7 @@
   "allergens": [
     "gluten",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

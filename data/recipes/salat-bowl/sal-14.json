@@ -67,8 +67,7 @@
   "tips": "Kala Namak (schwarzes Schwefelsalz) gibt dem Salat den typischen Eier-Geschmack und ist in Bioläden oder online erhältlich.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
-    "Mittagsgericht"
+    "Mittagessen"
   ],
   "dietCategory": "vegan",
   "allergens": [
@@ -80,5 +79,7 @@
     "fat": 21.6,
     "carbs": 30.2,
     "fiber": 5.8
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

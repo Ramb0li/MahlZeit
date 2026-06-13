@@ -3,9 +3,7 @@
   "name": "Kräuterbutter",
   "category": "Snacks & Vorspeisen",
   "timeMinutes": 10,
-  "tags": [
-    "Vegetarisch"
-  ],
+  "tags": [],
   "weatherType": "neutral",
   "source": "Familien-Rezeptbuch",
   "basePortions": 6,
@@ -73,5 +71,7 @@
     "carbs": 0.5,
     "fiber": 0.2
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

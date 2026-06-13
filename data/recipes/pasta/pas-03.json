@@ -4,7 +4,6 @@
   "category": "Aufläufe & Gratins",
   "timeMinutes": 70,
   "tags": [
-    "Vegetarisch",
     "Mealprep-geeignet",
     "Ofengericht",
     "Herbst",
@@ -85,5 +84,7 @@
     "carbs": 38.6,
     "fiber": 4.2
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

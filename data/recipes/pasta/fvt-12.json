@@ -1,7 +1,7 @@
 {
   "id": "fvt-12",
   "name": "Nudeln mit Basilikum-Bohnen-Pesto",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 20,
   "ingredients": [
     {
@@ -61,7 +61,7 @@
   "tips": "",
   "imageUrl": null,
   "tags": [
-    "Mittagsgericht",
+    "Mittagessen",
     "Frühling",
     "Sommer"
   ],
@@ -76,5 +76,7 @@
     "carbs": 63.8,
     "fiber": 8.2
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

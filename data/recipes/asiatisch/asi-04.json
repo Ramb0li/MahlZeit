@@ -1,7 +1,7 @@
 {
   "id": "asi-04",
   "name": "Wokgemüse mit Erdnuss-Sauce",
-  "category": "Vegetarische Hauptgerichte",
+  "category": "Gemüsegerichte",
   "timeMinutes": 30,
   "ingredients": [
     {
@@ -109,7 +109,6 @@
   "tips": "Wer es schärfer mag, gibt mehr rote Currypaste in die Sauce.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Asiatisch"
   ],
   "dietCategory": "vegan",
@@ -124,5 +123,7 @@
     "fat": 26.8,
     "carbs": 32.4,
     "fiber": 9.2
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

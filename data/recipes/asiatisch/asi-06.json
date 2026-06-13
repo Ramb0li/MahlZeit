@@ -1,7 +1,7 @@
 {
   "id": "asi-06",
   "name": "Pad Thai mit Poulet (Thai Kitchen Art)",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 30,
   "ingredients": [
     {
@@ -100,5 +100,7 @@
     "fat": 14.6,
     "carbs": 62.8,
     "fiber": 3.4
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

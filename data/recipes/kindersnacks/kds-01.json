@@ -91,7 +91,6 @@
   "tips": "Für Kinder unter 12 Monaten ohne Salz zubereiten.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Mealprep-geeignet"
   ],
   "allergens": [
@@ -108,5 +107,7 @@
   },
   "dietCategory": "vegan",
   "imageZutaten": null,
-  "imageKochen": null
+  "imageKochen": null,
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

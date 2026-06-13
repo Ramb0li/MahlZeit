@@ -3,9 +3,7 @@
   "name": "Gnocchi-Gratin mit Basilikumsauce",
   "category": "Aufläufe & Gratins",
   "timeMinutes": 35,
-  "tags": [
-    "Vegetarisch"
-  ],
+  "tags": [],
   "weatherType": "kalt",
   "source": "Familien-Rezeptbuch (OCR)",
   "basePortions": 4,
@@ -76,5 +74,7 @@
     "carbs": 56.3,
     "fiber": 4.1
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

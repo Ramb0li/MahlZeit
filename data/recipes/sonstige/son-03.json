@@ -1,7 +1,7 @@
 {
   "id": "son-03",
   "name": "Pitabrot mit Falafel, Tzatziki und Gemüse",
-  "category": "Wraps & Sandwiches",
+  "category": "Wraps, Sandwiches & Burger",
   "timeMinutes": 20,
   "ingredients": [
     {
@@ -49,10 +49,10 @@
   "tips": "",
   "imageUrl": null,
   "tags": [
-    "Mittagsgericht",
+    "Mittagessen",
     "Frühling",
     "Sommer",
-    "Orientalisch"
+    "Nahöstlich"
   ],
   "allergens": [
     "gluten"
@@ -65,5 +65,7 @@
     "fiber": 9.3
   },
   "dietCategory": "vegetarian",
-  "imageZutaten": null
+  "imageZutaten": null,
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

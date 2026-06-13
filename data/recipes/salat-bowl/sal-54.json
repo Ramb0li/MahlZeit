@@ -5,9 +5,7 @@
   "timeMinutes": 20,
   "basePortions": 4,
   "tags": [
-    "Vegetarisch",
-    "Herbst",
-    "Schnell und einfach"
+    "Herbst"
   ],
   "ingredients": [
     {
@@ -115,5 +113,7 @@
   "allergens": [
     "milch",
     "schalenfruechte"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

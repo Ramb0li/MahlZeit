@@ -1,7 +1,7 @@
 {
   "id": "asi-02",
   "name": "Ayurvedisches Kitchari",
-  "category": "Reis & Getreide",
+  "category": "Reis, Getreide & Hülsenfrüchte",
   "timeMinutes": 40,
   "ingredients": [
     {
@@ -56,7 +56,7 @@
   "imageUrl": null,
   "tags": [
     "Mealprep-geeignet",
-    "Mittagsgericht",
+    "Mittagessen",
     "Asiatisch"
   ],
   "allergens": [
@@ -69,5 +69,7 @@
     "carbs": 74.6,
     "fiber": 8.9
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

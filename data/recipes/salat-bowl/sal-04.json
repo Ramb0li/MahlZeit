@@ -3,10 +3,7 @@
   "name": "Kichererbsensalat",
   "category": "Salate & Bowls",
   "timeMinutes": 15,
-  "tags": [
-    "Vegetarisch",
-    "Vegan"
-  ],
+  "tags": [],
   "weatherType": "warm",
   "source": "Cuiseline",
   "basePortions": 4,
@@ -89,5 +86,7 @@
     "fat": 14.2,
     "carbs": 26.5,
     "fiber": 7.5
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

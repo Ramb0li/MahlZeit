@@ -1,11 +1,9 @@
 {
   "id": "rei-09",
   "name": "Hirse-Gemüse-Pfanne mit Räuchertofu",
-  "category": "Reis & Getreide",
+  "category": "Reis, Getreide & Hülsenfrüchte",
   "timeMinutes": 35,
-  "tags": [
-    "Vegan"
-  ],
+  "tags": [],
   "weatherType": "neutral",
   "source": "Cuiseline",
   "basePortions": 4,
@@ -93,5 +91,7 @@
     "fat": 15.8,
     "carbs": 64.2,
     "fiber": 10.6
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

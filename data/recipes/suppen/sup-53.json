@@ -8,8 +8,8 @@
     "Frühling",
     "Herbst",
     "Winter",
-    "Mittagsgericht",
-    "Abendgericht"
+    "Mittagessen",
+    "Abendessen"
   ],
   "ingredients": [
     {
@@ -112,5 +112,7 @@
   "imageKochen": null,
   "allergens": [
     "sulfite"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

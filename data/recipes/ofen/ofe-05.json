@@ -1,7 +1,7 @@
 {
   "id": "ofe-05",
   "name": "Süsskartoffeln aus dem Ofen mit Pilz-Nusskruste",
-  "category": "Vegetarische Hauptgerichte",
+  "category": "Kartoffelgerichte",
   "timeMinutes": 55,
   "ingredients": [
     {
@@ -79,11 +79,10 @@
   "tips": "Gut als Hauptgericht mit einem grünen Salat oder als Beilage zu Fleisch.",
   "imageUrl": null,
   "tags": [
-    "Vegetarisch",
     "Ofengericht",
     "Herbst",
     "Winter",
-    "Schweizer"
+    "Schweizerisch"
   ],
   "dietCategory": "vegetarian",
   "allergens": [
@@ -97,5 +96,7 @@
     "fat": 24.6,
     "carbs": 52.8,
     "fiber": 8.7
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

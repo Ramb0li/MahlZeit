@@ -2,19 +2,15 @@
   {
     "id": "ei-01",
     "name": "Rührei",
-    "category": "Frühstück",
+    "category": "Eiergerichte",
     "timeMinutes": 10,
     "tags": [
-      "Mittagsgericht",
-      "Abendgericht",
-      "Schweizer",
-      "Frühling",
-      "Sommer",
-      "Herbst",
-      "Winter",
+      "Mittagessen",
+      "Abendessen",
+      "Schweizerisch",
       "Kinderfreundlich",
-      "Vegetarisch",
-      "Frühstücksgericht"
+      "Frühstück",
+      "Ganzjährig"
     ],
     "ingredients": [
       {
@@ -74,12 +70,14 @@
       "Lass die Eimasse kurz anstocken. Schiebe dann mit einem Pfannenwender die Masse vorsichtig vom Pfannenrand in die Mitte. Wiederhole den Vorgang bis die Eimasse cremig stockt.",
       "Nimm die Pfanne vom Herd bevor die Eimasse zu trocken wird. Nach belieben würzen (Bei Edelstahlpfanne Hitze nach dem ersten Stocken reduzieren bzw. Herdplatte abschalten. Das Rührei gart auf dem warmen Pfannenboden nach)."
     ],
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ei-02",
     "name": "Spiegeleier mit Rahmspinat und Bratkartoffeln",
-    "category": "Vegetarische Hauptgerichte",
+    "category": "Eiergerichte",
     "timeMinutes": 35,
     "ingredients": [
       {
@@ -206,10 +204,9 @@
       "Herbst",
       "Winter",
       "Kinderfreundlich",
-      "Vegetarisch",
-      "Mittagsgericht",
-      "Abendgericht",
-      "Schweizer",
+      "Mittagessen",
+      "Abendessen",
+      "Schweizerisch",
       "Frühling"
     ],
     "allergens": [
@@ -344,12 +341,14 @@
           }
         ]
       }
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ei-03",
     "name": "Rösti mit Avocado und Spiegelei",
-    "category": "Frühstück",
+    "category": "Eiergerichte",
     "timeMinutes": 30,
     "ingredients": [
       {
@@ -427,15 +426,14 @@
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-03-1781044613388.jpg",
     "tags": [
-      "Mittagsgericht",
-      "Frühstücksgericht",
-      "Vegetarisch",
+      "Mittagessen",
+      "Frühstück",
       "Kinderfreundlich",
       "Frühling",
       "Herbst",
       "Winter",
-      "Abendgericht",
-      "Schweizer"
+      "Abendessen",
+      "Schweizerisch"
     ],
     "allergens": [
       "ei",
@@ -523,12 +521,14 @@
           }
         ]
       }
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ei-04",
     "name": "Gemüse-Eieromelette mit Vollkornbrot",
-    "category": "Vegetarische Hauptgerichte",
+    "category": "Eiergerichte",
     "timeMinutes": 20,
     "ingredients": [
       {
@@ -610,16 +610,12 @@
     "description": "Ob als eiweissreiches Frühstück oder als leichte, sättigende Mahlzeit am Mittag oder Abend: Dieses schnelle Omelett mit buntem Gemüse und Vollkornbrot passt immer.",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-04-1780699103706.jpg",
     "tags": [
-      "Mittagsgericht",
-      "Vegetarisch",
+      "Mittagessen",
       "Kinderfreundlich",
-      "Frühling",
-      "Sommer",
-      "Herbst",
-      "Winter",
-      "Frühstücksgericht",
-      "Abendgericht",
-      "Schweizer"
+      "Frühstück",
+      "Abendessen",
+      "Schweizerisch",
+      "Ganzjährig"
     ],
     "imageZutaten": null,
     "imageKochen": null,
@@ -641,12 +637,14 @@
       "Den Backofen auf 100 Grad vorheizen. Etwa drei Viertel des Gemüses aus der Pfanne nehmen. Das restliche Gemüse mit einem Viertel der Eiermasse übergiessen und bei mittlerer Hitze 3–4 Minuten stocken lassen. Das Omelett wenden und weitere ca. 2 Minuten fertig braten, bis es leicht gebräunt ist. Herausnehmen, zusammenklappen und im Ofen warm halten.",
       "Für die weiteren Omeletts jeweils wieder etwas Olivenöl in die Pfanne geben, einen Teil der Gemüsemischung beigeben und mit einem Viertel der Eiermasse übergiessen. So fortfahren, bis insgesamt 4 Omeletts fertig sind.",
       "Die Gemüseomeletts mit gehackter Petersilie bestreuen und mit getoastetem Vollkornbrot servieren."
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ei-05",
     "name": "Omelette mit Pilz-Kräutersauce",
-    "category": "Vegetarische Hauptgerichte",
+    "category": "Eiergerichte",
     "timeMinutes": 50,
     "ingredients": [
       {
@@ -786,13 +784,12 @@
     "tags": [
       "Herbst",
       "Winter",
-      "Vegetarisch",
       "Mealprep-geeignet",
       "Kinderfreundlich",
       "Frühling",
-      "Mittagsgericht",
-      "Abendgericht",
-      "Schweizer"
+      "Mittagessen",
+      "Abendessen",
+      "Schweizerisch"
     ],
     "allergens": [
       "ei",
@@ -933,12 +930,14 @@
           }
         ]
       }
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ei-07",
     "name": "Polenta mit mediterranem Gemüse und Spiegelei",
-    "category": "Vegetarische Hauptgerichte",
+    "category": "Eiergerichte",
     "timeMinutes": 40,
     "ingredients": [
       {
@@ -1087,12 +1086,11 @@
     "tags": [
       "Herbst",
       "Winter",
-      "Vegetarisch",
       "Kinderfreundlich",
       "Mealprep-geeignet",
       "Frühling",
-      "Mittagsgericht",
-      "Abendgericht"
+      "Mittagessen",
+      "Abendessen"
     ],
     "allergens": [
       "ei",
@@ -1250,16 +1248,17 @@
           }
         ]
       }
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ei-09",
     "name": "Blueberry Smoothie Bowl",
-    "category": "Frühstück",
+    "category": "Getränke & Smoothies",
     "timeMinutes": 10,
     "tags": [
-      "Vegan",
-      "Frühstücksgericht",
+      "Frühstück",
       "Kinderfreundlich",
       "Mealprep-geeignet",
       "Frühling",
@@ -1357,22 +1356,20 @@
       "fat": 10.2,
       "carbs": 39.8,
       "fiber": 8.6
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ei-10",
     "name": "Cacao Smoothie Bowl",
-    "category": "Frühstück",
+    "category": "Getränke & Smoothies",
     "timeMinutes": 10,
     "tags": [
-      "Vegan",
-      "Frühstücksgericht",
-      "Frühling",
-      "Sommer",
-      "Herbst",
-      "Winter",
+      "Frühstück",
       "Kinderfreundlich",
-      "Mealprep-geeignet"
+      "Mealprep-geeignet",
+      "Ganzjährig"
     ],
     "weatherType": "neutral",
     "source": "Cuiseline",
@@ -1473,23 +1470,20 @@
       "fat": 12.8,
       "carbs": 52.4,
       "fiber": 9.2
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ei-11",
     "name": "Granola",
-    "category": "Frühstück",
+    "category": "Müesli, Porridge & Frühstücksschalen",
     "timeMinutes": 50,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet",
-      "Frühstücksgericht",
-      "Vegetarisch",
+      "Frühstück",
       "Kinderfreundlich",
-      "Frühling",
-      "Sommer",
-      "Herbst",
-      "Winter"
+      "Ganzjährig"
     ],
     "weatherType": "neutral",
     "source": "Cuiseline",
@@ -1592,12 +1586,14 @@
       "fat": 38.2,
       "carbs": 42.1,
       "fiber": 8.3
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ei-12",
     "name": "Shakshuka mit Feta",
-    "category": "Vegetarische Hauptgerichte",
+    "category": "Eiergerichte",
     "timeMinutes": 35,
     "ingredients": [
       {
@@ -1717,14 +1713,13 @@
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-08-1780870240294.jpg",
     "tags": [
-      "Vegetarisch",
-      "Orientalisch",
-      "Mittagsgericht",
+      "Nahöstlich",
+      "Mittagessen",
       "Kinderfreundlich",
       "Frühling",
       "Herbst",
       "Winter",
-      "Abendgericht"
+      "Abendessen"
     ],
     "dietCategory": "vegetarian",
     "allergens": [
@@ -1739,7 +1734,9 @@
       "fiber": 5.2
     },
     "imageZutaten": null,
-    "imageKochen": null
+    "imageKochen": null,
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ei-13",
@@ -1819,12 +1816,10 @@
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-13-1780786326142.jpg",
     "tags": [
-      "Vegan",
       "Sommer",
       "Frühling",
       "Kinderfreundlich",
-      "Vegetarisch",
-      "Frühstücksgericht",
+      "Frühstück",
       "Mealprep-geeignet"
     ],
     "imageZutaten": null,
@@ -1841,12 +1836,14 @@
       "carbs": 63.4,
       "fiber": 10.5
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ei-14",
     "name": "Fluffige vegane Pancakes",
-    "category": "Frühstück",
+    "category": "Eiergerichte",
     "timeMinutes": 30,
     "ingredients": [
       {
@@ -1918,15 +1915,10 @@
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-14-1780786366445.jpg",
     "tags": [
-      "Vegan",
       "Kinderfreundlich",
-      "Frühling",
-      "Sommer",
-      "Herbst",
-      "Winter",
-      "Vegetarisch",
-      "Frühstücksgericht",
-      "Mealprep-geeignet"
+      "Frühstück",
+      "Mealprep-geeignet",
+      "Ganzjährig"
     ],
     "imageZutaten": null,
     "imageKochen": null,
@@ -1942,12 +1934,14 @@
       "carbs": 78.6,
       "fiber": 2.8
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ei-15",
     "name": "Klassische Pancakes",
-    "category": "Frühstück",
+    "category": "Eiergerichte",
     "timeMinutes": 25,
     "ingredients": [
       {
@@ -2031,14 +2025,10 @@
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-15-1780699224577.jpg",
     "tags": [
-      "Vegetarisch",
       "Kinderfreundlich",
-      "Frühstücksgericht",
+      "Frühstück",
       "Mealprep-geeignet",
-      "Frühling",
-      "Sommer",
-      "Herbst",
-      "Winter"
+      "Ganzjährig"
     ],
     "imageZutaten": null,
     "imageKochen": null,
@@ -2054,12 +2044,14 @@
       "carbs": 50.3,
       "fiber": 1.8
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ei-16",
     "name": "Vegane Bananen-Pancakes",
-    "category": "Frühstück",
+    "category": "Eiergerichte",
     "timeMinutes": 20,
     "ingredients": [
       {
@@ -2125,9 +2117,8 @@
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-16-1780699242965.jpg",
     "tags": [
-      "Vegan",
       "Kinderfreundlich",
-      "Frühstücksgericht"
+      "Frühstück"
     ],
     "imageZutaten": null,
     "imageKochen": null,
@@ -2143,27 +2134,23 @@
       "carbs": 39.8,
       "fiber": 5.4
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ei-17",
     "name": "Frittata mit Lauch und Champignon",
-    "category": "Frühstück",
+    "category": "Eiergerichte",
     "timeMinutes": 25,
     "basePortions": 2,
     "tags": [
-      "Vegetarisch",
-      "Schnell und einfach",
       "Ofengericht",
-      "Herbst",
-      "Winter",
       "Frühstück",
-      "Frühstücksgericht",
       "Kinderfreundlich",
       "Mealprep-geeignet",
-      "Frühling",
-      "Sommer",
-      "Italienisch"
+      "Italienisch",
+      "Ganzjährig"
     ],
     "ingredients": [
       {
@@ -2282,19 +2269,19 @@
     "allergens": [
       "ei",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ei-18",
     "name": "Käsetoast mit Cheddar und Butterkäse mit Spiegelei",
-    "category": "Frühstück",
+    "category": "Eiergerichte",
     "timeMinutes": 15,
     "basePortions": 2,
     "tags": [
-      "Vegetarisch",
-      "Schnell und einfach",
       "Kinderfreundlich",
-      "Frühstücksgericht"
+      "Frühstück"
     ],
     "ingredients": [
       {
@@ -2382,19 +2369,20 @@
     "allergens": [
       "ei",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ei-19",
     "name": "Pochiertes Ei auf Spinat, Mais, Speck und Brot",
-    "category": "Frühstück",
+    "category": "Eiergerichte",
     "timeMinutes": 15,
     "basePortions": 2,
     "tags": [
       "Frühling",
       "Sommer",
-      "Schnell und einfach",
-      "Frühstücksgericht"
+      "Frühstück"
     ],
     "ingredients": [
       {
@@ -2486,23 +2474,23 @@
       "ei",
       "gluten",
       "sulfite"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ei-20",
     "name": "Frittata mit Tomate, Mozzarella & Basilikum",
-    "category": "Frühstück",
+    "category": "Eiergerichte",
     "timeMinutes": 20,
     "basePortions": 2,
     "tags": [
-      "Vegetarisch",
-      "Schnell und einfach",
       "Ofengericht",
-      "Mittagsgericht",
+      "Mittagessen",
       "Italienisch",
       "Frühling",
       "Sommer",
-      "Frühstücksgericht"
+      "Frühstück"
     ],
     "ingredients": [
       {
@@ -2595,7 +2583,9 @@
       "ei",
       "milch",
       "sulfite"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ei-21",
@@ -2604,20 +2594,14 @@
     "timeMinutes": 25,
     "basePortions": 4,
     "tags": [
-      "Schnell und einfach",
       "Italienisch",
       "Ofengericht",
       "Frühstück",
-      "Abendgericht",
-      "Frühstücksgericht",
-      "Fleischhaltig",
+      "Abendessen",
       "Mealprep-geeignet",
       "Kinderfreundlich",
-      "Frühling",
-      "Sommer",
-      "Herbst",
-      "Winter",
-      "Mittagsgericht"
+      "Mittagessen",
+      "Ganzjährig"
     ],
     "ingredients": [
       {
@@ -2707,22 +2691,21 @@
     "allergens": [
       "ei",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ei-23",
     "name": "Farmers Rührei Muffins",
-    "category": "Frühstück",
+    "category": "Eiergerichte",
     "timeMinutes": 30,
     "basePortions": 12,
     "tags": [
-      "Vegetarisch",
       "Mealprep-geeignet",
       "Kinderfreundlich",
       "Ofengericht",
-      "Frühstück",
-      "Schnell und einfach",
-      "Frühstücksgericht"
+      "Frühstück"
     ],
     "ingredients": [
       {
@@ -2782,21 +2765,20 @@
     "allergens": [
       "ei",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ei-24",
     "name": "Vollkornbrot mit Kräuterbutter, Gurke und Makrele",
-    "category": "Frühstück",
+    "category": "Eiergerichte",
     "timeMinutes": 10,
     "basePortions": 4,
     "tags": [
       "Kinderfreundlich",
-      "Frühling",
-      "Sommer",
-      "Herbst",
-      "Winter",
-      "Frühstücksgericht"
+      "Frühstück",
+      "Ganzjährig"
     ],
     "ingredients": [
       {
@@ -2882,21 +2864,21 @@
       "fisch",
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ei-25",
     "name": "Mozzarella-Basilikum-Creme auf Vollkorntoast mit Cherrytomaten",
-    "category": "Frühstück",
+    "category": "Eiergerichte",
     "timeMinutes": 10,
     "basePortions": 2,
     "tags": [
-      "Vegetarisch",
-      "Schnell und einfach",
       "Frühling",
       "Sommer",
       "Kinderfreundlich",
-      "Frühstücksgericht"
+      "Frühstück"
     ],
     "ingredients": [
       {
@@ -2964,21 +2946,22 @@
     "imageKochen": null,
     "allergens": [
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ei-26",
     "name": "Dutch Baby mit frischen Erdbeeren",
-    "category": "Frühstück",
+    "category": "Eiergerichte",
     "timeMinutes": 15,
     "basePortions": 2.5,
     "tags": [
-      "Vegetarisch",
       "Kinderfreundlich",
       "Frühling",
       "Sommer",
       "Ofengericht",
-      "Frühstücksgericht"
+      "Frühstück"
     ],
     "ingredients": [
       {
@@ -3056,21 +3039,22 @@
       "ei",
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-29",
     "name": "Nudeln al Pollo",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 35,
     "tags": [
-      "Fleischhaltig",
       "Mealprep-geeignet",
       "Frühling",
       "Herbst",
       "Winter",
-      "Mittagsgericht",
-      "Abendgericht",
+      "Mittagessen",
+      "Abendessen",
       "Kinderfreundlich"
     ],
     "weatherType": "kalt",
@@ -3183,22 +3167,23 @@
       "carbs": 58.4,
       "fiber": 4.2
     },
-    "dietCategory": "meat"
+    "dietCategory": "meat",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-30",
     "name": "Nudeln mit Poulet-Gemüse-Sauce",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 35,
     "tags": [
-      "Fleischhaltig",
       "Mealprep-geeignet",
       "Kinderfreundlich",
       "Frühling",
       "Herbst",
       "Winter",
-      "Mittagsgericht",
-      "Abendgericht"
+      "Mittagessen",
+      "Abendessen"
     ],
     "weatherType": "neutral",
     "source": "Familien-Rezeptbuch",
@@ -3320,21 +3305,22 @@
       "carbs": 54.2,
       "fiber": 6.8
     },
-    "dietCategory": "meat"
+    "dietCategory": "meat",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-38",
     "name": "Spaghetti Carbonara",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 20,
     "tags": [
-      "Fleischhaltig",
       "Mealprep-geeignet",
       "Frühling",
       "Herbst",
       "Winter",
-      "Mittagsgericht",
-      "Abendgericht",
+      "Mittagessen",
+      "Abendessen",
       "Italienisch",
       "Kinderfreundlich"
     ],
@@ -3426,21 +3412,21 @@
       "carbs": 61.5,
       "fiber": 2.8
     },
-    "dietCategory": "meat"
+    "dietCategory": "meat",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-39",
     "name": "Spaghetti freschi",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 20,
     "tags": [
-      "Vegetarisch",
       "Sommer",
-      "Vegan",
       "Mealprep-geeignet",
       "Kinderfreundlich",
-      "Mittagsgericht",
-      "Abendgericht",
+      "Mittagessen",
+      "Abendessen",
       "Italienisch"
     ],
     "weatherType": "warm",
@@ -3531,24 +3517,22 @@
       "carbs": 78.6,
       "fiber": 5.4
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-50",
     "name": "Tortellini an Kräutersauce",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 15,
     "tags": [
-      "Vegetarisch",
       "Mealprep-geeignet",
       "Kinderfreundlich",
-      "Frühling",
-      "Sommer",
-      "Herbst",
-      "Winter",
-      "Mittagsgericht",
-      "Abendgericht",
-      "Italienisch"
+      "Mittagessen",
+      "Abendessen",
+      "Italienisch",
+      "Ganzjährig"
     ],
     "weatherType": "neutral",
     "source": "MahlZeit",
@@ -3661,16 +3645,16 @@
       "carbs": 42.3,
       "fiber": 2.8
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-55",
     "name": "Zitronenravioli an Prosecco-Sauce",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 25,
-    "tags": [
-      "Vegetarisch"
-    ],
+    "tags": [],
     "weatherType": "neutral",
     "source": "Familien-Rezeptbuch",
     "basePortions": 4,
@@ -3751,12 +3735,14 @@
       "carbs": 88.5,
       "fiber": 3.2
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fvt-04",
     "name": "Vollkornpasta mit Blumenkohl-Bohnen-Cashew-Sauce",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 35,
     "ingredients": [
       {
@@ -3828,7 +3814,7 @@
     "tips": "",
     "imageUrl": null,
     "tags": [
-      "Mittagsgericht",
+      "Mittagessen",
       "Herbst",
       "Winter",
       "Frühling"
@@ -3845,12 +3831,14 @@
       "carbs": 68.2,
       "fiber": 13.6
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fvt-06",
     "name": "Brokkoli-Gnocchi",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 55,
     "ingredients": [
       {
@@ -3914,12 +3902,14 @@
       "carbs": 68.5,
       "fiber": 6.9
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fvt-09",
     "name": "Kein-Käse-Käse-Spätzle (vegan)",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 50,
     "ingredients": [
       {
@@ -4009,7 +3999,6 @@
     "tips": "",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Herbst",
       "Winter"
     ],
@@ -4026,12 +4015,14 @@
       "carbs": 54.2,
       "fiber": 6.8
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fvt-12",
     "name": "Nudeln mit Basilikum-Bohnen-Pesto",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 20,
     "ingredients": [
       {
@@ -4091,7 +4082,7 @@
     "tips": "",
     "imageUrl": null,
     "tags": [
-      "Mittagsgericht",
+      "Mittagessen",
       "Frühling",
       "Sommer"
     ],
@@ -4106,22 +4097,23 @@
       "carbs": 63.8,
       "fiber": 8.2
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ocr-04",
     "name": "Spaghetti Bolognese",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 75,
     "tags": [
-      "Fleischhaltig",
       "Mealprep-geeignet",
       "Kinderfreundlich",
       "Frühling",
       "Herbst",
       "Winter",
-      "Mittagsgericht",
-      "Abendgericht",
+      "Mittagessen",
+      "Abendessen",
       "Italienisch"
     ],
     "weatherType": "kalt",
@@ -4232,25 +4224,22 @@
       "carbs": 16.2,
       "fiber": 3.8
     },
-    "dietCategory": "meat"
+    "dietCategory": "meat",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ocr-07",
     "name": "Penne mit Auberginen-Tomatensauce",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 40,
     "tags": [
-      "Vegetarisch",
       "Italienisch",
-      "Pescetarisch",
       "Mealprep-geeignet",
       "Kinderfreundlich",
-      "Frühling",
-      "Sommer",
-      "Herbst",
-      "Winter",
-      "Mittagsgericht",
-      "Abendgericht"
+      "Mittagessen",
+      "Abendessen",
+      "Ganzjährig"
     ],
     "weatherType": "warm",
     "source": "Familien-Rezeptbuch (OCR)",
@@ -4355,12 +4344,14 @@
       "carbs": 75.4,
       "fiber": 11.3
     },
-    "dietCategory": "fish"
+    "dietCategory": "fish",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-01",
     "name": "Spaghetti mit Linsen-Gemüse-Bolognese",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 40,
     "ingredients": [
       {
@@ -4485,15 +4476,13 @@
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/fvt-03-1780871671442.jpg",
     "tags": [
       "Mealprep-geeignet",
-      "Mittagsgericht",
+      "Mittagessen",
       "Herbst",
       "Winter",
       "Kinderfreundlich",
       "Frühling",
-      "Abendgericht",
-      "Italienisch",
-      "Vegan",
-      "Vegetarisch"
+      "Abendessen",
+      "Italienisch"
     ],
     "allergens": [
       "gluten",
@@ -4508,7 +4497,9 @@
     },
     "dietCategory": "vegan",
     "imageZutaten": null,
-    "imageKochen": null
+    "imageKochen": null,
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-02",
@@ -4523,12 +4514,11 @@
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/pas-02-1780699528706.jpg",
     "tags": [
       "Mealprep-geeignet",
-      "Mittagsgericht",
+      "Mittagessen",
       "Herbst",
       "Winter",
       "Ofengericht",
-      "Abendgericht",
-      "Vegetarisch"
+      "Abendessen"
     ],
     "imageZutaten": null,
     "imageKochen": null,
@@ -4561,7 +4551,9 @@
       "Vorgang wiederholen, bis alle Zutaten aufgebraucht sind. Mit Lasagneblättern und Béchamelsauce abschliessen.",
       "Restlichen Mozzarella und Sbrinz darüberstreuen.",
       "Lasagne in Ofenmitte ca. 35–40 Minuten backen, bis Oberfläche goldbraun ist."
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-03",
@@ -4569,7 +4561,6 @@
     "category": "Aufläufe & Gratins",
     "timeMinutes": 70,
     "tags": [
-      "Vegetarisch",
       "Mealprep-geeignet",
       "Ofengericht",
       "Herbst",
@@ -4650,12 +4641,14 @@
       "carbs": 38.6,
       "fiber": 4.2
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-04",
     "name": "Pesto Genovese",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 25,
     "ingredients": [
       {
@@ -4710,10 +4703,9 @@
     "imageUrl": "/images/recipes/cuiselin-pesto-genovese.jpg",
     "imageZutaten": "/images/recipes/cuiselin-pesto-genovese-zutaten.jpg",
     "tags": [
-      "Mittagsgericht",
+      "Mittagessen",
       "Frühling",
-      "Sommer",
-      "Vegan"
+      "Sommer"
     ],
     "dietCategory": "vegan",
     "allergens": [
@@ -4726,16 +4718,16 @@
       "fat": 54.7,
       "carbs": 76.3,
       "fiber": 11.2
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-05",
     "name": "Spaghetti Napoli",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 25,
     "tags": [
-      "Vegetarisch",
-      "Vegan",
       "Italienisch"
     ],
     "weatherType": "neutral",
@@ -4793,12 +4785,14 @@
       "carbs": 81.4,
       "fiber": 6.8
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-06",
     "name": "Pilzrahmsauce",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 25,
     "ingredients": [
       {
@@ -4860,7 +4854,9 @@
       "carbs": 63.2,
       "fiber": 4.3
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-07",
@@ -4868,8 +4864,7 @@
     "category": "Aufläufe & Gratins",
     "timeMinutes": 45,
     "tags": [
-      "Vegetarisch",
-      "Schweizer",
+      "Schweizerisch",
       "Herbst",
       "Winter"
     ],
@@ -4948,7 +4943,9 @@
       "carbs": 78.6,
       "fiber": 4.5
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-08",
@@ -4996,7 +4993,7 @@
     "imageUrl": null,
     "tags": [
       "Mealprep-geeignet",
-      "Mittagsgericht",
+      "Mittagessen",
       "Ofengericht"
     ],
     "allergens": [
@@ -5010,12 +5007,14 @@
       "carbs": 63.8,
       "fiber": 5.6
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-10",
     "name": "Pasta mit Kürbissauce",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 35,
     "ingredients": [
       {
@@ -5063,7 +5062,7 @@
     "tips": "",
     "imageUrl": null,
     "tags": [
-      "Mittagsgericht",
+      "Mittagessen",
       "Herbst",
       "Winter"
     ],
@@ -5079,12 +5078,14 @@
       "fiber": 5.1
     },
     "dietCategory": "vegetarian",
-    "imageZutaten": null
+    "imageZutaten": null,
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-12",
     "name": "Spätzli mit Kürbissauce",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 40,
     "ingredients": [
       {
@@ -5139,12 +5140,14 @@
       "fiber": 3.2
     },
     "dietCategory": "vegetarian",
-    "imageZutaten": null
+    "imageZutaten": null,
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-13",
     "name": "Pasta al Limone",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 25,
     "ingredients": [
       {
@@ -5210,8 +5213,7 @@
     "tips": "Für eine cremigere Version 2 EL vegane Butter zum Schluss unterrühren. Parmesan oder Hefeflocken machen das Gericht noch aromatischer.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
-      "Mittagsgericht",
+      "Mittagessen",
       "Frühling",
       "Sommer"
     ],
@@ -5226,15 +5228,16 @@
       "fiber": 3.1
     },
     "dietCategory": "vegan",
-    "imageZutaten": null
+    "imageZutaten": null,
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-14",
     "name": "Fregola Sarda mit Sommergemüse",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 30,
     "tags": [
-      "Vegan",
       "Sommer"
     ],
     "weatherType": "warm",
@@ -5325,15 +5328,16 @@
       "fat": 6.8,
       "carbs": 68.2,
       "fiber": 8.5
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-15",
     "name": "Spaghetti mit Pfifferlingen und Cherrytomaten",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 30,
     "tags": [
-      "Vegetarisch",
       "Herbst"
     ],
     "weatherType": "neutral",
@@ -5413,12 +5417,14 @@
       "fat": 12.4,
       "carbs": 74.2,
       "fiber": 10.5
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-16",
     "name": "Vegane Linsen-Lasagne",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 100,
     "ingredients": [
       {
@@ -5539,7 +5545,6 @@
     "tips": "Die Lasagne schmeckt am nächsten Tag noch besser. Reste lassen sich gut einfrieren.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet",
       "Italienisch"
     ],
@@ -5554,12 +5559,14 @@
       "fat": 16.8,
       "carbs": 76.4,
       "fiber": 11.2
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-18",
     "name": "Vegane Spätzli mit Pilzgeschnetzeltem",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 35,
     "ingredients": [
       {
@@ -5644,8 +5651,7 @@
     "tips": "Für mehr Geschmack gemischte Pilze verwenden – z.B. Champignons mit Shiitake oder Austernpilzen.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
-      "Schweizer",
+      "Schweizerisch",
       "Herbst"
     ],
     "dietCategory": "vegan",
@@ -5659,21 +5665,21 @@
       "fat": 16.5,
       "carbs": 58.7,
       "fiber": 6.8
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-56",
     "name": "Soja-Butter-Nudeln mit grünem Spargel und Knoblauch",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 20,
     "basePortions": 1,
     "tags": [
-      "Vegetarisch",
-      "Schnell und einfach",
       "Frühling",
       "Sommer",
-      "Mittagsgericht",
-      "Abendgericht"
+      "Mittagessen",
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -5751,21 +5757,19 @@
       "gluten",
       "milch",
       "soja"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-57",
     "name": "Pasta mit Chorizo",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 15,
     "basePortions": 1,
     "tags": [
-      "Schnell und einfach",
-      "Abendgericht",
-      "Frühling",
-      "Sommer",
-      "Herbst",
-      "Winter"
+      "Abendessen",
+      "Ganzjährig"
     ],
     "ingredients": [
       {
@@ -5846,18 +5850,19 @@
     "imageKochen": null,
     "allergens": [
       "gluten"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-58",
     "name": "Nudeln mit Grünkohl, Lachs und Sojasauce",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 15,
     "basePortions": 2,
     "tags": [
       "Winter",
-      "Schnell und einfach",
-      "Abendgericht",
+      "Abendessen",
       "Asiatisch"
     ],
     "ingredients": [
@@ -5950,20 +5955,21 @@
       "gluten",
       "milch",
       "soja"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-59",
     "name": "Tagliatelle mit Champignon-Rahmsauce und Kresse",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 20,
     "basePortions": 2,
     "tags": [
-      "Vegetarisch",
       "Herbst",
       "Winter",
-      "Abendgericht",
-      "Mittagsgericht"
+      "Abendessen",
+      "Mittagessen"
     ],
     "ingredients": [
       {
@@ -6066,20 +6072,21 @@
     "allergens": [
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-60",
     "name": "Pasta e ceci - Nudeln mit Kichererbsen in Tomatensauce",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 30,
     "basePortions": 4,
     "tags": [
-      "Vegetarisch",
       "Italienisch",
       "Mealprep-geeignet",
-      "Mittagsgericht",
-      "Abendgericht"
+      "Mittagessen",
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -6168,19 +6175,21 @@
     "allergens": [
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-61",
     "name": "Tagliatelle an Thunfisch-Tomatensauce mit Oliven, Anchovies und Basilikum",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 25,
     "basePortions": 2,
     "tags": [
       "Frühling",
       "Sommer",
-      "Mittagsgericht",
-      "Abendgericht",
+      "Mittagessen",
+      "Abendessen",
       "Italienisch"
     ],
     "ingredients": [
@@ -6306,18 +6315,19 @@
       "fisch",
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-62",
     "name": "Tagliatelle an Champignon-Rahmsauce mit Hackbällchen",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 30,
     "basePortions": 2,
     "tags": [
-      "Schnell und einfach",
-      "Abendgericht",
-      "Mittagsgericht",
+      "Abendessen",
+      "Mittagessen",
       "Frühling"
     ],
     "ingredients": [
@@ -6449,20 +6459,20 @@
     "allergens": [
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-63",
     "name": "Spaghetti an Soja-Butter-Sauce mit gebratenen Champignons",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 15,
     "basePortions": 2,
     "tags": [
-      "Vegetarisch",
-      "Schnell und einfach",
       "Asiatisch",
-      "Abendgericht",
-      "Mittagsgericht",
+      "Abendessen",
+      "Mittagessen",
       "Herbst",
       "Winter"
     ],
@@ -6552,18 +6562,20 @@
       "milch",
       "sesam",
       "soja"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-64",
     "name": "Pasta mit dicken Bohnen und Katenschinken an Honig-Senf-Sauce",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 15,
     "basePortions": 2,
     "tags": [
       "Kinderfreundlich",
-      "Mittagsgericht",
-      "Abendgericht"
+      "Mittagessen",
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -6664,20 +6676,20 @@
       "milch",
       "senf",
       "weichtiere"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-65",
     "name": "Tagliatelle mit Fourme d'Ambert Sauce und gerösteten Walnüssen",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 20,
     "basePortions": 2,
     "tags": [
-      "Vegetarisch",
       "Herbst",
       "Winter",
-      "Schnell und einfach",
-      "Abendgericht",
+      "Abendessen",
       "Italienisch"
     ],
     "ingredients": [
@@ -6745,21 +6757,22 @@
       "gluten",
       "milch",
       "schalenfruechte"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-66",
     "name": "Spaghetti mit Ofen-Tomatensauce, Thymian und Parmesan",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 35,
     "basePortions": 4,
     "tags": [
-      "Vegetarisch",
       "Ofengericht",
       "Sommer",
       "Italienisch",
-      "Abendgericht",
-      "Mittagsgericht"
+      "Abendessen",
+      "Mittagessen"
     ],
     "ingredients": [
       {
@@ -6855,19 +6868,19 @@
     "allergens": [
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-67",
     "name": "Spaghetti mit Butter-Zitronen-Sauce und frittiertem Salbei",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 20,
     "basePortions": 2,
     "tags": [
-      "Vegetarisch",
-      "Schnell und einfach",
-      "Abendgericht",
-      "Mittagsgericht",
+      "Abendessen",
+      "Mittagessen",
       "Italienisch",
       "Sommer"
     ],
@@ -6957,18 +6970,19 @@
     "allergens": [
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-68",
     "name": "Spaghetti Avocado Carbonara mit Speck",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 20,
     "basePortions": 2,
     "tags": [
-      "Schnell und einfach",
-      "Abendgericht",
-      "Mittagsgericht"
+      "Abendessen",
+      "Mittagessen"
     ],
     "ingredients": [
       {
@@ -7057,17 +7071,17 @@
       "ei",
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-69",
     "name": "Tomatensauce nach Marcella Hazan",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 45,
     "basePortions": 4,
     "tags": [
-      "Vegetarisch",
-      "Schnell und einfach",
       "Italienisch",
       "Mealprep-geeignet"
     ],
@@ -7117,18 +7131,19 @@
     "imageKochen": null,
     "allergens": [
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-70",
     "name": "Würzige Spaghetti Bolognese von der Chorizo",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 40,
     "basePortions": 2.5,
     "tags": [
-      "Schnell und einfach",
-      "Abendgericht",
-      "Mittagsgericht",
+      "Abendessen",
+      "Mittagessen",
       "Italienisch",
       "Herbst",
       "Winter"
@@ -7207,19 +7222,19 @@
       "gluten",
       "milch",
       "sulfite"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-71",
     "name": "Vegetarische Carbonara mit Champignons und Schnittlauch",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 20,
     "basePortions": 2,
     "tags": [
-      "Vegetarisch",
-      "Schnell und einfach",
-      "Mittagsgericht",
-      "Abendgericht",
+      "Mittagessen",
+      "Abendessen",
       "Italienisch"
     ],
     "ingredients": [
@@ -7293,18 +7308,19 @@
       "ei",
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-72",
     "name": "Grüne Tagliatelle mit Lachsfilet an Knoblauch-Zitronen-Rahmsauce",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 15,
     "basePortions": 2,
     "tags": [
-      "Schnell und einfach",
-      "Abendgericht",
-      "Mittagsgericht",
+      "Abendessen",
+      "Mittagessen",
       "Frühling"
     ],
     "ingredients": [
@@ -7392,21 +7408,21 @@
       "fisch",
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-73",
     "name": "Spaghetti mit Bärlauch-Hüttenkäse auf marinierten Tomaten",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 20,
     "basePortions": 2,
     "tags": [
-      "Vegetarisch",
-      "Schnell und einfach",
       "Frühling",
       "Italienisch",
-      "Mittagsgericht",
-      "Abendgericht"
+      "Mittagessen",
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -7489,20 +7505,22 @@
     "allergens": [
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-74",
     "name": "Spätzle mit Hähnchenfleisch & Champignons in Rahmsauce",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 35,
     "basePortions": 2.5,
     "tags": [
       "Herbst",
       "Winter",
       "Ofengericht",
-      "Mittagsgericht",
-      "Abendgericht",
+      "Mittagessen",
+      "Abendessen",
       "Kinderfreundlich"
     ],
     "ingredients": [
@@ -7625,18 +7643,20 @@
     "allergens": [
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-75",
     "name": "Spaghetti mit Speck, Mais, Frühlingszwiebeln und Rahm",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 20,
     "basePortions": 2,
     "tags": [
       "Frühling",
-      "Mittagsgericht",
-      "Abendgericht"
+      "Mittagessen",
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -7711,18 +7731,19 @@
     "allergens": [
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-76",
     "name": "Penne mit Chorizo und Paprika",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 20,
     "basePortions": 2,
     "tags": [
-      "Schnell und einfach",
-      "Abendgericht",
-      "Mittagsgericht"
+      "Abendessen",
+      "Mittagessen"
     ],
     "ingredients": [
       {
@@ -7810,21 +7831,21 @@
     "allergens": [
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-77",
     "name": "Spaghetti mit Zoodles an Crème fraîche mit Zitrone & Schafskäse",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 15,
     "basePortions": 2,
     "tags": [
-      "Vegetarisch",
       "Frühling",
       "Sommer",
-      "Schnell und einfach",
-      "Mittagsgericht",
-      "Abendgericht"
+      "Mittagessen",
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -7915,19 +7936,20 @@
     "allergens": [
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-78",
     "name": "Schnelle Spaghetti in Tomaten-Hackfleisch Sauce mit Spinat und Fenchelsamen",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 30,
     "basePortions": 4,
     "tags": [
-      "Schnell und einfach",
       "Kinderfreundlich",
-      "Abendgericht",
-      "Mittagsgericht"
+      "Abendessen",
+      "Mittagessen"
     ],
     "ingredients": [
       {
@@ -8050,18 +8072,19 @@
     "allergens": [
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-79",
     "name": "Penne mit Brokkoli und Cabanossi in Frischkäse-Rahm Sauce",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 20,
     "basePortions": 4,
     "tags": [
-      "Schnell und einfach",
-      "Mittagsgericht",
-      "Abendgericht",
+      "Mittagessen",
+      "Abendessen",
       "Kinderfreundlich"
     ],
     "ingredients": [
@@ -8160,18 +8183,19 @@
     "allergens": [
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-80",
     "name": "Tortellini an Schinken-Mozzarella-Rahm-Sauce",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 15,
     "basePortions": 2,
     "tags": [
-      "Schnell",
       "Kinderfreundlich",
-      "Abendgericht",
+      "Abendessen",
       "Italienisch"
     ],
     "ingredients": [
@@ -8278,19 +8302,20 @@
     "imageKochen": null,
     "allergens": [
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-81",
     "name": "Gnocchi in Tomaten-Mozzarella Sauce",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 15,
     "basePortions": 4,
     "tags": [
-      "Vegetarisch",
       "Kinderfreundlich",
-      "Mittagsgericht",
-      "Abendgericht",
+      "Mittagessen",
+      "Abendessen",
       "Italienisch"
     ],
     "ingredients": [
@@ -8402,20 +8427,22 @@
     "imageKochen": null,
     "allergens": [
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-82",
     "name": "One-Pot-Pasta mit Paprika & Würstchen in Tomatensauce",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 30,
     "basePortions": 4,
     "tags": [
       "Herbst",
       "Winter",
       "Kinderfreundlich",
-      "Mittagsgericht",
-      "Abendgericht"
+      "Mittagessen",
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -8549,19 +8576,20 @@
     "allergens": [
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-84",
     "name": "Pasta gratiniert in cremiger Käse-Rahm-Sauce mit Thymian",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 25,
     "basePortions": 4,
     "tags": [
-      "Vegetarisch",
       "Ofengericht",
-      "Abendgericht",
-      "Mittagsgericht",
+      "Abendessen",
+      "Mittagessen",
       "Herbst",
       "Winter"
     ],
@@ -8682,18 +8710,18 @@
       "gluten",
       "milch",
       "sulfite"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-85",
     "name": "Anti Vampir Pasta: Spaghetti Aglio mit Petersilie & Chili",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 20,
     "basePortions": 2,
     "tags": [
-      "Vegetarisch",
-      "Schnell und einfach",
-      "Abendgericht",
+      "Abendessen",
       "Italienisch"
     ],
     "ingredients": [
@@ -8787,19 +8815,20 @@
       "ei",
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-86",
     "name": "Speedy Tomatensauce - Pasta al Pomodoro",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 35,
     "basePortions": 2,
     "tags": [
-      "Vegetarisch",
       "Italienisch",
-      "Mittagsgericht",
-      "Abendgericht"
+      "Mittagessen",
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -8911,17 +8940,19 @@
     "allergens": [
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-87",
     "name": "Farfalle mit Speck, Paprika, Erbsen & Frischkäse",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 25,
     "basePortions": 4,
     "tags": [
-      "Mittagsgericht",
-      "Abendgericht",
+      "Mittagessen",
+      "Abendessen",
       "Mealprep-geeignet"
     ],
     "ingredients": [
@@ -9018,18 +9049,20 @@
     "imageKochen": null,
     "allergens": [
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-88",
     "name": "Hackbällchen mit Parmesan-Kruste in Tomatensauce auf Spaghetti",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 30,
     "basePortions": 4,
     "tags": [
       "Kinderfreundlich",
-      "Abendgericht",
-      "Mittagsgericht",
+      "Abendessen",
+      "Mittagessen",
       "Italienisch"
     ],
     "ingredients": [
@@ -9173,19 +9206,19 @@
       "ei",
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-89",
     "name": "Tagliatelle mit glasierten Karotten in Butter-Rahm",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 30,
     "basePortions": 4,
     "tags": [
-      "Vegetarisch",
-      "Schnell und einfach",
-      "Mittagsgericht",
-      "Abendgericht"
+      "Mittagessen",
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -9284,17 +9317,19 @@
       "gluten",
       "milch",
       "schalenfruechte"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-90",
     "name": "Nudeln in Tomaten-Thunfisch-Sauce",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 20,
     "basePortions": 4,
     "tags": [
-      "Mittagsgericht",
-      "Abendgericht",
+      "Mittagessen",
+      "Abendessen",
       "Italienisch",
       "Mealprep-geeignet"
     ],
@@ -9408,21 +9443,21 @@
       "fisch",
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-91",
     "name": "Zermatschte Avocados unter körniger Spaghetti",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 20,
     "basePortions": 4,
     "tags": [
-      "Vegetarisch",
-      "Schnell und einfach",
       "Frühling",
       "Sommer",
-      "Mittagsgericht",
-      "Abendgericht"
+      "Mittagessen",
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -9520,16 +9555,16 @@
     "allergens": [
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-56",
     "name": "Zitronenrisotto",
-    "category": "Reis & Getreide",
+    "category": "Reis, Getreide & Hülsenfrüchte",
     "timeMinutes": 35,
-    "tags": [
-      "Vegetarisch"
-    ],
+    "tags": [],
     "weatherType": "warm",
     "source": "Familien-Rezeptbuch",
     "basePortions": 4,
@@ -9597,12 +9632,14 @@
       "carbs": 82.5,
       "fiber": 2.8
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fvt-10",
     "name": "Spinat-Linsen-Daal mit Vollkornreis",
-    "category": "Reis & Getreide",
+    "category": "Reis, Getreide & Hülsenfrüchte",
     "timeMinutes": 50,
     "ingredients": [
       {
@@ -9699,7 +9736,7 @@
     "imageUrl": null,
     "tags": [
       "Mealprep-geeignet",
-      "Mittagsgericht",
+      "Mittagessen",
       "Asiatisch",
       "Herbst",
       "Winter",
@@ -9715,15 +9752,17 @@
       "carbs": 68.3,
       "fiber": 12.5
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ocr-09",
     "name": "Gerstotto mit Spinat und Bündnerfleisch",
-    "category": "Reis & Getreide",
+    "category": "Reis, Getreide & Hülsenfrüchte",
     "timeMinutes": 65,
     "tags": [
-      "Schweizer"
+      "Schweizerisch"
     ],
     "weatherType": "kalt",
     "source": "Familien-Rezeptbuch (OCR)",
@@ -9808,12 +9847,14 @@
       "carbs": 64.2,
       "fiber": 9.3
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "rei-01",
     "name": "Lauchrisotto",
-    "category": "Reis & Getreide",
+    "category": "Reis, Getreide & Hülsenfrüchte",
     "timeMinutes": 40,
     "ingredients": [
       {
@@ -9875,8 +9916,7 @@
     "tags": [
       "Herbst",
       "Winter",
-      "Frühling",
-      "Vegan"
+      "Frühling"
     ],
     "dietCategory": "vegan",
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---rei-01-2--1780577648794.jpeg",
@@ -9890,12 +9930,14 @@
       "fat": 13.8,
       "carbs": 73.6,
       "fiber": 3.8
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "rei-02",
     "name": "Risotto mit Ofengemüse",
-    "category": "Reis & Getreide",
+    "category": "Reis, Getreide & Hülsenfrüchte",
     "timeMinutes": 60,
     "ingredients": [
       {
@@ -9956,7 +9998,9 @@
       "carbs": 65.4,
       "fiber": 5.2
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "rei-03",
@@ -10022,7 +10066,7 @@
     "imageUrl": null,
     "tags": [
       "Mealprep-geeignet",
-      "Mittagsgericht",
+      "Mittagessen",
       "Asiatisch"
     ],
     "allergens": [
@@ -10035,7 +10079,9 @@
       "carbs": 89.2,
       "fiber": 10.3
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "rei-04",
@@ -10089,7 +10135,7 @@
     "imageUrl": null,
     "tags": [
       "Mealprep-geeignet",
-      "Mittagsgericht",
+      "Mittagessen",
       "Frühling",
       "Sommer"
     ],
@@ -10103,7 +10149,9 @@
       "carbs": 68.2,
       "fiber": 12.6
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "rei-05",
@@ -10111,8 +10159,6 @@
     "category": "Salate & Bowls",
     "timeMinutes": 20,
     "tags": [
-      "Vegetarisch",
-      "Vegan",
       "Mexikanisch"
     ],
     "weatherType": "warm",
@@ -10187,12 +10233,14 @@
       "carbs": 58.4,
       "fiber": 11.2
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "rei-06",
     "name": "Linsen-Reis",
-    "category": "Reis & Getreide",
+    "category": "Reis, Getreide & Hülsenfrüchte",
     "timeMinutes": 40,
     "ingredients": [
       {
@@ -10272,8 +10320,7 @@
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---rei-06-1--1780577735944.jpeg",
     "tags": [
       "Mealprep-geeignet",
-      "Mittagsgericht",
-      "Vegan"
+      "Mittagessen"
     ],
     "dietCategory": "vegan",
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---rei-06-2--1780577746940.jpeg",
@@ -10284,7 +10331,9 @@
       "fat": 14.8,
       "carbs": 98.6,
       "fiber": 12.4
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "rei-07",
@@ -10380,9 +10429,8 @@
     "tips": "Mit Koriander und einer Scheibe Limette garnieren. Am nächsten Tag schmeckt das Curry noch besser — ideal für Meal-Prep.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet",
-      "Mittagsgericht",
+      "Mittagessen",
       "Herbst",
       "Winter"
     ],
@@ -10398,15 +10446,16 @@
       "fiber": 11.8
     },
     "dietCategory": "vegan",
-    "imageZutaten": null
+    "imageZutaten": null,
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "rei-08",
     "name": "Gerösteter Rosenkohl mit Risotto",
-    "category": "Reis & Getreide",
+    "category": "Reis, Getreide & Hülsenfrüchte",
     "timeMinutes": 40,
     "tags": [
-      "Vegan",
       "Herbst",
       "Winter"
     ],
@@ -10498,16 +10547,16 @@
       "fat": 21.6,
       "carbs": 76.4,
       "fiber": 8.2
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "rei-09",
     "name": "Hirse-Gemüse-Pfanne mit Räuchertofu",
-    "category": "Reis & Getreide",
+    "category": "Reis, Getreide & Hülsenfrüchte",
     "timeMinutes": 35,
-    "tags": [
-      "Vegan"
-    ],
+    "tags": [],
     "weatherType": "neutral",
     "source": "Cuiseline",
     "basePortions": 4,
@@ -10595,18 +10644,19 @@
       "fat": 15.8,
       "carbs": 64.2,
       "fiber": 10.6
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "rei-57",
     "name": "Knuspriges Hackfleisch auf gebratenem Reis mit Gemüse",
-    "category": "Reis & Getreide",
+    "category": "Reis, Getreide & Hülsenfrüchte",
     "timeMinutes": 25,
     "basePortions": 4,
     "tags": [
-      "Schnell und einfach",
-      "Mittagsgericht",
-      "Abendgericht"
+      "Mittagessen",
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -10719,7 +10769,9 @@
     "imageKochen": null,
     "allergens": [
       "sesam"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ein-01",
@@ -10803,11 +10855,10 @@
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ein-01-1--1780579129751.jpeg",
     "tags": [
       "Mealprep-geeignet",
-      "Mittagsgericht",
+      "Mittagessen",
       "Herbst",
       "Winter",
-      "Mexikanisch",
-      "Vegan"
+      "Mexikanisch"
     ],
     "dietCategory": "vegan",
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ein-01-2--1780579145821.jpeg",
@@ -10820,12 +10871,14 @@
       "fat": 9.4,
       "carbs": 52.8,
       "fiber": 14.2
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ein-02",
     "name": "Urdinkelkernotto mit Kohlrabi & Lauch",
-    "category": "Reis & Getreide",
+    "category": "Reis, Getreide & Hülsenfrüchte",
     "timeMinutes": 50,
     "ingredients": [
       {
@@ -10885,12 +10938,14 @@
       "fiber": 8.5
     },
     "dietCategory": "vegetarian",
-    "imageZutaten": null
+    "imageZutaten": null,
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ein-03",
     "name": "Urdinkelkernotto mit Tomate und weissen Bohnen",
-    "category": "Reis & Getreide",
+    "category": "Reis, Getreide & Hülsenfrüchte",
     "timeMinutes": 50,
     "ingredients": [
       {
@@ -10950,12 +11005,14 @@
       "fiber": 12.3
     },
     "dietCategory": "vegetarian",
-    "imageZutaten": null
+    "imageZutaten": null,
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ein-04",
     "name": "Ebly mit Tomaten, Räuchertofu & Sauerkraut",
-    "category": "Reis & Getreide",
+    "category": "Reis, Getreide & Hülsenfrüchte",
     "timeMinutes": 35,
     "ingredients": [
       {
@@ -10997,9 +11054,8 @@
     "tips": "",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet",
-      "Mittagsgericht",
+      "Mittagessen",
       "Herbst",
       "Winter"
     ],
@@ -11015,7 +11071,9 @@
       "fiber": 8.9
     },
     "dietCategory": "vegan",
-    "imageZutaten": null
+    "imageZutaten": null,
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ein-05",
@@ -11068,7 +11126,6 @@
     "tips": "",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ein-05--1780579170085.jpeg",
     "tags": [
-      "Vegan",
       "Herbst",
       "Winter",
       "Ofengericht"
@@ -11085,7 +11142,9 @@
       "fiber": 7.2
     },
     "dietCategory": "vegan",
-    "imageZutaten": null
+    "imageZutaten": null,
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ein-06",
@@ -11187,10 +11246,9 @@
     "tips": "Schmeckt am nächsten Tag noch besser. Dazu passt Harissa und eine Scheibe Zitrone. Für Fleischesser: 500g Lammwürfel mit den Zwiebeln anbraten.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet",
-      "Mittagsgericht",
-      "Orientalisch",
+      "Mittagessen",
+      "Nahöstlich",
       "Herbst",
       "Winter"
     ],
@@ -11205,7 +11263,9 @@
       "fiber": 15.7
     },
     "dietCategory": "vegan",
-    "imageZutaten": null
+    "imageZutaten": null,
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ein-07",
@@ -11295,7 +11355,6 @@
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ein-07-1780699772589.jpg",
     "tags": [
-      "Vegetarisch",
       "Mealprep-geeignet",
       "Italienisch"
     ],
@@ -11312,7 +11371,9 @@
       "carbs": 68.4,
       "fiber": 5.6
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ein-09",
@@ -11426,7 +11487,6 @@
     "tips": "Das Curry schmeckt am nächsten Tag noch besser. Gut eingefroren hält es sich 3 Monate.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet",
       "Herbst",
       "Winter"
@@ -11441,7 +11501,9 @@
       "fat": 18.2,
       "carbs": 48.6,
       "fiber": 8.9
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ein-10",
@@ -11544,9 +11606,8 @@
     "tips": "Beluga-Linsen müssen nicht eingeweicht werden und behalten ihre Form beim Kochen.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet",
-      "Orientalisch"
+      "Nahöstlich"
     ],
     "dietCategory": "vegan",
     "allergens": [
@@ -11558,7 +11619,9 @@
       "fat": 18.6,
       "carbs": 62.8,
       "fiber": 16.2
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ein-11",
@@ -11654,9 +11717,8 @@
     "tips": "Wer keine Zeit hat zum Einweichen, kocht die Bohnen direkt aber ca. 20 Min. länger.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet",
-      "Orientalisch"
+      "Nahöstlich"
     ],
     "dietCategory": "vegan",
     "allergens": [
@@ -11668,7 +11730,9 @@
       "fat": 22.4,
       "carbs": 42.8,
       "fiber": 12.4
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ein-12",
@@ -11763,7 +11827,6 @@
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ein-12-1780778294972.jpg",
     "tags": [
-      "Vegan",
       "Mealprep-geeignet",
       "Herbst"
     ],
@@ -11781,7 +11844,9 @@
     },
     "imageZutaten": null,
     "imageKochen": null,
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ein-13",
@@ -11883,9 +11948,8 @@
     "tips": "Mit Naan, Basmatireis oder Vollkornbrot servieren. Nach Belieben mit frischem Koriander garnieren.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet",
-      "Orientalisch"
+      "Nahöstlich"
     ],
     "dietCategory": "vegan",
     "allergens": [
@@ -11897,7 +11961,9 @@
       "fat": 13.8,
       "carbs": 41.5,
       "fiber": 8.4
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ein-16",
@@ -12000,8 +12066,7 @@
     "tips": "Das Gratin kann auch am Vortag vorbereitet und im Kühlschrank aufbewahrt werden.",
     "imageUrl": null,
     "tags": [
-      "Vegetarisch",
-      "Schweizer",
+      "Schweizerisch",
       "Winter",
       "Herbst"
     ],
@@ -12016,7 +12081,9 @@
       "fat": 30.4,
       "carbs": 52.6,
       "fiber": 6.8
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ein-17",
@@ -12115,7 +12182,7 @@
     "tags": [
       "Herbst",
       "Winter",
-      "Schweizer"
+      "Schweizerisch"
     ],
     "dietCategory": "meat",
     "allergens": [
@@ -12128,7 +12195,9 @@
       "fat": 25.6,
       "carbs": 48.3,
       "fiber": 6.5
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-09",
@@ -12234,16 +12303,16 @@
       "carbs": 62.4,
       "fiber": 3.8
     },
-    "dietCategory": "meat"
+    "dietCategory": "meat",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-20",
     "name": "Hörnligratin mit Räuchertofu, Lauch, Erbsen und Broccoli",
     "category": "Aufläufe & Gratins",
     "timeMinutes": 45,
-    "tags": [
-      "Vegetarisch"
-    ],
+    "tags": [],
     "weatherType": "kalt",
     "source": "Familien-Rezeptbuch",
     "basePortions": 6,
@@ -12363,7 +12432,9 @@
       "carbs": 64.7,
       "fiber": 6.2
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fvt-02",
@@ -12471,7 +12542,7 @@
     "imageUrl": null,
     "tags": [
       "Mealprep-geeignet",
-      "Mittagsgericht",
+      "Mittagessen",
       "Herbst",
       "Winter"
     ],
@@ -12483,7 +12554,9 @@
       "carbs": 58.4,
       "fiber": 12.6
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ocr-05",
@@ -12569,16 +12642,16 @@
       "carbs": 12.6,
       "fiber": 4.2
     },
-    "dietCategory": "meat"
+    "dietCategory": "meat",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ocr-12",
     "name": "Gnocchi-Gratin mit Basilikumsauce",
     "category": "Aufläufe & Gratins",
     "timeMinutes": 35,
-    "tags": [
-      "Vegetarisch"
-    ],
+    "tags": [],
     "weatherType": "kalt",
     "source": "Familien-Rezeptbuch (OCR)",
     "basePortions": 4,
@@ -12649,7 +12722,9 @@
       "carbs": 56.3,
       "fiber": 4.1
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-01",
@@ -12657,7 +12732,6 @@
     "category": "Suppen, Eintöpfe & Currys",
     "timeMinutes": 20,
     "tags": [
-      "Vegetarisch",
       "Frühling"
     ],
     "weatherType": "warm",
@@ -12729,16 +12803,16 @@
       "fat": 11.4,
       "carbs": 15.8,
       "fiber": 2.4
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-13",
     "name": "Einlaufsuppe",
     "category": "Suppen, Eintöpfe & Currys",
     "timeMinutes": 20,
-    "tags": [
-      "Vegetarisch"
-    ],
+    "tags": [],
     "weatherType": "kalt",
     "source": "Familien-Rezeptbuch",
     "basePortions": 4,
@@ -12803,7 +12877,9 @@
       "carbs": 9.6,
       "fiber": 0.3
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-48",
@@ -12811,8 +12887,7 @@
     "category": "Suppen, Eintöpfe & Currys",
     "timeMinutes": 20,
     "tags": [
-      "Vegetarisch",
-      "Schweizer"
+      "Schweizerisch"
     ],
     "weatherType": "kalt",
     "source": "Familien-Rezeptbuch",
@@ -12888,17 +12963,16 @@
       "carbs": 18.5,
       "fiber": 2.1
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-49",
     "name": "Tomatensuppe",
     "category": "Suppen, Eintöpfe & Currys",
     "timeMinutes": 20,
-    "tags": [
-      "Vegetarisch",
-      "Vegan"
-    ],
+    "tags": [],
     "weatherType": "kalt",
     "source": "Familien-Rezeptbuch",
     "basePortions": 4,
@@ -12978,7 +13052,9 @@
       "carbs": 14.2,
       "fiber": 3.1
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fvt-07",
@@ -13080,7 +13156,7 @@
     "imageUrl": null,
     "tags": [
       "Mealprep-geeignet",
-      "Mittagsgericht",
+      "Mittagessen",
       "Herbst",
       "Winter",
       "Frühling"
@@ -13095,7 +13171,9 @@
       "carbs": 61.4,
       "fiber": 13.2
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sup-01",
@@ -13155,13 +13233,11 @@
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/8974f249-b14f-4b36-81d7-a62b25046c65-1780948312054.jpg",
     "tags": [
       "Mealprep-geeignet",
-      "Mittagsgericht",
+      "Mittagessen",
       "Herbst",
       "Winter",
-      "Vegan",
       "Kinderfreundlich",
-      "Abendgericht",
-      "Vegetarisch"
+      "Abendessen"
     ],
     "dietCategory": "vegan",
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---sup-01-2-ku-rbis-kokos-suppe--1780579300744.jpeg",
@@ -13175,7 +13251,9 @@
       "carbs": 38.6,
       "fiber": 5.8
     },
-    "imageKochen": null
+    "imageKochen": null,
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sup-02",
@@ -13183,8 +13261,6 @@
     "category": "Suppen, Eintöpfe & Currys",
     "timeMinutes": 70,
     "tags": [
-      "Vegetarisch",
-      "Vegan",
       "Italienisch"
     ],
     "weatherType": "kalt",
@@ -13267,7 +13343,9 @@
       "fat": 10.8,
       "carbs": 38.5,
       "fiber": 9.2
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sup-03",
@@ -13321,10 +13399,10 @@
     "imageUrl": null,
     "tags": [
       "Mealprep-geeignet",
-      "Mittagsgericht",
+      "Mittagessen",
       "Herbst",
       "Winter",
-      "Schweizer"
+      "Schweizerisch"
     ],
     "allergens": [
       "gluten",
@@ -13338,7 +13416,9 @@
       "fiber": 7.5
     },
     "dietCategory": "vegetarian",
-    "imageZutaten": null
+    "imageZutaten": null,
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sup-04",
@@ -13386,7 +13466,7 @@
     "imageUrl": null,
     "tags": [
       "Mealprep-geeignet",
-      "Mittagsgericht",
+      "Mittagessen",
       "Herbst",
       "Winter"
     ],
@@ -13398,7 +13478,9 @@
       "carbs": 49.2,
       "fiber": 16.8
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sup-05",
@@ -13444,7 +13526,7 @@
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/sup-05-1780777992254.jpg",
     "tags": [
       "Mealprep-geeignet",
-      "Mittagsgericht",
+      "Mittagessen",
       "Herbst",
       "Winter"
     ],
@@ -13460,7 +13542,9 @@
     },
     "imageZutaten": null,
     "imageKochen": null,
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sup-06",
@@ -13537,9 +13621,8 @@
     "tips": "Mit frischen Sommertomaten aus dem Garten schmeckt die Suppe noch besser. Wer es etwas schärfer mag, gibt eine Prise Chiliflocken dazu.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet",
-      "Mittagsgericht",
+      "Mittagessen",
       "Sommer",
       "Herbst"
     ],
@@ -13554,7 +13637,9 @@
       "fiber": 3.8
     },
     "dietCategory": "vegan",
-    "imageZutaten": null
+    "imageZutaten": null,
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sup-07",
@@ -13562,7 +13647,6 @@
     "category": "Suppen, Eintöpfe & Currys",
     "timeMinutes": 35,
     "tags": [
-      "Vegan",
       "Herbst",
       "Winter"
     ],
@@ -13655,7 +13739,9 @@
       "fat": 18.4,
       "carbs": 37.8,
       "fiber": 10.5
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sup-08",
@@ -13663,7 +13749,6 @@
     "category": "Suppen, Eintöpfe & Currys",
     "timeMinutes": 40,
     "tags": [
-      "Vegan",
       "Herbst"
     ],
     "weatherType": "kalt",
@@ -13765,7 +13850,9 @@
       "fat": 24.6,
       "carbs": 51.2,
       "fiber": 8.9
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sup-09",
@@ -13856,10 +13943,9 @@
     "tips": "Die Hirse gut abspülen, damit der leicht bittere Geschmack entfernt wird. Die Suppe schmeckt am nächsten Tag noch besser.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet",
       "Winter",
-      "Mittagsgericht"
+      "Mittagessen"
     ],
     "dietCategory": "vegan",
     "allergens": [
@@ -13871,7 +13957,9 @@
       "fat": 8.9,
       "carbs": 50.3,
       "fiber": 7.2
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sup-11",
@@ -13990,9 +14078,8 @@
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/sup-11-1780778392802.jpg",
     "tags": [
-      "Vegan",
       "Mealprep-geeignet",
-      "Orientalisch",
+      "Nahöstlich",
       "Winter"
     ],
     "allergens": [
@@ -14007,7 +14094,9 @@
     },
     "imageZutaten": null,
     "imageKochen": null,
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sup-12",
@@ -14115,9 +14204,8 @@
     "tips": "Schmeckt auch mit Tortillachips als Einlage. Schärfe über die Menge Tex Mex Spice Mix steuern.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mexikanisch",
-      "Mittagsgericht"
+      "Mittagessen"
     ],
     "dietCategory": "vegan",
     "allergens": [
@@ -14130,7 +14218,9 @@
       "fat": 6.8,
       "carbs": 49.2,
       "fiber": 11.8
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sup-13",
@@ -14225,9 +14315,8 @@
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/sup-13-1780778603969.jpg",
     "tags": [
-      "Vegan",
       "Mealprep-geeignet",
-      "Orientalisch",
+      "Nahöstlich",
       "Winter"
     ],
     "allergens": [],
@@ -14240,7 +14329,9 @@
     },
     "imageZutaten": null,
     "imageKochen": null,
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sup-14",
@@ -14354,9 +14445,8 @@
     "tips": "Wer möchte, kann die Suppe mit Feta und Limette verfeinern.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet",
-      "Orientalisch",
+      "Nahöstlich",
       "Winter"
     ],
     "dietCategory": "vegan",
@@ -14369,7 +14459,9 @@
       "fat": 23.1,
       "carbs": 48.7,
       "fiber": 9.8
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sup-15",
@@ -14458,9 +14550,8 @@
     "tips": "Ras el-Hanout gibt der Suppe die typisch marokkanische Note. Erhältlich in gut sortierten Supermärkten.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet",
-      "Orientalisch",
+      "Nahöstlich",
       "Winter"
     ],
     "dietCategory": "vegan",
@@ -14473,7 +14564,9 @@
       "fat": 9.2,
       "carbs": 29.8,
       "fiber": 8.4
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sup-17",
@@ -14576,7 +14669,6 @@
     "tips": "Das Gemüse je nach Saison variieren – z.B. Fenchel im Herbst, Spinat im Frühling.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet",
       "Herbst",
       "Winter"
@@ -14591,7 +14683,9 @@
       "fat": 7.6,
       "carbs": 44.8,
       "fiber": 11.4
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sup-18",
@@ -14681,9 +14775,8 @@
     ],
     "imageUrl": "blob:https://mahlzeit.o-v-k.ch/a5131c8c-cf1b-43a3-b522-90cc1c067010",
     "tags": [
-      "Vegetarisch",
       "Herbst",
-      "Schweizer"
+      "Schweizerisch"
     ],
     "allergens": [
       "milch"
@@ -14697,7 +14790,9 @@
     },
     "imageZutaten": null,
     "imageKochen": null,
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sup-19",
@@ -14808,9 +14903,8 @@
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/soup-19-1780779512383.jpg",
     "tags": [
-      "Vegan",
       "Sommer",
-      "Mittagsgericht"
+      "Mittagessen"
     ],
     "allergens": [
       "milch",
@@ -14826,7 +14920,9 @@
     },
     "imageZutaten": null,
     "imageKochen": null,
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sup-51",
@@ -14837,8 +14933,8 @@
     "tags": [
       "Winter",
       "Herbst",
-      "Mittagsgericht",
-      "Abendgericht"
+      "Mittagessen",
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -14972,7 +15068,9 @@
       "milch",
       "sellerie",
       "sulfite"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sup-52",
@@ -14983,8 +15081,8 @@
     "tags": [
       "Herbst",
       "Winter",
-      "Mittagsgericht",
-      "Abendgericht",
+      "Mittagessen",
+      "Abendessen",
       "Mealprep-geeignet",
       "Kinderfreundlich"
     ],
@@ -15080,7 +15178,9 @@
     "imageUrl": "https://herrbuettner.de/wp-content/uploads/2019/10/Karotten_Kartoffel_Erbsen_Suppe_mit_Hackbaellchen.jpg",
     "imageZutaten": null,
     "imageKochen": null,
-    "allergens": []
+    "allergens": [],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sup-53",
@@ -15092,8 +15192,8 @@
       "Frühling",
       "Herbst",
       "Winter",
-      "Mittagsgericht",
-      "Abendgericht"
+      "Mittagessen",
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -15196,7 +15296,9 @@
     "imageKochen": null,
     "allergens": [
       "sulfite"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sup-54",
@@ -15206,7 +15308,6 @@
     "basePortions": 4,
     "tags": [
       "Herbst",
-      "Einfach",
       "Ofengericht"
     ],
     "ingredients": [
@@ -15308,7 +15409,9 @@
     "allergens": [
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sup-55",
@@ -15320,8 +15423,8 @@
       "Sommer",
       "Herbst",
       "Winter",
-      "Mittagsgericht",
-      "Abendgericht"
+      "Mittagessen",
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -15431,7 +15534,9 @@
     "imageKochen": null,
     "allergens": [
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sup-56",
@@ -15441,8 +15546,8 @@
     "basePortions": 4,
     "tags": [
       "Sommer",
-      "Abendgericht",
-      "Mittagsgericht"
+      "Abendessen",
+      "Mittagessen"
     ],
     "ingredients": [
       {
@@ -15576,7 +15681,9 @@
       "fisch",
       "milch",
       "schalenfruechte"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sup-57",
@@ -15587,8 +15694,8 @@
     "tags": [
       "Herbst",
       "Winter",
-      "Mittagsgericht",
-      "Abendgericht"
+      "Mittagessen",
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -15699,7 +15806,9 @@
     "imageKochen": null,
     "allergens": [
       "sellerie"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sup-58",
@@ -15708,12 +15817,9 @@
     "timeMinutes": 30,
     "basePortions": 4,
     "tags": [
-      "Vegan",
-      "Vegetarisch",
-      "Schnell und einfach",
       "Asiatisch",
       "Mealprep-geeignet",
-      "Abendgericht"
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -15819,7 +15925,9 @@
     "imageKochen": null,
     "allergens": [
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sup-59",
@@ -15828,8 +15936,7 @@
     "timeMinutes": 40,
     "basePortions": 4,
     "tags": [
-      "Vegetarisch",
-      "Winterzeit",
+      "Winter",
       "Herbst",
       "Ofengericht"
     ],
@@ -15951,7 +16058,9 @@
     "allergens": [
       "milch",
       "schalenfruechte"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sup-60",
@@ -15960,10 +16069,8 @@
     "timeMinutes": 45,
     "basePortions": 6,
     "tags": [
-      "Vegan",
-      "Winterzeit",
-      "Herbst",
       "Winter",
+      "Herbst",
       "Ofengericht"
     ],
     "ingredients": [
@@ -16069,7 +16176,9 @@
     "allergens": [
       "milch",
       "schalenfruechte"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sup-61",
@@ -16078,11 +16187,8 @@
     "timeMinutes": 30,
     "basePortions": 2,
     "tags": [
-      "Vegan",
-      "Vegetarisch",
       "Asiatisch",
-      "Schnell und einfach",
-      "Abendgericht"
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -16236,7 +16342,9 @@
       "gluten",
       "milch",
       "senf"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sup-62",
@@ -16248,8 +16356,8 @@
       "Herbst",
       "Winter",
       "Italienisch",
-      "Mittagsgericht",
-      "Abendgericht"
+      "Mittagessen",
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -16479,7 +16587,9 @@
       "gluten",
       "sellerie",
       "weichtiere"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sup-63",
@@ -16490,8 +16600,8 @@
     "tags": [
       "Herbst",
       "Winter",
-      "Mittagsgericht",
-      "Abendgericht"
+      "Mittagessen",
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -16625,16 +16735,16 @@
     "imageKochen": null,
     "allergens": [
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-02",
     "name": "Birnen-Rucola-Salat mit Feta",
     "category": "Salate & Bowls",
     "timeMinutes": 15,
-    "tags": [
-      "Vegetarisch"
-    ],
+    "tags": [],
     "weatherType": "warm",
     "source": "Familien-Rezeptbuch",
     "basePortions": 2,
@@ -16722,17 +16832,16 @@
       "carbs": 16.8,
       "fiber": 4.2
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-05",
     "name": "Bohnensalat",
     "category": "Salate & Bowls",
     "timeMinutes": 40,
-    "tags": [
-      "Vegetarisch",
-      "Vegan"
-    ],
+    "tags": [],
     "weatherType": "warm",
     "source": "Familien-Rezeptbuch",
     "basePortions": 4,
@@ -16811,17 +16920,16 @@
       "carbs": 11.5,
       "fiber": 7.2
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-10",
     "name": "Couscoussalat",
     "category": "Salate & Bowls",
     "timeMinutes": 20,
-    "tags": [
-      "Vegetarisch",
-      "Vegan"
-    ],
+    "tags": [],
     "weatherType": "warm",
     "source": "Familien-Rezeptbuch",
     "basePortions": 4,
@@ -16914,16 +17022,16 @@
       "carbs": 57.6,
       "fiber": 7.8
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-27",
     "name": "Maissalat",
     "category": "Salate & Bowls",
     "timeMinutes": 10,
-    "tags": [
-      "Vegetarisch"
-    ],
+    "tags": [],
     "weatherType": "warm",
     "source": "Familien-Rezeptbuch",
     "basePortions": 4,
@@ -16998,17 +17106,16 @@
       "carbs": 18.2,
       "fiber": 2.4
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-31",
     "name": "Orangen-Randensalat",
     "category": "Salate & Bowls",
     "timeMinutes": 15,
-    "tags": [
-      "Vegetarisch",
-      "Vegan"
-    ],
+    "tags": [],
     "weatherType": "neutral",
     "source": "Familien-Rezeptbuch",
     "basePortions": 4,
@@ -17088,17 +17195,16 @@
       "carbs": 17.5,
       "fiber": 4.1
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-33",
     "name": "Randensalat",
     "category": "Salate & Bowls",
     "timeMinutes": 15,
-    "tags": [
-      "Vegetarisch",
-      "Vegan"
-    ],
+    "tags": [],
     "weatherType": "neutral",
     "source": "Familien-Rezeptbuch",
     "basePortions": 4,
@@ -17172,16 +17278,16 @@
       "carbs": 12.4,
       "fiber": 3.8
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-35",
     "name": "Reissalat à la Céline",
     "category": "Salate & Bowls",
     "timeMinutes": 15,
-    "tags": [
-      "Vegetarisch"
-    ],
+    "tags": [],
     "weatherType": "warm",
     "source": "Familien-Rezeptbuch",
     "basePortions": 4,
@@ -17280,17 +17386,16 @@
       "carbs": 44.2,
       "fiber": 4.6
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-37",
     "name": "Rüeblisalat",
     "category": "Salate & Bowls",
     "timeMinutes": 15,
-    "tags": [
-      "Vegetarisch",
-      "Vegan"
-    ],
+    "tags": [],
     "weatherType": "warm",
     "source": "Familien-Rezeptbuch",
     "basePortions": 4,
@@ -17338,16 +17443,16 @@
       "carbs": 16.2,
       "fiber": 7.8
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-42",
     "name": "Teigwaren-Salat",
     "category": "Salate & Bowls",
     "timeMinutes": 20,
-    "tags": [
-      "Vegetarisch"
-    ],
+    "tags": [],
     "weatherType": "warm",
     "source": "Familien-Rezeptbuch",
     "basePortions": 4,
@@ -17447,7 +17552,9 @@
       "carbs": 39.5,
       "fiber": 2.8
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-44",
@@ -17535,7 +17642,9 @@
       "carbs": 3.8,
       "fiber": 0.4
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-53",
@@ -17642,7 +17751,9 @@
       "carbs": 8.2,
       "fiber": 1.8
     },
-    "dietCategory": "meat"
+    "dietCategory": "meat",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sal-01",
@@ -17688,7 +17799,7 @@
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/sal-01-1780782118051.jpg",
     "tags": [
       "Mealprep-geeignet",
-      "Mittagsgericht",
+      "Mittagessen",
       "Frühling",
       "Sommer"
     ],
@@ -17704,7 +17815,9 @@
     },
     "imageZutaten": null,
     "imageKochen": null,
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sal-03",
@@ -17783,11 +17896,10 @@
     "imageZutaten": "/images/recipes/cuiselin-taboule-zutaten.jpeg",
     "tags": [
       "Mealprep-geeignet",
-      "Mittagsgericht",
+      "Mittagessen",
       "Frühling",
       "Sommer",
-      "Orientalisch",
-      "Vegan"
+      "Nahöstlich"
     ],
     "dietCategory": "vegan",
     "allergens": [
@@ -17799,17 +17911,16 @@
       "fat": 18.5,
       "carbs": 48.3,
       "fiber": 7.2
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sal-04",
     "name": "Kichererbsensalat",
     "category": "Salate & Bowls",
     "timeMinutes": 15,
-    "tags": [
-      "Vegetarisch",
-      "Vegan"
-    ],
+    "tags": [],
     "weatherType": "warm",
     "source": "Cuiseline",
     "basePortions": 4,
@@ -17892,7 +18003,9 @@
       "fat": 14.2,
       "carbs": 26.5,
       "fiber": 7.5
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sal-05",
@@ -17952,7 +18065,7 @@
     "imageUrl": null,
     "tags": [
       "Mealprep-geeignet",
-      "Mittagsgericht",
+      "Mittagessen",
       "Frühling",
       "Sommer"
     ],
@@ -17965,7 +18078,9 @@
       "fiber": 11.2
     },
     "dietCategory": "vegetarian",
-    "imageZutaten": null
+    "imageZutaten": null,
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sal-06",
@@ -18012,8 +18127,8 @@
     "tips": "",
     "imageUrl": null,
     "tags": [
-      "Mittagsgericht",
-      "Schweizer"
+      "Mittagessen",
+      "Schweizerisch"
     ],
     "allergens": [
       "ei",
@@ -18027,7 +18142,9 @@
       "fiber": 4.5
     },
     "dietCategory": "vegetarian",
-    "imageZutaten": null
+    "imageZutaten": null,
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sal-08",
@@ -18116,9 +18233,8 @@
     "tips": "Für Meal-Prep alle Komponenten separat aufbewahren und erst vor dem Essen zusammenstellen. Hält im Kühlschrank 3 Tage.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet",
-      "Mittagsgericht"
+      "Mittagessen"
     ],
     "allergens": [
       "sesam"
@@ -18131,7 +18247,9 @@
       "fiber": 13.2
     },
     "dietCategory": "vegan",
-    "imageZutaten": null
+    "imageZutaten": null,
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sal-10",
@@ -18139,7 +18257,6 @@
     "category": "Salate & Bowls",
     "timeMinutes": 15,
     "tags": [
-      "Vegan",
       "Sommer"
     ],
     "weatherType": "warm",
@@ -18231,7 +18348,9 @@
       "carbs": 28.6,
       "fiber": 3.9
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sal-11",
@@ -18239,7 +18358,6 @@
     "category": "Salate & Bowls",
     "timeMinutes": 10,
     "tags": [
-      "Vegan",
       "Sommer"
     ],
     "weatherType": "warm",
@@ -18306,7 +18424,9 @@
       "fat": 4.2,
       "carbs": 5.9,
       "fiber": 1.4
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sal-12",
@@ -18314,7 +18434,6 @@
     "category": "Salate & Bowls",
     "timeMinutes": 25,
     "tags": [
-      "Vegan",
       "Herbst"
     ],
     "weatherType": "neutral",
@@ -18409,7 +18528,9 @@
       "fat": 16.8,
       "carbs": 45.3,
       "fiber": 11.8
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sal-13",
@@ -18508,13 +18629,12 @@
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/sal-13-1780782771480.jpg",
     "tags": [
-      "Vegetarisch",
       "Sommer",
-      "Mittagsgericht",
+      "Mittagessen",
       "Frühling",
       "Herbst",
       "Grillgericht",
-      "Abendgericht"
+      "Abendessen"
     ],
     "allergens": [
       "milch",
@@ -18529,7 +18649,9 @@
     },
     "imageZutaten": null,
     "imageKochen": null,
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sal-14",
@@ -18600,8 +18722,7 @@
     "tips": "Kala Namak (schwarzes Schwefelsalz) gibt dem Salat den typischen Eier-Geschmack und ist in Bioläden oder online erhältlich.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
-      "Mittagsgericht"
+      "Mittagessen"
     ],
     "dietCategory": "vegan",
     "allergens": [
@@ -18613,7 +18734,9 @@
       "fat": 21.6,
       "carbs": 30.2,
       "fiber": 5.8
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sal-15",
@@ -18706,9 +18829,8 @@
     "tips": "Das Dressing erst kurz vor dem Servieren untermischen, damit der Salat knackig bleibt.",
     "imageUrl": null,
     "tags": [
-      "Vegetarisch",
       "Frühling",
-      "Mittagsgericht"
+      "Mittagessen"
     ],
     "dietCategory": "vegetarian",
     "allergens": [
@@ -18722,7 +18844,9 @@
       "fat": 14.8,
       "carbs": 17.2,
       "fiber": 3.6
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sal-16",
@@ -18800,7 +18924,6 @@
     "tips": "Den Labneh unbedingt am Vortag vorbereiten. Je länger er abtropft, desto fester und aromatischer wird er.",
     "imageUrl": null,
     "tags": [
-      "Vegetarisch",
       "Winter",
       "Herbst"
     ],
@@ -18815,7 +18938,9 @@
       "fat": 14.2,
       "carbs": 32.4,
       "fiber": 6.8
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sal-54",
@@ -18824,9 +18949,7 @@
     "timeMinutes": 20,
     "basePortions": 4,
     "tags": [
-      "Vegetarisch",
-      "Herbst",
-      "Schnell und einfach"
+      "Herbst"
     ],
     "ingredients": [
       {
@@ -18934,7 +19057,9 @@
     "allergens": [
       "milch",
       "schalenfruechte"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sal-55",
@@ -18944,8 +19069,8 @@
     "basePortions": 4,
     "tags": [
       "Sommer",
-      "Abendgericht",
-      "Mittagsgericht"
+      "Abendessen",
+      "Mittagessen"
     ],
     "ingredients": [
       {
@@ -19035,7 +19160,9 @@
       "ei",
       "fisch",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sal-56",
@@ -19045,8 +19172,8 @@
     "basePortions": 2,
     "tags": [
       "Sommer",
-      "Mittagsgericht",
-      "Abendgericht"
+      "Mittagessen",
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -19148,7 +19275,9 @@
       "fisch",
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sal-57",
@@ -19157,9 +19286,7 @@
     "timeMinutes": 20,
     "basePortions": 4,
     "tags": [
-      "Sommer",
-      "Sommergericht",
-      "Schnell und einfach"
+      "Sommer"
     ],
     "ingredients": [
       {
@@ -19274,7 +19401,9 @@
       "milch",
       "schalenfruechte",
       "sulfite"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sal-58",
@@ -19283,10 +19412,9 @@
     "timeMinutes": 15,
     "basePortions": 2,
     "tags": [
-      "Schnell und einfach",
       "Sommer",
-      "Mittagsgericht",
-      "Abendgericht"
+      "Mittagessen",
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -19390,7 +19518,9 @@
     "imageKochen": null,
     "allergens": [
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sal-59",
@@ -19401,8 +19531,8 @@
     "tags": [
       "Sommer",
       "Frühling",
-      "Mittagsgericht",
-      "Abendgericht"
+      "Mittagessen",
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -19496,7 +19626,9 @@
       "fisch",
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sal-60",
@@ -19505,7 +19637,6 @@
     "timeMinutes": 20,
     "basePortions": 4,
     "tags": [
-      "Vegetarisch",
       "Winter",
       "Ofengericht"
     ],
@@ -19634,7 +19765,9 @@
       "milch",
       "schalenfruechte",
       "senf"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fvt-08",
@@ -19736,7 +19869,7 @@
     "imageUrl": null,
     "tags": [
       "Mealprep-geeignet",
-      "Mittagsgericht",
+      "Mittagessen",
       "Ofengericht",
       "Sommer",
       "Herbst"
@@ -19751,7 +19884,9 @@
       "carbs": 71.4,
       "fiber": 14.6
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ofe-01",
@@ -19805,7 +19940,7 @@
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ofengemu-se--1780579869402.jpeg",
     "tags": [
       "Mealprep-geeignet",
-      "Mittagsgericht",
+      "Mittagessen",
       "Ofengericht"
     ],
     "allergens": [
@@ -19819,7 +19954,9 @@
       "carbs": 46.2,
       "fiber": 7.3
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ofe-02",
@@ -19903,8 +20040,7 @@
     "tips": "Fertigteig spart Zeit — alternativ selbst gemachten Teig 24h im Kühlschrank gehen lassen für besseren Geschmack.",
     "imageUrl": null,
     "tags": [
-      "Vegetarisch",
-      "Mittagsgericht",
+      "Mittagessen",
       "Ofengericht",
       "Sommer",
       "Frühling",
@@ -19921,16 +20057,16 @@
       "fiber": 3.2
     },
     "dietCategory": "vegetarian",
-    "imageZutaten": null
+    "imageZutaten": null,
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ofe-03",
     "name": "Brot-Gemüse-Auflauf",
-    "category": "Vegetarische Hauptgerichte",
+    "category": "Aufläufe & Gratins",
     "timeMinutes": 50,
-    "tags": [
-      "Vegan"
-    ],
+    "tags": [],
     "weatherType": "kalt",
     "source": "Cuiseline",
     "basePortions": 6,
@@ -20046,16 +20182,17 @@
       "fat": 14.8,
       "carbs": 62.4,
       "fiber": 9.1
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ofe-04",
     "name": "Gefüllte Auberginen mit Couscous",
-    "category": "Vegetarische Hauptgerichte",
+    "category": "Reis, Getreide & Hülsenfrüchte",
     "timeMinutes": 50,
     "tags": [
-      "Vegan",
-      "Orientalisch"
+      "Nahöstlich"
     ],
     "weatherType": "warm",
     "source": "Cuiseline",
@@ -20167,12 +20304,14 @@
       "fat": 24.7,
       "carbs": 82.3,
       "fiber": 12.4
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ofe-05",
     "name": "Süsskartoffeln aus dem Ofen mit Pilz-Nusskruste",
-    "category": "Vegetarische Hauptgerichte",
+    "category": "Kartoffelgerichte",
     "timeMinutes": 55,
     "ingredients": [
       {
@@ -20250,11 +20389,10 @@
     "tips": "Gut als Hauptgericht mit einem grünen Salat oder als Beilage zu Fleisch.",
     "imageUrl": null,
     "tags": [
-      "Vegetarisch",
       "Ofengericht",
       "Herbst",
       "Winter",
-      "Schweizer"
+      "Schweizerisch"
     ],
     "dietCategory": "vegetarian",
     "allergens": [
@@ -20268,7 +20406,9 @@
       "fat": 24.6,
       "carbs": 52.8,
       "fiber": 8.7
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ofe-06",
@@ -20383,12 +20523,14 @@
       "fat": 24.8,
       "carbs": 18.6,
       "fiber": 4.2
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "asi-01",
     "name": "Pad Thai mit Crevetten",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 25,
     "ingredients": [
       {
@@ -20440,7 +20582,7 @@
     "description": "Klassisches Thai-Nudelgericht.",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/asi-01-1780783881713.jpg",
     "tags": [
-      "Mittagsgericht",
+      "Mittagessen",
       "Asiatisch",
       "Frühling",
       "Sommer"
@@ -20460,12 +20602,14 @@
     },
     "imageZutaten": null,
     "imageKochen": null,
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "asi-02",
     "name": "Ayurvedisches Kitchari",
-    "category": "Reis & Getreide",
+    "category": "Reis, Getreide & Hülsenfrüchte",
     "timeMinutes": 40,
     "ingredients": [
       {
@@ -20520,7 +20664,7 @@
     "imageUrl": null,
     "tags": [
       "Mealprep-geeignet",
-      "Mittagsgericht",
+      "Mittagessen",
       "Asiatisch"
     ],
     "allergens": [
@@ -20533,12 +20677,14 @@
       "carbs": 74.6,
       "fiber": 8.9
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "asi-03",
     "name": "Pad Thai mit Tofu und Erdnüssen",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 30,
     "ingredients": [
       {
@@ -20628,8 +20774,7 @@
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/asi-03-1780783928840.jpg",
     "tags": [
-      "Vegetarisch",
-      "Mittagsgericht",
+      "Mittagessen",
       "Asiatisch"
     ],
     "allergens": [
@@ -20648,12 +20793,14 @@
     },
     "imageZutaten": null,
     "imageKochen": null,
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "asi-04",
     "name": "Wokgemüse mit Erdnuss-Sauce",
-    "category": "Vegetarische Hauptgerichte",
+    "category": "Gemüsegerichte",
     "timeMinutes": 30,
     "ingredients": [
       {
@@ -20761,7 +20908,6 @@
     "tips": "Wer es schärfer mag, gibt mehr rote Currypaste in die Sauce.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Asiatisch"
     ],
     "dietCategory": "vegan",
@@ -20776,7 +20922,9 @@
       "fat": 26.8,
       "carbs": 32.4,
       "fiber": 9.2
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "asi-05",
@@ -20893,15 +21041,13 @@
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/thaila-ndische-erdnuss-nudelsuppe-1780949095716.jpg",
     "tags": [
-      "Vegan",
       "Asiatisch",
-      "Vegetarisch",
       "Mealprep-geeignet",
       "Winter",
       "Herbst",
       "Frühling",
-      "Mittagsgericht",
-      "Abendgericht"
+      "Mittagessen",
+      "Abendessen"
     ],
     "dietCategory": "vegan",
     "allergens": [
@@ -20918,12 +21064,14 @@
       "fiber": 5.2
     },
     "imageZutaten": null,
-    "imageKochen": null
+    "imageKochen": null,
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "asi-06",
     "name": "Pad Thai mit Poulet (Thai Kitchen Art)",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 30,
     "ingredients": [
       {
@@ -21022,7 +21170,9 @@
       "fat": 14.6,
       "carbs": 62.8,
       "fiber": 3.4
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-11",
@@ -21135,7 +21285,9 @@
       "carbs": 12.6,
       "fiber": 3.1
     },
-    "dietCategory": "fish"
+    "dietCategory": "fish",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-12",
@@ -21145,8 +21297,8 @@
     "tags": [
       "Grillgericht",
       "Sommer",
-      "Abendgericht",
-      "Mittagsgericht",
+      "Abendessen",
+      "Mittagessen",
       "Asiatisch"
     ],
     "weatherType": "warm",
@@ -21221,7 +21373,9 @@
       "carbs": 2.1,
       "fiber": 0.2
     },
-    "dietCategory": "fish"
+    "dietCategory": "fish",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fis-01",
@@ -21279,7 +21433,9 @@
       "carbs": 28.5,
       "fiber": 4.6
     },
-    "dietCategory": "fish"
+    "dietCategory": "fish",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fis-02",
@@ -21357,7 +21513,7 @@
     "tips": "Den Lachs unbedingt zimmertemperiert einlegen — kalter Fisch aus dem Kühlschrank direkt in die Pfanne gibt kein gleichmässiges Garergebnis.",
     "imageUrl": null,
     "tags": [
-      "Mittagsgericht"
+      "Mittagessen"
     ],
     "allergens": [
       "fisch",
@@ -21371,7 +21527,9 @@
       "fiber": 1.8
     },
     "dietCategory": "fish",
-    "imageZutaten": null
+    "imageZutaten": null,
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fis-13",
@@ -21380,9 +21538,8 @@
     "timeMinutes": 15,
     "basePortions": 2,
     "tags": [
-      "Schnell und einfach",
-      "Mittagsgericht",
-      "Abendsgericht"
+      "Mittagessen",
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -21469,7 +21626,9 @@
     "allergens": [
       "fisch",
       "gluten"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fis-14",
@@ -21478,8 +21637,7 @@
     "timeMinutes": 20,
     "basePortions": 2,
     "tags": [
-      "Abendgericht",
-      "Schnell und einfach",
+      "Abendessen",
       "Herbst",
       "Winter"
     ],
@@ -21580,7 +21738,9 @@
     "allergens": [
       "fisch",
       "schalenfruechte"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fis-15",
@@ -21590,7 +21750,7 @@
     "basePortions": 2,
     "tags": [
       "Italienisch",
-      "Abendgericht",
+      "Abendessen",
       "Frühling",
       "Herbst"
     ],
@@ -21712,7 +21872,9 @@
       "milch",
       "schalenfruechte",
       "sulfite"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fis-16",
@@ -21721,9 +21883,8 @@
     "timeMinutes": 30,
     "basePortions": 2,
     "tags": [
-      "Schnell und einfach",
-      "Abendgericht",
-      "Mittagsgericht"
+      "Abendessen",
+      "Mittagessen"
     ],
     "ingredients": [
       {
@@ -21844,7 +22005,9 @@
       "milch",
       "senf",
       "sulfite"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fis-17",
@@ -21853,10 +22016,9 @@
     "timeMinutes": 25,
     "basePortions": 2,
     "tags": [
-      "Schnell und einfach",
       "Kinderfreundlich",
-      "Mittagsgericht",
-      "Abendgericht"
+      "Mittagessen",
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -21966,7 +22128,9 @@
       "gluten",
       "milch",
       "schalenfruechte"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fis-18",
@@ -21975,9 +22139,8 @@
     "timeMinutes": 30,
     "basePortions": 2,
     "tags": [
-      "Schnell und einfach",
-      "Abendgericht",
-      "Mittagsgericht"
+      "Abendessen",
+      "Mittagessen"
     ],
     "ingredients": [
       {
@@ -22094,7 +22257,9 @@
       "fisch",
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fis-19",
@@ -22103,9 +22268,8 @@
     "timeMinutes": 15,
     "basePortions": 2,
     "tags": [
-      "Schnell zubereitet",
-      "Mittagsgericht",
-      "Abendgericht"
+      "Mittagessen",
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -22197,7 +22361,9 @@
       "fisch",
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fis-20",
@@ -22206,8 +22372,7 @@
     "timeMinutes": 20,
     "basePortions": 2,
     "tags": [
-      "Schnell und einfach",
-      "Abendgericht"
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -22289,7 +22454,9 @@
       "fisch",
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-14",
@@ -22415,7 +22582,9 @@
       "carbs": 16.4,
       "fiber": 4.2
     },
-    "dietCategory": "meat"
+    "dietCategory": "meat",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-16",
@@ -22522,7 +22691,9 @@
       "carbs": 5.4,
       "fiber": 0.6
     },
-    "dietCategory": "meat"
+    "dietCategory": "meat",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-21",
@@ -22618,7 +22789,9 @@
       "carbs": 9.8,
       "fiber": 1.2
     },
-    "dietCategory": "meat"
+    "dietCategory": "meat",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-22",
@@ -22719,7 +22892,9 @@
       "fat": 12.6,
       "carbs": 92.8,
       "fiber": 5.8
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-26",
@@ -22727,7 +22902,7 @@
     "category": "Fleisch & Geflügel",
     "timeMinutes": 45,
     "tags": [
-      "Schweizer"
+      "Schweizerisch"
     ],
     "weatherType": "kalt",
     "source": "Familien-Rezeptbuch",
@@ -22847,7 +23022,9 @@
       "carbs": 35.2,
       "fiber": 2.8
     },
-    "dietCategory": "meat"
+    "dietCategory": "meat",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-32",
@@ -22935,7 +23112,9 @@
       "carbs": 5.2,
       "fiber": 0.3
     },
-    "dietCategory": "meat"
+    "dietCategory": "meat",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-60",
@@ -23049,7 +23228,9 @@
       "carbs": 8.4,
       "fiber": 1.2
     },
-    "dietCategory": "meat"
+    "dietCategory": "meat",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fle-01",
@@ -23126,7 +23307,7 @@
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fle-01-1780784909551.jpg",
     "tags": [
-      "Orientalisch"
+      "Nahöstlich"
     ],
     "allergens": [
       "milch"
@@ -23140,7 +23321,9 @@
     },
     "imageZutaten": null,
     "imageKochen": null,
-    "dietCategory": "meat"
+    "dietCategory": "meat",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fle-61",
@@ -23151,8 +23334,8 @@
     "tags": [
       "Herbst",
       "Winter",
-      "Abendgericht",
-      "Mittagsgericht"
+      "Abendessen",
+      "Mittagessen"
     ],
     "ingredients": [
       {
@@ -23269,7 +23452,9 @@
       "ei",
       "gluten",
       "schalenfruechte"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fle-62",
@@ -23278,11 +23463,10 @@
     "timeMinutes": 20,
     "basePortions": 2,
     "tags": [
-      "Schnell und einfach",
       "Herbst",
       "Winter",
-      "Mittagsgericht",
-      "Abendgericht"
+      "Mittagessen",
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -23374,7 +23558,9 @@
     "allergens": [
       "gluten",
       "schalenfruechte"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fle-63",
@@ -23384,8 +23570,7 @@
     "basePortions": 4,
     "tags": [
       "Asiatisch",
-      "Schnell und einfach",
-      "Abendgericht"
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -23491,7 +23676,9 @@
       "milch",
       "sesam",
       "soja"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fle-64",
@@ -23501,8 +23688,8 @@
     "basePortions": 2,
     "tags": [
       "Ofengericht",
-      "Abendgericht",
-      "Mittagsgericht",
+      "Abendessen",
+      "Mittagessen",
       "Kinderfreundlich"
     ],
     "ingredients": [
@@ -23598,7 +23785,9 @@
     "allergens": [
       "ei",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fle-65",
@@ -23608,8 +23797,8 @@
     "basePortions": 4,
     "tags": [
       "Ofengericht",
-      "Mittagsgericht",
-      "Abendgericht"
+      "Mittagessen",
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -23735,7 +23924,9 @@
     "imageKochen": null,
     "allergens": [
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fle-66",
@@ -23744,9 +23935,9 @@
     "timeMinutes": 30,
     "basePortions": 4,
     "tags": [
-      "Mittagsgericht",
-      "Abendgericht",
-      "Orientalisch"
+      "Mittagessen",
+      "Abendessen",
+      "Nahöstlich"
     ],
     "ingredients": [
       {
@@ -23898,7 +24089,9 @@
     "allergens": [
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fle-67",
@@ -23907,8 +24100,8 @@
     "timeMinutes": 40,
     "basePortions": 2,
     "tags": [
-      "Abendgericht",
-      "Mittagsgericht",
+      "Abendessen",
+      "Mittagessen",
       "Herbst",
       "Sommer"
     ],
@@ -24019,7 +24212,9 @@
     "imageKochen": null,
     "allergens": [
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fle-68",
@@ -24030,8 +24225,8 @@
     "tags": [
       "Ofengericht",
       "Italienisch",
-      "Abendgericht",
-      "Mittagsgericht"
+      "Abendessen",
+      "Mittagessen"
     ],
     "ingredients": [
       {
@@ -24199,7 +24394,9 @@
       "fisch",
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fle-69",
@@ -24208,8 +24405,8 @@
     "timeMinutes": 30,
     "basePortions": 2,
     "tags": [
-      "Mittagsgericht",
-      "Abendgericht",
+      "Mittagessen",
+      "Abendessen",
       "Mealprep-geeignet"
     ],
     "ingredients": [
@@ -24325,7 +24522,9 @@
     "allergens": [
       "ei",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ocr-01",
@@ -24333,7 +24532,7 @@
     "category": "Fleisch & Geflügel",
     "timeMinutes": 45,
     "tags": [
-      "Orientalisch"
+      "Nahöstlich"
     ],
     "weatherType": "warm",
     "source": "Familien-Rezeptbuch (OCR)",
@@ -24422,7 +24621,9 @@
       "carbs": 48.5,
       "fiber": 6.2
     },
-    "dietCategory": "meat"
+    "dietCategory": "meat",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ocr-06",
@@ -24501,7 +24702,9 @@
       "carbs": 24.8,
       "fiber": 1.4
     },
-    "dietCategory": "meat"
+    "dietCategory": "meat",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ocr-10",
@@ -24584,7 +24787,9 @@
       "carbs": 52.3,
       "fiber": 3.2
     },
-    "dietCategory": "meat"
+    "dietCategory": "meat",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ocr-11",
@@ -24592,7 +24797,7 @@
     "category": "Fleisch & Geflügel",
     "timeMinutes": 30,
     "tags": [
-      "Schweizer"
+      "Schweizerisch"
     ],
     "weatherType": "kalt",
     "source": "Familien-Rezeptbuch (OCR)",
@@ -24662,7 +24867,9 @@
       "carbs": 6.8,
       "fiber": 0.8
     },
-    "dietCategory": "meat"
+    "dietCategory": "meat",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ocr-14",
@@ -24673,9 +24880,9 @@
       "Herbst",
       "Winter",
       "Ofengericht",
-      "Mittagsgericht",
-      "Abendgericht",
-      "Schweizer"
+      "Mittagessen",
+      "Abendessen",
+      "Schweizerisch"
     ],
     "weatherType": "kalt",
     "source": "Familien-Rezeptbuch (OCR)",
@@ -24765,7 +24972,9 @@
       "carbs": 18.5,
       "fiber": 0.9
     },
-    "dietCategory": "meat"
+    "dietCategory": "meat",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ocr-17",
@@ -24848,7 +25057,9 @@
       "carbs": 9.2,
       "fiber": 2.1
     },
-    "dietCategory": "meat"
+    "dietCategory": "meat",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-17",
@@ -24856,8 +25067,7 @@
     "category": "Kartoffelgerichte",
     "timeMinutes": 60,
     "tags": [
-      "Vegetarisch",
-      "Schweizer"
+      "Schweizerisch"
     ],
     "weatherType": "kalt",
     "source": "Familien-Rezeptbuch",
@@ -24909,7 +25119,9 @@
       "carbs": 87.4,
       "fiber": 7.8
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-59",
@@ -24917,8 +25129,6 @@
     "category": "Kartoffelgerichte",
     "timeMinutes": 40,
     "tags": [
-      "Vegetarisch",
-      "Vegan",
       "Ofengericht"
     ],
     "weatherType": "kalt",
@@ -24996,7 +25206,9 @@
       "carbs": 43.7,
       "fiber": 3.9
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "kar-01",
@@ -25042,16 +25254,11 @@
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/kar-01-1780785412795.jpg",
     "tags": [
-      "Vegan",
       "Kinderfreundlich",
-      "Vegetarisch",
-      "Frühling",
-      "Sommer",
-      "Herbst",
-      "Winter",
-      "Mittagsgericht",
-      "Abendgericht",
-      "Ofengericht"
+      "Mittagessen",
+      "Abendessen",
+      "Ofengericht",
+      "Ganzjährig"
     ],
     "allergens": [],
     "nutrition": {
@@ -25063,7 +25270,9 @@
     },
     "imageZutaten": null,
     "imageKochen": null,
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "kar-60",
@@ -25072,12 +25281,11 @@
     "timeMinutes": 35,
     "basePortions": 4,
     "tags": [
-      "Vegetarisch",
       "Kinderfreundlich",
       "Herbst",
       "Winter",
       "Ofengericht",
-      "Schweizer"
+      "Schweizerisch"
     ],
     "ingredients": [
       {
@@ -25166,7 +25374,9 @@
     "imageKochen": null,
     "allergens": [
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "kar-61",
@@ -25178,8 +25388,8 @@
       "Ofengericht",
       "Herbst",
       "Winter",
-      "Abendgericht",
-      "Mittagsgericht"
+      "Abendessen",
+      "Mittagessen"
     ],
     "ingredients": [
       {
@@ -25292,7 +25502,9 @@
     "allergens": [
       "ei",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "kar-62",
@@ -25301,11 +25513,10 @@
     "timeMinutes": 100,
     "basePortions": 3,
     "tags": [
-      "Vegetarisch",
       "Ofengericht",
       "Grillgericht",
-      "Abendgericht",
-      "Mittagsgericht"
+      "Abendessen",
+      "Mittagessen"
     ],
     "ingredients": [
       {
@@ -25376,16 +25587,16 @@
     "imageKochen": null,
     "allergens": [
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ocr-15",
     "name": "Kartoffel-Käse-Küchlein mit Schnittlauchcreme",
     "category": "Kartoffelgerichte",
     "timeMinutes": 30,
-    "tags": [
-      "Vegetarisch"
-    ],
+    "tags": [],
     "weatherType": "neutral",
     "source": "Familien-Rezeptbuch (OCR)",
     "basePortions": 2,
@@ -25462,16 +25673,16 @@
       "carbs": 42.6,
       "fiber": 3.8
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ocr-16",
     "name": "Kartoffelstock mit pochiertem Ei",
     "category": "Kartoffelgerichte",
     "timeMinutes": 40,
-    "tags": [
-      "Vegetarisch"
-    ],
+    "tags": [],
     "weatherType": "kalt",
     "source": "Familien-Rezeptbuch (OCR)",
     "basePortions": 4,
@@ -25543,16 +25754,16 @@
       "carbs": 40.2,
       "fiber": 3.2
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-03",
     "name": "Blechkuchen",
     "category": "Desserts & Süsses",
     "timeMinutes": 30,
-    "tags": [
-      "Vegetarisch"
-    ],
+    "tags": [],
     "weatherType": "neutral",
     "source": "Familien-Rezeptbuch",
     "basePortions": 12,
@@ -25642,16 +25853,16 @@
       "carbs": 52.4,
       "fiber": 1.4
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-04",
     "name": "Blunschy-Kräutersauce",
     "category": "Snacks & Vorspeisen",
     "timeMinutes": 15,
-    "tags": [
-      "Vegetarisch"
-    ],
+    "tags": [],
     "weatherType": "neutral",
     "source": "Familien-Rezeptbuch",
     "basePortions": 4,
@@ -25745,7 +25956,9 @@
       "carbs": 6.4,
       "fiber": 0.8
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-06",
@@ -25753,8 +25966,6 @@
     "category": "Snacks & Vorspeisen",
     "timeMinutes": 15,
     "tags": [
-      "Vegetarisch",
-      "Vegan",
       "Italienisch",
       "Sommer"
     ],
@@ -25823,16 +26034,17 @@
       "carbs": 28.6,
       "fiber": 2.8
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-07",
     "name": "Buchweizen-Pancakes mit Zwetschgenkompott",
-    "category": "Frühstück",
+    "category": "Eiergerichte",
     "timeMinutes": 30,
     "tags": [
-      "Vegetarisch",
-      "Frühstücksgericht"
+      "Frühstück"
     ],
     "weatherType": "neutral",
     "source": "Familien-Rezeptbuch",
@@ -25923,22 +26135,21 @@
       "carbs": 51.6,
       "fiber": 6.2
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-08",
     "name": "Burger",
-    "category": "Wraps & Sandwiches",
+    "category": "Wraps, Sandwiches & Burger",
     "timeMinutes": 20,
     "tags": [
-      "Mittagsgericht",
-      "Abendgericht",
+      "Mittagessen",
+      "Abendessen",
       "Grillgericht",
       "Kinderfreundlich",
-      "Winter",
-      "Herbst",
-      "Sommer",
-      "Frühling"
+      "Ganzjährig"
     ],
     "weatherType": "warm",
     "source": "Familien-Rezeptbuch",
@@ -26020,23 +26231,23 @@
       "carbs": 52.3,
       "fiber": 5.6
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-15",
     "name": "Spaghetti mit Gemüse-Bolognese",
-    "category": "Pasta",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 35,
     "tags": [
-      "Vegetarisch",
-      "Vegan",
       "Kinderfreundlich",
       "Mealprep-geeignet",
       "Frühling",
       "Herbst",
       "Winter",
-      "Mittagsgericht",
-      "Abendgericht",
+      "Mittagessen",
+      "Abendessen",
       "Italienisch"
     ],
     "weatherType": "neutral",
@@ -26159,16 +26370,16 @@
       "carbs": 18.3,
       "fiber": 5.8
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-18",
     "name": "Hafertätschli",
-    "category": "Vegetarische Hauptgerichte",
+    "category": "Gemüsegerichte",
     "timeMinutes": 30,
-    "tags": [
-      "Vegetarisch"
-    ],
+    "tags": [],
     "weatherType": "neutral",
     "source": "Familien-Rezeptbuch",
     "basePortions": 4,
@@ -26282,16 +26493,16 @@
       "carbs": 42.5,
       "fiber": 5.3
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-19",
     "name": "Himbeertiramisu",
     "category": "Desserts & Süsses",
     "timeMinutes": 30,
-    "tags": [
-      "Vegetarisch"
-    ],
+    "tags": [],
     "weatherType": "neutral",
     "source": "Familien-Rezeptbuch",
     "basePortions": 6,
@@ -26367,16 +26578,16 @@
       "carbs": 48.3,
       "fiber": 3.2
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-23",
     "name": "Kräuter-Gemüse-Rahmsauce",
-    "category": "Vegetarische Hauptgerichte",
+    "category": "Gemüsegerichte",
     "timeMinutes": 30,
-    "tags": [
-      "Vegetarisch"
-    ],
+    "tags": [],
     "weatherType": "neutral",
     "source": "Familien-Rezeptbuch",
     "basePortions": 6,
@@ -26488,16 +26699,16 @@
       "carbs": 9.2,
       "fiber": 3.4
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-24",
     "name": "Kräuterbutter",
     "category": "Snacks & Vorspeisen",
     "timeMinutes": 10,
-    "tags": [
-      "Vegetarisch"
-    ],
+    "tags": [],
     "weatherType": "neutral",
     "source": "Familien-Rezeptbuch",
     "basePortions": 6,
@@ -26565,7 +26776,9 @@
       "carbs": 0.5,
       "fiber": 0.2
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-25",
@@ -26573,7 +26786,6 @@
     "category": "Snacks & Vorspeisen",
     "timeMinutes": 10,
     "tags": [
-      "Vegetarisch",
       "Frühling"
     ],
     "weatherType": "neutral",
@@ -26652,16 +26864,16 @@
       "fat": 33.8,
       "carbs": 1.3,
       "fiber": 0.8
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-28",
     "name": "Mediterranes Gemüse",
-    "category": "Vegetarische Hauptgerichte",
+    "category": "Gemüsegerichte",
     "timeMinutes": 35,
     "tags": [
-      "Vegetarisch",
-      "Vegan",
       "Ofengericht",
       "Sommer"
     ],
@@ -26748,23 +26960,21 @@
       "carbs": 10.8,
       "fiber": 5.1
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-34",
     "name": "Reisnudeln mit Tofu und Gemüse",
-    "category": "Vegetarische Hauptgerichte",
+    "category": "Eiergerichte",
     "timeMinutes": 35,
     "tags": [
-      "Vegan",
       "Asiatisch",
-      "Winter",
-      "Herbst",
-      "Sommer",
-      "Frühling",
       "Kinderfreundlich",
-      "Abendgericht",
-      "Mittagsgericht"
+      "Abendessen",
+      "Mittagessen",
+      "Ganzjährig"
     ],
     "weatherType": "neutral",
     "source": "Familien-Rezeptbuch",
@@ -26893,18 +27103,18 @@
       "carbs": 70.2,
       "fiber": 5.6
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-36",
     "name": "Rotkraut à la Grosi",
-    "category": "Vegetarische Hauptgerichte",
+    "category": "Gemüsegerichte",
     "timeMinutes": 55,
     "tags": [
-      "Vegetarisch",
-      "Vegan",
       "Herbst",
-      "Schweizer"
+      "Schweizerisch"
     ],
     "weatherType": "kalt",
     "source": "Familien-Rezeptbuch",
@@ -26980,15 +27190,16 @@
       "carbs": 16.4,
       "fiber": 5.2
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-40",
     "name": "Spinat-Pancakes vom Ofen",
-    "category": "Vegetarische Hauptgerichte",
+    "category": "Gemüsegerichte",
     "timeMinutes": 30,
     "tags": [
-      "Vegetarisch",
       "Ofengericht"
     ],
     "weatherType": "neutral",
@@ -27055,7 +27266,9 @@
       "carbs": 12.3,
       "fiber": 2.1
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-43",
@@ -27154,12 +27367,14 @@
       "carbs": 2.1,
       "fiber": 0.3
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-45",
     "name": "Toast Hawaii",
-    "category": "Wraps & Sandwiches",
+    "category": "Wraps, Sandwiches & Burger",
     "timeMinutes": 15,
     "tags": [],
     "weatherType": "neutral",
@@ -27238,16 +27453,16 @@
       "carbs": 38.2,
       "fiber": 2.1
     },
-    "dietCategory": "meat"
+    "dietCategory": "meat",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-46",
     "name": "Tomaten-Bärlauch-Sandwich",
-    "category": "Wraps & Sandwiches",
+    "category": "Wraps, Sandwiches & Burger",
     "timeMinutes": 10,
     "tags": [
-      "Vegetarisch",
-      "Vegan",
       "Frühling"
     ],
     "weatherType": "warm",
@@ -27306,7 +27521,9 @@
       "carbs": 24.8,
       "fiber": 3.2
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-47",
@@ -27314,7 +27531,6 @@
     "category": "Snacks & Vorspeisen",
     "timeMinutes": 10,
     "tags": [
-      "Vegetarisch",
       "Frühling"
     ],
     "weatherType": "warm",
@@ -27372,17 +27588,16 @@
       "carbs": 20.1,
       "fiber": 2.1
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-51",
     "name": "Veganer Rahmspinat",
-    "category": "Vegetarische Hauptgerichte",
+    "category": "Gemüsegerichte",
     "timeMinutes": 20,
-    "tags": [
-      "Vegetarisch",
-      "Vegan"
-    ],
+    "tags": [],
     "weatherType": "neutral",
     "source": "Cuiseline",
     "basePortions": 4,
@@ -27464,16 +27679,16 @@
       "carbs": 9.2,
       "fiber": 3.8
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-52",
     "name": "Weissweinrahmsauce",
     "category": "Snacks & Vorspeisen",
     "timeMinutes": 20,
-    "tags": [
-      "Vegetarisch"
-    ],
+    "tags": [],
     "weatherType": "neutral",
     "source": "Familien-Rezeptbuch",
     "basePortions": 4,
@@ -27562,16 +27777,16 @@
       "carbs": 10.8,
       "fiber": 1.2
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-54",
     "name": "Zitronenrahmsauce",
     "category": "Snacks & Vorspeisen",
     "timeMinutes": 15,
-    "tags": [
-      "Vegetarisch"
-    ],
+    "tags": [],
     "weatherType": "neutral",
     "source": "Familien-Rezeptbuch",
     "basePortions": 4,
@@ -27626,17 +27841,16 @@
       "carbs": 6.4,
       "fiber": 0.2
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-57",
     "name": "Zwetschgenkompott & Beerenkompott",
     "category": "Desserts & Süsses",
     "timeMinutes": 20,
-    "tags": [
-      "Vegetarisch",
-      "Vegan"
-    ],
+    "tags": [],
     "weatherType": "neutral",
     "source": "Familien-Rezeptbuch",
     "basePortions": 4,
@@ -27678,16 +27892,16 @@
       "carbs": 12.8,
       "fiber": 2.4
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-58",
     "name": "Zwetschgencreme mit Zimtrahm",
     "category": "Desserts & Süsses",
     "timeMinutes": 30,
-    "tags": [
-      "Vegetarisch"
-    ],
+    "tags": [],
     "weatherType": "neutral",
     "source": "Familien-Rezeptbuch",
     "basePortions": 6,
@@ -27764,7 +27978,9 @@
       "carbs": 26.4,
       "fiber": 2.1
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fvt-01",
@@ -27848,7 +28064,7 @@
     "imageUrl": null,
     "tags": [
       "Mealprep-geeignet",
-      "Mittagsgericht"
+      "Mittagessen"
     ],
     "allergens": [
       "gluten",
@@ -27863,7 +28079,9 @@
       "carbs": 38.6,
       "fiber": 6.8
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fvt-05",
@@ -27952,7 +28170,7 @@
     "tips": "",
     "imageUrl": null,
     "tags": [
-      "Mittagsgericht"
+      "Mittagessen"
     ],
     "allergens": [
       "gluten",
@@ -27966,12 +28184,14 @@
       "carbs": 58.4,
       "fiber": 11.3
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fvt-11",
     "name": "Süsskartoffel-Quesadillas mit Guacamole",
-    "category": "Wraps & Sandwiches",
+    "category": "Wraps, Sandwiches & Burger",
     "timeMinutes": 25,
     "ingredients": [
       {
@@ -28043,7 +28263,7 @@
     "tips": "",
     "imageUrl": null,
     "tags": [
-      "Mittagsgericht",
+      "Mittagessen",
       "Mexikanisch"
     ],
     "allergens": [
@@ -28056,12 +28276,14 @@
       "carbs": 48.2,
       "fiber": 10.4
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fvt-13",
     "name": "Räuber-Nuggets aus Tofu und Gemüse",
-    "category": "Vegetarische Hauptgerichte",
+    "category": "Gemüsegerichte",
     "timeMinutes": 45,
     "ingredients": [
       {
@@ -28122,7 +28344,7 @@
     "imageUrl": null,
     "tags": [
       "Mealprep-geeignet",
-      "Mittagsgericht"
+      "Mittagessen"
     ],
     "allergens": [
       "gluten",
@@ -28136,16 +28358,16 @@
       "carbs": 48.5,
       "fiber": 6.8
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fvt-14",
     "name": "Linsen-Tätschli",
-    "category": "Vegetarische Hauptgerichte",
+    "category": "Reis, Getreide & Hülsenfrüchte",
     "timeMinutes": 35,
-    "tags": [
-      "Vegan"
-    ],
+    "tags": [],
     "weatherType": "neutral",
     "source": "Cuiseline",
     "basePortions": 4,
@@ -28241,16 +28463,16 @@
       "fat": 19.8,
       "carbs": 72.3,
       "fiber": 12.6
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ocr-02",
     "name": "Biskuitroulade mit Äpfeln",
     "category": "Desserts & Süsses",
     "timeMinutes": 45,
-    "tags": [
-      "Vegetarisch"
-    ],
+    "tags": [],
     "weatherType": "neutral",
     "source": "Familien-Rezeptbuch (OCR)",
     "basePortions": 8,
@@ -28323,7 +28545,9 @@
       "carbs": 31.4,
       "fiber": 1.4
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ocr-03",
@@ -28331,7 +28555,6 @@
     "category": "Desserts & Süsses",
     "timeMinutes": 40,
     "tags": [
-      "Vegetarisch",
       "Herbst"
     ],
     "weatherType": "kalt",
@@ -28399,7 +28622,9 @@
       "carbs": 49.2,
       "fiber": 2.8
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ocr-08",
@@ -28464,16 +28689,16 @@
       "carbs": 18.6,
       "fiber": 2.4
     },
-    "dietCategory": "meat"
+    "dietCategory": "meat",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ocr-13",
     "name": "Traditionelle Gurkensandwiches",
     "category": "Snacks & Vorspeisen",
     "timeMinutes": 25,
-    "tags": [
-      "Vegetarisch"
-    ],
+    "tags": [],
     "weatherType": "warm",
     "source": "Familien-Rezeptbuch (OCR)",
     "basePortions": 4,
@@ -28531,16 +28756,16 @@
       "carbs": 21.2,
       "fiber": 1.6
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ocr-18",
     "name": "Käse-Kräuter-Scones",
     "category": "Snacks & Vorspeisen",
     "timeMinutes": 25,
-    "tags": [
-      "Vegetarisch"
-    ],
+    "tags": [],
     "weatherType": "neutral",
     "source": "Familien-Rezeptbuch (OCR)",
     "basePortions": 11,
@@ -28611,12 +28836,14 @@
       "carbs": 32.4,
       "fiber": 1.4
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-01",
     "name": "Fajitas",
-    "category": "Wraps & Sandwiches",
+    "category": "Wraps, Sandwiches & Burger",
     "timeMinutes": 25,
     "ingredients": [
       {
@@ -28684,12 +28911,14 @@
       "fiber": 6.2
     },
     "dietCategory": "vegetarian",
-    "imageZutaten": null
+    "imageZutaten": null,
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-02",
     "name": "Tacos mit Linsen & Baumnüsse",
-    "category": "Wraps & Sandwiches",
+    "category": "Wraps, Sandwiches & Burger",
     "timeMinutes": 25,
     "ingredients": [
       {
@@ -28748,12 +28977,14 @@
       "fiber": 11.4
     },
     "dietCategory": "vegetarian",
-    "imageZutaten": null
+    "imageZutaten": null,
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-03",
     "name": "Pitabrot mit Falafel, Tzatziki und Gemüse",
-    "category": "Wraps & Sandwiches",
+    "category": "Wraps, Sandwiches & Burger",
     "timeMinutes": 20,
     "ingredients": [
       {
@@ -28801,10 +29032,10 @@
     "tips": "",
     "imageUrl": null,
     "tags": [
-      "Mittagsgericht",
+      "Mittagessen",
       "Frühling",
       "Sommer",
-      "Orientalisch"
+      "Nahöstlich"
     ],
     "allergens": [
       "gluten"
@@ -28817,12 +29048,14 @@
       "fiber": 9.3
     },
     "dietCategory": "vegetarian",
-    "imageZutaten": null
+    "imageZutaten": null,
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-04",
     "name": "Avocado Toast mit Spiegelei",
-    "category": "Frühstück",
+    "category": "Eiergerichte",
     "timeMinutes": 15,
     "ingredients": [
       {
@@ -28894,9 +29127,8 @@
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/son-04-2-1780699834231.jpg",
     "tags": [
-      "Vegetarisch",
-      "Mittagsgericht",
-      "Frühstücksgericht"
+      "Mittagessen",
+      "Frühstück"
     ],
     "imageZutaten": null,
     "imageKochen": null,
@@ -28912,7 +29144,9 @@
       "carbs": 22.1,
       "fiber": 8.2
     },
-    "dietCategory": "vegetarian"
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-05",
@@ -28920,7 +29154,6 @@
     "category": "Snacks & Vorspeisen",
     "timeMinutes": 15,
     "tags": [
-      "Vegan",
       "Frühling"
     ],
     "weatherType": "neutral",
@@ -28980,16 +29213,16 @@
       "fat": 33.7,
       "carbs": 4.2,
       "fiber": 1.8
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-06",
     "name": "Hummus-Gemüse-Wrap",
     "category": "Snacks & Vorspeisen",
     "timeMinutes": 10,
-    "tags": [
-      "Vegan"
-    ],
+    "tags": [],
     "weatherType": "warm",
     "source": "Cuiseline",
     "basePortions": 1,
@@ -29070,16 +29303,16 @@
       "carbs": 52.6,
       "fiber": 10.5
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-07",
     "name": "Vegane Schinkengipfeli (Tofu-Gipfeli)",
     "category": "Snacks & Vorspeisen",
     "timeMinutes": 35,
-    "tags": [
-      "Vegan"
-    ],
+    "tags": [],
     "weatherType": "neutral",
     "source": "Cuiseline",
     "basePortions": 4,
@@ -29171,7 +29404,9 @@
       "fat": 24.6,
       "carbs": 23.8,
       "fiber": 2.1
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-08",
@@ -29247,7 +29482,6 @@
     "tips": "Mit einem Klecks Joghurt und frischen Kräutern als Dip für Gemüsesticks servieren.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet"
     ],
     "dietCategory": "vegan",
@@ -29258,12 +29492,14 @@
       "fat": 5.2,
       "carbs": 17.3,
       "fiber": 4.6
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-09",
     "name": "Würzig marinierte Auberginen vom Grill",
-    "category": "Vegetarische Hauptgerichte",
+    "category": "Gemüsegerichte",
     "timeMinutes": 70,
     "ingredients": [
       {
@@ -29329,10 +29565,9 @@
     "tips": "Wer keinen Grill hat, kann die Auberginen auch bei 200 °C im Ofen ca. 35 Minuten backen.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Grillgericht",
       "Sommer",
-      "Orientalisch"
+      "Nahöstlich"
     ],
     "dietCategory": "vegan",
     "allergens": [],
@@ -29342,12 +29577,14 @@
       "fat": 25.8,
       "carbs": 9.4,
       "fiber": 5.6
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-10",
     "name": "Scharf angebratener Rosenkohl mit Sobanudeln",
-    "category": "Vegetarische Hauptgerichte",
+    "category": "Pasta & Teigwaren",
     "timeMinutes": 25,
     "ingredients": [
       {
@@ -29414,7 +29651,6 @@
     "tips": "Der Rosenkohl darf wirklich dunkel werden – das gibt das typische Röstaroma. Sobanudeln nicht überkochen.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Asiatisch"
     ],
     "dietCategory": "vegan",
@@ -29428,12 +29664,14 @@
       "fat": 15.8,
       "carbs": 68.4,
       "fiber": 12.7
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-11",
     "name": "Spinat-Chüechli",
-    "category": "Vegetarische Hauptgerichte",
+    "category": "Gemüsegerichte",
     "timeMinutes": 35,
     "ingredients": [
       {
@@ -29498,8 +29736,7 @@
     "tips": "Den Spinat vor dem Mischen gut ausdrücken – zu viel Flüssigkeit macht die Chüechli matschig.",
     "imageUrl": null,
     "tags": [
-      "Vegetarisch",
-      "Schweizer",
+      "Schweizerisch",
       "Kinderfreundlich"
     ],
     "dietCategory": "vegetarian",
@@ -29512,7 +29749,9 @@
       "fat": 17.4,
       "carbs": 16.3,
       "fiber": 2.8
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-12",
@@ -29566,7 +29805,6 @@
     "tips": "Die Blätter müssen wirklich trocken sein – sonst werden sie nicht knusprig, sondern gedämpft.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet"
     ],
     "dietCategory": "vegan",
@@ -29577,7 +29815,9 @@
       "fat": 3.2,
       "carbs": 5.1,
       "fiber": 1.4
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-13",
@@ -29643,7 +29883,6 @@
     "tips": "Die Gipfeli schmecken warm und kalt. Können gut vorbereitet und direkt vor dem Apéro gebacken werden.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet"
     ],
     "dietCategory": "vegan",
@@ -29658,7 +29897,9 @@
       "fat": 11.8,
       "carbs": 12.4,
       "fiber": 1.3
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-14",
@@ -29734,9 +29975,7 @@
     ],
     "tips": "Für mehr Tiefe einen Schuss Rotwein oder Worcestershiresauce (vegan) einrühren.",
     "imageUrl": null,
-    "tags": [
-      "Vegan"
-    ],
+    "tags": [],
     "dietCategory": "vegan",
     "allergens": [
       "gluten",
@@ -29748,7 +29987,9 @@
       "fat": 3.2,
       "carbs": 8.4,
       "fiber": 1.2
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-15",
@@ -29789,7 +30030,6 @@
     "tips": "Für ein zweifarbiges Eis die Formen zur Hälfte füllen, kurz anfrieren lassen, dann die zweite Schicht einfüllen.",
     "imageUrl": null,
     "tags": [
-      "Vegetarisch",
       "Kinderfreundlich",
       "Sommer"
     ],
@@ -29804,7 +30044,9 @@
       "fat": 8.2,
       "carbs": 13.6,
       "fiber": 1.8
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-16",
@@ -29900,8 +30142,7 @@
     "tips": "Empfohlene Apfelsorten: Boskop, Gala, Golden Delicious oder Braeburn.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
-      "Schweizer",
+      "Schweizerisch",
       "Herbst"
     ],
     "dietCategory": "vegan",
@@ -29917,7 +30158,9 @@
       "fat": 25.8,
       "carbs": 63.2,
       "fiber": 5.8
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-17",
@@ -29994,8 +30237,7 @@
     "tips": "Säuerliche Äpfel (Boskop) geben den besten Kontrast zur süssen Panade. Mit Vanilleeis oder Rahmschaum servieren.",
     "imageUrl": null,
     "tags": [
-      "Vegetarisch",
-      "Schweizer",
+      "Schweizerisch",
       "Herbst",
       "Kinderfreundlich"
     ],
@@ -30012,19 +30254,21 @@
       "fat": 18.5,
       "carbs": 67.3,
       "fiber": 3.8
-    }
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-77",
     "name": "Spargel-Kartoffel-Gemüse mit Schinken und pochiertem Ei",
-    "category": "Vegetarische Hauptgerichte",
+    "category": "Eiergerichte",
     "timeMinutes": 20,
     "basePortions": 2,
     "tags": [
       "Frühling",
       "Sommer",
-      "Mittagsgericht",
-      "Abendgericht"
+      "Mittagessen",
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -30115,7 +30359,9 @@
     "imageKochen": null,
     "allergens": [
       "ei"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-79",
@@ -30124,10 +30370,9 @@
     "timeMinutes": 100,
     "basePortions": 4,
     "tags": [
-      "Vegetarisch",
       "Ofengericht",
       "Winter",
-      "Abendgericht"
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -30207,21 +30452,22 @@
     "imageKochen": null,
     "allergens": [
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-80",
     "name": "Couscous mit Butternut-Kürbis, Walnüssen und gratiniertem Ziegenkäse",
-    "category": "Vegetarische Hauptgerichte",
+    "category": "Reis, Getreide & Hülsenfrüchte",
     "timeMinutes": 35,
     "basePortions": 4,
     "tags": [
-      "Vegetarisch",
       "Herbst",
       "Winter",
       "Ofengericht",
-      "Mittagsgericht",
-      "Abendgericht"
+      "Mittagessen",
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -30344,19 +30590,20 @@
       "gluten",
       "milch",
       "schalenfruechte"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-81",
     "name": "Frittata mit Brokkoli, Kichererbsen, Tomaten und Mozzarella",
-    "category": "Vegetarische Hauptgerichte",
+    "category": "Eiergerichte",
     "timeMinutes": 30,
     "basePortions": 4,
     "tags": [
-      "Vegetarisch",
       "Ofengericht",
-      "Mittagsgericht",
-      "Abendgericht",
+      "Mittagessen",
+      "Abendessen",
       "Italienisch",
       "Mealprep-geeignet",
       "Frühling"
@@ -30461,7 +30708,9 @@
     "allergens": [
       "ei",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-82",
@@ -30470,7 +30719,6 @@
     "timeMinutes": 255,
     "basePortions": 12,
     "tags": [
-      "Vegetarisch",
       "Frühling",
       "Kinderfreundlich"
     ],
@@ -30611,21 +30859,21 @@
       "gluten",
       "milch",
       "schalenfruechte"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-83",
     "name": "Frittata mit Fourme d'Ambert und Hokkaido-Kürbis",
-    "category": "Vegetarische Hauptgerichte",
+    "category": "Eiergerichte",
     "timeMinutes": 35,
     "basePortions": 4,
     "tags": [
-      "Vegetarisch",
       "Herbst",
       "Winter",
       "Ofengericht",
-      "Abendgericht",
-      "Schnell und einfach"
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -30693,20 +30941,21 @@
     "allergens": [
       "ei",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-84",
     "name": "Gefüllte Tomaten mit Ricottacreme auf Rucola",
-    "category": "Vegetarische Hauptgerichte",
+    "category": "Gemüsegerichte",
     "timeMinutes": 40,
     "basePortions": 4,
     "tags": [
-      "Vegetarisch",
       "Ofengericht",
       "Sommer",
       "Italienisch",
-      "Abendgericht"
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -30807,21 +31056,21 @@
     "imageKochen": null,
     "allergens": [
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-85",
     "name": "Zucchini Frittata mit Hüttenkäse, Feta und Petersilie",
-    "category": "Vegetarische Hauptgerichte",
+    "category": "Eiergerichte",
     "timeMinutes": 30,
     "basePortions": 4,
     "tags": [
-      "Vegetarisch",
-      "Schnell und einfach",
       "Ofengericht",
       "Sommer",
-      "Mittagsgericht",
-      "Abendsgericht",
+      "Mittagessen",
+      "Abendessen",
       "Italienisch",
       "Mealprep-geeignet"
     ],
@@ -30912,7 +31161,9 @@
     "allergens": [
       "ei",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-86",
@@ -30922,7 +31173,6 @@
     "basePortions": 4,
     "tags": [
       "Ofengericht",
-      "Schnell und einfach",
       "Kinderfreundlich",
       "Frühling",
       "Sommer"
@@ -31007,21 +31257,21 @@
       "ei",
       "fisch",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-87",
     "name": "Shakshuka mit Cannellini Bohnen, Tomaten, Parmesan und Spinat",
-    "category": "Vegetarische Hauptgerichte",
+    "category": "Eiergerichte",
     "timeMinutes": 30,
     "basePortions": 2,
     "tags": [
-      "Vegetarisch",
-      "Schnell und einfach",
       "Frühstück",
-      "Mittagsgericht",
-      "Abendgericht",
-      "Orientalisch"
+      "Mittagessen",
+      "Abendessen",
+      "Nahöstlich"
     ],
     "ingredients": [
       {
@@ -31139,21 +31389,22 @@
       "ei",
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-88",
     "name": "Zucchini Boote gefüllt mit Paprikacremesauce und Feta",
-    "category": "Vegetarische Hauptgerichte",
+    "category": "Gemüsegerichte",
     "timeMinutes": 60,
     "basePortions": 4,
     "tags": [
-      "Vegetarisch",
       "Ofengericht",
-      "Abendgericht",
+      "Abendessen",
       "Sommer",
       "Herbst",
-      "Mittagsgericht"
+      "Mittagessen"
     ],
     "ingredients": [
       {
@@ -31271,20 +31522,21 @@
     "imageKochen": null,
     "allergens": [
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-89",
     "name": "Gebackene Süsskartoffel mit Kichererbsen & Tahini Ziegenjoghurt",
-    "category": "Vegetarische Hauptgerichte",
+    "category": "Reis, Getreide & Hülsenfrüchte",
     "timeMinutes": 60,
     "basePortions": 4,
     "tags": [
-      "Vegetarisch",
-      "Orientalisch",
+      "Nahöstlich",
       "Ofengericht",
-      "Mittagsgericht",
-      "Abendgericht"
+      "Mittagessen",
+      "Abendessen"
     ],
     "ingredients": [
       {
@@ -31376,7 +31628,9 @@
     "allergens": [
       "milch",
       "sesam"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-90",
@@ -31385,7 +31639,6 @@
     "timeMinutes": 270,
     "basePortions": 8,
     "tags": [
-      "Vegetarisch",
       "Frühling",
       "Sommer"
     ],
@@ -31514,19 +31767,20 @@
       "ei",
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-91",
     "name": "Wraps mit Zucchini, Hüttenkäse und Makrele",
-    "category": "Wraps & Sandwiches",
+    "category": "Wraps, Sandwiches & Burger",
     "timeMinutes": 15,
     "basePortions": 6,
     "tags": [
-      "Fisch",
       "Mealprep-geeignet",
-      "Abendgericht",
-      "Mittagsgericht",
+      "Abendessen",
+      "Mittagessen",
       "Frühling",
       "Sommer"
     ],
@@ -31612,18 +31866,20 @@
     "allergens": [
       "fisch",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-92",
     "name": "Zucchini-Boote gefüllt mit Tomaten-Hackfleisch-Sauce",
-    "category": "Aufl\\u00e4ufe & Gratins",
+    "category": "Aufläufe & Gratins",
     "timeMinutes": 40,
     "basePortions": 4,
     "tags": [
       "Ofengericht",
-      "Abendgericht",
-      "Mittagsgericht"
+      "Abendessen",
+      "Mittagessen"
     ],
     "ingredients": [
       {
@@ -31740,18 +31996,19 @@
     "imageKochen": null,
     "allergens": [
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-93",
     "name": "Wraps mit Räucherlachs, Babyspinat & Schafskäse",
-    "category": "Wraps & Sandwiches",
+    "category": "Wraps, Sandwiches & Burger",
     "timeMinutes": 10,
     "basePortions": 4,
     "tags": [
-      "Schnell und einfach",
-      "Mittagsgericht",
-      "Abendgericht",
+      "Mittagessen",
+      "Abendessen",
       "Mealprep-geeignet"
     ],
     "ingredients": [
@@ -31838,7 +32095,9 @@
     "allergens": [
       "fisch",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-94",
@@ -31847,7 +32106,6 @@
     "timeMinutes": 35,
     "basePortions": 12,
     "tags": [
-      "Vegetarisch",
       "Kinderfreundlich",
       "Ofengericht"
     ],
@@ -31940,7 +32198,9 @@
       "ei",
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-95",
@@ -31949,8 +32209,6 @@
     "timeMinutes": 8,
     "basePortions": 4,
     "tags": [
-      "Vegetarisch",
-      "Schnell und einfach",
       "Kinderfreundlich",
       "Frühling",
       "Sommer"
@@ -32017,7 +32275,9 @@
     "allergens": [
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-96",
@@ -32026,8 +32286,6 @@
     "timeMinutes": 10,
     "basePortions": 3,
     "tags": [
-      "Vegetarisch",
-      "Schnell und einfach",
       "Kinderfreundlich"
     ],
     "ingredients": [
@@ -32079,7 +32337,9 @@
     "allergens": [
       "gluten",
       "milch"
-    ]
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "kds-01",
@@ -32174,7 +32434,6 @@
     "tips": "Für Kinder unter 12 Monaten ohne Salz zubereiten.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet"
     ],
     "allergens": [
@@ -32191,7 +32450,9 @@
     },
     "dietCategory": "vegan",
     "imageZutaten": null,
-    "imageKochen": null
+    "imageKochen": null,
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "kds-02",
@@ -32291,7 +32552,6 @@
     "tips": "Für die Beikost ohne Salz zubereiten.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet"
     ],
     "allergens": [
@@ -32305,7 +32565,9 @@
       "carbs": 24.2,
       "fiber": 5.6
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "kds-03",
@@ -32387,7 +32649,6 @@
     "tips": "Luftdicht aufbewahren – ca. 2 Wochen haltbar.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet"
     ],
     "allergens": [
@@ -32401,7 +32662,9 @@
       "carbs": 5.8,
       "fiber": 1.2
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "kds-04",
@@ -32513,7 +32776,6 @@
     "tips": "Saaten und Erbsen je nach Alter des Kindes vorher zerkleinern.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet"
     ],
     "allergens": [
@@ -32527,7 +32789,9 @@
       "carbs": 22.8,
       "fiber": 4.3
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "kds-05",
@@ -32608,7 +32872,6 @@
     "tips": "",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet"
     ],
     "allergens": [
@@ -32621,7 +32884,9 @@
       "carbs": 4.8,
       "fiber": 0.9
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "kds-06",
@@ -32701,7 +32966,6 @@
     "tips": "Mit Vitamin-C-reichem Gemüse (z.B. Paprika) für bessere Eisenaufnahme kombinieren.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet"
     ],
     "allergens": [
@@ -32714,7 +32978,9 @@
       "carbs": 7.5,
       "fiber": 1.8
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "kds-07",
@@ -32795,7 +33061,6 @@
     "tips": "Bis zu 60 g Hülsenfrüchte-Reste mit Sojajoghurt pürieren für Extra-Eiweiss.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet"
     ],
     "allergens": [
@@ -32810,7 +33075,9 @@
       "carbs": 15.8,
       "fiber": 1.8
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "kds-08",
@@ -32891,9 +33158,8 @@
     "tips": "",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet",
-      "Mittagsgericht"
+      "Mittagessen"
     ],
     "allergens": [],
     "nutrition": {
@@ -32903,7 +33169,9 @@
       "carbs": 7.8,
       "fiber": 2.4
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "kds-09",
@@ -32997,7 +33265,6 @@
     "tips": "Für Kinder unter 12 Monaten Mais zerkleinern und Salz weglassen.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet"
     ],
     "allergens": [
@@ -33012,7 +33279,9 @@
       "carbs": 28.2,
       "fiber": 3.5
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "kds-10",
@@ -33093,7 +33362,6 @@
     "tips": "Luftdicht aufbewahren – ca. 2 Wochen haltbar.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet"
     ],
     "allergens": [
@@ -33106,7 +33374,9 @@
       "carbs": 5.2,
       "fiber": 1
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "kds-11",
@@ -33175,7 +33445,6 @@
     "tips": "In luftdichtem Behälter aufbewahren.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet"
     ],
     "allergens": [
@@ -33188,7 +33457,9 @@
       "carbs": 7.5,
       "fiber": 1.6
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "kds-12",
@@ -33275,7 +33546,6 @@
     "tips": "Für die Beikost ohne Salz zubereiten.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet"
     ],
     "allergens": [
@@ -33291,7 +33561,9 @@
       "carbs": 21.5,
       "fiber": 3.8
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "kds-13",
@@ -33360,7 +33632,6 @@
     "tips": "Gut auf Vorrat zubereiten und im Toaster frisch aufbacken.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet"
     ],
     "allergens": [
@@ -33375,7 +33646,9 @@
       "carbs": 21.5,
       "fiber": 4.5
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "kds-14",
@@ -33426,7 +33699,6 @@
     "tips": "Im Kühlschrank ca. 2 Wochen haltbar, alternativ einfrieren.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet"
     ],
     "allergens": [
@@ -33440,7 +33712,9 @@
       "carbs": 5.2,
       "fiber": 1.2
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "kds-15",
@@ -33509,7 +33783,6 @@
     "tips": "",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet"
     ],
     "allergens": [
@@ -33523,7 +33796,9 @@
       "carbs": 7.1,
       "fiber": 1.2
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "kds-16",
@@ -33592,7 +33867,6 @@
     "tips": "Im Kühlschrank ca. 5 Tage haltbar.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet"
     ],
     "allergens": [
@@ -33606,7 +33880,9 @@
       "carbs": 11.4,
       "fiber": 1.6
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "kds-17",
@@ -33675,7 +33951,6 @@
     "tips": "Frisch und noch warm schmecken sie am besten.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet"
     ],
     "allergens": [
@@ -33690,7 +33965,9 @@
       "carbs": 10.2,
       "fiber": 2.1
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "kds-18",
@@ -33746,7 +34023,6 @@
     "tips": "Im Kühlschrank ca. 2 Wochen haltbar.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet"
     ],
     "allergens": [
@@ -33759,7 +34035,9 @@
       "carbs": 10.1,
       "fiber": 1.4
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "kds-19",
@@ -33835,7 +34113,6 @@
     "tips": "",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet"
     ],
     "allergens": [
@@ -33851,7 +34128,9 @@
       "carbs": 24.3,
       "fiber": 3.2
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "kds-20",
@@ -33932,7 +34211,6 @@
     "tips": "Vor dem ersten Geburtstag keinen Ahornsirup verwenden. Im Toaster frisch aufbacken.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet",
       "Herbst",
       "Winter"
@@ -33950,7 +34228,9 @@
       "carbs": 31.2,
       "fiber": 4.3
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "kds-21",
@@ -34049,7 +34329,6 @@
     "tips": "Optional mit Schokotropfen verzieren.",
     "imageUrl": null,
     "tags": [
-      "Vegan",
       "Mealprep-geeignet"
     ],
     "allergens": [
@@ -34064,6 +34343,8 @@
       "carbs": 18.4,
       "fiber": 3.6
     },
-    "dietCategory": "vegan"
+    "dietCategory": "vegan",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   }
 ]

@@ -92,8 +92,7 @@
   "tips": "Empfohlene Apfelsorten: Boskop, Gala, Golden Delicious oder Braeburn.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
-    "Schweizer",
+    "Schweizerisch",
     "Herbst"
   ],
   "dietCategory": "vegan",
@@ -109,5 +108,7 @@
     "fat": 25.8,
     "carbs": 63.2,
     "fiber": 5.8
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

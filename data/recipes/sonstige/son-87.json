@@ -1,16 +1,14 @@
 {
   "id": "son-87",
   "name": "Shakshuka mit Cannellini Bohnen, Tomaten, Parmesan und Spinat",
-  "category": "Vegetarische Hauptgerichte",
+  "category": "Eiergerichte",
   "timeMinutes": 30,
   "basePortions": 2,
   "tags": [
-    "Vegetarisch",
-    "Schnell und einfach",
     "Frühstück",
-    "Mittagsgericht",
-    "Abendgericht",
-    "Orientalisch"
+    "Mittagessen",
+    "Abendessen",
+    "Nahöstlich"
   ],
   "ingredients": [
     {
@@ -128,5 +126,7 @@
     "ei",
     "gluten",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

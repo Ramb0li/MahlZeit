@@ -1,14 +1,13 @@
 {
   "id": "pas-84",
   "name": "Pasta gratiniert in cremiger Käse-Rahm-Sauce mit Thymian",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 25,
   "basePortions": 4,
   "tags": [
-    "Vegetarisch",
     "Ofengericht",
-    "Abendgericht",
-    "Mittagsgericht",
+    "Abendessen",
+    "Mittagessen",
     "Herbst",
     "Winter"
   ],
@@ -129,5 +128,7 @@
     "gluten",
     "milch",
     "sulfite"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

@@ -42,16 +42,11 @@
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/kar-01-1780785412795.jpg",
   "tags": [
-    "Vegan",
     "Kinderfreundlich",
-    "Vegetarisch",
-    "Frühling",
-    "Sommer",
-    "Herbst",
-    "Winter",
-    "Mittagsgericht",
-    "Abendgericht",
-    "Ofengericht"
+    "Mittagessen",
+    "Abendessen",
+    "Ofengericht",
+    "Ganzjährig"
   ],
   "allergens": [],
   "nutrition": {
@@ -63,5 +58,7 @@
   },
   "imageZutaten": null,
   "imageKochen": null,
-  "dietCategory": "vegan"
+  "dietCategory": "vegan",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

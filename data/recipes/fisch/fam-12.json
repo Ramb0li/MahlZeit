@@ -6,8 +6,8 @@
   "tags": [
     "Grillgericht",
     "Sommer",
-    "Abendgericht",
-    "Mittagsgericht",
+    "Abendessen",
+    "Mittagessen",
     "Asiatisch"
   ],
   "weatherType": "warm",
@@ -82,5 +82,7 @@
     "carbs": 2.1,
     "fiber": 0.2
   },
-  "dietCategory": "fish"
+  "dietCategory": "fish",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

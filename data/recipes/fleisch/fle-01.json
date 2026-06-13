@@ -73,7 +73,7 @@
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fle-01-1780784909551.jpg",
   "tags": [
-    "Orientalisch"
+    "Nahöstlich"
   ],
   "allergens": [
     "milch"
@@ -87,5 +87,7 @@
   },
   "imageZutaten": null,
   "imageKochen": null,
-  "dietCategory": "meat"
+  "dietCategory": "meat",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

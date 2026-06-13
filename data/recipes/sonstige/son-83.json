@@ -1,16 +1,14 @@
 {
   "id": "son-83",
   "name": "Frittata mit Fourme d'Ambert und Hokkaido-Kürbis",
-  "category": "Vegetarische Hauptgerichte",
+  "category": "Eiergerichte",
   "timeMinutes": 35,
   "basePortions": 4,
   "tags": [
-    "Vegetarisch",
     "Herbst",
     "Winter",
     "Ofengericht",
-    "Abendgericht",
-    "Schnell und einfach"
+    "Abendessen"
   ],
   "ingredients": [
     {
@@ -78,5 +76,7 @@
   "allergens": [
     "ei",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

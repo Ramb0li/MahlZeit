@@ -1,18 +1,16 @@
 {
   "id": "ei-20",
   "name": "Frittata mit Tomate, Mozzarella & Basilikum",
-  "category": "Frühstück",
+  "category": "Eiergerichte",
   "timeMinutes": 20,
   "basePortions": 2,
   "tags": [
-    "Vegetarisch",
-    "Schnell und einfach",
     "Ofengericht",
-    "Mittagsgericht",
+    "Mittagessen",
     "Italienisch",
     "Frühling",
     "Sommer",
-    "Frühstücksgericht"
+    "Frühstück"
   ],
   "ingredients": [
     {
@@ -105,5 +103,7 @@
     "ei",
     "milch",
     "sulfite"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

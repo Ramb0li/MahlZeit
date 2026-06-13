@@ -6,8 +6,8 @@
   "basePortions": 2,
   "tags": [
     "Ofengericht",
-    "Abendgericht",
-    "Mittagsgericht",
+    "Abendessen",
+    "Mittagessen",
     "Kinderfreundlich"
   ],
   "ingredients": [
@@ -103,5 +103,7 @@
   "allergens": [
     "ei",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

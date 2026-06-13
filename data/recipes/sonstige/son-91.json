@@ -1,14 +1,13 @@
 {
   "id": "son-91",
   "name": "Wraps mit Zucchini, Hüttenkäse und Makrele",
-  "category": "Wraps & Sandwiches",
+  "category": "Wraps, Sandwiches & Burger",
   "timeMinutes": 15,
   "basePortions": 6,
   "tags": [
-    "Fisch",
     "Mealprep-geeignet",
-    "Abendgericht",
-    "Mittagsgericht",
+    "Abendessen",
+    "Mittagessen",
     "Frühling",
     "Sommer"
   ],
@@ -94,5 +93,7 @@
   "allergens": [
     "fisch",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

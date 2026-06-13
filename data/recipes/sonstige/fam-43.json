@@ -95,5 +95,7 @@
     "carbs": 2.1,
     "fiber": 0.3
   },
-  "dietCategory": "vegetarian"
+  "dietCategory": "vegetarian",
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

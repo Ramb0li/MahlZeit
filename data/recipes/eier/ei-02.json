@@ -1,7 +1,7 @@
 {
   "id": "ei-02",
   "name": "Spiegeleier mit Rahmspinat und Bratkartoffeln",
-  "category": "Vegetarische Hauptgerichte",
+  "category": "Eiergerichte",
   "timeMinutes": 35,
   "ingredients": [
     {
@@ -128,10 +128,9 @@
     "Herbst",
     "Winter",
     "Kinderfreundlich",
-    "Vegetarisch",
-    "Mittagsgericht",
-    "Abendgericht",
-    "Schweizer",
+    "Mittagessen",
+    "Abendessen",
+    "Schweizerisch",
     "Frühling"
   ],
   "allergens": [
@@ -266,5 +265,7 @@
         }
       ]
     }
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

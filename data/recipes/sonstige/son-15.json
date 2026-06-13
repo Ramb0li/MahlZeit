@@ -37,7 +37,6 @@
   "tips": "Für ein zweifarbiges Eis die Formen zur Hälfte füllen, kurz anfrieren lassen, dann die zweite Schicht einfüllen.",
   "imageUrl": null,
   "tags": [
-    "Vegetarisch",
     "Kinderfreundlich",
     "Sommer"
   ],
@@ -52,5 +51,7 @@
     "fat": 8.2,
     "carbs": 13.6,
     "fiber": 1.8
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

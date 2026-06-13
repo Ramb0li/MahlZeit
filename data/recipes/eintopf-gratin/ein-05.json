@@ -49,7 +49,6 @@
   "tips": "",
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ein-05--1780579170085.jpeg",
   "tags": [
-    "Vegan",
     "Herbst",
     "Winter",
     "Ofengericht"
@@ -66,5 +65,7 @@
     "fiber": 7.2
   },
   "dietCategory": "vegan",
-  "imageZutaten": null
+  "imageZutaten": null,
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

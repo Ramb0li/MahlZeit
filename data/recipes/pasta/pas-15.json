@@ -1,10 +1,9 @@
 {
   "id": "pas-15",
   "name": "Spaghetti mit Pfifferlingen und Cherrytomaten",
-  "category": "Pasta",
+  "category": "Pasta & Teigwaren",
   "timeMinutes": 30,
   "tags": [
-    "Vegetarisch",
     "Herbst"
   ],
   "weatherType": "neutral",
@@ -84,5 +83,7 @@
     "fat": 12.4,
     "carbs": 74.2,
     "fiber": 10.5
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

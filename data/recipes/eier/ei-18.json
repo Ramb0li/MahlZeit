@@ -1,14 +1,12 @@
 {
   "id": "ei-18",
   "name": "Käsetoast mit Cheddar und Butterkäse mit Spiegelei",
-  "category": "Frühstück",
+  "category": "Eiergerichte",
   "timeMinutes": 15,
   "basePortions": 2,
   "tags": [
-    "Vegetarisch",
-    "Schnell und einfach",
     "Kinderfreundlich",
-    "Frühstücksgericht"
+    "Frühstück"
   ],
   "ingredients": [
     {
@@ -96,5 +94,7 @@
   "allergens": [
     "ei",
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

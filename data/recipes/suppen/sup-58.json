@@ -5,12 +5,9 @@
   "timeMinutes": 30,
   "basePortions": 4,
   "tags": [
-    "Vegan",
-    "Vegetarisch",
-    "Schnell und einfach",
     "Asiatisch",
     "Mealprep-geeignet",
-    "Abendgericht"
+    "Abendessen"
   ],
   "ingredients": [
     {
@@ -116,5 +113,7 @@
   "imageKochen": null,
   "allergens": [
     "milch"
-  ]
+  ],
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

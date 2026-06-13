@@ -50,7 +50,6 @@
   "tips": "Die Blätter müssen wirklich trocken sein – sonst werden sie nicht knusprig, sondern gedämpft.",
   "imageUrl": null,
   "tags": [
-    "Vegan",
     "Mealprep-geeignet"
   ],
   "dietCategory": "vegan",
@@ -61,5 +60,7 @@
     "fat": 3.2,
     "carbs": 5.1,
     "fiber": 1.4
-  }
+  },
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }

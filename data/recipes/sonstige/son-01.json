@@ -1,7 +1,7 @@
 {
   "id": "son-01",
   "name": "Fajitas",
-  "category": "Wraps & Sandwiches",
+  "category": "Wraps, Sandwiches & Burger",
   "timeMinutes": 25,
   "ingredients": [
     {
@@ -69,5 +69,7 @@
     "fiber": 6.2
   },
   "dietCategory": "vegetarian",
-  "imageZutaten": null
+  "imageZutaten": null,
+  "sourceType": "mahlzyt",
+  "_migrated_v2": true
 }
