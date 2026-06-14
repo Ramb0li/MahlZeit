@@ -4,7 +4,7 @@ import { Check, Download, RefreshCw, Plus, Trash2, RotateCcw, X, ChevronDown, Pa
 import { getWeekId, getWeekDays, nextWeek, formatAmount } from '@/lib/utils';
 import { format } from 'date-fns';
 import { de } from 'date-fns/locale';
-import type { ShoppingList, ShoppingGroups, ShoppingListState, CustomShoppingItem, Recipe } from '@/types';
+import type { ShoppingList, ShoppingGroups, ShoppingListState, CustomShoppingItem, Recipe, Promotion } from '@/types';
 
 const DAY_LABELS_SHORT = ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'];
 const GROUP_COLORS = [
@@ -66,6 +66,13 @@ const STORE_NAMES: Record<string, string> = {
   lidl:   'Lidl',
   volg:   'Volg',
 };
+
+function promoLabel(promotions: Promotion[]): string {
+  const stores = Array.from(new Set(promotions.map(p => STORE_NAMES[p.store] ?? p.store))).join(', ');
+  const firstDiscount = promotions.find(p => p.discount)?.discount;
+  const full = firstDiscount ? `${stores} –${firstDiscount}` : `Aktion ${stores}`;
+  return full.length > 25 ? full.slice(0, 24) + '…' : full;
+}
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
@@ -944,7 +951,7 @@ export function ShoppingListView() {
                               className="ml-1.5 inline-flex items-center text-[10px] px-1.5 py-0.5 rounded-full font-medium cursor-default"
                               style={{ backgroundColor: '#dcfce7', color: '#166534' }}
                             >
-                              Aktion
+                              {promoLabel(item.promotions)}
                             </span>
                           )}
                         </span>

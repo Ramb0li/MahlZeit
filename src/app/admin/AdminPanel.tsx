@@ -164,6 +164,7 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
   const [showImportModal, setShowImportModal] = useState(false);
   const [seeding,         setSeeding]         = useState(false);
   const [showSeedModal,   setShowSeedModal]   = useState(false);
+  const [togglingId,      setTogglingId]      = useState<string | null>(null);
 
   const filteredRecipes = useMemo(() => recipes.filter(r => {
     if (recipeCatFilter !== 'Alle' && r.category !== recipeCatFilter) return false;
@@ -632,7 +633,7 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
               <table style={{ width: '100%', fontSize: 13, borderCollapse: 'collapse' }}>
                 <thead>
                   <tr style={{ background: 'var(--bg-2)', borderBottom: '1px solid var(--border)' }}>
-                    {['Rezept', 'Kategorie', 'Zeit', 'Bild', 'Quelle', 'Aktionen'].map(h => (
+                    {['Rezept', 'Kategorie', 'Zeit', 'Bild', 'Quelle', 'Status', 'Aktionen'].map(h => (
                       <th key={h} style={{ textAlign: 'left', padding: '10px 16px', fontWeight: 700, fontSize: 11, textTransform: 'uppercase', letterSpacing: '.06em', color: 'var(--muted)' }}>{h}</th>
                     ))}
                   </tr>
@@ -640,7 +641,7 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                 <tbody>
                   {filteredRecipes.length === 0 && (
                     <tr>
-                      <td colSpan={6} style={{ textAlign: 'center', padding: '40px 16px', color: 'var(--muted)', fontSize: 13 }}>
+                      <td colSpan={7} style={{ textAlign: 'center', padding: '40px 16px', color: 'var(--muted)', fontSize: 13 }}>
                         Keine Rezepte gefunden.
                       </td>
                     </tr>
@@ -668,6 +669,32 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                         </td>
                         <td style={{ padding: '10px 16px', fontSize: 12, maxWidth: 180, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', color: 'var(--muted)' }} title={r.source}>
                           {r.source ?? '—'}
+                        </td>
+                        <td style={{ padding: '10px 16px' }}>
+                          <button
+                            disabled={togglingId === r.id}
+                            onClick={async () => {
+                              if (togglingId) return;
+                              const next = !r.approved;
+                              setTogglingId(r.id);
+                              setRecipes(prev => prev.map(x => x.id === r.id ? { ...x, approved: next } : x));
+                              const res = await fetch('/api/admin/recipes', {
+                                method: 'PUT',
+                                headers: { 'Content-Type': 'application/json' },
+                                body: JSON.stringify({ ...r, approved: next }),
+                              });
+                              if (!res.ok) setRecipes(prev => prev.map(x => x.id === r.id ? { ...x, approved: r.approved } : x));
+                              setTogglingId(null);
+                            }}
+                            style={{
+                              padding: '3px 10px', borderRadius: 999, fontSize: 11, fontWeight: 700, cursor: togglingId === r.id ? 'wait' : 'pointer', border: 'none',
+                              background: r.approved === true ? '#dcfce7' : '#fef9c3',
+                              color:      r.approved === true ? '#166534' : '#854d0e',
+                              opacity: togglingId === r.id ? 0.6 : 1,
+                            }}
+                          >
+                            {r.approved === true ? 'Freigegeben' : 'Entwurf'}
+                          </button>
                         </td>
                         <td style={{ padding: '10px 16px' }}>
                           <div style={{ display: 'flex', gap: 6 }}>

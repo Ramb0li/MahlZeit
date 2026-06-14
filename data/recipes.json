@@ -4506,44 +4506,175 @@
     "name": "Linsen-Gemüse-Lasagne",
     "category": "Aufläufe & Gratins",
     "timeMinutes": 75,
-    "ingredients": [],
-    "weatherType": "kalt",
-    "source": "Cuiseline",
-    "basePortions": 4,
-    "description": "Klassische Lasagne vegetarisch.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/pas-02-1780699528706.jpg",
     "tags": [
       "Mealprep-geeignet",
-      "Mittagessen",
+      "Mittagsgericht",
       "Herbst",
       "Winter",
       "Ofengericht",
-      "Abendessen"
+      "Vegetarisch",
+      "Kinderfreundlich",
+      "Frühling",
+      "Abendgericht",
+      "Italienisch"
     ],
+    "ingredients": [
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 2,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Karotte",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knollensellerie",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Peperoni",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Zucchetti",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomatenmark",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "grüne Linsen",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebouillon",
+        "amount": 4,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Italienische Kräuter",
+        "amount": 2,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "All'arrabbiata Gewürz",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Butter",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Mehl",
+        "amount": 60,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Milch oder Sojadrink",
+        "amount": 1,
+        "unit": "l",
+        "perPortions": 8
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 8
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 2,
+        "unit": "Prisen",
+        "perPortions": 8
+      },
+      {
+        "name": "Muskatnuss",
+        "amount": 2,
+        "unit": "Prisen",
+        "perPortions": 8
+      },
+      {
+        "name": "Lasagneblätter",
+        "amount": 1,
+        "unit": "Pkg",
+        "perPortions": 8
+      },
+      {
+        "name": "Mozzarella, gerieben",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Reibkäse (z.B. Sbrinz oder Parmesan)",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 8
+      }
+    ],
+    "weatherType": "kalt",
+    "source": "MahlZeit",
+    "basePortions": 6,
+    "description": "Schicht für Schicht voller Gemüse, Linsen und cremiger Béchamelsauce – eine Lasagne zum Wohlfühlen.",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/pas-02-1780699528706.jpg",
     "imageZutaten": null,
     "imageKochen": null,
-    "allergens": [
-      "gluten",
-      "milch"
-    ],
-    "nutrition": {
-      "kcal": 562,
-      "protein": 24.3,
-      "fat": 16.8,
-      "carbs": 74.2,
-      "fiber": 8.9
-    },
-    "dietCategory": "vegetarian",
     "steps": [
       "Zwiebel und Knoblauch fein hacken. Karotte, Knollensellerie, Zucchetti, Peperoni und Champignons klein schneiden.",
       "Olivenöl in einer grossen Pfanne erhitzen. Gemüse und Champignons beigeben und andämpfen.",
-      "Tomatenpüree hinzufügen und kurz mitrösten.",
+      "Tomatenmark hinzufügen und kurz mitrösten.",
       "Linsen beigeben und kurz mitdämpfen.",
       "Optional mit Weisswein ablöschen und Flüssigkeit einkochen lassen.",
-      "Gemüsebouillon beigeben und aufkochen. Mit italienischen Kräutern, All’arrabbiata-Gewürz, Salz und Pfeffer würzen.",
+      "Gemüsebouillon beigeben und aufkochen. Mit italienischen Kräutern, All’arrabbiata Gewürz, Salz und Pfeffer würzen.",
       "Linsen-Gemüse-Sauce bei kleiner Hitze ca. 15 Minuten köcheln lassen. Sauce abschmecken.",
       "Backofen auf 200 °C Ober-/Unterhitze vorheizen. Gratinform mit wenig Butter einfetten.",
-      "Für Béchamelsauce Butter in einer Pfanne schmelzen. Mehl beigeben und unter Rühren mit Schwingbesen kurz dünsten, ohne dass Mehl Farbe annimmt.",
+      "Für Béchamelsauce Butter in einer Pfanne schmelzen. Mehl beigeben und unter Rühren mit Schwingbesen kurz dünsten.",
       "Milch oder Sojadrink auf einmal dazugiessen und unter ständigem Rühren aufkochen.",
       "Mit Salz, Pfeffer und Muskatnuss würzen. Hitze reduzieren und Sauce unter gelegentlichem Rühren ca. 10 Minuten köcheln lassen, bis sie sämig ist.",
       "Wenig Béchamelsauce auf Boden der vorbereiteten Form verteilen.",
@@ -4552,8 +4683,162 @@
       "Restlichen Mozzarella und Sbrinz darüberstreuen.",
       "Lasagne in Ofenmitte ca. 35–40 Minuten backen, bis Oberfläche goldbraun ist."
     ],
-    "sourceType": "mahlzyt",
-    "_migrated_v2": true
+    "ingredientGroups": [
+      {
+        "name": "Zutaten für Linsen-Gemüse-Sauce",
+        "ingredients": [
+          {
+            "name": "Zwiebel",
+            "amount": 1,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Knoblauch",
+            "amount": 2,
+            "unit": "Zehe",
+            "perPortions": 4
+          },
+          {
+            "name": "Karotte",
+            "amount": 2,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Knollensellerie",
+            "amount": 200,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Peperoni",
+            "amount": 1,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Zucchetti",
+            "amount": 1,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Olivenöl",
+            "amount": 3,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Tomatenmark",
+            "amount": 1,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "grüne Linsen",
+            "amount": 200,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Gemüsebouillon",
+            "amount": 4,
+            "unit": "dl",
+            "perPortions": 4
+          },
+          {
+            "name": "Italienische Kräuter",
+            "amount": 2,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "All'arrabbiata Gewürz",
+            "amount": 0.5,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Salz",
+            "amount": 1,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Pfeffer",
+            "amount": 1,
+            "unit": "Prise",
+            "perPortions": 4
+          }
+        ]
+      },
+      {
+        "name": "Zutaten für Béchamelsauce",
+        "ingredients": [
+          {
+            "name": "Butter",
+            "amount": 100,
+            "unit": "g",
+            "perPortions": 8
+          },
+          {
+            "name": "Mehl",
+            "amount": 60,
+            "unit": "g",
+            "perPortions": 8
+          },
+          {
+            "name": "Milch oder Sojadrink",
+            "amount": 1,
+            "unit": "l",
+            "perPortions": 8
+          },
+          {
+            "name": "Salz",
+            "amount": 1,
+            "unit": "TL",
+            "perPortions": 8
+          },
+          {
+            "name": "Pfeffer",
+            "amount": 2,
+            "unit": "Prisen",
+            "perPortions": 8
+          },
+          {
+            "name": "Muskatnuss",
+            "amount": 2,
+            "unit": "Prisen",
+            "perPortions": 8
+          }
+        ]
+      },
+      {
+        "name": "Zutaten für Lasagne",
+        "ingredients": [
+          {
+            "name": "Lasagneblätter",
+            "amount": 1,
+            "unit": "Pkg",
+            "perPortions": 8
+          },
+          {
+            "name": "Mozzarella, gerieben",
+            "amount": 250,
+            "unit": "g",
+            "perPortions": 8
+          },
+          {
+            "name": "Reibkäse (z.B. Sbrinz oder Parmesan)",
+            "amount": 200,
+            "unit": "g",
+            "perPortions": 8
+          }
+        ]
+      }
+    ],
+    "dietCategory": "vegetarian"
   },
   {
     "id": "pas-03",
@@ -5561,7 +5846,9 @@
       "fiber": 11.2
     },
     "sourceType": "mahlzyt",
-    "_migrated_v2": true
+    "_migrated_v2": true,
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "pas-18",
@@ -18432,15 +18719,20 @@
     "id": "sal-12",
     "name": "Linsen-Apfel-Salat",
     "category": "Salate & Bowls",
-    "timeMinutes": 25,
+    "timeMinutes": 75,
     "tags": [
-      "Herbst"
+      "Mittagessen",
+      "Abendessen",
+      "Mealprep-geeignet",
+      "Kinderfreundlich",
+      "Resteverwertung",
+      "Budgetfreundlich",
+      "Für Gäste",
+      "Gut zum Mitnehmen",
+      "Sommer",
+      "Frühling",
+      "Nahöstlich"
     ],
-    "weatherType": "neutral",
-    "source": "Cuiseline",
-    "basePortions": 4,
-    "dietCategory": "vegan",
-    "description": "Proteinreicher Linsensalat mit Apfel, Granatapfel und Thymian.",
     "ingredients": [
       {
         "name": "grüne Linsen",
@@ -18449,8 +18741,8 @@
         "perPortions": 4
       },
       {
-        "name": "Gemüsebrühe",
-        "amount": 700,
+        "name": "Gemüsebouillon",
+        "amount": 600,
         "unit": "ml",
         "perPortions": 4
       },
@@ -18461,9 +18753,39 @@
         "perPortions": 4
       },
       {
-        "name": "Granatapfel",
+        "name": "Zitrone ",
         "amount": 1,
         "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Apfelessig",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 6,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Ahornsirup",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 3,
+        "unit": "Prisen",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 2,
+        "unit": "Prisen",
         "perPortions": 4
       },
       {
@@ -18491,46 +18813,31 @@
         "perPortions": 4
       },
       {
-        "name": "Olivenöl",
-        "amount": 6,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Apfelessig",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Ahornsirup",
+        "name": "Granatapfel",
         "amount": 1,
-        "unit": "TL",
+        "unit": "Stk",
         "perPortions": 4
       }
     ],
-    "steps": [
-      "1. Gemüsebrühe mit Lorbeerblatt aufkochen. Linsen abspülen, bissfest kochen. Abgiessen und abkühlen lassen.",
-      "2. Apfelessig, Olivenöl, Ahornsirup, Salz und Pfeffer in grosser Schüssel verrühren.",
-      "3. Äpfel fein würfeln und ins Dressing geben.",
-      "4. Rote Zwiebel in feine Streifen schneiden, Petersilie hacken, Thymian abzupfen.",
-      "5. Linsen und alle Zutaten zum Dressing geben, vermischen.",
-      "6. Ca. 30 Minuten ziehen lassen. Mit Granatapfelkernen garnieren."
-    ],
-    "tips": "Schmeckt besonders gut wenn er ca. eine halbe Stunde ziehen kann.",
+    "weatherType": "warm",
+    "source": "Cuiseline",
+    "basePortions": 4,
+    "description": "Ein farbenfroher Linsensalat mit süss-säuerlicher Note – sättigend, frisch und wunderbar aromatisch.",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---linsen-apfel-salat-1--1780579776842.jpeg",
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---linsen-apfel-salat-2--1780579783529.jpeg",
     "imageKochen": null,
-    "allergens": [],
-    "nutrition": {
-      "kcal": 398,
-      "protein": 16.2,
-      "fat": 16.8,
-      "carbs": 45.3,
-      "fiber": 11.8
-    },
-    "sourceType": "mahlzyt",
-    "_migrated_v2": true
+    "steps": [
+      "Gemüsebouillon mit Lorbeerblatt aufkochen.",
+      "Linsen abspülen, beigeben und bei kleiner Hitze ca. 25–30 Minuten köcheln lassen, bis sie noch leicht bissfest sind. Abgiessen und auskühlen lassen.",
+      "Zitrone auspressen. Zitronensaft, Apfelessig, Olivenöl, Ahornsirup, Salz und Pfeffer in einer grossen Schüssel verrühren.",
+      "Äpfel in kleine Stücke schneiden, zum Dressing geben und mischen.",
+      "Zwiebel in feine Streifen schneiden. Petersilie hacken, Thymianblättchen abzupfen.",
+      "Granatapfel einschneiden und in einer Schüssel mit Wasser vorsichtig aufbrechen. Kerne herauslösen und abtropfen lassen.",
+      "Linsen, Granatapfelkerne, Zwiebel, Petersilie und Thymian zum Dressing geben und gut vermischen.",
+      "Salat ca. 30 Minuten ziehen lassen.",
+      "Mit Petersilie garnieren und servieren."
+    ],
+    "dietCategory": "vegan"
   },
   {
     "id": "sal-13",
@@ -34346,5 +34653,458 @@
     "dietCategory": "vegan",
     "sourceType": "mahlzyt",
     "_migrated_v2": true
+  },
+  {
+    "id": "rec-1780953992976-qmwcv",
+    "name": "Thai Nudelsuppe mit Tofu",
+    "category": "Suppen, Eintöpfe & Currys",
+    "timeMinutes": 20,
+    "tags": [
+      "Vegetarisch",
+      "Asiatisch",
+      "Mittagsgericht",
+      "Abendgericht",
+      "Vegan",
+      "Mealprep-geeignet",
+      "Frühling",
+      "Herbst",
+      "Winter",
+      "Kinderfreundlich"
+    ],
+    "ingredients": [
+      {
+        "name": "Kokosöl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Schalotte",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehen",
+        "amount": 1,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitronengras",
+        "amount": 2,
+        "unit": "Stängel",
+        "perPortions": 4
+      },
+      {
+        "name": "Rote Currypaste",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebouillon",
+        "amount": 0.5,
+        "unit": "l",
+        "perPortions": 4
+      },
+      {
+        "name": "Kokosmilch",
+        "amount": 2.5,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Sojasauce",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Tofu nature",
+        "amount": 220,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Karotten",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Breite Reisnudeln",
+        "amount": 125,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Mungbohnensprossen",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Rote Chilis",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Limettenblätter",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Thai-Basilikum",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Limetten",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "kalt",
+    "source": "MahlZeit",
+    "basePortions": 4,
+    "description": "Eine wohltuende asiatische Nudelsuppe mit zartem Tofu, kombiniert mit fernöstlichen Gewürzen, frischen Geschmacksnuancen und würziger Schärfe. Perfekt für eine schnelle und aromavolle Mahlzeit.",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/1c475ced-8e43-4f74-9fd4-3e4d370886e1-1780954259698.jpg",
+    "imageZutaten": null,
+    "imageKochen": null,
+    "steps": [
+      "1. Schalotte würfeln, Knoblauchzehe und das Innere vom Zitronengras fein hacken. Tofu würfeln. Karotten in Streifen schneiden. Chili entkernen und in feine Ringe schneiden.",
+      "2. Kokosöl in einer Pfanne erwärmen und Schalotte, Knoblauch, Zitronengras, Kaffirlimettenblätter sowie Currypaste darin andämpfen.",
+      "3. Gemüsebouillon und Kokosmilch dazugiessen und aufkochen lassen.",
+      "4. Sojasauce, Karotten und Tofu in die Suppe geben, ca. 3 Minuten köcheln lassen.",
+      "5. Geraspelte oder in Stücken geschnittene Rüebli beigeben und etwa 3 Minuten köcheln lassen.",
+      "6. Reisnudeln nach Angabe auf der Verpackung kochen und in die Suppe geben.",
+      "7. Suppe mit Mungbohnensprossen, Chili, frischem Thai-Basilikum und einem Limettenschnitz garniert servieren."
+    ],
+    "dietCategory": "vegan"
+  },
+  {
+    "id": "rec-1780955620762-cmk4x",
+    "name": "Kürbis-Ingwer-Suppe",
+    "category": "Suppen, Eintöpfe & Currys",
+    "timeMinutes": 20,
+    "tags": [
+      "Vegetarisch",
+      "Vegan",
+      "Mealprep-geeignet",
+      "Kinderfreundlich",
+      "Herbst",
+      "Winter",
+      "Mittagsgericht",
+      "Abendgericht"
+    ],
+    "ingredients": [],
+    "weatherType": "kalt",
+    "source": "cuiseline",
+    "basePortions": 4,
+    "description": "",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/gro---sup-01-1-ku-rbis-kokos-suppe--1780955617506.jpg",
+    "imageZutaten": null,
+    "imageKochen": null,
+    "dietCategory": "vegan"
+  },
+  {
+    "id": "rec-1781043360228-i0pcq",
+    "name": "Eier in Senfsauce mit Blumenkohl-Kartoffel-Püree",
+    "category": "Vegetarische Hauptgerichte",
+    "timeMinutes": 40,
+    "tags": [
+      "Vegetarisch",
+      "Mittagsgericht",
+      "Abendgericht",
+      "Herbst",
+      "Frühling",
+      "Winter",
+      "Kinderfreundlich",
+      "Mealprep-geeignet"
+    ],
+    "ingredients": [
+      {
+        "name": "Blumenkohl",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 2
+      },
+      {
+        "name": "Kartoffeln, mehligkochend",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 2
+      },
+      {
+        "name": "Butter",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 2
+      },
+      {
+        "name": "Vollkorn-Dinkelmehl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 2
+      },
+      {
+        "name": "Gemüsebouillon",
+        "amount": 125,
+        "unit": "ml",
+        "perPortions": 2
+      },
+      {
+        "name": "Milch",
+        "amount": 60,
+        "unit": "ml",
+        "perPortions": 2
+      },
+      {
+        "name": "Senf",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 2
+      },
+      {
+        "name": "Eier",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 2
+      },
+      {
+        "name": "Frischkäse",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 2
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 2
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 2
+      },
+      {
+        "name": "Muskatnuss",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 2
+      },
+      {
+        "name": "Petersilie",
+        "amount": 4,
+        "unit": "Stängel",
+        "perPortions": 2
+      }
+    ],
+    "weatherType": "neutral",
+    "source": "MahlZeit",
+    "basePortions": 2,
+    "description": "Ein cremiges, klassisches Gericht mit zartem Blumenkohl und hartgekochten Eiern in würziger Senfsauce, garniert mit frischer Petersilie.",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-06-1781043823176.jpg",
+    "imageZutaten": null,
+    "imageKochen": null,
+    "steps": [
+      "1. Blumenkohl rüsten, waschen und in kleine Röschen teilen. Kartoffeln schälen und in kleine Stücke schneiden.",
+      "2. Blumenkohl und Kartoffeln in ausreichend Wasser ca. 15–20 Minuten weich kochen.",
+      "3. Währenddessen Butter in einer Pfanne schmelzen. Mehl beigeben und kurz anschwitzen. Mit Bouillon und Milch ablöschen.",
+      "4. Senf einrühren und Sauce bei mittlerer Hitze ca. 10 Minuten köcheln lassen. Mit Salz und Pfeffer abschmecken.",
+      "5. Eier in kochendem Wasser ca. 8–9 Minuten hart kochen. Kalt abschrecken und schälen.",
+      "6. Blumenkohl und Kartoffeln abgiessen, gut ausdampfen lassen und pürieren.",
+      "7. Frischkäse unter das Püree rühren. Mit Salz, Pfeffer und Muskat abschmecken.",
+      "8. Petersilie waschen, trocken schütteln, Blätter abzupfen und fein hacken.",
+      "9. Blumenkohl-Kartoffel-Püree mit Senfsauce und Eiern anrichten. Mit Petersilie garnieren und servieren."
+    ],
+    "dietCategory": "vegetarian"
+  },
+  {
+    "id": "rec-1781388622099-a0uz6",
+    "name": "Tomaten-Mozzarella-Salat",
+    "category": "Salate & Bowls",
+    "timeMinutes": 10,
+    "tags": [
+      "Brunch",
+      "Mittagessen",
+      "Abendessen",
+      "Mealprep-geeignet",
+      "Kinderfreundlich",
+      "Resteverwertung",
+      "Budgetfreundlich",
+      "Für Gäste",
+      "Gut zum Mitnehmen",
+      "Ohne Kochen",
+      "Sommer",
+      "Italienisch",
+      "Mediterran"
+    ],
+    "ingredients": [
+      {
+        "name": "Tomaten (z.B. Ochsenherz)",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Mozzarella",
+        "amount": 2,
+        "unit": "Pkg",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Balsamico-Essig",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Basilikum",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Brot",
+        "amount": 8,
+        "unit": "Scheibe",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "warm",
+    "source": "MahlZeit",
+    "basePortions": 4,
+    "description": "Insalata Caprese – sonnengereifte Tomaten, cremiger Mozzarella und frischer Basilikum: so einfach und fein schmeckt Sommer.",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/bryony-elena-djgeisqeeiw-unsplash-1781388414561.jpg",
+    "imageZutaten": null,
+    "imageKochen": null,
+    "steps": [
+      "Tomaten und Mozzarella in Scheiben schneiden.",
+      "Tomaten- und Mozzarellascheiben abwechselnd auf Teller anrichten.",
+      "Mit Salz und Pfeffer würzen. Olivenöl und wenig Balsamico darüberträufeln.",
+      "Mit Basilikum garnieren und mit Brot servieren."
+    ],
+    "dietCategory": "vegetarian"
+  },
+  {
+    "id": "rec-1781389369119-naex6",
+    "name": "Tomatensalat mit Burrata",
+    "category": "Salate & Bowls",
+    "timeMinutes": 10,
+    "tags": [
+      "Brunch",
+      "Mittagessen",
+      "Abendessen",
+      "Mealprep-geeignet",
+      "Kinderfreundlich",
+      "Resteverwertung",
+      "Für Gäste",
+      "Gut zum Mitnehmen",
+      "Ohne Kochen",
+      "Sommer",
+      "Italienisch",
+      "Mediterran"
+    ],
+    "ingredients": [
+      {
+        "name": "Tomaten (z.B. Ochsenherz oder Datteltomaten)",
+        "amount": 800,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Burrata ",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Basilikumpesto",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Pinienkerne",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Basilikum",
+        "amount": 5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Brot",
+        "amount": 8,
+        "unit": "Scheibe",
+        "perPortions": 4
+      }
+    ],
+    "weatherType": "warm",
+    "source": "MahlZeit",
+    "basePortions": 4,
+    "description": "Sommer auf dem Teller: sonnengereifte Tomaten, cremige Burrata und frisches Pesto.",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/sebastian-coman-photography-a8ztjz57rvm-unsplash-1781388927194.jpg",
+    "imageZutaten": null,
+    "imageKochen": null,
+    "steps": [
+      "Tomaten in Scheiben schneiden bzw. Datteltomaten halbieren.",
+      "Tomaten zusammen mit Burrata auf Tellern anrichten.",
+      "Pesto darüberträufeln. Mit Pinienkernen und Basilikumblättern garnieren.",
+      "Mit Brot servieren."
+    ],
+    "dietCategory": "vegetarian"
+  },
+  {
+    "id": "rec-1781389844282-5ken5",
+    "name": "Grillieren",
+    "category": "Fleisch & Geflügel",
+    "timeMinutes": 30,
+    "tags": [
+      "Mittagessen",
+      "Abendessen",
+      "Resteverwertung",
+      "Kinderfreundlich",
+      "Für Gäste",
+      "Grillgericht",
+      "Sommer"
+    ],
+    "ingredients": [],
+    "weatherType": "neutral",
+    "source": "MahlZeit",
+    "basePortions": 4,
+    "description": "",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/z-grills-australia-yzqd7lcwasq-unsplash-1781389837817.jpg",
+    "imageZutaten": null,
+    "imageKochen": null
   }
 ]

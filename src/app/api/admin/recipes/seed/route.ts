@@ -57,12 +57,13 @@ export async function POST() {
   const seed    = seedRecipes as Recipe[];
   const seedIds = new Set(seed.map((s) => s.id));
 
-  // 1. Seed-Rezepte mit bestehenden Bild-URLs mergen
+  // 1. Seed-Rezepte mit bestehenden Bild-URLs mergen; alle Seed-Rezepte als freigegeben markieren
   const merged: Recipe[] = seed.map((s) => {
     const ex = existingMap.get(s.id);
-    if (!ex) return s;
+    if (!ex) return { ...s, approved: true };
     return {
       ...s,
+      approved:      true,
       imageUrl:      s.imageUrl      ?? ex.imageUrl,
       imageZutaten:  s.imageZutaten  ?? ex.imageZutaten,
       imageKochen:   s.imageKochen   ?? ex.imageKochen,

@@ -110,6 +110,7 @@ export interface Recipe {
   imageZutaten?: string | null;
   imageKochen?: string | null;
   archived?: boolean;
+  approved?: boolean;         // nur true = für User sichtbar; undefined/false = gesperrt
   dietCategory?: DietCategory;
   allergens?: EuAllergen[];   // Vorberechnete EU-Pflichtallergene aus Zutaten
   nutrition?: Nutrition;      // KI-geschätzte Nährwerte pro Portion

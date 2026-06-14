@@ -93,24 +93,25 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'Nicht autorisiert' }, { status: 403 });
 
   const recipe: Recipe = await request.json();
+  const withDefault: Recipe = { ...recipe, approved: recipe.approved ?? false };
 
   if (USE_REDIS) {
     const all = await getTemplateRecipes();
-    if (all.some(r => r.id === recipe.id))
+    if (all.some(r => r.id === withDefault.id))
       return NextResponse.json({ error: 'ID bereits vergeben.' }, { status: 409 });
-    await saveTemplateRecipes([...all, recipe]);
-    return NextResponse.json({ ok: true, recipe });
+    await saveTemplateRecipes([...all, withDefault]);
+    return NextResponse.json({ ok: true, recipe: withDefault });
   }
 
   // Dev: write to individual category file + rebuild
   const fs   = require('fs')   as typeof import('fs');
   const path = require('path') as typeof import('path');
-  const folder = CATEGORY_FOLDER[recipe.category] ?? 'sonstige';
+  const folder = CATEGORY_FOLDER[withDefault.category] ?? 'sonstige';
   const dir    = path.join(process.cwd(), 'data', 'recipes', folder);
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
-  fs.writeFileSync(path.join(dir, `${recipe.id}.json`), JSON.stringify(recipe, null, 2), 'utf-8');
+  fs.writeFileSync(path.join(dir, `${withDefault.id}.json`), JSON.stringify(withDefault, null, 2), 'utf-8');
   rebuild();
-  return NextResponse.json({ ok: true, recipe });
+  return NextResponse.json({ ok: true, recipe: withDefault });
 }
 
 export async function DELETE(request: Request) {
