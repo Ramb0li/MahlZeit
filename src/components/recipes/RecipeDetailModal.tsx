@@ -1,7 +1,6 @@
 'use client';
 import { useState, useEffect, useCallback } from 'react';
 import { X, Pencil, UtensilsCrossed } from 'lucide-react';
-import { getCurrentSeason } from '@/lib/utils';
 import { type Recipe, type Ingredient, type IngredientGroup, type RecipeRating, type EuAllergen } from '@/types';
 
 // ─── Diet display mapping ─────────────────────────────────────────────────────
@@ -290,7 +289,6 @@ export function RecipeDetailModal({
   }, [images.length]);
 
   const hasSteps = (recipe.steps?.length ?? 0) > 0;
-  const season   = getCurrentSeason();
 
   // Trap scroll on body while modal is open
   useEffect(() => {
@@ -403,12 +401,14 @@ export function RecipeDetailModal({
                   {DIET_LABEL[recipe.dietCategory]}
                 </span>
               )}
-              <span
-                className="inline-flex items-center gap-1 text-xs px-3 py-1 rounded-full"
-                style={{ border: '1px solid #e0d8ce', color: '#5a4e48' }}
-              >
-                ♾ {season}
-              </span>
+              {recipe.tags
+                .filter(t => ['Frühling', 'Sommer', 'Herbst', 'Winter', 'Ganzjährig'].includes(t))
+                .map(t => (
+                  <span key={t} className="inline-flex items-center gap-1 text-xs px-3 py-1 rounded-full"
+                    style={{ border: '1px solid #e0d8ce', color: '#5a4e48' }}>
+                    ♾ {t}
+                  </span>
+                ))}
               {recipe.source && (
                 <span
                   className="inline-flex items-center gap-1 text-xs px-3 py-1 rounded-full"
