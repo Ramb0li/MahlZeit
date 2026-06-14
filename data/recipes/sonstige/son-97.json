@@ -1,0 +1,99 @@
+{
+  "id": "son-97",
+  "name": "BBQ-Marinade",
+  "category": "Beilagen, Saucen & Dips",
+  "timeMinutes": 15,
+  "basePortions": 4,
+  "weatherType": "warm",
+  "source": "fooby.ch",
+  "sourceType": "imported",
+  "approved": false,
+  "description": "Eine würzige BBQ-Marinade mit Sojasauce, Honig und Gewürzen – perfekt für Grillgut aller Art und im Handumdrehen zubereitet.",
+  "tags": [
+    "Grillgericht",
+    "Sommer",
+    "Ohne Kochen",
+    "Gut zum Mitnehmen",
+    "Amerikanisch",
+    "Schnell"
+  ],
+  "ingredients": [
+    {
+      "name": "Ingwer (gemahlen)",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehe (gepresst)",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Honig (flüssig)",
+      "amount": 0.5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Cayennepfeffer",
+      "amount": 0.25,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Nelkenpulver",
+      "amount": 1,
+      "unit": "Msp",
+      "perPortions": 4
+    },
+    {
+      "name": "Zimt",
+      "amount": 1,
+      "unit": "Msp",
+      "perPortions": 4
+    },
+    {
+      "name": "Sojasauce",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Senfkörner",
+      "amount": 0.25,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Sherry",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomatenpüree",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Knoblauch pressen und zusammen mit dem Tomatenpüree in eine kleine Schüssel geben.",
+    "Sojasauce, Sherry und Honig beigeben.",
+    "Ingwer, Cayennepfeffer, Nelkenpulver, Zimt und Senfkörner hinzufügen.",
+    "Alle Zutaten gut miteinander verrühren, bis eine gleichmässige Marinade entsteht.",
+    "Das Grillgut vor dem Grillieren grosszügig damit einpinseln und nach Belieben einige Minuten marinieren lassen."
+  ],
+  "tips": "Die Marinade eignet sich hervorragend für Poulet, Rippchen oder Tofu. Sie lässt sich in einem verschlossenen Glas im Kühlschrank einige Tage aufbewahren.",
+  "dietCategory": "vegan",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "senf",
+    "soja",
+    "sulfite"
+  ]
+}

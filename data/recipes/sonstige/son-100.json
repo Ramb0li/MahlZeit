@@ -1,0 +1,77 @@
+{
+  "id": "son-100",
+  "name": "Sommer-Flammkuchen",
+  "category": "Pizza, Flammkuchen, Wähen & Quiches",
+  "timeMinutes": 30,
+  "basePortions": 4,
+  "weatherType": "warm",
+  "source": "fooby.ch",
+  "sourceType": "imported",
+  "approved": false,
+  "description": "Ein leichter Sommer-Flammkuchen vom Grill mit cremiger Crème fraîche, frischer Zucchetti, Bundzwiebeln und gerösteten Pinienkernen — einfach und herrlich sommerlich.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Grillgericht",
+    "Sommer",
+    "Für Gäste",
+    "Kinderfreundlich"
+  ],
+  "ingredients": [
+    {
+      "name": "Pinienkerne",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Bundzwiebeln mit Grün",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Zucchetti",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Fleur de Sel",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Crème fraîche",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Flammkuchenteig (ausgewallt)",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Den Flammkuchenteig entrollen und mitsamt dem Backpapier in eine Alu-Grillauflage legen.",
+    "Den Teig gleichmässig mit Crème fraîche bestreichen.",
+    "Die Zucchetti in dünne Scheiben schneiden und die Bundzwiebeln in Ringe schneiden, beides gleichmässig auf dem Teig verteilen.",
+    "Mit Fleur de Sel und Pfeffer würzen und die Pinienkerne darüber streuen.",
+    "Den Flammkuchen über mittelstarker Glut bzw. auf mittlerer Stufe (ca. 200 °C) zugedeckt etwa 20 Minuten grillieren, bis der Teig knusprig und der Belag leicht gebräunt ist."
+  ],
+  "tips": "Der Flammkuchen lässt sich auch im Backofen bei 220 °C Ober-/Unterhitze auf einem vorgeheizten Blech in 12–15 Minuten zubereiten. Als Variation passen auch halbierte Cherrytomaten oder dünn gehobelter Fenchel als Belag.",
+  "dietCategory": "vegetarian",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": []
+}

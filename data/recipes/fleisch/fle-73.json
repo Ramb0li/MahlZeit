@@ -1,0 +1,64 @@
+{
+  "id": "fle-73",
+  "name": "Pouletbrüstli im Speckmantel",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 20,
+  "basePortions": 4,
+  "weatherType": "warm",
+  "source": "fooby.ch",
+  "sourceType": "imported",
+  "approved": false,
+  "description": "Saftige Pouletbrüstli, mit frischem Thymian und knusprigem Bratspeck umwickelt – ein einfaches und schnelles Grillgericht für den Sommer.",
+  "tags": [
+    "Abendessen",
+    "Grillgericht",
+    "Sommer",
+    "Für Gäste",
+    "Gut zum Mitnehmen",
+    "Schweizerisch"
+  ],
+  "ingredients": [
+    {
+      "name": "Pouletbrüstli",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Bratspeck (in Tranchen)",
+      "amount": 12,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Thymian (frische Zweiglein)",
+      "amount": 8,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Die Pouletbrüstli mit Salz und Pfeffer würzen.",
+    "Je 2 Zweiglein Thymian auf ein Pouletbrüstli legen und dieses anschliessend mit je 3 Tranchen Bratspeck fest umwickeln.",
+    "Den Grill auf mittlere Hitze (ca. 200 °C) vorheizen.",
+    "Die Pouletbrüstli zugedeckt auf dem Grill von jeder Seite ca. 5 Minuten grillieren, bis der Speck knusprig und das Poulet durchgegart ist."
+  ],
+  "tips": "Tipp: Die Speckpäckli lassen sich auch in einer Bratpfanne mit etwas Öl bei mittlerer Hitze beidseitig anbraten – ideal, wenn kein Grill zur Hand ist.",
+  "dietCategory": "meat",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": []
+}

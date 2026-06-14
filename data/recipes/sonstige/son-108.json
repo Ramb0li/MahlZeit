@@ -1,0 +1,184 @@
+{
+  "id": "son-108",
+  "name": "Pulled Mushroom Burger",
+  "category": "Wraps, Sandwiches & Burger",
+  "timeMinutes": 50,
+  "basePortions": 4,
+  "weatherType": "neutral",
+  "source": "fooby.ch",
+  "sourceType": "imported",
+  "approved": false,
+  "description": "Saftige Kräuterseitlinge, die im Ofen gebacken und mit rauchiger BBQ-Sauce verfeinert werden – ein veganer Burger, der auch Fleischfans begeistert.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Amerikanisch",
+    "Pfannengericht",
+    "Ofengericht",
+    "Ganzjährig",
+    "Für Gäste"
+  ],
+  "ingredients": [
+    {
+      "name": "Burger-Brötchen",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Kräuterseitlinge",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehen (fein gehackt)",
+      "amount": 2,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel (in feine Ringe geschnitten)",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Rotkabis (fein gehobelt)",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Koriander",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Geräuchertes Paprikapulver",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.25,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Chiliflocken",
+      "amount": 0.25,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "BBQ-Sauce",
+      "amount": 6,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Pilzfüllung",
+      "ingredients": [
+        {
+          "name": "Kräuterseitlinge",
+          "amount": 250,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Knoblauchzehen (fein gehackt)",
+          "amount": 2,
+          "unit": "Zehe",
+          "perPortions": 4
+        },
+        {
+          "name": "Geräuchertes Paprikapulver",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.25,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Chiliflocken",
+          "amount": 0.25,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "BBQ-Sauce",
+          "amount": 6,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Zwiebel (in feine Ringe geschnitten)",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Belag",
+      "ingredients": [
+        {
+          "name": "Rotkabis (fein gehobelt)",
+          "amount": 100,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Koriander",
+          "amount": 0.5,
+          "unit": "Bund",
+          "perPortions": 4
+        },
+        {
+          "name": "Burger-Brötchen",
+          "amount": 4,
+          "unit": "Stk",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Den Backofen auf 180 °C Ober-/Unterhitze vorheizen und ein Backblech mit Backpapier belegen.",
+    "Die Kräuterseitlinge mit dem Knoblauch, dem geräucherten Paprikapulver, dem Salz, den Chiliflocken und 2 EL Olivenöl in einer Schüssel gut vermengen.",
+    "Die gewürzten Pilze gleichmässig auf dem vorbereiteten Blech verteilen und auf der mittleren Schiene ca. 20 Minuten backen, bis sie leicht gebräunt sind.",
+    "Währenddessen den restlichen Esslöffel Olivenöl in einer beschichteten Pfanne bei mittlerer Hitze erwärmen. Die Zwiebelringe beigeben und unter gelegentlichem Rühren ca. 15 Minuten andämpfen, bis sie weich und goldfarben sind.",
+    "Die gebackenen Pilze zur Zwiebelmasse in die Pfanne geben, die BBQ-Sauce darübergiessen und alles gut verrühren, bis die Füllung gleichmässig bedeckt ist.",
+    "Die Burger-Brötchen aufschneiden und die Unterseiten grosszügig mit der Pilz-Zwiebel-Füllung belegen.",
+    "Den fein gehobelten Rotkabis sowie die Korianderblätter darüber verteilen, die Brötchendeckel aufsetzen und sofort servieren."
+  ],
+  "tips": "Wer es etwas knackiger mag, kann den Rotkabis mit einem Spritzer Zitronensaft und einer Prise Salz kurz marinieren. Die Pilzfüllung lässt sich auch gut einen Tag im Voraus zubereiten und im Kühlschrank aufbewahren.",
+  "dietCategory": "vegan",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten"
+  ]
+}

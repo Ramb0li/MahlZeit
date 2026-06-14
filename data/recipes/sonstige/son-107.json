@@ -1,0 +1,60 @@
+{
+  "id": "son-107",
+  "name": "Pulled Beef Burger",
+  "category": "Wraps, Sandwiches & Burger",
+  "timeMinutes": 15,
+  "basePortions": 4,
+  "weatherType": "neutral",
+  "source": "fooby.ch",
+  "sourceType": "imported",
+  "approved": false,
+  "description": "Saftige Pulled Beef Burger mit würziger BBQ-Sauce, knackigem Coleslaw und frischem Blattsalat – in nur 15 Minuten auf dem Tisch.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Amerikanisch",
+    "Pfannengericht",
+    "Kinderfreundlich",
+    "Für Gäste",
+    "Ganzjährig"
+  ],
+  "ingredients": [
+    {
+      "name": "Burger-Brötchen",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Pulled Beef mit BBQ-Sauce",
+      "amount": 620,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Coleslaw",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Baby-Salate",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Das Pulled Beef gemäss Packungsanleitung erhitzen, anschliessend mit zwei Gabeln in feine Fasern zerzupfen und gut mit der BBQ-Sauce vermischen.",
+    "Die Burger-Brötchen halbieren und mit den Schnittflächen nach unten in einer heissen Grillpfanne etwa 3 Minuten grillieren, bis leichte Röststreifen entstehen.",
+    "Die Brötchenböden mit dem Pulled Beef belegen, Coleslaw und Baby-Salate darüber verteilen, den Deckel auflegen und leicht andrücken."
+  ],
+  "tips": "Wer mag, kann die Burger zusätzlich mit Gurkenscheiben, roten Zwiebelringen oder einer Scheibe Cheddar ergänzen. Das Pulled Beef ist auch in Wraps oder auf Ofenkartoffeln lecker.",
+  "dietCategory": "meat",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten"
+  ]
+}

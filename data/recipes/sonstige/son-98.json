@@ -1,0 +1,285 @@
+{
+  "id": "son-98",
+  "name": "Buntes Grillgemüse",
+  "category": "Gemüsegerichte",
+  "timeMinutes": 60,
+  "basePortions": 4,
+  "weatherType": "warm",
+  "source": "fooby.ch",
+  "sourceType": "imported",
+  "approved": false,
+  "description": "Knackige Tomaten-Spiessli, karamellisierte Zwiebel-Lollis, goldige Kartoffelscheiben und gefüllte Hornpeperoni – dieses farbenfrohe Grillgemüse ist ein Fest für Auge und Gaumen.",
+  "tags": [
+    "Abendessen",
+    "Grillgericht",
+    "Sommer",
+    "Für Gäste",
+    "Kinderfreundlich"
+  ],
+  "ingredients": [
+    {
+      "name": "Cherry-Tomaten (verschiedenfarbig)",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Rote Zwiebeln (in Scheiben geschnitten)",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Festkochende Kartoffeln (in Scheiben geschnitten)",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Süsskartoffeln (in Scheiben geschnitten)",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Hornpeperoni",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Frischkäse",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Schnittlauch (fein geschnitten)",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Rosmarin",
+      "amount": 6,
+      "unit": "Zweig",
+      "perPortions": 4
+    },
+    {
+      "name": "Thymian",
+      "amount": 2,
+      "unit": "Zweig",
+      "perPortions": 4
+    },
+    {
+      "name": "Holzspiesschen",
+      "amount": 6,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl (zum Beträufeln)",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Honig",
+      "amount": 0.5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Fleur de Sel",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Cayennepfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Tomaten-Spiessli",
+      "ingredients": [
+        {
+          "name": "Cherry-Tomaten (verschiedenfarbig)",
+          "amount": 200,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Rosmarin",
+          "amount": 6,
+          "unit": "Zweig",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Fleur de Sel",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zwiebel-Lollis",
+      "ingredients": [
+        {
+          "name": "Rote Zwiebeln (in Scheiben geschnitten)",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Holzspiesschen",
+          "amount": 6,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Honig",
+          "amount": 0.5,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Cayennepfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Kartoffelscheiben",
+      "ingredients": [
+        {
+          "name": "Festkochende Kartoffeln (in Scheiben geschnitten)",
+          "amount": 250,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Süsskartoffeln (in Scheiben geschnitten)",
+          "amount": 250,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Thymian",
+          "amount": 2,
+          "unit": "Zweig",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Gefüllte Hornpeperoni",
+      "ingredients": [
+        {
+          "name": "Hornpeperoni",
+          "amount": 4,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Frischkäse",
+          "amount": 100,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Schnittlauch (fein geschnitten)",
+          "amount": 0.5,
+          "unit": "Bund",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Den Grill auf mittlere Hitze (ca. 200 °C) vorheizen.",
+    "Die Cherry-Tomaten mit etwas Olivenöl und Salz vermengen, dann auf die Rosmarinzweige aufstecken.",
+    "Die Tomaten-Spiessli auf dem Grill zugedeckt bei mittlerer Hitze ca. 5 Minuten rundum grillieren. Anschliessend mit etwas Olivenöl beträufeln und mit Fleur de Sel würzen.",
+    "Für die Zwiebel-Lollis je ein Holzspiesschen mittig durch die Zwiebelscheiben stecken.",
+    "Die Zwiebel-Lollis zugedeckt auf dem Grill beidseitig je ca. 4 Minuten grillieren. Vom Grill nehmen, mit Honig beträufeln und mit Cayennepfeffer sowie Pfeffer würzen.",
+    "Die Kartoffel- und Süsskartoffelscheiben in einer Schüssel mit Olivenöl und Salz mischen.",
+    "Die Kartoffelscheiben zugedeckt auf dem Grill bei mittlerer Hitze beidseitig je ca. 10 Minuten grillieren, dabei alle 5 Minuten um einen Vierteldrehung wenden. Vom Grill nehmen und mit abgezupften Thymianblättchen bestreuen.",
+    "Die Hornpeperoni rundum mit Olivenöl einstreichen und zugedeckt auf dem Grill ca. 10 Minuten grillieren.",
+    "Währenddessen den Frischkäse mit dem fein geschnittenen Schnittlauch verrühren und mit Salz sowie Pfeffer abschmecken.",
+    "Die gegrillten Hornpeperoni am oberen Teil aufschneiden und grosszügig mit der Frischkäsemischung füllen."
+  ],
+  "tips": "Das Grillgemüse lässt sich beliebig variieren – Zucchetti, Auberginen oder Maiskolben eignen sich ebenfalls hervorragend. Die Holzspiesschen vor dem Gebrauch ca. 30 Minuten in Wasser einweichen, damit sie auf dem Grill nicht verbrennen.",
+  "dietCategory": "vegetarian",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch"
+  ]
+}

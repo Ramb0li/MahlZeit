@@ -11,6 +11,7 @@
     "recipes:sync": "node scripts/sync-recipes.js",
     "recipes:enrich": "tsx scripts/enrich-recipes.ts",
     "recipes:import-hbu": "tsx scripts/import-herrbuettner.ts",
+    "recipes:import-fooby": "tsx scripts/import-fooby.ts",
     "content:pull": "tsx scripts/content-pull.ts"
   },
   "dependencies": {

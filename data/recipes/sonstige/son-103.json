@@ -1,0 +1,254 @@
+{
+  "id": "son-103",
+  "name": "The Executive Burger",
+  "category": "Wraps, Sandwiches & Burger",
+  "timeMinutes": 40,
+  "basePortions": 4,
+  "weatherType": "warm",
+  "source": "fooby.ch",
+  "sourceType": "imported",
+  "approved": false,
+  "description": "Ein saftiger Burger mit karamellisiertem Speck, Raclettekäse, eingelegten Gurken und einer feinen Schnittlauchsauce – der perfekte Grillgenuss für besondere Momente.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Grillgericht",
+    "Für Gäste",
+    "Sommer",
+    "Amerikanisch"
+  ],
+  "ingredients": [
+    {
+      "name": "Burger-Brötchen",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Hackfleisch (Rind und Schwein gemischt)",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Speckwürfeli",
+      "amount": 80,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Raclettekäse (gerieben)",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Jungsalat",
+      "amount": 40,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Schalotten (fein gehackt)",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Snack-Gurken (in dünne Scheiben geschnitten)",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Rohzucker",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Roter Portwein",
+      "amount": 100,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Aceto balsamico bianco",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Crème fraîche",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Schnittlauch (fein geschnitten)",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1.75,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Eingelegte Gurken",
+      "ingredients": [
+        {
+          "name": "Snack-Gurken (in dünne Scheiben geschnitten)",
+          "amount": 3,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Aceto balsamico bianco",
+          "amount": 3,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.25,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Karamellisierter Speck",
+      "ingredients": [
+        {
+          "name": "Speckwürfeli",
+          "amount": 80,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Rohzucker",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Schalotten (fein gehackt)",
+          "amount": 3,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Roter Portwein",
+          "amount": 100,
+          "unit": "ml",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Schnittlauchsauce",
+      "ingredients": [
+        {
+          "name": "Crème fraîche",
+          "amount": 100,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Schnittlauch (fein geschnitten)",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.25,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Hacktätschli",
+      "ingredients": [
+        {
+          "name": "Hackfleisch (Rind und Schwein gemischt)",
+          "amount": 500,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Raclettekäse (gerieben)",
+          "amount": 100,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1.25,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Burger",
+      "ingredients": [
+        {
+          "name": "Burger-Brötchen",
+          "amount": 4,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Jungsalat",
+          "amount": 40,
+          "unit": "g",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Für die eingelegten Gurken den Aceto balsamico bianco mit etwas Salz in einer Schüssel verrühren. Die Gurkenscheiben beigeben, alles mischen und zugedeckt beiseite stellen.",
+    "Die Speckwürfeli in einer beschichteten Pfanne ohne Fettzugabe bei mittlerer Hitze langsam knusprig braten. Den Rohzucker dazugeben und unter ständigem Rühren karamellisieren lassen.",
+    "Die gehackten Schalotten in die Pfanne geben und ca. 4 Minuten weich andämpfen. Den Portwein dazugiessen und fast vollständig einköcheln lassen.",
+    "Für die Schnittlauchsauce die Crème fraîche mit dem Schnittlauch verrühren, mit Salz und Pfeffer abschmecken.",
+    "Das Hackfleisch mit dem Raclettekäse, Salz und Pfeffer in einer Schüssel vermischen und von Hand gut durchkneten, bis eine kompakte, gleichmässige Masse entsteht. Die Masse in 4 gleich grosse Portionen teilen und zu flachen Tätschli formen.",
+    "Den Grill auf mittlere Hitze (ca. 180 °C) vorheizen. Die Hacktätschli zugedeckt auf jeder Seite ca. 6 Minuten grillieren. Die Burger-Brötchen in den letzten ca. 2 Minuten mit auf den Grill legen und einmal wenden.",
+    "Die Schnittlauchsauce grosszügig auf beide Hälften der Brötchen streichen. Jeweils ein Hacktätschli, etwas karamellisierten Speck, die eingelegten Gurkenscheiben und etwas Jungsalat auf den Brötchenboden legen und den Deckel daraufsetzen."
+  ],
+  "tips": "Der Raclettekäse lässt sich gut durch einen anderen Schmelzkäse wie Gruyère ersetzen. Wer keinen Grill hat, kann die Tätschli auch in einer heissen Bratpfanne mit etwas Öl beidseitig braten.",
+  "dietCategory": "meat",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch",
+    "sulfite"
+  ]
+}

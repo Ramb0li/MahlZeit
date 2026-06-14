@@ -1,0 +1,173 @@
+{
+  "id": "son-102",
+  "name": "Sticky Blumenkohl-Spiessli",
+  "category": "Gemüsegerichte",
+  "timeMinutes": 40,
+  "basePortions": 8,
+  "weatherType": "warm",
+  "source": "fooby.ch",
+  "sourceType": "imported",
+  "approved": false,
+  "description": "Würzig-süsse Blumenkohlspiessli mit einer klebrigen Honig-Balsamico-Marinade — perfekt frisch vom Grill. Ein Highlight für jeden Grillabend!",
+  "tags": [
+    "Abendessen",
+    "Snack",
+    "Grillgericht",
+    "Sommer",
+    "Für Gäste"
+  ],
+  "ingredients": [
+    {
+      "name": "Blumenkohl",
+      "amount": 1,
+      "unit": "kg",
+      "perPortions": 8
+    },
+    {
+      "name": "Knoblauchzehen (gepresst)",
+      "amount": 2,
+      "unit": "Zehe",
+      "perPortions": 8
+    },
+    {
+      "name": "Ingwer (gerieben)",
+      "amount": 2,
+      "unit": "cm",
+      "perPortions": 8
+    },
+    {
+      "name": "Honig (flüssig)",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 8
+    },
+    {
+      "name": "Rosmarin (getrocknet)",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 8
+    },
+    {
+      "name": "Paprika edelsüss",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 8
+    },
+    {
+      "name": "Chiliflocken",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 8
+    },
+    {
+      "name": "Salz",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 8
+    },
+    {
+      "name": "Aceto balsamico",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 8
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 8
+    },
+    {
+      "name": "Holzspiesschen",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 8
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Blumenkohl",
+      "ingredients": [
+        {
+          "name": "Blumenkohl",
+          "amount": 1,
+          "unit": "kg",
+          "perPortions": 8
+        }
+      ]
+    },
+    {
+      "name": "Marinade",
+      "ingredients": [
+        {
+          "name": "Knoblauchzehen (gepresst)",
+          "amount": 2,
+          "unit": "Zehe",
+          "perPortions": 8
+        },
+        {
+          "name": "Ingwer (gerieben)",
+          "amount": 2,
+          "unit": "cm",
+          "perPortions": 8
+        },
+        {
+          "name": "Honig (flüssig)",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 8
+        },
+        {
+          "name": "Rosmarin (getrocknet)",
+          "amount": 2,
+          "unit": "TL",
+          "perPortions": 8
+        },
+        {
+          "name": "Paprika edelsüss",
+          "amount": 2,
+          "unit": "TL",
+          "perPortions": 8
+        },
+        {
+          "name": "Chiliflocken",
+          "amount": 2,
+          "unit": "TL",
+          "perPortions": 8
+        },
+        {
+          "name": "Salz",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 8
+        },
+        {
+          "name": "Aceto balsamico",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 8
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 3,
+          "unit": "EL",
+          "perPortions": 8
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Den Blumenkohl in Röschen teilen und in reichlich siedendem Salzwasser etwa 4 Minuten kochen. Anschliessend kalt abspülen und gut abtropfen lassen.",
+    "Für die Marinade Aceto balsamico, Olivenöl, Honig, gepressten Knoblauch, geriebenen Ingwer, Rosmarin, Paprikapulver, Chiliflocken und Salz in einer Pfanne verrühren.",
+    "Die Blumenkohlröschen zur Marinade geben und gut darin wenden, sodass sie gleichmässig bedeckt sind. Anschliessend auf die Holzspiesschen stecken.",
+    "Die restliche Marinade in der Pfanne bei mittlerer Hitze etwa 5 Minuten sirupartig einköcheln lassen und beiseitestellen.",
+    "Die Spiessli auf dem vorgeheizten Grill bei mittlerer Hitze (ca. 200 °C) und geschlossenem Deckel etwa 15 Minuten grillieren. Dabei regelmässig wenden und mit der eingekochten Marinade bestreichen.",
+    "Die fertigen Spiessli vom Grill nehmen und vor dem Servieren nochmals grosszügig mit der restlichen Marinade bestreichen."
+  ],
+  "tips": "Die Holzspiesschen vor der Verwendung mindestens 30 Minuten in Wasser einweichen — so verbrennen sie auf dem Grill nicht. Das Rezept gelingt auch im Backofen bei 220 °C Oberhitze (Grillstufe) für ca. 15 Minuten.",
+  "dietCategory": "vegan",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": []
+}

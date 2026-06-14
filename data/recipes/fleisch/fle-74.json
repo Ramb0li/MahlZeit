@@ -1,0 +1,261 @@
+{
+  "id": "fle-74",
+  "name": "Pouletflügeli-Spiessli mit Erdnuss-Dip",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 300,
+  "basePortions": 4,
+  "weatherType": "warm",
+  "source": "fooby.ch",
+  "sourceType": "imported",
+  "approved": false,
+  "description": "Saftige Pouletflügeli-Spiessli, mariniert in einer würzigen Erdnuss-Limetten-Marinade, vom Grill serviert mit einem frischen Gurkensalat und knusprigen Erdnüssen.",
+  "tags": [
+    "Abendessen",
+    "Grillgericht",
+    "Für Gäste",
+    "Sommer"
+  ],
+  "ingredients": [
+    {
+      "name": "Pouletflügeli",
+      "amount": 800,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Erdnussbutter",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Sojasauce",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Limettensaft",
+      "amount": 1.5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Ingwer (frisch gerieben)",
+      "amount": 2,
+      "unit": "cm",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehe (gepresst)",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "rote Chili (fein gehackt)",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Rohzucker (grobkörnig)",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.75,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Snack-Gurken",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Koriander",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Bio-Limette (Schale und Saft)",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "gesalzene Erdnüsse (grob gehackt)",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Holzspiesschen",
+      "amount": 8,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Marinade & Erdnuss-Dip",
+      "ingredients": [
+        {
+          "name": "Erdnussbutter",
+          "amount": 4,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Sojasauce",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Limettensaft",
+          "amount": 1.5,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Ingwer (frisch gerieben)",
+          "amount": 2,
+          "unit": "cm",
+          "perPortions": 4
+        },
+        {
+          "name": "Knoblauchzehe (gepresst)",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "rote Chili (fein gehackt)",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Rohzucker (grobkörnig)",
+          "amount": 2,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.75,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Pouletflügeli",
+      "ingredients": [
+        {
+          "name": "Pouletflügeli",
+          "amount": 800,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Holzspiesschen",
+          "amount": 8,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Gurkensalat",
+      "ingredients": [
+        {
+          "name": "Snack-Gurken",
+          "amount": 250,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Koriander",
+          "amount": 0.5,
+          "unit": "Bund",
+          "perPortions": 4
+        },
+        {
+          "name": "Bio-Limette (Schale und Saft)",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "gesalzene Erdnüsse (grob gehackt)",
+          "amount": 3,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Erdnussbutter, Sojasauce, Limettensaft, geriebenen Ingwer, gepressten Knoblauch, gehackte Chili, Rohzucker und Salz in einer Schüssel gut verrühren.",
+    "Die Hälfte dieser Marinade in ein separates Schälchen umfüllen, zudecken und im Kühlschrank kalt stellen – diese dient später als Dip.",
+    "Die Pouletflügeli mit der restlichen Marinade gründlich vermengen, zugedeckt mindestens 4 Stunden im Kühlschrank marinieren.",
+    "Vor dem Grillieren die Holzspiesschen kurz in Wasser einweichen. Je 3 Pouletflügeli auf 2 parallele Spiesschen stecken und die Flügeli leicht salzen und pfeffern.",
+    "Die Spiessli auf dem Grill bei mittlerer Hitze (ca. 200 °C) bei geschlossenem Deckel rund 30 Minuten grillieren, dabei ein- bis zweimal wenden, bis das Fleisch gar und schön gebräunt ist.",
+    "Für den Gurkensalat Limettenschale und -saft mit dem Olivenöl in einer Schüssel verrühren, mit Salz und Pfeffer abschmecken.",
+    "Snack-Gurken in Scheiben schneiden und zusammen mit den gezupften Korianderblättern zur Limettensauce geben, alles gut mischen.",
+    "Die Pouletflügeli-Spiessli mit dem beiseitegestellten Erdnuss-Dip und dem Gurkensalat anrichten. Die gehackten Erdnüsse darüberstreuen und sofort servieren."
+  ],
+  "tips": "Die Holzspiesschen mindestens 30 Minuten in Wasser einweichen, damit sie auf dem Grill nicht verbrennen. Das Rezept lässt sich auch im Backofen bei 200 °C Umluft zubereiten – dabei die Spiessli auf einem Gitterrost ca. 30 Minuten backen und einmal wenden.",
+  "dietCategory": "meat",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "erdnuesse",
+    "milch",
+    "soja"
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "id": "son-109",
+  "name": "Grillierte Auberginen mit Sojasauce und Ingwer",
+  "category": "Gemüsegerichte",
+  "timeMinutes": 33,
+  "basePortions": 4,
+  "weatherType": "warm",
+  "source": "fooby.ch",
+  "sourceType": "imported",
+  "approved": false,
+  "description": "Würzig marinierte Auberginen vom Grill mit aromatischer Sojasauce-Ingwer-Marinade — serviert auf lockerem Jasminreis. Ein sommerliches veganes Hauptgericht mit asiatischem Flair.",
+  "tags": [
+    "Abendessen",
+    "Mittagessen",
+    "Grillgericht",
+    "Sommer",
+    "Japanisch"
+  ],
+  "ingredients": [
+    {
+      "name": "Auberginen (in Scheiben geschnitten)",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Rote Chili (fein gehackt)",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Ingwer (gerieben)",
+      "amount": 1.5,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehen (gepresst)",
+      "amount": 2,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Piment",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfefferkörner",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kreuzkümmel",
+      "amount": 0.5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Sojasauce",
+      "amount": 100,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Thymian (Blätter abgezupft)",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Zimt",
+      "amount": 0.25,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Limettensaft",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Jasminreis",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Marinade",
+      "ingredients": [
+        {
+          "name": "Rote Chili (fein gehackt)",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Ingwer (gerieben)",
+          "amount": 1.5,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Knoblauchzehen (gepresst)",
+          "amount": 2,
+          "unit": "Zehe",
+          "perPortions": 4
+        },
+        {
+          "name": "Piment",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfefferkörner",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Kreuzkümmel",
+          "amount": 0.5,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Sojasauce",
+          "amount": 100,
+          "unit": "ml",
+          "perPortions": 4
+        },
+        {
+          "name": "Thymian (Blätter abgezupft)",
+          "amount": 0.5,
+          "unit": "Bund",
+          "perPortions": 4
+        },
+        {
+          "name": "Zimt",
+          "amount": 0.25,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Limettensaft",
+          "amount": 3,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 4,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Auberginen",
+      "ingredients": [
+        {
+          "name": "Auberginen (in Scheiben geschnitten)",
+          "amount": 3,
+          "unit": "Stk",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Reis",
+      "ingredients": [
+        {
+          "name": "Jasminreis",
+          "amount": 300,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Piment, Pfefferkörner und Kreuzkümmel in einer trockenen Pfanne bei mittlerer Hitze kurz rösten, bis die Gewürze duften. Im Mörser fein zerstossen und in eine Schüssel geben.",
+    "Limettensaft, Sojasauce, Olivenöl, Chili, Ingwer, Knoblauch, Thymian und Zimt zu den zerstossenen Gewürzen geben und alles gut verrühren.",
+    "Die Hälfte der Marinade in eine separate Schüssel abfüllen und beiseitestellen. Die Auberginenscheiben mit der restlichen Marinade vermischen und zugedeckt bis zum Grillieren ruhen lassen.",
+    "Den Jasminreis in einem Sieb unter kaltem fliessendem Wasser spülen, bis das Wasser klar läuft, dann gut abtropfen lassen.",
+    "Reis zusammen mit der doppelten Menge Wasser und dem Salz in eine Pfanne geben und aufkochen. Den Deckel auflegen, Hitze auf die kleinste Stufe reduzieren und den Reis ca. 10 Minuten köcheln lassen. Anschliessend die Platte ausschalten und den Reis weitere 10 Minuten quellen lassen — den Deckel dabei nicht abheben.",
+    "In der Zwischenzeit die Auberginenscheiben auf dem vorgeheizten Grill bei mittlerer Hitze (ca. 200 °C) mit geschlossenem Deckel beidseitig je ca. 4 Minuten grillieren.",
+    "Den Reis mit einer Gabel auflockern und auf Teller verteilen. Die grillierten Auberginen darauflegen und die beiseitegestellte Marinade darüber träufeln."
+  ],
+  "tips": "Die Auberginen können auch auf einem Grillpfanne (Bratpfanne mit Rillen) auf dem Herd zubereitet werden, falls kein Grill vorhanden ist. Wer es etwas schärfer mag, kann eine zweite Chili verwenden.",
+  "dietCategory": "vegan",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "soja"
+  ]
+}

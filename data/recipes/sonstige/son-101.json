@@ -1,0 +1,107 @@
+{
+  "id": "son-101",
+  "name": "Grillierte Auberginen mit Granatapfel und Kichererbsen",
+  "category": "Gemüsegerichte",
+  "timeMinutes": 45,
+  "basePortions": 4,
+  "weatherType": "warm",
+  "source": "fooby.ch",
+  "sourceType": "imported",
+  "approved": false,
+  "description": "Saftig grillierte Auberginen, gefüllt mit einer würzigen Harissa-Tahina-Creme und knackigen Kichererbsen – verfeinert mit Granatapfelkernen und frischer Petersilie.",
+  "tags": [
+    "Abendessen",
+    "Mittagessen",
+    "Grillgericht",
+    "Sommer",
+    "Mediterran",
+    "Nahöstlich",
+    "Für Gäste"
+  ],
+  "ingredients": [
+    {
+      "name": "Auberginen",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch (Zehen)",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Sesamöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.75,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Tahina (Sesampaste)",
+      "amount": 2.5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Harissa",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Granatapfel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kichererbsen (Dose, abgetropft)",
+      "amount": 1,
+      "unit": "Dose",
+      "perPortions": 4
+    },
+    {
+      "name": "Jogurt nature",
+      "amount": 80,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "glattblättrige Petersilie",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Den Granatapfel halbieren, die Kerne herauslösen und den Saft einer Hälfte auffangen. Die Kerne der anderen Hälfte beiseitestellen.",
+    "Die Auberginen der Länge nach halbieren. Die Schnittflächen mit der halbierten Knoblauchzehe einreiben, anschliessend mit Sesamöl bestreichen und mit Salz würzen.",
+    "Die Auberginenhälften auf dem vorgeheizten Grill bei mittlerer Hitze (ca. 200 °C) auf jeder Seite etwa 15 Minuten grillieren, bis das Fleisch weich ist.",
+    "Das Innere der Auberginen mit einer Gabel herauslösen und in eine Schüssel geben. Die Auberginenschalen beiseitestellen.",
+    "Das herausgelöste Aubergineninnere zusammen mit Tahina, Harissa, dem aufgefangenen Granatapfelsaft und dem Zitronensaft fein pürieren. Mit Salz abschmecken.",
+    "Die Hälfte der abgetropften Kichererbsen unter die Auberginencreme mischen. Die Füllung gleichmässig auf die Auberginenschalen verteilen.",
+    "Die restlichen Kichererbsen, die beiseitegestellten Granatapfelkerne sowie Jogurt und frisch gezupfte Petersilienblätter darüber verteilen und sofort servieren."
+  ],
+  "tips": "Als Beilage passt frisches Fladenbrot hervorragend dazu. Die Füllung lässt sich auch einen Tag im Voraus zubereiten und im Kühlschrank aufbewahren.",
+  "dietCategory": "vegetarian",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch",
+    "sesam"
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "date": "2026-06-14T20:08:54.807Z",
+  "model": "claude-sonnet-4-6",
+  "total": 25,
+  "imported": 25,
+  "skipped_duplicates": 0,
+  "failed": 0,
+  "recipes": [
+    {
+      "url": "https://fooby.ch/de/rezepte/19982/grillschnecken--grillbrot---tomaten",
+      "title": "Grillschnecken, Grillbrot und Tomaten",
+      "id": "fle-70",
+      "status": "ok"
+    },
+    {
+      "url": "https://fooby.ch/de/rezepte/29027/grillplatte",
+      "title": "Grillplatte",
+      "id": "fle-71",
+      "status": "ok"
+    },
+    {
+      "url": "https://fooby.ch/de/rezepte/13510/bbq-marinade",
+      "title": "BBQ-Marinade",
+      "id": "son-97",
+      "status": "ok"
+    },
+    {
+      "url": "https://fooby.ch/de/rezepte/15687/buntes-grillgemuese",
+      "title": "Buntes Grillgemüse",
+      "id": "son-98",
+      "status": "ok"
+    },
+    {
+      "url": "https://fooby.ch/de/rezepte/13500/t-bone-steak-mit-grillspargel",
+      "title": "T-Bone-Steak mit Grillspargel",
+      "id": "fle-72",
+      "status": "ok"
+    },
+    {
+      "url": "https://fooby.ch/de/rezepte/19704/ratatouille-vom-grill",
+      "title": "Ratatouille vom Grill",
+      "id": "son-99",
+      "status": "ok"
+    },
+    {
+      "url": "https://fooby.ch/de/rezepte/13562/pastasalat",
+      "title": "Pastasalat",
+      "id": "sal-61",
+      "status": "ok"
+    },
+    {
+      "url": "https://fooby.ch/de/rezepte/13370/sommer-flammkuchen",
+      "title": "Sommer-Flammkuchen",
+      "id": "son-100",
+      "status": "ok"
+    },
+    {
+      "url": "https://fooby.ch/de/rezepte/17997/grillierte-auberginen-mit-granatapfel-und-kichererbsen-",
+      "title": "Grillierte Auberginen mit Granatapfel und Kichererbsen",
+      "id": "son-101",
+      "status": "ok"
+    },
+    {
+      "url": "https://fooby.ch/de/rezepte/21155/sticky-blumenkohl-spiessli",
+      "title": "Sticky Blumenkohl-Spiessli",
+      "id": "son-102",
+      "status": "ok"
+    },
+    {
+      "url": "https://fooby.ch/de/rezepte/13555/pouletbruestli-im-speckmantel",
+      "title": "Pouletbrüstli im Speckmantel",
+      "id": "fle-73",
+      "status": "ok"
+    },
+    {
+      "url": "https://fooby.ch/de/rezepte/13519/the-executive-burger",
+      "title": "The Executive Burger",
+      "id": "son-103",
+      "status": "ok"
+    },
+    {
+      "url": "https://fooby.ch/de/rezepte/11180/cordon-bleu-burger",
+      "title": "Cordon-bleu-Burger",
+      "id": "son-104",
+      "status": "ok"
+    },
+    {
+      "url": "https://fooby.ch/de/rezepte/26549/sommer-hoernli-salat",
+      "title": "Sommer-Hörnli-Salat",
+      "id": "sal-62",
+      "status": "ok"
+    },
+    {
+      "url": "https://fooby.ch/de/rezepte/17708/vegi-burger-mit-bohnen-und-suesskartoffeln",
+      "title": "Vegi-Burger mit Bohnen und Süsskartoffeln",
+      "id": "son-105",
+      "status": "ok"
+    },
+    {
+      "url": "https://fooby.ch/de/rezepte/13402/auberginen-sandwich-mit-huettenkaese",
+      "title": "Auberginen-Sandwich mit Hüttenkäse",
+      "id": "son-106",
+      "status": "ok"
+    },
+    {
+      "url": "https://fooby.ch/de/rezepte/13201/pulled-beef-burger",
+      "title": "Pulled Beef Burger",
+      "id": "son-107",
+      "status": "ok"
+    },
+    {
+      "url": "https://fooby.ch/de/rezepte/22199/pulled-mushroom-burger",
+      "title": "Pulled Mushroom Burger",
+      "id": "son-108",
+      "status": "ok"
+    },
+    {
+      "url": "https://fooby.ch/de/rezepte/22952/grillierte-auberginen-mit-sojasauce-und-ingwer",
+      "title": "Grillierte Auberginen mit Sojasauce und Ingwer",
+      "id": "son-109",
+      "status": "ok"
+    },
+    {
+      "url": "https://fooby.ch/de/rezepte/21156/pouletfluegeli-spiessli-mit-erdnuss-dip",
+      "title": "Pouletflügeli-Spiessli mit Erdnuss-Dip",
+      "id": "fle-74",
+      "status": "ok"
+    },
+    {
+      "url": "https://fooby.ch/de/rezepte/19338/poulet-steaks-mit-jamaica-marinade",
+      "title": "Poulet-Steaks mit Jamaica-Marinade",
+      "id": "fle-75",
+      "status": "ok"
+    },
+    {
+      "url": "https://fooby.ch/de/rezepte/13515/the-classic-pulled-pork",
+      "title": "Klassisches Pulled Pork",
+      "id": "fle-76",
+      "status": "ok"
+    },
+    {
+      "url": "https://fooby.ch/de/rezepte/13563/grillierte-avocado-mit-tomaten-mozzarella-salsa",
+      "title": "Grillierte Avocado mit Tomaten-Mozzarella-Salsa",
+      "id": "sal-63",
+      "status": "ok"
+    },
+    {
+      "url": "https://fooby.ch/de/rezepte/19800/cevapcici-vom-grill",
+      "title": "Cevapcici vom Grill",
+      "id": "fle-77",
+      "status": "ok"
+    },
+    {
+      "url": "https://fooby.ch/de/rezepte/8146/crevetten-spiessli-vom-grill",
+      "title": "Crevetten-Spiessli vom Grill",
+      "id": "fis-21",
+      "status": "ok"
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "id": "fis-21",
+  "name": "Crevetten-Spiessli vom Grill",
+  "category": "Fisch & Meeresfrüchte",
+  "timeMinutes": 95,
+  "basePortions": 4,
+  "weatherType": "warm",
+  "source": "fooby.ch",
+  "sourceType": "imported",
+  "approved": false,
+  "description": "Saftige Riesencrevetten, in einer würzigen Limetten-Marinade eingelegt und auf dem Grill zubereitet – dazu karamellisierte Bundzwiebeln mit Zitronengras und Fischsauce.",
+  "tags": [
+    "Abendessen",
+    "Grillgericht",
+    "Sommer",
+    "Für Gäste",
+    "Thai"
+  ],
+  "ingredients": [
+    {
+      "name": "Riesencrevetten, roh, geschält (Bio)",
+      "amount": 12,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Erdnussöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Limettensaft",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Thai 7-Spice",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitronengras",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Rohzucker (gemahlen)",
+      "amount": 1.5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Fischsauce",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Rote Chili",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Bundzwiebeln",
+      "amount": 6,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Limette",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Holzspiesschen",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Alu-Grillschale",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Marinade",
+      "ingredients": [
+        {
+          "name": "Erdnussöl",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Limettensaft",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Thai 7-Spice",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Crevetten",
+      "ingredients": [
+        {
+          "name": "Riesencrevetten, roh, geschält (Bio)",
+          "amount": 12,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Holzspiesschen",
+          "amount": 4,
+          "unit": "Stk",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zwiebeln in der Grillschale",
+      "ingredients": [
+        {
+          "name": "Bundzwiebeln",
+          "amount": 6,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Zitronengras (fein gehackt)",
+          "amount": 3,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Rohzucker (gemahlen)",
+          "amount": 1.5,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Fischsauce",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Rote Chili (fein gehackt)",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Alu-Grillschale",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zum Servieren",
+      "ingredients": [
+        {
+          "name": "Limette (in Schnitze geschnitten)",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Erdnussöl, Limettensaft, Thai 7-Spice und Salz in einer Schüssel gut miteinander verrühren.",
+    "Die Crevetten mit der Marinade bestreichen, zugedeckt und für ca. 1 Stunde im Kühlschrank marinieren lassen.",
+    "In der Zwischenzeit Rohzucker, fein gehacktes Zitronengras, gehackte Chili und Fischsauce in der Alu-Grillschale gut verrühren.",
+    "Die Bundzwiebeln beigeben und alles gut vermischen.",
+    "Den Grill auf mittlere Hitze vorheizen (ca. 220 °C). Die Grillschale mit den Zwiebeln auf den Grill stellen und bei geschlossenem Deckel ca. 15 Minuten grillieren.",
+    "Die marinierten Crevetten auf die Holzspiesschen stecken und auf den heissen Grill legen. Beidseitig je ca. 2 Minuten mitgrillieren, bis sie gar sind.",
+    "Crevetten-Spiessli zusammen mit den Zwiebeln anrichten und mit Limettenschnitzen servieren."
+  ],
+  "tips": "Die Holzspiesschen vor dem Aufstecken der Crevetten mindestens 30 Minuten in Wasser einweichen, damit sie auf dem Grill nicht verbrennen.",
+  "dietCategory": "fish",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "erdnuesse",
+    "fisch"
+  ]
+}

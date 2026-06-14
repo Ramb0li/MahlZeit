@@ -1,0 +1,217 @@
+{
+  "id": "fle-75",
+  "name": "Poulet-Steaks mit Jamaica-Marinade",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 162,
+  "basePortions": 4,
+  "weatherType": "warm",
+  "source": "fooby.ch",
+  "sourceType": "imported",
+  "approved": false,
+  "description": "Saftige Poulet-Oberschenkel in einer würzigen Jamaica-Marinade mit Zimt, Chili und Ingwer – perfekt vom Grill, dazu knusprige Thymian-Kartoffeln.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Grillgericht",
+    "Sommer",
+    "Amerikanisch"
+  ],
+  "ingredients": [
+    {
+      "name": "Poulet-Oberschenkel",
+      "amount": 8,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 4,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "rote Zwiebeln (in Spalten geschnitten)",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "rote Chilis",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Ingwer (frisch gerieben)",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "gemahlener Rohzucker",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Weissweinessig",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Thymianblättchen",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Muskat (gemahlen)",
+      "amount": 0.25,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Zimt (gemahlen)",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Baby-Kartoffeln",
+      "amount": 600,
+      "unit": "g",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Marinade",
+      "ingredients": [
+        {
+          "name": "Knoblauchzehen",
+          "amount": 4,
+          "unit": "Zehe",
+          "perPortions": 4
+        },
+        {
+          "name": "rote Chilis",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Ingwer (frisch gerieben)",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "gemahlener Rohzucker",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Weissweinessig",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Muskat (gemahlen)",
+          "amount": 0.25,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Zimt (gemahlen)",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Poulet",
+      "ingredients": [
+        {
+          "name": "Poulet-Oberschenkel",
+          "amount": 8,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Kartoffeln",
+      "ingredients": [
+        {
+          "name": "Baby-Kartoffeln",
+          "amount": 600,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "rote Zwiebeln (in Spalten geschnitten)",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Thymianblättchen",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Für die Marinade Knoblauch, Chilis, Ingwer, Rohzucker, Weissweinessig, Olivenöl, Muskat, Zimt und Salz in einem Cutter oder mit dem Pürierstab zu einer glatten Paste pürieren.",
+    "Die Poulet-Oberschenkel in einen Gefrierbeutel legen, die Marinade darübergiessen und die Luft aus dem Beutel drücken. Den Beutel fest verschliessen und das Fleisch so lange kneten, bis es rundum gleichmässig bedeckt ist. Den Beutel für ca. 2 Stunden in den Kühlschrank legen.",
+    "Die Baby-Kartoffeln in gesalzenem, siedendem Wasser ca. 10 Minuten knapp weich garen, dann gut abtropfen lassen.",
+    "Die Kartoffeln zusammen mit den Zwiebelpalten, den Thymianblättchen, etwas Olivenöl und Salz in einer Schüssel vermengen und auf einer gelochten Grillschale verteilen.",
+    "Die Grillschale mit den Kartoffeln auf den vorgeheizten Grill (ca. 200 °C) stellen und die Kartoffeln unter gelegentlichem Wenden grillieren, bis sie goldbraun und knusprig sind.",
+    "Die Marinade von den Poulet-Oberschenkeln abstreifen und das Fleisch leicht salzen. Die Oberschenkel mit der Hautseite nach oben auf den Grill legen und bei geschlossenem Deckel über mittlerer Hitze ca. 4 Minuten grillieren.",
+    "Das Poulet wenden und weitere ca. 8 Minuten fertig grillieren, bis es durchgegart und die Haut schön gebräunt ist. Zusammen mit den Grillkartoffeln servieren."
+  ],
+  "tips": "Die Marinierzeit kann auf bis zu 12 Stunden ausgedehnt werden – je länger, desto intensiver der Geschmack. Das Rezept eignet sich auch für den Backofen (200 °C Umluft, ca. 35–40 Minuten).",
+  "dietCategory": "meat",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "sulfite"
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "id": "sal-61",
+  "name": "Pastasalat",
+  "category": "Salate & Bowls",
+  "timeMinutes": 25,
+  "basePortions": 4,
+  "weatherType": "warm",
+  "source": "fooby.ch",
+  "sourceType": "imported",
+  "approved": false,
+  "description": "Ein sommerlicher Pastasalat mit Grillgemüse, Mozzarella-Perlen und einem frischen Zitronen-Balsamico-Dressing – perfekt für den nächsten Grillabend.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Sommer",
+    "Grillgericht",
+    "Mealprep-geeignet",
+    "Gut zum Mitnehmen",
+    "Für Gäste",
+    "Ohne Kochen",
+    "Italienisch"
+  ],
+  "ingredients": [
+    {
+      "name": "Teigwaren",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Pinienkerne",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Bio-Zitrone (Schale abgerieben)",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Rucola",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Mozzarella-Perlen",
+      "amount": 120,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Grillgemüse in Öl (Glas)",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Getrocknete Tomaten in Öl",
+      "amount": 5,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Entsteinte schwarze Oliven",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Aceto balsamico bianco",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.75,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Die Teigwaren in reichlich gesalzenem Wasser al dente kochen, anschliessend abgiessen und abtropfen lassen.",
+    "In der Zwischenzeit die Pinienkerne in einer trockenen Pfanne bei mittlerer Hitze goldbraun rösten und beiseitelegen.",
+    "Für das Dressing den Aceto balsamico bianco, das Olivenöl und die abgeriebene Schale der Bio-Zitrone in einer grossen Schüssel verrühren und mit Salz und Pfeffer würzen.",
+    "Die noch warmen Teigwaren zum Dressing geben und gut untermischen, damit sie das Dressing aufnehmen.",
+    "Das Grillgemüse, die getrockneten Tomaten, die Oliven, die Mozzarella-Perlen, den Rucola und die gerösteten Pinienkerne beigeben und alles vorsichtig vermengen.",
+    "Den Pastasalat abschmecken und nach Belieben sofort servieren oder kurz kühlstellen."
+  ],
+  "tips": "Der Salat lässt sich prima vorbereiten – einfach den Rucola erst kurz vor dem Servieren untermischen, damit er nicht welk wird. Im Kühlschrank hält er sich gut zugedeckt bis zu einem Tag.",
+  "dietCategory": "vegetarian",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch"
+  ]
+}

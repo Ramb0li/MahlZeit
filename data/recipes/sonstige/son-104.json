@@ -1,0 +1,173 @@
+{
+  "id": "son-104",
+  "name": "Cordon-bleu-Burger",
+  "category": "Wraps, Sandwiches & Burger",
+  "timeMinutes": 50,
+  "basePortions": 4,
+  "weatherType": "warm",
+  "source": "fooby.ch",
+  "sourceType": "imported",
+  "approved": false,
+  "description": "Ein saftiger Hackfleisch-Burger mit einer herzhaften Füllung aus Gruyère, Hinterschinken und grünen Peperoncini — die klassische Cordon-bleu-Idee neu auf dem Grill interpretiert.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Grillgericht",
+    "Für Gäste",
+    "Sommer",
+    "Schweizerisch"
+  ],
+  "ingredients": [
+    {
+      "name": "Halbweissbrot vom Vortag",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Vollmilch",
+      "amount": 100,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Hackfleisch (Rind und Schwein)",
+      "amount": 600,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Hinterschinken (in Tranchen)",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Gruyère (rezent, gerieben)",
+      "amount": 60,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "grüne Peperoncini (fein geschnitten)",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "glattblättrige Petersilie (gehackt)",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "grobkörniger Senf",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Patties",
+      "ingredients": [
+        {
+          "name": "Halbweissbrot vom Vortag",
+          "amount": 100,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Vollmilch",
+          "amount": 100,
+          "unit": "ml",
+          "perPortions": 4
+        },
+        {
+          "name": "Hackfleisch (Rind und Schwein)",
+          "amount": 600,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "glattblättrige Petersilie (gehackt)",
+          "amount": 1,
+          "unit": "Bund",
+          "perPortions": 4
+        },
+        {
+          "name": "grobkörniger Senf",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1.5,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Füllung",
+      "ingredients": [
+        {
+          "name": "Hinterschinken (in Tranchen)",
+          "amount": 4,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Gruyère (rezent, gerieben)",
+          "amount": 60,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "grüne Peperoncini (fein geschnitten)",
+          "amount": 30,
+          "unit": "g",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Das Brot in kleine Stücke brechen und in der Milch kurz einweichen, bis es die Flüssigkeit aufgesogen hat.",
+    "Das eingeweichte Brot zusammen mit dem Hackfleisch, der gehackten Petersilie, dem Senf, Salz und Pfeffer in eine Schüssel geben und alles kräftig kneten, bis eine kompakte, homogene Masse entsteht.",
+    "Die Hackfleischmasse in 4 gleiche Portionen teilen und mit leicht angefeuchteten Händen zu Kugeln formen.",
+    "Den geriebenen Gruyère und die Peperoncini auf den Schinkentranchen verteilen, dann die Tranchen zu kleinen Päckli zusammenfalten.",
+    "Mit dem Daumen eine Mulde in jede Hackfleischkugel drücken, je ein Schinkenpäckli hineinlegen und das Fleisch rundherum fest verschliessen. Die Burger anschliessend leicht flach drücken.",
+    "Den Grill auf mittlere Hitze (ca. 200 °C) vorheizen. Die Burger bei geschlossenem Deckel auf jeder Seite ca. 7 Minuten grillieren, bis sie gar und schön gebräunt sind."
+  ],
+  "tips": "Die Burger lassen sich auch in einer heissen Bratpfanne mit etwas Öl beidseitig braten. Dazu passen Burgerbrötchen, Salat, Tomatenscheiben und eine würzige Senf-Mayonnaise.",
+  "dietCategory": "meat",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch",
+    "senf",
+    "sulfite"
+  ]
+}

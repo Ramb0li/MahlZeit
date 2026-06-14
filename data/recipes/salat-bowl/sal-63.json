@@ -1,0 +1,206 @@
+{
+  "id": "sal-63",
+  "name": "Grillierte Avocado mit Tomaten-Mozzarella-Salsa",
+  "category": "Salate & Bowls",
+  "timeMinutes": 28,
+  "basePortions": 4,
+  "weatherType": "warm",
+  "source": "fooby.ch",
+  "sourceType": "imported",
+  "approved": false,
+  "description": "Cremige Avocadohälften frisch vom Grill, angerichtet mit einer aromatischen Tomaten-Mozzarella-Salsa – ein sommerlicher Genuss, der in wenigen Minuten auf dem Tisch steht.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Snack",
+    "Grillgericht",
+    "Sommer",
+    "Mediterran",
+    "Für Gäste"
+  ],
+  "ingredients": [
+    {
+      "name": "Tomaten",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Schalotten (fein gehackt)",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehe (fein gehackt)",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Glattblättrige Petersilie (fein gehackt)",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Avocados",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Flüssiger Honig",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Fleur de Sel",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Zimt",
+      "amount": 1,
+      "unit": "Msp",
+      "perPortions": 4
+    },
+    {
+      "name": "Mozzarella-Perlen",
+      "amount": 120,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Limettensaft",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 3.5,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Salsa",
+      "ingredients": [
+        {
+          "name": "Tomaten (gewürfelt)",
+          "amount": 400,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Schalotten (fein gehackt)",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Knoblauchzehe (fein gehackt)",
+          "amount": 1,
+          "unit": "Zehe",
+          "perPortions": 4
+        },
+        {
+          "name": "Glattblättrige Petersilie (fein gehackt)",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Flüssiger Honig",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Zimt",
+          "amount": 1,
+          "unit": "Msp",
+          "perPortions": 4
+        },
+        {
+          "name": "Mozzarella-Perlen",
+          "amount": 120,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Limettensaft",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 2.5,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Fleur de Sel",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Grillierte Avocado",
+      "ingredients": [
+        {
+          "name": "Avocados (halbiert, Kern entfernt)",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Fleur de Sel",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Für die Salsa den Limettensaft mit 2½ EL Olivenöl, Honig, einer Prise Salz, Pfeffer und Zimt in einer Schüssel gut verrühren.",
+    "Tomaten würfeln, Schalotte und Knoblauch fein hacken, Petersilie grob schneiden und alles zusammen mit den Mozzarella-Perlen in die Marinade geben. Alles gut mischen und beiseitestellen.",
+    "Avocados halbieren, den Kern entfernen und die Schnittflächen sowie die Schale leicht mit Olivenöl bepinseln.",
+    "Den Grill auf mittlere Hitze (ca. 200 °C) vorheizen. Die Avocadohälften in eine Grillschale legen und zugedeckt auf beiden Seiten je etwa 4 Minuten grillieren.",
+    "Die grillierten Avocados auf einer Platte anrichten, Fleur de Sel darüberstreuen und grosszügig mit der Tomaten-Mozzarella-Salsa belegen. Sofort servieren."
+  ],
+  "tips": "Wer keine Grillschale hat, kann die Avocados auch direkt auf den Grillrost legen – einfach aufpassen, dass sie nicht auseinanderfallen. Für eine vegane Variante den Mozzarella weglassen und durch gewürfelte reife Mango ersetzen.",
+  "dietCategory": "vegetarian",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch"
+  ]
+}

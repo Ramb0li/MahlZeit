@@ -1,0 +1,244 @@
+{
+  "id": "fle-77",
+  "name": "Cevapcici vom Grill",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 55,
+  "basePortions": 4,
+  "weatherType": "warm",
+  "source": "fooby.ch",
+  "sourceType": "imported",
+  "approved": false,
+  "description": "Saftige Cevapcici vom Grill – herzhaft gewürzt und zusammen mit knackigem Bohnen-Kartoffel-Gemüse und cremigem Ajvar serviert. Ein Sommerklassiker für die ganze Familie!",
+  "tags": [
+    "Abendessen",
+    "Grillgericht",
+    "Sommer",
+    "Für Gäste",
+    "Türkisch"
+  ],
+  "ingredients": [
+    {
+      "name": "Hackfleisch (Rind und Schwein gemischt)",
+      "amount": 600,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehen (gepresst)",
+      "amount": 3,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Backpulver",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Paprikapulver",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kreuzkümmel",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Chiliflocken",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Holzspiesschen",
+      "amount": 16,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Bohnen (grün)",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Kartoffeln (vorwiegend festkochend)",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Haselnüsse (gehackt)",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfefferminze (frisch, gehackt)",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Ajvar",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Cevapcici",
+      "ingredients": [
+        {
+          "name": "Hackfleisch (Rind und Schwein gemischt)",
+          "amount": 600,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Knoblauchzehen (gepresst)",
+          "amount": 3,
+          "unit": "Zehe",
+          "perPortions": 4
+        },
+        {
+          "name": "Backpulver",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Paprikapulver",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Kreuzkümmel",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Chiliflocken",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Holzspiesschen",
+          "amount": 16,
+          "unit": "Stk",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Grillgemüse",
+      "ingredients": [
+        {
+          "name": "Bohnen (grün)",
+          "amount": 400,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Kartoffeln (vorwiegend festkochend)",
+          "amount": 500,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Haselnüsse (gehackt)",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfefferminze (frisch, gehackt)",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zum Anrichten",
+      "ingredients": [
+        {
+          "name": "Ajvar",
+          "amount": 100,
+          "unit": "g",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Holzspiesschen für mindestens 30 Minuten in Wasser einweichen, damit sie auf dem Grill nicht verbrennen.",
+    "Hackfleisch, gepressten Knoblauch, Backpulver, Paprikapulver, Kreuzkümmel, Chiliflocken, 1 TL Salz und Pfeffer in einer Schüssel vermengen und kräftig durchkneten, bis eine kompakte, gleichmässige Masse entsteht.",
+    "Mit nassen Händen aus der Fleischmasse 16 Rollen von je etwa 10 cm Länge formen und je eine Rolle auf ein Holzspiesschen stecken.",
+    "Die Bohnen in siedendem Salzwasser ca. 5 Minuten blanchieren, dann abgiessen und sofort in eiskaltem Wasser abschrecken. Gut abtropfen lassen.",
+    "Die Kartoffeln in gleichmässige Stücke schneiden. Bohnen und Kartoffeln in einer Schüssel mit Olivenöl, Salz und nach Belieben etwas Pfeffer vermengen, dann in eine Grillschale geben.",
+    "Den Grill auf mittlere Hitze (ca. 200 °C) vorheizen. Die Grillschale mit dem Gemüse bei geschlossenem Deckel ca. 20 Minuten grillieren und dabei gelegentlich wenden.",
+    "Die Cevapcici neben der Grillschale auf den Rost legen und rundum ca. 10 Minuten mitgrillieren, bis sie schön gebräunt und durchgegart sind.",
+    "Das fertige Gemüse nach Bedarf nachwürzen, dann Haselnüsse und Pfefferminze daruntermischen.",
+    "Cevapcici zusammen mit dem Gemüse auf Tellern anrichten und mit Ajvar servieren."
+  ],
+  "tips": "Wer es etwas milder mag, kann die Chiliflocken reduzieren oder weglassen. Die Cevapcici lassen sich auch gut einen Tag im Voraus formen und zugedeckt im Kühlschrank aufbewahren – so verbinden sich die Aromen noch besser.",
+  "dietCategory": "meat",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "schalenfruechte",
+    "sulfite"
+  ]
+}

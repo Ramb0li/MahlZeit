@@ -1,0 +1,145 @@
+{
+  "id": "son-106",
+  "name": "Auberginen-Sandwich mit Hüttenkäse",
+  "category": "Wraps, Sandwiches & Burger",
+  "timeMinutes": 30,
+  "basePortions": 4,
+  "weatherType": "warm",
+  "source": "fooby.ch",
+  "sourceType": "imported",
+  "approved": false,
+  "description": "Saftig gegrillte Auberginenscheiben als Brot-Ersatz, gefüllt mit einer würzigen Hüttenkäse-Creme mit getrockneten Tomaten und frischem Basilikum – leicht, frisch und sommerlich.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Sommer",
+    "Grillgericht",
+    "Mediterran",
+    "Kinderfreundlich",
+    "Gut zum Mitnehmen"
+  ],
+  "ingredients": [
+    {
+      "name": "Auberginen",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Hüttenkäse nature",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Getrocknete Tomaten",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Basilikum (fein geschnitten)",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Füllung",
+      "ingredients": [
+        {
+          "name": "Hüttenkäse nature",
+          "amount": 200,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Getrocknete Tomaten",
+          "amount": 50,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Basilikum (fein geschnitten)",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Auberginen",
+      "ingredients": [
+        {
+          "name": "Auberginen",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Die getrockneten Tomaten fein hacken und zusammen mit dem Hüttenkäse und dem Basilikum in einer Schüssel gut verrühren. Mit Salz und Pfeffer abschmecken.",
+    "Die Auberginen in gleichmässige Scheiben schneiden und beidseitig mit Olivenöl bepinseln.",
+    "Eine Grillpfanne stark erhitzen. Die Auberginenscheiben portionenweise hineingeben und bei mittlerer bis hoher Hitze beidseitig je ca. 7 Minuten grillieren, bis sie weich sind und schöne Grillstreifen aufweisen. Anschliessend salzen und pfeffern.",
+    "Die Hälfte der Auberginenscheiben auf einer Platte anrichten und je einen Esslöffel der Hüttenkäse-Füllung darauf verteilen. Mit den restlichen Auberginenscheiben bedecken und sofort servieren."
+  ],
+  "tips": "Die Füllung lässt sich nach Belieben mit frischer Minze oder etwas Zitronenabrieb verfeinern. Die Sandwiches schmecken auch lauwarm und eignen sich gut als Vorspeise für Gäste.",
+  "dietCategory": "vegetarian",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch"
+  ]
+}

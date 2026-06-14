@@ -1,0 +1,100 @@
+{
+  "id": "sal-62",
+  "name": "Sommer-Hörnli-Salat",
+  "category": "Salate & Bowls",
+  "timeMinutes": 30,
+  "basePortions": 4,
+  "weatherType": "warm",
+  "source": "fooby.ch",
+  "sourceType": "imported",
+  "approved": false,
+  "description": "Ein bunter Hörnli-Salat mit gebratenen Peperoni, Cervelat und saftigen Datteltomaten – perfekt für warme Sommertage.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Sommer",
+    "Kinderfreundlich",
+    "Mealprep-geeignet",
+    "Gut zum Mitnehmen",
+    "Schweizerisch",
+    "Pfannengericht"
+  ],
+  "ingredients": [
+    {
+      "name": "Hörnli (oder andere kurze Pasta)",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Cervelat (in Scheiben oder Würfel geschnitten)",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "farbige Peperoni (in Streifen geschnitten)",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Datteltomaten (halbiert)",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "dunkle Sultaninen",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Honig (flüssig)",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Rotweinessig",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "steps": [
+    "Die Hörnli in reichlich gesalzenem, siedendem Wasser al dente kochen, anschliessend kalt abschrecken und gut abtropfen lassen.",
+    "Olivenöl in einer Bratpfanne bei mittlerer bis hoher Hitze erhitzen. Die Peperonistreifen und den Cervelat beigeben und unter gelegentlichem Rühren ca. 8 Minuten braten.",
+    "Hitze reduzieren, die halbierten Datteltomaten und die Sultaninen in die Pfanne geben und alles weitere ca. 5 Minuten mitdämpfen. Den Honig darunterrühren und die Mischung mit Salz und Pfeffer würzen.",
+    "Rotweinessig und restliches Olivenöl in einer grossen Schüssel verrühren und mit Salz und Pfeffer abschmecken.",
+    "Die abgetropften Hörnli sowie die Gemüse-Cervelat-Mischung zum Dressing geben und alles gut vermischen. Den Salat auf Teller oder in eine Servierschüssel anrichten und servieren."
+  ],
+  "tips": "Der Salat schmeckt lauwarm besonders gut, eignet sich aber auch hervorragend als vorbereitetes Mittagessen für unterwegs – er lässt sich problemlos einige Stunden im Voraus zubereiten.",
+  "dietCategory": "meat",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "sulfite"
+  ]
+}

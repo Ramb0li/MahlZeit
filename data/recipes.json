@@ -4506,175 +4506,44 @@
     "name": "Linsen-Gemüse-Lasagne",
     "category": "Aufläufe & Gratins",
     "timeMinutes": 75,
+    "ingredients": [],
+    "weatherType": "kalt",
+    "source": "Cuiseline",
+    "basePortions": 4,
+    "description": "Klassische Lasagne vegetarisch.",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/pas-02-1780699528706.jpg",
     "tags": [
       "Mealprep-geeignet",
-      "Mittagsgericht",
+      "Mittagessen",
       "Herbst",
       "Winter",
       "Ofengericht",
-      "Vegetarisch",
-      "Kinderfreundlich",
-      "Frühling",
-      "Abendgericht",
-      "Italienisch"
+      "Abendessen"
     ],
-    "ingredients": [
-      {
-        "name": "Zwiebel",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Knoblauch",
-        "amount": 2,
-        "unit": "Zehe",
-        "perPortions": 4
-      },
-      {
-        "name": "Karotte",
-        "amount": 2,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Knollensellerie",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Peperoni",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Zucchetti",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Olivenöl",
-        "amount": 3,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Tomatenmark",
-        "amount": 1,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "grüne Linsen",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Gemüsebouillon",
-        "amount": 4,
-        "unit": "dl",
-        "perPortions": 4
-      },
-      {
-        "name": "Italienische Kräuter",
-        "amount": 2,
-        "unit": "TL",
-        "perPortions": 4
-      },
-      {
-        "name": "All'arrabbiata Gewürz",
-        "amount": 0.5,
-        "unit": "TL",
-        "perPortions": 4
-      },
-      {
-        "name": "Salz",
-        "amount": 1,
-        "unit": "TL",
-        "perPortions": 4
-      },
-      {
-        "name": "Pfeffer",
-        "amount": 1,
-        "unit": "Prise",
-        "perPortions": 4
-      },
-      {
-        "name": "Butter",
-        "amount": 100,
-        "unit": "g",
-        "perPortions": 8
-      },
-      {
-        "name": "Mehl",
-        "amount": 60,
-        "unit": "g",
-        "perPortions": 8
-      },
-      {
-        "name": "Milch oder Sojadrink",
-        "amount": 1,
-        "unit": "l",
-        "perPortions": 8
-      },
-      {
-        "name": "Salz",
-        "amount": 1,
-        "unit": "TL",
-        "perPortions": 8
-      },
-      {
-        "name": "Pfeffer",
-        "amount": 2,
-        "unit": "Prisen",
-        "perPortions": 8
-      },
-      {
-        "name": "Muskatnuss",
-        "amount": 2,
-        "unit": "Prisen",
-        "perPortions": 8
-      },
-      {
-        "name": "Lasagneblätter",
-        "amount": 1,
-        "unit": "Pkg",
-        "perPortions": 8
-      },
-      {
-        "name": "Mozzarella, gerieben",
-        "amount": 250,
-        "unit": "g",
-        "perPortions": 8
-      },
-      {
-        "name": "Reibkäse (z.B. Sbrinz oder Parmesan)",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 8
-      }
-    ],
-    "weatherType": "kalt",
-    "source": "MahlZeit",
-    "basePortions": 6,
-    "description": "Schicht für Schicht voller Gemüse, Linsen und cremiger Béchamelsauce – eine Lasagne zum Wohlfühlen.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/pas-02-1780699528706.jpg",
     "imageZutaten": null,
     "imageKochen": null,
+    "allergens": [
+      "gluten",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 562,
+      "protein": 24.3,
+      "fat": 16.8,
+      "carbs": 74.2,
+      "fiber": 8.9
+    },
+    "dietCategory": "vegetarian",
     "steps": [
       "Zwiebel und Knoblauch fein hacken. Karotte, Knollensellerie, Zucchetti, Peperoni und Champignons klein schneiden.",
       "Olivenöl in einer grossen Pfanne erhitzen. Gemüse und Champignons beigeben und andämpfen.",
-      "Tomatenmark hinzufügen und kurz mitrösten.",
+      "Tomatenpüree hinzufügen und kurz mitrösten.",
       "Linsen beigeben und kurz mitdämpfen.",
       "Optional mit Weisswein ablöschen und Flüssigkeit einkochen lassen.",
-      "Gemüsebouillon beigeben und aufkochen. Mit italienischen Kräutern, All’arrabbiata Gewürz, Salz und Pfeffer würzen.",
+      "Gemüsebouillon beigeben und aufkochen. Mit italienischen Kräutern, All’arrabbiata-Gewürz, Salz und Pfeffer würzen.",
       "Linsen-Gemüse-Sauce bei kleiner Hitze ca. 15 Minuten köcheln lassen. Sauce abschmecken.",
       "Backofen auf 200 °C Ober-/Unterhitze vorheizen. Gratinform mit wenig Butter einfetten.",
-      "Für Béchamelsauce Butter in einer Pfanne schmelzen. Mehl beigeben und unter Rühren mit Schwingbesen kurz dünsten.",
+      "Für Béchamelsauce Butter in einer Pfanne schmelzen. Mehl beigeben und unter Rühren mit Schwingbesen kurz dünsten, ohne dass Mehl Farbe annimmt.",
       "Milch oder Sojadrink auf einmal dazugiessen und unter ständigem Rühren aufkochen.",
       "Mit Salz, Pfeffer und Muskatnuss würzen. Hitze reduzieren und Sauce unter gelegentlichem Rühren ca. 10 Minuten köcheln lassen, bis sie sämig ist.",
       "Wenig Béchamelsauce auf Boden der vorbereiteten Form verteilen.",
@@ -4683,162 +4552,8 @@
       "Restlichen Mozzarella und Sbrinz darüberstreuen.",
       "Lasagne in Ofenmitte ca. 35–40 Minuten backen, bis Oberfläche goldbraun ist."
     ],
-    "ingredientGroups": [
-      {
-        "name": "Zutaten für Linsen-Gemüse-Sauce",
-        "ingredients": [
-          {
-            "name": "Zwiebel",
-            "amount": 1,
-            "unit": "Stk",
-            "perPortions": 4
-          },
-          {
-            "name": "Knoblauch",
-            "amount": 2,
-            "unit": "Zehe",
-            "perPortions": 4
-          },
-          {
-            "name": "Karotte",
-            "amount": 2,
-            "unit": "Stk",
-            "perPortions": 4
-          },
-          {
-            "name": "Knollensellerie",
-            "amount": 200,
-            "unit": "g",
-            "perPortions": 4
-          },
-          {
-            "name": "Peperoni",
-            "amount": 1,
-            "unit": "Stk",
-            "perPortions": 4
-          },
-          {
-            "name": "Zucchetti",
-            "amount": 1,
-            "unit": "Stk",
-            "perPortions": 4
-          },
-          {
-            "name": "Olivenöl",
-            "amount": 3,
-            "unit": "EL",
-            "perPortions": 4
-          },
-          {
-            "name": "Tomatenmark",
-            "amount": 1,
-            "unit": "EL",
-            "perPortions": 4
-          },
-          {
-            "name": "grüne Linsen",
-            "amount": 200,
-            "unit": "g",
-            "perPortions": 4
-          },
-          {
-            "name": "Gemüsebouillon",
-            "amount": 4,
-            "unit": "dl",
-            "perPortions": 4
-          },
-          {
-            "name": "Italienische Kräuter",
-            "amount": 2,
-            "unit": "TL",
-            "perPortions": 4
-          },
-          {
-            "name": "All'arrabbiata Gewürz",
-            "amount": 0.5,
-            "unit": "TL",
-            "perPortions": 4
-          },
-          {
-            "name": "Salz",
-            "amount": 1,
-            "unit": "TL",
-            "perPortions": 4
-          },
-          {
-            "name": "Pfeffer",
-            "amount": 1,
-            "unit": "Prise",
-            "perPortions": 4
-          }
-        ]
-      },
-      {
-        "name": "Zutaten für Béchamelsauce",
-        "ingredients": [
-          {
-            "name": "Butter",
-            "amount": 100,
-            "unit": "g",
-            "perPortions": 8
-          },
-          {
-            "name": "Mehl",
-            "amount": 60,
-            "unit": "g",
-            "perPortions": 8
-          },
-          {
-            "name": "Milch oder Sojadrink",
-            "amount": 1,
-            "unit": "l",
-            "perPortions": 8
-          },
-          {
-            "name": "Salz",
-            "amount": 1,
-            "unit": "TL",
-            "perPortions": 8
-          },
-          {
-            "name": "Pfeffer",
-            "amount": 2,
-            "unit": "Prisen",
-            "perPortions": 8
-          },
-          {
-            "name": "Muskatnuss",
-            "amount": 2,
-            "unit": "Prisen",
-            "perPortions": 8
-          }
-        ]
-      },
-      {
-        "name": "Zutaten für Lasagne",
-        "ingredients": [
-          {
-            "name": "Lasagneblätter",
-            "amount": 1,
-            "unit": "Pkg",
-            "perPortions": 8
-          },
-          {
-            "name": "Mozzarella, gerieben",
-            "amount": 250,
-            "unit": "g",
-            "perPortions": 8
-          },
-          {
-            "name": "Reibkäse (z.B. Sbrinz oder Parmesan)",
-            "amount": 200,
-            "unit": "g",
-            "perPortions": 8
-          }
-        ]
-      }
-    ],
-    "dietCategory": "vegetarian"
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-03",
@@ -5846,9 +5561,7 @@
       "fiber": 11.2
     },
     "sourceType": "mahlzyt",
-    "_migrated_v2": true,
-    "imageZutaten": null,
-    "imageKochen": null
+    "_migrated_v2": true
   },
   {
     "id": "pas-18",
@@ -18719,20 +18432,15 @@
     "id": "sal-12",
     "name": "Linsen-Apfel-Salat",
     "category": "Salate & Bowls",
-    "timeMinutes": 75,
+    "timeMinutes": 25,
     "tags": [
-      "Mittagessen",
-      "Abendessen",
-      "Mealprep-geeignet",
-      "Kinderfreundlich",
-      "Resteverwertung",
-      "Budgetfreundlich",
-      "Für Gäste",
-      "Gut zum Mitnehmen",
-      "Sommer",
-      "Frühling",
-      "Nahöstlich"
+      "Herbst"
     ],
+    "weatherType": "neutral",
+    "source": "Cuiseline",
+    "basePortions": 4,
+    "dietCategory": "vegan",
+    "description": "Proteinreicher Linsensalat mit Apfel, Granatapfel und Thymian.",
     "ingredients": [
       {
         "name": "grüne Linsen",
@@ -18741,8 +18449,8 @@
         "perPortions": 4
       },
       {
-        "name": "Gemüsebouillon",
-        "amount": 600,
+        "name": "Gemüsebrühe",
+        "amount": 700,
         "unit": "ml",
         "perPortions": 4
       },
@@ -18753,39 +18461,9 @@
         "perPortions": 4
       },
       {
-        "name": "Zitrone ",
+        "name": "Granatapfel",
         "amount": 1,
         "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Apfelessig",
-        "amount": 3,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Olivenöl",
-        "amount": 6,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Ahornsirup",
-        "amount": 1,
-        "unit": "TL",
-        "perPortions": 4
-      },
-      {
-        "name": "Salz",
-        "amount": 3,
-        "unit": "Prisen",
-        "perPortions": 4
-      },
-      {
-        "name": "Pfeffer",
-        "amount": 2,
-        "unit": "Prisen",
         "perPortions": 4
       },
       {
@@ -18813,31 +18491,46 @@
         "perPortions": 4
       },
       {
-        "name": "Granatapfel",
+        "name": "Olivenöl",
+        "amount": 6,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Apfelessig",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Ahornsirup",
         "amount": 1,
-        "unit": "Stk",
+        "unit": "TL",
         "perPortions": 4
       }
     ],
-    "weatherType": "warm",
-    "source": "Cuiseline",
-    "basePortions": 4,
-    "description": "Ein farbenfroher Linsensalat mit süss-säuerlicher Note – sättigend, frisch und wunderbar aromatisch.",
+    "steps": [
+      "1. Gemüsebrühe mit Lorbeerblatt aufkochen. Linsen abspülen, bissfest kochen. Abgiessen und abkühlen lassen.",
+      "2. Apfelessig, Olivenöl, Ahornsirup, Salz und Pfeffer in grosser Schüssel verrühren.",
+      "3. Äpfel fein würfeln und ins Dressing geben.",
+      "4. Rote Zwiebel in feine Streifen schneiden, Petersilie hacken, Thymian abzupfen.",
+      "5. Linsen und alle Zutaten zum Dressing geben, vermischen.",
+      "6. Ca. 30 Minuten ziehen lassen. Mit Granatapfelkernen garnieren."
+    ],
+    "tips": "Schmeckt besonders gut wenn er ca. eine halbe Stunde ziehen kann.",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---linsen-apfel-salat-1--1780579776842.jpeg",
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---linsen-apfel-salat-2--1780579783529.jpeg",
     "imageKochen": null,
-    "steps": [
-      "Gemüsebouillon mit Lorbeerblatt aufkochen.",
-      "Linsen abspülen, beigeben und bei kleiner Hitze ca. 25–30 Minuten köcheln lassen, bis sie noch leicht bissfest sind. Abgiessen und auskühlen lassen.",
-      "Zitrone auspressen. Zitronensaft, Apfelessig, Olivenöl, Ahornsirup, Salz und Pfeffer in einer grossen Schüssel verrühren.",
-      "Äpfel in kleine Stücke schneiden, zum Dressing geben und mischen.",
-      "Zwiebel in feine Streifen schneiden. Petersilie hacken, Thymianblättchen abzupfen.",
-      "Granatapfel einschneiden und in einer Schüssel mit Wasser vorsichtig aufbrechen. Kerne herauslösen und abtropfen lassen.",
-      "Linsen, Granatapfelkerne, Zwiebel, Petersilie und Thymian zum Dressing geben und gut vermischen.",
-      "Salat ca. 30 Minuten ziehen lassen.",
-      "Mit Petersilie garnieren und servieren."
-    ],
-    "dietCategory": "vegan"
+    "allergens": [],
+    "nutrition": {
+      "kcal": 398,
+      "protein": 16.2,
+      "fat": 16.8,
+      "carbs": 45.3,
+      "fiber": 11.8
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sal-13",
@@ -20075,6 +19768,426 @@
     ],
     "sourceType": "mahlzyt",
     "_migrated_v2": true
+  },
+  {
+    "id": "sal-61",
+    "name": "Pastasalat",
+    "category": "Salate & Bowls",
+    "timeMinutes": 25,
+    "basePortions": 4,
+    "weatherType": "warm",
+    "source": "fooby.ch",
+    "sourceType": "imported",
+    "approved": false,
+    "description": "Ein sommerlicher Pastasalat mit Grillgemüse, Mozzarella-Perlen und einem frischen Zitronen-Balsamico-Dressing – perfekt für den nächsten Grillabend.",
+    "tags": [
+      "Mittagessen",
+      "Abendessen",
+      "Sommer",
+      "Grillgericht",
+      "Mealprep-geeignet",
+      "Gut zum Mitnehmen",
+      "Für Gäste",
+      "Ohne Kochen",
+      "Italienisch"
+    ],
+    "ingredients": [
+      {
+        "name": "Teigwaren",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Pinienkerne",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Bio-Zitrone (Schale abgerieben)",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Rucola",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Mozzarella-Perlen",
+        "amount": 120,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Grillgemüse in Öl (Glas)",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Getrocknete Tomaten in Öl",
+        "amount": 5,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Entsteinte schwarze Oliven",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Aceto balsamico bianco",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 0.75,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Die Teigwaren in reichlich gesalzenem Wasser al dente kochen, anschliessend abgiessen und abtropfen lassen.",
+      "In der Zwischenzeit die Pinienkerne in einer trockenen Pfanne bei mittlerer Hitze goldbraun rösten und beiseitelegen.",
+      "Für das Dressing den Aceto balsamico bianco, das Olivenöl und die abgeriebene Schale der Bio-Zitrone in einer grossen Schüssel verrühren und mit Salz und Pfeffer würzen.",
+      "Die noch warmen Teigwaren zum Dressing geben und gut untermischen, damit sie das Dressing aufnehmen.",
+      "Das Grillgemüse, die getrockneten Tomaten, die Oliven, die Mozzarella-Perlen, den Rucola und die gerösteten Pinienkerne beigeben und alles vorsichtig vermengen.",
+      "Den Pastasalat abschmecken und nach Belieben sofort servieren oder kurz kühlstellen."
+    ],
+    "tips": "Der Salat lässt sich prima vorbereiten – einfach den Rucola erst kurz vor dem Servieren untermischen, damit er nicht welk wird. Im Kühlschrank hält er sich gut zugedeckt bis zu einem Tag.",
+    "dietCategory": "vegetarian",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "gluten",
+      "milch"
+    ]
+  },
+  {
+    "id": "sal-62",
+    "name": "Sommer-Hörnli-Salat",
+    "category": "Salate & Bowls",
+    "timeMinutes": 30,
+    "basePortions": 4,
+    "weatherType": "warm",
+    "source": "fooby.ch",
+    "sourceType": "imported",
+    "approved": false,
+    "description": "Ein bunter Hörnli-Salat mit gebratenen Peperoni, Cervelat und saftigen Datteltomaten – perfekt für warme Sommertage.",
+    "tags": [
+      "Mittagessen",
+      "Abendessen",
+      "Sommer",
+      "Kinderfreundlich",
+      "Mealprep-geeignet",
+      "Gut zum Mitnehmen",
+      "Schweizerisch",
+      "Pfannengericht"
+    ],
+    "ingredients": [
+      {
+        "name": "Hörnli (oder andere kurze Pasta)",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Cervelat (in Scheiben oder Würfel geschnitten)",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "farbige Peperoni (in Streifen geschnitten)",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Datteltomaten (halbiert)",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "dunkle Sultaninen",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Honig (flüssig)",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Rotweinessig",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Die Hörnli in reichlich gesalzenem, siedendem Wasser al dente kochen, anschliessend kalt abschrecken und gut abtropfen lassen.",
+      "Olivenöl in einer Bratpfanne bei mittlerer bis hoher Hitze erhitzen. Die Peperonistreifen und den Cervelat beigeben und unter gelegentlichem Rühren ca. 8 Minuten braten.",
+      "Hitze reduzieren, die halbierten Datteltomaten und die Sultaninen in die Pfanne geben und alles weitere ca. 5 Minuten mitdämpfen. Den Honig darunterrühren und die Mischung mit Salz und Pfeffer würzen.",
+      "Rotweinessig und restliches Olivenöl in einer grossen Schüssel verrühren und mit Salz und Pfeffer abschmecken.",
+      "Die abgetropften Hörnli sowie die Gemüse-Cervelat-Mischung zum Dressing geben und alles gut vermischen. Den Salat auf Teller oder in eine Servierschüssel anrichten und servieren."
+    ],
+    "tips": "Der Salat schmeckt lauwarm besonders gut, eignet sich aber auch hervorragend als vorbereitetes Mittagessen für unterwegs – er lässt sich problemlos einige Stunden im Voraus zubereiten.",
+    "dietCategory": "meat",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "gluten",
+      "sulfite"
+    ]
+  },
+  {
+    "id": "sal-63",
+    "name": "Grillierte Avocado mit Tomaten-Mozzarella-Salsa",
+    "category": "Salate & Bowls",
+    "timeMinutes": 28,
+    "basePortions": 4,
+    "weatherType": "warm",
+    "source": "fooby.ch",
+    "sourceType": "imported",
+    "approved": false,
+    "description": "Cremige Avocadohälften frisch vom Grill, angerichtet mit einer aromatischen Tomaten-Mozzarella-Salsa – ein sommerlicher Genuss, der in wenigen Minuten auf dem Tisch steht.",
+    "tags": [
+      "Mittagessen",
+      "Abendessen",
+      "Snack",
+      "Grillgericht",
+      "Sommer",
+      "Mediterran",
+      "Für Gäste"
+    ],
+    "ingredients": [
+      {
+        "name": "Tomaten",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Schalotten (fein gehackt)",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehe (fein gehackt)",
+        "amount": 1,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Glattblättrige Petersilie (fein gehackt)",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Avocados",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Flüssiger Honig",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Fleur de Sel",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Zimt",
+        "amount": 1,
+        "unit": "Msp",
+        "perPortions": 4
+      },
+      {
+        "name": "Mozzarella-Perlen",
+        "amount": 120,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Limettensaft",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 3.5,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "ingredientGroups": [
+      {
+        "name": "Salsa",
+        "ingredients": [
+          {
+            "name": "Tomaten (gewürfelt)",
+            "amount": 400,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Schalotten (fein gehackt)",
+            "amount": 1,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Knoblauchzehe (fein gehackt)",
+            "amount": 1,
+            "unit": "Zehe",
+            "perPortions": 4
+          },
+          {
+            "name": "Glattblättrige Petersilie (fein gehackt)",
+            "amount": 2,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Flüssiger Honig",
+            "amount": 1,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Zimt",
+            "amount": 1,
+            "unit": "Msp",
+            "perPortions": 4
+          },
+          {
+            "name": "Mozzarella-Perlen",
+            "amount": 120,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Limettensaft",
+            "amount": 2,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Olivenöl",
+            "amount": 2.5,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Pfeffer",
+            "amount": 1,
+            "unit": "Prise",
+            "perPortions": 4
+          },
+          {
+            "name": "Fleur de Sel",
+            "amount": 0.5,
+            "unit": "TL",
+            "perPortions": 4
+          }
+        ]
+      },
+      {
+        "name": "Grillierte Avocado",
+        "ingredients": [
+          {
+            "name": "Avocados (halbiert, Kern entfernt)",
+            "amount": 2,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Olivenöl",
+            "amount": 1,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Fleur de Sel",
+            "amount": 0.5,
+            "unit": "TL",
+            "perPortions": 4
+          }
+        ]
+      }
+    ],
+    "steps": [
+      "Für die Salsa den Limettensaft mit 2½ EL Olivenöl, Honig, einer Prise Salz, Pfeffer und Zimt in einer Schüssel gut verrühren.",
+      "Tomaten würfeln, Schalotte und Knoblauch fein hacken, Petersilie grob schneiden und alles zusammen mit den Mozzarella-Perlen in die Marinade geben. Alles gut mischen und beiseitestellen.",
+      "Avocados halbieren, den Kern entfernen und die Schnittflächen sowie die Schale leicht mit Olivenöl bepinseln.",
+      "Den Grill auf mittlere Hitze (ca. 200 °C) vorheizen. Die Avocadohälften in eine Grillschale legen und zugedeckt auf beiden Seiten je etwa 4 Minuten grillieren.",
+      "Die grillierten Avocados auf einer Platte anrichten, Fleur de Sel darüberstreuen und grosszügig mit der Tomaten-Mozzarella-Salsa belegen. Sofort servieren."
+    ],
+    "tips": "Wer keine Grillschale hat, kann die Avocados auch direkt auf den Grillrost legen – einfach aufpassen, dass sie nicht auseinanderfallen. Für eine vegane Variante den Mozzarella weglassen und durch gewürfelte reife Mango ersetzen.",
+    "dietCategory": "vegetarian",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "milch"
+    ]
   },
   {
     "id": "fvt-08",
@@ -22766,6 +22879,223 @@
     "_migrated_v2": true
   },
   {
+    "id": "fis-21",
+    "name": "Crevetten-Spiessli vom Grill",
+    "category": "Fisch & Meeresfrüchte",
+    "timeMinutes": 95,
+    "basePortions": 4,
+    "weatherType": "warm",
+    "source": "fooby.ch",
+    "sourceType": "imported",
+    "approved": false,
+    "description": "Saftige Riesencrevetten, in einer würzigen Limetten-Marinade eingelegt und auf dem Grill zubereitet – dazu karamellisierte Bundzwiebeln mit Zitronengras und Fischsauce.",
+    "tags": [
+      "Abendessen",
+      "Grillgericht",
+      "Sommer",
+      "Für Gäste",
+      "Thai"
+    ],
+    "ingredients": [
+      {
+        "name": "Riesencrevetten, roh, geschält (Bio)",
+        "amount": 12,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Erdnussöl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Limettensaft",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Thai 7-Spice",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitronengras",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Rohzucker (gemahlen)",
+        "amount": 1.5,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Fischsauce",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Rote Chili",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Bundzwiebeln",
+        "amount": 6,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Limette",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Holzspiesschen",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Alu-Grillschale",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      }
+    ],
+    "ingredientGroups": [
+      {
+        "name": "Marinade",
+        "ingredients": [
+          {
+            "name": "Erdnussöl",
+            "amount": 1,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Limettensaft",
+            "amount": 1,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Thai 7-Spice",
+            "amount": 1,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Salz",
+            "amount": 0.5,
+            "unit": "TL",
+            "perPortions": 4
+          }
+        ]
+      },
+      {
+        "name": "Crevetten",
+        "ingredients": [
+          {
+            "name": "Riesencrevetten, roh, geschält (Bio)",
+            "amount": 12,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Holzspiesschen",
+            "amount": 4,
+            "unit": "Stk",
+            "perPortions": 4
+          }
+        ]
+      },
+      {
+        "name": "Zwiebeln in der Grillschale",
+        "ingredients": [
+          {
+            "name": "Bundzwiebeln",
+            "amount": 6,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Zitronengras (fein gehackt)",
+            "amount": 3,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Rohzucker (gemahlen)",
+            "amount": 1.5,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Fischsauce",
+            "amount": 2,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Rote Chili (fein gehackt)",
+            "amount": 1,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Alu-Grillschale",
+            "amount": 1,
+            "unit": "Stk",
+            "perPortions": 4
+          }
+        ]
+      },
+      {
+        "name": "Zum Servieren",
+        "ingredients": [
+          {
+            "name": "Limette (in Schnitze geschnitten)",
+            "amount": 1,
+            "unit": "Stk",
+            "perPortions": 4
+          }
+        ]
+      }
+    ],
+    "steps": [
+      "Erdnussöl, Limettensaft, Thai 7-Spice und Salz in einer Schüssel gut miteinander verrühren.",
+      "Die Crevetten mit der Marinade bestreichen, zugedeckt und für ca. 1 Stunde im Kühlschrank marinieren lassen.",
+      "In der Zwischenzeit Rohzucker, fein gehacktes Zitronengras, gehackte Chili und Fischsauce in der Alu-Grillschale gut verrühren.",
+      "Die Bundzwiebeln beigeben und alles gut vermischen.",
+      "Den Grill auf mittlere Hitze vorheizen (ca. 220 °C). Die Grillschale mit den Zwiebeln auf den Grill stellen und bei geschlossenem Deckel ca. 15 Minuten grillieren.",
+      "Die marinierten Crevetten auf die Holzspiesschen stecken und auf den heissen Grill legen. Beidseitig je ca. 2 Minuten mitgrillieren, bis sie gar sind.",
+      "Crevetten-Spiessli zusammen mit den Zwiebeln anrichten und mit Limettenschnitzen servieren."
+    ],
+    "tips": "Die Holzspiesschen vor dem Aufstecken der Crevetten mindestens 30 Minuten in Wasser einweichen, damit sie auf dem Grill nicht verbrennen.",
+    "dietCategory": "fish",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "erdnuesse",
+      "fisch"
+    ]
+  },
+  {
     "id": "fam-14",
     "name": "Zucchetti mit Fleisch- und Gemüsefüllung",
     "category": "Fleisch & Geflügel",
@@ -24832,6 +25162,1606 @@
     ],
     "sourceType": "mahlzyt",
     "_migrated_v2": true
+  },
+  {
+    "id": "fle-70",
+    "name": "Grillschnecken, Grillbrot und Tomaten",
+    "category": "Fleisch & Geflügel",
+    "timeMinutes": 150,
+    "basePortions": 4,
+    "weatherType": "warm",
+    "source": "fooby.ch",
+    "sourceType": "imported",
+    "approved": false,
+    "description": "Saftige Grillschnecken mit selbst gemachtem Grillbrot und würzig geschmorten Tomaten — ein herrliches Sommer-Grillmenü für die ganze Familie.",
+    "tags": [
+      "Abendessen",
+      "Grillgericht",
+      "Sommer",
+      "Für Gäste"
+    ],
+    "ingredients": [
+      {
+        "name": "Weissmehl",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Hefe",
+        "amount": 8,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Wasser",
+        "amount": 150,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1.25,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Rosmarin",
+        "amount": 3,
+        "unit": "Zweiglein",
+        "perPortions": 4
+      },
+      {
+        "name": "Grillschnecken",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomaten",
+        "amount": 450,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "rote Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehe",
+        "amount": 1,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "rote Peperoncini",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Basilikum",
+        "amount": 4,
+        "unit": "Zweiglein",
+        "perPortions": 4
+      },
+      {
+        "name": "geräucherter Paprika",
+        "amount": 1,
+        "unit": "Msp.",
+        "perPortions": 4
+      },
+      {
+        "name": "Rotwein",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl (für Tomaten)",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz (zum Abschmecken)",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      }
+    ],
+    "ingredientGroups": [
+      {
+        "name": "Grillbrotteig",
+        "ingredients": [
+          {
+            "name": "Weissmehl",
+            "amount": 250,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Hefe",
+            "amount": 8,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Wasser",
+            "amount": 150,
+            "unit": "ml",
+            "perPortions": 4
+          },
+          {
+            "name": "Olivenöl",
+            "amount": 2,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Salz",
+            "amount": 0.75,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Rosmarin (fein geschnitten)",
+            "amount": 2,
+            "unit": "Zweiglein",
+            "perPortions": 4
+          }
+        ]
+      },
+      {
+        "name": "Gegrillte Tomaten",
+        "ingredients": [
+          {
+            "name": "Tomaten",
+            "amount": 450,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "rote Zwiebel (in feinen Streifen)",
+            "amount": 1,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Knoblauchzehe (in Scheibchen)",
+            "amount": 1,
+            "unit": "Zehe",
+            "perPortions": 4
+          },
+          {
+            "name": "rote Peperoncini (entkernt, grob gehackt)",
+            "amount": 1,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Rosmarin",
+            "amount": 1,
+            "unit": "Zweiglein",
+            "perPortions": 4
+          },
+          {
+            "name": "Basilikum",
+            "amount": 4,
+            "unit": "Zweiglein",
+            "perPortions": 4
+          },
+          {
+            "name": "geräucherter Paprika",
+            "amount": 1,
+            "unit": "Msp.",
+            "perPortions": 4
+          },
+          {
+            "name": "Rotwein",
+            "amount": 2,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Olivenöl",
+            "amount": 2,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Salz",
+            "amount": 0.5,
+            "unit": "TL",
+            "perPortions": 4
+          }
+        ]
+      },
+      {
+        "name": "Grillschnecken",
+        "ingredients": [
+          {
+            "name": "Grillschnecken",
+            "amount": 4,
+            "unit": "Stk",
+            "perPortions": 4
+          }
+        ]
+      }
+    ],
+    "steps": [
+      "Für den Teig den Rosmarin fein schneiden und zusammen mit dem Mehl, dem Salz und der Hefe in eine grosse Schüssel geben.",
+      "Wasser und Olivenöl dazugiessen und alles zu einem weichen, glatten Teig kneten — das dauert etwa 10 Minuten.",
+      "Den Teig zugedeckt bei Raumtemperatur rund 1½ Stunden gehen lassen, bis er sich verdoppelt hat.",
+      "In der Zwischenzeit die Tomaten halbieren oder in Schnitze schneiden. Die Zwiebel in feine Streifen, den Knoblauch in dünne Scheibchen schneiden. Den Peperoncini entkernen und grob hacken.",
+      "Tomaten, Zwiebel, Knoblauch und Peperoncini in eine ungelochte Grillschale geben. Olivenöl, Rotwein, Rosmarin und geräucherten Paprika beigeben und alles gut mischen.",
+      "Den Teig in 4 gleich grosse Portionen teilen, zu Kugeln formen und auf leicht bemehlter Arbeitsfläche mit der Hand flach drücken. Die Teigfladen mit etwas Olivenöl bestreichen.",
+      "Die Tomaten in der Grillschale bei geschlossenem Deckel über mittelstarker Hitze (ca. 200 °C) rund 30 Minuten grillieren, bis sie schön weich sind.",
+      "Die Grillschale vom Grill nehmen. Die Grillschnecken auf den heissen Grill legen und beidseitig je ca. 5 Minuten grillieren.",
+      "Die Grillbrote ebenfalls beidseitig je ca. 3 Minuten grillieren, bis sie goldbraune Streifen haben.",
+      "Die Tomaten mit Salz würzen, die Basilikumblätter zerzupfen und darüberstreuen. Alles zusammen servieren."
+    ],
+    "tips": "Die Grillbrote können auch einen Tag im Voraus als Teig vorbereitet und im Kühlschrank aufbewahrt werden — einfach rechtzeitig vor dem Grillieren auf Raumtemperatur bringen. Wer es schärfer mag, lässt die Kerne im Peperoncini.",
+    "dietCategory": "meat",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "gluten",
+      "sulfite",
+      "weichtiere"
+    ]
+  },
+  {
+    "id": "fle-71",
+    "name": "Grillplatte",
+    "category": "Fleisch & Geflügel",
+    "timeMinutes": 35,
+    "basePortions": 6,
+    "weatherType": "warm",
+    "source": "fooby.ch",
+    "sourceType": "imported",
+    "approved": false,
+    "description": "Eine klassische Schweizer Grillplatte mit saftigen Würsten, knusprigem Speck und würzigem Grillkäse — dazu ein frischer Gurken-Rettich-Salat und ein fruchtiger Himbeersenf.",
+    "tags": [
+      "Abendessen",
+      "Grillgericht",
+      "Für Gäste",
+      "Sommer",
+      "Schweizerisch"
+    ],
+    "ingredients": [
+      {
+        "name": "Brot (in Scheiben)",
+        "amount": 8,
+        "unit": "Stk",
+        "perPortions": 6
+      },
+      {
+        "name": "Cipollatas",
+        "amount": 6,
+        "unit": "Stk",
+        "perPortions": 6
+      },
+      {
+        "name": "Bratspeck (in Tranchen)",
+        "amount": 6,
+        "unit": "Stk",
+        "perPortions": 6
+      },
+      {
+        "name": "Cervelats",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 6
+      },
+      {
+        "name": "Grillschnecken",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 6
+      },
+      {
+        "name": "Grillkäse",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 6
+      },
+      {
+        "name": "Bio-Zitrone",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 6
+      },
+      {
+        "name": "Rettich",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Gurke",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Grüner Apfel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 6
+      },
+      {
+        "name": "Himbeeren",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Flüssiger Honig",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 6
+      },
+      {
+        "name": "Milder Senf",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 6
+      },
+      {
+        "name": "Saurer Halbrahm",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Salz",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 6
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 6
+      }
+    ],
+    "ingredientGroups": [
+      {
+        "name": "Gurken-Rettich-Salat",
+        "ingredients": [
+          {
+            "name": "Saurer Halbrahm",
+            "amount": 100,
+            "unit": "g",
+            "perPortions": 6
+          },
+          {
+            "name": "Rettich (fein geschnitten)",
+            "amount": 200,
+            "unit": "g",
+            "perPortions": 6
+          },
+          {
+            "name": "Gurke (fein geschnitten)",
+            "amount": 200,
+            "unit": "g",
+            "perPortions": 6
+          },
+          {
+            "name": "Grüner Apfel (fein geschnitten)",
+            "amount": 1,
+            "unit": "Stk",
+            "perPortions": 6
+          },
+          {
+            "name": "Bio-Zitrone (Saft)",
+            "amount": 1,
+            "unit": "Stk",
+            "perPortions": 6
+          },
+          {
+            "name": "Salz",
+            "amount": 0.5,
+            "unit": "TL",
+            "perPortions": 6
+          },
+          {
+            "name": "Pfeffer",
+            "amount": 1,
+            "unit": "Prise",
+            "perPortions": 6
+          }
+        ]
+      },
+      {
+        "name": "Himbeersenf",
+        "ingredients": [
+          {
+            "name": "Himbeeren",
+            "amount": 50,
+            "unit": "g",
+            "perPortions": 6
+          },
+          {
+            "name": "Milder Senf",
+            "amount": 4,
+            "unit": "EL",
+            "perPortions": 6
+          },
+          {
+            "name": "Flüssiger Honig",
+            "amount": 1,
+            "unit": "TL",
+            "perPortions": 6
+          }
+        ]
+      },
+      {
+        "name": "Grillgut",
+        "ingredients": [
+          {
+            "name": "Cipollatas",
+            "amount": 6,
+            "unit": "Stk",
+            "perPortions": 6
+          },
+          {
+            "name": "Bratspeck (in Tranchen)",
+            "amount": 6,
+            "unit": "Stk",
+            "perPortions": 6
+          },
+          {
+            "name": "Cervelats",
+            "amount": 2,
+            "unit": "Stk",
+            "perPortions": 6
+          },
+          {
+            "name": "Grillschnecken",
+            "amount": 2,
+            "unit": "Stk",
+            "perPortions": 6
+          },
+          {
+            "name": "Grillkäse",
+            "amount": 2,
+            "unit": "Stk",
+            "perPortions": 6
+          },
+          {
+            "name": "Brot (in Scheiben)",
+            "amount": 8,
+            "unit": "Stk",
+            "perPortions": 6
+          }
+        ]
+      }
+    ],
+    "steps": [
+      "Für den Salat den sauren Halbrahm in eine Schüssel geben und mit Salz, Pfeffer und dem Saft der Bio-Zitrone verrühren.",
+      "Rettich, Gurke und Apfel in feine Scheiben oder Streifen schneiden, zum Dressing geben und alles gut vermischen. Den Salat kühl stellen.",
+      "Die Himbeeren durch ein feines Sieb in eine kleine Schüssel streichen, damit die Kerne zurückbleiben. Senf und Honig beigeben und zu einem glatten Himbeersenf verrühren.",
+      "Jede Cipollata mit einer Tranche Bratspeck umwickeln.",
+      "Den Grill auf mittlere Hitze (ca. 200 °C) vorheizen. Cipollatas mit Speck, Cervelats, Grillschnecken und Grillkäse bei geschlossenem Deckel ca. 10 Minuten grillieren und dabei regelmässig wenden, bis alles gleichmässig gegart und leicht gebräunt ist.",
+      "Das Brot kurz auf dem Grill rösten.",
+      "Alle Würste und den Grillkäse auf einer grossen Platte anrichten, den Gurken-Rettich-Salat und den Himbeersenf dazustellen und das Brot dazu servieren."
+    ],
+    "tips": "Der Himbeersenf lässt sich auch mit Tiefkühlhimbeeren zubereiten. Für eine grössere Gesellschaft lässt sich die Platte beliebig mit weiteren Grillspezialitäten ergänzen.",
+    "dietCategory": "meat",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "gluten",
+      "milch",
+      "senf",
+      "weichtiere"
+    ]
+  },
+  {
+    "id": "fle-72",
+    "name": "T-Bone-Steak mit Grillspargel",
+    "category": "Fleisch & Geflügel",
+    "timeMinutes": 38,
+    "basePortions": 4,
+    "weatherType": "warm",
+    "source": "fooby.ch",
+    "sourceType": "imported",
+    "approved": false,
+    "description": "Saftige T-Bone-Steaks vom Grill treffen auf knackig gegrillten grünen Spargel – ein unkompliziertes Sommeressen, das garantiert beeindruckt.",
+    "tags": [
+      "Abendessen",
+      "Für Gäste",
+      "Grillgericht",
+      "Sommer"
+    ],
+    "ingredients": [
+      {
+        "name": "T-Bone-Steak",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Grüne Spargeln",
+        "amount": 600,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Meersalz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "ingredientGroups": [
+      {
+        "name": "Steak",
+        "ingredients": [
+          {
+            "name": "T-Bone-Steak",
+            "amount": 2,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Meersalz",
+            "amount": 1,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Pfeffer",
+            "amount": 1,
+            "unit": "Prise",
+            "perPortions": 4
+          }
+        ]
+      },
+      {
+        "name": "Grillspargel",
+        "ingredients": [
+          {
+            "name": "Grüne Spargeln",
+            "amount": 600,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Olivenöl",
+            "amount": 2,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Salz",
+            "amount": 0.5,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Zitronensaft",
+            "amount": 2,
+            "unit": "EL",
+            "perPortions": 4
+          }
+        ]
+      }
+    ],
+    "steps": [
+      "Den Grill auf mittlere Hitze (ca. 200 °C) vorheizen.",
+      "Die T-Bone-Steaks rundum mit etwas Olivenöl einreiben und grosszügig mit Meersalz und Pfeffer würzen.",
+      "Die Steaks auf dem Grill beidseitig je ca. 4 Minuten grillieren, anschliessend vom Grill nehmen und zugedeckt ca. 10 Minuten ruhen lassen.",
+      "Während die Steaks ruhen, die Spargeln mit dem Olivenöl vermengen und leicht salzen.",
+      "Die Spargeln auf dem Grill bei mittlerer Hitze beidseitig je ca. 4 Minuten grillieren, bis sie leicht gebräunt und noch bissfest sind.",
+      "Spargeln vom Grill nehmen, mit Zitronensaft beträufeln und zusammen mit den T-Bone-Steaks servieren."
+    ],
+    "tips": "Die Steaks sollten Zimmertemperatur haben, bevor sie auf den Grill kommen – so garen sie gleichmässiger. Für ein Raucharoma eignet sich Holzkohle besonders gut.",
+    "dietCategory": "meat",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": []
+  },
+  {
+    "id": "fle-73",
+    "name": "Pouletbrüstli im Speckmantel",
+    "category": "Fleisch & Geflügel",
+    "timeMinutes": 20,
+    "basePortions": 4,
+    "weatherType": "warm",
+    "source": "fooby.ch",
+    "sourceType": "imported",
+    "approved": false,
+    "description": "Saftige Pouletbrüstli, mit frischem Thymian und knusprigem Bratspeck umwickelt – ein einfaches und schnelles Grillgericht für den Sommer.",
+    "tags": [
+      "Abendessen",
+      "Grillgericht",
+      "Sommer",
+      "Für Gäste",
+      "Gut zum Mitnehmen",
+      "Schweizerisch"
+    ],
+    "ingredients": [
+      {
+        "name": "Pouletbrüstli",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Bratspeck (in Tranchen)",
+        "amount": 12,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Thymian (frische Zweiglein)",
+        "amount": 8,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Die Pouletbrüstli mit Salz und Pfeffer würzen.",
+      "Je 2 Zweiglein Thymian auf ein Pouletbrüstli legen und dieses anschliessend mit je 3 Tranchen Bratspeck fest umwickeln.",
+      "Den Grill auf mittlere Hitze (ca. 200 °C) vorheizen.",
+      "Die Pouletbrüstli zugedeckt auf dem Grill von jeder Seite ca. 5 Minuten grillieren, bis der Speck knusprig und das Poulet durchgegart ist."
+    ],
+    "tips": "Tipp: Die Speckpäckli lassen sich auch in einer Bratpfanne mit etwas Öl bei mittlerer Hitze beidseitig anbraten – ideal, wenn kein Grill zur Hand ist.",
+    "dietCategory": "meat",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": []
+  },
+  {
+    "id": "fle-74",
+    "name": "Pouletflügeli-Spiessli mit Erdnuss-Dip",
+    "category": "Fleisch & Geflügel",
+    "timeMinutes": 300,
+    "basePortions": 4,
+    "weatherType": "warm",
+    "source": "fooby.ch",
+    "sourceType": "imported",
+    "approved": false,
+    "description": "Saftige Pouletflügeli-Spiessli, mariniert in einer würzigen Erdnuss-Limetten-Marinade, vom Grill serviert mit einem frischen Gurkensalat und knusprigen Erdnüssen.",
+    "tags": [
+      "Abendessen",
+      "Grillgericht",
+      "Für Gäste",
+      "Sommer"
+    ],
+    "ingredients": [
+      {
+        "name": "Pouletflügeli",
+        "amount": 800,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Erdnussbutter",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Sojasauce",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Limettensaft",
+        "amount": 1.5,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Ingwer (frisch gerieben)",
+        "amount": 2,
+        "unit": "cm",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehe (gepresst)",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "rote Chili (fein gehackt)",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Rohzucker (grobkörnig)",
+        "amount": 2,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 0.75,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Snack-Gurken",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Koriander",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Bio-Limette (Schale und Saft)",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "gesalzene Erdnüsse (grob gehackt)",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Holzspiesschen",
+        "amount": 8,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      }
+    ],
+    "ingredientGroups": [
+      {
+        "name": "Marinade & Erdnuss-Dip",
+        "ingredients": [
+          {
+            "name": "Erdnussbutter",
+            "amount": 4,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Sojasauce",
+            "amount": 1,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Limettensaft",
+            "amount": 1.5,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Ingwer (frisch gerieben)",
+            "amount": 2,
+            "unit": "cm",
+            "perPortions": 4
+          },
+          {
+            "name": "Knoblauchzehe (gepresst)",
+            "amount": 1,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "rote Chili (fein gehackt)",
+            "amount": 1,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Rohzucker (grobkörnig)",
+            "amount": 2,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Salz",
+            "amount": 0.75,
+            "unit": "TL",
+            "perPortions": 4
+          }
+        ]
+      },
+      {
+        "name": "Pouletflügeli",
+        "ingredients": [
+          {
+            "name": "Pouletflügeli",
+            "amount": 800,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Holzspiesschen",
+            "amount": 8,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Salz",
+            "amount": 1,
+            "unit": "Prise",
+            "perPortions": 4
+          },
+          {
+            "name": "Pfeffer",
+            "amount": 1,
+            "unit": "Prise",
+            "perPortions": 4
+          }
+        ]
+      },
+      {
+        "name": "Gurkensalat",
+        "ingredients": [
+          {
+            "name": "Snack-Gurken",
+            "amount": 250,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Koriander",
+            "amount": 0.5,
+            "unit": "Bund",
+            "perPortions": 4
+          },
+          {
+            "name": "Bio-Limette (Schale und Saft)",
+            "amount": 1,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Olivenöl",
+            "amount": 2,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "gesalzene Erdnüsse (grob gehackt)",
+            "amount": 3,
+            "unit": "EL",
+            "perPortions": 4
+          }
+        ]
+      }
+    ],
+    "steps": [
+      "Erdnussbutter, Sojasauce, Limettensaft, geriebenen Ingwer, gepressten Knoblauch, gehackte Chili, Rohzucker und Salz in einer Schüssel gut verrühren.",
+      "Die Hälfte dieser Marinade in ein separates Schälchen umfüllen, zudecken und im Kühlschrank kalt stellen – diese dient später als Dip.",
+      "Die Pouletflügeli mit der restlichen Marinade gründlich vermengen, zugedeckt mindestens 4 Stunden im Kühlschrank marinieren.",
+      "Vor dem Grillieren die Holzspiesschen kurz in Wasser einweichen. Je 3 Pouletflügeli auf 2 parallele Spiesschen stecken und die Flügeli leicht salzen und pfeffern.",
+      "Die Spiessli auf dem Grill bei mittlerer Hitze (ca. 200 °C) bei geschlossenem Deckel rund 30 Minuten grillieren, dabei ein- bis zweimal wenden, bis das Fleisch gar und schön gebräunt ist.",
+      "Für den Gurkensalat Limettenschale und -saft mit dem Olivenöl in einer Schüssel verrühren, mit Salz und Pfeffer abschmecken.",
+      "Snack-Gurken in Scheiben schneiden und zusammen mit den gezupften Korianderblättern zur Limettensauce geben, alles gut mischen.",
+      "Die Pouletflügeli-Spiessli mit dem beiseitegestellten Erdnuss-Dip und dem Gurkensalat anrichten. Die gehackten Erdnüsse darüberstreuen und sofort servieren."
+    ],
+    "tips": "Die Holzspiesschen mindestens 30 Minuten in Wasser einweichen, damit sie auf dem Grill nicht verbrennen. Das Rezept lässt sich auch im Backofen bei 200 °C Umluft zubereiten – dabei die Spiessli auf einem Gitterrost ca. 30 Minuten backen und einmal wenden.",
+    "dietCategory": "meat",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "erdnuesse",
+      "milch",
+      "soja"
+    ]
+  },
+  {
+    "id": "fle-75",
+    "name": "Poulet-Steaks mit Jamaica-Marinade",
+    "category": "Fleisch & Geflügel",
+    "timeMinutes": 162,
+    "basePortions": 4,
+    "weatherType": "warm",
+    "source": "fooby.ch",
+    "sourceType": "imported",
+    "approved": false,
+    "description": "Saftige Poulet-Oberschenkel in einer würzigen Jamaica-Marinade mit Zimt, Chili und Ingwer – perfekt vom Grill, dazu knusprige Thymian-Kartoffeln.",
+    "tags": [
+      "Mittagessen",
+      "Abendessen",
+      "Grillgericht",
+      "Sommer",
+      "Amerikanisch"
+    ],
+    "ingredients": [
+      {
+        "name": "Poulet-Oberschenkel",
+        "amount": 8,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehen",
+        "amount": 4,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "rote Zwiebeln (in Spalten geschnitten)",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "rote Chilis",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Ingwer (frisch gerieben)",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "gemahlener Rohzucker",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Weissweinessig",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Thymianblättchen",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Muskat (gemahlen)",
+        "amount": 0.25,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Zimt (gemahlen)",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Baby-Kartoffeln",
+        "amount": 600,
+        "unit": "g",
+        "perPortions": 4
+      }
+    ],
+    "ingredientGroups": [
+      {
+        "name": "Marinade",
+        "ingredients": [
+          {
+            "name": "Knoblauchzehen",
+            "amount": 4,
+            "unit": "Zehe",
+            "perPortions": 4
+          },
+          {
+            "name": "rote Chilis",
+            "amount": 2,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Ingwer (frisch gerieben)",
+            "amount": 1,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "gemahlener Rohzucker",
+            "amount": 1,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Weissweinessig",
+            "amount": 2,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Olivenöl",
+            "amount": 2,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Muskat (gemahlen)",
+            "amount": 0.25,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Zimt (gemahlen)",
+            "amount": 0.5,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Salz",
+            "amount": 1,
+            "unit": "TL",
+            "perPortions": 4
+          }
+        ]
+      },
+      {
+        "name": "Poulet",
+        "ingredients": [
+          {
+            "name": "Poulet-Oberschenkel",
+            "amount": 8,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Salz",
+            "amount": 0.5,
+            "unit": "TL",
+            "perPortions": 4
+          }
+        ]
+      },
+      {
+        "name": "Kartoffeln",
+        "ingredients": [
+          {
+            "name": "Baby-Kartoffeln",
+            "amount": 600,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "rote Zwiebeln (in Spalten geschnitten)",
+            "amount": 2,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Thymianblättchen",
+            "amount": 2,
+            "unit": "EL",
+            "perPortions": 4
+          }
+        ]
+      }
+    ],
+    "steps": [
+      "Für die Marinade Knoblauch, Chilis, Ingwer, Rohzucker, Weissweinessig, Olivenöl, Muskat, Zimt und Salz in einem Cutter oder mit dem Pürierstab zu einer glatten Paste pürieren.",
+      "Die Poulet-Oberschenkel in einen Gefrierbeutel legen, die Marinade darübergiessen und die Luft aus dem Beutel drücken. Den Beutel fest verschliessen und das Fleisch so lange kneten, bis es rundum gleichmässig bedeckt ist. Den Beutel für ca. 2 Stunden in den Kühlschrank legen.",
+      "Die Baby-Kartoffeln in gesalzenem, siedendem Wasser ca. 10 Minuten knapp weich garen, dann gut abtropfen lassen.",
+      "Die Kartoffeln zusammen mit den Zwiebelpalten, den Thymianblättchen, etwas Olivenöl und Salz in einer Schüssel vermengen und auf einer gelochten Grillschale verteilen.",
+      "Die Grillschale mit den Kartoffeln auf den vorgeheizten Grill (ca. 200 °C) stellen und die Kartoffeln unter gelegentlichem Wenden grillieren, bis sie goldbraun und knusprig sind.",
+      "Die Marinade von den Poulet-Oberschenkeln abstreifen und das Fleisch leicht salzen. Die Oberschenkel mit der Hautseite nach oben auf den Grill legen und bei geschlossenem Deckel über mittlerer Hitze ca. 4 Minuten grillieren.",
+      "Das Poulet wenden und weitere ca. 8 Minuten fertig grillieren, bis es durchgegart und die Haut schön gebräunt ist. Zusammen mit den Grillkartoffeln servieren."
+    ],
+    "tips": "Die Marinierzeit kann auf bis zu 12 Stunden ausgedehnt werden – je länger, desto intensiver der Geschmack. Das Rezept eignet sich auch für den Backofen (200 °C Umluft, ca. 35–40 Minuten).",
+    "dietCategory": "meat",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "sulfite"
+    ]
+  },
+  {
+    "id": "fle-76",
+    "name": "Klassisches Pulled Pork",
+    "category": "Fleisch & Geflügel",
+    "timeMinutes": 360,
+    "basePortions": 8,
+    "weatherType": "warm",
+    "source": "fooby.ch",
+    "sourceType": "imported",
+    "approved": false,
+    "description": "Zart zerzupftes Schweinsbraten-Highlight vom Grill – mit rauchiger Whisky-Honig-Marinade und stundenlangem Schmoren zu einem unwiderstehlichen Pulled Pork veredelt.",
+    "tags": [
+      "Abendessen",
+      "Für Gäste",
+      "Grillgericht",
+      "Ofengericht",
+      "Amerikanisch",
+      "Sommer",
+      "Mealprep-geeignet",
+      "Einfrierbar"
+    ],
+    "ingredients": [
+      {
+        "name": "Schweinsbraten",
+        "amount": 2.2,
+        "unit": "kg",
+        "perPortions": 8
+      },
+      {
+        "name": "Räuchermehl",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Ketchup",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Senf",
+        "amount": 30,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Whisky",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 8
+      },
+      {
+        "name": "Flüssiger Honig",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 8
+      },
+      {
+        "name": "Paprikapulver",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 8
+      },
+      {
+        "name": "Chiliflocken",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 8
+      },
+      {
+        "name": "Gemahlene Koriandersamen",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 8
+      },
+      {
+        "name": "Salz",
+        "amount": 1.5,
+        "unit": "EL",
+        "perPortions": 8
+      }
+    ],
+    "ingredientGroups": [
+      {
+        "name": "Fleisch",
+        "ingredients": [
+          {
+            "name": "Schweinsbraten",
+            "amount": 2.2,
+            "unit": "kg",
+            "perPortions": 8
+          },
+          {
+            "name": "Räuchermehl",
+            "amount": 100,
+            "unit": "g",
+            "perPortions": 8
+          }
+        ]
+      },
+      {
+        "name": "Marinade",
+        "ingredients": [
+          {
+            "name": "Ketchup",
+            "amount": 50,
+            "unit": "g",
+            "perPortions": 8
+          },
+          {
+            "name": "Senf",
+            "amount": 30,
+            "unit": "g",
+            "perPortions": 8
+          },
+          {
+            "name": "Whisky",
+            "amount": 2,
+            "unit": "EL",
+            "perPortions": 8
+          },
+          {
+            "name": "Flüssiger Honig",
+            "amount": 2,
+            "unit": "EL",
+            "perPortions": 8
+          },
+          {
+            "name": "Paprikapulver",
+            "amount": 1,
+            "unit": "TL",
+            "perPortions": 8
+          },
+          {
+            "name": "Chiliflocken",
+            "amount": 1,
+            "unit": "TL",
+            "perPortions": 8
+          },
+          {
+            "name": "Gemahlene Koriandersamen",
+            "amount": 1,
+            "unit": "EL",
+            "perPortions": 8
+          },
+          {
+            "name": "Salz",
+            "amount": 1.5,
+            "unit": "EL",
+            "perPortions": 8
+          }
+        ]
+      }
+    ],
+    "steps": [
+      "Den Schweinsbraten etwa 1 Stunde vor der Zubereitung aus dem Kühlschrank nehmen und mit Küchenpapier trocken tupfen.",
+      "Für die Marinade Ketchup, Senf, Whisky, Honig, Paprikapulver, Chiliflocken, Koriander und Salz in einer Schüssel gut verrühren.",
+      "Das Fleisch rundherum mit der Hälfte der Marinade einstreichen. Die restliche Marinade beiseitelegen.",
+      "Das Räuchermehl in eine Aluschale geben und auf dem Grill bei schwacher Hitze (ca. 150 °C) etwa 5 Minuten rösten, bis sich Rauch entwickelt. Die Schale anschliessend an den Grillrand schieben.",
+      "Den Schweinsbraten auf den Grill legen und zugedeckt ca. 1 Stunde grillieren. Das Fleisch dabei einmal wenden und mit der restlichen Marinade bestreichen.",
+      "Den Braten vom Grill nehmen, fest in Alufolie einwickeln und auf ein Backblech legen.",
+      "Den Backofen auf 140 °C Ober-/Unterhitze vorheizen. Das eingepackte Fleisch in der Mitte des Ofens ca. 4½ Stunden garen.",
+      "Den Braten aus dem Ofen nehmen und in der Folie noch ca. 15 Minuten ruhen lassen.",
+      "Die Folie öffnen und das Fleisch mit zwei Gabeln in feine Fasern zerzupfen."
+    ],
+    "tips": "Pulled Pork lässt sich hervorragend vorbereiten und einfrieren. Serviere es in Burger-Brötchen mit Coleslaw und BBQ-Sauce. Wer keinen Grill hat, kann den Braten direkt (ohne Räucherschritt) in Alufolie eingepackt im Ofen garen – das Räuchermehl kann in dem Fall weggelassen oder durch etwas geräuchertes Paprikapulver ersetzt werden.",
+    "dietCategory": "meat",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "gluten",
+      "senf",
+      "sulfite"
+    ]
+  },
+  {
+    "id": "fle-77",
+    "name": "Cevapcici vom Grill",
+    "category": "Fleisch & Geflügel",
+    "timeMinutes": 55,
+    "basePortions": 4,
+    "weatherType": "warm",
+    "source": "fooby.ch",
+    "sourceType": "imported",
+    "approved": false,
+    "description": "Saftige Cevapcici vom Grill – herzhaft gewürzt und zusammen mit knackigem Bohnen-Kartoffel-Gemüse und cremigem Ajvar serviert. Ein Sommerklassiker für die ganze Familie!",
+    "tags": [
+      "Abendessen",
+      "Grillgericht",
+      "Sommer",
+      "Für Gäste",
+      "Türkisch"
+    ],
+    "ingredients": [
+      {
+        "name": "Hackfleisch (Rind und Schwein gemischt)",
+        "amount": 600,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehen (gepresst)",
+        "amount": 3,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Backpulver",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Paprikapulver",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kreuzkümmel",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Chiliflocken",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Holzspiesschen",
+        "amount": 16,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Bohnen (grün)",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Kartoffeln (vorwiegend festkochend)",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Haselnüsse (gehackt)",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfefferminze (frisch, gehackt)",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Ajvar",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      }
+    ],
+    "ingredientGroups": [
+      {
+        "name": "Cevapcici",
+        "ingredients": [
+          {
+            "name": "Hackfleisch (Rind und Schwein gemischt)",
+            "amount": 600,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Knoblauchzehen (gepresst)",
+            "amount": 3,
+            "unit": "Zehe",
+            "perPortions": 4
+          },
+          {
+            "name": "Backpulver",
+            "amount": 1,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Paprikapulver",
+            "amount": 0.5,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Kreuzkümmel",
+            "amount": 1,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Chiliflocken",
+            "amount": 0.5,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Salz",
+            "amount": 1,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Pfeffer",
+            "amount": 0.5,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Holzspiesschen",
+            "amount": 16,
+            "unit": "Stk",
+            "perPortions": 4
+          }
+        ]
+      },
+      {
+        "name": "Grillgemüse",
+        "ingredients": [
+          {
+            "name": "Bohnen (grün)",
+            "amount": 400,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Kartoffeln (vorwiegend festkochend)",
+            "amount": 500,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Olivenöl",
+            "amount": 2,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Salz",
+            "amount": 0.5,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Haselnüsse (gehackt)",
+            "amount": 2,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Pfefferminze (frisch, gehackt)",
+            "amount": 1,
+            "unit": "EL",
+            "perPortions": 4
+          }
+        ]
+      },
+      {
+        "name": "Zum Anrichten",
+        "ingredients": [
+          {
+            "name": "Ajvar",
+            "amount": 100,
+            "unit": "g",
+            "perPortions": 4
+          }
+        ]
+      }
+    ],
+    "steps": [
+      "Holzspiesschen für mindestens 30 Minuten in Wasser einweichen, damit sie auf dem Grill nicht verbrennen.",
+      "Hackfleisch, gepressten Knoblauch, Backpulver, Paprikapulver, Kreuzkümmel, Chiliflocken, 1 TL Salz und Pfeffer in einer Schüssel vermengen und kräftig durchkneten, bis eine kompakte, gleichmässige Masse entsteht.",
+      "Mit nassen Händen aus der Fleischmasse 16 Rollen von je etwa 10 cm Länge formen und je eine Rolle auf ein Holzspiesschen stecken.",
+      "Die Bohnen in siedendem Salzwasser ca. 5 Minuten blanchieren, dann abgiessen und sofort in eiskaltem Wasser abschrecken. Gut abtropfen lassen.",
+      "Die Kartoffeln in gleichmässige Stücke schneiden. Bohnen und Kartoffeln in einer Schüssel mit Olivenöl, Salz und nach Belieben etwas Pfeffer vermengen, dann in eine Grillschale geben.",
+      "Den Grill auf mittlere Hitze (ca. 200 °C) vorheizen. Die Grillschale mit dem Gemüse bei geschlossenem Deckel ca. 20 Minuten grillieren und dabei gelegentlich wenden.",
+      "Die Cevapcici neben der Grillschale auf den Rost legen und rundum ca. 10 Minuten mitgrillieren, bis sie schön gebräunt und durchgegart sind.",
+      "Das fertige Gemüse nach Bedarf nachwürzen, dann Haselnüsse und Pfefferminze daruntermischen.",
+      "Cevapcici zusammen mit dem Gemüse auf Tellern anrichten und mit Ajvar servieren."
+    ],
+    "tips": "Wer es etwas milder mag, kann die Chiliflocken reduzieren oder weglassen. Die Cevapcici lassen sich auch gut einen Tag im Voraus formen und zugedeckt im Kühlschrank aufbewahren – so verbinden sich die Aromen noch besser.",
+    "dietCategory": "meat",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "schalenfruechte",
+      "sulfite"
+    ]
   },
   {
     "id": "ocr-01",
@@ -29976,6 +31906,1620 @@
     "_migrated_v2": true
   },
   {
+    "id": "son-100",
+    "name": "Sommer-Flammkuchen",
+    "category": "Pizza, Flammkuchen, Wähen & Quiches",
+    "timeMinutes": 30,
+    "basePortions": 4,
+    "weatherType": "warm",
+    "source": "fooby.ch",
+    "sourceType": "imported",
+    "approved": false,
+    "description": "Ein leichter Sommer-Flammkuchen vom Grill mit cremiger Crème fraîche, frischer Zucchetti, Bundzwiebeln und gerösteten Pinienkernen — einfach und herrlich sommerlich.",
+    "tags": [
+      "Mittagessen",
+      "Abendessen",
+      "Grillgericht",
+      "Sommer",
+      "Für Gäste",
+      "Kinderfreundlich"
+    ],
+    "ingredients": [
+      {
+        "name": "Pinienkerne",
+        "amount": 30,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Bundzwiebeln mit Grün",
+        "amount": 1,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Zucchetti",
+        "amount": 0.5,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Fleur de Sel",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Crème fraîche",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Flammkuchenteig (ausgewallt)",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Den Flammkuchenteig entrollen und mitsamt dem Backpapier in eine Alu-Grillauflage legen.",
+      "Den Teig gleichmässig mit Crème fraîche bestreichen.",
+      "Die Zucchetti in dünne Scheiben schneiden und die Bundzwiebeln in Ringe schneiden, beides gleichmässig auf dem Teig verteilen.",
+      "Mit Fleur de Sel und Pfeffer würzen und die Pinienkerne darüber streuen.",
+      "Den Flammkuchen über mittelstarker Glut bzw. auf mittlerer Stufe (ca. 200 °C) zugedeckt etwa 20 Minuten grillieren, bis der Teig knusprig und der Belag leicht gebräunt ist."
+    ],
+    "tips": "Der Flammkuchen lässt sich auch im Backofen bei 220 °C Ober-/Unterhitze auf einem vorgeheizten Blech in 12–15 Minuten zubereiten. Als Variation passen auch halbierte Cherrytomaten oder dünn gehobelter Fenchel als Belag.",
+    "dietCategory": "vegetarian",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": []
+  },
+  {
+    "id": "son-101",
+    "name": "Grillierte Auberginen mit Granatapfel und Kichererbsen",
+    "category": "Gemüsegerichte",
+    "timeMinutes": 45,
+    "basePortions": 4,
+    "weatherType": "warm",
+    "source": "fooby.ch",
+    "sourceType": "imported",
+    "approved": false,
+    "description": "Saftig grillierte Auberginen, gefüllt mit einer würzigen Harissa-Tahina-Creme und knackigen Kichererbsen – verfeinert mit Granatapfelkernen und frischer Petersilie.",
+    "tags": [
+      "Abendessen",
+      "Mittagessen",
+      "Grillgericht",
+      "Sommer",
+      "Mediterran",
+      "Nahöstlich",
+      "Für Gäste"
+    ],
+    "ingredients": [
+      {
+        "name": "Auberginen",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch (Zehen)",
+        "amount": 1,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Sesamöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 0.75,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Tahina (Sesampaste)",
+        "amount": 2.5,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Harissa",
+        "amount": 2,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Granatapfel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitronensaft",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kichererbsen (Dose, abgetropft)",
+        "amount": 1,
+        "unit": "Dose",
+        "perPortions": 4
+      },
+      {
+        "name": "Jogurt nature",
+        "amount": 80,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "glattblättrige Petersilie",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Den Granatapfel halbieren, die Kerne herauslösen und den Saft einer Hälfte auffangen. Die Kerne der anderen Hälfte beiseitestellen.",
+      "Die Auberginen der Länge nach halbieren. Die Schnittflächen mit der halbierten Knoblauchzehe einreiben, anschliessend mit Sesamöl bestreichen und mit Salz würzen.",
+      "Die Auberginenhälften auf dem vorgeheizten Grill bei mittlerer Hitze (ca. 200 °C) auf jeder Seite etwa 15 Minuten grillieren, bis das Fleisch weich ist.",
+      "Das Innere der Auberginen mit einer Gabel herauslösen und in eine Schüssel geben. Die Auberginenschalen beiseitestellen.",
+      "Das herausgelöste Aubergineninnere zusammen mit Tahina, Harissa, dem aufgefangenen Granatapfelsaft und dem Zitronensaft fein pürieren. Mit Salz abschmecken.",
+      "Die Hälfte der abgetropften Kichererbsen unter die Auberginencreme mischen. Die Füllung gleichmässig auf die Auberginenschalen verteilen.",
+      "Die restlichen Kichererbsen, die beiseitegestellten Granatapfelkerne sowie Jogurt und frisch gezupfte Petersilienblätter darüber verteilen und sofort servieren."
+    ],
+    "tips": "Als Beilage passt frisches Fladenbrot hervorragend dazu. Die Füllung lässt sich auch einen Tag im Voraus zubereiten und im Kühlschrank aufbewahren.",
+    "dietCategory": "vegetarian",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "milch",
+      "sesam"
+    ]
+  },
+  {
+    "id": "son-102",
+    "name": "Sticky Blumenkohl-Spiessli",
+    "category": "Gemüsegerichte",
+    "timeMinutes": 40,
+    "basePortions": 8,
+    "weatherType": "warm",
+    "source": "fooby.ch",
+    "sourceType": "imported",
+    "approved": false,
+    "description": "Würzig-süsse Blumenkohlspiessli mit einer klebrigen Honig-Balsamico-Marinade — perfekt frisch vom Grill. Ein Highlight für jeden Grillabend!",
+    "tags": [
+      "Abendessen",
+      "Snack",
+      "Grillgericht",
+      "Sommer",
+      "Für Gäste"
+    ],
+    "ingredients": [
+      {
+        "name": "Blumenkohl",
+        "amount": 1,
+        "unit": "kg",
+        "perPortions": 8
+      },
+      {
+        "name": "Knoblauchzehen (gepresst)",
+        "amount": 2,
+        "unit": "Zehe",
+        "perPortions": 8
+      },
+      {
+        "name": "Ingwer (gerieben)",
+        "amount": 2,
+        "unit": "cm",
+        "perPortions": 8
+      },
+      {
+        "name": "Honig (flüssig)",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 8
+      },
+      {
+        "name": "Rosmarin (getrocknet)",
+        "amount": 2,
+        "unit": "TL",
+        "perPortions": 8
+      },
+      {
+        "name": "Paprika edelsüss",
+        "amount": 2,
+        "unit": "TL",
+        "perPortions": 8
+      },
+      {
+        "name": "Chiliflocken",
+        "amount": 2,
+        "unit": "TL",
+        "perPortions": 8
+      },
+      {
+        "name": "Salz",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 8
+      },
+      {
+        "name": "Aceto balsamico",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 8
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 8
+      },
+      {
+        "name": "Holzspiesschen",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 8
+      }
+    ],
+    "ingredientGroups": [
+      {
+        "name": "Blumenkohl",
+        "ingredients": [
+          {
+            "name": "Blumenkohl",
+            "amount": 1,
+            "unit": "kg",
+            "perPortions": 8
+          }
+        ]
+      },
+      {
+        "name": "Marinade",
+        "ingredients": [
+          {
+            "name": "Knoblauchzehen (gepresst)",
+            "amount": 2,
+            "unit": "Zehe",
+            "perPortions": 8
+          },
+          {
+            "name": "Ingwer (gerieben)",
+            "amount": 2,
+            "unit": "cm",
+            "perPortions": 8
+          },
+          {
+            "name": "Honig (flüssig)",
+            "amount": 2,
+            "unit": "EL",
+            "perPortions": 8
+          },
+          {
+            "name": "Rosmarin (getrocknet)",
+            "amount": 2,
+            "unit": "TL",
+            "perPortions": 8
+          },
+          {
+            "name": "Paprika edelsüss",
+            "amount": 2,
+            "unit": "TL",
+            "perPortions": 8
+          },
+          {
+            "name": "Chiliflocken",
+            "amount": 2,
+            "unit": "TL",
+            "perPortions": 8
+          },
+          {
+            "name": "Salz",
+            "amount": 0.5,
+            "unit": "TL",
+            "perPortions": 8
+          },
+          {
+            "name": "Aceto balsamico",
+            "amount": 2,
+            "unit": "EL",
+            "perPortions": 8
+          },
+          {
+            "name": "Olivenöl",
+            "amount": 3,
+            "unit": "EL",
+            "perPortions": 8
+          }
+        ]
+      }
+    ],
+    "steps": [
+      "Den Blumenkohl in Röschen teilen und in reichlich siedendem Salzwasser etwa 4 Minuten kochen. Anschliessend kalt abspülen und gut abtropfen lassen.",
+      "Für die Marinade Aceto balsamico, Olivenöl, Honig, gepressten Knoblauch, geriebenen Ingwer, Rosmarin, Paprikapulver, Chiliflocken und Salz in einer Pfanne verrühren.",
+      "Die Blumenkohlröschen zur Marinade geben und gut darin wenden, sodass sie gleichmässig bedeckt sind. Anschliessend auf die Holzspiesschen stecken.",
+      "Die restliche Marinade in der Pfanne bei mittlerer Hitze etwa 5 Minuten sirupartig einköcheln lassen und beiseitestellen.",
+      "Die Spiessli auf dem vorgeheizten Grill bei mittlerer Hitze (ca. 200 °C) und geschlossenem Deckel etwa 15 Minuten grillieren. Dabei regelmässig wenden und mit der eingekochten Marinade bestreichen.",
+      "Die fertigen Spiessli vom Grill nehmen und vor dem Servieren nochmals grosszügig mit der restlichen Marinade bestreichen."
+    ],
+    "tips": "Die Holzspiesschen vor der Verwendung mindestens 30 Minuten in Wasser einweichen — so verbrennen sie auf dem Grill nicht. Das Rezept gelingt auch im Backofen bei 220 °C Oberhitze (Grillstufe) für ca. 15 Minuten.",
+    "dietCategory": "vegan",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": []
+  },
+  {
+    "id": "son-103",
+    "name": "The Executive Burger",
+    "category": "Wraps, Sandwiches & Burger",
+    "timeMinutes": 40,
+    "basePortions": 4,
+    "weatherType": "warm",
+    "source": "fooby.ch",
+    "sourceType": "imported",
+    "approved": false,
+    "description": "Ein saftiger Burger mit karamellisiertem Speck, Raclettekäse, eingelegten Gurken und einer feinen Schnittlauchsauce – der perfekte Grillgenuss für besondere Momente.",
+    "tags": [
+      "Mittagessen",
+      "Abendessen",
+      "Grillgericht",
+      "Für Gäste",
+      "Sommer",
+      "Amerikanisch"
+    ],
+    "ingredients": [
+      {
+        "name": "Burger-Brötchen",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Hackfleisch (Rind und Schwein gemischt)",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Speckwürfeli",
+        "amount": 80,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Raclettekäse (gerieben)",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Jungsalat",
+        "amount": 40,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Schalotten (fein gehackt)",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Snack-Gurken (in dünne Scheiben geschnitten)",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Rohzucker",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Roter Portwein",
+        "amount": 100,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Aceto balsamico bianco",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Crème fraîche",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Schnittlauch (fein geschnitten)",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1.75,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      }
+    ],
+    "ingredientGroups": [
+      {
+        "name": "Eingelegte Gurken",
+        "ingredients": [
+          {
+            "name": "Snack-Gurken (in dünne Scheiben geschnitten)",
+            "amount": 3,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Aceto balsamico bianco",
+            "amount": 3,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Salz",
+            "amount": 0.25,
+            "unit": "TL",
+            "perPortions": 4
+          }
+        ]
+      },
+      {
+        "name": "Karamellisierter Speck",
+        "ingredients": [
+          {
+            "name": "Speckwürfeli",
+            "amount": 80,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Rohzucker",
+            "amount": 2,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Schalotten (fein gehackt)",
+            "amount": 3,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Roter Portwein",
+            "amount": 100,
+            "unit": "ml",
+            "perPortions": 4
+          }
+        ]
+      },
+      {
+        "name": "Schnittlauchsauce",
+        "ingredients": [
+          {
+            "name": "Crème fraîche",
+            "amount": 100,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Schnittlauch (fein geschnitten)",
+            "amount": 1,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Salz",
+            "amount": 0.25,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Pfeffer",
+            "amount": 1,
+            "unit": "Prise",
+            "perPortions": 4
+          }
+        ]
+      },
+      {
+        "name": "Hacktätschli",
+        "ingredients": [
+          {
+            "name": "Hackfleisch (Rind und Schwein gemischt)",
+            "amount": 500,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Raclettekäse (gerieben)",
+            "amount": 100,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Salz",
+            "amount": 1.25,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Pfeffer",
+            "amount": 1,
+            "unit": "Prise",
+            "perPortions": 4
+          }
+        ]
+      },
+      {
+        "name": "Burger",
+        "ingredients": [
+          {
+            "name": "Burger-Brötchen",
+            "amount": 4,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Jungsalat",
+            "amount": 40,
+            "unit": "g",
+            "perPortions": 4
+          }
+        ]
+      }
+    ],
+    "steps": [
+      "Für die eingelegten Gurken den Aceto balsamico bianco mit etwas Salz in einer Schüssel verrühren. Die Gurkenscheiben beigeben, alles mischen und zugedeckt beiseite stellen.",
+      "Die Speckwürfeli in einer beschichteten Pfanne ohne Fettzugabe bei mittlerer Hitze langsam knusprig braten. Den Rohzucker dazugeben und unter ständigem Rühren karamellisieren lassen.",
+      "Die gehackten Schalotten in die Pfanne geben und ca. 4 Minuten weich andämpfen. Den Portwein dazugiessen und fast vollständig einköcheln lassen.",
+      "Für die Schnittlauchsauce die Crème fraîche mit dem Schnittlauch verrühren, mit Salz und Pfeffer abschmecken.",
+      "Das Hackfleisch mit dem Raclettekäse, Salz und Pfeffer in einer Schüssel vermischen und von Hand gut durchkneten, bis eine kompakte, gleichmässige Masse entsteht. Die Masse in 4 gleich grosse Portionen teilen und zu flachen Tätschli formen.",
+      "Den Grill auf mittlere Hitze (ca. 180 °C) vorheizen. Die Hacktätschli zugedeckt auf jeder Seite ca. 6 Minuten grillieren. Die Burger-Brötchen in den letzten ca. 2 Minuten mit auf den Grill legen und einmal wenden.",
+      "Die Schnittlauchsauce grosszügig auf beide Hälften der Brötchen streichen. Jeweils ein Hacktätschli, etwas karamellisierten Speck, die eingelegten Gurkenscheiben und etwas Jungsalat auf den Brötchenboden legen und den Deckel daraufsetzen."
+    ],
+    "tips": "Der Raclettekäse lässt sich gut durch einen anderen Schmelzkäse wie Gruyère ersetzen. Wer keinen Grill hat, kann die Tätschli auch in einer heissen Bratpfanne mit etwas Öl beidseitig braten.",
+    "dietCategory": "meat",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "gluten",
+      "milch",
+      "sulfite"
+    ]
+  },
+  {
+    "id": "son-104",
+    "name": "Cordon-bleu-Burger",
+    "category": "Wraps, Sandwiches & Burger",
+    "timeMinutes": 50,
+    "basePortions": 4,
+    "weatherType": "warm",
+    "source": "fooby.ch",
+    "sourceType": "imported",
+    "approved": false,
+    "description": "Ein saftiger Hackfleisch-Burger mit einer herzhaften Füllung aus Gruyère, Hinterschinken und grünen Peperoncini — die klassische Cordon-bleu-Idee neu auf dem Grill interpretiert.",
+    "tags": [
+      "Mittagessen",
+      "Abendessen",
+      "Grillgericht",
+      "Für Gäste",
+      "Sommer",
+      "Schweizerisch"
+    ],
+    "ingredients": [
+      {
+        "name": "Halbweissbrot vom Vortag",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Vollmilch",
+        "amount": 100,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Hackfleisch (Rind und Schwein)",
+        "amount": 600,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Hinterschinken (in Tranchen)",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Gruyère (rezent, gerieben)",
+        "amount": 60,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "grüne Peperoncini (fein geschnitten)",
+        "amount": 30,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "glattblättrige Petersilie (gehackt)",
+        "amount": 1,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "grobkörniger Senf",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      }
+    ],
+    "ingredientGroups": [
+      {
+        "name": "Patties",
+        "ingredients": [
+          {
+            "name": "Halbweissbrot vom Vortag",
+            "amount": 100,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Vollmilch",
+            "amount": 100,
+            "unit": "ml",
+            "perPortions": 4
+          },
+          {
+            "name": "Hackfleisch (Rind und Schwein)",
+            "amount": 600,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "glattblättrige Petersilie (gehackt)",
+            "amount": 1,
+            "unit": "Bund",
+            "perPortions": 4
+          },
+          {
+            "name": "grobkörniger Senf",
+            "amount": 1,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Salz",
+            "amount": 1.5,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Pfeffer",
+            "amount": 1,
+            "unit": "Prise",
+            "perPortions": 4
+          }
+        ]
+      },
+      {
+        "name": "Füllung",
+        "ingredients": [
+          {
+            "name": "Hinterschinken (in Tranchen)",
+            "amount": 4,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Gruyère (rezent, gerieben)",
+            "amount": 60,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "grüne Peperoncini (fein geschnitten)",
+            "amount": 30,
+            "unit": "g",
+            "perPortions": 4
+          }
+        ]
+      }
+    ],
+    "steps": [
+      "Das Brot in kleine Stücke brechen und in der Milch kurz einweichen, bis es die Flüssigkeit aufgesogen hat.",
+      "Das eingeweichte Brot zusammen mit dem Hackfleisch, der gehackten Petersilie, dem Senf, Salz und Pfeffer in eine Schüssel geben und alles kräftig kneten, bis eine kompakte, homogene Masse entsteht.",
+      "Die Hackfleischmasse in 4 gleiche Portionen teilen und mit leicht angefeuchteten Händen zu Kugeln formen.",
+      "Den geriebenen Gruyère und die Peperoncini auf den Schinkentranchen verteilen, dann die Tranchen zu kleinen Päckli zusammenfalten.",
+      "Mit dem Daumen eine Mulde in jede Hackfleischkugel drücken, je ein Schinkenpäckli hineinlegen und das Fleisch rundherum fest verschliessen. Die Burger anschliessend leicht flach drücken.",
+      "Den Grill auf mittlere Hitze (ca. 200 °C) vorheizen. Die Burger bei geschlossenem Deckel auf jeder Seite ca. 7 Minuten grillieren, bis sie gar und schön gebräunt sind."
+    ],
+    "tips": "Die Burger lassen sich auch in einer heissen Bratpfanne mit etwas Öl beidseitig braten. Dazu passen Burgerbrötchen, Salat, Tomatenscheiben und eine würzige Senf-Mayonnaise.",
+    "dietCategory": "meat",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "gluten",
+      "milch",
+      "senf",
+      "sulfite"
+    ]
+  },
+  {
+    "id": "son-105",
+    "name": "Vegi-Burger mit Bohnen und Süsskartoffeln",
+    "category": "Wraps, Sandwiches & Burger",
+    "timeMinutes": 60,
+    "basePortions": 4,
+    "weatherType": "warm",
+    "source": "fooby.ch",
+    "sourceType": "imported",
+    "approved": false,
+    "description": "Saftige Burger-Patties aus weissen Bohnen und Süsskartoffeln, verfeinert mit einer frischen Gurkensauce – ein Grillgenuss ganz ohne Fleisch.",
+    "tags": [
+      "Mittagessen",
+      "Abendessen",
+      "Grillgericht",
+      "Vegetarisch",
+      "Sommer",
+      "Für Gäste"
+    ],
+    "ingredients": [
+      {
+        "name": "Burger-Brötchen",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Weisse Bohnen (Dose, abgetropft)",
+        "amount": 1,
+        "unit": "Dose",
+        "perPortions": 4
+      },
+      {
+        "name": "Süsskartoffeln (gerieben oder fein gewürfelt)",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebeln (fein gehackt)",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch (fein gehackt)",
+        "amount": 1,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Geschrotete Leinsamen",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Sonnenblumenkerne",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Scharfes Currypulver",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Snack-Gurken",
+        "amount": 150,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Saurer Halbrahm",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Micro Greens",
+        "amount": 30,
+        "unit": "g",
+        "perPortions": 4
+      }
+    ],
+    "ingredientGroups": [
+      {
+        "name": "Patties",
+        "ingredients": [
+          {
+            "name": "Weisse Bohnen (Dose, abgetropft)",
+            "amount": 1,
+            "unit": "Dose",
+            "perPortions": 4
+          },
+          {
+            "name": "Süsskartoffeln (gerieben oder fein gewürfelt)",
+            "amount": 200,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Zwiebeln (fein gehackt)",
+            "amount": 1,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Knoblauch (fein gehackt)",
+            "amount": 1,
+            "unit": "Zehe",
+            "perPortions": 4
+          },
+          {
+            "name": "Geschrotete Leinsamen",
+            "amount": 1,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Sonnenblumenkerne",
+            "amount": 2,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Scharfes Currypulver",
+            "amount": 1,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Salz",
+            "amount": 1,
+            "unit": "TL",
+            "perPortions": 4
+          }
+        ]
+      },
+      {
+        "name": "Gurkensauce",
+        "ingredients": [
+          {
+            "name": "Snack-Gurken",
+            "amount": 150,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Saurer Halbrahm",
+            "amount": 100,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Olivenöl",
+            "amount": 1,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Salz",
+            "amount": 1,
+            "unit": "Prise",
+            "perPortions": 4
+          }
+        ]
+      },
+      {
+        "name": "Zusammenstellen",
+        "ingredients": [
+          {
+            "name": "Burger-Brötchen",
+            "amount": 4,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Micro Greens",
+            "amount": 30,
+            "unit": "g",
+            "perPortions": 4
+          }
+        ]
+      }
+    ],
+    "steps": [
+      "Die abgetropften Bohnen mit einer Gabel grob zerdrücken. Süsskartoffeln, Zwiebeln, Knoblauch, Sonnenblumenkerne, Leinsamen und Currypulver beigeben, mit Salz würzen und alles von Hand zu einer kompakten Masse kneten.",
+      "Die Masse in vier gleich grosse Portionen teilen und daraus runde, leicht flach gedrückte Patties formen.",
+      "Die Hälfte der Snack-Gurken längs in dünne Scheiben schneiden und beiseite stellen. Die restlichen Gurken fein hacken und mit dem sauren Halbrahm sowie dem Olivenöl verrühren. Mit Salz abschmecken.",
+      "Den Grill auf mittlere Hitze (ca. 220 °C) vorheizen. Die Patties mit etwas Olivenöl bestreichen und beidseitig je ca. 10 Minuten zugedeckt grillieren, bis sie durch und leicht gebräunt sind.",
+      "Die Brötchenhälften in den letzten ca. 1 Minute kurz mitgrillieren.",
+      "Die Brötchenböden grosszügig mit der Gurkensauce bestreichen, je ein Pattie darauflegen und mit den Gurkenscheiben sowie den Micro Greens belegen. Nochmals etwas Sauce darüber geben und den Brötchendeckel aufsetzen."
+    ],
+    "tips": "Die Patties lassen sich auch in einer beschichteten Pfanne mit etwas Öl bei mittlerer Hitze beidseitig je ca. 5 Minuten braten. Für eine vegane Variante den sauren Halbrahm durch einen pflanzlichen Joghurt ersetzen.",
+    "dietCategory": "vegetarian",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "gluten",
+      "milch"
+    ]
+  },
+  {
+    "id": "son-106",
+    "name": "Auberginen-Sandwich mit Hüttenkäse",
+    "category": "Wraps, Sandwiches & Burger",
+    "timeMinutes": 30,
+    "basePortions": 4,
+    "weatherType": "warm",
+    "source": "fooby.ch",
+    "sourceType": "imported",
+    "approved": false,
+    "description": "Saftig gegrillte Auberginenscheiben als Brot-Ersatz, gefüllt mit einer würzigen Hüttenkäse-Creme mit getrockneten Tomaten und frischem Basilikum – leicht, frisch und sommerlich.",
+    "tags": [
+      "Mittagessen",
+      "Abendessen",
+      "Sommer",
+      "Grillgericht",
+      "Mediterran",
+      "Kinderfreundlich",
+      "Gut zum Mitnehmen"
+    ],
+    "ingredients": [
+      {
+        "name": "Auberginen",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Hüttenkäse nature",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Getrocknete Tomaten",
+        "amount": 50,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Basilikum (fein geschnitten)",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      }
+    ],
+    "ingredientGroups": [
+      {
+        "name": "Füllung",
+        "ingredients": [
+          {
+            "name": "Hüttenkäse nature",
+            "amount": 200,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Getrocknete Tomaten",
+            "amount": 50,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Basilikum (fein geschnitten)",
+            "amount": 2,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Salz",
+            "amount": 1,
+            "unit": "Prise",
+            "perPortions": 4
+          },
+          {
+            "name": "Pfeffer",
+            "amount": 1,
+            "unit": "Prise",
+            "perPortions": 4
+          }
+        ]
+      },
+      {
+        "name": "Auberginen",
+        "ingredients": [
+          {
+            "name": "Auberginen",
+            "amount": 2,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Olivenöl",
+            "amount": 2,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Salz",
+            "amount": 1,
+            "unit": "Prise",
+            "perPortions": 4
+          },
+          {
+            "name": "Pfeffer",
+            "amount": 1,
+            "unit": "Prise",
+            "perPortions": 4
+          }
+        ]
+      }
+    ],
+    "steps": [
+      "Die getrockneten Tomaten fein hacken und zusammen mit dem Hüttenkäse und dem Basilikum in einer Schüssel gut verrühren. Mit Salz und Pfeffer abschmecken.",
+      "Die Auberginen in gleichmässige Scheiben schneiden und beidseitig mit Olivenöl bepinseln.",
+      "Eine Grillpfanne stark erhitzen. Die Auberginenscheiben portionenweise hineingeben und bei mittlerer bis hoher Hitze beidseitig je ca. 7 Minuten grillieren, bis sie weich sind und schöne Grillstreifen aufweisen. Anschliessend salzen und pfeffern.",
+      "Die Hälfte der Auberginenscheiben auf einer Platte anrichten und je einen Esslöffel der Hüttenkäse-Füllung darauf verteilen. Mit den restlichen Auberginenscheiben bedecken und sofort servieren."
+    ],
+    "tips": "Die Füllung lässt sich nach Belieben mit frischer Minze oder etwas Zitronenabrieb verfeinern. Die Sandwiches schmecken auch lauwarm und eignen sich gut als Vorspeise für Gäste.",
+    "dietCategory": "vegetarian",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "milch"
+    ]
+  },
+  {
+    "id": "son-107",
+    "name": "Pulled Beef Burger",
+    "category": "Wraps, Sandwiches & Burger",
+    "timeMinutes": 15,
+    "basePortions": 4,
+    "weatherType": "neutral",
+    "source": "fooby.ch",
+    "sourceType": "imported",
+    "approved": false,
+    "description": "Saftige Pulled Beef Burger mit würziger BBQ-Sauce, knackigem Coleslaw und frischem Blattsalat – in nur 15 Minuten auf dem Tisch.",
+    "tags": [
+      "Mittagessen",
+      "Abendessen",
+      "Amerikanisch",
+      "Pfannengericht",
+      "Kinderfreundlich",
+      "Für Gäste",
+      "Ganzjährig"
+    ],
+    "ingredients": [
+      {
+        "name": "Burger-Brötchen",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Pulled Beef mit BBQ-Sauce",
+        "amount": 620,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Coleslaw",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Baby-Salate",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Das Pulled Beef gemäss Packungsanleitung erhitzen, anschliessend mit zwei Gabeln in feine Fasern zerzupfen und gut mit der BBQ-Sauce vermischen.",
+      "Die Burger-Brötchen halbieren und mit den Schnittflächen nach unten in einer heissen Grillpfanne etwa 3 Minuten grillieren, bis leichte Röststreifen entstehen.",
+      "Die Brötchenböden mit dem Pulled Beef belegen, Coleslaw und Baby-Salate darüber verteilen, den Deckel auflegen und leicht andrücken."
+    ],
+    "tips": "Wer mag, kann die Burger zusätzlich mit Gurkenscheiben, roten Zwiebelringen oder einer Scheibe Cheddar ergänzen. Das Pulled Beef ist auch in Wraps oder auf Ofenkartoffeln lecker.",
+    "dietCategory": "meat",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "gluten"
+    ]
+  },
+  {
+    "id": "son-108",
+    "name": "Pulled Mushroom Burger",
+    "category": "Wraps, Sandwiches & Burger",
+    "timeMinutes": 50,
+    "basePortions": 4,
+    "weatherType": "neutral",
+    "source": "fooby.ch",
+    "sourceType": "imported",
+    "approved": false,
+    "description": "Saftige Kräuterseitlinge, die im Ofen gebacken und mit rauchiger BBQ-Sauce verfeinert werden – ein veganer Burger, der auch Fleischfans begeistert.",
+    "tags": [
+      "Mittagessen",
+      "Abendessen",
+      "Amerikanisch",
+      "Pfannengericht",
+      "Ofengericht",
+      "Ganzjährig",
+      "Für Gäste"
+    ],
+    "ingredients": [
+      {
+        "name": "Burger-Brötchen",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Kräuterseitlinge",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehen (fein gehackt)",
+        "amount": 2,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel (in feine Ringe geschnitten)",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Rotkabis (fein gehobelt)",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Koriander",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Geräuchertes Paprikapulver",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 0.25,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Chiliflocken",
+        "amount": 0.25,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "BBQ-Sauce",
+        "amount": 6,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "ingredientGroups": [
+      {
+        "name": "Pilzfüllung",
+        "ingredients": [
+          {
+            "name": "Kräuterseitlinge",
+            "amount": 250,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Knoblauchzehen (fein gehackt)",
+            "amount": 2,
+            "unit": "Zehe",
+            "perPortions": 4
+          },
+          {
+            "name": "Geräuchertes Paprikapulver",
+            "amount": 1,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Salz",
+            "amount": 0.25,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Chiliflocken",
+            "amount": 0.25,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "BBQ-Sauce",
+            "amount": 6,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Olivenöl",
+            "amount": 2,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Zwiebel (in feine Ringe geschnitten)",
+            "amount": 1,
+            "unit": "Stk",
+            "perPortions": 4
+          }
+        ]
+      },
+      {
+        "name": "Belag",
+        "ingredients": [
+          {
+            "name": "Rotkabis (fein gehobelt)",
+            "amount": 100,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Koriander",
+            "amount": 0.5,
+            "unit": "Bund",
+            "perPortions": 4
+          },
+          {
+            "name": "Burger-Brötchen",
+            "amount": 4,
+            "unit": "Stk",
+            "perPortions": 4
+          }
+        ]
+      }
+    ],
+    "steps": [
+      "Den Backofen auf 180 °C Ober-/Unterhitze vorheizen und ein Backblech mit Backpapier belegen.",
+      "Die Kräuterseitlinge mit dem Knoblauch, dem geräucherten Paprikapulver, dem Salz, den Chiliflocken und 2 EL Olivenöl in einer Schüssel gut vermengen.",
+      "Die gewürzten Pilze gleichmässig auf dem vorbereiteten Blech verteilen und auf der mittleren Schiene ca. 20 Minuten backen, bis sie leicht gebräunt sind.",
+      "Währenddessen den restlichen Esslöffel Olivenöl in einer beschichteten Pfanne bei mittlerer Hitze erwärmen. Die Zwiebelringe beigeben und unter gelegentlichem Rühren ca. 15 Minuten andämpfen, bis sie weich und goldfarben sind.",
+      "Die gebackenen Pilze zur Zwiebelmasse in die Pfanne geben, die BBQ-Sauce darübergiessen und alles gut verrühren, bis die Füllung gleichmässig bedeckt ist.",
+      "Die Burger-Brötchen aufschneiden und die Unterseiten grosszügig mit der Pilz-Zwiebel-Füllung belegen.",
+      "Den fein gehobelten Rotkabis sowie die Korianderblätter darüber verteilen, die Brötchendeckel aufsetzen und sofort servieren."
+    ],
+    "tips": "Wer es etwas knackiger mag, kann den Rotkabis mit einem Spritzer Zitronensaft und einer Prise Salz kurz marinieren. Die Pilzfüllung lässt sich auch gut einen Tag im Voraus zubereiten und im Kühlschrank aufbewahren.",
+    "dietCategory": "vegan",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "gluten"
+    ]
+  },
+  {
+    "id": "son-109",
+    "name": "Grillierte Auberginen mit Sojasauce und Ingwer",
+    "category": "Gemüsegerichte",
+    "timeMinutes": 33,
+    "basePortions": 4,
+    "weatherType": "warm",
+    "source": "fooby.ch",
+    "sourceType": "imported",
+    "approved": false,
+    "description": "Würzig marinierte Auberginen vom Grill mit aromatischer Sojasauce-Ingwer-Marinade — serviert auf lockerem Jasminreis. Ein sommerliches veganes Hauptgericht mit asiatischem Flair.",
+    "tags": [
+      "Abendessen",
+      "Mittagessen",
+      "Grillgericht",
+      "Sommer",
+      "Japanisch"
+    ],
+    "ingredients": [
+      {
+        "name": "Auberginen (in Scheiben geschnitten)",
+        "amount": 3,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Rote Chili (fein gehackt)",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Ingwer (gerieben)",
+        "amount": 1.5,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehen (gepresst)",
+        "amount": 2,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Piment",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfefferkörner",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kreuzkümmel",
+        "amount": 0.5,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Sojasauce",
+        "amount": 100,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Thymian (Blätter abgezupft)",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Zimt",
+        "amount": 0.25,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Limettensaft",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Jasminreis",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "ingredientGroups": [
+      {
+        "name": "Marinade",
+        "ingredients": [
+          {
+            "name": "Rote Chili (fein gehackt)",
+            "amount": 1,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Ingwer (gerieben)",
+            "amount": 1.5,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Knoblauchzehen (gepresst)",
+            "amount": 2,
+            "unit": "Zehe",
+            "perPortions": 4
+          },
+          {
+            "name": "Piment",
+            "amount": 1,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Pfefferkörner",
+            "amount": 0.5,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Kreuzkümmel",
+            "amount": 0.5,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Sojasauce",
+            "amount": 100,
+            "unit": "ml",
+            "perPortions": 4
+          },
+          {
+            "name": "Thymian (Blätter abgezupft)",
+            "amount": 0.5,
+            "unit": "Bund",
+            "perPortions": 4
+          },
+          {
+            "name": "Zimt",
+            "amount": 0.25,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Limettensaft",
+            "amount": 3,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Olivenöl",
+            "amount": 4,
+            "unit": "EL",
+            "perPortions": 4
+          }
+        ]
+      },
+      {
+        "name": "Auberginen",
+        "ingredients": [
+          {
+            "name": "Auberginen (in Scheiben geschnitten)",
+            "amount": 3,
+            "unit": "Stk",
+            "perPortions": 4
+          }
+        ]
+      },
+      {
+        "name": "Reis",
+        "ingredients": [
+          {
+            "name": "Jasminreis",
+            "amount": 300,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Salz",
+            "amount": 1,
+            "unit": "TL",
+            "perPortions": 4
+          }
+        ]
+      }
+    ],
+    "steps": [
+      "Piment, Pfefferkörner und Kreuzkümmel in einer trockenen Pfanne bei mittlerer Hitze kurz rösten, bis die Gewürze duften. Im Mörser fein zerstossen und in eine Schüssel geben.",
+      "Limettensaft, Sojasauce, Olivenöl, Chili, Ingwer, Knoblauch, Thymian und Zimt zu den zerstossenen Gewürzen geben und alles gut verrühren.",
+      "Die Hälfte der Marinade in eine separate Schüssel abfüllen und beiseitestellen. Die Auberginenscheiben mit der restlichen Marinade vermischen und zugedeckt bis zum Grillieren ruhen lassen.",
+      "Den Jasminreis in einem Sieb unter kaltem fliessendem Wasser spülen, bis das Wasser klar läuft, dann gut abtropfen lassen.",
+      "Reis zusammen mit der doppelten Menge Wasser und dem Salz in eine Pfanne geben und aufkochen. Den Deckel auflegen, Hitze auf die kleinste Stufe reduzieren und den Reis ca. 10 Minuten köcheln lassen. Anschliessend die Platte ausschalten und den Reis weitere 10 Minuten quellen lassen — den Deckel dabei nicht abheben.",
+      "In der Zwischenzeit die Auberginenscheiben auf dem vorgeheizten Grill bei mittlerer Hitze (ca. 200 °C) mit geschlossenem Deckel beidseitig je ca. 4 Minuten grillieren.",
+      "Den Reis mit einer Gabel auflockern und auf Teller verteilen. Die grillierten Auberginen darauflegen und die beiseitegestellte Marinade darüber träufeln."
+    ],
+    "tips": "Die Auberginen können auch auf einem Grillpfanne (Bratpfanne mit Rillen) auf dem Herd zubereitet werden, falls kein Grill vorhanden ist. Wer es etwas schärfer mag, kann eine zweite Chili verwenden.",
+    "dietCategory": "vegan",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "soja"
+    ]
+  },
+  {
     "id": "son-11",
     "name": "Spinat-Chüechli",
     "category": "Gemüsegerichte",
@@ -32649,6 +36193,595 @@
     "_migrated_v2": true
   },
   {
+    "id": "son-97",
+    "name": "BBQ-Marinade",
+    "category": "Beilagen, Saucen & Dips",
+    "timeMinutes": 15,
+    "basePortions": 4,
+    "weatherType": "warm",
+    "source": "fooby.ch",
+    "sourceType": "imported",
+    "approved": false,
+    "description": "Eine würzige BBQ-Marinade mit Sojasauce, Honig und Gewürzen – perfekt für Grillgut aller Art und im Handumdrehen zubereitet.",
+    "tags": [
+      "Grillgericht",
+      "Sommer",
+      "Ohne Kochen",
+      "Gut zum Mitnehmen",
+      "Amerikanisch",
+      "Schnell"
+    ],
+    "ingredients": [
+      {
+        "name": "Ingwer (gemahlen)",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehe (gepresst)",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Honig (flüssig)",
+        "amount": 0.5,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Cayennepfeffer",
+        "amount": 0.25,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Nelkenpulver",
+        "amount": 1,
+        "unit": "Msp",
+        "perPortions": 4
+      },
+      {
+        "name": "Zimt",
+        "amount": 1,
+        "unit": "Msp",
+        "perPortions": 4
+      },
+      {
+        "name": "Sojasauce",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Senfkörner",
+        "amount": 0.25,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Sherry",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomatenpüree",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      }
+    ],
+    "steps": [
+      "Knoblauch pressen und zusammen mit dem Tomatenpüree in eine kleine Schüssel geben.",
+      "Sojasauce, Sherry und Honig beigeben.",
+      "Ingwer, Cayennepfeffer, Nelkenpulver, Zimt und Senfkörner hinzufügen.",
+      "Alle Zutaten gut miteinander verrühren, bis eine gleichmässige Marinade entsteht.",
+      "Das Grillgut vor dem Grillieren grosszügig damit einpinseln und nach Belieben einige Minuten marinieren lassen."
+    ],
+    "tips": "Die Marinade eignet sich hervorragend für Poulet, Rippchen oder Tofu. Sie lässt sich in einem verschlossenen Glas im Kühlschrank einige Tage aufbewahren.",
+    "dietCategory": "vegan",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "senf",
+      "soja",
+      "sulfite"
+    ]
+  },
+  {
+    "id": "son-98",
+    "name": "Buntes Grillgemüse",
+    "category": "Gemüsegerichte",
+    "timeMinutes": 60,
+    "basePortions": 4,
+    "weatherType": "warm",
+    "source": "fooby.ch",
+    "sourceType": "imported",
+    "approved": false,
+    "description": "Knackige Tomaten-Spiessli, karamellisierte Zwiebel-Lollis, goldige Kartoffelscheiben und gefüllte Hornpeperoni – dieses farbenfrohe Grillgemüse ist ein Fest für Auge und Gaumen.",
+    "tags": [
+      "Abendessen",
+      "Grillgericht",
+      "Sommer",
+      "Für Gäste",
+      "Kinderfreundlich"
+    ],
+    "ingredients": [
+      {
+        "name": "Cherry-Tomaten (verschiedenfarbig)",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Rote Zwiebeln (in Scheiben geschnitten)",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Festkochende Kartoffeln (in Scheiben geschnitten)",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Süsskartoffeln (in Scheiben geschnitten)",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Hornpeperoni",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Frischkäse",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Schnittlauch (fein geschnitten)",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Rosmarin",
+        "amount": 6,
+        "unit": "Zweig",
+        "perPortions": 4
+      },
+      {
+        "name": "Thymian",
+        "amount": 2,
+        "unit": "Zweig",
+        "perPortions": 4
+      },
+      {
+        "name": "Holzspiesschen",
+        "amount": 6,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl (zum Beträufeln)",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Honig",
+        "amount": 0.5,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Fleur de Sel",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Cayennepfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      }
+    ],
+    "ingredientGroups": [
+      {
+        "name": "Tomaten-Spiessli",
+        "ingredients": [
+          {
+            "name": "Cherry-Tomaten (verschiedenfarbig)",
+            "amount": 200,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Rosmarin",
+            "amount": 6,
+            "unit": "Zweig",
+            "perPortions": 4
+          },
+          {
+            "name": "Olivenöl",
+            "amount": 1,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Fleur de Sel",
+            "amount": 1,
+            "unit": "Prise",
+            "perPortions": 4
+          }
+        ]
+      },
+      {
+        "name": "Zwiebel-Lollis",
+        "ingredients": [
+          {
+            "name": "Rote Zwiebeln (in Scheiben geschnitten)",
+            "amount": 2,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Holzspiesschen",
+            "amount": 6,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Honig",
+            "amount": 0.5,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Cayennepfeffer",
+            "amount": 1,
+            "unit": "Prise",
+            "perPortions": 4
+          },
+          {
+            "name": "Pfeffer",
+            "amount": 1,
+            "unit": "Prise",
+            "perPortions": 4
+          }
+        ]
+      },
+      {
+        "name": "Kartoffelscheiben",
+        "ingredients": [
+          {
+            "name": "Festkochende Kartoffeln (in Scheiben geschnitten)",
+            "amount": 250,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Süsskartoffeln (in Scheiben geschnitten)",
+            "amount": 250,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Olivenöl",
+            "amount": 1,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Salz",
+            "amount": 1,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Thymian",
+            "amount": 2,
+            "unit": "Zweig",
+            "perPortions": 4
+          }
+        ]
+      },
+      {
+        "name": "Gefüllte Hornpeperoni",
+        "ingredients": [
+          {
+            "name": "Hornpeperoni",
+            "amount": 4,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Frischkäse",
+            "amount": 100,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Schnittlauch (fein geschnitten)",
+            "amount": 0.5,
+            "unit": "Bund",
+            "perPortions": 4
+          },
+          {
+            "name": "Olivenöl",
+            "amount": 1,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Pfeffer",
+            "amount": 1,
+            "unit": "Prise",
+            "perPortions": 4
+          },
+          {
+            "name": "Salz",
+            "amount": 1,
+            "unit": "Prise",
+            "perPortions": 4
+          }
+        ]
+      }
+    ],
+    "steps": [
+      "Den Grill auf mittlere Hitze (ca. 200 °C) vorheizen.",
+      "Die Cherry-Tomaten mit etwas Olivenöl und Salz vermengen, dann auf die Rosmarinzweige aufstecken.",
+      "Die Tomaten-Spiessli auf dem Grill zugedeckt bei mittlerer Hitze ca. 5 Minuten rundum grillieren. Anschliessend mit etwas Olivenöl beträufeln und mit Fleur de Sel würzen.",
+      "Für die Zwiebel-Lollis je ein Holzspiesschen mittig durch die Zwiebelscheiben stecken.",
+      "Die Zwiebel-Lollis zugedeckt auf dem Grill beidseitig je ca. 4 Minuten grillieren. Vom Grill nehmen, mit Honig beträufeln und mit Cayennepfeffer sowie Pfeffer würzen.",
+      "Die Kartoffel- und Süsskartoffelscheiben in einer Schüssel mit Olivenöl und Salz mischen.",
+      "Die Kartoffelscheiben zugedeckt auf dem Grill bei mittlerer Hitze beidseitig je ca. 10 Minuten grillieren, dabei alle 5 Minuten um einen Vierteldrehung wenden. Vom Grill nehmen und mit abgezupften Thymianblättchen bestreuen.",
+      "Die Hornpeperoni rundum mit Olivenöl einstreichen und zugedeckt auf dem Grill ca. 10 Minuten grillieren.",
+      "Währenddessen den Frischkäse mit dem fein geschnittenen Schnittlauch verrühren und mit Salz sowie Pfeffer abschmecken.",
+      "Die gegrillten Hornpeperoni am oberen Teil aufschneiden und grosszügig mit der Frischkäsemischung füllen."
+    ],
+    "tips": "Das Grillgemüse lässt sich beliebig variieren – Zucchetti, Auberginen oder Maiskolben eignen sich ebenfalls hervorragend. Die Holzspiesschen vor dem Gebrauch ca. 30 Minuten in Wasser einweichen, damit sie auf dem Grill nicht verbrennen.",
+    "dietCategory": "vegetarian",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "milch"
+    ]
+  },
+  {
+    "id": "son-99",
+    "name": "Ratatouille vom Grill",
+    "category": "Gemüsegerichte",
+    "timeMinutes": 30,
+    "basePortions": 4,
+    "weatherType": "warm",
+    "source": "fooby.ch",
+    "sourceType": "imported",
+    "approved": false,
+    "description": "Der provenzalische Klassiker, direkt auf dem Grill zubereitet: saftiges Sommergemüse mit Kräutern und Knoblauch – als Beilage oder Hauptgericht ein Genuss.",
+    "tags": [
+      "Abendessen",
+      "Grillgericht",
+      "Sommer",
+      "Mediterran",
+      "Für Gäste",
+      "Mealprep-geeignet"
+    ],
+    "ingredients": [
+      {
+        "name": "Aubergine",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Gelbe Peperoni",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Zucchetti",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Fleischtomaten",
+        "amount": 600,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Rispen-Cherry-Tomaten",
+        "amount": 300,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauchzehen",
+        "amount": 4,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Oregano",
+        "amount": 5,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Thymian",
+        "amount": 4,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 5,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Fleur de Sel",
+        "amount": 0.25,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      }
+    ],
+    "ingredientGroups": [
+      {
+        "name": "Grillgemüse",
+        "ingredients": [
+          {
+            "name": "Aubergine",
+            "amount": 1,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Gelbe Peperoni",
+            "amount": 1,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Zucchetti",
+            "amount": 200,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Fleischtomaten",
+            "amount": 600,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Knoblauchzehen (fein gehackt)",
+            "amount": 2,
+            "unit": "Zehe",
+            "perPortions": 4
+          },
+          {
+            "name": "Olivenöl",
+            "amount": 3,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Salz",
+            "amount": 0.5,
+            "unit": "TL",
+            "perPortions": 4
+          }
+        ]
+      },
+      {
+        "name": "Grillschale",
+        "ingredients": [
+          {
+            "name": "Rispen-Cherry-Tomaten",
+            "amount": 300,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Zwiebel (in Spalten)",
+            "amount": 1,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Knoblauchzehen (fein gehackt)",
+            "amount": 2,
+            "unit": "Zehe",
+            "perPortions": 4
+          },
+          {
+            "name": "Oregano-Zweige",
+            "amount": 5,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Thymian-Zweige",
+            "amount": 4,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Olivenöl",
+            "amount": 2,
+            "unit": "EL",
+            "perPortions": 4
+          }
+        ]
+      }
+    ],
+    "steps": [
+      "Aubergine, Peperoni, Zucchetti und Fleischtomaten grob in gleichmässige Stücke schneiden.",
+      "Das Gemüse in einer grossen Schüssel mit 3 EL Olivenöl und der Hälfte des Knoblauchs vermengen und mit Salz würzen.",
+      "Cherry-Tomaten und Zwiebelspalten in eine Grillschale geben, mit dem restlichen Olivenöl, dem restlichen Knoblauch sowie den Oregano- und Thymian-Zweigen mischen.",
+      "Den Grill auf mittlere Hitze (ca. 200 °C) vorheizen. Das Grillgemüse auf dem Rost und die Grillschale mit den Cherry-Tomaten bei geschlossenem Deckel ca. 20 Minuten grillieren, dabei das Gemüse gelegentlich wenden.",
+      "Aubergine, Peperoni und Fleischtomaten vom Grill nehmen, in grobe Stücke schneiden und zusammen mit den Zucchetti auf einer Platte anrichten.",
+      "Die Cherry-Tomaten noch weitere ca. 10 Minuten auf dem Grill lassen, bis sie leicht aufgeplatzt sind, dann über das Ratatouille verteilen.",
+      "Das Gericht mit Fleur de Sel, Pfeffer und frischen Oregano-Blättchen abschmecken und servieren."
+    ],
+    "tips": "Als Beilage zu Grilladen oder als eigenständiges Hauptgericht mit Baguette servieren. Reste lassen sich am nächsten Tag kalt als Salat oder warm auf Pasta geniessen.",
+    "dietCategory": "vegan",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": []
+  },
+  {
     "id": "kds-01",
     "name": "Blitzschnelle Pizza-Brötchen",
     "category": "Snacks & Vorspeisen",
@@ -34653,458 +38786,5 @@
     "dietCategory": "vegan",
     "sourceType": "mahlzyt",
     "_migrated_v2": true
-  },
-  {
-    "id": "rec-1780953992976-qmwcv",
-    "name": "Thai Nudelsuppe mit Tofu",
-    "category": "Suppen, Eintöpfe & Currys",
-    "timeMinutes": 20,
-    "tags": [
-      "Vegetarisch",
-      "Asiatisch",
-      "Mittagsgericht",
-      "Abendgericht",
-      "Vegan",
-      "Mealprep-geeignet",
-      "Frühling",
-      "Herbst",
-      "Winter",
-      "Kinderfreundlich"
-    ],
-    "ingredients": [
-      {
-        "name": "Kokosöl",
-        "amount": 1,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Schalotte",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Knoblauchzehen",
-        "amount": 1,
-        "unit": "Zehe",
-        "perPortions": 4
-      },
-      {
-        "name": "Zitronengras",
-        "amount": 2,
-        "unit": "Stängel",
-        "perPortions": 4
-      },
-      {
-        "name": "Rote Currypaste",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Gemüsebouillon",
-        "amount": 0.5,
-        "unit": "l",
-        "perPortions": 4
-      },
-      {
-        "name": "Kokosmilch",
-        "amount": 2.5,
-        "unit": "dl",
-        "perPortions": 4
-      },
-      {
-        "name": "Sojasauce",
-        "amount": 3,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Tofu nature",
-        "amount": 220,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Karotten",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Breite Reisnudeln",
-        "amount": 125,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Mungbohnensprossen",
-        "amount": 100,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Rote Chilis",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Limettenblätter",
-        "amount": 2,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Thai-Basilikum",
-        "amount": 0.5,
-        "unit": "Bund",
-        "perPortions": 4
-      },
-      {
-        "name": "Limetten",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 4
-      }
-    ],
-    "weatherType": "kalt",
-    "source": "MahlZeit",
-    "basePortions": 4,
-    "description": "Eine wohltuende asiatische Nudelsuppe mit zartem Tofu, kombiniert mit fernöstlichen Gewürzen, frischen Geschmacksnuancen und würziger Schärfe. Perfekt für eine schnelle und aromavolle Mahlzeit.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/1c475ced-8e43-4f74-9fd4-3e4d370886e1-1780954259698.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
-    "steps": [
-      "1. Schalotte würfeln, Knoblauchzehe und das Innere vom Zitronengras fein hacken. Tofu würfeln. Karotten in Streifen schneiden. Chili entkernen und in feine Ringe schneiden.",
-      "2. Kokosöl in einer Pfanne erwärmen und Schalotte, Knoblauch, Zitronengras, Kaffirlimettenblätter sowie Currypaste darin andämpfen.",
-      "3. Gemüsebouillon und Kokosmilch dazugiessen und aufkochen lassen.",
-      "4. Sojasauce, Karotten und Tofu in die Suppe geben, ca. 3 Minuten köcheln lassen.",
-      "5. Geraspelte oder in Stücken geschnittene Rüebli beigeben und etwa 3 Minuten köcheln lassen.",
-      "6. Reisnudeln nach Angabe auf der Verpackung kochen und in die Suppe geben.",
-      "7. Suppe mit Mungbohnensprossen, Chili, frischem Thai-Basilikum und einem Limettenschnitz garniert servieren."
-    ],
-    "dietCategory": "vegan"
-  },
-  {
-    "id": "rec-1780955620762-cmk4x",
-    "name": "Kürbis-Ingwer-Suppe",
-    "category": "Suppen, Eintöpfe & Currys",
-    "timeMinutes": 20,
-    "tags": [
-      "Vegetarisch",
-      "Vegan",
-      "Mealprep-geeignet",
-      "Kinderfreundlich",
-      "Herbst",
-      "Winter",
-      "Mittagsgericht",
-      "Abendgericht"
-    ],
-    "ingredients": [],
-    "weatherType": "kalt",
-    "source": "cuiseline",
-    "basePortions": 4,
-    "description": "",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/gro---sup-01-1-ku-rbis-kokos-suppe--1780955617506.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
-    "dietCategory": "vegan"
-  },
-  {
-    "id": "rec-1781043360228-i0pcq",
-    "name": "Eier in Senfsauce mit Blumenkohl-Kartoffel-Püree",
-    "category": "Vegetarische Hauptgerichte",
-    "timeMinutes": 40,
-    "tags": [
-      "Vegetarisch",
-      "Mittagsgericht",
-      "Abendgericht",
-      "Herbst",
-      "Frühling",
-      "Winter",
-      "Kinderfreundlich",
-      "Mealprep-geeignet"
-    ],
-    "ingredients": [
-      {
-        "name": "Blumenkohl",
-        "amount": 500,
-        "unit": "g",
-        "perPortions": 2
-      },
-      {
-        "name": "Kartoffeln, mehligkochend",
-        "amount": 250,
-        "unit": "g",
-        "perPortions": 2
-      },
-      {
-        "name": "Butter",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 2
-      },
-      {
-        "name": "Vollkorn-Dinkelmehl",
-        "amount": 1,
-        "unit": "EL",
-        "perPortions": 2
-      },
-      {
-        "name": "Gemüsebouillon",
-        "amount": 125,
-        "unit": "ml",
-        "perPortions": 2
-      },
-      {
-        "name": "Milch",
-        "amount": 60,
-        "unit": "ml",
-        "perPortions": 2
-      },
-      {
-        "name": "Senf",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 2
-      },
-      {
-        "name": "Eier",
-        "amount": 4,
-        "unit": "Stk",
-        "perPortions": 2
-      },
-      {
-        "name": "Frischkäse",
-        "amount": 100,
-        "unit": "g",
-        "perPortions": 2
-      },
-      {
-        "name": "Salz",
-        "amount": 1,
-        "unit": "Prise",
-        "perPortions": 2
-      },
-      {
-        "name": "Pfeffer",
-        "amount": 1,
-        "unit": "Prise",
-        "perPortions": 2
-      },
-      {
-        "name": "Muskatnuss",
-        "amount": 1,
-        "unit": "TL",
-        "perPortions": 2
-      },
-      {
-        "name": "Petersilie",
-        "amount": 4,
-        "unit": "Stängel",
-        "perPortions": 2
-      }
-    ],
-    "weatherType": "neutral",
-    "source": "MahlZeit",
-    "basePortions": 2,
-    "description": "Ein cremiges, klassisches Gericht mit zartem Blumenkohl und hartgekochten Eiern in würziger Senfsauce, garniert mit frischer Petersilie.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-06-1781043823176.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
-    "steps": [
-      "1. Blumenkohl rüsten, waschen und in kleine Röschen teilen. Kartoffeln schälen und in kleine Stücke schneiden.",
-      "2. Blumenkohl und Kartoffeln in ausreichend Wasser ca. 15–20 Minuten weich kochen.",
-      "3. Währenddessen Butter in einer Pfanne schmelzen. Mehl beigeben und kurz anschwitzen. Mit Bouillon und Milch ablöschen.",
-      "4. Senf einrühren und Sauce bei mittlerer Hitze ca. 10 Minuten köcheln lassen. Mit Salz und Pfeffer abschmecken.",
-      "5. Eier in kochendem Wasser ca. 8–9 Minuten hart kochen. Kalt abschrecken und schälen.",
-      "6. Blumenkohl und Kartoffeln abgiessen, gut ausdampfen lassen und pürieren.",
-      "7. Frischkäse unter das Püree rühren. Mit Salz, Pfeffer und Muskat abschmecken.",
-      "8. Petersilie waschen, trocken schütteln, Blätter abzupfen und fein hacken.",
-      "9. Blumenkohl-Kartoffel-Püree mit Senfsauce und Eiern anrichten. Mit Petersilie garnieren und servieren."
-    ],
-    "dietCategory": "vegetarian"
-  },
-  {
-    "id": "rec-1781388622099-a0uz6",
-    "name": "Tomaten-Mozzarella-Salat",
-    "category": "Salate & Bowls",
-    "timeMinutes": 10,
-    "tags": [
-      "Brunch",
-      "Mittagessen",
-      "Abendessen",
-      "Mealprep-geeignet",
-      "Kinderfreundlich",
-      "Resteverwertung",
-      "Budgetfreundlich",
-      "Für Gäste",
-      "Gut zum Mitnehmen",
-      "Ohne Kochen",
-      "Sommer",
-      "Italienisch",
-      "Mediterran"
-    ],
-    "ingredients": [
-      {
-        "name": "Tomaten (z.B. Ochsenherz)",
-        "amount": 4,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Mozzarella",
-        "amount": 2,
-        "unit": "Pkg",
-        "perPortions": 4
-      },
-      {
-        "name": "Olivenöl",
-        "amount": 4,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Balsamico-Essig",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Salz",
-        "amount": 1,
-        "unit": "Prise",
-        "perPortions": 4
-      },
-      {
-        "name": "Pfeffer",
-        "amount": 1,
-        "unit": "Prise",
-        "perPortions": 4
-      },
-      {
-        "name": "Basilikum",
-        "amount": 0.5,
-        "unit": "Bund",
-        "perPortions": 4
-      },
-      {
-        "name": "Brot",
-        "amount": 8,
-        "unit": "Scheibe",
-        "perPortions": 4
-      }
-    ],
-    "weatherType": "warm",
-    "source": "MahlZeit",
-    "basePortions": 4,
-    "description": "Insalata Caprese – sonnengereifte Tomaten, cremiger Mozzarella und frischer Basilikum: so einfach und fein schmeckt Sommer.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/bryony-elena-djgeisqeeiw-unsplash-1781388414561.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
-    "steps": [
-      "Tomaten und Mozzarella in Scheiben schneiden.",
-      "Tomaten- und Mozzarellascheiben abwechselnd auf Teller anrichten.",
-      "Mit Salz und Pfeffer würzen. Olivenöl und wenig Balsamico darüberträufeln.",
-      "Mit Basilikum garnieren und mit Brot servieren."
-    ],
-    "dietCategory": "vegetarian"
-  },
-  {
-    "id": "rec-1781389369119-naex6",
-    "name": "Tomatensalat mit Burrata",
-    "category": "Salate & Bowls",
-    "timeMinutes": 10,
-    "tags": [
-      "Brunch",
-      "Mittagessen",
-      "Abendessen",
-      "Mealprep-geeignet",
-      "Kinderfreundlich",
-      "Resteverwertung",
-      "Für Gäste",
-      "Gut zum Mitnehmen",
-      "Ohne Kochen",
-      "Sommer",
-      "Italienisch",
-      "Mediterran"
-    ],
-    "ingredients": [
-      {
-        "name": "Tomaten (z.B. Ochsenherz oder Datteltomaten)",
-        "amount": 800,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Burrata ",
-        "amount": 4,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Basilikumpesto",
-        "amount": 4,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Pinienkerne",
-        "amount": 4,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Basilikum",
-        "amount": 5,
-        "unit": "Bund",
-        "perPortions": 4
-      },
-      {
-        "name": "Brot",
-        "amount": 8,
-        "unit": "Scheibe",
-        "perPortions": 4
-      }
-    ],
-    "weatherType": "warm",
-    "source": "MahlZeit",
-    "basePortions": 4,
-    "description": "Sommer auf dem Teller: sonnengereifte Tomaten, cremige Burrata und frisches Pesto.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/sebastian-coman-photography-a8ztjz57rvm-unsplash-1781388927194.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
-    "steps": [
-      "Tomaten in Scheiben schneiden bzw. Datteltomaten halbieren.",
-      "Tomaten zusammen mit Burrata auf Tellern anrichten.",
-      "Pesto darüberträufeln. Mit Pinienkernen und Basilikumblättern garnieren.",
-      "Mit Brot servieren."
-    ],
-    "dietCategory": "vegetarian"
-  },
-  {
-    "id": "rec-1781389844282-5ken5",
-    "name": "Grillieren",
-    "category": "Fleisch & Geflügel",
-    "timeMinutes": 30,
-    "tags": [
-      "Mittagessen",
-      "Abendessen",
-      "Resteverwertung",
-      "Kinderfreundlich",
-      "Für Gäste",
-      "Grillgericht",
-      "Sommer"
-    ],
-    "ingredients": [],
-    "weatherType": "neutral",
-    "source": "MahlZeit",
-    "basePortions": 4,
-    "description": "",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/z-grills-australia-yzqd7lcwasq-unsplash-1781389837817.jpg",
-    "imageZutaten": null,
-    "imageKochen": null
   }
 ]

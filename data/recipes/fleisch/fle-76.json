@@ -1,0 +1,177 @@
+{
+  "id": "fle-76",
+  "name": "Klassisches Pulled Pork",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 360,
+  "basePortions": 8,
+  "weatherType": "warm",
+  "source": "fooby.ch",
+  "sourceType": "imported",
+  "approved": false,
+  "description": "Zart zerzupftes Schweinsbraten-Highlight vom Grill – mit rauchiger Whisky-Honig-Marinade und stundenlangem Schmoren zu einem unwiderstehlichen Pulled Pork veredelt.",
+  "tags": [
+    "Abendessen",
+    "Für Gäste",
+    "Grillgericht",
+    "Ofengericht",
+    "Amerikanisch",
+    "Sommer",
+    "Mealprep-geeignet",
+    "Einfrierbar"
+  ],
+  "ingredients": [
+    {
+      "name": "Schweinsbraten",
+      "amount": 2.2,
+      "unit": "kg",
+      "perPortions": 8
+    },
+    {
+      "name": "Räuchermehl",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 8
+    },
+    {
+      "name": "Ketchup",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 8
+    },
+    {
+      "name": "Senf",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 8
+    },
+    {
+      "name": "Whisky",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 8
+    },
+    {
+      "name": "Flüssiger Honig",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 8
+    },
+    {
+      "name": "Paprikapulver",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 8
+    },
+    {
+      "name": "Chiliflocken",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 8
+    },
+    {
+      "name": "Gemahlene Koriandersamen",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 8
+    },
+    {
+      "name": "Salz",
+      "amount": 1.5,
+      "unit": "EL",
+      "perPortions": 8
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Fleisch",
+      "ingredients": [
+        {
+          "name": "Schweinsbraten",
+          "amount": 2.2,
+          "unit": "kg",
+          "perPortions": 8
+        },
+        {
+          "name": "Räuchermehl",
+          "amount": 100,
+          "unit": "g",
+          "perPortions": 8
+        }
+      ]
+    },
+    {
+      "name": "Marinade",
+      "ingredients": [
+        {
+          "name": "Ketchup",
+          "amount": 50,
+          "unit": "g",
+          "perPortions": 8
+        },
+        {
+          "name": "Senf",
+          "amount": 30,
+          "unit": "g",
+          "perPortions": 8
+        },
+        {
+          "name": "Whisky",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 8
+        },
+        {
+          "name": "Flüssiger Honig",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 8
+        },
+        {
+          "name": "Paprikapulver",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 8
+        },
+        {
+          "name": "Chiliflocken",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 8
+        },
+        {
+          "name": "Gemahlene Koriandersamen",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 8
+        },
+        {
+          "name": "Salz",
+          "amount": 1.5,
+          "unit": "EL",
+          "perPortions": 8
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Den Schweinsbraten etwa 1 Stunde vor der Zubereitung aus dem Kühlschrank nehmen und mit Küchenpapier trocken tupfen.",
+    "Für die Marinade Ketchup, Senf, Whisky, Honig, Paprikapulver, Chiliflocken, Koriander und Salz in einer Schüssel gut verrühren.",
+    "Das Fleisch rundherum mit der Hälfte der Marinade einstreichen. Die restliche Marinade beiseitelegen.",
+    "Das Räuchermehl in eine Aluschale geben und auf dem Grill bei schwacher Hitze (ca. 150 °C) etwa 5 Minuten rösten, bis sich Rauch entwickelt. Die Schale anschliessend an den Grillrand schieben.",
+    "Den Schweinsbraten auf den Grill legen und zugedeckt ca. 1 Stunde grillieren. Das Fleisch dabei einmal wenden und mit der restlichen Marinade bestreichen.",
+    "Den Braten vom Grill nehmen, fest in Alufolie einwickeln und auf ein Backblech legen.",
+    "Den Backofen auf 140 °C Ober-/Unterhitze vorheizen. Das eingepackte Fleisch in der Mitte des Ofens ca. 4½ Stunden garen.",
+    "Den Braten aus dem Ofen nehmen und in der Folie noch ca. 15 Minuten ruhen lassen.",
+    "Die Folie öffnen und das Fleisch mit zwei Gabeln in feine Fasern zerzupfen."
+  ],
+  "tips": "Pulled Pork lässt sich hervorragend vorbereiten und einfrieren. Serviere es in Burger-Brötchen mit Coleslaw und BBQ-Sauce. Wer keinen Grill hat, kann den Braten direkt (ohne Räucherschritt) in Alufolie eingepackt im Ofen garen – das Räuchermehl kann in dem Fall weggelassen oder durch etwas geräuchertes Paprikapulver ersetzt werden.",
+  "dietCategory": "meat",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "senf",
+    "sulfite"
+  ]
+}

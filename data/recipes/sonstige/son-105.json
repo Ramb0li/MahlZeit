@@ -1,0 +1,218 @@
+{
+  "id": "son-105",
+  "name": "Vegi-Burger mit Bohnen und Süsskartoffeln",
+  "category": "Wraps, Sandwiches & Burger",
+  "timeMinutes": 60,
+  "basePortions": 4,
+  "weatherType": "warm",
+  "source": "fooby.ch",
+  "sourceType": "imported",
+  "approved": false,
+  "description": "Saftige Burger-Patties aus weissen Bohnen und Süsskartoffeln, verfeinert mit einer frischen Gurkensauce – ein Grillgenuss ganz ohne Fleisch.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Grillgericht",
+    "Vegetarisch",
+    "Sommer",
+    "Für Gäste"
+  ],
+  "ingredients": [
+    {
+      "name": "Burger-Brötchen",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Weisse Bohnen (Dose, abgetropft)",
+      "amount": 1,
+      "unit": "Dose",
+      "perPortions": 4
+    },
+    {
+      "name": "Süsskartoffeln (gerieben oder fein gewürfelt)",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebeln (fein gehackt)",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch (fein gehackt)",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Geschrotete Leinsamen",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Sonnenblumenkerne",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Scharfes Currypulver",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Snack-Gurken",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Saurer Halbrahm",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Micro Greens",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Patties",
+      "ingredients": [
+        {
+          "name": "Weisse Bohnen (Dose, abgetropft)",
+          "amount": 1,
+          "unit": "Dose",
+          "perPortions": 4
+        },
+        {
+          "name": "Süsskartoffeln (gerieben oder fein gewürfelt)",
+          "amount": 200,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Zwiebeln (fein gehackt)",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Knoblauch (fein gehackt)",
+          "amount": 1,
+          "unit": "Zehe",
+          "perPortions": 4
+        },
+        {
+          "name": "Geschrotete Leinsamen",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Sonnenblumenkerne",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Scharfes Currypulver",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Gurkensauce",
+      "ingredients": [
+        {
+          "name": "Snack-Gurken",
+          "amount": 150,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Saurer Halbrahm",
+          "amount": 100,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zusammenstellen",
+      "ingredients": [
+        {
+          "name": "Burger-Brötchen",
+          "amount": 4,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Micro Greens",
+          "amount": 30,
+          "unit": "g",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Die abgetropften Bohnen mit einer Gabel grob zerdrücken. Süsskartoffeln, Zwiebeln, Knoblauch, Sonnenblumenkerne, Leinsamen und Currypulver beigeben, mit Salz würzen und alles von Hand zu einer kompakten Masse kneten.",
+    "Die Masse in vier gleich grosse Portionen teilen und daraus runde, leicht flach gedrückte Patties formen.",
+    "Die Hälfte der Snack-Gurken längs in dünne Scheiben schneiden und beiseite stellen. Die restlichen Gurken fein hacken und mit dem sauren Halbrahm sowie dem Olivenöl verrühren. Mit Salz abschmecken.",
+    "Den Grill auf mittlere Hitze (ca. 220 °C) vorheizen. Die Patties mit etwas Olivenöl bestreichen und beidseitig je ca. 10 Minuten zugedeckt grillieren, bis sie durch und leicht gebräunt sind.",
+    "Die Brötchenhälften in den letzten ca. 1 Minute kurz mitgrillieren.",
+    "Die Brötchenböden grosszügig mit der Gurkensauce bestreichen, je ein Pattie darauflegen und mit den Gurkenscheiben sowie den Micro Greens belegen. Nochmals etwas Sauce darüber geben und den Brötchendeckel aufsetzen."
+  ],
+  "tips": "Die Patties lassen sich auch in einer beschichteten Pfanne mit etwas Öl bei mittlerer Hitze beidseitig je ca. 5 Minuten braten. Für eine vegane Variante den sauren Halbrahm durch einen pflanzlichen Joghurt ersetzen.",
+  "dietCategory": "vegetarian",
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch"
+  ]
+}
