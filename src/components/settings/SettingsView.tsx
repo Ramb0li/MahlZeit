@@ -119,6 +119,16 @@ interface SettingsViewProps {
   onGroupChange?: (group: Group) => void;
 }
 
+function CatLabel({ label }: { label: string }) {
+  return (
+    <div className="pt-3 pb-1">
+      <p className="text-xs font-bold uppercase tracking-widest px-1" style={{ color: '#c49a6c' }}>
+        {label}
+      </p>
+    </div>
+  );
+}
+
 export function SettingsView({
   initialSettings,
   initialConstraints,
@@ -439,75 +449,8 @@ export function SettingsView({
     <SectionCtx.Provider value={{ openSections, toggleSection }}>
     <div className="max-w-3xl space-y-3">
 
-      {/* ── Dein Plan ────────────────────────────────────────────────────── */}
-      <div style={{ ...sectionCard, padding: '20px 24px' }}>
-        <div className="flex items-center justify-between mb-1">
-          <h2 style={h2Style}>Dein Plan</h2>
-          <span
-            className="text-xs font-semibold px-2.5 py-1 rounded-full"
-            style={isPremium
-              ? { backgroundColor: 'var(--accent-tint)', color: 'var(--accent)' }
-              : { backgroundColor: '#fef3cd', color: '#9a7a1e' }
-            }
-          >
-            {PLAN_LABELS[userPlan] ?? userPlan}
-          </span>
-        </div>
-        <p className="text-xs mb-4" style={{ color: '#9c8c84' }}>
-          {isPremium
-            ? userPlan === 'lifetime'
-              ? 'Danke — du hast lebenslangen Zugang zu MahlZeit.'
-              : 'Dein Abo ist aktiv.'
-            : 'Kostenlose Testphase — upgrade für unbegrenzten Zugang.'
-          }
-        </p>
-
-        {!isPremium && (
-          <>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-3">
-              {([
-                { plan: 'abo',      name: 'Monatsabo',  price: 'CHF 4',   per: '/ Monat',       desc: 'Monatlich kündbar' },
-                { plan: 'yearly',   name: 'Jahresabo',  price: 'CHF 40',  per: '/ Jahr',         desc: '2 Monate gratis' },
-                { plan: 'lifetime', name: 'Lifetime',   price: 'CHF 129', per: 'einmalig',       desc: 'Für immer', featured: true },
-              ] as const).map(({ plan, name, price, per, desc, ...rest }) => { const featured = 'featured' in rest && rest.featured; return (
-                <button
-                  key={plan}
-                  onClick={() => handleCheckout(plan)}
-                  disabled={checkoutLoading !== null}
-                  className="flex flex-col items-start p-4 rounded-2xl border-2 text-left transition-all"
-                  style={featured
-                    ? { borderColor: '#d9543b', backgroundColor: '#fef7f5' }
-                    : { borderColor: '#e0d8ce', backgroundColor: '#fff9f3' }
-                  }
-                >
-                  {featured && (
-                    <span className="text-[10px] font-bold uppercase tracking-wide mb-1.5 px-2 py-0.5 rounded-full" style={{ backgroundColor: '#d9543b', color: '#fff' }}>
-                      Beliebt
-                    </span>
-                  )}
-                  <p className="font-semibold text-sm" style={{ color: '#271f1a' }}>{name}</p>
-                  <p className="text-lg font-bold mt-0.5" style={{ color: featured ? '#d9543b' : '#271f1a' }}>{price}</p>
-                  <p className="text-xs" style={{ color: '#9a8c80' }}>{per} · {desc}</p>
-                  <span
-                    className="mt-3 w-full text-center text-xs font-semibold py-1.5 rounded-lg transition-opacity"
-                    style={{
-                      backgroundColor: featured ? '#d9543b' : '#271f1a',
-                      color: '#fff',
-                      opacity: checkoutLoading === plan ? 0.6 : 1,
-                    }}
-                  >
-                    {checkoutLoading === plan ? 'Weiterleitung...' : 'Upgrade'}
-                  </span>
-                </button>
-              );} )}
-            </div>
-            {checkoutError && (
-              <p className="text-xs" style={{ color: '#c62828' }}>{checkoutError}</p>
-            )}
-          </>
-        )}
-      </div>
-
+      {/* ── Haushalt & Ernährung ─────────────────────────────────────────── */}
+      <CatLabel label="Haushalt & Ernährung" />
       {/* ── Haushaltsgrösse ──────────────────────────────────────────────── (war unten) */}
       <Section id="household" title="Haushaltsgrösse" sub={`Gesamtportionen: ${totalPortions()}`}>
         <div className="space-y-4">
@@ -705,6 +648,7 @@ export function SettingsView({
         })()}
       </Section>
 
+      <CatLabel label="Wochenplan" />
       {/* ── Mahlzeiten ───────────────────────────────────────────────────── (verschoben) */}
       <Section id="meals" title="Mahlzeiten im Wochenplan" sub="Klicke auf eine Mahlzeit um sie ein- oder auszublenden.">
         <div className="flex flex-col sm:grid sm:grid-cols-3 gap-3">
@@ -736,6 +680,351 @@ export function SettingsView({
           })}
         </div>
       </Section>
+
+      {/* ── Wochenstartag ────────────────────────────────────────────────── */}
+      <Section id="weekswitch" title="Wochenstartag" sub="Wähle, mit welchem Tag deine Planungswoche beginnt. KW basiert auf ISO-Standard (Donnerstag-Regel).">
+        <div className="flex flex-wrap gap-2">
+          {WEEK_SWITCH_OPTIONS.map(({ value, label }) => {
+            const isActive = (settings.weekSwitchDay ?? 1) === value;
+            return (
+              <button
+                key={value}
+                onClick={() => setSettings(s => ({ ...s, weekSwitchDay: value }))}
+                className="px-4 py-2 rounded-xl text-sm font-semibold transition-all border-2"
+                style={isActive
+                  ? { borderColor: 'var(--accent)', backgroundColor: 'var(--accent-tint)', color: 'var(--accent)' }
+                  : { borderColor: '#e0d8ce', color: '#5a4e48' }
+                }
+              >
+                {label}
+              </button>
+            );
+          })}
+        </div>
+      </Section>
+
+      {/* ── Events & Constraints ─────────────────────────────────────────── */}
+      <Section
+        id="constraints"
+        title="Wöchentliche Events & Constraints"
+        sub="Im Wochenplan kannst du Events für eine einzelne Woche durchstreichen."
+        action={
+          <button
+            onClick={addConstraint}
+            className="flex items-center gap-1 text-xs font-semibold transition-opacity hover:opacity-70"
+            style={{ color: 'var(--accent)' }}
+          >
+            <Plus size={14} />
+            Event hinzufügen
+          </button>
+        }
+      >
+        <div className="space-y-3">
+          {constraints.map((c) => (
+            <div key={c.id} className="p-4 rounded-xl space-y-3" style={{ backgroundColor: '#f7f4ee' }}>
+              <div className="flex items-center gap-3 flex-wrap">
+                <select
+                  value={c.dayOfWeek}
+                  onChange={(e) => updateConstraint(c.id, { dayOfWeek: Number(e.target.value) })}
+                  style={{ ...inputStyle, padding: '6px 8px' }}
+                >
+                  {DAY_LABELS.map((d, i) => <option key={i} value={i + 1}>{d}</option>)}
+                </select>
+                <input
+                  type="text" value={c.label}
+                  onChange={(e) => updateConstraint(c.id, { label: e.target.value })}
+                  style={{ ...inputStyle, flex: 1, minWidth: '96px', padding: '6px 8px' }}
+                  placeholder="Event-Name"
+                />
+                <select
+                  value={c.constraint}
+                  onChange={(e) => updateConstraint(c.id, { constraint: e.target.value as DayConstraint['constraint'] })}
+                  style={{ ...inputStyle, padding: '6px 8px' }}
+                >
+                  {Object.entries(CONSTRAINT_LABELS).map(([k, v]) => <option key={k} value={k}>{v}</option>)}
+                </select>
+                {c.constraint === 'maxTime' && (
+                  <div className="flex items-center gap-1">
+                    <input
+                      type="number" value={c.maxTimeMinutes ?? 30} min={5} max={120} step={5}
+                      onChange={(e) => updateConstraint(c.id, { maxTimeMinutes: Number(e.target.value) })}
+                      style={{ ...inputStyle, width: '64px', textAlign: 'center', padding: '6px 8px' }}
+                    />
+                    <span className="text-xs" style={{ color: '#9c8c84' }}>min</span>
+                  </div>
+                )}
+                <div className="flex gap-1">
+                  {PRESET_COLORS.map((color) => (
+                    <button
+                      key={color}
+                      type="button"
+                      onClick={() => updateConstraint(c.id, { color })}
+                      className="w-5 h-5 rounded-full transition-transform"
+                      style={{
+                        backgroundColor: color,
+                        transform: c.color === color ? 'scale(1.25)' : 'scale(1)',
+                        outline: c.color === color ? '2px solid #9c8c84' : 'none',
+                        outlineOffset: '2px',
+                      }}
+                    />
+                  ))}
+                </div>
+                <button
+                  onClick={() => removeConstraint(c.id)}
+                  className="p-1.5 rounded-lg transition-colors"
+                  style={{ color: '#9c8c84' }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.backgroundColor = '#fce4ec'; (e.currentTarget as HTMLElement).style.color = '#c62828'; }}
+                  onMouseLeave={e => { (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent'; (e.currentTarget as HTMLElement).style.color = '#9c8c84'; }}
+                >
+                  <Trash2 size={14} />
+                </button>
+              </div>
+            </div>
+          ))}
+          {constraints.length === 0 && (
+            <p className="text-sm text-center py-4" style={{ color: '#9c8c84' }}>Noch keine Events. Klicke auf &quot;Event hinzufügen&quot;.</p>
+          )}
+        </div>
+      </Section>
+
+      <CatLabel label="App & Design" />
+      {/* ── Theme picker ─────────────────────────────────────────────────── */}
+      <Section id="theme" title="Design" sub="Sofort angewendet.">
+        <div className="mz-theme-tiles">
+          {THEME_DEFS.map((t) => {
+            const activeTheme = toDataTheme(settings.theme as ThemeId);
+            const isActive = activeTheme === t.dataTheme;
+            return (
+              <button
+                key={t.id}
+                onClick={() => {
+                  const newSettings = { ...settings, theme: t.id as ThemeId };
+                  setSettings(newSettings);
+                  document.documentElement.setAttribute('data-theme', t.dataTheme);
+                  try { localStorage.setItem('mz-theme', t.dataTheme); } catch {}
+                }}
+                className={`mz-theme-tile${isActive ? ' on' : ''}`}
+              >
+                <div className="mz-theme-preview" style={{ background: t.previewBg }}>
+                  <div className="mz-theme-accent-bar" style={{ background: t.accentColor }} />
+                  {isActive && (
+                    <div className="mz-theme-check">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke={t.accentColor} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M20 6 9 17l-5-5" />
+                      </svg>
+                    </div>
+                  )}
+                </div>
+                <div className="mz-theme-info">
+                  <span className="mz-theme-name">{t.label}</span>
+                  <span className="mz-theme-mode">{t.mode}</span>
+                </div>
+              </button>
+            );
+          })}
+        </div>
+      </Section>
+
+      {/* ── Weather ──────────────────────────────────────────────────────── */}
+      <Section id="weather" title="Standort und Wetter" sub="MahlZeit schlägt bei warmem Wetter leichte Gerichte vor — bei Kälte Wärmendes.">
+        <div>
+          <label style={labelStyle}>Standort</label>
+          <div ref={locationWrapperRef} style={{ position: 'relative' }}>
+            <input
+              type="text"
+              value={settings.weather.location}
+              onChange={(e) => {
+                const val = e.target.value;
+                setSettings((s) => ({ ...s, weather: { ...s.weather, location: val } }));
+                if (locationDebounceRef.current) clearTimeout(locationDebounceRef.current);
+                if (val.trim().length >= 2) {
+                  setLocationLoading(true);
+                  locationDebounceRef.current = setTimeout(() => fetchLocationSuggestions(val), 280);
+                } else {
+                  setLocationSuggestions([]);
+                  setShowSuggestions(false);
+                  setLocationLoading(false);
+                }
+              }}
+              onFocus={() => { if (locationSuggestions.length > 0) setShowSuggestions(true); }}
+              onKeyDown={(e) => { if (e.key === 'Escape') setShowSuggestions(false); }}
+              placeholder="z.B. Luzern, Zürich, Bern …"
+              style={{ ...inputStyle, width: '100%', paddingRight: locationLoading ? '30px' : undefined }}
+              autoComplete="off"
+            />
+            {locationLoading && (
+              <span style={{ position: 'absolute', right: '10px', top: '50%', transform: 'translateY(-50%)', fontSize: '11px', color: '#9c8c84' }}>
+                …
+              </span>
+            )}
+            {showSuggestions && locationSuggestions.length > 0 && (
+              <div style={{
+                position: 'absolute', top: 'calc(100% + 4px)', left: 0, right: 0, zIndex: 50,
+                backgroundColor: '#fff', border: '1px solid #e0d8ce', borderRadius: '12px',
+                boxShadow: '0 4px 16px rgba(44,36,32,0.12)', overflow: 'hidden',
+              }}>
+                {locationSuggestions.map((r, i) => (
+                  <button
+                    key={i}
+                    type="button"
+                    onMouseDown={(e) => {
+                      e.preventDefault();
+                      setSettings((s) => ({ ...s, weather: { ...s.weather, location: r.name } }));
+                      setShowSuggestions(false);
+                      setLocationSuggestions([]);
+                    }}
+                    className="w-full text-left px-4 py-2.5 transition-colors"
+                    style={{ borderBottom: i < locationSuggestions.length - 1 ? '1px solid #f0ebe3' : 'none' }}
+                    onMouseEnter={e => { (e.currentTarget as HTMLElement).style.backgroundColor = '#f7f4ee'; }}
+                    onMouseLeave={e => { (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent'; }}
+                  >
+                    <span style={{ fontSize: '13px', fontWeight: 600, color: '#2c2420' }}>{r.name}</span>
+                    {(r.admin1 || r.country) && (
+                      <span style={{ fontSize: '11px', color: '#9c8c84', marginLeft: '6px' }}>
+                        {[r.admin1, r.country].filter(Boolean).join(', ')}
+                      </span>
+                    )}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+      </Section>
+
+      {/* ── Aktionen ─────────────────────────────────────────────────────── */}
+      <Section id="promotions" title="Aktionen — Supermärkte" sub="Wähle deine Einkaufsläden. Zutaten im Angebot erscheinen grün markiert in der Einkaufsliste.">
+        <div className="space-y-4">
+          {/* Store toggle grid */}
+          <div className="grid grid-cols-2 gap-2">
+            {SWISS_STORES.map(({ id, name, color, bg }) => {
+              const enabled = (settings.promotions?.enabledStores ?? []).includes(id);
+              return (
+                <button
+                  key={id}
+                  type="button"
+                  onClick={() => {
+                    setSettings((s) => {
+                      const current = s.promotions?.enabledStores ?? [];
+                      const next = enabled
+                        ? current.filter((x) => x !== id)
+                        : [...current, id];
+                      return { ...s, promotions: { ...s.promotions, enabledStores: next } };
+                    });
+                  }}
+                  className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-left transition-all"
+                  style={{
+                    border: enabled ? `1.5px solid ${color}` : '1.5px solid #e0d8ce',
+                    backgroundColor: enabled ? bg : '#f7f4ee',
+                  }}
+                >
+                  <span
+                    className="w-2 h-2 rounded-full flex-shrink-0"
+                    style={{ backgroundColor: enabled ? color : '#d0c8be' }}
+                  />
+                  <span className="text-sm font-medium flex-1" style={{ color: enabled ? '#2c2420' : '#9c8c84' }}>
+                    {name}
+                  </span>
+                  {enabled && (
+                    <span className="text-xs font-bold" style={{ color }}>✓</span>
+                  )}
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Refresh button + last-updated */}
+          <div className="flex items-center justify-between gap-3 pt-1">
+            <p className="text-xs" style={{ color: '#9c8c84' }}>
+              {promoLastUpdated
+                ? `Aktualisiert: ${new Date(promoLastUpdated).toLocaleString('de-CH', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' })}`
+                : 'Noch nicht aktualisiert'}
+            </p>
+            <button
+              type="button"
+              onClick={handlePromoRefresh}
+              disabled={promoRefreshing || (settings.promotions?.enabledStores ?? []).length === 0}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold transition-all"
+              style={{ backgroundColor: '#2c2420', color: '#fff', opacity: promoRefreshing ? 0.6 : 1 }}
+            >
+              <RefreshCw size={12} className={promoRefreshing ? 'animate-spin' : ''} />
+              {promoRefreshing ? 'Lädt...' : 'Jetzt aktualisieren'}
+            </button>
+          </div>
+          {promoError && (
+            <p className="text-xs" style={{ color: '#c62828' }}>{promoError}</p>
+          )}
+        </div>
+      </Section>
+
+      <CatLabel label="Konto" />
+      <div style={{ ...sectionCard, padding: '20px 24px' }}>
+        <div className="flex items-center justify-between mb-1">
+          <h2 style={h2Style}>Dein Plan</h2>
+          <span
+            className="text-xs font-semibold px-2.5 py-1 rounded-full"
+            style={isPremium
+              ? { backgroundColor: 'var(--accent-tint)', color: 'var(--accent)' }
+              : { backgroundColor: '#fef3cd', color: '#9a7a1e' }
+            }
+          >
+            {PLAN_LABELS[userPlan] ?? userPlan}
+          </span>
+        </div>
+        <p className="text-xs mb-4" style={{ color: '#9c8c84' }}>
+          {isPremium
+            ? userPlan === 'lifetime'
+              ? 'Danke — du hast lebenslangen Zugang zu MahlZeit.'
+              : 'Dein Abo ist aktiv.'
+            : 'Kostenlose Testphase — upgrade für unbegrenzten Zugang.'
+          }
+        </p>
+
+        {!isPremium && (
+          <>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-3">
+              {([
+                { plan: 'abo',      name: 'Monatsabo',  price: 'CHF 4',   per: '/ Monat',       desc: 'Monatlich kündbar' },
+                { plan: 'yearly',   name: 'Jahresabo',  price: 'CHF 40',  per: '/ Jahr',         desc: '2 Monate gratis' },
+                { plan: 'lifetime', name: 'Lifetime',   price: 'CHF 129', per: 'einmalig',       desc: 'Für immer', featured: true },
+              ] as const).map(({ plan, name, price, per, desc, ...rest }) => { const featured = 'featured' in rest && rest.featured; return (
+                <button
+                  key={plan}
+                  onClick={() => handleCheckout(plan)}
+                  disabled={checkoutLoading !== null}
+                  className="flex flex-col items-start p-4 rounded-2xl border-2 text-left transition-all"
+                  style={featured
+                    ? { borderColor: '#d9543b', backgroundColor: '#fef7f5' }
+                    : { borderColor: '#e0d8ce', backgroundColor: '#fff9f3' }
+                  }
+                >
+                  {featured && (
+                    <span className="text-[10px] font-bold uppercase tracking-wide mb-1.5 px-2 py-0.5 rounded-full" style={{ backgroundColor: '#d9543b', color: '#fff' }}>
+                      Beliebt
+                    </span>
+                  )}
+                  <p className="font-semibold text-sm" style={{ color: '#271f1a' }}>{name}</p>
+                  <p className="text-lg font-bold mt-0.5" style={{ color: featured ? '#d9543b' : '#271f1a' }}>{price}</p>
+                  <p className="text-xs" style={{ color: '#9a8c80' }}>{per} · {desc}</p>
+                  <span
+                    className="mt-3 w-full text-center text-xs font-semibold py-1.5 rounded-lg transition-opacity"
+                    style={{
+                      backgroundColor: featured ? '#d9543b' : '#271f1a',
+                      color: '#fff',
+                      opacity: checkoutLoading === plan ? 0.6 : 1,
+                    }}
+                  >
+                    {checkoutLoading === plan ? 'Weiterleitung...' : 'Upgrade'}
+                  </span>
+                </button>
+              );} )}
+            </div>
+            {checkoutError && (
+              <p className="text-xs" style={{ color: '#c62828' }}>{checkoutError}</p>
+            )}
+          </>
+        )}
+      </div>
 
       {/* ── Familie & Mitglieder ─────────────────────────────────────────── */}
       {group && (
@@ -900,289 +1189,6 @@ export function SettingsView({
           </div>
         </Section>
       )}
-
-      {/* ── Theme picker ─────────────────────────────────────────────────── */}
-      <Section id="theme" title="Design" sub="Sofort angewendet.">
-        <div className="mz-theme-tiles">
-          {THEME_DEFS.map((t) => {
-            const activeTheme = toDataTheme(settings.theme as ThemeId);
-            const isActive = activeTheme === t.dataTheme;
-            return (
-              <button
-                key={t.id}
-                onClick={() => {
-                  const newSettings = { ...settings, theme: t.id as ThemeId };
-                  setSettings(newSettings);
-                  document.documentElement.setAttribute('data-theme', t.dataTheme);
-                  try { localStorage.setItem('mz-theme', t.dataTheme); } catch {}
-                }}
-                className={`mz-theme-tile${isActive ? ' on' : ''}`}
-              >
-                <div className="mz-theme-preview" style={{ background: t.previewBg }}>
-                  <div className="mz-theme-accent-bar" style={{ background: t.accentColor }} />
-                  {isActive && (
-                    <div className="mz-theme-check">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke={t.accentColor} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M20 6 9 17l-5-5" />
-                      </svg>
-                    </div>
-                  )}
-                </div>
-                <div className="mz-theme-info">
-                  <span className="mz-theme-name">{t.label}</span>
-                  <span className="mz-theme-mode">{t.mode}</span>
-                </div>
-              </button>
-            );
-          })}
-        </div>
-      </Section>
-
-      {/* ── Week switch day ──────────────────────────────────────────────── */}
-      <Section id="weekswitch" title="Wochenansicht" sub="Ab welchem Wochentag soll automatisch die nächste Woche angezeigt werden?">
-        <div className="flex flex-wrap gap-2">
-          {WEEK_SWITCH_OPTIONS.map(({ value, label }) => {
-            const isActive = (settings.weekSwitchDay ?? 0) === value;
-            return (
-              <button
-                key={value}
-                onClick={() => setSettings(s => ({ ...s, weekSwitchDay: value }))}
-                className="px-4 py-2 rounded-xl text-sm font-semibold transition-all border-2"
-                style={isActive
-                  ? { borderColor: 'var(--accent)', backgroundColor: 'var(--accent-tint)', color: 'var(--accent)' }
-                  : { borderColor: '#e0d8ce', color: '#5a4e48' }
-                }
-              >
-                {label}
-              </button>
-            );
-          })}
-        </div>
-        <p className="text-xs mt-3" style={{ color: '#9c8c84' }}>
-          Standard: Sonntag — ab Sonntag wird die nächste Woche angezeigt.
-        </p>
-      </Section>
-
-
-      {/* ── Allergien & Abneigungen ──────────────────────────────────────── */}
-
-      {/* ── Household ────────────────────────────────────────────────────── */}
-
-      {/* ── Weather ──────────────────────────────────────────────────────── */}
-      <Section id="weather" title="Standort und Wetter" sub="MahlZeit schlägt bei warmem Wetter leichte Gerichte vor — bei Kälte Wärmendes.">
-        <div>
-          <label style={labelStyle}>Standort</label>
-          <div ref={locationWrapperRef} style={{ position: 'relative' }}>
-            <input
-              type="text"
-              value={settings.weather.location}
-              onChange={(e) => {
-                const val = e.target.value;
-                setSettings((s) => ({ ...s, weather: { ...s.weather, location: val } }));
-                if (locationDebounceRef.current) clearTimeout(locationDebounceRef.current);
-                if (val.trim().length >= 2) {
-                  setLocationLoading(true);
-                  locationDebounceRef.current = setTimeout(() => fetchLocationSuggestions(val), 280);
-                } else {
-                  setLocationSuggestions([]);
-                  setShowSuggestions(false);
-                  setLocationLoading(false);
-                }
-              }}
-              onFocus={() => { if (locationSuggestions.length > 0) setShowSuggestions(true); }}
-              onKeyDown={(e) => { if (e.key === 'Escape') setShowSuggestions(false); }}
-              placeholder="z.B. Luzern, Zürich, Bern …"
-              style={{ ...inputStyle, width: '100%', paddingRight: locationLoading ? '30px' : undefined }}
-              autoComplete="off"
-            />
-            {locationLoading && (
-              <span style={{ position: 'absolute', right: '10px', top: '50%', transform: 'translateY(-50%)', fontSize: '11px', color: '#9c8c84' }}>
-                …
-              </span>
-            )}
-            {showSuggestions && locationSuggestions.length > 0 && (
-              <div style={{
-                position: 'absolute', top: 'calc(100% + 4px)', left: 0, right: 0, zIndex: 50,
-                backgroundColor: '#fff', border: '1px solid #e0d8ce', borderRadius: '12px',
-                boxShadow: '0 4px 16px rgba(44,36,32,0.12)', overflow: 'hidden',
-              }}>
-                {locationSuggestions.map((r, i) => (
-                  <button
-                    key={i}
-                    type="button"
-                    onMouseDown={(e) => {
-                      e.preventDefault();
-                      setSettings((s) => ({ ...s, weather: { ...s.weather, location: r.name } }));
-                      setShowSuggestions(false);
-                      setLocationSuggestions([]);
-                    }}
-                    className="w-full text-left px-4 py-2.5 transition-colors"
-                    style={{ borderBottom: i < locationSuggestions.length - 1 ? '1px solid #f0ebe3' : 'none' }}
-                    onMouseEnter={e => { (e.currentTarget as HTMLElement).style.backgroundColor = '#f7f4ee'; }}
-                    onMouseLeave={e => { (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent'; }}
-                  >
-                    <span style={{ fontSize: '13px', fontWeight: 600, color: '#2c2420' }}>{r.name}</span>
-                    {(r.admin1 || r.country) && (
-                      <span style={{ fontSize: '11px', color: '#9c8c84', marginLeft: '6px' }}>
-                        {[r.admin1, r.country].filter(Boolean).join(', ')}
-                      </span>
-                    )}
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-        </div>
-      </Section>
-
-      {/* ── Events & Constraints ─────────────────────────────────────────── */}
-      <Section
-        id="constraints"
-        title="Wöchentliche Events & Constraints"
-        sub="Im Wochenplan kannst du Events für eine einzelne Woche durchstreichen."
-        action={
-          <button
-            onClick={addConstraint}
-            className="flex items-center gap-1 text-xs font-semibold transition-opacity hover:opacity-70"
-            style={{ color: 'var(--accent)' }}
-          >
-            <Plus size={14} />
-            Event hinzufügen
-          </button>
-        }
-      >
-        <div className="space-y-3">
-          {constraints.map((c) => (
-            <div key={c.id} className="p-4 rounded-xl space-y-3" style={{ backgroundColor: '#f7f4ee' }}>
-              <div className="flex items-center gap-3 flex-wrap">
-                <select
-                  value={c.dayOfWeek}
-                  onChange={(e) => updateConstraint(c.id, { dayOfWeek: Number(e.target.value) })}
-                  style={{ ...inputStyle, padding: '6px 8px' }}
-                >
-                  {DAY_LABELS.map((d, i) => <option key={i} value={i + 1}>{d}</option>)}
-                </select>
-                <input
-                  type="text" value={c.label}
-                  onChange={(e) => updateConstraint(c.id, { label: e.target.value })}
-                  style={{ ...inputStyle, flex: 1, minWidth: '96px', padding: '6px 8px' }}
-                  placeholder="Event-Name"
-                />
-                <select
-                  value={c.constraint}
-                  onChange={(e) => updateConstraint(c.id, { constraint: e.target.value as DayConstraint['constraint'] })}
-                  style={{ ...inputStyle, padding: '6px 8px' }}
-                >
-                  {Object.entries(CONSTRAINT_LABELS).map(([k, v]) => <option key={k} value={k}>{v}</option>)}
-                </select>
-                {c.constraint === 'maxTime' && (
-                  <div className="flex items-center gap-1">
-                    <input
-                      type="number" value={c.maxTimeMinutes ?? 30} min={5} max={120} step={5}
-                      onChange={(e) => updateConstraint(c.id, { maxTimeMinutes: Number(e.target.value) })}
-                      style={{ ...inputStyle, width: '64px', textAlign: 'center', padding: '6px 8px' }}
-                    />
-                    <span className="text-xs" style={{ color: '#9c8c84' }}>min</span>
-                  </div>
-                )}
-                <div className="flex gap-1">
-                  {PRESET_COLORS.map((color) => (
-                    <button
-                      key={color}
-                      type="button"
-                      onClick={() => updateConstraint(c.id, { color })}
-                      className="w-5 h-5 rounded-full transition-transform"
-                      style={{
-                        backgroundColor: color,
-                        transform: c.color === color ? 'scale(1.25)' : 'scale(1)',
-                        outline: c.color === color ? '2px solid #9c8c84' : 'none',
-                        outlineOffset: '2px',
-                      }}
-                    />
-                  ))}
-                </div>
-                <button
-                  onClick={() => removeConstraint(c.id)}
-                  className="p-1.5 rounded-lg transition-colors"
-                  style={{ color: '#9c8c84' }}
-                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.backgroundColor = '#fce4ec'; (e.currentTarget as HTMLElement).style.color = '#c62828'; }}
-                  onMouseLeave={e => { (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent'; (e.currentTarget as HTMLElement).style.color = '#9c8c84'; }}
-                >
-                  <Trash2 size={14} />
-                </button>
-              </div>
-            </div>
-          ))}
-          {constraints.length === 0 && (
-            <p className="text-sm text-center py-4" style={{ color: '#9c8c84' }}>Noch keine Events. Klicke auf &quot;Event hinzufügen&quot;.</p>
-          )}
-        </div>
-      </Section>
-
-      {/* ── Aktionen ─────────────────────────────────────────────────────── */}
-      <Section id="promotions" title="Aktionen — Supermärkte" sub="Wähle deine Einkaufsläden. Zutaten im Angebot erscheinen grün markiert in der Einkaufsliste.">
-        <div className="space-y-4">
-          {/* Store toggle grid */}
-          <div className="grid grid-cols-2 gap-2">
-            {SWISS_STORES.map(({ id, name, color, bg }) => {
-              const enabled = (settings.promotions?.enabledStores ?? []).includes(id);
-              return (
-                <button
-                  key={id}
-                  type="button"
-                  onClick={() => {
-                    setSettings((s) => {
-                      const current = s.promotions?.enabledStores ?? [];
-                      const next = enabled
-                        ? current.filter((x) => x !== id)
-                        : [...current, id];
-                      return { ...s, promotions: { ...s.promotions, enabledStores: next } };
-                    });
-                  }}
-                  className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-left transition-all"
-                  style={{
-                    border: enabled ? `1.5px solid ${color}` : '1.5px solid #e0d8ce',
-                    backgroundColor: enabled ? bg : '#f7f4ee',
-                  }}
-                >
-                  <span
-                    className="w-2 h-2 rounded-full flex-shrink-0"
-                    style={{ backgroundColor: enabled ? color : '#d0c8be' }}
-                  />
-                  <span className="text-sm font-medium flex-1" style={{ color: enabled ? '#2c2420' : '#9c8c84' }}>
-                    {name}
-                  </span>
-                  {enabled && (
-                    <span className="text-xs font-bold" style={{ color }}>✓</span>
-                  )}
-                </button>
-              );
-            })}
-          </div>
-
-          {/* Refresh button + last-updated */}
-          <div className="flex items-center justify-between gap-3 pt-1">
-            <p className="text-xs" style={{ color: '#9c8c84' }}>
-              {promoLastUpdated
-                ? `Aktualisiert: ${new Date(promoLastUpdated).toLocaleString('de-CH', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' })}`
-                : 'Noch nicht aktualisiert'}
-            </p>
-            <button
-              type="button"
-              onClick={handlePromoRefresh}
-              disabled={promoRefreshing || (settings.promotions?.enabledStores ?? []).length === 0}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold transition-all"
-              style={{ backgroundColor: '#2c2420', color: '#fff', opacity: promoRefreshing ? 0.6 : 1 }}
-            >
-              <RefreshCw size={12} className={promoRefreshing ? 'animate-spin' : ''} />
-              {promoRefreshing ? 'Lädt...' : 'Jetzt aktualisieren'}
-            </button>
-          </div>
-          {promoError && (
-            <p className="text-xs" style={{ color: '#c62828' }}>{promoError}</p>
-          )}
-        </div>
-      </Section>
 
       {/* ── Konto löschen (Danger Zone) ─────────────────────────────────── */}
       <div style={{ ...sectionCard, padding: '20px 24px', borderColor: '#e8b4ab' }}>

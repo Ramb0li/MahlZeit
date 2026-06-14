@@ -2,10 +2,10 @@ import { type ClassValue, clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 import {
   startOfWeek,
-  endOfWeek,
   eachDayOfInterval,
   format,
   addWeeks,
+  addDays,
   subWeeks,
   parseISO,
   getISOWeek,
@@ -24,10 +24,9 @@ export function getWeekId(date: Date): string {
   return `${year}-W${String(week).padStart(2, '0')}`;
 }
 
-export function getWeekDays(date: Date): Date[] {
-  const start = startOfWeek(date, { weekStartsOn: 1 });
-  const end = endOfWeek(date, { weekStartsOn: 1 });
-  return eachDayOfInterval({ start, end });
+export function getWeekDays(date: Date, startDay: 0|1|2|3|4|5|6 = 1): Date[] {
+  const start = startOfWeek(date, { weekStartsOn: startDay });
+  return eachDayOfInterval({ start, end: addDays(start, 6) });
 }
 
 export function formatDate(date: Date): string {
@@ -51,16 +50,12 @@ export function prevWeek(date: Date): Date {
 }
 
 /**
- * Returns the week to display based on today and the configured switch day.
- * switchDay: 0=Sunday, 1=Monday, ..., 6=Saturday (day on which we jump to next week)
- * Default: 0 (Sunday) — show next week from Sunday onwards
+ * Returns today as the initial display date.
+ * getWeekDays(date, startDay) automatically computes the correct 7-day window
+ * based on the configured start day.
  */
-export function getInitialDisplayWeek(switchDay = 0): Date {
-  const today = new Date();
-  // Normalize: Mon=1 … Sat=6, Sun=7
-  const d = today.getDay() === 0 ? 7 : today.getDay();
-  const sw = switchDay === 0 ? 7 : switchDay;
-  return d >= sw ? nextWeek(today) : today;
+export function getInitialDisplayWeek(_startDay = 1): Date {
+  return new Date();
 }
 
 export function getChildPortionFactor(age: number): number {

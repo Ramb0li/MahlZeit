@@ -4,7 +4,7 @@ import { Check, Download, RefreshCw, Plus, Trash2, RotateCcw, X, ChevronDown, Pa
 import { getWeekId, getWeekDays, nextWeek, formatAmount } from '@/lib/utils';
 import { format } from 'date-fns';
 import { de } from 'date-fns/locale';
-import type { ShoppingList, ShoppingGroups, ShoppingListState, CustomShoppingItem } from '@/types';
+import type { ShoppingList, ShoppingGroups, ShoppingListState, CustomShoppingItem, Recipe } from '@/types';
 
 const DAY_LABELS_SHORT = ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'];
 const GROUP_COLORS = [
@@ -83,10 +83,12 @@ function formatItemAmount(amount: number, unit: string, approx?: boolean): strin
 
 export function ShoppingListView() {
   // Beide Wochen verfügbar — User kann wechseln
-  const todayDate     = new Date();
-  const nextDate      = nextWeek(todayDate);
-  const currentWeekId = getWeekId(todayDate);
-  const nextWeekId    = getWeekId(nextDate);
+  const todayDate      = new Date();
+  const nextDate       = nextWeek(todayDate);
+  const nextNextDate   = nextWeek(nextDate);
+  const currentWeekId  = getWeekId(todayDate);
+  const nextWeekId     = getWeekId(nextDate);
+  const nextNextWeekId = getWeekId(nextNextDate);
   const [weekDate, setWeekDate] = useState(todayDate);
   const weekId   = getWeekId(weekDate);
   const weekDays = getWeekDays(weekDate);
@@ -181,6 +183,9 @@ export function ShoppingListView() {
   const [showAdd, setShowAdd] = useState(false);
   const [draft, setDraft] = useState({ name: '', amount: '', unit: 'Stk', category: 'Sonstiges' });
   const nameInputRef = useRef<HTMLInputElement>(null);
+  const [allIngredients, setAllIngredients] = useState<string[]>([]);
+  const [nameSugg, setNameSugg]             = useState<string[]>([]);
+  const [showNameSugg, setShowNameSugg]     = useState(false);
   const [collapsed, setCollapsed] = useState<Set<string>>(new Set(['Im Vorrat vorhanden']));
   const toggleCollapse = (cat: string) =>
     setCollapsed(prev => { const n = new Set(prev); n.has(cat) ? n.delete(cat) : n.add(cat); return n; });
@@ -193,6 +198,14 @@ export function ShoppingListView() {
   useEffect(() => { if (editKey && editRef.current) editRef.current.focus(); }, [editKey]);
   useEffect(() => { if (editCustomId && editCustomRef.current) editCustomRef.current.focus(); }, [editCustomId]);
   useEffect(() => { if (showAdd) nameInputRef.current?.focus(); }, [showAdd]);
+
+  useEffect(() => {
+    fetch('/api/recipes').then(r => r.json()).then((rs: Recipe[]) => {
+      const names = Array.from(new Set(rs.flatMap((r: Recipe) => r.ingredients.map(i => i.name))))
+        .sort((a, b) => a.localeCompare(b, 'de'));
+      setAllIngredients(names);
+    }).catch(() => {});
+  }, []);
 
   const loadList = useCallback(async (dayIndices?: number[]) => {
     setLoading(true);
@@ -646,7 +659,7 @@ export function ShoppingListView() {
       )}
 
       {/* Week selector */}
-      <div style={{ display: 'flex', gap: 8 }}>
+      <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
         <button
           onClick={() => setWeekDate(todayDate)}
           className={`mz-chip${weekId === currentWeekId ? ' on' : ''}`}
@@ -658,6 +671,12 @@ export function ShoppingListView() {
           className={`mz-chip${weekId === nextWeekId ? ' on' : ''}`}
         >
           Nächste Woche
+        </button>
+        <button
+          onClick={() => setWeekDate(nextNextDate)}
+          className={`mz-chip${weekId === nextNextWeekId ? ' on' : ''}`}
+        >
+          Übernächste Woche
         </button>
       </div>
 
@@ -734,13 +753,51 @@ export function ShoppingListView() {
                   <X size={15} />
                 </button>
               </div>
-              <input
-                ref={nameInputRef}
-                type="text" placeholder="Name (z.B. Waschmittel)" value={draft.name}
-                onChange={(e) => setDraft(d => ({ ...d, name: e.target.value }))}
-                onKeyDown={(e) => e.key === 'Enter' && addCustom()}
-                style={{ ...inputStyle, width: '100%' }}
-              />
+              <div className="relative">
+                <input
+                  ref={nameInputRef}
+                  type="text" placeholder="Name (z.B. Waschmittel)" value={draft.name}
+                  onChange={(e) => {
+                    const val = e.target.value;
+                    setDraft(d => ({ ...d, name: val }));
+                    if (val.trim().length >= 2) {
+                      const lower = val.toLowerCase();
+                      const matched = allIngredients.filter(n => n.toLowerCase().startsWith(lower)).slice(0, 6);
+                      setNameSugg(matched);
+                      setShowNameSugg(matched.length > 0);
+                    } else {
+                      setNameSugg([]);
+                      setShowNameSugg(false);
+                    }
+                  }}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter') { setShowNameSugg(false); addCustom(); }
+                    if (e.key === 'Escape') setShowNameSugg(false);
+                  }}
+                  onBlur={() => setTimeout(() => setShowNameSugg(false), 150)}
+                  onFocus={() => { if (nameSugg.length > 0) setShowNameSugg(true); }}
+                  style={{ ...inputStyle, width: '100%' }}
+                />
+                {showNameSugg && (
+                  <div
+                    className="absolute z-20 w-full mt-1 rounded-xl overflow-hidden shadow-lg"
+                    style={{ border: '1px solid #e0d8ce', backgroundColor: '#fff9f3' }}
+                  >
+                    {nameSugg.map((s) => (
+                      <button
+                        key={s}
+                        onMouseDown={() => { setDraft(d => ({ ...d, name: s })); setShowNameSugg(false); }}
+                        className="w-full text-left px-3 py-2 text-sm"
+                        style={{ color: '#271f1a' }}
+                        onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.backgroundColor = '#f7f4ee')}
+                        onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.backgroundColor = 'transparent')}
+                      >
+                        {s}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
               <div className="flex gap-2">
                 <input
                   type="text" inputMode="decimal" placeholder="Menge" value={draft.amount}

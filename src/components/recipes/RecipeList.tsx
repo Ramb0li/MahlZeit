@@ -317,18 +317,40 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
             ))}
           </div>
 
-          {/* Tag chips */}
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
-            {['Schnell', ...(Object.values(TAG_GROUPS).flat())].map(tag => (
-              <button key={tag} onClick={() => toggleTag(tag)}
-                className={`mz-chip${filterTags.includes(tag) ? ' on' : ''}`}
-                style={{ fontSize: 12, padding: '5px 10px' }}
-              >
-                {tag}
-              </button>
+          {/* Tag chips — gruppiert */}
+          <div className="space-y-1.5">
+            {/* Schnell */}
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-semibold shrink-0" style={{ color: 'var(--muted)', width: 76 }}>Zeit</span>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+                <button onClick={() => toggleTag('Schnell')}
+                  className={`mz-chip${filterTags.includes('Schnell') ? ' on' : ''}`}
+                  style={{ fontSize: 12, padding: '5px 10px' }}
+                >
+                  Schnell
+                </button>
+              </div>
+            </div>
+            {/* Gruppen */}
+            {(Object.entries(TAG_GROUPS) as [string, readonly string[]][]).map(([group, tags]) => (
+              <div key={group} className="flex items-start gap-2">
+                <span className="text-xs font-semibold shrink-0 pt-1" style={{ color: 'var(--muted)', width: 76 }}>
+                  {group}
+                </span>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+                  {tags.map(tag => (
+                    <button key={tag} onClick={() => toggleTag(tag)}
+                      className={`mz-chip${filterTags.includes(tag) ? ' on' : ''}`}
+                      style={{ fontSize: 12, padding: '5px 10px' }}
+                    >
+                      {tag}
+                    </button>
+                  ))}
+                </div>
+              </div>
             ))}
             {filterTags.length > 0 && (
-              <button onClick={() => setFilterTags([])} className="mz-btn-soft" style={{ fontSize: 12, padding: '5px 10px' }}>
+              <button onClick={() => setFilterTags([])} className="mz-btn-soft" style={{ fontSize: 12, padding: '5px 10px', marginTop: 4 }}>
                 Zurücksetzen
               </button>
             )}

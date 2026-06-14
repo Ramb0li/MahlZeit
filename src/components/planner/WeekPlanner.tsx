@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect, useCallback } from 'react';
 import { ChevronLeft, ChevronRight, Sparkles, RefreshCw, Trash2, Printer, Heart } from 'lucide-react';
-import { format } from 'date-fns';
+import { format, getISOWeek } from 'date-fns';
 import { de } from 'date-fns/locale';
 import { getWeekId, getWeekDays, nextWeek, prevWeek, formatDate, getInitialDisplayWeek } from '@/lib/utils';
 import { DayColumn } from './DayColumn';
@@ -33,8 +33,9 @@ function planHasRecipes(plan: WeekPlan | null): boolean {
 }
 
 export function WeekPlanner({ recipes, settings, constraints, onViewRecipe, onOpenMeal, plannerRefreshKey, locked = false, onLockedAction }: WeekPlannerProps) {
+  const weekStartDay = (settings.weekSwitchDay ?? 1) as 0|1|2|3|4|5|6;
   const [currentDate, setCurrentDate] = useState(() =>
-    getInitialDisplayWeek(settings.weekSwitchDay ?? 0)
+    getInitialDisplayWeek(weekStartDay)
   );
   const [weekPlan, setWeekPlan] = useState<WeekPlan | null>(null);
   const [weather, setWeather] = useState<WeatherCache | null>(null);
@@ -46,7 +47,7 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe, onOp
   const [favoritesOnly, setFavoritesOnly] = useState(false);
 
   const weekId = getWeekId(currentDate);
-  const weekDays = getWeekDays(currentDate);
+  const weekDays = getWeekDays(currentDate, weekStartDay);
 
   const loadPlan = useCallback(async () => {
     setLoading(true);
@@ -462,7 +463,8 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe, onOp
     return weather.days.find((d) => d.date === dateStr) ?? null;
   };
 
-  const kwNum = weekId.split('-W')[1];
+  const thursday = weekDays.find(d => d.getDay() === 4);
+  const kwNum = thursday ? String(getISOWeek(thursday)).padStart(2, '0') : weekId.split('-W')[1];
   const dateFrom = weekDays[0] ? format(weekDays[0], 'd. MMM', { locale: de }) : '';
   const dateTo   = weekDays[6] ? format(weekDays[6], 'd. MMM yyyy', { locale: de }) : '';
   const adults   = settings.household.adults;
