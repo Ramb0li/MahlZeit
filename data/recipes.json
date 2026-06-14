@@ -9,8 +9,14 @@
       "Abendessen",
       "Schweizerisch",
       "Kinderfreundlich",
-      "Frühstück",
-      "Ganzjährig"
+      "Ganzjährig",
+      "Brunch",
+      "Budgetfreundlich",
+      "Einfrierbar",
+      "Resteverwertung",
+      "Gut zum Mitnehmen",
+      "Pfannengericht",
+      "One-Pot-Gericht"
     ],
     "ingredients": [
       {
@@ -207,7 +213,10 @@
       "Mittagessen",
       "Abendessen",
       "Schweizerisch",
-      "Frühling"
+      "Frühling",
+      "Resteverwertung",
+      "Budgetfreundlich",
+      "Pfannengericht"
     ],
     "allergens": [
       "ei",
@@ -427,13 +436,16 @@
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-03-1781044613388.jpg",
     "tags": [
       "Mittagessen",
-      "Frühstück",
       "Kinderfreundlich",
       "Frühling",
       "Herbst",
       "Winter",
       "Abendessen",
-      "Schweizerisch"
+      "Schweizerisch",
+      "Brunch",
+      "Resteverwertung",
+      "Budgetfreundlich",
+      "Pfannengericht"
     ],
     "allergens": [
       "ei",
@@ -612,10 +624,16 @@
     "tags": [
       "Mittagessen",
       "Kinderfreundlich",
-      "Frühstück",
       "Abendessen",
       "Schweizerisch",
-      "Ganzjährig"
+      "Ganzjährig",
+      "Brunch",
+      "Einfrierbar",
+      "Resteverwertung",
+      "Budgetfreundlich",
+      "Gut zum Mitnehmen",
+      "Pfannengericht",
+      "One-Pot-Gericht"
     ],
     "imageZutaten": null,
     "imageKochen": null,
@@ -789,7 +807,12 @@
       "Frühling",
       "Mittagessen",
       "Abendessen",
-      "Schweizerisch"
+      "Schweizerisch",
+      "Budgetfreundlich",
+      "Resteverwertung",
+      "Für Gäste",
+      "Gut zum Mitnehmen",
+      "Pfannengericht"
     ],
     "allergens": [
       "ei",
@@ -1072,25 +1095,29 @@
     "basePortions": 4,
     "description": "Herzhaft, farbenfroh und sättigend – diese Käsepolenta mit Ofengemüse und Spiegelei bringt mediterrane Wärme auf den Teller.",
     "steps": [
-      "1.  Zucchetti, Peperoni und Champignons in Würfel schneiden. Cherrytomaten halbieren.",
-      "2. Gemüsewürfel in eine Gratinform geben. Oliven beigeben, mit All’Arrabbiata-Gewürz, Salz und Pfeffer würzen. Rosmarin darauf verteilen, mit Olivenöl beträufeln und mischen.",
-      "3. Ofengemüse bei 200 °C ca. 20 Minuten schmoren.",
-      "4. Milch und Gemüsebouillon in einer Pfanne aufkochen. Hitze reduzieren, Polenta unter ständigem Rühren einrieseln lassen.",
-      "5. Polenta bei kleiner Hitze unter regelmässigem Rühren ca. 10–15 Minuten garen. Pfanne vom Herd nehmen oder Herd ausschalten.",
-      "6. Geriebenen Parmesan sorgfältig unter die Polenta rühren. Butter beigeben, mit Pfeffer abschmecken. Salz erst nach dem Probieren ergänzen.",
-      "7. Cherrytomaten zum Ofengemüse geben und weitere 5–10 Minuten mitschmoren.",
-      "8. Wenig Butter oder Olivenöl in einer beschichteten Pfanne erhitzen. Eier aufschlagen und zu Spiegeleiern braten. Mit Salz und Pfeffer würzen.",
-      "9. Polenta, Ofengemüse und Spiegeleier auf Tellern anrichten."
+      "Zucchetti, Peperoni und Champignons in Würfel schneiden. Cherrytomaten halbieren.",
+      "Gemüsewürfel in eine Gratinform geben. Oliven beigeben, mit All’Arrabbiata-Gewürz, Salz und Pfeffer würzen. Rosmarin darauf verteilen, mit Olivenöl beträufeln und mischen.",
+      "Ofengemüse bei 200 °C ca. 20 Minuten schmoren.",
+      "Milch und Gemüsebouillon in einer Pfanne aufkochen. Hitze reduzieren, Polenta unter ständigem Rühren einrieseln lassen.",
+      "Polenta bei kleiner Hitze unter regelmässigem Rühren ca. 10–15 Minuten garen. Pfanne vom Herd nehmen oder Herd ausschalten.",
+      "Geriebenen Parmesan sorgfältig unter die Polenta rühren. Butter beigeben, mit Pfeffer abschmecken. Salz erst nach dem Probieren ergänzen.",
+      "Cherrytomaten zum Ofengemüse geben und weitere 5–10 Minuten mitschmoren.",
+      "Wenig Butter oder Olivenöl in einer beschichteten Pfanne erhitzen. Eier aufschlagen und zu Spiegeleiern braten. Mit Salz und Pfeffer würzen.",
+      "Polenta, Ofengemüse und Spiegeleier auf Tellern anrichten."
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-07-1781044634643.jpg",
     "tags": [
       "Herbst",
       "Winter",
       "Kinderfreundlich",
-      "Mealprep-geeignet",
       "Frühling",
       "Mittagessen",
-      "Abendessen"
+      "Abendessen",
+      "Resteverwertung",
+      "Budgetfreundlich",
+      "Pfannengericht",
+      "Ofengericht",
+      "Für Gäste"
     ],
     "allergens": [
       "ei",
@@ -1255,14 +1282,21 @@
   {
     "id": "ei-09",
     "name": "Blueberry Smoothie Bowl",
-    "category": "Getränke & Smoothies",
+    "category": "Müesli, Porridge & Frühstücksschalen",
     "timeMinutes": 10,
     "tags": [
       "Frühstück",
       "Kinderfreundlich",
       "Mealprep-geeignet",
       "Frühling",
-      "Sommer"
+      "Sommer",
+      "Brunch",
+      "Snack",
+      "Dessert",
+      "Resteverwertung",
+      "Budgetfreundlich",
+      "Ohne Kochen",
+      "Gut zum Mitnehmen"
     ],
     "weatherType": "warm",
     "source": "Cuiseline",
@@ -1338,10 +1372,10 @@
       }
     ],
     "steps": [
-      "1. Heidelbeeren, Banane, Kokosjoghurt, Haferdrink, Leinsamen, Hanfsamen, Haferflocken und zerkleinerte Datteln in den Mixer geben.",
-      "2. Alles fein pürieren, bis eine cremige, dickflüssige Masse entsteht.",
-      "3. Smoothie-Masse in eine Schüssel füllen.",
-      "4. Mit Granola bzw. Nüssen und Kernen und Früchten nach Wahl garnieren."
+      "Heidelbeeren, Banane, Kokosjoghurt, Haferdrink, Leinsamen, Hanfsamen, Haferflocken und zerkleinerte Datteln in den Mixer geben.",
+      "Alles fein pürieren, bis eine cremige, dickflüssige Masse entsteht.",
+      "Smoothie-Masse in eine Schüssel füllen.",
+      "Mit Granola bzw. Nüssen und Kernen und Früchten nach Wahl garnieren."
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---blueberry-smoothie-bowl-2--1780577059410.jpeg",
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---blueberry-smoothie-bowl-3--1780577067152.jpeg",
@@ -1363,13 +1397,20 @@
   {
     "id": "ei-10",
     "name": "Cacao Smoothie Bowl",
-    "category": "Getränke & Smoothies",
+    "category": "Müesli, Porridge & Frühstücksschalen",
     "timeMinutes": 10,
     "tags": [
       "Frühstück",
       "Kinderfreundlich",
       "Mealprep-geeignet",
-      "Ganzjährig"
+      "Ganzjährig",
+      "Brunch",
+      "Snack",
+      "Dessert",
+      "Resteverwertung",
+      "Budgetfreundlich",
+      "Gut zum Mitnehmen",
+      "Ohne Kochen"
     ],
     "weatherType": "neutral",
     "source": "Cuiseline",
@@ -1451,11 +1492,11 @@
       }
     ],
     "steps": [
-      "1. Datteln entsteinen und in kleine Stücke schneiden.",
-      "2. Alle Zutaten zusammen mit den zerkleinerten Datteln in den Mixer geben.",
-      "3. Alles fein pürieren, bis eine cremige, dickflüssige Masse entsteht.",
-      "4. Smoothie-Masse in eine Schüssel füllen.",
-      "5. Mit Granola, saisonalen Früchten/Beeren und Cacao Nibs garnieren."
+      "Datteln entsteinen und in kleine Stücke schneiden.",
+      "Alle Zutaten zusammen mit den zerkleinerten Datteln in den Mixer geben.",
+      "Alles fein pürieren, bis eine cremige, dickflüssige Masse entsteht.",
+      "Smoothie-Masse in eine Schüssel füllen.",
+      "Mit Granola, saisonalen Früchten/Beeren und Cacao Nibs garnieren."
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-10-1-1780867619910.jpg",
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-10-2-1780867626293.jpg",
@@ -1483,7 +1524,11 @@
       "Mealprep-geeignet",
       "Frühstück",
       "Kinderfreundlich",
-      "Ganzjährig"
+      "Ganzjährig",
+      "Brunch",
+      "Snack",
+      "Budgetfreundlich",
+      "Gut zum Mitnehmen"
     ],
     "weatherType": "neutral",
     "source": "Cuiseline",
@@ -1704,12 +1749,12 @@
     "basePortions": 4,
     "description": "Ein traditionelles nordafrikanisches Gericht mit pochierten Eiern in würziger Tomatensauce - schnell zubereitet und wandelbar. Perfektes Seelenfutter, das sowohl als Frühstück als auch als Mittag- und Abendessen funktioniert.",
     "steps": [
-      "1. Zwiebel und Peperoni würfeln, Knoblauch hacken.",
-      "2. In einer grossen Pfanne Olivenöl erhitzen. Zwiebel und Peperoni ca. 3 Minuten andünsten, dann Gewürze (Paprika, Kreuzkümmel, Cayennepfeffer), Knoblauch und Tomatenmark kurz mitrösten.",
-      "3. Gehackte Tomaten und Zimtstange dazugeben. Unter gelegentlichem Rühren 20 Minuten offen köcheln lassen bis die Sauce eindickt.",
-      "4. Zimtstange entfernen. Feta in grobe Stücke bröckeln, die Hälfte in die Sauce geben. Mit Salz und Pfeffer abschmecken.",
-      "5. Mit einem Löffel Mulden in die Sauce drücken, jeweils ein Ei hineingleiten lassen. Zugedeckt 6–8 Minuten garen bis Eiweiss gestockt, Eigelb noch weich.",
-      "6. Mit restlichem Feta und frischen Kräutern garnieren. Mit Brot servieren."
+      "Zwiebel und Peperoni würfeln, Knoblauch hacken.",
+      "In einer grossen Pfanne Olivenöl erhitzen. Zwiebel und Peperoni ca. 3 Minuten andünsten, dann Gewürze (Paprika, Kreuzkümmel, Cayennepfeffer), Knoblauch und Tomatenmark kurz mitrösten.",
+      "Gehackte Tomaten und Zimtstange dazugeben. Unter gelegentlichem Rühren 20 Minuten offen köcheln lassen bis die Sauce eindickt.",
+      "Zimtstange entfernen. Feta in grobe Stücke bröckeln, die Hälfte in die Sauce geben. Mit Salz und Pfeffer abschmecken.",
+      "Mit einem Löffel Mulden in die Sauce drücken, jeweils ein Ei hineingleiten lassen. Zugedeckt 6–8 Minuten garen bis Eiweiss gestockt, Eigelb noch weich.",
+      "Mit restlichem Feta und frischen Kräutern garnieren. Mit Brot servieren."
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-08-1780870240294.jpg",
     "tags": [
@@ -1719,7 +1764,13 @@
       "Frühling",
       "Herbst",
       "Winter",
-      "Abendessen"
+      "Abendessen",
+      "Brunch",
+      "Resteverwertung",
+      "Budgetfreundlich",
+      "Pfannengericht",
+      "One-Pot-Gericht",
+      "Für Gäste"
     ],
     "dietCategory": "vegetarian",
     "allergens": [
@@ -1741,7 +1792,7 @@
   {
     "id": "ei-13",
     "name": "Smoothie Bowl mit Beeren und Zucchetti",
-    "category": "Desserts & Süsses",
+    "category": "Müesli, Porridge & Frühstücksschalen",
     "timeMinutes": 10,
     "ingredients": [
       {
@@ -1820,7 +1871,14 @@
       "Frühling",
       "Kinderfreundlich",
       "Frühstück",
-      "Mealprep-geeignet"
+      "Mealprep-geeignet",
+      "Brunch",
+      "Snack",
+      "Dessert",
+      "Resteverwertung",
+      "Budgetfreundlich",
+      "Gut zum Mitnehmen",
+      "Ohne Kochen"
     ],
     "imageZutaten": null,
     "imageKochen": null,
@@ -1918,7 +1976,14 @@
       "Kinderfreundlich",
       "Frühstück",
       "Mealprep-geeignet",
-      "Ganzjährig"
+      "Ganzjährig",
+      "Brunch",
+      "Snack",
+      "Einfrierbar",
+      "Budgetfreundlich",
+      "Gut zum Mitnehmen",
+      "Pfannengericht",
+      "Amerikanisch"
     ],
     "imageZutaten": null,
     "imageKochen": null,
@@ -2028,7 +2093,14 @@
       "Kinderfreundlich",
       "Frühstück",
       "Mealprep-geeignet",
-      "Ganzjährig"
+      "Ganzjährig",
+      "Brunch",
+      "Einfrierbar",
+      "Budgetfreundlich",
+      "Gut zum Mitnehmen",
+      "Pfannengericht",
+      "Amerikanisch",
+      "Snack"
     ],
     "imageZutaten": null,
     "imageKochen": null,
@@ -2118,7 +2190,16 @@
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-16-1780699242965.jpg",
     "tags": [
       "Kinderfreundlich",
-      "Frühstück"
+      "Frühstück",
+      "Brunch",
+      "Snack",
+      "Mealprep-geeignet",
+      "Einfrierbar",
+      "Resteverwertung",
+      "Budgetfreundlich",
+      "Pfannengericht",
+      "Ganzjährig",
+      "Amerikanisch"
     ],
     "imageZutaten": null,
     "imageKochen": null,
@@ -3427,10 +3508,17 @@
       "Kinderfreundlich",
       "Mittagessen",
       "Abendessen",
-      "Italienisch"
+      "Italienisch",
+      "Einfrierbar",
+      "Resteverwertung",
+      "Budgetfreundlich",
+      "Für Gäste",
+      "Gut zum Mitnehmen",
+      "Pfannengericht",
+      "Frühling"
     ],
     "weatherType": "warm",
-    "source": "Familien-Rezeptbuch",
+    "source": "Cuiseline",
     "basePortions": 4,
     "description": "Sonnige Tomaten, duftender Basilikum und Spaghetti – ein frischer, unkomplizierter Pasta-Klassiker für jeden Tag.",
     "ingredients": [
@@ -3532,7 +3620,11 @@
       "Mittagessen",
       "Abendessen",
       "Italienisch",
-      "Ganzjährig"
+      "Ganzjährig",
+      "Budgetfreundlich",
+      "Resteverwertung",
+      "Gut zum Mitnehmen",
+      "Pfannengericht"
     ],
     "weatherType": "neutral",
     "source": "MahlZeit",
@@ -3625,11 +3717,11 @@
       }
     ],
     "steps": [
-      "1. Zwiebel hacken. Schnittlauch fein schneiden. Petersilie und Basilikum hacken.",
-      "2. Zwiebelnin Butter andämpfen, mit Weisswein ablöschen (anstelle von Weiswein kann auch Bouillon verwendet werden).",
-      "3. Bouillon, Curry, Provence-Kräuter und frische Kräuter beifügen.",
-      "4. Rahm dazugeben, würzen, kurz köcheln lassen.",
-      "5. Tortellini nach Anleitung kochen, mit Sauce und Reibkäse servieren."
+      "Zwiebel hacken. Schnittlauch fein schneiden. Petersilie und Basilikum hacken.",
+      "Zwiebelnin Butter andämpfen, mit Weisswein ablöschen (anstelle von Weiswein kann auch Bouillon verwendet werden).",
+      "Bouillon, Curry, Provence-Kräuter und frische Kräuter beifügen.",
+      "Rahm dazugeben, würzen, kurz köcheln lassen.",
+      "Tortellini nach Anleitung kochen, mit Sauce und Reibkäse servieren."
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fam-50-1780699402158.jpg",
     "imageZutaten": null,
@@ -3653,41 +3745,26 @@
     "id": "fam-55",
     "name": "Zitronenravioli an Prosecco-Sauce",
     "category": "Pasta & Teigwaren",
-    "timeMinutes": 25,
-    "tags": [],
+    "timeMinutes": 20,
+    "tags": [
+      "Mittagessen",
+      "Abendessen",
+      "Mealprep-geeignet",
+      "Für Gäste",
+      "Gut zum Mitnehmen",
+      "Pfannengericht",
+      "Ganzjährig",
+      "Italienisch"
+    ],
     "weatherType": "neutral",
-    "source": "Familien-Rezeptbuch",
+    "source": "MahlZeit",
     "basePortions": 4,
-    "description": "Festliche Zitronenravioli in Prosecco-Parmesan-Sauce.",
+    "description": "Cremig, frisch und festlich: Zitronenravioli an Prosecco-Sauce.",
     "ingredients": [
       {
         "name": "Zitronenravioli",
         "amount": 800,
         "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Zwiebel",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Prosecco/Champagner",
-        "amount": 2.5,
-        "unit": "dl",
-        "perPortions": 4
-      },
-      {
-        "name": "Rahm",
-        "amount": 1.5,
-        "unit": "dl",
-        "perPortions": 4
-      },
-      {
-        "name": "Sbrinz",
-        "amount": 2,
-        "unit": "Handvoll",
         "perPortions": 4
       },
       {
@@ -3697,7 +3774,31 @@
         "perPortions": 4
       },
       {
-        "name": "Zitronenschale (abgerieben)",
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Prosecco",
+        "amount": 2.5,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Sbrinz, gerieben",
+        "amount": 2,
+        "unit": "Handvoll",
+        "perPortions": 4
+      },
+      {
+        "name": "Rahm",
+        "amount": 1.5,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Zitrone",
         "amount": 0.5,
         "unit": "Stk",
         "perPortions": 4
@@ -3716,10 +3817,13 @@
       }
     ],
     "steps": [
-      "1. Zwiebel in Butter 5 Min. andämpfen.",
-      "2. Mit Prosecco ablöschen, einkochen.",
-      "3. Käse hinzufügen, schmelzen. Rahm, Zitronenöl/Schale beifügen, würzen.",
-      "4. Ravioli nach Anleitung kochen."
+      "Zwiebel fein schneiden. Zitronenschale fein abreiben.",
+      "Butter in einer Pfanne erwärmen. Zwiebel beigeben und ca. 5 Minuten andämpfen.",
+      "Mit Prosecco ablöschen und Flüssigkeit etwas einkochen lassen.",
+      "Käse beigeben und unter Rühren schmelzen lassen.",
+      "Rahm und Zitronenschale hinzufügen. Mit Salz und Pfeffer würzen und kurz köcheln lassen.",
+      "Inzwischen Ravioli nach Packungsangabe kochen.",
+      "Ravioli abgiessen, mit Sauce anrichten und servieren."
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fam-55-1780699429979.jpg",
     "imageZutaten": null,
@@ -4114,7 +4218,11 @@
       "Winter",
       "Mittagessen",
       "Abendessen",
-      "Italienisch"
+      "Italienisch",
+      "Einfrierbar",
+      "Resteverwertung",
+      "Gut zum Mitnehmen",
+      "Pfannengericht"
     ],
     "weatherType": "kalt",
     "source": "Familien-Rezeptbuch",
@@ -4239,7 +4347,12 @@
       "Kinderfreundlich",
       "Mittagessen",
       "Abendessen",
-      "Ganzjährig"
+      "Ganzjährig",
+      "Einfrierbar",
+      "Resteverwertung",
+      "Budgetfreundlich",
+      "Gut zum Mitnehmen",
+      "Pfannengericht"
     ],
     "weatherType": "warm",
     "source": "Familien-Rezeptbuch (OCR)",
@@ -4482,7 +4595,12 @@
       "Kinderfreundlich",
       "Frühling",
       "Abendessen",
-      "Italienisch"
+      "Italienisch",
+      "Einfrierbar",
+      "Resteverwertung",
+      "Budgetfreundlich",
+      "Gut zum Mitnehmen",
+      "Pfannengericht"
     ],
     "allergens": [
       "gluten",
@@ -4506,19 +4624,162 @@
     "name": "Linsen-Gemüse-Lasagne",
     "category": "Aufläufe & Gratins",
     "timeMinutes": 75,
-    "ingredients": [],
+    "ingredients": [
+      {
+        "name": "Zwiebel",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 2,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Karotte",
+        "amount": 2,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Knollensellerie",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Peperoni",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Zucchetti",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 3,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Tomatenmark",
+        "amount": 1,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "grüne Linsen",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebouillon",
+        "amount": 4,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Italienische Kräuter",
+        "amount": 2,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "All’arrabbiata Gewürz",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Butter",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Mehl",
+        "amount": 60,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Milch oder Sojadrink",
+        "amount": 1,
+        "unit": "l",
+        "perPortions": 8
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 8
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 2,
+        "unit": "Prisen",
+        "perPortions": 8
+      },
+      {
+        "name": "Muskatnuss",
+        "amount": 2,
+        "unit": "Prisen",
+        "perPortions": 8
+      },
+      {
+        "name": "Lasagneblätter",
+        "amount": 1,
+        "unit": "Pkg",
+        "perPortions": 8
+      },
+      {
+        "name": "Mozzarella, gerieben",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 8
+      },
+      {
+        "name": "Reibkäse (z.B. Sbrinz oder Parmesan)",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 8
+      }
+    ],
     "weatherType": "kalt",
-    "source": "Cuiseline",
-    "basePortions": 4,
-    "description": "Klassische Lasagne vegetarisch.",
+    "source": "MahlZeit",
+    "basePortions": 6,
+    "description": "Schicht für Schicht voller Gemüse, Linsen und cremiger Béchamelsauce – eine Lasagne zum Wohlfühlen.",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/pas-02-1780699528706.jpg",
     "tags": [
       "Mealprep-geeignet",
-      "Mittagessen",
+      "Mittagsgericht",
       "Herbst",
       "Winter",
       "Ofengericht",
-      "Abendessen"
+      "Vegetarisch",
+      "Kinderfreundlich",
+      "Frühling",
+      "Abendgericht",
+      "Italienisch"
     ],
     "imageZutaten": null,
     "imageKochen": null,
@@ -4537,13 +4798,13 @@
     "steps": [
       "Zwiebel und Knoblauch fein hacken. Karotte, Knollensellerie, Zucchetti, Peperoni und Champignons klein schneiden.",
       "Olivenöl in einer grossen Pfanne erhitzen. Gemüse und Champignons beigeben und andämpfen.",
-      "Tomatenpüree hinzufügen und kurz mitrösten.",
+      "Tomatenmark hinzufügen und kurz mitrösten.",
       "Linsen beigeben und kurz mitdämpfen.",
       "Optional mit Weisswein ablöschen und Flüssigkeit einkochen lassen.",
-      "Gemüsebouillon beigeben und aufkochen. Mit italienischen Kräutern, All’arrabbiata-Gewürz, Salz und Pfeffer würzen.",
+      "Gemüsebouillon beigeben und aufkochen. Mit italienischen Kräutern, All’arrabbiata Gewürz, Salz und Pfeffer würzen.",
       "Linsen-Gemüse-Sauce bei kleiner Hitze ca. 15 Minuten köcheln lassen. Sauce abschmecken.",
       "Backofen auf 200 °C Ober-/Unterhitze vorheizen. Gratinform mit wenig Butter einfetten.",
-      "Für Béchamelsauce Butter in einer Pfanne schmelzen. Mehl beigeben und unter Rühren mit Schwingbesen kurz dünsten, ohne dass Mehl Farbe annimmt.",
+      "Für Béchamelsauce Butter in einer Pfanne schmelzen. Mehl beigeben und unter Rühren mit Schwingbesen kurz dünsten.",
       "Milch oder Sojadrink auf einmal dazugiessen und unter ständigem Rühren aufkochen.",
       "Mit Salz, Pfeffer und Muskatnuss würzen. Hitze reduzieren und Sauce unter gelegentlichem Rühren ca. 10 Minuten köcheln lassen, bis sie sämig ist.",
       "Wenig Béchamelsauce auf Boden der vorbereiteten Form verteilen.",
@@ -4553,7 +4814,162 @@
       "Lasagne in Ofenmitte ca. 35–40 Minuten backen, bis Oberfläche goldbraun ist."
     ],
     "sourceType": "mahlzyt",
-    "_migrated_v2": true
+    "_migrated_v2": true,
+    "ingredientGroups": [
+      {
+        "name": "Zutaten für Linsen-Gemüse-Sauce",
+        "ingredients": [
+          {
+            "name": "Zwiebel",
+            "amount": 1,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Knoblauch",
+            "amount": 2,
+            "unit": "Zehe",
+            "perPortions": 4
+          },
+          {
+            "name": "Karotte",
+            "amount": 2,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Knollensellerie",
+            "amount": 200,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Peperoni",
+            "amount": 1,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Zucchetti",
+            "amount": 1,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Olivenöl",
+            "amount": 3,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Tomatenmark",
+            "amount": 1,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "grüne Linsen",
+            "amount": 200,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "Gemüsebouillon",
+            "amount": 4,
+            "unit": "dl",
+            "perPortions": 4
+          },
+          {
+            "name": "Italienische Kräuter",
+            "amount": 2,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "All’arrabbiata Gewürz",
+            "amount": 0.5,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Salz",
+            "amount": 1,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Pfeffer",
+            "amount": 1,
+            "unit": "Prise",
+            "perPortions": 4
+          }
+        ]
+      },
+      {
+        "name": "Zutaten für Béchamelsauce",
+        "ingredients": [
+          {
+            "name": "Butter",
+            "amount": 100,
+            "unit": "g",
+            "perPortions": 8
+          },
+          {
+            "name": "Mehl",
+            "amount": 60,
+            "unit": "g",
+            "perPortions": 8
+          },
+          {
+            "name": "Milch oder Sojadrink",
+            "amount": 1,
+            "unit": "l",
+            "perPortions": 8
+          },
+          {
+            "name": "Salz",
+            "amount": 1,
+            "unit": "TL",
+            "perPortions": 8
+          },
+          {
+            "name": "Pfeffer",
+            "amount": 2,
+            "unit": "Prisen",
+            "perPortions": 8
+          },
+          {
+            "name": "Muskatnuss",
+            "amount": 2,
+            "unit": "Prisen",
+            "perPortions": 8
+          }
+        ]
+      },
+      {
+        "name": "Zutaten für Lasagne",
+        "ingredients": [
+          {
+            "name": "Lasagneblätter",
+            "amount": 1,
+            "unit": "Pkg",
+            "perPortions": 8
+          },
+          {
+            "name": "Mozzarella, gerieben",
+            "amount": 250,
+            "unit": "g",
+            "perPortions": 8
+          },
+          {
+            "name": "Reibkäse (z.B. Sbrinz oder Parmesan)",
+            "amount": 200,
+            "unit": "g",
+            "perPortions": 8
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "pas-03",
@@ -4652,21 +5068,27 @@
     "timeMinutes": 25,
     "ingredients": [
       {
-        "name": "Vollkornspaghetti",
-        "amount": 500,
-        "unit": "g",
+        "name": "Pinien- oder Zederkerne (zum Garnieren)",
+        "amount": 1,
+        "unit": "Handvoll",
         "perPortions": 4
       },
       {
         "name": "Basilikum",
         "amount": 4,
-        "unit": "Handvoll",
+        "unit": "Bund",
         "perPortions": 4
       },
       {
-        "name": "Pinienkerne (oder Zedernkerne)",
-        "amount": 100,
-        "unit": "g",
+        "name": "Knoblauch",
+        "amount": 2,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Pinien- oder Zederkerne",
+        "amount": 4,
+        "unit": "EL",
         "perPortions": 4
       },
       {
@@ -4676,7 +5098,7 @@
         "perPortions": 4
       },
       {
-        "name": "Veganer Parmesan",
+        "name": "Parmesan",
         "amount": 100,
         "unit": "g",
         "perPortions": 4
@@ -4686,6 +5108,24 @@
         "amount": 8,
         "unit": "Stk",
         "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 1,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Vollkornspaghetti",
+        "amount": 500,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "grüne Bohnen",
+        "amount": 1,
+        "unit": "g",
+        "perPortions": 4
       }
     ],
     "weatherType": "warm",
@@ -4693,21 +5133,21 @@
     "basePortions": 4,
     "description": "Selbstgemachtes Basilikum-Pesto mit Vollkornspaghetti und kleinen Kartoffeln.",
     "steps": [
-      "1. Pinienkerne ohne Fett in Pfanne rösten, beiseitestellen.",
-      "2. Basilikum waschen, Blätter abzupfen. Etwas zum Garnieren beiseite legen.",
-      "3. Restliches Basilikum mit Olivenöl, veganem Parmesan und Pinienkerne mit Stabmixer pürieren. Mit Salz und Pfeffer würzen.",
-      "4. Kartoffeln und Spaghetti in Salzwasser al dente kochen, abgiessen.",
-      "5. Alles mit Pesto mischen, mit Pinienkerne und veganem Parmesan garnieren."
+      "Pinienkerne ohne Fett in Pfanne rösten, beiseitestellen.",
+      "Basilikum waschen, Blätter abzupfen. Etwas zum Garnieren beiseite legen.",
+      "Restliches Basilikum mit Olivenöl, veganem Parmesan und Pinienkerne mit Stabmixer pürieren. Mit Salz und Pfeffer würzen.",
+      "Kartoffeln und Spaghetti in Salzwasser al dente kochen, abgiessen.",
+      "Alles mit Pesto mischen, mit Pinienkerne und veganem Parmesan garnieren."
     ],
-    "tips": "",
     "imageUrl": "/images/recipes/cuiselin-pesto-genovese.jpg",
     "imageZutaten": "/images/recipes/cuiselin-pesto-genovese-zutaten.jpg",
     "tags": [
       "Mittagessen",
-      "Frühling",
-      "Sommer"
+      "Abendessen",
+      "Italienisch",
+      "Ganzjährig"
     ],
-    "dietCategory": "vegan",
+    "dietCategory": "vegetarian",
     "allergens": [
       "gluten",
       "milch"
@@ -4720,7 +5160,8 @@
       "fiber": 11.2
     },
     "sourceType": "mahlzyt",
-    "_migrated_v2": true
+    "_migrated_v2": true,
+    "imageKochen": null
   },
   {
     "id": "pas-05",
@@ -5561,7 +6002,9 @@
       "fiber": 11.2
     },
     "sourceType": "mahlzyt",
-    "_migrated_v2": true
+    "_migrated_v2": true,
+    "imageZutaten": null,
+    "imageKochen": null
   },
   {
     "id": "pas-18",
@@ -25170,7 +25613,7 @@
     "timeMinutes": 150,
     "basePortions": 4,
     "weatherType": "warm",
-    "source": "fooby.ch",
+    "source": "MahlZyt",
     "sourceType": "imported",
     "approved": false,
     "description": "Saftige Grillschnecken mit selbst gemachtem Grillbrot und würzig geschmorten Tomaten — ein herrliches Sommer-Grillmenü für die ganze Familie.",
@@ -25178,7 +25621,9 @@
       "Abendessen",
       "Grillgericht",
       "Sommer",
-      "Für Gäste"
+      "Für Gäste",
+      "Schweizerisch",
+      "Mealprep-geeignet"
     ],
     "ingredients": [
       {
@@ -25278,125 +25723,6 @@
         "perPortions": 4
       }
     ],
-    "ingredientGroups": [
-      {
-        "name": "Grillbrotteig",
-        "ingredients": [
-          {
-            "name": "Weissmehl",
-            "amount": 250,
-            "unit": "g",
-            "perPortions": 4
-          },
-          {
-            "name": "Hefe",
-            "amount": 8,
-            "unit": "g",
-            "perPortions": 4
-          },
-          {
-            "name": "Wasser",
-            "amount": 150,
-            "unit": "ml",
-            "perPortions": 4
-          },
-          {
-            "name": "Olivenöl",
-            "amount": 2,
-            "unit": "EL",
-            "perPortions": 4
-          },
-          {
-            "name": "Salz",
-            "amount": 0.75,
-            "unit": "TL",
-            "perPortions": 4
-          },
-          {
-            "name": "Rosmarin (fein geschnitten)",
-            "amount": 2,
-            "unit": "Zweiglein",
-            "perPortions": 4
-          }
-        ]
-      },
-      {
-        "name": "Gegrillte Tomaten",
-        "ingredients": [
-          {
-            "name": "Tomaten",
-            "amount": 450,
-            "unit": "g",
-            "perPortions": 4
-          },
-          {
-            "name": "rote Zwiebel (in feinen Streifen)",
-            "amount": 1,
-            "unit": "Stk",
-            "perPortions": 4
-          },
-          {
-            "name": "Knoblauchzehe (in Scheibchen)",
-            "amount": 1,
-            "unit": "Zehe",
-            "perPortions": 4
-          },
-          {
-            "name": "rote Peperoncini (entkernt, grob gehackt)",
-            "amount": 1,
-            "unit": "Stk",
-            "perPortions": 4
-          },
-          {
-            "name": "Rosmarin",
-            "amount": 1,
-            "unit": "Zweiglein",
-            "perPortions": 4
-          },
-          {
-            "name": "Basilikum",
-            "amount": 4,
-            "unit": "Zweiglein",
-            "perPortions": 4
-          },
-          {
-            "name": "geräucherter Paprika",
-            "amount": 1,
-            "unit": "Msp.",
-            "perPortions": 4
-          },
-          {
-            "name": "Rotwein",
-            "amount": 2,
-            "unit": "EL",
-            "perPortions": 4
-          },
-          {
-            "name": "Olivenöl",
-            "amount": 2,
-            "unit": "EL",
-            "perPortions": 4
-          },
-          {
-            "name": "Salz",
-            "amount": 0.5,
-            "unit": "TL",
-            "perPortions": 4
-          }
-        ]
-      },
-      {
-        "name": "Grillschnecken",
-        "ingredients": [
-          {
-            "name": "Grillschnecken",
-            "amount": 4,
-            "unit": "Stk",
-            "perPortions": 4
-          }
-        ]
-      }
-    ],
     "steps": [
       "Für den Teig den Rosmarin fein schneiden und zusammen mit dem Mehl, dem Salz und der Hefe in eine grosse Schüssel geben.",
       "Wasser und Olivenöl dazugiessen und alles zu einem weichen, glatten Teig kneten — das dauert etwa 10 Minuten.",
@@ -25409,7 +25735,6 @@
       "Die Grillbrote ebenfalls beidseitig je ca. 3 Minuten grillieren, bis sie goldbraune Streifen haben.",
       "Die Tomaten mit Salz würzen, die Basilikumblätter zerzupfen und darüberstreuen. Alles zusammen servieren."
     ],
-    "tips": "Die Grillbrote können auch einen Tag im Voraus als Teig vorbereitet und im Kühlschrank aufbewahrt werden — einfach rechtzeitig vor dem Grillieren auf Raumtemperatur bringen. Wer es schärfer mag, lässt die Kerne im Peperoncini.",
     "dietCategory": "meat",
     "imageUrl": null,
     "imageZutaten": null,
@@ -25422,15 +25747,15 @@
   },
   {
     "id": "fle-71",
-    "name": "Grillplatte",
+    "name": "Grillplatte mit Gurken-Rettich Salat",
     "category": "Fleisch & Geflügel",
-    "timeMinutes": 35,
+    "timeMinutes": 30,
     "basePortions": 6,
     "weatherType": "warm",
-    "source": "fooby.ch",
+    "source": "MahlZyt",
     "sourceType": "imported",
     "approved": false,
-    "description": "Eine klassische Schweizer Grillplatte mit saftigen Würsten, knusprigem Speck und würzigem Grillkäse — dazu ein frischer Gurken-Rettich-Salat und ein fruchtiger Himbeersenf.",
+    "description": "Eine klassische Schweizer Grillplatte mit saftigen Würsten, knusprigem Speck und würzigem Grillkäse — dazu ein frischer Gurken-Rettich-Salat",
     "tags": [
       "Abendessen",
       "Grillgericht",
@@ -25440,9 +25765,45 @@
     ],
     "ingredients": [
       {
-        "name": "Brot (in Scheiben)",
-        "amount": 8,
+        "name": "Saurer Halbrahm",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Rettich (fein geschnitten)",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Gurke (fein geschnitten)",
+        "amount": 200,
+        "unit": "g",
+        "perPortions": 6
+      },
+      {
+        "name": "Apfel, grün (fein geschnitten)",
+        "amount": 1,
         "unit": "Stk",
+        "perPortions": 6
+      },
+      {
+        "name": "Bio-Zitrone (Saft)",
+        "amount": 1,
+        "unit": "Stk",
+        "perPortions": 6
+      },
+      {
+        "name": "Salz",
+        "amount": 0.5,
+        "unit": "TL",
+        "perPortions": 6
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
         "perPortions": 6
       },
       {
@@ -25476,189 +25837,20 @@
         "perPortions": 6
       },
       {
-        "name": "Bio-Zitrone",
-        "amount": 1,
+        "name": "Brot (in Scheiben)",
+        "amount": 8,
         "unit": "Stk",
         "perPortions": 6
-      },
-      {
-        "name": "Rettich",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 6
-      },
-      {
-        "name": "Gurke",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 6
-      },
-      {
-        "name": "Grüner Apfel",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 6
-      },
-      {
-        "name": "Himbeeren",
-        "amount": 50,
-        "unit": "g",
-        "perPortions": 6
-      },
-      {
-        "name": "Flüssiger Honig",
-        "amount": 1,
-        "unit": "TL",
-        "perPortions": 6
-      },
-      {
-        "name": "Milder Senf",
-        "amount": 4,
-        "unit": "EL",
-        "perPortions": 6
-      },
-      {
-        "name": "Saurer Halbrahm",
-        "amount": 100,
-        "unit": "g",
-        "perPortions": 6
-      },
-      {
-        "name": "Salz",
-        "amount": 0.5,
-        "unit": "TL",
-        "perPortions": 6
-      },
-      {
-        "name": "Pfeffer",
-        "amount": 1,
-        "unit": "Prise",
-        "perPortions": 6
-      }
-    ],
-    "ingredientGroups": [
-      {
-        "name": "Gurken-Rettich-Salat",
-        "ingredients": [
-          {
-            "name": "Saurer Halbrahm",
-            "amount": 100,
-            "unit": "g",
-            "perPortions": 6
-          },
-          {
-            "name": "Rettich (fein geschnitten)",
-            "amount": 200,
-            "unit": "g",
-            "perPortions": 6
-          },
-          {
-            "name": "Gurke (fein geschnitten)",
-            "amount": 200,
-            "unit": "g",
-            "perPortions": 6
-          },
-          {
-            "name": "Grüner Apfel (fein geschnitten)",
-            "amount": 1,
-            "unit": "Stk",
-            "perPortions": 6
-          },
-          {
-            "name": "Bio-Zitrone (Saft)",
-            "amount": 1,
-            "unit": "Stk",
-            "perPortions": 6
-          },
-          {
-            "name": "Salz",
-            "amount": 0.5,
-            "unit": "TL",
-            "perPortions": 6
-          },
-          {
-            "name": "Pfeffer",
-            "amount": 1,
-            "unit": "Prise",
-            "perPortions": 6
-          }
-        ]
-      },
-      {
-        "name": "Himbeersenf",
-        "ingredients": [
-          {
-            "name": "Himbeeren",
-            "amount": 50,
-            "unit": "g",
-            "perPortions": 6
-          },
-          {
-            "name": "Milder Senf",
-            "amount": 4,
-            "unit": "EL",
-            "perPortions": 6
-          },
-          {
-            "name": "Flüssiger Honig",
-            "amount": 1,
-            "unit": "TL",
-            "perPortions": 6
-          }
-        ]
-      },
-      {
-        "name": "Grillgut",
-        "ingredients": [
-          {
-            "name": "Cipollatas",
-            "amount": 6,
-            "unit": "Stk",
-            "perPortions": 6
-          },
-          {
-            "name": "Bratspeck (in Tranchen)",
-            "amount": 6,
-            "unit": "Stk",
-            "perPortions": 6
-          },
-          {
-            "name": "Cervelats",
-            "amount": 2,
-            "unit": "Stk",
-            "perPortions": 6
-          },
-          {
-            "name": "Grillschnecken",
-            "amount": 2,
-            "unit": "Stk",
-            "perPortions": 6
-          },
-          {
-            "name": "Grillkäse",
-            "amount": 2,
-            "unit": "Stk",
-            "perPortions": 6
-          },
-          {
-            "name": "Brot (in Scheiben)",
-            "amount": 8,
-            "unit": "Stk",
-            "perPortions": 6
-          }
-        ]
       }
     ],
     "steps": [
       "Für den Salat den sauren Halbrahm in eine Schüssel geben und mit Salz, Pfeffer und dem Saft der Bio-Zitrone verrühren.",
       "Rettich, Gurke und Apfel in feine Scheiben oder Streifen schneiden, zum Dressing geben und alles gut vermischen. Den Salat kühl stellen.",
-      "Die Himbeeren durch ein feines Sieb in eine kleine Schüssel streichen, damit die Kerne zurückbleiben. Senf und Honig beigeben und zu einem glatten Himbeersenf verrühren.",
       "Jede Cipollata mit einer Tranche Bratspeck umwickeln.",
       "Den Grill auf mittlere Hitze (ca. 200 °C) vorheizen. Cipollatas mit Speck, Cervelats, Grillschnecken und Grillkäse bei geschlossenem Deckel ca. 10 Minuten grillieren und dabei regelmässig wenden, bis alles gleichmässig gegart und leicht gebräunt ist.",
       "Das Brot kurz auf dem Grill rösten.",
       "Alle Würste und den Grillkäse auf einer grossen Platte anrichten, den Gurken-Rettich-Salat und den Himbeersenf dazustellen und das Brot dazu servieren."
     ],
-    "tips": "Der Himbeersenf lässt sich auch mit Tiefkühlhimbeeren zubereiten. Für eine grössere Gesellschaft lässt sich die Platte beliebig mit weiteren Grillspezialitäten ergänzen.",
     "dietCategory": "meat",
     "imageUrl": null,
     "imageZutaten": null,

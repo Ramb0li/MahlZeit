@@ -136,25 +136,29 @@
   "basePortions": 4,
   "description": "Herzhaft, farbenfroh und sättigend – diese Käsepolenta mit Ofengemüse und Spiegelei bringt mediterrane Wärme auf den Teller.",
   "steps": [
-    "1.  Zucchetti, Peperoni und Champignons in Würfel schneiden. Cherrytomaten halbieren.",
-    "2. Gemüsewürfel in eine Gratinform geben. Oliven beigeben, mit All’Arrabbiata-Gewürz, Salz und Pfeffer würzen. Rosmarin darauf verteilen, mit Olivenöl beträufeln und mischen.",
-    "3. Ofengemüse bei 200 °C ca. 20 Minuten schmoren.",
-    "4. Milch und Gemüsebouillon in einer Pfanne aufkochen. Hitze reduzieren, Polenta unter ständigem Rühren einrieseln lassen.",
-    "5. Polenta bei kleiner Hitze unter regelmässigem Rühren ca. 10–15 Minuten garen. Pfanne vom Herd nehmen oder Herd ausschalten.",
-    "6. Geriebenen Parmesan sorgfältig unter die Polenta rühren. Butter beigeben, mit Pfeffer abschmecken. Salz erst nach dem Probieren ergänzen.",
-    "7. Cherrytomaten zum Ofengemüse geben und weitere 5–10 Minuten mitschmoren.",
-    "8. Wenig Butter oder Olivenöl in einer beschichteten Pfanne erhitzen. Eier aufschlagen und zu Spiegeleiern braten. Mit Salz und Pfeffer würzen.",
-    "9. Polenta, Ofengemüse und Spiegeleier auf Tellern anrichten."
+    "Zucchetti, Peperoni und Champignons in Würfel schneiden. Cherrytomaten halbieren.",
+    "Gemüsewürfel in eine Gratinform geben. Oliven beigeben, mit All’Arrabbiata-Gewürz, Salz und Pfeffer würzen. Rosmarin darauf verteilen, mit Olivenöl beträufeln und mischen.",
+    "Ofengemüse bei 200 °C ca. 20 Minuten schmoren.",
+    "Milch und Gemüsebouillon in einer Pfanne aufkochen. Hitze reduzieren, Polenta unter ständigem Rühren einrieseln lassen.",
+    "Polenta bei kleiner Hitze unter regelmässigem Rühren ca. 10–15 Minuten garen. Pfanne vom Herd nehmen oder Herd ausschalten.",
+    "Geriebenen Parmesan sorgfältig unter die Polenta rühren. Butter beigeben, mit Pfeffer abschmecken. Salz erst nach dem Probieren ergänzen.",
+    "Cherrytomaten zum Ofengemüse geben und weitere 5–10 Minuten mitschmoren.",
+    "Wenig Butter oder Olivenöl in einer beschichteten Pfanne erhitzen. Eier aufschlagen und zu Spiegeleiern braten. Mit Salz und Pfeffer würzen.",
+    "Polenta, Ofengemüse und Spiegeleier auf Tellern anrichten."
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-07-1781044634643.jpg",
   "tags": [
     "Herbst",
     "Winter",
     "Kinderfreundlich",
-    "Mealprep-geeignet",
     "Frühling",
     "Mittagessen",
-    "Abendessen"
+    "Abendessen",
+    "Resteverwertung",
+    "Budgetfreundlich",
+    "Pfannengericht",
+    "Ofengericht",
+    "Für Gäste"
   ],
   "allergens": [
     "ei",

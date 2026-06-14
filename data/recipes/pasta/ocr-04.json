@@ -11,7 +11,11 @@
     "Winter",
     "Mittagessen",
     "Abendessen",
-    "Italienisch"
+    "Italienisch",
+    "Einfrierbar",
+    "Resteverwertung",
+    "Gut zum Mitnehmen",
+    "Pfannengericht"
   ],
   "weatherType": "kalt",
   "source": "Familien-Rezeptbuch",

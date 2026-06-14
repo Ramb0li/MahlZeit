@@ -1,14 +1,14 @@
 {
   "id": "fle-71",
-  "name": "Grillplatte",
+  "name": "Grillplatte mit Gurken-Rettich Salat",
   "category": "Fleisch & Geflügel",
-  "timeMinutes": 35,
+  "timeMinutes": 30,
   "basePortions": 6,
   "weatherType": "warm",
-  "source": "fooby.ch",
+  "source": "MahlZyt",
   "sourceType": "imported",
   "approved": false,
-  "description": "Eine klassische Schweizer Grillplatte mit saftigen Würsten, knusprigem Speck und würzigem Grillkäse — dazu ein frischer Gurken-Rettich-Salat und ein fruchtiger Himbeersenf.",
+  "description": "Eine klassische Schweizer Grillplatte mit saftigen Würsten, knusprigem Speck und würzigem Grillkäse — dazu ein frischer Gurken-Rettich-Salat",
   "tags": [
     "Abendessen",
     "Grillgericht",
@@ -18,9 +18,45 @@
   ],
   "ingredients": [
     {
-      "name": "Brot (in Scheiben)",
-      "amount": 8,
+      "name": "Saurer Halbrahm",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Rettich (fein geschnitten)",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Gurke (fein geschnitten)",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Apfel, grün (fein geschnitten)",
+      "amount": 1,
       "unit": "Stk",
+      "perPortions": 6
+    },
+    {
+      "name": "Bio-Zitrone (Saft)",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 6
+    },
+    {
+      "name": "Salz",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 6
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
       "perPortions": 6
     },
     {
@@ -54,189 +90,20 @@
       "perPortions": 6
     },
     {
-      "name": "Bio-Zitrone",
-      "amount": 1,
+      "name": "Brot (in Scheiben)",
+      "amount": 8,
       "unit": "Stk",
       "perPortions": 6
-    },
-    {
-      "name": "Rettich",
-      "amount": 200,
-      "unit": "g",
-      "perPortions": 6
-    },
-    {
-      "name": "Gurke",
-      "amount": 200,
-      "unit": "g",
-      "perPortions": 6
-    },
-    {
-      "name": "Grüner Apfel",
-      "amount": 1,
-      "unit": "Stk",
-      "perPortions": 6
-    },
-    {
-      "name": "Himbeeren",
-      "amount": 50,
-      "unit": "g",
-      "perPortions": 6
-    },
-    {
-      "name": "Flüssiger Honig",
-      "amount": 1,
-      "unit": "TL",
-      "perPortions": 6
-    },
-    {
-      "name": "Milder Senf",
-      "amount": 4,
-      "unit": "EL",
-      "perPortions": 6
-    },
-    {
-      "name": "Saurer Halbrahm",
-      "amount": 100,
-      "unit": "g",
-      "perPortions": 6
-    },
-    {
-      "name": "Salz",
-      "amount": 0.5,
-      "unit": "TL",
-      "perPortions": 6
-    },
-    {
-      "name": "Pfeffer",
-      "amount": 1,
-      "unit": "Prise",
-      "perPortions": 6
-    }
-  ],
-  "ingredientGroups": [
-    {
-      "name": "Gurken-Rettich-Salat",
-      "ingredients": [
-        {
-          "name": "Saurer Halbrahm",
-          "amount": 100,
-          "unit": "g",
-          "perPortions": 6
-        },
-        {
-          "name": "Rettich (fein geschnitten)",
-          "amount": 200,
-          "unit": "g",
-          "perPortions": 6
-        },
-        {
-          "name": "Gurke (fein geschnitten)",
-          "amount": 200,
-          "unit": "g",
-          "perPortions": 6
-        },
-        {
-          "name": "Grüner Apfel (fein geschnitten)",
-          "amount": 1,
-          "unit": "Stk",
-          "perPortions": 6
-        },
-        {
-          "name": "Bio-Zitrone (Saft)",
-          "amount": 1,
-          "unit": "Stk",
-          "perPortions": 6
-        },
-        {
-          "name": "Salz",
-          "amount": 0.5,
-          "unit": "TL",
-          "perPortions": 6
-        },
-        {
-          "name": "Pfeffer",
-          "amount": 1,
-          "unit": "Prise",
-          "perPortions": 6
-        }
-      ]
-    },
-    {
-      "name": "Himbeersenf",
-      "ingredients": [
-        {
-          "name": "Himbeeren",
-          "amount": 50,
-          "unit": "g",
-          "perPortions": 6
-        },
-        {
-          "name": "Milder Senf",
-          "amount": 4,
-          "unit": "EL",
-          "perPortions": 6
-        },
-        {
-          "name": "Flüssiger Honig",
-          "amount": 1,
-          "unit": "TL",
-          "perPortions": 6
-        }
-      ]
-    },
-    {
-      "name": "Grillgut",
-      "ingredients": [
-        {
-          "name": "Cipollatas",
-          "amount": 6,
-          "unit": "Stk",
-          "perPortions": 6
-        },
-        {
-          "name": "Bratspeck (in Tranchen)",
-          "amount": 6,
-          "unit": "Stk",
-          "perPortions": 6
-        },
-        {
-          "name": "Cervelats",
-          "amount": 2,
-          "unit": "Stk",
-          "perPortions": 6
-        },
-        {
-          "name": "Grillschnecken",
-          "amount": 2,
-          "unit": "Stk",
-          "perPortions": 6
-        },
-        {
-          "name": "Grillkäse",
-          "amount": 2,
-          "unit": "Stk",
-          "perPortions": 6
-        },
-        {
-          "name": "Brot (in Scheiben)",
-          "amount": 8,
-          "unit": "Stk",
-          "perPortions": 6
-        }
-      ]
     }
   ],
   "steps": [
     "Für den Salat den sauren Halbrahm in eine Schüssel geben und mit Salz, Pfeffer und dem Saft der Bio-Zitrone verrühren.",
     "Rettich, Gurke und Apfel in feine Scheiben oder Streifen schneiden, zum Dressing geben und alles gut vermischen. Den Salat kühl stellen.",
-    "Die Himbeeren durch ein feines Sieb in eine kleine Schüssel streichen, damit die Kerne zurückbleiben. Senf und Honig beigeben und zu einem glatten Himbeersenf verrühren.",
     "Jede Cipollata mit einer Tranche Bratspeck umwickeln.",
     "Den Grill auf mittlere Hitze (ca. 200 °C) vorheizen. Cipollatas mit Speck, Cervelats, Grillschnecken und Grillkäse bei geschlossenem Deckel ca. 10 Minuten grillieren und dabei regelmässig wenden, bis alles gleichmässig gegart und leicht gebräunt ist.",
     "Das Brot kurz auf dem Grill rösten.",
     "Alle Würste und den Grillkäse auf einer grossen Platte anrichten, den Gurken-Rettich-Salat und den Himbeersenf dazustellen und das Brot dazu servieren."
   ],
-  "tips": "Der Himbeersenf lässt sich auch mit Tiefkühlhimbeeren zubereiten. Für eine grössere Gesellschaft lässt sich die Platte beliebig mit weiteren Grillspezialitäten ergänzen.",
   "dietCategory": "meat",
   "imageUrl": null,
   "imageZutaten": null,

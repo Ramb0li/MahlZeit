@@ -3,19 +3,162 @@
   "name": "Linsen-Gemüse-Lasagne",
   "category": "Aufläufe & Gratins",
   "timeMinutes": 75,
-  "ingredients": [],
+  "ingredients": [
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 2,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Karotte",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knollensellerie",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Peperoni",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Zucchetti",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomatenmark",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "grüne Linsen",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebouillon",
+      "amount": 4,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Italienische Kräuter",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "All’arrabbiata Gewürz",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 8
+    },
+    {
+      "name": "Mehl",
+      "amount": 60,
+      "unit": "g",
+      "perPortions": 8
+    },
+    {
+      "name": "Milch oder Sojadrink",
+      "amount": 1,
+      "unit": "l",
+      "perPortions": 8
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 8
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 2,
+      "unit": "Prisen",
+      "perPortions": 8
+    },
+    {
+      "name": "Muskatnuss",
+      "amount": 2,
+      "unit": "Prisen",
+      "perPortions": 8
+    },
+    {
+      "name": "Lasagneblätter",
+      "amount": 1,
+      "unit": "Pkg",
+      "perPortions": 8
+    },
+    {
+      "name": "Mozzarella, gerieben",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 8
+    },
+    {
+      "name": "Reibkäse (z.B. Sbrinz oder Parmesan)",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 8
+    }
+  ],
   "weatherType": "kalt",
-  "source": "Cuiseline",
-  "basePortions": 4,
-  "description": "Klassische Lasagne vegetarisch.",
+  "source": "MahlZeit",
+  "basePortions": 6,
+  "description": "Schicht für Schicht voller Gemüse, Linsen und cremiger Béchamelsauce – eine Lasagne zum Wohlfühlen.",
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/pas-02-1780699528706.jpg",
   "tags": [
     "Mealprep-geeignet",
-    "Mittagessen",
+    "Mittagsgericht",
     "Herbst",
     "Winter",
     "Ofengericht",
-    "Abendessen"
+    "Vegetarisch",
+    "Kinderfreundlich",
+    "Frühling",
+    "Abendgericht",
+    "Italienisch"
   ],
   "imageZutaten": null,
   "imageKochen": null,
@@ -34,13 +177,13 @@
   "steps": [
     "Zwiebel und Knoblauch fein hacken. Karotte, Knollensellerie, Zucchetti, Peperoni und Champignons klein schneiden.",
     "Olivenöl in einer grossen Pfanne erhitzen. Gemüse und Champignons beigeben und andämpfen.",
-    "Tomatenpüree hinzufügen und kurz mitrösten.",
+    "Tomatenmark hinzufügen und kurz mitrösten.",
     "Linsen beigeben und kurz mitdämpfen.",
     "Optional mit Weisswein ablöschen und Flüssigkeit einkochen lassen.",
-    "Gemüsebouillon beigeben und aufkochen. Mit italienischen Kräutern, All’arrabbiata-Gewürz, Salz und Pfeffer würzen.",
+    "Gemüsebouillon beigeben und aufkochen. Mit italienischen Kräutern, All’arrabbiata Gewürz, Salz und Pfeffer würzen.",
     "Linsen-Gemüse-Sauce bei kleiner Hitze ca. 15 Minuten köcheln lassen. Sauce abschmecken.",
     "Backofen auf 200 °C Ober-/Unterhitze vorheizen. Gratinform mit wenig Butter einfetten.",
-    "Für Béchamelsauce Butter in einer Pfanne schmelzen. Mehl beigeben und unter Rühren mit Schwingbesen kurz dünsten, ohne dass Mehl Farbe annimmt.",
+    "Für Béchamelsauce Butter in einer Pfanne schmelzen. Mehl beigeben und unter Rühren mit Schwingbesen kurz dünsten.",
     "Milch oder Sojadrink auf einmal dazugiessen und unter ständigem Rühren aufkochen.",
     "Mit Salz, Pfeffer und Muskatnuss würzen. Hitze reduzieren und Sauce unter gelegentlichem Rühren ca. 10 Minuten köcheln lassen, bis sie sämig ist.",
     "Wenig Béchamelsauce auf Boden der vorbereiteten Form verteilen.",
@@ -50,5 +193,160 @@
     "Lasagne in Ofenmitte ca. 35–40 Minuten backen, bis Oberfläche goldbraun ist."
   ],
   "sourceType": "mahlzyt",
-  "_migrated_v2": true
+  "_migrated_v2": true,
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Linsen-Gemüse-Sauce",
+      "ingredients": [
+        {
+          "name": "Zwiebel",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Knoblauch",
+          "amount": 2,
+          "unit": "Zehe",
+          "perPortions": 4
+        },
+        {
+          "name": "Karotte",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Knollensellerie",
+          "amount": 200,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Peperoni",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Zucchetti",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 3,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Tomatenmark",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "grüne Linsen",
+          "amount": 200,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Gemüsebouillon",
+          "amount": 4,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Italienische Kräuter",
+          "amount": 2,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "All’arrabbiata Gewürz",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Béchamelsauce",
+      "ingredients": [
+        {
+          "name": "Butter",
+          "amount": 100,
+          "unit": "g",
+          "perPortions": 8
+        },
+        {
+          "name": "Mehl",
+          "amount": 60,
+          "unit": "g",
+          "perPortions": 8
+        },
+        {
+          "name": "Milch oder Sojadrink",
+          "amount": 1,
+          "unit": "l",
+          "perPortions": 8
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 8
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 2,
+          "unit": "Prisen",
+          "perPortions": 8
+        },
+        {
+          "name": "Muskatnuss",
+          "amount": 2,
+          "unit": "Prisen",
+          "perPortions": 8
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Lasagne",
+      "ingredients": [
+        {
+          "name": "Lasagneblätter",
+          "amount": 1,
+          "unit": "Pkg",
+          "perPortions": 8
+        },
+        {
+          "name": "Mozzarella, gerieben",
+          "amount": 250,
+          "unit": "g",
+          "perPortions": 8
+        },
+        {
+          "name": "Reibkäse (z.B. Sbrinz oder Parmesan)",
+          "amount": 200,
+          "unit": "g",
+          "perPortions": 8
+        }
+      ]
+    }
+  ]
 }

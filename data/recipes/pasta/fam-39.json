@@ -9,10 +9,17 @@
     "Kinderfreundlich",
     "Mittagessen",
     "Abendessen",
-    "Italienisch"
+    "Italienisch",
+    "Einfrierbar",
+    "Resteverwertung",
+    "Budgetfreundlich",
+    "Für Gäste",
+    "Gut zum Mitnehmen",
+    "Pfannengericht",
+    "Frühling"
   ],
   "weatherType": "warm",
-  "source": "Familien-Rezeptbuch",
+  "source": "Cuiseline",
   "basePortions": 4,
   "description": "Sonnige Tomaten, duftender Basilikum und Spaghetti – ein frischer, unkomplizierter Pasta-Klassiker für jeden Tag.",
   "ingredients": [

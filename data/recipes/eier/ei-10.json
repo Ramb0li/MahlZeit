@@ -1,13 +1,20 @@
 {
   "id": "ei-10",
   "name": "Cacao Smoothie Bowl",
-  "category": "Getränke & Smoothies",
+  "category": "Müesli, Porridge & Frühstücksschalen",
   "timeMinutes": 10,
   "tags": [
     "Frühstück",
     "Kinderfreundlich",
     "Mealprep-geeignet",
-    "Ganzjährig"
+    "Ganzjährig",
+    "Brunch",
+    "Snack",
+    "Dessert",
+    "Resteverwertung",
+    "Budgetfreundlich",
+    "Gut zum Mitnehmen",
+    "Ohne Kochen"
   ],
   "weatherType": "neutral",
   "source": "Cuiseline",
@@ -89,11 +96,11 @@
     }
   ],
   "steps": [
-    "1. Datteln entsteinen und in kleine Stücke schneiden.",
-    "2. Alle Zutaten zusammen mit den zerkleinerten Datteln in den Mixer geben.",
-    "3. Alles fein pürieren, bis eine cremige, dickflüssige Masse entsteht.",
-    "4. Smoothie-Masse in eine Schüssel füllen.",
-    "5. Mit Granola, saisonalen Früchten/Beeren und Cacao Nibs garnieren."
+    "Datteln entsteinen und in kleine Stücke schneiden.",
+    "Alle Zutaten zusammen mit den zerkleinerten Datteln in den Mixer geben.",
+    "Alles fein pürieren, bis eine cremige, dickflüssige Masse entsteht.",
+    "Smoothie-Masse in eine Schüssel füllen.",
+    "Mit Granola, saisonalen Früchten/Beeren und Cacao Nibs garnieren."
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-10-1-1780867619910.jpg",
   "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-10-2-1780867626293.jpg",

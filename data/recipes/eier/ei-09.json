@@ -1,14 +1,21 @@
 {
   "id": "ei-09",
   "name": "Blueberry Smoothie Bowl",
-  "category": "Getränke & Smoothies",
+  "category": "Müesli, Porridge & Frühstücksschalen",
   "timeMinutes": 10,
   "tags": [
     "Frühstück",
     "Kinderfreundlich",
     "Mealprep-geeignet",
     "Frühling",
-    "Sommer"
+    "Sommer",
+    "Brunch",
+    "Snack",
+    "Dessert",
+    "Resteverwertung",
+    "Budgetfreundlich",
+    "Ohne Kochen",
+    "Gut zum Mitnehmen"
   ],
   "weatherType": "warm",
   "source": "Cuiseline",
@@ -84,10 +91,10 @@
     }
   ],
   "steps": [
-    "1. Heidelbeeren, Banane, Kokosjoghurt, Haferdrink, Leinsamen, Hanfsamen, Haferflocken und zerkleinerte Datteln in den Mixer geben.",
-    "2. Alles fein pürieren, bis eine cremige, dickflüssige Masse entsteht.",
-    "3. Smoothie-Masse in eine Schüssel füllen.",
-    "4. Mit Granola bzw. Nüssen und Kernen und Früchten nach Wahl garnieren."
+    "Heidelbeeren, Banane, Kokosjoghurt, Haferdrink, Leinsamen, Hanfsamen, Haferflocken und zerkleinerte Datteln in den Mixer geben.",
+    "Alles fein pürieren, bis eine cremige, dickflüssige Masse entsteht.",
+    "Smoothie-Masse in eine Schüssel füllen.",
+    "Mit Granola bzw. Nüssen und Kernen und Früchten nach Wahl garnieren."
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---blueberry-smoothie-bowl-2--1780577059410.jpeg",
   "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---blueberry-smoothie-bowl-3--1780577067152.jpeg",

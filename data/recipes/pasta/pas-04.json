@@ -5,21 +5,27 @@
   "timeMinutes": 25,
   "ingredients": [
     {
-      "name": "Vollkornspaghetti",
-      "amount": 500,
-      "unit": "g",
+      "name": "Pinien- oder Zederkerne (zum Garnieren)",
+      "amount": 1,
+      "unit": "Handvoll",
       "perPortions": 4
     },
     {
       "name": "Basilikum",
       "amount": 4,
-      "unit": "Handvoll",
+      "unit": "Bund",
       "perPortions": 4
     },
     {
-      "name": "Pinienkerne (oder Zedernkerne)",
-      "amount": 100,
-      "unit": "g",
+      "name": "Knoblauch",
+      "amount": 2,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Pinien- oder Zederkerne",
+      "amount": 4,
+      "unit": "EL",
       "perPortions": 4
     },
     {
@@ -29,7 +35,7 @@
       "perPortions": 4
     },
     {
-      "name": "Veganer Parmesan",
+      "name": "Parmesan",
       "amount": 100,
       "unit": "g",
       "perPortions": 4
@@ -39,6 +45,24 @@
       "amount": 8,
       "unit": "Stk",
       "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 1,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Vollkornspaghetti",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "grüne Bohnen",
+      "amount": 1,
+      "unit": "g",
+      "perPortions": 4
     }
   ],
   "weatherType": "warm",
@@ -46,21 +70,21 @@
   "basePortions": 4,
   "description": "Selbstgemachtes Basilikum-Pesto mit Vollkornspaghetti und kleinen Kartoffeln.",
   "steps": [
-    "1. Pinienkerne ohne Fett in Pfanne rösten, beiseitestellen.",
-    "2. Basilikum waschen, Blätter abzupfen. Etwas zum Garnieren beiseite legen.",
-    "3. Restliches Basilikum mit Olivenöl, veganem Parmesan und Pinienkerne mit Stabmixer pürieren. Mit Salz und Pfeffer würzen.",
-    "4. Kartoffeln und Spaghetti in Salzwasser al dente kochen, abgiessen.",
-    "5. Alles mit Pesto mischen, mit Pinienkerne und veganem Parmesan garnieren."
+    "Pinienkerne ohne Fett in Pfanne rösten, beiseitestellen.",
+    "Basilikum waschen, Blätter abzupfen. Etwas zum Garnieren beiseite legen.",
+    "Restliches Basilikum mit Olivenöl, veganem Parmesan und Pinienkerne mit Stabmixer pürieren. Mit Salz und Pfeffer würzen.",
+    "Kartoffeln und Spaghetti in Salzwasser al dente kochen, abgiessen.",
+    "Alles mit Pesto mischen, mit Pinienkerne und veganem Parmesan garnieren."
   ],
-  "tips": "",
   "imageUrl": "/images/recipes/cuiselin-pesto-genovese.jpg",
   "imageZutaten": "/images/recipes/cuiselin-pesto-genovese-zutaten.jpg",
   "tags": [
     "Mittagessen",
-    "Frühling",
-    "Sommer"
+    "Abendessen",
+    "Italienisch",
+    "Ganzjährig"
   ],
-  "dietCategory": "vegan",
+  "dietCategory": "vegetarian",
   "allergens": [
     "gluten",
     "milch"
@@ -73,5 +97,6 @@
     "fiber": 11.2
   },
   "sourceType": "mahlzyt",
-  "_migrated_v2": true
+  "_migrated_v2": true,
+  "imageKochen": null
 }

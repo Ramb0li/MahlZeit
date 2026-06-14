@@ -1,7 +1,7 @@
 {
   "id": "ei-13",
   "name": "Smoothie Bowl mit Beeren und Zucchetti",
-  "category": "Desserts & Süsses",
+  "category": "Müesli, Porridge & Frühstücksschalen",
   "timeMinutes": 10,
   "ingredients": [
     {
@@ -80,7 +80,14 @@
     "Frühling",
     "Kinderfreundlich",
     "Frühstück",
-    "Mealprep-geeignet"
+    "Mealprep-geeignet",
+    "Brunch",
+    "Snack",
+    "Dessert",
+    "Resteverwertung",
+    "Budgetfreundlich",
+    "Gut zum Mitnehmen",
+    "Ohne Kochen"
   ],
   "imageZutaten": null,
   "imageKochen": null,

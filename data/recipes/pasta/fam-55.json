@@ -2,41 +2,26 @@
   "id": "fam-55",
   "name": "Zitronenravioli an Prosecco-Sauce",
   "category": "Pasta & Teigwaren",
-  "timeMinutes": 25,
-  "tags": [],
+  "timeMinutes": 20,
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Mealprep-geeignet",
+    "Für Gäste",
+    "Gut zum Mitnehmen",
+    "Pfannengericht",
+    "Ganzjährig",
+    "Italienisch"
+  ],
   "weatherType": "neutral",
-  "source": "Familien-Rezeptbuch",
+  "source": "MahlZeit",
   "basePortions": 4,
-  "description": "Festliche Zitronenravioli in Prosecco-Parmesan-Sauce.",
+  "description": "Cremig, frisch und festlich: Zitronenravioli an Prosecco-Sauce.",
   "ingredients": [
     {
       "name": "Zitronenravioli",
       "amount": 800,
       "unit": "g",
-      "perPortions": 4
-    },
-    {
-      "name": "Zwiebel",
-      "amount": 1,
-      "unit": "Stk",
-      "perPortions": 4
-    },
-    {
-      "name": "Prosecco/Champagner",
-      "amount": 2.5,
-      "unit": "dl",
-      "perPortions": 4
-    },
-    {
-      "name": "Rahm",
-      "amount": 1.5,
-      "unit": "dl",
-      "perPortions": 4
-    },
-    {
-      "name": "Sbrinz",
-      "amount": 2,
-      "unit": "Handvoll",
       "perPortions": 4
     },
     {
@@ -46,7 +31,31 @@
       "perPortions": 4
     },
     {
-      "name": "Zitronenschale (abgerieben)",
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Prosecco",
+      "amount": 2.5,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Sbrinz, gerieben",
+      "amount": 2,
+      "unit": "Handvoll",
+      "perPortions": 4
+    },
+    {
+      "name": "Rahm",
+      "amount": 1.5,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitrone",
       "amount": 0.5,
       "unit": "Stk",
       "perPortions": 4
@@ -65,10 +74,13 @@
     }
   ],
   "steps": [
-    "1. Zwiebel in Butter 5 Min. andämpfen.",
-    "2. Mit Prosecco ablöschen, einkochen.",
-    "3. Käse hinzufügen, schmelzen. Rahm, Zitronenöl/Schale beifügen, würzen.",
-    "4. Ravioli nach Anleitung kochen."
+    "Zwiebel fein schneiden. Zitronenschale fein abreiben.",
+    "Butter in einer Pfanne erwärmen. Zwiebel beigeben und ca. 5 Minuten andämpfen.",
+    "Mit Prosecco ablöschen und Flüssigkeit etwas einkochen lassen.",
+    "Käse beigeben und unter Rühren schmelzen lassen.",
+    "Rahm und Zitronenschale hinzufügen. Mit Salz und Pfeffer würzen und kurz köcheln lassen.",
+    "Inzwischen Ravioli nach Packungsangabe kochen.",
+    "Ravioli abgiessen, mit Sauce anrichten und servieren."
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fam-55-1780699429979.jpg",
   "imageZutaten": null,

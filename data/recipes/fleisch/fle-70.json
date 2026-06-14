@@ -5,7 +5,7 @@
   "timeMinutes": 150,
   "basePortions": 4,
   "weatherType": "warm",
-  "source": "fooby.ch",
+  "source": "MahlZyt",
   "sourceType": "imported",
   "approved": false,
   "description": "Saftige Grillschnecken mit selbst gemachtem Grillbrot und würzig geschmorten Tomaten — ein herrliches Sommer-Grillmenü für die ganze Familie.",
@@ -13,7 +13,9 @@
     "Abendessen",
     "Grillgericht",
     "Sommer",
-    "Für Gäste"
+    "Für Gäste",
+    "Schweizerisch",
+    "Mealprep-geeignet"
   ],
   "ingredients": [
     {
@@ -113,125 +115,6 @@
       "perPortions": 4
     }
   ],
-  "ingredientGroups": [
-    {
-      "name": "Grillbrotteig",
-      "ingredients": [
-        {
-          "name": "Weissmehl",
-          "amount": 250,
-          "unit": "g",
-          "perPortions": 4
-        },
-        {
-          "name": "Hefe",
-          "amount": 8,
-          "unit": "g",
-          "perPortions": 4
-        },
-        {
-          "name": "Wasser",
-          "amount": 150,
-          "unit": "ml",
-          "perPortions": 4
-        },
-        {
-          "name": "Olivenöl",
-          "amount": 2,
-          "unit": "EL",
-          "perPortions": 4
-        },
-        {
-          "name": "Salz",
-          "amount": 0.75,
-          "unit": "TL",
-          "perPortions": 4
-        },
-        {
-          "name": "Rosmarin (fein geschnitten)",
-          "amount": 2,
-          "unit": "Zweiglein",
-          "perPortions": 4
-        }
-      ]
-    },
-    {
-      "name": "Gegrillte Tomaten",
-      "ingredients": [
-        {
-          "name": "Tomaten",
-          "amount": 450,
-          "unit": "g",
-          "perPortions": 4
-        },
-        {
-          "name": "rote Zwiebel (in feinen Streifen)",
-          "amount": 1,
-          "unit": "Stk",
-          "perPortions": 4
-        },
-        {
-          "name": "Knoblauchzehe (in Scheibchen)",
-          "amount": 1,
-          "unit": "Zehe",
-          "perPortions": 4
-        },
-        {
-          "name": "rote Peperoncini (entkernt, grob gehackt)",
-          "amount": 1,
-          "unit": "Stk",
-          "perPortions": 4
-        },
-        {
-          "name": "Rosmarin",
-          "amount": 1,
-          "unit": "Zweiglein",
-          "perPortions": 4
-        },
-        {
-          "name": "Basilikum",
-          "amount": 4,
-          "unit": "Zweiglein",
-          "perPortions": 4
-        },
-        {
-          "name": "geräucherter Paprika",
-          "amount": 1,
-          "unit": "Msp.",
-          "perPortions": 4
-        },
-        {
-          "name": "Rotwein",
-          "amount": 2,
-          "unit": "EL",
-          "perPortions": 4
-        },
-        {
-          "name": "Olivenöl",
-          "amount": 2,
-          "unit": "EL",
-          "perPortions": 4
-        },
-        {
-          "name": "Salz",
-          "amount": 0.5,
-          "unit": "TL",
-          "perPortions": 4
-        }
-      ]
-    },
-    {
-      "name": "Grillschnecken",
-      "ingredients": [
-        {
-          "name": "Grillschnecken",
-          "amount": 4,
-          "unit": "Stk",
-          "perPortions": 4
-        }
-      ]
-    }
-  ],
   "steps": [
     "Für den Teig den Rosmarin fein schneiden und zusammen mit dem Mehl, dem Salz und der Hefe in eine grosse Schüssel geben.",
     "Wasser und Olivenöl dazugiessen und alles zu einem weichen, glatten Teig kneten — das dauert etwa 10 Minuten.",
@@ -244,7 +127,6 @@
     "Die Grillbrote ebenfalls beidseitig je ca. 3 Minuten grillieren, bis sie goldbraune Streifen haben.",
     "Die Tomaten mit Salz würzen, die Basilikumblätter zerzupfen und darüberstreuen. Alles zusammen servieren."
   ],
-  "tips": "Die Grillbrote können auch einen Tag im Voraus als Teig vorbereitet und im Kühlschrank aufbewahrt werden — einfach rechtzeitig vor dem Grillieren auf Raumtemperatur bringen. Wer es schärfer mag, lässt die Kerne im Peperoncini.",
   "dietCategory": "meat",
   "imageUrl": null,
   "imageZutaten": null,

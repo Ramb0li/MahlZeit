@@ -138,5 +138,7 @@
     "fiber": 11.2
   },
   "sourceType": "mahlzyt",
-  "_migrated_v2": true
+  "_migrated_v2": true,
+  "imageZutaten": null,
+  "imageKochen": null
 }
