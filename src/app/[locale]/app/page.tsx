@@ -37,8 +37,12 @@ export default async function AppPage({ params, searchParams }: PageProps) {
     redirect(`/${locale}/auth?error=no_group`);
   }
 
-  const [recipes, settings, constraints, group, access] = await Promise.all([
-    getRecipes(groupId),
+  const recipesRaw = await getRecipes(groupId);
+  const recipes = process.env.UPSTASH_REDIS_REST_URL
+    ? recipesRaw.filter(r => r.approved === true)
+    : recipesRaw;
+
+  const [settings, constraints, group, access] = await Promise.all([
     getSettings(groupId),
     getConstraints(groupId),
     getGroupById(groupId),
