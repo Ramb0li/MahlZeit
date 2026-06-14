@@ -69,6 +69,8 @@ export function ImportRecipeModal({ isPremium, onClose, onImported }: ImportReci
 
     const rawMins = safeNum(data.timeMinutes, 30);
     const mins    = rawMins > 0 ? rawMins : 30;
+    const rawActiveMins = safeNum(data.activeTimeMinutes, 0);
+    const activeMins    = rawActiveMins > 0 && rawActiveMins < mins ? rawActiveMins : undefined;
 
     const rawIng = Array.isArray(data.ingredients) ? data.ingredients : [];
     const ingredients: Ingredient[] = rawIng.map((ing: unknown) => {
@@ -99,6 +101,7 @@ export function ImportRecipeModal({ isPremium, onClose, onImported }: ImportReci
       description:  safeStr(data.description),
       category:     (VALID_CATS.includes(cat as Category) ? cat : 'Gemüsegerichte') as Category,
       timeMinutes:  mins,
+      ...(activeMins ? { activeTimeMinutes: activeMins } : {}),
       tags:         rawTags,
       ingredients,
       weatherType:  (VALID_WEATHER.includes(weather as WeatherType) ? weather : 'neutral') as WeatherType,

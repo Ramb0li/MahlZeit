@@ -660,7 +660,11 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                           </span>
                         </td>
                         <td style={{ padding: '10px 16px', fontSize: 12, color: 'var(--ink-2)' }}>
-                          {r.timeMinutes ? `${r.timeMinutes} min` : '—'}
+                          {r.timeMinutes
+                            ? r.activeTimeMinutes
+                              ? `${r.activeTimeMinutes} / ${r.timeMinutes} min`
+                              : `${r.timeMinutes} min`
+                            : '—'}
                         </td>
                         <td style={{ padding: '10px 16px' }}>
                           {r.imageUrl

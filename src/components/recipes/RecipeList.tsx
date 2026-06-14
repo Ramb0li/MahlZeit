@@ -154,7 +154,7 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
         }
       }
       if (filterTags.length > 0) {
-        const recipeTags = [...(r.tags ?? []), ...computeTimeTags(r.timeMinutes)];
+        const recipeTags = [...(r.tags ?? []), ...computeTimeTags(r.activeTimeMinutes ?? r.timeMinutes)];
         if (!filterTags.every(t => recipeTags.includes(t))) return false;
       }
       if (filterDiet) {
@@ -517,7 +517,10 @@ function RecipeCard({ recipe, favorited, locked = false, onView, onEdit, onArchi
         )}
         {recipe.timeMinutes && (
           <span className="mz-rcard-time">
-            <Clock size={10} />{recipe.timeMinutes} min
+            <Clock size={10} />
+            {recipe.activeTimeMinutes
+              ? `${recipe.activeTimeMinutes} / ${recipe.timeMinutes} min`
+              : `${recipe.timeMinutes} min`}
           </span>
         )}
         {/* Favorite — top-left */}
@@ -622,7 +625,10 @@ function ArchivedRecipeCard({ recipe, isOwned, onRestore, onDelete }: ArchivedRe
       <div className="flex flex-wrap gap-1.5 mb-3">
         <span className="text-xs px-2 py-0.5 rounded-full font-medium" style={{ backgroundColor: '#efe9df', color: '#9c8c84' }}>{recipe.category}</span>
         <span className="inline-flex items-center gap-1 text-xs px-2 py-0.5 rounded-full font-medium" style={{ backgroundColor: '#efe9df', color: '#9c8c84' }}>
-          <Clock size={10} />{recipe.timeMinutes} min
+          <Clock size={10} />
+            {recipe.activeTimeMinutes
+              ? `${recipe.activeTimeMinutes} / ${recipe.timeMinutes} min`
+              : `${recipe.timeMinutes} min`}
         </span>
       </div>
       <div className="flex items-center gap-2 pt-2" style={{ borderTop: '1px solid #e0d8ce' }}>

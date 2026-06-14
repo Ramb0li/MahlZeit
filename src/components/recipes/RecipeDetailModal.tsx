@@ -391,7 +391,9 @@ export function RecipeDetailModal({
                 className="inline-flex items-center gap-1 text-xs px-3 py-1 rounded-full"
                 style={{ border: '1px solid #e0d8ce', color: '#5a4e48' }}
               >
-                ⏱ {recipe.timeMinutes} Min
+                {recipe.activeTimeMinutes
+                  ? `⏱ ${recipe.activeTimeMinutes} Min aktiv · ${recipe.timeMinutes} Min gesamt`
+                  : `⏱ ${recipe.timeMinutes} Min`}
               </span>
               {recipe.dietCategory && DIET_LABEL[recipe.dietCategory] && (
                 <span

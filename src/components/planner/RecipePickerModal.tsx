@@ -61,7 +61,7 @@ export function RecipePickerModal({ recipes, mealType, dietPreference, onSelect,
           if (r.category !== filterCategory) return false;
         }
       }
-      if (filterTime !== 'Alle' && !computeTimeTags(r.timeMinutes).includes(filterTime)) return false;
+      if (filterTime !== 'Alle' && !computeTimeTags(r.activeTimeMinutes ?? r.timeMinutes).includes(filterTime)) return false;
       if (search && !r.name.toLowerCase().includes(search.toLowerCase())) return false;
       return true;
     });
@@ -138,7 +138,7 @@ export function RecipePickerModal({ recipes, mealType, dietPreference, onSelect,
           )}
 
           {filtered.map((recipe) => {
-            const timeTags = computeTimeTags(recipe.timeMinutes);
+            const timeTags = computeTimeTags(recipe.activeTimeMinutes ?? recipe.timeMinutes);
             const isSchnell = timeTags.includes('Schnell');
             const timeStyle = isSchnell
               ? { backgroundColor: '#e8f5e9', color: '#2e7d32' }
@@ -167,7 +167,9 @@ export function RecipePickerModal({ recipes, mealType, dietPreference, onSelect,
                     <span className="text-xs px-1.5 py-0.5 rounded-full font-medium" style={{ backgroundColor: '#f2e5e0', color: '#b5614a' }}>🥗</span>
                   )}
                   <span className="text-xs px-2 py-0.5 rounded-full font-medium" style={timeStyle}>
-                    {recipe.timeMinutes}min
+                    {recipe.activeTimeMinutes
+                      ? `${recipe.activeTimeMinutes}/${recipe.timeMinutes}min`
+                      : `${recipe.timeMinutes}min`}
                   </span>
                   {recipe.tags.includes('Mealprep-geeignet') && (
                     <span className="text-xs px-2 py-0.5 rounded-full font-medium" style={{ backgroundColor: '#f5ece0', color: '#c49a6c' }}>MP</span>

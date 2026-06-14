@@ -207,6 +207,8 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/up
   const [category, setCategory]               = useState<Category>(recipe?.category ?? 'Gemüsegerichte');
   const [dietCategory, setDietCategory]       = useState<import('@/types').DietCategory | undefined>(recipe?.dietCategory);
   const [timeMinutes, setTimeMinutes]         = useState(recipe?.timeMinutes ?? 30);
+  const [showActiveTime, setShowActiveTime]   = useState(recipe?.activeTimeMinutes !== undefined);
+  const [activeTimeMinutes, setActiveTimeMinutes] = useState(recipe?.activeTimeMinutes ?? 15);
   const [weatherType, setWeatherType]         = useState<WeatherType>(recipe?.weatherType ?? 'neutral');
   const [tags, setTags]                       = useState<string[]>(recipe?.tags ?? []);
   const [source, setSource]                   = useState(recipe?.source ?? 'Rezept von Cuiselin');
@@ -236,7 +238,7 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/up
       : [{ name: 'Zutaten', ingredients: [{ name: '', amount: 1, unit: 'g', perPortions: 4 }] }]
   );
 
-  const timeTags = computeTimeTags(timeMinutes);
+  const timeTags = computeTimeTags(showActiveTime ? activeTimeMinutes : timeMinutes);
 
   const toggleTag = (tag: string) =>
     setTags(prev => prev.includes(tag) ? prev.filter(t => t !== tag) : [...prev, tag]);
@@ -379,12 +381,18 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/up
       finalGroups      = undefined;
     }
 
+    if (showActiveTime && activeTimeMinutes > timeMinutes) {
+      alert('Aktive Zeit darf nicht grösser als Gesamtzeit sein.');
+      return;
+    }
+
     // Strip temporary blob: preview URLs — if still present, the upload didn't finish
     const sanitizeImg = (v: string) => (v && !v.startsWith('blob:') ? v : null);
 
     const r: Recipe = {
       id:           recipe?.id ?? generateId(),
       name, category, timeMinutes,
+      ...(showActiveTime ? { activeTimeMinutes } : {}),
       tags,
       ingredients:  finalIngredients,
       weatherType,  source, basePortions, description,
@@ -432,22 +440,51 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/up
         </div>
 
         {/* Zeit */}
-        <div>
-          <label style={labelStyle}>
-            Zeitaufwand: {timeMinutes} min{' '}
-            {timeTags.map(t => (
-              <span key={t} className="ml-1 text-xs px-2 py-0.5 rounded-full font-semibold"
-                style={t.includes('Schnell') ? { backgroundColor: '#e8f5e9', color: '#2e7d32' } : { backgroundColor: '#fff3e0', color: '#e65100' }}>
-                {t}
-              </span>
-            ))}
-          </label>
-          <input
-            type="range" min={10} max={120} step={5} value={timeMinutes}
-            onChange={(e) => setTimeMinutes(Number(e.target.value))}
-            className="w-full"
-            style={{ accentColor: '#b5614a' }}
-          />
+        <div className="sm:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {/* Aktive Zeit */}
+          <div>
+            <label style={labelStyle}>
+              <input
+                type="checkbox" checked={showActiveTime}
+                onChange={(e) => setShowActiveTime(e.target.checked)}
+                style={{ marginRight: 6 }}
+              />
+              Aktive Zeit{showActiveTime ? `: ${activeTimeMinutes} min` : ' (nicht angegeben)'}
+              {showActiveTime && timeTags.map(t => (
+                <span key={t} className="ml-1 text-xs px-2 py-0.5 rounded-full font-semibold"
+                  style={t.includes('Schnell') ? { backgroundColor: '#e8f5e9', color: '#2e7d32' } : { backgroundColor: '#fff3e0', color: '#e65100' }}>
+                  {t}
+                </span>
+              ))}
+            </label>
+            {showActiveTime && (
+              <input
+                type="range" min={5} max={120} step={5} value={activeTimeMinutes}
+                onChange={(e) => setActiveTimeMinutes(Number(e.target.value))}
+                className="w-full"
+                style={{ accentColor: '#b5614a' }}
+              />
+            )}
+          </div>
+
+          {/* Gesamtzeit */}
+          <div>
+            <label style={labelStyle}>
+              Gesamtzeit: {timeMinutes} min
+              {!showActiveTime && timeTags.map(t => (
+                <span key={t} className="ml-1 text-xs px-2 py-0.5 rounded-full font-semibold"
+                  style={t.includes('Schnell') ? { backgroundColor: '#e8f5e9', color: '#2e7d32' } : { backgroundColor: '#fff3e0', color: '#e65100' }}>
+                  {t}
+                </span>
+              ))}
+            </label>
+            <input
+              type="range" min={5} max={480} step={5} value={timeMinutes}
+              onChange={(e) => setTimeMinutes(Number(e.target.value))}
+              className="w-full"
+              style={{ accentColor: '#b5614a' }}
+            />
+          </div>
         </div>
 
         {/* Ernährung */}

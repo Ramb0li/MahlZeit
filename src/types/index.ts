@@ -97,6 +97,7 @@ export interface Recipe {
   name: string;
   category: Category;
   timeMinutes: number;
+  activeTimeMinutes?: number;
   tags: string[];
   ingredients: Ingredient[];
   weatherType: WeatherType;

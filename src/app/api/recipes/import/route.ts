@@ -20,7 +20,8 @@ const RECIPE_TOOL = {
       description:  { type: 'string', description: 'Kurze appetitliche Beschreibung (1-2 Sätze)' },
       category:     { type: 'string', enum: ['Snacks & Vorspeisen','Suppen, Eintöpfe & Currys','Salate & Bowls','Pasta & Teigwaren','Reis, Getreide & Hülsenfrüchte','Kartoffelgerichte','Eiergerichte','Fleisch & Geflügel','Fisch & Meeresfrüchte','Gemüsegerichte','Aufläufe & Gratins','Wraps, Sandwiches & Burger','Pizza, Flammkuchen, Wähen & Quiches','Beilagen, Saucen & Dips','Desserts & Süsses','Brot & Gebäck','Müesli, Porridge & Frühstücksschalen','Getränke & Smoothies'], description: 'Passende Hauptkategorie' },
       dietCategory: { type: 'string', enum: ['meat','fish','vegetarian','vegan'], description: 'Ernährungsform: meat=Fleischhaltig, fish=Pescetarisch, vegetarian=Vegetarisch, vegan=Vegan' },
-      timeMinutes:  { type: 'number', description: 'Gesamtzeit in Minuten' },
+      timeMinutes:       { type: 'number', description: 'Gesamtzeit in Minuten (inkl. Wartezeiten wie Marinieren, Backen, Aufgehen)' },
+      activeTimeMinutes: { type: 'number', description: 'Aktive Kochzeit in Minuten (nur Hände-im-Teig-Zeit, ohne passive Wartezeiten). Weglassen wenn nicht sinnvoll trennbar.' },
       basePortions: { type: 'number', description: 'Anzahl Portionen' },
       weatherType:  { type: 'string', enum: ['warm','kalt','neutral'] },
       tags: {
@@ -293,6 +294,10 @@ export async function POST(request: Request) {
             (jsonLd.totalTime ?? jsonLd.cookTime ?? jsonLd.prepTime) as string,
           );
           if (t > 0) recipe.timeMinutes = t;
+        }
+        if (!recipe.activeTimeMinutes && jsonLd.prepTime) {
+          const p = parseIso8601Duration(jsonLd.prepTime as string);
+          if (p > 0 && p < (recipe.timeMinutes as number)) recipe.activeTimeMinutes = p;
         }
         if (!recipe.basePortions && jsonLd.recipeYield) {
           const yld = jsonLd.recipeYield;

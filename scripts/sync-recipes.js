@@ -28,7 +28,7 @@ const RECIPES_DIR  = path.join(__dirname, '..', 'data', 'recipes');
 const ADMIN_FIELDS = [
   'imageUrl', 'imageZutaten', 'imageKochen',
   'dietCategory', 'description', 'steps', 'tips',
-  'name', 'tags', 'timeMinutes', 'basePortions',
+  'name', 'tags', 'timeMinutes', 'activeTimeMinutes', 'basePortions',
   'weatherType', 'category', 'ingredients', 'ingredientGroups',
   'source', 'archived',
 ];
