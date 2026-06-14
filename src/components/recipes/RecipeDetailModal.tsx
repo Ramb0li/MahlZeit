@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect, useCallback } from 'react';
 import { X, Pencil, UtensilsCrossed } from 'lucide-react';
-import { type Recipe, type Ingredient, type IngredientGroup, type RecipeRating, type EuAllergen } from '@/types';
+import { type Recipe, type Ingredient, type IngredientGroup, type RecipeRating, type EuAllergen, TAG_GROUPS } from '@/types';
 
 // ─── Diet display mapping ─────────────────────────────────────────────────────
 
@@ -402,7 +402,7 @@ export function RecipeDetailModal({
                 </span>
               )}
               {recipe.tags
-                .filter(t => ['Frühling', 'Sommer', 'Herbst', 'Winter', 'Ganzjährig'].includes(t))
+                .filter(t => (TAG_GROUPS.Saison as readonly string[]).includes(t))
                 .map(t => (
                   <span key={t} className="inline-flex items-center gap-1 text-xs px-3 py-1 rounded-full"
                     style={{ border: '1px solid #e0d8ce', color: '#5a4e48' }}>

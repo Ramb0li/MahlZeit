@@ -626,9 +626,9 @@ function ArchivedRecipeCard({ recipe, isOwned, onRestore, onDelete }: ArchivedRe
         <span className="text-xs px-2 py-0.5 rounded-full font-medium" style={{ backgroundColor: '#efe9df', color: '#9c8c84' }}>{recipe.category}</span>
         <span className="inline-flex items-center gap-1 text-xs px-2 py-0.5 rounded-full font-medium" style={{ backgroundColor: '#efe9df', color: '#9c8c84' }}>
           <Clock size={10} />
-            {recipe.activeTimeMinutes
-              ? `${recipe.activeTimeMinutes} / ${recipe.timeMinutes} min`
-              : `${recipe.timeMinutes} min`}
+          {recipe.activeTimeMinutes
+            ? `${recipe.activeTimeMinutes} / ${recipe.timeMinutes} min`
+            : `${recipe.timeMinutes} min`}
         </span>
       </div>
       <div className="flex items-center gap-2 pt-2" style={{ borderTop: '1px solid #e0d8ce' }}>

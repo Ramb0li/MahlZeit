@@ -297,7 +297,7 @@ export async function POST(request: Request) {
         }
         if (!recipe.activeTimeMinutes && jsonLd.prepTime) {
           const p = parseIso8601Duration(jsonLd.prepTime as string);
-          if (p > 0 && p < (recipe.timeMinutes as number)) recipe.activeTimeMinutes = p;
+          if (p > 0 && typeof recipe.timeMinutes === 'number' && p < recipe.timeMinutes) recipe.activeTimeMinutes = p;
         }
         if (!recipe.basePortions && jsonLd.recipeYield) {
           const yld = jsonLd.recipeYield;

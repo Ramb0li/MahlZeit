@@ -208,7 +208,8 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/up
   const [dietCategory, setDietCategory]       = useState<import('@/types').DietCategory | undefined>(recipe?.dietCategory);
   const [timeMinutes, setTimeMinutes]         = useState(recipe?.timeMinutes ?? 30);
   const [showActiveTime, setShowActiveTime]   = useState(recipe?.activeTimeMinutes !== undefined);
-  const [activeTimeMinutes, setActiveTimeMinutes] = useState(recipe?.activeTimeMinutes ?? 15);
+  const [activeTimeMinutes, setActiveTimeMinutes] = useState(recipe?.activeTimeMinutes ?? Math.min(15, recipe?.timeMinutes ?? 15));
+  const [activeTimeError, setActiveTimeError] = useState<string | null>(null);
   const [weatherType, setWeatherType]         = useState<WeatherType>(recipe?.weatherType ?? 'neutral');
   const [tags, setTags]                       = useState<string[]>(recipe?.tags ?? []);
   const [source, setSource]                   = useState(recipe?.source ?? 'Rezept von Cuiselin');
@@ -382,9 +383,10 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/up
     }
 
     if (showActiveTime && activeTimeMinutes > timeMinutes) {
-      alert('Aktive Zeit darf nicht grösser als Gesamtzeit sein.');
+      setActiveTimeError('Aktive Zeit darf nicht grösser als Gesamtzeit sein.');
       return;
     }
+    setActiveTimeError(null);
 
     // Strip temporary blob: preview URLs — if still present, the upload didn't finish
     const sanitizeImg = (v: string) => (v && !v.startsWith('blob:') ? v : null);
@@ -458,12 +460,17 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/up
               ))}
             </label>
             {showActiveTime && (
-              <input
-                type="range" min={5} max={120} step={5} value={activeTimeMinutes}
-                onChange={(e) => setActiveTimeMinutes(Number(e.target.value))}
-                className="w-full"
-                style={{ accentColor: '#b5614a' }}
-              />
+              <>
+                <input
+                  type="range" min={5} max={120} step={5} value={activeTimeMinutes}
+                  onChange={(e) => { setActiveTimeMinutes(Number(e.target.value)); setActiveTimeError(null); }}
+                  className="w-full"
+                  style={{ accentColor: '#b5614a' }}
+                />
+                {activeTimeError && (
+                  <p className="text-xs mt-1" style={{ color: '#c0392b' }}>{activeTimeError}</p>
+                )}
+              </>
             )}
           </div>
 
@@ -480,7 +487,7 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/up
             </label>
             <input
               type="range" min={5} max={480} step={5} value={timeMinutes}
-              onChange={(e) => setTimeMinutes(Number(e.target.value))}
+              onChange={(e) => { setTimeMinutes(Number(e.target.value)); setActiveTimeError(null); }}
               className="w-full"
               style={{ accentColor: '#b5614a' }}
             />

@@ -168,8 +168,8 @@ export function RecipePickerModal({ recipes, mealType, dietPreference, onSelect,
                   )}
                   <span className="text-xs px-2 py-0.5 rounded-full font-medium" style={timeStyle}>
                     {recipe.activeTimeMinutes
-                      ? `${recipe.activeTimeMinutes}/${recipe.timeMinutes}min`
-                      : `${recipe.timeMinutes}min`}
+                      ? `${recipe.activeTimeMinutes} / ${recipe.timeMinutes} min`
+                      : `${recipe.timeMinutes} min`}
                   </span>
                   {recipe.tags.includes('Mealprep-geeignet') && (
                     <span className="text-xs px-2 py-0.5 rounded-full font-medium" style={{ backgroundColor: '#f5ece0', color: '#c49a6c' }}>MP</span>
