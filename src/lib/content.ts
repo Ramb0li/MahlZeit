@@ -40,8 +40,10 @@ export interface LandingPlan {
 }
 
 export interface LandingMeta {
-  /** Hero badge, e.g. "200+" */
+  /** Hero badge, e.g. "200+". Ignored when recipeCountAuto is true. */
   recipeCount:     string;
+  /** If true, badge count is computed live from approved template recipes (rounded to 50). */
+  recipeCountAuto?: boolean;
   /** Hero headline. Convention: "\n" = line break, *word* = <em>word</em> */
   heroTitle:       string;
   heroLead:        string;
@@ -132,7 +134,8 @@ export const DEFAULT_LANDING_CONTENT: LandingContent = {
     },
   ],
   meta: {
-    recipeCount:     '300+',
+    recipeCount:     '150+',
+    recipeCountAuto: false,
     heroTitle:       'Deine Woche.\n*Dein* Essen.',
     heroLead:        'MahlZeit erstellt deinen Wochenplan, schlägt Rezepte vor und schreibt automatisch deine Einkaufsliste. Alles verknüpft. Alles automatisiert.',
     eyebrowFeatures: 'Was dich erwartet',

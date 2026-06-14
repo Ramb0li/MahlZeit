@@ -794,12 +794,22 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
                         <div>
                           <label style={labelStyle}>Rezept-Anzahl (Badge)</label>
-                          <input
-                            value={lc.meta.recipeCount}
-                            onChange={e => setLandingContent({ ...lc, meta: { ...lc.meta, recipeCount: e.target.value } })}
-                            style={inputStyle}
-                            placeholder="200+"
-                          />
+                          <label style={{ display: 'flex', alignItems: 'center', gap: 7, marginBottom: 8, fontSize: 12, color: 'var(--ink-2)', cursor: 'pointer' }}>
+                            <input
+                              type="checkbox"
+                              checked={lc.meta.recipeCountAuto ?? false}
+                              onChange={e => setLandingContent({ ...lc, meta: { ...lc.meta, recipeCountAuto: e.target.checked } })}
+                            />
+                            Automatisch (freigegebene Rezepte, 50er-Schritte)
+                          </label>
+                          {!lc.meta.recipeCountAuto && (
+                            <input
+                              value={lc.meta.recipeCount}
+                              onChange={e => setLandingContent({ ...lc, meta: { ...lc.meta, recipeCount: e.target.value } })}
+                              style={inputStyle}
+                              placeholder="150+"
+                            />
+                          )}
                         </div>
                         <div>
                           <label style={labelStyle}>Footer-Jahr</label>

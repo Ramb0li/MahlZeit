@@ -8,6 +8,7 @@ import { LandingBleed }                      from '@/components/landing/LandingB
 import { SiteFooter }                        from '@/components/landing/SiteFooter';
 import { PwaInstallButton }                  from '@/components/landing/PwaInstallButton';
 import { getLandingContent }                 from '@/lib/content';
+import { getTemplateRecipes }               from '@/lib/data';
 import type { LandingFeature }               from '@/lib/content';
 import { getSession }                        from '@/lib/auth';
 
@@ -74,6 +75,14 @@ export default async function LandingPage({ params }: Props) {
     getTranslations('Landing'),
   ]);
 
+  let recipeCountDisplay = meta.recipeCount;
+  if (meta.recipeCountAuto && process.env.UPSTASH_REDIS_REST_URL) {
+    const templates = await getTemplateRecipes();
+    const approved  = templates.filter(r => r.approved === true).length;
+    const rounded   = Math.floor(approved / 50) * 50;
+    if (rounded > 0) recipeCountDisplay = `${rounded}+`;
+  }
+
   return (
     <div className="mz-lp">
 
@@ -130,8 +139,9 @@ export default async function LandingPage({ params }: Props) {
             <div key={cls} className={`mz-cc ${cls}`} style={{ backgroundImage: `url(${src})` }} aria-label={alt} />
           ))}
           <div className="mz-cc-badge">
-            <span className="mz-cc-badge-num">{meta.recipeCount}</span>
-            <span>Rezepte</span>
+            <span className="mz-cc-badge-num">{recipeCountDisplay}</span>
+            <span>Rezepte*</span>
+            <span style={{ fontSize: 9, opacity: 0.8, lineHeight: 1.2, marginTop: 2 }}>*laufend mehr</span>
           </div>
         </div>
       </div>
