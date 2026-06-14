@@ -57,13 +57,13 @@ export async function POST() {
   const seed    = seedRecipes as Recipe[];
   const seedIds = new Set(seed.map((s) => s.id));
 
-  // 1. Seed-Rezepte mit bestehenden Bild-URLs mergen; alle Seed-Rezepte als freigegeben markieren
+  // 1. Seed-Rezepte mit bestehenden Bild-URLs mergen; approved-Status aus Redis erhalten
   const merged: Recipe[] = seed.map((s) => {
     const ex = existingMap.get(s.id);
-    if (!ex) return { ...s, approved: true };
+    if (!ex) return { ...s, approved: false };
     return {
       ...s,
-      approved:      true,
+      approved:      ex.approved,   // bestehende Freigabe erhalten, nicht überschreiben
       imageUrl:      s.imageUrl      ?? ex.imageUrl,
       imageZutaten:  s.imageZutaten  ?? ex.imageZutaten,
       imageKochen:   s.imageKochen   ?? ex.imageKochen,
