@@ -139,8 +139,8 @@ export default async function LandingPage({ params }: Props) {
             <div key={cls} className={`mz-cc ${cls}`} style={{ backgroundImage: `url(${src})` }} aria-label={alt} />
           ))}
           <div className="mz-cc-badge">
-            <span className="mz-cc-badge-num">{recipeCountDisplay}</span>
-            <span>Rezepte*</span>
+            <span className="mz-cc-badge-num">{recipeCountDisplay}*</span>
+            <span>Rezepte</span>
             <span style={{ fontSize: 9, opacity: 0.8, lineHeight: 1.2, marginTop: 2 }}>*laufend mehr</span>
           </div>
         </div>
