@@ -179,6 +179,22 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
     return true;
   }), [recipes, recipeCatFilter, recipeStatusFilter, recipeSearch]);
 
+  const recipeStatusCounts = useMemo(() => {
+    const base = recipes.filter(r => {
+      if (recipeCatFilter !== 'Alle' && r.category !== recipeCatFilter) return false;
+      if (recipeSearch) {
+        const q = recipeSearch.toLowerCase();
+        if (!r.name.toLowerCase().includes(q) && !(r.source ?? '').toLowerCase().includes(q)) return false;
+      }
+      return true;
+    });
+    return {
+      alle:     base.length,
+      approved: base.filter(r => r.approved === true).length,
+      draft:    base.filter(r => r.approved !== true).length,
+    };
+  }, [recipes, recipeCatFilter, recipeSearch]);
+
   const recipeCategories = useMemo(() =>
     ['Alle', ...Array.from(new Set(recipes.map(r => r.category))).sort()] as (Category | 'Alle')[],
   [recipes]);
@@ -635,7 +651,11 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                       border: '1px solid var(--border)',
                     }}
                   >
-                    {f === 'Alle' ? 'Alle' : f === 'approved' ? 'Freigegeben' : 'Entwurf'}
+                    {f === 'Alle'
+                      ? `Alle (${recipeStatusCounts.alle})`
+                      : f === 'approved'
+                      ? `Freigegeben (${recipeStatusCounts.approved})`
+                      : `Entwurf (${recipeStatusCounts.draft})`}
                   </button>
                 ))}
               </div>
