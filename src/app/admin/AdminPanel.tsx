@@ -172,7 +172,10 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
     if (recipeCatFilter !== 'Alle' && r.category !== recipeCatFilter) return false;
     if (recipeStatusFilter === 'approved' && r.approved !== true) return false;
     if (recipeStatusFilter === 'draft'    && r.approved === true) return false;
-    if (recipeSearch && !r.name.toLowerCase().includes(recipeSearch.toLowerCase())) return false;
+    if (recipeSearch) {
+      const q = recipeSearch.toLowerCase();
+      if (!r.name.toLowerCase().includes(q) && !(r.source ?? '').toLowerCase().includes(q)) return false;
+    }
     return true;
   }), [recipes, recipeCatFilter, recipeStatusFilter, recipeSearch]);
 
@@ -656,7 +659,11 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                 <thead>
                   <tr style={{ background: 'var(--bg-2)', borderBottom: '1px solid var(--border)' }}>
                     {['Rezept', 'Kategorie', 'Zeit', 'Bild', 'Quelle', 'Status', 'Aktionen'].map(h => (
-                      <th key={h} style={{ textAlign: 'left', padding: '10px 16px', fontWeight: 700, fontSize: 11, textTransform: 'uppercase', letterSpacing: '.06em', color: 'var(--muted)' }}>{h}</th>
+                      <th key={h} style={{
+                        textAlign: 'left',
+                        padding: h === 'Quelle' ? '10px 4px 10px 16px' : h === 'Status' ? '10px 16px 10px 4px' : '10px 16px',
+                        fontWeight: 700, fontSize: 11, textTransform: 'uppercase', letterSpacing: '.06em', color: 'var(--muted)',
+                      }}>{h}</th>
                     ))}
                   </tr>
                 </thead>
@@ -675,18 +682,6 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                         <td style={{ padding: '10px 16px' }}>
                           <div style={{ fontWeight: 600, color: 'var(--ink)' }}>{r.name}</div>
                           <div style={{ fontSize: 11, marginTop: 2, color: 'var(--muted)' }}>{r.id}</div>
-                          {r.tags?.length > 0 && (
-                            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 3, marginTop: 4 }}>
-                              {r.tags.slice(0, 4).map(t => (
-                                <span key={t} style={{ fontSize: 10, padding: '1px 6px', borderRadius: 999, background: 'var(--chip)', color: 'var(--muted)' }}>
-                                  {t}
-                                </span>
-                              ))}
-                              {r.tags.length > 4 && (
-                                <span style={{ fontSize: 10, color: 'var(--muted)' }}>+{r.tags.length - 4}</span>
-                              )}
-                            </div>
-                          )}
                         </td>
                         <td style={{ padding: '10px 16px' }}>
                           <span style={{ ...catCol, padding: '2px 8px', borderRadius: 999, fontSize: 11, fontWeight: 600 }}>
@@ -705,10 +700,10 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                             ? <img src={r.imageUrl} alt="" style={{ width: 40, height: 40, objectFit: 'cover', borderRadius: 6, display: 'block' }} />
                             : <span style={{ color: 'var(--muted)', fontSize: 11 }}>–</span>}
                         </td>
-                        <td style={{ padding: '10px 6px 10px 16px', fontSize: 12, maxWidth: 160, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', color: 'var(--muted)' }} title={r.source}>
+                        <td style={{ padding: '10px 4px 10px 16px', fontSize: 12, maxWidth: 160, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', color: 'var(--muted)' }} title={r.source}>
                           {r.source ?? '—'}
                         </td>
-                        <td style={{ padding: '10px 16px 10px 6px' }}>
+                        <td style={{ padding: '10px 16px 10px 4px' }}>
                           <button
                             disabled={togglingId === r.id}
                             onClick={async () => {
@@ -1413,9 +1408,16 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
           <div style={{ position: 'fixed', inset: 0, zIndex: 50, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', overflowY: 'auto', padding: '32px 16px', background: 'rgba(39,31,26,.6)' }}>
             <div style={{ width: '100%', maxWidth: 760, borderRadius: 'var(--r-card)', boxShadow: 'var(--shadow-lg)', background: 'var(--card)' }}>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '16px 24px', borderBottom: '1px solid var(--border)' }}>
-                <h2 style={{ fontWeight: 700, fontSize: 15, color: 'var(--ink)', margin: 0 }}>
-                  {editingRecipe === 'new' ? 'Neues Template-Rezept' : `Bearbeiten: ${(editingRecipe as Recipe).name}`}
-                </h2>
+                <div>
+                  <h2 style={{ fontWeight: 700, fontSize: 15, color: 'var(--ink)', margin: 0 }}>
+                    {editingRecipe === 'new' ? 'Neues Template-Rezept' : `Bearbeiten: ${(editingRecipe as Recipe).name}`}
+                  </h2>
+                  {editingRecipe !== 'new' && (
+                    <div style={{ fontSize: 11, color: 'var(--muted)', marginTop: 3, fontFamily: 'monospace' }}>
+                      {(editingRecipe as Recipe).id}
+                    </div>
+                  )}
+                </div>
                 <button onClick={() => setEditingRecipe(null)} style={{ color: 'var(--muted)', fontSize: 18, lineHeight: 1 }}>✕</button>
               </div>
               <div style={{ padding: 24 }}>
