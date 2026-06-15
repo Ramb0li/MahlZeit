@@ -9,6 +9,7 @@ import type { AppUser }      from '@/lib/users';
 import type { Group }        from '@/lib/groups';
 import type { Recipe, Category } from '@/types';
 import type { LandingContent, LandingFeature } from '@/lib/content';
+import { Users, BookOpen, Bookmark, Globe, HelpCircle } from 'lucide-react';
 
 // Kategoriefarben für Badges — kategorienspezifisch, bleiben als Hex
 const CAT_COLOR: Record<string, { bg: string; color: string }> = {
@@ -67,12 +68,12 @@ function ADMIN_TABS(
   isAdmin: (email: string) => boolean,
 ) {
   return [
-    { id: 'users',        label: `Nutzer (${users.filter(u => !isAdmin(u.email)).length})`,           shortLabel: 'Nutzer'   },
-    { id: 'recipes',      label: `Rezepte (${recipes.length})`,                                        shortLabel: 'Rezepte'  },
-    { id: 'user-recipes', label: `Nutzer-Rezepte${userRecipes ? ` (${userRecipes.length})` : ''}`,    shortLabel: 'Nutzer-R.'},
-    { id: 'landing',      label: 'Landing',                                                            shortLabel: 'Landing'  },
-    { id: 'howto',        label: 'How-To',                                                             shortLabel: 'How-To'   },
-  ] as const;
+    { id: 'users',        icon: Users,       label: `Nutzer (${users.filter(u => !isAdmin(u.email)).length})`,        shortLabel: 'Nutzer'   },
+    { id: 'recipes',      icon: BookOpen,    label: `Rezepte (${recipes.length})`,                                    shortLabel: 'Rezepte'  },
+    { id: 'user-recipes', icon: Bookmark,    label: `Nutzer-Rezepte${userRecipes ? ` (${userRecipes.length})` : ''}`, shortLabel: 'Nutzer-R.'},
+    { id: 'landing',      icon: Globe,       label: 'Landing',                                                        shortLabel: 'Landing'  },
+    { id: 'howto',        icon: HelpCircle,  label: 'How-To',                                                         shortLabel: 'How-To'   },
+  ];
 }
 
 interface Props {
@@ -164,13 +165,16 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
   const [showImportModal, setShowImportModal] = useState(false);
   const [seeding,         setSeeding]         = useState(false);
   const [showSeedModal,   setShowSeedModal]   = useState(false);
-  const [togglingId,      setTogglingId]      = useState<string | null>(null);
+  const [togglingId,          setTogglingId]          = useState<string | null>(null);
+  const [recipeStatusFilter,  setRecipeStatusFilter]  = useState<'Alle' | 'approved' | 'draft'>('Alle');
 
   const filteredRecipes = useMemo(() => recipes.filter(r => {
     if (recipeCatFilter !== 'Alle' && r.category !== recipeCatFilter) return false;
+    if (recipeStatusFilter === 'approved' && r.approved !== true) return false;
+    if (recipeStatusFilter === 'draft'    && r.approved === true) return false;
     if (recipeSearch && !r.name.toLowerCase().includes(recipeSearch.toLowerCase())) return false;
     return true;
-  }), [recipes, recipeCatFilter, recipeSearch]);
+  }), [recipes, recipeCatFilter, recipeStatusFilter, recipeSearch]);
 
   const recipeCategories = useMemo(() =>
     ['Alle', ...Array.from(new Set(recipes.map(r => r.category))).sort()] as (Category | 'Alle')[],
@@ -385,12 +389,14 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
           <span style={{ fontFamily: 'var(--font-ui)', fontSize: 12, fontWeight: 600, color: 'var(--muted)', marginLeft: 8 }}>Admin</span>
         </div>
         <nav className="mz-admin-topnav">
-          {ADMIN_TABS(users, recipes, userRecipes, isAdmin).map(({ id, label }) => (
+          {ADMIN_TABS(users, recipes, userRecipes, isAdmin).map(({ id, label, icon: Icon }) => (
             <button
               key={id}
               onClick={() => setActiveTab(id as AdminTab)}
               className={`mz-admin-topnav-btn${activeTab === id ? ' on' : ''}`}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}
             >
+              <Icon size={14} style={{ flexShrink: 0 }} />
               {label}
             </button>
           ))}
@@ -614,6 +620,22 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
               >
                 {recipeCategories.map(c => <option key={c} value={c}>{c}</option>)}
               </select>
+              <div style={{ display: 'flex', gap: 4 }}>
+                {(['Alle', 'approved', 'draft'] as const).map(f => (
+                  <button
+                    key={f}
+                    onClick={() => setRecipeStatusFilter(f)}
+                    style={{
+                      padding: '7px 12px', borderRadius: 10, fontSize: 12, fontWeight: 600,
+                      background: recipeStatusFilter === f ? '#2c2420' : 'var(--card)',
+                      color: recipeStatusFilter === f ? '#fff' : 'var(--ink-2)',
+                      border: '1px solid var(--border)',
+                    }}
+                  >
+                    {f === 'Alle' ? 'Alle' : f === 'approved' ? 'Freigegeben' : 'Entwurf'}
+                  </button>
+                ))}
+              </div>
               <button onClick={() => setShowImportModal(true)} className="mz-btn-soft">
                 Importieren
               </button>
@@ -653,6 +675,18 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                         <td style={{ padding: '10px 16px' }}>
                           <div style={{ fontWeight: 600, color: 'var(--ink)' }}>{r.name}</div>
                           <div style={{ fontSize: 11, marginTop: 2, color: 'var(--muted)' }}>{r.id}</div>
+                          {r.tags?.length > 0 && (
+                            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 3, marginTop: 4 }}>
+                              {r.tags.slice(0, 4).map(t => (
+                                <span key={t} style={{ fontSize: 10, padding: '1px 6px', borderRadius: 999, background: 'var(--chip)', color: 'var(--muted)' }}>
+                                  {t}
+                                </span>
+                              ))}
+                              {r.tags.length > 4 && (
+                                <span style={{ fontSize: 10, color: 'var(--muted)' }}>+{r.tags.length - 4}</span>
+                              )}
+                            </div>
+                          )}
                         </td>
                         <td style={{ padding: '10px 16px' }}>
                           <span style={{ ...catCol, padding: '2px 8px', borderRadius: 999, fontSize: 11, fontWeight: 600 }}>
@@ -671,10 +705,10 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                             ? <img src={r.imageUrl} alt="" style={{ width: 40, height: 40, objectFit: 'cover', borderRadius: 6, display: 'block' }} />
                             : <span style={{ color: 'var(--muted)', fontSize: 11 }}>–</span>}
                         </td>
-                        <td style={{ padding: '10px 16px', fontSize: 12, maxWidth: 180, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', color: 'var(--muted)' }} title={r.source}>
+                        <td style={{ padding: '10px 6px 10px 16px', fontSize: 12, maxWidth: 160, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', color: 'var(--muted)' }} title={r.source}>
                           {r.source ?? '—'}
                         </td>
-                        <td style={{ padding: '10px 16px' }}>
+                        <td style={{ padding: '10px 16px 10px 6px' }}>
                           <button
                             disabled={togglingId === r.id}
                             onClick={async () => {
@@ -1611,12 +1645,14 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
 
       {/* Mobile Bottom Nav */}
       <nav className="mz-admin-botnav">
-        {ADMIN_TABS(users, recipes, userRecipes, isAdmin).map(({ id, shortLabel }) => (
+        {ADMIN_TABS(users, recipes, userRecipes, isAdmin).map(({ id, shortLabel, icon: Icon }) => (
           <button
             key={id}
             onClick={() => setActiveTab(id as AdminTab)}
             className={`mz-admin-botnav-btn${activeTab === id ? ' on' : ''}`}
+            style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2 }}
           >
+            <Icon size={16} style={{ flexShrink: 0 }} />
             {shortLabel}
           </button>
         ))}
