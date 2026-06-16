@@ -1,6 +1,6 @@
 {
   "id": "ei-23",
-  "name": "Farmers Rührei Muffins",
+  "name": "Rührei Muffins gespickt mit Speck",
   "category": "Eiergerichte",
   "timeMinutes": 30,
   "basePortions": 12,
@@ -8,25 +8,49 @@
     "Mealprep-geeignet",
     "Kinderfreundlich",
     "Ofengericht",
-    "Frühstück"
+    "Frühstück",
+    "Gut zum Mitnehmen",
+    "Budgetfreundlich",
+    "Snack",
+    "Amerikanisch",
+    "Ganzjährig",
+    "Einfrierbar"
   ],
   "ingredients": [
     {
       "name": "Eier",
       "amount": 8,
       "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Kidneybohnen (Abtropfgewicht)",
+      "amount": 250,
+      "unit": "g",
       "perPortions": 12
     },
     {
-      "name": "Milch",
-      "amount": 100,
+      "name": "Mais (Abtropfgewicht)",
+      "amount": 180,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Speck (in Scheiben)",
+      "amount": 125,
+      "unit": "g",
+      "perPortions": 12
+    },
+    {
+      "name": "Rahm",
+      "amount": 125,
       "unit": "ml",
       "perPortions": 12
     },
     {
-      "name": "Käse gerieben",
-      "amount": 150,
-      "unit": "g",
+      "name": "Paprikapulver (geräuchert)",
+      "amount": 1,
+      "unit": "TL",
       "perPortions": 12
     },
     {
@@ -42,26 +66,36 @@
       "perPortions": 12
     },
     {
-      "name": "Öl zum Einfetten",
-      "amount": 1,
+      "name": "Rapsöl (zum einfetten der Form)",
+      "amount": 2,
       "unit": "EL",
+      "perPortions": 12
+    },
+    {
+      "name": "Petersilie",
+      "amount": 1,
+      "unit": "Zweig",
       "perPortions": 12
     }
   ],
   "weatherType": "neutral",
-  "source": "zu überarbeiten",
+  "source": "MahlZyt",
   "description": "Herzhafte Rührei-Muffins – perfekt als Binge-Watching Snack oder für ein praktisches Frühstück. Diese würzigen Muffins lassen sich gut vorbereiten und sind ideal für unterwegs.",
   "steps": [
-    "1. Den Backofen auf 180 Grad Celsius vorheizen.",
-    "2. Eine Muffinform mit etwas Öl einfetten oder mit Papierförmchen auslegen.",
-    "3. Die Eier in eine Schüssel aufschlagen und mit der Milch verquirlen.",
-    "4. Den geriebenen Käse zur Eimischung geben und gut unterrühren.",
-    "5. Die Masse mit Salz und Pfeffer abschmecken.",
-    "6. Die Eiermasse gleichmässig in die vorbereiteten Muffinförmchen verteilen.",
-    "7. Die Muffins im vorgeheizten Ofen etwa 20 Minuten backen, bis sie goldbraun und durchgegart sind.",
-    "8. Die fertigen Rührei-Muffins aus dem Ofen nehmen und etwas abkühlen lassen, bevor sie aus der Form gelöst werden."
+    "Eine Bratpfanne bei mittlerer Hitze erwärmen. Die Specktranchen hineinlegen und langsam knusprig braten, damit das Fett austritt. Den Speck aus der Pfanne nehmen und auf Küchenpapier abtropfen lassen. Das ausgelassene Speckfett in der Pfanne belassen.",
+    "Die Eier mit dem Rahm in einer Schüssel gut verquirlen.",
+    "Die Kidneybohnen in ein Sieb geben, mit kaltem Wasser abspülen und gut abtropfen lassen. Den Mais ebenfalls abtropfen lassen.",
+    "Die Kidneybohnen im Speckfett kurz anbraten. Geräuchertes Paprikapulver, wenig Salz und Pfeffer dazugeben und alles gut vermischen. Die Bohnen rund 3 Minuten braten und dabei gelegentlich umrühren.",
+    "Den Mais beigeben und kurz mitbraten.",
+    "Die Eier-Rahm-Mischung in die Pfanne giessen und mit den Bohnen und dem Mais vermengen. Mit Salz und Pfeffer abschmecken. Die Masse unter vorsichtigem Rühren erhitzen, bis das Ei stellenweise leicht zu stocken beginnt. Die Pfanne anschliessend vom Herd nehmen.",
+    "Den Backofen auf 180 °C Ober-/Unterhitze vorheizen. Ein Backblech auf der zweituntersten Schiene einschieben.",
+    "Die Vertiefungen eines Muffinblechs für 12 Muffins gründlich einfetten oder mit Papierförmchen auslegen. Die Eiermasse gleichmässig auf die Förmchen verteilen.",
+    "Den gebratenen Speck klein schneiden und auf die Muffins geben. Mit einem Löffel leicht in die Eiermasse drücken.",
+    "Die Eier-Muffins im vorgeheizten Ofen 20–25 Minuten backen, bis die Masse vollständig gestockt ist und die Oberfläche leicht goldbraun wird.",
+    "Das Muffinblech aus dem Ofen nehmen und die Muffins einige Minuten abkühlen lassen.",
+    "Die Petersilie fein schneiden und vor dem Servieren über die Eier-Muffins streuen."
   ],
-  "dietCategory": "vegetarian",
+  "dietCategory": "meat",
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-23-1780866989520.jpg",
   "imageZutaten": null,
   "imageKochen": null,

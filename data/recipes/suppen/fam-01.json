@@ -4,27 +4,36 @@
   "category": "Suppen, Eintöpfe & Currys",
   "timeMinutes": 20,
   "tags": [
-    "Frühling"
+    "Frühling",
+    "Mittagessen",
+    "Abendessen",
+    "Mealprep-geeignet",
+    "Kinderfreundlich",
+    "Budgetfreundlich",
+    "Für Gäste",
+    "Gut zum Mitnehmen",
+    "Pfannengericht",
+    "Schweizerisch"
   ],
   "weatherType": "warm",
   "source": "Cuiseline",
-  "basePortions": 6,
-  "description": "Samtige Bärlauchsuppe – kurzes Frühlingsvergnügen.",
+  "basePortions": 4,
+  "description": "Frischer Bärlauch aus dem Wald, fein püriert und cremig serviert – so schmeckt Frühling.",
   "ingredients": [
     {
-      "name": "vegane Butter",
+      "name": "Butter",
       "amount": 50,
       "unit": "g",
       "perPortions": 6
     },
     {
-      "name": "Zwiebel, fein gehackt",
+      "name": "Zwiebel",
       "amount": 1,
       "unit": "Stk",
       "perPortions": 6
     },
     {
-      "name": "Mehl",
+      "name": "Mehl (z.B. Dinkelmehl)",
       "amount": 2,
       "unit": "EL",
       "perPortions": 6
@@ -42,28 +51,36 @@
       "perPortions": 6
     },
     {
-      "name": "veganer Rahm",
+      "name": "Rahm",
       "amount": 1,
       "unit": "dl",
       "perPortions": 6
     },
     {
-      "name": "Kartoffeln",
-      "amount": 200,
-      "unit": "g",
-      "perPortions": 6
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
     }
   ],
   "steps": [
-    "1. Vegane Butter erwärmen, Zwiebel andünsten, Mehl bestreuen.",
-    "2. Mit Gemüsebrühe ablöschen, gut rühren, 10 Minuten köcheln.",
-    "3. Bärlauch gründlich waschen, in feine Streifen schneiden, hinzufügen.",
-    "4. Veganen Rahm beifügen, mit Salz und Pfeffer abschmecken."
+    "Bärlauch gründlich waschen, trocken schütteln und in feine Streifen schneiden. Zwiebel fein hacken.",
+    "Butter in einer grossen Pfanne erhitzen. Zwiebel beigeben und andämpfen.",
+    "Mehl hinzufügen und kurz mitdünsten, ohne dass es Farbe annimmt.",
+    "Gemüsebouillon unter ständigem Rühren dazugiessen und aufkochen.",
+    "Suppe bei kleiner Hitze ca. 10 Minuten köcheln lassen.",
+    "Bärlauch und Rahm beigeben. Suppe fein pürieren und nochmals kurz erhitzen.",
+    "Mit Salz und Pfeffer abschmecken und servieren."
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fam-01-1--1780579197526.jpeg",
   "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fam-01-2--1780579209531.jpeg",
   "imageKochen": null,
-  "tips": "",
   "dietCategory": "vegetarian",
   "allergens": [
     "gluten",

@@ -2,7 +2,7 @@
   "id": "pas-04",
   "name": "Pesto Genovese",
   "category": "Pasta & Teigwaren",
-  "timeMinutes": 25,
+  "timeMinutes": 30,
   "ingredients": [
     {
       "name": "Pinien- oder Zederkerne (zum Garnieren)",
@@ -41,15 +41,27 @@
       "perPortions": 4
     },
     {
-      "name": "Kartoffeln (klein)",
+      "name": "grüne Bohnen",
+      "amount": 1,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Kartoffeln (klein, festkochend)",
       "amount": 8,
       "unit": "Stk",
       "perPortions": 4
     },
     {
-      "name": "Olivenöl",
+      "name": "Salz",
       "amount": 1,
-      "unit": "dl",
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
       "perPortions": 4
     },
     {
@@ -57,24 +69,22 @@
       "amount": 500,
       "unit": "g",
       "perPortions": 4
-    },
-    {
-      "name": "grüne Bohnen",
-      "amount": 1,
-      "unit": "g",
-      "perPortions": 4
     }
   ],
   "weatherType": "warm",
   "source": "Cuiseline",
   "basePortions": 4,
-  "description": "Selbstgemachtes Basilikum-Pesto mit Vollkornspaghetti und kleinen Kartoffeln.",
+  "description": "Spaghetti mit Pesto Genovese, Bohnen und Kartoffeln – ein aromatischer Klassiker aus Ligurien.",
   "steps": [
-    "Pinienkerne ohne Fett in Pfanne rösten, beiseitestellen.",
-    "Basilikum waschen, Blätter abzupfen. Etwas zum Garnieren beiseite legen.",
-    "Restliches Basilikum mit Olivenöl, veganem Parmesan und Pinienkerne mit Stabmixer pürieren. Mit Salz und Pfeffer würzen.",
-    "Kartoffeln und Spaghetti in Salzwasser al dente kochen, abgiessen.",
-    "Alles mit Pesto mischen, mit Pinienkerne und veganem Parmesan garnieren."
+    "Pinien- oder Zedernkerne ohne Fett in einer Pfanne rösten, herausnehmen und beiseitestellen.",
+    "Wenig Basilikum für Garnitur beiseitelegen. Restliches Basilikum in Streifen schneiden und in einen hohen Becher geben.",
+    "Knoblauch schälen, grob zerkleinern und zusammen mit einem Teil der gerösteten Kerne und Olivenöl zum Basilikum geben.",
+    "Alles fein pürieren. Parmesan unterrühren, mit Salz und Pfeffer abschmecken.",
+    "Bohnen waschen und rüsten. Kartoffeln waschen und vierteln.",
+    "Bohnen und Kartoffeln in Salzwasser ca. 15–20 Minuten garen, anschliessend abgiessen.",
+    "Inzwischen Spaghetti in Salzwasser al dente kochen. Ca. 6–8 EL Kochwasser abschöpfen und unter Pesto rühren.",
+    "Spaghetti abgiessen und sofort mit Pesto, Bohnen und Kartoffeln mischen.",
+    "Mit restlichen gerösteten Kernen und Basilikum garnieren und servieren."
   ],
   "imageUrl": "/images/recipes/cuiselin-pesto-genovese.jpg",
   "imageZutaten": "/images/recipes/cuiselin-pesto-genovese-zutaten.jpg",
@@ -82,7 +92,13 @@
     "Mittagessen",
     "Abendessen",
     "Italienisch",
-    "Ganzjährig"
+    "Ganzjährig",
+    "Resteverwertung",
+    "Budgetfreundlich",
+    "Für Gäste",
+    "Kinderfreundlich",
+    "Gut zum Mitnehmen",
+    "Pfannengericht"
   ],
   "dietCategory": "vegetarian",
   "allergens": [

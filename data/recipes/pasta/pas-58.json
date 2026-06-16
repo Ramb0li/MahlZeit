@@ -1,8 +1,8 @@
 {
   "id": "pas-58",
-  "name": "Nudeln mit Grünkohl, Lachs und Sojasauce",
+  "name": "Tortiglioni mit Grünkohl, Lachs und Sojasauce",
   "category": "Pasta & Teigwaren",
-  "timeMinutes": 15,
+  "timeMinutes": 20,
   "basePortions": 2,
   "tags": [
     "Winter",
@@ -78,20 +78,20 @@
     }
   ],
   "weatherType": "kalt",
-  "source": "zu überarbeiten",
+  "source": "MahlZyt",
   "description": "Eine überraschende und gelungene Kombination aus Grünkohl, Lachs und Sojasauce. Einfach zubereitet, schmeckt köstlich und sieht auch noch gut aus.",
   "steps": [
-    "1. Einen grossen Topf mit reichlich Wasser aufsetzen und zum Kochen bringen. Das Wasser gut salzen und die Pasta nach Packungsanweisung kochen.",
-    "2. Währenddessen die Knoblauchzehen schälen und in dünne Scheiben schneiden. Die Chilischote entkernen und in feine Streifen schneiden.",
-    "3. Eine Pfanne bei mittlerer Hitze erhitzen. Das Lachsfilet im Olivenöl von beiden Seiten je 2 Minuten anbraten, dann aus der Pfanne nehmen.",
-    "4. Knoblauch und Chili in der Pfanne glasig anschwitzen. Das Tomatenmark dazugeben und in der Pfanne verteilen.",
-    "5. Mit Sojasauce ablöschen. Den Grünkohl hinzufügen und mit Salz und Pfeffer würzen. Gut durchrühren – der Grünkohl fällt schnell zusammen.",
-    "6. Ein bis zwei Schöpfkellen Nudelwasser hinzufügen. Die Hitze reduzieren, die Butter einrühren und schmelzen lassen.",
-    "7. Den Lachs mit den Händen in Stücke zupfen, zur Sauce geben und kurz ziehen lassen.",
-    "8. Die gekochten Nudeln untermischen und alles gut vermengen. Auf zwei Teller verteilen und servieren."
+    "Einen grossen Topf mit reichlich Wasser aufsetzen und zum Kochen bringen. Das Wasser gut salzen und die Pasta nach Packungsanweisung kochen.",
+    "Währenddessen die Knoblauchzehen schälen und in dünne Scheiben schneiden. Die Chilischote entkernen und in feine Streifen schneiden.",
+    "Eine Pfanne bei mittlerer Hitze erhitzen. Das Lachsfilet im Olivenöl von beiden Seiten je 2 Minuten anbraten, dann aus der Pfanne nehmen.",
+    "Knoblauch und Chili in der Pfanne glasig anschwitzen. Das Tomatenmark dazugeben und in der Pfanne verteilen.",
+    "Mit Sojasauce ablöschen. Den Grünkohl hinzufügen und mit Salz und Pfeffer würzen. Gut durchrühren – der Grünkohl fällt schnell zusammen.",
+    "Ein bis zwei Schöpfkellen Nudelwasser hinzufügen. Die Hitze reduzieren, die Butter einrühren und schmelzen lassen.",
+    "Den Lachs mit den Händen in Stücke zupfen, zur Sauce geben und kurz ziehen lassen.",
+    "Die gekochten Nudeln untermischen und alles gut vermengen. Auf zwei Teller verteilen und servieren."
   ],
   "dietCategory": "fish",
-  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2019/12/Nudeln_mit_Gruenkohl_Lachs_und_Sojasauce.jpg",
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/pas-58-1781559625318.jpg",
   "imageZutaten": null,
   "imageKochen": null,
   "allergens": [

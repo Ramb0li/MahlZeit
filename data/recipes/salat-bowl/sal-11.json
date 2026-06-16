@@ -4,13 +4,25 @@
   "category": "Salate & Bowls",
   "timeMinutes": 10,
   "tags": [
-    "Sommer"
+    "Sommer",
+    "Mittagessen",
+    "Abendessen",
+    "Mealprep-geeignet",
+    "Kinderfreundlich",
+    "Resteverwertung",
+    "Budgetfreundlich",
+    "Für Gäste",
+    "Gut zum Mitnehmen",
+    "Ohne Kochen",
+    "Herbst",
+    "Schweizerisch",
+    "Frühling"
   ],
   "weatherType": "warm",
   "source": "Cuiseline",
   "basePortions": 4,
   "dietCategory": "vegan",
-  "description": "Einfacher Gurkensalat mit Dill und Mandeljogurt-Dressing.",
+  "description": "Erfrischender Gurkensalat mit Dill und feinem Joghurt-Senf-Dressing – unkompliziert, leicht und herrlich frisch.",
   "ingredients": [
     {
       "name": "Gurken",
@@ -19,7 +31,7 @@
       "perPortions": 4
     },
     {
-      "name": "Mandeljogurt",
+      "name": "Nature Joghurt",
       "amount": 1,
       "unit": "EL",
       "perPortions": 4
@@ -31,14 +43,20 @@
       "perPortions": 4
     },
     {
+      "name": "Senf (mild)",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
       "name": "Kräuteressig",
       "amount": 2,
       "unit": "EL",
       "perPortions": 4
     },
     {
-      "name": "Sonnenblumenöl",
-      "amount": 1.5,
+      "name": "Rapsöl",
+      "amount": 3,
       "unit": "EL",
       "perPortions": 4
     },
@@ -47,15 +65,34 @@
       "amount": 0.5,
       "unit": "Bund",
       "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Kräutersalz (optional)",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
     }
   ],
   "steps": [
-    "1. Mandeljogurt, Senf, Essig und Öl in eine Schüssel geben, mit Salz, Pfeffer und Kräutersalz würzen.",
-    "2. Gurken in Scheiben schneiden.",
-    "3. Dill zerkleinern und dazugeben.",
-    "4. Gurken in die Schüssel geben und alles vermischen."
+    "Gurken längs halbieren, Kerne mit einem Löffel entfernen und Gurken in feine Scheiben schneiden.",
+    "Frischen Dill fein hacken.",
+    "Nature Joghurt, körnigen Dijon-Senf, milden Senf, Kräuterweinessig und Öl in einer grossen Schüssel verrühren.",
+    "Frischen Dill oder 1/2 TL getrockneten Dill beigeben. Mit Salz, Pfeffer und optional Kräutersalz würzen und abschmecken.",
+    "Gurkenscheiben zum Dressing geben und gut vermischen.",
+    "Salat nach Möglichkeit ca. 15 Minuten ziehen lassen, nochmals abschmecken und servieren."
   ],
-  "tips": "",
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---gurkensalat-1--1780579715668.jpeg",
   "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---gurkensalat-2--1780579721355.jpeg",
   "imageKochen": null,

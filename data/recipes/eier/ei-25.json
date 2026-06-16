@@ -8,7 +8,10 @@
     "Frühling",
     "Sommer",
     "Kinderfreundlich",
-    "Frühstück"
+    "Frühstück",
+    "Snack",
+    "Italienisch",
+    "Mediterran"
   ],
   "ingredients": [
     {
@@ -61,17 +64,17 @@
     }
   ],
   "weatherType": "neutral",
-  "source": "zu überarbeiten",
-  "description": "Eine leckere Brotzeit-Variation mit cremigem Mozzarella-Aufstrich, frischem Basilikum und saftigen Cherrytomaten auf knusprigem Vollkorntoast. Reich an Vitamin C, Kalzium und Kalium – perfekt für ein ausgewogenes Frühstück.",
+  "source": "MahlZyt",
+  "description": "Eine leckere Snack-Variation mit cremigem Mozzarella-Aufstrich, frischem Basilikum und saftigen Cherrytomaten auf knusprigem Vollkorntoast. Reich an Vitamin C, Kalzium und Kalium – perfekt für ein ausgewogenes Frühstück.",
   "steps": [
-    "1. Die beiden Vollkorntoast-Scheiben toasten und anschliessend etwas abkühlen lassen.",
-    "2. Den Mozzarella zusammen mit dem Basilikum (etwas für die Garnierung zur Seite legen), Zitronensaft, Olivenöl, Salz und Pfeffer in einen Mixer geben oder mit einem Pürierstab bzw. einer Gabel zu einer groben Creme verarbeiten.",
-    "3. Die abgekühlten Toast-Scheiben mit der Mozzarella-Basilikum-Creme bestreichen.",
-    "4. Die Cherrytomaten bei Bedarf waschen, trocken tupfen und halbieren. Damit die bestrichenen Toast-Scheiben belegen.",
-    "5. Zum Schluss mit einer Prise Salz, Pfeffer und dem restlichen Basilikum garnieren und servieren."
+    "Die beiden Vollkorntoast-Scheiben toasten und anschliessend etwas abkühlen lassen.",
+    "Den Mozzarella zusammen mit dem Basilikum (etwas für die Garnierung zur Seite legen), Zitronensaft, Olivenöl, Salz und Pfeffer in einen Mixer geben oder mit einem Pürierstab bzw. einer Gabel zu einer groben Creme verarbeiten.",
+    "Die abgekühlten Toast-Scheiben mit der Mozzarella-Basilikum-Creme bestreichen.",
+    "Die Cherrytomaten bei Bedarf waschen, trocken tupfen und halbieren. Damit die bestrichenen Toast-Scheiben belegen.",
+    "Zum Schluss mit einer Prise Salz, Pfeffer und dem restlichen Basilikum garnieren und servieren."
   ],
   "dietCategory": "vegetarian",
-  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/06/vollkorntoast_mit_mozzarella-creme_und_tomaten01.jpg",
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-25-1781556735037.jpg",
   "imageZutaten": null,
   "imageKochen": null,
   "allergens": [

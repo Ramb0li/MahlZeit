@@ -1,54 +1,107 @@
 {
   "id": "pas-06",
-  "name": "Pilzrahmsauce",
+  "name": "Pasta an Pilz-Kräutersauce",
   "category": "Pasta & Teigwaren",
   "timeMinutes": 25,
   "ingredients": [
     {
-      "name": "Pasta",
-      "amount": 320,
-      "unit": "g",
+      "name": "Butter",
+      "amount": 1,
+      "unit": "EL",
       "perPortions": 4
     },
     {
-      "name": "Champignons",
-      "amount": 400,
-      "unit": "g",
-      "perPortions": 4
-    },
-    {
-      "name": "Rahm",
-      "amount": 200,
-      "unit": "ml",
-      "perPortions": 4
-    },
-    {
-      "name": "Zwiebel",
+      "name": "kleine Zwiebel",
       "amount": 1,
       "unit": "Stk",
       "perPortions": 4
     },
     {
-      "name": "Knoblauch",
-      "amount": 2,
-      "unit": "Zehen",
+      "name": "Champignons",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Mehl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitrone",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Rahm",
+      "amount": 300,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Cayennepfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Paprika",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Salbeiblätter",
+      "amount": 4,
+      "unit": "Stk",
       "perPortions": 4
     },
     {
       "name": "Petersilie",
-      "amount": 0.5,
+      "amount": 0.25,
       "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Pasta nach Wahl (z.B. Tagliatelle oder Fettucine) ",
+      "amount": 400,
+      "unit": "g",
       "perPortions": 4
     }
   ],
   "weatherType": "kalt",
-  "source": "Cuiseline",
+  "source": "MahlZyt",
   "basePortions": 4,
-  "description": "Cremige Pilzrahmsauce mit Pasta.",
-  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/pas-06-1780699687747.jpg",
+  "description": "Cremig, würzig und angenehm frisch: Pilzpasta mit Zitrone und Salbei.",
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/pas-06-1781556405956.jpg",
   "tags": [
     "Herbst",
-    "Winter"
+    "Winter",
+    "Mittagessen",
+    "Abendessen",
+    "Mealprep-geeignet",
+    "Kinderfreundlich",
+    "Resteverwertung",
+    "Budgetfreundlich",
+    "Für Gäste",
+    "Pfannengericht",
+    "Schweizerisch",
+    "Italienisch",
+    "Frühling"
   ],
   "imageZutaten": null,
   "imageKochen": null,
@@ -65,5 +118,105 @@
   },
   "dietCategory": "vegetarian",
   "sourceType": "mahlzyt",
-  "_migrated_v2": true
+  "_migrated_v2": true,
+  "steps": [
+    "Zwiebel fein hacken. Champignons in Scheiben und Salbeiblätter in feine Streifen schneiden. Zitrone dünn schälen, Schale in feine Streifen schneiden.",
+    "Butter in einer Pfanne erwärmen. Zwiebel beigeben und andämpfen.",
+    "Champignons hinzufügen und zugedeckt ca. 5 Minuten mitdämpfen.",
+    "Mehl beigeben und kurz mitdünsten.",
+    "Zitronenschale und 1 TL Zitronensaft hinzufügen, kurz einkochen lassen.",
+    "Rahm, Gewürze und Salbei unter Rühren beigeben. Sauce zugedeckt bei kleiner Hitze ca. 10 Minuten köcheln lassen.",
+    "Inzwischen Pasta nach Packungsangabe al dente kochen.",
+    "Pasta abgiessen, mit Pilz-Rahm-Sauce mischen und mit Petersilie garnieren."
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Pilz-Kräuter-Sauce",
+      "ingredients": [
+        {
+          "name": "Butter",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "kleine Zwiebel",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Champignons",
+          "amount": 200,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Mehl",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Zitrone",
+          "amount": 0.5,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Rahm",
+          "amount": 300,
+          "unit": "ml",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Cayennepfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Paprika",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Salbeiblätter",
+          "amount": 4,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Petersilie",
+          "amount": 0.25,
+          "unit": "Bund",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Pasta",
+      "ingredients": [
+        {
+          "name": "Pasta nach Wahl (z.B. Tagliatelle oder Fettucine) ",
+          "amount": 400,
+          "unit": "g",
+          "perPortions": 4
+        }
+      ]
+    }
+  ]
 }

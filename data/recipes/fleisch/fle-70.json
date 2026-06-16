@@ -19,45 +19,39 @@
   ],
   "ingredients": [
     {
+      "name": "Rosmarin",
+      "amount": 1,
+      "unit": "Zweig",
+      "perPortions": 4
+    },
+    {
       "name": "Weissmehl",
       "amount": 250,
       "unit": "g",
       "perPortions": 4
     },
     {
+      "name": "Salz",
+      "amount": 0.75,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
       "name": "Hefe",
-      "amount": 8,
+      "amount": 5,
       "unit": "g",
       "perPortions": 4
     },
     {
       "name": "Wasser",
-      "amount": 150,
-      "unit": "ml",
+      "amount": 1.5,
+      "unit": "dl",
       "perPortions": 4
     },
     {
       "name": "Olivenöl",
-      "amount": 4,
+      "amount": 1,
       "unit": "EL",
-      "perPortions": 4
-    },
-    {
-      "name": "Salz",
-      "amount": 1.25,
-      "unit": "TL",
-      "perPortions": 4
-    },
-    {
-      "name": "Rosmarin",
-      "amount": 3,
-      "unit": "Zweiglein",
-      "perPortions": 4
-    },
-    {
-      "name": "Grillschnecken",
-      "amount": 4,
-      "unit": "Stk",
       "perPortions": 4
     },
     {
@@ -67,7 +61,7 @@
       "perPortions": 4
     },
     {
-      "name": "rote Zwiebel",
+      "name": "Zwiebel, rot",
       "amount": 1,
       "unit": "Stk",
       "perPortions": 4
@@ -75,25 +69,19 @@
     {
       "name": "Knoblauchzehe",
       "amount": 1,
-      "unit": "Zehe",
+      "unit": "Stk",
       "perPortions": 4
     },
     {
-      "name": "rote Peperoncini",
+      "name": "Peperoncino, rot",
       "amount": 1,
       "unit": "Stk",
       "perPortions": 4
     },
     {
-      "name": "Basilikum",
-      "amount": 4,
-      "unit": "Zweiglein",
-      "perPortions": 4
-    },
-    {
-      "name": "geräucherter Paprika",
-      "amount": 1,
-      "unit": "Msp.",
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
       "perPortions": 4
     },
     {
@@ -103,15 +91,39 @@
       "perPortions": 4
     },
     {
-      "name": "Olivenöl (für Tomaten)",
+      "name": "Rosmarin",
       "amount": 2,
+      "unit": "Zweig",
+      "perPortions": 4
+    },
+    {
+      "name": "Paprika, geräuchert",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 1,
       "unit": "EL",
       "perPortions": 4
     },
     {
-      "name": "Salz (zum Abschmecken)",
-      "amount": 1,
-      "unit": "Prise",
+      "name": "Grillschnecken",
+      "amount": 520,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Basilikum",
+      "amount": 4,
+      "unit": "Zweig",
       "perPortions": 4
     }
   ],
@@ -128,12 +140,143 @@
     "Die Tomaten mit Salz würzen, die Basilikumblätter zerzupfen und darüberstreuen. Alles zusammen servieren."
   ],
   "dietCategory": "meat",
-  "imageUrl": null,
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/fle-70-1781472514450.jpg",
   "imageZutaten": null,
   "imageKochen": null,
   "allergens": [
     "gluten",
     "sulfite",
     "weichtiere"
+  ],
+  "activeTimeMinutes": 60,
+  "ingredientGroups": [
+    {
+      "name": "Teig",
+      "ingredients": [
+        {
+          "name": "Rosmarin",
+          "amount": 1,
+          "unit": "Zweig",
+          "perPortions": 4
+        },
+        {
+          "name": "Weissmehl",
+          "amount": 250,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.75,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Hefe",
+          "amount": 5,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Wasser",
+          "amount": 1.5,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Tomaten",
+      "ingredients": [
+        {
+          "name": "Tomaten",
+          "amount": 450,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Zwiebel, rot",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Knoblauchzehe",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Peperoncino, rot",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Rotwein",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Rosmarin",
+          "amount": 2,
+          "unit": "Zweig",
+          "perPortions": 4
+        },
+        {
+          "name": "Paprika, geräuchert",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Grillbrot",
+      "ingredients": [
+        {
+          "name": "Olivenöl",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Grillieren",
+      "ingredients": [
+        {
+          "name": "Grillschnecken",
+          "amount": 520,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Basilikum",
+          "amount": 4,
+          "unit": "Zweig",
+          "perPortions": 4
+        }
+      ]
+    }
   ]
 }

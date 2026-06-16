@@ -3,28 +3,53 @@
   "name": "Kichererbsensalat",
   "category": "Salate & Bowls",
   "timeMinutes": 15,
-  "tags": [],
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Mealprep-geeignet",
+    "Kinderfreundlich",
+    "Resteverwertung",
+    "Budgetfreundlich",
+    "Für Gäste",
+    "Gut zum Mitnehmen",
+    "Ohne Kochen",
+    "Sommer",
+    "Herbst",
+    "Mediterran"
+  ],
   "weatherType": "warm",
   "source": "Cuiseline",
   "basePortions": 4,
-  "description": "Einfacher Kichererbsensalat mit getrockneten Tomaten und Schnittlauch.",
+  "description": "Saftige Tomaten, würzige Kichererbsen und frische Kräuter – ein mediterraner Sommersalat für Grillabende und leichte Mahlzeiten.",
   "ingredients": [
     {
-      "name": "Kichererbsen (Dose)",
-      "amount": 1,
+      "name": "Kichererbsen",
+      "amount": 2,
       "unit": "Dose",
       "perPortions": 4
     },
     {
+      "name": "Cherrytomaten",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
       "name": "getrocknete Tomaten in Öl",
-      "amount": 4,
+      "amount": 10,
       "unit": "Stk",
       "perPortions": 4
     },
     {
-      "name": "Zwiebel",
-      "amount": 0.5,
+      "name": "kleine Zwiebel (optional)",
+      "amount": 1,
       "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Basilikum",
+      "amount": 0.5,
+      "unit": "Bund",
       "perPortions": 4
     },
     {
@@ -34,44 +59,63 @@
       "perPortions": 4
     },
     {
-      "name": "Olivenöl",
-      "amount": 3,
+      "name": "Senf",
+      "amount": 1,
       "unit": "EL",
       "perPortions": 4
     },
     {
       "name": "Aceto Balsamico",
-      "amount": 1,
+      "amount": 3,
       "unit": "EL",
       "perPortions": 4
     },
     {
-      "name": "Senf",
-      "amount": 1,
+      "name": "Olivenöl",
+      "amount": 5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Italienische Kräuter",
+      "amount": 0.5,
       "unit": "TL",
       "perPortions": 4
     },
     {
-      "name": "Kirschtomaten",
-      "amount": 150,
-      "unit": "g",
+      "name": "Curry",
+      "amount": 0.25,
+      "unit": "TL",
       "perPortions": 4
     },
     {
-      "name": "Basilikum",
+      "name": "Salz",
       "amount": 0.5,
-      "unit": "Bund",
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kräutersalz (optional)",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
       "perPortions": 4
     }
   ],
   "steps": [
-    "1. Kichererbsen abspülen und abtropfen lassen.",
-    "2. Dörrtomaten in Streifen schneiden, Kirschtomaten halbieren.",
-    "3. Schnittlauch und Basilikum fein schneiden.",
-    "4. Dressing aus Olivenöl, Aceto Balsamico, Senf, Curry, Salz und Pfeffer rühren.",
-    "5. Alles vermengen und abschmecken."
+    "Kichererbsen abgiessen, gründlich abspülen und gut abtropfen lassen.",
+    "Cherrytomaten halbieren oder vierteln. Dörrtomaten in feine Streifen schneiden.",
+    "Basilikum in feine Streifen, Schnittlauch fein und optional Zwiebel klein schneiden.",
+    "Senf, Aceto Balsamico und Olivenöl in einer grossen Schüssel verrühren.",
+    "Mit Salz, Pfeffer, wenig Curry, italienischen Kräutern und optional Kräutersalz würzen.",
+    "Kichererbsen, Cherrytomaten, Dörrtomaten, Basilikum, Schnittlauch und Zwiebel zum Dressing geben.",
+    "Alles gut vermischen, abschmecken und nach Möglichkeit kurz ziehen lassen."
   ],
-  "tips": "",
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---sal-04-1--1780579587426.jpeg",
   "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---sal-04-2--1780579592398.jpeg",
   "imageKochen": null,
@@ -88,5 +132,101 @@
     "fiber": 7.5
   },
   "sourceType": "mahlzyt",
-  "_migrated_v2": true
+  "_migrated_v2": true,
+  "ingredientGroups": [
+    {
+      "name": "Salat",
+      "ingredients": [
+        {
+          "name": "Kichererbsen",
+          "amount": 2,
+          "unit": "Dose",
+          "perPortions": 4
+        },
+        {
+          "name": "Cherrytomaten",
+          "amount": 400,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "getrocknete Tomaten in Öl",
+          "amount": 10,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "kleine Zwiebel (optional)",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Basilikum",
+          "amount": 0.5,
+          "unit": "Bund",
+          "perPortions": 4
+        },
+        {
+          "name": "Schnittlauch",
+          "amount": 0.5,
+          "unit": "Bund",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Sauce",
+      "ingredients": [
+        {
+          "name": "Senf",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Aceto Balsamico",
+          "amount": 3,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 5,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Italienische Kräuter",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Curry",
+          "amount": 0.25,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Kräutersalz (optional)",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    }
+  ]
 }

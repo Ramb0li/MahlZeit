@@ -1,15 +1,17 @@
 {
   "id": "ei-26",
-  "name": "Dutch Baby mit frischen Erdbeeren",
+  "name": "Dutch Baby mit Erdbeeren – ohne zugesetzten Zucker",
   "category": "Eiergerichte",
-  "timeMinutes": 15,
-  "basePortions": 2.5,
+  "timeMinutes": 20,
+  "basePortions": 2,
   "tags": [
     "Kinderfreundlich",
     "Frühling",
     "Sommer",
     "Ofengericht",
-    "Frühstück"
+    "Frühstück",
+    "Dessert",
+    "Brunch"
   ],
   "ingredients": [
     {
@@ -31,15 +33,15 @@
       "perPortions": 2.5
     },
     {
-      "name": "Zucker",
-      "amount": 50,
-      "unit": "g",
+      "name": "Banane (reif)",
+      "amount": 1,
+      "unit": "Stk",
       "perPortions": 2.5
     },
     {
       "name": "Vanillinzucker",
       "amount": 1,
-      "unit": "Stk",
+      "unit": "Pkg",
       "perPortions": 2.5
     },
     {
@@ -61,27 +63,28 @@
       "perPortions": 2.5
     },
     {
-      "name": "Puderzucker zum Bestreuen",
+      "name": "Puderzucker (zum Bestreuen)",
       "amount": 1,
       "unit": "EL",
       "perPortions": 2.5
     }
   ],
   "weatherType": "neutral",
-  "source": "zu überarbeiten",
+  "source": "MahlZyt",
   "description": "Ein luftiger Ofenpfannkuchen, der im Backofen spektakulär aufgeht und mit frischen Erdbeeren serviert wird. Einfach zubereitet und perfekt für die Erdbeersaison.",
   "steps": [
-    "1. Den Backofen auf 220 Grad vorheizen. Den Gitterrost auf die unterste Ebene schieben und die Auflaufform (23 cm x 30 cm x 6 cm) zum Aufheizen mit in den Ofen geben.",
-    "2. Für den Teig die Eier mit Zucker, Vanillinzucker und einer Prise Salz verquirlen. Die Milch hinzufügen und verrühren.",
-    "3. Das Mehl sieben, zur Eimasse geben und alles zu einem glatten, flüssigen Teig verrühren.",
-    "4. Die Butter in die vorgeheizte Auflaufform geben und im Ofen schmelzen lassen. Die Form herausnehmen und leicht schwenken, damit sich die Butter überall verteilt.",
-    "5. Den Teig in die gebutterte Form giessen und für 10-15 Minuten backen, bis der Teig stark aufgegangen und goldbraun ist.",
-    "6. In der Zwischenzeit die Erdbeeren waschen, trocken tupfen und in Scheiben schneiden.",
-    "7. Das fertige Dutch Baby aus dem Ofen holen, mit Puderzucker bestäuben, auf Teller verteilen und mit den Erdbeerscheiben garnieren."
+    "Den Backofen auf 220 Grad vorheizen. Den Gitterrost auf die unterste Ebene schieben und die Auflaufform (23 cm x 30 cm x 6 cm) zum Aufheizen mit in den Ofen geben.",
+    "Für den Teig die Eier mit Zucker, Vanillinzucker und einer Prise Salz verquirlen. Die Milch hinzufügen und verrühren.",
+    "Das Mehl sieben, zur Eimasse geben und alles zu einem glatten, flüssigen Teig verrühren.",
+    "Die Butter in die vorgeheizte Auflaufform geben und im Ofen schmelzen lassen. Die Form herausnehmen und leicht schwenken, damit sich die Butter überall verteilt.",
+    "Den Teig in die gebutterte Form giessen und für 10-15 Minuten backen, bis der Teig stark aufgegangen und goldbraun ist.",
+    "In der Zwischenzeit die Erdbeeren waschen, trocken tupfen und in Scheiben schneiden.",
+    "Das fertige Dutch Baby aus dem Ofen holen, mit Puderzucker bestäuben, auf Teller verteilen und mit den Erdbeerscheiben garnieren.",
+    "Für etwas mehr natürliche Süsse kannst du zusätzlich eine reife Banane in Scheiben, Heidelbeeren oder ein ungesüsstes Fruchtpüree dazugeben. Den Teig selbst würde ich nicht mit Banane süssen, da er dadurch schwerer wird und weniger stark aufgeht."
   ],
   "dietCategory": "vegetarian",
-  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/05/dutch_baby_mit_erdbeeren01.jpg",
-  "imageZutaten": null,
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-26-1-1781558260222.jpg",
+  "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-26-2-1781558264128.jpg",
   "imageKochen": null,
   "allergens": [
     "ei",

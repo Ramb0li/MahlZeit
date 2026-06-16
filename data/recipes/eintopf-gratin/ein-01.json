@@ -1,61 +1,79 @@
 {
   "id": "ein-01",
-  "name": "Chili sin carne",
+  "name": "Chili sin carne mit Sonnenblumenhack",
   "category": "Suppen, Eintöpfe & Currys",
-  "timeMinutes": 40,
+  "timeMinutes": 20,
   "ingredients": [
     {
-      "name": "Rote Bohnen (Dose)",
-      "amount": 400,
-      "unit": "g",
-      "perPortions": 4
-    },
-    {
-      "name": "Mais (Dose)",
-      "amount": 200,
-      "unit": "g",
-      "perPortions": 4
-    },
-    {
-      "name": "Passierte Tomaten",
-      "amount": 400,
-      "unit": "g",
-      "perPortions": 4
-    },
-    {
-      "name": "Paprika",
+      "name": "Zwiebel",
       "amount": 2,
       "unit": "Stk",
       "perPortions": 4
     },
     {
-      "name": "Zwiebel",
+      "name": "Knoblauch",
+      "amount": 2,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Chilischote",
       "amount": 1,
       "unit": "Stk",
       "perPortions": 4
     },
     {
-      "name": "Chiliflocken",
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Rotwein (optional)",
+      "amount": 1,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebouillon",
+      "amount": 0.5,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Gehackte Tomaten (Dose)",
+      "amount": 800,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "weisse Soisson-Bohnen",
+      "amount": 1,
+      "unit": "Dose",
+      "perPortions": 4
+    },
+    {
+      "name": "rote Kidney-Bohnen",
+      "amount": 1,
+      "unit": "Dose",
+      "perPortions": 4
+    },
+    {
+      "name": "Mais",
+      "amount": 1,
+      "unit": "Dose",
+      "perPortions": 4
+    },
+    {
+      "name": "Paprika",
       "amount": 1,
       "unit": "TL",
       "perPortions": 4
     },
     {
       "name": "Kreuzkümmel",
-      "amount": 1,
+      "amount": 0.5,
       "unit": "TL",
-      "perPortions": 4
-    },
-    {
-      "name": "Knoblauch",
-      "amount": 2,
-      "unit": "Zehen",
-      "perPortions": 4
-    },
-    {
-      "name": "Sauerrahm",
-      "amount": 100,
-      "unit": "g",
       "perPortions": 4
     },
     {
@@ -63,27 +81,71 @@
       "amount": 1,
       "unit": "Packung",
       "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Chiliflocken (zum Garnieren)",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Koriander oder Petersilie (zum Garnieren)",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Kokosjoghurt (zum Garnieren)",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 4
     }
   ],
   "weatherType": "kalt",
   "source": "Cuiseline",
   "basePortions": 4,
-  "description": "Veganes Chili – würzig und sättigend.",
+  "description": "Wärmendes Chili sin carne mit kräftiger Tomatensauce, Bohnen und feiner Schärfe – pflanzliches Soulfood für kalte Tage.",
   "steps": [
-    "1. Vegane Butter in Pfanne, Zwiebeln und Knoblauch andünsten.",
-    "2. Currypulver dazugeben, kurz mitdünsten.",
-    "3. Mit Rotwein und Gemüsebrühe ablöschen, Tomaten dazugeben. Mit Salz und Pfeffer würzen, 10 Min. köcheln.",
-    "4. Bohnen, Mais und Sonnenblumen-Hack beigeben, vermengen.",
-    "5. Nach Belieben mit Kokosmilch, Petersilie/Koriander und Chiliflocken garnieren."
+    "Zwiebeln und Knoblauch fein hacken. Chilischoten entkernen und fein schneiden.",
+    "Olivenöl in einer grossen Pfanne erhitzen. Zwiebeln und Knoblauch beigeben und andämpfen.",
+    "Chili hinzufügen und kurz mitdünsten.",
+    "Mit Rotwein (optional) und Gemüsebouillon ablöschen. Flüssigkeit kurz einkochen lassen.",
+    "Gehackte Tomaten beigeben.",
+    "Soisson-Bohnen und Kidneybohnen abgiessen und gut abspülen. Mais abgiessen.",
+    "Bohnen und Mais zur Tomatensauce geben. Mit Salz, Pfeffer, Paprika und Kreuzukümmel würzen und ca. 10 Minuten köcheln lassen.",
+    "Sonnenblumenhack zur Tomatensauce geben und gut erhitzen.",
+    "Mit Salz, Pfeffer und Chilipulver abschmecken.",
+    "Chili sin carne mit Kokosjoghurt, Petersilie oder Koriander und Chiliflocken garnieren.",
+    "Mit Brot oder Reis servieren."
   ],
-  "tips": "",
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ein-01-1--1780579129751.jpeg",
   "tags": [
     "Mealprep-geeignet",
     "Mittagessen",
     "Herbst",
     "Winter",
-    "Mexikanisch"
+    "Mexikanisch",
+    "Abendessen",
+    "Kinderfreundlich",
+    "Einfrierbar",
+    "Resteverwertung",
+    "Budgetfreundlich",
+    "Für Gäste",
+    "Gut zum Mitnehmen",
+    "Pfannengericht",
+    "One-Pot-Gericht"
   ],
   "dietCategory": "vegan",
   "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ein-01-2--1780579145821.jpeg",
@@ -98,5 +160,6 @@
     "fiber": 14.2
   },
   "sourceType": "mahlzyt",
-  "_migrated_v2": true
+  "_migrated_v2": true,
+  "imageKochen": null
 }

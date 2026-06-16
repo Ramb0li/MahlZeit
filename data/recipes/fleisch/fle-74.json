@@ -5,7 +5,7 @@
   "timeMinutes": 300,
   "basePortions": 4,
   "weatherType": "warm",
-  "source": "fooby.ch",
+  "source": "MahlZyt",
   "sourceType": "imported",
   "approved": false,
   "description": "Saftige Pouletflügeli-Spiessli, mariniert in einer würzigen Erdnuss-Limetten-Marinade, vom Grill serviert mit einem frischen Gurkensalat und knusprigen Erdnüssen.",
@@ -16,12 +16,6 @@
     "Sommer"
   ],
   "ingredients": [
-    {
-      "name": "Pouletflügeli",
-      "amount": 800,
-      "unit": "g",
-      "perPortions": 4
-    },
     {
       "name": "Erdnussbutter",
       "amount": 4,
@@ -71,6 +65,30 @@
       "perPortions": 4
     },
     {
+      "name": "Pouletflügeli",
+      "amount": 800,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Holzspiesschen",
+      "amount": 8,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
       "name": "Snack-Gurken",
       "amount": 250,
       "unit": "g",
@@ -98,24 +116,6 @@
       "name": "gesalzene Erdnüsse (grob gehackt)",
       "amount": 3,
       "unit": "EL",
-      "perPortions": 4
-    },
-    {
-      "name": "Holzspiesschen",
-      "amount": 8,
-      "unit": "Stk",
-      "perPortions": 4
-    },
-    {
-      "name": "Salz",
-      "amount": 1,
-      "unit": "Prise",
-      "perPortions": 4
-    },
-    {
-      "name": "Pfeffer",
-      "amount": 1,
-      "unit": "Prise",
       "perPortions": 4
     }
   ],
@@ -248,14 +248,14 @@
     "Snack-Gurken in Scheiben schneiden und zusammen mit den gezupften Korianderblättern zur Limettensauce geben, alles gut mischen.",
     "Die Pouletflügeli-Spiessli mit dem beiseitegestellten Erdnuss-Dip und dem Gurkensalat anrichten. Die gehackten Erdnüsse darüberstreuen und sofort servieren."
   ],
-  "tips": "Die Holzspiesschen mindestens 30 Minuten in Wasser einweichen, damit sie auf dem Grill nicht verbrennen. Das Rezept lässt sich auch im Backofen bei 200 °C Umluft zubereiten – dabei die Spiessli auf einem Gitterrost ca. 30 Minuten backen und einmal wenden.",
   "dietCategory": "meat",
-  "imageUrl": null,
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/fle-74-1781559763320.jpg",
   "imageZutaten": null,
   "imageKochen": null,
   "allergens": [
     "erdnuesse",
     "milch",
     "soja"
-  ]
+  ],
+  "activeTimeMinutes": 40
 }

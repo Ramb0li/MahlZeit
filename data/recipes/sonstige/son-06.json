@@ -1,13 +1,26 @@
 {
   "id": "son-06",
   "name": "Hummus-Gemüse-Wrap",
-  "category": "Snacks & Vorspeisen",
+  "category": "Wraps, Sandwiches & Burger",
   "timeMinutes": 10,
-  "tags": [],
+  "tags": [
+    "Brunch",
+    "Mittagessen",
+    "Abendessen",
+    "Snack",
+    "Mealprep-geeignet",
+    "Kinderfreundlich",
+    "Resteverwertung",
+    "Budgetfreundlich",
+    "Gut zum Mitnehmen",
+    "Ohne Kochen",
+    "Sommer",
+    "Mediterran"
+  ],
   "weatherType": "warm",
   "source": "Cuiseline",
   "basePortions": 1,
-  "description": "Schneller Wrap mit Hummus, frischem Gemüse und Rucola.",
+  "description": "Ein leichter Wrap mit Hummus, Tomaten und Rucola – bunt, sättigend und im Handumdrehen gemacht.",
   "ingredients": [
     {
       "name": "Vollkorntortilla",
@@ -65,11 +78,11 @@
     }
   ],
   "steps": [
-    "1. Tortilla flach auslegen.",
-    "2. Hummus gleichmässig aufstreichen.",
-    "3. Gurke, Cherrytomaten und Dörrtomaten darauf verteilen.",
-    "4. Rucola dazugeben, mit Salz und Pfeffer würzen.",
-    "5. Wrap fest einrollen."
+    "Tortilla flach auslegen und gleichmässig mit Hummus bestreichen.",
+    "Gurke klein schneiden, Cherrytomaten halbieren und Dörrtomaten in Streifen schneiden.",
+    "Gemüse auf Tortilla verteilen. Rucola daraufgeben, mit Salz und Pfeffer würzen.",
+    "Seiten leicht einklappen und Wrap fest aufrollen.",
+    "Nach Wunsch halbieren und servieren."
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---hummus-gemu-se-wrap-1--1780786140067.jpeg",
   "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---hummus-gemu-se-wrap-2--1780786147162.jpeg",

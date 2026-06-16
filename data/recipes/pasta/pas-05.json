@@ -4,12 +4,21 @@
   "category": "Pasta & Teigwaren",
   "timeMinutes": 25,
   "tags": [
-    "Italienisch"
+    "Italienisch",
+    "Mittagessen",
+    "Abendessen",
+    "Mealprep-geeignet",
+    "Kinderfreundlich",
+    "Einfrierbar",
+    "Budgetfreundlich",
+    "Gut zum Mitnehmen",
+    "Pfannengericht",
+    "Ganzjährig"
   ],
   "weatherType": "neutral",
-  "source": "Familien-Rezeptbuch",
+  "source": "cuiseline",
   "basePortions": 4,
-  "description": "Klassische Tomatensauce nach Hausrezept.",
+  "description": "Spaghetti Napoli – fruchtige Tomatensauce, mediterrane Kräuter und unkomplizierter Pastagenuss.",
   "ingredients": [
     {
       "name": "Zwiebel",
@@ -18,35 +27,69 @@
       "perPortions": 4
     },
     {
-      "name": "Tomatenpüree (Dose)",
+      "name": "Olivenöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomatenmark",
       "amount": 1,
       "unit": "Dose",
       "perPortions": 4
     },
     {
-      "name": "Pelati (Dose)",
+      "name": "gehackte Tomaten",
       "amount": 1,
       "unit": "Dose",
       "perPortions": 4
     },
     {
-      "name": "Bouillon",
+      "name": "Bouillonpaste",
       "amount": 1,
       "unit": "TL",
       "perPortions": 4
     },
     {
+      "name": "italienische Kräuter",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "All'arrabbiata Gewürz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
       "name": "Spaghetti",
-      "amount": 400,
+      "amount": 500,
       "unit": "g",
       "perPortions": 4
     }
   ],
   "steps": [
-    "1. Zwiebel in Olivenöl andämpfen.",
-    "2. Tomatenpüree, Pelati, Bouillon beifügen.",
-    "3. Würzen (Ital. Kräuter, Salz, Pfeffer, All'Arrabbiata), 15–20 Min. köcheln.",
-    "4. Spaghetti al dente kochen."
+    "Zwiebel fein hacken.",
+    "Olivenöl in einer Pfanne erhitzen. Zwiebel beigeben und andämpfen.",
+    "Tomatenmark hinzufügen und kurz mitrösten.",
+    "Gehackte Tomaten und Bouillon beigeben. Je nach Konsistenz noch etwas Wasser beifügen.",
+    "Mit italienischen Kräutern, Salz, Pfeffer und All’arrabbiata-Gewürz würzen.",
+    "Sauce bei kleiner Hitze ca. 15–20 Minuten köcheln lassen.",
+    "Gegen Ende Spaghetti in Salzwasser al dente kochen.",
+    "Spaghetti abgiessen, mit Napoli-Sauce anrichten und servieren."
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/pas-05-1780699648000.jpg",
   "imageZutaten": null,

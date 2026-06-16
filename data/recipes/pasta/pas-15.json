@@ -1,21 +1,31 @@
 {
   "id": "pas-15",
-  "name": "Spaghetti mit Pfifferlingen und Cherrytomaten",
+  "name": "Vollkornspaghetti mit Eierschwämmen und Cherrytomaten",
   "category": "Pasta & Teigwaren",
   "timeMinutes": 30,
   "tags": [
-    "Herbst"
+    "Herbst",
+    "Mittagessen",
+    "Abendessen",
+    "Mealprep-geeignet",
+    "Kinderfreundlich",
+    "Resteverwertung",
+    "Für Gäste",
+    "Gut zum Mitnehmen",
+    "Pfannengericht",
+    "Italienisch",
+    "Sommer"
   ],
-  "weatherType": "neutral",
+  "weatherType": "kalt",
   "source": "Cuiseline",
   "basePortions": 4,
-  "dietCategory": "vegetarian",
-  "description": "Herbstliche Spaghetti mit gebratenen Pfifferlingen und gerösteten Haselnüssen.",
+  "dietCategory": "vegan",
+  "description": "Würzige Eierschwämme treffen auf saftige Tomaten und nussigen Crunch – herzhaft, saisonal und wunderbar aromatisch.",
   "ingredients": [
     {
-      "name": "Vollkornspaghetti",
-      "amount": 500,
-      "unit": "g",
+      "name": "Haselnüsse",
+      "amount": 1,
+      "unit": "Handvoll",
       "perPortions": 4
     },
     {
@@ -25,21 +35,15 @@
       "perPortions": 4
     },
     {
-      "name": "Cherrytomaten",
-      "amount": 200,
-      "unit": "g",
-      "perPortions": 4
-    },
-    {
       "name": "Knoblauch",
-      "amount": 1,
+      "amount": 2,
       "unit": "Zehe",
       "perPortions": 4
     },
     {
-      "name": "Haselnüsse",
-      "amount": 1,
-      "unit": "Handvoll",
+      "name": "Cherrytomaten",
+      "amount": 250,
+      "unit": "g",
       "perPortions": 4
     },
     {
@@ -49,27 +53,50 @@
       "perPortions": 4
     },
     {
-      "name": "Chiliflocken",
-      "amount": 1,
-      "unit": "Messerspitze",
+      "name": "Olivenöl",
+      "amount": 5,
+      "unit": "EL",
       "perPortions": 4
     },
     {
-      "name": "Olivenöl",
-      "amount": 3,
-      "unit": "EL",
+      "name": "Vollkornspaghetti",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Chiliflocken",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Petersilie",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
       "perPortions": 4
     }
   ],
   "steps": [
-    "1. Haselnüsse in grosser Bratpfanne ohne Fett rösten, grob hacken, beiseitestellen.",
-    "2. Pfifferlinge putzen und je nach Grösse halbieren.",
-    "3. Spaghetti nach Anleitung al dente kochen.",
-    "4. Olivenöl erhitzen, Pfifferlinge bei starker Hitze 5 Minuten braten. Knoblauch dazugeben, weitere 5 Minuten bei mittlerer Hitze.",
-    "5. Cherrytomaten beifügen, kurz mitbraten. Mit Salz, Pfeffer und Chiliflocken würzen.",
-    "6. Spaghetti abgiessen, in die Pfanne geben. Mit Haselnüssen und Petersilie garnieren."
+    "Haselnüsse in grosser Bratpfanne ohne Fett rösten, grob hacken, beiseitestellen.",
+    "Eierschwämme putzen und je nach Grösse halbieren. Knoblauch und Petersilie fein schneiden. Cherryotmaten halbieren.",
+    "Spaghetti nach Anleitung al dente kochen.",
+    "Olivenöl erhitzen, Eierschwämme bei starker Hitze 5 Minuten braten. Knoblauch dazugeben, weitere 5 Minuten bei mittlerer Hitze.",
+    "Cherrytomaten beifügen, kurz mitbraten. Mit Salz, Pfeffer und Chiliflocken würzen.",
+    "Spaghetti abgiessen, in die Pfanne geben. Mit Haselnüssen und Petersilie garnieren."
   ],
-  "tips": "",
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---spaghetti-mit-pfifferlingen-und-cherrytomaten-1--1780577497670.jpeg",
   "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---spaghetti-mit-pifferlingen-und-cherrytomaten-2--1780577575474.jpeg",
   "imageKochen": null,

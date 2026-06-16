@@ -5,7 +5,7 @@
   "timeMinutes": 60,
   "basePortions": 4,
   "weatherType": "warm",
-  "source": "fooby.ch",
+  "source": "MahlZyt",
   "sourceType": "imported",
   "approved": false,
   "description": "Knackige Tomaten-Spiessli, karamellisierte Zwiebel-Lollis, goldige Kartoffelscheiben und gefüllte Hornpeperoni – dieses farbenfrohe Grillgemüse ist ein Fest für Auge und Gaumen.",
@@ -24,9 +24,51 @@
       "perPortions": 4
     },
     {
+      "name": "Rosmarin",
+      "amount": 6,
+      "unit": "Zweig",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Fleur de Sel",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
       "name": "Rote Zwiebeln (in Scheiben geschnitten)",
       "amount": 2,
       "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Holzspiesschen",
+      "amount": 6,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Honig",
+      "amount": 0.5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Cayennepfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
       "perPortions": 4
     },
     {
@@ -39,6 +81,24 @@
       "name": "Süsskartoffeln (in Scheiben geschnitten)",
       "amount": 250,
       "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Thymian",
+      "amount": 2,
+      "unit": "Zweig",
       "perPortions": 4
     },
     {
@@ -60,61 +120,19 @@
       "perPortions": 4
     },
     {
-      "name": "Rosmarin",
-      "amount": 6,
-      "unit": "Zweig",
-      "perPortions": 4
-    },
-    {
-      "name": "Thymian",
-      "amount": 2,
-      "unit": "Zweig",
-      "perPortions": 4
-    },
-    {
-      "name": "Holzspiesschen",
-      "amount": 6,
-      "unit": "Stk",
-      "perPortions": 4
-    },
-    {
       "name": "Olivenöl",
-      "amount": 3,
-      "unit": "EL",
-      "perPortions": 4
-    },
-    {
-      "name": "Olivenöl (zum Beträufeln)",
       "amount": 1,
       "unit": "EL",
-      "perPortions": 4
-    },
-    {
-      "name": "Honig",
-      "amount": 0.5,
-      "unit": "EL",
-      "perPortions": 4
-    },
-    {
-      "name": "Salz",
-      "amount": 1,
-      "unit": "TL",
-      "perPortions": 4
-    },
-    {
-      "name": "Fleur de Sel",
-      "amount": 1,
-      "unit": "Prise",
-      "perPortions": 4
-    },
-    {
-      "name": "Cayennepfeffer",
-      "amount": 1,
-      "unit": "Prise",
       "perPortions": 4
     },
     {
       "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
       "amount": 1,
       "unit": "Prise",
       "perPortions": 4
@@ -274,9 +292,8 @@
     "Währenddessen den Frischkäse mit dem fein geschnittenen Schnittlauch verrühren und mit Salz sowie Pfeffer abschmecken.",
     "Die gegrillten Hornpeperoni am oberen Teil aufschneiden und grosszügig mit der Frischkäsemischung füllen."
   ],
-  "tips": "Das Grillgemüse lässt sich beliebig variieren – Zucchetti, Auberginen oder Maiskolben eignen sich ebenfalls hervorragend. Die Holzspiesschen vor dem Gebrauch ca. 30 Minuten in Wasser einweichen, damit sie auf dem Grill nicht verbrennen.",
   "dietCategory": "vegetarian",
-  "imageUrl": null,
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/son-98-1781476872345.jpg",
   "imageZutaten": null,
   "imageKochen": null,
   "allergens": [

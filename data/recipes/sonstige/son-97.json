@@ -5,7 +5,7 @@
   "timeMinutes": 15,
   "basePortions": 4,
   "weatherType": "warm",
-  "source": "fooby.ch",
+  "source": "MahlZyt",
   "sourceType": "imported",
   "approved": false,
   "description": "Eine würzige BBQ-Marinade mit Sojasauce, Honig und Gewürzen – perfekt für Grillgut aller Art und im Handumdrehen zubereitet.",
@@ -15,7 +15,10 @@
     "Ohne Kochen",
     "Gut zum Mitnehmen",
     "Amerikanisch",
-    "Schnell"
+    "Schnell",
+    "Abendessen",
+    "Mittagessen",
+    "Einfrierbar"
   ],
   "ingredients": [
     {
@@ -86,9 +89,8 @@
     "Alle Zutaten gut miteinander verrühren, bis eine gleichmässige Marinade entsteht.",
     "Das Grillgut vor dem Grillieren grosszügig damit einpinseln und nach Belieben einige Minuten marinieren lassen."
   ],
-  "tips": "Die Marinade eignet sich hervorragend für Poulet, Rippchen oder Tofu. Sie lässt sich in einem verschlossenen Glas im Kühlschrank einige Tage aufbewahren.",
   "dietCategory": "vegan",
-  "imageUrl": null,
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/son-97-1781475638172.jpg",
   "imageZutaten": null,
   "imageKochen": null,
   "allergens": [

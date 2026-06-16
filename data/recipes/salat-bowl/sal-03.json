@@ -2,7 +2,7 @@
   "id": "sal-03",
   "name": "Taboulé",
   "category": "Salate & Bowls",
-  "timeMinutes": 20,
+  "timeMinutes": 25,
   "ingredients": [
     {
       "name": "Vollkorn-Couscous",
@@ -11,7 +11,7 @@
       "perPortions": 4
     },
     {
-      "name": "Gemüsebrühe",
+      "name": "Gemüsebouillon",
       "amount": 500,
       "unit": "ml",
       "perPortions": 4
@@ -35,6 +35,12 @@
       "perPortions": 4
     },
     {
+      "name": "Frühlingszwiebeln",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
       "name": "Petersilie (glatt)",
       "amount": 1,
       "unit": "Bund",
@@ -54,23 +60,36 @@
     },
     {
       "name": "Zitronensaft",
-      "amount": 1.5,
+      "amount": 5,
       "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
       "perPortions": 4
     }
   ],
   "weatherType": "warm",
   "source": "Cuiseline",
   "basePortions": 4,
-  "description": "Frischer Levante-Salat mit Couscous, Gurke, Tomaten und Peperoni.",
+  "description": "Frisches Taboulé mit knackigem Gemüse, Zitrone und aromatischen Kräutern – leicht, sommerlich und voller Geschmack.",
   "steps": [
-    "1. Couscous in grosse Schüssel, mit heisser Gemüsebrühe übergiessen, aufquellen lassen, mit Gabel auflockern.",
-    "2. Gurke, Tomaten und Peperoni fein würfeln.",
-    "3. Petersilie und Pfefferminze fein hacken.",
-    "4. Gemüse und Kräuter zum abgekühlten Couscous geben.",
-    "5. Olivenöl und Zitronensaft dazugeben, mit Salz und Pfeffer würzen. Alles vermischen."
+    "Couscous in eine grosse Schüssel geben. Heisse Gemüsebouillon darübergiessen und nach Packungsangabe quellen lassen.",
+    "Couscous mit einer Gabel auflockern und vollständig auskühlen lassen.",
+    "Gurke, Tomaten und Peperoni in kleine Würfel schneiden. Frühlingszwiebeln in feine Ringe schneiden.",
+    "Petersilie und Pfefferminzblätter fein hacken.",
+    "Gemüse und Kräuter zum ausgekühlten Couscous geben.",
+    "Olivenöl und Zitronensaft beigeben. Alles gut vermischen und mit Salz und Pfeffer abschmecken.",
+    "Taboulé vor Servieren nach Möglichkeit ca. 20–30 Minuten ziehen lassen."
   ],
-  "tips": "",
   "imageUrl": "/images/recipes/cuiselin-taboule.jpeg",
   "imageZutaten": "/images/recipes/cuiselin-taboule-zutaten.jpeg",
   "tags": [
@@ -78,7 +97,14 @@
     "Mittagessen",
     "Frühling",
     "Sommer",
-    "Nahöstlich"
+    "Nahöstlich",
+    "Abendessen",
+    "Kinderfreundlich",
+    "Resteverwertung",
+    "Budgetfreundlich",
+    "Für Gäste",
+    "Gut zum Mitnehmen",
+    "Herbst"
   ],
   "dietCategory": "vegan",
   "allergens": [
@@ -92,5 +118,6 @@
     "fiber": 7.2
   },
   "sourceType": "mahlzyt",
-  "_migrated_v2": true
+  "_migrated_v2": true,
+  "imageKochen": null
 }

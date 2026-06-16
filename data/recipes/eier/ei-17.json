@@ -10,7 +10,11 @@
     "Kinderfreundlich",
     "Mealprep-geeignet",
     "Italienisch",
-    "Ganzjährig"
+    "Ganzjährig",
+    "Mittagessen",
+    "Abendessen",
+    "Resteverwertung",
+    "Budgetfreundlich"
   ],
   "ingredients": [
     {
@@ -32,18 +36,6 @@
       "perPortions": 2
     },
     {
-      "name": "Braeburn Apfel",
-      "amount": 1,
-      "unit": "Stk",
-      "perPortions": 2
-    },
-    {
-      "name": "glatte Petersilie",
-      "amount": 15,
-      "unit": "g",
-      "perPortions": 2
-    },
-    {
       "name": "Zitrone",
       "amount": 1,
       "unit": "Stk",
@@ -62,7 +54,7 @@
       "perPortions": 2
     },
     {
-      "name": "Parmesan gerieben",
+      "name": "Parmesan, gerieben",
       "amount": 50,
       "unit": "g",
       "perPortions": 2
@@ -105,8 +97,8 @@
     }
   ],
   "weatherType": "neutral",
-  "source": "zu überarbeiten",
-  "description": "Eine fein würzige Frittata mit Lauch, Champignons und cremigem Zitronen-Hüttenkäse. Dazu ein erfrischender Apfel-Petersilie-Salat.",
+  "source": "MahlZyt",
+  "description": "Eine fein würzige Frittata mit Lauch, Champignons und cremigem Zitronen-Hüttenkäse.",
   "steps": [
     "Lauch längs halbieren und in feine Streifen schneiden. Champignons in Scheiben schneiden. Knoblauch schälen und fein hacken. Apfel in grobe Würfel schneiden. Petersilie fein hacken. Zitrone halbieren und Saft auspressen.",
     "Backofen auf 200 °C Ober-/Unterhitze vorheizen. Rost in mittlere Schiene einschieben.",
@@ -118,12 +110,11 @@
     "Parmesan darüberstreuen.",
     "Pfanne ca. 15–20 Minuten in Ofen geben, bis Frittata gestockt und leicht gebräunt ist.",
     "Inzwischen Zitronensaft zur Hälfte mit Hüttenkäse verrühren. Mit Salz und Pfeffer abschmecken.",
-    "Petersilie, Apfelwürfel und restlichen Zitronensaft mischen. Mit Pfeffer würzen.",
     "Frittata aus Ofen nehmen, kurz abkühlen lassen und vorsichtig auf Teller oder Brett gleiten lassen.",
-    "Mit Apfel-Petersilie-Salat und Zitronen-Hüttenkäse servieren."
+    "Mit Zitronen-Hüttenkäse servieren."
   ],
   "dietCategory": "vegetarian",
-  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2019/12/Fritatta_mit_Lauch_und_Champignons_Apfe-Petersilie-Salat_Zitronen_Huettnekaese.jpg",
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-17-1781473912921.jpg",
   "imageZutaten": null,
   "imageKochen": null,
   "allergens": [

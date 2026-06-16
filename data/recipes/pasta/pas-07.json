@@ -2,27 +2,55 @@
   "id": "pas-07",
   "name": "Älplermagronen",
   "category": "Aufläufe & Gratins",
-  "timeMinutes": 45,
+  "timeMinutes": 40,
   "tags": [
     "Schweizerisch",
     "Herbst",
-    "Winter"
+    "Winter",
+    "Pfannengericht",
+    "Mittagessen",
+    "Abendessen",
+    "Mealprep-geeignet",
+    "Kinderfreundlich",
+    "Resteverwertung",
+    "Budgetfreundlich",
+    "Für Gäste",
+    "Gut zum Mitnehmen",
+    "Ofengericht"
   ],
   "weatherType": "kalt",
-  "source": "Familien-Rezeptbuch",
+  "source": "MahlZyt",
   "basePortions": 4,
-  "description": "Schweizer Klassiker: Magronen mit Kartoffeln, Käse, Rahm und Röstizwiebeln.",
+  "description": "Feine Älplermagronen mit Kartoffeln, würzigem Käse und knusprigen Zwiebelringen – Schweizer Soulfood, wie man es liebt.",
   "ingredients": [
-    {
-      "name": "Kernser Älplermagronen",
-      "amount": 1,
-      "unit": "Packung",
-      "perPortions": 4
-    },
     {
       "name": "Kartoffeln",
       "amount": 5,
       "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebeln",
+      "amount": 6,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Mehl",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Kernser Älplermagronen",
+      "amount": 500,
+      "unit": "g",
       "perPortions": 4
     },
     {
@@ -50,27 +78,39 @@
       "perPortions": 4
     },
     {
-      "name": "Zwiebeln",
-      "amount": 5,
-      "unit": "Stk",
+      "name": "Salz ",
+      "amount": 1,
+      "unit": "Prise",
       "perPortions": 4
     },
     {
-      "name": "Butter",
-      "amount": 100,
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Muskatnuss",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Apfelmus",
+      "amount": 500,
       "unit": "g",
       "perPortions": 4
     }
   ],
   "steps": [
-    "1. Kartoffeln würfeln. Wasser mit Salz aufkochen, Kartoffeln beifügen. Teigwaren kochen.",
-    "2. Zwiebeln in Butter knusprig braten.",
-    "3. Abgeschüttete Teigwaren lagenweise mit Käse in Gratinform, Rahm darüber.",
-    "4. Bei 100–150°C 15 Min. warmhalten.",
-    "5. Gut mischen, Zwiebelringe drauf. Mit Apfelmus servieren."
+    "Kartoffeln schälen und würfeln. Zwiebeln in Scheiben schneiden und in Mehl wenden.",
+    "Butter in einer Bratpfanne erhitzen, Zwiebeln dazugeben und unter häufigem Umrührigen Zwiebelringe knusprig braten.",
+    "Unterdessen Wasser aufsetzen, Kartoffeln und ca. 2 EL Salz beigeben. Wenn es kocht, Teigwaren dazugeben",
+    "Abgeschüttete Teigwaren lagenweise mit Käse und Gewürzen in Gratinform schichten, Rahm darüber giessen.",
+    "Bei 100–150°C 15 Min. im Ofen warmhalten.",
+    "Kurz vor dem Servieren Gut mischen, Zwiebelringe darüber verteilen. Mit Apfelmus servieren."
   ],
-  "tips": "",
-  "imageUrl": null,
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/pas-07-1781478891741.jpg",
   "imageZutaten": null,
   "imageKochen": null,
   "allergens": [

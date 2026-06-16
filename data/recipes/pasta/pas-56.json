@@ -1,6 +1,6 @@
 {
   "id": "pas-56",
-  "name": "Soja-Butter-Nudeln mit grünem Spargel und Knoblauch",
+  "name": "Soja-Butter-Nudeln mit grünem Spargel",
   "category": "Pasta & Teigwaren",
   "timeMinutes": 20,
   "basePortions": 1,
@@ -8,7 +8,8 @@
     "Frühling",
     "Sommer",
     "Mittagessen",
-    "Abendessen"
+    "Abendessen",
+    "Chinesisch"
   ],
   "ingredients": [
     {
@@ -67,19 +68,19 @@
     }
   ],
   "weatherType": "warm",
-  "source": "zu überarbeiten",
+  "source": "MahlZyt",
   "description": "Die perfekte Kombination aus cremiger Butter und würziger Sojasauce trifft auf frischen grünen Spargel. Ein schnelles, aromatisches Pastagericht, das die Spargelzeit gebührend feiert.",
   "steps": [
-    "1. Einen Topf mit Wasser aufsetzen, zum Kochen bringen, grosszügig salzen und die Spaghetti nach Packungsanleitung al dente kochen.",
-    "2. Währenddessen die holzigen Enden vom grünen Spargel entfernen und den Spargel in grobe Stücke schneiden. Den Knoblauch schälen und in dünne Scheiben schneiden.",
-    "3. Eine Pfanne bei mittlerer Hitze erwärmen und das Olivenöl hineingeben. Den Spargel darin etwa 5 Minuten anbraten.",
-    "4. Den gebratenen Spargel mit Salz, Pfeffer und Chiliflocken würzen. Die Knoblauchscheiben hinzufügen und kurz mitbraten.",
-    "5. Die Butter in die Pfanne geben und schmelzen lassen, dabei regelmässig umrühren.",
-    "6. Die Sojasauce hinzufügen und alles gut vermischen, sodass eine cremige Sauce entsteht.",
-    "7. Die gekochten Spaghetti zur Pfanne geben und alles gut miteinander vermengen. Servieren und geniessen."
+    "Einen Topf mit Wasser aufsetzen, zum Kochen bringen, grosszügig salzen und die Spaghetti nach Packungsanleitung al dente kochen.",
+    "Währenddessen die holzigen Enden vom grünen Spargel entfernen und den Spargel in grobe Stücke schneiden. Den Knoblauch schälen und in dünne Scheiben schneiden.",
+    "Eine Pfanne bei mittlerer Hitze erwärmen und das Olivenöl hineingeben. Den Spargel darin etwa 5 Minuten anbraten.",
+    "Den gebratenen Spargel mit Salz, Pfeffer und Chiliflocken würzen. Die Knoblauchscheiben hinzufügen und kurz mitbraten.",
+    "Die Butter in die Pfanne geben und schmelzen lassen, dabei regelmässig umrühren.",
+    "Die Sojasauce hinzufügen und alles gut vermischen, sodass eine cremige Sauce entsteht.",
+    "Die gekochten Spaghetti zur Pfanne geben und alles gut miteinander vermengen. Servieren und geniessen."
   ],
   "dietCategory": "vegetarian",
-  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2023/06/Spaghetti_mit_gruenem_Spargel_Knoblauch_und_Sojasauce.jpg",
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/pas-56-1781558627382.jpg",
   "imageZutaten": null,
   "imageKochen": null,
   "allergens": [

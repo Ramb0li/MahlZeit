@@ -2,20 +2,8 @@
   "id": "rei-06",
   "name": "Linsen-Reis",
   "category": "Reis, Getreide & Hülsenfrüchte",
-  "timeMinutes": 40,
+  "timeMinutes": 35,
   "ingredients": [
-    {
-      "name": "Linsen (trocken)",
-      "amount": 300,
-      "unit": "g",
-      "perPortions": 4
-    },
-    {
-      "name": "Jasminreis",
-      "amount": 400,
-      "unit": "g",
-      "perPortions": 4
-    },
     {
       "name": "Zwiebeln",
       "amount": 2,
@@ -35,9 +23,21 @@
       "perPortions": 4
     },
     {
-      "name": "Rapsöl",
+      "name": "Chilischote (optional)",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 6
+    },
+    {
+      "name": "Kokosöl",
       "amount": 4,
       "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "grüne Linsen (trocken)",
+      "amount": 300,
+      "unit": "g",
       "perPortions": 4
     },
     {
@@ -53,35 +53,64 @@
       "perPortions": 4
     },
     {
-      "name": "Gemüsebrühe",
+      "name": "Gemüsebouillon",
       "amount": 1400,
       "unit": "ml",
       "perPortions": 4
     },
     {
+      "name": "Jasminreis",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
       "name": "Koriander",
-      "amount": 1,
+      "amount": 0.5,
       "unit": "Bund",
       "perPortions": 4
+    },
+    {
+      "name": "Kokosjoghurt, ungesüsst",
+      "amount": 6,
+      "unit": "EL",
+      "perPortions": 6
+    },
+    {
+      "name": "Zitrone",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 6
     }
   ],
-  "weatherType": "neutral",
+  "weatherType": "kalt",
   "source": "Cuiseline",
-  "basePortions": 4,
-  "description": "Würziger Linsenreis mit Kurkuma, Kardamom und frischem Koriander.",
+  "basePortions": 6,
+  "description": "Würziger Linsenreis mit Ingwer, Kurkuma und Kardamom – duftend, sättigend und unkompliziert aus einem Topf.",
   "steps": [
-    "1. Zwiebeln, Knoblauch und Ingwer im Rapsöl andünsten.",
-    "2. Linsen, Kardamom und Kurkuma beigeben, kurz mitdünsten.",
-    "3. Gemüsebrühe dazugiessen, aufkochen, ca. 15 Min. bei kleiner Hitze köcheln.",
-    "4. Reis dazugeben, weitere 15 Minuten köcheln bis alles gar ist.",
-    "5. Koriander abzupfen, daruntermengen. Mit Salz abschmecken.",
-    "6. Nach Belieben mit Kokosmilch und extra Koriander garnieren."
+    "Zwiebeln und Knoblauch fein hacken. Ingwer schälen und fein reiben. Chilischoten entkernen und fein schneiden.",
+    "Kokosöl in einer grossen Pfanne oder einem weiten Topf erhitzen. Zwiebeln, Knoblauch, Ingwer und Chili beigeben und andämpfen.",
+    "Linsen, Kardamom und Kurkuma hinzufügen und bei kleiner Hitze kurz mitdünsten.",
+    "Mit Gemüsebouillon ablöschen und ca. 10 Minuten köcheln lassen.",
+    "Jasminreis beigeben und bei kleiner Hitze weitere ca. 15 Minuten köcheln lassen, bis Reis und Linsen gar sind. Bei Bedarf wenig zusätzliche Bouillon oder Wasser ergänzen.",
+    "Unterdessen Zitrone in Schnitze schneiden. Koriander waschen, trocken schütteln und Blätter abzupfen. Einige Blätter für Garnitur beiseitelegen, restlichen Koriander unter Linsenreis mischen.",
+    "Mit Salz abschmecken.",
+    "Linsenreis mit Kokosjoghurt, Zitronenschnitzen, Korianderblättern und Chiliflocken garnieren und servieren."
   ],
-  "tips": "",
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---rei-06-1--1780577735944.jpeg",
   "tags": [
     "Mealprep-geeignet",
-    "Mittagessen"
+    "Mittagessen",
+    "Abendessen",
+    "Einfrierbar",
+    "Kinderfreundlich",
+    "Budgetfreundlich",
+    "Gut zum Mitnehmen",
+    "Pfannengericht",
+    "One-Pot-Gericht",
+    "Herbst",
+    "Winter",
+    "Indisch"
   ],
   "dietCategory": "vegan",
   "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---rei-06-2--1780577746940.jpeg",
@@ -94,5 +123,6 @@
     "fiber": 12.4
   },
   "sourceType": "mahlzyt",
-  "_migrated_v2": true
+  "_migrated_v2": true,
+  "imageKochen": null
 }

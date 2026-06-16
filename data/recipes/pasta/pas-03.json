@@ -7,47 +7,26 @@
     "Mealprep-geeignet",
     "Ofengericht",
     "Herbst",
-    "Winter"
+    "Winter",
+    "Mittagessen",
+    "Abendessen",
+    "Kinderfreundlich",
+    "Einfrierbar",
+    "Budgetfreundlich",
+    "Für Gäste",
+    "Gut zum Mitnehmen",
+    "Frühling",
+    "Italienisch"
   ],
   "weatherType": "kalt",
-  "source": "Familien-Rezeptbuch",
+  "source": "MahlZyt",
   "basePortions": 4,
-  "description": "Spinat-Lasagne mit Béchamelsauce und Sbrinz.",
+  "description": "Cremige Spinatlasagne mit feiner Béchamelsauce und goldbraunem Sbrinz – herzhaftes Soulfood aus dem Ofen.",
   "ingredients": [
     {
-      "name": "TK-Blattspinat",
-      "amount": 600,
-      "unit": "g",
-      "perPortions": 4
-    },
-    {
-      "name": "Lasagneblätter",
-      "amount": 9,
-      "unit": "Stk",
-      "perPortions": 4
-    },
-    {
-      "name": "Sbrinz, gerieben",
-      "amount": 100,
-      "unit": "g",
-      "perPortions": 4
-    },
-    {
-      "name": "Kochbutter",
-      "amount": 50,
-      "unit": "g",
-      "perPortions": 4
-    },
-    {
-      "name": "Mehl",
+      "name": "Spinat",
       "amount": 1,
-      "unit": "EL",
-      "perPortions": 4
-    },
-    {
-      "name": "Milch",
-      "amount": 5,
-      "unit": "dl",
+      "unit": "kg",
       "perPortions": 4
     },
     {
@@ -58,17 +37,98 @@
     },
     {
       "name": "Knoblauch",
-      "amount": 1,
+      "amount": 2,
       "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 40,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Muskatnuss",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Mehl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Milch",
+      "amount": 8,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Muskatnuss",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Senf",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Lasagneblätter",
+      "amount": 1,
+      "unit": "Pkg",
+      "perPortions": 4
+    },
+    {
+      "name": "Sbrinz, gerieben",
+      "amount": 100,
+      "unit": "g",
       "perPortions": 4
     }
   ],
   "steps": [
-    "1. Béchamel: Butter schmelzen, Mehl andünsten, mit Milch ablöschen. Aufkochen, 5 Min. rühren, würzen.",
-    "2. Zwiebeln glasig dünsten. Spinat 3 Min. mitdünsten, würzen.",
-    "3. Béchamel dazugiessen, aufkochen.",
-    "4. Form fetten. Blätter mit Spinatmasse abwechseln. Sbrinz drüber.",
-    "5. Bei 200–220°C 40–45 Min. backen."
+    "Spinat  auftauen lassen. Zwiebel und Knoblauch fein hacken.",
+    "Für Béchamelsauce Butter in einer Pfanne schmelzen. Mehl beigeben und kurz dünsten, ohne dass es Farbe annimmt.",
+    "Milch unter ständigem Rühren dazugiessen und aufkochen. Ca. 5 Minuten köcheln lassen, bis Sauce sämig ist. Mit Salz, Pfeffer, Muskatnuss und Senf würzen und abschmecken.",
+    "Butter in einer grossen Pfanne erhitzen. Zwiebel und Knoblauch glasig dünsten.",
+    "Spinat beigeben und kurz mitdünsten. Mit Salz, Pfeffer und Muskatnuss würzen und abschmecken",
+    "Backofen auf 220 °C Ober-/Unterhitze vorheizen.",
+    "Gratinform mit Butter einfetten. Lasagneblätter, Spinat und Béchamelsauce lagenweise einschichten. Mit Béchamelsauce abschliessen und Sbrinz darüberstreuen.",
+    "Lasagne ca. 40–45 Minuten backen."
   ],
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/pas-03-1780699620075.jpg",
   "imageZutaten": null,
@@ -86,5 +146,118 @@
   },
   "dietCategory": "vegetarian",
   "sourceType": "mahlzyt",
-  "_migrated_v2": true
+  "_migrated_v2": true,
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Spinat",
+      "ingredients": [
+        {
+          "name": "Spinat",
+          "amount": 1,
+          "unit": "kg",
+          "perPortions": 4
+        },
+        {
+          "name": "Zwiebel",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Knoblauch",
+          "amount": 2,
+          "unit": "Zehe",
+          "perPortions": 4
+        },
+        {
+          "name": "Butter",
+          "amount": 40,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Muskatnuss",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Béchamelsauce:",
+      "ingredients": [
+        {
+          "name": "Butter",
+          "amount": 50,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Mehl",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Milch",
+          "amount": 8,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Muskatnuss",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Senf",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Lasagne",
+      "ingredients": [
+        {
+          "name": "Lasagneblätter",
+          "amount": 1,
+          "unit": "Pkg",
+          "perPortions": 4
+        },
+        {
+          "name": "Sbrinz, gerieben",
+          "amount": 100,
+          "unit": "g",
+          "perPortions": 4
+        }
+      ]
+    }
+  ]
 }

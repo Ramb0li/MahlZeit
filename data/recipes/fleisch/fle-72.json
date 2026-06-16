@@ -5,7 +5,7 @@
   "timeMinutes": 38,
   "basePortions": 4,
   "weatherType": "warm",
-  "source": "fooby.ch",
+  "source": "MahlZyt",
   "sourceType": "imported",
   "approved": false,
   "description": "Saftige T-Bone-Steaks vom Grill treffen auf knackig gegrillten grünen Spargel – ein unkompliziertes Sommeressen, das garantiert beeindruckt.",
@@ -23,6 +23,18 @@
       "perPortions": 4
     },
     {
+      "name": "Meersalz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
       "name": "Grüne Spargeln",
       "amount": 600,
       "unit": "g",
@@ -35,21 +47,9 @@
       "perPortions": 4
     },
     {
-      "name": "Meersalz",
-      "amount": 1,
-      "unit": "TL",
-      "perPortions": 4
-    },
-    {
       "name": "Salz",
       "amount": 0.5,
       "unit": "TL",
-      "perPortions": 4
-    },
-    {
-      "name": "Pfeffer",
-      "amount": 1,
-      "unit": "Prise",
       "perPortions": 4
     },
     {
@@ -121,9 +121,8 @@
     "Die Spargeln auf dem Grill bei mittlerer Hitze beidseitig je ca. 4 Minuten grillieren, bis sie leicht gebräunt und noch bissfest sind.",
     "Spargeln vom Grill nehmen, mit Zitronensaft beträufeln und zusammen mit den T-Bone-Steaks servieren."
   ],
-  "tips": "Die Steaks sollten Zimmertemperatur haben, bevor sie auf den Grill kommen – so garen sie gleichmässiger. Für ein Raucharoma eignet sich Holzkohle besonders gut.",
   "dietCategory": "meat",
-  "imageUrl": null,
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/fle-72-1781477268188.jpg",
   "imageZutaten": null,
   "imageKochen": null,
   "allergens": []

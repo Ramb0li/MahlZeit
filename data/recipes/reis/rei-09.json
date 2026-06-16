@@ -3,25 +3,27 @@
   "name": "Hirse-Gemüse-Pfanne mit Räuchertofu",
   "category": "Reis, Getreide & Hülsenfrüchte",
   "timeMinutes": 35,
-  "tags": [],
-  "weatherType": "neutral",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Mealprep-geeignet",
+    "Kinderfreundlich",
+    "Resteverwertung",
+    "Budgetfreundlich",
+    "Gut zum Mitnehmen",
+    "Pfannengericht",
+    "Schweizerisch",
+    "Nahöstlich",
+    "Einfrierbar",
+    "Herbst",
+    "Winter"
+  ],
+  "weatherType": "kalt",
   "source": "Cuiseline",
   "basePortions": 4,
   "dietCategory": "vegan",
-  "description": "Nahrhafte Hirse-Pfanne mit Brokkoli, Federkohl und würzigem Räuchertofu.",
+  "description": "Kräftiges Wintergemüse, feine Hirse und würziger Tofu – unkompliziert, nahrhaft und voller Geschmack",
   "ingredients": [
-    {
-      "name": "Hirse",
-      "amount": 250,
-      "unit": "g",
-      "perPortions": 4
-    },
-    {
-      "name": "Gemüsebrühe",
-      "amount": 500,
-      "unit": "ml",
-      "perPortions": 4
-    },
     {
       "name": "Räuchertofu",
       "amount": 200,
@@ -29,7 +31,7 @@
       "perPortions": 4
     },
     {
-      "name": "Brokkoli",
+      "name": "Rotkohl",
       "amount": 500,
       "unit": "g",
       "perPortions": 4
@@ -59,26 +61,54 @@
       "perPortions": 4
     },
     {
-      "name": "Sojasauce",
-      "amount": 100,
+      "name": "Frühlingszwiebeln",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebouillon",
+      "amount": 700,
       "unit": "ml",
       "perPortions": 4
     },
     {
-      "name": "Rapsöl",
+      "name": "Hirse",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Sojasauce",
       "amount": 3,
       "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Rapsöl",
+      "amount": 2,
+      "unit": "g",
       "perPortions": 4
     }
   ],
   "steps": [
-    "1. Gemüsebrühe in Pfanne zum Kochen bringen, Hirse beigeben, ca. 8 Minuten garen.",
-    "2. Räuchertofu in Würfel schneiden, in Rapsöl goldbraun braten, mit 50 ml Sojasauce würzen.",
-    "3. Zwiebel und Knoblauch andünsten. Brokkoli, Federkohl und Karotte in Streifen dazugeben.",
-    "4. Gemüse mit restlicher Sojasauce würzen, mitdünsten.",
-    "5. Räuchertofu und Hirse daruntermengen. Mit Frühlingszwiebeln garnieren."
+    "Räuchertofu in Würfel schneiden. Rotkabis, Federkohl und Karotte in feine Streifen schneiden. Zwiebel und Knoblauch fein hacken. Frühlingszwiebeln in Ringe schneiden, wenig davon für Garnitur beiseitelegen.",
+    "2 EL Rapsöl in einer weiten Bratpfanne erhitzen. Räuchertofu rundum goldbraun anbraten.",
+    "Mit 2 EL Sojasauce ablöschen, kurz einkochen lassen. Tofu herausnehmen und beiseitestellen.",
+    "5 dl Gemüsebouillon in einer separaten Pfanne aufkochen. Hirse beigeben und nach Packungsangabe ca. 8 Minuten garen.",
+    "2 EL Olivenöl in gleicher Bratpfanne erhitzen. Zwiebel und Knoblauch beigeben und andämpfen.",
+    "Rotkabis, Federkohl und Karotte hinzufügen und ca. 5 Minuten mitdünsten.",
+    "Mit 2 dl Gemüsebouillon ablöschen. Gemüse bei mittlerer Hitze kurz köcheln lassen, bis gewünschte Bissfestigkeit erreicht ist.",
+    "Räuchertofu, Frühlingszwiebeln und Hirse beigeben und gut vermischen.",
+    "Mit Salz, Pfeffer und Sojasauce abschmecken.",
+    "Hirse-Gemüse-Pfanne anrichten und mit restlichen Frühlingszwiebelringen garnieren."
   ],
-  "tips": "",
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---hirse-gemu-se-pfanne-mit-ra-uchertofu-1--1780578809829.jpeg",
   "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---hirse-gemu-se-pfanne-mit-ra-uchertofu-2--1780579029051.jpeg",
   "imageKochen": null,

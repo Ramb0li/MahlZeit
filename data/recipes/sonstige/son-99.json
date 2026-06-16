@@ -5,7 +5,7 @@
   "timeMinutes": 30,
   "basePortions": 4,
   "weatherType": "warm",
-  "source": "fooby.ch",
+  "source": "MahlZyt",
   "sourceType": "imported",
   "approved": false,
   "description": "Der provenzalische Klassiker, direkt auf dem Grill zubereitet: saftiges Sommergemüse mit Kräutern und Knoblauch – als Beilage oder Hauptgericht ein Genuss.",
@@ -43,38 +43,14 @@
       "perPortions": 4
     },
     {
-      "name": "Rispen-Cherry-Tomaten",
-      "amount": 300,
-      "unit": "g",
-      "perPortions": 4
-    },
-    {
-      "name": "Zwiebel",
-      "amount": 1,
-      "unit": "Stk",
-      "perPortions": 4
-    },
-    {
-      "name": "Knoblauchzehen",
-      "amount": 4,
+      "name": "Knoblauchzehen (fein gehackt)",
+      "amount": 2,
       "unit": "Zehe",
       "perPortions": 4
     },
     {
-      "name": "Oregano",
-      "amount": 5,
-      "unit": "Stk",
-      "perPortions": 4
-    },
-    {
-      "name": "Thymian",
-      "amount": 4,
-      "unit": "Stk",
-      "perPortions": 4
-    },
-    {
       "name": "Olivenöl",
-      "amount": 5,
+      "amount": 3,
       "unit": "EL",
       "perPortions": 4
     },
@@ -85,15 +61,39 @@
       "perPortions": 4
     },
     {
-      "name": "Fleur de Sel",
-      "amount": 0.25,
-      "unit": "TL",
+      "name": "Rispen-Cherry-Tomaten",
+      "amount": 300,
+      "unit": "g",
       "perPortions": 4
     },
     {
-      "name": "Pfeffer",
+      "name": "Zwiebel (in Spalten)",
       "amount": 1,
-      "unit": "Prise",
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehen (fein gehackt)",
+      "amount": 2,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Oregano-Zweige",
+      "amount": 5,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Thymian-Zweige",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
       "perPortions": 4
     }
   ],
@@ -196,9 +196,8 @@
     "Die Cherry-Tomaten noch weitere ca. 10 Minuten auf dem Grill lassen, bis sie leicht aufgeplatzt sind, dann über das Ratatouille verteilen.",
     "Das Gericht mit Fleur de Sel, Pfeffer und frischen Oregano-Blättchen abschmecken und servieren."
   ],
-  "tips": "Als Beilage zu Grilladen oder als eigenständiges Hauptgericht mit Baguette servieren. Reste lassen sich am nächsten Tag kalt als Salat oder warm auf Pasta geniessen.",
   "dietCategory": "vegan",
-  "imageUrl": null,
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/son-99-1781476677645.jpg",
   "imageZutaten": null,
   "imageKochen": null,
   "allergens": []

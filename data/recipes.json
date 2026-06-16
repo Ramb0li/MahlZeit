@@ -51,7 +51,7 @@
       }
     ],
     "weatherType": "neutral",
-    "source": "MahlZyt",
+    "source": "MahlZeit",
     "basePortions": 4,
     "description": "Klassisches Rührei, schnell und einfach.",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-01-1780502993941.jpg",
@@ -78,8 +78,7 @@
     ],
     "dietCategory": "vegetarian",
     "sourceType": "mahlzyt",
-    "_migrated_v2": true,
-    "approved": true
+    "_migrated_v2": true
   },
   {
     "id": "ei-02",
@@ -191,7 +190,7 @@
       }
     ],
     "weatherType": "kalt",
-    "source": "MahlZyt",
+    "source": "MahlZeit",
     "basePortions": 2,
     "description": "Es gibt Gerichte, die erinnern an die Kindheit. Rahmspinat ist dabei auf einer der ersten Plätze meiner Kindheitserinnerungsessen. Ein herzhafter Klassiker für kalte Abende.",
     "steps": [
@@ -353,8 +352,7 @@
       }
     ],
     "sourceType": "mahlzyt",
-    "_migrated_v2": true,
-    "approved": true
+    "_migrated_v2": true
   },
   {
     "id": "ei-03",
@@ -424,7 +422,7 @@
       }
     ],
     "weatherType": "neutral",
-    "source": "MahlZyt",
+    "source": "MahlZeit",
     "basePortions": 4,
     "description": "Schweizer Klassiker trifft auf Avocado.",
     "steps": [
@@ -537,8 +535,7 @@
       }
     ],
     "sourceType": "mahlzyt",
-    "_migrated_v2": true,
-    "approved": true
+    "_migrated_v2": true
   },
   {
     "id": "ei-04",
@@ -620,7 +617,7 @@
       }
     ],
     "weatherType": "neutral",
-    "source": "MahlZyt",
+    "source": "MahlZeit",
     "basePortions": 4,
     "description": "Ob als eiweissreiches Frühstück oder als leichte, sättigende Mahlzeit am Mittag oder Abend: Dieses schnelle Omelett mit buntem Gemüse und Vollkornbrot passt immer.",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-04-1780699103706.jpg",
@@ -660,29 +657,13 @@
       "Die Gemüseomeletts mit gehackter Petersilie bestreuen und mit getoastetem Vollkornbrot servieren."
     ],
     "sourceType": "mahlzyt",
-    "_migrated_v2": true,
-    "approved": true
+    "_migrated_v2": true
   },
   {
     "id": "ei-05",
     "name": "Omelette mit Pilz-Kräutersauce",
     "category": "Eiergerichte",
     "timeMinutes": 50,
-    "tags": [
-      "Herbst",
-      "Winter",
-      "Mealprep-geeignet",
-      "Kinderfreundlich",
-      "Frühling",
-      "Mittagessen",
-      "Abendessen",
-      "Schweizerisch",
-      "Budgetfreundlich",
-      "Resteverwertung",
-      "Für Gäste",
-      "Gut zum Mitnehmen",
-      "Pfannengericht"
-    ],
     "ingredients": [
       {
         "name": "Butter",
@@ -800,12 +781,9 @@
       }
     ],
     "weatherType": "kalt",
-    "source": "MahlZyt",
+    "source": "MahlZeit",
     "basePortions": 4,
     "description": "Feine Omeletten treffen auf cremige Pilzsauce mit frischer Zitronennote und aromatischem Salbei – ein herzhaftes Gericht für ein gemütliches Essen.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-05-1781045328742.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
     "steps": [
       "Butter in einer kleinen Pfanne schmelzen, beiseitestellen und auskühlen lassen.",
       "Mehl und Salz in einer Schüssel mischen, in der Mitte eine Mulde formen.",
@@ -820,6 +798,36 @@
       "Fertige Omeletten auf einen Teller schichten und bei 60 °C Ober-/Unterhitze warm halten, bis alle Omeletten gebacken sind.",
       "Omeletten mit Pilzsauce füllen und etwas Petersilie garnieren."
     ],
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-05-1781045328742.jpg",
+    "tags": [
+      "Herbst",
+      "Winter",
+      "Mealprep-geeignet",
+      "Kinderfreundlich",
+      "Frühling",
+      "Mittagessen",
+      "Abendessen",
+      "Schweizerisch",
+      "Budgetfreundlich",
+      "Resteverwertung",
+      "Für Gäste",
+      "Gut zum Mitnehmen",
+      "Pfannengericht"
+    ],
+    "allergens": [
+      "ei",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 268,
+      "protein": 15.9,
+      "fat": 21.3,
+      "carbs": 3.8,
+      "fiber": 1.2
+    },
+    "dietCategory": "vegetarian",
+    "imageZutaten": null,
+    "imageKochen": null,
     "ingredientGroups": [
       {
         "name": "Zutaten für Omelette",
@@ -946,8 +954,8 @@
         ]
       }
     ],
-    "dietCategory": "vegetarian",
-    "approved": true
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ei-07",
@@ -1083,7 +1091,7 @@
       }
     ],
     "weatherType": "kalt",
-    "source": "MahlZyt",
+    "source": "MahlZeit",
     "basePortions": 4,
     "description": "Herzhaft, farbenfroh und sättigend – diese Käsepolenta mit Ofengemüse und Spiegelei bringt mediterrane Wärme auf den Teller.",
     "steps": [
@@ -1269,8 +1277,7 @@
       }
     ],
     "sourceType": "mahlzyt",
-    "_migrated_v2": true,
-    "approved": true
+    "_migrated_v2": true
   },
   {
     "id": "ei-09",
@@ -1385,8 +1392,7 @@
       "fiber": 8.6
     },
     "sourceType": "mahlzyt",
-    "_migrated_v2": true,
-    "approved": true
+    "_migrated_v2": true
   },
   {
     "id": "ei-10",
@@ -1507,8 +1513,7 @@
       "fiber": 9.2
     },
     "sourceType": "mahlzyt",
-    "_migrated_v2": true,
-    "approved": true
+    "_migrated_v2": true
   },
   {
     "id": "ei-11",
@@ -1628,8 +1633,7 @@
       "fiber": 8.3
     },
     "sourceType": "mahlzyt",
-    "_migrated_v2": true,
-    "approved": true
+    "_migrated_v2": true
   },
   {
     "id": "ei-12",
@@ -1741,7 +1745,7 @@
       }
     ],
     "weatherType": "kalt",
-    "source": "MahlZyt",
+    "source": "MahlZeit",
     "basePortions": 4,
     "description": "Ein traditionelles nordafrikanisches Gericht mit pochierten Eiern in würziger Tomatensauce - schnell zubereitet und wandelbar. Perfektes Seelenfutter, das sowohl als Frühstück als auch als Mittag- und Abendessen funktioniert.",
     "steps": [
@@ -1783,8 +1787,7 @@
     "imageZutaten": null,
     "imageKochen": null,
     "sourceType": "mahlzyt",
-    "_migrated_v2": true,
-    "approved": true
+    "_migrated_v2": true
   },
   {
     "id": "ei-13",
@@ -1854,7 +1857,7 @@
       }
     ],
     "weatherType": "warm",
-    "source": "MahlZyt",
+    "source": "MahlZeit",
     "basePortions": 4,
     "description": "Cremige, pinke Smoothie Bowl mit Banane, Beeren und versteckter Zucchetti – ein vitaminreicher Start in den Tag.",
     "steps": [
@@ -1893,8 +1896,7 @@
     },
     "dietCategory": "vegan",
     "sourceType": "mahlzyt",
-    "_migrated_v2": true,
-    "approved": true
+    "_migrated_v2": true
   },
   {
     "id": "ei-14",
@@ -1958,7 +1960,7 @@
       }
     ],
     "weatherType": "neutral",
-    "source": "MahlZyt",
+    "source": "MahlZeit",
     "basePortions": 4,
     "description": "Vegane Pancakes, goldbraun gebacken, schön luftig und herrlich fein – diese Pancakes bringen Frühstücksfreude auf den Teller.",
     "steps": [
@@ -1999,8 +2001,7 @@
     },
     "dietCategory": "vegan",
     "sourceType": "mahlzyt",
-    "_migrated_v2": true,
-    "approved": true
+    "_migrated_v2": true
   },
   {
     "id": "ei-15",
@@ -2076,7 +2077,7 @@
       }
     ],
     "weatherType": "neutral",
-    "source": "MahlZyt",
+    "source": "MahlZeit",
     "basePortions": 4,
     "description": "Amerikanische Pancakes – luftig, dick und goldbraun. Ein Frühstücksklassiker für die ganze Familie.",
     "steps": [
@@ -2117,8 +2118,7 @@
     },
     "dietCategory": "vegetarian",
     "sourceType": "mahlzyt",
-    "_migrated_v2": true,
-    "approved": true
+    "_migrated_v2": true
   },
   {
     "id": "ei-16",
@@ -2176,7 +2176,7 @@
       }
     ],
     "weatherType": "neutral",
-    "source": "MahlZyt",
+    "source": "MahlZeit",
     "basePortions": 4,
     "description": "Einfachste vegane Pancakes aus Bananen und Haferflocken – ohne Mehl, Zucker oder Ei.",
     "steps": [
@@ -2217,14 +2217,14 @@
     },
     "dietCategory": "vegan",
     "sourceType": "mahlzyt",
-    "_migrated_v2": true,
-    "approved": true
+    "_migrated_v2": true
   },
   {
     "id": "ei-17",
     "name": "Frittata mit Lauch und Champignon",
     "category": "Eiergerichte",
     "timeMinutes": 25,
+    "basePortions": 2,
     "tags": [
       "Ofengericht",
       "Frühstück",
@@ -2319,11 +2319,7 @@
     ],
     "weatherType": "neutral",
     "source": "MahlZyt",
-    "basePortions": 2,
     "description": "Eine fein würzige Frittata mit Lauch, Champignons und cremigem Zitronen-Hüttenkäse.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-17-1781473912921.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
     "steps": [
       "Lauch längs halbieren und in feine Streifen schneiden. Champignons in Scheiben schneiden. Knoblauch schälen und fein hacken. Apfel in grobe Würfel schneiden. Petersilie fein hacken. Zitrone halbieren und Saft auspressen.",
       "Backofen auf 200 °C Ober-/Unterhitze vorheizen. Rost in mittlere Schiene einschieben.",
@@ -2339,13 +2335,22 @@
       "Mit Zitronen-Hüttenkäse servieren."
     ],
     "dietCategory": "vegetarian",
-    "approved": true
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-17-1781473912921.jpg",
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "ei",
+      "milch"
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ei-18",
     "name": "Käsetoast mit Cheddar und Butterkäse mit Spiegelei",
     "category": "Eiergerichte",
     "timeMinutes": 15,
+    "basePortions": 2,
     "tags": [
       "Kinderfreundlich",
       "Frühstück",
@@ -2429,11 +2434,7 @@
     ],
     "weatherType": "neutral",
     "source": "MahlZyt",
-    "basePortions": 2,
     "description": "Ein köstlicher Käsetoast mit würzigem Cheddar und zartem Butterkäse, getoppt mit einem Spiegelei mit flüssigem Eigelb, das als perfekte „Sauce\" dient. Parmesan sorgt für die knusprige Kruste.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-18-1780866860975.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
     "steps": [
       "Je eine Scheibe Cheddar und eine Scheibe Butterkäse auf zwei Toastscheiben legen. Mit den übrigen Toastscheiben bedecken und mit der Hand leicht zusammendrücken.",
       "Eine Pfanne bei mittlerer Hitze erwärmen und 10 g Butter darin schmelzen. Die Butter in der Pfanne verteilen und den Käsetoast hineinlegen. Den Toast kreisend in der Pfanne bewegen, damit er das Fett aufnimmt. Etwa 5 Minuten rösten, bis die Unterseite schön knusprig und gebräunt ist.",
@@ -2443,13 +2444,22 @@
       "Den Käsetoast mit getrocknetem Oregano bestreuen und mit dem Spiegelei servieren."
     ],
     "dietCategory": "vegetarian",
-    "approved": true
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-18-1780866860975.jpg",
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "ei",
+      "milch"
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ei-19",
     "name": "Pochiertes Ei auf Spinat, Mais, Speck und Brot",
     "category": "Eiergerichte",
     "timeMinutes": 15,
+    "basePortions": 2,
     "tags": [
       "Frühling",
       "Sommer",
@@ -2528,11 +2538,7 @@
     ],
     "weatherType": "neutral",
     "source": "MahlZyt",
-    "basePortions": 2,
     "description": "Ein herzhafter, farbenfroher Snack mit knusprigem Speck, gebratenem Mais, frischem Spinat und perfekt pochiertem Ei auf geröstetem Körnerbrot. Das flüssige Eigelb sorgt zusammen mit dem Spinat für die perfekte Saftigkeit.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-19-1780866921550.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
     "steps": [
       "Eine Pfanne bei niedriger bis mittlerer Hitze erwärmen. Den Speck darin langsam auslassen, bis er schön braun und knusprig ist. Dabei zwischendurch wenden. Den fertigen Speck auf Küchenpapier abtropfen lassen.",
       "Knoblauch schälen und in feine Scheiben schneiden. Babyspinat bei Bedarf waschen und trocken tupfen. Chili halbieren, entkernen und in Streifen schneiden. Maiskolben mit Salz und Pfeffer einreiben.",
@@ -2545,13 +2551,23 @@
       "Zum Anrichten zuerst den Speck auf die getoasteten Brotscheiben verteilen, dann den Mais darauf geben, gefolgt vom Spinat (ruhig etwas von der Flüssigkeit verwenden). Das pochierte Ei obenauf setzen und mit Chilistreifen garnieren."
     ],
     "dietCategory": "meat",
-    "approved": true
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-19-1780866921550.jpg",
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "ei",
+      "gluten",
+      "sulfite"
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ei-20",
     "name": "Frittata mit Tomate, Mozzarella & Basilikum",
     "category": "Eiergerichte",
     "timeMinutes": 20,
+    "basePortions": 2,
     "tags": [
       "Ofengericht",
       "Mittagessen",
@@ -2635,11 +2651,7 @@
     ],
     "weatherType": "warm",
     "source": "MahlZyt",
-    "basePortions": 2,
     "description": "Eine herrliche italienische Frittata mit saftigen Tomaten, zartem Mozzarella und frischem Basilikum. In nur 20 Minuten auf dem Tisch – perfekt für sonnige Tage, wenn man Lust auf etwas Leichtes und Aromatisches hat.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-20-1780866967421.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
     "steps": [
       "Den Backofen auf 175 Grad Ober-/Unterhitze vorheizen und ein Rost in die mittlere Schiene einschieben.",
       "Die Tomaten waschen, trocken tupfen und in Scheiben schneiden. Den Knoblauch schälen und in feine Scheiben schneiden. Den Mozzarella ebenfalls in Scheiben schneiden.",
@@ -2653,7 +2665,16 @@
       "Die Frittata mit einer Prise getrocknetem Oregano, etwas Pfeffer und den restlichen Basilikumblättern garnieren und servieren."
     ],
     "dietCategory": "vegetarian",
-    "approved": true
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-20-1780866967421.jpg",
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "ei",
+      "milch",
+      "sulfite"
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ei-21",
@@ -2734,7 +2755,7 @@
       }
     ],
     "weatherType": "neutral",
-    "source": "MahlZyt",
+    "source": "MahlZeit",
     "description": "Eine besondere Frittata-Variante mit knusprigem Speck, Mais und Frühlingszwiebeln, gekrönt mit vier Spiegeleiern, die im Ofen mitgebacken werden. Das flüssige Eigelb verläuft beim Aufschneiden herrlich über die anderen Zutaten.",
     "steps": [
       "Den Backofen auf 175 Grad vorheizen und ein Rost in die Mitte des Ofens schieben.",
@@ -2761,14 +2782,14 @@
       "milch"
     ],
     "sourceType": "mahlzyt",
-    "_migrated_v2": true,
-    "approved": true
+    "_migrated_v2": true
   },
   {
     "id": "ei-23",
     "name": "Rührei Muffins gespickt mit Speck",
     "category": "Eiergerichte",
     "timeMinutes": 30,
+    "basePortions": 12,
     "tags": [
       "Mealprep-geeignet",
       "Kinderfreundlich",
@@ -2845,11 +2866,7 @@
     ],
     "weatherType": "neutral",
     "source": "MahlZyt",
-    "basePortions": 12,
     "description": "Herzhafte Rührei-Muffins – perfekt als Binge-Watching Snack oder für ein praktisches Frühstück. Diese würzigen Muffins lassen sich gut vorbereiten und sind ideal für unterwegs.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-23-1780866989520.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
     "steps": [
       "Eine Bratpfanne bei mittlerer Hitze erwärmen. Die Specktranchen hineinlegen und langsam knusprig braten, damit das Fett austritt. Den Speck aus der Pfanne nehmen und auf Küchenpapier abtropfen lassen. Das ausgelassene Speckfett in der Pfanne belassen.",
       "Die Eier mit dem Rahm in einer Schüssel gut verquirlen.",
@@ -2865,14 +2882,22 @@
       "Die Petersilie fein schneiden und vor dem Servieren über die Eier-Muffins streuen."
     ],
     "dietCategory": "meat",
-    "approved": true
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-23-1780866989520.jpg",
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "ei",
+      "milch"
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ei-24",
     "name": "Vollkornbrot mit Kräuterbutter, Gurke und Forelle",
-    "category": "Eiergerichte",
+    "category": "Wraps, Sandwiches & Burger",
     "timeMinutes": 150,
-    "activeTimeMinutes": 10,
+    "basePortions": 4,
     "tags": [
       "Kinderfreundlich",
       "Frühstück",
@@ -2944,11 +2969,7 @@
     ],
     "weatherType": "neutral",
     "source": "MahlZyt",
-    "basePortions": 4,
     "description": "Ein kräftiges, energiereiches Frühstück mit proteinreichen Forellenfilets und cremiger Kräuterbutter auf Vollkornbrot. Macht lange satt und liefert viel Power für den Tag.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-24-1781553997737.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
     "steps": [
       "Die Butter 30-60 Minuten vor der Zubereitung aus dem Kühlschrank nehmen, damit sie weich wird.",
       "Die weiche Butter in eine Schüssel geben. Dill, Schnittlauch und Petersilie fein hacken und zur Butter geben.",
@@ -2960,13 +2981,25 @@
       "Die Forellenfilets auf den Vollkornbroten verteilen und mit etwas Salz und Pfeffer würzen."
     ],
     "dietCategory": "fish",
-    "approved": true
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-24-1781553997737.jpg",
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "ei",
+      "fisch",
+      "gluten",
+      "milch"
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true,
+    "activeTimeMinutes": 10
   },
   {
     "id": "ei-25",
     "name": "Mozzarella-Basilikum-Creme auf Vollkorntoast mit Cherrytomaten",
     "category": "Eiergerichte",
     "timeMinutes": 10,
+    "basePortions": 2,
     "tags": [
       "Frühling",
       "Sommer",
@@ -3028,11 +3061,7 @@
     ],
     "weatherType": "neutral",
     "source": "MahlZyt",
-    "basePortions": 2,
     "description": "Eine leckere Snack-Variation mit cremigem Mozzarella-Aufstrich, frischem Basilikum und saftigen Cherrytomaten auf knusprigem Vollkorntoast. Reich an Vitamin C, Kalzium und Kalium – perfekt für ein ausgewogenes Frühstück.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-25-1781556735037.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
     "steps": [
       "Die beiden Vollkorntoast-Scheiben toasten und anschliessend etwas abkühlen lassen.",
       "Den Mozzarella zusammen mit dem Basilikum (etwas für die Garnierung zur Seite legen), Zitronensaft, Olivenöl, Salz und Pfeffer in einen Mixer geben oder mit einem Pürierstab bzw. einer Gabel zu einer groben Creme verarbeiten.",
@@ -3041,13 +3070,21 @@
       "Zum Schluss mit einer Prise Salz, Pfeffer und dem restlichen Basilikum garnieren und servieren."
     ],
     "dietCategory": "vegetarian",
-    "approved": true
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-25-1781556735037.jpg",
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "milch"
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "ei-26",
     "name": "Dutch Baby mit Erdbeeren – ohne zugesetzten Zucker",
     "category": "Eiergerichte",
     "timeMinutes": 20,
+    "basePortions": 2,
     "tags": [
       "Kinderfreundlich",
       "Frühling",
@@ -3115,11 +3152,7 @@
     ],
     "weatherType": "neutral",
     "source": "MahlZyt",
-    "basePortions": 2,
     "description": "Ein luftiger Ofenpfannkuchen, der im Backofen spektakulär aufgeht und mit frischen Erdbeeren serviert wird. Einfach zubereitet und perfekt für die Erdbeersaison.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-26-1-1781558260222.jpg",
-    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-26-2-1781558264128.jpg",
-    "imageKochen": null,
     "steps": [
       "Den Backofen auf 220 Grad vorheizen. Den Gitterrost auf die unterste Ebene schieben und die Auflaufform (23 cm x 30 cm x 6 cm) zum Aufheizen mit in den Ofen geben.",
       "Für den Teig die Eier mit Zucker, Vanillinzucker und einer Prise Salz verquirlen. Die Milch hinzufügen und verrühren.",
@@ -3131,7 +3164,16 @@
       "Für etwas mehr natürliche Süsse kannst du zusätzlich eine reife Banane in Scheiben, Heidelbeeren oder ein ungesüsstes Fruchtpüree dazugeben. Den Teig selbst würde ich nicht mit Banane süssen, da er dadurch schwerer wird und weniger stark aufgeht."
     ],
     "dietCategory": "vegetarian",
-    "approved": true
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-26-1-1781558260222.jpg",
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-26-2-1781558264128.jpg",
+    "imageKochen": null,
+    "allergens": [
+      "ei",
+      "gluten",
+      "milch"
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-29",
@@ -3397,8 +3439,7 @@
     },
     "dietCategory": "meat",
     "sourceType": "mahlzyt",
-    "_migrated_v2": true,
-    "approved": false
+    "_migrated_v2": true
   },
   {
     "id": "fam-38",
@@ -3505,8 +3546,7 @@
     },
     "dietCategory": "meat",
     "sourceType": "mahlzyt",
-    "_migrated_v2": true,
-    "approved": true
+    "_migrated_v2": true
   },
   {
     "id": "fam-39",
@@ -3528,6 +3568,10 @@
       "Pfannengericht",
       "Frühling"
     ],
+    "weatherType": "warm",
+    "source": "Cuiseline",
+    "basePortions": 4,
+    "description": "Sonnige Tomaten, duftender Basilikum und Spaghetti – ein frischer, unkomplizierter Pasta-Klassiker für jeden Tag.",
     "ingredients": [
       {
         "name": "Spaghetti",
@@ -3584,13 +3628,6 @@
         "perPortions": 4
       }
     ],
-    "weatherType": "warm",
-    "source": "Cuiseline",
-    "basePortions": 4,
-    "description": "Sonnige Tomaten, duftender Basilikum und Spaghetti – ein frischer, unkomplizierter Pasta-Klassiker für jeden Tag.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/fam-39-1781555235476.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
     "steps": [
       "Zwiebel und Knoblauch fein hacken. Cherrytomaten halbieren. Basilikum fein schneiden.",
       "Reichlich Olivenöl in einer Pfanne erwärmen. Zwiebel und Knoblauch beigeben und andämpfen.",
@@ -3599,8 +3636,23 @@
       "Basilikum kurz vor Schluss zu Tomaten geben und unterrühren.",
       "Spaghetti abgiessen, mit Tomatensauce mischen und servieren."
     ],
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/fam-39-1781555235476.jpg",
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "gluten",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 428,
+      "protein": 13.8,
+      "fat": 6.2,
+      "carbs": 78.6,
+      "fiber": 5.4
+    },
     "dietCategory": "vegetarian",
-    "approved": true
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fam-50",
@@ -3620,7 +3672,7 @@
       "Pfannengericht"
     ],
     "weatherType": "neutral",
-    "source": "MahlZyt",
+    "source": "MahlZeit",
     "basePortions": 4,
     "description": "Tortellini mit aromatischer-Kräutersauce",
     "ingredients": [
@@ -3732,8 +3784,7 @@
     },
     "dietCategory": "vegetarian",
     "sourceType": "mahlzyt",
-    "_migrated_v2": true,
-    "approved": true
+    "_migrated_v2": true
   },
   {
     "id": "fam-55",
@@ -3751,7 +3802,7 @@
       "Italienisch"
     ],
     "weatherType": "neutral",
-    "source": "MahlZyt",
+    "source": "MahlZeit",
     "basePortions": 4,
     "description": "Cremig, frisch und festlich: Zitronenravioli an Prosecco-Sauce.",
     "ingredients": [
@@ -3835,8 +3886,7 @@
     },
     "dietCategory": "vegetarian",
     "sourceType": "mahlzyt",
-    "_migrated_v2": true,
-    "approved": true
+    "_migrated_v2": true
   },
   {
     "id": "fvt-04",
@@ -4612,33 +4662,13 @@
     "imageZutaten": null,
     "imageKochen": null,
     "sourceType": "mahlzyt",
-    "_migrated_v2": true,
-    "approved": true
+    "_migrated_v2": true
   },
   {
     "id": "pas-02",
     "name": "Linsen-Gemüse-Lasagne",
     "category": "Aufläufe & Gratins",
     "timeMinutes": 75,
-    "tags": [
-      "Mealprep-geeignet",
-      "Mittagsgericht",
-      "Herbst",
-      "Winter",
-      "Ofengericht",
-      "Vegetarisch",
-      "Kinderfreundlich",
-      "Frühling",
-      "Abendgericht",
-      "Italienisch",
-      "Mittagessen",
-      "Abendessen",
-      "Einfrierbar",
-      "Resteverwertung",
-      "Budgetfreundlich",
-      "Für Gäste",
-      "Gut zum Mitnehmen"
-    ],
     "ingredients": [
       {
         "name": "Zwiebel",
@@ -4780,12 +4810,43 @@
       }
     ],
     "weatherType": "kalt",
-    "source": "MahlZyt",
+    "source": "MahlZeit",
     "basePortions": 6,
     "description": "Schicht für Schicht voller Gemüse, Linsen und cremiger Béchamelsauce – eine Lasagne zum Wohlfühlen.",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/pas-02-1780699528706.jpg",
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagsgericht",
+      "Herbst",
+      "Winter",
+      "Ofengericht",
+      "Vegetarisch",
+      "Kinderfreundlich",
+      "Frühling",
+      "Abendgericht",
+      "Italienisch",
+      "Mittagessen",
+      "Abendessen",
+      "Einfrierbar",
+      "Resteverwertung",
+      "Budgetfreundlich",
+      "Für Gäste",
+      "Gut zum Mitnehmen"
+    ],
     "imageZutaten": null,
     "imageKochen": null,
+    "allergens": [
+      "gluten",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 562,
+      "protein": 24.3,
+      "fat": 16.8,
+      "carbs": 74.2,
+      "fiber": 8.9
+    },
+    "dietCategory": "vegetarian",
     "steps": [
       "Zwiebel und Knoblauch fein hacken. Karotte, Knollensellerie, Zucchetti, Peperoni und Champignons klein schneiden.",
       "Olivenöl in einer grossen Pfanne erhitzen. Gemüse und Champignons beigeben und andämpfen.",
@@ -4804,6 +4865,8 @@
       "Restlichen Mozzarella und Sbrinz darüberstreuen.",
       "Lasagne in Ofenmitte ca. 35–40 Minuten backen, bis Oberfläche goldbraun ist."
     ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true,
     "ingredientGroups": [
       {
         "name": "Zutaten für Linsen-Gemüse-Sauce",
@@ -4958,9 +5021,7 @@
           }
         ]
       }
-    ],
-    "dietCategory": "vegetarian",
-    "approved": true
+    ]
   },
   {
     "id": "pas-03",
@@ -4982,6 +5043,10 @@
       "Frühling",
       "Italienisch"
     ],
+    "weatherType": "kalt",
+    "source": "MahlZyt",
+    "basePortions": 4,
+    "description": "Cremige Spinatlasagne mit feiner Béchamelsauce und goldbraunem Sbrinz – herzhaftes Soulfood aus dem Ofen.",
     "ingredients": [
       {
         "name": "Spinat",
@@ -5080,13 +5145,6 @@
         "perPortions": 4
       }
     ],
-    "weatherType": "kalt",
-    "source": "MahlZyt",
-    "basePortions": 4,
-    "description": "Cremige Spinatlasagne mit feiner Béchamelsauce und goldbraunem Sbrinz – herzhaftes Soulfood aus dem Ofen.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/pas-03-1780699620075.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
     "steps": [
       "Spinat  auftauen lassen. Zwiebel und Knoblauch fein hacken.",
       "Für Béchamelsauce Butter in einer Pfanne schmelzen. Mehl beigeben und kurz dünsten, ohne dass es Farbe annimmt.",
@@ -5097,6 +5155,23 @@
       "Gratinform mit Butter einfetten. Lasagneblätter, Spinat und Béchamelsauce lagenweise einschichten. Mit Béchamelsauce abschliessen und Sbrinz darüberstreuen.",
       "Lasagne ca. 40–45 Minuten backen."
     ],
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/pas-03-1780699620075.jpg",
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "gluten",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 438,
+      "protein": 21.7,
+      "fat": 22.4,
+      "carbs": 38.6,
+      "fiber": 4.2
+    },
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true,
     "ingredientGroups": [
       {
         "name": "Zutaten für Spinat",
@@ -5209,27 +5284,13 @@
           }
         ]
       }
-    ],
-    "dietCategory": "vegetarian",
-    "approved": true
+    ]
   },
   {
     "id": "pas-04",
     "name": "Pesto Genovese",
     "category": "Pasta & Teigwaren",
     "timeMinutes": 30,
-    "tags": [
-      "Mittagessen",
-      "Abendessen",
-      "Italienisch",
-      "Ganzjährig",
-      "Resteverwertung",
-      "Budgetfreundlich",
-      "Für Gäste",
-      "Kinderfreundlich",
-      "Gut zum Mitnehmen",
-      "Pfannengericht"
-    ],
     "ingredients": [
       {
         "name": "Pinien- oder Zederkerne (zum Garnieren)",
@@ -5302,9 +5363,6 @@
     "source": "Cuiseline",
     "basePortions": 4,
     "description": "Spaghetti mit Pesto Genovese, Bohnen und Kartoffeln – ein aromatischer Klassiker aus Ligurien.",
-    "imageUrl": "/images/recipes/cuiselin-pesto-genovese.jpg",
-    "imageZutaten": "/images/recipes/cuiselin-pesto-genovese-zutaten.jpg",
-    "imageKochen": null,
     "steps": [
       "Pinien- oder Zedernkerne ohne Fett in einer Pfanne rösten, herausnehmen und beiseitestellen.",
       "Wenig Basilikum für Garnitur beiseitelegen. Restliches Basilikum in Streifen schneiden und in einen hohen Becher geben.",
@@ -5316,8 +5374,35 @@
       "Spaghetti abgiessen und sofort mit Pesto, Bohnen und Kartoffeln mischen.",
       "Mit restlichen gerösteten Kernen und Basilikum garnieren und servieren."
     ],
+    "imageUrl": "/images/recipes/cuiselin-pesto-genovese.jpg",
+    "imageZutaten": "/images/recipes/cuiselin-pesto-genovese-zutaten.jpg",
+    "tags": [
+      "Mittagessen",
+      "Abendessen",
+      "Italienisch",
+      "Ganzjährig",
+      "Resteverwertung",
+      "Budgetfreundlich",
+      "Für Gäste",
+      "Kinderfreundlich",
+      "Gut zum Mitnehmen",
+      "Pfannengericht"
+    ],
     "dietCategory": "vegetarian",
-    "approved": true
+    "allergens": [
+      "gluten",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 892,
+      "protein": 23.8,
+      "fat": 54.7,
+      "carbs": 76.3,
+      "fiber": 11.2
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true,
+    "imageKochen": null
   },
   {
     "id": "pas-05",
@@ -5336,6 +5421,10 @@
       "Pfannengericht",
       "Ganzjährig"
     ],
+    "weatherType": "neutral",
+    "source": "cuiseline",
+    "basePortions": 4,
+    "description": "Spaghetti Napoli – fruchtige Tomatensauce, mediterrane Kräuter und unkomplizierter Pastagenuss.",
     "ingredients": [
       {
         "name": "Zwiebel",
@@ -5398,13 +5487,6 @@
         "perPortions": 4
       }
     ],
-    "weatherType": "neutral",
-    "source": "cuiseline",
-    "basePortions": 4,
-    "description": "Spaghetti Napoli – fruchtige Tomatensauce, mediterrane Kräuter und unkomplizierter Pastagenuss.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/pas-05-1780699648000.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
     "steps": [
       "Zwiebel fein hacken.",
       "Olivenöl in einer Pfanne erhitzen. Zwiebel beigeben und andämpfen.",
@@ -5415,29 +5497,28 @@
       "Gegen Ende Spaghetti in Salzwasser al dente kochen.",
       "Spaghetti abgiessen, mit Napoli-Sauce anrichten und servieren."
     ],
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/pas-05-1780699648000.jpg",
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "gluten"
+    ],
+    "nutrition": {
+      "kcal": 392,
+      "protein": 13.2,
+      "fat": 2.1,
+      "carbs": 81.4,
+      "fiber": 6.8
+    },
     "dietCategory": "vegan",
-    "approved": true
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-06",
     "name": "Pasta an Pilz-Kräutersauce",
     "category": "Pasta & Teigwaren",
     "timeMinutes": 25,
-    "tags": [
-      "Herbst",
-      "Winter",
-      "Mittagessen",
-      "Abendessen",
-      "Mealprep-geeignet",
-      "Kinderfreundlich",
-      "Resteverwertung",
-      "Budgetfreundlich",
-      "Für Gäste",
-      "Pfannengericht",
-      "Schweizerisch",
-      "Italienisch",
-      "Frühling"
-    ],
     "ingredients": [
       {
         "name": "Butter",
@@ -5523,8 +5604,37 @@
     "basePortions": 4,
     "description": "Cremig, würzig und angenehm frisch: Pilzpasta mit Zitrone und Salbei.",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/pas-06-1781556405956.jpg",
+    "tags": [
+      "Herbst",
+      "Winter",
+      "Mittagessen",
+      "Abendessen",
+      "Mealprep-geeignet",
+      "Kinderfreundlich",
+      "Resteverwertung",
+      "Budgetfreundlich",
+      "Für Gäste",
+      "Pfannengericht",
+      "Schweizerisch",
+      "Italienisch",
+      "Frühling"
+    ],
     "imageZutaten": null,
     "imageKochen": null,
+    "allergens": [
+      "gluten",
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 458,
+      "protein": 13.6,
+      "fat": 16.9,
+      "carbs": 63.2,
+      "fiber": 4.3
+    },
+    "dietCategory": "vegetarian",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true,
     "steps": [
       "Zwiebel fein hacken. Champignons in Scheiben und Salbeiblätter in feine Streifen schneiden. Zitrone dünn schälen, Schale in feine Streifen schneiden.",
       "Butter in einer Pfanne erwärmen. Zwiebel beigeben und andämpfen.",
@@ -5624,9 +5734,7 @@
           }
         ]
       }
-    ],
-    "dietCategory": "vegetarian",
-    "approved": true
+    ]
   },
   {
     "id": "pas-07",
@@ -5648,6 +5756,10 @@
       "Gut zum Mitnehmen",
       "Ofengericht"
     ],
+    "weatherType": "kalt",
+    "source": "MahlZyt",
+    "basePortions": 4,
+    "description": "Feine Älplermagronen mit Kartoffeln, würzigem Käse und knusprigen Zwiebelringen – Schweizer Soulfood, wie man es liebt.",
     "ingredients": [
       {
         "name": "Kartoffeln",
@@ -5728,13 +5840,6 @@
         "perPortions": 4
       }
     ],
-    "weatherType": "kalt",
-    "source": "MahlZyt",
-    "basePortions": 4,
-    "description": "Feine Älplermagronen mit Kartoffeln, würzigem Käse und knusprigen Zwiebelringen – Schweizer Soulfood, wie man es liebt.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/pas-07-1781478891741.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
     "steps": [
       "Kartoffeln schälen und würfeln. Zwiebeln in Scheiben schneiden und in Mehl wenden.",
       "Butter in einer Bratpfanne erhitzen, Zwiebeln dazugeben und unter häufigem Umrührigen Zwiebelringe knusprig braten.",
@@ -5743,8 +5848,22 @@
       "Bei 100–150°C 15 Min. im Ofen warmhalten.",
       "Kurz vor dem Servieren Gut mischen, Zwiebelringe darüber verteilen. Mit Apfelmus servieren."
     ],
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/pas-07-1781478891741.jpg",
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 1247,
+      "protein": 42.8,
+      "fat": 81.3,
+      "carbs": 78.6,
+      "fiber": 4.5
+    },
     "dietCategory": "vegetarian",
-    "approved": true
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-10",
@@ -5985,6 +6104,11 @@
       "Pfannengericht",
       "Italienisch"
     ],
+    "weatherType": "warm",
+    "source": "Cuiseline",
+    "basePortions": 4,
+    "dietCategory": "vegan",
+    "description": "Traditionelle Fregola Sarda aus Sardinien trifft auf buntes Gemüse und feine Sojawürze – unkompliziert, aromatisch und voller Geschmack.",
     "ingredients": [
       {
         "name": "Grosse Zwiebel",
@@ -6030,7 +6154,7 @@
       },
       {
         "name": "Sojasauce",
-        "amount": 5,
+        "amount": 3,
         "unit": "EL",
         "perPortions": 4
       },
@@ -6059,13 +6183,6 @@
         "perPortions": 4
       }
     ],
-    "weatherType": "warm",
-    "source": "Cuiseline",
-    "basePortions": 4,
-    "description": "Traditionelle Fregola Sarda aus Sardinien trifft auf buntes Gemüse und feine Sojawürze – unkompliziert, aromatisch und voller Geschmack.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fregola-sarda-1--1780577458863.jpeg",
-    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fregola-sarda-2--1780577468333.jpeg",
-    "imageKochen": null,
     "steps": [
       "Zwiebel und Knoblauch fein schneiden. Karotte in dünne Scheiben schneiden. Peperoni, Aubergine und Zucchetti klein würfeln.",
       "Reichlich Olivenöl in einer grossen Pfanne erhitzen. Zwiebel und Knoblauch beigeben und andämpfen.",
@@ -6073,20 +6190,27 @@
       "Inzwischen Fregola Sarda nach Packungsangabe in Salzwasser al dente kochen.",
       "Gemüse mit Sojasauce würzen. Mit Salz und Pfeffer abschmecken.",
       "Fregola Sarda abgiessen, zum Gemüse geben und gut vermischen.",
-      "Mit Basilikum garnieren und servieren.",
-      "l in Pfanne erhitzen, Zwiebel und Knoblauch anrösten.",
-      "Karotten und Peperoni dazugeben, bei mittlerer Hitze dünsten.",
-      "Aubergine und Tomaten beifügen.",
-      "Fregola Sarda nach Anleitung al dente kochen.",
-      "Gemüse mit Sojasauce würzen, mit Salz und Pfeffer abschmecken.",
-      "Gemüse und Fregola Sarda mischen. Mit frischem Basilikum garnieren."
+      "Mit Basilikum garnieren und servieren."
     ],
-    "dietCategory": "vegan",
-    "approved": true
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fregola-sarda-1--1780577458863.jpeg",
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fregola-sarda-2--1780577468333.jpeg",
+    "imageKochen": null,
+    "allergens": [
+      "soja"
+    ],
+    "nutrition": {
+      "kcal": 385,
+      "protein": 12.4,
+      "fat": 6.8,
+      "carbs": 68.2,
+      "fiber": 8.5
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-15",
-    "name": "Spaghetti mit Pfifferlingen und Cherrytomaten",
+    "name": "Vollkornspaghetti mit Eierschwämmen und Cherrytomaten",
     "category": "Pasta & Teigwaren",
     "timeMinutes": 30,
     "tags": [
@@ -6102,6 +6226,11 @@
       "Italienisch",
       "Sommer"
     ],
+    "weatherType": "kalt",
+    "source": "Cuiseline",
+    "basePortions": 4,
+    "dietCategory": "vegan",
+    "description": "Würzige Eierschwämme treffen auf saftige Tomaten und nussigen Crunch – herzhaft, saisonal und wunderbar aromatisch.",
     "ingredients": [
       {
         "name": "Haselnüsse",
@@ -6170,23 +6299,30 @@
         "perPortions": 4
       }
     ],
-    "weatherType": "kalt",
-    "source": "Cuiseline",
-    "basePortions": 4,
-    "description": "Würzige Eierschwämme treffen auf saftige Tomaten und nussigen Crunch – herzhaft, saisonal und wunderbar aromatisch.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---spaghetti-mit-pfifferlingen-und-cherrytomaten-1--1780577497670.jpeg",
-    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---spaghetti-mit-pifferlingen-und-cherrytomaten-2--1780577575474.jpeg",
-    "imageKochen": null,
     "steps": [
       "Haselnüsse in grosser Bratpfanne ohne Fett rösten, grob hacken, beiseitestellen.",
-      "Pfifferlinge putzen und je nach Grösse halbieren. Knoblauch und Petersilie fein schneiden. Cherryotmaten halbieren.",
+      "Eierschwämme putzen und je nach Grösse halbieren. Knoblauch und Petersilie fein schneiden. Cherryotmaten halbieren.",
       "Spaghetti nach Anleitung al dente kochen.",
-      "Olivenöl erhitzen, Pfifferlinge bei starker Hitze 5 Minuten braten. Knoblauch dazugeben, weitere 5 Minuten bei mittlerer Hitze.",
+      "Olivenöl erhitzen, Eierschwämme bei starker Hitze 5 Minuten braten. Knoblauch dazugeben, weitere 5 Minuten bei mittlerer Hitze.",
       "Cherrytomaten beifügen, kurz mitbraten. Mit Salz, Pfeffer und Chiliflocken würzen.",
       "Spaghetti abgiessen, in die Pfanne geben. Mit Haselnüssen und Petersilie garnieren."
     ],
-    "dietCategory": "vegan",
-    "approved": true
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---spaghetti-mit-pfifferlingen-und-cherrytomaten-1--1780577497670.jpeg",
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---spaghetti-mit-pifferlingen-und-cherrytomaten-2--1780577575474.jpeg",
+    "imageKochen": null,
+    "allergens": [
+      "gluten",
+      "schalenfruechte"
+    ],
+    "nutrition": {
+      "kcal": 468,
+      "protein": 16.8,
+      "fat": 12.4,
+      "carbs": 74.2,
+      "fiber": 10.5
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-16",
@@ -6443,6 +6579,7 @@
     "name": "Soja-Butter-Nudeln mit grünem Spargel",
     "category": "Pasta & Teigwaren",
     "timeMinutes": 20,
+    "basePortions": 1,
     "tags": [
       "Frühling",
       "Sommer",
@@ -6508,11 +6645,7 @@
     ],
     "weatherType": "warm",
     "source": "MahlZyt",
-    "basePortions": 1,
     "description": "Die perfekte Kombination aus cremiger Butter und würziger Sojasauce trifft auf frischen grünen Spargel. Ein schnelles, aromatisches Pastagericht, das die Spargelzeit gebührend feiert.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/pas-56-1781558627382.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
     "steps": [
       "Einen Topf mit Wasser aufsetzen, zum Kochen bringen, grosszügig salzen und die Spaghetti nach Packungsanleitung al dente kochen.",
       "Währenddessen die holzigen Enden vom grünen Spargel entfernen und den Spargel in grobe Stücke schneiden. Den Knoblauch schälen und in dünne Scheiben schneiden.",
@@ -6523,13 +6656,23 @@
       "Die gekochten Spaghetti zur Pfanne geben und alles gut miteinander vermengen. Servieren und geniessen."
     ],
     "dietCategory": "vegetarian",
-    "approved": true
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/pas-56-1781558627382.jpg",
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "gluten",
+      "milch",
+      "soja"
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-57",
     "name": "Pasta mit Chorizo",
     "category": "Pasta & Teigwaren",
     "timeMinutes": 15,
+    "basePortions": 1,
     "tags": [
       "Abendessen",
       "Ganzjährig",
@@ -6595,11 +6738,7 @@
     ],
     "weatherType": "neutral",
     "source": "MahlZyt",
-    "basePortions": 1,
     "description": "Ein schnelles und einfaches Pasta-Gericht für den Feierabend. Mit würziger Chorizo, Paprika und Frühlingszwiebeln – perfekt für eine Person zubereitet.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/pas-57-1781558936277.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
     "steps": [
       "Einen Topf mit Wasser aufsetzen und zum Kochen bringen. Das kochende Wasser gut salzen.",
       "Die Chorizo-Würste der Länge nach einschneiden, das Brät aus der Pelle lösen und grob zerkleinern.",
@@ -6615,13 +6754,21 @@
       "Auf einem Teller anrichten und mit einem Klecks Crème fraîche servieren."
     ],
     "dietCategory": "meat",
-    "approved": true
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/pas-57-1781558936277.jpg",
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "gluten"
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-58",
     "name": "Tortiglioni mit Grünkohl, Lachs und Sojasauce",
     "category": "Pasta & Teigwaren",
     "timeMinutes": 20,
+    "basePortions": 2,
     "tags": [
       "Winter",
       "Abendessen",
@@ -6697,11 +6844,7 @@
     ],
     "weatherType": "kalt",
     "source": "MahlZyt",
-    "basePortions": 2,
     "description": "Eine überraschende und gelungene Kombination aus Grünkohl, Lachs und Sojasauce. Einfach zubereitet, schmeckt köstlich und sieht auch noch gut aus.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/pas-58-1781559625318.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
     "steps": [
       "Einen grossen Topf mit reichlich Wasser aufsetzen und zum Kochen bringen. Das Wasser gut salzen und die Pasta nach Packungsanweisung kochen.",
       "Währenddessen die Knoblauchzehen schälen und in dünne Scheiben schneiden. Die Chilischote entkernen und in feine Streifen schneiden.",
@@ -6713,7 +6856,17 @@
       "Die gekochten Nudeln untermischen und alles gut vermengen. Auf zwei Teller verteilen und servieren."
     ],
     "dietCategory": "fish",
-    "approved": true
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/pas-58-1781559625318.jpg",
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "fisch",
+      "gluten",
+      "milch",
+      "soja"
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "pas-59",
@@ -10611,42 +10764,12 @@
     "id": "rei-01",
     "name": "Lauchrisotto",
     "category": "Reis, Getreide & Hülsenfrüchte",
-    "timeMinutes": 40,
+    "timeMinutes": 35,
     "ingredients": [
       {
-        "name": "Risottoreis",
-        "amount": 320,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Lauch",
-        "amount": 2,
-        "unit": "Stangen",
-        "perPortions": 4
-      },
-      {
-        "name": "Weisswein",
-        "amount": 100,
-        "unit": "ml",
-        "perPortions": 4
-      },
-      {
-        "name": "Gemüsebrühe",
-        "amount": 1200,
-        "unit": "ml",
-        "perPortions": 4
-      },
-      {
-        "name": "Veganer Parmesan",
-        "amount": 60,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "vegane Butter",
-        "amount": 40,
-        "unit": "g",
+        "name": "Lauch, mittelgross",
+        "amount": 3,
+        "unit": "Stk",
         "perPortions": 4
       },
       {
@@ -10654,27 +10777,100 @@
         "amount": 1,
         "unit": "Stk",
         "perPortions": 4
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 2,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Butter",
+        "amount": 30,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Risottoreis",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Weisswein (optional)",
+        "amount": 200,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebouillon",
+        "amount": 750,
+        "unit": "ml",
+        "perPortions": 4
+      },
+      {
+        "name": "Sbrinz, gerieben",
+        "amount": 100,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Butter",
+        "amount": 20,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Röstzwiebel (zum Garnieren)",
+        "amount": 1,
+        "unit": "g",
+        "perPortions": 4
       }
     ],
     "weatherType": "kalt",
     "source": "Cuiseline",
     "basePortions": 4,
-    "description": "Cremiges Lauchrisotto – Komfort food pur.",
+    "description": "Zarter Lauch, cremiger Risottoreis und knusprige Röstzwiebeln – ein einfaches Wohlfühlgericht mit viel Geschmack.",
     "steps": [
-      "1. Vegane Butter in Pfanne, Zwiebeln und Lauch andünsten.",
-      "2. Risottoreis dazugeben, gut verrühren.",
-      "3. Nach und nach heisse Gemüsebrühe beigeben, regelmässig rühren bis der Reis die Flüssigkeit aufgenommen hat (ca. 20 Min.).",
-      "4. Restliche vegane Butter und veganen Parmesan unterrühren.",
-      "5. Mit Salz und Pfeffer würzen. Mit Röstzwiebeln garnieren."
+      "Lauch längs halbieren, gründlich waschen und in feine Ringe schneiden. Zwiebel und Knoblauch fein hacken.",
+      "30 g Butter in einer grossen Pfanne erwärmen. Zwiebel und Knoblauch beigeben und andämpfen.",
+      "Lauch hinzufügen und ca. 2 Minuten mitdünsten.",
+      "Risottoreis beigeben und unter Rühren dünsten, bis Reiskörner leicht glasig sind.",
+      "Optional mit Weisswein ablöschen und Flüssigkeit fast vollständig einkochen lassen.",
+      "Etwa Hälfte der warmen Gemüsebouillon dazugiessen. Risotto bei mittlerer Hitze köcheln lassen und regelmässig umrühren.",
+      "Restliche Bouillon nach und nach beigeben, sobald Flüssigkeit jeweils aufgenommen ist. Risotto ca. 20 Minuten garen, bis Reis cremig und noch leicht bissfest ist.",
+      "Reibkäse und restliche 20 g vegane Butter unterrühren. Mit Salz und Pfeffer abschmecken.",
+      "Lauchrisotto auf Tellern anrichten und mit Röstzwiebeln garnieren."
     ],
-    "tips": "",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---rei-01-1--1780577619393.jpeg",
     "tags": [
       "Herbst",
       "Winter",
-      "Frühling"
+      "Frühling",
+      "Mittagessen",
+      "Abendessen",
+      "Mealprep-geeignet",
+      "Kinderfreundlich",
+      "Resteverwertung",
+      "Gut zum Mitnehmen",
+      "Pfannengericht",
+      "One-Pot-Gericht",
+      "Italienisch",
+      "Schweizerisch"
     ],
-    "dietCategory": "vegan",
+    "dietCategory": "vegetarian",
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---rei-01-2--1780577648794.jpeg",
     "allergens": [
       "milch",
@@ -10688,7 +10884,8 @@
       "fiber": 3.8
     },
     "sourceType": "mahlzyt",
-    "_migrated_v2": true
+    "_migrated_v2": true,
+    "imageKochen": null
   },
   {
     "id": "rei-02",
@@ -10998,20 +11195,6 @@
     "name": "Linsen-Reis",
     "category": "Reis, Getreide & Hülsenfrüchte",
     "timeMinutes": 35,
-    "tags": [
-      "Mealprep-geeignet",
-      "Mittagessen",
-      "Abendessen",
-      "Einfrierbar",
-      "Kinderfreundlich",
-      "Budgetfreundlich",
-      "Gut zum Mitnehmen",
-      "Pfannengericht",
-      "One-Pot-Gericht",
-      "Herbst",
-      "Winter",
-      "Indisch"
-    ],
     "ingredients": [
       {
         "name": "Zwiebeln",
@@ -11092,13 +11275,10 @@
         "perPortions": 6
       }
     ],
-    "weatherType": "neutral",
+    "weatherType": "kalt",
     "source": "Cuiseline",
     "basePortions": 6,
     "description": "Würziger Linsenreis mit Ingwer, Kurkuma und Kardamom – duftend, sättigend und unkompliziert aus einem Topf.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---rei-06-1--1780577735944.jpeg",
-    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---rei-06-2--1780577746940.jpeg",
-    "imageKochen": null,
     "steps": [
       "Zwiebeln und Knoblauch fein hacken. Ingwer schälen und fein reiben. Chilischoten entkernen und fein schneiden.",
       "Kokosöl in einer grossen Pfanne oder einem weiten Topf erhitzen. Zwiebeln, Knoblauch, Ingwer und Chili beigeben und andämpfen.",
@@ -11109,8 +11289,34 @@
       "Mit Salz abschmecken.",
       "Linsenreis mit Kokosjoghurt, Zitronenschnitzen, Korianderblättern und Chiliflocken garnieren und servieren."
     ],
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---rei-06-1--1780577735944.jpeg",
+    "tags": [
+      "Mealprep-geeignet",
+      "Mittagessen",
+      "Abendessen",
+      "Einfrierbar",
+      "Kinderfreundlich",
+      "Budgetfreundlich",
+      "Gut zum Mitnehmen",
+      "Pfannengericht",
+      "One-Pot-Gericht",
+      "Herbst",
+      "Winter",
+      "Indisch"
+    ],
     "dietCategory": "vegan",
-    "approved": true
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---rei-06-2--1780577746940.jpeg",
+    "allergens": [],
+    "nutrition": {
+      "kcal": 628,
+      "protein": 23.2,
+      "fat": 14.8,
+      "carbs": 98.6,
+      "fiber": 12.4
+    },
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true,
+    "imageKochen": null
   },
   {
     "id": "rei-07",
@@ -11333,25 +11539,27 @@
     "name": "Hirse-Gemüse-Pfanne mit Räuchertofu",
     "category": "Reis, Getreide & Hülsenfrüchte",
     "timeMinutes": 35,
-    "tags": [],
-    "weatherType": "neutral",
+    "tags": [
+      "Mittagessen",
+      "Abendessen",
+      "Mealprep-geeignet",
+      "Kinderfreundlich",
+      "Resteverwertung",
+      "Budgetfreundlich",
+      "Gut zum Mitnehmen",
+      "Pfannengericht",
+      "Schweizerisch",
+      "Nahöstlich",
+      "Einfrierbar",
+      "Herbst",
+      "Winter"
+    ],
+    "weatherType": "kalt",
     "source": "Cuiseline",
     "basePortions": 4,
     "dietCategory": "vegan",
-    "description": "Nahrhafte Hirse-Pfanne mit Brokkoli, Federkohl und würzigem Räuchertofu.",
+    "description": "Kräftiges Wintergemüse, feine Hirse und würziger Tofu – unkompliziert, nahrhaft und voller Geschmack",
     "ingredients": [
-      {
-        "name": "Hirse",
-        "amount": 250,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Gemüsebrühe",
-        "amount": 500,
-        "unit": "ml",
-        "perPortions": 4
-      },
       {
         "name": "Räuchertofu",
         "amount": 200,
@@ -11359,7 +11567,7 @@
         "perPortions": 4
       },
       {
-        "name": "Brokkoli",
+        "name": "Rotkohl",
         "amount": 500,
         "unit": "g",
         "perPortions": 4
@@ -11389,26 +11597,54 @@
         "perPortions": 4
       },
       {
-        "name": "Sojasauce",
-        "amount": 100,
+        "name": "Frühlingszwiebeln",
+        "amount": 1,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebouillon",
+        "amount": 700,
         "unit": "ml",
         "perPortions": 4
       },
       {
-        "name": "Rapsöl",
+        "name": "Hirse",
+        "amount": 250,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "Sojasauce",
         "amount": 3,
         "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Olivenöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Rapsöl",
+        "amount": 2,
+        "unit": "g",
         "perPortions": 4
       }
     ],
     "steps": [
-      "1. Gemüsebrühe in Pfanne zum Kochen bringen, Hirse beigeben, ca. 8 Minuten garen.",
-      "2. Räuchertofu in Würfel schneiden, in Rapsöl goldbraun braten, mit 50 ml Sojasauce würzen.",
-      "3. Zwiebel und Knoblauch andünsten. Brokkoli, Federkohl und Karotte in Streifen dazugeben.",
-      "4. Gemüse mit restlicher Sojasauce würzen, mitdünsten.",
-      "5. Räuchertofu und Hirse daruntermengen. Mit Frühlingszwiebeln garnieren."
+      "Räuchertofu in Würfel schneiden. Rotkabis, Federkohl und Karotte in feine Streifen schneiden. Zwiebel und Knoblauch fein hacken. Frühlingszwiebeln in Ringe schneiden, wenig davon für Garnitur beiseitelegen.",
+      "2 EL Rapsöl in einer weiten Bratpfanne erhitzen. Räuchertofu rundum goldbraun anbraten.",
+      "Mit 2 EL Sojasauce ablöschen, kurz einkochen lassen. Tofu herausnehmen und beiseitestellen.",
+      "5 dl Gemüsebouillon in einer separaten Pfanne aufkochen. Hirse beigeben und nach Packungsangabe ca. 8 Minuten garen.",
+      "2 EL Olivenöl in gleicher Bratpfanne erhitzen. Zwiebel und Knoblauch beigeben und andämpfen.",
+      "Rotkabis, Federkohl und Karotte hinzufügen und ca. 5 Minuten mitdünsten.",
+      "Mit 2 dl Gemüsebouillon ablöschen. Gemüse bei mittlerer Hitze kurz köcheln lassen, bis gewünschte Bissfestigkeit erreicht ist.",
+      "Räuchertofu, Frühlingszwiebeln und Hirse beigeben und gut vermischen.",
+      "Mit Salz, Pfeffer und Sojasauce abschmecken.",
+      "Hirse-Gemüse-Pfanne anrichten und mit restlichen Frühlingszwiebelringen garnieren."
     ],
-    "tips": "",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---hirse-gemu-se-pfanne-mit-ra-uchertofu-1--1780578809829.jpeg",
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---hirse-gemu-se-pfanne-mit-ra-uchertofu-2--1780579029051.jpeg",
     "imageKochen": null,
@@ -11552,62 +11788,80 @@
   },
   {
     "id": "ein-01",
-    "name": "Chili sin carne",
+    "name": "Chili sin carne mit Sonnenblumenhack",
     "category": "Suppen, Eintöpfe & Currys",
-    "timeMinutes": 40,
+    "timeMinutes": 20,
     "ingredients": [
       {
-        "name": "Rote Bohnen (Dose)",
-        "amount": 400,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Mais (Dose)",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Passierte Tomaten",
-        "amount": 400,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Paprika",
+        "name": "Zwiebel",
         "amount": 2,
         "unit": "Stk",
         "perPortions": 4
       },
       {
-        "name": "Zwiebel",
+        "name": "Knoblauch",
+        "amount": 2,
+        "unit": "Zehe",
+        "perPortions": 4
+      },
+      {
+        "name": "Chilischote",
         "amount": 1,
         "unit": "Stk",
         "perPortions": 4
       },
       {
-        "name": "Chiliflocken",
+        "name": "Olivenöl",
+        "amount": 2,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Rotwein (optional)",
+        "amount": 1,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Gemüsebouillon",
+        "amount": 0.5,
+        "unit": "dl",
+        "perPortions": 4
+      },
+      {
+        "name": "Gehackte Tomaten (Dose)",
+        "amount": 800,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
+        "name": "weisse Soisson-Bohnen",
+        "amount": 1,
+        "unit": "Dose",
+        "perPortions": 4
+      },
+      {
+        "name": "rote Kidney-Bohnen",
+        "amount": 1,
+        "unit": "Dose",
+        "perPortions": 4
+      },
+      {
+        "name": "Mais",
+        "amount": 1,
+        "unit": "Dose",
+        "perPortions": 4
+      },
+      {
+        "name": "Paprika",
         "amount": 1,
         "unit": "TL",
         "perPortions": 4
       },
       {
         "name": "Kreuzkümmel",
-        "amount": 1,
+        "amount": 0.5,
         "unit": "TL",
-        "perPortions": 4
-      },
-      {
-        "name": "Knoblauch",
-        "amount": 2,
-        "unit": "Zehen",
-        "perPortions": 4
-      },
-      {
-        "name": "Sauerrahm",
-        "amount": 100,
-        "unit": "g",
         "perPortions": 4
       },
       {
@@ -11615,27 +11869,71 @@
         "amount": 1,
         "unit": "Packung",
         "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Chiliflocken (zum Garnieren)",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Koriander oder Petersilie (zum Garnieren)",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
+        "name": "Kokosjoghurt (zum Garnieren)",
+        "amount": 4,
+        "unit": "EL",
+        "perPortions": 4
       }
     ],
     "weatherType": "kalt",
     "source": "Cuiseline",
     "basePortions": 4,
-    "description": "Veganes Chili – würzig und sättigend.",
+    "description": "Wärmendes Chili sin carne mit kräftiger Tomatensauce, Bohnen und feiner Schärfe – pflanzliches Soulfood für kalte Tage.",
     "steps": [
-      "1. Vegane Butter in Pfanne, Zwiebeln und Knoblauch andünsten.",
-      "2. Currypulver dazugeben, kurz mitdünsten.",
-      "3. Mit Rotwein und Gemüsebrühe ablöschen, Tomaten dazugeben. Mit Salz und Pfeffer würzen, 10 Min. köcheln.",
-      "4. Bohnen, Mais und Sonnenblumen-Hack beigeben, vermengen.",
-      "5. Nach Belieben mit Kokosmilch, Petersilie/Koriander und Chiliflocken garnieren."
+      "Zwiebeln und Knoblauch fein hacken. Chilischoten entkernen und fein schneiden.",
+      "Olivenöl in einer grossen Pfanne erhitzen. Zwiebeln und Knoblauch beigeben und andämpfen.",
+      "Chili hinzufügen und kurz mitdünsten.",
+      "Mit Rotwein (optional) und Gemüsebouillon ablöschen. Flüssigkeit kurz einkochen lassen.",
+      "Gehackte Tomaten beigeben.",
+      "Soisson-Bohnen und Kidneybohnen abgiessen und gut abspülen. Mais abgiessen.",
+      "Bohnen und Mais zur Tomatensauce geben. Mit Salz, Pfeffer, Paprika und Kreuzukümmel würzen und ca. 10 Minuten köcheln lassen.",
+      "Sonnenblumenhack zur Tomatensauce geben und gut erhitzen.",
+      "Mit Salz, Pfeffer und Chilipulver abschmecken.",
+      "Chili sin carne mit Kokosjoghurt, Petersilie oder Koriander und Chiliflocken garnieren.",
+      "Mit Brot oder Reis servieren."
     ],
-    "tips": "",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ein-01-1--1780579129751.jpeg",
     "tags": [
       "Mealprep-geeignet",
       "Mittagessen",
       "Herbst",
       "Winter",
-      "Mexikanisch"
+      "Mexikanisch",
+      "Abendessen",
+      "Kinderfreundlich",
+      "Einfrierbar",
+      "Resteverwertung",
+      "Budgetfreundlich",
+      "Für Gäste",
+      "Gut zum Mitnehmen",
+      "Pfannengericht",
+      "One-Pot-Gericht"
     ],
     "dietCategory": "vegan",
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ein-01-2--1780579145821.jpeg",
@@ -11650,7 +11948,8 @@
       "fiber": 14.2
     },
     "sourceType": "mahlzyt",
-    "_migrated_v2": true
+    "_migrated_v2": true,
+    "imageKochen": null
   },
   {
     "id": "ein-02",
@@ -13509,27 +13808,36 @@
     "category": "Suppen, Eintöpfe & Currys",
     "timeMinutes": 20,
     "tags": [
-      "Frühling"
+      "Frühling",
+      "Mittagessen",
+      "Abendessen",
+      "Mealprep-geeignet",
+      "Kinderfreundlich",
+      "Budgetfreundlich",
+      "Für Gäste",
+      "Gut zum Mitnehmen",
+      "Pfannengericht",
+      "Schweizerisch"
     ],
     "weatherType": "warm",
     "source": "Cuiseline",
-    "basePortions": 6,
-    "description": "Samtige Bärlauchsuppe – kurzes Frühlingsvergnügen.",
+    "basePortions": 4,
+    "description": "Frischer Bärlauch aus dem Wald, fein püriert und cremig serviert – so schmeckt Frühling.",
     "ingredients": [
       {
-        "name": "vegane Butter",
+        "name": "Butter",
         "amount": 50,
         "unit": "g",
         "perPortions": 6
       },
       {
-        "name": "Zwiebel, fein gehackt",
+        "name": "Zwiebel",
         "amount": 1,
         "unit": "Stk",
         "perPortions": 6
       },
       {
-        "name": "Mehl",
+        "name": "Mehl (z.B. Dinkelmehl)",
         "amount": 2,
         "unit": "EL",
         "perPortions": 6
@@ -13547,28 +13855,36 @@
         "perPortions": 6
       },
       {
-        "name": "veganer Rahm",
+        "name": "Rahm",
         "amount": 1,
         "unit": "dl",
         "perPortions": 6
       },
       {
-        "name": "Kartoffeln",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 6
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
       }
     ],
     "steps": [
-      "1. Vegane Butter erwärmen, Zwiebel andünsten, Mehl bestreuen.",
-      "2. Mit Gemüsebrühe ablöschen, gut rühren, 10 Minuten köcheln.",
-      "3. Bärlauch gründlich waschen, in feine Streifen schneiden, hinzufügen.",
-      "4. Veganen Rahm beifügen, mit Salz und Pfeffer abschmecken."
+      "Bärlauch gründlich waschen, trocken schütteln und in feine Streifen schneiden. Zwiebel fein hacken.",
+      "Butter in einer grossen Pfanne erhitzen. Zwiebel beigeben und andämpfen.",
+      "Mehl hinzufügen und kurz mitdünsten, ohne dass es Farbe annimmt.",
+      "Gemüsebouillon unter ständigem Rühren dazugiessen und aufkochen.",
+      "Suppe bei kleiner Hitze ca. 10 Minuten köcheln lassen.",
+      "Bärlauch und Rahm beigeben. Suppe fein pürieren und nochmals kurz erhitzen.",
+      "Mit Salz und Pfeffer abschmecken und servieren."
     ],
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fam-01-1--1780579197526.jpeg",
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fam-01-2--1780579209531.jpeg",
     "imageKochen": null,
-    "tips": "",
     "dietCategory": "vegetarian",
     "allergens": [
       "gluten",
@@ -18600,7 +18916,7 @@
     "id": "sal-03",
     "name": "Taboulé",
     "category": "Salate & Bowls",
-    "timeMinutes": 20,
+    "timeMinutes": 25,
     "ingredients": [
       {
         "name": "Vollkorn-Couscous",
@@ -18609,7 +18925,7 @@
         "perPortions": 4
       },
       {
-        "name": "Gemüsebrühe",
+        "name": "Gemüsebouillon",
         "amount": 500,
         "unit": "ml",
         "perPortions": 4
@@ -18633,6 +18949,12 @@
         "perPortions": 4
       },
       {
+        "name": "Frühlingszwiebeln",
+        "amount": 0.5,
+        "unit": "Bund",
+        "perPortions": 4
+      },
+      {
         "name": "Petersilie (glatt)",
         "amount": 1,
         "unit": "Bund",
@@ -18652,23 +18974,36 @@
       },
       {
         "name": "Zitronensaft",
-        "amount": 1.5,
+        "amount": 5,
         "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
         "perPortions": 4
       }
     ],
     "weatherType": "warm",
     "source": "Cuiseline",
     "basePortions": 4,
-    "description": "Frischer Levante-Salat mit Couscous, Gurke, Tomaten und Peperoni.",
+    "description": "Frisches Taboulé mit knackigem Gemüse, Zitrone und aromatischen Kräutern – leicht, sommerlich und voller Geschmack.",
     "steps": [
-      "1. Couscous in grosse Schüssel, mit heisser Gemüsebrühe übergiessen, aufquellen lassen, mit Gabel auflockern.",
-      "2. Gurke, Tomaten und Peperoni fein würfeln.",
-      "3. Petersilie und Pfefferminze fein hacken.",
-      "4. Gemüse und Kräuter zum abgekühlten Couscous geben.",
-      "5. Olivenöl und Zitronensaft dazugeben, mit Salz und Pfeffer würzen. Alles vermischen."
+      "Couscous in eine grosse Schüssel geben. Heisse Gemüsebouillon darübergiessen und nach Packungsangabe quellen lassen.",
+      "Couscous mit einer Gabel auflockern und vollständig auskühlen lassen.",
+      "Gurke, Tomaten und Peperoni in kleine Würfel schneiden. Frühlingszwiebeln in feine Ringe schneiden.",
+      "Petersilie und Pfefferminzblätter fein hacken.",
+      "Gemüse und Kräuter zum ausgekühlten Couscous geben.",
+      "Olivenöl und Zitronensaft beigeben. Alles gut vermischen und mit Salz und Pfeffer abschmecken.",
+      "Taboulé vor Servieren nach Möglichkeit ca. 20–30 Minuten ziehen lassen."
     ],
-    "tips": "",
     "imageUrl": "/images/recipes/cuiselin-taboule.jpeg",
     "imageZutaten": "/images/recipes/cuiselin-taboule-zutaten.jpeg",
     "tags": [
@@ -18676,7 +19011,14 @@
       "Mittagessen",
       "Frühling",
       "Sommer",
-      "Nahöstlich"
+      "Nahöstlich",
+      "Abendessen",
+      "Kinderfreundlich",
+      "Resteverwertung",
+      "Budgetfreundlich",
+      "Für Gäste",
+      "Gut zum Mitnehmen",
+      "Herbst"
     ],
     "dietCategory": "vegan",
     "allergens": [
@@ -18690,35 +19032,61 @@
       "fiber": 7.2
     },
     "sourceType": "mahlzyt",
-    "_migrated_v2": true
+    "_migrated_v2": true,
+    "imageKochen": null
   },
   {
     "id": "sal-04",
     "name": "Kichererbsensalat",
     "category": "Salate & Bowls",
     "timeMinutes": 15,
-    "tags": [],
+    "tags": [
+      "Mittagessen",
+      "Abendessen",
+      "Mealprep-geeignet",
+      "Kinderfreundlich",
+      "Resteverwertung",
+      "Budgetfreundlich",
+      "Für Gäste",
+      "Gut zum Mitnehmen",
+      "Ohne Kochen",
+      "Sommer",
+      "Herbst",
+      "Mediterran"
+    ],
     "weatherType": "warm",
     "source": "Cuiseline",
     "basePortions": 4,
-    "description": "Einfacher Kichererbsensalat mit getrockneten Tomaten und Schnittlauch.",
+    "description": "Saftige Tomaten, würzige Kichererbsen und frische Kräuter – ein mediterraner Sommersalat für Grillabende und leichte Mahlzeiten.",
     "ingredients": [
       {
-        "name": "Kichererbsen (Dose)",
-        "amount": 1,
+        "name": "Kichererbsen",
+        "amount": 2,
         "unit": "Dose",
         "perPortions": 4
       },
       {
+        "name": "Cherrytomaten",
+        "amount": 400,
+        "unit": "g",
+        "perPortions": 4
+      },
+      {
         "name": "getrocknete Tomaten in Öl",
-        "amount": 4,
+        "amount": 10,
         "unit": "Stk",
         "perPortions": 4
       },
       {
-        "name": "Zwiebel",
-        "amount": 0.5,
+        "name": "kleine Zwiebel (optional)",
+        "amount": 1,
         "unit": "Stk",
+        "perPortions": 4
+      },
+      {
+        "name": "Basilikum",
+        "amount": 0.5,
+        "unit": "Bund",
         "perPortions": 4
       },
       {
@@ -18728,44 +19096,63 @@
         "perPortions": 4
       },
       {
-        "name": "Olivenöl",
-        "amount": 3,
+        "name": "Senf",
+        "amount": 1,
         "unit": "EL",
         "perPortions": 4
       },
       {
         "name": "Aceto Balsamico",
-        "amount": 1,
+        "amount": 3,
         "unit": "EL",
         "perPortions": 4
       },
       {
-        "name": "Senf",
-        "amount": 1,
+        "name": "Olivenöl",
+        "amount": 5,
+        "unit": "EL",
+        "perPortions": 4
+      },
+      {
+        "name": "Italienische Kräuter",
+        "amount": 0.5,
         "unit": "TL",
         "perPortions": 4
       },
       {
-        "name": "Kirschtomaten",
-        "amount": 150,
-        "unit": "g",
+        "name": "Curry",
+        "amount": 0.25,
+        "unit": "TL",
         "perPortions": 4
       },
       {
-        "name": "Basilikum",
+        "name": "Salz",
         "amount": 0.5,
-        "unit": "Bund",
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
+        "name": "Kräutersalz (optional)",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
         "perPortions": 4
       }
     ],
     "steps": [
-      "1. Kichererbsen abspülen und abtropfen lassen.",
-      "2. Dörrtomaten in Streifen schneiden, Kirschtomaten halbieren.",
-      "3. Schnittlauch und Basilikum fein schneiden.",
-      "4. Dressing aus Olivenöl, Aceto Balsamico, Senf, Curry, Salz und Pfeffer rühren.",
-      "5. Alles vermengen und abschmecken."
+      "Kichererbsen abgiessen, gründlich abspülen und gut abtropfen lassen.",
+      "Cherrytomaten halbieren oder vierteln. Dörrtomaten in feine Streifen schneiden.",
+      "Basilikum in feine Streifen, Schnittlauch fein und optional Zwiebel klein schneiden.",
+      "Senf, Aceto Balsamico und Olivenöl in einer grossen Schüssel verrühren.",
+      "Mit Salz, Pfeffer, wenig Curry, italienischen Kräutern und optional Kräutersalz würzen.",
+      "Kichererbsen, Cherrytomaten, Dörrtomaten, Basilikum, Schnittlauch und Zwiebel zum Dressing geben.",
+      "Alles gut vermischen, abschmecken und nach Möglichkeit kurz ziehen lassen."
     ],
-    "tips": "",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---sal-04-1--1780579587426.jpeg",
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---sal-04-2--1780579592398.jpeg",
     "imageKochen": null,
@@ -18782,7 +19169,103 @@
       "fiber": 7.5
     },
     "sourceType": "mahlzyt",
-    "_migrated_v2": true
+    "_migrated_v2": true,
+    "ingredientGroups": [
+      {
+        "name": "Salat",
+        "ingredients": [
+          {
+            "name": "Kichererbsen",
+            "amount": 2,
+            "unit": "Dose",
+            "perPortions": 4
+          },
+          {
+            "name": "Cherrytomaten",
+            "amount": 400,
+            "unit": "g",
+            "perPortions": 4
+          },
+          {
+            "name": "getrocknete Tomaten in Öl",
+            "amount": 10,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "kleine Zwiebel (optional)",
+            "amount": 1,
+            "unit": "Stk",
+            "perPortions": 4
+          },
+          {
+            "name": "Basilikum",
+            "amount": 0.5,
+            "unit": "Bund",
+            "perPortions": 4
+          },
+          {
+            "name": "Schnittlauch",
+            "amount": 0.5,
+            "unit": "Bund",
+            "perPortions": 4
+          }
+        ]
+      },
+      {
+        "name": "Sauce",
+        "ingredients": [
+          {
+            "name": "Senf",
+            "amount": 1,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Aceto Balsamico",
+            "amount": 3,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Olivenöl",
+            "amount": 5,
+            "unit": "EL",
+            "perPortions": 4
+          },
+          {
+            "name": "Italienische Kräuter",
+            "amount": 0.5,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Curry",
+            "amount": 0.25,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Salz",
+            "amount": 0.5,
+            "unit": "TL",
+            "perPortions": 4
+          },
+          {
+            "name": "Kräutersalz (optional)",
+            "amount": 1,
+            "unit": "Prise",
+            "perPortions": 4
+          },
+          {
+            "name": "Pfeffer",
+            "amount": 1,
+            "unit": "Prise",
+            "perPortions": 4
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "sal-05",
@@ -19135,13 +19618,25 @@
     "category": "Salate & Bowls",
     "timeMinutes": 10,
     "tags": [
-      "Sommer"
+      "Sommer",
+      "Mittagessen",
+      "Abendessen",
+      "Mealprep-geeignet",
+      "Kinderfreundlich",
+      "Resteverwertung",
+      "Budgetfreundlich",
+      "Für Gäste",
+      "Gut zum Mitnehmen",
+      "Ohne Kochen",
+      "Herbst",
+      "Schweizerisch",
+      "Frühling"
     ],
     "weatherType": "warm",
     "source": "Cuiseline",
     "basePortions": 4,
     "dietCategory": "vegan",
-    "description": "Einfacher Gurkensalat mit Dill und Mandeljogurt-Dressing.",
+    "description": "Erfrischender Gurkensalat mit Dill und feinem Joghurt-Senf-Dressing – unkompliziert, leicht und herrlich frisch.",
     "ingredients": [
       {
         "name": "Gurken",
@@ -19150,7 +19645,7 @@
         "perPortions": 4
       },
       {
-        "name": "Mandeljogurt",
+        "name": "Nature Joghurt",
         "amount": 1,
         "unit": "EL",
         "perPortions": 4
@@ -19162,14 +19657,20 @@
         "perPortions": 4
       },
       {
+        "name": "Senf (mild)",
+        "amount": 1,
+        "unit": "TL",
+        "perPortions": 4
+      },
+      {
         "name": "Kräuteressig",
         "amount": 2,
         "unit": "EL",
         "perPortions": 4
       },
       {
-        "name": "Sonnenblumenöl",
-        "amount": 1.5,
+        "name": "Rapsöl",
+        "amount": 3,
         "unit": "EL",
         "perPortions": 4
       },
@@ -19178,15 +19679,34 @@
         "amount": 0.5,
         "unit": "Bund",
         "perPortions": 4
+      },
+      {
+        "name": "Salz",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Kräutersalz (optional)",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
+      },
+      {
+        "name": "Pfeffer",
+        "amount": 1,
+        "unit": "Prise",
+        "perPortions": 4
       }
     ],
     "steps": [
-      "1. Mandeljogurt, Senf, Essig und Öl in eine Schüssel geben, mit Salz, Pfeffer und Kräutersalz würzen.",
-      "2. Gurken in Scheiben schneiden.",
-      "3. Dill zerkleinern und dazugeben.",
-      "4. Gurken in die Schüssel geben und alles vermischen."
+      "Gurken längs halbieren, Kerne mit einem Löffel entfernen und Gurken in feine Scheiben schneiden.",
+      "Frischen Dill fein hacken.",
+      "Nature Joghurt, körnigen Dijon-Senf, milden Senf, Kräuterweinessig und Öl in einer grossen Schüssel verrühren.",
+      "Frischen Dill oder 1/2 TL getrockneten Dill beigeben. Mit Salz, Pfeffer und optional Kräutersalz würzen und abschmecken.",
+      "Gurkenscheiben zum Dressing geben und gut vermischen.",
+      "Salat nach Möglichkeit ca. 15 Minuten ziehen lassen, nochmals abschmecken und servieren."
     ],
-    "tips": "",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---gurkensalat-1--1780579715668.jpeg",
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---gurkensalat-2--1780579721355.jpeg",
     "imageKochen": null,
@@ -19307,8 +19827,7 @@
       "fiber": 11.8
     },
     "sourceType": "mahlzyt",
-    "_migrated_v2": true,
-    "approved": true
+    "_migrated_v2": true
   },
   {
     "id": "sal-13",
@@ -20305,6 +20824,7 @@
     "name": "Zucchinisalat mit Forelle, Ei & Chili an Joghurt-Zitronen-Dressing",
     "category": "Salate & Bowls",
     "timeMinutes": 15,
+    "basePortions": 2,
     "tags": [
       "Sommer",
       "Frühling",
@@ -20382,11 +20902,7 @@
     ],
     "weatherType": "warm",
     "source": "MahlZyt",
-    "basePortions": 2,
     "description": "Ein leichter, sommerlicher Salat mit hauchdünnen Zucchinistreifen, herzhafter Forelle und gekochten Eiern in einem frischen Joghurt-Zitronen-Dressing. Schnell zubereitet und geschmacklich top!",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/sal-59-1781555263347.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
     "steps": [
       "Einen grossen Topf mit Wasser füllen und zum Kochen bringen. Die Eier hineingeben und 7 Minuten lang kochen. Anschliessend unter kaltem Wasser abschrecken und beiseitelegen.",
       "Die Forellen aus der Dose nehmen und durch ein Sieb abtropfen lassen. Dabei etwa 1 EL vom Öl auffangen und aufbewahren.",
@@ -20400,7 +20916,17 @@
       "Mit Chili, Petersilie und etwas Pfeffer garnieren. Die Brotscheiben halbieren und am Tellerrand platzieren."
     ],
     "dietCategory": "fish",
-    "approved": true
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/sal-59-1781555263347.jpg",
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "ei",
+      "fisch",
+      "gluten",
+      "milch"
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "sal-60",
@@ -24646,9 +25172,6 @@
     "name": "Chicken Tikka Masala mit Naan und Raita",
     "category": "Fleisch & Geflügel",
     "timeMinutes": 100,
-    "tags": [
-      "Indisch"
-    ],
     "ingredients": [
       {
         "name": "Pouletbrüste",
@@ -24709,9 +25232,6 @@
     "source": "Migusto",
     "basePortions": 4,
     "description": "Klassisches Chicken Tikka Masala mit warmem Naan-Brot und einem frischen Joghurt-Raita.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fle-01-1780784909551.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
     "steps": [
       "Pouletbrüste in Sechstel schneiden. Knoblauch fein hacken, Chilis entkernen und klein schneiden. Mit 3 EL Joghurt und Poulet mischen. Ca. 1 Stunde marinieren.",
       "Ofen auf 220 °C vorheizen. Poulet leicht salzen, in eine Auflaufform geben und 15 Min. backen.",
@@ -24720,7 +25240,25 @@
       "Koriander fein hacken, mit restlichem Joghurt mischen. Kreuzkümmel mahlen und mit Salz zum Raita geben.",
       "Chicken Tikka Masala mit Naan und Raita servieren."
     ],
-    "dietCategory": "meat"
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/fle-01-1780784909551.jpg",
+    "tags": [
+      "Indisch"
+    ],
+    "allergens": [
+      "milch"
+    ],
+    "nutrition": {
+      "kcal": 712,
+      "protein": 52.8,
+      "fat": 22.4,
+      "carbs": 68.5,
+      "fiber": 3.6
+    },
+    "imageZutaten": null,
+    "imageKochen": null,
+    "dietCategory": "meat",
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "fle-61",
@@ -25928,7 +26466,12 @@
     "name": "Grillschnecken, Grillbrot und Tomaten",
     "category": "Fleisch & Geflügel",
     "timeMinutes": 150,
-    "activeTimeMinutes": 60,
+    "basePortions": 4,
+    "weatherType": "warm",
+    "source": "MahlZyt",
+    "sourceType": "imported",
+    "approved": false,
+    "description": "Saftige Grillschnecken mit selbst gemachtem Grillbrot und würzig geschmorten Tomaten — ein herrliches Sommer-Grillmenü für die ganze Familie.",
     "tags": [
       "Abendessen",
       "Grillgericht",
@@ -26047,13 +26590,6 @@
         "perPortions": 4
       }
     ],
-    "weatherType": "warm",
-    "source": "MahlZyt",
-    "basePortions": 4,
-    "description": "Saftige Grillschnecken mit selbst gemachtem Grillbrot und würzig geschmorten Tomaten — ein herrliches Sommer-Grillmenü für die ganze Familie.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/fle-70-1781472514450.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
     "steps": [
       "Für den Teig den Rosmarin fein schneiden und zusammen mit dem Mehl, dem Salz und der Hefe in eine grosse Schüssel geben.",
       "Wasser und Olivenöl dazugiessen und alles zu einem weichen, glatten Teig kneten — das dauert etwa 10 Minuten.",
@@ -26066,6 +26602,16 @@
       "Die Grillbrote ebenfalls beidseitig je ca. 3 Minuten grillieren, bis sie goldbraune Streifen haben.",
       "Die Tomaten mit Salz würzen, die Basilikumblätter zerzupfen und darüberstreuen. Alles zusammen servieren."
     ],
+    "dietCategory": "meat",
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/fle-70-1781472514450.jpg",
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "gluten",
+      "sulfite",
+      "weichtiere"
+    ],
+    "activeTimeMinutes": 60,
     "ingredientGroups": [
       {
         "name": "Teig",
@@ -26195,15 +26741,19 @@
           }
         ]
       }
-    ],
-    "dietCategory": "meat",
-    "approved": true
+    ]
   },
   {
     "id": "fle-71",
     "name": "Grillplatte mit Gurken-Rettich Salat",
     "category": "Fleisch & Geflügel",
     "timeMinutes": 30,
+    "basePortions": 6,
+    "weatherType": "warm",
+    "source": "MahlZyt",
+    "sourceType": "imported",
+    "approved": false,
+    "description": "Eine klassische Schweizer Grillplatte mit saftigen Würsten, knusprigem Speck und würzigem Grillkäse — dazu ein frischer Gurken-Rettich-Salat",
     "tags": [
       "Abendessen",
       "Grillgericht",
@@ -26291,13 +26841,6 @@
         "perPortions": 6
       }
     ],
-    "weatherType": "warm",
-    "source": "MahlZyt",
-    "basePortions": 6,
-    "description": "Eine klassische Schweizer Grillplatte mit saftigen Würsten, knusprigem Speck und würzigem Grillkäse — dazu ein frischer Gurken-Rettich-Salat",
-    "imageUrl": null,
-    "imageZutaten": null,
-    "imageKochen": null,
     "steps": [
       "Für den Salat den sauren Halbrahm in eine Schüssel geben und mit Salz, Pfeffer und dem Saft der Bio-Zitrone verrühren.",
       "Rettich, Gurke und Apfel in feine Scheiben oder Streifen schneiden, zum Dressing geben und alles gut vermischen. Den Salat kühl stellen.",
@@ -26306,13 +26849,28 @@
       "Das Brot kurz auf dem Grill rösten.",
       "Alle Würste und den Grillkäse auf einer grossen Platte anrichten, den Gurken-Rettich-Salat und den Himbeersenf dazustellen und das Brot dazu servieren."
     ],
-    "dietCategory": "meat"
+    "dietCategory": "meat",
+    "imageUrl": null,
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "gluten",
+      "milch",
+      "senf",
+      "weichtiere"
+    ]
   },
   {
     "id": "fle-72",
     "name": "T-Bone-Steak mit Grillspargel",
     "category": "Fleisch & Geflügel",
     "timeMinutes": 38,
+    "basePortions": 4,
+    "weatherType": "warm",
+    "source": "MahlZyt",
+    "sourceType": "imported",
+    "approved": false,
+    "description": "Saftige T-Bone-Steaks vom Grill treffen auf knackig gegrillten grünen Spargel – ein unkompliziertes Sommeressen, das garantiert beeindruckt.",
     "tags": [
       "Abendessen",
       "Für Gäste",
@@ -26362,21 +26920,6 @@
         "unit": "EL",
         "perPortions": 4
       }
-    ],
-    "weatherType": "warm",
-    "source": "MahlZyt",
-    "basePortions": 4,
-    "description": "Saftige T-Bone-Steaks vom Grill treffen auf knackig gegrillten grünen Spargel – ein unkompliziertes Sommeressen, das garantiert beeindruckt.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/fle-72-1781477268188.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
-    "steps": [
-      "Den Grill auf mittlere Hitze (ca. 200 °C) vorheizen.",
-      "Die T-Bone-Steaks rundum mit etwas Olivenöl einreiben und grosszügig mit Meersalz und Pfeffer würzen.",
-      "Die Steaks auf dem Grill beidseitig je ca. 4 Minuten grillieren, anschliessend vom Grill nehmen und zugedeckt ca. 10 Minuten ruhen lassen.",
-      "Während die Steaks ruhen, die Spargeln mit dem Olivenöl vermengen und leicht salzen.",
-      "Die Spargeln auf dem Grill bei mittlerer Hitze beidseitig je ca. 4 Minuten grillieren, bis sie leicht gebräunt und noch bissfest sind.",
-      "Spargeln vom Grill nehmen, mit Zitronensaft beträufeln und zusammen mit den T-Bone-Steaks servieren."
     ],
     "ingredientGroups": [
       {
@@ -26432,14 +26975,31 @@
         ]
       }
     ],
+    "steps": [
+      "Den Grill auf mittlere Hitze (ca. 200 °C) vorheizen.",
+      "Die T-Bone-Steaks rundum mit etwas Olivenöl einreiben und grosszügig mit Meersalz und Pfeffer würzen.",
+      "Die Steaks auf dem Grill beidseitig je ca. 4 Minuten grillieren, anschliessend vom Grill nehmen und zugedeckt ca. 10 Minuten ruhen lassen.",
+      "Während die Steaks ruhen, die Spargeln mit dem Olivenöl vermengen und leicht salzen.",
+      "Die Spargeln auf dem Grill bei mittlerer Hitze beidseitig je ca. 4 Minuten grillieren, bis sie leicht gebräunt und noch bissfest sind.",
+      "Spargeln vom Grill nehmen, mit Zitronensaft beträufeln und zusammen mit den T-Bone-Steaks servieren."
+    ],
     "dietCategory": "meat",
-    "approved": true
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/fle-72-1781477268188.jpg",
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": []
   },
   {
     "id": "fle-73",
     "name": "Pouletbrüstli im Speckmantel",
     "category": "Fleisch & Geflügel",
     "timeMinutes": 20,
+    "basePortions": 4,
+    "weatherType": "warm",
+    "source": "MahlZyt",
+    "sourceType": "imported",
+    "approved": false,
+    "description": "Saftige Pouletbrüstli, mit frischem Thymian und knusprigem Bratspeck umwickelt – ein einfaches und schnelles Grillgericht für den Sommer.",
     "tags": [
       "Abendessen",
       "Grillgericht",
@@ -26480,13 +27040,6 @@
         "perPortions": 4
       }
     ],
-    "weatherType": "warm",
-    "source": "MahlZyt",
-    "basePortions": 4,
-    "description": "Saftige Pouletbrüstli, mit frischem Thymian und knusprigem Bratspeck umwickelt – ein einfaches und schnelles Grillgericht für den Sommer.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/fle-73-1781477660865.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
     "steps": [
       "Die Pouletbrüstli mit Salz und Pfeffer würzen.",
       "Je 2 Zweiglein Thymian auf ein Pouletbrüstli legen und dieses anschliessend mit je 3 Tranchen Bratspeck fest umwickeln.",
@@ -26494,14 +27047,22 @@
       "Die Pouletbrüstli zugedeckt auf dem Grill von jeder Seite ca. 5 Minuten grillieren, bis der Speck knusprig und das Poulet durchgegart ist."
     ],
     "dietCategory": "meat",
-    "approved": true
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/fle-73-1781477660865.jpg",
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": []
   },
   {
     "id": "fle-74",
     "name": "Pouletflügeli-Spiessli mit Erdnuss-Dip",
     "category": "Fleisch & Geflügel",
     "timeMinutes": 300,
-    "activeTimeMinutes": 40,
+    "basePortions": 4,
+    "weatherType": "warm",
+    "source": "MahlZyt",
+    "sourceType": "imported",
+    "approved": false,
+    "description": "Saftige Pouletflügeli-Spiessli, mariniert in einer würzigen Erdnuss-Limetten-Marinade, vom Grill serviert mit einem frischen Gurkensalat und knusprigen Erdnüssen.",
     "tags": [
       "Abendessen",
       "Grillgericht",
@@ -26611,23 +27172,6 @@
         "unit": "EL",
         "perPortions": 4
       }
-    ],
-    "weatherType": "warm",
-    "source": "MahlZyt",
-    "basePortions": 4,
-    "description": "Saftige Pouletflügeli-Spiessli, mariniert in einer würzigen Erdnuss-Limetten-Marinade, vom Grill serviert mit einem frischen Gurkensalat und knusprigen Erdnüssen.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/fle-74-1781559763320.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
-    "steps": [
-      "Erdnussbutter, Sojasauce, Limettensaft, geriebenen Ingwer, gepressten Knoblauch, gehackte Chili, Rohzucker und Salz in einer Schüssel gut verrühren.",
-      "Die Hälfte dieser Marinade in ein separates Schälchen umfüllen, zudecken und im Kühlschrank kalt stellen – diese dient später als Dip.",
-      "Die Pouletflügeli mit der restlichen Marinade gründlich vermengen, zugedeckt mindestens 4 Stunden im Kühlschrank marinieren.",
-      "Vor dem Grillieren die Holzspiesschen kurz in Wasser einweichen. Je 3 Pouletflügeli auf 2 parallele Spiesschen stecken und die Flügeli leicht salzen und pfeffern.",
-      "Die Spiessli auf dem Grill bei mittlerer Hitze (ca. 200 °C) bei geschlossenem Deckel rund 30 Minuten grillieren, dabei ein- bis zweimal wenden, bis das Fleisch gar und schön gebräunt ist.",
-      "Für den Gurkensalat Limettenschale und -saft mit dem Olivenöl in einer Schüssel verrühren, mit Salz und Pfeffer abschmecken.",
-      "Snack-Gurken in Scheiben schneiden und zusammen mit den gezupften Korianderblättern zur Limettensauce geben, alles gut mischen.",
-      "Die Pouletflügeli-Spiessli mit dem beiseitegestellten Erdnuss-Dip und dem Gurkensalat anrichten. Die gehackten Erdnüsse darüberstreuen und sofort servieren."
     ],
     "ingredientGroups": [
       {
@@ -26748,8 +27292,26 @@
         ]
       }
     ],
+    "steps": [
+      "Erdnussbutter, Sojasauce, Limettensaft, geriebenen Ingwer, gepressten Knoblauch, gehackte Chili, Rohzucker und Salz in einer Schüssel gut verrühren.",
+      "Die Hälfte dieser Marinade in ein separates Schälchen umfüllen, zudecken und im Kühlschrank kalt stellen – diese dient später als Dip.",
+      "Die Pouletflügeli mit der restlichen Marinade gründlich vermengen, zugedeckt mindestens 4 Stunden im Kühlschrank marinieren.",
+      "Vor dem Grillieren die Holzspiesschen kurz in Wasser einweichen. Je 3 Pouletflügeli auf 2 parallele Spiesschen stecken und die Flügeli leicht salzen und pfeffern.",
+      "Die Spiessli auf dem Grill bei mittlerer Hitze (ca. 200 °C) bei geschlossenem Deckel rund 30 Minuten grillieren, dabei ein- bis zweimal wenden, bis das Fleisch gar und schön gebräunt ist.",
+      "Für den Gurkensalat Limettenschale und -saft mit dem Olivenöl in einer Schüssel verrühren, mit Salz und Pfeffer abschmecken.",
+      "Snack-Gurken in Scheiben schneiden und zusammen mit den gezupften Korianderblättern zur Limettensauce geben, alles gut mischen.",
+      "Die Pouletflügeli-Spiessli mit dem beiseitegestellten Erdnuss-Dip und dem Gurkensalat anrichten. Die gehackten Erdnüsse darüberstreuen und sofort servieren."
+    ],
     "dietCategory": "meat",
-    "approved": true
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/fle-74-1781559763320.jpg",
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "erdnuesse",
+      "milch",
+      "soja"
+    ],
+    "activeTimeMinutes": 40
   },
   {
     "id": "fle-75",
@@ -32099,6 +32661,10 @@
       "Sommer",
       "Mediterran"
     ],
+    "weatherType": "warm",
+    "source": "Cuiseline",
+    "basePortions": 1,
+    "description": "Ein leichter Wrap mit Hummus, Tomaten und Rucola – bunt, sättigend und im Handumdrehen gemacht.",
     "ingredients": [
       {
         "name": "Vollkorntortilla",
@@ -32155,13 +32721,6 @@
         "perPortions": 1
       }
     ],
-    "weatherType": "warm",
-    "source": "Cuiseline",
-    "basePortions": 1,
-    "description": "Ein leichter Wrap mit Hummus, Tomaten und Rucola – bunt, sättigend und im Handumdrehen gemacht.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---hummus-gemu-se-wrap-1--1780786140067.jpeg",
-    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---hummus-gemu-se-wrap-2--1780786147162.jpeg",
-    "imageKochen": null,
     "steps": [
       "Tortilla flach auslegen und gleichmässig mit Hummus bestreichen.",
       "Gurke klein schneiden, Cherrytomaten halbieren und Dörrtomaten in Streifen schneiden.",
@@ -32169,8 +32728,22 @@
       "Seiten leicht einklappen und Wrap fest aufrollen.",
       "Nach Wunsch halbieren und servieren."
     ],
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---hummus-gemu-se-wrap-1--1780786140067.jpeg",
+    "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---hummus-gemu-se-wrap-2--1780786147162.jpeg",
+    "imageKochen": null,
+    "allergens": [
+      "ei"
+    ],
+    "nutrition": {
+      "kcal": 387,
+      "protein": 14.2,
+      "fat": 12.8,
+      "carbs": 52.6,
+      "fiber": 10.5
+    },
     "dietCategory": "vegan",
-    "approved": true
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-07",
@@ -35544,6 +36117,7 @@
     "name": "Zucchini Frittata mit Hüttenkäse, Feta und Petersilie",
     "category": "Eiergerichte",
     "timeMinutes": 30,
+    "basePortions": 4,
     "tags": [
       "Ofengericht",
       "Sommer",
@@ -35616,11 +36190,7 @@
     ],
     "weatherType": "warm",
     "source": "MahlZyt",
-    "basePortions": 4,
     "description": "Eine köstliche italienische Frittata mit saftigen Zucchiniwürfeln, cremigem Hüttenkäse und würzigem Feta. Schnell zubereitet, wandelbar und perfekt als Hauptgericht oder Snack – warm oder kalt ein Genuss.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/son-85-1781475375509.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
     "steps": [
       "Den Backofen auf 175 Grad Ober-/Unterhitze vorheizen und ein Rost auf die mittlere Schiene setzen.",
       "Die Zucchini waschen, trockentupfen und die Enden abschneiden. Längs vierteln und das weiche Kernfleisch entfernen. Die Viertel nochmals längs halbieren und dann quer in Würfel schneiden.",
@@ -35637,7 +36207,15 @@
       "Mit der restlichen Petersilie garnieren und servieren."
     ],
     "dietCategory": "vegetarian",
-    "approved": true
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/son-85-1781475375509.jpg",
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "ei",
+      "milch"
+    ],
+    "sourceType": "mahlzyt",
+    "_migrated_v2": true
   },
   {
     "id": "son-86",
@@ -36820,6 +37398,12 @@
     "name": "BBQ-Marinade",
     "category": "Beilagen, Saucen & Dips",
     "timeMinutes": 15,
+    "basePortions": 4,
+    "weatherType": "warm",
+    "source": "MahlZyt",
+    "sourceType": "imported",
+    "approved": false,
+    "description": "Eine würzige BBQ-Marinade mit Sojasauce, Honig und Gewürzen – perfekt für Grillgut aller Art und im Handumdrehen zubereitet.",
     "tags": [
       "Grillgericht",
       "Sommer",
@@ -36893,13 +37477,6 @@
         "perPortions": 4
       }
     ],
-    "weatherType": "warm",
-    "source": "MahlZyt",
-    "basePortions": 4,
-    "description": "Eine würzige BBQ-Marinade mit Sojasauce, Honig und Gewürzen – perfekt für Grillgut aller Art und im Handumdrehen zubereitet.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/son-97-1781475638172.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
     "steps": [
       "Knoblauch pressen und zusammen mit dem Tomatenpüree in eine kleine Schüssel geben.",
       "Sojasauce, Sherry und Honig beigeben.",
@@ -36908,13 +37485,26 @@
       "Das Grillgut vor dem Grillieren grosszügig damit einpinseln und nach Belieben einige Minuten marinieren lassen."
     ],
     "dietCategory": "vegan",
-    "approved": true
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/son-97-1781475638172.jpg",
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "senf",
+      "soja",
+      "sulfite"
+    ]
   },
   {
     "id": "son-98",
     "name": "Buntes Grillgemüse",
     "category": "Gemüsegerichte",
     "timeMinutes": 60,
+    "basePortions": 4,
+    "weatherType": "warm",
+    "source": "MahlZyt",
+    "sourceType": "imported",
+    "approved": false,
+    "description": "Knackige Tomaten-Spiessli, karamellisierte Zwiebel-Lollis, goldige Kartoffelscheiben und gefüllte Hornpeperoni – dieses farbenfrohe Grillgemüse ist ein Fest für Auge und Gaumen.",
     "tags": [
       "Abendessen",
       "Grillgericht",
@@ -37043,25 +37633,6 @@
         "unit": "Prise",
         "perPortions": 4
       }
-    ],
-    "weatherType": "warm",
-    "source": "MahlZyt",
-    "basePortions": 4,
-    "description": "Knackige Tomaten-Spiessli, karamellisierte Zwiebel-Lollis, goldige Kartoffelscheiben und gefüllte Hornpeperoni – dieses farbenfrohe Grillgemüse ist ein Fest für Auge und Gaumen.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/son-98-1781476872345.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
-    "steps": [
-      "Den Grill auf mittlere Hitze (ca. 200 °C) vorheizen.",
-      "Die Cherry-Tomaten mit etwas Olivenöl und Salz vermengen, dann auf die Rosmarinzweige aufstecken.",
-      "Die Tomaten-Spiessli auf dem Grill zugedeckt bei mittlerer Hitze ca. 5 Minuten rundum grillieren. Anschliessend mit etwas Olivenöl beträufeln und mit Fleur de Sel würzen.",
-      "Für die Zwiebel-Lollis je ein Holzspiesschen mittig durch die Zwiebelscheiben stecken.",
-      "Die Zwiebel-Lollis zugedeckt auf dem Grill beidseitig je ca. 4 Minuten grillieren. Vom Grill nehmen, mit Honig beträufeln und mit Cayennepfeffer sowie Pfeffer würzen.",
-      "Die Kartoffel- und Süsskartoffelscheiben in einer Schüssel mit Olivenöl und Salz mischen.",
-      "Die Kartoffelscheiben zugedeckt auf dem Grill bei mittlerer Hitze beidseitig je ca. 10 Minuten grillieren, dabei alle 5 Minuten um einen Vierteldrehung wenden. Vom Grill nehmen und mit abgezupften Thymianblättchen bestreuen.",
-      "Die Hornpeperoni rundum mit Olivenöl einstreichen und zugedeckt auf dem Grill ca. 10 Minuten grillieren.",
-      "Währenddessen den Frischkäse mit dem fein geschnittenen Schnittlauch verrühren und mit Salz sowie Pfeffer abschmecken.",
-      "Die gegrillten Hornpeperoni am oberen Teil aufschneiden und grosszügig mit der Frischkäsemischung füllen."
     ],
     "ingredientGroups": [
       {
@@ -37205,14 +37776,37 @@
         ]
       }
     ],
+    "steps": [
+      "Den Grill auf mittlere Hitze (ca. 200 °C) vorheizen.",
+      "Die Cherry-Tomaten mit etwas Olivenöl und Salz vermengen, dann auf die Rosmarinzweige aufstecken.",
+      "Die Tomaten-Spiessli auf dem Grill zugedeckt bei mittlerer Hitze ca. 5 Minuten rundum grillieren. Anschliessend mit etwas Olivenöl beträufeln und mit Fleur de Sel würzen.",
+      "Für die Zwiebel-Lollis je ein Holzspiesschen mittig durch die Zwiebelscheiben stecken.",
+      "Die Zwiebel-Lollis zugedeckt auf dem Grill beidseitig je ca. 4 Minuten grillieren. Vom Grill nehmen, mit Honig beträufeln und mit Cayennepfeffer sowie Pfeffer würzen.",
+      "Die Kartoffel- und Süsskartoffelscheiben in einer Schüssel mit Olivenöl und Salz mischen.",
+      "Die Kartoffelscheiben zugedeckt auf dem Grill bei mittlerer Hitze beidseitig je ca. 10 Minuten grillieren, dabei alle 5 Minuten um einen Vierteldrehung wenden. Vom Grill nehmen und mit abgezupften Thymianblättchen bestreuen.",
+      "Die Hornpeperoni rundum mit Olivenöl einstreichen und zugedeckt auf dem Grill ca. 10 Minuten grillieren.",
+      "Währenddessen den Frischkäse mit dem fein geschnittenen Schnittlauch verrühren und mit Salz sowie Pfeffer abschmecken.",
+      "Die gegrillten Hornpeperoni am oberen Teil aufschneiden und grosszügig mit der Frischkäsemischung füllen."
+    ],
     "dietCategory": "vegetarian",
-    "approved": true
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/son-98-1781476872345.jpg",
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": [
+      "milch"
+    ]
   },
   {
     "id": "son-99",
     "name": "Ratatouille vom Grill",
     "category": "Gemüsegerichte",
     "timeMinutes": 30,
+    "basePortions": 4,
+    "weatherType": "warm",
+    "source": "MahlZyt",
+    "sourceType": "imported",
+    "approved": false,
+    "description": "Der provenzalische Klassiker, direkt auf dem Grill zubereitet: saftiges Sommergemüse mit Kräutern und Knoblauch – als Beilage oder Hauptgericht ein Genuss.",
     "tags": [
       "Abendessen",
       "Grillgericht",
@@ -37300,22 +37894,6 @@
         "unit": "EL",
         "perPortions": 4
       }
-    ],
-    "weatherType": "warm",
-    "source": "MahlZyt",
-    "basePortions": 4,
-    "description": "Der provenzalische Klassiker, direkt auf dem Grill zubereitet: saftiges Sommergemüse mit Kräutern und Knoblauch – als Beilage oder Hauptgericht ein Genuss.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/son-99-1781476677645.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
-    "steps": [
-      "Aubergine, Peperoni, Zucchetti und Fleischtomaten grob in gleichmässige Stücke schneiden.",
-      "Das Gemüse in einer grossen Schüssel mit 3 EL Olivenöl und der Hälfte des Knoblauchs vermengen und mit Salz würzen.",
-      "Cherry-Tomaten und Zwiebelspalten in eine Grillschale geben, mit dem restlichen Olivenöl, dem restlichen Knoblauch sowie den Oregano- und Thymian-Zweigen mischen.",
-      "Den Grill auf mittlere Hitze (ca. 200 °C) vorheizen. Das Grillgemüse auf dem Rost und die Grillschale mit den Cherry-Tomaten bei geschlossenem Deckel ca. 20 Minuten grillieren, dabei das Gemüse gelegentlich wenden.",
-      "Aubergine, Peperoni und Fleischtomaten vom Grill nehmen, in grobe Stücke schneiden und zusammen mit den Zucchetti auf einer Platte anrichten.",
-      "Die Cherry-Tomaten noch weitere ca. 10 Minuten auf dem Grill lassen, bis sie leicht aufgeplatzt sind, dann über das Ratatouille verteilen.",
-      "Das Gericht mit Fleur de Sel, Pfeffer und frischen Oregano-Blättchen abschmecken und servieren."
     ],
     "ingredientGroups": [
       {
@@ -37407,8 +37985,20 @@
         ]
       }
     ],
+    "steps": [
+      "Aubergine, Peperoni, Zucchetti und Fleischtomaten grob in gleichmässige Stücke schneiden.",
+      "Das Gemüse in einer grossen Schüssel mit 3 EL Olivenöl und der Hälfte des Knoblauchs vermengen und mit Salz würzen.",
+      "Cherry-Tomaten und Zwiebelspalten in eine Grillschale geben, mit dem restlichen Olivenöl, dem restlichen Knoblauch sowie den Oregano- und Thymian-Zweigen mischen.",
+      "Den Grill auf mittlere Hitze (ca. 200 °C) vorheizen. Das Grillgemüse auf dem Rost und die Grillschale mit den Cherry-Tomaten bei geschlossenem Deckel ca. 20 Minuten grillieren, dabei das Gemüse gelegentlich wenden.",
+      "Aubergine, Peperoni und Fleischtomaten vom Grill nehmen, in grobe Stücke schneiden und zusammen mit den Zucchetti auf einer Platte anrichten.",
+      "Die Cherry-Tomaten noch weitere ca. 10 Minuten auf dem Grill lassen, bis sie leicht aufgeplatzt sind, dann über das Ratatouille verteilen.",
+      "Das Gericht mit Fleur de Sel, Pfeffer und frischen Oregano-Blättchen abschmecken und servieren."
+    ],
     "dietCategory": "vegan",
-    "approved": true
+    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/son-99-1781476677645.jpg",
+    "imageZutaten": null,
+    "imageKochen": null,
+    "allergens": []
   },
   {
     "id": "kds-01",
@@ -39415,587 +40005,5 @@
     "dietCategory": "vegan",
     "sourceType": "mahlzyt",
     "_migrated_v2": true
-  },
-  {
-    "id": "rec-1780953992976-qmwcv",
-    "name": "Thai Nudelsuppe mit Tofu",
-    "category": "Suppen, Eintöpfe & Currys",
-    "timeMinutes": 20,
-    "tags": [
-      "Vegetarisch",
-      "Asiatisch",
-      "Mittagsgericht",
-      "Abendgericht",
-      "Vegan",
-      "Mealprep-geeignet",
-      "Frühling",
-      "Herbst",
-      "Winter",
-      "Kinderfreundlich",
-      "Mittagessen",
-      "Abendessen",
-      "Budgetfreundlich",
-      "Resteverwertung",
-      "Thai",
-      "Für Gäste",
-      "Gut zum Mitnehmen"
-    ],
-    "ingredients": [
-      {
-        "name": "Kokosöl",
-        "amount": 1,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Schalotte",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Knoblauchzehen",
-        "amount": 1,
-        "unit": "Zehe",
-        "perPortions": 4
-      },
-      {
-        "name": "Zitronengras",
-        "amount": 2,
-        "unit": "Stängel",
-        "perPortions": 4
-      },
-      {
-        "name": "Rote Currypaste",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Gemüsebouillon",
-        "amount": 0.5,
-        "unit": "l",
-        "perPortions": 4
-      },
-      {
-        "name": "Kokosmilch",
-        "amount": 2.5,
-        "unit": "dl",
-        "perPortions": 4
-      },
-      {
-        "name": "Sojasauce",
-        "amount": 3,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Tofu nature",
-        "amount": 220,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Karotten",
-        "amount": 200,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Breite Reisnudeln",
-        "amount": 125,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Mungbohnensprossen",
-        "amount": 100,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Rote Chilis",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Limettenblätter",
-        "amount": 2,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Thai-Basilikum",
-        "amount": 0.5,
-        "unit": "Bund",
-        "perPortions": 4
-      },
-      {
-        "name": "Limetten",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 4
-      }
-    ],
-    "weatherType": "kalt",
-    "source": "MahlZyt",
-    "basePortions": 4,
-    "description": "Eine wohltuende asiatische Nudelsuppe mit zartem Tofu, kombiniert mit fernöstlichen Gewürzen, frischen Geschmacksnuancen und würziger Schärfe. Perfekt für eine schnelle und aromavolle Mahlzeit.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/1c475ced-8e43-4f74-9fd4-3e4d370886e1-1780954259698.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
-    "steps": [
-      "Schalotte würfeln, Knoblauchzehe und das Innere vom Zitronengras fein hacken. Tofu würfeln. Karotten in Streifen schneiden. Chili entkernen und in feine Ringe schneiden.",
-      "Kokosöl in einer Pfanne erwärmen und Schalotte, Knoblauch, Zitronengras, Kaffirlimettenblätter sowie Currypaste darin andämpfen.",
-      "Gemüsebouillon und Kokosmilch dazugiessen und aufkochen lassen.",
-      "Sojasauce, Karotten und Tofu in die Suppe geben, ca. 3 Minuten köcheln lassen.",
-      "Geraspelte oder in Stücken geschnittene Rüebli beigeben und etwa 3 Minuten köcheln lassen.",
-      "Reisnudeln nach Angabe auf der Verpackung kochen und in die Suppe geben.",
-      "Suppe mit Mungbohnensprossen, Chili, frischem Thai-Basilikum und einem Limettenschnitz garniert servieren."
-    ],
-    "dietCategory": "vegan",
-    "approved": true
-  },
-  {
-    "id": "rec-1780955620762-cmk4x",
-    "name": "Kürbis-Ingwer-Suppe",
-    "category": "Suppen, Eintöpfe & Currys",
-    "timeMinutes": 20,
-    "tags": [
-      "Vegetarisch",
-      "Vegan",
-      "Mealprep-geeignet",
-      "Kinderfreundlich",
-      "Herbst",
-      "Winter",
-      "Mittagsgericht",
-      "Abendgericht"
-    ],
-    "ingredients": [],
-    "weatherType": "kalt",
-    "source": "cuiseline",
-    "basePortions": 4,
-    "description": "",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/gro---sup-01-1-ku-rbis-kokos-suppe--1780955617506.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
-    "dietCategory": "vegan"
-  },
-  {
-    "id": "rec-1781043360228-i0pcq",
-    "name": "Eier in Senfsauce mit Blumenkohl-Kartoffel-Püree",
-    "category": "Vegetarische Hauptgerichte",
-    "timeMinutes": 40,
-    "tags": [
-      "Vegetarisch",
-      "Mittagsgericht",
-      "Abendgericht",
-      "Herbst",
-      "Frühling",
-      "Winter",
-      "Kinderfreundlich",
-      "Mealprep-geeignet",
-      "Mittagessen",
-      "Abendessen",
-      "Resteverwertung",
-      "Budgetfreundlich",
-      "Für Gäste",
-      "Gut zum Mitnehmen",
-      "Pfannengericht"
-    ],
-    "ingredients": [
-      {
-        "name": "Blumenkohl",
-        "amount": 500,
-        "unit": "g",
-        "perPortions": 2
-      },
-      {
-        "name": "Kartoffeln, mehligkochend",
-        "amount": 250,
-        "unit": "g",
-        "perPortions": 2
-      },
-      {
-        "name": "Butter",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 2
-      },
-      {
-        "name": "Vollkorn-Dinkelmehl",
-        "amount": 1,
-        "unit": "EL",
-        "perPortions": 2
-      },
-      {
-        "name": "Gemüsebouillon",
-        "amount": 125,
-        "unit": "ml",
-        "perPortions": 2
-      },
-      {
-        "name": "Milch",
-        "amount": 60,
-        "unit": "ml",
-        "perPortions": 2
-      },
-      {
-        "name": "Senf",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 2
-      },
-      {
-        "name": "Eier",
-        "amount": 4,
-        "unit": "Stk",
-        "perPortions": 2
-      },
-      {
-        "name": "Frischkäse",
-        "amount": 100,
-        "unit": "g",
-        "perPortions": 2
-      },
-      {
-        "name": "Salz",
-        "amount": 1,
-        "unit": "Prise",
-        "perPortions": 2
-      },
-      {
-        "name": "Pfeffer",
-        "amount": 1,
-        "unit": "Prise",
-        "perPortions": 2
-      },
-      {
-        "name": "Muskatnuss",
-        "amount": 1,
-        "unit": "TL",
-        "perPortions": 2
-      },
-      {
-        "name": "Petersilie",
-        "amount": 4,
-        "unit": "Stängel",
-        "perPortions": 2
-      }
-    ],
-    "weatherType": "neutral",
-    "source": "MahlZyt",
-    "basePortions": 2,
-    "description": "Ein cremiges, klassisches Gericht mit zartem Blumenkohl und hartgekochten Eiern in würziger Senfsauce, garniert mit frischer Petersilie.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/ei-06-1781043823176.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
-    "steps": [
-      "Blumenkohl rüsten, waschen und in kleine Röschen teilen. Kartoffeln schälen und in kleine Stücke schneiden.",
-      "Blumenkohl und Kartoffeln in ausreichend Wasser ca. 15–20 Minuten weich kochen.",
-      "Währenddessen Butter in einer Pfanne schmelzen. Mehl beigeben und kurz anschwitzen. Mit Bouillon und Milch ablöschen.",
-      "Senf einrühren und Sauce bei mittlerer Hitze ca. 10 Minuten köcheln lassen. Mit Salz und Pfeffer abschmecken.",
-      "Eier in kochendem Wasser ca. 8–9 Minuten hart kochen. Kalt abschrecken und schälen.",
-      "Blumenkohl und Kartoffeln abgiessen, gut ausdampfen lassen und pürieren.",
-      "Frischkäse unter das Püree rühren. Mit Salz, Pfeffer und Muskat abschmecken.",
-      "Petersilie waschen, trocken schütteln, Blätter abzupfen und fein hacken.",
-      "Blumenkohl-Kartoffel-Püree mit Senfsauce und Eiern anrichten. Mit Petersilie garnieren und servieren."
-    ],
-    "dietCategory": "vegetarian",
-    "approved": true
-  },
-  {
-    "id": "rec-1781388622099-a0uz6",
-    "name": "Tomaten-Mozzarella-Salat",
-    "category": "Salate & Bowls",
-    "timeMinutes": 10,
-    "tags": [
-      "Brunch",
-      "Mittagessen",
-      "Abendessen",
-      "Mealprep-geeignet",
-      "Kinderfreundlich",
-      "Resteverwertung",
-      "Budgetfreundlich",
-      "Für Gäste",
-      "Gut zum Mitnehmen",
-      "Ohne Kochen",
-      "Sommer",
-      "Italienisch",
-      "Mediterran"
-    ],
-    "ingredients": [
-      {
-        "name": "Tomaten (z.B. Ochsenherz)",
-        "amount": 4,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Mozzarella",
-        "amount": 2,
-        "unit": "Pkg",
-        "perPortions": 4
-      },
-      {
-        "name": "Olivenöl",
-        "amount": 4,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Balsamico-Essig",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Salz",
-        "amount": 1,
-        "unit": "Prise",
-        "perPortions": 4
-      },
-      {
-        "name": "Pfeffer",
-        "amount": 1,
-        "unit": "Prise",
-        "perPortions": 4
-      },
-      {
-        "name": "Basilikum",
-        "amount": 0.5,
-        "unit": "Bund",
-        "perPortions": 4
-      },
-      {
-        "name": "Brot",
-        "amount": 8,
-        "unit": "Scheibe",
-        "perPortions": 4
-      }
-    ],
-    "weatherType": "warm",
-    "source": "MahlZyt",
-    "basePortions": 4,
-    "description": "Insalata Caprese – sonnengereifte Tomaten, cremiger Mozzarella und frischer Basilikum: so einfach und fein schmeckt Sommer.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/bryony-elena-djgeisqeeiw-unsplash-1781388414561.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
-    "steps": [
-      "Tomaten und Mozzarella in Scheiben schneiden.",
-      "Tomaten- und Mozzarellascheiben abwechselnd auf Teller anrichten.",
-      "Mit Salz und Pfeffer würzen. Olivenöl und wenig Balsamico darüberträufeln.",
-      "Mit Basilikum garnieren und mit Brot servieren."
-    ],
-    "dietCategory": "vegetarian",
-    "approved": true
-  },
-  {
-    "id": "rec-1781389369119-naex6",
-    "name": "Tomatensalat mit Burrata",
-    "category": "Salate & Bowls",
-    "timeMinutes": 10,
-    "tags": [
-      "Brunch",
-      "Mittagessen",
-      "Abendessen",
-      "Mealprep-geeignet",
-      "Kinderfreundlich",
-      "Resteverwertung",
-      "Für Gäste",
-      "Gut zum Mitnehmen",
-      "Ohne Kochen",
-      "Sommer",
-      "Italienisch",
-      "Mediterran"
-    ],
-    "ingredients": [
-      {
-        "name": "Tomaten (z.B. Ochsenherz oder Datteltomaten)",
-        "amount": 800,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Burrata ",
-        "amount": 4,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Basilikumpesto",
-        "amount": 4,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Pinienkerne",
-        "amount": 4,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Basilikum",
-        "amount": 5,
-        "unit": "Bund",
-        "perPortions": 4
-      },
-      {
-        "name": "Brot",
-        "amount": 8,
-        "unit": "Scheibe",
-        "perPortions": 4
-      }
-    ],
-    "weatherType": "warm",
-    "source": "MahlZyt",
-    "basePortions": 4,
-    "description": "Sommer auf dem Teller: sonnengereifte Tomaten, cremige Burrata und frisches Pesto.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/sebastian-coman-photography-a8ztjz57rvm-unsplash-1781388927194.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
-    "steps": [
-      "Tomaten in Scheiben schneiden bzw. Datteltomaten halbieren.",
-      "Tomaten zusammen mit Burrata auf Tellern anrichten.",
-      "Pesto darüberträufeln. Mit Pinienkernen und Basilikumblättern garnieren.",
-      "Mit Brot servieren."
-    ],
-    "dietCategory": "vegetarian",
-    "approved": true
-  },
-  {
-    "id": "rec-1781389844282-5ken5",
-    "name": "Grillieren",
-    "category": "Fleisch & Geflügel",
-    "timeMinutes": 30,
-    "tags": [
-      "Mittagessen",
-      "Abendessen",
-      "Resteverwertung",
-      "Kinderfreundlich",
-      "Für Gäste",
-      "Grillgericht",
-      "Sommer"
-    ],
-    "ingredients": [],
-    "weatherType": "neutral",
-    "source": "MahlZyt",
-    "basePortions": 4,
-    "description": "",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/z-grills-australia-yzqd7lcwasq-unsplash-1781389837817.jpg",
-    "imageZutaten": null,
-    "imageKochen": null
-  },
-  {
-    "id": "rec-1781553804912-fj6k0",
-    "name": "Lauch-Kartoffel-Cremesuppe",
-    "category": "Suppen, Eintöpfe & Currys",
-    "timeMinutes": 25,
-    "activeTimeMinutes": 15,
-    "tags": [
-      "Abendessen",
-      "Mittagessen",
-      "Mealprep-geeignet",
-      "One-Pot-Gericht",
-      "Winter",
-      "Kinderfreundlich",
-      "Resteverwertung",
-      "Budgetfreundlich",
-      "Für Gäste",
-      "Gut zum Mitnehmen",
-      "Pfannengericht",
-      "Herbst",
-      "Frühling",
-      "Französisch",
-      "Einfrierbar"
-    ],
-    "ingredients": [
-      {
-        "name": "Cashewkerne",
-        "amount": 50,
-        "unit": "g",
-        "perPortions": 4
-      },
-      {
-        "name": "Zwiebel",
-        "amount": 1,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Kartoffeln",
-        "amount": 4,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Lauchstangen",
-        "amount": 2,
-        "unit": "Stk",
-        "perPortions": 4
-      },
-      {
-        "name": "Olivenöl",
-        "amount": 2,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Gemüsebouillon",
-        "amount": 1,
-        "unit": "l",
-        "perPortions": 4
-      },
-      {
-        "name": "Zitronensaft",
-        "amount": 1,
-        "unit": "EL",
-        "perPortions": 4
-      },
-      {
-        "name": "Salz",
-        "amount": 1,
-        "unit": "Prise",
-        "perPortions": 4
-      },
-      {
-        "name": "Muskatnuss",
-        "amount": 1,
-        "unit": "Prise",
-        "perPortions": 4
-      },
-      {
-        "name": "Petersilie",
-        "amount": 0.25,
-        "unit": "Bund",
-        "perPortions": 4
-      },
-      {
-        "name": "Brot",
-        "amount": 8,
-        "unit": "Scheibe",
-        "perPortions": 4
-      }
-    ],
-    "weatherType": "kalt",
-    "source": "MahlZyt",
-    "basePortions": 4,
-    "description": "Eine cremige Lauch-Kartoffel-Suppe mit Cashewkernen, Kartoffeln und feiner Muskatnussote – ein klassisches, schnell zubereitetes Wohlfühlgericht.",
-    "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/rec-1781553804912-fj6k0-1781555173511.jpg",
-    "imageZutaten": null,
-    "imageKochen": null,
-    "steps": [
-      "Cashewkerne ca. 20 Minuten in 1.5 dl Wasser einweichen.",
-      "Zwiebel und Kartoffeln schälen und würfeln.",
-      "Wurzelansatz und welkes Grün vom Lauch entfernen. Lauch längs halbieren, gründlich waschen und in feine Streifen schneiden.",
-      "Olivenöl in Pfanne erhitzen. Zwiebel, Kartoffeln und Lauch andünsten.",
-      "Mit Gemüsebouillon ablöschen und ca. 10–15 Minuten köcheln lassen, bis Kartoffeln weich sind.",
-      "Eingeweichte Cashewkerne fein pürieren.",
-      "Cashewcreme, Zitronensaft und Gewürze beigeben. Suppe fein pürieren und abschmecken.",
-      "Mit frischen Kräutern garnieren und mit Brot servieren."
-    ],
-    "dietCategory": "vegan",
-    "approved": true
   }
 ]

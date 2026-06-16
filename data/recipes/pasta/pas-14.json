@@ -4,30 +4,34 @@
   "category": "Pasta & Teigwaren",
   "timeMinutes": 30,
   "tags": [
-    "Sommer"
+    "Sommer",
+    "Mittagessen",
+    "Abendessen",
+    "Mealprep-geeignet",
+    "Kinderfreundlich",
+    "Resteverwertung",
+    "Budgetfreundlich",
+    "Für Gäste",
+    "Gut zum Mitnehmen",
+    "Pfannengericht",
+    "Italienisch"
   ],
   "weatherType": "warm",
   "source": "Cuiseline",
   "basePortions": 4,
   "dietCategory": "vegan",
-  "description": "Geröstete sardische Pasta mit Sommergemüse und Sojasauce.",
+  "description": "Traditionelle Fregola Sarda aus Sardinien trifft auf buntes Gemüse und feine Sojawürze – unkompliziert, aromatisch und voller Geschmack.",
   "ingredients": [
     {
-      "name": "Fregola Sarda",
-      "amount": 1,
-      "unit": "Packung",
-      "perPortions": 4
-    },
-    {
-      "name": "Zwiebel",
+      "name": "Grosse Zwiebel",
       "amount": 1,
       "unit": "Stk",
       "perPortions": 4
     },
     {
       "name": "Knoblauch",
-      "amount": 2,
-      "unit": "Zehen",
+      "amount": 1,
+      "unit": "Zehe",
       "perPortions": 4
     },
     {
@@ -43,45 +47,63 @@
       "perPortions": 4
     },
     {
-      "name": "Aubergine",
+      "name": "kleine Aubergine",
       "amount": 1,
       "unit": "Stk",
       "perPortions": 4
     },
     {
-      "name": "Tomaten",
-      "amount": 200,
-      "unit": "g",
+      "name": "Zucchetti",
+      "amount": 1,
+      "unit": "Stk",
       "perPortions": 4
     },
     {
-      "name": "Sojasauce",
-      "amount": 5,
+      "name": "Olivenöl",
+      "amount": 3,
       "unit": "EL",
       "perPortions": 4
     },
     {
-      "name": "Gemüsebrühe",
+      "name": "Sojasauce",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Fregola Sarda",
       "amount": 500,
-      "unit": "ml",
+      "unit": "g",
       "perPortions": 4
     },
     {
       "name": "Basilikum",
-      "amount": 0.5,
+      "amount": 0.25,
       "unit": "Bund",
       "perPortions": 4
     }
   ],
   "steps": [
-    "1. Olivenöl in Pfanne erhitzen, Zwiebel und Knoblauch anrösten.",
-    "2. Karotten und Peperoni dazugeben, bei mittlerer Hitze dünsten.",
-    "3. Aubergine und Tomaten beifügen.",
-    "4. Fregola Sarda nach Anleitung al dente kochen.",
-    "5. Gemüse mit Sojasauce würzen, mit Salz und Pfeffer abschmecken.",
-    "6. Gemüse und Fregola Sarda mischen. Mit frischem Basilikum garnieren."
+    "Zwiebel und Knoblauch fein schneiden. Karotte in dünne Scheiben schneiden. Peperoni, Aubergine und Zucchetti klein würfeln.",
+    "Reichlich Olivenöl in einer grossen Pfanne erhitzen. Zwiebel und Knoblauch beigeben und andämpfen.",
+    "Karotte, Peperoni, Aubergine und Zucchetti hinzufügen. Bei mittlerer Hitze unter gelegentlichem Rühren garen, bis Gemüse noch leicht bissfest ist.",
+    "Inzwischen Fregola Sarda nach Packungsangabe in Salzwasser al dente kochen.",
+    "Gemüse mit Sojasauce würzen. Mit Salz und Pfeffer abschmecken.",
+    "Fregola Sarda abgiessen, zum Gemüse geben und gut vermischen.",
+    "Mit Basilikum garnieren und servieren."
   ],
-  "tips": "",
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fregola-sarda-1--1780577458863.jpeg",
   "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---fregola-sarda-2--1780577468333.jpeg",
   "imageKochen": null,

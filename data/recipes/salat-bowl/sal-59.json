@@ -1,6 +1,6 @@
 {
   "id": "sal-59",
-  "name": "Zucchinisalat mit Makrele, Ei & Chili an Joghurt-Zitronen-Dressing",
+  "name": "Zucchinisalat mit Forelle, Ei & Chili an Joghurt-Zitronen-Dressing",
   "category": "Salate & Bowls",
   "timeMinutes": 15,
   "basePortions": 2,
@@ -8,7 +8,8 @@
     "Sommer",
     "Frühling",
     "Mittagessen",
-    "Abendessen"
+    "Abendessen",
+    "Mediterran"
   ],
   "ingredients": [
     {
@@ -42,7 +43,7 @@
       "perPortions": 2
     },
     {
-      "name": "Eier (Grösse M)",
+      "name": "Eier",
       "amount": 4,
       "unit": "Stk",
       "perPortions": 2
@@ -54,7 +55,7 @@
       "perPortions": 2
     },
     {
-      "name": "Makrelen aus der Dose",
+      "name": "Forelle aus der Dose",
       "amount": 2,
       "unit": "Stk",
       "perPortions": 2
@@ -79,22 +80,22 @@
     }
   ],
   "weatherType": "warm",
-  "source": "zu überarbeiten",
-  "description": "Ein leichter, sommerlicher Salat mit hauchdünnen Zucchinistreifen, herzhafter Makrele und gekochten Eiern in einem frischen Joghurt-Zitronen-Dressing. Schnell zubereitet und geschmacklich top!",
+  "source": "MahlZyt",
+  "description": "Ein leichter, sommerlicher Salat mit hauchdünnen Zucchinistreifen, herzhafter Forelle und gekochten Eiern in einem frischen Joghurt-Zitronen-Dressing. Schnell zubereitet und geschmacklich top!",
   "steps": [
-    "1. Einen grossen Topf mit Wasser füllen und zum Kochen bringen. Die Eier hineingeben und 7 Minuten lang kochen. Anschliessend unter kaltem Wasser abschrecken und beiseitelegen.",
-    "2. Die Makrelen aus der Dose nehmen und durch ein Sieb abtropfen lassen. Dabei etwa 1 EL vom Öl auffangen und aufbewahren.",
-    "3. Die Chili halbieren, entkernen und in feine Streifen schneiden. Petersilie fein hacken. Knoblauch schälen und halbieren.",
-    "4. Die Zucchini waschen, trocknen und die Enden abschneiden. Mit einem Sparschäler der Länge nach dünne Streifen abziehen.",
-    "5. In einer grossen Schüssel den Zitronensaft, Joghurt, 1 EL Makrelenöl, Salz und Pfeffer mit einem Schneebesen gut verrühren.",
-    "6. Die Zucchinistreifen zum Dressing geben und gründlich vermischen. Beiseite stellen.",
-    "7. Die Vollkornbrotscheiben toasten und mit der Schnittfläche der halbierten Knoblauchzehe einreiben.",
-    "8. Die Eier schälen und vierteln.",
-    "9. Zum Anrichten die Zucchinistreifen mit Dressing auf Tellern verteilen. Die Makrelen grob zerkleinern und darüber geben. Die Eierviertel dazulegen.",
-    "10. Mit Chili, Petersilie und etwas Pfeffer garnieren. Die Brotscheiben halbieren und am Tellerrand platzieren."
+    "Einen grossen Topf mit Wasser füllen und zum Kochen bringen. Die Eier hineingeben und 7 Minuten lang kochen. Anschliessend unter kaltem Wasser abschrecken und beiseitelegen.",
+    "Die Forellen aus der Dose nehmen und durch ein Sieb abtropfen lassen. Dabei etwa 1 EL vom Öl auffangen und aufbewahren.",
+    "Die Chili halbieren, entkernen und in feine Streifen schneiden. Petersilie fein hacken. Knoblauch schälen und halbieren.",
+    "Die Zucchini waschen, trocknen und die Enden abschneiden. Mit einem Sparschäler der Länge nach dünne Streifen abziehen.",
+    "In einer grossen Schüssel den Zitronensaft, Joghurt, 1 EL Forellenöl, Salz und Pfeffer mit einem Schneebesen gut verrühren.",
+    "Die Zucchinistreifen zum Dressing geben und gründlich vermischen. Beiseite stellen.",
+    "Die Vollkornbrotscheiben toasten und mit der Schnittfläche der halbierten Knoblauchzehe einreiben.",
+    "Die Eier schälen und vierteln.",
+    "Zum Anrichten die Zucchinistreifen mit Dressing auf Tellern verteilen. Die Forellen grob zerkleinern und darüber geben. Die Eierviertel dazulegen.",
+    "Mit Chili, Petersilie und etwas Pfeffer garnieren. Die Brotscheiben halbieren und am Tellerrand platzieren."
   ],
   "dietCategory": "fish",
-  "imageUrl": "https://herrbuettner.de/wp-content/uploads/2018/04/zucchini-salat-mit-makrele-ei-und-chili.jpg",
+  "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/sal-59-1781555263347.jpg",
   "imageZutaten": null,
   "imageKochen": null,
   "allergens": [
