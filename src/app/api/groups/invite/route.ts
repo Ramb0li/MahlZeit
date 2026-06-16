@@ -58,7 +58,7 @@ export async function POST(request: Request) {
     // Wenn die E-Mail bereits einem anderen Account zugeordnet ist → Konflikt
     const existing = await getUserByEmail(normalizedEmail);
     if (existing) {
-      return NextResponse.json({ error: 'Diese E-Mail hat bereits ein eigenes MahlZeit-Konto.' }, { status: 409 });
+      return NextResponse.json({ error: 'Diese E-Mail hat bereits ein eigenes MahlZyt-Konto.' }, { status: 409 });
     }
 
     // Invite anlegen + Email versenden

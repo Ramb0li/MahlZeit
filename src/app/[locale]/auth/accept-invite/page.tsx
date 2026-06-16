@@ -61,9 +61,9 @@ function AcceptInviteInner() {
 
       <div className="lp-login-card" style={{ maxWidth: 480 }}>
         <div className="lp-login-logo">
-          <Image src="/Logo-Mahlzeit.png" alt="MahlZeit" width={56} height={56} style={{ objectFit: 'contain' }} priority />
+          <Image src="/Logo-Mahlzeit.png" alt="MahlZyt" width={56} height={56} style={{ objectFit: 'contain' }} priority />
           <div className="lp-login-logo-text">
-            Mahl<span style={{ color: '#b5614a' }}>Zeit</span>
+            Mahl<span style={{ color: '#b5614a' }}>Zyt</span>
           </div>
           <div className="lp-login-logo-sub">Einladung annehmen</div>
         </div>

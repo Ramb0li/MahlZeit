@@ -74,12 +74,12 @@ export const DEFAULT_LANDING_CONTENT: LandingContent = {
       role: 'Mutter, Basel',
     },
     {
-      text: '«Ich esse seit MahlZeit viel abwechslungsreicher. Die Rezeptvorschläge passen wirklich zu mir — und alles ist vegan.»',
+      text: '«Ich esse seit MahlZyt viel abwechslungsreicher. Die Rezeptvorschläge passen wirklich zu mir — und alles ist vegan.»',
       name: 'Lukas B.',
       role: 'Student, Zürich',
     },
     {
-      text: '«Das UI ist aufgeräumt und es läuft. Ich habe viele Apps ausprobiert — MahlZeit ist die erste, die ich täglich nutze.»',
+      text: '«Das UI ist aufgeräumt und es läuft. Ich habe viele Apps ausprobiert — MahlZyt ist die erste, die ich täglich nutze.»',
       name: 'Mia K.',
       role: 'Grafikerin, Bern',
     },
@@ -88,7 +88,7 @@ export const DEFAULT_LANDING_CONTENT: LandingContent = {
     {
       n: '01',
       title: 'Smarte Vorschläge',
-      text: 'MahlZeit schlägt Gerichte vor, die zu deinen Vorlieben, der Saison und dem Wetter passen. Kein Kopfzerbrechen mehr.',
+      text: 'MahlZyt schlägt Gerichte vor, die zu deinen Vorlieben, der Saison und dem Wetter passen. Kein Kopfzerbrechen mehr.',
     },
     {
       n: '02',
@@ -137,7 +137,7 @@ export const DEFAULT_LANDING_CONTENT: LandingContent = {
     recipeCount:     '150+',
     recipeCountAuto: false,
     heroTitle:       'Deine Woche.\n*Dein* Essen.',
-    heroLead:        'MahlZeit erstellt deinen Wochenplan, schlägt Rezepte vor und schreibt automatisch deine Einkaufsliste. Alles verknüpft. Alles automatisiert.',
+    heroLead:        'MahlZyt erstellt deinen Wochenplan, schlägt Rezepte vor und schreibt automatisch deine Einkaufsliste. Alles verknüpft. Alles automatisiert.',
     eyebrowFeatures: 'Was dich erwartet',
     eyebrowWeek:     'Wochenplan',
     eyebrowRecipes:  'Rezepte die passen',

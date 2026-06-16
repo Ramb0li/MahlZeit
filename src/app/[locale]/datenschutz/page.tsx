@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import { LegalShell } from '@/components/landing/LegalShell';
 
 export const metadata: Metadata = {
-  title: 'Datenschutzerklärung · MahlZeit',
-  description: 'Wie MahlZeit personenbezogene Daten erhebt, verarbeitet und schützt (revDSG & DSGVO).',
+  title: 'Datenschutzerklärung · MahlZyt',
+  description: 'Wie MahlZyt personenbezogene Daten erhebt, verarbeitet und schützt (revDSG & DSGVO).',
 };
 
 /*
@@ -22,7 +22,7 @@ export default function DatenschutzPage() {
       <h2>1. Verantwortlicher</h2>
       <p>
         Verantwortlich für die Datenbearbeitung ist:<br />
-        MahlZeit · [O. und C. von Kaenel], Luzernerstrasse 59d, 6030 Ebikon, Schweiz<br />
+        MahlZyt · [O. und C. von Kaenel], Luzernerstrasse 59d, 6030 Ebikon, Schweiz<br />
         E-Mail: <a href="mailto:info@o-v-k.ch">info@o-v-k.ch</a>
       </p>
 
@@ -48,7 +48,7 @@ export default function DatenschutzPage() {
       <p>Nach revDSG stützen wir die Bearbeitung auf die Vertragserfüllung, dein Einverständnis sowie überwiegende berechtigte Interessen.</p>
 
       <h2>4. Auftragsverarbeiter und Drittanbieter</h2>
-      <p>Zum Betrieb von MahlZeit setzen wir sorgfältig ausgewählte Dienstleister ein, die Daten nur in unserem Auftrag bearbeiten:</p>
+      <p>Zum Betrieb von MahlZyt setzen wir sorgfältig ausgewählte Dienstleister ein, die Daten nur in unserem Auftrag bearbeiten:</p>
       <table>
         <thead>
           <tr><th>Dienst</th><th>Zweck</th></tr>
@@ -78,7 +78,7 @@ export default function DatenschutzPage() {
 
       <h2>6. Cookies</h2>
       <p>
-        MahlZeit verwendet ausschliesslich einen technisch notwendigen Cookie (<code>mz_token</code>),
+        MahlZyt verwendet ausschliesslich einen technisch notwendigen Cookie (<code>mz_token</code>),
         der deine Anmeldung speichert (HTTP-only). Es werden <strong>keine</strong> Tracking-,
         Analyse- oder Werbe-Cookies eingesetzt. Daher ist kein Cookie-Banner erforderlich.
       </p>

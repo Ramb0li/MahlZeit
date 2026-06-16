@@ -2,19 +2,19 @@ import type { Metadata } from 'next';
 import { LegalShell } from '@/components/landing/LegalShell';
 
 export const metadata: Metadata = {
-  title: 'Nutzungsbedingungen · MahlZeit',
-  description: 'Allgemeine Geschäfts- und Nutzungsbedingungen (AGB) von MahlZeit.',
+  title: 'Nutzungsbedingungen · MahlZyt',
+  description: 'Allgemeine Geschäfts- und Nutzungsbedingungen (AGB) von MahlZyt.',
 };
 
 export default function NutzungsbedingungenPage() {
   return (
     <LegalShell>
       <h1>Nutzungsbedingungen</h1>
-      <p className="mz-legal-sub">Allgemeine Geschäftsbedingungen (AGB) für die Nutzung von MahlZeit.</p>
+      <p className="mz-legal-sub">Allgemeine Geschäftsbedingungen (AGB) für die Nutzung von MahlZyt.</p>
 
       <h2>1. Geltungsbereich</h2>
       <p>
-        Diese Nutzungsbedingungen regeln das Verhältnis zwischen dem Betreiber von MahlZeit
+        Diese Nutzungsbedingungen regeln das Verhältnis zwischen dem Betreiber von MahlZyt
         («wir», «uns») und den Nutzerinnen und Nutzern («du») der Anwendung unter
         <a href="https://mahlzeit.o-v-k.ch"> mahlzeit.o-v-k.ch</a>. Mit der Registrierung oder Nutzung
         akzeptierst du diese Bedingungen.
@@ -22,7 +22,7 @@ export default function NutzungsbedingungenPage() {
 
       <h2>2. Leistungsbeschreibung</h2>
       <p>
-        MahlZeit ist ein digitaler Menüplaner mit Wochenplanung, Rezeptverwaltung,
+        MahlZyt ist ein digitaler Menüplaner mit Wochenplanung, Rezeptverwaltung,
         KI-gestütztem Rezeptimport, automatischer Einkaufsliste und Haushaltsteilen.
         Der Funktionsumfang kann laufend weiterentwickelt werden.
       </p>
@@ -70,7 +70,7 @@ export default function NutzungsbedingungenPage() {
         Rezepte, Mengen-, Nährwert- und Allergenangaben sowie KI-generierte Vorschläge dienen
         ausschliesslich der Inspiration. Wir übernehmen <strong>keine Gewähr</strong> für
         deren Richtigkeit oder Vollständigkeit. Prüfe Angaben bei Allergien oder gesundheitlichen
-        Einschränkungen stets eigenverantwortlich. MahlZeit ersetzt keine ernährungsmedizinische Beratung.
+        Einschränkungen stets eigenverantwortlich. MahlZyt ersetzt keine ernährungsmedizinische Beratung.
       </p>
 
       <h2>9. Haftung</h2>

@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import { LegalShell } from '@/components/landing/LegalShell';
 
 export const metadata: Metadata = {
-  title: 'Impressum · MahlZeit',
-  description: 'Impressum und Anbieterkennzeichnung von MahlZeit.',
+  title: 'Impressum · MahlZyt',
+  description: 'Impressum und Anbieterkennzeichnung von MahlZyt.',
 };
 
 /*
@@ -21,15 +21,15 @@ export default function ImpressumPage() {
 
       <h2>Anbieter</h2>
       <p>
-        MahlZeit<br />
+        MahlZyt<br />
         [O. und C. von Kaenel]<br />
         Luzernerstrasse 59d
         6030 Ebikon, Schweiz<br />
         E-Mail: <a href="mailto:info@o-v-k.ch">info@o-v-k.ch</a><br />
-        Web: <a href="https://mahlzeit.o-v-k.ch">mahlzeit.o-v-k.ch</a>
+        Web: <a href="https://www.mahlzyt.app">www.mahlzyt.app</a>
       </p>
       <p>
-        MahlZeit ist ein privat betriebenes Angebot zur Menüplanung. Eine Eintragung im
+        MahlZyt ist ein privat betriebenes Angebot zur Menüplanung. Eine Eintragung im
         Handelsregister besteht nicht.
       </p>
 

@@ -20,9 +20,9 @@ export default async function NotFound() {
       }}
     >
       <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, textDecoration: 'none' }}>
-        <Image src="/Logo-Mahlzeit.png" alt="MahlZeit" width={36} height={36} style={{ objectFit: 'contain' }} />
+        <Image src="/Logo-Mahlzeit.png" alt="MahlZyt" width={36} height={36} style={{ objectFit: 'contain' }} />
         <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 22, letterSpacing: '-0.03em', color: 'var(--ink)' }}>
-          Mahl<span style={{ color: 'var(--accent)' }}>Zeit</span>
+          Mahl<span style={{ color: 'var(--accent)' }}>Zyt</span>
         </span>
       </Link>
 

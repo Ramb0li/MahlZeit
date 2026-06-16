@@ -13,7 +13,7 @@ export function Wordmark({ size = 22, light = false, showMark = true }: Wordmark
       {showMark && (
         <Image
           src="/Logo-Mahlzeit.png"
-          alt="MahlZeit"
+          alt="MahlZyt"
           width={Math.round(size * 1.4)}
           height={Math.round(size * 1.4)}
           style={{ objectFit: 'contain', flexShrink: 0 }}
@@ -27,7 +27,7 @@ export function Wordmark({ size = 22, light = false, showMark = true }: Wordmark
         lineHeight: 1,
         color: ink,
       }}>
-        Mahl<span style={{ color: 'var(--accent)' }}>Zeit</span>
+        Mahl<span style={{ color: 'var(--accent)' }}>Zyt</span>
       </span>
     </span>
   );

@@ -7,7 +7,7 @@
  * Erforderliche Env-Vars (Produktion):
  *  - RESEND_API_KEY     — API-Schlüssel von resend.com
  *  - APP_URL            — z.B. https://app.mahlzeitplaner.ch
- *  - FROM_EMAIL         — z.B. "MahlZeit <noreply@mahlzeitplaner.ch>" (Domain muss bei Resend verifiziert sein)
+ *  - FROM_EMAIL         — z.B. "MahlZyt <noreply@mahlzeitplaner.ch>" (Domain muss bei Resend verifiziert sein)
  */
 
 import type { AppUser } from './users';
@@ -22,7 +22,7 @@ export function getAppUrl(): string {
 }
 
 function getFromEmail(): string {
-  return process.env.FROM_EMAIL || 'MahlZeit <onboarding@resend.dev>';
+  return process.env.FROM_EMAIL || 'MahlZyt <onboarding@resend.dev>';
 }
 
 // ─── HTML + Plain-Text Templates ─────────────────────────────────────────────
@@ -43,7 +43,7 @@ function mzEmailShell(bodyContent: string): string {
       </td></tr>
       <!-- Footer -->
       <tr><td style="background:#f0ebe3;padding:16px 32px;text-align:center;">
-        <p style="margin:0;font-size:12px;color:#9a8c80;">MahlZeit &middot; Wochenplaner für Familien &middot; <a href="mailto:info@o-v-k.ch" style="color:#9a8c80;text-decoration:none;">info@o-v-k.ch</a></p>
+        <p style="margin:0;font-size:12px;color:#9a8c80;">MahlZyt &middot; Wochenplaner für Familien &middot; <a href="mailto:info@o-v-k.ch" style="color:#9a8c80;text-decoration:none;">info@o-v-k.ch</a></p>
       </td></tr>
     </table>
   </td></tr>
@@ -55,7 +55,7 @@ function htmlBody(firstName: string, confirmUrl: string): string {
   return mzEmailShell(`
     <p style="font-size:16px;font-weight:600;color:#271f1a;margin:0 0 8px;">Hallo ${escapeHtml(firstName)},</p>
     <p style="font-size:15px;line-height:1.65;color:#5c5048;margin:0 0 20px;">
-      schön, dass du dich für <strong style="color:#271f1a;">MahlZeit</strong> angemeldet hast —
+      schön, dass du dich für <strong style="color:#271f1a;">MahlZyt</strong> angemeldet hast —
       den Wochen-Menüplaner, der euch Zeit, Geld und das tägliche
       «Was koche ich heute?» abnimmt.
     </p>
@@ -81,7 +81,7 @@ function htmlBody(firstName: string, confirmUrl: string): string {
 function textBody(firstName: string, confirmUrl: string): string {
   return `Hallo ${firstName},
 
-schön, dass du dich für MahlZeit angemeldet hast.
+schön, dass du dich für MahlZyt angemeldet hast.
 
 Bitte bestätige deine E-Mail-Adresse mit einem Klick auf den folgenden Link:
 
@@ -89,11 +89,11 @@ ${confirmUrl}
 
 Der Link ist 24 Stunden gültig.
 
-Falls du dich nicht bei MahlZeit angemeldet hast, ignoriere diese E-Mail —
+Falls du dich nicht bei MahlZyt angemeldet hast, ignoriere diese E-Mail —
 ohne Bestätigung wird der Account nach 24 Stunden automatisch gelöscht.
 
 Herzliche Grüsse
-Oliver · MahlZeit`;
+Oliver · MahlZyt`;
 }
 
 function escapeHtml(s: string): string {
@@ -115,7 +115,7 @@ function inviteHtml(groupName: string, inviterName: string, acceptUrl: string): 
     <p style="font-size:15px;line-height:1.65;color:#5c5048;margin:0 0 20px;">
       <strong style="color:#271f1a;">${escapeHtml(inviterName)}</strong> hat dich zur Gruppe
       <strong style="color:#271f1a;">${escapeHtml(groupName)}</strong> auf
-      <strong style="color:#271f1a;">MahlZeit</strong> eingeladen — dem Wochen-Menüplaner für Familien.
+      <strong style="color:#271f1a;">MahlZyt</strong> eingeladen — dem Wochen-Menüplaner für Familien.
     </p>
     <p style="font-size:15px;line-height:1.65;color:#5c5048;margin:0 0 28px;">
       Klicke auf den Button, um beizutreten. Beim ersten Login wirst du nach Name und Passwort gefragt.
@@ -139,9 +139,9 @@ function inviteHtml(groupName: string, inviterName: string, acceptUrl: string): 
 function inviteText(groupName: string, inviterName: string, acceptUrl: string): string {
   return `Hallo,
 
-${inviterName} hat dich zur Gruppe "${groupName}" auf MahlZeit eingeladen.
+${inviterName} hat dich zur Gruppe "${groupName}" auf MahlZyt eingeladen.
 
-MahlZeit ist ein Wochen-Menüplaner für Familien. Klicke auf den Link, um beizutreten:
+MahlZyt ist ein Wochen-Menüplaner für Familien. Klicke auf den Link, um beizutreten:
 
 ${acceptUrl}
 
@@ -150,7 +150,7 @@ Der Link ist 7 Tage gültig.
 Falls du den Absender nicht kennst, ignoriere diese E-Mail einfach.
 
 Herzliche Grüsse
-Das MahlZeit-Team`;
+Das MahlZyt-Team`;
 }
 
 export async function sendInviteEmail(
@@ -175,7 +175,7 @@ export async function sendInviteEmail(
   const { error } = await resend.emails.send({
     from:    getFromEmail(),
     to:      toEmail,
-    subject: `${inviterName} hat dich zu "${groupName}" eingeladen — MahlZeit`,
+    subject: `${inviterName} hat dich zu "${groupName}" eingeladen — MahlZyt`,
     html:    inviteHtml(groupName, inviterName, acceptUrl),
     text:    inviteText(groupName, inviterName, acceptUrl),
   });
@@ -192,7 +192,7 @@ function resetHtml(firstName: string, resetUrl: string): string {
   return mzEmailShell(`
     <p style="font-size:16px;font-weight:600;color:#271f1a;margin:0 0 8px;">Hallo ${escapeHtml(firstName)},</p>
     <p style="font-size:15px;line-height:1.65;color:#5c5048;margin:0 0 28px;">
-      wir haben eine Anfrage erhalten, das Passwort für deinen MahlZeit-Account zurückzusetzen.
+      wir haben eine Anfrage erhalten, das Passwort für deinen MahlZyt-Account zurückzusetzen.
       Klicke auf den Button, um ein neues Passwort festzulegen:
     </p>
     <div style="text-align:center;margin:0 0 28px;">
@@ -214,7 +214,7 @@ function resetHtml(firstName: string, resetUrl: string): string {
 function resetText(firstName: string, resetUrl: string): string {
   return `Hallo ${firstName},
 
-wir haben eine Anfrage erhalten, das Passwort für deinen MahlZeit-Account zurückzusetzen.
+wir haben eine Anfrage erhalten, das Passwort für deinen MahlZyt-Account zurückzusetzen.
 
 Klicke auf den folgenden Link, um ein neues Passwort festzulegen:
 
@@ -226,7 +226,7 @@ Falls du kein Passwort-Reset angefordert hast, ignoriere diese E-Mail einfach.
 Dein Passwort bleibt unverändert.
 
 Herzliche Grüsse
-Das MahlZeit-Team`;
+Das MahlZyt-Team`;
 }
 
 export async function sendPasswordResetEmail(
@@ -250,7 +250,7 @@ export async function sendPasswordResetEmail(
   const { error } = await resend.emails.send({
     from:    getFromEmail(),
     to:      toEmail,
-    subject: 'Dein MahlZeit-Passwort zurücksetzen',
+    subject: 'Dein MahlZyt-Passwort zurücksetzen',
     html:    resetHtml(firstName, resetUrl),
     text:    resetText(firstName, resetUrl),
   });
@@ -267,7 +267,7 @@ function setupHtml(firstName: string, setupUrl: string): string {
   return mzEmailShell(`
     <p style="font-size:16px;font-weight:600;color:#271f1a;margin:0 0 8px;">Hallo ${escapeHtml(firstName)},</p>
     <p style="font-size:15px;line-height:1.65;color:#5c5048;margin:0 0 8px;">
-      <strong style="color:#4a7a4e;">Zahlung erfolgreich!</strong> Danke für dein Vertrauen in MahlZeit.
+      <strong style="color:#4a7a4e;">Zahlung erfolgreich!</strong> Danke für dein Vertrauen in MahlZyt.
     </p>
     <p style="font-size:15px;line-height:1.65;color:#5c5048;margin:0 0 28px;">
       Klicke auf den Button, um dein Passwort festzulegen und direkt loszulegen:
@@ -291,7 +291,7 @@ function setupHtml(firstName: string, setupUrl: string): string {
 function setupText(firstName: string, setupUrl: string): string {
   return `Hallo ${firstName},
 
-Zahlung erfolgreich! Danke für dein Vertrauen in MahlZeit.
+Zahlung erfolgreich! Danke für dein Vertrauen in MahlZyt.
 
 Klicke auf den folgenden Link, um dein Passwort festzulegen und direkt loszulegen:
 
@@ -300,7 +300,7 @@ ${setupUrl}
 Der Link ist 24 Stunden gültig.
 
 Herzliche Grüsse
-Das MahlZeit-Team`;
+Das MahlZyt-Team`;
 }
 
 export async function sendAccountSetupEmail(
@@ -322,7 +322,7 @@ export async function sendAccountSetupEmail(
   const { error } = await resend.emails.send({
     from:    getFromEmail(),
     to:      toEmail,
-    subject: 'Dein MahlZeit-Konto ist bereit — Passwort festlegen',
+    subject: 'Dein MahlZyt-Konto ist bereit — Passwort festlegen',
     html:    setupHtml(firstName, setupUrl),
     text:    setupText(firstName, setupUrl),
   });
@@ -340,7 +340,7 @@ function orphanedHtml(firstName: string, groupName: string, appUrl: string): str
     <p style="font-size:16px;font-weight:600;color:#271f1a;margin:0 0 8px;">Hallo ${escapeHtml(firstName)},</p>
     <p style="font-size:15px;line-height:1.65;color:#5c5048;margin:0 0 20px;">
       der Besitzer deiner Gruppe <strong style="color:#271f1a;">${escapeHtml(groupName)}</strong> hat
-      sein MahlZeit-Konto gelöscht. Deine Rezepte und Pläne bleiben erhalten, die Premium-Funktionen
+      sein MahlZyt-Konto gelöscht. Deine Rezepte und Pläne bleiben erhalten, die Premium-Funktionen
       (Menüvorschlag, Rezeptbibliothek, KI-Import) sind jedoch gesperrt.
     </p>
     <p style="font-size:15px;line-height:1.65;color:#5c5048;margin:0 0 28px;">
@@ -361,7 +361,7 @@ function orphanedHtml(firstName: string, groupName: string, appUrl: string): str
 function orphanedText(firstName: string, groupName: string, appUrl: string): string {
   return `Hallo ${firstName},
 
-der Besitzer deiner Gruppe "${groupName}" hat sein MahlZeit-Konto gelöscht.
+der Besitzer deiner Gruppe "${groupName}" hat sein MahlZyt-Konto gelöscht.
 
 Deine Rezepte und Pläne bleiben erhalten, die Premium-Funktionen (Menüvorschlag,
 Rezeptbibliothek, KI-Import) sind jedoch gesperrt.
@@ -373,7 +373,7 @@ Jetzt Abo abschliessen (ab CHF 4.–/Monat, jederzeit kündbar):
 ${appUrl}/app?tab=settings
 
 Herzliche Grüsse
-Das MahlZeit-Team`;
+Das MahlZyt-Team`;
 }
 
 export async function sendGroupOrphanedEmail(
@@ -395,7 +395,7 @@ export async function sendGroupOrphanedEmail(
   const { error } = await resend.emails.send({
     from:    getFromEmail(),
     to:      toEmail,
-    subject: `Wichtig: Deine MahlZeit-Gruppe "${groupName}" braucht ein Abo`,
+    subject: `Wichtig: Deine MahlZyt-Gruppe "${groupName}" braucht ein Abo`,
     html:    orphanedHtml(firstName, groupName, appUrl),
     text:    orphanedText(firstName, groupName, appUrl),
   });
@@ -426,7 +426,7 @@ export async function sendConfirmationEmail(user: AppUser, token: string): Promi
   const { error } = await resend.emails.send({
     from:    getFromEmail(),
     to:      user.email,
-    subject: 'Willkommen bei MahlZeit — bitte bestätige deine E-Mail',
+    subject: 'Willkommen bei MahlZyt — bitte bestätige deine E-Mail',
     html:    htmlBody(user.firstName, confirmUrl),
     text:    textBody(user.firstName, confirmUrl),
   });

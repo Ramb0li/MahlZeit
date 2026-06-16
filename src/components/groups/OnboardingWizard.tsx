@@ -207,7 +207,7 @@ export function OnboardingWizard({ currentGroupName, currentSettings, onComplete
           {/* Welcome text */}
           <h1 className="text-4xl font-black leading-tight mb-3" style={{ color: '#fff' }}>Willkommen.</h1>
           <p className="text-sm leading-relaxed" style={{ color: '#9a8c80' }}>
-            In sechs Schritten zu deinem persönlichen Menüplaner — danach plant MahlZeit deine Woche fast von allein.
+            In sechs Schritten zu deinem persönlichen Menüplaner — danach plant MahlZyt deine Woche fast von allein.
           </p>
 
           {/* Progress dots */}

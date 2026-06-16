@@ -25,7 +25,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'MahlZeit — Familienmenüplaner',
+  title: 'MahlZyt — Familienmenüplaner',
   description: 'Wöchentlicher Familienmenüplaner für die Schweiz',
   manifest: '/manifest.json',
 };
@@ -56,7 +56,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         {/* PWA / Add to Home Screen */}
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-title" content="MahlZeit" />
+        <meta name="apple-mobile-web-app-title" content="MahlZyt" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="mobile-web-app-capable" content="yes" />
         {/* Synchrones Theme-Init vor React-Hydration, verhindert FOUC */}

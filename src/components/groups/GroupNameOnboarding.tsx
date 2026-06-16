@@ -48,7 +48,7 @@ export function GroupNameOnboarding({ currentName, onSaved }: Props) {
               <Users size={20} style={{ color: '#fff' }} />
             </div>
             <div>
-              <h2 className="text-lg font-bold text-white">Willkommen bei MahlZeit!</h2>
+              <h2 className="text-lg font-bold text-white">Willkommen bei MahlZyt!</h2>
               <p className="text-xs" style={{ color: '#c8e0c8' }}>Letzter Schritt vor dem Start</p>
             </div>
           </div>

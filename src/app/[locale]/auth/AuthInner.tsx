@@ -218,9 +218,9 @@ function AuthInnerContent({ cmsPlans }: { cmsPlans: LandingPlan[] }) {
 
         {/* Logo */}
         <div className="mz-auth-logo">
-          <Image src="/Logo-Mahlzeit.png" alt="MahlZeit" width={52} height={52} style={{ objectFit: 'contain' }} priority />
+          <Image src="/Logo-Mahlzeit.png" alt="MahlZyt" width={52} height={52} style={{ objectFit: 'contain' }} priority />
           <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 22, letterSpacing: '-0.03em', color: 'var(--ink)' }}>
-            Mahl<span style={{ color: 'var(--accent)' }}>Zeit</span>
+            Mahl<span style={{ color: 'var(--accent)' }}>Zyt</span>
           </span>
           <span className="mz-auth-logo-sub">Familienmenüplaner</span>
         </div>

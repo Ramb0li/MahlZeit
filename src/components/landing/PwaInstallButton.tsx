@@ -113,9 +113,9 @@ export function PwaInstallButton() {
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 20 }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/icon-192.png" alt="MahlZeit" width={44} height={44} style={{ borderRadius: 10 }} />
+                <img src="/icon-192.png" alt="MahlZyt" width={44} height={44} style={{ borderRadius: 10 }} />
                 <div>
-                  <p style={{ fontWeight: 700, fontSize: 16, color: 'var(--ink)', margin: 0 }}>MahlZeit installieren</p>
+                  <p style={{ fontWeight: 700, fontSize: 16, color: 'var(--ink)', margin: 0 }}>MahlZyt installieren</p>
                   <p style={{ fontSize: 12, color: 'var(--muted)', margin: 0 }}>mahlzeit.o-v-k.ch</p>
                 </div>
               </div>

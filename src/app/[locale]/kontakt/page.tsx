@@ -3,8 +3,8 @@ import { Link } from '@/i18n/navigation';
 import { LegalShell } from '@/components/landing/LegalShell';
 
 export const metadata: Metadata = {
-  title: 'Kontakt · MahlZeit',
-  description: 'Nimm Kontakt mit dem MahlZeit-Team auf.',
+  title: 'Kontakt · MahlZyt',
+  description: 'Nimm Kontakt mit dem MahlZyt-Team auf.',
 };
 
 export default function KontaktPage() {
@@ -19,7 +19,7 @@ export default function KontaktPage() {
         <a href="mailto:info@o-v-k.ch">info@o-v-k.ch</a>
       </p>
       <p>
-        MahlZeit wird mit viel Sorgfalt in Luzern, Schweiz entwickelt. Wir bemühen uns, Anfragen
+        MahlZyt wird mit viel Sorgfalt in Luzern, Schweiz entwickelt. Wir bemühen uns, Anfragen
         innerhalb weniger Werktage zu beantworten.
       </p>
 

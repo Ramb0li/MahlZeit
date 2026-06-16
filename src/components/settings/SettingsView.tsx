@@ -826,7 +826,7 @@ export function SettingsView({
       </Section>
 
       {/* ── Weather ──────────────────────────────────────────────────────── */}
-      <Section id="weather" title="Standort und Wetter" sub="MahlZeit schlägt bei warmem Wetter leichte Gerichte vor — bei Kälte Wärmendes.">
+      <Section id="weather" title="Standort und Wetter" sub="MahlZyt schlägt bei warmem Wetter leichte Gerichte vor — bei Kälte Wärmendes.">
         <div>
           <label style={labelStyle}>Standort</label>
           <div ref={locationWrapperRef} style={{ position: 'relative' }}>
@@ -974,7 +974,7 @@ export function SettingsView({
         <p className="text-xs mb-4" style={{ color: '#9c8c84' }}>
           {isPremium
             ? userPlan === 'lifetime'
-              ? 'Danke — du hast lebenslangen Zugang zu MahlZeit.'
+              ? 'Danke — du hast lebenslangen Zugang zu MahlZyt.'
               : 'Dein Abo ist aktiv.'
             : 'Kostenlose Testphase — upgrade für unbegrenzten Zugang.'
           }

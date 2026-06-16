@@ -1365,7 +1365,7 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
         {activeTab === 'howto' && (
           <div style={{ maxWidth: 760 }}>
             <div style={{ borderRadius: 'var(--r-card)', border: '1px solid var(--border)', background: 'var(--card)', padding: '32px 40px', boxShadow: 'var(--shadow-sm)', lineHeight: 1.7 }}>
-              <h1 style={{ fontWeight: 800, fontSize: 22, color: 'var(--ink)', marginBottom: 4 }}>MahlZeit — Rezeptverwaltung</h1>
+              <h1 style={{ fontWeight: 800, fontSize: 22, color: 'var(--ink)', marginBottom: 4 }}>MahlZyt — Rezeptverwaltung</h1>
               <p style={{ color: 'var(--muted)', fontSize: 13, marginBottom: 28 }}>Admin-Panel How-To · <strong>mahlzeit.o-v-k.ch/admin</strong></p>
 
               {[

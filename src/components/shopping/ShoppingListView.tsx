@@ -443,7 +443,7 @@ export function ShoppingListView() {
     doc.setFont('helvetica', 'bold');
     doc.setFontSize(16);
     doc.setTextColor(...C.ink);
-    doc.text('MahlZeit', m, 13);
+    doc.text('MahlZyt', m, 13);
 
     doc.setFont('helvetica', 'normal');
     doc.setFontSize(6.5);

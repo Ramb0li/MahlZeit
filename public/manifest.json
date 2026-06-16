@@ -1,7 +1,7 @@
 {
   "id": "/",
-  "name": "MahlZeit — Familienmenüplaner",
-  "short_name": "MahlZeit",
+  "name": "MahlZyt — Familienmenüplaner",
+  "short_name": "MahlZyt",
   "description": "Wöchentlicher Familienmenüplaner für die Schweiz",
   "start_url": "/de/app",
   "scope": "/",

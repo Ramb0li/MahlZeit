@@ -211,7 +211,7 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe, onOp
     doc.setFont('helvetica', 'bold');
     doc.setFontSize(16);
     doc.setTextColor(...C.ink);
-    doc.text('MahlZeit', margin, 11);
+    doc.text('MahlZyt', margin, 11);
 
     const pdfAdults   = settings.household.adults;
     const pdfChildren = settings.household.children.length;
@@ -478,7 +478,7 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe, onOp
     <div className="mz-planner">
       <div className="mz-plbar">
         <div className="mz-plbar-l">
-          {/* MahlZeit wordmark + subtitle */}
+          {/* MahlZyt wordmark + subtitle */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
             <div style={{ display: 'flex', alignItems: 'baseline', gap: 8 }}>
               <span style={{ fontSize: 18, fontWeight: 900, letterSpacing: '-0.03em', color: '#271f1a' }}>
