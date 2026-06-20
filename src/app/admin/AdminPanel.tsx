@@ -748,6 +748,30 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                           >
                             {r.approved === true ? 'Freigegeben' : 'Entwurf'}
                           </button>
+                          <button
+                            disabled={togglingId === r.id}
+                            onClick={async () => {
+                              if (togglingId) return;
+                              const next = r.suggestionEnabled === false ? undefined : false;
+                              setTogglingId(r.id);
+                              setRecipes(prev => prev.map(x => x.id === r.id ? { ...x, suggestionEnabled: next } : x));
+                              const res = await fetch('/api/admin/recipes', {
+                                method: 'PUT',
+                                headers: { 'Content-Type': 'application/json' },
+                                body: JSON.stringify({ ...r, suggestionEnabled: next }),
+                              });
+                              if (!res.ok) setRecipes(prev => prev.map(x => x.id === r.id ? { ...x, suggestionEnabled: r.suggestionEnabled } : x));
+                              setTogglingId(null);
+                            }}
+                            style={{
+                              marginLeft: 4, padding: '3px 10px', borderRadius: 999, fontSize: 11, fontWeight: 700, cursor: togglingId === r.id ? 'wait' : 'pointer', border: 'none',
+                              background: r.suggestionEnabled === false ? '#fce4dc' : '#e8f5e9',
+                              color:      r.suggestionEnabled === false ? '#b71c1c' : '#1b5e20',
+                              opacity: togglingId === r.id ? 0.6 : 1,
+                            }}
+                          >
+                            {r.suggestionEnabled === false ? 'Kein Vorschlag' : 'Vorschlag aktiv'}
+                          </button>
                         </td>
                         <td style={{ padding: '10px 16px' }}>
                           <div style={{ display: 'flex', gap: 6 }}>

@@ -122,6 +122,7 @@ export function suggestRecipe(
   const excluded = options.allergiesAndAversions ?? [];
   const c = options.constraint;
   const available = recipes.filter((r) => {
+    if (r.suggestionEnabled === false) return false;
     if (options.excludeIds?.includes(r.id)) return false;
     if (c?.constraint === 'leftovers') return false;
     // Hard-Filter: maxTime → nur Gerichte innerhalb des Zeitlimits
@@ -263,10 +264,12 @@ export function suggestWeek(
         const isFavDay = favoriteDayIndex === day && favDinnerPool.length > 0;
         const favFiltered = isFavDay ? favDinnerPool.filter(r => basePool.some(b => b.id === r.id)) : [];
         const dinnerPool = favFiltered.length > 0 ? favFiltered : basePool;
-        const dinner = suggestRecipe(dinnerPool, {
-          weatherType, season, constraint: dinnerConstraint, usedThisWeek: usedIds,
-          allergiesAndAversions, carbCounts, pantryIngredients, promotions,
-        });
+        const sharedOpts = { weatherType, season, usedThisWeek: usedIds, allergiesAndAversions, carbCounts, pantryIngredients, promotions };
+        let dinner = suggestRecipe(dinnerPool, { ...sharedOpts, constraint: dinnerConstraint });
+        // Fallback 1: ignore maxTime/mealprep constraint
+        if (!dinner) dinner = suggestRecipe(dinnerPool, sharedOpts);
+        // Fallback 2: also ignore flexitarisch restriction
+        if (!dinner) dinner = suggestRecipe(dinnerRecipes, sharedOpts);
         if (dinner) {
           result[day].dinner = { recipeId: dinner.id };
           usedIds.push(dinner.id);
@@ -286,10 +289,10 @@ export function suggestWeek(
         const src = reservedLeftovers.get(day)!;
         if (result[src]?.dinner?.recipeId) result[day].lunch = { recipeId: null, isLeftovers: true };
       } else {
-        const lunch = suggestRecipe(lunchRecipes, {
-          weatherType, season, constraint: lunchConstraint, usedThisWeek: usedIds,
-          lunchOnly: true, allergiesAndAversions, carbCounts, pantryIngredients, promotions,
-        });
+        const lunchOpts = { weatherType, season, usedThisWeek: usedIds, lunchOnly: true as const, allergiesAndAversions, carbCounts, pantryIngredients, promotions };
+        let lunch = suggestRecipe(lunchRecipes, { ...lunchOpts, constraint: lunchConstraint });
+        // Fallback: ignore constraint
+        if (!lunch) lunch = suggestRecipe(lunchRecipes, lunchOpts);
         if (lunch) {
           result[day].lunch = { recipeId: lunch.id };
           usedIds.push(lunch.id);

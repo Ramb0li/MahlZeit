@@ -5,7 +5,7 @@ import { PhotoSlot } from '@/components/ui/PhotoSlot';
 import { RecipeForm } from './RecipeForm';
 import { ImportRecipeModal } from './ImportRecipeModal';
 import { Modal } from '@/components/ui/Modal';
-import { isRecipeExcluded } from '@/lib/allergens';
+import { isRecipeExcluded, getExclusionReason } from '@/lib/allergens';
 import { type Recipe, type Category, TAG_GROUPS, computeTimeTags } from '@/types';
 
 const CATEGORIES: Category[] = [
@@ -93,6 +93,7 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
   const [favorites, setFavorites]           = useState<Set<string>>(new Set());
   const [editRecipe, setEditRecipe]         = useState<Recipe | null>(null);
   const [isCreating, setIsCreating]         = useState(false);
+  const [copyMode, setCopyMode]             = useState(false);
   const [showArchive, setShowArchive]       = useState(false);
   const [archiveId, setArchiveId]           = useState<string | null>(null);
   const [deleteId, setDeleteId]             = useState<string | null>(null);
@@ -166,10 +167,9 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
         }
       }
       if (search && !r.name.toLowerCase().includes(search.toLowerCase())) return false;
-      if (isRecipeExcluded(r, allergiesAndAversions)) return false;
       return true;
     }).sort((a, b) => a.name.localeCompare(b.name, 'de'));
-  }, [recipes, search, filterCategory, filterTags, filterDiet, allergiesAndAversions, showFavorites, favorites]);
+  }, [recipes, search, filterCategory, filterTags, filterDiet, showFavorites, favorites]);
 
   const archivedFiltered = useMemo(() => {
     return recipes.filter((r) => {
@@ -180,6 +180,11 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
   }, [recipes, search]);
 
   const archivedCount = recipes.filter((r) => r.archived).length;
+
+  const excludedSet = useMemo(() =>
+    new Set(recipes.filter(r => isRecipeExcluded(r, allergiesAndAversions)).map(r => r.id)),
+    [recipes, allergiesAndAversions]
+  );
 
   const handleSave = async (recipe: Recipe) => {
     const isNew  = !recipes.find((r) => r.id === recipe.id);
@@ -383,19 +388,26 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
       {/* Active recipes */}
       {!showArchive && (
         <div className="mz-rgrid">
-          {activeFiltered.map((recipe) => (
+          {activeFiltered.map((recipe) => {
+            const isExcluded = excludedSet.has(recipe.id);
+            const isTemplate = !recipe.id.startsWith('rec-');
+            return (
             <RecipeCard
               key={recipe.id}
               recipe={recipe}
               favorited={favorites.has(recipe.id)}
-              locked={locked && !recipe.id.startsWith('rec-')}
+              locked={locked && isTemplate}
+              isExcluded={isExcluded}
+              exclusionReason={isExcluded ? getExclusionReason(recipe, allergiesAndAversions) : null}
               onView={() => onViewRecipe?.(recipe)}
-              onEdit={() => setEditRecipe(recipe)}
+              onEdit={() => { setCopyMode(false); setEditRecipe(recipe); }}
+              onCopyEdit={isExcluded && isTemplate ? () => { setCopyMode(true); setEditRecipe(recipe); } : undefined}
               onArchive={() => setArchiveId(recipe.id)}
               onToggleFavorite={(e) => toggleFavorite(recipe.id, e)}
               onLockedAction={onLockedAction}
             />
-          ))}
+            );
+          })}
         </div>
       )}
 
@@ -426,14 +438,15 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
       {(isCreating || editRecipe) && (
         <Modal
           open
-          onClose={() => { setIsCreating(false); setEditRecipe(null); }}
+          onClose={() => { setIsCreating(false); setEditRecipe(null); setCopyMode(false); }}
           title={
+            copyMode ? `Persönliche Kopie: ${editRecipe?.name}` :
             isCreating && editRecipe ? 'Importiertes Rezept überprüfen' :
             isCreating ? 'Neues Rezept' : 'Rezept bearbeiten'
           }
           size="xl"
         >
-          <RecipeForm recipe={editRecipe ?? undefined} onSave={handleSave} onCancel={() => { setIsCreating(false); setEditRecipe(null); }} uploadEndpoint="/api/upload" />
+          <RecipeForm recipe={editRecipe ?? undefined} onSave={handleSave} onCancel={() => { setIsCreating(false); setEditRecipe(null); setCopyMode(false); }} uploadEndpoint="/api/upload" forceNewId={copyMode} />
         </Modal>
       )}
 
@@ -489,24 +502,32 @@ interface RecipeCardProps {
   favorited: boolean;
   /** Freemium-Sperre: Karte ausgegraut, Klick öffnet Upgrade-Modal */
   locked?: boolean;
+  /** Allergen-/Abneigungskonflikt: Karte ausgegraut, aber bearbeitbar */
+  isExcluded?: boolean;
+  exclusionReason?: string | null;
   onView: () => void;
   onEdit: () => void;
+  /** Für Template-Rezepte mit Allergen-Konflikt: öffnet Copy-on-Edit statt direktem Bearbeiten */
+  onCopyEdit?: () => void;
   onArchive: () => void;
   onToggleFavorite: (e: React.MouseEvent) => void;
   onLockedAction?: () => void;
 }
 
-function RecipeCard({ recipe, favorited, locked = false, onView, onEdit, onArchive, onToggleFavorite, onLockedAction }: RecipeCardProps) {
+function RecipeCard({ recipe, favorited, locked = false, isExcluded = false, exclusionReason, onView, onEdit, onCopyEdit, onArchive, onToggleFavorite, onLockedAction }: RecipeCardProps) {
   const keyTags = (recipe.tags ?? []).filter(t =>
     ['Vegetarisch', 'Vegan', 'Mealprep-geeignet', 'Kinderfreundlich'].includes(t)
   ).slice(0, 2);
+
+  const cardOpacity = locked ? 0.45 : isExcluded ? 0.45 : 1;
+  const cardFilter  = locked ? 'grayscale(0.6)' : isExcluded ? 'grayscale(0.3)' : undefined;
 
   return (
     <button
       className="mz-rcard"
       onClick={locked ? onLockedAction : onView}
-      title={locked ? 'Erfordert ein aktives Abo' : undefined}
-      style={{ textAlign: 'left', opacity: locked ? 0.45 : 1, filter: locked ? 'grayscale(0.6)' : undefined }}
+      title={locked ? 'Erfordert ein aktives Abo' : isExcluded ? (exclusionReason ?? 'Enthält ausgeschlossene Zutat') : undefined}
+      style={{ textAlign: 'left', opacity: cardOpacity, filter: cardFilter }}
     >
       <div className="mz-rcard-img">
         {recipe.imageUrl ? (
@@ -546,7 +567,7 @@ function RecipeCard({ recipe, favorited, locked = false, onView, onEdit, onArchi
         {/* Edit — top-right, second from corner */}
         {!locked && (
         <button
-          onClick={(e) => { e.stopPropagation(); onEdit(); }}
+          onClick={(e) => { e.stopPropagation(); (onCopyEdit ?? onEdit)(); }}
           style={{
             position: 'absolute', top: 8, right: 42,
             width: 28, height: 28, borderRadius: '50%', border: 'none', cursor: 'pointer',
@@ -587,10 +608,15 @@ function RecipeCard({ recipe, favorited, locked = false, onView, onEdit, onArchi
         <span className="mz-rcard-cat">{recipe.category}</span>
         <span className="mz-rcard-name mz-clamp2">{recipe.name}</span>
         <div className="mz-rcard-tags">
-          {keyTags.map(tag => (
+          {isExcluded && (
+            <span style={{ fontSize: 11, padding: '3px 8px', borderRadius: 99, fontWeight: 600, backgroundColor: '#fff3cd', color: '#856404', cursor: 'default', flexShrink: 0 }}>
+              {exclusionReason ?? 'Allergen'}
+            </span>
+          )}
+          {!isExcluded && keyTags.map(tag => (
             <span key={tag} className="mz-chip" style={{ fontSize: 11, padding: '3px 8px', cursor: 'default' }}>{tag}</span>
           ))}
-          {recipe.description && keyTags.length === 0 && (
+          {!isExcluded && recipe.description && keyTags.length === 0 && (
             <span style={{ fontSize: 12, color: 'var(--muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', maxWidth: '100%' }}>
               {recipe.description}
             </span>

@@ -200,9 +200,11 @@ interface RecipeFormProps {
   onCancel: () => void;
   uploadEndpoint?: string;
   showImageUrl?: boolean;
+  /** Wenn true: speichert immer mit neuer ID (Copy-on-Edit für Template-Rezepte) */
+  forceNewId?: boolean;
 }
 
-export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/upload', showImageUrl = false }: RecipeFormProps) {
+export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/upload', showImageUrl = false, forceNewId = false }: RecipeFormProps) {
   const [name, setName]                       = useState(recipe?.name ?? '');
   const [category, setCategory]               = useState<Category>(recipe?.category ?? 'Gemüsegerichte');
   const [dietCategory, setDietCategory]       = useState<import('@/types').DietCategory | undefined>(recipe?.dietCategory);
@@ -221,6 +223,7 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/up
   const [imageKochen, setImageKochen]         = useState(recipe?.imageKochen ?? '');
   const [uploadingField, setUploadingField]   = useState<string | null>(null);
   const [uploadError, setUploadError]         = useState<string | null>(null);
+  const [suggestionEnabled, setSuggestionEnabled] = useState(recipe?.suggestionEnabled !== false);
   const imgFertigRef  = useRef<HTMLInputElement | null>(null);
   const imgZutatenRef = useRef<HTMLInputElement | null>(null);
   const imgKochenRef  = useRef<HTMLInputElement | null>(null);
@@ -392,7 +395,7 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/up
     const sanitizeImg = (v: string) => (v && !v.startsWith('blob:') ? v : null);
 
     const r: Recipe = {
-      id:           recipe?.id ?? generateId(),
+      id:           forceNewId ? generateId() : (recipe?.id ?? generateId()),
       name, category, timeMinutes,
       ...(showActiveTime ? { activeTimeMinutes } : {}),
       tags,
@@ -406,6 +409,8 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/up
                       : undefined,
       ...(finalGroups ? { ingredientGroups: finalGroups } : {}),
       ...(dietCategory ? { dietCategory } : {}),
+      ...(suggestionEnabled === false ? { suggestionEnabled: false } : {}),
+      ...(forceNewId ? { sourceType: 'user_created' as const } : {}),
     };
     onSave(r);
   };
@@ -416,6 +421,11 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/up
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
+      {forceNewId && (
+        <div style={{ backgroundColor: '#fff3cd', border: '1px solid #ffc107', borderRadius: 12, padding: '10px 14px', fontSize: 13, color: '#856404' }}>
+          Du erstellst eine persoenliche Kopie von <strong>{recipe?.name}</strong>. Das Original bleibt unveraendert.
+        </div>
+      )}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
 
         {/* Name */}
@@ -616,6 +626,24 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/up
               </div>
             ))}
           </div>
+        </div>
+
+        {/* Planungsoptionen */}
+        <div className="sm:col-span-2">
+          <label style={labelStyle}>Planungsoptionen</label>
+          <label style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, color: '#5a4e48', cursor: 'pointer' }}>
+            <input
+              type="checkbox"
+              checked={suggestionEnabled}
+              onChange={(e) => setSuggestionEnabled(e.target.checked)}
+            />
+            Im Menüplaner vorschlagen
+          </label>
+          {!suggestionEnabled && (
+            <p style={{ fontSize: 12, color: '#9c8c84', marginTop: 4 }}>
+              Dieses Rezept wird nie automatisch vorgeschlagen, bleibt aber manuell wahlbar.
+            </p>
+          )}
         </div>
       </div>
 

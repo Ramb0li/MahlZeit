@@ -106,3 +106,24 @@ export function isRecipeExcluded(
     });
   });
 }
+
+/** Gibt den Ausschlussgrund zurück (z.B. "Enthält: Milch"), oder null wenn kein Konflikt. */
+export function getExclusionReason(
+  recipe: { name: string; ingredients: { name: string }[] },
+  excludedIds: string[],
+): string | null {
+  if (!excludedIds?.length) return null;
+  for (const id of excludedIds) {
+    const keywords = ALLERGEN_KEYWORDS[id] ?? [id];
+    const hit = keywords.find(kw =>
+      matchesTerm(recipe.name, kw) ||
+      recipe.ingredients.some(ing => matchesTerm(ing.name ?? '', kw))
+    );
+    if (hit) {
+      // Use the allergen ID as display label when it's a known code, else the raw keyword
+      const label = ALLERGEN_KEYWORDS[id] ? id.charAt(0).toUpperCase() + id.slice(1) : hit;
+      return `Enthält: ${label}`;
+    }
+  }
+  return null;
+}
