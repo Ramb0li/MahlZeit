@@ -5,6 +5,7 @@ import { getSessionWithGroup as getSession } from '@/lib/session';
 import { getWeekPlan, getRecipes, getSettings, getPromotions, getShoppingGroups, getPantry } from '@/lib/data';
 import { calculatePortions, scaleIngredientAmount, categorizeIngredient } from '@/lib/utils';
 import { normalizeUnit } from '@/lib/unitConversion';
+import { ingredientMatchesPromotion } from '@/lib/promotionUtils';
 import type { ShoppingItem, ShoppingList, Promotion } from '@/types';
 
 export async function GET(request: Request) {
@@ -69,7 +70,7 @@ export async function GET(request: Request) {
         const key = `${ing.name.toLowerCase()}_${normUnit}`;
         const category = categorizeIngredient(ing.name);
         const relatedPromos = allPromotions.filter((p) =>
-          p.product.toLowerCase().includes(ing.name.toLowerCase().split(' ')[0])
+          ingredientMatchesPromotion(ing.name, p.product)
         );
         if (aggregated[key]) {
           aggregated[key].totalAmount += normAmt;

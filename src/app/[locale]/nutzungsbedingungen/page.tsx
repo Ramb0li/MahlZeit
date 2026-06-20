@@ -16,7 +16,7 @@ export default function NutzungsbedingungenPage() {
       <p>
         Diese Nutzungsbedingungen regeln das Verhältnis zwischen dem Betreiber von MahlZyt
         («wir», «uns») und den Nutzerinnen und Nutzern («du») der Anwendung unter
-        <a href="https://mahlzeit.o-v-k.ch"> mahlzeit.o-v-k.ch</a>. Mit der Registrierung oder Nutzung
+        <a href="https://www.mahlzyt.app"> www.mahlzyt.app</a>. Mit der Registrierung oder Nutzung
         akzeptierst du diese Bedingungen.
       </p>
 

@@ -170,6 +170,7 @@ export interface WeatherSettings {
 
 export interface PromotionSettings {
   enabledStores: StoreId[];   // Welche Läden sind aktiviert (Schweiz)
+  radiusKm?: number;          // Suchradius für Standort-Filter (Standard: 10)
   // Altfelder für Rückwärtskompatibilität:
   manualMigros?: string[];
   manualCoop?:   string[];
@@ -208,15 +209,27 @@ export interface WeatherCache {
 
 export type StoreId = 'migros' | 'coop' | 'denner' | 'aldi' | 'lidl' | 'volg';
 
+export type PromotionScope = 'national' | 'regional' | 'unknown';
+
 export interface Promotion {
   store: StoreId;
   product: string;
   discount?: string;
-  validUntil?: string;
+  validFrom?: string;    // DD.MM.YYYY
+  validUntil?: string;   // DD.MM.YYYY
+  scope?: PromotionScope;
+  sourceUrl?: string;
+}
+
+export interface PromotionLocationContext {
+  city?: string;
+  distance?: number;
+  scope: PromotionScope;
 }
 
 export interface PromotionsCache {
   lastUpdated: string | null;
+  locationContext?: PromotionLocationContext;
   migros:  Promotion[];
   coop:    Promotion[];
   denner:  Promotion[];

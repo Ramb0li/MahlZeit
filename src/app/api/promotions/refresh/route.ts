@@ -4,7 +4,7 @@ import { NextResponse } from 'next/server';
 import { getSessionWithGroup as getSession } from '@/lib/session';
 import { getSettings, getPromotions, savePromotions, getTemplateRecipes } from '@/lib/data';
 import { scrapeSwissPromotions } from '@/lib/scrapePromotions';
-import type { StoreId } from '@/types';
+import type { StoreId, PromotionScope } from '@/types';
 
 const REFRESH_COOLDOWN_MS = 12 * 60 * 60 * 1000; // 12 Stunden
 
@@ -13,7 +13,7 @@ export async function POST() {
     const session = await getSession();
     if (!session) return NextResponse.json({ error: 'Nicht angemeldet' }, { status: 401 });
 
-    // Rate-Limit: max 1× pro 24 Stunden (globaler Cache, gilt für alle Gruppen)
+    // Rate-Limit: max 1× pro 12 Stunden (globaler Cache, gilt für alle Gruppen)
     const existing = await getPromotions();
     if (existing.lastUpdated) {
       const ageMs = Date.now() - new Date(existing.lastUpdated).getTime();
@@ -31,28 +31,37 @@ export async function POST() {
       }
     }
 
-    // Determine which stores are enabled for this group
     const settings = await getSettings(session.groupId);
     const enabledStores: StoreId[] = settings.promotions?.enabledStores ?? ['migros', 'coop', 'lidl'];
 
-    // Collect all ingredient names from global recipe templates
+    // Location context from weather settings
+    const city   = settings.weather?.location?.trim() || undefined;
+    const radius = settings.promotions?.radiusKm ?? 10;
+    const scope: PromotionScope = city ? 'regional' : 'national';
+
     const recipes = await getTemplateRecipes();
     const ingredientNames = Array.from(
       new Set(recipes.flatMap(r => r.ingredients.map(i => i.name))),
     );
 
-    // Scrape enabled stores
-    const scraped = await scrapeSwissPromotions(enabledStores, ingredientNames);
+    const scraped = await scrapeSwissPromotions(
+      enabledStores,
+      ingredientNames,
+      { city, radiusKm: radius },
+    );
 
-    // Merge into existing global cache (only update stores that were scraped)
     const updated = {
       ...existing,
       ...scraped,
       lastUpdated: new Date().toISOString(),
+      locationContext: {
+        city,
+        distance: radius,
+        scope,
+      },
     };
     await savePromotions(updated);
 
-    // Build counts for response
     const counts: Record<string, number> = {};
     for (const s of enabledStores) {
       counts[s] = (updated[s as keyof typeof updated] as unknown[])?.length ?? 0;

@@ -201,6 +201,7 @@ export function ShoppingListView() {
   const [promoRefreshing, setPromoRefreshing] = useState(false);
   const [promoError, setPromoError]           = useState<string | null>(null);
   const [promoLastUpdated, setPromoLastUpdated] = useState<string | null>(null);
+  const [promoLocationCtx, setPromoLocationCtx] = useState<{ city?: string; distance?: number; scope?: string } | null>(null);
 
   useEffect(() => { if (editKey && editRef.current) editRef.current.focus(); }, [editKey]);
   useEffect(() => { if (editCustomId && editCustomRef.current) editCustomRef.current.focus(); }, [editCustomId]);
@@ -232,7 +233,10 @@ export function ShoppingListView() {
   useEffect(() => {
     fetch('/api/promotions')
       .then(r => r.json())
-      .then((d: { lastUpdated?: string | null }) => { if (d.lastUpdated) setPromoLastUpdated(d.lastUpdated); })
+      .then((d: { lastUpdated?: string | null; locationContext?: { city?: string; distance?: number; scope?: string } | null }) => {
+        if (d.lastUpdated) setPromoLastUpdated(d.lastUpdated);
+        if (d.locationContext) setPromoLocationCtx(d.locationContext);
+      })
       .catch(() => {});
   }, []);
 
@@ -244,6 +248,13 @@ export function ShoppingListView() {
       const data = await res.json() as { success?: boolean; lastUpdated?: string; error?: string };
       if (!res.ok || !data.success) throw new Error(data.error ?? 'Fehler beim Laden der Aktionen.');
       if (data.lastUpdated) setPromoLastUpdated(data.lastUpdated);
+      // Reload locationContext from cache
+      fetch('/api/promotions')
+        .then(r => r.json())
+        .then((d: { locationContext?: { city?: string; distance?: number; scope?: string } | null }) => {
+          if (d.locationContext) setPromoLocationCtx(d.locationContext);
+        })
+        .catch(() => {});
       await loadList();
     } catch (err) {
       setPromoError(err instanceof Error ? err.message : 'Fehler beim Laden der Aktionen.');
@@ -649,6 +660,12 @@ export function ShoppingListView() {
           {promoLastUpdated
             ? `Aktionen: ${new Date(promoLastUpdated).toLocaleString('de-CH', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' })}`
             : 'Aktionen: noch nicht geladen'}
+          <br />
+          <span style={{ fontSize: 10, opacity: 0.8 }}>
+            {promoLocationCtx?.city
+              ? `Deals in der Region ${promoLocationCtx.city} · ${promoLocationCtx.distance ?? 10} km Umkreis · Warenverfügbarkeit vor Ort prüfen`
+              : 'Schweizweite Aktionen — Gültigkeit in deiner Filiale prüfen'}
+          </span>
         </p>
         <button
           type="button"
@@ -948,10 +965,16 @@ export function ShoppingListView() {
                           {item.promotions.length > 0 && (
                             <span
                               title={item.promotions.map(p => STORE_NAMES[p.store] ?? p.store).join(', ')}
-                              className="ml-1.5 inline-flex items-center text-[10px] px-1.5 py-0.5 rounded-full font-medium cursor-default"
+                              className="ml-1.5 inline-flex items-center gap-1 text-[10px] px-1.5 py-0.5 rounded-full font-medium cursor-default"
                               style={{ backgroundColor: '#dcfce7', color: '#166534' }}
                             >
                               {promoLabel(item.promotions)}
+                              {item.promotions[0].validUntil && (
+                                <span style={{ opacity: 0.65 }}>bis {item.promotions[0].validUntil}</span>
+                              )}
+                              {item.promotions[0].scope === 'regional' && (
+                                <span style={{ opacity: 0.55 }}>· Region</span>
+                              )}
                             </span>
                           )}
                         </span>

@@ -706,7 +706,7 @@ export function SettingsView({
       {/* ── Events & Constraints ─────────────────────────────────────────── */}
       <Section
         id="constraints"
-        title="Wöchentliche Events & Constraints"
+        title="Wöchentliche Events & Einschränkungen"
         sub="Im Wochenplan kannst du Events für eine einzelne Woche durchstreichen."
         action={
           <button

@@ -864,15 +864,7 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                             />
                           )}
                         </div>
-                        <div>
-                          <label style={labelStyle}>Footer-Jahr</label>
-                          <input
-                            value={lc.meta.footerYear}
-                            onChange={e => setLandingContent({ ...lc, meta: { ...lc.meta, footerYear: e.target.value } })}
-                            style={inputStyle}
-                            placeholder="2025"
-                          />
-                        </div>
+
                       </div>
                       <div style={{ marginTop: 12 }}>
                         <label style={labelStyle}>Hero-Titel (Zeilenumbruch = neue Zeile · *Wort* = hervorgehoben)</label>

@@ -102,7 +102,7 @@ export default async function LandingPage({ params }: Props) {
           ) : (
             <>
               <Link href="/auth" className="mz-lp-login">{t('navLogin')}</Link>
-              <Link href="/auth?plan=trial" className="mz-btn-primary" style={{ fontSize: 14, padding: '9px 18px' }}>
+              <Link href="/auth?plan=trial&tab=register" className="mz-btn-primary" style={{ fontSize: 14, padding: '9px 18px' }}>
                 {t('navStartFree')}
               </Link>
             </>
@@ -280,11 +280,11 @@ export default async function LandingPage({ params }: Props) {
       </div>
 
       {/* ── Footer ────────────────────────────────────────────────────── */}
-      <SiteFooter year={meta.footerYear} />
+      <SiteFooter />
 
       {/* ── Mobile sticky CTA ─────────────────────────────────────────── */}
       <div className="mz-lp-mobile-cta">
-        <Link href="/auth?plan=trial" className="mz-btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
+        <Link href="/auth?plan=trial&tab=register" className="mz-btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
           {t('mobileCta')}
         </Link>
         <p className="mz-lp-mobile-cta-note">{t('mobileCtaNote')}</p>

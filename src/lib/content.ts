@@ -52,7 +52,6 @@ export interface LandingMeta {
   eyebrowRecipes:  string;
   eyebrowReviews:  string;
   eyebrowPricing:  string;
-  footerYear:      string;
   /** Trust line under the pricing cards */
   footerTrust:     string;
 }
@@ -93,12 +92,12 @@ export const DEFAULT_LANDING_CONTENT: LandingContent = {
     {
       n: '02',
       title: 'Wochenplaner',
-      text: 'Plane Wochen im Voraus, in der Wochenübersicht alle Mahlzeiten, übersichtlich dargestellt. Änderungen aktualisieren deine Einkaufslisten sofort und automatisch.',
+      text: 'Plane deine Mahlzeiten für die ganze Woche übersichtlich im Voraus. Änderungen aktualisieren deine Einkaufslisten sofort und automatisch.',
     },
     {
       n: '03',
       title: 'Rezeptbibliothek',
-      text: '300+ Menüs von @cuiseline, kuratiert und laufend erweitert. Speichere deine Lieblingsrezepte mit Anleitungen, Zutaten und Variationen mithilfe unserem KI Tool, welches Fotos oder Rezepte automatisch erkennt und einliest.',
+      text: '300+ Rezepte von @cuiseline, kuratiert und laufend erweitert. Speichere deine Lieblingsrezepte mit Anleitungen, Zutaten und Variationen mithilfe unseres KI-Tools, welches Fotos oder Rezepte automatisch erkennt und einliest.',
       link: { text: '@cuiseline', url: 'https://www.instagram.com/cuiseline/' },
     },
     {
@@ -110,27 +109,27 @@ export const DEFAULT_LANDING_CONTENT: LandingContent = {
   plans: [
     {
       badge: 'Gratis starten', name: 'Testwoche', cur: 'CHF', amount: '0',
-      per: '7 Tage kostenlos', desc: 'Voller Zugang. Kein Kreditkarteneintrag.',
+      per: '7 Tage kostenlos', desc: 'Voller Zugang. Keine Kreditkarte nötig.',
       features: ['Automatisierter Wochenplaner', 'Zugang zu Rezeptbibliothek', 'Automatisierte Einkaufsliste', 'Wettervorschläge'],
-      href: '/auth?plan=trial', featured: false,
+      href: '/auth?plan=trial&tab=register', featured: false,
     },
     {
       badge: 'Flexibel', name: 'Monatsabo', cur: 'CHF', amount: '4',
       per: '/ Monat · kündbar', desc: 'Monatlich kündbar.',
       features: ['Alles aus Testwoche', 'Unbegrenzte Rezepte', 'KI Menü-Import', 'Lade bis zu fünf Mitglieder ein'],
-      href: '/auth?plan=abo', featured: false,
+      href: '/auth?plan=abo&tab=register', featured: false,
     },
     {
       badge: 'Bester Wert', name: 'Jahresabo', cur: 'CHF', amount: '40',
       per: '/ Jahr · 2 Monate gratis', desc: 'Spare gegenüber dem Monatsabo.',
       features: ['Alles aus Monatsabo', '2 Monate gespart', 'Priorisierter Support'],
-      href: '/auth?plan=yearly', featured: false,
+      href: '/auth?plan=yearly&tab=register', featured: false,
     },
     {
       badge: 'Early-Supporter-Angebot', name: 'Lifetime', cur: 'CHF', amount: '129',
       per: 'einmalig · für immer', desc: 'Einmalig zahlen, für immer nutzen. Nur für die ersten 100 Nutzer.',
       features: ['Alles aus Jahresabo', 'Alle zukünftigen Features', 'Keine Folgekosten', 'Priorisierter Support'],
-      href: '/auth?plan=lifetime', featured: true,
+      href: '/auth?plan=lifetime&tab=register', featured: true,
     },
   ],
   meta: {
@@ -140,10 +139,9 @@ export const DEFAULT_LANDING_CONTENT: LandingContent = {
     heroLead:        'MahlZyt erstellt deinen Wochenplan, schlägt Rezepte vor und schreibt automatisch deine Einkaufsliste. Alles verknüpft. Alles automatisiert.',
     eyebrowFeatures: 'Was dich erwartet',
     eyebrowWeek:     'Wochenplan',
-    eyebrowRecipes:  'Rezepte die passen',
+    eyebrowRecipes:  'Rezepte, die passen',
     eyebrowReviews:  'Stimmen',
     eyebrowPricing:  'Preise',
-    footerYear:      '2025',
     footerTrust:     '🔒 Sichere Zahlung via Stripe  ·  🇨🇭 Made in Switzerland  ·  Kein Abo-Zwang bei Lifetime',
   },
 };

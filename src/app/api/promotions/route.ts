@@ -15,6 +15,7 @@ export async function GET() {
 
     const merged: PromotionsCache = {
       lastUpdated: cached.lastUpdated,
+      locationContext: cached.locationContext,
       migros: [], coop: [], denner: [], aldi: [], lidl: [], volg: [],
     };
 

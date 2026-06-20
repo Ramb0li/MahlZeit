@@ -586,7 +586,9 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe, onOp
         <div className="mz-mag-grid" style={{ overflowX: 'auto', paddingBottom: 12 }}>
             {weekDays.map((date, i) => {
               const dayIndex = i + 1;
-              const dayConstraints = constraints.filter((c) => c.dayOfWeek === dayIndex);
+              const jsDay = date.getDay(); // 0=So, 1=Mo ... 6=Sa
+              const isoDay = jsDay === 0 ? 7 : jsDay; // 1=Mo ... 7=So
+              const dayConstraints = constraints.filter((c) => c.dayOfWeek === isoDay);
               const dayWeather = getWeatherForDay(date);
               const dayPlan = weekPlan?.days?.[dayIndex] ?? null;
               const disabledIds = weekPlan?.disabledConstraintIds ?? [];

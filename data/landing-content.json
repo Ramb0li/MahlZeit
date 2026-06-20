@@ -6,12 +6,12 @@
       "role": "Mutter, Basel"
     },
     {
-      "text": "«Ich esse seit MahlZeit viel abwechslungsreicher. Die Rezeptvorschläge passen wirklich zu mir — und alles ist vegan.»",
+      "text": "«Ich esse seit MahlZyt viel abwechslungsreicher. Die Rezeptvorschläge passen wirklich zu mir — und alles ist vegan.»",
       "name": "Lukas B.",
       "role": "Student, Zürich"
     },
     {
-      "text": "«Das UI ist aufgeräumt und es läuft. Ich habe viele Apps ausprobiert — MahlZeit ist die erste, die ich täglich nutze.»",
+      "text": "«Das UI ist aufgeräumt und es läuft. Ich habe viele Apps ausprobiert — MahlZyt ist die erste, die ich täglich nutze.»",
       "name": "Mia K.",
       "role": "Grafikerin, Bern"
     }
@@ -20,17 +20,17 @@
     {
       "n": "01",
       "title": "Smarte Vorschläge",
-      "text": "MahlZeit schlägt Gerichte vor, die zu deinen Vorlieben, der Saison und dem Wetter passen. Kein Kopfzerbrechen mehr."
+      "text": "MahlZyt schlägt Gerichte vor, die zu deinen Vorlieben, der Saison und dem Wetter passen. Kein Kopfzerbrechen mehr."
     },
     {
       "n": "02",
       "title": "Wochenplaner",
-      "text": "Plane Wochen im Voraus, in der Wochenübersicht alle Mahlzeiten, übersichtlich dargestellt. Änderungen aktualisieren deine Einkaufslisten sofort und automatisch."
+      "text": "Plane deine Mahlzeiten für die ganze Woche übersichtlich im Voraus. Änderungen aktualisieren deine Einkaufslisten sofort und automatisch."
     },
     {
       "n": "03",
       "title": "Rezeptbibliothek",
-      "text": "200+ Menüs von @cuiseline, kuratiert und laufend erweitert. Speichere deine Lieblingsrezepte mit Anleitungen, Zutaten und Variationen mithilfe unserem KI Tool, welches Fotos oder Rezepte automatisch erkennt und einliest.",
+      "text": "300+ Rezepte von @cuiseline, kuratiert und laufend erweitert. Speichere deine Lieblingsrezepte mit Anleitungen, Zutaten und Variationen mithilfe unseres KI-Tools, welches Fotos oder Rezepte automatisch erkennt und einliest.",
       "link": {
         "text": "@cuiseline",
         "url": "https://www.instagram.com/cuiseline/"
@@ -49,9 +49,9 @@
       "cur": "CHF",
       "amount": "0",
       "per": "7 Tage kostenlos",
-      "desc": "Voller Zugang. Kein Kreditkarteneintrag.",
+      "desc": "Voller Zugang. Keine Kreditkarte nötig.",
       "features": ["Wochenplaner", "Rezeptbibliothek", "Einkaufsliste", "KI-Vorschläge"],
-      "href": "/auth?plan=trial",
+      "href": "/auth?plan=trial&tab=register",
       "featured": false
     },
     {
@@ -62,7 +62,7 @@
       "per": "/ Monat · kündbar",
       "desc": "Monatlich kündbar.",
       "features": ["Alles aus Testwoche", "Unbegrenzte Rezepte", "KI Menü-Import", "Kündigung jederzeit"],
-      "href": "/auth?plan=abo",
+      "href": "/auth?plan=abo&tab=register",
       "featured": false
     },
     {
@@ -73,7 +73,7 @@
       "per": "einmalig · für immer",
       "desc": "Einmal zahlen, für immer nutzen. Alle Updates inklusive.",
       "features": ["Alles aus Jahresabo", "Alle zukünftigen Features", "Keine Folgekosten", "Priority Support"],
-      "href": "/auth?plan=lifetime",
+      "href": "/auth?plan=lifetime&tab=register",
       "featured": true
     },
     {
@@ -84,7 +84,7 @@
       "per": "/ Jahr · 2 Monate gratis",
       "desc": "Spare gegenüber dem Monatsabo.",
       "features": ["Alles aus Monatsabo", "Priorisierter Support", "2 Monate gespart"],
-      "href": "/auth?plan=yearly",
+      "href": "/auth?plan=yearly&tab=register",
       "featured": false
     }
   ]
