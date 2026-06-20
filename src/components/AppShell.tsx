@@ -181,7 +181,7 @@ export function AppShell({
           />
         )}
         {activeTab === 'shopping' && (
-          <ShoppingListView />
+          <ShoppingListView weekStartDay={(settings.weekSwitchDay ?? 1) as 0|1|2|3|4|5|6} />
         )}
         {activeTab === 'pantry' && (
           <PantryView />

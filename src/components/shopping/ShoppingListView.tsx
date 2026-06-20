@@ -6,7 +6,13 @@ import { format } from 'date-fns';
 import { de } from 'date-fns/locale';
 import type { ShoppingList, ShoppingGroups, ShoppingListState, CustomShoppingItem, Recipe, Promotion } from '@/types';
 
-const DAY_LABELS_SHORT = ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'];
+// 0=So, 1=Mo, ..., 6=Sa (entspricht JS getDay())
+const DAY_LABELS_BASE = ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'];
+
+function getDayLabels(weekStartDay = 1): string[] {
+  return Array.from({ length: 7 }, (_, i) => DAY_LABELS_BASE[(weekStartDay + i) % 7]);
+}
+
 const GROUP_COLORS = [
   { bg: '#e8f2e8', border: '#4a7a4e', text: '#2e5a32' },
   { bg: '#e3f2fd', border: '#1565c0', text: '#0d47a1' },
@@ -18,12 +24,13 @@ const GROUP_COLORS = [
 ];
 
 /** Listenname z.B. "KW23.Mo-So" oder "KW23.Mo-Mi" */
-function buildListLabel(weekId: string, dayIndices: number[]): string {
+function buildListLabel(weekId: string, dayIndices: number[], weekStartDay = 1): string {
   const kw = weekId.split('-W')[1] ?? '';
   if (!dayIndices.length) return `KW${kw}`;
+  const labels = getDayLabels(weekStartDay);
   const sorted = [...dayIndices].sort((a, b) => a - b);
-  const first = DAY_LABELS_SHORT[(sorted[0] ?? 1) - 1] ?? '';
-  const last  = DAY_LABELS_SHORT[(sorted[sorted.length - 1] ?? 7) - 1] ?? '';
+  const first = labels[(sorted[0] ?? 1) - 1] ?? '';
+  const last  = labels[(sorted[sorted.length - 1] ?? 7) - 1] ?? '';
   return first === last ? `KW${kw}.${first}` : `KW${kw}.${first}-${last}`;
 }
 
@@ -88,7 +95,7 @@ function formatItemAmount(amount: number, unit: string, approx?: boolean): strin
 
 // ─── Component ────────────────────────────────────────────────────────────────
 
-export function ShoppingListView() {
+export function ShoppingListView({ weekStartDay = 1 }: { weekStartDay?: 0|1|2|3|4|5|6 }) {
   // Beide Wochen verfügbar — User kann wechseln
   const todayDate      = new Date();
   const nextDate       = nextWeek(todayDate);
@@ -98,7 +105,7 @@ export function ShoppingListView() {
   const nextNextWeekId = getWeekId(nextNextDate);
   const [weekDate, setWeekDate] = useState(todayDate);
   const weekId   = getWeekId(weekDate);
-  const weekDays = getWeekDays(weekDate);
+  const weekDays = getWeekDays(weekDate, weekStartDay);
 
   const [list, setList]       = useState<ShoppingList>({});
   const [loading, setLoading] = useState(true);
@@ -725,7 +732,7 @@ export function ShoppingListView() {
             </button>
             {groups.map((g, gi) => {
               const colors = GROUP_COLORS[gi % GROUP_COLORS.length];
-              const label = buildListLabel(weekId, g.dayIndices);
+              const label = buildListLabel(weekId, g.dayIndices, weekStartDay);
               return (
                 <button
                   key={g.id}
