@@ -2,7 +2,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { Check, Download, RefreshCw, Plus, Trash2, RotateCcw, X, ChevronDown, PackageCheck } from 'lucide-react';
 import { getWeekId, getWeekDays, nextWeek, formatAmount } from '@/lib/utils';
-import { format } from 'date-fns';
+import { format, getISOWeek } from 'date-fns';
 import { de } from 'date-fns/locale';
 import type { ShoppingList, ShoppingGroups, ShoppingListState, CustomShoppingItem, Recipe, Promotion } from '@/types';
 
@@ -407,7 +407,8 @@ export function ShoppingListView({ weekStartDay = 1 }: { weekStartDay?: 0|1|2|3|
   const checkedCount = Array.from(checkedSet).filter(k => !pantryKeys.has(k)).length
                      + custom.filter(c => c.checked).length;
 
-  const kwNum    = weekId.split('-W')[1] ?? '';
+  const thursday = weekDays.find(d => d.getDay() === 4);
+  const kwNum    = thursday ? String(getISOWeek(thursday)).padStart(2, '0') : weekId.split('-W')[1] ?? '';
   const dateFrom = weekDays[0] ? format(weekDays[0], 'd. MMM', { locale: de }) : '';
   const dateTo   = weekDays[6] ? format(weekDays[6], 'd. MMM yyyy', { locale: de }) : '';
 
