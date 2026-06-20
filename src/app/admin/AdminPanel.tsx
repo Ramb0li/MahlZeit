@@ -724,6 +724,7 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                           {r.source ?? '—'}
                         </td>
                         <td style={{ padding: '10px 16px 10px 4px' }}>
+                          <div style={{ display: 'flex', gap: 4, flexWrap: 'wrap' }}>
                           <button
                             disabled={togglingId === r.id}
                             onClick={async () => {
@@ -764,7 +765,7 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                               setTogglingId(null);
                             }}
                             style={{
-                              marginLeft: 4, padding: '3px 10px', borderRadius: 999, fontSize: 11, fontWeight: 700, cursor: togglingId === r.id ? 'wait' : 'pointer', border: 'none',
+                              padding: '3px 10px', borderRadius: 999, fontSize: 11, fontWeight: 700, cursor: togglingId === r.id ? 'wait' : 'pointer', border: 'none',
                               background: r.suggestionEnabled === false ? '#fce4dc' : '#e8f5e9',
                               color:      r.suggestionEnabled === false ? '#b71c1c' : '#1b5e20',
                               opacity: togglingId === r.id ? 0.6 : 1,
@@ -772,6 +773,7 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                           >
                             {r.suggestionEnabled === false ? 'Kein Vorschlag' : 'Vorschlag aktiv'}
                           </button>
+                          </div>
                         </td>
                         <td style={{ padding: '10px 16px' }}>
                           <div style={{ display: 'flex', gap: 6 }}>

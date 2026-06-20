@@ -30,7 +30,7 @@ describe('suggestWeek — fallback tiers', () => {
 
   it('fills slot via fallback when mealprep constraint leaves empty pool', () => {
     const mealprep: DayConstraint = {
-      id: 'c1', dayOfWeek: 1, mealType: 'dinner', constraint: 'mealprep',
+      id: 'c1', dayOfWeek: 1, mealType: 'dinner', constraint: 'mealprep', label: 'Mealprep', color: '#000',
     };
     // None of the recipes have Mealprep-geeignet tag — Tier 1 returns null, Tier 2 should fill
     const result = suggestWeek(BASE_RECIPES, [mealprep], {}, 'Sommer', { showDinner: true });
@@ -39,7 +39,7 @@ describe('suggestWeek — fallback tiers', () => {
 
   it('fills slot via fallback when maxTime constraint is too strict', () => {
     const maxTime: DayConstraint = {
-      id: 'c2', dayOfWeek: 2, mealType: 'dinner', constraint: 'maxTime', maxTimeMinutes: 5,
+      id: 'c2', dayOfWeek: 2, mealType: 'dinner', constraint: 'maxTime', maxTimeMinutes: 5, label: 'Schnell', color: '#000',
     };
     // All recipes have timeMinutes=30 — Tier 1 hard-filters them all out, Tier 2 fills
     const result = suggestWeek(BASE_RECIPES, [maxTime], {}, 'Sommer', { showDinner: true });

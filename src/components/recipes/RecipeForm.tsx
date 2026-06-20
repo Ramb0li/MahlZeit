@@ -423,7 +423,7 @@ export function RecipeForm({ recipe, onSave, onCancel, uploadEndpoint = '/api/up
     <form onSubmit={handleSubmit} className="space-y-5">
       {forceNewId && (
         <div style={{ backgroundColor: '#fff3cd', border: '1px solid #ffc107', borderRadius: 12, padding: '10px 14px', fontSize: 13, color: '#856404' }}>
-          Du erstellst eine persoenliche Kopie von <strong>{recipe?.name}</strong>. Das Original bleibt unveraendert.
+          Du erstellst eine persönliche Kopie von <strong>{recipe?.name}</strong>. Das Original bleibt unverändert.
         </div>
       )}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

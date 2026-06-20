@@ -181,10 +181,14 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
 
   const archivedCount = recipes.filter((r) => r.archived).length;
 
-  const excludedSet = useMemo(() =>
-    new Set(recipes.filter(r => isRecipeExcluded(r, allergiesAndAversions)).map(r => r.id)),
-    [recipes, allergiesAndAversions]
-  );
+  const excludedMap = useMemo(() => {
+    const m = new Map<string, string | null>();
+    recipes.forEach(r => {
+      if (isRecipeExcluded(r, allergiesAndAversions))
+        m.set(r.id, getExclusionReason(r, allergiesAndAversions));
+    });
+    return m;
+  }, [recipes, allergiesAndAversions]);
 
   const handleSave = async (recipe: Recipe) => {
     const isNew  = !recipes.find((r) => r.id === recipe.id);
@@ -389,7 +393,7 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
       {!showArchive && (
         <div className="mz-rgrid">
           {activeFiltered.map((recipe) => {
-            const isExcluded = excludedSet.has(recipe.id);
+            const isExcluded = excludedMap.has(recipe.id);
             const isTemplate = !recipe.id.startsWith('rec-');
             return (
             <RecipeCard
@@ -398,7 +402,7 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
               favorited={favorites.has(recipe.id)}
               locked={locked && isTemplate}
               isExcluded={isExcluded}
-              exclusionReason={isExcluded ? getExclusionReason(recipe, allergiesAndAversions) : null}
+              exclusionReason={excludedMap.get(recipe.id) ?? null}
               onView={() => onViewRecipe?.(recipe)}
               onEdit={() => { setCopyMode(false); setEditRecipe(recipe); }}
               onCopyEdit={isExcluded && isTemplate ? () => { setCopyMode(true); setEditRecipe(recipe); } : undefined}
@@ -578,7 +582,7 @@ function RecipeCard({ recipe, favorited, locked = false, isExcluded = false, exc
             transition: '.15s',
           }}
           className="mz-fav-btn"
-          title="Bearbeiten"
+          title={onCopyEdit ? 'Persönliche Kopie erstellen' : 'Bearbeiten'}
         >
           <Pencil size={11} />
         </button>
