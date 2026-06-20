@@ -3,7 +3,7 @@ export const dynamic = 'force-dynamic';
 import { NextResponse } from 'next/server';
 import { getSessionWithGroup as getSession } from '@/lib/session';
 import { getRecipes, getConstraints, getWeatherCache, getWeekPlan, saveWeekPlan, getSettings, getFavorites, getPromotions } from '@/lib/data';
-import { suggestWeek, suggestRecipe, getEffectiveDietCategory } from '@/lib/suggestions';
+import { suggestWeek, suggestRecipe, getEffectiveDietCategory, colToIso } from '@/lib/suggestions';
 import { getCurrentSeason, getWeatherTypeFromTemp } from '@/lib/utils';
 import type { WeatherType, Promotion } from '@/types';
 
@@ -67,12 +67,14 @@ export async function POST(request: Request) {
     });
 
     if (dayIndex !== undefined && mealType) {
+      const wsd = settings.weekSwitchDay ?? 1;
+      const dayIso = colToIso(dayIndex, wsd);
       const currentPlan = await getWeekPlan(weekId, groupId);
       const disabledIds = currentPlan?.disabledConstraintIds ?? [];
       const constraint = constraints.find(
-        (c) => c.dayOfWeek === dayIndex && c.mealType === mealType && !disabledIds.includes(c.id)
+        (c) => c.dayOfWeek === dayIso && c.mealType === mealType && !disabledIds.includes(c.id)
       );
-      const weatherType = weatherTypes[dayIndex] ?? 'neutral';
+      const weatherType = weatherTypes[dayIso] ?? 'neutral';
       const usedIds = Object.values(currentPlan?.days ?? {}).flatMap((d) =>
         [d.dinner?.recipeId, d.lunch?.recipeId].filter(Boolean) as string[]
       );
@@ -133,6 +135,7 @@ export async function POST(request: Request) {
       favoritesOnly:         !!favoritesOnly,
       pantryIngredients:     wantToUse,
       promotions:            activePromotions,
+      weekStartDay:          settings.weekSwitchDay ?? 1,
     });
 
     for (const [dayStr, meals] of Object.entries(suggestions)) {

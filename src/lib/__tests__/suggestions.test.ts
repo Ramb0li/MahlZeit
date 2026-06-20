@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { suggestWeek, suggestRecipe } from '../suggestions';
+import { suggestWeek, suggestRecipe, colToIso, isoToCol } from '../suggestions';
 import type { Recipe, DayConstraint } from '@/types';
 
 function makeRecipe(overrides: Partial<Recipe> & { id: string; name: string }): Recipe {
@@ -57,6 +57,54 @@ describe('suggestWeek — fallback tiers', () => {
     const anyFilled = Object.values(result).some(d => d.dinner?.recipeId);
     // Allergen filter is never relaxed — no slots should be filled
     expect(anyFilled).toBe(false);
+  });
+});
+
+describe('colToIso / isoToCol', () => {
+  it('ist Identitaet bei weekStart=Montag', () => {
+    for (let i = 1; i <= 7; i++) {
+      expect(colToIso(i, 1)).toBe(i);
+      expect(isoToCol(i, 1)).toBe(i);
+    }
+  });
+
+  it('mappt korrekt bei Samstag-Wochenstart', () => {
+    expect(colToIso(1, 6)).toBe(6); // Spalte 1 = Sa = ISO 6
+    expect(colToIso(2, 6)).toBe(7); // Spalte 2 = So = ISO 7
+    expect(colToIso(3, 6)).toBe(1); // Spalte 3 = Mo = ISO 1
+    expect(colToIso(5, 6)).toBe(3); // Spalte 5 = Mi = ISO 3
+    expect(colToIso(7, 6)).toBe(5); // Spalte 7 = Fr = ISO 5
+    expect(isoToCol(3, 6)).toBe(5); // Mi (ISO 3) ist Spalte 5
+    expect(isoToCol(4, 6)).toBe(6); // Do (ISO 4) ist Spalte 6
+    expect(isoToCol(5, 6)).toBe(7); // Fr (ISO 5) ist Spalte 7
+  });
+
+  it('Roundtrip colToIso(isoToCol(x)) === x', () => {
+    for (const wsd of [0, 1, 3, 6]) {
+      for (let iso = 1; iso <= 7; iso++) {
+        expect(colToIso(isoToCol(iso, wsd), wsd)).toBe(iso);
+      }
+    }
+  });
+});
+
+describe('suggestWeek — weekStartDay', () => {
+  it('platziert Mealprep-Reste auf korrekten Spalten bei Samstag-Start', () => {
+    const mealprep: DayConstraint = {
+      id: 'mp', dayOfWeek: 3, mealType: 'dinner', constraint: 'mealprep', label: 'Mealprep', color: '#000',
+    };
+    const result = suggestWeek(BASE_RECIPES, [mealprep], {}, 'Sommer', {
+      showDinner: true,
+      weekStartDay: 6,
+    });
+    // Spalte 5 = Mittwoch (ISO 3) = Mealprep-Dinner, muss befuellt sein
+    expect(result[5].dinner?.recipeId).toBeTruthy();
+    // Spalte 6 = Donnerstag (ISO 4) = Reste
+    expect(result[6].dinner?.isLeftovers).toBe(true);
+    // Spalte 7 = Freitag (ISO 5) = Reste
+    expect(result[7].dinner?.isLeftovers).toBe(true);
+    // Spalte 4 = Dienstag (ISO 2) = kein Reste (wuerde mit Monday-Start falsch sein)
+    expect(result[4].dinner?.isLeftovers).toBeFalsy();
   });
 });
 

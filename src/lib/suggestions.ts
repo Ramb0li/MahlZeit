@@ -109,6 +109,18 @@ function recipeScore(
   return score;
 }
 
+// weekStartDay: 0=So, 1=Mo, ..., 6=Sa (AppSettings.weekSwitchDay)
+// col: 1=first displayed column ... 7=last; isoDay: 1=Mo ... 7=So
+export function colToIso(col: number, weekStartDay: number): number {
+  const isoStart = weekStartDay === 0 ? 7 : weekStartDay;
+  return ((isoStart + col - 2) % 7) + 1;
+}
+
+export function isoToCol(isoDay: number, weekStartDay: number): number {
+  const isoStart = weekStartDay === 0 ? 7 : weekStartDay;
+  return ((isoDay - isoStart + 7) % 7) + 1;
+}
+
 export function suggestRecipe(
   recipes: Recipe[],
   options: SuggestionOptions
@@ -160,6 +172,7 @@ export interface SuggestWeekOptions {
   favoritesOnly?: boolean;      // NEU: gesamter Pool auf Favoriten einschränken
   pantryIngredients?: string[]; // NEU: für Vorrat-Bonus in der Wochen-Suggestion
   promotions?: Promotion[];     // Aktions-Promotionen → +20 Bonus im Scoring
+  weekStartDay?: number;        // 0=So, 1=Mo (default), ..., 6=Sa
 }
 
 const BREAKFAST_CATS  = new Set<Category>();
@@ -183,6 +196,7 @@ export function suggestWeek(
   opts: SuggestWeekOptions = {}
 ): Record<number, { breakfast?: SuggestedSlot; lunch?: SuggestedSlot; dinner?: SuggestedSlot }> {
   const { showBreakfast = false, showLunch = false, showDinner = true, allergiesAndAversions, flexitarisch = false, favorites = [], favoritesOnly = false, pantryIngredients, promotions } = opts;
+  const wsd = opts.weekStartDay ?? 1;
   const result: Record<number, { breakfast?: SuggestedSlot; lunch?: SuggestedSlot; dinner?: SuggestedSlot }> = {};
   const usedIds: string[] = [];
   let meatMealsThisWeek = 0;
@@ -217,16 +231,17 @@ export function suggestWeek(
   // Mealprep → "Reste essen" auf den Folgetagen reservieren.
   // Bevorzugtes Reste-Meal: Mittag (wenn angezeigt), sonst Abendessen.
   const leftoversMeal: 'lunch' | 'dinner' = showLunch ? 'lunch' : 'dinner';
-  const reservedLeftovers = new Map<number, number>(); // Zieltag → Quelltag (Dinner)
+  const reservedLeftovers = new Map<number, number>(); // Zielspalte → Quellspalte
   for (const c of constraints) {
     if (c.constraint !== 'mealprep') continue;
-    const sourceDay = c.dayOfWeek;
-    const targetDays = (c.mealprepLunchDays && c.mealprepLunchDays.length > 0)
+    const sourceCol = isoToCol(c.dayOfWeek, wsd);
+    const rawTargets = (c.mealprepLunchDays && c.mealprepLunchDays.length > 0)
       ? c.mealprepLunchDays
-      : [sourceDay + 1, sourceDay + 2];
-    for (const td of targetDays) {
-      if (td >= 1 && td <= 7 && td !== sourceDay && !reservedLeftovers.has(td)) {
-        reservedLeftovers.set(td, sourceDay);
+      : [c.dayOfWeek + 1, c.dayOfWeek + 2];
+    for (const isoTd of rawTargets) {
+      const col = isoToCol(isoTd, wsd);
+      if (col !== sourceCol && !reservedLeftovers.has(col)) {
+        reservedLeftovers.set(col, sourceCol);
       }
     }
   }
@@ -235,7 +250,7 @@ export function suggestWeek(
   // Leftovers-/Reste-Dinner-Tage ausschliessen, damit die Garantie erfüllbar bleibt.
   const favDinnerPool = dinnerRecipes.filter(r => favSet.has(r.id));
   const eligibleDays  = [1, 2, 3, 4, 5, 6, 7].filter(d =>
-    !constraints.some(c => c.dayOfWeek === d && c.mealType === 'dinner' && c.constraint === 'leftovers') &&
+    !constraints.some(c => c.dayOfWeek === colToIso(d, wsd) && c.mealType === 'dinner' && c.constraint === 'leftovers') &&
     !(leftoversMeal === 'dinner' && reservedLeftovers.has(d))
   );
   const favoriteDayIndex = favDinnerPool.length >= 3 && eligibleDays.length > 0
@@ -243,10 +258,11 @@ export function suggestWeek(
     : null;
 
   for (let day = 1; day <= 7; day++) {
-    const dayConstraints  = constraints.filter((c) => c.dayOfWeek === day);
+    const isoDay = colToIso(day, wsd);
+    const dayConstraints  = constraints.filter((c) => c.dayOfWeek === isoDay);
     const dinnerConstraint = dayConstraints.find((c) => c.mealType === 'dinner');
     const lunchConstraint  = dayConstraints.find((c) => c.mealType === 'lunch');
-    const weatherType = weatherTypes[day] ?? 'neutral';
+    const weatherType = weatherTypes[isoDay] ?? 'neutral';
 
     result[day] = {};
 
