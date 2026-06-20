@@ -329,5 +329,19 @@ export function suggestWeek(
     }
   }
 
+  // Post-loop: fill reserved-leftover slots where the source column was processed
+  // AFTER the target column (e.g. mealprep on Friday → leftovers on Sa/So at start of week).
+  // During the main loop those slots entered the else-if branch but found result[src] empty.
+  reservedLeftovers.forEach((srcCol, col) => {
+    const srcRecipeId = result[srcCol]?.dinner?.recipeId;
+    if (srcRecipeId) {
+      if (leftoversMeal === 'dinner' && !result[col]?.dinner) {
+        result[col].dinner = { recipeId: null, isLeftovers: true };
+      } else if (leftoversMeal === 'lunch' && !result[col]?.lunch) {
+        result[col].lunch = { recipeId: null, isLeftovers: true };
+      }
+    }
+  });
+
   return result;
 }

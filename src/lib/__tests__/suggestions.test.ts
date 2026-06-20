@@ -106,6 +106,28 @@ describe('suggestWeek — weekStartDay', () => {
     // Spalte 4 = Dienstag (ISO 2) = kein Reste (wuerde mit Monday-Start falsch sein)
     expect(result[4].dinner?.isLeftovers).toBeFalsy();
   });
+
+  it('platziert Reste korrekt wenn Quell-Spalte nach Ziel-Spalten im Loop kommt (forward-reference)', () => {
+    // Mealprep am Freitag (ISO 5), Reste-Tage Sa (ISO 6 = Spalte 1) und So (ISO 7 = Spalte 2)
+    // Freitag = Spalte 7 wird im Loop NACH Sa/So verarbeitet → forward-reference-Bug ohne Post-Loop-Pass
+    const mealprep: DayConstraint = {
+      id: 'mp2', dayOfWeek: 5, mealType: 'dinner', constraint: 'mealprep',
+      label: 'Mealprep', color: '#000', mealprepLunchDays: [6, 7],
+    };
+    const result = suggestWeek(BASE_RECIPES, [mealprep], {}, 'Sommer', {
+      showDinner: true,
+      weekStartDay: 6,
+    });
+    // Spalte 7 = Freitag = Mealprep-Quelle → muss Dinner haben
+    expect(result[7].dinner?.recipeId).toBeTruthy();
+    // Spalte 1 = Samstag = Reste (Quelle col 7 erst spaeter im Loop)
+    expect(result[1].dinner?.isLeftovers).toBe(true);
+    // Spalte 2 = Sonntag = Reste
+    expect(result[2].dinner?.isLeftovers).toBe(true);
+    // Andere Tage haben normale Vorschlaege
+    expect(result[3].dinner?.recipeId).toBeTruthy();
+    expect(result[5].dinner?.recipeId).toBeTruthy();
+  });
 });
 
 describe('suggestRecipe — suggestionEnabled', () => {
