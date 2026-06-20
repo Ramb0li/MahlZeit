@@ -3,7 +3,7 @@
  */
 import { setRequestLocale } from 'next-intl/server';
 import { redirect }         from 'next/navigation';
-import { getRecipes, getSettings, getConstraints } from '@/lib/data';
+import { getVisibleRecipes, getSettings, getConstraints } from '@/lib/data';
 import { getSession }                              from '@/lib/auth';
 import { getUserByEmail, getAccessState }          from '@/lib/users';
 import { getGroupById }                            from '@/lib/groups';
@@ -37,10 +37,7 @@ export default async function AppPage({ params, searchParams }: PageProps) {
     redirect(`/${locale}/auth?error=no_group`);
   }
 
-  const recipesRaw = await getRecipes(groupId);
-  const recipes = process.env.UPSTASH_REDIS_REST_URL
-    ? recipesRaw.filter(r => r.approved === true)
-    : recipesRaw;
+  const recipes = await getVisibleRecipes(groupId);
 
   const [settings, constraints, group, access] = await Promise.all([
     getSettings(groupId),

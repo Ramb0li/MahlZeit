@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { suggestWeek, suggestRecipe, colToIso, isoToCol } from '../suggestions';
+import { suggestWeek, suggestRecipe, colToIso, isoToCol, classifyMealPools } from '../suggestions';
 import type { Recipe, DayConstraint } from '@/types';
 
 function makeRecipe(overrides: Partial<Recipe> & { id: string; name: string }): Recipe {
@@ -127,6 +127,55 @@ describe('suggestWeek — weekStartDay', () => {
     // Andere Tage haben normale Vorschlaege
     expect(result[3].dinner?.recipeId).toBeTruthy();
     expect(result[5].dinner?.recipeId).toBeTruthy();
+  });
+});
+
+describe('classifyMealPools', () => {
+  it('ordnet Frühstücksgerichte nicht dem Abendessen oder Mittagessen zu', () => {
+    const muesli = makeRecipe({ id: 'bf', name: 'Müesli', tags: ['Frühstück'] });
+    const { breakfast, lunch, dinner } = classifyMealPools([muesli]);
+    expect(breakfast.map(r => r.id)).toContain('bf');
+    expect(lunch.map(r => r.id)).not.toContain('bf');
+    expect(dinner.map(r => r.id)).not.toContain('bf');
+  });
+
+  it('reine Mittagessen-Gerichte sind nicht im Abendessen-Pool', () => {
+    const lunchOnly = makeRecipe({ id: 'l1', name: 'Lunch', tags: ['Mittagessen'] });
+    const { lunch, dinner } = classifyMealPools([lunchOnly]);
+    expect(lunch.map(r => r.id)).toContain('l1');
+    expect(dinner.map(r => r.id)).not.toContain('l1');
+  });
+
+  it('Mittagessen+Abendessen-Gerichte sind in beiden Pools', () => {
+    const both = makeRecipe({ id: 'b1', name: 'Both', tags: ['Mittagessen', 'Abendessen'] });
+    const { lunch, dinner } = classifyMealPools([both]);
+    expect(lunch.map(r => r.id)).toContain('b1');
+    expect(dinner.map(r => r.id)).toContain('b1');
+  });
+
+  it('untaggte Gerichte sind Abendessen, nicht Mittagessen/Frühstück', () => {
+    const plain = makeRecipe({ id: 'p1', name: 'Plain' });
+    const { breakfast, lunch, dinner } = classifyMealPools([plain]);
+    expect(dinner.map(r => r.id)).toContain('p1');
+    expect(lunch.map(r => r.id)).not.toContain('p1');
+    expect(breakfast.map(r => r.id)).not.toContain('p1');
+  });
+
+  it('schliesst Snacks/Desserts vom Abendessen aus', () => {
+    const dessert = makeRecipe({ id: 'd1', name: 'Kuchen', category: 'Desserts & Süsses' });
+    const snack   = makeRecipe({ id: 's1', name: 'Chips', category: 'Snacks & Vorspeisen' });
+    const { dinner } = classifyMealPools([dessert, snack]);
+    expect(dinner).toHaveLength(0);
+  });
+});
+
+describe('suggestWeek — Mahlzeit-Zuordnung (Regression Müesli-zum-Abendessen)', () => {
+  it('schlägt nie ein Frühstücksgericht als Abendessen vor', () => {
+    const muesli = makeRecipe({ id: 'bf', name: 'Müesli', tags: ['Frühstück'] });
+    const normal = makeRecipe({ id: 'n1', name: 'Pasta' });
+    const result = suggestWeek([muesli, normal], [], {}, 'Sommer', { showDinner: true });
+    const dinnerIds = Object.values(result).map(d => d.dinner?.recipeId).filter(Boolean);
+    expect(dinnerIds).not.toContain('bf');
   });
 });
 

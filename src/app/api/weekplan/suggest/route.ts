@@ -2,8 +2,8 @@ export const dynamic = 'force-dynamic';
 
 import { NextResponse } from 'next/server';
 import { getSessionWithGroup as getSession } from '@/lib/session';
-import { getRecipes, getConstraints, getWeatherCache, getWeekPlan, saveWeekPlan, getSettings, getFavorites, getPromotions } from '@/lib/data';
-import { suggestWeek, suggestRecipe, getEffectiveDietCategory, colToIso } from '@/lib/suggestions';
+import { getVisibleRecipes, getConstraints, getWeatherCache, getWeekPlan, saveWeekPlan, getSettings, getFavorites, getPromotions } from '@/lib/data';
+import { suggestWeek, suggestRecipe, getEffectiveDietCategory, colToIso, classifyMealPools } from '@/lib/suggestions';
 import { getCurrentSeason, getWeatherTypeFromTemp } from '@/lib/utils';
 import type { WeatherType, Promotion } from '@/types';
 
@@ -24,7 +24,7 @@ export async function POST(request: Request) {
 
     const { getPantry } = await import('@/lib/data');
     const [allRecipes, constraints, weatherCache, settings, favorites, pantry, promoData] = await Promise.all([
-      getRecipes(groupId),
+      getVisibleRecipes(groupId),
       getConstraints(groupId),
       getWeatherCache(),
       getSettings(groupId),
@@ -79,17 +79,12 @@ export async function POST(request: Request) {
         [d.dinner?.recipeId, d.lunch?.recipeId].filter(Boolean) as string[]
       );
 
-      // Filter recipes by meal slot
+      // Filter recipes by meal slot — gleiche Klassifikation wie suggestWeek
+      const pools = classifyMealPools(recipes);
       const mealFiltered =
-        mealType === 'breakfast'
-          ? recipes.filter((r) => r.tags.includes('Frühstücksgericht'))
-          : mealType === 'lunch'
-            ? recipes.filter((r) => r.tags.includes('Mittagsgericht'))
-            : recipes.filter((r) =>
-                !r.tags.includes('Frühstücksgericht') &&
-                r.category !== 'Desserts & Süsses' &&
-                r.category !== 'Snacks & Vorspeisen'
-              );
+        mealType === 'breakfast' ? pools.breakfast
+        : mealType === 'lunch'   ? pools.lunch
+        :                          pools.dinner;
 
       // Favoriten-Filter: wenn favoritesOnly aktiv, nur Favoriten vorschlagen
       // Fallback auf ungefilterten Pool wenn keine Favoriten in dieser Kategorie vorhanden

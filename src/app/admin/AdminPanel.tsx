@@ -165,6 +165,7 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
   const [showImportModal, setShowImportModal] = useState(false);
   const [seeding,         setSeeding]         = useState(false);
   const [showSeedModal,   setShowSeedModal]   = useState(false);
+  const [approvingAll,    setApprovingAll]    = useState(false);
   const [togglingId,          setTogglingId]          = useState<string | null>(null);
   const [recipeStatusFilter,  setRecipeStatusFilter]  = useState<'Alle' | 'approved' | 'draft'>('Alle');
 
@@ -298,6 +299,25 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
       setRecipeNotice({ type: 'err', text: 'Netzwerkfehler.' });
     } finally {
       setSeeding(false);
+    }
+  };
+
+  const approveAll = async () => {
+    if (!window.confirm('Alle Template-Rezepte freigeben? Sie werden danach in der App angezeigt und vorgeschlagen.')) return;
+    setApprovingAll(true);
+    try {
+      const res  = await fetch('/api/admin/recipes/approve-all', { method: 'POST' });
+      const data = await res.json() as { ok?: boolean; total?: number; newlyApproved?: number; error?: string };
+      if (!res.ok) {
+        setRecipeNotice({ type: 'err', text: data.error ?? 'Freigabe fehlgeschlagen.' });
+      } else {
+        setRecipes(prev => prev.map(r => r.approved === true ? r : { ...r, approved: true }));
+        setRecipeNotice({ type: 'ok', text: `${data.newlyApproved} Rezepte neu freigegeben (${data.total} total).` });
+      }
+    } catch {
+      setRecipeNotice({ type: 'err', text: 'Netzwerkfehler.' });
+    } finally {
+      setApprovingAll(false);
     }
   };
 
@@ -667,6 +687,9 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
               </a>
               <button onClick={() => setShowSeedModal(true)} disabled={seeding} className="mz-btn-soft" title="Bundle-Rezepte nach Redis schreiben (überschreibt Prod-Daten)">
                 {seeding ? 'Laden…' : 'Seed Redis'}
+              </button>
+              <button onClick={approveAll} disabled={approvingAll} className="mz-btn-soft" title="Setzt approved=true auf allen Template-Rezepten (einmalige Massen-Freigabe)">
+                {approvingAll ? 'Laden…' : 'Alle freigeben'}
               </button>
               <button onClick={() => setEditingRecipe('new')} className="mz-btn-primary">
                 + Neues Rezept

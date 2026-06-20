@@ -2,7 +2,7 @@ export const dynamic = 'force-dynamic';
 
 import { NextResponse } from 'next/server';
 import { getSessionWithGroup } from '@/lib/session';
-import { getRecipes, saveRecipes } from '@/lib/data';
+import { getRecipes, getVisibleRecipes, saveRecipes } from '@/lib/data';
 import type { Recipe } from '@/types';
 
 async function requireGroup(): Promise<{ groupId: string } | NextResponse> {
@@ -16,11 +16,7 @@ export async function GET() {
   try {
     const gate = await requireGroup();
     if (gate instanceof NextResponse) return gate;
-    const recipes = await getRecipes(gate.groupId);
-    if (!process.env.UPSTASH_REDIS_REST_URL) {
-      return NextResponse.json(recipes);
-    }
-    return NextResponse.json(recipes.filter(r => r.approved === true));
+    return NextResponse.json(await getVisibleRecipes(gate.groupId));
   } catch {
     return NextResponse.json({ error: 'Fehler beim Laden der Rezepte' }, { status: 500 });
   }

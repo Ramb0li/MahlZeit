@@ -178,6 +178,36 @@ export interface SuggestWeekOptions {
 const BREAKFAST_CATS  = new Set<Category>();
 const EXCLUDED_CATS   = new Set<Category>(['Snacks & Vorspeisen', 'Desserts & Süsses']);
 
+// ── Mahlzeit-Klassifikation (Single Source of Truth) ──────────────────────────
+// Verbindliches Tag-Vokabular (aus den Rezeptdaten verifiziert):
+//   'Frühstück' · 'Mittagessen' · 'Abendessen'
+// Wird von suggestWeek UND der Einzel-Slot-Route (weekplan/suggest) genutzt, damit
+// beide Pfade nie wieder divergieren. Frühere Bug-Klasse: Die Route filterte auf
+// 'Frühstücksgericht'/'Mittagsgericht' (0 bzw. 1 Treffer) → Frühstück landete beim
+// Abendessen, Mittagessen-Pool war praktisch leer.
+export function classifyMealPools(recipes: Recipe[]): {
+  breakfast: Recipe[];
+  lunch: Recipe[];
+  dinner: Recipe[];
+} {
+  const isBreakfast = (r: Recipe) =>
+    BREAKFAST_CATS.has(r.category) || r.tags.includes('Frühstück');
+
+  const breakfast = recipes.filter(isBreakfast);
+  // Mittagessen: getaggt 'Mittagessen', kein Frühstück
+  const lunch = recipes.filter(
+    (r) => r.tags.includes('Mittagessen') && !isBreakfast(r),
+  );
+  // Abendessen: kein Frühstück, keine Snacks/Desserts; reine Mittag-Gerichte nur wenn auch 'Abendessen'
+  const dinner = recipes.filter(
+    (r) =>
+      !isBreakfast(r) &&
+      !EXCLUDED_CATS.has(r.category) &&
+      (!r.tags.includes('Mittagessen') || r.tags.includes('Abendessen')),
+  );
+  return { breakfast, lunch, dinner };
+}
+
 function isMeatRecipe(r: Recipe): boolean {
   return getEffectiveDietCategory(r) === 'meat';
 }
@@ -202,23 +232,11 @@ export function suggestWeek(
   let meatMealsThisWeek = 0;
   const carbCounts: Record<string, number> = {};
 
-  // Breakfast: tagged 'Frühstück' (Mahlzeit-Tag)
-  let breakfastRecipes = recipes.filter(
-    r => BREAKFAST_CATS.has(r.category) || r.tags.includes('Frühstück')
-  );
-  // Lunch: tagged 'Mittagessen', not breakfast
-  let lunchRecipes = recipes.filter(
-    r => r.tags.includes('Mittagessen') &&
-         !BREAKFAST_CATS.has(r.category) &&
-         !r.tags.includes('Frühstück')
-  );
-  // Dinner: not breakfast, not snacks/desserts; exclude lunch-only
-  let dinnerRecipes = recipes.filter(
-    r => !BREAKFAST_CATS.has(r.category) &&
-         !r.tags.includes('Frühstück') &&
-         !EXCLUDED_CATS.has(r.category) &&
-         (!r.tags.includes('Mittagessen') || r.tags.includes('Abendessen'))
-  );
+  // Mahlzeit-Pools aus der gemeinsamen Klassifikation (gleiche Logik wie Einzel-Slot-Route)
+  const pools = classifyMealPools(recipes);
+  let breakfastRecipes = pools.breakfast;
+  let lunchRecipes     = pools.lunch;
+  let dinnerRecipes    = pools.dinner;
 
   // favoritesOnly: gesamten Pool auf Favoriten einschränken
   const favSet = new Set(favorites);
@@ -281,10 +299,10 @@ export function suggestWeek(
         const favFiltered = isFavDay ? favDinnerPool.filter(r => basePool.some(b => b.id === r.id)) : [];
         const dinnerPool = favFiltered.length > 0 ? favFiltered : basePool;
         const sharedOpts = { weatherType, season, usedThisWeek: usedIds, allergiesAndAversions, carbCounts, pantryIngredients, promotions };
+        // Fallback-Leiter (Garantie): mit Constraint → ohne Constraint → ohne Flexitarisch-Restriktion.
+        // Solange dinnerRecipes nicht leer ist (und keine Allergene alles ausschliessen), gibt es einen Treffer.
         let dinner = suggestRecipe(dinnerPool, { ...sharedOpts, constraint: dinnerConstraint });
-        // Fallback 1: ignore maxTime/mealprep constraint
         if (!dinner) dinner = suggestRecipe(dinnerPool, sharedOpts);
-        // Fallback 2: also ignore flexitarisch restriction
         if (!dinner) dinner = suggestRecipe(dinnerRecipes, sharedOpts);
         if (dinner) {
           result[day].dinner = { recipeId: dinner.id };
@@ -293,6 +311,9 @@ export function suggestWeek(
           // KH-Tracking für Abwechslungs-Scoring
           const ct = getCarbType(dinner);
           if (ct) carbCounts[ct] = (carbCounts[ct] ?? 0) + 1;
+        } else if (dinnerRecipes.length > 0) {
+          // Diagnose: Pool nicht leer, aber kein Treffer → nur Allergen-/suggestionEnabled-Filter können das.
+          console.warn(`[suggestWeek] Dinner-Slot (Spalte ${day}, ISO ${isoDay}) bleibt leer trotz ${dinnerRecipes.length} Pool-Rezepten — vermutlich Allergen-Filter.`);
         }
       }
     }

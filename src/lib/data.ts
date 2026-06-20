@@ -283,6 +283,19 @@ export async function getRecipes(groupId?: string): Promise<Recipe[]> {
   return [...templates.filter(t => !overriddenIds.has(t.id)), ...custom];
 }
 
+/**
+ * Sichtbare Rezepte = exakt das, was der User in der UI sieht.
+ * Single Source of Truth für die Approval-Sichtbarkeit (vorher an 3 Stellen dupliziert:
+ * page.tsx, GET /api/recipes, und FEHLEND in der Suggest-Route).
+ * Prod (Redis): nur freigegebene Rezepte. Dev (JSON): alle (spiegelt bisheriges Verhalten).
+ * Garantie: jeder vorgeschlagene recipeId ist im Frontend auflösbar.
+ */
+export async function getVisibleRecipes(groupId?: string): Promise<Recipe[]> {
+  const all = await getRecipes(groupId);
+  if (!USE_REDIS) return all;
+  return all.filter(r => r.approved === true);
+}
+
 export async function saveRecipes(recipes: Recipe[], groupId?: string): Promise<void> {
   // Legacy: ohne groupId überschreiben wir die Templates (Admin-Tooling).
   if (!groupId) {
