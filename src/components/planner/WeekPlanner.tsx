@@ -3,10 +3,32 @@ import { useState, useEffect, useCallback } from 'react';
 import { ChevronLeft, ChevronRight, Sparkles, RefreshCw, Trash2, Printer, Heart } from 'lucide-react';
 import { format, getISOWeek } from 'date-fns';
 import { de } from 'date-fns/locale';
+import {
+  DndContext, DragOverlay, MouseSensor, TouchSensor, useSensor, useSensors, closestCenter,
+  type DragStartEvent, type DragEndEvent,
+} from '@dnd-kit/core';
 import { getWeekId, getWeekDays, nextWeek, prevWeek, formatDate, getInitialDisplayWeek } from '@/lib/utils';
 import { DayColumn } from './DayColumn';
 import { ShoppingGroupsBar } from './ShoppingGroupsBar';
+import { PhotoSlot } from '@/components/ui/PhotoSlot';
 import type { WeekPlan, Recipe, WeatherCache, DayConstraint, AppSettings, MealSlot, ShoppingGroups, SideIngredient } from '@/types';
+
+type MealKind = 'breakfast' | 'lunch' | 'dinner';
+interface ActiveDrag { dayIndex: number; mealType: MealKind; recipe: Recipe | null; label: string; }
+
+/** Tauscht zwei gleichnamige Mahlzeit-Slots zwischen zwei Tagen (immutable). Eigene Inverse. */
+function swapMealsInPlan(plan: WeekPlan | null, dayA: number, dayB: number, mealType: MealKind): WeekPlan | null {
+  if (!plan || dayA === dayB) return plan;
+  const days = { ...plan.days };
+  const emptyDay = { dinner: { recipeId: null }, showLunch: false };
+  const slotA = days[dayA]?.[mealType] ?? { recipeId: null };
+  const slotB = days[dayB]?.[mealType] ?? { recipeId: null };
+  days[dayA] = { ...(days[dayA] ?? emptyDay), [mealType]: slotB };
+  days[dayB] = { ...(days[dayB] ?? emptyDay), [mealType]: slotA };
+  return { ...plan, days };
+}
+
+const MEAL_LABEL: Record<MealKind, string> = { breakfast: 'Frühstück', lunch: 'Mittag', dinner: 'Abendessen' };
 
 interface WeekPlannerProps {
   recipes: Recipe[];
@@ -45,6 +67,14 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe, onOp
   const [isClearing, setIsClearing] = useState(false);
   const [loading, setLoading] = useState(true);
   const [favoritesOnly, setFavoritesOnly] = useState(false);
+  const [activeDrag, setActiveDrag] = useState<ActiveDrag | null>(null);
+
+  // Drag-and-Drop Sensoren: Desktop = Maus (8px Schwelle, Klicks bleiben Klicks);
+  // Mobile = Touch mit Long-Press (200ms), damit normales Scrollen/Tippen erhalten bleibt.
+  const dndSensors = useSensors(
+    useSensor(MouseSensor, { activationConstraint: { distance: 8 } }),
+    useSensor(TouchSensor, { activationConstraint: { delay: 200, tolerance: 8 } }),
+  );
 
   const weekId = getWeekId(currentDate);
   const weekDays = getWeekDays(currentDate, weekStartDay);
@@ -421,6 +451,44 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe, onOp
     setWeekPlan(updated);
   };
 
+  const handleDragStart = (event: DragStartEvent) => {
+    const data = event.active.data.current as { dayIndex: number; mealType: MealKind } | undefined;
+    if (!data) return;
+    const slot = weekPlan?.days?.[data.dayIndex]?.[data.mealType];
+    const recipe = slot?.recipeId ? recipes.find((r) => r.id === slot.recipeId) ?? null : null;
+    setActiveDrag({ ...data, recipe, label: MEAL_LABEL[data.mealType] });
+  };
+
+  // Tausch zweier gleichnamiger Slots: optimistisch sofort, dann beide Tage persistieren.
+  const handleDragEnd = async (event: DragEndEvent) => {
+    setActiveDrag(null);
+    const { active, over } = event;
+    if (!over || active.id === over.id) return;
+    const a = active.data.current as { dayIndex: number; mealType: MealKind } | undefined;
+    const b = over.data.current   as { dayIndex: number; mealType: MealKind } | undefined;
+    if (!a || !b || a.mealType !== b.mealType || a.dayIndex === b.dayIndex) return;
+
+    const slotA = weekPlan?.days?.[a.dayIndex]?.[a.mealType] ?? { recipeId: null };
+    const slotB = weekPlan?.days?.[b.dayIndex]?.[b.mealType] ?? { recipeId: null };
+
+    setWeekPlan((prev) => swapMealsInPlan(prev, a.dayIndex, b.dayIndex, a.mealType));
+
+    try {
+      await fetch('/api/weekplan', {
+        method: 'PUT', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ weekId, day: a.dayIndex, mealType: a.mealType, slot: slotB }),
+      });
+      const res = await fetch('/api/weekplan', {
+        method: 'PUT', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ weekId, day: b.dayIndex, mealType: b.mealType, slot: slotA }),
+      });
+      setWeekPlan(await res.json());
+    } catch {
+      // Fehlschlag: optimistischen Tausch rückgängig machen (Swap ist seine eigene Inverse)
+      setWeekPlan((prev) => swapMealsInPlan(prev, a.dayIndex, b.dayIndex, a.mealType));
+    }
+  };
+
   const handleSaveNote = async (dayIndex: number, note: string) => {
     const res = await fetch('/api/weekplan', {
       method: 'PUT',
@@ -583,7 +651,14 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe, onOp
           Wird geladen…
         </div>
       ) : (
-        <div className="mz-mag-grid" style={{ overflowX: 'auto', paddingBottom: 12 }}>
+        <DndContext
+          sensors={dndSensors}
+          collisionDetection={closestCenter}
+          onDragStart={handleDragStart}
+          onDragEnd={handleDragEnd}
+          onDragCancel={() => setActiveDrag(null)}
+        >
+          <div className="mz-mag-grid" style={{ overflowX: 'auto', paddingBottom: 12 }}>
             {weekDays.map((date, i) => {
               const dayIndex = i + 1;
               const jsDay = date.getDay(); // 0=So, 1=Mo ... 6=Sa
@@ -615,10 +690,30 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe, onOp
                   locked={locked}
                   onLockedAction={onLockedAction}
                   favoritesOnly={favoritesOnly}
+                  dndEnabled={!locked}
                 />
               );
             })}
-        </div>
+          </div>
+
+          <DragOverlay dropAnimation={null}>
+            {activeDrag ? (
+              <div style={{ width: 150, borderRadius: 14, overflow: 'hidden', boxShadow: 'var(--shadow-lg)', background: 'var(--card)', cursor: 'grabbing', transform: 'rotate(2deg)' }}>
+                <div style={{ height: 90, position: 'relative' }}>
+                  {activeDrag.recipe?.imageUrl ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={activeDrag.recipe.imageUrl} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  ) : (
+                    <PhotoSlot category={activeDrag.recipe?.category} />
+                  )}
+                </div>
+                <div style={{ padding: '6px 9px', fontSize: 12, fontWeight: 600, color: 'var(--ink)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                  {activeDrag.recipe?.name ?? activeDrag.label}
+                </div>
+              </div>
+            ) : null}
+          </DragOverlay>
+        </DndContext>
       )}
 
       {/* Bestätigung vor dem Überschreiben einer bereits gefüllten Woche */}

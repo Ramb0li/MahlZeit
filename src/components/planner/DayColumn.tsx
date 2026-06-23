@@ -3,7 +3,8 @@ import { useState, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { format } from 'date-fns';
 import { de } from 'date-fns/locale';
-import { Plus, Sparkles, Trash2, UtensilsCrossed, X } from 'lucide-react';
+import { useDraggable, useDroppable } from '@dnd-kit/core';
+import { Plus, Sparkles, Trash2, UtensilsCrossed, X, GripVertical } from 'lucide-react';
 import { formatDate, calculatePortions, COMMON_UNITS } from '@/lib/utils';
 import { WeatherIcon } from '@/components/ui/WeatherIcon';
 import { Badge } from '@/components/ui/Badge';
@@ -31,6 +32,7 @@ interface DayColumnProps {
   locked?: boolean;
   onLockedAction?: () => void;
   favoritesOnly?: boolean;
+  dndEnabled?: boolean;
 }
 
 export function DayColumn({
@@ -38,7 +40,7 @@ export function DayColumn({
   weather, settings, weekId, onUpdate, onToggleConstraint, onViewRecipe, onOpenMeal,
   onSaveNote, onSaveSideIngredient, onRemoveSideIngredient,
   locked = false, onLockedAction,
-  favoritesOnly = false,
+  favoritesOnly = false, dndEnabled = false,
 }: DayColumnProps) {
   const [pickerOpen, setPickerOpen]         = useState<'breakfast' | 'lunch' | 'dinner' | null>(null);
   const [pickerOpenSide, setPickerOpenSide] = useState<'breakfast' | 'lunch' | 'dinner' | null>(null);
@@ -220,6 +222,8 @@ export function DayColumn({
             sideIsLeftovers={breakfastSlot?.sideIsLeftovers}
             sideIngredients={breakfastSlot?.sideIngredients}
             mealType="breakfast"
+            dayIndex={dayIndex}
+            dndEnabled={dndEnabled}
             suggesting={false}
             defaultPortions={defaultPortions}
             sidePortionOverride={breakfastSlot?.sidePortionOverride}
@@ -245,6 +249,8 @@ export function DayColumn({
             sideIsLeftovers={lunchSlot?.sideIsLeftovers}
             sideIngredients={lunchSlot?.sideIngredients}
             mealType="lunch"
+            dayIndex={dayIndex}
+            dndEnabled={dndEnabled}
             suggesting={suggesting === 'lunch'}
             defaultPortions={defaultPortions}
             sidePortionOverride={lunchSlot?.sidePortionOverride}
@@ -270,6 +276,8 @@ export function DayColumn({
             sideIsLeftovers={dinnerSlot?.sideIsLeftovers}
             sideIngredients={dinnerSlot?.sideIngredients}
             mealType="dinner"
+            dayIndex={dayIndex}
+            dndEnabled={dndEnabled}
             suggesting={suggesting === 'dinner'}
             defaultPortions={defaultPortions}
             sidePortionOverride={dinnerSlot?.sidePortionOverride}
@@ -322,6 +330,8 @@ interface MealSlotCardProps {
   sideIsLeftovers?: boolean;
   sideIngredients?: SideIngredient[];
   mealType: 'breakfast' | 'lunch' | 'dinner';
+  dayIndex: number;
+  dndEnabled?: boolean;
   suggesting: boolean;
   defaultPortions: number;
   sidePortionOverride?: number;
@@ -344,7 +354,24 @@ function MealSlotCard({
   suggesting, defaultPortions, sidePortionOverride,
   onPick, onSuggest, onClear, onPickSide, onClearSide, onSidePortionChange, mealType,
   onViewRecipe, onOpenMeal, onSaveSideIngredient, onRemoveSideIngredient,
+  dayIndex, dndEnabled = false,
 }: MealSlotCardProps) {
+  // ── Drag-and-Drop: gefuellte Karten ziehbar, Slots (ausser Reste) Drop-Ziele;
+  //    Tausch nur innerhalb desselben Mahlzeit-Typs. ────────────────────────────
+  const dndId   = `${mealType}:${dayIndex}`;
+  const canDrag = dndEnabled && !!recipe && !isLeftovers;
+  const canDrop = dndEnabled && !isLeftovers;
+  const dragData = { dayIndex, mealType };
+  const { attributes, listeners, setNodeRef: setDragRef, isDragging } =
+    useDraggable({ id: dndId, data: dragData, disabled: !canDrag });
+  const { setNodeRef: setDropRef, isOver, active } =
+    useDroppable({ id: dndId, data: dragData, disabled: !canDrop });
+  const activeMeal = (active?.data.current as { mealType?: string } | undefined)?.mealType;
+  const isDropTarget = isOver && active?.id !== dndId && activeMeal === mealType;
+  const dropStyle = isDropTarget
+    ? { outline: '2px solid var(--accent)', outlineOffset: 2 }
+    : undefined;
+
   const hasSide = !!(sideRecipe || sideIsLeftovers);
   const hasAnyIngredients = !!(sideIngredients?.length);
   const sideName = sideIsLeftovers ? 'Reste essen' : sideRecipe?.name ?? '';
@@ -385,7 +412,7 @@ function MealSlotCard({
   // ── Reste essen ──────────────────────────────────────────────────────────
   if (isLeftovers && !recipe) {
     return (
-      <div className="mz-magslot leftovers group">
+      <div ref={setDropRef} className="mz-magslot leftovers group">
         <span className="mz-slot-label">{label}</span>
         <div className="mz-leftovers-body">
           <UtensilsCrossed size={14} />
@@ -557,9 +584,23 @@ function MealSlotCard({
   // ── Rezept ausgewählt ─────────────────────────────────────────────────────
   if (recipe) {
     return (
-      <div className="mz-magslot filled group">
-        {/* Bildsektion */}
-        <div style={{ position: 'relative', height: 132, flexShrink: 0, borderRadius: 'inherit', overflow: 'hidden' }}>
+      <div ref={setDropRef} className="mz-magslot filled group" style={{ ...dropStyle, opacity: isDragging ? 0.4 : undefined }}>
+        {/* Bildsektion — zugleich Drag-Griff (Maus: ziehen; Mobile: Long-Press) */}
+        <div
+          ref={canDrag ? setDragRef : undefined}
+          {...(canDrag ? listeners : {})}
+          {...(canDrag ? attributes : {})}
+          style={{ position: 'relative', height: 132, flexShrink: 0, borderRadius: 'inherit', overflow: 'hidden', cursor: canDrag ? 'grab' : undefined, touchAction: canDrag ? 'manipulation' : undefined }}
+        >
+          {canDrag && (
+            <div
+              className="mz-drag-grip"
+              style={{ position: 'absolute', top: 6, left: 6, zIndex: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', width: 22, height: 22, borderRadius: 6, background: 'rgba(0,0,0,0.35)', color: '#fff', pointerEvents: 'none' }}
+              title="Zum Tauschen ziehen"
+            >
+              <GripVertical size={13} />
+            </div>
+          )}
           <div className="mz-magslot-img">
             {recipe.imageUrl ? (
               // eslint-disable-next-line @next/next/no-img-element
@@ -763,7 +804,7 @@ function MealSlotCard({
 
   // ── Leer ─────────────────────────────────────────────────────────────────
   return (
-    <div className="mz-magslot empty">
+    <div ref={setDropRef} className="mz-magslot empty" style={dropStyle}>
       <span className="mz-slot-label">{label}</span>
       <div className="mz-empty-actions">
         <button onClick={onPick} className="mz-empty-pick">
