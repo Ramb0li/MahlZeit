@@ -595,7 +595,7 @@ function MealSlotCard({
           {canDrag && (
             <div
               className="mz-drag-grip"
-              style={{ position: 'absolute', top: 6, left: 6, zIndex: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', width: 22, height: 22, borderRadius: 6, background: 'rgba(0,0,0,0.35)', color: '#fff', pointerEvents: 'none' }}
+              style={{ position: 'absolute', top: 10, left: 6, zIndex: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', width: 21, height: 21, borderRadius: 6, background: 'rgba(0,0,0,0.35)', color: '#fff', pointerEvents: 'none' }}
               title="Zum Tauschen ziehen"
             >
               <GripVertical size={13} />
@@ -610,7 +610,7 @@ function MealSlotCard({
             )}
           </div>
           <div className="mz-magslot-grad" />
-          <span className="mz-slot-label on-img">{label}</span>
+          <span className="mz-slot-label on-img" style={canDrag ? { left: 36 } : undefined}>{label}</span>
           <div className="mz-magslot-info">
             <p
               className="mz-magslot-name mz-clamp2"
