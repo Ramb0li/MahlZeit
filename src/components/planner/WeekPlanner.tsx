@@ -546,16 +546,11 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe, onOp
     <div className="mz-planner">
       <div className="mz-plbar">
         <div className="mz-plbar-l">
-          {/* MahlZyt wordmark + subtitle */}
+          {/* Seitentitel + Haushalt-Subtitel */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
-            <div style={{ display: 'flex', alignItems: 'baseline', gap: 8 }}>
-              <span style={{ fontSize: 18, fontWeight: 900, letterSpacing: '-0.03em', color: '#271f1a' }}>
-                Mahl<span style={{ color: '#d9543b' }}>Zeit</span>
-              </span>
-              <span className="mz-hide-sm" style={{ fontSize: 11, fontWeight: 600, letterSpacing: '0.05em', color: '#9a8c80', textTransform: 'uppercase' }}>
-                Menüplaner
-              </span>
-            </div>
+            <span style={{ fontSize: 18, fontWeight: 900, letterSpacing: '-0.03em', color: '#271f1a' }}>
+              Mahlzeit-Planer
+            </span>
             <span className="mz-hide-sm" style={{ fontSize: 11, color: '#9a8c80' }}>{householdLabel}</span>
           </div>
 

@@ -243,8 +243,8 @@ export function RecipeList({ initialRecipes, allergiesAndAversions = [], isPremi
       {/* Page title */}
       <div className="flex items-end justify-between">
         <div>
-          <p className="text-xs font-bold uppercase tracking-widest mb-0.5" style={{ color: '#9a8c80' }}>Bibliothek</p>
           <h1 className="mz-view-title" style={{ marginBottom: 0 }}>Rezepte</h1>
+          <p className="text-sm mt-0.5" style={{ color: '#9a8c80' }}>Bibliothek</p>
         </div>
         <div className="flex items-center gap-2">
           <button

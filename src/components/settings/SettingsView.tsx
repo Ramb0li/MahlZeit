@@ -449,6 +449,9 @@ export function SettingsView({
     <SectionCtx.Provider value={{ openSections, toggleSection }}>
     <div className="max-w-3xl space-y-3">
 
+      {/* Seitentitel */}
+      <h1 className="mz-view-title" style={{ marginBottom: 0 }}>Einstellungen</h1>
+
       {/* ── Haushalt & Ernährung ─────────────────────────────────────────── */}
       <CatLabel label="Haushalt & Ernährung" />
       {/* ── Haushaltsgrösse ──────────────────────────────────────────────── (war unten) */}
