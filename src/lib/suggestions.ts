@@ -28,6 +28,28 @@ export function getCarbType(r: Recipe): string | null {
   return null;
 }
 
+// ── Hauptzutaten-Tokens aus dem Rezeptnamen ──────────────────────────────────
+// Der Name nennt i.d.R. die prägenden Zutaten ("Tomaten-Mozzarella-Salat").
+// Genutzt für die Wochen-Abwechslung (zwei Tomaten-Gerichte vermeiden).
+// Substring-Vergleich beim Scoring fängt dt. Komposita ab ("Tomaten" ⊂ "Tomatensalat").
+const NAME_STOPWORDS = new Set([
+  'mit', 'und', 'an', 'am', 'im', 'in', 'auf', 'aus', 'vom', 'von', 'der', 'die', 'das',
+  'den', 'dem', 'zu', 'zum', 'zur', 'ohne', 'oder', 'für', 'à', 'al', 'alla', 'aux', 'con',
+  'frische', 'frischer', 'frisches', 'frischen', 'hausgemachte', 'hausgemachter',
+  'schnelle', 'schneller', 'einfache', 'einfacher', 'warme', 'warmer', 'kalte', 'kalter',
+  'cremige', 'cremiger', 'bunte', 'bunter', 'gebratene', 'gebratener', 'gebackene',
+  'salat', 'suppe', 'sauce', 'bowl', 'curry', 'eintopf', 'auflauf', 'gratin', 'gericht',
+]);
+
+export function mainIngredientTokens(r: Recipe): string[] {
+  return Array.from(new Set(
+    r.name.toLowerCase()
+      .replace(/[^a-zäöüß\s-]/g, ' ')
+      .split(/[\s-]+/)
+      .filter(t => t.length >= 5 && !NAME_STOPWORDS.has(t)),
+  ));
+}
+
 // ── Effektive Diät-Kategorie (bevorzugt dietCategory, Fallback über Kategorie/Tags) ──
 
 /**
@@ -56,11 +78,13 @@ export interface SuggestionOptions {
   lunchOnly?: boolean;
   usedThisWeek?: string[];
   allergiesAndAversions?: string[];
-  carbCounts?: Record<string, number>;   // NEU: verhindert KH-Monotonie
-  pantryIngredients?: string[];          // NEU: Vorrat-Bonus
+  carbCounts?: Record<string, number>;      // verhindert KH-Monotonie (Pasta/Reis/…)
+  categoryCounts?: Record<string, number>;  // verhindert Kategorie-Monotonie (2× Salat …)
+  usedIngredientTokens?: string[];          // verhindert Hauptzutaten-Wiederholung (2× Tomate …)
+  pantryIngredients?: string[];             // Vorrat-Bonus
 }
 
-function recipeScore(
+export function recipeScore(
   recipe: Recipe,
   options: SuggestionOptions,
   promotionKeywords: string[]
@@ -91,9 +115,27 @@ function recipeScore(
 
   if (options.usedThisWeek?.includes(recipe.id)) score -= 30;
 
-  // Kohlenhydrat-Abwechslung: -40 wenn derselbe KH-Typ bereits 2x in der Woche
+  // Kohlenhydrat-Abwechslung: eskalierender Malus ab dem 2. gleichen KH-Typ der Woche
+  // (carbN = wie oft dieser Typ schon verwendet wurde → 1. Wdh. -25, 2. Wdh. -50 …)
   const ct = getCarbType(recipe);
-  if (ct && (options.carbCounts?.[ct] ?? 0) >= 2) score -= 40;
+  const carbN = ct ? (options.carbCounts?.[ct] ?? 0) : 0;
+  if (carbN > 0) score -= 30 * carbN;
+
+  // Kategorie-Abwechslung: eskalierender Malus ab der 2. gleichen Kategorie der Woche.
+  // Stark genug (>30), damit eine Wiederholung zuverlässig aus dem Top-3-Zufallsfenster fällt.
+  const catN = options.categoryCounts?.[recipe.category] ?? 0;
+  if (catN > 0) score -= 30 * catN;
+
+  // Hauptzutaten-Abwechslung: leichter Malus, wenn eine prägende Zutat schon
+  // diese Woche vorkam (Substring-Match fängt dt. Komposita: "Tomaten" ⊂ "Tomatensalat").
+  if (options.usedIngredientTokens?.length) {
+    const used = options.usedIngredientTokens;
+    let overlaps = 0;
+    for (const t of mainIngredientTokens(recipe)) {
+      if (used.some(u => u === t || t.includes(u) || u.includes(t))) overlaps++;
+    }
+    if (overlaps > 0) score -= Math.min(overlaps * 12, 24);
+  }
 
   // Vorrat-Bonus: +15 wenn Rezept eine "Reste verwerten"-Zutat enthält
   if (options.pantryIngredients?.length) {
@@ -231,6 +273,16 @@ export function suggestWeek(
   const usedIds: string[] = [];
   let meatMealsThisWeek = 0;
   const carbCounts: Record<string, number> = {};
+  const categoryCounts: Record<string, number> = {};
+  const usedIngredientTokens: string[] = [];
+  // Alle Vielfalt-Zähler nach einer Wahl aktualisieren (Mittag + Abend teilen sie sich,
+  // Abend wird vor Mittag berechnet → wirkt auch innerhalb desselben Tages).
+  const trackVariety = (r: Recipe) => {
+    const ct = getCarbType(r);
+    if (ct) carbCounts[ct] = (carbCounts[ct] ?? 0) + 1;
+    categoryCounts[r.category] = (categoryCounts[r.category] ?? 0) + 1;
+    for (const t of mainIngredientTokens(r)) usedIngredientTokens.push(t);
+  };
 
   // Mahlzeit-Pools aus der gemeinsamen Klassifikation (gleiche Logik wie Einzel-Slot-Route)
   const pools = classifyMealPools(recipes);
@@ -298,7 +350,7 @@ export function suggestWeek(
         const isFavDay = favoriteDayIndex === day && favDinnerPool.length > 0;
         const favFiltered = isFavDay ? favDinnerPool.filter(r => basePool.some(b => b.id === r.id)) : [];
         const dinnerPool = favFiltered.length > 0 ? favFiltered : basePool;
-        const sharedOpts = { weatherType, season, usedThisWeek: usedIds, allergiesAndAversions, carbCounts, pantryIngredients, promotions };
+        const sharedOpts = { weatherType, season, usedThisWeek: usedIds, allergiesAndAversions, carbCounts, categoryCounts, usedIngredientTokens, pantryIngredients, promotions };
         // Fallback-Leiter (Garantie): mit Constraint → ohne Constraint → ohne Flexitarisch-Restriktion.
         // Solange dinnerRecipes nicht leer ist (und keine Allergene alles ausschliessen), gibt es einen Treffer.
         let dinner = suggestRecipe(dinnerPool, { ...sharedOpts, constraint: dinnerConstraint });
@@ -308,9 +360,7 @@ export function suggestWeek(
           result[day].dinner = { recipeId: dinner.id };
           usedIds.push(dinner.id);
           if (isMeatRecipe(dinner)) meatMealsThisWeek++;
-          // KH-Tracking für Abwechslungs-Scoring
-          const ct = getCarbType(dinner);
-          if (ct) carbCounts[ct] = (carbCounts[ct] ?? 0) + 1;
+          trackVariety(dinner);
         } else if (dinnerRecipes.length > 0) {
           // Diagnose: Pool nicht leer, aber kein Treffer → nur Allergen-/suggestionEnabled-Filter können das.
           console.warn(`[suggestWeek] Dinner-Slot (Spalte ${day}, ISO ${isoDay}) bleibt leer trotz ${dinnerRecipes.length} Pool-Rezepten — vermutlich Allergen-Filter.`);
@@ -326,15 +376,14 @@ export function suggestWeek(
         const src = reservedLeftovers.get(day)!;
         if (result[src]?.dinner?.recipeId) result[day].lunch = { recipeId: null, isLeftovers: true };
       } else {
-        const lunchOpts = { weatherType, season, usedThisWeek: usedIds, lunchOnly: true as const, allergiesAndAversions, carbCounts, pantryIngredients, promotions };
+        const lunchOpts = { weatherType, season, usedThisWeek: usedIds, lunchOnly: true as const, allergiesAndAversions, carbCounts, categoryCounts, usedIngredientTokens, pantryIngredients, promotions };
         let lunch = suggestRecipe(lunchRecipes, { ...lunchOpts, constraint: lunchConstraint });
         // Fallback: ignore constraint
         if (!lunch) lunch = suggestRecipe(lunchRecipes, lunchOpts);
         if (lunch) {
           result[day].lunch = { recipeId: lunch.id };
           usedIds.push(lunch.id);
-          const ct = getCarbType(lunch);
-          if (ct) carbCounts[ct] = (carbCounts[ct] ?? 0) + 1;
+          trackVariety(lunch);
         }
       }
     }

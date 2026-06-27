@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import { suggestWeek, suggestRecipe, colToIso, isoToCol, classifyMealPools } from '../suggestions';
-import type { Recipe, DayConstraint } from '@/types';
+import { suggestWeek, suggestRecipe, colToIso, isoToCol, classifyMealPools, recipeScore } from '../suggestions';
+import type { Recipe, DayConstraint, Category } from '@/types';
 
 function makeRecipe(overrides: Partial<Recipe> & { id: string; name: string }): Recipe {
   return {
@@ -176,6 +176,58 @@ describe('suggestWeek — Mahlzeit-Zuordnung (Regression Müesli-zum-Abendessen)
     const result = suggestWeek([muesli, normal], [], {}, 'Sommer', { showDinner: true });
     const dinnerIds = Object.values(result).map(d => d.dinner?.recipeId).filter(Boolean);
     expect(dinnerIds).not.toContain('bf');
+  });
+});
+
+describe('recipeScore — Wochen-Abwechslung', () => {
+  // Maluse (>=12) sind grösser als der Zufallsanteil (max +5) → Vergleiche sind deterministisch.
+  const salad = makeRecipe({ id: 'sal', name: 'Tomatensalat mit Burrata', category: 'Salate & Bowls' });
+  const pasta = makeRecipe({ id: 'pa', name: 'Spaghetti Napoli', category: 'Pasta & Teigwaren' });
+
+  it('bestraft bereits den 2. gleichen KH-Typ', () => {
+    const fresh  = recipeScore(pasta, {}, []);
+    const repeat = recipeScore(pasta, { carbCounts: { pasta: 1 } }, []);
+    expect(repeat).toBeLessThan(fresh);
+  });
+
+  it('eskaliert den KH-Malus mit der Anzahl', () => {
+    const second = recipeScore(pasta, { carbCounts: { pasta: 1 } }, []);
+    const third  = recipeScore(pasta, { carbCounts: { pasta: 2 } }, []);
+    expect(third).toBeLessThan(second);
+  });
+
+  it('bestraft die 2. gleiche Kategorie', () => {
+    const fresh  = recipeScore(salad, {}, []);
+    const repeat = recipeScore(salad, { categoryCounts: { 'Salate & Bowls': 1 } }, []);
+    expect(repeat).toBeLessThan(fresh);
+  });
+
+  it('bestraft eine wiederholte Hauptzutat (auch als Kompositum)', () => {
+    const fresh  = recipeScore(salad, {}, []);
+    // "tomaten" ist Substring von "tomatensalat" → Überlappung erkannt
+    const repeat = recipeScore(salad, { usedIngredientTokens: ['tomaten'] }, []);
+    expect(repeat).toBeLessThan(fresh);
+  });
+});
+
+describe('suggestWeek — abwechslungsreiche Woche', () => {
+  it('vergibt 7 unterschiedliche Kategorien und max. 1 Pasta bei genügend Pool', () => {
+    const cats: Category[] = [
+      'Salate & Bowls', 'Suppen, Eintöpfe & Currys', 'Fleisch & Geflügel',
+      'Fisch & Meeresfrüchte', 'Gemüsegerichte', 'Aufläufe & Gratins',
+      'Wraps, Sandwiches & Burger', 'Eiergerichte',
+    ];
+    const pool: Recipe[] = [
+      ...cats.map((c, i) => makeRecipe({ id: `c${i}`, name: `Gericht ${i}`, category: c, tags: ['Abendessen'] })),
+      makeRecipe({ id: 'pa1', name: 'Spaghetti Napoli', category: 'Pasta & Teigwaren', tags: ['Abendessen'] }),
+      makeRecipe({ id: 'pa2', name: 'Penne Arrabiata', category: 'Pasta & Teigwaren', tags: ['Abendessen'] }),
+    ];
+    const result = suggestWeek(pool, [], {}, 'Sommer', { showDinner: true });
+    const picked = Object.values(result).map(d => d.dinner?.recipeId).filter(Boolean) as string[];
+    const pickedCats = picked.map(id => pool.find(r => r.id === id)!.category);
+    expect(picked.length).toBe(7);
+    expect(new Set(pickedCats).size).toBe(7);                         // alle Tage andere Kategorie
+    expect(picked.filter(id => id.startsWith('pa')).length).toBeLessThanOrEqual(1); // höchstens 1 Pasta
   });
 });
 
