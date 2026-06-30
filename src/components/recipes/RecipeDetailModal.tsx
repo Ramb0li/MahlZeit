@@ -2,6 +2,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { X, Pencil, UtensilsCrossed } from 'lucide-react';
 import { type Recipe, type Ingredient, type IngredientGroup, type RecipeRating, type EuAllergen, TAG_GROUPS } from '@/types';
+import { scaleDisplayAmount } from '@/lib/utils';
 
 // ─── Diet display mapping ─────────────────────────────────────────────────────
 
@@ -32,14 +33,6 @@ const EU_ALLERGEN_LABELS: Record<EuAllergen, string> = {
 };
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
-
-function scaleAmount(amount: number, base: number, current: number): number {
-  if (base === 0) return amount;
-  const scaled = (amount / base) * current;
-  if (scaled >= 10) return Math.round(scaled);
-  if (scaled >= 1)  return Math.round(scaled * 10) / 10;
-  return Math.round(scaled * 100) / 100;
-}
 
 function formatAmount(amount: number): string {
   if (amount === 0) return '';
@@ -108,7 +101,7 @@ function IngredientTable({ ingredients, base, portions }: {
   return (
     <div className="space-y-1.5">
       {ingredients.map((ing, i) => {
-        const scaled = scaleAmount(ing.amount, base, portions);
+        const scaled = scaleDisplayAmount(ing.amount, base, portions);
         return (
           <div key={i} className="flex items-baseline gap-2 text-sm">
             <span className="text-right font-medium shrink-0" style={{ minWidth: 60, color: '#9a8c80', fontSize: 13 }}>
@@ -260,7 +253,7 @@ interface RecipeDetailModalProps {
   isAdmin?: boolean;
   onClose: () => void;
   onEdit?: (recipe: Recipe) => void;
-  onStartCooking?: (recipe: Recipe) => void;
+  onStartCooking?: (recipe: Recipe, portions: number) => void;
   /** Wenn gesetzt: Modal wurde aus einem Menüplan-Slot geöffnet → Portionen speicherbar */
   portionContext?: { initialPortions: number };
   onSavePortions?: (portions: number) => void | Promise<void>;
@@ -580,7 +573,7 @@ export function RecipeDetailModal({
           )}
           {onStartCooking && (
             <button
-              onClick={() => onStartCooking(recipe)}
+              onClick={() => onStartCooking(recipe, portions)}
               className="flex items-center gap-2 px-5 py-2 rounded-full text-sm font-semibold transition-opacity hover:opacity-85"
               style={{
                 backgroundColor: hasSteps ? '#d9543b' : '#9a8c80',

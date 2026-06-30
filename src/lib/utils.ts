@@ -88,6 +88,23 @@ export function scaleIngredientAmount(
   return Math.round(scaled);
 }
 
+/**
+ * Skaliert eine Zutatenmenge für die ANZEIGE — bewusst feinere Rundung als
+ * scaleIngredientAmount (Einkaufsliste). Wird von Rezeptdetail UND Kochmodus
+ * genutzt, damit beide exakt dieselben Mengen zeigen.
+ */
+export function scaleDisplayAmount(
+  amount: number,
+  basePortions: number,
+  targetPortions: number
+): number {
+  if (basePortions === 0) return amount;
+  const scaled = (amount / basePortions) * targetPortions;
+  if (scaled >= 10) return Math.round(scaled);
+  if (scaled >= 1)  return Math.round(scaled * 10) / 10;
+  return Math.round(scaled * 100) / 100;
+}
+
 export function getCurrentSeason(): string {
   const month = new Date().getMonth() + 1;
   if (month >= 3 && month <= 5) return 'Frühling';

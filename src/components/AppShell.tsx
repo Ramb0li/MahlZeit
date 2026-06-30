@@ -74,6 +74,7 @@ export function AppShell({
   const [upgradeOpen,       setUpgradeOpen]       = useState(false);
   const [detailRecipe,      setDetailRecipe]      = useState<Recipe | null>(null);
   const [cookingRecipe,     setCookingRecipe]      = useState<Recipe | null>(null);
+  const [cookingPortions,   setCookingPortions]    = useState<number | undefined>(undefined);
   const [pendingEditRecipe, setPendingEditRecipe]  = useState<Recipe | null>(null);
 
   // Menüplan-Kontext, wenn das Detail-Modal aus einem Slot geöffnet wurde (Portionen speicherbar)
@@ -244,8 +245,9 @@ export function AppShell({
             setActiveTab('recipes');
             setPendingEditRecipe(r);
           }}
-          onStartCooking={(r) => {
+          onStartCooking={(r, p) => {
             closeDetail();
+            setCookingPortions(p);
             setCookingRecipe(r);
           }}
           portionContext={detailPortionCtx
@@ -267,6 +269,7 @@ export function AppShell({
       {cookingRecipe && (
         <CookingGuide
           recipe={cookingRecipe}
+          portions={cookingPortions}
           onClose={() => setCookingRecipe(null)}
           onFinished={() => {
             setCookingRecipe(null);

@@ -2,6 +2,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { X, ChevronLeft, ChevronRight, Check, UtensilsCrossed } from 'lucide-react';
 import type { Recipe, Ingredient, IngredientGroup } from '@/types';
+import { scaleDisplayAmount } from '@/lib/utils';
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
@@ -18,6 +19,30 @@ function highlightTimers(text: string): React.ReactNode[] {
 function formatAmount(amount: number): string {
   if (amount === 0) return '';
   return amount % 1 === 0 ? String(amount) : String(amount).replace('.', ',');
+}
+
+/** Zutaten einer Liste auf die gewählte Portionenzahl skalieren (gleiche Werte wie Rezeptdetail). */
+function scaleList(list: Ingredient[], basePortions: number, portions: number): Ingredient[] {
+  return list.map((i) => ({ ...i, amount: scaleDisplayAmount(i.amount, basePortions, portions) }));
+}
+
+/** Prüft, ob ein Zutatenname (per Wort-Präfix) im Schritttext vorkommt — tolerant für Plural/Komposita. */
+function nameInStep(stepLower: string, name: string): boolean {
+  const words = name.toLowerCase().replace(/[^a-zäöüß\s-]/g, ' ').split(/[\s-]+/).filter(w => w.length >= 4);
+  return words.some(w => stepLower.includes(w.slice(0, Math.min(5, w.length))));
+}
+
+/** Im Schritt genannte Zutaten (dedupliziert) — für die Schritt-Zutatenliste. */
+function ingredientsForStep(stepText: string, all: Ingredient[]): Ingredient[] {
+  const s = stepText.toLowerCase();
+  const seen = new Set<string>();
+  const out: Ingredient[] = [];
+  for (const ing of all) {
+    const key = ing.name.toLowerCase();
+    if (seen.has(key)) continue;
+    if (nameInStep(s, ing.name)) { seen.add(key); out.push(ing); }
+  }
+  return out;
 }
 
 // ─── Ingredient Card (small) ─────────────────────────────────────────────────
@@ -47,12 +72,16 @@ function IngredientCard({ name, ingredients }: { name: string; ingredients: Ingr
 
 interface CookingGuideProps {
   recipe: Recipe;
+  /** Gewählte Portionenzahl aus dem Rezeptdetail; Fallback: Rezept-Basisportionen. */
+  portions?: number;
   onClose: () => void;
   onFinished?: () => void;
 }
 
-export function CookingGuide({ recipe, onClose, onFinished }: CookingGuideProps) {
+export function CookingGuide({ recipe, portions, onClose, onFinished }: CookingGuideProps) {
   const steps = recipe.steps ?? [];
+  const basePortions   = recipe.basePortions || 1;
+  const cookPortions   = portions ?? recipe.basePortions ?? 4;
   const totalPages = steps.length + 2; // 0=Mise, 1..N=Schritte, last=Abschluss
   const lastPage   = totalPages - 1;
 
@@ -102,12 +131,43 @@ export function CookingGuide({ recipe, onClose, onFinished }: CookingGuideProps)
     return () => { document.body.style.overflow = prev; };
   }, []);
 
+  // Bildschirm anlassen (Wake Lock): verhindert Standby/Bildschirmschoner während des Kochens.
+  // Re-Acquire nach Tab-Wechsel (Wake Lock wird beim Verstecken automatisch freigegeben).
+  // Graceful no-op auf Browsern ohne Unterstützung (z.B. iOS < 16.4).
+  useEffect(() => {
+    type WakeLock = { release: () => Promise<void> };
+    const nav = navigator as Navigator & { wakeLock?: { request: (t: 'screen') => Promise<WakeLock> } };
+    if (!nav.wakeLock) return;
+    let lock: WakeLock | null = null;
+    let cancelled = false;
+    const acquire = async () => {
+      try {
+        lock = await nav.wakeLock!.request('screen');
+      } catch { /* z.B. im Hintergrund oder vom System abgelehnt */ }
+    };
+    const onVisible = () => { if (document.visibilityState === 'visible' && !cancelled) acquire(); };
+    acquire();
+    document.addEventListener('visibilitychange', onVisible);
+    return () => {
+      cancelled = true;
+      document.removeEventListener('visibilitychange', onVisible);
+      lock?.release().catch(() => {});
+    };
+  }, []);
+
   // ── Page content ──
   const isMisePage    = page === 0;
   const isFinishPage  = page === lastPage;
   const stepIndex     = page - 1; // 0-based index into steps[]
   const currentStep   = isMisePage || isFinishPage ? null : steps[stepIndex];
-  const currentGroup  = currentStep !== null ? groupForStep(stepIndex) : null;
+  // Zutaten für den aktuellen Schritt: bevorzugt eine 1:1 zugeordnete Gruppe,
+  // sonst aus dem Schritttext erkannt. Mengen auf die gewählten Portionen skaliert.
+  const alignedGroup  = currentStep != null ? groupForStep(stepIndex) : null;
+  const rawStepIngredients = currentStep == null ? []
+    : alignedGroup ? alignedGroup.ingredients
+    : ingredientsForStep(currentStep, recipe.ingredients);
+  const stepIngredients = scaleList(rawStepIngredients, basePortions, cookPortions);
+  const stepIngredientsLabel = alignedGroup?.name ?? 'Für diesen Schritt';
 
   return (
     <div
@@ -153,7 +213,7 @@ export function CookingGuide({ recipe, onClose, onFinished }: CookingGuideProps)
             </h1>
             <div className="space-y-4">
               {groups.map((g, gi) => (
-                <IngredientCard key={gi} name={g.name} ingredients={g.ingredients} />
+                <IngredientCard key={gi} name={g.name} ingredients={scaleList(g.ingredients, basePortions, cookPortions)} />
               ))}
             </div>
           </>
@@ -162,8 +222,8 @@ export function CookingGuide({ recipe, onClose, onFinished }: CookingGuideProps)
         {/* Step page */}
         {!isMisePage && !isFinishPage && currentStep && (
           <>
-            {currentGroup && (
-              <IngredientCard name={currentGroup.name} ingredients={currentGroup.ingredients} />
+            {stepIngredients.length > 0 && (
+              <IngredientCard name={stepIngredientsLabel} ingredients={stepIngredients} />
             )}
             <p className="text-xl font-semibold leading-relaxed" style={{ color: '#fff' }}>
               {highlightTimers(currentStep)}
