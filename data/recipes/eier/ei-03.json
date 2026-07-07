@@ -66,7 +66,7 @@
     }
   ],
   "weatherType": "neutral",
-  "source": "MahlZeit",
+  "source": "MahlZyt",
   "basePortions": 4,
   "description": "Schweizer Klassiker trifft auf Avocado.",
   "steps": [

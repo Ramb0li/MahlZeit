@@ -54,7 +54,7 @@
     }
   ],
   "weatherType": "neutral",
-  "source": "MahlZeit",
+  "source": "MahlZyt",
   "basePortions": 4,
   "description": "Einfachste vegane Pancakes aus Bananen und Haferflocken – ohne Mehl, Zucker oder Ei.",
   "steps": [

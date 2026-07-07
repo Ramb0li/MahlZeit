@@ -78,7 +78,7 @@
     }
   ],
   "weatherType": "neutral",
-  "source": "MahlZeit",
+  "source": "MahlZyt",
   "basePortions": 4,
   "description": "Ob als eiweissreiches Frühstück oder als leichte, sättigende Mahlzeit am Mittag oder Abend: Dieses schnelle Omelett mit buntem Gemüse und Vollkornbrot passt immer.",
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-04-1780699103706.jpg",

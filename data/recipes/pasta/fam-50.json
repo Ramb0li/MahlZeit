@@ -16,7 +16,7 @@
     "Pfannengericht"
   ],
   "weatherType": "neutral",
-  "source": "MahlZeit",
+  "source": "MahlZyt",
   "basePortions": 4,
   "description": "Tortellini mit aromatischer-Kräutersauce",
   "ingredients": [

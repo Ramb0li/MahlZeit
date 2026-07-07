@@ -1,12 +1,7 @@
 {
   "household": {
     "adults": 2,
-    "children": [
-      {
-        "id": "child-1",
-        "age": 2
-      }
-    ]
+    "children": []
   },
   "weather": {
     "provider": "meteoblue",

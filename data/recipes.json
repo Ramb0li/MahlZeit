@@ -51,7 +51,7 @@
       }
     ],
     "weatherType": "neutral",
-    "source": "MahlZeit",
+    "source": "MahlZyt",
     "basePortions": 4,
     "description": "Klassisches Rührei, schnell und einfach.",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-01-1780502993941.jpg",
@@ -190,7 +190,7 @@
       }
     ],
     "weatherType": "kalt",
-    "source": "MahlZeit",
+    "source": "MahlZyt",
     "basePortions": 2,
     "description": "Es gibt Gerichte, die erinnern an die Kindheit. Rahmspinat ist dabei auf einer der ersten Plätze meiner Kindheitserinnerungsessen. Ein herzhafter Klassiker für kalte Abende.",
     "steps": [
@@ -422,7 +422,7 @@
       }
     ],
     "weatherType": "neutral",
-    "source": "MahlZeit",
+    "source": "MahlZyt",
     "basePortions": 4,
     "description": "Schweizer Klassiker trifft auf Avocado.",
     "steps": [
@@ -617,7 +617,7 @@
       }
     ],
     "weatherType": "neutral",
-    "source": "MahlZeit",
+    "source": "MahlZyt",
     "basePortions": 4,
     "description": "Ob als eiweissreiches Frühstück oder als leichte, sättigende Mahlzeit am Mittag oder Abend: Dieses schnelle Omelett mit buntem Gemüse und Vollkornbrot passt immer.",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-04-1780699103706.jpg",
@@ -781,7 +781,7 @@
       }
     ],
     "weatherType": "kalt",
-    "source": "MahlZeit",
+    "source": "MahlZyt",
     "basePortions": 4,
     "description": "Feine Omeletten treffen auf cremige Pilzsauce mit frischer Zitronennote und aromatischem Salbei – ein herzhaftes Gericht für ein gemütliches Essen.",
     "steps": [
@@ -1091,7 +1091,7 @@
       }
     ],
     "weatherType": "kalt",
-    "source": "MahlZeit",
+    "source": "MahlZyt",
     "basePortions": 4,
     "description": "Herzhaft, farbenfroh und sättigend – diese Käsepolenta mit Ofengemüse und Spiegelei bringt mediterrane Wärme auf den Teller.",
     "steps": [
@@ -1745,7 +1745,7 @@
       }
     ],
     "weatherType": "kalt",
-    "source": "MahlZeit",
+    "source": "MahlZyt",
     "basePortions": 4,
     "description": "Ein traditionelles nordafrikanisches Gericht mit pochierten Eiern in würziger Tomatensauce - schnell zubereitet und wandelbar. Perfektes Seelenfutter, das sowohl als Frühstück als auch als Mittag- und Abendessen funktioniert.",
     "steps": [
@@ -1857,7 +1857,7 @@
       }
     ],
     "weatherType": "warm",
-    "source": "MahlZeit",
+    "source": "MahlZyt",
     "basePortions": 4,
     "description": "Cremige, pinke Smoothie Bowl mit Banane, Beeren und versteckter Zucchetti – ein vitaminreicher Start in den Tag.",
     "steps": [
@@ -1960,7 +1960,7 @@
       }
     ],
     "weatherType": "neutral",
-    "source": "MahlZeit",
+    "source": "MahlZyt",
     "basePortions": 4,
     "description": "Vegane Pancakes, goldbraun gebacken, schön luftig und herrlich fein – diese Pancakes bringen Frühstücksfreude auf den Teller.",
     "steps": [
@@ -2077,7 +2077,7 @@
       }
     ],
     "weatherType": "neutral",
-    "source": "MahlZeit",
+    "source": "MahlZyt",
     "basePortions": 4,
     "description": "Amerikanische Pancakes – luftig, dick und goldbraun. Ein Frühstücksklassiker für die ganze Familie.",
     "steps": [
@@ -2176,7 +2176,7 @@
       }
     ],
     "weatherType": "neutral",
-    "source": "MahlZeit",
+    "source": "MahlZyt",
     "basePortions": 4,
     "description": "Einfachste vegane Pancakes aus Bananen und Haferflocken – ohne Mehl, Zucker oder Ei.",
     "steps": [
@@ -2755,7 +2755,7 @@
       }
     ],
     "weatherType": "neutral",
-    "source": "MahlZeit",
+    "source": "MahlZyt",
     "description": "Eine besondere Frittata-Variante mit knusprigem Speck, Mais und Frühlingszwiebeln, gekrönt mit vier Spiegeleiern, die im Ofen mitgebacken werden. Das flüssige Eigelb verläuft beim Aufschneiden herrlich über die anderen Zutaten.",
     "steps": [
       "Den Backofen auf 175 Grad vorheizen und ein Rost in die Mitte des Ofens schieben.",
@@ -3672,7 +3672,7 @@
       "Pfannengericht"
     ],
     "weatherType": "neutral",
-    "source": "MahlZeit",
+    "source": "MahlZyt",
     "basePortions": 4,
     "description": "Tortellini mit aromatischer-Kräutersauce",
     "ingredients": [
@@ -3802,7 +3802,7 @@
       "Italienisch"
     ],
     "weatherType": "neutral",
-    "source": "MahlZeit",
+    "source": "MahlZyt",
     "basePortions": 4,
     "description": "Cremig, frisch und festlich: Zitronenravioli an Prosecco-Sauce.",
     "ingredients": [
@@ -4810,7 +4810,7 @@
       }
     ],
     "weatherType": "kalt",
-    "source": "MahlZeit",
+    "source": "MahlZyt",
     "basePortions": 6,
     "description": "Schicht für Schicht voller Gemüse, Linsen und cremiger Béchamelsauce – eine Lasagne zum Wohlfühlen.",
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/pas-02-1780699528706.jpg",

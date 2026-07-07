@@ -29,6 +29,18 @@ export function getWeekDays(date: Date, startDay: 0|1|2|3|4|5|6 = 1): Date[] {
   return eachDayOfInterval({ start, end: addDays(start, 6) });
 }
 
+/**
+ * Stabile weekId für ein (ggf. nicht-montags startendes) Anzeigefenster.
+ * Verankert am Donnerstag des Fensters = angezeigte KW-Nummer, damit dieselbe
+ * sichtbare Woche immer denselben Storage-Key hat, egal welcher Tag "heute" ist.
+ * Bei Montag-Start identisch zu getWeekId(date) → rückwärtskompatibel.
+ */
+export function getWeekIdForWindow(date: Date, startDay: 0|1|2|3|4|5|6 = 1): string {
+  const days = getWeekDays(date, startDay);
+  const thursday = days.find((d) => d.getDay() === 4) ?? days[0];
+  return getWeekId(thursday);
+}
+
 export function formatDate(date: Date): string {
   return format(date, 'yyyy-MM-dd');
 }

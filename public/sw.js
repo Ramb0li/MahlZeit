@@ -1,4 +1,4 @@
-// MahlZeit Service Worker
+// MahlZyt Service Worker
 // Minimaler SW — reicht für Chrome-Installierbarkeit.
 // Kein aggressives Caching, da die App serverseitig gerendert wird und
 // Session-Cookies für Auth benötigt.

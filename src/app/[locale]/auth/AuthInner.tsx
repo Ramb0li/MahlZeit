@@ -114,8 +114,13 @@ function AuthInnerContent({ cmsPlans }: { cmsPlans: LandingPlan[] }) {
       });
       const data = await res.json();
       if (!res.ok) {
-        if (data.needsConfirmation && data.email) setPendingEmail(data.email);
-        setError(data.error ?? 'Fehler');
+        if (data.needsConfirmation && data.email) {
+          // Nur die grüne Bestätigungs-Banner mit funktionierendem «erneut senden»-Button
+          // zeigen — keine zusätzliche, irreführende rote Fehlermeldung.
+          setPendingEmail(data.email);
+        } else {
+          setError(data.error ?? 'Fehler');
+        }
         return;
       }
       setPendingEmail(null);
@@ -155,7 +160,7 @@ function AuthInnerContent({ cmsPlans }: { cmsPlans: LandingPlan[] }) {
         body:   JSON.stringify({ email: pendingEmail }),
       });
       const data = await res.json();
-      setResendNotice(res.ok ? 'E-Mail wurde erneut gesendet.' : (data.error ?? 'Fehler beim Versand'));
+      setResendNotice(res.ok ? 'Wir haben dir die Bestätigungs-E-Mail erneut gesendet.' : (data.error ?? 'Fehler beim Versand.'));
     } finally { setResending(false); }
   };
 
@@ -222,7 +227,7 @@ function AuthInnerContent({ cmsPlans }: { cmsPlans: LandingPlan[] }) {
           <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 22, letterSpacing: '-0.03em', color: 'var(--ink)' }}>
             Mahl<span style={{ color: 'var(--accent)' }}>Zyt</span>
           </span>
-          <span className="mz-auth-logo-sub">Familienmenüplaner</span>
+          <span className="mz-auth-logo-sub">Dein persönlicher Menüplaner - für deine WG oder Familie</span>
         </div>
 
         {/* ── RESET PASSWORD (via email link) ── */}

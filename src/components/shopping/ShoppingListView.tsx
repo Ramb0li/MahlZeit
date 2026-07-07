@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { Check, Download, RefreshCw, Plus, Trash2, RotateCcw, X, ChevronDown, PackageCheck } from 'lucide-react';
-import { getWeekId, getWeekDays, nextWeek, formatAmount } from '@/lib/utils';
+import { getWeekIdForWindow, getWeekDays, nextWeek, formatAmount } from '@/lib/utils';
 import { format, getISOWeek } from 'date-fns';
 import { de } from 'date-fns/locale';
 import type { ShoppingList, ShoppingGroups, ShoppingListState, CustomShoppingItem, Recipe, Promotion } from '@/types';
@@ -100,11 +100,11 @@ export function ShoppingListView({ weekStartDay = 1 }: { weekStartDay?: 0|1|2|3|
   const todayDate      = new Date();
   const nextDate       = nextWeek(todayDate);
   const nextNextDate   = nextWeek(nextDate);
-  const currentWeekId  = getWeekId(todayDate);
-  const nextWeekId     = getWeekId(nextDate);
-  const nextNextWeekId = getWeekId(nextNextDate);
+  const currentWeekId  = getWeekIdForWindow(todayDate, weekStartDay);
+  const nextWeekId     = getWeekIdForWindow(nextDate, weekStartDay);
+  const nextNextWeekId = getWeekIdForWindow(nextNextDate, weekStartDay);
   const [weekDate, setWeekDate] = useState(todayDate);
-  const weekId   = getWeekId(weekDate);
+  const weekId   = getWeekIdForWindow(weekDate, weekStartDay);
   const weekDays = getWeekDays(weekDate, weekStartDay);
 
   const [list, setList]       = useState<ShoppingList>({});

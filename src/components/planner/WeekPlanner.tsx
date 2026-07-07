@@ -7,7 +7,7 @@ import {
   DndContext, DragOverlay, MouseSensor, TouchSensor, useSensor, useSensors, closestCenter,
   type DragStartEvent, type DragEndEvent,
 } from '@dnd-kit/core';
-import { getWeekId, getWeekDays, nextWeek, prevWeek, formatDate, getInitialDisplayWeek } from '@/lib/utils';
+import { getWeekIdForWindow, getWeekDays, nextWeek, prevWeek, formatDate, getInitialDisplayWeek } from '@/lib/utils';
 import { DayColumn } from './DayColumn';
 import { ShoppingGroupsBar } from './ShoppingGroupsBar';
 import { PhotoSlot } from '@/components/ui/PhotoSlot';
@@ -76,7 +76,7 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe, onOp
     useSensor(TouchSensor, { activationConstraint: { delay: 200, tolerance: 8 } }),
   );
 
-  const weekId = getWeekId(currentDate);
+  const weekId = getWeekIdForWindow(currentDate, weekStartDay);
   const weekDays = getWeekDays(currentDate, weekStartDay);
 
   const loadPlan = useCallback(async () => {
@@ -549,7 +549,7 @@ export function WeekPlanner({ recipes, settings, constraints, onViewRecipe, onOp
           {/* Seitentitel + Haushalt-Subtitel */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
             <span style={{ fontSize: 18, fontWeight: 900, letterSpacing: '-0.03em', color: '#271f1a' }}>
-              Mahlzeit-Planer
+              MahlZyt-Planer
             </span>
             <span className="mz-hide-sm" style={{ fontSize: 11, color: '#9a8c80' }}>{householdLabel}</span>
           </div>

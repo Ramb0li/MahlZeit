@@ -35,7 +35,7 @@ function mzEmailShell(bodyContent: string): string {
     <table width="100%" cellpadding="0" cellspacing="0" style="max-width:580px;border-radius:20px;overflow:hidden;box-shadow:0 8px 40px rgba(39,31,26,.18);">
       <!-- Header -->
       <tr><td style="background:#271f1a;padding:24px 32px;">
-        <span style="font-size:20px;font-weight:900;letter-spacing:-.03em;color:#fff;">Mahl<span style="color:#d9543b;">Zeit</span></span>
+        <span style="font-size:20px;font-weight:900;letter-spacing:-.03em;color:#fff;">Mahl<span style="color:#d9543b;">Zyt</span></span>
       </td></tr>
       <!-- Body -->
       <tr><td style="background:#faf7f2;padding:36px 32px 28px;">

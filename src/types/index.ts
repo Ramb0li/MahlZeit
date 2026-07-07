@@ -188,7 +188,7 @@ export interface AppSettings {
   onboardingDone?: boolean;            // Onboarding-Fragebogen abgeschlossen
   theme?: import('@/lib/themes').ThemeId;
   promotions: PromotionSettings;
-  weekSwitchDay?: number;   // 0=Sonntag (default), 1=Mo, ..., 6=Sa — ab diesem Tag nächste Woche anzeigen
+  weekSwitchDay?: number;   // 1=Montag (default), 0=So, 2=Di, ..., 6=Sa — ab diesem Tag nächste Woche anzeigen
   allergiesAndAversions?: string[];  // Allergene & Abneigungen — Rezepte mit diesen Zutaten ausblenden
 }
 

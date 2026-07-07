@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* =====================================================================
-   MahlZeit 2.0 — Design System
+   MahlZyt 2.0 — Design System
    Warm-neutral palette · Terracotta-Coral Akzent · friendly geometric
    ===================================================================== */
 
@@ -721,7 +721,7 @@ em { font-style: normal; color: var(--accent); }
 .mz-auth-logo {
   display: flex; flex-direction: column; align-items: center; gap: 5px; margin-bottom: 28px;
 }
-.mz-auth-logo-sub { font-size: 12.5px; color: var(--muted); font-weight: 600; letter-spacing: .03em; }
+.mz-auth-logo-sub { font-size: 12.5px; color: var(--muted); font-weight: 600; letter-spacing: .02em; text-align: center; max-width: 280px; line-height: 1.35; }
 .mz-auth-tabs {
   display: flex; background: var(--bg-2); border-radius: 14px; padding: 4px; gap: 3px; margin-bottom: 22px;
 }

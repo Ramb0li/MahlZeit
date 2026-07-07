@@ -261,7 +261,7 @@ export async function POST(request: Request) {
       try {
         const res = await fetch(url, {
           headers: {
-            'User-Agent':      'Mozilla/5.0 (compatible; MahlZeitPlaner/1.0; recipe-import)',
+            'User-Agent':      'Mozilla/5.0 (compatible; MahlZytPlaner/1.0; recipe-import)',
             'Accept':          'text/html,application/xhtml+xml',
             'Accept-Language': 'de,en;q=0.9',
           },

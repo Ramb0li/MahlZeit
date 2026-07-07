@@ -91,7 +91,9 @@ export function OnboardingWizard({ currentGroupName, currentSettings, onComplete
       }));
       newChildren = [...existingChildren, ...extra];
     }
-    const weekSwitchDay = shopping === 'once' ? 1 : 0;
+    // Wochenstart immer Montag als Default (unabhängig vom Einkaufsrhythmus);
+    // ein bereits explizit gesetzter Wert bleibt erhalten.
+    const weekSwitchDay = currentSettings.weekSwitchDay ?? 1;
     return {
       ...currentSettings,
       weather:               { ...currentSettings.weather, location: location.trim() || currentSettings.weather.location },
@@ -199,7 +201,7 @@ export function OnboardingWizard({ currentGroupName, currentSettings, onComplete
         <div className="hidden sm:flex flex-col flex-shrink-0 p-8" style={{ width: '42%', background: '#271f1a' }}>
           {/* Logo */}
           <div className="text-base font-black tracking-tight" style={{ color: '#fff', letterSpacing: '-0.03em' }}>
-            Mahl<span style={{ color: '#d9543b' }}>Zeit</span>
+            Mahl<span style={{ color: '#d9543b' }}>Zyt</span>
           </div>
 
           <div style={{ flex: 1 }} />

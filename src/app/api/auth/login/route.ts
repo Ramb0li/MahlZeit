@@ -32,7 +32,7 @@ export async function POST(request: Request) {
     if (user.status === 'pending' && user.confirmationToken) {
       return NextResponse.json(
         {
-          error:               'Bitte bestätige zuerst deine E-Mail. Link nochmals senden?',
+          error:               'Bitte bestätige zuerst deine E-Mail-Adresse.',
           needsConfirmation:   true,
           email:               user.email,
         },

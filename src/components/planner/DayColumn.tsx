@@ -489,7 +489,7 @@ function MealSlotCard({
               }}
               onKeyDown={e => { if (e.key === 'Enter') handleSaveSideIng(); if (e.key === 'Escape') { setSideIngForm(false); } }}
             />
-            <div style={{ display: 'flex', gap: 4, alignItems: 'center', overflow: 'hidden' }}>
+            <div style={{ display: 'flex', gap: 3, alignItems: 'center' }}>
               <input
                 type="number"
                 value={ingAmount}
@@ -497,7 +497,7 @@ function MealSlotCard({
                 min={0}
                 step={0.5}
                 style={{
-                  width: 52, flexShrink: 0, minWidth: 0, fontSize: 11, padding: '4px 5px', border: '1px solid var(--border)',
+                  width: 38, flexShrink: 0, minWidth: 0, fontSize: 11, padding: '4px 4px', border: '1px solid var(--border)',
                   borderRadius: 5, background: 'var(--bg)', color: 'var(--ink)', outline: 'none', fontFamily: 'inherit',
                 }}
               />
@@ -505,7 +505,7 @@ function MealSlotCard({
                 value={ingUnit}
                 onChange={e => setIngUnit(e.target.value)}
                 style={{
-                  width: 56, flexShrink: 0, minWidth: 0, fontSize: 11, padding: '4px 5px', border: '1px solid var(--border)',
+                  flex: 1, minWidth: 0, fontSize: 11, padding: '4px 4px', border: '1px solid var(--border)',
                   borderRadius: 5, background: 'var(--bg)', color: 'var(--ink)', outline: 'none', fontFamily: 'inherit',
                 }}
               >
@@ -514,14 +514,14 @@ function MealSlotCard({
               <button
                 onClick={handleSaveSideIng}
                 style={{
-                  flexShrink: 0, padding: '4px 9px', fontSize: 11, background: 'var(--accent)', color: '#fff',
+                  flexShrink: 0, padding: '4px 8px', fontSize: 11, background: 'var(--accent)', color: '#fff',
                   border: 'none', borderRadius: 5, cursor: 'pointer', fontWeight: 600,
                 }}
               >+</button>
               <button
                 onClick={() => setSideIngForm(false)}
                 style={{
-                  flexShrink: 0, padding: '4px 7px', fontSize: 11, background: 'none', color: 'var(--muted)',
+                  flexShrink: 0, padding: '4px 6px', fontSize: 11, background: 'none', color: 'var(--muted)',
                   border: '1px solid var(--border)', borderRadius: 5, cursor: 'pointer',
                 }}
               >×</button>
@@ -759,7 +759,7 @@ function MealSlotCard({
               }}
               onKeyDown={e => { if (e.key === 'Enter') handleSaveSideIng(); if (e.key === 'Escape') { setSideIngForm(false); } }}
             />
-            <div style={{ display: 'flex', gap: 4, alignItems: 'center', overflow: 'hidden' }}>
+            <div style={{ display: 'flex', gap: 3, alignItems: 'center' }}>
               <input
                 type="number"
                 value={ingAmount}
@@ -767,7 +767,7 @@ function MealSlotCard({
                 min={0}
                 step={0.5}
                 style={{
-                  width: 52, flexShrink: 0, minWidth: 0, fontSize: 11, padding: '4px 5px', border: '1px solid var(--border)',
+                  width: 38, flexShrink: 0, minWidth: 0, fontSize: 11, padding: '4px 4px', border: '1px solid var(--border)',
                   borderRadius: 5, background: 'var(--bg)', color: 'var(--ink)', outline: 'none', fontFamily: 'inherit',
                 }}
               />
@@ -775,7 +775,7 @@ function MealSlotCard({
                 value={ingUnit}
                 onChange={e => setIngUnit(e.target.value)}
                 style={{
-                  width: 56, flexShrink: 0, minWidth: 0, fontSize: 11, padding: '4px 5px', border: '1px solid var(--border)',
+                  flex: 1, minWidth: 0, fontSize: 11, padding: '4px 4px', border: '1px solid var(--border)',
                   borderRadius: 5, background: 'var(--bg)', color: 'var(--ink)', outline: 'none', fontFamily: 'inherit',
                 }}
               >
@@ -784,14 +784,14 @@ function MealSlotCard({
               <button
                 onClick={handleSaveSideIng}
                 style={{
-                  flexShrink: 0, padding: '4px 9px', fontSize: 11, background: 'var(--accent)', color: '#fff',
+                  flexShrink: 0, padding: '4px 8px', fontSize: 11, background: 'var(--accent)', color: '#fff',
                   border: 'none', borderRadius: 5, cursor: 'pointer', fontWeight: 600,
                 }}
               >+</button>
               <button
                 onClick={() => setSideIngForm(false)}
                 style={{
-                  flexShrink: 0, padding: '4px 7px', fontSize: 11, background: 'none', color: 'var(--muted)',
+                  flexShrink: 0, padding: '4px 6px', fontSize: 11, background: 'none', color: 'var(--muted)',
                   border: '1px solid var(--border)', borderRadius: 5, cursor: 'pointer',
                 }}
               >×</button>

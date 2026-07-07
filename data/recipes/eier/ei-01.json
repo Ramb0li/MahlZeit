@@ -50,7 +50,7 @@
     }
   ],
   "weatherType": "neutral",
-  "source": "MahlZeit",
+  "source": "MahlZyt",
   "basePortions": 4,
   "description": "Klassisches Rührei, schnell und einfach.",
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/ei-01-1780502993941.jpg",
