@@ -4,7 +4,7 @@ import { NextResponse } from 'next/server';
 import { getSessionWithGroup as getSession } from '@/lib/session';
 import { getVisibleRecipes, getConstraints, getWeatherCache, getWeekPlan, saveWeekPlan, getSettings, getFavorites, getPromotions } from '@/lib/data';
 import { suggestWeek, suggestRecipe, getEffectiveDietCategory, colToIso, classifyMealPools } from '@/lib/suggestions';
-import { getCurrentSeason, getWeatherTypeFromTemp } from '@/lib/utils';
+import { getCurrentSeason, getSeasonTypicalWeather, getMondayFromWeekId, getWeekDays, formatDate } from '@/lib/utils';
 import type { WeatherType, Promotion } from '@/types';
 
 export async function POST(request: Request) {
@@ -59,16 +59,19 @@ export async function POST(request: Request) {
     });
 
     const season = getCurrentSeason();
+    // Wetter je ISO-Wochentag der GEPLANTEN Woche: Prognose exakt per Datum zuordnen.
+    // Für Wochen ausserhalb der 7-Tage-Prognose saison-typisch statt der Tageswerte
+    // einer fremden Woche (früher wurde nur nach Wochentag gemappt).
+    const weekStartDay = (settings.weekSwitchDay ?? 1) as 0 | 1 | 2 | 3 | 4 | 5 | 6;
+    const forecastByDate = new Map(weatherCache.days.map((d) => [d.date, d.weatherType]));
     const weatherTypes: Record<number, WeatherType> = {};
-    weatherCache.days.forEach((d) => {
-      const date = new Date(d.date);
-      const dayOfWeek = date.getDay() === 0 ? 7 : date.getDay();
-      weatherTypes[dayOfWeek] = d.weatherType;
-    });
+    for (const date of getWeekDays(getMondayFromWeekId(weekId), weekStartDay)) {
+      const iso = date.getDay() === 0 ? 7 : date.getDay();
+      weatherTypes[iso] = forecastByDate.get(formatDate(date)) ?? getSeasonTypicalWeather(season);
+    }
 
     if (dayIndex !== undefined && mealType) {
-      const wsd = settings.weekSwitchDay ?? 1;
-      const dayIso = colToIso(dayIndex, wsd);
+      const dayIso = colToIso(dayIndex, weekStartDay);
       const currentPlan = await getWeekPlan(weekId, groupId);
       const disabledIds = currentPlan?.disabledConstraintIds ?? [];
       const constraint = constraints.find(
@@ -92,16 +95,24 @@ export async function POST(request: Request) {
         ? mealFiltered.filter((r) => favorites.includes(r.id))
         : mealFiltered;
 
-      const suggestion = suggestRecipe(pool.length > 0 ? pool : mealFiltered, {
+      const searchPool = pool.length > 0 ? pool : mealFiltered;
+      const baseOpts = {
         weatherType,
         season,
-        constraint,
         usedThisWeek: usedIds,
         lunchOnly: mealType === 'lunch',
         allergiesAndAversions: settings.allergiesAndAversions,
         pantryIngredients: wantToUse,
         promotions: activePromotions,
-      });
+      };
+      // Gleiche abgestufte Lockerung wie suggestWeek (pickSeasonal), damit Einzel-Slot
+      // und Wochenvorschlag nicht divergieren: erst saison+wettergerecht, dann nur
+      // saisongerecht, dann ungefiltert, zuletzt ohne Constraint.
+      const suggestion =
+        suggestRecipe(searchPool, { ...baseOpts, constraint, seasonStrict: true, weatherStrict: true })
+        ?? suggestRecipe(searchPool, { ...baseOpts, constraint, seasonStrict: true })
+        ?? suggestRecipe(searchPool, { ...baseOpts, constraint })
+        ?? suggestRecipe(searchPool, baseOpts);
 
       return NextResponse.json({ recipeId: suggestion?.id ?? null, recipe: suggestion });
     }
@@ -109,11 +120,7 @@ export async function POST(request: Request) {
     let plan = await getWeekPlan(weekId, groupId);
     // Fix #12: derive startDate from weekId (format "YYYY-Www") to avoid empty string.
     if (!plan) {
-      const [year, week] = weekId.split('-W').map(Number);
-      const jan4 = new Date(year, 0, 4); // ISO week 1 always contains Jan 4
-      const startMs = jan4.getTime() - (((jan4.getDay() + 6) % 7) - (week - 1) * 7) * 86400000;
-      const startDate = new Date(startMs).toISOString().slice(0, 10);
-      plan = { weekId, startDate, days: {} };
+      plan = { weekId, startDate: formatDate(getMondayFromWeekId(weekId)), days: {} };
     }
 
     // Für diese Woche deaktivierte (durchgestrichene) Constraints ignorieren
@@ -130,7 +137,7 @@ export async function POST(request: Request) {
       favoritesOnly:         !!favoritesOnly,
       pantryIngredients:     wantToUse,
       promotions:            activePromotions,
-      weekStartDay:          settings.weekSwitchDay ?? 1,
+      weekStartDay,
     });
 
     for (const [dayStr, meals] of Object.entries(suggestions)) {

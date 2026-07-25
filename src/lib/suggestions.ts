@@ -67,6 +67,29 @@ export function getEffectiveDietCategory(r: Recipe): 'meat' | 'fish' | 'vegetari
   return 'vegetarian';
 }
 
+// ── Saison-/Wetter-Eignung (Single Source of Truth) ──────────────────────────
+// Wird vom Scoring UND von den harten Filtern in suggestRecipe genutzt, damit
+// "passt zur Saison/zum Wetter" überall dieselbe Bedeutung hat.
+
+/**
+ * Passt das Rezept zur Saison? Rezepte ohne Saison-Tag oder mit 'Ganzjährig'
+ * gelten immer als passend; sonst muss die aktuelle Saison getaggt sein.
+ */
+export function isSeasonAppropriate(recipe: Recipe, season: string): boolean {
+  const seasoned = recipe.tags.some((t) => SEASON_TAGS.has(t) && t !== 'Ganzjährig');
+  return !seasoned || recipe.tags.includes('Ganzjährig') || recipe.tags.includes(season);
+}
+
+/**
+ * Gegenteiliges Wetter-Extrem: 'kalt'-Gericht am Hitzetag bzw. 'warm'-Gericht
+ * am kalten Tag. 'neutral' (Rezept oder Tag) ist nie ein Konflikt.
+ */
+export function isWeatherOpposite(recipe: Recipe, weatherType?: WeatherType): boolean {
+  if (!weatherType || weatherType === 'neutral') return false;
+  if (!recipe.weatherType || recipe.weatherType === 'neutral') return false;
+  return recipe.weatherType !== weatherType;
+}
+
 // ── Scoring ───────────────────────────────────────────────────────────────────
 
 export interface SuggestionOptions {
@@ -82,6 +105,8 @@ export interface SuggestionOptions {
   categoryCounts?: Record<string, number>;  // verhindert Kategorie-Monotonie (2× Salat …)
   usedIngredientTokens?: string[];          // verhindert Hauptzutaten-Wiederholung (2× Tomate …)
   pantryIngredients?: string[];             // Vorrat-Bonus
+  seasonStrict?: boolean;                   // harter Filter: nur saison-passende Rezepte
+  weatherStrict?: boolean;                  // harter Filter: keine gegenteiligen Wetter-Extreme
 }
 
 export function recipeScore(
@@ -92,12 +117,16 @@ export function recipeScore(
   let score = 0;
 
   const season = options.season ?? getCurrentSeason();
-  const recipeSeasoned = recipe.tags.some(t => SEASON_TAGS.has(t) && t !== 'Ganzjährig');
-  // No season tags or 'Ganzjährig' = always in season; specific season tags → only current season
-  if (!recipeSeasoned || recipe.tags.includes('Ganzjährig') || recipe.tags.includes(season)) score += 10;
+  // Saison: Treffer +10, klar ausserhalb der Saison -45. Der Malus muss eine einzelne
+  // Abwechslungs-Wiederholung (-30) überstimmen — sonst verdrängt die Vielfalt-Logik
+  // die saisonale Passung (führte zu Älplermagronen im Hochsommer).
+  if (isSeasonAppropriate(recipe, season)) score += 10;
+  else score -= 45;
 
+  // Wetter: exakter Treffer +15, neutrales Rezept +5, gegenteiliges Extrem -35.
   if (options.weatherType && recipe.weatherType === options.weatherType) score += 15;
   else if (options.weatherType && recipe.weatherType === 'neutral') score += 5;
+  else if (isWeatherOpposite(recipe, options.weatherType)) score -= 35;
 
   if (options.constraint?.constraint === 'maxTime' && options.constraint.maxTimeMinutes) {
     if (recipe.timeMinutes <= options.constraint.maxTimeMinutes) score += 8;
@@ -184,6 +213,10 @@ export function suggestRecipe(
     // Hard-Filter: mealprep → nur mealprep-geeignete Gerichte
     if (c?.constraint === 'mealprep' && !r.tags.includes('Mealprep-geeignet')) return false;
     if (options.lunchOnly && !r.tags.includes('Mittagessen')) return false;
+    // Saison/Wetter als harte Filter — nur in den strikten Stufen der Fallback-Leiter
+    // aktiv, damit unpassende Gerichte erst dann erlaubt sind, wenn nichts mehr passt.
+    if (options.seasonStrict && !isSeasonAppropriate(r, options.season ?? getCurrentSeason())) return false;
+    if (options.weatherStrict && isWeatherOpposite(r, options.weatherType)) return false;
     if (isRecipeExcluded(r, excluded)) return false;
     return true;
   });
@@ -284,6 +317,19 @@ export function suggestWeek(
     for (const t of mainIngredientTokens(r)) usedIngredientTokens.push(t);
   };
 
+  // Auswahl mit abgestufter Lockerung: erst saison- UND wettergerecht, dann nur
+  // saisongerecht, zuletzt ungefiltert. So wird ein unpassendes Gericht (z.B. ein
+  // Winter-Eintopf im Hochsommer) nur gewählt, wenn keine passende Alternative
+  // mehr übrig ist — ein Slot bleibt dadurch nie leer.
+  const pickSeasonal = (
+    pool: Recipe[],
+    base: SuggestionOptions,
+    constraint?: DayConstraint,
+  ): Recipe | null =>
+    suggestRecipe(pool, { ...base, constraint, seasonStrict: true, weatherStrict: true })
+    ?? suggestRecipe(pool, { ...base, constraint, seasonStrict: true })
+    ?? suggestRecipe(pool, { ...base, constraint });
+
   // Mahlzeit-Pools aus der gemeinsamen Klassifikation (gleiche Logik wie Einzel-Slot-Route)
   const pools = classifyMealPools(recipes);
   let breakfastRecipes = pools.breakfast;
@@ -352,10 +398,11 @@ export function suggestWeek(
         const dinnerPool = favFiltered.length > 0 ? favFiltered : basePool;
         const sharedOpts = { weatherType, season, usedThisWeek: usedIds, allergiesAndAversions, carbCounts, categoryCounts, usedIngredientTokens, pantryIngredients, promotions };
         // Fallback-Leiter (Garantie): mit Constraint → ohne Constraint → ohne Flexitarisch-Restriktion.
+        // Jede Stufe lockert intern zusätzlich Saison/Wetter (siehe pickSeasonal).
         // Solange dinnerRecipes nicht leer ist (und keine Allergene alles ausschliessen), gibt es einen Treffer.
-        let dinner = suggestRecipe(dinnerPool, { ...sharedOpts, constraint: dinnerConstraint });
-        if (!dinner) dinner = suggestRecipe(dinnerPool, sharedOpts);
-        if (!dinner) dinner = suggestRecipe(dinnerRecipes, sharedOpts);
+        let dinner = pickSeasonal(dinnerPool, sharedOpts, dinnerConstraint);
+        if (!dinner) dinner = pickSeasonal(dinnerPool, sharedOpts);
+        if (!dinner) dinner = pickSeasonal(dinnerRecipes, sharedOpts);
         if (dinner) {
           result[day].dinner = { recipeId: dinner.id };
           usedIds.push(dinner.id);
@@ -377,9 +424,9 @@ export function suggestWeek(
         if (result[src]?.dinner?.recipeId) result[day].lunch = { recipeId: null, isLeftovers: true };
       } else {
         const lunchOpts = { weatherType, season, usedThisWeek: usedIds, lunchOnly: true as const, allergiesAndAversions, carbCounts, categoryCounts, usedIngredientTokens, pantryIngredients, promotions };
-        let lunch = suggestRecipe(lunchRecipes, { ...lunchOpts, constraint: lunchConstraint });
+        let lunch = pickSeasonal(lunchRecipes, lunchOpts, lunchConstraint);
         // Fallback: ignore constraint
-        if (!lunch) lunch = suggestRecipe(lunchRecipes, lunchOpts);
+        if (!lunch) lunch = pickSeasonal(lunchRecipes, lunchOpts);
         if (lunch) {
           result[day].lunch = { recipeId: lunch.id };
           usedIds.push(lunch.id);
@@ -390,8 +437,8 @@ export function suggestWeek(
 
     // ── Frühstück ──
     if (showBreakfast) {
-      const breakfast = suggestRecipe(breakfastRecipes, {
-        season, usedThisWeek: usedIds, allergiesAndAversions, promotions,
+      const breakfast = pickSeasonal(breakfastRecipes, {
+        weatherType, season, usedThisWeek: usedIds, allergiesAndAversions, promotions,
       });
       if (breakfast) {
         result[day].breakfast = { recipeId: breakfast.id };

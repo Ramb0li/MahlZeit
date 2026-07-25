@@ -131,6 +131,26 @@ export function getWeatherTypeFromTemp(temp: number): WeatherType {
   return 'neutral';
 }
 
+/**
+ * Saison-typisches Wetter — Fallback für Wochen ausserhalb der 7-Tage-Prognose.
+ * Besser als die Tageswerte einer fremden Woche oder pauschal 'neutral'.
+ */
+export function getSeasonTypicalWeather(season: string): WeatherType {
+  if (season === 'Sommer') return 'warm';
+  if (season === 'Winter') return 'kalt';
+  return 'neutral';
+}
+
+/** Montag der ISO-Woche aus einer weekId ("YYYY-Www"). */
+export function getMondayFromWeekId(weekId: string): Date {
+  const [year, week] = weekId.split('-W').map(Number);
+  const jan4    = new Date(year, 0, 4);      // ISO-Woche 1 enthält immer den 4. Januar
+  const jan4Iso = (jan4.getDay() + 6) % 7;   // 0=Mo … 6=So
+  const monday  = new Date(jan4);
+  monday.setDate(jan4.getDate() - jan4Iso + (week - 1) * 7);
+  return monday;
+}
+
 export const INGREDIENT_CATEGORIES: Record<string, string[]> = {
   // Specific categories first — prevents substring conflicts with broader keywords below
   'Gewürze & Kräuter': [
