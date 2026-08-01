@@ -37,7 +37,7 @@ export type SourceType = 'mahlzyt' | 'user_created' | 'imported' | 'ai_generated
 /**
  * Rechtlicher Status des Rezepttexts.
  * 'adapted' = sinngemäss neu verfasst auf Basis einer fremden Quelle.
- * 'unclear' blockiert die Freigabe (siehe src/lib/approvalGate.ts).
+ * 'unclear' erzeugt vor der Freigabe einen Hinweis (siehe src/lib/approvalWarnings.ts).
  */
 export type LicenseStatus = 'own' | 'licensed' | 'public-domain' | 'adapted' | 'unclear';
 

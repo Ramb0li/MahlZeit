@@ -8,9 +8,9 @@ import { ImportRecipeModal } from '@/components/recipes/ImportRecipeModal';
 import type { AppUser }      from '@/lib/users';
 import type { Group }        from '@/lib/groups';
 import type { Recipe, Category } from '@/types';
-import { canApprove }          from '@/lib/approvalGate';
+import { approvalWarnings }    from '@/lib/approvalWarnings';
 import type { LandingContent, LandingFeature } from '@/lib/content';
-import { Users, BookOpen, Bookmark, Globe, HelpCircle } from 'lucide-react';
+import { Users, BookOpen, Bookmark, Globe, HelpCircle, Lock } from 'lucide-react';
 
 // Kategoriefarben für Badges — kategorienspezifisch, bleiben als Hex
 const CAT_COLOR: Record<string, { bg: string; color: string }> = {
@@ -305,7 +305,7 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
   // Die Massen-Freigabe ("Alle freigeben") wurde entfernt. Ihr Zweck — die einmalige
   // Freigabe des Altbestands — ist erfüllt, und sie war der Mechanismus, über den
   // importierte Entwürfe versehentlich sichtbar wurden. Freigabe erfolgt jetzt
-  // ausschliesslich einzeln und nur, wenn canApprove() zustimmt.
+  // ausschliesslich einzeln, damit die offenen Punkte je Rezept sichtbar bleiben.
 
   const openEditUser = (u: SafeUser) => {
     setEditingUser(u);
@@ -732,17 +732,22 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                         <td style={{ padding: '10px 16px 10px 4px' }}>
                           <div style={{ display: 'flex', gap: 4, flexWrap: 'wrap' }}>
                           {(() => {
-                            // Gate-Vorschau: dieselbe Prüfung, die der Server erzwingt.
-                            // Blockierte Entwürfe zeigen den Grund als Tooltip, damit
-                            // niemand erst durch eine 422-Antwort davon erfährt.
-                            const gate    = canApprove(r);
-                            const blocked = r.approved !== true && !gate.ok;
+                            // Hinweis, keine Sperre: offene Punkte (Lizenzstatus, fremdes
+                            // Bild, fehlende Neufassung) werden als Schloss-Symbol plus
+                            // Tooltip angezeigt. Freigeben lässt sich das Rezept trotzdem —
+                            // die Entscheidung trifft die Redaktion, nicht der Code.
+                            const warnings = r.approved === true ? [] : approvalWarnings(r);
+                            const flagged  = warnings.length > 0;
                             return (
                           <button
-                            disabled={togglingId === r.id || blocked}
-                            title={blocked ? gate.reason : (r.approved === true ? 'Klicken, um die Freigabe zurückzunehmen' : 'Klicken, um freizugeben')}
+                            disabled={togglingId === r.id}
+                            title={
+                              flagged
+                                ? `Offen vor der Freigabe:\n· ${warnings.join('\n· ')}\n\nKlicken, um trotzdem freizugeben.`
+                                : r.approved === true ? 'Klicken, um die Freigabe zurückzunehmen' : 'Klicken, um freizugeben'
+                            }
                             onClick={async () => {
-                              if (togglingId || blocked) return;
+                              if (togglingId) return;
                               const next = !r.approved;
                               setTogglingId(r.id);
                               setRecipes(prev => prev.map(x => x.id === r.id ? { ...x, approved: next } : x));
@@ -759,15 +764,17 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                               setTogglingId(null);
                             }}
                             style={{
+                              display: 'inline-flex', alignItems: 'center', gap: 4,
                               padding: '3px 10px', borderRadius: 999, fontSize: 11, fontWeight: 700,
-                              cursor: togglingId === r.id ? 'wait' : blocked ? 'not-allowed' : 'pointer',
-                              border: blocked ? '1px dashed #b45309' : 'none',
-                              background: r.approved === true ? '#dcfce7' : blocked ? '#fee2e2' : '#fef9c3',
-                              color:      r.approved === true ? '#166534' : blocked ? '#991b1b' : '#854d0e',
+                              cursor: togglingId === r.id ? 'wait' : 'pointer',
+                              border: flagged ? '1px dashed #b45309' : 'none',
+                              background: r.approved === true ? '#dcfce7' : '#fef9c3',
+                              color:      r.approved === true ? '#166534' : '#854d0e',
                               opacity: togglingId === r.id ? 0.6 : 1,
                             }}
                           >
-                            {r.approved === true ? 'Freigegeben' : blocked ? 'Gesperrt' : 'Entwurf'}
+                            {flagged && <Lock size={11} strokeWidth={2.5} aria-hidden />}
+                            {r.approved === true ? 'Freigegeben' : 'Entwurf'}
                           </button>
                             );
                           })()}
