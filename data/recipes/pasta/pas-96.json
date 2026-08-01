@@ -1,0 +1,221 @@
+{
+  "id": "pas-96",
+  "name": "Asiatische Nüdelisuppe mit Rindsplätzli und Lattich",
+  "category": "Pasta & Teigwaren",
+  "timeMinutes": 20,
+  "basePortions": 4,
+  "weatherType": "neutral",
+  "dietCategory": "vegetarian",
+  "description": "Diese Suppe ist an einem hektischen Abend gerettet, wenn es schnell gehen muss und trotzdem nach etwas Besonderem schmecken soll. Zitronengras, Chili und Kokosmilch geben der Bouillon in wenigen Minuten ein feines asiatisches Aroma, während die zart gebratenen Rindsplätzli und der knackige Lattich für Substanz sorgen.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "One-Pot-Gericht",
+    "Ganzjährig",
+    "Thai",
+    "Gut zum Mitnehmen"
+  ],
+  "ingredients": [
+    {
+      "name": "Zitronengras",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Chili, rot",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Limette",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Kokosmilch",
+      "amount": 2,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebouillon",
+      "amount": 5,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Rindsplätzli",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Lattich",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Chinesische Nüdeli",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Erdnussöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für die Suppenbasis",
+      "ingredients": [
+        {
+          "name": "Zitronengras",
+          "amount": 3,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Chili, rot",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Limette",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Kokosmilch",
+          "amount": 2,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Gemüsebouillon",
+          "amount": 5,
+          "unit": "dl",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für die Einlage",
+      "ingredients": [
+        {
+          "name": "Rindsplätzli",
+          "amount": 4,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Lattich",
+          "amount": 400,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Chinesische Nüdeli",
+          "amount": 250,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Erdnussöl",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Das Zitronengras waschen, die äusseren harten Blätter entfernen und die Stängel in feine Scheiben schneiden.",
+    "Die Chili entkernen und fein hacken, die Limette auspressen und den Lattich in mundgerechte Stücke schneiden.",
+    "Die Rindsplätzli quer zur Faser in feine Streifen schneiden.",
+    "In einer grossen Pfanne oder einem Wok das Erdnussöl erhitzen und die Rindsplätzli darin bei starker Hitze während 1 Minute scharf anbraten.",
+    "Das Zitronengras und die Chili beigeben und kurz mitdünsten.",
+    "Die Gemüsebouillon und die Kokosmilch dazugiessen und alles kurz aufkochen lassen.",
+    "Die chinesischen Nüdeli in die Suppe geben und gemäss Packungsangabe während etwa 2 Minuten mitkochen lassen, bis sie bissfest sind.",
+    "Den Lattich kurz vor Schluss beigeben, damit er knackig bleibt und nur leicht zusammenfällt.",
+    "Die Suppe mit Salz, Pfeffer und dem Limettensaft abschmecken.",
+    "Die Suppe sofort heiss in Schalen anrichten und geniessen."
+  ],
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/9881/kokosnuedeli-mit-rindfleisch",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T10:44:34.618Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "erdnuesse",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 562,
+    "protein": 32.4,
+    "fat": 22.8,
+    "carbs": 52.3,
+    "fiber": 3.8
+  }
+}

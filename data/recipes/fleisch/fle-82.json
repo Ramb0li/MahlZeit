@@ -1,0 +1,227 @@
+{
+  "id": "fle-82",
+  "name": "Knuspriges Honig-Sesam-Poulet mit Basmatireis",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 25,
+  "basePortions": 4,
+  "weatherType": "neutral",
+  "dietCategory": "meat",
+  "description": "Das kennt man ja: Freitagabend, Lust auf Take-away, aber eigentlich reicht die Zeit locker für die selbstgemachte Variante. Diese Kombination aus knusprig gebratenem Poulet in einer klebrig-süssen Honig-Sojasauce und fluffigem Basmatireis ist in 25 Minuten auf dem Tisch und schmeckt besser als jede Lieferung.",
+  "tags": [
+    "Abendessen",
+    "Mittagessen",
+    "Pfannengericht",
+    "Ganzjährig",
+    "Chinesisch",
+    "Kinderfreundlich",
+    "Gut zum Mitnehmen"
+  ],
+  "ingredients": [
+    {
+      "name": "Pouletbrust-Würfel",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Maizena",
+      "amount": 2.5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Weissmehl",
+      "amount": 2.5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Erdnussöl",
+      "amount": 1,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "flüssiger Honig",
+      "amount": 1.5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Sojasauce",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Sesam",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomatenpüree",
+      "amount": 0.5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "geröstetes Sesamöl",
+      "amount": 0.5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Reisessig",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Basmatireis",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Poulet",
+      "ingredients": [
+        {
+          "name": "Pouletbrust-Würfel",
+          "amount": 500,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Maizena",
+          "amount": 2.5,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Weissmehl",
+          "amount": 2.5,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Erdnussöl",
+          "amount": 1,
+          "unit": "dl",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Honig-Sesam-Sauce",
+      "ingredients": [
+        {
+          "name": "Knoblauch",
+          "amount": 1,
+          "unit": "Zehe",
+          "perPortions": 4
+        },
+        {
+          "name": "flüssiger Honig",
+          "amount": 1.5,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Sojasauce",
+          "amount": 4,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Sesam",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Tomatenpüree",
+          "amount": 0.5,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "geröstetes Sesamöl",
+          "amount": 0.5,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Reisessig",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Basmatireis",
+      "ingredients": [
+        {
+          "name": "Basmatireis",
+          "amount": 250,
+          "unit": "g",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Den Basmatireis nach Packungsangabe in Salzwasser aufkochen und ca. 15 Minuten köcheln lassen, bis er weich ist, anschliessend abgiessen und beiseite stellen.",
+    "Den Knoblauch fein hacken.",
+    "Die Pouletbrust-Würfel in einer Schüssel mit Maizena, Weissmehl und Salz vermischen, bis sie gleichmässig paniert sind.",
+    "Das Erdnussöl in einer Pfanne oder einem Wok erhitzen und die panierten Pouletwürfel darin bei mittlerer bis hoher Hitze rundum knusprig braten, das dauert etwa 6 Minuten.",
+    "Für die Sauce Honig, Sojasauce, Tomatenpüree, Sesamöl, Reisessig und den gehackten Knoblauch in einer Schüssel gut verrühren.",
+    "Die Sauce zu den knusprigen Pouletwürfeln in die Pfanne giessen und alles kurz aufkochen lassen, damit die Sauce leicht einreduziert und das Poulet gut ummantelt.",
+    "Den Sesam über das Poulet streuen und alles mit dem heissen Basmatireis servieren."
+  ],
+  "tips": "Wer es schärfer mag, gibt einen Spritzer Sriracha oder etwas Chiliflocken zur Sauce dazu. Das Poulet lässt sich auch gut vorbereiten und am nächsten Tag in der Pfanne aufwärmen.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/27566/sesam-chicken",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T10:39:30.169Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "erdnuesse",
+    "gluten",
+    "sesam",
+    "soja"
+  ],
+  "nutrition": {
+    "kcal": 612,
+    "protein": 38.4,
+    "fat": 18.6,
+    "carbs": 71.2,
+    "fiber": 2.3
+  }
+}

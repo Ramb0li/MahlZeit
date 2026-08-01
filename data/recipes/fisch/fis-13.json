@@ -95,5 +95,12 @@
     "gluten"
   ],
   "sourceType": "mahlzyt",
-  "_migrated_v2": true
+  "_migrated_v2": true,
+  "nutrition": {
+    "kcal": 582,
+    "protein": 32.8,
+    "fat": 16.4,
+    "carbs": 72.6,
+    "fiber": 3.2
+  }
 }

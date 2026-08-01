@@ -54,10 +54,10 @@
     "schalenfruechte"
   ],
   "nutrition": {
-    "kcal": 45,
+    "kcal": 48,
     "protein": 1.8,
-    "fat": 2.2,
-    "carbs": 5.2,
+    "fat": 2.4,
+    "carbs": 5.1,
     "fiber": 1.2
   },
   "dietCategory": "vegan",

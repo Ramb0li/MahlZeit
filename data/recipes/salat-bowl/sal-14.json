@@ -74,11 +74,11 @@
     "ei"
   ],
   "nutrition": {
-    "kcal": 352,
-    "protein": 9.4,
-    "fat": 21.6,
-    "carbs": 30.2,
-    "fiber": 5.8
+    "kcal": 318,
+    "protein": 10.2,
+    "fat": 15.8,
+    "carbs": 34.6,
+    "fiber": 6.4
   },
   "sourceType": "mahlzyt",
   "_migrated_v2": true

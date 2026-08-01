@@ -150,14 +150,15 @@
   "dietCategory": "vegan",
   "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---ein-01-2--1780579145821.jpeg",
   "allergens": [
-    "milch"
+    "milch",
+    "sulfite"
   ],
   "nutrition": {
-    "kcal": 368,
-    "protein": 18.6,
-    "fat": 9.4,
-    "carbs": 52.8,
-    "fiber": 14.2
+    "kcal": 442,
+    "protein": 21.8,
+    "fat": 12.4,
+    "carbs": 58.3,
+    "fiber": 16.2
   },
   "sourceType": "mahlzyt",
   "_migrated_v2": true,

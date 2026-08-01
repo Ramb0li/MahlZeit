@@ -173,5 +173,12 @@
     "gluten",
     "senf",
     "sulfite"
-  ]
+  ],
+  "nutrition": {
+    "kcal": 485,
+    "protein": 52.4,
+    "fat": 24.6,
+    "carbs": 10.8,
+    "fiber": 0.9
+  }
 }

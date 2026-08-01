@@ -135,5 +135,12 @@
     "milch"
   ],
   "sourceType": "mahlzyt",
-  "_migrated_v2": true
+  "_migrated_v2": true,
+  "nutrition": {
+    "kcal": 624,
+    "protein": 28.7,
+    "fat": 33.2,
+    "carbs": 52.8,
+    "fiber": 6.4
+  }
 }

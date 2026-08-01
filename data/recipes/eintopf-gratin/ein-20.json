@@ -1,0 +1,272 @@
+{
+  "id": "ein-20",
+  "name": "Auberginen-Linsen-Gratin mit Sbrinz",
+  "category": "Aufläufe & Gratins",
+  "timeMinutes": 75,
+  "basePortions": 4,
+  "weatherType": "kalt",
+  "dietCategory": "vegetarian",
+  "description": "Ein herzhafter Gratin aus der Balkanküche, bei dem Auberginen, Champignons und Linsen mit Tomaten und Gewürzen zu einer würzigen Basis verschmelzen, bevor eine Kartoffelflocken-Sbrinz-Haube alles goldbraun überbackt. Genau das Richtige für einen Sonntagabend, an dem man mit wenig Aufwand ein sättigendes Ofengericht auf den Tisch bringen möchte.",
+  "tags": [
+    "Abendessen",
+    "Ofengericht",
+    "Herbst",
+    "Winter",
+    "Einfrierbar",
+    "Budgetfreundlich"
+  ],
+  "ingredients": [
+    {
+      "name": "Zwiebeln",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "rote Peperoncini",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knollensellerie",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Champignons",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Oregano",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Auberginen",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "gehackte Tomaten",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "braune Linsen",
+      "amount": 80,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kartoffelflocken",
+      "amount": 110,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.75,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Muskat",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 40,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Sbrinz",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für die Gemüse-Linsen-Basis",
+      "ingredients": [
+        {
+          "name": "Zwiebeln",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Knoblauchzehe",
+          "amount": 1,
+          "unit": "Zehe",
+          "perPortions": 4
+        },
+        {
+          "name": "rote Peperoncini",
+          "amount": 0.5,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Knollensellerie",
+          "amount": 0.5,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Champignons",
+          "amount": 250,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Oregano",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Auberginen",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "gehackte Tomaten",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "braune Linsen",
+          "amount": 80,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für die Kartoffelflocken-Sbrinz-Haube",
+      "ingredients": [
+        {
+          "name": "Kartoffelflocken",
+          "amount": 110,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.75,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Muskat",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Butter",
+          "amount": 40,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Sbrinz",
+          "amount": 50,
+          "unit": "g",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Die Zwiebel, die Knoblauchzehe und die Peperoncini fein hacken, den Knollensellerie in kleine Würfel schneiden und die Champignons vierteln.",
+    "Die Auberginen in ca. 2 cm grosse Würfel schneiden.",
+    "Das Olivenöl in einer grossen Pfanne erhitzen und die Zwiebeln, den Knoblauch, die Peperoncini und den Knollensellerie darin bei mittlerer Hitze ca. 3 Minuten andämpfen, bis die Zwiebeln glasig sind.",
+    "Die Auberginenwürfel und die Champignons dazugeben und alles zusammen ca. 10 Minuten braten, bis das Gemüse Farbe angenommen hat und die Auberginen weich werden.",
+    "Die gehackten Tomaten, die braunen Linsen und den Oregano dazugeben, kurz aufkochen lassen und anschliessend mit 1 ¾ TL Salz und Pfeffer würzen.",
+    "Die Mischung ca. 5 Minuten bei geringer Hitze köcheln lassen, damit sich die Aromen verbinden und die Sauce leicht einreduziert.",
+    "Den Backofen auf 220 Grad Ober-/Unterhitze vorheizen.",
+    "Für die Haube die Kartoffelflocken mit heissem Wasser gemäss Packungsangabe zu einem Kartoffelstock anrühren und mit Salz sowie einer Prise Muskat abschmecken.",
+    "Die Butter in den Kartoffelstock einrühren, bis sie geschmolzen ist, und die Hälfte des geriebenen Sbrinz untermischen.",
+    "Die Gemüse-Linsen-Mischung in eine gefettete Gratinform füllen und den Kartoffelstock gleichmässig darüber verteilen.",
+    "Den restlichen Sbrinz über den Kartoffelstock streuen und den Gratin im vorgeheizten Ofen bei 220 Grad ca. 15 Minuten überbacken, bis die Oberfläche goldbraun ist.",
+    "Den Gratin kurz ruhen lassen und heiss servieren."
+  ],
+  "tips": "Wer mag, ersetzt den Sbrinz durch Parmesan oder einen anderen würzigen Hartkäse. Der Gratin lässt sich gut vorbereiten und portionenweise einfrieren.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/15795/vegi-linsen-moussaka",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T10:49:44.680Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch",
+    "sellerie"
+  ],
+  "nutrition": {
+    "kcal": 348,
+    "protein": 15.8,
+    "fat": 14.2,
+    "carbs": 40.6,
+    "fiber": 9.2
+  }
+}

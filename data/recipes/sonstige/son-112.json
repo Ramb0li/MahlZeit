@@ -1,0 +1,227 @@
+{
+  "id": "son-112",
+  "name": "Lachs-Broccoli-Wähe mit Dill",
+  "category": "Pizza, Flammkuchen, Wähen & Quiches",
+  "timeMinutes": 65,
+  "basePortions": 4,
+  "weatherType": "neutral",
+  "dietCategory": "fish",
+  "description": "Diese Wähe verbindet zarten Lachs und knackigen Broccoli mit einer würzigen Sbrinz-Rahmguss – ein Gericht, das an sonnige Familiensonntage erinnert, wenn der Ofen läuft und die ganze Küche nach Dill duftet. Einfach zuzubereiten und trotzdem festlich genug für Gäste.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Für Gäste",
+    "Ofengericht",
+    "Ganzjährig"
+  ],
+  "ingredients": [
+    {
+      "name": "Kuchenteig, rund ausgewallt",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Lachsfilets ohne Haut",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Broccoli",
+      "amount": 350,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Dill",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Eier",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "geriebener Sbrinz",
+      "amount": 80,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Vollrahm",
+      "amount": 2,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Weisswein",
+      "amount": 1,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Muskat",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für den Teigboden",
+      "ingredients": [
+        {
+          "name": "Kuchenteig, rund ausgewallt",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für die Füllung",
+      "ingredients": [
+        {
+          "name": "Lachsfilets ohne Haut",
+          "amount": 250,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Broccoli",
+          "amount": 350,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Dill",
+          "amount": 0.5,
+          "unit": "Bund",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für den Guss",
+      "ingredients": [
+        {
+          "name": "Eier",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "geriebener Sbrinz",
+          "amount": 80,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Vollrahm",
+          "amount": 2,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Weisswein",
+          "amount": 1,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Muskat",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Den Backofen auf 220 °C Ober- und Unterhitze vorheizen.",
+    "Den ausgewallten Kuchenteig mitsamt Backpapier in eine Wähenform oder Tarteform legen und den Boden mehrmals mit einer Gabel einstechen.",
+    "Den Broccoli in kleine Röschen teilen und in wenig Salzwasser 3 Minuten blanchieren, dann abtropfen lassen.",
+    "Das Lachsfilet in mundgerechte Würfel schneiden.",
+    "Den Dill fein hacken.",
+    "Für den Guss die Eier mit dem Vollrahm, dem Weisswein und dem geriebenen Sbrinz in einer Schüssel gut verrühren und mit Salz, Pfeffer und Muskat würzen.",
+    "Die Broccoliröschen, die Lachswürfel und den gehackten Dill gleichmässig auf dem Teigboden verteilen.",
+    "Den Rahmguss darübergiessen, sodass die Füllung knapp bedeckt ist.",
+    "Die Wähe im vorgeheizten Backofen bei 220 °C auf der untersten Rille 30 Minuten backen, bis der Guss goldbraun gestockt ist.",
+    "Die Wähe nach dem Backen kurz ruhen lassen, in Stücke schneiden und warm servieren."
+  ],
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/17273/quiche-mit-lachs-und-broccoli",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T10:54:49.673Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "ei",
+    "fisch",
+    "milch",
+    "sulfite"
+  ],
+  "nutrition": {
+    "kcal": 486,
+    "protein": 26.4,
+    "fat": 28.6,
+    "carbs": 28.2,
+    "fiber": 3.1
+  }
+}

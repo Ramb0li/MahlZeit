@@ -121,15 +121,14 @@
   "imageKochen": null,
   "dietCategory": "vegan",
   "allergens": [
-    "senf",
-    "sulfite"
+    "senf"
   ],
   "nutrition": {
-    "kcal": 268,
-    "protein": 9.8,
-    "fat": 14.2,
-    "carbs": 26.5,
-    "fiber": 7.5
+    "kcal": 398,
+    "protein": 14.6,
+    "fat": 20.8,
+    "carbs": 38.5,
+    "fiber": 11.2
   },
   "sourceType": "mahlzyt",
   "_migrated_v2": true,

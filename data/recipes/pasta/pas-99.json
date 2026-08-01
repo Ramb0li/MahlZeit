@@ -1,0 +1,212 @@
+{
+  "id": "pas-99",
+  "name": "Pasta mit Crevetten, Estragon und Dill",
+  "category": "Pasta & Teigwaren",
+  "timeMinutes": 20,
+  "basePortions": 4,
+  "weatherType": "neutral",
+  "dietCategory": "fish",
+  "description": "Ein Pastagericht, das nach viel mehr Aufwand schmeckt, als es tatsächlich braucht. Die frischen Kräuter zusammen mit Zitrone und Rahm ergeben eine Sauce, die herrlich frisch und trotzdem cremig ist, ideal für einen Abend, an dem es schnell gehen soll, aber trotzdem etwas her machen darf.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Pfannengericht",
+    "Ganzjährig",
+    "Mediterran",
+    "Für Gäste",
+    "Gut zum Mitnehmen"
+  ],
+  "ingredients": [
+    {
+      "name": "Pasta",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.25,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Bundzwiebeln mit dem Grün",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Bio-Zitrone",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.25,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Estragon",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Dill",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "tasmanischer Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Saucen-Halbrahm",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "tiefgekühlte geschälte rohe Crevettenschwänze",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Pasta",
+      "ingredients": [
+        {
+          "name": "Pasta",
+          "amount": 500,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.25,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Crevetten und Sauce",
+      "ingredients": [
+        {
+          "name": "Knoblauchzehe",
+          "amount": 1,
+          "unit": "Zehe",
+          "perPortions": 4
+        },
+        {
+          "name": "Bundzwiebeln mit dem Grün",
+          "amount": 3,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Bio-Zitrone",
+          "amount": 0.5,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.25,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Estragon",
+          "amount": 1,
+          "unit": "Bund",
+          "perPortions": 4
+        },
+        {
+          "name": "Dill",
+          "amount": 0.5,
+          "unit": "Bund",
+          "perPortions": 4
+        },
+        {
+          "name": "tasmanischer Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Saucen-Halbrahm",
+          "amount": 200,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "tiefgekühlte geschälte rohe Crevettenschwänze",
+          "amount": 250,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Die Pasta in reichlich gesalzenem Wasser nach Packungsangabe bissfest kochen.",
+    "Währenddessen die Knoblauchzehe fein hacken und die Bundzwiebeln inklusive Grün in feine Ringe schneiden.",
+    "Die Zitrone heiss abwaschen, die Schale fein abreiben und den Saft der halben Zitrone auspressen.",
+    "Estragon und Dill waschen, trockenschütteln und die Blättchen fein hacken.",
+    "Das Olivenöl in einer Pfanne erhitzen und die Crevettenschwänze darin bei mittlerer Hitze etwa 2 Minuten anbraten, bis sie rosa werden.",
+    "Knoblauch und Bundzwiebeln zu den Crevetten geben und kurz mitdünsten.",
+    "Den Saucen-Halbrahm dazugiessen und die Sauce kurz einkochen lassen, bis sie leicht andickt.",
+    "Zitronenschale, Zitronensaft, Estragon, Dill, das Salz und den tasmanischen Pfeffer unter die Sauce rühren und nochmals kurz erwärmen.",
+    "Die fertig gekochte Pasta abgiessen, zur Sauce geben und alles gut vermischen.",
+    "Sofort heiss servieren."
+  ],
+  "tips": "Wer es milder mag, ersetzt den tasmanischen Pfeffer durch normalen schwarzen Pfeffer aus der Mühle.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/19558/crevetten-pasta",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T11:00:46.250Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "krebstiere",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 582,
+    "protein": 28.6,
+    "fat": 16.8,
+    "carbs": 76.2,
+    "fiber": 3.8
+  }
+}

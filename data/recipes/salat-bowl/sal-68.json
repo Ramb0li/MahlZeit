@@ -1,0 +1,246 @@
+{
+  "id": "sal-68",
+  "name": "Chinakohlsalat mit Rauchlachs, Avocado und Hüttenkäse-Dressing",
+  "category": "Salate & Bowls",
+  "timeMinutes": 25,
+  "basePortions": 4,
+  "weatherType": "warm",
+  "dietCategory": "fish",
+  "description": "Ein frischer, knackiger Salat, der durch den Rauchlachs und das cremige Hüttenkäse-Dressing richtig sättigt und trotzdem leicht bleibt. Genau das Richtige, wenn es schnell gehen soll, aber trotzdem etwas Besonderes auf dem Tisch stehen darf.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Gut zum Mitnehmen",
+    "Ohne Kochen",
+    "Sommer",
+    "Ganzjährig"
+  ],
+  "ingredients": [
+    {
+      "name": "Rauchlachs",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Avocado",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Chinakohl",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "rote Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Kerbel",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kerbel",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "flüssiger Honig",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "grobkörniger Senf",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Hüttenkäse nature",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Rapsöl",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Salat",
+      "ingredients": [
+        {
+          "name": "Rauchlachs",
+          "amount": 100,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Avocado",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Chinakohl",
+          "amount": 0.5,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "rote Zwiebel",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Kerbel",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Kerbel",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Hüttenkäse-Dressing",
+      "ingredients": [
+        {
+          "name": "flüssiger Honig",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Zitronensaft",
+          "amount": 3,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "grobkörniger Senf",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Hüttenkäse nature",
+          "amount": 200,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Rapsöl",
+          "amount": 4,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Den Chinakohl in feine Streifen schneiden und in eine grosse Schüssel geben.",
+    "Die rote Zwiebel schälen und in feine Ringe oder Würfel schneiden.",
+    "Die Avocados halbieren, entkernen, das Fruchtfleisch in Scheiben oder Würfel schneiden.",
+    "Den Rauchlachs in mundgerechte Streifen schneiden.",
+    "Chinakohl, Zwiebel, Avocado und Rauchlachs in der Schüssel mischen und mit Salz und Pfeffer würzen.",
+    "Für das Dressing den Hüttenkäse, das Rapsöl, den Zitronensaft, den Honig und den grobkörnigen Senf in einer separaten Schüssel gut verrühren, bis eine cremige Sauce entsteht.",
+    "Das Dressing mit Salz und Pfeffer abschmecken.",
+    "Das Dressing über den Salat geben und alles vorsichtig vermischen.",
+    "Den Salat mit dem restlichen Kerbel bestreuen und sofort servieren."
+  ],
+  "tips": "Wer es mag, kann noch geröstete Kürbiskerne oder Sonnenblumenkerne über den Salat streuen für einen zusätzlichen Crunch.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/13769/avocadosalat-mit-huettenkaese-und-rauchlachs",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T11:07:41.959Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "fisch",
+    "milch",
+    "senf"
+  ],
+  "nutrition": {
+    "kcal": 358,
+    "protein": 16.8,
+    "fat": 26.4,
+    "carbs": 14.2,
+    "fiber": 6.8
+  }
+}

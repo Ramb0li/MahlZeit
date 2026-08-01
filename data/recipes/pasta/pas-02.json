@@ -171,14 +171,16 @@
   "imageKochen": null,
   "allergens": [
     "gluten",
-    "milch"
+    "milch",
+    "sellerie",
+    "soja"
   ],
   "nutrition": {
     "kcal": 562,
-    "protein": 24.3,
-    "fat": 16.8,
-    "carbs": 74.2,
-    "fiber": 8.9
+    "protein": 27.4,
+    "fat": 24.6,
+    "carbs": 54.8,
+    "fiber": 8.2
   },
   "dietCategory": "vegetarian",
   "steps": [

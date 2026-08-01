@@ -1,0 +1,284 @@
+{
+  "id": "fle-78",
+  "name": "Gebackenes Pouletbrüstli mit Parmesan-Risotto und Artischocken",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 45,
+  "basePortions": 4,
+  "weatherType": "neutral",
+  "dietCategory": "meat",
+  "description": "So ein Sonntagsessen, das eigentlich fast von allein geht: Das Poulet zieht im Ofen vor sich hin, während man daneben in aller Ruhe das Risotto rührt. Die Artischocken und der Parmesan geben dem Ganzen eine angenehm mediterrane Note, ohne dass man dafür gross einkaufen gehen muss.",
+  "tags": [
+    "Abendessen",
+    "Mittagessen",
+    "Ofengericht",
+    "Für Gäste",
+    "Ganzjährig",
+    "Italienisch"
+  ],
+  "ingredients": [
+    {
+      "name": "Pouletbrüstli",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Schalotten",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 6,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Fleur de Sel",
+      "amount": 0.25,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Thymian",
+      "amount": 5,
+      "unit": "Zweig",
+      "perPortions": 4
+    },
+    {
+      "name": "Bratbutter",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Saucen-Halbrahm",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Risottoreis",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Weisswein",
+      "amount": 2,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Hühnerbouillon",
+      "amount": 9,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "geriebener Parmesan",
+      "amount": 80,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Artischockenherzen in Öl",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für das Pouletbrüstli",
+      "ingredients": [
+        {
+          "name": "Pouletbrüstli",
+          "amount": 4,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Schalotten",
+          "amount": 4,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Knoblauchzehen",
+          "amount": 6,
+          "unit": "Zehe",
+          "perPortions": 4
+        },
+        {
+          "name": "Fleur de Sel",
+          "amount": 0.25,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Thymian",
+          "amount": 5,
+          "unit": "Zweig",
+          "perPortions": 4
+        },
+        {
+          "name": "Bratbutter",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Saucen-Halbrahm",
+          "amount": 200,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Butter",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für das Risotto",
+      "ingredients": [
+        {
+          "name": "Risottoreis",
+          "amount": 200,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Weisswein",
+          "amount": 2,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Hühnerbouillon",
+          "amount": 9,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Butter",
+          "amount": 30,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "geriebener Parmesan",
+          "amount": 80,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Artischockenherzen in Öl",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Den Backofen auf 220 °C Ober- und Unterhitze vorheizen.",
+    "Die Schalotten schälen und halbieren, die Knoblauchzehen leicht andrücken und ungeschält dazulegen.",
+    "Die Pouletbrüstli mit Fleur de Sel, Salz und Pfeffer würzen und mit den Thymianzweiglein in eine ofenfeste Form legen.",
+    "Die Schalotten und den Knoblauch dazugeben, etwas Bratbutter darüberverteilen und alles 30 Minuten im vorgeheizten Ofen backen.",
+    "Während das Poulet im Ofen ist, für das Risotto die Hühnerbouillon in einer separaten Pfanne warm halten.",
+    "Für das Risotto den Risottoreis in einer weiteren Pfanne ohne Fett kurz andämpfen, bis er glasig wird.",
+    "Den Weisswein zum Risotto giessen und unter Rühren 4 Minuten einkochen lassen, bis die Flüssigkeit fast vollständig aufgenommen ist.",
+    "Nach und nach kellenweise die warme Hühnerbouillon zum Risotto giessen und unter regelmässigem Rühren jeweils einkochen lassen, bis der Reis nach etwa 20 Minuten cremig und bissfest ist.",
+    "Die Artischockenherzen abtropfen lassen, grob zerteilen und unter das fertige Risotto mischen.",
+    "Die Butter und den geriebenen Parmesan unter das Risotto rühren und mit Salz und Pfeffer abschmecken.",
+    "Sobald das Poulet aus dem Ofen kommt, den Bratensaft mit dem Saucen-Halbrahm und der Butter in einer Pfanne aufkochen und 5 Minuten bei mittlerer Hitze einköcheln lassen, bis eine sämige Sauce entsteht.",
+    "Die Pouletbrüstli mit dem Risotto anrichten und die Sauce darüber verteilen."
+  ],
+  "tips": "Die Sauce lässt sich hervorragend mit den ausgetretenen Knoblauch- und Schalottenaromen aus der Bratform verfeinern – einfach mitpürieren oder durch ein Sieb streichen.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/20967/cremige-pouletbruestli-mit-parmesan-risotto",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T10:37:22.660Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch",
+    "sulfite"
+  ],
+  "nutrition": {
+    "kcal": 782,
+    "protein": 48.3,
+    "fat": 32.4,
+    "carbs": 62.8,
+    "fiber": 3.2
+  }
+}

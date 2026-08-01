@@ -240,5 +240,12 @@
   "allergens": [
     "schalenfruechte",
     "sulfite"
-  ]
+  ],
+  "nutrition": {
+    "kcal": 538,
+    "protein": 38.7,
+    "fat": 24.8,
+    "carbs": 40.2,
+    "fiber": 7.5
+  }
 }

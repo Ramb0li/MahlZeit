@@ -1,0 +1,214 @@
+{
+  "id": "sup-64",
+  "name": "Thailändische Currysuppe mit Poulet und Shiitake-Pilzen",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 25,
+  "basePortions": 4,
+  "weatherType": "kalt",
+  "dietCategory": "meat",
+  "description": "Diese Suppe riecht schon beim Kochen nach Ferien – Zitronengras und Ingwer machen aus Kokosmilch und Currypaste ein wärmendes, aromatisches Süppchen. Die knackigen Wasabi-Nüsse obendrauf sind der kleine Kick, der aus einem guten Gericht ein besonderes macht.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "One-Pot-Gericht",
+    "Herbst",
+    "Winter",
+    "Thai"
+  ],
+  "ingredients": [
+    {
+      "name": "Zitronengras",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Ingwer",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "rote Peperoncini",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Pouletwürfel",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Shiitake-Pilze",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Chinakohl",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "gelbe Currypaste",
+      "amount": 1.5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Sojasauce",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kokosmilch",
+      "amount": 2.5,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "dunkles Sesamöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "chinesische Nüdeli",
+      "amount": 350,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Wasabi-Nüsse",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für die Currysuppe",
+      "ingredients": [
+        {
+          "name": "Zitronengras",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Ingwer",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "rote Peperoncini",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Pouletwürfel",
+          "amount": 300,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Shiitake-Pilze",
+          "amount": 150,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Chinakohl",
+          "amount": 400,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "gelbe Currypaste",
+          "amount": 1.5,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Sojasauce",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Kokosmilch",
+          "amount": 2.5,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "dunkles Sesamöl",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für die Nüdeli-Einlage",
+      "ingredients": [
+        {
+          "name": "chinesische Nüdeli",
+          "amount": 350,
+          "unit": "g",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten zum Bestreuen",
+      "ingredients": [
+        {
+          "name": "Wasabi-Nüsse",
+          "amount": 3,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Das Zitronengras andrücken oder in Stücke schneiden, den Ingwer schälen und fein hacken sowie die Peperoncini in feine Ringe schneiden.",
+    "Den Chinakohl in mundgerechte Stücke schneiden und die Shiitake-Pilze putzen und halbieren oder vierteln, je nach Grösse.",
+    "Die Currypaste zusammen mit der Kokosmilch, dem Zitronengras, dem Ingwer und der Peperoncini in einer grossen Pfanne aufkochen.",
+    "Die Pouletwürfel beigeben und in der Kokosmilch-Mischung 3 Minuten kochen, bis das Fleisch fast gar ist.",
+    "Die Shiitake-Pilze und den Chinakohl beigeben und alles zusammen nochmals 2 Minuten aufkochen, bis das Gemüse bissfest ist.",
+    "Die Sojasauce und das dunkle Sesamöl unterrühren und die Suppe mit Salz nach Bedarf abschmecken.",
+    "Die chinesischen Nüdeli separat nach Packungsanweisung kochen, abgiessen und auf die Suppenschalen verteilen.",
+    "Die heisse Currysuppe über die Nüdeli giessen und zum Schluss mit den grob gehackten Wasabi-Nüssen bestreuen."
+  ],
+  "tips": "Wer es milder mag, verwendet nur die halbe Menge Peperoncini oder entfernt die Kerne vor dem Schneiden.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/16372/thai-curry-topf-mit-nuedeli-und-poulet",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T10:51:01.991Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch",
+    "sesam",
+    "soja"
+  ],
+  "nutrition": {
+    "kcal": 521,
+    "protein": 28.3,
+    "fat": 15.2,
+    "carbs": 65.8,
+    "fiber": 5.1
+  }
+}

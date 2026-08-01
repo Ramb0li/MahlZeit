@@ -97,5 +97,12 @@
     "senf",
     "soja",
     "sulfite"
-  ]
+  ],
+  "nutrition": {
+    "kcal": 28,
+    "protein": 0.9,
+    "fat": 0.2,
+    "carbs": 5.8,
+    "fiber": 0.3
+  }
 }

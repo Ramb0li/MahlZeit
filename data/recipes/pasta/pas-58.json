@@ -96,10 +96,16 @@
   "imageKochen": null,
   "allergens": [
     "fisch",
-    "gluten",
     "milch",
     "soja"
   ],
   "sourceType": "mahlzyt",
-  "_migrated_v2": true
+  "_migrated_v2": true,
+  "nutrition": {
+    "kcal": 612,
+    "protein": 28.5,
+    "fat": 28.4,
+    "carbs": 57.3,
+    "fiber": 4.2
+  }
 }

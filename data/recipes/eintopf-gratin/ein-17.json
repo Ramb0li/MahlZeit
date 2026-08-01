@@ -103,11 +103,11 @@
     "milch"
   ],
   "nutrition": {
-    "kcal": 578,
-    "protein": 35.4,
-    "fat": 25.6,
-    "carbs": 48.3,
-    "fiber": 6.5
+    "kcal": 558,
+    "protein": 31.2,
+    "fat": 24.6,
+    "carbs": 50.8,
+    "fiber": 5.4
   },
   "sourceType": "mahlzyt",
   "_migrated_v2": true

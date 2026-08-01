@@ -60,11 +60,11 @@
     "sellerie"
   ],
   "nutrition": {
-    "kcal": 168,
+    "kcal": 178,
     "protein": 5.2,
-    "fat": 1.2,
-    "carbs": 34.8,
-    "fiber": 7.5
+    "fat": 1.8,
+    "carbs": 35.8,
+    "fiber": 8.5
   },
   "dietCategory": "vegetarian",
   "imageZutaten": null,

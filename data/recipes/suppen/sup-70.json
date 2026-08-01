@@ -1,0 +1,204 @@
+{
+  "id": "sup-70",
+  "name": "Thailändische Kokos-Poulet-Suppe mit Shiitake und Zitronengras",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 30,
+  "basePortions": 4,
+  "weatherType": "kalt",
+  "dietCategory": "meat",
+  "description": "Diese Suppe riecht schon beim Köcheln so intensiv nach Zitronengras und Limette, dass die ganze Küche nach Thailand duftet. Sie ist an einem stressigen Abend blitzschnell gemacht und trotzdem so aromatisch, dass man sie auch Gästen problemlos vorsetzen kann. Ein Teller davon wärmt richtig durch und macht gute Laune.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "One-Pot-Gericht",
+    "Ganzjährig",
+    "Thai",
+    "Für Gäste"
+  ],
+  "ingredients": [
+    {
+      "name": "Zitronengras",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Fischsauce",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pouletbrüstli",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "rote Chili",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Limettenblätter (Kaffir)",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Ingwer",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Shiitake-Pilze",
+      "amount": 70,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Koriander",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Limette",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Kokosmilch",
+      "amount": 5,
+      "unit": "dl",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für die Suppe",
+      "ingredients": [
+        {
+          "name": "Zitronengras",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Fischsauce",
+          "amount": 4,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pouletbrüstli",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "rote Chili",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Limettenblätter (Kaffir)",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Ingwer",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Shiitake-Pilze",
+          "amount": 70,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Koriander",
+          "amount": 0.5,
+          "unit": "Bund",
+          "perPortions": 4
+        },
+        {
+          "name": "Limette",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Kokosmilch",
+          "amount": 5,
+          "unit": "dl",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Das Zitronengras waschen, die äusseren harten Blätter entfernen und die Stängel mit dem Messerrücken leicht andrücken, damit die Aromen besser austreten können.",
+    "Die Pouletbrüstli in mundgerechte Stücke schneiden, die Shiitake-Pilze putzen und je nach Grösse halbieren oder vierteln.",
+    "Die Chili in feine Ringe schneiden, den Ingwer schälen und fein hacken, den Koriander grob hacken und die Limette in Schnitze schneiden.",
+    "Die Kokosmilch zusammen mit dem Zitronengras, dem Limettenblatt und dem Ingwer in einem grossen Topf bei mittlerer Hitze aufkochen lassen.",
+    "Die Pouletstücke und die Shiitake-Pilze beigeben und die Suppe während 10 Minuten köcheln lassen, bis das Poulet gar ist.",
+    "Die Fischsauce und die Chili-Ringe beigeben und die Suppe während weiteren 5 Minuten leicht köcheln lassen.",
+    "Das Zitronengras und das Limettenblatt aus der Suppe entfernen, da diese nicht mitgegessen werden.",
+    "Die Suppe mit Salz, Pfeffer und einem Spritzer Limettensaft abschmecken.",
+    "Die Suppe in Schalen anrichten, mit frischem Koriander bestreuen und mit den restlichen Limettenschnitzen servieren."
+  ],
+  "tips": "Wer es schärfer mag, kann die Chili mit den Kernen verwenden oder eine zweite Chili beigeben. Die Suppe lässt sich gut vorbereiten und schmeckt am nächsten Tag noch intensiver.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/15049/tom-kha-gai",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T11:06:34.267Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "fisch",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 358,
+    "protein": 32.4,
+    "fat": 21.8,
+    "carbs": 9.6,
+    "fiber": 2.1
+  }
+}

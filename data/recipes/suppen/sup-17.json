@@ -109,10 +109,10 @@
   ],
   "nutrition": {
     "kcal": 298,
-    "protein": 13.2,
+    "protein": 13.8,
     "fat": 7.6,
-    "carbs": 44.8,
-    "fiber": 11.4
+    "carbs": 44.2,
+    "fiber": 10.6
   },
   "sourceType": "mahlzyt",
   "_migrated_v2": true

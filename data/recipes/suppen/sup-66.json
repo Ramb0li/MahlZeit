@@ -1,0 +1,311 @@
+{
+  "id": "sup-66",
+  "name": "Poulet-Curry mit Blumenkohl und Erdnüssen",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 75,
+  "basePortions": 4,
+  "weatherType": "kalt",
+  "dietCategory": "meat",
+  "description": "Ein Curry mit vielen Gewürzen, die zusammen mit Kokosmilch eine runde, wärmende Sauce ergeben. Die geröstet-salzigen Erdnüsse obendrauf geben den letzten Kick, und die Limette macht das Ganze schön frisch. Ideal für einen Abend, an dem es etwas Farbe und Würze braucht.",
+  "tags": [
+    "Abendessen",
+    "Mittagessen",
+    "Pfannengericht",
+    "Herbst",
+    "Winter",
+    "Indisch"
+  ],
+  "ingredients": [
+    {
+      "name": "Pouletbrüstli",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Limetten",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Ingwer",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Chilis, rot",
+      "amount": 1.5,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Kurkuma",
+      "amount": 3,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Fenchelsamen",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Koriandersamen, gemahlen",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Nelkenpulver",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1.25,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebeln",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Blumenkohl",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Lorbeerblätter",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Bratbutter",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kokosmilch",
+      "amount": 2,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomatenpüree",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Hühnerbouillon",
+      "amount": 2,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Gesalzene Erdnüsse",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Gesalzene Erdnüsse",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Koriander",
+      "amount": 4,
+      "unit": "Zweig",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für die Marinade und das Poulet",
+      "ingredients": [
+        {
+          "name": "Pouletbrüstli",
+          "amount": 500,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Limetten",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Knoblauchzehen",
+          "amount": 1,
+          "unit": "Zehe",
+          "perPortions": 4
+        },
+        {
+          "name": "Ingwer",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Chilis, rot",
+          "amount": 1.5,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Kurkuma",
+          "amount": 3,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Fenchelsamen",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Koriandersamen, gemahlen",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Nelkenpulver",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1.25,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für das Curry",
+      "ingredients": [
+        {
+          "name": "Zwiebeln",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Blumenkohl",
+          "amount": 500,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Lorbeerblätter",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Bratbutter",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Kokosmilch",
+          "amount": 2,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Tomatenpüree",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Hühnerbouillon",
+          "amount": 2,
+          "unit": "dl",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten zum Anrichten",
+      "ingredients": [
+        {
+          "name": "Gesalzene Erdnüsse",
+          "amount": 50,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Gesalzene Erdnüsse",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Koriander",
+          "amount": 4,
+          "unit": "Zweig",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Das Pouletbrüstli in mundgerechte Stücke schneiden und in eine Schüssel geben.",
+    "Knoblauch fein hacken, Ingwer fein reiben und die Chilis in feine Ringe schneiden, dann zusammen mit Kurkuma, Fenchelsamen, gemahlenen Koriandersamen, einer Prise Nelkenpulver und einem Teil des Salzes zum Poulet geben.",
+    "Das Poulet gut mit den Gewürzen vermischen und zugedeckt für 30 Minuten im Kühlschrank marinieren lassen.",
+    "In der Zwischenzeit die Zwiebel fein hacken und den Blumenkohl in kleine Röschen teilen.",
+    "Die Bratbutter in einer grossen Pfanne oder einem Topf erhitzen und die Zwiebel darin während 2 Minuten glasig andämpfen.",
+    "Das marinierte Poulet dazugeben und während 1 Minute bei mittlerer bis hoher Hitze anbraten, bis es aussen leicht angezogen ist.",
+    "Blumenkohlröschen, Lorbeerblatt, Tomatenpüree, Kokosmilch und Hühnerbouillon dazugeben und alles einmal aufkochen lassen.",
+    "Die Hitze reduzieren und das Curry zugedeckt während 10 Minuten köcheln lassen, bis der Blumenkohl gar, aber noch bissfest ist und das Poulet durchgegart ist.",
+    "Das Curry mit dem restlichen Salz sowie dem Saft der Limette abschmecken.",
+    "Die gesalzenen Erdnüsse grob hacken und zusammen mit den Korianderzweiglein über das Curry streuen, dann sofort servieren."
+  ],
+  "tips": "Dazu passt Basmatireis oder Naanbrot. Das Lorbeerblatt vor dem Servieren entfernen.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/6527/blumenkohl-curry-mit-poulet",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T10:52:19.151Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "erdnuesse",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 428,
+    "protein": 38.6,
+    "fat": 22.4,
+    "carbs": 16.8,
+    "fiber": 5.7
+  }
+}

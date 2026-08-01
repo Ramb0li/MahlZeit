@@ -1,0 +1,183 @@
+{
+  "id": "fle-84",
+  "name": "Poulet-Minifilets in Salbei-Rahmsauce mit Parmesan",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 25,
+  "basePortions": 2,
+  "weatherType": "neutral",
+  "dietCategory": "meat",
+  "description": "Ein schnelles Feierabendgericht, das nach viel mehr Aufwand schmeckt, als es tatsächlich macht. Der Salbei gibt der Rahmsauce dieses würzige, leicht erdige Aroma, das so herrlich zu zartem Poulet passt. Ideal für Tage, an denen es schnell gehen muss, aber trotzdem etwas Feines auf den Tisch soll.",
+  "tags": [
+    "Abendessen",
+    "Mittagessen",
+    "Pfannengericht",
+    "Ganzjährig",
+    "Italienisch",
+    "Für Gäste"
+  ],
+  "ingredients": [
+    {
+      "name": "Poulet-Minifilets",
+      "amount": 280,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Salbei",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 2
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 2,
+      "unit": "Zehe",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 0.25,
+      "unit": "TL",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Öl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Saucen-Halbrahm",
+      "amount": 200,
+      "unit": "ml",
+      "perPortions": 2
+    },
+    {
+      "name": "Parmesan, gerieben",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Poulet",
+      "ingredients": [
+        {
+          "name": "Poulet-Minifilets",
+          "amount": 280,
+          "unit": "g",
+          "perPortions": 2
+        },
+        {
+          "name": "Salbei",
+          "amount": 1,
+          "unit": "Bund",
+          "perPortions": 2
+        },
+        {
+          "name": "Knoblauchzehen",
+          "amount": 2,
+          "unit": "Zehe",
+          "perPortions": 2
+        },
+        {
+          "name": "Salz",
+          "amount": 0.25,
+          "unit": "TL",
+          "perPortions": 2
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 2
+        },
+        {
+          "name": "Öl",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 2
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Salbei-Rahmsauce",
+      "ingredients": [
+        {
+          "name": "Saucen-Halbrahm",
+          "amount": 200,
+          "unit": "ml",
+          "perPortions": 2
+        },
+        {
+          "name": "Parmesan, gerieben",
+          "amount": 4,
+          "unit": "EL",
+          "perPortions": 2
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 2
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 2
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Die Poulet-Minifilets mit Salz und Pfeffer würzen.",
+    "Den Knoblauch schälen und fein hacken, die Salbeiblätter von den Stielen zupfen.",
+    "Das Öl in einer Pfanne erhitzen und die Poulet-Minifilets darin bei mittlerer bis hoher Hitze rundum anbraten.",
+    "Den Knoblauch und die Salbeiblätter zu den Poulet-Minifilets in die Pfanne geben und kurz mitbraten.",
+    "Die Poulet-Minifilets, den Knoblauch und den Salbei in der Pfanne schichten, sodass sich die Aromen gut verteilen.",
+    "Den Saucen-Halbrahm dazugiessen und alles zusammen 8 Minuten köcheln lassen, bis das Poulet gar ist.",
+    "Den geriebenen Parmesan unterrühren und die Sauce nochmals 2 Minuten köcheln lassen, bis sie leicht eindickt.",
+    "Die Sauce mit Salz und Pfeffer nach Bedarf abschmecken und das Gericht heiss servieren."
+  ],
+  "tips": "Dazu passen Tagliatelle, Reis oder frisches Baguette, um die feine Sauce aufzunehmen.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/21784/salbei-parmesan-poulet",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T10:59:28.154Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 486,
+    "protein": 39.2,
+    "fat": 33.8,
+    "carbs": 5.6,
+    "fiber": 0.4
+  }
+}

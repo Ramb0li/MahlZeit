@@ -1,0 +1,152 @@
+{
+  "id": "fle-80",
+  "name": "Hackbraten-Burger mit Cornflakes",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 20,
+  "basePortions": 4,
+  "weatherType": "neutral",
+  "dietCategory": "meat",
+  "description": "Ein einfacher Hacktätschli-Teig, wie ihn wohl schon unsere Grossmütter gekannt haben – die Cornflakes sorgen für eine feine Bindung und machen die Poulet-Alternative aus Rindfleisch schön saftig. Ideal, wenn es schnell gehen muss und trotzdem herzhaft schmecken soll.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Budgetfreundlich",
+    "Kinderfreundlich",
+    "Pfannengericht",
+    "Ganzjährig",
+    "Schweizerisch"
+  ],
+  "ingredients": [
+    {
+      "name": "Hackfleisch (Rind)",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebeln",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Petersilie",
+      "amount": 2,
+      "unit": "Zweig",
+      "perPortions": 4
+    },
+    {
+      "name": "Cornflakes",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Eier",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Öl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Hacktätschli",
+      "ingredients": [
+        {
+          "name": "Hackfleisch (Rind)",
+          "amount": 500,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Zwiebeln",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Petersilie",
+          "amount": 2,
+          "unit": "Zweig",
+          "perPortions": 4
+        },
+        {
+          "name": "Cornflakes",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Eier",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Öl",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Die Zwiebel fein hacken und die Petersilie fein schneiden.",
+    "Das Hackfleisch in eine Schüssel geben und mit der gehackten Zwiebel, der Petersilie, den Cornflakes, dem Salz, dem Pfeffer und dem Ei vermischen.",
+    "Die Masse gut durchkneten, bis alle Zutaten gleichmässig verteilt sind, und den Teig 5 Minuten ziehen lassen, damit sich die Aromen verbinden.",
+    "Aus der Masse vier gleichmässige Tätschli formen.",
+    "Das Öl in einer Pfanne erhitzen und die Hacktätschli darin bei mittlerer Hitze von jeder Seite rund 5 bis 6 Minuten braten, bis sie durchgebraten und schön goldbraun sind."
+  ],
+  "tips": "Passt gut zu Kartoffelstock oder einem knackigen Salat und lässt sich auch gut vorbereiten und später aufwärmen.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/12147/hacktaetschli",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T10:38:18.559Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "ei"
+  ],
+  "nutrition": {
+    "kcal": 398,
+    "protein": 33.2,
+    "fat": 25.8,
+    "carbs": 8.4,
+    "fiber": 0.9
+  }
+}

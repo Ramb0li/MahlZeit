@@ -219,5 +219,12 @@
   "imageKochen": null,
   "allergens": [
     "soja"
-  ]
+  ],
+  "nutrition": {
+    "kcal": 392,
+    "protein": 9.8,
+    "fat": 12.6,
+    "carbs": 62.4,
+    "fiber": 7.2
+  }
 }

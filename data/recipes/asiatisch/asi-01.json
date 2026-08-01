@@ -62,18 +62,19 @@
     "ei",
     "erdnuesse",
     "gluten",
+    "krebstiere",
     "soja"
   ],
   "nutrition": {
-    "kcal": 542,
-    "protein": 22.3,
-    "fat": 18.6,
-    "carbs": 68.4,
-    "fiber": 4.8
+    "kcal": 521,
+    "protein": 28.3,
+    "fat": 16.7,
+    "carbs": 62.4,
+    "fiber": 3.8
   },
   "imageZutaten": null,
   "imageKochen": null,
-  "dietCategory": "vegetarian",
+  "dietCategory": "fish",
   "sourceType": "mahlzyt",
   "_migrated_v2": true
 }

@@ -1,0 +1,150 @@
+{
+  "id": "pas-98",
+  "name": "Gnocchi-Pfanne mit Speck und grünen Spargeln",
+  "category": "Pasta & Teigwaren",
+  "timeMinutes": 15,
+  "basePortions": 2,
+  "weatherType": "neutral",
+  "dietCategory": "meat",
+  "description": "Ein Feierabend-Rezept für Tage, an denen es schnell gehen muss, aber trotzdem nach etwas aussehen soll: Gnocchi, knusprige Speckwürfeli und grüne Spargeln in cremigem Halbrahm. In 15 Minuten steht das Ganze auf dem Tisch, ganz ohne grossen Aufwand.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Pfannengericht",
+    "Frühling",
+    "Schweizerisch"
+  ],
+  "ingredients": [
+    {
+      "name": "Gnocchi di patate",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Speckwürfeli",
+      "amount": 80,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 2
+    },
+    {
+      "name": "Grüne Spargeln",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 0.25,
+      "unit": "TL",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Saucen-Halbrahm",
+      "amount": 1,
+      "unit": "dl",
+      "perPortions": 2
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Gnocchi",
+      "ingredients": [
+        {
+          "name": "Gnocchi di patate",
+          "amount": 300,
+          "unit": "g",
+          "perPortions": 2
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Speck und Spargeln",
+      "ingredients": [
+        {
+          "name": "Speckwürfeli",
+          "amount": 80,
+          "unit": "g",
+          "perPortions": 2
+        },
+        {
+          "name": "Knoblauch",
+          "amount": 1,
+          "unit": "Zehe",
+          "perPortions": 2
+        },
+        {
+          "name": "Grüne Spargeln",
+          "amount": 250,
+          "unit": "g",
+          "perPortions": 2
+        },
+        {
+          "name": "Salz",
+          "amount": 0.25,
+          "unit": "TL",
+          "perPortions": 2
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 2
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für die Sauce",
+      "ingredients": [
+        {
+          "name": "Saucen-Halbrahm",
+          "amount": 1,
+          "unit": "dl",
+          "perPortions": 2
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Die Spargeln waschen, die holzigen Enden abschneiden und die Stangen in mundgerechte Stücke schneiden.",
+    "Den Knoblauch fein hacken.",
+    "Die Speckwürfeli in einer beschichteten Pfanne ohne Zugabe von Fett bei mittlerer Hitze etwa 4 Minuten knusprig braten.",
+    "Den Knoblauch und die Spargelstücke beigeben und kurz mitbraten.",
+    "Den Saucen-Halbrahm dazugiessen, mit Salz und Pfeffer würzen und alles zusammen etwa 5 Minuten köcheln lassen, bis die Spargeln bissfest sind.",
+    "Parallel dazu die Gnocchi gemäss Packungsangabe in einem Topf mit Salzwasser kurz aufkochen, bis sie an die Oberfläche steigen, und danach abtropfen lassen.",
+    "Die Gnocchi zur Spargel-Speck-Sauce in die Pfanne geben und alles vorsichtig schichten beziehungsweise unterheben, bis alles gut mit der Sauce überzogen ist.",
+    "Sofort heiss servieren."
+  ],
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/13301/gnocchi-mit-spargel-rahmsauce",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T10:45:20.287Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 518,
+    "protein": 18.2,
+    "fat": 26.4,
+    "carbs": 52.8,
+    "fiber": 4.3
+  }
+}

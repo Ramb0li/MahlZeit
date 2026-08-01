@@ -76,11 +76,11 @@
     "sulfite"
   ],
   "nutrition": {
-    "kcal": 324,
-    "protein": 21.4,
+    "kcal": 342,
+    "protein": 22.5,
     "fat": 19.8,
-    "carbs": 12.6,
-    "fiber": 4.2
+    "carbs": 14.2,
+    "fiber": 4.5
   },
   "dietCategory": "meat",
   "sourceType": "mahlzyt",

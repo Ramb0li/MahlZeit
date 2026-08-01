@@ -1,0 +1,194 @@
+{
+  "id": "rei-62",
+  "name": "Tomaten-Risotto mit Parmesan und Thymian",
+  "category": "Reis, Getreide & Hülsenfrüchte",
+  "timeMinutes": 35,
+  "basePortions": 4,
+  "weatherType": "neutral",
+  "dietCategory": "vegetarian",
+  "description": "Ein einfaches Risotto, das genau dann gelingt, wenn man Geduld beim Rühren mitbringt und die Bouillon in Ruhe einkochen lässt. Die Cherry-Tomaten bringen eine leichte Frische rein, die zum würzigen Parmesan wunderbar passt. Ideal für einen Abend, an dem man keine grossen Sprünge machen will, aber trotzdem etwas Feines auf dem Tisch haben möchte.",
+  "tags": [
+    "Abendessen",
+    "Mittagessen",
+    "Pfannengericht",
+    "One-Pot-Gericht",
+    "Ganzjährig",
+    "Italienisch",
+    "Kinderfreundlich",
+    "Für Gäste"
+  ],
+  "ingredients": [
+    {
+      "name": "Zwiebeln",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Cherry-Tomaten",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Thymian",
+      "amount": 2,
+      "unit": "Zweig",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Parmesan geriebener",
+      "amount": 75,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomatenpüree",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebouillon",
+      "amount": 10,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Risottoreis",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Weisswein",
+      "amount": 1,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Risotto",
+      "ingredients": [
+        {
+          "name": "Zwiebeln",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Cherry-Tomaten",
+          "amount": 150,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Thymian",
+          "amount": 2,
+          "unit": "Zweig",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Parmesan geriebener",
+          "amount": 75,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Tomatenpüree",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Gemüsebouillon",
+          "amount": 10,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Risottoreis",
+          "amount": 400,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Weisswein",
+          "amount": 1,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Die Zwiebel fein hacken und die Cherry-Tomaten halbieren.",
+    "Das Olivenöl in einer weiten Pfanne oder einem Topf erhitzen und die Zwiebel darin bei mittlerer Hitze glasig andämpfen.",
+    "Den Risottoreis beigeben und unter Rühren kurz mitrösten, bis die Reiskörner leicht glasig werden.",
+    "Mit dem Weisswein ablöschen und diesen komplett einkochen lassen.",
+    "Das Tomatenpüree unterrühren und anschliessend die Gemüsebouillon nach und nach kellenweise beigeben, dabei stets erst nachgiessen, wenn die vorherige Flüssigkeit fast eingekocht ist.",
+    "Das Risotto bei mittlerer Hitze unter regelmässigem Rühren etwa 25 Minuten köcheln lassen, bis der Reis cremig und bissfest ist.",
+    "Die Cherry-Tomaten und den Thymian in den letzten 5 Minuten der Kochzeit beigeben.",
+    "Den geriebenen Parmesan unterrühren, bis das Risotto schön cremig wird.",
+    "Mit Salz und Pfeffer abschmecken und das Risotto weitere 10 Minuten zugedeckt ruhen lassen, bevor es serviert wird."
+  ],
+  "tips": "Wer mag, verfeinert das Risotto mit einem Klecks Butter oder frischem Basilikum zum Schluss.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/17611/tomatenrisotto",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T11:03:23.585Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch",
+    "sulfite"
+  ],
+  "nutrition": {
+    "kcal": 512,
+    "protein": 15.8,
+    "fat": 10.4,
+    "carbs": 83.6,
+    "fiber": 3.2
+  }
+}

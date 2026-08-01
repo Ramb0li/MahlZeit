@@ -74,11 +74,11 @@
   "dietCategory": "vegan",
   "allergens": [],
   "nutrition": {
-    "kcal": 268,
+    "kcal": 245,
     "protein": 2.1,
-    "fat": 25.8,
-    "carbs": 9.4,
-    "fiber": 5.6
+    "fat": 22.5,
+    "carbs": 10.8,
+    "fiber": 6.2
   },
   "sourceType": "mahlzyt",
   "_migrated_v2": true

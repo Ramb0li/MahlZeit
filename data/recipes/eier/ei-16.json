@@ -83,15 +83,15 @@
   "imageKochen": null,
   "allergens": [
     "gluten",
-    "milch",
-    "schalenfruechte"
+    "schalenfruechte",
+    "soja"
   ],
   "nutrition": {
-    "kcal": 198,
-    "protein": 5.1,
-    "fat": 3.2,
-    "carbs": 39.8,
-    "fiber": 5.4
+    "kcal": 329,
+    "protein": 8.4,
+    "fat": 11.2,
+    "carbs": 50.8,
+    "fiber": 7.6
   },
   "dietCategory": "vegan",
   "sourceType": "mahlzyt",

@@ -1,0 +1,110 @@
+{
+  "id": "son-111",
+  "name": "Poulet-Wrap mit Cheddar und Sunny Salad",
+  "category": "Wraps, Sandwiches & Burger",
+  "timeMinutes": 10,
+  "basePortions": 2,
+  "weatherType": "neutral",
+  "dietCategory": "vegetarian",
+  "description": "Ein schneller Wrap für Tage, an denen es einfach fix gehen muss, aber trotzdem etwas Feines auf dem Teller landen soll. Die würzigen Pouletstreifen zusammen mit dem knackigen Salat und dem geschmolzenen Cheddar machen jeden Wrap zu einem kleinen Highlight in der Mittagspause.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Pfannengericht",
+    "Ganzjährig",
+    "Gut zum Mitnehmen",
+    "Kinderfreundlich"
+  ],
+  "ingredients": [
+    {
+      "name": "Herbs Chicken Stripes",
+      "amount": 130,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Betty Bossi Sunny Salad",
+      "amount": 120,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Cheddar",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Weizen-Tortillas",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 2
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Poulet-Füllung",
+      "ingredients": [
+        {
+          "name": "Herbs Chicken Stripes",
+          "amount": 130,
+          "unit": "g",
+          "perPortions": 2
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Wrap",
+      "ingredients": [
+        {
+          "name": "Betty Bossi Sunny Salad",
+          "amount": 120,
+          "unit": "g",
+          "perPortions": 2
+        },
+        {
+          "name": "Cheddar",
+          "amount": 100,
+          "unit": "g",
+          "perPortions": 2
+        },
+        {
+          "name": "Weizen-Tortillas",
+          "amount": 4,
+          "unit": "Stk",
+          "perPortions": 2
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Die Herbs Chicken Stripes in einer beschichteten Pfanne ohne zusätzliches Fett bei mittlerer bis hoher Hitze etwa 5 Minuten braten, bis sie rundum schön Farbe angenommen haben und durchgebraten sind.",
+    "Während die Pouletstreifen braten, den Cheddar in dünne Scheiben oder Streifen schneiden.",
+    "Die Weizen-Tortillas kurz in einer separaten Pfanne oder direkt auf dem Herd warm werden lassen, damit sie sich besser rollen lassen.",
+    "Jede Tortilla mit dem Sunny Salad belegen.",
+    "Die gebratenen Pouletstreifen gleichmässig auf den vier Tortillas verteilen.",
+    "Den Cheddar darüberstreuen, sodass er leicht von der Resthitze des Poulets anschmilzt.",
+    "Die Tortillas fest zu Wraps aufrollen und sofort servieren."
+  ],
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/14556/poulet-wrap",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T10:36:53.585Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 568,
+    "protein": 34.2,
+    "fat": 24.8,
+    "carbs": 48.6,
+    "fiber": 3.2
+  }
+}

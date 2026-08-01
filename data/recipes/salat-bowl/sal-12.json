@@ -93,11 +93,11 @@
   "imageKochen": null,
   "allergens": [],
   "nutrition": {
-    "kcal": 398,
-    "protein": 16.2,
-    "fat": 16.8,
-    "carbs": 45.3,
-    "fiber": 11.8
+    "kcal": 418,
+    "protein": 16.8,
+    "fat": 21.2,
+    "carbs": 42.6,
+    "fiber": 11.4
   },
   "sourceType": "mahlzyt",
   "_migrated_v2": true

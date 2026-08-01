@@ -62,11 +62,11 @@
   ],
   "allergens": [],
   "nutrition": {
-    "kcal": 285,
-    "protein": 13.8,
+    "kcal": 284,
+    "protein": 13.2,
     "fat": 10.8,
-    "carbs": 34.2,
-    "fiber": 11.2
+    "carbs": 34.6,
+    "fiber": 8.9
   },
   "dietCategory": "vegetarian",
   "imageZutaten": null,

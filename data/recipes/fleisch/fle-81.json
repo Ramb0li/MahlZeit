@@ -1,0 +1,207 @@
+{
+  "id": "fle-81",
+  "name": "Rindsgeschnetzeltes mit Champignons und Peperoni",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 30,
+  "basePortions": 4,
+  "weatherType": "neutral",
+  "dietCategory": "meat",
+  "description": "Ein klassisches Geschnetzeltes, wie man es aus der Migros-Küche kennt, schnell gemacht für einen hektischen Wochentag. Die Kombination aus zartem Rindfleisch, knackigen Peperoni und der cremigen Sauce mit dem feinen Säurekick der Essiggurken macht dieses Gericht zu einem echten Familienliebling.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Pfannengericht",
+    "Ganzjährig",
+    "Schweizerisch",
+    "Kinderfreundlich",
+    "Gut zum Mitnehmen"
+  ],
+  "ingredients": [
+    {
+      "name": "Maizena",
+      "amount": 1.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Rindshuft",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebeln",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "rote Peperoni",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Champignons",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Essiggurken",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Paprika edelsüss",
+      "amount": 1.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Vollrahm",
+      "amount": 1,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Fleischbouillon",
+      "amount": 2,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Erdnussöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Rindsgeschnetzeltes",
+      "ingredients": [
+        {
+          "name": "Maizena",
+          "amount": 1.5,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Rindshuft",
+          "amount": 500,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Zwiebeln",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "rote Peperoni",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Champignons",
+          "amount": 250,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Essiggurken",
+          "amount": 100,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Paprika edelsüss",
+          "amount": 1.5,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Vollrahm",
+          "amount": 1,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Fleischbouillon",
+          "amount": 2,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Erdnussöl",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Das Rindshuft in feine Streifen schneiden.",
+    "Die Zwiebeln schälen und in feine Streifen schneiden.",
+    "Die roten Peperoni waschen, entkernen und in Streifen schneiden.",
+    "Die Champignons putzen und in Scheiben schneiden.",
+    "Die Essiggurken in kleine Würfel schneiden.",
+    "Das Erdnussöl in einer grossen Bratpfanne stark erhitzen und das Rindfleisch darin portionenweise während etwa 2 Minuten scharf anbraten, dann herausnehmen.",
+    "Die Zwiebeln, Peperoni und Champignons im gleichen Bratfett andämpfen.",
+    "Das Fleisch wieder in die Pfanne geben und mit Salz, Pfeffer und Paprika edelsüss würzen.",
+    "Die Fleischbouillon und den Vollrahm beigeben und alles kurz aufkochen lassen.",
+    "Die Maizena mit wenig kaltem Wasser glattrühren, zur Sauce geben und unter Rühren während etwa 5 Minuten leicht einkochen lassen, bis die Sauce bindet.",
+    "Die Essiggurkenwürfel unterrühren und das Geschnetzelte sofort servieren."
+  ],
+  "tips": "Dazu passen Butternudeln, Reis oder Rösti sowie ein grüner Salat.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/9940/rinds-stroganoff",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T10:38:42.794Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "erdnuesse",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 342,
+    "protein": 34.6,
+    "fat": 17.2,
+    "carbs": 11.8,
+    "fiber": 3.1
+  }
+}

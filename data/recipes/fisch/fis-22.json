@@ -1,0 +1,241 @@
+{
+  "id": "fis-22",
+  "name": "Lachs-Gemüse-Topf mit Reisnudeln und Sojasauce",
+  "category": "Fisch & Meeresfrüchte",
+  "timeMinutes": 35,
+  "basePortions": 4,
+  "weatherType": "neutral",
+  "dietCategory": "fish",
+  "description": "Ein Topfgericht, bei dem alles gemeinsam gart und sich die Aromen von Sojasauce, Limette und Chili schön verbinden. Ideal für einen Feierabend, an dem es schnell gehen soll, aber trotzdem frisch und asiatisch inspiriert schmecken darf.",
+  "tags": [
+    "Abendessen",
+    "One-Pot-Gericht",
+    "Ganzjährig",
+    "Chinesisch",
+    "Gut zum Mitnehmen"
+  ],
+  "ingredients": [
+    {
+      "name": "Sojasauce, mild",
+      "amount": 0.5,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Sesamöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Weissweinessig",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Limette",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Lachsfilets ohne Haut",
+      "amount": 600,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Bundzwiebeln mit Grün",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "rote Chili",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Bundrüebli",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Krautstiel",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Reisnudeln",
+      "amount": 180,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Korianderblättchen",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "gerösteter Sesam",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für den Sud",
+      "ingredients": [
+        {
+          "name": "Sojasauce, mild",
+          "amount": 0.5,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Sesamöl",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Weissweinessig",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Limette",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für den Fisch",
+      "ingredients": [
+        {
+          "name": "Lachsfilets ohne Haut",
+          "amount": 600,
+          "unit": "g",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für das Gemüse",
+      "ingredients": [
+        {
+          "name": "Bundzwiebeln mit Grün",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "rote Chili",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Bundrüebli",
+          "amount": 300,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Krautstiel",
+          "amount": 300,
+          "unit": "g",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für die Reisnudeln",
+      "ingredients": [
+        {
+          "name": "Reisnudeln",
+          "amount": 180,
+          "unit": "g",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten zum Anrichten",
+      "ingredients": [
+        {
+          "name": "Korianderblättchen",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "gerösteter Sesam",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Die Bundzwiebeln in Ringe schneiden, dabei das Grün und Weisse getrennt halten.",
+    "Die Chili fein hacken, die Bundrüebli schälen und in dünne Scheiben oder Stifte schneiden.",
+    "Den Krautstiel waschen und in mundgerechte Stücke schneiden, Stiele und Blätter dabei getrennt halten.",
+    "Die Limette auspressen und den Saft mit der Sojasauce, dem Sesamöl, dem Weissweinessig und dem Salz zu einem Sud verrühren.",
+    "In einem grossen Topf oder einer tiefen Pfanne die Rüeblischeiben, die Krautstiel-Stiele, das Weisse der Bundzwiebeln und die Chili schichten.",
+    "Die Lachsfilets darauf verteilen und mit den Krautstiel-Blättern bedecken.",
+    "Den Sud gleichmässig darüber giessen.",
+    "Den Topf zudecken und den Inhalt während 10 Minuten bei mittlerer Hitze köcheln lassen.",
+    "Die Reisnudeln in einer separaten Pfanne mit kochendem Wasser übergiessen und gemäss Packungsangabe rund 4 Minuten quellen lassen, anschliessend abgiessen.",
+    "Nach den 10 Minuten Köcheln den Lachs vorsichtig prüfen und falls nötig weitere 2 Minuten köcheln lassen, bis er gerade gar ist.",
+    "Die Reisnudeln unter das Gemüse und den Fisch heben und alles während 1 Minute im Sud durchziehen lassen.",
+    "Das Gericht auf Teller verteilen, mit dem Grün der Bundzwiebeln, den Korianderblättchen und dem gerösteten Sesam bestreuen und sofort geniessen."
+  ],
+  "tips": "Wer es schärfer mag, lässt die Kerne der Chili einfach dran. Reste lassen sich am nächsten Tag gut kalt als Nudelsalat geniessen.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/13171/sesam-lachs-auf-gemuesenudeln",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T10:54:03.059Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "fisch",
+    "gluten",
+    "sesam",
+    "soja",
+    "sulfite"
+  ],
+  "nutrition": {
+    "kcal": 448,
+    "protein": 35.8,
+    "fat": 16.2,
+    "carbs": 39.7,
+    "fiber": 4.3
+  }
+}

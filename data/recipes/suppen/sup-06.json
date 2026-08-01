@@ -82,11 +82,11 @@
     "milch"
   ],
   "nutrition": {
-    "kcal": 185,
-    "protein": 3.8,
-    "fat": 13.2,
-    "carbs": 14.5,
-    "fiber": 3.8
+    "kcal": 182,
+    "protein": 3.5,
+    "fat": 13.8,
+    "carbs": 12.5,
+    "fiber": 3.2
   },
   "dietCategory": "vegan",
   "imageZutaten": null,

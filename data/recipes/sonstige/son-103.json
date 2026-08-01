@@ -250,5 +250,12 @@
     "gluten",
     "milch",
     "sulfite"
-  ]
+  ],
+  "nutrition": {
+    "kcal": 685,
+    "protein": 38.5,
+    "fat": 38.2,
+    "carbs": 42.6,
+    "fiber": 2.8
+  }
 }

@@ -1,0 +1,233 @@
+{
+  "id": "ein-23",
+  "name": "Lachs-Broccoli-Gratin mit Kartoffeln und Kräutern",
+  "category": "Aufläufe & Gratins",
+  "timeMinutes": 75,
+  "basePortions": 4,
+  "weatherType": "kalt",
+  "dietCategory": "fish",
+  "description": "Ein Gratin, das nach Feierabend keine grosse Denkarbeit mehr braucht, aber trotzdem nach Sonntag schmeckt. Lachs, Broccoli und Kartoffeln ziehen gemeinsam in einer cremigen Sauce mit frischen Kräutern in den Ofen, bis alles blubbert und golden ist. Ideal, wenn man mit wenig Aufwand etwas auf den Tisch bringen möchte, das trotzdem herzhaft wirkt.",
+  "tags": [
+    "Abendessen",
+    "Mittagessen",
+    "Ofengericht",
+    "Für Gäste",
+    "Winter",
+    "Herbst"
+  ],
+  "ingredients": [
+    {
+      "name": "Weissmehl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Lachsfilets ohne Haut",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Broccoli",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "festkochende Kartoffeln",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Bundzwiebeln mit dem Grün",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Kerbel",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Bio-Zitrone",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1.25,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Dill",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Milch",
+      "amount": 2,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Crème fraîche",
+      "amount": 2,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Gratin",
+      "ingredients": [
+        {
+          "name": "Weissmehl",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Lachsfilets ohne Haut",
+          "amount": 500,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Broccoli",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "festkochende Kartoffeln",
+          "amount": 400,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Bundzwiebeln mit dem Grün",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Kerbel",
+          "amount": 0.5,
+          "unit": "Bund",
+          "perPortions": 4
+        },
+        {
+          "name": "Bio-Zitrone",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1.25,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Dill",
+          "amount": 1,
+          "unit": "Bund",
+          "perPortions": 4
+        },
+        {
+          "name": "Butter",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Milch",
+          "amount": 2,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Crème fraîche",
+          "amount": 2,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Den Backofen auf 200 °C Ober- und Unterhitze vorheizen.",
+    "Die Kartoffeln schälen und in dünne Scheiben schneiden.",
+    "Den Broccoli in kleine Röschen teilen und in kochendem Salzwasser 1 Minute blanchieren, danach abtropfen lassen.",
+    "Die Bundzwiebeln inklusive Grün in feine Ringe schneiden.",
+    "Kerbel und Dill fein hacken und die Zitrone heiss abwaschen, die Schale fein abreiben und den Saft auspressen.",
+    "Den Lachs in mundgerechte Stücke schneiden.",
+    "Die Butter in einer Pfanne schmelzen, das Weissmehl beigeben und unter Rühren kurz andünsten.",
+    "Die Milch nach und nach mit einem Schwingbesen einrühren und die Sauce unter gelegentlichem Rühren aufkochen lassen, bis sie leicht andickt.",
+    "Die Crème fraîche, die Bundzwiebeln, den Zitronensaft und die Zitronenschale unter die Sauce rühren und mit Salz und Pfeffer abschmecken.",
+    "Die Kartoffelscheiben, den Broccoli und den Lachs in eine mit Olivenöl ausgestrichene Gratinform schichten.",
+    "Die Sauce gleichmässig darübergiessen, sodass alle Zutaten bedeckt sind.",
+    "Das Gratin im vorgeheizten Backofen bei 200 °C auf mittlerer Schiene 35 Minuten backen, bis die Kartoffeln weich und die Oberfläche leicht gebräunt sind.",
+    "Das Gratin aus dem Ofen nehmen, mit Kerbel und Dill bestreuen und sofort servieren."
+  ],
+  "tips": "Wer es milder mag, ersetzt einen Teil der Crème fraîche durch Halbrahm. Reste lassen sich am nächsten Tag gut aufgewärmt geniessen.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/16502/lachs-broccoli-auflauf",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T11:04:47.867Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "fisch",
+    "gluten",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 542,
+    "protein": 38.7,
+    "fat": 30.2,
+    "carbs": 28.5,
+    "fiber": 4.2
+  }
+}

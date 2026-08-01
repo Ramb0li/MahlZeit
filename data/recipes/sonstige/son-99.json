@@ -200,5 +200,12 @@
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/son-99-1781476677645.jpg",
   "imageZutaten": null,
   "imageKochen": null,
-  "allergens": []
+  "allergens": [],
+  "nutrition": {
+    "kcal": 178,
+    "protein": 4.8,
+    "fat": 11.3,
+    "carbs": 15.9,
+    "fiber": 6.7
+  }
 }

@@ -1,0 +1,293 @@
+{
+  "id": "rei-60",
+  "name": "Gebratener Reis mit Chinakohl, Rüebli und Erdnüssen",
+  "category": "Reis, Getreide & Hülsenfrüchte",
+  "timeMinutes": 45,
+  "basePortions": 4,
+  "weatherType": "neutral",
+  "dietCategory": "vegetarian",
+  "description": "Das ist so ein Gericht, das perfekt passt, wenn vom Vortag noch Reis im Kühlschrank steht. Bunt, knackig und schnell zusammengerührt – bei uns landet er oft am Montagabend auf dem Tisch, wenn es unkompliziert sein soll, aber trotzdem nach etwas aussehen darf.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Resteverwertung",
+    "Budgetfreundlich",
+    "Pfannengericht",
+    "Ganzjährig",
+    "Chinesisch"
+  ],
+  "ingredients": [
+    {
+      "name": "Parfümreis",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Bundzwiebeln mit dem Grün",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Chinakohl",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Rüebli",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "rote Peperoni",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "tiefgekühlte Erbsli",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Eier",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Erdnussöl",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Erdnussöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Sesamöl",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Sojasauce",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.25,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Sesamöl",
+      "amount": 0.5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Reisessig",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "gesalzene Erdnüsse",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Reis",
+      "ingredients": [
+        {
+          "name": "Parfümreis",
+          "amount": 300,
+          "unit": "g",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Gemüse",
+      "ingredients": [
+        {
+          "name": "Bundzwiebeln mit dem Grün",
+          "amount": 1,
+          "unit": "Bund",
+          "perPortions": 4
+        },
+        {
+          "name": "Chinakohl",
+          "amount": 200,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Rüebli",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "rote Peperoni",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "tiefgekühlte Erbsli",
+          "amount": 150,
+          "unit": "g",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Eier",
+      "ingredients": [
+        {
+          "name": "Eier",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Erdnussöl",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Anbraten",
+      "ingredients": [
+        {
+          "name": "Erdnussöl",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Sesamöl",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Sauce",
+      "ingredients": [
+        {
+          "name": "Sojasauce",
+          "amount": 4,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.25,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Sesamöl",
+          "amount": 0.5,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Reisessig",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten zum Anrichten",
+      "ingredients": [
+        {
+          "name": "gesalzene Erdnüsse",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Den Parfümreis nach Packungsangabe in reichlich Wasser aufkochen und etwa 15 Minuten köcheln lassen, bis er weich, aber noch bissfest ist, danach abtropfen und auskühlen lassen.",
+    "In der Zwischenzeit die Bundzwiebeln in feine Ringe schneiden, den Chinakohl in schmale Streifen schneiden, die Rüebli schälen und in feine Stifte schneiden sowie die Peperoni in kleine Würfel schneiden.",
+    "Die Eier mit einer Prise Salz und Pfeffer verrühren, in einer Pfanne mit 1 TL Erdnussöl zu einer dünnen Omelette braten, herausnehmen und in feine Streifen schneiden.",
+    "In derselben Pfanne 1 EL Erdnussöl und 1 TL Sesamöl erhitzen und die Rüebli sowie die Peperoni darin 2 bis 3 Minuten andämpfen.",
+    "Chinakohl und tiefgekühlte Erbsli beigeben und weitere 5 Minuten mitdämpfen, bis das Gemüse gerade gar ist.",
+    "Den ausgekühlten Reis in der Pfanne über dem Gemüse schichten und alles zusammen etwa 10 Minuten unter gelegentlichem Wenden braten, bis der Reis heiss ist und leicht Farbe annimmt.",
+    "Sojasauce, ¼ TL Salz, ½ EL Sesamöl und Reisessig in einer kleinen Schüssel verrühren und über den Reis giessen.",
+    "Die Eierstreifen und die Bundzwiebeln unter den Reis mischen und alles nochmals kurz durchschwenken.",
+    "Zum Schluss mit Salz, Pfeffer und bei Bedarf etwas mehr Sojasauce abschmecken und würzen.",
+    "Den gebratenen Reis heiss mit den gesalzenen Erdnüssen bestreut servieren."
+  ],
+  "tips": "Für eine Fleischvariante passt gebratenes, in Streifen geschnittenes Poulet sehr gut dazu; einfach zusammen mit dem Gemüse anbraten.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/14050/fried-rice",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T11:02:30.727Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "ei",
+    "erdnuesse",
+    "sesam",
+    "soja"
+  ],
+  "nutrition": {
+    "kcal": 518,
+    "protein": 15.2,
+    "fat": 14.8,
+    "carbs": 79.3,
+    "fiber": 6.4
+  }
+}

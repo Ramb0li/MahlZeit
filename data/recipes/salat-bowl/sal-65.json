@@ -1,0 +1,228 @@
+{
+  "id": "sal-65",
+  "name": "Thonsalat mit Reis, Peperoni und Cherry-Tomaten",
+  "category": "Salate & Bowls",
+  "timeMinutes": 30,
+  "basePortions": 4,
+  "weatherType": "warm",
+  "dietCategory": "vegetarian",
+  "description": "Ein bunter Salat, der schnell zusammengerührt ist und sich hervorragend für die Znachtbox am nächsten Tag eignet. Der Thon bringt Herzhaftigkeit, die Cashews einen feinen Knack – so wird aus ein paar einfachen Zutaten ein richtig sättigendes Gericht.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Mealprep-geeignet",
+    "Gut zum Mitnehmen",
+    "Budgetfreundlich",
+    "Ohne Kochen",
+    "Sommer"
+  ],
+  "ingredients": [
+    {
+      "name": "Langkornreis",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Thon in Öl",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Peperoni",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Cherry-Tomaten",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Petersilie glattblättrig",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Cashew-Nüsse",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.25,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "grobkörniger Senf",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Weissweinessig",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Rapsöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.25,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für den Reis",
+      "ingredients": [
+        {
+          "name": "Langkornreis",
+          "amount": 100,
+          "unit": "g",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für den Salat",
+      "ingredients": [
+        {
+          "name": "Thon in Öl",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Peperoni",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Cherry-Tomaten",
+          "amount": 150,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Petersilie glattblättrig",
+          "amount": 1,
+          "unit": "Bund",
+          "perPortions": 4
+        },
+        {
+          "name": "Cashew-Nüsse",
+          "amount": 3,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.25,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für das Dressing",
+      "ingredients": [
+        {
+          "name": "grobkörniger Senf",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Weissweinessig",
+          "amount": 3,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Rapsöl",
+          "amount": 3,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.25,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Den Langkornreis nach Packungsangabe in Salzwasser kochen, anschliessend in ein Sieb abgiessen und auskühlen lassen.",
+    "Die Peperoni waschen, halbieren, entkernen und in kleine Würfel schneiden.",
+    "Die Cherry-Tomaten waschen und je nach Grösse halbieren oder vierteln.",
+    "Die Petersilie waschen, trockenschütteln und fein hacken.",
+    "Den Thon in einem Sieb abtropfen lassen und mit einer Gabel grob zerpflücken.",
+    "Den ausgekühlten Reis, den Thon, die Peperoni, die Cherry-Tomaten, die Petersilie und die Cashew-Nüsse in einer grossen Schüssel mischen.",
+    "Für das Dressing den Senf, den Weissweinessig, das Rapsöl, das Salz und den Pfeffer in einer kleinen Schüssel gut verrühren, bis eine homogene Sauce entsteht.",
+    "Das Dressing über den Salat giessen und alles nochmals sorgfältig durchmischen.",
+    "Den Salat vor dem Servieren nochmals mit Salz und Pfeffer abschmecken."
+  ],
+  "tips": "Der Salat lässt sich gut einen Tag im Voraus zubereiten, da er durchgezogen sogar noch besser schmeckt – die Cashews am besten erst kurz vor dem Servieren untermischen, damit sie knackig bleiben.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/14327/reissalat",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T10:41:09.790Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "schalenfruechte",
+    "senf",
+    "sulfite"
+  ],
+  "nutrition": {
+    "kcal": 368,
+    "protein": 18.6,
+    "fat": 16.8,
+    "carbs": 35.4,
+    "fiber": 3.2
+  }
+}

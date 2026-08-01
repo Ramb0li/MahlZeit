@@ -111,7 +111,13 @@
   "allergens": [
     "gluten",
     "milch",
-    "senf",
     "weichtiere"
-  ]
+  ],
+  "nutrition": {
+    "kcal": 658,
+    "protein": 32.4,
+    "fat": 38.2,
+    "carbs": 42.5,
+    "fiber": 3.6
+  }
 }

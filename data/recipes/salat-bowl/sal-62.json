@@ -96,5 +96,12 @@
   "allergens": [
     "gluten",
     "sulfite"
-  ]
+  ],
+  "nutrition": {
+    "kcal": 542,
+    "protein": 18.5,
+    "fat": 21.6,
+    "carbs": 67.8,
+    "fiber": 5.9
+  }
 }

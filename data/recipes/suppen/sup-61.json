@@ -162,5 +162,12 @@
     "senf"
   ],
   "sourceType": "mahlzyt",
-  "_migrated_v2": true
+  "_migrated_v2": true,
+  "nutrition": {
+    "kcal": 487,
+    "protein": 7.8,
+    "fat": 24.6,
+    "carbs": 59.4,
+    "fiber": 4.2
+  }
 }

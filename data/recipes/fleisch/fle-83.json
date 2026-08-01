@@ -1,0 +1,164 @@
+{
+  "id": "fle-83",
+  "name": "Rindsplätzli mit Süsskartoffeln und Broccoli in Chili-Erdnuss-Sauce",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 15,
+  "basePortions": 4,
+  "weatherType": "neutral",
+  "dietCategory": "vegetarian",
+  "description": "Ein Feierabend-Gericht für Tage, an denen es schnell gehen muss, aber trotzdem etwas auf dem Teller sein soll: zartes Rindfleisch, knackiges Gemüse und eine Sauce mit Schärfe und Erdnussnote. In 15 Minuten steht das Essen auf dem Tisch, ganz ohne grossen Aufwand.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Pfannengericht",
+    "Ganzjährig",
+    "Chinesisch",
+    "Gut zum Mitnehmen"
+  ],
+  "ingredients": [
+    {
+      "name": "Rindsplätzli",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Erdnussöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Süsskartoffeln",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Broccoli",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Hot Chili Sauce",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Koriander",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Rindsplätzli",
+      "ingredients": [
+        {
+          "name": "Rindsplätzli",
+          "amount": 300,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Erdnussöl",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Gemüse",
+      "ingredients": [
+        {
+          "name": "Süsskartoffeln",
+          "amount": 300,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Broccoli",
+          "amount": 200,
+          "unit": "g",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Sauce",
+      "ingredients": [
+        {
+          "name": "Hot Chili Sauce",
+          "amount": 2,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Koriander",
+          "amount": 0.5,
+          "unit": "Bund",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Die Süsskartoffeln schälen und in kleine Würfel schneiden, den Broccoli in kleine Röschen teilen.",
+    "Die Rindsplätzli in mundgerechte Streifen schneiden.",
+    "Das Erdnussöl in einer grossen Pfanne erhitzen und die Rindsplätzli darin scharf anbraten.",
+    "Die Süsskartoffelwürfel und die Broccoliröschen zum Fleisch in die Pfanne geben.",
+    "Alles mit Salz und Pfeffer würzen und die Hot Chili Sauce untermischen.",
+    "Etwas Wasser angiessen und das Ganze zugedeckt während 2 Minuten aufkochen lassen.",
+    "Den Deckel abnehmen und alles während weiteren 5 Minuten köcheln lassen, bis das Gemüse gar, aber noch bissfest ist.",
+    "Den Koriander grob hacken und das fertige Gericht damit bestreut sofort servieren."
+  ],
+  "tips": "Dazu passt Reis oder Reisnudeln, um die Sauce schön aufzunehmen.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/13786/scharfe-rindfleischstreifen",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T10:59:02.976Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "erdnuesse"
+  ],
+  "nutrition": {
+    "kcal": 318,
+    "protein": 24.8,
+    "fat": 9.6,
+    "carbs": 32.4,
+    "fiber": 5.2
+  }
+}

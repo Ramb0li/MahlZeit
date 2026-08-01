@@ -1,0 +1,152 @@
+{
+  "id": "pas-93",
+  "name": "Teigwaren mit Räucherlachs-Rahmspinat",
+  "category": "Pasta & Teigwaren",
+  "timeMinutes": 25,
+  "basePortions": 4,
+  "weatherType": "neutral",
+  "dietCategory": "fish",
+  "description": "Nach einem hektischen Tag ist das genau das Gericht, das schnell geht und trotzdem nach mehr Aufwand aussieht, als es tatsächlich war. Der cremige Spinat mit Mascarpone und geräuchertem Lachs schmeckt herrlich mild und die frische Petersilie bringt eine schöne Frische rein.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Pfannengericht",
+    "One-Pot-Gericht",
+    "Ganzjährig",
+    "Italienisch",
+    "Gut zum Mitnehmen"
+  ],
+  "ingredients": [
+    {
+      "name": "Teigwaren",
+      "amount": 350,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "geräucherter Lachs",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Blattspinat",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "glattblättrige Petersilie",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Mascarpone",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Teigwaren",
+      "ingredients": [
+        {
+          "name": "Teigwaren",
+          "amount": 350,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Räucherlachs-Rahmspinat",
+      "ingredients": [
+        {
+          "name": "geräucherter Lachs",
+          "amount": 200,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Blattspinat",
+          "amount": 500,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "glattblättrige Petersilie",
+          "amount": 1,
+          "unit": "Bund",
+          "perPortions": 4
+        },
+        {
+          "name": "Mascarpone",
+          "amount": 250,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Einen grossen Topf mit Wasser füllen, das Salz beigeben und aufkochen.",
+    "Die Teigwaren ins kochende Wasser geben und nach Packungsangabe bissfest kochen.",
+    "In der Zwischenzeit den Blattspinat waschen und grob hacken, falls die Blätter sehr gross sind.",
+    "Die Petersilie waschen, die Blätter von den Stielen zupfen und fein hacken.",
+    "Den geräucherten Lachs in mundgerechte Streifen oder Stücke schneiden.",
+    "Eine grosse Pfanne bei mittlerer Hitze erwärmen und den Blattspinat darin zusammenfallen lassen.",
+    "Die Mascarpone zum Spinat in die Pfanne geben und unter Rühren schmelzen lassen, bis eine cremige Sauce entsteht.",
+    "Die Teigwaren abgiessen, dabei etwas Kochwasser auffangen, und zur Sauce in die Pfanne geben.",
+    "Den geräucherten Lachs und die gehackte Petersilie unterheben und alles vorsichtig vermengen.",
+    "Falls die Sauce zu dick ist, etwas vom aufgefangenen Kochwasser beigeben, bis die gewünschte Konsistenz erreicht ist.",
+    "Mit Salz und Pfeffer abschmecken und die Pasta sofort servieren."
+  ],
+  "tips": "Passt gut zu einem frischen grünen Salat und schmeckt auch am nächsten Tag als aufgewärmte Resteverwertung noch sehr gut.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/14477/lachs-spinat-pasta",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T10:42:00.195Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "fisch",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 548,
+    "protein": 28.6,
+    "fat": 24.8,
+    "carbs": 50.2,
+    "fiber": 4.1
+  }
+}

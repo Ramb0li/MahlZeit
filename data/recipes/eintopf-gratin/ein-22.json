@@ -1,0 +1,278 @@
+{
+  "id": "ein-22",
+  "name": "Auberginen-Tomaten-Gratin mit Mozzarella und Parmesan",
+  "category": "Aufläufe & Gratins",
+  "timeMinutes": 125,
+  "basePortions": 4,
+  "weatherType": "neutral",
+  "dietCategory": "vegetarian",
+  "description": "Das ist so ein Gratin, das nach Sommer im Garten schmeckt, auch wenn die Auberginen aus dem Laden kommen. Tomaten und Auberginen köcheln erst gemütlich vor sich hin, bevor sie im Ofen unter Mozzarella und Parmesan goldbraun werden. Perfekt für einen Abend, an dem man den Tisch etwas länger stehen lassen möchte.",
+  "tags": [
+    "Abendessen",
+    "Mittagessen",
+    "Ofengericht",
+    "Für Gäste",
+    "Italienisch",
+    "Sommer",
+    "Herbst"
+  ],
+  "ingredients": [
+    {
+      "name": "Tomaten",
+      "amount": 1,
+      "unit": "kg",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomatenpüree",
+      "amount": 0.5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Zucker",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Basilikum",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Auberginen",
+      "amount": 1,
+      "unit": "kg",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Mozzarella",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Parmesan",
+      "amount": 160,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Basilikum",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Fleur de Sel",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für die Tomatensauce",
+      "ingredients": [
+        {
+          "name": "Tomaten",
+          "amount": 1,
+          "unit": "kg",
+          "perPortions": 4
+        },
+        {
+          "name": "Knoblauchzehe",
+          "amount": 1,
+          "unit": "Zehe",
+          "perPortions": 4
+        },
+        {
+          "name": "Tomatenpüree",
+          "amount": 0.5,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Zucker",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Basilikum",
+          "amount": 0.5,
+          "unit": "Bund",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für die Auberginen",
+      "ingredients": [
+        {
+          "name": "Auberginen",
+          "amount": 1,
+          "unit": "kg",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 3,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für den Belag",
+      "ingredients": [
+        {
+          "name": "Mozzarella",
+          "amount": 250,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Parmesan",
+          "amount": 160,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Basilikum",
+          "amount": 0.5,
+          "unit": "Bund",
+          "perPortions": 4
+        },
+        {
+          "name": "Fleur de Sel",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Die Tomaten waschen, den Strunk entfernen und das Fruchtfleisch grob würfeln.",
+    "Die Knoblauchzehe schälen und fein hacken.",
+    "2 EL Olivenöl in einer Pfanne erhitzen und den Knoblauch kurz andünsten, ohne dass er Farbe annimmt.",
+    "Die Tomatenwürfel, das Tomatenpüree, den Zucker sowie 1 TL Salz und eine Prise Pfeffer beigeben und die Sauce bei mittlerer Hitze etwa 20 Minuten offen andämpfen, bis sie leicht eingedickt ist.",
+    "Während die Sauce köchelt, die Auberginen waschen und in etwa 1 cm dicke Scheiben schneiden.",
+    "Die Auberginenscheiben mit 3 EL Olivenöl, 1 TL Salz und einer Prise Pfeffer vermischen und auf einem Blech verteilen.",
+    "Den Backofen auf 200 °C Ober-/Unterhitze vorheizen.",
+    "Den Mozzarella in Scheiben oder grobe Stücke schneiden und den Basilikum grob hacken, dabei einige Blätter zum Garnieren beiseitelegen.",
+    "Eine Gratinform mit wenig Olivenöl auspinseln und eine Schicht der Tomatensauce einfüllen.",
+    "Die Auberginenscheiben schuppenartig darüber verteilen, mit dem gehackten Basilikum bestreuen und die restliche Tomatensauce daraufgeben.",
+    "Den Mozzarella gleichmässig darauf verteilen und mit dem geriebenen Parmesan bestreuen.",
+    "Das Gratin im vorgeheizten Backofen bei 200 °C etwa 45 Minuten backen, bis die Oberfläche goldbraun ist und der Käse Blasen wirft.",
+    "Das Gratin aus dem Ofen nehmen, mit wenig Fleur de Sel und den restlichen Basilikumblättern würzen und etwa 5 Minuten ruhen lassen, bevor es serviert wird."
+  ],
+  "tips": "Dazu passt frisches Weissbrot oder ein einfacher grüner Salat. Das Gratin lässt sich gut vorbereiten und am nächsten Tag aufgewärmt geniessen, der Geschmack wird sogar noch intensiver.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/16024/parmigiana",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T11:04:19.725Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 458,
+    "protein": 24.6,
+    "fat": 29.3,
+    "carbs": 22.1,
+    "fiber": 8.4
+  }
+}

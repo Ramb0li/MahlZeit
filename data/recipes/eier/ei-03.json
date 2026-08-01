@@ -93,15 +93,14 @@
   ],
   "allergens": [
     "ei",
-    "gluten",
     "milch"
   ],
   "nutrition": {
-    "kcal": 451,
-    "protein": 12.8,
-    "fat": 24.7,
-    "carbs": 44.2,
-    "fiber": 6.8
+    "kcal": 568,
+    "protein": 17.8,
+    "fat": 31.2,
+    "carbs": 52.4,
+    "fiber": 8.6
   },
   "dietCategory": "vegetarian",
   "imageZutaten": null,

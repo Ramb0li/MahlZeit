@@ -213,5 +213,12 @@
   "imageKochen": null,
   "allergens": [
     "sulfite"
-  ]
+  ],
+  "nutrition": {
+    "kcal": 542,
+    "protein": 44.8,
+    "fat": 26.3,
+    "carbs": 32.5,
+    "fiber": 4.2
+  }
 }

@@ -73,11 +73,12 @@
   "imageZutaten": null,
   "imageKochen": null,
   "allergens": [
+    "krebstiere",
     "soja"
   ],
   "nutrition": {
     "kcal": 142,
-    "protein": 18.6,
+    "protein": 18.5,
     "fat": 6.8,
     "carbs": 2.1,
     "fiber": 0.2

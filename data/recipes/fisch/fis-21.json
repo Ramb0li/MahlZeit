@@ -212,6 +212,14 @@
   "imageKochen": null,
   "allergens": [
     "erdnuesse",
-    "fisch"
-  ]
+    "fisch",
+    "krebstiere"
+  ],
+  "nutrition": {
+    "kcal": 142,
+    "protein": 18.2,
+    "fat": 4.8,
+    "carbs": 6.3,
+    "fiber": 1.2
+  }
 }

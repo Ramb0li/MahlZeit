@@ -90,15 +90,14 @@
   "imageZutaten": null,
   "imageKochen": null,
   "allergens": [
-    "gluten",
-    "milch"
+    "gluten"
   ],
   "nutrition": {
     "kcal": 428,
-    "protein": 13.8,
-    "fat": 6.2,
-    "carbs": 78.6,
-    "fiber": 5.4
+    "protein": 13.2,
+    "fat": 14.8,
+    "carbs": 64.3,
+    "fiber": 5.8
   },
   "dietCategory": "vegetarian",
   "sourceType": "mahlzyt",

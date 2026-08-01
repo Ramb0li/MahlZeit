@@ -114,5 +114,12 @@
     "sulfite"
   ],
   "sourceType": "mahlzyt",
-  "_migrated_v2": true
+  "_migrated_v2": true,
+  "nutrition": {
+    "kcal": 512,
+    "protein": 23.1,
+    "fat": 27.4,
+    "carbs": 42.8,
+    "fiber": 13.6
+  }
 }

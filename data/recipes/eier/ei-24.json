@@ -98,5 +98,12 @@
   ],
   "sourceType": "mahlzyt",
   "_migrated_v2": true,
-  "activeTimeMinutes": 10
+  "activeTimeMinutes": 10,
+  "nutrition": {
+    "kcal": 312,
+    "protein": 18.2,
+    "fat": 19.8,
+    "carbs": 15.6,
+    "fiber": 2.8
+  }
 }

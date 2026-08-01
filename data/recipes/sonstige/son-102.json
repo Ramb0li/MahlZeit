@@ -169,5 +169,12 @@
   "imageUrl": null,
   "imageZutaten": null,
   "imageKochen": null,
-  "allergens": []
+  "allergens": [],
+  "nutrition": {
+    "kcal": 98,
+    "protein": 3.2,
+    "fat": 4.1,
+    "carbs": 12.8,
+    "fiber": 3.5
+  }
 }

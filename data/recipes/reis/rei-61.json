@@ -1,0 +1,245 @@
+{
+  "id": "rei-61",
+  "name": "Thai-Poulet-Reispfanne mit Shiitake und Erbsli",
+  "category": "Reis, Getreide & Hülsenfrüchte",
+  "timeMinutes": 45,
+  "basePortions": 4,
+  "weatherType": "neutral",
+  "dietCategory": "meat",
+  "description": "Ein Gericht, das nach Feierabend schnell in der Pfanne zusammenkommt und trotzdem nach mehr Aufwand schmeckt, als es tatsächlich macht. Das Zitronengras und die Fischsauce geben dem Ganzen diese typisch thailändische Würze, die man sonst nur vom Take-away kennt. Bei uns landet der Reis oft schon geschichtet in der Pfanne, während das Poulet noch brutzelt.",
+  "tags": [
+    "Abendessen",
+    "Mittagessen",
+    "Pfannengericht",
+    "Ganzjährig",
+    "Thai",
+    "Mealprep-geeignet",
+    "Gut zum Mitnehmen"
+  ],
+  "ingredients": [
+    {
+      "name": "Parfümreis",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Pouletfleisch, geschnetzelt",
+      "amount": 450,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitronengras",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 2,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "rote Peperoncini",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Öl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.25,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Bundzwiebeln mit Grün",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Rüebli",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Shiitake-Pilze",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Erbsli, tiefgekühlt",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Fischsauce",
+      "amount": 0.5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Sojasauce",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomatenpüree",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für den Reis",
+      "ingredients": [
+        {
+          "name": "Parfümreis",
+          "amount": 300,
+          "unit": "g",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für das Poulet",
+      "ingredients": [
+        {
+          "name": "Pouletfleisch, geschnetzelt",
+          "amount": 450,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Zitronengras",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Knoblauch",
+          "amount": 2,
+          "unit": "Zehe",
+          "perPortions": 4
+        },
+        {
+          "name": "rote Peperoncini",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Öl",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.25,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für das Gemüse",
+      "ingredients": [
+        {
+          "name": "Bundzwiebeln mit Grün",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Rüebli",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Shiitake-Pilze",
+          "amount": 200,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Erbsli, tiefgekühlt",
+          "amount": 100,
+          "unit": "g",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für die Sauce",
+      "ingredients": [
+        {
+          "name": "Fischsauce",
+          "amount": 0.5,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Sojasauce",
+          "amount": 3,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Tomatenpüree",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Den Parfümreis nach Packungsangabe in Salzwasser aufkochen und anschliessend etwa 15 Minuten köcheln lassen, bis er gar ist, dann beiseite stellen.",
+    "Das Zitronengras der Länge nach anschlagen, den Knoblauch fein hacken und die Peperoncini in feine Ringe schneiden.",
+    "Die Bundzwiebeln in Ringe schneiden, das Weisse und Grüne dabei trennen, das Rüebli in dünne Stifte schneiden und die Shiitake-Pilze vierteln.",
+    "Das Öl in einer grossen Pfanne erhitzen und das Pouletfleisch darin bei mittlerer bis hoher Hitze rundum anbraten, bis es Farbe annimmt.",
+    "Zitronengras, Knoblauch, Peperoncini und das Weisse der Bundzwiebeln beigeben und etwa 3 Minuten mitbraten, bis es fein duftet.",
+    "Rüebli und Shiitake-Pilze dazugeben und weitere 5 Minuten mitdünsten, bis das Gemüse leicht weich ist.",
+    "Fischsauce, Sojasauce und Tomatenpüree in einer kleinen Schüssel verrühren und über das Poulet-Gemüse-Gemisch giessen.",
+    "Die tiefgekühlten Erbsli und das Grün der Bundzwiebeln untermischen und alles nochmals kurz erwärmen.",
+    "Den gekochten Reis in tiefen Tellern oder einer grossen Schüssel schichten und die Poulet-Gemüse-Mischung darauf verteilen.",
+    "Mit Salz nach Geschmack abschmecken und das Gericht heiss servieren."
+  ],
+  "tips": "Das Zitronengras vor dem Servieren herausnehmen, falls es nicht mitgegessen werden soll. Reste lassen sich gut im Kühlschrank aufbewahren und am nächsten Tag in der Pfanne aufwärmen.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/17595/nasi-goreng",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T11:02:59.044Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "fisch",
+    "soja"
+  ],
+  "nutrition": {
+    "kcal": 487,
+    "protein": 35.6,
+    "fat": 10.2,
+    "carbs": 61.8,
+    "fiber": 4.8
+  }
+}

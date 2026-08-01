@@ -1,0 +1,250 @@
+{
+  "id": "pas-102",
+  "name": "Hörnli mit Rotwein-Hackfleischsauce",
+  "category": "Pasta & Teigwaren",
+  "timeMinutes": 40,
+  "basePortions": 4,
+  "weatherType": "kalt",
+  "dietCategory": "meat",
+  "description": "Ein Teller, der nach Feierabend und Familienküche schmeckt: eine würzige Hackfleischsauce mit einem Schuss Rotwein, die still vor sich hin köchelt, während man den Tisch decken kann. Klassisch, unkompliziert und genau das Richtige, wenn alle hungrig um den Tisch sitzen.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Kinderfreundlich",
+    "Budgetfreundlich",
+    "Pfannengericht",
+    "Herbst",
+    "Winter",
+    "Schweizerisch"
+  ],
+  "ingredients": [
+    {
+      "name": "Hackfleisch (Rind)",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebeln",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Rüebli",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knollensellerie",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Paprika",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Lorbeerblätter",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Thymianblättchen",
+      "amount": 0.5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Bratbutter",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomatenpüree",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Fleischbouillon",
+      "amount": 2.5,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Rotwein",
+      "amount": 2.5,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Hörnli",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für die Hackfleischsauce",
+      "ingredients": [
+        {
+          "name": "Hackfleisch (Rind)",
+          "amount": 500,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Zwiebeln",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Rüebli",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Knollensellerie",
+          "amount": 100,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Paprika",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Lorbeerblätter",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Thymianblättchen",
+          "amount": 0.5,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Bratbutter",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Tomatenpüree",
+          "amount": 3,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Fleischbouillon",
+          "amount": 2.5,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Rotwein",
+          "amount": 2.5,
+          "unit": "dl",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für die Hörnli",
+      "ingredients": [
+        {
+          "name": "Hörnli",
+          "amount": 500,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Zwiebeln, Rüebli und Knollensellerie fein würfeln.",
+    "Bratbutter in einer grossen Pfanne erhitzen und das Hackfleisch darin bei mittlerer bis hoher Hitze etwa 3 Minuten krümelig anbraten.",
+    "Die gewürfelten Zwiebeln, Rüebli und Knollensellerie zum Hackfleisch geben und kurz mitbraten.",
+    "Tomatenpüree beigeben und kurz mitrösten, damit sich die Süsse entfalten kann.",
+    "Mit Rotwein und Fleischbouillon ablöschen und gut umrühren.",
+    "Paprika, Lorbeerblatt und Thymianblättchen beigeben und mit Salz und Pfeffer würzen.",
+    "Die Sauce zugedeckt bei kleiner Hitze etwa 30 Minuten leise köcheln lassen, dabei gelegentlich umrühren.",
+    "In der Zwischenzeit reichlich Salzwasser aufkochen und die Hörnli darin nach Packungsangabe bissfest kochen.",
+    "Die Hörnli abgiessen und abtropfen lassen.",
+    "Das Lorbeerblatt aus der Sauce entfernen und diese nochmals abschmecken.",
+    "Die Hörnli mit der Rotwein-Hackfleischsauce anrichten und heiss servieren."
+  ],
+  "tips": "Die Sauce lässt sich gut am Vortag zubereiten und schmeckt aufgewärmt sogar noch intensiver. Sie eignet sich zudem gut zum Einfrieren in Portionenmengen.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/10729/ghackets-mit-hoernli",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T11:02:00.847Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch",
+    "sellerie",
+    "sulfite"
+  ],
+  "nutrition": {
+    "kcal": 658,
+    "protein": 37.8,
+    "fat": 18.4,
+    "carbs": 74.6,
+    "fiber": 5.2
+  }
+}

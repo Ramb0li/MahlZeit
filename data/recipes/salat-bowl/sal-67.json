@@ -1,0 +1,255 @@
+{
+  "id": "sal-67",
+  "name": "Lachs-Poke-Bowl mit Wakame, Mango und Sushi-Reis",
+  "category": "Salate & Bowls",
+  "timeMinutes": 120,
+  "basePortions": 4,
+  "weatherType": "neutral",
+  "dietCategory": "fish",
+  "description": "Diese Bowl bringt die Frische einer Sushi-Bar direkt an den eigenen Küchentisch, mit mariniertem Lachs, cremiger Avocado und süsslicher Mango. Ein Gericht, das etwas Vorbereitung braucht, aber am Ende jeden einzelnen Handgriff wert ist. Besonders schön für einen entspannten Abend, an dem man sich Zeit für den Genuss nimmt.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Gut zum Mitnehmen",
+    "Mealprep-geeignet",
+    "Ohne Kochen",
+    "Ganzjährig",
+    "Japanisch"
+  ],
+  "ingredients": [
+    {
+      "name": "Lachsrückenfilet",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Yuzu Kosho",
+      "amount": 0.5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Sojasauce",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Ingwer",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Zucker",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Sesamöl",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Sushi-Reis",
+      "amount": 350,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Reisessig",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Zucker",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Wakame-Salat",
+      "amount": 125,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Gurken",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Avocados",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Mangos",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Sesam",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für mariniertem Lachs",
+      "ingredients": [
+        {
+          "name": "Lachsrückenfilet",
+          "amount": 400,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Yuzu Kosho",
+          "amount": 0.5,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Sojasauce",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Ingwer",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Zucker",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Sesamöl",
+          "amount": 2,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Sushi-Reis",
+      "ingredients": [
+        {
+          "name": "Sushi-Reis",
+          "amount": 350,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Reisessig",
+          "amount": 3,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Zucker",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Bowl-Topping",
+      "ingredients": [
+        {
+          "name": "Wakame-Salat",
+          "amount": 125,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Gurken",
+          "amount": 200,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Avocados",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Mangos",
+          "amount": 0.5,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Sesam",
+          "amount": 2,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Den Lachsrücken in mundgerechte Würfel schneiden und in eine Schüssel geben.",
+    "Yuzu Kosho, Sojasauce, fein geriebenen Ingwer, 1 EL Zucker und Sesamöl gut miteinander verrühren und über den Lachs giessen.",
+    "Den Lachs im Kühlschrank 30 Minuten marinieren lassen, damit er die Aromen aufnehmen kann.",
+    "In der Zwischenzeit den Sushi-Reis unter kaltem Wasser gründlich spülen, bis das Wasser klar bleibt.",
+    "Den Reis nach Packungsangabe aufkochen und anschliessend zugedeckt bei kleiner Hitze etwa 15 Minuten quellen lassen.",
+    "Reisessig, 1 EL Zucker und Salz in einem kleinen Topf kurz aufkochen, bis sich alles aufgelöst hat, und die Mischung etwas abkühlen lassen.",
+    "Den fertig gegarten Reis in eine grosse Schüssel geben und die Essig-Zucker-Mischung unterheben, dabei den Reis vorsichtig auflockern.",
+    "Den Reis 10 Minuten ruhen lassen, damit er die Würze aufnehmen kann.",
+    "Die Gurken in feine Scheiben oder Würfel schneiden, die Avocado halbieren, entkernen und in Spalten schneiden, die Mango schälen und ebenfalls in Spalten oder Würfel schneiden.",
+    "Den marinierten Lachs samt Marinade aus dem Kühlschrank nehmen.",
+    "Den gewürzten Sushi-Reis auf vier Schalen verteilen und darauf den Lachs, den Wakame-Salat, die Gurken, die Avocado und die Mango dekorativ anrichten.",
+    "Mit Sesam bestreuen und die Bowl sofort servieren."
+  ],
+  "tips": "Für eine mildere Variante kann die Menge an Yuzu Kosho reduziert werden, da die Paste sehr scharf und intensiv ist. Der Lachs sollte für den Rohgenuss von bester Sushi-Qualität sein, alternativ kann er auch kurz angebraten werden.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/17429/poke-bowl",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T11:00:21.311Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "fisch",
+    "sesam",
+    "soja"
+  ],
+  "nutrition": {
+    "kcal": 582,
+    "protein": 28.4,
+    "fat": 18.6,
+    "carbs": 72.8,
+    "fiber": 4.3
+  }
+}

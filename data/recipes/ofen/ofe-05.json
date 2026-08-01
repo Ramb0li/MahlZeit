@@ -91,11 +91,11 @@
     "schalenfruechte"
   ],
   "nutrition": {
-    "kcal": 468,
+    "kcal": 458,
     "protein": 11.2,
-    "fat": 24.6,
-    "carbs": 52.8,
-    "fiber": 8.7
+    "fat": 23.7,
+    "carbs": 51.8,
+    "fiber": 7.9
   },
   "sourceType": "mahlzyt",
   "_migrated_v2": true

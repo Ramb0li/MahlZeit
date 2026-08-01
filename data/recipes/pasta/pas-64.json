@@ -110,5 +110,12 @@
     "weichtiere"
   ],
   "sourceType": "mahlzyt",
-  "_migrated_v2": true
+  "_migrated_v2": true,
+  "nutrition": {
+    "kcal": 742,
+    "protein": 35.4,
+    "fat": 31.2,
+    "carbs": 76.8,
+    "fiber": 8.5
+  }
 }

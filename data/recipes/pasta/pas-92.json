@@ -1,0 +1,309 @@
+{
+  "id": "pas-92",
+  "name": "Weisse Lasagne mit Rindshackfleisch und Rotwein",
+  "category": "Pasta & Teigwaren",
+  "timeMinutes": 110,
+  "basePortions": 6,
+  "weatherType": "kalt",
+  "dietCategory": "meat",
+  "description": "Eine klassische Lasagne, aber ganz ohne Tomatensauce – stattdessen sorgt eine cremige Béchamel mit Parmesan für die Bindung. Der Rotwein gibt dem Hackfleisch eine schöne Tiefe, wie man sie sonst eher von einem Sonntagsbraten kennt. Ideal, wenn die ganze Familie am Tisch sitzt und Nachschlag will.",
+  "tags": [
+    "Abendessen",
+    "Mittagessen",
+    "Ofengericht",
+    "Kinderfreundlich",
+    "Einfrierbar",
+    "Für Gäste",
+    "Herbst",
+    "Winter",
+    "Italienisch"
+  ],
+  "ingredients": [
+    {
+      "name": "Hackfleisch (Rind)",
+      "amount": 600,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Zwiebeln",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 6
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 2,
+      "unit": "Zehe",
+      "perPortions": 6
+    },
+    {
+      "name": "Rüebli",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Stangensellerie",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Thymian",
+      "amount": 2,
+      "unit": "Zweig",
+      "perPortions": 6
+    },
+    {
+      "name": "Tomatenpüree",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 6
+    },
+    {
+      "name": "Rotwein",
+      "amount": 3,
+      "unit": "dl",
+      "perPortions": 6
+    },
+    {
+      "name": "Fleischbouillon",
+      "amount": 3,
+      "unit": "dl",
+      "perPortions": 6
+    },
+    {
+      "name": "Öl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 6
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 6
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 6
+    },
+    {
+      "name": "Butter",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 6
+    },
+    {
+      "name": "Weissmehl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 6
+    },
+    {
+      "name": "Milch",
+      "amount": 6,
+      "unit": "dl",
+      "perPortions": 6
+    },
+    {
+      "name": "geriebener Parmesan",
+      "amount": 80,
+      "unit": "g",
+      "perPortions": 6
+    },
+    {
+      "name": "Salz",
+      "amount": 0.75,
+      "unit": "TL",
+      "perPortions": 6
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 6
+    },
+    {
+      "name": "Lasagneblätter (weiss)",
+      "amount": 15,
+      "unit": "Stk",
+      "perPortions": 6
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für die Fleischsauce",
+      "ingredients": [
+        {
+          "name": "Hackfleisch (Rind)",
+          "amount": 600,
+          "unit": "g",
+          "perPortions": 6
+        },
+        {
+          "name": "Zwiebeln",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 6
+        },
+        {
+          "name": "Knoblauchzehen",
+          "amount": 2,
+          "unit": "Zehe",
+          "perPortions": 6
+        },
+        {
+          "name": "Rüebli",
+          "amount": 200,
+          "unit": "g",
+          "perPortions": 6
+        },
+        {
+          "name": "Stangensellerie",
+          "amount": 200,
+          "unit": "g",
+          "perPortions": 6
+        },
+        {
+          "name": "Thymian",
+          "amount": 2,
+          "unit": "Zweig",
+          "perPortions": 6
+        },
+        {
+          "name": "Tomatenpüree",
+          "amount": 4,
+          "unit": "EL",
+          "perPortions": 6
+        },
+        {
+          "name": "Rotwein",
+          "amount": 3,
+          "unit": "dl",
+          "perPortions": 6
+        },
+        {
+          "name": "Fleischbouillon",
+          "amount": 3,
+          "unit": "dl",
+          "perPortions": 6
+        },
+        {
+          "name": "Öl",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 6
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 6
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 6
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für die Béchamelsauce",
+      "ingredients": [
+        {
+          "name": "Butter",
+          "amount": 3,
+          "unit": "EL",
+          "perPortions": 6
+        },
+        {
+          "name": "Weissmehl",
+          "amount": 3,
+          "unit": "EL",
+          "perPortions": 6
+        },
+        {
+          "name": "Milch",
+          "amount": 6,
+          "unit": "dl",
+          "perPortions": 6
+        },
+        {
+          "name": "geriebener Parmesan",
+          "amount": 80,
+          "unit": "g",
+          "perPortions": 6
+        },
+        {
+          "name": "Salz",
+          "amount": 0.75,
+          "unit": "TL",
+          "perPortions": 6
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 6
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für die Lasagne",
+      "ingredients": [
+        {
+          "name": "Lasagneblätter (weiss)",
+          "amount": 15,
+          "unit": "Stk",
+          "perPortions": 6
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Die Zwiebeln und den Knoblauch fein hacken, die Rüebli und den Stangensellerie in kleine Würfel schneiden.",
+    "In einer grossen Pfanne das Öl erhitzen und das Hackfleisch bei mittlerer bis hoher Hitze krümelig anbraten, bis es rundum braun ist.",
+    "Die Zwiebeln, den Knoblauch, die Rüebli und den Stangensellerie beigeben und etwa 5 Minuten mitdünsten, bis das Gemüse etwas Farbe annimmt.",
+    "Das Tomatenpüree unterrühren und kurz mitrösten, damit sich die Aromen entfalten.",
+    "Mit dem Rotwein ablöschen und diesen kurz einkochen lassen.",
+    "Die Fleischbouillon und die Thymianzweige beigeben, mit Salz und Pfeffer würzen und die Sauce zugedeckt bei kleiner Hitze etwa 30 Minuten köcheln lassen, gelegentlich umrühren.",
+    "Die Thymianzweige aus der Fleischsauce entfernen und die Sauce beiseitestellen.",
+    "Für die Béchamelsauce die Butter in einem Topf schmelzen und das Weissmehl unter Rühren beigeben, damit eine glatte Mehlschwitze entsteht.",
+    "Die Milch nach und nach unter ständigem Rühren mit dem Schwingbesen einrühren, damit keine Klümpchen entstehen.",
+    "Die Béchamelsauce unter gelegentlichem Rühren etwa 10 Minuten köcheln lassen, bis sie eindickt, dann mit ¾ TL Salz und etwas Pfeffer würzen und den Parmesan unterrühren, bis er geschmolzen ist.",
+    "Den Backofen auf 220 °C vorheizen.",
+    "Eine Gratinform mit etwas Béchamelsauce dünn ausstreichen, damit die erste Schicht Lasagneblätter nicht anhaftet.",
+    "Die Form abwechselnd mit Lasagneblättern, Fleischsauce und Béchamelsauce schichten, sodass etwa fünf Lagen entstehen und die letzte Schicht mit Béchamelsauce abschliesst.",
+    "Die Lasagne im auf 220 °C vorgeheizten Backofen etwa 30 Minuten backen, bis die Oberfläche goldbraun ist und die Ränder leicht blubbern.",
+    "Die Lasagne nach dem Backen etwa 10 Minuten ruhen lassen, bevor sie in Stücke geschnitten und serviert wird."
+  ],
+  "tips": "Die Lasagne lässt sich hervorragend vorbereiten und portionenweise einfrieren – einfach nach dem Backen vollständig auskühlen lassen, aufschneiden und einzeln einfrieren.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/14229/lasagne-al-forno",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T08:53:09.048Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch",
+    "sellerie",
+    "sulfite"
+  ],
+  "nutrition": {
+    "kcal": 558,
+    "protein": 32.1,
+    "fat": 24.3,
+    "carbs": 42.8,
+    "fiber": 3.2
+  }
+}

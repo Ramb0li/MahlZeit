@@ -1,0 +1,342 @@
+{
+  "id": "sal-64",
+  "name": "Caesar Salad mit Pouletbrust, Speck und Sbrinz-Croutons",
+  "category": "Salate & Bowls",
+  "timeMinutes": 40,
+  "basePortions": 4,
+  "weatherType": "warm",
+  "dietCategory": "meat",
+  "description": "Ein klassischer Caesar Salad, wie man ihn aus dem Restaurant kennt, aber gut machbar für zu Hause: knuspriger Speck, zartes Poulet und viel Sbrinz auf knackigem Lattich. Bei uns kommt das Dressing immer etwas grosszügiger auf den Salat, weil es einfach das Beste daran ist.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Für Gäste",
+    "Pfannengericht",
+    "Sommer",
+    "Amerikanisch"
+  ],
+  "ingredients": [
+    {
+      "name": "Brot",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pouletbrüstli",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Bratspeck",
+      "amount": 8,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Rapsöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Sardellenfilets",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Worcestershire-Sauce",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "scharfer Senf",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Crème fraîche",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Weissweinessig",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Mini-Lattiche",
+      "amount": 6,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Sbrinz-Hobelrollen",
+      "amount": 110,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Croutons",
+      "ingredients": [
+        {
+          "name": "Brot",
+          "amount": 300,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Poulet und Speck",
+      "ingredients": [
+        {
+          "name": "Pouletbrüstli",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Bratspeck",
+          "amount": 8,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Rapsöl",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Caesar-Dressing",
+      "ingredients": [
+        {
+          "name": "Sardellenfilets",
+          "amount": 0.5,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Knoblauchzehen",
+          "amount": 1,
+          "unit": "Zehe",
+          "perPortions": 4
+        },
+        {
+          "name": "Worcestershire-Sauce",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "scharfer Senf",
+          "amount": 2,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Crème fraîche",
+          "amount": 100,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Weissweinessig",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Salat",
+      "ingredients": [
+        {
+          "name": "Mini-Lattiche",
+          "amount": 6,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Sbrinz-Hobelrollen",
+          "amount": 110,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Das Brot in mundgerechte Würfel schneiden, mit 2 EL Olivenöl, Salz und Pfeffer vermischen und in einer Pfanne bei mittlerer Hitze rundum knusprig braten, bis die Croutons goldbraun sind.",
+    "Die Sardelle fein hacken und die Knoblauchzehe pressen oder ebenfalls fein hacken.",
+    "Für das Dressing die gehackte Sardelle, den Knoblauch, die Worcestershire-Sauce, den scharfen Senf, die Crème fraîche, den Weissweinessig und 2 EL Olivenöl in einer Schüssel gründlich verrühren und mit Salz und Pfeffer abschmecken.",
+    "Die Pouletbrüstli mit Salz und Pfeffer würzen, in 2 EL Rapsöl in einer Bratpfanne bei mittlerer bis hoher Hitze auf jeder Seite rund 5 Minuten braten, bis sie goldbraun und durchgegart sind, anschliessend aus der Pfanne nehmen und kurz ruhen lassen.",
+    "Den Bratspeck in derselben Pfanne bei mittlerer Hitze etwa 2 Minuten pro Seite knusprig braten und auf Haushaltpapier abtropfen lassen.",
+    "Die Mini-Lattiche waschen, trocken schleudern und in mundgerechte Stücke oder Blätter zerteilen.",
+    "Das gebratene Poulet in Streifen oder Tranchen schneiden.",
+    "Die Lattich-Blätter auf einer Platte oder in Portionsschüsseln anrichten, mit dem Dressing beträufeln und leicht vermischen.",
+    "Das geschnittene Poulet, den knusprigen Speck und die Croutons auf dem Salat verteilen.",
+    "Zum Schluss die Sbrinz-Hobelrollen grosszügig über den Salat geben und sofort servieren."
+  ],
+  "tips": "Wer es etwas leichter mag, ersetzt die Crème fraîche im Dressing teilweise durch Joghurt. Der Salat schmeckt am besten frisch angerichtet, da die Croutons sonst weich werden.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/16991/caesar-salad",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T10:40:22.987Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "fisch",
+    "gluten",
+    "senf",
+    "sulfite"
+  ],
+  "nutrition": {
+    "kcal": 658,
+    "protein": 45.2,
+    "fat": 38.5,
+    "carbs": 32.8,
+    "fiber": 3.4
+  }
+}

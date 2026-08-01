@@ -1,0 +1,276 @@
+{
+  "id": "fle-79",
+  "name": "Thailändisches Hackfleisch-Basilikum mit Parfümreis",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 30,
+  "basePortions": 4,
+  "weatherType": "neutral",
+  "dietCategory": "meat",
+  "description": "Dieses Gericht ist bei uns der Klassiker für hektische Abende, wenn es schnell gehen muss, aber trotzdem richtig Aroma auf den Teller soll. Die Mischung aus scharfen Chilis, Knoblauch und frischem Thai-Basilikum erinnert an die kleinen Garküchen in Bangkok, und der Duft in der Küche ist einfach unschlagbar gut. Mit etwas Reis und knackigen Bohnen wird daraus eine vollständige Mahlzeit für die ganze Familie.",
+  "tags": [
+    "Abendessen",
+    "Pfannengericht",
+    "Ganzjährig",
+    "Thai",
+    "Kinderfreundlich",
+    "Budgetfreundlich"
+  ],
+  "ingredients": [
+    {
+      "name": "Parfümreis",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "tiefgekühlte grüne Bohnen",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Hackfleisch (Rind und Schwein)",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Schalotten",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 3,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "rote Chilis",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebeln",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Cherry-Tomaten",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Limettenblätter (Citrus hystrix)",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Rindsbouillon",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Austernsauce",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Sojasauce",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Zucker",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Thai-Basilikum",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Erdnussöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Parfümreis",
+      "ingredients": [
+        {
+          "name": "Parfümreis",
+          "amount": 200,
+          "unit": "g",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für grüne Bohnen",
+      "ingredients": [
+        {
+          "name": "tiefgekühlte grüne Bohnen",
+          "amount": 200,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Hackfleisch-Basilikum",
+      "ingredients": [
+        {
+          "name": "Hackfleisch (Rind und Schwein)",
+          "amount": 400,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Schalotten",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Knoblauchzehen",
+          "amount": 3,
+          "unit": "Zehe",
+          "perPortions": 4
+        },
+        {
+          "name": "rote Chilis",
+          "amount": 3,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Zwiebeln",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Cherry-Tomaten",
+          "amount": 100,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Limettenblätter (Citrus hystrix)",
+          "amount": 3,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Rindsbouillon",
+          "amount": 0.5,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Austernsauce",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Sojasauce",
+          "amount": 3,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Zucker",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Thai-Basilikum",
+          "amount": 0.5,
+          "unit": "Bund",
+          "perPortions": 4
+        },
+        {
+          "name": "Erdnussöl",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Den Parfümreis nach Packungsangabe in Salzwasser aufkochen und anschliessend bei kleiner Hitze etwa 10 Minuten gar köcheln lassen.",
+    "Die Schalotten, den Knoblauch und die Zwiebel fein hacken, die Chilis in feine Ringe schneiden und die Cherry-Tomaten halbieren.",
+    "Die Rindsbouillon in etwas heissem Wasser auflösen und beiseitestellen.",
+    "Das Erdnussöl in einer grossen Pfanne oder im Wok erhitzen und das Hackfleisch darin krümelig anbraten, bis es rundum Farbe angenommen hat.",
+    "Die Schalotten, den Knoblauch, die Zwiebel und die Chilis zum Hackfleisch geben und etwa 2 Minuten mitbraten, bis alles gut duftet.",
+    "Die aufgelöste Rindsbouillon, die Austernsauce, die Sojasauce, den Zucker und die Limettenblätter dazugeben und alles gut vermischen.",
+    "Die Cherry-Tomaten unterrühren und die Mischung 3 Minuten köcheln lassen, damit sich die Aromen verbinden.",
+    "Die tiefgekühlten grünen Bohnen in einem separaten Topf in Salzwasser bissfest kochen und anschliessend abgiessen.",
+    "Kurz vor dem Servieren das Thai-Basilikum grob zupfen und unter das Hackfleisch mischen, mit einer Prise Salz abschmecken.",
+    "Das Hackfleisch mit den grünen Bohnen und dem Parfümreis anrichten und heiss servieren."
+  ],
+  "tips": "Wer es weniger scharf mag, entfernt die Kerne der Chilis oder reduziert die Menge. Das Gericht lässt sich gut vorbereiten und am nächsten Tag aufgewärmt geniessen.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/18895/phat-krapao--thailaendisches-hackfleischgericht-",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T10:37:50.802Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "erdnuesse",
+    "soja",
+    "sulfite"
+  ],
+  "nutrition": {
+    "kcal": 568,
+    "protein": 32.1,
+    "fat": 18.4,
+    "carbs": 62.5,
+    "fiber": 4.8
+  }
+}

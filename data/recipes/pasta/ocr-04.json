@@ -115,14 +115,15 @@
   "imageZutaten": null,
   "imageKochen": null,
   "allergens": [
-    "sellerie",
+    "gluten",
+    "milch",
     "sulfite"
   ],
   "nutrition": {
-    "kcal": 248,
+    "kcal": 358,
     "protein": 21.5,
-    "fat": 9.8,
-    "carbs": 16.2,
+    "fat": 18.4,
+    "carbs": 22.6,
     "fiber": 3.8
   },
   "dietCategory": "meat",

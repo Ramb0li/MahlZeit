@@ -1,0 +1,222 @@
+{
+  "id": "sup-65",
+  "name": "Ungarisches Rindsgulasch mit Kartoffeln",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 155,
+  "basePortions": 4,
+  "weatherType": "kalt",
+  "dietCategory": "meat",
+  "description": "Ein Gulasch, wie es an kalten Tagen einfach guttut: langsam geschmortes Rindfleisch mit Peperoni und einer kräftig gewürzten Tomatensauce. Die vier Stunden Schmorzeit brauchen kaum Aufmerksamkeit, nur ab und zu ein Blick in den Topf, und am Ende zerfällt das Fleisch fast von selbst.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Einfrierbar",
+    "Mealprep-geeignet",
+    "One-Pot-Gericht",
+    "Herbst",
+    "Winter",
+    "Ganzjährig"
+  ],
+  "ingredients": [
+    {
+      "name": "Rindsvoressen",
+      "amount": 800,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebeln",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauch",
+      "amount": 2,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "gelbe Peperoni",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "rote Peperoni",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Öl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kümmel",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Majoranblättchen",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Rosenpaprika",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Fleischbouillon",
+      "amount": 3,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "gehackte Tomaten",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "festkochende Kartoffeln",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für das Gulasch",
+      "ingredients": [
+        {
+          "name": "Rindsvoressen",
+          "amount": 800,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Zwiebeln",
+          "amount": 3,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Knoblauch",
+          "amount": 2,
+          "unit": "Zehe",
+          "perPortions": 4
+        },
+        {
+          "name": "gelbe Peperoni",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "rote Peperoni",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Öl",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Kümmel",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Majoranblättchen",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Rosenpaprika",
+          "amount": 2,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Fleischbouillon",
+          "amount": 3,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "gehackte Tomaten",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für die Kartoffeln",
+      "ingredients": [
+        {
+          "name": "festkochende Kartoffeln",
+          "amount": 500,
+          "unit": "g",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Die Zwiebeln schälen und fein hacken, den Knoblauch schälen und ebenfalls fein hacken.",
+    "Die gelbe und die rote Peperoni waschen, entkernen und in mundgerechte Stücke schneiden.",
+    "Das Öl in einem grossen Topf erhitzen und das Rindsvoressen darin portionenweise rundum scharf anbraten.",
+    "Die Zwiebeln und den Knoblauch beigeben und kurz mitdünsten, bis sie glasig sind.",
+    "Die Peperonistücke dazugeben und einige Minuten mitdämpfen.",
+    "Kümmel, Majoranblättchen, Rosenpaprika und Salz beigeben und kurz mitrösten, damit sich die Aromen entfalten.",
+    "Die Fleischbouillon und die gehackten Tomaten dazugiessen und alles gut verrühren.",
+    "Das Ganze kurz aufkochen lassen, etwa 3 Minuten.",
+    "Den Topf zudecken und das Gulasch bei kleiner Hitze rund 4 Stunden sanft schmoren lassen, dabei gelegentlich umrühren.",
+    "Etwa 30 Minuten vor Ende der Garzeit die Kartoffeln schälen, in Stücke schneiden und im Gulasch mitgaren, bis sie weich sind.",
+    "Das Gulasch vor dem Servieren nochmals abschmecken und bei Bedarf mit Salz nachwürzen."
+  ],
+  "tips": "Das Gulasch schmeckt am nächsten Tag noch besser, weil die Gewürze über Nacht durchziehen können, und lässt sich problemlos portionenweise einfrieren.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/19162/ungarisches-gulasch",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T10:51:28.101Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [],
+  "nutrition": {
+    "kcal": 486,
+    "protein": 48.2,
+    "fat": 17.8,
+    "carbs": 32.4,
+    "fiber": 5.3
+  }
+}

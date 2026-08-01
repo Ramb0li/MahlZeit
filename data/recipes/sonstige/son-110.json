@@ -1,0 +1,201 @@
+{
+  "id": "son-110",
+  "name": "Club Sandwich mit Poulet und Bratspeck",
+  "category": "Wraps, Sandwiches & Burger",
+  "timeMinutes": 30,
+  "basePortions": 8,
+  "weatherType": "neutral",
+  "dietCategory": "meat",
+  "description": "Ein klassisches Club Sandwich, wie man es aus dem Café kennt, aber ganz einfach zuhause gemacht. Perfekt für den Apéro oder als herzhafter Snack zwischendurch, wenn mehrere Leute mitessen wollen.",
+  "tags": [
+    "Snack",
+    "Für Gäste",
+    "Gut zum Mitnehmen",
+    "Pfannengericht",
+    "Ganzjährig"
+  ],
+  "ingredients": [
+    {
+      "name": "Pouletbrüstli",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 8
+    },
+    {
+      "name": "Paprika",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 8
+    },
+    {
+      "name": "Salz",
+      "amount": 0.25,
+      "unit": "TL",
+      "perPortions": 8
+    },
+    {
+      "name": "Bratspeck",
+      "amount": 8,
+      "unit": "Stk",
+      "perPortions": 8
+    },
+    {
+      "name": "frische Eier",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 8
+    },
+    {
+      "name": "Frischkäse nature",
+      "amount": 125,
+      "unit": "g",
+      "perPortions": 8
+    },
+    {
+      "name": "grobkörniger Senf",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 8
+    },
+    {
+      "name": "Toastbrot",
+      "amount": 12,
+      "unit": "Stk",
+      "perPortions": 8
+    },
+    {
+      "name": "Tomaten",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 8
+    },
+    {
+      "name": "Eisbergsalat",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 8
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Poulet",
+      "ingredients": [
+        {
+          "name": "Pouletbrüstli",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 8
+        },
+        {
+          "name": "Paprika",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 8
+        },
+        {
+          "name": "Salz",
+          "amount": 0.25,
+          "unit": "TL",
+          "perPortions": 8
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Bratspeck",
+      "ingredients": [
+        {
+          "name": "Bratspeck",
+          "amount": 8,
+          "unit": "Stk",
+          "perPortions": 8
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Eier",
+      "ingredients": [
+        {
+          "name": "frische Eier",
+          "amount": 4,
+          "unit": "Stk",
+          "perPortions": 8
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Frischkäse-Senf-Aufstrich",
+      "ingredients": [
+        {
+          "name": "Frischkäse nature",
+          "amount": 125,
+          "unit": "g",
+          "perPortions": 8
+        },
+        {
+          "name": "grobkörniger Senf",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 8
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Sandwich",
+      "ingredients": [
+        {
+          "name": "Toastbrot",
+          "amount": 12,
+          "unit": "Stk",
+          "perPortions": 8
+        },
+        {
+          "name": "Tomaten",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 8
+        },
+        {
+          "name": "Eisbergsalat",
+          "amount": 0.5,
+          "unit": "Stk",
+          "perPortions": 8
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Die Pouletbrüstli mit Paprika und Salz würzen und in einer Pfanne bei mittlerer Hitze rundum je etwa 5 Minuten braten, bis sie durchgegart sind, dann herausnehmen und in Scheiben schneiden.",
+    "Den Bratspeck in derselben Pfanne ohne zusätzliches Fett bei mittlerer Hitze knusprig braten und danach auf Küchenpapier abtropfen lassen.",
+    "Die Eier in einem Topf mit Wasser bei etwa 60 °C etwa 4 Minuten pochieren, bis das Eiweiss gestockt und das Eigelb noch weich ist.",
+    "Den Frischkäse mit dem groben Senf glattrühren, bis eine streichfähige Masse entsteht.",
+    "Die Tomaten in Scheiben schneiden und den Eisbergsalat in mundgerechte Streifen zupfen.",
+    "Die Toastbrotscheiben leicht toasten, bis sie goldbraun sind.",
+    "Die Toastbrotscheiben mit dem Frischkäse-Senf-Aufstrich bestreichen.",
+    "Die Sandwiches schichten, indem abwechselnd Salat, Tomatenscheiben, Poulet, Bratspeck und Ei auf die Brotscheiben verteilt werden und mit einer zweiten Brotscheibe abgeschlossen wird.",
+    "Die geschichteten Sandwiches diagonal in Dreiecke schneiden und mit Zahnstochern fixieren, bevor sie serviert werden."
+  ],
+  "tips": "Für die Apéro-Variante die Sandwiches in kleinere Häppchen schneiden und mit farbigen Zahnstochern dekorieren.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/13125/club-sandwich",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T10:36:32.891Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "ei",
+    "gluten",
+    "milch",
+    "senf"
+  ],
+  "nutrition": {
+    "kcal": 387,
+    "protein": 28.6,
+    "fat": 18.3,
+    "carbs": 26.4,
+    "fiber": 1.8
+  }
+}

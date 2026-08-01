@@ -85,11 +85,11 @@
     "sesam"
   ],
   "nutrition": {
-    "kcal": 52,
-    "protein": 1.8,
-    "fat": 2.4,
-    "carbs": 5.8,
-    "fiber": 1.2
+    "kcal": 54,
+    "protein": 1.5,
+    "fat": 3,
+    "carbs": 5.3,
+    "fiber": 1
   },
   "dietCategory": "vegan",
   "sourceType": "mahlzyt",

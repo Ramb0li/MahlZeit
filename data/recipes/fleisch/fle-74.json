@@ -257,5 +257,12 @@
     "milch",
     "soja"
   ],
-  "activeTimeMinutes": 40
+  "activeTimeMinutes": 40,
+  "nutrition": {
+    "kcal": 468,
+    "protein": 38.2,
+    "fat": 26.4,
+    "carbs": 18.5,
+    "fiber": 3.8
+  }
 }

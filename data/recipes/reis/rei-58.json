@@ -1,0 +1,206 @@
+{
+  "id": "rei-58",
+  "name": "Safranrisotto mit Parmesan",
+  "category": "Reis, Getreide & Hülsenfrüchte",
+  "timeMinutes": 30,
+  "basePortions": 4,
+  "weatherType": "neutral",
+  "dietCategory": "vegetarian",
+  "description": "Ein klassisches Safranrisotto, wie man es aus norditalienischen Küchen kennt: cremig, goldgelb und mit einem feinen Safranaroma. Wer schon mal am Herd stehen und geduldig rühren musste, weiss, dass genau diese Ruhe das Risotto so wunderbar sämig macht.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Für Gäste",
+    "Pfannengericht",
+    "Ganzjährig",
+    "Italienisch"
+  ],
+  "ingredients": [
+    {
+      "name": "Zwiebeln",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 2,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Safran",
+      "amount": 2,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Safranfäden",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Parmesan am Stück",
+      "amount": 80,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 20,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebouillon",
+      "amount": 9,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Risottoreis",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Weisswein",
+      "amount": 2,
+      "unit": "dl",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Safranrisotto",
+      "ingredients": [
+        {
+          "name": "Zwiebeln",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Knoblauchzehen",
+          "amount": 2,
+          "unit": "Zehe",
+          "perPortions": 4
+        },
+        {
+          "name": "Safran",
+          "amount": 2,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Safranfäden",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Butter",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Parmesan am Stück",
+          "amount": 80,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Butter",
+          "amount": 20,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Gemüsebouillon",
+          "amount": 9,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Risottoreis",
+          "amount": 300,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Weisswein",
+          "amount": 2,
+          "unit": "dl",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Die Zwiebeln und die Knoblauchzehen fein hacken.",
+    "Die Gemüsebouillon in einer separaten Pfanne aufkochen und anschliessend bei kleiner Hitze warmhalten.",
+    "In einer grossen Pfanne 1 EL Butter erhitzen und die gehackten Zwiebeln sowie den Knoblauch darin glasig andämpfen.",
+    "Den Risottoreis beigeben und unter Rühren kurz mitrösten, bis die Körner leicht glasig werden.",
+    "Mit dem Weisswein ablöschen und diesen bei mittlerer Hitze vollständig einkochen lassen.",
+    "Die warme Gemüsebouillon kellenweise beigeben, dabei immer wieder umrühren und jeweils warten, bis die Flüssigkeit fast vollständig eingekocht ist, bevor die nächste Kelle Bouillon dazukommt.",
+    "Nach etwa 15 Minuten Garzeit den Safran und die Safranfäden unterrühren, damit sich Farbe und Aroma im Risotto verteilen.",
+    "Den Reis insgesamt rund 20 Minuten köcheln lassen, bis er cremig, aber noch bissfest (al dente) ist.",
+    "Den Parmesan fein reiben.",
+    "Die Pfanne von der Hitze nehmen und die 20 g Butter sowie den geriebenen Parmesan unter das Risotto rühren, bis es schön cremig ist.",
+    "Das Safranrisotto mit Salz und Pfeffer abschmecken und sofort servieren."
+  ],
+  "tips": "Dazu passt ein frischer Blattsalat, und übrig gebliebenes Risotto lässt sich am nächsten Tag wunderbar zu Arancini weiterverarbeiten.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/24385/safranrisotto",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T10:47:30.137Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch",
+    "sulfite"
+  ],
+  "nutrition": {
+    "kcal": 445,
+    "protein": 12.8,
+    "fat": 11.5,
+    "carbs": 68.2,
+    "fiber": 2.4
+  }
+}

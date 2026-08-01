@@ -98,15 +98,14 @@
   "imageKochen": null,
   "allergens": [
     "milch",
-    "schalenfruechte",
     "senf"
   ],
   "nutrition": {
-    "kcal": 68,
-    "protein": 1.8,
-    "fat": 4.2,
-    "carbs": 5.9,
-    "fiber": 1.4
+    "kcal": 128,
+    "protein": 2.1,
+    "fat": 10.8,
+    "carbs": 6.4,
+    "fiber": 1.8
   },
   "sourceType": "mahlzyt",
   "_migrated_v2": true

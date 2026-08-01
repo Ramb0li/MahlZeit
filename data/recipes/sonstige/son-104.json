@@ -169,5 +169,12 @@
     "milch",
     "senf",
     "sulfite"
-  ]
+  ],
+  "nutrition": {
+    "kcal": 542,
+    "protein": 42.8,
+    "fat": 28.5,
+    "carbs": 28.3,
+    "fiber": 2.1
+  }
 }

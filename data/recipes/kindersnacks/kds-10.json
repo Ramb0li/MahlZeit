@@ -83,11 +83,11 @@
     "gluten"
   ],
   "nutrition": {
-    "kcal": 46,
+    "kcal": 52,
     "protein": 1.5,
-    "fat": 2.2,
-    "carbs": 5.2,
-    "fiber": 1
+    "fat": 3,
+    "carbs": 4.8,
+    "fiber": 0.9
   },
   "dietCategory": "vegan",
   "sourceType": "mahlzyt",

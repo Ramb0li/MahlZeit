@@ -99,15 +99,16 @@
   "imageKochen": null,
   "tips": "",
   "allergens": [
+    "krebstiere",
     "milch",
     "sulfite"
   ],
   "nutrition": {
     "kcal": 268,
-    "protein": 28.4,
-    "fat": 11.2,
-    "carbs": 12.6,
-    "fiber": 3.1
+    "protein": 28.3,
+    "fat": 9.8,
+    "carbs": 12.4,
+    "fiber": 3.2
   },
   "dietCategory": "fish",
   "sourceType": "mahlzyt",

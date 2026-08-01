@@ -1,0 +1,239 @@
+{
+  "id": "ein-21",
+  "name": "Lachs-Spargel-Auflauf mit Teigwaren und Sbrinz",
+  "category": "Aufläufe & Gratins",
+  "timeMinutes": 50,
+  "basePortions": 4,
+  "weatherType": "neutral",
+  "dietCategory": "fish",
+  "description": "Ein Auflauf, der Reste vom Sonntagsteller wunderbar aufwertet: Teigwaren, grüne Spargeln und Rauchlachs treffen auf eine würzige Quark-Ei-Guss und werden im Ofen zu einer goldbraunen Kruste. Ideal, wenn man etwas Feines auf den Tisch bringen möchte, ohne stundenlang in der Küche zu stehen.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Ofengericht",
+    "Frühling",
+    "Ganzjährig"
+  ],
+  "ingredients": [
+    {
+      "name": "Teigwaren",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Irischer Rauchlachs",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Grüne Spargeln",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Schnittlauch",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Milch",
+      "amount": 2,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Rahmquark",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Eier",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Geriebener Sbrinz",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Paprika",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Muskat",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Teigwaren",
+      "ingredients": [
+        {
+          "name": "Teigwaren",
+          "amount": 250,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Lachs-Spargel-Füllung",
+      "ingredients": [
+        {
+          "name": "Irischer Rauchlachs",
+          "amount": 200,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Grüne Spargeln",
+          "amount": 500,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Schnittlauch",
+          "amount": 1,
+          "unit": "Bund",
+          "perPortions": 4
+        },
+        {
+          "name": "Zitronensaft",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Quark-Ei-Guss",
+      "ingredients": [
+        {
+          "name": "Milch",
+          "amount": 2,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Rahmquark",
+          "amount": 150,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Eier",
+          "amount": 3,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Geriebener Sbrinz",
+          "amount": 100,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Paprika",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Muskat",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Den Backofen auf 200 °C Ober- und Unterhitze vorheizen.",
+    "Die Teigwaren in reichlich Salzwasser nach Packungsangabe bissfest kochen, danach abgiessen und beiseitestellen.",
+    "Die grünen Spargeln waschen, die holzigen Enden abschneiden und die Stangen in mundgerechte Stücke schneiden.",
+    "Den Rauchlachs in feine Streifen schneiden und den Schnittlauch in feine Röllchen schneiden.",
+    "Die abgetropften Teigwaren mit den Spargelstücken und dem Rauchlachs in eine gefettete Gratinform geben und den Zitronensaft darüberträufeln.",
+    "Für den Guss die Milch mit dem Rahmquark, den Eiern und dem geriebenen Sbrinz in einer Schüssel gut verrühren.",
+    "Den Guss mit Paprika, Pfeffer, Muskat und Salz würzen und nochmals gut verrühren.",
+    "Die Guss-Masse gleichmässig über die Teigwaren-Spargel-Lachs-Mischung in der Gratinform giessen.",
+    "Den Auflauf im vorgeheizten Backofen bei 200 °C rund 25 Minuten backen, bis die Oberfläche goldbraun ist.",
+    "Den fertigen Auflauf mit dem Schnittlauch bestreuen und noch heiss servieren."
+  ],
+  "tips": "Statt Rauchlachs eignet sich auch geräucherte Forelle, und wer keinen Sbrinz zur Hand hat, kann problemlos Gruyère oder Parmesan verwenden.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/13336/penne-auflauf-mit-spargeln-und-lachs",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T10:50:10.485Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "ei",
+    "fisch",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 612,
+    "protein": 38.4,
+    "fat": 25.8,
+    "carbs": 51.2,
+    "fiber": 3.8
+  }
+}

@@ -106,9 +106,15 @@
   "imageKochen": null,
   "allergens": [
     "ei",
-    "milch",
-    "sulfite"
+    "milch"
   ],
   "sourceType": "mahlzyt",
-  "_migrated_v2": true
+  "_migrated_v2": true,
+  "nutrition": {
+    "kcal": 458,
+    "protein": 32.8,
+    "fat": 32.6,
+    "carbs": 9.2,
+    "fiber": 2.1
+  }
 }

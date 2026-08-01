@@ -91,11 +91,11 @@
     "ei"
   ],
   "nutrition": {
-    "kcal": 387,
+    "kcal": 385,
     "protein": 14.2,
     "fat": 12.8,
-    "carbs": 52.6,
-    "fiber": 10.5
+    "carbs": 52.4,
+    "fiber": 9.8
   },
   "dietCategory": "vegan",
   "sourceType": "mahlzyt",

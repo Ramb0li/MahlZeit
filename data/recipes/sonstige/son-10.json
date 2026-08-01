@@ -76,11 +76,11 @@
     "soja"
   ],
   "nutrition": {
-    "kcal": 512,
-    "protein": 22.3,
+    "kcal": 485,
+    "protein": 21.3,
     "fat": 15.8,
-    "carbs": 68.4,
-    "fiber": 12.7
+    "carbs": 64.2,
+    "fiber": 12.5
   },
   "sourceType": "mahlzyt",
   "_migrated_v2": true

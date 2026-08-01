@@ -1,0 +1,248 @@
+{
+  "id": "pas-95",
+  "name": "Ofen-Feta-Pasta mit Cherry-Tomaten",
+  "category": "Pasta & Teigwaren",
+  "timeMinutes": 60,
+  "basePortions": 4,
+  "weatherType": "neutral",
+  "dietCategory": "vegetarian",
+  "description": "Das ist eines dieser Rezepte, bei denen der Backofen fast die ganze Arbeit übernimmt, während man sich um den Rest des Abends kümmern kann. Der Feta wird im Ofen weich und cremig und vermischt sich mit den geplatzten Tomaten zu einer Sauce, die man kaum glauben mag, dass sie ganz ohne Rühren entstanden ist. Ein Gericht für Tage, an denen man wenig Aufwand, aber trotzdem etwas Besonderes auf dem Teller möchte.",
+  "tags": [
+    "Abendessen",
+    "Mittagessen",
+    "Ofengericht",
+    "Für Gäste",
+    "Mediterran",
+    "Ganzjährig"
+  ],
+  "ingredients": [
+    {
+      "name": "Zucker",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "rote Zwiebeln",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 2,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Cherry-Tomaten",
+      "amount": 800,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "rote Peperoncini",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Oregano",
+      "amount": 5,
+      "unit": "Zweig",
+      "perPortions": 4
+    },
+    {
+      "name": "Bio-Zitrone",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Oregano",
+      "amount": 2,
+      "unit": "Zweig",
+      "perPortions": 4
+    },
+    {
+      "name": "Thymian",
+      "amount": 7,
+      "unit": "Zweig",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.25,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Feta",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 1,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Pasta",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Parmesan",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für die Ofen-Tomaten-Feta-Basis",
+      "ingredients": [
+        {
+          "name": "Zucker",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "rote Zwiebeln",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Knoblauchzehen",
+          "amount": 2,
+          "unit": "Zehe",
+          "perPortions": 4
+        },
+        {
+          "name": "Cherry-Tomaten",
+          "amount": 800,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "rote Peperoncini",
+          "amount": 0.5,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Oregano",
+          "amount": 5,
+          "unit": "Zweig",
+          "perPortions": 4
+        },
+        {
+          "name": "Bio-Zitrone",
+          "amount": 0.5,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Oregano",
+          "amount": 2,
+          "unit": "Zweig",
+          "perPortions": 4
+        },
+        {
+          "name": "Thymian",
+          "amount": 7,
+          "unit": "Zweig",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.25,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Feta",
+          "amount": 250,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 1,
+          "unit": "dl",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für die Pasta",
+      "ingredients": [
+        {
+          "name": "Pasta",
+          "amount": 500,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Parmesan",
+          "amount": 50,
+          "unit": "g",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Den Backofen auf 200 °C Ober-/Unterhitze vorheizen.",
+    "Die rote Zwiebel schälen und in feine Streifen schneiden, die Knoblauchzehen fein hacken.",
+    "Die Cherry-Tomaten waschen und halbieren, die Peperoncini fein schneiden.",
+    "Die Zitrone heiss abwaschen und die Schale fein abreiben.",
+    "Die Cherry-Tomaten, Zwiebelstreifen, Knoblauch, Peperoncini, Zitronenschale, Oregano-Zweiglein und Thymian-Zweiglein in eine grosse Auflaufform geben.",
+    "Zucker, Salz und Pfeffer darüberstreuen und das Olivenöl darübergiessen, dann alles gut mischen.",
+    "Den Feta-Block in die Mitte der Auflaufform setzen und leicht in die Tomatenmischung eindrücken.",
+    "Die Form für 40 Minuten in den auf 200 °C vorgeheizten Backofen stellen, bis die Tomaten aufgeplatzt und der Feta weich und leicht gebräunt ist.",
+    "Etwa 10 Minuten vor Ende der Backzeit die Pasta in reichlich gesalzenem Wasser nach Packungsanweisung al dente kochen und abgiessen, dabei etwas Kochwasser auffangen.",
+    "Die Kräuterzweiglein aus der Auflaufform entfernen und den Feta mit einer Gabel zusammen mit den Tomaten zu einer cremigen Sauce zerdrücken und verrühren.",
+    "Die abgetropfte Pasta zur Tomaten-Feta-Sauce in die Form geben und alles gut vermischen, bei Bedarf etwas Kochwasser dazugeben, um die Sauce geschmeidiger zu machen.",
+    "Den Parmesan frisch darüberreiben und die Pasta sofort servieren."
+  ],
+  "tips": "Wer es schärfer mag, lässt die Peperoncini-Kerne mit in die Form geben. Das Gericht schmeckt auch aufgewärmt am nächsten Tag noch sehr gut.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/21362/baked-feta-pasta",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T10:43:44.410Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 748,
+    "protein": 26.8,
+    "fat": 35.2,
+    "carbs": 78.4,
+    "fiber": 5.6
+  }
+}

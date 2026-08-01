@@ -1,0 +1,171 @@
+{
+  "id": "rei-59",
+  "name": "Steinpilzrisotto mit Parmesan",
+  "category": "Reis, Getreide & Hülsenfrüchte",
+  "timeMinutes": 35,
+  "basePortions": 4,
+  "weatherType": "kalt",
+  "dietCategory": "vegetarian",
+  "description": "Wenn es draussen kühl wird, gibt es kaum etwas Tröstlicheres als ein cremiges Risotto, das langsam vor sich hin köchelt, während die getrockneten Steinpilze der ganzen Küche einen herbstlichen Duft verleihen. Rühren erfordert etwas Geduld, aber das Ergebnis entschädigt für jede Minute am Herd.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Für Gäste",
+    "Pfannengericht",
+    "Herbst",
+    "Winter",
+    "Italienisch"
+  ],
+  "ingredients": [
+    {
+      "name": "getrocknete Steinpilze",
+      "amount": 25,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebeln",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "geriebener Parmesan",
+      "amount": 40,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebouillon",
+      "amount": 9,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Risottoreis",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Weisswein",
+      "amount": 1,
+      "unit": "dl",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Risotto",
+      "ingredients": [
+        {
+          "name": "getrocknete Steinpilze",
+          "amount": 25,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Zwiebeln",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Butter",
+          "amount": 3,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "geriebener Parmesan",
+          "amount": 40,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Gemüsebouillon",
+          "amount": 9,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Risottoreis",
+          "amount": 300,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Weisswein",
+          "amount": 1,
+          "unit": "dl",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Die getrockneten Steinpilze in eine Schüssel geben, mit etwas warmem Wasser bedecken und rund 20 Minuten einweichen lassen.",
+    "Die Zwiebeln fein hacken.",
+    "Die Gemüsebouillon in einer separaten Pfanne erhitzen und heiss halten.",
+    "In einer grossen Pfanne die Butter bei mittlerer Hitze schmelzen und die gehackten Zwiebeln darin andämpfen, bis sie glasig sind.",
+    "Die eingeweichten Steinpilze abtropfen lassen, grob hacken und zu den Zwiebeln geben, kurz mitdünsten.",
+    "Den Risottoreis beigeben und unter Rühren etwa 1 bis 2 Minuten andünsten, bis die Körner glasig glänzen.",
+    "Mit dem Weisswein ablöschen und unter Rühren einkochen lassen, bis die Flüssigkeit fast vollständig aufgenommen ist.",
+    "Nach und nach kellenweise die heisse Gemüsebouillon angiessen, dabei ständig rühren und jeweils warten, bis die Flüssigkeit eingekocht ist, bevor die nächste Kelle dazukommt.",
+    "Diesen Vorgang etwa 18 bis 20 Minuten fortführen, bis der Reis cremig und bissfest gar ist.",
+    "Die Pfanne von der Hitze nehmen, den geriebenen Parmesan unterrühren und mit Salz und Pfeffer würzen.",
+    "Das Risotto sofort heiss servieren."
+  ],
+  "tips": "Für eine vegane Variante die Butter durch Olivenöl und den Parmesan durch Hefeflocken ersetzen. Frisch geriebener Parmesan zum Servieren macht sich zusätzlich gut.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/18192/steinpilzrisotto",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T10:47:54.757Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch",
+    "sulfite"
+  ],
+  "nutrition": {
+    "kcal": 425,
+    "protein": 12.5,
+    "fat": 11.8,
+    "carbs": 65.5,
+    "fiber": 3.8
+  }
+}

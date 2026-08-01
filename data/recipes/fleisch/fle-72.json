@@ -125,5 +125,12 @@
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/user-recipes/g_1779791219800_c2x3v/fle-72-1781477268188.jpg",
   "imageZutaten": null,
   "imageKochen": null,
-  "allergens": []
+  "allergens": [],
+  "nutrition": {
+    "kcal": 412,
+    "protein": 48.3,
+    "fat": 20.8,
+    "carbs": 8.2,
+    "fiber": 3.4
+  }
 }

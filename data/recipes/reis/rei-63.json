@@ -1,0 +1,210 @@
+{
+  "id": "rei-63",
+  "name": "Grünspargel-Risotto mit Parmesan",
+  "category": "Reis, Getreide & Hülsenfrüchte",
+  "timeMinutes": 35,
+  "basePortions": 4,
+  "weatherType": "neutral",
+  "dietCategory": "vegetarian",
+  "description": "An einem ruhigen Abend im Frühling, wenn die ersten grünen Spargeln auf dem Markt liegen, gibt es bei uns dieses Risotto. Das langsame Rühren am Herd hat fast etwas Meditatives, und der Duft von Weisswein und Bouillon füllt die ganze Küche. Mit reichlich Parmesan verfeinert wird daraus ein Gericht, das einfach ist, aber immer Eindruck macht.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Für Gäste",
+    "Pfannengericht",
+    "Frühling",
+    "Italienisch"
+  ],
+  "ingredients": [
+    {
+      "name": "Grüne Spargeln",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebeln",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 30,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Risottoreis",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Weisswein",
+      "amount": 2,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebouillon",
+      "amount": 10,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Geriebener Parmesan",
+      "amount": 80,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Spargeln",
+      "ingredients": [
+        {
+          "name": "Grüne Spargeln",
+          "amount": 500,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Butter",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Risotto",
+      "ingredients": [
+        {
+          "name": "Zwiebeln",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Butter",
+          "amount": 30,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Risottoreis",
+          "amount": 300,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Weisswein",
+          "amount": 2,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Gemüsebouillon",
+          "amount": 10,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Geriebener Parmesan",
+          "amount": 80,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Die Spargeln waschen, die holzigen Enden abschneiden und die Stangen in mundgerechte Stücke schneiden.",
+    "Die Zwiebel fein hacken.",
+    "Die Gemüsebouillon in einer separaten Pfanne aufkochen und anschliessend auf kleiner Stufe warmhalten.",
+    "In einer weiten Pfanne 2 EL Butter erhitzen und die Spargelstücke darin während etwa 5 Minuten andämpfen, mit Salz und Pfeffer würzen und danach beiseitestellen.",
+    "In derselben Pfanne 30 g Butter schmelzen und die gehackte Zwiebel darin glasig andämpfen.",
+    "Den Risottoreis beigeben und unter Rühren etwa 1 bis 2 Minuten mitdünsten, bis die Körner leicht glasig wirken.",
+    "Mit dem Weisswein ablöschen und unter gelegentlichem Rühren einkochen lassen, bis die Flüssigkeit fast vollständig aufgenommen ist.",
+    "Nach und nach kellenweise die warme Gemüsebouillon beigeben, dabei immer wieder rühren und jeweils warten, bis die Flüssigkeit vom Reis aufgenommen ist, bevor die nächste Kelle folgt.",
+    "Nach etwa 15 Minuten Garzeit den Reis auf Biss prüfen und bei Bedarf noch etwas Bouillon nachgiessen, bis er cremig und gerade bissfest ist.",
+    "Die angedämpften Spargeln und den geriebenen Parmesan unter das Risotto rühren und alles nochmals kurz erwärmen.",
+    "Das Risotto mit Salz und Pfeffer abschmecken und sofort servieren."
+  ],
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/23081/spargelrisotto",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T11:03:49.550Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch",
+    "sulfite"
+  ],
+  "nutrition": {
+    "kcal": 498,
+    "protein": 16.9,
+    "fat": 14.7,
+    "carbs": 68.2,
+    "fiber": 4.6
+  }
+}

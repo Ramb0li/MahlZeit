@@ -103,5 +103,12 @@
   "allergens": [
     "milch",
     "sesam"
-  ]
+  ],
+  "nutrition": {
+    "kcal": 285,
+    "protein": 11.4,
+    "fat": 14.8,
+    "carbs": 28.6,
+    "fiber": 9.3
+  }
 }

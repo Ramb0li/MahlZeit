@@ -1,0 +1,244 @@
+{
+  "id": "ein-19",
+  "name": "Frühlingsgratin mit Spargeln, Kohlrabi und Frühkartoffeln",
+  "category": "Aufläufe & Gratins",
+  "timeMinutes": 65,
+  "basePortions": 4,
+  "weatherType": "neutral",
+  "dietCategory": "vegetarian",
+  "description": "Dieses Gratin bringt den Frühling auf den Tisch, wenn die ersten grünen Spargeln und knackigen Kohlrabi im Laden liegen. Die cremige Sauce mit Gruyère und Muskat verbindet die Gemüse zu einem herzhaften Ganzen, das auch am Folgetag noch fein schmeckt. Ein Gericht für einen ruhigen Abend, wenn man Zeit hat, den Ofen etwas arbeiten zu lassen.",
+  "tags": [
+    "Abendessen",
+    "Ofengericht",
+    "Frühling",
+    "Schweizerisch",
+    "Für Gäste"
+  ],
+  "ingredients": [
+    {
+      "name": "Frühkartoffeln",
+      "amount": 600,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "grüne Spargeln",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Kohlrabi",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Bundzwiebeln mit dem Grün",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Salzwasser",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Weissmehl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Milch",
+      "amount": 4,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Muskat",
+      "amount": 0.25,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "geriebener Gruyère",
+      "amount": 120,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "glattblättrige Petersilie",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Dill",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für das Gemüse",
+      "ingredients": [
+        {
+          "name": "Frühkartoffeln",
+          "amount": 600,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "grüne Spargeln",
+          "amount": 500,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Kohlrabi",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Bundzwiebeln mit dem Grün",
+          "amount": 3,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Salzwasser",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für die Sauce",
+      "ingredients": [
+        {
+          "name": "Weissmehl",
+          "amount": 3,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Butter",
+          "amount": 3,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Milch",
+          "amount": 4,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1.5,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Muskat",
+          "amount": 0.25,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "geriebener Gruyère",
+          "amount": 120,
+          "unit": "g",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für die Kräuter",
+      "ingredients": [
+        {
+          "name": "glattblättrige Petersilie",
+          "amount": 1,
+          "unit": "Bund",
+          "perPortions": 4
+        },
+        {
+          "name": "Dill",
+          "amount": 1,
+          "unit": "Bund",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Den Backofen auf 200 °C Ober- und Unterhitze vorheizen.",
+    "Die Frühkartoffeln waschen, schälen und in etwa 1 cm dicke Scheiben schneiden.",
+    "Die grünen Spargeln waschen, die holzigen Enden abschneiden und die Stangen in etwa 4 cm lange Stücke teilen.",
+    "Den Kohlrabi schälen und in dünne Scheiben oder Stifte schneiden.",
+    "Die Bundzwiebeln waschen und samt dem Grün in Ringe schneiden.",
+    "Reichlich Salzwasser aufkochen und die Kartoffelscheiben darin 5 Minuten blanchieren.",
+    "Die Spargelstücke und den Kohlrabi zu den Kartoffeln in das Salzwasser geben und weitere 5 Minuten mitkochen, anschliessend alles abgiessen und gut abtropfen lassen.",
+    "Für die Sauce die Butter in einer Pfanne bei mittlerer Hitze schmelzen und das Weissmehl unter Rühren einstreuen, damit eine helle Mehlschwitze entsteht.",
+    "Die Milch nach und nach unter ständigem Rühren dazugiessen, damit keine Klümpchen entstehen.",
+    "Die Sauce mit Salz, Pfeffer und Muskat würzen und kurz aufkochen lassen, bis sie leicht eindickt.",
+    "Die Bundzwiebeln unter die Sauce rühren.",
+    "Das blanchierte Gemüse in eine gefettete Gratinform geben und die Sauce darüber verteilen.",
+    "Den geriebenen Gruyère gleichmässig über das Gratin streuen.",
+    "Das Gratin im vorgeheizten Backofen bei 200 °C für etwa 35 Minuten goldbraun backen.",
+    "Die Petersilie und den Dill fein hacken.",
+    "Das fertige Gratin aus dem Ofen nehmen, mit den gehackten Kräutern bestreuen und heiss servieren."
+  ],
+  "tips": "Wer mag, kann das Gratin mit etwas geriebenem Parmesan statt Gruyère verfeinern oder Speckwürfeli unter das Gemüse mischen.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/19464/fruehlingsgratin",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T10:49:15.860Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 428,
+    "protein": 18.5,
+    "fat": 19.2,
+    "carbs": 44.3,
+    "fiber": 7.6
+  }
+}

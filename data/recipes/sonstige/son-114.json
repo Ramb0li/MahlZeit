@@ -1,0 +1,173 @@
+{
+  "id": "son-114",
+  "name": "Geröstetes Brot mit Thunfisch-Frischkäse-Creme und Kapern",
+  "category": "Snacks & Vorspeisen",
+  "timeMinutes": 20,
+  "basePortions": 4,
+  "weatherType": "neutral",
+  "dietCategory": "vegetarian",
+  "description": "Diese Brotscheiben sind bei uns der Klassiker, wenn spontan Besuch kommt und der Kühlschrank nicht mehr hergibt als eine Dose Thon und etwas Frischkäse. Die cremige Thunfischmasse mit dem salzigen Biss der Kapern macht aus einfachem geröstetem Brot ein Apéro-Häppchen, das immer als Erstes leer ist.",
+  "tags": [
+    "Snack",
+    "Für Gäste",
+    "Pfannengericht",
+    "Ganzjährig",
+    "Gut zum Mitnehmen"
+  ],
+  "ingredients": [
+    {
+      "name": "Brot",
+      "amount": 350,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Öl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Thon in Öl",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebeln",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.25,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Mayonnaise",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Frischkäse",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Kapern",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für geröstetes Brot",
+      "ingredients": [
+        {
+          "name": "Brot",
+          "amount": 350,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Öl",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Thunfisch-Frischkäse-Creme",
+      "ingredients": [
+        {
+          "name": "Thon in Öl",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Zwiebeln",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.25,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Mayonnaise",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Frischkäse",
+          "amount": 100,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Kapern",
+          "amount": 3,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Die Zwiebel fein hacken.",
+    "Den Thon abtropfen lassen und in einer Schüssel mit einer Gabel zerdrücken.",
+    "Die gehackte Zwiebel, Mayonnaise, Frischkäse und die Kapern zum Thon geben.",
+    "Alles gut miteinander verrühren und mit Salz und Pfeffer abschmecken.",
+    "Das Brot in mundgerechte Scheiben oder Stücke schneiden.",
+    "Das Öl in einer Pfanne erhitzen und die Brotscheiben darin bei mittlerer Hitze von beiden Seiten insgesamt etwa 3 Minuten goldbraun braten.",
+    "Die gebratenen Brotscheiben etwas abkühlen lassen und mit der Thunfisch-Frischkäse-Creme bestreichen.",
+    "Sofort servieren oder bis zum Servieren kühl stellen."
+  ],
+  "tips": "Die Creme lässt sich gut einen Tag im Voraus zubereiten und im Kühlschrank aufbewahren, das Brot am besten erst kurz vor dem Servieren braten, damit es schön knusprig bleibt.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/17587/crostini-mit-thonmousse",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T11:06:56.929Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "ei",
+    "fisch",
+    "gluten",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 442,
+    "protein": 18.2,
+    "fat": 19.8,
+    "carbs": 47.6,
+    "fiber": 3.1
+  }
+}

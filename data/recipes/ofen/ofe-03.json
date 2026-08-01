@@ -114,11 +114,11 @@
     "senf"
   ],
   "nutrition": {
-    "kcal": 448,
-    "protein": 16.2,
+    "kcal": 418,
+    "protein": 14.2,
     "fat": 14.8,
-    "carbs": 62.4,
-    "fiber": 9.1
+    "carbs": 56.3,
+    "fiber": 8.7
   },
   "sourceType": "mahlzyt",
   "_migrated_v2": true

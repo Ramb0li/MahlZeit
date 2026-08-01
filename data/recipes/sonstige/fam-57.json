@@ -39,11 +39,11 @@
   "tips": "",
   "allergens": [],
   "nutrition": {
-    "kcal": 58,
+    "kcal": 60,
     "protein": 0.9,
-    "fat": 0.2,
-    "carbs": 12.8,
-    "fiber": 2.4
+    "fat": 0.3,
+    "carbs": 13.2,
+    "fiber": 2.1
   },
   "dietCategory": "vegan",
   "sourceType": "mahlzyt",

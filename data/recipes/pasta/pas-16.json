@@ -131,11 +131,11 @@
     "sellerie"
   ],
   "nutrition": {
-    "kcal": 542,
-    "protein": 21.3,
-    "fat": 16.8,
-    "carbs": 76.4,
-    "fiber": 11.2
+    "kcal": 485,
+    "protein": 18.2,
+    "fat": 14.8,
+    "carbs": 68.5,
+    "fiber": 11.3
   },
   "sourceType": "mahlzyt",
   "_migrated_v2": true,

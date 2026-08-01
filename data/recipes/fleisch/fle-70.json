@@ -278,5 +278,12 @@
         }
       ]
     }
-  ]
+  ],
+  "nutrition": {
+    "kcal": 485,
+    "protein": 24.6,
+    "fat": 18.5,
+    "carbs": 52.8,
+    "fiber": 3.8
+  }
 }

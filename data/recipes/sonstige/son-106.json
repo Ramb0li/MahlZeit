@@ -141,5 +141,12 @@
   "imageKochen": null,
   "allergens": [
     "milch"
-  ]
+  ],
+  "nutrition": {
+    "kcal": 198,
+    "protein": 12.4,
+    "fat": 12.8,
+    "carbs": 9.6,
+    "fiber": 4.2
+  }
 }

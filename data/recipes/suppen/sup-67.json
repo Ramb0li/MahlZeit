@@ -1,0 +1,195 @@
+{
+  "id": "sup-67",
+  "name": "Thai-Curry-Suppe mit Poulet und Kefen",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 30,
+  "basePortions": 4,
+  "weatherType": "neutral",
+  "dietCategory": "meat",
+  "description": "Diese Suppe ist genau das Richtige, wenn es abends schnell gehen muss, aber trotzdem nach etwas Besonderem schmecken soll. Die rote Currypaste und das Zitronengras geben ihr eine schöne Schärfe und Frische, während die Kokosmilch alles schön abrundet. Ein Gericht, das nach Feierabend-Küche schmeckt, aber richtig nach Thailand-Ferien duftet.",
+  "tags": [
+    "Abendessen",
+    "Mittagessen",
+    "One-Pot-Gericht",
+    "Gut zum Mitnehmen",
+    "Ganzjährig",
+    "Thai"
+  ],
+  "ingredients": [
+    {
+      "name": "Pouletbrüstli",
+      "amount": 600,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Austernsauce",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitronengras",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Rohzucker",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kefen",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Mini-Maiskölbchen",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Rüebli",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Koriander",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "rote Currypaste",
+      "amount": 1.5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Kokosmilch",
+      "amount": 4,
+      "unit": "dl",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Poulet-Marinade",
+      "ingredients": [
+        {
+          "name": "Pouletbrüstli",
+          "amount": 600,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Austernsauce",
+          "amount": 3,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Curry-Suppe",
+      "ingredients": [
+        {
+          "name": "Zitronengras",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Rohzucker",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Kefen",
+          "amount": 150,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Mini-Maiskölbchen",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Rüebli",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Koriander",
+          "amount": 0.5,
+          "unit": "Bund",
+          "perPortions": 4
+        },
+        {
+          "name": "rote Currypaste",
+          "amount": 1.5,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Kokosmilch",
+          "amount": 4,
+          "unit": "dl",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Das Pouletbrüstli in mundgerechte Stücke schneiden und mit der Austernsauce vermischen, anschliessend 10 Minuten marinieren lassen.",
+    "In der Zwischenzeit das Zitronengras andrücken und in grobe Stücke schneiden, das Rüebli schälen und in feine Stifte oder Scheiben schneiden.",
+    "Die Kefen putzen und die Mini-Maiskölbchen halbieren, den Koriander grob hacken.",
+    "Die Kokosmilch zusammen mit der roten Currypaste und dem Rohzucker in einer grossen Pfanne oder einem Topf aufkochen.",
+    "Das Zitronengras beigeben und die Suppe 5 Minuten leicht köcheln lassen, damit sich die Aromen entfalten können.",
+    "Das marinierte Pouletbrüstli in die Suppe geben und darin gar ziehen lassen.",
+    "Die Kefen, Mini-Maiskölbchen und Rüeblistifte beigeben und kurz mitköcheln, bis das Gemüse bissfest ist.",
+    "Mit wenig Salz abschmecken und die Suppe mit frischem Koriander bestreut servieren."
+  ],
+  "tips": "Wer es milder mag, reduziert die Menge an Currypaste; für mehr Schärfe passt eine fein gehackte rote Chili sehr gut dazu. Die Suppe lässt sich gut vorbereiten und hält sich im Kühlschrank problemlos 2 Tage.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/13126/rotes-thai-curry-mit-poulet",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T11:05:12.813Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 412,
+    "protein": 39.8,
+    "fat": 19.6,
+    "carbs": 18.2,
+    "fiber": 3.4
+  }
+}

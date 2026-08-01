@@ -1,0 +1,185 @@
+{
+  "id": "son-113",
+  "name": "Poulet-Cheddar-Quesadillas mit Avocado-Tomaten-Füllung",
+  "category": "Wraps, Sandwiches & Burger",
+  "timeMinutes": 25,
+  "basePortions": 4,
+  "weatherType": "neutral",
+  "dietCategory": "meat",
+  "description": "Diese Quesadillas sind bei uns der Klassiker, wenn spontan Besuch kommt und schnell etwas Herzhaftes auf den Tisch soll. Die Kombination aus würzigem Poulet, cremiger Avocado und geschmolzenem Cheddar macht sie zum Favoriten für Gross und Klein. Praktisch: In wenigen Minuten pro Seite sind sie goldbraun und knusprig aus der Pfanne.",
+  "tags": [
+    "Snack",
+    "Für Gäste",
+    "Pfannengericht",
+    "Ganzjährig",
+    "Gut zum Mitnehmen",
+    "Kinderfreundlich"
+  ],
+  "ingredients": [
+    {
+      "name": "Pouletbrüstli",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Avocado",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Paprika",
+      "amount": 0.5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomaten",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Chilipulver",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Cheddar",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Weizen-Tortillas",
+      "amount": 8,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Öl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für die Füllung",
+      "ingredients": [
+        {
+          "name": "Pouletbrüstli",
+          "amount": 4,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Avocado",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Paprika",
+          "amount": 0.5,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Tomaten",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Chilipulver",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Cheddar",
+          "amount": 150,
+          "unit": "g",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für die Quesadillas",
+      "ingredients": [
+        {
+          "name": "Weizen-Tortillas",
+          "amount": 8,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Öl",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Das Poulet in feine Streifen oder Würfel schneiden und in einer Pfanne mit wenig Öl anbraten, bis es gar ist.",
+    "Die Avocado halbieren, entsteinen und das Fruchtfleisch in kleine Würfel schneiden.",
+    "Die Tomaten waschen und ebenfalls in kleine Würfel schneiden.",
+    "Das gebratene Poulet, die Avocadowürfel und die Tomatenwürfel in einer Schüssel mit Paprika, Chilipulver, Pfeffer und Salz vermischen.",
+    "Den Cheddar reiben und unter die Mischung geben.",
+    "Jeweils eine Tortilla auf die Arbeitsfläche legen, die Füllung auf einer Hälfte verteilen und mit einer zweiten Tortilla bedecken oder die Tortilla zur Hälfte klappen.",
+    "Wenig Öl in einer Pfanne erhitzen und die gefüllte Tortilla darin auf mittlerer Hitze etwa 4 Minuten anbraten, bis die Unterseite goldbraun ist und der Käse zu schmelzen beginnt.",
+    "Die Quesadilla wenden und weitere 2 Minuten braten, bis auch die zweite Seite goldbraun und der Käse vollständig geschmolzen ist.",
+    "Die fertigen Quesadillas in Stücke schneiden und warm servieren."
+  ],
+  "tips": "Dazu passt eine Sauerrahm-Dip oder eine frische Salsa. Übrig gebliebene Quesadillas lassen sich am nächsten Tag in der Pfanne kurz aufwärmen.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/13124/quesadillas-mit-poulet",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T10:58:40.597Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 548,
+    "protein": 42.8,
+    "fat": 22.4,
+    "carbs": 42.6,
+    "fiber": 5.8
+  }
+}

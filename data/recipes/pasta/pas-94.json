@@ -1,0 +1,252 @@
+{
+  "id": "pas-94",
+  "name": "Lasagne-Rollen mit Ricotta, Spinat und Cherry-Tomaten",
+  "category": "Pasta & Teigwaren",
+  "timeMinutes": 80,
+  "basePortions": 4,
+  "weatherType": "neutral",
+  "dietCategory": "vegetarian",
+  "description": "Das ist so ein Rezept, das aussieht wie viel Aufwand, aber eigentlich nur ein bisschen Schneiden und Rollen ist – der Ofen macht den Rest. Ricotta, Spinat und Pecorino ergeben eine cremige Füllung, die mit den geplatzten Cherry-Tomaten und Thymian richtig nach Sommer in Italien schmeckt.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Ofengericht",
+    "Für Gäste",
+    "Ganzjährig",
+    "Italienisch"
+  ],
+  "ingredients": [
+    {
+      "name": "Zwiebeln",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Blattspinat",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Ricotta",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Pecorino",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Cherry-Tomaten",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zucker",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.25,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Thymian",
+      "amount": 4,
+      "unit": "Zweig",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomatenpüree",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pastateig",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für die Füllung",
+      "ingredients": [
+        {
+          "name": "Zwiebeln",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Knoblauchzehe",
+          "amount": 1,
+          "unit": "Zehe",
+          "perPortions": 4
+        },
+        {
+          "name": "Blattspinat",
+          "amount": 400,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Ricotta",
+          "amount": 250,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Pecorino",
+          "amount": 50,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für die Tomatensauce",
+      "ingredients": [
+        {
+          "name": "Cherry-Tomaten",
+          "amount": 500,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Zucker",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.25,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Thymian",
+          "amount": 4,
+          "unit": "Zweig",
+          "perPortions": 4
+        },
+        {
+          "name": "Tomatenpüree",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für die Pastarollen",
+      "ingredients": [
+        {
+          "name": "Pastateig",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Den Backofen auf 200 °C Ober-/Unterhitze vorheizen.",
+    "Die Zwiebel fein hacken und die Knoblauchzehe pressen oder ebenfalls fein hacken.",
+    "Zwiebel und Knoblauch mit 1 EL Olivenöl in einer Pfanne bei mittlerer Hitze etwa 2 Minuten andämpfen, bis sie glasig sind.",
+    "Den Blattspinat beigeben und weitere 3 Minuten mitdämpfen, bis er zusammenfällt, dann leicht auskühlen lassen.",
+    "Den gedämpften Spinat mit Ricotta, dem geriebenen Pecorino, 1 TL Salz und einer Prise Pfeffer in einer Schüssel gut vermischen.",
+    "Die Cherry-Tomaten halbieren und mit Zucker, ¼ TL Salz, Tomatenpüree, den Thymianzweiglein und 1 EL Olivenöl in einer Auflaufform verteilen.",
+    "Die Pastateig-Rollen ausrollen und in rechteckige Stücke von je etwa 10 x 15 cm schneiden.",
+    "Auf jedes Teigstück etwas von der Ricotta-Spinat-Füllung geben und die Teigstücke locker aufrollen.",
+    "Die gefüllten Pastarollen mit der Schnittfläche nach oben in die Auflaufform auf die Cherry-Tomaten setzen.",
+    "Die Form für 35 Minuten in den auf 200 °C vorgeheizten Backofen schieben, bis die Pastarollen goldbraun sind und die Tomaten weich zerfallen.",
+    "Die Lasagne-Rollen kurz auskühlen lassen und warm servieren."
+  ],
+  "tips": "Dazu passt frisches Weissbrot, um die Tomatensauce aufzutunken. Die Rollen lassen sich auch am Vortag füllen und kalt gestellt am nächsten Tag direkt backen.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/6578/spinat-cannelloni-al-forno",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T10:43:15.738Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 428,
+    "protein": 20.3,
+    "fat": 18.7,
+    "carbs": 44.6,
+    "fiber": 5.8
+  }
+}

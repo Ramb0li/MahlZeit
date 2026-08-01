@@ -1,0 +1,223 @@
+{
+  "id": "sup-68",
+  "name": "Bündner Gerstensuppe mit Rüebli und Sellerie",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 90,
+  "basePortions": 4,
+  "weatherType": "kalt",
+  "dietCategory": "meat",
+  "description": "An kalten Tagen gibt es bei uns oft diese herzhafte Gerstensuppe, die mit etwas Bündnerfleisch und viel Gemüse ganz von selbst zu einer vollwertigen Mahlzeit wird. Sie braucht zwar eine Stunde Kochzeit, aber die meiste Zeit köchelt sie einfach vor sich hin, während man sich anderen Dingen widmen kann.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "One-Pot-Gericht",
+    "Winter",
+    "Herbst",
+    "Schweizerisch",
+    "Mealprep-geeignet",
+    "Einfrierbar",
+    "Gut zum Mitnehmen"
+  ],
+  "ingredients": [
+    {
+      "name": "Bündnerfleisch",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebeln",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Lauch",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Rüebli",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Knollensellerie",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Schnittlauch",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Lorbeerblätter",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Vollrahm",
+      "amount": 2,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Fleischbouillon",
+      "amount": 10,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Rollgerste",
+      "amount": 80,
+      "unit": "g",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Bündner Gerstensuppe",
+      "ingredients": [
+        {
+          "name": "Bündnerfleisch",
+          "amount": 50,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Zwiebeln",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Lauch",
+          "amount": 200,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Rüebli",
+          "amount": 200,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Knollensellerie",
+          "amount": 150,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Schnittlauch",
+          "amount": 3,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Lorbeerblätter",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Butter",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Vollrahm",
+          "amount": 2,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Fleischbouillon",
+          "amount": 10,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Rollgerste",
+          "amount": 80,
+          "unit": "g",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Die Zwiebel schälen und fein hacken.",
+    "Den Lauch waschen und in feine Ringe schneiden, die Rüebli und den Knollensellerie schälen und in kleine Würfel schneiden.",
+    "Das Bündnerfleisch in feine Streifen schneiden.",
+    "Die Butter in einem grossen Topf erhitzen und die Zwiebel darin bei mittlerer Hitze glasig andämpfen.",
+    "Den Lauch, die Rüebli und den Knollensellerie beigeben und einige Minuten mitdünsten.",
+    "Die Rollgerste beigeben und kurz mitrösten.",
+    "Die Fleischbouillon angiessen und das Lorbeerblatt beigeben.",
+    "Alles einmal aufkochen lassen und anschliessend bei kleiner Hitze zugedeckt etwa 1 Stunde köcheln lassen, bis die Gerste weich ist.",
+    "Das Lorbeerblatt aus der Suppe entfernen.",
+    "Das Bündnerfleisch und den Vollrahm unterrühren und die Suppe nochmals kurz erwärmen, ohne sie aufkochen zu lassen.",
+    "Mit Salz und Pfeffer abschmecken.",
+    "Die Suppe mit frisch geschnittenem Schnittlauch bestreuen und heiss servieren."
+  ],
+  "tips": "Die Suppe lässt sich gut vorbereiten und schmeckt am nächsten Tag aufgewärmt sogar noch besser, da die Aromen Zeit hatten sich zu verbinden.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/17674/buendner-gerstensuppe",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T11:05:37.935Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch",
+    "sellerie"
+  ],
+  "nutrition": {
+    "kcal": 318,
+    "protein": 11.2,
+    "fat": 15.7,
+    "carbs": 33.6,
+    "fiber": 5.9
+  }
+}

@@ -168,7 +168,7 @@
     "18. Das Blech erneut kurz herausnehmen, die Mozzarella-Scheiben verteilen und für weitere 5 Minuten zurück auf die unterste Ebene geben, bis der Käse zerlaufen und der Boden leicht gebräunt ist.",
     "19. Die Pizza etwas abkühlen lassen, mit restlichen Basilikumblättern garnieren und in 6 Stücke schneiden."
   ],
-  "dietCategory": "meat",
+  "dietCategory": "fish",
   "imageUrl": "https://herrbuettner.de/wp-content/uploads/2017/04/rezept_vollkorn_pizza_mit_tomatensauce_thunfisch_und_mozzarella01.jpg",
   "imageZutaten": null,
   "imageKochen": null,
@@ -178,5 +178,12 @@
     "milch"
   ],
   "sourceType": "mahlzyt",
-  "_migrated_v2": true
+  "_migrated_v2": true,
+  "nutrition": {
+    "kcal": 512,
+    "protein": 26.8,
+    "fat": 18.4,
+    "carbs": 58.3,
+    "fiber": 7.2
+  }
 }

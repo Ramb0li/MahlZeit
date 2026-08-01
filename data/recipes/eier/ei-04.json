@@ -99,14 +99,16 @@
   "imageZutaten": null,
   "imageKochen": null,
   "allergens": [
-    "ei"
+    "ei",
+    "gluten",
+    "milch"
   ],
   "nutrition": {
-    "kcal": 196,
-    "protein": 12.4,
-    "fat": 13.8,
-    "carbs": 6.2,
-    "fiber": 2.3
+    "kcal": 512,
+    "protein": 24.6,
+    "fat": 24.8,
+    "carbs": 44.2,
+    "fiber": 7.3
   },
   "dietCategory": "vegetarian",
   "steps": [

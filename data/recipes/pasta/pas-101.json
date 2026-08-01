@@ -1,0 +1,190 @@
+{
+  "id": "pas-101",
+  "name": "Udon-Nudeln mit Sesam-Tofu und Federkohl",
+  "category": "Pasta & Teigwaren",
+  "timeMinutes": 30,
+  "basePortions": 2,
+  "weatherType": "neutral",
+  "dietCategory": "vegan",
+  "description": "Ein schnelles Feierabendgericht, das nach mehr Restaurant aussieht als es Aufwand macht. Der knackige Federkohl und der würzige Sesam-Tofu bringen Textur in die glatten Udon-Nudeln, und in einer halben Stunde steht alles auf dem Tisch.",
+  "tags": [
+    "Abendessen",
+    "Mittagessen",
+    "Mealprep-geeignet",
+    "Gut zum Mitnehmen",
+    "Pfannengericht",
+    "Ganzjährig",
+    "Chinesisch"
+  ],
+  "ingredients": [
+    {
+      "name": "Tofu",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Sojasauce",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Knoblauchpulver",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 2
+    },
+    {
+      "name": "Sesam",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Dattelsirup",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 2
+    },
+    {
+      "name": "Kokosöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Udon-Nudeln",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Sesamöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Reisessig",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Federkohl",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 2
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Sesam-Tofu",
+      "ingredients": [
+        {
+          "name": "Tofu",
+          "amount": 250,
+          "unit": "g",
+          "perPortions": 2
+        },
+        {
+          "name": "Sojasauce",
+          "amount": 3,
+          "unit": "EL",
+          "perPortions": 2
+        },
+        {
+          "name": "Knoblauchpulver",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 2
+        },
+        {
+          "name": "Sesam",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 2
+        },
+        {
+          "name": "Dattelsirup",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 2
+        },
+        {
+          "name": "Kokosöl",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 2
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Udon-Nudeln",
+      "ingredients": [
+        {
+          "name": "Udon-Nudeln",
+          "amount": 200,
+          "unit": "g",
+          "perPortions": 2
+        },
+        {
+          "name": "Sesamöl",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 2
+        },
+        {
+          "name": "Reisessig",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 2
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Federkohl",
+      "ingredients": [
+        {
+          "name": "Federkohl",
+          "amount": 100,
+          "unit": "g",
+          "perPortions": 2
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Den Tofu mit Küchenpapier trockentupfen und in mundgerechte Würfel schneiden.",
+    "Sojasauce, Knoblauchpulver, Sesam und Dattelsirup in einer Schüssel verrühren und die Tofuwürfel darin etwa 5 Minuten marinieren lassen.",
+    "Die Udon-Nudeln nach Packungsangabe in kochendem Wasser garen, abgiessen und mit Sesamöl und Reisessig vermengen.",
+    "Das Kokosöl in einer Pfanne erhitzen und den marinierten Tofu darin rundum goldbraun anbraten.",
+    "Den Federkohl in feine Streifen schneiden und für die letzten 2 Minuten zum Tofu in die Pfanne geben, bis er leicht zusammenfällt.",
+    "Die Udon-Nudeln auf zwei Schalen verteilen und mit dem Sesam-Tofu und dem Federkohl schichten.",
+    "Sofort servieren, solange der Tofu noch warm und knusprig ist."
+  ],
+  "tips": "Wer es schärfer mag, gibt einen Spritzer Chiliöl oder etwas frischen Ingwer zur Marinade.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/21090/udon-nudeln-stir-fry",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T11:01:35.757Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "sesam",
+    "soja"
+  ],
+  "nutrition": {
+    "kcal": 492,
+    "protein": 24.3,
+    "fat": 22.6,
+    "carbs": 48.2,
+    "fiber": 4.7
+  }
+}

@@ -110,5 +110,12 @@
   "allergens": [
     "gluten",
     "milch"
-  ]
+  ],
+  "nutrition": {
+    "kcal": 485,
+    "protein": 16.8,
+    "fat": 22.4,
+    "carbs": 54.2,
+    "fiber": 4.2
+  }
 }

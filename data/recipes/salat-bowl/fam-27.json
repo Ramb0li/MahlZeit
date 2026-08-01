@@ -72,11 +72,11 @@
     "senf"
   ],
   "nutrition": {
-    "kcal": 218,
+    "kcal": 189,
     "protein": 3.8,
-    "fat": 14.6,
-    "carbs": 18.2,
-    "fiber": 2.4
+    "fat": 12.4,
+    "carbs": 16.2,
+    "fiber": 2.1
   },
   "dietCategory": "vegetarian",
   "sourceType": "mahlzyt",

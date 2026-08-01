@@ -1,0 +1,248 @@
+{
+  "id": "sup-69",
+  "name": "Rindsgulasch mit Rüebli und Kartoffeln",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 150,
+  "basePortions": 4,
+  "weatherType": "kalt",
+  "dietCategory": "meat",
+  "description": "Ein Sonntagseintopf, wie ihn schon die Grossmutter stundenlang auf dem Herd köcheln liess, während das ganze Haus nach Paprika und Rotwein duftete. Das Fleisch wird butterzart, weil es Zeit bekommt, und am Ende braucht es nur noch ein Stück Brot dazu.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "One-Pot-Gericht",
+    "Winter",
+    "Herbst",
+    "Für Gäste"
+  ],
+  "ingredients": [
+    {
+      "name": "Rindsvoressen",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Weissmehl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebeln",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Paprika edelsüss",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomatenpüree",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Cherry-Tomaten",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Lorbeerblatt",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Fleischbouillon",
+      "amount": 6,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Rotwein",
+      "amount": 1.5,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Bratbutter",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "saurer Halbrahm",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kartoffeln",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Rüebli",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Rindsgulasch",
+      "ingredients": [
+        {
+          "name": "Rindsvoressen",
+          "amount": 500,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Weissmehl",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Zwiebeln",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Knoblauchzehe",
+          "amount": 1,
+          "unit": "Zehe",
+          "perPortions": 4
+        },
+        {
+          "name": "Paprika edelsüss",
+          "amount": 3,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Tomatenpüree",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Cherry-Tomaten",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Lorbeerblatt",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1.5,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Fleischbouillon",
+          "amount": 6,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Rotwein",
+          "amount": 1.5,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Bratbutter",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "saurer Halbrahm",
+          "amount": 4,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Kartoffeln und Rüebli",
+      "ingredients": [
+        {
+          "name": "Kartoffeln",
+          "amount": 300,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Rüebli",
+          "amount": 200,
+          "unit": "g",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Die Zwiebel und den Knoblauch fein hacken, das Rindsvoressen in mundgerechte Würfel schneiden und die Kartoffeln sowie die Rüebli schälen und in Stücke schneiden.",
+    "Das Rindsvoressen im Weissmehl leicht wenden, damit die Sauce später schön bindet.",
+    "In einer grossen Pfanne oder einem Schmortopf reichlich Bratbutter erhitzen und das Fleisch darin portionenweise während etwa 5 Minuten scharf anbraten, bis es rundum braun ist, dann herausnehmen.",
+    "Die gehackte Zwiebel und den Knoblauch im gleichen Topf andämpfen, bis sie glasig sind.",
+    "Das Paprikapulver und das Tomatenpüree beigeben und kurz mitdämpfen, damit sich die Aromen entfalten.",
+    "Das angebratene Fleisch wieder in den Topf geben, mit dem Rotwein ablöschen und kurz einkochen lassen.",
+    "Die Cherry-Tomaten, die Fleischbouillon, das Lorbeerblatt und das Salz beigeben und alles einmal aufkochen lassen.",
+    "Den Topf zudecken und das Gulasch bei kleiner Hitze während etwa 2 Stunden weich schmoren lassen, dabei gelegentlich umrühren.",
+    "Nach etwa 1 Stunde Schmorzeit die Kartoffeln und die Rüebli beigeben und im Gulasch mitgaren lassen, bis sie weich sind.",
+    "Am Ende das Lorbeerblatt entfernen, den sauren Halbrahm unterrühren und das Gulasch nochmals kurz erwärmen, ohne es aufkochen zu lassen.",
+    "Das Rindsgulasch mit Rüebli und Kartoffeln heiss servieren."
+  ],
+  "tips": "Das Gulasch schmeckt am nächsten Tag noch besser, weil sich die Aromen über Nacht setzen können, und lässt sich problemlos einfrieren.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/17009/gulaschsuppe",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T11:06:05.977Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "gluten",
+    "milch",
+    "sulfite"
+  ],
+  "nutrition": {
+    "kcal": 423,
+    "protein": 34.8,
+    "fat": 18.9,
+    "carbs": 29.7,
+    "fiber": 4.2
+  }
+}

@@ -102,5 +102,12 @@
     "sesam"
   ],
   "sourceType": "mahlzyt",
-  "_migrated_v2": true
+  "_migrated_v2": true,
+  "nutrition": {
+    "kcal": 458,
+    "protein": 14.8,
+    "fat": 11.9,
+    "carbs": 72.4,
+    "fiber": 12.6
+  }
 }

@@ -124,14 +124,15 @@
   "imageZutaten": null,
   "imageKochen": null,
   "allergens": [
+    "gluten",
     "sulfite"
   ],
   "nutrition": {
-    "kcal": 145,
-    "protein": 4.2,
-    "fat": 4.1,
-    "carbs": 18.3,
-    "fiber": 5.8
+    "kcal": 482,
+    "protein": 15.8,
+    "fat": 6.4,
+    "carbs": 88.2,
+    "fiber": 9.6
   },
   "dietCategory": "vegan",
   "sourceType": "mahlzyt",

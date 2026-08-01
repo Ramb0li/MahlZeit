@@ -56,5 +56,12 @@
   "imageKochen": null,
   "allergens": [
     "gluten"
-  ]
+  ],
+  "nutrition": {
+    "kcal": 512,
+    "protein": 38.2,
+    "fat": 18.5,
+    "carbs": 44.3,
+    "fiber": 3.8
+  }
 }

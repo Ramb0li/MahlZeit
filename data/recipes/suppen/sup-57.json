@@ -121,5 +121,12 @@
     "sellerie"
   ],
   "sourceType": "mahlzyt",
-  "_migrated_v2": true
+  "_migrated_v2": true,
+  "nutrition": {
+    "kcal": 418,
+    "protein": 20.3,
+    "fat": 21.8,
+    "carbs": 34.2,
+    "fiber": 10.6
+  }
 }

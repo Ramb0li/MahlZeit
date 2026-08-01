@@ -102,14 +102,15 @@
   "allergens": [
     "ei",
     "gluten",
-    "milch"
+    "milch",
+    "schalenfruechte"
   ],
   "nutrition": {
-    "kcal": 342,
-    "protein": 11.2,
-    "fat": 10.8,
-    "carbs": 50.3,
-    "fiber": 1.8
+    "kcal": 515,
+    "protein": 14.8,
+    "fat": 20.6,
+    "carbs": 68.2,
+    "fiber": 4.2
   },
   "dietCategory": "vegetarian",
   "sourceType": "mahlzyt",
