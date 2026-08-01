@@ -9,6 +9,7 @@ export const dynamic = 'force-dynamic';
 import { NextResponse }                      from 'next/server';
 import { getSession, ADMIN_EMAIL }            from '@/lib/auth';
 import { getTemplateRecipes, saveTemplateRecipes } from '@/lib/data';
+import { canApprove }                          from '@/lib/approvalGate';
 import type { Recipe }                        from '@/types';
 
 const USE_REDIS = Boolean(process.env.UPSTASH_REDIS_REST_URL);
@@ -17,6 +18,18 @@ async function requireAdmin() {
   const session = await getSession();
   if (!session || session.email !== ADMIN_EMAIL) return null;
   return session;
+}
+
+/**
+ * Blockt eine Freigabe, die das Gate nicht besteht. Greift nur beim Setzen auf
+ * `approved: true` — die Rücknahme auf false bleibt jederzeit möglich.
+ * Gibt bei Verstoss die fertige Antwort zurück, sonst null.
+ */
+function blockIfNotApprovable(recipe: Recipe): NextResponse | null {
+  if (recipe.approved !== true) return null;
+  const check = canApprove(recipe);
+  if (check.ok) return null;
+  return NextResponse.json({ error: check.reason }, { status: 422 });
 }
 
 // ─── Lokale Helfer (nur dev) ──────────────────────────────────────────────────
@@ -69,6 +82,9 @@ export async function PUT(request: Request) {
 
   const updated: Recipe = await request.json();
 
+  const blocked = blockIfNotApprovable(updated);
+  if (blocked) return blocked;
+
   if (USE_REDIS) {
     const all    = await getTemplateRecipes();
     const newAll = all.map(r => r.id === updated.id ? updated : r);
@@ -94,6 +110,9 @@ export async function POST(request: Request) {
 
   const recipe: Recipe = await request.json();
   const withDefault: Recipe = { ...recipe, approved: recipe.approved ?? false };
+
+  const blocked = blockIfNotApprovable(withDefault);
+  if (blocked) return blocked;
 
   if (USE_REDIS) {
     const all = await getTemplateRecipes();

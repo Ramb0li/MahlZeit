@@ -4,6 +4,9 @@ import { Check, Download, RefreshCw, Plus, Trash2, RotateCcw, X, ChevronDown, Pa
 import { getWeekIdForWindow, getWeekDays, nextWeek, formatAmount } from '@/lib/utils';
 import { format, getISOWeek } from 'date-fns';
 import { de } from 'date-fns/locale';
+import {
+  diffShoppingListState, mergeDeltas, isEmptyDelta, type ShoppingListDelta,
+} from '@/lib/shoppingListState';
 import type { ShoppingList, ShoppingGroups, ShoppingListState, CustomShoppingItem, Recipe, Promotion } from '@/types';
 
 // 0=So, 1=Mo, ..., 6=Sa (entspricht JS getDay())
@@ -120,27 +123,51 @@ export function ShoppingListView({ weekStartDay = 1 }: { weekStartDay?: 0|1|2|3|
   const stateRef       = useRef<ShoppingListState>(EMPTY_STATE);
   const persistTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // ─── Debounced PATCH an Server ───────────────────────────────────────────
-  const persistState = useCallback((newState: ShoppingListState) => {
-    if (persistTimerRef.current) clearTimeout(persistTimerRef.current);
-    persistTimerRef.current = setTimeout(() => {
-      fetch(`/api/shopping-list/state?weekId=${weekId}`, {
-        method: 'PATCH',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(newState),
-      }).catch(() => {});
-    }, 300);
+  // ─── Debounced PATCH an Server (nur Änderungen, kein Vollersatz) ─────────
+  // Wir senden ein Delta statt des kompletten States: haken zwei Personen
+  // gleichzeitig verschiedene Positionen ab, überschrieb der letzte Request
+  // sonst die Änderung des anderen.
+  const pendingDeltaRef = useRef<ShoppingListDelta | null>(null);
+
+  const flushDelta = useCallback(() => {
+    const delta = pendingDeltaRef.current;
+    pendingDeltaRef.current = null;
+    if (!delta || isEmptyDelta(delta)) return;
+
+    fetch(`/api/shopping-list/state?weekId=${weekId}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(delta),
+    })
+      .then(async (res) => {
+        if (!res.ok) return;
+        // Antwort ist der zusammengeführte Serverstand — inklusive der
+        // Änderungen anderer Mitglieder, die zwischenzeitlich eingegangen sind.
+        const merged = await res.json() as ShoppingListState;
+        if (pendingDeltaRef.current) return; // noch Ungesendetes offen: nicht überschreiben
+        setState(merged);
+        stateRef.current = merged;
+      })
+      .catch(() => {});
   }, [weekId]);
+
+  const queueDelta = useCallback((delta: ShoppingListDelta) => {
+    pendingDeltaRef.current = pendingDeltaRef.current
+      ? mergeDeltas(pendingDeltaRef.current, delta)
+      : delta;
+    if (persistTimerRef.current) clearTimeout(persistTimerRef.current);
+    persistTimerRef.current = setTimeout(flushDelta, 300);
+  }, [flushDelta]);
 
   /** Optimistisches Update + debounced Persist */
   const updateState = useCallback((updater: (s: ShoppingListState) => ShoppingListState) => {
     setState(prev => {
       const next = updater(prev);
       stateRef.current = next;
-      persistState(next);
+      queueDelta(diffShoppingListState(prev, next));
       return next;
     });
-  }, [persistState]);
+  }, [queueDelta]);
 
   // ─── State vom Server laden ───────────────────────────────────────────────
   const loadState = useCallback(async () => {
@@ -161,6 +188,9 @@ export function ShoppingListView({ weekStartDay = 1 }: { weekStartDay?: 0|1|2|3|
     loadState();
 
     const interval = setInterval(async () => {
+      // Noch nicht gesendete lokale Änderungen: Poll überspringen, sonst würde
+      // der Serverstand die optimistische Anzeige kurzzeitig zurückdrehen.
+      if (pendingDeltaRef.current) return;
       try {
         const res = await fetch(`/api/shopping-list/state?weekId=${weekId}`);
         if (res.ok) {

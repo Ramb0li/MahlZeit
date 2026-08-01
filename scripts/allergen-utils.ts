@@ -3,7 +3,9 @@ import type { EuAllergen } from '../src/types/index';
 
 export const EU_ALLERGEN_MAP: Record<EuAllergen, string[]> = {
   gluten:          [...(ALLERGEN_KEYWORDS['gluten'] ?? []), ...(ALLERGEN_KEYWORDS['weizen'] ?? [])],
-  krebstiere:      ['garnele', 'garnelen', 'shrimp', 'krabbe', 'krabben', 'krebs', 'hummer', 'languste', 'meeresfrüchte'],
+  // "Crevetten" (CH-Standardbegriff), gambas und scampi fehlten hier — Rezepte damit
+  // trugen kein krebstiere-Allergen, obwohl Krebstiere zu den 14 EU-Pflichtallergenen zählen.
+  krebstiere:      ['garnele', 'garnelen', 'shrimp', 'krabbe', 'krabben', 'krebs', 'hummer', 'languste', 'meeresfrüchte', 'crevette', 'crevetten', 'gambas', 'scampi', 'langustine', 'flusskrebs'],
   ei:              ALLERGEN_KEYWORDS['ei'] ?? [],
   fisch:           ALLERGEN_KEYWORDS['fisch'] ?? [],
   erdnuesse:       ALLERGEN_KEYWORDS['erdnüsse'] ?? [],

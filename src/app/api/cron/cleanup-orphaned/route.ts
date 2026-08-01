@@ -11,12 +11,16 @@ import { purgeGroupData }            from '@/lib/data';
 const ORPHAN_TTL_MS = 30 * 24 * 60 * 60 * 1000; // 30 Tage
 
 export async function GET(request: Request) {
+  // Fail-closed: diese Route löscht Konten und Gruppendaten unwiderruflich.
+  // Ohne konfiguriertes Secret wird gar nichts ausgeführt — vorher war der
+  // Endpoint offen, sobald CRON_SECRET fehlte.
   const secret = process.env.CRON_SECRET;
-  if (secret) {
-    const auth = request.headers.get('authorization');
-    if (auth !== `Bearer ${secret}`) {
-      return NextResponse.json({ error: 'Nicht autorisiert' }, { status: 401 });
-    }
+  if (!secret) {
+    console.error('[cron/cleanup-orphaned] CRON_SECRET nicht gesetzt — Aufruf abgelehnt.');
+    return NextResponse.json({ error: 'Cron nicht konfiguriert' }, { status: 503 });
+  }
+  if (request.headers.get('authorization') !== `Bearer ${secret}`) {
+    return NextResponse.json({ error: 'Nicht autorisiert' }, { status: 401 });
   }
 
   const now    = Date.now();

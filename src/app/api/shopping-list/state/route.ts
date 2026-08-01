@@ -3,6 +3,7 @@ export const dynamic = 'force-dynamic';
 import { NextResponse } from 'next/server';
 import { getSessionWithGroup as getSession } from '@/lib/session';
 import { getShoppingListState, saveShoppingListState } from '@/lib/data';
+import { applyShoppingListDelta, type ShoppingListDelta } from '@/lib/shoppingListState';
 import type { ShoppingListState } from '@/types';
 
 // GET /api/shopping-list/state?weekId=<weekId>
@@ -24,9 +25,20 @@ export async function GET(request: Request) {
   }
 }
 
-// PATCH /api/shopping-list/state?weekId=<weekId>
-// Body: Partial<ShoppingListState>
-// Merge-Strategie: alle übergebenen Felder ersetzen, Rest bleibt erhalten.
+/**
+ * PATCH /api/shopping-list/state?weekId=<weekId>
+ *
+ * Body: ShoppingListDelta — nur die tatsächlichen Änderungen.
+ *
+ * Früher schickte der Client den kompletten State und jedes gelieferte Feld
+ * wurde ersetzt. Haken zwei Haushaltsmitglieder gleichzeitig verschiedene
+ * Positionen ab, überschrieb der letzte Schreibvorgang den anderen — genau der
+ * Alltagsfall, für den die geteilte Liste gedacht ist.
+ *
+ * Legacy-Fallback: schickt ein älterer Client noch den vollen State (Feld
+ * `checked` als Array), wird weiterhin ersetzt. Das hält einen laufenden
+ * Rolling-Deploy funktionsfähig.
+ */
 export async function PATCH(request: Request) {
   try {
     const session = await getSession();
@@ -37,16 +49,22 @@ export async function PATCH(request: Request) {
     const weekId = searchParams.get('weekId');
     if (!weekId) return NextResponse.json({ error: 'weekId fehlt' }, { status: 400 });
 
-    const partial = (await request.json()) as Partial<ShoppingListState>;
-
+    const body = (await request.json()) as ShoppingListDelta & Partial<ShoppingListState>;
     const existing = await getShoppingListState(session.groupId, weekId);
-    const updated: ShoppingListState = {
-      checked:     partial.checked     ?? existing.checked,
-      userPantry:  partial.userPantry  ?? existing.userPantry,
-      overrides:   partial.overrides   ?? existing.overrides,
-      customItems: partial.customItems ?? existing.customItems,
-      updatedAt:   new Date().toISOString(),
-    };
+
+    const isLegacyFullState =
+      Array.isArray(body.checked) || Array.isArray(body.userPantry) ||
+      Array.isArray(body.customItems) || (body.overrides !== undefined);
+
+    const updated: ShoppingListState = isLegacyFullState
+      ? {
+          checked:     body.checked     ?? existing.checked,
+          userPantry:  body.userPantry  ?? existing.userPantry,
+          overrides:   body.overrides   ?? existing.overrides,
+          customItems: body.customItems ?? existing.customItems,
+          updatedAt:   new Date().toISOString(),
+        }
+      : applyShoppingListDelta(existing, body);
 
     await saveShoppingListState(session.groupId, weekId, updated);
     return NextResponse.json(updated);

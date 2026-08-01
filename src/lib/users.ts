@@ -21,6 +21,13 @@ export interface AppUser {
   accessUntil?:         string;          // ISO date – for trial / abo
   confirmationToken?:           string;  // Doppelt-Opt-In: Token aus crypto.randomBytes(32)
   confirmationTokenExpiresAt?:  string;  // ISO date – Token ist 24h gültig
+  /**
+   * True, sobald der User sein Passwort selbst gesetzt hat.
+   * Im Stripe-first-Flow wird der User zunächst mit einem Zufalls-Hash angelegt,
+   * den niemand kennt — dieses Flag unterscheidet das zuverlässig von einem
+   * echten Passwort. (Vorher wurde am Hash-Präfix geraten, was nie zutraf.)
+   */
+  passwordSet?:                 boolean;
   groupId?:                     string;  // Familie/Haushalt (siehe groups.ts)
   groupRole?:                   'owner' | 'member';  // Rolle innerhalb der Gruppe
 }
@@ -155,6 +162,21 @@ export async function getUsersByGroup(groupId: string): Promise<AppUser[]> {
 export interface AccessState {
   locked: boolean;
   reason: 'trial-expired' | 'group-orphaned' | null;
+}
+
+/**
+ * True, wenn der User noch ein Passwort setzen muss — Stripe-first-Flow:
+ * das Konto wurde bei der Bezahlung mit einem Zufalls-Hash angelegt, den
+ * niemand kennt, und wartet auf die Setup-Mail.
+ *
+ * Wichtig: NICHT am Hash-Präfix erkennbar. Der Platzhalter aus
+ * /api/auth/register ist ein echter bcrypt-Hash und beginnt damit ebenfalls
+ * mit '$2' — die frühere Prüfung `!passwordHash.startsWith('$2')` war deshalb
+ * immer false, die Setup-Mail wurde nie verschickt und zahlende Kunden waren
+ * nach Ablauf des Session-Cookies ausgesperrt.
+ */
+export function needsPasswordSetup(u: Pick<AppUser, 'status' | 'passwordSet'>): boolean {
+  return u.status === 'pending' && u.passwordSet !== true;
 }
 
 export function isPremiumActive(u: AppUser): boolean {

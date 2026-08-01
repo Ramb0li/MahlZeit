@@ -285,7 +285,11 @@ export function SettingsView({
   };
 
   const handleRemoveMember = async (email: string) => {
-    if (!confirm(`${email} wirklich aus der Gruppe entfernen?`)) return;
+    if (!confirm(
+      `${email} aus der Gruppe entfernen?\n\n` +
+      'Das Konto bleibt bestehen und erhält einen eigenen Haushalt. ' +
+      'Der Zugriff auf eure gemeinsamen Rezepte und Pläne endet damit.'
+    )) return;
     setFamilyNotice(null);
     try {
       const res  = await fetch('/api/groups/members', {
@@ -296,7 +300,7 @@ export function SettingsView({
       const data = await res.json();
       if (!res.ok) { setFamilyNotice({ type: 'err', text: data.error ?? 'Fehler' }); return; }
       await reloadMembers();
-      setFamilyNotice({ type: 'ok', text: `${email} entfernt.` });
+      setFamilyNotice({ type: 'ok', text: `${email} wurde aus der Gruppe entfernt.` });
     } catch {}
   };
 

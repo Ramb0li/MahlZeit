@@ -34,6 +34,13 @@ export type Tag = typeof TAG_GROUPS[keyof typeof TAG_GROUPS][number];
 
 export type SourceType = 'mahlzyt' | 'user_created' | 'imported' | 'ai_generated';
 
+/**
+ * Rechtlicher Status des Rezepttexts.
+ * 'adapted' = sinngemäss neu verfasst auf Basis einer fremden Quelle.
+ * 'unclear' blockiert die Freigabe (siehe src/lib/approvalGate.ts).
+ */
+export type LicenseStatus = 'own' | 'licensed' | 'public-domain' | 'adapted' | 'unclear';
+
 /** Schnell-Schwelle in Minuten — zentral konfigurierbar */
 export const QUICK_THRESHOLD_MINUTES = 30;
 
@@ -117,6 +124,9 @@ export interface Recipe {
   allergens?: EuAllergen[];   // Vorberechnete EU-Pflichtallergene aus Zutaten
   nutrition?: Nutrition;      // KI-geschätzte Nährwerte pro Portion
   sourceType?: SourceType;    // Herkunft des Rezepts
+  sourceUrl?: string;         // Original-URL bei importierten Rezepten
+  licenseStatus?: LicenseStatus;  // Rechtlicher Status — Voraussetzung für die Freigabe
+  rewrittenAt?: string;       // ISO — wann der Text sinngemäss neu verfasst wurde
 }
 
 /** Einfache Beilage-Zutat (ohne Rezept), direkt im Tagesplan gespeichert. */

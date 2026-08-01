@@ -35,3 +35,15 @@ next-env.d.ts
 
 # local backup files
 data/*.bak
+
+# lokale Auth-Daten — enthalten Passwort-Hashes bzw. gültige Reset-Tokens
+# und gehören nie ins Repository (Produktion nutzt ohnehin Upstash Redis).
+data/users.json
+data/pwd-reset-tokens.json
+
+# Fremde Referenzbilder aus dem Rezept-Import.
+# Der reguläre Ablageort ist ../Menüs/Referenz/ und liegt ausserhalb des Repos,
+# lässt sich also gar nicht committen. Diese Regeln fangen den Fall ab, dass
+# versehentlich doch innerhalb des Projekts abgelegt wird.
+data/referenz/
+public/images/referenz/

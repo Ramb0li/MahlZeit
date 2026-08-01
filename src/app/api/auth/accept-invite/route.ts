@@ -82,6 +82,7 @@ export async function POST(request: Request) {
       passwordHash,
       plan:         memberPlan,
       status:       'active' as const,
+      passwordSet:  true,   // Passwort stammt aus dem Einladungs-Formular
       registeredAt: new Date().toISOString(),
       groupId:      invite.groupId,
       groupRole:    'member' as const,

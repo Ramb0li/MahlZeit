@@ -38,9 +38,15 @@ export const ALLERGEN_KEYWORDS: Record<string, string[]> = {
     'fisch', 'lachs', 'thunfisch', 'kabeljau', 'forelle', 'hering', 'makrele',
     'sardine', 'anchovis', 'sardelle', 'dorsch', 'zander', 'barsch',
     'wolfsbarsch', 'seelachs', 'seehecht', 'pangasius',
+    // In der Schweiz gebräuchliche Bezeichnungen
+    'egli', 'felchen', 'saibling', 'dorade', 'branzino', 'seezunge', 'scholle',
+    'heilbutt', 'rotbarsch', 'karpfen', 'wels', 'aal',
   ],
   schalentiere: [
     'garnele', 'shrimp', 'krabbe', 'krebs', 'hummer', 'languste',
+    // "Crevetten" ist der Schweizer Standardbegriff und fehlte — dadurch trugen
+    // vier Bestandsrezepte kein krebstiere-Allergen (siehe fis-21, fam-11, fam-12, asi-01).
+    'crevette', 'gambas', 'scampi', 'langustine', 'flusskrebs',
     'meeresfrüchte', 'tintenfisch', 'calamari', 'muschel', 'venusmuschel',
   ],
   erdnüsse: ['erdnuss', 'erdnüsse', 'erdnussbutter', 'erdnussöl', 'peanut'],

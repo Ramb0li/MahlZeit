@@ -16,15 +16,12 @@ import { NextResponse }          from 'next/server';
 import { randomBytes }           from 'crypto';
 import { getUserByEmail }        from '@/lib/users';
 import { sendPasswordResetEmail } from '@/lib/email';
+import { allowN, allowOnce, clientIp } from '@/lib/rateLimit';
 
 const TOKEN_TTL_SECS  = 60 * 60;       // 1 Stunde
 const EMAIL_RL_SECS   = 15 * 60;       // 15 Minuten pro E-Mail
 const IP_RL_MAX       = 5;             // max. 5 Requests pro IP und Stunde
 const IP_RL_SECS      = 60 * 60;       // 1 Stunde
-
-// ─── Local-dev In-Memory-Fallback (keine Redis-Instanz nötig) ───────────────
-const localEmailRL = new Map<string, number>();
-const localIpCounts = new Map<string, { count: number; resetAt: number }>();
 
 // ─── Token-Storage (lokal: JSON-Datei; Prod: Redis) ─────────────────────────
 
@@ -68,42 +65,6 @@ async function saveToken(token: string, email: string): Promise<void> {
   );
 }
 
-// ─── Rate-Limit helpers ──────────────────────────────────────────────────────
-
-/** Gibt true zurück wenn die Anfrage erlaubt ist (nicht limitiert). */
-async function allowEmail(email: string): Promise<boolean> {
-  if (!process.env.UPSTASH_REDIS_REST_URL) {
-    const last = localEmailRL.get(email) ?? 0;
-    if (Date.now() - last < EMAIL_RL_SECS * 1000) return false;
-    localEmailRL.set(email, Date.now());
-    return true;
-  }
-  const { Redis } = require('@upstash/redis') as typeof import('@upstash/redis');
-  const key    = `mz:ratelimit:pwdreset:email:${email}`;
-  const result = await Redis.fromEnv().set(key, '1', { ex: EMAIL_RL_SECS, nx: true });
-  return result !== null; // null = Key existierte bereits = rate-limited
-}
-
-async function allowIp(ip: string): Promise<boolean> {
-  if (!process.env.UPSTASH_REDIS_REST_URL) {
-    const now  = Date.now();
-    const entry = localIpCounts.get(ip);
-    if (!entry || entry.resetAt <= now) {
-      localIpCounts.set(ip, { count: 1, resetAt: now + IP_RL_SECS * 1000 });
-      return true;
-    }
-    if (entry.count >= IP_RL_MAX) return false;
-    entry.count++;
-    return true;
-  }
-  const { Redis } = require('@upstash/redis') as typeof import('@upstash/redis');
-  const redis = Redis.fromEnv();
-  const key   = `mz:ratelimit:pwdreset:ip:${ip}`;
-  const count = await redis.incr(key);
-  if (count === 1) await redis.expire(key, IP_RL_SECS);
-  return count <= IP_RL_MAX;
-}
-
 // ─── Handler ─────────────────────────────────────────────────────────────────
 
 export async function POST(request: Request) {
@@ -115,14 +76,12 @@ export async function POST(request: Request) {
     }
 
     // IP-Rate-Limit
-    const forwarded = request.headers.get('x-forwarded-for');
-    const ip = forwarded ? forwarded.split(',')[0].trim() : 'unknown';
-    if (!(await allowIp(ip))) {
+    if (!(await allowN('pwdreset:ip', clientIp(request), IP_RL_MAX, IP_RL_SECS))) {
       return NextResponse.json({ ok: true }); // neutral — kein Info-Leak
     }
 
     // E-Mail-Rate-Limit
-    if (!(await allowEmail(email))) {
+    if (!(await allowOnce('pwdreset:email', email, EMAIL_RL_SECS))) {
       return NextResponse.json({ ok: true }); // neutral
     }
 

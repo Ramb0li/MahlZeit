@@ -34,17 +34,18 @@ const CATEGORY_ORDER = [
 ];
 
 function buildRecipes() {
-  // Bestehende Anreicherungs-Felder (allergens, nutrition) aus recipes.json laden —
-  // so dass `npm run recipes:enrich` nicht bei jedem Build verloren geht.
+  // Bestehende Anreicherungs-Felder (allergens, nutrition, approved) aus recipes.json
+  // laden — so dass `npm run recipes:enrich` nicht bei jedem Build verloren geht.
   const enrichmentMap = new Map();
   if (fs.existsSync(OUTPUT_FILE)) {
     try {
       const existing = JSON.parse(fs.readFileSync(OUTPUT_FILE, 'utf-8'));
       for (const r of existing) {
-        if (r.allergens !== undefined || r.nutrition !== undefined) {
+        if (r.allergens !== undefined || r.nutrition !== undefined || r.approved !== undefined) {
           enrichmentMap.set(r.id, {
             ...(r.allergens !== undefined ? { allergens: r.allergens } : {}),
             ...(r.nutrition  !== undefined ? { nutrition:  r.nutrition  } : {}),
+            ...(r.approved   !== undefined ? { approved:   r.approved   } : {}),
           });
         }
       }
@@ -98,8 +99,19 @@ function buildRecipes() {
     }
   }
 
+  // In Produktion filtert getVisibleRecipes auf `approved === true`. Der Seed ist
+  // der Fallback, wenn der Redis-Key `mz:recipes` leer ist — ohne gesetztes Flag
+  // würde die App dann kein einziges Rezept anzeigen. Bereits gepflegte Werte
+  // (aus dem vorherigen Build oder der Einzeldatei) bleiben unangetastet.
+  let defaulted = 0;
+  for (const r of recipes) {
+    if (r.approved === undefined) { r.approved = true; defaulted++; }
+  }
+
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify(recipes, null, 2), 'utf-8');
+  const approvedCount = recipes.filter(r => r.approved === true).length;
   console.log(`✅ ${recipes.length} Rezepte → data/recipes.json`);
+  console.log(`   freigegeben: ${approvedCount}/${recipes.length}${defaulted ? ` (${defaulted}× Default gesetzt)` : ''}`);
 }
 
 buildRecipes();

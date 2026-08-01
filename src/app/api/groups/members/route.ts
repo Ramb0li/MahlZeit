@@ -3,7 +3,8 @@ export const dynamic = 'force-dynamic';
 import { NextResponse }                  from 'next/server';
 import { ADMIN_EMAIL }                       from '@/lib/auth';
 import { getSessionWithGroup as getSession } from '@/lib/session';
-import { getUserByEmail, deleteUser, getUsersByGroup } from '@/lib/users';
+import { getUserByEmail, updateUser, getUsersByGroup } from '@/lib/users';
+import { createGroup, newGroupId }                     from '@/lib/groups';
 
 /**
  * GET → Liste aller Members einer Gruppe (für Settings UI).
@@ -28,7 +29,11 @@ export async function GET() {
 
 /**
  * DELETE → Owner entfernt ein Mitglied aus der Gruppe.
- * Member wird endgültig gelöscht.
+ *
+ * Das Konto bleibt bestehen und bekommt eine eigene Solo-Gruppe (gleiches Muster
+ * wie die Auto-Migration beim Login). Früher rief diese Route deleteUser() auf und
+ * löschte damit das komplette Konto — obwohl der Bestätigungsdialog nur von
+ * "aus der Gruppe entfernen" sprach.
  */
 export async function DELETE(request: Request) {
   try {
@@ -44,9 +49,9 @@ export async function DELETE(request: Request) {
     if (email.toLowerCase() === session.email.toLowerCase()) {
       return NextResponse.json({ error: 'Hauptuser kann sich nicht selbst entfernen.' }, { status: 400 });
     }
-    // Admin nicht löschbar (Schutz)
+    // Admin nicht entfernbar (Schutz)
     if (email.toLowerCase() === ADMIN_EMAIL.toLowerCase()) {
-      return NextResponse.json({ error: 'Admin-Account kann nicht gelöscht werden.' }, { status: 403 });
+      return NextResponse.json({ error: 'Admin-Account kann nicht entfernt werden.' }, { status: 403 });
     }
 
     const target = await getUserByEmail(email);
@@ -54,7 +59,17 @@ export async function DELETE(request: Request) {
       return NextResponse.json({ error: 'Mitglied nicht in dieser Gruppe.' }, { status: 404 });
     }
 
-    await deleteUser(email);
+    // Eigene Solo-Gruppe anlegen, damit das Konto weiter nutzbar bleibt.
+    const soloGroupId = newGroupId();
+    await createGroup({
+      id:         soloGroupId,
+      name:       `${target.firstName}s Haushalt`,
+      nameSet:    false,
+      ownerEmail: target.email,
+      createdAt:  new Date().toISOString(),
+    });
+    await updateUser({ ...target, groupId: soloGroupId, groupRole: 'owner' });
+
     return NextResponse.json({ ok: true });
   } catch (err) {
     console.error('[members delete]', err);

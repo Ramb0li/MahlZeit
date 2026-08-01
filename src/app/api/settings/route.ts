@@ -20,13 +20,31 @@ export async function GET() {
   }
 }
 
+/** Obergrenze für den kombinierten Settings-Payload. */
+const MAX_PAYLOAD_BYTES = 256 * 1024;
+
 export async function POST(request: Request) {
   try {
     const session = await getSession();
     if (!session)         return NextResponse.json({ error: 'Nicht angemeldet' }, { status: 401 });
     if (!session.groupId) return NextResponse.json({ error: 'Keine Gruppe zugeordnet' }, { status: 403 });
 
-    const { settings, constraints } = await request.json();
+    const body = await request.json();
+    const { settings, constraints } = body ?? {};
+
+    // Vorher wurde der Body ungeprüft nach Redis geschrieben.
+    if (settings !== undefined && (typeof settings !== 'object' || settings === null || Array.isArray(settings))) {
+      return NextResponse.json({ error: 'Ungültige Einstellungen.' }, { status: 400 });
+    }
+    if (constraints !== undefined && !Array.isArray(constraints)) {
+      return NextResponse.json({ error: 'Ungültige Vorgaben.' }, { status: 400 });
+    }
+    if (Array.isArray(constraints) && constraints.length > 200) {
+      return NextResponse.json({ error: 'Zu viele Vorgaben.' }, { status: 400 });
+    }
+    if (JSON.stringify(body ?? {}).length > MAX_PAYLOAD_BYTES) {
+      return NextResponse.json({ error: 'Datenmenge zu gross.' }, { status: 413 });
+    }
     await Promise.all([
       settings    ? saveSettings(settings, session.groupId)       : Promise.resolve(),
       constraints ? saveConstraints(constraints, session.groupId) : Promise.resolve(),

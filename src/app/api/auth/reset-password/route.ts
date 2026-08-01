@@ -88,6 +88,7 @@ export async function POST(request: Request) {
     const updatedUser = {
       ...user,
       passwordHash,
+      passwordSet: true,   // ab jetzt kennt der User sein Passwort selbst
       // Neues Konto nach Stripe-Zahlung: jetzt aktivieren
       status: wasNewAccount ? ('active' as const) : user.status,
     };

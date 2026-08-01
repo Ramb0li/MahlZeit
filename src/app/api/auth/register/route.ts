@@ -7,9 +7,15 @@ import Stripe                            from 'stripe';
 import { createUser, getUserByEmail, setConfirmationTokenIndex } from '@/lib/users';
 import { sendConfirmationEmail }         from '@/lib/email';
 import { createGroup, newGroupId }       from '@/lib/groups';
+import { allowN, clientIp }              from '@/lib/rateLimit';
 import type { PlanType, AppUser }        from '@/lib/users';
 
 const TOKEN_TTL_MS = 24 * 60 * 60 * 1000; // 24h
+
+// Jede Trial-Registrierung verschickt eine Bestätigungsmail. Ohne Bremse liesse
+// sich das Resend-Kontingent (Free-Tier: 100 Mails/Tag) leerlaufen — echte
+// Registrierungen bekämen dann stillschweigend keine Mail mehr.
+const REGISTER_MAX = 5, REGISTER_WINDOW = 60 * 60; // 5 Registrierungen / Stunde je IP
 
 function stripeClient() {
   return new Stripe(process.env.STRIPE_SECRET_KEY!);
@@ -36,6 +42,13 @@ export async function POST(request: Request) {
 
     if (!firstName || !lastName || !email || !plan) {
       return NextResponse.json({ error: 'Alle Felder sind erforderlich.' }, { status: 400 });
+    }
+
+    if (!(await allowN('register:ip', clientIp(request), REGISTER_MAX, REGISTER_WINDOW))) {
+      return NextResponse.json(
+        { error: 'Zu viele Registrierungen. Bitte versuche es später erneut.' },
+        { status: 429 },
+      );
     }
 
     const normalEmail = email.toLowerCase().trim();
@@ -83,6 +96,10 @@ export async function POST(request: Request) {
           lastName,
           plan,
           passwordHash: user.passwordHash,
+          // Der bisherige Hash wurde gerade durch einen Zufallswert ersetzt — ein
+          // evtl. gesetztes Flag aus einer früheren Trial-Registrierung gilt nicht
+          // mehr, sonst bliebe die Setup-Mail aus und der Kunde wäre ausgesperrt.
+          passwordSet: false,
         });
       } else {
         await createUser(user);
@@ -130,6 +147,7 @@ export async function POST(request: Request) {
       passwordHash,
       plan:                       'trial',
       status:                     'pending',
+      passwordSet:                true,   // Passwort stammt aus dem Formular
       registeredAt:               new Date().toISOString(),
       confirmationToken:          token,
       confirmationTokenExpiresAt: expiresAt,

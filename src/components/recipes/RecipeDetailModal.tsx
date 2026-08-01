@@ -39,15 +39,16 @@ function formatAmount(amount: number): string {
   return amount % 1 === 0 ? String(amount) : String(amount).replace('.', ',');
 }
 
-function avgRating(ratings: RecipeRating[]): number {
+function avgRating(ratings: { rating: number }[]): number {
   if (!ratings.length) return 0;
   return ratings.reduce((s, r) => s + r.rating, 0) / ratings.length;
 }
 
-function emailShort(email: string): string {
-  const [local] = email.split('@');
-  return local.length > 8 ? local.slice(0, 6) + '...' : local;
-}
+/**
+ * Bewertung, wie sie die API ausliefert — ohne userId/userEmail.
+ * Der Anzeigename wird serverseitig gebildet (siehe api/recipes/ratings).
+ */
+type PublicRating = Pick<RecipeRating, 'rating' | 'comment' | 'createdAt'> & { displayName: string };
 
 function dateShort(iso: string): string {
   return new Date(iso).toLocaleDateString('de-CH', { day: '2-digit', month: '2-digit', year: '2-digit' });
@@ -141,7 +142,7 @@ function IngredientSection({ recipe, portions }: { recipe: Recipe; portions: num
 // ─── RatingsSection ───────────────────────────────────────────────────────────
 
 function RatingsSection({ recipeId, isPremium }: { recipeId: string; isPremium: boolean }) {
-  const [ratings, setRatings]     = useState<RecipeRating[]>([]);
+  const [ratings, setRatings]     = useState<PublicRating[]>([]);
   const [loading, setLoading]     = useState(true);
   const [myRating, setMyRating]   = useState(0);
   const [myComment, setMyComment] = useState('');
@@ -196,7 +197,7 @@ function RatingsSection({ recipeId, isPremium }: { recipeId: string; isPremium: 
           {[...ratings].reverse().map((r, i) => (
             <div key={i} className="rounded-xl p-3 text-sm" style={{ backgroundColor: '#f7f4ee', border: '1px solid #e0d8ce' }}>
               <div className="flex items-center justify-between mb-1">
-                <span className="font-semibold" style={{ color: '#5a4e48' }}>{r.userName ?? emailShort(r.userEmail)}</span>
+                <span className="font-semibold" style={{ color: '#5a4e48' }}>{r.displayName}</span>
                 <div className="flex items-center gap-2">
                   <SpoonRating value={r.rating} />
                   <span className="text-xs" style={{ color: '#9a8c80' }}>{dateShort(r.createdAt)}</span>

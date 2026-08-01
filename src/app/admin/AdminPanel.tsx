@@ -8,6 +8,7 @@ import { ImportRecipeModal } from '@/components/recipes/ImportRecipeModal';
 import type { AppUser }      from '@/lib/users';
 import type { Group }        from '@/lib/groups';
 import type { Recipe, Category } from '@/types';
+import { canApprove }          from '@/lib/approvalGate';
 import type { LandingContent, LandingFeature } from '@/lib/content';
 import { Users, BookOpen, Bookmark, Globe, HelpCircle } from 'lucide-react';
 
@@ -165,7 +166,6 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
   const [showImportModal, setShowImportModal] = useState(false);
   const [seeding,         setSeeding]         = useState(false);
   const [showSeedModal,   setShowSeedModal]   = useState(false);
-  const [approvingAll,    setApprovingAll]    = useState(false);
   const [togglingId,          setTogglingId]          = useState<string | null>(null);
   const [recipeStatusFilter,  setRecipeStatusFilter]  = useState<'Alle' | 'approved' | 'draft'>('Alle');
 
@@ -302,24 +302,10 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
     }
   };
 
-  const approveAll = async () => {
-    if (!window.confirm('Alle Template-Rezepte freigeben? Sie werden danach in der App angezeigt und vorgeschlagen.')) return;
-    setApprovingAll(true);
-    try {
-      const res  = await fetch('/api/admin/recipes/approve-all', { method: 'POST' });
-      const data = await res.json() as { ok?: boolean; total?: number; newlyApproved?: number; error?: string };
-      if (!res.ok) {
-        setRecipeNotice({ type: 'err', text: data.error ?? 'Freigabe fehlgeschlagen.' });
-      } else {
-        setRecipes(prev => prev.map(r => r.approved === true ? r : { ...r, approved: true }));
-        setRecipeNotice({ type: 'ok', text: `${data.newlyApproved} Rezepte neu freigegeben (${data.total} total).` });
-      }
-    } catch {
-      setRecipeNotice({ type: 'err', text: 'Netzwerkfehler.' });
-    } finally {
-      setApprovingAll(false);
-    }
-  };
+  // Die Massen-Freigabe ("Alle freigeben") wurde entfernt. Ihr Zweck — die einmalige
+  // Freigabe des Altbestands — ist erfüllt, und sie war der Mechanismus, über den
+  // importierte Entwürfe versehentlich sichtbar wurden. Freigabe erfolgt jetzt
+  // ausschliesslich einzeln und nur, wenn canApprove() zustimmt.
 
   const openEditUser = (u: SafeUser) => {
     setEditingUser(u);
@@ -688,9 +674,6 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
               <button onClick={() => setShowSeedModal(true)} disabled={seeding} className="mz-btn-soft" title="Bundle-Rezepte nach Redis schreiben (überschreibt Prod-Daten)">
                 {seeding ? 'Laden…' : 'Seed Redis'}
               </button>
-              <button onClick={approveAll} disabled={approvingAll} className="mz-btn-soft" title="Setzt approved=true auf allen Template-Rezepten (einmalige Massen-Freigabe)">
-                {approvingAll ? 'Laden…' : 'Alle freigeben'}
-              </button>
               <button onClick={() => setEditingRecipe('new')} className="mz-btn-primary">
                 + Neues Rezept
               </button>
@@ -748,10 +731,18 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                         </td>
                         <td style={{ padding: '10px 16px 10px 4px' }}>
                           <div style={{ display: 'flex', gap: 4, flexWrap: 'wrap' }}>
+                          {(() => {
+                            // Gate-Vorschau: dieselbe Prüfung, die der Server erzwingt.
+                            // Blockierte Entwürfe zeigen den Grund als Tooltip, damit
+                            // niemand erst durch eine 422-Antwort davon erfährt.
+                            const gate    = canApprove(r);
+                            const blocked = r.approved !== true && !gate.ok;
+                            return (
                           <button
-                            disabled={togglingId === r.id}
+                            disabled={togglingId === r.id || blocked}
+                            title={blocked ? gate.reason : (r.approved === true ? 'Klicken, um die Freigabe zurückzunehmen' : 'Klicken, um freizugeben')}
                             onClick={async () => {
-                              if (togglingId) return;
+                              if (togglingId || blocked) return;
                               const next = !r.approved;
                               setTogglingId(r.id);
                               setRecipes(prev => prev.map(x => x.id === r.id ? { ...x, approved: next } : x));
@@ -760,18 +751,26 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
                                 headers: { 'Content-Type': 'application/json' },
                                 body: JSON.stringify({ ...r, approved: next }),
                               });
-                              if (!res.ok) setRecipes(prev => prev.map(x => x.id === r.id ? { ...x, approved: r.approved } : x));
+                              if (!res.ok) {
+                                setRecipes(prev => prev.map(x => x.id === r.id ? { ...x, approved: r.approved } : x));
+                                const data = await res.json().catch(() => ({})) as { error?: string };
+                                setRecipeNotice({ type: 'err', text: data.error ?? 'Freigabe fehlgeschlagen.' });
+                              }
                               setTogglingId(null);
                             }}
                             style={{
-                              padding: '3px 10px', borderRadius: 999, fontSize: 11, fontWeight: 700, cursor: togglingId === r.id ? 'wait' : 'pointer', border: 'none',
-                              background: r.approved === true ? '#dcfce7' : '#fef9c3',
-                              color:      r.approved === true ? '#166534' : '#854d0e',
+                              padding: '3px 10px', borderRadius: 999, fontSize: 11, fontWeight: 700,
+                              cursor: togglingId === r.id ? 'wait' : blocked ? 'not-allowed' : 'pointer',
+                              border: blocked ? '1px dashed #b45309' : 'none',
+                              background: r.approved === true ? '#dcfce7' : blocked ? '#fee2e2' : '#fef9c3',
+                              color:      r.approved === true ? '#166534' : blocked ? '#991b1b' : '#854d0e',
                               opacity: togglingId === r.id ? 0.6 : 1,
                             }}
                           >
-                            {r.approved === true ? 'Freigegeben' : 'Entwurf'}
+                            {r.approved === true ? 'Freigegeben' : blocked ? 'Gesperrt' : 'Entwurf'}
                           </button>
+                            );
+                          })()}
                           <button
                             disabled={togglingId === r.id}
                             onClick={async () => {

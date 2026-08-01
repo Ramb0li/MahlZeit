@@ -4,35 +4,10 @@ import { NextResponse }                       from 'next/server';
 import { randomBytes }                        from 'crypto';
 import { getUserByEmail, updateUser, setConfirmationTokenIndex } from '@/lib/users';
 import { sendConfirmationEmail }              from '@/lib/email';
+import { allowOnceWithRetry }                 from '@/lib/rateLimit';
 
 const TOKEN_TTL_MS    = 24 * 60 * 60 * 1000;
 const RATE_LIMIT_SECS = 60; // 1× pro Minute pro E-Mail
-
-// Fix #3: Redis-basiertes Rate-Limit — funktioniert korrekt auf Vercel (mehrere
-// serverlose Instanzen pro Region). Fallback auf In-Memory für lokale Entwicklung.
-const localFallback = new Map<string, number>(); // nur für dev
-
-async function checkRateLimit(email: string): Promise<{ limited: boolean; waitSeconds: number }> {
-  const key = `mz:ratelimit:confirm:${email}`;
-
-  if (!process.env.UPSTASH_REDIS_REST_URL) {
-    // Local dev — in-memory
-    const last    = localFallback.get(email) ?? 0;
-    const waitMs  = RATE_LIMIT_SECS * 1000 - (Date.now() - last);
-    return { limited: waitMs > 0, waitSeconds: Math.ceil(waitMs / 1000) };
-  }
-
-  const { Redis } = require('@upstash/redis') as typeof import('@upstash/redis');
-  const redis     = Redis.fromEnv();
-  // SET NX: only succeeds if key does not exist yet → means NOT rate-limited
-  const result = await redis.set(key, '1', { ex: RATE_LIMIT_SECS, nx: true });
-  if (result === null) {
-    // Key already existed — rate limited; read remaining TTL
-    const ttl = await redis.ttl(key);
-    return { limited: true, waitSeconds: ttl > 0 ? ttl : RATE_LIMIT_SECS };
-  }
-  return { limited: false, waitSeconds: 0 };
-}
 
 export async function POST(request: Request) {
   try {
@@ -44,16 +19,15 @@ export async function POST(request: Request) {
 
     const normalizedEmail = email.toLowerCase().trim();
 
-    const { limited, waitSeconds } = await checkRateLimit(normalizedEmail);
-    if (limited) {
+    const { allowed, retryAfterSecs } = await allowOnceWithRetry(
+      'confirm', normalizedEmail, RATE_LIMIT_SECS,
+    );
+    if (!allowed) {
       return NextResponse.json(
-        { error: `Bitte warte ${waitSeconds} Sekunden bevor du den Link erneut anforderst.` },
+        { error: `Bitte warte ${retryAfterSecs} Sekunden bevor du den Link erneut anforderst.` },
         { status: 429 }
       );
     }
-
-    // Also update local fallback for dev consistency
-    localFallback.set(normalizedEmail, Date.now());
 
     const user = await getUserByEmail(normalizedEmail);
 

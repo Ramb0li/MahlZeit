@@ -11,12 +11,38 @@ import { getRecipeRatings, saveRecipeRating } from '@/lib/data';
 import { getUserByEmail }    from '@/lib/users';
 import type { RecipeRating } from '@/types';
 
+/**
+ * Oeffentliche Sicht auf eine Bewertung — bewusst OHNE userId/userEmail.
+ * Der Endpoint ist unauthentifiziert und Rezept-IDs sind aufzaehlbar; wuerde er
+ * den rohen Datensatz zurueckgeben, liessen sich die E-Mail-Adressen aller
+ * bewertenden Nutzer abernten.
+ */
+export type PublicRating = Pick<RecipeRating, 'rating' | 'comment' | 'createdAt'> & {
+  /** Anzeigename — Klarname, sonst gekuerztes E-Mail-Praefix. Nie die volle Adresse. */
+  displayName: string;
+};
+
+/** "anna.muster@example.ch" -> "anna.m..." — reicht zur Unterscheidung, ist aber keine Adresse. */
+function shortenLocalPart(email: string): string {
+  const [local] = email.split('@');
+  return local.length > 8 ? `${local.slice(0, 6)}...` : local;
+}
+
+function toPublicRating(r: RecipeRating): PublicRating {
+  return {
+    displayName: r.userName?.trim() || shortenLocalPart(r.userEmail ?? ''),
+    rating:      r.rating,
+    comment:     r.comment,
+    createdAt:   r.createdAt,
+  };
+}
+
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const recipeId = searchParams.get('recipeId');
   if (!recipeId) return NextResponse.json({ error: 'recipeId fehlt' }, { status: 400 });
   const ratings = await getRecipeRatings(recipeId);
-  return NextResponse.json(ratings);
+  return NextResponse.json(ratings.map(toPublicRating));
 }
 
 export async function POST(request: Request) {
@@ -49,5 +75,5 @@ export async function POST(request: Request) {
   };
 
   await saveRecipeRating(recipeId, ratingObj);
-  return NextResponse.json({ ok: true, rating: ratingObj });
+  return NextResponse.json({ ok: true, rating: toPublicRating(ratingObj) });
 }

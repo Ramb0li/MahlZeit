@@ -5,6 +5,12 @@ import bcrypt                                          from 'bcryptjs';
 import { ADMIN_EMAIL, signToken, sessionCookieHeader } from '@/lib/auth';
 import { getUserByEmail, updateUser }                  from '@/lib/users';
 import { createGroup, newGroupId }                     from '@/lib/groups';
+import { allowN, clientIp }                            from '@/lib/rateLimit';
+
+// Bremse gegen Credential-Stuffing. Grosszügig genug, dass ein Mensch mit
+// Tippfehlern nicht ausgesperrt wird, aber eng genug gegen automatisierte Versuche.
+const IP_MAX      = 20, IP_WINDOW    = 15 * 60;  // 20 Versuche / 15 Min je IP
+const EMAIL_MAX   = 10, EMAIL_WINDOW = 15 * 60;  // 10 Versuche / 15 Min je Konto
 
 export async function POST(request: Request) {
   try {
@@ -12,6 +18,18 @@ export async function POST(request: Request) {
 
     if (!email || !password) {
       return NextResponse.json({ error: 'E-Mail und Passwort erforderlich.' }, { status: 400 });
+    }
+
+    const normalEmail = email.toLowerCase().trim();
+    const [ipOk, emailOk] = await Promise.all([
+      allowN('login:ip',    clientIp(request), IP_MAX,    IP_WINDOW),
+      allowN('login:email', normalEmail,       EMAIL_MAX, EMAIL_WINDOW),
+    ]);
+    if (!ipOk || !emailOk) {
+      return NextResponse.json(
+        { error: 'Zu viele Anmeldeversuche. Bitte versuche es in einigen Minuten erneut.' },
+        { status: 429 },
+      );
     }
 
     const user = await getUserByEmail(email);

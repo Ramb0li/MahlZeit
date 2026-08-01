@@ -5,7 +5,7 @@ export const dynamic = 'force-dynamic';
 import { NextResponse }                              from 'next/server';
 import { randomBytes }                               from 'crypto';
 import Stripe                                        from 'stripe';
-import { getUserByEmail, updateUser, reviveOrphanedGroup } from '@/lib/users';
+import { getUserByEmail, updateUser, reviveOrphanedGroup, needsPasswordSetup } from '@/lib/users';
 import type { PlanType }                             from '@/lib/users';
 import { ADMIN_EMAIL, signToken, sessionCookieHeader } from '@/lib/auth';
 import { sendAccountSetupEmail }                     from '@/lib/email';
@@ -85,7 +85,7 @@ export async function GET(request: Request) {
   if (sub?.id) user.stripeSubscriptionId = sub.id;
   if (plan === 'abo' || plan === 'yearly') delete user.accessUntil;
 
-  const isNewAccount = user.status === 'pending' && !user.passwordHash.startsWith('$2');
+  const isNewAccount = needsPasswordSetup(user);
   // For new accounts (registered via Stripe-first flow): keep pending until password is set
   // For existing upgraded accounts: activate immediately
   if (!isNewAccount) {
