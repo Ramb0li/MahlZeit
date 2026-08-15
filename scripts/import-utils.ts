@@ -165,6 +165,75 @@ export function extractStepKeywords(instructionTexts: string[], max = 8): string
   return keywords;
 }
 
+/**
+ * Bringt `recipeInstructions` aus dem JSON-LD in eine Liste von Schritt-Texten.
+ *
+ * Schema.org lässt hier mehrere Formen zu, und die Quellen nutzen sie auch alle.
+ * Beim ersten Lauf gegen fooby genügte `string | {text}`, weil fooby ausschliesslich
+ * `HowToStep[]` liefert. Gemessen an weiteren Quellen kommen dazu:
+ *   - `string[]`        (gutekueche.at)
+ *   - `HowToSection[]`  (emmikochteinfach.de) — Schritte stecken in itemListElement
+ *   - ein einzelner Fliesstext (hennesfinest.com)
+ *
+ * Ohne diese Normalisierung liefert die Extraktion still eine leere Liste: kein
+ * Fehler, aber ein Rezept ohne Ablauf-Stichworte, Zeiten und Temperaturen — das
+ * Modell müsste den Ablauf dann frei erfinden. Genau das soll nicht passieren.
+ */
+export function normalizeInstructions(raw: unknown, depth = 0): string[] {
+  if (depth > 3) return [];                      // gegen zyklische/absurd tiefe Strukturen
+
+  if (typeof raw === 'string') {
+    // Fliesstext: an Satzenden trennen, damit pro Schritt ein Leitverb gefunden wird.
+    return raw
+      .split(/(?<=[.!?])\s+(?=[A-ZÄÖÜ])/)
+      .map(s => s.trim())
+      .filter(Boolean);
+  }
+
+  if (Array.isArray(raw)) {
+    const out: string[] = [];
+    raw.forEach(item => { normalizeInstructions(item, depth + 1).forEach(s => out.push(s)); });
+    return out;
+  }
+
+  if (raw && typeof raw === 'object') {
+    const o = raw as Record<string, unknown>;
+    // HowToSection bündelt seine Schritte in itemListElement.
+    if (o.itemListElement !== undefined) return normalizeInstructions(o.itemListElement, depth + 1);
+    if (typeof o.text === 'string' && o.text.trim()) return [o.text.trim()];
+    if (typeof o.name === 'string' && o.name.trim()) return [o.name.trim()];
+  }
+
+  return [];
+}
+
+/**
+ * JSON.parse für JSON-LD aus freier Wildbahn.
+ *
+ * amgrillplatz.de schreibt rohe Wagenrückläufe in seine String-Literale, was nach
+ * RFC 8259 unzulässig ist — `JSON.parse` bricht ab und die Seite sah aus, als hätte
+ * sie gar keine Rezeptdaten. Steuerzeichen in Strings werden deshalb vor dem Parsen
+ * escaped. Schlägt es danach immer noch fehl, ist das Dokument wirklich kaputt.
+ */
+export function parseJsonLdLoose(raw: string): unknown | null {
+  try { return JSON.parse(raw); } catch { /* zweiter Versuch unten */ }
+
+  let inString = false;
+  let escaped  = false;
+  let repaired = '';
+  for (const ch of raw) {
+    if (escaped)                { repaired += ch; escaped = false; continue; }
+    if (ch === '\\')            { repaired += ch; escaped = true;  continue; }
+    if (ch === '"')             { repaired += ch; inString = !inString; continue; }
+    if (inString && ch === '\n') { repaired += '\\n'; continue; }
+    if (inString && ch === '\r') { repaired += '\\r'; continue; }
+    if (inString && ch === '\t') { repaired += '\\t'; continue; }
+    repaired += ch;
+  }
+
+  try { return JSON.parse(repaired); } catch { return null; }
+}
+
 /** Zeitangaben aus den Original-Instruktionen (reine Zahlenfakten). */
 export function extractTimes(instructionTexts: string[]): string[] {
   const joined = instructionTexts.join(' ');
@@ -205,14 +274,19 @@ const MEAT_SUBSTRINGS = [
   'hackfleisch', 'rindfleisch', 'kalbfleisch', 'schweinefleisch', 'lammfleisch',
   'bündnerfleisch', 'trockenfleisch', 'poulet', 'pancetta', 'guanciale',
   'truthahn', 'kaninchen', 'speck', 'bacon', 'hähnchen',
+  // Deutsche und englische Bezeichnungen. Die Liste war auf Schweizer Quellen
+  // geeicht ("Poulet"); bei deutschen Seiten heisst dasselbe Tier "Hähnchen",
+  // und "Chicken Wings" stand im Rezept sogar unübersetzt.
+  'chicken', 'hühnchen', 'hühner', 'geflügel', 'gyros', 'kebab', 'schnitzel',
 ];
 
 /**
  * Mehrdeutige Stämme: nur am Wortanfang oder Wortende gültig.
  * "Bündnerfleisch" trifft über die Endung, "gehackte Tomaten" gar nicht.
+ * "Pute" muss hier stehen und nicht oben — als Teilstring würde es "Computer" treffen.
  */
 const MEAT_BOUNDARY = [
-  'fleisch', 'huhn', 'ente', 'gans', 'wurst', 'leberwurst', 'gehacktes',
+  'fleisch', 'huhn', 'ente', 'gans', 'wurst', 'leberwurst', 'gehacktes', 'pute',
 ];
 
 /** Fisch/Meeresfrüchte — nutzt die bestehenden Allergen-Listen als Basis. */
@@ -258,11 +332,22 @@ function containsAtWordEdge(haystack: string, needles: string[]): boolean {
 }
 
 /**
- * Bestimmt die Diätform deterministisch aus den Zutaten.
- * Fleisch schlägt Fisch, Fisch schlägt alles Vegetarische — unabhängig davon,
- * was das Modell behauptet hat. Zwischen 'vegetarian' und 'vegan' kann nur das
- * Modell sinnvoll unterscheiden (Butter, Honig, Rahm), deshalb wird dessen
- * Angabe dort übernommen.
+ * Bestimmt die Diätform aus den Zutaten.
+ *
+ * Der Zutaten-Scan darf die Angabe des Modells nur VERSCHÄRFEN, nie abschwächen.
+ * Das ist der entscheidende Punkt und er wurde teuer gelernt: die erste Fassung
+ * gab bei einem Scan ohne Treffer stur 'vegetarian' zurück und überschrieb damit
+ * ein korrektes 'meat' des Modells. So landete ein Rezept mit 1 kg Chicken Wings
+ * als vegetarisch in der Datenbank, weil der Wortliste schlicht der englische
+ * Begriff fehlte.
+ *
+ * Das Risiko ist unsymmetrisch: ein fälschlich als Fleisch markiertes Gemüsegericht
+ * kostet einen Treffer in der Auswahl, ein fälschlich als vegetarisch markiertes
+ * Fleischgericht landet auf dem Teller von jemandem, der genau das nicht will.
+ * Also gilt im Zweifel die strengere der beiden Angaben.
+ *
+ * Zwischen 'vegetarian' und 'vegan' kann nur das Modell sinnvoll unterscheiden
+ * (Butter, Honig, Rahm), dort entscheidet es allein.
  */
 export function resolveDietCategory(
   ingredientNames: string[],
@@ -270,10 +355,11 @@ export function resolveDietCategory(
 ): DietCategory {
   const text = stripFalseFriends(ingredientNames.join(' | '));
 
-  if (containsSubstring(text, MEAT_SUBSTRINGS) || containsAtWordEdge(text, MEAT_BOUNDARY)) {
-    return 'meat';
-  }
-  if (containsAtWordEdge(text, FISH_KEYWORDS)) return 'fish';
+  const scanMeat = containsSubstring(text, MEAT_SUBSTRINGS) || containsAtWordEdge(text, MEAT_BOUNDARY);
+  const scanFish = containsAtWordEdge(text, FISH_KEYWORDS);
+
+  if (scanMeat || modelAnswer === 'meat') return 'meat';
+  if (scanFish || modelAnswer === 'fish') return 'fish';
 
   return modelAnswer === 'vegan' ? 'vegan' : 'vegetarian';
 }

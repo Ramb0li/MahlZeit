@@ -4,6 +4,7 @@ import {
   resolveDietCategory, validateTags, mainIngredientHash, mainIngredientTokens,
   ingredientSimilarity, findDuplicate, slugify,
   buildIngredients, isValidCategory, assertValidRecipe,
+  normalizeInstructions, parseJsonLdLoose,
 } from '../../../scripts/import-utils';
 
 describe('normalizeImportUnit', () => {
@@ -426,5 +427,149 @@ describe('assertValidRecipe', () => {
     const r = valid();
     (r.ingredients as unknown[]).push({ name: 'Extra', amount: 1, unit: 'g', perPortions: 4 });
     expect(() => assertValidRecipe(r)).toThrow(/Konkatenation/);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// normalizeInstructions — die vier Formen, die in freier Wildbahn vorkommen
+// ---------------------------------------------------------------------------
+
+describe('normalizeInstructions', () => {
+  it('nimmt HowToStep[] (fooby.ch)', () => {
+    expect(normalizeInstructions([
+      { '@type': 'HowToStep', name: 'Sauce', text: 'Zwiebeln andünsten.' },
+      { '@type': 'HowToStep', name: 'Backen', text: 'Im Ofen backen.' },
+    ])).toEqual(['Zwiebeln andünsten.', 'Im Ofen backen.']);
+  });
+
+  it('nimmt string[] (gutekueche.at)', () => {
+    expect(normalizeInstructions(['Fisch würfeln.', 'Spiesse grillieren.']))
+      .toEqual(['Fisch würfeln.', 'Spiesse grillieren.']);
+  });
+
+  it('flacht HowToSection[] auf die enthaltenen Schritte ab (emmikochteinfach.de)', () => {
+    expect(normalizeInstructions([
+      {
+        '@type': 'HowToSection',
+        name: 'Vorbereitung',
+        itemListElement: [
+          { '@type': 'HowToStep', text: 'Ofen vorheizen.' },
+          { '@type': 'HowToStep', text: 'Flügel trocken tupfen.' },
+        ],
+      },
+      {
+        '@type': 'HowToSection',
+        name: 'Backen',
+        itemListElement: [{ '@type': 'HowToStep', text: '45 Minuten backen.' }],
+      },
+    ])).toEqual(['Ofen vorheizen.', 'Flügel trocken tupfen.', '45 Minuten backen.']);
+  });
+
+  it('zerlegt einen einzelnen Fliesstext in Saetze (hennesfinest.com)', () => {
+    expect(normalizeInstructions('Muscheln putzen. Grill vorheizen. Zwei Minuten grillieren.'))
+      .toEqual(['Muscheln putzen.', 'Grill vorheizen.', 'Zwei Minuten grillieren.']);
+  });
+
+  it('faellt auf name zurueck, wenn text fehlt', () => {
+    expect(normalizeInstructions([{ '@type': 'HowToStep', name: 'Anbraten' }])).toEqual(['Anbraten']);
+  });
+
+  it('liefert eine leere Liste statt zu werfen', () => {
+    expect(normalizeInstructions(undefined)).toEqual([]);
+    expect(normalizeInstructions(null)).toEqual([]);
+    expect(normalizeInstructions(42)).toEqual([]);
+    expect(normalizeInstructions([])).toEqual([]);
+  });
+
+  it('das Ergebnis taugt weiterhin als Eingabe fuer extractStepKeywords', () => {
+    const steps = normalizeInstructions([
+      { '@type': 'HowToSection', itemListElement: [{ text: 'Zwiebeln andünsten.' }] },
+      { '@type': 'HowToSection', itemListElement: [{ text: 'Im Ofen backen bei 200 Grad.' }] },
+    ]);
+    expect(extractStepKeywords(steps).length).toBeGreaterThan(0);
+    expect(extractTemperatures(steps)).toContain('200 Grad');
+  });
+});
+
+// ---------------------------------------------------------------------------
+// parseJsonLdLoose
+// ---------------------------------------------------------------------------
+
+describe('parseJsonLdLoose', () => {
+  it('parst gueltiges JSON unveraendert', () => {
+    expect(parseJsonLdLoose('{"@type":"Recipe","name":"Test"}'))
+      .toEqual({ '@type': 'Recipe', name: 'Test' });
+  });
+
+  it('repariert rohe Wagenrueckläufe im String-Literal (amgrillplatz.de)', () => {
+    // Genau die Form, an der JSON.parse dort scheitert.
+    const kaputt = '{"recipeIngredient":["700g Hähnchenbrust\r","1 rote Paprika\r"]}';
+    const parsed = parseJsonLdLoose(kaputt) as { recipeIngredient: string[] };
+    expect(parsed.recipeIngredient).toHaveLength(2);
+    expect(parsed.recipeIngredient[0]).toContain('Hähnchenbrust');
+  });
+
+  it('repariert Zeilenumbrueche und Tabs im String-Literal', () => {
+    const parsed = parseJsonLdLoose('{"text":"Zeile1\nZeile2\tEnde"}') as { text: string };
+    expect(parsed.text).toBe('Zeile1\nZeile2\tEnde');
+  });
+
+  it('laesst Steuerzeichen ausserhalb von Strings unangetastet', () => {
+    expect(parseJsonLdLoose('{\n  "a": 1,\n  "b": 2\n}')).toEqual({ a: 1, b: 2 });
+  });
+
+  it('gibt null zurueck, wenn das Dokument wirklich kaputt ist', () => {
+    expect(parseJsonLdLoose('{"a": ')).toBeNull();
+    expect(parseJsonLdLoose('kein json')).toBeNull();
+  });
+});
+
+// ---------------------------------------------------------------------------
+// resolveDietCategory — der Scan darf nur verschaerfen
+// ---------------------------------------------------------------------------
+
+describe('resolveDietCategory — Regression: kein Abschwaechen', () => {
+  it('behaelt "meat" des Modells, wenn der Scan die Zutat nicht kennt', () => {
+    // Der echte Fall: 1 kg "Chicken Wings" landete als vegetarisch in der Datenbank,
+    // weil die Wortliste nur "Poulet" und "Hähnchen" kannte und der Scan das
+    // korrekte 'meat' des Modells auf 'vegetarian' zurueckgesetzt hat.
+    expect(resolveDietCategory(['Irgendein Fleisch ohne Stichwort', 'Salz'], 'meat')).toBe('meat');
+    expect(resolveDietCategory(['Salz', 'Pfeffer'], 'meat')).toBe('meat');
+  });
+
+  it('behaelt "fish" des Modells, wenn der Scan nichts findet', () => {
+    expect(resolveDietCategory(['Salz', 'Pfeffer'], 'fish')).toBe('fish');
+  });
+
+  it('verschaerft weiterhin gegen das Modell', () => {
+    expect(resolveDietCategory(['Speckwürfeli'], 'vegan')).toBe('meat');
+    expect(resolveDietCategory(['Lachsfilet'], 'vegetarian')).toBe('fish');
+    expect(resolveDietCategory(['Lachs', 'Speck'], 'vegan')).toBe('meat');
+  });
+
+  it('laesst Fleisch vor Fisch gewinnen, auch wenn das Modell fish sagt', () => {
+    expect(resolveDietCategory(['Speck', 'Lachs'], 'fish')).toBe('meat');
+  });
+});
+
+describe('resolveDietCategory — deutsche und englische Gefluegel-Begriffe', () => {
+  it('erkennt Chicken Wings', () => {
+    expect(resolveDietCategory(['Chicken Wings', 'Paprikapulver'], 'vegetarian')).toBe('meat');
+  });
+
+  it('erkennt weitere Bezeichnungen', () => {
+    for (const zutat of ['Hähnchenbrustfilet', 'Hühnchenschenkel', 'Geflügelbouillon',
+                         'Putenbrust', 'Gyrosgewürz', 'Kalbsschnitzel']) {
+      expect(resolveDietCategory([zutat, 'Salz'], 'vegan')).toBe('meat');
+    }
+  });
+
+  it('haelt "Computer" nicht fuer Pute', () => {
+    // "pute" steht deshalb in der Wortkanten-Liste und nicht in der Teilstring-Liste.
+    expect(resolveDietCategory(['Computerpapier', 'Tomaten'], 'vegan')).toBe('vegan');
+  });
+
+  it('bleibt bei harmlosen Zutaten vegan', () => {
+    expect(resolveDietCategory(['Kichererbsen', 'Kokosmilch', 'Rüebli'], 'vegan')).toBe('vegan');
   });
 });

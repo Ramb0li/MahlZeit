@@ -39,6 +39,7 @@ import {
   ALLOWED_UNITS, extractStepKeywords, extractTimes, extractTemperatures,
   resolveDietCategory, validateTags, mainIngredientTokens, findDuplicate, slugify,
   buildIngredients, isValidCategory, assertValidRecipe, stripMarkupTail,
+  normalizeInstructions, parseJsonLdLoose,
   type RawGroup, type DuplicateCandidate,
 } from './import-utils';
 
@@ -151,16 +152,19 @@ function extractJsonLd(html: string): Record<string, unknown> | null {
   const regex = /<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi;
   let match;
   while ((match = regex.exec(html)) !== null) {
-    try {
-      const parsed = JSON.parse(match[1].trim());
-      for (const obj of Array.isArray(parsed) ? parsed : [parsed]) {
-        if (isRecipeType(obj)) return obj;
-        if (obj?.['@graph'] && Array.isArray(obj['@graph'])) {
-          const found = (obj['@graph'] as unknown[]).find(isRecipeType);
-          if (found) return found as Record<string, unknown>;
-        }
+    // parseJsonLdLoose statt JSON.parse: manche Seiten schreiben rohe Steuerzeichen
+    // in ihre String-Literale. Vorher wurde der Block still übersprungen und die
+    // Seite sah aus, als hätte sie gar keine Rezeptdaten.
+    const parsed = parseJsonLdLoose(match[1].trim());
+    if (parsed === null) continue;
+    for (const obj of Array.isArray(parsed) ? parsed : [parsed]) {
+      if (isRecipeType(obj)) return obj as Record<string, unknown>;
+      const graph = (obj as Record<string, unknown>)?.['@graph'];
+      if (Array.isArray(graph)) {
+        const found = graph.find(isRecipeType);
+        if (found) return found as Record<string, unknown>;
       }
-    } catch { /* defektes JSON-LD überspringen */ }
+    }
   }
   return null;
 }
@@ -207,10 +211,7 @@ interface RecipeFacts {
 }
 
 function extractFacts(jsonLd: Record<string, unknown>): RecipeFacts {
-  const instructions = Array.isArray(jsonLd.recipeInstructions)
-    ? (jsonLd.recipeInstructions as unknown[]).map(s =>
-        typeof s === 'string' ? s : String((s as Record<string, unknown>)?.text ?? ''))
-    : [];
+  const instructions = normalizeInstructions(jsonLd.recipeInstructions);
 
   const yieldRaw = String(
     Array.isArray(jsonLd.recipeYield) ? jsonLd.recipeYield[0] : jsonLd.recipeYield ?? '',
@@ -535,6 +536,14 @@ async function main() {
     const originalTitle = String(jsonLd.name ?? '?');
     const facts         = extractFacts(jsonLd);
     const warnungen: string[] = [];
+
+    // Ohne Ablauf-Stichworte hat das Modell nur die Zutatenliste und schreibt die
+    // gesamte Zubereitung frei — inklusive Gar- und Grillzeiten. Das ist kein
+    // Abbruchgrund, muss vor der Freigabe aber jemand gegenlesen, deshalb steht es
+    // im Report. Trat erstmals bei amgrillplatz.de auf, deren JSON-LD nur Zutaten führt.
+    if (facts.ablaufStichworte.length === 0) {
+      warnungen.push('Quelle liefert keine Zubereitung — Ablauf und Zeiten stammen allein vom Modell, vor der Freigabe prüfen.');
+    }
 
     if (facts.zutaten.length === 0) {
       report.push({ url, originalTitle, status: 'failed', warnungen: ['Keine Zutaten im JSON-LD'], faktenAuszug: facts });

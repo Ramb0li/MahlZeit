@@ -5,8 +5,17 @@
  *   - allergens: EuAllergen[]  — 14 EU-Pflichtallergene aus Zutaten
  *   - nutrition: Nutrition     — Nährwerte pro Portion via Claude Sonnet
  *
- * Ausfuehren: npm run recipes:enrich
+ * Ausfuehren: npm run recipes:enrich          — nur fehlende Naehrwerte holen
+ *             npm run recipes:enrich -- --all — alle neu berechnen
  * Voraussetzung: ANTHROPIC_API_KEY in .env.local
+ *
+ * Allergene werden immer fuer alle Rezepte neu berechnet: das kostet keinen
+ * API-Call und die Stichwortliste waechst mit jedem Import.
+ *
+ * Naehrwerte dagegen standardmaessig nur dort, wo sie fehlen. Vorher rechnete
+ * der Lauf jedes Mal den gesamten Bestand neu — bei 419 Rezepten und 19 neuen
+ * ist das teuer und erzeugt einen Diff ueber alle Einzeldateien, in dem die
+ * eigentliche Aenderung nicht mehr zu finden ist.
  */
 
 import Anthropic from '@anthropic-ai/sdk';
@@ -124,12 +133,22 @@ async function main() {
   console.log(`  ${allergenCount}/${recipes.length} Rezepte haben mindestens ein Allergen.\n`);
 
   // Schritt 2: Naehrwerte (via API)
-  console.log('=== Schritt 2: Naehrwerte via Claude Sonnet ===');
+  const alle    = process.argv.includes('--all');
+  const offen   = alle ? recipes : recipes.filter(r => !(r as any).nutrition);
+  console.log(`=== Schritt 2: Naehrwerte via Claude Sonnet ===`);
+  console.log(alle
+    ? `  Modus --all: alle ${recipes.length} Rezepte werden neu berechnet.`
+    : `  ${offen.length} von ${recipes.length} Rezepten ohne Naehrwerte. (--all rechnet alle neu.)`);
+
+  if (offen.length === 0) {
+    console.log('  Nichts zu tun.\n');
+  }
+
   const client = new Anthropic({ apiKey });
 
   const batches: RecipeLike[][] = [];
-  for (let i = 0; i < recipes.length; i += BATCH_SIZE) {
-    batches.push(recipes.slice(i, i + BATCH_SIZE));
+  for (let i = 0; i < offen.length; i += BATCH_SIZE) {
+    batches.push(offen.slice(i, i + BATCH_SIZE));
   }
 
   let nutritionCount = 0;
@@ -148,7 +167,8 @@ async function main() {
     }
   }
 
-  console.log(`\n  ${nutritionCount}/${recipes.length} Rezepte mit Naehrwerten angereichert.\n`);
+  console.log(`\n  ${nutritionCount}/${offen.length} bearbeitete Rezepte mit Naehrwerten versehen.`);
+  console.log(`  Bestand gesamt: ${recipes.filter(r => (r as any).nutrition).length}/${recipes.length} mit Naehrwerten.\n`);
 
   // Schritt 3: data/recipes.json zurueckschreiben
   fs.writeFileSync(recipesPath, JSON.stringify(recipes, null, 2), 'utf-8');
