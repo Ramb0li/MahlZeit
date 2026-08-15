@@ -3,6 +3,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { X, Pencil, UtensilsCrossed } from 'lucide-react';
 import { type Recipe, type Ingredient, type IngredientGroup, type RecipeRating, type EuAllergen, TAG_GROUPS } from '@/types';
 import { scaleDisplayAmount } from '@/lib/utils';
+import { scaleAmountsInStep } from '@/lib/stepAmounts';
 
 // ─── Diet display mapping ─────────────────────────────────────────────────────
 
@@ -517,7 +518,11 @@ export function RecipeDetailModal({
                         >
                           {i + 1}
                         </span>
-                        <span className="text-sm leading-relaxed" style={{ color: '#5a4e48' }}>{step}</span>
+                        {/* Mengen im Text auf die gewählte Portionenzahl bringen,
+                            damit sie zur Zutatentabelle links passen. */}
+                        <span className="text-sm leading-relaxed" style={{ color: '#5a4e48' }}>
+                          {scaleAmountsInStep(step, recipe.ingredients, recipe.basePortions, portions)}
+                        </span>
                       </li>
                     ))}
                   </ol>

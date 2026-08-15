@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { Check, Download, RefreshCw, Plus, Trash2, RotateCcw, X, ChevronDown, PackageCheck } from 'lucide-react';
-import { getWeekIdForWindow, getWeekDays, nextWeek, formatAmount } from '@/lib/utils';
+import { getWeekIdForWindow, getWeekDays, nextWeek, formatAmount, categorizeIngredient } from '@/lib/utils';
 import { format, getISOWeek } from 'date-fns';
 import { de } from 'date-fns/locale';
 import {
@@ -41,11 +41,13 @@ function buildListLabel(weekId: string, dayIndices: number[], weekStartDay = 1):
 
 const CAT_ICONS: Record<string, string> = {
   'Obst & Gemüse':        '🍎',
-  'Hülsenfrüchte':         '🌾',
-  'Getreide & Stärke':     '🫘',
+  'Hülsenfrüchte':         '🫘',
+  'Getreide & Stärke':     '🌾',
   'Milchprodukte & Eier':  '🥛',
   'Fisch & Meeresfrüchte': '🐟',
-  'Tofu & Veganes':        '🫘',
+  // Nicht 🫘 — das gehört seit dem Tausch zu den Hülsenfrüchten, und zwei
+  // Kategorien mit demselben Symbol sind in der Liste nicht unterscheidbar.
+  'Tofu & Veganes':        '🌱',
   'Haltbare Produkte':     '🫙',
   'Nüsse & Samen':         '🥜',
   'Gewürze & Kräuter':     '🌿',
@@ -226,6 +228,10 @@ export function ShoppingListView({ weekStartDay = 1 }: { weekStartDay?: 0|1|2|3|
 
   const [showAdd, setShowAdd] = useState(false);
   const [draft, setDraft] = useState({ name: '', amount: '', unit: 'Stk', category: 'Sonstiges' });
+  // Sobald die Kategorie von Hand gewählt wurde, hört der automatische Vorschlag
+  // auf. Ohne das würde eine bewusste Entscheidung beim Weitertippen im
+  // Namensfeld wieder überschrieben.
+  const [categoryTouched, setCategoryTouched] = useState(false);
   const nameInputRef = useRef<HTMLInputElement>(null);
   const [allIngredients, setAllIngredients] = useState<string[]>([]);
   const [nameSugg, setNameSugg]             = useState<string[]>([]);
@@ -391,6 +397,7 @@ export function ShoppingListView({ weekStartDay = 1 }: { weekStartDay?: 0|1|2|3|
     };
     updateState(s => ({ ...s, customItems: [...s.customItems, item] }));
     setDraft({ name: '', amount: '', unit: 'Stk', category: 'Sonstiges' });
+    setCategoryTouched(false);
     setShowAdd(false);
   };
 
@@ -821,7 +828,16 @@ export function ShoppingListView({ weekStartDay = 1 }: { weekStartDay?: 0|1|2|3|
                   type="text" placeholder="Name (z.B. Waschmittel)" value={draft.name}
                   onChange={(e) => {
                     const val = e.target.value;
-                    setDraft(d => ({ ...d, name: val }));
+                    // Kategorie mitschlagen, solange der Nutzer sie nicht selbst gesetzt hat.
+                    // Gleiche Funktion wie bei den Rezeptzutaten, damit eine von Hand
+                    // erfasste Zutat in derselben Rubrik landet wie dieselbe Zutat aus
+                    // einem Rezept.
+                    setDraft(d => ({
+                      ...d,
+                      name: val,
+                      category: categoryTouched ? d.category
+                        : val.trim().length >= 2 ? categorizeIngredient(val) : 'Sonstiges',
+                    }));
                     if (val.trim().length >= 2) {
                       const lower = val.toLowerCase();
                       const matched = allIngredients.filter(n => n.toLowerCase().startsWith(lower)).slice(0, 6);
@@ -848,7 +864,14 @@ export function ShoppingListView({ weekStartDay = 1 }: { weekStartDay?: 0|1|2|3|
                     {nameSugg.map((s) => (
                       <button
                         key={s}
-                        onMouseDown={() => { setDraft(d => ({ ...d, name: s })); setShowNameSugg(false); }}
+                        onMouseDown={() => {
+                          setDraft(d => ({
+                            ...d,
+                            name: s,
+                            category: categoryTouched ? d.category : categorizeIngredient(s),
+                          }));
+                          setShowNameSugg(false);
+                        }}
                         className="w-full text-left px-3 py-2 text-sm"
                         style={{ color: '#271f1a' }}
                         onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.backgroundColor = '#f7f4ee')}
@@ -873,7 +896,10 @@ export function ShoppingListView({ weekStartDay = 1 }: { weekStartDay?: 0|1|2|3|
                 />
                 <select
                   value={draft.category}
-                  onChange={(e) => setDraft(d => ({ ...d, category: e.target.value }))}
+                  onChange={(e) => {
+                    setCategoryTouched(true);
+                    setDraft(d => ({ ...d, category: e.target.value }));
+                  }}
                   style={{ ...inputStyle, flex: 1, cursor: 'pointer' }}
                 >
                   {ALL_CATEGORIES.map((c) => <option key={c} value={c}>{c}</option>)}

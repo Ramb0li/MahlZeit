@@ -10,7 +10,8 @@ import type { Group }        from '@/lib/groups';
 import type { Recipe, Category } from '@/types';
 import { approvalWarnings }    from '@/lib/approvalWarnings';
 import type { LandingContent, LandingFeature } from '@/lib/content';
-import { Users, BookOpen, Bookmark, Globe, HelpCircle, Lock } from 'lucide-react';
+import { IngredientsTab }      from './IngredientsTab';
+import { Users, BookOpen, Bookmark, Globe, HelpCircle, Lock, Carrot } from 'lucide-react';
 
 // Kategoriefarben für Badges — kategorienspezifisch, bleiben als Hex
 const CAT_COLOR: Record<string, { bg: string; color: string }> = {
@@ -71,6 +72,7 @@ function ADMIN_TABS(
   return [
     { id: 'users',        icon: Users,       label: `Nutzer (${users.filter(u => !isAdmin(u.email)).length})`,        shortLabel: 'Nutzer'   },
     { id: 'recipes',      icon: BookOpen,    label: `Rezepte (${recipes.length})`,                                    shortLabel: 'Rezepte'  },
+    { id: 'ingredients',  icon: Carrot,      label: 'Zutaten',                                                        shortLabel: 'Zutaten'  },
     { id: 'user-recipes', icon: Bookmark,    label: `Nutzer-Rezepte${userRecipes ? ` (${userRecipes.length})` : ''}`, shortLabel: 'Nutzer-R.'},
     { id: 'landing',      icon: Globe,       label: 'Landing',                                                        shortLabel: 'Landing'  },
     { id: 'howto',        icon: HelpCircle,  label: 'How-To',                                                         shortLabel: 'How-To'   },
@@ -102,7 +104,7 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
   const router = useRouter();
 
   // ── Tab-State ───────────────────────────────────────────────────────────────
-  type AdminTab = 'users' | 'recipes' | 'user-recipes' | 'landing' | 'howto';
+  type AdminTab = 'users' | 'recipes' | 'ingredients' | 'user-recipes' | 'landing' | 'howto';
   const [activeTab, setActiveTab] = useState<AdminTab>('users');
 
   // ── Nutzer-Rezepte-State ─────────────────────────────────────────────────────
@@ -168,6 +170,17 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
   const [showSeedModal,   setShowSeedModal]   = useState(false);
   const [togglingId,          setTogglingId]          = useState<string | null>(null);
   const [recipeStatusFilter,  setRecipeStatusFilter]  = useState<'Alle' | 'approved' | 'draft'>('Alle');
+
+  /**
+   * Rezepte neu laden. Nötig nach einem Umbenennen im Zutaten-Tab: dort ändert
+   * die Route mehrere Rezepte auf einmal, der lokale State weiss davon nichts.
+   */
+  const reloadRecipes = async () => {
+    const res = await fetch('/api/admin/recipes');
+    if (!res.ok) return;
+    const data = await res.json() as Recipe[];      // GET liefert das Array direkt
+    if (Array.isArray(data)) setRecipes(data);
+  };
 
   const filteredRecipes = useMemo(() => recipes.filter(r => {
     if (recipeCatFilter !== 'Alle' && r.category !== recipeCatFilter) return false;
@@ -838,6 +851,11 @@ export default function AdminPanel({ initialUsers, adminEmail, groups, initialRe
               />
             )}
           </div>
+        )}
+
+        {/* ── Zutaten Tab ──────────────────────────────────────────────────── */}
+        {activeTab === 'ingredients' && (
+          <IngredientsTab recipes={recipes} onSaved={reloadRecipes} />
         )}
 
         {/* ── Landing Content Tab ──────────────────────────────────────────── */}

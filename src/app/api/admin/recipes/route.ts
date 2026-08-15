@@ -9,6 +9,7 @@ export const dynamic = 'force-dynamic';
 import { NextResponse }                      from 'next/server';
 import { getSession, ADMIN_EMAIL }            from '@/lib/auth';
 import { getTemplateRecipes, saveTemplateRecipes } from '@/lib/data';
+import { findRecipeFile, rebuildRecipesJson }  from '@/lib/recipeFiles';
 import type { Recipe }                        from '@/types';
 
 const USE_REDIS = Boolean(process.env.UPSTASH_REDIS_REST_URL);
@@ -26,17 +27,8 @@ async function requireAdmin() {
  */
 
 // ─── Lokale Helfer (nur dev) ──────────────────────────────────────────────────
-
-function findRecipeFile(id: string): string | null {
-  const fs   = require('fs')   as typeof import('fs');
-  const path = require('path') as typeof import('path');
-  const dir  = path.join(process.cwd(), 'data', 'recipes');
-  for (const sub of fs.readdirSync(dir)) {
-    const candidate = path.join(dir, sub, `${id}.json`);
-    if (fs.existsSync(candidate)) return candidate;
-  }
-  return null;
-}
+// findRecipeFile und rebuildRecipesJson liegen in src/lib/recipeFiles.ts, weil
+// die Zutaten-Route denselben Weg braucht.
 
 const CATEGORY_FOLDER: Record<string, string> = {
   'Snacks':                      'snacks',
@@ -55,10 +47,7 @@ const CATEGORY_FOLDER: Record<string, string> = {
   'Asiatisch':                   'asiatisch',
 };
 
-function rebuild() {
-  const { execSync } = require('child_process') as typeof import('child_process');
-  execSync('node scripts/build-recipes.js', { cwd: process.cwd(), stdio: 'pipe' });
-}
+const rebuild = rebuildRecipesJson;
 
 // ─── Handlers ────────────────────────────────────────────────────────────────
 

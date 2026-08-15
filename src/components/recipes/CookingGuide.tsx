@@ -3,6 +3,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { X, ChevronLeft, ChevronRight, Check, UtensilsCrossed } from 'lucide-react';
 import type { Recipe, Ingredient, IngredientGroup } from '@/types';
 import { scaleDisplayAmount } from '@/lib/utils';
+import { scaleAmountsInStep, ingredientsForStep } from '@/lib/stepAmounts';
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
@@ -24,25 +25,6 @@ function formatAmount(amount: number): string {
 /** Zutaten einer Liste auf die gewählte Portionenzahl skalieren (gleiche Werte wie Rezeptdetail). */
 function scaleList(list: Ingredient[], basePortions: number, portions: number): Ingredient[] {
   return list.map((i) => ({ ...i, amount: scaleDisplayAmount(i.amount, basePortions, portions) }));
-}
-
-/** Prüft, ob ein Zutatenname (per Wort-Präfix) im Schritttext vorkommt — tolerant für Plural/Komposita. */
-function nameInStep(stepLower: string, name: string): boolean {
-  const words = name.toLowerCase().replace(/[^a-zäöüß\s-]/g, ' ').split(/[\s-]+/).filter(w => w.length >= 4);
-  return words.some(w => stepLower.includes(w.slice(0, Math.min(5, w.length))));
-}
-
-/** Im Schritt genannte Zutaten (dedupliziert) — für die Schritt-Zutatenliste. */
-function ingredientsForStep(stepText: string, all: Ingredient[]): Ingredient[] {
-  const s = stepText.toLowerCase();
-  const seen = new Set<string>();
-  const out: Ingredient[] = [];
-  for (const ing of all) {
-    const key = ing.name.toLowerCase();
-    if (seen.has(key)) continue;
-    if (nameInStep(s, ing.name)) { seen.add(key); out.push(ing); }
-  }
-  return out;
 }
 
 // ─── Ingredient Card (small) ─────────────────────────────────────────────────
@@ -168,6 +150,10 @@ export function CookingGuide({ recipe, portions, onClose, onFinished }: CookingG
     : ingredientsForStep(currentStep, recipe.ingredients);
   const stepIngredients = scaleList(rawStepIngredients, basePortions, cookPortions);
   const stepIngredientsLabel = alignedGroup?.name ?? 'Für diesen Schritt';
+  // Mengen im Schritttext auf dieselbe Portionenzahl bringen wie die Karte darüber.
+  // Ohne das steht bei 8 Portionen "2 EL Butter" in der Karte und "1 EL Butter" im Satz.
+  const stepText = currentStep == null ? null
+    : scaleAmountsInStep(currentStep, recipe.ingredients, basePortions, cookPortions);
 
   return (
     <div
@@ -226,7 +212,7 @@ export function CookingGuide({ recipe, portions, onClose, onFinished }: CookingG
               <IngredientCard name={stepIngredientsLabel} ingredients={stepIngredients} />
             )}
             <p className="text-xl font-semibold leading-relaxed" style={{ color: '#fff' }}>
-              {highlightTimers(currentStep)}
+              {highlightTimers(stepText ?? currentStep)}
             </p>
           </>
         )}
