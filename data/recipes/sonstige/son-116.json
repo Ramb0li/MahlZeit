@@ -1,0 +1,191 @@
+{
+  "id": "son-116",
+  "name": "Ofenauberginen mit Miso-Glasur und Sesam",
+  "category": "Gemüsegerichte",
+  "timeMinutes": 90,
+  "basePortions": 4,
+  "weatherType": "neutral",
+  "dietCategory": "vegan",
+  "description": "Diese Auberginen kommen ganz ohne grossen Aufwand aus, aber die Miso-Glasur macht sie zu etwas Besonderem – süsslich, salzig und mit einem Hauch Ingwer. Ein Gericht, das ich gerne mache, wenn ich Gäste habe, die noch nicht wissen, wie gut Auberginen schmecken können, wenn man sie richtig behandelt.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Für Gäste",
+    "Ofengericht",
+    "Ganzjährig",
+    "Japanisch"
+  ],
+  "ingredients": [
+    {
+      "name": "Auberginen",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Meersalz",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Ingwer",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Miso-Paste",
+      "amount": 90,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Ahornsirup",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Reisessig",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Bundzwiebeln",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "gerösteter Sesam",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Auberginen",
+      "ingredients": [
+        {
+          "name": "Auberginen",
+          "amount": 3,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Meersalz",
+          "amount": 2,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Miso-Glasur",
+      "ingredients": [
+        {
+          "name": "Ingwer",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Knoblauchzehe",
+          "amount": 1,
+          "unit": "Zehe",
+          "perPortions": 4
+        },
+        {
+          "name": "Miso-Paste",
+          "amount": 90,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Ahornsirup",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Reisessig",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Garnitur",
+      "ingredients": [
+        {
+          "name": "Bundzwiebeln",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "gerösteter Sesam",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Den Backofen auf 200 °C Ober-/Unterhitze vorheizen.",
+    "Die Auberginen längs halbieren und die Schnittfläche mehrmals rautenförmig einschneiden, ohne die Schale zu durchtrennen.",
+    "Die Auberginenhälften auf ein mit Backpapier belegtes Blech legen, mit Olivenöl bestreichen und mit dem Meersalz bestreuen.",
+    "Die Auberginen für etwa 30 Minuten im vorgeheizten Backofen vorgaren, bis das Fleisch weich wird.",
+    "Währenddessen den Ingwer fein reiben und den Knoblauch fein hacken.",
+    "Ingwer, Knoblauch, Miso-Paste, Ahornsirup und Reisessig in einer kleinen Schüssel zu einer glatten Glasur verrühren.",
+    "Die Bundzwiebeln in feine Ringe schneiden und das Grün für die Garnitur beiseitelegen.",
+    "Die vorgegarten Auberginen aus dem Ofen nehmen und die Schnittflächen grosszügig mit der Miso-Glasur bestreichen.",
+    "Die glasierten Auberginen für weitere 15 Minuten in den Ofen geben, bis die Oberfläche leicht gebräunt und karamellisiert ist.",
+    "Die fertigen Auberginen mit den Bundzwiebeln und dem gerösteten Sesam bestreuen und warm servieren."
+  ],
+  "tips": "Dazu passt Reis oder ein einfacher Gurkensalat, um die Süsse der Glasur auszugleichen.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/21756/gebackene-miso-auberginen",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T16:02:46.686Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "sesam",
+    "soja"
+  ],
+  "nutrition": {
+    "kcal": 168,
+    "protein": 5.8,
+    "fat": 9.2,
+    "carbs": 16.4,
+    "fiber": 7.8
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "id": "son-117",
+  "name": "Geräucherter Tofu in Barbecue-Marinade mit Zwiebeln",
+  "category": "Gemüsegerichte",
+  "timeMinutes": 28,
+  "basePortions": 4,
+  "weatherType": "neutral",
+  "dietCategory": "vegan",
+  "description": "Geräucherter Tofu bekommt hier durch eine würzige Barbecue-Marinade aus Ahornsirup, Senf und Tomatenpüree richtig Charakter – so wird aus einer eher unscheinbaren Zutat ein Gericht, das auch Fleischliebhaber überzeugt. Schnell gemacht und ideal, wenn man abends noch keine Lust auf grossen Aufwand hat.",
+  "tags": [
+    "Abendessen",
+    "Mittagessen",
+    "Ofengericht",
+    "Budgetfreundlich",
+    "Ganzjährig",
+    "Mealprep-geeignet",
+    "Gut zum Mitnehmen"
+  ],
+  "ingredients": [
+    {
+      "name": "geräucherter Tofu",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebeln",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Ahornsirup",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Sojasauce",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "geräucherter Paprika",
+      "amount": 0.75,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.25,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Senf",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Tomatenpüree",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Apfelessig",
+      "amount": 0.5,
+      "unit": "dl",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für den Tofu",
+      "ingredients": [
+        {
+          "name": "geräucherter Tofu",
+          "amount": 400,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Zwiebeln",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für die Barbecue-Marinade",
+      "ingredients": [
+        {
+          "name": "Knoblauchzehe",
+          "amount": 1,
+          "unit": "Zehe",
+          "perPortions": 4
+        },
+        {
+          "name": "Ahornsirup",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Sojasauce",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "geräucherter Paprika",
+          "amount": 0.75,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.25,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Senf",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Tomatenpüree",
+          "amount": 3,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Apfelessig",
+          "amount": 0.5,
+          "unit": "dl",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Den Backofen auf 200 °C Ober-/Unterhitze vorheizen.",
+    "Den geräucherten Tofu in mundgerechte Würfel oder Scheiben schneiden.",
+    "Die Zwiebel fein hacken und die Knoblauchzehe pressen oder fein hacken.",
+    "Das Olivenöl in einer Pfanne erhitzen und die Zwiebel darin während 2 Minuten andämpfen, bis sie leicht glasig ist.",
+    "Den Knoblauch kurz mitandämpfen, bis er zu duften beginnt.",
+    "Für die Marinade Ahornsirup, Sojasauce, geräucherten Paprika, Salz, Senf, Tomatenpüree und Apfelessig in einer Schüssel gut verrühren.",
+    "Die angedämpften Zwiebeln und den Knoblauch unter die Marinade mischen.",
+    "Den Tofu in eine ofenfeste Form geben und die Marinade gleichmässig darüberverteilen, sodass alle Stücke gut bedeckt sind.",
+    "Die Form für 10 Minuten in den vorgeheizten Backofen bei 200 °C schieben.",
+    "Den Tofu herausnehmen, wenden und für weitere 4 Minuten im Ofen fertig backen, bis die Marinade schön eingezogen und leicht karamellisiert ist.",
+    "Den Tofu heiss servieren, zum Beispiel mit Reis oder einem frischen Salat."
+  ],
+  "tips": "Der Tofu schmeckt auch kalt sehr gut und eignet sich damit ideal für die Znüni- oder Lunchbox. Die doppelte Menge Marinade lohnt sich, wenn man den Tofu gerne etwas saftiger mag.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/26416/bbq-tofu",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T16:03:13.564Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "senf",
+    "soja"
+  ],
+  "nutrition": {
+    "kcal": 248,
+    "protein": 18.6,
+    "fat": 12.4,
+    "carbs": 14.8,
+    "fiber": 2.2
+  }
+}

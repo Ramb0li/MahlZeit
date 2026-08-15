@@ -1,0 +1,304 @@
+{
+  "id": "sal-69",
+  "name": "Hirsebowl mit geröstetem Gemüse, Oliven und Zitronenjogurt",
+  "category": "Salate & Bowls",
+  "timeMinutes": 30,
+  "basePortions": 4,
+  "weatherType": "warm",
+  "dietCategory": "vegetarian",
+  "description": "Diese Bowl entsteht eigentlich immer dann, wenn der Gemüsekorb nach Auberginen und Peperoni verlangt und noch eine Handvoll Hirse im Schrank steht. Das Gemüse kommt heiss und leicht angeröstet aus dem Ofen, dazu ein kühler Zitronenjogurt und ein paar Rauchmandeln für den Crunch – ein Teller, der nach Sommerabend auf der Terrasse schmeckt.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Mealprep-geeignet",
+    "Gut zum Mitnehmen",
+    "Ofengericht",
+    "Sommer",
+    "Mediterran"
+  ],
+  "ingredients": [
+    {
+      "name": "Goldhirse",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Auberginen",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "rote Peperoni",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "gelbe Peperoni",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Bundzwiebeln",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "flüssiger Honig",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Paprika",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "getrockneter Oregano",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Zimt",
+      "amount": 0.25,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "griechischer Jogurt nature",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Bio-Zitronen",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Rauchmandeln",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "entsteinte schwarze Oliven",
+      "amount": 75,
+      "unit": "g",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Hirse",
+      "ingredients": [
+        {
+          "name": "Goldhirse",
+          "amount": 250,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für geröstetes Gemüse",
+      "ingredients": [
+        {
+          "name": "Auberginen",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "rote Peperoni",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "gelbe Peperoni",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Bundzwiebeln",
+          "amount": 1,
+          "unit": "Bund",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 3,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "flüssiger Honig",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Paprika",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "getrockneter Oregano",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Zimt",
+          "amount": 0.25,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Zitronenjogurt",
+      "ingredients": [
+        {
+          "name": "griechischer Jogurt nature",
+          "amount": 150,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Bio-Zitronen",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Topping",
+      "ingredients": [
+        {
+          "name": "Rauchmandeln",
+          "amount": 50,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "entsteinte schwarze Oliven",
+          "amount": 75,
+          "unit": "g",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Den Backofen auf 200 °C Ober- und Unterhitze vorheizen.",
+    "Die Auberginen und die beiden Peperoni waschen, in mundgerechte Stücke schneiden und die Bundzwiebeln in Ringe schneiden.",
+    "Das Gemüse auf einem mit Backpapier belegten Blech verteilen, mit 3 EL Olivenöl, dem Honig, Paprika, Oregano, Zimt, 1 TL Salz und etwas Pfeffer vermengen.",
+    "Das Blech für 8 Minuten in den vorgeheizten Ofen schieben, bis das Gemüse leicht Farbe angenommen hat und weich ist.",
+    "Während das Gemüse im Ofen ist, die Goldhirse nach Packungsangabe in gesalzenem Wasser kochen und anschliessend abtropfen lassen.",
+    "Für den Zitronenjogurt den griechischen Jogurt mit der abgeriebenen Schale und dem Saft der Bio-Zitrone, 1 EL Olivenöl und einer Prise Salz glattrühren.",
+    "Die Rauchmandeln grob hacken.",
+    "Die gekochte Hirse auf vier Schalen verteilen, mit dem gerösteten Gemüse, den Oliven und den Rauchmandeln belegen.",
+    "Den Zitronenjogurt darüber verteilen oder separat dazu reichen und die Bowl sofort geniessen."
+  ],
+  "tips": "Die Bowl schmeckt auch am nächsten Tag kalt aus der Box sehr gut, dann den Zitronenjogurt am besten separat mitnehmen und erst kurz vor dem Essen daraufgeben.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/23357/hirsesalat-mit-grillgemuese",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T16:04:42.762Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch",
+    "schalenfruechte"
+  ],
+  "nutrition": {
+    "kcal": 512,
+    "protein": 15.8,
+    "fat": 20.4,
+    "carbs": 65.3,
+    "fiber": 9.2
+  }
+}

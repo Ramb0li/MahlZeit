@@ -1,0 +1,116 @@
+{
+  "id": "fle-87",
+  "name": "Knusprige Chicken Wings mit Paprika-Gewürzmarinade",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 50,
+  "basePortions": 4,
+  "weatherType": "neutral",
+  "dietCategory": "meat",
+  "description": "Wings aus dem Ofen, wie man sie sich sonst nur auswärts holt – mit einer einfachen Gewürzmischung, die für die richtige Würze und eine schöne rote Farbe sorgt. Perfekt für einen entspannten Abend vor dem Fernseher oder als Highlight auf dem Buffet für Gäste.",
+  "tags": [
+    "Abendessen",
+    "Snack",
+    "Ofengericht",
+    "Für Gäste",
+    "Gut zum Mitnehmen",
+    "Ganzjährig",
+    "Amerikanisch"
+  ],
+  "ingredients": [
+    {
+      "name": "Chicken Wings",
+      "amount": 1,
+      "unit": "kg",
+      "perPortions": 4
+    },
+    {
+      "name": "Paprikapulver, edelsüss oder rosenscharf",
+      "amount": 3,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "schwarzer Pfeffer",
+      "amount": 0.25,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pflanzenöl",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Chicken Wings",
+      "ingredients": [
+        {
+          "name": "Chicken Wings",
+          "amount": 1,
+          "unit": "kg",
+          "perPortions": 4
+        },
+        {
+          "name": "Paprikapulver, edelsüss oder rosenscharf",
+          "amount": 3,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "schwarzer Pfeffer",
+          "amount": 0.25,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pflanzenöl",
+          "amount": 4,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Den Backofen auf 200 °C Ober- und Unterhitze vorheizen.",
+    "Die Chicken Wings trockentupfen und in eine grosse Schüssel geben.",
+    "Paprikapulver, Salz, schwarzen Pfeffer und Pflanzenöl in einer kleinen Schale verrühren, bis eine gleichmässige Marinade entsteht.",
+    "Die Marinade über die Chicken Wings giessen und alles gut vermengen, bis die Wings rundum bedeckt sind.",
+    "Die marinierten Wings auf einem mit Backpapier ausgelegten Blech verteilen, ohne dass sie sich berühren.",
+    "Die Wings im vorgeheizten Backofen bei 200 °C für etwa 45 Minuten backen, dabei nach der Hälfte der Zeit einmal wenden.",
+    "Die Wings aus dem Ofen nehmen, wenn sie knusprig und goldbraun sind, und noch heiss servieren."
+  ],
+  "tips": "Für extra Knusprigkeit die Wings in den letzten 5 Minuten auf Grillfunktion schalten. Dazu passt ein Dip aus Joghurt, Knoblauch und Zitrone.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://emmikochteinfach.de/chicken-wings/",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T16:01:04.246Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [],
+  "nutrition": {
+    "kcal": 478,
+    "protein": 34.2,
+    "fat": 36.8,
+    "carbs": 2.4,
+    "fiber": 0.6
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "id": "fis-23",
+  "name": "Lachsfilet mit Bärlauch-Rahmsauce und Parmesan",
+  "category": "Fisch & Meeresfrüchte",
+  "timeMinutes": 20,
+  "basePortions": 2,
+  "weatherType": "neutral",
+  "dietCategory": "fish",
+  "description": "Bärlauch gibt es nur ein paar Wochen im Frühling, und dieses Rezept nutzt ihn genau richtig: frisch untergemischt in eine cremige Parmesan-Sauce zum zarten Lachs. In 20 Minuten steht ein Gericht auf dem Tisch, das nach mehr Aufwand aussieht, als es tatsächlich macht.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Pfannengericht",
+    "Frühling",
+    "Für Gäste"
+  ],
+  "ingredients": [
+    {
+      "name": "Lachsfilets ohne Haut",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Zwiebeln",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Bärlauch",
+      "amount": 40,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Salz",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 2
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 2
+    },
+    {
+      "name": "Saucen-Halbrahm",
+      "amount": 2,
+      "unit": "dl",
+      "perPortions": 2
+    },
+    {
+      "name": "geriebener Parmesan",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Öl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 2
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Lachsfilet mit Bärlauch-Rahmsauce",
+      "ingredients": [
+        {
+          "name": "Lachsfilets ohne Haut",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 2
+        },
+        {
+          "name": "Zwiebeln",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 2
+        },
+        {
+          "name": "Bärlauch",
+          "amount": 40,
+          "unit": "g",
+          "perPortions": 2
+        },
+        {
+          "name": "Salz",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 2
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 2
+        },
+        {
+          "name": "Saucen-Halbrahm",
+          "amount": 2,
+          "unit": "dl",
+          "perPortions": 2
+        },
+        {
+          "name": "geriebener Parmesan",
+          "amount": 50,
+          "unit": "g",
+          "perPortions": 2
+        },
+        {
+          "name": "Öl",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 2
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Die Zwiebel fein hacken und den Bärlauch in feine Streifen schneiden.",
+    "Eine Pfanne mit Öl erhitzen und die Lachsfilets mit Salz und Pfeffer würzen.",
+    "Die Zwiebeln in der Pfanne verteilen und die Lachsfilets darauf schichten.",
+    "Den Bärlauch über den Lachs streuen und den Saucen-Halbrahm dazugiessen.",
+    "Alles zugedeckt bei mittlerer Hitze etwa 3 Minuten andämpfen, bis der Lachs gerade gar ist.",
+    "Den geriebenen Parmesan über die Sauce streuen und kurz schmelzen lassen, bevor das Gericht serviert wird."
+  ],
+  "tips": "Dazu passen Salzkartoffeln oder frisches Baguette, um die feine Bärlauchsauce aufzunehmen.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/22900/lachs-mit-baerlauch-rahmsauce",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T15:57:59.760Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "fisch",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 485,
+    "protein": 38.6,
+    "fat": 34.2,
+    "carbs": 5.8,
+    "fiber": 0.6
+  }
+}

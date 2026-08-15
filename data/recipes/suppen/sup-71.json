@@ -1,0 +1,214 @@
+{
+  "id": "sup-71",
+  "name": "Thai-Curry mit Crevetten, Papaya und Kokosmilch",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 35,
+  "basePortions": 4,
+  "weatherType": "neutral",
+  "dietCategory": "fish",
+  "description": "Dieses Curry riecht schon beim Anbraten der Currypaste nach Ferien – die Kombination aus Kokosmilch, Limette und süsslicher Papaya macht es angenehm frisch und nicht zu schwer. Ein Gericht für Abende, an denen es schnell gehen soll, aber trotzdem etwas Besonderes auf dem Teller landen darf.",
+  "tags": [
+    "Abendessen",
+    "Pfannengericht",
+    "One-Pot-Gericht",
+    "Ganzjährig",
+    "Thai",
+    "Für Gäste"
+  ],
+  "ingredients": [
+    {
+      "name": "Crevetten (ungeschält, roh, Bio)",
+      "amount": 600,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Limette",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Rüebli",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "rote Peperoncini",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Papaya",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Limettenblätter (Citrus hystrix)",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "grüne Currypaste",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kokosmilch",
+      "amount": 4,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Erdnussöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Crevetten-Marinade",
+      "ingredients": [
+        {
+          "name": "Crevetten (ungeschält, roh, Bio)",
+          "amount": 600,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Limette",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Curry",
+      "ingredients": [
+        {
+          "name": "Zwiebel",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Rüebli",
+          "amount": 3,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "rote Peperoncini",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Papaya",
+          "amount": 0.5,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Limettenblätter (Citrus hystrix)",
+          "amount": 4,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "grüne Currypaste",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Kokosmilch",
+          "amount": 4,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Erdnussöl",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Die Crevetten schälen, dabei den Darm entfernen, und in eine Schüssel geben.",
+    "Den Saft der Limette über die Crevetten pressen, mit einer halben Teelöffel Salz würzen und gut vermischen.",
+    "Die Crevetten für 10 Minuten im Kühlschrank marinieren lassen.",
+    "In der Zwischenzeit die Zwiebel schälen und fein hacken, die Rüebli schälen und in dünne Scheiben schneiden.",
+    "Die Peperoncini waschen, entkernen und in feine Ringe schneiden.",
+    "Die Papaya schälen, entkernen und in mundgerechte Stücke schneiden.",
+    "Das Erdnussöl in einer grossen Pfanne oder einem Wok erhitzen und die Zwiebel darin andämpfen, bis sie glasig ist.",
+    "Die Currypaste beigeben und unter Rühren etwa 2 Minuten mitbraten, bis sie intensiv duftet.",
+    "Die Rüebli, die Peperoncini und die Limettenblätter beigeben und kurz mitdünsten.",
+    "Die Kokosmilch angiessen und das Curry kurz aufkochen lassen.",
+    "Die marinierten Crevetten beigeben und etwa 5 Minuten köcheln lassen, bis sie rosa und gerade gar sind.",
+    "Die Papayastücke unterheben und nur kurz erwärmen, damit sie nicht zerfallen.",
+    "Das Curry mit dem restlichen Salz abschmecken und sofort servieren."
+  ],
+  "tips": "Dazu passt Jasminreis oder Reisnudeln, um die Kokosmilch-Sauce aufzunehmen.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/13127/gruenes-thai-crevetten-curry",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T15:57:37.885Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "erdnuesse",
+    "krebstiere",
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 385,
+    "protein": 28.4,
+    "fat": 21.3,
+    "carbs": 18.7,
+    "fiber": 3.8
+  }
+}

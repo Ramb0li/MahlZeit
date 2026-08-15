@@ -1,0 +1,210 @@
+{
+  "id": "sup-74",
+  "name": "Herbsteintopf mit schwarzen Linsen, Kürbis und Marroni",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 35,
+  "basePortions": 4,
+  "weatherType": "kalt",
+  "dietCategory": "vegan",
+  "description": "An einem kühlen Herbstabend gibt es kaum etwas Gemütlicheres als diesen Eintopf: Kürbis, Sellerie und Champignons köcheln mit Marroni und einem Schluck Cidre zu einer würzigen, sämigen Suppe zusammen. Die schwarzen Linsen bringen Biss und Substanz, sodass man nach einer Schüssel wirklich satt ist.",
+  "tags": [
+    "Abendessen",
+    "Mittagessen",
+    "One-Pot-Gericht",
+    "Herbst",
+    "Winter",
+    "Mealprep-geeignet",
+    "Einfrierbar",
+    "Für Gäste"
+  ],
+  "ingredients": [
+    {
+      "name": "Schwarze Linsen (Beluga)",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Veganer Crème fraîche-Ersatz",
+      "amount": 180,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Rote Zwiebeln",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Kürbis",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Knollensellerie",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Champignons",
+      "amount": 250,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Rosmarin",
+      "amount": 3,
+      "unit": "Zweig",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Cidre (Apfelschaumwein)",
+      "amount": 3,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Tiefgekühlte geschälte Marroni",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Herbsteintopf mit schwarzen Linsen, Kürbis und Marroni",
+      "ingredients": [
+        {
+          "name": "Schwarze Linsen (Beluga)",
+          "amount": 100,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Veganer Crème fraîche-Ersatz",
+          "amount": 180,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Rote Zwiebeln",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Kürbis",
+          "amount": 250,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Knollensellerie",
+          "amount": 250,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Champignons",
+          "amount": 250,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1.5,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Rosmarin",
+          "amount": 3,
+          "unit": "Zweig",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Cidre (Apfelschaumwein)",
+          "amount": 3,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Tiefgekühlte geschälte Marroni",
+          "amount": 200,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Die schwarzen Linsen in einem Sieb kalt abspülen und beiseite stellen.",
+    "Die roten Zwiebeln schälen und fein hacken.",
+    "Den Kürbis und den Knollensellerie schälen und in mundgerechte Würfel schneiden.",
+    "Die Champignons putzen und halbieren oder vierteln, je nach Grösse.",
+    "Das Olivenöl in einem grossen Topf erhitzen und die gehackten Zwiebeln darin bei mittlerer Hitze etwa 5 Minuten glasig andämpfen.",
+    "Kürbis, Knollensellerie und Champignons beigeben und weitere 5 Minuten mitdünsten.",
+    "Die Rosmarinzweiglein, das Salz und etwas Pfeffer beigeben und kurz mitrösten, damit sich die Aromen entfalten.",
+    "Die schwarzen Linsen und die Marroni in den Topf geben und mit dem Cidre ablöschen.",
+    "Mit so viel Wasser auffüllen, bis alle Zutaten knapp bedeckt sind, und das Ganze aufkochen lassen.",
+    "Die Hitze reduzieren und den Eintopf zugedeckt etwa 15 Minuten köcheln lassen, bis die Linsen weich sind.",
+    "Die Rosmarinzweiglein aus dem Topf entfernen.",
+    "Den veganen Crème fraîche-Ersatz unterrühren, nochmals kurz erwärmen und mit Salz und Pfeffer abschmecken.",
+    "Den Eintopf heiss in Schalen anrichten und servieren."
+  ],
+  "tips": "Der Eintopf schmeckt am nächsten Tag noch intensiver, da die Aromen von Rosmarin und Cidre gut durchziehen können. Er lässt sich auch gut portionsweise einfrieren.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/23802/veganer-herbsteintopf",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T16:02:21.346Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "sellerie",
+    "sulfite"
+  ],
+  "nutrition": {
+    "kcal": 418,
+    "protein": 12.5,
+    "fat": 18.7,
+    "carbs": 43.6,
+    "fiber": 9.8
+  }
+}

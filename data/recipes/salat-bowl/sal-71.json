@@ -1,0 +1,232 @@
+{
+  "id": "sal-71",
+  "name": "Broccoli-Teigwaren-Salat mit Cherry-Tomaten und Gruyère",
+  "category": "Salate & Bowls",
+  "timeMinutes": 20,
+  "basePortions": 4,
+  "weatherType": "warm",
+  "dietCategory": "vegetarian",
+  "description": "Dieser Salat ist genau das, was ich mache, wenn mittags schnell etwas Sättigendes auf den Tisch soll und trotzdem noch Gemüse drin sein muss. Broccoli, knackige Gurke und würziger Gruyère machen aus ein paar Teigwaren ein vollwertiges Mittagessen, das auch kalt am nächsten Tag noch schmeckt.",
+  "tags": [
+    "Mittagessen",
+    "Mealprep-geeignet",
+    "Gut zum Mitnehmen",
+    "Ohne Kochen",
+    "Sommer",
+    "Schweizerisch"
+  ],
+  "ingredients": [
+    {
+      "name": "Teigwaren",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Broccoli",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Cherry-Tomaten",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Gurke",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Gruyère",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Schnittlauch",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Bio-Zitrone",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Jogurt nature",
+      "amount": 90,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebouillon",
+      "amount": 0.5,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Teigwarensalat",
+      "ingredients": [
+        {
+          "name": "Teigwaren",
+          "amount": 150,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Broccoli",
+          "amount": 400,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Cherry-Tomaten",
+          "amount": 150,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Gurke",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Gruyère",
+          "amount": 100,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Schnittlauch",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Dressing",
+      "ingredients": [
+        {
+          "name": "Bio-Zitrone",
+          "amount": 0.5,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Jogurt nature",
+          "amount": 90,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Gemüsebouillon",
+          "amount": 0.5,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Die Teigwaren nach Packungsangabe in gesalzenem Wasser kochen, dabei den Broccoli in kleine Röschen teilen und in den letzten 3 Minuten der Kochzeit zu den Teigwaren in den Topf geben.",
+    "Teigwaren und Broccoli in ein Sieb abgiessen, kurz mit kaltem Wasser abschrecken und gut abtropfen lassen.",
+    "Die Cherry-Tomaten halbieren, die Gurke in Scheiben oder Halbmonde schneiden und den Gruyère in kleine Würfel schneiden.",
+    "Von der Bio-Zitrone die Schale fein abreiben und den Saft auspressen.",
+    "Für das Dressing den Jogurt mit der Gemüsebouillon, dem Zitronensaft, der Zitronenschale und dem Olivenöl in einer kleinen Schüssel glattrühren.",
+    "Das Dressing mit Salz und Pfeffer abschmecken.",
+    "Die abgetropften Teigwaren und den Broccoli mit den Cherry-Tomaten, der Gurke und dem Gruyère in einer grossen Schüssel mischen.",
+    "Das Dressing über den Salat giessen und alles gut vermengen.",
+    "Den Schnittlauch fein schneiden, über den Salat streuen und servieren."
+  ],
+  "tips": "Der Salat lässt sich gut einen Tag im Voraus zubereiten und schmeckt durchgezogen sogar noch besser, ideal auch für die Znüni-Box am nächsten Tag.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/13424/sommer-salat",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T16:05:36.419Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 342,
+    "protein": 17.2,
+    "fat": 13.8,
+    "carbs": 36.5,
+    "fiber": 5.4
+  }
+}

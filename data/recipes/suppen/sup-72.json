@@ -1,0 +1,227 @@
+{
+  "id": "sup-72",
+  "name": "Thailändische Rüebli-Maissuppe mit Kokosmilch und Erdnüssen",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 40,
+  "basePortions": 4,
+  "weatherType": "kalt",
+  "dietCategory": "vegan",
+  "description": "Diese Suppe ist an kühlen Tagen genau das Richtige, wenn man etwas Wärmendes mit einem Hauch Exotik möchte. Die Kombination aus süsslichen Rüebli, cremiger Kokosmilch und der Schärfe der Currypaste erinnert an einen Thai-Imbiss um die Ecke, und der Crunch der Erdnüsse obendrauf macht jeden Löffel spannend.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "One-Pot-Gericht",
+    "Mealprep-geeignet",
+    "Einfrierbar",
+    "Herbst",
+    "Winter",
+    "Thai"
+  ],
+  "ingredients": [
+    {
+      "name": "Bundzwiebeln mit dem Grün",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Rüebli",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Limettenblätter (Citrus hystrix)",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "rote Chili",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "rote Currypaste",
+      "amount": 1.5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kurkuma",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kokosmilch",
+      "amount": 2.5,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Maiskörner",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebouillon",
+      "amount": 1.25,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Sesamöl",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "gesalzene Erdnüsse",
+      "amount": 40,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Koriander",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Bundzwiebeln mit dem Grün",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für die Suppe",
+      "ingredients": [
+        {
+          "name": "Bundzwiebeln mit dem Grün",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Rüebli",
+          "amount": 500,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Limettenblätter (Citrus hystrix)",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "rote Chili",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "rote Currypaste",
+          "amount": 1.5,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Kurkuma",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Kokosmilch",
+          "amount": 2.5,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Maiskörner",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Gemüsebouillon",
+          "amount": 1.25,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Sesamöl",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten zum Anrichten",
+      "ingredients": [
+        {
+          "name": "gesalzene Erdnüsse",
+          "amount": 40,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Koriander",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Bundzwiebeln mit dem Grün",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Die Bundzwiebeln waschen, putzen und in feine Ringe schneiden, dabei das Weisse und das Grün getrennt halten.",
+    "Die Rüebli schälen und in dünne Scheiben oder Stifte schneiden.",
+    "Die rote Chili waschen, entkernen und fein hacken.",
+    "Das Sesamöl in einem grossen Topf erhitzen und das Weisse der Bundzwiebeln zusammen mit der gehackten Chili darin kurz andämpfen.",
+    "Die rote Currypaste und das Kurkuma beigeben und unter Rühren etwa eine Minute mitdünsten, bis die Gewürze zu duften beginnen.",
+    "Die Rüebli sowie die Limettenblätter beigeben und kurz mitdämpfen.",
+    "Die Gemüsebouillon und die Kokosmilch angiessen und alles gut verrühren.",
+    "Die Suppe zugedeckt bei mittlerer Hitze etwa 25 bis 30 Minuten köcheln lassen, bis die Rüebli weich sind.",
+    "Die Maiskörner abtropfen lassen, in die Suppe geben und nochmals 5 Minuten mitkochen.",
+    "Die Limettenblätter aus der Suppe entfernen und die Suppe nach Belieben mit Salz abschmecken.",
+    "Die Erdnüsse grob hacken.",
+    "Die Suppe in Schalen anrichten und mit den gehackten Erdnüssen, dem Koriander und dem Grün der Bundzwiebeln bestreuen."
+  ],
+  "tips": "Wer es milder mag, lässt die Chili weg oder verwendet weniger Currypaste. Die Suppe lässt sich gut vorkochen und schmeckt am nächsten Tag noch intensiver.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/16596/rueebli-kokossuppe",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T15:59:22.188Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "erdnuesse",
+    "milch",
+    "sesam"
+  ],
+  "nutrition": {
+    "kcal": 312,
+    "protein": 8.6,
+    "fat": 19.8,
+    "carbs": 26.4,
+    "fiber": 6.2
+  }
+}

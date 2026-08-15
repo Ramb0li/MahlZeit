@@ -1,0 +1,259 @@
+{
+  "id": "fis-25",
+  "name": "Lachsspiesse mit Peperoni und Zitronen-Olivenmarinade",
+  "category": "Fisch & Meeresfrüchte",
+  "timeMinutes": 155,
+  "basePortions": 4,
+  "weatherType": "warm",
+  "dietCategory": "fish",
+  "description": "Diese Spiesse erinnern mich an laue Abende auf der Terrasse, wenn der Lachs in der Zitronenmarinade zieht und der Duft von Fenchelsamen durch die Küche zieht. Bunt, unkompliziert und ideal, wenn man mit wenig Aufwand etwas auf den Tisch bringen möchte, das nach Ferien schmeckt.",
+  "tags": [
+    "Abendessen",
+    "Snack",
+    "Grillgericht",
+    "Für Gäste",
+    "Sommer",
+    "Mediterran"
+  ],
+  "ingredients": [
+    {
+      "name": "Lachsfilet",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Peperoni",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel (rot)",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Oliven, entsteint",
+      "amount": 50,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitrone, unbehandelt",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Petersilie, gehackt",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Zitronensaft",
+      "amount": 5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Fenchelsamen, gemahlen",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "schwarzer Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Lachsspiesse",
+      "ingredients": [
+        {
+          "name": "Lachsfilet",
+          "amount": 400,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Peperoni",
+          "amount": 3,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Zwiebel (rot)",
+          "amount": 4,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Oliven, entsteint",
+          "amount": 50,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Zitrone, unbehandelt",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Petersilie, gehackt",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Zitronensaft",
+          "amount": 3,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Marinade",
+      "ingredients": [
+        {
+          "name": "Olivenöl",
+          "amount": 5,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Zitronensaft",
+          "amount": 5,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Fenchelsamen, gemahlen",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Zwiebel",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "schwarzer Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Für die Marinade das Olivenöl, den Zitronensaft, die gemahlenen Fenchelsamen, Salz und schwarzen Pfeffer in einer Schüssel gründlich verrühren.",
+    "Die eine Zwiebel für die Marinade fein hacken und unter die Marinade rühren.",
+    "Den Lachs von Haut und Gräten befreien und in etwa 3 cm grosse Würfel schneiden.",
+    "Die Peperoni waschen, entkernen und in mundgerechte Stücke schneiden.",
+    "Die vier roten Zwiebeln schälen und in grobe Stücke oder Achtel schneiden, die sich gut auf den Spiess stecken lassen.",
+    "Die Lachswürfel zusammen mit den Peperoni- und Zwiebelstücken in die Marinade geben und alles gut vermengen, sodass jedes Stück benetzt ist.",
+    "Die Schüssel abdecken und den Fisch mit dem Gemüse mindestens 2 Stunden im Kühlschrank marinieren lassen.",
+    "Die marinierten Lachs- und Gemüsestücke abwechselnd mit den entsteinten Oliven auf Spiesse stecken.",
+    "Die Zitrone waschen, in dünne Scheiben oder Schnitze schneiden und nach Wunsch zwischen den anderen Zutaten mit auf die Spiesse stecken.",
+    "Die fertigen Spiesse mit Salz und Pfeffer würzen.",
+    "Die Spiesse auf dem heissen Grill oder in der Grillpfanne von allen Seiten insgesamt etwa 5 Minuten grillieren, bis der Lachs gerade gar ist.",
+    "Die gegrillten Spiesse mit dem restlichen Olivenöl beträufeln, mit gehackter Petersilie bestreuen und sofort servieren."
+  ],
+  "tips": "Dazu passt ein einfacher Bulgur- oder Reissalat, und wer keinen Grill zur Hand hat, kann die Spiesse auch unter dem Backofengrill zubereiten.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://www.gutekueche.at/gegrillte-fischspiesse-rezept-321",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T15:58:54.806Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "fisch"
+  ],
+  "nutrition": {
+    "kcal": 398,
+    "protein": 24.3,
+    "fat": 27.8,
+    "carbs": 12.4,
+    "fiber": 2.8
+  }
+}

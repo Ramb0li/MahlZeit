@@ -1,0 +1,216 @@
+{
+  "id": "son-118",
+  "name": "Ofengemüse mit Feta, Mandeln und Honig-Balsamico-Dressing",
+  "category": "Gemüsegerichte",
+  "timeMinutes": 60,
+  "basePortions": 4,
+  "weatherType": "warm",
+  "dietCategory": "vegetarian",
+  "description": "An einem lauen Sommerabend, wenn Aubergine, Zucchetti und Peperoni gerade reif und günstig zu haben sind, kommt dieses Ofengemüse fast von selbst zusammen. Der Honig zusammen mit dem Balsamico gibt dem Gemüse eine feine Süsse, der Feta und die gerösteten Mandelstifte sorgen für den Kick obendrauf.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Ofengericht",
+    "Sommer",
+    "Mediterran",
+    "Für Gäste"
+  ],
+  "ingredients": [
+    {
+      "name": "Auberginen",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Zucchetti",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "rote Peperoni",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Aceto balsamico",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "flüssiger Blütenhonig",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Mandelstifte",
+      "amount": 40,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Feta",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Basilikumblätter",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Ofengemüse",
+      "ingredients": [
+        {
+          "name": "Auberginen",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Zucchetti",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "rote Peperoni",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Knoblauchzehe",
+          "amount": 1,
+          "unit": "Zehe",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 4,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Dressing",
+      "ingredients": [
+        {
+          "name": "Olivenöl",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Aceto balsamico",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "flüssiger Blütenhonig",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Garnitur",
+      "ingredients": [
+        {
+          "name": "Mandelstifte",
+          "amount": 40,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Feta",
+          "amount": 100,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Basilikumblätter",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Den Backofen auf 220 °C Ober- und Unterhitze vorheizen.",
+    "Die Auberginen, Zucchetti und Peperoni waschen und in mundgerechte Stücke oder Scheiben schneiden.",
+    "Den Knoblauch schälen und fein hacken.",
+    "Das geschnittene Gemüse zusammen mit dem gehackten Knoblauch, 4 EL Olivenöl und 1 TL Salz in einer grossen Schüssel gut mischen, sodass alle Stücke gleichmässig mit Öl überzogen sind.",
+    "Das Gemüse auf einem mit Backpapier ausgelegten Blech verteilen und im vorgeheizten Backofen bei 220 °C etwa 25 bis 30 Minuten rösten, bis es weich und an den Rändern leicht gebräunt ist.",
+    "Während das Gemüse im Ofen ist, die Mandelstifte in einer trockenen Pfanne bei mittlerer Hitze etwa 5 Minuten goldbraun rösten und dabei häufig wenden, damit sie nicht anbrennen.",
+    "Für das Dressing 2 EL Olivenöl, 2 EL Aceto balsamico und 1 EL flüssigen Blütenhonig in einer kleinen Schüssel verrühren.",
+    "Das geröstete Gemüse aus dem Ofen nehmen und auf einer Platte oder in einer Schale anrichten.",
+    "Das Dressing über das warme Gemüse träufeln.",
+    "Den Feta über das Gemüse bröckeln, die gerösteten Mandelstifte darüberstreuen und die Basilikumblätter grob zupfen und zum Schluss darüberstreuen.",
+    "Das Ofengemüse lauwarm servieren."
+  ],
+  "tips": "Dazu passt frisches Fladenbrot oder ein einfaches Couscous als Beilage. Das Gemüse lässt sich auch gut vorbereiten und am nächsten Tag kalt als Salat geniessen.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/18076/grillgemuese-mit-feta",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T16:03:40.480Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch",
+    "schalenfruechte"
+  ],
+  "nutrition": {
+    "kcal": 312,
+    "protein": 8.4,
+    "fat": 24.6,
+    "carbs": 16.8,
+    "fiber": 6.4
+  }
+}

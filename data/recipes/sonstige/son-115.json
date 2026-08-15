@@ -1,0 +1,129 @@
+{
+  "id": "son-115",
+  "name": "Gebratenes Poulet mit Paprika-Cayenne-Gewürzöl",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 4,
+  "basePortions": 4,
+  "weatherType": "neutral",
+  "dietCategory": "meat",
+  "description": "Ein schnelles Gewürzöl aus Paprika, einer Prise Cayennepfeffer und Salz verwandelt schlichte Pouletbrust in ein würziges Highlight, das an geschäftigen Wochentagen in wenigen Minuten auf dem Tisch steht. Ideal, wenn man abends noch schnell etwas Deftiges braucht, aber keine Lust auf lange Marinierzeiten hat.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Kinderfreundlich",
+    "Budgetfreundlich",
+    "Pfannengericht",
+    "Ganzjährig"
+  ],
+  "ingredients": [
+    {
+      "name": "Olivenöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Paprikapulver edelsüss",
+      "amount": 3,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Cayennepfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "schwarzer Pfeffer aus der Mühle",
+      "amount": 0.25,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pouletbrust",
+      "amount": 450,
+      "unit": "g",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Gewürzöl",
+      "ingredients": [
+        {
+          "name": "Olivenöl",
+          "amount": 3,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Paprikapulver edelsüss",
+          "amount": 3,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Cayennepfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "schwarzer Pfeffer aus der Mühle",
+          "amount": 0.25,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Poulet",
+      "ingredients": [
+        {
+          "name": "Pouletbrust",
+          "amount": 450,
+          "unit": "g",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Das Olivenöl mit Paprikapulver, Cayennepfeffer, schwarzem Pfeffer und Salz in einer kleinen Schüssel gründlich verrühren, bis eine gleichmässige Gewürzpaste entsteht.",
+    "Das Pouletbrustfilet in mundgerechte Streifen oder Stücke schneiden und mit dem Gewürzöl gut vermischen, sodass alle Stücke gleichmässig bedeckt sind.",
+    "Eine Bratpfanne bei mittlerer bis hoher Hitze erhitzen und das gewürzte Poulet darin etwa 4 Minuten braten, dabei gelegentlich wenden, bis es rundum goldbraun und durchgegart ist.",
+    "Das gebratene Poulet sofort heiss servieren."
+  ],
+  "tips": "Passt gut zu Reis, einem frischen Salat oder als Füllung für Wraps und Fladenbrot. Wer es schärfer mag, verdoppelt einfach den Cayennepfeffer.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://emmikochteinfach.de/haehnchen-marinade/",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T16:01:54.105Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [],
+  "nutrition": {
+    "kcal": 182,
+    "protein": 25.3,
+    "fat": 8.2,
+    "carbs": 1.8,
+    "fiber": 0.4
+  }
+}

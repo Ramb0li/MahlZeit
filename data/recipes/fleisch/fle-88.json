@@ -1,0 +1,160 @@
+{
+  "id": "fle-88",
+  "name": "Poulet-Spiesse mit Peperoni, Zwiebeln und Joghurt-Dip",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 45,
+  "basePortions": 3,
+  "weatherType": "warm",
+  "dietCategory": "meat",
+  "description": "Diese Spiesse sind genau das Richtige, wenn man Lust auf etwas Rauchiges vom Grill hat, aber nicht ewig in der Küche stehen will. Die Gewürzmischung gibt der Pouletbrust eine schöne Würze, und der cremige Joghurt-Dip bringt die nötige Frische dazu. Bei uns landen die Reste am nächsten Tag oft einfach im Wrap.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Grillgericht",
+    "Kinderfreundlich",
+    "Gut zum Mitnehmen",
+    "Sommer"
+  ],
+  "ingredients": [
+    {
+      "name": "Pouletbrust",
+      "amount": 700,
+      "unit": "g",
+      "perPortions": 3
+    },
+    {
+      "name": "rote Peperoni",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 3
+    },
+    {
+      "name": "grosse Zwiebel",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 3
+    },
+    {
+      "name": "Pepperoni",
+      "amount": 5,
+      "unit": "Stk",
+      "perPortions": 3
+    },
+    {
+      "name": "Ankerkraut Smoking Zeus Gewürzmischung",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 3
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 3
+    },
+    {
+      "name": "griechischer Joghurt (10% Fett)",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 3
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 3
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Poulet-Spiesse",
+      "ingredients": [
+        {
+          "name": "Pouletbrust",
+          "amount": 700,
+          "unit": "g",
+          "perPortions": 3
+        },
+        {
+          "name": "rote Peperoni",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 3
+        },
+        {
+          "name": "grosse Zwiebel",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 3
+        },
+        {
+          "name": "Pepperoni",
+          "amount": 5,
+          "unit": "Stk",
+          "perPortions": 3
+        },
+        {
+          "name": "Ankerkraut Smoking Zeus Gewürzmischung",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 3
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 3
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Joghurt-Dip",
+      "ingredients": [
+        {
+          "name": "griechischer Joghurt (10% Fett)",
+          "amount": 100,
+          "unit": "g",
+          "perPortions": 3
+        },
+        {
+          "name": "Knoblauchzehe",
+          "amount": 1,
+          "unit": "Zehe",
+          "perPortions": 3
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Die Pouletbrust in mundgerechte Würfel von etwa 3 cm Kantenlänge schneiden.",
+    "Die rote Peperoni und die Zwiebel ebenfalls in Stücke von etwa 3 cm schneiden, die Pepperoni je nach Grösse halbieren oder ganz lassen.",
+    "Die Pouletwürfel mit 2 EL Olivenöl und der Gewürzmischung Smoking Zeus in einer Schüssel gut vermengen und kurz durchziehen lassen.",
+    "Poulet, Peperoni, Zwiebel und Pepperoni abwechselnd auf Spiesse stecken.",
+    "Falls Holzspiesse verwendet werden, diese vorher etwa 20 Minuten in Wasser einlegen, damit sie beim Grillieren nicht verbrennen.",
+    "Den Grill oder eine Grillpfanne auf mittlere bis hohe Hitze vorheizen.",
+    "Die Spiesse rundum etwa 12 bis 15 Minuten grillieren, dabei regelmässig wenden, bis das Poulet gar ist und schöne Röstspuren zeigt.",
+    "Für den Dip die Knoblauchzehe fein reiben oder pressen und mit dem griechischen Joghurt verrühren, nach Belieben mit etwas Salz abschmecken.",
+    "Die Poulet-Spiesse mit dem Joghurt-Dip servieren."
+  ],
+  "tips": "Dazu passt Fladenbrot oder ein einfacher Reis, und übrig gebliebene Spiesse schmecken am nächsten Tag kalt im Salat genauso gut.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://www.amgrillplatz.de/recipe/gyrosspiesse-aus-haehnchenbrust/",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T16:01:30.442Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch"
+  ],
+  "nutrition": {
+    "kcal": 368,
+    "protein": 56.8,
+    "fat": 12.4,
+    "carbs": 8.6,
+    "fiber": 1.8
+  }
+}

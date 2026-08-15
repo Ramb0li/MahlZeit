@@ -1,0 +1,213 @@
+{
+  "id": "sal-70",
+  "name": "Glasnudelsalat mit Rüebli, Chinakohl und Erdnüssen",
+  "category": "Salate & Bowls",
+  "timeMinutes": 25,
+  "basePortions": 2,
+  "weatherType": "warm",
+  "dietCategory": "vegan",
+  "description": "Dieser Salat ist genau das Richtige, wenn es schnell gehen muss, aber trotzdem frisch und aromatisch schmecken soll. Die Mischung aus Limette, Chili und Koriander bringt richtig Schwung auf den Teller, und die Glasnudeln machen daraus eine sättigende Mahlzeit. Ideal auch für den nächsten Tag, wenn die Aromen noch etwas durchgezogen sind.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Mealprep-geeignet",
+    "Gut zum Mitnehmen",
+    "Budgetfreundlich",
+    "Ohne Kochen",
+    "Sommer",
+    "Thai"
+  ],
+  "ingredients": [
+    {
+      "name": "Glasnudeln",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Chinakohl",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 2
+    },
+    {
+      "name": "Rüebli",
+      "amount": 3,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Bundzwiebeln",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "rote Chili",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Koriander",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 2
+    },
+    {
+      "name": "Thai-Basilikum",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 2
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 2
+    },
+    {
+      "name": "Erdnüsse, ungesalzen",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "Limette",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 2
+    },
+    {
+      "name": "Sojasauce",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 2
+    },
+    {
+      "name": "dunkles Sesamöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 2
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Glasnudelsalat",
+      "ingredients": [
+        {
+          "name": "Glasnudeln",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 2
+        },
+        {
+          "name": "Chinakohl",
+          "amount": 100,
+          "unit": "g",
+          "perPortions": 2
+        },
+        {
+          "name": "Rüebli",
+          "amount": 3,
+          "unit": "Stk",
+          "perPortions": 2
+        },
+        {
+          "name": "Bundzwiebeln",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 2
+        },
+        {
+          "name": "rote Chili",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 2
+        },
+        {
+          "name": "Koriander",
+          "amount": 0.5,
+          "unit": "Bund",
+          "perPortions": 2
+        },
+        {
+          "name": "Thai-Basilikum",
+          "amount": 0.5,
+          "unit": "Bund",
+          "perPortions": 2
+        },
+        {
+          "name": "Knoblauchzehe",
+          "amount": 1,
+          "unit": "Zehe",
+          "perPortions": 2
+        },
+        {
+          "name": "Erdnüsse, ungesalzen",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 2
+        },
+        {
+          "name": "Limette",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 2
+        },
+        {
+          "name": "Sojasauce",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 2
+        },
+        {
+          "name": "dunkles Sesamöl",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 2
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Für die Glasnudeln reichlich Wasser in einem Topf aufkochen.",
+    "Die Glasnudeln gemäss Packungsangabe im kochenden Wasser garen, dann abgiessen und mit kaltem Wasser abschrecken, damit sie nicht zusammenkleben.",
+    "Den Chinakohl in feine Streifen schneiden.",
+    "Die Rüebli schälen und in feine Streifen oder Julienne hobeln.",
+    "Die Bundzwiebeln in feine Ringe schneiden.",
+    "Die Chili entkernen und fein hacken.",
+    "Den Koriander und das Thai-Basilikum grob hacken.",
+    "Den Knoblauch schälen und fein reiben oder pressen.",
+    "Die Erdnüsse grob hacken.",
+    "Die Limette auspressen.",
+    "Für das Dressing den Limettensaft, die Sojasauce, das Sesamöl und den Knoblauch in einer kleinen Schüssel gut verrühren.",
+    "Die abgekühlten Glasnudeln mit Chinakohl, Rüebli, Bundzwiebeln, Chili, Koriander und Thai-Basilikum in einer grossen Schüssel mischen.",
+    "Das Dressing über den Salat giessen und alles gut vermengen.",
+    "Den Salat mit den gehackten Erdnüssen bestreuen und sofort servieren."
+  ],
+  "tips": "Wer es etwas milder mag, entfernt die Kerne der Chili vollständig oder reduziert die Menge. Der Salat lässt sich gut einen Tag im Voraus zubereiten und schmeckt durchgezogen sogar noch intensiver.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/13697/glasnudelsalat",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T16:05:08.652Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "erdnuesse",
+    "gluten",
+    "sesam",
+    "soja"
+  ],
+  "nutrition": {
+    "kcal": 348,
+    "protein": 9.4,
+    "fat": 15.6,
+    "carbs": 43.8,
+    "fiber": 5.7
+  }
+}

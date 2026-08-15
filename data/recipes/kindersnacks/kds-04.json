@@ -36,7 +36,7 @@
       "perPortions": 12
     },
     {
-      "name": "Speisestärke",
+      "name": "Maizena",
       "amount": 2,
       "unit": "EL",
       "perPortions": 12
@@ -72,7 +72,7 @@
       "perPortions": 12
     },
     {
-      "name": "Gemüse (z.B. Karotte, Zucchini, Erbsen)",
+      "name": "Gemüse (z.B. Karotte, Zucchetti, Erbsen)",
       "amount": 450,
       "unit": "g",
       "perPortions": 12

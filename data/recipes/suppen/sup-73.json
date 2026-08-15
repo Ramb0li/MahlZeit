@@ -1,0 +1,131 @@
+{
+  "id": "sup-73",
+  "name": "Miso-Suppe mit Seidentofu, Shiitake und Gojibeeren",
+  "category": "Suppen, Eintöpfe & Currys",
+  "timeMinutes": 30,
+  "basePortions": 4,
+  "weatherType": "kalt",
+  "dietCategory": "vegan",
+  "description": "Eine leichte Miso-Suppe, wie man sie sich nach einem stressigen Tag wünscht: schnell gekocht, wärmend und mit dem erdigen Aroma von Shiitake-Pilzen. Die Gojibeeren geben einen dezent süsslichen Kontrast, der Koriander sorgt für Frische im letzten Moment.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "One-Pot-Gericht",
+    "Ganzjährig",
+    "Japanisch",
+    "Mealprep-geeignet",
+    "Budgetfreundlich"
+  ],
+  "ingredients": [
+    {
+      "name": "Seidentofu",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Koriander",
+      "amount": 0.5,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Mungbohnensprossen",
+      "amount": 60,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Shiitake-Pilze",
+      "amount": 60,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Gojibeeren, getrocknet",
+      "amount": 40,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Miso-Paste",
+      "amount": 72,
+      "unit": "g",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Miso-Suppe",
+      "ingredients": [
+        {
+          "name": "Seidentofu",
+          "amount": 200,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Koriander",
+          "amount": 0.5,
+          "unit": "Bund",
+          "perPortions": 4
+        },
+        {
+          "name": "Mungbohnensprossen",
+          "amount": 60,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Shiitake-Pilze",
+          "amount": 60,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Gojibeeren, getrocknet",
+          "amount": 40,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Miso-Paste",
+          "amount": 72,
+          "unit": "g",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Die Shiitake-Pilze putzen und in dünne Scheiben schneiden.",
+    "Den Seidentofu vorsichtig in kleine Würfel schneiden, damit er nicht zerfällt.",
+    "Etwa 1 Liter Wasser in einem Topf aufkochen.",
+    "Die Shiitake-Pilze und die getrockneten Gojibeeren in das kochende Wasser geben und 5 Minuten köcheln lassen, bis die Pilze weich sind.",
+    "Die Miso-Paste in einer kleinen Schüssel mit etwas heisser Brühe glattrühren und anschliessend in den Topf einrühren, damit keine Klümpchen entstehen.",
+    "Die Hitze reduzieren, den Seidentofu und die Mungbohnensprossen vorsichtig in die Suppe geben und kurz ziehen lassen, ohne nochmals aufzukochen.",
+    "Den Koriander grob hacken und die Suppe damit bestreuen.",
+    "Die Miso-Suppe sofort heiss servieren."
+  ],
+  "tips": "Für mehr Sättigung passen gekochte Reisnudeln oder etwas Reis in die Suppe. Miso-Paste sollte nicht mehr aufgekocht werden, da sonst wertvolle Aromen und Enzyme verloren gehen.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/13066/miso-suppe-mit-tofu",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T15:59:44.366Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "soja"
+  ],
+  "nutrition": {
+    "kcal": 128,
+    "protein": 10.2,
+    "fat": 4.8,
+    "carbs": 13.5,
+    "fiber": 2.3
+  }
+}

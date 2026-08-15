@@ -1,0 +1,319 @@
+{
+  "id": "fle-86",
+  "name": "Pouletbrüstli mit Pastinaken-Sellerie-Stampf und Senfsauce",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 45,
+  "basePortions": 4,
+  "weatherType": "kalt",
+  "dietCategory": "meat",
+  "description": "Ein Herbstgericht, wie es an einem grauen Sonntag richtig guttut: zartes Poulet in einer cremigen Senfsauce, dazu ein Stampf aus Pastinaken und Knollensellerie, der viel würziger daherkommt als gewöhnliches Kartoffelpüree. Der Jungspinat bringt am Schluss noch etwas Frische und Farbe auf den Teller.",
+  "tags": [
+    "Abendessen",
+    "Mittagessen",
+    "Pfannengericht",
+    "Herbst",
+    "Winter",
+    "Kinderfreundlich",
+    "Für Gäste"
+  ],
+  "ingredients": [
+    {
+      "name": "Pastinaken",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Knollensellerie",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Butter",
+      "amount": 20,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pouletbrüstli",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Bratbutter",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Schalotten",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Weisswein",
+      "amount": 1,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Saucen-Halbrahm",
+      "amount": 2,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "saurer Halbrahm",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "grobkörniger Senf",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Jungspinat",
+      "amount": 100,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Pastinaken-Sellerie-Stampf",
+      "ingredients": [
+        {
+          "name": "Pastinaken",
+          "amount": 500,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Knollensellerie",
+          "amount": 500,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Butter",
+          "amount": 20,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Poulet",
+      "ingredients": [
+        {
+          "name": "Pouletbrüstli",
+          "amount": 4,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Bratbutter",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Senfsauce",
+      "ingredients": [
+        {
+          "name": "Schalotten",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Knoblauchzehe",
+          "amount": 1,
+          "unit": "Zehe",
+          "perPortions": 4
+        },
+        {
+          "name": "Weisswein",
+          "amount": 1,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Saucen-Halbrahm",
+          "amount": 2,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "saurer Halbrahm",
+          "amount": 200,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "grobkörniger Senf",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Spinat",
+      "ingredients": [
+        {
+          "name": "Jungspinat",
+          "amount": 100,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Pastinaken und Knollensellerie schälen, in gleichmässige Stücke schneiden und in Salzwasser rund 20 Minuten weich kochen.",
+    "Das Gemüse abgiessen, die Butter beigeben und mit einem Stampfer oder Kartoffelstampfer grob zerdrücken, mit Salz und Pfeffer abschmecken und warmstellen.",
+    "Die Pouletbrüstli mit Salz und Pfeffer würzen.",
+    "Die Bratbutter in einer Bratpfanne erhitzen und die Pouletbrüstli darin auf beiden Seiten je 4 bis 5 Minuten braten, bis sie goldbraun sind und gar sind, anschliessend aus der Pfanne nehmen und warmhalten.",
+    "Schalotten und Knoblauchzehe fein hacken und im verbliebenen Bratfett bei mittlerer Hitze 2 bis 3 Minuten andämpfen, bis sie glasig sind.",
+    "Mit dem Weisswein ablöschen und kurz einkochen lassen.",
+    "Den Saucen-Halbrahm und den sauren Halbrahm beigeben, den Senf einrühren und die Sauce bei kleiner Hitze rund 5 Minuten leicht einköcheln lassen.",
+    "Die Sauce mit Salz und Pfeffer abschmecken und die gebratenen Pouletbrüstli darin nochmals kurz erwärmen.",
+    "Den Jungspinat in einer separaten Pfanne kurz andämpfen, bis er zusammenfällt, und mit Salz und Pfeffer würzen.",
+    "Den Pastinaken-Sellerie-Stampf mit den Pouletbrüstli, der Senfsauce und dem Spinat auf vorgewärmten Tellern anrichten und servieren."
+  ],
+  "tips": "Wer es milder mag, ersetzt einen Teil des groben Senfs durch normalen Dijon-Senf. Die Sauce lässt sich gut vorbereiten und am nächsten Tag sanft aufwärmen.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/21827/senfpoulet-mit-pastinakenstock",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T16:00:42.107Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch",
+    "sellerie",
+    "senf",
+    "sulfite"
+  ],
+  "nutrition": {
+    "kcal": 548,
+    "protein": 42.6,
+    "fat": 26.8,
+    "carbs": 28.4,
+    "fiber": 8.2
+  }
+}

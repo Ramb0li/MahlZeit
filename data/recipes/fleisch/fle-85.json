@@ -1,0 +1,259 @@
+{
+  "id": "fle-85",
+  "name": "Poulet-Oberschenkel mit Cherry-Tomaten in Crème-fraîche-Sauce",
+  "category": "Fleisch & Geflügel",
+  "timeMinutes": 240,
+  "basePortions": 4,
+  "weatherType": "neutral",
+  "dietCategory": "meat",
+  "description": "Ein Poulet-Gericht, das viel Geschmack bringt, ohne dass man stundenlang am Herd stehen muss – die Marinierzeit erledigt die meiste Arbeit von selbst. Die Kombination aus Ingwer, Chili und Zitrone gibt der cremigen Sauce eine angenehme Frische, während die Cherry-Tomaten beim Andämpfen leicht aufplatzen und ihre Süsse an das Ganze abgeben. Ein Gericht für einen Abend, an dem man Zeit für ein feines Nachtessen einplanen kann.",
+  "tags": [
+    "Abendessen",
+    "Für Gäste",
+    "Pfannengericht",
+    "Ganzjährig"
+  ],
+  "ingredients": [
+    {
+      "name": "Poulet-Oberschenkel",
+      "amount": 8,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Bio-Zitrone",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehen",
+      "amount": 3,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Bundzwiebeln mit Grün",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Ingwer",
+      "amount": 0.5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "rote Chili",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 0.25,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "milder Senf",
+      "amount": 1,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Cherry-Tomaten",
+      "amount": 500,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "glattblättrige Petersilie",
+      "amount": 4,
+      "unit": "Zweig",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfeffer",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Bratbutter",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Crème fraîche",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Ketchup",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Weisswein",
+      "amount": 4,
+      "unit": "EL",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für die Marinade",
+      "ingredients": [
+        {
+          "name": "Poulet-Oberschenkel",
+          "amount": 8,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Bio-Zitrone",
+          "amount": 0.5,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Knoblauchzehen",
+          "amount": 3,
+          "unit": "Zehe",
+          "perPortions": 4
+        },
+        {
+          "name": "Bundzwiebeln mit Grün",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Ingwer",
+          "amount": 0.5,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "rote Chili",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 0.25,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "milder Senf",
+          "amount": 1,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für die Sauce und das Anbraten",
+      "ingredients": [
+        {
+          "name": "Cherry-Tomaten",
+          "amount": 500,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "glattblättrige Petersilie",
+          "amount": 4,
+          "unit": "Zweig",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfeffer",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Bratbutter",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Crème fraîche",
+          "amount": 200,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Ketchup",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Weisswein",
+          "amount": 4,
+          "unit": "EL",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Die Schale der Bio-Zitrone fein abreiben und den Saft auspressen.",
+    "Knoblauchzehen fein hacken, Bundzwiebeln in Ringe schneiden, Ingwer reiben und die Chili fein hacken.",
+    "Zitronenschale, Zitronensaft, Knoblauch, Bundzwiebeln, Ingwer, Chili, Pfeffer, Salz und Senf in einer Schüssel vermischen.",
+    "Die Poulet-Oberschenkel in der Marinade wenden, zudecken und für 3 Stunden im Kühlschrank marinieren lassen.",
+    "Den Backofen auf 200 °C Ober- und Unterhitze vorheizen.",
+    "Bratbutter in einer ofenfesten Bratpfanne erhitzen und die marinierten Poulet-Oberschenkel darin rundum während etwa 5 Minuten scharf anbraten.",
+    "Die Cherry-Tomaten zu den Poulet-Oberschenkeln in die Pfanne geben und für 3 Minuten mitbraten, bis die Haut leicht aufplatzt.",
+    "Weisswein angiessen und kurz aufkochen lassen, damit sich der Bratensatz löst.",
+    "Crème fraîche und Ketchup unterrühren, sodass eine cremige Sauce entsteht.",
+    "Die Pfanne in den vorgeheizten Backofen stellen und das Poulet bei 200 °C für 15 Minuten andämpfen lassen, bis das Fleisch gar ist.",
+    "Vor dem Servieren die Petersilie grob hacken und über das Gericht streuen.",
+    "Für weitere 30 Minuten bei kleiner Hitze auf dem Herd köcheln lassen, falls die Sauce noch etwas einreduzieren soll."
+  ],
+  "tips": "Dazu passen Baguette oder Reis, um die feine Sauce aufzunehmen. Das Gericht lässt sich gut vorbereiten, da die Marinierzeit ohnehin eingeplant werden muss.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/20137/pouletsteaks-mit-tomaten-chili-sauce",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T16:00:13.241Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch",
+    "senf",
+    "sulfite"
+  ],
+  "nutrition": {
+    "kcal": 562,
+    "protein": 38.4,
+    "fat": 38.2,
+    "carbs": 12.8,
+    "fiber": 2.1
+  }
+}

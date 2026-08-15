@@ -1,918 +1,202 @@
 {
-  "date": "2026-08-01T11:07:56.601Z",
+  "date": "2026-08-01T16:05:36.719Z",
   "model": "claude-sonnet-5",
-  "laeufe": [
-    {
-      "n": 1,
-      "total": 45,
-      "ok": 25,
-      "failed": 20
-    },
-    {
-      "n": 2,
-      "total": 20,
-      "ok": 19,
-      "failed": 1
-    },
-    {
-      "n": 3,
-      "total": 1,
-      "ok": 1,
-      "failed": 0
-    }
-  ],
-  "total": 45,
-  "imported": 45,
+  "total": 19,
+  "imported": 19,
   "skipped": 0,
   "failed": 0,
   "recipes": [
     {
-      "url": "https://fooby.ch/de/rezepte/13124/quesadillas-mit-poulet",
-      "originalTitle": "Quesadillas mit Poulet",
-      "neuerName": "Poulet-Cheddar-Quesadillas mit Avocado-Tomaten-Füllung",
-      "id": "son-113",
-      "kategorie": "Wraps, Sandwiches & Burger",
+      "url": "https://fooby.ch/de/rezepte/13127/gruenes-thai-crevetten-curry",
+      "originalTitle": "Grünes Thai-Crevetten-Curry",
+      "neuerName": "Thai-Curry mit Crevetten, Papaya und Kokosmilch",
+      "id": "sup-71",
+      "kategorie": "Suppen, Eintöpfe & Currys",
       "status": "ok",
       "warnungen": [],
       "faktenAuszug": {
         "zutaten": [
-          "4 Pouletbrüstli",
-          "1 Avocados",
-          "½ EL Paprika",
-          "2 Tomaten",
-          "wenig Chilipulver",
-          "wenig Pfeffer",
-          "1 EL Salz",
-          "150 Cheddar",
-          "8 Weizen-Tortillas",
-          "wenig Öl"
-        ],
-        "ablaufStichworte": [
-          "mischen",
-          "wenden"
-        ],
-        "zeiten": [
-          "4 Min.",
-          "2 Min."
-        ],
-        "temperaturen": [],
-        "gesamtzeitMin": 25,
-        "portionen": 4,
-        "quellKategorie": "Apéro und Fingerfood",
-        "quellKueche": ""
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/13125/club-sandwich",
-      "originalTitle": "Club-Sandwich",
-      "neuerName": "Club Sandwich mit Poulet und Bratspeck",
-      "id": "son-110",
-      "kategorie": "Wraps, Sandwiches & Burger",
-      "status": "ok",
-      "warnungen": [],
-      "faktenAuszug": {
-        "zutaten": [
-          "12 Scheibe Toastbrot",
-          "8 Tranche Bratspeck",
-          "2 Pouletbrüstli",
-          "½ TL Paprika",
-          "2 Tomaten",
-          "½ Eisbergsalat",
-          "¼ TL Salz",
-          "2 EL grobkörniger Senf",
-          "4 frische Eier",
-          "125 g Frischkäse nature"
-        ],
-        "ablaufStichworte": [
-          "schichten",
-          "schneiden"
-        ],
-        "zeiten": [
-          "4 Min.",
-          "5 Min."
-        ],
-        "temperaturen": [
-          "60 °C"
-        ],
-        "gesamtzeitMin": 30,
-        "portionen": 8,
-        "quellKategorie": "Apéro und Fingerfood",
-        "quellKueche": ""
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/14556/poulet-wrap",
-      "originalTitle": "Poulet-Wrap",
-      "neuerName": "Poulet-Wrap mit Cheddar und Sunny Salad",
-      "id": "son-111",
-      "kategorie": "Wraps, Sandwiches & Burger",
-      "status": "ok",
-      "warnungen": [
-        "dietCategory: Modell sagte \"meat\", Zutaten-Scan ergab \"vegetarian\"."
-      ],
-      "faktenAuszug": {
-        "zutaten": [
-          "120 g Betty Bossi Sunny Salad",
-          "130 g Herbs chicken stripes",
-          "100 g Cheddar",
-          "4 Weizen-Tortillas"
-        ],
-        "ablaufStichworte": [
-          "braten"
-        ],
-        "zeiten": [
-          "5 Min."
-        ],
-        "temperaturen": [],
-        "gesamtzeitMin": 10,
-        "portionen": 2,
-        "quellKategorie": "Hauptgericht",
-        "quellKueche": ""
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/20967/cremige-pouletbruestli-mit-parmesan-risotto",
-      "originalTitle": "Cremige Pouletbrüstli mit Parmesan-Risotto",
-      "neuerName": "Gebackenes Pouletbrüstli mit Parmesan-Risotto und Artischocken",
-      "id": "fle-78",
-      "kategorie": "Fleisch & Geflügel",
-      "status": "ok",
-      "warnungen": [],
-      "faktenAuszug": {
-        "zutaten": [
-          "4 Pouletbrüstli",
-          "4 Schalotten",
-          "6 Knoblauchzehen",
-          "¼ TL Fleur de Sel",
-          "½ TL Salz",
-          "wenig Pfeffer",
-          "5 Zweiglein Thymian",
-          "Salz, Pfeffer, nach Bedarf",
-          "Bratbutter",
-          "200 g Saucen-Halbrahm",
-          "1 EL Butter",
-          "80 g geriebener Parmesan",
-          "30 g Butter",
-          "1 Glas Artischockenherzen in Öl",
-          "9 dl Hühnerbouillon",
-          "200 g Risottoreis",
-          "2 dl Weisswein"
-        ],
-        "ablaufStichworte": [
-          "backen",
-          "einkochen"
-        ],
-        "zeiten": [
-          "30 Min.",
-          "4 Min.",
-          "10 Min.",
-          "5 Min.",
-          "20 Min."
-        ],
-        "temperaturen": [
-          "220 °C"
-        ],
-        "gesamtzeitMin": 45,
-        "portionen": 4,
-        "quellKategorie": "Hauptgericht",
-        "quellKueche": ""
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/18895/phat-krapao--thailaendisches-hackfleischgericht-",
-      "originalTitle": "Phat Krapao (thailändisches Hackfleischgericht)",
-      "neuerName": "Thailändisches Hackfleisch-Basilikum mit Parfümreis",
-      "id": "fle-79",
-      "kategorie": "Fleisch & Geflügel",
-      "status": "ok",
-      "warnungen": [],
-      "faktenAuszug": {
-        "zutaten": [
-          "2 EL Austernsauce",
-          "1 TL Zucker",
-          "400 g Hackfleisch (Rind und Schwein)",
-          "½ Würfel Rindsbouillon",
-          "2 Schalotten",
-          "3 Knoblauchzehen",
-          "3 rote Chilis",
+          "600 g ungeschälte rohe Crevetten (Bio)",
+          "1 Limetten",
+          "1 rote Peperoncini",
           "1 Zwiebeln",
-          "100 g Cherry-Tomaten",
-          "3 Limettenblätter (Citrus hystrix) (Thai-Kit)",
-          "1 Prise Salz",
-          "3 EL Sojasauce",
-          "½ Bund Thai-Basilikum",
-          "200 g Parfümreis",
-          "200 g tiefgekühlte grüne Bohnen",
-          "1 EL Erdnussöl"
-        ],
-        "ablaufStichworte": [
-          "aufkochen"
-        ],
-        "zeiten": [
-          "3 Min.",
-          "10 Min.",
-          "2 Min."
-        ],
-        "temperaturen": [],
-        "gesamtzeitMin": 30,
-        "portionen": 4,
-        "quellKategorie": "Hauptgericht",
-        "quellKueche": "Asiatische Küche"
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/12147/hacktaetschli",
-      "originalTitle": "Hacktätschli",
-      "neuerName": "Hackbraten-Burger mit Cornflakes",
-      "id": "fle-80",
-      "kategorie": "Fleisch & Geflügel",
-      "status": "ok",
-      "warnungen": [],
-      "faktenAuszug": {
-        "zutaten": [
-          "500 g Hackfleisch (Rind)",
-          "1 Zwiebeln",
-          "2 Zweiglein Petersilie",
-          "2 EL Cornflakes",
+          "3 Rüebli",
+          "½ Papayas",
+          "4 Limettenblätter (Citrus hystrix) (Thai-Kit)",
+          "2 EL grüne Currypaste",
           "1 TL Salz",
-          "wenig Pfeffer",
-          "1 Eier",
-          "Öl"
-        ],
-        "ablaufStichworte": [
-          "würzen"
-        ],
-        "zeiten": [
-          "5 Min."
-        ],
-        "temperaturen": [],
-        "gesamtzeitMin": 20,
-        "portionen": 4,
-        "quellKategorie": "",
-        "quellKueche": "Schnelle Küche"
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/9940/rinds-stroganoff",
-      "originalTitle": "Rinds-Stroganoff",
-      "neuerName": "Rindsgeschnetzeltes mit Champignons und Peperoni",
-      "id": "fle-81",
-      "kategorie": "Fleisch & Geflügel",
-      "status": "ok",
-      "warnungen": [],
-      "faktenAuszug": {
-        "zutaten": [
-          "1 ½ TL Maizena",
-          "500 g Rindshuft",
-          "2 Zwiebeln",
-          "2 rote Peperoni",
-          "250 g Champignons",
-          "100 g Essiggurken",
-          "1 TL Salz",
-          "wenig Pfeffer",
-          "1 ½ TL Paprika edelsüss",
-          "1 dl Vollrahm",
-          "2 dl Fleischbouillon",
+          "4 dl Kokosmilch",
           "2 EL Erdnussöl"
-        ],
-        "ablaufStichworte": [
-          "schneiden",
-          "aufkochen"
-        ],
-        "zeiten": [
-          "2 Min.",
-          "5 Min."
-        ],
-        "temperaturen": [],
-        "gesamtzeitMin": 30,
-        "portionen": 4,
-        "quellKategorie": "Hauptgericht",
-        "quellKueche": ""
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/13786/scharfe-rindfleischstreifen",
-      "originalTitle": "Scharfe Rindfleischstreifen",
-      "neuerName": "Rindsplätzli mit Süsskartoffeln und Broccoli in Chili-Erdnuss-Sauce",
-      "id": "fle-83",
-      "kategorie": "Fleisch & Geflügel",
-      "status": "ok",
-      "warnungen": [
-        "dietCategory: Modell sagte \"meat\", Zutaten-Scan ergab \"vegetarian\"."
-      ],
-      "faktenAuszug": {
-        "zutaten": [
-          "300 g Rindsplätzli (à la minute)",
-          "300 g Süsskartoffeln",
-          "200 g Broccoli",
-          "½ Bund Koriander",
-          "½ TL Salz",
-          "wenig Pfeffer",
-          "2 TL Hot Chili Sauce ",
-          "1 EL Erdnussöl"
-        ],
-        "ablaufStichworte": [
-          "würzen",
-          "aufkochen"
-        ],
-        "zeiten": [
-          "2 Min.",
-          "5 Min."
-        ],
-        "temperaturen": [],
-        "gesamtzeitMin": 15,
-        "portionen": 4,
-        "quellKategorie": "Hauptgericht",
-        "quellKueche": "Schnelle Küche"
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/27566/sesam-chicken",
-      "originalTitle": "Sesam-Chicken",
-      "neuerName": "Knuspriges Honig-Sesam-Poulet mit Basmatireis",
-      "id": "fle-82",
-      "kategorie": "Fleisch & Geflügel",
-      "status": "ok",
-      "warnungen": [],
-      "faktenAuszug": {
-        "zutaten": [
-          "2 ½ EL Maizena",
-          "2 ½ EL Weissmehl",
-          "500 g Pouletbrust-Würfel",
-          "1 Knoblauchzehen",
-          "1 ½ EL flüssiger Honig",
-          "½ TL Salz",
-          "4 EL Sojasauce",
-          "1 EL Sesam",
-          "½ EL Tomatenpüree",
-          "250 g Basmatireis",
-          "1 dl Erdnussöl",
-          "½ EL geröstetes Sesamöl",
-          "1 EL Reisessig"
-        ],
-        "ablaufStichworte": [
-          "aufkochen",
-          "mischen"
-        ],
-        "zeiten": [
-          "15 Min.",
-          "6 Min."
-        ],
-        "temperaturen": [],
-        "gesamtzeitMin": 25,
-        "portionen": 4,
-        "quellKategorie": "Hauptgericht",
-        "quellKueche": "Asiatische Küche"
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/21784/salbei-parmesan-poulet",
-      "originalTitle": "Salbei-Parmesan-Poulet",
-      "neuerName": "Poulet-Minifilets in Salbei-Rahmsauce mit Parmesan",
-      "id": "fle-84",
-      "kategorie": "Fleisch & Geflügel",
-      "status": "ok",
-      "warnungen": [],
-      "faktenAuszug": {
-        "zutaten": [
-          "280 g Poulet-Minifilets",
-          "1 Bund Salbei",
-          "2 Knoblauchzehen",
-          "¼ TL Salz",
-          "wenig Pfeffer",
-          "Salz, Pfeffer, nach Bedarf",
-          "200 g Saucen-Halbrahm",
-          "4 EL geriebener Parmesan",
-          "Öl",
-          "2 EL Öl"
-        ],
-        "ablaufStichworte": [
-          "schichten",
-          "köcheln"
-        ],
-        "zeiten": [
-          "8 Min.",
-          "2 Min."
-        ],
-        "temperaturen": [],
-        "gesamtzeitMin": 25,
-        "portionen": 2,
-        "quellKategorie": "Hauptgericht",
-        "quellKueche": "Schnelle Küche"
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/16991/caesar-salad",
-      "originalTitle": "Caesar Salad",
-      "neuerName": "Caesar Salad mit Pouletbrust, Speck und Sbrinz-Croutons",
-      "id": "sal-64",
-      "kategorie": "Salate & Bowls",
-      "status": "ok",
-      "warnungen": [],
-      "faktenAuszug": {
-        "zutaten": [
-          "300 g Brot",
-          "½ Dose Sardellenfilets",
-          "2 Pouletbrüstli",
-          "8 Tranche Bratspeck",
-          "1 Knoblauchzehen",
-          "6 Mini-Lattiche",
-          "½ TL Worcestershire-Sauce",
-          "Salz, Pfeffer, nach Bedarf",
-          "½ TL Salz",
-          "wenig Pfeffer",
-          "2 TL scharfer Senf",
-          "100 g Crème fraîche",
-          "110 g Sbrinz-Hobelrollen",
-          "2 EL Weissweinessig",
-          "2 EL Rapsöl",
-          "2 EL Olivenöl"
-        ],
-        "ablaufStichworte": [
-          "verrühren",
-          "schneiden"
-        ],
-        "zeiten": [
-          "5 Min.",
-          "2 Min."
-        ],
-        "temperaturen": [],
-        "gesamtzeitMin": 40,
-        "portionen": 4,
-        "quellKategorie": "Hauptgericht",
-        "quellKueche": ""
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/13769/avocadosalat-mit-huettenkaese-und-rauchlachs",
-      "originalTitle": "Avocadosalat mit Hüttenkäse und Rauchlachs",
-      "neuerName": "Chinakohlsalat mit Rauchlachs, Avocado und Hüttenkäse-Dressing",
-      "id": "sal-68",
-      "kategorie": "Salate & Bowls",
-      "status": "ok",
-      "warnungen": [],
-      "faktenAuszug": {
-        "zutaten": [
-          "100 g Rauchlachs",
-          "2 Avocados",
-          "½ Chinakohl",
-          "1 rote Zwiebeln",
-          "1 EL Kerbel",
-          "wenig Kerbel",
-          "1 EL flüssiger Honig",
-          "3 EL Zitronensaft",
-          "Salz, Pfeffer, nach Bedarf",
-          "1 EL grobkörniger Senf",
-          "200 g Hüttenkäse nature",
-          "4 EL Rapsöl"
-        ],
-        "ablaufStichworte": [
-          "mischen",
-          "verrühren"
-        ],
-        "zeiten": [],
-        "temperaturen": [],
-        "gesamtzeitMin": 25,
-        "portionen": 4,
-        "quellKategorie": "Salate",
-        "quellKueche": ""
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/14327/reissalat",
-      "originalTitle": "Reissalat",
-      "neuerName": "Thonsalat mit Reis, Peperoni und Cherry-Tomaten",
-      "id": "sal-65",
-      "kategorie": "Salate & Bowls",
-      "status": "ok",
-      "warnungen": [
-        "dietCategory: Modell sagte \"fish\", Zutaten-Scan ergab \"vegetarian\"."
-      ],
-      "faktenAuszug": {
-        "zutaten": [
-          "1 Dose rosa Thon in Öl",
-          "2 farbige Peperoni",
-          "150 g Cherry-Tomaten",
-          "1 Bund glattblättrige Petersilie",
-          "3 EL Cashew-Nüsse",
-          "¼ TL Salz",
-          "wenig Pfeffer",
-          "1 EL grobkörniger Senf",
-          "100 g Langkornreis",
-          "3 EL Weissweinessig",
-          "3 EL Rapsöl"
-        ],
-        "ablaufStichworte": [
-          "mischen",
-          "verrühren"
-        ],
-        "zeiten": [],
-        "temperaturen": [],
-        "gesamtzeitMin": 30,
-        "portionen": 4,
-        "quellKategorie": "Salate",
-        "quellKueche": ""
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/17429/poke-bowl",
-      "originalTitle": "Poké Bowl",
-      "neuerName": "Lachs-Poke-Bowl mit Wakame, Mango und Sushi-Reis",
-      "id": "sal-67",
-      "kategorie": "Salate & Bowls",
-      "status": "ok",
-      "warnungen": [],
-      "faktenAuszug": {
-        "zutaten": [
-          "½ EL Yuzu Kosho (japanische Zitrus-Chili-Paste)",
-          "1 EL Zucker",
-          "125 g Wakame-Salat",
-          "400 g Lachsrückenfilet",
-          "1 TL Ingwer",
-          "200 g Gurken",
-          "1 Avocados",
-          "½ Mangos",
-          "2 EL Sojasauce",
-          "2 TL Sesam",
-          "1 TL Salz",
-          "350 g Sushi-Reis",
-          "2 TL Sesamöl",
-          "3 EL Reisessig"
         ],
         "ablaufStichworte": [
           "marinieren",
           "aufkochen"
         ],
         "zeiten": [
-          "30 Min.",
-          "15 Min.",
-          "10 Min."
-        ],
-        "temperaturen": [],
-        "gesamtzeitMin": 120,
-        "portionen": 4,
-        "quellKategorie": "Fisch",
-        "quellKueche": ""
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/14477/lachs-spinat-pasta",
-      "originalTitle": "Lachs-Spinat-Pasta",
-      "neuerName": "Teigwaren mit Räucherlachs-Rahmspinat",
-      "id": "pas-93",
-      "kategorie": "Pasta & Teigwaren",
-      "status": "ok",
-      "warnungen": [],
-      "faktenAuszug": {
-        "zutaten": [
-          "200 g geräucherter Lachs",
-          "500 g Blattspinat",
-          "1 Bund glattblättrige Petersilie",
-          "1 TL Salz",
-          "wenig Pfeffer",
-          "250 g Mascarpone",
-          "350 g Teigwaren"
-        ],
-        "ablaufStichworte": [
-          "aufkochen"
-        ],
-        "zeiten": [],
-        "temperaturen": [],
-        "gesamtzeitMin": 25,
-        "portionen": 4,
-        "quellKategorie": "Hauptgericht",
-        "quellKueche": "italienische Küche"
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/19558/crevetten-pasta",
-      "originalTitle": "Crevetten-Pasta",
-      "neuerName": "Pasta mit Crevetten, Estragon und Dill",
-      "id": "pas-99",
-      "kategorie": "Pasta & Teigwaren",
-      "status": "ok",
-      "warnungen": [],
-      "faktenAuszug": {
-        "zutaten": [
-          "1 Knoblauchzehen",
-          "3 Bundzwiebeln mit dem Grün",
-          "½ Bio-Zitronen",
-          "¼ TL Salz",
-          "1 Bund Estragon",
-          "½ Bund Dill",
-          "wenig tasmanischer Pfeffer",
-          "200 g Saucen-Halbrahm",
-          "500 g Pasta",
-          "250 g tiefgekühlte geschälte rohe Crevettenschwänze (Bio)",
-          "1 EL Olivenöl"
-        ],
-        "ablaufStichworte": [
-          "kochen",
-          "einkochen"
-        ],
-        "zeiten": [
-          "2 Min."
-        ],
-        "temperaturen": [],
-        "gesamtzeitMin": 20,
-        "portionen": 4,
-        "quellKategorie": "Hauptgericht",
-        "quellKueche": ""
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/15048/cinque-pi",
-      "originalTitle": "Cinque Pi",
-      "neuerName": "Penne mit Cherry-Tomaten-Rahmsauce und Parmesan",
-      "id": "pas-100",
-      "kategorie": "Pasta & Teigwaren",
-      "status": "ok",
-      "warnungen": [],
-      "faktenAuszug": {
-        "zutaten": [
-          "1 Knoblauchzehen",
-          "2 EL glattblättrige Petersilie",
-          "250 g Cherry-Tomaten",
-          "½ TL Salz",
-          "wenig Pfeffer",
-          "3 dl Halbrahm",
-          "50 g geriebener Parmesan",
-          "3 EL Tomatenpüree",
-          "350 g Teigwaren (z.B. Penne)"
-        ],
-        "ablaufStichworte": [
-          "kochen",
-          "aufkochen"
-        ],
-        "zeiten": [
+          "10 Min",
+          "2 Min.",
           "5 Min."
         ],
         "temperaturen": [],
-        "gesamtzeitMin": 30,
+        "gesamtzeitMin": 35,
         "portionen": 4,
-        "quellKategorie": "Hauptgericht",
+        "quellKategorie": "",
         "quellKueche": ""
       }
     },
     {
-      "url": "https://fooby.ch/de/rezepte/6578/spinat-cannelloni-al-forno",
-      "originalTitle": "Spinat-Cannelloni al forno",
-      "neuerName": "Lasagne-Rollen mit Ricotta, Spinat und Cherry-Tomaten",
-      "id": "pas-94",
-      "kategorie": "Pasta & Teigwaren",
+      "url": "https://fooby.ch/de/rezepte/22900/lachs-mit-baerlauch-rahmsauce",
+      "originalTitle": "Lachs mit Bärlauch-Rahmsauce",
+      "neuerName": "Lachsfilet mit Bärlauch-Rahmsauce und Parmesan",
+      "id": "fis-23",
+      "kategorie": "Fisch & Meeresfrüchte",
       "status": "ok",
       "warnungen": [],
       "faktenAuszug": {
         "zutaten": [
-          "½ TL Zucker",
+          "2 Lachsfilets ohne Haut ",
           "1 Zwiebeln",
-          "1 Knoblauchzehen",
-          "400 g Blattspinat",
-          "500 g Cherry-Tomaten",
-          "1 ¼ TL Salz",
+          "40 g Bärlauch",
+          "½ TL Salz",
           "wenig Pfeffer",
-          "4 Zweiglein Thymian",
-          "250 g Ricotta",
-          "50 g Pecorino",
-          "1 EL Tomatenpüree",
-          "2 Rollen Pastateig",
-          "2 EL Olivenöl"
+          "2 dl Saucen-Halbrahm",
+          "50 g geriebener Parmesan",
+          "Öl"
         ],
         "ablaufStichworte": [
-          "andämpfen",
-          "schneiden",
-          "backen"
+          "schichten",
+          "andämpfen"
         ],
         "zeiten": [
-          "2 Min.",
-          "3 Min.",
-          "10 Min.",
-          "35 Min."
-        ],
-        "temperaturen": [
-          "200 °C"
-        ],
-        "gesamtzeitMin": 80,
-        "portionen": 4,
-        "quellKategorie": "Hauptgericht",
-        "quellKueche": "italienische Küche"
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/21362/baked-feta-pasta",
-      "originalTitle": "Baked Feta Pasta",
-      "neuerName": "Ofen-Feta-Pasta mit Cherry-Tomaten",
-      "id": "pas-95",
-      "kategorie": "Pasta & Teigwaren",
-      "status": "ok",
-      "warnungen": [],
-      "faktenAuszug": {
-        "zutaten": [
-          "1 TL Zucker",
-          "1 rote Zwiebeln",
-          "2 Knoblauchzehen",
-          "800 g Cherry-Tomaten",
-          "½ rote Peperoncini",
-          "5 Zweiglein Oregano",
-          "½ Bio-Zitronen",
-          "2 Zweiglein Oregano",
-          "7 Zweiglein Thymian",
-          "¼ TL Salz",
-          "wenig Pfeffer",
-          "250 g Feta",
-          "50 g Parmesan",
-          "500 g Pasta",
-          "1 dl Olivenöl"
-        ],
-        "ablaufStichworte": [
-          "schneiden",
-          "mischen"
-        ],
-        "zeiten": [
-          "40 Min."
-        ],
-        "temperaturen": [
-          "200 °C"
-        ],
-        "gesamtzeitMin": 60,
-        "portionen": 4,
-        "quellKategorie": "Hauptgericht",
-        "quellKueche": ""
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/21090/udon-nudeln-stir-fry",
-      "originalTitle": "Udon Nudeln Stir-Fry",
-      "neuerName": "Udon-Nudeln mit Sesam-Tofu und Federkohl",
-      "id": "pas-101",
-      "kategorie": "Pasta & Teigwaren",
-      "status": "ok",
-      "warnungen": [],
-      "faktenAuszug": {
-        "zutaten": [
-          "250 g Tofu",
-          "100 g gewaschener, gerüsteter Federkohl",
-          "3 EL Sojasauce",
-          "1 TL Knoblauchpulver",
-          "2 EL Sesam",
-          "1 TL Dattelsirup",
-          "200 g Udon-Nudeln",
-          "1 EL Sesamöl",
-          "1 EL Reisessig",
-          "2 EL Kokosöl"
-        ],
-        "ablaufStichworte": [
-          "verrühren",
-          "schichten"
-        ],
-        "zeiten": [
-          "5 Min.",
-          "2 Min."
+          "3 Min."
         ],
         "temperaturen": [],
-        "gesamtzeitMin": 30,
+        "gesamtzeitMin": 20,
         "portionen": 2,
-        "quellKategorie": "Vegan",
+        "quellKategorie": "Hauptgericht",
         "quellKueche": "Schnelle Küche"
       }
     },
     {
-      "url": "https://fooby.ch/de/rezepte/9881/kokosnuedeli-mit-rindfleisch",
-      "originalTitle": "Kokosnüdeli mit Rindfleisch",
-      "neuerName": "Asiatische Nüdelisuppe mit Rindsplätzli und Lattich",
-      "id": "pas-96",
-      "kategorie": "Pasta & Teigwaren",
+      "url": "https://www.hennesfinest.com/rezepte/gegrillte-jakobsmuscheln-108676/",
+      "originalTitle": "Gegrillte Jakobsmuscheln",
+      "neuerName": "Kalte Gurkengazpacho mit gebratenen Jakobsmuscheln und Pak Choi",
+      "id": "fis-24",
+      "kategorie": "Fisch & Meeresfrüchte",
       "status": "ok",
       "warnungen": [
-        "dietCategory: Modell sagte \"meat\", Zutaten-Scan ergab \"vegetarian\"."
+        "Kein Bild im JSON-LD gefunden."
       ],
       "faktenAuszug": {
         "zutaten": [
-          "3 Stängel Zitronengras",
-          "4 Rindsplätzli (à la minute)",
-          "400 g Lattich",
-          "1 rote Chilis",
-          "1 Limetten",
-          "½ TL Salz",
-          "wenig Pfeffer",
-          "2 dl Kokosmilch",
-          "5 dl Gemüsebouillon",
-          "250 g chinesische Nüdeli",
-          "Erdnussöl"
+          " <strong>GURKENGAZPACHO</strong>",
+          "2 Salatgurken ",
+          "2 Frühlingszwiebeln",
+          "2EL Olivenöl",
+          "400ml Gemüsebrühe",
+          "150g Naturjoghurt",
+          "1 Bund Koriander oder Petersilie",
+          "1 Knoblauchzehe",
+          " Salz",
+          "0.5TL Grüner Kampot Pfeffer",
+          " </br><strong>JAKOBSMUSCHELN &amp; PAK CHOI</strong>",
+          "4 Köpfe Pak Choi ",
+          "24 Jakobsmuscheln (kleine)",
+          "3EL Olivenöl",
+          "2 Knoblauchzehen",
+          "0.5 Limette (Saft)"
         ],
         "ablaufStichworte": [
+          "schälen",
+          "dünsten",
+          "pürieren"
+        ],
+        "zeiten": [
+          "5 Minuten",
+          "2 Stunden",
+          "2 Minuten"
+        ],
+        "temperaturen": [],
+        "gesamtzeitMin": 45,
+        "portionen": 4,
+        "quellKategorie": "Vorspeise",
+        "quellKueche": "Frankreich"
+      }
+    },
+    {
+      "url": "https://www.gutekueche.at/gegrillte-fischspiesse-rezept-321",
+      "originalTitle": "Gegrillte Fischspieße",
+      "neuerName": "Lachsspiesse mit Peperoni und Zitronen-Olivenmarinade",
+      "id": "fis-25",
+      "kategorie": "Fisch & Meeresfrüchte",
+      "status": "ok",
+      "warnungen": [
+        "Beschreibung: Tool-Syntax am Ende entfernt."
+      ],
+      "faktenAuszug": {
+        "zutaten": [
+          "400 g Fischfilet (Lachs)",
+          "3 Stk Paprika (Farbe nach Wahl)",
+          "1 Stk Zitrone, unbehandelt",
+          "4 Stk Zwiebel (rot)",
+          "50 g Oliven, entsteint",
+          "2 EL Olivenöl",
+          "2 EL Petersilie gehackt",
+          "1 Prise Pfeffer",
+          "1 Prise Salz",
+          "3 EL Zitronensaft",
+          "1 Msp Fenchelsamen, gemahlen",
+          "5 EL Olivenöl",
+          "1 Prise Salz",
+          "1 Prise schwarzer Pfeffer",
+          "5 EL Zitronensaft",
+          "1 Stk Zwiebel"
+        ],
+        "ablaufStichworte": [
+          "verrühren",
           "schneiden",
+          "würzen"
+        ],
+        "zeiten": [
+          "2 Stunden",
+          "5 Minuten"
+        ],
+        "temperaturen": [],
+        "gesamtzeitMin": 155,
+        "portionen": 4,
+        "quellKategorie": "Spieße - für den kleinen Hunger",
+        "quellKueche": "spanische Rezepte"
+      }
+    },
+    {
+      "url": "https://fooby.ch/de/rezepte/16596/rueebli-kokossuppe",
+      "originalTitle": "Rüebli-Kokossuppe",
+      "neuerName": "Thailändische Rüebli-Maissuppe mit Kokosmilch und Erdnüssen",
+      "id": "sup-72",
+      "kategorie": "Suppen, Eintöpfe & Currys",
+      "status": "ok",
+      "warnungen": [
+        "Beschreibung: Tool-Syntax am Ende entfernt."
+      ],
+      "faktenAuszug": {
+        "zutaten": [
+          "40 g gesalzene Erdnüsse",
+          "1 Bundzwiebeln mit dem Grün",
+          "500 g Rüebli",
+          "2 Limettenblätter (Citrus hystrix) (Thai-Kit)",
+          "2 EL Koriander",
+          "1 rote Chilis",
+          "1 ½ EL rote Currypaste",
+          "½ TL Kurkuma",
+          "2 ½ dl Kokosmilch",
+          "1 Dose Maiskörner",
+          "1 ¼ Liter Gemüsebouillon",
+          "1 EL Sesamöl"
+        ],
+        "ablaufStichworte": [
           "aufkochen"
         ],
         "zeiten": [
-          "1 Min.",
-          "2 Min."
-        ],
-        "temperaturen": [],
-        "gesamtzeitMin": 20,
-        "portionen": 4,
-        "quellKategorie": "Hauptgericht",
-        "quellKueche": "Asiatische Küche"
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/18897/cremige-wirz-pasta",
-      "originalTitle": "Cremige Wirz-Pasta",
-      "neuerName": "Orecchiette mit Speck und Wirz in Rahmsauce",
-      "id": "pas-97",
-      "kategorie": "Pasta & Teigwaren",
-      "status": "ok",
-      "warnungen": [],
-      "faktenAuszug": {
-        "zutaten": [
-          "160 g Speckwürfeli",
-          "1 Zwiebeln",
-          "300 g Wirz",
-          "¼ TL Salz",
-          "Salz, nach Bedarf",
-          "2 dl Saucen-Halbrahm",
-          "200 g Orecchiette ",
-          "1 EL Olivenöl"
-        ],
-        "ablaufStichworte": [
-          "kochen",
-          "anbraten"
-        ],
-        "zeiten": [
-          "7 Min.",
-          "5 Min.",
-          "10 Min."
-        ],
-        "temperaturen": [],
-        "gesamtzeitMin": 20,
-        "portionen": 2,
-        "quellKategorie": "Hauptgericht",
-        "quellKueche": ""
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/13301/gnocchi-mit-spargel-rahmsauce",
-      "originalTitle": "Gnocchi mit Spargel-Rahmsauce",
-      "neuerName": "Gnocchi-Pfanne mit Speck und grünen Spargeln",
-      "id": "pas-98",
-      "kategorie": "Pasta & Teigwaren",
-      "status": "ok",
-      "warnungen": [],
-      "faktenAuszug": {
-        "zutaten": [
-          "300 g Naturaplan Bio Betty Bossi Gnocchi di patate",
-          "80 g Speckwürfeli",
-          "1 Knoblauchzehen",
-          "250 g grüne Spargeln",
-          "¼ TL Salz",
-          "wenig Pfeffer",
-          "1 dl Saucen-Halbrahm"
-        ],
-        "ablaufStichworte": [
-          "schichten"
-        ],
-        "zeiten": [
-          "4 Min.",
-          "5 Min."
-        ],
-        "temperaturen": [],
-        "gesamtzeitMin": 15,
-        "portionen": 2,
-        "quellKategorie": "Hauptgericht",
-        "quellKueche": "Schnelle Küche"
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/10729/ghackets-mit-hoernli",
-      "originalTitle": "Ghackets mit Hörnli",
-      "neuerName": "Hörnli mit Rotwein-Hackfleischsauce",
-      "id": "pas-102",
-      "kategorie": "Pasta & Teigwaren",
-      "status": "ok",
-      "warnungen": [],
-      "faktenAuszug": {
-        "zutaten": [
-          "500 g Hackfleisch (Rind)",
-          "1 Zwiebeln",
-          "1 Rüebli",
-          "100 g Knollensellerie",
-          "1 TL Paprika",
-          "1 Lorbeerblätter",
-          "½ EL Thymianblättchen",
-          "Salz, Pfeffer, nach Bedarf",
-          "Bratbutter",
-          "3 EL Tomatenpüree",
-          "2 ½ dl Fleischbouillon",
-          "500 g Hörnli",
-          "2 ½ dl Rotwein"
-        ],
-        "ablaufStichworte": [
-          "anbraten",
-          "aufkochen",
-          "servieren"
-        ],
-        "zeiten": [
-          "3 Min.",
           "30 Min."
         ],
         "temperaturen": [],
@@ -923,41 +207,118 @@
       }
     },
     {
-      "url": "https://fooby.ch/de/rezepte/14050/fried-rice",
-      "originalTitle": "Fried Rice",
-      "neuerName": "Gebratener Reis mit Chinakohl, Rüebli und Erdnüssen",
-      "id": "rei-60",
-      "kategorie": "Reis, Getreide & Hülsenfrüchte",
+      "url": "https://fooby.ch/de/rezepte/13066/miso-suppe-mit-tofu",
+      "originalTitle": "Miso-Suppe mit Tofu",
+      "neuerName": "Miso-Suppe mit Seidentofu, Shiitake und Gojibeeren",
+      "id": "sup-73",
+      "kategorie": "Suppen, Eintöpfe & Currys",
       "status": "ok",
       "warnungen": [],
       "faktenAuszug": {
         "zutaten": [
-          "2 EL gesalzene Erdnüsse",
-          "1 Bundzwiebeln mit dem Grün",
-          "200 g Chinakohl",
-          "2 Rüebli",
-          "1 rote Peperoni",
-          "wenig Salz",
-          "wenig Pfeffer",
-          "¼ TL Salz",
-          "4 EL Sojasauce",
-          "2 Eier",
-          "300 g Parfümreis",
-          "150 g tiefgekühlte Erbsli",
-          "1 EL Erdnussöl",
-          "1 TL Sesamöl",
-          "wenig Erdnussöl",
-          "½ EL Sesamöl",
-          "1 TL Reisessig"
+          "200 g Seidentofu",
+          "½ Bund Koriander",
+          "60 g Mungbohnensprossen",
+          "60 g Shiitake-Pilze",
+          "40 g getrocknete Gojibeeren",
+          "72 g Miso-Paste"
         ],
         "ablaufStichworte": [
           "aufkochen",
-          "schichten",
-          "verrühren",
-          "würzen"
+          "garen"
         ],
         "zeiten": [
+          "5 Min."
+        ],
+        "temperaturen": [],
+        "gesamtzeitMin": 30,
+        "portionen": 4,
+        "quellKategorie": "Vegan",
+        "quellKueche": ""
+      }
+    },
+    {
+      "url": "https://fooby.ch/de/rezepte/20137/pouletsteaks-mit-tomaten-chili-sauce",
+      "originalTitle": "Pouletsteaks mit Tomaten-Chili-Sauce",
+      "neuerName": "Poulet-Oberschenkel mit Cherry-Tomaten in Crème-fraîche-Sauce",
+      "id": "fle-85",
+      "kategorie": "Fleisch & Geflügel",
+      "status": "ok",
+      "warnungen": [
+        "Modell schlug \"Fleisch &amp; Geflügel\" vor, Vorgabe \"Fleisch & Geflügel\" gewinnt."
+      ],
+      "faktenAuszug": {
+        "zutaten": [
+          "8 Poulet-Oberschenkel",
+          "½ Bio-Zitronen",
+          "3 Knoblauchzehen",
+          "2 Bundzwiebeln mit dem Grün",
+          "½ EL Ingwer",
+          "1 rote Chilis",
+          "500 g Cherry-Tomaten",
+          "4 Zweiglein glattblättrige Petersilie",
+          "¼ TL Pfeffer",
+          "1 TL Salz",
+          "wenig Pfeffer",
+          "1 EL milder Senf",
+          "Bratbutter",
+          "200 g Crème fraîche",
+          "2 EL Ketchup",
+          "4 EL Weisswein"
+        ],
+        "ablaufStichworte": [
+          "marinieren",
+          "anbraten",
+          "andämpfen"
+        ],
+        "zeiten": [
+          "3 Std.",
+          "3 Min.",
+          "5 Min.",
           "15 Min.",
+          "30 Min."
+        ],
+        "temperaturen": [
+          "200 °C"
+        ],
+        "gesamtzeitMin": 240,
+        "portionen": 4,
+        "quellKategorie": "Hauptgericht",
+        "quellKueche": ""
+      }
+    },
+    {
+      "url": "https://fooby.ch/de/rezepte/21827/senfpoulet-mit-pastinakenstock",
+      "originalTitle": "Senfpoulet mit Pastinakenstock",
+      "neuerName": "Pouletbrüstli mit Pastinaken-Sellerie-Stampf und Senfsauce",
+      "id": "fle-86",
+      "kategorie": "Fleisch & Geflügel",
+      "status": "ok",
+      "warnungen": [],
+      "faktenAuszug": {
+        "zutaten": [
+          "4 Pouletbrüstli",
+          "500 g Pastinaken",
+          "500 g Knollensellerie",
+          "1 Schalotten",
+          "1 Knoblauchzehen",
+          "100 g Jungspinat",
+          "Salz, Pfeffer, nach Bedarf",
+          "½ TL Salz",
+          "wenig Pfeffer",
+          "2 EL grobkörniger Senf",
+          "20 g Butter",
+          "200 g saurer Halbrahm",
+          "1 EL Bratbutter",
+          "2 dl Saucen-Halbrahm",
+          "1 dl Weisswein"
+        ],
+        "ablaufStichworte": [
+          "abgiessen",
+          "andämpfen"
+        ],
+        "zeiten": [
+          "25 Min.",
           "5 Min.",
           "10 Min."
         ],
@@ -969,601 +330,169 @@
       }
     },
     {
-      "url": "https://fooby.ch/de/rezepte/17595/nasi-goreng",
-      "originalTitle": "Nasi Goreng",
-      "neuerName": "Thai-Poulet-Reispfanne mit Shiitake und Erbsli",
-      "id": "rei-61",
-      "kategorie": "Reis, Getreide & Hülsenfrüchte",
+      "url": "https://emmikochteinfach.de/chicken-wings/",
+      "originalTitle": "Chicken Wings aus dem Backofen",
+      "neuerName": "Knusprige Chicken Wings mit Paprika-Gewürzmarinade",
+      "id": "fle-87",
+      "kategorie": "Fleisch & Geflügel",
       "status": "ok",
-      "warnungen": [],
+      "warnungen": [
+        "dietCategory: Modell sagte \"meat\", Zutaten-Scan ergab \"vegetarian\"."
+      ],
       "faktenAuszug": {
         "zutaten": [
-          "2 Stängel Zitronengras",
-          "½ EL Fischsauce",
-          "450 geschnetzeltes Pouletfleisch",
-          "2 Bundzwiebeln mit dem Grün",
-          "2 Knoblauchzehen",
-          "1 rote Peperoncini",
-          "1 Rüebli",
-          "200 g Shiitake-Pilze",
-          "¼ TL Salz",
-          "3 EL Sojasauce",
-          "1 EL Tomatenpüree",
-          "300 g Parfümreis",
-          "100 g tiefgekühlte Erbsli",
-          "2 EL Öl"
-        ],
-        "ablaufStichworte": [
-          "aufkochen",
-          "schichten",
-          "verrühren"
-        ],
-        "zeiten": [
-          "15 Min.",
-          "3 Min.",
-          "5 Min."
-        ],
-        "temperaturen": [],
-        "gesamtzeitMin": 45,
-        "portionen": 4,
-        "quellKategorie": "Hauptgericht",
-        "quellKueche": "Asiatische Küche"
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/17611/tomatenrisotto",
-      "originalTitle": "Tomatenrisotto",
-      "neuerName": "Tomaten-Risotto mit Parmesan und Thymian",
-      "id": "rei-62",
-      "kategorie": "Reis, Getreide & Hülsenfrüchte",
-      "status": "ok",
-      "warnungen": [],
-      "faktenAuszug": {
-        "zutaten": [
-          "1 Zwiebeln",
-          "150 g Cherry-Tomaten",
-          "einige Thymianzweiglein",
-          "Salz, Pfeffer, nach Bedarf",
-          "75 g geriebener Parmesan",
-          "2 EL Tomatenpüree",
-          "1 Liter Gemüsebouillon",
-          "400 g Risottoreis",
-          "1 dl Weisswein",
-          "1 EL Olivenöl"
-        ],
-        "ablaufStichworte": [
-          "einkochen"
-        ],
-        "zeiten": [
-          "25 Min.",
-          "15 Min."
-        ],
-        "temperaturen": [],
-        "gesamtzeitMin": 35,
-        "portionen": 4,
-        "quellKategorie": "Hauptgericht",
-        "quellKueche": ""
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/24385/safranrisotto",
-      "originalTitle": "Safranrisotto",
-      "neuerName": "Safranrisotto mit Parmesan",
-      "id": "rei-58",
-      "kategorie": "Reis, Getreide & Hülsenfrüchte",
-      "status": "ok",
-      "warnungen": [],
-      "faktenAuszug": {
-        "zutaten": [
-          "1 Zwiebeln",
-          "2 Knoblauchzehen",
-          "2 Briefchen Safran",
-          "einige Safranfäden",
-          "Salz, Pfeffer, nach Bedarf",
-          "1 EL Butter",
-          "80 g Parmesan am Stück",
-          "20 g Butter",
-          "9 dl Gemüsebouillon",
-          "300 g Risottoreis",
-          "2 dl Weisswein"
-        ],
-        "ablaufStichworte": [
-          "einkochen"
-        ],
-        "zeiten": [
-          "20 Min."
-        ],
-        "temperaturen": [],
-        "gesamtzeitMin": 30,
-        "portionen": 4,
-        "quellKategorie": "Hauptgericht",
-        "quellKueche": ""
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/18192/steinpilzrisotto",
-      "originalTitle": "Steinpilzrisotto",
-      "neuerName": "Steinpilzrisotto mit Parmesan",
-      "id": "rei-59",
-      "kategorie": "Reis, Getreide & Hülsenfrüchte",
-      "status": "ok",
-      "warnungen": [],
-      "faktenAuszug": {
-        "zutaten": [
-          "25 g getrocknete Steinpilze",
-          "1 Zwiebeln",
-          "Salz, Pfeffer, nach Bedarf",
-          "3 EL Butter",
-          "40 g geriebener Parmesan",
-          "9 dl Gemüsebouillon",
-          "300 g Risottoreis",
-          "1 dl Weisswein"
-        ],
-        "ablaufStichworte": [
-          "einkochen",
-          "würzen"
-        ],
-        "zeiten": [
-          "20 Min."
-        ],
-        "temperaturen": [],
-        "gesamtzeitMin": 35,
-        "portionen": 4,
-        "quellKategorie": "Hauptgericht",
-        "quellKueche": ""
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/23081/spargelrisotto",
-      "originalTitle": "Spargelrisotto",
-      "neuerName": "Grünspargel-Risotto mit Parmesan",
-      "id": "rei-63",
-      "kategorie": "Reis, Getreide & Hülsenfrüchte",
-      "status": "ok",
-      "warnungen": [],
-      "faktenAuszug": {
-        "zutaten": [
-          "500 g grüne Spargeln",
-          "1 Zwiebeln",
-          "Salz, Pfeffer, nach Bedarf",
-          "2 EL Butter",
-          "80 g geriebener Parmesan",
-          "30 g Butter",
-          "1 Liter Gemüsebouillon",
-          "300 g Risottoreis",
-          "2 dl Weisswein"
-        ],
-        "ablaufStichworte": [
-          "andämpfen",
-          "einkochen"
-        ],
-        "zeiten": [
-          "5 Min.",
-          "3 Min.",
-          "15 Min."
-        ],
-        "temperaturen": [],
-        "gesamtzeitMin": 35,
-        "portionen": 4,
-        "quellKategorie": "Hauptgericht",
-        "quellKueche": ""
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/16024/parmigiana",
-      "originalTitle": "Parmigiana",
-      "neuerName": "Auberginen-Tomaten-Gratin mit Mozzarella und Parmesan",
-      "id": "ein-22",
-      "kategorie": "Aufläufe & Gratins",
-      "status": "ok",
-      "warnungen": [],
-      "faktenAuszug": {
-        "zutaten": [
-          "1 TL Zucker",
-          "1 Knoblauchzehen",
-          "1 kg Tomaten",
-          "1 kg Auberginen",
-          "1 Bund Basilikum",
-          "2 TL Salz",
-          "wenig Pfeffer",
-          "wenig Fleur de Sel",
-          "250 g Mozzarella",
-          "160 g geriebener Parmesan",
-          "½ EL Tomatenpüree",
-          "wenig Olivenöl",
-          "5 EL Olivenöl",
-          "1 TL Olivenöl"
-        ],
-        "ablaufStichworte": [
-          "andämpfen",
-          "backen",
-          "würzen"
-        ],
-        "zeiten": [
-          "45 Min.",
-          "20 Min.",
-          "5 Min."
-        ],
-        "temperaturen": [
-          "200 °C"
-        ],
-        "gesamtzeitMin": 125,
-        "portionen": 4,
-        "quellKategorie": "Hauptgericht",
-        "quellKueche": "italienische Küche"
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/19464/fruehlingsgratin",
-      "originalTitle": "Frühlingsgratin",
-      "neuerName": "Frühlingsgratin mit Spargeln, Kohlrabi und Frühkartoffeln",
-      "id": "ein-19",
-      "kategorie": "Aufläufe & Gratins",
-      "status": "ok",
-      "warnungen": [],
-      "faktenAuszug": {
-        "zutaten": [
-          "3 EL Weissmehl",
-          "600 g Frühkartoffeln",
-          "500 g grüne Spargeln",
-          "1 Kohlrabi",
-          "3 Bundzwiebeln mit dem Grün",
-          "1 Bund glattblättrige Petersilie",
-          "Salzwasser",
-          "1 ½ TL Salz",
-          "wenig Pfeffer",
-          "¼ TL Muskat",
-          "1 Bund Dill",
-          "3 EL Butter",
-          "4 dl Milch",
-          "120 g geriebener Gruyère"
-        ],
-        "ablaufStichworte": [
-          "würzen",
-          "aufkochen"
-        ],
-        "zeiten": [
-          "5 Min.",
-          "10 Min.",
-          "35 Min."
-        ],
-        "temperaturen": [
-          "200 °C"
-        ],
-        "gesamtzeitMin": 65,
-        "portionen": 4,
-        "quellKategorie": "Hauptgericht",
-        "quellKueche": ""
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/15795/vegi-linsen-moussaka",
-      "originalTitle": "Vegi Linsen-Moussaka",
-      "neuerName": "Auberginen-Linsen-Gratin mit Sbrinz",
-      "id": "ein-20",
-      "kategorie": "Aufläufe & Gratins",
-      "status": "ok",
-      "warnungen": [],
-      "faktenAuszug": {
-        "zutaten": [
-          "1 Zwiebeln",
-          "1 Knoblauchzehen",
-          "½ rote Peperoncini",
-          "½ Knollensellerie",
-          "250 g Champignons",
-          "2 EL Oregano",
-          "1 Auberginen",
-          "110 g Kartoffelflocken",
-          "1 ¾ TL Salz",
-          "wenig Pfeffer",
-          "1 Msp. Muskat",
-          "40 g Butter",
-          "50 g Sbrinz",
-          "1 Dose gehackte Tomaten",
-          "80 g braune Linsen",
-          "2 EL Olivenöl"
-        ],
-        "ablaufStichworte": [
-          "aufkochen",
-          "braten",
-          "würzen",
-          "überbacken"
-        ],
-        "zeiten": [
-          "3 Min.",
-          "10 Min.",
-          "5 Min.",
-          "15 Min."
-        ],
-        "temperaturen": [
-          "220 Grad"
-        ],
-        "gesamtzeitMin": 75,
-        "portionen": 4,
-        "quellKategorie": "Hauptgericht",
-        "quellKueche": "Balkanküche"
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/13336/penne-auflauf-mit-spargeln-und-lachs",
-      "originalTitle": "Penne-Auflauf mit Spargeln und Lachs",
-      "neuerName": "Lachs-Spargel-Auflauf mit Teigwaren und Sbrinz",
-      "id": "ein-21",
-      "kategorie": "Aufläufe & Gratins",
-      "status": "ok",
-      "warnungen": [],
-      "faktenAuszug": {
-        "zutaten": [
-          "200 g irischer Rauchlachs",
-          "500 g grüne Spargeln",
-          "1 Bund Schnittlauch",
-          "½ TL Paprika",
-          "wenig Pfeffer",
-          "1 EL Zitronensaft",
+          "1 kg Chicken Wings (am besten vom Metzger)",
+          "3 TL  Paprikapulver, edelsüß oder rosenscharf",
           "1 TL Salz",
-          "wenig Muskat",
-          "2 dl Milch",
-          "150 g Rahmquark",
-          "3 Eier",
-          "100 g geriebener Sbrinz",
-          "250 g Teigwaren (z.B. Penne)"
+          "1/4 TL schwarzer Pfeffer",
+          "4 EL Pflanzenöl (z.B. Rapsöl oder Sonnenblumenöl)"
         ],
         "ablaufStichworte": [
-          "abgiessen",
+          "backen",
           "verrühren"
         ],
         "zeiten": [
-          "25 Min."
+          "45 Minuten"
         ],
         "temperaturen": [
           "200 °C"
         ],
         "gesamtzeitMin": 50,
         "portionen": 4,
-        "quellKategorie": "Hauptgericht",
+        "quellKategorie": "",
         "quellKueche": ""
       }
     },
     {
-      "url": "https://fooby.ch/de/rezepte/16502/lachs-broccoli-auflauf",
-      "originalTitle": "Lachs-Broccoli-Auflauf",
-      "neuerName": "Lachs-Broccoli-Gratin mit Kartoffeln und Kräutern",
-      "id": "ein-23",
-      "kategorie": "Aufläufe & Gratins",
+      "url": "https://www.amgrillplatz.de/recipe/gyrosspiesse-aus-haehnchenbrust/",
+      "originalTitle": "Gyrosspieße aus Hähnchenbrust",
+      "neuerName": "Poulet-Spiesse mit Peperoni, Zwiebeln und Joghurt-Dip",
+      "id": "fle-88",
+      "kategorie": "Fleisch & Geflügel",
       "status": "ok",
       "warnungen": [],
       "faktenAuszug": {
         "zutaten": [
-          "1 EL Weissmehl",
-          "500 g Lachsfilets ohne Haut ",
-          "1 Broccoli",
-          "400 g festkochende Kartoffeln",
-          "2 Bundzwiebeln mit dem Grün",
-          "½ Bund Kerbel",
-          "1 Bio-Zitronen",
-          "1 ¼ TL Salz",
-          "wenig Pfeffer",
-          "1 Bund Dill",
-          "1 EL Butter",
-          "2 dl Milch",
-          "2 dl Crème fraîche",
-          "1 EL Olivenöl"
+          "700g Hähnchenbrust\r",
+          "100g griechischer Joghurt mit 10% Fettanteil\r",
+          "1 rote Paprika\r",
+          "1 Große Zwiebel\r",
+          "4-6 Pepperoni, Farbe nach Geschmack \r",
+          "1 Knoblauchzehe\r",
+          "2 EL Ankerkraut Smoking Zeus\r",
+          "2 EL Olivenöl"
+        ],
+        "ablaufStichworte": [],
+        "zeiten": [],
+        "temperaturen": [],
+        "gesamtzeitMin": 45,
+        "portionen": 3,
+        "quellKategorie": "fleischgerichte",
+        "quellKueche": ""
+      }
+    },
+    {
+      "url": "https://emmikochteinfach.de/haehnchen-marinade/",
+      "originalTitle": "Hähnchen-Marinade – zum Grillen oder Braten",
+      "neuerName": "Gebratenes Poulet mit Paprika-Cayenne-Gewürzöl",
+      "id": "son-115",
+      "kategorie": "Beilagen, Saucen & Dips",
+      "status": "ok",
+      "warnungen": [
+        "Beschreibung: Tool-Syntax am Ende entfernt."
+      ],
+      "faktenAuszug": {
+        "zutaten": [
+          "3 EL Olivenöl",
+          "3 TL Paprikapulver edelsüß",
+          "1  Msp Cayennepfeffer",
+          "1/4  TL  schwarzer Pfeffer aus der Mühle",
+          "1 TL  Salz",
+          "400-500 g Hähnchenbrustfilet  (oder andere Hähnchenteilstücke)"
         ],
         "ablaufStichworte": [
-          "blanchieren",
-          "schneiden",
-          "dünsten",
-          "aufkochen",
-          "backen"
+          "verrühren",
+          "braten"
+        ],
+        "zeiten": [],
+        "temperaturen": [],
+        "gesamtzeitMin": 4,
+        "portionen": 4,
+        "quellKategorie": "",
+        "quellKueche": ""
+      }
+    },
+    {
+      "url": "https://fooby.ch/de/rezepte/23802/veganer-herbsteintopf",
+      "originalTitle": "Veganer Herbsteintopf",
+      "neuerName": "Herbsteintopf mit schwarzen Linsen, Kürbis und Marroni",
+      "id": "sup-74",
+      "kategorie": "Suppen, Eintöpfe & Currys",
+      "status": "ok",
+      "warnungen": [],
+      "faktenAuszug": {
+        "zutaten": [
+          "100 g schwarze Linsen (Beluga)",
+          "180 g veganer Crème fraîche-Ersatz",
+          "2 rote Zwiebeln",
+          "250 g Kürbis",
+          "250 g Knollensellerie",
+          "250 g Champignons",
+          "1 ½ TL Salz",
+          "3 Zweiglein Rosmarin",
+          "wenig Pfeffer",
+          "3 dl Cidre (Apfelschaumwein)",
+          "200 g tiefgekühlte geschälte Marroni",
+          "2 EL Olivenöl"
+        ],
+        "ablaufStichworte": [
+          "abgiessen",
+          "aufkochen"
         ],
         "zeiten": [
-          "1 Min.",
           "10 Min.",
-          "35 Min."
+          "5 Min.",
+          "15 Min."
+        ],
+        "temperaturen": [],
+        "gesamtzeitMin": 35,
+        "portionen": 4,
+        "quellKategorie": "Vegan",
+        "quellKueche": ""
+      }
+    },
+    {
+      "url": "https://fooby.ch/de/rezepte/21756/gebackene-miso-auberginen",
+      "originalTitle": "Gebackene Miso-Auberginen",
+      "neuerName": "Ofenauberginen mit Miso-Glasur und Sesam",
+      "id": "son-116",
+      "kategorie": "Gemüsegerichte",
+      "status": "ok",
+      "warnungen": [],
+      "faktenAuszug": {
+        "zutaten": [
+          "3 Auberginen",
+          "1 TL Ingwer",
+          "1 Knoblauchzehen",
+          "2 Bundzwiebeln mit dem Grün",
+          "1 EL Ahornsirup",
+          "2 TL Meersalz",
+          "90 g Miso-Paste",
+          "2 EL gerösteter Sesam",
+          "2 EL Olivenöl",
+          "1 EL Reisessig"
+        ],
+        "ablaufStichworte": [
+          "schneiden",
+          "verrühren"
+        ],
+        "zeiten": [
+          "30 Min.",
+          "15 Min."
         ],
         "temperaturen": [
           "200 °C"
         ],
-        "gesamtzeitMin": 75,
-        "portionen": 4,
-        "quellKategorie": "Hauptgericht",
-        "quellKueche": ""
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/16372/thai-curry-topf-mit-nuedeli-und-poulet",
-      "originalTitle": "Thai-Curry-Topf mit Nüdeli und Poulet",
-      "neuerName": "Thailändische Currysuppe mit Poulet und Shiitake-Pilzen",
-      "id": "sup-64",
-      "kategorie": "Suppen, Eintöpfe & Currys",
-      "status": "ok",
-      "warnungen": [],
-      "faktenAuszug": {
-        "zutaten": [
-          "1 Stängel Zitronengras",
-          "3 EL Wasabi-Nüsse",
-          "300 g Pouletwürfel",
-          "1 rote Peperoncini",
-          "150 g Shiitake-Pilze",
-          "1 cm Ingwer",
-          "400 g Chinakohl",
-          "1 ½ EL gelbe Currypaste",
-          "2 EL Sojasauce",
-          "2 ½ dl Kokosmilch",
-          "350 g chinesische Nüdeli",
-          "1 EL dunkles Sesamöl"
-        ],
-        "ablaufStichworte": [
-          "kochen",
-          "aufkochen",
-          "bestreuen"
-        ],
-        "zeiten": [
-          "3 Min.",
-          "2 Min."
-        ],
-        "temperaturen": [],
-        "gesamtzeitMin": 25,
-        "portionen": 4,
-        "quellKategorie": "Hauptgericht",
-        "quellKueche": ""
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/19162/ungarisches-gulasch",
-      "originalTitle": "Ungarisches Gulasch",
-      "neuerName": "Ungarisches Rindsgulasch mit Kartoffeln",
-      "id": "sup-65",
-      "kategorie": "Suppen, Eintöpfe & Currys",
-      "status": "ok",
-      "warnungen": [],
-      "faktenAuszug": {
-        "zutaten": [
-          "800 g Rindsvoressen",
-          "500 g festkochende Kartoffeln",
-          "1 gelbe Peperoni",
-          "2 Knoblauch",
-          "1 rote Peperoni",
-          "3 Zwiebeln",
-          "1 TL Kümmel",
-          "1 TL Majoranblättchen",
-          "2 TL Rosenpaprika",
-          "1 TL Salz",
-          "3 dl Fleischbouillon",
-          "1 Dose gehackte Tomaten",
-          "1 EL Öl"
-        ],
-        "ablaufStichworte": [
-          "aufkochen"
-        ],
-        "zeiten": [
-          "3 Min.",
-          "4 Std.",
-          "30 Min."
-        ],
-        "temperaturen": [],
-        "gesamtzeitMin": 155,
-        "portionen": 4,
-        "quellKategorie": "Hauptgericht",
-        "quellKueche": ""
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/13126/rotes-thai-curry-mit-poulet",
-      "originalTitle": "Rotes Thai-Curry mit Poulet",
-      "neuerName": "Thai-Curry-Suppe mit Poulet und Kefen",
-      "id": "sup-67",
-      "kategorie": "Suppen, Eintöpfe & Currys",
-      "status": "ok",
-      "warnungen": [],
-      "faktenAuszug": {
-        "zutaten": [
-          "3 EL Austernsauce",
-          "1 Stängel Zitronengras",
-          "1 TL Rohzucker",
-          "600 g Pouletbrüstli",
-          "150 g Kefen",
-          "1 Pack Mini-Maiskölbchen",
-          "1 Rüebli",
-          "½ Bund Koriander",
-          "1 ½ EL rote Currypaste",
-          "wenig Salz",
-          "4 dl Kokosmilch"
-        ],
-        "ablaufStichworte": [
-          "marinieren",
-          "aufkochen"
-        ],
-        "zeiten": [
-          "10 Min.",
-          "5 Min."
-        ],
-        "temperaturen": [],
-        "gesamtzeitMin": 30,
-        "portionen": 4,
-        "quellKategorie": "Suppen und Eintopf",
-        "quellKueche": ""
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/6527/blumenkohl-curry-mit-poulet",
-      "originalTitle": "Blumenkohl-Curry mit Poulet",
-      "neuerName": "Poulet-Curry mit Blumenkohl und Erdnüssen",
-      "id": "sup-66",
-      "kategorie": "Suppen, Eintöpfe & Currys",
-      "status": "ok",
-      "warnungen": [],
-      "faktenAuszug": {
-        "zutaten": [
-          "50 g gesalzene Erdnüsse",
-          "2 EL gesalzene Erdnüsse",
-          "500 g Pouletbrüstli",
-          "1 Limetten",
-          "1 Zwiebeln",
-          "1 Knoblauchzehen",
-          "1 EL Ingwer",
-          "1 ½ rote Chilis",
-          "500 g Blumenkohl",
-          "4 Zweiglein Koriander",
-          "3 TL Kurkuma",
-          "1 TL Fenchelsamen",
-          "1 TL gemahlene Koriandersamen",
-          "wenig Nelkenpulver",
-          "1 Lorbeerblätter",
-          "1 ¼ TL Salz",
-          "1 EL Bratbutter",
-          "2 dl Kokosmilch",
-          "1 EL Tomatenpüree",
-          "2 dl Hühnerbouillon"
-        ],
-        "ablaufStichworte": [
-          "marinieren",
-          "aufkochen",
-          "köcheln"
-        ],
-        "zeiten": [
-          "30 Min.",
-          "2 Min.",
-          "1 Min.",
-          "10 Min."
-        ],
-        "temperaturen": [],
-        "gesamtzeitMin": 75,
-        "portionen": 4,
-        "quellKategorie": "Gemüsegerichte",
-        "quellKueche": ""
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/17674/buendner-gerstensuppe",
-      "originalTitle": "Bündner Gerstensuppe",
-      "neuerName": "Bündner Gerstensuppe mit Rüebli und Sellerie",
-      "id": "sup-68",
-      "kategorie": "Suppen, Eintöpfe & Currys",
-      "status": "ok",
-      "warnungen": [],
-      "faktenAuszug": {
-        "zutaten": [
-          "50 g Bündnerfleisch",
-          "1 Zwiebeln",
-          "200 g Lauch",
-          "200 g Rüebli",
-          "150 g Knollensellerie",
-          "3 EL Schnittlauch",
-          "1 Lorbeerblätter",
-          "Salz, Pfeffer, nach Bedarf",
-          "1 EL Butter",
-          "2 dl Vollrahm",
-          "1 Liter Fleischbouillon",
-          "80 g geschälte Rollgerste"
-        ],
-        "ablaufStichworte": [
-          "aufkochen"
-        ],
-        "zeiten": [
-          "1 Std."
-        ],
-        "temperaturen": [],
         "gesamtzeitMin": 90,
         "portionen": 4,
         "quellKategorie": "Hauptgericht",
@@ -1571,205 +500,246 @@
       }
     },
     {
-      "url": "https://fooby.ch/de/rezepte/17009/gulaschsuppe",
-      "originalTitle": "Gulaschsuppe",
-      "neuerName": "Rindsgulasch mit Rüebli und Kartoffeln",
-      "id": "sup-69",
-      "kategorie": "Suppen, Eintöpfe & Currys",
+      "url": "https://fooby.ch/de/rezepte/26416/bbq-tofu",
+      "originalTitle": "BBQ-Tofu",
+      "neuerName": "Geräucherter Tofu in Barbecue-Marinade mit Zwiebeln",
+      "id": "son-117",
+      "kategorie": "Gemüsegerichte",
       "status": "ok",
       "warnungen": [],
       "faktenAuszug": {
         "zutaten": [
-          "2 EL Weissmehl",
-          "500 g Rindsvoressen",
-          "300 g Kartoffeln",
-          "200 g Rüebli",
+          "400 g geräucherter Tofu",
           "1 Zwiebeln",
           "1 Knoblauchzehen",
-          "1 Dose Cherry-Tomaten",
-          "1 ½ TL Salz",
-          "3 EL Paprika edelsüss",
-          "1 Lorbeerblätter",
-          "Bratbutter",
-          "4 EL saurer Halbrahm",
-          "2 EL Tomatenpüree",
-          "6 dl Fleischbouillon",
-          "1 ½ dl Rotwein"
+          "1 EL Ahornsirup",
+          "1 EL Sojasauce",
+          "¾ TL geräucherter Paprika ",
+          "¼ TL Salz",
+          "1 EL Senf",
+          "3 EL Tomatenpüree",
+          "2 EL Olivenöl",
+          "½ dl Apfelessig"
         ],
         "ablaufStichworte": [
-          "schneiden",
-          "anbraten",
           "andämpfen",
-          "braten",
-          "aufkochen"
-        ],
-        "zeiten": [
-          "5 Min.",
-          "2 Std."
-        ],
-        "temperaturen": [],
-        "gesamtzeitMin": 150,
-        "portionen": 4,
-        "quellKategorie": "Hauptgericht",
-        "quellKueche": "Balkanküche"
-      }
-    },
-    {
-      "url": "https://fooby.ch/de/rezepte/15049/tom-kha-gai",
-      "originalTitle": "Tom Kha Gai",
-      "neuerName": "Thailändische Kokos-Poulet-Suppe mit Shiitake und Zitronengras",
-      "id": "sup-70",
-      "kategorie": "Suppen, Eintöpfe & Currys",
-      "status": "ok",
-      "warnungen": [],
-      "faktenAuszug": {
-        "zutaten": [
-          "2 Stängel Zitronengras",
-          "4 EL Fischsauce",
-          "2 Pouletbrüstli",
-          "1 rote Chilis",
-          "1 Limettenblätter (Citrus hystrix) (Thai-Kit)",
-          "1 EL Ingwer",
-          "70 g Shiitake-Pilze",
-          "½ Bund Koriander",
-          "1 Limetten",
-          "Salz, Pfeffer, nach Bedarf",
-          "5 dl Kokosmilch"
-        ],
-        "ablaufStichworte": [
-          "aufkochen",
           "servieren"
         ],
         "zeiten": [
+          "2 Min.",
           "10 Min.",
-          "5 Min."
+          "4 Min."
         ],
-        "temperaturen": [],
-        "gesamtzeitMin": 30,
+        "temperaturen": [
+          "200 °C"
+        ],
+        "gesamtzeitMin": 28,
         "portionen": 4,
-        "quellKategorie": "Suppen und Eintopf",
+        "quellKategorie": "Vegan",
         "quellKueche": ""
       }
     },
     {
-      "url": "https://fooby.ch/de/rezepte/13171/sesam-lachs-auf-gemuesenudeln",
-      "originalTitle": "Sesam-Lachs auf Gemüsenudeln",
-      "neuerName": "Lachs-Gemüse-Topf mit Reisnudeln und Sojasauce",
-      "id": "fis-22",
-      "kategorie": "Fisch & Meeresfrüchte",
+      "url": "https://fooby.ch/de/rezepte/18076/grillgemuese-mit-feta",
+      "originalTitle": "Grillgemüse mit Feta",
+      "neuerName": "Ofengemüse mit Feta, Mandeln und Honig-Balsamico-Dressing",
+      "id": "son-118",
+      "kategorie": "Gemüsegerichte",
       "status": "ok",
-      "warnungen": [
-        "Modell schlug \"Fisch &amp; Meeresfrüchte\" vor, Vorgabe \"Fisch & Meeresfrüchte\" gewinnt."
-      ],
+      "warnungen": [],
       "faktenAuszug": {
         "zutaten": [
-          "½ dl milde Sojasauce",
-          "600 g Lachsfilets ohne Haut ",
-          "2 Bundzwiebeln mit dem Grün",
-          "1 rote Chilis",
-          "300 g Bundrüebli",
-          "300 g Krautstiel",
-          "1 Limetten",
-          "einige Korianderblättchen",
-          "1 EL gerösteter Sesam",
+          "40 g Mandelstifte",
+          "1 Auberginen",
+          "2 Zucchetti",
+          "2 rote Peperoni",
+          "1 Knoblauchzehen",
+          "2 EL Basilikumblätter",
+          "1 EL flüssiger Blütenhonig",
           "1 TL Salz",
-          "180 g Reisnudeln",
-          "2 EL Sesamöl",
-          "2 EL Weissweinessig"
+          "100 g Feta",
+          "6 EL Olivenöl",
+          "2 EL Aceto balsamico"
         ],
         "ablaufStichworte": [
-          "schichten",
-          "köcheln"
+          "mischen"
         ],
         "zeiten": [
-          "10 Min.",
-          "2 Min.",
-          "4 Min.",
-          "1 Min."
+          "5 Min.",
+          "10 Min."
         ],
-        "temperaturen": [],
-        "gesamtzeitMin": 35,
+        "temperaturen": [
+          "220 °C"
+        ],
+        "gesamtzeitMin": 60,
         "portionen": 4,
         "quellKategorie": "",
-        "quellKueche": "Asiatische Küche"
+        "quellKueche": ""
       }
     },
     {
-      "url": "https://fooby.ch/de/rezepte/17587/crostini-mit-thonmousse",
-      "originalTitle": "Crostini mit Thonmousse",
-      "neuerName": "Geröstetes Brot mit Thunfisch-Frischkäse-Creme und Kapern",
-      "id": "son-114",
+      "url": "https://fooby.ch/de/rezepte/15791/vietnamesische-sommerrollen-mit-erdnuss-sauce",
+      "originalTitle": "Vietnamesische Sommerrollen mit Erdnuss-Sauce",
+      "neuerName": "Sommerrollen mit Tofu, Mango und Erdnuss-Kokos-Sauce",
+      "id": "son-119",
       "kategorie": "Snacks & Vorspeisen",
       "status": "ok",
-      "warnungen": [
-        "Modell schlug \"Snacks &amp; Vorspeisen\" vor, Vorgabe \"Snacks & Vorspeisen\" gewinnt.",
-        "dietCategory: Modell sagte \"fish\", Zutaten-Scan ergab \"vegetarian\"."
-      ],
+      "warnungen": [],
       "faktenAuszug": {
         "zutaten": [
-          "350 g Brot",
-          "1 Dose weisser Thon in Öl",
-          "1 Zwiebeln",
-          "¼ TL Salz",
-          "wenig Pfeffer",
-          "2 EL Mayonnaise",
-          "100 g Frischkäse",
-          "3 EL Kapern",
-          "2 EL Öl"
+          "1 ½ EL Kokosblütenzucker",
+          "2 TL Kokosblütenzucker",
+          "140 g Erdnüsse",
+          "400 g Tofu nature",
+          "200 g Rotkabis",
+          "1 Gurken",
+          "300 g Rüebli",
+          "1 Lattich",
+          "1 Avocados",
+          "1 Bund Bundzwiebeln mit dem Grün",
+          "½ Mangos",
+          "3 Limetten",
+          "20 g Pfefferminzblätter",
+          "1 Bund Koriander",
+          "12 Lattichblätter",
+          "1 TL Himalayasalz",
+          "3 ½ EL Tamari",
+          "1 TL Chiliflocken",
+          "1 Bund Thai-Basilikum",
+          "2 dl Kokosmilch",
+          "12 Reisblätter",
+          "1 TL Sesamöl"
         ],
         "ablaufStichworte": [
-          "mischen",
-          "braten"
+          "schälen",
+          "pürieren",
+          "schichten",
+          "servieren"
         ],
         "zeiten": [
-          "3 Min."
+          "10 Min."
         ],
         "temperaturen": [],
-        "gesamtzeitMin": 20,
+        "gesamtzeitMin": 55,
         "portionen": 4,
         "quellKategorie": "Apéro und Fingerfood",
         "quellKueche": ""
       }
     },
     {
-      "url": "https://fooby.ch/de/rezepte/17273/quiche-mit-lachs-und-broccoli",
-      "originalTitle": "Quiche mit Lachs und Broccoli",
-      "neuerName": "Lachs-Broccoli-Wähe mit Dill",
-      "id": "son-112",
-      "kategorie": "Pizza, Flammkuchen, Wähen & Quiches",
+      "url": "https://fooby.ch/de/rezepte/23357/hirsesalat-mit-grillgemuese",
+      "originalTitle": "Hirsesalat mit Grillgemüse",
+      "neuerName": "Hirsebowl mit geröstetem Gemüse, Oliven und Zitronenjogurt",
+      "id": "sal-69",
+      "kategorie": "Salate & Bowls",
+      "status": "ok",
+      "warnungen": [
+        "Beschreibung: Tool-Syntax am Ende entfernt."
+      ],
+      "faktenAuszug": {
+        "zutaten": [
+          "50 g Rauchmandeln",
+          "1 Auberginen",
+          "1 rote Peperoni",
+          "1 gelbe Peperoni",
+          "1 Bio-Zitronen",
+          "1 TL Paprika",
+          "1 Bundzwiebeln",
+          "2 EL flüssiger Honig",
+          "1 TL Salz",
+          "1 TL getrockneter Oregano",
+          "¼ TL Zimt",
+          "wenig Pfeffer",
+          "150 g griechischer Jogurt nature",
+          "75 g entsteinte schwarze Oliven",
+          "250 g Goldhirse",
+          "4 EL Olivenöl"
+        ],
+        "ablaufStichworte": [
+          "kochen",
+          "mischen",
+          "verrühren"
+        ],
+        "zeiten": [
+          "8 Min."
+        ],
+        "temperaturen": [
+          "200 °C"
+        ],
+        "gesamtzeitMin": 30,
+        "portionen": 4,
+        "quellKategorie": "Salate",
+        "quellKueche": ""
+      }
+    },
+    {
+      "url": "https://fooby.ch/de/rezepte/13697/glasnudelsalat",
+      "originalTitle": "Glasnudelsalat",
+      "neuerName": "Glasnudelsalat mit Rüebli, Chinakohl und Erdnüssen",
+      "id": "sal-70",
+      "kategorie": "Salate & Bowls",
       "status": "ok",
       "warnungen": [],
       "faktenAuszug": {
         "zutaten": [
-          "250 g Lachsfilets ohne Haut ",
-          "350 g Broccoli",
-          "½ Bund Dill",
-          "wenig Muskat",
-          "wenig Pfeffer",
-          "Salz",
-          "2 Eier",
-          "80 g geriebener Sbrinz",
-          "2 dl Vollrahm",
-          "1 rund ausgewallte  Kuchenteige ",
-          "1 dl Weisswein"
+          "1 EL ungesalzene Erdnüsse",
+          "100 g Chinakohl",
+          "3 Rüebli",
+          "1 Limetten",
+          "1 Bundzwiebeln",
+          "1 rote Chilis",
+          "½ Bund Koriander",
+          "1 Knoblauchzehen",
+          "½ Bund Thai-Basilikum",
+          "2 EL Sojasauce",
+          "1 Päckli Glasnudeln",
+          "2 EL dunkles Sesamöl"
         ],
         "ablaufStichworte": [
-          "backen",
-          "kochen",
-          "verrühren",
-          "servieren"
+          "aufkochen",
+          "verrühren"
         ],
-        "zeiten": [
-          "3 Min.",
-          "30 Min."
-        ],
-        "temperaturen": [
-          "220 °C"
-        ],
-        "gesamtzeitMin": 65,
-        "portionen": 4,
-        "quellKategorie": "Hauptgericht",
+        "zeiten": [],
+        "temperaturen": [],
+        "gesamtzeitMin": 25,
+        "portionen": 2,
+        "quellKategorie": "Salate",
         "quellKueche": ""
+      }
+    },
+    {
+      "url": "https://fooby.ch/de/rezepte/13424/sommer-salat",
+      "originalTitle": "Sommer-Salat",
+      "neuerName": "Broccoli-Teigwaren-Salat mit Cherry-Tomaten und Gruyère",
+      "id": "sal-71",
+      "kategorie": "Salate & Bowls",
+      "status": "ok",
+      "warnungen": [],
+      "faktenAuszug": {
+        "zutaten": [
+          "400 g Broccoli",
+          "150 g verschiedenfarbige Cherry-Tomaten",
+          "1 Gurken",
+          "½ Bio-Zitronen",
+          "2 EL Schnittlauch",
+          "½ TL Salz",
+          "wenig Pfeffer",
+          "100 g Gruyère",
+          "90 g Jogurt nature",
+          "½ dl Gemüsebouillon",
+          "150 g Teigwaren",
+          "2 EL Olivenöl"
+        ],
+        "ablaufStichworte": [
+          "mischen",
+          "verrühren"
+        ],
+        "zeiten": [],
+        "temperaturen": [],
+        "gesamtzeitMin": 20,
+        "portionen": 4,
+        "quellKategorie": "Salate",
+        "quellKueche": "Schnelle Küche"
       }
     }
   ]

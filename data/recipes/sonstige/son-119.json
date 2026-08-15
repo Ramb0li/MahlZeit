@@ -1,0 +1,395 @@
+{
+  "id": "son-119",
+  "name": "Sommerrollen mit Tofu, Mango und Erdnuss-Kokos-Sauce",
+  "category": "Snacks & Vorspeisen",
+  "timeMinutes": 55,
+  "basePortions": 4,
+  "weatherType": "warm",
+  "dietCategory": "vegan",
+  "description": "Diese frischen Reispapier-Rollen sind bei uns der Renner, wenn Freunde zum Apéro kommen – jeder rollt sein eigenes Röllchen und füllt genau das rein, worauf er gerade Lust hat. Die würzige Erdnuss-Kokos-Sauce mit einem Hauch Chili macht daraus mehr als nur einen Snack, nämlich ein kleines gemeinsames Ritual am Tisch.",
+  "tags": [
+    "Snack",
+    "Für Gäste",
+    "Ohne Kochen",
+    "Sommer",
+    "Thai"
+  ],
+  "ingredients": [
+    {
+      "name": "Kokosblütenzucker",
+      "amount": 1.5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Erdnüsse",
+      "amount": 140,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Kokosmilch",
+      "amount": 2,
+      "unit": "dl",
+      "perPortions": 4
+    },
+    {
+      "name": "Tamari",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Chiliflocken",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Limetten",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Himalayasalz",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Tofu nature",
+      "amount": 400,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Tamari",
+      "amount": 1.5,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Kokosblütenzucker",
+      "amount": 2,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Sesamöl",
+      "amount": 1,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Limetten",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Rotkabis",
+      "amount": 200,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Gurken",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Rüebli",
+      "amount": 300,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Lattich",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Avocados",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Bundzwiebeln mit dem Grün",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Mangos",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Limetten",
+      "amount": 1,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Pfefferminzblätter",
+      "amount": 20,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Koriander",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Thai-Basilikum",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Himalayasalz",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Reisblätter",
+      "amount": 12,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Lattichblätter",
+      "amount": 12,
+      "unit": "Stk",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Erdnuss-Kokos-Sauce",
+      "ingredients": [
+        {
+          "name": "Kokosblütenzucker",
+          "amount": 1.5,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Erdnüsse",
+          "amount": 140,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Kokosmilch",
+          "amount": 2,
+          "unit": "dl",
+          "perPortions": 4
+        },
+        {
+          "name": "Tamari",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Chiliflocken",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Limetten",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Himalayasalz",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Tofu-Marinade",
+      "ingredients": [
+        {
+          "name": "Tofu nature",
+          "amount": 400,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Tamari",
+          "amount": 1.5,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Kokosblütenzucker",
+          "amount": 2,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Sesamöl",
+          "amount": 1,
+          "unit": "TL",
+          "perPortions": 4
+        },
+        {
+          "name": "Limetten",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Gemüsefüllung",
+      "ingredients": [
+        {
+          "name": "Rotkabis",
+          "amount": 200,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Gurken",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Rüebli",
+          "amount": 300,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Lattich",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Avocados",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Bundzwiebeln mit dem Grün",
+          "amount": 1,
+          "unit": "Bund",
+          "perPortions": 4
+        },
+        {
+          "name": "Mangos",
+          "amount": 0.5,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Limetten",
+          "amount": 1,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Pfefferminzblätter",
+          "amount": 20,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Koriander",
+          "amount": 1,
+          "unit": "Bund",
+          "perPortions": 4
+        },
+        {
+          "name": "Thai-Basilikum",
+          "amount": 1,
+          "unit": "Bund",
+          "perPortions": 4
+        },
+        {
+          "name": "Himalayasalz",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Rollen",
+      "ingredients": [
+        {
+          "name": "Reisblätter",
+          "amount": 12,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Lattichblätter",
+          "amount": 12,
+          "unit": "Stk",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Für die Sauce die Erdnüsse grob hacken oder im Mixer kurz zerkleinern, damit noch etwas Biss bleibt.",
+    "Kokosmilch, Tamari, Kokosblütenzucker, Chiliflocken, den Saft einer Limette und das Himalayasalz mit den gehackten Erdnüssen verrühren und beiseitestellen, damit sich die Aromen verbinden können.",
+    "Den Tofu mit einem Küchentuch trockentupfen und in feine Stäbchen oder Scheiben schneiden.",
+    "Tamari, Kokosblütenzucker, Sesamöl und etwas Limettensaft verrühren, den Tofu darin wenden und mindestens 10 Minuten marinieren lassen.",
+    "Rotkabis und Rüebli schälen und in feine Streifen schneiden oder raffeln.",
+    "Die Gurke schälen, entkernen und in feine Stäbchen schneiden.",
+    "Die Avocado schälen, entsteinen und in dünne Scheiben schneiden.",
+    "Die Mango schälen und das Fruchtfleisch in feine Streifen schneiden.",
+    "Die Bundzwiebeln waschen, putzen und in feine Ringe schneiden, das Grün fein hacken.",
+    "Pfefferminze, Koriander und Thai-Basilikum waschen, trockenschleudern und die Blätter grob zupfen.",
+    "Die Lattichblätter waschen und trockentupfen, sie dienen später als knackige Unterlage in der Rolle.",
+    "Ein Reisblatt einzeln für etwa 10 Sekunden in warmes Wasser tauchen, bis es weich und biegsam wird, dann auf einem feuchten Tuch oder Brett ausbreiten.",
+    "Ein Lattichblatt auf das untere Drittel des Reisblattes legen und darauf etwas Rotkabis, Rüebli, Gurke, Avocado, Mango, Bundzwiebeln, Kräuter und ein paar Streifen mariniertem Tofu schichten.",
+    "Das Reisblatt von unten über die Füllung klappen, die Seiten einschlagen und die Rolle straff aufrollen.",
+    "Mit den restlichen Reisblättern und der Füllung gleich verfahren, bis alle zwölf Rollen fertig sind.",
+    "Die Sommerrollen mit der Erdnuss-Kokos-Sauce zum Dippen sofort servieren."
+  ],
+  "tips": "Die Rollen halten sich, in ein feuchtes Tuch gewickelt und zugedeckt im Kühlschrank, gut einen halben Tag – ideal, um sie schon etwas früher für einen Apéro vorzubereiten.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://fooby.ch/de/rezepte/15791/vietnamesische-sommerrollen-mit-erdnuss-sauce",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T16:04:14.400Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "erdnuesse",
+    "milch",
+    "sesam",
+    "soja"
+  ],
+  "nutrition": {
+    "kcal": 618,
+    "protein": 24.8,
+    "fat": 36.4,
+    "carbs": 52.6,
+    "fiber": 10.2
+  }
+}

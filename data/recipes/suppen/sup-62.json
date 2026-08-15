@@ -49,7 +49,7 @@
       "perPortions": 8
     },
     {
-      "name": "Zucchini (für Brühe)",
+      "name": "Zucchetti (für Brühe)",
       "amount": 150,
       "unit": "g",
       "perPortions": 8
@@ -175,7 +175,7 @@
       "perPortions": 8
     },
     {
-      "name": "Zucchini (für Einlage)",
+      "name": "Zucchetti (für Einlage)",
       "amount": 160,
       "unit": "g",
       "perPortions": 8
@@ -215,7 +215,7 @@
   "source": "zu überarbeiten",
   "description": "Eine würzige italienische Gemüsesuppe mit klarer Brühe, knackiger Gemüse-Einlage, Muschelnudeln und frischen Kräutern – ein Gruss aus dem Garten voller Geschmack.",
   "steps": [
-    "1. Für die Brühe zunächst das gesamte Gemüse vorbereiten: Staudensellerie, Knollensellerie, Möhren, Lauch, Zucchini, Tomaten, Paprika und Ingwer waschen, trocken tupfen und grob zerkleinern.",
+    "1. Für die Brühe zunächst das gesamte Gemüse vorbereiten: Staudensellerie, Knollensellerie, Möhren, Lauch, Zucchetti, Tomaten, Paprika und Ingwer waschen, trocken tupfen und grob zerkleinern.",
     "2. Knoblauch und Zwiebeln schälen und grob hacken. Die Kräuter waschen und trocken schütteln. Den Bauchspeck in grobe Würfel schneiden.",
     "3. Einen grossen Topf bei starker Hitze erhitzen. Olivenöl hineingeben und den Bauchspeck scharf anbraten. Zwiebeln und Knoblauch zugeben, gut durchrühren und mit Salz und Pfeffer würzen.",
     "4. Sobald sich am Topfboden ein dunkler Bratensatz bildet, Fenchelsamen, Kreuzkümmel und Rosmarin hinzufügen und gut verrühren.",
@@ -224,10 +224,10 @@
     "7. Nach 90 Minuten die Brühe durch ein feines Sieb in einen zweiten grossen Topf giessen. Das ausgekochte Gemüse im Sieb mit einem Löffel ausdrücken, dann entsorgen.",
     "8. Die Brühe zurück auf den Herd stellen, bei kleinster Stufe warmhalten und mit Salz und Pfeffer abschmecken.",
     "9. Für die Einlage einen Topf mit gesalzenem Wasser zum Kochen bringen und die Muschelnudeln darin garen.",
-    "10. Währenddessen die Möhren schälen und in ca. 0,5 cm kleine Würfel schneiden. Die Zucchini grob schälen, vierteln, das weiche Kerngehäuse entfernen und ebenfalls in ca. 0,5 cm kleine Würfel schneiden.",
+    "10. Währenddessen die Möhren schälen und in ca. 0,5 cm kleine Würfel schneiden. Die Zucchetti grob schälen, vierteln, das weiche Kerngehäuse entfernen und ebenfalls in ca. 0,5 cm kleine Würfel schneiden.",
     "11. Bei der Paprika das Kerngehäuse entfernen und in ca. 0,5 cm kleine Würfel schneiden. Petersilie, Schnittlauch und Basilikum fein hacken.",
     "12. Eine Pfanne bei mittlerer Hitze erhitzen, Olivenöl hineingeben und die Möhrenwürfel darin 5 Minuten unter gelegentlichem Rühren anbraten.",
-    "13. Zucchini- und Paprikawürfel zugeben, mit Salz und Pfeffer würzen und weitere 5 Minuten braten, bis das Gemüse noch leicht bissfest ist.",
+    "13. Zucchetti- und Paprikawürfel zugeben, mit Salz und Pfeffer würzen und weitere 5 Minuten braten, bis das Gemüse noch leicht bissfest ist.",
     "14. Die gegarten Nudeln abgiessen. Zum Servieren die Nudeln auf Suppenschüsseln oder -teller verteilen, etwas Gemüse-Einlage und frische Kräuter darübergeben und mit der heissen Brühe aufgiessen."
   ],
   "dietCategory": "meat",

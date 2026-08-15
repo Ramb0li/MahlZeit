@@ -1,0 +1,253 @@
+{
+  "id": "fis-24",
+  "name": "Kalte Gurkengazpacho mit gebratenen Jakobsmuscheln und Pak Choi",
+  "category": "Fisch & Meeresfrüchte",
+  "timeMinutes": 45,
+  "basePortions": 4,
+  "weatherType": "warm",
+  "dietCategory": "fish",
+  "description": "Diese kalte Gazpacho ist der perfekte Auftakt für einen warmen Sommerabend, wenn man draussen sitzt und noch keinen schweren Gang möchte. Die frische Gurkensuppe mit Joghurt und Koriander trifft auf zart gebratene Jakobsmuscheln und knackigen Pak Choi – eine Kombination, die ich immer wieder gerne für Gäste koche, weil sie leicht wirkt, aber trotzdem satt macht.",
+  "tags": [
+    "Mittagessen",
+    "Abendessen",
+    "Für Gäste",
+    "Ohne Kochen",
+    "Pfannengericht",
+    "Sommer",
+    "Französisch"
+  ],
+  "ingredients": [
+    {
+      "name": "Salatgurke",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Frühlingszwiebel",
+      "amount": 2,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 2,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Gemüsebrühe",
+      "amount": 400,
+      "unit": "ml",
+      "perPortions": 4
+    },
+    {
+      "name": "Naturjoghurt",
+      "amount": 150,
+      "unit": "g",
+      "perPortions": 4
+    },
+    {
+      "name": "Koriander",
+      "amount": 1,
+      "unit": "Bund",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 1,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    },
+    {
+      "name": "Grüner Kampot Pfeffer",
+      "amount": 0.5,
+      "unit": "TL",
+      "perPortions": 4
+    },
+    {
+      "name": "Pak Choi",
+      "amount": 4,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Jakobsmuscheln",
+      "amount": 24,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Olivenöl",
+      "amount": 3,
+      "unit": "EL",
+      "perPortions": 4
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": 2,
+      "unit": "Zehe",
+      "perPortions": 4
+    },
+    {
+      "name": "Limette",
+      "amount": 0.5,
+      "unit": "Stk",
+      "perPortions": 4
+    },
+    {
+      "name": "Salz",
+      "amount": 1,
+      "unit": "Prise",
+      "perPortions": 4
+    }
+  ],
+  "ingredientGroups": [
+    {
+      "name": "Zutaten für Gurkengazpacho",
+      "ingredients": [
+        {
+          "name": "Salatgurke",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Frühlingszwiebel",
+          "amount": 2,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 2,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Gemüsebrühe",
+          "amount": 400,
+          "unit": "ml",
+          "perPortions": 4
+        },
+        {
+          "name": "Naturjoghurt",
+          "amount": 150,
+          "unit": "g",
+          "perPortions": 4
+        },
+        {
+          "name": "Koriander",
+          "amount": 1,
+          "unit": "Bund",
+          "perPortions": 4
+        },
+        {
+          "name": "Knoblauchzehe",
+          "amount": 1,
+          "unit": "Zehe",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        },
+        {
+          "name": "Grüner Kampot Pfeffer",
+          "amount": 0.5,
+          "unit": "TL",
+          "perPortions": 4
+        }
+      ]
+    },
+    {
+      "name": "Zutaten für Jakobsmuscheln & Pak Choi",
+      "ingredients": [
+        {
+          "name": "Pak Choi",
+          "amount": 4,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Jakobsmuscheln",
+          "amount": 24,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Olivenöl",
+          "amount": 3,
+          "unit": "EL",
+          "perPortions": 4
+        },
+        {
+          "name": "Knoblauchzehe",
+          "amount": 2,
+          "unit": "Zehe",
+          "perPortions": 4
+        },
+        {
+          "name": "Limette",
+          "amount": 0.5,
+          "unit": "Stk",
+          "perPortions": 4
+        },
+        {
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise",
+          "perPortions": 4
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Die Salatgurken schälen und grob in Stücke schneiden.",
+    "Die Frühlingszwiebeln waschen, putzen und in Ringe schneiden.",
+    "Die Knoblauchzehe für die Gazpacho schälen.",
+    "Gurkenstücke, Frühlingszwiebeln, Knoblauch, 2 EL Olivenöl, Gemüsebrühe, Naturjoghurt und den grössten Teil des Korianders in einen Mixer geben.",
+    "Alles fein pürieren, bis eine cremige Suppe entsteht.",
+    "Die Gazpacho mit Salz und dem grünen Kampot Pfeffer abschmecken.",
+    "Die Suppe für mindestens 2 Stunden im Kühlschrank kalt stellen, damit sich die Aromen verbinden.",
+    "Für die zweite Komponente den Pak Choi waschen, die Blätter vom Strunk trennen und den Strunk in feine Streifen schneiden.",
+    "Die 2 Knoblauchzehen für die Jakobsmuscheln schälen und fein hacken.",
+    "3 EL Olivenöl in einer Pfanne bei mittlerer bis hoher Hitze erhitzen und den Pak Choi darin 2 Minuten andünsten, bis er leicht zusammenfällt, aber noch Biss hat.",
+    "Den gedünsteten Pak Choi aus der Pfanne nehmen und beiseite stellen.",
+    "Die Jakobsmuscheln trocken tupfen und in der gleichen Pfanne mit dem gehackten Knoblauch von jeder Seite etwa 1 bis 2 Minuten scharf anbraten, bis sie goldbraun sind.",
+    "Die Jakobsmuscheln mit dem Saft der halben Limette beträufeln und mit Salz würzen.",
+    "Die kalte Gazpacho in tiefe Teller oder Schalen füllen.",
+    "Den gedünsteten Pak Choi und die gebratenen Jakobsmuscheln darauf anrichten.",
+    "Mit den restlichen Korianderblättern garnieren und sofort servieren."
+  ],
+  "tips": "Die Gazpacho lässt sich gut einen Tag im Voraus zubereiten – so ist sie noch kälter und die Aromen entfalten sich besser. Die Jakobsmuscheln aber immer erst kurz vor dem Servieren braten, damit sie schön zart bleiben.",
+  "source": "fooby.ch",
+  "sourceUrl": "https://www.hennesfinest.com/rezepte/gegrillte-jakobsmuscheln-108676/",
+  "sourceType": "imported",
+  "licenseStatus": "adapted",
+  "rewrittenAt": "2026-08-01T15:58:27.773Z",
+  "approved": false,
+  "suggestionEnabled": true,
+  "imageUrl": null,
+  "imageZutaten": null,
+  "imageKochen": null,
+  "allergens": [
+    "milch",
+    "weichtiere"
+  ],
+  "nutrition": {
+    "kcal": 268,
+    "protein": 28.5,
+    "fat": 11.4,
+    "carbs": 13.6,
+    "fiber": 3.2
+  }
+}
