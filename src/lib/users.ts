@@ -188,25 +188,59 @@ export function isTrialExpired(u: AppUser): boolean {
   return u.plan === 'trial' && !!u.accessUntil && new Date(u.accessUntil) < new Date();
 }
 
+/**
+ * Entscheidet den Zugriff aus bereits geladenen Datensaetzen.
+ *
+ * Als reine Funktion herausgezogen, damit die Regel ohne Redis pruefbar ist —
+ * getAccessState() daneben besorgt nur noch die Daten.
+ *
+ * Die Vererbung an Mitglieder war unvollstaendig: sie deckte den Owner mit
+ * Premium und den Owner mit abgelaufenem Trial ab, aber nicht den Owner in einem
+ * LAUFENDEN Trial. In dem Fall fiel die Pruefung auf den eigenen Trial des
+ * Mitglieds zurueck. Wer der Familie spaeter beitrat und dessen eigener Trial
+ * schon abgelaufen war, wurde gesperrt, waehrend der Owner weiterarbeiten konnte.
+ * Jetzt gilt: gibt es einen Owner, entscheidet ausschliesslich dieser.
+ */
+export function resolveAccessState(
+  user: AppUser | null,
+  group: { orphaned?: boolean; ownerEmail: string } | null,
+  owner: AppUser | null,
+): AccessState {
+  if (!user) return { locked: true, reason: null };
+  if (isPremiumActive(user)) return { locked: false, reason: null };
+
+  if (group?.orphaned) return { locked: true, reason: 'group-orphaned' };
+
+  const istFremderOwner = !!group
+    && user.groupRole === 'member'
+    && group.ownerEmail.toLowerCase() !== user.email.toLowerCase();
+
+  if (istFremderOwner && owner) {
+    if (isPremiumActive(owner)) return { locked: false, reason: null };
+    if (isTrialExpired(owner))  return { locked: true,  reason: 'trial-expired' };
+    // Owner in einem laufenden Trial — das Mitglied erbt diesen Zugriff.
+    return { locked: false, reason: null };
+  }
+
+  if (isTrialExpired(user)) return { locked: true, reason: 'trial-expired' };
+  return { locked: false, reason: null };
+}
+
 export async function getAccessState(email: string): Promise<AccessState> {
   const user = await getUserByEmail(email);
   if (!user) return { locked: true, reason: null };
   if (isPremiumActive(user)) return { locked: false, reason: null };
 
-  if (user.groupId) {
-    const { getGroupById } = await import('@/lib/groups');
-    const group = await getGroupById(user.groupId);
-    if (group?.orphaned) return { locked: true, reason: 'group-orphaned' };
-    // Member erbt den Zugriff vom Gruppen-Owner
-    if (group && user.groupRole === 'member' && group.ownerEmail.toLowerCase() !== user.email.toLowerCase()) {
-      const owner = await getUserByEmail(group.ownerEmail);
-      if (owner && isPremiumActive(owner)) return { locked: false, reason: null };
-      if (owner && isTrialExpired(owner)) return { locked: true, reason: 'trial-expired' };
-    }
-  }
+  if (!user.groupId) return resolveAccessState(user, null, null);
 
-  if (isTrialExpired(user)) return { locked: true, reason: 'trial-expired' };
-  return { locked: false, reason: null };
+  const { getGroupById } = await import('@/lib/groups');
+  const group = (await getGroupById(user.groupId)) ?? null;
+  const brauchtOwner = !!group
+    && user.groupRole === 'member'
+    && group.ownerEmail.toLowerCase() !== user.email.toLowerCase();
+  const owner = brauchtOwner ? await getUserByEmail(group.ownerEmail) : null;
+
+  return resolveAccessState(user, group, owner);
 }
 
 /**
@@ -220,7 +254,6 @@ export async function reviveOrphanedGroup(user: AppUser): Promise<AppUser> {
   const group = await getGroupById(user.groupId);
   if (!group?.orphaned) return user;
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { orphaned, orphanedAt, formerOwnerEmail, ...rest } = group;
   await updateGroup({ ...rest, ownerEmail: user.email });
 
