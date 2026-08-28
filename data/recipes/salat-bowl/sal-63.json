@@ -20,7 +20,7 @@
   ],
   "ingredients": [
     {
-      "name": "Tomaten",
+      "name": "Tomaten (gewürfelt)",
       "amount": 400,
       "unit": "g",
       "perPortions": 4
@@ -44,7 +44,7 @@
       "perPortions": 4
     },
     {
-      "name": "Avocados",
+      "name": "Avocados (halbiert, Kern entfernt)",
       "amount": 2,
       "unit": "Stk",
       "perPortions": 4

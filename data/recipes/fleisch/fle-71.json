@@ -110,8 +110,7 @@
   "imageKochen": null,
   "allergens": [
     "gluten",
-    "milch",
-    "weichtiere"
+    "milch"
   ],
   "nutrition": {
     "kcal": 658,

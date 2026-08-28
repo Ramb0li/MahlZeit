@@ -14,7 +14,8 @@
     "recipes:import-v2": "tsx scripts/import-recipes-v2.ts",
     "content:pull": "tsx scripts/content-pull.ts",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "recipes:check": "tsx scripts/check-recipes.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.102.0",

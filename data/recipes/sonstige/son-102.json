@@ -93,6 +93,12 @@
           "amount": 1,
           "unit": "kg",
           "perPortions": 8
+        },
+        {
+          "name": "Holzspiesschen",
+          "amount": 4,
+          "unit": "Stk",
+          "perPortions": 8
         }
       ]
     },

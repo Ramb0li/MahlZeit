@@ -83,8 +83,7 @@
   "imageKochen": null,
   "allergens": [
     "gluten",
-    "milch",
-    "sulfite"
+    "milch"
   ],
   "sourceType": "mahlzyt",
   "_migrated_v2": true,

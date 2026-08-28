@@ -22,11 +22,23 @@ npm run build
 # Lint
 npm run lint
 
-# Rebuild recipe seed data only
+# Tests (Vitest, nur src/lib/__tests__/**)
+npm run test
+
+# Rezept-Seed neu bauen
 npm run recipes:build
+
+# Rezeptbestand auf strukturelle Fehler pruefen
+npm run recipes:check
+
+# Naehrwerte holen (nur fehlende; -- --all rechnet alle neu)
+npm run recipes:enrich
 ```
 
-The app runs at http://localhost:3000. There are no automated tests.
+Der Volltext aller Skripte steht in `package.json`. Weitere: `recipes:sync`,
+`recipes:import-v2`, `recipes:import-hbu`, `content:pull`, `test:watch`.
+
+The app runs at http://localhost:3000.
 
 ## Architecture
 
@@ -81,37 +93,63 @@ See `.env.example`. Required for full functionality:
 - `JWT_SECRET` — Session signing (dev uses insecure fallback)
 - `UPSTASH_REDIS_REST_URL` + `UPSTASH_REDIS_REST_TOKEN` — Production persistence
 
-## Current Status (Stand 2026-06-01 – Update nach Phases 1–6)
+## Current Status (Stand 2026-08-16)
 
 **Live:** https://mahlzeit.o-v-k.ch (Vercel, Upstash Redis, Resend).
 
-**Content:**
-- 172 Template-Rezepte in `data/recipes.json` (+77 neu importiert; davon 21 Kindersnacks aus LittleFant-PDF, IDs `kds-01`–`kds-21`)
-- 16 Rezepte mit Bildern in `public/images/recipes/` verlinkt (13 MahlZeit + 3 ältere)
-- 26 MahlZeit-Bilder + 20 Cuiselin-Bilder verfügbar — viele Cuiselin-Bilder noch nicht als Rezept angelegt
-- Kategorien (13 gesamt): `Frühstück`, `Süsses`, `Brot & Aufstrich`, `Fleisch & Geflügel` (13 Rezepte), `Kartoffelgerichte` (5 Rezepte) und weitere (siehe `src/types/index.ts`, `RecipeList.tsx`, `RecipeForm.tsx`, `RecipePickerModal.tsx`)
-- Alle Kindersnacks: `tags: ['Vegan']`, `source: 'LittleFant – Kindersnacks für jeden Tag'`, Tag `'Mealprep-geeignet'`
+### Zahlen
+- **419 Template-Rezepte** in `data/recipes.json`, davon 329 mit `approved: true`
+- **267 Tests** in 17 Dateien (`src/lib/__tests__/`), `npm run test`
+- 18 Rezeptkategorien im Typ `Category` (`src/types/index.ts`), 16 davon in Benutzung
+- 13 Zutatenkategorien fuer die Einkaufsliste (`src/lib/shoppingCategories.ts`)
 
-**Asset-Struktur** (außerhalb des Repos):
-```
-../Menüs/
-├── Quellen/{Cuiselin,MahlZeit}/   # Original-Bilder (Backup)
-├── PDFs/_Importiert/              # bereits verarbeitete PDFs (inkl. Kindersnacks)
-└── Neu/                            # Inbox für neuen Content
-```
+### Freigabe-Gate — wichtig fuer die Sichtbarkeit
+`getVisibleRecipes()` (`src/lib/data.ts`) filtert in Produktion auf
+`approved === true`. **In Dev greift der Filter nicht**, lokal sind also alle
+Rezepte sichtbar. Wer sich wundert, warum die App live weniger Rezepte zeigt als
+`data/recipes.json` enthaelt: Redis ist fuer `approved` die massgebliche Quelle,
+nicht das Repo. Der Seed hebt eine Freigabe nie an.
 
-**Letzter Code-Review (12 Fixes, Commit `641787a`):**
-Stale-Redis-Cache für Templates beseitigt, SSRF-Guard im URL-Import, Redis-Rate-Limit, Member-Plan erbt Owner, Kategorie-basierte Meal-Pools, Datenleck `confirmationTokenExpiresAt`, Template-Delete-Guard, O(1) Confirmation-Token-Index, `weekplan/suggest` startDate aus weekId.
+`approvalWarnings()` (`src/lib/approvalWarnings.ts`) meldet offene Punkte vor
+einer Freigabe (Lizenzstatus, Bild auf fremder Domain, Import ohne
+`rewrittenAt`). Es ist ein Hinweis, keine Sperre — die Route verweigert nichts.
 
-**Implementiert (Phases 1–6, Build grün):**
-- Phase 1: `DietCategory = 'meat'|'fish'|'vegetarian'|'vegan'` in allen 74 Rezepten; neue DietTypes `fleischhaltig` + `flexitarisch`; Settings-Kacheln; Flexitarisch-Logik (max 1 Fleisch/Woche) in `lib/suggestions.ts`
-- Phase 2: RecipeList dietCategory-Filter-Tabs (Alle | Fleischhaltig | Pescetarisch | Vegetarisch | Vegan)
-- Phase 3: `ShoppingGroupsBar` im WeekPlanner; API `/api/weekplan/shopping-groups`; Redis-Key `mz:group:<id>:week:<kw>:shopping_groups`
-- Phase 4: ShoppingListView Mehrfach-Listen-Übersicht; `?dayIndices=` Filter in `/api/shopping-list`; `buildListLabel` (KW23.Mo-So)
-- Phase 5: `OnboardingWizard` (6 Schritte: Familienname, Ort, Portionen, Diät, Allergien, Einkaufsrhythmus); ersetzt alten `GroupNameOnboarding`; Flag `settings.onboardingDone`
-- Phase 6: Abmelde-Button in Desktop-Nav + Mobile-Nav (`handleLogout` → `/api/auth/logout`)
+### Rezept-Import
+`npm run recipes:import-v2` liest `data/import-queue.json` und erzeugt
+ausschliesslich Entwuerfe (`approved: false`, `imageUrl: null`,
+`licenseStatus: 'adapted'`). Deterministische Teile (Einheiten, Allergene,
+Duplikate, Schema) liegen in `scripts/import-utils.ts` und sind unit-getestet;
+die Textarbeit macht das Modell aus einem Faktenauszug, ohne den Originaltext zu
+sehen. Referenzbilder landen ausserhalb des Repos unter `../Menues/Referenz/`.
 
-**Offene Tasks (Priorität ↓):**
-1. Weitere Rezepte aus Kochbüchern und vorbereiteten Links importieren (Grundlagenphase)
-2. App-Review (UX, Funktionalität durchklicken)
-3. Marketing-Setup (SEO-Meta, Vercel Analytics, OG-Images, Newsletter)
+Vor einem Lauf `robots.txt` der Quelle pruefen. Mehrere Verlage (ndr.de,
+foodboom.de, jamieoliver.com) sperren ClaudeBot ausdruecklich aus.
+
+### Admin
+`/admin` ist auf `ADMIN_EMAIL` beschraenkt. Tabs: Nutzer, Rezepte, **Zutaten**,
+Nutzer-Rezepte, Landing, How-To. Der Zutaten-Tab leitet seine Liste aus den
+Rezepten ab und erlaubt Umbenennen und Zusammenfuehren ueber
+`/api/admin/ingredients`, mit Vorschau.
+
+**Speicherweg nach Admin-Aenderungen:** Redis -> «Export JSON» -> Datei nach
+`data/recipes.json` -> `npm run recipes:sync`. Ohne diesen Schritt ueberschreibt
+der naechste «Seed Redis» die Aenderungen.
+
+### Invarianten, die geprueft werden
+- `ingredients` ist die Konkatenation der `ingredientGroups` (nur fuer frisch
+  importierte Rezepte, `assertValidRecipe`)
+- jede Zutat kommt in mindestens einer Gruppe vor (ganzer Bestand,
+  `npm run recipes:check`)
+- jede Kategorie aus `INGREDIENT_CATEGORIES` hat Symbol und Sortierplatz in
+  `src/lib/shoppingCategories.ts`
+
+### Daten, die nie ins Repository gehoeren
+`data/users.json` und `data/pwd-reset-tokens.json` sind in `.gitignore` und aus
+der Versionierung genommen. Sie enthalten Passwort-Hashes und gueltige Tokens.
+
+### Offene Punkte
+1. Admin-Passwort rotieren, der Hash liegt in der Git-Historie
+2. `CRON_SECRET` in Vercel setzen, sonst laeuft der 30-Tage-Cleanup nicht
+3. 25 Alt-Entwuerfe ohne `licenseStatus` und `rewrittenAt` entscheiden
+4. Live sind nur 76 Rezepte freigegeben — eine gefilterte Massen-Freigabe fehlt
+5. Marketing-Setup (SEO-Meta, OG-Images, Newsletter)

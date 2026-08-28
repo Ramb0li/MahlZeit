@@ -106,8 +106,7 @@
   "allergens": [
     "gluten",
     "milch",
-    "senf",
-    "weichtiere"
+    "senf"
   ],
   "sourceType": "mahlzyt",
   "_migrated_v2": true,

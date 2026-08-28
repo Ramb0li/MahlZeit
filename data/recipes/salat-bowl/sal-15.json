@@ -95,8 +95,7 @@
   "dietCategory": "vegetarian",
   "allergens": [
     "milch",
-    "senf",
-    "sulfite"
+    "senf"
   ],
   "nutrition": {
     "kcal": 228,

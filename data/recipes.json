@@ -1895,7 +1895,6 @@
     "imageZutaten": null,
     "imageKochen": null,
     "allergens": [
-      "ei",
       "milch",
       "schalenfruechte"
     ],
@@ -3049,7 +3048,6 @@
     "imageZutaten": null,
     "imageKochen": null,
     "allergens": [
-      "ei",
       "fisch",
       "gluten",
       "milch"
@@ -7993,7 +7991,6 @@
     "imageZutaten": null,
     "imageKochen": null,
     "allergens": [
-      "ei",
       "fisch",
       "gluten",
       "milch"
@@ -8380,8 +8377,7 @@
     "allergens": [
       "gluten",
       "milch",
-      "senf",
-      "weichtiere"
+      "senf"
     ],
     "sourceType": "mahlzyt",
     "_migrated_v2": true,
@@ -8974,8 +8970,7 @@
     "imageKochen": null,
     "allergens": [
       "gluten",
-      "milch",
-      "sulfite"
+      "milch"
     ],
     "sourceType": "mahlzyt",
     "_migrated_v2": true,
@@ -23142,10 +23137,8 @@
     "imageZutaten": null,
     "imageKochen": null,
     "allergens": [
-      "ei",
       "gluten",
-      "sellerie",
-      "weichtiere"
+      "sellerie"
     ],
     "sourceType": "mahlzyt",
     "_migrated_v2": true,
@@ -24246,7 +24239,8 @@
     "imageZutaten": null,
     "imageKochen": null,
     "allergens": [
-      "milch"
+      "milch",
+      "weichtiere"
     ],
     "nutrition": {
       "kcal": 412,
@@ -28033,8 +28027,7 @@
     "dietCategory": "vegetarian",
     "allergens": [
       "milch",
-      "senf",
-      "sulfite"
+      "senf"
     ],
     "nutrition": {
       "kcal": 228,
@@ -29276,7 +29269,7 @@
     ],
     "ingredients": [
       {
-        "name": "Tomaten",
+        "name": "Tomaten (gewürfelt)",
         "amount": 400,
         "unit": "g",
         "perPortions": 4
@@ -29300,7 +29293,7 @@
         "perPortions": 4
       },
       {
-        "name": "Avocados",
+        "name": "Avocados (halbiert, Kern entfernt)",
         "amount": 2,
         "unit": "Stk",
         "perPortions": 4
@@ -34110,7 +34103,7 @@
         "perPortions": 4
       },
       {
-        "name": "Zitronengras",
+        "name": "Zitronengras (fein gehackt)",
         "amount": 3,
         "unit": "Stk",
         "perPortions": 4
@@ -34128,7 +34121,7 @@
         "perPortions": 4
       },
       {
-        "name": "Rote Chili",
+        "name": "Rote Chili (fein gehackt)",
         "amount": 1,
         "unit": "Stk",
         "perPortions": 4
@@ -34140,7 +34133,7 @@
         "perPortions": 4
       },
       {
-        "name": "Limette",
+        "name": "Limette (in Schnitze geschnitten)",
         "amount": 1,
         "unit": "Stk",
         "perPortions": 4
@@ -37485,8 +37478,7 @@
     "imageKochen": null,
     "allergens": [
       "gluten",
-      "sulfite",
-      "weichtiere"
+      "sulfite"
     ],
     "activeTimeMinutes": 60,
     "ingredientGroups": [
@@ -37739,8 +37731,7 @@
     "imageKochen": null,
     "allergens": [
       "gluten",
-      "milch",
-      "weichtiere"
+      "milch"
     ],
     "nutrition": {
       "kcal": 658,
@@ -39433,7 +39424,8 @@
     "allergens": [
       "erdnuesse",
       "soja",
-      "sulfite"
+      "sulfite",
+      "weichtiere"
     ],
     "nutrition": {
       "kcal": 568,
@@ -45743,7 +45735,9 @@
     "tags": [
       "Mexikanisch"
     ],
-    "allergens": [],
+    "allergens": [
+      "schalenfruechte"
+    ],
     "nutrition": {
       "kcal": 442,
       "protein": 17.8,
@@ -46085,9 +46079,7 @@
     "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---hummus-gemu-se-wrap-1--1780786140067.jpeg",
     "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---hummus-gemu-se-wrap-2--1780786147162.jpeg",
     "imageKochen": null,
-    "allergens": [
-      "ei"
-    ],
+    "allergens": [],
     "nutrition": {
       "kcal": 385,
       "protein": 14.2,
@@ -46757,6 +46749,12 @@
             "name": "Blumenkohl",
             "amount": 1,
             "unit": "kg",
+            "perPortions": 8
+          },
+          {
+            "name": "Holzspiesschen",
+            "amount": 4,
+            "unit": "Stk",
             "perPortions": 8
           }
         ]
@@ -50547,7 +50545,6 @@
     ],
     "dietCategory": "vegetarian",
     "allergens": [
-      "ei",
       "milch"
     ],
     "nutrition": {
@@ -51833,7 +51830,6 @@
     "imageZutaten": null,
     "imageKochen": null,
     "allergens": [
-      "ei",
       "fisch",
       "milch"
     ],
@@ -55010,7 +55006,6 @@
       "Mealprep-geeignet"
     ],
     "allergens": [
-      "ei",
       "schalenfruechte"
     ],
     "nutrition": {
@@ -55265,7 +55260,6 @@
       "Mealprep-geeignet"
     ],
     "allergens": [
-      "ei",
       "gluten",
       "schalenfruechte"
     ],

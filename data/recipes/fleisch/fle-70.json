@@ -145,8 +145,7 @@
   "imageKochen": null,
   "allergens": [
     "gluten",
-    "sulfite",
-    "weichtiere"
+    "sulfite"
   ],
   "activeTimeMinutes": 60,
   "ingredientGroups": [

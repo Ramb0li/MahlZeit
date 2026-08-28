@@ -183,7 +183,8 @@
   "imageZutaten": null,
   "imageKochen": null,
   "allergens": [
-    "milch"
+    "milch",
+    "weichtiere"
   ],
   "nutrition": {
     "kcal": 412,

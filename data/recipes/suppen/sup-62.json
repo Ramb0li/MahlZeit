@@ -235,10 +235,8 @@
   "imageZutaten": null,
   "imageKochen": null,
   "allergens": [
-    "ei",
     "gluten",
-    "sellerie",
-    "weichtiere"
+    "sellerie"
   ],
   "sourceType": "mahlzyt",
   "_migrated_v2": true,

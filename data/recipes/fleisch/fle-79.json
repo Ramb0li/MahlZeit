@@ -264,7 +264,8 @@
   "allergens": [
     "erdnuesse",
     "soja",
-    "sulfite"
+    "sulfite",
+    "weichtiere"
   ],
   "nutrition": {
     "kcal": 568,

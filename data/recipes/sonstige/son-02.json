@@ -51,7 +51,9 @@
   "tags": [
     "Mexikanisch"
   ],
-  "allergens": [],
+  "allergens": [
+    "schalenfruechte"
+  ],
   "nutrition": {
     "kcal": 442,
     "protein": 17.8,

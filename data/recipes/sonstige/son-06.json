@@ -87,9 +87,7 @@
   "imageUrl": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---hummus-gemu-se-wrap-1--1780786140067.jpeg",
   "imageZutaten": "https://abtskdasumjdq0i1.public.blob.vercel-storage.com/recipes/gro---hummus-gemu-se-wrap-2--1780786147162.jpeg",
   "imageKochen": null,
-  "allergens": [
-    "ei"
-  ],
+  "allergens": [],
   "nutrition": {
     "kcal": 385,
     "protein": 14.2,
