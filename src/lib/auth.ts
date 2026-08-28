@@ -5,15 +5,17 @@
 
 import { SignJWT, jwtVerify } from 'jose';
 import { cookies } from 'next/headers';
+import { resolveJwtSecret } from './jwtSecret';
 
 export const TOKEN_COOKIE  = 'mz_token';
 export const COOKIE_MAX_AGE = 60 * 60 * 24 * 30; // 30 days
 export const ADMIN_EMAIL   = 'info@o-v-k.ch';
 
 function getSecret() {
-  // `||` statt `??` — leerer String (z.B. JWT_SECRET= in .env.local) muss auch den Fallback triggern,
-  // sonst crasht jose mit "Zero-length key is not supported".
-  const raw = process.env.JWT_SECRET || 'dev-fallback-secret-change-me';
+  // Regel und Begründung stehen in src/lib/jwtSecret.ts. Kurz: leerer String muss
+  // denselben Weg nehmen wie eine fehlende Variable, und in Produktion wird
+  // geworfen statt auf eine im Repository sichtbare Konstante zurückzufallen.
+  const raw = resolveJwtSecret(process.env.JWT_SECRET, process.env.NODE_ENV, console.warn);
   return new TextEncoder().encode(raw);
 }
 
