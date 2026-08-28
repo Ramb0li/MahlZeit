@@ -11,18 +11,18 @@ export const EU_ALLERGEN_MAP: Record<EuAllergen, string[]> = {
   erdnuesse:       ALLERGEN_KEYWORDS['erdnüsse'] ?? [],
   soja:            ALLERGEN_KEYWORDS['soja'] ?? [],
   milch:           [...(ALLERGEN_KEYWORDS['milch'] ?? []), ...(ALLERGEN_KEYWORDS['laktose'] ?? [])],
-  schalenfruechte: [
-    ...(ALLERGEN_KEYWORDS['haselnüsse'] ?? []),
-    ...(ALLERGEN_KEYWORDS['walnüsse'] ?? []),
-    'mandel', 'mandeln', 'mandelmehl', 'cashew', 'cashews', 'pistazie', 'pistazien',
-    'pekan', 'pekannuss', 'macadamia', 'paranuss', 'paranüsse', 'kokosnuss',
-  ],
+  // Speist sich aus derselben Liste wie der Vorschlagsfilter. Vorher standen hier
+  // eigene Stichwoerter, die es in ALLERGEN_KEYWORDS nicht gab — dadurch trug ein
+  // Rezept das Allergen, wurde Nussallergikern aber trotzdem vorgeschlagen.
+  schalenfruechte: ALLERGEN_KEYWORDS['schalenfrüchte'] ?? [],
   sellerie:        ALLERGEN_KEYWORDS['sellerie'] ?? [],
   senf:            ALLERGEN_KEYWORDS['senf'] ?? [],
   sesam:           ALLERGEN_KEYWORDS['sesam'] ?? [],
   sulfite:         ALLERGEN_KEYWORDS['alkohol'] ?? [],
   lupinen:         ALLERGEN_KEYWORDS['lupinen'] ?? [],
-  weichtiere:      ['tintenfisch', 'calamari', 'muschel', 'miesmuschel', 'venusmuschel', 'jakobsmuschel', 'oktopus', 'schnecke', 'schnecken'],
+  // "schnecke" ist hier bewusst raus: im Bestand sind das Grillschnecken aus
+  // Brotteig, die dadurch faelschlich als Weichtier gefuehrt wurden.
+  weichtiere:      ['tintenfisch', 'calamari', 'muschel', 'miesmuschel', 'venusmuschel', 'jakobsmuschel', 'austern', 'oktopus', 'krake'],
 };
 
 export const EU_ALLERGEN_KEYS = Object.keys(EU_ALLERGEN_MAP) as EuAllergen[];

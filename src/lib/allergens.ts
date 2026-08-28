@@ -31,7 +31,12 @@ export const ALLERGEN_KEYWORDS: Record<string, string[]> = {
     'feta', 'mozzarella', 'parmesan',
   ],
   ei: [
-    'ei', 'eier', 'eigelb', 'eiweiss', 'eiweiß', 'eiklar',
+    // 'ei' trifft nur als ganzes Wort (siehe matchesTerm) — sonst schlagen
+    // "eingefroren", "Einlage", "eigenem Saft" und "einweichen" an, was im
+    // Bestand sieben Rezepte faelschlich als eihaltig markiert hat.
+    // Zusammensetzungen deshalb ausgeschrieben.
+    'ei', 'eier', 'eigelb', 'eiweiss', 'eiweiß', 'eiklar', 'eipulver', 'eischnee',
+    'volleier', 'wachtelei', 'wachteleier', 'spiegelei', 'ruehrei', 'rührei',
     'mayonnaise', 'mayo', 'aioli',
   ],
   fisch: [
@@ -48,10 +53,25 @@ export const ALLERGEN_KEYWORDS: Record<string, string[]> = {
     // vier Bestandsrezepte kein krebstiere-Allergen (siehe fis-21, fam-11, fam-12, asi-01).
     'crevette', 'gambas', 'scampi', 'langustine', 'flusskrebs',
     'meeresfrüchte', 'tintenfisch', 'calamari', 'muschel', 'venusmuschel',
+    // Weichtiere: standen nur in der EU-Tabelle und wurden vom Filter nicht erfasst.
+    // "schnecke" fehlt hier absichtlich — im Bestand sind das Grillschnecken aus
+    // Brotteig, siehe ALLERGEN_FALSE_FRIENDS.
+    'miesmuschel', 'jakobsmuschel', 'austern', 'oktopus', 'krake',
   ],
   erdnüsse: ['erdnuss', 'erdnüsse', 'erdnussbutter', 'erdnussöl', 'peanut'],
   haselnüsse: ['haselnuss', 'haselnüsse', 'nougat', 'nutella'],
   walnüsse: ['walnuss', 'walnüsse'],
+  // Sammelkategorie fuer Schalenfruechte (EU-Pflichtallergen). Fehlte bisher als
+  // Option: die Auswahl kannte nur Haselnuesse und Walnuesse, waehrend 55 Rezepte
+  // im Bestand das Allergen "schalenfruechte" tragen. Wer eine Nussallergie angab,
+  // bekam Mandel- und Cashewrezepte weiterhin vorgeschlagen.
+  schalenfrüchte: [
+    'haselnuss', 'haselnüsse', 'nougat', 'nutella', 'walnuss', 'walnüsse',
+    'mandel', 'mandeln', 'mandelmus', 'mandelmehl', 'marzipan',
+    'cashew', 'cashews', 'pistazie', 'pistazien',
+    'pekannuss', 'pekannüsse', 'pekan', 'macadamia', 'paranuss', 'paranüsse',
+    'baumnuss', 'baumnüsse', 'kokosnuss',
+  ],
   soja: [
     'soja', 'tofu', 'tempeh', 'edamame', 'sojasauce', 'soja-sauce',
     'sojamilch', 'miso', 'sojaöl', 'sojabohne',
@@ -76,6 +96,31 @@ export const ALLERGEN_KEYWORDS: Record<string, string[]> = {
   ],
 };
 
+/**
+ * Woerter, die ein Allergen-Stichwort als Teilstring enthalten, aber nichts damit
+ * zu tun haben. Sie werden VOR dem Abgleich aus dem Text entfernt.
+ *
+ * Alle Eintraege stammen aus gemessenen Fehltreffern im Bestand:
+ * "Muschelnudeln" (eine Teigwarenform) galt als Schalentier und wurde
+ * Schalentier-Allergikern weggefiltert, "Grillschnecken" (Brotspiralen) als
+ * Weichtier, "Kirschtomaten" als Alkohol — weil "kirsch" darin vorkommt.
+ */
+export const ALLERGEN_FALSE_FRIENDS = [
+  'muschelnudel', 'muschelnudeln',
+  'grillschnecke', 'grillschnecken', 'schneckennudel', 'nussschnecke',
+  'kirschtomate', 'kirschtomaten',
+  // "bier" steckt in "halbiert" — die Avocados in sal-63 galten dadurch als
+  // alkoholhaltig. Aufgefallen erst, als die Zutat den Zubereitungszusatz bekam.
+  'halbiert', 'halbierte', 'halbierten',
+];
+
+/** Entfernt die bekannten Fehlfreunde, bevor ueberhaupt verglichen wird. */
+export function stripFalseFriends(text: string): string {
+  let out = text.toLowerCase();
+  for (const term of ALLERGEN_FALSE_FRIENDS) out = out.split(term).join(' ');
+  return out;
+}
+
 function escapeRegex(s: string): string {
   return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
@@ -83,14 +128,24 @@ function escapeRegex(s: string): string {
 /**
  * Prüft, ob `haystack` den Term enthält.
  *
- * Kurze Terme (≤ 3 Zeichen) müssen am Wortanfang stehen — sonst matcht "Ei" auf "Eintopf".
- * Längere Terme matchen per einfachem Substring (gut für Komposita wie "Vollmilchschokolade").
+ * Drei Stufen, jede aus einem echten Fehltreffer entstanden:
+ *  - ≤ 2 Zeichen: nur als GANZES Wort. "ei" traf sonst den Wortanfang von
+ *    "eingefroren", "Einlage" und "eigenem Saft" — sieben Rezepte galten damit
+ *    als eihaltig, obwohl kein Ei drin war. Zusammensetzungen wie "Eigelb" oder
+ *    "Spiegelei" stehen deshalb ausgeschrieben in der Stichwortliste.
+ *  - 3 Zeichen: am Wortanfang, sonst matcht "Ei" auf "Eintopf".
+ *  - länger: einfacher Teilstring, nötig für Komposita wie "Vollmilchschokolade".
+ *
+ * Fehlfreunde wie "Muschelnudeln" oder "halbiert" werden vorher entfernt.
  */
 export function matchesTerm(haystack: string, term: string): boolean {
   const t = term.toLowerCase().trim();
   if (!t) return false;
-  const h = haystack.toLowerCase();
-  if (t.length <= 3) {
+  const h = stripFalseFriends(haystack);
+  if (t.length <= 2) {
+    return new RegExp(`\\b${escapeRegex(t)}\\b`, 'iu').test(h);
+  }
+  if (t.length === 3) {
     return new RegExp(`\\b${escapeRegex(t)}`, 'iu').test(h);
   }
   return h.includes(t);

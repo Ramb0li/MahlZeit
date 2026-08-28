@@ -21,6 +21,10 @@ export const ALLERGENS: readonly AllergenOption[] = [
   { id: 'erdnüsse',     label: 'Erdnüsse',      emoji: '🥜' },
   { id: 'haselnüsse',   label: 'Haselnüsse',    emoji: '🌰' },
   { id: 'walnüsse',     label: 'Walnüsse',      emoji: '🌰' },
+  // Sammelkategorie: deckt zusaetzlich Mandeln, Cashew, Pistazien, Pekan,
+  // Macadamia und Paranuss ab. Ohne sie liess sich eine Nussallergie hier gar
+  // nicht vollstaendig angeben.
+  { id: 'schalenfrüchte', label: 'Schalenfrüchte (Mandeln, Cashew …)', emoji: '🌰' },
   { id: 'soja',         label: 'Soja',          emoji: '🫘' },
   { id: 'sesam',        label: 'Sesam',         emoji: '🌻' },
   { id: 'sellerie',     label: 'Sellerie',      emoji: '🥬' },
