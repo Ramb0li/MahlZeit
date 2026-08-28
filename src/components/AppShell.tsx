@@ -59,7 +59,6 @@ export function AppShell({
   const t      = useTranslations('AppShell');
   const router = useRouter();
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleLogout = async () => {
     await fetch('/api/auth/logout', { method: 'POST' });
     router.replace('/auth');
@@ -116,7 +115,6 @@ export function AppShell({
               className={`mz-topnav-btn${activeTab === id ? ' on' : ''}`}
             >
               <Icon size={16} />
-              {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
               <span className="mz-hide-sm">{t(labelKey as any)}</span>
             </button>
           ))}
@@ -210,7 +208,6 @@ export function AppShell({
             className={`mz-botnav-btn${activeTab === id ? ' on' : ''}`}
           >
             <Icon size={20} />
-            {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
             {t(labelKey as any)}
           </button>
         ))}

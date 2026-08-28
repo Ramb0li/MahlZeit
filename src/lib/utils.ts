@@ -155,7 +155,7 @@ export const INGREDIENT_CATEGORIES: Record<string, string[]> = {
   // Specific categories first — prevents substring conflicts with broader keywords below
   'Gewürze & Kräuter': [
     // Spice-specific keywords before generic 'paprika' or 'mais' can match in vegetables
-    'paprikapulver', 'paprikagewürz', 'paprikagewürz', 'geräuchertes paprikapulver',
+    'paprikapulver', 'paprikagewürz', 'geräuchertes paprikapulver',
     // Classic spices & herbs
     'salz', 'pfeffer', 'pfefferkörner', 'muskatnuss', 'muskat',
     'kreuzkümmel', 'kümmel', 'kurkuma', 'currypulver', 'currypaste',
@@ -209,9 +209,9 @@ export const INGREDIENT_CATEGORIES: Record<string, string[]> = {
     'reis', 'risottoreis', 'basmatireis', 'jasminreis', 'vollkornreis',
     'quinoa', 'bulgur', 'polenta', 'ebly', 'urdinkelkerne', 'rollgerste',
     'weizentortillas', 'taco-shells', 'pitabrot', 'vollkornnudeln',
-    'hartweizennudeln', 'hartweizengrieß', 'hartweizengrieß',
+    'hartweizennudeln',
     'dinkelvollkornmehl', 'dinkelmehl', 'weizenmehl', 'kichererbsenmehl',
-    'semmelbrösel', 'haferflocken', 'grieß', 'tortillas', 'wraps',
+    'semmelbrösel', 'haferflocken', 'griess', 'tortillas', 'wraps',
     'gnocchi', 'naan', 'baguette', 'brot', 'toast', 'mehl',
     'brötchen', 'weggil', 'weggli', 'fladenbrot',
     'tortiglioni', 'fregola', 'semola', 'hartweizengriess', 'panko', 'müesli', 'teigwaren',

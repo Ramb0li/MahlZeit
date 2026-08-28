@@ -3,6 +3,7 @@ import { useState, useEffect, useRef, useMemo } from 'react';
 import { Package, Plus, Trash2, Search, ChevronDown } from 'lucide-react';
 import { categorizeIngredient } from '@/lib/utils';
 import type { PantryItem, Recipe } from '@/types';
+import { CATEGORY_ICONS as PANTRY_CAT_ICONS } from '@/lib/shoppingCategories';
 
 const PANTRY_CAT_ORDER = [
   'Obst & Gemüse',
@@ -17,20 +18,6 @@ const PANTRY_CAT_ORDER = [
   'Nüsse & Samen',
   'Sonstiges',
 ];
-
-const PANTRY_CAT_ICONS: Record<string, string> = {
-  'Obst & Gemüse':        '🍎',
-  'Hülsenfrüchte':         '🫘',
-  'Getreide & Stärke':     '🌾',
-  'Milchprodukte & Eier':  '🥛',
-  'Fisch & Meeresfrüchte': '🐟',
-  'Tofu & Veganes':        '🫘',
-  'Haltbare Produkte':     '🫙',
-  'Nüsse & Samen':         '🥜',
-  'Gewürze & Kräuter':     '🌿',
-  'Fleisch & Geflügel':    '🥩',
-  'Sonstiges':             '🫧',
-};
 
 export function PantryView() {
   const [items, setItems]               = useState<PantryItem[]>([]);

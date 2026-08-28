@@ -2,6 +2,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { Check, Download, RefreshCw, Plus, Trash2, RotateCcw, X, ChevronDown, PackageCheck } from 'lucide-react';
 import { getWeekIdForWindow, getWeekDays, nextWeek, formatAmount, categorizeIngredient } from '@/lib/utils';
+import { CATEGORY_ICONS as CAT_ICONS, RECIPE_CATEGORY_ORDER, EXTRA_CATEGORIES, ALL_CATEGORIES } from '@/lib/shoppingCategories';
 import { format, getISOWeek } from 'date-fns';
 import { de } from 'date-fns/locale';
 import {
@@ -36,38 +37,6 @@ function buildListLabel(weekId: string, dayIndices: number[], weekStartDay = 1):
   const last  = labels[(sorted[sorted.length - 1] ?? 7) - 1] ?? '';
   return first === last ? `KW${kw}.${first}` : `KW${kw}.${first}-${last}`;
 }
-
-// ─── Kategorie-Emojis ────────────────────────────────────────────────────────
-
-const CAT_ICONS: Record<string, string> = {
-  'Obst & Gemüse':        '🍎',
-  'Hülsenfrüchte':         '🫘',
-  'Getreide & Stärke':     '🌾',
-  'Milchprodukte & Eier':  '🥛',
-  'Fisch & Meeresfrüchte': '🐟',
-  // Nicht 🫘 — das gehört seit dem Tausch zu den Hülsenfrüchten, und zwei
-  // Kategorien mit demselben Symbol sind in der Liste nicht unterscheidbar.
-  'Tofu & Veganes':        '🌱',
-  'Haltbare Produkte':     '🫙',
-  'Nüsse & Samen':         '🥜',
-  'Gewürze & Kräuter':     '🌿',
-  'Sonstiges':             '🫧',
-  'Haushalt':              '🧹',
-  'Hygiene':               '🧴',
-  'Persönliches':          '🪞',
-  'Getränke':              '🥤',
-  'Tierbedarf':            '🐾',
-};
-
-// ─── Kategorien ───────────────────────────────────────────────────────────────
-
-const RECIPE_CATEGORY_ORDER = [
-  'Obst & Gemüse', 'Hülsenfrüchte', 'Getreide & Stärke', 'Milchprodukte & Eier',
-  'Fisch & Meeresfrüchte', 'Tofu & Veganes', 'Haltbare Produkte', 'Nüsse & Samen',
-  'Gewürze & Kräuter', 'Sonstiges',
-];
-const EXTRA_CATEGORIES = ['Haushalt', 'Hygiene', 'Persönliches', 'Getränke', 'Tierbedarf'];
-const ALL_CATEGORIES   = [...RECIPE_CATEGORY_ORDER, ...EXTRA_CATEGORIES];
 
 // Store display names for tooltip
 const STORE_NAMES: Record<string, string> = {

@@ -155,11 +155,11 @@ export function PwaInstallButton() {
                 },
                 {
                   n: '2',
-                  text: <>Scrolle nach unten und tippe auf <strong>"Zum Home-Bildschirm"</strong>.</>,
+                  text: <>Scrolle nach unten und tippe auf <strong>&quot;Zum Home-Bildschirm&quot;</strong>.</>,
                 },
                 {
                   n: '3',
-                  text: <>Tippe oben rechts auf <strong>"Hinzufügen"</strong> — fertig.</>,
+                  text: <>Tippe oben rechts auf <strong>&quot;Hinzufügen&quot;</strong> — fertig.</>,
                 },
               ].map(step => (
                 <div key={step.n} style={{ display: 'flex', gap: 14, alignItems: 'flex-start' }}>

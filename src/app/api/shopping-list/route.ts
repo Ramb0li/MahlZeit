@@ -85,17 +85,22 @@ export async function GET(request: Request) {
       }
     };
 
-    // Manuelle Beilage-Zutaten (sideIngredients) aggregieren — Menge 1:1, kein Skalieren
+    // Manuelle Beilage-Zutaten (sideIngredients) aggregieren — Menge 1:1, kein Skalieren.
+    // Die Einheit wird wie im Rezeptpfad normalisiert. Ohne das landet dieselbe Zutat
+    // zweimal auf der Liste, einmal als "30 ml Olivenöl" aus dem Rezept und einmal als
+    // "1 EL Olivenöl" aus der Beilage, weil der Aggregationsschlüssel die Einheit enthält.
     const addSideIngredients = (slot: typeof plan.days[number]['dinner'] | undefined) => {
       if (!slot?.sideIngredients?.length) return;
       for (const ing of slot.sideIngredients) {
-        const key = `${ing.name.toLowerCase()}_${ing.unit}`;
+        const { amount: normAmt, unit: normUnit, approx } = normalizeUnit(ing.name, ing.amount, ing.unit);
+        const key = `${ing.name.toLowerCase()}_${normUnit}`;
         const category = categorizeIngredient(ing.name);
         if (aggregated[key]) {
-          aggregated[key].totalAmount += ing.amount;
+          aggregated[key].totalAmount += normAmt;
+          if (approx || aggregated[key].approx) aggregated[key].approx = true;
           if (!aggregated[key].recipeNames.includes('Beilage')) aggregated[key].recipeNames.push('Beilage');
         } else {
-          aggregated[key] = { name: ing.name, totalAmount: ing.amount, unit: ing.unit, category, recipeNames: ['Beilage'], promotions: [], checked: false };
+          aggregated[key] = { name: ing.name, totalAmount: normAmt, unit: normUnit, category, recipeNames: ['Beilage'], promotions: [], checked: false, ...(approx && { approx: true }) };
         }
       }
     };

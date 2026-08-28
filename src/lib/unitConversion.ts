@@ -38,7 +38,7 @@ const CONVERSIONS: Array<{ keywords: string[]; factor: ConversionFactor }> = [
   },
   // Mehl, Stärke
   {
-    keywords: ['mehl', 'stärke', 'staerke', 'maizena', 'speisestärke', 'speisestärke', 'kartoffelstärke', 'maisstärke'],
+    keywords: ['mehl', 'stärke', 'staerke', 'maizena', 'speisestärke', 'kartoffelstärke', 'maisstärke'],
     factor: { tl: 3, el: 12, baseUnit: 'g' },
   },
   // Zucker, Salz

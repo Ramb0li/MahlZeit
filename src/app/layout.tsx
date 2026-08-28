@@ -7,6 +7,5 @@ import type { ReactNode } from 'react';
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   // Return children directly — [locale]/layout.tsx provides <html> and <body>.
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   return children as any;
 }

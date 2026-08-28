@@ -153,7 +153,6 @@ const TAG_RENAMES: Record<string, string> = {
 const REMOVE_TAGS = new Set(['Schnell und einfach', 'Schnell zubereitet', 'Schnell', 'Einfach', 'Fisch', 'Fleischhaltig', 'Pescetarisch', 'Vegetarisch', 'Vegan']);
 
 function normalizeRecipe(r: Recipe): Recipe {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const raw = r as any;
   // Sanitize literal \uXXXX sequences in category (data quality issue in some recipes)
   const catStr = (r.category as string).replace(/\\u([0-9a-fA-F]{4})/g, (_, h) => String.fromCharCode(parseInt(h, 16)));
@@ -202,7 +201,6 @@ function normalizeRecipe(r: Recipe): Recipe {
 
   // Strip internal migration flag so it never reaches API responses
   if (raw._migrated_v2) {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const { _migrated_v2, ...rest } = r as any;
     void _migrated_v2;
     r = rest as Recipe;
